@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJqSvHLOgfVIgREHkD607uzHY",
+    "place_name": "Summit Coffee | NoDa",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/28/2022 16:34:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCOGR6UVVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCOGR6UVVREAE!2m1!1s0x0:0x76ccee4eeb037910!3m1!1s2@1:CIHM0ogKEICAgICB8dzQUQ%7CCgwIguCxnQYQyO77ygM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious decaf almond milk latte with lavender!"
+        }
+    ],
+    "total_reviews_count": 73
+}

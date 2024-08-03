@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJ2af9VVCfVogRG52eEKo26Hs",
+    "place_name": "Sumaq Coffee",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "01/03/2023 12:59:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCNF9PMlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCNF9PMlpnEAE!2m1!1s0x0:0x7be836aa109e9d1b!3m1!1s2@1:CIHM0ogKEICAgICB4_O2Zg%7CCgwIn83QnQYQyKXToAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) Excellent service I loved everything last night was the first time I went  (Original) Excelente servicio me encantó todo anoche fue la primera vez q fui"
+        }
+    ],
+    "total_reviews_count": 164
+}

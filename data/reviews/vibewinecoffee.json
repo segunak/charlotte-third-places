@@ -1,0 +1,721 @@
+{
+    "place_id": "ChIJmaPz5ZOfVogR9q_0UwR5yJM",
+    "place_name": "Vibe Wine & Coffee",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/29/2022 15:38:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbWJDVWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbWJDVWJBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICBmbCUbA%7CCgwI3-i2nQYQ4M6zvgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The coffee was good and the staff very friendly and attentive."
+        },
+        {
+            "review_datetime_utc": "12/20/2022 14:46:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCd3FpR2NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCd3FpR2NnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICBwqiGcg%7CCgwIs5WHnQYQgJaktAE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Nothing against them - but it's not a wine  bar.    They have wine but it's a crepe/ ? Breakfast place with wine.  Kinda misleading because it's not at their core of who they are.  Like many small businesses they see it as a way to spread  their business model but ultimately it will work against them."
+        },
+        {
+            "review_datetime_utc": "11/27/2022 14:13:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtMnFidjBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtMnFidjBRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID-2qbv0QE%7CCgsIp-GNnAYQ6LKpMw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wow! Friends told us about the Vibe Cafe And Wine Bar, and our quiet evening turned out too be the fun meeting friends over wine and tasty appetizers, listening to live music, and dancing. Thank you Vibe!"
+        },
+        {
+            "review_datetime_utc": "10/19/2022 15:00:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURleTVySzRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURleTVySzRRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDey5rK4QE%7CCgwIp6LAmgYQ4K_VxwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great first experience! The staff was friendly and engaging the name of the establishment fits the atmosphere inside and out. My spanikopita was delicious &  evenly baked, the tatziki sauce was equally good and full of flavor. A few other pros, the radio station they listen to streams from Greece and the sounds are great 👍🏾, there's wifi, free street parking"
+        },
+        {
+            "review_datetime_utc": "10/18/2022 23:47:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlMDZfWTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlMDZfWTlnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDe06_Y9gE%7CCgwIqPa8mgYQ8I2WoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great spot along with great vibes!"
+        },
+        {
+            "review_datetime_utc": "10/18/2022 14:48:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlNDdXN3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlNDdXN3RBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDe47W7tAE%7CCgsIyfm6mgYQsPj-Ng%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a good place to chill at. So many things u can buy, so many choices of food and coffee. Good stuff and especially the new Greek guy knows how to do his job. J.S."
+        },
+        {
+            "review_datetime_utc": "09/30/2022 22:27:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlNklEeS1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlNklEeS1nRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDe6IDy-gE%7CCgsI2drdmQYQgM3LFg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "OMG! This is totally a vibe!! The Berry Cheesecake Belgian Waffle was Delicious!! The breakfast waffle sandwich was off the chain too! The personality of the Owner Vasili and Logan truly give this place it's name sake!"
+        },
+        {
+            "review_datetime_utc": "09/30/2022 18:24:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlcUlLcTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlcUlLcTNRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDeqIKq3QE%7CCgsI7ujcmQYQ8KeBOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very good!"
+        },
+        {
+            "review_datetime_utc": "09/28/2022 22:11:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlM0lPYUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlM0lPYUJ3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICe3IOaBw%7CCgsIj43TmQYQyObQAQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious 😋"
+        },
+        {
+            "review_datetime_utc": "09/20/2022 17:46:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlemZXT2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlemZXT2V3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICezfWOew%7CCgsI9vinmQYQkKHGQQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had a few crepes and different types of coffee, and they were all delicious! Staff and environment were fantastic, and we will definitely be coming back again!"
+        },
+        {
+            "review_datetime_utc": "09/18/2022 22:42:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaFozbE93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaFozbE93EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICehZ3lOw%7CCgwIur2emQYQ8KWz5wI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Working time is wrong. Was closed on sunday"
+        },
+        {
+            "review_datetime_utc": "09/08/2022 19:12:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlM04tRUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlM04tRUx3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICe3N-ELw%7CCgwItP3omAYQyPCXggE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic super friendly, relaxing environment. We had coffee and a latte coffee definitely will return for a glass of wine."
+        },
+        {
+            "review_datetime_utc": "08/23/2022 22:05:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1cWVTWVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1cWVTWVBBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDuqeSYPA%7CCgwImJ6VmAYQuIvV3wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place and excellent service!! The ham and cheese crepe and wine recommendation was awesome. I highly recommend and will definitely be back!"
+        },
+        {
+            "review_datetime_utc": "08/15/2022 19:03:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1bkk3ZnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1bkk3ZnZ3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDunI7fvwE%7CCgsIjLHqlwYQ-M6kVg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This cafe is the place to be! They have the most genuine and welcoming atmosphere and delicious coffee that is the perfect unique pick me up.  If you work from home, this is a great place to work, I've spent hours at a time here. And the food is absolutely delicious. I have honestly been here for work, study, and even came back in the evening for drinks with friends. This is my go-to spot and I hope more people get to experience this incredible place!"
+        },
+        {
+            "review_datetime_utc": "08/09/2022 23:31:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1MzhYejVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1MzhYejVRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICu38Xz5QE%7CCgwIxNzLlwYQ0PH40gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cozy environment!"
+        },
+        {
+            "review_datetime_utc": "08/06/2022 19:49:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1NjR2a3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1NjR2a3B3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICu64vkpwE%7CCgwI5Yu7lwYQuNb-wwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) Delicious and very friendly. Snacks for dogs are also available.  (Original) 맛있고, 매우 친절합니다. 강아지를 위한 간식도 준비되어 있습니다."
+        },
+        {
+            "review_datetime_utc": "07/10/2022 19:05:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPMWFQV253RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPMWFQV253RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDO1aPWnwE%7CCgsI5sWslgYQsKSoXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic food, and service"
+        },
+        {
+            "review_datetime_utc": "07/10/2022 00:32:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPeGJEZzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPeGJEZzFBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDOxbDg1AE%7CCgwIh7yolgYQ2PuVkgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, staff and food was great as well"
+        },
+        {
+            "review_datetime_utc": "07/05/2022 11:23:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPam9yOWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPam9yOWxnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDOjor9lgE%7CCgsIlL6QlgYQ6IadLg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is one of my favorite places in Charlotte, and a regular “go-to”. The food is excellent, the service is amazing and they all have a genuine kindness. Also, they are very dog-friendly (pups allowed just inside the door, not inside the restaurant itself) and they provide treats and water. I love this place and always recommend to friends."
+        },
+        {
+            "review_datetime_utc": "06/22/2022 00:49:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbDlxVjh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbDlxVjh3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICOl9qV8wE%7CCgsIis7JlQYQ0Ki5Bg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing place! Great coffee and desserts!"
+        },
+        {
+            "review_datetime_utc": "06/21/2022 19:29:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPNTZiWnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNTZiWnJRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICO56bZrQE%7CCgwIqbjIlQYQsIebowM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Amazing place to try out coffees!! Highly recommend caramel frappe (they also have a sugar free option) and Greek coffee and baklava. The last two were out of the world!!"
+        },
+        {
+            "review_datetime_utc": "06/20/2022 15:07:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPbTktQ01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPbTktQ01REAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICOm9-CMQ%7CCgsIzJrClQYQ2ICJAw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a great spot for anytime of day. Food and coffee are tasty, staff is friendly, and they have a great wine selection. Definitely check out Vibe if you haven't yet!"
+        },
+        {
+            "review_datetime_utc": "06/19/2022 12:17:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPOC1UNTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPOC1UNTJRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICO8-T52QE%7CCgsI7qe8lQYQsPW9TA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The service and food was great. We tried the sunday waffle, nutella and banana waffle, caprese crepe, and the Mediterranean pita and they were all delicious. Great spot for savory or sweet bites."
+        },
+        {
+            "review_datetime_utc": "06/06/2022 20:45:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPeXZTUktBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPeXZTUktBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICOyvSRKA%7CCgwI0c75lAYQqPGdtAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Favorite coffee shop & cafe in charlotte! Great local spot that's tucked away but still in a great location. Not only do they have delicious coffee & the best chai latte in town… their panini sandwiches are to die for! I love coming to work here with my laptop or grab a casual lunch. Must try!!"
+        },
+        {
+            "review_datetime_utc": "06/06/2022 01:27:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPMHNpTDZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPMHNpTDZ3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICO0siL6wE%7CCgwIgbD1lAYQoK6gvgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Logan at Vibe was the best! The vibe of vibe will def bring us back! We got there a little before closing and they treated us as if they had jugs opened!  Can't wait to come back, set up shop and do some work while enjoying the atmosphere and customer service!  Marcus & Avery"
+        },
+        {
+            "review_datetime_utc": "06/05/2022 20:09:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPa3RpNDh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPa3RpNDh3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICOkti48wE%7CCgsI4Jr0lAYQsKeUDw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is the SWEETEST little cafe! I've been a couple of times now - service is amazing. Cece is a true gem. Crepes are awesome and so many fun coffees to choose from. Great place to work outside at too!"
+        },
+        {
+            "review_datetime_utc": "05/26/2022 16:35:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyaDZibUxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyaDZibUxBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID2h6bmLA%7CCgwIzti-lAYQ2Ke2vQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good service, but the coffee just wasn't very good."
+        },
+        {
+            "review_datetime_utc": "05/15/2022 12:56:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyN3FyZkFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyN3FyZkFnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID27qrfAg%7CCgsIhfGDlAYQ-NXmWw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I went here looking for something light to eat and get some coffee, and wasn't disappointed. It was surprisingly not busy on a very nice Saturday and the staff were just really on point, I honestly haven't had staff at a restaurant that good since I lived in Japan, and that's saying something as restaurant staff in Japan are all top notch. The prices were what you would expect nowadays, but the serving size was surprisingly large. I got the chicken pita sandwich and it was a good sandwich, better than Panera for sure. BTW, their baklava was the best I've had in a while, definitely worth a try."
+        },
+        {
+            "review_datetime_utc": "05/11/2022 20:05:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQycXFXVDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQycXFXVDN3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID2qqWT3wE%7CCgwIn67wkwYQ-Le1wgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best hangout spot in Charlotte!"
+        },
+        {
+            "review_datetime_utc": "04/19/2022 18:32:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyNXJIWUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyNXJIWUJnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIC25rHYBg%7CCgwIu4D8kgYQ8JHO_AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Incredible food, wonderful place to relax and eat!!"
+        },
+        {
+            "review_datetime_utc": "04/13/2022 21:36:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNteUxIQmRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNteUxIQmRREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICmyLHBdQ%7CCgsI2ITdkgYQyKyQAQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great cafè. I would like to sit at this Cafe one day and enjoy a fredo cappuccino instead of taking it on the road."
+        },
+        {
+            "review_datetime_utc": "04/10/2022 17:46:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyOEk2VEZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyOEk2VEZnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIC28I6TFg%7CCgwI4K_MkgYQ-IDTxgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The only thing better than their food and coffee is their hospitality."
+        },
+        {
+            "review_datetime_utc": "04/08/2022 21:32:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXXzVUMjVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXXzVUMjVBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDW_5T25AE%7CCgwIg9TCkgYQiO7y1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Vibe café is always a good idea. I love their crepes, their cappuccino is to die for and last time I went I tried the Nutella banana waffle which cooked fresh to order. To top it off, their server is an absolute pearl. Prime customer service."
+        },
+        {
+            "review_datetime_utc": "03/27/2022 21:49:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXaVpQZXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXaVpQZXBBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDWiZPepAE%7CCgwI87eDkgYQgNWHigI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Everything we ordered, crepe, dolmates and greek salad ware super tasty! One of the places in the US where you actually get coffee in your coffee! Love the place! And so pity we were just passing by and don't live in Charlotte"
+        },
+        {
+            "review_datetime_utc": "03/11/2022 16:52:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXZ0w2ME9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZ0w2ME9nEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDWgL60Og%7CCgsI4PytkQYQuKHaUA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious food excellent coffee and wonderful owners. The waiter Charles is very helpful and has great recommendations. I personally love the breakfast bowl and capuchino. Penelope makes delicious cheese and spinach pies from scratch."
+        },
+        {
+            "review_datetime_utc": "03/05/2022 14:44:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXbzgteUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXbzgteUN3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICWo8-yCw%7CCgsIxu6NkQYQwPyVfQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome owners and they allow you to smoke cigars on the outdoor patio while offering fantastic coffee and beverages."
+        },
+        {
+            "review_datetime_utc": "03/03/2022 16:05:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXdGY3SUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXdGY3SUlREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICWtf7IIQ%7CCgsIu86DkQYQ8OW-AQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The service here was nothing short of amazing. I do recommend and will return."
+        },
+        {
+            "review_datetime_utc": "03/02/2022 01:21:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXNlp1ZVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXNlp1ZVBREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICW6ZuePQ%7CCgsIoY37kAYQ8KD2cw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The wine was great, the food was AMAZING, and the service was spectacular. Chill vibes and helpful servers."
+        },
+        {
+            "review_datetime_utc": "02/26/2022 16:10:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXdHMyOXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXdHMyOXVnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICWts29ugE%7CCgwI_KHpkAYQ8MeSkAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a great place to come chill and be amongst people who will become your friends. The service is outstanding, the food is delicious and I can't say enough great things about the atmosphere.  If you have a sweet tooth, I highly recommend the Strawberry Shortcake...it's so good, it has become my weekly habit!"
+        },
+        {
+            "review_datetime_utc": "02/13/2022 20:03:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtMzVpTHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtMzVpTHFnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDm35iLqgE%7CCgwI9selkAYQqJ39xAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I absolutely love this place! Good food, music, and the staff were so nice and gentle!"
+        },
+        {
+            "review_datetime_utc": "02/13/2022 18:37:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtbjh2c3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtbjh2c3FnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDmn8vsqgE%7CCgwI_J-lkAYQ8OPVvAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved the experience. The owner/bartender really cares and the food and beer were a delight. It felt very special."
+        },
+        {
+            "review_datetime_utc": "02/11/2022 11:46:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtcDlyTHR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtcDlyTHR3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDmp9rLtwE%7CCgwImZmZkAYQoNKXvQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Food was delicious, service was on point and friendly."
+        },
+        {
+            "review_datetime_utc": "02/09/2022 19:51:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtNjc2RUpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNjc2RUpBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDm676EJA%7CCgwI17aQkAYQgKK-qgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing food, vibe, and experience. Service was also amazing. I wish I can give them 10 stars. Highly recommend."
+        },
+        {
+            "review_datetime_utc": "01/15/2022 00:27:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtXzR2c2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtXzR2c2x3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICm_4vslwE%7CCgsI8qmIjwYQgPyEYA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fabulous custom service and the food is amazing."
+        },
+        {
+            "review_datetime_utc": "01/12/2022 14:15:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtMTlQb3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtMTlQb3ZnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICm19PovgE%7CCgwImcX7jgYQkMrlvQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is my new favorite spot for meetups or just chilling out. I visited for the first time last week and had a really great conversation with one of the owner's, Tony. I wanted to know the story behind this place and he shared it with me with so much excitement. I love when people are passionate about what they are doing. He explained the coffee menu to me and made recommendations.  Service was impeccable as was the food and coffee. It's definitely “a vibe.”"
+        },
+        {
+            "review_datetime_utc": "01/09/2022 18:13:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtcTVDU2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtcTVDU2hnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICmq5CShgE%7CCgwI28vsjgYQ4IXaxwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! This is a hidden gem in the Dilworth area. Excellent family owned place with outstanding service, staff, food, and drinks. Their coffee is great, particularly their seasonal specials and lattes. Their cold brew is perfect and strong, particularly great when you have a big work day ahead of you. I recommend the avocado toast or yogurt bowl for breakfast/brunch (two of my favorites), and their Italian panini or avocado and turkey panini for lunch.  Their greek yogurt is some of the best that I have ever had. Their pastries are also outstanding. The staff is warm and kind and recognize familiar faces.  Great for staying and eating inside (or outside) with friends, or ordering pick up or a quick coffee and sandwich if you're on the run.  Has a dog friendly outside area with a water bowl and treats. 100% recommend! Love it."
+        },
+        {
+            "review_datetime_utc": "01/04/2022 19:36:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtMWRuUWd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtMWRuUWd3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICm1dnQgwE%7CCgwIz8PSjgYQ2KqVngI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Enjoyed stopping in for an afternoon coffee. Everyone was extremely friendly and welcoming! I absolutely recommend coming by and will certainly be back."
+        },
+        {
+            "review_datetime_utc": "12/24/2021 18:51:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtcXJhYi1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtcXJhYi1nRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICmqrab-gE%7CCgsIla2YjgYQ-OPsEg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very accommodating and overall great food. We came in when they were a bit busy but they really took the time to make sure we didn't have any questions and they really take pride in their food and service."
+        },
+        {
+            "review_datetime_utc": "11/21/2021 21:06:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHX0p5MzZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHX0p5MzZBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDG_Jy36AE%7CCgwIxOnqjAYQ0OHVnQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I never knew this place existed until recently! Amazing service. Warm & cozy atmosphere. Good food. Will definitely be returning!"
+        },
+        {
+            "review_datetime_utc": "11/14/2021 20:15:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHZ05fWFBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHZ05fWFBREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDGgN_XPQ%7CCgwI0dzFjAYQsJ2w4gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great food with even better staff"
+        },
+        {
+            "review_datetime_utc": "11/05/2021 16:12:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHOWV2aW53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHOWV2aW53RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICG9evinwE%7CCgsIgrCVjAYQoMOtag%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great new Family owned place on East Blvd—can be a little hard to see since it is beside RED but glad we found it. The Waffles with blueberries, strawberries and bananas are the best with their Turkish coffee!!"
+        },
+        {
+            "review_datetime_utc": "11/05/2021 15:52:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHOWYzN2lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHOWYzN2lRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICG9f37iQE%7CCgwIo6aVjAYQoIGayAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing vibe, unbelievably kind and helpful staff, best sandwiches I've had in Charlotte, and a delicious vanilla oat milk latte. I highly recommend visiting!"
+        },
+        {
+            "review_datetime_utc": "11/01/2021 14:44:06",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHc2FETTRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHc2FETTRRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICGsaDM4QE%7CCgwItvr_iwYQiKDUwwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Went by there yesterday and the breakfast waffle was definitely hitting.  Awesome coffee and great drinks. The prices are extremely reasonable and the staff were warm and welcoming.  Definitely will be coming back soon!"
+        },
+        {
+            "review_datetime_utc": "10/19/2021 14:52:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHMkpUcll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHMkpUcll3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICG2JTrYw%7CCgwIk7e7iwYQsKqL3AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I really enjoyed meeting the family behind this establishment! I asked if they would cater my bridal shower. A few months later, my bridesmaids contacted them and got a great list of catered options together. All party guests had such high remarks/compliments about the food and said they'd love to know where I got the food and that they now want to visit the cafe too!"
+        },
+        {
+            "review_datetime_utc": "10/13/2021 20:23:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2bDdLcWtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2bDdLcWtnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID6l7KqkgE%7CCgsIzYCdiwYQuOfGQQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the atmosphere here ! It's very chill and relaxing . We had a hot coffee and a hot tea ! We also enjoyed a piece of chocolate cake which was amazing ! We will definitely be back to check out the rest of the menu! Excellent service !"
+        },
+        {
+            "review_datetime_utc": "09/27/2021 21:30:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2aHRPUGJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2aHRPUGJ3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID6htOPbw%7CCgsI8u_IigYQ4IaJWg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very loud, but liked the coffee. Not a place to study and chill"
+        },
+        {
+            "review_datetime_utc": "09/25/2021 21:07:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2aXVUa3BnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2aXVUa3BnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID6iuTkpgE%7CCgwIhp--igYQ4P7LigE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing food and service.  Love it"
+        },
+        {
+            "review_datetime_utc": "09/17/2021 19:26:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2b0tLNHRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2b0tLNHRnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgID6oKK4tgE%7CCgsI3deTigYQ6L_oYg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Exceptional!!"
+        },
+        {
+            "review_datetime_utc": "09/11/2021 20:28:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2NDVHUS13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2NDVHUS13RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIC645GQ-wE%7CCgwI2qL0iQYQ2ISElwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place was amazing! Loved the loukmades:) People were so sweet here!"
+        },
+        {
+            "review_datetime_utc": "09/06/2021 02:43:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2X3Z6YkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2X3Z6YkZBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIC6_vzbFA%7CCgoI64DWiQYQ-Js9%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service, great ambiance, great food, and above excellent coffee. Thank you TONY, Logan, Billy, Grecia, and Charles for an awesome experience."
+        },
+        {
+            "review_datetime_utc": "09/04/2021 15:01:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2cm9pTUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2cm9pTUVnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIC6roiMEg%7CCgsIuJTOiQYQgJTSGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The coffee and food is outstanding. Great place to grab a coffee and just relax. It's a much better feeling that you get just by walking in compared to a Starbucks. The people here are friendly and attentive. Dilworth has needed a spot like this for a long time."
+        },
+        {
+            "review_datetime_utc": "08/25/2021 18:50:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhMTZmVmdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhMTZmVmdRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDa16fVgQE%7CCgsI86GaiQYQwLHoQA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice food and excellent customer service."
+        },
+        {
+            "review_datetime_utc": "08/15/2021 16:30:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhcEpuR1ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhcEpuR1ZnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDapJnGVg%7CCgwImoLliAYQiIm4wQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a nice little find. Great food choices in a low key comfortable setting. Family run. Recommend."
+        },
+        {
+            "review_datetime_utc": "08/15/2021 02:16:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhLUxtYWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhLUxtYWp3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDa-LmajwE%7CCgwI5fHhiAYQwNjPvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! The friendliest people work there & will make you feel so welcome. Authentic Greek beer & wine. We can't wait to return!"
+        },
+        {
+            "review_datetime_utc": "08/09/2021 18:41:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNheTlhSHpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNheTlhSHpRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICay9aHzQE%7CCgsI1O3FiAYQ-LSZJQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great food and service!"
+        },
+        {
+            "review_datetime_utc": "07/24/2021 01:24:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhMUpfb1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhMUpfb1V3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICa1J_oUw%7CCgwIztfthwYQwMfchwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My bf and I love this place! He's a coffee lover and has never had a bad coffee. The service is amazing and we love their menu. Great for a chill night or a light bite. The vibes really are great"
+        },
+        {
+            "review_datetime_utc": "07/21/2021 14:54:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhME5UMGdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhME5UMGdnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICa0NT0ggE%7CCgwIverghwYQ4Ka-pgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My friends and I love this place! The food, coffee, and wine are all great but what really keeps us coming back are the staff. They always remember us and are so friendly!"
+        },
+        {
+            "review_datetime_utc": "07/20/2021 23:42:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhb0luVTlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhb0luVTlRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICaoInU9QE%7CCgwI4b7dhwYQsKSCuQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I tried the sweet crepe and it's delicious !!"
+        },
+        {
+            "review_datetime_utc": "07/04/2021 15:58:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxaXZxdFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxaXZxdFRBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDqivqtTA%7CCgwItrWHhwYQ4LivowM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee I've had in the city! The food was delicious too. Staff was super friendly and helpful"
+        },
+        {
+            "review_datetime_utc": "06/20/2021 12:18:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxLTg3SG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxLTg3SG1nRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICq-87HmgE%7CCgwIq-S8hgYQqLv_wAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Grate food  and staff was very friendly good place to chill"
+        },
+        {
+            "review_datetime_utc": "06/02/2021 03:12:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxOHFUejlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxOHFUejlnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICq8qTz9gE%7CCgwIs-7bhQYQqNqipAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I met a friend there for a couple of glasses of wine it was very nice atmosphere"
+        },
+        {
+            "review_datetime_utc": "05/30/2021 01:02:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxN0k3SDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxN0k3SDVnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICq7I7H5gE%7CCgwIsMjLhQYQ-K750AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic place for coffee!!!"
+        },
+        {
+            "review_datetime_utc": "05/29/2021 15:55:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxekwtY3l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxekwtY3l3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICqzL-cywE%7CCgwIgcjJhQYQ4L-OyQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A real Greek salad! The roasted feta was also amazing!"
+        },
+        {
+            "review_datetime_utc": "05/23/2021 15:47:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxNE1HdVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxNE1HdVFREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICq4MGuQQ%7CCgwI_fGphQYQiODOsAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Stopped in today to have a cup of coffee and I have to say this was great experience. Our server Logan was awesome and made us feel very welcomed and excited about the cafe would highly recommend stopping by"
+        },
+        {
+            "review_datetime_utc": "05/23/2021 14:10:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxNEx5T1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxNEx5T1hREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICq4LyOXQ%7CCgwI58SphQYQuN2ypwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service and a wonderful atmosphere! Their crepes are delicious!"
+        },
+        {
+            "review_datetime_utc": "05/22/2021 02:46:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLdjQ3SWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLdjQ3SWRnEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDKv47Idg%7CCgwI7-ChhQYQsLKEmwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service, wine options were pretty decent, very nice atmosphere. Sundae crepe was decadent. Great indoor and outdoor seating options. Little expensive, but otherwise had a great time."
+        },
+        {
+            "review_datetime_utc": "05/12/2021 22:20:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLbWFyTllBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLbWFyTllBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDKmarNYA%7CCgwIpanxhAYQkOmz4wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good Vibes only at this place! :) I'm glad it opened up. They are the only place in Charlotte that cooks their hot Greek coffee in Hot Sand, and they also have a good selection of sweet/savory crepes and wine and beer. That's the reason I stopped in, but the real reason I keep going back is the staff. Everyone's always smiling and willing to go above and beyond to make sure your experience and your \"vibe\" is always positive. ;) Great Job guys!"
+        },
+        {
+            "review_datetime_utc": "04/26/2021 01:07:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLd09IZ3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLd09IZ3RBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDKwOHgtAE%7CCgwIwqSYhAYQqJGUkgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool intimate bar. Perfect for being out but not being around a lot of people.  Bar staff is excellent and with dazzling personality"
+        },
+        {
+            "review_datetime_utc": "04/14/2021 15:07:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLemFfQlJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLemFfQlJ3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICKza_BRw%7CCgsIyIrcgwYQwPmBBw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome coffee and killer food! Nice fresh Greek food! Charlotte needed this, worth checking out for sure"
+        },
+        {
+            "review_datetime_utc": "04/07/2021 16:35:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLZ2NtazBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLZ2NtazBnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICKgcmk0gE%7CCgwIx763gwYQsMD-1QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Being Greek, I always get very excited to see new Greek options open in Charlotte, and these brothers Vasili and Antoni have succeeded with Vibe! The minute you walk in you are greeted by a wonderful team (mostly family) with a smile.  They offer Greek coffee which is brewed on sand and also iced Greek frappe and freddo cappuccino (my fave) as well as other Italian classics: espresso, lattes, etc.  I love that it is such a European atmosphere; besides Greeks, you'll find Serbians, Bosnians, Italians, Russians and others there enjoying.  Must Try: *Crepes (Savory & Sweet) my favorite is the Nutella and banana with Papadopoulo cookie crumbs!  *Spanakopita (no description necessary)  *Greek Yogurt with fresh fruits and honey  *Greek Salad  *\"The Vibe\" Ice Cream Sundae"
+        },
+        {
+            "review_datetime_utc": "03/28/2021 19:20:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLcFBESUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLcFBESUJREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICKpPDIBQ%7CCgsIhq6DgwYQwJLtJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, vibes & service."
+        },
+        {
+            "review_datetime_utc": "03/22/2021 16:35:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5NzZuZmR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5NzZuZmR3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDy76nfdw%7CCgsIx47jggYQiJ_SKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good food, variety of coffee drinks and super friendly owners"
+        },
+        {
+            "review_datetime_utc": "03/22/2021 16:34:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5NzZtTld3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5NzZtTld3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDy76mNWw%7CCgsIno7jggYQ2NOrJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service, food and coffee. Love the spanakopita!"
+        },
+        {
+            "review_datetime_utc": "03/13/2021 04:49:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5cnJtWGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5cnJtWGd3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDyrrmXgwE%7CCgwI6IixggYQkLuE3AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing Greek coffee options, phenomenal staff, and food looks amazing. I went to this place based on a referral I received from the owner of Ilios Crafted Greek and I'm so glad I did! If you want an amazing Greek coffee (rather difficult to accomplish in my book), this place is a must. I had the Freddo Cappuccino which is a double iced espresso with frothed milk and it was absolutely amazing. The quality of coffee, richness of flavor and authentic Greek coffee taste makes it one of my new favorites. I plan to try the frappe next and then migrate to a few of the hot coffee options.  I went back for a second time to check out their food and was very pleasantly surprised. The turkey avocado panini is everything I would have expected with the perfect blend of seasoning and ingredients so every item of the sandwich could be tasted without one thing overwhelming the others. My colleague ordered the Greek Toast and said it too was perfect and exactly what he was hoping for.  We also ordered the sundae crepe which of I were on vacation, I would literally eat every day of the vacation. The cookie interior was perfect without being too much frosting or cookie. The crepe was perfectly fine and the gelato on top literally made it the perfect dessert for all ages. I will absolutely be back for more!  If you are looking for a place with amazing Greek coffee and delicious desserts while also serving great quality and healthy food (to justify The desserts and coffee😉), I would highly recommend checking this place out! The desserts are definitely what is drawing most people along with the amazing Greek coffee, but with food that's delicious as well, it's worth adding to the list of spots to check out."
+        },
+        {
+            "review_datetime_utc": "03/11/2021 03:55:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5c2ZMQi1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5c2ZMQi1nRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDysfLB-gE%7CCgwItammggYQ-NWUnQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just spent an evening here with friends and shared tons of appetizers. The waiters were very attentive and took their time to answer all of our questions. The food was wonderful. It was a great night for friends and good food. Thank you for making us feel so special."
+        },
+        {
+            "review_datetime_utc": "03/10/2021 03:36:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5dHVmT09REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5dHVmT09REAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDytufOOQ%7CCgwIqv2gggYQkKfRigM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Referred here by @yelpelitechick on IG! Great spot, terrific service! The brothers aka the owners, as well as the other staff are so gracious and accommodating! Patronize this place ASAP! You won't be disappointed!"
+        },
+        {
+            "review_datetime_utc": "03/06/2021 23:29:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5dG92SGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5dG92SGpBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDytovHjAE%7CCgwIwaCQggYQgO6y6wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Food is amazing.  And it's a family run restaurant.   Exactly the type of place to support.  You wont be disappointed."
+        },
+        {
+            "review_datetime_utc": "02/28/2021 02:00:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5M08tRmpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5M08tRmpBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDy3O-FjAE%7CCgwIxfLrgQYQyPaynwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Family owned, well priced, great coffee, amazing crepes and everything else on the menu. Most of all great VIBES!"
+        },
+        {
+            "review_datetime_utc": "02/24/2021 15:49:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5eFBteGNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5eFBteGNREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDyxPmxcQ%7CCgwIievZgQYQ2MHzjQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place. Very cozy and excellent service!!!"
+        },
+        {
+            "review_datetime_utc": "02/20/2021 21:04:31",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5a01XVGlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5a01XVGlRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgIDykMWTiQE%7CCgsI3_LFgQYQwN2pXg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good luck brothers!!! You did great!!! 5 ⭐️"
+        },
+        {
+            "review_datetime_utc": "02/18/2021 23:44:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5My0yazR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5My0yazR3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICy3-2k4wE%7CCgwI1fe7gQYQ8KSH1wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is a hidden gem and I have a feeling it's going to blow up really soon. The owners really do create a welcoming, chill and fun VIBE. The food is delicious and unique, the coffee is so authentic and you could tell everything is done with passion. This is not just any other another cafe! I suggest you try it out before it explodes and is always busy  but that's just my prediction :)"
+        },
+        {
+            "review_datetime_utc": "02/16/2021 23:11:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5dC1ycVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5dC1ycVhBEAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICyt-rqXA%7CCgwIvqKxgQYQ2KnvjgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Vibe Cafe is what I have been looking for in Charlotte. A place with great service and hospitality. A place where friends can gather and consistently have quality coffee. A place that has great menu items for when the hunger kicks in. The Tiropita/Spanakopita is a my favorite appetizer. I personally love the spinach one more. All the crepes, savory and sweet, were excellent. Next time, I have to try the waffles as they looked delicious when others ordered them. I have ordered almost every coffee on the menu. The Freddo Cappuccino holds my number one spot as of now. To each their own, but one thing I'm sure everyone will agree on is the quality of the espresso compared to any other place in Charlotte."
+        },
+        {
+            "review_datetime_utc": "02/16/2021 12:44:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bC1YY1VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bC1YY1VREAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICyl-XcUQ%7CCgwIn_yugQYQiMjq0AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing coffee, amazing food, and great owners! I will definitely be back to try more food but the Nutella banana crepes were simply amazing!"
+        },
+        {
+            "review_datetime_utc": "02/15/2021 18:13:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5cDd5c2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5cDd5c2xBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICyp7yslAE%7CCgwIvfOqgQYQ2KOw-gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Omg the crepes here are beyond amazing! I had the freddo cappachino which was delicious with my craving for coffee. The customer service was exceptional. I welcome anyone  to come to this amazing place. I will be coming back soon"
+        },
+        {
+            "review_datetime_utc": "02/14/2021 23:10:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5LTk2Z3NBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5LTk2Z3NBRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICy-96gsAE%7CCgsI3tumgQYQ0IrpIw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I stopped in with my wife and we enjoyed the food and the Greek coffee! The service was excellent and food was also very good! Operated by a nice family and made the atmosphere very relaxing!"
+        },
+        {
+            "review_datetime_utc": "02/14/2021 14:41:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5dThMY3hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5dThMY3hRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICyu8LcxQE%7CCgwIsO2kgQYQgPrh1wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing cafe in a happening spot on East Blvd.  Great selection of wine and beer. I can't wait to go back and try some of the other items on the menu. We had the cucumber bites appetizer...my compliments to the creator of this dish!  Soooo good!  We also had the Mediterranean Pita and it was so fresh and tasty and not too heavy. The tzatziki spread was delicious.  My wife had the Apple Pecan salad and loved it.  Looking forward to tasting some of the desserts and authentic coffee. Give this place a try you won't be disappointed!!"
+        },
+        {
+            "review_datetime_utc": "02/14/2021 00:37:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5bTRIaDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5bTRIaDB3RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICym4Hh0wE%7CCgwIteGhgQYQyIe5pgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing Place! Run by two brothers and you can see the passion they have in this place. The food is amazing and the service is exceptional. I would definitely recommend this place to anyone looking for a fun night!"
+        },
+        {
+            "review_datetime_utc": "02/13/2021 22:41:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5bTVMMm93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5bTVMMm93RRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICym5L2owE%7CCgsIkquhgQYQ6L23Ow%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Place has a cool atmosphere, owners are awesome!!!! Great spot to grab a coffee"
+        },
+        {
+            "review_datetime_utc": "02/13/2021 22:19:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5bTd5anJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5bTd5anJRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICym7yjrQE%7CCgwI-KChgQYQqObXlAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely incredible spot. The coffee is AMAZING and the food was incredible! Warm, inviting atmosphere with a friendly and helpful staff. Would definitely recommend, and will be returning!"
+        },
+        {
+            "review_datetime_utc": "02/13/2021 22:07:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bTV5QVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bTV5QVN3EAE!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICym5yASw%7CCgwIrZuhgQYQ0LX_gAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee and wine spot! Love the Greek coffees and Greek beer"
+        },
+        {
+            "review_datetime_utc": "02/13/2021 00:17:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5eV9qZHpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5eV9qZHpRRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICyy_jdzQE%7CCgsIhLWcgQYQ6JWyTw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the place they have items that you can't find anywhere else in Charlotte as in Greek coffees and food."
+        },
+        {
+            "review_datetime_utc": "02/12/2021 03:08:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5MF91cHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5MF91cHVnRRAB!2m1!1s0x0:0x93c8790453f4aff6!3m1!1s2@1:CIHM0ogKEICAgICy0_upugE%7CCgsIneKXgQYQuIf-OQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, great food, the owners make you feel right at home. The name is perfect because I love the Vibe."
+        }
+    ],
+    "total_reviews_count": 119
+}

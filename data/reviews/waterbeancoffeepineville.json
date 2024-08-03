@@ -1,0 +1,1484 @@
+{
+    "place_id": "ChIJMRrxPIScVogRZLIRzjZaSRE",
+    "place_name": "Waterbean Coffee | Pineville",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "01/15/2023 22:54:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCc29yVjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCc29yVjJ3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDBsorV2wE%7CCgwIn4iSngYQuOnYnAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice location downtown Pineville. I've had the Chai Latte and Macaroons, which were both really. Prices are very decent."
+        },
+        {
+            "review_datetime_utc": "01/13/2023 22:34:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCbk9hM3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCbk9hM3FnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDBnOa3qgE%7CCgwIg7mHngYQqJC1mwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It was busy, but worth the wait. I loved that they had dairy free options and gluten free treats for me!"
+        },
+        {
+            "review_datetime_utc": "01/07/2023 22:02:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCN19ibC1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCN19ibC1nRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICB7_bl-gE%7CCgwI8dfnnQYQoOqX5wI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I had the ☕ WORST CUP OF COFFEE from here Today! I am not sure why, but the coffee seemed thicker than normal, it was supposed to be a small medium brew coffee with a shot of sugar-free vanilla, The Taste was absolutely horrible, it left a very bad aftertaste, and I began to feel nauseous while sipping on it, and I just threw it away!"
+        },
+        {
+            "review_datetime_utc": "01/06/2023 20:12:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMTlIQVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMTlIQVh3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICB19HAXw%7CCgwInoHinQYQgPGjwAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Calm, clean, friendly. There's a lot of places to sit. They make good coffee. Cinnamon French toast latte was my favorite. The matcha frappe was ok wasn't much matcha flavor. Service was great. They have a very large menu of teas and my sister says they do a good job making them."
+        },
+        {
+            "review_datetime_utc": "12/24/2022 18:47:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMXBXd1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMXBXd1VnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICB1pWwUg%7CCgwI05KdnQYQoPKhxwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great joy visiting this coffee shop! Great food, wonderful coffee & lovely staff as a cherry on top!"
+        },
+        {
+            "review_datetime_utc": "12/20/2022 14:00:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCZ3J2VTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCZ3J2VTlBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICBgrvU9AE%7CCgsI-f-GnQYQiNOgKA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've never been in a waterbean I didn't like! Always great services and good coffee and food!"
+        },
+        {
+            "review_datetime_utc": "12/16/2022 01:08:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCcUptVDRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCcUptVDRBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICBqJmT4AE%7CCgwIporvnAYQyL-E7AI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "For the price esthetic and area It's an all around great place. I had 2 latteas One hot and one iced.I loved them both. My only complaints are the macarons"
+        },
+        {
+            "review_datetime_utc": "12/11/2022 19:21:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtbDg3V2Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtbDg3V2Z3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-l87Wfw%7CCgsIodvYnAYQoNKqFg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I came here pretty frequently while it was still Unwind Coffee and Tea before it was bought by waterbean. I think Unwind had everything nailed. The atmosphere and decor was spot on and perfect. It was cozy and comfy and just overall a great vibe along with fantastic coffee. I was skeptical when Waterbean bought it, but thought I would still try it out. They have completely ruined the warmth in this coffee shop while trying to convert it to a \"modern\" coffee shop. It's all white and plain. There's no life to the place anymore. It's boring, bland and cold in its style. When I look for a place to spend time I want somewhere inviting and cozy. This place just no longer has that. The way it was when it was \"Unwind\" was perfect. They captured every aspect of what a coffee shop should be. It's a bummer Waterbean isn't able to hold onto that. On top of that, their coffee is subpar at best and I wish they still had the many tea options as before. It made the place unique. Now it's just another boring chain coffee shop."
+        },
+        {
+            "review_datetime_utc": "12/11/2022 14:40:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtNTV5RVFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtNTV5RVFBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-55yEQA%7CCgwI9dfXnAYQuNK-vQM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The coffee was good but I miss Unwind. Unwind had a ton of tea options and those are gone now. I know Waterbean renovated in Nov, but the atmosphere and furniture are very industrial and not cozy like I would expect for a coffee shop. I got a specialty holiday-themed latte and it was over $6. I've never paid that much for a small latte before. The regular small latte was, I believe, $5.30. I used treat myself to a nice coffee every Sunday, but unfortunately I can't justify spending $6+."
+        },
+        {
+            "review_datetime_utc": "12/09/2022 21:46:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtcThQcGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtcThQcGdBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-q8PpgAE%7CCgwInNnOnAYQ8KXr_gI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place, cool atmosphere. Coffee is pretty good, I told the staff it was my first time & they made a great reccomendation. The food was alright, not the tastiest but decent."
+        },
+        {
+            "review_datetime_utc": "11/26/2022 20:55:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtcXFxWUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtcXFxWUtREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-qqqYKQ%7CCgwIt_qJnAYQqLG36gE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Unwind Tea and coffee, RIP. I'm biased  because I loved the previous establishment, Unwind. This acquisition is so disappointing. The latte came out meh making me want to give up on coffee shops altogether. Place was a little dirty. When i asked for napkins they said they have some and when I looked it was just dirty crumbled napkins left. I said it's empty and when she refilled she put the dirty crumbled napkins on top. It's with a heavy heart that I'm done with this location. Was fun while it lasted."
+        },
+        {
+            "review_datetime_utc": "11/19/2022 23:23:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQteU11SW1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQteU11SW1nRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-yMuImgE%7CCgwI-srlmwYQqObitwI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "What a terrible place! They took 30 minutes to take our order. We paid for coffee and breakfast, but the breakfast never showed up. I was so disgusted that we just left.  The two people working were trying their hardest, but it is completely unorganized.  They don't even ask for a name when you order food, so how they know who it's for is beyond me."
+        },
+        {
+            "review_datetime_utc": "11/19/2022 11:35:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtc0xmb3dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtc0xmb3dBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-sLfowAE%7CCgwI_f7imwYQiJ60wAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great new addition to the area"
+        },
+        {
+            "review_datetime_utc": "11/18/2022 19:56:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtNE5mVFVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtNE5mVFVBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID-4NfTUA%7CCgsI08bfmwYQ0PqAAg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Everything is amazing! They are an upscale coffee shop catered to middle/upper class. Their regular cup of tea. 12 OZ is $4. I've never paid so much for a cup of hot water with a little bit of hers in it. The service was amazing! Above and beyond! The place is really cool if you like quiet, modern, clean, peaceful and classy. Not sure how comfortable the chairs are. You'd have to decide on your own."
+        },
+        {
+            "review_datetime_utc": "11/04/2022 12:18:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtcnBuTjZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtcnBuTjZBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC-rpnN6AE%7CCgsIj4aUmwYQ2OG3WA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Clean and nice place, very friendly service."
+        },
+        {
+            "review_datetime_utc": "10/08/2022 15:05:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlLXVIVVNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlLXVIVVNREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDe-uHUSQ%7CCgwIoaOGmgYQqJyI-QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Loved this place but its currently closed till at least November"
+        },
+        {
+            "review_datetime_utc": "10/07/2022 17:43:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlNnBTOUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlNnBTOUZ3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDe6pS9Fw%7CCgwIxsqBmgYQ-MusoQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love everything on the food menu. Believe I've tried them  all!!@"
+        },
+        {
+            "review_datetime_utc": "10/07/2022 13:04:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURleXRmbmFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURleXRmbmFBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDeytfnaA%7CCgsI1seAmgYQgN6TCw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice atmosphere, super friendly staff, delicious coffee, and the poppyseed muffin was perfect!"
+        },
+        {
+            "review_datetime_utc": "10/06/2022 16:24:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlMHZ1LUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMHZ1LUJREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDe0vu-BQ%7CCgwIwYL8mQYQiMuBxgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "They are closed."
+        },
+        {
+            "review_datetime_utc": "10/05/2022 16:59:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURld3B5RWhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURld3B5RWhBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDewpyEhAE%7CCgwI7u_2mQYQgM6FwAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So sad to see this place go! I don't know where to find great loose tea in the Charlotte area."
+        },
+        {
+            "review_datetime_utc": "09/29/2022 18:10:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlMExtQk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMExtQk1REAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDe0LmBMQ%7CCgwInr_XmQYQgKSUlgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff. Great coffee and food!"
+        },
+        {
+            "review_datetime_utc": "09/26/2022 17:30:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNldC0tOS1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNldC0tOS1RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICet--9-QE%7CCgwIy8PHmQYQiOTp7AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great spot to meet a friend for breakfast or lunch! The chai latte was great and their paninis are delicious."
+        },
+        {
+            "review_datetime_utc": "09/25/2022 15:41:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNleF9IdXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNleF9IdXl3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICex_HuywE%7CCgsIl-3BmQYQ4MKQUQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing little coffee place (with a lot more than coffee!) that offers a relaxed vibe and comfortable atmosphere if you'd like to chill and work, read, or maybe just ponder.  Unwind also has a rather robust and unique menu!  I visit almost daily for a java and some grub, I totally think you should too!"
+        },
+        {
+            "review_datetime_utc": "09/23/2022 19:18:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaTlfeU5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaTlfeU5BEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICei9_yNA%7CCgsIjo24mQYQqOn0DQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely small cafe. Great staff. A nice experience and place to meet a client for tea."
+        },
+        {
+            "review_datetime_utc": "09/10/2022 19:52:02",
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUNlaXJRNhAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUNlaXJRNhAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICeirQ6%7CCgsI4tXzmAYQ0JOiEA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place to stay, cozy. The staff is very friendly and the place is clean, would recommend"
+        },
+        {
+            "review_datetime_utc": "09/10/2022 16:17:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlOHBxOEJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlOHBxOEJBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICe8pq8BA%7CCgwIk_HymAYQ4LqZuwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Hands down the best iced lattes in Charlotte, and I've tried A LOT of coffee places. Unwind also has some great food options. My fav is the BLT and my partner likes their Strawberry & Whipped Ricotta Toast. The owner is the sweetest lady and they always have the nicest staff working. Added bonus is they're located in cute, little downtown Pineville!"
+        },
+        {
+            "review_datetime_utc": "08/27/2022 02:17:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1N2RuTW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1N2RuTW13RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDu7dnMmwE%7CCgwIpv2lmAYQiLWAswE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love love love this place. Always clean and very pleasant. Coffee is very good and staff is amazing. Location is great as well."
+        },
+        {
+            "review_datetime_utc": "08/25/2022 21:39:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1MWNMSGp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1MWNMSGp3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDu1cLHjwE%7CCgwIgNifmAYQqOe5jQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great and slightly intimidating selection of teas. I love it 🤘🏻"
+        },
+        {
+            "review_datetime_utc": "08/23/2022 20:26:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1eVkyN2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1eVkyN2x3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDuyY27lwE%7CCgsI5e-UmAYQ0P61Xw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "We ordered 3 drinks when it was slower a coffee, matcha, strawberry tea and food. The coffe was good, the matcha was good and the strawberry green tea was brewed correctly and was great! A little later we brought 4 more drinks. 1 tea we threw out immediately after a sip, another we added almost 2 tbs of sugar to improve it...didn't work. 3rd was so bitter it reminded me of wormwood. 4th was so mild in flavor it tasted simply of boiled water. All the last 4 teas tasted really burnt/over brewed and bitter. I guess that since they got busier during the 2nd order they weren't able to deliver the same quality. I expected a consistent good quality for their drinks since that's their specialty so it really threw me off with how the drinks were all over the place. About the food; muffin was great, pizza mid, chicken salad fresh but dry, and the wrap was good. The upside to it all was that the staff were present and the whole cafe was kept clean."
+        },
+        {
+            "review_datetime_utc": "08/20/2022 21:27:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1anFfckZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1anFfckZnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDujq_rFg%7CCgsI1qOFmAYQwN_MYA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this Cafe. The Avocado Tomato Toast on Rosemary Bread is amazing."
+        },
+        {
+            "review_datetime_utc": "08/18/2022 16:36:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1MktuOW9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1MktuOW9RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDu2Kn9oQE%7CCgsIgtX5lwYQiIb5BQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a nice little place. Excellent food and atmosphere definitely have to stop here again next time I'm in Pineville."
+        },
+        {
+            "review_datetime_utc": "08/17/2022 02:40:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1NHNmMFdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1NHNmMFdREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDu4sf0WQ%7CCgwIkqrxlwYQ4ITL1wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fresh delicious food. They are doing things right and you get what you pay for here."
+        },
+        {
+            "review_datetime_utc": "08/16/2022 11:33:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvalltNjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvalltNjVRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICojYm65QE%7CCgwI94DulwYQ4JS7qQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of teas and coffee, along with delicious food.  Very friendly service too.  They often have gluten free pastries and muffins, which makes my husband happy."
+        },
+        {
+            "review_datetime_utc": "08/13/2022 15:35:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1eEpENUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1eEpENUhnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDuxJD5Hg%7CCgwI1onflwYQ2Paq1wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great coffee spot. So good we returned for a second visit! (traveling from out of state)"
+        },
+        {
+            "review_datetime_utc": "07/27/2022 22:32:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1dHNxQmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1dHNxQmhRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICutsqBhQE%7CCgwI9PmGlwYQoI2TyQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cute local coffee shop with a GREAT tea selection!"
+        },
+        {
+            "review_datetime_utc": "07/19/2022 23:02:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1cVBLcURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1cVBLcURnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICuqPKqDg%7CCgwIi_DclgYQ4MfXlwI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Great selections of tea, would love to see them have more comfortable seating besides the meatal stools."
+        },
+        {
+            "review_datetime_utc": "06/26/2022 16:24:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPNlBiUFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPNlBiUFZnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDO6PbPVg%7CCgwIy5DilQYQ6MeEtAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love the bougie latte!"
+        },
+        {
+            "review_datetime_utc": "06/24/2022 21:26:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPNExTd0pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPNExTd0pBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDO4LSwJA%7CCgwIodjYlQYQ6M6e8wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice and cozy place"
+        },
+        {
+            "review_datetime_utc": "06/14/2022 21:48:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPeGZxcU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPeGZxcU9nEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICOxfqqOg%7CCgsIpISklQYQ6MvkYg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A nice & cozy space! Everything on the menu (especially the specials) sounded so good - it was hard to decide what to get! I unfortunately did not pick a dish that fit my tastes as much as I had hoped, but I'm looking forward to trying something else next time! I also loved that they have a little library nook to find & swap books"
+        },
+        {
+            "review_datetime_utc": "06/14/2022 17:33:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPaGJiaWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPaGJiaWlBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICOhbbiiAE%7CCgwI94yjlQYQgIOSygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "DELICIOUS!!!  third time that I've had lunch here - best sandwich and side salad that I remember having - perfect!!  I ordered off the daily special list so I can't remember exactly what it was but it was a grilled whole wheat sandwich.  The dressing was Honey balsamic - YUM!!!! Highly recommend this for lunch:)"
+        },
+        {
+            "review_datetime_utc": "06/08/2022 23:57:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPNXJYQ0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPNXJYQ0pREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICO5rXCJQ%7CCgwI_O6ElQYQkPGVgAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Only had time to get a coffee, will go back when have time to check out all the teas they have. Looks like a decent place to meet a friend to enjoy coffee or tea with."
+        },
+        {
+            "review_datetime_utc": "06/03/2022 21:35:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPN09qdUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPN09qdUN3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICO7OjuCw%7CCgwIu_3plAYQ4NKH6AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Their chai latte is delicious! I drink chais everywhere, and their chai stands out. Also, the service is wonderful! They're all friendly and helpful. They really really really listen and want to help you. They take their time to explain everything and give you lots of options for what you want. The egg and cheese sandwich is amazing too. They don't save on the ingredients. It's big and filling! And not too salty, as they tend to make it in most places. Thank you!!!"
+        },
+        {
+            "review_datetime_utc": "05/15/2022 21:51:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyM3U2TFVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyM3U2TFVBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID23u6LUA%7CCgsI4-uFlAYQgIuPWw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Second time at this charming Tea and Coffee Shop. In the heart of quaint downtown Pineville and offering a wide selection of teas and coffees along with fresh tasty treats and lunchtime bites.  Prompt service with a side of friendly conversation. Limited outdoor seating, but plenty of indoor seating at tables or sofa style.  Will definitely be back!"
+        },
+        {
+            "review_datetime_utc": "05/15/2022 21:08:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyM3FxZXZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyM3FxZXZBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID23qqevAE%7CCgsIvNeFlAYQ8MOCeg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The food is delicious and the space is very cozy and welcoming!"
+        },
+        {
+            "review_datetime_utc": "04/20/2022 23:16:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyenFxTXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyenFxTXFRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC2zqqMqQE%7CCgwI2aiCkwYQkL_l2gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cafe,  we enjoy the selection of fresh tea, coffee is great, French press and vanilla lates are perfect,. Fresh baked goods, delicious salad and sandwiches and more."
+        },
+        {
+            "review_datetime_utc": "04/19/2022 21:07:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMybHBqM1RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMybHBqM1RREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC2lpj3TQ%7CCgsI_Mj8kgYQ8MPHYw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent food. Great salads, sandwiches and wraps.  Try the chicken cordon blue wrap."
+        },
+        {
+            "review_datetime_utc": "04/18/2022 23:26:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyLXRHbXFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyLXRHbXFBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC2-tGmqAE%7CCgsIuuf3kgYQ6J6_IA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good Sandwiches and coffee.  Plenty of table space to work on a laptop.  I wish it was open on Sundays."
+        },
+        {
+            "review_datetime_utc": "04/07/2022 18:54:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXel9fWWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXel9fWWVREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWz__YeQ%7CCgsI-ea8kgYQiLCSdg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a neat coffee shop and sandwich place."
+        },
+        {
+            "review_datetime_utc": "04/03/2022 15:40:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXczlMUTZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXczlMUTZBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWs9LQ6AE%7CCgwI-_-mkgYQgOay3gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Set in the heart of downtown Pineville, Unwind tea and coffee has quickly become one of my favorite coffee shops. The teddy bear latte with oat milk is my absolute favorite and every food item I have tried is incredible!"
+        },
+        {
+            "review_datetime_utc": "04/02/2022 17:51:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXbzdQcVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXbzdQcVhREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWo7PqXQ%7CCgsIlpqikgYQuOmaCg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Really nice cafe with lots of space. I wish there were more seating options. The tiny metal bar stools are uncomfortable. Some have a small back and others don't. They have chairs for the short tables, but the chairs are also metal. I met a friend there to work on a project and after sitting for 3 hours (getting up regularly), I still had immense pain in my hip the next day. The food is good as are the coffees. They have a large variety of teas which are competitively priced with other popular coffee houses."
+        },
+        {
+            "review_datetime_utc": "04/02/2022 14:02:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXdzVfajFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXdzVfajFBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWw5_j1AE%7CCgwI5q6hkgYQoK2wowE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unwind Tea & Coffee is a true hidden gem and a wonderful place to visit. All of the staff are a pleasure to see and they love being there just spreading kindness and providing phenomenal service. They're located in Historic Downtown Pineville amongst some other locally owned hidden gems. Make it a destination and support local. With tons of parking it's a great quick stop for tea or coffee and they have a variety of delicious bites to eat! It's a perfect setting for one on one networking and business meetings or a chill environment to work a little. With patio seating out front you can people watch and enjoy the charm of the neighborhood. With an amazing selection of the finest teas it's no wonder the connoisseurs flock here for their fill of their favorite selections. If you've never been here…switch up your routine and take a break from the big box stardunks and support local!"
+        },
+        {
+            "review_datetime_utc": "04/01/2022 01:46:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXN2FuSjVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXN2FuSjVnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDW7anJ5gE%7CCgwIk7OZkgYQsJmdzQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice relaxing atmosphere with a variety of tea choices as well as coffee."
+        },
+        {
+            "review_datetime_utc": "03/30/2022 13:50:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXbGN2WHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXbGN2WHBnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWlcvXpgE%7CCgwIoMCRkgYQ4I_x3QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice coffee shop. Great tea selection."
+        },
+        {
+            "review_datetime_utc": "03/26/2022 21:01:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbUxibWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbUxibWlBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICqmLbmiAE%7CCgwIqv79kQYQqJ7amwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it!!"
+        },
+        {
+            "review_datetime_utc": "03/26/2022 16:46:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXNFk2ci1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXNFk2ci1BRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDW4Y6r-AE%7CCgsI7Ib9kQYQ-IKITA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I had a good cappuccino here. I would have liked to stay but the inside was packed with no where to sit. Obviously a popular spot. Only downside is that it took a very very long time to get my drink (20min or so), even though I was the only one waiting at the counter. I'd certainly try them again."
+        },
+        {
+            "review_datetime_utc": "03/20/2022 01:49:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXc29ETWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXc29ETWp3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWsoDMjwE%7CCgwIlJDakQYQ0JCFlwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time visiting. It was great!"
+        },
+        {
+            "review_datetime_utc": "03/16/2022 18:56:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXOUpIa1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXOUpIa1RBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDW9JHkTA%7CCgsI4-XIkQYQyMHQEw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great cup of tea"
+        },
+        {
+            "review_datetime_utc": "03/15/2022 21:00:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXcE8taGVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXcE8taGVREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWpO-heQ%7CCgsI5vzDkQYQyK75Pw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Found this cute little shop down from the mall. They have a large variety of Tea blends.  Also have Expresso drinks. Nice atmosphere and very Friendly, informative employees. I got a tea blend latte, and some others to brew @ home.🙂"
+        },
+        {
+            "review_datetime_utc": "03/13/2022 01:51:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXc09Ma1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXc09Ma1NBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWsOLkSA%7CCgwImJy1kQYQqN2K_wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice place! Good breakfast flatbread and decent coffee(the aioli tastes like ranch tho, which isn't bad unless you don't like ranch). They took a very long time to get the flatbread out to me. I waited like 25 minutes and it wasn't even that busy. I'd go back but definitely not somewhere to stop if you're in a rush"
+        },
+        {
+            "review_datetime_utc": "03/12/2022 18:19:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXa0pfR193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXa0pfR193RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDWkJ_G_wE%7CCgwIvMizkQYQoLXE0wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My MIL, husband and BIL went on a daycation and stopped here. It was lovely. The atmosphere was great and it is a family place. It has games, books, and tea lattes. I am a tea hound and the tea here is extraordinary. They also sell loose leaf too that I highly recommend. If I am ever back here I will come back."
+        },
+        {
+            "review_datetime_utc": "03/08/2022 12:04:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXeDltMzB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXeDltMzB3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICWx9m30wE%7CCgwI64ydkQYQgOjz0wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice atmosphere and friendly service great food."
+        },
+        {
+            "review_datetime_utc": "03/04/2022 17:02:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZeE56UF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZeE56UF93RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICYxNzP_wE%7CCgwIsoyJkQYQ8K_7wwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best tea & coffee place in Pineville"
+        },
+        {
+            "review_datetime_utc": "03/04/2022 16:45:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNbE4zamtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNbE4zamtBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDMlN3jkAE%7CCgsIj4SJkQYQ2KmYMQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've been going to this coffee shop for a few years. Long enough for it to have moved to a couple doors down and back to it's original location. I'm a big fan of the cold brew and this last time I had incredible avocado toast. 😍"
+        },
+        {
+            "review_datetime_utc": "02/19/2022 20:48:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXekpISDRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXekpISDRRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICWzJHH4QE%7CCgwIoK_FkAYQkIrn-wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mannnnn Charlotte got some excellent coffee shops !!! This is the second one I have been to since visiting this weekend. AMAZING coffee. Like really good! The staff was also so sweet and helpful in helping me decide which latte to choose. I got the Crème Brule!!!! 10/10 recommend"
+        },
+        {
+            "review_datetime_utc": "02/11/2022 17:45:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtNTRPVFFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNTRPVFFnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDm54OTQg%7CCgwIucGakAYQ-IbwkgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome loose leaf per oz and delicious coffee drinks."
+        },
+        {
+            "review_datetime_utc": "02/05/2022 17:39:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtemZmLTd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtemZmLTd3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmzff-7wE%7CCgsIwOz6jwYQ0Jn_Gg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent products and services. They were also very kind and tolerant of my son who has autism. They have a massive selection of premium quality teas that will satisfy those with standard or advanced palates. From a quick latte to a satisfying sandwich, your needs will be met at this location."
+        },
+        {
+            "review_datetime_utc": "02/02/2022 21:32:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtdVltcXlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtdVltcXlnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmuYmqygE%7CCgwI5_DrjwYQ-OLjnQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite local spot. The staff is always great, the coffee on point, and the food is way better than I anticipated for a \"Tea&Coffee\" place"
+        },
+        {
+            "review_datetime_utc": "01/28/2022 15:40:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtenFxQmdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtenFxQmdBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmzqqBgAE%7CCgwI_pzQjwYQwPG04wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "It was a nice place, the food was really good portions for the price! I would highly reccomend a sandwich and side salad for the best value. My only issue was I found the wait a bit long, it was around 25 minutes, and it wasn't very busy when I ordered. Despite that it was a good place to grab a bite and the people were very nice."
+        },
+        {
+            "review_datetime_utc": "01/27/2022 21:51:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtdHQ2RkxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtdHQ2RkxBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmtt6FLA%7CCgwI96fMjwYQwOmu1QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice place and coffee but plz wear masks during this pandemic"
+        },
+        {
+            "review_datetime_utc": "01/25/2022 00:38:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURteW8tQ1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURteW8tQ1VnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmyo-CUg%7CCgsIiY29jwYQ-NiOeA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a wonderful gem this shop is! I love sitting in the small downtown atmosphere complete with a railroad track right outside. The coffee is great, and sandwiches are tasty. Everyone here has been extremely helpful and friendly. I haven't tried their tea yet, but highly suggest checking out this adorable spot."
+        },
+        {
+            "review_datetime_utc": "01/22/2022 22:26:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtd3I2MXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtd3I2MXp3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDmwr61zwE%7CCgsIr4myjwYQ-LmUNA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "i really love this place! it's really calming to go in there to study, read, or just relax. the staff there are super friendly and the drinks + food are amazing! it has a really nice atmosphere, and it's great to go in the afternoon or morning with friends or even by yourself."
+        },
+        {
+            "review_datetime_utc": "12/30/2021 12:53:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtZ2FHRll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtZ2FHRll3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICmgaGFYw%7CCgwIyNe2jgYQkJK8wwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Extensive selection of loose teas, expertly prepared and served coffee and tea, creative and delicious food menu, cozy atmosphere.  On our current list of favorites!"
+        },
+        {
+            "review_datetime_utc": "12/27/2021 19:44:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtbHRmSDBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtbHRmSDBRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICmltfH0QE%7CCgsIqK-ojgYQyNz1Vw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to just relax, pick up a quick nutritional bite or sweet treat and staff is always friendly."
+        },
+        {
+            "review_datetime_utc": "12/22/2021 10:57:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtZ3ZPbW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtZ3ZPbW13RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICmgvOmmwE%7CCgwIsImMjgYQsNvtqwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A 👍 spot 4T"
+        },
+        {
+            "review_datetime_utc": "12/16/2021 18:04:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHMFppMHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHMFppMHhRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDG0Zi0xQE%7CCgwIxv_tjQYQ-J7C-AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's such a cute and cozy coffee place. It's so quiet and peaceful to work here. Their coffee is very good. They also sell sandwiches and paninis. You can also find many unique flavoured tea from them."
+        },
+        {
+            "review_datetime_utc": "12/15/2021 11:16:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtNEx5U3p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtNEx5U3p3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICm4LySzwE%7CCgwIhp3njQYQyLv8_wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love the atmosphere! It is very spacious yet cozy at the same time. The food & drink are both delicious. And to top it off there was entertainment! A young lady with an absolutely beautiful voice. This place is a must visit."
+        },
+        {
+            "review_datetime_utc": "11/27/2021 23:38:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHanVpSUtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHanVpSUtBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDGjuiIKA%7CCgwI4YKLjQYQqILQ2QE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Their Wifi password has \"2015\" in it and I think that's the year they brewed our coffee. The coffee was barely luke-warm and when I asked if it could be heated up they microwaved it in their office for over 5 minutes. Being a trained barista, I was hopeful that request would prompt someone to brew a new batch of coffee; I was mistaken. As I waited for my coffee to be assaulted by the microwave, the manager/owner asked if she could help me. I informed her I was already being helped, but the reason was because the coffee was not hot. Her response: \"oh okay.\" I was appalled. A coffeeshop should never, ever be okay with microwaving someone's coffee. I would rate the coffee a D. Even when it was hot, it wasn't a good flavor. Cleanliness is an A++. Atmosphere is an A, when the staff is quiet. Staff about a B+; they were more concerned with chatting to themselves than helping customers. Overall, I would not recommend this establishment."
+        },
+        {
+            "review_datetime_utc": "11/26/2021 17:09:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHNXJ5YXVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHNXJ5YXVBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDG5ryauAE%7CCgsI2qmEjQYQ8MmmGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My family and I stumbled upon this place and it was absolutely worth it. The chicken sandwich was wonderful and the coffee and tea selections are very unique. Loved the Boujee Cinnamon Latte! Well done! Everyone needs to experience this charming destination with convenient parking"
+        },
+        {
+            "review_datetime_utc": "10/05/2021 10:43:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2aGZhQ0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2aGZhQ0ZBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID6hfaCFA%7CCgwItNjwigYQ0LO-jgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great Chai tea, excellent atmosphere and staff"
+        },
+        {
+            "review_datetime_utc": "10/03/2021 00:27:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2c2MybVVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2c2MybVVREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID6sc2mUQ%7CCgwI1fHjigYQgL3ZmAM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "50 minutes for a grilled cheese but i ordered a wrap !?!"
+        },
+        {
+            "review_datetime_utc": "10/02/2021 21:24:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2c2RLWGJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2c2RLWGJBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID6sdKXbA%7CCgwIn5zjigYQ2IjYxgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Omg.. 1st time here today. All of my teas were amazing. And I also tried the soda tea. The atmosphere was very chill. I definitely will be back. And I highly recommend this spot to anyone who love teas."
+        },
+        {
+            "review_datetime_utc": "10/01/2021 20:45:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2b2VyT3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2b2VyT3NnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID6oerOsgE%7CCgwI3ObdigYQ6NaFtQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I buy my loose tea here. It's also a great place to meet friends for tea, coffee or a glass of wine. Friendly, open atmosphere."
+        },
+        {
+            "review_datetime_utc": "09/29/2021 14:57:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2anFtU3lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2anFtU3lBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID6jqmSyAE%7CCgwI9_3RigYQsMHkpgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Stopped for coffee and a bite to eat based on other google reviews. Beautiful place inside, a little comfy, a little industrial. Very clean. Friendly staff working here. They have loose tea of all kinds and flavors. I got a latte which was perfect (not too hot and not too cool) If you love plants they have some hanging from the ceiling in the cutest hangers. Tables outside on Main St. Free public parking on side street (Dover)."
+        },
+        {
+            "review_datetime_utc": "09/08/2021 18:56:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2dWQtTGJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2dWQtTGJ3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC6ud-Lbw%7CCgsIyI7kiQYQ2JSKOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time here and is an amazing first experience. Upon entering the cafe you already start to feel the nice comfortable home vibes. As you walk in you can smell the spectacular aromas from coffee, tea, and food. The nice chill music playing around the cafe makes the relaxed calming vibe even better. First opinion was the cafe was very clean and covid compliant. So many options for their drinks/food but definitely not overwhelming. I would say the perfect selection for their style here. Decided to try the cold brew for my coffee of choice. The cold brew was a perfect blend, didn't taste watered down like Starbucks gets and was able to enjoy it for the entire time spent at the cafe. Also decided to try the hummus and veggies plate. The hummus was so savory with the oil and pepper blend topping. The veggies tasted just as fresh as they looked. Almost like they were just picked. The decor here definitely  helped with me keep my concentrate while I was working. Loved the wall with different selections of teas. The customer service or should I say guest experience was spectacular, very friendly and nice. Will be a regular spot. Was so pleased about this cafe that I had to write my review on the spot!!"
+        },
+        {
+            "review_datetime_utc": "09/07/2021 13:37:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2OGNLSklREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2OGNLSklREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC68cKJIQ%7CCgwIm9bdiQYQqP32jwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really good pour over coffee. Good vegan treats. Everyone around me was raving about the food. I just had coffee and treats"
+        },
+        {
+            "review_datetime_utc": "08/24/2021 18:40:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhcmZHSTZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhcmZHSTZRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDarfGI6QE%7CCgwIufqUiQYQ2LaEyQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Relaxing atmosphere, friendly and welcoming, great coffee and tasty baked goods. I enjoy unwinding here! Thank you."
+        },
+        {
+            "review_datetime_utc": "08/17/2021 10:42:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhb3R6MHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhb3R6MHV3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDaotz0uwE%7CCgwImaXuiAYQ0KS5tQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place, Wendy knew what she was doing when she created this place"
+        },
+        {
+            "review_datetime_utc": "08/14/2021 22:59:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhLUtpR3V3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhLUtpR3V3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDa-KiGuwE%7CCgwIy5XhiAYQuOPKywE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great selection of teas and flavored coffee.  I  didn't get a chance to enjoy their food but from what I saw, it looked delicious"
+        },
+        {
+            "review_datetime_utc": "08/07/2021 17:06:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhdmVuR1VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhdmVuR1VREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICavenGUQ%7CCgsIn_u6iAYQkOzpLQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great little coffee shop lots of chairs and tables. Coffee and food better than average."
+        },
+        {
+            "review_datetime_utc": "08/05/2021 12:33:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhbGNxejVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhbGNxejVnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICalcqz5gE%7CCgwItrWviAYQwM6vsQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I was looking for a local place to buy tea for a friend and found this shop.  They have a pretty big variety of teas with interesting flavors. I'd say there were probably at least 50 choices. I don't like tea, but my friend loved what I got her.  They have some food and prepared drinks as well which we didn't check out.  I'll definitely come back to this place again!"
+        },
+        {
+            "review_datetime_utc": "07/25/2021 01:34:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhckxLZjN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhckxLZjN3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICarLKf3wE%7CCgsIjf_yhwYQ-MumLA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "How did I miss this place?"
+        },
+        {
+            "review_datetime_utc": "07/25/2021 00:46:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhckt6QTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhckt6QTNnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICarKzA3gE%7CCgsI9ejyhwYQuKL_DA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love the loose leaf tea options. The pastries are delicious."
+        },
+        {
+            "review_datetime_utc": "07/23/2021 23:11:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhMU5XandnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhMU5XandnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICa1NWjwgE%7CCgwIlJnthwYQsI2xoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My new favorite spot in Charlotte! Amazing service, healthy food, and all the tea options imaginable… 💙💙💙💙💙"
+        },
+        {
+            "review_datetime_utc": "07/16/2021 09:51:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMjhya2hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMjhya2hRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDq28rkhQE%7CCgwIlq3FhwYQgIuIhwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "An amazing place to buy  loose leaf tea  super fresh"
+        },
+        {
+            "review_datetime_utc": "07/02/2021 22:35:49",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxb3BDOWhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxb3BDOWhRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDqopC9hQE%7CCgsIxan-hgYQgMa4Kw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Came for coffee and sandwich.  Both were flavorful and fresh!  Excellent staff and service."
+        },
+        {
+            "review_datetime_utc": "06/30/2021 21:39:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxeklTVkRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxeklTVkRBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDqzISVDA%7CCgwImsnzhgYQ-PyTlgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great environment.Loved the coffee!"
+        },
+        {
+            "review_datetime_utc": "06/28/2021 19:04:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxaEtuRG9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxaEtuRG9BRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDqhKnDoAE%7CCgwIx7rohgYQsL7M0gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly atmosphere and pretty good food selections .Parking lot off side street."
+        },
+        {
+            "review_datetime_utc": "06/25/2021 20:04:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbTZDX2tRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbTZDX2tRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICqm6C_kQE%7CCgwI5-3YhgYQuLaC6AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A delectable menu of several breakfast items including Avocado toast with bacon, breakfast Flatbread and breakfast sandwich nestled like the gem it is in some wax paper.  The specialty lattes are also amazing"
+        },
+        {
+            "review_datetime_utc": "06/07/2021 13:27:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxN3FISUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxN3FISUZ3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICq7qHIFw%7CCgwIrb34hQYQgIv8igE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The iced latte was AMAZING. I will be back. Very good espresso"
+        },
+        {
+            "review_datetime_utc": "05/29/2021 16:31:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxckpqRFVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxckpqRFVBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICqrJjDUA%7CCgsI29jJhQYQsMzwCA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place. The latte's were amazing. Grilled cheese cooked to perfection. I will definitely be back! And the staff were very friendly! 🙌🏾"
+        },
+        {
+            "review_datetime_utc": "05/23/2021 18:48:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxa0xEdk1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxa0xEdk1nEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICqkLDvMg%7CCgsIgMeqhQYQuMbYFQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great little shop and kind owner. Stools and chairs are a bit hard on the duff, otherwise great staff and snacks."
+        },
+        {
+            "review_datetime_utc": "05/22/2021 23:29:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxd002OGNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxd002OGNnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICqwM68cg%7CCgsI1qemhQYQgPPGSw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing!! The best Avocado toast with goat cheese. I could eat it every day!!"
+        },
+        {
+            "review_datetime_utc": "05/22/2021 13:36:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLX19QUTRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLX19QUTRBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDK__PQ4AE%7CCgwI15GkhQYQwOqZzgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Iced Coffee w/ Oatmilk was very good, try the Avocado Toast or the Bacon Egg and Cheese on your favorite bread, lots of Salad and lunch sandwhiches to go with a Tea or Coffee"
+        },
+        {
+            "review_datetime_utc": "05/19/2021 16:40:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLdDhDYXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLdDhDYXNnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDKt8CasgE%7CCgwI-_6UhQYQ0M7WgwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So I've been here three times now and must say this place is incredible. The tea selection is fabulous and is really the highlight of the whole store. There are probably 100 different teas to go through and smell and enjoy. I also got a panini once and it too was so flipping good. Great business to support!"
+        },
+        {
+            "review_datetime_utc": "05/10/2021 21:59:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLMXRLQVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLMXRLQVN3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDK1tKASw%7CCgsIrdnmhAYQyISeYg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "They know what is a breve cortado 👍"
+        },
+        {
+            "review_datetime_utc": "04/25/2021 13:18:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLXzRlVXZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLXzRlVXZBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICK_4eUvAE%7CCgsIpdiVhAYQ-ObzOQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff.   Regular stop to my week"
+        },
+        {
+            "review_datetime_utc": "04/24/2021 15:58:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLMzdEN2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLMzdEN2tnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICK37D7kgE%7CCgwIlICRhAYQ6NLPgQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, fantastic scone and avocado toast was outstanding!"
+        },
+        {
+            "review_datetime_utc": "04/14/2021 12:42:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLemU2ZWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLemU2ZWpnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICKze6ejgE%7CCgwIvMbbgwYQiIL-4gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(rereviewing for proper review)  My partner and I went to Unwind as part of our anniversary celebration and were treated with amazing respect by the employees. The atmosphere was amazingly chill, perfect for all types of studying, quiet work sessions or when you just want a nice cup of tea and to read when the day is done.  They have an immaculate tea selection and delicious pour overs and handled out order with the utmost care and kindness even when they had a bit of a line and were super sweet as we left.  We're going to keep coming back to Unwind as we've found one of our favorite places in all of North Carolina."
+        },
+        {
+            "review_datetime_utc": "04/10/2021 14:22:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLNmVUUmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNmVUUmtBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICK6eTRkAE%7CCgsInenGgwYQyJ2uTA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I can't say enough good things about this place. Wendy and her staff are phenomenal and very pleasant. The atmosphere and food is amazing, ESPECIALLY the breakfast flatbread with salsa. This is a must have!!!  The coffee and incredibly wide selection of teas is also mind blowing. This has become my go to spot in the mornings for my coffee and food fix to start my day off right. Plus it's a privately owned local business."
+        },
+        {
+            "review_datetime_utc": "04/08/2021 15:26:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLNGNXUFlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLNGNXUFlBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICK4cWPYA%7CCgsIoMG8gwYQ4NTZDQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The coffee and tea were excellent. Staff was not exactly the most customer service friendly but they got the job done. Would definitely return."
+        },
+        {
+            "review_datetime_utc": "04/04/2021 22:54:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLdHVLRm9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLdHVLRm9nRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICKtuKFogE%7CCgsIwoepgwYQ-IPbTA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great amount of different tea and spices."
+        },
+        {
+            "review_datetime_utc": "03/26/2021 01:38:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLaU95LVlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLaU95LVlnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICKiOy-Yg%7CCgwIh_b0ggYQgOfG8wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The food fresh and hot, staff was pleasant."
+        },
+        {
+            "review_datetime_utc": "03/18/2021 17:33:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5MjYyNkR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5MjYyNkR3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDy2626Dw%7CCgwI053OggYQsLWB8gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My go to coffeeshop. Cool vibe  and great drinks."
+        },
+        {
+            "review_datetime_utc": "03/17/2021 18:11:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5cThDSWtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5cThDSWtnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDyq8CIkgE%7CCgwItozJggYQkI3D3QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great spot to chill. Love the decorations and the staff is very friendly"
+        },
+        {
+            "review_datetime_utc": "03/16/2021 22:08:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5czhlV1dnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5czhlV1dnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDys8eWWg%7CCgwIwtjEggYQiJ_Z9gI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "MASKLESS EMPLOYEES. Asked them to put the masks back on, they did it for five seconds until after we ordered food to go and then took them right back off. While we waited, the cashier glared at us a bunch like, “screw you, I do whatever I want.” Overcrowded and no customers were wearing masks, either."
+        },
+        {
+            "review_datetime_utc": "03/09/2021 19:47:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5d2VqM0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5d2VqM0pnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDywej3Jg%7CCgwI3aGfggYQiIvj5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Spacious and friendly coffee and tea cafe' with a large assortment of custom teas and coffees with delicious baked goods—vegan, gluten free, and other. Great service and highly recommended!!"
+        },
+        {
+            "review_datetime_utc": "03/09/2021 17:39:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5Z2MzMlJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5Z2MzMlJREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDygc32RQ%7CCgwI2-WeggYQ8JyWxQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The people are very kind."
+        },
+        {
+            "review_datetime_utc": "02/15/2021 16:57:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5cDREMzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5cDREMzBBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICyp4D30AE%7CCgwIhtCqgQYQuKj0hgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I fell in love with this place. The food, coffee, tea and people. Simply lovely."
+        },
+        {
+            "review_datetime_utc": "02/11/2021 18:02:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5azZiU3RRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5azZiU3RRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICyk6bStQE%7CCgwIz-KVgQYQ0OPxyAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff, great atmosphere, and delicious food and drinks. Love it!"
+        },
+        {
+            "review_datetime_utc": "02/06/2021 14:13:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5eFlPWGpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5eFlPWGpnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICyxYOXjgE%7CCgwIoMj6gAYQ4KuikwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unwind is one of the few local options where you can still enjoy ☕️+ 🥐 as dine-in — spaced out and with safety measures/distancing in place.  Family-owned café and coffee/tea shop with a rotating breakfast/lunch options. Kid-friendly, free parking nearby and good price value."
+        },
+        {
+            "review_datetime_utc": "02/06/2021 06:30:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5aGFXVUVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5aGFXVUVBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICyhaWUEA%7CCgwIgu_4gAYQqI6GlwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great spot!"
+        },
+        {
+            "review_datetime_utc": "01/30/2021 17:08:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5em9mSWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5em9mSWRREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICyzofIdQ%7CCgwI86TWgAYQiMDcngI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice and friendly staff, good coffe and bakery choices"
+        },
+        {
+            "review_datetime_utc": "01/21/2021 16:18:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5OUtIeHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5OUtIeHBBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICy9KHxpAE%7CCgsIuNKmgAYQ8JTTAw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Simply beautiful cafe, good vibes, great collection of teas and a great coffee!"
+        },
+        {
+            "review_datetime_utc": "01/14/2021 17:16:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTdjRtQWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTdjRtQWRREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDSv4mAdQ%7CCgwI__iBgAYQyKrRqwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I LOVE the avacado toast so very much...The minestrone soup was amazing and so fresh! The vibe was great, loved it, thank you"
+        },
+        {
+            "review_datetime_utc": "12/20/2020 23:32:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTaXFPcmRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTaXFPcmRREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDSiqOrdQ%7CCgsIm77__gUQ4PSkKQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely local coffee/tea shop with plenty of loose leaf tea available for purchase. For loose leaf purchases, they offer a loyalty punch card by the ounce."
+        },
+        {
+            "review_datetime_utc": "12/10/2020 17:09:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpN2N1TFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpN2N1TFhREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDi7cuLXQ%7CCgwIwKzJ_gUQ4Kuy3gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just found this place this morning! I am in love! The gingerbread latte and breakfast flatbread were awesome! The atmosphere was quiet and peaceful... the perfect place for me to finish writing my book! I would definitely recommend this place!"
+        },
+        {
+            "review_datetime_utc": "12/06/2020 15:37:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpc1p2ZWZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpc1p2ZWZnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDisZvefg%7CCgwIv_Wz_gUQ-JextgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love, love this place!!!!"
+        },
+        {
+            "review_datetime_utc": "11/20/2020 21:48:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpZ003djBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpZ003djBnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDigM7v0gE%7CCgwItPPg_QUQ4M3dwQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I loved this place, a lovely afternoon date spot with amazing herbal teas, I recommend the raspberry lemon verbena with one pump of lavender for a lovely sweet tea for any occasion! Truly an awesome establishment"
+        },
+        {
+            "review_datetime_utc": "11/18/2020 16:34:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpOV9UbURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpOV9UbURREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICi9_TmDQ%7CCgwIlprV_QUQuO7rowE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Been here several times. Always great service. Awesome local business with good value and great staff. I really appreciate them addng food and expanding hours. They are a boon to their little corner of the world."
+        },
+        {
+            "review_datetime_utc": "11/06/2020 15:47:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpN3FqTHh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpN3FqTHh3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICi7qjLxwE%7CCgwIm-CV_QUQ4O2u1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great environment, friendly owner operated culture!"
+        },
+        {
+            "review_datetime_utc": "11/05/2020 22:26:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpa1puX0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpa1puX0dBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICikZn_GA%7CCgwIjviR_QUQsIO9rAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Beautiful place"
+        },
+        {
+            "review_datetime_utc": "10/30/2020 19:21:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpaHQ2d25RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaHQ2d25RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICiht6wnQE%7CCgwIvM_x_AUQqKTwjQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place was awesome! Great atmosphere and my vanilla latte was delicious. The muffins were scrumptious, not overly sweet."
+        },
+        {
+            "review_datetime_utc": "10/26/2020 18:14:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpNHRxdlRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpNHRxdlRREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICi4tqvTQ%7CCgsI66Pc_AUQ6OvlbA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I am SO happy a coworker recommended Unwind! They have become my go to for lunch breaks and I love everything about this little cafe! The inside is super cozy and perfect to get some work done. The staff is always so sweet and helpful! Their food and drinks are always delicious as well! I can't recommend them enough, give them a try if you haven't - you will quickly love them too!!"
+        },
+        {
+            "review_datetime_utc": "10/21/2020 23:56:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpeE52SUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpeE52SUZREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICixNvIFQ%7CCgsIp5XD_AUQiOf4QA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you're looking for Loose Leaf Teas, in the Charlotte/Pineville areas, this is the Best Place to go!!! It's Def 1 of my Favorite Places!!! I Love All of the Teas that I've had there already!!! I'm Working on Tasting All of the Teas that they carry, Especially the Chai's!!! The Owner whose name is Wendy, along with her staff are really Friendly, an Knowledgeable about their Teas!!! The Food there is Terrific as well!!! If you go there please tell them that Tom or Joker sent you that way!!!"
+        },
+        {
+            "review_datetime_utc": "10/20/2020 14:19:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDM3ZtelN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDM3ZtelN3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDC3vmzSw%7CCgwI7uO7_AUQqIHyrwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time I've been in since the new opening, glad to say nothing has changed except the size :) . Same great choices (more actually)! And as always, friendly, knowledgeable staff. Can not recommend Unwind enough, has been one of my favorites since I moved to the area."
+        },
+        {
+            "review_datetime_utc": "10/20/2020 01:45:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpcU02SWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpcU02SWtRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICiqM6IkQE%7CCgwInIK5_AUQoK3vjgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We love Unwind! Our favorite Saturday morning coffee and breakfast spot. We are so thankful to have a great spot close by. Highly recommend the Avocado toast!"
+        },
+        {
+            "review_datetime_utc": "10/17/2020 14:04:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpZ082Q2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpZ082Q2NREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICigO6CcQ%7CCgwI3vOr_AUQgIGlswI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Welcoming, spacious coffee shop with an extensive tea and latte menu, plus small plates for breakfast and lunch, as well as evening snacks.  You can also pick up handmade gifts including candles, signs and masks from local artisans."
+        },
+        {
+            "review_datetime_utc": "10/07/2020 23:37:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDM2JMTExnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDM2JMTExnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDC3bLLLg%7CCgwIrKL5-wUQgK7o6wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee shop"
+        },
+        {
+            "review_datetime_utc": "09/24/2020 20:16:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDeHZQVzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDeHZQVzBBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDCxvPW0AE%7CCgsIhf2z-wUQkKSSUg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Decent coffee, fast service, nice atmosphere."
+        },
+        {
+            "review_datetime_utc": "09/12/2020 15:35:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDaUo3UkpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDaUo3UkpnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDCiJ7RJg%7CCgwIq9Xz-gUQ8NTjuQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee and great food! We love having this place so close to our home. It's a go to spot every weekend for breakfast. Support local!"
+        },
+        {
+            "review_datetime_utc": "08/28/2020 23:11:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDdWRhRGlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDdWRhRGlBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICCudaDiAE%7CCgwInJ6m-gUQoJT-6gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of teas, always great service!!"
+        },
+        {
+            "review_datetime_utc": "08/21/2020 19:27:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDdHRha3VBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDdHRha3VBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICCttakuAE%7CCgsIr8CA-gUQiL6MMQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere and even better food, plus its super convenient from where I live. I recommend the Avocado Tomato Toast that comes with pesto and balsamic drizzle, and if you are up for it, extra red pepper flakes for a kick. Thanks and will definitely be coming back to try more things on the menu."
+        },
+        {
+            "review_datetime_utc": "08/15/2020 15:09:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDM096YTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDM096YTlBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICC3Oza9AE%7CCgsIjfXf-QUQ0P20Gg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Coffee was very good when we finally got it. 15 mins. For two drip coffees is not good service in my opinion."
+        },
+        {
+            "review_datetime_utc": "08/06/2020 16:55:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDd01IeGRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDd01IeGRnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICCwMHxdg%7CCgwI7uuw-QUQkKKM6gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A lovely local coffee and tea shop that is recently remodeled. Ample seating with tables and lounge chairs, friendly staff and delicious assortment to please anyone."
+        },
+        {
+            "review_datetime_utc": "08/01/2020 17:40:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4NTdiRzdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4NTdiRzdRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID857bG7QE%7CCgsIp9KW-QUQwJyDZA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super cute and local which we love to support.  The sandwiches are really good and the flatbreads look delicious.  Nice coffee and tea selection.  Comfortable seating and fun ambience. I came here with a friend, loved it so much I brought my husband back!  We are Pineville locals and will definitely keep coming back"
+        },
+        {
+            "review_datetime_utc": "07/23/2020 23:23:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4dGVxTktREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4dGVxTktREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID8teqNKQ%7CCgsI7rfo-AUQ-KKxHw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Had some pleasant surprises on the menu (got the bullet proof coffee). The breakfast sandwich I ordered was very delicious with the rosemary bread being the absolute best part of it."
+        },
+        {
+            "review_datetime_utc": "07/18/2020 17:07:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4dnR6Q2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4dnR6Q2NBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID8vtzCcA%7CCgwIy9jM-AUQ8LfTigE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unwind is fantastic! Service is great, food is great, and the coffee is by far the best in the charlotte area."
+        },
+        {
+            "review_datetime_utc": "07/16/2020 19:30:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4MzZQdFB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4MzZQdFB3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC836PtPw%7CCgsI6dXC-AUQ0J63aQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We all enjoyed the tea and great Mango smoothies... Basil enjoyed her time too!💕"
+        },
+        {
+            "review_datetime_utc": "07/04/2020 03:13:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4LXFYY0FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4LXFYY0FnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC8-qXcAg%7CCgwIz-f_9wUQ4Puy4wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great and quiet coffeehouse in Downtown Pineville."
+        },
+        {
+            "review_datetime_utc": "06/26/2020 13:50:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4bk1leldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4bk1leldBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC8nMezWA%7CCgwIjfrX9wUQoMGwhQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I have been buying tea from Unwind since 2016. I came across her shop when I lived in North Carolina. I live in Texas now and still order tea from her via the website. Wendy the owner is the sweetest person you will ever meet. She is very knowledgeable about the different types of teas. I am actually drinking one of her teas as I am writing this. I have not been to the new location. However, I do look forward to going when I visit NC again."
+        },
+        {
+            "review_datetime_utc": "06/12/2020 13:20:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjanVmcDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjanVmcDRnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDcjufp4gE%7CCgwInIKO9wUQoOL-jgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had a delicious black tea and avocado toast this morning! I will definitely be back to try lunch soon ❤🥑"
+        },
+        {
+            "review_datetime_utc": "06/06/2020 17:37:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURjbXUyWEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjbXUyWEl3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDcmu2XIw%7CCgsI1qjv9gUQyLGgCQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The food and drinks were top notch.  The service was great.  I got take out and the process was easy.  Did I mention the food was great.  Will be going back."
+        },
+        {
+            "review_datetime_utc": "05/01/2020 15:15:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjejdMV3hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjejdMV3hRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICcz7LWxQE%7CCgsI9vmw9QUQ0PS8Qg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wendy does an amazing job making coffee and is always kind and joyful! I recommend the coffee and the atmosphere is very peaceful"
+        },
+        {
+            "review_datetime_utc": "03/07/2020 20:50:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzaWVpcDJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaWVpcDJ3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDsieip2wE%7CCgwIlZKQ8wUQ-KGHsgM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Fully intended on going here for the first time today but was confused because they're moving to a location two doors down that was closed, but has their sign already up. We were about to walk away when presumably the owner came out and grumbled \"can't you read the sign?\" and stormed off to the original place. I don't know what was in the coffee she was drinking this morning, but it sure felt bitter. :("
+        },
+        {
+            "review_datetime_utc": "03/07/2020 13:25:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzc2JpamhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzc2JpamhnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDssbijhgE%7CCgwI2sGO8wUQ2JmtigI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A home grown haven for coffee lovers in a place not otherwise known for good coffee. Skip the Starbucks and come here instead!"
+        },
+        {
+            "review_datetime_utc": "03/06/2020 03:09:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzZ2I2bE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzZ2I2bE9nEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDsgb6lOg%7CCgwIgP6G8wUQqLGzlQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee"
+        },
+        {
+            "review_datetime_utc": "02/29/2020 18:08:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzeXNQNnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzeXNQNnRRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDsysP6tQE%7CCgsIudHq8gUQ2NDCcg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We dropped by for first time today (Sat) and had their special latte and Elderberry bomb and it was Good! So many teas to try! Need a whole month of daily visits to try all their teas alone. Small, cozy, worth a visit"
+        },
+        {
+            "review_datetime_utc": "02/29/2020 05:57:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzOHRhLTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzOHRhLTJRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDs8ta-2QE%7CCgwIxvrn8gUQgKGnlgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really enjoyed the cozy feel, and the staff was super helpful and very friendly. Great variety of teas, and I'm looking forward to trying more."
+        },
+        {
+            "review_datetime_utc": "02/20/2020 18:46:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzNEo2cmJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzNEo2cmJnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDs4J6rbg%7CCgsI6Ke78gUQ0LnMXw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unwind is a great place to sit back and watch the day go by, or catch up with friends and have a great cup of tea or coffee the staff is EXTREMELY knowledge and helpful. The owner is on-site, she will sit and chat with you, without any pressure."
+        },
+        {
+            "review_datetime_utc": "02/09/2020 03:33:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzbGZ6MkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzbGZ6MkZBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICslfz2FA%7CCgwIpfv98QUQ6IW1rgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Relaxing tea shop with tastey baked goods.  Great place for a small meeting or work out of the office"
+        },
+        {
+            "review_datetime_utc": "02/03/2020 20:50:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzZ1lMX3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzZ1lMX3pBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICsgYL_zAE%7CCgsI-Y7i8QUQ0Ka1TQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful neighborhood shop. The Chai, Matcha, and custom tea lattes are my favorite. The owners are so friendly and knowledgeable."
+        },
+        {
+            "review_datetime_utc": "01/17/2020 19:15:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNXzRybndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNXzRybndBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDM_4rnwAE%7CCgwIvY-I8QUQ6KfFlwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a great place. Happy. To hear they are expanding their place in February!"
+        },
+        {
+            "review_datetime_utc": "01/16/2020 17:56:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNNzZhTWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNNzZhTWVREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDM76aMeQ%7CCgwIt8eC8QUQ6OyeyQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very casual, very quiet - at least on a weekday afternoon. The fresh coffee aroma will seduce you."
+        },
+        {
+            "review_datetime_utc": "01/01/2020 08:28:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNZ1piS0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNZ1piS0dBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDMgZbKGA%7CCgwIq7Cx8AUQ6NOJtAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is the only place I can find loose leaf tea!   And they have quite a nice selection."
+        },
+        {
+            "review_datetime_utc": "12/20/2019 16:12:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNbkxDNk5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNbkxDNk5REAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDMnLC6NQ%7CCgsI3OXz7wUQkMPBMQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unwind has an amazing selection of loose teas and the very friendly staff is quite knowledgeable! They also serve great espresso drinks and yummy pastries!"
+        },
+        {
+            "review_datetime_utc": "11/27/2019 02:37:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNLWZhaVpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNLWZhaVpREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICM-faiZQ%7CCgwI3sL37gUQiIuJiwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "No stars were deducted."
+        },
+        {
+            "review_datetime_utc": "11/26/2019 00:34:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNbVlMeVJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNbVlMeVJREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICMmYLyRQ%7CCgwInubx7gUQ8JjdmAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Most excellent selection — both from an enjoyment and from a wellness standpoint. But it's not just the beverages (or the pumpkin choc chip bread — omg) that keep me coming back. It's the welcoming, positive energy of Wendy (owner) and Sharon (the funny one) and Liam of the Dazzling Smile. Seriously cozy place to enjoy a beverage."
+        },
+        {
+            "review_datetime_utc": "11/25/2019 22:50:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNNbWRpb25BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNbWRpb25BRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICMmdionAE%7CCgwIvbXx7gUQkOXt2wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very chill place and great selection!"
+        },
+        {
+            "review_datetime_utc": "11/22/2019 17:59:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNb2V6cUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNb2V6cUZ3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICMoezqFw%7CCgwI-sPg7gUQiPLZ0QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing coffee, great tea selection, kind and personable staff. Best place for coffee in Pineville, hands down."
+        },
+        {
+            "review_datetime_utc": "10/28/2019 20:25:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwd3VIMVNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwd3VIMVNREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgID0wuH1SQ%7CCgwIp53d7QUQsL2H_QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Some of the best loose leaf teas for a reasonable price."
+        },
+        {
+            "review_datetime_utc": "10/09/2019 01:03:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwNDc2REV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwNDc2REV3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIC0476DEw%7CCgsIyeP07AUQiNraBg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place for tea and coffee. The blends she has for coffee have all been impressive."
+        },
+        {
+            "review_datetime_utc": "07/20/2019 16:50:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbktIb2dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbktIb2dnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICUnKHoggE%7CCgwIuozN6QUQ8OrA2wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Thanks to the Google reviews, I finally stopped in after passing by many times. So glad we did!  The staff is so sweet and helpful and the coffee, teas and food from Um's Corner Cafe was delicious. Casual, relaxing Saturday lunch/brunch in a great little spot. Will definitely be back."
+        },
+        {
+            "review_datetime_utc": "07/19/2019 11:57:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVOUlLMzh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVOUlLMzh3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICU9IK38wE%7CCgwIsODG6QUQyNDV2gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it"
+        },
+        {
+            "review_datetime_utc": "05/28/2019 01:27:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZNl9iQlJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZNl9iQlJBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDY6_bBRA%7CCgwIiJ2y5wUQ6ISVnQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "not too bad cappuccino, just about Starbucks - a little overburnt taste. Probably tea (which I saw a good selection) is the speciality of this place, not espresso beverages."
+        },
+        {
+            "review_datetime_utc": "04/09/2019 18:37:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZc3ZPVWJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZc3ZPVWJREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICYsvOUbQ%7CCgwIzsyz5QUQ4Ne5vgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great, friendly service and great coffee"
+        },
+        {
+            "review_datetime_utc": "04/05/2019 23:26:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZclBLYmFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZclBLYmFBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICYrPKbaA%7CCgwIl8if5QUQsI7_8wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Quaint local owned coffee shop.  Haven't tried there sandwiches which are only serving during breakfast and lunch."
+        },
+        {
+            "review_datetime_utc": "04/05/2019 12:10:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZak0zZHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZak0zZHBBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICYjM3dpAE%7CCgwIvoud5QUQuOywowM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've been searching for a decent tea shop for a while. Who knew it'd be 5 miles away?  A wide variety of loose leaf tea selections. Chic farm style atmosphere"
+        },
+        {
+            "review_datetime_utc": "02/05/2019 13:51:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvaE0tcU93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaE0tcU93EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICohM-qOw%7CCgwI26nm4gUQ3cyNpAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really great selection of loose leaf tea and brewing accessories."
+        },
+        {
+            "review_datetime_utc": "12/26/2018 21:34:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJdlB6ZXdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJdlB6ZXdBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDIvPzewAE%7CCgwI8ueP4QUQwLSBwgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice coffee place and yummy food being served."
+        },
+        {
+            "review_datetime_utc": "10/13/2018 19:25:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3aXNfX3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3aXNfX3pnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDwis__zgE%7CCgwItY2J3gUQ2NL66gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly, quiet and inviting!  Love the selection of loose teas and local gifts."
+        },
+        {
+            "review_datetime_utc": "09/26/2018 12:50:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNTZ6bWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNTZ6bWFnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICg56zmag%7CCgsIhoGu3QUQsOHEPg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "it's killing me inside that I can't recreate the taste of her iced latte's, but it's probably saving me from getting diabetes that I can only get them from her 😂"
+        },
+        {
+            "review_datetime_utc": "09/04/2018 23:07:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNROE5teU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNROE5teU9nEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICQ8NmyOg%7CCgsIyqC83AUQsLunPg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Perfect place for tea or coffee.. feel like family when u walk in..very knowledgeable on the products they sell..can order you what ever tea u looking for or help u find it...u need to check it out, I found it by mistake and happy I did."
+        },
+        {
+            "review_datetime_utc": "08/31/2018 20:53:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3enFPa2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3enFPa2VBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICwzqOkeA%7CCgwIudWm3AUQgN_xrgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of beverages and friendly and informative staff"
+        },
+        {
+            "review_datetime_utc": "08/17/2018 22:54:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cWF5T3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cWF5T3F3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICwqayOqwE%7CCgsItqTd2wUQ8IiQbg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fresh ground espresso added to flavorful chai. Wonderful ambiance, pleasant staff, and a great experience. Couldn't ask for anything more."
+        },
+        {
+            "review_datetime_utc": "08/17/2018 22:54:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbDdXa0F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbDdXa0F3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDQl7WkAw%7CCgsIiaTd2wUQoNu2EQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is wonderful! Small cozy little coffee and tea place. Not to mention the coffee is absolutely amazing. The lovely lady at the desk was extremely helpful and kind. 10 out of 10 will definitely be back and will be bringing family as well."
+        },
+        {
+            "review_datetime_utc": "08/08/2018 15:20:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNzd1UU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNzd1UU9nEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICA77uQOg%7CCgwI1ZSs2wUQwNuS1QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time trying Unwind tea & coffee even though we only live a few blocks away. Their  cold brew caramel latte and cold brew caramel coffees are insanely good. Will definitely be going back sooner rather than later."
+        },
+        {
+            "review_datetime_utc": "07/17/2018 21:06:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncWFYaS1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncWFYaS1RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICgqaXi-QE%7CCgsIwbS52gUQwNO0Fg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to have tea, coffee, pastry and good conversation."
+        },
+        {
+            "review_datetime_utc": "05/31/2018 14:56:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMExfUFNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMExfUFNnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICQ0L_PSg%7CCgsIjZrA2AUQwOr8Mw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice place to relax and sip on some awesome tea or coffee."
+        },
+        {
+            "review_datetime_utc": "04/18/2018 20:53:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcnFQaWlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcnFQaWlRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDArqPiiQE%7CCgwIx-De1gUQwMj5lgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "great place for different varieties of teas"
+        },
+        {
+            "review_datetime_utc": "04/07/2018 18:12:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBcmVDUlF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBcmVDUlF3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICAreCRQw%7CCgwInZSk1gUQwJPUwQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good stuff fair prices"
+        },
+        {
+            "review_datetime_utc": "03/25/2018 03:16:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMl9fdlFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMl9fdlFREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICQ2__vQQ%7CCgsIhqnc1QUQwLbzIA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful hostess/owner who brews each cup of coffee to order in a French press. She will even make you a \"bullet proof\" coffee with butter!  Unwind has a variety in types of coffee and especially teas. There are treats to go along with the drinks. Unwind!"
+        },
+        {
+            "review_datetime_utc": "03/24/2018 13:56:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOXJQQTRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOXJQQTRBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICg9rPA4AE%7CCgwIirLZ1QUQwLezywI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We spent probably almost an hour on our first trip to Unwind - for a smaller space, there's seriously so much to check out! Such a nice, comfortable, calming feel to the store. And - the tea is amazing! One of the only places to get loose leaf in Charlotte."
+        },
+        {
+            "review_datetime_utc": "12/30/2017 16:27:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRX2JtWFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRX2JtWFVREAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDQ_bmXUQ%7CCgsIhv2e0gUQwJO5Uw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome place! Great Tea!"
+        },
+        {
+            "review_datetime_utc": "12/14/2017 18:07:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbHZianJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbHZianJRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDglvbjrQE%7CCgwIz_vK0QUQwMv6vwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best tea shop in town."
+        },
+        {
+            "review_datetime_utc": "12/12/2017 17:59:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcGRxMHdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcGRxMHdBRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDQpdq0wAE%7CCgsI8LHA0QUQgKy9SA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place! The owner is very sweet, welcoming and knowledgeable. I highly recommend others to stop by and check out the large selection of available teas."
+        },
+        {
+            "review_datetime_utc": "11/11/2017 11:42:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRX2V1UDJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRX2V1UDJRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICQ_euP2QE%7CCgwIocSb0AUQwNnR1gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Charming. Good service. Plenty of menu options for their market: coffee and tea."
+        },
+        {
+            "review_datetime_utc": "11/08/2017 13:50:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcnJ6WWpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcnJ6WWpRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICQrrzYjQE%7CCgwIo5eM0AUQwK2UjgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely love this little place.  Great teas, coffees, gifts and people"
+        },
+        {
+            "review_datetime_utc": "10/15/2017 18:37:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NC11ZE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NC11ZE1BEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICw4-udMA%7CCgsI0NWOzwUQgIz7KQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great tea, so good."
+        },
+        {
+            "review_datetime_utc": "10/10/2017 02:08:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBNzkzV3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBNzkzV3NnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICA793WsgE%7CCgwIitfwzgUQwNiapgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee and tea"
+        },
+        {
+            "review_datetime_utc": "07/12/2017 05:07:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBOWViR21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOWViR21RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICA9ebGmQE%7CCgwIq92WywUQgNfnyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service will be back soon!"
+        },
+        {
+            "review_datetime_utc": "05/06/2017 16:32:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NHBxWVVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NHBxWVVnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICw4pqYUg%7CCgwItfW3yAUQwPz5rwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Highly recommended! Great selection of teas and very welcoming."
+        },
+        {
+            "review_datetime_utc": "04/22/2017 15:05:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURneG8yN2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURneG8yN2VBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDgxo27eA%7CCgwItOLtxwUQgIaLzAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "You have to go here - great loose teas and coffee drinks! Cool arts consignment also!"
+        },
+        {
+            "review_datetime_utc": "03/29/2017 19:05:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBcFBxZ1N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBcFBxZ1N3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICApPqgSw%7CCgwI3orwxgUQwOPnmQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly service, cheap drink prices, and loose leaf tea for sale.  We will definitely be back soon!"
+        },
+        {
+            "review_datetime_utc": "03/12/2017 16:45:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcmNfMXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcmNfMXdRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDArc_1wQE%7CCgwImvaVxgUQgNawmAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the variety and quality of the read and coffee. Wendy is awesome!"
+        },
+        {
+            "review_datetime_utc": "03/10/2017 00:37:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3cXM2N0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3cXM2N0d3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICwqs67Gw%7CCgwIzuqHxgUQwLmPuAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was my first time at this tea shop ,and I absolutely loved it !!!! There was an amazing selection of tea's , and I loved how you could pick them up and smell them your self with out having to ask some one to get it from behind a counter to let you sniff . And the prices are amazing!  Such a cute place . I will deffently be going back for more tea . I got three black tea's and one white tea . I can't wait to take my friends here !"
+        },
+        {
+            "review_datetime_utc": "03/04/2017 18:54:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnckxfVlRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnckxfVlRnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDgrL_VTg%7CCgwI3JrsxQUQgI3EzgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this store!!! The tea selection is great. I love being able to pick exactly what tea I want to drink on the go. The owner is so nice. The other merchandise they sell is beautiful"
+        },
+        {
+            "review_datetime_utc": "02/10/2017 02:05:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBOUphVmZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOUphVmZnEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICA9JaVfg%7CCgsI27_0xAUQgP_aQw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "After passing by this place a couple of times I decided to finally go in and oh boy do I wish I had come in here sooner. Both my coffee and tea were excellent. Tons of options to select from. Incredibly kind and wonderful service. Will definitely be coming back and I highly recommend giving this place a shot."
+        },
+        {
+            "review_datetime_utc": "01/16/2017 02:29:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBcWUyeWN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBcWUyeWN3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDAqe2ycw%7CCgwIi-DwwwUQwMampAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to get many different teas and coffees."
+        },
+        {
+            "review_datetime_utc": "10/18/2016 14:01:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnczR1NWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnczR1NWFBEAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICgs4u5aA%7CCgwIv9aYwAUQgNmoxwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Large selection of Teas......great gifts, great ambiance, Owner is very Kind !"
+        },
+        {
+            "review_datetime_utc": "06/11/2016 17:34:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnLXBya2lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnLXBya2lRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICg-prkiQE%7CCgwItZfxugUQwJPCzQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection, great service, and great atmosphere. Both the beverage dilettante and the experienced brewer will find their needs met here."
+        },
+        {
+            "review_datetime_utc": "04/05/2016 15:10:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3dlkzWThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3dlkzWThRRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICwvY3Y8QE%7CCgsI1aqPuAUQwK35Hw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, very warm and welcoming. There is a large selection of loose leaf teas, as well as coffee; take home a bag of loose leaf tea or take a cup to-go. The owner also supports local artisans and has their work available to purchase in the shop. This is a wonderful place that has only been open for about a year. I recommend all tea-lovers to give this cute little place some love."
+        }
+    ],
+    "total_reviews_count": 305
+}

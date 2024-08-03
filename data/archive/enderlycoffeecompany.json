@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJp4oqyCShVogRVyUka6YjHyI",
+    "place_name": "Enderly Coffee Company",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/07/2022 14:32:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtdmRlWk9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtdmRlWk9REAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgID-vdeZOQ%7CCgwI7cfCnAYQsNqLswE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place for a meet and greet. The environment is warm and welcoming and you can have good conversation over coffee."
+        }
+    ],
+    "total_reviews_count": 253
+}

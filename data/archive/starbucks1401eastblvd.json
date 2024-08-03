@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJV1vO4ZmfVogRQW0twxLgWi0",
+    "place_name": "Starbucks | 1401 East Blvd",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/14/2022 19:22:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCa0xIT1JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCa0xIT1JBEAE!2m1!1s0x0:0x2d5ae012c32d6d41!3m1!1s2@1:CIHM0ogKEICAgICBkLHORA%7CCgwIkcXonAYQkP-v1AI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I ordered a tea & it was hot & delicious. The ppl were friendly & Courteous"
+        }
+    ],
+    "total_reviews_count": 647
+}

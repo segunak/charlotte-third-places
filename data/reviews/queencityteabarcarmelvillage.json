@@ -1,0 +1,469 @@
+{
+    "place_id": "ChIJI9pm3UWdVogRx9u5BKDcBOQ",
+    "place_name": "Queen City Tea Bar | Carmel Village",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "01/15/2023 23:25:06",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCc3FiR3R3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCc3FiR3R3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDBsqbGtwE%7CCgsI0paSngYQiIPoCw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "THE BEST BOBA SHOP EVER!!! staff are probably the nicest people you will ever meet, and drinks are amazing. great flavors and super customizable, def give it a try!! will not disappoint!"
+        },
+        {
+            "review_datetime_utc": "01/15/2023 23:16:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCc3ZyRURBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCc3ZyRURBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDBsvrEDA%7CCgwIvpKSngYQwOfRkgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always pleasant. I always get the red velvet smoothie with cheese cream topping. It's awesome and addictive. I copied a Door dash customer. This is truly a fav😁❤️"
+        },
+        {
+            "review_datetime_utc": "01/12/2023 14:36:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMUtITTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMUtITTZnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDB1KHM6gE%7CCgsI_7WAngYQwLfGIQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So. Good. Loved this drink! Great flavors, not too sweet. Super efficient team handling a ton of orders at all hours. Highly recommend this place!"
+        },
+        {
+            "review_datetime_utc": "01/10/2023 19:43:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCNTYtbHNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCNTYtbHNBRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICB56-lsAE%7CCgwI4f_2nQYQ0Kz_gQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Their Boba teas can be modified so that it fits my not too sweet style of tea and I can choose what type of Boba I want with each tea I buy."
+        },
+        {
+            "review_datetime_utc": "01/05/2023 19:05:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCaDZpaUhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaDZpaUhREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICBh6iiHQ%7CCgwI-L7cnQYQyOibxAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The goat cheese, tomato, and caramelized onion sandwich on rosemary bread was soooo good. The vibes were great and it's got easy parking!"
+        },
+        {
+            "review_datetime_utc": "12/16/2022 17:35:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCdUpTRkdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCdUpTRkdREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICBuJSFGQ%7CCgsI99jynAYQgKCkKA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've had QC Tea Bar for about 3 months and it's always amazing everytime. The coffee with coffee jelly is amazing!"
+        },
+        {
+            "review_datetime_utc": "12/11/2022 13:59:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxanR2ZDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxanR2ZDN3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICqjtvd3wE%7CCgwI2sTXnAYQ8ObeiQM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I am revising my original review from a year ago- This place has really gone down hill. There were students from the near by school all over the place with their bags all around each table. Even if they weren't using the table. Bags piled everywhere. We had no where to sit. I felt like I was in a high school cafeteria. The staff seemed a bit out of it and unhappy to be there. They were out of food and my order was wrong.  I got a ban mi that was dry and mediocre.  I did not get the spritzer I wanted with lemonade. They left out the lemonade. This is now nothing but a low quality high school hang out with no care for the rest of the public. I won't be back. I leave one star for the fries. They were good.  I just found my new favorite place. The Hokkaido milk tea was amazing. Korean BBQ was delicious. The lemonades are so refreshing. My favorite is the blueberry."
+        },
+        {
+            "review_datetime_utc": "12/02/2022 23:43:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtaWRxb0tBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtaWRxb0tBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgID-idqoKA%7CCgwIqJuqnAYQoJ2wiQE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Ummm no sugars or any other sweeteners in a coffee and tea joint? Only liquid cane sugar they insist on adding themselves? Weird thing to be controlling about. Pass."
+        },
+        {
+            "review_datetime_utc": "11/17/2022 22:02:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtXzU3V2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtXzU3V2NREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIC-_57WcQ%7CCgsIjd_amwYQkIv2aw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "amazing people and amazing food/teas!"
+        },
+        {
+            "review_datetime_utc": "09/23/2022 01:59:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMDZLN1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMDZLN1lREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICe06K7YQ%7CCgwImaa0mQYQyJOpqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best Bubble Tea and lots of options  There is a very large menu with so many customizations available, it can appear overwhelming but the staff here are so friendly and helpful. You can customize everything from flavor to ice to sweetness. This was the first place I ever tried Boba and while there are a lot of great places out there, QC has the freshest and best tasting drinks in my opinion. They also have a loyalty reward system too which is cool :) I haven't tried the food yet but it looks good. Everything including the drinks are made to order. There is a lounge area that is super cute and there are also tables inside and outside. Next to the fireplace there's an assortment of board games - I think that's really cool! I love how they have different independent vendors art and jewelry for purchase. I keep coming back because they are consistently great and the price is so good."
+        },
+        {
+            "review_datetime_utc": "09/11/2022 16:24:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbXR6aGV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbXR6aGV3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICemtzhew%7CCgsIu5f4mAYQ8OPPQQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing boba, price decent given the hype surrounding boba. Wide variety of toppings"
+        },
+        {
+            "review_datetime_utc": "08/17/2022 12:31:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MHYtUmV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MHYtUmV3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDu0v-Rew%7CCgwIpb_zlwYQ4MjP3wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious drinks and snacks. Their wings are awesome and I'm eager to try the rest of their food menu. Service is fast and friendly. Facilities are clean with comfortable seating if you want to stay and lounge for awhile."
+        },
+        {
+            "review_datetime_utc": "08/10/2022 00:01:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1My0zeldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1My0zeldnEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICu3-3zWg%7CCgwI4OrLlwYQkP6EnQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very expensive for nothing too special… atmosphere was nice."
+        },
+        {
+            "review_datetime_utc": "07/23/2022 19:22:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1X082LXhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1X082LXhnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICu_O6-xgE%7CCgsI6pTxlgYQ6NaLOQ%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I've had bubble tea at 5 other Charlotte shops, and unfortunately I would put this at the very bottom. I didn't think you could go wrong with a milk tea-but the one I got was bitter and not drinkable. Very disappointed."
+        },
+        {
+            "review_datetime_utc": "07/23/2022 01:02:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5a1p2eVNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5a1p2eVNBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDykZvySA%7CCgwInZHtlgYQ-OyL1QI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "The bahn mi I got was quite dry, but the pink meat was really good. The other bahn mi, grilled pork one was great though. The teas (got 4) were pretty good so far but definitely not wow. (Was annoyed that the no ice cost extra 😑 ) I have no idea why they added so much additional corn mill to the waffle fries, which were already super greasy. The interior is nicely decorated and the couch add a cozy touch. Overall I would come again if I was in the area but not worth a separate drive.  Edit: The matcha milk tea was the worst tea I have gotten here. It tasted burnt and had an bad after taste. 😔"
+        },
+        {
+            "review_datetime_utc": "07/14/2022 00:02:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPaTU3WFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPaTU3WFh3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDOi57XXw%7CCgwIrrq9lgYQyK3CgwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This place has great ambiance inside. 2 girls (female) working at front were very friendly and assisted me making best ordering decision while I was there. Got 2 Milk Teas with Boba of coffee and Carmel flavors. Both were very great recommendations and tasting. Will come back to try more flavors. Only down side, would have liked more ice. Overall 4/5."
+        },
+        {
+            "review_datetime_utc": "06/26/2022 00:30:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPaVBLcmF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPaVBLcmF3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDOiPKraw%7CCgwIwdHelQYQ2PH4hgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic, go here, try the sea salt foam on everything."
+        },
+        {
+            "review_datetime_utc": "06/24/2022 23:09:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPNEw3X0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPNEw3X0dBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDO4L7_GA%7CCgwIuYjZlQYQ-OufiQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Was craving boba while on vacation, and this was by far the best boba I've ever had!"
+        },
+        {
+            "review_datetime_utc": "05/22/2022 23:55:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQydmNQT0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQydmNQT0d3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgID2vcPOGw%7CCgsIgZurlAYQ4Ij0RA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Pretty good but not great because there isn't much of a variety 💚"
+        },
+        {
+            "review_datetime_utc": "05/17/2022 20:30:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyOGZUU2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyOGZUU2ZBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgID28fTSfA%7CCgwI4ouQlAYQuPbe3gE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I drink espresso.  If it's nearby, I'll try to drop by.  competitive coffee.  and many other drinks.  modern approach to business.  stylish."
+        },
+        {
+            "review_datetime_utc": "05/08/2022 21:31:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQybk9yZ3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQybk9yZ3F3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgID2nOrgqwE%7CCgwIm-3gkwYQyJ_gxgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff is friendly and love the tea! Very relaxed atmosphere!"
+        },
+        {
+            "review_datetime_utc": "04/09/2022 00:08:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXXzVHZmJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXXzVHZmJBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDW_5GfbA%7CCgwI4pzDkgYQqPuAggI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The quality of the food has changed so much since it opened. I loved the milk tea, cheese milk cap when I visited here one year ago.  Today, I had a milk tea with cheese cap, took 20 mins to make, the cheese cap tasted like light cream straight, there's no foam, so plain, not sweet and not salty (as it is supposed to be) My whole drink tasted not good at all, Milk tea tasted like heavy cream mixed with water, I barely tasted the tea, there's almost no tea taste in the one I have.  However, the customer service is great, the girl helped me out, super friendly. 🥰 I wish this place the best, hope you see my review. Thank you.❤️"
+        },
+        {
+            "review_datetime_utc": "04/02/2022 02:59:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXZzhEQ0hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZzhEQ0hBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDWg8DCHA%7CCgwIofiekgYQ2PiokgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Accidentally found this other location of the Whitehall Park Dr. shop off 485 and Arrowwood. This one is even nicer, with a large lounge area!"
+        },
+        {
+            "review_datetime_utc": "03/31/2022 03:01:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXOWVxYkR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXOWVxYkR3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDW9eqbDw%7CCgwI9bKUkgYQ-N_VogI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place!! Staffs was wonderful and informative, they were able to recommend me something after I told them what I liked. I love how they support local artists and businesses in their store. Food was great! Can't go wrong with the house special! Also love there's games and nice seating area there!"
+        },
+        {
+            "review_datetime_utc": "03/26/2022 14:14:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXb2FlT0JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXb2FlT0JBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDWoaeOBA%7CCgsIs7_8kQYQsPS-MA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fav spot to get boba for sure!"
+        },
+        {
+            "review_datetime_utc": "03/20/2022 21:32:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXeXRYVnFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXeXRYVnFBRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDWytXVqAE%7CCgsI4LrekQYQ-LWdaQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely atmosphere.  Great customer service and selection."
+        },
+        {
+            "review_datetime_utc": "01/18/2022 13:04:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtdU1fSUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtdU1fSUZBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDmuM_IFA%7CCgsIyvWajwYQuLfDcQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A kind of quiet and atmospheric place. Good to wind down and relax in. A huge variety of different teas available, plus a few different sandwiches as well as French fries. The only reason I'm giving a 4 star review is that it's a bit pricey. I can understand why it might be, but this is a factor that'll probably have me coming here maybe once or twice a month at most."
+        },
+        {
+            "review_datetime_utc": "01/12/2022 23:05:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtOS1ITlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtOS1ITlpnEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICm9-HNZg%7CCgwItb39jgYQoKWbmgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My 1st time... It was great!!!"
+        },
+        {
+            "review_datetime_utc": "01/03/2022 16:30:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtaFlLa1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtaFlLa1RBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICmhYKkTA%7CCgwItcnMjgYQ-Kv8_wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is so good! One of the best matcha lattes I've ever had!"
+        },
+        {
+            "review_datetime_utc": "12/31/2021 19:53:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtMGNmbURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtMGNmbURREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICm0cfmDQ%7CCgsIqL-9jgYQ6OTaKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Korean BBQ Plate w/ reg fries.. sauces are mayo, ketchup, and Korean bbq sauce… taro smoothie boba w/ extra boba"
+        },
+        {
+            "review_datetime_utc": "12/26/2021 22:14:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNteHNTUVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNteHNTUVBBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICmxsSQPA%7CCgwIsNKjjgYQ6IGg7QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Pretty good and authentic food. Popcorn chicken and milk tea are nice."
+        },
+        {
+            "review_datetime_utc": "12/06/2021 08:46:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHMWVIczJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHMWVIczJnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDG1eHs2gE%7CCgwI9pu3jQYQoNvS1QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cute place to work"
+        },
+        {
+            "review_datetime_utc": "11/26/2021 20:54:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHNXEtb0J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHNXEtb0J3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDG5q-oBw%7CCgwIiZOFjQYQkPrj3AM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Ordered the Thai milk tea w/boba,  it's pretty good, I prefer the flavor to be a bit stronger but overall it's a 7/10, the boba is tasty"
+        },
+        {
+            "review_datetime_utc": "11/14/2021 02:10:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHMzczUnV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHMzczUnV3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICG373RuwE%7CCgsIguDBjAYQ6NGELg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great menu with variety of teas"
+        },
+        {
+            "review_datetime_utc": "10/08/2021 22:49:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2X1lMSXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2X1lMSXJRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgID6_YLIrQE%7CCgsIlJaDiwYQ-N6dHw%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Paid over$5.00 for a drink that was 3/4 ice. What a rip off. Won't be surprised when they go out of busses."
+        },
+        {
+            "review_datetime_utc": "09/08/2021 00:28:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2cWREYUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2cWREYUh3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIC6qdDaHw%7CCgwIwofgiQYQ8K_2mwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a nice addition to the area. Popcorn chicken and Cajun fries taste so fresh and yummy. Will come back to try other items on the menu soon!"
+        },
+        {
+            "review_datetime_utc": "08/21/2021 20:59:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhenBpX2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhenBpX2ZBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDazpi_fA%7CCgwIxtKFiQYQ4Mr43wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff here are great. They were helpful in picking out different teas and the service was fast. The milk teas are delicious! I've been here several times and the drinks are consistent each time. I'll definitely be coming back!"
+        },
+        {
+            "review_datetime_utc": "08/20/2021 18:18:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhbHNpSGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhbHNpSGN3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDalsiHcw%7CCgsI9-P_iAYQ-JmhTw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere to hang out while you drink a giant tea. Clean restrooms. Delicious tea."
+        },
+        {
+            "review_datetime_utc": "08/06/2021 23:59:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhN2FISldREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhN2FISldREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICa7aHJWQ%7CCgwI1Jm3iAYQ2JmB7AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cute place. Loved my drink."
+        },
+        {
+            "review_datetime_utc": "07/27/2021 13:03:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhMHV5ZC1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhMHV5ZC1RRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICa0uyd-QE%7CCgwIvIiAiAYQ4MDX_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great bubble tea"
+        },
+        {
+            "review_datetime_utc": "07/17/2021 18:27:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxNTd1QnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNTd1QnhRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDq57uBxQE%7CCgwIi8LMhwYQuPboqwM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Normally a good experience with the boba tea, especially the Mudslide. The popcorn chicken is awesome, has a sweet taste to them. However, the last time we got Mudslide tea, the boba was a very odd texture and consistency... Was rather and hard to chew instead of soft and \"squishy\"... Makes me wonder if they used stale boba last time."
+        },
+        {
+            "review_datetime_utc": "07/10/2021 20:16:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxb2VEQ21BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxb2VEQ21BRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDqoeDCmAE%7CCgwIk4CohwYQ6MzupAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Perfect!"
+        },
+        {
+            "review_datetime_utc": "07/03/2021 19:51:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMHZxbnNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMHZxbnNnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDq0vqnsgE%7CCgwI0v-ChwYQwNj71gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The drinks are just right! Not too strong or sweet.  Interior is looks trendy and the drinks aren't too strong or sweet - they're just right!  Selections on the wall look and sound amazing. Definitely going to try them all."
+        },
+        {
+            "review_datetime_utc": "06/23/2021 23:52:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxMy1MVm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxMy1MVm1nRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICq3-LVmgE%7CCgwIs5LPhgYQyPnAnQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I had a Thai green. I really like it. They also have food here. There many choices. I can't wait to try them all."
+        },
+        {
+            "review_datetime_utc": "06/17/2021 23:50:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxc19DV3V3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxc19DV3V3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICqs_CWuwE%7CCgwItb-vhgYQ0NOXzAI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Didn't allow me to bring my dog in to make an order. Their other location in Whitehall allowed me to take an order with my dog. I recommend the other location as the staff is much more friendly."
+        },
+        {
+            "review_datetime_utc": "06/02/2021 15:29:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxeW9pM0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxeW9pM0V3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICqyoi3Ew%7CCgwI4cfehQYQiMml1gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I think the drinks are really good there!"
+        },
+        {
+            "review_datetime_utc": "05/26/2021 18:14:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxLUpTQnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxLUpTQnhRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICq-JSBxQE%7CCgwI_5-6hQYQkJOwtgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is great! Friendly staff there to help you through the large drink menu. A word of warning though, the drinks are on the sweet side so be sure to ask them to cut the sweetness if you don't like that. Also, don't forget to check out the framed pictures on the wall for even more fun drink ideas. Will be back!"
+        },
+        {
+            "review_datetime_utc": "05/20/2021 17:01:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLejZMTVFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLejZMTVFBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDKz6LMQA%7CCgwI56uahQYQ8O-2wgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favourite Tea Bar in Charlotte. Made super fresh and always on the money. Good prices compared with other shops and staff are great."
+        },
+        {
+            "review_datetime_utc": "05/16/2021 18:52:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLcmNibHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLcmNibHdnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDKrcblwgE%7CCgwI29OFhQYQ8KfnkwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Yum! This place is amazing! There are so many varieties and combinations of tea. The staff is friendly and very helpful with explaining all the different teas and options."
+        },
+        {
+            "review_datetime_utc": "05/16/2021 18:45:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLcmZxcFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLcmZxcFN3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDKrfqpSw%7CCgwI3tCFhQYQkMeh1AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Outstanding! You need to try this place! I ordered the Hoki-Oki tea w cheese cream and my wife had the golden oolong w oat milk. And some fried tofu as an afternoon snack. All items were delicious and friendly service too!"
+        },
+        {
+            "review_datetime_utc": "05/03/2021 22:02:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLM01yZGV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLM01yZGV3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDK3Mrdew%7CCgwI9OXBhAYQ2LjzjgE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I'm really, really hoping that my experience wasn't discriminatory in nature, but it certainly felt like it. The food was decent and I ordered a Vanilla Latte (super sweet) with the expectation of additional cost of course. I received my Latte and it wasn't as sweet as I'd like, so I looked to see if there was a sugar station. There isn't any sugar available to consumers (likely COVID-related), so I asked if they could squirt some additional flavor in it. I was then advised that once the drink was made it couldn't be altered, so at that time I was told that he could remake it, which I was ok with. He then took my cup and squirted additional flavoring in it (which I thought he couldn't do).  I went back up to order a Lemonade Spritzer and knew this time to speak more directly about to the sweetness and asked for no ice. The girl at the counter took my order and was sweet enough, he then came back and stated that I couldn't pay for extra sweetness on that drink because it would be too complicated and would alter the amount of seltzer. He then stated that I couldn't request that there be no ice or he would have to short my drink (like a bar tender does). I was so irritated at that point that I just asked for water. After this interaction I realized that there was a sign on the board that said “How to Order.” This sign spoke to your ability to pay for both extra sweetness and no ice. I guess it was an opportunity provided to everyone but me...  Ultimately, I really like the vibe of this space, but was incredibly disappointed in my experience.  The staff member's name is Johnathan."
+        },
+        {
+            "review_datetime_utc": "04/24/2021 05:04:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLNzg3djZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNzg3djZBRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICK787v6AE%7CCgwI1M2OhAYQ-Mv-3wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wifey got the korean bbq which comes with seasoned beef ribs thin cuts on bone with rice cucumber and lettuce with cajun fries. If the season crumbs fall off the fries, try dipping the rice onto it and enjoy! I got the pork patties banh mi sandwich, just right and unique in taste. The bread is soft and light crisp which is right for me, I don't like bread that's over done and crumbles all over the place. The unique note taste so fancy I thought the chef, from the korean tv series : chocolate, had made my sandwich. This doesn't have that bold original taste of headcheese but a rich and balance taste instead. She also got the mango slushie I got the taro slushie and let me tell ya, the ice is so soft like it's a crossbreed between Hawaiian ice and pelican's snow! When we're around pineville, we come here. It's also nice and quiet and peaceful, like a starbicks lounge but more calm and relaxing. Also restroom is clean and smells nice, I thought I was in a hotel. You gotta check it out!"
+        },
+        {
+            "review_datetime_utc": "04/10/2021 15:40:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLNmU2SEdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLNmU2SEdnEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICK6e6HGg%7CCgwI0o3HgwYQ4PHDnAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing service and boba. Will definitely be back."
+        },
+        {
+            "review_datetime_utc": "04/04/2021 00:39:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLNXNMcGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLNXNMcGJnEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICK5sLpbg%7CCgwIs5WkgwYQ0NPjjAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great drinks that are not too sweet but full of refreshing flavor and the staff is very friendly and helpful!"
+        },
+        {
+            "review_datetime_utc": "03/31/2021 01:49:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLa3FLek53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLa3FLek53EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICKkqKzNw%7CCgwImKqPgwYQoLjlmwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We tried QC Tea Bar last week. We were not disappointed! The vibe was cute & relaxing. There's a lot on the menu! The staff was friendly & made sure everyone knew how to order. I asked for a recommend & ended up ordering the Rose Milk Boba which definitely hit those floral notes but was light & refreshing. You can view some local art displayed throughout while they make your order. Looking forward to going back & exploring more on the menu!"
+        },
+        {
+            "review_datetime_utc": "03/27/2021 00:19:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLNk9QVXNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNk9QVXNBRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICK6OPUsAE%7CCgsIhvT5ggYQsPuJMw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Ruthie was amazing at helping us navigate their drink menu, awesome service, delicious tea, nice dining area, and they've got food too! Will be coming back here soon."
+        },
+        {
+            "review_datetime_utc": "03/26/2021 13:22:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLeVB2MDhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLeVB2MDhnRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICKyPv08gE%7CCgwIssD3ggYQkN3FjgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This ia a very comfortable spot my grandgal is great for trying new things I really enjoy her as well as the places she takes me2, only 10 and it's worth trying the people there are friendly &  let you taste test anything &  everything so many specialized drinks hot & cold try it ... They really should advertise more"
+        },
+        {
+            "review_datetime_utc": "03/11/2021 11:27:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5OGVhYnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5OGVhYnJRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDy8eabrQE%7CCgwIv_2nggYQ4JGL4AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good food and great bubble teas"
+        },
+        {
+            "review_datetime_utc": "03/07/2021 18:20:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5enJIQVNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5enJIQVNREAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDyzrHASQ%7CCgwI1rKUggYQqLKAmwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very chill vibe and decent variety of tea. Love the art and the music, will definitely be spending more time here."
+        },
+        {
+            "review_datetime_utc": "03/03/2021 18:47:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5NnNIUkpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5NnNIUkpBEAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDy6sHRJA%7CCgsIzLP_gQYQ8LXELg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff is extremely nice and welcoming.  The location is clean.  Covid protocols are wearing masks and there's hand sanitizing stations.  It takes a little bit for the drink/food to come out; however,  definitely worth it.  I got the matcha milk tea with tapioca.  It was delicious and a regular size is a decent size.  For food,  I ordered the Korean BBQ Plate. I got the sweet potato fries for my side.  The dish itself is tasty.  I wouldn't classify it as real Korean BBQ,  but still worth eating.  The location is very welcoming and it's a nice place to relax."
+        },
+        {
+            "review_datetime_utc": "02/28/2021 19:58:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5Z3AzSjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5Z3AzSjBBRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDygp3J0AE%7CCgsI7evvgQYQ8NuvFQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time here. Had to write a review. The service and the quality of the drink both far exceeded my expectations (my expectations are high for the most parts). I loved the atmosphere and the workers are so friendly. I certainly will come back many times in the future. It's a fine spot!"
+        },
+        {
+            "review_datetime_utc": "02/26/2021 00:24:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5dElQRG5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5dElQRG5nRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgIDytIPDngE%7CCgwI0__ggQYQkLSM6AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great environment, tasty snacks, delicious drinks, and warming staff!"
+        },
+        {
+            "review_datetime_utc": "02/18/2021 17:26:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bl9PS1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bl9PS1V3EAE!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICyn_OKUw%7CCgwIwsa6gQYQ6JWMrAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've been dying to try Queen City Tea Bar and they did not disappoint. I had the Korean BBQ and the Vietnamese iced coffee and it was all delicious. My kids love Boba tea and I will definitely be bringing them here soon. Everyone was extremely friendly and the atmosphere was very welcoming. I work in the same strip mall so they will be seeing me regularly."
+        },
+        {
+            "review_datetime_utc": "02/14/2021 18:57:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5dTYtVHlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5dTYtVHlRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICyu6-TyQE%7CCgwIkuWlgQYQ6LGavQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cozy atmosphere and clean. Taiwanese fried popcorn chicken with basil was really good in the combo at a descent price. Smart move to provide combos. Look forward to trying more dishes and happy they are near by."
+        },
+        {
+            "review_datetime_utc": "02/10/2021 23:59:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5dzVHV3V3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5dzVHV3V3RRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICyw5GWuwE%7CCgsI1uaRgQYQ4NziFw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best milk tea in town"
+        },
+        {
+            "review_datetime_utc": "02/09/2021 22:43:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5M2NMZTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5M2NMZTNRRRAB!2m1!1s0x0:0xe404dca004b9dbc7!3m1!1s2@1:CIHM0ogKEICAgICy3cLe3QE%7CCgwIpKCMgQYQuOeUogI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super kind workers, very nice decor, boba tea and food was really good!!"
+        }
+    ],
+    "total_reviews_count": 85
+}

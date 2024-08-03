@@ -1,0 +1,35 @@
+{
+    "place_id": "ChIJ3aE9Bc2hVogRc6hcWnvSJ5s",
+    "place_name": "Night Swim Coffee | One Wells Fargo",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "11/21/2022 19:19:49",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtcE5QeXdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtcE5QeXdBRRAB!2m1!1s0x0:0x9b27d27b5a5ca873!3m1!1s2@1:CIHM0ogKEICAgID-pNPywAE%7CCgwI1Z7vmwYQwJTN5QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee in Charlotte for me! Just surpassed Community Matters Cafe.  Got the creamiest cappucino, love it!!"
+        },
+        {
+            "review_datetime_utc": "10/28/2022 00:32:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtMUlyamdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtMUlyamdBRRAB!2m1!1s0x0:0x9b27d27b5a5ca873!3m1!1s2@1:CIHM0ogKEICAgIC-1IrjgAE%7CCgsIlcbsmgYQ4NbKcw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very decent coffee. Nice flavor."
+        },
+        {
+            "review_datetime_utc": "06/06/2022 14:26:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPOHVtWHdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPOHVtWHdRRRAB!2m1!1s0x0:0x9b27d27b5a5ca873!3m1!1s2@1:CIHM0ogKEICAgICO8umXwQE%7CCgwIqp34lAYQwOjA3QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice little coffee shop located in One Wells Fargo Center on the second floor! Has teas and lattés, vegan options in the bakery, and non dairy milk alternatives! Nice seating area nearby with a sunlight and a view!"
+        },
+        {
+            "review_datetime_utc": "04/06/2022 12:35:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXNS1fb1ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXNS1fb1ZnEAE!2m1!1s0x0:0x9b27d27b5a5ca873!3m1!1s2@1:CIHM0ogKEICAgIDW5-_oVg%7CCgwIipK2kgYQyJKUvwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice coffee shop in the One Wells Fargo building. Specialty coffee and teas. On this day I had a black tea. Very good. Modern shop. Recommend."
+        }
+    ],
+    "total_reviews_count": 6
+}

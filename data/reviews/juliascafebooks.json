@@ -1,0 +1,1456 @@
+{
+    "place_id": "ChIJPenDPhMgVIgRRPg7WaiiQEg",
+    "place_name": "Julia’s Café & Books",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "01/13/2023 16:31:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCN1BDZ2pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCN1BDZ2pRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDB7PCgjQE%7CCgsI8I6GngYQ6JvKcA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Needed some time to think and a moment to myself to reflect on 2022 and make plans for 2023….and somehow Julia's Cafe and Books is that perfect place today! I love the vibes there, cozy, not bustling and crazy busy, delis egg salad croissant (the very BEST!🥰), super affordable ….and most important of all, they support local non-profit groups like @cakeableCLT (help bridging the gap bw school and the working world for the Down syndrome young adults in our community through teaching them to bake and distribute them in local cafes and shops)! 🥰🌈  This is where I would want to spend my money …bc not only I'm feeling my body with delis food, but also feeding my heart and soul with good vibes🌈."
+        },
+        {
+            "review_datetime_utc": "01/12/2023 23:30:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlM3VUNElBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlM3VUNElBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICe3uT4IA%7CCgwInLCCngYQuO78xwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic food, drinks, and books."
+        },
+        {
+            "review_datetime_utc": "12/08/2022 13:57:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtNDdlVnRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtNDdlVnRBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID-47eVtAE%7CCgwIudrHnAYQ2Iin_QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very warm feeling of great service and hospitality as soon as I entered the door"
+        },
+        {
+            "review_datetime_utc": "12/06/2022 13:02:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtemZyc05BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtemZyc05BEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID-zfrsNA%7CCgwI_Pq8nAYQyMSYyQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I didn't actually visit Julia's, went to the restore. Looks like it's a  nice spot though."
+        },
+        {
+            "review_datetime_utc": "11/24/2022 16:20:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtZ3RXeVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtZ3RXeVhBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID-gtWyXA%7CCgwI37P-mwYQuIPbygM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicous iced coffee and a very cute shop. They have bookmarks for 15 cents and books in great condition starting at 50 cents! Loved it."
+        },
+        {
+            "review_datetime_utc": "11/10/2022 16:31:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtcmV1TVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcmV1TVFREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC-reuMQQ%7CCgwI8860mwYQkJWgyQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great Coffee"
+        },
+        {
+            "review_datetime_utc": "11/04/2022 15:21:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtN3ZhdjFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtN3ZhdjFBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC-7vav1AE%7CCgwIiNyUmwYQyPr6yQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Do good while saving money on books. As part of habitat for humanity, this used book store and coffee shop is non profit. An amazing selection of books, puzzles and vinyl.  I read and return my books and never leave without a latte."
+        },
+        {
+            "review_datetime_utc": "10/27/2022 19:18:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtbE5yS1dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtbE5yS1dREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC-lNrKWQ%7CCgsIkrPrmgYQyNOJfA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love bookstore coffee shops. So very friendly, good coffee and large selection of books, DVDs, etc"
+        },
+        {
+            "review_datetime_utc": "10/24/2022 14:43:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtb0tPU1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtb0tPU1F3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC-oKOSQw%7CCgsIj8namgYQqJr2Iw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Habitat has become more expensive. Some things are almost regular price now"
+        },
+        {
+            "review_datetime_utc": "10/16/2022 00:02:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURldGFTazJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldGFTazJ3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDetaSk2wE%7CCgwIp5StmgYQ0P22vQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Actually browsed and bought a few music CD's and books but I have had their coffee,sandwiches and muffins in the past. Always love to support Julia's and The Restore...never know what they will be offering and for a great cause!"
+        },
+        {
+            "review_datetime_utc": "10/15/2022 23:44:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURldFpqa05nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURldFpqa05nEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDetZjkNg%7CCgwI9outmgYQiIeijgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "An Absolute Delight! The perfect balance of books mixed with yummy coffee/latte/tea. Delightful!"
+        },
+        {
+            "review_datetime_utc": "09/29/2022 19:59:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlc0tDNm5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlc0tDNm5BRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDesKC6nAE%7CCgwIl_LXmQYQ0Pag0AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "They have a great staff and good food/snack options."
+        },
+        {
+            "review_datetime_utc": "09/28/2022 22:03:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURld0syT2FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURld0syT2FnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDewK2Oag%7CCgwIv4nTmQYQsIC1rAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely experience. Oozes goodness"
+        },
+        {
+            "review_datetime_utc": "09/26/2022 01:37:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlNTdxaG9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNTdxaG9RRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICe57qhoQE%7CCgwI9YTEmQYQ4JnShQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place became a home away from home for me. Every time I visited, I found a new gem in the used book section. I loved browsing through the shelves with an iced coffee in tow."
+        },
+        {
+            "review_datetime_utc": "09/24/2022 15:01:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtd2NHQjZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtd2NHQjZBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDmwcGB6AE%7CCgsIsbe8mQYQ2JXAGA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great coffee ☕. After you shop for deals!"
+        },
+        {
+            "review_datetime_utc": "09/20/2022 22:28:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlclpXNEt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlclpXNEt3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICerZW4Kw%7CCgwIm_2omQYQ-Knu9gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Well organized good prices nice people and the money goes to habitat for humanity."
+        },
+        {
+            "review_datetime_utc": "09/18/2022 22:32:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaGMzcmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaGMzcmNnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICehc3rcg%7CCgwI67iemQYQwNjQlwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool place...prices are reasonable."
+        },
+        {
+            "review_datetime_utc": "09/11/2022 18:00:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbXJtakJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbXJtakJREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICemrmjBQ%7CCgwIqsT4mAYQ8P7m2gI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice small coffee shop to sit read books look on your laptop enjoy company with friends family significant other"
+        },
+        {
+            "review_datetime_utc": "09/09/2022 19:41:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlNHFDMnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNHFDMnp3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICe4qC2zwE%7CCgwI1a3umAYQyPaoyQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place, they make a great ice coffee and sandwiches. I've come here a few times. Will be back."
+        },
+        {
+            "review_datetime_utc": "09/06/2022 20:15:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbE5pZWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbE5pZWVBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICelNieeA%7CCgwI9dTemAYQuK_0oQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I enjoyed a cup of coffee and a dessert before browsing the books and then went shopping at Habitat. Julia's made the whole experience better."
+        },
+        {
+            "review_datetime_utc": "09/05/2022 17:37:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlMkplUy1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlMkplUy1nRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICe2JeS-gE%7CCgwI5efYmAYQ8PLrrQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best place to work and read!"
+        },
+        {
+            "review_datetime_utc": "08/27/2022 23:55:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1ZzVtQVVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1ZzVtQVVREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDug5mAUQ%7CCgwI-N2qmAYQ4PndxwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great books and even better coffee!"
+        },
+        {
+            "review_datetime_utc": "08/27/2022 16:14:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1dlpmRmx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1dlpmRmx3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDuvZfFlwE%7CCgsI3oWpmAYQ8KW8ag%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really cute spot, coffee was only so-so, but It probably had more to do with what I ordered. Inside has a lot of charm with strong retro vibes. Service was friendly and outgoing. Would recommend"
+        },
+        {
+            "review_datetime_utc": "08/06/2022 02:51:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1ODkyeEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1ODkyeEVnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICu892xEg%7CCgwIqK63lwYQgJbcxQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Convenient location and well stocked bookstore."
+        },
+        {
+            "review_datetime_utc": "08/05/2022 19:03:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1czVMQ29RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1czVMQ29RRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICus5LCoQE%7CCgwI6NK1lwYQuJLRqAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Looking  for yard art, did not purchase anything still working on yard for party end of the month. Saw lots of interesting goods but nothing I really needed, yes daw lot of things I wanted but trying to complete the project sticking to the plan."
+        },
+        {
+            "review_datetime_utc": "08/03/2022 20:56:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1N2J2M3FRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1N2J2M3FRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICu7bv3qQE%7CCgwIicKrlwYQ8ILpyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The Habitat for humanity is great and the customer service was excellent!"
+        },
+        {
+            "review_datetime_utc": "07/02/2022 16:46:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPcW9PcWxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPcW9PcWxRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDOqoOqlQE%7CCgsI7uyBlgYQ0NfHCg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is my favorite coffee shop. The coffee is actually good, I love the books, the atmosphere is so relaxing, and I love walking around with my coffee to the restore next door."
+        },
+        {
+            "review_datetime_utc": "06/28/2022 19:33:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPdElPSnNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPdElPSnNnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDOtIOJsgE%7CCgwI_K7tlQYQuIPU-QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Service: 10/10 Very nice ladies, quick and courteous  Cleanliness: 10/10 Very clean and sanitary  Staff: 10/10 They took my order correctly, and explained the menu when I had questions  Atmosphere: 11/10 A café, in a used book shop??? It doesn't get any better than this  Busy: 6/10 Steady traffic but not crowded  Value: 10/10 Whoever prices the books, must also know what it's like to buy used books, never seen fairer prices.  Overall: 10/10 I highly recommend this place. And the iced mocha tastes better than any I ever had, legit, on gawd. 100% I like Barnes and Noble, but I'd much rather support small business"
+        },
+        {
+            "review_datetime_utc": "06/25/2022 02:13:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPNExmNWtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPNExmNWtBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDO4Lf5kAE%7CCgwIxN7ZlQYQ4Pro4gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee and shopping all in one place."
+        },
+        {
+            "review_datetime_utc": "06/22/2022 03:12:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbDYzWjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbDYzWjJ3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICOl63Z2wE%7CCgsIjJHKlQYQ4I38JQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee and great selection of books. Food choices can be improved."
+        },
+        {
+            "review_datetime_utc": "06/21/2022 10:13:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPaDhfQ2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPaDhfQ2RBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICOh8_CdA%7CCgwIs7PGlQYQoPmCnAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really good find, cute little place and a really good message"
+        },
+        {
+            "review_datetime_utc": "06/15/2022 16:42:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPMWZEUmx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPMWZEUmx3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICO1fDRlwE%7CCgwI9peolQYQ8Jf87AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome prices on books and games to help support our community. Delicious drinks, too - thank you!!"
+        },
+        {
+            "review_datetime_utc": "06/07/2022 05:07:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPcXVtYlFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPcXVtYlFBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICOqumbQA%7CCgsI_7n7lAYQ-LDFeA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great idea to have a used bookstore AND a coffee shop right next to a thrift store. Well organized with a decent selection of books, including rare vintage and coffee table books - when they're open. I've been here a few times where both Julia's and the Habitat ReStore attached have been closed during their regular operating hours."
+        },
+        {
+            "review_datetime_utc": "05/30/2022 23:56:53",
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUNPaVBwdBAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUNPaVBwdBAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICOiPpt%7CCgwIxbPVlAYQoNXzngM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very neat place! Be sure to visit!"
+        },
+        {
+            "review_datetime_utc": "05/17/2022 20:34:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyOGN6cF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyOGN6cF93RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID28czp_wE%7CCgwI7o2QlAYQ8Nu-jQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great experience!  Julia's is my favorite coffee shop in Charlotte."
+        },
+        {
+            "review_datetime_utc": "04/22/2022 00:19:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMydm9xOEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMydm9xOEVnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC2voq8Eg%7CCgwIk-mHkwYQkLvBoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely experience"
+        },
+        {
+            "review_datetime_utc": "02/24/2022 19:49:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXLXFqMl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXLXFqMl9RRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICW-qj2_QE%7CCgwIsMLfkAYQsOuFvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place for a breakfast, lunch or coffee meet up. Lots of books, albums, CD's etc to browse. Of course there's also the Habitat Re-store..."
+        },
+        {
+            "review_datetime_utc": "02/24/2022 00:57:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXNnJQVEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXNnJQVEZREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICW6rPTFQ%7CCgwIjLDbkAYQ0OOfjQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place. The batistas are sweet and friendly, atmosphere is the best if you enjoy books like we do!"
+        },
+        {
+            "review_datetime_utc": "02/18/2022 01:00:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXaEpiX01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXaEpiX01BEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICWhJb_MA%7CCgwIsd-7kAYQ4LG7hwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee!"
+        },
+        {
+            "review_datetime_utc": "02/15/2022 19:30:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXc0lQTDNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXc0lQTDNnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICWsIPL3gE%7CCgwIzf6vkAYQyODG_wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cute little place next to the Restore. I didn't try their coffee on this trio but it smelled good!"
+        },
+        {
+            "review_datetime_utc": "01/29/2022 14:19:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtM3JqamJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtM3JqamJ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDm3rjjbw%7CCgwI45nVjwYQqNS1xQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It is located inside of the Habitat for Humanity. The person behind the counter was very friendly. They do have an excellent selection of books. Very comfortable and relaxing Atmosphere. You can sit down have a beverage, a snack and read or even work on your laptop."
+        },
+        {
+            "review_datetime_utc": "01/25/2022 18:04:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtMnZyTm5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtMnZyTm5BRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDm2vrNnAE%7CCgwIpvfAjwYQuJjJpwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Brilliant place! Wonderful staff. Ordered 2 iced chais and a bagel sandwich. It was good. Highly recommend."
+        },
+        {
+            "review_datetime_utc": "01/24/2022 19:24:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURteXJqWEtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURteXJqWEtnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDmyrjXKg%7CCgwIhfq7jwYQ-Ojl8gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was a pleasant surprise. I've working at Habitat around the Triangle area before relocating here and they do not have cafes attached to them. Yet, this was much more than a cafe (see pictures of food, books, and movies)!  The staff, like most Habitat locations, was very friendly and helpful. I learned that in the Charlotte area alone, Julia's cafe receives thousands of books each year which every folks can buy for as little as $1. But they have a special section set aside of rare books. Those books will cost a little more, yet nothing outrageous.  Now, they also have movies for sale which looked brand new and perfect for cold days like we have coming up. On the way in or out, don't forget to grab a drink or pastry which looked amazing.  I would definitely recommend stopping by!"
+        },
+        {
+            "review_datetime_utc": "01/22/2022 17:40:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtZ28yOUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtZ28yOUpnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDmgo29Jg%7CCgwI8YKxjwYQiJPcpgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A hidden gem for sure! And with sales benefiting a charitable cause as well.  The coffee and food selection seems quite broad, and they have different types of cow and plant milk for your dietary desires. My latte arrived hot and tasty, and allowed me to with warm hands!  With my coffee I perused the book selection, and it's quite diverse, from children's books to vintage book, even bibles and nutrition options to choose from. I needed up grabbing a vintage historical fiction novel I hope to enjoy from 1945 and in great condition!  Definitely a great place to browse, and if you have kids or are in need of childrens books, there are tons at very affordable prices."
+        },
+        {
+            "review_datetime_utc": "01/15/2022 17:23:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtb0pPLVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtb0pPLVR3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDmoJO-Tw%7CCgwIp4aMjwYQwPi2pwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Variety of  books and the  cutest little cafe!"
+        },
+        {
+            "review_datetime_utc": "12/16/2021 18:55:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNteUthSUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNteUthSUtREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICmyKaIKQ%7CCgwIhpfujQYQyL2DtQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A must visit everytime I'm in the area. Good staff,  food, and books."
+        },
+        {
+            "review_datetime_utc": "12/16/2021 18:07:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMzd5em1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMzd5em1BRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq37yzmAE%7CCgwI04DujQYQqO6rhgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great used book store experience. Quaint and warm. Check out the children's book section, especially if you are a teacher. Had the nitro cold brew which was bitter."
+        },
+        {
+            "review_datetime_utc": "12/16/2021 09:06:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtOFBLWm53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtOFBLWm53RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICm8PKZnwE%7CCgwIo4PsjQYQgNLDowE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved this quaint unique bookstore cafe. Great place to study, read a book and enjoy some coffee, or sit and relax."
+        },
+        {
+            "review_datetime_utc": "12/09/2021 19:06:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHcTU2Vk5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHcTU2Vk5REAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDGq56VNQ%7CCgwIx6fJjQYQ0K2VwwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Dropped off books."
+        },
+        {
+            "review_datetime_utc": "12/04/2021 20:30:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHbFpuN3ZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHbFpuN3ZRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDGlZn7vQE%7CCgsI1p-vjQYQ2MyhOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great source for books, wonderful staff."
+        },
+        {
+            "review_datetime_utc": "11/29/2021 17:15:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMHNEX3JnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMHNEX3JnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq0sD_rgE%7CCgwIvJWUjQYQsILd1gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I volunteer here every now and then. The staff, the ambience, everything/everyone is so nice. Really love this place"
+        },
+        {
+            "review_datetime_utc": "11/27/2021 20:08:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHOXFubDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHOXFubDB3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDG9qnl0wE%7CCgwIu6CKjQYQ4Ou2oQE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "We came to this café at 3, it's a Saturday, nothing on the door, nothing on their website, nothing ANYWHERE, saying they were closing early. If I'm wrong and it is posted somewhere can someone please direct me?? We were really looking forward to try this place, we only had time to come in at 3, it says everywhere I've looked that they close at 4, we're really disappointed. Horrible communication, I don't want to come back if it won't be open and the hours won't be updated, nor will the phone be answered."
+        },
+        {
+            "review_datetime_utc": "11/11/2021 23:45:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHbDVhakNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHbDVhakNnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICGl5ajCg%7CCgsIs9a2jAYQ0PbrQA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee"
+        },
+        {
+            "review_datetime_utc": "10/18/2021 12:25:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHOExmN2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHOExmN2xRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICG8Lf7lQE%7CCgwIrs-1iwYQsJ35owE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of used books, coffee is on point, it's for a great cause and you can pick up kitchen cabinets and a dining room set while you're there too. What's not to like?"
+        },
+        {
+            "review_datetime_utc": "10/14/2021 15:39:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2OTVXbVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2OTVXbVZREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID695WmVQ%7CCgwIsp6hiwYQiOPfqgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The greatest hidden gem of Charlotte, NC. Perfect Breve Coffee. I may have found the best books awhile ago and I always browse, that's the fun of Julia's Cafe. Includes neat upstairs space to read."
+        },
+        {
+            "review_datetime_utc": "10/12/2021 02:14:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2NjhmZVRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2NjhmZVRREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID668feTQ%7CCgwIkt-TiwYQ6Pj0qwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great Chai. Friendly faces and wonderful books. Stop by and say hi to the girls."
+        },
+        {
+            "review_datetime_utc": "09/12/2021 03:50:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2ay1XWkNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2ay1XWkNnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC6k-WZCg%7CCgwI6fH1iQYQkKSSzAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful way to expand your library. Good staff and great prices"
+        },
+        {
+            "review_datetime_utc": "09/12/2021 01:02:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2ay1LZ1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2ay1LZ1RnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC6k-KgTg%7CCgsIkqP1iQYQqIyIZQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great place to find some books and an ice cold beverage"
+        },
+        {
+            "review_datetime_utc": "09/03/2021 16:00:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2eHFxd0dnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2eHFxd0dnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC6xqqwGg%7CCgwIi43JiQYQ8Pz9mAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The place to go for used books and good coffee.  Super friendly staff, and great service."
+        },
+        {
+            "review_datetime_utc": "08/28/2021 23:07:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2aU56M1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2aU56M1B3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC6iNz3Pw%7CCgwIyIOriQYQ6Pi_kAI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very confusing place. All DVDs were unsorted. There was no sections other than fiction versus non-fiction."
+        },
+        {
+            "review_datetime_utc": "07/31/2021 18:11:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhanNQYnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhanNQYnhnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICajsPbxgE%7CCgwI0qSWiAYQqM6aqwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, delicious coffee & good selection of books. I definitely recommend."
+        },
+        {
+            "review_datetime_utc": "07/30/2021 21:42:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhMXJ6MURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhMXJ6MURREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICa1rz1DQ%7CCgwItuSRiAYQ0Ja2gAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was a cute little bookstore in a restore store. The prices were great and it was nice place to sit and unwind."
+        },
+        {
+            "review_datetime_utc": "07/30/2021 17:04:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhbHF5djhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhbHF5djhRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICalqyv8QE%7CCgsInuKQiAYQ0Nr2dw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The barista was awesome and the coffee to die for."
+        },
+        {
+            "review_datetime_utc": "07/17/2021 19:28:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxbF9peXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbF9peXRnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDql_iytgE%7CCgwI6N7MhwYQ8PGKjgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had an amazing experience! Purchased all of these books for $72 (including tax)! Not to mention the staff were exceptionally nice & the latte was delicious!"
+        },
+        {
+            "review_datetime_utc": "07/13/2021 03:36:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxNlptX3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNlptX3BBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq6Zm_pAE%7CCgwIxpS0hwYQoNfkjQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place I have been going here for years, comfortable establishment great to buy books for the whole family and friends"
+        },
+        {
+            "review_datetime_utc": "07/07/2021 23:07:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMXVPWnVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMXVPWnVBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq1uOZuAE%7CCgwIzueYhwYQkJWhnAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "As a book enthusiast, you have me at the opportunity to browse rows & rows of used books, but with a coffee in hand, this is like a dream! Their staff is friendly, inviting & some of the kindest in the city! Add in that by buying books/coffee, you can help fund Habitat for Humanity & it is a little slice of heaven for me!"
+        },
+        {
+            "review_datetime_utc": "06/29/2021 20:44:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxbEt2eUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxbEt2eUlREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDqlKvyIQ%7CCgwIwozuhgYQ0M_axwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Came in to get some work done and have some coffee, this is a neat spot that shohld be more well known! You can get used books and coffee and have enough space to get work done. My only complaint is I had to no idea what the wifi password was or how t to get it? Maybe hangup some signs?"
+        },
+        {
+            "review_datetime_utc": "06/28/2021 14:14:06",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxLUtId3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxLUtId3pnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq-KHwzgE%7CCgwIrrLnhgYQsKHvkgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place"
+        },
+        {
+            "review_datetime_utc": "06/25/2021 19:47:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxME1qSGZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxME1qSGZnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq0MjHfg%7CCgwIveXYhgYQuIvXiAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this coffee shop and have been going there for over 10 years ( when they used to have live bands). I usually buy a record and peruse the rare books section. They have decent brewed coffee and desserts as well as a barista that will make whatever you want."
+        },
+        {
+            "review_datetime_utc": "06/25/2021 10:21:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxNE5DM0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxNE5DM0pnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDq4NC3Jg%7CCgsIr9zWhgYQuOmXCw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the coffee and the wonderful women's customer service"
+        },
+        {
+            "review_datetime_utc": "06/23/2021 15:56:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxNzV1aEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxNzV1aEtBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICq75uhKA%7CCgwIwrPNhgYQsL-6zQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful food and service.  We'll be back."
+        },
+        {
+            "review_datetime_utc": "06/21/2021 16:02:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbDVEcDBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbDVEcDBRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICql5Dp0QE%7CCgsIsfDChgYQuKDIZA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I always like taking a break and enjoy browsing, and buying a couple of items. The staff is always so great and friendly."
+        },
+        {
+            "review_datetime_utc": "06/18/2021 17:50:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxeTREUlpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxeTREUlpREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICqy4DRZQ%7CCgwI-rmzhgYQiMKKygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love love love this place, they have great drinks, coffee, smoothies, and love that your surrounded by books from $1 to 10$ great amazing books. They have outdoor and indoor seating. High recommend if anyone wants to find good cheap books and dvds, and have great coffee or smoothies and just be in a quiet environment."
+        },
+        {
+            "review_datetime_utc": "05/28/2021 23:09:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxOU9YeGVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxOU9YeGVBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICq9OXxeA%7CCgwIs_DFhQYQsL6XwAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Coffee was excellent and the barista provided fabulous options. While waiting for my coffee I browsed the selection of books. Excellent place for those that like books and coffee"
+        },
+        {
+            "review_datetime_utc": "05/22/2021 17:05:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxZ0xiLTJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxZ0xiLTJ3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICqgLb-2wE%7CCgwIzvOkhQYQoLuvhgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such an awesome place!!!  I would 10/10 recommend getting the iced mocha with have white and half regular mocha! It's sooooo good.  Lots of great books to choose from and they are organized in alphabetical order!"
+        },
+        {
+            "review_datetime_utc": "05/08/2021 23:49:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLLXVDTlFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLLXVDTlFBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDK-uCNQA%7CCgwI-8bchAYQ2LCHogI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great atmosphere"
+        },
+        {
+            "review_datetime_utc": "04/19/2021 00:23:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLeTh5M2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLeTh5M2tnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICKy8y3kgE%7CCgwImZvzgwYQsK-M7AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice Cafe with alternative milks!. Comfortable and not pretentious.  Pleasant employees, and good books."
+        },
+        {
+            "review_datetime_utc": "01/24/2021 03:06:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5NG9TeENREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5NG9TeENREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICy4oSxCQ%7CCgwIzsizgAYQwMaZzwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I moved to charlotte just to be closer to this café"
+        },
+        {
+            "review_datetime_utc": "12/19/2020 17:20:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTa3JPWGxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTa3JPWGxnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDSkrOXlgE%7CCgwI5uz4_gUQ8LnN6gI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cozy and cute."
+        },
+        {
+            "review_datetime_utc": "11/25/2020 17:26:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpNUtmaURBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpNUtmaURBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDi5KfiDA%7CCgwItKf6_QUQ2Pi9hQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A lovely bookshop with good vibes and great finds."
+        },
+        {
+            "review_datetime_utc": "08/03/2020 19:48:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4el82TzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4el82TzhnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID8z_6O8gE%7CCgsIn9Sh-QUQ-MubBg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) At the moment it was serrated, I couldn't get in and I didn't realize it until they opened it.  (Original) Por el momento estaba serrado no pude entrar  y no me di cuenta asta cuando lo abren"
+        },
+        {
+            "review_datetime_utc": "04/17/2020 22:37:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjLTc2M1pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjLTc2M1pBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICc-763ZA%7CCgwIlt_o9AUQ2JP2nAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I fell in love with this place as soon as I stepped inside. Their collection of books is very well stocked and I could literally spend hours here. It's like a place of dreams XD"
+        },
+        {
+            "review_datetime_utc": "03/08/2020 02:52:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzeWNhNXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzeWNhNXlRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDsyca5yQE%7CCgwI_7uR8wUQ0KSv5QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Books and coffee. What more do you need?"
+        },
+        {
+            "review_datetime_utc": "03/07/2020 23:16:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzaWMzYVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzaWMzYVdBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDsic3aWA%7CCgwI29aQ8wUQwJax_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wow love this place. We would have known the premade package curried cauliflower and chickpea wraps with yogurt sauce could be that good... And the mocha was exceptional."
+        },
+        {
+            "review_datetime_utc": "03/02/2020 22:21:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzNXVMSndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzNXVMSndRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDs5uLJwQE%7CCgwIzo328gUQ-Pya7QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A large selection of books, great coffee and plenty of space to chill and read."
+        },
+        {
+            "review_datetime_utc": "03/02/2020 21:21:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzNXFDNVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzNXFDNVpBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDs5qC5ZA%7CCgsIvfH18gUQ2IiFOw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Inclusive, free WiFi and a place for meetup groups"
+        },
+        {
+            "review_datetime_utc": "03/01/2020 00:11:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzcW9fTHZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzcW9fTHZRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDsqo_LvQE%7CCgwIl_vr8gUQsJrM1gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee is delicious! Staff is super helpful and friendly! Bookstore is so welcoming and has cute eclectic decor!"
+        },
+        {
+            "review_datetime_utc": "02/29/2020 14:46:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzaXEtTmd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaXEtTmd3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDsiq-NgwE%7CCgwIt_Lp8gUQ6LeflwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a cool spot to buy a packaged breakfast, salad or sandwich as well as fountain drink or expresso coffee while enjoying a used book or meeting with friends. For such an environmentally conscious place where spaghetti (rather than plastic) stirrers are the norm, I do wish they would offer recycling as an option."
+        },
+        {
+            "review_datetime_utc": "02/19/2020 14:32:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzdjczWF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzdjczWF93RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICsv73X_wE%7CCgwI7o218gUQ6P23nQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful, cute coffee shop with an arrangement of used books that were affordable! I enjoyed delicious coffee and was cozy up in the loft as music played. It is attached right next to habitat for humanity which I thought was cool and the people who worked/volunteered behind the counter were very nice! I can't wait to come back here!"
+        },
+        {
+            "review_datetime_utc": "02/07/2020 01:24:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzNmY3Uk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzNmY3Uk1REAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICs6f7RMQ%7CCgsI4vjy8QUQiPefTg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Is good site"
+        },
+        {
+            "review_datetime_utc": "02/01/2020 14:34:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzOXFhREVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzOXFhREVREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICs9qaDEQ%7CCgsI5ZjW8QUQ2JmcaQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved this place. Will be visiting more often. Big coffee shop with books. Great place to have a meeting or get some work done or find a book and relax with some tea or coffee! Also attached to the Habitat for Humanity store ReStore so you can go shopping too if you want."
+        },
+        {
+            "review_datetime_utc": "01/23/2020 16:27:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzdEo2TTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzdEo2TTlBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICstJ6M9AE%7CCgsI1ZKn8QUQoP2LYQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This coffee shop is phenomenal. The proceeds support habitat for humanity. They have an incredible selection of used books and the environment is so inviting and cozy. I want to curl up and spend hour here!"
+        },
+        {
+            "review_datetime_utc": "01/18/2020 03:23:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzZ0tHclJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzZ0tHclJREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICsgKGrRQ%7CCgwIovSJ8QUQqLLbygM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Looking for certain 📖"
+        },
+        {
+            "review_datetime_utc": "01/14/2020 02:06:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNeDVTckhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNeDVTckhnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMx5SrHg%7CCgwIlsT08AUQ4P7s-QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great little coffee shop attached to the ReStore. Servers are always nice and welcoming."
+        },
+        {
+            "review_datetime_utc": "01/13/2020 12:06:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNdTd2aWZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNdTd2aWZnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMu7vifg%7CCgwI17rx8AUQ8JOb9AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a good time at Julia's. A fun selection of books and good coffee. Not a fan of their available meals, but it's for a good cause so I can't really complain. Their salads, sandwiches, soups, and wraps are all on the peculiar side, but they're friendship trays which means they also deliver a meal and some company to a senior citizen."
+        },
+        {
+            "review_datetime_utc": "01/10/2020 02:58:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNeHB5QXFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNeHB5QXFnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMxpyAqgE%7CCgwI7NDf8AUQkNrXrwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good Selection of books. Had to stop myself from buying too many. The foods not amazing but is decent."
+        },
+        {
+            "review_datetime_utc": "01/07/2020 22:31:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNemQ2aERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNemQ2aERBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMzd6hDA%7CCgwIvY3U8AUQiLDDuQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of books and coffee. I live right around the corner and visit often. I have found many books here that I have seen elsewhere for 3 or 4 times the price. The staff at the cafe and restore are always friendly and helpful! I love having them in my neighborhood and love what the contribute to our community!"
+        },
+        {
+            "review_datetime_utc": "12/27/2019 02:39:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNMnJDeEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNMnJDeEpBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDM2rCxJA%7CCgwI-92V8AUQ-Irb5AE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "(Translated by Google) The staff is friendly. The relaxing peaceful environment. You can choose the books and read them at the table with a nice hot coffee. Good prices.  (Original) Il personale è cordiale. L'ambiente tranquillo rilassante. Puoi scegliere i libri e leggerli a tavolino con un bel caffè caldo. Prezzi buoni."
+        },
+        {
+            "review_datetime_utc": "12/20/2019 17:20:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNbkl6cDFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNbkl6cDFnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMnIzp1gE%7CCgwI0oX07wUQgLKVogM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cookies for Santa latte is delish!!!!"
+        },
+        {
+            "review_datetime_utc": "12/16/2019 20:08:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNaE1XMlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNaE1XMlhREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDMhMW2XQ%7CCgwIvsjf7wUQ6O3lygI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Eclectic little coffee & book shop."
+        },
+        {
+            "review_datetime_utc": "11/30/2019 21:08:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNNcmFxcWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNcmFxcWlnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICMraqqigE%7CCgwI47SL7wUQgICgnAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of used books and great coffee.  Benefits Habitat for Humanity.  Step next door for more book bargains and other household stuff."
+        },
+        {
+            "review_datetime_utc": "11/19/2019 22:33:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNMG8ydUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNMG8ydUpnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICM0o2uJg%7CCgwI0tvR7gUQ-Oqs5gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Books....coffee...vinyl....other enjoyable things."
+        },
+        {
+            "review_datetime_utc": "11/13/2019 00:58:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwcGJLR2d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwcGJLR2d3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID0pbKGgwE%7CCgwIuaqt7gUQsPm9iwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Have lived in the area for a year and was looking for a place where I could have GOOD coffee.  I DONT like Starbucks...I think it's overrated.   Best coffee I've had in the area by far...I will be back!"
+        },
+        {
+            "review_datetime_utc": "10/22/2019 18:01:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwaEtLUVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwaEtLUVd3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID0hKKQWw%7CCgwIjIi97QUQiPuMvQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome hidden gem with plenty of seating, friendly service, with affordable AND great coffee. Connected to Habitat for Humanity ReStore, and also has a great little book shop! Wifi was fast, as well."
+        },
+        {
+            "review_datetime_utc": "10/11/2019 15:58:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwMl9LRG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwMl9LRG13RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC02_KDmwE%7CCgsIoc2C7QUQ2M7wVQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place. Best pumpkin spice latte I've ever had and amazing deals on used books."
+        },
+        {
+            "review_datetime_utc": "10/06/2019 11:38:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwelozUndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwelozUndBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC0zZ3RwAE%7CCgwIuqTn7AUQ6IOyyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unique spot! Would've driven past it 100 more times if I didn't specifically look for coffee in the area. Very charming inside"
+        },
+        {
+            "review_datetime_utc": "10/05/2019 19:42:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwOVliR1d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwOVliR1d3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC09YbGWw%7CCgwIpOTj7AUQgOjaiAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere,  good service."
+        },
+        {
+            "review_datetime_utc": "09/24/2019 23:29:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwNXY2ZUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwNXY2ZUhnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC05v6eHg%7CCgwI5s2q7AUQ4P3viQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVE LOVE LOVE Julias!!! I eat lunch here at least once a week. It is super convenient by where I work. But I love to come and just browse. My kids love it as well. I usually let then pick out a book or two, which they love!"
+        },
+        {
+            "review_datetime_utc": "09/23/2019 12:40:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwdXFmV3VBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwdXFmV3VBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC0uqfWuAE%7CCgwIwvqi7AUQkL7FyQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cozy coffee bar for lunch that offers vegetarian options.  I always have a wonderful experience. Feels like you are sitting in the middle of a library! Great selection of used hardback books. Highly recommend"
+        },
+        {
+            "review_datetime_utc": "09/15/2019 13:18:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVdHB5RGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVdHB5RGRBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDUtpyDdA%7CCgwIqPT46wUQ6IHdrAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Terrific, friendly staff and excellent coffee from Charlotte roaster Magnolia."
+        },
+        {
+            "review_datetime_utc": "08/24/2019 18:57:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVdnJDMUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVdnJDMUx3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDUvrC1Lw%7CCgsI_5CG6wUQuK6UWA%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Just had the absolutely worse service- ordered a very simple iced coffee!! They served 3 other customers, I had to ask twice about my order & when I asked for a refund - i was told that k ly a manager could do that & she was not there today !!😡"
+        },
+        {
+            "review_datetime_utc": "08/23/2019 14:36:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVanQzdmZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVanQzdmZ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDUjt3vfw%7CCgwI6_P_6gUQwKnt1QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good food, great coffee, good internet and all proceeds go to Habitat for Humanity! This is such an amazing concept for a cafe. I love supporting Habitat anyway with volunteer time and donations to the restore, but as someone who often works from \"flex offices\" having a place I can go with good food, great coffee, a place to work and an ability to give back is simply amazing.  I also love all the amazing records, DVDs, tapes and of course, books you can purchase for a low cost.  Overall, this is an amazing concept so I will definitely be coming back!"
+        },
+        {
+            "review_datetime_utc": "08/21/2019 21:43:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVcHVLWXV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVcHVLWXV3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDUpuKYuwE%7CCgsIkvb26gUQ2IaLVQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We Loved this place, the coffee was phenomenal and the atmosphere is unbeatable.  Great place to study or work."
+        },
+        {
+            "review_datetime_utc": "08/20/2019 09:15:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVNnV5RGVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVNnV5RGVnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDU6uyDeg%7CCgsItPTu6gUQqI6DIQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful place for good coffee and a nice book or three."
+        },
+        {
+            "review_datetime_utc": "08/08/2019 17:01:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVajZ5TlVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVajZ5TlVREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICUj6yNUQ%7CCgwI8aqx6gUQiMmatgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I buy a lot of my books here. Also donate the books I buy back and any other books I purchase elsewhere. They have a frequent buyer's card. There's free Wifi. You can buy hot or cold coffee and tea and have a selection of pastries. Part of the Restore on Wendover."
+        },
+        {
+            "review_datetime_utc": "08/08/2019 16:38:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVai1TOE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVai1TOE9REAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICUj-S8OQ%7CCgwIl6Cx6gUQkIyvyAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee and light drink good selection of used books takes and records even DVD and VCR tapes very reasonable price"
+        },
+        {
+            "review_datetime_utc": "08/07/2019 20:48:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVMTdETjZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVMTdETjZBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICU17DN6AE%7CCgwIjvKs6gUQgMzdmwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a fantastic place to buy used books.  The vibe is fantastic.  The selection is awesome and the coffe is great.  Besides, what is not to love of a Restore Habitat for Humanity store.  There ate always good buys in this store.  😍"
+        },
+        {
+            "review_datetime_utc": "08/01/2019 19:23:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVbmZPRk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbmZPRk1REAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICUnfOFMQ%7CCgwIuviM6gUQwIDU1wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Other than the bald white security guard following me around because of my skin color, i guess he thinks blacks don't read lol. The store is pretty good lots of great selections of books I would have bought a few if I was wasn't being followed."
+        },
+        {
+            "review_datetime_utc": "07/19/2019 18:26:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVakpHTTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVakpHTTlBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICUjJGM9AE%7CCgwI4ZbI6QUQ2LWZ1gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a wonderful little place to find books and have a cup of coffee or tea.  Always clean and the staff is always friendly and helpful.  They offer almond and soy milk alternatives.  There is a seating area upstairs that can be reserved for small groups.  It's great knowing that every purchase goes to help people in need of a home!"
+        },
+        {
+            "review_datetime_utc": "07/14/2019 11:28:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVNFBtNWxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVNFBtNWxRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICU4Pm5lQE%7CCgwI76Os6QUQsNPU0wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful place to find used books and get some great coffee."
+        },
+        {
+            "review_datetime_utc": "07/13/2019 20:06:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVd09qX1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVd09qX1lnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICUwOj_Yg%7CCgwI3fOo6QUQgPChqwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent place to shop for books, great prices, and good coffee selections, fantastic staff.."
+        },
+        {
+            "review_datetime_utc": "06/26/2019 13:50:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrM3RiYkJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrM3RiYkJBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDk3tbbBA%7CCgoIsPDN6AUQ4Kk7%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place. Excellent service. The older gentleman is the coolest."
+        },
+        {
+            "review_datetime_utc": "06/16/2019 02:57:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNFdkxTMkpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNFdkxTMkpnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICEvLS2Jg%7CCgwInOCW6AUQkKr6_AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite cafe in Charlotte . Repurposed decor makes me feel right at home"
+        },
+        {
+            "review_datetime_utc": "06/08/2019 12:51:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0OGZHTEp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0OGZHTEp3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC48fGLJw%7CCgwI397u5wUQyKjjwQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool coffee shop and used books store. They take the time to organize their books. The also have upstairs seating"
+        },
+        {
+            "review_datetime_utc": "06/01/2019 22:39:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0dUtIWVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0dUtIWVFREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIC4uKHYQQ%7CCgwIvf3L5wUQyLLMjQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cozy coffee bar for lunch that offers vegetarian options.  Feels like you are sitting in the middle of a library! Great selection of used hardback books, DVDs and records."
+        },
+        {
+            "review_datetime_utc": "05/29/2019 00:33:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZMzZPSkR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZMzZPSkR3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDY36OJDw%7CCgwI5Ka35wUQ0PfXiQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great food for good prices"
+        },
+        {
+            "review_datetime_utc": "05/28/2019 21:23:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZMzY3MUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZMzY3MUlBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDY3671IA%7CCgsI58225wUQuJTuLw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cool coffee shop and meeting place for the area."
+        },
+        {
+            "review_datetime_utc": "05/21/2019 22:38:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZMDl1UFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZMDl1UFZREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDY09uPVQ%7CCgsI6fuR5wUQyPOtJw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great bookstore inside the Habitat for Humanity that serves coffee and also sells CDs, videocassettes and DVDs.  I checked it out while venturing in Charlotte over a week ago.  The woman working up front was very kind. Selection of media is very organized and there are a lot of solid animated/Disney movies to choose from as well. If you're in Charlotte and like coffee, collecting movies, books or music CDs, this shop is for you ;)"
+        },
+        {
+            "review_datetime_utc": "05/09/2019 12:52:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZLXJYZ1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZLXJYZ1lREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDY-rXgYQ%7CCgwIgcXQ5gUQyJ_o7QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome little shop"
+        },
+        {
+            "review_datetime_utc": "05/07/2019 17:04:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRM2JPM1R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRM2JPM1R3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDQ3bO3Tw%7CCgwIgvXG5gUQiJrdkQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! Awesome coffee, and lots of books to choose from. It's a nice place to go for a quiet drink, and a nice hot coffee. Do not skip out on this place. It's my go to."
+        },
+        {
+            "review_datetime_utc": "04/29/2019 07:25:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZdUplVFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZdUplVFhBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDYuJeTXA%7CCgwIhM6a5gUQ8O-76gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic collection, some real bargains, a very warm place and all for a good cause."
+        },
+        {
+            "review_datetime_utc": "04/27/2019 16:16:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZeU1iN1R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZeU1iN1R3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDYyMb7Tw%7CCgsIzoCS5gUQkJj-WQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place"
+        },
+        {
+            "review_datetime_utc": "04/15/2019 15:09:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZbVlITDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZbVlITDNRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICYmYHL3QE%7CCgwIrL3S5QUQoPPB1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff was super sweet and it's a nice cozy environment. The coffee wasn't the best I've ever had but I'm not going to complain."
+        },
+        {
+            "review_datetime_utc": "04/14/2019 11:17:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZaWJHOWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZaWJHOWxnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICYibG9lgE%7CCgwI0a3M5QUQ6MDypAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great espresso drinks.  Nice old book store feel."
+        },
+        {
+            "review_datetime_utc": "04/12/2019 02:10:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZanR6bUhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZanR6bUhBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICYjtzmHA%7CCgwIkOe_5QUQkI2-rwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is a hidden gem! It is both a cafe and used bookstore and on top of that all proceeds go to Habitat Charlotte to provide affordable Charlotte housing. On the outside it may not seem like much but once you step into the cafe you enter a different world, literally. The interior is filled with bookshelves, quirky but comfy reading chairs and eclectic chandeliers.📚 Books are affordable and coffee is served by friendly staff. A hidden, unexpected gem,✨ we encourage you to spend a weekend morning. Check out our IG page @kukoomedia to see a video showing the interior of this fabulous place!"
+        },
+        {
+            "review_datetime_utc": "04/07/2019 11:35:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZX0xiODdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZX0xiODdnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICY_Lb87gE%7CCgwIn8Gn5QUQgPLbyQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This coffee and used bookstore was a pleasure to stop in and do a little book hunting."
+        },
+        {
+            "review_datetime_utc": "03/26/2019 12:27:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURvci1UMF9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURvci1UMF9RRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDor-T0_QE%7CCgsIm7Xo5AUQwKDoNA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great little unexpected place! Excellent atmosphere and decent coffee."
+        },
+        {
+            "review_datetime_utc": "03/23/2019 19:06:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURveC1YOXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURveC1YOXZ3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDox-X9vwE%7CCgsIyIfa5AUQ6J-ITg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice place to chill out"
+        },
+        {
+            "review_datetime_utc": "02/28/2019 22:29:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvaV8zZlJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaV8zZlJ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICoi_3fRw%7CCgwIrcHh4wUQ8OKN4gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic atmosphere and very friendly staff. Spent 4 hours working on my thesis and was never distracted or uncomfortable! The food was delicious and drinks were wonderful."
+        },
+        {
+            "review_datetime_utc": "02/25/2019 14:29:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvZ19XN1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvZ19XN1J3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICog_W7Rw%7CCgsIsvfP4wUQwPSScQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Non profit coffee, locally sourced, book donations, $1 coffee table books, carved book letters, and casual spacious seating. A gorgeous concept that Charlotte would benefit to see more of!"
+        },
+        {
+            "review_datetime_utc": "02/23/2019 20:43:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvN1lfTGVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvN1lfTGVREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICo7Y_LeQ%7CCgwI9eDG4wUQqNLAkAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee and there are gluten-free baked goods. 💚💚"
+        },
+        {
+            "review_datetime_utc": "02/23/2019 19:31:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvN1pQdDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvN1pQdDVnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICo7ZPt5gE%7CCgwIqb_G4wUQiJGr-QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best little place around! Great atmosphere! The barista was so nice and helpful! We took our 2 kids (4 and 8) and they absolutely adored it! Coffee is perfect and the books were so affordable!"
+        },
+        {
+            "review_datetime_utc": "02/23/2019 00:05:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvemVhaUlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvemVhaUlnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICozeaiIg%7CCgwI45zC4wUQ6P6KpAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great coffee and meeting spot.  Surrounded by books and some local art.  Enough tables to accommodate individuals in notebooks or small meetings.  Upstairs space us cool too."
+        },
+        {
+            "review_datetime_utc": "02/04/2019 19:28:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvLUxTNVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvLUxTNVNnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICo-LS5Sg%7CCgsI3aTi4gUQ877fGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Reasonably priced second hand books and delicious local coffee! They even have nitro!"
+        },
+        {
+            "review_datetime_utc": "01/27/2019 18:12:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJcjdpaWJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJcjdpaWJnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDIr7iibg%7CCgwIjem34gUQnNT47AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of books, good coffee!"
+        },
+        {
+            "review_datetime_utc": "01/21/2019 17:02:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJeTY3Um1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJeTY3Um1BRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDIy67RmAE%7CCgwIt_aX4gUQ2syF7gI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Quaint spot to enjoy a timeless book and a nice cup of coffee."
+        },
+        {
+            "review_datetime_utc": "01/20/2019 21:50:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJOF9MOF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJOF9MOF9nRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDI8_L8_gE%7CCgwIttqT4gUQhJXo2gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to purchase books for kids. Many $.50 books. A true blessing in helping make it affordable for all children to have home librarys."
+        },
+        {
+            "review_datetime_utc": "01/08/2019 14:37:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJNFpHOWd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJNFpHOWd3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDI4ZG9gwE%7CCgsIsuvS4QUQq_mmdA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cute place and friendly staff. I got a great mocha!"
+        },
+        {
+            "review_datetime_utc": "01/05/2019 03:39:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJenNhWXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJenNhWXZ3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDIzsaYvwE%7CCgwI1M3A4QUQ2OL7kgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I always find classic treasures here for a steal!"
+        },
+        {
+            "review_datetime_utc": "01/01/2019 04:06:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJMnZtc01nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJMnZtc01nEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDI2vmsMg%7CCgwIv86r4QUQ2sHHvAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Donated more than 300 of my late father's library.  Julia's was happy to have them."
+        },
+        {
+            "review_datetime_utc": "12/31/2018 15:16:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbXZhV2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbXZhV2VBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDImvaWeA%7CCgsIzeWo4QUQgeCQZw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A non-profit coffee shop and extensive used book store at the Habitat for Humanity Restore. Comfortable place to relax and enjoy good coffee and a snack, knowing that proceeds are going up help others."
+        },
+        {
+            "review_datetime_utc": "12/24/2018 02:51:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJOUpHZ3BnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJOUpHZ3BnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDI9JGgpgE%7CCgwIw5OB4QUQy5-CkwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A very nice selection of books n there is several little nooks with comfy chairs to relax or use the free internet. The coffee n the picnic tables out back are just a bonus."
+        },
+        {
+            "review_datetime_utc": "12/21/2018 20:44:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJeE9hSFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJeE9hSFR3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDIxOaHTw%7CCgsIsaH14AUQ9-H8Yg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really cozy cafe with lots of books at a great price."
+        },
+        {
+            "review_datetime_utc": "12/17/2018 14:15:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJMFA3ZFRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJMFA3ZFRREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDI0P7dTQ%7CCgwIlN_e4AUQkaTRjQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee and used books. They also have muffins and sandwiches. Friendly staff. One of my favorite places to sit and enjoy. They accept donations of used books, and have a fairly large selection of used books for purchase, including cook books and children's books. They are attached to the  Habitat for Humanity Restore, so why not go furniture shopping while you are there?"
+        },
+        {
+            "review_datetime_utc": "12/14/2018 03:46:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBeXJ1MnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBeXJ1MnRRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICAyru2tQE%7CCgwIjc_M4AUQ4oqFtwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super awesome."
+        },
+        {
+            "review_datetime_utc": "12/07/2018 02:57:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJaTRuUmFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJaTRuUmFREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICIi4nRaQ%7CCgwIosOn4AUQ8OzCuQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very pleasant place to have excellent coffee, Facebook a bit and buy a book."
+        },
+        {
+            "review_datetime_utc": "12/05/2018 17:10:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJMDlUaXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJMDlUaXVRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICI09TiuQE%7CCgsI74yg4AUQhMmnXQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great prices on a variety of book subjects and exercise and movie DVDs...snacks and coffee available..love this place"
+        },
+        {
+            "review_datetime_utc": "12/01/2018 14:03:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJN2NTWG9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJN2NTWG9nRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICI7cSXogE%7CCgwIsamK4AUQr_2k8gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this cute little used bookstore with cafe. It's the place our knitting group visits 2x a month in a nice little area upstairs. They have great coffee and staff."
+        },
+        {
+            "review_datetime_utc": "11/10/2018 02:49:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJdXY3T0NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJdXY3T0NBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICIuv7OCA%7CCgwIrI6Z3wUQ6Kuq5QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Long-standing Charlotte institution. Give it a try."
+        },
+        {
+            "review_datetime_utc": "10/30/2018 13:55:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJcktxc0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJcktxc0pnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICIrKqsJg%7CCgsI3cXh3gUQoPLLPw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The coffee here was surprisingly smooth and delicious. Baristas were very friendly. The books and table sized chess sets made for a great atmosphere."
+        },
+        {
+            "review_datetime_utc": "10/27/2018 21:25:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3M29qZUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3M29qZUNREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDw3ojeCQ%7CCgsI3a_T3gUQ6MavDw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great place to get some work done with yummy drinks! LOVE their chicken salad sandwich whenever I have a chance to eat lunch there."
+        },
+        {
+            "review_datetime_utc": "10/22/2018 16:11:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3eU56ZjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3eU56ZjdRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDwyNzf7QE%7CCgwIlu233gUQ4d7jgQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cute spot with good iced coffee, eclectic space, and lots of books / Knick knacks to look at or buy :)"
+        },
+        {
+            "review_datetime_utc": "10/09/2018 23:24:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3eHVTSDNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3eHVTSDNnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDwxuSH3gE%7CCgwIyfH03QUQ4O3QowI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved this place! I will definitely be back! :)"
+        },
+        {
+            "review_datetime_utc": "09/27/2018 21:36:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncVlxVzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncVlxVzd3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICgqYqW7wE%7CCgwI5pq13QUQiKjDqQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "ALWAYS an enjoyable time. This is a prepared food (sandwiches/salads/breakfast), yummy bakery goods and a Cafe that also sells used and heavily discounted books with a wonderful variety of topics. They have an upstairs that you can hide away in or have small meetings. ALL MONEY invested goes to support our local community. If you're an espresso or redeye coffee kid like me...their dark blends are awesome! They do have Tea and \"frufru drinks\" both hot and cold. If you can answer the trivia question you get a very small discount BUT you might just walk away with some off the wall knowledge that you didn't already know! The staff is great and ... remember some are also volunteers. Donate your books...Help our community and learn something new for the day...ENJOY!"
+        },
+        {
+            "review_datetime_utc": "09/23/2018 13:04:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOF9pWVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOF9pWVlBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg8_iYYA%7CCgwIzJ6e3QUQ-KblpgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The perfect spot for coffee and book browsing. AND it benefits the community instead of a corporate monolith."
+        },
+        {
+            "review_datetime_utc": "09/09/2018 17:38:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMmVYVVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMmVYVVBREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDg2eXUPQ%7CCgwIkbXV3AUQ6LaPzgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee place and used book store!"
+        },
+        {
+            "review_datetime_utc": "09/01/2018 18:27:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnM2NfbUl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnM2NfbUl3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDg3c_mIw%7CCgsIl7Sr3AUQgKyLLw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cozy little coffee place. Used books, CDs, records, etc. Super laid back atmosphere."
+        },
+        {
+            "review_datetime_utc": "08/18/2018 13:32:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdHZ6Y0RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdHZ6Y0RnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDAtvzcDg%7CCgwI-b_g2wUQ8MHH-QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Most underrated spot in Charlotte, all towards a good cause. Books and coffee are super reasonably priced and the connecting furniture store has had some incredible pieces."
+        },
+        {
+            "review_datetime_utc": "07/20/2018 19:22:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbXNEbzhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbXNEbzhBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDgmsDo8AE%7CCgwIgu3I2gUQwP-D0wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Tasty food from Friendship Trays and Nova Bakery. Nice spot to eat at after shopping at the HFH Restore, or to meet up with friends for coffee in the loft, or to work remotely as there is free WiFi. You can donate books to Julia's or other items to the Restore. Cool vibe to browse through books and other types of media."
+        },
+        {
+            "review_datetime_utc": "07/18/2018 05:12:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndzQzVURBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndzQzVURBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDgw43UDA%7CCgsIvJi72gUQwPb3XQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place. Food is not made there, drinks are. Has decent amount of used books, at great prices. It's connected to habitat for humanity."
+        },
+        {
+            "review_datetime_utc": "07/11/2018 14:27:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdmE2OUNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdmE2OUNBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICAva69CA%7CCgwI16eY2gUQwMTcqwM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "The espresso was watered down."
+        },
+        {
+            "review_datetime_utc": "06/27/2018 14:37:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNnJuc1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNnJuc1RBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICA6rnsTA%7CCgsIpMLO2QUQgNmfTQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious coffee and a book store to boot!"
+        },
+        {
+            "review_datetime_utc": "06/25/2018 02:59:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNTliYnlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNTliYnlRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg59bbyQE%7CCgwIh7XB2QUQgKzGwgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, great prices, super staff!!"
+        },
+        {
+            "review_datetime_utc": "06/23/2018 16:17:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURneXFMcmdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURneXFMcmdnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDgyqLrggE%7CCgwIjOW52QUQwICpjwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is an awesome book shop! They have a fun and varied selection and nothing is too expensive. They also sell some dvds. I didnt try any food but the coffee was top notch. Decorations also fun with comfy chairs and couches. The only issue was a very load truck from the restore interrupted my work, so bring some headphones if you need to focus. That being said the proceeds go to a great cause so definitely stop by."
+        },
+        {
+            "review_datetime_utc": "06/17/2018 01:25:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRa2VXNlZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRa2VXNlZ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQkeW6Vw%7CCgwI7_CW2QUQwMX47QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Are wonderful a little Nook to find yourself with a great cup of coffee and a book."
+        },
+        {
+            "review_datetime_utc": "05/30/2018 21:23:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOTZHbk93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOTZHbk93EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg96GnOw%7CCgwI2Ky82AUQgKH5zgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place for shopping for books. You can get coffee there, and I love the free Wi-Fi, you can read books, and I think you can buy them."
+        },
+        {
+            "review_datetime_utc": "05/25/2018 16:12:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnOE0zUEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnOE0zUEx3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDg8M3PLw%7CCgsI6Oug2AUQwOWoGA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely environment, great coffee!"
+        },
+        {
+            "review_datetime_utc": "04/20/2018 18:52:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3a3REY29nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3a3REY29nRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICwktDcogE%7CCgwI1-3o1gUQgPjOowM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice and quiet place!! Good coffee and interesting titles"
+        },
+        {
+            "review_datetime_utc": "04/18/2018 01:15:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBZ05QYy1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBZ05QYy1nRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDAgNPc-gE%7CCgwIwbja1gUQgNfnyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a coffee shop in a cozy nook of a bookstore in a corner of a large warehouse of household items for sale to benefit Habitat for Humanity. If that appeals then you're in the right place - good coffee (and also tasty sandwiches) in a place dedicated to doing good for others. I find it delightful."
+        },
+        {
+            "review_datetime_utc": "03/27/2018 21:36:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBM3JDendnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBM3JDendnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICA3rCzwgE%7CCgsI1PLq1QUQgL_WBg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection"
+        },
+        {
+            "review_datetime_utc": "02/19/2018 21:50:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNReWZMMGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNReWZMMGZ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQyfL0fw%7CCgwIo42t1AUQwNijoAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, great books, perfect place to spend an evening reading."
+        },
+        {
+            "review_datetime_utc": "01/12/2018 19:07:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNEpYWTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNEpYWTNBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg4JXY3AE%7CCgwIh4_k0gUQgM22lwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great staff and wonderful eclectic book selections. Nice.spot to hang out with friends."
+        },
+        {
+            "review_datetime_utc": "01/11/2018 14:10:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnX2NYOFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnX2NYOFhREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg_cX8XQ%7CCgwI4-Dd0gUQwNa-uQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this cozy place and they make a good latte."
+        },
+        {
+            "review_datetime_utc": "12/19/2017 07:39:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3M3BQUGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3M3BQUGJnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICw3pPPbg%7CCgwIqoTj0QUQwNy3kQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good place to read and have a coffee ."
+        },
+        {
+            "review_datetime_utc": "12/02/2017 15:14:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRdWZxaVZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRdWZxaVZ3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQufqiVw%7CCgwIy4aL0QUQwNzJhQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place"
+        },
+        {
+            "review_datetime_utc": "11/10/2017 16:54:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMThYSTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMThYSTNBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDg18XI3AE%7CCgwI0bOX0AUQwPvU8wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very chill"
+        },
+        {
+            "review_datetime_utc": "10/09/2017 13:36:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cXFEcjJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cXFEcjJnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICwqqDr2gE%7CCgwIz_btzgUQwILzhwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Laid back, comfy, good book selection. Children's books are very inexpensive, the coffee is good, and proceeds go to Habitat for Humanity."
+        },
+        {
+            "review_datetime_utc": "08/22/2017 14:29:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdGU2X0xnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdGU2X0xnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDQte6_Lg%7CCgwI1v_wzAUQwN6KhAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "As a Real Estate Developer the Restore is like a second home to me. When I buy houses in Charlotte near this location I am thrilled i can give back not only materials but by getting a killer cup of Java. Def a hip atmosphere with quirky-cool- things all over the shop!"
+        },
+        {
+            "review_datetime_utc": "06/24/2017 14:58:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMHQ2dFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMHQ2dFhREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg0t6tXQ%7CCgsI__u5ygUQgNHKCA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great staff, great coffee, great books and great cause (Habitat for Humanity)"
+        },
+        {
+            "review_datetime_utc": "06/14/2017 18:29:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNna3VXTE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNna3VXTE9nEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICgkuWLOg%7CCgsI7ICGygUQwJ-rAw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great!  Great Environment"
+        },
+        {
+            "review_datetime_utc": "05/06/2017 16:43:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNneVBPR0FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNneVBPR0FnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICgyPOGAg%7CCgsIuvq3yAUQwPSkaw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very good coffee. Barristers need to work on people skills"
+        },
+        {
+            "review_datetime_utc": "03/25/2017 21:57:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnaE9HRERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnaE9HRERBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDghOGDDA%7CCgsI4s_bxgUQgLGRZA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cool quiet spot to have tea or coffee and read a book. Wish they had more pastries and sandwiches, but other than that, I love it, I go often."
+        },
+        {
+            "review_datetime_utc": "03/04/2017 19:37:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMi1QZEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMi1QZEVnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICg2-PdEg%7CCgwI3K7sxQUQwLLfrwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Julia's is an excellent place to study, read, relax. They have plenty of seats and a quiet upstairs area. Their coffee is absolutely delicious and they have plenty of food (including vegetarian options) and pastries. If you get tired of working , you can peruse their books and records or head to the habitat store and buy things. Highly recommend if you need a quiet place to study."
+        },
+        {
+            "review_datetime_utc": "02/05/2017 18:12:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnX3NqVlN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnX3NqVlN3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDg_sjVSw%7CCgwIj9bdxAUQwK2CmgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a neat coffee shop connected with Habitat for Humanity."
+        },
+        {
+            "review_datetime_utc": "01/27/2017 15:11:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBazRENllBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBazRENllBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICAk4D6YA%7CCgsIp8atxAUQgJ3Kbw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very unique experience. Great coffee. Great books. Great decor. Best of all, great staff."
+        },
+        {
+            "review_datetime_utc": "01/15/2017 12:40:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBdzZ6dXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBdzZ6dXZnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICAw6zuvgE%7CCgsIu9vtwwUQwNyuFw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a quiet spot where one can eat prepared meals, take a break or read a book."
+        },
+        {
+            "review_datetime_utc": "12/15/2016 11:43:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3ck92Y0JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3ck92Y0JREAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICwrOvcBQ%7CCgsI3IPKwgUQgPPfGQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere and fantastic prices on used books"
+        },
+        {
+            "review_datetime_utc": "12/14/2016 23:38:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcExYYzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcExYYzhnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDApLXc8gE%7CCgwI-6_HwgUQwMuDugM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "It has a lot of books movies DVDs CDs it is very good and convenient and you can get coffee and donuts while you're waiting if you want two."
+        },
+        {
+            "review_datetime_utc": "07/02/2016 15:50:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneDhlVnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneDhlVnFnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICgx8eVqgE%7CCgsIqsXfuwUQgPK6XQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I found my study spot! It was a little noisy for my taste..but I did choose to come on a Saturday morning. Next time I'll try for mid week. I love it, and coffee was excellent"
+        },
+        {
+            "review_datetime_utc": "06/25/2016 13:07:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRNGFDbThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRNGFDbThnRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQ4aCm8gE%7CCgwIl4S6uwUQwOGUpwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best used bookstore in Charlotte that also serves a special cause: Habitat for Humanity. I live the coffee, foods, and the WiFi is perfect.  Great place to work and the prices are spot on."
+        },
+        {
+            "review_datetime_utc": "06/20/2016 00:30:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRenVpalpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRenVpalpnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQzuijZg%7CCgwIsfKcuwUQgM2_kQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Dirt-cheap books with a clever organization system - chalkboards which move on the shelves as the selection does. I got three sci-fi books - a hardback and two paperbacks - for just over four dollars, and I got a good cup of coffee while I read in a comfortable setting.  Hidden gem. Definitely check it out."
+        },
+        {
+            "review_datetime_utc": "06/16/2016 20:03:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbW9pQXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbW9pQXR3RRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDQmoiAtwE%7CCgwI94uMuwUQgKeEmwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great lattes, people and used books galore. A real \"feel right\" place. I love this gem in Charlotte NC ."
+        },
+        {
+            "review_datetime_utc": "06/15/2016 19:16:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbU9mZnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbU9mZnhBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDgmOffxAE%7CCgwIktOGuwUQgIL32gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, good prices, free wifi, friendly staff, awesome selection of used books that you can read there or buy and take home with you. All around a great place to spend some time reading, getting work done, or caffeine up while you shop at the ReStore."
+        },
+        {
+            "review_datetime_utc": "06/07/2016 00:42:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRajdXS0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRajdXS0x3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICQj7WKLw%7CCgwIhrHYugUQgIG3sAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this book store! The prices are great, and they have a great selection! I highly recommend."
+        },
+        {
+            "review_datetime_utc": "02/11/2016 23:14:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURna3M2Vlh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURna3M2Vlh3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDgks6VXw%7CCgsI3qv0tQUQwJTeDw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I walked in and was greeted with a smile,  I received beautiful information and my hazelnut mocha latte was amazing!  Thanks Steve for your recommendation!"
+        },
+        {
+            "review_datetime_utc": "01/18/2016 13:32:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBMTlQY1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBMTlQY1lnEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDA19PcYg%7CCgsI5dLztAUQwN3cTQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Relaxing and engaging with great coffee, books and people.  A great place to sit a spell."
+        },
+        {
+            "review_datetime_utc": "07/02/2015 17:12:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRX0xuWlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRX0xuWlR3EAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDQ_LnZTw%7CCgwIl-LVrAUQgJWHnwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've been visiting Julia's for years and I love it. It's comfortable, full of well-priced books and the baristas are THE BEST! I consider them my friends and that's not something you can find anywhere. The coffee is delicious, I get to bring home a bunch of books and peruse the Habitat for Humanity store as well. I LOVE IT THERE :)"
+        }
+    ],
+    "total_reviews_count": 355
+}

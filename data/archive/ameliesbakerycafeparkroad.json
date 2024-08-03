@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJvVxqVlSeVogRz786_h7uyiQ",
+    "place_name": "Amelie's Bakery & Café | Park Road",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/02/2022 18:23:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtOGNyNkNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtOGNyNkNREAE!2m1!1s0x0:0x24caee1efe3abfcf!3m1!1s2@1:CIHM0ogKEICAgID-8cr6CQ%7CCgwIhYWpnAYQwJyFigI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really enjoyed stopping by here with my friend. The baked goods and sandwiches are fairly priced for the area as well as very tasty. The service is fast and the vibe is kitschy. I like that no one tries to hurry you out and you can definitely sit here to chat for a while or potentially cowork."
+        }
+    ],
+    "total_reviews_count": 837
+}

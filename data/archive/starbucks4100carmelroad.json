@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJD19aqO-dVogRqdaGDjoTBHM",
+    "place_name": "Starbucks | 4100 Carmel Road",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "12/05/2022 05:50:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtcGN2dzFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtcGN2dzFRRRAB!2m1!1s0x0:0x7304133a0e86d6a9!3m1!1s2@1:CIHM0ogKEICAgID-pcvw1QE%7CCgwIkY22nAYQ-LTmrAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "awesome place"
+        }
+    ],
+    "total_reviews_count": 134
+}

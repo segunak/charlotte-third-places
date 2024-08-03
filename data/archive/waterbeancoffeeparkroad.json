@@ -1,0 +1,392 @@
+{
+    "place_id": "ChIJMQ7XOtGfVogRAHRBzAYqn1U",
+    "place_name": "Waterbean Coffee | Park Road",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "01/05/2023 03:34:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCbThuQmxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCbThuQmxBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICBm8nBlAE%7CCgsIwYrZnQYQ0InnCA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cute spot and friendly baristas. They're also dog friendly and will give your furry friend a pup cup 😊"
+        },
+        {
+            "review_datetime_utc": "12/03/2022 20:49:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtbWRua1dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtbWRua1dREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgID-mdnkWQ%7CCgwI5eyunAYQiPjArAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice and cozy coffee spot. Chase knows his beans."
+        },
+        {
+            "review_datetime_utc": "09/22/2022 17:42:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlM29XNl9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlM29XNl9nRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICe3oW6_gE%7CCgwIhr2ymQYQkNP0tAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "You have got to try a cold foam coffee here, dine-in!"
+        },
+        {
+            "review_datetime_utc": "09/11/2022 17:46:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbXZIdlhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbXZIdlhBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICemvHvXA%7CCgwI-L34mAYQ-Oyo-AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great vibes, best coffee, service exceeded my expectations 👏🤍"
+        },
+        {
+            "review_datetime_utc": "07/21/2022 15:35:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1NVB2TUVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1NVB2TUVREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICu5PvMEQ%7CCgwIxOTllgYQyNyb7wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Service is average, but my latte is always delicious (although expensive)"
+        },
+        {
+            "review_datetime_utc": "07/19/2022 21:26:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1eUl1VWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1eUl1VWlBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICuyIuUiAE%7CCgwIosPclgYQ-Ka1swI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great drink options and good coffee"
+        },
+        {
+            "review_datetime_utc": "05/26/2022 17:54:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyaDgyTml3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyaDgyTml3RRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgID2h82NiwE%7CCgwIwf2-lAYQ4I7-vQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lot's of roasted coffee beans to choose from . A unique tasting espresso!! Nice place to sit in or outside...."
+        },
+        {
+            "review_datetime_utc": "05/13/2022 05:51:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyaHFQTFNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyaHFQTFNnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgID2hqPLSg%7CCgwI3-P3kwYQoMHSygI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love love love this coffee. Yall always have the cutest staff! This is my fav coffee place!"
+        },
+        {
+            "review_datetime_utc": "04/22/2022 16:47:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyd1puTzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyd1puTzVBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIC2wZnO5AE%7CCgwItriLkwYQuPPW2wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So deliciously hip and intimate. Vietnamese coffee is my new favorite thing."
+        },
+        {
+            "review_datetime_utc": "03/29/2022 15:09:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXaGMyc01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXaGMyc01BEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDWhc2sMA%7CCgwImsKMkgYQwNbOhwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The BEST cold brew / iced coffee. Great work location with lots of natural light. Friendly staff. Yummy snacks."
+        },
+        {
+            "review_datetime_utc": "03/25/2022 16:44:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXX3BLVldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXX3BLVldBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDW_pKVWA%7CCgwI2eL3kQYQqPKJgwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good quality coffee. Staff is always friendly and happy to answer questions"
+        },
+        {
+            "review_datetime_utc": "03/22/2022 14:49:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXeHBUT01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXeHBUT01BEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDWxpTOMA%7CCgwIisTnkQYQiJPZpwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee"
+        },
+        {
+            "review_datetime_utc": "03/14/2022 15:59:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXbUpfaWd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXbUpfaWd3RRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDWmJ_igwE%7CCgsI3sy9kQYQ0LHHKg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee shop in Charlotte, no matter which one you go to. Baristas are very nice! The entire shop was clean & well lit!"
+        },
+        {
+            "review_datetime_utc": "03/03/2022 20:47:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXamViZ3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXamViZ3RBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICWjebgtAE%7CCgwI8NKEkQYQkOmJ8QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Waterbean! The chai is always a favorite."
+        },
+        {
+            "review_datetime_utc": "03/01/2022 16:12:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXM1B1N1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXM1B1N1VBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICW3Pu7UA%7CCgwIhYz5kAYQyLXq1gM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I don't know what has gone wrong with this place , it used to be good but now completely sucks. The coffee and the treatment of customers is equally bad. There was a time I loved going here but today ( Sunday to be precise ) was worst had to wait for 45 mins to get 2 coffees , others doing the same people waiting … and guess what it is not a $1 coffee it's expensive …. And when you get really bad bad coffee you can't really do much than  hope Waterbean takes notice of their outlets and try to fix it. It would be great if they choose not losing customers… I'm at least done with this location."
+        },
+        {
+            "review_datetime_utc": "02/28/2022 15:59:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXZ2JpUUVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXZ2JpUUVREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICWgbiQEQ%7CCgwI3-LzkAYQsJumrgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service and coffee tastes very good. I ordered caramel Latte and it was not overwhelmingly sweet. Small place but very cute and plenty of tables to enjoy inside."
+        },
+        {
+            "review_datetime_utc": "02/13/2022 02:12:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtei1HX1NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtei1HX1NREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDmz-G_SQ%7CCgwI-dGhkAYQoNTa5AE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Expensive"
+        },
+        {
+            "review_datetime_utc": "01/06/2022 23:36:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtdmFmdDhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtdmFmdDhBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICmvaft8AE%7CCgwI-PndjgYQkMaq3wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Probably one of the best coffee stores out there. Plus I love it because they make Vietnamese Coffee."
+        },
+        {
+            "review_datetime_utc": "12/25/2021 03:16:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtNnVxZzZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtNnVxZzZBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICm6uqg6AE%7CCgwInJqajgYQoLqk6wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So impressed that they gave their proceeds for Christmas Eve to a fallen CMPD officer. The creme brulee iced coffee was the bomb!"
+        },
+        {
+            "review_datetime_utc": "12/14/2021 21:47:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtd0xqdzlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtd0xqdzlRRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICmwLjw9QE%7CCgwI6qHkjQYQoNunkwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Waterbean is a clean & quiet place to get some work done on your laptop, with great, reasonably priced coffee and baked snacks. It's located in an intimate space with a minimalist feel and modern ambient music. In the late afternoon,  be sure to dress in layers as the temperature fluctuates when the sun peeks through the huge windows. It's easy to access the free Wi-Fi which is fast enough for most any task you might have. Thanks to Crystal who is a friendly and accommodating barista!"
+        },
+        {
+            "review_datetime_utc": "11/21/2021 20:33:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHX01Tekp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHX01Tekp3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDG_MSzJw%7CCgwIqtrqjAYQqLSWyAI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "For a coffee shop they don't have outlets to plug into. It's like they really are saying.... not staying here long. Come on....your a coffee shop 🤦🏼‍♀️"
+        },
+        {
+            "review_datetime_utc": "11/08/2021 14:41:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHay1TUVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHay1TUVpBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICGk-SQZA%7CCgwIsu6kjAYQ2Nu_0AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent latte thanks for having vegan gluten free options"
+        },
+        {
+            "review_datetime_utc": "11/07/2021 19:49:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHZzlfMUV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHZzlfMUV3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICGg9_1Ew%7CCgwI0dugjAYQgL3X7wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Ill keep coming back here! The coffee has been consistently great every time, the service has been impeccable and welcoming,  the macarons have never disappointed either. Be warned if you are purchasing beans here though, their espresso blend is very light-roast, which if you have a home machine and don't take it with milk, may be a little too far on the acidic side."
+        },
+        {
+            "review_datetime_utc": "11/06/2021 21:54:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHM2R6ejlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHM2R6ejlnRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICG3dzz9gE%7CCgwIp_ObjAYQ0NuC4AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Waterbean is a great spot for a hot cappuccino, which is just what I was going there for, and the coffee is served hot, just like it should be. The staff  is incredibly friendly, and the breakfast sandwiches I've eaten there were tasty. I'll be back!"
+        },
+        {
+            "review_datetime_utc": "10/17/2021 23:41:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHME9mRkp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHME9mRkp3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICG0OfFJw%7CCgsImumyiwYQsMzrXQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing coffee, great sandwiches"
+        },
+        {
+            "review_datetime_utc": "10/08/2021 05:47:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2bmVEd0tBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2bmVEd0tBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgID6neDwKA%7CCgwI8rb_igYQgPSdmAM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Great coffee, I've had it multiple times. I wish I wasn't treated differently than their main customer base. It's as if the staff is afraid of me every time I visit. Will probably not return to this location."
+        },
+        {
+            "review_datetime_utc": "09/04/2021 14:18:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2enNleEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2enNleEl3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIC6zsexIw%7CCgsIyIDOiQYQ2PfnDg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Interesting building layout. I enjoyed walking in and grazing up at the high ceiling, until I saw pic related. Further, being suggested to not get certain orders, because \"there are a lot of people ahead of you\" isn't exactly a good sign. We took their advice and ordered iced coffee (apparently \"famous\") but it still took over 15 minutes to be made. Not worth the wait. Finally, they sell macarons. The options are $2.35 individually, or, \"to save a few bucks,\" a box of 5 for $12.50. I'll let you use your phone calculator to figure out the savings. TL;DR Starbucks is 300 meters up the street. EDIT: Spoke to my wife, the wait was 20-25 minutes, not 15. My bad."
+        },
+        {
+            "review_datetime_utc": "08/15/2021 20:50:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhNUtXSkh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhNUtXSkh3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDa5KWJHw%7CCgwIjvzliAYQiMvfgwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great customer service. Great coffee..just loved the ambience."
+        },
+        {
+            "review_datetime_utc": "08/10/2021 18:29:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhcF9XZ3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhcF9XZ3RBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICap_WgtAE%7CCgsIlYvLiAYQgPv1cg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Over extracted machiato."
+        },
+        {
+            "review_datetime_utc": "07/06/2021 15:14:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxNnBPZWhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNnBPZWhnRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDq6pOehgE%7CCgwI4-aRhwYQwKyuvQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I spoke with Tony the Owner after I had a different experience at this location but his follow up with me was absolutely wonderful I actually enjoyed talking to him and he listened to my issue and let me know he would follow up to make sure it doesn't happen again I will definitely go back and give this place several more visits after speaking with him."
+        },
+        {
+            "review_datetime_utc": "06/14/2021 15:45:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxOVlYX3dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxOVlYX3dRRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICq9YX_wQE%7CCgwIsPOdhgYQ4Lq9sgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very good coffee that is not over roasted!  Excellent food and good internet connection. I also liked the soothing but high energy background music."
+        },
+        {
+            "review_datetime_utc": "05/14/2021 14:29:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLcFptTmVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLcFptTmVnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDKpZmNeg%7CCgwIupL6hAYQoK-JkQI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I asked for a medium cappuccino, and was told they only make small cappuccinos...and they mean SMALL. It was an 8 oz cup. And why? The size is affected by the amount of milk, not espresso shots. If I want a 12 or 16 oz capp, why would you not provide that?  The staff was unfriendly as well.  First and last visit for me."
+        },
+        {
+            "review_datetime_utc": "04/09/2021 21:30:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLaVp1NmpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLaVp1NmpBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICKiZu6jAE%7CCgsI2Y7DgwYQoJuoAQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Multiple espresso options. Quick service. This is a great spot!!"
+        },
+        {
+            "review_datetime_utc": "04/03/2021 20:19:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLcHZuSThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLcHZuSThRRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICKpvnI8QE%7CCgwIxJujgwYQsKX41wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Famous iced coffee didnt taste so famous until I added more sugar to it, then it was the bomb. Its a little pricey, but it was good."
+        },
+        {
+            "review_datetime_utc": "03/23/2021 21:42:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLZ01MN1pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLZ01MN1pnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICKgML7Zg%7CCgwI1MHpggYQiJ7fiAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best one to go to in town."
+        },
+        {
+            "review_datetime_utc": "02/28/2021 00:58:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5M0p2ZmFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5M0p2ZmFREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDy3JvfaQ%7CCgsIxtXrgQYQuNevBQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Decent neighborhood coffee shop but nothing special."
+        },
+        {
+            "review_datetime_utc": "02/16/2021 13:26:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5bDZQOWx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5bDZQOWx3RRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICyl6P9lwE%7CCgwIhpCvgQYQsMG6sQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice friendly people, great coffee."
+        },
+        {
+            "review_datetime_utc": "01/07/2021 11:39:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTNDhDaG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTNDhDaG1nRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDS48ChmgE%7CCgwI9eXb_wUQkJWO0gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Vietnamese coffee is the best"
+        },
+        {
+            "review_datetime_utc": "12/06/2020 15:08:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpc2NHUjFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpc2NHUjFnRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDiscGR1gE%7CCgwI6eez_gUQkMWuwgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good espresso drinks"
+        },
+        {
+            "review_datetime_utc": "11/18/2020 22:02:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpajZpRzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpajZpRzNnRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICij6iG3gE%7CCgwIkrTW_QUQsI-m1gM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place to study as a student, and good coffee. My only suggestion would be for the owners to install a shade on the windows that can be pulled down during sunny afternoons. There is TONS of natural light that comes in, but on a bright day it can be hard to work with a glare in your face. Other than that, great."
+        },
+        {
+            "review_datetime_utc": "11/08/2020 17:55:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpaGRhZTdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaGRhZTdBRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICihdae7AE%7CCgwImuKg_QUQ-Oq8tAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee was delicious! Maybe just add some umbrellas outside."
+        },
+        {
+            "review_datetime_utc": "11/05/2020 22:53:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpa2VYNVdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpa2VYNVdnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICikeX5Wg%7CCgwIzISS_QUQ6KqymgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great Latte, Great Customer Service and clean bathroom! Excellent place to sit outside and work!"
+        },
+        {
+            "review_datetime_utc": "10/11/2020 20:58:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDeTk3ZHB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDeTk3ZHB3RRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDCy97dpwE%7CCgwI_-ON_AUQsPDDkAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved the coffee. Their agreement with the Novel makes the coffee affordable"
+        },
+        {
+            "review_datetime_utc": "10/06/2020 16:36:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDamV1SWN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDamV1SWN3EAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDCjeuIcw%7CCgwI9bny-wUQkIzsigE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "I bought a 16 oz iced coffee. It was $4, so for me it's a bit expensive for a black coffee. I'll probably go back and try their pastries if I'm in the area."
+        },
+        {
+            "review_datetime_utc": "10/01/2020 23:13:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDaWRHTDFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDaWRHTDFRRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDCidGL1QE%7CCgwIrMXZ-wUQgP680gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The coffee is so good it ended my 4 yr addiction with Starbucks. #movingon #Byefelicia"
+        },
+        {
+            "review_datetime_utc": "09/29/2020 19:39:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDd2RySXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDd2RySXFRRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDCwdrIqQE%7CCgwI-JrO-wUQwIzFqwM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "I experienced a very rude and inconsiderate barista while there with my wife.  To be fair ... the coffee, food, location, and ambience are all nice.  Despite that though, we won't be back again any time soon based on that experience.  I'd rather go somewhere where you're treated with decency and respect ... especially these days."
+        },
+        {
+            "review_datetime_utc": "08/21/2020 21:04:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDdHBYNFNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDdHBYNFNREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICCtpX4SQ%7CCgsI0-2A-gUQuLKdHQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love a good aesthetically pleasing cafe!  Cute, clean location. Ordered the Volcano  & it was a bit sweet but strong! Would recommend if you're in the mood for a mix of dark roast & condensed milk.  SN: There is seating available on the outside & inside. Parking is available in the parking garage next to it."
+        },
+        {
+            "review_datetime_utc": "08/13/2020 19:00:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDOU9PY2JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDOU9PY2JnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICC9OOcbg%7CCgwIx5vW-QUQwJCq_AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVE the s'mores latte! Such a cute place and really good coffee. So glad that Falon, Brandon, and Michelle from Novel told me about this place. Plus they have amazing teas for sale."
+        },
+        {
+            "review_datetime_utc": "08/10/2020 14:40:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDMktibG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDMktibG1nRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICC2KblmgE%7CCgwI3bjF-QUQ-OC48QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I usually stop by here when walking my dog -- love the coffee and great customer service.  Wish they had more varieties of coffee and opened early in the morning."
+        },
+        {
+            "review_datetime_utc": "08/09/2020 20:44:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDNktxVm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDNktxVm5RRRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICC6KqVnQE%7CCgsItcDB-QUQ8PDGCw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great lattes! Their plain iced coffee is very bitter!"
+        },
+        {
+            "review_datetime_utc": "08/08/2020 16:51:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDOE1uWS13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDOE1uWS13RRAB!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICC8MnY-wE%7CCgwIjrC7-QUQyI-kwAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I live right across the street and love coming by for coffee! their Ice Coffee is not something to mess with- Its my fave and gets me going on sluggish days!"
+        },
+        {
+            "review_datetime_utc": "07/15/2020 03:00:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4cTRLbkFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4cTRLbkFnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIC8q4KnAg%7CCgwIv-K5-AUQuK-Q8gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice coffee shop. Clean. Love the Vietnamese coffee."
+        },
+        {
+            "review_datetime_utc": "07/06/2020 15:58:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4dHRpNkhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dHRpNkhBEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIC8tti6HA%7CCgwIk5SN-AUQ-IK92wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Visited this cafe on a recent trip to Charlotte. Ordered a iced caramel latte. It was one of the best I have ever tasted! Awesome atmosphere too! I will definitely visit again the next time I am in the area."
+        },
+        {
+            "review_datetime_utc": "05/31/2020 13:16:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURjZ3VxNUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjZ3VxNUlREAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgIDcguq5IQ%7CCgsIu9zO9gUQ2MXEOw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Stopped by here the other day to check it out. This is one of my new favorite spots. The espresso options are super unique and this is a REAL coffee shop. Not to mention, the number of teas are amazing. Cool atmosphere and friendly staff. Definitely will return."
+        },
+        {
+            "review_datetime_utc": "03/16/2020 13:57:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjLWFiQlRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjLWFiQlRnEAE!2m1!1s0x0:0x559f2a06cc417400!3m1!1s2@1:CIHM0ogKEICAgICc-abBTg%7CCgwI1Iu-8wUQuLzB_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee on Park Rd! Multiple espresso and brew bar options... Tasty pastries and croissants. Fascinating service and baristas. I hear they will be getting beer and wine at some point!"
+        }
+    ],
+    "total_reviews_count": 84
+}

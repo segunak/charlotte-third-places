@@ -1,0 +1,14 @@
+{
+    "place_id": "ChIJdYnY8hefVogRNec3TcDvneQ",
+    "place_name": "Charlotte Mecklenburg Library | South Boulevard",
+    "reviews_data": [
+        {
+            "review_datetime_utc": "08/18/2022 21:01:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1dXN6RmFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1dXN6RmFREAE!2m1!1s0x0:0xe49defc04d37e735!3m1!1s2@1:CIHM0ogKEICAgIDuuszFaQ%7CCgwIpdH6lwYQkPaPuQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very clean, a lot of resources and information."
+        }
+    ],
+    "total_reviews_count": 78
+}
