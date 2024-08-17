@@ -28,7 +28,6 @@ Gemfile.lock
 
 # Environment configuration files
 *.env
-.vscode
 
 # Dependency directories
 node_modules/
@@ -75,3 +74,7 @@ typings/
 
 # Windows files
 Thumbs.db
+
+.python_packages
+__pycache__
+.venv

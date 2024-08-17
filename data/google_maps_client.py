@@ -243,7 +243,7 @@ class GoogleMapsClient:
         check_place_id = self.place_details_new(place_id, ['id'])
         return 'id' in check_place_id if check_place_id else False
 
-    def place_id_handler(self, place_name, place_fields) -> str:
+    def place_id_handler(self, place_name, place_id) -> str:
         """
         Handle place_id interactions. Place Id's are Google's unique identifier for a place. 
         The database stores the place_id for every place, but they can change, which means 
@@ -251,13 +251,14 @@ class GoogleMapsClient:
         confirms the validity of an existing place_id and returns it, or tries to find a 
         place_id and return it. Either way, after calling this, you'll either have a valid 
         place_id or nothing at all, and can take action as needed.
+        
         https://developers.google.com/maps/documentation/places/web-service/place-id
         """
-        # Retrieve the place_id from place_fields if it exists
-        place_id = place_fields.get('Google Maps Place Id', '')
-
         # Validate the place_id if it exists; otherwise, find a new one
-        return place_id if place_id and self.validate_place_id(place_id) else self.find_place_id(place_name)
+        if place_id and self.validate_place_id(place_id):
+            return place_id
+        else:
+            return self.find_place_id(place_name)
 
     def is_place_operational(self, place_id: str) -> bool:
         """

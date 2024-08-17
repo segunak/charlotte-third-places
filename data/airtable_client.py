@@ -53,7 +53,7 @@ class AirtableClient:
         # Log that setup is complete
         logging.info("Logging setup complete - logging to console and file.")
 
-    def update_place_record(self, record_id: str, field_to_update: str, field_value, overwrite: bool) -> bool:
+    def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> bool:
         """
         Attempts to update a record in the Airtable database based on given parameters. 
         The function considers whether the field should be overwritten if it already exists.
@@ -61,7 +61,7 @@ class AirtableClient:
         Args:
             record_id (str): The unique identifier for the record.
             field_to_update (str): The field within the record to update.
-            field_value: The new value for the specified field.
+            update_value: The new value for the specified field.
             overwrite (bool): Whether to overwrite the existing value if the field is not empty.
 
         Returns:
@@ -73,12 +73,12 @@ class AirtableClient:
             current_value = record['fields'].get(field_to_update)
 
             # Determine if update should proceed
-            if current_value is None or (overwrite and field_value is not None and current_value != field_value):
-                self.charlotte_third_places.update(record_id, {field_to_update: field_value})
-                logging.info(f'Field update PROCESSED for {field_to_update} at place {place_name} with new value: {field_value}.\n')
+            if current_value is None or (overwrite and update_value is not None and current_value != update_value):
+                self.charlotte_third_places.update(record_id, {field_to_update: update_value})
+                logging.info(f'Field update PROCESSED for {field_to_update} at place {place_name} with new value: {update_value}.\n')
                 return True
             else:
-                logging.info(f'Field update SKIPPED for field {field_to_update} at place {place_name}. The existing value of {current_value} was NOT overwritten with the provided value of {field_value}.\n')
+                logging.info(f'Field update SKIPPED for field {field_to_update} at place {place_name}. The existing value of {current_value} was NOT overwritten with the provided value of {update_value}.\n')
                 return False
         except KeyError as e:
             logging.error(f"Missing expected field in the record. {e}")
@@ -89,20 +89,16 @@ class AirtableClient:
   
     def get_base_url(self, url: str) -> str:
         """
-        Extracts and returns the base URL (scheme, domain, and path) from a full URL. If the input URL is None, returns None.
+        Extracts and returns the base URL (scheme, domain, and path) from a full URL.
 
         Args:
             url (str): The full URL from which to extract the base.
 
         Returns:
-            str: The base URL or None if the input URL is None.
+            str: The base URL.
         """
-        if url is None:
-            return None
-
         parsed_url = urlparse(url)
-        base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
-        return base_url.strip()
+        return f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}".strip()
 
     def get_parking_status(self, place_details_response):
         """
@@ -168,20 +164,20 @@ class AirtableClient:
 
         It logs an update for each record and a warning if unable to fetch data for a place.
         """
-        # Iterate over all stored places
         for third_place in self.all_third_places:
             # Retrieve place name and record ID from Airtable data
             place_name = third_place['fields'].get('Place', 'Unknown Place')
             record_id = third_place['id']
-
+            place_id = third_place['Google Maps Place Id']
             # Fetch the Google Maps place ID using a helper method
-            place_id = self.google_maps_client.place_id_handler(place_name, third_place['fields'])
+            place_id = self.google_maps_client.place_id_handler(place_name, place_id)
             
             # Fetch additional details from Google Maps using the place ID
             place_details_response = self.google_maps_client.place_details_new(
                 place_id, [
                     'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
-                    'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions'
+                    'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
+                    'primaryType', 'outdoorSeating'
                 ])
 
             # Check if the response was successful
@@ -221,55 +217,36 @@ class AirtableClient:
 
     def get_place_photos(self, overwrite_cover_photo=False):
         """
-        Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API. 
-        It selects the first photo returned by the API as the cover photo and saves it both locally and as an attachment in Airtable.
-
-        The process involves:
-        1. Fetching place details to get photo references.
-        2. Fetching each photo using its photo reference.
-        3. Saving the first photo as the cover photo and updating Airtable records accordingly.
-        
-        Photos are stored in a local directory, and the function ensures no more than 10 photos are stored per place.
+        Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API. It selects the first photo returned by the API as the cover photo and saves it locally.
         """
         for third_place in self.all_third_places:
             record_id = third_place['id']
+            place_id = third_place['Google Maps Place Id']
             place_name = third_place['fields'].get('Place', 'Unknown Place')
-            place_id = self.google_maps_client.place_id_handler(place_name, third_place['fields'])
+            place_id = self.google_maps_client.place_id_handler(place_name, place_id)
+            place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
 
-            photo_folder = f'./data/place_photos/{place_id}'
-            os.makedirs(photo_folder, exist_ok=True)  # Ensure the directory exists without raising an error if it already exists
-            photo_folder_contents = os.listdir(photo_folder)
-
-            # Limit to 10 photos as per Google's API documentation
-            if len(photo_folder_contents) < 10:
-                place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
-
-                if 'photos' in place_details_response:
-                    first_photo = True
-                    for i, photo in enumerate(place_details_response['photos']):
-                        photo_name = photo['name']
-                        place_photos_response = self.google_maps_client.place_photo_new(photo_name, '4800', '4800')
-
-                        if place_photos_response:
-                            photo_file_name = f'{place_id}-{i}.jpg'
-                            photo_url = place_photos_response['photoUri']
-
-                            if first_photo:
-                                self.update_place_record(record_id, 'Cover Photo URL', photo_url, True)
-                                first_photo = False  # Ensure only the first photo is set as cover
-
-                            self.save_photo_locally(photo_folder, photo_file_name, photo_url)
-                        else:
-                            logging.warning(f'Unable to retrieve photos for {place_name}.')
+            if 'photos' in place_details_response:
+                # Use the first photo as the cover
+                photo_name = place_details_response['photos'][0]['name']
+                place_photos_response = self.google_maps_client.place_photo_new(photo_name, '4800', '4800')
+                modified_place_name = place_name.strip().lower().replace(" ", "-")
+                
+                if place_photos_response:
+                    photo_file_name = f'{modified_place_name}-{place_id}-cover.jpg'
+                    photo_url = place_photos_response['photoUri']      
+                    self.update_place_record(record_id, 'Cover Photo URL', photo_url, True)
+                    self.save_photo_locally( f'./photos/{place_id}', photo_file_name, photo_url)
                 else:
-                    logging.warning(f'No photos available for {place_name}.')
+                    logging.warning(f'Unable to retrieve photos for {place_name}.')
             else:
-                logging.info(f'Maximum photo limit reached for {place_name}.')
+                logging.warning(f'No photos available for {place_name}.')
 
     def save_photo_locally(self, photo_folder, photo_name, photo_url):
         """
         Helper function to save a photo locally in the specified directory.
         """
+        os.makedirs(photo_folder, exist_ok=True)
         with open(f'{photo_folder}/{photo_name}', 'wb') as photo_handler:
             photo_data = requests.get(photo_url).content
             photo_handler.write(photo_data)
@@ -306,7 +283,14 @@ class AirtableClient:
     def get_places_missing_field(self, field_to_check, third_place_records):
         """For a collection of third places returned by calling pyAirtable.Table.all(), return a list of places that are missing a value in the provided field_to_check.
         """
-        return [third_place['fields']['Place'] for third_place in third_place_records if field_to_check not in third_place['fields']]
+        missing_places = []
+        for third_place in third_place_records:
+            if field_to_check not in third_place['fields']:
+                place_name = third_place['fields']['Place']
+                missing_places.append(place_name)
+        
+        return missing_places
+
 
     def print_report_section(self, file, collection, section_title):
         """Given a file and a collection (list or dict), pretty print to the file using the section_title as the heading.
@@ -316,12 +300,13 @@ class AirtableClient:
         file.write('\n\n')
 
     def data_quality_checks(self):
-        """Method for going through records in the Airtable database and highlighting any that seem odd. Some of these cases are valid states, which is why I'm not 
-        automatically taking action on them. The goal is to have an easy way to find the outliers, and update them manually if need be.
+        """Method for going through records in the Airtable database and highlighting any that seem odd. Some of these cases are valid states, which is why I'm not automatically taking action on them. The goal is to have an easy way to find the outliers, and update them manually if need be.
         """
         third_place_records = self.all_third_places
+        
         dupe_scan_fields = ['Website', 'Address',
                             'Google Maps Profile', 'Google Maps Place Id']
+        
         missing_scan_fields = ['Size', 'Website', 'Address', 'Description',
                                'Ambience', 'Neighborhood', 'Google Maps Profile', 'Google Maps Place Id']
 
