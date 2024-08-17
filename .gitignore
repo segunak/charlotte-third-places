@@ -78,3 +78,4 @@ Thumbs.db
 .python_packages
 __pycache__
 .venv
+.azurite

@@ -72,8 +72,9 @@ class AirtableClient:
             place_name = record['fields'].get('Place', 'Unknown Place')
             current_value = record['fields'].get(field_to_update)
 
-            # Determine if update should proceed
-            if current_value is None or (overwrite and update_value is not None and current_value != update_value):
+            # Check if the current value is either 'None' or 'Unsure', or if we should overwrite the existing value
+            # with a new one, provided that the new value is not None and different from the current value.
+            if (current_value in (None, 'Unsure')) or (overwrite and update_value is not None and current_value != update_value):
                 self.charlotte_third_places.update(record_id, {field_to_update: update_value})
                 logging.info(f'Field update PROCESSED for {field_to_update} at place {place_name} with new value: {update_value}.\n')
                 return True

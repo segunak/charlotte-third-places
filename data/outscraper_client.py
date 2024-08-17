@@ -78,54 +78,6 @@ def save_reviews_locally(airtable_place_name: str, reviews_output: dict):
     with open(review_file_path, "w", encoding="utf-8") as write_file:
         json.dump(reviews_output, write_file, ensure_ascii=False, indent=4)
 
-def save_reviews_github_api(airtable_place_name: str, reviews_output: dict):
-    """
-    Saves the provided reviews data to a GitHub repository using the GitHub API.
-
-    Args:
-        airtable_place_name (str): Name of the place from Airtable to format for filename.
-        reviews_output (dict): Dictionary containing the reviews data to be saved.
-    """
-    # Load environment variables
-    dotenv.load_dotenv()
-    GITHUB_PERSONAL_ACCESS_TOKEN = os.getenv('GITHUB_PERSONAL_ACCESS_TOKEN')
-    GITHUB_REPO = 'segunak/charlotte-third-places'
-    GITHUB_BRANCH = 'master'
-
-    # Format the filename and create the GitHub path
-    review_file_name = format_place_name(airtable_place_name) + '.json'
-    file_path = f'data/reviews/{review_file_name}'
-
-    # GitHub API URL
-    url = f'https://api.github.com/repos/{GITHUB_REPO}/contents/{file_path}'
-
-    # Serialize JSON data and encode to base64
-    content_bytes = json.dumps(reviews_output, ensure_ascii=False, indent=4).encode('utf-8')
-    content_base64 = base64.b64encode(content_bytes).decode('utf-8')
-
-    # Prepare the request data
-    data = {
-        'message': f'Update reviews for {airtable_place_name}',
-        'branch': GITHUB_BRANCH,
-        'content': content_base64,
-        'committer': {
-            'name': 'Segun Akinyemi',
-            'email': 'akintundejr4@gmail.com'
-        }
-    }
-
-    # Make a PUT request to the GitHub API
-    headers = {
-        'Authorization': f'token {GITHUB_PERSONAL_ACCESS_TOKEN}',
-        'Accept': 'application/vnd.github.v3+json'
-    }
-    response = requests.put(url, headers=headers, json=data)
-
-    if response.status_code == 201:
-        print(f'Successfully saved reviews for {airtable_place_name} to GitHub')
-    else:
-        print(f'Failed to save reviews: {response.status_code} - {response.json().get("message")}')
-
 @app.route("/reviews-response", methods=["POST"])
 def reviewsResponse():
     data = request.json

@@ -142,11 +142,12 @@ class GoogleMapsClient:
         params = {
             "textQuery": text_query,
             'languageCode': 'en',
-            # Example: Specifying a location bias within Charlotte, North Carolina
+            # Reference https://developers.google.com/maps/documentation/places/web-service/text-search#location-bias
+            # Use https://www.mapdevelopers.com/draw-circle-tool.php to get latitude/longitude and radius.
             "locationBias": {
                 "circle": {
-                    "center": {"latitude": 35.226826, "longitude": -80.843797},
-                    "radius": 32000
+                    "center": {"latitude": 35.23075539296459, "longitude": -80.83165532446358}, # Uptown Charlotte.
+                    "radius": 50000 # Meters. Max is 50,000
                 }
             }
         }
