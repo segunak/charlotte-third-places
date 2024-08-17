@@ -6,6 +6,9 @@ A scratch pad for various notes related to this project.
 ## Random Information
 
 * To stop Azurite from writing its logs to undesirable locations I set the `Azurite: Location` in settings to the relative path (starting from the C:\ drive) `/GitHub/charlotte-third-places/azure-function/.azurite` The folder is ignored in the `.gitignore`.
+* Testing locally, if you use `venv` you can get weird networking issues tunneling from the virtual environment to the public internet. If you're comfortable with your local environment don't bother with it.
+* You need to place any third-party Python libraries in `requirements.txt` so they're installed in the cloud for use during deployments and production execution.
+* Remember to start and stop Azurite for local testing.
 
 ## Azure Function
 

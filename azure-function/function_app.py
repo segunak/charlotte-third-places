@@ -28,12 +28,9 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
                 "Missing results_location in the request body",
                 status_code=400
             )
-            
-        # Make a HTTP GET request to the results_location URL
-        print(results_location)
+
         response = requests.get(results_location)
         
-        # Check if the request was successful
         if response.status_code != 200:
             return func.HttpResponse(
                 f"Failed to fetch data from {results_location}: {response.text}",
@@ -41,6 +38,10 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
             )
 
         data = response.json()
+        
+        # Now get into saving the reviews as .json files in an Azure Storage Account
+        # secret values can go into local.settings which turns into configuration values in the cloud.
+        # look into that piece. The return value should be a empty 200 ok when everything works right.
         
         # Return the JSON data as the response of this function
         return func.HttpResponse(
