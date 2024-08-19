@@ -1,12 +1,13 @@
 import os
 import sys
 import json
-import base64
 import logging
 import requests
 import pyairtable
 import azure.functions as func
 import helper_functions as helpers
+import airtable_client as airtable
+import google_maps_client as gmaps
 from pyairtable.formulas import match
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
@@ -25,7 +26,7 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
         
         if not results_location:
             return func.HttpResponse(
-                "Missing results_location in the request body",
+                "Error: Missing results_location in the request body.",
                 status_code=400
             )
 

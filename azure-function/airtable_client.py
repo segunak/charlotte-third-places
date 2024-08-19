@@ -1,7 +1,5 @@
 import os
-import json
 import pprint
-import dotenv
 import logging
 import requests
 import pyairtable
