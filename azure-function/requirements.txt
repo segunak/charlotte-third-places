@@ -6,3 +6,4 @@ azure-functions
 requests
 pyairtable
 Unidecode
+python-dotenv
