@@ -84,8 +84,8 @@ def reviewsResponse():
     results = requests.get(data["results_location"]).json()
 
     dotenv.load_dotenv()
-    AIRTABLE_BASE_ID = os.getenv("AIRTABLE_BASE_ID")
-    AIRTABLE_PERSONAL_ACCESS_TOKEN = os.getenv("AIRTABLE_PERSONAL_ACCESS_TOKEN")
+    AIRTABLE_BASE_ID = os.environ["AIRTABLE_BASE_ID"]
+    AIRTABLE_PERSONAL_ACCESS_TOKEN = os.environ["AIRTABLE_PERSONAL_ACCESS_TOKEN"]
 
     reviews_data = [
         {

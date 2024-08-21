@@ -10,9 +10,13 @@ class GoogleMapsClient:
     """Class for common methods for interacting with the Google Maps API, regardless of the target database for recovered data.
     """
     def __init__(self):
-        self.setup_logging()
-        dotenv.load_dotenv()
-        self.GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
+        if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
+            logging.info('Google Maps Client instantiated for local use.')
+            dotenv.load_dotenv()
+            self.setup_logging()
+        
+        logging.info('Google Maps Client instantiated for Azure Function use.')
+        self.GOOGLE_MAPS_API_KEY = os.environ['GOOGLE_MAPS_API_KEY']
         
     def setup_logging(self):
         """Set up logging to file and console in the directory where the class file is located."""
@@ -47,37 +51,6 @@ class GoogleMapsClient:
         """Given a string, strip all special characters, punctuation, accents and the like from it. Return an alphanumeric characters only string in lowercase. Used for turning place name's into simple strings that can be used to name files and objects.
         """
         return unidecode(''.join(char for char in input_string if char.isalnum()).lower())
-
-    def has_sufficient_reviews(self, place_name: str, review_threshold: int) -> bool:
-        """
-        Determines whether a place has a sufficient number of reviews stored locally compared to a specified threshold.
-        It accounts only for reviews that are stored and filters out non-English and empty reviews.
-
-        Args:
-            place_name (str): The name of the place to check.
-            review_threshold (int): The minimum number of reviews required for the place to be considered sufficiently reviewed.
-
-        Returns:
-            bool: True if the number of stored reviews meets or exceeds the review threshold, False otherwise.
-
-        Note:
-            This function assumes that reviews are stored in JSON files within a 'reviews' directory. Each file's name
-            corresponds to the place name processed by `strip_string`, followed by '.json'.
-        """
-        review_file_path = f'./reviews/{self.strip_string(place_name)}.json'
-        
-        try:
-            if os.path.exists(review_file_path):
-                with open(review_file_path, 'r', encoding='utf8') as file:
-                    reviews_data = json.load(file)
-                    stored_reviews_count = len(reviews_data.get('reviews_data', []))
-                    total_reviews_count = int(reviews_data.get('total_reviews_count', 0))
-                    return stored_reviews_count >= min(review_threshold, total_reviews_count)
-            else:
-                return False
-        except Exception as e:
-            logging.error(f"Error processing review file: {e}")
-            return False
 
     def get_google_reviews(self):
         pass

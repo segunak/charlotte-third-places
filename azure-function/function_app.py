@@ -7,6 +7,7 @@ import pyairtable
 import azure.functions as func
 from pyairtable.formulas import match
 from airtable_client import AirtableClient
+from azure.storage.filedatalake import DataLakeServiceClient
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
@@ -38,15 +39,12 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
             )
 
         data = response.json()
-
-        # Now get into saving the reviews as .json files in an Azure Storage Account
-        # secret values can go into local.settings which turns into configuration values in the cloud.
-        # look into that piece. The return value should be a empty 200 ok when everything works right.
-        
         airtable = AirtableClient()
-        print("Just gave life to the Airtable client. Doing nothing yet.")
+        datalake_connection_string = os.environ['AzureWebJobsStorage']
+        datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
+        
+        logging.info("Got to the end of the current logic")
 
-        # Return the JSON data as the response of this function
         return func.HttpResponse(
             json.dumps(data), status_code=200, mimetype="application/json"
         )

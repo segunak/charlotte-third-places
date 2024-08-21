@@ -1,5 +1,6 @@
 import os
 import pprint
+import dotenv
 import logging
 import requests
 import pyairtable
@@ -13,13 +14,18 @@ class AirtableClient:
     """Defines methods for interaction with the Charlotte Third Places Airtable database.
     """
     def __init__(self):
-        self.setup_logging()
-        self.google_maps_client = GoogleMapsClient()
-        self.AIRTABLE_BASE_ID = os.getenv('AIRTABLE_BASE_ID')
-        self.AIRTABLE_PERSONAL_ACCESS_TOKEN = os.getenv(
-            'AIRTABLE_PERSONAL_ACCESS_TOKEN')
+        if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
+            logging.info('Airtable Client instantiated for local use.')
+            dotenv.load_dotenv()
+            self.setup_logging()
+        
+        logging.info('Airtable Client instantiated for Azure Function use.')
+        
+        self.AIRTABLE_BASE_ID = os.environ['AIRTABLE_BASE_ID']
+        self.AIRTABLE_PERSONAL_ACCESS_TOKEN = os.environ['AIRTABLE_PERSONAL_ACCESS_TOKEN']
         self.charlotte_third_places = pyairtable.Table(
             self.AIRTABLE_PERSONAL_ACCESS_TOKEN, self.AIRTABLE_BASE_ID, 'Charlotte Third Places')
+        self.google_maps_client = GoogleMapsClient()
         self.all_third_places = self.charlotte_third_places.all(sort=["Place"])
 
     def setup_logging(self):
@@ -235,7 +241,9 @@ class AirtableClient:
                     photo_file_name = f'{modified_place_name}-{place_id}-cover.jpg'
                     photo_url = place_photos_response['photoUri']      
                     self.update_place_record(record_id, 'Cover Photo URL', photo_url, True)
-                    self.save_photo_locally( f'./photos/{place_id}', photo_file_name, photo_url)
+                    
+                    if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
+                        self.save_photo_locally( f'./photos/{place_id}', photo_file_name, photo_url)
                 else:
                     logging.warning(f'Unable to retrieve photos for {place_name}.')
             else:
@@ -300,6 +308,8 @@ class AirtableClient:
 
     def data_quality_checks(self):
         """Method for going through records in the Airtable database and highlighting any that seem odd. Some of these cases are valid states, which is why I'm not automatically taking action on them. The goal is to have an easy way to find the outliers, and update them manually if need be.
+        
+        TBD - Does this really need to be a function? Surely you can use Airtable to generate this report through a view or some other feature.
         """
         third_place_records = self.all_third_places
         
