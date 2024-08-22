@@ -14,8 +14,10 @@ jobs:
             -d '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}' \
             https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
           echo "Response code: $response"
-          if [ "$response" -ne 200 ]; then
-            echo "Failed to trigger Azure Function properly"
+          if [ "$response" -eq 200 ]; then
+            echo "As the tide ebbs, so returns our strength!"
+          else
+            echo "Failed to call the depths, something's amiss..."
             exit 1
           fi
         shell: bash
