@@ -83,7 +83,7 @@ jobs:
           if [ "$response" -eq 200 ]; then
             echo "Smoke test passed with 200 OK."
           else
-            echo "Smoke test failed with response code: $response."
+            echo "Smoke test failed with response code: $response. Please ensure there are no syntax errors in the changed function_app.py code. Furthermore, ensure the zipped and uploaded files from this deployment contains the expected file and folder structure. Azure Functions are very picky about structure."
             exit 1
           fi
             
