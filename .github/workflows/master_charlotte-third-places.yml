@@ -8,7 +8,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      -azure-function/
   workflow_dispatch:
+
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: './azure-function' # set this to the path to your web app project, defaults to the repository root
