@@ -40,6 +40,32 @@ def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
             mimetype="application/json"
         )
 
+@app.function_name(name="EnrichAirtableBase")
+@app.route(route="enrich-airtable-base")
+def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
+    try:
+        req_body = req.get_json()
+    except ValueError:
+        return func.HttpResponse(
+            "Invalid request, please send valid JSON, or don't if you'-re a bad actor. Go away.",
+            status_code=400
+        )
+
+    if req_body.get("TheMotto") == "What is dead may never die, but rises again harder and stronger":
+        logging.info("Success: The correct key and value were provided.")
+        # Process the enrichment here
+        return func.HttpResponse(
+            "Airtable base enrichment process initiated successfully.",
+            status_code=200
+        )
+    else:
+        # Log and return a snarky message for incorrect or missing key-value
+        logging.warning("Unauthorized attempt to access the endpoint.")
+        return func.HttpResponse(
+            "Nice try, but this endpoint isn't for you, boi!",
+            status_code=403
+        )
+
 @app.function_name(name="OutscraperReviewsResponse")
 @app.route(route="outscraper-reviews-response")
 def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
