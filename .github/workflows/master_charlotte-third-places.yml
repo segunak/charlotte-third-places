@@ -76,3 +76,13 @@ jobs:
           enable-oryx-build: true
           respect-funcignore: true
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_578D7E3EBA21453795CE9E97514E2950 }}
+
+      - name: Smoke Test
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" -X POST -H "Content-Type: application/json" -d '{"House":"Martell"}' https://charlotte-third-places.azurewebsites.net/api/smoke-test)
+          if [ "$response" -eq 200 ]; then
+            echo "Smoke test passed with 200 OK."
+          else
+            echo "Smoke test failed with response code: $response."
+            exit 1
+          endif

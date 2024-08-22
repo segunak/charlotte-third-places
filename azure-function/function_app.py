@@ -34,9 +34,8 @@ def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
                 mimetype="application/json"
             )
     except ValueError:
-        # If there is no JSON body or if JSON is invalid, return an error
         return func.HttpResponse(
-            json.dumps({"message": "Invalid or missing JSON body."}),
+            json.dumps({"message": "Invalid or missing JSON body. Are you sure you should be hitting this endpoint?"}),
             status_code=400,
             mimetype="application/json"
         )
