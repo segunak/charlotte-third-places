@@ -5,6 +5,8 @@ import logging
 import requests
 import pyairtable
 import azure.functions as func
+from unidecode import unidecode
+import helper_functions as helpers
 from pyairtable.formulas import match
 from airtable_client import AirtableClient
 from azure.storage.filedatalake import DataLakeServiceClient
@@ -30,24 +32,49 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
                 "Error: Missing results_location in the request body.", status_code=400
             )
 
-        response = requests.get(results_location)
+        results_location_response = requests.get(results_location)
 
-        if response.status_code != 200:
+        if results_location_response.status_code != 200:
             return func.HttpResponse(
-                f"Failed to fetch data from {results_location}: {response.text}",
-                status_code=response.status_code,
+                f"Failed to fetch data from {results_location}: {results_location_response.text}",
+                status_code=results_location_response.status_code,
             )
 
-        data = response.json()
-        airtable = AirtableClient()
+        raw_reviews_data = results_location_response.json()
+        
+        reviews_data = [
+            {
+                "place_name": unidecode(review["name"]),
+                "place_id": review['place_id'],
+                "place_rating": review['rating'],
+                "place_total_reviews": review['reviews'],
+                # See https://outscraper.com/place-id-feature-id-cid/ for google_id explainer.
+                "place_google_id": review['google_id'],
+                "review_id": review["review_id"],
+                "review_link": review["review_link"],
+                "review_rating": review["review_rating"],
+                "review_timestamp": review['review_timestamp'],
+                "review_datetime_utc": review["review_datetime_utc"],
+                "review_text": unidecode(review["review_text"])
+            }
+            for review in raw_reviews_data['data']
+            # Only include reviews where text is not None and not just whitespace
+            if review["review_text"] and review["review_text"].strip()
+        ]
+
+        place_id = helpers.format_place_name(raw_reviews_data['data'][0]['place_id'])
+        place_name = helpers.format_place_name(raw_reviews_data['data'][0]['name'])
+
         datalake_connection_string = os.environ['AzureWebJobsStorage']
         datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
+        file_system_client = datalake_service_client.get_file_system_client(file_system="data")
+        directory_client = file_system_client.get_directory_client("reviews")
+        file_client = directory_client.get_file_client(f"{place_id}-{place_name}-reviews.json")
         
-        logging.info("Got to the end of the current logic")
+        json_data = json.dumps(reviews_data, indent=4)
+        file_client.upload_data(data=json_data, overwrite=True)
 
-        return func.HttpResponse(
-            json.dumps(data), status_code=200, mimetype="application/json"
-        )
+        return func.HttpResponse(f"Review processed successfully for place {place_name} with place Id {place_id}", status_code=200)
     except json.JSONDecodeError:
         return func.HttpResponse("Invalid JSON in request", status_code=400)
     except Exception as ex:

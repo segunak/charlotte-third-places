@@ -89,6 +89,7 @@ def reviewsResponse():
 
     reviews_data = [
         {
+            "place_name": review["name"],
             "review_id": review["review_id"],
             "review_link": review["review_link"],
             "review_rating": review["review_rating"],
