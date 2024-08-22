@@ -29,7 +29,7 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
 
         if not results_location:
             return func.HttpResponse(
-                "Error: Missing results_location in the request body. Nothing was processed.", status_code=400
+                "Processing Failed: The request body was missing the results_location property.", status_code=400
             )
 
         results_location_response = requests.get(results_location)
