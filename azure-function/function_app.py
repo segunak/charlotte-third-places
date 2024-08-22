@@ -13,6 +13,34 @@ from azure.storage.filedatalake import DataLakeServiceClient
 
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
+@app.function_name(name="SmokeTest")
+@app.route(route="smoke-test")
+def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
+    try:
+        req_body = req.get_json()
+        expected_key = "House"
+        expected_value = "Martell"
+
+        if req_body.get(expected_key, None) == expected_value:
+            return func.HttpResponse(
+                json.dumps({"message": "The Azure Function is operational and recognizes Dorne. Unbowed. Unbent. Unbroken."}),
+                status_code=200,
+                mimetype="application/json"
+            )
+        else:
+            return func.HttpResponse(
+                json.dumps({"message": "Unexpected or incorrect allegiance provided."}),
+                status_code=400,
+                mimetype="application/json"
+            )
+    except ValueError:
+        # If there is no JSON body or if JSON is invalid, return an error
+        return func.HttpResponse(
+            json.dumps({"message": "Invalid or missing JSON body."}),
+            status_code=400,
+            mimetype="application/json"
+        )
+
 @app.function_name(name="OutscraperReviewsResponse")
 @app.route(route="outscraper-reviews-response")
 def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
