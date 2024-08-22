@@ -15,7 +15,7 @@ jobs:
             https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
           echo "Response code: $response"
           if [ "$response" -eq 200 ]; then
-            echo "As the tide ebbs, so returns our strength!"
+            echo "Aye brother, as the tide ebbs, so returns our strength!"
           else
             echo "Failed to call the depths, something's amiss..."
             exit 1
