@@ -17,6 +17,9 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./azure-function
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,12 +30,12 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install dependencies
-        run: pip install -r azure-function/requirements.txt
+        run: pip install -r requirements.txt
 
       # Optional: Add step to run tests here
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./azure-function -r
+        run: zip release.zip ./* -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
@@ -66,4 +69,5 @@ jobs:
           package: ${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}
           scm-do-build-during-deployment: true
           enable-oryx-build: true
+          respect-funcignore: true
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_578D7E3EBA21453795CE9E97514E2950 }}
