@@ -11,9 +11,6 @@ from pyairtable.formulas import match
 from airtable_client import AirtableClient
 from azure.storage.filedatalake import DataLakeServiceClient
 
-bfdsgrafdafdasfdsafdsafdsafdassfdsa
-gr2222 ```````````112`
-
 app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
 
 @app.function_name(name="SmokeTest")

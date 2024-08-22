@@ -37,8 +37,6 @@ jobs:
         run: pip install -r requirements.txt --target=.python_packages
         working-directory: ./azure-function
 
-      # Optional: Add step to run tests here
-
       - name: Zip artifact for deployment
         run: zip release.zip ./azure-function -r
 
@@ -86,5 +84,3 @@ jobs:
             echo "Smoke test failed with response code: $response. Please ensure there are no syntax errors in the changed function_app.py code. Furthermore, ensure the zipped and uploaded files from this deployment contains the expected file and folder structure. Azure Functions are very picky about structure."
             exit 1
           fi
-            
-        
