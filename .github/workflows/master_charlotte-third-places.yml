@@ -85,4 +85,6 @@ jobs:
           else
             echo "Smoke test failed with response code: $response."
             exit 1
-          endif
+          fi
+            
+        
