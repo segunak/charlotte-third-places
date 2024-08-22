@@ -17,9 +17,6 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./azure-function
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -30,12 +27,13 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt --target=.
+        working-directory: ./azure-function
 
       # Optional: Add step to run tests here
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: zip release.zip ./azure-function -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
