@@ -1,0 +1,21 @@
+name: Trigger Azure Function EnrichAirtableBase
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger-enrich-airtable-base:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Azure Function
+        run: |
+          response=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -d '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}' \
+            https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
+          echo "Response code: $response"
+          if [ "$response" -ne 200 ]; then
+            echo "Failed to trigger Azure Function properly"
+            exit 1
+          fi
+        shell: bash
