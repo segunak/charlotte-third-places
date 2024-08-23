@@ -6,22 +6,33 @@ on:
 jobs:
   trigger-enrich-airtable-base:
     runs-on: ubuntu-latest
-    steps:
+    steps:    
       - name: Trigger Azure Function
         run: |
-          response=$(curl -s -w "%{http_code}" -X POST \
+          #!/bin/bash
+          set -euo pipefail
+      
+          API_URL="https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base"
+          REQUEST_BODY='{"TheMotto":"What is dead may never die, but rises again harder and stronger"}'
+      
+          response=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Content-Type: application/json" \
             -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" \
-            -d '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}' \
-            https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
-            
-          echo "Response code: $response"
-
-          if [ "$response" -eq 200 ]; then
+            -d "$REQUEST_BODY" \
+            "$API_URL")
+      
+          http_status=$(tail -n1 <<< "$response")
+          response_body=$(sed '$ d' <<< "$response")
+      
+          echo "HTTP Status: $http_status"
+          echo "Response Body: $response_body"
+      
+          if [ "$http_status" -eq 200 ]; then
             echo "Aye brother, as the tide ebbs, so returns our strength!"
           else
             echo "Failed to call the depths, something's amiss..."
+            echo "HTTP Status: $http_status"
+            echo "Response Body: $response_body"
             exit 1
           fi
         shell: bash
-      

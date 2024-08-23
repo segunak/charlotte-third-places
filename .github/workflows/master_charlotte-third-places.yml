@@ -77,18 +77,28 @@ jobs:
 
       - name: Smoke Test
         run: |
-            response=$(curl -s -w "%{http_code}" -X POST -H "Content-Type: application/json" -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" -d '{"House":"Martell"}' https://charlotte-third-places.azurewebsites.net/api/smoke-test)
-            
-            http_status=$(echo "$response" | tail -n1)
-            response_body=$(echo "$response" | sed '$d')
-
-            echo "HTTP Status: $http_status"
-            echo "Response Body: $response_body"
-
-            if [ "$http_status" -eq 200 ]; then
-              echo "Smoke test passed with 200 OK."
-            else
-              echo "Smoke test failed with HTTP status: $http_status."
-              echo "Response body: $response_body"
-              exit 1
-            fi
+          #!/bin/bash
+          set -euo pipefail
+      
+          API_URL="https://charlotte-third-places.azurewebsites.net/api/smoke-test"
+          REQUEST_BODY='{"House":"Martell"}'
+      
+          response=$(curl -s -w "\n%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" \
+            -d "$REQUEST_BODY" \
+            "$API_URL")
+      
+          http_status=$(tail -n1 <<< "$response")
+          response_body=$(sed '$ d' <<< "$response")
+        
+          echo "HTTP Status: $http_status"
+          echo "Response Body: $response_body"
+      
+          if [ "$http_status" -eq 200 ]; then
+            echo "Smoke test passed with 200 OK."
+          else
+            echo "Smoke test failed with HTTP status: $http_status."
+            echo "Response body: $response_body"
+            exit 1
+          fi
