@@ -77,11 +77,14 @@ jobs:
 
       - name: Smoke Test
         run: |
-            response=$(curl -s -w "%{http_code}" -X POST -H "Content-Type: application/json" -H "x-functions-clientid: ${{ secrets.AZURE_FUNCTION_KEY }}" -d '{"House":"Martell"}' https://charlotte-third-places.azurewebsites.net/api/smoke-test)
+            response=$(curl -s -w "%{http_code}" -X POST -H "Content-Type: application/json" -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" -d '{"House":"Martell"}' https://charlotte-third-places.azurewebsites.net/api/smoke-test)
+            
             http_status=$(echo "$response" | tail -n1)
             response_body=$(echo "$response" | sed '$d')
+
             echo "HTTP Status: $http_status"
             echo "Response Body: $response_body"
+
             if [ "$http_status" -eq 200 ]; then
               echo "Smoke test passed with 200 OK."
             else

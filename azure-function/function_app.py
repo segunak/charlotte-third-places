@@ -11,7 +11,7 @@ from pyairtable.formulas import match
 from airtable_client import AirtableClient
 from azure.storage.filedatalake import DataLakeServiceClient
 
-# Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#webhooks-and-keys
+# Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 logging.basicConfig(level=logging.DEBUG)
 

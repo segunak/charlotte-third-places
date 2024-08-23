@@ -1,4 +1,4 @@
-name: Trigger Azure Function EnrichAirtableBase
+name: Trigger Azure Function - EnrichAirtableBase
 
 on:
   workflow_dispatch:
@@ -11,10 +11,12 @@ jobs:
         run: |
           response=$(curl -s -w "%{http_code}" -X POST \
             -H "Content-Type: application/json" \
-            -H "x-functions-clientid: ${{ secrets.AZURE_FUNCTION_KEY }}" \
+            -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" \
             -d '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}' \
             https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
+            
           echo "Response code: $response"
+
           if [ "$response" -eq 200 ]; then
             echo "Aye brother, as the tide ebbs, so returns our strength!"
           else
