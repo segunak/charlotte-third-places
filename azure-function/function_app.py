@@ -11,7 +11,12 @@ from pyairtable.formulas import match
 from airtable_client import AirtableClient
 from azure.storage.filedatalake import DataLakeServiceClient
 
-app = func.FunctionApp(http_auth_level=func.AuthLevel.ANONYMOUS)
+# Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#webhooks-and-keys
+app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
+logging.basicConfig(level=logging.DEBUG)
+
+# airtable = AirtableClient()
+# airtable.enrich_base_data()
 
 @app.function_name(name="SmokeTest")
 @app.route(route="smoke-test")
@@ -52,17 +57,25 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
         )
 
     if req_body.get("TheMotto") == "What is dead may never die, but rises again harder and stronger":
-        logging.info("Success: The correct key and value were provided.")
-        # Process the enrichment here
-        return func.HttpResponse(
-            "Airtable base enrichment process initiated successfully.",
-            status_code=200
-        )
+        logging.info("Valid JSON body passed. Airtable enrichment starting.")
+
+        try:
+            airtable = AirtableClient()
+            airtable.enrich_base_data()
+            return func.HttpResponse(
+                "Airtable base enrichment processed successfully.",
+                status_code=200
+            )
+        except Exception as ex:
+            logging.error(f"Error: Exception encountered enriching the Airtable Base. {ex}")
+            return func.HttpResponse(
+                f"Error: Exception encountered enriching the Airtable Base. {ex}",
+                status_code=500
+            )
     else:
-        # Log and return a snarky message for incorrect or missing key-value
         logging.warning("Unauthorized attempt to access the endpoint.")
         return func.HttpResponse(
-            "Nice try, but this endpoint isn't for you, boi!",
+            "Nice try, but this endpoint isn't for you fam. Go away!",
             status_code=403
         )
 

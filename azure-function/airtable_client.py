@@ -14,10 +14,11 @@ class AirtableClient:
     """Defines methods for interaction with the Charlotte Third Places Airtable database.
     """
     def __init__(self):
+        logging.basicConfig(level=logging.DEBUG)
+        
         if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
             logging.info('Airtable Client instantiated for local use.')
             dotenv.load_dotenv()
-            self.setup_logging()
         
         logging.info('Airtable Client instantiated for Azure Function use.')
         
@@ -27,35 +28,6 @@ class AirtableClient:
             self.AIRTABLE_PERSONAL_ACCESS_TOKEN, self.AIRTABLE_BASE_ID, 'Charlotte Third Places')
         self.google_maps_client = GoogleMapsClient()
         self.all_third_places = self.charlotte_third_places.all(sort=["Place"])
-
-    def setup_logging(self):
-        """Set up logging to file and console in the directory where the class file is located."""
-        # Determine the directory of the current script
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-
-        # Create 'logs' directory in the same directory as the script
-        log_directory = os.path.join(dir_path, "logs")
-        if not os.path.exists(log_directory):
-            os.makedirs(log_directory)
-            print("Log directory created at:", log_directory)
-        else:
-            print("Log directory already exists:", log_directory)
-        
-        # Define the filename using the current time
-        class_name = self.__class__.__name__.lower()
-        current_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        log_filename = os.path.join(log_directory, f"{class_name}-log-{current_time}.txt")
-
-        # Configure basic logging
-        logging.basicConfig(level=logging.INFO,
-                            format='%(asctime)s - %(levelname)s - %(message)s',
-                            handlers=[
-                                logging.FileHandler(log_filename),
-                                logging.StreamHandler()
-                            ])
-
-        # Log that setup is complete
-        logging.info("Logging setup complete - logging to console and file.")
 
     def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> bool:
         """
@@ -171,10 +143,9 @@ class AirtableClient:
         """
         for third_place in self.all_third_places:
             # Retrieve place name and record ID from Airtable data
-            place_name = third_place['fields'].get('Place', 'Unknown Place')
+            place_name = third_place['fields']['Place']
             record_id = third_place['id']
-            place_id = third_place['Google Maps Place Id']
-            # Fetch the Google Maps place ID using a helper method
+            place_id = third_place['fields']['Google Maps Place Id']
             place_id = self.google_maps_client.place_id_handler(place_name, place_id)
             
             # Fetch additional details from Google Maps using the place ID

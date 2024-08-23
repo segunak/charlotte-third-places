@@ -10,42 +10,14 @@ class GoogleMapsClient:
     """Class for common methods for interacting with the Google Maps API, regardless of the target database for recovered data.
     """
     def __init__(self):
+        logging.basicConfig(level=logging.DEBUG)
+        
         if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
             logging.info('Google Maps Client instantiated for local use.')
             dotenv.load_dotenv()
-            self.setup_logging()
         
         logging.info('Google Maps Client instantiated for Azure Function use.')
         self.GOOGLE_MAPS_API_KEY = os.environ['GOOGLE_MAPS_API_KEY']
-        
-    def setup_logging(self):
-        """Set up logging to file and console in the directory where the class file is located."""
-        # Determine the directory of the current script
-        dir_path = os.path.dirname(os.path.realpath(__file__))
-
-        # Create 'logs' directory in the same directory as the script
-        log_directory = os.path.join(dir_path, "logs")
-        if not os.path.exists(log_directory):
-            os.makedirs(log_directory)
-            print("Log directory created at:", log_directory)
-        else:
-            print("Log directory already exists:", log_directory)
-        
-        # Define the filename using the current time
-        class_name = self.__class__.__name__.lower()
-        current_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
-        log_filename = os.path.join(log_directory, f"{class_name}-log-{current_time}.txt")
-
-        # Configure basic logging
-        logging.basicConfig(level=logging.INFO,
-                            format='%(asctime)s - %(levelname)s - %(message)s',
-                            handlers=[
-                                logging.FileHandler(log_filename),
-                                logging.StreamHandler()
-                            ])
-
-        # Log that setup is complete
-        logging.info("Logging setup complete - logging to console and file.")
 
     def strip_string(self, input_string):
         """Given a string, strip all special characters, punctuation, accents and the like from it. Return an alphanumeric characters only string in lowercase. Used for turning place name's into simple strings that can be used to name files and objects.
@@ -72,6 +44,7 @@ class GoogleMapsClient:
         Returns:
             dict: A JSON object containing the photo details or the actual photo, depending on `skipHttpRedirect`.
         """
+
         params = {
             'maxHeightPx': maxHeightPx,
             'maxWidthPx': maxWidthPx,
@@ -80,6 +53,7 @@ class GoogleMapsClient:
         }
         
         response = requests.get(f'https://places.googleapis.com/v1/{photo_name}/media', params=params)
+        logging.info(f"Received response: {response.text}")
         
         if response.status_code == requests.codes.ok:
             try:
@@ -127,6 +101,7 @@ class GoogleMapsClient:
 
         try:
             response = requests.post(url, headers=headers, json=params)
+            logging.info(f"Received response: {response.text}")
             response.raise_for_status()  # Will raise an exception for HTTP error codes
             return response.json()
         except requests.exceptions.HTTPError as e:
@@ -163,6 +138,7 @@ class GoogleMapsClient:
         
         try:
             response = requests.get(url, headers=headers)
+            logging.info(f"Received response: {response.text}")
             response.raise_for_status()  # Raises an HTTPError for bad responses
             return response.json()
         except requests.exceptions.HTTPError as e:
@@ -188,7 +164,7 @@ class GoogleMapsClient:
         Returns:
             str: The Google Maps Place Id if exactly one match is found; an empty string otherwise.
         """
-        find_place_response = self.text_search_new(place_name, ['place_id'])
+        find_place_response = self.text_search_new(place_name, ['places.id'])
         places = find_place_response.get('places', []) if find_place_response else []
         
         if len(places) == 1:

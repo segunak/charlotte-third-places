@@ -9,8 +9,9 @@ jobs:
     steps:
       - name: Trigger Azure Function
         run: |
-          response=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
+          response=$(curl -s -w "%{http_code}" -X POST \
             -H "Content-Type: application/json" \
+            -H "x-functions-clientid: ${{ secrets.AZURE_FUNCTION_KEY }}" \
             -d '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}' \
             https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base)
           echo "Response code: $response"
@@ -21,3 +22,4 @@ jobs:
             exit 1
           fi
         shell: bash
+      

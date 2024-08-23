@@ -56,6 +56,16 @@ I ran into the issue where you deploy the Azure Function, either from VSCode loc
 }
 ```
 
+### Test Code
+
+For posting to `EnrichAirtableBase`
+
+```json
+{
+    "TheMotto": "What is dead may never die, but rises again harder and stronger"
+}
+```
+
 ### Outscraper Response Format
 
 For testing Outscraper webhooks locally. The `results_location` expires after 24 hours or so. To get a new one, go to the Outscraper portal, make a Google Maps API reviews request, and then go to <https://app.outscraper.com/api-usage> to get the `results_location`.
