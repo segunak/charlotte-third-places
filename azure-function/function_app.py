@@ -160,7 +160,7 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
 
 @app.function_name(name="OutscraperReviewsRequest")
 @app.route(route="outscraper-reviews-request")
-def outscraper_request_reviews(req: func.HttpRequest) -> func.HttpResponse:
+def outscraper_reviews_request(req: func.HttpRequest) -> func.HttpResponse:
     airtable = AirtableClient()
     # you can get airtable.all_third_places, iterate through anything with an actual place_id and not none, empty,
     # send each one as a request to outscraper with a delay. Outscraper should then post the webhook
