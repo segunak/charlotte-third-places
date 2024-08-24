@@ -6,6 +6,7 @@ import requests
 import pyairtable
 import azure.functions as func
 from unidecode import unidecode
+from outscraper import ApiClient
 import helper_functions as helpers
 from pyairtable.formulas import match
 from airtable_client import AirtableClient
@@ -21,7 +22,13 @@ logging.basicConfig(level=logging.INFO)
 # Get missing place_id's manually and update airtable
 # Work on filling gaps in the data manually
 # Deploy Azure Function and hit enrichement endpoint from GitHub action and verify success.
-# Go to Outscraper, get all place_id's, get reviews for all places. Have it hit the azure function for outscraper
+
+
+# Write an Azure Function called from a GitHub Action that takes all the place_id's in the airtable and sends
+# them to outsraper to get reiews for each one. Ensure outscraper is setup with the webhook URL for reviews response
+# which will ensure they get saved.
+
+
 # After verifying having all reviews, start on AI analysis for choosing ambience. Use Azure OpenAI, free $150 a month.
 
 @app.function_name(name="SmokeTest")
@@ -150,3 +157,12 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
         return func.HttpResponse("Invalid JSON in request", status_code=400)
     except Exception as ex:
         return func.HttpResponse(str(ex), status_code=500)
+
+@app.function_name(name="OutscraperRequestReviews")
+@app.route(route="outscraper-request-reviews")
+def outscraper_request_reviews(req: func.HttpRequest) -> func.HttpResponse:
+    airtable = AirtableClient()
+    # you can get airtable.all_third_places, iterate through anything with an actual place_id and not none, empty,
+    # send each one as a request to outscraper with a delay. Outscraper should then post the webhook
+    # THen make the github action to call this.
+    return func.HttpResponse("Not implemented", status_code=400)

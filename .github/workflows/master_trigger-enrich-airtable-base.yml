@@ -1,4 +1,4 @@
-name: Trigger Azure Function - EnrichAirtableBase
+name: Trigger EnrichAirtableBase Azure Function
 
 on:
   workflow_dispatch:
