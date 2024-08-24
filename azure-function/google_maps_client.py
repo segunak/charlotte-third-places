@@ -10,13 +10,14 @@ class GoogleMapsClient:
     """Class for common methods for interacting with the Google Maps API, regardless of the target database for recovered data.
     """
     def __init__(self):
-        logging.basicConfig(level=logging.DEBUG)
+        logging.basicConfig(level=logging.INFO)
         
-        if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
+        if 'FUNCTIONS_WORKER_RUNTIME' in os.environ:
+            logging.info('Google Maps Client instantiated for Azure Function use.')
+        else:
             logging.info('Google Maps Client instantiated for local use.')
             dotenv.load_dotenv()
         
-        logging.info('Google Maps Client instantiated for Azure Function use.')
         self.GOOGLE_MAPS_API_KEY = os.environ['GOOGLE_MAPS_API_KEY']
 
     def strip_string(self, input_string):
@@ -53,7 +54,7 @@ class GoogleMapsClient:
         }
         
         response = requests.get(f'https://places.googleapis.com/v1/{photo_name}/media', params=params)
-        logging.info(f"Received response: {response.text}")
+        logging.debug(f"Received response: {response.text}")
         
         if response.status_code == requests.codes.ok:
             try:
@@ -101,7 +102,7 @@ class GoogleMapsClient:
 
         try:
             response = requests.post(url, headers=headers, json=params)
-            logging.info(f"Received response: {response.text}")
+            logging.debug(f"Received response: {response.text}")
             response.raise_for_status()  # Will raise an exception for HTTP error codes
             return response.json()
         except requests.exceptions.HTTPError as e:
@@ -138,7 +139,7 @@ class GoogleMapsClient:
         
         try:
             response = requests.get(url, headers=headers)
-            logging.info(f"Received response: {response.text}")
+            logging.debug(f"Received response: {response.text}")
             response.raise_for_status()  # Raises an HTTPError for bad responses
             return response.json()
         except requests.exceptions.HTTPError as e:

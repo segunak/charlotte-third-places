@@ -61,9 +61,7 @@ I ran into the issue where you deploy the Azure Function, either from VSCode loc
 For posting to `EnrichAirtableBase`
 
 ```json
-{
-    "TheMotto": "What is dead may never die, but rises again harder and stronger"
-}
+{"TheMotto": "What is dead may never die, but rises again harder and stronger"}
 ```
 
 ### Outscraper Response Format

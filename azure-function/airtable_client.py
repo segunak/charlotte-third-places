@@ -14,14 +14,14 @@ class AirtableClient:
     """Defines methods for interaction with the Charlotte Third Places Airtable database.
     """
     def __init__(self):
-        logging.basicConfig(level=logging.DEBUG)
+        logging.basicConfig(level=logging.INFO)
         
-        if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
+        if 'FUNCTIONS_WORKER_RUNTIME' in os.environ:
+            logging.info('Airtable Client instantiated for Azure Function use.')
+        else:
             logging.info('Airtable Client instantiated for local use.')
             dotenv.load_dotenv()
-        
-        logging.info('Airtable Client instantiated for Azure Function use.')
-        
+
         self.AIRTABLE_BASE_ID = os.environ['AIRTABLE_BASE_ID']
         self.AIRTABLE_PERSONAL_ACCESS_TOKEN = os.environ['AIRTABLE_PERSONAL_ACCESS_TOKEN']
         self.charlotte_third_places = pyairtable.Table(
@@ -45,7 +45,7 @@ class AirtableClient:
         """
         try:
             record = self.charlotte_third_places.get(record_id)
-            place_name = record['fields'].get('Place', 'Unknown Place')
+            place_name = record['fields']['Place']
             current_value = record['fields'].get(field_to_update)
 
             # Check if the current value is either 'None' or 'Unsure', or if we should overwrite the existing value
@@ -87,7 +87,7 @@ class AirtableClient:
         Returns:
             str: "Free" if any free parking options are available,
                  "Paid" if only paid or valet parking options are available,
-                 "Unknown" if no parking information is available or if the options don't fit into the above categories.
+                 "Unsure" if no parking information is available or if the options don't fit into the above categories.
         
         Reference: https://developers.google.com/maps/documentation/places/web-service/reference/rest/v1/places#parkingoptions
         """
@@ -103,8 +103,7 @@ class AirtableClient:
         if any(parking_options.get(key, False) for key in paid_parking_keys):
             return "Paid"
 
-        # Default to "Unknown" if no specific parking types are found
-        return "Unknown"
+        return "Unsure"
     
     def determine_purchase_requirement(self, place_details_response):
         """
@@ -114,12 +113,12 @@ class AirtableClient:
             place_details_response (dict): Response from Google Maps API containing the price level information.
 
         Returns:
-            str: "Yes" if purchase is required, "No" if not, and "Unknown" if the status cannot be determined.
+            str: "Yes" if purchase is required, "No" if not, and "Unsure" if the status cannot be determined.
         """
         # Define a mapping of price levels to purchase requirements. The right hand values are the answer to the question
         # "Does this place require a purchase to hangout?"
         price_level_mapping = {
-            'PRICE_LEVEL_UNSPECIFIED': 'Unknown',
+            'PRICE_LEVEL_UNSPECIFIED': 'Unsure',
             'PRICE_LEVEL_FREE': 'No',
             'PRICE_LEVEL_INEXPENSIVE': 'Yes',
             'PRICE_LEVEL_MODERATE': 'Yes',
@@ -130,10 +129,10 @@ class AirtableClient:
         # Get the price level from the response, defaulting to 'PRICE_LEVEL_UNSPECIFIED' if not found
         price_level = place_details_response.get('priceLevel', 'PRICE_LEVEL_UNSPECIFIED')
 
-        # Return the corresponding purchase requirement, default to 'Unknown' if the price level is not in the mapping
-        return price_level_mapping.get(price_level, 'Unknown')
+        # Return the corresponding purchase requirement, default to 'Unsure' if the price level is not in the mapping
+        return price_level_mapping.get(price_level, 'Unsure')
 
-    def enrich_base_data(self):
+    def enrich_base_data(self) -> list:
         """
         Enriches the base data of places stored in Airtable with additional metadata fetched from Google Maps.
         This method iterates over all places, retrieves details from Google Maps, and updates the Airtable records
@@ -141,55 +140,62 @@ class AirtableClient:
 
         It logs an update for each record and a warning if unable to fetch data for a place.
         """
+        places_updated = []
+        
         for third_place in self.all_third_places:
-            # Retrieve place name and record ID from Airtable data
             place_name = third_place['fields']['Place']
             record_id = third_place['id']
-            place_id = third_place['fields']['Google Maps Place Id']
+            place_id = third_place['fields'].get('Google Maps Place Id', None)
             place_id = self.google_maps_client.place_id_handler(place_name, place_id)
             
-            # Fetch additional details from Google Maps using the place ID
-            place_details_response = self.google_maps_client.place_details_new(
-                place_id, [
-                    'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
-                    'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
-                    'primaryType', 'outdoorSeating'
-                ])
+            if place_id:
+                # Fetch additional details from Google Maps using the place ID
+                place_details_response = self.google_maps_client.place_details_new(
+                    place_id, [
+                        'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
+                        'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
+                        'primaryType', 'outdoorSeating'
+                    ])
 
-            # Check if the response was successful
-            if place_details_response:
-                # Extract and process the website URL
-                website = self.get_base_url(place_details_response.get('websiteUri'))
-                # Get the list of address components
-                address_components = place_details_response.get('addressComponents', [])
-                
-                # Use a generator to find the first 'neighborhood' component, if present
-                neighborhood = next(
-                    (component.get('longText', '').title() for component in address_components if 'neighborhood' in component.get('types', [])), ''
-                )
-                
-                parking_situation = self.get_parking_status(place_details_response)
-                purchase_required = self.determine_purchase_requirement(place_details_response)
-                
-                # Prepare a dictionary of fields to update in Airtable. Format is 'Field Name': (field_value, overwrite_flag)
-                field_updates = {
-                    'Google Maps Place Id': (place_id, True),
-                    'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
-                    'Neighborhood': (neighborhood, False),
-                    'Website': (website, False),
-                    'Address': (place_details_response.get('formattedAddress'), False),
-                    'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
-                    'Purchase Required': (purchase_required, False),
-                    'Parking': (parking_situation, False)
-                }
+                # Check if the response was successful
+                if place_details_response:
+                    # Extract and process the website URL
+                    website = self.get_base_url(place_details_response.get('websiteUri'))
+                    # Get the list of address components
+                    address_components = place_details_response.get('addressComponents', [])
+                    
+                    # Use a generator to find the first 'neighborhood' component, if present
+                    neighborhood = next(
+                        (component.get('longText', '').title() for component in address_components if 'neighborhood' in component.get('types', [])), ''
+                    )
+                    
+                    parking_situation = self.get_parking_status(place_details_response)
+                    purchase_required = self.determine_purchase_requirement(place_details_response)
+                    
+                    # Prepare a dictionary of fields to update in Airtable. Format is 'Field Name': (field_value, overwrite_flag)
+                    field_updates = {
+                        'Google Maps Place Id': (place_id, True),
+                        'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
+                        'Neighborhood': (neighborhood, False),
+                        'Website': (website, False),
+                        'Address': (place_details_response.get('formattedAddress'), False),
+                        'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
+                        'Purchase Required': (purchase_required, False),
+                        'Parking': (parking_situation, False)
+                    }
 
-                # Update each field in the Airtable record as necessary
-                for field_name, (field_value, overwrite) in field_updates.items():
-                    self.update_place_record(record_id, field_name, field_value, overwrite)
-
+                    
+                    for field_name, (field_value, overwrite) in field_updates.items():
+                        update_succeeded = self.update_place_record(record_id, field_name, field_value, overwrite)
+                    
+                    if update_succeeded: places_updated.append(place_name)
+                else:
+                    # Log a warning if the place details could not be fetched
+                    logging.warning(f'The record for place {place_name} cannot be updated. Unable to generate a valid place details request.')
             else:
-                # Log a warning if the place details could not be fetched
-                logging.warning(f'The record for place {place_name} cannot be updated. Unable to generate a valid place details request.')
+                logging.warning(f'The record for place {place_name} cannot be updated. Unable to find a place_id. You will need to manually find one and update the Base.')
+        
+        return places_updated            
 
     def get_place_photos(self, overwrite_cover_photo=False):
         """
@@ -198,7 +204,7 @@ class AirtableClient:
         for third_place in self.all_third_places:
             record_id = third_place['id']
             place_id = third_place['Google Maps Place Id']
-            place_name = third_place['fields'].get('Place', 'Unknown Place')
+            place_name = third_place['fields']['Place']
             place_id = self.google_maps_client.place_id_handler(place_name, place_id)
             place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
 

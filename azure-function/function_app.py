@@ -13,10 +13,18 @@ from azure.storage.filedatalake import DataLakeServiceClient
 
 # Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
-# airtable = AirtableClient()
-# airtable.enrich_base_data()
+# TO DO
+# Call airtable code for getting photos locally and validate it works, then add it to the enrich Azure Function calls.
+# Delete main.py and other unused code.
+# Delete local debug Airtabel code
+# Get missing place_id's manually and update airtable
+# Have a way to get a list of places that actually had a field updated and log that at the end of enrichmenet.
+# Work on filling gaps in the data manually
+# Deploy Azure Function and hit enrichement endpoint from GitHub action and verify success.
+# Go to Outscraper, get all place_id's, get reviews for all places. Have it hit the azure function for outscraper
+# After verifying having all reviews, start on AI analysis for choosing ambience. Use Azure OpenAI, free $150 a month.
 
 @app.function_name(name="SmokeTest")
 @app.route(route="smoke-test")
@@ -58,12 +66,12 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
 
     if req_body.get("TheMotto") == "What is dead may never die, but rises again harder and stronger":
         logging.info("Valid JSON body passed. Airtable enrichment starting.")
-
         try:
             airtable = AirtableClient()
-            airtable.enrich_base_data()
+            places_updated = airtable.enrich_base_data()
+            logging.info(f"Airtable Base enrichment completed. The list of places updated is {places_updated}.")
             return func.HttpResponse(
-                "Airtable base enrichment processed successfully.",
+                f"Airtable base enrichment processed successfully. The list of places updated: {places_updated}",
                 status_code=200
             )
         except Exception as ex:
