@@ -3,6 +3,20 @@
     "place_name": "Café Moka",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/16/2023 18:59:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNEthVm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNEthVm1nRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIDg4KaVmgE%7CCgsIkL2WngYQ-Mf1IA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great staff, great coffee, and great atmosphere."
+        },
+        {
+            "review_datetime_utc": "01/15/2023 15:24:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCa3YzSzRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCa3YzSzRnRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIDBkv3K4gE%7CCgwIsbWQngYQqOfM1wM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good coffee. Nice decor."
+        },
+        {
             "review_datetime_utc": "12/31/2022 22:32:57",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCOVlYakR3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCOVlYakR3EAE!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgICB9YXjDw%7CCgwImfHCnQYQyMra3AI%7C?hl=en-US",
@@ -703,25 +717,11 @@
             "review_text": "It was a great experience"
         },
         {
-            "review_datetime_utc": "07/10/2020 19:47:24",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4MmZpLVZ3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4MmZpLVZ3EAE!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIC82fi-Vw%7CCgwIzIuj-AUQkK-MsQI%7C?hl=en-US",
-            "review_rating": 3,
-            "review_text": "Do not come here if taking social distancing seriously. I emailed about bringing my child who is immunocompromised to see if staff was taking precautions. (We used to love coming here and playing outside!). I did not receive a response. I popped in and staff was not wearing masks. The coffee is great, but I feel bad as I really wanted to support a local biz during these hard times."
-        },
-        {
             "review_datetime_utc": "07/04/2020 12:51:37",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM4aHJucWhnRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4aHJucWhnRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIC8hrnqhgE%7CCgwI2faB-AUQ2L3U9gI%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "super cute coffee shop, the staff is so nice and the decor is absolutely beautiful. drinks are great, smoothies 10/10, coffee 10/10. beans are well roasted and i love the prices, under $5 for a good coffee or smoothie!"
-        },
-        {
-            "review_datetime_utc": "06/29/2020 16:48:06",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM4a3BYN19BRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4a3BYN19BRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIC8kpX7_AE%7CCgsIxrbo9wUQuJqPTg%7C?hl=en-US",
-            "review_rating": 3,
-            "review_text": "The coffee and teas are good but I much prefer Starbucks. Dont think I will be going back because only one of the employees were wearing a mask and none of the customers inside at the table had on masks."
         },
         {
             "review_datetime_utc": "06/26/2020 01:03:33",
@@ -1095,13 +1095,6 @@
             "review_text": "Really great place. Nice ambiance, and top notch tasting drinks. I will say it's without a doubt the most expensive coffee shop I've ever been to, but I think that the quality of the drinks makes up for it."
         },
         {
-            "review_datetime_utc": "08/25/2018 18:38:24",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNEthVm1nRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNEthVm1nRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIDg4KaVmgE%7CCgwIoMSG3AUQ0OybugI%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "Great staff, great coffee, and great atmosphere."
-        },
-        {
             "review_datetime_utc": "08/25/2018 15:06:18",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndzRPcmpnRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndzRPcmpnRRAB!2m1!1s0x0:0xcb6a35f9dac852c5!3m1!1s2@1:CIHM0ogKEICAgIDgw4OrjgE%7CCgsI6uCF3AUQ-J7Feg%7C?hl=en-US",
@@ -1214,5 +1207,5 @@
             "review_text": "First cup of coffee in my life that needed no additive! Absolutely fabulous!"
         }
     ],
-    "total_reviews_count": 236
+    "total_reviews_count": 235
 }

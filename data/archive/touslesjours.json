@@ -3,6 +3,20 @@
     "place_name": "Tous les Jours",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/13/2023 21:15:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCN2Y2ZTd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCN2Y2ZTd3RRAB!2m1!1s0x0:0x859d36cef33d9183!3m1!1s2@1:CIHM0ogKEICAgICB7f6e7wE%7CCgwI4ZOHngYQyNfe9QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Tous les jours in Charlotte, NC is a hidden gem that should not be missed! The bakery offers a wide variety of freshly baked goods that are absolutely delicious. From croissants and baguettes to cakes and pastries, everything is made on-site and with high-quality ingredients.  The service is always friendly and efficient, and the atmosphere is cozy and inviting. I especially love the selection of unique and exotic pastries that you don't often find at other bakeries.  I highly recommend trying the Mont Blanc or the strawberry cloud cake, they are both absolutely heavenly! The prices are also very reasonable, making it a great spot for a quick and satisfying breakfast or lunch. Overall, Tous les jours is a must-visit for anyone who loves good food and great service."
+        },
+        {
+            "review_datetime_utc": "01/13/2023 12:45:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCclBEWlVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCclBEWlVnEAE!2m1!1s0x0:0x859d36cef33d9183!3m1!1s2@1:CIHM0ogKEICAgIDBrPDZUg%7CCgwI2qSFngYQ6Obh3QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So amazing place"
+        },
+        {
             "review_datetime_utc": "01/03/2023 15:57:08",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCazgzRXd3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCazgzRXd3RRAB!2m1!1s0x0:0x859d36cef33d9183!3m1!1s2@1:CIHM0ogKEICAgICBk83EwwE%7CCgsI1KDRnQYQsO_BdQ%7C?hl=en-US",
@@ -934,5 +948,5 @@
             "review_text": "surprised, cozy and beautiful bakery, delicious fresh baked bread, happy to have this Famous Korean Bakery here at Southpark."
         }
     ],
-    "total_reviews_count": 186
+    "total_reviews_count": 191
 }

@@ -3,6 +3,13 @@
     "place_name": "Waterbean Coffee | Quail Corners",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/13/2023 15:17:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtaDZMVjdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtaDZMVjdBRRAB!2m1!1s0x0:0x9c165fe660f84051!3m1!1s2@1:CIHM0ogKEICAgIC-h6LV7AE%7CCgwI-OuFngYQwOXB2gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very clean, very well lit. Customer service was amazing & the coffee was even better! Plenty to choose from, & no way you could go wrong with any choice!"
+        },
+        {
             "review_datetime_utc": "12/24/2022 22:01:16",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCdHVpdnBBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCdHVpdnBBRRAB!2m1!1s0x0:0x9c165fe660f84051!3m1!1s2@1:CIHM0ogKEICAgICBtuivpAE%7CCgoIrO2dnQYQgKtF%7C?hl=en-US",
@@ -15,13 +22,6 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtNjQtbnBBRRAB!2m1!1s0x0:0x9c165fe660f84051!3m1!1s2@1:CIHM0ogKEICAgID-64-npAE%7CCgwIlajQnAYQ8MiWzgM%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "Can't stay away, can't get enough!"
-        },
-        {
-            "review_datetime_utc": "11/15/2022 00:12:16",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtaDZMVjdBRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtaDZMVjdBRRAB!2m1!1s0x0:0x9c165fe660f84051!3m1!1s2@1:CIHM0ogKEICAgIC-h6LV7AE%7CCgsI4LLLmwYQ6P7PEA%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "Very clean, very well lit. Customer service was amazing & the coffee was even better!"
         },
         {
             "review_datetime_utc": "11/12/2022 21:27:28",

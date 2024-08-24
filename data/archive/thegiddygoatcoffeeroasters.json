@@ -3,6 +3,34 @@
     "place_name": "The Giddy Goat Coffee Roasters",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 18:58:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCZ29Xcm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCZ29Xcm1nRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDBgoWrmgE%7CCgsI5vaLngYQoICEEA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place for coffee specialty drinks!"
+        },
+        {
+            "review_datetime_utc": "01/13/2023 22:11:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlaGNxSC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlaGNxSC1BRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDehcqH-AE%7CCgwI9q2HngYQoOP_1gE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very cool, neighborhood coffee shop. Lots of seating options outside in yard, outside at picnic table, inside with work tables, upstairs small tables, sofa....but its SMALL ANDNALWAYS CROWDED. 2  bathroom downstairs. (There might be upstairs bathroom). Prices average for Plaza Midwood $3.00 coffee. And there was HONEY for tea. Very nice to sit w/friend, to work or solo...IF YOU FIND A SPOT. Enjoy.peace"
+        },
+        {
+            "review_datetime_utc": "01/13/2023 02:57:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCaklMcU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCaklMcU9BEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDBjILqOA%7CCgwI_pCDngYQ-NnoyQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great breakfast burrito and the empanada selection was fantastic. We got one of each and they were all unique and delicious in their own way. Coffee was coffee and pretty well priced. I can't stress enough how good the burrito is. Super simple, fresh, and seasoned. I will be a regular for sure & will be adding it to the weekend breakfast rotation now that I live in the area."
+        },
+        {
+            "review_datetime_utc": "01/11/2023 15:04:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCaEpLLWhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCaEpLLWhnRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDBhJK-hgE%7CCgwI6Z_7nQYQqLalqgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Perfect cup of coffee!"
+        },
+        {
             "review_datetime_utc": "01/07/2023 21:40:32",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCN19ybzlBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCN19ybzlBRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICB7_ro9AE%7CCgwI0M3nnQYQwLnt7wI%7C?hl=en-US",
@@ -148,13 +176,6 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlZy1HY2l3RRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDeg-GciwE%7CCgwIhuy3mgYQ6OPRtgI%7C?hl=en-US",
             "review_rating": 4,
             "review_text": "Nice people. Good vibe. Ok coffee"
-        },
-        {
-            "review_datetime_utc": "10/14/2022 19:43:38",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlaGNxSC1BRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlaGNxSC1BRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDehcqH-AE%7CCgwI6vemmgYQiIyNyQM%7C?hl=en-US",
-            "review_rating": 4,
-            "review_text": "Very cool, neighborhood coffee shop. Lots of seating options outside in yard, outside at picnic table, inside with work tables, upstairs small tables, sofa, out seating, bar w/drinks. Super except 1 unisex bathroom downstairs. (There might be upstairs bathroom). Prices fair, regular coffee $2.50. And there was HONEY for tea. Very nice to sit for work, w/ a friend or solo (pets were welcome outside). Enjoy.peace"
         },
         {
             "review_datetime_utc": "10/11/2022 19:33:07",
@@ -2101,7 +2122,140 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5a083Njd3RRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDykO767wE%7CCgsIx8_FgQYQyLHdSA%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "We love trying new coffee places and this is one of the places we'll definitely be going back to. The coffee is delicious, prices are fair and the owner is super friendly. We love the atmosphere and hope everyone gets a chance to try"
+        },
+        {
+            "review_datetime_utc": "02/19/2021 14:20:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5Xzl1djdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5Xzl1djdRRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICy_9uv7QE%7CCgsIxJK_gQYQ4LDAQw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "New favorite coffee spot in Charlotte! The perfect read a book on your day off kind of spot! Not the great employees!!"
+        },
+        {
+            "review_datetime_utc": "02/12/2021 18:52:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5aTlyM0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5aTlyM0V3EAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICyi9r3Ew%7CCgwI3ZybgQYQ2PbyvwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome place."
+        },
+        {
+            "review_datetime_utc": "02/11/2021 23:32:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5MDU2YkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5MDU2YkhnEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICy056bHg%7CCgwI_fyWgQYQ6KW74AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic place, awesome coffee! I accidentally went after they had closed but Carson the owner was kind enough to make me a cup of coffee. Will definitely be my go to!"
+        },
+        {
+            "review_datetime_utc": "02/10/2021 22:11:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5ZzR2YWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5ZzR2YWZBEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICyg4vafA%7CCgsI-rORgQYQkJXjDw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Terrific coffee and very friendly staff! Look forward to enjoying your rooftop in warmer weather!"
+        },
+        {
+            "review_datetime_utc": "02/06/2021 13:36:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5eGVYTzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5eGVYTzBBRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICyxeXO0AE%7CCgwI-bb6gAYQ8LSAowI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great new spot in Plaza Midwood, with great quality coffee."
+        },
+        {
+            "review_datetime_utc": "02/04/2021 13:41:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5cWNpZXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5cWNpZXVRRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICyqcieuQE%7CCgsIjPPvgAYQoN7EDA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good vibe! Good coffee!"
+        },
+        {
+            "review_datetime_utc": "02/01/2021 13:59:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5X3NtaURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5X3NtaURREAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICy_smiDQ%7CCgwIq5LggAYQuOrr1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is the best coffee I've tried in Charlotte! I go 2-3 times a week. I get an iced coffee or iced latte with oat milk, and they're both fantastic. Not sure why Google says it's closed because they're definitely open 7 days a week.  Sometimes they have a walk up window which was a great Covid safe option and convenient if you are walking your dog or in a rush. Seems like they stopped once the weather got bad, hopefully they open that option again.  10/10 recommend!"
+        },
+        {
+            "review_datetime_utc": "01/27/2021 15:59:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5dXQzcHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5dXQzcHpBRRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICyut3pzAE%7CCgsIzJvGgAYQuKiQWg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My husband and I LOVE this new coffee shop in Plaza! It has an awesome spacious atmosphere and excellent coffee. Everyone working is here is super friendly and nice - separates them from than other coffee shops around here! Ever since we realized they were open, we have only been coming here. Love it!"
+        },
+        {
+            "review_datetime_utc": "01/24/2021 14:39:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5a3E3MTh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5a3E3MTh3RRAB!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICykq718wE%7CCgwIkI22gAYQ8JfsoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Food is good,Coffee is good, the Pandora station is just what you want on a Sunday morning! Top marks!"
+        },
+        {
+            "review_datetime_utc": "01/23/2021 13:36:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5M0oyUWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5M0oyUWVREAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICy3J2QeQ%7CCgwI68ywgAYQqPuAhQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The Giddy Goat is just what Plaza Midwood needed, great coffee and the friendliest staff!"
+        },
+        {
+            "review_datetime_utc": "01/20/2021 15:07:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5NVAyd09BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5NVAyd09BEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICy5P2wOA%7CCgwIsY6hgAYQsISV0gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great tasting espresso and very cool, comfortable and clean environment! Highly recommend."
+        },
+        {
+            "review_datetime_utc": "01/14/2021 23:33:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTXzh2WERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTXzh2WERBEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDS_8vXDA%7CCgwI3amDgAYQuO-Q1wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The environment is fantastic. Super welcoming, great aesthetic. The baristas are educated and skilled. Staff is very friendly. Two stories of seating and wonderful immersion between the indoors and out, will be greater in warmer months. The coffee was exceptional. Latte far exceeded expectations, phenomenal quality espresso utilized. I really enjoy this place, it's the type of place I will go for coffee, and spend a lot of time there doing productive things like checking e-mail or browsing my instagram feed. I highly recommend the Giddy Goat."
+        },
+        {
+            "review_datetime_utc": "01/10/2021 21:09:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTdTlPNmN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTdTlPNmN3EAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDSu9O6cw%7CCgwIidrt_wUQsP6ppQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious coffee and great service! Had the dirty chai latte and highly recommend."
+        },
+        {
+            "review_datetime_utc": "12/29/2020 19:22:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTMGNYRUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTMGNYRUdREAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDS0cXEGQ%7CCgwIkISu_wUQkOejsQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome space, awesome coffee"
+        },
+        {
+            "review_datetime_utc": "12/19/2020 16:58:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTa3YzdVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTa3YzdVlBEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDSkv3uYA%7CCgwI0uL4_gUQkIDW4wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you haven't been here yet... stop what you're doing and head on over. Great place, Great people. No joke!"
+        },
+        {
+            "review_datetime_utc": "12/17/2020 20:49:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNTMi0zZWF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNTMi0zZWF3EAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICS2-3eaw%7CCgwI3Ijv_gUQqL-agAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "100% recommended, my cappuccino was awesome and I definitely going to come back!!!!! Carson the owner. Is very Kind..... come on guys for this weather is coffee time!!!!!!"
+        },
+        {
+            "review_datetime_utc": "12/05/2020 16:05:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpNFlQbEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpNFlQbEx3EAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgIDi4YPlLw%7CCgwIs9-u_gUQgNv8jwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee in town.  I'm originally from the Mediterranean region and a regular coffee drinker 2 espressos a day plus a cappuccino sometimes.  This place is legit. My new favorite place!"
+        },
+        {
+            "review_datetime_utc": "11/17/2020 12:23:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpeDhPdEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpeDhPdEx3EAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICix8OtLw%7CCgwIzYHP_QUQwP2ImgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic space, with fantastic owners and absolutely fantastic coffee!"
+        },
+        {
+            "review_datetime_utc": "11/14/2020 14:34:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpMDlqc2NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpMDlqc2NnEAE!2m1!1s0x0:0x36774be41527cf6a!3m1!1s2@1:CIHM0ogKEICAgICi09jscg%7CCgsI3tW__QUQqPjuNw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great new neighborhood spot! Walk up window for ordering too."
         }
     ],
-    "total_reviews_count": 499
+    "total_reviews_count": 502
 }

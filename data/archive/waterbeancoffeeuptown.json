@@ -3,6 +3,13 @@
     "place_name": "Waterbean Coffee | Uptown",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/18/2023 11:13:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCcHFfSXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCcHFfSXJRRRAB!2m1!1s0x0:0xed6a597e1015074!3m1!1s2@1:CIHM0ogKEICAgIDBpq_IrQE%7CCgsI16ifngYQ6IWfZQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a great coffee shop!  So many drink selections and good atmosphere!!"
+        },
+        {
             "review_datetime_utc": "01/05/2023 13:17:57",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCdV9HQ2x3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCdV9HQ2x3RRAB!2m1!1s0x0:0xed6a597e1015074!3m1!1s2@1:CIHM0ogKEICAgICBu_GClwE%7CCgsIhZzbnQYQsMCxSA%7C?hl=en-US",
@@ -311,5 +318,5 @@
             "review_text": "Love this place! Great location and atmosphere"
         }
     ],
-    "total_reviews_count": 67
+    "total_reviews_count": 69
 }

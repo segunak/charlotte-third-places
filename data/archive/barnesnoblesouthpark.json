@@ -3,6 +3,27 @@
     "place_name": "Barnes & Noble | SouthPark",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/16/2023 21:08:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCcW8taEp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCcW8taEp3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDBqo-hJw%7CCgwIvfmWngYQgIyNoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Although these stores a slowly bleeding out, this one is a great example of why they're important. Young folks everywhere, reading books and hanging out at the cafe - families browsing the stacks. It's well run, clean, and nicely stocked. The only gripe is the parking but there is plenty if you're willing to walk a bit."
+        },
+        {
+            "review_datetime_utc": "01/12/2023 05:22:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCNU1idmVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCNU1idmVnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDB5Mbveg%7CCgsIpbL-nQYQ-IroOQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "perfect atmosphere for reading and studying, also good staff"
+        },
+        {
+            "review_datetime_utc": "01/11/2023 18:29:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCeE1iV1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCeE1iV1B3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDBxMbWPw%7CCgsIj4D8nQYQgMPXIQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This location is very spacious and inviting. A really nice environment in which to browse and shop. Friendly and helpful staff."
+        },
+        {
             "review_datetime_utc": "01/04/2023 22:15:06",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCNjdXOTlnRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCNjdXOTlnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICB67W99gE%7CCgwI6vTXnQYQyPqBngM%7C?hl=en-US",
@@ -2096,12 +2117,1391 @@
             "review_text": "I love going to Barns and Nobles Book Store because I love reading"
         },
         {
-            "review_datetime_utc": "04/22/2019 13:16:28",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZeDhhZlhREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZeDhhZlhREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICYx8afXQ%7CCgsIrP325QUQ2IrgVA%7C?hl=en-US",
+            "review_datetime_utc": "04/20/2019 18:38:31",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZNi1HX3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZNi1HX3lnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICY6-G_ygE%7CCgwIp87t5QUQqOqS7QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "We have very few book stores left. Support the ones we have"
+        },
+        {
+            "review_datetime_utc": "04/19/2019 19:35:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZaTRTSHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZaTRTSHJRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICYi4SHrQE%7CCgsIgsbo5QUQ6PfXHA%7C?hl=en-US",
             "review_rating": 5,
-            "review_text": "Endless supply"
+            "review_text": "Staff is so helpful! If you don't see it on the shelf...just ask and they will find it"
+        },
+        {
+            "review_datetime_utc": "04/18/2019 06:21:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZbzl1c3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZbzl1c3ZBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICYo9usvAE%7CCgwIhq_g5QUQuOubvgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The is a very nice store, many things here, sit read, listen to music or have coffee with you new book."
+        },
+        {
+            "review_datetime_utc": "04/16/2019 14:43:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZLWNhdTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZLWNhdTlBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICY-cau9AE%7CCgwIlNTX5QUQ6PaTjgM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Such a long wait to check out"
+        },
+        {
+            "review_datetime_utc": "04/15/2019 18:35:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZMmZDWHlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZMmZDWHlnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICY2fCXygE%7CCgsI_p3T5QUQuLrUaw%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Books"
+        },
+        {
+            "review_datetime_utc": "04/10/2019 02:46:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZOG8yS0dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZOG8yS0dREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICY8o2KGQ%7CCgwIlLK15QUQkKiFvwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Love this store. Just wish the elevator was jn front and there was a better handicap ramp for Starbucks"
+        },
+        {
+            "review_datetime_utc": "04/05/2019 21:48:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJNmVuXzZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJNmVuXzZnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI6en_6gE%7CCgwInZqf5QUQyPnB7QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best bookstore in Charlotte! The layout is awesome and the selection of books are endless. Very nice staff!"
+        },
+        {
+            "review_datetime_utc": "04/03/2019 00:58:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZeExHMFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZeExHMFRnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICYxLG0Tg%7CCgwIsIqQ5QUQgNP30QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We need more Barnes and Nobles. I love to read and I like to buy my books there, not online"
+        },
+        {
+            "review_datetime_utc": "04/02/2019 19:29:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZaFBlUFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZaFBlUFp3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICYhPePZw%7CCgsInPCO5QUQiOagGA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Pricey"
+        },
+        {
+            "review_datetime_utc": "03/26/2019 18:41:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvN19Ed2FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvN19Ed2FBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo7_DwaA%7CCgwI3-Tp5AUQsJm97AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A good place to slow down and pick a good book and have a cup of coffee."
+        },
+        {
+            "review_datetime_utc": "03/26/2019 14:20:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURvcl9ieWxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURvcl9ieWxBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDor_bylAE%7CCgwIpOro5AUQuJbttAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice and clean but the area in which to park is shared with so many other businesses that it is hard to find parking"
+        },
+        {
+            "review_datetime_utc": "03/24/2019 21:28:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvMV9INFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvMV9INFp3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo1_H4Zw%7CCgwIhO3f5AUQiLWi-wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I love going here, but they are always trying to sell me the yearly membership."
+        },
+        {
+            "review_datetime_utc": "03/24/2019 14:57:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvbDk2RWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvbDk2RWJBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDol96EbA%7CCgwI67Xe5AUQ2N-7wwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to read/do some work. They have a caffe that serves Starbucks. Great selection of books for all ages."
+        },
+        {
+            "review_datetime_utc": "03/21/2019 20:08:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvOC1lbkVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvOC1lbkVBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo8-enEA%7CCgwIpt7P5AUQ4IeSwAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great service although they didn't have the book I was looking for."
+        },
+        {
+            "review_datetime_utc": "03/21/2019 00:55:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvMF9uLUFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvMF9uLUFnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo0_n-Ag%7CCgwImsLL5AUQuPeziAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it"
+        },
+        {
+            "review_datetime_utc": "03/19/2019 13:02:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvZ19xaU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvZ19xaU13EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDog_qiMw%7CCgsIz9DD5AUQ8JLsag%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "They were very helpful and it is such a pretty store."
+        },
+        {
+            "review_datetime_utc": "03/19/2019 07:33:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvalp2SVRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvalp2SVRnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDojZvITg%7CCgwI4rbC5AUQyL-suAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice, easily laid out, and very clean."
+        },
+        {
+            "review_datetime_utc": "03/18/2019 23:35:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvcWRla1BnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvcWRla1BnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDoqdekPg%7CCgwIsNbA5AUQwLKzkQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Even though I order lots of books online,  I still love going to bookstores and actually spending time in them.  The staff is very helpful and friendly."
+        },
+        {
+            "review_datetime_utc": "03/18/2019 01:39:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvX3VLVEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvX3VLVEpBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo_uKTJA%7CCgwI1-275AUQkIjK9wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Always a great place to go"
+        },
+        {
+            "review_datetime_utc": "03/16/2019 17:38:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvN3RqYVhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvN3RqYVhnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo7tjaXg%7CCgsIium05AUQwLWXIw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff. Starbucks inside. Comfortable chairs upstairs to chill out."
+        },
+        {
+            "review_datetime_utc": "03/10/2019 12:53:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaVpfYlZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaVpfYlZ3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAiZ_bVw%7CCgwIzZGU5AUQ0J2szgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good selection of books and magazines. The setting soothes & relaxes me. I never feel that I am in a rush."
+        },
+        {
+            "review_datetime_utc": "03/08/2019 16:11:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURva0lLS0lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURva0lLS0lnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDokIKKIg%7CCgwIoKiK5AUQ-N-RjAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Enjoyed the cafe that is inside Barnes & Noble."
+        },
+        {
+            "review_datetime_utc": "03/08/2019 11:38:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvNExuZWJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvNExuZWJREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDo4LnebQ%7CCgwIqaiJ5AUQuNywjwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Not just for books! Big toy selection. Very friendly place."
+        },
+        {
+            "review_datetime_utc": "03/05/2019 14:23:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvajhIWnJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvajhIWnJBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoj8HZrAE%7CCgwI5oz64wUQqNPt7QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Well stocked. Clean and a nice quiet place to read. Friendly staff"
+        },
+        {
+            "review_datetime_utc": "03/03/2019 06:09:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvaDVPbUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaDVPbUFREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoh5OmAQ%7CCgwInd_t4wUQyNe6hAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection. Above average pricing. Large child selection."
+        },
+        {
+            "review_datetime_utc": "03/02/2019 23:30:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvaDlqdUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaDlqdUJnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoh9juBg%7CCgsInaTs4wUQkMaZPg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice staff. 190302 ."
+        },
+        {
+            "review_datetime_utc": "02/22/2019 15:39:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvalk2NU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvalk2NU5REAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICojY65NQ%7CCgsIr6_A4wUQsMSzOQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very nice store.  Staff helpful"
+        },
+        {
+            "review_datetime_utc": "02/18/2019 11:33:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvd2NTVnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvd2NTVnR3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICowcSVtwE%7CCgwIj7Cq4wUQkMvirQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always loved B&N"
+        },
+        {
+            "review_datetime_utc": "02/16/2019 01:05:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvcm9Dd2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvcm9Dd2NBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoroCwcA%7CCgsIvcOd4wUQoOzKQA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This B&N is a great destination for a rainy Sunday afternoon, especially if you have kids. The children's section is good for younger kids who want to look at picture books or play with the train set, and it's great for the older kids to find a place to sit and read. For the adults there's of course plenty or reading material and the Starbucks-ish cafe. Their little game section has grown and is actually kind of impressive for a chain bookstore. On the down side you can't use the Starbucks app at the cafe, and there's often no seats available. Parking is also scarce as others have noted. Overall, though, it's a positive experience."
+        },
+        {
+            "review_datetime_utc": "02/14/2019 19:07:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvdHY2eFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvdHY2eFp3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICotv6xZw%7CCgwIifmW4wUQ-OHi2AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great location. Wonderful energy. Lots of kind available help."
+        },
+        {
+            "review_datetime_utc": "02/12/2019 03:22:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvdXNhZjdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvdXNhZjdBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICousaf7AE%7CCgsI-PeI4wUQ0JTiQA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to spend some time with my boys."
+        },
+        {
+            "review_datetime_utc": "02/09/2019 23:22:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvaXVMbi1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvaXVMbi1RRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoiuLn-QE%7CCgsIs8H94gUQwKCEAg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place to relax and learn something new"
+        },
+        {
+            "review_datetime_utc": "02/07/2019 07:55:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvM0tlT01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvM0tlT01REAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICo3KeOMQ%7CCgwIhMnv4gUQkMvC8AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Well stocked with new released and older volumes. Freindly and knowledgeable staff."
+        },
+        {
+            "review_datetime_utc": "02/01/2019 03:14:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvME1qNW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvME1qNW13RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICo0Mj5mwE%7CCgwIjfPO4gUQ6r7XxAE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Was trying to read a book and music was very loud. Didn't like that."
+        },
+        {
+            "review_datetime_utc": "01/27/2019 11:59:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJejR6c29BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJejR6c29BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIz4zsoAE%7CCgsIoLq24gUQxsDHCQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A wonderful place to spend a little bit of time with our kids. The store is welcoming and gets kids excited to read."
+        },
+        {
+            "review_datetime_utc": "01/26/2019 04:59:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJMTRIR3hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJMTRIR3hBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI14HGxAE%7CCgwIttKv4gUQuszZ6AE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Love the smell of a book store.  Thanks for helping us find the book we were looking for."
+        },
+        {
+            "review_datetime_utc": "01/25/2019 15:16:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJbDlDYXd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJbDlDYXd3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIl9CawwE%7CCgwI3tCs4gUQ8qCPtwE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Could not find an employee anywhere except the registers"
+        },
+        {
+            "review_datetime_utc": "01/25/2019 13:12:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJNThQbEZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJNThQbEZnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI58PlFg%7CCgwI1Zas4gUQk56g5AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Heapful and knowledgeable! The place to shop for gifts"
+        },
+        {
+            "review_datetime_utc": "01/21/2019 05:59:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJaTVpR25RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJaTVpR25RRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIi5iGnQE%7CCgwI37-V4gUQpIvFtAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome!"
+        },
+        {
+            "review_datetime_utc": "01/14/2019 20:45:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJdGE3aEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJdGE3aEVnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIta7hEg%7CCgsI5Onz4QUQwr2UdA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This is my favorite among chain bookstores. It is vast, 2 stories; they have most books and printed matter that I ever go looking for; and they have many other offerings - gifts, toys, writing tools, etc. The staff is very friendly & very helpful. A great place for a bibliophile to spend an hour or two. Parking is the big negative and the reason for only 4 stars. There is a slightly hidden deck within the shopping complex (save yourself some trouble & just go straight to it when the lot is really crowded) but the walk is a couple of hundred yards & directional signage is close to nil."
+        },
+        {
+            "review_datetime_utc": "01/13/2019 15:50:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdTVYMTFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdTVYMTFnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQu5X11gE%7CCgwIvrzt4QUQqJ6i-QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Happy Place!"
+        },
+        {
+            "review_datetime_utc": "01/13/2019 13:11:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJcGRXMXlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJcGRXMXlnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIpdW1ygE%7CCgsIgPLs4QUQ3bHFOg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "They have a huge selection of Funko Pop! thanks, the drinks from the cafe are delicious, and the employees are friendly and helpful!"
+        },
+        {
+            "review_datetime_utc": "01/12/2019 15:05:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJLVpYbGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJLVpYbGpBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI-ZXljAE%7CCgwIvoTo4QUQu67gsgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A very helpful staff, in this day and age, an actual bookstore must go above and beyond, they do. Knowledgable and genuinely nice but interested in what you have to say."
+        },
+        {
+            "review_datetime_utc": "01/06/2019 12:44:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJM3VQckxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJM3VQckxREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI3uPrLQ%7CCgwIpfDH4QUQ-t-BngE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just a great place to buy some books and kick back with some Starbucks at the same time!"
+        },
+        {
+            "review_datetime_utc": "01/06/2019 11:33:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJM3JtbEJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJM3JtbEJREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI3rmlBQ%7CCgwIiM_H4QUQoei9pwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love going into the store and just read."
+        },
+        {
+            "review_datetime_utc": "01/06/2019 02:53:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJbnVISjhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJbnVISjhBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDInuHJ8AE%7CCgwIptvF4QUQ_LHEiQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! Team members are super helpful and nice"
+        },
+        {
+            "review_datetime_utc": "01/05/2019 06:58:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJem9QNFRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJem9QNFRREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIzoP4TQ%7CCgwIs6vB4QUQ2sXa0QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "😍😍😍😍😍😍😍 it smells like books and coffee 😍😍😍😍"
+        },
+        {
+            "review_datetime_utc": "01/01/2019 07:05:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJMnR2dW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJMnR2dW9nRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI2tvuogE%7CCgwIzqKs4QUQxPLC6QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome customer service. Nice store layout. Great selection of books at this location."
+        },
+        {
+            "review_datetime_utc": "12/31/2018 06:50:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJNnRhall3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJNnRhall3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI6tajYw%7CCgwIpPim4QUQk-qJ1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super friendly and helpful staff."
+        },
+        {
+            "review_datetime_utc": "12/30/2018 03:43:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJaXFqSG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJaXFqSG13RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIiqjHmwE%7CCgsI6v2g4QUQ9t7afw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The people who work here are great, the fact that its local and quiet, its like a library but better"
+        },
+        {
+            "review_datetime_utc": "12/29/2018 08:13:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJMHJITU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJMHJITU5nEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI0rHMNg%7CCgwIxNmc4QUQ5sDzrQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Stuff"
+        },
+        {
+            "review_datetime_utc": "12/29/2018 06:46:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJMHNhMG5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJMHNhMG5nRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI0sa0ngE%7CCgwIvLCc4QUQ-NWC1QM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "💖 Close location. Good selection."
+        },
+        {
+            "review_datetime_utc": "12/29/2018 02:03:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJa3NldnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJa3NldnJRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIksevrQE%7CCgwI4aub4QUQ6MSGywI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The folks that work there are always willing to help to ensure you got exactly what you need."
+        },
+        {
+            "review_datetime_utc": "12/25/2018 00:26:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJekpQM3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJekpQM3FnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIzJP3qgE%7CCgwI0vKF4QUQr7af_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection of books and Classic Vinyl!"
+        },
+        {
+            "review_datetime_utc": "12/23/2018 03:07:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbE12QVVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbE12QVVnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIlMvAUg%7CCgwI9vf74AUQ_qmv2wI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good place"
+        },
+        {
+            "review_datetime_utc": "12/22/2018 19:29:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbE1EYVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbE1EYVN3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIlMDaSw%7CCgwI_qD64AUQ0ubwjQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Books, coffee, assistance... what else can I say"
+        },
+        {
+            "review_datetime_utc": "12/19/2018 12:42:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJcUotWDFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJcUotWDFBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIqJ-X1AE%7CCgsI0_no4AUQh5KrJg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "My favorite place to go Christmas shopping.  Great gift ideas and excellent service."
+        },
+        {
+            "review_datetime_utc": "12/18/2018 21:06:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJeVBDZFJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJeVBDZFJBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIyPCdRA%7CCgwI7cLl4AUQ09---wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "2-stories. Has a Starbucks. In a high-rent district. So it's pretty well-tended and there's lots of nice shopping and restaurants all around. Very nice area. But parking is limited, so don't bet on getting up close. There is a parking deck if you really need it."
+        },
+        {
+            "review_datetime_utc": "12/18/2018 16:42:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJaVBiSlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJaVBiSlR3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIiPbJTw%7CCgwIhcfk4AUQ9MiZxgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It is a great place for families. The kids section is upstairs, it is very cozy, lot of books and toys. There is coffee on the ground level, a family can spend hours there."
+        },
+        {
+            "review_datetime_utc": "12/17/2018 01:37:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJa1BqVmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJa1BqVmRBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDIkPjVdA%7CCgwI0Pvb4AUQ-LOZmwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great"
+        },
+        {
+            "review_datetime_utc": "12/16/2018 22:45:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJNFB1TXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJNFB1TXp3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDI4PuMzwE%7CCgwImKvb4AUQ0pCYsgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of the best B&N's around town."
+        },
+        {
+            "review_datetime_utc": "12/12/2018 20:26:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJajk3cFF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJajk3cFF3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICIj97pQw%7CCgwIkN7F4AUQmPadgQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love a big & spacious book store. There were plenty of places to sit. An employee offered her assistance & walked over to my nephew to assist him. There was a guy from Starbucks handing out salted caramel coffees with a coupon. I also love that it was 2 floors and every inch of every shelf had product on it."
+        },
+        {
+            "review_datetime_utc": "12/11/2018 22:47:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJMTRtQVZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJMTRtQVZnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI14mAVg%7CCgsIi_3A4AUQy_2mXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fun"
+        },
+        {
+            "review_datetime_utc": "12/10/2018 21:41:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJcDc3YUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJcDc3YUVnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICIp77aEg%7CCgwI_Lq74AUQyZOi2QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Barnes & Noble. They have the best people that work for them."
+        },
+        {
+            "review_datetime_utc": "12/10/2018 12:25:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJeC1MOVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJeC1MOVhBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICIx-L9XA%7CCgwIrra54AUQ8P2N3AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) Very good place to buy books and Bible  (Original) Muy buen lugar para comprar libros y Biblia"
+        },
+        {
+            "review_datetime_utc": "12/07/2018 00:35:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRa29LajdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRa29LajdRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQkoKj7QE%7CCgwIvICn4AUQ_pGFzAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great book store"
+        },
+        {
+            "review_datetime_utc": "12/06/2018 22:42:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJaS1pRmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJaS1pRmhRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICIi-iFhQE%7CCgwI2sum4AUQmMbhzgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this store. Staff very knowledgeable,  friendly and happy to help customers."
+        },
+        {
+            "review_datetime_utc": "12/03/2018 01:32:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJX2RxTnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJX2RxTnd3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI_dqNwwE%7CCgwIrI-S4AUQ-oCekwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to buy books"
+        },
+        {
+            "review_datetime_utc": "11/26/2018 09:20:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJLWF1VEZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJLWF1VEZ3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI-auTFw%7CCgwIwPXu3wUQuf3EkQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I go when I want a peaceful place to study. It also always had the books that I want. Definitely one of my favorite places!!!"
+        },
+        {
+            "review_datetime_utc": "11/25/2018 22:34:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJLVlUdVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJLVlUdVBnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI-YTuPg%7CCgwIjcfs3wUQ6IWejwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent customer service and very organize store. Love the upstairs children's area."
+        },
+        {
+            "review_datetime_utc": "11/20/2018 00:50:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvdWJiY1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvdWJiY1F3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICoubbcQw%7CCgwIuLTN3wUQ2Nue2AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a good experience"
+        },
+        {
+            "review_datetime_utc": "11/14/2018 10:49:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJOXBxRGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJOXBxRGdRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI9pqDgQE%7CCgwIiezH4gUQ0KGFnQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice book store"
+        },
+        {
+            "review_datetime_utc": "11/07/2018 16:33:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvbWNqZmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvbWNqZmtRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIComcjfkQE%7CCgwI2aeM3wUQ6KXppwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lovely experience. Vast selection and knowledgeable staff eager to assist you. I called ahead to make sure that they had my book so I wouldn't waste time or gas and the young man the answer the phone was so nice and quickly looked up my book made sure it was a book I wanted went to go get my book and then put it behind the desk for me when I arrive with my name. for all you Book Lovers out there Barnes and Nobles you just can't go wrong I just love it so much and of course get your coffee.❤️💜💜😍😍"
+        },
+        {
+            "review_datetime_utc": "11/07/2018 14:58:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvcGJEVlhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvcGJEVlhnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICopbDVXg%7CCgwIl_uL3wUQgL-4igI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Store is well stocked. Good selection of merchandise. Friendly staff."
+        },
+        {
+            "review_datetime_utc": "11/04/2018 12:00:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJNHNYdFFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJNHNYdFFnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICI4sXtQg%7CCgwIz7773gUQsODluAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love bookstores in general, but Barnes and Noble is so warm and inviting!"
+        },
+        {
+            "review_datetime_utc": "10/27/2018 13:24:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3OXZuY0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3OXZuY0pREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDw9vncJQ%7CCgwIjM7R3gUQ9KvEsQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "One of my favorite B&N's in the area."
+        },
+        {
+            "review_datetime_utc": "10/20/2018 02:11:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3NExlSG5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3NExlSG5BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDw4LeHnAE%7CCgsIzJ2q3gUQptXFWQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved it!!!!"
+        },
+        {
+            "review_datetime_utc": "10/17/2018 15:52:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3M0szYVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3M0szYVhBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDw3K3aXA%7CCgwIoLWd3gUQuLHHlAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Customer Service was excellent.  They helped me find the book I was looking for & ordered one to be delivered to my house."
+        },
+        {
+            "review_datetime_utc": "10/14/2018 20:32:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3cHV5eWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3cHV5eWJBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDwpuyybA%7CCgwI2M-O3gUQ0M2W0AE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Large selection of books and others"
+        },
+        {
+            "review_datetime_utc": "10/11/2018 21:32:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3aHFicUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3aHFicUJ3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDwhqbqBw%7CCgwI7IL_3QUQsKyK8AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Helpful staff"
+        },
+        {
+            "review_datetime_utc": "10/11/2018 15:08:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3MXBLeWhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3MXBLeWhBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDw1pKyhAE%7CCgoI0M793QUQmJRK%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite place in the world"
+        },
+        {
+            "review_datetime_utc": "10/11/2018 05:12:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3dUl5bGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3dUl5bGJnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDwuIylbg%7CCgwIsrf73QUQwLHXkwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff has always been friendly and helpful when you need assistance with anything. I became a B&N member since I go there often and you get a ton of benefits too! It's just a great and quiet place to study and read."
+        },
+        {
+            "review_datetime_utc": "10/10/2018 17:54:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3MnUzaUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3MnUzaUd3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDw2u3iGw%7CCgwIxPn43QUQ6I_2swI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place to read with sip of coffee"
+        },
+        {
+            "review_datetime_utc": "10/01/2018 09:38:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbUlIa1JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbUlIa1JnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAmIHkRg%7CCgwI_9XH3QUQ-PySwwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice store"
+        },
+        {
+            "review_datetime_utc": "09/27/2018 23:55:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcE5fUnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcE5fUnFnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQpN_RqgE%7CCgwI1tu13QUQgNjVxgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "lots of books. Went for a CD.Very poor collection of music."
+        },
+        {
+            "review_datetime_utc": "09/26/2018 17:19:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRX05XcHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRX05XcHhBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ_NWpxAE%7CCgwIhv-u3QUQuN7AwQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very accessible layout with a large selection of books from many genres. Staff is engaging and helpful. The store also includes a cafe with a decent amount of seating."
+        },
+        {
+            "review_datetime_utc": "09/23/2018 12:32:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMy0yb0xBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMy0yb0xBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg3-2oLA%7CCgsI6I-e3QUQkLLmbA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I Was Greeted Nicely and I Got Help Without Havent to go Find Staff. 👍👍"
+        },
+        {
+            "review_datetime_utc": "09/23/2018 12:13:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcmFyVzlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcmFyVzlBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDArarW9AE%7CCgwI2Yae3QUQ8IWKlwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always helpful and clean"
+        },
+        {
+            "review_datetime_utc": "09/22/2018 14:26:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaU5PX1RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaU5PX1RREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAiNO_TQ%7CCgwIn6KZ3QUQ8Obr3gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection"
+        },
+        {
+            "review_datetime_utc": "09/20/2018 02:17:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnZ1BTR3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnZ1BTR3lRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDggPSGyQE%7CCgwIr4aM3QUQqKm2hwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This Barnes and Noble had a spectacular and helpful staff. Best chain bookstore experience I've ever had."
+        },
+        {
+            "review_datetime_utc": "09/14/2018 04:03:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBMjRqSUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBMjRqSUdREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDA24jIGQ%7CCgsIgubs3AUQ4Ob0Ag%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very organized. Helped the moment I walked into the bookstore. Has a Starbucks available for your convenience! Will definitely be back"
+        },
+        {
+            "review_datetime_utc": "09/10/2018 16:36:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBOUllbFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOUllbFhREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA9IelXQ%7CCgwI87ra3AUQyPPz4AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Found exactly what I needed"
+        },
+        {
+            "review_datetime_utc": "09/06/2018 00:59:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3X2VmTnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3X2VmTnhRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICw_efNxQE%7CCgwI3vfB3AUQ4Mas2gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff who are always willing to help"
+        },
+        {
+            "review_datetime_utc": "09/04/2018 23:19:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnOVB1c21BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnOVB1c21BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg9PusmAE%7CCgwI5KW83AUQ2K_VmQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very helpful shop"
+        },
+        {
+            "review_datetime_utc": "09/04/2018 13:04:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNGV6THdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNGV6THdBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQ4ezLwAE%7CCgwI7IW63AUQmMHVmwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "An excellent experience"
+        },
+        {
+            "review_datetime_utc": "08/30/2018 23:54:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3LTU2b09BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3LTU2b09BEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICw-56oOA%7CCgwImYei3AUQiIeeuQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always live a real store where you can get books on paper.  Old fashioned that way, but that's how I roll."
+        },
+        {
+            "review_datetime_utc": "08/29/2018 22:22:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMTdiOFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMTdiOFRnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA17b8Tg%7CCgsIvbmc3AUQ8JP8LQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I just went for a notebook that I was able to get first free via tmobile but the woman that was in front of the register was able to help me after looking around for awhile.  This place is awesome, it has a coffee shop inside, some seating outside, audiobooks, books or all ages and it is kept up very well. I'm looking to get one of the many videogame artbooks that I stumbled upon while looking for the notebook. Read a book America!"
+        },
+        {
+            "review_datetime_utc": "08/28/2018 23:17:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3aWJDaUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3aWJDaUdREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwibCiGQ%7CCgwIprCX3AUQ6N_okAM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The people are nice enough, but there's not a lot of reasons to shop here when you can get everything for MUCH less online. They can't price match their own website, but they CAN tell you to \"order it online, sit around waiting from 20 to 60 minutes, and then you can pick it up\" (except by that time, I'd already be at home and have completed my order from Amazon instead)"
+        },
+        {
+            "review_datetime_utc": "08/27/2018 00:23:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRa09TRVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRa09TRVFnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQkOSEQg%7CCgwI_oiN3AUQiLqw1wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent store! 5+ Stars!"
+        },
+        {
+            "review_datetime_utc": "08/18/2018 12:03:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bklDNWJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bklDNWJnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwnIC5bg%7CCgwIlJbg2wUQkPXaqwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place. Foumd everything we needed."
+        },
+        {
+            "review_datetime_utc": "08/07/2018 10:50:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNk5xTTl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNk5xTTl3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg6NqM9wE%7CCgwI7PKl2wUQgIL32gM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice place. Went during a random shopping hour. Not a single B&N employee on the 2nd floor. Had to wait 20+ minutes for the only Customer Service person at a 1st floor kiosk to become available. Nice to visit, and the staff are VERY nice, but I suppose the budget doesn't allow for proper staffing levels."
+        },
+        {
+            "review_datetime_utc": "08/05/2018 04:26:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURROEliX3FBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURROEliX3FBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQ8Ib_qAE%7CCgwI3PiZ2wUQwNHqnQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place"
+        },
+        {
+            "review_datetime_utc": "08/03/2018 16:54:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURReTVIVjh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURReTVIVjh3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQy5HV8wE%7CCgwIrZGS2wUQgIyNngI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this Barnes and Noble. Literally the only one around town I'll go to. Come here quite often just to get away from the hustle and bustle of my everyday life. Whether it's to get a coffee at the Starbucks and do some work on my laptop for an hour or two or a quick visit just to sit and breathe and browse, I've come here so often it's become almost a second home to me."
+        },
+        {
+            "review_datetime_utc": "08/02/2018 18:00:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnME52QnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnME52QnBnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg0NvBpgE%7CCgwIw42N2wUQwICpjwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome place!"
+        },
+        {
+            "review_datetime_utc": "07/31/2018 01:47:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNk9LZGF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNk9LZGF3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg6OKdaw%7CCgwIuv_-2gUQwOGUpwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love all things Barnes & Noble."
+        },
+        {
+            "review_datetime_utc": "07/26/2018 18:36:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNUkzdDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNUkzdDNRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg5I3t3QE%7CCgsIkano2gUQwMOTBw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good booofor a good price."
+        },
+        {
+            "review_datetime_utc": "07/23/2018 01:07:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnc3BqU1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnc3BqU1NBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgspjSSA%7CCgwI69TU2gUQgK398gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this Store!! That's my Peeps up in there!! Great customer service, excellent atmosphere and vibe. A blessing for the entire family!! MIT J D Washington....."
+        },
+        {
+            "review_datetime_utc": "07/20/2018 17:10:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBLV96Mm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBLV96Mm1RRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA-_z2mQE%7CCgsIkK_I2gUQwJiNbw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Clean organized store. Easy to locate near the huge mall. Parking in back available. Store's organization is somewhat difficult to follow. Reduced books mixed with full priced mixed with exceptional value, etc. But it's still a great store with lots of assorted merchandise, including toys, greeting cards, classics, etc."
+        },
+        {
+            "review_datetime_utc": "07/18/2018 02:32:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcEpQTzNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcEpQTzNRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQpJPO3QE%7CCgwI28262gUQwLCDwwE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Where have you hidden the physics and science books?"
+        },
+        {
+            "review_datetime_utc": "07/16/2018 23:54:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMjh6ZmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMjh6ZmNnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg28zfcg%7CCgwIqOC02gUQwMC2xgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "very nice place"
+        },
+        {
+            "review_datetime_utc": "07/16/2018 21:43:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOTRPZktREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOTRPZktREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg94OfKQ%7CCgwI5qK02gUQgPSWygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great people to help you find great books! Sure you can go to the library but B&N is just a fun spot to bring the kid and poke around."
+        },
+        {
+            "review_datetime_utc": "07/12/2018 22:04:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBOElXVTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOElXVTJRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA8IWU2QE%7CCgwI6aCf2gUQwIrawAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Beautiful place with coffee shop and all. Internet access and someone is always willing to help u find what u need"
+        },
+        {
+            "review_datetime_utc": "07/06/2018 22:48:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMDV5eDZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMDV5eDZBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDA05yx6AE%7CCgwI2OP_2QUQgPW7hgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you are looking for a quiet place to work or study this is your place."
+        },
+        {
+            "review_datetime_utc": "07/06/2018 16:17:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRX0l2YXJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRX0l2YXJ3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ_IvarwE%7CCgwItaz-2QUQgJrbugI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Not so great selection of magazines"
+        },
+        {
+            "review_datetime_utc": "06/30/2018 19:11:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdEtxdll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdEtxdll3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQtKqvYw%7CCgwI_qvf2QUQgLvLjwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely love Barnes & Noble.  Love  the selection of books. The workers are great."
+        },
+        {
+            "review_datetime_utc": "06/27/2018 12:54:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRanRMeHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRanRMeHV3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQjtLxuwE%7CCgsI-5HO2QUQwPLReA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place to find Criterion Collection DVDs"
+        },
+        {
+            "review_datetime_utc": "06/26/2018 16:40:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3Mm9LUDVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3Mm9LUDVRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICw2oKP5QE%7CCgwI89jJ2QUQgMaPiQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Always enjoy visiting bookstores, this one especially"
+        },
+        {
+            "review_datetime_utc": "06/26/2018 14:29:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRNXF5WVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRNXF5WVB3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ5qyYPw%7CCgsIr5vJ2QUQwM7pdA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very friendly staff.  Great book selections...they even have tables with local schools' summer reading choices organized...very convenient!"
+        },
+        {
+            "review_datetime_utc": "06/25/2018 11:42:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURna0tlSEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURna0tlSEh3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgkKeHHw%7CCgwIvarD2QUQgMXh0gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome 2 story book store. My kids love the play area and unique toy selections."
+        },
+        {
+            "review_datetime_utc": "06/24/2018 23:59:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRMEpXQ1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRMEpXQ1V3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQ0JWCUw%7CCgwIz-DA2QUQwP_62AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "the lady went up and showed us were instead of just telling us"
+        },
+        {
+            "review_datetime_utc": "06/24/2018 22:55:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRcDVlUWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcDVlUWRREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQp5eQdQ%7CCgwI5cLA2QUQgIL32gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Starbucks inside and it is quiet."
+        },
+        {
+            "review_datetime_utc": "06/19/2018 16:59:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNna0x5OTJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNna0x5OTJnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgkLy92gE%7CCgwI8uyk2QUQgPeg7QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Went in looking for summer school reading books and B&N had the books laid out with school names and made it soooooooo easy to get buy and go. Store was nice enough to wana stay tho...lol. Im just saying😃"
+        },
+        {
+            "review_datetime_utc": "06/18/2018 16:03:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbWRIMDV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbWRIMDV3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQmdH05wE%7CCgwItq-f2QUQgOPHhAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place to find books and magazines"
+        },
+        {
+            "review_datetime_utc": "06/18/2018 02:44:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRLVk2YWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRLVk2YWxnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQ-Y6algE%7CCgsInbmc2QUQgNClTA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good book selection and an excellent meet up/study spot"
+        },
+        {
+            "review_datetime_utc": "06/16/2018 22:26:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbFlEdUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbFlEdUdnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICglYDuGg%7CCgwI-5yW2QUQwPS_2QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My home away from home! Exceptional!"
+        },
+        {
+            "review_datetime_utc": "06/14/2018 18:10:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBeDhmSUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBeDhmSUd3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAx8fIGw%7CCgwIlN-K2QUQwK2UjgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very helpful"
+        },
+        {
+            "review_datetime_utc": "06/12/2018 13:58:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdE12RXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdE12RXFRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQtMvEqQE%7CCgwIlKP_2AUQwIOzsgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great store and friendly, helpful employees"
+        },
+        {
+            "review_datetime_utc": "06/09/2018 19:57:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMGNhQ2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMGNhQ2JBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ0caCbA%7CCgwIq-Lw2AUQgNfnyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good"
+        },
+        {
+            "review_datetime_utc": "06/09/2018 19:17:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndVpHc2h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndVpHc2h3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDguZGshwE%7CCgsI4M_w2AUQwOPVJQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good selection and really good sales on books."
+        },
+        {
+            "review_datetime_utc": "06/03/2018 23:35:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cDg3NS1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cDg3NS1BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwp875-AE%7CCgsI0_bR2AUQgI2pYA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selections and wonderful customer service."
+        },
+        {
+            "review_datetime_utc": "06/02/2018 09:07:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnaGRPYVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnaGRPYVlREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDghdOaYQ%7CCgwI3rzJ2AUQwO2G1wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Ketogenic book with recipes makes a perfect birthday gift for my favorite chef!!"
+        },
+        {
+            "review_datetime_utc": "05/21/2018 01:11:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnb0pXcHB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnb0pXcHB3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgoJWppwE%7CCgwI0LmI2AUQgKGCyQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection, however, the bathrooms could stand to be a bit cleaner."
+        },
+        {
+            "review_datetime_utc": "05/17/2018 21:44:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bUxmQk13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bUxmQk13EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwmLfBMw%7CCgwIse_31wUQgMOO4AE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "There was disturbing hentai about humanoid animals"
+        },
+        {
+            "review_datetime_utc": "05/16/2018 15:44:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBOTgyTk5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOTgyTk5REAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA982NNQ%7CCgwI-qPx1wUQgJrbugI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great read"
+        },
+        {
+            "review_datetime_utc": "05/16/2018 13:15:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbC1TX2JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbC1TX2JnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQl-S_bg%7CCgwI3t3w1wUQgN784gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff were very helpful in making sure I got what I was looking for."
+        },
+        {
+            "review_datetime_utc": "05/15/2018 14:15:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnaWQ2SXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnaWQ2SXFRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgid6IqQE%7CCgsIjNfr1wUQgJj2Uw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is the best Barnes and Noble you can go to in Charlotte. The staff is nice and super helpful and don't get me started about the cafe staff. They are always happy and will take the time to help you pick the right drink."
+        },
+        {
+            "review_datetime_utc": "05/10/2018 16:05:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBdTVqOGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBdTVqOGdBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAu5j8gAE%7CCgwI0tvR1wUQgOitlAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I LOVE B&N!!! I'm not an ebook type so this is my ME time!"
+        },
+        {
+            "review_datetime_utc": "05/06/2018 23:01:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRcmNLRFV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRcmNLRFV3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQrcKDUw%7CCgwIzZK-1wUQwPvd7QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Neatly maintained and the staff is friendly"
+        },
+        {
+            "review_datetime_utc": "05/05/2018 19:53:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnc19HVVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnc19HVVB3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgs_GUPw%7CCgwIoJe41wUQgP_1sQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love to shop at this store"
+        },
+        {
+            "review_datetime_utc": "04/30/2018 23:11:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdGVLeThBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdGVLeThBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQteKy8AE%7CCgwIlsWe1wUQwOSV0AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "As always everyone at this location always take customer service to another level ND always with a smile!"
+        },
+        {
+            "review_datetime_utc": "04/29/2018 19:54:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRd1pqRFB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRd1pqRFB3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQwZjDPw%7CCgsI8cWY1wUQgKfpLA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It feels peacefully been here, i found what I'm  looking for easily, staff is nice."
+        },
+        {
+            "review_datetime_utc": "04/24/2018 16:02:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNzlPYUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNzlPYUh3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA79OaHw%7CCgsIgqr91gUQgImDew%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice, warm and friendly atmosphere."
+        },
+        {
+            "review_datetime_utc": "04/18/2018 18:47:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBME9mclBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBME9mclBREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDA0OfrPQ%7CCgwIu6Xe1gUQwIar4QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It was nice. The only place you can get maps"
+        },
+        {
+            "review_datetime_utc": "04/17/2018 15:02:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNROXJUV2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROXJUV2xBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ9rTWlAE%7CCgsIjZnY1gUQwKnTOg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a bookstore. Need I say more?!?!"
+        },
+        {
+            "review_datetime_utc": "04/13/2018 19:30:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNnFMZEJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNnFMZEJ3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg6qLdBw%7CCgwIuYrE1gUQgPz0iAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Large store, but limited parking"
+        },
+        {
+            "review_datetime_utc": "04/12/2018 23:52:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMmNmdHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMmNmdHZnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDA2cftvgE%7CCgwIsOK_1gUQwPG-sAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice person helped me pick out books to read."
+        },
+        {
+            "review_datetime_utc": "04/10/2018 07:15:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBanBMR3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBanBMR3BBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAjpLGpAE%7CCgwInMmx1gUQwK_VjAE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Understaffed. Several departments have signs that say to go to main checkout for information or to checkout. But otherwise a nice place for coffee, dessert and to find reading materials."
+        },
+        {
+            "review_datetime_utc": "04/09/2018 23:07:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMjhYM3dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMjhYM3dnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg28X3wgE%7CCgsIn-Sv1gUQwP_xXg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice quiet place to read, write, y enjoy café"
+        },
+        {
+            "review_datetime_utc": "04/05/2018 18:38:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnZ2NqaG5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnZ2NqaG5BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICggcjhnAE%7CCgwIqtqZ1gUQgOWj8QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVE this store. It's my favorite. Best service that I could get. Friendly staff. My kids the love to be here. Thanks Barns and Nobel"
+        },
+        {
+            "review_datetime_utc": "03/26/2018 16:31:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdThqWFJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdThqWFJBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAu8jXRA%7CCgwI9sDk1QUQwIj12QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection!"
+        },
+        {
+            "review_datetime_utc": "03/26/2018 01:21:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbmZDeHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbmZDeHNRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgnfCxsQE%7CCgwIlpbh1QUQwNT9ugM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Finally a place that actually will help me when they see me standing around clearly needing help. Thanks yall"
+        },
+        {
+            "review_datetime_utc": "03/21/2018 00:36:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURneGJ5SHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURneGJ5SHZnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgxbyHvgE%7CCgwI_9HG1QUQwLmPuAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love that there are lots of comfy chairs to sit here. You could get lost in this store. One of my favorite Barnes and noble."
+        },
+        {
+            "review_datetime_utc": "03/14/2018 03:46:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcnV5eHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcnV5eHdnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQruyxwgE%7CCgwInbai1QUQgOiboAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great environment, the Starbucks is great, and they almost always have the book in stick that I need."
+        },
+        {
+            "review_datetime_utc": "03/13/2018 19:48:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMzltNmlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMzltNmlBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg39m6iAE%7CCgwIqdag1QUQwLviqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great kids story time for the little ones!"
+        },
+        {
+            "review_datetime_utc": "03/12/2018 03:55:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRcUpMNmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcUpMNmRBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQqJL6dA%7CCgsInvSX1QUQwPb3XQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it"
+        },
+        {
+            "review_datetime_utc": "03/10/2018 20:25:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBd295MjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBd295MjhRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAwoy28QE%7CCgwIrv6Q1QUQgNKKswI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always has fantasy baseball books"
+        },
+        {
+            "review_datetime_utc": "03/02/2018 09:33:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBdGFmUzdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBdGFmUzdRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAtafS7QE%7CCgwIzrTk1AUQgPSWygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best place to find a great gift"
+        },
+        {
+            "review_datetime_utc": "03/01/2018 23:40:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNzRqWS1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNzRqWS1nRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg74jY-gE%7CCgwIi5_i1AUQgPGVoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The BEST"
+        },
+        {
+            "review_datetime_utc": "02/28/2018 21:39:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRcmZ1b0RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcmZ1b0RnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQrfuoDg%7CCgwI-MLc1AUQwNWQgwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "loved the layout & the people were very helpful"
+        },
+        {
+            "review_datetime_utc": "02/23/2018 13:26:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdl9YcXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdl9YcXl3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQv_XqywE%7CCgsI96zA1AUQgIaCUg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place to grab a book and a coffee"
+        },
+        {
+            "review_datetime_utc": "02/22/2018 18:53:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBLWN1UUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBLWN1UUZREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA-cuQFQ%7CCgwIm6O81AUQgPGnlQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I went there because I was looking for a book for my grandson and they held the book for me they were very helpful"
+        },
+        {
+            "review_datetime_utc": "02/21/2018 11:53:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcTVMaThBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcTVMaThBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQq5Li8AE%7CCgwItru11AUQgNuNrgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Favorite b&n in the area"
+        },
+        {
+            "review_datetime_utc": "02/19/2018 12:45:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURneGNETUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURneGNETUlBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDgxcDMIA%7CCgsIho6r1AUQgN-YJQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very helpful staff willing to look up titles for you and hold at the front desk"
+        },
+        {
+            "review_datetime_utc": "02/18/2018 03:49:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncWZpaXhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncWZpaXhnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgqfiixgE%7CCgwIse-j1AUQgJ6BoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) Excellent attention.  (Original) Excelente atención."
+        },
+        {
+            "review_datetime_utc": "02/16/2018 02:24:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBck9ISV9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBck9ISV9BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDArOHI_AE%7CCgwIyoGZ1AUQwLCVtwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great spot"
+        },
+        {
+            "review_datetime_utc": "02/14/2018 20:59:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBaHFxM3RRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBaHFxM3RRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAhqq3tQE%7CCgsIocaS1AUQgJj2Uw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's Barns and Noble, what could be better?  Surround by books, love it.  Staff was very helpful, found the book I was looking for, I've never been disappointed at any Barns & Noble store I have visited."
+        },
+        {
+            "review_datetime_utc": "02/11/2018 20:11:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBZ2FMS3hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBZ2FMS3hnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAgaLKxgE%7CCgwIj8eC1AUQwJ6htQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Not much in way of sales for toys.  Service good and a nice cafe."
+        },
+        {
+            "review_datetime_utc": "02/10/2018 16:30:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBd1lIeElREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBd1lIeElREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAwYHxIQ%7CCgwIi7z80wUQwK_VjAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Lot of history in local interest section. In fact I really didn't get the chance to look at anything else there was so much in there."
+        },
+        {
+            "review_datetime_utc": "02/10/2018 03:57:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRN08tWDhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRN08tWDhBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQ7O-X8AE%7CCgwIjdv50wUQgIHAqgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service... Attentive staff.  Upon entering we were asked if there was anything they could help us find.  At first we were merely browsing.  Later when we decided to seek out the \"required reading\" section for our daughter, the associate gave us a general explanation followed by a personal escort to the section in question.  In addition, this store is very clean and quite well organized.  The cashier was friendly and pleasant... All in all an enjoyable shopping adventure."
+        },
+        {
+            "review_datetime_utc": "02/09/2018 14:48:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOGRyOTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOGRyOTVBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg8dr95AE%7CCgsIxOn20wUQgOrlGA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice hotel but needed extra towels and called guest services and no one answered. Called the front desk and never received the towels when needed."
+        },
+        {
+            "review_datetime_utc": "02/08/2018 16:31:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRenRhYkxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRenRhYkxREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQztabLQ%7CCgwI8fbx0wUQgI2y2gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best book stores in town"
+        },
+        {
+            "review_datetime_utc": "02/07/2018 00:26:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3cWNyaEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3cWNyaEh3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwqcrhHw%7CCgwIn4_p0wUQwOWxkgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome"
+        },
+        {
+            "review_datetime_utc": "02/04/2018 14:17:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNROE51dGZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNROE51dGZREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ8NutfQ%7CCgwI-Kvc0wUQwPvU8wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the friendly atmosphere. The employees are always willing to help you."
+        },
+        {
+            "review_datetime_utc": "02/02/2018 15:24:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnX19ER3h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnX19ER3h3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICg__DGxwE%7CCgwIuYXS0wUQgLjK5gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Short on people but still helped me find what I was looking for."
+        },
+        {
+            "review_datetime_utc": "01/31/2018 20:43:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMElyUkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMElyUkZ3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg0IrRFw%7CCgsI4tTI0wUQgNfMWg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great store! Lots of good deals as well."
+        },
+        {
+            "review_datetime_utc": "01/30/2018 21:15:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3dk5pa2RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dk5pa2RnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwvNikdg%7CCgwI1sDD0wUQgL_fgAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great collection of books"
+        },
+        {
+            "review_datetime_utc": "01/25/2018 13:11:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMFBDUnNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMFBDUnNBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA0PCRsAE%7CCgwI-q6n0wUQgIHJpAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cozy and friendly ❤"
+        },
+        {
+            "review_datetime_utc": "01/23/2018 14:21:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcS02VHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcS02VHhRRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAq-6TxQE%7CCgsI6omd0wUQgM2kIw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Helpful and friendly people! Love a great bookstore!!"
+        },
+        {
+            "review_datetime_utc": "01/23/2018 11:38:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdi1LMlBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdi1LMlBnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQv-K2Pg%7CCgsIsL2c0wUQgMvRMA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great place to sit down with a cup of coffee and take in the environment....."
+        },
+        {
+            "review_datetime_utc": "01/22/2018 02:22:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3dEl2WEd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dEl2WEd3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICwtIvXGw%7CCgwI9ZWV0wUQgOzK_wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place."
+        },
+        {
+            "review_datetime_utc": "01/18/2018 19:34:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBaVBLQUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaVBLQUNREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAiPKACQ%7CCgwI2-2D0wUQgIXdlQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A real book store..."
+        },
+        {
+            "review_datetime_utc": "01/18/2018 13:15:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnOTY3cEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnOTY3cEpBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg967pJA%7CCgwIjLyC0wUQgJ-40AM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Everything was good at Barnes & Noble except this douche that worked on the second floor. True jerk-off, very impatient and unhelpful"
+        },
+        {
+            "review_datetime_utc": "01/16/2018 14:57:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRNVpYYnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRNVpYYnhBRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ5ZXbxAE%7CCgwI6KX40gUQgPvPzAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee shop staff"
+        },
+        {
+            "review_datetime_utc": "01/14/2018 02:26:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM0w2NzN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM0w2NzN3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICQ3L673wE%7CCgwI2P_q0gUQwOuz5AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great customer service"
+        },
+        {
+            "review_datetime_utc": "01/10/2018 01:32:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnbGJhWkhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnbGJhWkhREAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDglbaZHQ%7CCgwIvdrV0gUQgPCC2QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I had a great time at the Starbucks with Charlotte Urban Sketchers!"
+        },
+        {
+            "review_datetime_utc": "01/07/2018 20:09:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRaTRERV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRaTRERV9nRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQi4DE_gE%7CCgwIj_3J0gUQwNKhzgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very helpful in allowing us to exchange items without receipts"
+        },
+        {
+            "review_datetime_utc": "01/07/2018 18:12:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3X3BEbTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3X3BEbTB3RRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICw_pDm0wE%7CCgwIgsbJ0gUQwOSV0AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Have amazing selection of books and when you buy a book you can sit down and have a nice snack while reading the book you have bought 🤗😍"
+        },
+        {
+            "review_datetime_utc": "01/06/2018 13:30:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBLWNPNFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBLWNPNFN3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICA-cO4Sw%7CCgwI357D0gUQgJO0rAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Barnes & Noble is a great bookstore."
+        },
+        {
+            "review_datetime_utc": "12/29/2017 01:52:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncmY2RXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncmY2RXVnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgrf6EugE%7CCgwI3L-W0gUQgKPetQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A great Barnes and Noble location. They could update their seating and have more of it. Love being here."
+        },
+        {
+            "review_datetime_utc": "12/25/2017 19:00:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdjVITWRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdjVITWRBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAv5HMdA%7CCgsI0JWF0gUQgPnhaw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) unique things  (Original) Cosas unicas"
+        },
+        {
+            "review_datetime_utc": "12/22/2017 20:57:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBeHZhVmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeHZhVmNBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAxvaVcA%7CCgwIzuP10QUQgIHAqgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Crowded, yet moving smoothly"
+        },
+        {
+            "review_datetime_utc": "12/22/2017 13:59:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBb09la29BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBb09la29BRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAoOekoAE%7CCgsIzJ_00QUQwJ3YEA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Barnes and Noble is one of very few, franchise, brick and mortar stores left. They have a very large selection of books that don't show up in the electronic stores. There are other forms of media available as well as in-store specials. There's something special about going into a book store and physically seeing the hard copy books and walking the shelved aisles. It is a unique and passing  experience. Barnes and Noble keeps this experience alive in a diminishing market. I don't find them to be much different from other large chain bookstores, but they have all thinned out recently, and it's nice to see them here and there. I like the smaller and rarer individually owned bookstores as well."
+        },
+        {
+            "review_datetime_utc": "12/19/2017 16:34:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBek9QMmhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBek9QMmhnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICAzOP2hgE%7CCgsIiP_k0QUQgM7SWQ%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Great store, horrible staff. Ask a question and your not dressed to the nines - you'll get a snide, general answer."
+        },
+        {
+            "review_datetime_utc": "12/18/2017 17:46:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMzZYR0NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMzZYR0NnEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDg36XGCg%7CCgwI-_3f0QUQgL_fgAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great movie selection at this location."
+        },
+        {
+            "review_datetime_utc": "11/24/2017 17:38:47",
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSURBanJzUBAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURBanJzUBAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDAjrsP%7CCgsIp7Lh0AUQgKm8Hw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love to touch real books and discover hidden gems, such as vynil records and how to packets. Go have a cup of coffee/ tea and spend some time browsing."
+        },
+        {
+            "review_datetime_utc": "11/21/2017 04:46:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRanQyX1p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRanQyX1p3EAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgIDQjt2_Zw%7CCgwItN_O0AUQgNrNgwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Bring there reminded me of the old times."
+        },
+        {
+            "review_datetime_utc": "11/21/2017 00:10:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNneDRtWUNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNneDRtWUNBEAE!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICgx4mYCA%7CCgwI-93N0AUQgNrW_QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The only bad part was the limited parking spaces."
+        },
+        {
+            "review_datetime_utc": "11/14/2017 18:01:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3LWN6QXFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3LWN6QXFnRRAB!2m1!1s0x0:0x6481f31a69ca19f2!3m1!1s2@1:CIHM0ogKEICAgICw-czAqgE%7CCgwIgN-s0AUQgO2BsAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff  here are superbly knowledgeable and incredibly sensitive to young children's needs"
         }
     ],
-    "total_reviews_count": 1253
+    "total_reviews_count": 1258
 }

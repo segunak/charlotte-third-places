@@ -1,8 +1,14 @@
 import os
 import json
+import dotenv
+import base64
 import logging
+import requests
 from datetime import datetime
 from unidecode import unidecode
+from azure.storage.filedatalake import DataLakeServiceClient
+
+dotenv.load_dotenv()
 
 def format_place_name(input_string: str) -> str:
     """
@@ -56,6 +62,54 @@ def save_reviews_locally(airtable_place_name: str, reviews_output: dict):
     # Write the data to a JSON file
     with open(review_file_path, "w", encoding="utf-8") as write_file:
         json.dump(reviews_output, write_file, ensure_ascii=False, indent=4)
+        
+def save_reviews_azure(json_data, review_file_name):
+    datalake_connection_string = os.environ['AzureWebJobsStorage']
+    datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
+    file_system_client = datalake_service_client.get_file_system_client(file_system="data")
+    directory_client = file_system_client.get_directory_client("reviews")
+    file_client = directory_client.get_file_client(review_file_name)
+    file_client.upload_data(data=json_data, overwrite=True)
+
+def save_reviews_github(json_data, review_file_name):
+    """ Saves the given JSON data to the specified file path in the GitHub repository. """
+    try:
+        github_token = os.environ['GITHUB_PERSONAL_ACCESS_TOKEN']
+        headers = {
+            "Authorization": f"token {github_token}",
+            "Accept": "application/vnd.github.v3+json"
+        }
+        repo_name = "segunak/charlotte-third-places"
+        branch = "master"
+        
+        # Check if the file exists to get the SHA
+        # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
+        url_get = f"https://api.github.com/repos/{repo_name}/contents/data/reviews/{review_file_name}?ref={branch}"
+        get_response = requests.get(url_get, headers=headers)
+        if get_response.status_code == 200:
+            sha = get_response.json()['sha']
+        else:
+            sha = None  # If the file does not exist, we'll create a new file
+
+        # Construct the data for the PUT request to create/update the file
+        # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
+        url_put = f"https://api.github.com/repos/{repo_name}/contents/data/reviews/{review_file_name}"
+        commit_message = "Updating reviews data"
+        data = {
+            "message": commit_message,
+            "content": base64.b64encode(json_data.encode()).decode(),
+            "branch": branch
+        }
+        if sha:
+            data['sha'] = sha  # If updating an existing file, we need to provide the SHA
+
+        # Make the PUT request to create/update the file
+        put_response = requests.put(url_put, headers=headers, data=json.dumps(data))
+        return put_response.status_code in {200, 201} 
+
+    except Exception as e:
+        logging.error(f"Failed to save to GitHub: {str(e)}")
+        return False
 
 def setup_logging(self):
     """Set up logging to file and console in the directory where the class file is located."""

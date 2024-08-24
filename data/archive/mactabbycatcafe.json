@@ -3,6 +3,27 @@
     "place_name": "Mac Tabby Cat Café",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 03:03:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCM01LWF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCM01LWF9BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDB3MKX_AE%7CCgwI_raIngYQyLLl2AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is heaven on earth! I loved every minute of my experience. I can't wait to go back!"
+        },
+        {
+            "review_datetime_utc": "01/09/2023 17:06:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCa01YUFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCa01YUFVREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDBkMXPUQ%7CCgwIrpPxnQYQqJS73gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "SO impressed! MacTabby turned out to be one of our favorite stops while visiting Charlotte/Concord. I had heard of cat cafes before and while I would not consider myself a cat person (allergies) I always thought the concept was genius and would not hesitate to support it. As a result, we decided on an afternoon coffee after a hike and made the drive down to MacTabby. The cafe portion of the experience was great. The coffee flavors/options were unique and I had a hard time narrowing my selections down to something I would like because everything seemed awesome. This is separate and sectioned off so you can have your beverage in a different location and NOT socialize with the cats if you don't want to. The cat portion of the experience was so sweet. I took some allergy meds and just went for it...It was $8 for 30 minutes and the kitties were so social. Very friendly, very cute and very well cared for. Overall this was a wonderful experience that comes highly recommended if you're looking for a cat to adopt and/or just need some time with a little kitty that wants to be loved on."
+        },
+        {
+            "review_datetime_utc": "01/08/2023 04:21:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbi1IUlpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbi1IUlpBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICBn-HRZA%7CCgwIzonpnQYQ0OWmyAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place!! Anyone who plans on going please try to not “hog” cats. I try to be courteous and move around the room so everyone, including myself, can meet all the cats. There was a couple today that hogged 4 of the most cuddly cats there, and weren't even petting them :( it left 8 of us to share about 6 cats and about half of those were skiddish and didn't like to be touched a lot, so we ended up just sitting there. This isn't Mac Tabby's fault at all. Just a reminder to everyone going. Especially since these cats are up for adoption we want everyone to get a chance to meet all the cats!!"
+        },
+        {
             "review_datetime_utc": "01/03/2023 21:56:35",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCczZiZlV3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCczZiZlV3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICBs6bfUw%7CCgwIk8nSnQYQqJWwpwI%7C?hl=en-US",
@@ -560,7 +581,7 @@
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXNXQyQ29RRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXNXQyQ29RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICW5t2CoQE%7CCgwIuqrlkAYQ8PX2rwE%7C?hl=en-US",
             "review_rating": 5,
-            "review_text": "(Translated by Google) I loved this place ...  (Original) Amé este lugar..."
+            "review_text": "(Translated by Google) I loved this place...  (Original) Amé este lugar..."
         },
         {
             "review_datetime_utc": "02/25/2022 18:47:49",
@@ -2101,7 +2122,1386 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwNnN1b1FBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC06suoQA%7CCgsI5Lq57AUQwOihGg%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "Really great place. Friendly staff, giving cats a great life while awaiting rescue. Prices reasonable and largely going to care of the animals. Great coffee and good selection of local beer."
+        },
+        {
+            "review_datetime_utc": "09/26/2019 16:35:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwanBmdHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwanBmdHhBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC0jpftxAE%7CCgsI4tGz7AUQyPjvSA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cats. Coffee. Like, lots of fun, great flavors. Of both cats and coffee."
+        },
+        {
+            "review_datetime_utc": "09/24/2019 22:52:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwNW83eWxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwNW83eWxBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC05o7ylAE%7CCgwImryq7AUQyNSw2AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My 6 year old loved playing with the fun cats while I relaxed in the sun with the calm cats. We will bring friends here and return when we are ready to adopt our own cat! Great drinks too!"
+        },
+        {
+            "review_datetime_utc": "09/22/2019 12:26:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwNm9TOXN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwNm9TOXN3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC06oS9swE%7CCgsI9dCd7AUQ8PK_Gw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A wonderful experience.   My daughter loved the cat cafe part.  It is such a relaxing and inviting place to go to.  We will definitely be back to pet those precious kitties."
+        },
+        {
+            "review_datetime_utc": "09/15/2019 01:00:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMweE5MaFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMweE5MaFVREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC0xNLhUQ%7CCgwIqpr26wUQuLvAtAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff and wonderful cats. My visit was very pleasant."
+        },
+        {
+            "review_datetime_utc": "09/14/2019 15:23:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwLU1YMXZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwLU1YMXZRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC0-MX1vQE%7CCgwI94v06wUQoMnRhwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super fun place with beyond adorable cats and delicious drinks"
+        },
+        {
+            "review_datetime_utc": "09/06/2019 01:08:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVLTRyb0pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVLTRyb0pBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU-4roJA%7CCgwIoOPG6wUQsMbFjgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing!"
+        },
+        {
+            "review_datetime_utc": "09/05/2019 19:15:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVdV83WF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVdV83WF9nRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUu_7X_gE%7CCgsIwLbF6wUQuJGEKQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Extremely friendly, down-to-earth staff and the best employees were the cats!! $8 for 30 min or $12 for 1 hour (30 mins is better, since an hour felt long). We chose this place because it was open until 9:00 pm!!  When we first entered the cat playroom, four cats ran up to greet us. There were 12 cats in total. They were eager to play or snuggle next to your foot. Only downside is you can't pick em up, though it's okay if they decide to sit in your lap.  It was such a chill vibe and great to close your eyes and destress with soft jazz. It was a Starbucks Java atmosphere with relaxed cats (cafe was separate!!) Paid $8 for bottled beverage which was $$, but there were more affordable snacks on the menu.  In playroom, lots of toys, and snuggly, comfy carpets and places for humans and cats to sit. Surprised that it did NOT smell like cats or stinky tho sometimes you could smell kitty boo-boo if the litter room swung open. Employees work hard to keep it clean and fresh smelling. They even gave us treats and catnip to give the kitties."
+        },
+        {
+            "review_datetime_utc": "09/04/2019 19:46:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVNjVTUHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVNjVTUHBRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU65SPpQE%7CCgwI-6jA6wUQoIPhvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Like coffee? Like Cats? Got a Crazy Cat Significant Other? Bring them here! Fun, friendly, calm environment."
+        },
+        {
+            "review_datetime_utc": "09/04/2019 19:32:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVNjRTNnN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVNjRTNnN3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU64S6swE%7CCgsI1aLA6wUQwJfFFw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you love cats and kittens you should definitely support this business! The price of admission is very reasonable and goes to a great cause. It is a lot of fun."
+        },
+        {
+            "review_datetime_utc": "09/04/2019 18:12:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVcThla3RnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVcThla3RnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUq8ektgE%7CCgwIpv2_6wUQiIKyogM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Incredible staff, decor, and atmosphere."
+        },
+        {
+            "review_datetime_utc": "09/01/2019 16:08:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVdmRTc1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVdmRTc1B3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUvdSsPw%7CCgsI7tmv6wUQyNLjbA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved seeing the kitties in such a thoughtful and clean environment. The cats are very happy here and they have good rules to protect the cats. Price is very affordable and the staff cares about the cats AND the guests. I only had one critique- my coffee was a tad colder than I would prefer but I didn't say anything otherwise I'm sure the staff would have brewed it fresh. The adoption fee was just right and I recommend a visit!"
+        },
+        {
+            "review_datetime_utc": "08/30/2019 01:44:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVcGRYeUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVcGRYeUN3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUpdXyCw%7CCgwI__6h6wUQwLqzngM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "SO CUTE!  Are you kidding!  You buy a drink and pay to play with cats.  Think of it as a donation for their food and roof over their tiny fluffy heads."
+        },
+        {
+            "review_datetime_utc": "08/25/2019 03:24:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVX3VIa2N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVX3VIa2N3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU_uHkcw%7CCgsI5v6H6wUQkKONOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you Love Cats. This is the place to be."
+        },
+        {
+            "review_datetime_utc": "08/24/2019 01:09:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVcnEybVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVcnEybVlREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUrq2mYQ%7CCgwIypyC6wUQoOjpuwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I cannot believe how cute this place is and the cats are adorable. If I didn't have any cats at home I'd adopt them all! 🐈💞💞"
+        },
+        {
+            "review_datetime_utc": "08/22/2019 16:27:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVMXNUamxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVMXNUamxnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU1sTjlgE%7CCgwI6IT76gUQyOKMoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great time! All the cats were so sweet and the place was so cute. Totally recommend"
+        },
+        {
+            "review_datetime_utc": "08/17/2019 02:38:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVbk9Pck5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVbk9Pck5REAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUnOOrNQ%7CCgsIwNHd6gUQ2PeRAQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Sooo cute!!! Love this place ❤️"
+        },
+        {
+            "review_datetime_utc": "08/16/2019 03:06:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVak03YU93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVak03YU93EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUjM7aOw%7CCgwIxbvY6gUQiO6sngE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nothing better than spending an hour with cats!"
+        },
+        {
+            "review_datetime_utc": "08/14/2019 22:39:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVNUpXWmxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVNUpXWmxRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDU5JWZlQE%7CCgsIv5vS6gUQsOHIEw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The Kat's the Kat's oh my God I love the Kat's"
+        },
+        {
+            "review_datetime_utc": "08/14/2019 18:08:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVcFBPU19BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVcFBPU19BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUpPOS_AE%7CCgsIg5zR6gUQ2OikJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cat and coffee experience! The kittens & cats were sweet and well cared for. The cat area looks and smells very clean. I like that they limit visitors to keep the cats from being too stressed. I also like that they don't allow you to pick up cats, in order to reduce their stress.  My only complaints are the ambiance and acoustics. The music is a little too loud and I worry that it would be a bit much for the cats (people can be loud to be heard over the music). The music seems to cover up the echoes of the wood floors - I really think adding some carpets and playing quieter, calm music (classical/jazz?) would do better for the cats' well-being. To be clear, I'm not accusing anyone of mistreating the cats!  My girlfriend I and had a lot of fun and were very happy to support rescue cats. Would definitely go again!!"
+        },
+        {
+            "review_datetime_utc": "08/13/2019 17:08:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVdU5LQXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVdU5LQXF3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUuNKAqwE%7CCgwIl93L6gUQsKjYiwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I LOVE this place!  I went with a Groupon and ordered iced coffee (I'm actually still thinking about said iced coffee bc it's the best one I've had in years for some reason lol), and my family got drinks as well. The two women working there were very friendly and the cats?!!!  Oh how we enjoyed those kitties!  What an awesome idea!! I can't wait to go back!"
+        },
+        {
+            "review_datetime_utc": "08/12/2019 20:17:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVcVBQZVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVcVBQZVRBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDUqPPeTA%7CCgwI1JLH6gUQ4K3dhwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just a wonderful calming experience. I had a phenomenal Chai Latte, with an hour of beautiful feline company. Animals absolutely bring me closer to a higher power and the atmosphere in this place facilitated that wonderful feeling."
+        },
+        {
+            "review_datetime_utc": "08/09/2019 19:13:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbjRHLWxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbjRHLWxRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUn4G-lQE%7CCgwIz4u36gUQ6KmUsgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful staff, cute kittens, super clean, great smelling, great plant array. Go for the full hour"
+        },
+        {
+            "review_datetime_utc": "08/08/2019 05:04:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVdDhpekx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVdDhpekx3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUt8izLw%7CCgwIuNmu6gUQoObWkAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere. Lots of fun with the cats!!! Clean environment (not fur everywhere like some might think!) Coffee & hot chocolate both were very good! Staff very friendly!! If you like cats this is definitely a cool place to go."
+        },
+        {
+            "review_datetime_utc": "08/08/2019 01:05:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVMV9tWHRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVMV9tWHRnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU1_mXtgE%7CCgwI9Oqt6gUQqLXsxwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is a gem in the historic NoDa district. Don't go to Charlotte without visiting!"
+        },
+        {
+            "review_datetime_utc": "08/07/2019 22:31:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVMTRyOEJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVMTRyOEJREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU14r8BQ%7CCgsIr6Kt6gUQ-MuTXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place for a small admission fee I think $12 you get an hour with the cats. 12 or so cats to play with. All cats are up for adoption. Coffee and soda available in the lounge area also beer and baked goods"
+        },
+        {
+            "review_datetime_utc": "08/07/2019 17:58:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbDhHb3l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbDhHb3l3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUl8GoywE%7CCgsIxaKs6gUQkMWkcg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun, amazing cats and coffee. Great daily hang out spot too!"
+        },
+        {
+            "review_datetime_utc": "08/05/2019 12:59:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVNjlYSE5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVNjlYSE5REAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU69XHNQ%7CCgsIwtCg6gUQoLqAeg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mactabby was awesome! The staff was super friendly and helpful. The cats were of course adorable and fun to play with!"
+        },
+        {
+            "review_datetime_utc": "08/02/2019 19:01:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVZzhIdV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVZzhIdV93RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUg8Hu_wE%7CCgwImJGS6gUQ0KGmmAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is the kind of stuff in Noda I love. Staff was very nice and the cats where personable for the most part. One or two had an attitude, but hey, they are cats."
+        },
+        {
+            "review_datetime_utc": "08/01/2019 19:52:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbmFmcHVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbmFmcHVRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUnafpuQE%7CCgwIgIaN6gUQ-JCBqwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cats, the people, the vibe...magnificent"
+        },
+        {
+            "review_datetime_utc": "07/30/2019 15:14:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVMFlHUlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVMFlHUlpnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU0YGRZg%7CCgsI5JLv6QUQ4K_rGQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had a great time visiting....we missed our furbabies.   It seemed a little pricey to sit in a room to visit the cats....but we did miss our babies!"
+        },
+        {
+            "review_datetime_utc": "07/26/2019 20:49:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVa2FXUkxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVa2FXUkxBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUkaWRLA%7CCgwI2s7t6QUQuMO6xgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place, excellent drinks."
+        },
+        {
+            "review_datetime_utc": "07/26/2019 07:43:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVb2F6SU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVb2F6SU53EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUoazINw%7CCgwIst7q6QUQgOquywM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cats and wine, who could ask for more?"
+        },
+        {
+            "review_datetime_utc": "07/21/2019 21:58:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVd3FQVGJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVd3FQVGJ3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUwqPTbw%7CCgsInsDT6QUQ2L3kTQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mac Tabby is Wonderful. We always have a Great time being around all those Sweet kitties. The staff are always very nice. We Really Love it!"
+        },
+        {
+            "review_datetime_utc": "07/21/2019 00:54:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVM08tb0N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVM08tb0N3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU3O-oCw%7CCgwIve_O6QUQkJbe0AI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good-sized room with restricted access, many cat perches, and a room the cays could retreat into if needed. I loved that they do adoptions! Appreciated that staff were careful to monitor and limit the number of people in with the cats at any given time. Staff were respectful of the cats' needs, cautioning visitors about a shy cat. Cute souvenirs available. I thought the pricing was high for going in to pet the cats, though. I also thought the music was way too loud in the cat room for anyone's comfort."
+        },
+        {
+            "review_datetime_utc": "07/20/2019 20:55:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVM0xyZFlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVM0xyZFlnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICU3LrdYg%7CCgwIp__N6QUQwN_V1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing!"
+        },
+        {
+            "review_datetime_utc": "07/20/2019 17:53:31",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbklQVG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbklQVG53RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUnIPTnwE%7CCgwIm6rN6QUQ8O7yvAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome experience"
+        },
+        {
+            "review_datetime_utc": "07/15/2019 15:23:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVaUptZFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVaUptZFh3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUiJmdXw%7CCgwI77Sy6QUQgKjIoAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What an exciting and fun place!! Love the atmosphere and the kitties!!!"
+        },
+        {
+            "review_datetime_utc": "07/13/2019 22:40:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVd0xIeE53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVd0xIeE53EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICUwLHxNw%7CCgwIxLup6QUQ4L-aywE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Have high blood pressure? Stressed out at work? Just need a chill place to relax and recharge? Then you have to give this place a try!! Not only can you get a nice craft beer or coffee in a laid back atmosphere, but you can also go into the cat lounge and love on the sweetest cats!! Love this place!"
+        },
+        {
+            "review_datetime_utc": "07/12/2019 19:45:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrbjVQWW53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrbjVQWW53RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkn5PYnwE%7CCgwIwcaj6QUQyOKpvQM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Staff was very rude. Poor customer service."
+        },
+        {
+            "review_datetime_utc": "07/11/2019 20:25:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrejVDeldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrejVDeldnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkz5CzWg%7CCgwIsLae6QUQgLDz-AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really cute place, lots of nice cats to hang out with. They also have beer, wine, and coffee drinks available to enjoy while you mingle with the felines."
+        },
+        {
+            "review_datetime_utc": "07/11/2019 01:06:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrMTZ2Ym5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrMTZ2Ym5BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk16vbnAE%7CCgwIo5ea6QUQyN6zyAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Missing my own fur babies whilst traveling has been difficult, but thankfully Mac Tabby Cat Cafe is here to help! There were so many lovable felines to cuddle and play with. The atmosphere was warm and inviting. Great warm cocoa and treats for us humans too! Will surely return to support such a great cause and give my new feline friends some love."
+        },
+        {
+            "review_datetime_utc": "07/10/2019 18:17:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrbDVPT2NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrbDVPT2NnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkl5OOcg%7CCgwIqteY6QUQoOfI1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! Lots of sweet, snugglable kitties in a relaxing environment. The staff are all very helpful and friendly, and they clearly love being around the fur babies. They even serve a nice selection of coffees, teas, and some local brews. If you love cats, you'll love Mac Tabby. Check it out!"
+        },
+        {
+            "review_datetime_utc": "07/10/2019 02:22:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURreC15MU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURreC15MU13EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkx-y1Mw%7CCgsIzZeV6QUQgIW-TA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee + adorable, adoptable kitties"
+        },
+        {
+            "review_datetime_utc": "07/09/2019 02:06:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrMjZLTHF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrMjZLTHF3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk26KLqwE%7CCgwIte2P6QUQ0PbCmwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love cats?!?!?!?!  I ABSOLUTELY LOVE THIS PLACE!!!!  SUPER NICE STAFF AND THE MOST CUDDLY AND PLAYFUL CATS 😁🐈🐈🐈🐈"
+        },
+        {
+            "review_datetime_utc": "07/07/2019 18:47:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURraThyQ2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURraThyQ2V3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDki8rCew%7CCgwIsPyI6QUQ4Nu1rgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "great decor, has 3 guitars to play, very chill calm relaxing atmosphere, has cats to play with and rub. 30mins in the cat lounge is 8$, 1hr is 12$. you can chill in the main lounge for as long as you want. I went on a sunday. staff are friendly. has a few drinks and snacks, but not many. So eat before or after. u can however bring the snacks in the cat lounge. Theres a groupon online."
+        },
+        {
+            "review_datetime_utc": "07/07/2019 16:30:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrODhlZ19BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrODhlZ19BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk88eg_AE%7CCgwIlLyI6QUQwN-gvwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had a wonderful time!!  I wanted to take them all home."
+        },
+        {
+            "review_datetime_utc": "07/06/2019 22:13:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrazYyVk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrazYyVk1REAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkk62VMQ%7CCgwImLqE6QUQgK2P8AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My little girl LOVED this place. She would have stayed all day if she could have."
+        },
+        {
+            "review_datetime_utc": "07/04/2019 22:28:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrM2ZDd3hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrM2ZDd3hBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk3fCwxAE%7CCgwIhPv56AUQsI-8pQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely fantastic place! Kind staff, well trained cats in a quiet, calm atmosphere! Would highly recommend!"
+        },
+        {
+            "review_datetime_utc": "07/01/2019 22:46:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURreGQzUWdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURreGQzUWdBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkxd3QgAE%7CCgwIxJrq6AUQsOH1-wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Adorable and awesome place to visit when your in town."
+        },
+        {
+            "review_datetime_utc": "07/01/2019 11:43:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrLWN1Q3VnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrLWN1Q3VnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk-cuCugE%7CCgsI1OPn6AUQsPnTYA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVE THIS PLACE. So nice to see animals, kitties, being cared for and not sitting in shelters!"
+        },
+        {
+            "review_datetime_utc": "06/29/2019 12:14:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrOGRlUzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrOGRlUzd3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk8deS7wE%7CCgwIv6zd6AUQ4PC1ggI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun! And good coffee too!"
+        },
+        {
+            "review_datetime_utc": "06/29/2019 06:55:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrOGNDdjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrOGNDdjhRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk8cCv8QE%7CCgwI65bc6AUQ0LOalAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super friendly staff. Nice sized space so that even while multiple groups are there it doesn't feel crowded. Lots of toys to interact with the cats. And what's not to love about getting to hang out with a bunch of cats! Note you will have to climb a flight of stairs to get there so if accessibility is an issue it is something you would want to consider."
+        },
+        {
+            "review_datetime_utc": "06/26/2019 16:13:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrM3J2Yl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrM3J2Yl9RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDk3rvb_QE%7CCgwIuLPO6AUQoP2KiAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We absolutely loved visiting Mac Tabby Cat Cafe. It's so hard to leave without taking one of those sweeties home. My son is allergic to cats, and my daughter loves cats. This place is perfect for us to get our 'cat fix\". And, the coffee was great! The staff was very friendly and informative. Cant wait to visit again."
+        },
+        {
+            "review_datetime_utc": "06/23/2019 18:07:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrbU5yMDBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrbU5yMDBnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDkmNr00gE%7CCgwIz_--6AUQ4Pyy0gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cute little place. Enjoyed our time here"
+        },
+        {
+            "review_datetime_utc": "06/20/2019 23:24:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURFXzRpcUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURFXzRpcUlREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDE_4iqIQ%7CCgsIsauw6AUQiKayJw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a wonderful time at Mac Tabby Cat Cafe! Our family loves coming here to relax with the kitties and enjoy their beverages and bakery items. It's such a zen way to spend an hour - the cats are sweet and personable and they are all adoptable too! Highly recommend."
+        },
+        {
+            "review_datetime_utc": "06/19/2019 03:28:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURFLXZYN2lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURFLXZYN2lBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDE-vX7iAE%7CCgwI6Nem6AUQsKmKmgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Awesome place!"
+        },
+        {
+            "review_datetime_utc": "06/17/2019 22:51:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNFLTRIYVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNFLTRIYVN3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICE-4HaSw%7CCgwI57Kg6AUQoM791gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best Mother's Day ever!  I got to spend time with my daughter and pet cats."
+        },
+        {
+            "review_datetime_utc": "06/11/2019 10:53:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0dmNDWm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0dmNDWm9RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC4vcCZoQE%7CCgwIxJD-5wUQsPCp6QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cats are so cutee! Loved playing with them! Even the staff are really nice."
+        },
+        {
+            "review_datetime_utc": "06/08/2019 12:09:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0OGVib0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0OGVib0d3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC48eboGw%7CCgsIjsvu5wUQwOTAHg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I adore this place!!! What they have done is amazing 😍 I love that they are helping cats find good homes and in a safe environment where you can get to know the personality of the cats. Recommend this place 100%"
+        },
+        {
+            "review_datetime_utc": "06/03/2019 16:42:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0bFB1bHFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0bFB1bHFRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC4lPulqQE%7CCgwI_ZvV5wUQ2I2wtwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVED this place and can't wait to come back! Very welcoming staff, and absolutely adorable cats to play with. Very good beers and coffee options. Love the idea that you can adopt the kitties you play with, which we are personally waiting for our adoption application to get approved, we fell in love with one of the kittens that was playing with us, and would love to be her forever family."
+        },
+        {
+            "review_datetime_utc": "06/02/2019 22:26:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0cElMZTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0cElMZTNRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIC4pILe3QE%7CCgsIjJrR5wUQ2ImFLQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent experience- staff was friendly, had a great time hanging out with the cats, coffee was great and the space was beautiful. We will be back!"
+        },
+        {
+            "review_datetime_utc": "05/29/2019 04:30:31",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZdi1UV3ZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZdi1UV3ZRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYv-TWvQE%7CCgwI55W45wUQwPusrQE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Staff was nice...but I think there is more profit here than a good cause.  The coffee was the worst I've ever had, I looked up the cost of the furniture that decorated the place....and let's just say I'm not sure cats need a $700 plastic orange console table.  There also isn't any private location for the cats. If they are  tired or need a break the climb into cat beds.  I witnessed one if the women lift one of the encouragecat beds and wake the cat up to encourage play with a customer. I saw another encourage a cat to leave the litter box room to rejoin the others.  People were touching sleeping cats.  As a cat owner and an avid TNR this place just disappointed me.  I felt like something that was meant to be good and positive for the cats had been turned into a hip, profitable idea.  The point and meaning of true adoption and fostering had been commercialized and the cats had been forced into a petting zoo of modern urban sorts."
+        },
+        {
+            "review_datetime_utc": "05/26/2019 04:34:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBd2FfX3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBd2FfX3lnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICAwa__ygE%7CCgwI0q6o5wUQgJWolwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "❤️❤️❤️ Mac Tabby. Staff are wonderful, kitties are, well, kitties, everything's kept clean and tidy. Great drinks and amazing atmosphere, too! I'd probably go to just hang out in the \"lobby\" and not even go in the cat room, I love the feel of the place."
+        },
+        {
+            "review_datetime_utc": "05/25/2019 22:29:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZNTlxOERnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZNTlxOERnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY59q8Dg%7CCgsIzYOn5wUQkMLQOg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a cute place! Half is a great cafe, and half is the cat room! The cats free roam in their room amd you can play w them and cuddle! Employees are super nice! I'm visiting charlotte for the first time amd they even suggested places for me to check out!"
+        },
+        {
+            "review_datetime_utc": "05/25/2019 22:24:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZNS1xVmdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZNS1xVmdnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY5-qVggE%7CCgwIjIGn5wUQyNCnlgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a cute idea and loved the cats."
+        },
+        {
+            "review_datetime_utc": "05/19/2019 18:58:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZX2Zha1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZX2Zha1J3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY_fakRw%7CCgsI2M6G5wUQ2LvMcQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "THE CATS ARE SO CUTE!!!!!!!!"
+        },
+        {
+            "review_datetime_utc": "05/19/2019 17:41:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZX2V6WDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZX2V6WDF3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY_ezX1wE%7CCgsIrKqG5wUQ6PHfGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I LOVE Mac Tabby! All those cats <3 All the cute cat stuff. So great!"
+        },
+        {
+            "review_datetime_utc": "05/18/2019 17:24:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZN2MzUllnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZN2MzUllnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY7c3RYg%7CCgwIxf-A5wUQwN-GngI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is amazing. Lori (the owner) is the nicest human being I have ever met. The atmosphere is really chill, laidback, and really modern. The place sits on the second floor of a building, so you get a nice little view of the street. It's honestly an incredible quiet little coffee place to get work done and play with cats."
+        },
+        {
+            "review_datetime_utc": "05/16/2019 19:29:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZbFpPcl93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZbFpPcl93RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYlZOr_wE%7CCgwIq_T25gUQwLej-gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place! Been a few times and always had a positive experience. Reasonable prices, kind staff, and cute cats! I would recommend to any cat lover in the area."
+        },
+        {
+            "review_datetime_utc": "05/15/2019 16:33:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZbWRDZXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZbWRDZXNnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYmdCesgE%7CCgwIvv7w5gUQiM_NywI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The decor and atmosphere is amazing. It is clean, and decorated with beautiful artwork. The cat room is peaceful, spacious, and bright. The staff is beyond friendly and happy to serve you a drink or answer questions about the cats. The animals are obviously well loved, given proper medical care, and have an abundance of toys to enjoy. This is a lovely spot to visit whether a local or from out of town."
+        },
+        {
+            "review_datetime_utc": "05/15/2019 11:03:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZc1pPeUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZc1pPeUFREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYsZOyAQ%7CCgwInOTv5gUQoKCn3wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We took some friends from Germany here before heading to airport and we all had a great time. Staff is very helpful and I love the mission of this business to socialize homeless cats and find them a loving home."
+        },
+        {
+            "review_datetime_utc": "05/08/2019 22:44:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZdXFTRG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZdXFTRG13RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYuqSDmwE%7CCgwI2rfN5gUQyMuD6wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cutest cat Cafe ever!"
+        },
+        {
+            "review_datetime_utc": "05/05/2019 21:47:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZMHJ5LVRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZMHJ5LVRnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDY0ry-Tg%7CCgwIg7S95gUQ2JfHxAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Doesn't get any better!!"
+        },
+        {
+            "review_datetime_utc": "04/26/2019 19:15:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZc095LTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZc095LTZnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDYsOy-6gE%7CCgwItbGN5gUQsJqnkgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My daughter had a wonderful time and can't wait to go back.  She was able to interact with lots of sweet cats and the atmosphere was so calm and relaxing.  The staff was very friendly as well! Can't  wait to go back 😊"
+        },
+        {
+            "review_datetime_utc": "04/22/2019 15:30:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZeDlPYVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZeDlPYVlBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYx9OaYA%7CCgwIkLz35QUQ0JGRhQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to go!  The people that work there are extra nice and it is so much fun visiting the cats.  I got a Chai Latte there that was delicious.  I highly recommend Mac Tabby Cafe!  We are already planning our next visit."
+        },
+        {
+            "review_datetime_utc": "04/17/2019 22:28:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZdzd1bHh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZdzd1bHh3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYw7ulxwE%7CCgsI-dDe5QUQ8KWFKQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun! Didn't mind spending the money to help the kitties. A very relaxing environment and all of the rules are made very clear up front. The kitties love to be petted and played with. Staff was always near by to answer questions and/or concerns. The cafe and shop part were so cute too!"
+        },
+        {
+            "review_datetime_utc": "04/16/2019 22:33:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZbFptb3d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZbFptb3d3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYlZmowwE%7CCgwIxLDZ5QUQ-K-N6QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is awesome!  Allergy Warning! They have an air freshener on in the cat room and they use catnip with the cats. (I will say that while the air freshener was strong, it was wasn't overpowering)  I took my roommate for her birthday. I'm super allergic to cats and catnip so we don't have pets in the house.  She loved it. There is a separate room away from the cafe but you can see into the cat room.  The bathroom was clean and was big enough for people with movement issues. If you can make it up the flight of stairs, you'll be fine. There was also a bar next to the toilet for those that need it.  The cafe is mostly drinks but they do have a few snacks. It seemed a little pricey, but compaired to other animal cafe's I've been to they were about average.  The people who work there are friendly and helpful but not pushy or invasive. They answered all of our questions and knew a lot about each cat.  I was happy to see that they made sure to stay in the room with the cats when there were people inside. 2 workers were there and one would always stay inside. It was clear they were making sure that no one hurt the cats. They were gentle but firm with the little girl who was there at the same time as we were but who thought tugging on their tails would be a good way to get their attention. I was very impressed by how the employee handled that situation.  The cat area itself is really clean. REALLY REALLY CLEAN. As someone who has cat allergies and was going as a birthday surprise for my roommate I was excessively surprised by how the place was kept up. Kitty litter is not in the public area, and none of the furniture has cat hair just sitting in little piles. As far as I could tell nothing was dusty and the room was cool. There were plently of chairs, cat toys, and things to play with.  I would definitely recommend this place to everyone!"
+        },
+        {
+            "review_datetime_utc": "04/15/2019 00:05:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZcVptV1R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZcVptV1R3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYqZmWTw%7CCgwIz5XP5QUQ0PXE2AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun!! The coffee was delish and the service literally couldn't have been better! I'm going to come back!"
+        },
+        {
+            "review_datetime_utc": "04/09/2019 02:13:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZa3RYeW9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZa3RYeW9BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYktXyoAE%7CCgwIyf-v5QUQqPzszQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is such a gem in Charlotte! The owner, Lori, was SO sweet and kind. She went out of her way to welcome us, answer all of our questions, and educate us on each cat. The cats were total sweethearts and we fell in love with them all! If you haven't checked Mac Tabby out yet, what are you waiting for?"
+        },
+        {
+            "review_datetime_utc": "04/08/2019 00:25:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZd3A2S3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZd3A2S3lRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYwp6KyQE%7CCgwI56mq5QUQyK7olQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place😸😻"
+        },
+        {
+            "review_datetime_utc": "04/07/2019 23:28:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZd3JxbXZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZd3JxbXZBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYwrqmvAE%7CCgsIso-q5QUQ4K-YCw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mac Tabby is a gorgeous, modern cafe in the heart of Noda. The employees are always so friendly, both in the cafe / checkout area and in the room with the cats. I can tell that everyone cares so deeply about the well-being of each feline resident, and it's no wonder they have so much success with adoptions. It's hard not to fall in love with the kitties as you get to interact with them for 30-60 minutes, and truly see their personalities this way, rather than in a shelter with cages. The work they do with Catering to Cats and Dogs is wonderful! (Also, the coffees and teas are yummy)"
+        },
+        {
+            "review_datetime_utc": "04/06/2019 03:49:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZckwyaVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZckwyaVBBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYrL2iPA%7CCgwI4sOg5QUQyLDgzwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was such a great experience! The staff was super helpful and welcoming. Cats of course were super cute and fun to play with, definitely recommend!"
+        },
+        {
+            "review_datetime_utc": "04/05/2019 20:54:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZck9ENnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZck9ENnBnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYrOD6pgE%7CCgsI-4Cf5QUQiJyuYQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Kitties and coffee,  perfect combination"
+        },
+        {
+            "review_datetime_utc": "03/29/2019 23:49:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZa092c2dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZa092c2dBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICYkOvsgAE%7CCgwI8d365AUQ8Nnd7wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Beyond the cafe being the first in Charlotte and being a lovely place to be with kitties, the owner is an angel. We had a momma cat emergency, needing medicine to save her life and we couldn't get to Charlotte before the only pharmacy that had, it closed. This angel didn't know us and dropped everything on a very busy night and went and got the medicine for this cat for us. She truly is here for these precious souls and deserves a huge thank you for her heart. I wish her much success in this wonderful venture. Thank you, Thank you, Thank you!!!!"
+        },
+        {
+            "review_datetime_utc": "03/24/2019 21:35:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMHVmU0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMHVmU0V3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA0ufSEw%7CCgwIlPDf5AUQ0KTq_gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this cafe and what they do. Highly recommend!"
+        },
+        {
+            "review_datetime_utc": "03/20/2019 20:11:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvMDlpZE5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvMDlpZE5REAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDo09idNQ%7CCgsIjb3K5AUQyNKBYw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Sharing time with cats is a passion of mine, since I have one at home! The atmosphere at this cafe is chill and you can't help but feel relaxed once you step into the cat room.  I loved spending time with each of the cats. You have the choice of playing with them, petting them, or simply enjoying their presence and watching their antics in the cat room.  The drink I got at the start of the cat cafe session was great, too. I couldn't choose between the black tea and the chai, but the latter was suggested to me. Definitely get the chai, it's fantastic."
+        },
+        {
+            "review_datetime_utc": "03/20/2019 12:46:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURva19EUFdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURva19EUFdBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDok_DPWA%7CCgwIquzI5AUQ6MnN0wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely LOVE  it here. Such friendly staff, and the cats are so sweet, and loving!!!"
+        },
+        {
+            "review_datetime_utc": "03/15/2019 11:05:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvcHVfWFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvcHVfWFhBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDopu_XXA%7CCgwIlo6u5AUQuIjqhQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Ok so it's an interesting place.  Definitely for cat lovers that need their kitty fix.   The coffee shop needs to be ungraded - no decaffeinated coffee's really?"
+        },
+        {
+            "review_datetime_utc": "03/11/2019 16:38:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURvdUpQcjFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURvdUpQcjFRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDouJPr1QE%7CCgwI8Z2a5AUQuJuv2QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had such a great time here! All of these cats are really great and have such entertaining personalities. The environment was very clean and inviting and the employees were very informative and involved. We felt very comfortable her and thoroughly enjoyed our time. Our only regret is not bringing one of those cute kitties home with us!"
+        },
+        {
+            "review_datetime_utc": "03/10/2019 23:25:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvbUxuTkVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvbUxuTkVREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDomLnNEQ%7CCgsI1bmW5AUQ4MC9Xg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great fun for the whole family."
+        },
+        {
+            "review_datetime_utc": "02/27/2019 17:30:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvcy1iMzh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvcy1iMzh3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICos-b38wE%7CCgwIz5Lb4wUQ2KietAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Suggestion - if you r sure you are heading this way, do 2 things beforehand 1. Make a reservation & 2. Sign the online waiver. Important - 1. kids under 13 have to be accompanied by a supervising adult, which means that the adult also has to pay for the time. 2. If your kids aren't familiar with cats then temper their expectations. Cats aren't dogs cats aren't looking forward to playing with humans. Price is in range of what other cat cafes. $8 for 30 mins and $12/hr."
+        },
+        {
+            "review_datetime_utc": "02/15/2019 04:01:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvOXBycUZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvOXBycUZnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICo9prqFg%7CCgwIo_OY4wUQ4P7s_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super friendly staff, sweet kitties, and an amazing Chai latte! 10/10 would recommend to anyone who loves cats!!"
+        },
+        {
+            "review_datetime_utc": "02/14/2019 18:41:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvdG83YjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvdG83YjVRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICoto7b5QE%7CCgwI6eyW4wUQwMGKoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Easily the happiest and coziest place to be in Charlotte. Staff is always super welcoming and kind. Yummy snacks and of course beautiful cats to play with. Always makes for a great afternoon and a must see in NoDa!"
+        },
+        {
+            "review_datetime_utc": "02/12/2019 22:48:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJb2JIUFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJb2JIUFhBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICIobHPXA%7CCgwIrZqN4wUQyIOruQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First off just a heads up you do have to pay a cover fee & having a reservation is helpful!  Where do I begin? This place is amazing! The room itself was a little smaller than I anticipated but it made the experience more intimate. They have lots of cat toys so you can play with the kitties and they have lots of surfaces like fur covered tables where the cats like to sit and let you pet them. The staff was SUPER friendly and helpful. There were lots of families and couples in the room when I went, and even though some of the men didn't seem like cat guys at first, by the end of the experience they were the ones playing with the cats the most! If you're a cat lover, this place is so therapeutic an relaxing and fun for all ages!  There is also free parking on the premises (unlike many business in Charlotte) so it makes it easily accessible. If you live in Charlotte or the surrounding area this is a MUST for your bucket list!"
+        },
+        {
+            "review_datetime_utc": "02/11/2019 15:53:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvMnF6bnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvMnF6bnFnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICo2qznqgE%7CCgwIhrWG4wUQ8NbJ-QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Heaven in earth .  A must visit when you are in Charlotte.. Cat therapy is the best ."
+        },
+        {
+            "review_datetime_utc": "01/03/2019 16:55:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJbHIzaWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJbHIzaWp3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDIlr3ijwE%7CCgsI-_y44QUQwOGaKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Okay this is a fun. They only allow a certain amount of people in the room with cats, so definitely go online and make an appointment. You can get coffee or tea there. And there's cats roaming all over the place that you can play with or adopt.  Just a sidenote where they are now is on the second floor, outdoor staircase , so it's not handicap accessible. They are in the process of relocating. I think the new location is not handicap accessible either. Double check."
+        },
+        {
+            "review_datetime_utc": "01/01/2019 20:12:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJcXFQa3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJcXFQa3NnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDIqqPksgE%7CCgsIlJOv4QUQwJqXJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What can I say, if you love cats this is ur place. Pretty sure 1 hr seems like 5 min here. great place, they are recently moving got to visit new place."
+        },
+        {
+            "review_datetime_utc": "12/29/2018 21:56:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJOHM2RG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJOHM2RG53RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDI8s6DnwE%7CCgwImtuf4QUQ3sv14QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love being able to visit with cats when I am away from home. The cats during my visit were super friendly, way more so than other cat cafe's I have visited. Owner was very nice as well. Highly recommend. Note that they are moving to a new space soon."
+        },
+        {
+            "review_datetime_utc": "12/28/2018 01:50:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJd3Bla0N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJd3Bla0N3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDIwpekCw%7CCgwIgoOW4QUQwu-fnwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was a surprise date and I am in love with this place! I hope Simone was adopted to a wonderful family. We will most certainly be back!"
+        },
+        {
+            "review_datetime_utc": "12/26/2018 21:10:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJdk15cDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJdk15cDJBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDIvMyp2AE%7CCgsIxtyP4QUQn43GKA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a great place to surround yourself with POSITIVITY!  Staff was upbeat, cats were social and fun and the vibe will put you in a great mental state.  Cool artwork.  This is a gift to Charlotte and a gift to the cats all in one.  Nice work Mac Tabby Cat Cafe."
+        },
+        {
+            "review_datetime_utc": "12/23/2018 14:42:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJdE15V1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJdE15V1JREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDItMyWRQ%7CCgwIyr3-4AUQvoP5xAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A fun, unique experience that is also doing something good for the community.  Great gift for the cat lovers in your life!"
+        },
+        {
+            "review_datetime_utc": "12/20/2018 20:12:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJdU91LUVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJdU91LUVBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDIuOu-EA%7CCgwIqO_v4AUQudvtogE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such an awesome place!! Loved playing with the kittens and cats! Enjoyed a delicious coffee and bought a cute Mac Tabby t shirt!"
+        },
+        {
+            "review_datetime_utc": "12/20/2018 02:00:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJbU0yNndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJbU0yNndRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDImM26wQE%7CCgwIrO_r4AUQq4Dt9wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Me Long Time W/No Kitty...I found MacTabby online one evening and was so taken with the idea; I made a next day appt, signed the online waiver and Tracy welcomed me. So understanding😍😍. It has been 16 years w/o kitties 4 me so.. mending was needed. Twelve bucks gets an hour of pure fuzzie joy with 8-10 (is it?) adult and adoptable fun, friendly, silly, Krazy Kitties. Everyone is housed in a clean kitty friendly lounge with lots of floor and handheld toys supplied. Just sit back and PLAY. Highly recommended! Love this idea you guys!! HAPPY ANNIVERSARY 😻😻😻😻😻"
+        },
+        {
+            "review_datetime_utc": "12/19/2018 23:10:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbU43SWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbU43SWZBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDImN7IfA%7CCgwI1p_r4AUQtuLSkwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cats, the owner and the staff are all just beautiful!  Great Karma here.  The coffee is good too!  A very pleasant experience.  Thank you for being here!"
+        },
+        {
+            "review_datetime_utc": "12/19/2018 23:01:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbU82SWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbU82SWJBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDImO6IbA%7CCgsI45vr4AUQ75GYVA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place, great service, great cats.  What a way to relax."
+        },
+        {
+            "review_datetime_utc": "12/12/2018 20:02:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJajQ3ZF9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJajQ3ZF9RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICIj47d_QE%7CCgwI3NLF4AUQy4mHqgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place doing an amazing thing to try and help these animals. Friendly staff and a cool experience. Will be back for sure!"
+        },
+        {
+            "review_datetime_utc": "12/12/2018 03:14:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJdF9Ec1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJdF9Ec1JREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICIt_DsRQ%7CCgwIsvrB4AUQmaGPwgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing! As a cat lover this was such a great experience. Clean and just a chill place to hang with cats. And they are all adoptable as well, which is fantastic in case you fall in love with a kitty."
+        },
+        {
+            "review_datetime_utc": "12/08/2018 22:33:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJMjRIb3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJMjRIb3ZnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICI24HovgE%7CCgwI1Y2x4AUQ-_2s5gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had a great time at the cafe with fun cats and great coffee. Brought my wife here for her birthday and she loved it."
+        },
+        {
+            "review_datetime_utc": "11/14/2018 04:40:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJdHJla3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJdHJla3B3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICItrekpwE%7CCgwIxc6u3wUQkozozgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I absolutely love the concept of a cat cafe and I specifically love THIS cat cafe. The Charlotte location is adorable and quaint. The artwork is beautiful and adds to the positive atmosphere. I love the vibe here and I truly love the mission. Everyone that works here is friendly. All of the cats are very chill and not on-edge or stressed out. I would love to catch a show here. Music and cats - What is not to love? The only thing I hate is not being able to leave with every cat I fall in love with (basically all of them ... I can't lie) to spoil forever but because of Mac Tabby - I am confident that each kitty is going to find their perfect family soon. <3 I truly can't wait to go back and visit a new bunch of playful sweethearts. This is the perfect way to unwind and not think about adulting for a little bit. Haha"
+        },
+        {
+            "review_datetime_utc": "11/04/2018 22:57:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvaFpqcG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvaFpqcG1nRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICohZjpmgE%7CCgwIz_L93gUQ4OSCvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun spending time with sweet kitties!  The staff was amazing!"
+        },
+        {
+            "review_datetime_utc": "11/03/2018 20:01:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJb3FxbG9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJb3FxbG9RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICIoqqloQE%7CCgwIk_333gUQlbeD5QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great place for cat lovers.  Very clean."
+        },
+        {
+            "review_datetime_utc": "10/19/2018 12:44:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3b011MWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3b011MWJ3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDwoMu1bw%7CCgwIkKOn3gUQ6N6xugE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had a great evening! Lots of fun!"
+        },
+        {
+            "review_datetime_utc": "10/14/2018 20:47:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3aHNiQUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3aHNiQUNREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDwhsbACQ%7CCgsI39aO3gUQwLG2Jw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cats and great staff i cant wait to come again"
+        },
+        {
+            "review_datetime_utc": "10/13/2018 19:41:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3eHVPNml3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3eHVPNml3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDwxuO6iwE%7CCgwI1pSJ3gUQiLKtzgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cats sleep between 2 - 4pm. If you like active cats remember that. I love sleepy cats."
+        },
+        {
+            "review_datetime_utc": "10/13/2018 17:42:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3b3VuXzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3b3VuXzVBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDwoun_5AE%7CCgwIo92I3gUQoM3UyAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I want all of them. Wonderful place to relax and be surrounded by cats!"
+        },
+        {
+            "review_datetime_utc": "10/13/2018 14:58:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3OXZlaTdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3OXZlaTdBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDw9vei7AE%7CCgwI-I-I3gUQ-Nm2sAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a wonderful experience!!  I had a great time interacting with the cats - all were socialized & interactive, while the staff was equally engaging!  I will most certainly be back for another visit.  What a great concept!"
+        },
+        {
+            "review_datetime_utc": "10/11/2018 17:50:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3aXFPd01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3aXFPd01BEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDwiqOwMA%7CCgsI65r-3QUQ4NaRCQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I wanted to wait before giving a review but after about 5 months Bella is the funniest and most loving cat I have ever had. She picked me at the cafe and didn't want me to go away. She loves her toys and loves to play fetch. Unfortunately after about a month of having her and several vet appointments it was determined that Bella needed 8 teeth removed due to a disease early in her life. After this surgery though Bella was feeling much better and was no longer in pain. She was able to come out of her shell and loves to talk haha. Mac Tabby Cat Cafe was a great environment for all of the cats there. The only thing I would caution anyone about is be sure to read the health information for the cat you are picking. Although Bella looked to be in good health, she was having the issues with her teeth, as well as a few other little issues.  Other than this enjoy your new pet!!"
+        },
+        {
+            "review_datetime_utc": "10/10/2018 21:59:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3MnJXOV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3MnJXOV93RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDw2rW9_wE%7CCgwIxez53QUQyM60hwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Come on time as there is a form to fill. The entry way looks like a backdoor."
+        },
+        {
+            "review_datetime_utc": "10/05/2018 13:15:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBcG9DMW5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBcG9DMW5nRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICApoC1ngE%7CCgwI8Mfd3QUQgJC91gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mac Tabby is the purrfect place to find a cat who needs a loving home.  It is clean, welcoming, and lots of cats to choose from.  Management is very helpful, and caring for the cats.  Some beautiful cats here."
+        },
+        {
+            "review_datetime_utc": "09/29/2018 18:48:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcXJ2QmxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcXJ2QmxnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQqrvBlgE%7CCgsIjZK_3QUQ6MGVOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had a wonderful time at Mac Tabby Cat Cafe. The Staff was all very kind and welcoming and the environment is very relaxing. My children can't wait to visit again!"
+        },
+        {
+            "review_datetime_utc": "09/28/2018 16:26:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMDVYYVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMDVYYVNnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA05XaSg%7CCgsIo6y53QUQ0LDNNg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What a cool place to visit, plus there are cats available for adoption!! Another great way to help rescue our furry friends!"
+        },
+        {
+            "review_datetime_utc": "09/28/2018 02:37:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnZ3BfNmVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnZ3BfNmVREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDggp_6eQ%7CCgwI2qe23QUQsMCNywM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great experience!! Very therapeutic - time spent with the cats bring one into the present😎"
+        },
+        {
+            "review_datetime_utc": "09/23/2018 02:07:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBOXRQelVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOXRQelVnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA9tPzUg%7CCgwI_eqb3QUQ0Nui_wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of the best cat cafes I've been to! Whether you're a local.or visiting Charlotte, definitely check it out!"
+        },
+        {
+            "review_datetime_utc": "09/19/2018 22:11:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbGMzZ0JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbGMzZ0JREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQlc3gBQ%7CCgwIhZOL3QUQ6J-OxgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff was super friendly, great coffee, and best of all there are lots of sweet fur babies to pet and play with. Wonderful thing they are doing for the precious kitties!"
+        },
+        {
+            "review_datetime_utc": "09/13/2018 20:10:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMXJfTjRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMXJfTjRnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICg1r_N4gE%7CCgwIuIjr3AUQwIjy2gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LOVE, LOVE, LOVE!!! What an awesome place. Hanging out with cats is very relaxing.  Grab a coffee and unwind. The owner and staff are wonderful."
+        },
+        {
+            "review_datetime_utc": "09/11/2018 22:49:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRM3NUT19RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRM3NUT19RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ3sTO_QE%7CCgwIkI3h3AUQwOu0twI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Please go visit and adopt these sweet kitties! Wonderful place and wonderful people"
+        },
+        {
+            "review_datetime_utc": "09/01/2018 19:11:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBcUpTWUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBcUpTWUZBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAqJSYFA%7CCgwIzMir3AUQmNXpoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fun experience for my daughter. She enjoyed playing with the cats. I loved the fact that the cats at Mac Tabby are rescues that have been fostered and are available for adoption. These cats will make nice pets for those looking to adopts cats.  All the cats are well socialized. We will definitely go back.  Thanks for a unique experience!"
+        },
+        {
+            "review_datetime_utc": "08/31/2018 20:56:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBZzRDVUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBZzRDVUlREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAg4CUIQ%7CCgwIidem3AUQiISdkwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I had an amazing time and all the cats are so well taken care of and loved a lot. Plus they've got some great snacks and drinks! Definitely going back."
+        },
+        {
+            "review_datetime_utc": "08/25/2018 06:14:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbXJERG5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbXJERG5RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQmrDDnQE%7CCgwItueD3AUQmJmVlgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved our time here. Great time, great mission, great cats!!!"
+        },
+        {
+            "review_datetime_utc": "08/21/2018 21:31:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdnN1ZWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdnN1ZWVBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAvsueeA%7CCgsIn4ny2wUQ4Jb5JQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is amazing! So amazing I made a YouTube video about it!  You need to make reservations in advance and its $12 for 1 hour with the kitty's. They have awesome music playing and you can sit sipping various beverages while you enjoy playtime with cats.  It's the perfect therapy! And if you fall in love with a particular cat you can adopt them! It's a win win!"
+        },
+        {
+            "review_datetime_utc": "08/19/2018 01:04:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBd1kzWWF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBd1kzWWF3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICAwY3Yaw%7CCgwIuYTj2wUQ4L-B-gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love everything about this place. Awesome space for humans and kitties. Tasty cookies and fun kitties! I love them. I will go back again for sure!"
+        },
+        {
+            "review_datetime_utc": "08/17/2018 12:47:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneXV5Q2lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneXV5Q2lBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgyuyCiAE%7CCgsIzIfb2wUQsLa8fQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I did paint night with the cats...they slept thru most of it then got active when we were leaving but I still had a blast. I plan to go back for cat yoga!"
+        },
+        {
+            "review_datetime_utc": "08/15/2018 17:45:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRa2VIeVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRa2VIeVlBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQkeHyYA%7CCgsIpc3R2wUQgMCEPQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool place if you like cats of course."
+        },
+        {
+            "review_datetime_utc": "08/14/2018 15:36:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURneG9ETXlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURneG9ETXlBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgxoDMyAE%7CCgsI9u3L2wUQwKGHcA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved my cat yoga session with Nicole.  Perfect Monday night wind down and the cats and kittens were adorable.  Would recommend to any cat/yoga lover for a fun night out."
+        },
+        {
+            "review_datetime_utc": "08/14/2018 09:45:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnLWVTQi1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnLWVTQi1RRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDg-eSB-QE%7CCgsIwsnK2wUQgOHrFw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I've visited this place twice now and have loved it both times I've went! The cats are amazing (even if all they do is sleep!) And the caretakers obviously care for all of them very well. For 12 bucks an hour it's well worth the money spent."
+        },
+        {
+            "review_datetime_utc": "08/12/2018 21:05:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBM0l1cVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBM0l1cVN3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA3IuqSw%7CCgsIjMLC2wUQwK6nVg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Ally Cat and I love having mother and daughter time here!  Anything for that smile!"
+        },
+        {
+            "review_datetime_utc": "08/10/2018 21:41:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRamFtbmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRamFtbmNREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQjamncQ%7CCgwInY242wUQgLqm0wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome staff and delicious coffee"
+        },
+        {
+            "review_datetime_utc": "08/08/2018 20:21:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNReUo2c1hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNReUo2c1hBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQyJ6sXA%7CCgsIyaGt2wUQgJvuAg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Adorable cats, friendly staff, great atmosphere. The cafe could use more variety, but let's be honest, we're here for the kitties anyway."
+        },
+        {
+            "review_datetime_utc": "08/07/2018 19:47:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnd3YyRDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnd3YyRDF3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgwv2D1wE%7CCgwI7u6n2wUQgMHE5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We LOVED our first visit. Will definitely be back ASAP. Staff was extremely friendly. The cats were well taken care of and the environment was surprising really clean. Price for visit may seem high, but it was worth every penny. This is definitely a must do if you're in the Charlotte area"
+        },
+        {
+            "review_datetime_utc": "08/06/2018 17:06:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNkoyWjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNkoyWjdRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ6J2Z7QE%7CCgwIsICi2wUQgKeEmwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Excellent space with well-behaved cats and knowledgeable, friendly humans. The hours aren't great though."
+        },
+        {
+            "review_datetime_utc": "07/31/2018 14:56:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRckxySnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRckxySnRRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQrLrJtQE%7CCgsIl_GB2wUQgNygdg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this place!! Staff is so nice and the atmosphere is so relaxing."
+        },
+        {
+            "review_datetime_utc": "07/27/2018 21:11:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURneGJEdndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURneGJEdndBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgxbDvwAE%7CCgwIkpXu2gUQgNa5kgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The employees are nice, yoga was fun, and the kitties are adorable!"
+        },
+        {
+            "review_datetime_utc": "07/23/2018 14:29:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbXVpT2pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbXVpT2pnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgmuiOjgE%7CCgwIrczX2gUQgKDLmAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cafe the cays are nice and friendly a.d the staff are sweet"
+        },
+        {
+            "review_datetime_utc": "07/22/2018 20:46:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRb3JLLVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRb3JLLVF3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQorK-Qw%7CCgwIjNrT2gUQgJrbugI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a wonderful establishment. Cats are so friendly and precious. The staff is welcoming and accomidating. Would highly recommend."
+        },
+        {
+            "review_datetime_utc": "07/22/2018 13:47:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNndTlfNmJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNndTlfNmJBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgu9_6bA%7CCgwI-JXS2gUQgNfezgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Mac Tabby! The staff is so great - they introduced us to all the cats by name and really knew their personalities. If you're looking for a new furry family member or just want to snuggle some sweet kitties, this is the place to go!"
+        },
+        {
+            "review_datetime_utc": "07/21/2018 00:24:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3M0p2SEZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3M0p2SEZ3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw3JvHFw%7CCgwIoPrJ2gUQgJas2wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff are amazing. They go out their way to help and answer any questions. I will definately be coming back!"
+        },
+        {
+            "review_datetime_utc": "07/17/2018 15:08:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRX2VPMjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRX2VPMjJ3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ_eO22wE%7CCgwI9Iy42gUQwNa-uQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had so much fun visiting with the cats.  I was away from home and away from my cats and just being there helped me a little with my fur needs.  Thank you!"
+        },
+        {
+            "review_datetime_utc": "07/08/2018 23:27:32",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbXFycFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbXFycFRBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAmqrpTA%7CCgwI5LuK2gUQwPG-sAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is an amazing place!  Love it!  My wife had the best time playing with the cats.  I love the concept. It's a wonderful way for these cats to get adopted.  There's  no better way to get to know the personality of a cat than to spend some relaxing time with it in a non-stressful environment.   Even though our cats at home acted like we cheated on them we will definitely be back! Keep up the good work!"
+        },
+        {
+            "review_datetime_utc": "07/08/2018 09:44:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbWU2cmlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbWU2cmlBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQme6riAE%7CCgsI6bmH2gUQgLuwIQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Place had a cool hypstery vibe was super clean, with friendly knowledgable staff and adorable loving kitties! Price was cost effective and entertaining for both little and big ones! A must go to place for anyone visiting the Charlotte area!!"
+        },
+        {
+            "review_datetime_utc": "07/07/2018 21:17:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBX19pejF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBX19pejF3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA__iz1wE%7CCgwIhNyE2gUQgKDLmAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Everything I hoped it was! Such a cool place and relaxing environment with all the cats!"
+        },
+        {
+            "review_datetime_utc": "07/01/2018 14:13:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRNExlcktBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRNExlcktBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ4LerKA%7CCgwIoMPj2QUQwPaA2AE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The atmosphere was so comfy and cute, I paid admission fee 6$ for half an hour. Cats are clean unless their short hair were everywhere because the room is not that big. If you have allergy try not to stay more than half an hour."
+        },
+        {
+            "review_datetime_utc": "06/30/2018 00:53:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbXRPbWJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbXRPbWJREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQmtOmbQ%7CCgwIkKnb2QUQwPjTygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It is a relaxing café. You will have to buy your beverage and pay for being in the cat room $6 for half an hour. Friendly staff, lazy cats may be becouse I came at 5 pm and they were tired playing. I recommend it to people who love something new. I am allergic to cats but everything went amazing."
+        },
+        {
+            "review_datetime_utc": "06/25/2018 21:49:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNHJxR3JBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNHJxR3JBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICg4rqGrAE%7CCgsI-8bF2QUQwPecGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place!!! However, I do wish they had real coffee but its an awesome spot!"
+        },
+        {
+            "review_datetime_utc": "06/20/2018 12:00:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRLWJiVi13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRLWJiVi13RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ-bbV-wE%7CCgwI6IOp2QUQwLb8mgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cutest poos to ever walk this earth"
+        },
+        {
+            "review_datetime_utc": "06/17/2018 20:52:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NTh2U1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NTh2U1l3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw58vSYw%7CCgwI8ZOb2QUQwLLfrwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best kitties in the world. Someone adopt Lady Louisa soon!"
+        },
+        {
+            "review_datetime_utc": "06/17/2018 00:54:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRNS1XaWpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRNS1XaWpRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQ5-WijQE%7CCgwIzuKW2QUQwIKF_AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Dreamy experience! Cats are so cute and friendly~"
+        },
+        {
+            "review_datetime_utc": "06/13/2018 21:11:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cWNpbTl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cWNpbTl3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICwqcim9wE%7CCgwI5ZCG2QUQgPGemwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a wonderful, amazing, fantastic place! A wonderful little cafe and the cutest, friendliest, most lovable cats you could ever meet! Had such a relaxing, unique experience, and the team who work there are friendly and enthusiastic and, best of all, care so much about the sweet kitties!"
+        },
+        {
+            "review_datetime_utc": "06/13/2018 20:40:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3NDZ1NnlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3NDZ1NnlRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw46u6yQE%7CCgsI1IKG2QUQgNL4Pg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cats! Chill music. Very nice. :)"
+        },
+        {
+            "review_datetime_utc": "06/13/2018 19:52:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncS1yTGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncS1yTGhRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgq-rLhQE%7CCgwI5OuF2QUQwPjTygE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Magical and Furry"
+        },
+        {
+            "review_datetime_utc": "06/10/2018 11:51:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3X29ISUl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3X29ISUl3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw_oHIIw%7CCgwIuqH02AUQgKWxqAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cats!!!!!  This was a great place to visit for cat lovers. My family wants to go back. They do advertise that the cats sleep between 2-4, and we did go between 2-4 so most cats were sleeping. I want to go back when they are awake."
+        },
+        {
+            "review_datetime_utc": "06/08/2018 18:53:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnME5YTWxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnME5YTWxBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICg0NXMlAE%7CCgwIqKHr2AUQgPLD1wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the atmosphere of this place, as well as the cause behind it! Everyone there is super friendly and welcoming (human and cats alike). I bring all of my family and friends from out of town here and everyone loves it. As a bonus, they have yummy snacks and coffee, and cute merch!"
+        },
+        {
+            "review_datetime_utc": "06/03/2018 02:21:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMXRpdGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMXRpdGhRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDA1tithQE%7CCgwIlaHN2AUQgPLVywM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful place to have fun and to help support getting these kitties adopted!!"
+        },
+        {
+            "review_datetime_utc": "06/02/2018 23:19:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNndmJMdWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNndmJMdWJBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICgvbLubA%7CCgwI88vM2AUQgM22lwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great experience! The staff was super friendly and accessible to answer questions but they didn't hover. The cats were amazing. Some were sleepy and some were playful but all were friendly. We had our two boys (7 and 9) with us and they loved it. Totally worth the trip."
+        },
+        {
+            "review_datetime_utc": "05/31/2018 23:17:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndEllSXJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndEllSXJnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgtIeIrgE%7CCgwIpoXC2AUQwIWGpQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good people doing a good thing! Awesome space and awesome Cats available for adoption."
+        },
+        {
+            "review_datetime_utc": "05/27/2018 22:25:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MWNHbGp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MWNHbGp3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw1cGljwE%7CCgwIx-Cs2AUQgNOv7wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had such a great time and loved getting to see all the kitties!"
+        },
+        {
+            "review_datetime_utc": "05/26/2018 21:15:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRX19uMEFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRX19uMEFnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQ__n0Ag%7CCgsI35yn2AUQgMz_Zg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great hidden gem! Hard to find if you use your map app but once you do you won't want to leave!"
+        },
+        {
+            "review_datetime_utc": "05/24/2018 20:41:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaU91MFJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaU91MFJnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAiOu0Rg%7CCgwI3sac2AUQgPn82QM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Staff is awesome. Cat room is very clean. The cats are all friendly and adorable and ready to be adopted. Only reason I didn't give it 5 stars is because their coffee selection is limited. But who goes there for the coffee?"
+        },
+        {
+            "review_datetime_utc": "05/23/2018 14:20:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbS1fdGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbS1fdGNBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAm-_tcA%7CCgwInvGV2AUQgOSHrwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff are so nice. We had hard time leaving after being the cute and friendly cats :)"
+        },
+        {
+            "review_datetime_utc": "05/22/2018 16:53:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbDYtN3dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbDYtN3dBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgl6-7wAE%7CCgwIjJaR2AUQgLelqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This could very well be the best place in the Queen City to hangout!  Cats, local fare and great vibes!  You must check this unique offering out!"
+        },
+        {
+            "review_datetime_utc": "05/20/2018 14:03:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbUpuWFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbUpuWFFBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICAmJnXQA%7CCgwIpICG2AUQwP2n5gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The atmosphere is comfortable and inviting and the staff is friendly and knowledgeable about all the cats.  The experience with the cats can't be beat.  These cats have it made!  Some will be lounging around, some will be ready to play- there is something for everyone when it comes to interacting with the cats.  And best of all, the place is clean and you would never know just from walking in the room that 12 cats live there all the time.  I highly recommend for a fun, different outing in Charlotte."
+        },
+        {
+            "review_datetime_utc": "05/19/2018 02:34:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3ck42d2RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3ck42d2RnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICwrN6wdg%7CCgsIyJr-1wUQwIaZbQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Big shout out to Mac Tabby Cat Cafe for supporting your law enforcement officers!  I saw several in there today enjoying some coffee and pastries!  I also had some cold brew and visited with some of the cats!  That was the best part of my day!   What a neat idea and a special little place!  Thank you for the great service and sharing these sweet cats with everyone!!!"
+        },
+        {
+            "review_datetime_utc": "05/18/2018 10:42:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnZ3JiZ0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnZ3JiZ0VBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICggrbgEA%7CCgwIjdz61wUQwJ6PwQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Mac Tabby is an experience that every animal lover should have - it's a fun, hip and funky atmosphere filled with love and appreciation of animals and art.  Their goal to get homeless cats into their forever homes has begun and amazing things are happening.  May God Bless Mac Tabby always.  Thanks Lori & team.  And try 'paint night'' Kat is an amazing and entertaining instructor!  So FUN!"
+        },
+        {
+            "review_datetime_utc": "05/17/2018 02:45:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBc09Td253RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBc09Td253RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICAsOSwnwE%7CCgwIxNnz1wUQwMyf_AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is amazing!"
+        },
+        {
+            "review_datetime_utc": "05/16/2018 21:40:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBM2NPT0JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBM2NPT0JnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDA3cOOBg%7CCgwI3cry1wUQgMq17gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had a great time the cats were sweet and fun to play with"
+        },
+        {
+            "review_datetime_utc": "05/15/2018 11:12:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMzdQZnh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMzdQZnh3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDg37PfxwE%7CCgwInIHr1wUQwO_ZyQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool concept!! I took a Monday-night Cat Yoga class here and fell in love with the space. The cats definitely have the run of the place, and so many get adopted! You should definitely check it out if you are in need of some emergency cat cuddles."
+        },
+        {
+            "review_datetime_utc": "05/06/2018 23:00:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MTVXSnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MTVXSnB3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw15WJpwE%7CCgsIkZK-1wUQgJj2Uw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My husband and I enjoyed this place so much, we stopped by twice! The cats are VERY well taken care of and the staff is super friendly. I defenitely recommend visiting!"
+        },
+        {
+            "review_datetime_utc": "05/05/2018 19:25:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBX2ZpQ0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBX2ZpQ0ZBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDA_fiCFA%7CCgsIxYq41wUQwPGjQg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love what these amazing people are doing here! Awesome all around ❤️"
+        },
+        {
+            "review_datetime_utc": "05/02/2018 20:46:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OU43LV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OU43LV9nRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw9N7-_gE%7CCgwIlMeo1wUQgJuJ8QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing experience! We visited a few weeks ago, and the cats were so friendly and playful. If you're a cat lover, don't think twice about booking a reservation at Mac Tabby - especially if you're looking to adopt a new kitty. It's refreshing to see them running about and enjoying themselves, rather than stuck in a small cage in a miserable environment.  The staff was also excellent! They were very attentive to all the cats' specific needs, which was awesome to see! You can tell they genuinely enjoy working there, and the cats love it there as well. :-)  Only thing that can be improved is the coffee/drink/food selection. It's worth mentioning that I may be biased here after visiting some other more established cat cafes in other cities though. This place is only going to get better as time goes on!"
+        },
+        {
+            "review_datetime_utc": "05/01/2018 19:53:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBakpLSWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBakpLSWt3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICAjJKIkwE%7CCgwI0ouj1wUQgOrukgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I went to Mac Tabby for kitty yoga on Monday night. I loved everything about it! It was exactly what I wanted... a little bit of working out and A LOT of cats! It was really fun!  >^..^<"
+        },
+        {
+            "review_datetime_utc": "04/29/2018 05:47:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRNVBtNkdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRNVBtNkdREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQ5Pm6GQ%7CCgwI2LiV1wUQwO_iwwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Therapeutic heaven. God bless the kitties. The cats there are all so polite a sweet. They're also playful but enjoy a good nap. The cats at Mac Tabby are furry blessings."
+        },
+        {
+            "review_datetime_utc": "04/23/2018 00:21:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3eF8td0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3eF8td0VBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICwx_-wEA%7CCgwInc701gUQgN-hnwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Friendly staff and great atmosphere. The cats were so fun to be around. Would go again in a heartbeat."
+        },
+        {
+            "review_datetime_utc": "04/18/2018 14:56:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMU9iMU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMU9iMU5REAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICg1Ob1NQ%7CCgwIrLnd1gUQgN784gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great company with an amazing mission statement built from the group up from a strong force of a leader. She supports local artists while also giving second chances to area stray cats. Very clean. Very professional. Extremely respectful to customers and kitties alike. Would highly highly recommend!"
+        },
+        {
+            "review_datetime_utc": "04/18/2018 04:52:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cjZteW9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cjZteW9BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICwr6myoAE%7CCgsIiZ7b1gUQwODddg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent experience. They are organized, clean, and the cats seem to be fed and treated well. It was a cute space, too. The parking is tiny, as to be expected in NoDa, but I did not have an issue finding a spot. I love that my money is going toward supporting rescue cats, and it's a brilliant way to get to know your future pet. They have an employee in the room with you to keep an eye on everything. You can also get coffee, tea, hot chocolate, kombucha, and more, to bring in the room with you. You basically just hang out with the cats, play with them, and take photos. Really great experience!  Thanks guys!"
+        },
+        {
+            "review_datetime_utc": "04/14/2018 18:37:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRZ2I3eHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRZ2I3eHhBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQgb7xxAE%7CCgwI1ZTJ1gUQgPeX8wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Spend an hour and socialize with a wonderful areay of cats awaiting adoption.  On line reservations are recommended. They are well loved and loving."
+        },
+        {
+            "review_datetime_utc": "04/12/2018 15:33:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnX0pIVGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnX0pIVGhRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICg_JHThQE%7CCgsItvi91gUQgJOiOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A google search sent us here and we had an absolutely great time. The kitties were all so sweet and most were playful. The price is reasonable and it helps these kitties and others get adopted. We will be back!"
+        },
+        {
+            "review_datetime_utc": "04/10/2018 23:12:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdzlYUHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdzlYUHpBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQw9XPzAE%7CCgwI7Im11gUQwLqr-gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "the best place in charlotte"
+        },
+        {
+            "review_datetime_utc": "04/09/2018 14:37:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBXzliVnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBXzliVnR3RRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA_9bVtwE%7CCgwIt_Wt1gUQwJzOwgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super fun and relaxing place to go when you want to hang out with some adorable kitties! I had a great time meeting all the adoptable cats! I will definitely be going back again soon!"
+        },
+        {
+            "review_datetime_utc": "04/09/2018 13:04:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRa2M2aXpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRa2M2aXpBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQkc6izAE%7CCgsI0cmt1gUQwIySRQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So much fun hanging out with cats here!"
+        },
+        {
+            "review_datetime_utc": "04/04/2018 22:05:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3elBEeXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3elBEeXlRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICwzPDyyQE%7CCgwIkZiV1gUQgPnq5QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Happy Place !  Great place to relax with some cat therapy. Staff are friendly and helpful. Great way to help rescue pets while having fun."
+        },
+        {
+            "review_datetime_utc": "04/04/2018 11:58:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3MExmWldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3MExmWldnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICw0LfZWg%7CCgwI4fuS1gUQwPOIqQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Reservation based and $12 per person to get in. Seems like a fun idea though."
+        },
+        {
+            "review_datetime_utc": "04/03/2018 18:49:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURncHUzaWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURncHUzaWFBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgpu3iaA%7CCgwIoZmP1gUQwOW6jAI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place! I enjoyed the knowledge of the workers and the layout gave me some fun ideas for my own cats. I'm wondering if there should be some more guidelines for attendees under 18. Some in my group were excellent while others were overly aggressive with the cats."
+        },
+        {
+            "review_datetime_utc": "04/03/2018 03:43:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBM3BYU1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBM3BYU1RnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICA3pXSTg%7CCgwIz_CL1gUQwLG68wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The cat cafe is a nice place to go to chill out for an hour and hang around cool kittens. The cafe area has nice drinks but the star of this location is the cats. For an hour at a time, you are in a room with a bunch of cats and toys for them to play with. the cat lounge area has plenty of comfortable seating, a lot of natural lighting and cats. It was a fun experience and would recommend this for kids and adults as a fun activity together."
+        },
+        {
+            "review_datetime_utc": "03/30/2018 18:26:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbTgzQ3hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbTgzQ3hRRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgICQm83CxQE%7CCgwIwoL61QUQwKbbiwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A good place to get some kitty love"
+        },
+        {
+            "review_datetime_utc": "03/25/2018 01:04:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbWFYQlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbWFYQlhREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDAmaXBXQ%7CCgwIu-vb1QUQgOT-tAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We had a wonderful time and enjoyed getting to know the cats.  It was a fantastic experience."
+        },
+        {
+            "review_datetime_utc": "03/24/2018 16:40:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnbDRlVEpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnbDRlVEpnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgl4eTJg%7CCgsIi__Z1QUQwLvHPA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a must if you love cats. It is a great place to spend some time meeting the amazing cats and beautiful. All of them are friendly and playful. If you are thinking of adopting a cat, you should go to this place, for sure you will fall in love of one of them, or maybe more."
+        },
+        {
+            "review_datetime_utc": "03/20/2018 05:09:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRb3ZDa3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRb3ZDa3lnRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDQovCkygE%7CCgwIjq_C1QUQwLezywI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was the first cat cafe I had been to and loved it! They had a good variety of cats- some kittens, some a bit older, some playful, some sleepy. The ratio of cats to people was on point and the space was clean and well designed. So much fun!"
+        },
+        {
+            "review_datetime_utc": "03/18/2018 11:36:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbF83VG9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbF83VG9BRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgIDgl_7ToAE%7CCgsIsp651QUQwPjKUA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very friendly staff who are eager to help you have a wonderful experience. The entire facility was immaculately clean and comfortable. Fee is reasonable. Kitties are sweet and playful. Weston was so entertaining. I wish that I could have brought them all home!"
         }
     ],
-    "total_reviews_count": 794
+    "total_reviews_count": 799
 }

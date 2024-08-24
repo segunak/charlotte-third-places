@@ -3,6 +3,13 @@
     "place_name": "Wooden Robot",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/12/2023 18:20:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCdFA3Snl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCdFA3Snl3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDBtP7JywE%7CCgwI8J6BngYQ0OTykwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good selection of beer, both indoor and outdoor seating!"
+        },
+        {
             "review_datetime_utc": "01/06/2023 21:05:31",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCMTZmeC1RRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCMTZmeC1RRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICB16fx-QE%7CCgsIm5rinQYQqKayYg%7C?hl=en-US",
@@ -1200,13 +1207,6 @@
             "review_text": "Great lively place with great food."
         },
         {
-            "review_datetime_utc": "08/31/2019 16:23:28",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVemVQenBRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVemVQenBRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDUzePzpQE%7CCgsIgL6q6wUQ6OXYcQ%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "Friendly staff and good prices"
-        },
-        {
             "review_datetime_utc": "08/25/2019 18:55:44",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVb2JIS3NBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVb2JIS3NBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDUobHKsAE%7CCgwIsLOL6wUQ4IaKqgI%7C?hl=en-US",
@@ -2101,7 +2101,903 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNHVteHFBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg4umxqAE%7CCgwI2N6L1QUQwKK-oAI%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "Love the good morning vietnam"
+        },
+        {
+            "review_datetime_utc": "02/25/2018 01:01:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndXBLcnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndXBLcnB3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgupKrpwE%7CCgwI-JXI1AUQwPORowM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved the place"
+        },
+        {
+            "review_datetime_utc": "02/24/2018 18:41:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnc3JTTkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnc3JTTkZBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgsrSNFA%7CCgwI9ePG1AUQwMWB6AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Favorite beer in NC"
+        },
+        {
+            "review_datetime_utc": "02/22/2018 17:49:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3dFlDNHB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3dFlDNHB3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwtYC4pwE%7CCgsImYW81AUQgPK6XQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great brewery. They have great beer and service. The food truck they use has wonderful food , but the portions were smaller than we expected."
+        },
+        {
+            "review_datetime_utc": "02/19/2018 20:38:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBdHM2d21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBdHM2d21RRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAts6wmQE%7CCgsIzuus1AUQgKm8Hw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "King of sours in Charlotte. If you enjoy sour beers, this brewery has it all. Alongside their sours, they have many other wonderful IPA's. A must go to brewery if you ever visit."
+        },
+        {
+            "review_datetime_utc": "02/17/2018 20:35:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRemNuRUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRemNuRUlBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQzcnEIA%7CCgwIoaSi1AUQgN-qmQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Sick eats and sick beatz, plus dogs that sit like people."
+        },
+        {
+            "review_datetime_utc": "02/16/2018 00:56:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OG9Yc2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OG9Yc2hnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw8oXshgE%7CCgsIuNiY1AUQwOzPJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice laid back place. Parking can be a bit of a challenge."
+        },
+        {
+            "review_datetime_utc": "02/11/2018 21:08:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3cTZic1h3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3cTZic1h3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwq6bsXw%7CCgwIt-GC1AUQgNmoxwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I recommend good night Vietnam"
+        },
+        {
+            "review_datetime_utc": "02/11/2018 18:44:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM3R6MTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM3R6MTZnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ3tz16gE%7CCgsImZ6C1AUQgJTQbg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Magnificent!"
+        },
+        {
+            "review_datetime_utc": "02/10/2018 04:30:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMTh2UHJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMTh2UHJnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA18vPrgE%7CCgwI1Or50wUQgJas2wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best beer"
+        },
+        {
+            "review_datetime_utc": "02/10/2018 04:01:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRLU5UUlVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRLU5UUlVBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ-NTRUA%7CCgwIot350wUQgO_CrgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place. Bartenders and staff are amazing, my glass is never empty!!! Great beer selection, always something for everyone!"
+        },
+        {
+            "review_datetime_utc": "02/07/2018 16:30:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnOU4zZUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnOU4zZUtnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg9N3eKg%7CCgwIkNPs0wUQgPn82QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I'll have what He's Having!  One of the Best Beers around!  Great place to hang out!!!"
+        },
+        {
+            "review_datetime_utc": "01/28/2018 00:26:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNnRENFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNnRENFp3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg6tD4Zw%7CCgwIo7G00wUQgJyurQI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "2 beers.... $15 and change. C'mon now, it's beer!"
+        },
+        {
+            "review_datetime_utc": "01/27/2018 23:26:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRd3JYODN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRd3JYODN3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQwrX83wE%7CCgwIn5W00wUQwKqK6wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beers.  We love the beers and atmosphere at wooden robot. I always look forward to going there and trying the stellar beers.  Staff is always great and helpful."
+        },
+        {
+            "review_datetime_utc": "01/27/2018 19:02:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdGE3eUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdGE3eUZ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAta7yFw%7CCgwIz5mz0wUQgIqxsQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wooden Robot has a decent selection across the spectrum of beers and the staff is very friendly. Of special note is their Good Morning Vietnam which appeals to most palates.  The patio is nice and the indoor space is well done.  Parking can get tricky when it's busy, but it's usually not that bad of a walk (more than a few blocks)."
+        },
+        {
+            "review_datetime_utc": "01/27/2018 15:13:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3LWRDRXd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3LWRDRXd3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw-dCEwwE%7CCgwIsa6y0wUQwJPLxwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good beer, good atmosphere, I here twisted eats is really good but I have yet to try it."
+        },
+        {
+            "review_datetime_utc": "01/25/2018 03:17:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRa1lQNVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRa1lQNVBnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQkYP5Pg%7CCgsIsZil0wUQgKHwVA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Definitely one of my favorite breweries in town, a huge fan of the IPA/ Pale Ale selection. Not gonna lie I was disappointed that I couldn't fill my growler while I was there, wanted to bring some beer to share on a weekend trip. Other than that, it's a great spot with awesome beer."
+        },
+        {
+            "review_datetime_utc": "01/21/2018 03:07:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaG9fVk9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaG9fVk9BEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQho_VOA%7CCgwI-4eQ0wUQgOzT-QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer, great service, great environment!"
+        },
+        {
+            "review_datetime_utc": "01/20/2018 19:36:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNnZ1cVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNnZ1cVhBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDA6vuqXA%7CCgwIxbSO0wUQgM-ShAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "It's a great place with great beer and great food.. But when it's packed, I can't endorse it"
+        },
+        {
+            "review_datetime_utc": "12/31/2017 14:51:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURROE1YVUJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURROE1YVUJBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ8MXUBA%7CCgwI7PKj0gUQwLjhgQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great vibe!"
+        },
+        {
+            "review_datetime_utc": "12/27/2017 23:43:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMV9URFBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMV9URFBREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg1_TDPQ%7CCgwIjuCQ0gUQgMLgqQE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Honestly I think we are reaching brewery saturation in Charlotte. It's time to start getting choosy with some of these places and I think Wooden Robot fits the bill. Nice enough ambiance, but the beers to my taste seem funky... Like basement brews. Tried a flight and honestly none of the beers were anything I would go back and order a pint of. If this place went away I don't think the Charlotte brewery scene would be any the worse for wear."
+        },
+        {
+            "review_datetime_utc": "12/17/2017 22:00:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRdXFPUnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRdXFPUnJnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQuqORrgE%7CCgwI9NHb0QUQgKrzzwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If not the best close second best brewery in charlotte"
+        },
+        {
+            "review_datetime_utc": "12/17/2017 05:34:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnM0k3NHR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnM0k3NHR3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg3I74twE%7CCgwI1YPY0QUQwOu83gI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Sweet vibe!"
+        },
+        {
+            "review_datetime_utc": "12/13/2017 17:15:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRck96aU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRck96aU9REAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQrOziOQ%7CCgsIr8DF0QUQgLblfw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wooden Robot is really one of the top notch breweries in Charlotte. It's impressive because it's really hard for a brewery to open and immediately be making fantastic beers. Typically there is a learning curve, but there didn't seem to be one with Wooden Robot. The only issue with such success is that the brewery is frequently really busy. Godless Killing Machine and What She's Having are some of the many highlights."
+        },
+        {
+            "review_datetime_utc": "12/10/2017 20:48:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNzdTaHRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNzdTaHRnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg77ShtgE%7CCgwIobu20QUQgMyR2wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite brewery in Charlotte"
+        },
+        {
+            "review_datetime_utc": "12/10/2017 04:44:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncGRHQVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncGRHQVB3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgpdGAPw%7CCgwIkfey0QUQgL7DvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the good morning vietnam! Blonde ale for coffee lovers"
+        },
+        {
+            "review_datetime_utc": "12/03/2017 13:55:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMGZ5OF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMGZ5OF9BRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDA0fy8_AE%7CCgwI2oSQ0QUQwNnR1gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wooden  robot was one of the good choice during my visit to USA  from India. I Really liked the atmosphere here .Very nice place ,kind of lively with lots of beer options.they have got a real indoor outdoor seating.  I tried to few beer options while here with my friends during the weekend.Good morning  Vietnam really did not go well with me,it was little bitter since it  known as  coffee beer.i can no complain on this because it could be my taste buds which did not like it like my other friends.. because this drink is quiet popular with  the crowd here.. Other beers which I tried were really  really awesome brewery withe elegant industrial,vintage look.one should not miss it. Definitely try  beer in here.its opens at 12 noon to 12 midnight during weekends."
+        },
+        {
+            "review_datetime_utc": "11/26/2017 16:27:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRaW96Sm5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRaW96Sm5BRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQiozJnAE%7CCgsI39br0AUQgIXUGw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really enjoyed the innovative coffee sour (venti is twenty), great beers and a lively crowd."
+        },
+        {
+            "review_datetime_utc": "11/13/2017 13:37:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNWU2eVZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNWU2eVZ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg5e6yVw%7CCgwIncCm0AUQwOnp6wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place, great selection of beers and reasonably priced flights to try them. Good spot for hanging with friends. Food available."
+        },
+        {
+            "review_datetime_utc": "11/04/2017 11:47:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcTd1Zm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcTd1Zm13RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAq7ufmwE%7CCgsI3NH2zwUQgJmbEA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good beer.  A little pricey and a little cramped because it's a tight space but hey, it's not a bad problem to have!"
+        },
+        {
+            "review_datetime_utc": "10/15/2017 21:24:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRN1kyb2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRN1kyb2tnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ7Y2okgE%7CCgwIhaSPzwUQwK2LlAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a cool place to hang, have some great craft beer, super dog friendly & really happening place to hang in South End"
+        },
+        {
+            "review_datetime_utc": "09/24/2017 02:22:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOThmem13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOThmem13RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg98fzmwE%7CCgwI5q2czgUQgNv7uQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This Place is amazing!  Literally the best beers I've ever had.  This is a mandatory stop if you like beer."
+        },
+        {
+            "review_datetime_utc": "09/24/2017 02:21:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBd3NPOHRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBd3NPOHRRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAwsO8tQE%7CCgwIuK2czgUQgOnJ1gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer to start. Very chill environment and awesome social bartenders. I definitely recommend this brewery."
+        },
+        {
+            "review_datetime_utc": "09/14/2017 01:45:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNk5iNmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNk5iNmNBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA6Nb6cA%7CCgwIub7nzQUQwN33uwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the beer here!"
+        },
+        {
+            "review_datetime_utc": "09/06/2017 17:52:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNWZxenRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNWZxenRBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg5fqztAE%7CCgwI3OvAzQUQgKDdjAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Giving everyone a fair warning - the beer at WRB is REALLY good."
+        },
+        {
+            "review_datetime_utc": "09/05/2017 18:51:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMVBfclRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMVBfclRREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ1P_rTQ%7CCgwIy-S7zQUQgNTUqwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful beer in a beautiful building.  I also appreciated the calm and quiet atmosphere - a truly great haven for when you need to take a break after a long day."
+        },
+        {
+            "review_datetime_utc": "08/30/2017 00:05:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NDVtWFV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NDVtWFV3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw45mXUw%7CCgwIz4KYzQUQgIL32gM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Not worth the time to say what's wrong"
+        },
+        {
+            "review_datetime_utc": "08/27/2017 13:16:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURna3VyQl9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURna3VyQl9BRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgkurB_AE%7CCgwIt4yLzQUQgI-OxwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Another great local brewery serving Charlotte. Nice selection of IPA on tap during my visit. Taproom was buzzing and busy with inside space filling up quickly. Get there early to grab a seat."
+        },
+        {
+            "review_datetime_utc": "08/26/2017 17:13:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcmVMUC1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcmVMUC1RRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQreLP-QE%7CCgwI0diGzQUQwO60jQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The beer us for the adventurous of palate as well as those who simply love beer. The Twisted Eats food kiosk offers delicious fiid-truck cuisine twisted through the imagination if an executive chef. Amazing all around."
+        },
+        {
+            "review_datetime_utc": "08/05/2017 17:30:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBenJtMFd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBenJtMFd3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAzrm0Ww%7CCgsIoYGYzAUQgKfpLA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice atmosphere and great beer. No wine. Food truck options."
+        },
+        {
+            "review_datetime_utc": "07/26/2017 17:59:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBcXMtSHVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBcXMtSHVBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICAqs-HuAE%7CCgwIhLHjywUQgObaoQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place, great beer! The what he's having is pretty great! Nice selection. The food truck is awesome!"
+        },
+        {
+            "review_datetime_utc": "07/26/2017 01:16:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRai03YjNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRai03YjNnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQj-7b3gE%7CCgwIgtvfywUQgJ-40AM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Nice space and friendly staff despite the seriously lame music, but I give it one star because the beer sucks. I had a Nuts and Bolts Brown Ale that was flat and tasteless. Blech! Couldn't finish it."
+        },
+        {
+            "review_datetime_utc": "07/23/2017 19:46:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndFBlaURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndFBlaURnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgtPeiDg%7CCgwIqPrTywUQgNHl9gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A good craft brewery"
+        },
+        {
+            "review_datetime_utc": "07/14/2017 18:20:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3OUthdUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3OUthdUN3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw9KauCw%7CCgwI9ZakywUQwMX47QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool taproom, great beer. Not too much else to say!"
+        },
+        {
+            "review_datetime_utc": "07/08/2017 02:51:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRb09uX1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRb09uX1l3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQoOn_Yw%7CCgwIy5GBywUQgO2BsAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great beer, food is a little over price with the amount you get."
+        },
+        {
+            "review_datetime_utc": "07/08/2017 00:52:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcE0zYXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcE0zYXRBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDApM3atAE%7CCgwI6dmAywUQwI3S7wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a brewery what's not to love!"
+        },
+        {
+            "review_datetime_utc": "07/06/2017 13:42:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBZ29uWFZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBZ29uWFZBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAgonXVA%7CCgwIz_z4ygUQgIOTnQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great space and beer options!  I love the indoor and outdoor seating.  I love the names of their beers.  There is typically 2-3 that I really like but I try them all.  I love that they have a 5oz, 10oz & 17oz pour options.  Oftentimes, I like to get several of the 5oz options unless there is one that I am over the moon about (and that happens).  The industrial feel, the garage door open to let the outside in & the view of the brew masters haven makes for great atmosphere.  Couldn't pick a better location in South End, so close to Uptown.  Venture here & come back often.  Cheers!"
+        },
+        {
+            "review_datetime_utc": "07/04/2017 15:34:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURReDRhOTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURReDRhOTNRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQx4a93QE%7CCgsIkevuygUQwJffOA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere, great service, and great beer"
+        },
+        {
+            "review_datetime_utc": "06/25/2017 18:29:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMGV6MlBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMGV6MlBREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg0ez2PQ%7CCgwIlILAygUQwLCDwwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Holy friggin moly. This place is dope! Not afraid to try some interesting with their brewing, like the dark sour and coffee vanilla blonde. You will NOT be let down by any of their offerings, and they are super dog friendly. Female bartender was a bit out of it, but who cares? We came for beer, and were not let down!"
+        },
+        {
+            "review_datetime_utc": "06/17/2017 04:08:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNGRPLTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNGRPLTdRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ4dO-7QE%7CCgwIw9aSygUQgKPVuwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool venue with some delicious beer.  Dog friendly, which is fun. The Twisted Eats food truck they partnered with had great food.  Had the Mac n cheese eggs rolls and bacon wrapped crackers.  Yummy southern eats!"
+        },
+        {
+            "review_datetime_utc": "06/08/2017 02:36:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaUx2MUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaUx2MUtnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAiLv1Kg%7CCgwIyfDiyQUQgPnq5QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cool environment. Can get very busy."
+        },
+        {
+            "review_datetime_utc": "06/07/2017 23:24:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnblByRXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnblByRXF3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgnPrEqwE%7CCgwIyJbiyQUQwKbt_wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer!  By far the best flight we had on our trip to Charlotte...wish I could get it in Kentucky."
+        },
+        {
+            "review_datetime_utc": "06/05/2017 00:03:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRd0xyT09nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRd0xyT09nEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQwLrOOg%7CCgwIwr_SyQUQwJugjAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good beer and great service."
+        },
+        {
+            "review_datetime_utc": "05/31/2017 02:30:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNROExDSnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROExDSnZnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ8LCJvgE%7CCgsI49W4yQUQgMOFZg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great beer selection, try Overachiever or Good Morning Vietnam. Typical brewery atmosphere. Serves food that incorporates their beers. Very crowded on weekends."
+        },
+        {
+            "review_datetime_utc": "05/27/2017 02:59:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBLWJDWlFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBLWJDWlFREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA-bCZQQ%7CCgwIpdejyQUQwITP9AE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Fun place with pretty good beer and greasy food. Not much more you can ask for. If you stay outdoors there are a few smokers..."
+        },
+        {
+            "review_datetime_utc": "05/24/2017 15:40:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRMV9Ic1ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRMV9Ic1ZBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ1_HsVA%7CCgwIidOWyQUQgPDw5AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Had the best time here this weekend!!  As a person with a gluten allergy, I was thrilled to find Wooden Robot's beers all gluten free!  I enjoyed the beers immensely, and the atmosphere was great!  It was a little snug, but it was a beautiful day so everyone was there, and it was a great vibe.  I'll definitely be back!"
+        },
+        {
+            "review_datetime_utc": "05/21/2017 18:23:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRaTl5YzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRaTl5YzFBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQi9yc1AE%7CCgwIuLaHyQUQwIWGpQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Found a new spot.  Great beer!!!"
+        },
+        {
+            "review_datetime_utc": "05/06/2017 03:58:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdi1ETGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdi1ETGZ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQv-DLfw%7CCgsI-ZO1yAUQwKbSEQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Probably our favorite brewery in Charlotte.  Always have a variety of new beers to try and tend to specialize in sour beers."
+        },
+        {
+            "review_datetime_utc": "04/23/2017 23:53:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRejRLNmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRejRLNmRBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQz4K6dA%7CCgwI4Pz0xwUQgO3vuwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Parking always a pain anywhere at places like this."
+        },
+        {
+            "review_datetime_utc": "04/13/2017 00:29:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3MFBPTERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3MFBPTERREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw0POLDQ%7CCgwI8Iy7xwUQwKnlrgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Some of the best beer in South End. Good Morning Vietnam is a real winner."
+        },
+        {
+            "review_datetime_utc": "04/08/2017 18:12:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdjZURmdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdjZURmdBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQv6TFgAE%7CCgwIhtCkxwUQgJm2_gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent beer. Can't wait until they bottle"
+        },
+        {
+            "review_datetime_utc": "03/31/2017 20:32:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaXZ2Y1JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaXZ2Y1JBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAivvcRA%7CCgwI0vn6xgUQgMe9vwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of the best Charlotte Breweries"
+        },
+        {
+            "review_datetime_utc": "03/01/2017 16:52:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURROU5Pb293RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURROU5Pb293RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ9NOoowE%7CCgwI3PjbxQUQwO_ZyQE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Nothing on offer other than beer and rude staff"
+        },
+        {
+            "review_datetime_utc": "02/21/2017 00:04:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbVBfeEZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbVBfeEZ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICAmP_xFw%7CCgwI-4euxQUQgIrDpQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The beer here was great! The location was fun and even though busy, didn't feel crowded, and we got GREAT service from all of the staff. They did however lose a star due to their on-site eatery, Twisted Eats. As a note, if I could review just Twisted Eats, It would be a 2 at best. Our party stopped in here on our way back to Raleigh, NC from Atlanta. I was excited to give the brewery a try, and we picked this spot specifically because they had food on site. Unfortunately, the food is just not good. We tried the bacon crunch, the chic n' waffle wrap, the cuban, the mac 'n cheese egg roll, and the beer cheese. The only things of these that I found to be particularly appetizing were the beer cheese with the pretzel roll, which were as-advertized, and the mac and cheese egg roll, and that was so greasy as to be off-putting. The waffle on the chicken and waffle was completely soaked through with grease, soggy and unappetizing (the chicken, while greasy, was flavorful). The bacon crisp snacks taste like burnt bacon and are like chewing sand (this may be what they're going for, but I didn't find it pleasant). The cuban was heavy and soggy. Overall, the food experience was just extremely heavy, and some of it (like the waffle portion of the waffle wrap and the bacon crisps) completely inedible. I don't know if it was just an off night, or if this is normal but if we make it back to this brewery, I won't be trying the food again.  TLDR; the beer and service are great but if you're hungry, order a pizza delivered."
+        },
+        {
+            "review_datetime_utc": "02/13/2017 00:36:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaTVqTVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaTVqTVhREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAi5jMXQ%7CCgwI_v6DxQUQgP61hwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wide variety. The beer is excellent. You are about to order flight so you can try a 5 different brews at a time."
+        },
+        {
+            "review_datetime_utc": "02/10/2017 23:04:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNllPQlZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNllPQlZ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDA6YOBVw%7CCgwIio75xAUQwOLC3QI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Decent beers, a little over crowded but it's Charlotte so it's expected, the biggest downer was that they don't offer growlers \"anymore\" apparently while they still have them displayed with prices... several other breweries in town that I would recommend before this place."
+        },
+        {
+            "review_datetime_utc": "01/25/2017 20:54:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNROElhb0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNROElhb0x3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ8IaoLw%7CCgwI_KCkxAUQwImsigM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best brewery in Charlotte.  Food truck parked out front if you get munchies, otherwise just enjoy the amazing alcohol!"
+        },
+        {
+            "review_datetime_utc": "01/23/2017 21:11:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNReWF6VEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNReWF6VEdBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQyazTGA%7CCgwI7-KZxAUQgNm6uwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best beer in CLT"
+        },
+        {
+            "review_datetime_utc": "12/23/2016 19:11:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOFlpRlhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOFlpRlhnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg8YiFXg%7CCgsI3e31wgUQgPSNUA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Killer beer and service. Something for everyone. They have it all together!"
+        },
+        {
+            "review_datetime_utc": "12/17/2016 22:50:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdkxTOTZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdkxTOTZBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQvLS96AE%7CCgwIuYLXwgUQgP_stwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great people, awesome beer"
+        },
+        {
+            "review_datetime_utc": "11/23/2016 02:48:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndUpuTGR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndUpuTGR3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDguJnLdw%7CCgwIiIfUwQUQgNHTggE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer and food.  Comfortable and handsome interior.  Friendly."
+        },
+        {
+            "review_datetime_utc": "11/15/2016 22:02:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRNFAzU2F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRNFAzU2F3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQ4P3Saw%7CCgwIk4yuwQUQwKebtgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to hang out and drink some cool IPA's."
+        },
+        {
+            "review_datetime_utc": "11/13/2016 03:19:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRN2Rha2h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRN2Rha2h3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ7dakhwE%7CCgsIxLefwQUQwLD6SA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer, great atmosphere"
+        },
+        {
+            "review_datetime_utc": "10/24/2016 02:05:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMEwyMHZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMEwyMHZRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA0L20vQE%7CCgwI89i1wAUQwIX0sAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice room with comfortable indoor and outdoor spaces. Great, energetic and friendly vibe. But best of all, the beer was excellent and ice cold! We tried the Heidi Ho and the What He's Having, both really good. Our first visit, but we'll be back and will tell our friends."
+        },
+        {
+            "review_datetime_utc": "09/18/2016 21:01:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRalplSGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRalplSGd3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQjZeHgwE%7CCgwIxYH8vgUQgKH5zgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best craft beer in Charlotte. Do yourself a solid and give this place a try."
+        },
+        {
+            "review_datetime_utc": "09/03/2016 20:02:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMDg3NW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMDg3NW9nRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA0875ogE%7CCgsI4disvgUQgJHPRQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best brewery in Charlotte. Bar none. Great selection of sours. Regular weekly limited releases that our always worth checking out."
+        },
+        {
+            "review_datetime_utc": "08/22/2016 18:50:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncjVlakZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncjVlakZnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgr5ejFg%7CCgwI8ZLtvQUQgLecsAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Brilliant tap room with stunning design. Fantastic beer you really ought to hunt down."
+        },
+        {
+            "review_datetime_utc": "08/20/2016 22:47:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRM1ByWmRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRM1ByWmRREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ3PrZdQ%7CCgsIlrzjvQUQgNjxFg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Recently voted number 1 in a local Charlotte poll...if you like sours and saisons, this is your place! They also have your standards...ipa, stout, but no wheat while i was there. Typically crowded but service  is fast!"
+        },
+        {
+            "review_datetime_utc": "08/18/2016 22:57:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNndS1IWE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNndS1IWE9REAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgu-HXOQ%7CCgwI1frYvQUQgNWC4gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Definitely one of my favorite craft beers from the Charlotte area! Good strong flavors while staying smoothing and enjoyable."
+        },
+        {
+            "review_datetime_utc": "07/29/2016 01:03:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRaDhMM0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRaDhMM0VBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQh8L3EA%7CCgwI1tbqvAUQgNuEtAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer love the underachier and good morning Vietnam... The is my favorite brewery in charlotte."
+        },
+        {
+            "review_datetime_utc": "07/20/2016 19:07:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNneTh2ckNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNneTh2ckNBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgy8vrCA%7CCgsIiZi_vAUQgMOFZg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "If your date walks like a wooden robot and talks like a wooden robot, you may want to call a cab. Ok, time for the serious review. Good beer. Nice, cheerful staff. Certainly worth checking out. If you're a millennial, this is your place. I think I skewed the mean age up 10 years. All in all, a kewl place."
+        },
+        {
+            "review_datetime_utc": "07/12/2016 19:19:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbGQycFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbGQycFh3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICAld2pXw%7CCgwItYWVvAUQwOng8QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beers and taproom!"
+        },
+        {
+            "review_datetime_utc": "07/09/2016 18:13:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRa09DTDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRa09DTDB3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQkOCL0wE%7CCgsIuP2EvAUQwNrbJA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The beers are amazing and the service is A+. Great atmosphere for grabbing a drink with friends!"
+        },
+        {
+            "review_datetime_utc": "07/01/2016 14:53:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMUpXY2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMUpXY2xnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg1JWclgE%7CCgwI7IfauwUQwP-MzQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious beers with a nice selection of sours on tap in a cozy taproom. I'd definitely recommend putting it on the list of breweries to check out in Charlotte's South End."
+        },
+        {
+            "review_datetime_utc": "06/22/2016 22:17:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMU42TXBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMU42TXBRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICA1N6MpQE%7CCgsI5JysuwUQwM7pdA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really great atmosphere and beer! My favorite is the Good Morning Vietnam (a coffee vanilla blonde ale) that I loved so much I served it at my wedding! It was even better when they made a nitrogen infused mocha version! The food truck twisted eats is a win, too! I love visiting their brewery!"
+        },
+        {
+            "review_datetime_utc": "06/22/2016 00:39:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3bVlxR3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3bVlxR3lnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwmYqGygE%7CCgwItbynuwUQwPaJ0gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best beer in CLT, no question.  Especially the creative sours they offer.  Hope they expand soon!"
+        },
+        {
+            "review_datetime_utc": "06/19/2016 23:54:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNReWRPQzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNReWRPQzVBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQydOC5AE%7CCgwIr-GcuwUQgLGs0gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Killer brews and really great atmosphere"
+        },
+        {
+            "review_datetime_utc": "06/18/2016 22:54:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRenJpRG9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRenJpRG9nRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQzriDogE%7CCgwIoKKXuwUQwImjkAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Oh my god the Good Morning Vietnam.  The beers were fantastic, the space was nice, and the Twisted Eats food truck outside served one heck of a lamb burger.  Wish I lived on this side of town - if I did, I'd be here every week."
+        },
+        {
+            "review_datetime_utc": "06/18/2016 16:39:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NUx2T1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NUx2T1RnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw5LvOTg%7CCgsIpfKVuwUQgP2HUQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer and the robot theme is pretty cool"
+        },
+        {
+            "review_datetime_utc": "06/09/2016 06:54:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBd192cW5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBd192cW5nRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAw_vqngE%7CCgwIk6XkugUQwKjA8gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome laid back atmosphere despite the ease of access for the ostentatious milkenials.TheTwistedEats food truck setup exclusively for the brewery had a nice variety with progressive menu.  The beer list is ever changing with a few staples, micro seasonal options, and occasional local collaborations."
+        },
+        {
+            "review_datetime_utc": "06/05/2016 17:58:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBaTZmSVVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaTZmSVVBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICAi6fIUA%7CCgsIsdDRugUQgOiSJg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The vanilla coffee blond ale is fantastic."
+        },
+        {
+            "review_datetime_utc": "06/02/2016 11:47:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBM3NMMXhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBM3NMMXhRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDA3sL1xQE%7CCgwI0bnAugUQwPmK-wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite brewery in Charlotte - a small space but the beer is the best.  You never know what will be on tap - but it's usually something crazy - Sweet Tater Pie is my seasonal favorite.  They usually have a food truck waiting outside (Twisted Eats) and let you bring it into the tap room. Great crowd with lots of variety in styles of beer located in Uptown. Highly recommended."
+        },
+        {
+            "review_datetime_utc": "05/18/2016 23:22:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRd2NXNWR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRd2NXNWR3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQwcW5dw%7CCgwIqvLzuQUQgLXJvQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Some of the best beers, service and overall in environment in Charlotte has to offer. Their infused beers are amazing!!"
+        },
+        {
+            "review_datetime_utc": "05/17/2016 12:06:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRblphdUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRblphdUh3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQnZauHw%7CCgwIr5LsuQUQgLDspwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great location and atmosphere, the Good Morning Vietnam Coffee blonde is one of my 2 favorite craft beers in the queen city."
+        },
+        {
+            "review_datetime_utc": "05/15/2016 20:45:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM1phVTJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM1phVTJBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ3ZaU2AE%7CCgsI2b_juQUQgOiSJg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "awesome sour beer offerings"
+        },
+        {
+            "review_datetime_utc": "05/04/2016 20:37:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnN2VxaW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnN2VxaW13RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICg7eqimwE%7CCgsI-bqpuQUQgJv3fA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good Morning Vietnam!! Best vanilla beer I have EVER tasted!"
+        },
+        {
+            "review_datetime_utc": "05/04/2016 15:12:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMktfZHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMktfZHNnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDA2K_dsgE%7CCgwI7aKouQUQwOuz5AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer, location, and staff!"
+        },
+        {
+            "review_datetime_utc": "05/03/2016 00:43:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRN05qNG93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRN05qNG93RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ7Nj4owE%7CCgwIqeifuQUQgPSovgM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good Belgium style beers"
+        },
+        {
+            "review_datetime_utc": "04/24/2016 23:12:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnd0pIU3p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnd0pIU3p3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgwJHSzwE%7CCgwIzKX1uAUQgNrNgwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Two words! Great Beer!!!"
+        },
+        {
+            "review_datetime_utc": "04/24/2016 19:32:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnaEp2NVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnaEp2NVR3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICghJv5Tw%7CCgsI0770uAUQwMaUMA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I loved this place! The bartender was very friendly, and the beer superb. I generally like IPAs and Porters but tried the Good Morning Vietnam (a blonde ale) and it was so delicious we got two growlers on our next visit. The food truck uses their beer as an ingredient in their dishes. I had the duck quesadilla and BBQ chicken hash and would recommend both!"
+        },
+        {
+            "review_datetime_utc": "04/23/2016 16:46:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURna2JYZThBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURna2JYZThBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgkbXe8AE%7CCgwI183uuAUQgIG3sAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent beers with an evolving selection of beers featuring many sours and farmhouse ales."
+        },
+        {
+            "review_datetime_utc": "04/21/2016 19:41:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRbXJuQUFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRbXJuQUFnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQmrnAAg%7CCgwI49nkuAUQgKnFmQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Tons of great beers"
+        },
+        {
+            "review_datetime_utc": "04/18/2016 16:38:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NWZHVEJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NWZHVEJREAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw5fGTBQ%7CCgwI7prUuAUQwILzhwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beers, especially the IPA selection."
+        },
+        {
+            "review_datetime_utc": "04/17/2016 23:57:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnLUxqN1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnLUxqN1lnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg-Lj7Yg%7CCgwIzcXQuAUQwJWeugI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice place, chill atmosphere, plenty of spots around to claim as your own space, the beer I had was excellent (Godless Killing Machine).  Located in a good n'hood. I like it."
+        },
+        {
+            "review_datetime_utc": "04/17/2016 18:16:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRa2VHeXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRa2VHeXR3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQkeGytwE%7CCgwI8aXPuAUQwPORowM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beer.  Best all around selection and quality in the CLT.  The Vietnam blonde out standing.  Nice atmosphere and food truck good too twisted eats"
+        },
+        {
+            "review_datetime_utc": "04/01/2016 01:53:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnM1A2dFJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnM1A2dFJnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDg3P6tRg%7CCgwIian3twUQwLjPjQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This place gets super crowded on the weekends, so get there early!"
+        },
+        {
+            "review_datetime_utc": "03/22/2016 12:36:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3emFiLVZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3emFiLVZnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwzab-Vg%7CCgwI2_jEtwUQwIL8gQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best beer at a great price, friendly service, great people."
+        },
+        {
+            "review_datetime_utc": "03/20/2016 19:55:29",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRMi1MandRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRMi1MandRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ2-LjwQE%7CCgwIsYC8twUQwIX9qgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the beer !!! Nice friendly staff"
+        },
+        {
+            "review_datetime_utc": "03/13/2016 18:25:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbXB2YzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbXB2YzV3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgmpvc5wE%7CCgsIp-GWtwUQwOWoGA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We stopped here during craft crawl 2016 and I was blown away with the beer quality. At first I thought they may have just been my favorite types, no worries  and extra good are both hoppy  beers but then tried the good morning Vietnam which was a coffee vanilla blonde. All I can say is DELICIOUS!  Decent venue, great food from twisted eats truck. Will be back for sure....."
+        },
+        {
+            "review_datetime_utc": "03/09/2016 12:53:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBd1lhQWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBd1lhQWpBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDAwYaAjAE%7CCgwIu7mAtwUQgNKKswI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Try the Good Morning Vietnam. Its a perfect vanilla coffee beer. Super friendly service. Twisted Eats is a food truck that pairs with this brewery to provide food on the busier nights."
+        },
+        {
+            "review_datetime_utc": "02/25/2016 23:02:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRb05lX2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRb05lX2x3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQoNe_lwE%7CCgwI-o--tgUQgO2BsAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We love this brewery. When we first moved here they had the What She's Having which was our favorite and just recently brought it back, however they are all great. If you're a beer lover I'd highly recommend getting their growler it is well worth it. Definitely our favorite brewery in Charlotte!"
+        },
+        {
+            "review_datetime_utc": "02/09/2016 00:10:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRdXJySE1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRdXJySE1REAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQurrHMQ%7CCgwI8NzktQUQwNWi9wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My new favorite brewery in Charlotte! Love their Good Morning Vietnam.  Try it!!"
+        },
+        {
+            "review_datetime_utc": "02/03/2016 01:53:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbXVhZ1FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbXVhZ1FnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQmuagQg%7CCgwIhLvFtQUQwJWVwAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Atmosphere feels kind of tainted by the crowd. Really good beer, especially Good Morning Vietnam (vanilla coffee stout). Also a good variety of good beer."
+        },
+        {
+            "review_datetime_utc": "01/26/2016 02:09:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NEpiVkd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NEpiVkd3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw4JbVGw%7CCgsI6KqbtQUQwJuFHg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of the best Charlotte Breweries. Good selection, and some nice one-offs on the menu. Overall great beer and a cool space that doesn't seem to get too crowded."
+        },
+        {
+            "review_datetime_utc": "01/13/2016 00:04:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnamRDRkhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnamRDRkhBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDgjdCFHA%7CCgwIqanWtAUQgM-JigI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great ales! Wish they had flights."
+        },
+        {
+            "review_datetime_utc": "01/12/2016 03:23:09",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3ei1fbThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3ei1fbThnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwz-_m8gE%7CCgwInePRtAUQwNPGigI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great, wide selection of beers. The environment is fun and well decorated."
+        },
+        {
+            "review_datetime_utc": "01/03/2016 07:20:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRemZxUGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRemZxUGdBRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQzfqPgAE%7CCgsIzJejtAUQwLXOZA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Complexity! In a world where double, triple, and quadruple IPAs rule, it's great to have so much variety in great beer! One of my favorite!"
+        },
+        {
+            "review_datetime_utc": "12/17/2015 15:36:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MWJheW93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MWJheW93RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICw1bayowE%7CCgsIk63LswUQgJmbEA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I dont get out to breweries much anymore, but the old guard of breweries in CLT wasn't doing it for me anymore.  I went here for a work party, and their beer is amazing.  There's a little bit of everything for everyone.  Give it a shot!"
+        },
+        {
+            "review_datetime_utc": "12/06/2015 16:34:06",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM3VtRmpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM3VtRmpRRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ3umFjQE%7CCgwI_saRswUQwLyH5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The most creative and well executed beer in Charlotte served in a large wood finished space. All beers are available in 3 sizes which is great for tasting. They also have an outdoor patio and can host private events."
+        },
+        {
+            "review_datetime_utc": "12/01/2015 01:04:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRaXJEemFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRaXJEemFnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQirDzag%7CCgsIs-TzsgUQwLvHPA%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "This is a decent place to get a beer. Good atmosphere and good selection of craft beer."
+        },
+        {
+            "review_datetime_utc": "11/20/2015 15:32:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bnJINEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bnJINEl3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwnrH4Iw%7CCgwIpvq8sgUQwPvU8wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I was so impressed with Wooden Robot! Off the top of my head they had around 12 beers on tap, with probably the most diverse and interesting line-up I've seen in CLT. Some standards, a APA, IPA, oatmeal stout (on nitro), and Belgian style wit.. The others were all pretty atypical and interesting- a handful of different sours (not a big sour guy), but a sour IPA I could enjoy, which they had. ABVs ranging from 3.6%-9% I believe. The space was very nice- big, open, warm, crisp and clean but not the overdone hipster wood/industrial vibe with random antlers (see some other breweries). Also quite a bit of sound insulation panels up high on the walls, which helped keep the noise not too overwhelming. Bartenders were busy but extremely warm and kind. No pretentiousness here. Most importantly: across the board the beer ranged from good to excellent. From standards to the quirky, they were all good (didn't get to try all, but quite a few). Already this brewery is competing for making the best beer in town, IMO. Standouts: the fall spiced red ale- perfect balance, just enough spice to taste like fall but not overpower the palate. Blonde Ale with coffee and vanilla, and IPA.  Also, branding is great.  Cheers!"
+        },
+        {
+            "review_datetime_utc": "11/18/2015 00:39:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRN1pPeGx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRN1pPeGx3RRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQ7ZOxlwE%7CCgwI0JGvsgUQwLyH5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great Craft Beers, good decor, great location, need sound proofing though... Can get loud fast"
+        },
+        {
+            "review_datetime_utc": "11/08/2015 22:38:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbWRXR3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbWRXR3FnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgmdWGqgE%7CCgwIzJ3_sQUQwPCHgAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good Morning Vietnam is one of the best beers I have ever had"
+        },
+        {
+            "review_datetime_utc": "10/12/2015 23:52:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbmJhV2J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbmJhV2J3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICgnbaWbw%7CCgwIzY_xsAUQgN6O1wM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Widest local selection of sour beers if that is your style, although they have a nice selection of \"conventionals\" also."
+        },
+        {
+            "review_datetime_utc": "08/20/2015 20:45:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBc0k2dVVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBc0k2dVVBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICAsI6uUA%7CCgwI4_jYrgUQgN784gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Off to a great start! The guy who said its lame to serve beer in a wine glass must not know what beer glasses look like.  I like the individual small pours instead of a flight, as I enjoy sampling and often want more than one flight but less than 2.  I was really inspired by the sour IPA they served at the Black and Blue beer festival earlier this year and really look forward to their funkier brett and other sour offerings."
+        },
+        {
+            "review_datetime_utc": "08/15/2015 03:46:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRa2ZHTkRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRa2ZHTkRBEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICQkfGNDA%7CCgwIq-y6rgUQgNm6uwM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Was coming in BUT CLOSED @ 11pm on a FRIDAY!!!!"
+        },
+        {
+            "review_datetime_utc": "07/18/2015 22:16:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3dnV6YUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dnV6YUJ3EAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgICwvuzaBw%7CCgwItaCrrQUQgL2ViAI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Their pricing is incredibly strange, and their beer selection consists of a saison, an IPA, an IPA...and another IPA. Cant really hold it against them, as they're brand new. Will certainly keep in my sights."
+        },
+        {
+            "review_datetime_utc": "07/09/2015 15:48:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRblk2S1BnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRblk2S1BnEAE!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQnY6KPg%7CCgwI0q_6rAUQgJmkigE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Amazing atmosphere inside and branding. Their beer pricing and variety is a bit strange but it's brand new so it'll only get better. Wish they had true flights but again, great spot."
+        },
+        {
+            "review_datetime_utc": "06/29/2015 20:59:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdExEeXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdExEeXRnRRAB!2m1!1s0x0:0x1b211d4d9afbb725!3m1!1s2@1:CIHM0ogKEICAgIDQtLDytgE%7CCgwIq-PGrAUQwIfHowE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such an awesome place! Amazing beer!"
         }
     ],
-    "total_reviews_count": 763
+    "total_reviews_count": 764
 }

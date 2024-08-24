@@ -3,6 +3,20 @@
     "place_name": "Starbucks | 4044 Connection Point Blvd",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/10/2023 12:44:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCeUtfQXlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCeUtfQXlBRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIDByK_AyAE%7CCgsIxLv1nQYQwNGzXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Today I went to chill before work and while sitting in the lounge area, I bumped my drink and spilled it during busy hours. I apologized. They immediately ran to clean it up and remade my drink before it was fully cleaned up. Their customer service is exemplary. I'm in workforce and I'd hire any one of these crew members. You all are the best and make everyone feel welcome❤️"
+        },
+        {
+            "review_datetime_utc": "01/09/2023 01:19:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCOWNPZHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCOWNPZHNnRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICB9cOdsgE%7CCgwIvdftnQYQqJ_NuAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Everything was great!"
+        },
+        {
             "review_datetime_utc": "01/05/2023 14:52:49",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCdTYtX2RnEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCdTYtX2RnEAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICBu6-_dg%7CCgsIwcjbnQYQsMeLRg%7C?hl=en-US",
@@ -904,13 +918,6 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxa092NGdRRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIDqkOv4gQE%7CCgwIm8XYhgYQiMKt6AE%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "I've never been and went with the Starbucks lingo knowledge. I got my order messed up but... THEY GAVE ME THE DRINK FREE, THEY GAVE ME A COUPON, AND ALSO WHAT I WANTED CORRECTED. LIKE OML THEY ARE SO NICE HERE AND UNDERSTANDING. HOW HAVE I NOT BEEN COMING HERE MY WHOLE BREAKFAST LIFE! My inner geek belongs here. Woooo"
-        },
-        {
-            "review_datetime_utc": "06/25/2021 06:58:07",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxb01HbGZBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxb01HbGZBEAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIDqoMGlfA%7CCgwI__zVhgYQkLGdtgM%7C?hl=en-US",
-            "review_rating": 1,
-            "review_text": "By far one of the worst Starbucks in the Charlotte area and I've pretty much been to all of them.The drive thru is always backed up all the way to the road and my drinks are always wrong and then when I tell them it's not correct they get an attitude like they didn't mess it up.I literally get the same drink every day so I know when it's not made correctly.They also don't shake a lot of the drinks which makes them taste bad.Lena and Lauren are the only friendly baristas.The rest need some customer service classes."
         },
         {
             "review_datetime_utc": "06/24/2021 21:15:11",
@@ -2101,7 +2108,133 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNaWR2NUhREAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICMidv5HQ%7CCgwIxrnr7gUQyI34vQI%7C?hl=en-US",
             "review_rating": 2,
             "review_text": "This new location needs some help. Always dirty & slow service."
+        },
+        {
+            "review_datetime_utc": "11/24/2019 16:13:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNaVlxLVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNaVlxLVN3EAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICMiYq-Sw%7CCgwIjtjq7gUQoOn2_wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very nice for small meetings and a delicious donut.  The outside is nice and open as well."
+        },
+        {
+            "review_datetime_utc": "11/20/2019 17:42:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNbnBiSU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNbnBiSU5nEAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICMnpbINg%7CCgwIm_bV7gUQgKK30wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "My new favorite Starbucks. Early in the morning they all have very positive encouraging attitudes. They are eager to fix incorrect orders, and it's very spacious."
+        },
+        {
+            "review_datetime_utc": "11/20/2019 13:12:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNNN3Myd3lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNN3Myd3lBRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgICM7s2wyAE%7CCgsIy_fU7gUQ4Pm3MA%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "The worst STARBUCKS EVER I have given this location chance after chance and I promise you going here is like rolling a dice they might get your order right BUT MOST OF TIME ITS WRONG and if you know you know that Starbucks drinks aren't a dollar so if your looking to waste money go here they'll mess up your Order and take forever while doing it have fun"
+        },
+        {
+            "review_datetime_utc": "11/18/2019 13:35:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwbzdfTmVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwbzdfTmVREAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0o7_NeQ%7CCgwImLzK7gUQ6Lr5yQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The employees are more personable here than any Starbucks I've ever been to. They really make it feel like a neighborhood shop, not a big chain store! I've never seen anyone frustrated when it's busy, and everyone has been better than pleasant. They seem like they truly enjoy their jobs."
+        },
+        {
+            "review_datetime_utc": "11/16/2019 20:10:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwM1pISER3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwM1pISER3EAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID03ZHHDw%7CCgsIsq_B7gUQuN_FXg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "First time at this new location, I must say very disappointed they had no strawberry refresher at all. That is all I drink at starbucks and was happy about the new closer location looks like I may have to either stop going to Starbucks all together or go back to my usual but farther  location."
+        },
+        {
+            "review_datetime_utc": "11/12/2019 04:31:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwLWNtVzJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwLWNtVzJRRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0-cmW2QE%7CCgwIr-uo7gUQoIiktgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it."
+        },
+        {
+            "review_datetime_utc": "11/11/2019 02:14:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwbWZHblZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwbWZHblZREAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0mfGnVQ%7CCgwI_Iej7gUQkNHppwM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Got my order wrong!"
+        },
+        {
+            "review_datetime_utc": "11/10/2019 20:33:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwNlplOVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwNlplOVNnEAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID06Ze9Sg%7CCgwIi-ih7gUQ0MSoyAI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Slowest/worst Starbucks I have visited. I have been to this place four times, and the last two times I had to ask/check for my drink and it took 11 minutes to get something.  It was not that busy when asking either time... I know this is a new location but it needs to get his stuff together.  Let me also add that the double tall vanilla latte I got tasted terrible as well?  What is going on here..."
+        },
+        {
+            "review_datetime_utc": "11/07/2019 17:08:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwZ2M3NjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwZ2M3NjVRRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0gc765QE%7CCgwIiJ-R7gUQ4KKquwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I had an excellent experience at this new location. The drive thru line was moderate but still moved surprisingly fast. Today is the kickoff for the holiday beverages, but I still got my free reusable cup, even though it was after 11 am. Everybody working there was wearing Santa hats and shirts. It made the brief visit, festive & fun! The staff member at the window was incredibly sweet & polite. My Toasted White Chocolate Mocha was perfect, as always. Thx, SBUX!!"
+        },
+        {
+            "review_datetime_utc": "11/03/2019 16:23:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwNXRtUG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwNXRtUG53RRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID05tmPnwE%7CCgwIjP777QUQiM7ShwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Took a hot second to get my drink but once I got it the ease of service and quality made the wait worth it"
+        },
+        {
+            "review_datetime_utc": "10/24/2019 23:51:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVcWMzRl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVcWMzRl9RRRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIDUqc3F_QE%7CCgsI6fHI7QUQ0P2bTA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Thank you for a Great Location! Just hope drivethru gets better... runs a bit slow. other than that Always a great experience."
+        },
+        {
+            "review_datetime_utc": "10/18/2019 00:00:46",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwb0tMZmV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwb0tMZmV3EAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0oKLfew%7CCgwIroGk7QUQoJH4nAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I'm so glad too see a Starbucks on this side of town!  I tried a iced green tea with cane sugar and it was amazing! It seemed to also give me a boost of energy similar to a cup of coffee. I tried the bacon egg bites, which were small but delicious. I also tried the spinach and Feta wrap and it was quite tasty.  I went through the drive through and was helped by Deeasia. She was so nice!! As a great breakfast or lunch alternative, this Starbucks is truly welcomed. I will be back!"
+        },
+        {
+            "review_datetime_utc": "10/17/2019 06:00:27",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwZ0xDUXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwZ0xDUXR3RRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgID0gLCQtwE%7CCgwI-4ag7QUQiIyH0QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The service is always on point. Service with a smile. However, drive thru runs a little slow and they may need a few more staff members. Though, their drinks are amazing. Hardly know if the bingo board game is used to add stars because I haven't received my free drinks from last year and stars from the last bingo game."
+        },
+        {
+            "review_datetime_utc": "10/11/2019 09:35:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwbV96SHF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwbV96SHF3RRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIC0m_zHqwE%7CCgwI9JmB7QUQ4L2KlgI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Super slow"
+        },
+        {
+            "review_datetime_utc": "10/06/2019 03:33:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwalo2V1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwalo2V1VBEAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIC0jZ6WUA%7CCgsIlcHl7AUQkNjgTg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "(Translated by Google) Bad service, the one who served me is angry, I won't come back  (Original) Mal servio  el que me atendió  esta enojado no vuelvo  air"
+        },
+        {
+            "review_datetime_utc": "10/02/2019 22:22:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwMmF1R0FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwMmF1R0FREAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIC02auGAQ%7CCgwIrcbU7AUQqKH8uQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great location and service."
+        },
+        {
+            "review_datetime_utc": "09/29/2019 16:14:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwb2ZfMFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwb2ZfMFN3EAE!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIC0of_0Sw%7CCgwI7rDD7AUQ2NPRugM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great new location"
+        },
+        {
+            "review_datetime_utc": "09/29/2019 01:16:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwZ2RYZ193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwZ2RYZ193RRAB!2m1!1s0x0:0xafe3b180097cb5b0!3m1!1s2@1:CIHM0ogKEICAgIC0gdXg_wE%7CCgwI0IvA7AUQoNCStAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just opened and amazing. Best service ever. So happy they have a drive-thru."
         }
     ],
-    "total_reviews_count": 610
+    "total_reviews_count": 612
 }

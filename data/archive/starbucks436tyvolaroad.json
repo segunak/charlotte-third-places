@@ -3,6 +3,27 @@
     "place_name": "Starbucks | 436 Tyvola Road",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/15/2023 15:49:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCa3B2OVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCa3B2OVFnEAE!2m1!1s0x0:0x752080bd1742fcd5!3m1!1s2@1:CIHM0ogKEICAgIDBkpv9Qg%7CCgwIicGQngYQ2Mik6QI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Very horrible experience! After sitting in this specific Starbucks for over 1 hour…a Starbucks that I frequent nearly every day whether by drive thru or walk in…the person ringing me up had the audacity to ask me did I purchase coffee in the Starbucks that day…Jordyn Strickland the store manager  told me this is the policy to ask and I have been coming to Starbucks nearly everyday for at least 7 years and never have I ever been asked did I purchase a coffee in any Starbucks when getting a refill from any Starbucks team member from CT to FL especially when I was sitting in the store the entire time. Jordyn didn't even apologize for my experience! As a manager, she handled the situation very horribly especially because she knows I am always in here! I will not come back to this Starbucks and I am going to sell my Starbucks stock, prices have gone up, value and service have gone down, and consider taking my business elsewhere!"
+        },
+        {
+            "review_datetime_utc": "01/11/2023 04:09:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMkxPeDFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMkxPeDFnRRAB!2m1!1s0x0:0x752080bd1742fcd5!3m1!1s2@1:CIHM0ogKEICAgIDB2LOx1gE%7CCgwI9uz4nQYQyNfsnQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I stop here daily for my latte before work. The service is always friendly and quick."
+        },
+        {
+            "review_datetime_utc": "01/09/2023 17:10:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCa0pYTVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCa0pYTVh3EAE!2m1!1s0x0:0x752080bd1742fcd5!3m1!1s2@1:CIHM0ogKEICAgIDBkJXMXw%7CCgwI6JTxnQYQ4NbYlQI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "i got a dragon fruit and the strawberry's were squishy and then I got sick from one of the strawberry and then the lemonade it was kind of bad but mixtures the strawberries and the lemon juice it started to hurt my stomach more👎"
+        },
+        {
             "review_datetime_utc": "12/27/2022 19:00:21",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCb2VPNjdBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCb2VPNjdBRRAB!2m1!1s0x0:0x752080bd1742fcd5!3m1!1s2@1:CIHM0ogKEICAgICBoeO67AE%7CCgwIxYGtnQYQkPfw3gE%7C?hl=en-US",
@@ -157,5 +178,5 @@
             "review_text": "Construction on Tyvola is horrible but happy with the coffee"
         }
     ],
-    "total_reviews_count": 37
+    "total_reviews_count": 41
 }

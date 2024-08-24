@@ -108,13 +108,6 @@
             "review_text": "(Translated by Google) I give it 4 stars because I always visit it and the workers are very kind and good with the clients, they are always on the lookout  (Original) Le doy 4 estrellas xk siempre la visito y los trabajadores son muy amables y buenos con los clientes  siempre están al pendiente"
         },
         {
-            "review_datetime_utc": "09/04/2019 19:28:55",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVNjdpdlBBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVNjdpdlBBEAE!2m1!1s0x0:0x47f56912809ccff4!3m1!1s2@1:CIHM0ogKEICAgIDU67ivPA%7CCgwI96DA6wUQyKWAkgE%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "Best library branch in Charlotte I've been to- staff always ready to help with suggestions on where things can be done locally if they can't help themselves. They should all be given raises and/or bonuses!!"
-        },
-        {
             "review_datetime_utc": "08/29/2019 22:11:06",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvX3B5ZFV3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvX3B5ZFV3EAE!2m1!1s0x0:0x47f56912809ccff4!3m1!1s2@1:CIHM0ogKEICAgIDo_pydUw%7CCgwI-pqh6wUQ0OG9ogI%7C?hl=en-US",
@@ -297,5 +290,5 @@
             "review_text": "Small branch but friendly staff"
         }
     ],
-    "total_reviews_count": 76
+    "total_reviews_count": 75
 }

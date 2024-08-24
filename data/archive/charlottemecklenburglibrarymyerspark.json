@@ -94,13 +94,6 @@
             "review_text": "The Staff at this location is extremely knowledgeable and helpful.  It's small but has that small town, warm and friendly vibe 😀."
         },
         {
-            "review_datetime_utc": "10/04/2019 16:40:06",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwNWM3Zk53EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwNWM3Zk53EAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC05c7fNw%7CCgwI5uvd7AUQoKr1swI%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "I only been here once but the libarians here are awesome! I was trying to do a lot of things in the computer but was just struggling! For real! Ecerybody there is professional and very polite. Great customer service! the nice lady (dontKnow her name with the big curly hair) worked with me even though I know I was asking questions every other minute LOL! i was trying to get things together for a job. She showed me how to make a top notch looking resume and I got the job babyyyy! I start on the 7th Im too excited! Thank yall so much yall deserve raises especially for dealing with people like me all day LOL!"
-        },
-        {
             "review_datetime_utc": "06/04/2019 10:54:25",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0ek1Ta2NBEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0ek1Ta2NBEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC4zMSkcA%7CCgsI4ZvZ5wUQ4MaObQ%7C?hl=en-US",
@@ -192,5 +185,5 @@
             "review_text": "I love this little library. It sits right on the corner, so perfect to make as a destination during a nice stroll around the neighborhood. I love coming here just to read the paper or check out a late best seller before walking over to Harris Teeter to grab a few items for dinner. One of the best treasures of Charlotte's wonderful Myers Park neighborhood."
         }
     ],
-    "total_reviews_count": 48
+    "total_reviews_count": 47
 }

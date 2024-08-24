@@ -3,6 +3,13 @@
     "place_name": "Stable Hand",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/10/2023 14:56:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCcUlYbDdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCcUlYbDdRRRAB!2m1!1s0x0:0xb3d30d834dff9128!3m1!1s2@1:CIHM0ogKEICAgIDBqIXl7QE%7CCgsIs_n1nQYQgIepNw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee was a little spicy for my crew (we all got something with a little spice in it, that's on us) however it was still delicious. I loved the thought that was put into the entire vibe at Stable Hand as well as the drinks."
+        },
+        {
             "review_datetime_utc": "12/31/2022 14:30:25",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCMWQtWXVRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCMWQtWXVRRRAB!2m1!1s0x0:0xb3d30d834dff9128!3m1!1s2@1:CIHM0ogKEICAgICB1d-YuQE%7CCgwIgY_BnQYQsOuCvAM%7C?hl=en-US",
@@ -329,7 +336,7 @@
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLd01qNzVRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLd01qNzVRRRAB!2m1!1s0x0:0xb3d30d834dff9128!3m1!1s2@1:CIHM0ogKEICAgIDKwMj75QE%7CCgwIqbSXhAYQ0K6trQI%7C?hl=en-US",
             "review_rating": 5,
-            "review_text": "(Translated by Google) I recommend this cafeteria to my Latino community, everything is very rich with good prices and services.  (Original) Recomiendo esta cafetería a mi comunidad Latina, muy rico todo con buenos precios y servicios."
+            "review_text": "(Translated by Google) I recommend this cafeteria to my Latino community, everything is very tasty with good prices and services.  (Original) Recomiendo esta cafetería a mi comunidad Latina, muy rico todo con buenos precios y servicios."
         },
         {
             "review_datetime_utc": "04/21/2021 13:48:19",
@@ -528,5 +535,5 @@
             "review_text": "A great blend of coffee shop, a casual spot to grab a beer/glass or bottle of wine. Casual cafe fare if you are wanting to grab a bite. A great spot for the neighborhood"
         }
     ],
-    "total_reviews_count": 103
+    "total_reviews_count": 105
 }

@@ -3,6 +3,20 @@
     "place_name": "Lincoln's Haberdashery",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 19:55:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCZ3V2eU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCZ3V2eU9REAE!2m1!1s0x0:0x6e085f943874a107!3m1!1s2@1:CIHM0ogKEICAgIDBguvyOQ%7CCgwImJGMngYQ8JnuqAM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I'm not sure how this place has SO MANY 5-star reviews. Maybe just very loyal customers?  My husband and I went in. The person at the register was busy ordering herself some food from someone from the back and we stood there a solid minute before she would even turn to acknowledge us. They were out of items at 130p…anyways, we ordered and sat down. Another employee made us get up from where we were sitting because she was closing the section and planned to mop. This person never apologized, literally just stared at us while we moved (I guess to confirm we were actually moving?). The actual restaurant closes well past 130. Closing the only section with open tables makes no sense. There were no other tables available, and we ended up waiting for our food and having to just leave because no tables ever became available. When we got home, I realized my sandwich was totally wrong on top of that. My husband's sandwich had the cheese on the bottom of the sandwich, literally on the outside of the bread on the bottom. Like another reviewer said, very, very poor customer service. Definitely will never go back."
+        },
+        {
+            "review_datetime_utc": "01/08/2023 17:37:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCXzRXRGx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCXzRXRGx3RRAB!2m1!1s0x0:0x6e085f943874a107!3m1!1s2@1:CIHM0ogKEICAgICB_4WDlwE%7CCgwI2v7rnQYQiJrKxwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Got breakfast Sammy and stuffed flapjack both are awesome. Need to come back and try the lunch sammys. It's a market too so they sell odds and ends but they're specialty is bread 🥖. Will for sure come again"
+        },
+        {
             "review_datetime_utc": "01/07/2023 15:43:24",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCejVPNWN3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCejVPNWN3EAE!2m1!1s0x0:0x6e085f943874a107!3m1!1s2@1:CIHM0ogKEICAgICBz5O5cw%7CCgsInKbmnQYQ4MnHMA%7C?hl=en-US",
@@ -2061,5 +2075,5 @@
             "review_text": "Just opened (Dec 2017), this combo restaurant and retail market is the most unique spot you'll find for sandwiches, salads, coffee, breakfast, ... or to pick up a bottle of wine or a quick gift.  And don't forget dessert... their in house pastry chef makes a great assortment of fresh pastries, bread, choux, tarts, ice cream... OMG!  There's something for everyone in the market; even super special treats for pets and kids.  Stop in for a bite or a beer, and say hi to Chef Michael, his amazing partner Courtney and the whole staff of creative foodies.  You won't soon forget a meal here!"
         }
     ],
-    "total_reviews_count": 470
+    "total_reviews_count": 473
 }

@@ -3,6 +3,27 @@
     "place_name": "The Hobbyist",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 23:36:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCd3RHaU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCd3RHaU1BEAE!2m1!1s0x0:0xe7f16500fa094235!3m1!1s2@1:CIHM0ogKEICAgIDBwtGiMA%7CCgwIkPmMngYQoMjNvQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "lovely cafe, bar, & bottle shop. beautiful modern industrial space with plenty of seating (comparatively in CLT) that walks the line of a clean cut modern & vintage vibe without feeling too cold or crowded. lots of plants throughout the space and soft seating as well as tables and a full bar. great selection of craft beers and wine. the coffee is excellent - they use hatchet beans and their menu is pared down with excellent, unique seasonal offerings. you can always get a good latte, any time of day, but some of their team is definitely more beer & wine experienced or coffee experienced - if you get one of the baristas who are really into coffee, your drink will be incredible. their black walnut latte is one of my favorite lattes i've ever had. incredible iced or hot.  overall 5/5 for attentive staff & service, space, and selection. if you haven't been yet, add the hobbyist to your next outing!"
+        },
+        {
+            "review_datetime_utc": "01/14/2023 18:29:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCZ3FIakRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCZ3FIakRREAE!2m1!1s0x0:0xe7f16500fa094235!3m1!1s2@1:CIHM0ogKEICAgIDBgqHjDQ%7CCgsIhOmLngYQqJCNVQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee in Charlotte area. The variety of wine bottles is amazing, so many decent options."
+        },
+        {
+            "review_datetime_utc": "01/08/2023 01:42:18",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbjZpb0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbjZpb0ZREAE!2m1!1s0x0:0xe7f16500fa094235!3m1!1s2@1:CIHM0ogKEICAgICBn6ioFQ%7CCgsI-r7onQYQ6MuZew%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best lavender latte in the city!"
+        },
+        {
             "review_datetime_utc": "01/05/2023 04:21:32",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbTgzVFJBEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbTgzVFJBEAE!2m1!1s0x0:0xe7f16500fa094235!3m1!1s2@1:CIHM0ogKEICAgICBm83TRA%7CCgsIzKDZnQYQ0N2jPw%7C?hl=en-US",
@@ -1732,5 +1753,5 @@
             "review_text": "This place is such a great addition to Noda! Their house wine and Prosecco on draft are amazing. The chai lattes (with almond milk) are delightful, and their baked goods are super yummy. The decor and overall vibe are warm and welcoming. Great place to work or to swing by after hours for a glass of wine."
         }
     ],
-    "total_reviews_count": 394
+    "total_reviews_count": 397
 }

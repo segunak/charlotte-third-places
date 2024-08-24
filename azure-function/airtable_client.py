@@ -8,7 +8,9 @@ from pyairtable import utils
 from datetime import datetime
 from collections import Counter
 from urllib.parse import urlparse
+import helper_functions as helpers
 from google_maps_client import GoogleMapsClient
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 class AirtableClient: 
     """Defines methods for interaction with the Charlotte Third Places Airtable database.
@@ -135,103 +137,125 @@ class AirtableClient:
     def enrich_base_data(self) -> list:
         """
         Enriches the base data of places stored in Airtable with additional metadata fetched from Google Maps.
-        This method iterates over all places, retrieves details from Google Maps, and updates the Airtable records
-        accordingly. This process automates the enrichment of data such as neighborhood, website URL, and parking options.
-
-        It logs an update for each record and a warning if unable to fetch data for a place.
+        This method uses threading to parallelize fetching details from Google Maps for all places.
         """
         places_updated = []
-        
-        for third_place in self.all_third_places:
-            place_name = third_place['fields']['Place']
-            record_id = third_place['id']
-            place_id = third_place['fields'].get('Google Maps Place Id', None)
-            place_id = self.google_maps_client.place_id_handler(place_name, place_id)
-            
-            if place_id:
-                # Fetch additional details from Google Maps using the place ID
-                place_details_response = self.google_maps_client.place_details_new(
-                    place_id, [
-                        'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
-                        'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
-                        'primaryType', 'outdoorSeating'
-                    ])
 
-                # Check if the response was successful
-                if place_details_response:
-                    # Extract and process the website URL
-                    website = self.get_base_url(place_details_response.get('websiteUri'))
-                    # Get the list of address components
-                    address_components = place_details_response.get('addressComponents', [])
-                    
-                    # Use a generator to find the first 'neighborhood' component, if present
-                    neighborhood = next(
-                        (component.get('longText', '').title() for component in address_components if 'neighborhood' in component.get('types', [])), ''
-                    )
-                    
-                    parking_situation = self.get_parking_status(place_details_response)
-                    purchase_required = self.determine_purchase_requirement(place_details_response)
-                    
-                    # Prepare a dictionary of fields to update in Airtable. Format is 'Field Name': (field_value, overwrite_flag)
-                    field_updates = {
-                        'Google Maps Place Id': (place_id, True),
-                        'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
-                        'Neighborhood': (neighborhood, False),
-                        'Website': (website, False),
-                        'Address': (place_details_response.get('formattedAddress'), False),
-                        'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
-                        'Purchase Required': (purchase_required, False),
-                        'Parking': (parking_situation, False)
-                    }
+        # Define a worker function that will be executed in parallel
+        def process_place(third_place):
+            try:
+                place_name = third_place['fields']['Place']
+                record_id = third_place['id']
+                place_id = third_place['fields'].get('Google Maps Place Id', None)
+                place_id = self.google_maps_client.place_id_handler(place_name, place_id)
 
-                    
-                    for field_name, (field_value, overwrite) in field_updates.items():
-                        update_succeeded = self.update_place_record(record_id, field_name, field_value, overwrite)
-                    
-                    if update_succeeded: places_updated.append(place_name)
+                if place_id:
+                    place_details_response = self.google_maps_client.place_details_new(
+                        place_id, [
+                            'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
+                            'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
+                            'primaryType', 'outdoorSeating'
+                        ])
+
+                    if place_details_response:
+                        website = self.get_base_url(place_details_response.get('websiteUri'))
+                        address_components = place_details_response.get('addressComponents', [])
+                        neighborhood = next(
+                            (component.get('longText', '').title() for component in address_components if 'neighborhood' in component.get('types', [])), ''
+                        )
+
+                        parking_situation = self.get_parking_status(place_details_response)
+                        purchase_required = self.determine_purchase_requirement(place_details_response)
+
+                        field_updates = {
+                            'Google Maps Place Id': (place_id, True),
+                            'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
+                            'Neighborhood': (neighborhood, False),
+                            'Website': (website, False),
+                            'Address': (place_details_response.get('formattedAddress'), False),
+                            'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
+                            'Purchase Required': (purchase_required, False),
+                            'Parking': (parking_situation, False)
+                        }
+
+                        for field_name, (field_value, overwrite) in field_updates.items():
+                            update_succeeded = self.update_place_record(record_id, field_name, field_value, overwrite)
+
+                        if update_succeeded:
+                            return place_name
+                    else:
+                        logging.warning(f'The record for place {place_name} cannot be updated. Unable to generate a valid place details request.')
                 else:
-                    # Log a warning if the place details could not be fetched
-                    logging.warning(f'The record for place {place_name} cannot be updated. Unable to generate a valid place details request.')
-            else:
-                logging.warning(f'The record for place {place_name} cannot be updated. Unable to find a place_id. You will need to manually find one and update the Base.')
-        
-        return places_updated            
+                    logging.warning(f'The record for place {place_name} cannot be updated. Unable to find a place_id.')
+
+            except Exception as e:
+                logging.error(f"Error processing place {place_name}: {e}")
+                return None
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            futures = [executor.submit(process_place, third_place) for third_place in self.all_third_places]
+            for future in as_completed(futures):
+                result = future.result()
+                if result:
+                    places_updated.append(result)
+
+        return places_updated        
 
     def get_place_photos(self, overwrite_cover_photo=False):
         """
-        Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API. It selects the first photo returned by the API as the cover photo and saves it locally.
+        Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API.
+        This method uses parallel execution to improve performance.
         """
-        for third_place in self.all_third_places:
+        
+        def process_photos_for_place(third_place):
+            """
+            Helper function to process photos for a single place. Defined inside to access variables from outer scope.
+            """
             record_id = third_place['id']
-            place_id = third_place['Google Maps Place Id']
             place_name = third_place['fields']['Place']
+            place_id = third_place['fields'].get('Google Maps Place Id', None)
             place_id = self.google_maps_client.place_id_handler(place_name, place_id)
+
+            if not place_id:
+                logging.warning(f'No place ID available for {place_name}.')
+                return
+
             place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
 
-            if 'photos' in place_details_response:
+            if place_details_response and 'photos' in place_details_response:
                 # Use the first photo as the cover
                 photo_name = place_details_response['photos'][0]['name']
                 place_photos_response = self.google_maps_client.place_photo_new(photo_name, '4800', '4800')
-                modified_place_name = place_name.strip().lower().replace(" ", "-")
-                
+
                 if place_photos_response:
-                    photo_file_name = f'{modified_place_name}-{place_id}-cover.jpg'
-                    photo_url = place_photos_response['photoUri']      
-                    self.update_place_record(record_id, 'Cover Photo URL', photo_url, True)
-                    
+                    photo_url = place_photos_response['photoUri']
+                    self.update_place_record(record_id, 'Cover Photo URL', photo_url, overwrite_cover_photo)
+
                     if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
-                        self.save_photo_locally( f'./photos/{place_id}', photo_file_name, photo_url)
+                        formatted_place_name = helpers.format_place_name(place_name)
+                        photo_file_name = f'{formatted_place_name}-{place_id}-cover.jpg'
+                        self.save_photo_locally(photo_file_name, photo_url)
                 else:
                     logging.warning(f'Unable to retrieve photos for {place_name}.')
             else:
                 logging.warning(f'No photos available for {place_name}.')
 
-    def save_photo_locally(self, photo_folder, photo_name, photo_url):
+
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            # List of future objects
+            futures = [executor.submit(process_photos_for_place, third_place)
+                       for third_place in self.all_third_places]
+            # Waiting for all futures to complete execution
+            for future in futures:
+                future.result()  # Raises exceptions if any occurred during execution
+
+
+    def save_photo_locally(self, photo_name, photo_url):
         """
         Helper function to save a photo locally in the specified directory.
         """
-        os.makedirs(photo_folder, exist_ok=True)
-        with open(f'{photo_folder}/{photo_name}', 'wb') as photo_handler:
+        os.makedirs('./data/photos', exist_ok=True)
+        with open(f'./data/photos/{photo_name}', 'wb') as photo_handler:
             photo_data = requests.get(photo_url).content
             photo_handler.write(photo_data)
             logging.info(f'Just saved a photo for {photo_name}.')

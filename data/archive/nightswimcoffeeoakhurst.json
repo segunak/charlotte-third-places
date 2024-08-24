@@ -3,6 +3,20 @@
     "place_name": "Night Swim Coffee | Oakhurst",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/11/2023 02:22:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMk43WFdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMk43WFdREAE!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgIDB2N7XWQ%7CCgsI77r4nQYQ-LWASQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place to grab a coffee and chill or meet up with friends."
+        },
+        {
+            "review_datetime_utc": "01/09/2023 15:16:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCa01pRnF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCa01pRnF3RRAB!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgIDBkMiFqwE%7CCgsIxN_wnQYQ-KzxTg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I go here at least once a week. Very fond and quiet atmosphere and the baristas are all really nice and friendly. The food and coffee are exceptional. Strongly recommend."
+        },
+        {
             "review_datetime_utc": "01/07/2023 13:03:53",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCejhqejh3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCejhqejh3RRAB!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgICBz8jz8wE%7CCgsIudvlnQYQ6JaOTQ%7C?hl=en-US",
@@ -563,5 +577,5 @@
             "review_text": "Great space. Great coffee. Great service.  They have some pastries as well as a small cafe menu."
         }
     ],
-    "total_reviews_count": 107
+    "total_reviews_count": 111
 }

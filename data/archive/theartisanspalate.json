@@ -3,6 +3,20 @@
     "place_name": "The Artisan’s Palate",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/16/2023 15:22:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCeXVIT3Z3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCeXVIT3Z3RRAB!2m1!1s0x0:0xf04ece143c4d3263!3m1!1s2@1:CIHM0ogKEICAgIDByuHOvwE%7CCgsI0NeVngYQuPD1Wg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "I've had this place on my list to try, but as much as I wanted it to be fabulous it didn't deliver. We had reservations first thing in the morning and our food and coffees were barely warm. Frittata was just ok, slightly dry and not hot from the oven. Why? We were some of the firsts in the restaurant. Bf had the biscuits and gravy… unsure but he didn't feel good the rest of the day. Once the restaurant started getting packed we barely saw our waiter and before you know it, it took almost an hour just to get cashed out.  As a note of caution…the Irish coffee is WAY overpriced. As it was our first time here they asked if we wanted Bailey's. Sure. When the bill came we saw each one was $19. Nope. Not worth it in the least. Cocktails are cheaper than this. $73 for 2 for brunch is too much for me."
+        },
+        {
+            "review_datetime_utc": "01/16/2023 14:13:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCeXF5QVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCeXF5QVlBEAE!2m1!1s0x0:0xf04ece143c4d3263!3m1!1s2@1:CIHM0ogKEICAgIDByqyAYA%7CCgsInreVngYQkJqqWQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The shrimp and grits are by far my favorite! Drinks are also always top notch."
+        },
+        {
             "review_datetime_utc": "12/16/2022 17:21:20",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCdUlpMGhRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCdUlpMGhRRRAB!2m1!1s0x0:0xf04ece143c4d3263!3m1!1s2@1:CIHM0ogKEICAgICBuIi0hQE%7CCgwIkNLynAYQ2N7HzQI%7C?hl=en-US",
@@ -1550,5 +1564,5 @@
             "review_text": "I heard this establishment recently opened and thought to check it . It has everything I expected and then some. I decided to have a Matcha Green Tea Latte.It was very tasty ! After I had my tea, I had an opportunity to meet the a friend employed there and met the owner. They were very pleasent and cheerful. Before I went away , I purchased a couple of baked items such as scones and Struesel cakes. I would highly recommend the Artisan's Palate,as they will be very successful."
         }
     ],
-    "total_reviews_count": 321
+    "total_reviews_count": 325
 }

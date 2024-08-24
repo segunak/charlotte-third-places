@@ -3,6 +3,13 @@
     "place_name": "Mugs Coffee",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/10/2023 15:38:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCcU92WFJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCcU92WFJ3EAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgIDBqOvXRw%7CCgsI5Yz2nQYQsPu7TA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My husband and I are moving out of the area and one thing we will miss the most is Mugs. My husband and I visit at least once a week and they provide coffee for our church as well. The coffee is priced fairly, but definitely less than surrounding competitors. I routinely drink their house blend or an oat milk cappuccino. The house blend is balanced and lovely to drink as is. The oat milk cappuccinos are always divine and super frothy. We wish we could take Mugs with us, but I definitely recommend stopping by if you're in the Southpark area."
+        },
+        {
             "review_datetime_utc": "10/18/2022 14:15:57",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlNC1HSFJnEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlNC1HSFJnEAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgIDe4-GHRg%7CCgwIneq6mgYQiLjfkwE%7C?hl=en-US",
@@ -491,13 +498,6 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTbWFPeGl3RRAB!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgIDSmaOxiwE%7CCgwI5N24_wUQqOK8zwM%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "The staff is so kind and the coffee comes out pretty fast while not sacrificing quality. Great coffee, great people."
-        },
-        {
-            "review_datetime_utc": "12/23/2020 16:58:05",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTcHFtNWRBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTcHFtNWRBEAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgIDSpqm5dA%7CCgwIne6N_wUQ2NucsgI%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "I love this place!!! Its really chill at night and perfect for doing homework"
         },
         {
             "review_datetime_utc": "12/23/2020 16:53:51",
@@ -1312,13 +1312,6 @@
             "review_text": "This is my favorite local coffee shop. They support local artists and They do weekly events too.. just check their calendar. I've been to many coffee shops in NYC, Europe, and Middle East. And by far this is the most comfortable and the only one that makes the best coffee shakes. You can have a delicious coffee with a light snack in such a cozy place! It's a coffee Heven! The owner is a great guy and the baristas are so friendly. This place make you feel at home! Even their customers are friendly and chatty. I've been a regular customer for 5 years. I would definitely visit again when I come to the US. I miss this place and I miss their caramel coffee shake 💕💕💕"
         },
         {
-            "review_datetime_utc": "09/11/2018 18:43:43",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMjZ2dkN3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMjZ2dkN3EAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgICA26vvCw%7CCgsI35ng3AUQmJDgBw%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "Great coffee and relaxed place to come and get some work done!"
-        },
-        {
             "review_datetime_utc": "08/22/2018 10:09:03",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBMnFPT1lREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBMnFPT1lREAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgIDA2qOOYQ%7CCgsIv-z02wUQoOyLVQ%7C?hl=en-US",
@@ -2068,5 +2061,5 @@
             "review_text": "Great local coffee shop. Coffee is great and service is even better."
         }
     ],
-    "total_reviews_count": 446
+    "total_reviews_count": 447
 }

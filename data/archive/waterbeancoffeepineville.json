@@ -3,6 +3,20 @@
     "place_name": "Waterbean Coffee | Pineville",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/15/2023 22:54:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCc29yVjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCc29yVjJ3RRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDBsorV2wE%7CCgwIn4iSngYQuOnYnAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice location downtown Pineville. I've had the Chai Latte and Macaroons, which were both really. Prices are very decent."
+        },
+        {
+            "review_datetime_utc": "01/13/2023 22:34:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCbk9hM3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCbk9hM3FnRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDBnOa3qgE%7CCgwIg7mHngYQqJC1mwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It was busy, but worth the wait. I loved that they had dairy free options and gluten free treats for me!"
+        },
+        {
             "review_datetime_utc": "01/07/2023 22:02:25",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCN19ibC1nRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCN19ibC1nRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICB7_bl-gE%7CCgwI8dfnnQYQoOqX5wI%7C?hl=en-US",
@@ -1382,13 +1396,6 @@
             "review_text": "Good coffee and tea"
         },
         {
-            "review_datetime_utc": "09/01/2017 13:29:26",
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRcU5yZlV3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRcU5yZlV3EAE!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgIDQqNrfUw%7CCgwItsGlzQUQgMjZgQE%7C?hl=en-US",
-            "review_rating": 5,
-            "review_text": "The owner, Wendy, is so helpful and sweet. And of course she makes the best tea and coffee in town!"
-        },
-        {
             "review_datetime_utc": "07/12/2017 05:07:55",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBOWViR21RRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOWViR21RRRAB!2m1!1s0x0:0x11495a36ce11b264!3m1!1s2@1:CIHM0ogKEICAgICA9ebGmQE%7CCgwIq92WywUQgNfnyAM%7C?hl=en-US",
@@ -1473,5 +1480,5 @@
             "review_text": "Great atmosphere, very warm and welcoming. There is a large selection of loose leaf teas, as well as coffee; take home a bag of loose leaf tea or take a cup to-go. The owner also supports local artisans and has their work available to purchase in the shop. This is a wonderful place that has only been open for about a year. I recommend all tea-lovers to give this cute little place some love."
         }
     ],
-    "total_reviews_count": 302
+    "total_reviews_count": 305
 }

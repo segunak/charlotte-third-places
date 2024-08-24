@@ -3,6 +3,20 @@
     "place_name": "Coco and the Director",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 00:33:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCbk4zTWtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCbk4zTWtBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDBnN3MkAE%7CCgwI5PCHngYQoLnQlwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee and environment is always good"
+        },
+        {
+            "review_datetime_utc": "01/10/2023 18:14:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCNk9uYjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCNk9uYjBBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDB6Onb0AE%7CCgwIm9b2nQYQgN-nmgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really nice place!! Very cozy. The coffee was good, the cronut was good, even though it was coated with too much sugar, the banana bread was delicious. It was a great way to start our morning."
+        },
+        {
             "review_datetime_utc": "01/07/2023 13:51:23",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCejVMaUpREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCejVMaUpREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICBz5LiJQ%7CCgwI2_HlnQYQoK3viwI%7C?hl=en-US",
@@ -2101,7 +2115,1512 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZNG9TeEFnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICY4oSxAg%7CCgsI8qOt5QUQ-JeuPQ%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "Delicious drinks, even better ambiance. Thanks a bunch guys!"
+        },
+        {
+            "review_datetime_utc": "04/05/2019 16:01:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZelBLZ1NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZelBLZ1NnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICYzPKgSg%7CCgsI2ved5QUQqL6ERQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite coffee shops in Charlotte.  Great for a quick pastry, workspace or coffee in a great centralized location."
+        },
+        {
+            "review_datetime_utc": "04/02/2019 15:21:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZaFByODZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZaFByODZnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICYhPr86gE%7CCgsI_vuN5QUQ6JiTWQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere. Great coffee. Had a bullet proof smoothie too... perfection. – worked for 5 hours here. couple hours upstairs and a couple on the cushion stairs/pyramid. Friendly."
+        },
+        {
+            "review_datetime_utc": "04/01/2019 19:26:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZdUl5cEVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZdUl5cEVREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICYuIypEQ%7CCgwI7suJ5QUQ0PDF8QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome recipes"
+        },
+        {
+            "review_datetime_utc": "03/23/2019 13:23:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvaDVXSFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvaDVXSFpnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDoh5WHZg%7CCgwI0-bY5AUQyNeksgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful service from very friendly staff! Raspberry tea is the best ever!!"
+        },
+        {
+            "review_datetime_utc": "03/21/2019 14:58:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvOF9TUk1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvOF9TUk1nEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDo8_SRMg%7CCgwIgM3O5AUQiPTz1gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great mocha and chai tea latte. Interesting seating and decor. They have a few board games."
+        },
+        {
+            "review_datetime_utc": "03/21/2019 12:57:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBeGIyemx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBeGIyemx3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAxb2zlwE%7CCgwIxZTO5AUQ0KzGmgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Coffee is not bad but not the best, great spot to do homework or hangout"
+        },
+        {
+            "review_datetime_utc": "03/21/2019 03:21:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvMC12WEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvMC12WEZREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDo0-vXFQ%7CCgwInYbM5AUQwMbqtwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great cup of coffee!"
+        },
+        {
+            "review_datetime_utc": "03/15/2019 01:09:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURveXFmNl9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURveXFmNl9BRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDoyqf6_AE%7CCgoIv_ar5AUQsIJ3%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of the coolest coffee houses I've ever been to!"
+        },
+        {
+            "review_datetime_utc": "03/11/2019 16:13:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvdUoydFFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvdUoydFFnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDouJ2tQg%7CCgwIv5Ka5AUQgKfCsAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff were super friendly.  The cinnamon & sugar Cronin was worth every calorie, delocious.  Love the space and the effort to make it a comfortable setting for meetings, students and working solo."
+        },
+        {
+            "review_datetime_utc": "03/10/2019 18:50:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURvbUpETTJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURvbUpETTJnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDomJDM2gE%7CCgsI6LiV5AUQwJe-Qw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A very nice and chill spot. A good place to relax and get some work done ie. on your laptop or read a book. The coffee and pastries are pretty good as well!"
+        },
+        {
+            "review_datetime_utc": "03/09/2019 17:06:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvOE5HY0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvOE5HY0pnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDo8NGcJg%7CCgwIhuWP5AUQgJaVswM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great cafe for everything but coffee."
+        },
+        {
+            "review_datetime_utc": "03/08/2019 16:57:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURva0xxSmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURva0xxSmtRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDokLqJkQE%7CCgwI8L2K5AUQoKCcswM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Incredible coffee and even better muffins and sandwiches. Highly recommended for breakfast lovers"
+        },
+        {
+            "review_datetime_utc": "03/07/2019 16:47:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvZ01uVmZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvZ01uVmZREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDogMnVfQ%7CCgwImZaF5AUQiMqP_wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good atmosphere and central Uptown location."
+        },
+        {
+            "review_datetime_utc": "03/07/2019 14:23:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvN2RuNVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvN2RuNVdBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo7dn5WA%7CCgwI9NKE5AUQ-LmgqgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place. If I lived in Charlotte I would hang out here all the time. They are connected to the Marriot hotel and it was very convenient. The atmosphere was very inviting and comfortable. They even have meeting space In the back. The service was very friendly and helpful with menus selections. The coffee was really good. I tried two of their cronuts and they were amazing. I tried the cinnamon and the chocolate and wanted to buy a box and take them home with me they were so good. I would definitely come here again."
+        },
+        {
+            "review_datetime_utc": "03/05/2019 01:13:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvMTRfUmtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvMTRfUmtnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo14_RkgE%7CCgsI1Zr34wUQwMPXGg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of our favorite coffee spots in Uptown Charlotte! This place opens very early (6am) and closes late so it's perfect for early morning coffee or as a place to finish up work late into the evening. The interior seating area is one of the reasons  that helps make this cafe stands out from the others. The coffee and selection of pastries (especially the croissants and cronuts) are amazing as well. Finally, the baristas are kind and helpful. To see and experience what the cafe is like, visit our Instagram page @kukoomedia !"
+        },
+        {
+            "review_datetime_utc": "03/01/2019 04:09:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvNl9DOWNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvNl9DOWNREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo6_C9cQ%7CCgwI3-Di4wUQsKGqqQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's my favorite place in Charlotte to go study! Great atmosphere and great coffee!"
+        },
+        {
+            "review_datetime_utc": "02/24/2019 16:27:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvdllyTnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvdllyTnJnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICovYrNrgE%7CCgwIh4zL4wUQgJOOjAM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "(Translated by Google) great  (Original) Buenísimo"
+        },
+        {
+            "review_datetime_utc": "02/23/2019 23:42:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvbmRLaFV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvbmRLaFV3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICondKhUw%7CCgsI_7TH4wUQ6K-AQQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to mingle with friends! Love the environment and great coffee!"
+        },
+        {
+            "review_datetime_utc": "02/18/2019 02:28:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvZ2F5cFF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvZ2F5cFF3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICogaypQw%7CCgwIwLCo4wUQkKLvzAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great atmosphere. Not the best prices but nice anyway."
+        },
+        {
+            "review_datetime_utc": "02/16/2019 16:25:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvN3RlQWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvN3RlQWdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo7teAggE%7CCgwI7vKg4wUQkNKy2AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cooll coffee shop and co-working space. They do a fantastic job of making this place feel hip and rustic despite the fact that it's in an office building. Coffee is great. Food is awesome.  Line moves quickly."
+        },
+        {
+            "review_datetime_utc": "02/13/2019 18:42:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvNXFHcjd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvNXFHcjd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo5qGr7wE%7CCgwIn8qR4wUQgMyDswM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Coffee is great. The staff is amazing. I wanted heavy cream in my house blend coffee and the staff ran out and grabbed it from the adjacent restaurant to accommodate my ask, all with a smile :)"
+        },
+        {
+            "review_datetime_utc": "02/10/2019 23:25:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvNnRxOWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvNnRxOWlnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo6tq9igE%7CCgwI-uWC4wUQwMrUswE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent coffee and good studying environment"
+        },
+        {
+            "review_datetime_utc": "02/08/2019 06:10:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvb3J1ZVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvb3J1ZVpBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICoorueZA%7CCgwI17r04gUQwKHfoAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This place is quite interesting. It is definitly a real cool spot and if you like coffee I would suggest it."
+        },
+        {
+            "review_datetime_utc": "02/07/2019 13:57:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvZ3FtbDdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvZ3FtbDdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICogqml7gE%7CCgwIzPLw4gUQ9uHq1QI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Coffee was okay, service takes far too long for how few customers there are. Like the location and environment but it could be much better."
+        },
+        {
+            "review_datetime_utc": "01/27/2019 16:49:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJejVmNHZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJejVmNHZRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIz5f4vQE%7CCgwI_sG34gUQyZH7ngI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always a great place for lunch, assuming the day's sandwich is something you'd like. Also good for coffee and related drinks, but I go primarily for the kitchen.  The seating is nice for camping out and the best views of the street make ita nice place to relax for a bit. Great for a small party, like you and a friend, or solo."
+        },
+        {
+            "review_datetime_utc": "01/23/2019 01:18:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3eU12ZzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3eU12ZzhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDwyMvg8gE%7CCgwI7oGf4gUQ_5_wrwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "In between the chaos is this great coffee shop.It's in Marriot it has two entrances one from the street and other from Marriot lobby. They have two different seating areas one is on the left which is more if you want to sit alone and study or work. Other is the lab where you can book the table for meetings many meetings and interviews were going on there.Coming to the coffee they have amazing local roasts which you can try. Baristas are great they are very friendly. They have a variety of cronuts, croissants, loaves of bread. They even have sandwiches, soups, and salads."
+        },
+        {
+            "review_datetime_utc": "01/22/2019 00:05:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJcS1TRjN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJcS1TRjN3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIq-SF3wE%7CCgwIvbyZ4gUQ_pWGpgM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This place is always fun. A little expensive for the pastries and coffee (but on par for most of Charlotte), but the atmosphere is nice. The barista today suggested that we just go with whatever she suggested based on her questions. I said chocolate and she asked spicy and I ended up with this Thai Chili Mocha Latte. It was fantastic."
+        },
+        {
+            "review_datetime_utc": "01/15/2019 22:29:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJemF5SFJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJemF5SFJnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIzayHRg%7CCgsIr7354QUQkfWJAQ%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "There's a lady who I swear is Honey boo boo all grown up . Took her forever to care about checking out my item for purchase. Environment and decor is so nice that you really can't give it bad rating."
+        },
+        {
+            "review_datetime_utc": "01/15/2019 11:15:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJOVl2cVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJOVl2cVBnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI9YvqPg%7CCgwI6YH34QUQtJH_1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite coffee shops in Charlotte!"
+        },
+        {
+            "review_datetime_utc": "01/12/2019 23:26:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJaGJfY1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJaGJfY1F3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIhb_cQw%7CCgwIne_p4QUQm5iRtgE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Pretty good.  Groovy hipster place.  Seating is  \"Google\" if you know what I mean. Limited selection.  Was open on NYD which was helpful."
+        },
+        {
+            "review_datetime_utc": "01/12/2019 22:43:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJaGVmUkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJaGVmUkZ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIhefRFw%7CCgwIldvp4QUQlvz-lQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the vibe of this place. Very chic and cool. Definitely recommend going either alone or with friends and regardless of whether you go with your laptop for work or fun with friends."
+        },
+        {
+            "review_datetime_utc": "01/09/2019 18:19:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJOGJDYlV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJOGJDYlV3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI8bCbUw%7CCgwIqPbY4QUQ5KuHzQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The best thing about Coco and the Director is the seating arrangement. There are so many places to sit and a large projector that they use for movie nights. I also really like the atmosphere and decor - it's pretty hip. My only complaints are the price of the coffee and food, and the options. I guess the pricing isn't really surprising since it's connected to a Marriott."
+        },
+        {
+            "review_datetime_utc": "01/09/2019 02:39:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJa2VlbW1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJa2VlbW1RRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIkeemmQE%7CCgwI0r3V4QUQv4mv0AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff is friendly, coffee is good"
+        },
+        {
+            "review_datetime_utc": "01/08/2019 21:50:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJa2ViNWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJa2ViNWdRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIkeb5gQE%7CCgwIrbbU4QUQsL76mAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "What an amazing coffee house! They offer lactose free options and vegan baked items, in addition to regular offerings. The blueberry muffin was really good. It was my first visit, but I'll definitely be back. Workspace friendly, you can sit at a table or literally on the stairs...large seat pillows are provided. Apparently you can also reserve the larger tables on the hotel-side of the shop. Those are tucked away in the back, if you will. Really inviting and work centric vibe. If you aren't motivated this place will get you there!  Its attached to the Marriott so that is ideal as the location is downtown and on street parking is hard to find. Free wifi. Good coffee. Unique gift items for sale. Two levels. Chalkboard art. Lactose-free options...wins had by all! Go check it out!"
+        },
+        {
+            "review_datetime_utc": "01/08/2019 19:19:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJa1lTVnF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJa1lTVnF3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIkYSVqwE%7CCgwIxO_T4QUQ4sGW5AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So good I decided to return again -- same day! Cozy, unique setting (especially when cranking out solo projects) and a warm staff."
+        },
+        {
+            "review_datetime_utc": "01/08/2019 13:32:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJNGNiZnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJNGNiZnB3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI4cbfpwE%7CCgsI08zS4QUQ4u-oDg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A very chill environment with great coffee and food. Perfect place if you want to study, read, or just get a good cronut."
+        },
+        {
+            "review_datetime_utc": "01/05/2019 21:32:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJN3VmdTV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJN3VmdTV3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI7ufu5wE%7CCgwI_MTE4QUQ3rmfmgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee"
+        },
+        {
+            "review_datetime_utc": "01/05/2019 20:53:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJN291Y3h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJN291Y3h3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI7oucxwE%7CCgwIvbLE4QUQrfr2pQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee and awesome customer service!!!! The banana nut loaf is the best I've ever had!!!!"
+        },
+        {
+            "review_datetime_utc": "01/04/2019 23:52:01",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJanAtZWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJanAtZWt3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIjp-ekwE%7CCgwIoeO_4QUQxtTivQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Coffee was decent. No private sitting. It's a communal place, both physically and politically."
+        },
+        {
+            "review_datetime_utc": "01/04/2019 19:34:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJanJhbk5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJanJhbk5nEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIjranNg%7CCgsIseq-4QUQ8pngOQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome atmosphere, relaxed, cozy and friendly. Had a great fried chicken sandwich for lunch and an afternoon coffee. Very enjoyable."
+        },
+        {
+            "review_datetime_utc": "01/01/2019 14:24:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJdW9YWXBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJdW9YWXBRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIuoXYpQE%7CCgwIgPCt4QUQ46TVlQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, fresh pastries and breakfast sandwiches, and excellent service."
+        },
+        {
+            "review_datetime_utc": "01/01/2019 01:26:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJMnRhLTJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJMnRhLTJBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDI2ta-2AE%7CCgwIvoOr4QUQqvWJiwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Open 365 all year long"
+        },
+        {
+            "review_datetime_utc": "12/30/2018 18:09:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJcXNDUXpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJcXNDUXpBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIqsCQzAE%7CCgsIxJOk4QUQxpXJFA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "It was average with good service"
+        },
+        {
+            "review_datetime_utc": "12/28/2018 20:19:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJa3FLWnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJa3FLWnJnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDIkqKZrgE%7CCgsIuIqa4QUQ0tXIKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Super friendly staff, awesome atmosphere. Love stopping her for my daily muffin and coffee!"
+        },
+        {
+            "review_datetime_utc": "12/23/2018 17:51:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJdElXTVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJdElXTVFnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDItIWMQg%7CCgwIhZb_4AUQocOFlgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place great atmosphere great coffee"
+        },
+        {
+            "review_datetime_utc": "12/13/2018 17:07:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJcjZPTlhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJcjZPTlhBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIr6ONXA%7CCgsI2qPK4AUQu9aAEg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee and amazing friendly staff"
+        },
+        {
+            "review_datetime_utc": "12/12/2018 03:42:06",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJdDdpUDZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJdDdpUDZRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIt7iP6QE%7CCgwIjofC4AUQicOOgwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Go for the Flat White and the daily lunch special"
+        },
+        {
+            "review_datetime_utc": "12/08/2018 03:02:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvaGRQSWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaGRQSWZBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICohdPIfA%7CCgwI3eis4AUQuJiWtQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great customer service. Neat and very tasty coffees and desserts. Don't miss the almond croissant!"
+        },
+        {
+            "review_datetime_utc": "12/06/2018 05:14:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJcy1TNHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJcy1TNHBBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIs-S4pAE%7CCgwIy-Ci4AUQkN3VqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place, great section of pastries..."
+        },
+        {
+            "review_datetime_utc": "12/05/2018 02:27:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJNDlXal9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJNDlXal9RRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI49Wj_QE%7CCgsI9u6c4AUQneybZg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If I lived in Charlotte this would be my hangout...totally cool"
+        },
+        {
+            "review_datetime_utc": "12/01/2018 20:00:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJbmNqUXBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJbmNqUXBRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIncjQpQE%7CCgwIz9CL4AUQitfOrgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great service cool place"
+        },
+        {
+            "review_datetime_utc": "11/29/2018 19:33:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvMmMyVi1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvMmMyVi1BRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo2c2V-AE%7CCgwIjf6A4AUQmIna6AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome vibe, chill music, unique intimate stadium steating with yoga lounge pillows, books, board games, super friendly staff, great sandwich. Going back!"
+        },
+        {
+            "review_datetime_utc": "11/28/2018 03:32:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJNWNySDdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJNWNySDdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI5crH7gE%7CCgwIyZj43wUQ-I-1_gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It is a nice place to study and a good place to stop at if you are touring. It has a elevator for wheelchairs and nice staff with delicious drinks to choose from. The bomb!"
+        },
+        {
+            "review_datetime_utc": "11/24/2018 17:21:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJbVlYeXd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJbVlYeXd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICImYXywwE%7CCgsIrJHm3wUQkJe1LA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "So adorable, plenty of seating, and in a fantastic location. Very nice people and good prices!"
+        },
+        {
+            "review_datetime_utc": "11/24/2018 00:05:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJNmNTWFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJNmNTWFpnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI6cSXZg%7CCgsIyqvi3wUQwaXpWg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to meet friends do a little business or even drink some coffee."
+        },
+        {
+            "review_datetime_utc": "11/20/2018 11:47:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJNFp1akF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJNFp1akF3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI4ZujAw%7CCgwI5OjP3wUQ6PewpgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Such a cool coffee spot. Huge interior with lots of places to sit and plug your laptop in."
+        },
+        {
+            "review_datetime_utc": "11/17/2018 18:26:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvMmJHM053EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvMmJHM053EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICo2bG3Nw%7CCgwIz7rB3wUQuJPsjgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice"
+        },
+        {
+            "review_datetime_utc": "11/12/2018 22:26:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJbHU3Nk5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJbHU3Nk5nEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIlu76Ng%7CCgwIm_yn3wUQ0NSE7gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a good quiet place to work"
+        },
+        {
+            "review_datetime_utc": "11/12/2018 20:29:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJbHFybDlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJbHFybDlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIlqrl9AE%7CCgsIlsWn3wUQ25Tdeg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love, love, love this place! Amazing coffee and incredible staff. I can't remember her name...but she works there almost everyday I visit...and she is the sweetest & funniest! She can put a smile on anyone's face, even at 7am! Huge fan!"
+        },
+        {
+            "review_datetime_utc": "11/09/2018 19:44:53",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJMnItdjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJMnItdjhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI2r-v8gE%7CCgwItceX3wUQyPTRigE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This place is excellent for hanging out in for work or study, lots of seating options. It can get really loud in here though... I always bring headphones. The espresso drinks are ridiculously overpriced for the amount you get... I recommend sticking with coffee or coldbrew, which are both good & plenty strong. Baked goods are tasty, staff is nice enough & generally efficient."
+        },
+        {
+            "review_datetime_utc": "11/01/2018 06:39:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJM05TbHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJM05TbHBRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI3NSlpQE%7CCgsIh7_q3gUQosaxXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really cool and good coffee"
+        },
+        {
+            "review_datetime_utc": "11/01/2018 05:37:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJM0tpT3h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJM0tpT3h3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICI3KiOxwE%7CCgwIsKLq3gUQhsnCuwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Actually a Starbucks. Cozy spot and good service."
+        },
+        {
+            "review_datetime_utc": "10/31/2018 00:07:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvcFo2RnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvcFo2RnhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICopZ6FxgE%7CCgwI2uTj3gUQiJuH-QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I had a good hot chocolate here. The staff was very friendly. Good place to study or have a small gathering."
+        },
+        {
+            "review_datetime_utc": "10/30/2018 12:53:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJck56alZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJck56alZnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIrNzjVg%7CCgsIwKjh3gUQiobgMg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Overpriced cappuccino.  Great scene for work/study but coffee is average."
+        },
+        {
+            "review_datetime_utc": "10/29/2018 18:09:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNJZ1BPWjN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJZ1BPWjN3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICIgPOZ3wE%7CCgsIw5nd3gUQ18OhKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good staff good place"
+        },
+        {
+            "review_datetime_utc": "10/28/2018 19:27:43",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3eTdYaFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3eTdYaFR3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDwy7XhTw%7CCgwIr5vY3gUQscvc2wE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Coffee was good, atmosphere was neat, lady at the register was a bit rude."
+        },
+        {
+            "review_datetime_utc": "10/27/2018 21:13:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR3bnEtaFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR3bnEtaFVREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDwnq-hUQ%7CCgwI36nT3gUQyKe23gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place to hang out, matcha tea was very good."
+        },
+        {
+            "review_datetime_utc": "10/26/2018 22:24:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3NnZqZTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3NnZqZTlnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDw6vje9gE%7CCgsItKjO3gUQ3rCZYQ%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "regular"
+        },
+        {
+            "review_datetime_utc": "10/06/2018 19:57:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMTVyR0NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMTVyR0NnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg15rGCg%7CCgwItafk3QUQ2MzLpwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Cool place to hangout with a small group. The coffee is pretty good too."
+        },
+        {
+            "review_datetime_utc": "10/03/2018 22:20:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM2NYczd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM2NYczd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ3cXs7wE%7CCgwIsoHV3QUQ-IyShwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best Chai Latter I've had; and the Coffee Cronut was delicious!!"
+        },
+        {
+            "review_datetime_utc": "10/01/2018 12:17:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcTVLSTFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcTVLSTFRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQq5KI1QE%7CCgwI8qDI3QUQuICJvAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place to get work done when Starbucks is too noisy downtown"
+        },
+        {
+            "review_datetime_utc": "09/25/2018 19:17:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bWJ6SER3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bWJ6SER3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwmbzHDw%7CCgwI4JOq3QUQwJmmqQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee (and other food/drink)place to study. Also, I like their movie nights throughout the year!"
+        },
+        {
+            "review_datetime_utc": "09/19/2018 11:25:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3b1BPUjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3b1BPUjJRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwoPOR2QE%7CCgwInOSI3QUQ4LurqgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Terrific space with location in Marriott Hotel. Great coffee and pastries. They have cronuts."
+        },
+        {
+            "review_datetime_utc": "09/18/2018 14:15:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3ejhuV3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3ejhuV3B3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwz8nWpwE%7CCgwIl5GE3QUQyLODxAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Neat place to hangout with friends or just by yourself!"
+        },
+        {
+            "review_datetime_utc": "09/08/2018 21:55:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdmRheUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdmRheUd3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAvdayGw%7CCgwIxIrR3AUQkNSjvgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cute place and loved the chai latte!"
+        },
+        {
+            "review_datetime_utc": "09/06/2018 04:40:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbTR5YklBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbTR5YklBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQm4ybIA%7CCgwI1d_C3AUQsJCjyQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I have had coffee in many places. Puerto Rico, Oregon, Florida, Kentucky and North Carolina just to name a few but I've never tasted such a malty, creamy and decadent coffee like the one in Coco and the Director. Last time I went I actually ended up drinking 2 cups of coffee it was so good. Granted I was wired for about 24 straight hours but well worth the jitter-pumped-caffeine-infuse-hardcore hangover. If there's a better coffee than this one please  by all means tell me so I could try it because this is at the top of my list.  The location of the store and the setup is beyond what you can imagine. Big stair-like steps adorn the main lounge where you can sit and drink your coffee but there are pillows you actually sit on or use them for your back. Not your thing? Ok, no prob. There are tables throughout the whole location to maintain the traditional way of drinking \"un cafecito\" in the coffee shop.  The staff are all super friendly and very knowledgeable of the coffee and where it comes from. They are so friendly, in my opinion, that they're the type of people I'd like to have as friends.  Wait for me because I'll be returning soon to order my two cups of coffee. Or better yet, prepare me my 32 oz jug because I'm ready for more! Keep up the excellent work or great products and great service, every single time."
+        },
+        {
+            "review_datetime_utc": "09/03/2018 12:36:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBZzd1X09REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBZzd1X09REAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAg7u_OQ%7CCgsIutW03AUQsJ2-EA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite coffee spots. They have great cold brew and cappuccinos. It's a popular and great Meetup place as well."
+        },
+        {
+            "review_datetime_utc": "08/26/2018 18:31:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3eHYtNFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3eHYtNFhREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwxv-4XQ%7CCgwI8OOL3AUQuM_l3QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee"
+        },
+        {
+            "review_datetime_utc": "08/25/2018 13:51:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBd3BfNzlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBd3BfNzlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAwp_79AE%7CCgwI9r2F3AUQqOPjugE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place, chill vibe"
+        },
+        {
+            "review_datetime_utc": "08/19/2018 22:15:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRZ0pPNVV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRZ0pPNVV3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQgJO5Uw%7CCgwIidjn2wUQ4M334gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent coffee and smoothie location in Marriott."
+        },
+        {
+            "review_datetime_utc": "08/18/2018 00:26:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnN2Fyb2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnN2Fyb2RBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg7arodA%7CCgwInM_d2wUQ8MOnvgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Hip spot,  good prices despite being in center city"
+        },
+        {
+            "review_datetime_utc": "08/14/2018 14:38:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBd0piWXhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBd0piWXhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAwJbYxgE%7CCgwI2tLL2wUQwNDX1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "LEGIT ‼️"
+        },
+        {
+            "review_datetime_utc": "08/12/2018 13:52:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRaDhQdXZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRaDhQdXZRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQh8PuvQE%7CCgsIjffA2wUQwLGofw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time my daughter visited a real coffee shop. The lady that helped us as super nice and helped her find what she liked. Awesome customer service. Would highly recommend this place."
+        },
+        {
+            "review_datetime_utc": "08/09/2018 19:10:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NXMtWkR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NXMtWkR3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw5s-ZDw%7CCgwItaOy2wUQgLGj2AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cute little coffee shop. I got a dirty chai and it was tasty."
+        },
+        {
+            "review_datetime_utc": "07/28/2018 20:56:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOVBiSGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOVBiSGlnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg9PbHigE%7CCgwImLHz2gUQgIq6qwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very good coffee and very unique interior."
+        },
+        {
+            "review_datetime_utc": "07/28/2018 18:49:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OXZmSTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OXZmSTNRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw9vfI3QE%7CCgsI1fXy2gUQgNX5Zw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very beautiful cafe (one of the most beautiful ones I've been too actually). The pillowed staircase is great for families with children :) I ordered a decaf cappuccino and it was delicious (trust me it's rare to find good tasting cappuccino when you re limited to decaf). The BLT sandwich was good too (food is prepared from Marriott next door so it might take some 15' to be prepared)"
+        },
+        {
+            "review_datetime_utc": "07/28/2018 13:13:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbnF1X3p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbnF1X3p3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQnqu_zwE%7CCgwI3tfx2gUQwJy8zgE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very nice coffee shop.  Service could of been better."
+        },
+        {
+            "review_datetime_utc": "07/25/2018 01:02:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneFpPTzJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneFpPTzJ3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgxZOO2wE%7CCgwItpjf2gUQgMCfqwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place"
+        },
+        {
+            "review_datetime_utc": "07/24/2018 03:03:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRMnVTZkF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRMnVTZkF3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQ2uSfAw%7CCgwImK7a2gUQwN6KhAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We stopped here everyday we were in Charlotte, as our hotel was right across the street. The staff was friendly and the coffee, treats, and sandwiches were great! The best part? They're open late!"
+        },
+        {
+            "review_datetime_utc": "07/21/2018 12:51:55",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNndGVpNGxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNndGVpNGxRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgtei4lQE%7CCgwI69jM2gUQwNijoAM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Sorry to say the coffee was weak and the English Muffin sandwich we ordered was returned. Must have microwaved the egg a little too long. Tough and over cooked."
+        },
+        {
+            "review_datetime_utc": "07/15/2018 21:04:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdXJLRWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdXJLRWVBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAurKEeA%7CCgwI3O2u2gUQgPCC2QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome place with plenty of seating and good coffee!"
+        },
+        {
+            "review_datetime_utc": "07/14/2018 18:00:44",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBeC1YRWNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeC1YRWNBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAx-XEcA%7CCgwIzPSo2gUQgPPokwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place located next to Marriott with inside access to hotel. Locally roasted coffee with a mild robust flavor. Food choices are in the same category as large chain coffee shops but the quality is superior. I had the egg bacon and pimento breakfast sandwich very tasty. I just started routinely meeting in Charlotte and this will always be my go to coffee shop. Great place."
+        },
+        {
+            "review_datetime_utc": "07/10/2018 14:14:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNE15bWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNE15bWVnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDA4Mymeg%7CCgwIvv6S2gUQwM3EuAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Unique, clean, modern, slightly quirky coffeehouse with small market, games, tvs, and more!"
+        },
+        {
+            "review_datetime_utc": "07/09/2018 05:30:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNROHBPMmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROHBPMmtBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ8pO2kAE%7CCgwI_eWL2gUQgKKw_wI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good chill spot...its a cafe but they force you to buy right away or leave bo real chill time first if needed like most"
+        },
+        {
+            "review_datetime_utc": "07/04/2018 16:26:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRMWVmSlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRMWVmSlNBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQ1efJSA%7CCgwIy-rz2QUQwLSpqAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee spot in Charlotte! Love the aesthetic and there are areas for meetings. Highly recommend!"
+        },
+        {
+            "review_datetime_utc": "07/02/2018 22:29:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3c0xiMkxnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3c0xiMkxnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwsLb2Lg%7CCgsIvM7q2QUQwLz1cg%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The staff is not that personable, and the coffee is medicore."
+        },
+        {
+            "review_datetime_utc": "07/02/2018 12:06:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBMC1QaVJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBMC1QaVJ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDA0-PiRw%7CCgwI4aro2QUQwO2YywM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Funny and personable barista. Awesome  ambiance. Books and board games available. Great variety and delicious pastries.my new favorite coffee ahop"
+        },
+        {
+            "review_datetime_utc": "06/28/2018 15:32:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM2JDY2dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM2JDY2dBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ3bCcgAE%7CCgwIm__T2QUQwJ6PwQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to get coffee! Tons of different seating type choices to make sure you can be comfortable is whatever manner you think will make you productive."
+        },
+        {
+            "review_datetime_utc": "06/27/2018 02:05:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaDZ1T0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaDZ1T0p3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQh6uOJw%7CCgwI0OHL2QUQwL2sowI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very nice coffee and a handy spot in downtown Charlotte. It actually connects into the hotel as well which is quite handy for guests. Lots of seating areas and some snacks available here too."
+        },
+        {
+            "review_datetime_utc": "06/26/2018 14:18:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNna2NHeGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNna2NHeGZ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgkcGxfw%7CCgwIn5bJ2QUQgNanngE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Always greeted with a smile and they have great vegan options!"
+        },
+        {
+            "review_datetime_utc": "06/15/2018 03:23:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdmV1YUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdmV1YUh3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAveuaHw%7CCgwIo-KM2QUQwJzFyAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Pleasant, peaceful, comfy, friendly atmosphere...and they have food...and cool music playing in the background... and sometimes they show movies! Mostly, a great place to study. 😊"
+        },
+        {
+            "review_datetime_utc": "06/13/2018 20:35:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOGZyWmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOGZyWmNBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg8frZcA%7CCgwIiICG2QUQgPjFqQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best place to zone out with a great cup of coffee and get work done. Staff is welcoming and friendly, as are the customers!"
+        },
+        {
+            "review_datetime_utc": "06/11/2018 18:40:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMk1TRGVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMk1TRGVREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA2MSDeQ%7CCgwIjIT72AUQgPbpvAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Just what an out of town coffee nut needed. Great section of pastries... Great selection of roasts on tap for quick grab and go. They also do pour over for those who have time and like this being process. The staff were great, congenial and good conversationalists while you wait. Next time I'm back in town I'll be stopping in again."
+        },
+        {
+            "review_datetime_utc": "06/03/2018 15:06:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMk5hV2ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMk5hV2ZREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA2NaWfQ%7CCgwI9YfQ2AUQwLeq0QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This coffee shop feels like a mini co-working space. Lots of room to chill and meet with friends, fueled by quality craft coffee and unique treats."
+        },
+        {
+            "review_datetime_utc": "06/03/2018 13:35:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRNElPN1hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRNElPN1hnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ4IO7Xg%7CCgwIvt3P2AUQgPu92AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome coffee shop!"
+        },
+        {
+            "review_datetime_utc": "05/29/2018 06:25:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnaGJTOGdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnaGJTOGdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDghbS8ggE%7CCgsIx-Sz2AUQwKT_Hg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "An awesome coffee place. Although the coffees were a little costlier I wouldn't mind paying a little more for the ambience. Me and my childhood friend enjoyed playing the Scrabble board game."
+        },
+        {
+            "review_datetime_utc": "05/28/2018 13:28:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cWREZW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cWREZW13RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwqdDemwE%7CCgwIhIiw2AUQgPGVoQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Delicious food, great coffee and super helpful service! It was quick and overall a great spot!"
+        },
+        {
+            "review_datetime_utc": "05/26/2018 18:06:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnclplMTBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnclplMTBnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgrZe10gE%7CCgsIw8Sm2AUQwOKwaQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Relaxing place"
+        },
+        {
+            "review_datetime_utc": "05/18/2018 17:52:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnaTl1QnpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnaTl1QnpRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgi9uBzQE%7CCgwI5KX81wUQwOPwkwM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Awesome location and great decor. Coffee was meh at best with a fairly high price."
+        },
+        {
+            "review_datetime_utc": "05/15/2018 03:58:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRb3BMcHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRb3BMcHNnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQopLpsgE%7CCgwI4LXp1wUQgP7H-wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic coffee shop with a few bakery items. Very cool interior space with unique seating. Just beware of the price of beer and other items..."
+        },
+        {
+            "review_datetime_utc": "05/09/2018 17:47:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNHVXZUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNHVXZUZ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg4uWeFw%7CCgwIp-jM1wUQgIOTnQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere. Excellent flat white. Friendly staff."
+        },
+        {
+            "review_datetime_utc": "05/06/2018 05:02:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBaXNYVGF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaXNYVGF3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAisXTaw%7CCgwIyZi61wUQgIaLzAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "MJ was so kind. Very, very hospitable. Also, the mocha I ordered was incredibly delicious. Clean place, warm atmosphere. I went back to this place twice. This and the Halal Truck. Great spot."
+        },
+        {
+            "review_datetime_utc": "04/30/2018 18:55:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRenJUaE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRenJUaE1BEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQzrThMA%7CCgwIm82d1wUQwO_iwwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice café, with friendly barista."
+        },
+        {
+            "review_datetime_utc": "04/26/2018 01:04:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncHFqTHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncHFqTHhBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgpqjLxAE%7CCgwIlsuE1wUQwK_ehgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Chill cafe vibe with cool decor - I could see myself having alot of dinner or lunch meetings here. I would only suggest that they keep up with the cleanliness of all of the seating and pillows"
+        },
+        {
+            "review_datetime_utc": "04/23/2018 00:36:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRZ29xWlZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRZ29xWlZREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQgoqZVQ%7CCgwIl9X01gUQwPaSzAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love love love the atmosphere here. Espresso drinks, croissants, and even beer and wine were excellent. The tea selection is great, but tea shouldn't be $4 a cup. Baristas were jovial and very helpful."
+        },
+        {
+            "review_datetime_utc": "04/19/2018 23:47:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBck91bHN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBck91bHN3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDArOulswE%7CCgwImdXk1gUQgMyI4QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite coffee shop in Charlotte"
+        },
+        {
+            "review_datetime_utc": "04/11/2018 22:36:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRLVlLdXh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRLVlLdXh3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ-YKuxwE%7CCgsI3Ju61gUQwKzUYw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My new favorite coffee shop in Charlotte! I got a Iced caramel latte and now I crave it everyday! Definitely one of the best lattes I've ever had. The atmosphere is awesome as well. And, there's board games for anyone to play!"
+        },
+        {
+            "review_datetime_utc": "04/09/2018 18:39:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnejRxaHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnejRxaHJBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgz4qhrAE%7CCgwI0eau1gUQgIvf5wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "By far the best place to grab a coffee while reading a book or completing a work assignment uptown."
+        },
+        {
+            "review_datetime_utc": "04/08/2018 22:44:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNUpDalVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNUpDalVnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA5JCjUg%7CCgwI2Laq1gUQwLezywI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The ambience is chill and a perfect place for a link up with friends, the bae or your start up co-founder."
+        },
+        {
+            "review_datetime_utc": "04/06/2018 23:59:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBX3ZXRXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBX3ZXRXp3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA_vWEzwE%7CCgsI0ZOg1gUQwMXvcw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great cappuccinos"
+        },
+        {
+            "review_datetime_utc": "04/03/2018 00:03:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NnVQVFhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NnVQVFhnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw6uPTXg%7CCgwIzYmL1gUQwICyiQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere! Services up a few different food and beverage items than other places."
+        },
+        {
+            "review_datetime_utc": "04/01/2018 21:23:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdzhIR2RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdzhIR2RREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQw8HGdQ%7CCgwItZuF1gUQwNDF4QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great decor and layout, coffee was ok. Friendly service. My Croinut was stale kinda disappointed. I didnt taste the latte or mix drinks. 4 stars because of the croinut will change maybe to 5 stars once i return and try other products if its good"
+        },
+        {
+            "review_datetime_utc": "03/27/2018 12:56:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaDV2d1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaDV2d1JREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAh5vwRQ%7CCgwI4v7o1QUQwP2n5gE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The coffee is lovely but terribly expensive, and the cronuts are pricey too...but they're sooooo worth the indulgence. I love the atmosphere and decor, and the  collaborative work spaces with ample plugs/outlets."
+        },
+        {
+            "review_datetime_utc": "03/24/2018 18:37:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNk1DZVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNk1DZVFREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA6MCeQQ%7CCgwI_rXa1QUQwPellAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's such a beautiful, aesthetically pleasing coffee place. Perfect spot to read, work, or just hang. The espresso was better than most places I've been to."
+        },
+        {
+            "review_datetime_utc": "03/19/2018 15:33:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBbUt2UXBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBbUt2UXBnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAmKvQpgE%7CCgwIzLC_1QUQgJWHnwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great ambiance and coffee. Plenty of seating and pretty good pastries as well."
+        },
+        {
+            "review_datetime_utc": "03/18/2018 18:11:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3a3NEYU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3a3NEYU5nEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwksDaNg%7CCgsI6Ne61QUQwMyNCA%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Nice place but a bit stuffy. Coffee isn't very well made."
+        },
+        {
+            "review_datetime_utc": "03/10/2018 16:19:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBa0l2M1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBa0l2M1VnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAkIv3Ug%7CCgsIm4uQ1QUQwLjGEw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good hot chocolate,  nice  calm atmosphere"
+        },
+        {
+            "review_datetime_utc": "03/08/2018 09:27:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURReThiS3BnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURReThiS3BnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQy8bKpgE%7CCgwI9IOE1QUQgJ-40AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great little coffee shop!"
+        },
+        {
+            "review_datetime_utc": "03/05/2018 02:45:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMUttcnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMUttcnR3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDA1KmrtwE%7CCgwI5N7y1AUQwI-u3AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cashiers and coffee brewers are super friendly! Decent quality and fair priced coffee! Nice seating locations"
+        },
+        {
+            "review_datetime_utc": "03/03/2018 15:00:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRLXNEMUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRLXNEMUtREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQ-sD1KQ%7CCgwIh_Hq1AUQgIaLzAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee atmosphere!"
+        },
+        {
+            "review_datetime_utc": "03/01/2018 03:57:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMnZuVE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMnZuVE9BEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA2vnTOA%7CCgwIvfTd1AUQgPqPogE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Hip as heck"
+        },
+        {
+            "review_datetime_utc": "02/28/2018 22:13:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOHVTSWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOHVTSWlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg8uSIiAE%7CCgwI8NLc1AUQwM3WrAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite spots for coffee in the QC."
+        },
+        {
+            "review_datetime_utc": "02/28/2018 12:25:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMnJ2dmVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMnJ2dmVnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg2rvveg%7CCgsIzb_a1AUQwLXOZA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Definitely the best coffee shop in the area."
+        },
+        {
+            "review_datetime_utc": "02/20/2018 19:51:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnb2QzQzlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnb2QzQzlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgod3C9AE%7CCgwI1_ix1AUQgJrbugI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good coffee. Great sandwiches."
+        },
+        {
+            "review_datetime_utc": "02/20/2018 05:36:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3Z0pHYWZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3Z0pHYWZnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwgJGafg%7CCgwIwueu1AUQwLjPjQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very small tasty capuchinofor $4 but really cool space"
+        },
+        {
+            "review_datetime_utc": "02/18/2018 14:45:21",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnZ3RlM0JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnZ3RlM0JnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDggte3Bg%7CCgwIgaOm1AUQwICpjwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "There is seriously nothing bad to say about this place.  Best coffee shop environment in Uptown, you can meet, work, or hang out here.  Lunch specials are amazing, and staff is great."
+        },
+        {
+            "review_datetime_utc": "02/12/2018 18:49:41",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3czRhTXpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3czRhTXpnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICws4aMzgE%7CCgwIxcOH1AUQgKKw_wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice staff; this place has the industrial look that I like. Also, a great place to study/chill."
+        },
+        {
+            "review_datetime_utc": "02/03/2018 22:57:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMTV5Y1dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMTV5Y1dBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDg15ycWA%7CCgwI4fzY0wUQgImV7wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Might just be the best coffee and Charlotte. Really really great pour over and really chill spot to hang out and enjoy."
+        },
+        {
+            "review_datetime_utc": "01/30/2018 13:04:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRZ29YTjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRZ29YTjdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQgoXN7gE%7CCgsI7drB0wUQwJaxAg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good coffee. Awesome environment. In the heart of Uptown."
+        },
+        {
+            "review_datetime_utc": "01/27/2018 22:09:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndGRtTXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndGRtTXdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgtdmMwgE%7CCgwI_PCz0wUQwIj12QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Staff is awesome"
+        },
+        {
+            "review_datetime_utc": "01/26/2018 18:33:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNV9UZnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNV9UZnhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQ5_TfxgE%7CCgsI4-it0wUQgPzZGg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Horrible management, will overbook your reservations for customers they \"like better\""
+        },
+        {
+            "review_datetime_utc": "01/26/2018 13:54:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURncWNqQ1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURncWNqQ1VnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgqcjCUg%7CCgwIiOas0wUQwJGBzwM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The location is great! Met a client there to do a closing and requested assistance from the employee and he stated he didn't have time. So we left and they loss a order for 10 drinks."
+        },
+        {
+            "review_datetime_utc": "01/24/2018 13:03:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRdXU3Tk5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRdXU3Tk5BEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQuu7NNA%7CCgwIp4ii0wUQgOWs6wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, friendly and helpful service, and really nice environment to relax"
+        },
+        {
+            "review_datetime_utc": "01/21/2018 02:58:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NTdYM1FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NTdYM1FBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw57X3QA%7CCgwI0oOQ0wUQgPqYnAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is great. Friendly staff, simple and easy to follow menu, and an amazing atmosphere. Vertical floor seating, with cushions, allows for more places to sit. Board games and books make it comfortable and easy to feel welcome. I wish we had a place like this is High Point."
+        },
+        {
+            "review_datetime_utc": "01/20/2018 21:34:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBaDdyS3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBaDdyS3lRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAh7rKyQE%7CCgsIyuuO0wUQwOf7Cg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "dope atmosphere"
+        },
+        {
+            "review_datetime_utc": "01/14/2018 20:16:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMnNMYmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMnNMYmNREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA2sLbcQ%7CCgwIsPXu0gUQwLSyogI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love it over there, I like the small shop, the baked goods, the coffee and the friendly staff"
+        },
+        {
+            "review_datetime_utc": "01/09/2018 23:47:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndFByTmJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndFByTmJREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgtPrNbQ%7CCgwI_ajV0gUQgODYzwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent environment and coffee."
+        },
+        {
+            "review_datetime_utc": "01/03/2018 16:25:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBM3JmTnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBM3JmTnZRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA3rfNvQE%7CCgsIi4i00gUQgJ7vKw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place to eat, drink and hangout. I got a flat white expresso, connected to the Wi-Fi, and got some work done."
+        },
+        {
+            "review_datetime_utc": "01/03/2018 14:12:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRZ3M3NnBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRZ3M3NnBBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQgs76pAE%7CCgwIycmz0gUQwJKdkQI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I love the ambience, I love the customer service, but the teas are legitimately disgusting and burnt tasting. The cronuts are overpriced and not worth $6. The sandwiches are good and the coffee is good but that is only half the menu. I would come here again to chill, but I won't and can't recommend this place. Hopefully they will fix these problems, because I really want to like this place."
+        },
+        {
+            "review_datetime_utc": "01/02/2018 17:34:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3MFB2NUV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3MFB2NUV3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw0Pv5Ew%7CCgwIwIWv0gUQwLjYhwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Decent coffee in a great location with loads of work space and seating. Definitely a fun spot for caffeine in the city."
+        },
+        {
+            "review_datetime_utc": "12/18/2017 18:58:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMmJiZnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMmJiZnZ3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg2bbfvwE%7CCgwI3Z_g0QUQwNr2kgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love visiting here whenever I'm uptown and have time between plans/appointments"
+        },
+        {
+            "review_datetime_utc": "12/18/2017 14:07:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNReVp1aHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNReVp1aHpBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQyZuhzAE%7CCgwInJff0QUQwLLoqQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great location, parking was a bit tricky but worth it, the cheese plate. You guys, I was skeptical but the wine yummy"
+        },
+        {
+            "review_datetime_utc": "12/17/2017 14:13:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBakozU0RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBakozU0RBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAjJ3SDA%7CCgsIo_fZ0QUQgLW3SQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place and they should turn down the music in the am to be more conducive for meetings."
+        },
+        {
+            "review_datetime_utc": "12/03/2017 22:11:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbkptLXV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbkptLXV3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgnJm-uwE%7CCgwIr-2R0QUQgKGLwwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love the style of the place, its very woodsy and has a creatively artsy vibe to it. The coffee is great and so is the food. Service is alright."
+        },
+        {
+            "review_datetime_utc": "11/29/2017 01:02:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMXR5Ukx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMXR5Ukx3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg1tyRLw%7CCgwIno740AUQgJ74pQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Ambiance and coffee are good, but I wish they had more variety for snacks and food."
+        },
+        {
+            "review_datetime_utc": "11/24/2017 22:51:49",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRalliRXN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRalliRXN3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQjYbEswE%7CCgwIhcXi0AUQwNm_4gE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very hip and trendy place. If I could give it a 3.5 stars I would because the atmosphere was great, but there really isn't enough seating. The WiFi was down half the time I was there and food prices were very expensive, but the coffee was great and fairly priced. Overall I will probably be back, but not anytime soon."
+        },
+        {
+            "review_datetime_utc": "11/21/2017 23:57:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNnJDV2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNnJDV2RBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg6rCWdA%7CCgwI5frS0AUQgKuhhgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place"
+        },
+        {
+            "review_datetime_utc": "11/19/2017 18:04:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNFBLOWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNFBLOWVnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg4PK9eg%7CCgwImo_H0AUQwO2P0QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place.  Great hanging out with my bride.  Muffins and Kronuts were fabulous.  MJ, who waited on us could not have been sweeter. Thanks. One of my new favorite places!"
+        },
+        {
+            "review_datetime_utc": "11/17/2017 18:28:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRck9IZkhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRck9IZkhBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQrOHfHA%7CCgwI6tS80AUQgOulwwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Hip place with multiple levels and various seating settings. We went for the Wednesday wine and color. They provide the coloring books and markers, wine is $5 a glass and pastries are 50% off. We had some delicious Moscato and a hot cinnamon cronut. Right in the heart of Charlotte, we will be back."
+        },
+        {
+            "review_datetime_utc": "11/15/2017 19:24:48",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3eC02SThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3eC02SThRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwx-6I8QE%7CCgwIgKmy0AUQgIewiAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Stellar atmosphere. Right across the street from the Charlotte City Club. It's a little over-priced but its good coffee. Very cozy, very hip, kind of rustic. I can always count on HGTV playing on the overhead projector."
+        },
+        {
+            "review_datetime_utc": "11/10/2017 19:53:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURneDRLS053EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURneDRLS053EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgx4KKNw%7CCgwIy4eY0AUQwNbQrQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Loved the atmosphere in this place.  Good coffee and a comfortable spot to work or read."
+        },
+        {
+            "review_datetime_utc": "11/08/2017 23:29:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNROXBQR0hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNROXBQR0hnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ9pPGHg%7CCgwI8qaO0AUQwP7MogE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "After a long hump day Jackie put the biggest smile on my face! She was so sweet and very helpful! Thank you for being so kind!"
+        },
+        {
+            "review_datetime_utc": "10/27/2017 18:31:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBXzRINUhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBXzRINUhREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA_4H5HQ%7CCgsI6vbNzwUQgICJeg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool atmosphere,  service was awesome! Can't wait to go back when I visit Charlotte!"
+        },
+        {
+            "review_datetime_utc": "10/23/2017 03:37:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdzluN3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdzluN3ZnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQw9n7vgE%7CCgsIiMi1zwUQgJycOQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I love this place for the ambience. Coco and the Director has an atmosphere that encourages people to come in and sit for a while. The staff is always friendly and right outside of coco is another sitting area in the Marriott hotel. It's simply an awesome place. You can have coffee or a variety of beers here. The one negative is everything is awfully expensive. There are bottles of water that are as high as $8 bucks. This still remains one of the best kept secrets in Charlotte."
+        },
+        {
+            "review_datetime_utc": "10/17/2017 21:36:09",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndnBDWFJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndnBDWFJ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgvpCXRw%7CCgwIye-ZzwUQwL21nQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "WOW!!!!"
+        },
+        {
+            "review_datetime_utc": "10/08/2017 19:03:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bGRyNWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bGRyNWRnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwldr5dg%7CCgwIgO3pzgUQgICS9AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "There is an outstanding atmosphere , nice quiet and really good place for work or have a talk with friends."
+        },
+        {
+            "review_datetime_utc": "10/04/2017 03:06:25",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRa3ZDaGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRa3ZDaGlnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQkvChigE%7CCgsIsaDRzgUQwM27Pg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee. Unique tiered seating layout. Right on Trade + Tryon (dead center Charlotte uptown). Hip shop connected to the Marriott."
+        },
+        {
+            "review_datetime_utc": "09/14/2017 17:34:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnaWRxVjVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnaWRxVjVnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgidqV5gE%7CCgsIqfvqzQUQwLehVw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful place to chill, read a book  drink coffee and pick up some unique gifts. Very laid back place. Coffee is better than most other places and cold drinks are a good alternative"
+        },
+        {
+            "review_datetime_utc": "09/06/2017 18:34:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRcElYcFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcElYcFpnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQpIXpZg%7CCgwIsf_AzQUQgPW7hgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I love Coco, they have good space to hang out or meet with friends. They used to have a scary cream pitcher that poured way too much, but they seem to have replaced it. The coffee is not cheap but it's good, and the lunch specials are always on point."
+        },
+        {
+            "review_datetime_utc": "09/04/2017 17:45:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBa2VTLUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBa2VTLUlREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAkeS-IQ%7CCgsIz6K2zQUQwITGeg%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "It was ok"
+        },
+        {
+            "review_datetime_utc": "08/28/2017 16:35:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnLXMtb193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnLXMtb193RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg-s-o_wE%7CCgwIwYyRzQUQwImsigM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Accidentally overpaid $80 for a coffee, realized when I got home in S.C.. They found a way to get back my cash. Great people, great management, 10/10 would go back"
+        },
+        {
+            "review_datetime_utc": "08/28/2017 03:49:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdnNQbldREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdnNQbldREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAvsPnWQ%7CCgwI5aWOzQUQwImsigM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Not very inviting. Service was blah. Just a typical coffee shop."
+        },
+        {
+            "review_datetime_utc": "08/24/2017 14:38:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURneHNLaG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURneHNLaG1nRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgxsKhmgE%7CCgwI0Mn7zAUQwLaOjwM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good coffee, rude employees."
+        },
+        {
+            "review_datetime_utc": "08/17/2017 12:14:46",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbEwtSmd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbEwtSmd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICglL-JgwE%7CCgwItpHWzAUQgKPVuwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool local coffee shop with an awesome atmosphere"
+        },
+        {
+            "review_datetime_utc": "08/15/2017 21:54:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRMnJQOHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRMnJQOHJRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ2rP8rQE%7CCgwIstvNzAUQgIaUxgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee and service. Trendy!"
+        },
+        {
+            "review_datetime_utc": "08/07/2017 11:29:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbEl6RGJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbEl6RGJREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICglIzDbQ%7CCgsIlZ6hzAUQwNfjdQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very nice coffee and tea spot. They offer lots of healthy bottles drinks too. Great seating in a variety of settings for any type of gathering. Also had a muffin that was delicious."
+        },
+        {
+            "review_datetime_utc": "08/07/2017 04:01:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndklyVWd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndklyVWd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgvIrUgwE%7CCgwIksyfzAUQgJa11QI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Upscale Coffee shop smack in the middle of Uptown Charlotte"
+        },
+        {
+            "review_datetime_utc": "08/03/2017 19:44:00",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbU9lZl93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbU9lZl93RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgmOef_wE%7CCgsIgPqNzAUQwMCbWA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite coffee shop in Charlotte. They have great drinks, great atmosphere and a great selection of beer, wine and snacks.  My only complaint is that they don't serve hot food all day (only during lunch I believe.)  There are good co-working spaces to get meetings and group work done. They have interesting (although expensive) items for out-of-towners looking to get something local. The seating is fabulous. There is a book trade, and great windows for people watching.  There are lots of plugs throughout so you could stay all day if you wanted to...  The staff is great every time I go in. Overall I love this place!"
+        },
+        {
+            "review_datetime_utc": "08/03/2017 18:26:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdzhyRjF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdzhyRjF3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQw8rF1wE%7CCgsI2NWNzAUQwJO5Uw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Peaceful Atmosphere!!! I decided to attend the Wine and Coloring event with my husband on 8/2! I figured it would be nice to try that for my birthday! The cashier was awesome, his personality made me felt like I've known him my whole life. He was just that cool :) Even he gave me a birthday gift, which was very sweet of him! But, I love the space, the decor, and how quiet it was! I will definitely be back! Oh yea, the prices were dirty cheap, the Banana Bread was ahhhhhhhhmmmmmmmmmmmaaaaaazzzzzziiinnnnnnnnnggggggggg! Keep making that!!!!!"
+        },
+        {
+            "review_datetime_utc": "07/20/2017 19:06:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbmI3b0VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbmI3b0VREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQnb7oEQ%7CCgwIzf7DywUQwJDBpAE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Cool coffee shop with very unique tiered seating. Sometimes they have live sports playing on the projector. This place is more about the decor than the service or their food and beverage offerings. Each time the service is just a little too slow for a coffee shop or the pastry is lackluster. The coloring and wine night is a cool idea and there is nothing better than hanging out in a coffee shop drinking wine. Problem is pour size varies greatly by the staff member and even then sometimes the same person has wildly different size pours. Go for the atmosphere, but don't expect to be blown away by anything else. Really it's just a good place to hang out."
+        },
+        {
+            "review_datetime_utc": "07/18/2017 17:22:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBNzkyVzdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNzkyVzdRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDA792W7QE%7CCgsIu4e5ywUQgOa_Mw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you've never been here, go, now. and bring your favorite book.  They'll provide the beverage.  I adore this spot."
+        },
+        {
+            "review_datetime_utc": "07/13/2017 12:34:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbElUN3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbElUN3lRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQlIT7yQE%7CCgwI6tGdywUQwNa-uQE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "I am beginning to have chronically bad customer service issues at this shop. I visit here pretty often and I can count on 2 fingers when I've gotten good treatment from the baristas. I'm a female and I used to work in hospitality, so I know to be friendly and expect friendly. I ordered a croissant warmed up. A LONG minute later got a croissant NOT warmed at all. And with the lack of enthusiasm from my barista guy already, I was just trying not to go from annoyed to pissed. I come here for the atmosphere and location, but buyers beware- friendly service is a serious hit or miss."
+        },
+        {
+            "review_datetime_utc": "07/11/2017 03:39:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBd3VqWk1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBd3VqWk1nEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAwujZMg%7CCgwI35CRywUQgObIrQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Environment was relaxing, creative, and functional! Decent selection of foods and beverages."
+        },
+        {
+            "review_datetime_utc": "07/04/2017 02:04:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBNjZDZWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBNjZDZWlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA66CeiAE%7CCgwIs-_rygUQgO_LqAI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The coffee is good depending on the barista. Some days it will be amazing and others it will be worse than Dunkin Donuts. Some don't really understand what 30 pounds means."
+        },
+        {
+            "review_datetime_utc": "06/29/2017 01:57:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbXRqMm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbXRqMm1RRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQmtj2mQE%7CCgwI-bzRygUQwN-4ugE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite coffee spots in uptown. It has a unique atmosphere and seems like a great place to hangout."
+        },
+        {
+            "review_datetime_utc": "06/17/2017 20:44:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRanJuRVl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRanJuRVl3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQjrnEYw%7CCgsIm6mWygUQgLbcBQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great beverages, decent choice of snacks, great atmosphere, perfect white noise, not too loud or quiet, clean restrooms, plenty of seating, outlets everywhere, friendly people. Perfect coffee shop, couldn't ask for anything more in a place to work or have a conversation honestly."
+        },
+        {
+            "review_datetime_utc": "06/14/2017 15:45:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnajhpMEV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnajhpMEV3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgj8i0Ew%7CCgwIlLSFygUQwMrVgwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I love the atmosphere and the layout of this coffee shop. The Cronut was original and delicious but the coffee was a little higher in quality than Starbucks but lower in quality than other coffee shops in Charlotte."
+        },
+        {
+            "review_datetime_utc": "06/12/2017 11:51:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRcnZPa1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRcnZPa1RBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQrvOkTA%7CCgwI3ID6yQUQwNiapgI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Maybe because I come early in the morning, but the two times I've been the staff has been mediocre at best. Not very friendly. Dope spot in other facets. I'm"
+        },
+        {
+            "review_datetime_utc": "05/28/2017 20:04:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnenZEMEpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnenZEMEpnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgzvD0Jg%7CCgsI6NqsyQUQwOGCMw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The staff was very friendly. When the grinder broke, they offered me a free pastry and a free coffee during my next visit."
+        },
+        {
+            "review_datetime_utc": "05/27/2017 16:57:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNReGF6dWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNReGF6dWJBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQxazubA%7CCgwI79-myQUQgOPHhAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The staff is very nice the are is made for u to focus the snacks are great and not to wxpensive the whole feel is just good vibes!!!!"
+        },
+        {
+            "review_datetime_utc": "04/16/2017 14:44:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncEtDZGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncEtDZGN3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgpKCdcw%7CCgwItYbOxwUQwOqFrgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very cool coffee shop with a lot to offer! The decor, atmosphere and total vibe is nothing like the chain experience everywhere else! I would actually hangout here if I felt like working outside my office! Very Well Done!"
+        },
+        {
+            "review_datetime_utc": "04/15/2017 17:42:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRak03YzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRak03YzhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQjM7c8gE%7CCgwInLfJxwUQwNy3kQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) try their Hario for over  (Original) try their Hario pour over"
+        },
+        {
+            "review_datetime_utc": "04/15/2017 14:26:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBOWVxVmhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOWVxVmhnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICA9eqVhgE%7CCgsIhtvIxwUQgN-YJQ%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Rhe place is beautiful and the coffee is good, but it looks like the emplyees are extremely overwhelmed. The manager should put more employees to work in the place, which is big. When I went there somebody took my drink and the barista had to make another one ro me. He attended me very well, but was visually exhausted."
+        },
+        {
+            "review_datetime_utc": "04/13/2017 21:30:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdkpIWUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdkpIWUZREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAvJHYFQ%7CCgwI8Nu_xwUQgMHE5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A unique and cozy new spot in the heart of uptown. Whether you're there to study, grab a coffee and lunch to go or just to get Sugarrman's famous Kronut (croissant + doughnut) I highly recommend Coco. They also have a book trading bookshelf inside the store which I love!"
+        },
+        {
+            "review_datetime_utc": "04/04/2017 23:26:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NXRUSWFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NXRUSWFREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICw5tTIaQ%7CCgwIsdeQxwUQwNa-uQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "One of my favorite coffee shops of all time. Great setup, delicious coffee, awesome atmosphere."
+        },
+        {
+            "review_datetime_utc": "03/26/2017 21:39:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRdzVhZU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRdzVhZU9REAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQw5aeOQ%7CCgsI_ungxgUQwIe-KQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to hang out and have a cup. The atmosphere and seating really make this place special."
+        },
+        {
+            "review_datetime_utc": "03/11/2017 18:59:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbXNTdDJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbXNTdDJRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQmsSt2QE%7CCgwIp5KRxgUQwO_iwwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The atmosphere is what makes this coffee shop! The coffee is great and they serve cronuts! It can be a little bit challenging to find parking."
+        },
+        {
+            "review_datetime_utc": "03/11/2017 15:33:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcXFmcG1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcXFmcG1BRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDAqqfpmAE%7CCgsI1LGQxgUQgNClTA%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Great atmosphere, I've had better specialty coffees artisanal crafted.  But taste alright."
+        },
+        {
+            "review_datetime_utc": "02/28/2017 20:59:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNlBUWkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNlBUWkZ3EAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDg6PTZFw%7CCgwIq8nXxQUQwPOIqQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent coffee and pastries, a seating ziggurat, and the best trivia night in town!"
+        },
+        {
+            "review_datetime_utc": "02/20/2017 14:34:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRb1BTOWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRb1BTOWlBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQoPS9iAE%7CCgwIhf2rxQUQwJDBpAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "excellent coffee and staff.  much better than Starbucks"
+        },
+        {
+            "review_datetime_utc": "02/08/2017 20:31:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBeF9QaUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeF9QaUlBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAx_PiIA%7CCgwIqoDuxAUQgMyI4QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great coffee, tea, sandwich, snacks, and pastry options. Staff is friendly and there are also lots of interesting gifts and non-food items of interest. Service is quick even when there's a line."
+        },
+        {
+            "review_datetime_utc": "01/31/2017 15:02:28",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRZ01ueHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRZ01ueHdnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQgMnxwgE%7CCgsIhM7CxAUQwMq6FQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Super friendly staff, lots of seating options, ample outlets, good food. It's a great place for a meeting, a quick meal or getting some work done. I especially like their tea selection."
+        },
+        {
+            "review_datetime_utc": "01/22/2017 00:36:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNUwtSElREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNUwtSElREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg5L-HIQ%7CCgwIif2PxAUQgMe0xQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Thoroughly enjoyed this coffee shop. The interior oozes creativity and collaboration. They also serve pour over which has been hard to come by these days."
+        },
+        {
+            "review_datetime_utc": "01/20/2017 05:34:15",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRLUlTc3JnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRLUlTc3JnRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ-ISsrgE%7CCgwI18KGxAUQwNzAiwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best space I've seen in Charlotte that marries community, collaboration, entrepreneurial spirit, support of local coffee teas & food that I've experienced in CLT.  If you are looking for a great coffee or tea or simply in need of an easy cafe type bite while working in an open and energetically aligned space come here.  I had the Turkey BLT which was good & a Dirty Chai that's spot on!  No cons...."
+        },
+        {
+            "review_datetime_utc": "01/19/2017 16:12:58",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNROTdQTklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNROTdQTklnEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ97PNIg%7CCgwIisuDxAUQgPLD1wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Warm and cozy environment, welcoming friendly staff, and good, decently priced coffee. I would definitely recommend this place when visiting uptown Charlotte!"
+        },
+        {
+            "review_datetime_utc": "01/05/2017 12:58:14",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cGNqZnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cGNqZnd3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICwpcjfwwE%7CCgwI5oW5wwUQwKnctAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice place for coffee, staff was very friendly and helpful."
+        },
+        {
+            "review_datetime_utc": "12/02/2016 13:49:54",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnbWEzQkVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnbWEzQkVREAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDgma3BEQ%7CCgwIgviFwgUQgKSD8gI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The tea is good, the people are nice, and the seating is amazing!"
+        },
+        {
+            "review_datetime_utc": "11/25/2016 01:54:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBcF92cjN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBcF92cjN3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICAp_vr3wE%7CCgsIu7PewQUQgIjVRA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great atmosphere and good design. Didn't get to explore many menu options but seemed like a great place to get together to study or just chill out"
+        },
+        {
+            "review_datetime_utc": "11/21/2016 14:54:37",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMnM3NGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMnM3NGZBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICg2s74fA%7CCgsIrZXMwQUQgJ3Kbw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Good coffee (and reasonably priced) but they're asking north of $12 for a grilled cheese..."
+        },
+        {
+            "review_datetime_utc": "11/21/2016 09:05:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMXA3WWh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMXA3WWh3RRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDA1p7YhwE%7CCgwI0PHKwQUQgIadwAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a great place to grab a morning coffee, afternoon treat, or after work beer. Great atmosphere, tons of outlets & USB chargers and friendly staff. I've found my new favorite coffee shop."
+        },
+        {
+            "review_datetime_utc": "11/10/2016 22:36:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRNTgzWFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRNTgzWFRBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQ583XTA%7CCgwI9uyTwQUQgPPxjQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Definitely a \"cool\" space and I love the little retail store concept baked into the coffee shop too . . . but the server last weekend was determined to make me feel like a fool bc I didn't know my coffees. . . I'm a newbie and was hoping for a bit of an \"education\" into what drink to order (maybe describe the difference between a cappuccino and a cafe au lait?)  However, despite the fact that there was no line at all behind me she proceeded to ask me (repeatedly) what I wanted to drink and tap her foot impatiently as I posed a variety of questions striving to glean a little bit of knowledge out of her . . .  Disappointing when you consider that a few minutes of time invested now could've introduced me to my fav new coffee shop :-(."
+        },
+        {
+            "review_datetime_utc": "11/10/2016 00:55:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRZ05tS1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRZ05tS1RBEAE!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDQgNmKTA%7CCgsI9YqPwQUQgIenDg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Cool place. Great Americano."
+        },
+        {
+            "review_datetime_utc": "10/20/2016 19:37:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRenE3dzhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRenE3dzhRRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICQzq7w8QE%7CCgwIlLqkwAUQwMTTsQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this place! Finally a chill place to read, drink coffee and study"
+        },
+        {
+            "review_datetime_utc": "09/09/2016 13:40:49",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMHVtaHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMHVtaHJBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgIDg0umhrAE%7CCgsI4ffKvgUQgJmbEA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best coffee shop in Charlotte! Feels like NYC, London etc. way to go Charlotte! Amazing job"
+        },
+        {
+            "review_datetime_utc": "08/29/2016 18:06:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNndllEWDFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNndllEWDFBRRAB!2m1!1s0x0:0xfd47172b8945ded7!3m1!1s2@1:CIHM0ogKEICAgICgvYDX1AE%7CCgsIk_ORvgUQwObWTg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The atmosphere here is sleek, modern, and very down-to-earth. Prices are reasonable and staff is friendly. Highly recommend."
         }
     ],
-    "total_reviews_count": 855
+    "total_reviews_count": 860
 }

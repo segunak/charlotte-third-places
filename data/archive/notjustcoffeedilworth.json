@@ -3,6 +3,13 @@
     "place_name": "Not Just Coffee | Dilworth",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 17:58:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCZ3VheTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCZ3VheTZ3RRAB!2m1!1s0x0:0x33c6774c564a5545!3m1!1s2@1:CIHM0ogKEICAgIDBguay6wE%7CCgwIr9qLngYQgOq4oQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Spacious. Friendly service. Boutique coffee prices"
+        },
+        {
             "review_datetime_utc": "12/23/2022 18:01:58",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCeHRUZE5nEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCeHRUZE5nEAE!2m1!1s0x0:0x33c6774c564a5545!3m1!1s2@1:CIHM0ogKEICAgICBxtTdNg%7CCgwIltqXnQYQwJO1-AI%7C?hl=en-US",
@@ -1032,5 +1039,5 @@
             "review_text": "NJC is my go to  Espresso in Charlotte. Fantastic coffee served precisely the way you order it, with incredible attention to main ingredient, coffee!. Great coffeee, Espresso, oat milk lattes, fantastic! And now with food and brews carrying the day and night through. Love!"
         }
     ],
-    "total_reviews_count": 251
+    "total_reviews_count": 254
 }

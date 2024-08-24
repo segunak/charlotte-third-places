@@ -3,6 +3,13 @@
     "place_name": "Summit Coffee | Plaza Midwood",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/17/2023 14:26:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCdXEyaWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCdXEyaWtRRRAB!2m1!1s0x0:0x95bfc5d82608e60d!3m1!1s2@1:CIHM0ogKEICAgIDBuq2ikQE%7CCgwIkuCangYQiLyEoAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great atmosphere with top-notch coffee!! Grateful for Summit's presence in CLT!"
+        },
+        {
             "review_datetime_utc": "01/07/2023 13:01:27",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCejRqVzlnRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCejRqVzlnRRAB!2m1!1s0x0:0x95bfc5d82608e60d!3m1!1s2@1:CIHM0ogKEICAgICBz4jW9gE%7CCgsIp9rlnQYQgM-iWw%7C?hl=en-US",
@@ -423,5 +430,5 @@
             "review_text": "Glad to have the new addition to the hood!  Job well done on the building renovation - cozy spot for your morning ritual or to gather with friends. Wonderful staff and delicious coffee. Find Your Summit!"
         }
     ],
-    "total_reviews_count": 80
+    "total_reviews_count": 81
 }

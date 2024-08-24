@@ -3,6 +3,13 @@
     "place_name": "Not Just Coffee | Jay Street",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/10/2023 19:03:24",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCNkxPaHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCNkxPaHNnRRAB!2m1!1s0x0:0x377d0ded303c2bb0!3m1!1s2@1:CIHM0ogKEICAgIDB6LOhsgE%7CCgwI_Oz2nQYQ8NaHkgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "gingerbread latte was so yummy! the kitchen closes a little early so be sure to get there on time if you want to order food :) coffee was afforable! patio also has a nice view of the charlotte skyline"
+        },
+        {
             "review_datetime_utc": "12/31/2022 20:54:22",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCOWVhQXFBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCOWVhQXFBRRAB!2m1!1s0x0:0x377d0ded303c2bb0!3m1!1s2@1:CIHM0ogKEICAgICB9eaAqAE%7CCgwI_sLCnQYQoLbUkAM%7C?hl=en-US",
@@ -759,5 +766,5 @@
             "review_text": "Enjoyed visiting and would could back. Easily a place to relax and get some work done, small meeting, or relax before or after work with a delicious coffee. I ordered the mule which is a mix of ginger beer and espresso. Perfect to start my day. It has an open floor layout which means a lot of people can fit and enjoy the place with seating inside and out. The staff were friendly and knowledgeable of the menu. Clean restrooms however no highchairs or changing tables if you're being small ones with you. Street parking is available in front with additional parking in the rear. Handicap parking is located along the side of the building."
         }
     ],
-    "total_reviews_count": 176
+    "total_reviews_count": 179
 }

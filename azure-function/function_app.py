@@ -9,7 +9,6 @@ from unidecode import unidecode
 import helper_functions as helpers
 from pyairtable.formulas import match
 from airtable_client import AirtableClient
-from azure.storage.filedatalake import DataLakeServiceClient
 
 # Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
@@ -20,7 +19,6 @@ logging.basicConfig(level=logging.INFO)
 # Delete main.py and other unused code.
 # Delete local debug Airtabel code
 # Get missing place_id's manually and update airtable
-# Have a way to get a list of places that actually had a field updated and log that at the end of enrichmenet.
 # Work on filling gaps in the data manually
 # Deploy Azure Function and hit enrichement endpoint from GitHub action and verify success.
 # Go to Outscraper, get all place_id's, get reviews for all places. Have it hit the azure function for outscraper
@@ -69,6 +67,7 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
         try:
             airtable = AirtableClient()
             places_updated = airtable.enrich_base_data()
+            airtable.get_place_photos(overwrite_cover_photo=True)
             logging.info(f"Airtable Base enrichment completed. The list of places updated is {places_updated}.")
             return func.HttpResponse(
                 f"Airtable base enrichment processed successfully. The list of places updated: {places_updated}",
@@ -138,17 +137,15 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
 
         place_id = helpers.format_place_name(raw_reviews_data['data'][0]['place_id'])
         place_name = helpers.format_place_name(raw_reviews_data['data'][0]['name'])
-
-        datalake_connection_string = os.environ['AzureWebJobsStorage']
-        datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
-        file_system_client = datalake_service_client.get_file_system_client(file_system="data")
-        directory_client = file_system_client.get_directory_client("reviews")
-        file_client = directory_client.get_file_client(f"{place_id}-{place_name}-reviews.json")
-        
+        review_file_name = f"{place_id}-{place_name}-reviews.json"
         json_data = json.dumps(reviews_data, indent=4)
-        file_client.upload_data(data=json_data, overwrite=True)
 
-        return func.HttpResponse(f"Review processed successfully for place {place_name} with place Id {place_id}", status_code=200)
+        save_status = helpers.save_reviews_github(json_data, review_file_name)
+        if save_status:
+            return func.HttpResponse(f"Review processed successfully for place {place_name} and saved to GitHub repo.", status_code=200)
+        else:
+            return func.HttpResponse("Failed to save reviews to GitHub.", status_code=500)
+
     except json.JSONDecodeError:
         return func.HttpResponse("Invalid JSON in request", status_code=400)
     except Exception as ex:

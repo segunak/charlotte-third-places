@@ -3,6 +3,20 @@
     "place_name": "Whole Foods | SouthPark",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/14/2023 15:14:16",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCX08yWmR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCX08yWmR3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDB_O2Zdw%7CCgwIyI2LngYQwKOS9AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great fresh foods!  Pre-cooked meals made with healthy ingredients!  Love it"
+        },
+        {
+            "review_datetime_utc": "01/12/2023 18:18:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCdEw2TkVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCdEw2TkVnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDBtL6NEg%7CCgsI4p2BngYQqLvvdQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I like this one in particular because they always have everything in my opinion."
+        },
+        {
             "review_datetime_utc": "12/26/2022 18:08:24",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCM296VjBRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCM296VjBRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICB3ozV0QE%7CCgwImMannQYQqITn3AI%7C?hl=en-US",
@@ -1977,13 +1991,6 @@
             "review_text": "Great place to purchase groceries. Try fruits here"
         },
         {
-            "review_datetime_utc": "06/12/2018 03:04:41",
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbDlLQS1BRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbDlLQS1BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQl9KA-AE%7CCgwIyfD82AUQgO34tQI%7C?hl=en-US",
-            "review_rating": 4,
-            "review_text": "Good products, but way overpriced. The partnership with Amazon hasn't helped much..."
-        },
-        {
             "review_datetime_utc": "06/04/2018 22:58:55",
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbFBUdUhREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbFBUdUhREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAlPTuHQ%7CCgsIr4jX2AUQwJ-rAw%7C?hl=en-US",
@@ -2101,7 +2108,1351 @@
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OGRxeDR3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw8dqx4wE%7CCgwI8eam1AUQwI-u3AM%7C?hl=en-US",
             "review_rating": 5,
             "review_text": "I love the supermarket. FRESH food! Amazing! Especially great to try new things ;) . We tried mochi ice cream. Delicious :)"
+        },
+        {
+            "review_datetime_utc": "02/16/2018 11:33:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURncGNTYzB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURncGNTYzB3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgpcSc0wE%7CCgwIkIOb1AUQgODhyQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is a fun place to shop"
+        },
+        {
+            "review_datetime_utc": "02/09/2018 20:00:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBNGFMRGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNGFMRGdRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA4aLDgQE%7CCgsIyPv30wUQgLPkVg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Whole Foods is aweome, just pricey, but that's to be expected."
+        },
+        {
+            "review_datetime_utc": "01/31/2018 22:53:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNDQ3ekVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNDQ3ekVBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA447zEA%7CCgwI8pHJ0wUQgJWQmQM%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Over the past 3 weeks I have noticed more and more that the inventory is becoming less and less."
+        },
+        {
+            "review_datetime_utc": "01/26/2018 21:39:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncU5pVFBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncU5pVFBnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgqNiTPg%7CCgwI9r-u0wUQwIWGpQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Whole Foods, I' being going there ever since they open.."
+        },
+        {
+            "review_datetime_utc": "01/24/2018 23:33:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnbkk3X2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnbkk3X2JBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgnI7_bA%7CCgwI1a-k0wUQwNiapgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Customer service is so awesome!"
+        },
+        {
+            "review_datetime_utc": "01/16/2018 23:24:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3dnQ3ZWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dnQ3ZWZREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwvt7efQ%7CCgsItpP60gUQgIjVRA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Not your everyday store but great for specialty items"
+        },
+        {
+            "review_datetime_utc": "01/12/2018 21:25:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNndUpHVzF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNndUpHVzF3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICguJGW1wE%7CCgwI18_k0gUQwPmBgQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "This store is great if you're looking for healthy fresh foods and produce but the prices are ridiculous. Harris teeter has similar selections and produce that's just as good for much more satisfying prices."
+        },
+        {
+            "review_datetime_utc": "01/11/2018 21:07:20",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnX3JHcTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnX3JHcTNnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg_rGq3gE%7CCgsIiKTf0gUQwODddg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Laid-back upstairs is a great place to get some work done while sipping coffee and watching shoppers down below."
+        },
+        {
+            "review_datetime_utc": "12/31/2017 04:18:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbjl2dUp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbjl2dUp3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgn9vuJw%7CCgwIg8qh0gUQwJy8zgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I had to go to Charlotte to visit my company home office and stopped to get a few things. The parking lot can be tricky during certain times of the day. Very crowded but I had no problems finding what I needed and the fast checkout had me on my way. It is the closest one to me so I don't get to go there often. Please put a store nearer to  Hickory."
+        },
+        {
+            "review_datetime_utc": "12/22/2017 17:43:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBak55MjZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBak55MjZ3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAjNy26wE%7CCgwI0Ij10QUQgM7kzQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Nice whole foods market convenient to the houses. Open early at 7am. Good staff."
+        },
+        {
+            "review_datetime_utc": "12/15/2017 00:40:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRX01pSHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRX01pSHhBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ_MiHxAE%7CCgwIm7TM0QUQgOWj8QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent customer service. Good variety of choices in every department. Very clean and well maintained."
+        },
+        {
+            "review_datetime_utc": "12/14/2017 22:44:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRemNpb3RnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRemNpb3RnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQzciotgE%7CCgwIxf3L0QUQgPSfxAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "A great place to shop and even have lunch.   Good selection, good people."
+        },
+        {
+            "review_datetime_utc": "12/11/2017 17:00:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNVlHcVlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNVlHcVlBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg5YGqYA%7CCgwIy_O60QUQgMaPiQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "As with every whole foods this one is also always crowded. Really good food at the buffet area to grab a quick and healthy bite."
+        },
+        {
+            "review_datetime_utc": "12/06/2017 13:17:11",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBbi0tTG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBbi0tTG1nRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAn--LmgE%7CCgwI19uf0QUQwOPwkwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Nice friendly place to shop. Great crosants & tea with place to sit & eat"
+        },
+        {
+            "review_datetime_utc": "12/05/2017 01:46:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MXJPVTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MXJPVTdnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw1rOU7gE%7CCgwI4vSX0QUQwO6rkwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "We Love whole Foods and their friendly staff."
+        },
+        {
+            "review_datetime_utc": "11/29/2017 17:57:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNReHZyMG9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNReHZyMG9nRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQxvr0ogE%7CCgsIjOr70AUQgJ3Kbw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Whole foods market is a great place to go shopping they have health and unhealthy food, the unhealthy is sweet, candy, cookies, ice cream, and sugar and reast is health"
+        },
+        {
+            "review_datetime_utc": "11/28/2017 01:40:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMmNQVWNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMmNQVWNREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA2cPUcQ%7CCgwImv3y0AUQwLyH5wI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Just give me the real..Real food minus the glitzy stuff"
+        },
+        {
+            "review_datetime_utc": "11/23/2017 14:28:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBaE1tdVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBaE1tdVh3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAhMmuXw%7CCgwI8LXb0AUQwLviqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I called ahead in route from Atlanta to inquire about my desired purchase. Even though it was thanksgiving eve and late the CSR was very helpful. Once I arrived things were just as she described and waiting for me. The store is well laid out and the employees are just as expected! I love Whole Foods."
+        },
+        {
+            "review_datetime_utc": "11/17/2017 07:55:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMWU2dEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMWU2dEh3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg1e6tHw%7CCgwI56u60AUQgLD1oQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Still a pretty good market! We'll see what the new owner does. So far, so good. Parking is a little tough, but I think there is an attached parking structure. We walk to this store after eating at PF Chang's, nearby."
+        },
+        {
+            "review_datetime_utc": "11/13/2017 00:25:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURReE16TUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURReE16TUJ3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQxMzMBw%7CCgsI38yj0AUQwLD6SA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Salud cooking class at this store is awesome.  I've been to several classes and all of them have been great.  The sushi class is a lot of fun, the bacon class is my all time favorite, the Valentine's classes are really good, and my favorite dish is the \"beef bourguignon a la Hassan\" in the class based on the movie \"The Hundred-Foot Journey\"."
+        },
+        {
+            "review_datetime_utc": "11/06/2017 16:52:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNnFfODVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNnFfODVnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ6q_85gE%7CCgsIsqaC0AUQwOnXdw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Helpful friendly staff."
+        },
+        {
+            "review_datetime_utc": "10/24/2017 16:48:53",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3Ny1uYVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3Ny1uYVFREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw7-naQQ%7CCgwI9d29zwUQwKLHmgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very helpful staff. Great products,"
+        },
+        {
+            "review_datetime_utc": "10/20/2017 11:12:26",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnbk0tSFFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnbk0tSFFnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgnM-HQg%7CCgwImrSnzwUQwKi3-AE%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "With the recent purchase of Whole Foods by Amazon I noticed an increase in price throughout the store, some of the same brand items are $3.00 more than Walmart prices. Personally I refuse to continue to fall victim to such outlandish greed. Thanks for a lot Amazon!!"
+        },
+        {
+            "review_datetime_utc": "10/18/2017 19:50:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRMmN2TmdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRMmN2TmdnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ2cvNggE%7CCgsIi-GezwUQwJ-0fQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "their guacamole is awesome but often out of store brand foods I would stock up on like apple cinnamon waffles third trip no luck"
+        },
+        {
+            "review_datetime_utc": "10/16/2017 22:12:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnaXJ6QzdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnaXJ6QzdRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgirzC7QE%7CCgwIt92UzwUQgP2ivwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great! Buy your groceries and if you don't want to cook, there's a food and salad bar plenty of good options, then have a seat and eat it.  $8.99 per pound, so if you eat less than that, pay less. As you are in the supermarket, you can also buy your beer, wine or soda with normal prices. It's a little expensive, but it gives many options."
+        },
+        {
+            "review_datetime_utc": "10/16/2017 09:15:52",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRdU1DUEtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRdU1DUEtREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQuMCPKQ%7CCgwIyPGRzwUQgKzPvAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "amazing produce"
+        },
+        {
+            "review_datetime_utc": "10/08/2017 16:12:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcUtLcjVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcUtLcjVBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQqKKr5AE%7CCgwI_JzpzgUQgLGs0gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great store Wonderful meat counter Very expensive 😢"
+        },
+        {
+            "review_datetime_utc": "10/02/2017 13:47:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNHFMaG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNHFMaG53RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg4qLhnwE%7CCgsI14bJzgUQgOy4Cw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Check out was slow."
+        },
+        {
+            "review_datetime_utc": "10/01/2017 00:36:24",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMTViRVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMTViRVpBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA15bEZA%7CCgsIiPHAzgUQwImRHA%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "When are the prices coming down?"
+        },
+        {
+            "review_datetime_utc": "09/30/2017 21:18:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBeHJ1WXBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBeHJ1WXBRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAxruYpQE%7CCgsInZTAzgUQgLDjLQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I like WFM in Charlotte.  I travel from Columbia to shop here. The produce is fresh and fruit is much better. The store has a full meat and seafood department which gives me more choices."
+        },
+        {
+            "review_datetime_utc": "09/29/2017 21:44:29",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBaUk2S1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaUk2S1hREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAiI6KXQ%7CCgwIvf26zgUQgP_jvQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "If you're looking for half foods, this place is not the place"
+        },
+        {
+            "review_datetime_utc": "09/24/2017 15:26:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneE1YaDZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneE1YaDZ3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgxMXh6wE%7CCgwIop2fzgUQgMOO4AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the products here! Wish we had one where I live!"
+        },
+        {
+            "review_datetime_utc": "09/23/2017 16:26:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBaGVmOHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBaGVmOHdnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAhef8wgE%7CCgsI05aazgUQgJL9ew%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great salad and hot bar selection for lunch or dinner, but it's tough to get anything under $10. Smoothies are delicious and staff is friendly. Great vegan/vegetarian selection. Some bulk items have damage (pecan halves looked more like pieces). No comment on the produce. The flagship store in Austin, TX is still the best."
+        },
+        {
+            "review_datetime_utc": "09/21/2017 20:13:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbThlSnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbThlSnVnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQm8eJugE%7CCgsI0LqQzgUQwOipQQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Exceptional service by every employee I encountered. Great price on SOME stuff. Can't wait to see the changes after Amazon finishes tweaking!"
+        },
+        {
+            "review_datetime_utc": "09/16/2017 16:57:14",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNllqcUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNllqcUdBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA6YjqGA%7CCgwI6q_1zQUQgKrzzwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It was great"
+        },
+        {
+            "review_datetime_utc": "09/14/2017 18:10:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBejdxUkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBejdxUkZBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAz7qRFA%7CCgoIqozrzQUQgIl6%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Wonderful store!"
+        },
+        {
+            "review_datetime_utc": "09/10/2017 16:23:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBX2JMSlZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBX2JMSlZREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA_bLJVQ%7CCgwIiM7VzQUQwLS7nAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love the variety of produce to make my vegetarian dishes.  Note to those making dishes that you need less than some canned veggies such as artichokes hearts, go to the fresh salad bar to get what you need. Waste not want not."
+        },
+        {
+            "review_datetime_utc": "09/07/2017 15:33:13",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncnZmVTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncnZmVTNRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgrvfU3QE%7CCgwIuc3FzQUQgODP1QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the Homeschool cooking class! Very clean and everyone is polite."
+        },
+        {
+            "review_datetime_utc": "09/07/2017 05:16:34",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnc01PUzZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnc01PUzZnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgsMOS6gE%7CCgwIsqzDzQUQwLviqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this grocery store! The salad bar, gelato, coffee bar, and hot foods area is great if you want to meet a friend for lunch or dinner and/or need a casual place for a business meal. The mammoth coffee (their version of \"bulletproof\") - soooo good! And I'm excited to see what Amazon's merger will do with the pricing structure... maybe it's the end of \"whole paycheck\"."
+        },
+        {
+            "review_datetime_utc": "08/26/2017 13:46:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnM0lHNjVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnM0lHNjVnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg3IG65gE%7CCgwItveFzQUQwIybvwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great lunch with a wide variety of things to eat."
+        },
+        {
+            "review_datetime_utc": "08/26/2017 03:15:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMmVhd3VnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMmVhd3VnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg2eawugE%7CCgsIvs-DzQUQgL_WBg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place for gluten free stuff, but it's pricey."
+        },
+        {
+            "review_datetime_utc": "08/25/2017 03:37:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURncU5tMGp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURncU5tMGp3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgqNm0jwE%7CCgwIkrf-zAUQwImjkAI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "We went there for the wild caught fresh salmon, they don't have any! And worst, they don't even have any fresh. wild caught, FISH! Is this still Whole Foods?"
+        },
+        {
+            "review_datetime_utc": "08/23/2017 22:46:45",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMG92QzF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMG92QzF3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg0ovC1wE%7CCgsI1Yv4zAUQwI23AQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "They have great fruits and produce, but I wish they had a larger vegan selection!"
+        },
+        {
+            "review_datetime_utc": "08/14/2017 19:41:20",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRcHVTSUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRcHVTSUVnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQpuSIEg%7CCgsI4PnHzAUQwKeASA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Everything organic!"
+        },
+        {
+            "review_datetime_utc": "08/08/2017 15:17:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBbjYyYzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBbjYyYzhnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAn62c8gE%7CCgwI_qunzAUQwOnp6wI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Too expensive"
+        },
+        {
+            "review_datetime_utc": "08/03/2017 21:46:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURncXI2VVJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURncXI2VVJBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgqr6URA%7CCgwIx7OOzAUQgPz0iAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "OMG, This place is awesome! Go to experience it."
+        },
+        {
+            "review_datetime_utc": "07/28/2017 23:50:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbnM3YzFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbnM3YzFnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgns7c1gE%7CCgwI3JvvywUQwIfQnQI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Overpriced"
+        },
+        {
+            "review_datetime_utc": "07/27/2017 12:49:43",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3ek1uQW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3ek1uQW13RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwzMnAmwE%7CCgsI58LnywUQgMvRMA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very good layout. Everything looks so fresh and neatly placed."
+        },
+        {
+            "review_datetime_utc": "07/24/2017 10:32:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBbzZmbGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBbzZmbGd3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAo6flgwE%7CCgwIypnXywUQgLqm0wM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "There was a great selection"
+        },
+        {
+            "review_datetime_utc": "07/23/2017 06:07:45",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBN3VueUR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBN3VueUR3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA7unyDw%7CCgwIsfrQywUQwOLC3QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Terrific thanks"
+        },
+        {
+            "review_datetime_utc": "07/22/2017 23:20:32",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBbXVTal93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBbXVTal93RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAmuSj_wE%7CCgwIwLvPywUQgOT1ugE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very clean and smells great."
+        },
+        {
+            "review_datetime_utc": "07/21/2017 22:04:07",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbTVLMUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbTVLMUdnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAm5K1Gg%7CCgwI1_TJywUQgMOg1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Free wine sample was great thank you"
+        },
+        {
+            "review_datetime_utc": "07/20/2017 18:18:55",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRemJUMFhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRemJUMFhREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQzbT0XQ%7CCgsIj-jDywUQgLGRZA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the food here and great service"
+        },
+        {
+            "review_datetime_utc": "07/20/2017 01:23:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNROVBmZnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROVBmZnFnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ9PffqgE%7CCgsIi4zAywUQgMOFZg%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great place. Weak vegan options in bakery section."
+        },
+        {
+            "review_datetime_utc": "07/14/2017 21:31:22",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBb2FtTWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBb2FtTWtRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAoamMkQE%7CCgsIqvCkywUQgKToAw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Clean shopping is great, but the fact that there's a legend used to purchase poultry is confusing... at this price point, shouldn't the only quality level be, ”high?\""
+        },
+        {
+            "review_datetime_utc": "07/11/2017 23:41:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnOWMzdG5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnOWMzdG5BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg9c3tnAE%7CCgwInsSVywUQwJnNmQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really good place and so far have found everything that I needed."
+        },
+        {
+            "review_datetime_utc": "07/09/2017 19:47:39",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3Mk15UkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3Mk15UkZ3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw2MyRFw%7CCgsI25CKywUQwLqZBg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My fight against cancer requires organic foods. Whole Foods has everything I need to build a healthy diet."
+        },
+        {
+            "review_datetime_utc": "07/07/2017 14:26:38",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBOGRDbHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBOGRDbHBnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA8dClpgE%7CCgwInrT-ygUQgNmoxwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I had the opportunity to eat here and the mediterranean burger was FANTASTIC.  The fries were even better.  They know how to make a fresh cut fry, for sure!"
+        },
+        {
+            "review_datetime_utc": "07/06/2017 18:57:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNXAtc1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNXAtc1NBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA5p-sSA%7CCgwIpJD6ygUQgJKP8AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Can grab a beer and drink while you shop, can't beat it! I just wish they would open 30mins earlier for breakfast."
+        },
+        {
+            "review_datetime_utc": "07/04/2017 21:08:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbU1QUk1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbU1QUk1nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgmMPRMg%7CCgwI64fwygUQwKGZ5AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent source for fresh veggies."
+        },
+        {
+            "review_datetime_utc": "07/04/2017 15:10:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndWZxdzBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndWZxdzBRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgufqw0QE%7CCgsIzd_uygUQwMmVWQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very helpful and friendly staff."
+        },
+        {
+            "review_datetime_utc": "07/03/2017 16:22:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMWRhN05nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMWRhN05nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA1da7Ng%7CCgwIx97pygUQgM22lwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Everyone is so helpful! Love the variety too."
+        },
+        {
+            "review_datetime_utc": "07/03/2017 13:43:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbjRPS21BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbjRPS21BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQn4OKmAE%7CCgwI9JPpygUQgMya1QM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great choices"
+        },
+        {
+            "review_datetime_utc": "07/01/2017 20:16:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNneE96bFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNneE96bFp3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgxOzlZw%7CCgwIjYbgygUQgOitlAM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Your basic Whole Foods, parking is weird"
+        },
+        {
+            "review_datetime_utc": "06/30/2017 10:46:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMjRHSEZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMjRHSEZBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA24GHFA%7CCgwIkdjYygUQgJ3c4wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great variety, health related choices"
+        },
+        {
+            "review_datetime_utc": "06/27/2017 14:35:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNjdTR0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNjdTR0l3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg67SGIw%7CCgsIx9rJygUQgNOmdQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I love whole foods the quality and taste of the food is fantastic . I can only get a few thing at a time because the price of the food in this store is too expensive. The goal to me for this company should be to help the world eat better not just the select few that can afford it. Try to make it affortable for everyone. The Pizza,s are #1"
+        },
+        {
+            "review_datetime_utc": "06/26/2017 04:20:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBMkw2Vjh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBMkw2Vjh3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA2L6V8wE%7CCgwIlZfCygUQwL2jqQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "GREAT ☆ except! absolutely ☆ NO Pens to mark SKU #s on measured out bulk items☆ Need markers for plastic bags, which I used for small goods and to keep fresher. Another costumer commented about same - never any pens to mark code # of item for check out person (holds up checking out because has to look up each item's SKU # and, therefore, the line of customers."
+        },
+        {
+            "review_datetime_utc": "06/26/2017 02:14:25",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaWR1dFdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaWR1dFdBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQidutWA%7CCgwIgdzBygUQwLSyogI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Expensive place to shop. All items are overpriced, but they do have better quality foods and items. The burger is beyond excellent."
+        },
+        {
+            "review_datetime_utc": "06/25/2017 13:31:27",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRd0pHMlBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRd0pHMlBnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQwJG2Pg%7CCgwIr_a-ygUQwKSRkwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Whole foods"
+        },
+        {
+            "review_datetime_utc": "06/24/2017 18:18:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdkxQSU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdkxQSU53EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAvLPINw%7CCgwI6dm6ygUQgKPVuwI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great stuff, great food bar, but it's pretty crowded."
+        },
+        {
+            "review_datetime_utc": "06/23/2017 10:06:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBeGFtWE1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBeGFtWE1nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAxamXMg%7CCgwIjNCzygUQwNDO2wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Clean,  fresh,  great location"
+        },
+        {
+            "review_datetime_utc": "06/14/2017 18:01:26",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBX0tXZm9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBX0tXZm9BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA_KWfoAE%7CCgwI9vOFygUQgP7H-wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best market in charlotte"
+        },
+        {
+            "review_datetime_utc": "06/13/2017 18:59:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3ejRDaXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3ejRDaXR3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwz4CitwE%7CCgsIheyAygUQwKumLQ%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great grocery shopping for Organics."
+        },
+        {
+            "review_datetime_utc": "06/09/2017 19:45:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNTd6cFBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNTd6cFBBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA57zpPA%7CCgwI2_XryQUQwIfHowE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "High quality products. Lots of specialty items I can't get in a mainstream grocery store."
+        },
+        {
+            "review_datetime_utc": "06/08/2017 01:47:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBbTUzMnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBbTUzMnhRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAm532xQE%7CCgwIqdniyQUQgMXqzAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome Organic Products, The Best Milk Ever!!! (AtlantaFresh Creamtop) !!!"
+        },
+        {
+            "review_datetime_utc": "06/06/2017 01:29:35",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnMzYzTEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnMzYzTEl3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg363LIw%7CCgwI_4rYyQUQgJ6KmgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love the variety, prices, everything!"
+        },
+        {
+            "review_datetime_utc": "06/05/2017 16:31:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRazhiVUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRazhiVUdREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQk8bUGQ%7CCgwI6I7WyQUQgKip1wI%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Way too overpriced.  Quality shouldn't cost this much."
+        },
+        {
+            "review_datetime_utc": "05/28/2017 16:42:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMDdhT19nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMDdhT19nRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg07aO_gE%7CCgwI5PuryQUQgOzK_wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I go here for the hot bar. The food is delicious. Staff is friendly."
+        },
+        {
+            "review_datetime_utc": "05/25/2017 21:45:23",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3aXYzeVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3aXYzeVd3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwiv3yWw%7CCgwI86CdyQUQwO_rvQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Salad Bar is Amazing!!! They serve Guacamole with it....What more needs to be said."
+        },
+        {
+            "review_datetime_utc": "05/09/2017 03:37:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNXZ5VklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNXZ5VklnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg5vyVIg%7CCgwI-PLEyAUQgL2eggM%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "I visit this store often and I like the products but tonight I had an experience with the front end manager. She was rude and made rude comments about the pricing on a product I inquired about. I believe she is a newly hired employee who may need more training on customer service."
+        },
+        {
+            "review_datetime_utc": "05/07/2017 21:30:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRazhEMDZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRazhEMDZRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQk8D06QE%7CCgwIkKS-yAUQgMvaqgE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Too pricey. Get the same thing for less at Lucky Market"
+        },
+        {
+            "review_datetime_utc": "04/29/2017 02:44:02",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBZ09YN0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBZ09YN0l3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAgOX7Iw%7CCgwI8vuPyAUQgLGs0gM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Top notch! They have an awesome bar too"
+        },
+        {
+            "review_datetime_utc": "04/10/2017 19:29:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRejZlLWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRejZlLWVBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQz6e-eA%7CCgsIrrqvxwUQgJ-dYg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Really nice Whole Foods. Nice assortment of prepared foods and natural/organic choices."
+        },
+        {
+            "review_datetime_utc": "04/09/2017 21:38:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVb3RHbE1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVb3RHbE1REAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICUotGlMQ%7CCgwIsLPU6QUQw97EqwI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Organic food"
+        },
+        {
+            "review_datetime_utc": "04/09/2017 04:19:37",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBbGZULXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBbGZULXZ3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAlfT-vwE%7CCgsI2eymxwUQgJTQbg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "My favorite part from this WF is the bakery. This is the only place where I get our cakes. Great quality, well priced, delicious and they're very accommodating. Everyone loved this cake I got last month from there for my daughter's birthday. Not overly sweet and they even had a matching vegan cupcake for my girl who can't have dairy."
+        },
+        {
+            "review_datetime_utc": "04/08/2017 20:56:47",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRMktpN3J3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRMktpN3J3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ2Ki7rwE%7CCgwIj52lxwUQwOPnmQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Whole Foods!! We go there every week to shop for groceries. We really love there pizza( it is delicious )and the salads( very good also )!!! Thank you so much!!!"
+        },
+        {
+            "review_datetime_utc": "04/06/2017 04:39:40",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3X1lIV3FBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3X1lIV3FBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw_YHWqAE%7CCgsIjI2XxwUQwJ3YEA%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "This place isn't what it's cracked up to be and the cashiers and almost everyone working here gave me the worst experience I can imagine. They were rude and unfriendly to me, one cashier even went as far to say, be\"oh man I almost missed the ugly guy\". (They picked on me about how I looked  it guess due to me being a minority ...?) The girl who worked in the cafe also stared at me as if I was from outer space and it made me so awkward I couldn't even speak. The women working in the hot bar were laughing at me and insulting me as I passed them. This was my FIRST time coming here and I never even knew what it was , so I had checked it out... These people are bullies. And to top this disgusting customer service off, it's really expensive. Spending $36+ just to be laughed at and mistreated ?  I'm surprised nobody else has that problem with the store. But I guess it's their neighborhood grocery store so it's normal. I'm just not saying it's the worst because after all, it did look pretty nice and had a lot to offer but the customer service from the entire staff was even uglier and the rudest I've experienced just like mostly anywhere."
+        },
+        {
+            "review_datetime_utc": "04/04/2017 20:55:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRaEpURFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRaEpURFRBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQhJTDTA%7CCgwIqZCQxwUQgIXmjwI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "I have Dietary Restrictions and a Granddaughter with Severe Allergies so I was thrilled to find this store 7 years ago, though it's a  25 minute trek from Fort Mill. I moved from Orlando and they have Specialty Stores everywhere but not here, so thought this would be great. Well, it was great for several years, bright intelligent Employees, Everything in stock, and a place you could just count on. Not now, something has changed in the last year. Four months ago I went in and the Escalator was broken, no biggie, I like to walk.  Then two weeks ago went in and wanted to buy a no Nitrate Ham, they usually have them out in the End Caps, nothing. Went Back today nothing, and it's 11 days until Easter. The guy was nice enough to go get me one from the Back, but I suspect that was the only one they had. Then when I came in the store, it was quite dead, I had a tiny cart with my stuff in it and my Purse it was out of the way. I was grabbing some lettuce. Some jerk Employee I have never seen before just shoved my cart out of the way, No need to do that just being an Ass. He kicked it 10 foot away. with my purse and everything in it. Again they were not crowded. He just wanted to be an Ass.  The Bright  Lovely employees were mostly gone and what I saw reminded me so much of Walmart. The Employees walking around had a thuggish  Look just like wallyworld. I saw a few of the regulars, but that was it. The produce was gross and the Nut grinders had one out of order.  This is the only store that carries Lactose free Yogurt in a 100 mile Radius and they only had 4 left I could go on and on, but won't. I'm sad, not sure what has happened in the last Year, or less than a year but it's certainly changed. I go into Whole Foods for Upper end foods, and quality people. I don't mind rude employees, but you just don't touch people's personal items and act like a Thug. I won't go back for a year, will try again in a year. In the meantime will look for something with a lot more Quality."
+        },
+        {
+            "review_datetime_utc": "04/02/2017 22:45:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cnRxVGh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cnRxVGh3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwrtqThwE%7CCgwIpP6FxwUQwJH41AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This place is packed with healthy/beautiful products."
+        },
+        {
+            "review_datetime_utc": "04/02/2017 03:12:10",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRLXMtdDFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRLXMtdDFnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ-s-t1gE%7CCgwIitiBxwUQwMOcgQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love shopping at Whole Foods! Great selection of products."
+        },
+        {
+            "review_datetime_utc": "03/23/2017 15:33:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbmI3b0lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbmI3b0lBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQnb7oIA%7CCgwIsdXPxgUQgNWC4gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love this Whole Foods because of the Queen's Corner bar and tasting loft it has. You wouldn't think that a grocery store is a cool place to hangout, but this Whole Foods is a staple for many. The drinks are inexpensive as you can grab any bottle of wine or beer and open it up in store for no extra charge. Even better is that you can grab a cheese plate to go with your drinks or something from their hot bar. You can also get things made to order like a burger or sandwich. Besides the bar and tasting loft, there is also a nice outdoor patio on the second floor that offers a nice relaxed place to eat.  As a grocery store it is very clean, organized, and has high quality products. For daily shopping I find it to be too expensive and would really only shop there to get specialty items like vegan or vegetarian supplements. The wine and beer selection is decent, but other stores have a bigger selection. The staff has always been friendly and helpful which I appreciate. The bar keep is always on point too which helps."
+        },
+        {
+            "review_datetime_utc": "03/23/2017 12:07:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3b3ZhYzVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3b3ZhYzVRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwovac5QE%7CCgwI7PTOxgUQgLelqgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great buffet - fresh salad buffet - hot food buffet - hand made sandwiches, fresh pizza, hot coffee bar, perfect place for lunch in South Park"
+        },
+        {
+            "review_datetime_utc": "03/21/2017 16:59:41",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURndzgyV1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURndzgyV1F3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgw82WQw%7CCgwI_bfFxgUQgJ74pQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Having a mimosa while shopping is dangerous and excellent. But love the products and staff is always friendly!"
+        },
+        {
+            "review_datetime_utc": "03/19/2017 04:43:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbXZlZm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbXZlZm9RRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQmvefoQE%7CCgwIipm4xgUQwPLj7AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love it!"
+        },
+        {
+            "review_datetime_utc": "03/15/2017 14:39:17",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcVBQT3BnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcVBQT3BnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQqPPOpgE%7CCgwIlaSlxgUQwPeujgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best place to grocery shop grab a bite and charge your Electric car!"
+        },
+        {
+            "review_datetime_utc": "03/13/2017 01:46:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcXVucHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcXVucHBRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQqunppQE%7CCgsI9vOXxgUQwPXJJw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Hygenic and clean store. Highly recommended store for buying fruits and vegetables."
+        },
+        {
+            "review_datetime_utc": "03/11/2017 00:13:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBaGZyUmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBaGZyUmhRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAhfrRhQE%7CCgsIlIKNxgUQwM7pdA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "4 outta 5 ain't bad!  1. Went for ground lamb; none available and no prediction. \"Might have some on Thursday. Probably will. But possibly not.\" (-) 2. \"Tomato Paste? Sure, next aisle over; here, follow me!\" (+) 3.  Sensing urgency:  \"Restroom? Yes, to the end that way,\" (pointing) \"and first door on the left.\" AND it was clean. (+) 4.  Cashier with mobility disability; how wonderful that she was not  denied the opportunity! (+) 5.  The two bottles of $3.99 store brand wine (Three Wishes?) were reasonably decent. 6.  The escalator made for shopping carts is the bomb & allows for clever use of valuable urban land."
+        },
+        {
+            "review_datetime_utc": "03/10/2017 21:21:11",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnaWJDN0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnaWJDN0NREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgibC7CQ%7CCgwIx7GMxgUQwMrDjwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love Your Body!!!"
+        },
+        {
+            "review_datetime_utc": "03/09/2017 22:30:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbWJUQ2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbWJUQ2RBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgmbTCdA%7CCgsI_q6HxgUQgLK2IA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Reasonable priced goods, plenty of parking. Even a small pub inside."
+        },
+        {
+            "review_datetime_utc": "03/07/2017 23:51:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbnZXcVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbnZXcVd3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQnvWqWw%7CCgwIho_9xQUQwJ3qhAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Clean, organized, and well stocked. Great selection of hot food items"
+        },
+        {
+            "review_datetime_utc": "03/03/2017 22:15:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBZ3ZYeElnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBZ3ZYeElnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAgvXxIg%7CCgsI7NXnxQUQgOO-Cg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The most packed Whole Foods I've ever been in.   Nice store."
+        },
+        {
+            "review_datetime_utc": "03/01/2017 00:23:05",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRc2JHd2VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRc2JHd2VREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQsbGweQ%7CCgsI6ajYxQUQgPK6XQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awesome selection"
+        },
+        {
+            "review_datetime_utc": "02/27/2017 19:17:03",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnazlQaVdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnazlQaVdREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgk9PiWQ%7CCgwIr_bRxQUQwJiW6QE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "First time visiting a Whole Foods store and I like it. Fresh produce and friendly staff. Nice atmosphere."
+        },
+        {
+            "review_datetime_utc": "02/27/2017 16:35:51",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdnFHOWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdnFHOWpBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQvqG9jAE%7CCgsI56rRxQUQgOftaQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I recently married, and for our reception, we ordered the meal from Whole Foods. The food was AMAZING! But the biggest reason for posting this review is to give 5 stars to the staff as well. I primarily worked with Maddie, and she was so patient and helpful. We met in person initially, and I was able to taste test a few options. The staff there that day was such a pleasure to work with! I wish I had their names to give them kudos as well! But shortly after our initial meet and greet, all of my communication with Maddie was by email. She replied so quickly to every concern I had. She offered suggestions and made creating the perfect meal smooth and simple. I can't tell you how much a bride needs smooth and simple in preparing for her big day! So thank you to Whole Foods, the catering department, and Maddie. You made my \"Best Day Ever\" even better!!"
+        },
+        {
+            "review_datetime_utc": "02/27/2017 03:12:40",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3dGRTdVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3dGRTdVNnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwtdSuSg%7CCgsIqLLOxQUQgOuTTw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "High quality food, great selection, and always friendly staff"
+        },
+        {
+            "review_datetime_utc": "02/26/2017 06:06:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRNzczOGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRNzczOGlnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ7738igE%7CCgwI1ODJxQUQgI7XlgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "It's Whole Foods. This is a \"supplemental\" store for me as the prices are a little on the higher side--but they do have a nice selection of most things. In some cases if you can't find it other places---you might just find it here."
+        },
+        {
+            "review_datetime_utc": "02/24/2017 04:00:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBemNDSjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBemNDSjJRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAzcCJ2QE%7CCgwI-9--xQUQgI7gkAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Place is amazing!!!!!"
+        },
+        {
+            "review_datetime_utc": "02/23/2017 17:19:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMkk3Q0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMkk3Q0p3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ2I7CJw%7CCgwIk7O8xQUQwI-u3AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great hot bar! They have a great selection of wine & cheese."
+        },
+        {
+            "review_datetime_utc": "02/20/2017 18:42:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbmRUMk53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbmRUMk53EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQndT2Nw%7CCgwIgvGsxQUQwJzOwgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love this store! Employees are always friendly and the fresh food is delicious. I like to get a coffee or lunch and sit on the veranda upstairs! Bulk bins are a bit messy, but they usually have what we need."
+        },
+        {
+            "review_datetime_utc": "02/20/2017 00:51:13",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOHVxLVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOHVxLVBnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg8uq-Pg%7CCgwIgfuoxQUQwLvZsAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to shop and dine!"
+        },
+        {
+            "review_datetime_utc": "02/17/2017 03:40:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3aV9pVWR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3aV9pVWR3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwi_iUdw%7CCgwIyeGZxQUQgMmQsgI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Awsome healthy food can't put a price on healthy food. Never have to waite in line. Big variety of food love the cookies."
+        },
+        {
+            "review_datetime_utc": "02/08/2017 13:55:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBM19PQWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBM19PQWV3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA3_OAew%7CCgsIw8bsxAUQwITGeg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This whole foods is huge on the inside. There are many options for food here as well as great dining in options"
+        },
+        {
+            "review_datetime_utc": "02/08/2017 13:29:58",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRM0kyQXhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRM0kyQXhBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ3I2AxAE%7CCgwI1rrsxAUQgK_H6wE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Has great produce section. All you could ask for from a upscale grocery store.  Eat in/take out  hot bar that's great!"
+        },
+        {
+            "review_datetime_utc": "02/08/2017 05:31:19",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRal9xYU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRal9xYU13EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQj_qaMw%7CCgsIp9rqxAUQwLjGEw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The breakfast bar is great and they have the best tasting bacon and breakfast potatoes. Very nice and clean store"
+        },
+        {
+            "review_datetime_utc": "02/06/2017 20:19:08",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneXVEOTN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneXVEOTN3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgyuD93wE%7CCgwIvLTjxAUQgNanngE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The hot bar was good. Didn't try anything else."
+        },
+        {
+            "review_datetime_utc": "02/06/2017 15:51:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURneGVmTE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURneGVmTE9nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgxefLOg%7CCgsI9bbixAUQgI7OHA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Best Roasted chicken and Baguettes. I love the seating area. Kids enjoy it and it beats fast food.."
+        },
+        {
+            "review_datetime_utc": "02/05/2017 05:48:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bXVEclhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bXVEclhnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwmuDrXg%7CCgwIkfnaxAUQgO_CrgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Excellent customer service!!!!"
+        },
+        {
+            "review_datetime_utc": "02/02/2017 12:49:17",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOF9hREJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOF9hREJnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg8_aDBg%7CCgwIzdXMxAUQgKfypgE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "So for a whole foods, I guess this is a good one....but for a grocery store it's not all that great for everyday needs. If you are on a restricted diet due to allergies or health reasons, then it's worth checking out. Whole foods is expensive. No way of getting around that fact. If I want to pay a little more for groceries I'll go to Harris Teeter."
+        },
+        {
+            "review_datetime_utc": "02/02/2017 10:26:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3NHBlU2RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3NHBlU2RREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw4peSdQ%7CCgwIx5LMxAUQwLb8mgE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "The parking lot here reminded me of NY city traffic, full of \"privileged\" jerks willing to leave a line of cars out onto the main road to wait for a spot. Inside, it's  very attractive location with a good selection. Prices are a bit steep."
+        },
+        {
+            "review_datetime_utc": "01/30/2017 23:29:31",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBM3BXZlBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBM3BXZlBREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA3pWfPQ%7CCgsI25i_xAUQwNO0Fg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Typical whole foods located in Charlotte, NC. Slightly expensive, but generally on trend for the area and Whole foods. There is parking located in the lower deck as well."
+        },
+        {
+            "review_datetime_utc": "01/29/2017 22:06:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdzZ5R1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdzZ5R1NBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAw6yGSA%7CCgwI7M65xAUQgMaGjwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's a clean and well organized store and it's clear that the company is health and environmentally conscious."
+        },
+        {
+            "review_datetime_utc": "01/29/2017 18:15:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBLUp1aGFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBLUp1aGFnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA-Juhag%7CCgwIpOK4xAUQgJHhuQI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Parking lot is crazy, so beware! Staff is great, and they have many good hot good options."
+        },
+        {
+            "review_datetime_utc": "01/26/2017 05:18:28",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBb2RuMVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBb2RuMVpnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAodn1Zg%7CCgsIpI2mxAUQgJvuAg%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best grocery store in Charlotte"
+        },
+        {
+            "review_datetime_utc": "01/25/2017 15:58:49",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnOXZqU3dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnOXZqU3dRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg9vjSwQE%7CCgwIuZajxAUQgN6F3QI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great store.  Staff helpful but not exactly friendly.  Very expensive but great selection. Parking is awful!"
+        },
+        {
+            "review_datetime_utc": "01/25/2017 12:30:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3LU1INW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3LU1INW9nRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw-MH5ogE%7CCgwIy7SixAUQwPG1tgI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Not my favorite whole foods but it has what i need"
+        },
+        {
+            "review_datetime_utc": "01/25/2017 02:51:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBNWRfTTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNWRfTTVBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA5d_M5AE%7CCgwIpqWgxAUQgIaLzAE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Very good selection of healthy foods. On expensive side."
+        },
+        {
+            "review_datetime_utc": "01/23/2017 17:42:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBcTZLX2R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBcTZLX2R3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAq6K_dw%7CCgwI94CZxAUQgPjFqQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best in the business selling organic and Wholesome foods"
+        },
+        {
+            "review_datetime_utc": "01/23/2017 13:20:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbjZYaGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbjZYaGpBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgn6XhjAE%7CCgsIk4aYxAUQwN-vQA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "It is a busy store and parking can be annoying, but that is par for the course with Whole Foods. Good options and haven't had any issues in the times I have been there"
+        },
+        {
+            "review_datetime_utc": "01/19/2017 14:28:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3LTc3b3BRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3LTc3b3BRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw-77opQE%7CCgwI9ZmDxAUQwOzqlAM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I loved Whole Foods when I lived in Austin shortly after the original opened.  This store is nice, but have always been disappointed that they don't carry bulk herbs and spices like they do in Austin.  I make my own spice blends, and would have been awesome to have a place right by my house to get them."
+        },
+        {
+            "review_datetime_utc": "01/17/2017 19:26:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncDUyYXJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncDUyYXJnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgp52argE%7CCgwI-t_5wwUQgJHhuQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "(Translated by Google) Said to be good food  (Original) 据说是不错的食品"
+        },
+        {
+            "review_datetime_utc": "01/15/2017 13:26:57",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndnFmUm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndnFmUm1RRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgvqfRmQE%7CCgwIofHtwwUQgKf7oAI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Need more stores in Charlotte, NC...Harris Teeters is not cutting it for me. Nice store butt not Whole Foods"
+        },
+        {
+            "review_datetime_utc": "01/13/2017 05:39:54",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRN0lERWh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRN0lERWh3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ7IDEhwE%7CCgsIqtDhwwUQgJv3fA%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "A decent selection of food and well laid out. Great return policy! Slightly expensive though"
+        },
+        {
+            "review_datetime_utc": "01/11/2017 13:58:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBX2RDcktBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBX2RDcktBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA_dCrKA%7CCgwI8PPYwwUQgKiy0QM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Good variety"
+        },
+        {
+            "review_datetime_utc": "01/11/2017 13:13:10",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURReVotZEJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURReVotZEJ3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQyZ-dBw%7CCgwI5t7YwwUQwODm8AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Good wine bar too"
+        },
+        {
+            "review_datetime_utc": "01/07/2017 04:27:12",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRczhxT1p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRczhxT1p3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQs8qOZw%7CCgsIoNzBwwUQgMSqIg%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Contrived caucasian mecca of self indulgent foodie worship."
+        },
+        {
+            "review_datetime_utc": "01/06/2017 22:17:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRbmViMklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRbmViMklnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQneb2Ig%7CCgwI4q7AwwUQgPP6hwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Very well stocked hot and cold bars."
+        },
+        {
+            "review_datetime_utc": "01/05/2017 16:19:42",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnazRtbjJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnazRtbjJBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgk4mn2AE%7CCgwInuS5wwUQwIL8gQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Charlotte's whole foods is crisp clean and carries everything non GMO and organic I need"
+        },
+        {
+            "review_datetime_utc": "01/04/2017 19:07:30",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMWF2T0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMWF2T0p3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg1avOJw%7CCgwI8o-1wwUQwIHXxQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place for a quick meal"
+        },
+        {
+            "review_datetime_utc": "01/03/2017 09:03:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncWVyYU1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncWVyYU1nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgqeraMg%7CCgwI_9GtwwUQgJuA9wE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great choices, prices are dropping to make it affordable."
+        },
+        {
+            "review_datetime_utc": "12/30/2016 21:17:47",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBeUxyNE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeUxyNE1BEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAyLr4MA%7CCgwI-52bwwUQgOWs6wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Lil expensive"
+        },
+        {
+            "review_datetime_utc": "12/25/2016 02:14:49",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3OHJUSEd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3OHJUSEd3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw8rTHGw%7CCgwImdf8wgUQwLyH5wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Big whole foods with excellent beer and prepares food sections"
+        },
+        {
+            "review_datetime_utc": "12/23/2016 19:52:59",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnLXJDVzJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnLXJDVzJ3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg-rCW2wE%7CCgwIm4H2wgUQgOeI2AM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Always a great selection of hot foods for dinner and lunch! Although I wish they would make better efforts to source locally, they do a better job than most."
+        },
+        {
+            "review_datetime_utc": "12/22/2016 14:46:39",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnZ2FxQXN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnZ2FxQXN3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICggaqAswE%7CCgwIz87vwgUQgOzBhQE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Lots of house brand organics and humanely raised meats."
+        },
+        {
+            "review_datetime_utc": "12/17/2016 04:14:03",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNncGRlZHZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncGRlZHZ3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgpdedvwE%7CCgwIi_fSwgUQwIKF_AI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Reliable and friendly"
+        },
+        {
+            "review_datetime_utc": "12/17/2016 02:54:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBeHF1cGt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBeHF1cGt3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAxqupkwE%7CCgsI29HSwgUQwN3cTQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Best grocery store around that sells organic and specialty foods."
+        },
+        {
+            "review_datetime_utc": "12/16/2016 13:49:38",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bEpMR01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bEpMR01BEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwlJLGMA%7CCgwI8uHPwgUQgM7b0wE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Parking is a nightmare"
+        },
+        {
+            "review_datetime_utc": "12/13/2016 16:44:08",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRanVIWGZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRanVIWGZREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQjuHXfQ%7CCgwI2MrAwgUQwJTniQE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Four words - fresh ground almond butter!!  Yum!"
+        },
+        {
+            "review_datetime_utc": "12/10/2016 11:36:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3d2RQQVdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3d2RQQVdREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwwdPAWQ%7CCgwI0tGvwgUQgMvaqgE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Here once weeks ."
+        },
+        {
+            "review_datetime_utc": "12/09/2016 12:17:18",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRM3F5eGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRM3F5eGpRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ3qyxjQE%7CCgsIzsGqwgUQwOSDXA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Burgers are awesome.  Lots of variety.  Good single beer selection."
+        },
+        {
+            "review_datetime_utc": "12/07/2016 19:16:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRdTdMTm9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRdTdMTm9BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQu7LNoAE%7CCgwIhcChwgUQgOPHhAE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Beautiful this has been the largest Whole Foods I have ever visited!"
+        },
+        {
+            "review_datetime_utc": "12/07/2016 15:58:12",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRekk2SGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRekk2SGpRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQzI6HjQE%7CCgwIlOOgwgUQwN6T_gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Outstanding coffee and produce selection!"
+        },
+        {
+            "review_datetime_utc": "11/23/2016 16:58:02",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnMnM2NHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnMnM2NHhRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg2s64xQE%7CCgsImpXXwQUQwNC8Zw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great selection and friendly staff. I love this store."
+        },
+        {
+            "review_datetime_utc": "11/22/2016 13:07:50",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBcW9QeDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBcW9QeDVnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAqoPx5gE%7CCgsIpobRwQUQwOr8Mw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Quality products mostly organic. Very friendly staff. They give paper bags which can be recycled. Wide variety! Though high in the price point , it's pretty much justified ."
+        },
+        {
+            "review_datetime_utc": "11/10/2016 17:08:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBaHZ1QnVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBaHZ1QnVRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAhvuBuQE%7CCgwIk9OSwQUQgOWs6wI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I love Whole Foods! The atmosphere is so nice for a grocery store. The food is so tasty and fresh!"
+        },
+        {
+            "review_datetime_utc": "11/01/2016 03:15:57",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBckluMGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBckluMGZBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICArIn0fA%7CCgwI7ZHgwAUQgNm6uwM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Meh, I'm not crunchy enough to get excited about Whole Foods.  Parking here is a bit of a nightmare, the produce is the same as every other grocery store around."
+        },
+        {
+            "review_datetime_utc": "10/13/2016 22:36:30",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMHJubjFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMHJubjFBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg0rnn1AE%7CCgsI7piAwAUQwJrgYQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The best grocery store in the US! Love it"
+        },
+        {
+            "review_datetime_utc": "10/10/2016 01:02:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURReV9hdVFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURReV9hdVFBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQy_auQA%7CCgwIqdHrvwUQgOnJ1gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great hot and salad bars , all registers are working when it's busy , love this place"
+        },
+        {
+            "review_datetime_utc": "09/10/2016 23:01:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURReC1mdGFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURReC1mdGFnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQx-ftag%7CCgwI3qHSvgUQwKDrrQI%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great shopping experience and friendly staff! Loved visiting this Charlotte location!"
+        },
+        {
+            "review_datetime_utc": "08/29/2016 22:55:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnOHFmVzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnOHFmVzV3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg8qfW5wE%7CCgsI6PqSvgUQgJ-dYg%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Not all it Seems"
+        },
+        {
+            "review_datetime_utc": "08/22/2016 16:56:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRak1HZ01nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRak1HZ01nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQjMGgMg%7CCgwIyt3svQUQgI-XwQM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great selection at the food bar and love the beauty/cosmetics section. Also, they have this wine bar in the corner...Sip and Shop...what a great idea. The customer service and staff are friendly...overall great place to get your whole foods shopping done."
+        },
+        {
+            "review_datetime_utc": "07/24/2016 13:30:16",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBaF9QenFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBaF9QenFRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAh_PzqQE%7CCgwI6IXTvAUQgI2y2gE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Healthy store liked"
+        },
+        {
+            "review_datetime_utc": "07/23/2016 12:53:15",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBOTl6VVZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOTl6VVZnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA99zUVg%7CCgwIu9HNvAUQwJGBzwM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great spot with some unique offerings."
+        },
+        {
+            "review_datetime_utc": "07/07/2016 01:06:22",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOU55bFVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOU55bFVBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg9NylUA%7CCgwIjtb2uwUQgLu5mwE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Great food bar, love to go here for lunch. Not everything is top notch, but good for what you get. Wouldn't ever grocery shop here, way too expensive."
+        },
+        {
+            "review_datetime_utc": "06/20/2016 17:01:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaDZEVExBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaDZEVExBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQh6DTLA%7CCgwIzMKguwUQgJrktAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to shop. Also the coffee is great. check out the coffee bar."
+        },
+        {
+            "review_datetime_utc": "05/11/2016 16:28:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNneXZPMG1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNneXZPMG1RRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICgyvO0mQE%7CCgsIsbvNuQUQwL7IZQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "I like their ice cream"
+        },
+        {
+            "review_datetime_utc": "04/19/2016 22:55:21",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OXB5czhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OXB5czhBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw9pys8AE%7CCgwI2e7auAUQgMTFkAM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Absolutely wonderful. If they weren't around when I was diagnosed with celiac disease (I was in college at the time) i might have starved. Every Whole Foods I have ever been to has very knowledgeable staff and a great selection for me."
+        },
+        {
+            "review_datetime_utc": "03/30/2016 21:23:56",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MnF2TWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MnF2TWpBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw2qvMjAE%7CCgsI7IfxtwUQgOHrFw%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Very little vegetarian option in the cold case, as expensive as usual, i give 3 instead of 2 bc they did have samples out but thats pretty par at 4pm any day friendly staff typical whole foods nothing noticlebly too snazzy, ph filtered water would make this place 4 stars for me."
+        },
+        {
+            "review_datetime_utc": "03/21/2016 02:37:05",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBaHFYdnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBaHFYdnVnRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAhqXvugE%7CCgwI0by9twUQwPz5rwE%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Over priced groceries. The cheese selection is OK. The whole place has a strange odor about it. Can't quite place it.  Sorta smells like a hippie commune on Sunday morning."
+        },
+        {
+            "review_datetime_utc": "01/07/2016 11:02:04",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRbktYRUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRbktYRUdBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQnKXEGA%7CCgsIrIu5tAUQwPnvDA%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "I shop at Whole Foods in NY for years  and this store do not have half of what the NY has. But I'm Still glad it here."
+        },
+        {
+            "review_datetime_utc": "01/03/2016 03:30:07",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnelo3UHdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnelo3UHdRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDgzZ7PwQE%7CCgwIv6uitAUQwKbt_wI%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Just love this store"
+        },
+        {
+            "review_datetime_utc": "12/22/2015 01:03:23",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnbFlITnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnbFlITnB3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICglYHNpwE%7CCgsI28LiswUQwMq6FQ%7C?hl=en-US",
+            "review_rating": 1,
+            "review_text": "Awesome store problem the products I bought were rotten my glass milk my coconut and pineapple.   Beautiful looking store but won't shop again very disappointed.   Only good thing was the pizza.  Home Health market will be my store to shop and Albemarle Nutrition"
+        },
+        {
+            "review_datetime_utc": "12/07/2015 19:21:31",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBMFBmei1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMFBmei1BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICA0Pfz-AE%7CCgsIu7iXswUQwNrbJA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This was the first whole foods I've ever been too and now I find myself shopping here every week. If you have not been to a whole foods go now! The cheese section is to die for."
+        },
+        {
+            "review_datetime_utc": "11/01/2015 20:56:59",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBMkt1Z1JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBMkt1Z1JBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDA2KugRA%7CCgwIm_nZsQUQgLSbhwI%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "Dishonest. We are supposed to get 10 cents back per bag if we reuse the paper shopping bag. But the cashier never apply the credit when we reuse."
+        },
+        {
+            "review_datetime_utc": "07/29/2015 22:24:42",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bHJEcU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bHJEcU9REAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwlrDqOQ%7CCgwIqqXlrQUQgMOg1AM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is often one of my solid go-to choices for food as well as groceries.  Just good food."
+        },
+        {
+            "review_datetime_utc": "07/29/2015 17:07:34",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMUxENlBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMUxENlBBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg1LD6PA%7CCgsI1pDkrQUQwPXJJw%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "Indian food at self-serve hot bar is great! So are the vegan cookies! Too pricey for everyday shopping (at least for the average person) but great for occasional \"splurging\" - a wide selection of organic and speciality food items."
+        },
+        {
+            "review_datetime_utc": "07/01/2015 19:05:56",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRbk1lSlVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRbk1lSlVREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQnMeJUQ%7CCgwIlPTQrAUQgNTmnwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It has a variety of organic options"
+        },
+        {
+            "review_datetime_utc": "05/01/2015 15:35:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OFlLVTVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OFlLVTVRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw8YKU5QE%7CCgsIqLqOqgUQgP2HUQ%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Once you shop Whole Foods and Trader Joe's going back into a Harris Teeter/Kroger is sheer drudgery. Whole Foods has amazing staff and you never have to check yourself or bag your own groceries. I have taken items back that I didn't like the taste of and I get a full refund with no questions. The staff always bags beautifully and will even carry out your groceries. You will never have to wonder an isle- there is always someone in each department that will proactively ask you \"are you finding everything okay.\" Shop the sales and you will not pay more that Kroger/Harris Teeter. I have found that I generally paid more for organic produce at Harris Teeter even when it was on sale."
+        },
+        {
+            "review_datetime_utc": "04/18/2015 01:23:33",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBc09qZkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBc09qZkZBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAsOjfFA%7CCgwIleTGqQUQgMLynQM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Love it"
+        },
+        {
+            "review_datetime_utc": "12/21/2014 03:59:52",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3M3E2X3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3M3E2X3RBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw3q6_tAE%7CCgwIuIvZpAUQwIar4QI%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "Me and Whole Foods kind of have a love/hate relationship. It's a great store to go and hang out in, and they have some great selections, but it's so pricey. Even when I went shopping with coupons, I only saved around $10 and spent more for a week's worth of groceries than I usually spend for 2 week's worth at Trader Joe's. But, I do love their coffee bar - much healthier and better than Starbucks! And the hot bar is pretty good too. Just wish it wasn't so expensive."
+        },
+        {
+            "review_datetime_utc": "12/04/2014 17:19:35",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBdUlHZTZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBdUlHZTZBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAuIGe6AE%7CCgwIp6-CpAUQwK2UjgM%7C?hl=en-US",
+            "review_rating": 3,
+            "review_text": "I went to Whole Foods mostly for one reason and that was to buy makeup that I cant get anywhere else and test colors, etc. I went on a day I needed some groceries and I even wrote out a grocery list and printed out coupons. I ended up getting very few groceries because even on sale and with a coupon, prices are far too high. There is no need to spend double on organic, I can get the same quality elsewhere (or clean it). Even foods that are NOT organic are about 50% more. I must say that there are some things here you simply cannot get elsewhere that are perhaps worth the extra cost and time it would take to go to this store for those exclusive items. I also got some of their prepared food, which was really tasty and has great options. Overall, this store is overwhelming with options! Which I feel is good and bad. Usually, variety is a reason items at a store could cost more. But, of course variety makes things more interesting, they have just about everything you can imagine. Whole Foods has an ideal mission, a great atmosphere, and is obviously very popular."
+        },
+        {
+            "review_datetime_utc": "05/19/2014 16:28:01",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdHN5RWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdHN5RWFnEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDAtsyEag%7CCgsIkeLomwUQgIKaBQ%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "The reason I shop at Whole Foods is to get the products I like that are not available anywhere else. Well it turns out selling other peoples products is not  good enough for companies like Wingman's or Whole Foods anymore. The temptation to make even more money by selling your own products (Whole Foods 365) seems to great to resist. Slowly all the products are being replaced by the Whole Foods 365 brand. No more choice, Whole Foods will decide what is the best for us and just stop carrying the things we like. I have already seen it happen with a few of the items that I would stop in there to purchase. I mentioned this to a girl at the check out and she told me that the 365 brand products are much less expensive. I don't shop at Whole Foods to save money. If I wanted to do that I could go to many other lower end grocery stores. I saw this same thing happen to Wingman's in the Northeast years ago and it too bad it happening to While Foods too."
+        },
+        {
+            "review_datetime_utc": "09/12/2013 13:15:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bFlHNlZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bFlHNlZBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwlYG6VA%7CCgwI2vzGkQUQkKrL5QE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "When they didn't have many Vegan options available in the cold deli section we asked if they had any falafel in the back, they said no and we went on bummed. Then a gentleman came up to us, Jim and he offered to have them make us a fresh falafel sandwich with the falafel they had from another product.  That's service! Freshly made and going one step further to please a customer is why I rate WH a 4. 5 if they would have a few more Vegan options available.  Thanks Jim!"
+        },
+        {
+            "review_datetime_utc": "05/23/2013 19:23:33",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbGJ1eTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbGJ1eTVBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDglbuy5AE%7CCgwItdn5jAUQ4Iid2AM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "My favorite place to buy food"
+        },
+        {
+            "review_datetime_utc": "04/21/2013 23:14:50",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3a1BXQ2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3a1BXQ2V3EAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICwkPWCew%7CCgsI6uXRiwUQ0IWVCA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "It's no secret. I love you guys!"
+        },
+        {
+            "review_datetime_utc": "03/25/2013 19:12:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3NnFPX3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3NnFPX3N3RRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICw6qO_swE%7CCgsIk8PCigUQmMv2Bw%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Food was healthy, hot, and delicious!  I now have a great place to relax and enjoy the ambient surroundings. My daughter enjoyed it as well."
+        },
+        {
+            "review_datetime_utc": "03/13/2013 13:14:19",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNHBQaTFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNHBQaTFBRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICg4pPi1AE%7CCgwIq_eBigUQ4MWYywE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "This is definitely my favorite place to shop for groceries or bath products and honestly feel out of place anywhere else. The produce is amazing and ripe even in the winter months. They don't try and sell you something withered, moldy, and frost bit like Aldi, Harris Teeter, Sam's Club, and Food Lion. You can think when you go in that it's too fancy and expensive based on looks but it's honestly cheaper than anywhere else you go and the produce actually lasts until you're finished eating it. Please keep in mind that this is a natual store so they do not sell over the counter medication. They have tons and tons of alternatives that are better for your body. This Whole Foods has honestly changed my quality of life. Their return policy is AMAZING! You can eat half of something, not like it, and they'll give you your full money back. If you want your family to be healthy come stop by, please don't let anyone's opinions turn you away."
+        },
+        {
+            "review_datetime_utc": "12/19/2012 16:49:04",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRc2F2bS1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRc2F2bS1BRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQsavm-AE%7CCgwIgODHhgUQsO74vgM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Perfect"
+        },
+        {
+            "review_datetime_utc": "12/15/2012 07:46:36",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURROXJ5dGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURROXJ5dGhRRRAB!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDQ9rythQE%7CCgwI3NWwhgUQiJ3p5gE%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "I really enjoyed my experience and the store was immaculate. The customer service was excellent. Big shout outs to Gary,Lewis and Derek. They were extremely helpful and friendly. I can't wait to return back to Charlotte."
+        },
+        {
+            "review_datetime_utc": "10/01/2012 18:42:48",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaXB5VENREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaXB5VENREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQipyTCQ%7CCgwIqMingwUQqMaFnwM%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Great place to do your groceries and hang out! Great for families with kids!      Challenging with the parking!"
+        },
+        {
+            "review_datetime_utc": "09/19/2012 23:57:00",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnX3FuRGJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnX3FuRGJREAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgIDg_qnDbQ%7CCgwIzLfpggUQwMXS0AE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "The address is accurate but the google marker is wrong. The store is east down fairview a couple blocks, south side of street."
+        },
+        {
+            "review_datetime_utc": "09/07/2012 19:36:51",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRNXVMdk1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRNXVMdk1nEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICQ5uLvMg%7CCgwI05mpggUQgP7MowM%7C?hl=en-US",
+            "review_rating": 4,
+            "review_text": "PROS: Place is very nice!  Great atmosphere, great quality food.  Lots of organic products, if not all of them.  Clean, comfortable common areas.  Very environmentally friendly down to the carry out boxes/bags they use.  CONS: Parking.  Parking is very limited.  Being that the place is a combination of Starbucks, Trader Joe's and Sam's Club, people tend to stay a long time hence parking becomes scarce.  Prices are also a little steep."
+        },
+        {
+            "review_datetime_utc": "09/03/2012 18:27:06",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBd2JxYlRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBd2JxYlRBEAE!2m1!1s0x0:0xb5a25e9bfc30a4cb!3m1!1s2@1:CIHM0ogKEICAgICAwbqbTA%7CCgwI-uyTggUQ2NKZtwE%7C?hl=en-US",
+            "review_rating": 2,
+            "review_text": "This is the WRONG address. Whole Foods is on the SW corner or Sharon Rd and Fairview. Near Burger Kingm"
         }
     ],
-    "total_reviews_count": 969
+    "total_reviews_count": 971
 }

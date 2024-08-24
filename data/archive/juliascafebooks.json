@@ -3,6 +3,20 @@
     "place_name": "Julia’s Café & Books",
     "reviews_data": [
         {
+            "review_datetime_utc": "01/13/2023 16:31:44",
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCN1BDZ2pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCN1BDZ2pRRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgIDB7PCgjQE%7CCgsI8I6GngYQ6JvKcA%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Needed some time to think and a moment to myself to reflect on 2022 and make plans for 2023….and somehow Julia's Cafe and Books is that perfect place today! I love the vibes there, cozy, not bustling and crazy busy, delis egg salad croissant (the very BEST!🥰), super affordable ….and most important of all, they support local non-profit groups like @cakeableCLT (help bridging the gap bw school and the working world for the Down syndrome young adults in our community through teaching them to bake and distribute them in local cafes and shops)! 🥰🌈  This is where I would want to spend my money …bc not only I'm feeling my body with delis food, but also feeding my heart and soul with good vibes🌈."
+        },
+        {
+            "review_datetime_utc": "01/12/2023 23:30:36",
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlM3VUNElBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlM3VUNElBEAE!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgICe3uT4IA%7CCgwInLCCngYQuO78xwE%7C?hl=en-US",
+            "review_rating": 5,
+            "review_text": "Fantastic food, drinks, and books."
+        },
+        {
             "review_datetime_utc": "12/08/2022 13:57:13",
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtNDdlVnRBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtNDdlVnRBRRAB!2m1!1s0x0:0x4840a2a8593bf844!3m1!1s2@1:CIHM0ogKEICAgID-47eVtAE%7CCgwIudrHnAYQ2Iin_QI%7C?hl=en-US",
@@ -1438,5 +1452,5 @@
             "review_text": "I've been visiting Julia's for years and I love it. It's comfortable, full of well-priced books and the baristas are THE BEST! I consider them my friends and that's not something you can find anywhere. The coffee is delicious, I get to bring home a bunch of books and peruse the Habitat for Humanity store as well. I LOVE IT THERE :)"
         }
     ],
-    "total_reviews_count": 354
+    "total_reviews_count": 355
 }
