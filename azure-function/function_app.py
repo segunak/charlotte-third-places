@@ -158,8 +158,8 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as ex:
         return func.HttpResponse(str(ex), status_code=500)
 
-@app.function_name(name="OutscraperRequestReviews")
-@app.route(route="outscraper-request-reviews")
+@app.function_name(name="OutscraperReviewsRequest")
+@app.route(route="outscraper-reviews-request")
 def outscraper_request_reviews(req: func.HttpRequest) -> func.HttpResponse:
     airtable = AirtableClient()
     # you can get airtable.all_third_places, iterate through anything with an actual place_id and not none, empty,
