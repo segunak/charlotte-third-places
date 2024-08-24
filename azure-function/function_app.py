@@ -3,32 +3,22 @@ import sys
 import json
 import logging
 import requests
-import pyairtable
 import azure.functions as func
 from unidecode import unidecode
 from outscraper import ApiClient
+from constants import SearchField
 import helper_functions as helpers
-from pyairtable.formulas import match
 from airtable_client import AirtableClient
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# Reference https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 logging.basicConfig(level=logging.INFO)
 
+# airtable = AirtableClient()
+# airtable_record = airtable.get_record(SearchField.PLACE_ID, 'ChIJJ1k-2i6gVogRYNxihxv5ONI')
+
 # TO DO
-# Call airtable code for getting photos locally and validate it works, then add it to the enrich Azure Function calls.
-# Delete main.py and other unused code.
-# Delete local debug Airtabel code
-# Get missing place_id's manually and update airtable
-# Work on filling gaps in the data manually
-# Deploy Azure Function and hit enrichement endpoint from GitHub action and verify success.
-
-
-# Write an Azure Function called from a GitHub Action that takes all the place_id's in the airtable and sends
-# them to outsraper to get reiews for each one. Ensure outscraper is setup with the webhook URL for reviews response
-# which will ensure they get saved.
-
-
+# Make GitHub action for OutscraperReviewsRequest. Ensure results are printed.
 # After verifying having all reviews, start on AI analysis for choosing ambience. Use Azure OpenAI, free $150 a month.
 
 @app.function_name(name="SmokeTest")
@@ -142,13 +132,22 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
             if review["review_text"] and review["review_text"].strip()
         ]
 
-        place_id = helpers.format_place_name(raw_reviews_data['data'][0]['place_id'])
+        place_id = raw_reviews_data['data'][0]['place_id']
         place_name = helpers.format_place_name(raw_reviews_data['data'][0]['name'])
         review_file_name = f"{place_id}-{place_name}-reviews.json"
         json_data = json.dumps(reviews_data, indent=4)
-
+        
         save_status = helpers.save_reviews_github(json_data, review_file_name)
+        
         if save_status:
+            airtable = AirtableClient()
+            airtable_record = airtable.get_record(SearchField.PLACE_ID, place_id)
+            
+            if airtable_record:
+                airtable.update_place_record(airtable_record['id'], 'Has Reviews', 'Yes', overwrite=True)
+            else:
+                logging.warning(f"Unable to update the Has Reviews column to Yes in the Airtable base despite having processed reviews successfully for place {place_name}.")
+            
             return func.HttpResponse(f"Review processed successfully for place {place_name} and saved to GitHub repo.", status_code=200)
         else:
             return func.HttpResponse("Failed to save reviews to GitHub.", status_code=500)
@@ -161,8 +160,55 @@ def outscraper_reviews_response(req: func.HttpRequest) -> func.HttpResponse:
 @app.function_name(name="OutscraperReviewsRequest")
 @app.route(route="outscraper-reviews-request")
 def outscraper_reviews_request(req: func.HttpRequest) -> func.HttpResponse:
-    airtable = AirtableClient()
-    # you can get airtable.all_third_places, iterate through anything with an actual place_id and not none, empty,
-    # send each one as a request to outscraper with a delay. Outscraper should then post the webhook
-    # THen make the github action to call this.
-    return func.HttpResponse("Not implemented", status_code=400)
+    try:
+        airtable = AirtableClient()
+        OUTSCRAPER_API_KEY = os.environ['OUTSCRAPER_API_KEY']
+        outscraper_client = ApiClient(api_key=OUTSCRAPER_API_KEY)
+
+        def process_place(place):
+            place_name = place['fields']['Place']
+            place_id = place['fields'].get('Google Maps Place Id', None)
+            place_id = airtable.google_maps_client.place_id_handler(place_name, place_id)
+
+            return_value = {'place_name': place_name, 'response': None, 'message': ''}
+            
+            if not place_id:
+                return_value['message'] = f"No place_id for {place_name}. Skipping reviews request."
+                logging.warning(return_value['message'])
+                return return_value
+
+            try:
+                response = outscraper_client.google_maps_reviews(
+                    place_id, limit=1, reviews_limit=500, sort='newest', language='en'
+                )
+                if response.status_code in [200, 202]:
+                    return_value['response'] = response.json()
+                    return_value['message'] = f"Successfully requested reviews for {place_name}."
+                    logging.info(return_value['message'])
+                else:
+                    return_value['message'] = f"Failed to request reviews for {place_name}. Response: {response.text}"
+                    logging.error(return_value['message'])
+
+            except Exception as ex:
+                return_value['message'] = f"Exception while requesting reviews for {place_name}: {str(ex)}"
+                logging.error(return_value['message'])
+
+            return return_value
+
+        call_results = []
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            # TODO - REMOVE THIS!!! limited_list should be airtable.all_third_places in futures
+            limited_list = airtable.all_third_places[:1]
+            futures = [executor.submit(process_place, place) for place in limited_list]
+            for future in as_completed(futures):
+                result = future.result()
+                if result:
+                    call_results.append(result)
+
+        response_json = json.dumps({"results": call_results}, indent=4)
+        return func.HttpResponse(response_json, status_code=200, mimetype="application/json")
+    
+    except Exception as ex:
+        logging.error(f"Critical error in processing: {str(ex)}")
+        error_response = json.dumps({"error": str(ex)}, indent=4)
+        return func.HttpResponse(error_response, status_code=500, mimetype="application/json")

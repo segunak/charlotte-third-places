@@ -8,7 +8,9 @@ from pyairtable import utils
 from datetime import datetime
 from collections import Counter
 from urllib.parse import urlparse
+from constants import SearchField
 import helper_functions as helpers
+from pyairtable.formulas import match
 from google_maps_client import GoogleMapsClient
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -27,7 +29,8 @@ class AirtableClient:
         self.AIRTABLE_BASE_ID = os.environ['AIRTABLE_BASE_ID']
         self.AIRTABLE_PERSONAL_ACCESS_TOKEN = os.environ['AIRTABLE_PERSONAL_ACCESS_TOKEN']
         self.charlotte_third_places = pyairtable.Table(
-            self.AIRTABLE_PERSONAL_ACCESS_TOKEN, self.AIRTABLE_BASE_ID, 'Charlotte Third Places')
+            self.AIRTABLE_PERSONAL_ACCESS_TOKEN, self.AIRTABLE_BASE_ID, 'Charlotte Third Places'
+        )
         self.google_maps_client = GoogleMapsClient()
         self.all_third_places = self.charlotte_third_places.all(sort=["Place"])
 
@@ -199,7 +202,23 @@ class AirtableClient:
                 if result:
                     places_updated.append(result)
 
-        return places_updated        
+        return places_updated
+    
+    def get_record(self, search_field: SearchField, search_value: str) -> list[dict]:
+        logging.info(f"Getting record using search field {search_field.value} and search value {search_value}")
+        match_formula = match({search_field.value: search_value})
+        
+        try:
+            matched_record = self.charlotte_third_places.all(formula=match_formula)
+            if matched_record and len(matched_record) == 1:
+                logging.info(f"Match found. Record Id is {matched_record[0]['id']}.")
+                return matched_record[0]
+            else:
+                logging.warning(f"No match found for {search_field.value} with value {search_value}.")
+                return None
+        except Exception as e:
+            logging.error(f"An error occurred while retrieving records: {str(e)}")
+            return None
 
     def get_place_photos(self, overwrite_cover_photo=False):
         """
@@ -332,4 +351,8 @@ class AirtableClient:
                     field_to_scan, third_place_records)
                 self.print_report_section(
                     report_file, scan_result, f'Missing Records Report: {field_to_scan}')
+                
+                
+    def places_without_reviews():
+        return "Function to go through the base and return all places that have no stored Google Maps reviews.  "
 

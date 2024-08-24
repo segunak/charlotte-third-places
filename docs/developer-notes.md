@@ -9,6 +9,8 @@ A scratch pad for various notes related to this project.
 * Testing locally, if you use `venv` you can get weird networking issues tunneling from the virtual environment to the public internet. If you're comfortable with your local environment don't bother with it.
 * You need to place any third-party Python libraries in `requirements.txt` so they're installed in the cloud for use during deployments and production execution.
 * Remember to start and stop Azurite for local testing.
+* Read through [this](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth) page for more details on how HTTP Azure Functions work.
+* Read through [this](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to?tabs=azure-portal) page for details on how Azure Function keys work.
 
 ## Azure Function
 
@@ -58,13 +60,41 @@ I ran into the issue where you deploy the Azure Function, either from VSCode loc
 
 ### Test Code
 
-For posting to `EnrichAirtableBase`
+For posting to `EnrichAirtableBase`.
 
 ```json
 {"TheMotto": "What is dead may never die, but rises again harder and stronger"}
 ```
 
-### Outscraper Response Format
+For posting to `OutscraperReviewsResponse`.
+
+```json
+{
+    "id": "your-request-id",
+    "user_id": "your-user-id",
+    "status": "SUCCESS",
+    "api_task": true,
+    "results_location": "https://api.app.outscraper.com/requests/YXV0aDB8NjNhMzRkZGRjNmRmNDM5MGJmM2ZkMzZjLDIwMjQwODE3MjA1OTM1eHM0YQ",
+    "quota_usage": [
+        {
+            "product_name": "Google Maps Data",
+            "quantity": 1
+        }
+    ]
+}
+```
+
+### Outscraper
+
+Details about [Outscraper](https://outscraper.com/) and it's role in helping to process reviews.
+
+### Webhooks
+
+Outscraper allows users to write a custom webhook and have them hit that endpoint with the response of requesting reviews. You can view the result of webhook calls [here](https://app.outscraper.com/webhook-calls).
+
+Visit the [Integrations](https://app.outscraper.com/integrations) page to set the webhook URL. Read through the [Access Keys](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to?tabs=azure-portal) page for Azure Functions to understand how authentication works. In summary, provide an endpoint that grants access to 1 function (use a Function Key), rather than all of them.
+
+### Response Format
 
 For testing Outscraper webhooks locally. The `results_location` expires after 24 hours or so. To get a new one, go to the Outscraper portal, make a Google Maps API reviews request, and then go to <https://app.outscraper.com/api-usage> to get the `results_location`.
 

@@ -1,15 +1,15 @@
-name: Trigger EnrichAirtableBase Azure Function
+name: Trigger OutscraperReviewsRequest Azure Function
 
 on:
   workflow_dispatch:
 
 # Ensures that only one instance of this workflow runs at a time
 concurrency: 
-  group: enrich-airtable-base
+  group: outscraper-reviews-request
   cancel-in-progress: true
 
 jobs:
-  trigger-enrich-airtable-base:
+  trigger-outscraper-reviews-request:
     runs-on: ubuntu-latest
     steps:    
       - name: Trigger Azure Function
@@ -17,13 +17,11 @@ jobs:
           #!/bin/bash
           set -euo pipefail
       
-          API_URL="https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base"
-          REQUEST_BODY='{"TheMotto":"What is dead may never die, but rises again harder and stronger"}'
+          API_URL="https://charlotte-third-places.azurewebsites.net/api/outscraper-reviews-request"
       
           response=$(curl -s -w "\n%{http_code}" -X POST \
             -H "Content-Type: application/json" \
             -H "x-functions-key: ${{ secrets.AZURE_FUNCTION_KEY }}" \
-            -d "$REQUEST_BODY" \
             "$API_URL")
       
           http_status=$(tail -n1 <<< "$response")
@@ -33,9 +31,9 @@ jobs:
           echo "Response Body: $response_body"
       
           if [ "$http_status" -eq 200 ]; then
-            echo "Aye brother, as the tide ebbs, so returns our strength!"
+            echo "Action succeeded: Reviews request successfully processed."
           else
-            echo "Failed to call the depths, something's amiss..."
+            echo "Action failed: Unable to process reviews request."
             echo "HTTP Status: $http_status"
             echo "Response Body: $response_body"
             exit 1
