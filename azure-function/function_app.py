@@ -184,7 +184,7 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
 
                 return_message = f"Review processed and saved successfully for {place_name}."
                 logging.info(return_message)
-                return {'status': 'succeeded', 'place_name': place_name, 'response': outscraper_response, 'message': return_message}
+                return {'status': 'succeeded', 'place_name': place_name, 'response': f'https://github.com/segunak/charlotte-third-places/blob/master/{full_file_path}', 'message': return_message}
 
         logging.info("Starting review retrieval using parallel processing")
         call_results = []

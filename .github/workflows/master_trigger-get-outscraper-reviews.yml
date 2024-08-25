@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  trigger-outscraper-reviews-request:
+  trigger-get-outscraper-reviews:
     runs-on: ubuntu-latest
     steps:    
       - name: Trigger Azure Function
