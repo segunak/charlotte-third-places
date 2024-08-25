@@ -126,7 +126,7 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
             # Reference https://app.outscraper.com/api-docs
             logging.info(f"Getting reviews for {place_name} with place_id {place_id}.")
             outscraper_response = outscraper_client.google_maps_reviews(
-                place_id, limit=1, reviews_limit=500, sort='newest', language='en', ignore_empty=True
+                place_id, limit=1, reviews_limit=250, sort='newest', language='en', ignore_empty=True
             )
             
             if not outscraper_response or len(outscraper_response) != 1:
