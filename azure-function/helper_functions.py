@@ -71,8 +71,12 @@ def save_reviews_azure(json_data, review_file_name):
     file_client = directory_client.get_file_client(review_file_name)
     file_client.upload_data(data=json_data, overwrite=True)
 
-def save_reviews_github(json_data, review_file_name):
-    """ Saves the given JSON data to the specified file path in the GitHub repository. """
+def save_json_to_github(json_data, full_file_path):
+    """ Saves the given JSON data to the specified file path in the GitHub repository.
+    
+    full_file_path should include the folder and file name, no leading slash. For example
+    "data/reviews/review-file.json"
+    """
     try:
         github_token = os.environ['GITHUB_PERSONAL_ACCESS_TOKEN']
         headers = {
@@ -84,7 +88,7 @@ def save_reviews_github(json_data, review_file_name):
         
         # Check if the file exists to get the SHA
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
-        url_get = f"https://api.github.com/repos/{repo_name}/contents/data/reviews/{review_file_name}?ref={branch}"
+        url_get = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}?ref={branch}"
         get_response = requests.get(url_get, headers=headers)
         if get_response.status_code == 200:
             sha = get_response.json()['sha']
@@ -93,7 +97,7 @@ def save_reviews_github(json_data, review_file_name):
 
         # Construct the data for the PUT request to create/update the file
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
-        url_put = f"https://api.github.com/repos/{repo_name}/contents/data/reviews/{review_file_name}"
+        url_put = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}"
         commit_message = "Updating reviews data"
         data = {
             "message": commit_message,
