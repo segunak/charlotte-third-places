@@ -204,7 +204,7 @@ class AirtableClient:
 
         return places_updated
     
-    def get_record(self, search_field: SearchField, search_value: str) -> list[dict]:
+    def get_record(self, search_field: SearchField, search_value: str) -> dict:
         logging.info(f"Getting record using search field {search_field.value} and search value {search_value}")
         match_formula = match({search_field.value: search_value})
         

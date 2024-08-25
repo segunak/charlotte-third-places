@@ -14,16 +14,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 logging.basicConfig(level=logging.INFO)
 
-# import dotenv
-# dotenv.load_dotenv()
-# OUTSCRAPER_API_KEY = os.environ['OUTSCRAPER_API_KEY']
-# outscraper_client = ApiClient(api_key=OUTSCRAPER_API_KEY)
-# outscraper_response = outscraper_client.google_maps_reviews(
-#     'ChIJJ1k-2i6gVogRYNxihxv5ONI', limit=1, reviews_limit=500, sort='newest', language='en'
-# )
-
-# print(outscraper_response)
-
 # TO DO
 # Test OutScraperReviewsREquest then remove limiting code.
 # Test enrich airtable base.
@@ -50,7 +40,7 @@ def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
                 mimetype="application/json"
             )
         else:
-            logging.warning(f"Incorrect allegiance provided. Expected {expected_value}, but got {req_body.get(expected_key, None)}")
+            logging.info(f"Incorrect allegiance provided. Expected {expected_value}, but got {req_body.get(expected_key, None)}")
             return func.HttpResponse(
                 json.dumps({"message": "Unexpected or incorrect allegiance provided."}),
                 status_code=400,
@@ -104,7 +94,7 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
                 status_code=500
             )
     else:
-        logging.warning("Invalid or unauthorized attempt to access the endpoint with incorrect motto.")
+        logging.info("Invalid or unauthorized attempt to access the endpoint with incorrect motto.")
         return func.HttpResponse(
             "Unauthorized access. This endpoint requires a specific authorization motto to proceed.",
             status_code=403
@@ -125,10 +115,19 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
             
             place_id = place['fields'].get('Google Maps Place Id', None)
             place_id = airtable.google_maps_client.place_id_handler(place_name, place_id)
+            
             if not place_id:
                 return_message = f"Warning! No place_id found for {place_name}. Skipping getting reviews."
-                logging.warning(return_message)
-                return {'status': 'failed', 'place_name': place_name, 'response': None, 'message': return_message}     
+                logging.info(return_message)
+                return {'status': 'skipped', 'place_name': place_name, 'response': None, 'message': return_message}
+            
+            airtable_record = airtable.get_record(SearchField.PLACE_ID, place_id)
+            has_reviews = airtable_record['fields'].get('Has Reviews', 'No')
+            
+            if has_reviews == 'Yes':
+                return_message = f"The place {place_name} with place_id {place_id} has a value of Yes in the Has Reviews column of the Airtable Base. As such, reviews will not be retrieved for this place. To retrieve reviews, change the Has Reviews value for the record to No."
+                logging.info(return_message)
+                return {'status': 'skipped', 'place_name': place_name, 'response': None, 'message': return_message}
             
             # Reference https://app.outscraper.com/api-docs
             logging.info(f"Getting reviews for {place_name} with place_id {place_id}.")
@@ -138,7 +137,7 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
             
             if not outscraper_response or len(outscraper_response) != 1:
                 return_message = f"Error: Outscraper response was invalid for place {place_name} with place_id {place_id}. This could be because more than 1 place was returned, or some other error related to Outscraper. Response: {outscraper_response}. No reviews were saved for this place.."
-                logging.warning(return_message)
+                logging.info(return_message)
                 return {'status': 'failed', 'place_name': place_name, 'response': outscraper_response, 'message': return_message}
             
             outscraper_reviews = outscraper_response[0]
@@ -173,14 +172,12 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
             logging.info(f"Attempting to save reviews to GitHub at path {full_file_path}")
             save_succeeded = helpers.save_json_to_github(json_reviews_data, full_file_path)
             
-            if save_succeeded:
-                airtable_record = airtable.get_record(SearchField.PLACE_ID, place_id)
-                
+            if save_succeeded:                
                 if airtable_record:
                     airtable.update_place_record(airtable_record['id'], 'Has Reviews', 'Yes', overwrite=True)
                     logging.info(f"Airtable record for {place_name} updated successfully.")
                 else:
-                    logging.warning(f"No corresponding Airtable record found for {place_name}.")
+                    logging.info(f"No corresponding Airtable record found for {place_name}.")
 
                 return_message = f"Review processed and saved successfully for {place_name}."
                 logging.info(return_message)
@@ -189,20 +186,17 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
         logging.info("Starting review retrieval using parallel processing")
         call_results = []
         all_successful = True
+        
         with ThreadPoolExecutor(max_workers=10) as executor:
-
-            # TODO - REMOVE THIS!!! limited_list should be airtable.all_third_places in futures
-            limited_list = airtable.all_third_places[:1]
-            
-            futures = [executor.submit(process_place, place) for place in limited_list]
+            futures = [executor.submit(process_place, place) for place in airtable.all_third_places]
             for future in as_completed(futures):
                 result = future.result()
                 if result:
                     call_results.append(result)
                     if result['status'] == 'failed':
                         all_successful = False
-                        logging.warning(f"Review retrieval failed for {result['place_name']}.")
-            
+                        logging.info(f"Review retrieval failed for {result['place_name']}.")
+
         status_code = 200 if all_successful else 207
         return_json = json.dumps({"results": call_results}, indent=4)
         logging.info(f"GetOutscraperReviews completed with status code {status_code} and all_successful value of {all_successful}. Results: {return_json}")
