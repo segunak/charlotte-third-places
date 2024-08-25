@@ -5,7 +5,7 @@
     "place_total_reviews": 1742,
     "place_google_id": "0x8856a02eda3e5927:0xd238f91b8762dc60",
     "place_reviews_id": "-3298612830418052000",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ1k-2i6gVogRYNxihxv5ONI&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ1k-2i6gVogRYNxihxv5ONI&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNmM3R3h3RRAB",
@@ -3040,12 +3040,52 @@
             "review_text": "Very good quality, but higher prices. A little lower would be much better, so I'll only visit every now and then."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLd2N1b1pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLd2N1b1pnEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICKwcuoZg%7CCgwIg6K5gwYQqImoqwI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1617842435,
+            "review_datetime_utc": "04/08/2021 00:40:35",
+            "review_text": "Pense que. Tenia. Mas variedad dulces"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLd2JPWUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLd2JPWUZBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICKwbOYFA%7CCgsIqZy5gwYQiJ2LNQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617841705,
+            "review_datetime_utc": "04/08/2021 00:28:25",
+            "review_text": "Awesome bakery! I really liked the atmosphere. Friendly staff. Great treats and wonderful coffee. We had the macaroons, fruit tart, vanilla eclair and the raspberry lemon tart, cappuccino, and mocha. Great bakery! We will be back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLNXBpZ21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNXBpZ21RRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICK5pigmQE%7CCgwImO2jgwYQwLHdlwE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1617491608,
+            "review_datetime_utc": "04/03/2021 23:13:28",
+            "review_text": "I ordered a chai latte, but I think I was given an espresso with milk. Very bitter drink. Delicious pastries."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLbEt1S0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLbEt1S0pREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICKlKuKJQ%7CCgwIz-WHgwYQ4LO8wQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1617031887,
+            "review_datetime_utc": "03/29/2021 15:31:27",
+            "review_text": "Service has taken a real dive.  Took almost 30 min to get a premade quiche and breakfast sandwiches and 15 min for a cappuccino.  Still no inside seating available "
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5X19haGVnEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5X19haGVnEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDy__aheg%7CCgwIk7joggYQiNuPjgE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1616518163,
             "review_datetime_utc": "03/23/2021 16:49:23",
             "review_text": "Delicious food and great service too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5eS11aVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5eS11aVBnEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDyy-uiPg%7CCgsI7vjIggYQ4PTHRw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1616002158,
+            "review_datetime_utc": "03/17/2021 17:29:18",
+            "review_text": "I miss the large carafe of coffee, seems it's not offered anymore. The fresh brew, lattes, and mochas are enjoyable. Mochas are darker like European versions rather than the typical sweeter American style  The real stars are the fresh pastries. Amelie's reminded me why people like macarons (small, colorful French cookie in multiple flavor options) since regular store-bought options are dry and bland. These are fresh and delicious! I also love their coconut macaroons... try both! Unlike the Uptown site, though, the staff wasn't especially friendly today. They also didn't ask light roast vs dark roast and didn't offer cream or sweetener, requiring another wait in the line. They weren't rude, exactly, just distracted I guess. I assume it was just the day since Uptown staff was regularly positive and friendly. Coffee and food were great as usual though."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5eWNhajRnRRAB",
@@ -3966,46 +4006,6 @@
             "review_timestamp": 1582394255,
             "review_datetime_utc": "02/22/2020 17:57:35",
             "review_text": "Nice nice nice. Pastries and coffee in the morning, nice ambience. I'm on a sugar and caffeine high even as I write this"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzaUtUQ293RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaUtUQ293RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDsiKTCowE%7CCgsI--bA8gUQkJizcg%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1582314363,
-            "review_datetime_utc": "02/21/2020 19:46:03",
-            "review_text": "Delicious coffee and sticky bread. It's like being in France. Just pricey, which is expected, but worth it!"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzXzVldmlRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzXzVldmlRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs_5eviQE%7CCgsIybG28gUQgMaWYA%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1582143689,
-            "review_datetime_utc": "02/19/2020 20:21:29",
-            "review_text": "The pasties are yummy .. the macarons are good but a little expensive."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzN19qNnFRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzN19qNnFRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs7_j6qQE%7CCgwIg5Ww8gUQuN70gAM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1582041731,
-            "review_datetime_utc": "02/18/2020 16:02:11",
-            "review_text": "It has a relaxed feel and is a great place to sit with a coffee, anytime of the day."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzajgzSDd3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzajgzSDd3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsj83H7wE%7CCgwIpLCt8gUQgKDe5QE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581996068,
-            "review_datetime_utc": "02/18/2020 03:21:08",
-            "review_text": "Everything tasted fresh all the time"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMTdUTjB3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMTdUTjB3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs17TN0wE%7CCgwIiu6o8gUQ8JOOnwM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581922058,
-            "review_datetime_utc": "02/17/2020 06:47:38",
-            "review_text": "Boy boy boy do I love me some Amelie's. Whether it be tea, baked goods, or their wonderful quiches, I absolutely love this place. I've been to two birthday celebrations here and one of them was my own. The aesthetic is excellent and service is always good.\n\nIt is a happy place."
         }
     ]
 }
