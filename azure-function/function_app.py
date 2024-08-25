@@ -14,12 +14,6 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
 logging.basicConfig(level=logging.INFO)
 
-# TO DO
-# Test OutScraperReviewsREquest then remove limiting code.
-# Test enrich airtable base.
-# Trigger OutsraperReviewsREquest with all functions.
-# After verifying having all reviews, start on AI analysis for choosing ambience. Use Azure OpenAI, free $150 a month.
-
 @app.function_name(name="SmokeTest")
 @app.route(route="smoke-test")
 def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
