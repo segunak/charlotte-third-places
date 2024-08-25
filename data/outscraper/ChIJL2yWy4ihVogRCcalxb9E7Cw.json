@@ -1,0 +1,2011 @@
+{
+    "place_name": "Optimist Hall",
+    "place_id": "ChIJL2yWy4ihVogRCcalxb9E7Cw",
+    "place_rating": 4.7,
+    "place_total_reviews": 7948,
+    "place_google_id": "0x8856a188cb966c2f:0x2cec44bfc5a5c609",
+    "place_reviews_id": "3237037822617961993",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJL2yWy4ihVogRCcalxb9E7Cw&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MnJQMUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3MnJQMUlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID72rP1IQ%7CCgwIh9GitgYQ0M2jogE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1724426375,
+            "review_datetime_utc": "08/23/2024 15:19:35",
+            "review_text": "Loved the variety that is offered. Loved the service as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3bXFySTdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3bXFySTdBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7mqrI7AE%7CCgwIs42itgYQ6OOKoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724417715,
+            "review_datetime_utc": "08/23/2024 12:55:15",
+            "review_text": "Never a dull moment here! From the bars, the music to the food selection. My favs are Enat and The Dumpling Lady and the custom cocktails at Billy Sunday!\n\nThere could be better more water stations and more chairs outside."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3a3NXRVRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3a3NXRVRREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7ksWETQ%7CCgwI496etgYQoPbj-QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724362595,
+            "review_datetime_utc": "08/22/2024 21:36:35",
+            "review_text": "Really nice place for relaxing and having a bite and a drink. Several food vendors in a cool relaxing refurbished space."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3dlBXTmR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3dlBXTmR3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7vPWNdw%7CCgwIueCctgYQgN68oQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724330041,
+            "review_datetime_utc": "08/22/2024 12:34:01",
+            "review_text": "The Optimist Hall in Charlotte is a must-see! This place gives you 90 minutes of free parking allowing you to experience a myriad of dining options from away burgers, Ethiopian food,  Mexican food,Barbecue, seafood, grilled cheese,  pizza,Italian food, awesome empinatas at Felix's empinates,coffee, ice cream, baked goods, Indian food, vegan food,  beer and wine and gift shopping.  You will love this\nhis place! Indoor and outdoor seatareas area is available. It's great to bring a date also great for families."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3eklIWjBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3eklIWjBnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7zIHZ0gE%7CCgwI38KatgYQuOuR6wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724293471,
+            "review_datetime_utc": "08/22/2024 02:24:31",
+            "review_text": "I'm from NYC so I'm used to paying for parking but figured in CLT wouldn't be a need. Still ain't no thang, this place is solid"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3aklIanF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3aklIanF3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7jIHjqwE%7CCgwIyPiZtgYQqIPfxgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724283976,
+            "review_datetime_utc": "08/21/2024 23:46:16",
+            "review_text": "My buddy and I came here around 2:30 on a Wednesday. We ate at The Dumpling Lady and the dumplings were SO flavorful. The meat was tender and juicy. The chili oil was a perfect touch for that extra little kick of heat.\nWe popped over to el Thrifty CLT for some Duck Pin Bowling. $6 a game per person & so much fun. Amazing cocktails, too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3alByR2FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3alByR2FREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7jPrGaQ%7CCgsIuu6ZtgYQoOeyEQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1724282682,
+            "review_datetime_utc": "08/21/2024 23:24:42",
+            "review_text": "I used to attend this place pretty often since the day they started changing to park. They give you the first 90 minutes free (for now), but you have to register your credit card and your vehicle. I'll prefer places where I can have some more freedom. So sad for their business, but there are a lot of people that thinks the same."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MU5uUll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3MU5uUll3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID71NnRYw%7CCgwI8vOYtgYQsLrnigE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1724266994,
+            "review_datetime_utc": "08/21/2024 19:03:14",
+            "review_text": "They no longer allow fonta flora to validate parking. First 90 minutes are free which is plenty of time to grab food but if you want to hang out at the brewery you have to pay $6 just for parking. We host book club meetings at fonta flora and I cannot ask all members to pay for parking each meeting. This needs to be resolved"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3djlxdWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3djlxdWV3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7v9quew%7CCgwIopSOtgYQsLLUrQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724090914,
+            "review_datetime_utc": "08/19/2024 18:08:34",
+            "review_text": "I like atmosphere of this pace, and people that i can meet there!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3aDRuR0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3aDRuR0t3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7h4nGKw%7CCgwI_uOHtgYQgOrTlQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1723986430,
+            "review_datetime_utc": "08/18/2024 13:07:10",
+            "review_text": "Cute, trendy place and Mediterranean food and gelato I tried was decent. Paper towels were out at the handwashing station in the food court dining area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3bVlTRkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3bVlTRkhnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7mYSFHg%7CCgwIx9T_tQYQwOHKmAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723853383,
+            "review_datetime_utc": "08/17/2024 00:09:43",
+            "review_text": "Okay, I just love this place.  The food is awesome, Fonta Flora Brewery has a great beer selection and if you order a beer, they have a free barcode that will get you 5 hours of free parking!  Totally worth it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3NmNENEt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3NmNENEt3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC76cD4Kw%7CCgwItpL_tQYQ2PqPogM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723844918,
+            "review_datetime_utc": "08/16/2024 21:48:38",
+            "review_text": "Had Ethiopian food, out of this world"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3bnBXSmhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3bnBXSmhBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7npWJhAE%7CCgwI1sr6tQYQsIT2iAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723770198,
+            "review_datetime_utc": "08/16/2024 01:03:18",
+            "review_text": "Great experience. More sophisticated version of food court in a mall"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3enR2VjBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3enR2VjBnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7ztvV0gE%7CCgwIvbr5tQYQoJSJlAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723751741,
+            "review_datetime_utc": "08/15/2024 19:55:41",
+            "review_text": "Great variety of options. Can't decide where to take the family stop by optimist hall any everyone can get what they want."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3Mm9paW5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3Mm9paW5RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC72oiinQE%7CCgsIlOX1tQYQqNC1CQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723691668,
+            "review_datetime_utc": "08/15/2024 03:14:28",
+            "review_text": "Very large with lots of restaurants to choose from. Something for everyone."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3NnR1MEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3NnR1MEpBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC76tu0JA%7CCgsI-4f1tQYQuL70Ug%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1723679739,
+            "review_datetime_utc": "08/14/2024 23:55:39",
+            "review_text": "Beware the parking scam. The app continues to charge you indefinitely regardless of when you leave. It's the top FAQ on their website but they haven't fixed the issue since, of course, it makes them extra money."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3d3RTby1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3d3RTby1BRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7wtSo-AE%7CCgwIpPvytQYQoKWqmAE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1723645348,
+            "review_datetime_utc": "08/14/2024 14:22:28",
+            "review_text": "Not sure what the hype is about, it's a food court."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3OU9qMVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3OU9qMVlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC79Oj1YQ%7CCgwIzp_rtQYQqNXKswI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723518926,
+            "review_datetime_utc": "08/13/2024 03:15:26",
+            "review_text": "comimos en el restaurante hindu. Muy rica la comida y muy buena atencion"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3MVBmbTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3MVBmbTVBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC71Pfm5AE%7CCgwI0sLqtQYQ8ICK3QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723507026,
+            "review_datetime_utc": "08/12/2024 23:57:06",
+            "review_text": "Nice environment, I like the way there are different types of food to enjoy"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3eU5ubjlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3eU5ubjlRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC7yNnn9QE%7CCgwI2oPltQYQqLiC7QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723417050,
+            "review_datetime_utc": "08/11/2024 22:57:30",
+            "review_text": "Great food and so many to choose from...."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3NEx1QW1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3NEx1QW1BRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC74LuAmAE%7CCgwI-enitQYQsL6DmgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723380985,
+            "review_datetime_utc": "08/11/2024 12:56:25",
+            "review_text": "Great selection of food options..\n\nBusy bustling happening place"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiMzhxZmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiMzhxZmNnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb38qfcg%7CCgwI6o3gtQYQkLaBqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723336426,
+            "review_datetime_utc": "08/11/2024 00:33:46",
+            "review_text": "Es un excelente lugar para comer y beber. Muchas cadenas comerciales. Restaurantes. Comida de todo tipo. Ambiente agradable!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURidDkzZDlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURidDkzZDlBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbt93d9AE%7CCgsI7c3dtQYQiO-cQg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723295469,
+            "review_datetime_utc": "08/10/2024 13:11:09",
+            "review_text": "Very fun place to stop while you're in Charlotte. There are a TON of food options, and a lot of them are very unique, too such a sushi burritos or fun grilled cheeses. We didn't do any shopping around but they also have lots of fun shops! I will say, it can be a little overwhelming, as there are so many options and you can only eat so much. Can't wait to come back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURieDRtRm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURieDRtRm9RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbx4mFoQE%7CCgwIup_btQYQqNiOoAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723256762,
+            "review_datetime_utc": "08/10/2024 02:26:02",
+            "review_text": "Amazing place. You have to go here when in Charlotte!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiNl9haEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNl9haEh3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb6_ahHw%7CCgwI6enYtQYQwMbNlAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723217129,
+            "review_datetime_utc": "08/09/2024 15:25:29",
+            "review_text": "This place is great,  great food, lots to  choose from.\nAlways make it a stop when I'm traveling to charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiNC12Mm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiNC12Mm5RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb4-v2nQE%7CCgwI3tvVtQYQyJa7-gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1723166174,
+            "review_datetime_utc": "08/09/2024 01:16:14",
+            "review_text": "Got a $60 dollar parking fee with no clear signs regarding parking rates or fees, parking used to be free the least they can do is put out clear signage to let folks know parking comes at a cost. Will not be going back to this place again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiZzQ3Ulp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiZzQ3Ulp3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbg47RZw%7CCgwIto3UtQYQ8MywugI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723139766,
+            "review_datetime_utc": "08/08/2024 17:56:06",
+            "review_text": "I love this place. Food selection is great and the atmosphere is awesome."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiX1l2V3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiX1l2V3F3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb_YvWqwE%7CCgwI_evTtQYQwO7rzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723135485,
+            "review_datetime_utc": "08/08/2024 16:44:45",
+            "review_text": "A lot of variety for different tastes"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiOVlyY1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiOVlyY1lREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb9YrcYQ%7CCgsIiZrQtQYQyJXgWA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1723075849,
+            "review_datetime_utc": "08/08/2024 00:10:49",
+            "review_text": "Parking is a scam,  you will receive a $45 fine in the mail. I am not going back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNGVtYVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNGVtYVpBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT4emaZA%7CCgsIv9XOtQYQuO38WA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723050687,
+            "review_datetime_utc": "08/07/2024 17:11:27",
+            "review_text": "Love this place! Went on a beautiful warm Sat and it was busy but plenty of room to spread out with multiple families. We tried a lot of different food and drink spots, all were delicious. Parking was expensive but I am new to area and maybe didn't have the best/cheapest option. Look forward to going back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtaXV2QThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtaXV2QThnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICmiuvA8gE%7CCgwI0e7NtQYQ6LaqxQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723037521,
+            "review_datetime_utc": "08/07/2024 13:32:01",
+            "review_text": "Plenty of vegan options! I love the different restaurants .  Clean. Plenty of space. Parking is annoying but once you find a spot it's good. I will definitely be returning."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURibWVYNF9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibWVYNF9RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbmeX4_QE%7CCgwI3dzLtQYQ4M2oqQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1723002461,
+            "review_datetime_utc": "08/07/2024 03:47:41",
+            "review_text": "Disappointed Optimist Hall hid this review regarding neurodiverse adults experience with their staff. This does not seem to be an inclusive, welcoming environment."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiaWRITHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaWRITHNRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbidHLsQE%7CCgwI7N7JtQYQuJDdvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722969964,
+            "review_datetime_utc": "08/06/2024 18:46:04",
+            "review_text": "Love the Dumpling Lady."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURELWJ2QTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURELWJ2QTlnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDD-bvA9gE%7CCgsIwMbEtQYQuPnkNQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722884928,
+            "review_datetime_utc": "08/05/2024 19:08:48",
+            "review_text": "Choice of foods..... Parking 90 min free download the app\nAs always I found a lot of options for my lunch.\nDon't hesitate to visit"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURicnBlZmdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURicnBlZmdnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbrpefggE%7CCgwI7eXDtQYQ8OjlxAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1722872557,
+            "review_datetime_utc": "08/05/2024 15:42:37",
+            "review_text": "Work with adults with disabilities, IDD and down syndrome. For today's outing we decided to go to optimist hall to enjoy a brisk safe walk around the shops and restaurants.\nOur participants brought their own snacks and staff bought food from the shops.\n\nThe property management walked around, and told security to tell us we cannot bring any outside food. We may only eat the food that is provided by the shops.\nThe security guard was very embarrassed (rightfully so) to be telling us this considering we are not bothering anyone.\n\nIt's really hard to find places in the community where adults with different capabilities are able to enjoy the atmosphere without some kind of stipulation, regulation, or lack of accessibility.\n\nIf they were infants or small children and we brought their own milks snacks or food would this have happened too?\n\nWhere is your compassion UN-Optimist hall?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNbzY3YlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNbzY3YlhREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICMo67bXQ%7CCgwIk_q4tQYQgJzW8wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722694931,
+            "review_datetime_utc": "08/03/2024 14:22:11",
+            "review_text": "If you not sure what to eat or have family that wants something different than you but yall want to go out as a family to eat?! Optimist Hall is the place for you!! So many choices you might have to get coffee or stop at the bar before you make up your mind!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURidUtiRW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURidUtiRW13RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbuKbEmwE%7CCgsIm6SwtQYQwLaqYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722552859,
+            "review_datetime_utc": "08/01/2024 22:54:19",
+            "review_text": "Great spot for food and drinks!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiMklldFNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiMklldFNREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDb2IetSQ%7CCgwI_oCwtQYQiOuzlgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722548350,
+            "review_datetime_utc": "08/01/2024 21:39:10",
+            "review_text": "The dumpling lady. The dumpling lady.   I saw some other good menus but that was my goto. Plenty of seating and nice atmosphere inside and out"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURibUtLVzNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibUtLVzNBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbmKKW3AE%7CCgwIz6WvtQYQgNqakQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722536655,
+            "review_datetime_utc": "08/01/2024 18:24:15",
+            "review_text": "What a great place to hang out!  My teen granddaughters and I found it almost by mistake and thoroughly enjoyed it!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiZ05qN1pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiZ05qN1pBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDbgNj7ZA%7CCgwIkISqtQYQuNbfgAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722450448,
+            "review_datetime_utc": "07/31/2024 18:27:28",
+            "review_text": "This place has gained variety and popularity throughout the post covid years. The choices of eateries and welcoming easy going atmosphere is what attracts people what I feel. Their parking is free for 1.5 hours if you register in some app (can do it once you reach there). Parking fine is high like $55 and you get a bill suddenly after 3 months. So be careful and thank me later."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNidDdHaGtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNidDdHaGtBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbt7GhkAE%7CCgwItfaltQYQ4OOAowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722383157,
+            "review_datetime_utc": "07/30/2024 23:45:57",
+            "review_text": "So many great options for food! Great drink and beer selection. We love visiting this Charlotte staple!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNibDVyNXd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNibDVyNXd3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbl5r5wwE%7CCgsI-_WktQYQ2KK9XQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722366715,
+            "review_datetime_utc": "07/30/2024 19:11:55",
+            "review_text": "Perfect on a Thursday. A little busy on Fridays and Saturdays making it difficult to find a table. I love their selections of food types and the service is usually quick from each place. Great for work meetings, friends outings, or even date night"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNThIYzZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNThIYzZ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb58Hc6wE%7CCgsIxcmktQYQ2MesJw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1722361029,
+            "review_datetime_utc": "07/30/2024 17:37:09",
+            "review_text": "Overpriced meh food. Vibe is cool but the food is just not appealing at all. 100% a tourist trap. There's also really nothing to do here but eat avg food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaDh6M1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaDh6M1lnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbh8z3Yg%7CCgwIjqqjtQYQ8JjHyQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1722340622,
+            "review_datetime_utc": "07/30/2024 11:57:02",
+            "review_text": "Went to get dumplings and a \"kfc\" bun, both were not great,  the chicken in the bun was hard and tough and the sauce for the dumplings were not great,  along with the filling in the dumplings were nasty and it was made with chicken too. This was my second time at both restaurants,  first time was great but won't be going back to either.  Atmosphere is great tho,  overall will go back to optimist hall just not the two restaurants."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiLTZ1N1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiLTZ1N1B3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb-6u7Pw%7CCgsIrpijtQYQwLyaPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722338350,
+            "review_datetime_utc": "07/30/2024 11:19:10",
+            "review_text": "This is a really unique cafeteria food court spot! I'm so glad we found this on our weekend in Charlotte. They have a lot of options for food so everyone can find what they want and you can either sit in and sit at the picnic tables or get your food to go. It's busy but not extremely crowded even on a weekend. I got the Ethiopian food and it was delicious! The girls were so polite too. My husband tried the Bun shop and he was happy with his food too. They have Asian, bars, fusions, salads, smoothies, bbq. If you're looking for a healthy bite, they have it. Or just an ice cream treat or an alcoholic drink to relax. This is a cool spot to hang out with friends or get a quick lunch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiMDllMDl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiMDllMDl3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb09e09wE%7CCgwI7KeftQYQgOXN4wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722274796,
+            "review_datetime_utc": "07/29/2024 17:39:56",
+            "review_text": "I visited the food stalls and found around 10-15 stalls inside. However, I was disappointed to see that many of them offered only a few menu items. This limited variety may not cater to everyone's preferences.\n\nAdditionally, the parking situation outside was a drawback. While there was parking available, it came with a catch - visitors were charged for parking for more than 90 minutes. This could be inconvenient for those looking to spend a longer amount of time at the stalls."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNheW9QcFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNheW9QcFRBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICayoPpTA%7CCgsIzu6TtQYQ8NCsMw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722087246,
+            "review_datetime_utc": "07/27/2024 13:34:06",
+            "review_text": "Great atmosphere for lunch with plenty of options that aren't your typical food court restaurants."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiOXNyTnVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiOXNyTnVBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb9srNuAE%7CCgsIuoaRtQYQ0IeXFQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1722041146,
+            "review_datetime_utc": "07/27/2024 00:45:46",
+            "review_text": "The burger is too salty, typical American. But the beer is good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNib3RqczJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNib3RqczJRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbotjs2QE%7CCgsIw96GtQYQuNOAIw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721872195,
+            "review_datetime_utc": "07/25/2024 01:49:55",
+            "review_text": "THANKFUL/ HIGHLY RECOMMEND- I was at Felix Empanadas and Raymond Burkle a part of hospitality thanked me for my service as I was in my military uniform and paid for my meal. This meant more than he knows as it has been a hard week. To make it even better the food was absolutely amazing! I suggest the chicken and cheese empanada and get the spinach one to top off all the flavors. The sauces were also super flavorful and fresh! They also have side salads if you want a low carb option!! My four year old niece was also with me and she was able to visit Archer Paper Goods where they had kids toys for her to pick out with a decent price. Great experience and I truly can't wait to go back with my family!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNid3VXSjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNid3VXSjdnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbwuWJ7gE%7CCgwIkLeGtQYQuKHknQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721867152,
+            "review_datetime_utc": "07/25/2024 00:25:52",
+            "review_text": "Really cool spot to check out. A friend recommended it to me when they saw I was in town and so it was a nice find. 30 minutes complimentary parking, lots of food options from breakfast to dinner and cool little shops inside. Really liked the plant store personally. Lots of natural light and I can imagine it's something nice to see at night when the bars outside liven up. Definitely worth a visit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNid3NMc1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNid3NMc1J3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbwsLsRw%7CCgsInpOGtQYQiNXvRQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721862558,
+            "review_datetime_utc": "07/24/2024 23:09:18",
+            "review_text": "One of my favorite spots in Charlotte! I've tried a variety of stalls here, and not a single one left me feeling unimpressed. Fantastic food, and perfect for large group outings, it does get plenty busy, so go early or be prepared to hunt down seats. I recommend the date and bacon empanada at the stall next to the grilled cheese place, and the dumplings of course!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiM082RnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiM082RnZ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb3O6FvwE%7CCgwI-peEtQYQ2PmBkQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721830394,
+            "review_datetime_utc": "07/24/2024 14:13:14",
+            "review_text": "I'd never been before,  it was a great atmosphere and plenty of choices for food. I definitely recommend that you register for the Free 90min parking"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNidEtDMUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNidEtDMUJREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICbtKC1BQ%7CCgwIyKaAtQYQ2ImE0QI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1721766728,
+            "review_datetime_utc": "07/23/2024 20:32:08",
+            "review_text": "I hate to leave this review because I used love this place. We were excited to bring our out of town friends here for lunch & drinks. We had a great time and enjoyed everything from each of the 5 different vendors we ordered from. Today, a month after our visit, I received a $50 parking ticket in the mail. Apparently we were 18 minutes over the free parking time limit. It is hilarious to me that Optimist Hall puts their parking reviews on a different page to not bring down their stars. Everyone please look at Optimist Hall Parking reviews. Hundreds of people have received $50 tickets while they were inside spending their money and providing business to Optimist Hall. I will not be returning."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiMUxmQlB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiMUxmQlB3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb1LfBPw%7CCgsI-KGAtQYQuKmfRw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1721766136,
+            "review_datetime_utc": "07/23/2024 20:22:16",
+            "review_text": "The parking situation has made this destination a nightmare. It automatically had my credit card and charged me $20 on top of the cost of lunch. There are other food hall locations I will be visiting in the future for that alone."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiNU5QN1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiNU5QN1F3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb5NP7Qw%7CCgwIr6__tAYQ8PjLtwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721751471,
+            "review_datetime_utc": "07/23/2024 16:17:51",
+            "review_text": "I love the Mediterranean spot Meza and the Indian street food . My sons love Optimus Hall just for hanging out really"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNk5uUHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNk5uUHBBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICb6NnPpAE%7CCgsIsNT7tAYQkP_WTQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721690672,
+            "review_datetime_utc": "07/22/2024 23:24:32",
+            "review_text": "Great place to go with friends or kids with a wide variety of different restaurants and shops and bars, etc... great outdoor seating as well as inside for rainy days. Definitely a cool spot!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLdk9PME5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLdk9PME5REAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICKvOO0NQ%7CCgwIpsD3tAYQ6MOziQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721622566,
+            "review_datetime_utc": "07/22/2024 04:29:26",
+            "review_text": "A lot to choose from, great place  and always clean. Food always delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURycDktRjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURycDktRjVRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrp9-F5QE%7CCgsI0_XwtAYQqJr1TQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721514707,
+            "review_datetime_utc": "07/20/2024 22:31:47",
+            "review_text": "Anything and everything! Fantastic food. Ava pizza is the best!! Chef Mark rocks!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyMl9idm53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyMl9idm53RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr2_bvnwE%7CCgwIxfzutAYQ-KDQgQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721482821,
+            "review_datetime_utc": "07/20/2024 13:40:21",
+            "review_text": "Love the variety of places to eat. Our favorite is Bao & Broth. Their spicy pork ramen is great and the pork belly in it is best I've had. Other great spots - Mezzah, Dumpling Lady...\nTends to be a bit pricey all the way around and parking costs after 90 min (and registering for parking is a pain).\n\nGreat outdoor and indoor seating. Can get busy, but always somewhere to sit. Love the industrial feel."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSM3BidXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSM3BidXBBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICR3pbupAE%7CCgsIzfXqtAYQqPWqTg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721416397,
+            "review_datetime_utc": "07/19/2024 19:13:17",
+            "review_text": "Great place, alot of food variety...very vibrant!!!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyZzVfSDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyZzVfSDNRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrg5_H3QE%7CCgwI663qtAYQ6MifoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721407211,
+            "review_datetime_utc": "07/19/2024 16:40:11",
+            "review_text": "Ambient hall with lots of food options and a couple of coffee shops. Parking lot is big which usually fills up pretty quick but there is ample parking around. First 90min of your parking is free if you enroll on a parking app."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyamNyWThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyamNyWThnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrjcrY8gE%7CCgwIqKzntAYQ6OTFrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721357864,
+            "review_datetime_utc": "07/19/2024 02:57:44",
+            "review_text": "Such a great place to go and hang out. There is over 20 food vendors to choose from and a ton of seating. It's great place to go with friends and try different foods. I've been to many different stalls and I haven't found one I don't like. And I always recomend Suarez for dessert."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyamVLbFRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyamVLbFRREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrjeKlTQ%7CCgsI_6rntAYQwODnSQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721357695,
+            "review_datetime_utc": "07/19/2024 02:54:55",
+            "review_text": "Always a favorite. You can't go wrong here"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyaGZmSUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyaGZmSUN3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrhffICw%7CCgwI_cLltAYQgLbWhAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721327997,
+            "review_datetime_utc": "07/18/2024 18:39:57",
+            "review_text": "A really well done adaptation and preservation of the historic mill structure."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyLWFhOU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyLWFhOU5REAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr-aa9NQ%7CCgwIhpjltAYQ8K70_QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721322502,
+            "review_datetime_utc": "07/18/2024 17:08:22",
+            "review_text": "Optimist Hall is one of Charlotte's best kept secrets. Make your way there!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyNmM3VkVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyNmM3VkVBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr6c7VEA%7CCgwI2KXktAYQiP-ItgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721307864,
+            "review_datetime_utc": "07/18/2024 13:04:24",
+            "review_text": "Very pricey mea options, but delish food. Great for group outings, or a date. Nothing fancy, nice laid back and casual."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyZ2ZTQWZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyZ2ZTQWZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrgfSAfg%7CCgwIqpnhtAYQ0IyXxgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721257130,
+            "review_datetime_utc": "07/17/2024 22:58:50",
+            "review_text": "In the heart of the University near NODA.\nWent to Noble Smike, but it was disappointing. The grill cheese place looked way better, I think it's called Goddess something"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURydnJ6NDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURydnJ6NDB3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrvrz40wE%7CCgwIyNPgtAYQ4JCSxQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721248200,
+            "review_datetime_utc": "07/17/2024 20:30:00",
+            "review_text": "This is such a cute place and I'm absolutely jealous of all the locals who get to come here all the time! The parking was a breeze and very simple to use! (I love the fact the first ninety minutes are free as it gives you enough time to grab lunch and explore.) The Lady Dumpling was my favorite to swing by as the Dan Dan Noodles were absolutely scrumptious and had enough spice for me to be satiated. Also the Chengdu Style Dumplings were refreshing when you needed a break from the spice. The plant and paper shops are absolutely gorgeous!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURybnYteWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURybnYteWJBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrnv-ybA%7CCgsIs6rgtAYQ0PrhNQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721242931,
+            "review_datetime_utc": "07/17/2024 19:02:11",
+            "review_text": "The Optimist Hall is a cool place to hang out. I usually go either on my day off or after work to hang before heading home.  I love the Zukku Sushi restaurant. Their poke bowls are worth the money. You can customize the bowls to your taste. Harriet's Hamburger is also a great dining options.  Their smashburgers are the bomb. They're supposed to be opening a store in Ballantyne in The Bowl at Ballantyne.\nThere are many other places to try at the Optimist Hall. Come take a look."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5OXEtZXdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5OXEtZXdBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID99q-ewAE%7CCgsIs8HftAYQ8O6HPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721229491,
+            "review_datetime_utc": "07/17/2024 15:18:11",
+            "review_text": "Legit the best place to come with friends. Options for everyone."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURocHBlME9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURocHBlME9BEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDhppe0OA%7CCgsI7-3atAYQ2OjuNw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721153263,
+            "review_datetime_utc": "07/16/2024 18:07:43",
+            "review_text": "This place is phenomenal  can't go wrongg with taking family or friends here with different food taste buds... they have everything  (Ethiopian Restaurant - vegan plate) Great atmosphere! Chill vibe!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyMHNtSk5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyMHNtSk5BEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr0smJNA%7CCgsIwsfZtAYQsOWcPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721131970,
+            "review_datetime_utc": "07/16/2024 12:12:50",
+            "review_text": "Fantastic food and atmosphere. Can't say enough about how much I enjoyed going here-- and coming back each time, I find something new. Whether you're local or a tourist visiting the area, this is a must."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyN1BUcFBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyN1BUcFBREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr7PTpPQ%7CCgwIqN_VtAYQ8OOh9AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721069480,
+            "review_datetime_utc": "07/15/2024 18:51:20",
+            "review_text": "Great use of space of the old wheat mill. There are so many different places to eat and sit in."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyckptMzJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyckptMzJnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrrJm32gE%7CCgwInMTVtAYQ8KWmmAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1721066012,
+            "review_datetime_utc": "07/15/2024 17:53:32",
+            "review_text": "Parking is a headache and the metropolis is a thief sent me $50 fine for parking."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSURyOUoxbBAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURyOUoxbBAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDr9J1l%7CCgwI-M_UtAYQiNaY0QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721051128,
+            "review_datetime_utc": "07/15/2024 13:45:28",
+            "review_text": "Lots of options and will definitely return to try more vendors. Didn't like being there on Saturday as it was too crowded for my taste and you had to search for a place to sit. Like hawks watching for prey. Will definitely try a different time of day of the week."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyaE5xd1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyaE5xd1FREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrhNqwQQ%7CCgsImLrQtAYQoLekGw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720982808,
+            "review_datetime_utc": "07/14/2024 18:46:48",
+            "review_text": "Super fun place w lots of good food and drink options. Can't wait to come back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURybU9xVWJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURybU9xVWJREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDrmOqUbQ%7CCgsI6P_MtAYQ2OiQAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720926184,
+            "review_datetime_utc": "07/14/2024 03:03:04",
+            "review_text": "This is a great place to eat it not quite in uptown so you don't have the big crowds. Its a great setting I don't live to far away maybe some of the restaurants will won't a review. If they get in contact i will gladly try out there place and review it for them."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyeUpmQU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyeUpmQU9BEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDryJfAOA%7CCgsI_OTKtAYQoLypeg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720889980,
+            "review_datetime_utc": "07/13/2024 16:59:40",
+            "review_text": "This is a must-have experience if you're visiting Charlotte! So many different food vendors and ALL of them look phenomenal! I had pizza, my son had an acai bowl, and my wife had Indian. All of them were delicious and decently priced. The atmosphere is fun, diverse,  and friendly with a wide variety of seating options, inside or outside."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyeUlEeFBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyeUlEeFBnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDryIDxPg%7CCgwI2JDKtAYQoOa3wQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720879192,
+            "review_datetime_utc": "07/13/2024 13:59:52",
+            "review_text": "Predatory parking fees from Metropolis parking contracted by optimist hall has made my family and I reconsider ever going there again. A $45 fine for a $5 parking fee is unreasonable and instructions how to pay are not clear to everyone. It's too bad because we like Optimist hall but it has really ruined our experience and perception as a customer family friendly location in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyXzUtSzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyXzUtSzNnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr_5-K3gE%7CCgwIvMHFtAYQgI2QkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720803516,
+            "review_datetime_utc": "07/12/2024 16:58:36",
+            "review_text": "Enjoy the food and atmosphere.  Don't like the parking situation."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyXzZIUjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyXzZIUjhnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr_6HR8gE%7CCgwI0qbFtAYQyMHy0gM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1720800082,
+            "review_datetime_utc": "07/12/2024 16:01:22",
+            "review_text": "Just ok. Building smells of old gear oil. Like really bad."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNydi0yR0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydi0yR0VBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrv-2GEA%7CCgwItfnEtAYQsJXaxAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720794293,
+            "review_datetime_utc": "07/12/2024 14:24:53",
+            "review_text": "Beautiful place to visit food was delicious we visited from Florida and this placebos nice family friendly love we try the brisket sandwiche from Noble Smoke!Best Brisket Ever!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyMzUtU3hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyMzUtU3hRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr35-SxQE%7CCgsI29HEtAYQsNDXfw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720789211,
+            "review_datetime_utc": "07/12/2024 13:00:11",
+            "review_text": "This market's got a cool U-shape layout with both indoor and outdoor sections. Tons of food options and little shops to check out - definitely keeps you busy. The indoor seating area has these cute plants hanging from the ceiling, giving it a nice natural vibe.\n\nIf you're in the area, it's worth swinging by. Solid spot to kill some time and maybe grab a bite."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNydDhxNlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydDhxNlpnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrt8q6Zg%7CCgwIsLDCtAYQ0IvFngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720752176,
+            "review_datetime_utc": "07/12/2024 02:42:56",
+            "review_text": "Awesome atmosphere and great food selection"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyMTZPSE93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyMTZPSE93EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr16OHOw%7CCgwIgJjCtAYQyJOu2AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720749056,
+            "review_datetime_utc": "07/12/2024 01:50:56",
+            "review_text": "This place has a nice variety of food options as well as a beautiful scenery. My favorite restaurants are Felix handmade empanadas and undercurrent coffee. During the week this place is great to sit and chill while working. During the weekend it's the place to be for vibes!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyaDVXbjJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyaDVXbjJBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrh5Wn2AE%7CCgwIxLvAtAYQuPvMmwI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1720720836,
+            "review_datetime_utc": "07/11/2024 18:00:36",
+            "review_text": "This is a very cool place with a good selection of eats and shopping but the parking is stupid.. you get charged after 90 minutes and you have to put a credit card on file.. really really don't like that."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyaDQ2RHNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyaDQ2RHNBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrh46DsAE%7CCgwI4K3AtAYQ8M2tqgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720719072,
+            "review_datetime_utc": "07/11/2024 17:31:12",
+            "review_text": "Metropolis Parking Fee: lack of obvious signs especially to people used to it being free, and punitive fine that arrived USPS a month later was exorbitant. $50+ on what was a $5 charge. Difficult to resolve.\nRequires download app on smartphone and a valid credit card.\nAbsolutely I view OH differently now and will avoid the establishment in favor of places with more traditional parking schemes, like gates, attendants, and ability to pay cash."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNydTVYSDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNydTVYSDRnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICru5XH4gE%7CCgwIr9G_tAYQoK3BxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720707247,
+            "review_datetime_utc": "07/11/2024 14:14:07",
+            "review_text": "Fire"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyZzRUWmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyZzRUWmNBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrg4TZcA%7CCgwI1NS6tAYQuL7UqgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720625748,
+            "review_datetime_utc": "07/10/2024 15:35:48",
+            "review_text": "Nice place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyclluT21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyclluT21RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrrYnOmQE%7CCgwI6om4tAYQ6LGGmgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720583402,
+            "review_datetime_utc": "07/10/2024 03:50:02",
+            "review_text": "I always have an amazing time I go there. I love how clean and chill the atmosphere is. The employees are always very nice and the food is good every time. Sometimes the wait for the food is a bit long, but I don't mind it. Usually during that time, I walk around the stores while I wait. Food can get a bit pricy, but it's not that bad. It's a great date or hangout spot. I also love the hand washing stations they have throughout the building."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNycWVYUm93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNycWVYUm93RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrqeXRowE%7CCgsI64OxtAYQ0P-mVg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720467947,
+            "review_datetime_utc": "07/08/2024 19:45:47",
+            "review_text": "A great idea.   All types of food and beverages under one roof!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeWNuSWxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeWNuSWxBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrycnIlAE%7CCgwI08OwtAYQkMvIjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720459731,
+            "review_datetime_utc": "07/08/2024 17:28:51",
+            "review_text": "Highly recommend! Great atmosphere and food options. I will return the next time I'm in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyNGREZzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyNGREZzd3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr4dDg7wE%7CCgsIn6-ttAYQ4KWaQw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1720407967,
+            "review_datetime_utc": "07/08/2024 03:06:07",
+            "review_text": "Cool food court created from and old ware house in uptown. There are plenty of food options for every palate. Long waits even on a Sunday evening due to cooked to order but that is a small price to pay."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4MnZhQkhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4MnZhQkhREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDx2vaBHQ%7CCgwI19ystAYQsPaS8AI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720397399,
+            "review_datetime_utc": "07/08/2024 00:09:59",
+            "review_text": "First let's start with the food. It is good and I would go back if the parking wasn't a scam. Many different types of food options and everyone was happy. To eat you must park. I went over the free 90 min parking due to spending money at the shops along with dinner.  I have no problem paying a fee and even a fine. However $65 dollar fine for a $5 fee is nuts. I will not return."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyd2F5cjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyd2F5cjdRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrwayr7QE%7CCgsI76mstAYQgO3CTQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720390895,
+            "review_datetime_utc": "07/07/2024 22:21:35",
+            "review_text": "I had the best grilled cheese and tomato soup of my life at Papi Queso and the service was so quick and the staff were very friendly. I walked around and loved all the different shops and food options and music! Good vibes all around!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyZ2ZiSy1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyZ2ZiSy1RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrgfbK-QE%7CCgwIz_mrtAYQ0JD-wgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720384719,
+            "review_datetime_utc": "07/07/2024 20:38:39",
+            "review_text": "I'm blown away!! All of the places I tried were amazing we went back again for the second day of our trip! Only thing I wasn't a fan of was lack of indoor seating, smaller tables would be nice there were a lot of solo or couples taking up\nHuge table\nTo Themselves"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyM3NPTEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyM3NPTEl3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr3sOLIw%7CCgsIhueqtAYQuITATg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720365958,
+            "review_datetime_utc": "07/07/2024 15:25:58",
+            "review_text": "This review is more about the vibe of the place and the food selections. I can't speak on the quality of every single restaurant/store, but Optimist Hall is a great place to go on a casual date or to meet up with friends and hang out for awhile."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyMXNfclVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyMXNfclVnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICr1s_rUg%7CCgwIrIentAYQiJab5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720304556,
+            "review_datetime_utc": "07/06/2024 22:22:36",
+            "review_text": "Very neat place. Lots of food and drink choices. Outside area is kid friendly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNybHBDdDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNybHBDdDJBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrlpCt2AE%7CCgsI8qCmtAYQ-NapDg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720291442,
+            "review_datetime_utc": "07/06/2024 18:44:02",
+            "review_text": "Nice place to visit and you get everything in a single place. Stores are properly organized and hall is designed in a circular fashion so that we won't miss any store and don't feel lost.\nOnly draw back I see is the food which is little expensive and don't have varieties. But if you go out, we have lot of options near by."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeHItcGtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeHItcGtBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrxr-pkAE%7CCgwIyLCltAYQqO_EwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720277064,
+            "review_datetime_utc": "07/06/2024 14:44:24",
+            "review_text": "very cool place for many different foods.. parking is not free but plenty available.. take your time to explore"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeXZHTG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeXZHTG13RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICryvGLmwE%7CCgsI8dqhtAYQ8P3jbw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1720216945,
+            "review_datetime_utc": "07/05/2024 22:02:25",
+            "review_text": "Horrible establishment to have an invisible parking company... Metropolis. They used to have free parking and surprise surprise... 3 months later after visiting for a quick bite, I get a bill in the mail for 5 dollars plus a 50 dollar FINE! Can you at least post signs that clearly indicate there is now parking fees!? I would have paid 5 bucks to park and eat at your over priced food establishment. So many better options outside the city. Not worth the drive to this place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyeXRMZ0tBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyeXRMZ0tBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrytLgKA%7CCgsI0MihtAYQsNSVXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720214608,
+            "review_datetime_utc": "07/05/2024 21:23:28",
+            "review_text": "So many great places to eat. Love it if your group has different tastes."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyckpicUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyckpicUNREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrrJbqCQ%7CCgwI4cebtAYQkNLCrAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720116193,
+            "review_datetime_utc": "07/04/2024 18:03:13",
+            "review_text": "Great selection to choose from - I had freshly made empanadas, my daughter had ramen, and both meals were delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyck15ZzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyck15ZzRBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrrMyg4AE%7CCgwIyL6btAYQqMGZkQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720115016,
+            "review_datetime_utc": "07/04/2024 17:43:36",
+            "review_text": "Great place with lots of food options, from classic to exotic. Wonderful laid back vibe in this historic former mill."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyek91NnlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyek91NnlnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrzOu6ygE%7CCgsI1q-btAYQ2LuEDA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720113110,
+            "review_datetime_utc": "07/04/2024 17:11:50",
+            "review_text": "Terrific variety of food stands and comfortable and plentiful seating. Plenty  good choices from Italian , Japanese to classic Jewish deli."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNydU1LSHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNydU1LSHdnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICruMKHwgE%7CCgwI5tiXtAYQkMTojQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720052838,
+            "review_datetime_utc": "07/04/2024 00:27:18",
+            "review_text": "New and upbeat food market for all to come and enjoy. Optimist Hall is the place to be. They have so many food options and healthy too! Can't wait to go back and try some local coffee. Very relaxed and chill vibes. Good for changing scenery while working or grabbing a bite to eat with family or friends. This place really is gem and I hope that it expands. The center needs more spots like this! We ate dessert and then lunch and played corn hole. Then toured some of the shops. It was a really great experience!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyaVBmOW5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyaVBmOW5nRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICriPf9ngE%7CCgwIvcSVtAYQqLDmjwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720017469,
+            "review_datetime_utc": "07/03/2024 14:37:49",
+            "review_text": "Great place for some food and drink. Lots of options and they are all very good. My vegan friends had lots of options and my wife and I enjoyed our non vegan meals."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNya0oydGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNya0oydGd3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrkJ2tgwE%7CCgwI1IaUtAYQiJjT3QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719993172,
+            "review_datetime_utc": "07/03/2024 07:52:52",
+            "review_text": "Great atmosphere, lots of great food choices, and fun outdoor dining"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyZ055aWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyZ055aWlBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICrgNyiiAE%7CCgsIko-StAYQwLDiUA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719961490,
+            "review_datetime_utc": "07/02/2024 23:04:50",
+            "review_text": "Really amazing family place to visit with guests, dates and coworkers all year around."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMbjUya2d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMbjUya2d3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLn52kgwE%7CCgwIsNyQtAYQ6IK_rgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719938608,
+            "review_datetime_utc": "07/02/2024 16:43:28",
+            "review_text": "Great food hall with lots of options"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMcC1TaGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMcC1TaGRBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLp-ShdA%7CCgsIvvaLtAYQiJXpXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719860030,
+            "review_datetime_utc": "07/01/2024 18:53:50",
+            "review_text": "Consumimos en dos lugares al mismo tiempo, en un restaurante de comida Africana como tambien consumimos postres en el lugar de comida mexicana, lo que me sorprendio es que hay mas lugares para sentarse afuera del edificio en la terraza que adentro, los locales no cuentan con mas de una mesa para sus comensales, sin embargo si es una familia grande o si es un evento de mas de 6 personas, tendran que buscar otras opciones para consumir, no es un lugar adecuado para ir a comer como en un restaurante, podria ser mas para familias pequenas y parejas de no mas de 3 personas, es PET  friendly asi que puedes llevar a tu mascota, tambien no vi muchas facilidades para bebes como sillas altas o menus especiales para ninos en la mayoria de los locales de comida"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMeF9YZnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMeF9YZnZ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLx_XfvwE%7CCgwIhtmLtAYQqMnegQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719856262,
+            "review_datetime_utc": "07/01/2024 17:51:02",
+            "review_text": "First time visit was this weekend and wow what an amazing experience! Love the variety of eats available, trendy and fun atmosphere, family friendliness and endless people watching opportunities. Were I local this would be a regular stop for me!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtX0x6YnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtX0x6YnJRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC-_LzbrQE%7CCgwI9cOLtAYQqIjdzgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1719853557,
+            "review_datetime_utc": "07/01/2024 17:05:57",
+            "review_text": "First of all I like this place but that chicken sandwich  from Betty's was horrible if I opened it bf I left i would have  returned it and  got my money back\nService was horrible . Will never buy there again"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMeDdyaHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMeDdyaHBBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLx7rhpAE%7CCgsI9cKLtAYQ4LiXNA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719853429,
+            "review_datetime_utc": "07/01/2024 17:03:49",
+            "review_text": "My Granddaughter lives in the area. We go here whenever I visit her. She loves the Ramen and I'm a big fan of Noble Smoke. We've tried several other places and they are all excellent."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMOF9LZWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMOF9LZWtRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL8_KekQE%7CCgsIzMmGtAYQuIyyNg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719772364,
+            "review_datetime_utc": "06/30/2024 18:32:44",
+            "review_text": "Very Diverse place and melting pot of options.\n\nEmpanadas was A1, India restaurant had an awesome chicken sandwich."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMczRMemp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMczRMemp3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLs4LzjwE%7CCgwI4JSGtAYQsJWQswM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719765600,
+            "review_datetime_utc": "06/30/2024 16:40:00",
+            "review_text": "I absolutely love Optimist Hall, it has something in there for everyone. A great food court to go to when you're with a group that don't have a clue what they want to eat or everyone wants to eat certain things but want to eat together this is a great option, from sushi, pizza dumplings, Indian, Mediterranean food, and even desserts, great chill family friendly spot."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMX1lXUTR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMX1lXUTR3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL_YWQ4wE%7CCgwIuJWDtAYQ4P_lnQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719716536,
+            "review_datetime_utc": "06/30/2024 03:02:16",
+            "review_text": "Indian Grill was AMAZING "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMM2JyVEhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMM2JyVEhnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL3brTHg%7CCgwI-PCBtAYQ6PPHgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719695480,
+            "review_datetime_utc": "06/29/2024 21:11:20",
+            "review_text": "The atmosphere both outdoors and indoors is always calling again. It's a happening place with a variety of restaurants to eat from."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMamFiMXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMamFiMXR3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLjab1twE%7CCgsI5d7_swYQkN_lFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719660389,
+            "review_datetime_utc": "06/29/2024 11:26:29",
+            "review_text": "What a great space full of many varieties of cuisine. There is surely something here to appease every diner."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMOGJUVVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMOGJUVVd3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL8bTUWw%7CCgsI1JX7swYQiJTCdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719585492,
+            "review_datetime_utc": "06/28/2024 14:38:12",
+            "review_text": "One of my favorite places in CLT to host networking lunches, or to spend the day working / relaxing. And, I always enjoy the food."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMbnVPV2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMbnVPV2xRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLnuOWlQE%7CCgsI4vT3swYQyPi5Wg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719532130,
+            "review_datetime_utc": "06/27/2024 23:48:50",
+            "review_text": "Lots of types of food and drink to choose from. Inside and outside seating."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxay03X2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxay03X2hnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC1k-7_hgE%7CCgwIwvbyswYQ8PzIhgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719450434,
+            "review_datetime_utc": "06/27/2024 01:07:14",
+            "review_text": "We stopped by at this place for lunch since the website stated that this place has different restaurants and store to choose for.\nWe like the food court concepts with different food and beverages options.\nWe ordered noodles and dumplings from the Dumpling lady and they were so good! Get their lunch combo for pick any noodle with 4 dumplings.\nWe also ordered empanadas and famous Harriet's cheeseburgers and fries.\nThey also have candy store and got some old times favorites candies.\nThis place also has pet store that carry dog's food and treats, they have paper stores as well.\nThe service was pretty decent, we didn't wait too long for our food but we were there at 1pm. I like the ambience of this place too, very modern, clean, and fun.\nThey also have water filling station so you can just ask for clear cup and fill your water.\nThe optimist hall also offer 90 minutes free parking so make sure you scan the barcode and enter your license plate #. I heard they are very strict with the parking so pay attention to your parking time.\nHopefully we can come and visit this place again next time we visit Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMd3FYYV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMd3FYYV93RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLwqXa_wE%7CCgwI5f3vswYQyP2gwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719402213,
+            "review_datetime_utc": "06/26/2024 11:43:33",
+            "review_text": "I absolutely love the ambiance here. It's good for a date night, girl's night out, and you could go with the children to hang out here as well.  Plenty of food options, therefore everyone doesn't have to eat at the same place. I would give 10 stars if I could"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMX0pleDFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMX0pleDFBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL_Jex1AE%7CCgwImrvvswYQ6MmbvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719393690,
+            "review_datetime_utc": "06/26/2024 09:21:30",
+            "review_text": "Love that everyone in your group can pick their own adventure and can all eat different foods but still together!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMN0ttb2dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMN0ttb2dnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL7KmoggE%7CCgsI_5juswYQuOjcfw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719372927,
+            "review_datetime_utc": "06/26/2024 03:35:27",
+            "review_text": "All the food was really good, fun place and clean"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMelBEdnpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMelBEdnpBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLzPDvzAE%7CCgsIxLbtswYQwILfZA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719360324,
+            "review_datetime_utc": "06/26/2024 00:05:24",
+            "review_text": "Such a cool spot! Lots of options for food and nice spots to hang out with friends. Music was a little loud for my taste though!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMbEkybTZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMbEkybTZBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDLlI2m6AE%7CCgwI8P3rswYQiIGXuQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719336688,
+            "review_datetime_utc": "06/25/2024 17:31:28",
+            "review_text": "Fun, vibrant,  diverse part of Charlotte that's able to be adult-centric and family-friendly at the same time. Great use of space to create community...every city needs an Optimist Hall!\n\nParking was sufficient and easy to navigate with smartphone to register and pay for parking. Go enjoy a beer at Fonta Flora and stay a little parked a little longer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMNEk2MkFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMNEk2MkFnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDL4I62Ag%7CCgsI4cPmswYQ-MT2IA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719247329,
+            "review_datetime_utc": "06/24/2024 16:42:09",
+            "review_text": "whoever is in charge of the background Music around 12pm, you're doing a great job!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMNTdxa0VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMNTdxa0VREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL57qkEQ%7CCgsIuNDhswYQsIHmZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719167032,
+            "review_datetime_utc": "06/23/2024 18:23:52",
+            "review_text": "I loved the open red brick building and the open, chilled atmosphere "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMdS1QeTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMdS1QeTdnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLu-Py7gE%7CCgsIjLzgswYQoPCtZQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719148044,
+            "review_datetime_utc": "06/23/2024 13:07:24",
+            "review_text": "You must stop there if you're in the Charlotte area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMeThXaGJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMeThXaGJREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLy8WhbQ%7CCgwIz9neswYQyPbX6QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719119055,
+            "review_datetime_utc": "06/23/2024 05:04:15",
+            "review_text": "Awesome place to hangout with friends and have food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoc3FQN0N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoc3FQN0N3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDhsqP7Cw%7CCgwIqKLeswYQuM_srgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719111976,
+            "review_datetime_utc": "06/23/2024 03:06:16",
+            "review_text": "The atomisphere was very soothing and joyful. All types of foods was available. Even Egyptian food was available and tasty. Thank you for that experience and parking was free for 90 minutes. The place was jumping today very nice"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMOC1feVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMOC1feVBREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL8-_yPQ%7CCgwIxYveswYQ8KzFggE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1719109061,
+            "review_datetime_utc": "06/23/2024 02:17:41",
+            "review_text": "Parking is at a premium.  Lot is  small but 90 minutes free. After that you pay. Casual atmosphere. Surprisingly spacious with good seating.  Many food options. Pricey for the amount of food you get. If your group has different tastes, this will work. We have sushi, Ethiopian, and barbecue. The food is good. Vendors are friendly and professional."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMczRHSmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMczRHSmhRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLs4GJhQE%7CCgwI5s7dswYQ8K2N2gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719101286,
+            "review_datetime_utc": "06/23/2024 00:08:06",
+            "review_text": "Only place that I know I can get smoked turkey. They're a little high but the food at Noble Smoke tastes good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMd19fZlJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMd19fZlJREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLw__fRQ%7CCgsI64vcswYQ-N-OFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719076331,
+            "review_datetime_utc": "06/22/2024 17:12:11",
+            "review_text": "This place has an incredible amount of options - Ethiopian, empanadas, bao, ramen, burgers, sushi, BBQ, really anything you can think of. Love the variety and ability to order something from different places and enjoy a full meal"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMZzhicTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMZzhicTNnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLg8bq3gE%7CCgwIn87bswYQwNyv5wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719068447,
+            "review_datetime_utc": "06/22/2024 15:00:47",
+            "review_text": "Awesome place! Food, food, and more food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMOWJXLUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMOWJXLUtnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL9bW-Kg%7CCgwIwozZswYQkK-C3gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719027266,
+            "review_datetime_utc": "06/22/2024 03:34:26",
+            "review_text": "This is a really great place to grab food and drinks for anyone coming to town and have options for everyone's different food taste. There are also some shops like a stationary store and plant shop to buy any gifts for people or yourself."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMdWNmUWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMdWNmUWV3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLucfQew%7CCgwImK7VswYQiJOYkwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718966040,
+            "review_datetime_utc": "06/21/2024 10:34:00",
+            "review_text": "Great location to hang out with your family and friends. Lots of great restaurants to choose from. There's definitely something for everyone."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMNGQ3LXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMNGQ3LXZnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL4d7-vgE%7CCgwIurLOswYQ-KLvsQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718851898,
+            "review_datetime_utc": "06/20/2024 02:51:38",
+            "review_text": "Great variety"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMMXNLMHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMMXNLMHBnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL1sK0pgE%7CCgwIxJbIswYQ6PKV8gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1718750020,
+            "review_datetime_utc": "06/18/2024 22:33:40",
+            "review_text": "The parking policy is terrible here. I was subject to a $45 fine for unpaid parking. It was my 1st time there since it first opened and I was unaware of the new parking policy. I arrived on 5/17 around 8:30pm it was raining heavily and I didn't see any visible signs that stated the paid parking was enforced due. To the heavy rain. Apparently the fee was $5 to park which I was unaware of and the fine for failure to pay was $45. I tried to appeal explain the situation and offered to pay the original $5 fee. I included a weather report that showed severe rain from 8-10pm on 5/17. Long story short I still had to pay the fine which is ridiculous. This fine is excessive  and is almost predatory. I will make sure I never return to Optimist Hall."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMbG9YaUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMbG9YaUZBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLloXiFA%7CCgwIjPbHswYQuJeskgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718745868,
+            "review_datetime_utc": "06/18/2024 21:24:28",
+            "review_text": "Lots of options, decent parking, and relaxing atmosphere. Really like the Bao and Dunpling options."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMcHJUUG9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMcHJUUG9nRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLprTPogE%7CCgwIrPTGswYQiMO80gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718729260,
+            "review_datetime_utc": "06/18/2024 16:47:40",
+            "review_text": "Plenty of choices, clean, friendly... can get very busy and crowded. Parking can be a challenge"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMaHJEdUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMaHJEdUd3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLhrDuGw%7CCgwIxInGswYQ6LXf8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718715588,
+            "review_datetime_utc": "06/18/2024 12:59:48",
+            "review_text": "Great place to eat and hangout."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMeXV2YjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMeXV2YjJRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLyuvb2QE%7CCgwIt_DCswYQwMGPxQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718663223,
+            "review_datetime_utc": "06/17/2024 22:27:03",
+            "review_text": "Options for everybody, perfect place to take a large group. There is plenty of seating and every type of food you could want."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6bjhiRGlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6bjhiRGlRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzn8bDiQE%7CCgwI7dPCswYQ8J2KuwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718659565,
+            "review_datetime_utc": "06/17/2024 21:26:05",
+            "review_text": "So many choices! Love the old textile factory feel."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMMHVpZ1Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMMHVpZ1Z3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL0uigVw%7CCgsIpbDAswYQgJCzCQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1718622245,
+            "review_datetime_utc": "06/17/2024 11:04:05",
+            "review_text": "Way expensive and the food wasn't anything I'd go back for. And I had a hard time choosing something I wanted to eat anyway--too overwhelming and crowded. There wasn't really anything for kids either.\nThe place needs advertisements or directories or a map.\nI guess the set up was cool and there is lots of parking."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwa2ZMNTd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwa2ZMNTd3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC0kfL57wE%7CCgwI16W9swYQqJbh3AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718571735,
+            "review_datetime_utc": "06/16/2024 21:02:15",
+            "review_text": "More restaurants! More people. So many of my favorites in one place. Enat, Botiwalla and Mesa! Plus delicious desserts from Suarez.  There is something here for everyone"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMNUpXNlJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMNUpXNlJnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL5JW6Rg%7CCgsIqqK2swYQoIzYRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718456618,
+            "review_datetime_utc": "06/15/2024 13:03:38",
+            "review_text": "Lovely atmosphere with numerous places to eat. We have yet to find something we don't like! Highly recommend the grilled cheese place and Box Car Betty's!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMdUt5M1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMdUt5M1RnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICLuKy3Tg%7CCgwIloOzswYQ4Jy-sgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718403478,
+            "review_datetime_utc": "06/14/2024 22:17:58",
+            "review_text": "Great options, loved the food I had. Nice vibe and clean. Seating is impossible to find and it cost me more to park than it did to eat. Also, no one excepted cash. That was annoying"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMNktuNXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMNktuNXFRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICL6Kn5qQE%7CCgwI2dmxswYQ4PCQtQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718381785,
+            "review_datetime_utc": "06/14/2024 16:16:25",
+            "review_text": "A cool place to eat and get dessert"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6di02dXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6di02dXNnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzv-6usgE%7CCgwIppStswYQ2JCvtAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718307366,
+            "review_datetime_utc": "06/13/2024 19:36:06",
+            "review_text": "A lot of great food stalls along with a stationary store and a place to buy house plants. The parking can get crazy on the weekends so come early."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6cjduS3d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6cjduS3d3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzr7nKwwE%7CCgwIn-yrswYQ2JjUiAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718285855,
+            "review_datetime_utc": "06/13/2024 13:37:35",
+            "review_text": "Botiwalla is awesome!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6cDRTYjlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6cDRTYjlnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzp4Sb9gE%7CCgsImeSoswYQ4OSBbg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1718235673,
+            "review_datetime_utc": "06/12/2024 23:41:13",
+            "review_text": "It seemed more like a bunch of fast food trucks where the food quality was not the most important thing. I liked that everyone could get what they wanted and there were many options, but the quality wasn't great. I had Ethiopian which was good but I suspect that there are better Ethiopian places."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6LTZ6Rmh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6LTZ6Rmh3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz-6zFhwE%7CCgwIkuynswYQwPyoxwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718220306,
+            "review_datetime_utc": "06/12/2024 19:25:06",
+            "review_text": "Great spot to grab food and drink. Many different vendors and businesses to suit most everyone's taste. Looking forward to returning to try some new things."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6dTdMcEF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6dTdMcEF3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzu7LpAw%7CCgsIks2nswYQ4MSbWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718216338,
+            "review_datetime_utc": "06/12/2024 18:18:58",
+            "review_text": "Something for everyone here! Places to eat, cute little shops, outdoor spaces for kids."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6Ni1ubDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6Ni1ubDF3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz6-nl1wE%7CCgwIj-qmswYQ8LG0kgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718203663,
+            "review_datetime_utc": "06/12/2024 14:47:43",
+            "review_text": "This spot is amazing! Great vibe and the food choices are great!! We went last week to hang out for my twins 16th Birthday!! They chose this place bc there are so many different choices for everyone.  Everyone gets to pick what they want. We went in the evening so it was not crowded and we sat outside.  I absolutely luv OH!!\nDownside is you have to pay for parking, which is ridiculous bc the amount of money you spend in here, parking should be free"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6cTdTNXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6cTdTNXp3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzq7S5zwE%7CCgwImLamswYQoNfFvgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718197016,
+            "review_datetime_utc": "06/12/2024 12:56:56",
+            "review_text": "Awesome place to come by and find food! Great if you have picky eaters in a group it can cater to everyone with plentiful options for food from Asian to Indian to BBQ it's covered. Fantastic Gelato joint for dessert. Couple shops for knick nacks and whatnot.\n\nOnly downfall and in my opinion a very big one is they use Card only  no cash here at any establishment which is beyond idiotic considering you have to tax it and it's tracked causing you to pay tax on tax. It's a shame really and it's why I prefer not coming often due to that reason alone."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6N2ZlX0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6N2ZlX0R3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz7fe_Dw%7CCgsIw_-hswYQwOvHDQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718124483,
+            "review_datetime_utc": "06/11/2024 16:48:03",
+            "review_text": "Food was decent but pricey"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlOUszLWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlOUszLWRnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDe9K3-dg%7CCgwI4OuhswYQuN66vQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718121952,
+            "review_datetime_utc": "06/11/2024 16:05:52",
+            "review_text": "Growing up in a city with great delis I love a good corned beef sandwich. l was told about Schreiber's on Rye so I decided to give them a try. Really good sandwich! Not as good as back home (nothing usually is ), but it's a good stand in. My only complaint is the amount of corned beef you get is not piled as high as I'm used to for the price, but I will definitely return!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6emNDMFJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6emNDMFJnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzzcC0Rg%7CCgwI2o6hswYQuMip2QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718110042,
+            "review_datetime_utc": "06/11/2024 12:47:22",
+            "review_text": "Nice hangout spot with a variety of foods. Indoor and outside seating. It's a vibe on a spring/summer day."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6OXEtU0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6OXEtU0pREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz9q-SJQ%7CCgwIutaZswYQ0IbGtwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717988154,
+            "review_datetime_utc": "06/10/2024 02:55:54",
+            "review_text": "Weekend Hangout place.. We especially go here for Botiwala chai and Parle-G deadly combo..\nYou can get good empanadas here.. and some fries.. usually i prefer late evenings.. coz their lights and ambience is lively and peaceful.."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6MHNHNjJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6MHNHNjJnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz0sG62gE%7CCgwIiNGTswYQuNWn9AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717889160,
+            "review_datetime_utc": "06/08/2024 23:26:00",
+            "review_text": "Great alternative for indoor/outdoor casual dining... lots of healthy and not so healthy options all mixed into a unique atmosphere!  Grilled Cheese was a nice choice with crunch and melted cheese.  Their garlic aioli sauce was very flavorful and a nice addition as a dipping sauce.  Would visit again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6OUxMQzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6OUxMQzhnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz9LLC8gE%7CCgsI2_uOswYQsJ68Vg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717812699,
+            "review_datetime_utc": "06/08/2024 02:11:39",
+            "review_text": "Nice selection of cuisines. Food was tasty and I wish I could visit this place more often but I was only passing through on my way to Massachussets"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6NUlfMWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6NUlfMWZREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz5I_1fQ%7CCgwIo8mNswYQoLPqjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717789859,
+            "review_datetime_utc": "06/07/2024 19:50:59",
+            "review_text": "Beautiful facility....so many yummy choices for food and the atmosphere is just Beautiful!! Unfortunately  the public ladies restroom was not clean...and stocked."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6bE9qQzVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6bE9qQzVnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzlOjC5gE%7CCgsI0byNswYQgP_jQA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717788241,
+            "review_datetime_utc": "06/07/2024 19:24:01",
+            "review_text": "Lots of places to eat!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6c0ozeTZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6c0ozeTZRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDzsJ3y6QE%7CCgwI3LiJswYQ4KGPzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717722204,
+            "review_datetime_utc": "06/07/2024 01:03:24",
+            "review_text": "Best place to visit, everyone is kind, caring and nice!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6NEszRFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6NEszRFFBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDz4K3DQA%7CCgwIi8-IswYQ6OCcxQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717708683,
+            "review_datetime_utc": "06/06/2024 21:18:03",
+            "review_text": "Great options and friendly people! Will definitely be going back."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUN6bDZJbRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUN6bDZJbRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzl6Im%7CCgwI_ZaEswYQyMOKsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717635965,
+            "review_datetime_utc": "06/06/2024 01:06:05",
+            "review_text": "I was very surprised with the different selection of choices at this food court. Will go back next time I'm in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6bDZ5VmRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6bDZ5VmRnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzl6yVdg%7CCgsIsZSEswYQ6IXsdQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717635633,
+            "review_datetime_utc": "06/06/2024 01:00:33",
+            "review_text": "Amazing food mall with lots of options. They need more people around to clean tables though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6OC16X3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6OC16X3pnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICz8-z_zgE%7CCgwI-NP-sgYQ6Lv2uQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717545464,
+            "review_datetime_utc": "06/04/2024 23:57:44",
+            "review_text": "We stopped here to eat after my niece's college graduation.  The vibe was nice, there were a lot of options to choose from.  I grabbed a daquiri from the bar which was way over priced. ($14.00 for a tiny cup) but really good. I ended up getting BBQ. The ribs were good but the Mac and cheese was not.  The Banana pudding was decent but I could have done without the candy on top. What is the point. If I'm ever in Charlotte again I would go again but I would try another place to eat."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6MDhubm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6MDhubm9RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICz08nnoQE%7CCgwIqoL-sgYQqNro4wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717535018,
+            "review_datetime_utc": "06/04/2024 21:03:38",
+            "review_text": "This is a great place to walk around, get a drink or something to eat.  But I do prefer camp northend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6MDZDMUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6MDZDMUx3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICz06C1Lw%7CCgwI39T9sgYQqNX20QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717529183,
+            "review_datetime_utc": "06/04/2024 19:26:23",
+            "review_text": "Nice place to hang out and enjoy some food. The prices are not great but overall its a decent experience"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNS1tcFB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNS1tcFB3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT5-mpPw%7CCgwIj_v7sgYQwNHK-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717501327,
+            "review_datetime_utc": "06/04/2024 11:42:07",
+            "review_text": "Muy bien organizado, variedad de comidas de todo el mundo. Ideal para familias y todo tipo de gente."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6emJtZXdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6emJtZXdBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzzbmewAE%7CCgwIk_f5sgYQ-ImxgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717468051,
+            "review_datetime_utc": "06/04/2024 02:27:31",
+            "review_text": "Visiting from out of town and was recommended this spot. Great vibes and lots of options. I even got a print from the stationary store."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6dFpLZDhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6dFpLZDhBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICztZKd8AE%7CCgwIt874sgYQwPPC6QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717446455,
+            "review_datetime_utc": "06/03/2024 20:27:35",
+            "review_text": "What a fun place and a fantastic way to spend a weekend afternoon! Optimist Hall truly has something for everyone. I ordered from Harriet's Hamburgers, and my wife got food from The Dumpling Lady. We enjoyed our meal at the outdoor tables. Afterwards, we grabbed drinks at Billy Sunday and relaxed on the patio, soaking in the lovely weather.\n\nLife Pro Tip: If the parking out front is crowded, head to the south side of the building and use that lot for free parking for up to 1.5 hours!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6d1lubURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6d1lubURREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzwYnmDQ%7CCgwIw5TysgYQsN2tywM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717340739,
+            "review_datetime_utc": "06/02/2024 15:05:39",
+            "review_text": "Vibe check "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6d2FhcE93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6d2FhcE93EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzwaapOw%7CCgwIlY_ysgYQ2Ii2-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717340053,
+            "review_datetime_utc": "06/02/2024 14:54:13",
+            "review_text": "We ate at Harriet's. We had the O.G. burger.. Deeellliiicciioooouuuussss. Greasy. Cooked right. The fries were done right. Only complaint I would have was eating outside and having to fist fight with gnats so they wouldn't get any lol. Other than that. You do have alot of options to choose from and it does get crowded."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6eHJQU19RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6eHJQU19RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzxrPS_QE%7CCgwIhaLtsgYQ4N-2zAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717260549,
+            "review_datetime_utc": "06/01/2024 16:49:09",
+            "review_text": "Love this place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6dXV5d0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6dXV5d0NREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzuuywCQ%7CCgwIt7jssgYQ0M7VqgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717247031,
+            "review_datetime_utc": "06/01/2024 13:03:51",
+            "review_text": "This is a great food hall with tons of options for drinks and meals. Also love the pet store here. The big cons are the parking situation and seating on the weekends when it is extremely crowded. Overall a very cool concept to please everyone's tastebuds!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6Mm9HYW9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6Mm9HYW9RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICz2oGaoQE%7CCgwIrJ_ssgYQiI_dtAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717243820,
+            "review_datetime_utc": "06/01/2024 12:10:20",
+            "review_text": "What a great place I wish we had something like this at home in PA."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6dlBtODZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6dlBtODZ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzvPm86wE%7CCgsIzcbosgYQ8L2MJA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717183309,
+            "review_datetime_utc": "05/31/2024 19:21:49",
+            "review_text": "Best place to eat here with free parking"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6LU1TNHVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6LU1TNHVBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICz-MS4uAE%7CCgwIiaTjsgYQ4Lfv8gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717096969,
+            "review_datetime_utc": "05/30/2024 19:22:49",
+            "review_text": "Nice indoor and outdoor strip mall. Good eateries"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6bUtUazB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6bUtUazB3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICzmKTk0wE%7CCgwIuv_hsgYQ8Irs1AM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717075898,
+            "review_datetime_utc": "05/30/2024 13:31:38",
+            "review_text": "OH, has good variety of food selections.  It's nice place to get together with family and friends for quick bite in a casual and chill space with indoor and outdoor seating.\nWe always bring family here especially if we all can't decide on what to eat. It's always a hit.\n:It can get packed and seating can be hard to get but if you're patient enough and move around you'll be sure you find one.\nFor free parking plan to stay for 90 min.\n\nSome places we enjoy..ENAT (Ethiopian cuisine and has vegan options), Village kitchen (healthy drinks and salads), Undercurrent (coffee), Botiwalla (Indian street food) HoneySuckle (gelato is soo good)... and so much more."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUaDg2R3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUaDg2R3pBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTh86GzAE%7CCgsIwbrYsgYQ0IOKew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716919617,
+            "review_datetime_utc": "05/28/2024 18:06:57",
+            "review_text": "Was treated to a trip to Charlotte for Mother's Day & this was our dining choice. The location and dining options were excellent! I can't wait to return!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUeTVYbFlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUeTVYbFlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTy5XlYQ%7CCgsI-PbUsgYQqK-MRA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716861816,
+            "review_datetime_utc": "05/28/2024 02:03:36",
+            "review_text": "You probably heard already that this place is cool. I'm just here to pile on! 5 stars easy. If I lived in Charlotte I'd be here once every two weeks at least. Get the Miami Vice float!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUeThMWmh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUeThMWmh3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTy8LZhwE%7CCgwIptTUsgYQ0NHW0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716857382,
+            "review_datetime_utc": "05/28/2024 00:49:42",
+            "review_text": "Great place for hanging out with friends and good food."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUODRYUnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUODRYUnpnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT84XRzgE%7CCgsInMHTsgYQqIe1Hw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1716838556,
+            "review_datetime_utc": "05/27/2024 19:35:56",
+            "review_text": "It's always been annoying to pay to park at a place where all you do is spend money. Why am I paying to spend money at your shop   the food, at least what we tried was met, lacked depth of flavor the non food shopping was over priced\nThe hall is very Charlotte"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1MGVLUHlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1MGVLUHlRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIC50eKPyQE%7CCgsIia3TsgYQyI2QPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716835977,
+            "review_datetime_utc": "05/27/2024 18:52:57",
+            "review_text": "Great place for date night--people watching, shopping, and almost every cuisine option you could dream of.\nSuarez cubans are arguably the best in the city!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUczZXcVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUczZXcVFnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTs6WqQg%7CCgwI1orTsgYQkKy6pQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716831574,
+            "review_datetime_utc": "05/27/2024 17:39:34",
+            "review_text": "Lots of variety in shops. Very welcoming and friendly atmosphere from all shop owners"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1a2JqU21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1a2JqU21RRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDukbjSmQE%7CCgwIsoTTsgYQ8LPD8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716830770,
+            "review_datetime_utc": "05/27/2024 17:26:10",
+            "review_text": "Great spot to meet friends and have great food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUZzh6RGZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUZzh6RGZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTg8zDfg%7CCgwI_sbSsgYQyMvMqQI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1716822910,
+            "review_datetime_utc": "05/27/2024 15:15:10",
+            "review_text": " Go to Optimist Hall Parking review page to see all the bad reviews on parking before you decide to go here \n\nThis was our first time and really enjoyed this food hall.  Parking is somewhat hard as it was very crowded. Then you only get 90 minutes for free parking.  You also need to put in your credit card and register your car because if you go over the 90 minutes you will get a big parking fine without a CC.\n\nThe hall itself was a little confusing.  Once we got to the 2nd floor, you need to keep walking around to see all the food places.  It was very crowded as it was a Saturday.  We settled on the Jewish Deli, Schrieber's on Rye and the food was simply amazing.  It was a little expensive for 2 sandwiches but worth it.\n\nThe parking ended up costing us $5.99 which was billed and processed to our CC.(total we might have been there 2 hours), which they overcharged us!  So will not be eating here again due to the paid parking situation.\n\n3 stars for overcharging us on the parking!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUZ18zVDl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUZ18zVDl3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTg_3T9wE%7CCgwIq5TQsgYQyL6YoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716783659,
+            "review_datetime_utc": "05/27/2024 04:20:59",
+            "review_text": "What a place to eat and have a great time"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUX2FtTFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUX2FtTFRBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT_amLTA%7CCgwIqd3PsgYQ-O64pwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716776617,
+            "review_datetime_utc": "05/27/2024 02:23:37",
+            "review_text": "Great place to visit with family.\n\nGreat food and atmosphere.\n\nIt's the kind of place where live bands would usually be found. However, I've never seen any there.\n\nThat would be a pleasant addition though."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUemNTR2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUemNTR2ZBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTzcSGfA%7CCgwIj8jNsgYQwMnwiwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716741135,
+            "review_datetime_utc": "05/26/2024 16:32:15",
+            "review_text": "The Dumpling Lady is spectacular"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUOWEydDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUOWEydDNRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT9a2t3QE%7CCgwIhJPNsgYQiMnnxgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716734340,
+            "review_datetime_utc": "05/26/2024 14:39:00",
+            "review_text": "It is difficult to give an accurate review of this awesome place because there are (slightly exaggerating) like 20 thousand places to eat here. We got cubanos which were totally delicious (and I recommend), but there are all kinds of eateries in this food hall for whatever you fancy. You have to walk around and figure out which one or ones you want, then go order, then go find a spot to sit. It can get incredibly crowded here. But it is a great place to have a work lunch or meet clients. Totally recommend. The parking is weird and they take pix of your license plates for payment and such, but besides that it's really a cool place with both inside and outside seating, extremely nice service when ordering, and an overall \"professional chill\" vibe when school is in session."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcWJuS253RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcWJuS253RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTqbnKnwE%7CCgsI0__IsgYQ4I75GA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716666323,
+            "review_datetime_utc": "05/25/2024 19:45:23",
+            "review_text": "Great outdoor seating and lounge area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUaWNXZGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUaWNXZGN3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTicWdcw%7CCgwIyLLIsgYQoNbN8wI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1716656456,
+            "review_datetime_utc": "05/25/2024 17:00:56",
+            "review_text": "Peak millennial vibes  so take that as you will"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUd1lhb0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUd1lhb0dBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTwYaoGA%7CCgwI5q7GsgYQwL7WigE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716623206,
+            "review_datetime_utc": "05/25/2024 07:46:46",
+            "review_text": "A must stop when visiting Charlotte, my favorites are Botiwalla, Zukku, Suarez Bakery and Billy Sunday!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUM3VlRVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUM3VlRVRBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT3ueETA%7CCgwI-IXFsgYQ-MaC-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716601592,
+            "review_datetime_utc": "05/25/2024 01:46:32",
+            "review_text": "So many options. I wish I lived nearby. I'd probably be here all the time. Today, I tried Indian food. But there is everything from American to Spanish to Indian and everything in betwee. And plenty of dessert options."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUMHJtWFZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUMHJtWFZBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT0rmXVA%7CCgwIvPy9sgYQkJ7FjwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716485692,
+            "review_datetime_utc": "05/23/2024 17:34:52",
+            "review_text": "Great place to go with the family, lots of food choices!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcVB6YV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcVB6YV93RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDTqPza_wE%7CCgwIuOu0sgYQuOTh3wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716336056,
+            "review_datetime_utc": "05/22/2024 00:00:56",
+            "review_text": "Great place to eat and meet people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUOE5hd2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUOE5hd2RBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDT8NawdA%7CCgwIgdOzsgYQ6ObWsQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716316545,
+            "review_datetime_utc": "05/21/2024 18:35:45",
+            "review_text": "Charlotte is blessed to have such an amazing food hall. However, the seating is limited since it is so popular. Definitely a recommended experience for anyone living in Charlotte looking for diverse options for lunch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUN2YtZm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUN2YtZm1nRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT7f-fmgE%7CCgsIwYmysgYQkPezIg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1716290753,
+            "review_datetime_utc": "05/21/2024 11:25:53",
+            "review_text": "Harriet's Burgers were delicious as usual. But I always order dumplings from The Dumpling Lady. My 2 favorite are the pork n chives and shrimp n chicken. Today they were absolutely flavorless. No taste whatsoever. It was a huge disappointment, especially after bragging about them to my mom and sis who ordered the shrimp n chicken and were not impressed at all. They won't be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEeWNDaU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEeWNDaU5REAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICDycCiNQ%7CCgwIhOaxsgYQoOWasgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716286212,
+            "review_datetime_utc": "05/21/2024 10:10:12",
+            "review_text": "The food was good at the Mezeh I just don't think the amount was worth the price. The service was good I was just a little disappointed in the amount of food I received."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUdi1Ha3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUdi1Ha3RBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTv-GktAE%7CCgwI38evsgYQ6J2NkgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716249567,
+            "review_datetime_utc": "05/20/2024 23:59:27",
+            "review_text": "The Dumpling Lady!! This place is a hidden gem in Charlotte!! My favorite by far"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMzh1NU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMzh1NU5REAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT38u5NQ%7CCgwI0I2vsgYQuLrElAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716242128,
+            "review_datetime_utc": "05/20/2024 21:55:28",
+            "review_text": "Hands-down, one of the best places to get food in Charlotte. The space is huge, there's also shopping, a bar, and tons of different food options if you're with a group that doesn't want to eat the same thing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbjZfWHdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbjZfWHdRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTn6_XwQE%7CCgwI19KusgYQ0IrK0QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716234583,
+            "review_datetime_utc": "05/20/2024 19:49:43",
+            "review_text": "Aunt brought me over the summer while I was visiting Charlotte. It was too busy so we left and went to a burger restaurant. Now that I live here, I decided to take my gf there for lunch. She got Meza & I got Harriet. EVERYTHING WAS 10/10. On weekdays it is super chill and a great environment to just vibe at and grab a unique bite to eat . "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbjVPeTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbjVPeTZ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTn5Oy6wE%7CCgsI-MeusgYQwJH6Bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716233208,
+            "review_datetime_utc": "05/20/2024 19:26:48",
+            "review_text": "Most frequently visited place with my family!! Excellent service, wide variety of food stalls, lot of seating place and happening atmosphere!! Be it be for a girls trip or family fun, this is always on my list."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUOTdYOWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUOTdYOWJ3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT97X9bw%7CCgsIzc-ssgYQsMftTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716201421,
+            "review_datetime_utc": "05/20/2024 10:37:01",
+            "review_text": "Lots of fun food choices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNS1iQlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNS1iQlR3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT5-bBTw%7CCgwIqr2qsgYQ0ICPxwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716166314,
+            "review_datetime_utc": "05/20/2024 00:51:54",
+            "review_text": "It's a good place to go for lunch but if it's busy, it can be really hard to get a place to sit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUaDlHR1d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUaDlHR1d3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTh9GGWw%7CCgwIs5GpsgYQkMaTugI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716144307,
+            "review_datetime_utc": "05/19/2024 18:45:07",
+            "review_text": ""
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWanRYNXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWanRYNXdnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDVjtX5wgE%7CCgwIhIepsgYQsMrGqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716142980,
+            "review_datetime_utc": "05/19/2024 18:23:00",
+            "review_text": "I challenge you to find something wrong with this place that has so much variety in choices, ample parking and just really great vibes all around the only thing I'll say is if you're not about crowds consider going on a weeknight or a less popular time as it does get crowded"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUczVPeFlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUczVPeFlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTs5OxYQ%7CCgwI8oilsgYQqLaQqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716077682,
+            "review_datetime_utc": "05/19/2024 00:14:42",
+            "review_text": "Great place to go when exploring Charlotte"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUN1p1Wm53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUN1p1Wm53RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT7ZuZnwE%7CCgwIkeKfsgYQ8KOIvgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715990801,
+            "review_datetime_utc": "05/18/2024 00:06:41",
+            "review_text": "I'm a glass half full kinda person so I always look forward to eating here.  Go to is Suarez for a sandwich and coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUemJUYmxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUemJUYmxRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTzbTblQE%7CCgwIscKesgYQyMyzygM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715970353,
+            "review_datetime_utc": "05/17/2024 18:25:53",
+            "review_text": "This is an amazing place!  So many wonderful choices here and a lovely space to eat."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUOWZ6N29BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUOWZ6N29BRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT9fz7oAE%7CCgwI3-OdsgYQqJex2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715958239,
+            "review_datetime_utc": "05/17/2024 15:03:59",
+            "review_text": "I love this place! Variety of food options, but there is also shopping and nice places to WFH whether indoor or outdoor, OH is a whole vibe! Sad I didn't get a chance to visit on my last trip down!\n\nThe spot with Bao buns & ramen is my favorite!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKOXNDNVZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKOXNDNVZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDJ9sC5Vg%7CCgsIu4easgYQkPTjPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715897275,
+            "review_datetime_utc": "05/16/2024 22:07:55",
+            "review_text": "Lots of different vendors.  Mostly food places, but well worth walking the Loop."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUdWRieHJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUdWRieHJ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTudbxrwE%7CCgsI1bWZsgYQoMzXWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715886805,
+            "review_datetime_utc": "05/16/2024 19:13:25",
+            "review_text": "What a wonderful way to spend your day. I loved relaxing outside and everyone was able to enjoy their favorite food! Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUNmVhcW93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUNmVhcW93RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT6eaqowE%7CCgwIhJqYsgYQwNXOkgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715866884,
+            "review_datetime_utc": "05/16/2024 13:41:24",
+            "review_text": "Great place to go on a sunny or rainy day.  Plenty of choices and unique gifts"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUdnF2V2VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUdnF2V2VREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTvqvWeQ%7CCgwIm4mSsgYQgL7d3wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715766427,
+            "review_datetime_utc": "05/15/2024 09:47:07",
+            "review_text": "A \"foot court\" type of place built in an old refurbished mill. Very trendy and enough variety to please all."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUeHFuc0hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUeHFuc0hBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTxqnsHA%7CCgwI19CLsgYQwPPksQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715660887,
+            "review_datetime_utc": "05/14/2024 04:28:07",
+            "review_text": "Definitely go here whenever you visit Charlotte so many food options and things to see it's the perfect hangout spot"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNULXBTTDhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNULXBTTDhRRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT-pSL8QE%7CCgwI05CKsgYQ8ITMjAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715636307,
+            "review_datetime_utc": "05/13/2024 21:38:27",
+            "review_text": "Lots of food options and seating.  Good vibe"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNULXZESU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNULXZESU9REAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT-vDIOQ%7CCgwI-4eKsgYQqLTiggM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715635195,
+            "review_datetime_utc": "05/13/2024 21:19:55",
+            "review_text": "Everything is great here just expensive. I love the outdoor areas"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUOHFUemF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUOHFUemF3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT8qTzaw%7CCgwIqImGsgYQ0NXevwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715569832,
+            "review_datetime_utc": "05/13/2024 03:10:32",
+            "review_text": "Love this place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUa29xYXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUa29xYXZnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTkoqavgE%7CCgwIs7mEsgYQwJun4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715543219,
+            "review_datetime_utc": "05/12/2024 19:46:59",
+            "review_text": "I didn't realize how many options there are here.  I've only been to the places that can be seen from the outside.  I'll have to return with the kids."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUa3BLbmZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUa3BLbmZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTkpKnfg%7CCgsI0LeEsgYQ-K_TLg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715542992,
+            "review_datetime_utc": "05/12/2024 19:43:12",
+            "review_text": "Great place with so many choices for food. No fast food chains in sight. Nice vibes too. Seating can be at a premium at times because it gets so busy. But free parking for 90 minutes."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbk52TUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbk52TUJREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTnNvMBQ%7CCgwI6JGBsgYQgJ_RngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715489000,
+            "review_datetime_utc": "05/12/2024 04:43:20",
+            "review_text": "Super cool place. Tons of options. Great atmosphere.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbk1LdmN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbk1LdmN3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTnMKvcw%7CCgsIuOiAsgYQiJGMNg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715483704,
+            "review_datetime_utc": "05/12/2024 03:15:04",
+            "review_text": "It is a very pleasant place where you can enjoy Asian, Mexican, Ethiopian, and Argentinian food (I had a delicious ramen bowl). Moreover, I am a fan of good coffee, and I had a very good cappuccino at Under Current coffee shop."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbkx6Ykl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbkx6Ykl3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTnLzbIw%7CCgsI0OaAsgYQ-LrHFQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715483472,
+            "review_datetime_utc": "05/12/2024 03:11:12",
+            "review_text": "Love this place! So many options for food, great little courtyard, and you can walk around with a drink."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMU5uaklBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMU5uaklBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT1NnjIA%7CCgwIyOP9sQYQ-PXZtwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715433928,
+            "review_datetime_utc": "05/11/2024 13:25:28",
+            "review_text": "First time going. Everything I tried was CHEFS KISS!!!! Will be going back to try more things. 10/10"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUaElQXzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUaElQXzd3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICThIP_7wE%7CCgwI7sL7sQYQ0ITF_QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715396974,
+            "review_datetime_utc": "05/11/2024 03:09:34",
+            "review_text": "The place is beautiful! Lots of different selections that all look good. Lots of seating areas. Will come again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUaE5qb0NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUaE5qb0NnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICThNjoCg%7CCgsI7437sQYQuIrebQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715390191,
+            "review_datetime_utc": "05/11/2024 01:16:31",
+            "review_text": "Interesting place. Felt a little out of place with all the young people here. Indian food place was excellent. Great staff, friendly,  smiling faces. You'd almost think they enjoyed working there. Lots to see and do, if eating and drinking is what you're looking to do. Plenty of seating available, parking is very tight. It's Friday, so that could be it. I liked the place, it was something different. The Indian food would bring me back. Recommend for a little something different."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMk0zT0RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMk0zT0RnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT2M3ODg%7CCgsI5-L5sQYQ-LXBXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715368295,
+            "review_datetime_utc": "05/10/2024 19:11:35",
+            "review_text": "Went with the kids, we all tried different places and shared, it was all amazing!! Keep in mind it'll run you about 20$+ a person though. But still a fun atmosphere and great food, baked goods and sweets. Also some cool shopping."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUcU5IS0NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUcU5IS0NnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTqNHKCg%7CCgsI6rT4sQYQ2PbFUQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715346026,
+            "review_datetime_utc": "05/10/2024 13:00:26",
+            "review_text": "Nice place. They lack the ability to contact them and work with them on anything. The parking situation is absurd and the company that runs it is just terrible and hard to work with. If you have a business you need to provide free parking. No one else is around you so all of the people coming there are your customers and then you gouge them with parking expenses and if you fail to see the signs because I don't go around reading everything that is posted like some psychopath then you get a $50 to $100 fine from a company in Chicago. Try to call them and ask about it and you get nothing!  You also need to really think long and hard about the next 10 years and how you are going to make it with your absurd rules around parking. We are coming there to eat and are in cars since it's impossible to get there any other way...you don't burden us with your parking problems. One of the main reasons I don't go there as often as I used to."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUMEtHeDhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUMEtHeDhnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT0KGx8gE%7CCgwIr_b1sQYQyLemqgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715305263,
+            "review_datetime_utc": "05/10/2024 01:41:03",
+            "review_text": "Nice food hall with several different options."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUME42YjBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUME42YjBnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICT0N6b0gE%7CCgwIqfP1sQYQsJGhmAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715304873,
+            "review_datetime_utc": "05/10/2024 01:34:33",
+            "review_text": "Fantastic all the way around. The QR code for 90 minutes of free parking was a bit complicated . We picked up some fun teas and spices to take home with us. The staff was extremely helpful in helping us navigate the menu. Wishing we didn't live in Iowa so we could dine here more often."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUa0xhMGZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUa0xhMGZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTkLa0fg%7CCgwIkKX1sQYQkL2w2wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715294864,
+            "review_datetime_utc": "05/09/2024 22:47:44",
+            "review_text": "A great place to walk around indoors in the cool while searching for casual eats,drink and the perfect gift from a boutique. I had the most amazing specialty grilled cheese with the friendliest service at Papi Queso."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUb0lQUGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUb0lQUGRBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICToIPPdA%7CCgwIssL0sQYQkJ6FzgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715282226,
+            "review_datetime_utc": "05/09/2024 19:17:06",
+            "review_text": "Very nice, lots of options for food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUd0k2enBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUd0k2enBBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgICTwI6zpAE%7CCgwItPvzsQYQ2PT8qAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715273140,
+            "review_datetime_utc": "05/09/2024 16:45:40",
+            "review_text": "A must see.  I took my friends there and said they're definitely going back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMS1uOGFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMS1uOGFREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj1-n8aQ%7CCgsI-6XusQYQ2LnAFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715180283,
+            "review_datetime_utc": "05/08/2024 14:58:03",
+            "review_text": "Great atmosphere!!!!   Lots of options"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqLTlpU3d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqLTlpU3d3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj-9iSwwE%7CCgsI0LzrsQYQkLarHg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1715134032,
+            "review_datetime_utc": "05/08/2024 02:07:12",
+            "review_text": "Parking is horrible! No clear signage and I feel this is being done on purpose. The food and atmosphere is not worth the $50 you will be charge if you aren't familiar with parking there. I hope optimist changes there parking situation. Until then so long Harriet's!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqMjV5YzJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqMjV5YzJ3RRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj25yc2wE%7CCgsIobbqsQYQoK6LTg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715116833,
+            "review_datetime_utc": "05/07/2024 21:20:33",
+            "review_text": "This place was very interesting. I wish there was a place like this up in New York. All sorts of restaurants in one place. No corporations like McDonald's or Burger King. I love that it was all privately owned businesses.  Nice tables and seats all over inside and out. Nice place to sit around and catch up. The only negative thing I have to say is that the hard wooden benches do take a toll on your butt after a while."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMjdEU0ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMjdEU0ZnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj27DSFg%7CCgsI3avqsQYQ4NGTeA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715115485,
+            "review_datetime_utc": "05/07/2024 20:58:05",
+            "review_text": "Food courtyard-type along with a few local shops. Lots of food choices. Haven't found a bad one yet. Parking is readily available on site, just be aware you have to scan a code to pay and the first 90 minutes are free."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqbTV5UHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqbTV5UHVnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjm5yPugE%7CCgwI0vjpsQYQsJ7swAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715108946,
+            "review_datetime_utc": "05/07/2024 19:09:06",
+            "review_text": "Great place, food, drinks and atmosphere"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqbzlQVmR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbzlQVmR3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjo9PVdw%7CCgwI_6nmsQYQ8L3Y2wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715049727,
+            "review_datetime_utc": "05/07/2024 02:42:07",
+            "review_text": "Such a fun place to spend an afternoon - plenty to do/choose from! Facility is well maintained as well!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqbzZUcV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqbzZUcV9nRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjo6Tq_gE%7CCgsI3IbmsQYQ8P3MTQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1715045212,
+            "review_datetime_utc": "05/07/2024 01:26:52",
+            "review_text": "The place is nice and clean. But the food was overpriced and several of the places were not that good. In fairness, some of that is preference. But for a place to simply go and hang out with friends and enjoy some time, it is nice."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqd19YcndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqd19YcndBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjw_XrwAE%7CCgsIh-blsQYQ0O-EcQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715041031,
+            "review_datetime_utc": "05/07/2024 00:17:11",
+            "review_text": "The Hall itself is really neat and more unique than other food halls I've been to. My hamburger was delish!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqZy1Lakl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqZy1Lakl3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjg-KjIw%7CCgsIjYPlsQYQuOaLOQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715028365,
+            "review_datetime_utc": "05/06/2024 20:46:05",
+            "review_text": "Favorite place to go and eat"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMVpxTEVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMVpxTEVBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj1ZqLEA%7CCgsI3sHfsQYQ6IWVFQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714938078,
+            "review_datetime_utc": "05/05/2024 19:41:18",
+            "review_text": "As someone who lives in Charlotte, I cannot believe it took me this long to visit Optimist Hall. It made me feel like I live in a big, cultural city. Cocktails at the bar were awesome and the food choices are incredible."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqcWJHWUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqcWJHWUhnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjqbGYHg%7CCgwIhqHasQYQ4Je21AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1714851974,
+            "review_datetime_utc": "05/04/2024 19:46:14",
+            "review_text": "Surprisingly awesome food hall. They are not normally my thing, but this one is solid and beautiful on top. Great food options and atmosphere, very laid back"
+        }
+    ]
+}
