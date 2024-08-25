@@ -19,7 +19,7 @@ on:
 
 concurrency:
   group: deploy-azure-function
-  cancel-in-progress: true
+  cancel-in-progress: false # Don't cancel in progress deployments, can lead to weird errors. Just queue up new ones.
 
 env:
   AZURE_FUNCTIONAPP_PACKAGE_PATH: './azure-function' # set this to the path to your web app project, defaults to the repository root
