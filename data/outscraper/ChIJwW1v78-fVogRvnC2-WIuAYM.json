@@ -1,0 +1,1563 @@
+{
+    "place_name": "La Dolcekca Bakery Cafe",
+    "place_id": "ChIJwW1v78-fVogRvnC2-WIuAYM",
+    "place_rating": 4.7,
+    "place_total_reviews": 230,
+    "place_google_id": "0x88569fcfef6f6dc1:0x83012e62f9b670be",
+    "place_reviews_id": "-9006866777133125442",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJwW1v78-fVogRvnC2-WIuAYM&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3ekxTMWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3ekxTMWpnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID7zLS1jgE%7CCgwI-6matgYQkI2jvgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724290299,
+            "review_datetime_utc": "08/22/2024 01:31:39",
+            "review_text": "I have tried several things from this bakery and every single one of them were amazing. Also, the people who work there are super nice and it is always spotlessly clean in there. Would definitely recommend. And the fact that they are open till 10 PM is nice."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3dGUyUVl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3dGUyUVl3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC7te2QYw%7CCgwIwN6DtgYQ-LLO0AM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1723920192,
+            "review_datetime_utc": "08/17/2024 18:43:12",
+            "review_text": "We visited to get quick brunch and some coffee. The mocha we took was super watery. Wings super oily and cheese sandwich greesy. The menu does not have cost written at the entrance. They'll charge you $$ later. Mocha cost us $7!! And the sandwich and waffle was also really expensive. Not worth it. Disappointed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3MmVqcm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3MmVqcm13RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC72ejrmwE%7CCgsIl4OAtgYQiNOcUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723859351,
+            "review_datetime_utc": "08/17/2024 01:49:11",
+            "review_text": "Lugar espectacular para tomarte un delicioso postre con cafe, en un ambiente agradable.!  Los pasteles son hermosos y frescos .. ese fue el pastel de mi sobrina quedo sonado para celebrar su primer anito !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiaHBhSlFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiaHBhSlFBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDbhpaJQA%7CCgsIjZu_tQYQsPLDdA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722797453,
+            "review_datetime_utc": "08/04/2024 18:50:53",
+            "review_text": "What a lovely place. The owner is such a positive loving soul with such great energy. Attentive and sweet. The environment is beautiful, from it's decor to setting and selections, cozy. The food was delicious along with their great selections of desserts.  My family and I look forward to returning.  Thank you all for making it such a wonderful experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiaW9HeHRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaW9HeHRRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDbioGxtQE%7CCgwI9rO7tQYQ6KKdlwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722735094,
+            "review_datetime_utc": "08/04/2024 01:31:34",
+            "review_text": "Los cheesecake y la mejor comida dominicana super recomendados"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiaE8zclJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiaE8zclJ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDbhO3rRw%7CCgwIyomxtQYQqKu-kgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722565834,
+            "review_datetime_utc": "08/02/2024 02:30:34",
+            "review_text": "Wonderful Bakery Cafe!! Delicious Freshly Made Sandwiches!!  Amazing Desserts from all over the world!! Superb Gelato!! We had the Salmon Chipotle, the Chimi Pulled Pork, and the Ground Beef Chop Cheese sandwiches along with fresh brewed coffee and a variety of desserts, everything was out of this world and all served by the extraordinary chef and owner Karina Cooper. This is a must go place and we will be definitely coming back soon :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiZ28tTTJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiZ28tTTJ3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICbgo-M2wE%7CCgwIoviFtQYQ6OrW_AE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1721859106,
+            "review_datetime_utc": "07/24/2024 22:11:46",
+            "review_text": "I found this bakery on Google after searching for banana pudding because I didn't want to make a whole one myself. La Dolcekca came up & another place but I chose here after seeing people rave about the banana pudding but, I thought it was just ok. I got the biscoff banana pudding. It was good but not worth the drive I took to get there. I also got a tiramisu which was $10 for a small pan & it wasn't sweet at all. Tasted mostly like the coco on top. You can honestly get a bigger slice for less at Publix. I agree with others that say they are overpriced but their price is their price so I won't speak much on that. Overall,  wouldn't go back for the dessert but I didn't have a bad experience. Just a little overhyped per the reviews imo."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURydGJMcGFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURydGJMcGFREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDrtbLpaQ%7CCgwInefmtAYQqJ-qnQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721349021,
+            "review_datetime_utc": "07/19/2024 00:30:21",
+            "review_text": "The owner was very friendly & inviting - she brewed us fresh coffee and ensured our visit was special.  (The brownie cheesecake is DELICIOUS!)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyckxXRDlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyckxXRDlBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICrrLWD9AE%7CCgsI8tSbtAYQ0InrWg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720117874,
+            "review_datetime_utc": "07/04/2024 18:31:14",
+            "review_text": "Friendly atmosphere.... Tres Leches, cupcakes and Empanadas are great! I have a new spot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNycU52N0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNycU52N0d3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICrqNv7Gw%7CCgsI3KCWtAYQoN_ccw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720029276,
+            "review_datetime_utc": "07/03/2024 17:54:36",
+            "review_text": "The staff was super friendly and the atmosphere is very cute. The choices are almost overwhelming but they talked me through the different options.\n\nI got a strawberry tres leches cake that I think was made really well, I'm just not sure I love tres leches"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyeUt5ZGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyeUt5ZGRBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICryKyddA%7CCgwIpNGVtAYQqLDpkQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720019108,
+            "review_datetime_utc": "07/03/2024 15:05:08",
+            "review_text": "I go to this spot every weekend and they never disappoint. Amazing pastries and amazing food as-well, just an overall great place to go to eat or enjoy some sweets highly recommend!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMOS02S2lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMOS02S2lBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICL9-6KiAE%7CCgwImffiswYQ0J__wAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719188377,
+            "review_datetime_utc": "06/24/2024 00:19:37",
+            "review_text": "The best bakery in charlotte..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMOF9lTWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMOF9lTWRnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICL8_eMdg%7CCgwIg4reswYQgOKS9wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719108867,
+            "review_datetime_utc": "06/23/2024 02:14:27",
+            "review_text": "Honestly I have nothing but positive things to say about this establishment. Such vibrant energy every time I walk in"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMMDVuMXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMMDVuMXVnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICL05n1ugE%7CCgwIiKbdswYQiOCYvAM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1719096072,
+            "review_datetime_utc": "06/22/2024 22:41:12",
+            "review_text": "It's too bad that the owner has a nasty attitude full of herself and thinks that she better than everybody!!! I would never ever eat / order from here just because of her nasty attitude"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMaWVTa0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMaWVTa0V3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICLieSkEw%7CCgsIqpDRswYQkLX3Zg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718896682,
+            "review_datetime_utc": "06/20/2024 15:18:02",
+            "review_text": "From the pastries to the coffee served on lovely home style grandma dishware to the delectable hot food they serve, dolcecka is amazing! My one complaint is that their prices are exorbitantly high, wouldn't come here as often as I would like because of it. Otherwise it's an adorable cafe and bakery with lots to choose from and very cute funky indoor decor."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6MXRMcUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6MXRMcUlBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDz1tLqIA%7CCgsIi-WYswYQwL3SRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717973643,
+            "review_datetime_utc": "06/09/2024 22:54:03",
+            "review_text": "AMAZING AMAZING AMAZING!!!!! Visited this place twice today! Food is soooooooo goodddd. If you haven't been this is the place to go."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6b3JHU0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6b3JHU0p3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDzorGSJw%7CCgwIz4iUswYQiPGqwgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1717896271,
+            "review_datetime_utc": "06/09/2024 01:24:31",
+            "review_text": "We came here because this place looked neat on IG. DONT FALL FOR IT. We came in and the entire staff was just scrolling on their phones in the sitting area, and looked at us like we were annoying for showing up. We went to order and the guy behind the counter seemed like he didn't understand the process of placing an order. We ordered our food and an item we ordered was inco.mplete because they didn't have the ingredients. That would be fine but the Lady at the counter agued with us about a refund for an item that they don't have but is on their menu and took our money for when we ordered. The espresso was watery and tasted like cinnamon. They say that have dolce de leches but it is just black coffee with caramel syrup. Every time they asked how the food was and we told them the truth, they proceeded to argue with us about it. Also, I speak Spanish and they didn't know, each time they went back to the kitchen they would talk trash about us in Spanish. I would say skip this place. Also the empanadas were bland and the tables were dirty. Also over priced food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6d3ZuY2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6d3ZuY2tnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDzwvnckgE%7CCgwIicCSswYQ6K2R_gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717870601,
+            "review_datetime_utc": "06/08/2024 18:16:41",
+            "review_text": "My wife and I walked in for some dessert, this spot seemed appealing as a Dominican New Yorker it's nice to find places that remind you of home. Flan and tres leche was awesome and so was the service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6b1pDY3hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6b1pDY3hnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICzoZCcxgE%7CCgwIv6TysgYQ8J-wvAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717342783,
+            "review_datetime_utc": "06/02/2024 15:39:43",
+            "review_text": "A cute little family owned cafe bakery hiding in the Woodlawn area. There are so many options here. They also do custom cakes for birthdays and other events.\n\nI had the Turkey Bacon, Egg and Cheese sandwich. Not only did it taste delish, but it was plated so beautifully. The fries was an unexpected but very much appreciated surprise.\n\nNo paper places here. Just look at that plating! And look at the spoon that came with my Late! \n(Don't worry, they have To-Go cups and containers.)\n\nService was quite nice and met expectations. Doing the right thing when things go wrong is very important.\n\nWell done!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUaHVLOVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUaHVLOVd3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICThuK9Ww%7CCgwIvPGKsgYQwMKnsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715648700,
+            "review_datetime_utc": "05/14/2024 01:05:00",
+            "review_text": "This is a hidden and exquisite gem of a place in Charlotte. We've been here twice for coffee and dessert and IT WAS FANTASTIC! The key lime pie is the best I've ever had and the coffee is delicious. My wife has had several different chocolate themed desserts and has raved over how good it was. We live in Virginia and will make it a point to stop here anytime I have business in Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqdzllUWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqdzllUWlnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDjw9eQigE%7CCgsI_vblsQYQuL2gfA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715043198,
+            "review_datetime_utc": "05/07/2024 00:53:18",
+            "review_text": "WOW!! Visited after a recommendation and WOW! We pretty much had a taste of everything and it's all fantastic! BUT the wings, best in Charlotte, hands down! The owner is super friendly and very attentive! Give this place a try you won't regret it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqbGZMQmJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbGZMQmJ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDjlfLBbw%7CCgwI-IPfsQYQqKfRmgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1714930168,
+            "review_datetime_utc": "05/05/2024 17:29:28",
+            "review_text": "Do not get a latte from here. I should have known better when I didn't see an espresso machine or hear them grind any coffee.\nI ordered a medium iced half sweet brown sugar cinnamon latte. My husband got a medium iced latte as well. It cost us $17... What I got was sickenly sweet, but also incredibly artificial and watered down. I highly doubt this was actually espresso. My sister got a hot latte and also hated it. I took 2 sips and then threw mine out. Such a waste of money.\nTheir pastries and food looked really good, and maybe that's what I need to stick to if I come back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqNWVuTHdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqNWVuTHdRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDj5enLwQE%7CCgwI89fesQYQ0MGl9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714924531,
+            "review_datetime_utc": "05/05/2024 15:55:31",
+            "review_text": "Ordered a customize baby shower cake and cupcakes..... everyone was blown away by the taste of everything. She did an amazing job in such an short timeframe"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMW9DOUFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMW9DOUFnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDj1oC9Ag%7CCgwIv4DQsQYQ2J2WqgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714683967,
+            "review_datetime_utc": "05/02/2024 21:06:07",
+            "review_text": "A Perfect Place to Placate your Palate.\nFirst time here. We had an amazing experience! We were greeted warmly at the door, walked through the many menu items, and served graciously and attentively.\nEach of our dishes was delightful, my burger, the salmon sandwich and empanadas. Everyone loved them.\nKarina has worked every recipe to perfection. The selection while seemingly small, was wide enough for all of us to find something we loved.\nOur desserts were scrumptious. We were lucky to get cinnamon rolls straight from the oven, tres leches cake and raspberry sorbet. ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqeU1UMGJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqeU1UMGJ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDjyMT0bw%7CCgwI4PW5sQYQ8LGBpgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714322144,
+            "review_datetime_utc": "04/28/2024 16:35:44",
+            "review_text": "Delicious food (the beef empanadas, Flan and tres leches were amazing) super friendly staff and great atmosphere!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqc3BpaHFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqc3BpaHFRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICjspihqQE%7CCgsIj9yKsQYQyPzdFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713548815,
+            "review_datetime_utc": "04/19/2024 17:46:55",
+            "review_text": "Chimmi sandwich and banana pudding were delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREaFpxZUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREaFpxZUJ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDDhZqeBw%7CCgwI9r3hsAYQgK_5hwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1712873206,
+            "review_datetime_utc": "04/11/2024 22:06:46",
+            "review_text": "First off, we arrived with great excitement to try this new place. It was hit and miss with the various items we tried. The ham & cheese empanada was very good, the seasoning on the beef empanada had too much vinegar and rosemary. The passion fruit flan was good overall, however the tres leches cake was the worst I've ever had and that is simply not okay for a Dominican pastry shop. We tried several other items that were decent overall. Unfortunately, the server forgot to add the rice pudding for our take home order that we paid for, and so sadly we left disappointed with no plans on future repeat business. I guess that's just how it goes sometimes."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREcktHUEVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcktHUEVREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDDrKGPEQ%7CCgsI67zFsAYQwPOFMA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712414315,
+            "review_datetime_utc": "04/06/2024 14:38:35",
+            "review_text": "LA DOLCEKCA BAKERY CAFE me encanto mucho, la manera confortable que te hace sentir y el ambiente en general muy excelente. Si quieres tener tu Coquette coffee con tus amigas(os) aqui definitivamente sera tu lugar."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEeDdxVk5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEeDdxVk5nEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICDx7qVNg%7CCgwIpbmwsAYQkP6-3QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712069797,
+            "review_datetime_utc": "04/02/2024 14:56:37",
+            "review_text": "I love the pink esthetic on the inside! The salmon chipotle sandwich was to die for! And the biscoff cheesecake was chef's kiss!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5N0pINjh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5N0pINjh3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC97JH68wE%7CCgsIv6yUrwYQiIKgMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709512255,
+            "review_datetime_utc": "03/04/2024 00:30:55",
+            "review_text": "My boyfriend and his mom and i came there early today for breakfast. As a New Yorker and Dominican I always love coming here to eat a chopped cheese and pick out a desert. Typically we don't dine in but today when East like Sunday had an hour wait we decided to dine in as his mom has never tried the food. She loved the atmosphere the customer service was lovely and when we asked her about the food 1-10 she gave it a 12. My boyfriend and I love it hear it is a must try the music is giving at your Dominican Tia's house for chisme y cafe ! Not only that she was nice and took out picture making sure the photos came out just right. Everything is so fresh the empanadas, French toast & juice!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5cVB2WTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5cVB2WTNBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC9qPvY3AE%7CCgwImeCErwYQgLGiggM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709256729,
+            "review_datetime_utc": "03/01/2024 01:32:09",
+            "review_text": "The best place in Charlotte, empanadas, chimi and the pastries are to die for!! Must try this family own business!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0eHBUZnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0eHBUZnJnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDtxpTfrgE%7CCgwIpq_yrgYQuLKjkgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708955558,
+            "review_datetime_utc": "02/26/2024 13:52:38",
+            "review_text": "This establishment provides an exceptional experience from the moment you step in, greeted with a warm smile. The owner, incredibly kind and welcoming, takes you through a comprehensive tour of the diverse dessert options. If you have a sweet tooth, you'll find an array of tempting treats. For those craving savory snacks, the extensive menu won't disappoint. Whether you opt for a quick pick-up with excellent service or decide to stay, indulging in a meticulously crafted cappuccino adds to the enjoyment. The atmosphere is beautiful and relaxing, making it an all-around fantastic place.\n\nEste establecimiento brinda una experiencia excepcional desde el momento en que entras, recibido con una calida sonrisa. La duena, increiblemente amable y acogedora, te guia a traves de un recorrido completo por las diversas opciones de postres. Si tienes gusto por lo dulce, encontraras una variedad tentadora. Para aquellos que anhelan snacks salados, el extenso menu no te decepcionara. Ya sea que elijas un servicio rapido con atencion excelente o decidas quedarte, y deleitarte con un cappuccino meticulosamente elaborado que se anade a la experiencia. El ambiente es hermoso y relajante, convirtiendolo en un lugar fantastico en todos los aspectos."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkMWJfeGFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkMWJfeGFBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDd1b_xaA%7CCgsI49HurgYQiMbPew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708894435,
+            "review_datetime_utc": "02/25/2024 20:53:55",
+            "review_text": "The ambience is lovely! The place is very well decorated and full of inspiring quotes. It doesn't feel like a regular coffeeshop, it feels like you are a welcomed guest at an old friend's home. Desserts, coffee, and food are outstanding."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkMVlLaDNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkMVlLaDNBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDd1YKh3AE%7CCgwIlqLurgYQgLWfyAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708888342,
+            "review_datetime_utc": "02/25/2024 19:12:22",
+            "review_text": "Such a hidden gem! Went in for lunch today and had some amazing sandwiches and empanadas. We ordered the chopped cheese, chimi, and beef and chicken empanadas and they were all outstanding. Staff was super friendly and the interior was fun and definitely eclectic. Can't wait to come back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkeGEyUjZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkeGEyUjZnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDdxa2R6gE%7CCgwI_-TsrgYQyJX39AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708864127,
+            "review_datetime_utc": "02/25/2024 12:28:47",
+            "review_text": "Delightful visit. This beautifully decorated space includes cases full of cakes and pastries. We couldn't decide so tried several including a fruit tart bursting with flavor, a chocolate flan, a cheesecake and more. There is a coffee bar and even ice cream! Planning my next visit"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkcC0ya1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkcC0ya1J3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICdp-2kRw%7CCgwIwrvKrgYQ2PCerAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708301762,
+            "review_datetime_utc": "02/19/2024 00:16:02",
+            "review_text": "5 stars. Great bakery, awesome sandwich and love the home made family vibe here."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkbzcyS1ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkbzcyS1ZREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICdo72KVQ%7CCgwIg8nErgYQuNX0hwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708205187,
+            "review_datetime_utc": "02/17/2024 21:26:27",
+            "review_text": "As a Puerto Rican/ Dominican woman, I can honestly say this place reminds me of home. Everything is so well seasoned and stuffed. Empanadas, amazing. Chimi, great. But the chopped cheese!! I woke up craving it one morning, placed the order for pick up, got home to eat it and forgot it had mustard in it (I hate mustard)... I cried. I legit cried! My friend called me dramatic until he took a bite and understood why I felt the way I did.\n\nOnly con: I wish they would update their website or add a menu on their google page so we know what all is in the sandwiches."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkaEkycldREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkaEkycldREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICdhI2rWQ%7CCgsIkOqkrgYQgNajTA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707685136,
+            "review_datetime_utc": "02/11/2024 20:58:56",
+            "review_text": "I absolutely loved this place. The owner and her daughter are so attentive. The food is amazing. They make you feel at home! My boyfriend is lactose intolerant and really wanted a hot chocolate and she went about and beyond to prepare him a hot chocolate without milk. I am so happy we found this spot with a \"heart & soul\" this is going to be my to go spot for coffees and catching up with family and friends!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkcUw3MmV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkcUw3MmV3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICdqL72ew%7CCgsI5PifrgYQwN_GYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707605092,
+            "review_datetime_utc": "02/10/2024 22:44:52",
+            "review_text": "Delicious pastries, great food and service. Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0cTRiNWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0cTRiNWdRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDtq4b5gQE%7CCgsIjIKMrgYQoP7FFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707278604,
+            "review_datetime_utc": "02/07/2024 04:03:24",
+            "review_text": "This bakery is awesome. The food is a bonus to the varieties of cakes and pastries. I've been here several times and always satisfied from everything I've tried. So far, the Chipotle salmon sandwich, Cajun pasta, and burgers are all dope choices. Along with all the empanadas. Go try..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0d0tXSXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0d0tXSXR3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICtwKWItwE%7CCgsIl-LVrQYQ4KqpdQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706389783,
+            "review_datetime_utc": "01/27/2024 21:09:43",
+            "review_text": "Omg! Absolutely amazing. The environment is sooo homey. The food is delicious. You have to try the chicken empanadas!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOdXVuejdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOdXVuejdRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICNuunz7QE%7CCgwIupGMrQYQsImgsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705183418,
+            "review_datetime_utc": "01/13/2024 22:03:38",
+            "review_text": "Empanada were amazing! The atmosphere was very cute coffee shop vibe. The main course and coffee were also pretty great. Will definitely be back if closer to work would be the new lunch destination"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxbGNXc0JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxbGNXc0JREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID1lcWsBQ%7CCgwI3fPxrAYQoKCWtQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1704753629,
+            "review_datetime_utc": "01/08/2024 22:40:29",
+            "review_text": "La Dolcekca Bakery Cafe in Charlotte, NC, is a delightful culinary paradox nestled in The Montford Shops, a stone's throw from Angry Ales and Bowlero. It's the kind of place where the Caribbean meets Paris in a New York minute, and you can't help but feel you've stumbled upon a hidden gem.\n\nUpon entry, the sweet serenades of Frank Reyes set the stage for an experience that's as authentically Dominican as it gets, with a French twist. Karina, the owner's daughter and apparent queen of multitasking, greeted me with a smile that could light up the room. The display case was a kaleidoscope of treats - think tres leches in flavors you didn't know existed, flans that wobble just right, and cupcakes that make you question your loyalty to your diet.\n\nNow, let's talk about the menu. It's like the United Nations of pastries and sandwiches. I bravely ventured to try their Chimi, a sandwich that's a culinary hug from the Dominican Republic, squeezed onto what I suspect is French bread. It's a constellation of flavors with pulled pork, tomato, cheese, and a condiment symphony. But wait, there's more - it's pressed to perfection, accompanied by the kind of fries that remind you of childhood and a ramekin of ketchup that's probably just there to feel important.\n\nThe price might raise an eyebrow - $15.50 for the Chimi and $8 for the bread pudding - but remember, you're not just buying food; you're funding a culinary dream. However, I must admit, the Chimi was saltier than my last breakup. Next time, I'll stick to the pastries or give their chopped cheese a shot.\n\nAh, the caramel bread pudding - now that's the real MVP! It's like eating a cloud made of sugar, spice, and everything nice. Karina's reheating tip was spot on - it's a dessert that keeps on giving.\n\nA slight hiccup - the place was as barren of napkins as a desert, but a quick request later, and voila! Napkin oasis.\n\nAnd don't forget to join their rewards program - who doesn't like being rewarded for treating themselves? Plus, they do custom cakes, because why not add more sweetness to life?\n\nIn summary, La Dolcekca is where your taste buds go on a mini-vacation. It's a charming spot with heart, flavor, and a dash of Dominican flair. Worth every penny and every minute(20 min) of the wait!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxbzdETDdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxbzdETDdBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC1o7DL7AE%7CCgwIgI3SrAYQyN7vtwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704232576,
+            "review_datetime_utc": "01/02/2024 21:56:16",
+            "review_text": "The chop cheese was so good! Staff was very friendly and answered all of my questions as a first timer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxcFlhdWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxcFlhdWZREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC1pYaufQ%7CCgwIu_3MrAYQkKWNmQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704148667,
+            "review_datetime_utc": "01/01/2024 22:37:47",
+            "review_text": "Starting off, the location is easy to find and easy to park at. There was no wait when I visited (aside from waiting for my friends to join me). The owner greeted me and she was so nice and accommodating. The variety of pastries and food on the menu were great as I love to try new things. I ordered the fresh Mandarin Juice and Empanadas, 1 of each flavor (Ham & Cheese, Pulled Pork BBQ, Pepperoni Pizza, and Cheese). My friends ordered gourmet waffles with a side of eggs and the Salmon Chipotle sandwich with a side of fries. Everything was delicious. My friend got the Eggnog Tres Leches to go and I got the Strawberry Almond Cherry Cupcake for my MIL to go. I will definitely come back for more!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWNzRENmtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWNzRENmtnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDV74D6kgE%7CCgwItq6ErAYQoJbg2AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702958902,
+            "review_datetime_utc": "12/19/2023 04:08:22",
+            "review_text": "THIS PLACE!!!!!\nMy family and I travelled 1.5 hours specifically to try their chopped cheese sandwiches and desserts. We were not disappointed.\n#1 The food and desserts are FIRE!!!!!  We're originally from NY, as is the owner, and let me tell you, their chopped cheese is the BEST I've ever had!!!!! PERIOD. Karina's (Owner) special touch on this sandwich is everything. They offer a wide array of desserts, and they are all fresh, tasty and moist. We got cupcakes, carrot cake, Tres Leches, and flan - all YUMMY!!!!\n#2 The owner and staff are AMAZING!!!!! They explained the menu, answered all of our questions, made suggestions and offered excellent customer service.\n#3 The amount of food you get for the price is the icing on the cake.\nWe will be back soon. It's well worth the trip!!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWOE52dUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWOE52dUZBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDV8NvuFA%7CCgwIpp7XqwYQwKDQuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702219558,
+            "review_datetime_utc": "12/10/2023 14:45:58",
+            "review_text": "Todo muy rico y el personal Demaciado amable"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWcmNHWmZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWcmNHWmZREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICVrcGZfQ%7CCgsIy_rNqwYQ-JfKCg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702067531,
+            "review_datetime_utc": "12/08/2023 20:32:11",
+            "review_text": "Delicious food! Baked goods were very tasty and the staff were very friendly! I had the salmon chipotle sandwich with the hibiscus natural juice drink and the chocolate filled vanilla cupcake."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWa01HVUp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWa01HVUp3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICVkMGUJw%7CCgsI5925qwYQ8PyxZA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701736167,
+            "review_datetime_utc": "12/05/2023 00:29:27",
+            "review_text": "La comida, el ambiente y el servicio es 100% recomendado."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWa01peHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWa01peHpBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICVkMixzAE%7CCgwI69G5qwYQyMznlQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701734635,
+            "review_datetime_utc": "12/05/2023 00:03:55",
+            "review_text": "Hoy visite la cafeteria  y me comi un delicioso sandwich de pollo con papitas a la Francesca y para cerrar con broche de oro me comi un helado de coco, asi es que se las recogiendo para que vengan a disfrutar de todo lo rico que venden por aca."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURscS0yVTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURscS0yVTdRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDlq-2U7QE%7CCgwIiM63qwYQsJKvrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701701384,
+            "review_datetime_utc": "12/04/2023 14:49:44",
+            "review_text": "I was delighted by the atmosphere and warm greeting. The food was delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsbU9UOXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsbU9UOXJRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDlmOT9rQE%7CCgsI7uqfqwYQ8I6yYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701311854,
+            "review_datetime_utc": "11/30/2023 02:37:34",
+            "review_text": "Very good food and awesome pastries! I personally love the Ham & Cheese empanadas the best!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsejlHdkd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsejlHdkd3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIClz9GvGw%7CCgwIxt2aqwYQyIa5twI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701228230,
+            "review_datetime_utc": "11/29/2023 03:23:50",
+            "review_text": "I had the pleasure of tasting the most delicious food at La Dolcekca Bakery Cafe. The sandwiches were amazing!! My kids loved the sweet treats of course. It was very nice and clean and everyone was very welcoming. I have visited La Dolcekca Bakery Cafe multiple times and will continue."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdDU3TEpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdDU3TEpREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIClt57LJQ%7CCgwIvcaZqwYQwOHy2AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701208893,
+            "review_datetime_utc": "11/28/2023 22:01:33",
+            "review_text": "Everything was so fresh and hot! Literally the chicken empanada is the best I've had in Charlotte. Steak sandwich with fries was chef's kiss! The customer service was excellent, the place feels very homey which I really appreciated. I can't wait to go back to try some more things on the menu. Oh and the passion fruit juice, FIRE!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdGFidURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdGFidURnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICltabuDg%7CCgsIy_X9qgYQ-LKYaw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700756171,
+            "review_datetime_utc": "11/23/2023 16:16:11",
+            "review_text": "Very nice\nI had the banana pudding and chicken empanadas. The owner was very nice the empanadas were fresh and very tasty.\nHighly recommend.\nThe banana pudding was very good kinda pricy but its good. Saved me in a pinch for breakfast on Thanksgiving when everything was closed. I'm glad to support a small business like on a holiday."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsN3VhUnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsN3VhUnhBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICl7uaRxAE%7CCgwI9ablqgYQqOaDrQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700352885,
+            "review_datetime_utc": "11/19/2023 00:14:45",
+            "review_text": "The young Hispanic lady was so sweet and so helpful! The customer service and the food here is amazing. Thankyou sweetheart!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGdzVxRWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGdzVxRWlnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDFw5qEigE%7CCgwIhqy0qgYQuLvj0gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699550726,
+            "review_datetime_utc": "11/09/2023 17:25:26",
+            "review_text": "The empanadas were yummy and so filling! The staff was lovely and gave helpful recommendations. I adored the decorations and the overall vibe was cozy."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGamFiTm9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGamFiTm9nRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDFjabNogE%7CCgsIoLmxqgYQsOfBaA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699503264,
+            "review_datetime_utc": "11/09/2023 04:14:24",
+            "review_text": "The front lady with the glasses made me the best sandwich today! So down to earth with positive energy! Will be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGa2J6cUxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGa2J6cUxBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDFkbzqLA%7CCgsI5J2rqgYQiJO1Ng%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699401444,
+            "review_datetime_utc": "11/07/2023 23:57:24",
+            "review_text": "Such a cute place and the food was great. I had the French toast bites, scrambled eggs, and a cheese empanada. Would love to go back again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNnNYRDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNnNYRDRnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDF6sXD4gE%7CCgwIl7ufqgYQyJOIuAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699208599,
+            "review_datetime_utc": "11/05/2023 18:23:19",
+            "review_text": "Los mejore postres en charllote"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNnRIdHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNnRIdHZnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDF6tHtvgE%7CCgwI9LGfqgYQ6NWMlAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699207412,
+            "review_datetime_utc": "11/05/2023 18:03:32",
+            "review_text": "Todo es delicioso "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGbTduOGVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGbTduOGVnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICFm7n8eg%7CCgwItomQqgYQwOqY-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698956470,
+            "review_datetime_utc": "11/02/2023 20:21:10",
+            "review_text": "I ordered an empanada, the chimi sandwich combo, and the banana pudding (all were really good)! I loved how comforting both the food the restaurant were. I will definitely be back to try some more menu items with friends!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGX1l1MXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGX1l1MXFRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICF_Yu1qQE%7CCgwI1MOGqgYQyJjE3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698800084,
+            "review_datetime_utc": "11/01/2023 00:54:44",
+            "review_text": "Everything we had was so tasty especially the chopped cheese and the enchiladas are ADDICTING . We literally went back three days later haha! You can tell all the food is made with high quality ingredients and love! Everyone working just makes it seem like you're visiting their home and they're making you the best food. The desserts are amazing so much to choose from. We felt so welcomed and taking care of. We will continue driving 30 minutes to visit, it's sooooo worth it!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGeGUzOHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGeGUzOHBRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICFxe38pQE%7CCgwI_bz7qQYQiPqKpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698619005,
+            "review_datetime_utc": "10/29/2023 22:36:45",
+            "review_text": "good looking environment, with a lot of options and choices available. Definitely rockin with the spot"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGaFkzamZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGaFkzamZREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICFhY3jfQ%7CCgwI3tT6qQYQoPTz5gE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1698605662,
+            "review_datetime_utc": "10/29/2023 18:54:22",
+            "review_text": "I really wanted to like everything about this place, but that just wasn't possible.\n\n1-coffee- think it was instant-was charged extra for cream, and there was no refill available. Menu states price is $4, the bill stated $5.15. Extra milk-$1.50.\n2- claimed the barely warm waffle was fresh made. It was not, I saw them place a premade waffle in some sort of panini press, to warm it.\n3-one piece of bacon was all fat.\n\nService was slow. Overall just not great. Maybe other items are better. But, the waffle and bacon are not what you want."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1dU9HWWhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1dU9HWWhBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID5uOGYhAE%7CCgwI7oLHqQYQuLDfmgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697759598,
+            "review_datetime_utc": "10/19/2023 23:53:18",
+            "review_text": "The best chimi you will taste outside of DR or NYC\nI think my sandwich was made with love because this sandwich was amazing. Compliments to the nice young lady who prepared it.   "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1ME5TbXJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1ME5TbXJnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID50NSmrgE%7CCgwIyqDBqQYQqObUlQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1697665098,
+            "review_datetime_utc": "10/18/2023 21:38:18",
+            "review_text": "I decided to visit this bakery for the first time after seeing their sign from the parking lot near Bonchon. I was in the mood for some sweets so I stopped in. This is a cute little place and the decor is very nice and inviting. I ordered 2 cupcakes. The female employee was so wonderful and kind and tried her best to assist me. None of the cupcakes were labeled so I didn't know what I was ordering and had to rely on the employee to tell me what the flavors were and she didn't seem to know all of the flavors either since all you can see is the frosting. The actual cake portion of the cupcake is covered up by the cardboard wrapper.\nI ordered a strawberry cupcake and another that she said was \"chocolate\". The one that she gave me was not chocolate, it was actually some type of spice cake. It was pretty good even though it wasn't what I wanted. The strawberry cake on the other hand was awful. It was hard as a rock and tasted like it may have been sitting in the display  case for days. For over $5 for each cupcake, I was pretty disappointed. I see that all of their positive reviews are about the food so I think I will just try the food next time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1cFkyU1BREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1cFkyU1BREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC5pY2SPQ%7CCgwI1N-xqQYQyK2tigM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697411028,
+            "review_datetime_utc": "10/15/2023 23:03:48",
+            "review_text": "The best service and food!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwNm9qSUlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNm9qSUlBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDp6ojIIA%7CCgwIqZ6bqQYQsPicpAM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1697042217,
+            "review_datetime_utc": "10/11/2023 16:36:57",
+            "review_text": "nah they taxing for a choppped cheese? 15$? 18 on door dash? you're bugging , this is ny deli food I get \"inflation\" but a deli would not charge you no more than 7 to maybe 9 for a hero, much less for a roll. and before anyone comes at me telling me this is \" nc \" , life in NY in general is more expensive. especially for business/ rent. residential and commercial. overall cost of living.\n\nreview of comment to response , it's a chopped cheese. it's foundation is ground beef which is dirt cheap and  cheese. chopped cheese was never meant to be a hippy luxury dish. it's comfort food , despite a chopped cheese being cheaper in nyc it will always beat what this over priced sandwich is."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaOWNuYmJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOWNuYmJ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZ9cnbbw%7CCgwIh6P9qAYQyKq6hgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696551303,
+            "review_datetime_utc": "10/06/2023 00:15:03",
+            "review_text": "I came in Frantic! Looking for a last minute wedding cake. The baker prior did not make what I requested. The owner took amazing care of me and even had props I could rent. Thanks to her my reception was saved! Side note the food is good as well!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaeWJIQ01nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeWJIQ01nEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZybHCMg%7CCgwIz4nxqAYQiMHYvgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696351439,
+            "review_datetime_utc": "10/03/2023 16:43:59",
+            "review_text": "Thank you so much for the awesome coffee and pastry yesterday! Can't wait to stop by again soon!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadm82MTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadm82MTlBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZvo619AE%7CCgsIyebnqAYQqKD7dA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696199497,
+            "review_datetime_utc": "10/01/2023 22:31:37",
+            "review_text": "Best lemon bar I've ever had "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaeXBMY1FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeXBMY1FnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZypLcQg%7CCgsIn_HVqAYQiJnOLQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695905951,
+            "review_datetime_utc": "09/28/2023 12:59:11",
+            "review_text": "Loved this place!! Friendly stuff, amazing food! We will definitely come back!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaeXBLMFNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeXBLMFNREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZypK0SQ%7CCgwIlvHVqAYQgI_iqAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695905942,
+            "review_datetime_utc": "09/28/2023 12:59:02",
+            "review_text": "I love the chop cheese, the flan, the cake , coffees!!! Everything in this bakery including services is all top tier."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaeXNpWXJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaeXNpWXJ3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZysiYrwE%7CCgwI3t_VqAYQuLSD1wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1695903710,
+            "review_datetime_utc": "09/28/2023 12:21:50",
+            "review_text": "My husband and I got a Strawberry Tres Leches & Strawberry Cupcake to share. I love tres leches and it was cool how many different flavors they have.\n\nI recently found out they have food (not just desserts), so I'd love to try that as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURac3ZuZHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURac3ZuZHhBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZsvndxAE%7CCgwI_sDTqAYQkO7ImQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695867006,
+            "review_datetime_utc": "09/28/2023 02:10:06",
+            "review_text": "Tried their salmon chipotle today and it was amazing! Will be back "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaa3RySEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaa3RySEdBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZktrHGA%7CCgsIsavRqAYQ6NmyAg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695831473,
+            "review_datetime_utc": "09/27/2023 16:17:53",
+            "review_text": "Great staff... Super friendly and the chop cheese is amazing. Definitely one of my go to spots."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaa3RxMHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaa3RxMHpBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZktq0zAE%7CCgsI76rRqAYQ0JvMDw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695831407,
+            "review_datetime_utc": "09/27/2023 16:16:47",
+            "review_text": "Great friendly service. The owner was hands on and definitely going back again and again .The food is amazing and they have the best chopped cheese in the world."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaNHNPTVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaNHNPTVdBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZ4sOMWA%7CCgsIg_rQqAYQ4JHOJg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1695825155,
+            "review_datetime_utc": "09/27/2023 14:32:35",
+            "review_text": "Wish I could give one star! Ordered bakery items and spent a lot of money and they were out of something I ordered so I asked if I could replace it with something that was 2 more dollars and was told no even though I spent 65 dollars with them! I am still trying to get my little bit of money back from that item and when I have emailed the owner she says I'm making threats. I would never do that over something this small!!! But definitely won't be back! I have several more details to this story but I simply want to give my rating and my 8 dollars back from the 65 I spent, and everything tasted old in my opinion cinnamon roll was hard as a rock! But she says that's a threat "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaek9XeVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaek9XeVFREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDZzOWyQQ%7CCgsIgLDIqAYQ0NP1CQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695684608,
+            "review_datetime_utc": "09/25/2023 23:30:08",
+            "review_text": "Please do yourself a favour and try this place out!!! The chop cheese sandwich is the truth. This is going to be my new spot!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNad19DMlZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNad19DMlZBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZw_C2VA%7CCgsI14qYqAYQ8MfAVw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694893399,
+            "review_datetime_utc": "09/16/2023 19:43:19",
+            "review_text": "The owner greeted me at the door with the warmest smile. We had a conversation and I felt like I was back in NY at home!! Listen, ask for a salmon chopped cheese with tamarind juice or soursop juice!!!! She knows what she is doing with hot Sammie's and pastries!!!! I got cheesecake flan (YES CHEESECAKE FLAN) and biscoff cheesecake!! EVERYTHING WAS 10'S across the board!! She's has a repeat customer here!! The presentation, service, & taste of everything is top tier!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabm96aUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabm96aUNREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZnoziCQ%7CCgwI-ZH6pwYQqKPd0QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694402809,
+            "review_datetime_utc": "09/11/2023 03:26:49",
+            "review_text": "This spot is tucked in off of Montford Drive in Charlotte. It's almost like a Dominican Amelie's but smaller and better entrees. The food was flavorful. I had a chop cheese and Cajun pasta and an empanada. To drink I had mango juice. I was impressed with the portions. The service was amazing. The restaurant is small so be prepared to either take your food to go or position yourself for a good seat"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNacnBlWWNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNacnBlWWNnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZrpeYcg%7CCgsIsdj4pwYQ-PnCYw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1694379057,
+            "review_datetime_utc": "09/10/2023 20:50:57",
+            "review_text": "Very nice staff and super cute place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabHZtelN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabHZtelN3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZlvmzSw%7CCgwI--_zpwYQiKzmkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694300155,
+            "review_datetime_utc": "09/09/2023 22:55:55",
+            "review_text": "Fantastic. We found this place on a whim. It's a super cute cafe.  The menu is not expansive but it doesn't have to be. The food is PHENOMENAL!!!!!  The bakery selection is a great variety and everything we had was fantastic. I highly recommend La Dolcekca."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaNXVTZWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaNXVTZWVREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZ5uSeeQ%7CCgwIqObypwYQ8MPJiQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694282536,
+            "review_datetime_utc": "09/09/2023 18:02:16",
+            "review_text": "Great small restaurant/bakery with a lot of flavor. The Chop Cheese is up there as one of the best I've ever had. Very filling too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaaE1PVVNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaaE1PVVNREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZhMOUSQ%7CCgwI0s_WpwYQ-IGnnQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693820882,
+            "review_datetime_utc": "09/04/2023 09:48:02",
+            "review_text": "The owner exudes love for her craft & customer's Cozy shop where you can even sit and enjoy your food or grab and go The pastries are fresh flaky some savory others sweet Empanadas fresh and hot Chop Cheese! I'm from NJ and seeing that took me back Delicious ice cream and Sorbet served to the right of the main dishes Everything made you smile and tasting the food kept the smile on Huge props to the owner she is amazing please try this place it's open 10-10"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaaUt6Ny1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaaUt6Ny1nRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZiKz7-gE%7CCgsIkIPPpwYQgNryTQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693696400,
+            "review_datetime_utc": "09/02/2023 23:13:20",
+            "review_text": "Delicioso"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaaU15SEN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaaU15SEN3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICZiMyHCw%7CCgwI7YHPpwYQyMeGpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693696237,
+            "review_datetime_utc": "09/02/2023 23:10:37",
+            "review_text": "Deliciosa la comida y excelente atencion "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcmZmTVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcmZmTVlREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDprffMYQ%7CCgsIv8GqpwYQqJCgJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693098175,
+            "review_datetime_utc": "08/27/2023 01:02:55",
+            "review_text": "Stumbled upon this place when craving desert.  I consider myself lucky to have discovered it.  Why did I not know about this place sooner?   Great service, excellent desert selections and delicious.  I ordered the chocoflan and enjoyed every bite.  Can't wait to go back and try their sandwiches and empanadas!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwamQtWkN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwamQtWkN3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDpjd-ZCw%7CCgwIuP2opwYQqILoywM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693073080,
+            "review_datetime_utc": "08/26/2023 18:04:40",
+            "review_text": "Beautiful spot for coffee break with sweets and great breakfast sandwiches."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwNHBmQnBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNHBmQnBRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDp4pfBpQE%7CCgsI2Oj_pgYQ6Ke7Sg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692398680,
+            "review_datetime_utc": "08/18/2023 22:44:40",
+            "review_text": "great service from owner. loved learning about her story on line. also great pastry offering"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwNHN1Wjd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNHN1Wjd3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDp4suZ7wE%7CCgsI393_pgYQiPKEIA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692397279,
+            "review_datetime_utc": "08/18/2023 22:21:19",
+            "review_text": "I have had the choppsandwich, Carmel tres leche cake, chocolate cake and empanadas all were delicious. My favorites have been the savory items!  Get chopped sandwich if you have never been. It's huge, big enough to share or have left overs! Heats up great in the oven"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwc052LUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwc052LUNREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDpsNv-CQ%7CCgsIkIrqpgYQiN6MZQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1692042512,
+            "review_datetime_utc": "08/14/2023 19:48:32",
+            "review_text": "I do not recommend this place. My boyfriend had ordered a cake to surprise me with, paid in full and order two weeks ahead of the scheduled date and time. He showed them a picture to confirm the design. However, when it was time to pick up the cake, they claimed it wasn't ready because they had forgotten about it. Instead of taking responsibility, the owner kept blaming him and caused a back-and-forth argument when she should have added it to her calendar. As a result to their forgetfulness, they rushed to make the cake, resulting in a final design that bore no resemblance to what he had initially shown them. To top it off, the cake filling they used was not the one he had requested.\n\nThe white hearted shaped cake is was was requested and the pink not even heart shaped was what the gave."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUNwXzhRRhAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUNwXzhRRhAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICp_8QF%7CCgwIvJXkpgYQyLCluQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691945660,
+            "review_datetime_utc": "08/13/2023 16:54:20",
+            "review_text": "Beautiful interior, friendly staff and tasty food. What more could one ask for!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwcDhTVEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwcDhTVEFREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpp8STAQ%7CCgsI6_DZpgYQuJTLEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691777131,
+            "review_datetime_utc": "08/11/2023 18:05:31",
+            "review_text": "My new favorite place to eat. Great food and great family owned restaurant."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwaWZmUlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwaWZmUlhREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpiffRXQ%7CCgsIwf-7pgYQ4NfJEg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691287489,
+            "review_datetime_utc": "08/06/2023 02:04:49",
+            "review_text": "El mejor banana puding"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaWJmVW9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaWJmVW9RRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpibfUoQE%7CCgwIhP67pgYQqNGy9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691287300,
+            "review_datetime_utc": "08/06/2023 02:01:40",
+            "review_text": "Muy rico los tres leches"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwaWVmeTN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaWVmeTN3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpiefy3wE%7CCgwI7fq7pgYQoKrauQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691286893,
+            "review_datetime_utc": "08/06/2023 01:54:53",
+            "review_text": "Lo mejor"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwZ1puTDdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwZ1puTDdnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpgZnL7gE%7CCgwI5uS1pgYQ6JiyogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691185766,
+            "review_datetime_utc": "08/04/2023 21:49:26",
+            "review_text": "Best Cuban sandwich I've had in a long while. Croquettes were to die for. And service was excellent."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwM1BDRl9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwM1BDRl9nRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICp3PCF_gE%7CCgsI1pqapgYQkMDbfA%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1690733910,
+            "review_datetime_utc": "07/30/2023 16:18:30",
+            "review_text": "Cookies great, mini cakes muh"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwelBxZld3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwelBxZld3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICpzPqfWw%7CCgwIlaSXpgYQsKOSmwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690685973,
+            "review_datetime_utc": "07/30/2023 02:59:33",
+            "review_text": "This is place is great! The food is fantastic and the service is amazing! Best desserts in Charlotte!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKclpMYWx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKclpMYWx3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJrZLalwE%7CCgsIhovtpQYQwKa4bQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689994630,
+            "review_datetime_utc": "07/22/2023 02:57:10",
+            "review_text": "los mejores pasteles "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKcmVMZzJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcmVMZzJRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJreLg2QE%7CCgwIoontpQYQ8J3W-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689994402,
+            "review_datetime_utc": "07/22/2023 02:53:22",
+            "review_text": "Los mejores pasteles"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKcmF5d2pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcmF5d2pBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJraywjAE%7CCgwItv7spQYQ8L3WrwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689993014,
+            "review_datetime_utc": "07/22/2023 02:30:14",
+            "review_text": "El mejor tres leches de Charlotee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKcmN5dEZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKcmN5dEZnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJrcytFg%7CCgwI__3spQYQ6Nn1tgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689992959,
+            "review_datetime_utc": "07/22/2023 02:29:19",
+            "review_text": "Los mejores pasteles de chocolate!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKcmN6NmJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKcmN6NmJnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJrcz6bg%7CCgsIy_3spQYQsLC6Kw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689992907,
+            "review_datetime_utc": "07/22/2023 02:28:27",
+            "review_text": "The best place for eat pancakes!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKaUtqTUV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKaUtqTUV3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDJiKjMEw%7CCgwIlcarpQYQkJHl6gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688920853,
+            "review_datetime_utc": "07/09/2023 16:40:53",
+            "review_text": "Their empanadas are mind blowingly delicious. We ordered two and decided it was a mistake to not order one of every flavor."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKMXFlWmd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKMXFlWmd3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJ1qeZgwE%7CCgsIhNTnpAYQuJHCPg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687808516,
+            "review_datetime_utc": "06/26/2023 19:41:56",
+            "review_text": "What a fantastic place that I came across!! This is a Bakery and restaurant that serves unbelievable  authentic delicacies...The owner is one of the nicest people I have ever met and her daughter does some of the baking!!! Really strong coffee for sure!!! This is a true \"Gem\" not to be missed"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKcXVxY0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKcXVxY0R3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJquqcDw%7CCgwItKLepAYQqKXr2gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687654708,
+            "review_datetime_utc": "06/25/2023 00:58:28",
+            "review_text": "The sandwiches are a little pricy but it tastes great. Their tres leches (in multiple flavors) are great"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKeXBPc3ZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKeXBPc3ZRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJypOsvQE%7CCgsI-s3dpAYQqPmxZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687643898,
+            "review_datetime_utc": "06/24/2023 21:58:18",
+            "review_text": "Great Fresh Food! Great Service and Great Vibes"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKeEttZG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKeEttZG1nRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJxKmdmgE%7CCgsI87bJpAYQ2LikVQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687313267,
+            "review_datetime_utc": "06/21/2023 02:07:47",
+            "review_text": "Best breakfast place in Charleston!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKa0tEUElnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKa0tEUElnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJkKDPIg%7CCgwI8sC-pAYQkJbcqgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687134322,
+            "review_datetime_utc": "06/19/2023 00:25:22",
+            "review_text": "Great tasty desserts, & an authentic tasting Tamarind drink!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKa0tEZ3FRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKa0tEZ3FRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICJkKDgqQE%7CCgsI3r--pAYQ8KGYMQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1687134174,
+            "review_datetime_utc": "06/19/2023 00:22:54",
+            "review_text": "I went here for the first time today. I found it both awkward and difficult to eat here. There is no drink menu, no trash can, and no place to get utensils from. We only got sweets. I wasn't super impressed by any of them. But I would make mention that the owner and her employees are all very nice."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4eXZ2eXFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4eXZ2eXFRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDxyvvyqQE%7CCgoIqvv5owYQ2Phn%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1686011306,
+            "review_datetime_utc": "06/06/2023 00:28:26",
+            "review_text": "The owner has very good taste to decorte. I will give them 3 stars for that and because customer service was great.   It was pricy and we were not impressed with what we had:  A cookie, a bread pudding, 1 cold brew coffee and 1 juice including 15% tip. $30. Neither of us liked the desserts or the drinks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4Nk9YX19RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4Nk9YX19RRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDx6OX__QE%7CCgsIkpHfowYQiMLrAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685571730,
+            "review_datetime_utc": "05/31/2023 22:22:10",
+            "review_text": "The owner is amazing!! Good dessert and coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NTZqUk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NTZqUk1REAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICx56jRMQ%7CCgwIvvHJowYQuKCh7gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685223614,
+            "review_datetime_utc": "05/27/2023 21:40:14",
+            "review_text": "Everything is delicious. Get there early as they sell FAST. Recommend: any cheesecake is PHENOMENAL and the stuffed churros are fried when you order. 5+ Stars"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4X3B1OUpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4X3B1OUpREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICx_pu9JQ%7CCgwI3JOaowYQoI2slAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684441564,
+            "review_datetime_utc": "05/18/2023 20:26:04",
+            "review_text": "It is in the bldg beside Jeff's Bucket Shop. Amazing pastries & empanadas! Great customer service!!  I highly recommend!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSNV9tX1dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSNV9tX1dREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDR5_m_WQ%7CCgsI973UogYQyLyJRw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683300087,
+            "review_datetime_utc": "05/05/2023 15:21:27",
+            "review_text": "Cute aesthetic. Highly highly recommend the chop cheese"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSdmZEckFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSdmZEckFnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRvfDrAg%7CCgwI_4TBogYQoIqx7AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682981503,
+            "review_datetime_utc": "05/01/2023 22:51:43",
+            "review_text": "This is the BEST bakery in South charlotte. I love the desserts and the Food!!..Everything here is amazing.. I highly recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSdmZEcGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSdmZEcGZ3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRvfDpfw%7CCgwI1YTBogYQyNb7owM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682981461,
+            "review_datetime_utc": "05/01/2023 22:51:01",
+            "review_text": "Los sandwich mas deliciosos del mundo mundial los ame definitivamente mi lugar favorito y los jugos exquisitos ame "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSM2NfTzJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSM2NfTzJBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDR3c_O2AE%7CCgwIsIPBogYQyNDOjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682981296,
+            "review_datetime_utc": "05/01/2023 22:48:16",
+            "review_text": "Me encanto la Bakery Cafe los Tres leches estan sabrosos!! Tienen que venir a probarlos!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSM1llS1NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSM1llS1NREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDR3YeKSQ%7CCgwIuufAogYQyI-ilAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1682977722,
+            "review_datetime_utc": "05/01/2023 21:48:42",
+            "review_text": "Very cute Bakery. They have a lot of desert options and seem to offer a variety of empanadas."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMWVMeTR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMWVMeTR3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDR1eLy4wE%7CCgsInL25ogYQuP_jCw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682857628,
+            "review_datetime_utc": "04/30/2023 12:27:08",
+            "review_text": "Omgosh my family and I went last week and I was salivating sweets was yummy!! Next week I'll try breakfast !!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURScGZTSkV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURScGZTSkV3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRpfSJEw%7CCgsIkPy1ogYQiIG9Xw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682800144,
+            "review_datetime_utc": "04/29/2023 20:29:04",
+            "review_text": "Awww, I love how this place was decorated throughout in a Paris theme highlight in pink. Perfect spot to have a nice tea date with lots of baked sweets and some food options. The empanadas are definitely I must when you come filled and packed with flavor. They are cooked to order. I also enjoyed the pineapple cupcake it had a nice glaze on top and on the bottom of the cupcake. The lady working was really nice and offered us a sa while she cooked our empanadas. No worries there are plenty of parking  spaces."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSbk9MY2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbk9MY2t3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRnOLckwE%7CCgwIlqKCogYQ8P6KzwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681953046,
+            "review_datetime_utc": "04/20/2023 01:10:46",
+            "review_text": "Best tres leches ever! Her juices are homemade and soooo good. The owner is so sweet and she makes the most beautiful and yummy cakes!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSbE9ISzBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbE9ISzBnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRlOHK0gE%7CCgwIiOn6oQYQoNmF4QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681831048,
+            "review_datetime_utc": "04/18/2023 15:17:28",
+            "review_text": "Loved everything about this Cafe!\nThe decor is beautiful, the owner is super nice and the food is delicious!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSNk52MGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSNk52MGdBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDR6Nv0gAE%7CCgwIqcbyoQYQsKGd3QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681695529,
+            "review_datetime_utc": "04/17/2023 01:38:49",
+            "review_text": "I really love this place   it feels like home, the coffee the empanadas the dessert are just delicious  I love how the owner make you feel welcome, 100% recommended, come with your friends and your love ones and you will have a great time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSc1BHV0RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSc1BHV0RBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDRsPGWDA%7CCgwIg4TtoQYQ4MSa_wI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1681605123,
+            "review_datetime_utc": "04/16/2023 00:32:03",
+            "review_text": "If I could give zero stars I would. Everything I got was absolutely terrible!!! No flavor and SOGGY!!!!  It literally was like someone poured lots of water in all the cake. I had to pour out the liquid to taste it. I will not be returning. Worst bakery I've ever experienced."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSXzdpUmhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSXzdpUmhBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICR_7iRhAE%7CCgsI-dvloQYQiP7tTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681485305,
+            "review_datetime_utc": "04/14/2023 15:15:05",
+            "review_text": "We purchased cake pops for a baby shower and they were perfect! Great size and very delicious. So many compliments from our guests. Definitely will be visiting this lovely bakery again soon!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCdWZyLVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCdWZyLVh3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICBufr-Xw%7CCgwI3Yy6oQYQkLH-7AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680770653,
+            "review_datetime_utc": "04/06/2023 08:44:13",
+            "review_text": "3 month follow up!!!!!  Service and food were wonderful!  I dined in this time and it felt like I was visiting a relative.  I can't wait til my next visit!\n\nVery nice!  Great service, hot & delicious food.  I called in my order, gave my estimated arrival and it was hot off the grill!  Everyone was nice and friendly, I look forward to my next visit for cheesecake!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSanVfWVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSanVfWVpBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICRju_YZA%7CCgsIrKSjoQYQyK67Kg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680396844,
+            "review_datetime_utc": "04/02/2023 00:54:04",
+            "review_text": "I ordered an empanada, chimi sandwich, and passion fruit juice. It was delicious. Excited to try the chopped cheese and some of the sweets next time"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSdXZmbGtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSdXZmbGtnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICRuvflkgE%7CCgwI4ueYoQYQ6KfRkAM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1680225250,
+            "review_datetime_utc": "03/31/2023 01:14:10",
+            "review_text": "Presentation was lacking and service was less than stellar. The carrot cake cupcake and the cappuccino was good. The oreo cheesecake and coffee was okay. Really did not live up to the hype."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSOHMzM1pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSOHMzM1pREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICR8s33ZQ%7CCgsIp7aRoQYQuNPiLA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680104231,
+            "review_datetime_utc": "03/29/2023 15:37:11",
+            "review_text": "Un lugar excelente muy buen servicio una varia extensa y muy buen sazon dominicano"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSa0xPYzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSa0xPYzNnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICRkLOc3gE%7CCgsIppvuoAYQiL-ibw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679527334,
+            "review_datetime_utc": "03/22/2023 23:22:14",
+            "review_text": "Delicious, just delicious . The biscoff carmel cheesecake,  tres leches carmel cake, passion fruit drink, the chimmy sandwich is a delicious burst of flavor!!! Definitely will be coming more than I am supposed to."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoejVyU0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoejVyU0Z3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDhz5rSFw%7CCgwI1-vioAYQgMmorQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679341015,
+            "review_datetime_utc": "03/20/2023 19:36:55",
+            "review_text": "We had the chopped cheese and salmon sandwhich, best sandwhiches we've had in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoX2RETHlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoX2RETHlRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDh_dDLyQE%7CCgwIrvPIoAYQkJmG7QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678916014,
+            "review_datetime_utc": "03/15/2023 21:33:34",
+            "review_text": "Hands down  place is phenomenal.... Food and pastries .... But great me out.. EVEN THE ONES WORKING ARE PHENOMENAL... you don't get that anywhere anymore... thank you for a great birthday cake\n. Came back for foods and multiple pastries and everything was amazing"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURobGNiNjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURobGNiNjBBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDhlcb60AE%7CCgwIgdO-oAYQ2MKTmQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678748033,
+            "review_datetime_utc": "03/13/2023 22:53:53",
+            "review_text": "Best lunch in Charlotte! "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoNUtuaGxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoNUtuaGxnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICh5KnhlgE%7CCgsInNa4oAYQ4LimLw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1678650140,
+            "review_datetime_utc": "03/12/2023 19:42:20",
+            "review_text": "HIT or MISS - the brownies are to die for, however I was really surprised to find out that that cream they put in their almond croissants wasn't sweet!  It had a less than pleasant taste to it...\n\nUpdate: Tried the Oreo Brownie and was disappointed.  This place really is hit or miss... I won't be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoN09UZUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoN09UZUtnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDh7OTeKg%7CCgwI6LCdoAYQsJn_0wM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1678202984,
+            "review_datetime_utc": "03/07/2023 15:29:44",
+            "review_text": "Nice ambiance and semi decent customer service but the desserts are lacking flavor. It needs more of the \"Latin\" touch. The food is missing seasoning. I say this for constructive criticism. Nice place though!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNodHNYT2p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNodHNYT2p3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIChtsXOjwE%7CCgwIwIuknwYQ8O3pzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676215744,
+            "review_datetime_utc": "02/12/2023 15:29:04",
+            "review_text": "Delicious and beautifully crafted desserts in an absolutely adorable cafe! The atmosphere is colorful and eclectic, and the pastries are phenomenal. I recommend the chocolate shell cookie--it's almost like a chocolate croissant, and it tastes like brownie batter!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoNUlLN0hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoNUlLN0hnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICh5IK7Hg%7CCgwItr6AnwYQ2LHgoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675632438,
+            "review_datetime_utc": "02/05/2023 21:27:18",
+            "review_text": "Homemade desserts"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoeUlMQ0lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoeUlMQ0lnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIChyILCIg%7CCgwIg-f1ngYQqPuM_gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675457411,
+            "review_datetime_utc": "02/03/2023 20:50:11",
+            "review_text": "AMAZING!!!! Try the chocolate shell cookie- I've never had anything like it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCdmVtVWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCdmVtVWlnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBvemUigE%7CCgwIw5zLngYQgKa5xAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674759747,
+            "review_datetime_utc": "01/26/2023 19:02:27",
+            "review_text": "I ordered the chop cheese and it was delicious!  I will definitely come back to try the desserts."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCeVkzUndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCeVkzUndRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDByY3RwQE%7CCgwIk-i2ngYQ2PC11AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674425363,
+            "review_datetime_utc": "01/22/2023 22:09:23",
+            "review_text": "Es la numero 1 de las bakery cafe de Charlotte por sus productos, disenos unicos, ingredientes de calidad, excelente atencion al cliente, y una decoracion relajante, lo cual garantiza que los clientes puedan disfrutar de un momento agradable "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCa2V6dzFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCa2V6dzFnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBkezw1gE%7CCgwIm-2wngYQgLztzAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674327707,
+            "review_datetime_utc": "01/21/2023 19:01:47",
+            "review_text": "Beautiful bakery in the heart of Charlotte , it has an over the top ambiance , the sweets and food are amazing , will go again with the whole family,  my husband  and I a  very tasty chimichurri , brought some sweets home and all my children loved it , will definitely come again "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCN3RxV2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCN3RxV2tnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB7tqWkgE%7CCgsIucKnngYQyO3Rbw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674174777,
+            "review_datetime_utc": "01/20/2023 00:32:57",
+            "review_text": "Best dessert in Charlotte!! MUST try!! Staff is amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCNnEzcldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCNnEzcldnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB6q3rWg%7CCgsI8vqXngYQ2MXhWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673919858,
+            "review_datetime_utc": "01/17/2023 01:44:18",
+            "review_text": "Very nice and cozy place !!! I love the pastelitos and the tres leches!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCcXRIUjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCcXRIUjhRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBqtHR8QE%7CCgwImsWWngYQ6LPs2QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673896602,
+            "review_datetime_utc": "01/16/2023 19:16:42",
+            "review_text": "This cafe is the perfect place for me. The selection of treats is remarkable, especially the combination of cannolis and cappuccinos. Delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCc3RmYXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCc3RmYXp3RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBstfazwE%7CCgwIufSSngYQ0Pmi1QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673837113,
+            "review_datetime_utc": "01/16/2023 02:45:13",
+            "review_text": "Nice place !!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCc3NpakJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCc3NpakJnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBssijBg%7CCgwIpt-RngYQiLjBnQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673818022,
+            "review_datetime_utc": "01/15/2023 21:27:02",
+            "review_text": "Awesome place great dessert"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHFPVjhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHFPVjhBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0qOV8AE%7CCgwIjbORngYQyPjVpAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673812365,
+            "review_datetime_utc": "01/15/2023 19:52:45",
+            "review_text": "Very good!!\nI highly recommend trying the lemon pepper chicken!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHZ6QVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHZ6QVFnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0vzAQg%7CCgwI0e6QngYQ-PjDvgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803601,
+            "review_datetime_utc": "01/15/2023 17:26:41",
+            "review_text": "Excellent service and good food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHJ5SW53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHJ5SW53RRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0ryInwE%7CCgsI3u2QngYQqOWEFw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803486,
+            "review_datetime_utc": "01/15/2023 17:24:46",
+            "review_text": "Friendly staff amazing decor great food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHR5SmhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHR5SmhnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0tyJhgE%7CCgsIme2QngYQsL-jMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803417,
+            "review_datetime_utc": "01/15/2023 17:23:37",
+            "review_text": "Your deserts are amazing and excellent service Love the decorations."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHB5M1RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHB5M1RREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0py3TQ%7CCgsIyOyQngYQuIjnCQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803336,
+            "review_datetime_utc": "01/15/2023 17:22:16",
+            "review_text": "Excelente espacio para compartir, me agrado el trato de los empleados y la variedad del los productos."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHB6alRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHB6alRREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0pzjTQ%7CCgwItuyQngYQ-KnZ-gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803318,
+            "review_datetime_utc": "01/15/2023 17:21:58",
+            "review_text": "Absolutely great atmosphere. The treats and coffee where amazing. Will definitely be back and will be recommending this spot. Thanks for the great service, see you guys soon!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHB5ZHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHB5ZHpBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0pydzAE%7CCgwIruyQngYQ0NbnsQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803310,
+            "review_datetime_utc": "01/15/2023 17:21:50",
+            "review_text": "Muy nice el lugar,acogedor y muy buenas atenciones "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHB5Y2VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHB5Y2VnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0pyceg%7CCgwI8euQngYQyOjq_QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803249,
+            "review_datetime_utc": "01/15/2023 17:20:49",
+            "review_text": "El lugar esta hermosisimo y sumado su excelente servicio,lo hace un lugar especial. Me encanto el cafe . Lo recomiendo."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHV6TlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHV6TlhREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0uzNXQ%7CCgwIsOuQngYQ0IeotgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803184,
+            "review_datetime_utc": "01/15/2023 17:19:44",
+            "review_text": "You guys have excellent service and your desserts are amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMHV6MWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMHV6MWFBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0uz1aA%7CCgwIruuQngYQ8OCXywM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673803182,
+            "review_datetime_utc": "01/15/2023 17:19:42",
+            "review_text": "Excelente servicio"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHN6cl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHN6cl9RRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0szr_QE%7CCgwIz-mQngYQ-Mmu6QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673802959,
+            "review_datetime_utc": "01/15/2023 17:15:59",
+            "review_text": "Excelente"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCMHN5RDZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCMHN5RDZnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB0syD6gE%7CCgwIx-mQngYQsM3w8QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673802951,
+            "review_datetime_utc": "01/15/2023 17:15:51",
+            "review_text": "100% recomendado"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCN0xhNE5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCN0xhNE5REAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDB7La4NQ%7CCgwIv7uGngYQkIvBzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673633215,
+            "review_datetime_utc": "01/13/2023 18:06:55",
+            "review_text": "Great place!\nThe staff is very friendly and helpful. Lots of coffees and baked goods. Clean with good atmosphere.\nThey have started providing a few lunch items. I recommend the Dominican Chimichurri Burger. It was so delicious.\n\nWell worth stopping in!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCdEliNVJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCdEliNVJnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBtIb5Rg%7CCgwInpGBngYQ-Le_jwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673545886,
+            "review_datetime_utc": "01/12/2023 17:51:26",
+            "review_text": "Coffee and treats are magnificent... A++\n\nWe needed an after dinner pick me up before driving the 2 hours back home. Super sweet woman made us fresh coffee at 9:55pm. Double chocolate cookie and cream puffs were perfect.\n\nThe jungle of indoor plants, the tea cup sets and decor make for amazing vibes. You can tell a lot of love is put into this cute cafe!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCbU91d0tnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCbU91d0tnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBmOuwKg%7CCgwI9tL3nQYQwIOnvAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673390454,
+            "review_datetime_utc": "01/10/2023 22:40:54",
+            "review_text": "Food is excellent from desserts to the sandwiches omg!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCbUt1OVp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCbUt1OVp3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDBmKu9Zw%7CCgwIytL3nQYQqLnq5gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673390410,
+            "review_datetime_utc": "01/10/2023 22:40:10",
+            "review_text": "The food and the deserts are very good you should give them a try"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCaDRPLVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaDRPLVR3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICBh4O-Tw%7CCgsIu5fdnQYQ-OjALg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672956859,
+            "review_datetime_utc": "01/05/2023 22:14:19",
+            "review_text": "Me encantan los postres, muy buen servicio, la comida es muy rica"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCaF9UVmZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaF9UVmZREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICBh_TVfQ%7CCgsIrsvcnQYQoOOWfA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672947118,
+            "review_datetime_utc": "01/05/2023 19:31:58",
+            "review_text": "Food is so flavorful! Loved the salmon sandwich, my mouth is actually watering just thinking about it! Lol Love the home like atmosphere and the owner is super sweet. It's now a go to spot for sure!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCcy1mYzJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCcy1mYzJBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICBs-fc2AE%7CCgwI8JbTnQYQ6LD3rAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672792944,
+            "review_datetime_utc": "01/04/2023 00:42:24",
+            "review_text": "Es un gran servicio, el lugar es muy agradable muy acogedor y aparte de todo eso es hermoso, inicialmente su comida es deliciosa, me encanta todo, le doy un 10 a todo."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCc191TFdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCc191TFdnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICBs_uLWg%7CCgwIlJLTnQYQsO284wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672792340,
+            "review_datetime_utc": "01/04/2023 00:32:20",
+            "review_text": "Me encanto el buen servicio que brindan & la comida es muy deliciosa yo le daria siempre 10 de 10."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCME5MS3JBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCME5MS3JBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICB0NLKrAE%7CCgsIz7PpnAYQoP7xMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671059919,
+            "review_datetime_utc": "12/14/2022 23:18:39",
+            "review_text": "Discovered this place thanks to Offline Charlotte & am so glad we did. We didn't get sweets this time (we'll come back though!), but we ordered dinner - a chimi sandwich and chicken empanadas & they were both delicious! Super impressed & will eat here again when in the area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQta2JDbWhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQta2JDbWhnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID-kbCmhgE%7CCgwI19WlnAYQ6Pf_3wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669950167,
+            "review_datetime_utc": "12/02/2022 03:02:47",
+            "review_text": "Love how friendly the people here are. There chimis are honestly stop in your tracks good. And there passion fruit taste like they used the actual fruit straight off the plant"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQteU9ya1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQteU9ya1RnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgID-yOrkTg%7CCgwIu4LlmwYQgImdlgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668890939,
+            "review_datetime_utc": "11/19/2022 20:48:59",
+            "review_text": "Ambience of this place is amazing thanks to very welcoming service and decor. The bakery items were delicious and coffee was good. Highly recommend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtdjduTHVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdjduTHVRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-v7nLuQE%7CCgwI3fDZmwYQiPmBuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668708445,
+            "review_datetime_utc": "11/17/2022 18:07:25",
+            "review_text": "The food was so good everything is natural freshly made natural juices yeah should come on Monday and have some for yourselves"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtcjdPUWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcjdPUWZBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-r7OQfA%7CCgwI1vDZmwYQ8MjMvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668708438,
+            "review_datetime_utc": "11/17/2022 18:07:18",
+            "review_text": "The best service, delicious food and the best cake you can taste."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtcjlPVWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcjlPVWRREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-r9OUdQ%7CCgsI4IjWmwYQqLK7NA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668645984,
+            "review_datetime_utc": "11/17/2022 00:46:24",
+            "review_text": "Excelente servicio"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtdy11bGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdy11bGdBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-w-ulgAE%7CCgsIt5a8mwYQ8OHDYQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668221751,
+            "review_datetime_utc": "11/12/2022 02:55:51",
+            "review_text": "Excellent pastries, wonderful owner, lovely atmosphere!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtcHB5bXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtcHB5bXRnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-ppymtgE%7CCgsI__-gmwYQyKD_Bw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667776511,
+            "review_datetime_utc": "11/06/2022 23:15:11",
+            "review_text": "This a cute bakery/food shop/coffee shop. We had desserts and sandwiches.  We got the chopped cheese which is love with some crunchy fries. And a salmon sandwich. We had the bread pudding. Key lime pie and cinnamon pumpkin chocolate chip cookie (I THINK) the person to help us out was very helpful. I would def go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtd2JqbmxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtd2JqbmxRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-wbjnlQE%7CCgwIwNGamwYQyOOatAM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1667672256,
+            "review_datetime_utc": "11/05/2022 18:17:36",
+            "review_text": "Food and dessert were great, no complaints. Now. The issue was the pricing, way overpriced."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtdk1uUWpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdk1uUWpRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-vMnQjQE%7CCgwI0432mgYQyMaVqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667073747,
+            "review_datetime_utc": "10/29/2022 20:02:27",
+            "review_text": "Lo maximo en todo ....."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtaE9ibG1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtaE9ibG1BRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-hOblmAE%7CCgsIrOHnmgYQuJHjMw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666838700,
+            "review_datetime_utc": "10/27/2022 02:45:00",
+            "review_text": "Great customer service and best sandwiches and dessert in Charlotte! The breakfast is also amazing. I definitely recommend this Bakery. It's one of a kind."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMta1BtS0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMta1BtS0x3EAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIC-kPmKLw%7CCgwIxbXcmgYQ-KTplwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666652869,
+            "review_datetime_utc": "10/24/2022 23:07:49",
+            "review_text": "Food was delicious & atmosphere was lovely."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlcjZ1UWNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlcjZ1UWNBEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDer6uQcA%7CCgwIo-jRmgYQsIOitQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666479139,
+            "review_datetime_utc": "10/22/2022 22:52:19",
+            "review_text": "Love it!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlN2ZpeW9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlN2ZpeW9BRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDe7fiyoAE%7CCgwIgsCymgYQwN7KvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665966082,
+            "review_datetime_utc": "10/17/2022 00:21:22",
+            "review_text": "El lugar esta hermoso, de muy buen gusto. los postres y los sandwiches excelentes. El chimi es mi favorito."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlcXJ2a29RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlcXJ2a29RRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDeqrvkoQE%7CCgwIoa2BmgYQgLeP3gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665160865,
+            "review_datetime_utc": "10/07/2022 16:41:05",
+            "review_text": "the girls are very friendly and the service is excellent love this place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlOHFXNTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlOHFXNTdnRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDe8qW57gE%7CCgwIvID-mQYQwJfOjgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665105980,
+            "review_datetime_utc": "10/07/2022 01:26:20",
+            "review_text": "Great food and great service... hidden in plain sight"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaTlmRFFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaTlmRFFREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICei9fDQQ%7CCgwI3IW4mQYQoNH81gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663959772,
+            "review_datetime_utc": "09/23/2022 19:02:52",
+            "review_text": "Bought a cake for, and it was delicious not too sweet. Also the chimis are on point. Make sure to get the cookies with a coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlemZyTU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlemZyTU5nEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICezfrMNg%7CCgwIn9anmQYQ0MSsmgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663691551,
+            "review_datetime_utc": "09/20/2022 16:32:31",
+            "review_text": "So delicious. The owner is delightful and makes everyone feel special. Don't miss the brown sugar cheesecake!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlMnBUSnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlMnBUSnhRRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICe2pTJxQE%7CCgwI4Ir5mAYQ2I3K2AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662928224,
+            "review_datetime_utc": "09/11/2022 20:30:24",
+            "review_text": "Great food and service. Thanks"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlekp2TlVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlekp2TlVREAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICezJvNUQ%7CCgwIktfkmAYQuPCM-gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662593938,
+            "review_datetime_utc": "09/07/2022 23:38:58",
+            "review_text": "If I could give 10s all across the board I would. I'm from the Bronx living in Charlotte and my #1 complaint is the food. Nothing like NYC food buttttt this place is amazing. Very tasty. Reminds me of a spot in the South Bronx and the food is just about as close to NYC as you will get in the QC. Staff is amazing. Found my little piece of Heaven."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNleU5hWmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNleU5hWmNnEAE!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICeyNaZcg%7CCgwI1ofUmAYQgOmdtQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662321622,
+            "review_datetime_utc": "09/04/2022 20:00:22",
+            "review_text": "Amazing food and amazing place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlZ0t1STFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlZ0t1STFBRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgICegKuI1AE%7CCgwI3eLKmAYQ-P2QjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662169437,
+            "review_datetime_utc": "09/03/2022 01:43:57",
+            "review_text": "Such a cute spot! Love the decor and the food is truly amazing!! I highly recommend the chimi and chopped cheese"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1bDl6Zm5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1bDl6Zm5BRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDul9zfnAE%7CCgwIoPi9mAYQ0Oa03wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661959200,
+            "review_datetime_utc": "08/31/2022 15:20:00",
+            "review_text": "I absolutely love this place. We had the pleasure of having just about every cookie, cake, and chopped cheese but there's so much more to try. Come on in and fry them out promise you'll fall in love."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1NWVmTi1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1NWVmTi1BRRAB!2m1!1s0x0:0x83012e62f9b670be!3m1!1s2@1:CIHM0ogKEICAgIDu5efN-AE%7CCgsIsc6emAYQuI6FKQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661445937,
+            "review_datetime_utc": "08/25/2022 16:45:37",
+            "review_text": "Amazing food and staff!!!! Love the decor inside as well , real clean spot!"
+        }
+    ]
+}
