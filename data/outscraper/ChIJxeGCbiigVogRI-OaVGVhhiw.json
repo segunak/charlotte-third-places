@@ -1,0 +1,507 @@
+{
+    "place_name": "Crane Coffee",
+    "place_id": "ChIJxeGCbiigVogRI-OaVGVhhiw",
+    "place_rating": 4.8,
+    "place_total_reviews": 74,
+    "place_google_id": "0x8856a0286e82e1c5:0x2c866165549ae323",
+    "place_reviews_id": "3208358872387085091",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJxeGCbiigVogRI-OaVGVhhiw&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURicGJDLXVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURicGJDLXVBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDbpbC-uAE%7CCgwI5ObNtQYQuO_8swM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723036516,
+            "review_datetime_utc": "08/07/2024 13:15:16",
+            "review_text": "Atmosphere off the bat is relaxed - absolutely enjoy that. Service was great!! I didn't catch his name, but he was very friendly & attentive. Def will be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNidjVLa1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNidjVLa1NBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICbv5KkSA%7CCgsI86qptQYQoM6CCA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722439027,
+            "review_datetime_utc": "07/31/2024 15:17:07",
+            "review_text": "Really cute place located in an office building lobby (also has a separate street entrance).  I got an iced sea salt latte, which was delicious.\n\nNote that the Google Maps walking directions are inaccurate.  The establishment's entrance is located on S Caldwell Street."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMb09TS1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMb09TS1l3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDLoOSKYw%7CCgwInJnmswYQgLSgrAM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1719241884,
+            "review_datetime_utc": "06/24/2024 15:11:24",
+            "review_text": "Don't know why this place has amazing reviews it took them so long to make an iced coffee and they weren't short of staff or anything seemed like they are just slow, never had to wait 15 min for a coffee before"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMc2NUWGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMc2NUWGpRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICLscTXjQE%7CCgwIhIbQswYQgOPN_AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718878980,
+            "review_datetime_utc": "06/20/2024 10:23:00",
+            "review_text": "The barista is world class"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMX3FYOHZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMX3FYOHZBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICL_qX8vAE%7CCgwIrsLMswYQqI_74gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718821166,
+            "review_datetime_utc": "06/19/2024 18:19:26",
+            "review_text": "Crane Coffee Company is a must stop. The service was incredible, and the coffee was phenomenal. It's hard to find coffee shops that stand out from one another, but this is one that I will not soon forget."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6bFpuQ0NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6bFpuQ0NBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICzlZnCCA%7CCgwIi4v4sgYQ8JmyvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717437835,
+            "review_datetime_utc": "06/03/2024 18:03:55",
+            "review_text": "Awesome coffee and great service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMTdmcmF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMTdmcmF3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDj17fraw%7CCgsI7LfusQYQ0OPzdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715182572,
+            "review_datetime_utc": "05/08/2024 15:36:12",
+            "review_text": "Excellent pour-over"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqeHRUdzRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqeHRUdzRnRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDjxtTw4gE%7CCgsI953OsQYQ4NfLOw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714654967,
+            "review_datetime_utc": "05/02/2024 13:02:47",
+            "review_text": "I had a Muddled Mint Cold Brew. Refreshing! It was great. And cool people there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURELUtpcURBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURELUtpcURBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDD-KiqDA%7CCgsI5vK_sAYQyJ7_Iw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712322918,
+            "review_datetime_utc": "04/05/2024 13:15:18",
+            "review_text": "A hidden gem. The coffee is delicious. The customer service is top tier. The manager is very friendly and easy to talk to. This is a great place to take a break and enjoy a coffee and a bagel or other treat for breakfast. The atmosphere and care the employees put into preparing the drinks makes it like I'm visiting a friend's house. Highly recommend to anyone passing by."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEcTlXbUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEcTlXbUJnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICDq9WmBg%7CCgwI8_-rsAYQqMGStwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711996915,
+            "review_datetime_utc": "04/01/2024 18:41:55",
+            "review_text": "The caramel latte was incredible, the muffins have wonderful flavor.  The person who helped us was so nice, and even brought our order to our table.  Fantastic ambiance and natural light.  Highly recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkbllta0RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkbllta0RREAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICdnYmkDQ%7CCgwI1tDCrgYQwOmx1AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708173398,
+            "review_datetime_utc": "02/17/2024 12:36:38",
+            "review_text": "Phenomenal coffee and conversation!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWbkktSGJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWbkktSGJREAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDVnI-HbQ%7CCgwI58PcqwYQuOunugE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702306279,
+            "review_datetime_utc": "12/11/2023 14:51:19",
+            "review_text": "Great coffee and they're so friendly here!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWOWQyTVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWOWQyTVRBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICV9d2MTA%7CCgwI46jNqwYQqIvMgwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702057059,
+            "review_datetime_utc": "12/08/2023 17:37:39",
+            "review_text": "Me and my friends have recently been looking for local coffee shops to support and came across Crane's Coffee. Once we walked in, we were greeted instantaneously by Jo who was amazing and attentive. I ordered a Masala Chai Latte with oat milk and it was delicious! Will be back for the beautiful and welcoming atmosphere! 10/10 would recommend :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWNVlMRDVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWNVlMRDVRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICV5YLD5QE%7CCgwI_KrMqwYQiNugrAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702040956,
+            "review_datetime_utc": "12/08/2023 13:09:16",
+            "review_text": "Staff was great. Everyone who entered was treated like a regular."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdXVtamRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdXVtamRnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICluumjdg%7CCgsIr7zZqgYQ-K-eFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700159023,
+            "review_datetime_utc": "11/16/2023 18:23:43",
+            "review_text": "Enjoyed the muddled mint cold brew."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGM1phWTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGM1phWTlnRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICF3ZaY9gE%7CCgwIwbWEqgYQyJ-n2QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698765505,
+            "review_datetime_utc": "10/31/2023 15:18:25",
+            "review_text": "I've been at Crane Coffee 2 days ago and it was lovely. I ordered a coffee with oatmilk, a bagel and a lemon/poppy muffin which was fantastic. Locally sourced products made with love! Thanks for this perfect start of the week, which couldn't have been better! "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1MEtibEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1MEtibEl3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC50KblIw%7CCgwIjZ2QqQYQoM7ejQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696861837,
+            "review_datetime_utc": "10/09/2023 14:30:37",
+            "review_text": "Great coffee "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaMHJ1UzB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMHJ1UzB3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICZ0ruS0wE%7CCgwI09fnpwYQ4JW6wgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694100435,
+            "review_datetime_utc": "09/07/2023 15:27:15",
+            "review_text": "Love this quaint coffee shop. The staff is so friendly! Chai latte was so delicious and loved all the seasonal flavor options. Definitely coming back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwLVlISHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwLVlISHdnRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICp-YHHwgE%7CCgsI69XApgYQgPjHWA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691364075,
+            "review_datetime_utc": "08/06/2023 23:21:15",
+            "review_text": "A perfect spot to savor life's little moments. Their rich brews transport you with every sip, while the cozy atmosphere feels like a warm embrace. A haven for coffee seekers - where conversations flow and time stands still."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKcXZqc2p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcXZqc2p3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDJqvjsjwE%7CCgsI27nGpQYQgJuwag%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689361627,
+            "review_datetime_utc": "07/14/2023 19:07:07",
+            "review_text": "Delicious drinks and fantastic service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKMU9Qb05nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKMU9Qb05nEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICJ1OPoNg%7CCgwI8OjMpAYQ6PeAtgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687368816,
+            "review_datetime_utc": "06/21/2023 17:33:36",
+            "review_text": "Man, the coffee here is so good! Today I tried the Thai iced coffee and it was fantastic. Kris and the crew here are very friendly and service is fast...I cannot recommend this place enough."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4MVlqVFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4MVlqVFpnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDx1YjTZg%7CCgsI5J6dpAYQgOL3BQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686589284,
+            "review_datetime_utc": "06/12/2023 17:01:24",
+            "review_text": "Amazing coffee, if you really enjoy your coffee don't waste your time with other places.  All the coffees are made via pour over which is my favorite.  Got to try it"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4eDVhYmVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eDVhYmVREAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICxx5abeQ%7CCgsI97fIowYQiJG-Tw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685199863,
+            "review_datetime_utc": "05/27/2023 15:04:23",
+            "review_text": "Great shop in Uptown in the Nascar building and 5/3 center! Drinks are perfectly crafted and prepared by a friendly team!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSbXMzNHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSbXMzNHBRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICRms34pQE%7CCgwI6sSWoQYQ0L3YmgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680188010,
+            "review_datetime_utc": "03/30/2023 14:53:30",
+            "review_text": "This place is great! I ordered the sea salted caramel latte and an everything bagel. Both items were delicious, and service was quick-- despite coming during a busy hour. The girl working was so friendly, I can't sing enough praises. The ambiance is great, too. 10/10 would visit again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURobm9Qd2pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURobm9Qd2pBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDhnoPwjAE%7CCgsI6-2noAYQ0N6ZXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678374635,
+            "review_datetime_utc": "03/09/2023 15:10:35",
+            "review_text": "I've used the Crane Coffee's 201 N Tryon location for catering for meetings many times and they are just awesome!  Even when I am in a pinch, the staff there are always friendly, pleasant and ready to help fill my catering orders.  Great products and great customer service!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlakxteXhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlakxteXhBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICejLmyxAE%7CCgwIyq3jmAYQiKypzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662572234,
+            "review_datetime_utc": "09/07/2022 17:37:14",
+            "review_text": "Muddled Mint Cold Brew...that's why. That and so many more reasons. Their branded coffee canteens come with built in tea strainers. Sara made me an excellent Sea Salt Caramel Oat Milk Latte but then she and I got to talking and I did something I never do, ordered a second coffee just to try it. Come in ready for that type of experience!\n\nThey work with Crown Town compost, who picks up their waste weekly. Sara tells me that coffee shops can compost virtually everything, which was great to learn. They are eco friendly and offer a host of alternative milks. Their beans are locally roasted and the pastries are baked in Charlotte as well.\n\nThey have two locations in Charlotte and I'm sorry to only be able to visit one. Next visit it will be on my list."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1bXUyMUFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1bXUyMUFnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDumu21Ag%7CCgwIobn5lwYQwMmopgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660837025,
+            "review_datetime_utc": "08/18/2022 15:37:05",
+            "review_text": "Great local coffee shop right next to the Conference Center, had to stop one last time before leaving to get the Sea Salt Caramel Latte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1MjdUQVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1MjdUQVF3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICu27TAQw%7CCgwI-uK8lwYQ8MbXhAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659842938,
+            "review_datetime_utc": "08/07/2022 03:28:58",
+            "review_text": "Fantastic coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1bE9xRjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1bE9xRjBBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICulOqF0AE%7CCgwIh5LmlgYQsOOxzwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658423559,
+            "review_datetime_utc": "07/21/2022 17:12:39",
+            "review_text": "Loved the muddled mint cold brew"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1d04yU0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1d04yU0l3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICuwN2SIw%7CCgwI8ebVlgYQqPG4qAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658155889,
+            "review_datetime_utc": "07/18/2022 14:51:29",
+            "review_text": "very friendly staff and tasty coldbrew!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPenF1NjZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPenF1NjZRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDOzqu66QE%7CCgwIq7-RlgYQ2JyfuwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657036712,
+            "review_datetime_utc": "07/05/2022 15:58:32",
+            "review_text": "Delicious, friendly, professional, and a hoot! I love coming here for my pick-me-up during the day. Might be the best coffee in Uptown! Sara is amazing, shout-out to her great customer service :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPek9UOHpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPek9UOHpnRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICOzOT8zgE%7CCgwItJ3olAYQ2JKt7wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654263476,
+            "review_datetime_utc": "06/03/2022 13:37:56",
+            "review_text": "Always a pleasant visit to Crane! Love the coffee and I've never been disappointed by the selection of light breakfast food. The baristas are always chipper and I love the eye toward sustainability- every container/utensil is paper, bamboo, and/or compostable. Thanks Crane crew!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyOEx1dXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyOEx1dXVRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgID28LuuuQE%7CCgwIw6jKkwYQ4OCy6QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651676227,
+            "review_datetime_utc": "05/04/2022 14:57:07",
+            "review_text": "Get the muddled mint cold brew and try the bagels!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyaExtQk9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyaExtQk9BEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC2hLmBOA%7CCgsI6qvWkgYQoPbkUg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649776106,
+            "review_datetime_utc": "04/12/2022 15:08:26",
+            "review_text": "Great service, delicious coffee. Google maps brought us to the complete opposite side of the building for walking directions. The entrance is on the outside of the Nascar Hall of Fame on S. Caldwell."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXajluWGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXajluWGpRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDWj9nXjQE%7CCgsIvbi7kgYQ6K-VOg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649335357,
+            "review_datetime_utc": "04/07/2022 12:42:37",
+            "review_text": "Best coffee in Charlotte by a mile"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXaFlIVS1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXaFlIVS1nRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDWhYHU-gE%7CCgwI9K6MkgYQ0OPDgQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648564084,
+            "review_datetime_utc": "03/29/2022 14:28:04",
+            "review_text": "I first found Crane Coffee at Charlotte OBGYN as a pop up in 2017 while I was pregnant with our daughter. We visited their location by the NASCAR Hall of Fame shortly after they moved in and even after moving to Concord, this is my FAVORITE coffee shop! The local drinks are the best! My favorite is the lavender honeycomb."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXN0xUTUJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXN0xUTUJBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDW7LTMBA%7CCgwIpJXNkQYQkOv8iAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647528612,
+            "review_datetime_utc": "03/17/2022 14:50:12",
+            "review_text": "Very friendly and cozy place! Great coffee and nice outdoor seating!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtNVBxeV9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtNVBxeV9BRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDm5Pqy_AE%7CCgwI4K6gjwYQ0Kj2vwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642600288,
+            "review_datetime_utc": "01/19/2022 13:51:28",
+            "review_text": "Amazing coffee, great service... best way to start the day."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtXzZqeUtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtXzZqeUtBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICm_6jyKA%7CCgwIiaKHjwYQsIXAjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642189065,
+            "review_datetime_utc": "01/14/2022 19:37:45",
+            "review_text": "Exceptional pour over in Uptown, Charlotte.  It was flavorful and bold, without leaving me jittery.  The owner, Chris, was great to talk to and excitedly shared his brewing techniques.  He is also very sustainable-minded.  Highly recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNteF95OWF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNteF95OWF3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICmx_y9aw%7CCgwIpvT1jgYQoNL9mwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641904678,
+            "review_datetime_utc": "01/11/2022 12:37:58",
+            "review_text": "Great service, great coffee, great food. I love the fact the Crane thinks about the environment with their coffee cups and lids and that they use local chefs and bakers for their food choices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNteTZYVVZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNteTZYVVZBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICmy6XUVA%7CCgwIy5DsjgYQ2L6z8wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641744459,
+            "review_datetime_utc": "01/09/2022 16:07:39",
+            "review_text": "Cute little  coffee shop! It's run by a super friendly couple and the drinks are great"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURheE9lclBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURheE9lclBnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDaxOerPg%7CCgwI-LbkiAYQqNLk_gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629035384,
+            "review_datetime_utc": "08/15/2021 13:49:44",
+            "review_text": "Spent 6 days in Uptown Charlotte from New York. Found Crane by accident on Day 1. My wife and I went back every morning while we were in town..My best cup of coffee  in my 65 yrs of living. Chris is a great host."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhZ3ZiSWlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhZ3ZiSWlRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICagvbIiQE%7CCgsI1d_6hwYQ2I24YQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1627303893,
+            "review_datetime_utc": "07/26/2021 12:51:33",
+            "review_text": "Best coffee in Charlotte, hands down!  Love the Bullet Proof or the Muddled Mint Iced Coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhMElxX2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhMElxX2hBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICa0Iq_hAE%7CCgwIy_rghwYQ4Lr2nAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626881355,
+            "review_datetime_utc": "07/21/2021 15:29:15",
+            "review_text": "Best coffee in the city, hands down. Amazing specialty brews. Pour-over method. Friendly service. Absolutely worth the short walk to NASCAR Plaza if you're uptown."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNha1BPM0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNha1BPM0p3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICakPO3Jw%7CCgwIk8LghwYQkJ3FoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626874131,
+            "review_datetime_utc": "07/21/2021 13:28:51",
+            "review_text": "Great coffee, breakfast sandwiches and service! Stop by crane and check it out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxenBfUlFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxenBfUlFnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDqzp_RQg%7CCgwI1PmdhwYQqOSp5gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625783508,
+            "review_datetime_utc": "07/08/2021 22:31:48",
+            "review_text": "I asked if the coffee was good, and he said it was the best in town\n\nHe was telling the truth! Amazing coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxNXIzRmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNXIzRmtRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDq5r3FkQE%7CCgsIr9mWhwYQ4Iedbw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625664687,
+            "review_datetime_utc": "07/07/2021 13:31:27",
+            "review_text": "Best coffee in Uptown! All coffee is pour over and prices are very reasonable.\n\nA highly recommend in my book! Even though this location is further from my office than other coffee shops, I'll make the extra effort to come by!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDaTgtZXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDaTgtZXR3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDCi8-etwE%7CCgwIwfuM_AUQuO_rkgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1602436545,
+            "review_datetime_utc": "10/11/2020 17:15:45",
+            "review_text": "I'd give him zero stars for closing when he said he was going to go mobile. Such a great idea. Bummer outcome."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjeWVTZFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjeWVTZFhBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICcyeSdXA%7CCgwI04W08wUQiOeb2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1584202451,
+            "review_datetime_utc": "03/14/2020 16:14:11",
+            "review_text": "One of the best cups of French Roast I've ever had."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzbDdUdVZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzbDdUdVZ3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICsl7TuVw%7CCgwIlaWn8gUQkO2hrgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581896341,
+            "review_datetime_utc": "02/16/2020 23:39:01",
+            "review_text": "Best pour over coffee in uptown with great friendly service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNMEtlRFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNMEtlRFFBEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDM0KeDQA%7CCgwIrvjP7wUQoJDCtgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1576270894,
+            "review_datetime_utc": "12/13/2019 21:01:34",
+            "review_text": "Great coffee! Small place but the service is always quick and professional. I always stop and grab a pour ever whenever I'm in town for work. Highly suggest anyone trying out Crane Coffee Company!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNNbzRfWF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNbzRfWF9BRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICMo4_X_AE%7CCgwIooOa7wUQ0LfUogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1575387554,
+            "review_datetime_utc": "12/03/2019 15:39:14",
+            "review_text": "Very nice place...coffee was made to order and fresh cream was nice..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwN2VTSXJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwN2VTSXJBRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC07eSIrAE%7CCgwI2ffo7AUQkJq_yQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1570388953,
+            "review_datetime_utc": "10/06/2019 19:09:13",
+            "review_text": "Chris is amazing and the coffee was delicious! So glad we stopped while we were in town."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwcWVlSkpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwcWVlSkpnEAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC0qeeJJg%7CCgwIkoHQ7AUQqIPKxwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1569980562,
+            "review_datetime_utc": "10/02/2019 01:42:42",
+            "review_text": "I love this place! The mint iced coffee is so delicious and the atmosphere is very relaxing. I love all the natural light and artwork."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVbzVMMGlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVbzVMMGlRRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICUo5L0iQE%7CCgsI5-6U6gUQgLGKEw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1564817255,
+            "review_datetime_utc": "08/03/2019 07:27:35",
+            "review_text": "Great coffee! Small place, but I love the very different, hard to find, coffee drinks they offer. Prices are average coffee shop prices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVMVB5MElREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVMVB5MElREAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICU1Py0IQ%7CCgsI0r_D6QUQ2Njpcg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1563484114,
+            "review_datetime_utc": "07/18/2019 21:08:34",
+            "review_text": "A great spot for pour over coffee. There is a few seats for those who chose to enjoy their coffee in the comfort of the AC and several pieces of art, or enjoy a seating outside watching the \"coming and going\".\n\nReally great service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0bWZpc1p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0bWZpc1p3EAE!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC4mfisZw%7CCgwIpoH05wUQvK-dgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559664964,
+            "review_datetime_utc": "06/04/2019 16:16:04",
+            "review_text": "Love this place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0ek4zcHh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0ek4zcHh3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIC4zN3pxwE%7CCgsIkf_Z5wUQoI6RGA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559658385,
+            "review_datetime_utc": "06/04/2019 14:26:25",
+            "review_text": "Incredible pour over coffee. Best cup in town."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvaTYzUnh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvaTYzUnh3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICoi63RxwE%7CCgwI04zg4wUQoIHw0gM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1551369811,
+            "review_datetime_utc": "02/28/2019 16:03:31",
+            "review_text": "First experience this morning and it looks like a winner. I tried one of their handcrafted spiced drinks which was probably the best I've had in a while. Will definitely be back. Patrons should be aware that \"handcrafted\" does take time. Similar to a pour over, but worth the wait."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvamFTbS1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvamFTbS1BRRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgICojaSm-AE%7CCgwI5_G_4wUQkMe5zAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1550842087,
+            "review_datetime_utc": "02/22/2019 13:28:07",
+            "review_text": "Great service and great coffee. I highly recommend this place to anyone looking for fantastic tasting coffee. The food was also homemade and equally fantastic."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJeDh2Nnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJeDh2Nnd3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDIx8v6wwE%7CCgwIs_qn4gUQzovWgQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1548352819,
+            "review_datetime_utc": "01/24/2019 18:00:19",
+            "review_text": "You won't find any coffee shop like this in uptown Charlotte. They've got delicious one-of-a-kind specialty drinks here, personable service, and a cozy environment. Even if you are a far walk away, it's totally worth it. Only wish they would be open more hours."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnMTh5ZDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnMTh5ZDF3RRAB!2m1!1s0x0:0x2c866165549ae323!3m1!1s2@1:CIHM0ogKEICAgIDg18yd1wE%7CCgwIg5iH2wUQwIHXxQI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1533135875,
+            "review_datetime_utc": "08/01/2018 15:04:35",
+            "review_text": "Great little coffee joint with terrific pour over. Service is a little slow but that is to be expected for a handcrafted cup of joe. Not the ambiance of Coca and the Director but it's a small space. Looking forward to going back soon!"
+        }
+    ]
+}
