@@ -5,7 +5,7 @@
     "place_total_reviews": 1742,
     "place_google_id": "0x8856a02eda3e5927:0xd238f91b8762dc60",
     "place_reviews_id": "-3298612830418052000",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ1k-2i6gVogRYNxihxv5ONI&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJJ1k-2i6gVogRYNxihxv5ONI&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNmM3R3h3RRAB",
@@ -48,12 +48,68 @@
             "review_text": "Greedy, avaricious owners charging $0.50 cents for tap water."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyOG9hUVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyOG9hUVFREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICr8oaQQQ%7CCgwIiOOgtAYQgLij8wI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720201608,
+            "review_datetime_utc": "07/05/2024 17:46:48",
+            "review_text": "Why did your Cafe begin to charge for water? I am not going to pay extra for a 12 Oz cup of water especially as they used to have it available for free. Seems like they may have some management/financial issue behind the scenes...Sad that a respected restaurant would do this."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyMkp6eDZRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyMkp6eDZRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICr2Jzx6QE%7CCgwIu5mXtAYQgMPKzAE%7C?hl=en",
             "review_rating": 4,
             "review_timestamp": 1720044731,
             "review_datetime_utc": "07/03/2024 22:12:11",
             "review_text": "More expensive on their desserts than I usually pay....very good though"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNdTZha2FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNdTZha2FREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICMu6akaQ%7CCgsIjISWtAYQqMqYPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720025612,
+            "review_datetime_utc": "07/03/2024 16:53:32",
+            "review_text": "Pastries are so delicious"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMM1luSDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMM1luSDF3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDL3YnH1wE%7CCgwI0f6BtAYQuN2prQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719697233,
+            "review_datetime_utc": "06/29/2024 21:40:33",
+            "review_text": "Amelie's is my favorite coffee shop and bakery in the area. Their espresso is really good. The macaroons are . Don't sleep on the salted caramel brownies either."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMc0xfNHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMc0xfNHFnRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDLsL_4qgE%7CCgwI_cHnswYQuP34mgI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1719263485,
+            "review_datetime_utc": "06/24/2024 21:11:25",
+            "review_text": "The cappuccino and pastries were good.  However, there was a swarm of flies inside the glass where the sweets were located.  This was pointed out to an employee who responded \"I know\".   We also noted the crescent rolls that were sitting out were combined with the fresh.  Seeing this was quite disappointing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMd3VqRXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMd3VqRXF3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICLwujEqwE%7CCgwIgvi9swYQyI2NtAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718582274,
+            "review_datetime_utc": "06/16/2024 23:57:54",
+            "review_text": "This is a nice little place around Pineville. If you are looking for coffee date or just wanted to try some good coffee and other French treats then this is the place for you. Baked Almond croissant was so good, you should not miss that. Macaroons\nwere also delicious. This place has really nice inside and outside seating with good Atmosphere. Need to go back and try some more items. Overall 4.25/5 "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpaHEtbzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaHEtbzVBRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICihq-o5AE%7CCgwI5OfYsgYQqKir7wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716925412,
+            "review_datetime_utc": "05/28/2024 19:43:32",
+            "review_text": "20240528: Amelie's has wonderful pastries, coffee, and French bistro food. I like the macarons and coisants with cafe au lait.\n\nFor my birthday, Amelie's sent me a $5 birthday coupon, which covered most of the cost of this wonderful macaron and decaf coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUazktamlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUazktamlBRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICTk9-jiAE%7CCgwI4JOksgYQ2JuB0wE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1716062688,
+            "review_datetime_utc": "05/18/2024 20:04:48",
+            "review_text": "Horrible place the employees flirt with customers and sleep with married men Christopher is disgusting at this location don't take your men there"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUenBuQ1FBEAE",
@@ -64,12 +120,52 @@
             "review_text": "The food and sweets are great! Went there on a rainy day and the concrete floor was a bit slippery from the water. You order at the counter and they bring the food to your table."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNHVpX0FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNHVpX0FREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICT4ui_AQ%7CCgwInPCDsgYQgPWgiQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715533852,
+            "review_datetime_utc": "05/12/2024 17:10:52",
+            "review_text": "Very nice people, great food, reasonable prices! Loved it"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURjckstV0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjckstV0dBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDcrK-WGA%7CCgsIn9D_sQYQ0KHzKw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715464223,
+            "review_datetime_utc": "05/11/2024 21:50:23",
+            "review_text": "Update (5/10/24) to old review. I ordered one of my favorite desserts \"Fresh Fruits Tart\". I have had this tart many times, but today it was gravely different \"water down, lighter color, and nasty taste.\" What happened to my favorite desserts!   See picture -- changes to a perfect dessert is never good!\n\nLower rating required for messing up my dessert."
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjeE03QklREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjeE03QklREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICcxM7BIQ%7CCgwIxrHVsQYQsOK1rAM%7C?hl=en",
             "review_rating": 4,
             "review_timestamp": 1714772166,
             "review_datetime_utc": "05/03/2024 21:36:06",
             "review_text": "Good coffee and  dessert.Too often there is a broken coffee machine and therefore no coffee ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqcUlqSEJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqcUlqSEJ3EAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDjqIjHBw%7CCgwIo6y6sQYQiISxtgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714329123,
+            "review_datetime_utc": "04/28/2024 18:32:03",
+            "review_text": "The atmosphere takes you to a quaint little corner of France. The pastries are delightful and delicious."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREdTh5S0hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREdTh5S0hBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDDu8yKHA%7CCgsI3aHysAYQuIPoJQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713148125,
+            "review_datetime_utc": "04/15/2024 02:28:45",
+            "review_text": "Love the pastry here even though it is a bit pricey.  Wish there was one nearer to me."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREb2JTekxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREb2JTekxBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDDobSzLA%7CCgsIvbTasAYQ6J66dQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712757309,
+            "review_datetime_utc": "04/10/2024 13:55:09",
+            "review_text": "The kid who delivered our food, his name is Joey. He was so pleasant & asked us what else we needed.\nIn this day where service sucks everywhere it was was awesome to have a smiling face like Joey's"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREek1MSXJ3RRAB",
@@ -688,6 +784,14 @@
             "review_text": "Pastries are excellent. The \"make your own\" breakfast sandwich are excellent as well. Bre was kind and considerate helping me use my reward point for a pastery."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGZ2R6Slp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGZ2R6Slp3EAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFgdzJZw%7CCgwI_cipqgYQyMGmngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699374205,
+            "review_datetime_utc": "11/07/2023 16:23:25",
+            "review_text": "Bre was excellent in handling my special requests"
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGZ1p6M0NREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGZ1p6M0NREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFgZz3CQ%7CCgwI4MipqgYQkN2gxAE%7C?hl=en",
             "review_rating": 5,
@@ -704,12 +808,28 @@
             "review_text": "bre was so amazing for us!"
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGZ2VUMmRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGZ2VUMmRREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFgeT2dQ%7CCgwI0MWpqgYQgMn5kgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699373776,
+            "review_datetime_utc": "11/07/2023 16:16:16",
+            "review_text": "Wonderful food and Juile was amazing!"
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGZ2NUem1BRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGZ2NUem1BRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFgcTzmAE%7CCgwIiMWpqgYQyLbQrQE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1699373704,
             "review_datetime_utc": "11/07/2023 16:15:04",
             "review_text": "Julie was awesome!  Very friendly and helpful"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGX3Nmc3JRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGX3Nmc3JRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDF_sfsrQE%7CCgwI_bqpqgYQuMekvwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699372413,
+            "review_datetime_utc": "11/07/2023 15:53:33",
+            "review_text": "Julie was extremely kind while taking my order."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGX3RYU2tnRRAB",
@@ -720,12 +840,36 @@
             "review_text": "Love the pastries and the quick service (thank you Julie!)."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGbm9xMFNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGbm9xMFNnEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFnoq0Sg%7CCgwImcCoqgYQ0O3mkwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699356697,
+            "review_datetime_utc": "11/07/2023 11:31:37",
+            "review_text": "Love this little coffee and pastry shop! The employees are always so fun and friendly and I really appreciate that the company celebrates individuality and diversity in the workplace. Most will tell you that you have to get the salted caramel brownie here... but I disagree. Go for the palmier or a macaron! Or several."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNXNqTWhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNXNqTWhBRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDF5sjMhAE%7CCgwI0telqgYQ6PWVyAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699310546,
+            "review_datetime_utc": "11/06/2023 22:42:26",
+            "review_text": "I have never had a better experience at another Amelies! All the employees are great especially one named razan really made my experience so much better. She offered the best stuff!"
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNXZEN2xnRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNXZEN2xnRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDF5vD7lgE%7CCgwIl9alqgYQ4KnaxgE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1699310359,
             "review_datetime_utc": "11/06/2023 22:39:19",
             "review_text": "Love the food and the cafe overall! The employees are so helpful especially Razan."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGcHRLTC1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGcHRLTC1nRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDFptKL-gE%7CCgwIxv-kqgYQkI2PmAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699299270,
+            "review_datetime_utc": "11/06/2023 19:34:30",
+            "review_text": "Khris is phenomenal out there. Love the ambiance and the coffees"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGeHI3VjN3RRAB",
@@ -3862,150 +4006,6 @@
             "review_timestamp": 1582394255,
             "review_datetime_utc": "02/22/2020 17:57:35",
             "review_text": "Nice nice nice. Pastries and coffee in the morning, nice ambience. I'm on a sugar and caffeine high even as I write this"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzaUtUQ293RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaUtUQ293RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIDsiKTCowE%7CCgsI--bA8gUQkJizcg%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1582314363,
-            "review_datetime_utc": "02/21/2020 19:46:03",
-            "review_text": "Delicious coffee and sticky bread. It's like being in France. Just pricey, which is expected, but worth it!"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzXzVldmlRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzXzVldmlRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs_5eviQE%7CCgsIybG28gUQgMaWYA%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1582143689,
-            "review_datetime_utc": "02/19/2020 20:21:29",
-            "review_text": "The pasties are yummy .. the macarons are good but a little expensive."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzN19qNnFRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzN19qNnFRRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs7_j6qQE%7CCgwIg5Ww8gUQuN70gAM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1582041731,
-            "review_datetime_utc": "02/18/2020 16:02:11",
-            "review_text": "It has a relaxed feel and is a great place to sit with a coffee, anytime of the day."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzajgzSDd3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzajgzSDd3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsj83H7wE%7CCgwIpLCt8gUQgKDe5QE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581996068,
-            "review_datetime_utc": "02/18/2020 03:21:08",
-            "review_text": "Everything tasted fresh all the time"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMTdUTjB3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMTdUTjB3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs17TN0wE%7CCgwIiu6o8gUQ8JOOnwM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581922058,
-            "review_datetime_utc": "02/17/2020 06:47:38",
-            "review_text": "Boy boy boy do I love me some Amelie's. Whether it be tea, baked goods, or their wonderful quiches, I absolutely love this place. I've been to two birthday celebrations here and one of them was my own. The aesthetic is excellent and service is always good.\n\nIt is a happy place."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzLTZiOWxBRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzLTZiOWxBRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs-6b9lAE%7CCgwIwNuh8gUQoLvZ9QE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581804992,
-            "review_datetime_utc": "02/15/2020 22:16:32",
-            "review_text": "I love the espresso cake and lemon pie tart."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzdTktU2dBRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzdTktU2dBRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsu9-SgAE%7CCgwIlqGh8gUQ0MTzsgE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581797526,
-            "review_datetime_utc": "02/15/2020 20:12:06",
-            "review_text": "Always a great place to meet up with friends"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzNDlYZWd3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzNDlYZWd3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs49XegwE%7CCgwI5rGS8gUQ8LiV4QI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581553894,
-            "review_datetime_utc": "02/13/2020 00:31:34",
-            "review_text": "Great decor and seating. Love the food and pastries and coffee drinks, my friend loves the tea."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzclpPSm9RRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzclpPSm9RRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsrZOJoQE%7CCgwI0oCG8gUQiML0-gE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581350994,
-            "review_datetime_utc": "02/10/2020 16:09:54",
-            "review_text": "Best bakery in Charlotte"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzNVlqV0NBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzNVlqV0NBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs5YjWCA%7CCgsIwcr88QUQqIPuRA%7C?hl=en",
-            "review_rating": 2,
-            "review_timestamp": 1581196609,
-            "review_datetime_utc": "02/08/2020 21:16:49",
-            "review_text": "I have visited several Amelie's - Pineville, Park Rd Shopping center, and Rock Hill. My most recent experience in Pineville inspired me to write this review. While the food and coffee are generally quite good, the service at this location is terrible. The staff treat you with impatience and impertinence, as if they have more pressing matters at hand. So go for a good pastry, but don't expect respectful treatment!"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzcWFuVV9RRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcWFuVV9RRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsqanU_QE%7CCgsIzrjx8QUQyPftLQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1581014094,
-            "review_datetime_utc": "02/06/2020 18:34:54",
-            "review_text": "Tasty confections."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzeWVMeXB3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzeWVMeXB3RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsyeLypwE%7CCgwIh-Xv8QUQ2P20wgI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1580987015,
-            "review_datetime_utc": "02/06/2020 11:03:35",
-            "review_text": "They are good at what they do."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzdnFXSE53EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzdnFXSE53EAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsvqWHNw%7CCgwIgYPg8QUQwLvv_wE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1580728705,
-            "review_datetime_utc": "02/03/2020 11:18:25",
-            "review_text": "Wonderful food, great ambience."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzeG9Db193RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzeG9Db193RRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsxoCo_wE%7CCgsI-87M8QUQkMvIEg%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1580410747,
-            "review_datetime_utc": "01/30/2020 18:59:07",
-            "review_text": "I had a delicious Chia Creme and breakfast sandwich at lunch today! Friendly and fast service!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzMnJ6TUxBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzMnJ6TUxBEAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs2rzMLA%7CCgwIlv_G8QUQ4P6W7wE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1580318614,
-            "review_datetime_utc": "01/29/2020 17:23:34",
-            "review_text": "Salted caramel brownie coffee was there best coffee experience I've had in over a decade of coffee drinking. Petit gateaux was luscious. Macaroons, hazelnut & pistachio were fantastic."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzX0szLXVnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzX0szLXVnRRAB!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICs_K3-ugE%7CCgwIyrW08QUQyO2aqAI%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1580014282,
-            "review_datetime_utc": "01/26/2020 04:51:22",
-            "review_text": "A buzz of delighted patrons..... Great spot!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwdmNMek93EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwdmNMek93EAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgIC0vcLzOw%7CCgwIqay08QUQuPyy7AE%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1580013097,
-            "review_datetime_utc": "01/26/2020 04:31:37",
-            "review_text": "Good food"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzdk55NmNREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzdk55NmNREAE!2m1!1s0x0:0xd238f91b8762dc60!3m1!1s2@1:CIHM0ogKEICAgICsvNy6cQ%7CCgwIpbCy8QUQyNHNqAI%7C?hl=en",
-            "review_rating": 2,
-            "review_timestamp": 1579980837,
-            "review_datetime_utc": "01/25/2020 19:33:57",
-            "review_text": "I love Amelies. But this location was not my favorite. the service was not what i expected from Amelies and where other locations have a quirky and intimate atmosphere, this location is a big loud box full of people."
         }
     ]
 }
