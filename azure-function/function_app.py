@@ -176,13 +176,17 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
                 return_message = f"Review processed and saved successfully for {place_name}."
                 logging.info(return_message)
                 return {'status': 'succeeded', 'place_name': place_name, 'response': f'https://github.com/segunak/charlotte-third-places/blob/master/{full_file_path}', 'message': return_message}
+            else:
+                return_message = f"Failed to save reviews for {place_name} despite having got data back from Outscraper. Review the logs for more details."
+                return {'status': 'failed', 'place_name': place_name, 'response': None, 'message': return_message}               
 
         logging.info("Starting review retrieval using parallel processing")
         call_results = []
         all_successful = True
         
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(process_place, place) for place in airtable.all_third_places]
+            # TODO remove limiter
+            futures = [executor.submit(process_place, place) for place in airtable.all_third_places[:1]]
             for future in as_completed(futures):
                 result = future.result()
                 if result:
