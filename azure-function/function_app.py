@@ -185,8 +185,7 @@ def get_outscraper_reviews(req: func.HttpRequest) -> func.HttpResponse:
         all_successful = True
         
         with ThreadPoolExecutor(max_workers=10) as executor:
-            # TODO remove limiter
-            futures = [executor.submit(process_place, place) for place in airtable.all_third_places[:1]]
+            futures = [executor.submit(process_place, place) for place in airtable.all_third_places]
             for future in as_completed(futures):
                 result = future.result()
                 if result:
