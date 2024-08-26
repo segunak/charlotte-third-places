@@ -1,11 +1,12 @@
 {
     "place_name": "Charlotte Mecklenburg Library | SouthPark Regional",
     "place_id": "ChIJIel45xeeVogRSeazinnEw7o",
+    "place_description": "Charlotte Mecklenburg Library is the library system serving Mecklenburg County, NC with 20 locations and a digital online site. Our mission is to improve lives and build a stronger community. We create a community of readers and empower individuals.",
     "place_rating": 4.5,
     "place_total_reviews": 106,
     "place_google_id": "0x88569e17e778e921:0xbac3c4798ab3e649",
     "place_reviews_id": "-4988927935899244983",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJIel45xeeVogRSeazinnEw7o&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJIel45xeeVogRSeazinnEw7o&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChRDSUhNMG9nS0VJQ0FnSUR6MjV4ThAB",
@@ -40,12 +41,52 @@
             "review_text": "The lady with the long white hair upstairs is extremely rude and my entire group constantly feels as if they are being discriminated against and the microaggressions she presents every time we are in here are getting to be quite ridiculous. Her passive agressive nature needs to be investiated and we have several testimonies of her inappropriate behavior."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkOTktcUZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkOTktcUZnEAE!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgICd99-qFg%7CCgwIntfMrgYQ4OjFxgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708338078,
+            "review_datetime_utc": "02/19/2024 10:21:18",
+            "review_text": "Great library for everyone in the family the children's area is downstairs. There is a teens area with a door up stairs and plenty of seating for adults upstairs as well. They also have a nice amount of study rooms."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxM3A3ODhRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxM3A3ODhRRRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgIC13p788QE%7CCgwIj9rArAYQuNee2wE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1703947535,
             "review_datetime_utc": "12/30/2023 14:45:35",
             "review_text": "Great resources!  Open even saturdays and have a lot of Educational events for kids and adults . They reserve books fir you and it's free"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWNzZ5Wm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWNzZ5Wm5RRRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgICV76yZnQE%7CCgsI5IXUqwYQyN-DUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702167268,
+            "review_datetime_utc": "12/10/2023 00:14:28",
+            "review_text": "Beautiful facility. Well kept and very clean. Friendly staff. They had a selection of books at the very front that were free to take home and keep which I thought was awesome. Plenty of seats to sit and relax and enjoy a book or two."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURadG9TdWF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURadG9TdWF3EAE!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgIDZtoSuaw%7CCgwI4eDgqAYQ8MTV9wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696084065,
+            "review_datetime_utc": "09/30/2023 14:27:45",
+            "review_text": "Fresh produce. Fresh flowers. We go every Saturday."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNV9fYWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNV9fYWxnRRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgICZ5__algE%7CCgwI8rmoqAYQ8Pa24AE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1695161586,
+            "review_datetime_utc": "09/19/2023 22:13:06",
+            "review_text": "The location and library is nice and clean but the workers are extremely unwelcoming and rude. These lazy librarians sit around all day and act very bothered when posed a question. The employees and their standoffish behavior just demonstrates poor customer service skills. The book selection is pathetic. Despite being taxed to death by Mecklenburg County, residents are charged $0.25 per page for prints which are some of the highest printing rates in the country. You won't find a hint of the fake southern hospitality in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwbUlEQ3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbUlEQ3BBRRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgICpmIDCpAE%7CCgsIqLWMpgYQ2JrhRA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690507944,
+            "review_datetime_utc": "07/28/2023 01:32:24",
+            "review_text": "Great place to take my 5 year old to get books and play"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKdVktZF9BRRAB",
@@ -56,12 +97,36 @@
             "review_text": "Fantastic Library"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4aFBDaDBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4aFBDaDBnRRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgIDxhPCh0gE%7CCgsI6pXjowYQ0Pvieg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685637866,
+            "review_datetime_utc": "06/01/2023 16:44:26",
+            "review_text": "Summer story time... sign up"
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSbklPWS13RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbklPWS13RRAB!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgIDRnIOY-wE%7CCgsIt_uCogYQqPyUHQ%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1681964471,
             "review_datetime_utc": "04/20/2023 04:21:11",
             "review_text": "Nice staff and pleasant environment"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSakstMmJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSakstMmJ3EAE!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgIDRjK-2bw%7CCgwIwKn_oQYQ0Ja8hAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681904832,
+            "review_datetime_utc": "04/19/2023 11:47:12",
+            "review_text": "Gracias por que ustedes son el punto de conexion de las Nannys i traemos a nuestros ninos a leer pintar i todo lo que  ensenan!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSdUtLTUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSdUtLTUpnEAE!2m1!1s0x0:0xbac3c4798ab3e649!3m1!1s2@1:CIHM0ogKEICAgICRuKKMJg%7CCgsI_eb3oAYQsKWSfw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1679684477,
+            "review_datetime_utc": "03/24/2023 19:01:17",
+            "review_text": "Fall of '21 incident...\nThe most aggressive & off-her-rocker librarian ever- will not be back!  Was attacked verbally & intimidated physically by her standing way too close within my personal space as she shoved a basket of masks in my face while I checked myself out. I refused to interact with her- never said a word.  My book was on hold, no one was even around & I was in/out (checking myself out w the check-out station within 3 mins or less). She put herself so close to me & harassed me the whole process through- I minded my business, continued with entering my info to scan my book out & promptly walked out (all right at the front door).  Unbelievable & ridiculous.  This whole city has gone down the tubes- very sad to see!!  This whole incident caused me to never leave my house for even groceries again- only would order online.  We sold our home & got the heck outta this place!  Good luck, Charlotte!!"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCeTZfa3dRRRAB",
