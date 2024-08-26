@@ -1,12 +1,21 @@
 {
     "place_name": "Haraz Coffee House",
     "place_id": "ChIJh4XCEgChVogRda6fX2EA-0g",
+    "place_description": "PARKING: Two parking lots/options: behind Haraz Coffee House and across the street on Hawthorne (behind 1124 Central Ave).\nThe country of Yemen is unapparelled to any other place on this Earth. From its breathtaking scenery to its history that dates back to the beginning of man. Yemen is the homeland of our family. As first-generation immigrants, we wanted to honor our heritage. Yemen is where coffee was invented and later flourished in global trade. Roasting and serving coffee is something that is inclusive of all people and cultures, and brings people together. Our coffee is grown from altitudes over 3,000 ft in a mountainous village called Haraz, where our namesake originates.",
     "place_rating": 4.5,
-    "place_total_reviews": 465,
+    "place_total_reviews": 466,
     "place_google_id": "0x8856a10012c28587:0x48fb00615f9fae75",
     "place_reviews_id": "5258797408101314165",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJh4XCEgChVogRda6fX2EA-0g&authuser=0&hl=en&gl=US",
     "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3cWRHX2dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3cWRHX2dBRRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgID7qdG_gAE%7CCgwIvvKttgYQqKKFowM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724610878,
+            "review_datetime_utc": "08/25/2024 18:34:38",
+            "review_text": "Good food"
+        },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3cnBTejNRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3cnBTejNRRRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgID7rpSz3QE%7CCgsIiLyntgYQ2KGqHg%7C?hl=en",
@@ -352,6 +361,14 @@
             "review_text": "Wow, you guys are amazing! A breath of fresh air, in the middle of nowhere :-)  excuse the rhyme"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMakpmNHh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMakpmNHh3RRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDLjJf4xwE%7CCgwI6q7tswYQsNHnuQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719359338,
+            "review_datetime_utc": "06/25/2024 23:48:58",
+            "review_text": "Me and my friends and I came here to hang out and do a little bit of homework. The place was a bit busy, probably because of the time we chose. It was a Wednesday at around 4 pm. It's a very cozy place to stay at, the prices are affordable, and the staff is very kind. If you go through the enter facing the street, that's where you'll find the register. But if you go around and enter through the back, there is more seating back there, but it is made for more quiet studying. Definitely recommend!!"
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMcDlPRWZnEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMcDlPRWZnEAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgICLp9OEfg%7CCgwI28DhswYQiJ2b_QI%7C?hl=en",
             "review_rating": 5,
@@ -368,12 +385,36 @@
             "review_text": "The atmosphere was very nice . But small and busy. We ended up ordering to go. We ordered a frozen caramel drink and a maleki coffee which was quite spicy and not sweet at all I'm thinking I suppose to do it myself. The bakery item was fine I like cheese cake with what I think is shredded phyllo dough and some spices on top.Also we got one milk cake. Not sweet as you will think.Overall good but not used to the spices like those on bakery or coffee."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMeF9uR1h3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMeF9uR1h3EAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgICLx_nGXw%7CCgwI5ZvhswYQsOTv1gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1719160293,
+            "review_datetime_utc": "06/23/2024 16:31:33",
+            "review_text": "The food and drinks are excellent (albeit pricey) and the coffee shop is an excellent addition to the Plaza Midwood neighborhood. While they are usually very busy the average wait time for your order ranges from 15-30 minutes. I went this morning and noticed a gentleman delivering goods behind the counter with Walmart brand items in Walmart grocery bags. This begs the question of is this is a usual occurrence or if this is a one off."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMMi1ueG53RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMMi1ueG53RRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgICL2-nxnwE%7CCgwI7YrgswYQsJWjiQE%7C?hl=en",
             "review_rating": 3,
             "review_timestamp": 1719141741,
             "review_datetime_utc": "06/23/2024 11:22:21",
             "review_text": "The coffee and pastries were great.  The service not so great.  Many unbused tables, bathroom and hand washing stations out of order."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMeWNfNnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMeWNfNnFnRRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgICLyc_6qgE%7CCgsI957SswYQ2IKRDg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718914935,
+            "review_datetime_utc": "06/20/2024 20:22:15",
+            "review_text": "The best Coffee  "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMNGIzQUpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMNGIzQUpREAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgICL4b3AJQ%7CCgwIvszOswYQqPbxyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718855230,
+            "review_datetime_utc": "06/20/2024 03:47:10",
+            "review_text": "They have the best coffee Ana tea ever "
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMNGFETVZBEAE",
@@ -1966,46 +2007,6 @@
             "review_timestamp": 1705800141,
             "review_datetime_utc": "01/21/2024 01:22:21",
             "review_text": "LOVE this coffee shop! Great coffee, great desserts, beautiful lighting and art."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROd3ZqREVnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROd3ZqREVnEAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDNwvjDEg%7CCgsI2eCxrQYQyLuuHw%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1705799769,
-            "review_datetime_utc": "01/21/2024 01:16:09",
-            "review_text": "This is a happy place to be. The saffron tea and the coffee are just divine. The pastries are wonderful and crossaints fabulous.  Of course it's crowded, why wouldn't it be! Service is slow for that very reason. I'm sure they will work that out, but patience here is worth it."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROZ3VIMGdnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROZ3VIMGdnRRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDNguH0ggE%7CCgsI572xrQYQgLKhJw%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1705795303,
-            "review_datetime_utc": "01/21/2024 00:01:43",
-            "review_text": "Amazing place"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROLU9fNmlRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROLU9fNmlRRRAB!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDN-O_6iQE%7CCgwI3LGwrQYQgOumlgM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1705777372,
-            "review_datetime_utc": "01/20/2024 19:02:52",
-            "review_text": "This Middle Eastern based cafe is a delightful fusion of Yemeni and Turkish coffee traditions and offers very rich traditional flavored chai and coffees. The deserts are very fresh, fast moving and flavorful. Bee bites and pistachio Turkish cakes are a must try."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROLU9haWN3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROLU9haWN3EAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDN-Oaicw%7CCgsIyJewrQYQoKqPWw%7C?hl=en",
-            "review_rating": 2,
-            "review_timestamp": 1705774024,
-            "review_datetime_utc": "01/20/2024 18:07:04",
-            "review_text": "We were super excited to try this place, and have tried to go twice, both unsuccessfully. The first time there was no where to park; they share a rather small parking lot with a few other businesses and there were lots of people circling through who couldn't get a spot. The second time we found parking, but the line was at least 20 people deep, with absolutely no where to sit. I'm sure the coffee is great and I'm glad they're getting good patronage, but so far the experience to get in has been way more hassle than it's worth."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROZ015N1NnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROZ015N1NnEAE!2m1!1s0x0:0x48fb00615f9fae75!3m1!1s2@1:CIHM0ogKEICAgIDNgMy7Sg%7CCgwI3qeqrQYQkLzEjwI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1705677790,
-            "review_datetime_utc": "01/19/2024 15:23:10",
-            "review_text": "Good luck brothers , looking to see different locations in Charlotte "
         }
     ]
 }
