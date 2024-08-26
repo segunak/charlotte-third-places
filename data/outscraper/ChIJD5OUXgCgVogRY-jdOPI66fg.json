@@ -1,11 +1,12 @@
 {
     "place_name": "Common Market | Plaza Midwood",
     "place_id": "ChIJD5OUXgCgVogRY-jdOPI66fg",
+    "place_description": "Popular spot offering draft brews & deli sandwiches amid a convenience store, plus outdoor seating.",
     "place_rating": 4.5,
     "place_total_reviews": 684,
     "place_google_id": "0x8856a0005e94930f:0xf8e93af238dde863",
     "place_reviews_id": "-510812270719276957",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJD5OUXgCgVogRY-jdOPI66fg&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJD5OUXgCgVogRY-jdOPI66fg&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3emMyWjJnRRAB",
