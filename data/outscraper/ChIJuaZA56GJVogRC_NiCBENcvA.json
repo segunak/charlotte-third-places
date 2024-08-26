@@ -1,11 +1,12 @@
 {
     "place_name": "Forte Legato Coffee",
     "place_id": "ChIJuaZA56GJVogRC_NiCBENcvA",
+    "place_description": "Specialty coffee shop focused on providing insight into the farmers, their lives, and the education of coffee WITHOUT JUDGEMENT. From savory breakfast sandwiches to our in-house bakes scones, enjoy a cup in the co-working space at 742 North and chillax to our smooth playlists.",
     "place_rating": 4.8,
     "place_total_reviews": 139,
     "place_google_id": "0x885689a1e740a6b9:0xf0720d110862f30b",
     "place_reviews_id": "-1120818990455524597",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJuaZA56GJVogRC_NiCBENcvA&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJuaZA56GJVogRC_NiCBENcvA&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3cnRpOHJ3RRAB",
@@ -616,6 +617,14 @@
             "review_text": "We went there thinking it would be a coffee shop. Regardless , their coffees are good!"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxcHVTVWpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxcHVTVWpRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICqpuSUjQE%7CCgwI--nqhQYQyKjAowI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1622848763,
+            "review_datetime_utc": "06/04/2021 23:19:23",
+            "review_text": "Yummy coffee and good selection of bakery items from local bakers."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbXJ6WnFBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbXJ6WnFBRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICqmrzZqAE%7CCgwI0pXjhQYQgOD9mQI%7C?hl=en",
             "review_rating": 5,
@@ -624,12 +633,60 @@
             "review_text": "Have been coming here for months and am always happy to get a good drink and a good conversation with the baristas!"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxM0llVHRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxM0llVHRnRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICq3IeTtgE%7CCgwIjafPhQYQkKaDuAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622397837,
+            "review_datetime_utc": "05/30/2021 18:03:57",
+            "review_text": "The best coffee ever I suggest you try it and when you do you will not look at other coffee the same"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxdU92azVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxdU92azVRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICquOvk5QE%7CCgsIvvG5hQYQqIWPHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622046910,
+            "review_datetime_utc": "05/26/2021 16:35:10",
+            "review_text": "I really like this place. I always use the app and order ahead so I've never had an issue with waiting as a few others have mentioned. I also get curbside to go. My drinks are usually ready by the time I get there (10ish minutes). The two ladies that work there are always super friendly and offer suggestions. I like that they offer non-dairy milk and also let you customize the drinks. I've only had issues with the app twice and it was just that it would freeze up. Otherwise everything is always great!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLOVotQzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLOVotQzV3RRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDK9Z-C5wE%7CCgwIv-2BhQYQ8IT01QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621128895,
+            "review_datetime_utc": "05/16/2021 01:34:55",
+            "review_text": "I absolutely love this coffee shop in Rock Hill \nThis is the best ice coffee, marble macchiato."
+        },
+        {
             "review_id": "ChRDSUhNMG9nS0VJQ0FnSURLOWZGQxAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURLOWZGQxAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDK9fFC%7CCgwI6pGBhQYQyMmRsgE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1621117162,
             "review_datetime_utc": "05/15/2021 22:19:22",
             "review_text": "Great coffee! Great breakfast bagel! Great service!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLMU1XOTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLMU1XOTJRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDK1MW92QE%7CCgwI_ci1hAYQgICQxQM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1619879037,
+            "review_datetime_utc": "05/01/2021 14:23:57",
+            "review_text": "Don't go here if you need to run. To be honest poor customer service.  I waited 20 min for a single cup of coffee maybe 25. I was second in line.  Not sure it was worth the wait.  Not even a sorry for the long wait.  Won't be coming back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLMU02bTRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLMU02bTRBRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDK1M6m4AE%7CCgwIo6m1hAYQuOqhxwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619874979,
+            "review_datetime_utc": "05/01/2021 13:16:19",
+            "review_text": "No complaints from me. Just some good coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLLU1UQjlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLLU1UQjlRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDK-MTB9QE%7CCgsIpcWrhAYQ0LvJRA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619714725,
+            "review_datetime_utc": "04/29/2021 16:45:25",
+            "review_text": "Kiosk style counter inside, with other small businesses. Friendly people, diverse menu options and bagged coffee for sale."
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLeU9UM1RBEAE",
@@ -648,12 +705,76 @@
             "review_text": "Wonderful coffee! I had the French Provence (vanilla lavender) and my hubby got the pour over (Costa Rica). The lounge area is fun and comfortable. The people working there were so friendly and welcoming. They even invited us to their church. A taste of community here. We are definitely going back for more coffee! Yum!"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLMWEzNndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLMWEzNndRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICK1a36wQE%7CCgwI_JfmgwYQoNO7owM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1618578428,
+            "review_datetime_utc": "04/16/2021 13:07:08",
+            "review_text": "Quirky set-up and a very friendly team.\nLots of seating indoor and outdoor, but the coffee was a let down for me, especially after being a regular at BoCo Coffee Company.\n\nNothing forte about Forte Legato Coffee, nor was the coffee a latte as ordered.\n\nThe pastries looked great and their coffee/espresso machine is quite unique. Will give it another try if BoCo is closed, but recommend Mado Bakery for coffee and pastries."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5Nzd1ZHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5Nzd1ZHV3RRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDy77uduwE%7CCgwI3bjjggYQqOqLnAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1616436317,
+            "review_datetime_utc": "03/22/2021 18:05:17",
+            "review_text": "This is a kiosk type coffee counter inside a building that holds multiple business.  They have pastries and all the coffee types you could want.  I got an Americano and it was good. Their coffee is very acidic, which is great if you like acidic coffee.  The pastry was delicious.\nThey are not open on Sunday. They do host food trucks in the parking lot on Thursday evenings."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5MjZ1bWpRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5MjZ1bWpRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDy26umjQE%7CCgsIv7DOggYQgJbHVQ%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1616091199,
             "review_datetime_utc": "03/18/2021 18:13:19",
             "review_text": "Forte Legato Coffee is awesome!  The coffees are yummy,  the staff is friendly and knowledgeable.  When in town, I try to get by to enjoy a latte and take home some beans!  Love this place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5bWR1aGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5bWR1aGN3EAE!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDymduhcw%7CCgwIn6OvggYQyPPFnAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615581599,
+            "review_datetime_utc": "03/12/2021 20:39:59",
+            "review_text": "Great Drip coffee, the Ethiopian is my favorite. Good espresso drinks as well and super friendly staff! This is legit coffee!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5a28tMHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5a28tMHNnRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDyko-0sgE%7CCgwI5Kv2gQYQ2Kj4mQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1614648804,
+            "review_datetime_utc": "03/02/2021 01:33:24",
+            "review_text": "Wonderful Coffee!!  Great place to meet-up with a friend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5Z09QdFBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5Z09QdFBnEAE!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDygOPtPg%7CCgwIgJvAgQYQgPrsgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613761920,
+            "review_datetime_utc": "02/19/2021 19:12:00",
+            "review_text": "Lovely visit here!\nFabulous coffee-- specifically catered to what I was in the mood for.\nReally awesome owner & helpers! Loved every minute of my visit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5enZYNEN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5enZYNEN3EAE!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgICyzvX4Cw%7CCgsI1YbWgAYQ2PL8TQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1612022613,
+            "review_datetime_utc": "01/30/2021 16:03:33",
+            "review_text": "Fantastic variety of whole bean coffee including unusual small crop/farm options from around the world. Delightfully roasted with excellent espresso and tea flavors and options they also have tasty local baked goods for sale.\nTheres lots of coffee options in Rock Hill and Charlotte metro area but really only one you need as your go to, and this is it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTM2VLYnNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTM2VLYnNRRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDS3eKbsQE%7CCgwIk-PS_wUQuIGMrQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1609871763,
+            "review_datetime_utc": "01/05/2021 18:36:03",
+            "review_text": "LOVE this place and the coffee! It's a warm, open atmosphere and the staff are always friendly. The stories of where the coffee comes from and those relationships with the growers. The 742 N building is up and coming and I'm excited to see it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTdW82REx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTdW82REx3EAE!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDSuo6DLw%7CCgsI7PWH_wUQsJrWMg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1608645356,
+            "review_datetime_utc": "12/22/2020 13:55:56",
+            "review_text": "Nick and his crew at Forte Legato are the absolute best! They had wonderful coffee, food, and the service is wonderful. They have indoor and outdoor seating for you to sit and hang out at. If you need coffee, support a locally owned business!"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpNy1ialF3EAE",
@@ -670,6 +791,22 @@
             "review_timestamp": 1604424682,
             "review_datetime_utc": "11/03/2020 17:31:22",
             "review_text": "Forte Legato is one of my favorite coffee shops. All their coffee drinks are delicious and they have a good variety of beans you can buy too. The customer service is also top-notch! Support local coffee shops and check them out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDLTQyVHpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDLTQyVHpBRRAB!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDC-42TzAE%7CCgsI29-X_AUQ2LTmdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1602613211,
+            "review_datetime_utc": "10/13/2020 18:20:11",
+            "review_text": "This place is AWESOME.  And I dig the name.  They serve a lovely nitro coldbrew, though my fantastic barista feared it was a mite weak.  As a 2pm pick-me-up, it was perfect.  Great internet, spacious seating, excellent interwebz.  I'm a fan.  Oh.  And I got my photo made with RBG. #notorious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDclBtSlVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDclBtSlVBEAE!2m1!1s0x0:0xf0720d110862f30b!3m1!1s2@1:CIHM0ogKEICAgIDCrPmJUA%7CCgwIjbCO-wUQuI6UoQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1600362509,
+            "review_datetime_utc": "09/17/2020 17:08:29",
+            "review_text": "Customer service was great. Atmosphere is warm, relaxed and cozy. As a die hard tea person, I would like to see a few more tea options. That being said, the quality of the available tea is very good. They use good quality loose leaf teas and brew them in convenient,  disposable satchels.\n\nOverall, a nice place."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDckpEZnZ3RRAB",
