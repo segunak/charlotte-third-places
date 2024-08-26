@@ -1,12 +1,45 @@
 {
     "place_name": "Optimist Hall",
     "place_id": "ChIJL2yWy4ihVogRCcalxb9E7Cw",
+    "place_description": "Hip site with a wide variety of food & bar stands plus art, events & indoor-outdoor seating.",
     "place_rating": 4.7,
-    "place_total_reviews": 7948,
+    "place_total_reviews": 7956,
     "place_google_id": "0x8856a188cb966c2f:0x2cec44bfc5a5c609",
     "place_reviews_id": "3237037822617961993",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJL2yWy4ihVogRCcalxb9E7Cw&authuser=0&hl=en&gl=US",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MmZESFlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3MmZESFlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID72fDHYQ%7CCgwIzpavtgYQoIePywI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1724631886,
+            "review_datetime_utc": "08/26/2024 00:24:46",
+            "review_text": "I love optimist hall. The variety of food options is amazing and parking is decent. I took off some stars specifically for the property management group- they no longer allow fonta flora to validate parking and it's very disappointing.  We've had book club for several years at fonta flora and they would validate our parking. The 90 min free parking is plenty of time to eat at one of the restaurants but a brewery makes its money on people staying for longer to enjoy a few drinks and good company. This needs to be resolved and fonta flora needs to be able to validate parking again"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3bWJmR2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3bWJmR2NREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7mbfGcQ%7CCgsInYuvtgYQ-MmWdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724630429,
+            "review_datetime_utc": "08/26/2024 00:00:29",
+            "review_text": "I loved absolutely everything about this place it was like a grown ups food court"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3eWF5c2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3eWF5c2xnRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7yayslgE%7CCgsI8qattgYQ8NuiQw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724601202,
+            "review_datetime_utc": "08/25/2024 15:53:22",
+            "review_text": "Fun place to hang out. Outside is dog friendly, wish pets were allowed inside the hall (outside the restaurants)."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3aWFmY1BREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3aWFmY1BREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID7iafcPQ%7CCgwIppattgYQ4MSUgQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724599078,
+            "review_datetime_utc": "08/25/2024 15:17:58",
+            "review_text": "When in Charlotte definitely stop at Optimist Hall! You won't be disappointed!"
+        },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MnJQMUlREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3MnJQMUlREAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgID72rP1IQ%7CCgwIh9GitgYQ0M2jogE%7C?hl=en",
@@ -1974,38 +2007,6 @@
             "review_timestamp": 1715045212,
             "review_datetime_utc": "05/07/2024 01:26:52",
             "review_text": "The place is nice and clean. But the food was overpriced and several of the places were not that good. In fairness, some of that is preference. But for a place to simply go and hang out with friends and enjoy some time, it is nice."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqd19YcndBRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqd19YcndBRRAB!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjw_XrwAE%7CCgsIh-blsQYQ0O-EcQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1715041031,
-            "review_datetime_utc": "05/07/2024 00:17:11",
-            "review_text": "The Hall itself is really neat and more unique than other food halls I've been to. My hamburger was delish!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqZy1Lakl3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqZy1Lakl3EAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjg-KjIw%7CCgsIjYPlsQYQuOaLOQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1715028365,
-            "review_datetime_utc": "05/06/2024 20:46:05",
-            "review_text": "Favorite place to go and eat"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMVpxTEVBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMVpxTEVBEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDj1ZqLEA%7CCgsI3sHfsQYQ6IWVFQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1714938078,
-            "review_datetime_utc": "05/05/2024 19:41:18",
-            "review_text": "As someone who lives in Charlotte, I cannot believe it took me this long to visit Optimist Hall. It made me feel like I live in a big, cultural city. Cocktails at the bar were awesome and the food choices are incredible."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqcWJHWUhnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqcWJHWUhnEAE!2m1!1s0x0:0x2cec44bfc5a5c609!3m1!1s2@1:CIHM0ogKEICAgIDjqbGYHg%7CCgwIhqHasQYQ4Je21AE%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1714851974,
-            "review_datetime_utc": "05/04/2024 19:46:14",
-            "review_text": "Surprisingly awesome food hall. They are not normally my thing, but this one is solid and beautiful on top. Great food options and atmosphere, very laid back"
         }
     ]
 }
