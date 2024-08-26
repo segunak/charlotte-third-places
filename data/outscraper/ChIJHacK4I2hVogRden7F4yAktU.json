@@ -1,12 +1,21 @@
 {
     "place_name": "Change Please Coffee",
     "place_id": "ChIJHacK4I2hVogRden7F4yAktU",
+    "place_description": "Change Please is where social enterprise and coffee expertise blend. We train and employ people experiencing homelessness as baristas and put 100% of our profits towards giving our employees fair wage jobs, housing, therapy support, childcare, healthcare, onward job opportunities and more.",
     "place_rating": 4.9,
-    "place_total_reviews": 26,
+    "place_total_reviews": 27,
     "place_google_id": "0x8856a18de00aa71d:0xd592808c17fbe975",
     "place_reviews_id": "-3057239857844983435",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJHacK4I2hVogRden7F4yAktU&authuser=0&hl=en&gl=US",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3Nllyb0hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3Nllyb0hnEAE!2m1!1s0x0:0xd592808c17fbe975!3m1!1s2@1:CIHM0ogKEICAgID76YroHg%7CCgwIuqOutgYQyKCHrAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724617146,
+            "review_datetime_utc": "08/25/2024 20:19:06",
+            "review_text": "Really good coffee!"
+        },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURic2NIMEhBEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURic2NIMEhBEAE!2m1!1s0x0:0xd592808c17fbe975!3m1!1s2@1:CIHM0ogKEICAgIDbscH0HA%7CCgsI5fXItQYQqJTPBw%7C?hl=en",
