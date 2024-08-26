@@ -1,11 +1,12 @@
 {
     "place_name": "Brakeman's Coffee & Supply",
     "place_id": "ChIJU36j5gEkVIgRDBSH0u_ZeWE",
+    "place_description": "Popular gathering place for craft coffee drinks & tea with outdoor seating on the front lawn.",
     "place_rating": 4.7,
     "place_total_reviews": 905,
     "place_google_id": "0x88542401e6a37e53:0x6179d9efd287140c",
     "place_reviews_id": "7023884717913478156",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJU36j5gEkVIgRDBSH0u_ZeWE&authuser=0&hl=en&gl=AU",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJU36j5gEkVIgRDBSH0u_ZeWE&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MUpPM1B3EAE",
