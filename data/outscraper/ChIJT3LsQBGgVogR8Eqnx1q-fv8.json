@@ -1,11 +1,12 @@
 {
     "place_name": "Not Just Coffee | 7th Street",
     "place_id": "ChIJT3LsQBGgVogR8Eqnx1q-fv8",
+    "place_description": "Contemporary spot serving high-end coffee drinks, plus tea & light fare like toasts & yogurt.",
     "place_rating": 4.6,
     "place_total_reviews": 378,
     "place_google_id": "0x8856a01140ec724f:0xff7ebe5ac7a74af0",
     "place_reviews_id": "-36382449866421520",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJT3LsQBGgVogR8Eqnx1q-fv8&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJT3LsQBGgVogR8Eqnx1q-fv8&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3OTlpUk93EAE",
