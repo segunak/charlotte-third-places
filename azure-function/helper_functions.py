@@ -6,7 +6,9 @@ import logging
 import requests
 from datetime import datetime
 from unidecode import unidecode
+from typing import Iterable, Callable, Any, List
 from azure.storage.filedatalake import DataLakeServiceClient
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 dotenv.load_dotenv()
 
@@ -98,7 +100,7 @@ def save_json_to_github(json_data, full_file_path):
         # Construct the data for the PUT request to create/update the file
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
         url_put = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}"
-        commit_message = "Updating reviews data"
+        commit_message = "Saving JSON file via save_json_to_github utility function"
         data = {
             "message": commit_message,
             "content": base64.b64encode(json_data.encode()).decode(),
@@ -143,3 +145,96 @@ def setup_logging(self):
 
     # Log that setup is complete
     logging.info("Logging setup complete - logging to console and file.")
+
+def create_place_response(operation_status, target_place_name, http_response_data, operation_message):
+    """
+    Constructs a structured response dictionary with details about an operation performed on a place.
+    
+    This function logs the operation message and returns a dictionary that encapsulates the status of
+    the operation, the name of the place involved, the response data obtained (if any), and a descriptive
+    message about the outcome.
+
+    Args:
+        operation_status (str): A custom status string indicating the outcome of the operation,
+                                used by callers to determine further actions.
+        target_place_name (str): The name of the place that was the focus during the data retrieval operation.
+        http_response_data (dict or None): The actual data received from the HTTP call to retrieve information
+                                           about the place. This can be None if no data was retrieved.
+        operation_message (str): A custom message providing additional details about the operation's outcome,
+                                 intended for logging and informing the caller.
+
+    Returns:
+        dict: A dictionary that includes the operation status, place name, any response data, and a detailed message.
+    """
+    logging.info(operation_message)
+    
+    return {
+        'status': operation_status,
+        'place_name': target_place_name,
+        'response': http_response_data,
+        'message': operation_message
+    }
+
+def structure_outscraper_data(outscraper_response, place_name, place_id):
+    """
+    Creates a structured dictionary containing detailed review information for a specific place.
+    
+    This function transforms raw review data retrieved from the Outscraper API into a structured
+    dictionary that is easier to handle and display in client applications or to store in databases.
+
+    Args:
+        outscraper_response (Dict[str, Any]): A dictionary containing raw data from the Outscraper API.
+        place_name (str): The name of the place for which reviews are being processed.
+        place_id (str): The unique identifier for the place in the database or API.
+
+    Returns:
+        Dict[str, Any]: A dictionary that includes comprehensive details about the place and its reviews,
+                        including metadata like ratings and individual review details such as text and ratings.
+
+    The function includes a list comprehension that filters and processes individual reviews only if
+    they contain textual content, ensuring that only meaningful data is included in the final dictionary.
+    """
+    logging.info("Started structure_outscraper_data")
+    
+    structured_data = {
+        "place_name": place_name,
+        "place_id": place_id,
+        "place_description": outscraper_response.get('description', None),
+        "place_rating":  outscraper_response.get('rating', None),
+        "place_total_reviews": outscraper_response.get('reviews', None),
+        "place_google_id": outscraper_response.get('google_id', None),
+        "place_reviews_id": outscraper_response.get('reviews_id', None),
+        "place_reviews_link": outscraper_response.get('reviews_link', None),
+        "reviews_data": [
+            {
+                "review_id": review["review_id"],
+                "review_link": review["review_link"],
+                "review_rating": review["review_rating"],
+                "review_timestamp": review['review_timestamp'],
+                "review_datetime_utc": review["review_datetime_utc"],
+                "review_text": unidecode(review["review_text"])
+            }
+            for review in outscraper_response['reviews_data'] if review.get('review_text')
+        ]
+    }
+    
+    logging.info("Completed structure_outscraper_data")
+    
+    return structured_data
+
+
+def process_in_parallel(items: Iterable[Any], process_func: Callable[[Any], Any], max_workers: int = 10) -> List[Any]:
+    """
+    Process an iterable of items in parallel using the provided function.
+
+    Args:
+    items (Iterable[Any]): The iterable of items to process.
+    process_func (Callable[[Any], Any]): The function to apply to each item.
+    max_workers (int): The maximum number of worker threads to use. Defaults to 10.
+
+    Returns:
+    List[Any]: A list of results from the processing function, excluding None results.
+    """
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = [executor.submit(process_func, item) for item in items]
+        return [future.result() for future in as_completed(futures) if future.result() is not None]

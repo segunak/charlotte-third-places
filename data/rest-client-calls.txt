@@ -1,0 +1,11 @@
+Install the Rest Client VSCode extension. Then highlight any URL, open the command pallette (CTRL + SHIFT + P), and 
+choose "Rest Client: Send Request". 
+
+More documentation about using Rest Client can be found at 
+https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+----------
+
+
+
+.\TestDurableFunction.ps1 -orchestratorUrl "http://localhost:7071/api/orchestrators/get_outscraper_reviews_orchestrator"

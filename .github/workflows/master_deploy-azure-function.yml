@@ -80,6 +80,7 @@ jobs:
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_578D7E3EBA21453795CE9E97514E2950 }}
 
       - name: Smoke Test
+        shell: bash
         run: |
           #!/bin/bash
           set -euo pipefail

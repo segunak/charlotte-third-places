@@ -6,7 +6,7 @@ A scratch pad for various notes related to this project.
 ## Random Information
 
 * To stop Azurite from writing its logs to undesirable locations I set the `Azurite: Location` in settings to the relative path (starting from the C:\ drive) `/GitHub/charlotte-third-places/azure-function/.azurite` The folder is ignored in the `.gitignore`.
-* Testing locally, if you use `venv` you can get weird networking issues tunneling from the virtual environment to the public internet. If you're comfortable with your local environment don't bother with it.
+* Testing locally, if you use `venv` you can get weird networking issues tunneling from the virtual environment to the public internet. If you're comfortable with your local environment move to it to overcome some of  that.
 * You need to place any third-party Python libraries in `requirements.txt` so they're installed in the cloud for use during deployments and production execution.
 * Remember to start and stop Azurite for local testing if you're using local storage.
 * See [this page](https://outscraper.com/place-id-feature-id-cid/) for a `google_id` explainer. I have found no use for it but it's returned by the Outscraper API.
@@ -22,6 +22,7 @@ To debug the Azure Function locally, follow the guidance in the [quickstart](htt
 * To understand why `host.json` has an `excluded_types` section check out [this page](https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring?tabs=v2#configure-sampling)
 * Read through [this](https://learn.microsoft.com/en-us/azure/azure-functions/functions-bindings-http-webhook-trigger?tabs=python-v2%2Cisolated-process%2Cnodejs-v4%2Cfunctionsv2&pivots=programming-language-python#http-auth) page for more details on how HTTP Azure Functions work.
 * Read through [this](https://learn.microsoft.com/en-us/azure/azure-functions/function-keys-how-to?tabs=azure-portal) page for details on how Azure Function keys work.
+* Read through [this](https://learn.microsoft.com/en-us/azure/azure-functions/durable/durable-functions-types-features-overview) to understand how Durable functions work. For any long running task (more than 3 minutes or so), you need to use a Durable Function. Default Azure Functions will time out.
 
 ### Using Emulated Storage
 
@@ -34,6 +35,72 @@ To debug the Azure Function locally, follow the guidance in the [quickstart](htt
 1. Make sure in your `local.settings.json` file you have `AzureWebJobsStorage` set to the connection string of a storage account. The format is `DefaultEndpointsProtocol=https;AccountName=charlottethirdplaces;AccountKey=[AccountKeyHere];EndpointSuffix=core.windows.net`
 2. Debug `function_app.py` with a `launch.json` file that looks like the [below JSON](#launch-file). Right now this configuration should be setup already in the `.vscode` folder.
 3. Navigate to the Azure tab in the left bar and under Workspace expand Local Project. The function should be under there where you can right-click and execute it, providing your own body.
+
+### Durable Functions
+
+To test a durable function locally, you need to hit the endpoint of the HTTP trigger function with the name of the orchestrator you're targeting. After that, you get back a bunch of URLs you can poll to check the status.
+
+The response from calling `create_check_status_response` in the HTTP trigger of a Durable Function. Returns endpoints needed to monitor or stop the orchestration.
+
+```json
+{
+  "id": "118ea5b7831f45c5bd5d6bf5fa4f2ab4",
+  "statusQueryGetUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4?taskHub=TestHubName&connection=Storage&code=Redacted",
+  "sendEventPostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/raiseEvent/{eventName}?taskHub=TestHubName&connection=Storage&code=Redacted",
+  "terminatePostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/terminate?reason={text}&taskHub=TestHubName&connection=Storage&code=Redacted",
+  "rewindPostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/rewind?reason={text}&taskHub=TestHubName&connection=Storage&code=Redacted",
+  "purgeHistoryDeleteUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4?taskHub=TestHubName&connection=Storage&code=Redacted",
+  "restartPostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/restart?taskHub=TestHubName&connection=Storage&code=Redacted",
+  "suspendPostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/suspend?reason={text}&taskHub=TestHubName&connection=Storage&code=Redacted",
+  "resumePostUri": "http://localhost:7071/runtime/webhooks/durabletask/instances/118ea5b7831f45c5bd5d6bf5fa4f2ab4/resume?reason={text}&taskHub=TestHubName&connection=Storage&code=Redacted"
+}
+```
+
+When the Durable Function call is fully complete the final response looks similar to the below. You get this structure from calling the `statusQueryGetUri` returned by the initial call.
+
+```json
+{
+  "name": "get_outscraper_reviews_orchestrator",
+  "instanceId": "fd1575779e994ba8a9110153f4173a3e",
+  "runtimeStatus": "Completed",
+  "input": null,
+  "customStatus": null,
+  "output": "Hello mate. Just verifying things work for now",
+  "createdTime": "2024-08-25T22:19:40Z",
+  "lastUpdatedTime": "2024-08-25T22:19:42Z"
+}
+```
+
+For your `local.settings.json` this is the setup I had for valuable logging locally but not too much. Reference <https://learn.microsoft.com/en-us/azure/azure-functions/configure-monitoring?tabs=v2> and <https://github.com/anthonychu/functions-log-suppression>.
+
+```json
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "Connection string goes here. Can find this in Azure on the Environment variables tab",
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "AzureWebJobsFeatureFlags": "EnableWorkerIndexing",
+    "AZURE_FUNCTION_KEY": "Get this from Azure",
+    "WEBSITE_RUN_FROM_PACKAGE": 1,
+    "PYTHON_ENABLE_WORKER_EXTENSIONS": "1",
+    "AIRTABLE_BASE_ID": "Get from Airtable",
+    "AIRTABLE_PERSONAL_ACCESS_TOKEN": "Get from Airtable",
+    "GOOGLE_MAPS_API_KEY": "Get from Google",
+    "GITHUB_PERSONAL_ACCESS_TOKEN": "Get from GitHub",
+    "OUTSCRAPER_API_KEY": "Get from Outscraper",
+    "logging:logLevel:Microsoft": "None",
+    "logging:logLevel:Worker": "None",
+    "AzureFunctionsJobHost:logging:logLevel:default": "Warning",
+    "AzureFunctionsJobHost:logging:logLevel:Host.Function.Console": "None"
+  }
+}
+```
+
+For testing the durable function using the script in the `data` folder.
+
+```PowerShell
+.\Invoke-DurableFunction.ps1 -OrchestratorUrl "http://localhost:7071/api/orchestrators/get_outscraper_reviews_orchestrator" -TimeoutSeconds 300
+```
 
 ### Troubleshooting
 
@@ -66,6 +133,14 @@ I ran into the issue where you deploy the Azure Function, either from VSCode loc
 ```
 
 ### Test Code
+
+All of these endpoints are secured with key authentication. This is assuming you're debugging locally, in which case keys aren't needed.
+
+For posting to `SmokeTest`.
+
+```json
+{"House": "Martell"}
+```
 
 For posting to `EnrichAirtableBase`.
 

@@ -355,4 +355,3 @@ class AirtableClient:
                 
     def places_without_reviews():
         return "Function to go through the base and return all places that have no stored Google Maps reviews.  "
-

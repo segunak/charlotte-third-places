@@ -13,6 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:    
       - name: Trigger Azure Function
+        shell: bash
         run: |
           #!/bin/bash
           set -euo pipefail
@@ -40,4 +41,3 @@ jobs:
             echo "Response Body: $response_body"
             exit 1
           fi
-        shell: bash
