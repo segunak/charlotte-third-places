@@ -30,6 +30,6 @@ jobs:
       - name: Check Script Result
         run: |
           echo "Script execution completed with status: ${{ steps.invoke_script.outcome }}"
-          if (${{ steps.invoke_script.outcome }} -ne 'success') {
+          if ("${{ steps.invoke_script.outcome }}" -ne "success") {
             exit 1
           }
