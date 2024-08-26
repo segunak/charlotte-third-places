@@ -1,6 +1,7 @@
 {
     "place_name": "Barnes & Noble | Carolina Place",
     "place_id": "ChIJSUoajZKcVogRXBDgw240hWc",
+    "place_description": "Bookseller chain stocking housebrand eReader, plus a broad selection of titles for adults & kids.",
     "place_rating": 4.6,
     "place_total_reviews": 2052,
     "place_google_id": "0x88569c928d1a4a49:0x6785346ec3e0105c",
@@ -1024,6 +1025,22 @@
             "review_text": "The store is very clean and well organized. The staff is very friendly and helpful. They have great sales."
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSZ2JHemdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSZ2JHemdBRRAB!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgICRgbGzgAE%7CCgsImo6roQYQsNrpag%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1680525082,
+            "review_datetime_utc": "04/03/2023 12:31:22",
+            "review_text": "Hardly could find a person for check out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSdkktb05nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSdkktb05nEAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgICRvI-oNg%7CCgsI3O2IoQYQ-MPZDg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679963868,
+            "review_datetime_utc": "03/28/2023 00:37:48",
+            "review_text": "My kids favorite store! Lots of books and toys."
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSN0szeUR3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSN0szeUR3EAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgICR7K3yDw%7CCgsI3IOGoQYQoNzKJg%7C?hl=en",
             "review_rating": 5,
@@ -1046,6 +1063,30 @@
             "review_timestamp": 1679598443,
             "review_datetime_utc": "03/23/2023 19:07:23",
             "review_text": "I love barnes and noble!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURocXVTRHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURocXVTRHV3RRAB!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDhquSDuwE%7CCgwIjMuWoAYQoJ_nrgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1678091660,
+            "review_datetime_utc": "03/06/2023 08:34:20",
+            "review_text": "Well organized.  Big store."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoelBiTlN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoelBiTlN3EAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDhzPbNSw%7CCgsI2ZmGoAYQ2NnbPw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677823193,
+            "review_datetime_utc": "03/03/2023 05:59:53",
+            "review_text": "Went and bought a few muscle magazines along with the Tom Brady. Special edition magazines only had a couple left in stock.!! "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoNU51YmhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoNU51YmhBRRAB!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDh5NubhAE%7CCgsIqa-AoAYQyO-LFw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1677727657,
+            "review_datetime_utc": "03/02/2023 03:27:37",
+            "review_text": "Didn't find the finger puppet I was looking for but bought a cute little critter key chain for my little one."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoMEpYUV9RRRAB",
@@ -1966,46 +2007,6 @@
             "review_timestamp": 1638304693,
             "review_datetime_utc": "11/30/2021 20:38:13",
             "review_text": "Friendly customer service"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHcm9UZGVBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHcm9UZGVBEAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDGroTdeA%7CCgwIvYuOjQYQkJ_ipAI%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1638106557,
-            "review_datetime_utc": "11/28/2021 13:35:57",
-            "review_text": "Always a friendly place to go, sit have a coffee and read. Staff is decent as well, give them a raise."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHOXFlRkdnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHOXFlRkdnEAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDG9qeFGg%7CCgwI5tqKjQYQkI_I6QE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1638051174,
-            "review_datetime_utc": "11/27/2021 22:12:54",
-            "review_text": "I love the place..."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHX0pqTkV3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHX0pqTkV3EAE!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDG_JjNEw%7CCgsIu9PqjAYQ-JCvdQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1637525947,
-            "review_datetime_utc": "11/21/2021 20:19:07",
-            "review_text": "Great book store!!!  Everyone was very helpful!!!"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHNEtta2xRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHNEtta2xRRRAB!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgIDG4KmklQE%7CCgwIrKfJjAYQiPODswM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1636979628,
-            "review_datetime_utc": "11/15/2021 12:33:48",
-            "review_text": "Its amazing book place and its so much peace and quiet there i would definitely do it again"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHbjl6QW5RRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHbjl6QW5RRRAB!2m1!1s0x0:0x6785346ec3e0105c!3m1!1s2@1:CIHM0ogKEICAgICGn9zAnQE%7CCgsIiOm_jAYQoN2VfQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1636824199,
-            "review_datetime_utc": "11/13/2021 17:23:19",
-            "review_text": "Appreciate this store still staying and not bowing down to online competition. I visit here all the time take my girls there too, the feel of visiting a bookstore is the best"
         }
     ]
 }
