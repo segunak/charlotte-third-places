@@ -1,11 +1,12 @@
 {
     "place_name": "Not Just Coffee | Packard Place",
     "place_id": "ChIJV_v6AS-gVogR_tVfMrTdurY",
+    "place_description": "Contemporary spot serving high-end coffee drinks, plus tea & light fare like toasts & yogurt.",
     "place_rating": 4.6,
     "place_total_reviews": 281,
     "place_google_id": "0x8856a02f01fafb57:0xb6baddb4325fd5fe",
     "place_reviews_id": "-5279663847129491970",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJV_v6AS-gVogR_tVfMrTdurY&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJV_v6AS-gVogR_tVfMrTdurY&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMaTRTS0F3EAE",
