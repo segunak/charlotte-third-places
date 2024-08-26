@@ -1,11 +1,12 @@
 {
     "place_name": "Central Coffee Co",
     "place_id": "ChIJZ0SFxxygVogRFPE_q59LVw4",
+    "place_description": "Independent coffee shop with breakfast, house-baked pastries & baklava, brick walls & a fireplace.",
     "place_rating": 4.5,
     "place_total_reviews": 923,
     "place_google_id": "0x8856a01cc7854467:0xe574b9fab3ff114",
     "place_reviews_id": "1033377788649795860",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJZ0SFxxygVogRFPE_q59LVw4&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJZ0SFxxygVogRFPE_q59LVw4&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3aU9hMlh3EAE",
