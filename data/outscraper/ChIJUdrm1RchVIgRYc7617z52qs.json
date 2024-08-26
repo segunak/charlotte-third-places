@@ -1,12 +1,21 @@
 {
     "place_name": "Night Swim Coffee | Oakhurst",
     "place_id": "ChIJUdrm1RchVIgRYc7617z52qs",
+    "place_description": null,
     "place_rating": 4.5,
-    "place_total_reviews": 199,
+    "place_total_reviews": 200,
     "place_google_id": "0x88542117d5e6da51:0xabdaf9bcd7face61",
     "place_reviews_id": "-6063259358828245407",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJUdrm1RchVIgRYc7617z52qs&authuser=0&hl=en&gl=US",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3cWZqZ2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3cWZqZ2NREAE!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgID7qfjgcQ%7CCgwIv9ittgYQqO2lkAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724607551,
+            "review_datetime_utc": "08/25/2024 17:39:11",
+            "review_text": "Very good coffee and food. Staff is always so nice and the location is pretty chill and great for coffee meetups or doing some solo work in a great place. Love night swim"
+        },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NU1UNjdRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NU1UNjdRRRAB!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgID75MT67QE%7CCgwIz_SXtgYQwNHazAE%7C?hl=en",
@@ -406,6 +415,14 @@
             "review_timestamp": 1679944815,
             "review_datetime_utc": "03/27/2023 19:20:15",
             "review_text": "Brown sugar vanilla oat milk latte for the win"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoem83S1BnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoem83S1BnEAE!2m1!1s0x0:0xabdaf9bcd7face61!3m1!1s2@1:CIHM0ogKEICAgIDhzo7KPg%7CCgsI6qekoAYQyMTlXw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678316522,
+            "review_datetime_utc": "03/08/2023 23:02:02",
+            "review_text": "We enjoyed a cold brew and a vanilla latte--both were so good!"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoem83S1BnEAE",
