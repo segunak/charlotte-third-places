@@ -93,7 +93,7 @@ def get_outscraper_reviews_activity(message):
           
         logging.info("Starting review retrieval using parallel processing")
         
-        call_results = helpers.process_in_parallel(airtable.all_third_places[:1], process_place, 10)
+        call_results = helpers.process_in_parallel(airtable.all_third_places, process_place, 10)
         all_successful = all(result['status'] != 'failed' for result in call_results)
         status_code = 200 if all_successful else 207
         
