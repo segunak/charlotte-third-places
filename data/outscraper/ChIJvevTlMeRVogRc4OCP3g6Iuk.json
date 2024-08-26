@@ -1,11 +1,12 @@
 {
     "place_name": "Javesca Coffee | Steele Creek",
     "place_id": "ChIJvevTlMeRVogRc4OCP3g6Iuk",
+    "place_description": null,
     "place_rating": 4.7,
     "place_total_reviews": 42,
     "place_google_id": "0x885691c794d3ebbd:0xe9223a783f828373",
     "place_reviews_id": "-1647690225528175757",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJvevTlMeRVogRc4OCP3g6Iuk&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJvevTlMeRVogRc4OCP3g6Iuk&q=*&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNXZUUHR3RRAB",
