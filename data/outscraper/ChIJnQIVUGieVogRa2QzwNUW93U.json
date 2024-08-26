@@ -1,11 +1,12 @@
 {
     "place_name": "Panera Bread | Fairview Road",
     "place_id": "ChIJnQIVUGieVogRa2QzwNUW93U",
+    "place_description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
     "place_rating": 4.2,
     "place_total_reviews": 764,
     "place_google_id": "0x88569e685015029d:0x75f716d5c033646b",
     "place_reviews_id": "8500287928993539179",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJnQIVUGieVogRa2QzwNUW93U&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJnQIVUGieVogRa2QzwNUW93U&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3eW9EcF9nRRAB",
