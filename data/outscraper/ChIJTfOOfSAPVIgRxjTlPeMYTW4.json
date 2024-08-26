@@ -1,11 +1,12 @@
 {
     "place_name": "Luck Factory Games",
     "place_id": "ChIJTfOOfSAPVIgRxjTlPeMYTW4",
+    "place_description": "Luck Factory Games is the place to have fun at Gibson Mill Market in Concord! Luck Factory Games is a board game cafe featuring more than 1,000 board games of all kinds. We serve light bites, desserts, snacks and beverages (including sodas, tea, craft beers, ciders and wine) for customers to enjoy while they play and relax.",
     "place_rating": 4.9,
     "place_total_reviews": 113,
     "place_google_id": "0x88540f207d8ef34d:0x6e4d18e33de534c6",
     "place_reviews_id": "7948036281653867718",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJTfOOfSAPVIgRxjTlPeMYTW4&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJTfOOfSAPVIgRxjTlPeMYTW4&authuser=0&hl=en&gl=IN",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3bnR1WnFRRRAB",
@@ -80,6 +81,30 @@
             "review_text": "Great place for a chill night playing board games."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkeU9LQ0dnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkeU9LQ0dnEAE!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICdyOKCGg%7CCgwIwfKergYQ-I_jvwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707587905,
+            "review_datetime_utc": "02/10/2024 17:58:25",
+            "review_text": "Love this place! So fun. I do wish they were open later on the weekends though!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROX0lqZDh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROX0lqZDh3RRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgIDN_Ijd8wE%7CCgwIlOP7rQYQ2LbWhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707012500,
+            "review_datetime_utc": "02/04/2024 02:08:20",
+            "review_text": "Awesome collection of games and different varieties, Absolutely Loved it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOenJXanV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOenJXanV3RRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICNzrWjuwE%7CCgwItOqQrQYQ-PrhmAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705260340,
+            "review_datetime_utc": "01/14/2024 19:25:40",
+            "review_text": "Variety of games, nice and entertaining. Upstairs has plenty of food and reminds you of a food truck or mall setting with numerous options. The pizza was great from a local vendor. Parking is very adequate for the building as it was very busy after we got there. Lot of people started trickling in and the entire hall was at capacity. Come early on Saturday like 530ish as you will maybe find a seat or you can reserve one online. There is a good selection of tables and chairs but they can go quick if it's a busy night. The games range from different categories and low to difficult on the game boxes. All games are returned to the table to be checked I assume and placed back where they belong on the shelf. We will return and it is recommended for a neat getaway from the norm."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaclB1RGx3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaclB1RGx3RRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgIDZrPuDlwE%7CCgwIgZv2rAYQ6IH2-gI%7C?hl=en",
             "review_rating": 5,
@@ -112,6 +137,22 @@
             "review_text": "This is the Best Game Store in Charlotte for board games. No magic or war games. Staff are friendly and incredibly knowledgeable."
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwNU5EQjFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwNU5EQjFRRRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICp5NDB1QE%7CCgwIppOSpgYQsJmhnwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690601894,
+            "review_datetime_utc": "07/29/2023 03:38:14",
+            "review_text": "This place ROCKS! I love getting together with friends here when I'm in town. They have a great selection of games, lots of comfortable varied seating, and helpful game guides. If you're into board games, this place is a great visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKM3JuVjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKM3JuVjJRRRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICJ3rnV2QE%7CCgwI4KnupAYQuIb5mQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687917792,
+            "review_datetime_utc": "06/28/2023 02:03:12",
+            "review_text": "Just walked through and admired the selection of games. Can't wait to come back and play games from their library."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4ajZLRXlBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4ajZLRXlBRRAB!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgIDxj6KEyAE%7CCgwIj9W0pAYQiJfzigM%7C?hl=en",
             "review_rating": 5,
@@ -126,6 +167,22 @@
             "review_timestamp": 1684434540,
             "review_datetime_utc": "05/18/2023 18:29:00",
             "review_text": "Totally unique place to play whatever game your heart desires! If you ever have a night where you're not sure what to do or where to go, you need to come to Lucky Factory Games. Only $5 per person and you can play board games, card games, dice games, etc!\nThe staff are also very helpful. They asked us questions to determine what games would be the most fun for us and provided great recommendations for games that we have never even heard of."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4anJTQVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4anJTQVdBEAE!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICxjrSAWA%7CCgsIksaTowYQyPrUNQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684333330,
+            "review_datetime_utc": "05/17/2023 14:22:10",
+            "review_text": "A super cool and creative idea! Fun for all ages and games you haven't seen in years! Snacks are delicious and offer alcohol as well!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4eHJ2OVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eHJ2OVB3EAE!2m1!1s0x0:0x6e4d18e33de534c6!3m1!1s2@1:CIHM0ogKEICAgICxxrv9Pw%7CCgwI7JGOowYQqKHolgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684244716,
+            "review_datetime_utc": "05/16/2023 13:45:16",
+            "review_text": "I have brought my little sister from the big brother big sister program in Cabbarus county a few times! The staff is always extremely helpful in selecting a game! Such a great idea and we always have a good time!"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4d08yeXFBRRAB",
