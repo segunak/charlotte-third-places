@@ -1,0 +1,2011 @@
+{
+    "place_name": "Amelie's Bakery & Cafe | Uptown",
+    "place_id": "ChIJBZnWtyigVogRKk6-Z0WqHx0",
+    "place_rating": 4.6,
+    "place_total_reviews": 4007,
+    "place_google_id": "0x8856a028b7d69905:0x1d1faa4567be4e2a",
+    "place_reviews_id": "2098583166447930922",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJBZnWtyigVogRKk6-Z0WqHx0&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3eHZmUDR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3eHZmUDR3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID7xvfP4wE%7CCgsI_KyktgYQwNndWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724454524,
+            "review_datetime_utc": "08/23/2024 23:08:44",
+            "review_text": "Great vibe walking in, and Kolbi's kind service made it even more enjoyable! Very tasty and amazing to have breakfast options in the neighborhood in the afternoon for us late risers!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3OEtfNU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3OEtfNU53EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID78K_5Nw%7CCgwI37-StgYQ2JCYjwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724162015,
+            "review_datetime_utc": "08/20/2024 13:53:35",
+            "review_text": "This place is an absolute delight! So whimsical  The food was so fresh and tasty and holy moly the marcons were like flavor-blasted little clouds.\n\nThere's plenty of seating, both indoor and outdoor. The vibe is like a mad-hatter tea party in all the best ways, with mismatched tables and chairs and cottegecore decor everywhere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3bDZQRnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3bDZQRnJRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC7l6PFrQE%7CCgwIgdGJtgYQuOaehgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724016769,
+            "review_datetime_utc": "08/18/2024 21:32:49",
+            "review_text": "It's like falling into Wonderland & I loved it! The food was delicious, the atmosphere was fun, and the staff was so friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3cmMyT2J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3cmMyT2J3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC7rc2Obw%7CCgwIlMqFtgYQ0I3CgAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1723950356,
+            "review_datetime_utc": "08/18/2024 03:05:56",
+            "review_text": "Good pastries! Kids loved them. Beautifully decorated! Huge place!\nDrinks weren't good though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3aVlDM3Z3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3aVlDM3Z3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC7iYC3vwE%7CCgwIwpD-tQYQ-JTopwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723828290,
+            "review_datetime_utc": "08/16/2024 17:11:30",
+            "review_text": "This bakery was super cute. I had the breakfast sandwich, chocolate croissant, and caramel iced coffee. Everything was great and they have a wide variety of pastries to pick from!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3dHFmQ1BREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3dHFmQ1BREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC7tqfCPQ%7CCgwIpcD4tQYQ6PqYhAE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1723736101,
+            "review_datetime_utc": "08/15/2024 15:35:01",
+            "review_text": "Cool spot downtown. Food is pretty bad. Got the tiramisu, which turned out to be like a thawing custard...thing? The strawberry lemonade was pure syrup, and the coffee was pretty much waffle house. Tartine with tomato basil was  plain white breat with cheese that was microwaved and soft/soggy"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3a1B2VnF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3a1B2VnF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC7kPvVqwE%7CCgwIsJfjtQYQwMrc2gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1723386800,
+            "review_datetime_utc": "08/11/2024 14:33:20",
+            "review_text": "Good and bad. Coffee was too sweet and tasted artificial. Food was cold. The french dip sandwich barely had roasted beef. French toasts were cold too. The place is really cool gave me Alice in wonderland vibes. Service was good but they got my name wrong for the order. For me it's was a one time thing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURibzRQd3BRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibzRQd3BRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDbo4PwpQE%7CCgwIjpHVtQYQuM_mtgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723156622,
+            "review_datetime_utc": "08/08/2024 22:37:02",
+            "review_text": "Food was tasty"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiM1luWnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiM1luWnp3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDb3YnZzwE%7CCgwIyP3StQYQ-JaP-QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1723121352,
+            "review_datetime_utc": "08/08/2024 12:49:12",
+            "review_text": "Cierra muy temprano 5pm"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURibGZ6ZXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibGZ6ZXR3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDblfzetwE%7CCgwIntvOtQYQkL763gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723051422,
+            "review_datetime_utc": "08/07/2024 17:23:42",
+            "review_text": "The place had the best macarons I've ever had. I highly recommend the peanut butter jelly macaroon. The place was very spacious and well themed, even the bathroom was on theme!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiN3AtVnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiN3AtVnpnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDb7p-VzgE%7CCgwI0KLEtQYQkJuYzgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722880336,
+            "review_datetime_utc": "08/05/2024 17:52:16",
+            "review_text": "I really like the way it's decorated, it's a very unique look. The bakery is pretty clean and the food is pretty good as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiNG8yNFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNG8yNFZnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDb4o24Vg%7CCgsIwbW5tQYQwMzZQg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722702529,
+            "review_datetime_utc": "08/03/2024 16:28:49",
+            "review_text": "Amelie's Uptown French Bakery and Cafe is a fantastic spot with amazing pastries and sandwiches. The fun atmosphere adds to the charm of this delightful bakery. Tried the creme brulee and the Chocolate Eclair, and both were absolutely delicious. If you're in the area, this place is a must-visit for a delightful French treat!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURid05MRUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURid05MRUh3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDbwNLEHw%7CCgwIu76qtQYQiOGJuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722457915,
+            "review_datetime_utc": "07/31/2024 20:31:55",
+            "review_text": "Such a great little gem to have found! Loved the atmosphere and the macarons were amazing! Plus it's connected to a Boba Tea Shoppe and the combination was just *chef's kiss*"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiZ0oyYnV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiZ0oyYnV3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDbgJ2buwE%7CCgwI7aOqtQYQ4NPKmgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722454509,
+            "review_datetime_utc": "07/31/2024 19:35:09",
+            "review_text": "I got a croissant, tart, and caramel brownie which were all very good. This place looks very cool inside. I think it's worth the price"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNmVuX2l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNmVuX2l3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICb6en_iwE%7CCgwI0dmatQYQuOKKmwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722199249,
+            "review_datetime_utc": "07/28/2024 20:40:49",
+            "review_text": "French Nostalgia Bakery Design With Excellent Customer Service And Freshly Baked Treats !"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNibm95QWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNibm95QWlnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICbnoyAigE%7CCgwIiLqTtQYQuJK12AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722080520,
+            "review_datetime_utc": "07/27/2024 11:42:00",
+            "review_text": "Really great atmosphere to crab a quick lunch or sweet snack. Chicken salad is delicious. My friends ordered eclair and mini chocolate cake and they both raved about them. Service was quick. Plenty of seating.  Bathrooms are well maintained. I would definitely go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyNGNxVTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyNGNxVTZnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDr4cqU6gE%7CCgwIg6CRtQYQ0OakjgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722044419,
+            "review_datetime_utc": "07/27/2024 01:40:19",
+            "review_text": "Soooooo good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNibHV1dTh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNibHV1dTh3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICbluuu8wE%7CCgwIwe6PtQYQyPfm1gE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1722021697,
+            "review_datetime_utc": "07/26/2024 19:21:37",
+            "review_text": "Refused service as they were \"closed for an event\". There was no one in the store. Won't be getting money from me"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNicHRTcFp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNicHRTcFp3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICbptSpZw%7CCgwI7dmOtQYQoKPn8AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722002669,
+            "review_datetime_utc": "07/26/2024 14:04:29",
+            "review_text": "Charming, quirky and delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZMmRYVHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZMmRYVHNnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICY2dXTsgE%7CCgwInamKtQYQkOOO8AI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1721930909,
+            "review_datetime_utc": "07/25/2024 18:08:29",
+            "review_text": "Update 7.25.24 - Just recently returned to work in uptown Charlotte after being away for over 3 years.  Was nice to see that Amelie's is still here.  But today after ordering a turkey wrap I feel like I got robbed.\n\nDry wrap, could barely find the turkey and feel like I was just eating a lettuce sandwich!!!  Not the quality that I have come to expect from Amelie's.\n\nLook at picture.....where the hell is the turkey?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyX2JtcWNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyX2JtcWNREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDr_bmqcQ%7CCgsI7e_ptAYQ8M6nJw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1721399277,
+            "review_datetime_utc": "07/19/2024 14:27:57",
+            "review_text": "The ambiance in this bakery was pretty awesome! It's super clean & they offer a variety of different desserts & pastries. The staff was super nice! I purchased several different desserts; however, the products were pricey & didn't taste half as good as they looked. This was my first visit, and I'm pretty certain it was also my last."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURydnRmNUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURydnRmNUdREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDrvtf5GQ%7CCgwI6OrgtAYQqMy1vgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721251176,
+            "review_datetime_utc": "07/17/2024 21:19:36",
+            "review_text": "Above perfection\nDecadent"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyaE9iMzh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyaE9iMzh3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDrhOb38wE%7CCgwIn8DQtAYQgPS1lgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720983583,
+            "review_datetime_utc": "07/14/2024 18:59:43",
+            "review_text": "This is a cool bakery and cafe with a funky aesthetic conveniently located in Downtown Charlotte. Good food and coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyb01iMlh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyb01iMlh3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDroMb2Xw%7CCgwIyeHGtAYQgNqmjQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1720824009,
+            "review_datetime_utc": "07/12/2024 22:40:09",
+            "review_text": "Checked out this famous French bakery in Charlotte everyone's been talking about. The place has this quirky, unique vibe with tons of seating and even space for group parties.\n\nWe went for the croissant, Key Lime Tart, and another Tart (can't remember the other tart we got, oops), and the Bacon, Egg and Cheese Biscuit. Pretty typical French bakery stuff - a bit rich and sweet.\n\nHonestly, the food was good, but the real star was the atmosphere. There's so much to look at while you're eating, it's like a mini adventure. Definitely what sets this place apart.\n\nSolid spot for breakfast - we left happy and full!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNydF9IMVFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydF9IMVFBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICrt_H1QA%7CCgwI2bvCtAYQiMvchAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720753625,
+            "review_datetime_utc": "07/12/2024 03:07:05",
+            "review_text": "Great coffee! Great pastries! Amazing food!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeF9mZnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeF9mZnRRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICrx_fftQE%7CCgwIooDBtAYQgL2OtAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720729634,
+            "review_datetime_utc": "07/11/2024 20:27:14",
+            "review_text": "Very unique place, the decor is amazing. Really spacious interior, plenty of places to sit and enjoy. Croque Monsieur croissant sandwich was delicious, Cafe Au Lait was excellent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyOGNXOUxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyOGNXOUxREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICr8cW9LQ%7CCgwIl8yvtAYQwIKSzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720444439,
+            "review_datetime_utc": "07/08/2024 13:13:59",
+            "review_text": "Excellent espresso and macarons! The lavender lemon macaron may be the best one I've ever eaten. The atmosphere is serene and the decor is fun."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyZ29qZHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyZ29qZHNRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICrgojdsQE%7CCgwIwP6dtAYQ-JHGiQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720155968,
+            "review_datetime_utc": "07/05/2024 05:06:08",
+            "review_text": "The pastry was fresh light and delicious. Staff was pleasant and ready to help....excellent experience"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMcDg2c3JnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMcDg2c3JnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLp86srgE%7CCgwIqo2MtAYQ6PD8wgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1719862954,
+            "review_datetime_utc": "07/01/2024 19:42:34",
+            "review_text": "I was there for an event in the private dining.  Food was great, patisserie was delicious.\nFor normal dining though it's all kind of queued lines and order at the counter. No dining service although there was a decent dining area.\nIt looked like a place that changed from being a sit down restaurant bakery to a grab and go post-covid restaurant.\nI would still recommend it for breakfast, but it isn't a served dining experience"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMeV9LN2RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMeV9LN2RnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLy_K7dg%7CCgwI4seHtAYQyMGUpAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719788514,
+            "review_datetime_utc": "06/30/2024 23:01:54",
+            "review_text": "The store is a branch location, so it doesn't have a wide variety of items. However, the products they do have are of good quality and the staff is friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMODdfbk9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMODdfbk9nEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDL87_nOg%7CCgoI7PCGtAYQqMpS%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719777388,
+            "review_datetime_utc": "06/30/2024 19:56:28",
+            "review_text": "Cool, vibrant space with great baked goods and breakfast choices"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMbmQtMVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMbmQtMVlREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLnd-1YQ%7CCgwI9NmBtAYQ4Ojo5AE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1719692532,
+            "review_datetime_utc": "06/29/2024 20:22:12",
+            "review_text": "Stopped in as we were passing through. We were hoping for cheesecake as advertised but instead we got a \"brownie cheesecake\" that was nothing more than a very hard, cold brownie that crumbled into pieces once you bite down.  It was even too hard to cut with a fork!  There was nothing \"cheese cake\" about it!  Disappointed.  I would not recommend going by the Google ad for Amelie's.  It's not accurate. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMc2ZhTmx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMc2ZhTmx3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLsfaNlwE%7CCgwI4_36swYQgL_O1gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1719582435,
+            "review_datetime_utc": "06/28/2024 13:47:15",
+            "review_text": "French??? If you love negative space (upon entering) and dry/try to resemble a French pastry and a quiche that has a layer/topping of cheese this is your place. Upon ordering the breakfast wrap, the response was sorry, we are out of potatoes, OK....so how about your yogurt granola, sorry we're out of yogurt OK... I gave it one star for their coffee, but then how can you go wrong with a push button coffee machine? C'est la vie."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMdnUtcF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMdnUtcF9nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLvu-p_gE%7CCgsIktT4swYQ-ObPRQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719544338,
+            "review_datetime_utc": "06/28/2024 03:12:18",
+            "review_text": "Looking for a delightful breakfast spot in Uptown Charlotte? Look no further than Amelie's French Bakery & Cafe! This hidden gem is a true diamond in the rough, offering delicious pastries, fast service, and a charming atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMa3ZtdnRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMa3ZtdnRnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLkvmvtgE%7CCgwI4OzwswYQsLf2rwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719416416,
+            "review_datetime_utc": "06/26/2024 15:40:16",
+            "review_text": "This place has been here a while and they have some really good food and beverages.\nGreat experience except for the person making Drinks on Sunday 6/23 around 2pm. No personality and that detracts from the overall experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMOVBPZlJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMOVBPZlJ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDL9POfRw%7CCgwI4fjsswYQwOaVtAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1719352417,
+            "review_datetime_utc": "06/25/2024 21:53:37",
+            "review_text": "Lekker eten en drinken overdag"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMaEx2M0JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMaEx2M0JnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLhLv3Bg%7CCgwI9-fqswYQgKvF-gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719317495,
+            "review_datetime_utc": "06/25/2024 12:11:35",
+            "review_text": "Incredible food in a tres magnific setting.  I thoroughly enjoyed the spinach asparagus leek soup and salad, so much so that I went back for more the next day!  The gluten free caramel brownie was scrumptious and so was the chai.  Decent prices.  Counter Service.  Gluten free options."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMb002ZHJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMb002ZHJnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLoM6drgE%7CCgwIi6TmswYQ-NCAwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719243275,
+            "review_datetime_utc": "06/24/2024 15:34:35",
+            "review_text": "Dining here transported me back to my trip to Paris. Great food and ambience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMd0lUM2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMd0lUM2xRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDLwIT3lQE%7CCgwIxPTlswYQoOe24AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1719237188,
+            "review_datetime_utc": "06/24/2024 13:53:08",
+            "review_text": "A oublier tres vite... Pas de service, plats du petit dejeuner insipide, une ambiance \"cantine\" et la deco tres kitsch qui se veut \"d'inspiration francaise\". Bref, une caricature mais ou de surcroit les produits ne sont vraiment pas top : oeufs du petit dejeuner secs, pain au chocolat (a 4 US) avec une pate non feuilletee a fort gout de levure et en sous cuisson, etc,etc...\nPassez votre chemin et ne vous fiez pas aux commentaires positifs qui ne voient pas vraiment la realite du produit !"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMdmNpMnl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMdmNpMnl3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLvci2ywE%7CCgsIgffaswYQqM-Pdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719057281,
+            "review_datetime_utc": "06/22/2024 11:54:41",
+            "review_text": "Great spot for coffee and breakfast! Brought home a lot of pastries."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMcGJleEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMcGJleEdBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLpbexGA%7CCgwIo4fXswYQsMKCjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718993827,
+            "review_datetime_utc": "06/21/2024 18:17:07",
+            "review_text": "Been here a few times and the food and staff are really great. Also the atmosphere is fun as well! Definitely recommend the celery seed dressing if you get a salad. Yum."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMeWZTT3RRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMeWZTT3RRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLyfSOtQE%7CCgsIiNzRswYQ4Ka5AQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1718906376,
+            "review_datetime_utc": "06/20/2024 17:59:36",
+            "review_text": "Helpful customer service, clean, quiet, inviting."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMX291VmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMX291VmhRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICL_ouVhQE%7CCgwI5s3MswYQuNCeugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718822630,
+            "review_datetime_utc": "06/19/2024 18:43:50",
+            "review_text": "Tasty, fun, fast and affordable! This is one of the best Bakeries I've ever been to. The interior decor is incredibly charming and there's plenty of seating. The staff is friendly and helpful."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMbHNxNkdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMbHNxNkdBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLlsq6GA%7CCgwI--PHswYQyPPe5wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718743547,
+            "review_datetime_utc": "06/18/2024 20:45:47",
+            "review_text": "Nice pastries and ambiance, staff though always appear overwhelmed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMdklPRlRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMdklPRlRnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLvIOFTg%7CCgwIldS8swYQyJ3-0gM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718561301,
+            "review_datetime_utc": "06/16/2024 18:08:21",
+            "review_text": "They run out of croissants way to quick and are not prepared for the late morning rush. But when you are able to get one, they are divine!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMdkx6bzBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMdkx6bzBRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICLvLzo0QE%7CCgsI2q-8swYQiN2wZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718556634,
+            "review_datetime_utc": "06/16/2024 16:50:34",
+            "review_text": "Their chicken salad on a baguette was immaculate."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6djVtc3NRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6djVtc3NRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDzv5mssQE%7CCgsIhJqtswYQ2Oi8Hg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718308100,
+            "review_datetime_utc": "06/13/2024 19:48:20",
+            "review_text": "The atmosphere was really good, I loved the DJ and vibes this place gave me."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6b2NIUzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6b2NIUzRBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDzocHS4AE%7CCgwIoeKcswYQ-L2I-gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718038817,
+            "review_datetime_utc": "06/10/2024 17:00:17",
+            "review_text": "The atmosphere alone is worth it, which is particularly enjoyable on a slow day. The coffee and pastries are also top notch. Recommended stop for anyone visiting Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6cF9xNndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6cF9xNndRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICzp_q6wQE%7CCgwIxLaDswYQ0Mr22gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717623620,
+            "review_datetime_utc": "06/05/2024 21:40:20",
+            "review_text": "What a gem! They bake on site, the people are nice and patient, and the decor is so much fun! They even have a guest book to sign.\n\nThe pastries are fantastic!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6eDctQ0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6eDctQ0V3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICzx7-CEw%7CCgwIo5qDswYQkL2G7AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717620003,
+            "review_datetime_utc": "06/05/2024 20:40:03",
+            "review_text": "I ordered a lemon bar and a small fruit tart. The tart was delicious but the lemon bar was lacking. The base of it was hard and almost gummy, and I had to force my fork through it just to break pieces off. I wouldn't discount this cafe, though, it just seems like I ordered the worst thing off an otherwise great menu."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6LTlyWVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6LTlyWVh3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICz-9rYXw%7CCgsI0O-BswYQkMPFBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717598160,
+            "review_datetime_utc": "06/05/2024 14:36:00",
+            "review_text": "We loved our cafe lattes and fresh chocolate croissants!   And just as wonderful were the beautiful, whimsical decor and lively French music.  There are 3 floors of fabulous seating options all surrounded by lovely and fun artwork, friendly staff and a very nice assortment of pastries.  We also selected a box of colorful macarons to bring to our hosts for dinner at their home that evening.  Everyone enjoyed them!  This bakery is a must  for all visitors to Charlotte or residents "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6c1oyV0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6c1oyV0ZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICzsZ2WFQ%7CCgsIpNjzsgYQ0K3hBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717365796,
+            "review_datetime_utc": "06/02/2024 22:03:16",
+            "review_text": "Great place to grab some brunch and pastries. Super flavorful and at an okay price point for its location downtown. It does get pretty busy on the weekends and the parking is not so great. So be prepared to walk a little, or pay to park. Or just drive around a bit, people will leave and you can park right outside. There's inside ama outside dining, both areas are great and enjoyable."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6a1pUaXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6a1pUaXVRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICzkZTiuQE%7CCgsIh-_ysgYQwP61Aw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717352327,
+            "review_datetime_utc": "06/02/2024 18:18:47",
+            "review_text": "Cute gem in uptown Charlotte. Macarons and key lime pies were both so AMAZING"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUMC12d3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUMC12d3ZnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDT0-vwvgE%7CCgwIjNTSsgYQoJj8jAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716824588,
+            "review_datetime_utc": "05/27/2024 15:43:08",
+            "review_text": "Dude this place is amazing!!! Ben at the front was very friendly and helpful with telling me what each pastry taste like and he was so patient with me. Those fresh fruit tarts are divine and I'm so grateful for his recommendation. Can't wait to come back and try a different one!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbDdDUVJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbDdDUVJBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTl7CQRA%7CCgsIxOaqsgYQiLL5Dg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716171588,
+            "review_datetime_utc": "05/20/2024 02:19:48",
+            "review_text": "Breakfast was spectacular. And the pastries were delicious as well. I ordered the brioche French toast with berries and loved every bite. I went back after lunch and ordered two of the tarts to go. The key lime tart was the perfect sour & sweet ratio."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUcDdMOVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUcDdMOVZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTp7L9VQ%7CCgwI0e-psgYQ6I2IxwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716156369,
+            "review_datetime_utc": "05/19/2024 22:06:09",
+            "review_text": "Hey yo, I loved the Lavender Iced Coffee.  It was delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUaF91OGx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUaF91OGx3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTh_u8lwE%7CCgsIvqGpsgYQwISnMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716146366,
+            "review_datetime_utc": "05/19/2024 19:19:26",
+            "review_text": "Went to a family wedding brunch this morning and everything was amazing!!  Great food, great service, and wonderful atmosphere!!  Definitely recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMDkta0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMDkta0ZBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICT09-kFA%7CCgwI0dKksgYQuOT80AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716070737,
+            "review_datetime_utc": "05/18/2024 22:18:57",
+            "review_text": "The closest to France I'll probably ever get! The drinks were good, the cheese was amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0MmZlWEhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0MmZlWEhREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC42feXHQ%7CCgwI3OyesgYQyLum8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715975772,
+            "review_datetime_utc": "05/17/2024 19:56:12",
+            "review_text": "Pricey for portions, but definitely try the salted caramel brownies."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUaFpPRlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUaFpPRlhREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICThZOFXQ%7CCgwI_9yasgYQkOfZogE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715908223,
+            "review_datetime_utc": "05/17/2024 01:10:23",
+            "review_text": "The tarts are the best thing! Especially the mini tarts- they're the perfect little bite!\nEverything else was yummy but not to die for."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUdWVIU25nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUdWVIU25nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTueHSngE%7CCgwIwruZsgYQ0MGa0AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715887554,
+            "review_datetime_utc": "05/16/2024 19:25:54",
+            "review_text": "Delicious food and quick service. The baked goods are particularly nice, I was partial to the Macarons."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMlpuMUxnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMlpuMUxnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICT2Zn1Lg%7CCgwI44iZsgYQuLGsoAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1715881059,
+            "review_datetime_utc": "05/16/2024 17:37:39",
+            "review_text": "Pretentious. Rude staff. Food is overpriced and quality is sub par."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUa1lfcDdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUa1lfcDdBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTkY_p7AE%7CCgwIwe2UsgYQ4MeZ_wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715812033,
+            "review_datetime_utc": "05/15/2024 22:27:13",
+            "review_text": "One of my favorite spots in Charlotte. I wish they kept the chicken pot pie soup year round!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUeHNtaXhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUeHNtaXhRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTxsmixQE%7CCgwIk9CLsgYQ4Nmg1AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715660819,
+            "review_datetime_utc": "05/14/2024 04:26:59",
+            "review_text": "Adorable little spot and it had great coffee and delicious treats what more can you want?! I felt like I was in a movie"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbXNqQ0FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbXNqQ0FnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTmsjCAg%7CCgwI0sKIsgYQ2P-k2AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715609938,
+            "review_datetime_utc": "05/13/2024 14:18:58",
+            "review_text": "Amazing dessert and service, the staff are super helpful and friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUc3JDTEN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUc3JDTEN3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTsrCLCw%7CCgwI4ruFsgYQ2MP7mAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715559906,
+            "review_datetime_utc": "05/13/2024 00:25:06",
+            "review_text": "This is a fun place and it is big inside. We split a $6 piece of cake. The black coffee is about the same price as an espresso drink. The French theme seems to be the pastries? Lots of eclectic art and furniture pieces."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUb3ZLMml3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUb3ZLMml3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICTovK2iwE%7CCgsIpsKDsgYQqKTPIQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715527974,
+            "review_datetime_utc": "05/12/2024 15:32:54",
+            "review_text": "Fantastic! Best French bakery you'll find in the South."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUMkl6aWxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUMkl6aWxRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICT2IzilQE%7CCgsIqsP5sQYQwIzmKQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715364266,
+            "review_datetime_utc": "05/10/2024 18:04:26",
+            "review_text": "Charming atmosphere. The food was decent. I got the French dip sandwich, was it amazing? No. It was lacking..... je ne sais quo."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqdDRtdHdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqdDRtdHdRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDjt4mtwQE%7CCgwIh__zsQYQkIqwtAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715273607,
+            "review_datetime_utc": "05/09/2024 16:53:27",
+            "review_text": "Best macarons in town!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqX2JiYjVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqX2JiYjVBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDj_bbb5AE%7CCgsIscrksQYQ-I6GdQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715021105,
+            "review_datetime_utc": "05/06/2024 18:45:05",
+            "review_text": "We had the tiramisu, a few macaroons, salted caramel brownie, creme brulee everything was the best thing\nI've ever tasted"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqdGJ1bFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqdGJ1bFR3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDjtbulTw%7CCgwI8ZrgsQYQyISw2QE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1714949489,
+            "review_datetime_utc": "05/05/2024 22:51:29",
+            "review_text": "We ordered a decorated cake over the phone and the staff member was helpful and pleasant. When we picked it up, it looked lovely, just like the website picture.  No one enjoyed eating it, though, saying it was \"slightly edible\" and \"not as good as a boxed cake from the supermarket\"."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqaVphRzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqaVphRzRBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDjiZaG4AE%7CCgwIjsHZsQYQ4KXG2AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714839694,
+            "review_datetime_utc": "05/04/2024 16:21:34",
+            "review_text": "Wonderful pastries and coffee with friendly helpful staff and a great atmosphere!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqOHBudE93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqOHBudE93EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDj8pntOw%7CCgwIq4bJsQYQ-MDlsQE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1714570027,
+            "review_datetime_utc": "05/01/2024 13:27:07",
+            "review_text": "Unbelievably slow making the coffee so out of boredom you eat the croissant beforehand albeit it's very good.   If you have hours to spend waiting for your morning coffee this is the place, if not look elsewhere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqeUpiajlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqeUpiajlnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDjyJbj9gE%7CCgwIjIa6sQYQgIbJ3gI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1714324236,
+            "review_datetime_utc": "04/28/2024 17:10:36",
+            "review_text": "The coffee was ok and the food menu looked typical for a cafeteria-style coffee shop.\n\nPeople seemed to like it, especially families, but the atmosphere was a bit off...the interior design wanted to be quirky Parisian but it felt like I was in the proper room for a community theatre...\n\nOn the plus side, the wifi was good and bathroom was clean!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqMzVlRUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqMzVlRUJREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICj35eEBQ%7CCgsI_Ma0sQYQyN2bZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714234236,
+            "review_datetime_utc": "04/27/2024 16:10:36",
+            "review_text": "Amazing food and service. The atmosphere is very nice and relaxed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqcF9TVy1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqcF9TVy1BRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjp_SW-AE%7CCgwI1_2usQYQkNfd2gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1714142935,
+            "review_datetime_utc": "04/26/2024 14:48:55",
+            "review_text": "The breakfast biscuit was a bland, the chocolate croissant was lacking, the strawberry cheese croissant was just okay.  The coffee was good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqczdlNlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqczdlNlhREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjs7e6XQ%7CCgsIhuypsQYQ2IGPcA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714058758,
+            "review_datetime_utc": "04/25/2024 15:25:58",
+            "review_text": "A cute little cafe with a very charming and quirky atmosphere! The staff is very friendly and wonderfully LGBTQ friendly, the prices are reasonable, and the food is good! I highly recommend the pecan pull-apart."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqMFp5LUlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqMFp5LUlREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICj0Zy-IQ%7CCgwIqp6bsQYQuPfChgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713819434,
+            "review_datetime_utc": "04/22/2024 20:57:14",
+            "review_text": "Inviting. Food options typical of French bakery."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqenJpMkVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqenJpMkVREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjzri2EQ%7CCgwI4_mUsQYQ0KibhwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713716451,
+            "review_datetime_utc": "04/21/2024 16:20:51",
+            "review_text": "This place is a real example of our recent times \"A not remarkable food experience within a place that is amazingly decorated and fully inspiring for social network photos\" ... do not go here if you are looking for a great French food but if you want to take photos :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqaXFqTDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqaXFqTDF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjiqjL1wE%7CCgwIoN2LsQYQ0Nr4mgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713565344,
+            "review_datetime_utc": "04/19/2024 22:22:24",
+            "review_text": "I enjoyed the atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqek1fenJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqek1fenJBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjzM_zrAE%7CCgwIot6EsQYQiPuEnAE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1713450786,
+            "review_datetime_utc": "04/18/2024 14:33:06",
+            "review_text": "Over priced and nothing special about the bakery!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqZ0l6R093EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqZ0l6R093EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICjgIzGOw%7CCgwIneH5sAYQiNO4lwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713270941,
+            "review_datetime_utc": "04/16/2024 12:35:41",
+            "review_text": "Great place to have a coffe, bread, \"macarronis\" and something more, location so strategic at downtown of Charlotte and the local is spectacular decorated. I liked this City, I hope to know more next time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREdC1tNkx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREdC1tNkx3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDt-m6Lw%7CCgwIj_H0sAYQgOflvwE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713191055,
+            "review_datetime_utc": "04/15/2024 14:24:15",
+            "review_text": "The atmosphere is great, and the food is good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREamZLVkhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREamZLVkhBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDjfKVHA%7CCgwIr9flsAYQiPfp3AE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1712941999,
+            "review_datetime_utc": "04/12/2024 17:13:19",
+            "review_text": "Good food, horrendously slow. Not well equipped for peak times"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURELVpqRjJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURELVpqRjJnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDD-ZjF2gE%7CCgsIjtXgsAYQ6I2XSw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712859790,
+            "review_datetime_utc": "04/11/2024 18:23:10",
+            "review_text": "So cute"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREa2IyT2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREa2IyT2VBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDkb2OeA%7CCgwI4drbsAYQ8NqUqQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1712778593,
+            "review_datetime_utc": "04/10/2024 19:49:53",
+            "review_text": "This was a charming little place. I would definitely try it again. The food is very good.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREb1p2OGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREb1p2OGZ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDoZv8fw%7CCgwI9NzasAYQ6KehoAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712762484,
+            "review_datetime_utc": "04/10/2024 15:21:24",
+            "review_text": "Not too many options for coffee, but wonderful pastries. The vibe is a 10/10 with quirky historical references / decorations!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREZ2VyYm1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREZ2VyYm1BRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDgerbmAE%7CCgsInbfZsAYQ6Mffcg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712741277,
+            "review_datetime_utc": "04/10/2024 09:27:57",
+            "review_text": "Discovered the place while driving through the city, very happy with the choice. Finally got to have great coffee on my week long trip, thank you so much! Pastry was delicious especially the pecan pie, I regret choosing a small one, I should have gotten the larger one. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREcXBiSVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcXBiSVd3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDqpbIWw%7CCgsIk4vNsAYQwOiaRg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1712539027,
+            "review_datetime_utc": "04/08/2024 01:17:07",
+            "review_text": "I ordered the chicken salad and I just didn't care for it. The quiche wasn't ready to serve for half an hour longer. We were preparing to leave Charlotte to travel home and waiting wasn't possible. The atmosphere was nice and really very cool! We enjoyed the creme brule, though!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREeXVDY3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREeXVDY3lRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDyuCcyQE%7CCgwIjqrMsAYQ6JbxpgI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1712526606,
+            "review_datetime_utc": "04/07/2024 21:50:06",
+            "review_text": "I can get nitpicky about french cuisine and my daughter has high expectations for macarons. We were disappointed. The highlight was the atmosphere. The eclectic mix of stereotypical french things was cute. Lots of american fare with some traditional french items. The search continues..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREaXJQZ2p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREaXJQZ2p3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDDirPgjwE%7CCgwIrpvMsAYQ0K_uswI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712524718,
+            "review_datetime_utc": "04/07/2024 21:18:38",
+            "review_text": "Great service and food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREM0xta2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREM0xta2VBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDD3LmkeA%7CCgwI7_bGsAYQuP2fjgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712438127,
+            "review_datetime_utc": "04/06/2024 21:15:27",
+            "review_text": "Experienced the worst service on Saturday, April 6th. The guy \"for pastries\" was loud, annoying and  careless, no care about the customers. The girl on the register looked like \"I am sick of all of you, leave me alone\", didn't listen and never asked if I am in reward program, and when I mentioned it, it was too late for her. The guy who made coffee gave me a paper cup when I had clearly asked for a mug.\nBy 3 pm they didn't have pastries left, empty counters. A long line of customers, the staff tried to manage it, but lost quality of service completely."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURENU5fTGh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURENU5fTGh3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDD5N_LhwE%7CCgwI2JnCsAYQ-MvquQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712360664,
+            "review_datetime_utc": "04/05/2024 23:44:24",
+            "review_text": "Very unique and distinctive place to enjoy authentic french bake plus good desert and coffee latte or lovely espresso. Highly recommended. Also fine selection of traditional french sandwich"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEXzhDb25nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEXzhDb25nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICD_8CongE%7CCgwImfO3sAYQ8L6MkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712191897,
+            "review_datetime_utc": "04/04/2024 00:51:37",
+            "review_text": "I ordered the Tuxedo cake for a celebration. It was one of the best chocolate cakes I ever had. All of their pastries are amazing!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEczRfZE1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEczRfZE1REAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICDs4_dMQ%7CCgwI6rqqsAYQ6MDMhAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711971690,
+            "review_datetime_utc": "04/01/2024 11:41:30",
+            "review_text": "Excellent and authentic French pastries and baked goods. Wonderful sandwiches and great coffee! Service was excellent and atmosphere very cool. A gem in the heart of Uptown Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEc1lfQ1hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEc1lfQ1hBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICDsY_CXA%7CCgwI-cKbsAYQ-P74iAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711726969,
+            "review_datetime_utc": "03/29/2024 15:42:49",
+            "review_text": "I ordered my late to have it with mug and enjoy with the almond croissant, the guy who made the late handed me with a to go cap instead of a mug which I preferred to have my latte with, and when I told him I ordered it with a mug, he told me all the mugs are dirty and with take it or leave it attitude. I was so upset and I told him again I want my coffee with a clean mug, he grab the dirty cup and pore my late into it and he handed me the rest with the cup. So unprofessional and disrespectful. I don't recommend it at all."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkNkxDOUxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkNkxDOUxBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDd6LC9LA%7CCgwI7NiNsAYQgIbcsQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711500396,
+            "review_datetime_utc": "03/27/2024 00:46:36",
+            "review_text": "Otvratitel'nyi zamorozhennyi \"Napoleon\", kotoryi dazhe spustia polchasa nevozmozhno est'.\nPlastikovye pribory \nNet tarelok!! Ves' zakaz slozhen na bliude i dal'she kushaite kak khotite - my ispol'zovali salfetki vmesto bliudets. Vpervye vizhu takoe v kafe.\nInter'er ne imeet nichego obshchego s frantsuzskim - eto Alisa v strane chudes, kotoryi spustia polchasa svoim sinim tsvetom vyzyvaet golovnuiu bol'. Vypechka tozhe daleka ot frantsuzskoi, zato tseny na urovne.\nSpasibo, bol'she my siuda ne pridem."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxNnJpZ1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxNnJpZ1hREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC16rigXQ%7CCgwIgJmMsAYQuMyK1QE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1711475840,
+            "review_datetime_utc": "03/26/2024 17:57:20",
+            "review_text": "the squad and i pulled up super hyped but were utterly disappointed. i ordered a chocolate croissant but it was cold and flavor was mid. my homie said their food was also not worth the money. they had to buy more food bc they were still hungry AND they didnt even get all of their food the first time. they had to go up and ask for the rest like a pathetic beggar. big L. apple cider is bussin tho."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEOVBHVmxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEOVBHVmxBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICD9PGVlAE%7CCgsIhOSDsAYQ8JnuMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711337988,
+            "review_datetime_utc": "03/25/2024 03:39:48",
+            "review_text": "Love coming here and so many different desserts to pick from"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEMU9LN3h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEMU9LN3h3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICD1OK7xwE%7CCgoIqLqCsAYQsOoB%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711316264,
+            "review_datetime_utc": "03/24/2024 21:37:44",
+            "review_text": "Unbelievable experience, fun place to eat. Great food unbelievable decor, it's like a museum. You want go wrong, menu has something for everyone. And a great bar and coffee as well. I promise. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEbEtTb0VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEbEtTb0VREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICDlKSoEQ%7CCgwI0vSBsAYQ6JrqnQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711307346,
+            "review_datetime_utc": "03/24/2024 19:09:06",
+            "review_text": "Soooooooooo yummy!! Everything!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNENUxYN25nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNENUxYN25nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICD5LX7ngE%7CCgsIjtqBsAYQ6IGwRA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711303950,
+            "review_datetime_utc": "03/24/2024 18:12:30",
+            "review_text": "Had a screaming good time! *This post may have been brought to you from being under the influence of a Cafe Fouette*"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5bl9fdEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bl9fdEZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9n__tFQ%7CCgwIwan3rwYQiLb2zgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711133889,
+            "review_datetime_utc": "03/22/2024 18:58:09",
+            "review_text": "French Bakery in Uptown Charlotte\nAll kind of pastries and coffee combinations\nBreakfast Lunch or Dinner\nEverything is special"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5Mi1uQkNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5Mi1uQkNBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID92-nBCA%7CCgwI09DwrwYQqOfLhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711024211,
+            "review_datetime_utc": "03/21/2024 12:30:11",
+            "review_text": "A perfect spot for hanging out and for me was to write. So many amazing little details. Monte Cristo sandwich was yummy!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5alo2VktREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5alo2VktREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9jZ6VKQ%7CCgwI4KPnrwYQ-M3engM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710871008,
+            "review_datetime_utc": "03/19/2024 17:56:48",
+            "review_text": "Can be very busy depending on what is going on, service is better when the staff is not as overwhelmed but this is a regular stop when I am in the area. Pastries are to die for!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5MGJHRjFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5MGJHRjFRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID90bGF1QE%7CCgwI3NzdrwYQ4JmF7wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710714460,
+            "review_datetime_utc": "03/17/2024 22:27:40",
+            "review_text": "Always good, always consistent with food and service! One of my favorite gems in uptown."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5b2N2dWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5b2N2dWdRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9ocvugQE%7CCgwIqqXcrwYQ2JvVsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710690986,
+            "review_datetime_utc": "03/17/2024 15:56:26",
+            "review_text": "After about a year of looking for it, it was right here. The best Iced Chai my taste buds have had the chance of meeting. The moment I took my first sip, I knew no other Chai would taste the same. Every Chai I drink will be held up to Amelie's Standard. And to the barista who made my Chai, thank you. Word cannot describe the gift you have given me in receiving this Chai. May the world bless you as you have blessed me. 10/10 would come again"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5dHFPRlRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5dHFPRlRnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9tqOFTg%7CCgsI4tTWrwYQ6MCNHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710598754,
+            "review_datetime_utc": "03/16/2024 14:19:14",
+            "review_text": "The salted brownie doesn't disappoint! We stopped for a coffee and treats and it was all delicious. We also recommend the croissants and fruit tart"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5dE9DRUNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5dE9DRUNnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9tOCECg%7CCgsIg8nHrwYQ2KSKUg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710351491,
+            "review_datetime_utc": "03/13/2024 17:38:11",
+            "review_text": "I love everything about this place and wish it was in my hometown!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5MUxpSENnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5MUxpSENnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID91LiHCg%7CCgwI95XHrwYQoIa2zAI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1710344951,
+            "review_datetime_utc": "03/13/2024 15:49:11",
+            "review_text": "Seems like folks really enjoy this place, though we sadly did not really find it worth be it. I would not recommend this place at all.\n\nBreakfast sandwich that my fiance got was tasty enough, but I ordered a croque monsieur and one of their specialty coffees that were not in anyway served as advertised. The cheese on the croque monsieur was not melted at all; it seemed like it was barely microwaved, and the ham looked like deli ham out of a local grocery store. (I did order it on GF bread, which should not actually impact the melting of cheese.) The coffee was just.. bad."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5cUpXYW1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5cUpXYW1nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9qJWamgE%7CCgwImujCrwYQwNSchwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1710273562,
+            "review_datetime_utc": "03/12/2024 19:59:22",
+            "review_text": "Awesome ambience. Ordered: Muffin, Cookie, Cappuccino and a Lemonade. Food was good. The Cappuccino was average, I have tasted much better elsewhere. Service was OK, not matching with the ambience. Not a place I would like to revisit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5eUl5MllBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5eUl5MllBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9yIy2YA%7CCgwI66fCrwYQuLv2ogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710265323,
+            "review_datetime_utc": "03/12/2024 17:42:03",
+            "review_text": "Great selection of pastries and sandwiches. Quite busy on a Sunday though!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5aU4taE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5aU4taE5nEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9iN-hNg%7CCgwImp7CrwYQyKeKwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710264090,
+            "review_datetime_utc": "03/12/2024 17:21:30",
+            "review_text": "Beautiful, hand-crafted decor, very friendly staff, and food was delicious!  I ordered the iced s'mores latte and chicken salad sandwich, 10/10 would recommend. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5aVB2MDRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5aVB2MDRBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID9iPv04AE%7CCgwIo5nCrwYQ0LznqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710263459,
+            "review_datetime_utc": "03/12/2024 17:10:59",
+            "review_text": "Very nice french bakery. The food and coffee are delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5ODRyOW1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5ODRyOW1BRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC984r9mAE%7CCgwIl_mxrwYQiKu-1AI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1709997207,
+            "review_datetime_utc": "03/09/2024 15:13:27",
+            "review_text": "I went to the Noda and Uptown locations.  The pastries are great.  The service is terrible. I don't like  eggshells in my cold egg sandwich. Not too clean either.  Not worth it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5ZzRtaXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5ZzRtaXdnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC9g4miwgE%7CCgwIvcaurwYQ4KiutgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709941565,
+            "review_datetime_utc": "03/08/2024 23:46:05",
+            "review_text": "Tasty treats and some solid pastries  at Amelie!! We ordered the fruit tarte and the chocolate gateau. We loved the execution and it was clear that the raw materials (chocolate, components for the creme paticiere) were good quality. We enjoyed desserts and will be coming back when in town!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5eVphWUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5eVphWUtnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC9yZaYKg%7CCgwIqtWjrwYQ8LqHnQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1709763242,
+            "review_datetime_utc": "03/06/2024 22:14:02",
+            "review_text": "$50 for two \"jalapeno aoli\"  BLT's (it was a regular BLT with 2 pieces of thin bacon thrown together like a McDonald's makes their food),two side tomato soups (texture and tasted like marinara sauce mixed with licorice), and luckily two lemonades that we enjoyed. Price point is insanely high for the low quality. The employees were nice. No complaints there. Ten years ago, when I last ate here, it was phenomenal, now it's absolutely mediocre,  and I would never return."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5aWVUS3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5aWVUS3lnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC9ieTKygE%7CCgwIkpWjrwYQ6Nr8_wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709755026,
+            "review_datetime_utc": "03/06/2024 19:57:06",
+            "review_text": "Lemon tart and cookie layer bar were amazing!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkNF9Qc2VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkNF9Qc2VREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDd4_PseQ%7CCgwI9J30rgYQoL_usAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708986100,
+            "review_datetime_utc": "02/26/2024 22:21:40",
+            "review_text": "I feel like this place is a hidden gem! It was delicious.  Highly recommend the breakfast biscuits, fall apart, and melt in your mouth ( I had the bacon, egg, and cheese). They have a great selection of pastries, all fresh and fresh made. Coffee was also tasty ( I had the cafe marcotter). Excellent service and friendly people. Love the space also!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkamMtNmRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkamMtNmRnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDdjc-6dg%7CCgwI06LwrgYQyNi1ywI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708921171,
+            "review_datetime_utc": "02/26/2024 04:19:31",
+            "review_text": "People there pay attention to you and make you feel welcomed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkdGNhN3pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkdGNhN3pRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDdtca7zQE%7CCgsItuzurgYQkLWFDw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1708897846,
+            "review_datetime_utc": "02/25/2024 21:50:46",
+            "review_text": "The location is interesting and the stuff was nice. The food  was all right, but simple and honestly  underwhelming."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkcVpEbjlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkcVpEbjlnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDdqZDn9gE%7CCgwI2LbprgYQ8P7-0gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1708809048,
+            "review_datetime_utc": "02/24/2024 21:10:48",
+            "review_text": "The staff at this establishment exhibited extreme rudeness and lack of consideration. On my first visit, I arrived carrying a small dog with me. Despite encountering a lengthy queue, I opted to wait while holding my dog. Throughout this time, the staff member handling customer interactions continuously stared at me without addressing my situation. It wasn't until after 15 minutes of waiting that he informed me that I couldn't order takeout because of my dog. If establishments expect patrons to adhere to their rules, they should reciprocate by respecting their customers' time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkMDVUS2hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkMDVUS2hRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICd05TKhQE%7CCgwIidTFrgYQuMTU2QE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1708222985,
+            "review_datetime_utc": "02/18/2024 02:23:05",
+            "review_text": "Absolutely adorable, enchanting, eclectic cafe with delicious food. However, iced drinks are mostly ice, which was really frustrating, since we waited a very, very, very long time in line for what seemed like simple orders ahead of us. Staff was t particularly friendly, and an experience that could have been wonderful due to the quality of the food and the atmosphere was really disappointing. Maybe we just caught them on a bad day."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkbGRYSzRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkbGRYSzRnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICdldXK4gE%7CCgwIrM6_rgYQ8Nb9uwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708123948,
+            "review_datetime_utc": "02/16/2024 22:52:28",
+            "review_text": "great bakery stuff"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkMmV2aDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkMmV2aDN3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICd2evh3wE%7CCgsI1Mu9rgYQ0JHBdQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1708090836,
+            "review_datetime_utc": "02/16/2024 13:40:36",
+            "review_text": "Mediocre coffee and dry pastry."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkMGEyZHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkMGEyZHhRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICd0a2dxQE%7CCgwIy9u6rgYQ-MnFiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708043723,
+            "review_datetime_utc": "02/16/2024 00:35:23",
+            "review_text": "Taba medio caro"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkM05QcGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkM05QcGpRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICd3NPpjQE%7CCgwIpIqvrgYQ8Mv-sQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707853092,
+            "review_datetime_utc": "02/13/2024 19:38:12",
+            "review_text": "Really liked the food and location, it was a bit crowded but didn't really bother me."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkeUt1ZGVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkeUt1ZGVREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICdyKudeQ%7CCgsI2bCfrgYQsMn8Lg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707595865,
+            "review_datetime_utc": "02/10/2024 20:11:05",
+            "review_text": "Awesome atmosphere and love the ambiance. Very friendly. Service quite slow for not that busy! Food plates a bit small. Desserts were exceptional. Make sure you save room and pick a couple."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0djVfYV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0djVfYV93RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDtv5_a_wE%7CCgwIwI6XrgYQkIvEzAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707460416,
+            "review_datetime_utc": "02/09/2024 06:33:36",
+            "review_text": "Loved the bakery which looked very small from outside but the seating inside is very beautiful.\n\nWe had breakfast there and everything we had was excellent and tasty.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0NGRhOWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0NGRhOWZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDt4da9fQ%7CCgwIkKqBrgYQ2NDU6QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707103504,
+            "review_datetime_utc": "02/05/2024 03:25:04",
+            "review_text": "Hidden gem. Best tarts I have ever tasted! We waiting in a very long line to get these pasteries, but it was well worth it! Cannot wait to come back here!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0bnBfRXVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0bnBfRXVBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDtnp_EuAE%7CCgwIlrP_rQYQ4K2LzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707071894,
+            "review_datetime_utc": "02/04/2024 18:38:14",
+            "review_text": "Despite the registers breaking down and causing a nearly 45-minute wait in line, the wait was worth it! Amazing food, unique style, and welcoming atmosphere. Came back the next morning for breakfast and it didn't disappoint. This is a must-see destination when visiting Charlotte!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0OHRHbVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0OHRHbVpnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDt8tGmZg%7CCgsIq835rQYQ2JabQA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706976939,
+            "review_datetime_utc": "02/03/2024 16:15:39",
+            "review_text": "Why go to your local bakery when you can stop in to Amelie's French bakery. Once you visit you will understand my question."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0MG9YTUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0MG9YTUJ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDt0oXMBw%7CCgwIhJD5rQYQyPampgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706969092,
+            "review_datetime_utc": "02/03/2024 14:04:52",
+            "review_text": "Incredible tarts and coffee. Definitely my favorite place to take friends and family who visit Charlotte. The decorations are also very visually stimulating."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0a3IyeHR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0a3IyeHR3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDtkr2xtwE%7CCgwIo_j4rQYQ4OaG9AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706966051,
+            "review_datetime_utc": "02/03/2024 13:14:11",
+            "review_text": "Cool spot in downtown Charlotte for a lunch. Came here to work from a coffee bar and had Croque Monsieur for lunch. Fortunately, they ran out of croissants for the croque and I chose to have it on multigrain bread. Coming from Belgium, I can confirm that it makes more sense to make it on bread instead of a croissant "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0M2ZIQjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0M2ZIQjdRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICt3fHB7QE%7CCgwI0Z3prQYQwLPongI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1706708689,
+            "review_datetime_utc": "01/31/2024 13:44:49",
+            "review_text": "So not French and basically no nonsweet food options no drinks"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0b1pPeEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0b1pPeEpBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICtoZOxJA%7CCgwI07rkrQYQuL-JtQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1706630483,
+            "review_datetime_utc": "01/30/2024 16:01:23",
+            "review_text": "A must go to see an interior splendor of arts, patterns, and decor. The color scheme screams American French but the layout and art is like something from Alice and wonderland. The open windows and ample lighting freshens up the space and makes it easier to navigate. The late was bold and the perfect temperature. The staff for the to-go counter was inattentive or busy? Either way, I had to wait in line with nobody at the counter for a bit and I was the only one in line. The late took a good bit to come out too, but it gave me time to walk around and eat a crispy croissant that was out in no time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0dkkzUWdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0dkkzUWdBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICtvI3QgAE%7CCgwIjeLfrQYQiPrE5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706553613,
+            "review_datetime_utc": "01/29/2024 18:40:13",
+            "review_text": "This cafe has such a beautiful aesthetic. I have been to many \"french\" cafes that are basically just Eiffel tower themed, but this cafe was actually able to encompass the beauty and creativity of France. Everywhere you look there is some form of art! It is truly a beautiful place to enjoy a nice breakfast or work for the day.\nIf you're hungry I highly recommend trying the chicken pesto goat cheese sandwich, anything on a croissant, the mini tarts, the white chocolate latte, but especially the TIRAMISU. \n\nBonus: If you're visiting the convention center, this place is only a 3 minute walk away!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0LUxHY0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0LUxHY0NREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICt-LGcCQ%7CCgwIkaPbrQYQ-PvGmQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706480017,
+            "review_datetime_utc": "01/28/2024 22:13:37",
+            "review_text": "Came here with my mom and gf , the guy that works the pastry section with the glasses is a master at his craft great speedy service"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0OFBTQmd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0OFBTQmd3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICt8PSBgwE%7CCgwI84nYrQYQqOKWuAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706427635,
+            "review_datetime_utc": "01/28/2024 07:40:35",
+            "review_text": "Lovely cafe with fun decor. Went on Wednesday morning and there was a steady line but moves at decent pace. I tried a few different pastries. Strawberry short cake was light and almond croissant delicious and definitely decadent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROeTZybWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROeTZybWZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDNy6rmfQ%7CCgwIlLvMrQYQ8JH6lwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706237332,
+            "review_datetime_utc": "01/26/2024 02:48:52",
+            "review_text": "Me gusto mucho su decoracion"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROM1l6ZnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROM1l6ZnhBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDN3YzfxAE%7CCgsIpubHrQYQoImAOg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706160934,
+            "review_datetime_utc": "01/25/2024 05:35:34",
+            "review_text": "Always fun to visit! Great dessert"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURONXVtVldREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURONXVtVldREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDN5umVWQ%7CCgwI7fS3rQYQ8PX8qgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1705900653,
+            "review_datetime_utc": "01/22/2024 05:17:33",
+            "review_text": "Just as bad as their other location. Ridiculous awful. The pastries are not fresh! They arrive frozen.The coffee is mediocre and the service is subpar at best."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURONUpyVG1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURONUpyVG1RRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDN5JrTmQE%7CCgwI-sCwrQYQ4L_urwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705779322,
+            "review_datetime_utc": "01/20/2024 19:35:22",
+            "review_text": "Absolutely a must-have experience! The cafe is gorgeous and eclectic, the pastry selection is incredible, and the food/drinks are so good! I got a fruit tart that was the perfect balance between cream, fruit, and crispy crust. What a delight. The chai apple latte had a hint of spice, and it was warm and sweet on the whole. Service was very courteous and friendly. I'll definitely be back next time I'm in Charlotte!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROb0pqRFl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROb0pqRFl3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDNoJjDYw%7CCgsIxYKrrQYQgKyMBQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705689413,
+            "review_datetime_utc": "01/19/2024 18:36:53",
+            "review_text": "Absolutely delightful from the atmosphere to the staff to the pastries. I wanted to get back in line after I finished all the pastries I had purchased. Very special and top notch!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROb01EaFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROb01EaFRnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDNoMDhTg%7CCgwInf6qrQYQ4KGp8AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705688861,
+            "review_datetime_utc": "01/19/2024 18:27:41",
+            "review_text": "Beautiful atmosphere, delicious caloric sins, warm and kind employees."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOMTVlcDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOMTVlcDVnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICN15ep5gE%7CCgwIj46mrQYQ6Jr8lwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705608975,
+            "review_datetime_utc": "01/18/2024 20:16:15",
+            "review_text": "Piece of Rue du Bac in Charlotte. All tarts are fantastic, but the White Chocolate Raspberry and Brownie Cheesecake is a must. \nPS ... Calories eaten here don't count. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOdzk3QXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOdzk3QXNnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICNw97AsgE%7CCgwI1MKerQYQ-JuAtQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705484628,
+            "review_datetime_utc": "01/17/2024 09:43:48",
+            "review_text": "Outstanding pastries!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNON1lySTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNON1lySTNBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICN7YrI3AE%7CCgwI3_abrQYQoKrCxwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705442143,
+            "review_datetime_utc": "01/16/2024 21:55:43",
+            "review_text": "The cakes were amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOcFpDeFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOcFpDeFhBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICNpZCxXA%7CCgwIx9yYrQYQuO_m6gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1705389639,
+            "review_datetime_utc": "01/16/2024 07:20:39",
+            "review_text": "I ordered black coffee, but the lady made cappuccino. but I can absolutely confidently say that the coffee is very tasty"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOX3ZEYzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOX3ZEYzV3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICN_vDc5wE%7CCgwIwPWRrQYQsIiW8AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1705278144,
+            "review_datetime_utc": "01/15/2024 00:22:24",
+            "review_text": "We have gone to Amelie's multiple times.. Nice Bakery.  Crowd favorite.. They changed layout a bit,  seems the old charm diminished a bit."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOcnBhZG5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOcnBhZG5RRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICNrpadnQE%7CCgwIu52QrQYQgNryxAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705250491,
+            "review_datetime_utc": "01/14/2024 16:41:31",
+            "review_text": "Customer centric staff and one of the best bacon, egg and cheese buttermilk biscuits I ever had! First time trying a cafe marcotter and it was a great experience!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOLXRDbzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOLXRDbzNnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICN-tCo3gE%7CCgsI4KeMrQYQuJThXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705186272,
+            "review_datetime_utc": "01/13/2024 22:51:12",
+            "review_text": "Exquisite. Perfect French decor & food. Friendly and efficient staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOMm9hcklBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOMm9hcklBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICN2oarIA%7CCgwIyeGLrQYQoM7VkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705177289,
+            "review_datetime_utc": "01/13/2024 20:21:29",
+            "review_text": "Great selection of baked good and drinks, we have enjoyed everything we have tried on the several visits we have made here.  Staff are friendly and helpful.  Atmosphere and decor are interesting and unique."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQxX2VHZ2lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxX2VHZ2lRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID1_eGgiQE%7CCgwI1db1rAYQuMalowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704815445,
+            "review_datetime_utc": "01/09/2024 15:50:45",
+            "review_text": "I love the quiche and pastries they serve here. My absolute favorite dessert is vanilla bean Creme Brule when it's cold, but hardly any restaurants store it in the refrigerator and then make the top crunchy with the torch and sugar.\nThe atmosphere in these restaurants makes you dream and wish and transport you to a sidewalk cafe experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQxOGN6QXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxOGN6QXVnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID18czAugE%7CCgwInJvtrAYQuKX52wI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1704676764,
+            "review_datetime_utc": "01/08/2024 01:19:24",
+            "review_text": "Our food was brilliant, but our experience with drinks was poor. We ate a quiche lorraine and croque monsieur, which I would definitely eat again. However, to put our experience in perspective, our meal came out 15 minutes before our coffees. We waited over 30 minutes for coffee, and when I got it, it was incomplete. I think this comes down to short-staffing, but it was not the experience I would've liked, and one that I feel was off the mark considering the quality of the food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxN0ppaFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxN0ppaFpnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID17JihZg%7CCgwIyrnhrAYQoNz15QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1704484042,
+            "review_datetime_utc": "01/05/2024 19:47:22",
+            "review_text": "Vegan and vegetarian (egg free) options are very less. Coffee is really good and ambience is very nice. French!\nA must visit for pastries and coffee lover's."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxbmZLQUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxbmZLQUpnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1nfKAJg%7CCgwInL7QrAYQsJHs-QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704206108,
+            "review_datetime_utc": "01/02/2024 14:35:08",
+            "review_text": "The first thing I noticed was that the place was very clean.\nDelicious pastries.\nEspresso was good, and so was the hot cider...\nFun place to check out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxMGZYdE53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxMGZYdE53EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC10fXtNw%7CCgsIqfDFrAYQ-NSSCA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704032297,
+            "review_datetime_utc": "12/31/2023 14:18:17",
+            "review_text": "Loved the desserts and coffee before the Hornets game!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxb2YyRnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxb2YyRnJnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1of2FrgE%7CCgwIlY7DrAYQ-IuUwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703986965,
+            "review_datetime_utc": "12/31/2023 01:42:45",
+            "review_text": "Solid food for take out. I ordered a breakfast biscuit sandwich and they substituted meat for tomato - a nice touch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxd2JHaTF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxd2JHaTF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1wbGi1wE%7CCgwIk6fCrAYQ2LqSvAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703973779,
+            "review_datetime_utc": "12/30/2023 22:02:59",
+            "review_text": "Really cute!!! The tiramisu latte was AMAZING definitely get it while they still have it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxcnVpX3lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxcnVpX3lBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1rui_yAE%7CCgwI6-y9rAYQoMTMogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703900779,
+            "review_datetime_utc": "12/30/2023 01:46:19",
+            "review_text": "I had the quiche Lorraine, it was a bit overcooked, like it was warmed in the microwave it was tasty if the crust wasn't so tough. Also had the raspberry tart, that was great, I would get that again. I'd like to go back & dine in maybe the quiche was having a bad day."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxeHF1Rmp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeHF1Rmp3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1xquFjwE%7CCgwIr5y3rAYQ6OuA2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703792175,
+            "review_datetime_utc": "12/28/2023 19:36:15",
+            "review_text": "Came here following the great reviews, and we were very pleased!!! Delicious baked goods and hot, fresh coffee. We got the pecan pie and the apple. So flavorful and sweet without being overwhelming. After dining in, I ordered another of each to go. Also got tiramisu, which I am glad I did. If you have time to stop by, it's worth it! Note that they're closed on Monday, so make time around that."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxMnZTeVlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxMnZTeVlnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC12vSyYg%7CCgwIksezrAYQwJbz5gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1703732114,
+            "review_datetime_utc": "12/28/2023 02:55:14",
+            "review_text": "The bakery looks great, but the the room seems to have some funky odors in raining days. We did not eat there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxN05iVFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxN05iVFZREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC17NbTVQ%7CCgwIvPihrAYQwKWopAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703443516,
+            "review_datetime_utc": "12/24/2023 18:45:16",
+            "review_text": "Great drinks, great food, and great customer service!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxdE5mSzNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxdE5mSzNRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC1tNfK3QE%7CCgwIhq2drAYQuPzFtgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1703368326,
+            "review_datetime_utc": "12/23/2023 21:52:06",
+            "review_text": "Nice place, only one person preparando no the coffee, so way too much waiting for the price you pay."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxMUlLRWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxMUlLRWJ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC11IKEbw%7CCgwI_uKbrAYQ8JbarwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703342462,
+            "review_datetime_utc": "12/23/2023 14:41:02",
+            "review_text": "Great place for good food and conversation. The atmosphere is unique and inviting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnNnR6MkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnNnR6MkZ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDg6tz2Fw%7CCgwIttWWrAYQyMj_vwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1703258806,
+            "review_datetime_utc": "12/22/2023 15:26:46",
+            "review_text": "There seems to be more seating space now that the remodel is done. Food is just like always, and it is always an experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWNzVySmh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWNzVySmh3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDV75rJhwE%7CCgwImdyErAYQiOXv1gM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1702964761,
+            "review_datetime_utc": "12/19/2023 05:46:01",
+            "review_text": "I love Amelie's for a yummy dessert after a football or soccer game. Or any other time, really. Fun and playful atmosphere but it's really all about their dessert. There's other food too. It's yummy but the desserts are where it's at. Did I mention the desserts are good? Because they are!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWbU9qQ0lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWbU9qQ0lREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDVmOjCIQ%7CCgwI_MbaqwYQiID50AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702273916,
+            "review_datetime_utc": "12/11/2023 05:51:56",
+            "review_text": "The atmosphere is really welcoming & the staff are always friendly and helpful. The macarons are SO good! I love when they have seasonal flavors. Can't wait until summer again so I can get the Pina colada. It's delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWMk15ODVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWMk15ODVRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDV2My85QE%7CCgwI6MnYqwYQ4L7slAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702241512,
+            "review_datetime_utc": "12/10/2023 20:51:52",
+            "review_text": "Love this bakery!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWbUpDQlJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWbUpDQlJREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDVmJCBRQ%7CCgwItKPYqwYQgKvO9wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1702236596,
+            "review_datetime_utc": "12/10/2023 19:29:56",
+            "review_text": "Ordered the Caramel Brownie Tarte, was very sweet and enjoyed it during my time in Uptown with. Very unique aesthetic to relax and get work done it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWNmFfRklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWNmFfRklnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICV6a_FIg%7CCgwI2pTKqwYQ0IOengE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1702005338,
+            "review_datetime_utc": "12/08/2023 03:15:38",
+            "review_text": "Proce for what you get is a but higher than would expect.  Food was just ok but the place is decorated well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWbHVqSDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWbHVqSDRnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICVlujH4gE%7CCgsIprDEqwYQ8MfzRg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1701910566,
+            "review_datetime_utc": "12/07/2023 00:56:06",
+            "review_text": "Pedi la sopa de tomate y estaba saladisima!! Incomible. No me la cambiaron por otra sopa. Tuve que pedir una ensalada. Otro pastel de espinaca que pidio un acompanante ... no tenia ni sabor.  Muy desilucionada!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURscTVLQnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURscTVLQnJnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDlq5KBrgE%7CCgwIwIW0qwYQ0KzyrwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701642944,
+            "review_datetime_utc": "12/03/2023 22:35:44",
+            "review_text": "Un buen lugar para desayunar fuera de lo comun"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsMkx6QTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsMkx6QTJRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDl2LzA2QE%7CCgwIpomgqwYQsKXhsgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701315750,
+            "review_datetime_utc": "11/30/2023 03:42:30",
+            "review_text": "Loved the atmosphere! Perfect for coffe break :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsbThYQkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsbThYQkZBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIClm8XBFA%7CCgwI8I-TqwYQ4PmXjgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701103600,
+            "review_datetime_utc": "11/27/2023 16:46:40",
+            "review_text": "Had a s'mores latte to drink (my favorite flavor palette!) and tried some of the key lime pie and apple cobbler mini tarts. The red velvet cheesecake was to die for! Had never been to this location, but it didn't disappoint. Great place for a quick bite or treat!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsc2NQMHVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsc2NQMHVRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIClscP0uQE%7CCgwI4PnvqgYQ2IjewQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700527328,
+            "review_datetime_utc": "11/21/2023 00:42:08",
+            "review_text": "I love    "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsbHJXR3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsbHJXR3B3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICllrWGpwE%7CCgwIjYDfqgYQwNe-pQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1700249613,
+            "review_datetime_utc": "11/17/2023 19:33:33",
+            "review_text": "The quiche and tarts are fantastic!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsLXVDcVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsLXVDcVpBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICl-uCqZA%7CCgsItO3ZqgYQuObsbA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700165300,
+            "review_datetime_utc": "11/16/2023 20:08:20",
+            "review_text": "The Napoleons keep getting smaller and smaller, remaining the same price and they act as if we don't notice."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGNkpUSk9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGNkpUSk9nEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF6JTJOg%7CCgwI1JfRqgYQkOaYnAE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1700023252,
+            "review_datetime_utc": "11/15/2023 04:40:52",
+            "review_text": "Not amazing"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsM0k3NGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsM0k3NGpRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICl3I74jQE%7CCgwIse3OqgYQkMGKgwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699985073,
+            "review_datetime_utc": "11/14/2023 18:04:33",
+            "review_text": "Beautiful fresh baguette "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsbkx5cm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsbkx5cm1nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIClnLyrmgE%7CCgsIkcrOqgYQsMShPw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699980561,
+            "review_datetime_utc": "11/14/2023 16:49:21",
+            "review_text": "Very nice people, very beatiful place based on French, loved my cinnamon roll, lovely environment. Staff were amazingly nice. My 1st time here, came from Raleigh to try it. Loved it, thank you guys"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsMksyWGlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsMksyWGlRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICl2K2XiQE%7CCgwIrrfKqgYQsMqxtgE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1699912622,
+            "review_datetime_utc": "11/13/2023 21:57:02",
+            "review_text": "Very smug employees but you'll find that at every Amelie's"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsb0syRFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsb0syRFhBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICloK2DXA%7CCgwIyKXEqgYQqO_b5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699812040,
+            "review_datetime_utc": "11/12/2023 18:00:40",
+            "review_text": "Delicious pastries, so far the best I've tried in Charlotte"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGajgzYnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGajgzYnhnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDFj83bxgE%7CCgwI_Lu-qgYQ2ImFpwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699716604,
+            "review_datetime_utc": "11/11/2023 15:30:04",
+            "review_text": "Oh my!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNTdqSnJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNTdqSnJ3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF57jJrwE%7CCgwI-qa7qgYQuOGs8QE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1699664762,
+            "review_datetime_utc": "11/11/2023 01:06:02",
+            "review_text": "I used to absolutely LOVE Amelie's , adore it... until corporate changed all of their original handmade and tasty crust that they've used for years to a more cost efficient and really gross crust you can tell the obvious difference as all of the pastries now are shaped in a circle unlike the pie form that they traditionally for years.\n\nUnfortunately no I do not eat any of the pastries and I honestly don't go there at all anymore unless I want coffee and I don't really drink coffee ... I suggest you guys go back to your original pastry crust. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGeDlLRVFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGeDlLRVFBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDFx9KEQA%7CCgwItpW6qgYQgIfNpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699646134,
+            "review_datetime_utc": "11/10/2023 19:55:34",
+            "review_text": "Just happen to come across this place today. Everything about this bakery is fantastic! The food, atmosphere, and service is top notch!! The food is delicious!! My European girlfriend was thrilled with the food. The staff is super friendly and helpful and the French decor and music are wonderful!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGX2RpU3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGX2RpU3N3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF_diSswE%7CCgwIiNSzqgYQwNukyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699539464,
+            "review_datetime_utc": "11/09/2023 14:17:44",
+            "review_text": "Love the coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNnJ2X2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNnJ2X2xRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF6rv_lQE%7CCgwIutOfqgYQoLuz1QI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1699211706,
+            "review_datetime_utc": "11/05/2023 19:15:06",
+            "review_text": "Honest review: it's a vibe. It has a cool interior, so you might come for that. The customer service was good, friendly, quick. But, this is by no means a French bakery. Everything was quantity over quality. If you truly love good French pastries and coffee, then you'll be a bit disappointed if you come here. But if you just want some place with an interesting vibe and okay pastries then you'll be happy here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGNnJqbTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGNnJqbTZ3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF6rjm6wE%7CCgwI-IefqgYQwK7l5QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1699202040,
+            "review_datetime_utc": "11/05/2023 16:34:00",
+            "review_text": "This place is a must, when you're visiting the city. Very awesome atmosphere. Service is great. The breakfast sandwich was good but not the best, and far from the worst. 100% would eat here again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGMEpiZlh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGMEpiZlh3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDF0JbfXw%7CCgwI2oKWqgYQyJPomAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699053914,
+            "review_datetime_utc": "11/03/2023 23:25:14",
+            "review_text": "Eclectic atmosphere with amazing decor. Staff was awesome. Very friendly and handled an order for 8 at the counter with ease. I had the half tartine with fig jam, bacon and brie. A small portion which is what I wanted as I was not very hungry. Short walk from our hotel. The entire group loved the food. The quiche looked amazing. Will be back in Charlotte and will totally eat here again. Oh, and the pastry case looked amazing. All the macron flavors you would want.l"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGeC1YNll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGeC1YNll3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFx-X6Yw%7CCgsI-4aUqgYQsPm3Fg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699021691,
+            "review_datetime_utc": "11/03/2023 14:28:11",
+            "review_text": "The biggest Amelie's location I've been to. Lots of tables available if you choose to enjoy your coffee inside. Always fresh and delicious pastry."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGbTctY1N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGbTctY1N3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFm7-cSw%7CCgwI67GQqgYQiKeLowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698961643,
+            "review_datetime_utc": "11/02/2023 21:47:23",
+            "review_text": "Everything is delicious  The chicken salad with cranberries & pecans on a croissant was incredible & generously portioned."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGczV5NE5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGczV5NE5BEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFs5y4NA%7CCgwIkL2LqgYQqI352AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698881168,
+            "review_datetime_utc": "11/01/2023 23:26:08",
+            "review_text": "Coffee and dessert was great. We had a pumpkin tart."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGNC03RFpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGNC03RFpREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICF4-7DZQ%7CCgwIs7aJqgYQ-IuLwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698847539,
+            "review_datetime_utc": "11/01/2023 14:05:39",
+            "review_text": "Wonderful experience. Everything we had was delicious. For lunch, they had a wide range of sandwiches and a wrap. We enjoyed everything we had. The pastries we brought home were terriric as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGcFp2YXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGcFp2YXF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFpZvaqwE%7CCgsIqs38qQYQyK7hRw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698637482,
+            "review_datetime_utc": "10/30/2023 03:44:42",
+            "review_text": "This bakery is a delight for the senses! The treats are not only delicious but also beautifully presented. The moment you step inside, you're greeted by a visually appealing atmosphere that enhances the overall experience. It's a true gem for anyone with a sweet tooth and an eye for aesthetics."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGaGZ6clJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGaGZ6clJREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFhfzrRQ%7CCgsI_K36qQYQ8MbNNw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698600700,
+            "review_datetime_utc": "10/29/2023 17:31:40",
+            "review_text": "Very popular spot, creating occasionally long wait times ... but for good reason. The food/beverage is truly sensational. I thoroughly enjoyed my first-ever visit to Amelie's and find it easy to recommend to others.\nI wish I had the talent to make these items myself, but I don't."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGaWZyZlpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGaWZyZlpBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFifrfZA%7CCgwIvfH1qQYQ2K6BwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698527421,
+            "review_datetime_utc": "10/28/2023 21:10:21",
+            "review_text": "I'm so glad this location opened back up -- it's such a delicious and cute addition to the uptown area!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGaWZMMXNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGaWZMMXNBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFifL1sAE%7CCgwIq-71qQYQiOCSvgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698527019,
+            "review_datetime_utc": "10/28/2023 21:03:39",
+            "review_text": "The lady who assisted with my order was super helpful and recommended a few different flavors of macaroons. The macaroons did not disappoint. Neither did the fruit tart. Definitely on the higher price of things, but wouldn't expect anything less for quality pastries. My favorite flavor was raspberry."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGd1pHZDJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGd1pHZDJ3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFwZGd2wE%7CCgwInZP0qQYQ6Pyb5AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698498973,
+            "review_datetime_utc": "10/28/2023 13:16:13",
+            "review_text": "Authentic French pastries, coffee and Bistro food. Lovely interior decorating with many photo ops."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGNnJlTFl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGNnJlTFl3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICF6reLYw%7CCgsIgvfwqQYQuI26Tw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698446210,
+            "review_datetime_utc": "10/27/2023 22:36:50",
+            "review_text": "I got half a dozen macarons and creme brulee. Both were delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGM1BQSjF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGM1BQSjF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICF3PPJ1wE%7CCgwIo5XwqQYQwKPEjQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698433699,
+            "review_datetime_utc": "10/27/2023 19:08:19",
+            "review_text": "Great bakery! Tasty food, amazing pastry. Everything is great, just need more bartenders, waiting of coffee is twice longer then food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGZ0t2UDVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGZ0t2UDVBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICFgKvP5AE%7CCgwIhdvuqQYQ-KiD_gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1698409861,
+            "review_datetime_utc": "10/27/2023 12:31:01",
+            "review_text": "I'm glad they opened the downtown location again. This is always an interesting place to visit. They have great little pastries. I have not been overly impressed with the heavy foods like lunch or dinner items. But as a bakery they are great. This is a great place to come hang out have some food and drink so tea and coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1XzZ1UTRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1XzZ1UTRBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5_6uQ4AE%7CCgwIxdTuqQYQsLb_tAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698409029,
+            "review_datetime_utc": "10/27/2023 12:17:09",
+            "review_text": "Exquisite pastries in an eclectic setting with chandeliers galore. Very convenient location for convention participants."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1cGJfdHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1cGJfdHJBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5pb_trAE%7CCgwI1qTsqQYQ0PDEmwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698370134,
+            "review_datetime_utc": "10/27/2023 01:28:54",
+            "review_text": "What can I say. I have a sweet tooth.\nActually, with authentic French pastries, the sweets are not as sweet. They are super tasty though."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1LXJleFJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1LXJleFJBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5-rexRA%7CCgwI_rHaqQYQsPiQrgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698076926,
+            "review_datetime_utc": "10/23/2023 16:02:06",
+            "review_text": "We love Amelie's. Great food and great coffee. Very unique space. Only wish they had more dairy free options for food and for coffee. They have almond and oat milk, however, no coconut milk unfortunately."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1Nm9tLUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1Nm9tLUt3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID56om-Kw%7CCgsI68jWqQYQ0KLrcw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698014315,
+            "review_datetime_utc": "10/22/2023 22:38:35",
+            "review_text": "Very good food and great service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1c29pMFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1c29pMFR3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5soi0Tw%7CCgwIg-7RqQYQ4MH5tgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697937155,
+            "review_datetime_utc": "10/22/2023 01:12:35",
+            "review_text": "Must go!\nMust have pastry delicious cafe!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1a29uTjNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1a29uTjNBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5konN3AE%7CCgwI1rHQqQYQsMmS9QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1697913046,
+            "review_datetime_utc": "10/21/2023 18:30:46",
+            "review_text": "I can only speak to the tea, coffee and tea biscuits.  They were all top notch.  As busy as this place is, they should beef up staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1d3VTdWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1d3VTdWt3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5wuSukwE%7CCgsIj4bOqQYQ8L-uUA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1697874703,
+            "review_datetime_utc": "10/21/2023 07:51:43",
+            "review_text": "Great French food breakfast options.\nOpens at 08:30 am.\nCoffee is available too.\nIt's a self-serve restaurant."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1X00yc3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1X00yc3lnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5_M2sygE%7CCgwI99zMqQYQ-N6UmQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697853047,
+            "review_datetime_utc": "10/21/2023 01:50:47",
+            "review_text": "Great place n vibe..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1LU83VzlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1LU83VzlnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5-O7W9gE%7CCgsIiqTHqQYQqLLSVg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697763850,
+            "review_datetime_utc": "10/20/2023 01:04:10",
+            "review_text": "What a great spot to find French dishes near the convention center. Friendly staff and delicious croque monseiur."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1d0tUQ0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1d0tUQ0NREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID5wKTCCQ%7CCgwI8Pu-qQYQyMHNjgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697627632,
+            "review_datetime_utc": "10/18/2023 11:13:52",
+            "review_text": "Large place near the convention center, where you can find find a table for a quick meeting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1MThqQmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1MThqQmNnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC518jBcg%7CCgwIobC7qQYQqNOR5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697568801,
+            "review_datetime_utc": "10/17/2023 18:53:21",
+            "review_text": "Amazing pastries and atmosphere"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1bF8zWEhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1bF8zWEhBEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5l_3XHA%7CCgsI6aW7qQYQqNGMXA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1697567465,
+            "review_datetime_utc": "10/17/2023 18:31:05",
+            "review_text": "Good sandwich. It is difficult to get a refill of iced tea..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1LTRfNlNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1LTRfNlNREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5-4_6SQ%7CCgwIz5C6qQYQuN6K0AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697548367,
+            "review_datetime_utc": "10/17/2023 13:12:47",
+            "review_text": "Si quieres tomar un rico postre y un cafe en un lugar perfecto para tomar lindas fotos! este es el lugar, todo en este cafe se ve perfectamente bien"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1dllERlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1dllERlhREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5vYDFXQ%7CCgsI4aa1qQYQiNmXVA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697469281,
+            "review_datetime_utc": "10/16/2023 15:14:41",
+            "review_text": "I loved it,,very beautiful place to eat and to be with friends and family, the food was good and wonderful"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1M2FfZ3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1M2FfZ3pnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC53a_gzgE%7CCgsI5KW1qQYQgN-bJA%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1697469156,
+            "review_datetime_utc": "10/16/2023 15:12:36",
+            "review_text": "Unfriendly staff, latte was just ok. Atmosphere missing since renovation."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1MmNHS1FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1MmNHS1FnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC52cGKQg%7CCgsI9sOwqQYQ2IrdVQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1697391094,
+            "review_datetime_utc": "10/15/2023 17:31:34",
+            "review_text": "it was very good. Would go back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1cVptUU1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1cVptUU1REAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5qZmQMQ%7CCgwIjPCvqQYQ6K7ppgI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1697380364,
+            "review_datetime_utc": "10/15/2023 14:32:44",
+            "review_text": "Severely overpriced for its quality. Coffee is horrible"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1MGRlRHlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1MGRlRHlBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC50deDyAE%7CCgsI45KtqQYQ2KDtaQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1697335651,
+            "review_datetime_utc": "10/15/2023 02:07:31",
+            "review_text": "Food was delicious, but brunch crowd ran them out of many items"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1X3JiNDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1X3JiNDNRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5_rb43QE%7CCgwI5cGnqQYQgP_UvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697243365,
+            "review_datetime_utc": "10/14/2023 00:29:25",
+            "review_text": "First time eating there it was really good i think i had the vegetables soup with okra love it"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1N3JYWU1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1N3JYWU1nEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC57rXYMg%7CCgwIouylqQYQ6KH72QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697216034,
+            "review_datetime_utc": "10/13/2023 16:53:54",
+            "review_text": "Busy morning before the Panthers game, but the service was great and the pastries were delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1c3B1TnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1c3B1TnZnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5spuNvgE%7CCgsI2pSfqQYQ8K7kMg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697106522,
+            "review_datetime_utc": "10/12/2023 10:28:42",
+            "review_text": "One of my favorite bakeries"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1bE9ybG9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1bE9ybG9nRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIC5lOrlogE%7CCgwIlcCWqQYQyOvsggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696964629,
+            "review_datetime_utc": "10/10/2023 19:03:49",
+            "review_text": "Yum !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwcmVEeElREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwcmVEeElREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICpreDxIQ%7CCgwIwJeNqQYQiIuegQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696811968,
+            "review_datetime_utc": "10/09/2023 00:39:28",
+            "review_text": "Hermoso lugar,muy buena atencion ,deliciosos productos"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURacTV1NEF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURacTV1NEF3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZq5u4Aw%7CCgwIwfeHqQYQkIbO5QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696725953,
+            "review_datetime_utc": "10/08/2023 00:45:53",
+            "review_text": "Eclectic French bakery. I can only speak to the coffee, pumpkin tart and vegan Oreo tart but they were all delicious. The wait was a bit much probably about 30 minutes at 8am on a Sunday. Plenty to look at if you choose to dine there."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURacTlHUHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURacTlHUHhBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZq9GPxAE%7CCgwIqOuHqQYQqLPJyAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1696724392,
+            "review_datetime_utc": "10/08/2023 00:19:52",
+            "review_text": "Unfortunately, the rating is low due to the fact that I ordered a double espresso and 4 people after me received their capuchinos before I received my 2 shot coffee until I had to ask twice. To top it off, I received a bad look from the so-called  barista for asking on Oct 7th around 4:30 pm."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURacTlHanp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURacTlHanp3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZq9GjzwE%7CCgwIzOqHqQYQuLP2lQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696724300,
+            "review_datetime_utc": "10/08/2023 00:18:20",
+            "review_text": "Good pastries and breakfast.   Pretty fast service considering the volume of customers getting ready for the Panthers game"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaeTYyU0FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeTYyU0FnEAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZy62SAg%7CCgwIuMmHqQYQ-KSi_wI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1696720056,
+            "review_datetime_utc": "10/07/2023 23:07:36",
+            "review_text": "Ordered a pastry and a coffee.  Simple. Starting waiting. 5 orders after me received their food before me.    I asked the person preparing the coffee why i was being postponed.  He showed i was next and gave me only my coffee and left. No pastry.  He did not care.   He  did not like I questioned delay of service.  Someone else came helped and apologized."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaM0lpZnF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaM0lpZnF3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZ3IifqwE%7CCgsIws_vqAYQgIzhCA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1696327618,
+            "review_datetime_utc": "10/03/2023 10:06:58",
+            "review_text": "Wow, what a disappointment. Visiting Charlotte, I was excited to try this place. All this place has to show for itself is it's decor. I had the turkey and bacon montecristo and a cappuccino. The coffee was OK, the sandwich was not up to par. Bacon was hardly cooked, way too much jam, cheese was pouring out of the sides. Quite sloppy. Taste was not great either. I did not try any pastries, so I cant speak to that. I spent $21 on the sandwich and coffee, hoping for something top notch, this is certainly not what I got. On top of all of this, what compelled me to leave a review was their customer service. Emily was the person at the counter who \"helped\" me, but made me feel extremely uncomfortable. She was rude and both times I went up to try to order she basically turned her back on me, leaving me to stand there looking out of place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadnBxS3NBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadnBxS3NBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZvpqKsAE%7CCgwIu9fnqAYQkJv2ggI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696197563,
+            "review_datetime_utc": "10/01/2023 21:59:23",
+            "review_text": "Wonderful, funky, upbeat, and delicious. Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURacnJTYW9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURacnJTYW9BRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZrrSaoAE%7CCgsIyLnkqAYQ-JiMZA%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1696144584,
+            "review_datetime_utc": "10/01/2023 07:16:24",
+            "review_text": "A cute little cafe with okay pastries and drinks. Perhaps we went later in the day so we felt the bread for the eclair was too soft and the chocolate and espresso taste was not strong enough, so I would skip the eclairs. The tarts and the drinks\nwere alright, but not anything special. Overall, I really like the vibes and the decorations here are cute, the food is pretty affordable but could be better for the price point."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadHNqMXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadHNqMXdRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZtsj1wQE%7CCgwIv9fgqAYQ6K2cpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696082879,
+            "review_datetime_utc": "09/30/2023 14:07:59",
+            "review_text": "Super nice staff! We went on a Thursday morning it was quiet but steady - the service was quick and the pastries were good - we had goat cheese danish and apple cobbler. Only one minor suggestion, the danish would have been amazing if it was just offered warm! Would go back here for sure.\n\nTake note of the fun decor especially the multitude of chandeliers made from various objects!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURabXQtcnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURabXQtcnVnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZmt-rugE%7CCgsI7orZqAYQyLKcJg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1695958382,
+            "review_datetime_utc": "09/29/2023 03:33:02",
+            "review_text": "Unfortunately, 3 out of 6 macarons were stale and dry. I took them to go so couldn't exchange them. Please don't sell old pastry."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaek5LdmN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaek5LdmN3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZzNKvcw%7CCgwIqvfHqAYQiJ6amQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1695677354,
+            "review_datetime_utc": "09/25/2023 21:29:14",
+            "review_text": "Flies all over the food. it was very unhygienic. I have a video but it desnt allow me to upload!."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURad0lYLXBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURad0lYLXBRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZwIX-pQE%7CCgwIhMWzqAYQkMi0lgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695343236,
+            "review_datetime_utc": "09/22/2023 00:40:36",
+            "review_text": "Pretty interior and really good food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURad0lTWGtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURad0lTWGtBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZwISXkAE%7CCgsIsPSyqAYQ4KyuBA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1695332912,
+            "review_datetime_utc": "09/21/2023 21:48:32",
+            "review_text": "I'm usually satisfied with the pastries at the uptown location but the last two times I've purchased macarons, they've been hard and crunchy, not crunchy and chewy like they're supposed to be. Do y'all not do quality checks on your pastries prior to putting them out? Super disappointed right now given you spend about $40 for a dozen to have hard macarons!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaZ0lucHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaZ0lucHVnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgIDZgInpugE%7CCgsI4bayqAYQ0P67XQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695325025,
+            "review_datetime_utc": "09/21/2023 19:37:05",
+            "review_text": "Just wow!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNV82NHRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNV82NHRBRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZ5_64tAE%7CCgwI5vinqAYQwLLghQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695153254,
+            "review_datetime_utc": "09/19/2023 19:54:14",
+            "review_text": "Amelie's in Charlotte was fantastic. Eclectic French decor. Has a great collection of chandeliers. Good coffee and delicious mini custard pies like lemon, raspberry lemon, and key lime pie. A truly delightful experience!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaeDVqa2FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaeDVqa2FREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZx5jkaQ%7CCgsI3aqmqAYQ0NqHHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695126877,
+            "review_datetime_utc": "09/19/2023 12:34:37",
+            "review_text": "Duzhe smachno."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaaThpWVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaaThpWVB3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZi8iYPw%7CCgwIgrWeqAYQyPiw1AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694997122,
+            "review_datetime_utc": "09/18/2023 00:32:02",
+            "review_text": "Service is amazing and food was wonderful. Quiche was very tasty and large portion. Coffee was made perfectly and all the pastries are fresh!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaODctMlVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaODctMlVREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZ87-2UQ%7CCgwI9KaeqAYQ2O66mwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694995316,
+            "review_datetime_utc": "09/18/2023 00:01:56",
+            "review_text": "Delicious leek soup and amazing berry salad"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaODdmbldREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaODdmbldREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZ87fnWQ%7CCgwIoJyeqAYQ2OaGyQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1694993952,
+            "review_datetime_utc": "09/17/2023 23:39:12",
+            "review_text": "After reading many reviews, I wanted to love this bistro. I did like it, and the service was friendly, but I'll probably not make it a point to go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNadzlXdjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNadzlXdjdnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZw9Wv7gE%7CCgwI2tKYqAYQ8MftxQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694902618,
+            "review_datetime_utc": "09/16/2023 22:16:58",
+            "review_text": "We tried the chocolate cheese cake and the petit chocolate cake. Both were good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNadlphaC1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNadlphaC1RRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZvZah-QE%7CCgwInaGWqAYQsOerkwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1694863517,
+            "review_datetime_utc": "09/16/2023 11:25:17",
+            "review_text": "Loved the atmosphere. Best thing we tried was tomato basil mozzarella danish"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaMllIWGtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMllIWGtnRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZ2YHXkgE%7CCgsIr-aHqAYQqP_GDA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694626607,
+            "review_datetime_utc": "09/13/2023 17:36:47",
+            "review_text": "Great pastry and coffee! Bought their banana cream pastry and espresso over ice. Delicious, would definitely go back to try more!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNad2RfMzdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNad2RfMzdRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZwd_37QE%7CCgwIocD-pwYQ6PKTyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694474273,
+            "review_datetime_utc": "09/11/2023 23:17:53",
+            "review_text": "One of my must-stops when I'm visiting Charlotte. I love their desserts and drinks!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaZ2RxR1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaZ2RxR1B3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZgdqGPw%7CCgwI0JH9pwYQgLXcjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694451920,
+            "review_datetime_utc": "09/11/2023 17:05:20",
+            "review_text": "Perfection"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNacnUyLTRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNacnUyLTRRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZru2-4QE%7CCgwIksT4pwYQqNWzjgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694376466,
+            "review_datetime_utc": "09/10/2023 20:07:46",
+            "review_text": "Incredibly cute patisserie! The food was absolutely amazing. So glad we found this on our trip"
+        }
+    ]
+}

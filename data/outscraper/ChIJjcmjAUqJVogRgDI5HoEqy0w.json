@@ -1,0 +1,2011 @@
+{
+    "place_name": "Mado Bakery and Cafe",
+    "place_id": "ChIJjcmjAUqJVogRgDI5HoEqy0w",
+    "place_rating": 4.9,
+    "place_total_reviews": 564,
+    "place_google_id": "0x8856894a01a3c98d:0x4ccb2a811e393280",
+    "place_reviews_id": "5533563301200999040",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJjcmjAUqJVogRgDI5HoEqy0w&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3bnFiVjhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3bnFiVjhBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID7nqbV8AE%7CCgsIl6yotgYQsNfDdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724519959,
+            "review_datetime_utc": "08/24/2024 17:19:19",
+            "review_text": "Amazing amazing amazing! Absolutely beautiful pastries and service. This place was a lovely accidental find that my momma and I will now always come to when we come to work in Rock Hill.\nThe display is laid out with exquisite desserts that not only look beautiful but taste perfect as well. I am a Baker myself, and I love how traditional they are with their French pastries!\nThe coffee my momma had was the best she had ever tasted (it was a well-balanced mocha).\nWe ordered 4 items (expensive, but once you taste, you'll understand the quality you are paying for)\nThe strawberry mousse cake was delicious, and the strawberries were fresh and tasty\nThe apple pear domed tartlet was gorgeous with the lavender petals. The flavors blended very well together and were not too sweet like other places\nThe chocolate and caramel tartlet was rich and smooth\nThe favorite of the 4 items was the peris brest! I was in heaven and absolutely took my mind somewhere while eating it, and I was nothing but smiles.\nThank you so much for the quality of your pastries and the service you gave us with such a warm smile. We can not wait to come back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3OVl6ZEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3OVl6ZEpBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC79YzdJA%7CCgwI0veDtgYQ8OXdwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723923410,
+            "review_datetime_utc": "08/17/2024 19:36:50",
+            "review_text": "pleasant surprise to find this little French bakery where they sourced all ingredients from France."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3NVo2V0JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3NVo2V0JnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC75Z6WBg%7CCgwIjsKCtgYQwMa7nQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723900174,
+            "review_datetime_utc": "08/17/2024 13:09:34",
+            "review_text": "A real French bakery in Rock Hill? Believe it! The pastries are amazing and the family who owns it is friendly and proud of their work. A true treasure."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3cnVHalJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3cnVHalJ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC7ruGjRw%7CCgwI_tP5tQYQiOqtpgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723755006,
+            "review_datetime_utc": "08/15/2024 20:50:06",
+            "review_text": "Best lemon cake I've ever had. Owner was the sweetest man ever. Can't wait to come back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiX2J5QXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiX2J5QXZ3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDb_byAvwE%7CCgsI4MzTtQYQgKKrXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723131488,
+            "review_datetime_utc": "08/08/2024 15:38:08",
+            "review_text": "Amazing! Delicious pastries, and wonderful service!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURieHFHUWJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURieHFHUWJnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDbxqGQbg%7CCgwIvMa_tQYQuJvCqQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722803004,
+            "review_datetime_utc": "08/04/2024 20:23:24",
+            "review_text": "What am amazing find!  A classically trained French pastry chef delivers a wide variety of fantastic bakery items at reasonable prices. The owner was gracious and kind. Highly recommended. This is a genuinely wonderful find."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiNHZDanVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiNHZDanVRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDb4vCjuQE%7CCgwIvZC5tQYQsPvyigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722697789,
+            "review_datetime_utc": "08/03/2024 15:09:49",
+            "review_text": "Coffee/Pastries were amazing, and staff was great!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyb3F1bVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyb3F1bVpBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDroqumZA%7CCgwIqt3YtAYQ4MuxwgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721118378,
+            "review_datetime_utc": "07/16/2024 08:26:18",
+            "review_text": "Ice coffee was refreshing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURydU1hTHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURydU1hTHdnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDruMaLwgE%7CCgsI-PrOtAYQ4KOdXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720958328,
+            "review_datetime_utc": "07/14/2024 11:58:48",
+            "review_text": "The food is other worldly. It doesn't matter what you pick, it's stunning. Had a pastry and a coffee. I don't have a discerning taste for coffee, but what I had I enjoyed. And there were a lot of coffee options.\n\nOnly con: The store is clean and well kept, but the building is in rough shape. Throws the vibe off."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNybDVUSDl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNybDVUSDl3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICrl5TH9wE%7CCgwIxN7BtAYQ6KKcwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720741700,
+            "review_datetime_utc": "07/11/2024 23:48:20",
+            "review_text": "With so many options in charlotte and surrounding areas this is the best French bakery. All the ingredients are exported from Europe and the flavor is absolutely the best. Goods are gone fast in the mornings. By 8am in the weekends there is a line already outside the store.\nVery friendly service and courteous. Best place for a Chai latte, my favorite so far."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeF9ITGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeF9ITGdRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICrx_HLgQE%7CCgwIquzAtAYQyI3emQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720727082,
+            "review_datetime_utc": "07/11/2024 19:44:42",
+            "review_text": "Everything is delicious. We've had the pavlova, macrons, choux, almond croissant, flan, Madeleine, and the bacon/cheese/onion baguette.  Everything always amazes us."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyM1o2ZVJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyM1o2ZVJnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICr3Z6eRg%7CCgwI3su5tAYQ8KnN0AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1720608222,
+            "review_datetime_utc": "07/10/2024 10:43:42",
+            "review_text": "The food, service, and people are incredible!  The building is a former bank built in the 80's and could use some refreshing inside and out.  Don't let that keep you away, well worth the visit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNydnJqZkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydnJqZkZBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICrvrjfFA%7CCgwImvqqtAYQgKvwvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720368410,
+            "review_datetime_utc": "07/07/2024 16:06:50",
+            "review_text": "First time in :)\na little apprehensive, since they don't have a set menu to order online, but after going in I think I understand why. Everything looked soo amazing, I wanted to try it all.\nMy best friend got the Apple croissant, and I got a creme brulee and artisanal baguette.\nAll of which were phenomenal! As was the service by the staff.\nTo the owner, keep up the amazing work!!!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNycHZXWXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNycHZXWXVRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICrpvWYuQE%7CCgwItNeltAYQ8J6rpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720282036,
+            "review_datetime_utc": "07/06/2024 16:07:16",
+            "review_text": "Excellent egg feta tart! WOW!! Coffee was great as well! Would be great to see hanging flowering baskets outdoors to spruce it up a bit.. will be back for SURE! Very nice people!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyaHJ2LTd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyaHJ2LTd3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICrhrv-7wE%7CCgsIxfuktAYQ0La3Ew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720270277,
+            "review_datetime_utc": "07/06/2024 12:51:17",
+            "review_text": "I very seldomly give out 5 star ratings, but the flavors and textures are expertly crafted. The chef here definitely knows their stuff. If you want a taste of a classic french patisserie, come here. They're reasonably priced for the level of skill and knowledge needed to make the food they prepare."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyeXJpdjNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyeXJpdjNRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICryriv3QE%7CCgwI1r2htAYQyPmtzQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720213206,
+            "review_datetime_utc": "07/05/2024 21:00:06",
+            "review_text": "The atmosphere was very welcoming. The staff were incredibly knowledgeable and passionate about their craft, making the whole experience even more enjoyable. I highly recommend this hidden gem to anyone looking for authentic French pastries and a warm, friendly environment. I have visited many French bakeries in the Charlotte area and this one is by far the most authentic! I will definitely make the 30-minute drive just to visit again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyN0tyVWZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyN0tyVWZnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICr7KrUfg%7CCgsIgPKbtAYQ4IjWTg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720121600,
+            "review_datetime_utc": "07/04/2024 19:33:20",
+            "review_text": "Since I discovered this hidden gem, I've been back twice a week since every time there are different bakery options! Everything I've had was so delicious, including the latte. Support local, Black-owned businesses!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMczg3bklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMczg3bklnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDLs87nIg%7CCgwIr5-GtAYQqMGU4wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719766959,
+            "review_datetime_utc": "06/30/2024 17:02:39",
+            "review_text": "Amazing food and coffee. This place is a gem in rock hill. The customer service is always excellent as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMM3UtbVNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMM3UtbVNBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDL3u-mSA%7CCgsI5qj4swYQiJuPJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719538790,
+            "review_datetime_utc": "06/28/2024 01:39:50",
+            "review_text": "Amazing! They are so kind and the pastries are incredible! Today was my first experience and I will definitely be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMNThTUVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMNThTUVdBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICL58SQWA%7CCgwI6cnhswYQoMbvpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719166185,
+            "review_datetime_utc": "06/23/2024 18:09:45",
+            "review_text": "Came here for some French pastries and was not disappointed. The pictures don't do this place justice - it's a great atmosphere to hang out and enjoy French snacks. We got a lemon tart, hazelnut pastry, and the treat of the day which had red velvet. The owners were wonderful to us and made this a great experience. I heard there will be a location in Charlotte coming sometime as well. 10/10 experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMb3NqdjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMb3NqdjhRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICLosjv8QE%7CCgwIwta-swYQ0MjyoQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718594370,
+            "review_datetime_utc": "06/17/2024 03:19:30",
+            "review_text": "The pastries are probably the best in Charlotte. Very professionally baked!  the plase isn't very cozy. BUT the baker and the cashier are amazing, very nice people. The choux was to die for, the cream/ custard are very flavorful yet not too intense, very creamy yet doesn't melts dripping like icecream, but melts in your mouth "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMMUxPUmVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMMUxPUmVnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICL1LOReg%7CCgwIpMC3swYQqN64uwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718476836,
+            "review_datetime_utc": "06/15/2024 18:40:36",
+            "review_text": "Mado is amazing!  The owners are so kind and wonderful and provide such fantastic service.  They always have a smile for everyone.  The pastries are out of this world, it's hard to make a decision because everything is such great quality.  Coffee and chai are outstanding as well.   Go and support this local business, a real gem in Rock Hill!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6djVUdURBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6djVUdURBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDzv5TuDA%7CCgwIgIatswYQqJOEqwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718305536,
+            "review_datetime_utc": "06/13/2024 19:05:36",
+            "review_text": "The lemon cake and blueberry pastry were delicious! The owner was very kind."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6Ni1iNnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6Ni1iNnd3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDz6-b6wwE%7CCgsIwuOmswYQkKOODg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718202818,
+            "review_datetime_utc": "06/12/2024 14:33:38",
+            "review_text": "They have the best Vanilla chai latte, and macarons. Best pastries hands down"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6X3ZXWmJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6X3ZXWmJBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDz_vWZbA%7CCgwIlvibswYQyNTmyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718025238,
+            "review_datetime_utc": "06/10/2024 13:13:58",
+            "review_text": "I needed a little pick-me-up, and decided to head there even though it was a 25 minutes drive. I was met with the kindest people at the bakery. They took the time to explain everything. They bring the ingredients from France to make the pastry. The pastries were incredible and fresh. The quality is so much better than other french bakeries in Charlotte. If you've been to France, you know. I was happy that I went, and I can't wait to go back. I highly recommend visiting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6a3RtWlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6a3RtWlNBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDzktmZSA%7CCgwIzqyTswYQoMSphwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717884494,
+            "review_datetime_utc": "06/08/2024 22:08:14",
+            "review_text": "Everything is wonderful! My wife loved the creme brulee and I absolutely loved the pavlova. We look forward to enjoying the cannelles de Bordeaux in the morning with coffee. Merci beaucoup!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6a09iMGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6a09iMGRBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDzkOb0dA%7CCgwIsOCIswYQwKeoiAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717710896,
+            "review_datetime_utc": "06/06/2024 21:54:56",
+            "review_text": "Delicious pastries and nice owners!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6MzV5d2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6MzV5d2xnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICz35ywlgE%7CCgwIpv-GswYQqJXHzAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717682086,
+            "review_datetime_utc": "06/06/2024 13:54:46",
+            "review_text": "Owner and staff very friendly. My Carmella Mocha was perfectly made and that pastry... Try it for yourself! I went two days in a row."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6a19PSW9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6a19PSW9BRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICzk_OIoAE%7CCgwI1Mb9sgYQyNfsmgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717527380,
+            "review_datetime_utc": "06/04/2024 18:56:20",
+            "review_text": "Amazing French bakery, well worth a trip to Rock Hill!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6cmRLR1ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cmRLR1ZBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICzrdKGVA%7CCgwI-aP6sgYQqKT_jgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717473785,
+            "review_datetime_utc": "06/04/2024 04:03:05",
+            "review_text": "Tastes like Paris: awesome flan, lemon meringue tart, seasonal kumquat tartlet! Will definitely be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6bGZtTjV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6bGZtTjV3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICzlfmN5wE%7CCgsImIz4sgYQkNDvPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717437976,
+            "review_datetime_utc": "06/03/2024 18:06:16",
+            "review_text": "We had to go to Charlotte and found this place out by accident. We came here just for the canele because from what we've seen on the picture, this place by far has the best canele ever in the States.\n\nThe staff was the nicest people ever. Not to mention they're French-African I knew right away it'd be good and it really was.\n\nUnfortunately we didn't take any pictures of the tart we got but it was the nectarine tart and the date mousse cake. When I tell you the dessert were not sweet it is definitely a compliment. They have the right taste to it especially the nectarine one. You'd feel fruity taste in the tart and it's not overwhelmed by the sugar.\n\nFor the canele, they're the right size and the caramel crust they have on it is so perfect. From what I've had over here no other bakeries can bake it the same as they do. No other places can make the crust as crunchy as them. I'm loving every bite I take.\n\nWe'd definitely come back earlier because we were here very late and they ran out of some good pastry and cakes. We'll also try their coffee and chai tea next time!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6NE5XSDZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6NE5XSDZBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICz4NWH6AE%7CCgwI9u7esgYQ8IfcsAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717024630,
+            "review_datetime_utc": "05/29/2024 23:17:10",
+            "review_text": "Wonderful pastries! Best I've had since living in the south. Great Job!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUaDZfZ1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUaDZfZ1JREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDTh6_gRQ%7CCgsIk-vYsgYQgJ2XAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716925843,
+            "review_datetime_utc": "05/28/2024 19:50:43",
+            "review_text": "I went to this bakery because one of my friends recommended it here. The bread was more delicious than I expected :)\nI ordered a chocolate croissant, a regular croissant, and some breads that were difficult to pronounce (>_<)>\nEvery single thing was delicious!! If it were closer to my house, I would definitely visit once or twice a week. Haha, I highly recommend this bakery! I think it's better than other French bakery :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUcmVXbEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUcmVXbEFREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDTreWlAQ%7CCgwItIHOsgYQuICEmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716748468,
+            "review_datetime_utc": "05/26/2024 18:34:28",
+            "review_text": "My day started off sad and depressing with it being my now passed father's birthday... and after comeing here in a depressing slump, their food and chai frappe has lifted my spirits and just brought back a light in my heart."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcmNMS193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcmNMS193RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDTrcLK_wE%7CCgsI3PHNsgYQ-Jf3eA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716746460,
+            "review_datetime_utc": "05/26/2024 18:01:00",
+            "review_text": "Excellent"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbjV2TGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbjV2TGlnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICTn5vLigE%7CCgwI9MuusgYQsP39lAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716233716,
+            "review_datetime_utc": "05/20/2024 19:35:16",
+            "review_text": "While it is a bit pricey on some items, you are getting what you pay for which is a trip down a delectably sweet experience.  The creaminess of the three items we shared... it is taking all I can to not go down more to Rock Hill to indulge.  The friendliness of the owners is top notch too in addition to their pastry skills."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbjZUQjF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbjZUQjF3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICTn6TB1wE%7CCgsI0qSusgYQ2P3nNw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716228690,
+            "review_datetime_utc": "05/20/2024 18:11:30",
+            "review_text": "Went for a little desert date with my son and he said \"this is the best food I have ever had!\"! Your taste buds will thank you! The staff is so incredible and the bakery is out of this world! We definitely will be coming back at least twice a month."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUazltd1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUazltd1l3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICTk9mwYw%7CCgsI3PyjsgYQuPLdRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716059740,
+            "review_datetime_utc": "05/18/2024 19:15:40",
+            "review_text": "Everything tastes like they put their whole heart and soul into it. The second you smell the delicious aroma inside, you KNOW you're in the right place. Very friendly, everything tastes wonderful, and clean bathroom."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUb3FlbThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUb3FlbThRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICToqem8QE%7CCgsI9OWDsgYQoKnwHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715532532,
+            "review_datetime_utc": "05/12/2024 16:48:52",
+            "review_text": "There is no better bakery in the Rock Hill / Fort Mill area. We love visiting here not only for their amazing pastries, but the owners are truly such wonderful people. They tend to sell out quickly, so if you arrive later in the morning there won't be a large variety to select from. The lines and wait times can also be lengthy at times, but it's absolutely worth the wait!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUd3VieHFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUd3VieHFRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICTwubxqQE%7CCgsIhJGDsgYQ4MOIHA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715521668,
+            "review_datetime_utc": "05/12/2024 13:47:48",
+            "review_text": "Authentic French pastries \nThe owners work here and give the best service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUdE9UNkVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUdE9UNkVnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICTtOT6Eg%7CCgsI5vv9sQYQ4LfqUA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715437030,
+            "review_datetime_utc": "05/11/2024 14:17:10",
+            "review_text": "For an extremely picky person when it comes to croissants and cappuccinos I have to say Mado nailed it. The plain butter croissant hit all the elements of an authentic French croissant. Also ordered an oat milk cappuccino with a little honey and all aspects from temperature to flavour were executed well.\n\nCome early and expect to wait a little but well worth it!\n\nMerci Serge & Staff"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUMU9xYVZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUMU9xYVZ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICT1OqaVw%7CCgwIvNb9sQYQqPe0_AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715432252,
+            "review_datetime_utc": "05/11/2024 12:57:32",
+            "review_text": "Mado is an entire experience of warmth, love, and excellence. Everything we ordered was above our expectations. Not to mention the fact that the way the owner greets patrons with hugs and appreciation is a special touch we don't find anywhere else these days."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUMkotXzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUMkotXzBBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICT2J-_0AE%7CCgwIl_X5sQYQ6LHEsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715370647,
+            "review_datetime_utc": "05/10/2024 19:50:47",
+            "review_text": "It was worth to drive for40 minutes  :) The coffee was good, and the bread was so good! I can tell how much they tried to choose good ingredients.\nI highly recommend this bakery. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMWJLbkp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMWJLbkp3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDj1bKnJw%7CCgsImr_fsQYQqImsBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714937754,
+            "review_datetime_utc": "05/05/2024 19:35:54",
+            "review_text": "First time and it won't be my last. It's a cute little cafe with a nice amount of variety. I got the creme brulee which was very light and airy with a nice thin crunchy layer of caramelized sugar on top. The carmel tart was their Creation of the Day. Super light filling topped with fluffy cream and little carmel strips. The tart was pleasantly crunchy and complemented the filling very well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqaWZuTUtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqaWZuTUtBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDjifnMKA%7CCgwIhczZsQYQ-M-rmQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714841093,
+            "review_datetime_utc": "05/04/2024 16:44:53",
+            "review_text": "Stopped in for a couple bakery items and lattes. Everything we had was absolutely wonderful and the service was excellent!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqd3ZxRTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqd3ZxRTlBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDjwvqE9AE%7CCgsIsI3GsQYQwI6NAQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1714521776,
+            "review_datetime_utc": "05/01/2024 00:02:56",
+            "review_text": "Very limited selection.  After waiting to order we were skipped for drivetru.   Because of that we lost the croissants we wanted."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqb0tTMkpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqb0tTMkpBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDjoKS2JA%7CCgwIwuq2sQYQ0KPguQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714271554,
+            "review_datetime_utc": "04/28/2024 02:32:34",
+            "review_text": "I very rarely leave reviews but Mado and its owners deserve all the praise in the world. They are wonderful people and the pastries are the best you'll probably ever have. Just exquisite, balanced, perfect flavors and textures. I drove an hour just for the pastries for the second time in two weeks so my wife and mother in law could try them today. Everyone agreed. The choux pastries are my favourite but you can't go wrong whatever your preference is. A million stars. Merci!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqc2ZPS05nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqc2ZPS05nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICjsfOKNg%7CCgwI6o6csQYQ0OSBjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713833834,
+            "review_datetime_utc": "04/23/2024 00:57:14",
+            "review_text": "I don't get to Rock Hill often, but I made sure to stop by Mado when I heard they were a Black owned French bakery. I got there later on in the afternoon, so a lot of goodies had already been bought. The staff was very welcoming and answered any questions I had.\n\nI thought the owners did an excellent job of converting the space of a former bank. I'm looking forward to visiting again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqN3JMODB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqN3JMODB3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICj7rL80wE%7CCgsI4I2WsQYQ2L6OMg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713735392,
+            "review_datetime_utc": "04/21/2024 21:36:32",
+            "review_text": "I love these Pecan caramel cookies. I miss them, but I move away from Rockhill to New Jersey. I miss those cookies so much. I will pay for delivering a dozen to me here in New Jersey. The owners are an amazing couple, and the bakery cafe atmosphere is lovely and unique. The place was a  bank before now you can enjoy the vault safe area as a nice lounge place to sit and enjoy your cup of coffee and pastry and read your favorite book. Really love this place, and those amazing cookies are the best. (Owner) attention-Let me know if you are willing to send me by mail a dozen of those cookies, and I will happy pay. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqdXJLRWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqdXJLRWtRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICjurKEkQE%7CCgsI_o2PsQYQ4OTMVQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713620734,
+            "review_datetime_utc": "04/20/2024 13:45:34",
+            "review_text": "I came to eat few desserts and I think they deserve more than 5 start. Everything was amazing"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREay1QTGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREay1QTGhRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDDk-PLhQE%7CCgwIkv_rsAYQqOHKhQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713045394,
+            "review_datetime_utc": "04/13/2024 21:56:34",
+            "review_text": "Great desserts! If you want a really great European dessert a French one this is the perfect place. I love Paris-Brest and they have the best one! Also try Creme Brulee because it's perfect! You can sit inside and outside or take out. Coffee and tea are also very good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREa2VPZHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREa2VPZHJBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDDkeOdrAE%7CCgsIht7bsAYQuI3yZg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712779014,
+            "review_datetime_utc": "04/10/2024 19:56:54",
+            "review_text": "Such an amazing visit ! Everyone was really helpful and friendly, i felt exceptionally welcomed ! Also , this super gorgeous lady in the line front of me told me \"bless you\" after I sneezed. What more could one ask for ? Greta staff and great customers !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREN0lfVFJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREN0lfVFJREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDD7I_TRQ%7CCgwI5pDGsAYQoPWB-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712425062,
+            "review_datetime_utc": "04/06/2024 17:37:42",
+            "review_text": "I can't believe it took me four years to go here.  Don't make the same mistake."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEMi1tVnNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEMi1tVnNnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICD2-mVsgE%7CCgwIgsOtsAYQ8Ji-xgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712021890,
+            "review_datetime_utc": "04/02/2024 01:38:10",
+            "review_text": "Amazing bakery- delicious desserts, great customer service. bravo to the chief and the owner! Will be back soon!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEM3NpTWhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEM3NpTWhBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICD3siMhAE%7CCgwIlrqWsAYQ4Iv16gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711643926,
+            "review_datetime_utc": "03/28/2024 16:38:46",
+            "review_text": "Amazing pastries!! Fresh juice and espresso!! Check this place out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEc05yLWRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEc05yLWRBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICDsNr-dA%7CCgwIv9z7rwYQ6LO57QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711205951,
+            "review_datetime_utc": "03/23/2024 14:59:11",
+            "review_text": "What a wonderful bakery! Wonderful staff,  very engaging friendly owner and AMAZING pastries!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5dTRpT25BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5dTRpT25BRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID9u4iOnAE%7CCgwIm-rwrwYQ4MmGlgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711027483,
+            "review_datetime_utc": "03/21/2024 13:24:43",
+            "review_text": "Quality, authentic, handmade.\nVisited this morning- Cappuccino and croissant aux amandes.\nI went to college in France, and this takes me back 10+ years to my favorite patisserie in Poitiers.\nThank you!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5OC1hTHpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5OC1hTHpnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID98-aLzgE%7CCgwIjcLtrwYQ6J6-xAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710973197,
+            "review_datetime_utc": "03/20/2024 22:19:57",
+            "review_text": "Friendly and enthusiastic owners- food is fresh, serious attention to detail and process.  Everything I tried was superb.  Highest recommendation for an authentic French bakery."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5MmFmNERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5MmFmNERREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID92af4DQ%7CCgsIzvnhrwYQ-PrMKA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710783694,
+            "review_datetime_utc": "03/18/2024 17:41:34",
+            "review_text": "Cream puffs.  Go get it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5bFppVExREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5bFppVExREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC9lZiTLQ%7CCgwI56WorwYQsM7TxgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709839079,
+            "review_datetime_utc": "03/07/2024 19:17:59",
+            "review_text": "I live across the street from Mado and would always say I'm going to stop in, well today I did and it was worth every penny spent. The pastries are so delicious. I love that it's not overly sweet but just sweet enough. Customer service is top tier. I recommend anyone looking for some really good bakery items to RUN to Mado."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5NWY2SmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5NWY2SmtBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC95f6JkAE%7CCgwIsoGorwYQ-PeN5AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1709834418,
+            "review_datetime_utc": "03/07/2024 18:00:18",
+            "review_text": "There were only 2 choices of pastries. The macchiato was overpriced for the size."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5cGR5MHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5cGR5MHFnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC9pdy0qgE%7CCgwIo7qnrwYQgMijkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709825315,
+            "review_datetime_utc": "03/07/2024 15:28:35",
+            "review_text": "Mado is a not so hidden but easily overlooked gem on the very busy Cherry Rd., but you will quickly forget where you are as soon as you walk through the door. The smell of freshly baked artisan bread, buttery croissants, and tunes of French Cafe music in the air will transport you to all the good vibes. I was greeted by the very friendly owners who make you feel right at home in their bakery.\n\nI'm now convinced that I have never had a real croissant until now. I'm not sure what I've been eating. Those crescent shape bread things come no where close to what Mado has to offer.\n\nI will not be a happy customer until I've tried everything on the delicious menu. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkcjRHRW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkcjRHRW9nRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDdr4GEogE%7CCgwIss39rgYQqPahugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709139634,
+            "review_datetime_utc": "02/28/2024 17:00:34",
+            "review_text": "Excellent coffee, and pastries are AMAZING.\nI am becoming a regular. Please try, you won't be disappointed"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkeVlEaUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkeVlEaUNREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDdyYDiCQ%7CCgwIyozprgYQ6NrUswM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708803658,
+            "review_datetime_utc": "02/24/2024 19:40:58",
+            "review_text": "Absolute worth the stop. We ended up getting a full box because we could not make a decisions because everything looked just that wonderful. The savory bread was stuffed with bacon and onion and was still warm once we tried a bite. Truly one of the best hidden gems in the area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkMFlmbFBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkMFlmbFBBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDd0YflPA%7CCgwIl4HorgYQsOLG0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708785815,
+            "review_datetime_utc": "02/24/2024 14:43:35",
+            "review_text": "Incredible!! The food, the people, such a wonderful place. If there's a line, WAIT! It's worth waiting hours just to enjoy what you can tell is true love in a pastry."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkX0pMeDBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkX0pMeDBnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDd_JLx0gE%7CCgwIqtHZrgYQ2JqvpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708550314,
+            "review_datetime_utc": "02/21/2024 21:18:34",
+            "review_text": "I stopped in and ordered the walnut croissant with an americano coffee. The croissant was so delicious I inhaled it and forgot to take a picture of it, but here are some photos of the pastries that are sold there. Mado bakery serves an assortment of fresh hand-made pastries and coffee. The Bakery is a hidden gem on Cherry Road in Rock Hill. Stop in and try any of the pastries. You won't be disappointed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkcjd2X293RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkcjd2X293RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICdr7v_owE%7CCgwI29rNrgYQ6NnIywE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708354907,
+            "review_datetime_utc": "02/19/2024 15:01:47",
+            "review_text": "What a delightful little cafe right here in Rock Hill. So very glad that Odette and Serge - real French immigrants who were trained in their craft in Europe - chose this town to open their bakery and coffee shop.\nEverything is hand made behind the counter and often you can see the crew making one of their delectable pastries, whether sweet or savory.\nThe items might cost a little more than what you'll get in the bread aisle elsewhere, but the taste and quality absolutely speak for themselves."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkdmJ1T2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkdmJ1T2tnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICdvbuOkgE%7CCgwIvbDDrgYQ4JG70AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708185661,
+            "review_datetime_utc": "02/17/2024 16:01:01",
+            "review_text": "Long line but had a great time talking to everyone while waiting for great pastries."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0OXZqM0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0OXZqM0dBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDt9vj3GA%7CCgwI64f-rQYQgKaF_wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707049963,
+            "review_datetime_utc": "02/04/2024 12:32:43",
+            "review_text": "Overall wonderful experience.  Highly recommend"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0ck5pby1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0ck5pby1RRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDtrNio-QE%7CCgwIoo32rQYQ4OnuzgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706919586,
+            "review_datetime_utc": "02/03/2024 00:19:46",
+            "review_text": "Caramel Latte is so creamy and delicious  and this crunchy pastry is the best. I absolutely love it.\n\nAll their pastries are made to perfection. What a pleasure to be able to try them. Thank you!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROd3VycE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROd3VycE5nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDNwurpNg%7CCgsIoOixrQYQ2NvSJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705800736,
+            "review_datetime_utc": "01/21/2024 01:32:16",
+            "review_text": "Pre-ordered some pastries in the morning. They were all very delicious.  Highly recommend the Berry \"tart\" and the Pistachio pastry.  So crunchy and not too sweet! Yum!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOOTh5RFNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOOTh5RFNBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICN98yDSA%7CCgwIs8imrQYQ-PiuyAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705616435,
+            "review_datetime_utc": "01/18/2024 22:20:35",
+            "review_text": "Had a wonderful pastry and macaron and chai latte. Always have the best time here. The drive thru is super convenient when it is open!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNONTl6Q3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNONTl6Q3pnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICN59zCzgE%7CCgwI456lrQYQwPvtuwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705594723,
+            "review_datetime_utc": "01/18/2024 16:18:43",
+            "review_text": "Best macarons in the area!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQycFBxZnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQycFBxZnFnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID2pPqfqgE%7CCgwIweKirQYQ-OviwwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705554241,
+            "review_datetime_utc": "01/18/2024 05:04:01",
+            "review_text": "Excellent place. Great bakery snacks and very friendly staff. Great coffee shop"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOemUyX1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOemUyX1F3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICNze2_Qw%7CCgwIoq-brQYQ0JiLnwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705432994,
+            "review_datetime_utc": "01/16/2024 19:23:14",
+            "review_text": "Authentic, from scratch French pastries. Cheerful service. Quaint small dining  room with a few tables in an old bank lobby. Coffee table and seating in a small vault. AMAZING pastries. Worth the circuitous trip from the highway for a local gem."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOekxYalJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOekxYalJ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICNzLXjRw%7CCgwI88-FrQYQ8ODaiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705076723,
+            "review_datetime_utc": "01/12/2024 16:25:23",
+            "review_text": "Cute place. Great service. Tasty pastries and coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOekluMFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOekluMFh3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICNzIn0Xw%7CCgwI8cqFrQYQyO6h7gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705076081,
+            "review_datetime_utc": "01/12/2024 16:14:41",
+            "review_text": "The food was beyond my expectations. Absolutely delicious.\nFlavorful, fluffy, buttery and crunchy croissants.\nThe raspberry panacota tart was a bite from heaven!\nI can't wait to be back.\n100% worth it because you are definitely paying for good quality food here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxc2N5RDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxc2N5RDVnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC1scyD5gE%7CCgsImaXGrAYQkNu9Bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704039065,
+            "review_datetime_utc": "12/31/2023 16:11:05",
+            "review_text": "This is literally the best croissant I've ever had, and I've tried many. Melt in your mouth, perfect sweetness. Mhmm"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxM3N1X2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxM3N1X2xRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC13su_lQE%7CCgwIsfnArAYQoM_59gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703951537,
+            "review_datetime_utc": "12/30/2023 15:52:17",
+            "review_text": "Deliciously well-crafted pastries. Real fruit, real nuts, high quality presentation and fantastic taste. Cream croissants were filled to the brim and amazingly flavored. Savory Croissant was better than any breakfast sandwich I've had. Sweet items are the perfect sugar level. Great indoor ambience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxNW9EWjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxNW9EWjVRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC15oDZ5QE%7CCgsInpa4rAYQsI2UBA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703807774,
+            "review_datetime_utc": "12/28/2023 23:56:14",
+            "review_text": "Astounding coffee and they always make you feel welcome, the baked goods are to die for especially when you can get them fresh."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWdGJXdlZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWdGJXdlZREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDVtbWvVQ%7CCgwIxdLsqwYQoKC-hAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702570309,
+            "review_datetime_utc": "12/14/2023 16:11:49",
+            "review_text": "First time going wonderful service coffee is good as well I got the mocha frappe"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWMWZhQi13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWMWZhQi13RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDV1faB-wE%7CCgwIsZfsqwYQyPLw7wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702562737,
+            "review_datetime_utc": "12/14/2023 14:05:37",
+            "review_text": "10 stars. The bacon and Swiss croissant sandwich will haunt my dreams. The pastries are incredible. Best peppermint mocha I've ever had. I don't think I can ever go to another coffee shop or chain ever again. Im ruined!! The staff was so kind. Thank you!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWcHVPRDZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWcHVPRDZRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDVpuOD6QE%7CCgwI_briqwYQ0PCw-wE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1702403453,
+            "review_datetime_utc": "12/12/2023 17:50:53",
+            "review_text": "There lemon tart picture on website is nothing like the actual lemon tart they sell it's more like a small cookie with a drop of lemon cream and a drop of meringue on top , also they have a small glass case with limited few choices of deserts not like there website displays one thinking there's a wide variety which is not the case , the average price is approximately $10 range for most of there items ,, also they DO NOT OFFER or honor any military discount or senior discount at all"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWa05YU2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWa05YU2xnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICVkNXSlgE%7CCgsIgOO5qwYQ8Ky9Ww%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701736832,
+            "review_datetime_utc": "12/05/2023 00:40:32",
+            "review_text": "Food is fabulous. Coffee is great. You can sit inside an old bank vault while you sip your coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscWJtVk5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscWJtVk5BEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIClqbmVNA%7CCgwIy5zzqgYQiLLAmAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700580939,
+            "review_datetime_utc": "11/21/2023 15:35:39",
+            "review_text": "Great little coffee shop with pastries and other great stuff!! Owned by a French couple."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscVl6dFVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscVl6dFVnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIClqYztUg%7CCgsI3_jyqgYQyN-JUQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700576351,
+            "review_datetime_utc": "11/21/2023 14:19:11",
+            "review_text": "Amazing baked goods. Good coffee. Service is polite but slow.\n\nThe croissants are the best I had for some time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsc2RpNnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsc2RpNnB3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIClsdi6pwE%7CCgwI-ZTvqgYQ8J2-gwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700514425,
+            "review_datetime_utc": "11/20/2023 21:07:05",
+            "review_text": "ABSOLUTELY TO DIE FOR!!!!!! The lavender honey latte was so smooth and delicate! The creme brulee was one of the best I have ever eaten! The flavors were so delicate and complex! If you're a cheapskate like me the prices might startle you, I promise this is money well spent!!!! The employees were also the sweetest! Overall incredible experience and cafe "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURGcm9uWTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURGcm9uWTB3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDFronY0wE%7CCgwIs4GoqgYQ-JHb_wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699348659,
+            "review_datetime_utc": "11/07/2023 09:17:39",
+            "review_text": "Great customer service and pastries. I had a caramel espresso shot that gave me energy the entire day. I absolutely love the cozy vault area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGOGZmVTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGOGZmVTdnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICF8ffU7gE%7CCgwIrd_1qQYQ2IOPzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698525101,
+            "review_datetime_utc": "10/28/2023 20:31:41",
+            "review_text": "Great conversation. Amazing customer service and beverages. The food is spectacular. An artwork of deliciousness!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGNGMtc21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGNGMtc21RRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICF4c-smQE%7CCgsI6NX0qQYQwK-6GA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698507496,
+            "review_datetime_utc": "10/28/2023 15:38:16",
+            "review_text": "Delicious drinks + pastries, and the kindest people!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1LXRTdnJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1LXRTdnJ3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID5-tSvrwE%7CCgsIqPTZqQYQ8PC5OQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698069032,
+            "review_datetime_utc": "10/23/2023 13:50:32",
+            "review_text": "Absolutely LOVE Mado! The owners are so kind and great at what they do. My favorite drink on their menu is the spiced chai latte"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1bFBPckNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1bFBPckNREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC5lPOrCQ%7CCgsImPKWqQYQkMXGPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696971032,
+            "review_datetime_utc": "10/10/2023 20:50:32",
+            "review_text": "The baked goods never fail to amaze me! Very good! Super friendly and amazing people!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURadWRUWEF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURadWRUWEF3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDZudTXAw%7CCgwIgbT1qAYQ2MqipwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696422401,
+            "review_datetime_utc": "10/04/2023 12:26:41",
+            "review_text": "This place is a must go! One of the best bakery's I have ever been to!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaaVliOVpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaaVliOVpREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDZiYb9ZQ%7CCgwItqzwqAYQkP3hjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696339510,
+            "review_datetime_utc": "10/03/2023 13:25:10",
+            "review_text": "Love the welcoming atmosphere.... very laid back wifi accessible comfy chairs ... lattes and pastries are so fresh and flavorful"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURabm9yQldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURabm9yQldnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDZnorBWg%7CCgwIjovmqAYQ4Mzc-QE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1696171406,
+            "review_datetime_utc": "10/01/2023 14:43:26",
+            "review_text": "Extremely limited selection apart from coffee. Croissants, creme bruleee, macarons etc."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaa3JYSzl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaa3JYSzl3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDZkrXK9wE%7CCgwIisjRqAYQsIv-xwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695835146,
+            "review_datetime_utc": "09/27/2023 17:19:06",
+            "review_text": "This is a hidden gem on an otherwise aging commercial area.  Go to the source here and get a wide variety of coffees and pastries. The staff (French) are happy to help you try something new.  If you want to have a nice experience outside of Americanized coffee chains this will be a nice treat"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaNmJIMENnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaNmJIMENnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICZ6bH0Cg%7CCgsIrNqGqAYQsLDDKA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694608684,
+            "review_datetime_utc": "09/13/2023 12:38:04",
+            "review_text": "I literally love this place so much, me and my mom always go here and the atmosphere feels so warm and inviting (like a second home). They are always so nice and understanding. Cant wait to get another choux <333"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwN2UyczN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwN2UyczN3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICp7e2s3wE%7CCgsIi8PJpgYQ8IXFMw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691509131,
+            "review_datetime_utc": "08/08/2023 15:38:51",
+            "review_text": "Bakery inside a old bank\nGood really good"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwOUpUdGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwOUpUdGpBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICp9JTtjAE%7CCgwIup-VpgYQ8JHErAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690652602,
+            "review_datetime_utc": "07/29/2023 17:43:22",
+            "review_text": "Great owners serving the best of everything"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKNi1fQl93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKNi1fQl93RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICJ6-_B_wE%7CCgwI9K2VpQYQ6PHEoAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688557300,
+            "review_datetime_utc": "07/05/2023 11:41:40",
+            "review_text": "It will be difficult, but don't lick the glass. Amazing food! Awesome, friendly folks!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKOHVuNHpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKOHVuNHpnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICJ8un4zgE%7CCgwInfzbpAYQiPj97gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687617053,
+            "review_datetime_utc": "06/24/2023 14:30:53",
+            "review_text": "When are they opening back up?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4NjZIT01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NjZIT01BEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx66HOMA%7CCgwI8-GrpAYQ8OCPqgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686827251,
+            "review_datetime_utc": "06/15/2023 11:07:31",
+            "review_text": "Paris has Always been our (Husband) favorite place in the World to visit. Having this place is like a Paris Heavenly Home. Can't wait to visit."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4dHV2VmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4dHV2VmNREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDxtuvVcQ%7CCgwIwtuDpAYQiLPf0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686171074,
+            "review_datetime_utc": "06/07/2023 20:51:14",
+            "review_text": "Excelente lugar! El mejor cafe en rock hill ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4Nm96UE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4Nm96UE9nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx6ozPOg%7CCgwImaf7owYQyNPa3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686033305,
+            "review_datetime_utc": "06/06/2023 06:35:05",
+            "review_text": "Absolutely fabulous! A friend had a special cake made for a luncheon I went to and it was out of this world. It was beautifully presented and one of the best tasting cakes I have had in years! Please support this French Bakery so they will stay in town."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4NHV6d0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NHV6d0l3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx4uzwIw%7CCgwIuZb0owYQ2IflowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685916473,
+            "review_datetime_utc": "06/04/2023 22:07:53",
+            "review_text": "The almost perfect reviews do Mado a little bit of injustice. Their only \"problem\" is that they're not closer to uptown Charlotte. I lived in Paris and the boulangerie trait was evident.  The owner took a quick break from the oven to personally take and serve us our order with a broad smile. French flag proudly on his collar. His team was very welcoming and the pastries were delicious, fresh and decadent.  Worth driving 40 minutes each way."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4N0wtc2dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4N0wtc2dnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx7L-sggE%7CCgwI1trtowYQ6NrejAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685810518,
+            "review_datetime_utc": "06/03/2023 16:41:58",
+            "review_text": "My husband and  I drove to rock hill to try Mado! It was 100 % worth the 45 min drive! It was absolutely incredible! Best pastries I have ever had! The owners and staff were so friendly, kind, and all around lovely! We honestly didn't want to leave bc the atmosphere was so comforting and fun!\n\nRUN to MADO! You will not regret it!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4N08tNFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4N08tNFR3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx7O-4Tw%7CCgwIo9ntowYQiOyZ5wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685810339,
+            "review_datetime_utc": "06/03/2023 16:38:59",
+            "review_text": "I don't often leave reviews,  but my wife and I love authentic French bakeries. A very lovely environment and the customer service is superb,\n\nThe pastries from sweet to savory are excellent,\n\nTrue culinary artists !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4NkxhcU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NkxhcU9BEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDx6LaqOA%7CCgwIwfTeowYQ4Lqw4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685568065,
+            "review_datetime_utc": "05/31/2023 21:21:05",
+            "review_text": "This place is a gem!! They are such a cool French bakery. The staff is so kind!! They definitely sell out of their stuff so get there earlier in the day. Big fan of their iced coffee!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4ejg2YldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4ejg2YldnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxz86bWg%7CCgwIlZzQowYQgKGblwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685327381,
+            "review_datetime_utc": "05/29/2023 02:29:41",
+            "review_text": "OMG. What a gem.  On our way to Charlotte Premium Outlets, made a stop around 3 pm. They were out of most pastries, but managed to buy 2 croissants, 2 choux (cream puffs), 2 madeleines, & a latte.  The madeleines were heavenly.  Sorry no photo. The croissants were perfect. The choux was different, but the pistachio cream was addictive.  I wish there were more to buy. Service was friendly.  She even spoke French to the guy making my latte.  Cool bank vault door to the lounge. Very cool."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NS1mN1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NS1mN1J3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICx5-f7Rw%7CCgsIrP_KowYQ8IiYGA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685241772,
+            "review_datetime_utc": "05/28/2023 02:42:52",
+            "review_text": "Please just go! The food is so good! we were on our way to Florida, and our baby needed a break from the road and stopped on a whim. I've never had pastry so good, and everyone there was so sweet! I recommend the choux au craquelin!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4aTdIYUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4aTdIYUpnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxi7HaJg%7CCgwIz_K_owYQgIvc5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685059919,
+            "review_datetime_utc": "05/26/2023 00:11:59",
+            "review_text": "great new place, very yummy"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4aTRiWVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4aTRiWVF3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxi4bYQw%7CCgwI0dK_owYQ0MbJngM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1685055825,
+            "review_datetime_utc": "05/25/2023 23:03:45",
+            "review_text": "Paid nearly $12 for two croissants.\nHigh quality food and people who own the place. However, $12 for $1 worth of food? Their days are limited with this arrogant french (european) thinking of, \"I provide the food, you pay as I deem necessary.\" Perhaps the rent is too high. I don't know. They won't last long.\nBryon Craig Carter"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4M2VHSVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4M2VHSVF3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICx3eGIQw%7CCgwIy721owYQ8KiMygI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684889291,
+            "review_datetime_utc": "05/24/2023 00:48:11",
+            "review_text": "This is THE best bakery in the area. Definitely worth your time to not only visit but also have it be a part of your regular routine."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4c2ZXVEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4c2ZXVEtBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxsfWTKA%7CCgsIx9GgowYQ-OjceA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684547783,
+            "review_datetime_utc": "05/20/2023 01:56:23",
+            "review_text": "Finally, the place where you can taste genuine French croissants and great coffee!!!! Definitely an A-place to visit"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4NGNub3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4NGNub3BBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICx4cnopAE%7CCgwIkOedowYQ2I2v3gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684501392,
+            "review_datetime_utc": "05/19/2023 13:03:12",
+            "review_text": "We heard about this bakery from a news story they did about them! My husband went the next morning at opening and got us a few treats to share. Absolutely delicious!!!!!!! Can't wait to go back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4anZPbWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4anZPbWdnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxjvOmggE%7CCgsIj_6TowYQqLTsWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684340495,
+            "review_datetime_utc": "05/17/2023 16:21:35",
+            "review_text": "Professional, delicious authentic bakery in the cutest building. This place is the full experience. If you haven't been here for a visit yet, i highly recommend making the trip soon! You won't regret it!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4c29Pa21BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4c29Pa21BRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxsoOkmAE%7CCgsItumDowYQoKH5Dw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1684075702,
+            "review_datetime_utc": "05/14/2023 14:48:22",
+            "review_text": "If I hadn't promised my girlfriend a hot chocolate on Mother's Day i would have never stood in like 30 MINUTES. The man working there was extremely nice and polite but apparently doesn't know how to make a cappuccino. Not sure why no one seems to know the difference between a cappuccino and a latte these days. Ugh....   $22 for two drinks and two small pastries seems a bit high as well.  No reason to rush back here"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4b3FlWUR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4b3FlWUR3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxoqeYDw%7CCgsI897_ogYQ6LerFg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1684008819,
+            "review_datetime_utc": "05/13/2023 20:13:39",
+            "review_text": "Lovely pastries. Friendly staff!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4Z0o2ek1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4Z0o2ek1nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICxgJ6zMg%7CCgsIwrfgogYQ8POuZg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683495874,
+            "review_datetime_utc": "05/07/2023 21:44:34",
+            "review_text": "People friendly and food delicious. Will go back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSODctcHRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSODctcHRBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR87-ptAE%7CCgsIjOnJogYQsIC8Bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683125388,
+            "review_datetime_utc": "05/03/2023 14:49:48",
+            "review_text": "Absolutely incredible people and food! Everyone needs to try it at least once, you'll love it!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSbzdDTXpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbzdDTXpBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRo7CMzAE%7CCgsIicnEogYQ4M-nOg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683039369,
+            "review_datetime_utc": "05/02/2023 14:56:09",
+            "review_text": "Absolutely miraculous food!! The baguette is incredible"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSdzhIdTBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSdzhIdTBRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRw8Hu0QE%7CCgwIlZ3EogYQgNGLlwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683033749,
+            "review_datetime_utc": "05/02/2023 13:22:29",
+            "review_text": "Best coffee in town fresh French pastry.  I always love their coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSMWJhMVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSMWJhMVZREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR1ba1VQ%7CCgwI-8i5ogYQwIb5xwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1682859131,
+            "review_datetime_utc": "04/30/2023 12:52:11",
+            "review_text": "Stopped by Saturday morning and found a french-style bakery run by very nice owners with tasty but over-rated and over-priced products.  We visit France twice a year so we do know what fresh french baguettes and pastries should taste like but unfortunately we didn't find them here.  We arrived when they open at 8:30am but the croissants and baguettes were not yet ready to come out of the oven.  When the baguette was finally ready, it was nice and warm but was not as light and airy in the middle as we expect from a good baguette.  The baguette crust was good but just a bit too dense inside and at $5 for a small baguette, is five times more expensive than what you would get at a French boulangerie.\n\nAlso tried their madelines which were quite tasty with nice crunchy edges and ordered a bacon quiche which was tasty but not exceptional.  Also ordered capuccinos which were good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMlphdDJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMlphdDJRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR2Zat2QE%7CCgwIzMCxogYQ4ISalAM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1682726988,
+            "review_datetime_utc": "04/29/2023 00:09:48",
+            "review_text": "The food looked absolutely delicious and I'm sure it would have tasted nice. The reason for my low rating is the customer service. When I walked in they didn't greet me or even attend me. I stood there for 7 minutes but was totally ignored. I got to anxious since it was my first time there and walked out. I wasn't dressed nicely but the couple walking in was. I turned around and saw they walked out with food!! I am not sure if it was coincidence or what not but seemed really unfair to me that they got attended and not me."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMmNyTTRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMmNyTTRnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR2crM4gE%7CCgwItbCxogYQoKCq3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682724917,
+            "review_datetime_utc": "04/28/2023 23:35:17",
+            "review_text": "Everything is delicious, and the service is amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSOFlPQUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSOFlPQUtREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR8YOAKQ%7CCgwI4uqrogYQgOrbvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682634082,
+            "review_datetime_utc": "04/27/2023 22:21:22",
+            "review_text": "Everything was wonderful will be back for sure"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSeXBuYnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSeXBuYnZRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRypnbvQE%7CCgwIyeePogYQ6LH49AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682174921,
+            "review_datetime_utc": "04/22/2023 14:48:41",
+            "review_text": "Very good\n"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSZ3N1RHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSZ3N1RHFnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRgsuDqgE%7CCgwIu8KGogYQ2ITXqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682022715,
+            "review_datetime_utc": "04/20/2023 20:31:55",
+            "review_text": "Mado is the best French pastry shop.  Real quality ingredients go into these delights."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSZ3NYaG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSZ3NYaG1nRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRgsXhmgE%7CCgwI7LqGogYQqOajyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682021740,
+            "review_datetime_utc": "04/20/2023 20:15:40",
+            "review_text": "I am French and know my pastries and  viennoiseries very well. I used to live in Bordeaux and would get the best. Now that I am living in the Carolinas, I always try to find a bit of home where and when I can. Of course,  people would say to try Amelie's French  bakery but I can honestly say to you that even if their pastries are good they are not authentic. When I found Mado bakery  online and look at the pictures, I could already see that everything would taste exactly like the pastries that I'll find in Bordeaux. And I was right, the macaroons are delicious,  the best I have tested in the US and at the same level that the ones I used to eat back home. The choux  pastries are unreal and show to me that the owners have the French savoir faire. If you want real authentic French  << boulangerie >> style pastries then you have to go there only. THE BEST!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSckpyWnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSckpyWnVnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDRrJrZugE%7CCgwIorWAogYQ-JuBkQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681922722,
+            "review_datetime_utc": "04/19/2023 16:45:22",
+            "review_text": "Finally got a chance to pick up a chocolate croissant. It took me back to Paris when I studied abroad.\nIt was heaven!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSNU16S2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSNU16S2VBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDR5MzKeA%7CCgwIuez5oQYQkPbgngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681815097,
+            "review_datetime_utc": "04/18/2023 10:51:37",
+            "review_text": "There are so many good things about this cafe that I do not even know where to start. My family and I are regulars, despite living about half an hour away. We usually come on Sundays to end the week on a relaxing and tasty note. The owners are very friendly, and it could not be more obvious that they have a passion for all they do and make there. They take the time to explain all the new items, of which there are everytime we go in, and to give recommendations. The menu is so varied each time we go, giving us a new experience each time- and yes there are some staple choices for those who like a little more routine. This place is a little slice of heaven, just like their treats. If you have a super busy lifestyle, or are in the slumps, this is the kind of place you make time for. When I say their coffee is incomparable, I mean it. You will not find another cafe nor a bakery of this quality anywhere near this area. If I could give 10 stars, I would."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSbDdENzJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSbDdENzJRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRl7D72QE%7CCgsIpIXboQYQ0KuqXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681310372,
+            "review_datetime_utc": "04/12/2023 14:39:32",
+            "review_text": "Phenomenal coffee, pastries and breads! Plus the owners are lovely and greet you with such warmth and hospitality. I look forward to coming back soon!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSazlMY0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSazlMY0t3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRk9LcKw%7CCgsI4vHMoQYQqIz8aA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681078498,
+            "review_datetime_utc": "04/09/2023 22:14:58",
+            "review_text": "I absolutely love a French bakery, and what Mado's offer is beyond delicious. All goods I tried were spot-on.\nThe family that runs it are really nice and lovely. Highly recommend, but go early in the day."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSM3B1VmxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSM3B1VmxBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICR3puVlAE%7CCgsIk42ooQYQoLmdKw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680475795,
+            "review_datetime_utc": "04/02/2023 22:49:55",
+            "review_text": "The best French bakery! Serge and his family are so warm and inviting. If there's a line it's always worth the wait."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSM3FUS0ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSM3FUS0ZnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICR3qTKFg%7CCgwI06OnoQYQiML-xwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680462291,
+            "review_datetime_utc": "04/02/2023 19:04:51",
+            "review_text": "Excellent little shop to enjoy a taste of Paris."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSM3RqbjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSM3RqbjhnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICR3tjn8gE%7CCgwItZ-noQYQsOid4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680461749,
+            "review_datetime_utc": "04/02/2023 18:55:49",
+            "review_text": "Totally wonderful.  French pastry chefs. Come early when there is a wide selection."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSdG9mVThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSdG9mVThRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRtofU8QE%7CCgwIqY-hoQYQiJ_epAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680361385,
+            "review_datetime_utc": "04/01/2023 15:03:05",
+            "review_text": "Oh my God, what a delicious cake and coffee, the owners are very friendly. The best thing is that everything is done up to date oh wow impossible \n\nHay Dios mio que ricura de pasteles y cafe ,los duenos son muy amables .Lo mejor es que todo es hecho al dia o wow increible "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSMnFHaGdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSMnFHaGdBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICR2qGhgAE%7CCgwI6JeXoQYQ-K2TiQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680198632,
+            "review_datetime_utc": "03/30/2023 17:50:32",
+            "review_text": "Husband and wife are legitimate French pastry chefs that make everything in there from scratch. Always with imported ingredients directly from France. Also love the bank vault turned lounge area. We bought four pastries and three drinks. Not disappointed at all, definitely looking forward to going back because everything tastes amazing and we can't wait to go back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSeXV6Z0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSeXV6Z0pREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRyuzgJQ%7CCgwIgd-SoQYQ-LKTugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680125825,
+            "review_datetime_utc": "03/29/2023 21:37:05",
+            "review_text": "Really loved my experience here! The chef came out and greeted me and was so personable. The apple croissant that I had was absolutely delicious and the coffee was good too. All of the pastries were really pretty looking. I came here to work for a few hours, and had no issues with the Wi-Fi. I will definitely be back here!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNScE5qbmJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNScE5qbmJnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRpNjnbg%7CCgsIzIv8oAYQkIPUFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679754700,
+            "review_datetime_utc": "03/25/2023 14:31:40",
+            "review_text": "Kindest people and incredible pastries. We had the bacon quiche and apple turnover. Thank you so much for making a great start to our weekend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSa0t5SUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSa0t5SUdBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRkKyIGA%7CCgwIzMTtoAYQ0LbpowM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679516236,
+            "review_datetime_utc": "03/22/2023 20:17:16",
+            "review_text": "Super delicious! I love the desert and Ice Lattes!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSd0pXMHB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSd0pXMHB3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICRwJW0pwE%7CCgwImLfroAYQsLWu4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679481752,
+            "review_datetime_utc": "03/22/2023 10:42:32",
+            "review_text": "Go early if you want to have some of the best delicate flavors."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoMzhpR0xREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoMzhpR0xREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDh38iGLQ%7CCgwIlN_moAYQ4N7pwwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679404948,
+            "review_datetime_utc": "03/21/2023 13:22:28",
+            "review_text": "The bakery items are delicious and the owners are delightful! Tres Bien!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoODRiaHp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoODRiaHp3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDh84bhzwE%7CCgwIwcTRoAYQ8LWYkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679057473,
+            "review_datetime_utc": "03/17/2023 12:51:13",
+            "review_text": "Mado is amazing! Their pastries are delicious and the coffee they make is my favorite!! The owners are so sweet and definitely make each visit enjoyable!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURodzZ1TEtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodzZ1TEtREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDhw6uLKQ%7CCgwI0pTMoAYQyMir4QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678969426,
+            "review_datetime_utc": "03/16/2023 12:23:46",
+            "review_text": "The lovely French owners if this cafe and bakery are doing an amazing job with the delicious treats and excellent coffee. Don't miss the almond croissant with chocolate or the choux. French students, come practice your French, too! Serge & Odette are so kind and gracious to French language learners!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoemIySFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoemIySFZnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDhzb2HVg%7CCgsI2szDoAYQoL_dFQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678829146,
+            "review_datetime_utc": "03/14/2023 21:25:46",
+            "review_text": "This place is amazing!! The coffee and baked goods are always delicious and the service is wonderful!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoOWFtMlF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoOWFtMlF3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDh9am2Qw%7CCgwIgu3BoAYQiMXt-QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678800514,
+            "review_datetime_utc": "03/14/2023 13:28:34",
+            "review_text": "Great Customer Service. Everything is made Fresh. It made me feel like I was in Paris! I cannot wait to go back and try everything! What a wonderful start to my Morning."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoX3ByNnpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoX3ByNnpRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDh_pr6zQE%7CCgwImMCqoAYQqI6H8AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678417944,
+            "review_datetime_utc": "03/10/2023 03:12:24",
+            "review_text": ""
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoc3F2VWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoc3F2VWdnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDhsqvUggE%7CCgwI3rKToAYQkMnjnwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678039390,
+            "review_datetime_utc": "03/05/2023 18:03:10",
+            "review_text": "Incredible customer service. Choices were excellent. Clean, beautiful store front. 10/10 recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURob3Z6eTJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURob3Z6eTJ3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDhovzy2wE%7CCgwIvNyOoAYQ2NCK0gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677962812,
+            "review_datetime_utc": "03/04/2023 20:46:52",
+            "review_text": "Wonderful environment and a great place to stop and write when I'm working in Rock Hill.\nDid I mention the food and coffee are delicious?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoNzlLakFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoNzlLakFnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICh79KjAg%7CCgwIsMbonwYQkLukgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677337392,
+            "review_datetime_utc": "02/25/2023 15:03:12",
+            "review_text": "Amazing good service and very helpful "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNodC1EanRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNodC1EanRBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICht-DjtAE%7CCgsI2azjnwYQsPjzEA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677252185,
+            "review_datetime_utc": "02/24/2023 15:23:05",
+            "review_text": "On a whim wife and I decided to stop and try out this bakery and we are glad we did. Food and coffee are both amazing and we will definitely be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1NE03RDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1NE03RDJBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICu4M7D2AE%7CCgwIxuzKnwYQsJbniwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676850758,
+            "review_datetime_utc": "02/19/2023 23:52:38",
+            "review_text": "The owners are great\n..... they go above and beyond in customer satisfaction.  Their bakery items are delicious perfections, more like super tasty works of art. Great selection of flavors on their hot or cold drink choices . If you haven't been to MaDo it would be worth your time (and money) to check them out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoaGUta2NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoaGUta2NnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIChhe-kcg%7CCgwIlM6-nwYQ0Nfl9wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676650260,
+            "review_datetime_utc": "02/17/2023 16:11:00",
+            "review_text": "Must try. Get there early in the day because they sell out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoNmFyc1d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoNmFyc1d3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICh6arsWw%7CCgwI1IO5nwYQgNnugwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676558804,
+            "review_datetime_utc": "02/16/2023 14:46:44",
+            "review_text": "I really enjoyed my first visit here. I had a large cafe latte and an apple pastry. They've done wonders with an old branch bank; I particularly loved the way they turned the vault into a sitting room."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoOHZIM2h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoOHZIM2h3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICh8vH3hwE%7CCgwI-t2UnwYQiO_HgQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675964154,
+            "review_datetime_utc": "02/09/2023 17:35:54",
+            "review_text": "I'm skeptical to review because I want this place to stay a hidden gem. As I sit here covered in crumbs from my chocolate croissant, I would say the pastries are phenomenal. Their coffee and chai are equally wonderful, but nothing tops the service and kindness of the Parisian transplant owners."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNobUtfZ1pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNobUtfZ1pnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIChmK_gZg%7CCgwIs-v5ngYQiJLuqwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675523507,
+            "review_datetime_utc": "02/04/2023 15:11:47",
+            "review_text": "Amazing! From the decor, customer service, offerings and taste, this place deserves to become your new favorite spot. I got the cappuccino, apple croissant, creme brulee, spinach quiche and hot chocolate which were all so flavorful and not too sweet, perfect bite and sip each time. Definitely come here and make it your new go to place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNobU1fT09REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNobU1fT09REAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIChmM_OOQ%7CCgwI9er5ngYQ-IyDkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675523445,
+            "review_datetime_utc": "02/04/2023 15:10:45",
+            "review_text": "From the customer service to the delicious food. Everything was perfect and not too sweet. Would definitely come back again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCcjhfLXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCcjhfLXR3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBr8_-twE%7CCgwIhbjnngYQiKWXuAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675222021,
+            "review_datetime_utc": "02/01/2023 03:27:01",
+            "review_text": "A taste of French patisserie right in Rock Hill! They have a variety of excellent pastries available that taste as good as they look. I've eaten my way through France and this is the real deal.\n\nOther reviewers were right when they suggested Mado's chai latte; it's so much more flavorful than what you typically get at coffee shops and now I can't go back to the weak stuff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCajlEVFVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCajlEVFVnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBj9DTUg%7CCgwIgdLkngYQoLytxgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675176193,
+            "review_datetime_utc": "01/31/2023 14:43:13",
+            "review_text": "This place is incredible! My family is French and I have spent a few years living in France myself. Just walking into Mado smells exactly like I'm back in a bakery in Paris, and the taste is spot on. The owners are incredibly warm and friendly as well. I could come here every day!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCdThyQUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCdThyQUdnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBu8rAGg%7CCgwIxJ3bngYQ-KvnhgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675022020,
+            "review_datetime_utc": "01/29/2023 19:53:40",
+            "review_text": "Everything was delicious and the owners were lovely!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCdTV5a3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCdTV5a3pBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBu5ykzAE%7CCgwIwZDbngYQgPjW0AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675020353,
+            "review_datetime_utc": "01/29/2023 19:25:53",
+            "review_text": "Authentic fresh pastries with a homey vibe. Will be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCeWJHNmJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCeWJHNmJREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBybG6bQ%7CCgsI-tO2ngYQ6JqeYw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674422778,
+            "review_datetime_utc": "01/22/2023 21:26:18",
+            "review_text": "Simply AMAZING!!!! Just like Paris, FRANCE !!!\n\nMy husband and I went to Mado and the Gallette des Rois was simply Devine!! Just like in France.\n\nWe came one time before and had their espresso and Chai- which was amazing.\n\nThey are so exquisite if you go in the afternoon you should order the day before or that morning. Everything sells so quick.\nThis is my favorite French bakery in the Charlotte Area!!! French owned! A gem in Rock Hill!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCa2N6eVZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCa2N6eVZBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBkczyVA%7CCgsI1uuwngYQ2LThTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674327510,
+            "review_datetime_utc": "01/21/2023 18:58:30",
+            "review_text": "A hidden gem! Freshly made bakery products, coffee drinks on point, and a friendly staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCX3VPUExnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCX3VPUExnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDB_uOPLg%7CCgwI6v2rngYQyMSBpwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674247914,
+            "review_datetime_utc": "01/20/2023 20:51:54",
+            "review_text": "I had an almond croissant and my wife had a chocolate croissant and latte. So very delicious and the owner and staff and friendly & welcoming. We have been here many times and will surely return."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCanZQNnVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCanZQNnVBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBjvP6uAE%7CCgwI_pilngYQ4LG_2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674136702,
+            "review_datetime_utc": "01/19/2023 13:58:22",
+            "review_text": "What? This place was unbelievable and the story behind the place was amazing.  Try the croissants!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCaE1XcGJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCaE1XcGJBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBhMWpbA%7CCgwIvcH7nQYQuMvd8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673453757,
+            "review_datetime_utc": "01/11/2023 16:15:57",
+            "review_text": "First time visiting Mado, drove in from Charlotte and it was well worth it. All of the treats were delicious and the owner was sweet and personable. Haven't had a better croissant yet! 10/10 recommend, I will be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCbU96NEJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCbU96NEJnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDBmOz4Bg%7CCgsIi5r3nQYQ2NqdHA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673383179,
+            "review_datetime_utc": "01/10/2023 20:39:39",
+            "review_text": "I have been here twice and I love absolutely everything I have had. I've had a spiced Chai frappe, a iced spiced Chai, the vanilla latte was fantastic with no burnt coffee at all, and two chouquettes which were great. They were sweets that weren't overly sweet."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMFlUdkdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMFlUdkdREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICB0YTvGQ%7CCgwI7vGvnQYQgKHRggM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672214766,
+            "review_datetime_utc": "12/28/2022 08:06:06",
+            "review_text": "I cannot say enough good things about this place, the owners are so sweet and the coffee and pastries are the best around and always freshly made"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCd2Itd1JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCd2Itd1JnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICBwb-wRg%7CCgwIhr2snQYQoPCxsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672158854,
+            "review_datetime_utc": "12/27/2022 16:34:14",
+            "review_text": "Wonderful\nLittle bakery. Hidden French Gem-"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCakxlUlNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCakxlUlNnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICBjLeRSg%7CCgwI6f-EnQYQ4IaV0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671512041,
+            "review_datetime_utc": "12/20/2022 04:54:01",
+            "review_text": "Delicious pastry and coffee!  French style :) Merci!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtcjdMXzBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtcjdMXzBRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-r7L_0QE%7CCgwIxq3enAYQsIXLsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670878918,
+            "review_datetime_utc": "12/12/2022 21:01:58",
+            "review_text": "Mado is amazing! The owners are really awesome people who are from France and create really delicious pastries and coffees. My favorite is the chai latte. The location is pretty clever and quirky. While it used to be a bank, there is a \"vault\" room where you can have a nice personal area to enjoy your delicacies, do work, etc.\n\nThere is also a drive-thru for on the go pickup, so the options here are excellent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtejZXU0hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtejZXU0hREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-z6WSHQ%7CCgwI0tjdnAYQqI-khQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670868050,
+            "review_datetime_utc": "12/12/2022 18:00:50",
+            "review_text": "Unbelievable  French Pastries, Delicious Coffee,Super Sweet Staff in a Perfect Atmosphere. I didn't want to leave & cannot wait to go back. Unforgettable experience. (10 Stars; because 5 isn't enough.)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtNV8yYnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtNV8yYnd3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-5_2bwwE%7CCgwIio7YnAYQ4JSFuAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670776586,
+            "review_datetime_utc": "12/11/2022 16:36:26",
+            "review_text": "Best Chai in town! Choux was to die for. The precision, thought, and flavor of the pastries is second to none."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtczRqNVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtczRqNVBREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-s4j5PQ%7CCgwIrd3JnAYQ2OXhjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670540973,
+            "review_datetime_utc": "12/08/2022 23:09:33",
+            "review_text": "Mado is my favorite go to on Sunday mornings. The owners are the friendliest people you could ever meet. Add to that their delicious fresh breads and pastries, you won't be disappointed!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtMDZDTFdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtMDZDTFdBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-06CLWA%7CCgwIj9DInAYQgLjo2QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670522895,
+            "review_datetime_utc": "12/08/2022 18:08:15",
+            "review_text": "Beautiful shop, delicious pastries + coffee, and such nice people! I loved my visit and plan on coming back! The macarons are AMAZING."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtX2Fxcm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtX2Fxcm9RRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-_aqroQE%7CCgsIyu_CnAYQ8OqfbA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670428618,
+            "review_datetime_utc": "12/07/2022 15:56:58",
+            "review_text": "Authentic French cafe owned by a wonderfully sweet French couple! Violin lessons are done in one of their extra spaces, so you might catch a show while you're there. Coffee and pastries both are wonderful. It's in a small spot that's easy to look over, but I would definitely suggest you stop by and try it out at least once; it's worth it every time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtaGRiX2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtaGRiX2xBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-hdb_lAE%7CCgwI1ZiznAYQqOKisQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670171733,
+            "review_datetime_utc": "12/04/2022 16:35:33",
+            "review_text": "Tres DELICIEUX! I wish I lived closer to this magnificent Patisserie. Friendly, Welcoming,  & Amazing Pastry. A little taste of Paris in Rock Hill."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtaGRLSUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtaGRLSUZREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-hdKIFQ%7CCgwI3oeznAYQyLq0qAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670169566,
+            "review_datetime_utc": "12/04/2022 15:59:26",
+            "review_text": "Delicious! Best macaroons. True French pastries"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtNlpXUU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtNlpXUU9REAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-6ZWQOQ%7CCgwIgvStnAYQiI7VmwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670085122,
+            "review_datetime_utc": "12/03/2022 16:32:02",
+            "review_text": "Excellent"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtc2ZHUXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtc2ZHUXRnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-sfGQtgE%7CCgwI8LSonAYQqNnAqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669995120,
+            "review_datetime_utc": "12/02/2022 15:32:00",
+            "review_text": "Wow what a treat!! We checked out Mado today and the food and drinks were wonderful. The owners are so pleasant and extremely helpful. We had coffee and an eclair at the restaurant and brought other pastries home. If you enjoy French pastry this is the place to go to in the Rock Hill area. Totally recommend anyone trying Mado. We will be returning in the future."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtc2ZDM0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtc2ZDM0l3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-sfC3Iw%7CCgwIxvqnnAYQiIfK0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669987654,
+            "review_datetime_utc": "12/02/2022 13:27:34",
+            "review_text": "The pastries here are so good!!! And the peppermint patty coffee was GREAT!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQteE9QVTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQteE9QVTZnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-xOPU6gE%7CCgwIg6zumwYQkIPKwAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669043715,
+            "review_datetime_utc": "11/21/2022 15:15:15",
+            "review_text": "Interesting"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQteVBDZnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQteVBDZnZnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID-yPCfvgE%7CCgwIotrkmwYQsNHwvAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1668885794,
+            "review_datetime_utc": "11/19/2022 19:23:14",
+            "review_text": "I tried a cappuccino and some pastries.  Everything was delicious.  They also have pure squeezed juices too. I'll have to try one next time. Everything was delicious.  I will be back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtazk3MzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtazk3MzBBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-k9730AE%7CCgwI7fK-mwYQuODf7gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668266349,
+            "review_datetime_utc": "11/12/2022 15:19:09",
+            "review_text": "As soon as I walked in, it smelled amazing. The drinks and food were all fantastic, and the owners were super friendly. I will be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtdk5ubmxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdk5ubmxRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-vNnnlQE%7CCgwI35L2mgYQ6LSHxgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667074399,
+            "review_datetime_utc": "10/29/2022 20:13:19",
+            "review_text": "Delicious French delicacies and wonderful owners. You wont be disappointed!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtbE5LWWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtbE5LWWV3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-lNKYew%7CCgwIiKzrmgYQyPmX-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666897416,
+            "review_datetime_utc": "10/27/2022 19:03:36",
+            "review_text": "Best macarons I have ever tried."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtbUlqSTBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtbUlqSTBRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-mIjI0QE%7CCgwIzqDkmgYQsI-m2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666781262,
+            "review_datetime_utc": "10/26/2022 10:47:42",
+            "review_text": "Good bakery. Just need to be there early. By 2 pm, everything is gone. Coffee is good too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtNEluR0lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtNEluR0lBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-4InGIA%7CCgwIzp_bmgYQ8KqjzQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666633678,
+            "review_datetime_utc": "10/24/2022 17:47:58",
+            "review_text": "After living in the Charlotte Metro Area for 20+ years, their is finally a bakery that is worth driving to. They absolutely earn the right to be called a French Bakery. I absolutely love everything and the owners are always happy to have a French chat with me. Thank you for giving me a taste of home."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtb0tiN2FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtb0tiN2FBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIC-oKb7aA%7CCgwIsqPamgYQ0OjQigM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1666617778,
+            "review_datetime_utc": "10/24/2022 13:22:58",
+            "review_text": "Best Chi Tea Pumpkin Tea Ever... takes a lil longer to get in and out and a lil pricey compared to other similar places you can get the and products. If you want to support local - this is the place to do it. Other then that it would be a pass...based off of selection of items, Price too high and the amount of time it takes to get in and out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlbF9QWDJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlbF9QWDJRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDel_PX2QE%7CCgwIkrTLmgYQqOG-jAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666374162,
+            "review_datetime_utc": "10/21/2022 17:42:42",
+            "review_text": "When you have to Google the food because you're too embarrassed to ask what it is, you know it's authentic. Smells amazing. Tastes delicious and the French man who works or possibly owns the place is so kind."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlX2UzR0l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlX2UzR0l3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDe_e3GIw%7CCgwI2uS2mgYQwJKBwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666036314,
+            "review_datetime_utc": "10/17/2022 19:51:54",
+            "review_text": "Cute little friends bakery. Simple menu prices are cheap"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlNmJ2NE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlNmJ2NE9nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDe6bv4Og%7CCgsIi62imgYQ8IftXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665701515,
+            "review_datetime_utc": "10/13/2022 22:51:55",
+            "review_text": "They are genuinely nice people and the pastry are out this world"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURla2ZIREpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURla2ZIREpBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDekfHDJA%7CCgwIpZ6bmgYQoIyH3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665584933,
+            "review_datetime_utc": "10/12/2022 14:28:53",
+            "review_text": "Everything Was Fantastic"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHOWNlWlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHOWNlWlR3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICG9ceZTw%7CCgwI-JmGmgYQqI6x4gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665240312,
+            "review_datetime_utc": "10/08/2022 14:45:12",
+            "review_text": "The Best coffee and pastry shop in the whole of Rock Hill.....Serge and family make you feel at home...I look forward to returning soon"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNldDVfYkNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNldDVfYkNBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICet5_bCA%7CCgwIzcTHmQYQiNXswAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664213581,
+            "review_datetime_utc": "09/26/2022 17:33:01",
+            "review_text": "Fantastic French deserts and coffee, make sure to get there early in the day before items out. They are that good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlbTgySzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbTgySzBBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICem82K0AE%7CCgwIsL68mQYQiP7TqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664032560,
+            "review_datetime_utc": "09/24/2022 15:16:00",
+            "review_text": "Mado is a one of a kind experience in Rock Hill. Everything is lovingly done, from the service to the baked goods and coffee drinks. A little taste of France in Rock Hill SC.\n\nBTW - Amelies in downtown Rock Hill cannot hold a candle to Mado."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNldWZUQlBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNldWZUQlBBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICeufTBPA%7CCgwI4_WbmQYQoJzh2gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663498979,
+            "review_datetime_utc": "09/18/2022 11:02:59",
+            "review_text": "Stumbled across this delightful bakery yesterday and bought a couple of bits. A heart shaped red sponge cake for my birthday cake and a pastry or two. LOVELY ladies in there. My friend mentioned it was my birthday and they gave me a little chocolate cake and said happy birthday! How very sweet! How on earth they got so much chocolate into one tiny cake is beyond me! The pastries were scrummy too. I don't go to Ware often but when I do I will definitely pay a return visit. Easily 5 stars from me. What a darling little place :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMm8tREp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMm8tREp3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICe2o-DJw%7CCgwIoJz6mAYQgNfh0AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662946848,
+            "review_datetime_utc": "09/12/2022 01:40:48",
+            "review_text": "Amazing experience everytime. I have been going here for years and I am never disappointed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbXJuLU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbXJuLU9nEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICemrn-Og%7CCgwIiMT4mAYQ-KKHqgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662919176,
+            "review_datetime_utc": "09/11/2022 17:59:36",
+            "review_text": "The most authentic French place I've been to. The owners are so sweet, the macaroons are delicious and if you want a coffee you should definitely try a French Carmella"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlNnJudlRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlNnJudlRBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICe6rnvTA%7CCgwIvdT3mAYQkPaU2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662904893,
+            "review_datetime_utc": "09/11/2022 14:01:33",
+            "review_text": "Super nice owners and the food is always delicious"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlc3ItRnVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlc3ItRnVBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICesr-FuAE%7CCgsI-8rymAYQ2I2nPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662821755,
+            "review_datetime_utc": "09/10/2022 14:55:55",
+            "review_text": "Delicious coffee and place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlc3BlMUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlc3BlMUtREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICespe1KQ%7CCgsI38LymAYQ0IT4cg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662820703,
+            "review_datetime_utc": "09/10/2022 14:38:23",
+            "review_text": "Soooo delicious! Yummy sliced chai latte, puff pastry with spinach and fetq, macaroons, and this choque. Perfect rainy day treats."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNleEstZXRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNleEstZXRRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICexK-etQE%7CCgwIp5PdmAYQ8JOh8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662470567,
+            "review_datetime_utc": "09/06/2022 13:22:47",
+            "review_text": "Serge & Odette are so delightful. All of their baked goods are beyond excellent & approaching Nirvanic. What a gustatory delight! We just had to sit & eat a buttered apple croissant with a Mocha Coffee while we waited for the regular croissants to come out of the oven. Mado French Bakery & Cafe is highly recommended. -Belinda from Ohio"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlaU5TTjNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlaU5TTjNnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICeiNSN3gE%7CCgsIqfDSmAYQ2OO3PA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662302249,
+            "review_datetime_utc": "09/04/2022 14:37:29",
+            "review_text": "Delicious pastries and friendly owners! The inside is very pleasant as well!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaUlpQkZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaUlpQkZnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICeiIiBFg%7CCgwIiOXSmAYQ2NXHzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662300808,
+            "review_datetime_utc": "09/04/2022 14:13:28",
+            "review_text": "Absolutely amazing, authentic French pastries. The coffee is amazing too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaUlpYUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaUlpYUZREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICeiIiaFQ%7CCgwI9uTSmAYQ2OS50QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662300790,
+            "review_datetime_utc": "09/04/2022 14:13:10",
+            "review_text": "Great customer service!!! The coffee and pasties were delicious!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlNEk3a2pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNEk3a2pnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICe4I7kjgE%7CCgsI4tHNmAYQuKP9Ug%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662216418,
+            "review_datetime_utc": "09/03/2022 14:46:58",
+            "review_text": "The owners are very sweet and warm! Their Chai is the best I have had and I am obsessed! (I don't even really like chai). They have authentic French pastries as I believe the owners are from France. 10/10 recommend!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlZ01Da0xnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlZ01Da0xnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICegMCkLg%7CCgsIvNrJmAYQ0MLwUg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662151996,
+            "review_datetime_utc": "09/02/2022 20:53:16",
+            "review_text": "Tres bon cafe/boulangerie a la francaise !\nAccueil super sympa"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1dTl5SmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1dTl5SmNBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDuu9yJcA%7CCgsIgZG4mAYQ8IzNdQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661864065,
+            "review_datetime_utc": "08/30/2022 12:54:25",
+            "review_text": "Great food and excellent service. Even if you don't speak French, you'll leave feeling like family.\nAnd who knew that hanging out in a bank vault could be so much fun?!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1X2VEU3V3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1X2VEU3V3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDu_eDSuwE%7CCgwI8ZGpmAYQiIi5ogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661618417,
+            "review_datetime_utc": "08/27/2022 16:40:17",
+            "review_text": "Wonderful and authentic French bakery.  The food is so light and flavorful.  This is a little piece of Paris in Rock Hill, SC."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1eWNHZnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1eWNHZnBnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDuycGfpgE%7CCgsIvtCUmAYQkNrhCA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661282366,
+            "review_datetime_utc": "08/23/2022 19:19:26",
+            "review_text": "I met the owner Sarge today.  Great French cafe.  Excellent Excellent product!  Highly recommend !!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1OXJ2QUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1OXJ2QUJ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDu9rvABw%7CCgwI0amEmAYQoOnmtAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661015249,
+            "review_datetime_utc": "08/20/2022 17:07:29",
+            "review_text": "Such and amazing little gem in Rock hill! The best pastries I've had! The owners are French and import their ingredients resulting in authentic French pastries that's to die for. Always went to Amelie's before, but this place is my new favorite! Had the Americano with amaretto along with the Apple crossiant and a vanilla rum pastry that were fresh out of the oven. Definitely a must try place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MU5tQ0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MU5tQ0Z3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDu1NmCFw%7CCgwI4f_jlwYQwLmfjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660485601,
+            "review_datetime_utc": "08/14/2022 14:00:01",
+            "review_text": "Excellent bakery, I'm not an expert or even an armature in bakery lore, but I know when you enjoy something so much you immediately want to go back in line to get more it's something very very good! Coffee was stellar too! This will become a usual spot for me on weekends!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1cEl6SkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1cEl6SkZ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDupIzJFw%7CCgwI8ovglwYQoPGTswE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660421618,
+            "review_datetime_utc": "08/13/2022 20:13:38",
+            "review_text": "Beautiful pastry and a welcoming atmosphere. We had the chai latte, spinach and feta feuillete which were 10/10. Buttery, crisp, and fresh; they didn't last the drive home. Almond croissants had just the right amount of sweetness. We can't wait to come back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1aE52MXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1aE52MXdnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDuhNv1wgE%7CCgsItPfelwYQ0PO0KQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660402612,
+            "review_datetime_utc": "08/13/2022 14:56:52",
+            "review_text": "Absolutely delicious! Macaroons were amazing and so was the chai latte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1bTRDcXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1bTRDcXJRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICum4CqrQE%7CCgwIwaK7lwYQiJiQowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659818305,
+            "review_datetime_utc": "08/06/2022 20:38:25",
+            "review_text": "We absolutely love everything about this lovely French bakery. The owners are so pleasant. The bakery is authentic French from the flour sourced from France to the technique and incredible product. You must try this place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1OWJxN3RnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1OWJxN3RnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICu9bq7tgE%7CCgwIj62nlwYQqIyrgAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659491983,
+            "review_datetime_utc": "08/03/2022 01:59:43",
+            "review_text": "Very rarely will I break out the word \"divine\" to describe food, and yet I find myself using it every time I go to Mado."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1cnJ6SmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1cnJ6SmRBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICurrzJdA%7CCgwIuOeKlwYQ4N3SrwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659024312,
+            "review_datetime_utc": "07/28/2022 16:05:12",
+            "review_text": "Sweet owners, tasty drinks, comfortable atmosphere and not noisy or distracting!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1dkxMZDR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1dkxMZDR3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICuvLLd4wE%7CCgwI_ZnwlgYQ-Jj35wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658588413,
+            "review_datetime_utc": "07/23/2022 15:00:13",
+            "review_text": "What a gem! A French pastry chef in Rock Hill! The flour and butter are shipped from France and everything made fresh every morning. I had quiche (for breakfast) and an apple pastry. He also makes very highbrow and beautiful cakes for special order. Look at the site - incredible."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPODlPb3lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPODlPb3lRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO89OoyQE%7CCgsIs9e8lgYQ2KThNQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657744307,
+            "review_datetime_utc": "07/13/2022 20:31:47",
+            "review_text": "BEST KEPT SECRET IN ROCKHILL,SC. I stopped by for the first time on Sunday. I bought the macaroons, Jamaican me crazy coffee and a lemon custard type treat. OMG! Everything was fantastic even the refreshing conversation with the owners. I will definitely be back. A taste of \"Paris\"."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPMDR2MEV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPMDR2MEV3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO04v0Ew%7CCgwInJK7lgYQiN-L-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657719068,
+            "review_datetime_utc": "07/13/2022 13:31:08",
+            "review_text": "Absolutely best bakery around!\nItems were warm and fresh and so so DELICIOUS! Owners were incredibly kind,patient and helpful!!  can't wait to go back!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPZzkzS2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPZzkzS2x3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOg93KlwE%7CCgsIq7O2lgYQiJaZPw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657641387,
+            "review_datetime_utc": "07/12/2022 15:56:27",
+            "review_text": "Great people, great desserts.  By far the best macarons I've ever had!  I had a spiced chai latte that was perfect as well. Go! Eat! You'll love it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPOWZtZ1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPOWZtZ1NBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO9fmgSA%7CCgsI2M-ulgYQoJrvIQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657513944,
+            "review_datetime_utc": "07/11/2022 04:32:24",
+            "review_text": "Great people, amazing pastries. You cant go wrong."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPdGY2WUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPdGY2WUdBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOtf6YGA%7CCgwI7aKtlgYQkMaKugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657491821,
+            "review_datetime_utc": "07/10/2022 22:23:41",
+            "review_text": "We happened across this wonderful cafe after spending the afternoon at Riverwalk. A very lovely and welcoming French couple run it and all of their baked goods are made fresh in house. Delicious coffee and pastries! We can not wait to go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPLWJpZWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPLWJpZWp3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO-biejwE%7CCgwIgcemlgYQyIeQkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657381761,
+            "review_datetime_utc": "07/09/2022 15:49:21",
+            "review_text": "Everyone was incredibly sweet and the food was as AMAZING! The experience of a genuine Parisian baked good was unlike anything in Rock hill! Will definitely be coming back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPdWV5ZklREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPdWV5ZklREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOueyfIQ%7CCgwIrvyllgYQoJSwhAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657372206,
+            "review_datetime_utc": "07/09/2022 13:10:06",
+            "review_text": "Best chocolate croissants outside of France! Get there early on the weekends or be prepared to wait in line. Hidden gem in rock Hill. The owners are sweet and kind people as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPLXJYWjlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPLXJYWjlnRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO-rXZ9gE%7CCgwI1JqHlgYQ-OTv_QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656868180,
+            "review_datetime_utc": "07/03/2022 17:09:40",
+            "review_text": "Every experience is ahh-mazing.\nWe love Serge is so wonderful.\nNo pastries today (we were too late today ) but my Vanilla Carmela was fab!\nSo happy they chose Rock Hill!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPLW9uREx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPLW9uREx3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO-onDLw%7CCgwImY-HlgYQkLbVigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656866713,
+            "review_datetime_utc": "07/03/2022 16:45:13",
+            "review_text": "Such an amazing family owned coffee  shop! They have delicious baked goods hand made right there! Also the coffee is out of this world! Try something  new and you won't be disappointed!!!! Also the building used to be a bank so you can enjoy your coffee in a giant SAFE!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPOG8taUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPOG8taUJ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO8o-iBw%7CCgsIzI7_lQYQiMLKDg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1656735564,
+            "review_datetime_utc": "07/02/2022 04:19:24",
+            "review_text": "It's great food but the are always sold out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPNkpHdWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPNkpHdWRnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO6JGudg%7CCgsIgaDilQYQkLHfKQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656262657,
+            "review_datetime_utc": "06/26/2022 16:57:37",
+            "review_text": "The bakery is wonderful, everything my family had was delicious. We start financier blueberry and almond. Both had incredible flavor along devine texture and a very slight sweetness. We then went back and got a croissant,  which to say was one of the the best of my experiences. The outside crispy with perfect browned butter flavor. The inside light and flaky with a softness of warm butter.\nWe also had a coffee which both were mad perfectly, my cappuccino had a rich Expresso flavor to balance with steamed milk  perfection. My wife's cold brew Carmel was delicious as well.\n\nHighly recommend to anyone!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPOExDYnNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPOExDYnNRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO8LCbsQE%7CCgsI9JDdlQYQwMyyTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656178804,
+            "review_datetime_utc": "06/25/2022 17:40:04",
+            "review_text": "I should have taken pictures but it was too good to stop eating. All the ingredients are from France. The owners make everything fresh daily. They are the kindest people and we just adore them. I can't spell all of the specific deserts I've tried. Next time I will take time to make note and take a few pictures. It has such a small feel to it. Like stepping into a little bakery in the middle of France. Praying Mado stays where they are for a long time or at least expands. It's one of the only bakery's that makes me feel fully confident in the ingredients I'm eating. Thank you guys!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPNE9xX0pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPNE9xX0pBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDO4Oq_JA%7CCgwIku_YlQYQyMHC5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656108946,
+            "review_datetime_utc": "06/24/2022 22:15:46",
+            "review_text": "incredible. i expected great, but this is devine."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPb09fcWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPb09fcWJ3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOoO_qbw%7CCgwI97zYlQYQ4MOb4wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656102519,
+            "review_datetime_utc": "06/24/2022 20:28:39",
+            "review_text": "Amazing people run this place. Amazing pastries, amazing coffee, amazing feeling of love in the air"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPd01lR1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPd01lR1V3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOwMeGUw%7CCgsI87vXlQYQuL7zfA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656086003,
+            "review_datetime_utc": "06/24/2022 15:53:23",
+            "review_text": "A delicious and definitely French find in Rockhill!  The pastries and peach slush were yummy.  The owners/pastry chefs very friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPd1BYUEZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPd1BYUEZBEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgIDOwPXPFA%7CCgwI_6jXlQYQoP2NhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656083583,
+            "review_datetime_utc": "06/24/2022 15:13:03",
+            "review_text": "Incredible pastries, coffee drinks, and engaging owners."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbjRycGh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbjRycGh3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICOn4rphwE%7CCgsI7PDRlQYQuIX7Vg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655994476,
+            "review_datetime_utc": "06/23/2022 14:27:56",
+            "review_text": "Great service and food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPdF9YbUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPdF9YbUVnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICOt_XmEg%7CCgwIqabMlQYQ0IKYqwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655903017,
+            "review_datetime_utc": "06/22/2022 13:03:37",
+            "review_text": "Wow! What an unexpected treat in Rock Hill! A lovely Parisian cafe with authentic drinks and pastries. The owners are very kind and welcoming! I enjoyed the French Carmella and choux pastry. I can't wait to come back and try more things. It was all so delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPMGJHNHRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPMGJHNHRBRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICO0bG4tAE%7CCgwI85-YlQYQkKD3jAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655050227,
+            "review_datetime_utc": "06/12/2022 16:10:27",
+            "review_text": "Iced Coffee tastes like heaven! Bakery items are amazing! The owners are amazing as well! This little slice of heaven in Rock Hill is 10/5 stars and everyone needs to visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPdHRmeHl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPdHRmeHl3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICOttfxywE%7CCgwI2sKIlQYQ6L3zngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654792538,
+            "review_datetime_utc": "06/09/2022 16:35:38",
+            "review_text": "Serge and Odette were great! They were welcoming and  are very experienced french pastry chefs. Lots of delicious French pastries"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPMnVQbHRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPMnVQbHRRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICO2uPltQE%7CCgsI26D-lAYQgJiCUA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654624347,
+            "review_datetime_utc": "06/07/2022 17:52:27",
+            "review_text": "This place is such a hidden treasure! The macarons are the best I've ever tasted and the owners are always wearing a smile. They hail from Paris and the flavors of all their baked goods prove it. 10/10 recommend this amazing small business"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPNHVyZ0JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPNHVyZ0JnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICO4urgBg%7CCgwI6bbzlAYQoOSziAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654446953,
+            "review_datetime_utc": "06/05/2022 16:35:53",
+            "review_text": "Authentic, delicious French baked goods and amazing coffee. The owners are so kind and welcoming. My family loves this place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPX096VWN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPX096VWN3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICO_OzUcw%7CCgwIhN7ulAYQ-PaXvwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654370052,
+            "review_datetime_utc": "06/04/2022 19:14:12",
+            "review_text": "Such a happy place with happy people & delicious treats. Definitely a must visit!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPd01MaUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPd01MaUJnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgICOwMLiBg%7CCgsIjM7PlAYQwNO1aQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653860108,
+            "review_datetime_utc": "05/29/2022 21:35:08",
+            "review_text": "Delicious and such nice people! We will be stopping by every chance we get!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyMzRPcGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyMzRPcGhRRRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID234OphQE%7CCgwIv_fNlAYQgJvAuAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653832639,
+            "review_datetime_utc": "05/29/2022 13:57:19",
+            "review_text": "If you like to go places where there is a great atmosphere and like to feel at home. Look no further!!\nThese people are the best!!\nSweet sweet spirit!\nI enjoy it every time I go!!\nIf I could give 10 stars I would!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyLTdlTlB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyLTdlTlB3EAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID2-7eNPw%7CCgwI-KS-lAYQ2LaOnwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653576312,
+            "review_datetime_utc": "05/26/2022 14:45:12",
+            "review_text": "Mado's is the closest you will get to Parisian boulangerie-patisserie without the trip to France! This family owned business is classically trained in baking pastries and other baked goods and the fact that they go the extra effort to import French flour makes all of the difference. The cafe is delicious as well. Go for the espresso or americano for a more authentic experience. Drip coffee is an acquired american taste."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQydlo2ZERnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQydlo2ZERnEAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID2vZ6dDg%7CCgwIpd6qlAYQkJeRsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653255973,
+            "review_datetime_utc": "05/22/2022 21:46:13",
+            "review_text": "I drive 2 hours just to go to this place. Everything there is just perfect. This is truly a special place. The owners are the sweetest people on earth!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyamIyN0hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyamIyN0hREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID2jb27HQ%7CCgwIyoWklAYQsLfrhgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653146314,
+            "review_datetime_utc": "05/21/2022 15:18:34",
+            "review_text": "everything is amazing!! staff are very friendly and welcoming, and the pastries are very good too :)))"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQybnR2TDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQybnR2TDF3RRAB!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID2ntvL1wE%7CCgsIgJGFlAYQ0NWmMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652639872,
+            "review_datetime_utc": "05/15/2022 18:37:52",
+            "review_text": "The pastries and coffee were delicious."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyMU9PUFpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyMU9PUFpREAE!2m1!1s0x0:0x4ccb2a811e393280!3m1!1s2@1:CIHM0ogKEICAgID21OOPZQ%7CCgwI1ejZkwYQ0KiRtAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651930197,
+            "review_datetime_utc": "05/07/2022 13:29:57",
+            "review_text": "Probably the best and nearest french pastries you'll ever get to if you can't go to France. Great customer service with the sweetest smiles! Magnifique!!!"
+        }
+    ]
+}

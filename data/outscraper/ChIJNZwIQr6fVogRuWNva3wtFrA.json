@@ -1,0 +1,291 @@
+{
+    "place_name": "Charlotte Mecklenburg Library | Myers Park",
+    "place_id": "ChIJNZwIQr6fVogRuWNva3wtFrA",
+    "place_rating": 4.2,
+    "place_total_reviews": 58,
+    "place_google_id": "0x88569fbe42089c35:0xb0162d7c6b6f63b9",
+    "place_reviews_id": "-5758365061144943687",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJNZwIQr6fVogRuWNva3wtFrA&authuser=0&hl=en&gl=BR",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqMkpfZG5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqMkpfZG5nRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICj2J_dngE%7CCgwI8KKAsQYQ0LqasgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713377648,
+            "review_datetime_utc": "04/17/2024 18:14:08",
+            "review_text": "A great library!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNENjRlbXB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNENjRlbXB3RRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICD64empwE%7CCgwIkMessAYQsNHMxQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712006032,
+            "review_datetime_utc": "04/01/2024 21:13:52",
+            "review_text": "Tiny but great with a great place to study. Staff are awesome. I want to give a shout out to Bianca, Barbara, and Laura! Thank you for helping me today."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEcTZQOGFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEcTZQOGFREAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICDq6P8aQ%7CCgsIzoWssAYQwPCEBw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711997646,
+            "review_datetime_utc": "04/01/2024 18:54:06",
+            "review_text": "Absolutely wonderful little library! The staff are very helpful and nice. The manager went above and beyond to help us resolve a problem. The location is small but perfect for my little family. Thank you for being so accommodating!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkM05icDFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkM05icDFBRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDd3Nbp1AE%7CCgsI1czargYQ4LqDcg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1708566101,
+            "review_datetime_utc": "02/22/2024 01:41:41",
+            "review_text": "I never knew about this location existed until I needed a desktop to add an attachment to an email reply on Wednesday, 02-07-24. If you're on Providence Rd in a certain direction during rush hour traffic, it can be a little tricky getting to the library. I ended up going farther down Providence, making a u-turn, and then taking a quick left then right into the parking lot.\n\nThe women's restroom was clean. Sitting at the computer station, I could hear that the attendant near the front door was very helpful as people went to the desk to ask questions.\n\nI saw the Black History Month display, but just barely and only because I was looking for the restroom. I know that this is a smaller location, but the display should've been in a more prominent location. If you weren't coming out of a restroom or going anywhere near the room being used for a youth event, it's not easily seen at all. Hoping that wasn't done intentionally."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWMjZtYmZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWMjZtYmZBEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDV26mbfA%7CCgsI5uP3qwYQyKehaw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1702752742,
+            "review_datetime_utc": "12/16/2023 18:52:22",
+            "review_text": "Similar to other reviews, I would not recommend this location to families with small children. The staff/branch manager are not welcoming to parents with children under 3. Fortunately, other branches in the Charlotte Mecklenburg system are extremely kid-friendly!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWNF9XUkRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWNF9XUkRnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDV4_WRDg%7CCgsImt_xqwYQ4ICwJA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702653850,
+            "review_datetime_utc": "12/15/2023 15:24:10",
+            "review_text": "Best library. Love their system"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsdDhDMnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsdDhDMnp3RRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIClt8C2zwE%7CCgwIuJyZqwYQsOW-_wI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1701203512,
+            "review_datetime_utc": "11/28/2023 20:31:52",
+            "review_text": "This library is a mixed bag because it's either really quiet or everyone is speaking at a normal talking volume and none of the staff ever enforces the idea that the library is supposed to be quiet. Definitely pass on this if you study or read without noise cancelling headphones. It's a nice library otherwise though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4NVplVjNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4NVplVjNnRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDx5ZeV3gE%7CCgwIur6cpAYQ6KuV7AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1686576954,
+            "review_datetime_utc": "06/12/2023 13:35:54",
+            "review_text": "What a treat to have a library in the community -- though a small location, it is accessible and easy to navigate. There is a small children's room that has three computers with educational and creative programs. The children's books are alphabetical by author's last name and easy to access. There are often youth activities available (coloring pages for example) as you exit. Though it doesn't open until 9 am on weekdays, there is a book return directly outside the main entrance. It is simple to reserve books online and pick-up in the library (shelves near the children's room)! Easy, private parking lot too!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoNjhYMnJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoNjhYMnJ3RRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICh68X2rwE%7CCgsIoovZnwYQsNisRw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677084066,
+            "review_datetime_utc": "02/22/2023 16:41:06",
+            "review_text": "Extremely knowledgeable and helpful staff!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtbVlyMUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtbVlyMUN3EAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgID-mYr1Cw%7CCgsIy8SunAYQ0ODRWQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1670095435,
+            "review_datetime_utc": "12/03/2022 19:23:55",
+            "review_text": "Nice location, friendly staff.  No adult or teen meeting spaces...?!  Not sure why that is...."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1MF9fdHlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1MF9fdHlRRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICu0__tyQE%7CCgwIxLS1lwYQsL3WuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659722308,
+            "review_datetime_utc": "08/05/2022 17:58:28",
+            "review_text": "I've been carrying my library card ever since I could write my name. I love the NC Libraries and enjoyed my time at this branch as a REALTOR(r). Thanks to the fast wifi I was able to quickly jump between multiple tabs, play video and post. While I was working I could barely hear some of the locals communicating with the librarians and I could tell based on their tones that both were smiling. Quick answers were given when a member asked how to find a DVD. Good workspaces, friendly staff and best of all Great room for parents and children to enjoy a good book together!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyNHZUaF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyNHZUaF93RRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC24vTh_wE%7CCgwIrPrDlQYQgJOctAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1655766316,
+            "review_datetime_utc": "06/20/2022 23:05:16",
+            "review_text": "Too small"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMydnVpRnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMydnVpRnhnRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC2vuiFxgE%7CCgwIpcCHkwYQoPaH6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650581541,
+            "review_datetime_utc": "04/21/2022 22:52:21",
+            "review_text": "The people are so nice! Mrs. Vines helped me with my project and she really went above and beyond to help me."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyLXNQTmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyLXNQTmNnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC2-sPNcg%7CCgwIu5P4kgYQ8LG45wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650330043,
+            "review_datetime_utc": "04/19/2022 01:00:43",
+            "review_text": "Great staff and awesome library! Will be back soon"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyLXR6bWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyLXR6bWVnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC2-tzmeg%7CCgwIxKv3kgYQ6KeMpwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650316740,
+            "review_datetime_utc": "04/18/2022 21:19:00",
+            "review_text": "This is my favorite place to look at books! I always find great ones."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyZ0o3Z3JBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyZ0o3Z3JBRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC2gJ7grAE%7CCgwIsrTEkgYQyKf2nwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649482290,
+            "review_datetime_utc": "04/09/2022 05:31:30",
+            "review_text": "I rarely go to this library but I went today and was pleasantly surprised by how knowledgeable the workers were. Thank you Laura for answering every single one of my million questions and helping my kids find their favorites. Thank you also for telling us about the Launch tablets for kids. We were heading out for a ten hour ride for Spring Break and they will definitely get tons of use! I also met the new manager Lona and she is very sweet. Thank yall, every one of you for being amazing."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSURxbHZVURAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURxbHZVURAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDqlvUQ%7CCgwIytCXhwYQqM25_wI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1625679946,
+            "review_datetime_utc": "07/07/2021 17:45:46",
+            "review_text": "Quaint location with suitable kids area. The librarian was very friendly. But no room for a teen space. Had good variety of children's books and some YAs. Smallest of the 5 branches we've visited."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLcl9tQTV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLcl9tQTV3RRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICKr_mA5wE%7CCgwIwIaNhAYQkI_StgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619215168,
+            "review_datetime_utc": "04/23/2021 21:59:28",
+            "review_text": "One of my fav branches!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTbVpfbTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTbVpfbTNnRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDSmZ_m3gE%7CCgsIpZS5_wUQ8K6UIw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1609452069,
+            "review_datetime_utc": "12/31/2020 22:01:09",
+            "review_text": "Dude working behind the desk was as helpful as he could be but there's an elder woman here who just carries pitchers of water around disrespecting struggling mothers. She seems to hate children and mothers and not really do anything important. Would not recommend this library to anyone under the age of 30 unless you want hate from an elderly woman"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpcDVmNHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpcDVmNHBBRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICip5f4pAE%7CCgwIpqTQ_QUQ8NquxAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605636646,
+            "review_datetime_utc": "11/17/2020 18:10:46",
+            "review_text": "The gentleman behind the desk was very helpful"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwbG9xRndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwbG9xRndBRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgID0loqFwAE%7CCgwIqIP97QUQoLi1rgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572815272,
+            "review_datetime_utc": "11/03/2019 21:07:52",
+            "review_text": "Best library in town! Went here with my daughter on Saturday. Didn't know the name of the book but knew something about it, not much. Lora did a look up and found it in a few seconds. The guy there Justin is the nicest fella you could ever meet and went and helped my kid find some other books. Then the other lady there, told me her name but I'd surely butcher it, showed me how to use the computer to find stuff and the self checker. Very polite crew you all have there. Your boss should go train the folks at Walmart on customer service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwajZfQVV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwajZfQVV3EAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC0j6_AUw%7CCgwI5NeT7QUQ0OfrjwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571089380,
+            "review_datetime_utc": "10/14/2019 21:43:00",
+            "review_text": "The Staff at this location is extremely knowledgeable and helpful.  It's small but has that small town, warm and friendly vibe ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0ek1Ta2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0ek1Ta2NBEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIC4zMSkcA%7CCgsI4ZvZ5wUQ4MaObQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1559645665,
+            "review_datetime_utc": "06/04/2019 10:54:25",
+            "review_text": "Thats no't a library is a restaurant"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3aU5MbUpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3aU5MbUpBEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICwiNLmJA%7CCgwIveax2wUQwMiCkQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1533834045,
+            "review_datetime_utc": "08/09/2018 17:00:45",
+            "review_text": "Great library very easy to walk to if you live withen a mile or two of it. the staff is so wonderful ,helpful ,and consists of around 10 members (or at least from what I can tell) parking is limited but again you can easily walk to it since it's the center of many neighborhoods!they have small little sections and it's not overwelming.1/4 of it is a kids room where they have fun activities for all ages like movies ,etc.  They have computers, book sales, nooks, toys and it's right next to Harris teeter if you need to get some groceries.the other parts of the library are computer area,studying area ,waiting/sitting area but very open.When people talk about \"bad staff\"or \"too small\" I get a little frustrated because This is my favorite library,I've loved it since as long as I can remember,the staff has always greeted me with a smile ,it's never crowded or noisy,and I've never run out of books or cds:-)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBOTgyTjNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOTgyTjNRRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICA982N3QE%7CCgwIvu731wUQwI7usQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1526593342,
+            "review_datetime_utc": "05/17/2018 21:42:22",
+            "review_text": "Fantastic cozy little library, the best."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndU8zTmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndU8zTmhRRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDguO3NhQE%7CCgsI8pPVzgUQgOKZTg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1507150322,
+            "review_datetime_utc": "10/04/2017 20:52:02",
+            "review_text": "Nice library branch in a great neighborhood...however, the staff is very unprofessional...which is why I always go the back entrance just to not speak to them."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBc3JtMTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBc3JtMTlBRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDAsrm19AE%7CCgsIuIOtzAUQwIXrNg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1502298552,
+            "review_datetime_utc": "08/09/2017 17:09:12",
+            "review_text": "Super helpful librarian!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOHM2VWNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOHM2VWNBEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICg8s6UcA%7CCgwI_drzywUQgLXJvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1501359485,
+            "review_datetime_utc": "07/29/2017 20:18:05",
+            "review_text": "My favorite of all the PLCMC branches! Great staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnaUxMY1BnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnaUxMY1BnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDgiLLcPg%7CCgwIyYTkywUQwPS23wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1501102665,
+            "review_datetime_utc": "07/26/2017 20:57:45",
+            "review_text": "The parking can fill up during the peak summer hours, but this quaint branch is my favorite.  CMLibrary has done a fantastic job linking their branches through the app.  I have all of my holds quickly delivered here.\n\nThe staff is super friendly and it feels like a small town local library."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbXJib2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbXJib2xRRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDgmrbolQE%7CCgwIu8uKxAUQgI-FzQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1484957115,
+            "review_datetime_utc": "01/21/2017 00:05:15",
+            "review_text": "This branch of the library is quite small and is a little inconvenient to access via car -- you can only turn right into it. I mostly request books online and have them delivered here for pickup. That process is very quick and easy."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRMWZtS3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRMWZtS3NnRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDQ1fmKsgE%7CCgwIju_EwwUQgN-zkwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1483814798,
+            "review_datetime_utc": "01/07/2017 18:46:38",
+            "review_text": "Quaint and nice.  reminds me of libraries in the small town I grew up in "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnZ1pEbTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnZ1pEbTZnRRAB!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICggZDm6gE%7CCgwIi6q1wAUQwOnp6wI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1477268747,
+            "review_datetime_utc": "10/24/2016 00:25:47",
+            "review_text": "Very small library.\nLimited parking.\nLots of older people frequent.\nChildren's area:\nLocated in a small but decent sized room\nTwo computers\nVery small DVD section\nSmall book section\nNice window seats\nTwo big kid tables with puzzles and coloring\nmaterials\nLarge stuffed animals to play with\n\ntoddler Storytime: very fun and engaging. Kids are not expected to just sit in one area but can dance and walk around the room during the story time time.\n\nOne very negative aspect would be when I witnessed a librarian asking a Mother to go take her child for a walk because the baby was crying. The mother and child were in the children's area and the baby was doing what normal babies do it. The mother was very flustered and ended up just leaving the library. Things like this I find to be unacceptable, and hopefully it is not something that happens often"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnc0wyX0hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnc0wyX0hnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDgsL2_Hg%7CCgsI8vSCvQUQgN3FMg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1470151282,
+            "review_datetime_utc": "08/02/2016 15:21:22",
+            "review_text": "Beautiful library but small which makes it very noisy. Came to study but between the employees and patrons at the desk talking in normal tone and slamming what sound like a cash drawer as they work to the 2 fire trucks that have passed by within the hour that I've been here. Study cubes are right by the window so you hear any traffic noise that goes by. I can also hear someone over in the kid section narrating to the kids and playing music and the 2 people having a full conversation in the book aisle."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bXZiNENnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bXZiNENnEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgICwmvb4Cg%7CCgwImuG9jgUQwJuZvgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1372549274,
+            "review_datetime_utc": "06/29/2013 23:41:14",
+            "review_text": "i like this place. it works for me and my family. i come here to read the paper sometimes. u can drink coffee here they dont mind. cant wait for starbucks to open in the new harris teeter will make my trip much better. they have a cool garden. the wifi works in the garden. i tested it on my iphone 5. the people here are really nice. the librarians are young and not all mean and evil like in other libraries. bathrroms are always clean. they have stories they read to kids most mornings which my niece loves to come to since she is little. eveything is good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURncElPeU5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURncElPeU5BEAE!2m1!1s0x0:0xb0162d7c6b6f63b9!3m1!1s2@1:CIHM0ogKEICAgIDgpIOyNA%7CCgwIl5WejQUQ4KfzrQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1369934487,
+            "review_datetime_utc": "05/30/2013 17:21:27",
+            "review_text": "I love this little library. It sits right on the corner, so perfect to make as a destination during a nice stroll around the neighborhood. I love coming here just to read the paper or check out a late best seller before walking over to Harris Teeter to grab a few items for dinner. One of the best treasures of Charlotte's wonderful Myers Park neighborhood."
+        }
+    ]
+}

@@ -1,0 +1,851 @@
+{
+    "place_name": "Archive CLT",
+    "place_id": "ChIJzUFGL22hVogRXuG-SGJB45k",
+    "place_rating": 5,
+    "place_total_reviews": 125,
+    "place_google_id": "0x8856a16d2f4641cd:0x99e3416248bee15e",
+    "place_reviews_id": "-7357965475810188962",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJzUFGL22hVogRXuG-SGJB45k&authuser=0&hl=en&gl=UA",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNicWN1Y0xREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNicWN1Y0xREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICbqcucLQ%7CCgwInqiatQYQ2KqemAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722192926,
+            "review_datetime_utc": "07/28/2024 18:55:26",
+            "review_text": "Good vibes, nice people, music. Nice black owned business"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiaHVhRU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiaHVhRU5REAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICbhuaENQ%7CCgwI7veNtQYQ4J-e6QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721990126,
+            "review_datetime_utc": "07/26/2024 10:35:26",
+            "review_text": "Cute little coffee shop. Love the atmosphere and the ambiance. Great place to work at or meet with friends. The Foxy Brown Latte is EVERYTHING!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiOE1PU0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiOE1PU0NREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICb8MOSCQ%7CCgsIgPf5tAYQ4IHFDw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721662336,
+            "review_datetime_utc": "07/22/2024 15:32:16",
+            "review_text": "I'm normally hesitant to try new coffee places because it rarely meets my expectations. But as soon as I walked in, I felt the energy. It made me feel like I was at family's house. The drink being amazing is the icing on top! I tried the dirty chai, iced with almond milk & vanilla."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURydy1PQnBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURydy1PQnBRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDrw-OBpQE%7CCgwI6tTqtAYQqKy1hAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721412202,
+            "review_datetime_utc": "07/19/2024 18:03:22",
+            "review_text": "Beautiful space & people. Menu items were pleasing. Must take a selfie in the bathroom. Bag of coffee beans is affordable and staff will grind them for you. Artwork and books for sale. A feel good coffee shop!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURybUlDSml3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURybUlDSml3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDrmICJiwE%7CCgwIqMXMtAYQ6PqSgwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720918696,
+            "review_datetime_utc": "07/14/2024 00:58:16",
+            "review_text": "Very cool place and I loved my tea refresher!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMOWVfWDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMOWVfWDJBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDL9e_X2AE%7CCgsIq8T_swYQkNeCKA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719657003,
+            "review_datetime_utc": "06/29/2024 10:30:03",
+            "review_text": "Awesome place, wish I had discovered Archive CLT sooner"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMek5yS0hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMek5yS0hREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDLzNrKHQ%7CCgwIs8btswYQoPioxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719362355,
+            "review_datetime_utc": "06/26/2024 00:39:15",
+            "review_text": "The entire place is decorated with Black culture. It brings back great memories and is a good space for conversations. The atmosphere is very warm and neo-soulish, and the owner is as sweet as pie."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMcFBXWGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMcFBXWGNBEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDLpPWXcA%7CCgwIz63rswYQsJHh0AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719326415,
+            "review_datetime_utc": "06/25/2024 14:40:15",
+            "review_text": "This is the best place to get your coffee. The place has a very cool vibe and is very welcoming to all. The coffee is great! I  recommend the Iced Foxy with Oat Milk!! Archive is a relaxing place to sit and work or hang with friends to catch up."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6aEltWkJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6aEltWkJ3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDzhImZBw%7CCgwIy6aMswYQ8NCdsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717769035,
+            "review_datetime_utc": "06/07/2024 14:03:55",
+            "review_text": "An atmosphere you won't find anywhere else in CLT."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6OC1YbkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6OC1YbkhnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICz8-XnHg%7CCgsI6fr-sgYQuP-0bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717550441,
+            "review_datetime_utc": "06/05/2024 01:20:41",
+            "review_text": "I was referred by one of my clients to check this place out! It was MORE than what I expected and the drinks were BETTER than Starbucks!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6b1pmbDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6b1pmbDN3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICzoZfl3wE%7CCgwI68LysgYQiM_56QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717346667,
+            "review_datetime_utc": "06/02/2024 16:44:27",
+            "review_text": "I really like this coffee. The grounds are different. I really like them. It's delicious. I'd love to start every morning with this cup of coffee. I got the Mocha visiting from Alaska. I recommend trying her coffee it's unique."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUemN2UTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUemN2UTVBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDTzcvQ5AE%7CCgsIouHNsgYQsJDVaw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716744354,
+            "review_datetime_utc": "05/26/2024 17:25:54",
+            "review_text": "Delicious coffee and a great atmosphere and they have decaf !!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUenRDbXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUenRDbXVRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICTztCmuQE%7CCgwIm_mOsgYQkO-gvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715715227,
+            "review_datetime_utc": "05/14/2024 19:33:47",
+            "review_text": "I found this place on instagram and I decided to go see for myself. The decor is so cute I love the concept of the place. The coffee was good as well they had some cute music playing softly in the background setting the mood. I'd definitely recommend this place for anyone who loves a good cafe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUd3VEM1VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUd3VEM1VREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICTwuD3UQ%7CCgwIq_yCsgYQ8LHCugE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715519019,
+            "review_datetime_utc": "05/12/2024 13:03:39",
+            "review_text": "The absolute best place to get a cup of coffee! The decor and music that they play always gives me a feeling of nostalgia! They also have a great selection of books, vinyls and other items that any collector of memorabilia will adore. The coffee is always fresh and the service is always top tier! You can't go wrong ordering the \"Foxy Brown\" or \"Wildflower\" drinks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUOU9PbTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUOU9PbTlnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICT9OOm9gE%7CCgwI7Mz-sQYQgPqLygI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715447404,
+            "review_datetime_utc": "05/11/2024 17:10:04",
+            "review_text": "One of the few coffee shops in Charlotte that knows how to make a cortado. Great atmosphere and service too. I'll be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqZzVpR2pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqZzVpR2pBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDjg5iGjAE%7CCgsI_PXksQYQ6Pv-VA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715026684,
+            "review_datetime_utc": "05/06/2024 20:18:04",
+            "review_text": "Top 5 Dirty Chai Lattes in Charlotte...maybe even Top 3! (And I've tried plenty )\n\nIt's smaller inside, so not much space to stay and linger for long, but the decor is everything and I enjoyed all the Black history "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqb3BTSHlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqb3BTSHlBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDjopSHyAE%7CCgwI4sXGsQYQyLj8rAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714528994,
+            "review_datetime_utc": "05/01/2024 02:03:14",
+            "review_text": "This was my first visit.  I was hesitant about trying anything since I don't drink teas or coffee. Owner suggested I try \"Wildflower\" I was a little hesitant but really enjoyed it!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqaGEzWXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqaGEzWXdRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICjha3YwQE%7CCgsI_eegsQYQoIaAZA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713910781,
+            "review_datetime_utc": "04/23/2024 22:19:41",
+            "review_text": "Black owned!! Really cute vibe. Order the Foxy Brown."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqLWUzY3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqLWUzY3pnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICj-e3czgE%7CCgwIwpigsQYQ4OvotAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713900610,
+            "review_datetime_utc": "04/23/2024 19:30:10",
+            "review_text": "Such a cool space and concept. The staff were so cool and easy-going, and it was such a relaxing environment."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqa0tLdVp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqa0tLdVp3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICjkKKuZw%7CCgsIxLX7sAYQyLr_Eg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713298116,
+            "review_datetime_utc": "04/16/2024 20:08:36",
+            "review_text": "Friendly staff and amazing coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEbjhYTFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEbjhYTFpnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICDn8XLZg%7CCgwIwbq2sAYQyJj1ngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712168257,
+            "review_datetime_utc": "04/03/2024 18:17:37",
+            "review_text": "I got a latte with almond milk. It was made perfectly and was delicious. I highly recommend! The atmosphere is relaxing and I love the vintage decor."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEcXNQYnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEcXNQYnhBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICDqsPbxAE%7CCgsIo6ONsAYQ6IS1Qg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711493539,
+            "review_datetime_utc": "03/26/2024 22:52:19",
+            "review_text": "The best place to go for black ephemera, coffee, and networking in the heart of the west side of Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5bVk2SW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5bVk2SW9nRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID9mY6IogE%7CCgwI_qvhrwYQqLmg0gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710773758,
+            "review_datetime_utc": "03/18/2024 14:55:58",
+            "review_text": "Quite literally the best vibe in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5anBqb3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5anBqb3N3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID9jpjoswE%7CCgwIhJ3XrwYQgKGVmQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710608004,
+            "review_datetime_utc": "03/16/2024 16:53:24",
+            "review_text": "Such a cute spot!! Foxy Brown is absolutely delicious "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5bFBHOFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5bFBHOFN3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC9lPG8Sw%7CCgwIsMiNrwYQiMe38gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709401136,
+            "review_datetime_utc": "03/02/2024 17:38:56",
+            "review_text": "Really good coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkMjdDYkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkMjdDYkZ3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDd27CbFw%7CCgwI0df3rgYQ-ICa3AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709042641,
+            "review_datetime_utc": "02/27/2024 14:04:01",
+            "review_text": "The coffee was very good. I had a drip coffee and sat for a while. There was a musician setting up and I stayed a little while. I am not sure if that happens every Sunday but between the nice lady making coffee and the atmosphere I enjoyed this coffee shop."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4eXV6cDd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4eXV6cDd3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICxyuzp7wE%7CCgwIopDlrQYQ6KK9tgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706641442,
+            "review_datetime_utc": "01/30/2024 19:04:02",
+            "review_text": "This is my favorite coffee, latte and refresher spot in town. The Service is great, the atmosphere and conversations is like non-other. The Dirty Chai Latte is the best drink on the menu in my opinion."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROaDZLYklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROaDZLYklnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDNh6KbIg%7CCgwI7dDPrQYQiMr-1wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706289261,
+            "review_datetime_utc": "01/26/2024 17:14:21",
+            "review_text": "When Archive first opened, I took my co-worker with me after I visited and she cried.  She felt so full with happiness and belonging.  Archive evokes just that and more.  Being at Archive, brings up feelings of nostalgia, happiness, joy, belonging, and pride.  Every inch of Archive is perfectly curated, from the front door to the bathroom.  I love that it's in west Charlotte!  I love sharing this gem with my friends.  An iced dirty chai or the foxy brown (hot or iced) are my go to drinks.  Bonus points:  The owner is super dope, kind, creative, and personable!  She recently had an exhibit at the Mint Museum in Uptown and I thoroughly enjoyed it and appreciated it!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROcnJPRnpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROcnJPRnpRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDNrrOFzQE%7CCgwIrZi6rQYQuOjF1AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705937965,
+            "review_datetime_utc": "01/22/2024 15:39:25",
+            "review_text": "Delightful experience. Stopped here on a whim for our girls day out and absolutely loved the atmosphere, the service, and the coffee. 10/10 "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURObW9INWxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURObW9INWxBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDNmoH5lAE%7CCgwItNu1rQYQ4PW94wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705864628,
+            "review_datetime_utc": "01/21/2024 19:17:08",
+            "review_text": "What is there not to love?!?"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOX3BDUnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOX3BDUnZ3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICN_pCRvwE%7CCgwIpvSRrQYQgO_h9wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705277990,
+            "review_datetime_utc": "01/15/2024 00:19:50",
+            "review_text": "The vibe is doubly comforting--nostalgic magazine covers and cozy atmosphere with tasty coffee and tea selections. I had the chai tea latte and it was perfection."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxcmM2cllnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxcmM2cllnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC1rc6rYg%7CCgwIhvrPrAYQkJbtzgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704197382,
+            "review_datetime_utc": "01/02/2024 12:09:42",
+            "review_text": "I'm not a coffee drinker but I love love love the refreshers that they offer so tasty! Aside from that the space is absolutely beautiful, comforting, and welcoming. One of my favorite places to visit in Charlotte"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxaWNLVFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxaWNLVFpnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC1icKTZg%7CCgwI5MTHrAYQuOrkigE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704059492,
+            "review_datetime_utc": "12/31/2023 21:51:32",
+            "review_text": "Visiting Archive CLT wasn't just a trip to get a VERY GOOD, EXPERTLY PULLED, AND PERFECTLY PORPOTIONED HOT CARAMEL LATTE; it was a beautiful demonstration of the natural bonds in our community, and the many ways we love, embrace, and make family of everyone who wishes to give and receive great energy and create authentic connections.\n\nI'm a recent transplant, and this place immediately became my new living room.\n\nUpon walking in you'll be surround by vintage memorabilia celebrating black roots and culture, and most likely be greeted by a friendly and vibrant group of people who want to know your name, how you're doing, and where you've been!\n\nYou could be invited to sit and chat about new city happenings, or historic people, places, and events that will endear you to the Queen's City in ways you hadn't yet considered.\n\nI was enriched by my time with regulars Jackie, Ken, and Chris today, and just can't possibly scream how beautiful a soul the owner is!\n\nPlease be intentional about making the trip and inquring about all the community development work planned in partnership with Archive. I promise, you won't regret it!!!\n\nSee you there soon!!!!!!\n\n*I was not paid to post this review."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsajZ6TnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsajZ6TnhRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIClj6zNxQE%7CCgsIobWaqwYQiJ6hcw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701223073,
+            "review_datetime_utc": "11/29/2023 01:57:53",
+            "review_text": "Friendly customer service and amazing atmosphere. My Blackness has found a home outside of home and we need more places like this!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGdmQyTm53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGdmQyTm53RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICFvd2NnwE%7CCgwIpa-FqgYQuMbl4QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698781093,
+            "review_datetime_utc": "10/31/2023 19:38:13",
+            "review_text": "I deliver here , with the best coffee and Products being delivered i highly recommend getting a cup. The owners are great people "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURad2VlUm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURad2VlUm13RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDZweeRmwE%7CCgwIh4jrqAYQkOSMuQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696252935,
+            "review_datetime_utc": "10/02/2023 13:22:15",
+            "review_text": "Super delicioso, cafe super bien hecho. Muy acogedor."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwbDYtMHdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbDYtMHdBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDpl6-0wAE%7CCgwIis3KqAYQ-MOWxQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695721098,
+            "review_datetime_utc": "09/26/2023 09:38:18",
+            "review_text": "They had great coffee here, the atmosphere is on point. This place offer a since peace but also they have pretty good music playing. To me if feels like a 90s especially with all the magazines."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaakstN05BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaakstN05BEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICZjK-7NA%7CCgwI1YLdpwYQkMLoqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693925717,
+            "review_datetime_utc": "09/05/2023 14:55:17",
+            "review_text": "Great atmosphere! Met the owner, she is amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwOWZUbGlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwOWZUbGlBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDp9fTliAE%7CCgwIk-inpwYQ8MvhiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693053971,
+            "review_datetime_utc": "08/26/2023 12:46:11",
+            "review_text": "A small and cute coffee shop with great service and quality. I had the iced latte and it's pretty good. They use environmentally friendly  plastic."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwanFtdHp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwanFtdHp3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDpjqmtzwE%7CCgwIuKCQpwYQ0OzFqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692667960,
+            "review_datetime_utc": "08/22/2023 01:32:40",
+            "review_text": "Great people, space, and coffee. Always a great visit at Archive!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwN2R1UjlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwN2R1UjlBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICp7duR9AE%7CCgsIzczJpgYQwNLpPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691510349,
+            "review_datetime_utc": "08/08/2023 15:59:09",
+            "review_text": "Dope spot soaked in culture! Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwX3ItSTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwX3ItSTB3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICp_r-I0wE%7CCgwIsaq1pgYQ-NqepAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691178289,
+            "review_datetime_utc": "08/04/2023 19:44:49",
+            "review_text": "My son invited me here and I really love it.\nVery unique very classic over the top\nMy Ice coffee was Great\nCan't wait to come back I love all the magazines and the pictures are awesome"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdE5hTE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdE5hTE9BEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICptNaLOA%7CCgwInd6UpgYQ0LKdpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690644253,
+            "review_datetime_utc": "07/29/2023 15:24:13",
+            "review_text": "A gem of a coffee shop! The refresher was amazing and coffee is great too! The shop has a lot of great artwork and artifacts featuring black culture. 10/10 recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKdGNxSGh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKdGNxSGh3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICJtcqHhwE%7CCgwIxaODpQYQsNDD1gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688261061,
+            "review_datetime_utc": "07/02/2023 01:24:21",
+            "review_text": "Really cool cafe. Love the decor and customer service was excellent. I got an iced chai with vanilla. Excellent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKMWYyVEtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKMWYyVEtnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICJ1f2TKg%7CCgwIzMqCpQYQsIeGsAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688249676,
+            "review_datetime_utc": "07/01/2023 22:14:36",
+            "review_text": "This place was awesome with great Black memorabilia. We loved it so much!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKOGViNjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKOGViNjdnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICJ8eb67gE%7CCgoI9dn2pAYQwLIE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688055029,
+            "review_datetime_utc": "06/29/2023 16:10:29",
+            "review_text": "What a unique space! Thank you to the owner for creating it. I think people overuse the term \"a vibe\"... and it takes away from a space like this that is exactly A WHOLE VIBE. Lovely staff, amazing art and vintage items to purchase, even the other clientele were awesome to chat with. We got the Foxy Brown Latte and Feeling Good hot tea and loved them both. I would definitely visit again. Enderly coffee roasts their coffee beans and supporting local businesses, who are also supporting local businesses makes our heart grow three sizes bigger (scientific fact ... look it up)."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKaXFldF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKaXFldF9BRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICJiqet_AE%7CCgsInuzcpAYQqPqsMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687631390,
+            "review_datetime_utc": "06/24/2023 18:29:50",
+            "review_text": "This is the perfect example of coffee shop. It has culture, good people, and good coffee. It's even better that it's black-owned and operated.\n\nThe staff have been fantastic, chill, and welcoming. Been here twice, and have brought friends back and will continue to do so. Definitely worth stopping to see it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4MV9EX3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4MV9EX3B3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDx1_D_pwE%7CCgsIp6qypAYQ4J_NCQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686934823,
+            "review_datetime_utc": "06/16/2023 17:00:23",
+            "review_text": "Beautiful space with delicious food and drinks. Had the wildflower iced drink. So good!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4a2FMdVVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4a2FMdVVREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDxkaLuUQ%7CCgwI296PpAYQ8I-zpwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686368091,
+            "review_datetime_utc": "06/10/2023 03:34:51",
+            "review_text": "The coolest coffee shop in Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4b2Z1Qi13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4b2Z1Qi13RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDxofuB-wE%7CCgwIgo-OpAYQ-Ozw4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686341506,
+            "review_datetime_utc": "06/09/2023 20:11:46",
+            "review_text": "Fun gem in the community. Delicious coffee, beautiful and interesting artwork and viewing materials. Pleasant staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4M3FEb1N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4M3FEb1N3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDx3qDoSw%7CCgsIn_6IpAYQwLT1ZQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686257439,
+            "review_datetime_utc": "06/08/2023 20:50:39",
+            "review_text": "The music, the books, the menu...it's all a tiny vibe! And the Vegan Chai Poundcake is worth a trip back all by itself!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4eUltMWhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4eUltMWhRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDxyIm1hQE%7CCgwI1tHdowYQwIby9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685547222,
+            "review_datetime_utc": "05/31/2023 15:33:42",
+            "review_text": "My favorite local coffee shop."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4Ny1QSC13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4Ny1QSC13RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICx7-PH-wE%7CCgsIhpjSowYQoKXRDg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1685359622,
+            "review_datetime_utc": "05/29/2023 11:27:02",
+            "review_text": "The chai iced latter was the best I've ever had. The DJ played great music on a rainy Sunday afternoon. Perfect day to be in the cafe. My only critique is more comfortable chairs. They were all hard no cushions for back or bottom."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NXFUU1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NXFUU1FREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICx5qTSQQ%7CCgsI-viOowYQ2MO9Bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684257914,
+            "review_datetime_utc": "05/16/2023 17:25:14",
+            "review_text": "Great vibes in this place. I felt very welcomed. Come here for exclusive retro black art and books. Dope spot!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4OHF6MnJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4OHF6MnJ3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICx8qz2rwE%7CCgsIzpaEowYQ2Mq8Sw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684081486,
+            "review_datetime_utc": "05/14/2023 16:24:46",
+            "review_text": "I love this place and the fact that it's a black owned business. Not only can you get coffee, tea, sandwiches, and pastries but the ambiance is absolutely amazing. They also have a wide variety of books to choose from that you can purchase. This is definitely one of my favorite spots in the city."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSbXNpaU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSbXNpaU5nEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDRmsiiNg%7CCgwIhKiSogYQoKDo8AI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1682215940,
+            "review_datetime_utc": "04/23/2023 02:12:20",
+            "review_text": "Received disappointing customer service after we had informed the barista it was our first time visiting and how we were excited to try their one of their signature tea drinks of which we paid happily and proceeded to wait while enjoying the atmosphere while smelling the enriched coffee bean aroma. However, after we noted it had been 15 minutes we checked in on the order and noted the barista was very busy and assumed our order would surely be ready momentarily, however that was not the case in fact our order after 30 minutes of waiting was noted to have been totally omitted by the barista at which we was totally surprised at this revelation and immediately requested a refund. The seemingly manager or team lead tried to correct the problem, however we were shocked at the disrespect and proceeded with the refund request. In the end we were looking forward to establishing a long lasting customer relationship as well as offering recommendations to family and friends. The customer service received was unexpected and highly disappointing and add insult to injury the barista chimed in after the refund was being processed and say \" it was for 2, right\"?...unbelievable! So if the barista remembered that info of the order, why did they not fulfill the order? Just unbelievable and never again! In the end we were redeemed at Starbucks "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSc3BXZWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSc3BXZWp3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDRspWejwE%7CCgwI88CMogYQkJrf6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682120819,
+            "review_datetime_utc": "04/21/2023 23:46:59",
+            "review_text": "An absolute gem, the atmosphere is great and the staff are incredible, and I really dug the art on the wall. I'll definitely stop in if I'm working in the area again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNScGI2R2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNScGI2R2hBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICRpb6GhAE%7CCgwI9-y7oQYQ4NvzxgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680799351,
+            "review_datetime_utc": "04/06/2023 16:42:31",
+            "review_text": "You can feel the vibe the moment you open the door. Archive is a vibrant and artsy coffee shop, that overflows with culture. Black culture! From vintage magazines and photos, to Black authors, to an playlist. You get all of this before you even order your beverage. I ordered their house drip coffee which was very tasty. The coffee has more of a fruity taste and was very smooth. They also sell used book and have an impressive selection. If you are in the Beatties Ford area, I would definitely give it a try."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSdG9tcnF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSdG9tcnF3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICRtomrqwE%7CCgwI9u6goQYQ6JqxsAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680357238,
+            "review_datetime_utc": "04/01/2023 13:53:58",
+            "review_text": "Very friendly/relaxing environment. Check this shop out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSdW9XZ1ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSdW9XZ1ZBEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICRuoWgVA%7CCgwIzbCYoQYQwK3vyQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680218189,
+            "review_datetime_utc": "03/30/2023 23:16:29",
+            "review_text": "Amazing local coffee shop and archive/vintage store dedicated to Black history and culture.\n\nThe owner Cheryse is simultaneously one of the kindest and most powerful entrepreneurs I've met. The coffee shop offers lattes and pastries, but more importantly, a space to uplift the artists, authors, advocates, and historians across decades of Black history.\n\nIncredible collection of magazines, books, posters, music and more. A must visit in Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSdU1pbmlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSdU1pbmlBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICRuMiniAE%7CCgsIxc_3oAYQ8LizXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679681477,
+            "review_datetime_utc": "03/24/2023 18:11:17",
+            "review_text": "Great vibe, excellent coffee, and wonderful people!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURodjRhRU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodjRhRU1BEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDhv4aEMA%7CCgwImd_noAYQ4LL-tgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679421337,
+            "review_datetime_utc": "03/21/2023 17:55:37",
+            "review_text": "My new favorite coffee shop!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURodU9peXFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURodU9peXFBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDhuOiyqAE%7CCgsI8bP6nwYQ4NuDGw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677629937,
+            "review_datetime_utc": "03/01/2023 00:18:57",
+            "review_text": "The best coffee shop I've been too. This shop is owned by a young black woman who saw a need and fixed it. The coffee is great but the atmosphere is even better. There is black memorabilia posted everywhere and for sell. There is a hand drawn moral of greats both old and new too. Don't be surprised if you see a table of people working in one corner and another table with people playing games. It's a very welcoming and relaxing place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoaUxiRVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoaUxiRVhBEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDhiLbEXA%7CCgsIpZj1nwYQyMGjIg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677544485,
+            "review_datetime_utc": "02/28/2023 00:34:45",
+            "review_text": "Great atmosphere, great caramel latte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURod0tQTmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURod0tQTmtBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDhwKPNkAE%7CCgwIq-LunwYQoLDtuAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677439275,
+            "review_datetime_utc": "02/26/2023 19:21:15",
+            "review_text": "Great coffee, Great people"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoMWJ5WjF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoMWJ5WjF3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICh1byZ1wE%7CCgwIpIvDnwYQ2LTs8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676723620,
+            "review_datetime_utc": "02/18/2023 12:33:40",
+            "review_text": "This black woman owned business is the bomb dot com.\n\nI wish I had the raw videos of the store but I've misplaced them. This book store doubles as a cafe!\n\nCome work, sip, read or relax -- it's a vibe!\n\nOddly I really love what they did with the bathroom "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNobk9YYnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNobk9YYnpnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIChnOXbzgE%7CCgwI5uCJnwYQyIj1hAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675784294,
+            "review_datetime_utc": "02/07/2023 15:38:14",
+            "review_text": "The best coffee I have ever had! Check them out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCNTRiQ0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCNTRiQ0ZBEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDB54bCFA%7CCgwIx5XgngYQ6PSb0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675102919,
+            "review_datetime_utc": "01/30/2023 18:21:59",
+            "review_text": "This is something we've needed and  what I've wanted to see in Charlotte for a long time!  It's not near my home,  but I'll drive to support."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCeTlyR193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCeTlyR193RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDBy9rG_wE%7CCgwI-fvVngYQkN6f3QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674935801,
+            "review_datetime_utc": "01/28/2023 19:56:41",
+            "review_text": "Black owned, nice and chill atmosphere"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCMXFfM0hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCMXFfM0hREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDB1q_3HQ%7CCgwIpvOhngYQkK6ttAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674082726,
+            "review_datetime_utc": "01/18/2023 22:58:46",
+            "review_text": "Love it there. Absolutely amazing!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCcXZ6ZFF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCcXZ6ZFF3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDBqvzdQw%7CCgwIyKGWngYQoMe3ggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673892040,
+            "review_datetime_utc": "01/16/2023 18:00:40",
+            "review_text": "I have tried the cold brew at just about every coffee shop in Charlotte, but after trying Archive's today I have found a new favorite! The zucchini muffin and Foxy Brown Latte are also very good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCa3ZlbWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCa3ZlbWxnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDBkvemlgE%7CCgwIrsqQngYQ6Kq-mQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673798958,
+            "review_datetime_utc": "01/15/2023 16:09:18",
+            "review_text": "Beautiful, warm space. Lovely owner. Delicious chai tea latte!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCd3JpNFV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCd3JpNFV3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDBwri4Uw%7CCgwIlraMngYQiIDz1QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673730838,
+            "review_datetime_utc": "01/14/2023 21:13:58",
+            "review_text": "So excited to have a coffee shop in this area!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCa1l5ODhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCa1l5ODhnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICBkYy88gE%7CCgwI5eGunQYQkPLm1AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672196325,
+            "review_datetime_utc": "12/28/2022 02:58:45",
+            "review_text": "I finally got over to Archive coffee today, and it lives up to the hype! Such a cool spot, and you won't receive this warm of a welcome anywhere else. The place definitely makes you want to come in and enjoy yourself. The kind vibe comes through in the coffee too, because for the first time I didn't even use sugar in my Americano. It tasted that good! I hope to return soon."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtazZEbHJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtazZEbHJ3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID-k6DlrwE%7CCgwItuTHnAYQ4LmoxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670509110,
+            "review_datetime_utc": "12/08/2022 14:18:30",
+            "review_text": "So friendly!! The latte was perfect and the warmed zucchini bread was delicious "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtb2RIbjhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtb2RIbjhBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID-odHn8AE%7CCgwIzOijnAYQ8Pu06wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669919820,
+            "review_datetime_utc": "12/01/2022 18:37:00",
+            "review_text": "This quickly became one of my favorite places in ALL of Charlotte. You walk in and the vibe makes you feel right at home. It's a beautiful celebration of the black experience, and oh yea, the coffee is amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtenBDWGpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtenBDWGpnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID-zpCXjgE%7CCgwIreGZnAYQoI60rQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669755053,
+            "review_datetime_utc": "11/29/2022 20:50:53",
+            "review_text": "The mind of a black woman is capable of anything. The Archive is a great example of a black woman's creativity mixed with business sense. This place is a time capsule of black culture that's needs to be displayed and explored. From the black art to menu, every detail was hand picked. Words cannot describe how amazing this cafe is to me. Please come visit and support a black business."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtdXZ1aDFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtdXZ1aDFRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID-uvuh1QE%7CCgwItp-PnAYQ-MPR2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669582774,
+            "review_datetime_utc": "11/27/2022 20:59:34",
+            "review_text": "Solid coffee and really good environment.  They sell records and art too.  The cold brew needed creamer.  I  would try something else next time.  My fiance got the foxy brown which was very good.  Parking was easy when we went on a Sunday."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtektqQk9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtektqQk9BEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgID-zKjBOA%7CCgwI74b2mwYQuOzEzAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669170031,
+            "review_datetime_utc": "11/23/2022 02:20:31",
+            "review_text": "Beautiful space in this neighborhood. Love coming here for tea."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtejhybGVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtejhybGVBEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC-z8rleA%7CCgwI7b7UmwYQ-MCmwAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668620141,
+            "review_datetime_utc": "11/16/2022 17:35:41",
+            "review_text": "Archive is one of the coolest spots in Charlotte. They have great coffee, immaculate vibes and plenty of historical hip hop magazines. There really is no place like Archive."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtdzlLREh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtdzlLREh3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC-w9KDHw%7CCgwIzbe7mwYQ0JKEnwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668209613,
+            "review_datetime_utc": "11/11/2022 23:33:33",
+            "review_text": "This space is sacred. It's of the culture. For the culture. A true gem. Oh. And they NEVER spell my name wrong on my coffee cup! Bloop! Get into it! Archive is here to stay."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtbWJEWTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtbWJEWTVBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC-mbDY5AE%7CCgwI7YylmwYQoPz7nQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667843693,
+            "review_datetime_utc": "11/07/2022 17:54:53",
+            "review_text": "Best customer experience ever"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtd1lMWDFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtd1lMWDFBRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC-wYLX1AE%7CCgwI7eKamwYQiJihwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667674477,
+            "review_datetime_utc": "11/05/2022 18:54:37",
+            "review_text": "The decor, vibe, and service are amazing. Such a beautifully curated space! Coffee was also amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtNHVmc21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtNHVmc21RRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIC-4ufsmQE%7CCgsI14f8mgYQkOqLFQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667171287,
+            "review_datetime_utc": "10/30/2022 23:08:07",
+            "review_text": "Black owned. Great experience. Beautiful environment."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlNl9Hc3RRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlNl9Hc3RRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe6_GstQE%7CCgsInaHCmgYQ6L7vRA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666224285,
+            "review_datetime_utc": "10/20/2022 00:04:45",
+            "review_text": "I wish I was able to get the young lady's name that was working when my family and I visited this past Saturday, but she offered wonderful customer service and my coffee was great."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURleS15ZjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURleS15ZjdRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDey-yf7QE%7CCgwIqZbAmgYQ2MLYhQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666190121,
+            "review_datetime_utc": "10/19/2022 14:35:21",
+            "review_text": "Great find.  Cool decor, modern, friendly staff, and delicious coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlX2QzcG5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlX2QzcG5BRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe_d3pnAE%7CCgwI_ua2mgYQ0LWbzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666036606,
+            "review_datetime_utc": "10/17/2022 19:56:46",
+            "review_text": "Black & women owned, love the ambience and the homage to the classics with the vintage prints you can buy, wall of black excellence & the oldies they constantly play. They have vegan bakery items, and great coffee! Its a great space for all ages and the only space Ive seen created for Black communities around CLT to work,  chill & network."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlN2RyaHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlN2RyaHhRRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe7drhxQE%7CCgwI8-qymgYQ6OvnkgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665971571,
+            "review_datetime_utc": "10/17/2022 01:52:51",
+            "review_text": "The coffee was delicious! We ordered a Dirty Chai and a Vanilla Latte. The coffee was well balanced and perfectly spiced. The space is extremely cute and artistic. I loved the vibe and it was filled with other Charlotte people enjoying work and conversations."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlbWFXaHhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlbWFXaHhnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDemaWhxgE%7CCgwI3rejmgYQuI7v0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665719262,
+            "review_datetime_utc": "10/14/2022 03:47:42",
+            "review_text": "Hands-down one of my favorite spots in the city! The music, atmosphere, aesthetics, vibes and staff are all amazing! The owner is super personable, I love that you can also buy books from Black authors inside and all of the beverage options are great; You must try the Wildflower or Foxy Brown drink if you visit!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlNmF6V1RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlNmF6V1RnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe6azWTg%7CCgwIis2hmgYQsKHFoAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665689226,
+            "review_datetime_utc": "10/13/2022 19:27:06",
+            "review_text": "Awesome vibes, even better coffee, great cappuccino and the foxy brown latte was awesome!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlMHNIMEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMHNIMEx3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe0sH0Lw%7CCgwImNz7mQYQyKLk6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665068568,
+            "review_datetime_utc": "10/06/2022 15:02:48",
+            "review_text": "Great coffee,  great vibe, great people. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlLUp2SWp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlLUp2SWp3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDe-JvIjwE%7CCgsI363jmQYQ0IHzdA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664669407,
+            "review_datetime_utc": "10/02/2022 00:10:07",
+            "review_text": "Beautiful establishment!! And great service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlbjV2djVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbjV2djVnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICen5vv5gE%7CCgwI3cbNmQYQqMqhsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664312157,
+            "review_datetime_utc": "09/27/2022 20:55:57",
+            "review_text": "Black woman owned coffee shop with black vintage books & magazines, such as Vibe & Jet. Speaking of vibe, Archive is one!!! I love that they personalize your order. The hot Foxy Brown Latte is amazing. You'll definitely want to have a seat & stay awhile."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMWRUS0FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMWRUS0FREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICe1dTKAQ%7CCgwI56WjmQYQ2Pn7jwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663619815,
+            "review_datetime_utc": "09/19/2022 20:36:55",
+            "review_text": "Amazing coffee shop!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaGFtZEVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaGFtZEVREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICehamdEQ%7CCgwI4qGemQYQiJ_AqwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663537378,
+            "review_datetime_utc": "09/18/2022 21:42:58",
+            "review_text": "This place is very dope. Great people and great vibe."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNleE4tc25RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNleE4tc25RRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICexN-snQE%7CCgsIqJXdmAYQoLnaag%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662470824,
+            "review_datetime_utc": "09/06/2022 13:27:04",
+            "review_text": "The coffee tastes amazing and the music is on point. This will definitely be my new spot for coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlOE5tV2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlOE5tV2t3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICe8NmWkwE%7CCgwIs7HSmAYQwJv2nAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662294195,
+            "review_datetime_utc": "09/04/2022 12:23:15",
+            "review_text": "Archive is so much more than books and coffee. It is a cultural hub. It's the type of place where every one feels like there's something just for them."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMExpcUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMExpcUt3EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICe0LiqKw%7CCgsIxKDPmAYQ8K_5HQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662242884,
+            "review_datetime_utc": "09/03/2022 22:08:04",
+            "review_text": "Super excited to have Archive in our neighborhood! The owner Cheryse Terry recommend I try their \"Dirty\" Latte and I was immediately hooked! Great tasting coffee, amazing service and beautiful vintage decor!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlZ0tDTXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlZ0tDTXl3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgICegKCMywE%7CCgwIuNjJmAYQ-LSL-gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662151736,
+            "review_datetime_utc": "09/02/2022 20:48:56",
+            "review_text": "Excellent customer service!!! I start off with that because most places can't find those two words in a dictionary. Archive, is a whole vibe. It's modern and comfortable flashback Black nostalgia, served up with a yummy muffin and latte.\n\nI would recomment you go experience this vibe for yourself. You won't be disappointed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1aDdPWEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1aDdPWEVnEAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDuh7OXEg%7CCgwIiJ66mAYQ-KqmgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661898504,
+            "review_datetime_utc": "08/30/2022 22:28:24",
+            "review_text": "This spot is the new brunch spot in the heart of Charlotte!!! I love the service! Very professional, very quick and tastes very very good! The owner is super cool and very intelligent. I highly recommend everyone to stop by, grab a coffee or tea and get inspired by the black excellence!! Please try the Banana Nut Muffin!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1NjZqaF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1NjZqaF9nRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDu66jh_gE%7CCgwI7_G0mAYQ8LPZvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661810927,
+            "review_datetime_utc": "08/29/2022 22:08:47",
+            "review_text": "I stopped by archive during my lunch today and got the little red corvette (hibiscus tea w/ ginger cinnamon n lemon)one of these vegan oatmeal raisin cookies and a carrot nut muffin.....\n\n@sweetimaldas  !!\n\nWhen I tell you I was thinking about the muffin  throughout classHad to swing back by for more. Muffin was sold out but I was able to get a chocolate chip and oatmeal raisin cookie "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1cTdMNnFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1cTdMNnFnRRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDuq7L6qgE%7CCgwI-KK0mAYQiJDLpgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661800824,
+            "review_datetime_utc": "08/29/2022 19:20:24",
+            "review_text": "Affordable, excellent customer service, & lovely aesthetics! I will be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1MF9xcDh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1MF9xcDh3RRAB!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDu0_qp8wE%7CCgwItsmvmAYQsKKI1gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661723830,
+            "review_datetime_utc": "08/28/2022 21:57:10",
+            "review_text": "I stop in for a lunch snack and a drink and enjoy some tunes.The staff was amazing, I also browse the book shelf, purchasing an comic book \"The A Team\" I definitely will be back.Cheryse has created a space for everyone to enjoy themselves."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1azlhTU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1azlhTU13EAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDuk9aMMw%7CCgwI-c-umAYQ4IKvrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661708281,
+            "review_datetime_utc": "08/28/2022 17:38:01",
+            "review_text": "Great coffee and awesome collection of vintage Jet and Ebony magazines!  Let's support this gem!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1X2RLVEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1X2RLVEFREAE!2m1!1s0x0:0x99e3416248bee15e!3m1!1s2@1:CIHM0ogKEICAgIDu_dKTAQ%7CCgwIha-pmAYQiL-_jwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661622149,
+            "review_datetime_utc": "08/27/2022 17:42:29",
+            "review_text": "My wife and I stopped in for the grand opening today and got a few drinks to support the business...service was great and drinks came up quickly...look forward to coming back and enjoying a refreshing drink....thanks "
+        }
+    ]
+}

@@ -1,0 +1,2011 @@
+{
+    "place_name": "Common Market | Plaza Midwood",
+    "place_id": "ChIJD5OUXgCgVogRY-jdOPI66fg",
+    "place_rating": 4.5,
+    "place_total_reviews": 684,
+    "place_google_id": "0x8856a0005e94930f:0xf8e93af238dde863",
+    "place_reviews_id": "-510812270719276957",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJD5OUXgCgVogRY-jdOPI66fg&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3emMyWjJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3emMyWjJnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC7zc2Z2gE%7CCgwI6I-FtgYQ0KnHmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723942888,
+            "review_datetime_utc": "08/18/2024 01:01:28",
+            "review_text": "This spot is a vibe. There's beer on tap, ton of craft beer in cans, and a full bodega selection."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURieDZUYmxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURieDZUYmxRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDbx6TblQE%7CCgwImOratQYQgN2YuAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1723249944,
+            "review_datetime_utc": "08/10/2024 00:32:24",
+            "review_text": "Pretty good vegan options like sandwiches and cookies, has a fridge full of vegan foods like salads sandwiches and some desserts"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiOTYyMnlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiOTYyMnlBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICb9622yAE%7CCgwIg8GmtQYQsNWZoQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722392707,
+            "review_datetime_utc": "07/31/2024 02:25:07",
+            "review_text": "This is excellent.  Come get a beer and sandwich here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNieDVteWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNieDVteWlBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICbx5myiAE%7CCgsIu-ejtQYQwOPWeA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722348475,
+            "review_datetime_utc": "07/30/2024 14:07:55",
+            "review_text": "The music is fantastic and the atmosphere is awesome!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiZ1lxUmJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiZ1lxUmJREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICbgYqRbQ%7CCgwIno6VtQYQyKP80gM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722107678,
+            "review_datetime_utc": "07/27/2024 19:14:38",
+            "review_text": "Sandwiches, candy, and beer; thunderous! Will be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyMHRuY1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyMHRuY1NBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICr0tncSA%7CCgwIxYygtAYQ-JWsrQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720190533,
+            "review_datetime_utc": "07/05/2024 14:42:13",
+            "review_text": "Tried this place for breakfast after some friends had recommended it.  Counter person was terse and short when I asked questions about the menu.   Grits were watery and undercooked. Hard pass."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMM04tZFRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMM04tZFRREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICL3N-dTQ%7CCgsIoZ28swYQ2MiiRg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1718554273,
+            "review_datetime_utc": "06/16/2024 16:11:13",
+            "review_text": "This is now the second time I've had a bagel sandwich from here only to get home and find out they forgot the meat?!? If they would have forgotten lettuce or something I would understand but the meat is a pretty big thing to leave out and kinda ruins the whole order, especially when you pay extra for double."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6NGREVk1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6NGREVk1BEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICz4dDVMA%7CCgwIr8fysgYQgOCbjQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1717347247,
+            "review_datetime_utc": "06/02/2024 16:54:07",
+            "review_text": "Overpriced, staff not friendly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6NE4yZjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6NE4yZjdnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICz4N2f7gE%7CCgsIkvPesgYQ8K_VKQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717025170,
+            "review_datetime_utc": "05/29/2024 23:26:10",
+            "review_text": "Nice laid back vibe lots cool stuff to choose from dog friendly!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUaHBqdXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUaHBqdXlRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDThpjuyQE%7CCgwI2L7AsgYQ0InQ2gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716526936,
+            "review_datetime_utc": "05/24/2024 05:02:16",
+            "review_text": "Most fun bar in Charlotte. Itbhas the alternative crew, and amazng selection of beers and wine. There is even vermouth from Spain! Fun place, very refreshing, especially in comparison to your typical cookie-cutter sports bars."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUbHJ5NUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUbHJ5NUVnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICTlry5Eg%7CCgwIm_WMsgYQ-MWKrQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715681947,
+            "review_datetime_utc": "05/14/2024 10:19:07",
+            "review_text": "Amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUb3NhNUhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUb3NhNUhBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICTosa5HA%7CCgsI9caDsgYQuJe3QQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715528565,
+            "review_datetime_utc": "05/12/2024 15:42:45",
+            "review_text": "It is a nice place to meet people and relax outside for a little while.  Food and drinks are expensive for what they are in my opinion.\n\nREALLY giving it 3 stars because they refuse to be a part of the new social district and will police your drinks now.  It is just annoying and unnecessary.  I had purchased things from them and was outside enjoying a drink from another location but they still refused to let me stay with my drink.  I had a receipt showing I had just made a purchase from them within the last 10 min for more than the price of the drink.  It is ridiculous that they do not want to be accepting of the new social district and just comes off as rude to me.  Sometimes things around you change and you have to accept that Common Market"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUN0tmbDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUN0tmbDJBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICT7Kfl2AE%7CCgwIm82AsgYQiMbUowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715480219,
+            "review_datetime_utc": "05/12/2024 02:16:59",
+            "review_text": "Great spot, funny bartender is a plus. Front patio was packed so didn't spend any time there, but the back patio was super chill. Love that it's a store and a bar. Will definitely be going back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1Z3FhQk9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1Z3FhQk9BEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICugqaBOA%7CCgsIjuLwsQYQ4LqdFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715220750,
+            "review_datetime_utc": "05/09/2024 02:12:30",
+            "review_text": "Go use the restroom and get stuck reading the walls!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqb29HcXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqb29HcXRBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICjooGqtAE%7CCgwIgamJsQYQoJ-KygI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713525889,
+            "review_datetime_utc": "04/19/2024 11:24:49",
+            "review_text": "Phenomenal vegan sandwich options, good vibes, great coffee, extensive beer selection!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREa04yOGpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREa04yOGpnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDDkN28jgE%7CCgsI_da6sAYQiK6hEA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712237437,
+            "review_datetime_utc": "04/04/2024 13:30:37",
+            "review_text": "The food is delicious and there's so much to choose from."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEdjVxcXBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEdjVxcXBnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICDv5qqpgE%7CCgsI1LW3sAYQgJyXEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712184020,
+            "review_datetime_utc": "04/03/2024 22:40:20",
+            "review_text": "My favorite place to go on a Saturday for a sandwich and a beer"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEazZ2YjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEazZ2YjJRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICDk6vb2QE%7CCgwIqsWpsAYQ8KjkgwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711956650,
+            "review_datetime_utc": "04/01/2024 07:30:50",
+            "review_text": "The turkey panini sandwich is delicious."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEaHE2Y2d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEaHE2Y2d3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICDhq6cgwE%7CCgwIyrSQsAYQ0KnAwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711544906,
+            "review_datetime_utc": "03/27/2024 13:08:26",
+            "review_text": "I've been around CM ever since I was a little kid. Being able to go regularly as an adult feels just as exciting, but now I can actually drink the beers. Deli is amazing as always, so fresh and delicious. No better place to grab a beer and sub in all of Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5b3R6X1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5b3R6X1FREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID9otz_QQ%7CCgsIrYXNrwYQoLzcaQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1710441133,
+            "review_datetime_utc": "03/14/2024 18:32:13",
+            "review_text": "Violently ill at the moment because Common Market's deli gave me chicken instead of vegan chicken. I haven't eaten meat in 5 years. I've been a regular at Common Market ordering this wrap often and will definitely not be going back now."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkbjZDN3lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkbjZDN3lBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDdn6C7yAE%7CCgsI7ZD-rgYQ-KmWQw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1709148269,
+            "review_datetime_utc": "02/28/2024 19:24:29",
+            "review_text": "DON'T BOTHER if you are looking to meet friends for a few hours and visit.\nCM feels they own everything from the PUBLIC SIDEWALK to \"the view\" as said by employee.\nSo, view me GONE !"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkdGVtUTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkdGVtUTNBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDdtemQ3AE%7CCgwI0_nurgYQwMP0sQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1708899539,
+            "review_datetime_utc": "02/25/2024 22:18:59",
+            "review_text": "I've always heard of this place but never actually visited. We had parked right in front of this location, so as we decided to head home, we wanted to stop in and see what the place was all about. It's like a continence store as soon as you walk in, but the further you walk in, they have a bar with seating and then a section selling wines, beers, seltzers, and regular sodas to coffees and anything else you may find at a gas station. Outside of the store, they have an open patio with plenty of seating. A lot of people go and purchase their beverages and then come outside to sit drink and have a good time. It's a quirky cool place, and I'm all for it. Love the ambiance and concept of it. The employees and everyone were super friendly, and there were no issues at all. I will def be visiting again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkcm9yVTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkcm9yVTNBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDdrorU3AE%7CCgsIj4nkrgYQwLG8JQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708721295,
+            "review_datetime_utc": "02/23/2024 20:48:15",
+            "review_text": "Dope spot...great atmosphere.  I play (DJ) there every Thursday night from 9pm-11pm."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkcDVhb0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkcDVhb0dBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICdp5aoGA%7CCgwItqjKrgYQiPn2jwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708299318,
+            "review_datetime_utc": "02/18/2024 23:35:18",
+            "review_text": "Amazing place. I enjoyed hanging out here so much. Great selection of beers"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkNk5hTkxnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkNk5hTkxnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICd6NaNLg%7CCgwIzYKhrgYQqKOn4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707622733,
+            "review_datetime_utc": "02/11/2024 03:38:53",
+            "review_text": "This was a really cool place with a chill vibe. We had sandwiches which were pretty good. They had a little bit of everything and had a really great choice of beverages. The coolers had some great captions which we thought were humorous. The cookies they sell are the bomb! Will def visit again when in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0b2JtNFB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0b2JtNFB3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDtobm4Pw%7CCgwIwYaBrgYQ6JHtlwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707098945,
+            "review_datetime_utc": "02/05/2024 02:09:05",
+            "review_text": "Good sandwiches and cool spot."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROdnFmbXdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROdnFmbXdBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDNvqfmwAE%7CCgsIuri7rQYQuM-1cw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1705958458,
+            "review_datetime_utc": "01/22/2024 21:20:58",
+            "review_text": "Great people, great vibe, the food.... Less than great. I've been here for lunch and for snacks on separate occasions.  It's ok for snacks, and alcohol selection but not food. I came here today, for I quick bite, and got the Spicy Grilled Turkey.. it was honestly a little disappointing. Almost enough to trigger a mental breakdown. But if you're hungry and craving a very simple and possibly sad sandwich, this is the place. I rate the lunch menu  6.5/10. But this place is great overall. And I would come back, just not for the food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOa3VYcFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOa3VYcFRBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICNkuXpTA%7CCgsI1P6IrQYQqILOMw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1705131860,
+            "review_datetime_utc": "01/13/2024 07:44:20",
+            "review_text": "Just read about a six year old who had to go to the ER because staff there sold him THC candy and didn't say a word, how is that legal?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxb055OEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxb055OEtBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID1oNy8KA%7CCgsI2-jbrAYQqKCfaQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1704391771,
+            "review_datetime_utc": "01/04/2024 18:09:31",
+            "review_text": "Not service dog friendly"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdW9xaFJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdW9xaFJBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICluoqhRA%7CCgwIkJ_ZqgYQ4NWurgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700155280,
+            "review_datetime_utc": "11/16/2023 17:21:20",
+            "review_text": "The original CM. Accept no substitutes. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGM2VYRkhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGM2VYRkhBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDF3eXFHA%7CCgsIq52zqgYQoLOdfw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1699532459,
+            "review_datetime_utc": "11/09/2023 12:20:59",
+            "review_text": "Very cool spot with an eclectic feel. Some pretty good sandwiches and salads there that were very fresh and made to order. They have a cool selection of snacks and drinks to go with your meal too.\n\nDef a vibe and there was plenty of outdoor seating."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGeFp1RE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGeFp1RE9BEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICFxZuDOA%7CCgwI_c37qQYQuJjx8AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1698621181,
+            "review_datetime_utc": "10/29/2023 23:13:01",
+            "review_text": "Good selection of drinks. Good place to hangout on the patio"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1NEtUYzFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1NEtUYzFRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID54KTc1QE%7CCgwIx92_qQYQ8KvisAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697640135,
+            "review_datetime_utc": "10/18/2023 14:42:15",
+            "review_text": "I loveeeeeeee Cherokee and his crew in the kitchen. Best humans that put love in your food. I love walking into this place and seeing those smiling faces."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1bF9xMmdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1bF9xMmdBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC5l_q2gAE%7CCgsI-Jm7qQYQ2OqYDg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1697565944,
+            "review_datetime_utc": "10/17/2023 18:05:44",
+            "review_text": "Cool little place, but the wrap I got was flavorless and had maybe 2 slices of turkey in it. It's a small business so I dont wanna drag it too hard, but you can't serve food like that and expect good reviews. Maybe I got the wrong sandwich, but whatever. Bad sandwich, cool atmosphere. Just dont get the Old Scratch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1bmREanZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1bmREanZRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC5ndDjvQE%7CCgwIqeS0qQYQqIHVkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697460777,
+            "review_datetime_utc": "10/16/2023 12:52:57",
+            "review_text": "Had a blast  can't wait to go back ask for Zak he knows what he be talking about"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1bXI3UzJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1bXI3UzJnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC5mr7S2gE%7CCgwIi4KhqQYQ2PfgsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697136907,
+            "review_datetime_utc": "10/12/2023 18:55:07",
+            "review_text": "Great"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaeGFfTUpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaeGFfTUpBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDZxa_MJA%7CCgwInM74qAYQgIm7jAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696474908,
+            "review_datetime_utc": "10/05/2023 03:01:48",
+            "review_text": "Cool spot to meet some degenerates and drink some funky brews and snack on some fun stuff. Been coming here for years. Wish they would stay open later during the week. I'm just happy they sell Magner's now."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadnVuaDZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadnVuaDZ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDZvunh6wE%7CCgwI3IDoqAYQqMG-0gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696202844,
+            "review_datetime_utc": "10/01/2023 23:27:24",
+            "review_text": "Coolest spot in Charlotte"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNabWNfdDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNabWNfdDRnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICZmc_t4gE%7CCgwI-byHqAYQ-JajnwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694621305,
+            "review_datetime_utc": "09/13/2023 16:08:25",
+            "review_text": "Cool place to hang out"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaaWN5SjJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaaWN5SjJBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICZicyJ2AE%7CCgwI_MmDqAYQ6OD3gwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694557436,
+            "review_datetime_utc": "09/12/2023 22:23:56",
+            "review_text": "Always the most chill place. Blake has created such a unique culture."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaMk1DTUp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaMk1DTUp3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICZ2MCMJw%7CCgsI5PzSpwYQgKCZfw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1693761124,
+            "review_datetime_utc": "09/03/2023 17:12:04",
+            "review_text": "Should be called the communist Market. This is where American ideas and morals go to die. God bless America and let's all pray for this country and each other."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabUtQb1pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabUtQb1pREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICZmKPoZQ%7CCgwI5-bSpwYQwN2L5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693758311,
+            "review_datetime_utc": "09/03/2023 16:25:11",
+            "review_text": "One of my favorite places to be. Great people, cool stuff, awesome atmosphere. A real anchor of the community. It's been described to me as \"one of the gayest places in Charlotte\", and I can confirm that's true. An awesome place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwaV9tb1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwaV9tb1VnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDpi_moUg%7CCgwI4tm1pwYQyLy2rwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693281506,
+            "review_datetime_utc": "08/29/2023 03:58:26",
+            "review_text": "Stopped in for after dinner drinks & had a wonderful experience. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKNlpXSGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKNlpXSGNBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDJ6ZWHcA%7CCgwI4fudpwYQiN24iAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692892641,
+            "review_datetime_utc": "08/24/2023 15:57:21",
+            "review_text": "Chill, quirky hangout with the BEST sandwiches. Worth the wait. Try the turkey Capri, tuna, and turkey Ruben."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwd01QTFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwd01QTFZREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDpwMPLVQ%7CCgsIq6LopgYQ0LX_CQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1692012843,
+            "review_datetime_utc": "08/14/2023 11:34:03",
+            "review_text": "Extremely rude staff"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKeVktWjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKeVktWjhRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICJyY-Z8QE%7CCgwI5KnWpgYQsPux8wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691718884,
+            "review_datetime_utc": "08/11/2023 01:54:44",
+            "review_text": "A great venue for having a drink and playing some chess or just hanging out !"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKajRMMzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKajRMMzFBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDJj4L31AE%7CCgwIhrL9pQYQ0NmtxwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690261766,
+            "review_datetime_utc": "07/25/2023 05:09:26",
+            "review_text": "Great Sammies!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKemJIbTZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKemJIbTZRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDJzbHm6QE%7CCgwIvpvspQYQ8LjnmQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689980350,
+            "review_datetime_utc": "07/21/2023 22:59:10",
+            "review_text": "The common market. Aka the living room of plaza midwood. Great drink selection. Its an eclectic mix of new faces and regulars every time I go. A charlotte staple, and plaza midwood oasis. 5 stars, dude"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCejYyYXFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCejYyYXFnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDBz62aqgE%7CCgsIwKqdpQYQyOrIHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688687936,
+            "review_datetime_utc": "07/06/2023 23:58:56",
+            "review_text": "Great staff, interesting variety of items, nitro stout on tap is chefs kiss , breakfast and lunch are both delicious.\n\nThis spot represents everything that is great about Plaza, inclusive, fun, interesting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKdFpxbkh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKdFpxbkh3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICJtZqnHw%7CCgsIjKeDpQYQsLL5dw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688261516,
+            "review_datetime_utc": "07/02/2023 01:31:56",
+            "review_text": "It's a great hangout spot with all kinds of beer, wine, kombucha, seltzer, as well as non-alcoholic drinks.  They have a deli, but I have not eaten from there yet.  Most people hang out on the patio out front, but there is also an alley with tables, chairs, and benches behind the bar."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKdGJENXVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKdGJENXVBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICJtbD5uAE%7CCgwI1veCpQYQ-NyqhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688255446,
+            "review_datetime_utc": "07/01/2023 23:50:46",
+            "review_text": "I stopped late night for wine. Looked awesome, nice selection, loved the ambiance."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKNHZQWWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKNHZQWWt3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICJ4vPYkwE%7CCgwI8bfYpAYQ2Nif3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687559153,
+            "review_datetime_utc": "06/23/2023 22:25:53",
+            "review_text": "Chill vibe! Staff is helpful and friendly. I'm in there daily to pick stuff up!  I haven't eaten at the Deli yet but have heard great things! Will probably check it out this weekend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4aFptZGt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4aFptZGt3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDxhZmdkwE%7CCgwIgc6ZpAYQyJC0gAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686529793,
+            "review_datetime_utc": "06/12/2023 00:29:53",
+            "review_text": "One of my favorite spots in Charlotte. Great atmosphere, no judgements and good subs. Check it out for sure :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4eWF2S0lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4eWF2S0lBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDxyavKIA%7CCgwI94yUpAYQ2O-_sgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686439543,
+            "review_datetime_utc": "06/10/2023 23:25:43",
+            "review_text": "Cozy bar inside and great outside patio."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4eG9qb2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4eG9qb2NREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDxxojocQ%7CCgwI1Of_owYQ4JexqQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686107092,
+            "review_datetime_utc": "06/07/2023 03:04:52",
+            "review_text": "Best place to find some mead and enjoy all the dogs/people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4d3ByNUxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4d3ByNUxREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDxwpr5LQ%7CCgsIr9LyowYQiJT8Og%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685891375,
+            "review_datetime_utc": "06/04/2023 15:09:35",
+            "review_text": "Perfect liberal store"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4XzVyMThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4XzVyMThnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICx_5r18gE%7CCgwI_-vUowYQ4JaxtwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685403135,
+            "review_datetime_utc": "05/29/2023 23:32:15",
+            "review_text": "Love this place- prices, food, vibes, staff are all amazing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4ejVYdDlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4ejVYdDlRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICxz5Xt9QE%7CCgwI6b_QowYQkOqUjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685331945,
+            "review_datetime_utc": "05/29/2023 03:45:45",
+            "review_text": "There is no space more chill, nor a selection as wide as The Common Market."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4eGZub2VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eGZub2VnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICxxfnoeg%7CCgwItIyrowYQyLuI-QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1684719156,
+            "review_datetime_utc": "05/22/2023 01:32:36",
+            "review_text": "I love this spot! Staff was amazing and courteous. I had a veggie wrap and it wasn't too bad but I could tell it had been sitting in the container for quite a while so I would pass on that. I love the environment and choices of drinks w/ much variety."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSX2JYRnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSX2JYRnhnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICR_bXFxgE%7CCgwIhtfIoQYQqImXhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681009542,
+            "review_datetime_utc": "04/09/2023 03:05:42",
+            "review_text": "Deli, beer store, bar and shop all in one"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURodTVLZDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURodTVLZDN3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDhu5Kd3wE%7CCgwIlNyKoQYQ6PDFhAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679994388,
+            "review_datetime_utc": "03/28/2023 09:06:28",
+            "review_text": "Delicious ham, egg, and cheese on whole wheat.  Terrific selection of snacks and beverages.  A bit expensive but it's located on prime real estate in a very trendy neighborhood.  The local flea market and it's distance from so much to do makes it worth while."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSX01yaFdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSX01yaFdREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICR_MrhWQ%7CCgwI2ayJoQYQiMu_2wM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1679971929,
+            "review_datetime_utc": "03/28/2023 02:52:09",
+            "review_text": "Nice place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSbFBTSWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSbFBTSWpBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICRlPSIjAE%7CCgsIl_L9oAYQkPvkLQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679784215,
+            "review_datetime_utc": "03/25/2023 22:43:35",
+            "review_text": "Dope place to chill. Wish they would bring Hip-hop Wednesdays back honestly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURodi1hX2l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURodi1hX2l3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDhv-a_iwE%7CCgwI9c3ooAYQgIvZ6QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679435509,
+            "review_datetime_utc": "03/21/2023 21:51:49",
+            "review_text": "4.5/5\nService was great! Atmosphere is 10/10. Reminds me of being in someone's bedroom. It's a comfortable setting and I can see why locals flock here.\n\nThe sandwiches are basic but good. The half star is for the sourdough bread. It's too reminiscent of plain white bread and slashes the quality of the sandwich. A decent sourdough with a real crust or significant flavor would take the deli section to the next level."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoaGZEY1ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoaGZEY1ZnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDhhfDcVg%7CCgsIiYi7oAYQqJKRDg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678689289,
+            "review_datetime_utc": "03/13/2023 06:34:49",
+            "review_text": "They have a very extensive craft beer selection and cannon bottle. I have a large number of craft beer on draft at the bar."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURocUkyaFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURocUkyaFRBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDhqI2hTA%7CCgsIt8X3nwYQ-MGfZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677583031,
+            "review_datetime_utc": "02/28/2023 11:17:11",
+            "review_text": "Greatcplace to find rare and unusual beer, wine and cider. They also carry Moonjoy Mead! Great food, friendly staff fun customers. LGBTQ friendly"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNod3JtdUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNod3JtdUFREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIChwrmuAQ%7CCgwI0PKOnwYQqLPd6wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675868496,
+            "review_datetime_utc": "02/08/2023 15:01:36",
+            "review_text": "Lots of beer variety!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtN2ZxNjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtN2ZxNjJ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC-7fq62wE%7CCgwIpsmGngYQoOy2lAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673634982,
+            "review_datetime_utc": "01/13/2023 18:36:22",
+            "review_text": "I always come here for vegan options and recently tried the tomato soup and was so surprised at how good it was. Who knew tomato soup could be something I would want to go back and visit for?!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCLTZqb1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCLTZqb1FREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICB-6joQQ%7CCgwIvNLbnQYQyPXQpgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672931644,
+            "review_datetime_utc": "01/05/2023 15:14:04",
+            "review_text": "What a gem.  Breakfast sandwich far exceeded my expectations.   And they have gluten free bread that is good.  Wine and beer hall with cool patio out front.  I'll be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCcEwzbVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCcEwzbVF3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICBpL3mQw%7CCgwIs-r3nAYQqPGbhQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671296307,
+            "review_datetime_utc": "12/17/2022 16:58:27",
+            "review_text": "Fire. Try it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMEt5TmFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMEt5TmFnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICB0KyNag%7CCgwInaXpnAYQgITjngI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671058077,
+            "review_datetime_utc": "12/14/2022 22:47:57",
+            "review_text": "Loved the Spicy Turkey Sandwich.   Great selection of beer as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtaC1qZkdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtaC1qZkdBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID-h-jfGA%7CCgsIirrUnAYQ6MaTRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670716682,
+            "review_datetime_utc": "12/10/2022 23:58:02",
+            "review_text": "It was pretty cool"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtanNmRlRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtanNmRlRnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID-jsfFTg%7CCgwIps2ZnAYQoNX7yAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669752486,
+            "review_datetime_utc": "11/29/2022 20:08:06",
+            "review_text": "Had a great time, dude at the cash register and I had a good laugh when I almost gave him a $25,000 tip accidentally. Definitely some good people as well as food and drink offerings here."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBM3RYOVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBM3RYOVhBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICA3tX9XA%7CCgwIjq_amwYQgOmqigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668716430,
+            "review_datetime_utc": "11/17/2022 20:20:30",
+            "review_text": "If you haven't stopped by and peeped out \"the original\", \"OG\"  Common Market, then do yourself a favor and check them out. The deli is an excellent choice for breakfast and lunch, the coffee is always good and hot, and the beer and wine selection is top-notch. If you have questions, dont be scared to ask one of the many charming, helpful, and wonderful staff. During summer, yuck it up with your friends on the  front porch any evening, and I guarantee you'll meet somebody you didn't know you needed to know before. During winter, warm inside, either beside the in-house pour bar, or deli side, baking in the sunlit front window seating. Either way, check em out. Apparently, they got locations all over Charlotte now, too. Cheers!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJc3JlN2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJc3JlN2xnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDIsre7lgE%7CCgwIpvWlmwYQ-NnoxgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667857062,
+            "review_datetime_utc": "11/07/2022 21:37:42",
+            "review_text": "A great place to be social, find some food, a drink, even some basic groceries. Have met some incredibly unique and genuine people here and the staff is great too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtaVliLWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtaVliLWxnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC-iYb-lgE%7CCgwIpvyhmwYQ2Kr0qwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667792422,
+            "review_datetime_utc": "11/07/2022 03:40:22",
+            "review_text": "Cool, eclectic place with great sandwiches and a very wide beer selection and lots of novelty items. A Charlotte treasure."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtb1lXLU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtb1lXLU53EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC-oYW-Nw%7CCgwI5JqcmwYQ4JH4lQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1667698020,
+            "review_datetime_utc": "11/06/2022 01:27:00",
+            "review_text": "Unfortunate encounter with one of the ladies who was extremely rude when it came to a purchase my group was apart of. When I came to her to ask why and to get more information on the situation to get educated, she kept the unprofessional attitude. Made it awkward enough not to come back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURldV8tcThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldV8tcThnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDeu_-q8gE%7CCgwI3crFmgYQqIyKiAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1666278749,
+            "review_datetime_utc": "10/20/2022 15:12:29",
+            "review_text": "One of the cashiers was bluntly rude. This was my second visit, how does she have a job there compared to the other employees? The rest of my experience will have me back for another sandwich! Thanks y'all!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlN2NqSVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlN2NqSVpnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDe7cjIZg%7CCgwI27aymgYQkJjPtgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665964891,
+            "review_datetime_utc": "10/17/2022 00:01:31",
+            "review_text": "I love this place. I love their food. I get a wrap there and it's to die for, plus they have tons of options for my vegan friend! The atmosphere is amazing too. It's the perfect relaxed hang out spot."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlbWJMcnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlbWJMcnBnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDembLrpgE%7CCgwI4f6imgYQuPGrsgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665711969,
+            "review_datetime_utc": "10/14/2022 01:46:09",
+            "review_text": "Really nice Deli and market, great beer selection"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbUp6b3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbUp6b3B3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOmJzopwE%7CCgwI1K2cmgYQgMDGngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665603284,
+            "review_datetime_utc": "10/12/2022 19:34:44",
+            "review_text": "Always a ho to where visiting Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlaHRyRmpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlaHRyRmpBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDehtrFjAE%7CCgwIw4KHmgYQ2K2BywM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1665253699,
+            "review_datetime_utc": "10/08/2022 18:28:19",
+            "review_text": "The 4 guys working at the deli are slow and very rude for no reason. The rest of the place was dope but I had to take off 2 stars for that customer service. Talking bad about customers in front of other customers is never okay."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURld3VmeHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURld3VmeHBBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDewufxpAE%7CCgwIoML3mQYQ6LjjnAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1664999712,
+            "review_datetime_utc": "10/05/2022 19:55:12",
+            "review_text": "WOW. called Derek at plaza midwood. what a clown!  point blank said he had no time to help me because he was too busy. way to succeed in basic customer service. taking my business elsewhere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlM195dF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlM195dF93RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICe3_yt_wE%7CCgwIrovOmQYQqJz90gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664320942,
+            "review_datetime_utc": "09/27/2022 23:22:22",
+            "review_text": "This is my home. The place to drink my life away and make new friends "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlNGFUY21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlNGFUY21RRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICe4aTcmQE%7CCgwIru2PmQYQ0K_t4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663301294,
+            "review_datetime_utc": "09/16/2022 04:08:14",
+            "review_text": "I'm looking forward to coming back here"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlOEpqblR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlOEpqblR3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICe8JjnTw%7CCgwIoPPRmAYQ8Or_wwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662286240,
+            "review_datetime_utc": "09/04/2022 10:10:40",
+            "review_text": "I had amazing vegan sandwich."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxb1p1VmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxb1p1VmNBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDqoZuVcA%7CCgwI45ypmAYQ0PD3igM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661619811,
+            "review_datetime_utc": "08/27/2022 17:03:31",
+            "review_text": "Excellent cider selection"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1a2ZPWkpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1a2ZPWkpBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDukfOZJA%7CCgwIkd-QmAYQ4Km-9gI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1661218705,
+            "review_datetime_utc": "08/23/2022 01:38:25",
+            "review_text": "Quirky restaurant/bar/store with a patio. Great location with an eclectic customer base. Fun place overall."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1dXJycklnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1dXJycklnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDuurrrIg%7CCgsIref6lwYQyOemfg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660859309,
+            "review_datetime_utc": "08/18/2022 21:48:29",
+            "review_text": "So awesome!!! I love this place. Common Market has a love, peace and happiness vibe. Reminds me of my places back in the 90's ...totally giving me life!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1ckxTTnhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1ckxTTnhRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDurLSNxQE%7CCgsIod3olwYQwMfwLQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660563105,
+            "review_datetime_utc": "08/15/2022 11:31:45",
+            "review_text": "Overpriced sandwiches"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1eEs3bVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1eEs3bVF3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDuxK7mQw%7CCgsIr7XflwYQ4PjrAw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1660410543,
+            "review_datetime_utc": "08/13/2022 17:09:03",
+            "review_text": "Past several times, has taken 30+ minutes to get sandwiches. There were 4 guys working in the deli, they wernt understaffed during any of my visits, simply unorganized, and not focused on food prep."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1eDhuR0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1eDhuR0x3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICux8nGLw%7CCgwIh8bAlwYQ-KP7nAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659904775,
+            "review_datetime_utc": "08/07/2022 20:39:35",
+            "review_text": "I work next door and stop in almost daily. Love the sandwiches and the staff is always friendly!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1eDV6OWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1eDV6OWRREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICux5z9dQ%7CCgwI9JvAlwYQqNjeqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659899380,
+            "review_datetime_utc": "08/07/2022 19:09:40",
+            "review_text": "Aces! Was going here back in the day when it was this place, Thomas st, and the penguin, and not much else. Moved away and have been gone a long time. Back for a visit , Rip penguin, thankfully you guys are still around. Missed this place. And still as good as i remember"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1aDlYUGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1aDlYUGdRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICuh9XPgQE%7CCgwI9OC_lwYQiPixsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659891828,
+            "review_datetime_utc": "08/07/2022 17:03:48",
+            "review_text": ""
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1LVpuc2h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1LVpuc2h3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICu-ZnshwE%7CCgwIj_aflwYQ6JzYgQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1659370255,
+            "review_datetime_utc": "08/01/2022 16:10:55",
+            "review_text": "Nice"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1LWFtU0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1LWFtU0t3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICu-amSKw%7CCgwI2vSflwYQ0MyN4QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659370074,
+            "review_datetime_utc": "08/01/2022 16:07:54",
+            "review_text": "I love the common market atmosphere.\nIt's a cool spot to hang out and grab coffee or a beer and the sandwiches are great. Staff looks super cool."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1NnZER29BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1NnZER29BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICu6vDGoAE%7CCgwI2I_9lgYQqNb8uwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658800088,
+            "review_datetime_utc": "07/26/2022 01:48:08",
+            "review_text": "Fantastic place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPZzZ2QjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPZzZ2QjhRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDOg6vB8QE%7CCgwIury2lgYQ4MDG0gM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1657642554,
+            "review_datetime_utc": "07/12/2022 16:15:54",
+            "review_text": "Food was nice. I enjoyed my tuna melt very much."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtMXUzMUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtMXUzMUFREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDm1u31AQ%7CCgwIm-mwlgYQuLGFqgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657549979,
+            "review_datetime_utc": "07/11/2022 14:32:59",
+            "review_text": "Really dig the basement feel.  Great sandwiches and beer!!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPaGJiTlJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPaGJiTlJ3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDOhbbNRw%7CCgsI1OanlgYQ8MH-Qw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1657402196,
+            "review_datetime_utc": "07/09/2022 21:29:56",
+            "review_text": "Nice Lil  hipster/hippie ..hangout...\nGreat beer selection..\nBut I hate the guilt trip checkout....with tips suggestions loaded on the tablets..\nLook you bring me beer is one thing..\nMe getting my own beer and paying it...is another"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPNnJqQ3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPNnJqQ3ZnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDO6rjCvgE%7CCgwIl5iClgYQwN_5zgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656785943,
+            "review_datetime_utc": "07/02/2022 18:19:03",
+            "review_text": "Commonwealth staple"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbjdmNjNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbjdmNjNRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOn7f63QE%7CCgwIzabSlQYQ-OeRnAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656001357,
+            "review_datetime_utc": "06/23/2022 16:22:37",
+            "review_text": "One of my favorite places in Charlotte. I always stop by their deli when I'm in Plaza midwood."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPeTlXTFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPeTlXTFFBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOy9WLQA%7CCgwIyILClQYQiJC43AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655679885,
+            "review_datetime_utc": "06/19/2022 23:04:45",
+            "review_text": "I love Common Market. I get off work, walk across the street, and get myself a slice of cheesecake."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbWJIaHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbWJIaHVnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOmbHhugE%7CCgsIrryflQYQyMC4KQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1655168558,
+            "review_datetime_utc": "06/14/2022 01:02:38",
+            "review_text": "Come for the grungy vibe. There's internet but it's not working. And there are tables."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPbWVHa2JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPbWVHa2JREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOmeGkbQ%7CCgwIyrSflQYQ8OiVsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655167562,
+            "review_datetime_utc": "06/14/2022 00:46:02",
+            "review_text": "Dope little spot in Plaza Midwood to see, be seen and see about what you wanted to see."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPbXFtalJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPbXFtalJREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOmqmjRQ%7CCgwI_qL9lAYQiMGT0gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1654608254,
+            "review_datetime_utc": "06/07/2022 13:24:14",
+            "review_text": "Extra protein."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPc3ZLUkdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPc3ZLUkdBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICOsvKRGA%7CCgwI7ID3lAYQqI236wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654505580,
+            "review_datetime_utc": "06/06/2022 08:53:00",
+            "review_text": "Great atmosphere!! Laid back. Grab a sandwich and a drink of your choice and just enjoy the day or night."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPNHV5SHN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNHV5SHN3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICO4uyHswE%7CCgwI-KjzlAYQqL-nzwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654445176,
+            "review_datetime_utc": "06/05/2022 16:06:16",
+            "review_text": "Great neighborhood vibe! Dope cast of locals and new comers sharing picnic tables and beverages "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyLTZ1emN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyLTZ1emN3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID2-6uzcw%7CCgsI_Zq-lAYQ8LioNw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653575037,
+            "review_datetime_utc": "05/26/2022 14:23:57",
+            "review_text": "Good food & drinks, better people - all kinds of people. And dogs"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyb2ZEem9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyb2ZEem9BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID2ofDzoAE%7CCgwI3uCKlAYQ4O3g8QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652731998,
+            "review_datetime_utc": "05/16/2022 20:13:18",
+            "review_text": "Unique spot. Bodega style coffee and wine shop. Diverse crowd."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyaHVQQUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyaHVQQUdBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID2huPAGA%7CCgwIgeT3kwYQgJmc2gM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1652421121,
+            "review_datetime_utc": "05/13/2022 05:52:01",
+            "review_text": "Cute place w nice drinks and lots of ppl w dogs passing by"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyOU12bk5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyOU12bk5REAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID29MvnNQ%7CCgwIlNfbkwYQwPLGyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651960724,
+            "review_datetime_utc": "05/07/2022 21:58:44",
+            "review_text": "My favorite place to hangout and snack in Charlotte "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyNzdubjNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyNzdubjNRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC277nn3QE%7CCgsImde8kwYQ4NG3bA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651452825,
+            "review_datetime_utc": "05/02/2022 00:53:45",
+            "review_text": "Very cool ambience"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyMTlXTjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyMTlXTjdnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC219WN7gE%7CCgsIgZO1kwYQqLrOEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651329409,
+            "review_datetime_utc": "04/30/2022 14:36:49",
+            "review_text": "Bunch'a weirdos in this here watering hole. Staff and customers alike. I love it here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyMGJLeGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyMGJLeGlnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC20bKxigE%7CCgwIitKPkwYQsM39wwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650714890,
+            "review_datetime_utc": "04/23/2022 11:54:50",
+            "review_text": "Was our 1st time..new to the area.food was great"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMydnRMZDh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMydnRMZDh3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC2vtLd8wE%7CCgwIh-WHkwYQoLmJ_wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650586247,
+            "review_datetime_utc": "04/22/2022 00:10:47",
+            "review_text": "Great vibe, chill staff, great beer and soft drink selections, and they have a bar section for drafts and wine. Drinking is allowed on-site, so buy a beer and they'llpop it open for you.They have snacks, novelties, and a sandwich shop on-site. Great place to catch up with friends and have a drink (doesn't have to be beer)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyLXJmNGpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyLXJmNGpnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC2-rf4jgE%7CCgwIwrP4kgYQkNDXwQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650334146,
+            "review_datetime_utc": "04/19/2022 02:09:06",
+            "review_text": "Love the vibe of this place, the sandwich was super delicious and the drink selection is outstanding. Great place to have lunch outside on the patio."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyN0xPbFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyN0xPbFh3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC27LOlXw%7CCgwIxeDikgYQiLPZ2wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649979461,
+            "review_datetime_utc": "04/14/2022 23:37:41",
+            "review_text": "Love the vibe here! This place feels like Austin. A lot of great choices. Prices are very fair. And was thrilled to see vegan options on their menu. Definitely gonna be our go-to place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyckl2NXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyckl2NXZ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC2rIv5vwE%7CCgwIiN7hkgYQuJycgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649962760,
+            "review_datetime_utc": "04/14/2022 18:59:20",
+            "review_text": "This place is great.  Great beverage selection, both adult and non adult, and the reuben was amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXbDQ3TFNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXbDQ3TFNBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICWl47LSA%7CCgwIgaifkQYQqNSI1wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646777345,
+            "review_datetime_utc": "03/08/2022 22:09:05",
+            "review_text": "Eclectic, loud, bohemian, cozy, artistic, interesting... it's all that and more.  They have a deli, I haven't tried it but they seem to have a very active business.  I go there for the coffee (how can it be so good?), the wine and the vibe.  People of all kinds!  And all kind.  They also have plenty of beer to buy and they do beer and wine tastings.  And have all kind of local sweets.  I would recommend it for the open minded."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXZy1iVnBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXZy1iVnBBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICWg-bVpAE%7CCgwIgMuLkQYQgOnhzgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646454144,
+            "review_datetime_utc": "03/05/2022 04:22:24",
+            "review_text": "Extremely cool, authentic place. You see all types of people here, races, classes, ages. Great beer selection, good vibes. Good sandwiches in the daytime. The gem of Plaza Midwood"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXbEozTl9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXbEozTl9BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICWlJ3N_AE%7CCgsIs7jAkAYQgIjWGg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645222963,
+            "review_datetime_utc": "02/18/2022 22:22:43",
+            "review_text": "Love this place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtajhTYl9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtajhTYl9BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDmj8Sb_AE%7CCgsI8POfkAYQiNzZFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1644689904,
+            "review_datetime_utc": "02/12/2022 18:18:24",
+            "review_text": "Very nice and helpful staff. Great place to chill on a warm afternoon. Grab a bite, grab a drink, and enjoy the company"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtNTduQ1pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNTduQ1pREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDm57nCZQ%7CCgwIlbOakAYQuIrExgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1644599701,
+            "review_datetime_utc": "02/11/2022 17:15:01",
+            "review_text": "I really enjoy this place and always bring out-of-towners. Unpretentious vibes and great service, I'll continue going back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtdWV6WUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtdWV6WUhnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDmuezYHg%7CCgwIibfrjwYQ8Ln_gwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643830153,
+            "review_datetime_utc": "02/02/2022 19:29:13",
+            "review_text": "Breakfast sandwiches are amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtb2FUc1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtb2FUc1FREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDmoaTsQQ%7CCgwIhNjbjwYQsI3W6AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643572228,
+            "review_datetime_utc": "01/30/2022 19:50:28",
+            "review_text": "I go over for the Rainbow Cake, Chocolate Hummus and great atmosphere of the place! The staff is always welcoming, especially in the Deli area!! Great find for me and so many others!!\nRamona!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwbV8yTTFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwbV8yTTFBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC0m_2M1AE%7CCgwIwISejwYQwIOI7QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642562112,
+            "review_datetime_utc": "01/19/2022 03:15:12",
+            "review_text": "Great food great service.  Tuna fish sandwich was on point"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtNDhuMTBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtNDhuMTBBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICm48n10AE%7CCgsIm4TkjgYQ0PPOSg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641611803,
+            "review_datetime_utc": "01/08/2022 03:16:43",
+            "review_text": "A delightful and unique experience.  Friendly staff and good vibes. Big plus is pets being allowed. I love taking my dog along for adventures"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtM2VEWlBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtM2VEWlBnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICm3eDZPg%7CCgwI8uzbjgYQqIfv3AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1641477746,
+            "review_datetime_utc": "01/06/2022 14:02:26",
+            "review_text": "Great white Pizza"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtclkzX0tREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtclkzX0tREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICmrY3_KQ%7CCgwI197YjgYQqOjonAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641426775,
+            "review_datetime_utc": "01/05/2022 23:52:55",
+            "review_text": "It was my first visit. The food was wonderful"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtdUpmWVdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtdUpmWVdnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICmuJfYWg%7CCgsI_J31jQYQsNzGMA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1639796476,
+            "review_datetime_utc": "12/18/2021 03:01:16",
+            "review_text": "Pretty crowded for a gas station but the drag show was amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHclBmNDBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHclBmNDBnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDGrPf40gE%7CCgsI3ZzljAYQqIqRfg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1637437021,
+            "review_datetime_utc": "11/20/2021 19:37:01",
+            "review_text": "Great place, Atmosphere, Drinks"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHbjlXaXBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHbjlXaXBnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGn9WipgE%7CCgwI96LAjAYQwMiitgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1636831607,
+            "review_datetime_utc": "11/13/2021 19:26:47",
+            "review_text": "One of last cool places to eat and drink"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHbDQ2OHpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHbDQ2OHpnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGl468zgE%7CCgwIg9y2jAYQ2JjdiAI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1636675075,
+            "review_datetime_utc": "11/11/2021 23:57:55",
+            "review_text": "A trendy deli but also kinda run down.  Not my kind of place.\n\nDecent food for fair price considering it's Charlotte but forgot my grilled cheese, not sure if an honest mistake or trying to get one over on me.  Patio is...ok.  Mediocre is the word that comes to mind."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHdzhiTmpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHdzhiTmpnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGw8bNjgE%7CCgsIm5-hjAYQ-I38Mg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1636323227,
+            "review_datetime_utc": "11/07/2021 22:13:47",
+            "review_text": "Common Market is ALWAYS fun! I think you kind of have to have a sense of humor and whimsy in order to work there. The staff is great, the selection of beer, wine, vegan options, and kitsch is amazing, and the vibe is always upbeat and fun.\n\nThe burrito with ghost pepper cheese is one of my favorite breakfasts in Charlotte. It's THAT freaking good. We usually go in the morning so we can have breakfast, but one of these days I need to try their lunches.\n\nThe bartender was extremely knowledgeable and made some excellent suggestions. I went home happy! We've also taken the dogs a few times and sat on the patio, which is fun, and I don't know if they still have it on the weekends because I work, but they used to do a small farmer's market out front. Loved that!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHamFXS3R3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHamFXS3R3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGjaWKtwE%7CCgsIhpSWjAYQ-OavJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1636141574,
+            "review_datetime_utc": "11/05/2021 19:46:14",
+            "review_text": "A Plaza Midwood Staple! Great food, beers, and service"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHaGFLVzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHaGFLVzVBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGhaKW5AE%7CCgwI_eaLjAYQ-Oa0yAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1635971965,
+            "review_datetime_utc": "11/03/2021 20:39:25",
+            "review_text": "I just love CM in general, but the one in Oakhurst is closer to my daughter and a bit more spread out.\n\nI love everything about it...employees, ambience, prices, selection...all of it! The sandwiches are also great, as is the coffee. And they have Delta 8 gummies, which help with my knee pain!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHdnNhOTlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHdnNhOTlRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGvsa99QE%7CCgsIs4_2iwYQsND9Hw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1635616691,
+            "review_datetime_utc": "10/30/2021 17:58:11",
+            "review_text": "Eclectic market with great menu and food choices"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHaHM3RHFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHaHM3RHFBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGhs7DqAE%7CCgsIt5nliwYQ8N7JDA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1635339447,
+            "review_datetime_utc": "10/27/2021 12:57:27",
+            "review_text": "They allow smoking on the patio and guests just put their butts on the floor.  Other than that great food and atmosphere.  Worth checking out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHZ01fdHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHZ01fdHZnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICGgM_tvgE%7CCgwI9K2siwYQ4IjD-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1634408180,
+            "review_datetime_utc": "10/16/2021 18:16:20",
+            "review_text": "The food was prepared after ordering. Old time atmosphere. Loved it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2MTlyX2d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2MTlyX2d3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID619r_gwE%7CCgwIytqeiwYQ8LCJ2AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1634184522,
+            "review_datetime_utc": "10/14/2021 04:08:42",
+            "review_text": "Cool place. Great wine special on Tues."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2bThDLTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2bThDLTZ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID6m8C-6wE%7CCgsI05WWiwYQgK-KLw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1634044627,
+            "review_datetime_utc": "10/12/2021 13:17:07",
+            "review_text": "Great vegetarian and vegan options"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2LWFiS2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2LWFiS2VBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID6-abKeA%7CCgsI0r_vigYQ4OziMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1633411026,
+            "review_datetime_utc": "10/05/2021 05:17:06",
+            "review_text": "This was a cool store with glasses of wine and beer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2LWRpREdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2LWRpREdBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID6-diDGA%7CCgwI943vigYQ8MnergE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1633404663,
+            "review_datetime_utc": "10/05/2021 03:31:03",
+            "review_text": "Was a pretty nice place, the sub shop was easy to figure out, but I'd say the main thing that caught eye was the two halfs of the boat on 2 parallel walls. kinda made it look like it wrecked there. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2N0pHZGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2N0pHZGNBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID67JGdcA%7CCgwIuJ6vigYQqNz4kgM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1632358200,
+            "review_datetime_utc": "09/23/2021 00:50:00",
+            "review_text": "Its a local favorite"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2Mzl1OHp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2Mzl1OHp3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC639u8zwE%7CCgwIm4aPigYQgP2RmwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1631830811,
+            "review_datetime_utc": "09/16/2021 22:20:11",
+            "review_text": "LOVE THIS PLACE!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2dWV2VmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2dWV2VmtBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC6uevVkAE%7CCgwI3_zjiQYQ6JzMiAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1631125087,
+            "review_datetime_utc": "09/08/2021 18:18:07",
+            "review_text": "Use to be a really chill place back in '08-2016 when it was one of the Eastside's little hidden cultural gems, live bands, great interesting people, but now gentrification has ruined and sucked all the charm out of it. too overcrowded and noisy, also no more live music. Now it's just another boring Charlotte bar."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2eHZERGRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2eHZERGRnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC6xvDDdg%7CCgwIv_XIiQYQ6OqD7gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1630681791,
+            "review_datetime_utc": "09/03/2021 15:09:51",
+            "review_text": "my first time here and i was excited"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2bXZyS0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2bXZyS0pnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC6mvrKJg%7CCgwI98zEiQYQ2JLWiwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1630611063,
+            "review_datetime_utc": "09/02/2021 19:31:03",
+            "review_text": "we ordered through the phone earlier, and the guy at the deli sounded pretty upset (not sure why?).\nwe had ordered a chicken salad sandwich & an egg salad one, but when we got home, i realized my egg salad sandwich was actually a chicken one as well...  which was very dill-heavy (i believe that's the herb used), not into it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhemFfaVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhemFfaVBREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDaza_iPQ%7CCgwIrs2UiQYQ2JjZtgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629824686,
+            "review_datetime_utc": "08/24/2021 17:04:46",
+            "review_text": "Always a good time. Basically anything you could want, they have...even tentacle fingers!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhMnJUQmdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhMnJUQmdnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDa2rTBggE%7CCgwI_Yn5iAYQkKiIwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629373693,
+            "review_datetime_utc": "08/19/2021 11:48:13",
+            "review_text": "This place honestly has the best breakfast in town. My favorite is the J Wrap. Coffee is also phenomenal, cheap and locally brewed !!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURha3JtYU5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURha3JtYU5nEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDakrmaNg%7CCgwIo5jwiAYQuPekjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629228067,
+            "review_datetime_utc": "08/17/2021 19:21:07",
+            "review_text": "Great beer selection and vibe!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhaWNIZFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhaWNIZFFBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICaicHdQA%7CCgwIs4uiiAYQ-IrQuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1627948467,
+            "review_datetime_utc": "08/02/2021 23:54:27",
+            "review_text": "Love this place"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhM3ItOVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhM3ItOVR3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICa3r-9Tw%7CCgwIrc6ciAYQsP_eqQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1627858733,
+            "review_datetime_utc": "08/01/2021 22:58:53",
+            "review_text": "Really cool place to hang out, I came when the jon G BBQ truck came.  Amazing selection of beer, wine list didnt look to bad either.  Awesome vibe. Very diverse patrons, awesome conversations.. good opportunity to meet new people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxejkzckpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxejkzckpnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDqz93rJg%7CCgwI67zThwYQgKOvoQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626660459,
+            "review_datetime_utc": "07/19/2021 02:07:39",
+            "review_text": "Delicious and creative samdwiches. Friendly staff and the market has a wide selection of wine and beer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxb3YzMWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxb3YzMWJBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDqov31bA%7CCgwIpM3_hgYQgJDQpgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625286308,
+            "review_datetime_utc": "07/03/2021 04:25:08",
+            "review_text": "Such a good vibe. I love being able to come pick some single beers and hang out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTcHFXcF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTcHFXcF9nRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDSpqWp_gE%7CCgwIh_32hgYQgM3LjQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625144967,
+            "review_datetime_utc": "07/01/2021 13:09:27",
+            "review_text": "I've always loved the Common Market and it is still amazing, even after 15 years from when I first stepped inside! It's definitely a gem in Charlotte. The deli makes amazing food!! Their sandwiches are incomparable to anywhere else. The ingredients they use are always top notch!! Along with their amazing beer and wine selections, I'm also excited they have a small sake section, too! And, of course, they still have a ton of weird items to purchase, which used to be the highlight of my visit back in the day."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxek0tTVRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxek0tTVRnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDqzM-MTg%7CCgsI1en0hgYQoOX_PQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625109717,
+            "review_datetime_utc": "07/01/2021 03:21:57",
+            "review_text": "Cheap gas no problem"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxek11bUp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxek11bUp3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDqzMumJw%7CCgwIwcv0hgYQiLaJnAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625105857,
+            "review_datetime_utc": "07/01/2021 02:17:37",
+            "review_text": "Great sandwiches and beers. Mt favorite is the chicken salad deluxe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxN2F1aUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxN2F1aUhnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICq7auiHg%7CCgsI7LKjhgYQiKCSXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623775596,
+            "review_datetime_utc": "06/15/2021 16:46:36",
+            "review_text": "Good deli sandwich."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxdFlLRmp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxdFlLRmp3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqtYKFjwE%7CCgsIxs6chgYQkOjIcA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1623664454,
+            "review_datetime_utc": "06/14/2021 09:54:14",
+            "review_text": "They have things you can't get and just a common market."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxa2FEbUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxa2FEbUdREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqkaDmGQ%7CCgwI69iDhgYQkLK5-AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623256171,
+            "review_datetime_utc": "06/09/2021 16:29:31",
+            "review_text": "Great spot for a great samich. Awesome beer and chip selection too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxM3ZhUnN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxM3ZhUnN3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICq3vaRswE%7CCgwIpeL6hQYQiL6pywI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623109925,
+            "review_datetime_utc": "06/07/2021 23:52:05",
+            "review_text": "This place is Charlotte "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5X3F5MTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5X3F5MTJRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICy_qy12QE%7CCgsIgMjvhQYQwNWqJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622926336,
+            "review_datetime_utc": "06/05/2021 20:52:16",
+            "review_text": "Socks"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbG9PNHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbG9PNHV3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqloO4uwE%7CCgwIrtnuhQYQ8IL8mwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1622912174,
+            "review_datetime_utc": "06/05/2021 16:56:14",
+            "review_text": "place is fine, clientele is a bit sketch"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxeHRxUjV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxeHRxUjV3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqxtqR5wE%7CCgwIheTphQYQkLeNlAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622831621,
+            "review_datetime_utc": "06/04/2021 18:33:41",
+            "review_text": "Fun concept of general store with beers on tap and a sandwich shop. Rueben was great. Limited picnic table style patio with fun mix of patrons and place to watch the neighborhood go by.  Parking on street or in rear and room to lock bikes in view."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxcXJmV0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxcXJmV0Z3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqqrfWFw%7CCgwI_4fhhQYQ-I-sgQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622688767,
+            "review_datetime_utc": "06/03/2021 02:52:47",
+            "review_text": "Great staff and friendly people. You must go check it out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLa1BxMTF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLa1BxMTF3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKkPq11wE%7CCgwI1Y7VhQYQ8KrWvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622493013,
+            "review_datetime_utc": "05/31/2021 20:30:13",
+            "review_text": "Ja, das ist gut!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxN0pMOVV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxN0pMOVV3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICq7JL9Uw%7CCgsIxaLLhQYQ6N22HA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622331717,
+            "review_datetime_utc": "05/29/2021 23:41:57",
+            "review_text": ""
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxcU5xbVdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxcU5xbVdREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqqNqmWQ%7CCgwIn4G0hQYQiLTh8QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1621950623,
+            "review_datetime_utc": "05/25/2021 13:50:23",
+            "review_text": "I'd love to have another experience here - but the sandwiches that we ordered weren't out of the world delicious. They were yummy, but maybe my expectations were too high. The vibe of the place is very unique, and it is refreshing amidst the uppity places that Charlotte normally offers."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxc05QdklREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxc05QdklREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICqsNPvIQ%7CCgwIqf-uhQYQsKzooQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621868457,
+            "review_datetime_utc": "05/24/2021 15:00:57",
+            "review_text": "My favorite place to grab a beer and talk with some friends. They have such a large assortment of beers and wines and don't get me started on their deli \n\nWent here on a date. Cool spot if you're low maintenance."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLMWNHVnN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLMWNHVnN3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDK1cGVswE%7CCgwIydv-hAYQuO6tiwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621077449,
+            "review_datetime_utc": "05/15/2021 11:17:29",
+            "review_text": "Great build your own 6 pack of craft beers. Love the pimento cheese sandwiches. It has an outdoor patio for morning coffee or having lunch with friends. Always great and friendly staff! They have Hilarious magnets and merch for sale. Stop by and and get a soup and sandwich! I highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLLW9YVjlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLLW9YVjlnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDK-oXV9gE%7CCgsIiufdhAYQ6OWrAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1620538250,
+            "review_datetime_utc": "05/09/2021 05:30:50",
+            "review_text": "Top tier beer and cider selection"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLNHQzNmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLNHQzNmNnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDK4t36cg%7CCgwIsZbLhAYQyKz6qwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1620233009,
+            "review_datetime_utc": "05/05/2021 16:43:29",
+            "review_text": "Nice place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLaFB1cC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLaFB1cC1BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDKhPup-AE%7CCgwIpbKuhAYQsP7KlwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619761445,
+            "review_datetime_utc": "04/30/2021 05:44:05",
+            "review_text": "Such an awesome place. Great beer, decent food and get ambiance"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLXzZXV3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLXzZXV3NnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICK_6WWsgE%7CCgwIyKyVhAYQ8Lie4QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1619351112,
+            "review_datetime_utc": "04/25/2021 11:45:12",
+            "review_text": "Always a chill spot"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLbjhlYWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLbjhlYWpnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKn8eajgE%7CCgsIruWQhAYQ0PCJDg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1619276462,
+            "review_datetime_utc": "04/24/2021 15:01:02",
+            "review_text": "Horrible service...The lady working this Saturday morning needs manor training... I have been a customer for over 20 years... She is the one reason I will never go back..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLOF83U3lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLOF83U3lBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICK8_7SyAE%7CCgwI4M7wgwYQgI-Q8wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1618749280,
+            "review_datetime_utc": "04/18/2021 12:34:40",
+            "review_text": "This is one of the few places that has a menu item that I crave - The Later Hater breakfast sandwich that I get as a wrap. They grill it so that the pimento cheese melts and creates an oozy cheesy yummy start to my day. And they have the best coffee- Jags Head."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLdHVqRkl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLdHVqRkl3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKtujFIw%7CCgwIz9WogwYQ-PrgyAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617570511,
+            "review_datetime_utc": "04/04/2021 21:08:31",
+            "review_text": "The people the conversations and the selection of beer would be enough but this establishment actually has really good food. Fresh meats, veggies and breads to rival the best NY style Deli. Daily specials and one off sandwich combos make this a refreshing pitstop in the area. Biggest selection of chips to accompany your desired handpiece will make this a regular break in your food choice. Tins of snacks and random edibles line the checkout and truly make this a unique stop and shop."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLOUpDcUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLOUpDcUZ3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICK9JCqFw%7CCgwIqJ6JgwYQ0Oy2rgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617055528,
+            "review_datetime_utc": "03/29/2021 22:05:28",
+            "review_text": "It's common market my guy duh"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLaEoyM1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLaEoyM1lREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKhJ23YQ%7CCgwIi8qBgwYQgOHSwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1616930059,
+            "review_datetime_utc": "03/28/2021 11:14:19",
+            "review_text": "Fun, energetic, and eccentric eatery and store. Great food, including vegetarian and vegan options and a helpful, friendly, staff. Highly recommended!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLdU1DNnZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLdU1DNnZBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKuMC6vAE%7CCgwIrJ_9ggYQgIjwtQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1616859052,
+            "review_datetime_utc": "03/27/2021 15:30:52",
+            "review_text": "Not sure why I have to hold 10+ minutes just to place an order.  Fix your system.  This is the point of a call in.  No other restaurant or food establishment would make their call in orders hold for more than a few seconds."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLaUtTa3Z3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLaUtTa3Z3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICKiKSkvwE%7CCgwIruP0ggYQwMf5pAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1616720302,
+            "review_datetime_utc": "03/26/2021 00:58:22",
+            "review_text": "My favorite place ever!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5b1lpRlBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5b1lpRlBBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDyoYiFPA%7CCgwIqeKgggYQ0LeTiwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615343913,
+            "review_datetime_utc": "03/10/2021 02:38:33",
+            "review_text": "It's a vibe"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5anRtZ2VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5anRtZ2VnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDyjtmgeg%7CCgwI9KiTggYQgMzFoAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1615123572,
+            "review_datetime_utc": "03/07/2021 13:26:12",
+            "review_text": "Love your breakfast sandwiches. But your app for the plaza midwood location always adds a $1.25 to add cheese to the breakfast sammy. Please fix!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5OXRHcVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5OXRHcVBREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDy9tGqPQ%7CCgwI4M-RggYQwKCH-wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615095776,
+            "review_datetime_utc": "03/07/2021 05:42:56",
+            "review_text": "Best place for a beer and good Talk!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5MXJiQjFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5MXJiQjFBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDy1rbB1AE%7CCgwIyaaOggYQ6MPNrQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615041353,
+            "review_datetime_utc": "03/06/2021 14:35:53",
+            "review_text": "This place has the best of everything you need on the way to another.  Make sure to stop by "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5MW9iaXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5MW9iaXF3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDy1obiqwE%7CCgwI756OggYQiMqZzwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615040367,
+            "review_datetime_utc": "03/06/2021 14:19:27",
+            "review_text": "One of the go to places when in the Plaza Midwood area. Great food and drinks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpdksyOXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpdksyOXRBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDivK29tAE%7CCgwIxO-AggYQkIWZ2wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1614821316,
+            "review_datetime_utc": "03/04/2021 01:28:36",
+            "review_text": "Always a great time.  The staff is great and knows you.  The prices are very fair....and I yeah they are never closed.  No matter what happens.  Thanks Blake and staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5Z3BHRlF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5Z3BHRlF3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDygpGFQw%7CCgwIgcfvgQYQ6Jvx2gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1614537601,
+            "review_datetime_utc": "02/28/2021 18:40:01",
+            "review_text": "Such and awesome hang out joint, def local spot.  Love the beers on tap here, and the choices to buy in the cooler are awesome as well.  Perfect spot to grab a sandwich and couple of brews.  Not to mention, one can practically pick up day to day stuff here in one stop.  The staff is really chill and cool.  I love the relax, easy going vibe here.  Food is tasty, beer is fresh.  Stop by and give them a try, check out the different art all over the walls on your stop, you will be glad that you did."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5aTlQUTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5aTlQUTdRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICyi9PQ7QE%7CCgwIheybgQYQwKGSkAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613166085,
+            "review_datetime_utc": "02/12/2021 21:41:25",
+            "review_text": "My first choice for places to grab anything from breakfast to lunch and especially meet friends for a much need drink.\n\nStaff is always friendly and helpful. Look forward to having Common in Rock Hill!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4MVpHQ09nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4MVpHQ09nEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID81ZGCOg%7CCgwI8-ebgQYQkJXrrQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613165555,
+            "review_datetime_utc": "02/12/2021 21:32:35",
+            "review_text": "Good"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5NlplX2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5NlplX2xRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICy6Ze_lQE%7CCgwI88rygAYQ0NS4sAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1612490099,
+            "review_datetime_utc": "02/05/2021 01:54:59",
+            "review_text": "Great customer service and delicious food.  Awesome place to hang out, get a beer or wine.  Casual, but if you show up in a tuxedo; it is not unexpected.  Also a great place to find a gift, for that one person who has everything!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5anBPck9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5anBPck9BEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICyjpOrOA%7CCgwIienUgAYQwM6o3QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1612002441,
+            "review_datetime_utc": "01/30/2021 10:27:21",
+            "review_text": "Lots of people got here too socialize and have drinks. They have a great selection of beers on draft which are changed periodically and is excellent wine selection by the glass and by the bottle. There's a limited menu for food and they have a great chef."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5aXJ5c1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5aXJ5c1RBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICyirysTA%7CCgwI0rW8gAYQ0O_iogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1611602642,
+            "review_datetime_utc": "01/25/2021 19:24:02",
+            "review_text": "Always something happening at CM"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5MHFpZWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5MHFpZWFBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICy0qieaA%7CCgsI-Yq3gAYQ0KmweA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1611515257,
+            "review_datetime_utc": "01/24/2021 19:07:37",
+            "review_text": "Love this place! Nice chill spot for drinks, snacks and sandwiches! They got all the drinks and junk foods "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5bElhemlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5bElhemlBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICylIaziAE%7CCgwIsO2hgAYQyK3xoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1611167408,
+            "review_datetime_utc": "01/20/2021 18:30:08",
+            "review_text": "I love all my weirdos and I love that there is a neat space where we can all find each other on a daily basis "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5aEtyQnJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5aEtyQnJnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICyhKrBrgE%7CCgsI1o6cgAYQgPGnHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1611073366,
+            "review_datetime_utc": "01/19/2021 16:22:46",
+            "review_text": "The Common Market is life! Always a pleasure to hang out and hangout with friends. The only place that is truly what plaza Midwood stood for many. Home. Food. And Good company."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bUk2bUp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bUk2bUp3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICymI6mJw%7CCgsI7dWWgAYQkOjLbw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1610984173,
+            "review_datetime_utc": "01/18/2021 15:36:13",
+            "review_text": "I normally don't leave reviews but the attention to detail the deli has is TERRIBLE. I've ordered from their Deli 10 times and they've messed my sandwich up at LEAST 8. Do yourself a favor and don't order from the Deli because I can almost guarantee you they will find a way to mess it up."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjNVBYSzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjNVBYSzhnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDc5PXK8gE%7CCgwIkcSe_wUQsJWNtwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1609015825,
+            "review_datetime_utc": "12/26/2020 20:50:25",
+            "review_text": "great place great environment great culture."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTbHBLdWR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTbHBLdWR3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDSlpKudw%7CCgwIm8GQ_wUQqImdiAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1608786075,
+            "review_datetime_utc": "12/24/2020 05:01:15",
+            "review_text": "Yes."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTaXF1THVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTaXF1THVBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDSiquLuAE%7CCgwI7s___gUQ8JaDzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1608509422,
+            "review_datetime_utc": "12/21/2020 00:10:22",
+            "review_text": "The people here are really laid back, and also helpful/kind. Cool selection of just about everything you'd need for a fantastic front porch afternoon, whether it's your porch, their porch, or porches beyond!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpcTVTOWtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpcTVTOWtBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDiq5S9kAE%7CCgwI3NnJ_gUQwLuH9QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1607625948,
+            "review_datetime_utc": "12/10/2020 18:45:48",
+            "review_text": "Absolutely awesome,so many varieties of beer n ales and everything in between, just blows my mind, fantastic place !!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpN1A3ZjNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpN1A3ZjNnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDi7P7f3gE%7CCgwIvdGG_gUQqLCeqgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606527165,
+            "review_datetime_utc": "11/28/2020 01:32:45",
+            "review_text": "Awesome laid back atmosphere. Great beer selection"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpbUlqejl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpbUlqejl3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDimIjz9wE%7CCgwIwcPx_QUQgKLHoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606181313,
+            "review_datetime_utc": "11/24/2020 01:28:33",
+            "review_text": "Always enjoy my visits.  Friendly staff and lively but safe environment. I'm there alot and would recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpZ083LUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpZ083LUdBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDigO7-GA%7CCgwIy_bg_QUQuPaXyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605909323,
+            "review_datetime_utc": "11/20/2020 21:55:23",
+            "review_text": "Such a chill place. Huge variety of beer, wine and energy drinks. Very interesting variety of things in here"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpcDdUdU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpcDdUdU5REAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICip7TuNQ%7CCgwImbnP_QUQ0NL-kQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605622937,
+            "review_datetime_utc": "11/17/2020 14:22:17",
+            "review_text": "Hidden gem with great beers and noshes."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpaHBfZDJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaHBfZDJnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICihp_d2gE%7CCgwIrvXA_QUQkP7CrwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605384878,
+            "review_datetime_utc": "11/14/2020 20:14:38",
+            "review_text": "One of my all time favorite places to go in Charlotte! Great beer, even greater people, and yes they sell Dunhills! Do yourself a favor and stop by!\nFind me on IG: @rah.giovanny "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpamYtMkxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpamYtMkxBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICijf-2LA%7CCgwI_6St_QUQyOKzkAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605063295,
+            "review_datetime_utc": "11/11/2020 02:54:55",
+            "review_text": "The staff is always helpful, the drinks are always flowing and the food is great!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpLXZQTGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpLXZQTGRBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICi-vPLdA%7CCgwImt7w_AUQgJj5yQM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1604071194,
+            "review_datetime_utc": "10/30/2020 15:19:54",
+            "review_text": "45 mins (called and ordered ahead) for 2 breakfast sandwich, 1 of which didnt have the correct toppings. It's almost as if they started making it when I got there to pick up. Bummed about waiting, but time is free."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpX08yczZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpX08yczZnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICi_O2s6gE%7CCgwI9K3W_AUQ-LrQjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603639028,
+            "review_datetime_utc": "10/25/2020 15:17:08",
+            "review_text": "Clean and cozy. So many different foods to try and they all looked great. Hip and trendy  great place for lunch, business or a date!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpX05IT09nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpX05IT09nEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICi_NHOOg%7CCgsI74_W_AUQoMfdIg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603635183,
+            "review_datetime_utc": "10/25/2020 14:13:03",
+            "review_text": "Best pimiento cheese grits EVER!  Seriously sublime.  Always been good - somehow getting even better!!  Outstanding!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpME1iUnNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpME1iUnNRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICi0MbRsQE%7CCgwIz5Sy_AUQ-OiG5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603045967,
+            "review_datetime_utc": "10/18/2020 18:32:47",
+            "review_text": "Love Common Market, all locations! Great deli food!!! Large Variety of snacks and drinks! Great people and service!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDNjkzRG9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDNjkzRG9RRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDC693DoQE%7CCgwIk_iR_AUQkIO1xwE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1602518035,
+            "review_datetime_utc": "10/12/2020 15:53:55",
+            "review_text": "It is what it is. A Charlotte staple."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDaGZhYTN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDaGZhYTN3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDChfaa3wE%7CCgwIvbzk-wUQgK6S4QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1601773117,
+            "review_datetime_utc": "10/04/2020 00:58:37",
+            "review_text": "Masks required  - food really good  - service so so"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDdnZiWjF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDdnZiWjF3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDCvvbZ1wE%7CCgwIuLfJ-wUQwMe25wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1601330104,
+            "review_datetime_utc": "09/28/2020 21:55:04",
+            "review_text": "Bacon, egg, and pepper jack on an everything bagel"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDckwtSDF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDckwtSDF3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDCrL-H1wE%7CCgwIiemO-wUQsOC5oAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1600369801,
+            "review_datetime_utc": "09/17/2020 19:10:01",
+            "review_text": "Food was good, took a little long to get my chicken salad sandwich. Staff was friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDdUlEaFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDdUlEaFVREAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDCuIDhUQ%7CCgwI8Pv6-gUQ0L24gQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1600044528,
+            "review_datetime_utc": "09/14/2020 00:48:48",
+            "review_text": "Good healthy atmosphere, great staff and a great place to meet people for the first time over the last 15 or so years I have made countless lifelong friends, thank you CM for all you do for our neighborhood."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDcS1fOTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDcS1fOTZ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCq-_96wE%7CCgsIsqTG-gUQ6NGJVg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1599181362,
+            "review_datetime_utc": "09/04/2020 01:02:42",
+            "review_text": "Love the place. Reminds me of a place in Asheville years ago called Vincent's Ear. Totally laid back and will be returning for a beer on the patio."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDeGNYZG9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDeGNYZG9RRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCxcXdoQE%7CCgwIvMer-gUQoLrszQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1598743484,
+            "review_datetime_utc": "08/29/2020 23:24:44",
+            "review_text": "The drinks aren't worth it, crowd is lame, and my bartender would not stop farting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDMGJ1bUNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDMGJ1bUNBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICC0bumCA%7CCgwI8OKZ-gUQ4Pbv6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1598452080,
+            "review_datetime_utc": "08/26/2020 14:28:00",
+            "review_text": "The food and beer was on point if you want to try different types of beer that's were you need to go"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDMnQtQ1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDMnQtQ1F3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICC2t-CQw%7CCgsIub37-QUQkJKuIQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1597955769,
+            "review_datetime_utc": "08/20/2020 20:36:09",
+            "review_text": "Awesome vibes"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDcXNhOTl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDcXNhOTl3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCqsa99wE%7CCgwIucD1-QUQoLrKhQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1597857849,
+            "review_datetime_utc": "08/19/2020 17:24:09",
+            "review_text": "Sandwiches, beers, wines, and great crowds."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDcXVEWDVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDcXVEWDVRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCquDX5QE%7CCgwIkor1-QUQwNqM5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1597850898,
+            "review_datetime_utc": "08/19/2020 15:28:18",
+            "review_text": "An absolute staple of Plaza Midwood and Charlotte! Your not a local if you don't frequent this place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDd3V5TnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDd3V5TnBnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCwuyNpgE%7CCgsIzMnm-QUQ-Iz3GA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1597613260,
+            "review_datetime_utc": "08/16/2020 21:27:40",
+            "review_text": "The BEST of PLAZA MIDWOOD PPL, FOOD & FUN..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDM0l2Qnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDM0l2Qnd3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICC3IvBwwE%7CCgwI6tng-QUQuLeEhgE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1597517034,
+            "review_datetime_utc": "08/15/2020 18:43:54",
+            "review_text": "Overpriced wares however the deli is great"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDa0lDWjVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDa0lDWjVnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCkICZ5gE%7CCgwIkKS1-QUQ6J-H8gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1596805648,
+            "review_datetime_utc": "08/07/2020 13:07:28",
+            "review_text": "No need to go anywhere else"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNDd0k3RC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDd0k3RC1BRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICCwI7D-AE%7CCgwIycKw-QUQuMW50QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1596727625,
+            "review_datetime_utc": "08/06/2020 15:27:05",
+            "review_text": "Common Market never dissappoints!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4bjkyMWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4bjkyMWVnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID8n921eg%7CCgwIi7qn-QUQqN3EwgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1596579083,
+            "review_datetime_utc": "08/04/2020 22:11:23",
+            "review_text": "This place is great. Big beer selection and the deli food is delicious right in the heart of Plaza Midwood"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4NVptMkxnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4NVptMkxnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC85Zm2Lg%7CCgwIm9Lu-AUQ0KHZhAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595648283,
+            "review_datetime_utc": "07/25/2020 03:38:03",
+            "review_text": "Great selection of soda and beer unique snacks"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4XzczN0hnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4XzczN0hnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8_737Hg%7CCgwIlsrh-AUQ6LGhlwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595434262,
+            "review_datetime_utc": "07/22/2020 16:11:02",
+            "review_text": "Unreal"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4Z2VHQ2dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4Z2VHQ2dRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgID8geGCgQE%7CCgwI9O_M-AUQgNOCgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595095028,
+            "review_datetime_utc": "07/18/2020 17:57:08",
+            "review_text": "Chicken salad deluxe on rye FTW"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM4eTllcm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4eTllcm9RRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8y9eroQE%7CCgwI6PS4-AUQsNj-_AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1594767976,
+            "review_datetime_utc": "07/14/2020 23:06:16",
+            "review_text": "Love Love this place! It's like its a different place in time. They offer so many things from  local vendors to unheard of...but it doesn't disappoint.. The Deli serves meat to meatless dishes, homemade desserts and sodas of nostalgia. My favorite is DR.BROWNS BLACK CHERRY.  Definitely a must go if you haven't already!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4czk2SU93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4czk2SU93EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8s96IOw%7CCgwIp9Sy-AUQ8NnQowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1594665511,
+            "review_datetime_utc": "07/13/2020 18:38:31",
+            "review_text": "Great  deli restaurant"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRM3RuTXlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRM3RuTXlBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDQ3tnMyAE%7CCgwI_YiC-AUQqLWn2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593869437,
+            "review_datetime_utc": "07/04/2020 13:30:37",
+            "review_text": "une classique"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4eW9QYU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4eW9QYU13EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8yoPaMw%7CCgwIqq7z9wUQgIPjqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593628458,
+            "review_datetime_utc": "07/01/2020 18:34:18",
+            "review_text": "Good people"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4dkk3MFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dkk3MFRnEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8vI70Tg%7CCgsIgI7b9wUQ8JbeDQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593231104,
+            "review_datetime_utc": "06/27/2020 04:11:44",
+            "review_text": "Sick vibe, great sandwiches"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4aElyQ1N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4aElyQ1N3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIC8hIrCSw%7CCgwIitLP9wUQiKzxuAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593043210,
+            "review_datetime_utc": "06/25/2020 00:00:10",
+            "review_text": "Place is awesome, good pricing, good beer selection in both tap and canned, staff is always on point, and the crowd usually peaceful, great place to relax and have a IPA"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjOXBYRzlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjOXBYRzlBRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDc9pXG9AE%7CCgwI88KK9wUQ2KCYrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1591910771,
+            "review_datetime_utc": "06/11/2020 21:26:11",
+            "review_text": "Plaza midwood institution"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjMk1EaTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjMk1EaTB3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDc2MDi0wE%7CCgsIhaqa9gUQgMm7fQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1590072581,
+            "review_datetime_utc": "05/21/2020 14:49:41",
+            "review_text": "The heart of Plaza Midwood."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjdG8ycTJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjdG8ycTJ3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICcto2q2wE%7CCgwI876m8wUQoOnW4AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583980403,
+            "review_datetime_utc": "03/12/2020 02:33:23",
+            "review_text": "Great sandwiches"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjOE5HSnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjOE5HSnVnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICc8NGJugE%7CCgwI8Mee8wUQ8NPpvwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583850480,
+            "review_datetime_utc": "03/10/2020 14:28:00",
+            "review_text": "Love their chickenless chicken salad.  My favorite!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzaVp6X3NnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzaVp6X3NnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDsiZz_sgE%7CCgsIg6CQ8wUQ-OnxYw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1583616003,
+            "review_datetime_utc": "03/07/2020 21:20:03",
+            "review_text": "Laid back atmosphere to try different beers and wine."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzOXJDZUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzOXJDZUd3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgIDs9rCeGw%7CCgsIiLL68gUQkJ6YJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583257864,
+            "review_datetime_utc": "03/03/2020 17:51:04",
+            "review_text": "Bring hand sanitizer lol"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzbjl1TGVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzbjl1TGVBEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICsn9uLeA%7CCgsIi6my8gUQuKPBZg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1582077067,
+            "review_datetime_utc": "02/19/2020 01:51:07",
+            "review_text": "great place to hang out"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzajlxbDFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzajlxbDFRRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICsj9ql1QE%7CCgwIp-Ss8gUQsMnzqAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1581986343,
+            "review_datetime_utc": "02/18/2020 00:39:03",
+            "review_text": "Local hang out spot with mead and beer and wine and you can dine or imbibe on the patio and people come hang out and do art or chill and the food is awesome too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzOS0zYVV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzOS0zYVV3EAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICs9-3aUw%7CCgwIwOyr8gUQgKOdoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581971008,
+            "review_datetime_utc": "02/17/2020 20:23:28",
+            "review_text": "Awesome place to hang out in Charlotte, will return."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzemZLVDJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzemZLVDJnRRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICszfKT2gE%7CCgwInpqE8gUQ2Je8oQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581321502,
+            "review_datetime_utc": "02/10/2020 07:58:22",
+            "review_text": "Awesome "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzMmJIUE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzMmJIUE5nEAE!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICs2bHPNg%7CCgwIrIr28QUQ8K710wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581090092,
+            "review_datetime_utc": "02/07/2020 15:41:32",
+            "review_text": "I love, love, love this place.  There are so many beers that you cannot find anywhere.  The best part is the staff knows beer!  They can guide you through the droves of  beer and make stellar recommendations.\n\nThe food here is really good too however, sometimes the wait can be a little long.  It's a nice grab and go place but there is also seating inside and outside.  Inside can be a little cramped with other shoppers but it wasn't bad."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzcWN2RDh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcWN2RDh3RRAB!2m1!1s0x0:0xf8e93af238dde863!3m1!1s2@1:CIHM0ogKEICAgICsqcvD8wE%7CCgwIx-Tx8QUQ8IX7ngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581019719,
+            "review_datetime_utc": "02/06/2020 20:08:39",
+            "review_text": "Market!"
+        }
+    ]
+}
