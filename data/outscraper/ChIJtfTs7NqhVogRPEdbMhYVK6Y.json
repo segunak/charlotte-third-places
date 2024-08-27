@@ -1,11 +1,12 @@
 {
     "place_name": "Night Swim Coffee | Brevard",
     "place_id": "ChIJtfTs7NqhVogRPEdbMhYVK6Y",
+    "place_description": null,
     "place_rating": 4.4,
     "place_total_reviews": 38,
     "place_google_id": "0x8856a1daececf4b5:0xa62b1516325b473c",
     "place_reviews_id": "-6473056854336649412",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJtfTs7NqhVogRPEdbMhYVK6Y&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJtfTs7NqhVogRPEdbMhYVK6Y&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3MWM3b0RnEAE",

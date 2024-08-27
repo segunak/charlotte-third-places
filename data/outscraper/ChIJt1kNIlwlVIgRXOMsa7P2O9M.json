@@ -1,11 +1,12 @@
 {
     "place_name": "Bill and Bobs Coffee Bar",
     "place_id": "ChIJt1kNIlwlVIgRXOMsa7P2O9M",
+    "place_description": "ONE CUP AT A TIME\n\u2615\ufe0f Brewing daily 8am-5pm\n\u3030\ufe0f Great coffee and Pastries",
     "place_rating": 4.9,
     "place_total_reviews": 76,
     "place_google_id": "0x8854255c220d59b7:0xd33bf6b36b2ce35c",
     "place_reviews_id": "-3225713457623145636",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJt1kNIlwlVIgRXOMsa7P2O9M&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJt1kNIlwlVIgRXOMsa7P2O9M&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3eDlpOHpRRRAB",

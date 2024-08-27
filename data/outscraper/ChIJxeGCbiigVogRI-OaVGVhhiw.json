@@ -1,11 +1,12 @@
 {
     "place_name": "Crane Coffee",
     "place_id": "ChIJxeGCbiigVogRI-OaVGVhhiw",
+    "place_description": "Classic espresso beverages, pour over coffee, specialty drinks, locally made bagels, and pastries.",
     "place_rating": 4.8,
     "place_total_reviews": 74,
     "place_google_id": "0x8856a0286e82e1c5:0x2c866165549ae323",
     "place_reviews_id": "3208358872387085091",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJxeGCbiigVogRI-OaVGVhhiw&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJxeGCbiigVogRI-OaVGVhhiw&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURicGJDLXVBRRAB",

@@ -1,6 +1,7 @@
 {
     "place_name": "Panera Bread | Cotswold",
     "place_id": "ChIJk-Ie_nwgVIgR0aSPHrptLEE",
+    "place_description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
     "place_rating": 3.7,
     "place_total_reviews": 446,
     "place_google_id": "0x8854207cfe1ee293:0x412c6dba1e8fa4d1",
@@ -1304,6 +1305,46 @@
             "review_text": "The Turkey sandwich is insane good. Wow."
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4NmFhZTRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4NmFhZTRRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgID86aae4QE%7CCgwI3NLW-AUQgK2ZvQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595255132,
+            "review_datetime_utc": "07/20/2020 14:25:32",
+            "review_text": "Great healthy food (if you stay away from the sweets). They are always very nice to me here. Thank you!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4bHJXMFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4bHJXMFRBEAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIC8lrW0TA%7CCgwIsZ6K-AUQsLe0wgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1594003249,
+            "review_datetime_utc": "07/06/2020 02:40:49",
+            "review_text": "They offered masks , and we're very professional about it. Very good customer service and amazing, consistent food experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjcVkzakNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjcVkzakNnEAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICcqY3jCg%7CCgwI7KW28wUQuMarmwM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1584239340,
+            "review_datetime_utc": "03/15/2020 02:29:00",
+            "review_text": "I was really not pleased with the food/amount of food based on the price. Half a sandwich, a small bowl of soup and an apple. The bread tasted good but was pretty tuff. The chicken noodle soup was ok. I've had much better for less money. For two of us it was $26 bucks and that was a special deal."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjMGZqazNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjMGZqazNRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICc0fjk3QE%7CCgsIlYiu8wUQ8Mj3DQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1584104469,
+            "review_datetime_utc": "03/13/2020 13:01:09",
+            "review_text": "Food is good and the place is clean, but there is always an issue with my order. This morning there were tortilla chips in my oatmeal?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzMm9PT0dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzMm9PT0dREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDs2oOOGQ%7CCgsI_rfv8gUQ2LmSTQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1583078398,
+            "review_datetime_utc": "03/01/2020 15:59:58",
+            "review_text": "Terrible service."
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzczdXRFVREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzczdXRFVREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICss7WDUQ%7CCgwIvcKW8gUQ0IT2wwI%7C?hl=en",
             "review_rating": 5,
@@ -1312,12 +1353,52 @@
             "review_text": "Great lunch on a rainy day"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNamJhRF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNamJhRF9nRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDMjbaD_gE%7CCgsIzNXS8AUQuNTiHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578412748,
+            "review_datetime_utc": "01/07/2020 15:59:08",
+            "review_text": "It's a very nice store and the staff are very friendly. The food is great too.. only warning would be that it can be extremely busy here if you're interested in eating on location. Last time I went I had to sit outside in the bitter cold to eat because it was too crowded in the restaurant and there wasn't enough seating. Not Panera's fault granted -- they can't help being popular, but just a general warning if you plan on eating in!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNblA2b3BRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNblA2b3BRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDMnP6opQE%7CCgwIq9D07wUQyIH5wQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1576871979,
+            "review_datetime_utc": "12/20/2019 19:59:39",
+            "review_text": "Love the frontega chicken!"
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwaWRLRU5nEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwaWRLRU5nEAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgID0idKENg%7CCgwI5IGd7gUQ6IK3hwE%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1573339364,
             "review_datetime_utc": "11/09/2019 22:42:44",
             "review_text": "Although it was crowded, still great food, efficient and friendly service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwbWU3Z3JRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwbWU3Z3JRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIC0me7grQE%7CCgwIycLS7AUQwPK30QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1570021705,
+            "review_datetime_utc": "10/02/2019 13:08:25",
+            "review_text": "This is one of the bigger and busier Panera Breads in the city.   This is a place that may be a little too boisterous to get work done if you are trying to sit at the computer.  The entire plaza seems a bit over ran.  This is a great place to go if you are really wanting to experience a crowd."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwc2Q3c0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwc2Q3c0V3EAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIC0sd7sEw%7CCgwInfTI7AUQ2KSq6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1569864221,
+            "review_datetime_utc": "09/30/2019 17:23:41",
+            "review_text": "Great Service, will definitely go again"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwMFptdVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwMFptdVF3EAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIC00ZmuQw%7CCgwIqODH7AUQ8MHvwgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1569845288,
+            "review_datetime_utc": "09/30/2019 12:08:08",
+            "review_text": "My family loves this place"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwb3ZpUkNREAE",
@@ -1926,86 +2007,6 @@
             "review_timestamp": 1522929714,
             "review_datetime_utc": "04/05/2018 12:01:54",
             "review_text": "Parking is generally awful. The shopping center is too busy and they never took into account the extra traffic. Panera also seems to have changed their cream cheese around and it's awful now. Still will order for a quick lunch and get a salad."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnb09USXhnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnb09USXhnRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICgoOTIxgE%7CCgwIvY3o1AUQwJrp2wE%7C?hl=en",
-            "review_rating": 1,
-            "review_timestamp": 1520043709,
-            "review_datetime_utc": "03/03/2018 02:21:49",
-            "review_text": "Wow don't come here if you want any kind of service! all the teenage employees here act like I'm asking them to do chores when I order my food! I was refused a loaf of bread bc \"were closed\" even though the girl just rang up my YOU pick two order! She just didn't feel like it! I was totally stonewalled and I wanted to give this business money! She wouldn't letme buy the loaf of bread in addition to my YOU pick two order. I'm so sorry I didn't realize how busy all the employees were, I'll come back later when they're finished doing whatever they're doing oh wait I won't come back ever. This is the NEW McDonalds in terms of poor service. The owner needs to do some serious re staffing starting w firing the girl working the register on Friday night who couldn't be bothered"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMTRER1lREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMTRER1lREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDg14DGYQ%7CCgsI2Ozp0QUQgLblfw%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1513780824,
-            "review_datetime_utc": "12/20/2017 14:40:24",
-            "review_text": "Great food and the staff is always lovely!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBdXUyVUtnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBdXUyVUtnEAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDAuu2UKg%7CCgwIw-_XzwUQwP-D0wI%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1509291971,
-            "review_datetime_utc": "10/29/2017 15:46:11",
-            "review_text": "The food is always consistent with my expectations. They have good healthy choices or I can get something more filling which is bread related.  Their soups are always rich and flavorful.\nI usually go there when I'm meeting someone and I need to have a conversation so the atmosphere is conducive."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnLTliYTRRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnLTliYTRRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICg-9ba4QE%7CCgwI7u2TzAUQgMmZrAM%7C?hl=en",
-            "review_rating": 3,
-            "review_timestamp": 1501886190,
-            "review_datetime_utc": "08/04/2017 22:36:30",
-            "review_text": "Continues to be the worst panera I go to.   Slow and inaccurate almost every time.  Never get my extra dressing the first time.   Wife just found, what we hope is, an avocado peal in her salad.  Kids got the wrong flavor yogurt.  My salad is way smaller than what I normally get at CMC.   I am consistently having problems at this location."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBMXRqMFVREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBMXRqMFVREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICA1tj0UQ%7CCgwI_KDKywUQwIrIzAE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1500680316,
-            "review_datetime_utc": "07/21/2017 23:38:36",
-            "review_text": "Great friendly customer service, we didn't wait for our orders, and the place was quite and not crowded."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBLThQVDNRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBLThQVDNRRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICA-8PT3QE%7CCgsIlt-JywUQwK_MEg%7C?hl=en",
-            "review_rating": 3,
-            "review_timestamp": 1499623318,
-            "review_datetime_utc": "07/09/2017 18:01:58",
-            "review_text": "Food and service are always excellent."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbk1uZWZREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbk1uZWZREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgIDAnMnefQ%7CCgsIr_vrygUQgPK6XQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1499135407,
-            "review_datetime_utc": "07/04/2017 02:30:07",
-            "review_text": "Great chain. Great location."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBdHVDS1pREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBdHVDS1pREAE!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICAtuCKZQ%7CCgwIh57gygUQwKGQ6gE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1498943239,
-            "review_datetime_utc": "07/01/2017 21:07:19",
-            "review_text": "Nice people and good treats."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNlBDU2pnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNlBDU2pnRRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICg6PCSjgE%7CCgwIraywygUQwI3S7wI%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1498158637,
-            "review_datetime_utc": "06/22/2017 19:10:37",
-            "review_text": "I stood in line only to be told my order was around the other side. No sign for that"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNReWVQcHl3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNReWVQcHl3RRAB!2m1!1s0x0:0x412c6dba1e8fa4d1!3m1!1s2@1:CIHM0ogKEICAgICQyePpywE%7CCgwI34-HyQUQwLq09AI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1495386079,
-            "review_datetime_utc": "05/21/2017 17:01:19",
-            "review_text": "Clean, fast as well as friendly customer service, and delicious, fulfilling food."
         }
     ]
 }

@@ -1,12 +1,37 @@
 {
     "place_name": "Mac Tabby Cat Cafe",
     "place_id": "ChIJs5IwQRGgVogRaPNqaU0r0G0",
+    "place_description": "Open 7 days! Ages 7+. Cool place, lots of adoptable cats to hang with (don't bring your own, we have it covered!) while sipping on some tasty beverages in a zen atmosphere! Our guests pay by the hour and reservations are highly encouraged, although walk-ins are welcome if we have the space!\n\nWe keep our cafe and cat lounge separate, you're welcome to stop in for coffee or wine, too! Come on in!",
     "place_rating": 4.8,
-    "place_total_reviews": 980,
+    "place_total_reviews": 983,
     "place_google_id": "0x8856a011413092b3:0x6dd02b4d696af368",
     "place_reviews_id": "7912872156771054440",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJs5IwQRGgVogRaPNqaU0r0G0&authuser=0&hl=en&gl=UA",
     "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NmJIUC1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NmJIUC1nRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID76bHP-gE%7CCgwIirOutgYQ6OW5pQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724619146,
+            "review_datetime_utc": "08/25/2024 20:52:26",
+            "review_text": "Very friendly staff and lots of cats! Great variety of drinks as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3NmFIN2pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3NmFIN2pBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID76aH7jAE%7CCgwI77CutgYQyNznqQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724618863,
+            "review_datetime_utc": "08/25/2024 20:47:43",
+            "review_text": "Loved going to the Max Tabby Cat Cafe! So many cute and sweet kitties, love that these kitties are so well treated as they find homes."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3d2RHU0pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3d2RHU0pBEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID7wdGSJA%7CCgwI1KCqtgYQ8LiosQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724551252,
+            "review_datetime_utc": "08/25/2024 02:00:52",
+            "review_text": "Even if you don't want to chill with the cats this place has great drinks and ambiance.  We DID hang out with the cats and they were wonderful - very healthy and in a great space. We had a fabulous time."
+        },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3dnRDTTVBRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3dnRDTTVBRRAB!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID7vtCM5AE%7CCgwIgImptgYQgNzvrwE%7C?hl=en",
@@ -1982,30 +2007,6 @@
             "review_timestamp": 1633983891,
             "review_datetime_utc": "10/11/2021 20:24:51",
             "review_text": "My Mom and I took my daughter here for her 21st bday, she absolutely loved it. Smaller coffee area than I expected, but many different choices. Nice big play area with the cats. What a great idea. The vibe was neat."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2dmJuQVJREAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2dmJuQVJREAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID6vbnARQ%7CCgwI1KiCiwYQ-LH2rQE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1633719380,
-            "review_datetime_utc": "10/08/2021 18:56:20",
-            "review_text": "Such a sweet spot! Great drinks and vibe, and the cats are soooo friendly and cute. I came to get some work done, which was a little tricky with cats on my keyboard, but there's space outside of the cat area where you can still soak up the vibe without distractions."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2MmZtdVh3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2MmZtdVh3EAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID62fmuXw%7CCgwI8fnsigYQsMmdoQE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1633369329,
-            "review_datetime_utc": "10/04/2021 17:42:09",
-            "review_text": "So fun and the people are so nice! Its a cat paradise. I recommend going earlier in the day because I went at 5pm and the cats were low energy. Still worth it!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2bVozYUZnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2bVozYUZnEAE!2m1!1s0x0:0x6dd02b4d696af368!3m1!1s2@1:CIHM0ogKEICAgID6mZ3aFg%7CCgwIq5jsigYQ2K6ftgI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1633356843,
-            "review_datetime_utc": "10/04/2021 14:14:03",
-            "review_text": "Didn't get to spend long here, but we spent some time talking to one of the people there and they were very helpful and answered all of our questions. The store is beautiful and I love the aesthetic. It has a boho, industrial kinda feel and there is art everywhere. I would recommend it to anyone in the area, but make sure to book time online for the cat lounge."
         }
     ]
 }

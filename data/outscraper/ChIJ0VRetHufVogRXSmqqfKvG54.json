@@ -1,11 +1,12 @@
 {
     "place_name": "Madison Perk Coffee Bar",
     "place_id": "ChIJ0VRetHufVogRXSmqqfKvG54",
+    "place_description": "Community Coffee Shop & Bar in Madison Park, Charlotte serving espresso, coffee, tea, ice cream, cocktails, & more!",
     "place_rating": 4.7,
     "place_total_reviews": 181,
     "place_google_id": "0x88569f7bb45e54d1:0x9e1baff2a9aa295d",
     "place_reviews_id": "-7053850934582302371",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ0VRetHufVogRXSmqqfKvG54&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ0VRetHufVogRXSmqqfKvG54&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyNmJHMnZBRRAB",

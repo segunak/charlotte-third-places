@@ -1,11 +1,12 @@
 {
     "place_name": "Hex Coffee",
     "place_id": "ChIJ___PjW2fVogRpQSJQZr2tKM",
+    "place_description": "Stylish coffee bar inside Good Bottle Co. for pour-overs, cold brew & espresso, plus baked goods.",
     "place_rating": 4.6,
     "place_total_reviews": 403,
     "place_google_id": "0x88569f6d8dcfffff:0xa3b4f69a418904a5",
     "place_reviews_id": "-6650419607334484827",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ___PjW2fVogRpQSJQZr2tKM&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ___PjW2fVogRpQSJQZr2tKM&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURidW9EM3FBRRAB",

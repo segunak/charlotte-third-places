@@ -1,11 +1,12 @@
 {
     "place_name": "Amelie's Bakery & Cafe | Park Road",
     "place_id": "ChIJvVxqVlSeVogRz786_h7uyiQ",
+    "place_description": "This charming gathering place draws a crowd for its pastries, light fare & coffee drinks.",
     "place_rating": 4.4,
     "place_total_reviews": 1012,
     "place_google_id": "0x88569e54566a5cbd:0x24caee1efe3abfcf",
     "place_reviews_id": "2651193147542650831",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJvVxqVlSeVogRz786_h7uyiQ&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJvVxqVlSeVogRz786_h7uyiQ&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3X19feGpnRRAB",

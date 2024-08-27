@@ -1,11 +1,12 @@
 {
     "place_name": "Panera Bread | Ballantyne",
     "place_id": "ChIJ2xDMAymdVogR8ilXXeLqP_0",
+    "place_description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
     "place_rating": 4,
     "place_total_reviews": 666,
     "place_google_id": "0x88569d2903cc10db:0xfd3feae25d5729f2",
     "place_reviews_id": "-198181600631510542",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ2xDMAymdVogR8ilXXeLqP_0&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ2xDMAymdVogR8ilXXeLqP_0&authuser=0&hl=en&gl=CA",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3M3ZhNnJBRRAB",

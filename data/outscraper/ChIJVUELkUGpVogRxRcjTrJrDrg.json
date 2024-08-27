@@ -1,6 +1,7 @@
 {
     "place_name": "Coffee Republic | Huntersville",
     "place_id": "ChIJVUELkUGpVogRxRcjTrJrDrg",
+    "place_description": "Welcome to our cozy family-owned coffee shop in Huntersville, NC! We're not just your average caf\u00e9 \u2013 we're a hidden gem with a twist! Venture up to our second floor and discover a coworking space and conference room that will make your productivity soar. Sip on coffee brewed from our very own sourced and roasted beans, while indulging in pastries made with love from our own bakers. Join us for a delicious cup of joe, a warm atmosphere, and the perfect spot to work or brainstorm. Come for the coffee, stay for the creativity!",
     "place_rating": 4.3,
     "place_total_reviews": 274,
     "place_google_id": "0x8856a941910b4155:0xb80e6bb24e2317c5",
@@ -576,12 +577,28 @@
             "review_text": "Small town coffee shop feel. Always hopping. Attentive staff."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoeF9QN1pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoeF9QN1pREAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIChx_P7ZQ%7CCgwI_v7enwYQyIW8xwE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1677180798,
+            "review_datetime_utc": "02/23/2023 19:33:18",
+            "review_text": "I love Main Street coffee and coworkers. It's such a friendly vibe and their coffee is great. I know inflation is crazy but I'm deducting a star for their pricing. I wish the prices allowed me to visit more regularly - I'm in the neighborhood - but today I paid $7.45 for an iced tea, and that seems absurdly high even with inflation!"
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoemVmREl3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoemVmREl3EAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIChzefDIw%7CCgwIrPzHnwYQqNXw0AI%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1676803628,
             "review_datetime_utc": "02/19/2023 10:47:08",
             "review_text": "We go to all three shops. Best coffee anywhere around north Charlotte!! Usually under staffed though. So you may have an extended wait. Especially at the Denver store."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoc2RDQ01nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoc2RDQ01nEAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIChsdCCMg%7CCgsIwOKznwYQ-KH5FQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676472640,
+            "review_datetime_utc": "02/15/2023 14:50:40",
+            "review_text": "My favorite place to get a latte (campfire mocha is my go to).  The entire staff is so pleasant.  Always takes the time to say hello and chat while they are working.  I come from the other side of Huntersville passing many coffee houses on the way just to go to Main Street Coffee."
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoaHB1VlB3EAE",
@@ -600,12 +617,44 @@
             "review_text": "This coffee shop and co-working space have it all! Every time I walk into this adorable space I am blown away by the coffee, the comfortability of the space, and the customer service (which is huge for me because I am a lifer in the service industry)!! Every person I have come in contact with who is about Main Street Coffee has been nothing short of amazing and welcoming. I am a part of their co-working space with a dedicated desk and the process of getting started has been seamless and easy, especially with the help from Leslie."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCeXVPWUJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCeXVPWUJBEAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIDByuOYBA%7CCgwI_u-VngYQkLzZiAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673885694,
+            "review_datetime_utc": "01/16/2023 16:14:54",
+            "review_text": "I always have a good experience at Mainstreet! I really enjoy their holiday latte and their Snickerdoodle one. Their pastries are great and so is their quiche :)"
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCdF9qZHpRRRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCdF9qZHpRRRAB!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgICBt_jdzQE%7CCgwIvrfinQYQuKeeigI%7C?hl=en",
             "review_rating": 5,
             "review_timestamp": 1673042878,
             "review_datetime_utc": "01/06/2023 22:07:58",
             "review_text": "Great service, coffee, and beer here"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMTZXOVJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMTZXOVJ3EAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgICB16W9Rw%7CCgwIqP3hnQYQ2O-xjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673035432,
+            "review_datetime_utc": "01/06/2023 20:03:52",
+            "review_text": "I loved the trivia night! It is currently Thursdays 6:30-7:30. Very fun and relaxed with fun topics for each round. They serve wine, beer coffee, snacks and more for the evenings. Highly recommend for a fun laid back time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtMzRlWExnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtMzRlWExnEAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgID-34eXLg%7CCgwIhYDinAYQwJng7AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670938629,
+            "review_datetime_utc": "12/13/2022 13:37:09",
+            "review_text": "Really good coffee in a really quaint and cozy location in Huntersville. Very friendly staff. Tasty baked goods as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtdTRHbzR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtdTRHbzR3RRAB!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIC-u4Go4wE%7CCgwI5PDJmwYQsInF_AE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1668446308,
+            "review_datetime_utc": "11/14/2022 17:18:28",
+            "review_text": "The coffee here is good, but not worth the price. A regular lavender oat milk latte is $7.50. I've been to other coffee shops that locally source their beans in areas all over NC where rent more expensive. Those places managed to have just as good as coffee at a cheaper price point. This is coming from a former barista. The only positive is the good customer service."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtM2N6LTB3RRAB",
@@ -622,6 +671,30 @@
             "review_timestamp": 1667078546,
             "review_datetime_utc": "10/29/2022 21:22:26",
             "review_text": "Amazing places. Great vibes. Thanks to Phil who made me the best Chai Latte. Enjoyed my time here. :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlXzhMNWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlXzhMNWpnRRAB!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIDe_8L5jgE%7CCgwI1cHWmgYQyKfbqwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666556117,
+            "review_datetime_utc": "10/23/2022 20:15:17",
+            "review_text": "Love the space and the drinks I got were on point!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLNkt2LUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLNkt2LUJnEAE!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIDK6Kv-Bg%7CCgwIuv-_mgYQ8MSj2AM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1666187194,
+            "review_datetime_utc": "10/19/2022 13:46:34",
+            "review_text": "It's a cool place with good coffee and pastries but it's way overpriced. $12.00 for an iced coffee and an Apple fritter. I read one of the other reviews where they argue the price is valid. But my question is, why are you guys so expensive and Summit Coffee in Davidson isn't this expensive? I'm not sure that I can ever justify paying 150% of what I would pay at your competitor. Lower your prices and you will see that you'll do more business and in turn you will bring in more revenue."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlbHNTbHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlbHNTbHZnRRAB!2m1!1s0x0:0xb80e6bb24e2317c5!3m1!1s2@1:CIHM0ogKEICAgIDelsSlvgE%7CCgsIzKGLmgYQ4JW6SA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665323212,
+            "review_datetime_utc": "10/09/2022 13:46:52",
+            "review_text": "Lovely staff, good service, good selections.  Yum!"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlOE1DX1VREAE",

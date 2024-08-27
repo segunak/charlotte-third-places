@@ -1,11 +1,12 @@
 {
     "place_name": "Cafe Moka",
     "place_id": "ChIJ9_BuwwEnVIgRxVLI2vk1ass",
+    "place_description": "Brewed coffee and espresso bar",
     "place_rating": 4.1,
     "place_total_reviews": 309,
     "place_google_id": "0x88542701c36ef0f7:0xcb6a35f9dac852c5",
     "place_reviews_id": "-3789156789245160763",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ9_BuwwEnVIgRxVLI2vk1ass&authuser=0&hl=en&gl=CL",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ9_BuwwEnVIgRxVLI2vk1ass&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURibzRhRGR3EAE",

@@ -1,12 +1,21 @@
 {
     "place_name": "Amelie's Bakery & Cafe | NoDa",
     "place_id": "ChIJY_5TrnWgVogRHbnVtqGvxm8",
+    "place_description": "This charming gathering place draws a crowd for its pastries, light fare & coffee drinks.",
     "place_rating": 4.6,
-    "place_total_reviews": 6752,
+    "place_total_reviews": 6753,
     "place_google_id": "0x8856a075ae53fe63:0x6fc6afa1b6d5b91d",
     "place_reviews_id": "8054318092690766109",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJY_5TrnWgVogRHbnVtqGvxm8&authuser=0&hl=en&gl=UA",
     "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3aWU2cl9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3aWU2cl9BRRAB!2m1!1s0x0:0x6fc6afa1b6d5b91d!3m1!1s2@1:CIHM0ogKEICAgID7ie6r_AE%7CCgwIvICttgYQkMyH6gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1724596284,
+            "review_datetime_utc": "08/25/2024 14:31:24",
+            "review_text": "Saturday night, the pastry section was mostly empty. I am ok with that assuming they bake things fresh and want to avoid wastage but the prices were ridiculous on the scraps that were left. They need to halve the prices on some of their products or double the portion size. US price+ French portion size= No Thanks."
+        },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3bnJQMlJ3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3bnJQMlJ3EAE!2m1!1s0x0:0x6fc6afa1b6d5b91d!3m1!1s2@1:CIHM0ogKEICAgID7nrP2Rw%7CCgsIw8KotgYQkP7iVw%7C?hl=en",
@@ -1998,14 +2007,6 @@
             "review_timestamp": 1677182057,
             "review_datetime_utc": "02/23/2023 19:54:17",
             "review_text": "This place is sooooooo nice! I live right behind it in the Noda area and got very excited when they built this one! Went in for the first time today and the food was great as well as my coffee but nothing was better than the friendly staff. Especially Thomas! He was very nice and helpful and had great conversation! Looking forward to coming back"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoMl82TXdnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoMl82TXdnRRAB!2m1!1s0x0:0x6fc6afa1b6d5b91d!3m1!1s2@1:CIHM0ogKEICAgICh2_6MwgE%7CCgsI7oLbnwYQ0LKEXA%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1677115758,
-            "review_datetime_utc": "02/23/2023 01:29:18",
-            "review_text": "Amelie's has great sweet tasty treats in every size! This is a fruit tart with a creamy custard. Love them all! I highly recommended you active your will power before you enter the door. Otherwise, you may walk away with way more than you thought you needed ."
         }
     ]
 }

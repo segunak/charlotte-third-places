@@ -1,11 +1,12 @@
 {
     "place_name": "La Dolcekca Bakery Cafe",
     "place_id": "ChIJwW1v78-fVogRvnC2-WIuAYM",
+    "place_description": null,
     "place_rating": 4.7,
     "place_total_reviews": 230,
     "place_google_id": "0x88569fcfef6f6dc1:0x83012e62f9b670be",
     "place_reviews_id": "-9006866777133125442",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJwW1v78-fVogRvnC2-WIuAYM&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJwW1v78-fVogRvnC2-WIuAYM&q=*&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3ekxTMWpnRRAB",

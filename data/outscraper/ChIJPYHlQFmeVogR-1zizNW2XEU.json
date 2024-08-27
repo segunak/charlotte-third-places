@@ -1,11 +1,12 @@
 {
     "place_name": "Mugs Coffee",
     "place_id": "ChIJPYHlQFmeVogR-1zizNW2XEU",
+    "place_description": "Coffee shop providing area-sourced java & pastries in a chill space with local artwork & free Wi-Fi.",
     "place_rating": 4.7,
     "place_total_reviews": 520,
     "place_google_id": "0x88569e5940e5813d:0x455cb6d5cce25cfb",
     "place_reviews_id": "4998070715856084219",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJPYHlQFmeVogR-1zizNW2XEU&q=*&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJPYHlQFmeVogR-1zizNW2XEU&authuser=0&hl=en&gl=JP",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyamV1OXpnRRAB",
@@ -94,6 +95,14 @@
             "review_timestamp": 1714001636,
             "review_datetime_utc": "04/24/2024 23:33:56",
             "review_text": "Great spot! Very nice drinks, friendly staff and good food options if you come early."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqLUpmYlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqLUpmYlhREAE!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgICj-JfbXQ%7CCgsIleaBsQYQ2LrXKA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713402645,
+            "review_datetime_utc": "04/18/2024 01:10:45",
+            "review_text": "Not only was the coffee delicious, but the service was nothing short of exceptional. Incredibly nice people and excellent amounts of seating.\n\nCame into town for a few weeks and decided to stop by here for a cup of coffee. Ended up making this my hub to work out of when I had meetings.\n\nHighly recommend to anyone who is ever in this part of town. 10/10"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREcEtHRW1RRRAB",
@@ -1998,14 +2007,6 @@
             "review_timestamp": 1533479197,
             "review_datetime_utc": "08/05/2018 14:26:37",
             "review_text": "Awesome spot to hangout on Saturday morning"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OVktZXNRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OVktZXNRRRAB!2m1!1s0x0:0x455cb6d5cce25cfb!3m1!1s2@1:CIHM0ogKEICAgICw9Y-esQE%7CCgsIzIGY2wUQwNWHCQ%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1533411532,
-            "review_datetime_utc": "08/04/2018 19:38:52",
-            "review_text": "Great place for coffee and in a relaxed setting."
         }
     ]
 }

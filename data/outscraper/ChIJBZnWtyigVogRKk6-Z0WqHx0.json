@@ -1,12 +1,29 @@
 {
     "place_name": "Amelie's Bakery & Cafe | Uptown",
     "place_id": "ChIJBZnWtyigVogRKk6-Z0WqHx0",
+    "place_description": "This cheerful gathering place draws a crowd for its pastries, light fare & coffee drinks.",
     "place_rating": 4.6,
-    "place_total_reviews": 4007,
+    "place_total_reviews": 4009,
     "place_google_id": "0x8856a028b7d69905:0x1d1faa4567be4e2a",
     "place_reviews_id": "2098583166447930922",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJBZnWtyigVogRKk6-Z0WqHx0&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJBZnWtyigVogRKk6-Z0WqHx0&authuser=0&hl=en&gl=UA",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3NmFPdUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3NmFPdUJ3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID76aOuBw%7CCgwIibyutgYQ0PyupwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1724620297,
+            "review_datetime_utc": "08/25/2024 21:11:37",
+            "review_text": "Absolutely disgusting place. When I was a server we would be fired for trying to kick people out 10 minutes before we closed. We got there at 4:20. They closed at 5:00. The told us to leave at 4:50 and took a chair from a 87 year old lady who can not stand. If I was the owner I would not want my business ran by these employees. What happened to good service?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3aWJMMVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3aWJMMVhREAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID7ibL1XQ%7CCgsIhfistgYQiI72Ew%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1724595205,
+            "review_datetime_utc": "08/25/2024 14:13:25",
+            "review_text": "Nice place and good food! Don't dare go past the red window to request a modification be made to your order! Perhaps they need a sign, \"Employee' only\" instead of \"Sir, you can't be back here!\"  Should call in the the \"thin red line\"."
+        },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3eHZmUDR3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3eHZmUDR3RRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgID7xvfP4wE%7CCgsI_KyktgYQwNndWw%7C?hl=en",
@@ -1990,22 +2007,6 @@
             "review_timestamp": 1694474273,
             "review_datetime_utc": "09/11/2023 23:17:53",
             "review_text": "One of my must-stops when I'm visiting Charlotte. I love their desserts and drinks!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaZ2RxR1B3EAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaZ2RxR1B3EAE!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZgdqGPw%7CCgwI0JH9pwYQgLXcjQI%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1694451920,
-            "review_datetime_utc": "09/11/2023 17:05:20",
-            "review_text": "Perfection"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNacnUyLTRRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNacnUyLTRRRRAB!2m1!1s0x0:0x1d1faa4567be4e2a!3m1!1s2@1:CIHM0ogKEICAgICZru2-4QE%7CCgwIksT4pwYQqNWzjgM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1694376466,
-            "review_datetime_utc": "09/10/2023 20:07:46",
-            "review_text": "Incredibly cute patisserie! The food was absolutely amazing. So glad we found this on our trip"
         }
     ]
 }

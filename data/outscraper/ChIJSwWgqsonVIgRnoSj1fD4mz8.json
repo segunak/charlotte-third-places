@@ -1,12 +1,21 @@
 {
     "place_name": "Coffee Republic | Matthews",
     "place_id": "ChIJSwWgqsonVIgRnoSj1fD4mz8",
+    "place_description": "Welcome to Coffee Republic in Matthews, NC\u2014your destination for top-tier coffee that fuels your hustle! Since 2019, we've passionately served expertly roasted beans and handcrafted beverages made with love. Our cozy shop is the perfect spot for your daily java fix. Join us for an unmatched coffee experience and the finest brews.",
     "place_rating": 4.4,
-    "place_total_reviews": 23,
+    "place_total_reviews": 24,
     "place_google_id": "0x885427caaaa0054b:0x3f9bf8f0d5a3849e",
     "place_reviews_id": "4583530759039714462",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJSwWgqsonVIgRnoSj1fD4mz8&authuser=0&hl=en&gl=IN",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJSwWgqsonVIgRnoSj1fD4mz8&authuser=0&hl=en&gl=UA",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3aWJlc1ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3aWJlc1ZREAE!2m1!1s0x0:0x3f9bf8f0d5a3849e!3m1!1s2@1:CIHM0ogKEICAgID7ibesVQ%7CCgsI_ZettgYQgPqbIQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724599293,
+            "review_datetime_utc": "08/25/2024 15:21:33",
+            "review_text": "The coffee has been perfect every time! Hands down my favorite local coffee spot!"
+        },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3N3JTNEZ3EAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3N3JTNEZ3EAE!2m1!1s0x0:0x3f9bf8f0d5a3849e!3m1!1s2@1:CIHM0ogKEICAgID77rS4Fw%7CCgwIme2ntgYQ0OWF0AI%7C?hl=en",

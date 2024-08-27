@@ -1,11 +1,12 @@
 {
     "place_name": "My Story Cafe",
     "place_id": "ChIJL0qfJJqhVogRbVpvuG2ieac",
+    "place_description": "My Story Cafe is a coffee shop in Charlotte, NC. Our experienced staff provides friendly and prompt service for a remarkable cafe experience. We value our customers and strive to satisfy your coffee cravings by serving you our cafe's best and tastiest recipes. Our coffee shop is the perfect place to meet with family and friends. We are friendly and care about your experience at our cafe. We are confident that one visit will satisfy your cravings and give you an unforgettable day.",
     "place_rating": 4.7,
     "place_total_reviews": 120,
     "place_google_id": "0x8856a19a249f4a2f:0xa779a26db86f5a6d",
     "place_reviews_id": "-6378888805064156563",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJL0qfJJqhVogRbVpvuG2ieac&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJL0qfJJqhVogRbVpvuG2ieac&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MnVLbE13EAE",

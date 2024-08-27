@@ -1,11 +1,12 @@
 {
     "place_name": "Amelie's Bakery & Cafe | Rock Hill",
     "place_id": "ChIJISNW2VWIVogR20NKKcIAdWs",
+    "place_description": "This charming gathering place draws a crowd for its pastries, light fare & coffee drinks.",
     "place_rating": 4.6,
     "place_total_reviews": 1166,
     "place_google_id": "0x88568855d9562321:0x6b7500c2294a43db",
     "place_reviews_id": "7743095968249824219",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJISNW2VWIVogR20NKKcIAdWs&authuser=0&hl=en&gl=IN",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJISNW2VWIVogR20NKKcIAdWs&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3ck8tb0xBEAE",

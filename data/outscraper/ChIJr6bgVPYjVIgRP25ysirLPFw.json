@@ -1,11 +1,12 @@
 {
     "place_name": "Panera Bread | Matthews",
     "place_id": "ChIJr6bgVPYjVIgRP25ysirLPFw",
+    "place_description": "Counter-serve bakery/cafe chain serving sandwiches, salads & more, known for its bread & free WiFi.",
     "place_rating": 4.1,
     "place_total_reviews": 1125,
     "place_google_id": "0x885423f654e0a6af:0x5c3ccb2ab2726e3f",
     "place_reviews_id": "6646410534334918207",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJr6bgVPYjVIgRP25ysirLPFw&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJr6bgVPYjVIgRP25ysirLPFw&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3dUthYzZ3RRAB",

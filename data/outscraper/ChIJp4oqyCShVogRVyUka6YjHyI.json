@@ -1,11 +1,12 @@
 {
     "place_name": "Enderly Coffee Company",
     "place_id": "ChIJp4oqyCShVogRVyUka6YjHyI",
+    "place_description": "We are a local coffee roaster and cafe in Charlotte, NC. We ethically source our coffee and are located in the heart of our neighborhood, Enderly Park",
     "place_rating": 4.9,
     "place_total_reviews": 356,
     "place_google_id": "0x8856a124c82a8aa7:0x221f23a66b242557",
     "place_reviews_id": "2458723119236654423",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJp4oqyCShVogRVyUka6YjHyI&authuser=0&hl=en&gl=US",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJp4oqyCShVogRVyUka6YjHyI&authuser=0&hl=en&gl=UA",
     "reviews_data": [
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3b0lIbU5nEAE",
@@ -1376,6 +1377,14 @@
             "review_text": "All the staff is so nice and thoughtful!!!!!!!"
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzcmF2QzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcmF2QzRBRRAB!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICsravC4AE%7CCgwIy4aG8gUQ8JaingE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581351755,
+            "review_datetime_utc": "02/10/2020 16:22:35",
+            "review_text": "Great coffee and kind staff."
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzck9XZWFBEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzck9XZWFBEAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICsrOWeaA%7CCgsI2bSt8QUQ-J7fHg%7C?hl=en",
             "review_rating": 5,
@@ -1400,6 +1409,14 @@
             "review_text": "I was heading back to Nashville and needed a cup of coffee for the road. I use to live in Charlotte and never saw this place as it opened up after I left.  Coming here I was very impressed by the coffee and now feel kind of sad I won't be able to try them again.  This is definitely a pretty impressive new shop and better than most any roaster I have had in Nashville.  I am from the Pacific Northwest, lived in Denver and have ordered coffees from around the country, including from California, Missouri, Illinois and New York.  I have had an appreciation for some of the best roasters in the country and I will say this stuff impressed me.  If they end up shipping and nitrogen packing their bags I may consider ordering some of this stuff.   Also, they charge very little for the quality of the coffee.   I think some of the snobby shops in Seattle could learn a thing or two about high quality and modest pricing like this shop has.   Definitely a very good micro-roaster.  I would put them and Hex at the top of roasters I have had in Charlotte."
         },
         {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNblByUFF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNblByUFF3EAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgIDMnPrPQw%7CCgsI3rH07wUQ-PadRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1576868062,
+            "review_datetime_utc": "12/20/2019 18:54:22",
+            "review_text": "Yum!\n\nHappy to be able to get their coffee again.\n\nWe were introduced to them through Joe's doughs a few years back and when they closed it was hard to get their beans!"
+        },
+        {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNcmVLc1BREAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNcmVLc1BREAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICMreKsPQ%7CCgsIu6iL7wUQ6JvKcA%7C?hl=en",
             "review_rating": 5,
@@ -1414,6 +1431,30 @@
             "review_timestamp": 1574172074,
             "review_datetime_utc": "11/19/2019 14:01:14",
             "review_text": "From hot chocolate to coffee and more. Have yet to have something that isn't great! It is now my monthly tradition to go there"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwX1ptN2R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwX1ptN2R3EAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgID0_Zm7dw%7CCgwI-e7E7gUQ6IOU1QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1573992313,
+            "review_datetime_utc": "11/17/2019 12:05:13",
+            "review_text": "Love this place.  Coffee is good and music is chill."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwM3Zlb3RnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwM3Zlb3RnRRAB!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgID03veotgE%7CCgsIhb2M7gUQ6PHmaw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1573068421,
+            "review_datetime_utc": "11/06/2019 19:27:01",
+            "review_text": "Sweet little space. They doing good things with coffee. Engaging and inviting staff. The owner is down to earth, friendly, and has a heart for the community. Love its location. So much more then the cup of coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwaXZDZEl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwaXZDZEl3EAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgID0ivCdIw%7CCgwIz4zp7QUQsITLvQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572488783,
+            "review_datetime_utc": "10/31/2019 02:26:23",
+            "review_text": "Tony and company are awesome! They have been engaged in the west Charlotte community for years. They produce an excellent product, served consistently, and are social entrepreneurs who have helped create opportunity in the Tuckaseegee/Parkview/Enderly corridor. They are an asset to the community and to morning wake up routines!"
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwc0otX2lBRRAB",
@@ -1966,46 +2007,6 @@
             "review_timestamp": 1532494105,
             "review_datetime_utc": "07/25/2018 04:48:25",
             "review_text": "Atmosphere \nService \nCoffee\nGo check it out! Highly recommend"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNReV9qWjBnRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNReV9qWjBnRRAB!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICQy_jZ0gE%7CCgwIvZfK2gUQwKzd3QE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1532136381,
-            "review_datetime_utc": "07/21/2018 01:26:21",
-            "review_text": "Best coffee in Charlotte! Locally roasted, great atmosphere and James always has the biggest smile! You can get all varieties of hot an cold coffee in addition to fresh roasted coffee beans. Highly recommend."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3LWJxbUVBEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3LWJxbUVBEAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICw-bqmEA%7CCgsI_sCX2gUQgI_8Ug%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1531306110,
-            "review_datetime_utc": "07/11/2018 10:48:30",
-            "review_text": "Great staff even better coffee."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnM0t2VXhRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnM0t2VXhRRRAB!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICg3KvUxQE%7CCgsI24n42QUQgKfpLA%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1530791131,
-            "review_datetime_utc": "07/05/2018 11:45:31",
-            "review_text": "Awesome coffee shop! Great coffee, great service and wonderful atmosphere. So happy this place opened."
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBZ3NEMC1BRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBZ3NEMC1BRRAB!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICAgsD0-AE%7CCgwI_4H02QUQwK6w0AE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1530724607,
-            "review_datetime_utc": "07/04/2018 17:16:47",
-            "review_text": "This is a sweet, new coffee shop in the heart of Enderly Park.  Located in a historic, mid-20th c. building the building remodel is stunning.  Clean, fresh lines, exposed beams, all the good stuff.  As for the service and the coffee, both are top of the line.  I've tried the iced and hot coffee and both were top notch.  The owner brews all the beans himself and he and the staff are friendly and super efficient.  I'd definitely recommend stopping in to this new little gem."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3el9tWk5REAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3el9tWk5REAE!2m1!1s0x0:0x221f23a66b242557!3m1!1s2@1:CIHM0ogKEICAgICwz_mZNQ%7CCgwIqZfz2QUQwKSImQE%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1530710953,
-            "review_datetime_utc": "07/04/2018 13:29:13",
-            "review_text": "This is an awesome spot.  Delicious coffee and great staff.  Enderly is also super active in their community, which is the icing on the cake.  You gotta check them out!!"
         }
     ]
 }

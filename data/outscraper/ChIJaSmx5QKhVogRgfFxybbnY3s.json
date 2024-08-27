@@ -1,12 +1,29 @@
 {
     "place_name": "Lottie's Cafe",
     "place_id": "ChIJaSmx5QKhVogRgfFxybbnY3s",
+    "place_description": "Lottie\u2019s Cafe is a cafe for the modern diner. Located in Uptown Charlotte, we are a coffee shop with extended food and tea offerings. We feature a full espresso program, matcha, breakfast and lunch. We also offer Charlotte themed souvenirs and gifts.",
     "place_rating": 4.9,
-    "place_total_reviews": 26,
+    "place_total_reviews": 28,
     "place_google_id": "0x8856a102e5b12969:0x7b63e7b6c971f181",
     "place_reviews_id": "8891204861609243009",
     "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJaSmx5QKhVogRgfFxybbnY3s&authuser=0&hl=en&gl=US",
     "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3cVkyV2VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3cVkyV2VBEAE!2m1!1s0x0:0x7b63e7b6c971f181!3m1!1s2@1:CIHM0ogKEICAgID7qY2WeA%7CCgsImPuttgYQ6PDUfw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724611992,
+            "review_datetime_utc": "08/25/2024 18:53:12",
+            "review_text": "Great food, atmosphere, and the owners are exceptional hosts. They really went the extra mile, and we shared some excellent conversation that felt personal and homely. Definitely recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3OFlITnhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3OFlITnhnRRAB!2m1!1s0x0:0x7b63e7b6c971f181!3m1!1s2@1:CIHM0ogKEICAgID78YHNxgE%7CCgwIjdGstgYQ-L6ztAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724590221,
+            "review_datetime_utc": "08/25/2024 12:50:21",
+            "review_text": "Lottie's is one of the best cafes that I've been to and definitely the best in Charlotte! The whole vibe and ambiance are so calming and feel good, but the staff is what makes it amazing. Everyone is so friendly and welcoming and they make sure your order is perfect. I'm the pickiest matcha drinker and they made sure my matcha latte was best! The owner, Ashley, makes you feel like a friend from the moment you walk through the doors and brings out your order to you directly. Everything from the decor, the furniture, the food and coffees is exquisite. I was in Charlotte for a week while visiting, and came to this cafe almost every morning. Cannot wait to be back!"
+        },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3N3MzVmNnEAE",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3N3MzVmNnEAE!2m1!1s0x0:0x7b63e7b6c971f181!3m1!1s2@1:CIHM0ogKEICAgID77s3Vcg%7CCgwImoiotgYQ-LLYqQE%7C?hl=en",
