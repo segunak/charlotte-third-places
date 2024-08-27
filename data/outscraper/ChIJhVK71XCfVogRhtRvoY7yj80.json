@@ -1,0 +1,2012 @@
+{
+    "place_name": "ROOTS Cafe",
+    "place_id": "ChIJhVK71XCfVogRhtRvoY7yj80",
+    "place_description": "Daytime hangout serving a simple menu of pastries, sandwiches & coffee made using local ingredients.",
+    "place_rating": 4.4,
+    "place_total_reviews": 500,
+    "place_google_id": "0x88569f70d5bb5285:0xcd8ff28ea16fd486",
+    "place_reviews_id": "-3634419679856962426",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJhVK71XCfVogRhtRvoY7yj80&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3MnVPeS1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3MnVPeS1RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID72uOy-QE%7CCgsI5M-itgYQ-Mirfg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1724426212,
+            "review_datetime_utc": "08/23/2024 15:16:52",
+            "review_text": "Nice atmosphere, cute cafe, good service. We arrived, ordered, sat and didn't wait too long for our food and drinks.\n\nMy shareable salad was nice, but small in the context of sharing. The avocado toast was soft on soft - the bread seemed to be toasted on one side but was still quite soft, with the avocados mashed or sliced - it wasn't clear -, and then drenched in a sauce. The plate('ing) was quite awkward but overall not as enjoyable as desired. Nice biscuit, but the sides - butter and jam were way more than needed.\n\nMy daughter's drink had a bug. Once I brought it to their notice, the team was kind enough to replace it, and refund the drink."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURicklqVUFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURicklqVUFnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDbrIjUAg%7CCgwIs8q0tQYQgJXViAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722623283,
+            "review_datetime_utc": "08/02/2024 18:28:03",
+            "review_text": "Super cute vibes! My latte was great and the service was fast and friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNibDhUUGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNibDhUUGJnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICbl8TPbg%7CCgwIyuqktQYQ0KbfuQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722365258,
+            "review_datetime_utc": "07/30/2024 18:47:38",
+            "review_text": "I had the root bowl and the flavor was great but it wasn't a bowl it was more of a plate. I would have liked to have more greens or veggies in general. By the time I mixed it together it was more of a bean bowl because it wasn't enough greens. However, the flavor was really good. Add more veggies and it's definitely a winner."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyaUszV3R3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyaUszV3R3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDriK3WtwE%7CCgsInvbJtAYQkNylfQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720875806,
+            "review_datetime_utc": "07/13/2024 13:03:26",
+            "review_text": "This is the best breakfast/brunch/lunch place. It's casual, great food offerings that you don't find everywhere. The tostada, croque madame, and burrito are some of our favorites. Not a massive boozy brunch place, but great brunch cocktails and coffee. We have gone to the after hours and had a tapas dinner and cocktails and played games and it was wonderful. I will be distraught if they ever close!!! We usually come here every weekend we are in town."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyaF9YaHZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyaF9YaHZRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICrh_XhvQE%7CCgwIm73AtAYQ4O7ZkgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720721051,
+            "review_datetime_utc": "07/11/2024 18:04:11",
+            "review_text": "I love this place.\nThat housemade pastrami is life.  In fact everything I've ordered has always made my tummy happy.\nI once got a chance to speak to the chef and he was super down to earth and nice.\nPricing also gives a good value due to the flavor and care they take with it.\nI just went today for a pastrami breakfast wrap (since i was in the area), but couldnt eat it till like a half hour later - and it tasted amazing as ever."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNydm9tNFlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydm9tNFlnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICrvom4Yg%7CCgwImJCrtAYQyKueqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720371224,
+            "review_datetime_utc": "07/07/2024 16:53:44",
+            "review_text": "I stopped by for brunch with my friend and was so pleasantly surprised! Such a pleasant outdoor space, and nicely decorated and cool inside. Food was super flavorful and coffee was better than expected. Good vegetarian/vegan options"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyOHM2OE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyOHM2OE5nEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICr8s68Ng%7CCgwI1-agtAYQ0NS2jQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720202071,
+            "review_datetime_utc": "07/05/2024 17:54:31",
+            "review_text": "Attentive service. Ordered the vegan Roots Bowl - 10/10 delicious and nutritious! We will be back. My only thing were the uncomfortable high chairs. Eek."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMcGEtWkJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMcGEtWkJnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICLpa-ZBg%7CCgsIkYnXswYQ4IvwRQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718994065,
+            "review_datetime_utc": "06/21/2024 18:21:05",
+            "review_text": "The tostada. So freakin' good, y'all. Also the coolest, plant adorned gem in Charlotte...and awesome staff!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMM05YbWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMM05YbWtRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICL3NXmkQE%7CCgwIzYe8swYQgPa3owE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718551501,
+            "review_datetime_utc": "06/16/2024 15:25:01",
+            "review_text": "The customer service was good and good delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMbEl5OVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMbEl5OVhREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICLlIy9XQ%7CCgwI4ca2swYQ-M2P5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718461281,
+            "review_datetime_utc": "06/15/2024 14:21:21",
+            "review_text": "Roots Cafe in South End has been a favorite for years now. Whenever I'm in the area I stop in for one of the best lattes in town - only use house made syrups!\nTheir breakfast and lunch menu has superb rotating choices. I can't ever stop ordering their goat cheese grits bowl in the morning, but at lunch the salads call my name!! The Roots Bowl is a classic but this salmon salad was beyond delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMcUxiUm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMcUxiUm5RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICLqLbRnQE%7CCgwIiJixswYQqOzVlAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718373384,
+            "review_datetime_utc": "06/14/2024 13:56:24",
+            "review_text": "Paulstrami may be the greatest thing that's ever happened in life. The greatest thing known to mankind."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6Xy1fcXNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6Xy1fcXNRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDz_-_qsQE%7CCgwI99ytswYQoOrb-gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718316663,
+            "review_datetime_utc": "06/13/2024 22:11:03",
+            "review_text": "We first discovered Roots years ago but after moving further south, our visits decreased. We have recently rediscovered it and are so thankful! The menu is unique and delicious and the food is always superb. You always leave feeling like you've done something good for your body. The staff are friendly and given the limited seating available, do a fantastic job of making sure tables are shared (when appropriate), people don't sit before ordering and people don't linger too long. The ambiance is second to none; it's a relaxed, cozy, communal vibe that can't be beat. So glad to have rediscovered this gem!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUNF9pWGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUNF9pWGdRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICT4_iXgQE%7CCgwIt6WjsgYQ0LaukAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716048567,
+            "review_datetime_utc": "05/18/2024 16:09:27",
+            "review_text": "I love this place! The atmosphere is so nice and the brunch is phenomenal!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUaEpTaDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUaEpTaDVnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICThJSh5gE%7CCgwI5pL7sQYQiOOE7wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715390822,
+            "review_datetime_utc": "05/11/2024 01:27:02",
+            "review_text": "Really great place to come and check out! Came here while my flight got delayed to Houston and I'm glad I was able to stop by!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqOWVUbGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqOWVUbGNBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDj9eTlcA%7CCgwI1rDgsQYQ2OOovgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714952278,
+            "review_datetime_utc": "05/05/2024 23:37:58",
+            "review_text": "For sure my fav breakfast spot now\nVibe is really good esp on a rainy day it would be something\nCroissant is really good, it has a twist soctry it out\nTostadas were also good\nAvocado toast is okayish.\nIts a self service place with decent prices.\nDef would return\nWe ordered 3 thins with 2 coffee's total was about 50 bucks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREajhDYnpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREajhDYnpBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDDj8CbzAE%7CCgsI8MP1sAYQqIn_FA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713201648,
+            "review_datetime_utc": "04/15/2024 17:20:48",
+            "review_text": "Super cute coffee spot. Tasty tostada. Yummy breakfast sandwiches. Fairly priced coffee. Much better than any chain :)\nAmbience was lovely. They support local dog shelters too, who doesn't love that!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREdTRqY1JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREdTRqY1JBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDDu4jcRA%7CCgwIqK_wsAYQ2IHkpwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713117096,
+            "review_datetime_utc": "04/14/2024 17:51:36",
+            "review_text": "Wonderful experience dining in. The food was great!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREcThtTldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcThtTldBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDDq8mNWA%7CCgsIxd3usAYQsMG3OA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713090245,
+            "review_datetime_utc": "04/14/2024 10:24:05",
+            "review_text": "Hidden gem in Charlotte. Food is really high quality and consistently on point. Service is always warm and friendly. Its small and quaint which I actually adore. Has that intimate feel that Charlotte has lost from a lot of local restaurants. Def check it out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREenFXZThBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREenFXZThBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDDzqWe8AE%7CCgwIlZ7VsAYQ2NyBsAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712672533,
+            "review_datetime_utc": "04/09/2024 14:22:13",
+            "review_text": "Hidden gem in Charlotte. I really enjoy their breakfast. :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREdlA3Yzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREdlA3Yzd3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDDvP7c7wE%7CCgwI_rHHsAYQ8Jr8xQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712445694,
+            "review_datetime_utc": "04/06/2024 23:21:34",
+            "review_text": "Very impressed! First time visit my daughter and I had breakfast sandwiches.  They were very good! Will come again and highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEeGZDbDlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEeGZDbDlRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICDxfCl9QE%7CCgwImq6gsAYQ-Nv3qAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1711806234,
+            "review_datetime_utc": "03/30/2024 13:43:54",
+            "review_text": "I got an egg bacon sandwich and a latte and it was $15  maybe if it was less it would be worth it. It's not worth that price"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5c1AzNWx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5c1AzNWx3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID9sP35lwE%7CCgwIzL3BrwYQqL_H7gI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1710251724,
+            "review_datetime_utc": "03/12/2024 13:55:24",
+            "review_text": "Cute place\nNothing appealing on the menu for me and I like coffee so when it tastes more like milk than coffee it's a no for me"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5cC1QUlNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5cC1QUlNREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC9p-PRSQ%7CCgwIz9u3rwYQkNjVogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710091727,
+            "review_datetime_utc": "03/10/2024 17:28:47",
+            "review_text": "My new favorite breakfast/brunch spot! The food is so delicious and great quality ingredients. I got the mini latkes with tomato jam, breakfast bowl and grits. Will be dreaming of the tomato jam lol. Customer service is welcoming, helpful, and patient even with a line out the door. I can't wait to go back already."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkM01yRjdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkM01yRjdnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICd3MrF7gE%7CCgwI8_qurgYQ2L7fkQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707851123,
+            "review_datetime_utc": "02/13/2024 19:05:23",
+            "review_text": "The food was delicious. Definitely some place to go back to."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQxNXUzcG5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxNXUzcG5nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID15u3pngE%7CCgsI4YznrAYQ6NPpGg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704576609,
+            "review_datetime_utc": "01/06/2024 21:30:09",
+            "review_text": "The cutest spot with SUCH good food & coffee! Also the service was fantastic!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxcnBEcXFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxcnBEcXFBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC1rpDqqAE%7CCgwIpuO9rAYQyNeR6AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703899558,
+            "review_datetime_utc": "12/30/2023 01:25:58",
+            "review_text": "My coffee and food were great."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWMjRXX1RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWMjRXX1RREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDV24W_TQ%7CCgsIk-n3qwYQgN_bYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702753427,
+            "review_datetime_utc": "12/16/2023 19:03:47",
+            "review_text": "The Roots Bowl was amazing. I decided to not add any meat to the bowl, it was so filling I didn't miss it. The flavors were fresh and the roasted carrots and seeet potatoes we delicious. The chairs could be more comfy but they work for a brief sit down meal."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWbE5pY1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWbE5pY1l3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICVlNicYw%7CCgwI1pO9qwYQyKa3xQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701792214,
+            "review_datetime_utc": "12/05/2023 16:03:34",
+            "review_text": "The food was wholesome and tasted great. My daughter Tyasia suggested Roots for lunch and it was a great idea!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsN0piLTlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsN0piLTlBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDl7Jb-9AE%7CCgsIw56jqwYQyLPlUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701367619,
+            "review_datetime_utc": "11/30/2023 18:06:59",
+            "review_text": "My favorite place in all of Charlotte.\n\nBreakfast Sammy, on an everything bagel, with vegan sausage ;p"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGc3BHQ0lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGc3BHQ0lBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDFspGCIA%7CCgwI2sSbqgYQqJ3vnwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699144282,
+            "review_datetime_utc": "11/05/2023 00:31:22",
+            "review_text": "Wife and I love this place. We always get the breakfast burrito and avocado toast and it's so good. I usually get a hot latte too and it's probably one of the best latte's I've had. Staff is always very nice as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGbVBXUUZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGbVBXUUZnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDFmPWQFg%7CCgwIlu6ZqgYQyI2t1gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699116822,
+            "review_datetime_utc": "11/04/2023 16:53:42",
+            "review_text": "Their breakfast options are refreshingly unique, and the cozy boho interiors provide a comfortable and inviting setting. The coffee served here is simply fantastic, and the attentive staff make your visit even more enjoyable. If you're searching for a cafe that combines creativity, ambiance, and great coffee, this is the place to be. It's also great place for a coffee date."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGcTRxb3VRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGcTRxb3VRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICFq4qouQE%7CCgwIze-OqgYQwJGP9wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698936781,
+            "review_datetime_utc": "11/02/2023 14:53:01",
+            "review_text": "I just discovered this place. It's fantastic. And the bathroom is nice and clean too. This may not seem important but it is to some people."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGb1pQdmlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGb1pQdmlRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICFoZPviQE%7CCgsIubb0qQYQ8MqiNw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1698503481,
+            "review_datetime_utc": "10/28/2023 14:31:21",
+            "review_text": "First time here and the breakfast sandwiches were great and the hot chocolate. Couldn't tell you how the coffee was because they didn't serve us any. Guess the lady taking our order got confused and just assumed we didn't order it...when we did."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1MGMybTV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1MGMybTV3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID50c2m5wE%7CCgwI6p3mqQYQiNb2iAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698270954,
+            "review_datetime_utc": "10/25/2023 21:55:54",
+            "review_text": "Nice coffee shop in Charlotte, NC. It's tucked away and very unassuming from the outside, but the Americano was excellent. Nice ambience. Open late!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1MHNDb2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1MHNDb2hnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID50sCohgE%7CCgsI9d3QqQYQgP2OJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697918709,
+            "review_datetime_utc": "10/21/2023 20:05:09",
+            "review_text": "Plenty of things left to try on this menu! Food and service was fantastic."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1b2JuYW5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1b2JuYW5BRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC5obnanAE%7CCgwI3KOqqQYQ-KiD-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697288668,
+            "review_datetime_utc": "10/14/2023 13:04:28",
+            "review_text": "I love this coffee spot. It's cozy and food is great.\n\nI'm not a coffee person so I always go for the coconut matcha latter and it's amazing!\n\nThey also have a salmon muffin which you can replace the muffin for an everything bagel and it's delicious.\n\nDuring the weekends it can get pretty busy and there aren't many tables available."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1bnJIOVNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1bnJIOVNBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC5nrH9SA%7CCgwIvpWmqQYQuP6EhgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1697221310,
+            "review_datetime_utc": "10/13/2023 18:21:50",
+            "review_text": "This was good, until it wasn't. After eating it for a while it started to make me feel weird, not entirely sure why. The burger bowl definitely had too much aioli but the mushroom sandwich was good. The environment of the establishment is nice."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1bFB5TEZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1bFB5TEZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC5lPyLFw%7CCgwIhraWqQYQ-N_EgQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696963334,
+            "review_datetime_utc": "10/10/2023 18:42:14",
+            "review_text": "The roots bowl was sooo good! I added salmon for an additional up charge, but it was a pretty small portion for the price :("
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadF9MUV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadF9MUV9nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZt_LQ_gE%7CCgwI4K2LqQYQwMXL_AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696782048,
+            "review_datetime_utc": "10/08/2023 16:20:48",
+            "review_text": "Great service, great food and a nice atmosphere!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaOWNudEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOWNudEdBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZ9cntGA%7CCgsI8KL9qAYQ-LazKg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696551280,
+            "review_datetime_utc": "10/06/2023 00:14:40",
+            "review_text": "Good place for brunch.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURabnNXWlJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURabnNXWlJnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZnsWZRg%7CCgwI_KXmqAYQqL3GtAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696174844,
+            "review_datetime_utc": "10/01/2023 15:40:44",
+            "review_text": "Delicious food and a cute atmosphere!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURadHNYakx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURadHNYakx3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZtsXjLw%7CCgwI24bhqAYQ8PLghwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696088923,
+            "review_datetime_utc": "09/30/2023 15:48:43",
+            "review_text": "We tried Paulstrami Breakfast Wrap, it's delicious! Also a well-made cappuccino, perfect! The atmosphere and bilingual attention. Excellent!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaZ3MzSGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaZ3MzSGd3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZgs3HgwE%7CCgsIjLfOqAYQuPqjEw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695783820,
+            "review_datetime_utc": "09/27/2023 03:03:40",
+            "review_text": "Everything about this place is to die for! First of all, the menu is phenomenal with healthy and delcious choices that won't break the bank. Second, the quaint atmosphere is cozy but stylish and upscale at the same time. Will be returning."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaM0llYndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaM0llYndBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZ3IebwAE%7CCgwIuPPLqAYQ6KyBuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695742392,
+            "review_datetime_utc": "09/26/2023 15:33:12",
+            "review_text": "A wonderful place to get coffee and a little treat. I really enjoyed sitting outside and relaxing. The food is good and the coffee is amazing. It Is an actual full service cafe, the servers to come up and check to see if you need anything. The girls working here are amazing and definitely make it a better experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaNU5hRV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaNU5hRV9nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZ5NaE_gE%7CCgwIu_LCqAYQ-Ky8sAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695594811,
+            "review_datetime_utc": "09/24/2023 22:33:31",
+            "review_text": "A slice of New York vibes right in CLT. One of our favorite spots in the city. Good food and wonderful coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURabVBuNXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURabVBuNXVRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDZmPn5uQE%7CCgwIxuq8qAYQ0OCw3gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695495494,
+            "review_datetime_utc": "09/23/2023 18:58:14",
+            "review_text": "I had the salmon salad and it was delectable.  I'm definitely going back again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaczh6dUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaczh6dUNREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICZs8zuCQ%7CCgwIzNScqAYQ2KO4pAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694968396,
+            "review_datetime_utc": "09/17/2023 16:33:16",
+            "review_text": "Awesome service, great food. Highly recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNacGU3MExREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNacGU3MExREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICZpe70LQ%7CCgwI6ISMqAYQ6NGQoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694696040,
+            "review_datetime_utc": "09/14/2023 12:54:00",
+            "review_text": "The best local cafe for coffee, breakfast & lunch in charlotte. Delicious food & great vibes both inside and on outside patio"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdmNtcTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdmNtcTlnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDpvcmq9gE%7CCgsIwLytpwYQkOP2fQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693146688,
+            "review_datetime_utc": "08/27/2023 14:31:28",
+            "review_text": "The raspberry jam coffee cake is a must & the caramel latte was delicious. Outdoor seating area is very pretty and calming. Only suggestion would be more indoor seating, but then again who needs to be indoors when it's nice weather? :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwemZ5UDRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwemZ5UDRnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDpzfyP4gE%7CCgwIoZSppwYQ2IKn0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693076001,
+            "review_datetime_utc": "08/26/2023 18:53:21",
+            "review_text": "Great breakfast/lunch/brunch spot.\n\nFood was amazing and reasonably priced. I recommend the Fresh Start wrap and the grits. (FYI the grits are actually cheese grits, which isn't listed on the menu.)\n\nCoffee beans are locally sourced from Enderly & they did a great job with their brew.\n\nService was a little odd: you have to see the counter before taking a table, but then you return to the counter to order. Drinks and food came out quick though!\n\nAtmosphere was cozy & clean, but the seats were small and not the most comfortable.\n\nOverall great experience and will return!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweGJ2alBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweGJ2alBREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDpxbvjPQ%7CCgwIoKejpwYQgPTHkAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1692980128,
+            "review_datetime_utc": "08/25/2023 16:15:28",
+            "review_text": "The food greatly lacked any flavor, one thing that stood out was a dish that combined apple slices and eggs in a sandwich, very awful. The atmosphere however was impressive, a nice place to do work for sure."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwd3FTOUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwd3FTOUdBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDpwqS9GA%7CCgwI98mJpwYQ8LqhxAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692558583,
+            "review_datetime_utc": "08/20/2023 19:09:43",
+            "review_text": "Food and service is good"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwbE5YZE13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwbE5YZE13EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDplNXdMw%7CCgwI3p_0pgYQiJ-4hwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692209118,
+            "review_datetime_utc": "08/16/2023 18:05:18",
+            "review_text": "A great place to grab a light lunch and coffee. Inside and outside tables. Very friendly and accommodating staff. Wonderful experience. Highly recommended if you are in the south end."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdktUSmZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdktUSmZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICpvKTJfQ%7CCgsIwv2apgYQ2PTpYQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690746562,
+            "review_datetime_utc": "07/30/2023 19:49:22",
+            "review_text": "Very nice. Good coffee. Good food. Fast friendly service. Dog friendly. Fairly priced."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKaDQyeEVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKaDQyeEVREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDJh42xEQ%7CCgwImJb3pQYQuIT_sAM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1690159896,
+            "review_datetime_utc": "07/24/2023 00:51:36",
+            "review_text": "Atmosphere is nice and a cute, but it didn't feel like it was run super well.\nNo tables were available when we got to the register, so we ordered food to go. Soon after (as we were still waiting on our food), a table opened up so we sat down. We were promptly told we couldn't sit there as it was only for customers who had a table number. I feel like this system doesn't work though, because everyone stands in the same line to order...but you only get a table if one is open the instant you place your order so that you can get a number. You're either lucky or not...there's no in between. For a coffee shop/cafe, it seems too strict. People should be able to sit as they like as tables open up.\nStaff were nice and food was good but felt overpriced ($8 for a pop tart that I waited on for 15mins).\nI wanted to like this place and may give it another try, but I didn't love it due to the  $ and weird seating rules."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKNXF5d2d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKNXF5d2d3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICJ5qywgwE%7CCgwI5P3lpAYQqKu1lQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687781092,
+            "review_datetime_utc": "06/26/2023 12:04:52",
+            "review_text": "The food is delicious. They have gluten free and vegan options. Great shaded patio. It is dog friendly, too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKb01uTUNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKb01uTUNBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICJoMnMCA%7CCgwI_oi9pAYQ0M-sgwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1687110782,
+            "review_datetime_utc": "06/18/2023 17:53:02",
+            "review_text": "Came here with my wife who happens to be 9 months pregnant. After I found her a seat, we were asked to vacate the table before I even had a chance to order. Do not recommend! If you want customers to order prior to sitting down, have a host or someone who can greet you and point you in the right direction or at least let you know that's the case. There are plenty of welcoming and accommodating establishments just steps away. Will not be coming back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4c3JMamtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4c3JMamtBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDxsrLjkAE%7CCgwI_pP3owYQiJPVzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685965310,
+            "review_datetime_utc": "06/05/2023 11:41:50",
+            "review_text": "Excellent coffee and food. I highly recommend the Paulstrami Breakfast Wrap"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4aU1QOF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4aU1QOF9BRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDxiMP8_AE%7CCgwI6Y3dowYQiK205QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685538537,
+            "review_datetime_utc": "05/31/2023 13:08:57",
+            "review_text": "Love the atmosphere! The staff is friendly. Tried the breakfast Sammy and burrito both were amazing! Reasonable prices. Also parking is very convenient."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4c18zazJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4c18zazJnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICxs_3k2gE%7CCgwI4o--owYQ4P382wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685030882,
+            "review_datetime_utc": "05/25/2023 16:08:02",
+            "review_text": "I unfortunately didn't take any photos,  but I got the breakfast burrito.  The staff were very accommodating to my request for replacing and not adding in certain items to make it vegetarian. The burrito was delicious and the atmosphere was very inviting."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4c1BuQ3JnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4c1BuQ3JnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICxsPnCrgE%7CCgwI2pPmogYQwNipngM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1683589594,
+            "review_datetime_utc": "05/08/2023 23:46:34",
+            "review_text": "MOLDY FOOD\n\nMy son and I visited ROOTS today for the first time. We ordered breakfast sandwiches, grits, and a blueberry muffin from their case. The hot good was tasty, the ambiance lovely, and overall good atmosphere.\n\nHowever, the muffin we received was molded. We took it to go and didn't notice it until later. My son took a bite of the muffin he complained he didn't like it and tasted funny. Upon examining it I found mold spots all on the inside of it....\n\nI really wanted to like this spot, however this was disappointing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURScU5pYWNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURScU5pYWNnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDRqNiacg%7CCgwIwd_woQYQqLi5rgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1681665985,
+            "review_datetime_utc": "04/16/2023 17:26:25",
+            "review_text": "Very nice neighborhood cafe.\n\n1.  The coffee is  reasonably priced and taste great.  My wife ordered a latte and enjoyed it so much she grabbed another to take home.\n\n2.  The breakfast sandwiches taste great but are a little overpriced.  We ordered turkey sausage, egg, and cheese croissant and it was $9.50 each.  Had we had bacon (we don't eat pork) our sandwiches would have been $5.65.    The avocado toast was pretty good however it was soggy and may have had a bit too much butter.  It wasn't bad, but yet again.  It was $10.  All in all we paid about $47 for 2 croissant sandwiches, avocado toast, an orange juice, and 2 coffees.   When visiting here you are obviously paying for the location.  Our order probably should. Have been $30 tops.\n\n3.  The service was really good.  They take your order when you arrive and you seat yourself.  However, a waitress will bring out your food and drinks and check in on you occasionally.  Our waitress was friendly and did a good job of making sure we were happy.\n\n4.  The dining area is cozy with a few high top tables.  There are live plants and overall really relaxed vibe.  The downfall is the space can fill up very quickly.  If 5 or 6 orders come in back to back the place will fill up very quickly.  When we visited it was rainy but they do have quite a bit of outdoor seating.  They also provide free WiFi.\n\n4. The parking is horrible! Street parking seems to be the best option.  There is a parking deck across the street but I'm not sure if that deck is public parking."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSMElieENREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSMElieENREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDR0IbxCQ%7CCgwIgt3roQYQwMy09QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681583746,
+            "review_datetime_utc": "04/15/2023 18:35:46",
+            "review_text": "Amazing food and consistently good service... and a cool spot too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPbjVLUGFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPbjVLUGFBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDOn5KPaA%7CCgwI2I28oQYQ4OeKvgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680803544,
+            "review_datetime_utc": "04/06/2023 17:52:24",
+            "review_text": "Great lunch spot with amazingly fast service!\nI've gotten the Roots Bowl and the Veggie Burger Bowl and would highly recommend them (although they are more salads than \"bowls\"). My sister got the Seared Salmon salad and said it was delicious.\nThe outdoor eating area is delightful, but it fills up fast during busy times."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSeXU3Ykp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSeXU3Ykp3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICRyu7bJw%7CCgsIt4qToQYQ4JvAbw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1680131383,
+            "review_datetime_utc": "03/29/2023 23:09:43",
+            "review_text": "Food was delicious and the place is cute. There isn't a lot of indoor seating so be prepared to either sit outside or take to go!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSb3NIVEtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSb3NIVEtREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICRosHTKQ%7CCgwIyZqMoQYQwLm5sAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680018761,
+            "review_datetime_utc": "03/28/2023 15:52:41",
+            "review_text": "Amazing sandwiches and soup! Staff is so great at remembering my coffee order! Always welcomed with a warm hello! The atmosphere is great for a relaxed afternoon lunch. Also, can't beat the bloody marys' here!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoLTlPY2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoLTlPY2hnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDh-9OchgE%7CCgsIhu3ZoAYQwJ6qOw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679193734,
+            "review_datetime_utc": "03/19/2023 02:42:14",
+            "review_text": "Great place.  Breakfast food was amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURodTdhVUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURodTdhVUZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDhu7aUFQ%7CCgwI5qHYoAYQ8IjUgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679167718,
+            "review_datetime_utc": "03/18/2023 19:28:38",
+            "review_text": "This is a cool little place to meet for a quick bite/coffee out of the office"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURod0xYQVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURod0xYQVFnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDhwLXAQg%7CCgwI-dXunwYQkJai5AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677437689,
+            "review_datetime_utc": "02/26/2023 18:54:49",
+            "review_text": "Friendly & attentive staff. Good sized portions. The curry chicken on croissant was amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoai1fcHh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoai1fcHh3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIChj-_pxwE%7CCgwInJ_mnwYQ0Piu3AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1677299612,
+            "review_datetime_utc": "02/25/2023 04:33:32",
+            "review_text": "Yummy croissant and bacon egg and cheese. The almond milk latte was okay, it was slightly slimy? Otherwise the service and food was great!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoczlYbV9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoczlYbV9RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIChs9Xm_QE%7CCgwI8aDUnwYQiOLt1wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677004913,
+            "review_datetime_utc": "02/21/2023 18:41:53",
+            "review_text": "Great atmosphere and even more delicious coffee.\nStaff is very friendly. Will keep coming back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNocHVDZ0dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNocHVDZ0dREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIChpuCgGQ%7CCgsIk7SfnwYQ2PP-aA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1676139027,
+            "review_datetime_utc": "02/11/2023 18:10:27",
+            "review_text": "Atmosphere is nice, the staff were super friendly. However the food took so long and it was not good at all. It was pretty busy so it is understandable that it took a long time, but the quality of food was very bad. We ordered breakfast burritos and they were horrible and tasted not fresh at all, the potatoes tasted old. Very disappointing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoMlBlYzFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoMlBlYzFRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICh2Pec1QE%7CCgwI7tr6ngYQiLSI5QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675537774,
+            "review_datetime_utc": "02/04/2023 19:09:34",
+            "review_text": "Excellent Reuben!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCOTQzVkNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCOTQzVkNnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDB943VCg%7CCgwI07LkngYQgKiQiQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1675172179,
+            "review_datetime_utc": "01/31/2023 13:36:19",
+            "review_text": "Line was super Slow to move. Waiters were extremely rude. Not consistent about when you are allowed to sit down at a table."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCeTVMd25RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCeTVMd25RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDBy5LwnQE%7CCgwIyfLVngYQoIP8sgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1674934601,
+            "review_datetime_utc": "01/28/2023 19:36:41",
+            "review_text": "It says closes at 3pm , went to order to go at 2:25 , they take my order and then said they just closed the kitchen. I said online it said they close at 3 and she had no response. Terrible customer service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCa0xHb1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCa0xHb1VBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDBkLGoUA%7CCgwIxYzxnQYQ0M2V-gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673283141,
+            "review_datetime_utc": "01/09/2023 16:52:21",
+            "review_text": "Cute and tasty!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQteF9TNWJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQteF9TNWJBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID-x_S5bA%7CCgwIqOvVnAYQ6Lb4rgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670739368,
+            "review_datetime_utc": "12/11/2022 06:16:08",
+            "review_text": "Food is very good and atmosphere is cozy... you have to order at the register but still feels more like a restaurant vibe"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtdnAyRDhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtdnAyRDhnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID-vp2D8gE%7CCgwI9-ifnAYQ4Paf3wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1669854327,
+            "review_datetime_utc": "12/01/2022 00:25:27",
+            "review_text": "Clean environment everyone that walked in seemed to know each other which states how involved they are with their customers!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtMUtuNmdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtMUtuNmdRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID-1Kn6gQE%7CCgwIm8vymwYQiMuyjAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669113243,
+            "review_datetime_utc": "11/22/2022 10:34:03",
+            "review_text": "This was the best simple breakfast I've had in a while."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQteUttbHN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQteUttbHN3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID-yKmlswE%7CCgwIvqXlmwYQoOe3swI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1668895422,
+            "review_datetime_utc": "11/19/2022 22:03:42",
+            "review_text": "Great place to hang out with friends and family. Ambience is really  good. Veggie burger and avacoda toast tasted amazing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtMjZXTV9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtMjZXTV9nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC-26WM_gE%7CCgsIoJXJmwYQoLXzcA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668434592,
+            "review_datetime_utc": "11/14/2022 14:03:12",
+            "review_text": "Perfect spot to grab a quick, tasty bite. Get the avocado toast with a fried egg on side. Hash brown was incredible as was the oat milk latte! Will be back, for sure!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMteTRMUDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMteTRMUDB3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC-y4LP0wE%7CCgwI15rEmwYQ-PGD6AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668353367,
+            "review_datetime_utc": "11/13/2022 15:29:27",
+            "review_text": "This was the first time I'd been to ROOTS Cafe. I was a little concerned about parking but there is a parking lot and plenty of street parking. Great ambiance for a meeting, to work, or just relax with a coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtb29xQnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtb29xQnpnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC-ooqBzgE%7CCgwI8Lj6mgYQgIW4yAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667144816,
+            "review_datetime_utc": "10/30/2022 15:46:56",
+            "review_text": "Great small Cafe, perfect for a quick bite in the morning!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtdk1LaEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtdk1LaEVnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC-vMKhEg%7CCgsI-uX1mgYQsNKdIw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1667068666,
+            "review_datetime_utc": "10/29/2022 18:37:46",
+            "review_text": "The pastrami sandwich had two small thin slices of pastrami that you could barely taste that are not worth $10.50. The muffin with lox was small too for about the same price. None of the sandwiches come with a side. No coffee refills. Giving 5 starts for a beautiful decor and 2 stars for the food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMteks3TFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMteks3TFVREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC-zK7LUQ%7CCgwIp9nwmgYQqOC7mwI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1666985127,
+            "review_datetime_utc": "10/28/2022 19:25:27",
+            "review_text": "Small dining but food was amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURldi15ZUJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURldi15ZUJBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDev-yeBA%7CCgwIxcHVmgYQqOnYvQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1666539717,
+            "review_datetime_utc": "10/23/2022 15:41:57",
+            "review_text": "Our food was good and the cafe is super cute. Didn't give 5 stars because there is a weirdness with seating that you don't normally see at cafes, made us feel like we needed to eat and get out fast for Sunday morning breakfast."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlMTVTN2l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlMTVTN2l3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDe15S7iwE%7CCgwI693LmgYQ-L3-pgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666379499,
+            "review_datetime_utc": "10/21/2022 19:11:39",
+            "review_text": "Service was excellent!! So kind and chill, highly recommended!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlbFlpNk53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlbFlpNk53EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDelYi6Nw%7CCgsIuoyrmgYQ8Pb6dg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665844794,
+            "review_datetime_utc": "10/15/2022 14:39:54",
+            "review_text": "Food is so so yummy! The best grits I've ever and will ever have. Costumer service was great too! We came at 10am on Saturday and were able to get a seat right away."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlcXRxaXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlcXRxaXVnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDeqtqiugE%7CCgwI7_SAmgYQkOmCowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665153647,
+            "review_datetime_utc": "10/07/2022 14:40:47",
+            "review_text": "Such a cute cafe! Had a vanilla oat milk latte and a breakfast plate with eggs, sausage and a croissant. Loved the vibe here. Did a little bit of work here. I will definitely be back to bring my laptop and have a cup of coffee. Service was excellent too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURldE5ua29RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldE5ua29RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDetNnkoQE%7CCgwI1cHrmQYQwLzumwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664803029,
+            "review_datetime_utc": "10/03/2022 13:17:09",
+            "review_text": "Charming place with great food. Try the Bronx on a homemade English muffin... the house made pastrami is terrific!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlME5tTm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlME5tTm1RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDe0NmNmQE%7CCgsIlb7XmQYQkNzrPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664474901,
+            "review_datetime_utc": "09/29/2022 18:08:21",
+            "review_text": "really great service. i love the wine selection and the coffee is always amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlcWNqdUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlcWNqdUZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICeqcjuFQ%7CCgwI-aGXmQYQ8Ni34AI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1663422713,
+            "review_datetime_utc": "09/17/2022 13:51:53",
+            "review_text": "So expensive and I've never really loved the food. Today I decided it give it another chance and found a large piece of plastic in my $15 salad"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNleWI3U2J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNleWI3U2J3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICeyb7Sbw%7CCgwI2t6WmQYQqLjb-QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663414106,
+            "review_datetime_utc": "09/17/2022 11:28:26",
+            "review_text": "I have been here many times. They have great food and well crafted coffee drinks. Their drip coffee is also very good.\nThe B.E.L.T. consistently ranks among the best sandwiches I've had. It's a simple, no gimmicks, BLT plus an egg. What makes it excel is that every ingredient is flavorful and contributes to the sandwich. The bread (sourdough I think) has a good chew. The tomatoes are flavourful and ripe. The deep golden yolk of a good egg provides umami goodness. The bacon is salty but not overpowering. Finally the greens are fresh and give a slight bitterness that brings out the rest. I'll leave something to the imagination and not provide details on the mayo (hint: it's also very good)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMGJpMkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMGJpMkZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICe0bi2Fw%7CCgsIpfKRmQYQ2LLxPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663334693,
+            "review_datetime_utc": "09/16/2022 13:24:53",
+            "review_text": "This place is absolutely beautiful, the music, the ambiance the liveliness! Also the coffee was amazing and the breakfast breads cooked right on point!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlaUoyQ1d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlaUoyQ1d3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICeiJ2CWw%7CCgwIrq3TmAYQqOOQpgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1662310062,
+            "review_datetime_utc": "09/04/2022 16:47:42",
+            "review_text": "We were refused service after quietly standing in line for 20 mins.  The cashier led with \"we have no more tables and can't serve you\". We offered to wait so we stepped aside while the next 5 couples approached the cashier.  To our surprise, she offered two couples behind us the option to order.   My family quietly stepped aside to wait for service only to experience blatant rejection.   Gratefully a different employee saw what was happening and offered to seat us immediately and released us to place an order.   Thanks for the allyship!  We left the place, nonetheless, after the same cashier told us that none of our food selections were available.\n\nWe will NEVER patronize this place again.  Please require your employees to take bias courses.\nSuch a waste since the food looked like it would have been tasty.\n\nSo sad that we are in 2022 still experiencing the effects of 1965.  My heart breaks for my children."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1bnVtMmpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1bnVtMmpBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDunum2jAE%7CCgsInZKJmAYQ-L3TZA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661094173,
+            "review_datetime_utc": "08/21/2022 15:02:53",
+            "review_text": "Heard a lot about this place and it met its expectations! Will def return!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1cTgzN2ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1cTgzN2ZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICuq837fQ%7CCgwIhIvJlwYQkIWB4wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660044676,
+            "review_datetime_utc": "08/09/2022 11:31:16",
+            "review_text": "The restaurant is pretty clean and the service was very friendly and helpful. It is a small spot with only one restroom. However, the food was pretty good and well seasoned! I can only speak on the breakfast..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1cC1YOFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1cC1YOFRnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICup-X8Tg%7CCgwI0PTBlwYQ-LP2iwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659927120,
+            "review_datetime_utc": "08/08/2022 02:52:00",
+            "review_text": "Portions were perfect and food was delicious. Grit bowl was amazing (def add an egg and some bacon)."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1cTZYUVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1cTZYUVpnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICuq6XQZg%7CCgwIlI66lwYQkMOZ5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659799316,
+            "review_datetime_utc": "08/06/2022 15:21:56",
+            "review_text": "Have had the bagel sandwich and BELT and both are awesome. Grits bang too. For sure going to be back"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1eHZTREV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1eHZTREV3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICuxvSDEw%7CCgsI8bqClwYQkL3few%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658887537,
+            "review_datetime_utc": "07/27/2022 02:05:37",
+            "review_text": "Best lunch in Charlotte.  Great charming environment with delicious menu items."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPa2VITTVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPa2VITTVRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDOkeHM5QE%7CCgwIiOmblgYQgOOz2AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657205896,
+            "review_datetime_utc": "07/07/2022 14:58:16",
+            "review_text": "One of my favorite cafes in south end!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPcEp2d2FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPcEp2d2FnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDOpJvwag%7CCgwI1I3qlQYQ-N7p0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656391380,
+            "review_datetime_utc": "06/28/2022 04:43:00",
+            "review_text": "I was delighted to find this cafe. Earthy decor of wood and plants.\nGood lattes and avacado toast and muffin."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPc0lxbk5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPc0lxbk5nEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDOsIqnNg%7CCgsI1bvclQYQgPT0BA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656167893,
+            "review_datetime_utc": "06/25/2022 14:38:13",
+            "review_text": "A cozy family friendly place with both indoor and outdoor seating and friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPME0tYnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPME0tYnZRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDO0M-bvQE%7CCgwIsZHclQYQwLab4QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656162481,
+            "review_datetime_utc": "06/25/2022 13:08:01",
+            "review_text": "i always go here when i get my nails done next door, food and coffee is always good"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPcnEzU1BnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPcnEzU1BnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICOrq3SPg%7CCgsIm4GNlQYQ0JHBdQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1654866075,
+            "review_datetime_utc": "06/10/2022 13:01:15",
+            "review_text": "Service sucks,, this place is too cool for ketchup, cheap bacon"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyc3R2ZlZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyc3R2ZlZBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID2stvfVA%7CCgwIr7PskwYQuJnCxQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652234671,
+            "review_datetime_utc": "05/11/2022 02:04:31",
+            "review_text": "Favorite brunch spot in town! Stacy and the team make a great latte and their breakfast menu is amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyb19QeTFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyb19QeTFnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC2o_Py1gE%7CCgwIwcilkwYQ-P7UkQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1651074113,
+            "review_datetime_utc": "04/27/2022 15:41:53",
+            "review_text": "Food was amazing. The Bronx bagels was almost flawless except the pieces of pastrami were on the thicker side. Besides that great atmosphere and quality."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMycWM3QldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMycWM3QldnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC2qc7BWg%7CCgwI8OGVkwYQ-IWY6gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650815216,
+            "review_datetime_utc": "04/24/2022 15:46:56",
+            "review_text": "Grit bowl is to die for!! I get an egg and bacon on it. You get a lot of delicious food."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMydkxfZm1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMydkxfZm1nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC2vL_fmgE%7CCgwI5MLmkgYQ4IeBogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650041188,
+            "review_datetime_utc": "04/15/2022 16:46:28",
+            "review_text": "An incredible meal with incredible service with incredible atmosphere. A little pricey and super bust though"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyaExqQnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyaExqQnZnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC2hLjBvgE%7CCgwIufbVkgYQsJ6EtgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649769273,
+            "review_datetime_utc": "04/12/2022 13:14:33",
+            "review_text": "The grilled chicken and bacon wrap was delicious! Really cute vibes for a coffee shop. I'll definitely be returning!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyOElIZ1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyOElIZ1l3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC28IHgYw%7CCgwIlsTMkgYQgLajjwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649615382,
+            "review_datetime_utc": "04/10/2022 18:29:42",
+            "review_text": "The atmosphere here is wonderful! My food was prepared promptly and the servers were very friendly. You order at the front counter, get assigned a number then sit waiting for your meal to be brought to you. Perfect spot for a light brunch and casual conversation."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXbzUtdG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXbzUtdG13RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDWo5-tmwE%7CCgwIhLSikgYQqJz8ggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648925188,
+            "review_datetime_utc": "04/02/2022 18:46:28",
+            "review_text": "Avo toast - sandwiches - latke - beautiful salad - wonderful menu offerings - friendly place - peaceful atmosphere- definitely must for a nice meal & pet friendly patio!  Thank you!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXMWVYdmFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXMWVYdmFBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDW1eXvaA%7CCgwI8pySkgYQgPyYgAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1648660082,
+            "review_datetime_utc": "03/30/2022 17:08:02",
+            "review_text": "Good food. Friendly service. I had a Bronx which was a nice bagel with great tasting pastrami. Half sweet / half unsweetened tea "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXNmM3T0xREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXNmM3T0xREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDW6c7OLQ%7CCgsIkuuGkgYQ6N3BQg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648473490,
+            "review_datetime_utc": "03/28/2022 13:18:10",
+            "review_text": "A hidden gem! Great spot for locally sourced, thoughtfully prepared, chef-driven eats, great coffee, and a chill vibe. Try the bowls with added proteins for some of the heartiest, freshest, and tastiest lunch meals around."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXd3IzR2RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXd3IzR2RnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDWwr3Gdg%7CCgwIvu_UkQYQ2JDOgwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1647654846,
+            "review_datetime_utc": "03/19/2022 01:54:06",
+            "review_text": "Came here to enjoy a late breakfast/early lunch with a colleague. She was running behind so I went in to grab us a table. Bad idea.\n\n1st issue - I wasn't acknowledged or greeted.\n\nI was sitting for about 5 minutes when an employee came up to me and rudely told me that they were getting busy and that the customers in line will need a place to sit. You have to order food and THEN sit. She walked away before I could respond.\n\nI called her back over to my table to let her know I had every intention on ordering, was just waiting for my guest so that we could order together. Which is a thing right? Sometimes one party arrives before the other and they usually wait to order together?\n\nFor added context, the cafe had plenty of seating when I arrived. They did get a bit of a rush moments later.\n\nIf I had been sitting for an unreasonable amount of time I could understand politely asking a guest what their intentions are as we are getting busy and our tables are limited.\n\nBut her approach was terrible and gave off \"get out\" vibes.\n\nThankfully there was a bagel shop (Poppy's) right around the corner and my colleague and I ended up having the best food & service there!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXcDgtNDBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXcDgtNDBRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICWp8-40QE%7CCgwI2vidkQYQ4PeUpQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1646754906,
+            "review_datetime_utc": "03/08/2022 15:55:06",
+            "review_text": "Really good grit bowl with vegan sausage."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXZ1p5dE9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXZ1p5dE9nEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICWgZytOg%7CCgwIu-zzkAYQkMOauwE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1646065211,
+            "review_datetime_utc": "02/28/2022 16:20:11",
+            "review_text": "My wife and I stopped by here for a quick bite for breakfast.\nI'll start with the one downside that I personally wasn't a fan of. Once we started ordering, the individual at the front was nice, but not very accommodating. She didn't seem that invested in us as customers, which is fine, but just something I noticed and the only reason I left a 4 star review.\nThe food, however, is a whole other matter. My wife ordered the Smoked Salmon (a menu item) and I ordered the Breakfast Burrito (also a menu item).\nThe burrito was just the right size with a good amount of sausage and other fillings, but not overflowing. The flavor was excellent. The burrito was filling.\nAll-in-all, a great cafe worth a stop and a bite."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXcktDLWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXcktDLWVREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICWrKC-eQ%7CCgwI9YbGkAYQwLCtsgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1645314933,
+            "review_datetime_utc": "02/19/2022 23:55:33",
+            "review_text": "Great food, but you have to go early on the weekends or you're SOL when it comes to a table, you'll end up elbow-to-elbow with others trying to place an order. Staff is super nice but they could probably gain some efficiencies by hiring a hostess or individual just to manage the weekend crowd (I.e., waitlist, to go orders or bar service/coffees only)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXOUxfS2l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXOUxfS2l3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICW9L_KiwE%7CCgwIve7DkAYQsN_7mwE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1645279037,
+            "review_datetime_utc": "02/19/2022 13:57:17",
+            "review_text": "The hightop chairs were very uncomfortable and my breakfast burrito was not good. I'm not saying don't go because it's a cute little intimate spot for a brunch date. I'm just saying I have no desire to ever go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtbzRmXzlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtbzRmXzlnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDmo4f_9gE%7CCgwIr6-GkAYQ0M_8kgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1644271535,
+            "review_datetime_utc": "02/07/2022 22:05:35",
+            "review_text": "A wonderful simple space to enjoy a Sunday brunch, or just a cup of coffee any day of the week. Friendly staff, good atmosphere and great food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtdHRHemNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtdHRHemNREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDmttGzcQ%7CCgwIibLMjwYQgNSPwgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643321609,
+            "review_datetime_utc": "01/27/2022 22:13:29",
+            "review_text": "First time here. Good healthy food and service was very quick and friendly. It's a small place so get there early for lunch. The surface parking is small as well, but there is a parking deck in the same building. Cute decor and good place to remote work."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtNE5Td0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNE5Td0ZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDm4NSwFQ%7CCgsI-qmMjwYQ2KnfQw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1642271994,
+            "review_datetime_utc": "01/15/2022 18:39:54",
+            "review_text": "I ordered takeout. First time. The macchiato was delicious. Strong, smooth, great flavor. The  breakfast sammy was decent. The croissant was buttery, sausage was cooked well done, the fried egg was a slightly overcooked. I ordered the soup and salad combo. Didnt receive the salad. The soup was well flavored but it was a little over oiled. What i was most dissapointed about was the grits. I love goat cheese. But the grits were clunked together and bland overall. Overall opinion, the drink was amazing so i would definitely try their coffee again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtNzV2SFlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtNzV2SFlREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICm75vHYQ%7CCgwI9pKDjwYQoKLhgwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642121590,
+            "review_datetime_utc": "01/14/2022 00:53:10",
+            "review_text": "I had the Bronx Bagel and it was delicious. Freshly baked bagel with a perfect pastrami. Quick and very nice service. Would highly recommend for anyone and will def be coming back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtbm9PSnlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtbm9PSnlnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICmnoOJygE%7CCgwI6_KxjgYQkIGxiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640790379,
+            "review_datetime_utc": "12/29/2021 15:06:19",
+            "review_text": "Phenomenal BLT with over easy egg, the broccoli cheddar baca on soup was divine. Great service and gorgeous atmosphere. Can't wait to come back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtMnFLclBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtMnFLclBnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICm2qKrPg%7CCgwIlKWdjgYQgNjVxgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640452755,
+            "review_datetime_utc": "12/25/2021 17:19:15",
+            "review_text": "Great neighborhood breakfast place with great food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNteW92U3ZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNteW92U3ZRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICmyovSvQE%7CCgsIiseXjgYQsMX8Zg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640358794,
+            "review_datetime_utc": "12/24/2021 15:13:14",
+            "review_text": "The beef stew was to die for... yummy!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtM0xLQ3p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtM0xLQ3p3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICm3LKCzwE%7CCgwI5ceHjgYQgJ_amwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640096741,
+            "review_datetime_utc": "12/21/2021 14:25:41",
+            "review_text": "Really enjoyed the breakfast burrito with a side of their unique jelly and home fries. definitely a bigger portion than I expected given its a casual \"cafe\". Just expect to spend more than you'd think, it's not cheap but quality is much better than I expected so it's worth it on occasion."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtMUpmbUpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtMUpmbUpREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICm1JfmJQ%7CCgwIpKr-jQYQsI-NkQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1639945505,
+            "review_datetime_utc": "12/19/2021 20:25:05",
+            "review_text": "Super cute spot! Cozy with good food. Not much seating so getting it to go is a good option, but quick service and healthy vegan/organic options."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHb2NDX3FnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHb2NDX3FnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDGocC_qgE%7CCgwI_YmYjQYQqP6EpwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1638270205,
+            "review_datetime_utc": "11/30/2021 11:03:25",
+            "review_text": "Very delicious food. With fresh healthy vegetables and good vegetarian options."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHdkpxNUhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHdkpxNUhREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDGvJq5HQ%7CCgwI-eTpjAYQ2Ku92QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1637511801,
+            "review_datetime_utc": "11/21/2021 16:23:21",
+            "review_text": "Excellent food, great atmosphere, fast service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHX19IY0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHX19IY0ZBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICG__HcFA%7CCgwI05nEjAYQ8Lj-vgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1636895955,
+            "review_datetime_utc": "11/14/2021 13:19:15",
+            "review_text": "Been coming to this place for years. Never a let down. Great local cafe with a awesome drinks and food."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHN2ZPYl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHN2ZPYl9RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICG7fOb_QE%7CCgsI-a6ajAYQ8K3jag%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1636210553,
+            "review_datetime_utc": "11/06/2021 14:55:53",
+            "review_text": "The 1 star is for the fabulous coffee. The rest awful, cold, greasy and not what I asked for. I just don't understand, it use to be delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHOHEzbE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHOHEzbE5nEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICG8q3lNg%7CCgwIvZrbiwYQyP3m_wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1635175741,
+            "review_datetime_utc": "10/25/2021 15:29:01",
+            "review_text": "Great service! The staff is very helpful and the food is tasty. I got the homemade pop tart and omg it was soo tasty. Also i Love the ambiance, definitely check it out if your looking for good coffee, pastries and a relaxing spot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2OS0zNkJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2OS0zNkJnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID69-36Bg%7CCgwI1KKhiwYQ2OCr5wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1634226516,
+            "review_datetime_utc": "10/14/2021 15:48:36",
+            "review_text": "Great Cafe food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2Z1pueWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2Z1pueWRREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID6gZnydQ%7CCgwI44XcigYQ-Ov3wgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1633092323,
+            "review_datetime_utc": "10/01/2021 12:45:23",
+            "review_text": "Excellent cold brew! Great daily specials. If they have the beef stew on the menu you should try it - it was delicious!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2bzltQTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2bzltQTVBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC6o9mA5AE%7CCgwIva7ziQYQqO_-gwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1631377213,
+            "review_datetime_utc": "09/11/2021 16:20:13",
+            "review_text": "The vibe is so relaxing outside, Mimosa and food were also very delicious! Will be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2LWJleGxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2LWJleGxBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC6-bexlAE%7CCgwI6e7kiQYQ2IS9igE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1631139689,
+            "review_datetime_utc": "09/08/2021 22:21:29",
+            "review_text": "Muy calido lugar, tranquilo y buen cafe"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2dUl2b3dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2dUl2b3dRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC6uIvowQE%7CCgsIqa6ziQYQoM_bBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1630328617,
+            "review_datetime_utc": "08/30/2021 13:03:37",
+            "review_text": "Our group of 5 had no clue what to expect when we walked in and we're always intimidated at places where you order at the counter and seat yourself. The staff was incredibly helpful and patient with us. The food was phenomenal. I got the roots bowl. Simple but delicious. All of us got something different but not a crumb was left on anyone's plates.  Even as we left, the staff thanked us for coming in and made us feel truly appreciated. I will 100% be coming back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURha3RxVFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURha3RxVFhBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDaktqTXA%7CCgwIhf3viAYQgLfK9wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629224581,
+            "review_datetime_utc": "08/17/2021 18:23:01",
+            "review_text": "Loved the cocktail menu and the seasonal salads! Perfect lunch spot"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhNUxldXh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhNUxldXh3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDa5LeuxwE%7CCgsI26PmiAYQgKTXXA%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1629065691,
+            "review_datetime_utc": "08/15/2021 22:14:51",
+            "review_text": "This was my second time in the food is good but not great.."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhMksybTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhMksybTdnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDa2K2m7gE%7CCgwIgfnfiAYQiLqz1gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1628961921,
+            "review_datetime_utc": "08/14/2021 17:25:21",
+            "review_text": "Update your hours.  Closed 1pm on Saturday."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhZzhxRVF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhZzhxRVF3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICag8qEQw%7CCgsIlIC9iAYQsJXqHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1628389396,
+            "review_datetime_utc": "08/08/2021 02:23:16",
+            "review_text": "Roots is my favorite place to get breakfast in Charlotte. They have so many delicious options, they're one of the best parts of my weekend! They're always quick, courteous, and consistently awesome. They also throw in a few extra pieces of bacon when I order it, which is greatly appreciated. Love you, Roots!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhdUl1dTFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhdUl1dTFnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICauIuu1gE%7CCgwIgt7rhwYQ4KDx5gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1627057922,
+            "review_datetime_utc": "07/23/2021 16:32:02",
+            "review_text": "Best chai latte :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNheU0tRE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNheU0tRE9REAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICayM-DOQ%7CCgsI8qrmhwYQ6OPAGA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626969458,
+            "review_datetime_utc": "07/22/2021 15:57:38",
+            "review_text": "Great service, friendly staff! Small place so often busy but worth the wait!! Also very dog friendly and treats for dogs :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxai1qUTNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxai1qUTNRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqj-jQ3QE%7CCgwI-bzRhwYQyPOU0wI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1626627705,
+            "review_datetime_utc": "07/18/2021 17:01:45",
+            "review_text": "Biggest waste of money and time. I found a piece of hair in my salad and lost my appetite completely. Also the restaurant and its servers are a mess. Nowhere is it clearly stated who can sit vs who can't. We initially asked for our food to go but tipped anyway in case a table opened up - then my husband found a free table (Among a few other tables freeing up) after coming back from the rest room and no one was claiming it. He sat down and then the servers just came to over to kick him out of his seat even though there was no one in sight waiting for a table. Literally no one looking at the table or wanting it. Anyone who ordered before us either found another table or left. They had the unmitigated gall to tell my husband that they needed free tables open for people who are sitting outside to come in in case it rains. Is that a joke? Disgusting. Do yourself a favor and find somewhere else to eat"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxbmRlZzZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbmRlZzZBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqndeg6AE%7CCgwIiLS-hwYQ6L6q1QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626315272,
+            "review_datetime_utc": "07/15/2021 02:14:32",
+            "review_text": "Really nice breakfast spot!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxa2VhQk5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxa2VhQk5BEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqkeaBNA%7CCgwIksSrhwYQgKSslAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626006034,
+            "review_datetime_utc": "07/11/2021 12:20:34",
+            "review_text": "Real good food at a reaonable price. Service was good also."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxbnFIMHF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbnFIMHF3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqnqH0qwE%7CCgsInr2hhwYQwJG8bg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1625841310,
+            "review_datetime_utc": "07/09/2021 14:35:10",
+            "review_text": "My first time here this morning. Stood by the counter for several minutes, no greeting from any of the 3 employees working."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxa3Uyb3BnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxa3Uyb3BnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqku2opgE%7CCgwIsKKChwYQoLun2QI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1625329968,
+            "review_datetime_utc": "07/03/2021 16:32:48",
+            "review_text": "Good gluten free options, but not many dairy free."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxN09hdVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxN09hdVB3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDq7OauPw%7CCgwI5_b2hgYQoIC5pQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625144167,
+            "review_datetime_utc": "07/01/2021 12:56:07",
+            "review_text": "The food here is amazing! The BlackBerry and Almond scone is exquisite. And the macchiato is impeccable. Definitely will come here again when I'm in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxNk1uT1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxNk1uT1hREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDq6MnOXQ%7CCgwIxYbihgYQyLeZ1QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624802117,
+            "review_datetime_utc": "06/27/2021 13:55:17",
+            "review_text": "A joy!  Farm to table and a wonderful staff!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxa09tc3VBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxa09tc3VBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDqkOmsuAE%7CCgwIk6TYhgYQ-ML6iwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1624642067,
+            "review_datetime_utc": "06/25/2021 17:27:47",
+            "review_text": "Food was good but hot $40 good. I had the pastrami sandwich with the soup. Both tasty but to be a \"Brooklyn\" pastrami sandwich there needs to be about a half pound of meat on the thing. This thing had one slice. For $14 I was not pleased. My wife's salad again was tasty but she felt it didn't come together well. Getting good bites incorporating the different flavors was nearly impossible. The service was great and the food came out fast but for this price point I was not impressed. Still a charming spot might be better for a drink."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxLTdYckpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxLTdYckpREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICq-7XrJQ%7CCgwIt6fShgYQgMj97wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624544183,
+            "review_datetime_utc": "06/24/2021 14:16:23",
+            "review_text": "I came here to unwind during an 8 hour layover at CLT. First off, this place is in a cute hidden nook in South End. It is very peaceful and welcoming! The staff is super friendly and patient and knowledgable about the menu.  The cafe is small but they make the best of the space possible with aesthetic decorations. Anywhere you sit will have gorgeous photos. And finally, the menu! The menus are not only aesthetic, but their items are delicious. Everything is fairly priced too, nothing outrageous, and there are many different mill substituted and modifications for allergies available. The ingredients are fresh and service is vedy fast! I recommend for"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxLTRQQjBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxLTRQQjBRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICq-4PB0QE%7CCgwI0JO9hgYQgLv22gE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1624197584,
+            "review_datetime_utc": "06/20/2021 13:59:44",
+            "review_text": "First time here, looks nice and welcoming.  However I waited 30 minutes before I just left. I never received my breakfast burrito and I was was honestly very hungry. I felt like I was forgotten or something.  It didn't appear that they were very busy and I saw other orders coming up. Theres too many options to fool me again here.. We make decisions based on our values,  organize yourself to act on healthy values. T"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxcS1MVHlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxcS1MVHlnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICqq-LTygE%7CCgwI9Y65hgYQkIS4sgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1624131445,
+            "review_datetime_utc": "06/19/2021 19:37:25",
+            "review_text": "The food is extremely overpriced. Don't order the asparagus souffle, very small quantity and undercooked.\n\nYou had it on the Mother's Day menu last month. Maybe worth learning your own menu before making sweeping declarations."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbTlmY2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbTlmY2xRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICqm9fclQE%7CCgwI_uS4hgYQqJfLhQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624126078,
+            "review_datetime_utc": "06/19/2021 18:07:58",
+            "review_text": "Great food from a vegetarian leaning spot. Love the low key vibe compared to the overcrowded places nearby. Very reasonable prices and fast service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxcllQX3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxcllQX3N3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICqrYP_swE%7CCgwIoaWihgYQkJqk0gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623757473,
+            "review_datetime_utc": "06/15/2021 11:44:33",
+            "review_text": "We have made it our tradition to go here every Friday morning. The staff is amazing. She remembers our order and calls us by name! The food is terrific, and the vibe is immaculate. I recommend getting the caramel latte and the Basic B with the lattke!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxOVlta2F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxOVlta2F3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICq9Ymkaw%7CCgwIg-udhgYQ8OmRzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623684483,
+            "review_datetime_utc": "06/14/2021 15:28:03",
+            "review_text": "I caught the owner purchasing the most expensive organic tomato's at the Charlotte Regional Farmers Market Saturday morning. He walked over to the $3.95 tomato's and loaded up a bin. I got two and they are worth the money."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxMXU3UEtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxMXU3UEtnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICq1u7PKg%7CCgwIocPvhQYQiKyKgQM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1622925729,
+            "review_datetime_utc": "06/05/2021 20:42:09",
+            "review_text": "Cute, but extremely overpriced. I also wasn't impressed with taste of food or drinks! Won't be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxaG9PX21nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxaG9PX21nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICqhoO_mgE%7CCgwIqJbphQYQyLyO7AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622821672,
+            "review_datetime_utc": "06/04/2021 15:47:52",
+            "review_text": "Wow, where do I start. Was visiting Charlotte from Ohio and stumbled into this restaurant and I don't regret it one bit. The customer service was excellent, the workers were professional, the food was absolutely amazing and fresh! I wish I lived in Charlotte so I could eat more! Thank you so much for the experience!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxOUlhNzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxOUlhNzhnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICq9Ia78gE%7CCgwIqbvFhQYQ4JzZpgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622236585,
+            "review_datetime_utc": "05/28/2021 21:16:25",
+            "review_text": "A hip interior design with outdoor seating. Staff was great. Craft beer options, coffee, juices. I had the whipped ricotta toast with honey and it was fantastic. Wifi crapped out so I had to go, but maybe it was just me. Other people seemed to be working fine."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxbFBqZXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbFBqZXVRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICqlPjeuQE%7CCgwIx__AhQYQ6OqyiwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622163399,
+            "review_datetime_utc": "05/28/2021 00:56:39",
+            "review_text": "Fresh food that you won't find everywhere else and friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLanJmNzh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLanJmNzh3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDKjrf78wE%7CCgwIqoTrhAYQ8OGtjAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1620754986,
+            "review_datetime_utc": "05/11/2021 17:43:06",
+            "review_text": "Very niche.....very good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLLW9DSXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLLW9DSXlRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDK-oCIyQE%7CCgwIgMDchAYQwNGCkAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1620516864,
+            "review_datetime_utc": "05/08/2021 23:34:24",
+            "review_text": "Great breakfast sammy. Good coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLMkp6NV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLMkp6NV93RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDK2Jz5_wE%7CCgwIpe6ohAYQuO-7nwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1619670821,
+            "review_datetime_utc": "04/29/2021 04:33:41",
+            "review_text": "Love supporting local business. Prices reasonable. Food was under seasoned . A good southern potatoes hash does not contain sweet potatoes. Coffee was great. One of the up front staff was snippy with my mom and will not be returning"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLOTlMX2JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLOTlMX2JREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICK99L_bQ%7CCgsIx6mIhAYQ4OedEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619137735,
+            "review_datetime_utc": "04/23/2021 00:28:55",
+            "review_text": "Popped in after landing in SC from CA. Breakfast was spectacular - we had a \"sammy\" and breakfast burrito with sweet potatoes. The coffee was great and the service was even better. They had dog treats in a dog by the door for pups out for a walk! Super clean, awesomely friendly service and fresh ingredients."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLNWZ1VVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLNWZ1VVBBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICK5fuUPA%7CCgwI-_bTgwYQ8IuHxAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1618279291,
+            "review_datetime_utc": "04/13/2021 02:01:31",
+            "review_text": "Fantastic start to our day! The food and drinks were delicious. Everything was very fresh!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5al96Uzl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5al96Uzl3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDyj_zS9wE%7CCgwI8ZneggYQ6O28sQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1616350449,
+            "review_datetime_utc": "03/21/2021 18:14:09",
+            "review_text": "Very cute little spot to grab brunch. The patio is dog friendly, good service and the food & coffee is delicious. The prices are great."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUR5cnFBSBAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUR5cnFBSBAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDyrqAH%7CCgsItpSVggYQ2MaZZQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1615153718,
+            "review_datetime_utc": "03/07/2021 21:48:38",
+            "review_text": "This was such a pleasant surprise!!! The inside seating area is small, but so quaint! The Grits Bowl was amazing and the toast!!! DELICIOUS!! Check their brunch menu and opt for something sweet. You won't regret it!! Also, great lighting.  #heartshadow"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5anBuVXpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5anBuVXpBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDyjpnUzAE%7CCgwI4aeTggYQqPu9xAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615123425,
+            "review_datetime_utc": "03/07/2021 13:23:45",
+            "review_text": "Love the food here wish I could eat here everyday "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5anRqYk13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5anRqYk13EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDyjtjbMw%7CCgwIhs2SggYQ0K2wugI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615111814,
+            "review_datetime_utc": "03/07/2021 10:10:14",
+            "review_text": "I stopped by here for a quick breakfast on a Saturday. First time visiting. Good location in Southend. Parking was no issue. First impression was the fun decor. Next was a welcoming and helpful server at the counter where you order. I got an egg sandwich with bacon on rye bread. My idea and probably not the best choice for me as I found it a bit on the rich side (lots of bacon, which for some of you is perfect). The coffee was freshly brewed and they use good quality beans. Overall, great experience!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5dHRxaGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5dHRxaGNBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDyttqhcA%7CCgwI5buPggYQ2Iv_jAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615060453,
+            "review_datetime_utc": "03/06/2021 19:54:13",
+            "review_text": "Incredible food and helpful service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5ajRiZVhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5ajRiZVhnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICyj4beXg%7CCgwI4ri0gQYQ0JSwngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613569122,
+            "review_datetime_utc": "02/17/2021 13:38:42",
+            "review_text": "I can't say why it took me so long to try this spot but now that I have found it I will definitely add it to my breakfast rotation. The Chicken wrap paired with Enderly coffee ( dark and light roast mix) was very tasty. Oh and did I mention there was a soup available as a side with the wrap? I went with the Cream ofAsparagus , can't say I have ever had soup at breakfast but it was 32 degrees outside so I went for it and had no regrets. Go check them out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5dV9MVkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5dV9MVkhnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICyu_LVHg%7CCgwI6PWkgQYQ0P6-0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613314792,
+            "review_datetime_utc": "02/14/2021 14:59:52",
+            "review_text": "So very good! The roots hash is a total winner, and everything else we tried was full of flavor, clean-feeling, though of quality and just hearty enough. Keep up the great work, Roots!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bnRYa2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bnRYa2JBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICyntXkbA%7CCgsIn5LbgAYQ0P_UHQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1612106015,
+            "review_datetime_utc": "01/31/2021 15:13:35",
+            "review_text": "Leaving 5 stars as I'm all about supporting local small businesses. Cool atmosphere and nice ambience but the staff isn't very friendly and they never welcome you or say good morning etc.(today was my 5th visit) $15 for a coffee (one size only) and a breakfast sandwich makes them the most expensive coffee shop in Charlotte. That and it takes 20+ min every time there to get your food. Overall neat place and would go again but would avoid it on the weekends. I was there at 8:45 AM and there was no tables open and I didn't get out of there until 9:20 AM and I got my sandwich and coffee to go. That's too long of a wait"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5NEt2RHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5NEt2RHNnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICy4KvDsgE%7CCgsIotCJgAYQ-L2PUQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1610770466,
+            "review_datetime_utc": "01/16/2021 04:14:26",
+            "review_text": "Cute little spot. Order at counter then take a seat. We missed the early morning rush. It was hard to resist the desserts at the counter. They look soooooo good. Definitely worth a visit for a casual quick bite."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURTcTl1WVJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTcTl1WVJREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDSq9uYRQ%7CCgsInbTn_wUQuPO-bA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1610209821,
+            "review_datetime_utc": "01/09/2021 16:30:21",
+            "review_text": "The breakfast burrito is ridiculous."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTMFpLZG9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTMFpLZG9BRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDS0ZKdoAE%7CCgwI1Mqt_wUQ6JamwgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1609262420,
+            "review_datetime_utc": "12/29/2020 17:20:20",
+            "review_text": "Great lunch!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpdnBLbm5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpdnBLbm5nRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDivpKnngE%7CCgwI0f6k_gUQ0ObxmwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1607024465,
+            "review_datetime_utc": "12/03/2020 19:41:05",
+            "review_text": "Great brunch option in the heart of Southend. Such a great vibe. They have amazing food options and drink options.\nCoffee and cocktails"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpMU5USnh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpMU5USnh3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDi1NTJxwE%7CCgwImr38_QUQqJyBqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606360730,
+            "review_datetime_utc": "11/26/2020 03:18:50",
+            "review_text": "The food was awesome!!! Service could improve!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpNUwydjFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpNUwydjFRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDi5L2v1QE%7CCgwI6Iz6_QUQ8PvLjQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606321768,
+            "review_datetime_utc": "11/25/2020 16:29:28",
+            "review_text": "So good and fresh"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpMTRmeGNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpMTRmeGNBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICi14fxcA%7CCgwI3sLT_QUQyOyl3AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605689694,
+            "review_datetime_utc": "11/18/2020 08:54:54",
+            "review_text": "2 visits, kind staff great event space, good food and deserts "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpNTZDVzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpNTZDVzRBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICi56CW4AE%7CCgwIqLbQ_QUQoP6SpAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605638952,
+            "review_datetime_utc": "11/17/2020 18:49:12",
+            "review_text": "Delicious brunch. I had the Bronx bagel... Best pastrami I've ever had. Cold brew coffee was also great; was kind of hard to tell it was nitro, though, didn't have the smooth texture I was expecting, but flavor was great. Patio outside was a great place to hang out, and service was prompt and friendly. I never write reviews but felt compelled with how good this experience was."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpaV8zRUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpaV8zRUx3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICii_3ELw%7CCgwI4-rF_QUQoJC8uAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605465443,
+            "review_datetime_utc": "11/15/2020 18:37:23",
+            "review_text": "I got the roasted bowl....  YOU GOTTA GET IT!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVb2RMa0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVb2RMa0ZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDUodLkFQ%7CCgwIubnA_QUQoIHiswE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605377209,
+            "review_datetime_utc": "11/14/2020 18:06:49",
+            "review_text": "Always a great time; I'm so glad they're still open and operating safely!! Social distance tables, outdoor seating, and consistent sanitation of area. Food is amazing! Can never go wrong with the Basic B breakfast and their new fall cocktails  be sure to get a biscuit with their fresh jam, too.  "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpaGFXTGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpaGFXTGJnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICihaWLbg%7CCgwIuZGh_QUQ0N7ilgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604864185,
+            "review_datetime_utc": "11/08/2020 19:36:25",
+            "review_text": "Great food, great drinks, and great atmosphere!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpaGVIQWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaGVIQWdRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICiheHAgQE%7CCgwI-Pig_QUQ4OqF5gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604861048,
+            "review_datetime_utc": "11/08/2020 18:44:08",
+            "review_text": "Super cute and delicious! Roots is our caterer for our wedding and we decided it was time to stop in the Cafe. Had the Basic B and Smoked Salmon, both fantastic!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpNXFDMy13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpNXFDMy13RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICi5qC3-wE%7CCgsIiq32_AUQ4JLtYQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604163210,
+            "review_datetime_utc": "10/31/2020 16:53:30",
+            "review_text": "Great brunch spot!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpMnRPdUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpMnRPdUFREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICi2tOuAQ%7CCgwIsYnt_AUQ8PuywgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604011185,
+            "review_datetime_utc": "10/29/2020 22:39:45",
+            "review_text": "Very good food. Unique selection. Very comfortable and relaxing to sit out front and enjoy your coffee. I have told many people already and can't wait to go back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpM1A3bzZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpM1A3bzZBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICi3P7o6AE%7CCgwIjObS_AUQyITi8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603580684,
+            "review_datetime_utc": "10/24/2020 23:04:44",
+            "review_text": "So good! There were three people in my group and each of us lived our dishes and will be back!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpaEw3X1ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpaEw3X1ZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICihL7_VQ%7CCgsI7qDB_AUQkIK9fw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603293294,
+            "review_datetime_utc": "10/21/2020 15:14:54",
+            "review_text": "The food and service were great. Loved their outdoor seating area. Good prices and I loved that they had gluten free and vegetarian options!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpZ0lTOS13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpZ0lTOS13RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICigIS9-wE%7CCgsIirir_AUQ2PWqaA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1602935818,
+            "review_datetime_utc": "10/17/2020 11:56:58",
+            "review_text": "Great service and tbe bx bagel with turkey and their special sauce was amazing\nReasonable prices\n\nI will come again when im in charoltte"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDbnBUbkJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDbnBUbkJBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICCnpTnBA%7CCgwIn7KK-gUQ8Nqw8AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1598200095,
+            "review_datetime_utc": "08/23/2020 16:28:15",
+            "review_text": "The service is always fantastic! Quality of the beverages is incredible. This is quickly becoming my favorite coffee shop in all of the Charlotte area!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4bVpXNXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4bVpXNXBBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID8mZW5pAE%7CCgwIzdXY-AUQgNnL5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595288269,
+            "review_datetime_utc": "07/20/2020 23:37:49",
+            "review_text": "Had Roots Cafe cater a Bridal Shower last weekend (yes...kept to 10 person limit) and the food was AMAZING!  We had Turkey and Brie sandwiches, chicken salad sandwiches, salmon/cream cheese with cucumber, salad with fabulous poppyseed dressing, fruit and lavender/lemon cookies. Yum!  Very fresh and farm to table tasty. Olivia is wonderfully professional and very helpful to plan a menu.  Would give 10 stars if we could. Will be catering wedding too and we already can't wait for the meal!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM4dHNtejB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4dHNtejB3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC8tsmz0wE%7CCgwIqvWN-AUQ-LTatgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1594063530,
+            "review_datetime_utc": "07/06/2020 19:25:30",
+            "review_text": "Interesting breakfast burrito. I liked it. Partner got a hot honey biscuit thing, also good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4dXJLMmVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dXJLMmVREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC8urK2eQ%7CCgsIuZH99wUQoID2Zw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593788601,
+            "review_datetime_utc": "07/03/2020 15:03:21",
+            "review_text": "Great coffee and bagel sandwich! Great service!"
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUM4X0pWRhAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUM4X0pWRhAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC8_JVF%7CCgwI0tHd9wUQsJ6CkAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1593272530,
+            "review_datetime_utc": "06/27/2020 15:42:10",
+            "review_text": "Hidden gem for a quick bite amongst the various apartment complexes. Shaded out door patio seating to enjoy your meal. Latkes are amazing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM4MEptcC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4MEptcC1BRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC80Jmp-AE%7CCgsI3s699wUQuP3NWA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1592747870,
+            "review_datetime_utc": "06/21/2020 13:57:50",
+            "review_text": "I ordered the goat cheese grits bowl and a biscuit I didn't expect to get soooo much food. Im very big on portions. I like getting what I pay for and it was cheap for the quality and quantity. Everything was delicious! I think this is my new fav breakfast spot. And the strawberry jam wow!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjdEl2Q3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjdEl2Q3F3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDctIvCqwE%7CCgwI-8u09gUQsM7HygE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1590502907,
+            "review_datetime_utc": "05/26/2020 14:21:47",
+            "review_text": "I was looking forward to the breakfast burrito. I also ordered the latke because I couldn't resist.  The latke was great. The burrito was tasty, although I was very disappointed.  I was hard pressed to find any egg inside. I even opened it up completely to look. There was no cheese, as advertised,  and there was barely a scant of egg. It was 99% potato and bean."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURjeE9ydWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjeE9ydWRnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDcxOrudg%7CCgsIwvGk9gUQiMa3Bg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1590245570,
+            "review_datetime_utc": "05/23/2020 14:52:50",
+            "review_text": "Ellie Mae approved!  That is the highest rating I can give a restaurant!\n\nWe ordered the breakfast Sammy and burrito.  Both were amazing! We ordered ahead of time before we arrived per the instructions on Roots Instagram page.  Food was ready when we arrived and we sat outside.\n\nEverything was safe and I highly recommend supporting this local of restaurant.  Thanks!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjdmRlVzJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjdmRlVzJnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICcvdeW2gE%7CCgwIscXq8wUQ4LmpmgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1585095345,
+            "review_datetime_utc": "03/25/2020 00:15:45",
+            "review_text": "I can't say enough about this place! Great atmosphere, great coffee and incredible food. The staff is always friendly and the menu is always fresh. They offer a monthly coffee subscription that has been a game changer! Personal favorites on the menu, outside of all day brunch is the avocado toast, pastrami sandwich and the roasted roots bowl."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzM3FfdjlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzM3FfdjlRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDs3q_v9QE%7CCgwIl-yD8wUQgPDotwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583412759,
+            "review_datetime_utc": "03/05/2020 12:52:39",
+            "review_text": "Lovely little place! I did not try the food, but i had an excellent nitro and spent a very enjoyable time working here."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzMXJHeEZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzMXJHeEZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDs1rGxFw%7CCgwIqff48gUQwPDw3QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583233961,
+            "review_datetime_utc": "03/03/2020 11:12:41",
+            "review_text": "Adorable little place tucked away in Charlotte.. Food was out of this world!! Clean esting to the max. Hands down the best mug of coffee I have had in years."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzeXY3dldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzeXY3dldnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDsyv7vWg%7CCgwIu7Dq8gUQ-J3nygM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1582995515,
+            "review_datetime_utc": "02/29/2020 16:58:35",
+            "review_text": "The food and place are great but also every single song they played was awesome"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzcC1iSXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcC1iSXF3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICsp-bIqwE%7CCgwIobml8gUQ0LmCyAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581866145,
+            "review_datetime_utc": "02/16/2020 15:15:45",
+            "review_text": "I got the caramel latte. The homemade caramel syrup was incredible. Highly recommend checking this place out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMi1QOHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMi1QOHJRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICs2-P8rQE%7CCgwIoqKg8gUQyIn6oQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581781282,
+            "review_datetime_utc": "02/15/2020 15:41:22",
+            "review_text": "Amazing brunch!  Great atmosphere, decor and friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzczd1bWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzczd1bWpBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICss7umjAE%7CCgwI6d-W8gUQsNPo8wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581625321,
+            "review_datetime_utc": "02/13/2020 20:22:01",
+            "review_text": "EVERYTHING I've ever had here has been fantastic. Their small, unique menu offers a wide variety and always hits the spot. Great espresso too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzN1pMLUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzN1pMLUZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICs7ZL-Fw%7CCgsIo8aG8gUQ8NGmJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581359907,
+            "review_datetime_utc": "02/10/2020 18:38:27",
+            "review_text": "The Avacado Chicken Wrap is deee-licious!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNOTVqQ2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNOTVqQ2NBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDM95jCcA%7CCgsIm9n88AUQqOvxbw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1579101339,
+            "review_datetime_utc": "01/15/2020 15:15:39",
+            "review_text": "Quick, quality, and great everything all around. Friendly staff that went above and beyond to make our party of 6 happy. The dishes were delicious and aesthetically pleasing. The place was clean and well kept. Super cute and I will be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNbV95N1d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNbV95N1d3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDMm_y7Ww%7CCgsI0dTt8AUQoOaiTg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578854993,
+            "review_datetime_utc": "01/12/2020 18:49:53",
+            "review_text": "First time trying something new !! LOVED this place ! The mimosas were perfect and the grilled chicken was seasoned to perfection !! Perfect place to bring in my birthday brunch with my friend !!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNNi1tUEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNNi1tUEFREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDM6-mPAQ%7CCgwIw_3s8AUQ2KLEqAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578843843,
+            "review_datetime_utc": "01/12/2020 15:44:03",
+            "review_text": "Excellent breakfast; very cozy; definite must try!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNcmJLMlhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNcmJLMlhnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDMrbK2Xg%7CCgwI5M_V8AUQwKGOuwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578461156,
+            "review_datetime_utc": "01/08/2020 05:25:56",
+            "review_text": "I have gone to roots Cafe twice and both times I thoroughly enjoyed my meal. All of the food options are healthy and the both times I have gone the food was very good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNeGJmaWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNeGJmaWRREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDMxbfidQ%7CCgwIwKbJ8AUQsLTn3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578259264,
+            "review_datetime_utc": "01/05/2020 21:21:04",
+            "review_text": "I found ROOTS based off of google. I was looking for a new brunch restaurant to attend and decided to go here because of the reviews.\n\nThe reviews were right... great food, great environment, solid menu and competitive pricing.\n\nI was very impressed by the hot honey biscuit. Would definitely recommend this item to anyone! "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNaGZ1RmZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNaGZ1RmZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDMhfuFfw%7CCgsIwv_H8AUQuKfUew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578237890,
+            "review_datetime_utc": "01/05/2020 15:24:50",
+            "review_text": "Great coffee and great service!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNeVBEM2h3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNeVBEM2h3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDMyPD3hwE%7CCgwI5bzU7wUQoKHmvAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1576345189,
+            "review_datetime_utc": "12/14/2019 17:39:49",
+            "review_text": "Great atmosphere, great food and drinks. Staff was very kind and helpful"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNM2VycVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNM2VycVN3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICM3erqSw%7CCgwImpuQ7wUQqPz68gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1575226778,
+            "review_datetime_utc": "12/01/2019 18:59:38",
+            "review_text": "Love the BELT....a must yryt"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwZy1IT2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwZy1IT2xRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID0g-HOlQE%7CCgwI4MLG7gUQ8MGQtQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1574019424,
+            "review_datetime_utc": "11/17/2019 19:37:04",
+            "review_text": "This small cafe in South End Village is tucked away in the first floor of a new commercial development. It's compact and rustic, with a mix of 2 and 4--top and tables inside and a couple outside--not exactly great for large group meetings, but cozy for weekend brunch.\n\nThe menu starts at $8 for breakfast sandwiches, and you'll probably end up spending more on sides if you want a full meal. You order at the counter and get a number. They refill drip coffee at the table."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwOGVXSnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwOGVXSnhBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID08eWJxAE%7CCgwIkKuc7gUQkNefvwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1573328272,
+            "review_datetime_utc": "11/09/2019 19:37:52",
+            "review_text": "Atmosphere was very nice, food was good! Not amazing but good. Would recommend it. Much better then fast food and a fairly good value!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwdnF2S0V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwdnF2S0V3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID0vqvKEw%7CCgwI8oiO7gUQqOywxwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1573094514,
+            "review_datetime_utc": "11/07/2019 02:41:54",
+            "review_text": "Great breakfast and coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwNXBxazN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwNXBxazN3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID05pqk3wE%7CCgwI8dH77QUQsOnEwgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572792561,
+            "review_datetime_utc": "11/03/2019 14:49:21",
+            "review_text": "Great little place.  Went for breakfast and food was great.  Goat cheese grits were amazing!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwdklXZUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwdklXZUJREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID0vIWeBQ%7CCgsI0N_c7QUQiIKXNA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572286416,
+            "review_datetime_utc": "10/28/2019 18:13:36",
+            "review_text": "My husband and two friends went to Roots for the first time on Sunday for brunch. We were all very impressed. The space is comfy and cozy and the service is FAST. You order at the counter and seat yourself. I had the BELT and my husband had the special, which was shrimp and grits, and everything was fresh and delicious. I also had a peach sangria and an iced vanilla latte, both of which I really enjoyed. I'm glad we found a new brunch spot that isn't overrated or has a ridiculously long wait. Although it's a small space, there is plenty of seating (bar, tables, patio). It seems like a good place to hang out and work if you work from home like me. I'd like to give that a try soon."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwX01xamZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwX01xamZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID0_MqjfQ%7CCgsIvsHY7QUQ-PnvVA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572217022,
+            "review_datetime_utc": "10/27/2019 22:57:02",
+            "review_text": "Delicious brunch and really fun atmosphere. Definitely try it out if you haven't already"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwMUwyblRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwMUwyblRnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgID01L2nTg%7CCgwI-_nG7QUQsOX7wQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571929339,
+            "review_datetime_utc": "10/24/2019 15:02:19",
+            "review_text": "The food was good and the service was great! Would definitely go back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwcjZTLVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwcjZTLVZREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC0r6S-VQ%7CCgwI68OV7QUQkNK2sAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571119595,
+            "review_datetime_utc": "10/15/2019 06:06:35",
+            "review_text": "What a cool place this must be.  Great utilization of this space..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwaF9Ic1l3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwaF9Ic1l3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC0h_HsYw%7CCgwIh9SH7QUQqI7b1AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1570892295,
+            "review_datetime_utc": "10/12/2019 14:58:15",
+            "review_text": "The most Hipster place i have been to outside of Asheville. The coffee here rivals some of the best coffee places i have been to. Very Cozy, with good food. Also what in the world is Avocado Toast?"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwdWRpaDBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwdWRpaDBRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC0udih0QE%7CCgwIop3V7AUQ4Pn_kgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1570066082,
+            "review_datetime_utc": "10/03/2019 01:28:02",
+            "review_text": "Always a nice experience stopping at Roots. Good food and nice people."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwNFo3SmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwNFo3SmtBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC04Z7JkAE%7CCgsIkPnD7AUQoIbYHQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1569782928,
+            "review_datetime_utc": "09/29/2019 18:48:48",
+            "review_text": "Despite the luke-warm breakfast burrito, the service and coffee were terrific. Surprised to see some UPNY natives while visiting a coffee shop in the heart of NC. Located in a very comfortable, upbeat neighborhood. Don't be surprised if a family of bikers waves and says \"hi!\" while you're enjoying your coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMweU95SWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMweU95SWFBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC0yOyIaA%7CCgwIzbPq6wUQyOLKsgM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1568315853,
+            "review_datetime_utc": "09/12/2019 19:17:33",
+            "review_text": "My salad was kinda disappointing, given roots  does local,    I expected local greens, vegetables... summer abundance.  The server was super kind and helpful.  I would give her a 5.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVMl9XcktREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVMl9XcktREAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDU2_WrKQ%7CCgsIo7XE6wUQ-K25KQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1567693475,
+            "review_datetime_utc": "09/05/2019 14:24:35",
+            "review_text": "Awesome food, staff and vibe"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVaTlUMFd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVaTlUMFd3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDUi9T0Ww%7CCgwI0ua86wUQ-KPK0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1567568722,
+            "review_datetime_utc": "09/04/2019 03:45:22",
+            "review_text": "Good food, great coffee, good location terrific service. I went here for a morning social event and was surprised by the variety in food and beverage options.\n\nThe coffee had a nice Rich flavor and the waitress continually came by the duration of time I was there to top me off, and I was there for over 4 hours!\n\nAfter the event, I ended up liking the atmosphere and food I'd had that I ended up staying for lunch and working for a few hours. The food was fresh with high-quality ingredients and a nice balance of heathly and hearty options.\n\nI also liked that their internet was decently fast and the atmosphere was perfect for hanging out for a little while and working.\n\nI would definitely come back to this place, even if just to meet someone for coffee or lunch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVdVBhazZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVdVBhazZ3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDUuPak6wE%7CCgwIj_DL6gUQkIat8wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1565718543,
+            "review_datetime_utc": "08/13/2019 17:49:03",
+            "review_text": "Really good food!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVbTdmSUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbTdmSUx3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICUm7fILw%7CCgsIwIKi6gUQ6Nv0TQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1565032768,
+            "review_datetime_utc": "08/05/2019 19:19:28",
+            "review_text": "Bad food bad prices!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVbTl6aVVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbTl6aVVnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICUm9ziUg%7CCgsIjJ2h6gUQyIbeBw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1565019788,
+            "review_datetime_utc": "08/05/2019 15:43:08",
+            "review_text": "Roots in southend. So good! Got a bunless veggie burger that came with cucumber salad side. Peach muffin and local coffee to top it off. Super chill spot, good music, nice tables that mouses work on, and plenty of outlets. Will definitely be coming back here to work remote again. That staff is fun and pleasant."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVbmI2bFVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbmI2bFVnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICUnb6lUg%7CCgwIi8iM6gUQ2OKvnQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1564681227,
+            "review_datetime_utc": "08/01/2019 17:40:27",
+            "review_text": "Excellent vibe along with yummy food!  Thank you.  Goat cheese grits, Roots hash and Avocado toast all perfect.  Vanilla latte perfect."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVenZ6RDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVenZ6RDN3RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICUzvzD3wE%7CCgwI5Y7e6QUQwPuB5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1563920229,
+            "review_datetime_utc": "07/23/2019 22:17:09",
+            "review_text": "Avi on toast"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVMG9MQUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVMG9MQUZ3EAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICU0oLAFw%7CCgsIi_fX6QUQgP2qbw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1563818891,
+            "review_datetime_utc": "07/22/2019 18:08:11",
+            "review_text": "Had the days special of chicken tortilla soup and a chicken sandwich. So delicious. The Gouda cheese and the bun were my favorite! That soup was the best chicken tortilla I've ever had.\nCute space, friendly service. I recommend it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrc2FTUEdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrc2FTUEdnEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDksaSPGg%7CCgwI49Xa6AUQqO2ukwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1561766627,
+            "review_datetime_utc": "06/29/2019 00:03:47",
+            "review_text": "Good was great and served hot right it if the kitchen. Servers were attentive with making sure we had water and everything we needed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURra1pXbm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURra1pXbm1RRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDkkZWnmQE%7CCgwIwMzY6AUQgN6v0gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1561732672,
+            "review_datetime_utc": "06/28/2019 14:37:52",
+            "review_text": "Amazingly delicious - it's a must!  Super fresh and lots of options - was hard to choose.  Our daughter had been here before and recommended it.  We shared the special, berry stuffed french toast and celebrated Father's Day with mimosas - delicious! I had the avocado toast, hubby had the BLT, kids had the bowls - everyone was super happy with their selection! Very fresh and delectable!  Most def will be back when visiting Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZOHNpbm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZOHNpbm13RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDY8sinmwE%7CCgwIyt6Z6AUQgM7-8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1560702794,
+            "review_datetime_utc": "06/16/2019 16:33:14",
+            "review_text": "Great breakfast and even better atmosphere. We love walking up there with the doggo for a quick bite."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNFNEwySzNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNFNEwySzNBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICE4L2K3AE%7CCgsIwbGU6AUQgKnERg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1560615105,
+            "review_datetime_utc": "06/15/2019 16:11:45",
+            "review_text": "Quality food, service and atmosphere. The staff is friendly and the food is amazing. I ordered the breakfast burrito. 10/10"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0MmUzX3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0MmUzX3BBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIC42e3_pAE%7CCgwIt5X15wUQ4LLtlQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1560103607,
+            "review_datetime_utc": "06/09/2019 18:06:47",
+            "review_text": "Amazing food!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZXzVLSnBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZXzVLSnBBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDY_5KJpAE%7CCgwI1Ya65wUQoMq7qgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559135061,
+            "review_datetime_utc": "05/29/2019 13:04:21",
+            "review_text": "Super cute space with quick, delicious food!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZbjdIenpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZbjdIenpnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDYn7HzzgE%7CCgwI6aK15wUQ0OvPkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559056745,
+            "review_datetime_utc": "05/28/2019 15:19:05",
+            "review_text": "Great food, good coffee, nice modern atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZcDhhUmlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZcDhhUmlBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDYp8aRiAE%7CCgwIpuSl5wUQ4I-bzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1558802982,
+            "review_datetime_utc": "05/25/2019 16:49:42",
+            "review_text": "Best Avo Toast I've tasted in a while!\nIn town for a family wedding. Looked up brunch places near us and based on the customer ratings decided to try it out. My husband had the beef bowl and our son, who is super picky had the grilled chicken sandwich. Everything tasted great. Not crowded and friendly, attentive staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZaDlpNnNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZaDlpNnNRRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDYh9i6sQE%7CCgwI48Si5wUQgKmbpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1558749795,
+            "review_datetime_utc": "05/25/2019 02:03:15",
+            "review_text": "Walked in by coincidence and man -- next time it won't be coincidence.\nFriendly staff, excellent super fresh (!) food and just a great place. I take my customers there next time since it's a special / unique place.\nHighly recommended"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZdzZMRW93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZdzZMRW93RRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDYw6LEowE%7CCgwIqoiK5wUQ2KHe3QE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1558348842,
+            "review_datetime_utc": "05/20/2019 10:40:42",
+            "review_text": "Service was awful, to hot inside. music was to loud.and the food wasn't up to par.only stopped because I was very hungry at the Time, I won't be going back ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZMWZMRmVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZMWZMRmVBEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDY1fLFeA%7CCgwI9d_35gUQqMG9ggI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1558048757,
+            "review_datetime_utc": "05/16/2019 23:19:17",
+            "review_text": "I love the decor here. Had the avocado toast for breakfast. I really liked the accompaniments. The avocado mash itself was just okay though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZenFXbnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZenFXbnVnRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgIDYzqWnugE%7CCgwIg43h5gUQkJTS8wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1557677699,
+            "review_datetime_utc": "05/12/2019 16:14:59",
+            "review_text": "I had a great first impression at ROOTS Cafe. The atmosphere was great both inside and out, even on a muggy, overcast morning. Plenty of space for pups outside as well. The menu had me flip-flopping between options, and what I ended up with was delicious! Only losing a star because of value. Prices were a little hefty for what you get, so if that's a deal-breaker for you, save this for a special occasion. Otherwise, I highly recommend this tucked away South End spot."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZc3NMVzhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZc3NMVzhBRRAB!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICYssLW8AE%7CCgwIn-my5QUQoPTykAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1554822303,
+            "review_datetime_utc": "04/09/2019 15:05:03",
+            "review_text": "Nutella bruffin - what?....doesn't matter as its delicious!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZdUtETU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZdUtETU1BEAE!2m1!1s0x0:0xcd8ff28ea16fd486!3m1!1s2@1:CIHM0ogKEICAgICYuKDMMA%7CCgwIzaeJ5QUQwMe4kwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1554142157,
+            "review_datetime_utc": "04/01/2019 18:09:17",
+            "review_text": "Had the brunch burrito and it was good. Coffee was fresh and tasty. Staff was nice and welcoming. Saw the cook on the phone and when my order came in he promptly washed his hands and made my order. Glad I went out of my way for breakfast here."
+        }
+    ]
+}
