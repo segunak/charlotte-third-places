@@ -1,0 +1,932 @@
+{
+    "place_name": "Rock Hill Coffee",
+    "place_id": "ChIJZcUQ5aaJVogRG2a9oP6L8FE",
+    "place_description": null,
+    "place_rating": 4.9,
+    "place_total_reviews": 151,
+    "place_google_id": "0x885689a6e510c565:0x51f08bfea0bd661b",
+    "place_reviews_id": "5904373037217441307",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJZcUQ5aaJVogRG2a9oP6L8FE&q=*&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMeVp6UEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMeVp6UEdBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDLyZzPGA%7CCgwIwqKOtgYQsPfqmAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724092738,
+            "review_datetime_utc": "08/19/2024 18:38:58",
+            "review_text": "Excellent shop. Pourover was made well by knowledgeable baristas. Very glad Rock Hill coffee is on main street with parking available!\n\nBought some beans too! Very fresh and huge bloom effect on pour-over with Single origin from Chiapas region."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3bGYybVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3bGYybVBBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC7lf2mPA%7CCgwIo_yCtgYQ6PyTvQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723907619,
+            "review_datetime_utc": "08/17/2024 15:13:39",
+            "review_text": "Last Thursday I waited over 3 minutes in Amelia's and while I was the only waiting customer all 4 people behind the counter studiously ignored me. I walked out and around the corner to this coffee shop.\nHalf way to the counter a server locked eyes with me, smiled and asked what she could get for me. What a difference. Always going here in the future. Nice atmosphere, good coffee and friendly people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyMVB1OUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyMVB1OUt3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICr1Pu9Kw%7CCgwI3oaatAYQ4Lm6wQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720091486,
+            "review_datetime_utc": "07/04/2024 11:11:26",
+            "review_text": "Amazing coffee and great atmosphere! They have the best staff!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMMzVEcTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMMzVEcTdRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDL35Dq7QE%7CCgwI4O2QtAYQkK_QwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719940832,
+            "review_datetime_utc": "07/02/2024 17:20:32",
+            "review_text": "Great coffee shop in downtown Rock Hill! The staff was friendly, the service was quick, and the space is welcoming. Will definitely visit again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMel9fVDJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMel9fVDJnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDLz__T2gE%7CCgwI6NqPtAYQwIfukwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719922024,
+            "review_datetime_utc": "07/02/2024 12:07:04",
+            "review_text": "Hands down the best coffee shop in Rock Hill! I always look forward to their unique seasonal lattes. The staff are awesome and the atmosphere is perfect for getting together with friends, working, or just reading a book. Highly recommend if you are in the area!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMdVBpSmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMdVBpSmNREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDLuPiJcQ%7CCgwIqYHqswYQ0P6SuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719304361,
+            "review_datetime_utc": "06/25/2024 08:32:41",
+            "review_text": "Super cute place, good coffee, great service! Love it :)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6MnYtbl9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6MnYtbl9RRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDz2v-n_QE%7CCgsIua6WswYQ2JLAQg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717933881,
+            "review_datetime_utc": "06/09/2024 11:51:21",
+            "review_text": "Very nice environment and very yummy"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNleHAtMUhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNleHAtMUhnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICexp-1Hg%7CCgwIh6DusgYQsMmUoQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717276679,
+            "review_datetime_utc": "06/01/2024 21:17:59",
+            "review_text": "The best coffee in RH"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6bUxuRlVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6bUxuRlVnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICzmLnFUg%7CCgwI1JbisgYQ4Oe4hQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717078868,
+            "review_datetime_utc": "05/30/2024 14:21:08",
+            "review_text": "Love the people, and the environment is spectacular."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUamZxVTZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUamZxVTZ3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDTjfqU6wE%7CCgsIyqvNsgYQ-LniGg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716737482,
+            "review_datetime_utc": "05/26/2024 15:31:22",
+            "review_text": "Killer iced Americano"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUZ3J2cFlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUZ3J2cFlBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDTgrvpYA%7CCgwIi_68sgYQoMGT3wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716469515,
+            "review_datetime_utc": "05/23/2024 13:05:15",
+            "review_text": "The cappucino here was delicious and perfectly steamed! Small but cozy interior. Overall much better than local competitors."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcUtMaDRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcUtMaDRRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDTqKLh4QE%7CCgwI5uy0sgYQgJmthwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716336230,
+            "review_datetime_utc": "05/22/2024 00:03:50",
+            "review_text": "Super knowledgeable and nice staff, really great coffee, and a nice chill atmosphere"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUMDUzZzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUMDUzZzFBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICT053g1AE%7CCgwIscGksgYQ8P-A7gI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716068529,
+            "review_datetime_utc": "05/18/2024 21:42:09",
+            "review_text": "Delicious coffee paired with a stale blondie-ish treat. Vibe is comfy and inviting. Wish you had more choices of pastries but hard to compete with the neighbor down the block.  I'll be back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUbW9YSXB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUbW9YSXB3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICTmoXIpwE%7CCgsI0eWIsgYQyNHbUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715614417,
+            "review_datetime_utc": "05/13/2024 15:33:37",
+            "review_text": "Fantastic atmosphere and great people. Get the banana bread!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqX3FtMHZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqX3FtMHZ3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDj_qm0vwE%7CCgwIiJ3VsQYQwMzZvAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714769544,
+            "review_datetime_utc": "05/03/2024 20:52:24",
+            "review_text": "I forgot to take pictures of the actual shop but it's the cutest little place. I had an iced strawberry basil matcha latte this trip and it was incredible. (We previously tried the vanilla rosemary and lavender honey. Chef's kiss.) We loved the baristas, the merch, and the outdoor seating. It's located in a cool downtown area so take some time to look around."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMXJ2eEJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMXJ2eEJnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDj1rvxBg%7CCgsIo7PQsQYQsOLydA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714690467,
+            "review_datetime_utc": "05/02/2024 22:54:27",
+            "review_text": "Great people and the coffee was hot and fresh. They feature a different coffee every day. Closed on Monday."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURELU8tc2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURELU8tc2JBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDD-O-sbA%7CCgwIiZ7AsAYQqISvyAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712328457,
+            "review_datetime_utc": "04/05/2024 14:47:37",
+            "review_text": "Great freshly roasted coffee beans at this price point, especially the firefly blend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREOElIR3dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREOElIR3dBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDD8IHGwAE%7CCgwImfW7sAYQoO_p3AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712257689,
+            "review_datetime_utc": "04/04/2024 19:08:09",
+            "review_text": "Trendy vintage downtown vibes and a great cortado!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREOElIQ0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREOElIQ0ZBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDD8IHCFA%7CCgsIkvW7sAYQkK6ASQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712257682,
+            "review_datetime_utc": "04/04/2024 19:08:02",
+            "review_text": "It's one of the best coffee places I've ever been to has music and is layed  back. I highly recommend  visiting this coffee shop when you get the chance"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwbnVxaXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbnVxaXVnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpnuqiugE%7CCgwIt7m3sAYQuLHp3wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712184503,
+            "review_datetime_utc": "04/03/2024 22:48:23",
+            "review_text": "I am new to this area and found this coffee spot not far from where I was photographing family sessions that day. Iced mocha was great, and the staff was very welcoming and the interior is really nice. I'll definitely be back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNENy1PeTlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNENy1PeTlRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICD7-Oy9QE%7CCgwIgoS2sAYQ8PjdtAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712161282,
+            "review_datetime_utc": "04/03/2024 16:21:22",
+            "review_text": "Awesome little vibe downtown Rock Hill with delicious iced caramel lattes. Recommend for both meeting up and getting some work done."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpbXF6SUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpbXF6SUFREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDimqzIAQ%7CCgwIzveBsAYQ-PTvlAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711307726,
+            "review_datetime_utc": "03/24/2024 19:15:26",
+            "review_text": "Awesome place for excellently made coffee, teas, and light snacks brought in from local vendors.\n\nGreat place to relax to catch up with friends and family or catch up on some work.\n\nIf you're in the downtown Rock Hill area and looking for a great coffee shop, this is the place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5enR6dXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5enR6dXdRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID9ztzuwQE%7CCgwI4IXYrwYQ2J_dowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710621408,
+            "review_datetime_utc": "03/16/2024 20:36:48",
+            "review_text": "Gorgeous decor, wonderful drinks with local vendors, super friendly service, and so much to look at and enjoy. This is a must."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5eUtqMzRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5eUtqMzRnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID9yKj34gE%7CCgwI9qLCrwYQwLvn0gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710264694,
+            "review_datetime_utc": "03/12/2024 17:31:34",
+            "review_text": "Rock Hill Coffee provides a variety of expertly crafted coffee & tea beverages. The ambiance is thoughtfully curated to offer a cozy and welcoming space, ideal for catching up with friends or tackling some work. The drinks are consistent and prepared by skilled and friendly baristas."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5Mk9uUGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5Mk9uUGZBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC92OnPfA%7CCgwIj62HrwYQqLiv3gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709299343,
+            "review_datetime_utc": "03/01/2024 13:22:23",
+            "review_text": "Love this new addition to downtown rock hill! Cute cozy space, wonderful coffee, and yummy baked goods. What's not to love?!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkN09TUHF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkN09TUHF3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICd7OSPqwE%7CCgsI9NatrgYQkLL6Eg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707830132,
+            "review_datetime_utc": "02/13/2024 13:15:32",
+            "review_text": "Delicious coffee!  Great customer service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0MDRESXZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0MDRESXZRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDt04DIvQE%7CCgwI45qKrgYQ0NTS1wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707248995,
+            "review_datetime_utc": "02/06/2024 19:49:55",
+            "review_text": "Their coffee bean selection is pretty good. I picked up some beans over the weekend and it did not disappoint. Their matcha is also good as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0NnJ1QkF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0NnJ1QkF3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDt6ruBAw%7CCgsI0u76rQYQ8JPmXg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1706997586,
+            "review_datetime_utc": "02/03/2024 21:59:46",
+            "review_text": "I wish I had a better review to give. Unfortunately, my experience wasn't that great. It started off with a friendly welcome, but after my order was taken, the barista forgot to make my drink. When she did finally make it (cappuccino), the presentation was lovely, but the taste left much to be desired.   Maybe you will go to Rock Hill Coffee and have the best experience-- I hope you do! For me, not so much."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0ajhtdzRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0ajhtdzRRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICtj8mw4QE%7CCgsIidburQYQ0K-WAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706797833,
+            "review_datetime_utc": "02/01/2024 14:30:33",
+            "review_text": "I love this place a latte!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROLTlpTjR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROLTlpTjR3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDN-9iN4wE%7CCgwI3uLOrQYQyP3wzAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706275166,
+            "review_datetime_utc": "01/26/2024 13:19:26",
+            "review_text": "The coffee here is yummy, the staff is kind and the  atmosphere is chill. I drive out of my way when I am anywhere near Rock Hill coffee to grab a tasty cup of coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOb3Fyakx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOb3Fyakx3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICNoqrjLw%7CCgsIjKGIrQYQ8O6PYw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1705119884,
+            "review_datetime_utc": "01/13/2024 04:24:44",
+            "review_text": "I have been there roughly 6-7 times with some friends each time sincerely hoping it would improve because it's a new business that deserves a chance. Frankly I can't imagine it will last. The quality of the coffee and other drinks are inconsistent. The staff, particularly the Manager is rather cocky and rude for no good reason. Let's put it this way, if you simply ask where the coffee comes from in a polite manner one hardly merits an attitude. \"We are a charitable undertaking\" was the response as he turned his back on both myself and my daughter only to continue sitting and gazing out the window. As a Rock Hill native I won't give them another visit. I am well travelled and was shocked to see this type of attitude in my own hometown. There's so many other great options within a 2-3 block radius. Unfortunately I've heard this often."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxdGNPWUZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxdGNPWUZnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID1tcOYFg%7CCgwI-eTyrAYQoMGZ4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704768121,
+            "review_datetime_utc": "01/09/2024 02:42:01",
+            "review_text": "Excellent taste, service, price, and environment. Great owners that truly care about community! The lattes are amazing, especially the frothy macadamia milk and other dairy free options."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxNElyZ05REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxNElyZ05REAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID14IrgNQ%7CCgwIo_7brAYQgJKWwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704394531,
+            "review_datetime_utc": "01/04/2024 18:55:31",
+            "review_text": "Best coffee in Rock Hill, SC hands down, try it you'll see :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxbjZiWUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxbjZiWUZ3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC1n6bYFw%7CCgsIkuzarAYQ0PHFaQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704375826,
+            "review_datetime_utc": "01/04/2024 13:43:46",
+            "review_text": "Ginger turmeric latte was amazing!! Beautiful atmosphere and friendly baristas! I'll be sure to stop by again next time I'm in town!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxcXRmLVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxcXRmLVB3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC1qtf-Pw%7CCgsI67WxrAYQiMHYQQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1703697131,
+            "review_datetime_utc": "12/27/2023 17:12:11",
+            "review_text": "Overall, I've been pleased with my experiences here. Since they first opened, my household has spent more money here than any other RH coffee shop.\n\nThat being said, my last few visits have been quite a disappointment.\n\nMy extra-hot latte was lukewarm when given to me. I watched it sit there on the counter for nearly 10 minutes. When I reached for it, the barista told me she wasn't finished making it yet. By the time I sipped it, it was barely warm.\n\nOn my previous experience, I asked for a strong Americano--light on the water. It came to me brimming with water, when I pointed that out, the annoyed barista poured out some of the water and returned it back to me. (The point was the espresso-to-water ratio, not how full it was.)\n\nAnd on a recent time visit with kids, their hot chocolates were gross-tasting. Neither of my daughters drank theirs. Money wasted. When we addressed the awful taste with the baristas, they told us that they'd run out of their normal ingredients and were using some cobbled-together mix. That's fine, but they should have let us know up front.\n\nThere are several good options for decent espresso drinks in Rock Hill, but this one has the best location.\n\nMy hope is that they can improve their barista training to match the potential of their location and menu."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxc3VqSWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxc3VqSWRREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC1sujIdQ%7CCgwIy4itrAYQqODlkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703625803,
+            "review_datetime_utc": "12/26/2023 21:23:23",
+            "review_text": "Delicious coffee and variety of flavors!! Loved it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxeE1Ya3JBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeE1Ya3JBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC1xMXkrAE%7CCgsI8beYrAYQwIuqSw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703287793,
+            "review_datetime_utc": "12/22/2023 23:29:53",
+            "review_text": "Great coffee and cappuccino. The staff was very helpful and friendly. It is a great location in downtown Rock Hill"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWXzliM01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWXzliM01BEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDV_9b3MA%7CCgwIgN6HrAYQ-IXW_wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703014144,
+            "review_datetime_utc": "12/19/2023 19:29:04",
+            "review_text": "Favorite coffee shop in the Charlotte area! I've been searching for a good coffee ever since I moved to the area, and this is the best that I've been able to find! Also, their mock tails are so fun!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWX1BqRHlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWX1BqRHlnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDV_PjDygE%7CCgwIpoTdqwYQsOn-iAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702314534,
+            "review_datetime_utc": "12/11/2023 17:08:54",
+            "review_text": "Great location, tasty coffee, good atmosphere, and affordable prices."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsLWJIdy13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsLWJIdy13RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDl-bHw-wE%7CCgwIo46uqwYQwJOIhwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701545763,
+            "review_datetime_utc": "12/02/2023 19:36:03",
+            "review_text": "An adorable quaint coffee shop in the heart of downtown Rock Hill. I was in the area for the big Christmasville festival so decided to walk in and check them out. I tried one of their holiday specials, and I'll be honest have no clue what's in it lol, but trust it's delish! I cozied up in a corner chair to ready one of the books provider on the table. It was a very nice vibe in the whole place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdFppSmVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdFppSmVREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICltZiJeQ%7CCgsI89f9qgYQ-K7sCg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700752371,
+            "review_datetime_utc": "11/23/2023 15:12:51",
+            "review_text": "Awesome place. Great expresso!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNseEthTThBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNseEthTThBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIClxKaM8AE%7CCgsIouTLqgYQ6N2GLA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699934754,
+            "review_datetime_utc": "11/14/2023 04:05:54",
+            "review_text": "It took me a while to find a place with decent coffee in south and north carolina, I read reviews about other coffee shops but I was only disappointed. Then I came to Rock Hill Coffee and I finally saw the light. I had no need in adding anything extra or sugar to my coffee as it was perfect just the way they were serving it. Kudos to the baristas!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGamJyY3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGamJyY3ZBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICFjbrcvAE%7CCgwI1Y-AqgYQkMWKywI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698695125,
+            "review_datetime_utc": "10/30/2023 19:45:25",
+            "review_text": "Great coffee, cool seasonal options and great atmosphere. The staff is always nice and attentive. Gotta try it!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1eXJ6TE5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1eXJ6TE5BEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID5yrzLNA%7CCgwIsdHUqQYQiI7N8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697982641,
+            "review_datetime_utc": "10/22/2023 13:50:41",
+            "review_text": "Amazing coffee and cute atmosphere. AND they're open in the mornings on Sunday- major plus."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1a2NqclVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1a2NqclVREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC5kcjrUQ%7CCgwIjaerqQYQqOHnqwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697305485,
+            "review_datetime_utc": "10/14/2023 17:44:45",
+            "review_text": "Everything in me sighed with contentment when I drank the first sip of my latte! Highly recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1blBpcVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1blBpcVlREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC5nPiqYQ%7CCgwIks-bqQYQ8PiWogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697048466,
+            "review_datetime_utc": "10/11/2023 18:21:06",
+            "review_text": "I have been here a few times, it is super nice and chill. Great environment to hang out with friends and talk, sit down and work, or simply hangout.\n\nThe coffee is really good! I've had just plain black coffee, iced mochas, and the espresso mule. All really good! Plus all for a really good price in my opinion!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaMF9faUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaMF9faUNREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDZ0__iCQ%7CCgwIj7KGqQYQ-J6dqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696700687,
+            "review_datetime_utc": "10/07/2023 17:44:47",
+            "review_text": "I just discovered this place recently and have been a few times. Their coffees are so good and they have different flavors. I love their fall drinks. Their pricing is great also!\n\nI enjoyed the inside also. I love plants and they have some beautiful plants, with some of them on the wall propagating."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURabmZfSm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURabmZfSm1RRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDZnf_JmQE%7CCgwI_NmBqQYQkImioAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696623868,
+            "review_datetime_utc": "10/06/2023 20:24:28",
+            "review_text": "A cozy little shop with friendly staff. Coffee is excellent and requires nothing but a possible splash of cream. Catch up on a little work or just sit and watch the world go by"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaNmV6Z1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaNmV6Z1lREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDZ6ezgYQ%7CCgsIvsPyqAYQ8Oy1Hw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696375230,
+            "review_datetime_utc": "10/03/2023 23:20:30",
+            "review_text": "Thank you guys!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaMHBDTUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaMHBDTUtREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDZ0pCMKQ%7CCgwI9-jRqAYQ8PjDkAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695839351,
+            "review_datetime_utc": "09/27/2023 18:29:11",
+            "review_text": "Excellent coffee, reasonable prices. The Leaves of Gold iced latte is so good! Will definitely be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaejVMbV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaejVMbV93RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZz5Lm_wE%7CCgsIjOGsqAYQkJfgcQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695232140,
+            "review_datetime_utc": "09/20/2023 17:49:00",
+            "review_text": "wonderful place and great price love it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaajhLTWlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaajhLTWlBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZj8KMiAE%7CCgsIuI-sqAYQ-IiiGQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695221688,
+            "review_datetime_utc": "09/20/2023 14:54:48",
+            "review_text": "Great coffee and great matcha tea. The staff is always very kind."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaaDVfV25nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaaDVfV25nRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZh5_WngE%7CCgwIsaCmqAYQ8LmR_gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695125553,
+            "review_datetime_utc": "09/19/2023 12:12:33",
+            "review_text": "Delicious coffee at a great price! The staff are so friendly and the service is speedy but personable. Beautiful and cozy place to enjoy your coffee with downtown Rock Hill character! Highly recommend! Cold brew is my favorite!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNadTlQaTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNadTlQaTJRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZu9Pi2QE%7CCgwI1qikqAYQ6M2vqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695093846,
+            "review_datetime_utc": "09/19/2023 03:24:06",
+            "review_text": "Not a coffee drinker, so I come for the smells and the vibes. It's a great atmosphere and a relaxing, quiet place to get some work done.  Their other products include teas, mocktails, canned beverages and pastries, so there is plenty more to taste."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNabThQZXZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNabThQZXZRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZm8PevQE%7CCgwI0JmiqAYQwMeb7QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695059152,
+            "review_datetime_utc": "09/18/2023 17:45:52",
+            "review_text": "Best coffee I've had. It's smooth. I buy bags of it to make at home. Costa Rican is my favorite."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNacllia2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNacllia2xBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZrYbklAE%7CCgwIirGSqAYQoJ6FsAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694800010,
+            "review_datetime_utc": "09/15/2023 17:46:50",
+            "review_text": "Got a delicious iced matcha from here but the real stand out is the super friendly service and atmosphere. Will definitely be making this my go to place for coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNab2ViazdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNab2ViazdRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZoebk7QE%7CCgwInIX_pwYQuLjV1AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694483100,
+            "review_datetime_utc": "09/12/2023 01:45:00",
+            "review_text": "I've been following this place around since thr Petsmart parking lot, then the Pallet place and now a nice shop in Rock Hill.\n\nVery good roaster. Best coffee by far in the area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaMXB6b2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMXB6b2hBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZ1pzohAE%7CCgoI8sj0pwYQsK9o%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694311538,
+            "review_datetime_utc": "09/10/2023 02:05:38",
+            "review_text": "Every time I've been, I was greeted and welcomed by the workers, owner, and/or manager. Everyone there has been so nice and open to conversation and questions.\n\nI've only been there 3 times so far but it's a new favorite."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1OUxQOXZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1OUxQOXZBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICu9LP9vAE%7CCgsI9dzypwYQsMifWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694281333,
+            "review_datetime_utc": "09/09/2023 17:42:13",
+            "review_text": "Quality coffee and quality people "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabE5tZUdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabE5tZUdBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZlNmeGA%7CCgwIlbzZpwYQ4NHJ4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693867541,
+            "review_datetime_utc": "09/04/2023 22:45:41",
+            "review_text": "I got a hot vanilla latte and it was so pretty and delicious! I normally add a ton of liquid sugar to my coffee but their coffee was so smooth I didn't need it. They are also so nice and hospitable and even out a stencil on my latte "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaNk5hQ1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaNk5hQ1VBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZ6NaCUA%7CCgwImPXRpwYQ4IKo2wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693743768,
+            "review_datetime_utc": "09/03/2023 12:22:48",
+            "review_text": "Have tried several roasts/bags from them. All are well made.  The best roaster in town imxp!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNac0p2a0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNac0p2a0VBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICZsJvkEA%7CCgsIlO_NpwYQ2PXOXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693677460,
+            "review_datetime_utc": "09/02/2023 17:57:40",
+            "review_text": "This place has only been open 2 weeks and I've been there 3 times... once with a friend, once with my boyfriend and once by myself and each experience was consistent with warm, friendly service, quality coffee and a peaceful atmosphere. My current favorites would be the vanilla latte with macadamia nut milk, the apple fritter and for a mid workday afternoon \"pick me up\" the double shot of espresso hits the spot perfectly!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwNS1DNlVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNS1DNlVBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDp5-C6UA%7CCgsIkMS9pwYQiLS8MA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693409808,
+            "review_datetime_utc": "08/30/2023 15:36:48",
+            "review_text": "A fantastic addition to the downtown scene! Rock Hill has a great variety of origins and roasts. A unique advantage is that I was able to choose my roast for my great priced pour over. If you want quality craft coffee, great service, and a comfy atmosphere for reading or meeting, this is the place. Go local, go to Rock Hill Coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwZzlLY2hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwZzlLY2hRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpg9KchQE%7CCgwI_NKupwYQqJCpnAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693165948,
+            "review_datetime_utc": "08/27/2023 19:52:28",
+            "review_text": "I love this place! The drinks are great. The staff is amazing, and the ambiance is spot on. If you haven't tried it, you should!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwemJmcXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwemJmcXl3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpzbfqywE%7CCgwI9cGppwYQ-O6__gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693081845,
+            "review_datetime_utc": "08/26/2023 20:30:45",
+            "review_text": "Wonderful place with amazing coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwNWVuTUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNWVuTUx3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDp5enMLw%7CCgwIscCkpwYQ8IiauAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692999729,
+            "review_datetime_utc": "08/25/2023 21:42:09",
+            "review_text": "What a great addition to Main Street in Downtown, Rock Hill! They have the tastiest and most creative coffee drinks you'll find and the staff is so friendly and helpful. There is plenty of space to relax or plug in and get a little bit of work done. Great atmosphere and great people!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwNmViUHRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNmViUHRBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDp6ebPtAE%7CCgsI3rCepwYQwITLJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692899422,
+            "review_datetime_utc": "08/24/2023 17:50:22",
+            "review_text": "Great coffee! Great Service! Fun environment! Have indulged in the essential espresso and went crazy with an Espresso Mule. Both equally delightful! Excited with the new location!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwa2ItaXN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwa2ItaXN3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpkb-iswE%7CCgwI-aKZpwYQwP6e2wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692815737,
+            "review_datetime_utc": "08/23/2023 18:35:37",
+            "review_text": "A warm gracious atmosphere with friendly people to help you decide on your favorite beverage and snack."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwdm9qMV9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdm9qMV9RRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpvoj1_QE%7CCgwIp_mTpwYQgJHTkQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692728487,
+            "review_datetime_utc": "08/22/2023 18:21:27",
+            "review_text": "Awesome coffee, cool vibes, and friendly staff. This is my new spot!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwdHJtV1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwdHJtV1JREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDptrmWRQ%7CCgwIpcSOpwYQuL62twI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692639781,
+            "review_datetime_utc": "08/21/2023 17:43:01",
+            "review_text": "Amazing coffee and even better hospitality!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwLXFMajNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwLXFMajNBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDp-qLj3AE%7CCgwIzf6IpwYQgKmX0gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692548941,
+            "review_datetime_utc": "08/20/2023 16:29:01",
+            "review_text": "Tim was excellent. Espresso mule was fabulous. They roast their beans. Cozy."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURweXFMSVpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURweXFMSVpREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpyqLIZQ%7CCgwIromEpwYQsOfGkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692468398,
+            "review_datetime_utc": "08/19/2023 18:06:38",
+            "review_text": "Best coffee in town!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOHBTZ1NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOHBTZ1NBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDp8pSgSA%7CCgsI6OKCpwYQqNiOIw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692447080,
+            "review_datetime_utc": "08/19/2023 12:11:20",
+            "review_text": "I'm new to the Rock Hill area, and when I walked into their location downtown I was surprised to learn that this is their second day open!!  Their menu selection is so creative, fun, and refreshing. I can't wait to be back for their grand opening and try a few more of their creations.\n\nDuring my visit today I tried their Marg mocktail, and it was so unexpected and so right, at the same time. The flavor was a  perfect blend of zero proof spirits and cold brew. So innovative!\n\nWhile there I also saw an iced coffee being made it looks luscious, will try next time!\n\nIn addition to my coffee order, I also got their peach fritter, and it was to die for. I honestly can't remember when I had a pastry that was so fresh and crispy - not overly sweet and topped with little pieces of fresh peach  a must!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwb3M3dnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwb3M3dnp3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpos7vzwE%7CCgwI_N_-pgYQ-IPX8QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692381180,
+            "review_datetime_utc": "08/18/2023 17:53:00",
+            "review_text": "Great new place. Authenticity, quality, simplicity, hospitality."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwZ3R5c0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwZ3R5c0ZREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDpgtysFQ%7CCgwIzrn9pgYQ2IOS0AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692359886,
+            "review_datetime_utc": "08/18/2023 11:58:06",
+            "review_text": "Great location, great coffee, nice staff and reasonable prices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKdHQ3NGV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKdHQ3NGV3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDJtt74ew%7CCgwI7tHQpQYQgLu08AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689528558,
+            "review_datetime_utc": "07/16/2023 17:29:18",
+            "review_text": "Rock Hill Coffee Roasters is the best coffee roaster in Rock Hill! Their staff is the best, I love getting to talk to Sabrina and Cassie! Tim and Brian do a great job roasting the coffee and running this place! I am so excited for their cafe to open.\n\nThey do not have many food options, but if you're looking for a snack to go along with the coffee, their muffins are pretty good!\n\nI come here for the coffee and conversation!! I highly recommend this place to anyone who looks for the same!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKeXQyMkh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKeXQyMkh3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDJyt22Hw%7CCgwI8pbGpQYQgNuWrgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689357170,
+            "review_datetime_utc": "07/14/2023 17:52:50",
+            "review_text": "The best coffee in rock hill!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKd0xYcFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKd0xYcFZREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDJwLXpVQ%7CCgwI28CmpQYQqOiu0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688838235,
+            "review_datetime_utc": "07/08/2023 17:43:55",
+            "review_text": "This is one of my favorite coffee shops. Between their coffee trailers and their set locations, the service is always top notch, quick but not rushed and they make you feel a part of their journey. Stop by and say hi to their team where w e you can! You won't regret it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MnJhY0RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MnJhY0RnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDu2racDg%7CCgwIkKr8pAYQqKPL0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688147216,
+            "review_datetime_utc": "06/30/2023 17:46:56",
+            "review_text": "Love Rock Hill Coffee Rosters! The coffee is amazing and I love that they change their seasonal menu up so you can always try something new and different. I pretty much only use their coffee at home now instead of buying from a grocery store. Love it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4bktLTDdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4bktLTDdnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDxnKKL7gE%7CCgwIuvbtowYQkKqq8AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685814074,
+            "review_datetime_utc": "06/03/2023 17:41:14",
+            "review_text": "Best coffee in area. Sage Caramel latte is to die for !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4ajV6S093EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4ajV6S093EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICxj5zKOw%7CCgwI_9XOowYQgMTRjAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685302015,
+            "review_datetime_utc": "05/28/2023 19:26:55",
+            "review_text": "I order a few bags of coffee every month. Love their coffee! Great flavors!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSejVfRmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSejVfRmNREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDRz5_FcQ%7CCgwIsaPaogYQ2JetpgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683394993,
+            "review_datetime_utc": "05/06/2023 17:43:13",
+            "review_text": "One of the best coffee shops in Rock Hill! Their iced caramel latte never disappoints. I like to grab a bag of coffee beans and they grind it for me on the spot! Support local y'all. :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSamZ1NFlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSamZ1NFlBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDRjfu4YA%7CCgwIgtq8ogYQ8OCzmwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682910466,
+            "review_datetime_utc": "05/01/2023 03:07:46",
+            "review_text": "Excellent coffee and customer service. Can't wait to check out the new location downtown!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNocjhYRHZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNocjhYRHZnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIChr8XDvgE%7CCgwI3-L4nwYQyNuN2AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677603167,
+            "review_datetime_utc": "02/28/2023 16:52:47",
+            "review_text": "pretty good coffee; i'd expect a bigger variety of pastries"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoZ0xQWjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoZ0xQWjJRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDhgLPZ2QE%7CCgwI6_XtnwYQoJGZkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677425387,
+            "review_datetime_utc": "02/26/2023 15:29:47",
+            "review_text": "The BEST coffee in York County. Brian, Tim and the rest of the staff are wonderful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURldllYNWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldllYNWdnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDevYX5ggE%7CCgwIkcq6nwYQkJnPrgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676584209,
+            "review_datetime_utc": "02/16/2023 21:50:09",
+            "review_text": "Excellent artisan roasted specialty coffee. Genuinely hospitable people and service. A business based on truly-held values; they put people and relationships first."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoOHV1d09nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoOHV1d09nEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICh8uuwOg%7CCgwI9_yUnwYQyL-CwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675968119,
+            "review_datetime_utc": "02/09/2023 18:41:59",
+            "review_text": "Delicious coffee and friendly people"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCZ3VidTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCZ3VidTNnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDBgubu3gE%7CCgsIvdqLngYQuIKGKg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673719101,
+            "review_datetime_utc": "01/14/2023 17:58:21",
+            "review_text": "Some of the best coffee in South Carolina. Easily the best Cortado in York County"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtcTdIbkhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtcTdIbkhREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID-q7HnHQ%7CCgwIu7nOnAYQoIq4wAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670618299,
+            "review_datetime_utc": "12/09/2022 20:38:19",
+            "review_text": "Excellent coffee, great atmosphere. Nice, quite, and secluded location."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtcXNTa2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtcXNTa2RBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID-qsSkdA%7CCgwI0tyJnAYQ2OH9jgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669492306,
+            "review_datetime_utc": "11/26/2022 19:51:46",
+            "review_text": "Rock Hill Coffee is my favorite local coffee in town. They have fantastic customer service, their coffee roasts are A+ and they've got REALLY good and unique latte flavors. Plus, in comparison, for specialty coffee, they're priced really well! Definitely a place to check out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtXzZiMEVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtXzZiMEVREAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-_6b0EQ%7CCgsIj9PamwYQyKO5Hg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668721039,
+            "review_datetime_utc": "11/17/2022 21:37:19",
+            "review_text": "Rock Hill Coffee Roasters is an awesome place to grab an incredible cup of coffee! They have lots of great options and several different custom roasts to purchase which make at-home brewing much tastier!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtbmVEcHNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtbmVEcHNnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-neDpsgE%7CCgsImuO1mwYQ8PryFw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668116890,
+            "review_datetime_utc": "11/10/2022 21:48:10",
+            "review_text": "Love their coffee and staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtc1pQVGJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtc1pQVGJnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-sZPTbg%7CCgwIqIegmwYQ8Ki6kQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667761064,
+            "review_datetime_utc": "11/06/2022 18:57:44",
+            "review_text": "Always enjoy their coffee... love all the different types of beans they keep. Definitely recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtd2VEWkF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtd2VEWkF3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-weDZAw%7CCgwI6seamwYQ-LnQmgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667671018,
+            "review_datetime_utc": "11/05/2022 17:56:58",
+            "review_text": "I've been a customer of Rock Hill Coffee Roasters since they launched in a refurbished Shasta camper. (We call it the \"happy camper.\")\nFrom the beginning, Rock Hill Coffee has offered expertly prepared roasts that are consistently great."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtcHR5Z2dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtcHR5Z2dnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-ptygggE%7CCgwIxN2KmwYQoJ2guAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667411652,
+            "review_datetime_utc": "11/02/2022 17:54:12",
+            "review_text": "Best of the best"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtdk15aVNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtdk15aVNBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-vMyiSA%7CCgsIk971mgYQoIfWYw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667067667,
+            "review_datetime_utc": "10/29/2022 18:21:07",
+            "review_text": "Great coffee! Something for everyone! I love the mocktails! Espresso blends you would never think of as being palatable. So far I'm a big fan of the Palmetto, espresso, tonic water, lemon, strawberry= It was such a surprise to see all the great vendors there! Wonderful artists showing off their wares, looking forward to doing my holiday shopping there!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MnByaE1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MnByaE1nEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDu2prhMg%7CCgsI2a_wmgYQ2OuUKw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666979801,
+            "review_datetime_utc": "10/28/2022 17:56:41",
+            "review_text": "Amazing coffee!  And always looking for ways to leverage their business to make a difference in the world!  Love Rock Hill Roasters!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtaVBldmZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtaVBldmZBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC-iPevfA%7CCgsI19zgmgYQgMSySQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666723415,
+            "review_datetime_utc": "10/25/2022 18:43:35",
+            "review_text": "Nothing like fresh roasted coffee beans.  I've tried several different blends and love them all."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlMjVINmFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlMjVINmFnEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICe25H6ag%7CCgwIiKO9mQYQ4O6n9gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664045448,
+            "review_datetime_utc": "09/24/2022 18:50:48",
+            "review_text": "Their lattes are amazing, unlike anything else I've ever tried. Super friendly staff. Love this place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlM1BXazl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlM1BXazl3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICe3PWk9wE%7CCgwIu9jomAYQyJyzggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662659643,
+            "review_datetime_utc": "09/08/2022 17:54:03",
+            "review_text": "Well....I had the Chai T!!! It was pretty darn good. Yummy!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1dXQ2bU1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1dXQ2bU1REAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDuut6mMQ%7CCgwI3ZCUmAYQgMCt0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661274205,
+            "review_datetime_utc": "08/23/2022 17:03:25",
+            "review_text": "Love this place! Great coffee and staff! I also grab their coffee beans to brew at home."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1eHJlSzF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1eHJlSzF3RRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDuxreK1wE%7CCgsI6cj-lwYQoK2yTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660920937,
+            "review_datetime_utc": "08/19/2022 14:55:37",
+            "review_text": "Rock Hill Coffee Roasters is a great addition to this spot in town! Coffee & great shopping/gift selection!\n\nThe caramel sage latte was great, and customer service stellar! Highly recommend a day out here! My son loved the steam engine painted on the wall."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1dXZudVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1dXZudVR3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDuuvnuTw%7CCgwImI_7lwYQuMnJ5wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660864408,
+            "review_datetime_utc": "08/18/2022 23:13:28",
+            "review_text": "Local business run by a great group of hardworking people. A lot of coffee varieties. I get all my coffee from them.  Don't miss!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1dXJLenRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1dXJLenRnRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDuurKztgE%7CCgwIk976lwYQoNiYvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660858131,
+            "review_datetime_utc": "08/18/2022 21:28:51",
+            "review_text": "Awesome people and awesome coffee! I frequent their location inside Pallet Place and White St. Station - highly recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MnFyRWRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MnFyRWRBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDu2qrEdA%7CCgwIkvT5lwYQsKeG5AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660844562,
+            "review_datetime_utc": "08/18/2022 17:42:42",
+            "review_text": "Very nice looking shop! Carsen the guy at the counter was extremely nice, and helped me with my decision. To say the least carsen is the reason I will be back, thank you carsen for a good experience!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1MnNxRGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1MnNxRGRBEAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDu2sqDdA%7CCgwI7_P5lwYQkJGvggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660844527,
+            "review_datetime_utc": "08/18/2022 17:42:07",
+            "review_text": "We have been long term RHCR fans for a long time and have no plans to switch! Literally the best coffee around and so glad we found them!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPOTU3cVN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPOTU3cVN3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDO957qSw%7CCgwI95rMlgYQuOKujAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657998711,
+            "review_datetime_utc": "07/16/2022 19:11:51",
+            "review_text": "Great coffee and helpful service figuring out which of the many options we wanted."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMya3JuVGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMya3JuVGdRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC2krnTgQE%7CCgwIo4vtkgYQsJ2q5AI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1650148771,
+            "review_datetime_utc": "04/16/2022 22:39:31",
+            "review_text": "Ordered the Brazil, maybe I got a bad bag/batch but to be honest most anything from Starbucks supermarket bags would have been better. Description was Peanut Butter, graham cracker and did not taste any of that. My local roaster has Brazil with strong peanut butter flavor I love but wanted to try Rock Hills cause sounded good as well. I did not taste anything listed in description. Was not worth attempting to return  just a loss of $20 ...I tossed in garbage\nNot bashing this company, but I would never ship this low quality to a paying customer, I would have tossed the batch and re-done it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyNEstT2lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyNEstT2lBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIC24K-OiAE%7CCgwIpazIkgYQ8Ir5pgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649546789,
+            "review_datetime_utc": "04/09/2022 23:26:29",
+            "review_text": "If you're not drinking their coffee, you should be. This company served at the NCCA hosted by SES and made sure I was well caffeinated for the conference. Although I didn't talk much with the owner, I heard plenty of good things about him through others at the conference who had included the gentleman's passion for mission work and the process of roasting and making good coffee. No physical location to my knowledge, but if I'm ever in the area, I will definitely go looking for their mobile cafe!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtcnFiU21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtcnFiU21RRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDmrqbSmQE%7CCgwI3Z3RjwYQuJmkzwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643400925,
+            "review_datetime_utc": "01/28/2022 20:15:25",
+            "review_text": "I recommend Sweetmint. Very yummy!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2c3NteUZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2c3NteUZ3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgID6ssmyFw%7CCgsIpMm8igYQ0MXofg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1632576676,
+            "review_datetime_utc": "09/25/2021 13:31:16",
+            "review_text": "Just wanted to share some constructive feedback. I might be in the minority but still wanted to give feedback. I love the Customer Service and the trailer that they serve coffee from is really cool. I've also purchased their beans and their beans are really good. The only drawback for me is that too much syrup is added to the drinks making them way too sweet. I find that most coffee shops make their drinks overly sweet and I'm really not sure why because it overpowers the coffee. I believe that a great cup of coffee is a balance between great tasting coffee and really nice subtle flavors. I will definitely ask for half as much syrup next time. Great menu and nice rotation of seasonal lattes."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhb0luZTVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhb0luZTVRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDaoIne5QE%7CCgwIrqPViAYQgM_WmgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1628787118,
+            "review_datetime_utc": "08/12/2021 16:51:58",
+            "review_text": "The best coffee in the fort mill/rock hill area for sure!! Super personable staff and amazing coffee!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNTd01PSnJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNTd01PSnJBRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgICSwMOJrAE%7CCgsI3oLO_gUQuK-aSA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1607696734,
+            "review_datetime_utc": "12/11/2020 14:25:34",
+            "review_text": "What a great spot! Delicious coffee & such a kind staff. The mobile business is also an awesome idea. Distinct flavor, great quality & a fresh concept make this local business one to watch as it grows!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURpXy1yUlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpXy1yUlR3EAE!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDi_-rRTw%7CCgsIhavK_gUQuLjXCQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1607636357,
+            "review_datetime_utc": "12/10/2020 21:39:17",
+            "review_text": "Love. Love. Love. Ordered from their online store. Got the Wilder coffee. Very lavish and deeply savory-sweet. Loved it and love my coffee. Give us an Ecuadorian coffee next! Will def buy again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpNWV1VzlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpNWV1VzlRRRAB!2m1!1s0x0:0x51f08bfea0bd661b!3m1!1s2@1:CIHM0ogKEICAgIDi5euW9QE%7CCgwIqKvI_gUQiO2ShQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1607603624,
+            "review_datetime_utc": "12/10/2020 12:33:44",
+            "review_text": "Outstanding coffee, cool retro vibe and absolutely the best owner and staff. Go check them out. You won't be disappointed!"
+        }
+    ]
+}
