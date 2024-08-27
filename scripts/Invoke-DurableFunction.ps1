@@ -67,12 +67,12 @@ try {
     Write-Output "Final HTTP Status: $($statusResponse.StatusCode) $($statusResponse.StatusDescription)"
     Write-Output "Final Azure Function Output:`n$($status | ConvertTo-Json -Depth 10)"
 
-    if ($status.runtimeStatus -eq "Completed") {
-        Write-Output "Operation succeeded with final status: $($status.runtimeStatus). Exiting with success."
+    if ($status.customStatus -eq "Succeeded") {
+        Write-Output "Operation succeeded with final customStatus: $($status.customStatus). Exiting with success."
         exit 0  # Exit with success code
     }
     else {
-        Write-Output "Operation failed with final status: $($status.runtimeStatus). Exiting with failure."
+        Write-Output "Operation failed with final customStatus: $($status.customStatus). Exiting with failure."
         exit 1  # Exit with failure code
     }
 }

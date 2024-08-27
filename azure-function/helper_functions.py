@@ -166,7 +166,10 @@ def create_place_response(operation_status, target_place_name, http_response_dat
     Returns:
         dict: A dictionary that includes the operation status, place name, any response data, and a detailed message.
     """
-    logging.info(operation_message)
+    if operation_status == 'failed':
+        logging.warning(operation_message)
+    else:
+        logging.info(operation_message)
     
     return {
         'status': operation_status,
