@@ -1,0 +1,260 @@
+{
+    "place_name": "Summit Coffee | Ballantyne",
+    "place_id": "ChIJbzmQS5GdVogR_blFkKsadx4",
+    "place_description": null,
+    "place_rating": 4.8,
+    "place_total_reviews": 47,
+    "place_google_id": "0x88569d914b90396f:0x1e771aab9045b9fd",
+    "place_reviews_id": "2195252667528624637",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJbzmQS5GdVogR_blFkKsadx4&authuser=0&hl=en&gl=UA",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNicVo2dldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNicVo2dldBEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICbqZ6vWA%7CCgwIp5OatQYQuO_74AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722190247,
+            "review_datetime_utc": "07/28/2024 18:10:47",
+            "review_text": "BEST coffee in Ballantyne. Service is great and they offer more than coffee with networking events and music. You should definitely check them out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6by1pZUtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6by1pZUtnEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDzo-ieKg%7CCgwIlIDktAYQwJL2oAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721303060,
+            "review_datetime_utc": "07/18/2024 11:44:20",
+            "review_text": "I'm thrilled to share my latest discovery with fellow coffee enthusiasts - a cozy gem that has stolen my heart and satisfied my caffeine cravings. This charming coffee shop is a must-visit for anyone seeking a delightful atmosphere and exceptional coffee.\nThe summer menu was very well thought out.  We tried the DreamSicle and the SummerCamp and they did not disappoint. I highly recommend stopping by Summit when you are in the Ballantyne area.  Enjoy your day!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNybHV5by1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNybHV5by1RRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICrluyo-QE%7CCgwI_KmmtAYQyLn8mwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720292604,
+            "review_datetime_utc": "07/06/2024 19:03:24",
+            "review_text": "Such a cute little spot! All of our coffees were excellent and the big bun just topped it off! It was my first time ever trying Summit Coffee, as I was visiting from out of town, but it was so delicious! I ended up finding other locations to visit because of it! I'll be back next time I'm in town!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6d3N5d213RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6d3N5d213RRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDzwsywmwE%7CCgsIxq6SswYQkOzRNQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717868358,
+            "review_datetime_utc": "06/08/2024 17:39:18",
+            "review_text": "Wish there was a 4.5.\n5 stars means perfect. This place is awesome. Coffee roasted within dates well acceptable for each kind of roast. Very good not over sweetened or at all sour specialty drinks. There was live music and very kid friendly environment with kids playing with chalk outside.\nOnly a couple things could improve.\nThe water available didn't taste great.\nMatcha was a little weak in flavor\nAnd I wish the coffee had the type of wash added to the bags. Other than that. This is a phenomenal place. Highly recommend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6dk1DSTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6dk1DSTVBRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDzvMCI5AE%7CCgwIxb6RswYQuKLJmwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717854021,
+            "review_datetime_utc": "06/08/2024 13:40:21",
+            "review_text": "Yummy lattes and friendly service!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUenE3SjhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUenE3SjhRRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICTzq7J8QE%7CCgwIipePsgYQ0K_gkQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715719050,
+            "review_datetime_utc": "05/14/2024 20:37:30",
+            "review_text": "Great tasting coffee and baked goods. They even have vegan options for both coffee and baked goods and it all tastes great."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUb3VhNVl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUb3VhNVl3EAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICToua5Yw%7CCgwI5seDsgYQiNzuhAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715528678,
+            "review_datetime_utc": "05/12/2024 15:44:38",
+            "review_text": "Great little coffee shop in the Ballantyne area! We stopped here before work because the Starbucks line is insane over here. Their prices were very reasonable, and the coffee was delicious! The two females working were very nice as well. There is plenty of room for parking, too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNkpET09REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNkpET09REAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICT6JDOOQ%7CCgwI0M_4sQYQgMDAoAM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1715349456,
+            "review_datetime_utc": "05/10/2024 13:57:36",
+            "review_text": "Coffee was fine but $.75 for oat or almond milk?  Retail the cost difference is pennies.  Why?  $5.50 for a coffee and you want to add $.75...."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqM29HR0xREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqM29HR0xREAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDj3oGGLQ%7CCgwI25zUsQYQsIn6lAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714753115,
+            "review_datetime_utc": "05/03/2024 16:18:35",
+            "review_text": "Cool little shop serving a variety of drinks. I got a Berries & Cream and Babe had the Berry Fresh. Both were delightfully refreshing. Indoor and outdoor seating available."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEMUphcHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEMUphcHBnRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICD1JappgE%7CCgwI7uS6sQYQwLyXtQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714336366,
+            "review_datetime_utc": "04/28/2024 20:32:46",
+            "review_text": "Very good coffee,good prices, great staff! Our Saturday morning go-to spot. Try the BigBun!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREcnJqZGl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREcnJqZGl3RRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDDrrjdiwE%7CCgwIzLrVsAYQwIKJ1AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712676172,
+            "review_datetime_utc": "04/09/2024 15:22:52",
+            "review_text": "I love going to Summit in the mornings before work and the team that works there is SO KIND and always very friendly. It's definitely a highlight of my week.\n\nAlso, it should be said that the coffee is delicious. I order the same thing every time: a latte with oat milk and I love it each time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEblAzQTF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEblAzQTF3RRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICDnP3A1wE%7CCgsInaiGsAYQiKDLSQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711379485,
+            "review_datetime_utc": "03/25/2024 15:11:25",
+            "review_text": "This coffee shop is cozy! The staff there are super nice and will answer any questions you may have! The coffee is around the same price of the Starbucks close to it, but the quality of Summit quickly establishes that is worth going to over the former. The shop itself is a little small with limited seating, but that doesn't affect the service and atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5Xzl2UXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5Xzl2UXBBRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgID9_9vQpAE%7CCgsI8sz4rwYQ4LzNZw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1711154802,
+            "review_datetime_utc": "03/23/2024 00:46:42",
+            "review_text": "Coffee good, service nice,although cappuccino is too tiny"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROXzVpdEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROXzVpdEx3EAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDN_5itLw%7CCgwIg4HVrQYQyMrVtAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706377347,
+            "review_datetime_utc": "01/27/2024 17:42:27",
+            "review_text": "The cookies and cream latte my wife ordered was simply delightful - a perfect blend of rich coffee and creamy sweetness. Highly recommended for a delicious treat!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROdXYyaXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROdXYyaXRBRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDNuv2itAE%7CCgsIpq22rQYQwLzAWg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705875110,
+            "review_datetime_utc": "01/21/2024 22:11:50",
+            "review_text": "Very kind staff produced a really great pair of lattes for my love and I. I support small business and I respect baristas --they were very nice."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOeWNqZ1hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOeWNqZ1hBEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICNycjgXA%7CCgsIs7eVrQYQ0OTSdA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705335731,
+            "review_datetime_utc": "01/15/2024 16:22:11",
+            "review_text": "Best coffee in the area! So glad a Summit opened in Ballantyne, because there are so few local coffee shops around unless you want to drive 20+ minutes to Southend. The staff are so sweet every single time I go in, and the seasonal coffee menus are absolutely amazing! I crave their Everything Danish literally all the time too"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNON0thUWNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNON0thUWNnEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICN7KaQcg%7CCgsIqoaGrQYQ-I-LEg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705083690,
+            "review_datetime_utc": "01/12/2024 18:21:30",
+            "review_text": "Feels like a coffee shop you'd see in a romance movie where the two main characters meet for the first time. Food is delicious and creative!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM1NU9xZWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1NU9xZWJ3EAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIC55Oqebw%7CCgwIjKDzqwYQqKiywAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702678540,
+            "review_datetime_utc": "12/15/2023 22:15:40",
+            "review_text": "Love to have another local coffee shop in the area. Super sweet staff and great cafe food. The everything cream cheese danish is a must!! I also love how they have an order ahead option with their app!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWLTkzNllREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWLTkzNllREAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICV-936YQ%7CCgwIpPXRqwYQgPqnmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702132388,
+            "review_datetime_utc": "12/09/2023 14:33:08",
+            "review_text": "Great coffee..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWbXZHNFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWbXZHNFRnEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICVmvG4Tg%7CCgwIl-HCqwYQ0L2vhAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701884055,
+            "review_datetime_utc": "12/06/2023 17:34:15",
+            "review_text": "Starbucks who??? When I first heard this location was going in right near a Starbucks I was shocked... but now I'm not! After experiencing the coffee, employees, and atmosphere why would anyone choose Starbucks!? The quality is incredible and the store is super cute and cozy.\nSure, there's not the convenience of a drive thru but the baristas here are very quick and efficient so you won't be waiting long for your first sip! Everything tastes fantastic! HIGHLY recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWcFBTY1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWcFBTY1lnEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICVpPScYg%7CCgwI89a8qwYQkI2GmwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701784435,
+            "review_datetime_utc": "12/05/2023 13:53:55",
+            "review_text": "Not a lot of decent coffee options in the immediate area, so I'm happy to report that Summit coffee is very good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURscWViN2FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURscWViN2FnEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDlqeb7ag%7CCgwIoputqwYQyNiX1QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701531042,
+            "review_datetime_utc": "12/02/2023 15:30:42",
+            "review_text": "Noice!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsNVlUZDhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsNVlUZDhBRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICl5YTd8AE%7CCgsI2p37qgYQ6KXVCg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700712154,
+            "review_datetime_utc": "11/23/2023 04:02:34",
+            "review_text": "Friendly staff, many items on the menu. Delicious coffee, but matcha tea is best whipped with an electric frother. There were particles in it. We forgot our glasses inside, came back in the evening and the girl returned them to us. I recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGOGNYalZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGOGNYalZBEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICF8cXjVA%7CCgwI1dP1qQYQgKfPiAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698523605,
+            "review_datetime_utc": "10/28/2023 20:06:45",
+            "review_text": "Easily the best coffee in the Ballantyne/Blakeney/waverly area. Nothing can top this place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaN2YzZWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaN2YzZWxnRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDZ7f3elgE%7CCgwIgeaAqQYQiIz5qAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696609025,
+            "review_datetime_utc": "10/06/2023 16:17:05",
+            "review_text": "Everyone is so friendly here. The coffee is great. This area has needed something like this for a long time!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaOVpyc0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOVpyc0Z3EAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgIDZ9ZrsFw%7CCgwIz_z8qAYQuP2qsQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696546383,
+            "review_datetime_utc": "10/05/2023 22:53:03",
+            "review_text": "Great taste and service"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaby03VW5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaby03VW5BRRAB!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICZo-7UnAE%7CCgsI-9GZqAYQ8MHbJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694918907,
+            "review_datetime_utc": "09/17/2023 02:48:27",
+            "review_text": "Really enjoyed our visit on opening weekend. Despite the crowds, barista Dora made a super tasty maple sea salt chai. The space is super cute with warm wood tones and soothing tunes. Can't wait to visit again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaZy1xNU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaZy1xNU9nEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICZg-q5Og%7CCgwI78SXqAYQiKG0lgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694884463,
+            "review_datetime_utc": "09/16/2023 17:14:23",
+            "review_text": "Opening weekend in Ballantyne!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaamFLSUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaamFLSUtREAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICZjaKIKQ%7CCgwIgoGRqAYQgJi-swM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694777474,
+            "review_datetime_utc": "09/15/2023 11:31:14",
+            "review_text": "Great coffee and friendly staff!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNacFpUeWVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNacFpUeWVREAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICZpZTyeQ%7CCgwI4uyLqAYQ2PbDogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694692962,
+            "review_datetime_utc": "09/14/2023 12:02:42",
+            "review_text": "Cool new spot in Ballantyne for a good coffee... atmosphere is great.  Glad to see a trendy place added to the Neighborhood..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaeGJlUE5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaeGJlUE5nEAE!2m1!1s0x0:0x1e771aab9045b9fd!3m1!1s2@1:CIHM0ogKEICAgICZxbePNg%7CCgwImNqLqAYQ6KyxrgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694690584,
+            "review_datetime_utc": "09/14/2023 11:23:04",
+            "review_text": "So happy that this place opened! A GREAT spot to get a GREAT cup of coffee! This is exactly what this area needed! Wishing all the success in the world to the new owners and proprietors of this fantasy coffee shop who are wonderful family-oriented people!"
+        }
+    ]
+}
