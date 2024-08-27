@@ -1,0 +1,380 @@
+{
+    "place_name": "Wildroots Coffee",
+    "place_id": "ChIJHzmVHSqfVogRQPEYUMWMBrw",
+    "place_description": "A locally owned coffee shop in Charlotte, NC offering indoor/outdoor seating, to-go, and catering for private events.",
+    "place_rating": 4.4,
+    "place_total_reviews": 59,
+    "place_google_id": "0x88569f2a1d95391f:0xbc068cc55018f140",
+    "place_reviews_id": "-4898072765638577856",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJHzmVHSqfVogRQPEYUMWMBrw&authuser=0&hl=en&gl=PA",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURibjkzM2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibjkzM2t3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDbn933kwE%7CCgwI3ebftQYQwLTDwwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723331421,
+            "review_datetime_utc": "08/10/2024 23:10:21",
+            "review_text": "One of my favorite places to get a latte. Definitely check out their seasonal options!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNid3J5TV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNid3J5TV93RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICbwryM_wE%7CCgwI7JCGtQYQqIT51gI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721862252,
+            "review_datetime_utc": "07/24/2024 23:04:12",
+            "review_text": "Such a cute spot, I just wish it was bigger! Drink was good but very light on the flavors , mostly tasted like your choice in milk, so chose one you like the flavor of!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNycmR2NmJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNycmR2NmJBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICrrdv6bA%7CCgsIkJ24tAYQoNbyQw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720585872,
+            "review_datetime_utc": "07/10/2024 04:31:12",
+            "review_text": "I love this place! The coffee is delicious! The homemade pop tarts are great too, just make sure you get there early before the sell out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6cDRIT2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6cDRIT2t3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDzp4HOkwE%7CCgsI2faoswYQiI2IHA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1718238041,
+            "review_datetime_utc": "06/13/2024 00:20:41",
+            "review_text": "The customer service needs some improvement..maybe even a smile or even a warm friendly hello would be a good start. There were no options for anything to eat. Coffee was overpriced and bitter. The space is cute though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6a2ZpdDZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6a2ZpdDZBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICzkfit6AE%7CCgwI4-3ysgYQ-P74iAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1717352163,
+            "review_datetime_utc": "06/02/2024 18:16:03",
+            "review_text": "Went morning of 6/2, the woman working was rude & nasty. Very poor customer service. The coffee was good but not enough to return. As someone who has worked in Customer Service all my life I was really disappointed that such a cute place had such a miserable person working."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUamJEUVpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUamJEUVpREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDTjbDQZQ%7CCgwI1Z_NsgYQsM-H-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716735957,
+            "review_datetime_utc": "05/26/2024 15:05:57",
+            "review_text": "Got the madon salted maple latte!  Good vibes, good spots. Validated parking for the attached parking lot."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqcWRfal93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqcWRfal93RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDjqd_j_wE%7CCgwIoL3asQYQ8Ory9wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1714855584,
+            "review_datetime_utc": "05/04/2024 20:46:24",
+            "review_text": "Specialty drinks: Delicious\nWi-Fi name and password: Both \"wildroots\"\nVibe/ambiance: Hippie\nParking: Parking garage visitor spots\nParking validation: 90 minutes\nSeating: Limited. Three tables for two, two tables for four right outside of entrance to rest of complex. Additional two cubbyholes with beaded drapes.\nShould you try this place? Yes.\nBathrooms: One all gender restroom."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEeExxbXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEeExxbXRnRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICDxLqmtgE%7CCgwIg9qAsAYQqOLFzAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1711287555,
+            "review_datetime_utc": "03/24/2024 13:39:15",
+            "review_text": "Getting to the cafe is fairly easy and they validate parking. Loved the aesthetic, but didn't see any food options available at the time that I went. The barista was nice and I enjoyed my Lavender Vanilla Latte with almond milk. The cups the drinks were served in are so cute."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0cjVxQ0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0cjVxQ0ZREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDtr5qCFQ%7CCgsItc6TrgYQsMvZcQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707403061,
+            "review_datetime_utc": "02/08/2024 14:37:41",
+            "review_text": "Though it has only the coffee menu and very limited other breakfast options, the Cafe's minimalist charm and quality of coffee makes this a delight. Very peaceful space for focused work for a change."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR0d2U3T3dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR0d2U3T3dnRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDtwe7OwgE%7CCgwIyteArgYQyN7_iAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707092938,
+            "review_datetime_utc": "02/05/2024 00:28:58",
+            "review_text": "I love this coffee shop!  My husband and I stop by whenever we're nearby, and it's always super tasty and the baristas are nice.  Great decor and good vibes.  I love all of their lattes and iced coffees, we always recommend this place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxME5HT3Z3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxME5HT3Z3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIC10NGOvwE%7CCgwIvq6NrAYQkKzGmwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1703106366,
+            "review_datetime_utc": "12/20/2023 21:06:06",
+            "review_text": "I want to like this coffee shop more than I do in reality. I stop by in the mornings some days because I work close and every time I have been, something has been missing: a drink I want is out, there's no food, etc. Whatever I do get there is quality and tasty. The staff is always personable, but after three visits with missing things, I can't ignore that. It's also not the kind of coffee shop I would stay at for a long time meeting someone or working; it doesn't have that comfortable vibe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaN2JyVE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaN2JyVE1BEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDZ7brTMA%7CCgwI5saAqQYQwMvLogM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696605030,
+            "review_datetime_utc": "10/06/2023 15:10:30",
+            "review_text": "Love this coffee shop and love the owner. Great place and delicious coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaaW9fS2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaaW9fS2ZBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDZio_KfA%7CCgwI0dTVqAYQ0Obs9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695902289,
+            "review_datetime_utc": "09/28/2023 11:58:09",
+            "review_text": "I love craft coffee and Wildroots has been continuously supplying some of the best coffee in CLT for years! The PSL is the best I've ever had! And if you are looking for something different, try the PSL Matcha!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaeGZYRy13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaeGZYRy13RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICZxfXG-wE%7CCgwI8MKLqAYQkMOtiwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694687600,
+            "review_datetime_utc": "09/14/2023 10:33:20",
+            "review_text": "Very neat little spot. Coffee was great and the service friendly. Evergthing was ready very quickly. Would go back if in the area again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNacm9MNDBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNacm9MNDBBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICZroL40AE%7CCgwI7Jn4pwYQ6O_rrwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694371052,
+            "review_datetime_utc": "09/10/2023 18:37:32",
+            "review_text": "Best coffee in Charlotte. We chose to sit down and enjoy our coffee and were able to choose from a variety of coffee cups to drink out of. Definitely coming back again"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabUlIX0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabUlIX0dBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICZmIH_GA%7CCgsInNDSpwYQ-PXuOQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1693755420,
+            "review_datetime_utc": "09/03/2023 15:37:00",
+            "review_text": "Two starts because the place is unbelievably cute! Unfortunately I didn't make it 10 feet on the sidewalk before throwing away my latte. The quality of espresso was tragic"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcXIyU2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcXIyU2NBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDpqr2ScA%7CCgwI6aOFpwYQuIe1-AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692488169,
+            "review_datetime_utc": "08/19/2023 23:36:09",
+            "review_text": "This coffee shop is super cute and had a great atmosphere. They have tables and these cute little cubby holes to relax in more private. The coffee was good and they have free wifi!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNweXRhREZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNweXRhREZ3EAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICpytaDFw%7CCgsIkYykpgYQuMK_Ag%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690895889,
+            "review_datetime_utc": "08/01/2023 13:18:09",
+            "review_text": "Undoubtedly, this coffee shop is a true hidden gem. Every flavor on their menu is exceptional, with my personal favorite being the Honey Cinnamon Latte. The owner and baristas create a friendly and welcoming atmosphere. Moreover, the shop's adorable ambiance adds to the overall experience. An added convenience is that they validate your parking so you are able to enjoy your time there without any worries. For anyone seeking the best and most delightful coffee experience in Charlotte, Wildroots is the place to be."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKaEwzZ0JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKaEwzZ0JREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDJhL3gBQ%7CCgwI46qypQYQsJmpzAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689032035,
+            "review_datetime_utc": "07/10/2023 23:33:55",
+            "review_text": "The blackberry cobbler was as cool and refreshing as the vibe in this sixties seventies nostalgic lounge!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKaU5LdjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKaU5LdjBBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDJiNKv0AE%7CCgsI-tWrpQYQ0JbSUw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1688922874,
+            "review_datetime_utc": "07/09/2023 17:14:34",
+            "review_text": "4.5! Very nice barista, and the drinks were good too. I preferred the Blackberry Cobbler latte to my girlfriend's Strawberry Dream, but she enjoyed hers too. We didn't get to have them in the adorable glasses which was unfortunate, but we'll be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKN3B5akZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKN3B5akZ3EAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICJ7pyjFw%7CCgwI-pPspAYQoLSd7gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687882234,
+            "review_datetime_utc": "06/27/2023 16:10:34",
+            "review_text": "Best iced cinnamon honey oat latte ever. Girls working there were so sweet, overall great experience. Love. Love! See you soon!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4cjdfdG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4cjdfdG53RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDxr7_tnwE%7CCgwI9v-2pAYQ2LH1lgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687011318,
+            "review_datetime_utc": "06/17/2023 14:15:18",
+            "review_text": "Just had the Honduran dark roast as a pour over and it was good. Just the fact that they know where the bean was from and what kind of roast it is means they have a passion for good coffee. Plus the barista is incredibly cute! I'll be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4NHNPc3RBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4NHNPc3RBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDx4sOstAE%7CCgwIhPT0owYQ6NHx1AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685928452,
+            "review_datetime_utc": "06/05/2023 01:27:32",
+            "review_text": "very aesthetic new space, coffee was a 10/10 as always plus the cutest cups"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4dzlpR193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4dzlpR193RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICxw9iG_wE%7CCgsI_uS4owYQ-MqwDQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684943486,
+            "review_datetime_utc": "05/24/2023 15:51:26",
+            "review_text": "Great coffee shop and immaculate retro vibes! Definitely worth stopping in for a lavender latte or cortado. They validate parking too!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4OVBPZHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4OVBPZHFnRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICx9POdqgE%7CCgwIjKP1ogYQwNCWxwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683837324,
+            "review_datetime_utc": "05/11/2023 20:35:24",
+            "review_text": "This place is a vibe. The decor is 70's vintage and the coffee options are so flavorful and unique. Would 10/10 recommend to grab an iced or hot coffee from this place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMVlPczh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMVlPczh3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDR1YOs8wE%7CCgsInum5ogYQoPfuFw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682863262,
+            "review_datetime_utc": "04/30/2023 14:01:02",
+            "review_text": "Very sweet people and great coffee! We loved the furniture, style, and atmosphere of the shop. Barista was kind and even gave us breakfast recommendations!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSenFPRFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSenFPRFZREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDRzqODVQ%7CCgsIsqmfogYQwLnABw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682429106,
+            "review_datetime_utc": "04/25/2023 13:25:06",
+            "review_text": "They have such yummy coffee and the owner and her team are so nice.  The customer service is amazing and the ambience is super chill and relaxing.  I always look forward to grabbing a coffee from here!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURScXY3S1J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURScXY3S1J3EAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDRqv7KRw%7CCgsIy8eQogYQkJDifw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682187211,
+            "review_datetime_utc": "04/22/2023 18:13:31",
+            "review_text": "My husband and I love this place we always go right before 2pm everything about their coffee is perfect. We are Colombian so we know about quality coffee. Their Lavender syrup which is naturally made is top notch and the staff, owner and overall place is always on point and extremely nice! We are customers and we followed to the new location!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoMTVhNVZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoMTVhNVZBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDh15a5VA%7CCgsIv6PfoAYQ6IrROA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1679282623,
+            "review_datetime_utc": "03/20/2023 03:23:43",
+            "review_text": "My latte was bitter and very overpriced."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtLWEzbUhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtLWEzbUhBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgID--a3mHA%7CCgwIhseynAYQ4PXt0wE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1670161286,
+            "review_datetime_utc": "12/04/2022 13:41:26",
+            "review_text": "Slow. 20 minutes for two coffees. I was the only customer in the shop"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlcEp6SE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlcEp6SE1BEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDepJzHMA%7CCgsI7afmmQYQ-KPBXw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664717805,
+            "review_datetime_utc": "10/02/2022 13:36:45",
+            "review_text": "Awesome coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNldWR1S1VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNldWR1S1VREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICeuduKUQ%7CCgsIxs-cmQYQ-Kydag%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663510470,
+            "review_datetime_utc": "09/18/2022 14:14:30",
+            "review_text": "Amazing coffee and a great atmosphere. Try the honey cinnamon. You won't regret it. This place is a whole vibe. Definitely making this a regular coffee spot to visit in Southend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlbnY3MDNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbnY3MDNBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICenv703AE%7CCgsIurWImQYQwN6BCg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1663179450,
+            "review_datetime_utc": "09/14/2022 18:17:30",
+            "review_text": "The coffee was very good but it was hard to even find the coffee shop because it's hard to see from the outside and also having no bathroom isn't cool at all for a place that literally sells something that's a diuretic. A good place to just grab a coffee and go I guess."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1dlpUUDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1dlpUUDNRRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDuvZTP3QE%7CCgwIqbuomAYQ8NS9mQI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1661607337,
+            "review_datetime_utc": "08/27/2022 13:35:37",
+            "review_text": "Cool space but terribly pulled espresso and no restroom. How does a coffee shop not have a restroom?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1aE5IUWRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1aE5IUWRBEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICuhNHQdA%7CCgsIzubilgYQoMuSAw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658368846,
+            "review_datetime_utc": "07/21/2022 02:00:46",
+            "review_text": "It's a very cute and cozy coffee shop where I always feel welcomed. Baristas there would always greet me with a smile and would customize any drink to my liking. Great to have this option near work. The entrance is to the right of the Sweat Method. They close at 2:00 pm."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPNnJ2WWx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPNnJ2WWx3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDO6rvYlwE%7CCgwIsP2ClgYQ8MClvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656798896,
+            "review_datetime_utc": "07/02/2022 21:54:56",
+            "review_text": "Extremely quaint and comfortable inside. Honey-cinnamon latte was delicious. Definitely a good little spot to grab a cup of coffee with friends.\n\nSeating is a bit limited inside, but we had no problem getting a seat."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyLV9QWmlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyLV9QWmlRRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgID2-_PZiQE%7CCgwIoZi-lAYQgNOCgQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653574689,
+            "review_datetime_utc": "05/26/2022 14:18:09",
+            "review_text": "This place is wonderful. The coffee (and tea) are both perfectly made, each and every time. Walking in, the shop itself was so thoughtfully curated. Everything is so aesthetically pleasing! And don't get me started on the owner, Jasmine, she's so sweet. 100% would recomment!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyc3FmbWtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyc3FmbWtBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgID2sqfmkAE%7CCgsIrLrskwYQkNDVGw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652235564,
+            "review_datetime_utc": "05/11/2022 02:19:24",
+            "review_text": "Always a great visit. The oat milk iced cortado is so smooth, staff is friendly, and they serve local coffee!!!  Must try!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQybU1mVXhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQybU1mVXhRRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgID2mMfUxQE%7CCgwIm_nPkwYQyKaOqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651768475,
+            "review_datetime_utc": "05/05/2022 16:34:35",
+            "review_text": "Iced oatmilk latte was good, but the highlight of my visit was the vegan blueberry lemon pop-tart! So delicious and not overly sweetCool area too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXbThmZmh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXbThmZmh3RRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDWm8ffhwE%7CCgwIntSukgYQwJ6QlAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649125918,
+            "review_datetime_utc": "04/05/2022 02:31:58",
+            "review_text": "What once was the cutest little coffee trailer is now the cutest little coffee shop in South End.\n\nI had the salted Maldon maple latte with oat milk and it was delicious!\n\nI give this place five stars, but if what the other reviewer said about no public restroom and no air conditioning is true, I would knock my rating down. (It was cold and rainy the day I went)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXazVDUzJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXazVDUzJBRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDWk5CS2AE%7CCgwIzvyjkgYQ4P2C2gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648950862,
+            "review_datetime_utc": "04/03/2022 01:54:22",
+            "review_text": "Wonderful coffee.  Wonderful owner.  Hard to beat it in Southend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXMVpqX3BRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXMVpqX3BRRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDW1Zj_pQE%7CCgwItt6RkgYQ4KKMwgI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1648652086,
+            "review_datetime_utc": "03/30/2022 14:54:46",
+            "review_text": "Probably great for a pick up and run but no public restroom, not sure if there's WiFi, it was 1,000 degrees inside and they still require masks even though the mandate has lifted. You won't want to bring your laptop in and work from here for more than 10 minutes. My iced latte was good, though "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXcnZEbU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXcnZEbU9BEAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDWrvDmOA%7CCgwI--PxkQYQiL7BwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648128507,
+            "review_datetime_utc": "03/24/2022 13:28:27",
+            "review_text": "One of the best coffee shops I've visited. Locally owned and an absolutely beautiful atmosphere!! Payment was easy and the espresso was NOT BURNT! YAY!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtNHVmZElREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNHVmZElREAE!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDm4ufdIQ%7CCgsIn961jwYQgIfnTA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642950431,
+            "review_datetime_utc": "01/23/2022 15:07:11",
+            "review_text": "Great options for flavored lattes!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtNHVmMG1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtNHVmMG1BRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgIDm4uf0mAE%7CCgwI0921jwYQoLmpoQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642950355,
+            "review_datetime_utc": "01/23/2022 15:05:55",
+            "review_text": "Kind service and great hot chocolate with several milk options. Will be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtN2NTM3hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtN2NTM3hnRRAB!2m1!1s0x0:0xbc068cc55018f140!3m1!1s2@1:CIHM0ogKEICAgICm7cS3xgE%7CCgwIgLrZjgYQ2MT-iQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641438464,
+            "review_datetime_utc": "01/06/2022 03:07:44",
+            "review_text": "Delish iced latte, cute interior, and good convo with the owner! Excited to go back."
+        }
+    ]
+}
