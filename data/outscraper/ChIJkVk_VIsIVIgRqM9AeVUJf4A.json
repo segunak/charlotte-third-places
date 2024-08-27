@@ -1,0 +1,764 @@
+{
+    "place_name": "WiredCoffeeEspress",
+    "place_id": "ChIJkVk_VIsIVIgRqM9AeVUJf4A",
+    "place_description": null,
+    "place_rating": 4.6,
+    "place_total_reviews": 154,
+    "place_google_id": "0x8854088b543f5991:0x807f09557940cfa8",
+    "place_reviews_id": "-9187614452101361752",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJkVk_VIsIVIgRqM9AeVUJf4A&authuser=0&hl=en&gl=CA",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3N3RDbXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3N3RDbXdRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID77tCmwQE%7CCgsIveantgYQ4PqGXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724511037,
+            "review_datetime_utc": "08/24/2024 14:50:37",
+            "review_text": "I've had the mocha coffee twice and it was great! The owner put real chocolate in it, not those cheap syrups."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3N3FEQzVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3N3FEQzVRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID77qDC5QE%7CCgwIkuWntgYQuL2_vwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724510866,
+            "review_datetime_utc": "08/24/2024 14:47:46",
+            "review_text": "Best place for coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMeXZpNWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMeXZpNWVBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDLyvi5eA%7CCgwIgtPxswYQiLKY1QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719429506,
+            "review_datetime_utc": "06/26/2024 19:18:26",
+            "review_text": "Ktowns hidden gem, always has music going on. And pancakes  on Saturday mornings"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqbE0ybEVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqbE0ybEVBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDjlM2lEA%7CCgwI-fa_sQYQ6I-YggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714420601,
+            "review_datetime_utc": "04/29/2024 19:56:41",
+            "review_text": "Love this coffee shop. I come here almost every Monday. Ps get a cookie. It'll blow your socks off."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqcUlIWl9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqcUlIWl9nRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDjqIHZ_gE%7CCgwI18a6sQYQ-LSwwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714332503,
+            "review_datetime_utc": "04/28/2024 19:28:23",
+            "review_text": "My friend and I always look forward to our weekly \"coffee hour\" at WCE. Unlike some of the other coffee shops in the area, Todd's coffee drinks are delicious and consistent every time. Seriously, the best. And very reasonably priced!\nTodd's homemade treats are simply delightful. You gotta try one of his turnovers when he makes them! Or a cheese omelet.... SO good!\n\nMy friend and I love that he thinks of everything and goes the extra mile. When we get treats to share, Todd gives us both a plate and fork and/or knife. That may seem trivial, but we have not experienced that level of thoughtfulness at other places. It's the little things that make a big difference, and that's why Wired Coffee Espress is just the best!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0NzhUQTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0NzhUQTlnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICt78TA9gE%7CCgsIqpXvrQYQsPLeaw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706805930,
+            "review_datetime_utc": "02/01/2024 16:45:30",
+            "review_text": "Please go try his white Bianca on the menu!!! I have a newfound love for white chocolate. Add some raspberry or blueberry!!!! Perfect combos!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRcl9TTHZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRcl9TTHZBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQr_SLvAE%7CCgwIrOqXrAYQ2NHkpgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703277868,
+            "review_datetime_utc": "12/22/2023 20:44:28",
+            "review_text": "The coffee is awesome and it's right near the heart of Kannapolis NC\nGreat venue for musicians and poets,\nSound is amazing!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWOHA3cmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWOHA3cmRBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICV8p7rdA%7CCgwIxdvBqwYQ0KyBrgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701866949,
+            "review_datetime_utc": "12/06/2023 12:49:09",
+            "review_text": "Great coffee and price much better than your big franchise coffee places!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNscnBINXJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNscnBINXJ3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIClrpH5rwE%7CCgwIyq_kqgYQ8N7jpwI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700337610,
+            "review_datetime_utc": "11/18/2023 20:00:10",
+            "review_text": "Asked for raspberry mocha. Ended up getting regular mocha. Or at least there isn't enough raspberry."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGby16alZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGby16alZnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDFo-zjVg%7CCgwIl9G0qgYQ4On4oQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699555479,
+            "review_datetime_utc": "11/09/2023 18:44:39",
+            "review_text": "Great little gem of a coffee shop. The homemade loaf was phenomenal. Wonderful owner who truly cares about the performing arts and locals!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1cy12Z3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1cy12Z3ZBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIC5s-vgvAE%7CCgwI4uG3qQYQ2IbEvwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697509602,
+            "review_datetime_utc": "10/17/2023 02:26:42",
+            "review_text": "Great place for a cup of  and gathering!! Thanks Todd!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKNjRxYnNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKNjRxYnNBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDJ64qbsAE%7CCgwI9_DypQYQ2KmkpAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690089591,
+            "review_datetime_utc": "07/23/2023 05:19:51",
+            "review_text": "This is a nicely set up coffee shop. They have a spacious stage area, ample tables and chairs, along with comfy pub chairs.  The Chicken Salad on a croissant is very tasty,  as well as the  Blueberry Muffins. The atmosphere is welcoming and casual.  The staff is very friendly and helpful. The service is great. We enjoyed our time there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlanViaVlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlanViaVlREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICejubiYQ%7CCgwIyPncpQYQ2NjGywM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689730248,
+            "review_datetime_utc": "07/19/2023 01:30:48",
+            "review_text": "Awesome coffee shop. So much better than a chain. Delicious coffee, smoothies  and sweet treats. Todd,  the owner, is very welcoming and makes you feel at home.  I've been to several music events here. The sound is awesome!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3X3RfeHhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3X3RfeHhBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICw_t_xxAE%7CCgwIndaDowYQgKLhxQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684073245,
+            "review_datetime_utc": "05/14/2023 14:07:25",
+            "review_text": "Smoothies!! Cookies!! Pancakes!! Oh yeah COFFEE!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSLWRTSG5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSLWRTSG5RRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICR-dSHnQE%7CCgwIv8i4oQYQ-Pe4qQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680745535,
+            "review_datetime_utc": "04/06/2023 01:45:35",
+            "review_text": "Chai tea is the best! Super friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURodmZicWlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURodmZicWlnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDhvfbqigE%7CCgwIiqnIoAYQuNT9jwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678906506,
+            "review_datetime_utc": "03/15/2023 18:55:06",
+            "review_text": "Tod The guy that owns the place is so nice and friendly and his coffee is amazing\nI would get coffee there every day if I could"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoNUtmcVZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoNUtmcVZnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDh5KfqVg%7CCgsIibiAoAYQ4JKleQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677728777,
+            "review_datetime_utc": "03/02/2023 03:46:17",
+            "review_text": "Great local spot. Singer/songwriter and open mic nights are a great way to spend an evening. Local talent on showcase is impressive. Come check it out. Enjoy a coffee, a smoothie, tasty baked goods and savory bites. Support this local business!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoa29HQk5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoa29HQk5BEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIChkoGBNA%7CCgwIhYSSnwYQ-IfzgwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675919877,
+            "review_datetime_utc": "02/09/2023 05:17:57",
+            "review_text": "Awesome coffee! Wonderful food! And the live entertainment times are nice."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCeVBTVlRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCeVBTVlRREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICByPSVTQ%7CCgsIisztnAYQgOuqcQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671128586,
+            "review_datetime_utc": "12/15/2022 18:23:06",
+            "review_text": "Nice place..I will go back ..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1NWZmZXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1NWZmZXNnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDu5ffesgE%7CCgwI69CemAYQgMLe-gI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1661446251,
+            "review_datetime_utc": "08/25/2022 16:50:51",
+            "review_text": "Little spot, not crazy about the options but it does have good coffee  I found a good drink w vanilla that I liked so I shall be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPZ1ltcDRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPZ1ltcDRRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICOgYmp4QE%7CCgsImYyTlQYQwObMew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654965785,
+            "review_datetime_utc": "06/11/2022 16:43:05",
+            "review_text": "Fantastic coffee, great smoothies, overall great vibe and friendly staff!\n\nMy favorite coffee shop in Kannapolis."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPOHY3bF93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPOHY3bF93RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICO8v7l_wE%7CCgwIgZP4lAYQgKjn7wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654524289,
+            "review_datetime_utc": "06/06/2022 14:04:49",
+            "review_text": "Best coffee. Fantastic smoothies. Wonderful service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXamYtS193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXamYtS193RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDWjf-K_wE%7CCgsIvsKWkgYQ4LuEOg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648730430,
+            "review_datetime_utc": "03/31/2022 12:40:30",
+            "review_text": "Todd's blueberry banana smoothie is the best in the world Worlds, hands down you need to Taste it, your life depends on it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXNUpLb1p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXNUpLb1p3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDW5JKoZw%7CCgwIir3EkQYQkOLi4gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647386250,
+            "review_datetime_utc": "03/15/2022 23:17:30",
+            "review_text": "Great coffee, great service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXNU1xUEdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXNU1xUEdREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDW5MqPGQ%7CCgwIvLbEkQYQqOWs2gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647385404,
+            "review_datetime_utc": "03/15/2022 23:03:24",
+            "review_text": "Todd's coffee shop is the best place to enjoy anything your heart desires! He is the most amazing barista and just has a way with jokes! My friends and I love him and will always cherish our time with him! Stop by if you love coffee, the thought of gelato, or just love Todd! If you don't love him yet... it'll happen... "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXMDVxXy13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXMDVxXy13RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICW05q_-wE%7CCgwI8YGQkQYQ4LyEqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646526705,
+            "review_datetime_utc": "03/06/2022 00:31:45",
+            "review_text": "Delicious latte! Hole in the wall place but you can't judge a book by it's cover!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXellUdkx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXellUdkx3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICWzYTvLw%7CCgwI57qFkQYQ-IujuQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646353767,
+            "review_datetime_utc": "03/04/2022 00:29:27",
+            "review_text": "Great place to chill dope stage for music"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtM2NHVVhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtM2NHVVhnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICm3cGUXg%7CCgsI_ajcjgYQsIbPfA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1641485437,
+            "review_datetime_utc": "01/06/2022 16:10:37",
+            "review_text": "Not very good. Didn't even have almond milk."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2dnBlanFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2dnBlanFBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID6vpejqAE%7CCgwIwuLZigYQkNuciwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1633055042,
+            "review_datetime_utc": "10/01/2021 02:24:02",
+            "review_text": "Absolutely the best coffee in Kannapolis! I was pleasantly surprised! The foam is unbelievable. The prices are excellent, and the home baked goods are delicious! You need to check this place out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2Z3NtVE1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2Z3NtVE1nEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID6gsmTMg%7CCgwIjLi1igYQ6OiUsQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1632459788,
+            "review_datetime_utc": "09/24/2021 05:03:08",
+            "review_text": "We were invited by some friends who were having a gig in this coffee shop. It's a nice shop where you can grab a cup of coffee and or a smoothie. Very yummy and the owner was super nice"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2aWF6cEJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2aWF6cEJBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIC6iazpBA%7CCgwIuL_eiQYQ0NbMtwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1631035320,
+            "review_datetime_utc": "09/07/2021 17:22:00",
+            "review_text": "This hidden gem of Kannapolis has the best coffee!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhaHVLZF9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhaHVLZF9RRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICahuKd_QE%7CCgwI24OMiAYQuLGSggE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1627587035,
+            "review_datetime_utc": "07/29/2021 19:30:35",
+            "review_text": "Todd was kind and generous, and the fresh raisin cookies were absolutely delicious! Also really enjoyed the caramel latte. Most places make them too sweet, but this one is perfect."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxMHI3Sm9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxMHI3Sm9BRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDq0r7JoAE%7CCgwIypCDhwYQkOvkjQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1625344074,
+            "review_datetime_utc": "07/03/2021 20:27:54",
+            "review_text": "Good coffee nice place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxMjh6a2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxMjh6a2hnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICq28zkhgE%7CCgwIrJC5hgYQ-PS11AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624131628,
+            "review_datetime_utc": "06/19/2021 19:40:28",
+            "review_text": "Fantastic pancakes. Great coffee. Perfect way to start a Saturday."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxc3ZMck1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxc3ZMck1nEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICqsvLrMg%7CCgsI07nahQYQoKj7Uw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1622580435,
+            "review_datetime_utc": "06/01/2021 20:47:15",
+            "review_text": "Best smoothies and turnovers in the area for sure.  You owe it to yourself to check it out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLN2ZId0tnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLN2ZId0tnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICK7fHwKg%7CCgwIha7egwYQ4K6u4gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1618450181,
+            "review_datetime_utc": "04/15/2021 01:29:41",
+            "review_text": "Smoothies.  Board games and tables at which to play them.  Cool vibe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLMmRDdUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLMmRDdUdnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICK2dCuGg%7CCgwI7aPJgwYQkMyOuwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1618104813,
+            "review_datetime_utc": "04/11/2021 01:33:33",
+            "review_text": "Owner is very friendly and drinks are good here, but if you are in a hurry don't stop in you'll be there for a minute while whatever you desire to slurp on is being made to order."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLMGRqQ2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLMGRqQ2ZBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICK0djCfA%7CCgsI0uq9gwYQ6ND9Zw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617917266,
+            "review_datetime_utc": "04/08/2021 21:27:46",
+            "review_text": "Had a delicious fruit smoothy!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLLU1idkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLLU1idkZ3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICK-MbvFw%7CCgsI7ZaAgwYQ0Le_LA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1616907117,
+            "review_datetime_utc": "03/28/2021 04:51:57",
+            "review_text": "The guy who owns the place made our order and it was some of the best made drinks weve had, they were perfect and delicious!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5bV9YZEZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bV9YZEZnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICym_XdFg%7CCgwI1ZCigQYQwO-brgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1613269077,
+            "review_datetime_utc": "02/14/2021 02:17:57",
+            "review_text": "Friendly environment..  Owner is the sweetest! Love this place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTazktMmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTazktMmtRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDSk9-2kQE%7CCgwIwI3e_wUQ8KXMsgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1610057408,
+            "review_datetime_utc": "01/07/2021 22:10:08",
+            "review_text": "A gem of a place. Pleasant staff, non-dairy options, comfortable seating. Can't wait for the pandemic to end so that I can attend a live-entertainment event."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDdFBQUE5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDdFBQUE5BEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICCtPPPNA%7CCgwI-f3U-QUQwPfOrQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1597325049,
+            "review_datetime_utc": "08/13/2020 13:24:09",
+            "review_text": "The iced latte is good, they have a wide variety of flavors and nondairy milk available. I also grabbed a chocolate chip cookie and I have no regrets. It's soft-baked and has lots of chocolate chunks. I look forward to trying more baked goods."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4czhLaUR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4czhLaUR3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID8s8KiDw%7CCgwIzf6A-QUQsKWuwwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595948877,
+            "review_datetime_utc": "07/28/2020 15:07:57",
+            "review_text": "Buen lugar"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURjNnIyemNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURjNnIyemNnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDc6r2zcg%7CCgwI5K2v9wUQiIbo2wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1592514276,
+            "review_datetime_utc": "06/18/2020 21:04:36",
+            "review_text": "More than just coffee. Tea and smoothies, cold drinks, sodas, and sometimes some edibles. Todd can bake you just about whatever you want. Awesome place to just relax or study and get some work done."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjcDZEZXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjcDZEZXl3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICcp6DeywE%7CCgwIkL379AUQ6OjTmQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1587469968,
+            "review_datetime_utc": "04/21/2020 11:52:48",
+            "review_text": "This is an awesome shop with great coffee! Went there this morning for the first time! They have great customer service and delicious coffee! Will definitely be recommending!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzbC0tY3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzbC0tY3B3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDsl--cpwE%7CCgwIk6Cc8wUQoLXHzAM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1583812627,
+            "review_datetime_utc": "03/10/2020 03:57:07",
+            "review_text": "Never been there should be good"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzOXBqblhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzOXBqblhREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICs9pjnXQ%7CCgwInPDV8QUQwJy9ngM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1580562460,
+            "review_datetime_utc": "02/01/2020 13:07:40",
+            "review_text": "Good coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNdmVHdUJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNdmVHdUJnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDMveGuBg%7CCgwI1L6U8QUQ0Orl6gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1579491156,
+            "review_datetime_utc": "01/20/2020 03:32:36",
+            "review_text": "Great coffee & atmosphere."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwOHZDa2F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwOHZDa2F3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgID08vCkaw%7CCgwIn9bn7QUQ6KnGzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1572465439,
+            "review_datetime_utc": "10/30/2019 19:57:19",
+            "review_text": "Great place to sing and great coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwa29fampBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwa29fampBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIC0ko_jjAE%7CCgwIutiU7AUQgIvmuAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1569008698,
+            "review_datetime_utc": "09/20/2019 19:44:58",
+            "review_text": "I wouldn't recommend this place at all. It wasn't very clean to start with, and the person making the coffee, looked like he had just come in from outside working. Also, I don't think it's very professional for the worker to sit and watch YouTube loudly while customers are in there...oh and fall asleep."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwX05LRjN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwX05LRjN3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIC0_NKF3wE%7CCgsIoMiL7AUQoK7pBQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1568859168,
+            "review_datetime_utc": "09/19/2019 02:12:48",
+            "review_text": "Tea and great music and amazing chocolate chip cookies, at excellent prices"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVMmQ2eTh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVMmQ2eTh3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDU2d6y8wE%7CCgwIiMma6wUQ6NKxiwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1567007880,
+            "review_datetime_utc": "08/28/2019 15:58:00",
+            "review_text": "\"Friends don't let friends drink Starbucks.\""
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrOVlIUDd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrOVlIUDd3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDk9YHP7wE%7CCgwIzaeD6QUQqKeGsAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562432461,
+            "review_datetime_utc": "07/06/2019 17:01:01",
+            "review_text": "Best coffee ever!! I literally think about being able to go here all day until I finally can."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURrellyQ21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrellyQ21RRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDkzYrCmQE%7CCgsIutr06AUQ-L-fBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562193210,
+            "review_datetime_utc": "07/03/2019 22:33:30",
+            "review_text": "Great spot! Nice place to chill and enjoy yummy iced lattes! The owner is always very friendly and they have chess/plenty of seating. Check it out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNFaDZIbVJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNFaDZIbVJREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICEh6HmRQ%7CCgwI4cyg6AUQuMOSgAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1560815201,
+            "review_datetime_utc": "06/17/2019 23:46:41",
+            "review_text": "Very casual and laid back. Nice place to grab a coffee with friends"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZcF9lX2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZcF9lX2tnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICYp_e_kgE%7CCgwIuaH55QUQgIru8AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1555976377,
+            "review_datetime_utc": "04/22/2019 23:39:37",
+            "review_text": "Carmel mochachino yummy"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNZbEpqU3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZbEpqU3F3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICYlJjSqwE%7CCgwInraU5QUQ8JzlhwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1554324254,
+            "review_datetime_utc": "04/03/2019 20:44:14",
+            "review_text": "Really great place. Very laid back, great service and a nice quiet atmosphere. Feels more like a home than a store. Definitely recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURvczZQMlVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURvczZQMlVnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDos6P2Ug%7CCgwIivvN5AUQsJf9xgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1553169802,
+            "review_datetime_utc": "03/21/2019 12:03:22",
+            "review_text": "Great music venue."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNvdzhlTUxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvdzhlTUxREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICow8eMLQ%7CCgwIib_S4wUQkIDVkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1551146889,
+            "review_datetime_utc": "02/26/2019 02:08:09",
+            "review_text": "It was a nice cozy place, me and my friends stayed there for a long time and the food and drinks we got there were really good. It wasnt too crowded. If you need a nice, calm, cozy place to hang it out, I'd recommend it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJd05xWThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJd05xWThnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDIwNqY8gE%7CCgwI74LX4AUQ14L-6AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1544929647,
+            "review_datetime_utc": "12/16/2018 03:07:27",
+            "review_text": "Excellent coffee! Great place to relax."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJbGFhbkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJbGFhbkZ3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICIlaanFw%7CCgwIxcv63wUQqJKpwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1543415237,
+            "review_datetime_utc": "11/28/2018 14:27:17",
+            "review_text": "Love the live music.  It is always lively and tasty.  The coffee and smoothies are tasty.  I would rather buy local and support the community than corporate coffee any day!\nFor musicians, it has the BEST sound system as the owner was a former sound tech for multiple touring bands.  So you always sound good on an open mic or show."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNncWRyUUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNncWRyUUx3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICgqdrQLw%7CCgwIp_HV3wUQ5Nm98wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1542813863,
+            "review_datetime_utc": "11/21/2018 15:24:23",
+            "review_text": "Great espresso drinks and homemade cookies to boot"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRMnZqak5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRMnZqak5BEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDQ2vjjNA%7CCgsIk6LE3QUQ0N-vHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1538330899,
+            "review_datetime_utc": "09/30/2018 18:08:19",
+            "review_text": "Lovely Owner"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3akpfVkF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3akpfVkF3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICwjJ_VAw%7CCgsIt-j_3AUQiMjbWw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1537209399,
+            "review_datetime_utc": "09/17/2018 18:36:39",
+            "review_text": "Owner Todd was extremely rude\nI'll never bring or family here could care less what coffee taste like if going to be treated with rudeness and disrespect"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBbF96R0pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBbF96R0pBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICAl_zGJA%7CCgwIrdO_3AUQ6M2H3wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1536158125,
+            "review_datetime_utc": "09/05/2018 14:35:25",
+            "review_text": "I remember Wired when it was in Gastonia! Know located in Kannapolis it remains the best hangout spot in town. Love the drinks and the owner Todd is awesome! Great guy with undeniable drinks. I highly recommend this coffee shop."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnNGZDSnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNGZDSnVnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDg4fCJugE%7CCgsIyMi82wUQgLPkVg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1534010440,
+            "review_datetime_utc": "08/11/2018 18:00:40",
+            "review_text": "No cold Brew, no nitro, owner seems cranky. Maybe he needs a cup of coffee?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMTZhMlBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMTZhMlBREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDg16a2PQ%7CCgwI76ft2gUQgMmQsgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1532711919,
+            "review_datetime_utc": "07/27/2018 17:18:39",
+            "review_text": "My favorite place for coffee. The Mocha Bianca is to die for...also a great place to hang with friends"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnOV9uY2xnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnOV9uY2xnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDg9_nclgE%7CCgwIwc2U2gUQgKWorgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1531258561,
+            "review_datetime_utc": "07/10/2018 21:36:01",
+            "review_text": "Great local coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRcTZqWVdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcTZqWVdnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQq6jYWg%7CCgwIysTY1gUQgJ74pQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1523982922,
+            "review_datetime_utc": "04/17/2018 16:35:22",
+            "review_text": "Love the atmosphere and the coffee is Amazing. This is a coffee shop you need to check out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRZ2M3TXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRZ2M3TXZnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQgc7MvgE%7CCgsIlPLJ1gUQwOzPJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1523742996,
+            "review_datetime_utc": "04/14/2018 21:56:36",
+            "review_text": "This place is amazing. Best coffee ever, nice atmosphere, good quiet place for studying or hanging out or just spending time to yourself. This is my favorite place to be!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3aXBXeTdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3aXBXeTdnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICwipWy7gE%7CCgwIleOZ1gUQwODv6gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1522954645,
+            "review_datetime_utc": "04/05/2018 18:57:25",
+            "review_text": "Best service there is, great gelato. Espressos and smoothies, it still good as ever today."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNHEzcS13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNHEzcS13RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICg4q3q-wE%7CCgwIguip1QUQwNnR1gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1521120258,
+            "review_datetime_utc": "03/15/2018 13:24:18",
+            "review_text": "Low the hot tea and pancakes on Saturday mornings!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBdk1iNzRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBdk1iNzRRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDAvMb74QE%7CCgwIqPGL1QUQgOzBhQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1520629928,
+            "review_datetime_utc": "03/09/2018 21:12:08",
+            "review_text": "Best place in kannapolis to enjoy coffee and family and friends Todd the owner is great and funny a weird sense of humor, but great.. We have had Christmas dinners as well as Thanksgiving dinner, birthday party's and business meetings, church men's gatherings, planning committees, all have been GREAT. Thanks to the owner Todd."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcFBqZHJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcFBqZHJnRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDApPjdrgE%7CCgwIi8381AUQwI3S7wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1520379531,
+            "review_datetime_utc": "03/06/2018 23:38:51",
+            "review_text": "Nice place with great coffee"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMUxMbElnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMUxMbElnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDg1LLlIg%7CCgwIhazd1AUQgNuNrgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1519867397,
+            "review_datetime_utc": "03/01/2018 01:23:17",
+            "review_text": "Wonderful place to go! Awesome coffee anf great service! Cool vibe and dont miss open mic night! For sure!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnNk5PbE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnNk5PbE9REAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICg6NOlOQ%7CCgwIrJOJ1AUQwJKmiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1518487980,
+            "review_datetime_utc": "02/13/2018 02:13:00",
+            "review_text": "Great place, with great coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRaHZyekpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRaHZyekpREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQhvrzJQ%7CCgwIlKLb0gUQgNrW_QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1515639060,
+            "review_datetime_utc": "01/11/2018 02:51:00",
+            "review_text": "Great pancakes on the weekends"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBanFTYVhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBanFTYVhnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDAjqSaXg%7CCgwIn6CBzgUQgJ-v1gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1505775647,
+            "review_datetime_utc": "09/18/2017 23:00:47",
+            "review_text": "My favorite coffee spot. Beats the chains on price and quality. The owner, Todd, is super nice."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRcjQ2NXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRcjQ2NXJRRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDQr465rQE%7CCgwIn-PyywUQwPXbmwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1501344159,
+            "review_datetime_utc": "07/29/2017 16:02:39",
+            "review_text": "Quiet, hidden treat to stop for catching up on emails when working on the road."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndl9mdDB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndl9mdDB3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDgv_ft0wE%7CCgwIjvvnywUQwOSeygM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1501166990,
+            "review_datetime_utc": "07/27/2017 14:49:50",
+            "review_text": "Excellent service and the best tasting smoothies!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3OC1fQWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3OC1fQWt3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICw8-_AkwE%7CCgwIw8maywUQwP2w4AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1499899075,
+            "review_datetime_utc": "07/12/2017 22:37:55",
+            "review_text": "Great service, great coffee tea and gellato be with great prices."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURReVA2eGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURReVA2eGd3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDQyP6xgwE%7CCgwIgIePywUQwPD-hQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1499710336,
+            "review_datetime_utc": "07/10/2017 18:12:16",
+            "review_text": "Fantastic pancakes on Saturdays!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3NkxUR3R3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3NkxUR3R3RRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICw6LTGtwE%7CCgwIyoyAywUQgOucyQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1499465290,
+            "review_datetime_utc": "07/07/2017 22:08:10",
+            "review_text": "Incredible coffee! They even have live music on Friday nights! Full set up!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdjU3RVdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdjU3RVdREAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDQv57EWQ%7CCgwI78mAygUQwN6c-AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1497375983,
+            "review_datetime_utc": "06/13/2017 17:46:23",
+            "review_text": "Good coffee and good people"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRdHZXekx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRdHZXekx3EAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDQtvWzLw%7CCgwIpfjGyQUQwNukyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1496431653,
+            "review_datetime_utc": "06/02/2017 19:27:33",
+            "review_text": "Todd is the owner/wizard of this fine establishment.  He makes the experience! Beverages are solid and he usually has something tasty to snack on. Worth checking out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3b095Yk5nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3b095Yk5nEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICwoOybNg%7CCgsI3rauxwUQgNjxFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1491835742,
+            "review_datetime_utc": "04/10/2017 14:49:02",
+            "review_text": "Im here almost every week great coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRc2ZiZXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRc2ZiZXRBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQsfbetAE%7CCgsIwsHwwgUQwILqDQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1482432706,
+            "review_datetime_utc": "12/22/2016 18:51:46",
+            "review_text": "Went to Wired Coffee a few days ago with my boyfriend and the gentleman who owns the place is a pleasure to speak with, not to mention the coffee was some of the best I've ever had. We will certainly be returning often and hope to make it out for the Ugly Sweater Party Thursday  the 29th. Hope to find more local businesses this friendly and inviting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBejdmUVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBejdmUVRBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDAz7fQTA%7CCgsInP6nwgUQgJHPRQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1481244444,
+            "review_datetime_utc": "12/09/2016 00:47:24",
+            "review_text": "best coffee in Kannapolis love it"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRb3RPekVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRb3RPekVnEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQotOzEg%7CCgwI0d-HwgUQgN784gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1480716241,
+            "review_datetime_utc": "12/02/2016 22:04:01",
+            "review_text": "The white chocolate mocha is so good and cheaper than Starbucks"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MlBfNW5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MlBfNW5RRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICw2P_5nQE%7CCgwI4-nYwQUQwLeq0QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1479947491,
+            "review_datetime_utc": "11/24/2016 00:31:31",
+            "review_text": "Coffee was disguising and service sucks I will never go back there again"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBcEk2SmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBcEk2SmtBRRAB!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgIDApI6JkAE%7CCgsIpq2tvQUQgNOmdQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1470846630,
+            "review_datetime_utc": "08/10/2016 16:30:30",
+            "review_text": "Wired Coffee Espress understands what it takes in order to craft an irresistible cup of coffee. If taste is your priority, WiredCoffee is where to be! Huge facility, live music, and killer pastries"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3bU9xamVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3bU9xamVBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICwmOqjeA%7CCgwIw8e_uwUQwMyf_AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1466950595,
+            "review_datetime_utc": "06/26/2016 14:16:35",
+            "review_text": "Best coffee I've ever had period. Gelato is amazing and they have a gift with other treats as well like cookies, banana bread, and pancakes when he does them."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRNFl1aGFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRNFl1aGFBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICQ4YuhaA%7CCgwIn_fyrQUQwO6rkwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1438432159,
+            "review_datetime_utc": "08/01/2015 12:29:19",
+            "review_text": "Tasty cappuccino! Pancake Saturday is the time to come.  I ordered blueberry pancakes, and couldn't see the pancakes for all of the tasty blueberries and whipped cream on top.  Nice way to start a day."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnOHF1Y0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnOHF1Y0dBEAE!2m1!1s0x0:0x807f09557940cfa8!3m1!1s2@1:CIHM0ogKEICAgICg8qucGA%7CCgwI98iUrQUQgLP2ygI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1436886135,
+            "review_datetime_utc": "07/14/2015 15:02:15",
+            "review_text": "Awesome coffee and incredible gelato. I'm very particular about good coffee vs. what claims to be.  This is the best I've had. Great, relaxing lounge and outdoor seating as well."
+        }
+    ]
+}
