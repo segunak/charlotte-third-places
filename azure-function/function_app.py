@@ -45,7 +45,7 @@ def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext)
             "outscraper": jsonpickle.encode(outscraper)
         }
         
-        for place in airtable.all_third_places[]:
+        for place in airtable.all_third_places:
             activity_input["place"] = place
             tasks.append(context.call_activity("get_outscraper_data_for_place", activity_input))
 
