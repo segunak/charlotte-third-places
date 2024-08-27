@@ -1,11 +1,12 @@
 {
     "place_name": "Editions Coffee and Bookstore",
     "place_id": "ChIJu2HsO4UIVIgRFbrK8SYY-nU",
+    "place_description": "Editions Coffee Shop & Bookstore is a cozy haven where literature and caffeine connoisseurs come together. As you step inside, the aroma of freshly brewed coffee mingles with the scent of well-loved books, creating an inviting atmosphere that sparks creativity and relaxation.\n\nThe space is adorned with shelves stacked high with a curated selection of both new releases and timeless classics, inviting patrons to explore literary worlds while savoring a cup of their favorite brew. You can also find a selection of gently used books!\n\nThe coffee offerings are equally enticing, with expertly crafted espresso drinks, teas, and Lotus Energy drinks!",
     "place_rating": 4.7,
     "place_total_reviews": 442,
     "place_google_id": "0x885408853bec61bb:0x75fa1826f1caba15",
     "place_reviews_id": "8501133802159651349",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJu2HsO4UIVIgRFbrK8SYY-nU&authuser=0&hl=en&gl=JP",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJu2HsO4UIVIgRFbrK8SYY-nU&authuser=0&hl=en&gl=IN",
     "reviews_data": [
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3dF96NzJRRRAB",
@@ -1512,12 +1513,28 @@
             "review_text": "So cozy!! Did a harry potter trivia there and was very enjoyable!! "
         },
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzcklMVGhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzcklMVGhRRRAB!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICsrILThQE%7CCgwIieys8QUQ8IS0lAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1579890185,
+            "review_datetime_utc": "01/24/2020 18:23:05",
+            "review_text": "What a charming and cozy book shop and coffee shop. Walls lined with books rooms,  lined with books,  a fantastic old house that's been completely remade into a place that you could browse books endlessly with a delicious cup of coffee. You could spend quite a long time here just going room to room looking at the array of books available. The front porch has been made into a seating area where you can have coffee and a pastry. Looking forward to many visits here."
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzaUtPSTV3RRAB",
             "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzaUtPSTV3RRAB!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICsiKOI5wE%7CCgsI6ZOU8QUQ-IyjNA%7C?hl=en",
             "review_rating": 4,
             "review_timestamp": 1579485673,
             "review_datetime_utc": "01/20/2020 02:01:13",
             "review_text": "Very neat place to get older and used books"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNMmZPWnl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNMmZPWnl3RRAB!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgIDM2fOZywE%7CCgsI1-XD8AUQsN2qVQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578169047,
+            "review_datetime_utc": "01/04/2020 20:17:27",
+            "review_text": "Great coffee and staff. Neat place for books and coffee"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNcVpHTmZ3EAE",
@@ -1542,6 +1559,14 @@
             "review_timestamp": 1576191258,
             "review_datetime_utc": "12/12/2019 22:54:18",
             "review_text": "This is a very unique place. I felt very \"at home\" as soon as I walked in AND I'm from Pennsylvania, not a local. I asked about the coffee and I got a free lesson about the different styles of coffee. I ended up getting a Carmel latte that was very good.\nIt is a book store, new and used. I was told it was also an outlet for local authors.\nI had a great time with the employees. I'll be back when I get back in your town!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNcDk3REVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNcDk3REVnEAE!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICMp97DEg%7CCgwIvKe07wUQ4KuR7AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1575818172,
+            "review_datetime_utc": "12/08/2019 15:16:12",
+            "review_text": "Delicious coffee,  easy to get to,  friendly staff,  and a wonderful setting with the used books."
         },
         {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNNZzUzMnBnRRAB",
@@ -1982,30 +2007,6 @@
             "review_timestamp": 1529796972,
             "review_datetime_utc": "06/23/2018 23:36:12",
             "review_text": "Lovely sitting area, friendly staff and delicious iced coffee. The bookstore needs more selection, but the coffee shop is great!"
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNReW9yelpnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNReW9yelpnEAE!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICQyorzZg%7CCgsI7JWA2QUQgNaeJA%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1528826604,
-            "review_datetime_utc": "06/12/2018 18:03:24",
-            "review_text": "It has a very cozy feel to it. It makes you feel at home"
-        },
-        {
-            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRbXYteXd3RRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRbXYteXd3RRAB!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICQmv-ywwE%7CCgwIw5H92AUQgM7txwM%7C?hl=en",
-            "review_rating": 4,
-            "review_timestamp": 1528776899,
-            "review_datetime_utc": "06/12/2018 04:14:59",
-            "review_text": "Nice little place, coffee was good and there was a lot of books."
-        },
-        {
-            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRM29LcExnEAE",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRM29LcExnEAE!2m1!1s0x0:0x75fa1826f1caba15!3m1!1s2@1:CIHM0ogKEICAgICQ3oKpLg%7CCgwItoL12AUQgKeEmwM%7C?hl=en",
-            "review_rating": 5,
-            "review_timestamp": 1528643894,
-            "review_datetime_utc": "06/10/2018 15:18:14",
-            "review_text": "Very relaxing place to enjoy browsing your favorite authors and having a warm cup of coffee.  Great place to meet a friend or enjoy a quiet afternoon."
         }
     ]
 }
