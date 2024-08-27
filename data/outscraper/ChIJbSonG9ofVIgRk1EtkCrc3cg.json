@@ -1,0 +1,2012 @@
+{
+    "place_name": "Salud Cervercia",
+    "place_id": "ChIJbSonG9ofVIgRk1EtkCrc3cg",
+    "place_description": "Airy, laid-back brewpub pouring house beers paired with wood-fired pizzas & other modern bar bites.",
+    "place_rating": 4.7,
+    "place_total_reviews": 535,
+    "place_google_id": "0x88541fda1b272a6d:0xc8dddc2a902d5193",
+    "place_reviews_id": "-3972777220905283181",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJbSonG9ofVIgRk1EtkCrc3cg&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiaDdiRy13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiaDdiRy13RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDbh7bG-wE%7CCgwIvdDatQYQoIS3wQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1723246653,
+            "review_datetime_utc": "08/09/2024 23:37:33",
+            "review_text": "The times I've eaten there the food was flavorless and the service was bad."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiNklmdGZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiNklmdGZREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDb6IftfQ%7CCgwIn5KvtQYQkPjxowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722534175,
+            "review_datetime_utc": "08/01/2024 17:42:55",
+            "review_text": "Salud is amazing and really has something for everyone! It's one of our favorite places to go whenever we visit Charlotte.\n\nWe like coming here in the mornings to do remote work - they have coffee, pastries (try the vegan coffee cake if they have it!), and plenty of comfortable seating.\n\nThen of course there is the beer - they have a nice variety of styles, and some really creative ones. A few summers ago they had a mango smoothie sour that they served as a slushie with a Tajin rim, and it was so good I still think about it today \n\nWe've also really liked everything we've tried off their menu of pizza and sandwiches (very vegan-friendly), and enjoyed checking out the bottle shop downstairs.\n\nOverall highly recommend this place, and can't wait til our next visit!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyaHJfb0lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyaHJfb0lREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICrhr_oIQ%7CCgwIzv-ktAYQ2Im_5wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720270798,
+            "review_datetime_utc": "07/06/2024 12:59:58",
+            "review_text": "Awesome place for everything. Great food and beer in a casual environment. It's one of our go to's when in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMMzRqUFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMMzRqUFZREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDL34jPVQ%7CCgwI5u-QtAYQgNf_wAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719941094,
+            "review_datetime_utc": "07/02/2024 17:24:54",
+            "review_text": "Unbelievable food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMOFk3d1RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMOFk3d1RBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICL8Y7wTA%7CCgsIx9_QswYQqKiRUQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718890439,
+            "review_datetime_utc": "06/20/2024 13:33:59",
+            "review_text": "The best Detroit style pizza you'll ever eat!! Wish they offered them everyday they are delicious! 10/10"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMOVBLa1NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMOVBLa1NREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICL9PKkSQ%7CCgwInqW4swYQ-PfhwgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718489758,
+            "review_datetime_utc": "06/15/2024 22:15:58",
+            "review_text": "Great pizza, great vibe. Nice couch and fans on a very hot day. Kid friendly as well"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURULWNxdGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURULWNxdGlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDT-cqtigE%7CCgsI78jKsgYQwOWbRg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716692079,
+            "review_datetime_utc": "05/26/2024 02:54:39",
+            "review_text": "There are a lot of things in life that disappoint. I mean, let's be real, being a human being can be sorta lame at times. The pepperoni rolls at Salud are better than most of the things you will ever experience and almost as good as most of the things you could ever imagine. Buy them. Pull them. Watch the cheese spread in all its glory. And at the moment when the final pizza roll is almost gone, thank the Lord that you get to live to see them again another day. Namaste. Get the pizza rolls."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqdGFlLXV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqdGFlLXV3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDjtae-uwE%7CCgsI-5zgsQYQkKraYw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714949755,
+            "review_datetime_utc": "05/05/2024 22:55:55",
+            "review_text": "10/10 spot! The beers are amazing and for food you can't go wrong with any of their pizzas, but their Latin Lingo is my favorite! And I was so surprised by their spicy garlic dijon wings, I didn't know what to expect, but I'm obsessed!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqb2VITjlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqb2VITjlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICjoeHN9gE%7CCgsIn_iZsQYQqJb1CA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713798175,
+            "review_datetime_utc": "04/22/2024 15:02:55",
+            "review_text": "A very laid back brew pub serving wood fired pizza,apps and salads along with craft beers.\n\nTried their Del Patio which was a Mexican Lager only 4% ABV. Refreshing on a hot Spring day.\n\nWe sat upstairs. You order your beverages and food at the bar and the food is brought to you.\n\nMy wife is Gluten free so she had the Jazzy Belle Beet Salad with roasted beets,arugula,gorgonzola,pistachios and balsamic vinaigrette. A lot going on but blended well\n\nWe also tried the Latin Lingo pizza with chicken,roasted corn,onion,jalapenos,Parm cheese ( they were out of Cotija) cilantro and a Spicey creme base...extremely flavorful  but I think would have beej better with the Cotija.\n\nAlso had the Humble Mumble pizza which was pesto,garlic,chicken,feta,EVOO,tomato and calabrian Chiles. Lots going on with this pizza!\n\nFor a very relaxed setting with unique pizza flavors,this is a fun place to go."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEOUpLejFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEOUpLejFnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICD9JKz1gE%7CCgsIt8-DsAYQ4LSASg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711335351,
+            "review_datetime_utc": "03/25/2024 02:55:51",
+            "review_text": "The garlic wings are soooo good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5NzR1VXpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5NzR1VXpRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID974uUzQE%7CCgwIlO_2rwYQqOSm6gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711126420,
+            "review_datetime_utc": "03/22/2024 16:53:40",
+            "review_text": "The pizza and wings were both fantastic! Cant wait to come back and try the focaccia and meat balls. Atmosphere is really cool and the beer list is great. Highly recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5bm9hVEtnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bm9hVEtnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID9noaTKg%7CCgwIytTZrwYQ-KnNhAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1710647882,
+            "review_datetime_utc": "03/17/2024 03:58:02",
+            "review_text": "Bad drink selection. There was no AC and they tipped without asking. Won't be returning."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5bnNqc0NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5bnNqc0NREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID9nsjsCQ%7CCgwIwr_ZrwYQ6MCtuAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1710645186,
+            "review_datetime_utc": "03/17/2024 03:13:06",
+            "review_text": "Presented a valid temporary ID from the DMV after getting a new license. Denied me from getting a drink. Every other bar I went to in NoDa happily accepted my ID. Terrible experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5bDhmLU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5bDhmLU5REAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC9l8f-NQ%7CCgwI6-u4rwYQ8NiwkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710110187,
+            "review_datetime_utc": "03/10/2024 22:36:27",
+            "review_text": ""
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkc043UVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkc043UVRBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDdsN7QTA%7CCgwIz5vSrgYQoPL2hAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1708428751,
+            "review_datetime_utc": "02/20/2024 11:32:31",
+            "review_text": "Chill place to have a beer or a glass of wine. Also, they had soccer games on: La Liga and Premier League, so a good spot to watch the game. Cozy couches and metal barstools."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NklPS2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0NklPS2NREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICt6IOKcQ%7CCgwIhOXZrQYQqIa6zwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706455684,
+            "review_datetime_utc": "01/28/2024 15:28:04",
+            "review_text": "A comfortable spot to drink coffee or beer before the bottle shop opens downstairs or you can remain. At least that's what I do when visiting the area. Cool spot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROa3ZiR1FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROa3ZiR1FnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDNkvbGQg%7CCgsIyeWyrQYQuILmCg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1705816777,
+            "review_datetime_utc": "01/21/2024 05:59:37",
+            "review_text": "Terrible place, they have salsa and bachata lessons , and they play trashy reggeaton all night. Go somewhere else."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURObU1hM2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURObU1hM2NREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDNmMa3cQ%7CCgwIjo6vrQYQuNiQogM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705756430,
+            "review_datetime_utc": "01/20/2024 13:13:50",
+            "review_text": "Get the pepperoni rolls and the Gordo pizza if you want to have a delicious, garlicky good time. The beer selection is also great and my only complaint is that it was pretty loud but that's more the other patrons fault than the establishment."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQxZzZUSjZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQxZzZUSjZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID1g6TJ6gE%7CCgwI4Ov1rAYQqM66xAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704818144,
+            "review_datetime_utc": "01/09/2024 16:35:44",
+            "review_text": "This was a pretty good brewery. Has a lot of comfy sofas and very chill.\n\nI looooved the fact that they play Spanish indie music. This is the only place I've seen doing that. Excellent environment."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxOXJXejZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxOXJXejZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC19rWz6gE%7CCgwIuoO8rAYQ4NT0-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703870906,
+            "review_datetime_utc": "12/29/2023 17:28:26",
+            "review_text": "I love this place and the pizza is realy good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWbzdQWjlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWbzdQWjlRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDVo7PZ9QE%7CCgsIhLbxqwYQuK71Dg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702648580,
+            "review_datetime_utc": "12/15/2023 13:56:20",
+            "review_text": "Delphine is what's up! She's a bright and fun spirit and so glad we interacted, she made my day!\nBreakfast I would say is best in Charlotte... only Fri-Sun, worth the wait!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWeU1Mb2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWeU1Mb2x3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDVyMLolwE%7CCgsIlMnXqwYQ6PihIA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702225044,
+            "review_datetime_utc": "12/10/2023 16:17:24",
+            "review_text": "The pizza was delicious. Everyone working was kind and efficient.\nGroovy atmosphere\nWill definitely be back for a cervesa"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0NEkyVHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0NEkyVHVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC44I2TugE%7CCgwI-s6oqwYQ6NvCrgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701455738,
+            "review_datetime_utc": "12/01/2023 18:35:38",
+            "review_text": "The beer is amazing plus wood fired pizza. The best customer service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsdDRHNEp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsdDRHNEp3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIClt4G4Jw%7CCgwIt8iZqwYQsJ6CkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701209143,
+            "review_datetime_utc": "11/28/2023 22:05:43",
+            "review_text": "Dang delicious, don't sleep on the hot/spicy mustard. Also meatballs...tasty too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscmVxUGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscmVxUGZ3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIClreqPfw%7CCgwI85CCqwYQqIPLnQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700825203,
+            "review_datetime_utc": "11/24/2023 11:26:43",
+            "review_text": "Hadn't been to Salud quite some time, except for coffee, and decided to check it out for dinner and beers a few weeks ago. We arrived and ordered our beers and pizza then sat down. While we waited on our pizzas, we finished our beers and ordered another round. A couple sat next to us about 10 mins after we arrived and ordered and had already received their food by then (also pizzas). We gave it about 10 more minutes, having waited over 45 minutes at this point, so my husband went to confirm if our order was placed since we had been waiting so long that every table that ordered food around us had all gotten theirs, except us.\n\nThe bartender sent a staff member out to our table a few minutes later. She was rude, didn't greet us at all and just asked \"you guys ordered about five minutes ago right?\". We told them we ordered almost an hour ago and she told us that since we had just placed our order that it would be another 20 minutes since 8 pizzas were ahead of us. Super clear they just forgot to ring in our order but the response to blame us after ordering over an hour prior was wild. When we got our pizza 1.5 hours later, it was terrible. I've heard others rave about it so I'm not sure why it was so bad, but we ate two pieces since we waited so long then left.\n\nWe sent an email to the restaurant just to let them know what happened, in lieu of writing a bad review for a local place. We allowed a few weeks for response and never heard back, which makes this experience worse. We have always loved the beer selection and vibe at Salud and so we are super disappointed in this experience. Maybe we'll go back for just beers at some point, but unlikely."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNscFp2cjRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNscFp2cjRBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIClpZvr4AE%7CCgsI4O76qgYQ2LilKw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700706144,
+            "review_datetime_utc": "11/23/2023 02:22:24",
+            "review_text": "Chill vibes, good music and delicious beer. 10/10 place to hang and have a few drinks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGaGFxdW13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGaGFxdW13RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICFhaqumwE%7CCgsIzrT6qQYQ2MuGTw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698601550,
+            "review_datetime_utc": "10/29/2023 17:45:50",
+            "review_text": "Great food, coffee, and beer. I had the street tacos wing with the slow pour Czech Pilsner. Amazing service from Orlando and Lalena!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1c29mSWxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1c29mSWxnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID5sofIlgE%7CCgwI3ODSqQYQ8Nzr7QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697951836,
+            "review_datetime_utc": "10/22/2023 05:17:16",
+            "review_text": "Soul of NoDa--and quite possibly, quite possibly soul of the city. And the food is belly magic."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaeGYtQzNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaeGYtQzNRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDZxf-C3QE%7CCgsI9tT4qAYQ0OmAcw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696475766,
+            "review_datetime_utc": "10/05/2023 03:16:06",
+            "review_text": "This place has an amazing vibe, the staff is super friendly and welcoming. The greka coffee was perfect, loved it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaanZ5RFRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaanZ5RFRREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDZjvyDTQ%7CCgwI7KfiqAYQ-OHLsAM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1696109548,
+            "review_datetime_utc": "09/30/2023 21:32:28",
+            "review_text": "Bartenders were friendly and beers were great! We also loved the laid back seating and atmosphere. However, the pizza was disappointing...we ordered two different pizzas, when they arrived both looked like they had sat out for a while. They were dry and room temp. The menu had so much potential with all the unique flavors! But the two we tried lacked toppings and flavor. I've heard their wings are great though, so maybe we'll try those next time we stop in for one of their great beers!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaNUs3NTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaNUs3NTlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDZ5K759gE%7CCgwI_vnCqAYQyLK6mQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1695595774,
+            "review_datetime_utc": "09/24/2023 22:49:34",
+            "review_text": "Positives:\n- Staff was friendly, positive and helpful\n- Garlic parmesan wings were delicious\n- Nice tap selection\n\nNot so good:\n- The Latin Lingo Elote Chicken pizza had great flavor, but we didn't see a single piece of chicken, and the toppings in general were quite skimpy. I feel like $18 for a crust with a bit of sauce, corn and jalapenos is crazy."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaNU02RnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaNU02RnZRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDZ5M6FvQE%7CCgwIzfjCqAYQqL-79QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695595597,
+            "review_datetime_utc": "09/24/2023 22:46:37",
+            "review_text": "First time at Salud. We had the Latin Lingo pizza and two stouts, with a side six garlic parmigiana wings. Very tasty!\n\nWait staff is 10+ and the vibe is chill.  The pizza toppings were what I call \"skimpy\" but still tasty. We will be back to give them a second chance."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaODZtZnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaODZtZnZRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICZ86mfvQE%7CCgwIz-SdqAYQgLiWoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694986831,
+            "review_datetime_utc": "09/17/2023 21:40:31",
+            "review_text": "Super cool atmosphere and delicious food!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaN3VXdXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaN3VXdXJRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICZ7uWurQE%7CCgwI4sH5pwYQ-M3XzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694392546,
+            "review_datetime_utc": "09/11/2023 00:35:46",
+            "review_text": "Their breakfast is absolutely delicious! And affordable!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaNXJQejlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaNXJQejlBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICZ5rPz9AE%7CCgwIlaHzpwYQgN6s0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694290069,
+            "review_datetime_utc": "09/09/2023 20:07:49",
+            "review_text": "Such a good local spot. The bartenders are so sweet, friendly and  helpful. They have an awesome beer selection and some good small bites and pizzas. Prices are good and there is shuffleboard. Great atmosphere and will definitely be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwci1DRkZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwci1DRkZ3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDpr-CFFw%7CCgwIx5nDpwYQgPCzpQE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1693502663,
+            "review_datetime_utc": "08/31/2023 17:24:23",
+            "review_text": "Very rude and condescending manager. We got pizza and coffee/tea, received the pizza quickly but didn't get the coffee/teas. Had to remind her as she claimed that she forgot. We waited more than 30 minutes. When I confronted her about how unacceptable this is, she had an attitude and started laughing. Don't put incapable people in management positions. Truly awful, especially since it was not at all busy!!! Food and drinks (when we got them) were good though."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwZ183emhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwZ183emhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDpg_7zhgE%7CCgsIiOiupwYQ6KuXHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693168648,
+            "review_datetime_utc": "08/27/2023 20:37:28",
+            "review_text": "Amazing experience here with delicious food and incredible drink selection. Everything on the menu looked insane and everything we ordered hit the spot. They also have a great natural wine selection (which is why stopped by) and it did not disappoint! Smaller wine selection with extremely quality wines. Can't wait to go back again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwOXUzNERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwOXUzNERREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDp9u34DQ%7CCgsI8qWPpwYQqOP4Ng%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692652274,
+            "review_datetime_utc": "08/21/2023 21:11:14",
+            "review_text": "Great for pizza, wings, beer, wine, sports, Noche Latina, and also good spot for coffee and breakfast while doing creative work if it's not too busy."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwZ2J2Q1h3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwZ2J2Q1h3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICpgbvCXw%7CCgsI6IW2pgYQkK-mWA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1691189992,
+            "review_datetime_utc": "08/04/2023 22:59:52",
+            "review_text": "Nice vibe. Cold beer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwbU5EOEt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwbU5EOEt3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICpmND8Kw%7CCgwIyruMpgYQqJzLuQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1690508746,
+            "review_datetime_utc": "07/28/2023 01:45:46",
+            "review_text": "Make sure if you place an in-person order for a pizza and stick around to wait for it that they actually tell the kitchen.\n\nSat there for 40 minutes just to be charged for a pizza and a beer that the kitchen didn't even know they had to make. Especially since it was for a special occasion.\n\nIt's a shame because I've always told people to go here. This stings a bit -- like a good friend letting you down."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKaTk3Zy1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKaTk3Zy1RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDJi97g-QE%7CCgsI7JfwpQYQoJLbbg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690045420,
+            "review_datetime_utc": "07/22/2023 17:03:40",
+            "review_text": "Love the inside space, very cozy! They also have a fridge full of a variety of ciders, seltzers, and non-alcoholic options!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKLXFqcmtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKLXFqcmtnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDJ-qjrkgE%7CCgwI_9bKpQYQ2Ki0hgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689430911,
+            "review_datetime_utc": "07/15/2023 14:21:51",
+            "review_text": "The beer is great and the pizza is so beautifully delicious!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKcmJ5Mll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKcmJ5Mll3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICJrby2Yw%7CCgwI9NGGpQYQ2OP7zAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688316148,
+            "review_datetime_utc": "07/02/2023 16:42:28",
+            "review_text": "Visiting through town and out of all the breweries on the maps, this place caught my eye the most. Did not disappoint. Cool art, lots of seating, dope vibes, solid beer!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKMVpXV0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKMVpXV0dBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICJ1ZWWGA%7CCgwIs8CCpQYQ2I-4vwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688248371,
+            "review_datetime_utc": "07/01/2023 21:52:51",
+            "review_text": "always a good vibe here! so many good drink selections, amazing pizza, outdoor patio etc. the owners are super cool too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4MmZMMEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4MmZMMEZREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDx2fL0FQ%7CCgsI9JyXpAYQgK-peA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686490740,
+            "review_datetime_utc": "06/11/2023 13:39:00",
+            "review_text": "Cool place for food and drinks. Great atmosphere. Will definitely be back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4NlBYNlZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NlBYNlZnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDx6PX6Vg%7CCgwI9ZTfowYQkKHQiwM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1685572213,
+            "review_datetime_utc": "05/31/2023 22:30:13",
+            "review_text": "Try somewhere else. My pizza tasted like ash. I assume they didn't clean the stone very well. Service beyond the bar area is none existent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCaGRLWkJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaGRLWkJ3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICBhdKZBw%7CCgwI_4a9owYQuPeMmAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685013375,
+            "review_datetime_utc": "05/25/2023 11:16:15",
+            "review_text": "Unassuming spot with shockingly good food. Casual, laid back vibe. Highly recommended the pizza."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4LXNTdmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4LXNTdmNREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICx-sSvcQ%7CCgwIgrmLowYQqOj16AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684200578,
+            "review_datetime_utc": "05/16/2023 01:29:38",
+            "review_text": "The orange and both the pizzas were fantastic. Love this place. The street corn wings were soo weird but amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4Z1B1MFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4Z1B1MFpnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICxgPu0Zg%7CCgwIrPvgogYQ-PSa4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683504556,
+            "review_datetime_utc": "05/08/2023 00:09:16",
+            "review_text": "This place just has the best beer period. There are levels to beer, and this place serves the best. Quality over quantity."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMTRQNWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMTRQNWt3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDR14P5kwE%7CCgwIxJ3WogYQkLDlrAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683328708,
+            "review_datetime_utc": "05/05/2023 23:18:28",
+            "review_text": "I've been coming any going from Charlotte since 2017, and I always gravitate toward this place. The selection of beer and wine is beautifully curated, the food is great, and the staff is phenomenal. Really appreciate it the whole package. Definitely check them out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSNS1UVzNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSNS1UVzNRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDR5-TW3QE%7CCgwI9ZLUogYQ2ObmpgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683294581,
+            "review_datetime_utc": "05/05/2023 13:49:41",
+            "review_text": "This was my first time sitting down and grabbing a bite to eat at Salud. Only question I have is why was this my first time? Great local spot in NoDa. Great beer selection. We were there on Thursday and decided to go with their wine special. Unfortunately the last Chicago deep dish pizza was sold right before our order but will be back for that - looked amazing. The wings and pizza pictured below were top notch. I would just go with a different pizza next time, very sausage forward - as one might be able to tell. Service is at the bar and quick."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSbzZiX1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSbzZiX1V3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDRo6b_Uw%7CCgwIquXEogYQ-PD8pAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683042986,
+            "review_datetime_utc": "05/02/2023 15:56:26",
+            "review_text": "Went here for a work party and the food was ridiculous. Get the corn, the pizza, the meatballs, chicken wings. Also amazing margaritas and beer!! Great people."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSaHFTSWl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSaHFTSWl3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDRhqSIiwE%7CCgsIq4SWogYQiIa7bQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1682276907,
+            "review_datetime_utc": "04/23/2023 19:08:27",
+            "review_text": "Parking deck is pricy but the venue is really cool. Small bar and bottle shop on bottom, big bar up top. Very nice beer selection. Staff super friendly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSa3FqQ2dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSa3FqQ2dRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDRkqjCgQE%7CCgwIlp2KogYQoIjT0AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682083478,
+            "review_datetime_utc": "04/21/2023 13:24:38",
+            "review_text": "Stopped by last Saturday and had a Spottieottiedopalicious, my favorite pizza in Charlotte! It was, as alway, delicious. I washed it down with a Que Golazo, well-made German pilsner that is a perfect pairing. I dined upstairs which is a fantastic place to enjoy a pizza and beer. The service is great, pizza outstanding, beer delicious...I love this place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSNHVlMkNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSNHVlMkNBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDR4ue2CA%7CCgsIpoqKogYQkKH4Wg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682081062,
+            "review_datetime_utc": "04/21/2023 12:44:22",
+            "review_text": "Awesome tap list and great coffee too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxODV2LUZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxODV2LUZBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICq85v-FA%7CCgwI9fTHoQYQoMrR9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680996981,
+            "review_datetime_utc": "04/08/2023 23:36:21",
+            "review_text": "Great selection of beers and wonderful people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSemMzN0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSemMzN0R3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICRzc37Dw%7CCgwIqMvCoQYQuMacpgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1680909736,
+            "review_datetime_utc": "04/07/2023 23:22:16",
+            "review_text": "I had a good experience at salud, but honestly for a james beard nominated restaurant, i expected a little more. i wasn't upset with the food - it was good, but it was just good. their beer selection is good, service is friendly, and the seating areas and general vibe is fun. maybe i just tried the wrong thing on the menu. I'll give them another shot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSd1kzR1FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSd1kzR1FBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICRwY3GQA%7CCgsImPuroQYQoJ7BIg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680539032,
+            "review_datetime_utc": "04/03/2023 16:23:52",
+            "review_text": "Best bar hands down. Quick service, friendly staff, delicious food at reasonable prices. They hold Latin night on Saturday nights, very chill atmosphere and great place to have fun in the evening. Their breakfast options are also the best. I've eaten everything on their breakfast menu and cannot say enough about how great this place does."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURobC1qQ0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURobC1qQ0VBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDhl-jCEA%7CCgwI3uvdoAYQiJ-OlQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1679259102,
+            "review_datetime_utc": "03/19/2023 20:51:42",
+            "review_text": "They promote soccer games in their ig stories and they didn't even care when we ask to put the sound on of the game and just keep the regular music so that doesn't even make sense at all."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoZzhpVmt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoZzhpVmt3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDhg8iVkwE%7CCgwImKDKoAYQiJirlAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678938136,
+            "review_datetime_utc": "03/16/2023 03:42:16",
+            "review_text": "Live the vibe...."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoMVoyeDlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoMVoyeDlBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDh1Z2x9AE%7CCgwIiazAoAYQ4JiG0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678775817,
+            "review_datetime_utc": "03/14/2023 06:36:57",
+            "review_text": "Some good PIZZA and up & downstairs seating!\n\nWill be BACKKKKKKKKK!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURocnFicl9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURocnFicl9nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDhrqbr_gE%7CCgwIg8-loAYQ0P7GgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678337923,
+            "review_datetime_utc": "03/09/2023 04:58:43",
+            "review_text": "Amazing beers and treats!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoNHRfSnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoNHRfSnVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDh4t_JugE%7CCgwI9uuQoAYQ-LqQzgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1677997558,
+            "review_datetime_utc": "03/05/2023 06:25:58",
+            "review_text": "A little confused getting seated. But I did ask one of the employees about seating, etc. And they were very helpful. Good drink selections. They have yummy pizza and desserts."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoNHBhWHhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoNHBhWHhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDh4paXxgE%7CCgwI9pCQoAYQ6P3IwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677985910,
+            "review_datetime_utc": "03/05/2023 03:11:50",
+            "review_text": "Me encanta"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoM0lHdGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoM0lHdGpBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDh3IGtjAE%7CCgsI8_KJoAYQ6K7gLw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677883763,
+            "review_datetime_utc": "03/03/2023 22:49:23",
+            "review_text": "best pizza in charlotte!!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoOElmeFdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoOElmeFdnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDh8IfxWg%7CCgsIm7_0nwYQqLzsaA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677533083,
+            "review_datetime_utc": "02/27/2023 21:24:43",
+            "review_text": "In from of out of town. Great food, beer, and staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURob08tRVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURob08tRVNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDhoO-ESg%7CCgwIuvrvnwYQwLK1wAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677458746,
+            "review_datetime_utc": "02/27/2023 00:45:46",
+            "review_text": "Amazing pizza and beer"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoMmNDWE5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoMmNDWE5REAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICh2cCXNQ%7CCgwIisa6nwYQgOXsrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676583690,
+            "review_datetime_utc": "02/16/2023 21:41:30",
+            "review_text": "They have their own beer and the food is great. Really cool spot, perfect for a rainy night when the patios are closed"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNodktmZFFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNodktmZFFBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIChvKfdQA%7CCgsIi5KMnwYQ0InoWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675823371,
+            "review_datetime_utc": "02/08/2023 02:29:31",
+            "review_text": "Excelentes opciones en  cervezas artesanales  y pizzas estilo Detroit"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoNUlISkh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoNUlISkh3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICh5IHJHw%7CCgwIz-eAnwYQwIi0xQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675637711,
+            "review_datetime_utc": "02/05/2023 22:55:11",
+            "review_text": "Pizza rolls (\"I can't wait\") were delicious, as were the various brews on tap. Nice atmosphere with a variety of seating. Market downstairs is a nice compliment for grab and go."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoNUo3MXlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoNUo3MXlBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICh5J71yAE%7CCgwIl-KAnwYQqI3xrgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675637015,
+            "review_datetime_utc": "02/05/2023 22:43:35",
+            "review_text": "This place is freaking amazing. I love it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCajZiMFZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCajZiMFZREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBj6b0VQ%7CCgwI3fHkngYQyN32mQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1675180253,
+            "review_datetime_utc": "01/31/2023 15:50:53",
+            "review_text": "Great beer selection and the pizza was good.  It's a small place though and definitely not family friendly like most breweries are."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCcTdmX0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCcTdmX0t3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBq7f_Kw%7CCgwI5vPXngYQsMX_3wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674967526,
+            "review_datetime_utc": "01/29/2023 04:45:26",
+            "review_text": "Always an amazing experience. The environment, food, drinks, staff--always top notch. Thank you for your excellence!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCOFk3R1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCOFk3R1hREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDB8Y7GXQ%7CCgwImOe0ngYQyKG73QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1674392472,
+            "review_datetime_utc": "01/22/2023 13:01:12",
+            "review_text": "Food and drinks are delicious staff has been a hit or miss ... also parking is very hard to find and this business does NOT validate parking garage."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCNGNQbW9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCNGNQbW9nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDB4cPmogE%7CCgwI8MewngYQiPTHuwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674322928,
+            "review_datetime_utc": "01/21/2023 17:42:08",
+            "review_text": "Super cool place. Great beer and food. Awesome staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCdnV1aUpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCdnV1aUpBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBvuuiJA%7CCgsIpJ6rngYQiKz1EA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674235684,
+            "review_datetime_utc": "01/20/2023 17:28:04",
+            "review_text": "Great food, great drinks. Love coming here for a beer and pizza after work."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCdnNMUkNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCdnNMUkNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBvsLRCg%7CCgwIgeKqngYQgIel3AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674227969,
+            "review_datetime_utc": "01/20/2023 15:19:29",
+            "review_text": "I have loved salud for many years through many changes. While I miss the old kitchen menu (the chili was dope AF), this Detroit style pizza is phenomenal and probably the best of this kind in CLT! (Detroit style pizza is only available on certain days of the week)\nStop in for some of the best beers in CLT, brewed in house (or nearby), really good food and a chill vibe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCbHAzaldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCbHAzaldBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBlp3jWA%7CCgwI_eagngYQwJenngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674064765,
+            "review_datetime_utc": "01/18/2023 17:59:25",
+            "review_text": "Cool spot. Great breakfast crunchwraps and seems like a wide variety of beer. Will have to come back and try sometime!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCLXJhcER3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCLXJhcER3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDB-rapDw%7CCgsI3KSbngYQ-ODsPA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673974364,
+            "review_datetime_utc": "01/17/2023 16:52:44",
+            "review_text": "My favorite bar in the queen city. Two different vibes up stair and downstairs. Great craft beer, good music, nice employee,  great vibes, 10/10 would recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCOHV6dWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCOHV6dWV3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDB8uzuew%7CCgwIqqqTngYQsJ60qQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673844010,
+            "review_datetime_utc": "01/16/2023 04:40:10",
+            "review_text": "This place is great.  Quality pizza, great IPA selections, interesting vibes."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCc3JtNVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCc3JtNVdBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDBsrm5WA%7CCgwIvL-SngYQoIap-gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673830332,
+            "review_datetime_utc": "01/16/2023 00:52:12",
+            "review_text": "Cheers "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCNzktNVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCNzktNVh3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICB79-5Xw%7CCgwIla7onQYQyMW_qwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673139989,
+            "review_datetime_utc": "01/08/2023 01:06:29",
+            "review_text": "Words can't express how amazing and low key this hidden treasure is. It's definitely a VIBE!!!! WE LOVE IT!!! Excellent beer & wine selections, lots of seating-indoor & outside, well lit, diverse music, culture & food. Parking is a challenge but once you find your way there it's a lovely NODA kick back. SALUD"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCemJlZjJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCemJlZjJ3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICBzbef2wE%7CCgwIh5zGnQYQuPbP4wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672580615,
+            "review_datetime_utc": "01/01/2023 13:43:35",
+            "review_text": "Super cool place, really good pizzas and beer!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCM3NmMWlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCM3NmMWlRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICB3sf1iQE%7CCgwI9fKonQYQ-Kj41wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672100213,
+            "review_datetime_utc": "12/27/2022 00:16:53",
+            "review_text": "This place is such a vibe. Love it, it's relaxed feel and fun. The beer is great and wine selection is good too.\nPs. They have the cutest little chairs near the sofa area if you have a small child."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHenFlUHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHenFlUHJRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICGzqePrQE%7CCgwItY7vnAYQ0O-avQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671153461,
+            "review_datetime_utc": "12/16/2022 01:17:41",
+            "review_text": "My favorite place to visit in Charlotte. Amazing beer selection and absolutely fantastic pizzas. Get the Detroit-style if you're there Tues/Wed, otherwise the elite pizza is a must."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCa0ltSUlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCa0ltSUlnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICBkImIIg%7CCgsI5MXonAYQsIL1VA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671045860,
+            "review_datetime_utc": "12/14/2022 19:24:20",
+            "review_text": "Loved Xmas party"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtN2VXZERnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtN2VXZERnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID-7eWdDg%7CCgwIjfu-nAYQ2P7noAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670364557,
+            "review_datetime_utc": "12/06/2022 22:09:17",
+            "review_text": "We went with some friends to have beers and catch up. Great selections, service, and atmosphere. Will return!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtMmJpWjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtMmJpWjVRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID-2biZ5QE%7CCgwIr86vnAYQ6Lj1lgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670113071,
+            "review_datetime_utc": "12/04/2022 00:17:51",
+            "review_text": "Obviously they sell beer but wished they would sell others but even their beer and micheladas are amazing. Music/vibes are great."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtbUozeVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtbUozeVhBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID-mJ3yXA%7CCgwIv_3omwYQsJfDhgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668955839,
+            "review_datetime_utc": "11/20/2022 14:50:39",
+            "review_text": "Don't be dumb bring your friends."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtd183SERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtd183SERREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC-w_7HDQ%7CCgwI_9q7mwYQoJirpwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668214143,
+            "review_datetime_utc": "11/12/2022 00:49:03",
+            "review_text": "Killer vibes, interesting layout, fun time"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtdWNMLUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtdWNMLUx3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC-ucL-Lw%7CCgsI_t6nmwYQgNqqZQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667886974,
+            "review_datetime_utc": "11/08/2022 05:56:14",
+            "review_text": "My first time here was lovely. Came here to just work & have some good food. Service & food was wonderful !"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtMGZfcnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtMGZfcnJRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC-0f_rrQE%7CCgwI-L-fmwYQkNOeqgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667751928,
+            "review_datetime_utc": "11/06/2022 16:25:28",
+            "review_text": "Was in there 10/29/2022 and have to say that it's very welcoming. By the time my girlfriend and I got there, only the upstairs was still open and we just stayed for drinks. Lots of beer options and service is very friendly. It wasn't too busy for a Saturday, but they also close relatively early compared to other bars in the area. I highly recommend you go there and try it out"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtMFBfLUxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtMFBfLUxREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC-0P_-LQ%7CCgwIiaDemgYQ4PnswgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1666682889,
+            "review_datetime_utc": "10/25/2022 07:28:09",
+            "review_text": "The food was god-awful!! We had ordered some type of pizza and it was so spicy hot with chili peppers or something it was inedible. Also got the raspberry chipotle wings which would have been great if they weren't so spicy!! They had a good wine and beer selection. I never go there again though."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXak1ibFVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXak1ibFVBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICWjMblUA%7CCgwI6Z_VmgYQiKapoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666535401,
+            "review_datetime_utc": "10/23/2022 14:30:01",
+            "review_text": "Get the biali in the morning! Absolutely terrific!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlX1pHWjRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlX1pHWjRBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDe_ZGZ4AE%7CCgwIsM62mgYQsOWw3QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666033456,
+            "review_datetime_utc": "10/17/2022 19:04:16",
+            "review_text": "Great small brewery with interesting beers in a nice sized second floor space. Beer is quite good especially the range of sours."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURhdUlldGpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhdUlldGpBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDauIetjAE%7CCgsI3ZmrmgYQ0LOCJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665846493,
+            "review_datetime_utc": "10/15/2022 15:08:13",
+            "review_text": "Great food and beer, pepperoni rolls are my favorite. Updated breakfast menu is great too!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlLWF5MHNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlLWF5MHNBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDe-ay0sAE%7CCgwIw_ylmgYQ4LyR9QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665760835,
+            "review_datetime_utc": "10/14/2022 15:20:35",
+            "review_text": "Good selection of different styles of beer. Great spot if you like sours. Their pizza is really good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlNmVIMGhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlNmVIMGhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDe6eH0hgE%7CCgwIgPahmgYQkOi87gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665694464,
+            "review_datetime_utc": "10/13/2022 20:54:24",
+            "review_text": "Such a cool vibe at this place! Great beers, amazing food good crowd. What more could you ask for?? As an out of towner just visiting I felt very welcome by the staff and patrons. A must visit if you like pizza and beer in NoDa."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURld2ZIcUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURld2ZIcUd3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDewfHqGw%7CCgwIqJGYmgYQoM2z0AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665534120,
+            "review_datetime_utc": "10/12/2022 00:22:00",
+            "review_text": "This place is awesome. I had the Heirloom sandwich which was delicious, the beers were great and the servers were so friendly. A must if you're in NoDa."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlN1BDa0tREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlN1BDa0tREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDe7PCkKQ%7CCgsIibXwmQYQqKODcg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664883337,
+            "review_datetime_utc": "10/04/2022 11:35:37",
+            "review_text": "This is such a great, eclectic place where you can enjoy yummy food, coffee, and beer. Personally I don't like beer but the sour I had there was absolutely incredible. I definitely will be returning!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURlNUpMUzVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURlNUpMUzVRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDe5JLS5QE%7CCgwI8qnnmQYQkMXR4AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664734450,
+            "review_datetime_utc": "10/02/2022 18:14:10",
+            "review_text": "This was our first time visiting this fun place with a great and diverse crowd. We sat at the bar and Grace waited on us. She was awesome.. So knowledgeable with the beer and wine selections. Our food was delicious and me, being a wine drinker, loved the Spanish wine Grace suggested.\n\nI had the Margharita pizza and my friend had the Meatball sandwich with the homemade chips. Both were wonderful!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlcjg3amtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlcjg3amtnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICer87jkgE%7CCgwI3b7LmQYQsMW-ywI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664278365,
+            "review_datetime_utc": "09/27/2022 11:32:45",
+            "review_text": "Awesome spot"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlcDRDWkRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlcDRDWkRBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICep4CZDA%7CCgwI5KLCmQYQqOKdjAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1664127332,
+            "review_datetime_utc": "09/25/2022 17:35:32",
+            "review_text": "Love this spot!! Hadn't been since I moved to CLT 3 years ago and forgot how much of a gem it is! Chicken wings are delicious and vibe is chill. Great place for beer, wine and pizza in NoDa!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlMjZmMXVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlMjZmMXVRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICe26f1uQE%7CCgwIjta9mQYQ2PiZkQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664051982,
+            "review_datetime_utc": "09/24/2022 20:39:42",
+            "review_text": "A nice cozy upbeat place to enjoy a quick to go or sit down relaxed Breakfast paired with a coffee or tea. I so love the art work of artists I grew up listening to as a teenager and now. It added a good refresh vibe while I ate my breakfast this morning.\nI had the Bialy bacon and cheese sandwich that was full of a thick crust flavor from the butter and salt option I chose. It was so filling  I had some left over. My salted Carmel Latte was sweet and gave me the energy I needed to jump started my Saturday.\nThe staff was very helpful explaining the sandwich/menu to me as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbWJUVEhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbWJUVEhBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICembTTHA%7CCgsIobKZmQYQkKvgUw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1663457569,
+            "review_datetime_utc": "09/17/2022 23:32:49",
+            "review_text": "Pizza was absolutely amazing BUT all of our food came out Cold which was kind of disappointing"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlbEt2V3l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbEt2V3l3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICelKvWywE%7CCgwIi8ffmAYQsIDVyAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662509963,
+            "review_datetime_utc": "09/07/2022 00:19:23",
+            "review_text": "Hidden up a long set of stairs, this coffee shop/bar/beer spot has great vibes. A good spot to work midday or chill for a weekend afternoon.\nAlways greeted promptly and service is great!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1XzhXaW1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1XzhXaW1nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDu_8WimgE%7CCgwIwqnJmAYQ-POhvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662145730,
+            "review_datetime_utc": "09/02/2022 19:08:50",
+            "review_text": "This was the perfect spot to end a long day of touring the Charlotte area. I have to mention that this place was recommended to us by at least 3 people while we were out and about different places. It did not disappoint! Beer was good and the pizza we had was phenomenal. Very friendly service as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1djhIYi1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1djhIYi1RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDuv8Hb-QE%7CCgwI07HImAYQ4NC5nQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1662130387,
+            "review_datetime_utc": "09/02/2022 14:53:07",
+            "review_text": "The coffee here is great! Nina (long, dark hair) was knowledgeable and kind, despite it being seemingly busier than usual. Incredible atmosphere whether you need somewhere to wfh or stop by for a quick drink."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1aWZ5aDJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1aWZ5aDJ3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDuifyh2wE%7CCgwIpdWTmAYQ0Mmd2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1661266597,
+            "review_datetime_utc": "08/23/2022 14:56:37",
+            "review_text": "The  Egg and cheese sandwich is superb "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR1bk5lMm1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR1bk5lMm1BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDunNe2mAE%7CCgwIg-XqlwYQ6P3gvwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660596867,
+            "review_datetime_utc": "08/15/2022 20:54:27",
+            "review_text": "A pleasant surprise.\nWent here just for beer and I was happy with the vast selection. I tried 3 different ones and they were all great.\nThen, we ordered pizza and I wasn't expecting anything special. However, it was very good and the taste was amazing.\nFinally, the place is a cool spot with a nice atmosphere. I liked it very much and I for sure would come back"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR1c05Qa0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1c05Qa0t3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDusNPkKw%7CCgwI-t7UlwYQ2OCr5wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660235642,
+            "review_datetime_utc": "08/11/2022 16:34:02",
+            "review_text": "Food and beer selection are awesome!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1NjUtaV9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1NjUtaV9BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICu65-i_AE%7CCgwIxJ67lwYQ2Jy6sgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659817796,
+            "review_datetime_utc": "08/06/2022 20:29:56",
+            "review_text": "Went in for some beers and shuffleboard . Played shuffleboard and drank beer. Really enjoyed our time and the different beer options"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1ODc2Q2dBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1ODc2Q2dBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICu876CgAE%7CCgwI54C3lwYQ2IP4qwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659748455,
+            "review_datetime_utc": "08/06/2022 01:14:15",
+            "review_text": "Great experience. Recommend to check it out in NoDa."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1b19UVjFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1b19UVjFnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICuo_TV1gE%7CCgsIoOSxlwYQ2PitPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1659662880,
+            "review_datetime_utc": "08/05/2022 01:28:00",
+            "review_text": "A unique little spot. We were confused where to sit and where to order food from, but overall very cool place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1dXZlRzlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1dXZlRzlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICuuveG9gE%7CCgwI-aOAlwYQ8KPG0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658851833,
+            "review_datetime_utc": "07/26/2022 16:10:33",
+            "review_text": "Great setup, beer was awesome and food was super good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN1NHBQSXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1NHBQSXBBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICu4pPIpAE%7CCgwIi9T1lgYQqPbUrwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1658677771,
+            "review_datetime_utc": "07/24/2022 15:49:31",
+            "review_text": "Great location for dinner and drinks, we really enjoyed the DJ playing good tunes and the beer was top notch! I definitely want to come back and try out more beers."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPOWVEYy1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPOWVEYy1RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDO9eDc-QE%7CCgwIhvmtlgYQiLLblQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657502854,
+            "review_datetime_utc": "07/11/2022 01:27:34",
+            "review_text": "Had a great time at this bar! the staff were attentive and the vibe was unmatched!!! will be going back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPdGRQNzFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPdGRQNzFRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDOtdP71QE%7CCgwI09StlgYQiMbUowE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657498195,
+            "review_datetime_utc": "07/11/2022 00:09:55",
+            "review_text": "Delicious beers & pizza. Nice variety on tap along with a tasty menu of pies.\nA variety of seating arrangements. Couple of TVs with sports on.\n\nWish we had more time for another round.\n\nVery chill setting up the stairs."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPc01yQzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPc01yQzhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDOsMrC8gE%7CCgwI97vclQYQqICb2gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656167927,
+            "review_datetime_utc": "06/25/2022 14:38:47",
+            "review_text": "Always such a great time! Upstairs or downstairs! Lots of sour beers! \n\nLiterally can come in the morning to one vibe and then later to another.\n\nOh and whoever decorated....mf A+!!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPbDduZXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbDduZXlRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICOl7neyQE%7CCgsI_v7JlQYQ-L2rHg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655865214,
+            "review_datetime_utc": "06/22/2022 02:33:34",
+            "review_text": "Great coffee, friendly staff and fun shuffleboard"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPNS1xd293RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNS1xd293RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICO5-qwowE%7CCgwIkLDIlQYQ6PjM3wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1655838736,
+            "review_datetime_utc": "06/21/2022 19:12:16",
+            "review_text": "A must place to checkout if you are craving pizza!! Lot of options and none dispponts.. we had humble tumble, return of the g and cauliflower appetizer which was vegan and all of them were great!! It also has a very good shuffleboard to kill some time with your friends!! Don't miss this spot!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPazh6VlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPazh6VlNBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICOk8zVSA%7CCgwI4MS4lQYQ0Pzf5wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1655579232,
+            "review_datetime_utc": "06/18/2022 19:07:12",
+            "review_text": "We love Salud! The interior has great vibes, we love coming here to play board/card games on their big tables, and they always have really unique and interesting beers on draft, like a PB&J sour, so it's fun to get a flight.\n\nGiving it four stars (rather than 5) for two main detractors:\n1. The food is unfortunately not great. I've given the food a solid like 3 or 4 tries and just have never enjoyed it. It just always feel really overwhelmed with toppings, and the flavor is never amazing. This might be a personal preference, but I prefer smaller diced toppings so you get a little bit of everything with each bite. Salud's pizza's all have thick cut toppings so you can only get one thing each bite, and you never really taste the cheese or sauce.\n\n2. I just wish they rotated their draft beers a little more often!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNPaUxuTTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPaUxuTTB3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICOiLnM0wE%7CCgsIqujVlAYQuJXbUQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1653961770,
+            "review_datetime_utc": "05/31/2022 01:49:30",
+            "review_text": "Cool drinks.  Nuanced pizzas."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyN2NydVVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyN2NydVVnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID27cruUg%7CCgsIurynlAYQkIO5Hw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653202490,
+            "review_datetime_utc": "05/22/2022 06:54:50",
+            "review_text": "Awesome Atmosphere!! Great place to work!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQycmZtb01BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQycmZtb01BEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID2rfmoMA%7CCgwIj7CmlAYQuJCEsQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653184527,
+            "review_datetime_utc": "05/22/2022 01:55:27",
+            "review_text": "Delicious food and beer with amazing service! So glad I stopped by!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyOGEzVmZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyOGEzVmZnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID28a3Vfg%7CCgwI_-iQlAYQ0MiztgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652831359,
+            "review_datetime_utc": "05/17/2022 23:49:19",
+            "review_text": "Went for lunch with the work team. Food was yummy and the service was excellent."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyX1AtdHFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyX1AtdHFRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID2_P-tqQE%7CCgwI4I3lkwYQ-OX0lwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652115168,
+            "review_datetime_utc": "05/09/2022 16:52:48",
+            "review_text": "Awesome little spot for coffee and doing some work, or going to grab a beer at night. Try not to park in the deck right there it is pretty pricey."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMyOS15N0FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyOS15N0FREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC29-y7AQ%7CCgwIv_K2kwYQ4Mbb9wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651358015,
+            "review_datetime_utc": "04/30/2022 22:33:35",
+            "review_text": "A great place for a variety of beers.  Friendly service."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMycmZYRi1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMycmZYRi1nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC2rfXF-gE%7CCgsIqNChkwYQkO_kWA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651009576,
+            "review_datetime_utc": "04/26/2022 21:46:16",
+            "review_text": "Try their players ball! Amazing meatball sammich!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMya0luckZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMya0luckZBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC2kInrFA%7CCgwIuqTJkgYQoNG-xAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649562170,
+            "review_datetime_utc": "04/10/2022 03:42:50",
+            "review_text": "Very good service, friendly staff, delicious beers and good food!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMya0pLR0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMya0pLR0Z3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC2kJKGFw%7CCgsIuO7IkgYQoMi5IA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649555256,
+            "review_datetime_utc": "04/10/2022 01:47:36",
+            "review_text": "Great time. First time here, needed more air or ventilation for the amount of folks there dancing Latino music. They had salsa class for bout a full hour."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMya0xUZk93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMya0xUZk93EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC2kLTfOw%7CCgwIzNnIkgYQoPSnpgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649552588,
+            "review_datetime_utc": "04/10/2022 01:03:08",
+            "review_text": "The best spot to chill and have a beer with some friends! I recommend the lounge upstairs for the best experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXc2V1TmtBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXc2V1TmtBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDWseuNkAE%7CCgwIi86BkgYQoJevigE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648387851,
+            "review_datetime_utc": "03/27/2022 13:30:51",
+            "review_text": "Best beer bar in America 3 years running"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXZ2VyNkRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZ2VyNkRREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDWger6DQ%7CCgwIp_T4kQYQ0Ji6uQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1648245287,
+            "review_datetime_utc": "03/25/2022 21:54:47",
+            "review_text": "One of the best bottle shops in Charlotte, and in America. The selection might not be massive, but it's incredible what you can find here and nowhere else."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXdXVtRGhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXdXVtRGhBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDWuumDhAE%7CCgsI2qfkkQYQgPDDdg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647907802,
+            "review_datetime_utc": "03/22/2022 00:10:02",
+            "review_text": "Great beer options. Great food. Love the atmosphere. The customer service isn't overly customer servicey (which I like). They are efficient and quick. Good place to hang out. Great coffee. It's a really interesting atmosphere with like being able to get a coffee and a beer. The panettone beer is delicious. Wings are so crispy. The claimin true pizza was so so so good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXdEt2OWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXdEt2OWFnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDWtKv9ag%7CCgwI_pTIkQYQ8N3VkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647446654,
+            "review_datetime_utc": "03/16/2022 16:04:14",
+            "review_text": "One of my favorite breweries in Charlotte. They have on point sours as well as stouts/porters.  The atmosphere is a chill vibe with options for non alcoholic drinks for more diverse crowd. I got one of their pizzas featuring potatoes and truffle oil. Interesting and different. Staff is friendly and seems well versed in the menu."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXel83NUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXel83NUJREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICWz_75BQ%7CCgsI7balkQYQ6PGCOQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646877549,
+            "review_datetime_utc": "03/10/2022 01:59:09",
+            "review_text": "Pizza is great and so are the ciders"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVME0tWnJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVME0tWnJRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDU0M-ZrQE%7CCgwIrcKakQYQkOLIxAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646698797,
+            "review_datetime_utc": "03/08/2022 00:19:57",
+            "review_text": "Always great beer and the pizza is delicious. Great place to hang out with friends."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXeGJYbHlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXeGJYbHlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICWxbXlygE%7CCgwI5JX_kAYQoKih6wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1646250724,
+            "review_datetime_utc": "03/02/2022 19:52:04",
+            "review_text": "Atmosphere was good and cheap drinks. Pizza was tasty as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXck4zVmZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXck4zVmZnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICWrN3Vfg%7CCgwI2pnHkAYQ4K7U_AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645333722,
+            "review_datetime_utc": "02/20/2022 05:08:42",
+            "review_text": "Love this place. Amazing vibe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXbEoyYkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXbEoyYkhnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICWlJ2bHg%7CCgwI0LjAkAYQqLiMugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645222992,
+            "review_datetime_utc": "02/18/2022 22:23:12",
+            "review_text": "Great selection !!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURtejZIY2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtejZIY2RBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDmz6HcdA%7CCgwIvc-hkAYQ-ILFiAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1644718013,
+            "review_datetime_utc": "02/13/2022 02:06:53",
+            "review_text": "Amazing beer selection in the shop downstairs, delicious beer/food and good vibes upstairs"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtb3ZMMm1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtb3ZMMm1BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDmovL2mAE%7CCgwIgL6zjwYQgMru2AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1642913536,
+            "review_datetime_utc": "01/23/2022 04:52:16",
+            "review_text": "Nice space upstairs. Beer selection was good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtNTliZC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtNTliZC1BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICm59bd-AE%7CCgsI7KH4jgYQoNmYNw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641943276,
+            "review_datetime_utc": "01/11/2022 23:21:16",
+            "review_text": "We came here for the Jon G's collab (see the pizza photo), and while it was quite good, I don't think it lived up to *all* the hype. I think next time we would just choose a regular pizza, or pick something else off the menu as it was quite pricey. The beers were good, though, and I love that they collab on their brews!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtMjlyQmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtMjlyQmtRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICm29rBkQE%7CCgsI1ZDxjgYQiJbEBw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641826389,
+            "review_datetime_utc": "01/10/2022 14:53:09",
+            "review_text": "Went for a morning coffee and breakfast sandwich! Everything was delicious! One heads up though is to get there early because they do run out! We had to get one sando and one slice of quiche!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtbmJieGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtbmJieGRBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICmnbbxdA%7CCgwI-6bbjgYQ8KO62gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641468794,
+            "review_datetime_utc": "01/06/2022 11:33:14",
+            "review_text": "Great space, fantastic food."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtanMzWDZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtanMzWDZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICmjs3X6gE%7CCgwI_vGsjgYQ0LjJ6AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640708350,
+            "review_datetime_utc": "12/28/2021 16:19:10",
+            "review_text": "Love the atmosphere!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtMW9YYlp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtMW9YYlp3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICm1oXbZw%7CCgwI8rCpjgYQqPuMgQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1640650866,
+            "review_datetime_utc": "12/28/2021 00:21:06",
+            "review_text": "Super long wait, but the beer was good! Left before we ordered food bc of the wait."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNteHJHdjZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNteHJHdjZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICmxrGv6gE%7CCgwIirWkjgYQgK-G1AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640569480,
+            "review_datetime_utc": "12/27/2021 01:44:40",
+            "review_text": "Great beer and great food! Atmosphere has nothing but good vibes! You need to do this place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVeUx1NU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVeUx1NU9BEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICUyLu5OA%7CCgsIgomkjgYQkKDPTA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640563842,
+            "review_datetime_utc": "12/27/2021 00:10:42",
+            "review_text": "Great environment to enjoy a bountiful selection of great beers. Plenty of bar type seating, table seating, and comfortable lounge chair/couch seating. Awesome bottle shop below the taproom. Located in NODA, a nice little downtown setting."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtcktHRGdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtcktHRGdRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICmrKGDgQE%7CCgwI35CEjgYQoNSP-gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1640040543,
+            "review_datetime_utc": "12/20/2021 22:49:03",
+            "review_text": "Serving up some of the most innovative craft brews in Charlotte, Salud has been my go-to hangout spot in Noda for the last few years.\n\nAnchored upstairs from their beer shop, this lounge-style brewpub makes for a chill atmosphere to meet some friends or take a date.\n\nThe food has been excellent every time, and I recommend their flatbread pizzas.\n\nAlso, don't be shy about asking the bartenders for the Shuffleboard set, no one ever is using it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNtME9Qd2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtME9Qd2hBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICm0OPwhAE%7CCgwIueDpjQYQwLCPuQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1639608377,
+            "review_datetime_utc": "12/15/2021 22:46:17",
+            "review_text": "Great bottle shop in Charlotte!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHeDgyWUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHeDgyWUNREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDGx82YCQ%7CCgwI8cfSjQYQoI-BsAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1639228401,
+            "review_datetime_utc": "12/11/2021 13:13:21",
+            "review_text": "I love the Salud beer shop and I really like Salud Cerveceria too. They have such an amazing selection of beers. I'm a huge fan of milkshakes and sours and they have a lot of options. The classic Buffalo wings were delicious. Saucy and crunchy and their homemade blue cheese sauce is outrageous. We wanted to try one of the JonG specialty pizzas. It took almost an hour. Apparently they dropped it when it was coming out and didn't charge us, but it was a very long wait. I know the pizza is not so great in Charlotte but it was pretty good. The crust was crunchy and the toppings were great but I had a higher expectation. We had extra blue cheese sauce from the wings and dipped the crust in it - that was really really good. Highly recommend doing that. Will definitely go back. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHbjdDb1lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHbjdDb1lBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICGn7CoYA%7CCgwIyNO_jAYQqP6d-AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1636821448,
+            "review_datetime_utc": "11/13/2021 16:37:28",
+            "review_text": "Amazing beer selection"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHLV96N3V3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHLV96N3V3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICG-_z7uwE%7CCgsIrqOwjAYQ2KnTRw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1636569517,
+            "review_datetime_utc": "11/10/2021 18:38:37",
+            "review_text": "I came here for breakfast and it's all fantastic, their cortado was incredible as well as their breakfast bagels (it's just weird that they called bagels a different word)"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHMHRtbTlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHMHRtbTlnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICG0tmm9gE%7CCgwIuP7YiwYQqPW0mwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1635139384,
+            "review_datetime_utc": "10/25/2021 05:23:04",
+            "review_text": "Really cool spot, just a few people there working and drinking coffee. a really nice menu."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHcU5LUG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHcU5LUG13RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICGqNKPmwE%7CCgwImYW4iwYQ6ICWqwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1634599577,
+            "review_datetime_utc": "10/18/2021 23:26:17",
+            "review_text": "Good selection of beer, nice outdoor seating"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHZ05tWXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHZ05tWXZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICGgNmYvgE%7CCgwI4v-riwYQ2MK0jgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1634402274,
+            "review_datetime_utc": "10/16/2021 16:37:54",
+            "review_text": "Very cool vibe. Attentive service and amazing beer. Great place for an afternoon beer or an evening out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHZ003T1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHZ003T1VBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICGgM7OUA%7CCgsI7uyriwYQsIi2FQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1634399854,
+            "review_datetime_utc": "10/16/2021 15:57:34",
+            "review_text": "Very cool place to sample beers and eat a specialty pizza!  wouild recommend a visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ2Ni1uSV9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2Ni1uSV9BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID66-nI_AE%7CCgwIuZ2TiwYQoK2r9QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1633996473,
+            "review_datetime_utc": "10/11/2021 23:54:33",
+            "review_text": "Amazing draft and 2 go selection. food's even better!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2aU1ySmRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2aU1ySmRBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID6iMrJdA%7CCgwI9sWaigYQsLvsoQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1632019190,
+            "review_datetime_utc": "09/19/2021 02:39:50",
+            "review_text": "Great beer, amazing bottle shop and the pizza is perfect for a quick bite."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ2b05xaFBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2b05xaFBnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID6oNqhPg%7CCgsI5OOTigYQ0NioMA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1631908324,
+            "review_datetime_utc": "09/17/2021 19:52:04",
+            "review_text": "This is definitely a new favorite spot! Great beers, beautiful facility, and delicious food!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2djhMQ2RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2djhMQ2RREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC6v8LCdQ%7CCgwIy8qPigYQkP-9_AE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1631839563,
+            "review_datetime_utc": "09/17/2021 00:46:03",
+            "review_text": "We always have lots of fun here. They offer very unique beers with unusual ingredients. The place has a good selection of games."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2Z2JpUTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2Z2JpUTdRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC6gbiQ7QE%7CCgwImNfViQYQiJ20ywI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1630890904,
+            "review_datetime_utc": "09/06/2021 01:15:04",
+            "review_text": "Amazing coffee with cute little seating areas. They also have local beer on draft."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2NXV2cktnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2NXV2cktnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC65uvrKg%7CCgwIntHLiQYQ0LW17wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1630726302,
+            "review_datetime_utc": "09/04/2021 03:31:42",
+            "review_text": "Es impresionante este lugar!!! Siempre voy y vivo una experiential bonita cada vez!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM2OE4yUjVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2OE4yUjVRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC68N2R5QE%7CCgsI2rKqiQYQ-MTySw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1630181722,
+            "review_datetime_utc": "08/28/2021 20:15:22",
+            "review_text": "Salud is just amazing and they keep getting better. Hard-hitting brews!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhMXE3eVp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhMXE3eVp3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDa1q7yZw%7CCgwIyraBiQYQ4MnTqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629510474,
+            "review_datetime_utc": "08/21/2021 01:47:54",
+            "review_text": "Great food.  Better beer.  Very friendly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhOHNIOVB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhOHNIOVB3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDa8sH9Pw%7CCgwIiOPziAYQ0N2IxQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1629286792,
+            "review_datetime_utc": "08/18/2021 11:39:52",
+            "review_text": "Great food, beer, and service. A favorite in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhd0phbEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhd0phbEdBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDawJalGA%7CCgwIxs_UiAYQqNnYnQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1628776390,
+            "review_datetime_utc": "08/12/2021 13:53:10",
+            "review_text": "Just got beers here but liked the vibe and tap list"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNhNThTUGhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhNThTUGhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICa58SPhgE%7CCgwI1rzLiAYQuKvu2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1628626518,
+            "review_datetime_utc": "08/10/2021 20:15:18",
+            "review_text": "This space is incredible. Big City feel here in the QC."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNhdEtqQ2RnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhdEtqQ2RnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICatKjCdg%7CCgwIkfHthwYQ8PTkwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1627093137,
+            "review_datetime_utc": "07/24/2021 02:18:57",
+            "review_text": "Great place for pizza and beer"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxMTcyWFdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxMTcyWFdBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDq172XWA%7CCgsI0ODOhwYQ8IuwYw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1626583120,
+            "review_datetime_utc": "07/18/2021 04:38:40",
+            "review_text": "Bottle shop + amazing brewery + delicious pizza + classic video games = Salud"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxd2NLZVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxd2NLZVNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDqwcKeSg%7CCgwI2punhwYQ6M3p6AI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1625935322,
+            "review_datetime_utc": "07/10/2021 16:42:02",
+            "review_text": "Great vibe and beer.  Service was good. Rocking shuffleboard table!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxMHQ3X0ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxMHQ3X0ZBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDq0t7_FA%7CCgwI9I-DhwYQ2PPMyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625343988,
+            "review_datetime_utc": "07/03/2021 20:26:28",
+            "review_text": "Dopest place. We totally missed the door coming in. It blends in with all the art! Deron was very knowledgeable and the orange wine and the spottieottidopalicious(so) yummy. I gulped the orange wine down so quick lol. I definitely recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxek0tWUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxek0tWUdREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDqzM-YGQ%7CCgsIyun0hgYQ4JfnHQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625109706,
+            "review_datetime_utc": "07/01/2021 03:21:46",
+            "review_text": "Great staff, good beer good food"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURxaUp1ckFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxaUp1ckFnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDqiJurAg%7CCgwI_fXdhgYQ2J_AhgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624734461,
+            "review_datetime_utc": "06/26/2021 19:07:41",
+            "review_text": "Easily the best meatballs I've ever had."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxMjZtWHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxMjZtWHNRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICq26mXsQE%7CCgwInNC5hgYQ6LLukwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1624139804,
+            "review_datetime_utc": "06/19/2021 21:56:44",
+            "review_text": "Delicious beer & pizza. They have a good wine list too. Looking forward to trying their desserts!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNxaWV1ZHJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxaWV1ZHJ3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICqieudrwE%7CCgsI3-SJhgYQ6MThSA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1623355999,
+            "review_datetime_utc": "06/10/2021 20:13:19",
+            "review_text": "chill vibe. dig the hip hop themed art. tasty beer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxN3B1MEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxN3B1MEZREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICq7pu0FQ%7CCgsItun4hQYQkNzYbA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1623078070,
+            "review_datetime_utc": "06/07/2021 15:01:10",
+            "review_text": "unique beers and the pizzas are dank, just don't order the basil drizzle. sounds delicious but they soaked that like it won the Kid's Choice Awards."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxenBEb2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxenBEb2JBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICqzpDobA%7CCgwIscr0hQYQgJS_xwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623008561,
+            "review_datetime_utc": "06/06/2021 19:42:41",
+            "review_text": "Best beer selection! Great atmosphere and always phenomenal service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZNjctNFNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZNjctNFNBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICY67-4SA%7CCgwI3LGkhQYQsP7R6wE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1621694684,
+            "review_datetime_utc": "05/22/2021 14:44:44",
+            "review_text": "Nice quiet beer spot. Plenty of local brews and room to enjoy them."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLXzhfdUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLXzhfdUtREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDK_8_uKQ%7CCgwIgqikhQYQgNG_1gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621693442,
+            "review_datetime_utc": "05/22/2021 14:24:02",
+            "review_text": "This is my favorite spot for a coffee and nice atmosphere or a sour beer. I make sure to take any visiting friends when I get the chance!\nBeware stairs on entry tho!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLcDhfc2JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLcDhfc2JnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDKp8_sbg%7CCgwI0LKQhQYQwJK_3AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621367120,
+            "review_datetime_utc": "05/18/2021 19:45:20",
+            "review_text": "Food is always on point and they have some of the best sours around. This is always a solid place to hit up for a good time in NODA."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLM2ZyX0FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLM2ZyX0FnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDK3fr_Ag%7CCgwI352KhQYQqKe2oAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1621266143,
+            "review_datetime_utc": "05/17/2021 15:42:23",
+            "review_text": "The food is good, but I really wish they opened at 8am so I could get some coffee there before work."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLcmVxblFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLcmVxblFREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDKreqnQQ%7CCgwI7suFhQYQgP-qzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1621190126,
+            "review_datetime_utc": "05/16/2021 18:35:26",
+            "review_text": "Truffle pizza and sour beer heaven"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLcklxSzBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLcklxSzBnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDKrIqK0gE%7CCgwIy6m9hAYQoKCEuwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1620006091,
+            "review_datetime_utc": "05/03/2021 01:41:31",
+            "review_text": "Decided to try the pizza. Already knew the beer was going to be good. Ordered the Sothernplayalistic pizza and Return of the G pizza. Both were excellent. Very light weight thin crust. The combination of all the cheese that were used on the Southerplayalistic were phenomenal! Return of the G was superb also. The mixture of zucchini, mushrooms and honey took this to another level! The pizzas are 12\". There were 2 of us. We came in hungry and were full when we left!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURLaU5qUHlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLaU5qUHlBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDKiNjPyAE%7CCgwI-LuhhAYQgPqpwAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1619549688,
+            "review_datetime_utc": "04/27/2021 18:54:48",
+            "review_text": "Cute spot in NODA. Loved the furniture and decor. I would thoroughly enjoy coming back with friends or solo (read a book and drink some wine). Weds are $10 wine flights which is something I enjoyed. The staff was extremely knowledgeable about the wine that was being served and seemed passionate about it. Ordered some pizzas which were delicious (although a tad oily).\nThe parking situation in NODA is very limited so be conscientious of that when traveling here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLbWIyZzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLbWIyZzFBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICKmb2g1AE%7CCgwIvt3IgwYQkM6xvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1618095806,
+            "review_datetime_utc": "04/10/2021 23:03:26",
+            "review_text": "Killer spot!  Top 3 in all of Charlotte.  Beer is fantastic and the spot is just as kicking.  Plus a flight in a cigar box, oh hell yeah..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLbWRpa0hBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLbWRpa0hBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICKmdikHA%7CCgwIgOXHgwYQsJLkwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1618080384,
+            "review_datetime_utc": "04/10/2021 18:46:24",
+            "review_text": "Very tasty pizza and brews."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLeHQ3U3dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLeHQ3U3dnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICKxt7SwgE%7CCgwIwNWhgwYQ2PDTxAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1617455808,
+            "review_datetime_utc": "04/03/2021 13:16:48",
+            "review_text": "Good food and cool sitting area "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNLNnMzcm5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLNnMzcm5BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICK6s3rnAE%7CCgwIkpmZgwYQyMDL8AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617317010,
+            "review_datetime_utc": "04/01/2021 22:43:30",
+            "review_text": "NoDa area has amazing art and Salud displays some of it and the beer, coffee and general atmosphere is amazing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5ejdESmJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5ejdESmJBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDyz7DJbA%7CCgwI5M_fggYQkLGu3QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1616373732,
+            "review_datetime_utc": "03/22/2021 00:42:12",
+            "review_text": "Try it and thank me later ..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5eGQ3YnNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5eGQ3YnNRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDyxd7bsQE%7CCgwI4s20ggYQ2PTv3AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615668962,
+            "review_datetime_utc": "03/13/2021 20:56:02",
+            "review_text": "Very chill place, good pizza and beer choices."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5bnIyYzVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5bnIyYzVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDynr2c5gE%7CCgwI7KmZggYQ8J6e0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615221996,
+            "review_datetime_utc": "03/08/2021 16:46:36",
+            "review_text": "Great place to hang out and large enough during the pandemic that its not that difficult to be safe. Really solid food and great beer."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5MXVhdFFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5MXVhdFFREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDy1uatQQ%7CCgwI9aKOggYQ6OHW_QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1615040885,
+            "review_datetime_utc": "03/06/2021 14:28:05",
+            "review_text": "Large and happening place on Saturday afternoon. Long bar area with plenty of servers, games, group and lounge seating areas among many tables. Paid parking in garage next door, friendly service,well crafted beers, several takeout selections in the cooler"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5cHZleUNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5cHZleUNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDypveyCg%7CCgwI3qqKggYQ8Nvg1QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1614976350,
+            "review_datetime_utc": "03/05/2021 20:32:30",
+            "review_text": "Bottle shop downstairs with an amazing brewery/ coffee shop upstairs- what's not to love?"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5Nm96SnFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5Nm96SnFBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDy6ozJqAE%7CCgsIjoD_gQYQuMf4Jg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1614790670,
+            "review_datetime_utc": "03/03/2021 16:57:50",
+            "review_text": "Dope"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR5dU02YWl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5dU02YWl3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDyuM6aiwE%7CCgsIo4zVgQYQsPfTfA%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1614104099,
+            "review_datetime_utc": "02/23/2021 18:14:59",
+            "review_text": "Food is ok...no where that i will HAVE to go back to"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5cGJlam9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5cGJlam9RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICypbejoQE%7CCgsIxpf8gAYQ4LTHXA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1612647366,
+            "review_datetime_utc": "02/06/2021 21:36:06",
+            "review_text": "I'm Colombian, when asked for ID I presented my official national ID, which proves I'm over 30 years old but your bartender and manager denied me service. Everywhere else in Charlotte accepted. Funny that the Latino owned business gave me the worst experience visiting Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5MHF2Rjl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5MHF2Rjl3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICy0qvF9wE%7CCgwIoe7lgAYQ8JTu8QI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1612281633,
+            "review_datetime_utc": "02/02/2021 16:00:33",
+            "review_text": "Nice place to hang out with friends with some beer."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTNXRMTm93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTNXRMTm93RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDS5tLNowE%7CCgwIvvWO_wUQyL2JsAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1608759998,
+            "review_datetime_utc": "12/23/2020 21:46:38",
+            "review_text": "My favorite new spot"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTcXZ1YzRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTcXZ1YzRBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDSqvuc4AE%7CCgsIzeKC_wUQyI-Idg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1608560973,
+            "review_datetime_utc": "12/21/2020 14:29:33",
+            "review_text": "Delicious coffee and food, friendly service, beautiful ambience and decor. My favourite coffee shop in town. Super quiet weekend mornings which are perfect when I want to get some writing done. Also a great place to hang out with friends."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpMnZqY3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpMnZqY3pBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDi2vjczAE%7CCgsI9Iec_gUQ2NqUHw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606878196,
+            "review_datetime_utc": "12/02/2020 03:03:16",
+            "review_text": "Great spot -Andre Boyle"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpaGZfY093EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpaGZfY093EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICihf_cOw%7CCgsI5eWh_QUQqObOGg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604874981,
+            "review_datetime_utc": "11/08/2020 22:36:21",
+            "review_text": "Nice vibe and decor. Friendly and helpful staff."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpbEotVUx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpbEotVUx3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICilJ-ULw%7CCgwIoOPH_AUQ0KCE2AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1603400096,
+            "review_datetime_utc": "10/22/2020 20:54:56",
+            "review_text": "The Deron is the greatest."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDczcycW1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDczcycW1nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDCs72qmgE%7CCgsIi5mJ_AUQkOG1CA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1602374795,
+            "review_datetime_utc": "10/11/2020 00:06:35",
+            "review_text": "Dope variety of beers ,ciders. Love it!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4dktHN0xREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dktHN0xREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC8vKG7LQ%7CCgsIuK3b9wUQgMyLYw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1593235128,
+            "review_datetime_utc": "06/27/2020 05:18:48",
+            "review_text": "Alyssa was awesome! She really knows her beer and can help you find the perfect beer! Can't wait to be back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURjb2JfZTZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjb2JfZTZBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDcob_e6AE%7CCgwIgqeR9wUQyLuA1QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1592021890,
+            "review_datetime_utc": "06/13/2020 04:18:10",
+            "review_text": "Amazing brewery! One of the best I've visited. Great beer and great food with a super cute and cozy vibe. Would absolutely recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNjamREWV9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjamREWV9BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICcjdDY_AE%7CCgsI-YXN8wUQyOvgCQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1584612089,
+            "review_datetime_utc": "03/19/2020 10:01:29",
+            "review_text": "had a great time @ sing along"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNjbGZDUFR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNjbGZDUFR3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICclfCPTw%7CCgwIvoTF8wUQqIqYyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1584480830,
+            "review_datetime_utc": "03/17/2020 21:33:50",
+            "review_text": "Amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzanZxdG1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzanZxdG1nRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDsjvqtmgE%7CCgwI8of88gUQwM-XpQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583285234,
+            "review_datetime_utc": "03/04/2020 01:27:14",
+            "review_text": "Cerveja boa e comida de qualidade."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzdXM3b3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzdXM3b3ZBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDsus7ovAE%7CCgwIjovw8gUQsKywkAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583089038,
+            "review_datetime_utc": "03/01/2020 18:57:18",
+            "review_text": "Great atmosphere to work in and the coffee bar manager (Woo?) is excellent. Good coffee and great food. They serve breakfast and lunch so it's easy to come in setup and leave when you are done working/studying."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNb1o2ME5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNb1o2ME5REAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDMoZ60NQ%7CCgwI0Ojr8gUQ4Iq5jAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583019088,
+            "review_datetime_utc": "02/29/2020 23:31:28",
+            "review_text": "One of the top breweries in Charlotte! Two great taprooms with lots of different seating upstairs. Barista coffee and espresso to order w nitro coffee. Small menu including pizza. Hard to find great beer selection and bottle shop downstairs. A must see."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzckxDdTVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzckxDdTVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDsrLCu5gE%7CCgwIuYLW8gUQsPGBmAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1582661945,
+            "review_datetime_utc": "02/25/2020 20:19:05",
+            "review_text": "Such a cute place to have drinks with friends! It has a boho style and is pretty spacious. Pizza is good too, The only thing was our service that night, the bartenders were not very friendly or helpful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURzMlA2TzB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzMlA2TzB3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDs2P6O0wE%7CCgwIro_H8gUQ6LmBggI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1582417838,
+            "review_datetime_utc": "02/23/2020 00:30:38",
+            "review_text": "A small place but very cozy. Service and beers were excellent! Can't wait to go back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzaU1UcUJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzaU1UcUJREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDsiMTqBQ%7CCgwIqebA8gUQgO676AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1582314281,
+            "review_datetime_utc": "02/21/2020 19:44:41",
+            "review_text": "Oh my gosh this place is so cool. $3.5 pints on Monday is a no brainier, plan to cab it here because you'll wanna try every beer they've got to offer. The owner being a fellow Dominican Republic native is just the cherry on top. Super chill atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMzdpNjdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMzdpNjdBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICs37i67AE%7CCgwI0OKy8gUQqOXb9AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1582084432,
+            "review_datetime_utc": "02/19/2020 03:53:52",
+            "review_text": "Liked the design and atmosphere and how it connects to the beer store and bar on the first floor which also serves wood fired pizza   , will definitely be back ."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzajg2VHJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzajg2VHJnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICsj86TrgE%7CCgsI2vms8gUQwPnoOA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581989082,
+            "review_datetime_utc": "02/18/2020 01:24:42",
+            "review_text": "Always a great place to grab a cup of coffee and do some work! Great be er, great coffee, great atmosphere, and great staff, all around just a great place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzblpXX1hREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzblpXX1hREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICsnZW_XQ%7CCgwIs9aI8gUQuPeatwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1581394739,
+            "review_datetime_utc": "02/11/2020 04:18:59",
+            "review_text": "Salud is just truly the best bar in Charlotte. It has the best beer, the best atmosphere, and the best bartenders. You're doing yourself a disservice if you have never been here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMnZQMzJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMnZQMzJnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICs2vP32gE%7CCgwIwuHH8QUQsJLEpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1580331202,
+            "review_datetime_utc": "01/29/2020 20:53:22",
+            "review_text": "Great music, good crowd, good food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzeXRtM2ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzeXRtM2ZBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICsytm3fA%7CCgsI2OLB8QUQ-IbEfQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1580233048,
+            "review_datetime_utc": "01/28/2020 17:37:28",
+            "review_text": "Pizza was delicious I would highly recommend trying it out! They also have a shuffleboard table which is always a good time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzc29hZHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzc29hZHJBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICssoadrAE%7CCgwI8Ju98QUQgKPrigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1580158448,
+            "review_datetime_utc": "01/27/2020 20:54:08",
+            "review_text": "Fun atmosphere, friendly bartenders and regulars, great Monday $3.50 drafts"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzaU9IN3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzaU9IN3BBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICsiOH7pAE%7CCgsI6eGT8QUQwOP3bQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1579479273,
+            "review_datetime_utc": "01/20/2020 00:14:33",
+            "review_text": "Great food - a must try is the Mexican Street Corn Wings - AMAZING!  Great beers as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNc2M3X2N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNc2M3X2N3EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDMsc7_cw%7CCgwIoem58AUQ0KP4tAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578005665,
+            "review_datetime_utc": "01/02/2020 22:54:25",
+            "review_text": "Our second visit has us once again very impressed with the quality and selection of the house made beers. Relaxing upstairs space has an eclectic style with some natural light."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNOXFLU21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNOXFLU21RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDM9qKSmQE%7CCgsI3s-j8AUQwKTvTQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1577641950,
+            "review_datetime_utc": "12/29/2019 17:52:30",
+            "review_text": "Love this place for a great sour beer or gose. They make the best pizza in noda. Wood fired with great toppings. Fun, chill vibe"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNa0x1QmhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNa0x1QmhRRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDMkLuBhQE%7CCgwI0b_O7wUQ2K2fxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1576247249,
+            "review_datetime_utc": "12/13/2019 14:27:29",
+            "review_text": "Funky Lee Boy . . . with a beer like this you don't need friends. Outstanding job!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNbnNPTEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNbnNPTEtBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICMnsOLKA%7CCgwIgL_W7gUQuN3g6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1574281088,
+            "review_datetime_utc": "11/20/2019 20:18:08",
+            "review_text": "Solid slices and crispy boys"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwNF8yMkNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwNF8yMkNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID04_22Cg%7CCgwI083L7gUQqMXy4gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1574102739,
+            "review_datetime_utc": "11/18/2019 18:45:39",
+            "review_text": "Great beers, great ambiance, great staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwaWN6SzBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwaWN6SzBnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID0iczK0gE%7CCgwIqvSc7gUQ-I_nmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1573337642,
+            "review_datetime_utc": "11/09/2019 22:14:02",
+            "review_text": "Hip space, not overly loud or crowded with great beers. One of the best bars to get a beer with friends and hang out in NoDa."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwM29lalFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwM29lalFBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID03oejQA%7CCgwI2ISM7gUQoOS-tAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1573061208,
+            "review_datetime_utc": "11/06/2019 17:26:48",
+            "review_text": "Awesome! Great service.....Great Beer!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQweEpuN2FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQweEpuN2FnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID0xJn7ag%7CCgsIteC_7QUQ-JCPVg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1571811381,
+            "review_datetime_utc": "10/23/2019 06:16:21",
+            "review_text": "Hip place, steep staircase tho"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwcUtlMS1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwcUtlMS1BRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID0qKe1-AE%7CCgsI1Yiz7QUQqODWGA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571603541,
+            "review_datetime_utc": "10/20/2019 20:32:21",
+            "review_text": "Awesome place and people"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwOEtqWldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwOEtqWldnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID08KjZWg%7CCgwI3_Ws7QUQuJLlyAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571502815,
+            "review_datetime_utc": "10/19/2019 16:33:35",
+            "review_text": "Highly recommend it you live here for a regular spot or a must if you're coming into town! Great service, amazing beer, the best ambiance and DELICIOUS food! Unreal for bar like this. The best of both!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQwOE1DdzBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQwOE1DdzBnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgID08MCw0gE%7CCgwItOis7QUQgOzazQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571501108,
+            "review_datetime_utc": "10/19/2019 16:05:08",
+            "review_text": "Wonderful beer!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwbi1hOWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwbi1hOWRREAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC0n-a9dQ%7CCgwIysuZ7QUQyJLdgwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571186122,
+            "review_datetime_utc": "10/16/2019 00:35:22",
+            "review_text": "This place is soo cute! The music choice is amazing!! Lindsey, thank you so being so amazing to my team and myself!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwNnUzN3J3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwNnUzN3J3RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC06u37rwE%7CCgwI8qKe7AUQ-JnauQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1569165682,
+            "review_datetime_utc": "09/22/2019 15:21:22",
+            "review_text": "I made a mid-day drop in to check out the current tap selections. All good..as always. This is your classic \"local\" joint with beer, food, decor slanted to the NoDa world. I stayed at the downstairs bar a chatted with the bartender. Upstairs is set up for the big crowd..great but downstairs was fine for me. Great draft selection plus wide take home craft inventory. Highly recommend"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwaXJQRHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwaXJQRHFnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC0irPDqgE%7CCgsIppya7AUQkMmpYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1569099302,
+            "review_datetime_utc": "09/21/2019 20:55:02",
+            "review_text": "This is an amazing hidden gem in NoDa\n\nUpstairs or downstairs you are in for a treat\n\nThere is a game upstairs also if you like it\n\nRelaxing atmosphere, amazing Pizza\n\nI might return back for the pizza again :) :)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMwbVBPcGNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwbVBPcGNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC0mPOpcg%7CCgsIivTv6wUQgP3DPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1568406026,
+            "review_datetime_utc": "09/13/2019 20:20:26",
+            "review_text": "I had a really good time. Nice selection of different beers and wine and the pizza was awesome! Very comfortable and relaxed atmosphere with none of the usual pretentious acting guestvor employees. Great place to visit if you like that vibe."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMweVBuaHVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMweVBuaHVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIC0yPnhugE%7CCgwIrojr6wUQ8MytuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1568326702,
+            "review_datetime_utc": "09/12/2019 22:18:22",
+            "review_text": "Those wings are delicious!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURVaGRpbWRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVaGRpbWRBEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDUhdimdA%7CCgwIq9ae6wUQgPmR0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1567075115,
+            "review_datetime_utc": "08/29/2019 10:38:35",
+            "review_text": "nice place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVbk1McnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVbk1McnZnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDUnMLrvgE%7CCgwI0OHc6gUQiO2c2AI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1565995216,
+            "review_datetime_utc": "08/16/2019 22:40:16",
+            "review_text": "The \"beer\" there to me taste horrible,  different flavors but same after taste,  does that even make sense.  The atmosphere was nice I would come back in the morning to try their coffee.  At night they serve \"beer\"."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVN0xHOXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVN0xHOXBBRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDU7LG9pAE%7CCgwIxPbb6gUQsNujnQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1565981508,
+            "review_datetime_utc": "08/16/2019 18:51:48",
+            "review_text": "This might just be my fav beer place in all of Charlotte for the simple fact they have PURPLE  beer!!\n\nBut, honestly this place is just awesome all around from the beer offerings to the ambiance to the incredibly cool abstract artwork murals upstairs and in the stairwell connecting down to the bottleshop!\n\nThey have great beers with my fav part being how they present their flights: in beautiful cigar boxes! There's foosball and games upstairs which has a more lounge feel and really great (and sometimes rare) beer options on draught or by the btl downstairs.\n\nIn any case, this is my fav beer place in NoDa!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVb01MZjVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVb01MZjVnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDUoMLf5gE%7CCgwI1pq96gUQ4JTilgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1565478230,
+            "review_datetime_utc": "08/10/2019 23:03:50",
+            "review_text": "Salud has by far the best craft beer in the area, they capitalize on hazy IPA, stout, and anything sour. The feel of the place is also a big contributor to getting five stars. They now serve food again and the pizzas are so well crafted, it may be the best beer food combination in the area, although Wooden Robot has a dope food situation as well!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVODVqa253RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVODVqa253RRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICU85jknwE%7CCgwI_Oqa6gUQwOWTmQI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1564915068,
+            "review_datetime_utc": "08/04/2019 10:37:48",
+            "review_text": "Not your typical brewpub!  Salud feels more like a casual lounge, offering fine wines and unusual ales in an inviting atmosphere with friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVNWVxam1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVNWVxam1RRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICU5eqjmQE%7CCgsIp9SA6gUQ-PKUBA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1564486183,
+            "review_datetime_utc": "07/30/2019 11:29:43",
+            "review_text": "One of best beer selections in town! Underated wine as well. Also, check out the pizza if you haven't already!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVNGVxSjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVNGVxSjhnRRAB!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICU4eqJ8gE%7CCgwI2Y_s6QUQ0PGpmQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1564149721,
+            "review_datetime_utc": "07/26/2019 14:02:01",
+            "review_text": "Simply the best beer bar Ive been too.  Awesome beer, great owner, bartenders and super atmosphere.  Highest recommendation."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNVM01YWENnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVM01YWENnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgICU3MXXCg%7CCgsIwazO6QUQqNTmFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1563661889,
+            "review_datetime_utc": "07/20/2019 22:31:29",
+            "review_text": "This is a super cool place for those who love noncommercial beer. There's a huge variety that makes it so interesting. Plus, the environment is completely latino"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURreDdqekJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURreDdqekJnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDkx7jzBg%7CCgwItImV6QUQ8KapjAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562723508,
+            "review_datetime_utc": "07/10/2019 01:51:48",
+            "review_text": "Delicious beer, tasty food, great atmosphere, and the folks who work there have all been great."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrcmVTVUNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrcmVTVUNnEAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDkreSUCg%7CCgsI8KT26AUQgNrANA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562219120,
+            "review_datetime_utc": "07/04/2019 05:45:20",
+            "review_text": "The most lowkey place and some of the best beer in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURramNQQU13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURramNQQU13EAE!2m1!1s0x0:0xc8dddc2a902d5193!3m1!1s2@1:CIHM0ogKEICAgIDkjcPAMw%7CCgsIqvbz6AUQuKqzXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562180394,
+            "review_datetime_utc": "07/03/2019 18:59:54",
+            "review_text": "My favorite spot for beer in Noda. The selection of frequently rotating taps is amazing. Great variety of beers and a very chill/lax environment. Do yourself a favor and give them a visit!!"
+        }
+    ]
+}
