@@ -8,7 +8,14 @@ This document is a bed of random code snippets, configurations, and the like for
 
 ## App Design
 
-From left to right, these are the tabs for the app.
+From left to right in a navigation bar, these are the main pages for the site.
+
+* Home - A table with all the places the ability to sort, filter, and group, and tabs in the table for pre-built filters. Clicking on a place's name should bring up a card with the individual details for that place. Closing the card takes you back to the whole table.
+* Map - All places plotted on a Google Maps. Clicking on a place should bring up a card view as well that shows over Maps, so the same way things work in Google Maps. The map is always visible.
+* Feedback - Provide feedback about a place, about adding a new place, or about the app overall. 3 buttons. 1 button for feedback about a place, it takes them to an Airtable form where they select the place they want to provide feedback about, and then open text for them to say whatever the want. Another button for "Request Addition of a Place". Takes them to an Airtable form asking them to fill out fields with details about the place including a justification for why they think it's a third place. This page should be clear about this is you making a request, it's not guranteed to be added. Then a 3rd button for "Other Feedback". IF they want to provide feedback, comments, questions, concerns, not related to a place and just in general, this is where they go. A catch all. If you want to get in touch with the author for any reason not place relalted you use this form.
+* About - About this website. This is where I talk about myself as the author, my personal story, the tech stack of the app, where I got the data from, and mention how to contact me or provide feedback about a place (route to the feedback tab).
+
+My old idea in the React Native days is below.
 
 1. `index.tsx`: All the places with filters that let you get into more granular sets of places. I want to also provide grouped views of the data by default, namely neighborhood and size. Then users can get into more filters themselves. They should be able to choose their desired filters. I am thinking of using Airtable embeds here, and creating different views in Airtable for the groupings. However, if there's a well-known React Native library or tool that creates tables with filters and groups and works well for mobile then I'd like to use that. I don't mind having custom code to handle the web differently than mobile, but one solution for all is preferred.
 2. `map.tsx`: A view of all the places plotted on a map. Use Google Maps for this.

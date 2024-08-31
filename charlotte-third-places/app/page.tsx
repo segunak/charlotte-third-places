@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getPlaces } from '@/app/lib/services';
 
 export default function Home() {
   return (

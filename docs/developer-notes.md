@@ -3,6 +3,12 @@
 
 A scratch pad for various notes related to this project.
 
+## Next.js
+
+The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for styling.
+
+* To run locally `cd` into the `charlotte-third-places` directory and run `npm run dev`.
+
 ## Random Information
 
 * To stop Azurite from writing its logs to undesirable locations I set the `Azurite: Location` in settings to the relative path (starting from the C:\ drive) `/GitHub/charlotte-third-places/azure-function/.azurite` The folder is ignored in the `.gitignore`.
