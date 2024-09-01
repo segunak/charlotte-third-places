@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTheme } from "next-themes";
-import { getPlaces } from '@/lib/services';
+import { getPlaces } from '@/lib/data';
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -10,43 +10,17 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export default function Home() {
   return (
-    <div>
-      <ThemeToggle />
-      <Button>Click me</Button>
-      <Card className="w-[350px]">
-        <CardHeader>
-          <CardTitle>Create project</CardTitle>
-          <CardDescription>Deploy your new project in one-click.</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <form>
-            <div className="grid w-full items-center gap-4">
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Name of your project" />
-              </div>
-              <div className="flex flex-col space-y-1.5">
-                <Label htmlFor="framework">Framework</Label>
-                <Select>
-                  <SelectTrigger id="framework">
-                    <SelectValue placeholder="Select" />
-                  </SelectTrigger>
-                  <SelectContent position="popper">
-                    <SelectItem value="next">Next.js</SelectItem>
-                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                    <SelectItem value="astro">Astro</SelectItem>
-                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-          </form>
-        </CardContent>
-        <CardFooter className="flex justify-between">
-          <Button variant="outline">Cancel</Button>
-          <Button>Deploy</Button>
-        </CardFooter>
-      </Card>
-    </div>
+    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
+      <div className="flex max-w-[980px] flex-col items-start gap-2">
+        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
+          Beautifully designed components <br className="hidden sm:inline" />
+          built with Radix UI and Tailwind CSS.
+        </h1>
+        <p className="max-w-[700px] text-lg text-muted-foreground">
+          Accessible and customizable components that you can copy and paste
+          into your apps. Free. Open Source. And Next.js 13 Ready.
+        </p>
+      </div>
+    </section>
   );
 }

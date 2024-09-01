@@ -1,4 +1,4 @@
-import { getPlaces } from '@/lib/services';
+import { getPlaces } from '@/lib/data';
 import { Place } from '@/lib/definitions';
 
 /**
