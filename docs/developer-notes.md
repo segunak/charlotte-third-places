@@ -17,6 +17,7 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 * Remember to start and stop Azurite for local testing if you're using local storage.
 * See [this page](https://outscraper.com/place-id-feature-id-cid/) for a `google_id` explainer. I have found no use for it but it's returned by the Outscraper API.
 * When using Python's logging module pass `exc_info=True` to get the stack trace.
+* Light color for personal website is #0092ca and the dark color is #f21368
 
 ## Azure Function
 

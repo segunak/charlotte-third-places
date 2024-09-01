@@ -1,5 +1,5 @@
-import { getPlaces } from '@/app/lib/services';
-import { Place } from '@/app/lib/definitions';
+import { getPlaces } from '@/lib/services';
+import { Place } from '@/lib/definitions';
 
 /**
  * This file defines the structure and behavior of the PlacePage component in Next.js,
@@ -9,11 +9,14 @@ import { Place } from '@/app/lib/definitions';
  * 
  * 1. Caching with `revalidate`:
  *    - The `revalidate` property is set to 12 hours (43200 seconds), meaning that the data fetched 
- *      from Airtable is cached for 12 hours. 
+ *      from Airtable is cached for 12 hours.
  *    - During this period, any requests for this data will be served directly from the cache, 
- *      avoiding unnecessary API calls to Airtable.
+ *      avoiding unnecessary API calls to Airtable. All users get cached data.
  *    - Once the 12-hour window has passed, the cache is invalidated, and the next request 
  *      will trigger a fresh fetch from Airtable, updating the cache with the new data.
+  *    - Note: If multiple users request data right after the cache expires, there is a small 
+ *      risk of multiple API calls being made. However, once the cache is refreshed, all users 
+ *      will receive the same cached data for the next 12 hours, minimizing API calls overall.
  * 
  * 2. Handling Dynamic Paths with `dynamicParams`:
  *    - The `dynamicParams` property is set to `true`, allowing Next.js to generate pages 
