@@ -8,7 +8,7 @@ export default function NotFound() {
                 Could not find the requested resource.
             </p>
             <div className="mt-6 text-lg">
-                Return <Link href="/" className="text-blue-500 hover:underline" >Home</Link>.
+                Return <Link href="/" className="text-blue-500 hover:underline">Home</Link>.
             </div>
         </div>
     )
