@@ -8,7 +8,11 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function HomePage() {
+export const revalidate = 43200; // Revalidate the data every 12 hours
+
+export default async function  HomePage() {
+  const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
+
   return (
     <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
       <div className="flex max-w-[980px] flex-col items-start gap-2">
