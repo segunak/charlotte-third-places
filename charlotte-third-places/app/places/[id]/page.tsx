@@ -91,6 +91,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
     if (!place) return <div>Place not found</div>;
 
     // If the place is found, render its details on the page.
+    // TODO - Make this a Card layout. Centered. With key details about a place.
     return (
         <div>
             <h1>{place.name}</h1>
