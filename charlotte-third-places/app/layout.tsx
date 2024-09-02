@@ -3,8 +3,11 @@ import { cn } from "@/lib/utils"
 import { fontSans } from "@/lib/fonts"
 import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { MobileNavigation } from "@/components/mobile-navigation"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
 export const metadata: Metadata = {
   title: {
@@ -40,18 +43,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <div className="relative flex min-h-screen flex-col">
-            <SiteHeader />
-            <div className="flex-1">{children}</div>
-          </div>
-          <TailwindIndicator />
-        </ThemeProvider>
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <div className="relative flex min-h-screen flex-col">
+              <SiteHeader />
+              <div className="flex-1">{children}</div>
+              <MobileNavigation />
+              <SiteFooter />
+            </div>
+            <TailwindIndicator />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );

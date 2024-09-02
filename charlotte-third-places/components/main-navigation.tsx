@@ -15,21 +15,21 @@ export function MainNavigation() {
                 >
                     Home
                 </Link>
-                
+
                 <Link
-                    href="/"
+                    href="/map"
                     className="flex items-center text-sm font-medium text-muted-foreground"
                 >
                     Map
                 </Link>
                 <Link
-                    href="/"
+                    href="/contribute"
                     className="flex items-center text-sm font-medium text-muted-foreground"
                 >
-                    Feedback
+                    Contribute
                 </Link>
                 <Link
-                    href="/"
+                    href="/about"
                     className="flex items-center text-sm font-medium text-muted-foreground"
                 >
                     About
