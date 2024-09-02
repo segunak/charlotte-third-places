@@ -10,7 +10,7 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 export const revalidate = 43200; // Revalidate the data every 12 hours
 
-// Hello moto
+// Hello moto 2
 
 export default async function  HomePage() {
   const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
