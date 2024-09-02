@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/components/site-header"
 import { SiteFooter } from "@/components/site-footer"
 import { ThemeProvider } from "@/components/theme-provider"
+import { GoogleTagManager } from '@next/third-parties/google'
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 
@@ -36,6 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
+      <GoogleTagManager gtmId="G-CDFREVMH8F" />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
