@@ -42,7 +42,7 @@ export function MobileNavigation() {
   ];
 
   return (
-    <div className="sm:hidden">
+    <div className="sm:hidden z-50">
       <nav className="fixed bottom-0 left-0 right-0 bg-background border-t border-border flex justify-around p-4">
         {navItems.map((item) => (
           <Link href={item.href} key={item.href} className="flex flex-col items-center">
