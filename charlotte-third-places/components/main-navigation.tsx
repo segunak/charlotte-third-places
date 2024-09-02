@@ -1,13 +1,15 @@
 import Link from "next/link"
 import { Icons } from "@/components/icons"
 
+// className="hidden sm:flex gap-6 md:gap-10"
+
 export function MainNavigation() {
     return (
-        <div className="flex gap-6 md:gap-10">
-            <Link href="/" className="flex items-center space-x-2">
+        <div className="hidden sm:flex gap-6 md:gap-10">
+            {/* <Link href="/" className="flex items-center space-x-2">
                 <Icons.logo className="h-6 w-6" />
                 <span className="inline-block font-bold">Charlotte Third Places</span>
-            </Link>
+            </Link> */}
             <nav className="flex gap-6">
                 <Link
                     href="/"

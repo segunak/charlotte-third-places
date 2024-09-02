@@ -7,7 +7,6 @@ import { SiteFooter } from "@/components/site-footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { MobileNavigation } from "@/components/mobile-navigation"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v14-appRouter';
 
 export const metadata: Metadata = {
   title: {
@@ -43,22 +42,20 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <div className="relative flex min-h-screen flex-col">
-              <SiteHeader />
-              <div className="flex-1">{children}</div>
-              <MobileNavigation />
-              <SiteFooter />
-            </div>
-            <TailwindIndicator />
-          </ThemeProvider>
-        </AppRouterCacheProvider>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="relative flex min-h-screen flex-col">
+            <SiteHeader />
+            <div className="flex-1">{children}</div>
+            <SiteFooter />
+            <MobileNavigation />
+          </div>
+          <TailwindIndicator />
+        </ThemeProvider>
       </body>
     </html>
   );
