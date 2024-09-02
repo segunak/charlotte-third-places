@@ -18,26 +18,26 @@ export function MobileNavigation() {
     {
       href: '/',
       label: 'Home',
-      activeIcon: <Icons.home className="h-6 w-6 transition-transform duration-100 ease-in-out" />,
-      inactiveIcon: <Icons.homeOutline className="h-6 w-6 transition-transform duration-100 ease-in-out" />
+      activeIcon: <Icons.home className="h-6 w-6" />,
+      inactiveIcon: <Icons.homeOutline className="h-6 w-6" />
     },
     {
       href: '/map',
       label: 'Map',
-      activeIcon: <Icons.map className="h-6 w-6 transition-transform duration-100 ease-in-out" />,
-      inactiveIcon: <Icons.mapOutline className="h-6 w-6 transition-transform duration-100 ease-in-out" />
+      activeIcon: <Icons.map className="h-6 w-6" />,
+      inactiveIcon: <Icons.mapOutline className="h-6 w-6" />
     },
     {
       href: '/contribute',
       label: 'Contribute',
-      activeIcon: <Icons.create className="h-6 w-6 transition-transform duration-100 ease-in-out" />,
-      inactiveIcon: <Icons.createOutline className="h-6 w-6 transition-transform duration-100 ease-in-out" />
+      activeIcon: <Icons.create className="h-6 w-6" />,
+      inactiveIcon: <Icons.createOutline className="h-6 w-6" />
     },
     {
       href: '/about',
       label: 'About',
-      activeIcon: <Icons.infoCircle className="h-6 w-6 transition-transform duration-100 ease-in-out" />,
-      inactiveIcon: <Icons.infoCircleOutline className="h-6 w-6 transition-transform duration-100 ease-in-out" />
+      activeIcon: <Icons.infoCircle className="h-6 w-6" />,
+      inactiveIcon: <Icons.infoCircleOutline className="h-6 w-6" />
     }
   ];
 
@@ -50,7 +50,6 @@ export function MobileNavigation() {
               variant="ghost"
               size="icon"
               onClick={() => setActive(item.href)}
-              className="transition-colors duration-100 ease-in-out"
             >
               {active === item.href ? item.activeIcon : item.inactiveIcon}
             </Button>
