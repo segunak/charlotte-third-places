@@ -1,6 +1,6 @@
 # Charlotte Third Places
 
-A collection of third places in Charlotte, North Carolina.
+A curated collection of third places in Charlotte, North Carolina.
 
 ## Background
 
