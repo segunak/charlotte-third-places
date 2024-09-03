@@ -45,9 +45,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="relative flex min-h-screen flex-col">
+          <div className="flex relative min-h-screen flex-col">
             <SiteHeader />
-            <div className="flex-1 overflow-y-auto">{children}</div>
+            <div className="flex-1 overflow-y-auto max-h-[calc(100vh-4rem-4rem)]">{children}</div>
             <MobileNavigation />
             <SiteFooter />
           </div>
