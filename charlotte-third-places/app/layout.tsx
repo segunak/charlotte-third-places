@@ -49,7 +49,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <SiteHeader />
             <div className="flex-grow">{children}</div>
             <MobileNavigation />
-            <SiteFooter />
+            {/* <SiteFooter /> */}
           </div>
           <TailwindIndicator />
         </ThemeProvider>
