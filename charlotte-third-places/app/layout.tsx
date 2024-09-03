@@ -44,19 +44,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <div className="relative flex min-h-screen flex-col">
             <SiteHeader />
-            <div className="flex-1 overflow-y-auto">
-              {children}
-            </div>
-            <SiteFooter />
+            <div className="flex-1 min-h-full">{children}</div>
             <MobileNavigation />
+            <SiteFooter />
           </div>
           <TailwindIndicator />
         </ThemeProvider>
