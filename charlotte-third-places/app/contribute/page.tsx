@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function ContributePage(){
     return (
-        <div>
-            <Button>Contribute Page</Button>
-        </div>
+        <section className="container grid">
+            Contribute - Nothing for now.
+        </section>
     );
 }

@@ -1,10 +1,10 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 
-export default function AboutPage(){
+export default function AboutPage() {
     return (
-        <div>
-            <Button>About Page</Button>
-        </div>
+        <section className="container grid">
+            About - Nothing for now.
+        </section>
     );
 }

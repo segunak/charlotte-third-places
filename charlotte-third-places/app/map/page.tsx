@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 export default function MapPage(){
     return (
-        <div>
-            <Button>Map Page</Button>
-        </div>
+        <section className="container grid">
+            Map - Nothing for now.
+        </section>
     );
 }
