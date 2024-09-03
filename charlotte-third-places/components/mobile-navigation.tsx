@@ -37,8 +37,8 @@ export function MobileNavigation() {
   ];
 
   return (
-    <div className="sm:hidden bg-background z-100">
-      <nav className="flex flex-row justify-around p-2 items-center justify-around w-full bottom-0 border-t border-border">
+    <nav className="sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border">
+      <div className="flex justify-around items-center h-16">
         {navItems.map((item) => (
           <Link href={item.href} key={item.href} className="flex flex-col items-center">
             {pathname === item.href ? (
@@ -49,7 +49,7 @@ export function MobileNavigation() {
             <span className="text-xs">{item.label}</span>
           </Link>
         ))}
-      </nav>
-    </div>
+      </div>
+    </nav>
   );
 }
