@@ -4,55 +4,47 @@ import React from 'react';
 import Link from 'next/link';
 import { Icons } from "@/components/icons";
 import { usePathname } from 'next/navigation';
-import { Button } from "@/components/ui/button";
 
 export function MobileNavigation() {
   const pathname = usePathname();
-  const [active, setActive] = React.useState(pathname);
-
-  React.useEffect(() => {
-    setActive(pathname);
-  }, [pathname]);
 
   const navItems = [
     {
       href: '/',
       label: 'Home',
-      activeIcon: <Icons.home className="h-6 w-6" />,
-      inactiveIcon: <Icons.homeOutline className="h-6 w-6" />
+      activeIcon: <Icons.home className="h-8 w-8" />,
+      inactiveIcon: <Icons.homeOutline className="h-8 w-8" />
     },
     {
       href: '/map',
       label: 'Map',
-      activeIcon: <Icons.map className="h-6 w-6" />,
-      inactiveIcon: <Icons.mapOutline className="h-6 w-6" />
+      activeIcon: <Icons.map className="h-8 w-8" />,
+      inactiveIcon: <Icons.mapOutline className="h-8 w-8" />
     },
     {
       href: '/contribute',
       label: 'Contribute',
-      activeIcon: <Icons.create className="h-6 w-6" />,
-      inactiveIcon: <Icons.createOutline className="h-6 w-6" />
+      activeIcon: <Icons.create className="h-8 w-8" />,
+      inactiveIcon: <Icons.createOutline className="h-8 w-8" />
     },
     {
       href: '/about',
       label: 'About',
-      activeIcon: <Icons.infoCircle className="h-6 w-6" />,
-      inactiveIcon: <Icons.infoCircleOutline className="h-6 w-6" />
+      activeIcon: <Icons.infoCircle className="h-8 w-8" />,
+      inactiveIcon: <Icons.infoCircleOutline className="h-8 w-8" />
     }
   ];
 
   return (
-    <div className="sm:hidden bg-background sticky bottom-0 left-0 right-0 z-40">
-      <nav className="border-t border-border flex justify-around p-4">
+    <div className="sm:hidden bg-background">
+      <nav className="sticky flex flex-row justify-around p-2 items-center justify-around w-full bottom-0 border-t border-border">
         {navItems.map((item) => (
           <Link href={item.href} key={item.href} className="flex flex-col items-center">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setActive(item.href)}
-            >
-              {active === item.href ? item.activeIcon : item.inactiveIcon}
-            </Button>
+            {pathname === item.href ? (
+              item.activeIcon
+            ) : (
+              item.inactiveIcon
+            )}
             <span className="text-xs">{item.label}</span>
           </Link>
         ))}
