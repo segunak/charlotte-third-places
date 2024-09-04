@@ -40,13 +40,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <GoogleTagManager gtmId="G-CDFREVMH8F" />
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          "min-h-dvh bg-background font-sans antialiased",
           fontSans.variable
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <SiteHeader />
-          <div className="flex flex-col min-h-screen">
+          <div className="flex flex-col min-h-dvh">
             <div className="flex-1 overflow-y-auto">
               {children}
             </div>
