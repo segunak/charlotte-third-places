@@ -40,7 +40,7 @@ export function MobileNavigation() {
     <nav className="sm:hidden sticky bottom-0 left-0 right-0 bg-background border-t border-border z-100">
       <div className="flex justify-around items-center h-16">
         {navItems.map((item) => (
-          <Link href={item.href} key={item.href} className="flex flex-col items-center">
+          <Link href={item.href} key={item.href} className="flex flex-col items-center px-1">
             {pathname === item.href ? (
               item.activeIcon
             ) : (
