@@ -1,5 +1,5 @@
 import Airtable from 'airtable';
-import { Place } from '@/lib/definitions';
+import { Place } from '@/lib/types';
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN

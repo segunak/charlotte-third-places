@@ -1,3 +1,4 @@
+
 export type Place = {
     airtableRecordId: string;
     name: string;
@@ -17,4 +18,4 @@ export type Place = {
     googleMapsProfileURL: string;
     coverPhotoURL: string;
     comments: string;
-}
+  }

@@ -1,5 +1,5 @@
 import { getPlaces } from '@/lib/data';
-import { Place } from '@/lib/definitions';
+import { Place } from "@/lib/types"
 
 /**
  * This file defines the structure and behavior of the PlacePage component in Next.js,

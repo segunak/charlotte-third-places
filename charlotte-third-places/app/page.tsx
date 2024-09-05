@@ -1,16 +1,11 @@
 import * as React from "react";
-import { useTheme } from "next-themes";
 import { getPlaces } from '@/lib/data';
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { DataTable } from "@/components/ui/data-table";
+import { DataTableColumns } from "@/components/columns"
 
 export const revalidate = 43200; // Revalidate the data every 12 hours
 
-export default async function  HomePage() {
+export default async function HomePage() {
   const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
 
   return (
@@ -22,6 +17,10 @@ export default async function  HomePage() {
         <p className="max-w-[700px] text-lg text-muted-foreground">
           A curated collection of third places in Charlotte, North Carolina
         </p>
+
+        <div className="container mx-auto py-10">
+          <DataTable columns={DataTableColumns} data={places} />
+        </div>
       </div>
     </section>
   );
