@@ -1,12 +1,12 @@
 import Airtable from 'airtable';
-import { Place } from '@/lib/types';
+import { Place } from '@/lib/data-models';
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
 }).base('apptV6h58vA4jhWFg');
 
 export async function getPlaces(): Promise<Place[]> {
-    const records = await base('Charlotte Third Places').select({ view: 'All' }).all();
+    const records = await base('Charlotte Third Places').select({ view: 'Production' }).all();
     return records.map((record) => {
         return {
             airtableRecordId: record.id,
