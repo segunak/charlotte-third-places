@@ -8,7 +8,7 @@ export const revalidate = 43200; // Revalidate the data every 12 hours
 
 export default async function HomePage() {
   const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
-
+  
   return (
     <section className="container mx-auto py-8">
       <div className="mb-6">
