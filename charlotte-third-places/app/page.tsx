@@ -1,7 +1,8 @@
+import Link from "next/link";
 import * as React from "react";
 import { getPlaces } from '@/lib/data';
-import { DataTable } from "@/components/ui/data-table";
-import { DataTableColumns } from "@/components/columns"
+import { gridColumns } from "@/lib/types";
+import { DataTable } from "@/components/data-table";
 
 export const revalidate = 43200; // Revalidate the data every 12 hours
 
@@ -9,18 +10,22 @@ export default async function HomePage() {
   const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
 
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Charlotte Third Places
-        </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          A curated collection of third places in Charlotte, North Carolina
+    <section className="container mx-auto py-8">
+      {/* Header Section */}
+      <div className="mb-6">
+        <h1 className="text-3xl font-bold mb-4">Explore Charlotte's Third Places</h1>
+        <p className="text-lg text-gray-600">
+          Use the table below to explore various <Link href="https://en.wikipedia.org/wiki/Third_place" className="custom-link" target="_blank">third places</Link> in Charlotte, North Carolina. You can filter, sort, and scroll through the list. You can also click <Link href="/map" className="custom-link">here</Link> for a map view of the places, <Link href="/contribute" className="custom-link">here</Link> to contribute to the list, and <Link href="/about" className="custom-link">here</Link> to learn more about the site.
         </p>
+      </div>
 
-        <div className="container mx-auto py-10">
-          <DataTable columns={DataTableColumns} data={places} />
-        </div>
+      <div className="flex-1 overflow-y-auto">
+        <DataTable
+          rowData={places}
+          colDefs={gridColumns}
+          theme="ag-theme-quartz"
+          style={{ height: '100vh', width: '100%' }}
+        />
       </div>
     </section>
   );
