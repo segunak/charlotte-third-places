@@ -10,7 +10,6 @@ ModuleRegistry.registerModules([ClientSideRowModelModule]);
 interface DataTableProps {
     rowData: Array<object>; // Accepts an array of objects for the row data
     colDefs: ColDef[]; // Accepts column definitions for AG Grid
-    theme: string; // Accepts the theme class name as a string
     style?: React.CSSProperties; // Optional style prop with CSS properties
 }
 

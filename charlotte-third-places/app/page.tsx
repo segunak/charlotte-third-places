@@ -23,7 +23,6 @@ export default async function HomePage() {
         <DataTable
           rowData={places}
           colDefs={gridColumns}
-          theme="ag-theme-quartz"
           style={{ height: '100vh', width: '100%' }}
         />
       </div>
