@@ -14,8 +14,8 @@ export default async function HomePage() {
       {/* Header Section */}
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-4">Explore Charlotte's Third Places</h1>
-        <p className="text-lg text-gray-600">
-          Use the table below to explore various <Link href="https://en.wikipedia.org/wiki/Third_place" className="custom-link" target="_blank">third places</Link> in Charlotte, North Carolina. You can filter, sort, and scroll through the list. You can also click <Link href="/map" className="custom-link">here</Link> for a map view of the places, <Link href="/contribute" className="custom-link">here</Link> to contribute to the list, and <Link href="/about" className="custom-link">here</Link> to learn more about the site.
+        <p className="text-lg">
+          Use the table below to explore various <a href="https://en.wikipedia.org/wiki/Third_place" className="custom-link" target="_blank">third places</a> in Charlotte, North Carolina. You can filter, sort, and scroll through the list. You can also click <Link href="/map" className="custom-link">here</Link> for a map view of the places, <Link href="/contribute" className="custom-link">here</Link> to contribute to the list, and <Link href="/about" className="custom-link">here</Link> to learn more about the site.
         </p>
       </div>
 
