@@ -3,6 +3,7 @@ import * as React from "react";
 import { getPlaces } from '@/lib/data-services';
 import { gridColumns } from "@/lib/data-models";
 import { DataTable } from "@/components/data-table";
+import { ResponsiveLink } from "@/components/responsive-link";
 
 export const revalidate = 43200; // Revalidate the data every 12 hours
 
@@ -14,7 +15,11 @@ export default async function HomePage() {
       <div className="mb-6">
         <h1 className="text-3xl font-bold mb-4">Explore Charlotte's Third Places</h1>
         <p>
-          Use the table below to explore various <a href="https://en.wikipedia.org/wiki/Third_place" className="custom-link" target="_blank">third places</a> in Charlotte, North Carolina. You can filter, sort, and scroll through the list. You can also click <Link href="/map" className="custom-link">here</Link> for a map view of the places, <Link href="/contribute" className="custom-link">here</Link> to contribute to the list, and <Link href="/about" className="custom-link">here</Link> to learn more about the site.
+          Use the table below to explore various{" "}
+          <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">
+            third places
+          </ResponsiveLink>
+          {" "}in Charlotte, North Carolina. You can filter, search, sort, and scroll through the list. Places are listed in alphabetical order by default. For a map view, click <Link href="/map" className="custom-link">here</Link>. If you'd like to contribute a place, or suggest enhancements to existing places, click <Link href="/contribute" className="custom-link">here</Link>. For more information about the site, click <Link href="/about" className="custom-link">here</Link>.
         </p>
       </div>
 

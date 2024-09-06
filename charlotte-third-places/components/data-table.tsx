@@ -30,7 +30,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
             <div className="mb-4">
                 <Input
                     type="text"
-                    placeholder="Quick Filter..."
+                    placeholder="Quick Search..."
                     onChange={handleQuickFilterChange}
                     value={quickFilterText}
                     className="w-full"
