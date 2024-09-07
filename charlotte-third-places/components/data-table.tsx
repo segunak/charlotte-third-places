@@ -33,13 +33,6 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [filteredData, setFilteredData] = useState(rowData);
 
-    const placeholdersMap = {
-        type: "Type",
-        size: "Size",
-        neighborhood: "Neighborhood",
-        purchaseRequired: "Purchase Required",
-    };
-
     const [filters, setFilters] = useState({
         type: { value: "all", placeholder: "Type" },
         size: { value: "all", placeholder: "Size" },
@@ -53,22 +46,16 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         return Array.from(new Set(values));
     };
 
-    const handleFilterChange = (field: string, value: string) => {
-        const fieldKey = field as keyof typeof filters; // Assert field as a valid key
+    // Handle filter changes including clearing the filter
+    const handleFilterChange = (field: keyof typeof filters, value: string) => {
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [field]: {
+                value,
+                placeholder: prevFilters[field].placeholder  // Retain the correct placeholder
+            }
+        }));
 
-        if (value === "all") {
-            // Clear the filter and reset placeholder when "All" is selected
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [fieldKey]: { value: "all", placeholder: placeholdersMap[fieldKey] } // Retain exact placeholder
-            }));
-        } else {
-            // Apply the filter and use selected value as the placeholder
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [fieldKey]: { value, placeholder: value }
-            }));
-        }
         gridRef.current?.api.onFilterChanged(); // Notify AG Grid to reapply filters
     };
 
@@ -79,7 +66,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     // AG Grid: Check if external filter is applied
     const isExternalFilterPresent = useCallback(() => {
-        return filters.type.value !== "all" || filters.size.value !== "all" || filters.neighborhood.value !== "all" || filters.purchaseRequired.value !== "all";
+        return Object.values(filters).some(filter => filter.value !== "all");
     }, [filters]);
 
     // AG Grid: Filter the data based on external filters
@@ -121,7 +108,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 {/* Type Filter */}
                 <Select onValueChange={(value) => handleFilterChange("type", value)}>
                     <SelectTrigger className="w-full">
-                        <SelectValue placeholder={filters.type.placeholder}>{filters.type.value === "all" ? filters.type.placeholder : filters.type.value}</SelectValue>
+                        <SelectValue placeholder={filters.type.placeholder}>
+                            {filters.type.value === "all" ? filters.type.placeholder : filters.type.value}
+                        </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectGroup>
@@ -139,7 +128,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 {/* Size Filter */}
                 <Select onValueChange={(value) => handleFilterChange("size", value)}>
                     <SelectTrigger className="w-full">
-                        <SelectValue placeholder={filters.size.placeholder}>{filters.size.value === "all" ? filters.size.placeholder : filters.size.value}</SelectValue>
+                        <SelectValue placeholder={filters.size.placeholder}>
+                            {filters.size.value === "all" ? filters.size.placeholder : filters.size.value}
+                        </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectGroup>
@@ -157,7 +148,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 {/* Neighborhood Filter */}
                 <Select onValueChange={(value) => handleFilterChange("neighborhood", value)}>
                     <SelectTrigger className="w-full">
-                        <SelectValue placeholder={filters.neighborhood.placeholder}>{filters.neighborhood.value === "all" ? filters.neighborhood.placeholder : filters.neighborhood.value}</SelectValue>
+                        <SelectValue placeholder={filters.neighborhood.placeholder}>
+                            {filters.neighborhood.value === "all" ? filters.neighborhood.placeholder : filters.neighborhood.value}
+                        </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectGroup>
@@ -175,7 +168,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 {/* Purchase Required Filter */}
                 <Select onValueChange={(value) => handleFilterChange("purchaseRequired", value)}>
                     <SelectTrigger className="w-full">
-                        <SelectValue placeholder={filters.purchaseRequired.placeholder}>{filters.purchaseRequired.value === "all" ? filters.purchaseRequired.placeholder : filters.purchaseRequired.value}</SelectValue>
+                        <SelectValue placeholder={filters.purchaseRequired.placeholder}>
+                            {filters.purchaseRequired.value === "all" ? filters.purchaseRequired.placeholder : filters.purchaseRequired.value}
+                        </SelectValue>
                     </SelectTrigger>
                     <SelectContent>
                         <SelectGroup>
