@@ -11,7 +11,7 @@ export async function getPlaces(): Promise<Place[]> {
         return {
             airtableRecordId: record.id,
             name: record.get('Place') as string,
-            type: record.get('Type') as string,
+            type: record.get('Type') as string[],
             size: record.get('Size') as string,
             ambience: record.get('Ambience') as string[],
             neighborhood: record.get('Neighborhood') as string,

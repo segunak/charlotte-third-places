@@ -139,9 +139,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         setFilteredData(filtered);
     }, [filters, rowData]);
 
-    // Update the column definition for 'type' to display the array as a comma-separated string with spaces
+    // Update the column definition for 'type' and ambience to display the array as a comma-separated string with spaces
     const updatedColDefs = colDefs.map(col => {
-        if (col.field === 'type') {
+        if (col.field === 'type' || col.field === 'ambience') {
             return {
                 ...col,
                 valueFormatter: (params: any) => params.value ? params.value.join(', ') : '' // Join array values with comma and space

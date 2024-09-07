@@ -1,3 +1,5 @@
+"use client"
+
 import { ColDef } from '@ag-grid-community/core';
 
 // General definition for the schema returned by Airtable
@@ -22,6 +24,11 @@ export type Place = {
   comments: string;
 }
 
+const formatTextNoCharactersToLower = (value: string | null | undefined) => {
+  if (typeof value !== 'string') return value; // Handle null/undefined and non-string values
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+}
+
 // Column definitions for the AG Grid defined in data-table.tsx and used in app/page.tsx (the homepage)
 export const gridColumns: ColDef[] = [
   // {
@@ -38,6 +45,7 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   {
@@ -48,6 +56,7 @@ export const gridColumns: ColDef[] = [
       filterOptions: ['contains'],
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   {
@@ -59,11 +68,20 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   // {
   //   headerName: "Ambience",
-  //   field: "ambience"
+  //   field: "ambience",
+  //   filter: true,
+  //   filterParams: {
+  //     filterOptions: ['contains'],
+  //     suppressFilterButton: false, // This will display the "Clear" button
+  //     buttons: ["reset"],
+  //     maxNumConditions: 1,
+  //     textFormatter: formatTextNoCharactersToLower,
+  //   },
   // }, // TODO - Make sure this column is fully populated and start displaying.
   {
     headerName: "Neighborhood",
@@ -74,6 +92,7 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   {
@@ -100,6 +119,7 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   {
@@ -111,6 +131,7 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
   {
@@ -122,12 +143,9 @@ export const gridColumns: ColDef[] = [
       suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
+      textFormatter: formatTextNoCharactersToLower,
     },
   },
-  // {
-  //   headerName: "Has Reviews",
-  //   field: "hasReviews"
-  // },
   {
     headerName: "Description",
     field: "description"
@@ -136,10 +154,6 @@ export const gridColumns: ColDef[] = [
     headerName: "Website",
     field: "website"
   },
-  // {
-  //   headerName: "Google Maps Place ID",
-  //   field: "googleMapsPlaceId"
-  // },
   {
     headerName: "Google Maps Profile",
     field: "googleMapsProfileURL"
