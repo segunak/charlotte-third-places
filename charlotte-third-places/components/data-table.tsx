@@ -41,10 +41,12 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         purchaseRequired: { value: "all", placeholder: "Purchase Required" },
     });
 
-    // Helper function to get distinct values for each filter dropdown
     const getDistinctValues = (field: string) => {
-        const values = rowData.map((item: any) => item[field]).filter(Boolean);
-        return Array.from(new Set(values));
+        const values = rowData
+            .map((item: any) => item[field])
+            .filter(Boolean); // Filter out falsy values
+
+        return Array.from(new Set(values)).sort(); // Convert to a set to remove duplicates, then sort alphabetically
     };
 
     // Handle filter changes including clearing the filter
