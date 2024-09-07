@@ -138,17 +138,15 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     return (
         <div>
-            <div className="mb-4">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5">
                 <Input
                     type="text"
-                    placeholder="Quick Search..."
+                    placeholder="Search All Columns..."
                     onChange={handleQuickFilterChange}
                     value={quickFilterText}
                     className="w-full"
                 />
-            </div>
-
-            <div className="grid sm:grid-cols-4 gap-5 mb-5">
+                
                 {/* Name Filter */}
                 <Select onValueChange={(value) => handleFilterChange("name", value)}>
                     <SelectTrigger className={filters.name.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
@@ -280,7 +278,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                         <SelectGroup>
                             <SelectLabel>Free Wifi</SelectLabel>
                             <SelectItem value="all">All</SelectItem>
-                            {getDistinctValues("freeWifi").map((freeWifi: string) => (
+                            {getDistinctValues("freeWifi", ["Yes", "No"]).map((freeWifi: string) => (
                                 <SelectItem key={freeWifi} value={freeWifi}>
                                     {freeWifi}
                                 </SelectItem>
@@ -300,7 +298,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                         <SelectGroup>
                             <SelectLabel>Has Cinnamon Rolls</SelectLabel>
                             <SelectItem value="all">All</SelectItem>
-                            {getDistinctValues("hasCinnamonRolls").map((hasCinnamonRolls: string) => (
+                            {getDistinctValues("hasCinnamonRolls", ["Yes", "No", "Sometimes"]).map((hasCinnamonRolls: string) => (
                                 <SelectItem key={hasCinnamonRolls} value={hasCinnamonRolls}>
                                     {hasCinnamonRolls}
                                 </SelectItem>
@@ -310,7 +308,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 </Select>
 
                 {/* Reset Filters Button */}
-                <Button onClick={handleResetFilters}>
+                <Button onClick={handleResetFilters} className="w-full">
                     Reset Filters
                 </Button>
             </div>
