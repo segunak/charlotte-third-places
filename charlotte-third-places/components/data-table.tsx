@@ -127,7 +127,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Size Filter */}
                 <Select onValueChange={(value) => handleFilterChange("size", value)}>
-                    <SelectTrigger className={filters.type.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
+                    <SelectTrigger className={filters.size.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                         <SelectValue placeholder={filters.size.placeholder}>
                             {filters.size.value === "all" ? filters.size.placeholder : filters.size.value}
                         </SelectValue>
@@ -147,7 +147,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Neighborhood Filter */}
                 <Select onValueChange={(value) => handleFilterChange("neighborhood", value)}>
-                    <SelectTrigger className={filters.type.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
+                    <SelectTrigger className={filters.neighborhood.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                         <SelectValue placeholder={filters.neighborhood.placeholder}>
                             {filters.neighborhood.value === "all" ? filters.neighborhood.placeholder : filters.neighborhood.value}
                         </SelectValue>
@@ -167,7 +167,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Purchase Required Filter */}
                 <Select onValueChange={(value) => handleFilterChange("purchaseRequired", value)}>
-                    <SelectTrigger className={filters.type.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
+                    <SelectTrigger className={filters.purchaseRequired.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                         <SelectValue placeholder={filters.purchaseRequired.placeholder}>
                             {filters.purchaseRequired.value === "all" ? filters.purchaseRequired.placeholder : filters.purchaseRequired.value}
                         </SelectValue>
