@@ -37,16 +37,16 @@ export function MobileNavigation() {
   ];
 
   return (
-    <nav className="sm:hidden sticky bottom-0 left-0 right-0 bg-background/100 border-t border-border z-100">
-      <div className="flex justify-around items-center h-16 z-100">
+    <nav className="sm:hidden sticky bottom-0 left-0 right-0 bg-background/100 border-t border-border z-50">
+      <div className="flex justify-around items-center h-16">
         {navItems.map((item) => (
-          <Link href={item.href} key={item.href} className="flex flex-col items-center px-1 z-100">
+          <Link href={item.href} key={item.href} className="flex flex-col items-center px-1">
             {pathname === item.href ? (
               item.activeIcon
             ) : (
               item.inactiveIcon
             )}
-            <span className="text-xs z-100">{item.label}</span>
+            <span className="text-xs">{item.label}</span>
           </Link>
         ))}
       </div>
