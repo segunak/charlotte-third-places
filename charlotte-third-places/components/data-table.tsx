@@ -48,12 +48,11 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const getDistinctValues = (field: string, predefinedOrder: string[] = []) => {
         const values = rowData
             .map((item: any) => item[field])
+            .flat() // Flatten the array for `type`
             .filter(Boolean); // Filter out falsy values
 
-        // Remove duplicates
         const distinctValues = Array.from(new Set(values));
 
-        // Sort based on predefined order, or alphabetically if no predefined order is given
         return distinctValues.sort((a, b) => {
             const indexA = predefinedOrder.indexOf(a);
             const indexB = predefinedOrder.indexOf(b);
@@ -91,9 +90,11 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     const doesExternalFilterPass = useCallback((node: IRowNode) => {
         const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
+        const isTypeMatch = type.value === "all" || (node.data.type && node.data.type.includes(type.value));
+
         return (
             (name.value === "all" || node.data.name === name.value) &&
-            (type.value === "all" || node.data.type === type.value) &&
+            isTypeMatch &&
             (size.value === "all" || node.data.size === size.value) &&
             (neighborhood.value === "all" || node.data.neighborhood === neighborhood.value) &&
             (purchaseRequired.value === "all" || node.data.purchaseRequired === purchaseRequired.value) &&
@@ -121,20 +122,33 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     useEffect(() => {
         const filtered = rowData.filter((item: any) => {
-            const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
+            const { name, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
+            const isTypeMatch = filters.type.value === "all" || (item.type && item.type.includes(filters.type.value));
+
             return (
                 (name.value === "all" || item.name === name.value) &&
-                (type.value === "all" || item.type === type.value) &&
-                (size.value === "all" || item.size === size.value) &&
-                (neighborhood.value === "all" || item.neighborhood === neighborhood.value) &&
-                (purchaseRequired.value === "all" || item.purchaseRequired === purchaseRequired.value) &&
-                (parkingSituation.value === "all" || item.parkingSituation === parkingSituation.value) &&
-                (freeWifi.value === "all" || item.freeWifi === freeWifi.value) &&
-                (hasCinnamonRolls.value === "all" || item.hasCinnamonRolls === hasCinnamonRolls.value)
+                isTypeMatch &&
+                (size.value === "all" || item.size === filters.size.value) &&
+                (neighborhood.value === "all" || item.neighborhood === filters.neighborhood.value) &&
+                (purchaseRequired.value === "all" || item.purchaseRequired === filters.purchaseRequired.value) &&
+                (parkingSituation.value === "all" || item.parkingSituation === filters.parkingSituation.value) &&
+                (freeWifi.value === "all" || item.freeWifi === filters.freeWifi.value) &&
+                (hasCinnamonRolls.value === "all" || item.hasCinnamonRolls === filters.hasCinnamonRolls.value)
             );
         });
         setFilteredData(filtered);
     }, [filters, rowData]);
+
+    // Update the column definition for 'type' to display the array as a comma-separated string with spaces
+    const updatedColDefs = colDefs.map(col => {
+        if (col.field === 'type') {
+            return {
+                ...col,
+                valueFormatter: (params: any) => params.value ? params.value.join(', ') : '' // Join array values with comma and space
+            };
+        }
+        return col;
+    });
 
     return (
         <div>
@@ -146,7 +160,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     value={quickFilterText}
                     className="w-full"
                 />
-                
+
                 {/* Name Filter */}
                 <Select onValueChange={(value) => handleFilterChange("name", value)}>
                     <SelectTrigger className={filters.name.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
@@ -317,12 +331,13 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 <AgGridReact
                     ref={gridRef}
                     rowData={filteredData}
-                    columnDefs={colDefs}
+                    columnDefs={updatedColDefs}
                     autoSizeStrategy={autoSizeStrategy}
                     quickFilterText={quickFilterText}
                     isExternalFilterPresent={isExternalFilterPresent}
                     doesExternalFilterPass={doesExternalFilterPass}
                     suppressMovableColumns={true}
+                    
                 />
             </div>
         </div>

@@ -4,7 +4,7 @@ import { ColDef } from '@ag-grid-community/core';
 export type Place = {
   airtableRecordId: string;
   name: string;
-  type: string;
+  type: Array<string>;
   size: string;
   ambience: Array<string>;
   neighborhood: string;
@@ -46,7 +46,6 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
     },
