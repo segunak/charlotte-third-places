@@ -118,7 +118,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 />
             </div>
 
-            <div className="grid grid-cols-5 gap-5 mb-5">
+            <div className="grid sm:grid-cols-5 gap-5 mb-5">
                 {/* Type Filter */}
                 <Select onValueChange={(value) => handleFilterChange("type", value)}>
                     <SelectTrigger className={filters.type.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
