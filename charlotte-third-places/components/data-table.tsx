@@ -44,9 +44,16 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         return Array.from(new Set(values));
     };
 
+
     const handleFilterChange = (field: string, value: string) => {
-        setFilters((prevFilters) => ({ ...prevFilters, [field]: value }));
-        gridRef.current?.api.onFilterChanged(); // Trigger AG Grid to reapply filters
+        if (value === "all") {
+            // Clear the filter when "All" is selected
+            setFilters((prevFilters) => ({ ...prevFilters, [field]: "" }));
+        } else {
+            // Apply the filter when a value is selected
+            setFilters((prevFilters) => ({ ...prevFilters, [field]: value }));
+        }
+        gridRef.current?.api.onFilterChanged(); // Notify AG Grid to reapply filters
     };
 
     const handleQuickFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -100,6 +107,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     <SelectContent>
                         <SelectGroup>
                             <SelectLabel>Type</SelectLabel>
+                            <SelectItem value="all">All</SelectItem> {/* Clear Option */}
                             {getDistinctValues("type").map((type: string) => (
                                 <SelectItem key={type} value={type}>
                                     {type}
