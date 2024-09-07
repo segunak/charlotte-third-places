@@ -41,12 +41,29 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         purchaseRequired: { value: "all", placeholder: "Purchase Required" },
     });
 
-    const getDistinctValues = (field: string) => {
+    const getDistinctValues = (field: string, predefinedOrder: string[] = []) => {
         const values = rowData
             .map((item: any) => item[field])
             .filter(Boolean); // Filter out falsy values
 
-        return Array.from(new Set(values)).sort(); // Convert to a set to remove duplicates, then sort alphabetically
+        // Remove duplicates
+        const distinctValues = Array.from(new Set(values));
+
+        // Sort based on predefined order, or alphabetically if no predefined order is given
+        return distinctValues.sort((a, b) => {
+            const indexA = predefinedOrder.indexOf(a);
+            const indexB = predefinedOrder.indexOf(b);
+
+            if (predefinedOrder.length === 0) {
+                // If no predefined order, sort alphabetically
+                return a.localeCompare(b);
+            }
+
+            if (indexA === -1 && indexB === -1) return a.localeCompare(b); // Alphabetical sort for extras
+            if (indexA === -1) return 1; // Place unknown values after predefined
+            if (indexB === -1) return -1;
+            return indexA - indexB; // Sort based on predefined order
+        });
     };
 
     // Handle filter changes including clearing the filter
@@ -152,7 +169,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                         <SelectGroup>
                             <SelectLabel>Size</SelectLabel>
                             <SelectItem value="all">All</SelectItem> {/* Clear Option */}
-                            {getDistinctValues("size").map((size: string) => (
+                            {getDistinctValues("size", ["Small", "Medium", "Large"]).map((size: string) => (
                                 <SelectItem key={size} value={size}>
                                     {size}
                                 </SelectItem>
@@ -192,7 +209,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                         <SelectGroup>
                             <SelectLabel>Purchase Required</SelectLabel>
                             <SelectItem value="all">All</SelectItem> {/* Clear Option */}
-                            {getDistinctValues("purchaseRequired").map((purchaseRequired: string) => (
+                            {getDistinctValues("purchaseRequired", ["Yes", "No"]).map((purchaseRequired: string) => (
                                 <SelectItem key={purchaseRequired} value={purchaseRequired}>
                                     {purchaseRequired}
                                 </SelectItem>
@@ -207,7 +224,6 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     Reset Filters
                 </Button>
             </div>
-
 
             <div className="ag-theme-custom" style={{ ...style }}>
                 <AgGridReact
