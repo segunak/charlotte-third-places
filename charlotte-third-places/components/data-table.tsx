@@ -33,6 +33,13 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [filteredData, setFilteredData] = useState(rowData);
 
+    const placeholdersMap = {
+        type: "Type",
+        size: "Size",
+        neighborhood: "Neighborhood",
+        purchaseRequired: "Purchase Required",
+    };
+
     const [filters, setFilters] = useState({
         type: { value: "all", placeholder: "Type" },
         size: { value: "all", placeholder: "Size" },
@@ -46,19 +53,20 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         return Array.from(new Set(values));
     };
 
-    // Handle filter changes including clearing the filter
     const handleFilterChange = (field: string, value: string) => {
+        const fieldKey = field as keyof typeof filters; // Assert field as a valid key
+
         if (value === "all") {
             // Clear the filter and reset placeholder when "All" is selected
             setFilters((prevFilters) => ({
                 ...prevFilters,
-                [field]: { value: "all", placeholder: field.charAt(0).toUpperCase() + field.slice(1) }
+                [fieldKey]: { value: "all", placeholder: placeholdersMap[fieldKey] } // Retain exact placeholder
             }));
         } else {
             // Apply the filter and use selected value as the placeholder
             setFilters((prevFilters) => ({
                 ...prevFilters,
-                [field]: { value, placeholder: value }
+                [fieldKey]: { value, placeholder: value }
             }));
         }
         gridRef.current?.api.onFilterChanged(); // Notify AG Grid to reapply filters
