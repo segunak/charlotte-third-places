@@ -216,6 +216,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     quickFilterText={quickFilterText}
                     isExternalFilterPresent={isExternalFilterPresent}
                     doesExternalFilterPass={doesExternalFilterPass}
+                    suppressMovableColumns={true}
                 />
             </div>
         </div>
