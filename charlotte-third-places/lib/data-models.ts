@@ -24,28 +24,53 @@ export type Place = {
   comments: string;
 }
 
-const formatTextNoCharactersToLower = (value: string | null | undefined) => {
-  if (typeof value !== 'string') return value; // Handle null/undefined and non-string values
-  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
-}
+/**
+ * Normalizes text for improved searching and filtering in AG Grid.
+ * This function removes diacritics, replaces specific ligatures,
+ * removes most special characters, and converts the text to lowercase.
+ * 
+ * @param value - The input string to be normalized. Can be null or undefined.
+ * @returns A normalized string suitable for case-insensitive, accent-insensitive searching.
+ */
+const normalizeTextForSearch = (value: string | null | undefined): string => {
+  // Return an empty string if the input is null, undefined, or not a string
+  if (value == null || typeof value !== 'string') {
+    return '';
+  }
+
+  return value
+    // Step 1: Normalize Unicode characters to their base form + diacritic mark
+    .normalize('NFD')
+    // Step 2: Remove all diacritic marks (accent characters)
+    .replace(/[\u0300-\u036f]/g, '')
+    // Step 3: Replace specific ligatures and special characters
+    .replace(/[œ]/g, 'oe')  // Replace 'œ' with 'oe'
+    .replace(/[æ]/g, 'ae')  // Replace 'æ' with 'ae'
+    .replace(/[ø]/g, 'o')   // Replace 'ø' with 'o'
+    .replace(/[ß]/g, 'ss')  // Replace 'ß' with 'ss'
+    // Step 4: Remove all special characters except comma, apostrophe, and hyphen
+    // \w matches any word character (alphanumeric + underscore)
+    // \s matches any whitespace character
+    .replace(/[^\w\s,'''-]/g, '')
+    // Step 5: Convert the resulting string to lowercase for case-insensitive matching
+    .toLowerCase();
+};
 
 // Column definitions for the AG Grid defined in data-table.tsx and used in app/page.tsx (the homepage)
 export const gridColumns: ColDef[] = [
-  // {
-  //   headerName: "Record ID",
-  //   field: "airtableRecordId"
-  // },
   {
     headerName: "Name",
     field: "name",
     pinned: 'left',
     filter: true,
+    getQuickFilterText: params => {
+      return normalizeTextForSearch(params.value);
+    },
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
@@ -56,7 +81,7 @@ export const gridColumns: ColDef[] = [
       filterOptions: ['contains'],
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
@@ -65,10 +90,9 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   // {
@@ -77,10 +101,9 @@ export const gridColumns: ColDef[] = [
   //   filter: true,
   //   filterParams: {
   //     filterOptions: ['contains'],
-  //     suppressFilterButton: false, // This will display the "Clear" button
   //     buttons: ["reset"],
   //     maxNumConditions: 1,
-  //     textFormatter: formatTextNoCharactersToLower,
+  //     textFormatter: normalizeTextForSearch,
   //   },
   // }, // TODO - Make sure this column is fully populated and start displaying.
   {
@@ -89,10 +112,9 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
@@ -105,7 +127,6 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
     },
@@ -116,10 +137,9 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
@@ -128,10 +148,9 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
@@ -140,10 +159,9 @@ export const gridColumns: ColDef[] = [
     filter: true,
     filterParams: {
       filterOptions: ['contains'],
-      suppressFilterButton: false, // This will display the "Clear" button
       buttons: ["reset"],
       maxNumConditions: 1,
-      textFormatter: formatTextNoCharactersToLower,
+      textFormatter: normalizeTextForSearch,
     },
   },
   {
