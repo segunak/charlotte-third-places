@@ -11,9 +11,13 @@ export default async function HomePage() {
   const places = await getPlaces(); // This will use the cached result or fetch fresh data if the cache is stale
 
   return (
-    <section className="container mx-auto py-8 px-5 sm:px-4">
+    <section className="container mx-auto py-8 px-6 sm:px-4">
       <div className="mb-6">
-        <h1 className="text-3xl font-bold mb-4">Explore Charlotte's Third Places</h1>
+        <h1 className="text-3xl font-bold mb-4">
+          Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
+          <span className="sm:hidden">Charlotte</span>
+          <span className="hidden sm:inline">Charlotte, North Carolina</span>
+        </h1>
         <p>
           Use the table below to explore various{" "}
           <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">

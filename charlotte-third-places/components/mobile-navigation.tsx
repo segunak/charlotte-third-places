@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation';
 
 export function MobileNavigation() {
   const pathname = usePathname();
-  const iconClass = "h-6 w-6";
+  const iconClass = "h-5 w-5";
 
   const navItems = [
     {
