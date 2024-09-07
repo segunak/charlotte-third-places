@@ -83,19 +83,47 @@ export const gridColumns: ColDef[] = [
   },
   {
     headerName: "Purchase Required",
-    field: "purchaseRequired"
+    field: "purchaseRequired",
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   {
     headerName: "Parking Situation",
-    field: "parkingSituation"
+    field: "parkingSituation",
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   {
     headerName: "Free Wifi",
-    field: "freeWifi"
+    field: "freeWifi",
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   {
     headerName: "Has Cinnamon Rolls",
-    field: "hasCinnamonRolls"
+    field: "hasCinnamonRolls",
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   // {
   //   headerName: "Has Reviews",
