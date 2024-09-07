@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { AgGridReact } from '@ag-grid-community/react';
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
@@ -80,6 +81,19 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         );
     }, [filters]);
 
+    // Reset all filters
+    const handleResetFilters = () => {
+        setFilters({
+            type: { value: "all", placeholder: "Type" },
+            size: { value: "all", placeholder: "Size" },
+            neighborhood: { value: "all", placeholder: "Neighborhood" },
+            purchaseRequired: { value: "all", placeholder: "Purchase Required" },
+        });
+        setQuickFilterText(""); // Clear the quick search input
+        gridRef.current?.api.setFilterModel(null); // Clear all AG Grid filters
+        gridRef.current?.api.onFilterChanged(); // Reapply filtering logic
+    };
+
     useEffect(() => {
         const filtered = rowData.filter((item: any) => {
             return (
@@ -104,7 +118,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 />
             </div>
 
-            <div className="grid grid-cols-4 gap-4 mb-4">
+            <div className="grid grid-cols-5 gap-5 mb-5">
                 {/* Type Filter */}
                 <Select onValueChange={(value) => handleFilterChange("type", value)}>
                     <SelectTrigger className={filters.type.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
@@ -184,7 +198,14 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                         </SelectGroup>
                     </SelectContent>
                 </Select>
+
+
+                {/* Reset Filters Button */}
+                <Button onClick={handleResetFilters}>
+                    Reset Filters
+                </Button>
             </div>
+
 
             <div className="ag-theme-custom" style={{ ...style }}>
                 <AgGridReact

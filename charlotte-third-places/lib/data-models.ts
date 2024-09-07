@@ -43,12 +43,24 @@ export const gridColumns: ColDef[] = [
   {
     headerName: "Type",
     field: "type",
-    filter: true
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   {
     headerName: "Size",
     field: "size",
-    filter: true
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   // {
   //   headerName: "Ambience",
@@ -57,7 +69,13 @@ export const gridColumns: ColDef[] = [
   {
     headerName: "Neighborhood",
     field: "neighborhood",
-    filter: true
+    filter: true,
+    filterParams: {
+      filterOptions: ['contains'],
+      suppressFilterButton: false, // This will display the "Clear" button
+      buttons: ["reset"],
+      maxNumConditions: 1,
+    },
   },
   {
     headerName: "Address",
