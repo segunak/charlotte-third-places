@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.ag-header {
-  z-index: 10 !important;
-  position: relative;
-}
-
 .custom-link {
   @apply text-primary hover:text-purple-600 underline underline-offset-4;
 }
