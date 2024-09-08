@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Icons } from "@/components/icons";
+import { Icons } from "@/components/Icons";
 import { usePathname } from 'next/navigation';
 
 export function MobileNavigation() {

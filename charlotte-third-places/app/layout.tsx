@@ -2,12 +2,12 @@ import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
 import { fontSans } from "@/lib/fonts"
 import type { Metadata, Viewport } from "next";
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
-import { ThemeProvider } from "@/components/theme-provider"
+import { SiteHeader } from "@/components/SiteHeader"
+import { SiteFooter } from "@/components/SiteFooter"
+import { ThemeProvider } from "@/components/ThemeProvider"
 import { GoogleTagManager } from '@next/third-parties/google'
-import { MobileNavigation } from "@/components/mobile-navigation"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
+import { MobileNavigation } from "@/components/MobileNavigation"
+import { TailwindIndicator } from "@/components/TailwindIndicator"
 
 export const metadata: Metadata = {
   title: {

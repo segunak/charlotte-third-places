@@ -1,8 +1,8 @@
 import Link from "next/link"
-import { Icons } from "@/components/icons"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { Icons } from "@/components/Icons"
+import { ThemeToggle } from "@/components/ThemeToggle"
 import { buttonVariants } from "@/components/ui/button"
-import { MainNavigation } from "@/components/main-navigation"
+import { MainNavigation } from "@/components/MainNavigation"
 
 export function SiteHeader() {
     return (

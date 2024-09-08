@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Icons } from "@/components/icons"
+import { Icons } from "@/components/Icons"
 
 // className="hidden sm:flex gap-6 md:gap-10"
 

@@ -11,6 +11,8 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 ## Random Information
 
+A PlaceCard component where you pass in the Airtable record Id, and with that, it returns the full formed card for that place. IT uses cached data to accomplish this, no need to call the Airtable API.
+
 * To stop Azurite from writing its logs to undesirable locations I set the `Azurite: Location` in settings to the relative path (starting from the C:\ drive) `/GitHub/charlotte-third-places/azure-function/.azurite` The folder is ignored in the `.gitignore`.
 * Testing locally, if you use `venv` you can get weird networking issues tunneling from the virtual environment to the public internet. If you're comfortable with your local environment move to it to overcome some of  that.
 * You need to place any third-party Python libraries in `requirements.txt` so they're installed in the cloud for use during deployments and production execution.

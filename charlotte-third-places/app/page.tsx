@@ -2,8 +2,8 @@ import Link from "next/link";
 import * as React from "react";
 import { getPlaces } from '@/lib/data-services';
 import { gridColumns } from "@/lib/data-models";
-import { DataTable } from "@/components/data-table";
-import { ResponsiveLink } from "@/components/responsive-link";
+import { DataTable } from "@/components/DataTable";
+import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 export const revalidate = 43200; // Revalidate the data every 12 hours
 
