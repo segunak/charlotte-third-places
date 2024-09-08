@@ -1,10 +1,12 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
-import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
+// See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
+import "@/styles/ag-grid-theme-builder.css";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { PlaceCard } from "@/components/PlaceCard";
 import { AgGridReact } from '@ag-grid-community/react';
+import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
 import {
@@ -29,10 +31,34 @@ const autoSizeStrategy: SizeColumnsToContentStrategy = {
     type: 'fitCellContents',
 };
 
+const useIsMobile = () => {
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkIsMobile = () => {
+            setIsMobile(window.innerWidth < 640);
+        };
+
+        // Check on initial load
+        checkIsMobile();
+
+        // Add event listener to handle screen resize
+        window.addEventListener("resize", checkIsMobile);
+
+        // Clean up event listener on component unmount
+        return () => {
+            window.removeEventListener("resize", checkIsMobile);
+        };
+    }, []);
+
+    return isMobile;
+};
+
 export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [filteredData, setFilteredData] = useState(rowData);
+    const [quickFilterText, setQuickFilterText] = useState<string>('');
+    const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
 
     const [filters, setFilters] = useState({
         name: { value: "all", placeholder: "Name" },
