@@ -42,8 +42,6 @@ export function ResponsiveLink({ href, children }: { href: string; children: Rea
         // The `target` attribute is conditionally set: 
         // - If the current screen width qualifies as desktop (`isDesktop === true`), the link will open in a new tab (`target="_blank"`).
         // - If the screen width is less than 768px (i.e., mobile or tablet), the link will open in the same tab (`target="_self"`).
-        <a href={href} target={isDesktop ? "_blank" : "_self"} className="custom-link">
-            {children} {/* The children represent the clickable content of the link (e.g., text or inline elements). */}
-        </a>
+        <a href={href} target={isDesktop ? "_blank" : "_self"} className="custom-link">{children}</a>
     );
 }

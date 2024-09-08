@@ -178,7 +178,11 @@ export const gridColumns: ColDef[] = [
   },
   {
     headerName: "Cover Photo URL",
-    field: "coverPhotoURL"
+    field: "coverPhotoURL",
+    cellRenderer: (props: any) => {
+      // put the value in bold
+      return "<>Value is < b > { params.value } < /b></ >";
+    }
   },
   {
     headerName: "Comments",
