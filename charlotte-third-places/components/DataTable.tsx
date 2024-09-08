@@ -40,7 +40,8 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
     const isMobile = useIsMobile();
 
-    const [filters, setFilters] = useState({
+    // Default filter values, memoized for reset and efficiency
+    const defaultFilters = useMemo(() => ({
         name: { value: "all", placeholder: "Name" },
         type: { value: "all", placeholder: "Type" },
         size: { value: "all", placeholder: "Size" },
@@ -49,7 +50,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         parkingSituation: { value: "all", placeholder: "Parking Situation" },
         freeWifi: { value: "all", placeholder: "Free Wifi" },
         hasCinnamonRolls: { value: "all", placeholder: "Has Cinnamon Rolls" },
-    });
+    }), []);
+
+    const [filters, setFilters] = useState(defaultFilters);
 
     // Get distinct values for dropdowns
     const getDistinctValues = useCallback((field: string, predefinedOrder: string[] = []) => {
@@ -82,9 +85,10 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         gridRef.current?.api.onFilterChanged();  // Trigger AG Grid filter
     }, []);
 
-    const handleQuickFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    // Handle quick search changes
+    const handleQuickFilterChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
         setQuickFilterText(event.target.value);
-    };
+    }, []);
 
     // Custom filter logic for AG Grid
     const isExternalFilterPresent = useCallback(() => {
@@ -107,26 +111,32 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         );
     }, [filters]);
 
-    const handleResetFilters = () => {
-        setFilters({
-            name: { value: "all", placeholder: "Name" },
-            type: { value: "all", placeholder: "Type" },
-            size: { value: "all", placeholder: "Size" },
-            neighborhood: { value: "all", placeholder: "Neighborhood" },
-            purchaseRequired: { value: "all", placeholder: "Purchase Required" },
-            parkingSituation: { value: "all", placeholder: "Parking Situation" },
-            freeWifi: { value: "all", placeholder: "Free Wifi" },
-            hasCinnamonRolls: { value: "all", placeholder: "Has Cinnamon Rolls" },
-        });
+    // Reset filters to default values
+    const handleResetFilters = useCallback(() => {
+        setFilters(defaultFilters);
         setQuickFilterText("");
         gridRef.current?.api.setFilterModel(null);
         gridRef.current?.api.onFilterChanged();
-    };
+    }, [defaultFilters]);
 
     // Handle row selection
-    const handleRowClick = (event: any) => {
-        setSelectedRow(event.data);  // Set selected row for modal
-    };
+    const handleRowClick = useCallback((event: any) => {
+        setSelectedRow(event.data); // Set selected row for modal
+    }, []);
+
+    // Update column definitions to handle 'type' and 'ambience' fields as arrays
+    const updatedColDefs = useMemo(() => {
+        return colDefs.map(col => {
+            if (col.field === 'type' || col.field === 'ambience') {
+                return {
+                    ...col,
+                    valueFormatter: (params: any) => params.value ? params.value.join(', ') : ''  // Join array values with comma and space
+                };
+            }
+            return col;
+        });
+    }, [colDefs]);
+
 
     // Effect to filter the data based on the selected filters
     useEffect(() => {
@@ -147,19 +157,6 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         });
         setFilteredData(filtered);
     }, [filters, rowData]);
-
-    // Update column definitions to handle 'type' and 'ambience' fields as arrays
-    const updatedColDefs = useMemo(() => {
-        return colDefs.map(col => {
-            if (col.field === 'type' || col.field === 'ambience') {
-                return {
-                    ...col,
-                    valueFormatter: (params: any) => params.value ? params.value.join(', ') : ''  // Join array values with comma and space
-                };
-            }
-            return col;
-        });
-    }, [colDefs]);
 
     return (
         <div>
