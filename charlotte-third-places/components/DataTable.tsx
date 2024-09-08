@@ -4,7 +4,9 @@
 import "@/styles/ag-grid-theme-builder.css";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useIsMobile } from "@/hooks/useIsMobile"
 import { PlaceCard } from "@/components/PlaceCard";
+import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
 import { useCallback, useEffect, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
@@ -36,6 +38,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     const [filteredData, setFilteredData] = useState(rowData);
     const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
+    const isMobile = useIsMobile();
 
     const [filters, setFilters] = useState({
         name: { value: "all", placeholder: "Name" },
@@ -48,45 +51,42 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         hasCinnamonRolls: { value: "all", placeholder: "Has Cinnamon Rolls" },
     });
 
-    const getDistinctValues = (field: string, predefinedOrder: string[] = []) => {
+    // Get distinct values for dropdowns
+    const getDistinctValues = useCallback((field: string, predefinedOrder: string[] = []) => {
         const values = rowData
             .map((item: any) => item[field])
-            .flat() // Flatten the array for `type`
-            .filter(Boolean); // Filter out falsy values
+            .flat()  // Handle arrays like 'type'
+            .filter(Boolean);  // Remove falsy values
 
         const distinctValues = Array.from(new Set(values));
 
         return distinctValues.sort((a, b) => {
             const indexA = predefinedOrder.indexOf(a);
             const indexB = predefinedOrder.indexOf(b);
-
             if (predefinedOrder.length === 0) {
                 return a.localeCompare(b);
             }
-
             if (indexA === -1 && indexB === -1) return a.localeCompare(b);
             if (indexA === -1) return 1;
             if (indexB === -1) return -1;
             return indexA - indexB;
         });
-    };
+    }, [rowData]);
 
-    const handleFilterChange = (field: keyof typeof filters, value: string) => {
+    // Handle filter changes
+    const handleFilterChange = useCallback((field: keyof typeof filters, value: string) => {
         setFilters((prevFilters) => ({
             ...prevFilters,
-            [field]: {
-                value,
-                placeholder: prevFilters[field].placeholder  // Retain the correct placeholder
-            }
+            [field]: { value, placeholder: prevFilters[field].placeholder }
         }));
-
-        gridRef.current?.api.onFilterChanged();
-    };
+        gridRef.current?.api.onFilterChanged();  // Trigger AG Grid filter
+    }, []);
 
     const handleQuickFilterChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setQuickFilterText(event.target.value);
     };
 
+    // Custom filter logic for AG Grid
     const isExternalFilterPresent = useCallback(() => {
         return Object.values(filters).some(filter => filter.value !== "all");
     }, [filters]);
@@ -123,6 +123,12 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         gridRef.current?.api.onFilterChanged();
     };
 
+    // Handle row selection
+    const handleRowClick = (event: any) => {
+        setSelectedRow(event.data);  // Set selected row for modal
+    };
+
+    // Effect to filter the data based on the selected filters
     useEffect(() => {
         const filtered = rowData.filter((item: any) => {
             const { name, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
@@ -142,19 +148,22 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         setFilteredData(filtered);
     }, [filters, rowData]);
 
-    // Update the column definition for 'type' and ambience to display the array as a comma-separated string with spaces
-    const updatedColDefs = colDefs.map(col => {
-        if (col.field === 'type' || col.field === 'ambience') {
-            return {
-                ...col,
-                valueFormatter: (params: any) => params.value ? params.value.join(', ') : '' // Join array values with comma and space
-            };
-        }
-        return col;
-    });
+    // Update column definitions to handle 'type' and 'ambience' fields as arrays
+    const updatedColDefs = useMemo(() => {
+        return colDefs.map(col => {
+            if (col.field === 'type' || col.field === 'ambience') {
+                return {
+                    ...col,
+                    valueFormatter: (params: any) => params.value ? params.value.join(', ') : ''  // Join array values with comma and space
+                };
+            }
+            return col;
+        });
+    }, [colDefs]);
 
     return (
         <div>
+            {/* Filters and Search */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5 m-px">
                 <Input
                     type="text"
@@ -340,8 +349,12 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     isExternalFilterPresent={isExternalFilterPresent}
                     doesExternalFilterPass={doesExternalFilterPass}
                     suppressMovableColumns={true}
+                    onRowClicked={handleRowClick}
                 />
             </div>
+
+            {/* Modal for Card Display */}
+            {selectedRow && <PlaceModal place={selectedRow} onClose={() => setSelectedRow(null)} />}
         </div>
     );
 }
