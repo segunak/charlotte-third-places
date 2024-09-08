@@ -152,7 +152,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     return (
         <div>
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5 m-px">
                 <Input
                     type="text"
                     placeholder="Search All Columns..."
@@ -337,7 +337,6 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     isExternalFilterPresent={isExternalFilterPresent}
                     doesExternalFilterPass={doesExternalFilterPass}
                     suppressMovableColumns={true}
-                    
                 />
             </div>
         </div>
