@@ -19,16 +19,16 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
 
-                {place?.coverPhotoURL && (
-                    <div className="mb-4">
+                {/* Cover Image at the top */}
+                {place?.localCoverPhotoURL && (
+                    <div className="relative w-full h-64 sm:h-80 md:h-96 mb-4">
                         <Image
                             src={place.localCoverPhotoURL}
-                            alt={`${place.name} cover photo`}
-                            width={800}   // Adjust the width as necessary
-                            height={450}  // Adjust the height as necessary
-                            className="rounded-lg"
-                            layout="responsive"  // Ensure the image maintains aspect ratio responsively
-                            objectFit="cover"    // Ensure the image scales correctly without stretching
+                            alt={`Cover photo of ${place?.name}`}
+                            layout="fill"
+                            objectFit="cover"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
+                            className="rounded-t-lg sm:rounded-xl"
                         />
                     </div>
                 )}
