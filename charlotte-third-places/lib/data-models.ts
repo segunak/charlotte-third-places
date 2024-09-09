@@ -21,6 +21,7 @@ export type Place = {
   googleMapsPlaceId: string;
   googleMapsProfileURL: string;
   coverPhotoURL: string;
+  localCoverPhotoURL: string;
   comments: string;
 }
 

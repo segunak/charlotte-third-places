@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Image from 'next/image';
 import { Place } from "@/lib/data-models";
 import { Button } from "@/components/ui/button";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -17,6 +18,21 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogTitle>{place?.name}</DialogTitle>
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
+
+                {place?.coverPhotoURL && (
+                    <div className="mb-4">
+                        <Image
+                            src={place.localCoverPhotoURL}
+                            alt={`${place.name} cover photo`}
+                            width={800}   // Adjust the width as necessary
+                            height={450}  // Adjust the height as necessary
+                            className="rounded-lg"
+                            layout="responsive"  // Ensure the image maintains aspect ratio responsively
+                            objectFit="cover"    // Ensure the image scales correctly without stretching
+                        />
+                    </div>
+                )}
+
                 <div className="space-y-3">
                     <p>
                         <strong>Google Maps Profile:</strong>{" "}
