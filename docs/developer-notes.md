@@ -9,6 +9,13 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 * To run locally `cd` into the `charlotte-third-places` directory and run `npm run dev`.
 
+No website - Should remain empty.
+WiredCoffeeExpress
+MadoCafe
+
+Manually removed website, shouild come back properly formatted
+Wooden Robot
+
 ## Random Information
 
 A PlaceCard component where you pass in the Airtable record Id, and with that, it returns the full formed card for that place. IT uses cached data to accomplish this, no need to call the Airtable API.
