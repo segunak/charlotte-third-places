@@ -15,14 +15,14 @@ const generateHashFromURL = (url: string): string => {
 };
 
 // Helper function to get the file extension
-const getImageExtension = async (url: string): Promise<string> => {
+const getImageExtension = async (url: string, placeName: string): Promise<string> => {
     try {
         const headResponse = await axios.head(url);
         const contentType = headResponse.headers['content-type'];
         const extension = contentType.split('/')[1]; // e.g., "image/jpeg" -> "jpeg"
         return extension || 'jpg'; // Default to 'jpg' if no extension found
     } catch (error) {
-        console.warn('Failed to get image extension, defaulting to .jpg');
+        console.warn(`Failed to get image extension for place "${placeName}" at URL "${url}". Defaulting to .jpg`);
         return 'jpg'; // Fallback to 'jpg' if the request fails
     }
 };
@@ -40,12 +40,13 @@ export async function getPlaces(): Promise<Place[]> {
     const places = await Promise.all(
         records.map(async (record) => {
             const airtableRecordId = record.id;
+            const placeName = record.get('Place') as string;
             const coverPhotoURL = record.get('Cover Photo URL') as string;
             let localCoverPhotoURL = '';
 
             if (coverPhotoURL) {
                 const urlHash = generateHashFromURL(coverPhotoURL);
-                const extension = await getImageExtension(coverPhotoURL);
+                const extension = await getImageExtension(coverPhotoURL, placeName);  // Pass placeName for logging
                 const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
                 localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
 
@@ -68,14 +69,14 @@ export async function getPlaces(): Promise<Place[]> {
                         writer.on('error', reject);
                     });
                 } catch (error) {
-                    console.error(`Error downloading image for ${airtableRecordId}:`, error);
+                    console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
                     localCoverPhotoURL = '';
                 }
             }
 
             return {
                 airtableRecordId: airtableRecordId,
-                name: record.get('Place') as string,
+                name: placeName,
                 type: record.get('Type') as string[],
                 size: record.get('Size') as string,
                 ambience: record.get('Ambience') as string[],
