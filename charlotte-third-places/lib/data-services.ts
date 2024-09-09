@@ -34,6 +34,46 @@ const ensureDirectoryExists = (dir: string) => {
     }
 };
 
+// Image downloading logic moved to its own function
+const downloadImage = async (coverPhotoURL: string, airtableRecordId: string, placeName: string): Promise<string> => {
+    const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
+    const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
+    const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
+    const localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
+
+    // Ensure the directory exists
+    ensureDirectoryExists(path.resolve('./public/images/'));
+
+    // Check if the file already exists by checking the file path
+    if (!fs.existsSync(filePath)) {
+        try {
+            const response = await axios({
+                url: coverPhotoURL,
+                method: 'GET',
+                responseType: 'stream',
+            });
+
+            // Save image to public folder
+            const writer = fs.createWriteStream(filePath);
+            response.data.pipe(writer);
+
+            await new Promise((resolve, reject) => {
+                writer.on('finish', resolve);
+                writer.on('error', reject);
+            });
+
+            console.log(`Image downloaded for place "${placeName}" (ID: ${airtableRecordId})`);
+        } catch (error) {
+            console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
+            return ''; // Return empty string if the download fails
+        }
+    } else {
+        console.log(`Image for place "${placeName}" (ID: ${airtableRecordId}) already exists, skipping download.`);
+    }
+
+    return localCoverPhotoURL;
+};
+
 export async function getPlaces(): Promise<Place[]> {
     const records = await base('Charlotte Third Places').select({ view: 'Production' }).all();
 
@@ -43,43 +83,8 @@ export async function getPlaces(): Promise<Place[]> {
             const placeName = record.get('Place') as string;
             const coverPhotoURL = record.get('Cover Photo URL') as string;
             let localCoverPhotoURL = '';
-
-            if (coverPhotoURL) {
-                const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
-                const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
-                const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
-                localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
-
-                // Ensure the directory exists
-                ensureDirectoryExists(path.resolve('./public/images/'));
-
-                // Check if the file already exists by checking the file path
-                if (!fs.existsSync(filePath)) {
-                    try {
-                        const response = await axios({
-                            url: coverPhotoURL,
-                            method: 'GET',
-                            responseType: 'stream',
-                        });
-
-                        // Save image to public folder
-                        const writer = fs.createWriteStream(filePath);
-                        response.data.pipe(writer);
-
-                        await new Promise((resolve, reject) => {
-                            writer.on('finish', resolve);
-                            writer.on('error', reject);
-                        });
-
-                        console.log(`Image downloaded for place "${placeName}" (ID: ${airtableRecordId})`);
-                    } catch (error) {
-                        console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
-                        localCoverPhotoURL = ''; // Reset local URL if the download fails
-                    }
-                } else {
-                    console.log(`Image for place "${placeName}" (ID: ${airtableRecordId}) already exists, skipping download.`);
-                }
-            }
+            // Toggle image download functionality on/off by commenting/uncommenting the next line
+            // localCoverPhotoURL = coverPhotoURL ? await downloadImage(coverPhotoURL, airtableRecordId, placeName) : '';
 
             return {
                 airtableRecordId: airtableRecordId,

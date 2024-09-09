@@ -19,8 +19,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
 
-                {/* Cover Image at the top */}
-                {place?.localCoverPhotoURL && (
+                {/* TODO - Make cover image load without being slow and lagging. Performance is bad even with static asset loading of images. */}
+                {/* {place?.localCoverPhotoURL && (
                     <div className="relative w-full h-64 sm:h-80 md:h-96 mb-4">
                         <Image
                             src={place.localCoverPhotoURL}
@@ -29,9 +29,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                             objectFit="cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw, 50vw"
                             className="rounded-t-lg sm:rounded-xl"
+                            priority={true}
+                            placeholder="blur"
+                            blurDataURL="/blur.jpg"
                         />
                     </div>
-                )}
+                )} */}
 
                 <div className="space-y-3">
                     <p>
