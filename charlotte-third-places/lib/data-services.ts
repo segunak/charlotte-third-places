@@ -9,9 +9,9 @@ const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
 }).base('apptV6h58vA4jhWFg');
 
-// Function to generate a hash from the URL
+// Function to generate a SHA1 hash from the URL
 const generateHashFromURL = (url: string): string => {
-    return crypto.createHash('md5').update(url).digest('hex');
+    return crypto.createHash('sha1').update(url).digest('hex');
 };
 
 // Helper function to get the file extension
@@ -45,32 +45,39 @@ export async function getPlaces(): Promise<Place[]> {
             let localCoverPhotoURL = '';
 
             if (coverPhotoURL) {
-                const urlHash = generateHashFromURL(coverPhotoURL);
-                const extension = await getImageExtension(coverPhotoURL, placeName);  // Pass placeName for logging
+                const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
+                const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
                 const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
                 localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
 
                 // Ensure the directory exists
                 ensureDirectoryExists(path.resolve('./public/images/'));
 
-                try {
-                    const response = await axios({
-                        url: coverPhotoURL,
-                        method: 'GET',
-                        responseType: 'stream',
-                    });
+                // Check if the file already exists by checking the file path
+                if (!fs.existsSync(filePath)) {
+                    try {
+                        const response = await axios({
+                            url: coverPhotoURL,
+                            method: 'GET',
+                            responseType: 'stream',
+                        });
 
-                    // Save image to public folder
-                    const writer = fs.createWriteStream(filePath);
-                    response.data.pipe(writer);
+                        // Save image to public folder
+                        const writer = fs.createWriteStream(filePath);
+                        response.data.pipe(writer);
 
-                    await new Promise((resolve, reject) => {
-                        writer.on('finish', resolve);
-                        writer.on('error', reject);
-                    });
-                } catch (error) {
-                    console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
-                    localCoverPhotoURL = '';
+                        await new Promise((resolve, reject) => {
+                            writer.on('finish', resolve);
+                            writer.on('error', reject);
+                        });
+
+                        console.log(`Image downloaded for place "${placeName}" (ID: ${airtableRecordId})`);
+                    } catch (error) {
+                        console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
+                        localCoverPhotoURL = ''; // Reset local URL if the download fails
+                    }
+                } else {
+                    console.log(`Image for place "${placeName}" (ID: ${airtableRecordId}) already exists, skipping download.`);
                 }
             }
 
