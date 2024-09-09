@@ -68,18 +68,25 @@ class AirtableClient:
         except Exception as e:
             logging.error(f"Unexpected error: {e}")
             return False
-  
+
     def get_base_url(self, url: str) -> str:
         """
         Extracts and returns the base URL (scheme, domain, and path) from a full URL.
+        If the input URL is invalid, returns an empty string.
 
         Args:
             url (str): The full URL from which to extract the base.
 
         Returns:
-            str: The base URL.
+            str: The base URL, or an empty string if the URL is invalid.
         """
         parsed_url = urlparse(url)
+        
+        # Ensure scheme and netloc are not empty (they're essential for a valid URL)
+        if not parsed_url.scheme or not parsed_url.netloc:
+            return ""
+
+        # Return the base URL with the path (optional)
         return f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}".strip()
 
     def get_parking_status(self, place_details_response):
