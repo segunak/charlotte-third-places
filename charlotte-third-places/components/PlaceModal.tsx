@@ -12,12 +12,12 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
     return (
         <Dialog open onOpenChange={onClose}>
-            <DialogContent className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl ">
+            <DialogContent className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto">
                 <DialogHeader className="mt-5">
                     <DialogTitle>{place?.name}</DialogTitle>
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
-                <div className="space-y-2">
+                <div className="space-y-3">
                     <p>
                         <strong>Google Maps Profile:</strong>{" "}
                         {place?.googleMapsProfileURL ? (
