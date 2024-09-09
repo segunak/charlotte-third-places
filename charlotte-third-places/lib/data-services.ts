@@ -27,6 +27,13 @@ const getImageExtension = async (url: string): Promise<string> => {
     }
 };
 
+// Ensure that the directory exists before writing files
+const ensureDirectoryExists = (dir: string) => {
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true });
+    }
+};
+
 export async function getPlaces(): Promise<Place[]> {
     const records = await base('Charlotte Third Places').select({ view: 'Production' }).all();
 
@@ -41,6 +48,9 @@ export async function getPlaces(): Promise<Place[]> {
                 const extension = await getImageExtension(coverPhotoURL);
                 const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
                 localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
+
+                // Ensure the directory exists
+                ensureDirectoryExists(path.resolve('./public/images/'));
 
                 try {
                     const response = await axios({
