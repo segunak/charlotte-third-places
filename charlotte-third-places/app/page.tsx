@@ -28,7 +28,7 @@ export default async function HomePage() {
           For a map view, click <Link href="/map" className="custom-link">here</Link>. If you'd like to contribute a place, or suggest enhancements to existing places, click <Link href="/contribute" className="custom-link">here</Link>. For more information about the site, click <Link href="/about" className="custom-link">here</Link>.
         </p>
         <p className="mt-4 font-bold">
-          Click on a row to expand its details and see additional columns.
+          Click on a place for a more detailed  to expand its details and see additional columns.
         </p>
       </div>
 
