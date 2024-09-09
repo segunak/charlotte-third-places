@@ -22,7 +22,13 @@ export default async function HomePage() {
           <span className="hidden sm:inline">Charlotte, North Carolina</span>
         </h1>
         <p>
-          Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> using the table below. You can filter, search, sort, and scroll through the list. Places are listed in alphabetical order by default. For a map view, click <Link href="/map" className="custom-link">here</Link>. If you'd like to contribute a place, or suggest enhancements to existing places, click <Link href="/contribute" className="custom-link">here</Link>. For more information about the site, click <Link href="/about" className="custom-link">here</Link>.
+          Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> using the table below. You can filter, search, sort, and scroll through the list. Places are listed in alphabetical order by default.
+        </p>
+        <p className="mt-6">
+          For a map view, click <Link href="/map" className="custom-link">here</Link>. If you'd like to contribute a place, or suggest enhancements to existing places, click <Link href="/contribute" className="custom-link">here</Link>. For more information about the site, click <Link href="/about" className="custom-link">here</Link>.
+        </p>
+        <p className="mt-6 font-bold">
+          Click on any row in the grid to open up a more detailed view of information about the place.
         </p>
       </div>
 
