@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from 'next/image';
-import { Place } from "@/lib/data-models";
+import { Place } from "@/components/DataModels";
 import { Button } from "@/components/ui/button";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -38,6 +38,14 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
 
                 <div className="space-y-3">
                     <p>
+                        <strong>Website:</strong>{" "}
+                        {place?.website ? (
+                            <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
+                        ) : (
+                            "No website available."
+                        )}
+                    </p>
+                    <p>
                         <strong>Google Maps Profile:</strong>{" "}
                         {place?.googleMapsProfileURL ? (
                             <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
@@ -52,14 +60,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Parking Situation:</strong> {place?.parkingSituation}</p>
                     <p><strong>Free Wifi:</strong> {place?.freeWifi}</p>
                     <p><strong>Has Cinnamon Rolls:</strong> {place?.hasCinnamonRolls}</p>
-                    <p>
-                        <strong>Website:</strong>{" "}
-                        {place?.website ? (
-                            <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
-                        ) : (
-                            "No website available."
-                        )}
-                    </p>
                     <p><strong>Description:</strong> {place?.description || "No description available."}</p>
                     <p><strong>Site Author Comments:</strong> {place?.comments || "None."}</p>
                 </div>

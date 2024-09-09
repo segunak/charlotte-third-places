@@ -1,6 +1,7 @@
 "use client"
 
 import { ColDef } from '@ag-grid-community/core';
+import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 // General definition for the schema returned by Airtable
 export type Place = {
@@ -175,12 +176,27 @@ export const gridColumns: ColDef[] = [
   },
   {
     headerName: "Google Maps Profile",
-    field: "googleMapsProfileURL"
+    field: "googleMapsProfileURL",
+    cellRenderer: (props: any) => {
+      return (
+        <a href={props.value}  target="_blank" rel="noopener noreferrer" 
+          style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
+          View Profile
+        </a>
+      );
+    }
   },
-  {
-    headerName: "Cover Photo URL",
-    field: "coverPhotoURL",
-  },
+  // {
+  //   headerName: "Cover Photo URL",
+  //   field: "coverPhotoURL",
+  //   cellRenderer: (props: any) => {
+  //     return (
+  //       <a href={props.value} target="_blank" rel="noopener noreferrer">
+  //         View Photo
+  //       </a>
+  //     );
+  //   }
+  // },
   {
     headerName: "Comments",
     field: "comments"

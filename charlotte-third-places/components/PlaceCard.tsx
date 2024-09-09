@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Place } from "@/lib/data-models";
+import { Place } from "@/components/DataModels";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 

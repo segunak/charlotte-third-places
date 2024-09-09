@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { getPlaces } from '@/lib/data-services';
-import { Place, gridColumns } from "@/lib/data-models";
+import { Place, gridColumns } from "@/components/DataModels";
 import { DataTable } from "@/components/DataTable";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 
