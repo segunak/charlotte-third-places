@@ -11,7 +11,7 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
     return (
         <Dialog open onOpenChange={onClose}>
-            <DialogContent>
+            <DialogContent className="rounded-lg w-11/12 sm:rounded-xl md:max-w-lg md:mx-auto sm:w-auto">
                 <DialogHeader>
                     <DialogTitle>{place?.name}</DialogTitle>
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
