@@ -100,8 +100,16 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     // Handle row selection
     const handleRowClick = useCallback((event: any) => {
-        setSelectedRow(event.data); // Set selected row for modal
+        const filterModel = gridRef.current?.api.getFilterModel();
+
+        // Only trigger modal if no active filters are being applied
+        const noActiveFilters = !filterModel || Object.keys(filterModel).length === 0;
+
+        if (noActiveFilters) {
+            setSelectedRow(event.data); // Set selected row for modal
+        }
     }, []);
+
 
     // Custom filter logic for AG Grid
     const isExternalFilterPresent = useCallback(() => {
@@ -140,6 +148,8 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     ),
                     autoHeight: true,  // Enable autoHeight for mobile to adjust row height based on card content
                     suppressMovableColumns: true,  // No column movement needed on mobile
+                    flex: 1,  // Flex-grow to fit the grid width and prevent horizontal scrolling
+                    wrapText: true, // Ensure text doesn't overflow the card width
                 }
             ];
         }
