@@ -126,6 +126,25 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     // Memoized column definitions
     const updatedColDefs = useMemo(() => {
+        if (isMobile) {
+            // Mobile view - Single "Place" column that shows the PlaceCard
+            return [
+                {
+                    headerName: "Place",
+                    field: "name",  // We can use 'name' field to trigger the modal on row click
+                    cellRenderer: (params: any) => (
+                        <PlaceCard
+                            place={params.data}
+                            onClick={() => handleRowClick({ data: params.data })}
+                        />
+                    ),
+                    autoHeight: true,  // Enable autoHeight for mobile to adjust row height based on card content
+                    suppressMovableColumns: true,  // No column movement needed on mobile
+                }
+            ];
+        }
+
+        // Desktop view - Show all columns
         return colDefs.map((col) => {
             if (col.field === "type" || col.field === "ambience") {
                 return {
@@ -136,9 +155,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
             }
             return col;
         });
-    }, [colDefs]);
+    }, [colDefs, isMobile, handleRowClick]);
 
-    // Effect to filter the data based on the selected filters
+    // Effect to prevent triggering row click on filter changes
     useEffect(() => {
         const filtered = rowData.filter((item: any) => {
             const { name, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
@@ -155,6 +174,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 (hasCinnamonRolls.value === "all" || item.hasCinnamonRolls === filters.hasCinnamonRolls.value)
             );
         });
+
         setFilteredData(filtered);
     }, [filters, rowData]);
 
@@ -209,6 +229,8 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     doesExternalFilterPass={doesExternalFilterPass}
                     suppressMovableColumns={true}
                     onRowClicked={handleRowClick}
+                    domLayout="autoHeight" // Ensures that grid height adjusts to content
+                    rowHeight={isMobile ? 150 : undefined}  // Adjust row height on mobile for PlaceCard
                 />
             </div>
 
