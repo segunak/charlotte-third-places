@@ -98,18 +98,25 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         gridRef.current?.api.onFilterChanged();
     }, [filterConfig]);
 
-    // Handle row selection
     const handleRowClick = useCallback((event: any) => {
         const filterModel = gridRef.current?.api.getFilterModel();
 
-        // Only trigger modal if no active filters are being applied
-        const noActiveFilters = !filterModel || Object.keys(filterModel).length === 0;
+        // Ensure filterModel is defined before using Object.keys
+        const noActiveFilters = !filterModel || Object.keys(filterModel ?? {}).length === 0;
 
-        if (noActiveFilters) {
-            setSelectedRow(event.data); // Set selected row for modal
+        console.log("Filter model:", filterModel); // Print the filter model
+        console.log("Filter model keys:", Object.keys(filterModel ?? {})); // Safely log the keys of the filter model
+        console.log("Number of active filters:", Object.keys(filterModel ?? {}).length); // Safely print the length of filter model keys
+
+        // Guard clause: Ensure the row click event is genuine
+        if (!noActiveFilters || !filterModel) {
+            return; // Do nothing if filtering is active or the event is not an actual row click
         }
-    }, []);
 
+        console.log("No active filters and row clicked");
+
+        setSelectedRow(event.data); // Set selected row for modal
+    }, []);
 
     // Custom filter logic for AG Grid
     const isExternalFilterPresent = useCallback(() => {

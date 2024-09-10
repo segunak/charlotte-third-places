@@ -10,6 +10,39 @@
                 "port": 9091
             },
             "preLaunchTask": "func: host start"
+        },
+        {
+            "name": "Next.js: debug server-side",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run dev",
+            "cwd": "${workspaceFolder}/charlotte-third-places"
+        },
+        {
+            "name": "Next.js: debug client-side",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000"
+        },
+        {
+            "name": "Next.js: debug full stack",
+            "type": "node",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "program": "${workspaceFolder}/charlotte-third-places/node_modules/.bin/next",
+            "runtimeArgs": [
+                "--inspect"
+            ],
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "serverReadyAction": {
+                "action": "debugWithEdge",
+                "killOnServerStop": true,
+                "pattern": "- Local:.+(https?://.+)",
+                "uriFormat": "%s",
+                "webRoot": "${workspaceFolder}/charlotte-third-places"
+            }
         }
     ]
 }
