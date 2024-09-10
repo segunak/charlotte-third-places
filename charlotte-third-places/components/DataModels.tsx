@@ -1,7 +1,6 @@
 "use client"
 
 import { ColDef } from '@ag-grid-community/core';
-import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 // General definition for the schema returned by Airtable
 export type Place = {
@@ -58,7 +57,7 @@ const normalizeTextForSearch = (value: string | null | undefined): string => {
     .toLowerCase();
 };
 
-// Column definitions for the AG Grid defined in data-table.tsx and used in app/page.tsx (the homepage)
+// Column definitions for the AG Grid
 export const gridColumns: ColDef[] = [
   {
     headerName: "Name",
@@ -119,10 +118,10 @@ export const gridColumns: ColDef[] = [
       textFormatter: normalizeTextForSearch,
     },
   },
-  {
-    headerName: "Address",
-    field: "address"
-  },
+  // {
+  //   headerName: "Address",
+  //   field: "address"
+  // },
   {
     headerName: "Purchase Required",
     field: "purchaseRequired",
@@ -166,26 +165,26 @@ export const gridColumns: ColDef[] = [
       textFormatter: normalizeTextForSearch,
     },
   },
-  {
-    headerName: "Description",
-    field: "description"
-  },
-  {
-    headerName: "Website",
-    field: "website"
-  },
-  {
-    headerName: "Google Maps Profile",
-    field: "googleMapsProfileURL",
-    cellRenderer: (props: any) => {
-      return (
-        <a href={props.value}  target="_blank" rel="noopener noreferrer" 
-          style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
-          View Profile
-        </a>
-      );
-    }
-  },
+  // {
+  //   headerName: "Description",
+  //   field: "description"
+  // },
+  // {
+  //   headerName: "Website",
+  //   field: "website"
+  // },
+  // {
+  //   headerName: "Google Maps Profile",
+  //   field: "googleMapsProfileURL",
+  //   cellRenderer: (props: any) => {
+  //     return (
+  //       <a href={props.value}  target="_blank" rel="noopener noreferrer" 
+  //         style={{ color: 'blue', textDecoration: 'underline', cursor: 'pointer' }}>
+  //         View Profile
+  //       </a>
+  //     );
+  //   }
+  // },
   // {
   //   headerName: "Cover Photo URL",
   //   field: "coverPhotoURL",
@@ -197,8 +196,8 @@ export const gridColumns: ColDef[] = [
   //     );
   //   }
   // },
-  {
-    headerName: "Comments",
-    field: "comments"
-  }
+  // {
+  //   headerName: "Comments",
+  //   field: "comments"
+  // }
 ];
