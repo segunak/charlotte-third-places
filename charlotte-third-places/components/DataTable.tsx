@@ -209,7 +209,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Dynamically Render Filters */}
                 {Object.entries(filters).map(([field, config]) => (
-                    <Select key={`${field}-${config.value}`} onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}>
+                    <Select key={field} onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}>
                         <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                             <SelectValue placeholder={config.placeholder}>
                                 {config.value === "all" ? config.placeholder : config.value}
