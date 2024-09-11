@@ -115,52 +115,40 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     }, [filters]);
 
     const doesExternalFilterPass = useCallback((node: IRowNode) => {
-        // Helper function to determine if a field matches the filter value.
-        // 1. If the filterValue is "all", return true (i.e., no filter applied for this field).
-        // 2. If the fieldValue is an array (e.g., multiple types), check if it includes the filterValue.
-        // 3. Otherwise, check if the fieldValue matches the filterValue exactly.
-        const isFieldMatch = (fieldValue: string | string[], filterValue: string) =>
-            filterValue === "all" ||
-            (Array.isArray(fieldValue) ? fieldValue.includes(filterValue) : fieldValue === filterValue);
-
-        // Destructuring filter values from the filters object for easier reference.
         const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
+        const isTypeMatch = type.value === "all" || (node.data.type && node.data.type.includes(type.value));
 
-        // Return true if all fields in the row node pass their respective filter.
-        // This checks each field against its corresponding filter using the helper function `isFieldMatch`.
         return (
-            isFieldMatch(node.data.name, name.value) &&
-            isFieldMatch(node.data.type, type.value) &&
-            isFieldMatch(node.data.size, size.value) &&
-            isFieldMatch(node.data.neighborhood, neighborhood.value) &&
-            isFieldMatch(node.data.purchaseRequired, purchaseRequired.value) &&
-            isFieldMatch(node.data.parkingSituation, parkingSituation.value) &&
-            isFieldMatch(node.data.freeWifi, freeWifi.value) &&
-            isFieldMatch(node.data.hasCinnamonRolls, hasCinnamonRolls.value)
+            isTypeMatch &&
+            (name.value === "all" || node.data.name === name.value) &&
+            (size.value === "all" || node.data.size === size.value) &&
+            (neighborhood.value === "all" || node.data.neighborhood === neighborhood.value) &&
+            (purchaseRequired.value === "all" || node.data.purchaseRequired === purchaseRequired.value) &&
+            (parkingSituation.value === "all" || node.data.parkingSituation === parkingSituation.value) &&
+            (freeWifi.value === "all" || node.data.freeWifi === freeWifi.value) &&
+            (hasCinnamonRolls.value === "all" || node.data.hasCinnamonRolls === hasCinnamonRolls.value)
         );
     }, [filters]);
 
+    const isFullWidthRow = useCallback((params: any) => {
+        // Enable full-width row only for mobile views
+        return isMobile;
+    }, [isMobile]);
+
+    const fullWidthCellRenderer = useCallback((params: any) => {
+        return (
+            <PlaceCard
+                place={params.data}
+                onClick={() => handleRowClick({ data: params.data })}
+            />
+        );
+    }, [handleRowClick]);
 
     // Memoized column definitions
     const updatedColDefs = useMemo(() => {
         if (isMobile) {
-            // Mobile view - Single "Place" column that shows the PlaceCard
-            return [
-                {
-                    headerName: "Place",
-                    field: "name",  // We can use 'name' field to trigger the modal on row click
-                    cellRenderer: (params: any) => (
-                        <PlaceCard
-                            place={params.data}
-                            onClick={() => handleRowClick({ data: params.data })}
-                        />
-                    ),
-                    autoHeight: true,  // Enable autoHeight for mobile to adjust row height based on card content
-                    suppressMovableColumns: true,  // No column movement needed on mobile
-                    flex: 1,  // Flex-grow to fit the grid width and prevent horizontal scrolling
-                    wrapText: true, // Ensure text doesn't overflow the card width
-                }
-            ];
+            // No need for a specific column definition as full-width row will handle rendering
+            return [];
         }
 
         // Desktop view - Show all columns
@@ -174,7 +162,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
             }
             return col;
         });
-    }, [colDefs, isMobile, handleRowClick]);
+    }, [colDefs, isMobile]);
 
     return (
         <div>
@@ -190,7 +178,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Dynamically Render Filters */}
                 {Object.entries(filters).map(([field, config]) => (
-                    <Select 
+                    <Select
                         key={field}
                         value={config.value}
                         onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}
@@ -232,7 +220,9 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     suppressMovableColumns={true}
                     onRowClicked={handleRowClick}
                     domLayout="autoHeight" // Ensures that grid height adjusts to content
-                    rowHeight={isMobile ? 150 : undefined}  // Adjust row height on mobile for PlaceCard
+                    rowHeight={isMobile ? 170 : undefined}  // Adjust row height on mobile for PlaceCard
+                    isFullWidthRow={isFullWidthRow}  // Enable full width row for mobile
+                    fullWidthCellRenderer={fullWidthCellRenderer}  // Renderer for full width row
                 />
             </div>
 
