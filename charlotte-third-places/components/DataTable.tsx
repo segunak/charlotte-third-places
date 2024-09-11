@@ -92,30 +92,21 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
     // Reset filters to default values
     const handleResetFilters = useCallback(() => {
-        setFilters(filterConfig);
+        //setFilters(filterConfig);
+        setFilters((prevFilters) => {
+            const resetFilters = { ...prevFilters };
+            Object.keys(resetFilters).forEach((key) => {
+                resetFilters[key as keyof typeof prevFilters].value = "all";
+            });
+            return resetFilters;
+        });
         setQuickFilterText("");
         gridRef.current?.api.setFilterModel(null);
         gridRef.current?.api.onFilterChanged();
-    }, [filterConfig]);
+    }, []);
 
     const handleRowClick = useCallback((event: any) => {
-        const filterModel = gridRef.current?.api.getFilterModel();
-
-        // Ensure filterModel is defined before using Object.keys
-        const noActiveFilters = !filterModel || Object.keys(filterModel ?? {}).length === 0;
-
-        console.log("Filter model:", filterModel); // Print the filter model
-        console.log("Filter model keys:", Object.keys(filterModel ?? {})); // Safely log the keys of the filter model
-        console.log("Number of active filters:", Object.keys(filterModel ?? {}).length); // Safely print the length of filter model keys
-
-        // Guard clause: Ensure the row click event is genuine
-        if (!noActiveFilters || !filterModel) {
-            return; // Do nothing if filtering is active or the event is not an actual row click
-        }
-
-        console.log("No active filters and row clicked");
-
-        setSelectedRow(event.data); // Set selected row for modal
+        setSelectedRow(event.data);
     }, []);
 
     // Custom filter logic for AG Grid
@@ -124,20 +115,31 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     }, [filters]);
 
     const doesExternalFilterPass = useCallback((node: IRowNode) => {
-        const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
-        const isTypeMatch = type.value === "all" || (node.data.type && node.data.type.includes(type.value));
+        // Helper function to determine if a field matches the filter value.
+        // 1. If the filterValue is "all", return true (i.e., no filter applied for this field).
+        // 2. If the fieldValue is an array (e.g., multiple types), check if it includes the filterValue.
+        // 3. Otherwise, check if the fieldValue matches the filterValue exactly.
+        const isFieldMatch = (fieldValue: string | string[], filterValue: string) =>
+            filterValue === "all" ||
+            (Array.isArray(fieldValue) ? fieldValue.includes(filterValue) : fieldValue === filterValue);
 
+        // Destructuring filter values from the filters object for easier reference.
+        const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
+
+        // Return true if all fields in the row node pass their respective filter.
+        // This checks each field against its corresponding filter using the helper function `isFieldMatch`.
         return (
-            (name.value === "all" || node.data.name === name.value) &&
-            isTypeMatch &&
-            (size.value === "all" || node.data.size === size.value) &&
-            (neighborhood.value === "all" || node.data.neighborhood === neighborhood.value) &&
-            (purchaseRequired.value === "all" || node.data.purchaseRequired === purchaseRequired.value) &&
-            (parkingSituation.value === "all" || node.data.parkingSituation === parkingSituation.value) &&
-            (freeWifi.value === "all" || node.data.freeWifi === freeWifi.value) &&
-            (hasCinnamonRolls.value === "all" || node.data.hasCinnamonRolls === hasCinnamonRolls.value)
+            isFieldMatch(node.data.name, name.value) &&
+            isFieldMatch(node.data.type, type.value) &&
+            isFieldMatch(node.data.size, size.value) &&
+            isFieldMatch(node.data.neighborhood, neighborhood.value) &&
+            isFieldMatch(node.data.purchaseRequired, purchaseRequired.value) &&
+            isFieldMatch(node.data.parkingSituation, parkingSituation.value) &&
+            isFieldMatch(node.data.freeWifi, freeWifi.value) &&
+            isFieldMatch(node.data.hasCinnamonRolls, hasCinnamonRolls.value)
         );
     }, [filters]);
+
 
     // Memoized column definitions
     const updatedColDefs = useMemo(() => {
@@ -174,27 +176,6 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         });
     }, [colDefs, isMobile, handleRowClick]);
 
-    // Effect to prevent triggering row click on filter changes
-    useEffect(() => {
-        const filtered = rowData.filter((item: any) => {
-            const { name, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
-            const isTypeMatch = filters.type.value === "all" || (item.type && item.type.includes(filters.type.value));
-
-            return (
-                (name.value === "all" || item.name === name.value) &&
-                isTypeMatch &&
-                (size.value === "all" || item.size === filters.size.value) &&
-                (neighborhood.value === "all" || item.neighborhood === filters.neighborhood.value) &&
-                (purchaseRequired.value === "all" || item.purchaseRequired === filters.purchaseRequired.value) &&
-                (parkingSituation.value === "all" || item.parkingSituation === filters.parkingSituation.value) &&
-                (freeWifi.value === "all" || item.freeWifi === filters.freeWifi.value) &&
-                (hasCinnamonRolls.value === "all" || item.hasCinnamonRolls === filters.hasCinnamonRolls.value)
-            );
-        });
-
-        setFilteredData(filtered);
-    }, [filters, rowData]);
-
     return (
         <div>
             {/* Filters and Search */}
@@ -209,7 +190,11 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
 
                 {/* Dynamically Render Filters */}
                 {Object.entries(filters).map(([field, config]) => (
-                    <Select key={field} onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}>
+                    <Select 
+                        key={field}
+                        value={config.value}
+                        onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}
+                    >
                         <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                             <SelectValue placeholder={config.placeholder}>
                                 {config.value === "all" ? config.placeholder : config.value}
