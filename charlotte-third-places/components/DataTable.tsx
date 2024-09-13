@@ -83,9 +83,7 @@ export function DataTable({ rowData }: DataTableProps) {
         setQuickFilterText(event.target.value);
     }, []);
 
-
     const handleResetFilters = useCallback(() => {
-        //setFilters(filterConfig);
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
             Object.keys(resetFilters).forEach((key) => {
@@ -94,12 +92,6 @@ export function DataTable({ rowData }: DataTableProps) {
             return resetFilters;
         });
         setQuickFilterText("");
-        gridRef.current?.api.setFilterModel(null);
-        gridRef.current?.api.onFilterChanged();
-    }, []);
-
-    const handleRowClick = useCallback((event: any) => {
-        setSelectedRow(event.data);
     }, []);
 
     // Custom filter logic for AG Grid
@@ -108,126 +100,144 @@ export function DataTable({ rowData }: DataTableProps) {
     }, [filters]);
 
     const doesExternalFilterPass = useCallback((node: IRowNode) => {
-        const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
-        const isTypeMatch = type.value === "all" || (node.data.type && node.data.type.includes(type.value));
+        const { group } = node.data;
 
-        return (
-            isTypeMatch &&
-            (name.value === "all" || node.data.name === name.value) &&
-            (size.value === "all" || node.data.size === size.value) &&
-            (neighborhood.value === "all" || node.data.neighborhood === neighborhood.value) &&
-            (purchaseRequired.value === "all" || node.data.purchaseRequired === purchaseRequired.value) &&
-            (parkingSituation.value === "all" || node.data.parkingSituation === parkingSituation.value) &&
-            (freeWifi.value === "all" || node.data.freeWifi === freeWifi.value) &&
-            (hasCinnamonRolls.value === "all" || node.data.hasCinnamonRolls === hasCinnamonRolls.value)
-        );
+        return group.some((place: any) => {
+            const {
+                name,
+                type,
+                size,
+                neighborhood,
+                purchaseRequired,
+                parkingSituation,
+                freeWifi,
+                hasCinnamonRolls,
+            } = filters;
+
+            const isTypeMatch =
+                type.value === "all" || (place.type && place.type.includes(type.value));
+
+            return (
+                isTypeMatch &&
+                (name.value === "all" || place.name === name.value) &&
+                (size.value === "all" || place.size === size.value) &&
+                (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
+                (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
+                (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
+            );
+        });
     }, [filters]);
 
     const isFullWidthRow = useCallback((params: any) => {
         return true;
     }, []);
 
-    const fullWidthCellRenderer = useCallback((params: any) => {
-        return (
-            <PlaceCard
-                place={params.data}
-                onClick={() => handleRowClick({ data: params.data })}
-            />
-        );
-    }, [handleRowClick]);
+    const handlePlaceClick = useCallback((place: any) => {
+        setSelectedRow(place);
+    }, []);
 
-    // Updated column definitions for hiding fields in the grid but allowing filtering
+    const fullWidthCellRenderer = useCallback(
+        (params: any) => {
+            const { group } = params.data;
+            return (
+                <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                    {group.map((place: any, index: number) => (
+                        <div key={index} className="w-full sm:w-1/2">
+                            <PlaceCard
+                                place={place}
+                                onClick={() => handlePlaceClick(place)}
+                            />
+                        </div>
+                    ))}
+                </div>
+            );
+        },
+        [handlePlaceClick]
+    );
+
     const columnDefs = useMemo(() => {
-        // Only show "Place" column but allow filtering based on hidden columns
         const gridColumns: ColDef[] = [
             {
-                headerName: "Place",
-                field: "name",
-                cellRenderer: (params: any) => (
-                    <PlaceCard
-                        place={params.data}
-                        onClick={() => handleRowClick({ data: params.data })}
-                    />
-                ),
-                autoHeight: true,
+                headerName: "",
+                field: "dummy",
                 flex: 1,
                 resizable: false,
-                wrapText: true, // Ensure text doesn't overflow the card width
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            // Hidden columns, available for filtering but not visible in the grid. All columns
-            // are accessible in PlaceModal.tsx after a user clicks a row because it's passed the full
-            // data, as provided from Airtable in the calling app/page.tsx. The definitions here of hidden
-            // columns has value in that they can be used to filter/search even though their values aren't seen
-            // until a user clicks a place.
-            {
-                field: "type",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            {
-                field: "size",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            {
-                field: "ambience",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            {
-                field: "address",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            {
-                field: "neighborhood",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            { field: "purchaseRequired", hide: true },
-            {
-                field: "parkingSituation",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            { field: "freeWifi", hide: true }, // Used for filtering, but not in quick search as the value are just Yes/No.
-            { field: "hasCinnamonRolls", hide: true }, // Used for filtering, but not in quick search as the value are just Yes/No.
-            {
-                field: "description",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
-            },
-            {
-                field: "comments",
-                hide: true,
-                getQuickFilterText: params => {
-                    return normalizeTextForSearch(params.value);
-                }
+                cellRenderer: "agFullWidthCellRenderer",
             }
         ];
 
         return gridColumns;
-    }, [handleRowClick]);
+    }, []);
+
+    const groupedRowData = useMemo(() => {
+        const grouped = [];
+        for (let i = 0; i < rowData.length; i += 2) {
+            const group = rowData.slice(i, i + 2);
+            grouped.push({ group });
+        }
+        return grouped;
+    }, [rowData]);
+
+    const applyFilters = useCallback(
+        (data: any[]) => {
+            return data.filter((place: any) => {
+                const {
+                    name,
+                    type,
+                    size,
+                    neighborhood,
+                    purchaseRequired,
+                    parkingSituation,
+                    freeWifi,
+                    hasCinnamonRolls,
+                } = filters;
+
+                const isTypeMatch =
+                    type.value === "all" || (place.type && place.type.includes(type.value));
+
+                return (
+                    isTypeMatch &&
+                    (name.value === "all" || place.name === name.value) &&
+                    (size.value === "all" || place.size === size.value) &&
+                    (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
+                    (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
+                    (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                    (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                    (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
+                );
+            });
+        },
+        [filters]
+    );
+
+    const filteredAndGroupedRowData = useMemo(() => {
+        // Apply quick filter text
+        let filteredData = rowData;
+
+        if (quickFilterText.trim() !== "") {
+            const lowerCaseFilter = quickFilterText.toLowerCase();
+            filteredData = filteredData.filter((place: any) =>
+                normalizeTextForSearch(JSON.stringify(place)).includes(lowerCaseFilter)
+            );
+        }
+
+        // Apply selected filters
+        filteredData = applyFilters(filteredData);
+
+        // Group the filtered data into pairs
+        const grouped = [];
+        for (let i = 0; i < filteredData.length; i += 2) {
+            const group = filteredData.slice(i, i + 2);
+            grouped.push({ group });
+        }
+        return grouped;
+    }, [rowData, quickFilterText, applyFilters]);
+
 
     return (
-        <div className="overflow-y-auto">
+        <div>
             {/* Filters and Search */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-5 m-px">
                 <Input
@@ -270,27 +280,26 @@ export function DataTable({ rowData }: DataTableProps) {
                 </Button>
             </div>
 
-            <div className="ag-theme-custom w-full mx-auto">
-                <AgGridReact
-                    ref={gridRef}
-                    rowData={rowData}
-                    columnDefs={columnDefs}
-                    autoSizeStrategy={autoSizeStrategy}
-                    quickFilterText={quickFilterText}
-                    includeHiddenColumnsInQuickFilter={true}
-                    isExternalFilterPresent={isExternalFilterPresent}
-                    doesExternalFilterPass={doesExternalFilterPass}
-                    suppressMovableColumns={true}
-                    onRowClicked={handleRowClick}
-                    domLayout="autoHeight" // Ensures that grid height adjusts to content
-                    rowHeight={175}
-                    isFullWidthRow={isFullWidthRow}
-                    fullWidthCellRenderer={fullWidthCellRenderer}
-                />
-            </div>
+            <div className="flex flex-col h-screen">
+                <div className="ag-theme-custom w-full mx-auto flex-grow overflow-y-auto">
+                    <AgGridReact
+                        ref={gridRef}
+                        rowData={filteredAndGroupedRowData}
+                        columnDefs={columnDefs}
+                        autoSizeStrategy={autoSizeStrategy}
+                        quickFilterText={quickFilterText}
+                        includeHiddenColumnsInQuickFilter={true}
+                        suppressMovableColumns={true}
+                        domLayout="normal" // Ensures that grid height adjusts to content
+                        rowHeight={175}
+                        isFullWidthRow={isFullWidthRow}
+                        fullWidthCellRenderer={fullWidthCellRenderer}
+                    />
+                </div>
 
-            {/* Modal for Card Display */}
-            {selectedRow && <PlaceModal place={selectedRow} onClose={() => setSelectedRow(null)} />}
+                {/* Modal for Card Display */}
+                {selectedRow && <PlaceModal place={selectedRow} onClose={() => setSelectedRow(null)} />}
+            </div>
         </div>
     );
 }
