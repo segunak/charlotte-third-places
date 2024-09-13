@@ -42,14 +42,12 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
     return (
         <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full" onClick={onClick}>
             <CardHeader className="pb-2">
-                <CardTitle className="text-lg font-semibold truncate">{place?.name}</CardTitle>
-                <CardDescription className="text-sm text-muted-foreground truncate">
-                    <span className="text-gray-500">{place?.neighborhood}</span>
-                </CardDescription>
+                <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
+                <CardDescription className="truncate">{place?.neighborhood}</CardDescription>
             </CardHeader>
             <CardContent className="w-full overflow-hidden">
                 <span className="space-y-2">
-                    <span className="text-gray-600 text-sm truncate">
+                    <span className="text-sm truncate">
                         <strong>Address: </strong> {place?.address}
                     </span>
                     <span className="flex flex-wrap space-x-2">

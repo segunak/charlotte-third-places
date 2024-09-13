@@ -227,9 +227,9 @@ export function DataTable({ rowData }: DataTableProps) {
     }, [handleRowClick]);
 
     return (
-        <div className="flex-1 overflow-y-auto">
+        <div className="overflow-y-auto">
             {/* Filters and Search */}
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5 m-px">
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-5 m-px">
                 <Input
                     type="text"
                     placeholder="Search All Fields..."
