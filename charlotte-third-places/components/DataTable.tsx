@@ -151,7 +151,7 @@ export function DataTable({ rowData }: DataTableProps) {
                 ),
                 autoHeight: true,
                 flex: 1,
-                pinned: 'left',
+                resizable: false,
                 wrapText: true, // Ensure text doesn't overflow the card width
                 getQuickFilterText: params => {
                     return normalizeTextForSearch(params.value);
@@ -285,7 +285,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     domLayout="autoHeight" // Ensures that grid height adjusts to content
                     rowHeight={175}
                     isFullWidthRow={isFullWidthRow}
-                    fullWidthCellRenderer={fullWidthCellRenderer}  // Renderer for full width row
+                    fullWidthCellRenderer={fullWidthCellRenderer}
                 />
             </div>
 

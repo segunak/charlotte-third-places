@@ -3,7 +3,6 @@ import path from 'path';
 import axios from 'axios';
 import crypto from 'crypto';
 import Airtable from 'airtable';
-import { Place } from '@/components/DataModels';
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
