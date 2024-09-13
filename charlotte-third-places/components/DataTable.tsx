@@ -175,9 +175,16 @@ export function DataTable({ rowData }: DataTableProps) {
         (params: any) => {
             const { group } = params.data;
             return (
-                <div className="flex flex-col sm:flex-row flex-wrap sm:space-x-4 space-y-4 sm:space-y-0">
+                <div
+                    // Container div for the row
+                    className="flex flex-wrap -mx-2"
+                >
                     {group.map((place: any, index: number) => (
-                        <div key={index} className="w-full sm:w-1/3 sm:px-2">
+                        <div
+                            key={index}
+                            // Wrapper div for each card
+                            className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4"
+                        >
                             <PlaceCard
                                 place={place}
                                 onClick={() => handlePlaceClick(place)}
@@ -189,6 +196,7 @@ export function DataTable({ rowData }: DataTableProps) {
         },
         [handlePlaceClick]
     );
+
 
     return (
         <div>
