@@ -1,6 +1,39 @@
 import { FC } from "react";
+import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { Button } from "@/components/ui/button"
 import { Place } from "@/components/DataModels";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+
+// Predefined color mappings for tag backgrounds and text
+const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
+    "Restaurant": { bgColor: "bg-green-100", textColor: "text-green-800" },
+    "Cafe": { bgColor: "bg-blue-100", textColor: "text-blue-800" },
+    "Coffee Shop": { bgColor: "bg-yellow-100", textColor: "text-yellow-800" },
+    "Bakery": { bgColor: "bg-red-100", textColor: "text-red-800" },
+    "Bar": { bgColor: "bg-purple-100", textColor: "text-purple-800" },
+    // Add more types as needed, or default to a random color for unmapped types
+};
+
+// Extended fallback colors with warm and vibrant tones
+const fallbackColors = [
+    { bgColor: "bg-orange-100", textColor: "text-orange-800" },
+    { bgColor: "bg-teal-100", textColor: "text-teal-800" },
+    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },
+    { bgColor: "bg-pink-100", textColor: "text-pink-800" },
+    { bgColor: "bg-lime-100", textColor: "text-lime-800" },
+    { bgColor: "bg-amber-100", textColor: "text-amber-800" },
+    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" },
+    { bgColor: "bg-rose-100", textColor: "text-rose-800" },
+    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },
+    { bgColor: "bg-violet-100", textColor: "text-violet-800" },
+    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" },
+    { bgColor: "bg-lightBlue-100", textColor: "text-lightBlue-800" },
+];
+
+// Function to get colors for a tag, with fallback support
+const getTagColors = (tag: string, index: number) => {
+    return colorMap[tag] || fallbackColors[index % fallbackColors.length];
+};
 
 interface PlaceCardProps {
     place: Place;
@@ -13,23 +46,26 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg font-semibold truncate">{place?.name}</CardTitle>
                 <CardDescription className="text-sm text-muted-foreground truncate">
-                    <p className="text-gray-500">{place?.neighborhood}</p>
+                    <span className="text-gray-500">{place?.neighborhood}</span>
                 </CardDescription>
             </CardHeader>
             <CardContent className="w-full overflow-hidden">
-                <div className="space-y-2">
-                    <p className="text-gray-600 text-sm truncate">
+                <span className="space-y-2">
+                    <span className="text-gray-600 text-sm truncate">
                         <strong>Address: </strong> {place?.address}
-                    </p>
-                    <div className="flex flex-wrap space-x-2">
+                    </span>
+                    <span className="flex flex-wrap space-x-2">
                         <strong>Type: </strong>
-                        {place?.type?.map((tag) => (
-                            <span key={tag} className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg">
-                                {tag}
-                            </span>
-                        ))}
-                    </div>
-                </div>
+                        {place?.type?.map((tag, index) => {
+                            const { bgColor, textColor } = getTagColors(tag, index);
+                            return (
+                                <span key={tag} className={`${bgColor} ${textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                                    {tag}
+                                </span>
+                            );
+                        })}
+                    </span>
+                </span>
             </CardContent>
         </Card>
     );

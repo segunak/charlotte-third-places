@@ -4,7 +4,6 @@
 import "@/styles/ag-grid-theme-builder.css";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/useIsMobile"
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
@@ -26,19 +25,17 @@ ModuleRegistry.registerModules([ClientSideRowModelModule]);
 interface DataTableProps {
     rowData: Array<object>; // Accepts an array of objects for the row data
     colDefs: ColDef[]; // Accepts column definitions for AG Grid
-    style?: React.CSSProperties; // Optional style prop with CSS properties
 }
 
 const autoSizeStrategy: SizeColumnsToContentStrategy = {
     type: 'fitCellContents',
 };
 
-export function DataTable({ rowData, colDefs, style }: DataTableProps) {
+export function DataTable({ rowData, colDefs }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
     const [filteredData, setFilteredData] = useState(rowData);
     const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
-    const isMobile = useIsMobile();
 
     // Unified filter object
     const filterConfig = useMemo(() => ({
@@ -131,9 +128,8 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
     }, [filters]);
 
     const isFullWidthRow = useCallback((params: any) => {
-        // Enable full-width row only for mobile views
-        return isMobile;
-    }, [isMobile]);
+        return true;
+    }, []);
 
     const fullWidthCellRenderer = useCallback((params: any) => {
         return (
@@ -144,25 +140,36 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
         );
     }, [handleRowClick]);
 
-    // Memoized column definitions
+    // Updated column definitions for hiding fields in the grid but allowing filtering
     const updatedColDefs = useMemo(() => {
-        if (isMobile) {
-            // No need for a specific column definition as full-width row will handle rendering
-            return [];
-        }
-
-        // Desktop view - Show all columns
-        return colDefs.map((col) => {
-            if (col.field === "type" || col.field === "ambience") {
-                return {
-                    ...col,
-                    valueFormatter: (params: any) =>
-                        Array.isArray(params.value) ? params.value.join(", ") : params.value, // Handle array values
-                };
-            }
-            return col;
-        });
-    }, [colDefs, isMobile]);
+        // Only show "Place" column but allow filtering based on hidden columns
+        return [
+            {
+                headerName: "Place",
+                field: "name",
+                cellRenderer: (params: any) => (
+                    <PlaceCard
+                        place={params.data}
+                        onClick={() => handleRowClick({ data: params.data })}
+                    />
+                ),
+                autoHeight: true,
+                flex: 1,
+                wrapText: true, // Ensure text doesn't overflow the card width
+            },
+            // Hidden columns, available for filtering but not visible in the grid
+            { field: "type", hide: true },
+            { field: "size", hide: true },
+            { field: "neighborhood", hide: true },
+            { field: "purchaseRequired", hide: true },
+            { field: "parkingSituation", hide: true },
+            { field: "freeWifi", hide: true },
+            { field: "hasCinnamonRolls", hide: true },
+            { field: "website", hide: true },
+            { field: "googleMapsProfileURL", hide: true },
+            { field: "coverPhotoURL", hide: true }
+        ];
+    }, [handleRowClick]);
 
     return (
         <div>
@@ -208,7 +215,7 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                 </Button>
             </div>
 
-            <div className="ag-theme-custom" style={{ ...style }}>
+            <div className="ag-theme-custom w-full mx-auto">
                 <AgGridReact
                     ref={gridRef}
                     rowData={filteredData}
@@ -220,8 +227,8 @@ export function DataTable({ rowData, colDefs, style }: DataTableProps) {
                     suppressMovableColumns={true}
                     onRowClicked={handleRowClick}
                     domLayout="autoHeight" // Ensures that grid height adjusts to content
-                    rowHeight={isMobile ? 170 : undefined}  // Adjust row height on mobile for PlaceCard
-                    isFullWidthRow={isFullWidthRow}  // Enable full width row for mobile
+                    rowHeight={175}
+                    isFullWidthRow={isFullWidthRow}
                     fullWidthCellRenderer={fullWidthCellRenderer}  // Renderer for full width row
                 />
             </div>

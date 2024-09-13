@@ -36,7 +36,6 @@ export default async function HomePage() {
         <DataTable
           rowData={places}
           colDefs={gridColumns}
-          style={{ height: '100vh', width: '100%' }}
         />
       </div>
     </section>
