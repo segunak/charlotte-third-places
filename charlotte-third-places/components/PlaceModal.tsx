@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Image from 'next/image';
-import { Place } from "@/components/DataModels";
+import { Place } from "@/lib/types";
 import { Button } from "@/components/ui/button";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";

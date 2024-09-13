@@ -1,13 +1,13 @@
 "use client";
 
-// See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
-import "@/styles/ag-grid-theme-builder.css";
+import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
-import { useCallback, useEffect, useRef, useState, useMemo } from "react";
+import { normalizeTextForSearch } from '@/lib/utils'
+import { useCallback, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
 import {
@@ -24,20 +24,17 @@ ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 interface DataTableProps {
     rowData: Array<object>; // Accepts an array of objects for the row data
-    colDefs: ColDef[]; // Accepts column definitions for AG Grid
 }
 
 const autoSizeStrategy: SizeColumnsToContentStrategy = {
     type: 'fitCellContents',
 };
 
-export function DataTable({ rowData, colDefs }: DataTableProps) {
+export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [filteredData, setFilteredData] = useState(rowData);
     const [quickFilterText, setQuickFilterText] = useState<string>('');
     const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
 
-    // Unified filter object
     const filterConfig = useMemo(() => ({
         name: { value: "all", placeholder: "Name", label: "Name", predefinedOrder: [] },
         type: { value: "all", placeholder: "Type", label: "Type", predefinedOrder: [] },
@@ -51,7 +48,7 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
 
     const [filters, setFilters] = useState(filterConfig);
 
-    // Get distinct values for dropdowns
+    // Get distinct values for Select menu dropdowns
     const getDistinctValues = useCallback((field: string, predefinedOrder: string[] = []) => {
         const values = rowData
             .map((item: any) => item[field])
@@ -73,7 +70,6 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
         });
     }, [rowData]);
 
-    // Handle filter changes
     const handleFilterChange = useCallback((field: keyof typeof filters, value: string) => {
         setFilters((prevFilters) => ({
             ...prevFilters,
@@ -82,12 +78,12 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
         gridRef.current?.api.onFilterChanged(); // Trigger AG Grid filter
     }, []);
 
-    // Handle quick search changes
+
     const handleQuickFilterChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
         setQuickFilterText(event.target.value);
     }, []);
 
-    // Reset filters to default values
+
     const handleResetFilters = useCallback(() => {
         //setFilters(filterConfig);
         setFilters((prevFilters) => {
@@ -141,9 +137,9 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
     }, [handleRowClick]);
 
     // Updated column definitions for hiding fields in the grid but allowing filtering
-    const updatedColDefs = useMemo(() => {
+    const columnDefs = useMemo(() => {
         // Only show "Place" column but allow filtering based on hidden columns
-        return [
+        const gridColumns: ColDef[] = [
             {
                 headerName: "Place",
                 field: "name",
@@ -155,29 +151,88 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
                 ),
                 autoHeight: true,
                 flex: 1,
+                pinned: 'left',
                 wrapText: true, // Ensure text doesn't overflow the card width
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
             },
-            // Hidden columns, available for filtering but not visible in the grid
-            { field: "type", hide: true },
-            { field: "size", hide: true },
-            { field: "neighborhood", hide: true },
+            // Hidden columns, available for filtering but not visible in the grid. All columns
+            // are accessible in PlaceModal.tsx after a user clicks a row because it's passed the full
+            // data, as provided from Airtable in the calling app/page.tsx. The definitions here of hidden
+            // columns has value in that they can be used to filter/search even though their values aren't seen
+            // until a user clicks a place.
+            {
+                field: "type",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            {
+                field: "size",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            {
+                field: "ambience",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            {
+                field: "address",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            {
+                field: "neighborhood",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
             { field: "purchaseRequired", hide: true },
-            { field: "parkingSituation", hide: true },
-            { field: "freeWifi", hide: true },
-            { field: "hasCinnamonRolls", hide: true },
-            { field: "website", hide: true },
-            { field: "googleMapsProfileURL", hide: true },
-            { field: "coverPhotoURL", hide: true }
+            {
+                field: "parkingSituation",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            { field: "freeWifi", hide: true }, // Used for filtering, but not in quick search as the value are just Yes/No.
+            { field: "hasCinnamonRolls", hide: true }, // Used for filtering, but not in quick search as the value are just Yes/No.
+            {
+                field: "description",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            },
+            {
+                field: "comments",
+                hide: true,
+                getQuickFilterText: params => {
+                    return normalizeTextForSearch(params.value);
+                }
+            }
         ];
+
+        return gridColumns;
     }, [handleRowClick]);
 
     return (
-        <div>
+        <div className="flex-1 overflow-y-auto">
             {/* Filters and Search */}
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5 m-px">
                 <Input
                     type="text"
-                    placeholder="Search All Columns..."
+                    placeholder="Search All Fields..."
                     onChange={handleQuickFilterChange}
                     value={quickFilterText}
                     className="w-full"
@@ -218,10 +273,11 @@ export function DataTable({ rowData, colDefs }: DataTableProps) {
             <div className="ag-theme-custom w-full mx-auto">
                 <AgGridReact
                     ref={gridRef}
-                    rowData={filteredData}
-                    columnDefs={updatedColDefs}
+                    rowData={rowData}
+                    columnDefs={columnDefs}
                     autoSizeStrategy={autoSizeStrategy}
                     quickFilterText={quickFilterText}
+                    includeHiddenColumnsInQuickFilter={true}
                     isExternalFilterPresent={isExternalFilterPresent}
                     doesExternalFilterPass={doesExternalFilterPass}
                     suppressMovableColumns={true}

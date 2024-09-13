@@ -1,7 +1,5 @@
 import { FC } from "react";
-import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { Button } from "@/components/ui/button"
-import { Place } from "@/components/DataModels";
+import { Place } from "@/lib/types";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 // Predefined color mappings for tag backgrounds and text
