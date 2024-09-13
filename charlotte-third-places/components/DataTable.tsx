@@ -94,42 +94,6 @@ export function DataTable({ rowData }: DataTableProps) {
         setQuickFilterText("");
     }, []);
 
-    // Custom filter logic for AG Grid
-    const isExternalFilterPresent = useCallback(() => {
-        return Object.values(filters).some(filter => filter.value !== "all");
-    }, [filters]);
-
-    const doesExternalFilterPass = useCallback((node: IRowNode) => {
-        const { group } = node.data;
-
-        return group.some((place: any) => {
-            const {
-                name,
-                type,
-                size,
-                neighborhood,
-                purchaseRequired,
-                parkingSituation,
-                freeWifi,
-                hasCinnamonRolls,
-            } = filters;
-
-            const isTypeMatch =
-                type.value === "all" || (place.type && place.type.includes(type.value));
-
-            return (
-                isTypeMatch &&
-                (name.value === "all" || place.name === name.value) &&
-                (size.value === "all" || place.size === size.value) &&
-                (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
-                (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
-                (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
-                (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
-            );
-        });
-    }, [filters]);
-
     const isFullWidthRow = useCallback((params: any) => {
         return true;
     }, []);
@@ -137,25 +101,6 @@ export function DataTable({ rowData }: DataTableProps) {
     const handlePlaceClick = useCallback((place: any) => {
         setSelectedRow(place);
     }, []);
-
-    const fullWidthCellRenderer = useCallback(
-        (params: any) => {
-            const { group } = params.data;
-            return (
-                <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
-                    {group.map((place: any, index: number) => (
-                        <div key={index} className="w-full sm:w-1/2">
-                            <PlaceCard
-                                place={place}
-                                onClick={() => handlePlaceClick(place)}
-                            />
-                        </div>
-                    ))}
-                </div>
-            );
-        },
-        [handlePlaceClick]
-    );
 
     const columnDefs = useMemo(() => {
         const gridColumns: ColDef[] = [
@@ -170,15 +115,6 @@ export function DataTable({ rowData }: DataTableProps) {
 
         return gridColumns;
     }, []);
-
-    const groupedRowData = useMemo(() => {
-        const grouped = [];
-        for (let i = 0; i < rowData.length; i += 2) {
-            const group = rowData.slice(i, i + 2);
-            grouped.push({ group });
-        }
-        return grouped;
-    }, [rowData]);
 
     const applyFilters = useCallback(
         (data: any[]) => {
@@ -226,15 +162,33 @@ export function DataTable({ rowData }: DataTableProps) {
         // Apply selected filters
         filteredData = applyFilters(filteredData);
 
-        // Group the filtered data into pairs
+        // Group the filtered data into groups of three
         const grouped = [];
-        for (let i = 0; i < filteredData.length; i += 2) {
-            const group = filteredData.slice(i, i + 2);
+        for (let i = 0; i < filteredData.length; i += 3) {
+            const group = filteredData.slice(i, i + 3);
             grouped.push({ group });
         }
         return grouped;
     }, [rowData, quickFilterText, applyFilters]);
 
+    const fullWidthCellRenderer = useCallback(
+        (params: any) => {
+            const { group } = params.data;
+            return (
+                <div className="flex flex-col sm:flex-row flex-wrap sm:space-x-4 space-y-4 sm:space-y-0">
+                    {group.map((place: any, index: number) => (
+                        <div key={index} className="w-full sm:w-1/3 sm:px-2">
+                            <PlaceCard
+                                place={place}
+                                onClick={() => handlePlaceClick(place)}
+                            />
+                        </div>
+                    ))}
+                </div>
+            );
+        },
+        [handlePlaceClick]
+    );
 
     return (
         <div>
