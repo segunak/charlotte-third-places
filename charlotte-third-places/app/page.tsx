@@ -26,7 +26,7 @@ export default async function HomePage() {
           </span>
         </p>
         <p className="mt-4 font-bold text-primary">
-          Click a card to see way more information about a place.
+          Click a card to see more information about a place.
         </p>
       </div>
 

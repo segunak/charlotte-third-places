@@ -214,7 +214,7 @@ export function DataTable({ rowData }: DataTableProps) {
     return (
         <div>
             {/* Filters and Search */}
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 mb-5 m-px">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-5 m-px">
                 <Input
                     type="text"
                     placeholder="Search All Fields..."
@@ -255,8 +255,8 @@ export function DataTable({ rowData }: DataTableProps) {
                 </Button>
             </div>
 
-            <div className="flex flex-col h-screen">
-                <div className="ag-theme-custom w-full flex-grow pb-16 sm:pb-0 sm:overflow-y-auto">
+            <div className="flex flex-col flex-1">
+                <div className="ag-theme-custom w-full flex-grow">
                     <AgGridReact
                         ref={gridRef}
                         rowData={filteredAndGroupedRowData}

@@ -48,13 +48,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <SiteHeader />
           <div className="flex flex-col min-h-dvh">
-            <div className="flex-1">
+            <div className="flex-1 pb-8">
               {children}
               <ScrollToTopButton />
             </div>
+            <MobileNavigation />
+            <SiteFooter />
           </div>
-          <MobileNavigation />
-          <SiteFooter />
           <TailwindIndicator />
         </ThemeProvider>
       </body>
