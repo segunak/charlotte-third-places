@@ -1,4 +1,5 @@
 import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { ArrowUp } from "lucide-react";
 import {
   IoHome,
   IoHomeOutline,
@@ -21,6 +22,7 @@ import {
 } from "react-icons/lu";
 
 export const Icons = {
+  arrowUp: ArrowUp,
   sun: LuSunMedium,
   moon: LuMoon,
   home: IoHome,
