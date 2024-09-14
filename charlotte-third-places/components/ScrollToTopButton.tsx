@@ -38,7 +38,7 @@ export const ScrollToTopButton = () => {
     return (
         <Button
             onClick={scrollToTop}
-            className="sm:hidden mb-2 fixed bottom-16 right-8 p-3 bg-primary text-white rounded-full shadow-lg z-50"
+            className="sm:hidden mb-2 fixed bottom-16 right-2 p-3 bg-primary text-white rounded-full shadow-lg z-50"
         >
             <Icons.arrowUp className="h-4 w-4" />
         </Button>
