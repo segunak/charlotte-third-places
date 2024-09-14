@@ -256,7 +256,7 @@ export function DataTable({ rowData }: DataTableProps) {
             </div>
 
             <div className="flex flex-col h-screen">
-                <div className="ag-theme-custom w-full flex-grow sm:overflow-y-auto">
+                <div className="ag-theme-custom w-full flex-grow pb-16 sm:pb-0 sm:overflow-y-auto">
                     <AgGridReact
                         ref={gridRef}
                         rowData={filteredAndGroupedRowData}
