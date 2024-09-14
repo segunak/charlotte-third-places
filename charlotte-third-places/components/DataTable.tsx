@@ -253,7 +253,7 @@ export function DataTable({ rowData }: DataTableProps) {
                         includeHiddenColumnsInQuickFilter={true}
                         suppressMovableColumns={true}
                         domLayout="normal" // Ensures that grid height adjusts to content
-                        rowHeight={200}
+                        rowHeight={215}
                         isFullWidthRow={isFullWidthRow}
                         fullWidthCellRenderer={fullWidthCellRenderer}
                     />

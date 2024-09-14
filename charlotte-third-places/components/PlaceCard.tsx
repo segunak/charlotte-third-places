@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { Place } from "@/lib/types";
+import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 // Predefined color mappings for tag backgrounds and text
@@ -77,7 +78,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                     <span className="text-sm block mt-1">
                         <strong>Size: </strong>
                         {place?.size && (
-                            <span className={`${getAttributeColors(place.size, 0).bgColor} ${getAttributeColors(place.size, 0).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                            <span className={`${getAttributeColors(place.size).bgColor} ${getAttributeColors(place.size).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                 {place.size}
                             </span>
                         )}
@@ -85,7 +86,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                     <span className="flex flex-wrap space-x-2">
                         <strong>Type: </strong>
                         {place?.type?.map((tag, index) => {
-                            const { bgColor, textColor } = getAttributeColors(tag, index);
+                            const { bgColor, textColor } = getAttributeColors(tag);
                             return (
                                 <span key={tag} className={`${bgColor} ${textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                     {tag}
@@ -93,16 +94,27 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                             );
                         })}
                     </span>
-                    <span className="text-sm block mt-1">
-                        <strong>Neighborhood: </strong>
-                        {place?.neighborhood && (
-                            <span className={`${getAttributeColors(place.neighborhood, 1).bgColor} ${getAttributeColors(place.neighborhood, 1).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                {place.neighborhood}
-                            </span>
-                        )}
+
+                    <span className="flex justify-between">
+                        <span className="text-sm block">
+                            <strong>Neighborhood: </strong>
+                            {place?.neighborhood && (
+                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                                    {place.neighborhood}
+                                </span>
+                            )}
+                        </span>
+
+                        <Button className="!font-bold" size="sm">
+                            More Info
+                        </Button>
                     </span>
                 </span>
+
+
             </CardContent>
+
+
         </Card>
     );
 };
