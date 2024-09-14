@@ -1,25 +1,15 @@
 "use client";
 
 import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { normalizeTextForSearch } from '@/lib/utils'
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
-import { useCallback, useRef, useState, useMemo } from "react";
+import { FilterContext } from "@/contexts/FilterContext";
+import { useContext, useCallback, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
-import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
+import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
@@ -33,74 +23,15 @@ const autoSizeStrategy: SizeColumnsToContentStrategy = {
 
 export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [quickFilterText, setQuickFilterText] = useState<string>('');
-    const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
-
-    const filterConfig = useMemo(() => ({
-        name: { value: "all", placeholder: "Name", label: "Name", predefinedOrder: [] },
-        type: { value: "all", placeholder: "Type", label: "Type", predefinedOrder: [] },
-        size: { value: "all", placeholder: "Size", label: "Size", predefinedOrder: ["Small", "Medium", "Large"] },
-        neighborhood: { value: "all", placeholder: "Neighborhood", label: "Neighborhood", predefinedOrder: [] },
-        purchaseRequired: { value: "all", placeholder: "Purchase Required", label: "Purchase Required", predefinedOrder: ["Yes", "No"] },
-        parkingSituation: { value: "all", placeholder: "Parking Situation", label: "Parking Situation", predefinedOrder: [] },
-        freeWifi: { value: "all", placeholder: "Free Wifi", label: "Free Wifi", predefinedOrder: ["Yes", "No"] },
-        hasCinnamonRolls: { value: "all", placeholder: "Has Cinnamon Rolls", label: "Has Cinnamon Rolls", predefinedOrder: ["Yes", "No", "Sometimes"] }
-    }), []);
-
-    const [filters, setFilters] = useState(filterConfig);
-
-    // Get distinct values for Select menu dropdowns
-    const getDistinctValues = useCallback((field: string, predefinedOrder: string[] = []) => {
-        const values = rowData
-            .map((item: any) => item[field])
-            .flat()  // Handle arrays like 'type'
-            .filter(Boolean);  // Remove falsy values
-
-        const distinctValues = Array.from(new Set(values));
-
-        return distinctValues.sort((a, b) => {
-            const indexA = predefinedOrder.indexOf(a);
-            const indexB = predefinedOrder.indexOf(b);
-            if (predefinedOrder.length === 0) {
-                return a.localeCompare(b);
-            }
-            if (indexA === -1 && indexB === -1) return a.localeCompare(b);
-            if (indexA === -1) return 1;
-            if (indexB === -1) return -1;
-            return indexA - indexB;
-        });
-    }, [rowData]);
-
-    const handleFilterChange = useCallback((field: keyof typeof filters, value: string) => {
-        setFilters((prevFilters) => ({
-            ...prevFilters,
-            [field]: { ...prevFilters[field], value }
-        }));
-        gridRef.current?.api.onFilterChanged(); // Trigger AG Grid filter
-    }, []);
-
-
-    const handleQuickFilterChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-        setQuickFilterText(event.target.value);
-    }, []);
-
-    const handleResetFilters = useCallback(() => {
-        setFilters((prevFilters) => {
-            const resetFilters = { ...prevFilters };
-            Object.keys(resetFilters).forEach((key) => {
-                resetFilters[key as keyof typeof prevFilters].value = "all";
-            });
-            return resetFilters;
-        });
-        setQuickFilterText("");
-    }, []);
+    const [selectedCard, setSelectedCard] = useState<any | null>(null);
+    const { filters, quickFilterText } = useContext(FilterContext);
 
     const isFullWidthRow = useCallback((params: any) => {
         return true;
     }, []);
 
     const handlePlaceClick = useCallback((place: any) => {
-        setSelectedRow(place);
+        setSelectedCard(place);
     }, []);
 
     const columnDefs = useMemo(() => {
@@ -158,7 +89,6 @@ export function DataTable({ rowData }: DataTableProps) {
     }, [windowWidth]);
 
     const filteredAndGroupedRowData = useMemo(() => {
-        // Apply quick filter text
         let filteredData = rowData;
 
         if (quickFilterText.trim() !== "") {
@@ -168,10 +98,8 @@ export function DataTable({ rowData }: DataTableProps) {
             );
         }
 
-        // Apply selected filters
         filteredData = applyFilters(filteredData);
 
-        // Group the filtered data into groups of three
         const grouped = [];
         for (let i = 0; i < filteredData.length; i += columnsPerRow) {
             const group = filteredData.slice(i, i + columnsPerRow);
@@ -181,8 +109,8 @@ export function DataTable({ rowData }: DataTableProps) {
     }, [rowData, quickFilterText, applyFilters, columnsPerRow]);
 
     const getRowHeight = useCallback(() => {
-        const cardHeight = 215; // Height of each card
-        return cardHeight;      // Since each row has a fixed height
+        const cardHeight = 215;
+        return cardHeight;
     }, []);
 
     const fullWidthCellRenderer = useCallback(
@@ -212,68 +140,25 @@ export function DataTable({ rowData }: DataTableProps) {
     );
 
     return (
-        <div>
-            {/* Filters and Search */}
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-5 m-px">
-                <Input
-                    type="text"
-                    placeholder="Search All Fields..."
-                    onChange={handleQuickFilterChange}
-                    value={quickFilterText}
-                    className="w-full"
+        <div className="flex-1">
+            <div className="ag-theme-custom w-full">
+                <AgGridReact
+                    ref={gridRef}
+                    rowData={filteredAndGroupedRowData}
+                    columnDefs={columnDefs}
+                    autoSizeStrategy={autoSizeStrategy}
+                    includeHiddenColumnsInQuickFilter={true}
+                    suppressMovableColumns={true}
+                    domLayout="autoHeight" // Ensures that grid height adjusts to content
+                    getRowHeight={getRowHeight}
+                    isFullWidthRow={isFullWidthRow}
+                    fullWidthCellRenderer={fullWidthCellRenderer}
                 />
-
-                {/* Dynamically Render Filters */}
-                {Object.entries(filters).map(([field, config]) => (
-                    <Select
-                        key={field}
-                        value={config.value}
-                        onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}
-                    >
-                        <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
-                            <SelectValue placeholder={config.placeholder}>
-                                {config.value === "all" ? config.placeholder : config.value}
-                            </SelectValue>
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectLabel>{config.label}</SelectLabel>
-                                <SelectItem value="all">All</SelectItem>
-                                {getDistinctValues(field, config.predefinedOrder).map((item: string) => (
-                                    <SelectItem key={item} value={item}>
-                                        {item}
-                                    </SelectItem>
-                                ))}
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
-                ))}
-
-                {/* Reset Filters Button */}
-                <Button onClick={handleResetFilters} className="w-full">
-                    Reset Filters
-                </Button>
             </div>
-
-            <div className="flex flex-col flex-1">
-                <div className="ag-theme-custom w-full flex-grow">
-                    <AgGridReact
-                        ref={gridRef}
-                        rowData={filteredAndGroupedRowData}
-                        columnDefs={columnDefs}
-                        autoSizeStrategy={autoSizeStrategy}
-                        includeHiddenColumnsInQuickFilter={true}
-                        suppressMovableColumns={true}
-                        domLayout="autoHeight" // Ensures that grid height adjusts to content
-                        getRowHeight={getRowHeight}
-                        isFullWidthRow={isFullWidthRow}
-                        fullWidthCellRenderer={fullWidthCellRenderer}
-                    />
-                </div>
-
-                {/* Modal for Card Display */}
-                {selectedRow && <PlaceModal place={selectedRow} onClose={() => setSelectedRow(null)} />}
-            </div>
+            {
+                selectedCard &&
+                <PlaceModal place={selectedCard} onClose={() => setSelectedCard(null)} />
+            }
         </div>
     );
 }
