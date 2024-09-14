@@ -243,7 +243,7 @@ export function DataTable({ rowData }: DataTableProps) {
             </div>
 
             <div className="flex flex-col h-screen">
-                <div className="ag-theme-custom w-full mx-auto flex-grow overflow-y-auto">
+                <div className="ag-theme-custom w-full flex-grow overflow-y-auto">
                     <AgGridReact
                         ref={gridRef}
                         rowData={filteredAndGroupedRowData}
@@ -251,7 +251,7 @@ export function DataTable({ rowData }: DataTableProps) {
                         autoSizeStrategy={autoSizeStrategy}
                         includeHiddenColumnsInQuickFilter={true}
                         suppressMovableColumns={true}
-                        domLayout="normal" // Ensures that grid height adjusts to content
+                        domLayout="autoHeight" // Ensures that grid height adjusts to content
                         rowHeight={215}
                         isFullWidthRow={isFullWidthRow}
                         fullWidthCellRenderer={fullWidthCellRenderer}
