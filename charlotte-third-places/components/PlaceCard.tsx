@@ -78,7 +78,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                 <CardDescription className="truncate">
                     {place?.description && place.description.trim() !== ""
                         ? place.description
-                        : "A third place in Charlotte, North Carolina"}
+                        : "A third place in greater Charlotte, North Carolina"}
                 </CardDescription>
             </CardHeader>
             <CardContent className="w-full overflow-hidden">

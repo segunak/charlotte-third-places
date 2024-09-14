@@ -4,9 +4,10 @@ import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/reac
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
+import { normalizeTextForSearch } from '@/lib/utils'
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
-import { normalizeTextForSearch } from '@/lib/utils'
+import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { useCallback, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
@@ -148,6 +149,14 @@ export function DataTable({ rowData }: DataTableProps) {
         [filters]
     );
 
+    const windowWidth = useWindowWidth();
+
+    const columnsPerRow = useMemo(() => {
+        if (windowWidth >= 1024) return 3; // lg
+        if (windowWidth >= 640) return 2;  // sm
+        return 1;                           // xs
+    }, [windowWidth]);
+
     const filteredAndGroupedRowData = useMemo(() => {
         // Apply quick filter text
         let filteredData = rowData;
@@ -164,12 +173,17 @@ export function DataTable({ rowData }: DataTableProps) {
 
         // Group the filtered data into groups of three
         const grouped = [];
-        for (let i = 0; i < filteredData.length; i += 3) {
-            const group = filteredData.slice(i, i + 3);
+        for (let i = 0; i < filteredData.length; i += columnsPerRow) {
+            const group = filteredData.slice(i, i + columnsPerRow);
             grouped.push({ group });
         }
         return grouped;
-    }, [rowData, quickFilterText, applyFilters]);
+    }, [rowData, quickFilterText, applyFilters, columnsPerRow]);
+
+    const getRowHeight = useCallback(() => {
+        const cardHeight = 215; // Height of each card
+        return cardHeight;      // Since each row has a fixed height
+    }, []);
 
     const fullWidthCellRenderer = useCallback(
         (params: any) => {
@@ -196,7 +210,6 @@ export function DataTable({ rowData }: DataTableProps) {
         },
         [handlePlaceClick]
     );
-
 
     return (
         <div>
@@ -252,7 +265,7 @@ export function DataTable({ rowData }: DataTableProps) {
                         includeHiddenColumnsInQuickFilter={true}
                         suppressMovableColumns={true}
                         domLayout="autoHeight" // Ensures that grid height adjusts to content
-                        rowHeight={215}
+                        getRowHeight={getRowHeight}
                         isFullWidthRow={isFullWidthRow}
                         fullWidthCellRenderer={fullWidthCellRenderer}
                     />
