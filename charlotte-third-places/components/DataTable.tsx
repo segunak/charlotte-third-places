@@ -109,7 +109,7 @@ export function DataTable({ rowData }: DataTableProps) {
                 field: "dummy",
                 flex: 1,
                 resizable: false,
-                cellRenderer: "agFullWidthCellRenderer",
+                cellRenderer: "agFullWidthCellRenderer"
             }
         ];
 
@@ -249,7 +249,6 @@ export function DataTable({ rowData }: DataTableProps) {
                         rowData={filteredAndGroupedRowData}
                         columnDefs={columnDefs}
                         autoSizeStrategy={autoSizeStrategy}
-                        quickFilterText={quickFilterText}
                         includeHiddenColumnsInQuickFilter={true}
                         suppressMovableColumns={true}
                         domLayout="normal" // Ensures that grid height adjusts to content
