@@ -15,30 +15,36 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <section className="container mx-auto py-8 px-6 sm:px-4 flex">
-        <div className="hidden lg:block w-64">
-          <FilterSidebar />
+      {/* Introductory content */}
+      <section className="container mx-auto py-8 px-6 sm:px-4">
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold mb-4">
+            Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
+            <span className="sm:hidden">Charlotte, NC</span>
+            <span className="hidden sm:inline">Charlotte, North Carolina</span>
+          </h1>
+          <p>
+            Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. Use the table below to filter and search through the list.
+            <span className="hidden sm:inline">
+              {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
+            </span>
+          </p>
+          <p className="mt-4 font-bold text-primary">
+            Click a card to see more information about a place.
+          </p>
         </div>
 
-        <div className="flex-1">
-          <div className="mb-6">
-            <h1 className="text-3xl font-bold mb-4">
-              Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
-              <span className="sm:hidden">Charlotte, NC</span>
-              <span className="hidden sm:inline">Charlotte, North Carolina</span>
-            </h1>
-            <p>
-              Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. Use the table below to filter and search through the list.
-              <span className="hidden sm:inline">
-                {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
-              </span>
-            </p>
-            <p className="mt-4 font-bold text-primary">
-              Click a card to see more information about a place.
-            </p>
+        {/* Main content area with datatable on the left and sidebar on the right */}
+        <div className="flex items-start gap-6">
+          {/* DataTable aligned to the left */}
+          <div className="flex-1">
+            <DataTable rowData={places} />
           </div>
 
-          <DataTable rowData={places} />
+          {/* Sidebar on the right with sticky positioning */}
+          <div className="hidden md:block w-64">
+            <FilterSidebar />
+          </div>
         </div>
       </section>
     </FilterProvider>

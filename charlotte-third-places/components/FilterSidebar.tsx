@@ -46,7 +46,7 @@ export function FilterSidebar() {
     }, [setFilters, setQuickFilterText]);
 
     return (
-        <div className="p-4 space-y-4 bg-gray-100 h-full">
+        <div className="p-4 space-y-4 bg-[color:var(--primary)] h-screen stick top-20">
             <h2 className="font-bold text-lg">Filters</h2>
 
             <Input
