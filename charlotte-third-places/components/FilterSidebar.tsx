@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { useContext, useCallback } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
@@ -17,7 +17,6 @@ import {
 export function FilterSidebar() {
     const { filters, setFilters, quickFilterText, setQuickFilterText, getDistinctValues } = useContext(FilterContext);
 
-    // Handle changing filter values
     const handleFilterChange = useCallback((field: keyof typeof filters, value: string) => {
         setFilters((prevFilters) => ({
             ...prevFilters,
@@ -25,7 +24,6 @@ export function FilterSidebar() {
         }));
     }, [setFilters]);
 
-    // Handle the quick search input change
     const handleQuickFilterChange = useCallback(
         (event: React.ChangeEvent<HTMLInputElement>) => {
             setQuickFilterText(event.target.value);
@@ -33,7 +31,6 @@ export function FilterSidebar() {
         [setQuickFilterText]
     );
 
-    // Reset filters back to 'all'
     const handleResetFilters = useCallback(() => {
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
@@ -46,7 +43,7 @@ export function FilterSidebar() {
     }, [setFilters, setQuickFilterText]);
 
     return (
-        <div className="p-4 space-y-4 bg-[color:var(--primary)] h-screen stick top-20">
+        <div className="p-4 space-y-4 bg-background border-l border-border h-screen fixed right-0">
             <h2 className="font-bold text-lg">Filters</h2>
 
             <Input
