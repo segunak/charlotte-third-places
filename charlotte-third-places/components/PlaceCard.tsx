@@ -23,7 +23,6 @@ const fallbackColors = [
     { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },       // Light cyan background, dark cyan text
     { bgColor: "bg-violet-100", textColor: "text-violet-800" },   // Light violet background, dark violet text
     { bgColor: "bg-emerald-100", textColor: "text-emerald-800" }, // Light emerald background, dark emerald text
-    { bgColor: "bg-lightBlue-100", textColor: "text-lightBlue-800" }, // Light blue background, dark blue text
     { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
     { bgColor: "bg-red-100", textColor: "text-red-800" },         // Light red background, dark red text
     { bgColor: "bg-red-200", textColor: "text-red-900" },         // Bright red background, dark red text
@@ -40,21 +39,30 @@ const fallbackColors = [
 ];
 
 const getAttributeColors = (attribute: string) => {
+    // Fallback to a random selection from the fallbackColors array for empty or undefined attributes
+    const randomIndex = Math.floor(Math.random() * fallbackColors.length);
+
+    // If the attribute is undefined or an empty string, return a random color
+    if (!attribute || attribute.trim() === "") {
+        return fallbackColors[randomIndex];
+    }
+
     // First, try to get a color from the predefined color map
     if (colorMap[attribute]) {
         return colorMap[attribute];
     }
 
-    // Generate a simple hash from the attribute string
+    // Generate a hash from the attribute string
     let hash = 0;
     for (let i = 0; i < attribute.length; i++) {
         hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
     }
 
-    // Ensure the hash is positive and use it to get a random color from fallbackColors
+    // Ensure the hash is positive and use it to get a color from fallbackColors
     const colorIndex = Math.abs(hash) % fallbackColors.length;
 
-    return fallbackColors[colorIndex];
+    // Fallback to a random selection from the fallbackColors array if the hash fails
+    return fallbackColors[colorIndex] || fallbackColors[randomIndex];
 };
 
 interface PlaceCardProps {
@@ -78,17 +86,18 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                     <span className="text-sm block mt-1">
                         <strong>Size: </strong>
                         {place?.size && (
-                            <span className={`${getAttributeColors(place.size).bgColor} ${getAttributeColors(place.size).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                            <span className={`${getAttributeColors(place.size).bgColor} ${getAttributeColors(place.size).textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                 {place.size}
                             </span>
                         )}
                     </span>
+
                     <span className="flex flex-wrap space-x-2">
                         <strong>Type: </strong>
                         {place?.type?.map((tag, index) => {
                             const { bgColor, textColor } = getAttributeColors(tag);
                             return (
-                                <span key={tag} className={`${bgColor} ${textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                                <span key={tag} className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                     {tag}
                                 </span>
                             );
@@ -99,7 +108,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                         <span className="text-sm block">
                             <strong>Neighborhood: </strong>
                             {place?.neighborhood && (
-                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-xs font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                     {place.neighborhood}
                                 </span>
                             )}
@@ -110,11 +119,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                         </Button>
                     </span>
                 </span>
-
-
             </CardContent>
-
-
         </Card>
     );
 };
