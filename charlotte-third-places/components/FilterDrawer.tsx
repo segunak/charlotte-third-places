@@ -11,15 +11,6 @@ export function FilterDrawer() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const { filters } = useContext(FilterContext);
 
-    // Disable body scroll when drawer is open
-    useEffect(() => {
-        if (isDrawerOpen) {
-            document.body.classList.add('overflow-hidden');
-        } else {
-            document.body.classList.remove('overflow-hidden');
-        }
-    }, [isDrawerOpen]);
-
     return (
         <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="right">
             <DrawerTrigger className="fixed right-3 z-60" style={{ bottom: '4.5rem' }} asChild>
