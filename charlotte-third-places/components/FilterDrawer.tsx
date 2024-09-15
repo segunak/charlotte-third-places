@@ -1,9 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { useContext } from "react";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
+import { useContext, useState, useEffect } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerFooter, DrawerTrigger, DrawerClose } from "@/components/ui/drawer";
@@ -12,8 +11,17 @@ export function FilterDrawer() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const { filters } = useContext(FilterContext);
 
+    // Disable body scroll when drawer is open
+    useEffect(() => {
+        if (isDrawerOpen) {
+            document.body.classList.add('overflow-hidden');
+        } else {
+            document.body.classList.remove('overflow-hidden');
+        }
+    }, [isDrawerOpen]);
+
     return (
-        <div className="fixed right-3 z-50" style={{ bottom: '4.5rem' }}>
+        <div className="fixed right-3 z-[60]" style={{ bottom: '4.5rem' }}>
             <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="right">
                 <DrawerTrigger asChild>
                     <Button className="px-3 py-2" aria-label="Open Filters">
@@ -21,7 +29,7 @@ export function FilterDrawer() {
                     </Button>
                 </DrawerTrigger>
 
-                <DrawerContent className="fixed inset-x-0 bottom-0 z-50 mt-24 flex h-auto flex-col rounded-t-lg bg-background">
+                <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-auto flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]">
                     <DrawerHeader className="p-4">
                         <DrawerTitle>Filters</DrawerTitle>
                     </DrawerHeader>
