@@ -29,7 +29,7 @@ export function FilterDrawer() {
                     </Button>
                 </DrawerTrigger>
 
-                <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-auto flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]">
+                <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-full flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]">
                     <DrawerHeader className="p-4">
                         <DrawerTitle>Filters</DrawerTitle>
                     </DrawerHeader>
