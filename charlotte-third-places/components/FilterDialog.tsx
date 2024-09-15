@@ -45,7 +45,7 @@ export function FilterDialog() {
                     ))}
                 </div>
 
-                <DialogFooter className="flex flex-col space-y-2 mt-4">
+                <DialogFooter className="flex flex-col space-y-4 mt-4">
                     <FilterResetButton />
                     <DialogClose asChild>
                         <Button variant="outline" className="w-full">
