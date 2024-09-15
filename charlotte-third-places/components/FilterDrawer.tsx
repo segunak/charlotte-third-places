@@ -21,7 +21,7 @@ export function FilterDrawer() {
     }, [isDrawerOpen]);
 
     return (
-        <div className="fixed right-3 z-[60]" style={{ bottom: '4.5rem' }}>
+        <div className="fixed right-3 z-50" style={{ bottom: '4.5rem' }}>
             <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="right">
                 <DrawerTrigger asChild>
                     <Button className="px-3 py-2" aria-label="Open Filters">
@@ -29,7 +29,8 @@ export function FilterDrawer() {
                     </Button>
                 </DrawerTrigger>
 
-                <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-full flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]">
+                {/* <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-full flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]"> */}
+                <DrawerContent className="h-full rounded-t-lg">
                     <DrawerHeader className="p-4">
                         <DrawerTitle>Filters</DrawerTitle>
                     </DrawerHeader>
