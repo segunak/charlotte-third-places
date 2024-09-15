@@ -48,7 +48,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <SiteHeader />
           <div className="flex flex-col min-h-dvh">
-            <div className="flex-1 mb-12 sm:mb-0">
+            <div className="flex-1 mb-12 sm:mb-0 bg-background">
               {children}
             </div>
             <MobileNavigation />
