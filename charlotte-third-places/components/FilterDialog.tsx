@@ -30,7 +30,10 @@ export function FilterDialog() {
                 </DialogTrigger>
             )}
 
-            <DialogContent className="sm:max-w-md rounded-lg bg-background p-6">
+            <DialogContent
+                className="sm:max-w-md rounded-lg bg-background p-6"
+                onOpenAutoFocus={(e) => e.preventDefault()}
+            >
                 <DialogHeader>
                     <DialogTitle>Filters</DialogTitle>
                     <DialogDescription>Use the fields below to filter places.</DialogDescription>
