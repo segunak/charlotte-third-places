@@ -40,8 +40,6 @@ export function FilterDialog() {
                 </DialogHeader>
 
                 <div className="space-y-4">
-                    <FilterQuickSearch />
-
                     {Object.entries(filters).map(([field, config]) => (
                         <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
                     ))}
