@@ -42,7 +42,7 @@ export const FilterContext = createContext<FilterContextType>({
     setFilters: () => { },
     quickFilterText: "",
     setQuickFilterText: () => { },
-    getDistinctValues: () => [] // Empty default implementation
+    getDistinctValues: () => []
 });
 
 // Define the FilterProvider to manage filter state and context

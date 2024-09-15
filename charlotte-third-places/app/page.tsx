@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
+import { FilterDrawer } from "@/components/FilterDrawer";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -21,11 +22,14 @@ export default async function HomePage() {
             <div className="mb-6">
               <h1 className="text-3xl font-bold mb-4">
                 Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
-                <span className="sm:hidden">Charlotte, NC</span>
+                <span className="sm:hidden">Charlotte</span>
                 <span className="hidden sm:inline">Charlotte, North Carolina</span>
               </h1>
               <p>
-                Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. Use the table below to filter and search through the list.
+                Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. Use the {" "}
+                <span className="sm:hidden">button in the lower-right corner</span>
+                <span className="hidden sm:inline">sidebar on the right</span>
+                {" "} to filter and search through the list.
                 <span className="hidden sm:inline">
                   {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
                 </span>
@@ -34,11 +38,14 @@ export default async function HomePage() {
                 Click on a card to see more information about a place.
               </p>
             </div>
-
             <DataTable rowData={places} />
           </section>
         </div>
-
+        {/*On mobile, this provides a button in the lower right for filtering */}
+        <div className="md:hidden">
+          <FilterDrawer />
+        </div>
+        {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden md:block">
           <FilterSidebar />
         </div>

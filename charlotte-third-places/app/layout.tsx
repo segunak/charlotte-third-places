@@ -50,7 +50,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <div className="flex flex-col min-h-dvh">
             <div className="flex-1 mb-12 sm:mb-0">
               {children}
-              <ScrollToTopButton />
             </div>
             <MobileNavigation />
             <SiteFooter />
