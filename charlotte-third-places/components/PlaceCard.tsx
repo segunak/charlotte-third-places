@@ -105,10 +105,10 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
                     </span>
 
                     <span className="flex justify-between">
-                        <span className="text-sm block">
+                        <span className="text-sm text-pretty block">
                             <strong>Neighborhood: </strong>
                             {place?.neighborhood && (
-                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
                                     {place.neighborhood}
                                 </span>
                             )}

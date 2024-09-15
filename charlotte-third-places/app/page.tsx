@@ -15,9 +15,9 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <div className="flex flex-col md:flex-row">
-        <div className="flex-1 overflow-hidden">
-          <section className="container mx-auto py-8 pr-0 pl-6 sm:pl-4">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_220px] gap-4">
+        <div className="overflow-hidden">
+          <section className="container mx-auto py-8">
             <div className="mb-6">
               <h1 className="text-3xl font-bold mb-4">
                 Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
@@ -31,18 +31,15 @@ export default async function HomePage() {
                 </span>
               </p>
               <p className="mt-4 font-bold text-primary">
-                Click a card to see more information about a place.
+                Click on a card to see more information about a place.
               </p>
             </div>
 
-            <div className="flex-1 mr-52">
-              <DataTable rowData={places} />
-            </div>
-
+            <DataTable rowData={places} />
           </section>
         </div>
 
-        <div className="hidden md:block flex-shrink-0">
+        <div className="hidden md:block">
           <FilterSidebar />
         </div>
       </div>

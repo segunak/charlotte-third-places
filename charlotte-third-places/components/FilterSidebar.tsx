@@ -43,8 +43,8 @@ export function FilterSidebar() {
     }, [setFilters, setQuickFilterText]);
 
     return (
-        <div className="p-4 space-y-4 bg-background border-l border-border h-screen fixed right-0">
-            <h2 className="font-bold text-lg">Filters</h2>
+        <div className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12">
+            <h2 className="font-bold text-lg mt-4">Filters</h2>
 
             <Input
                 type="text"

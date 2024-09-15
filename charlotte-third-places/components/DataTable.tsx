@@ -82,11 +82,12 @@ export function DataTable({ rowData }: DataTableProps) {
 
     const windowWidth = useWindowWidth();
 
+    // Aligns with Tailwind breakpoints at https://tailwindcss.com/docs/responsive-design
     const columnsPerRow = useMemo(() => {
-        if (windowWidth >= 1024) return 3; // lg
-        if (windowWidth >= 640) return 2;  // sm
-        return 1;                           // xs
+        if (windowWidth >= 768) return 2; // md and larger (2 cards)
+        return 1; // anything smaller than md (1 card)
     }, [windowWidth]);
+
 
     const filteredAndGroupedRowData = useMemo(() => {
         let filteredData = rowData;
@@ -117,16 +118,9 @@ export function DataTable({ rowData }: DataTableProps) {
         (params: any) => {
             const { group } = params.data;
             return (
-                <div
-                    // Container div for the row
-                    className="flex flex-wrap -mx-2"
-                >
+                <div className="flex flex-wrap -mx-2">
                     {group.map((place: any, index: number) => (
-                        <div
-                            key={index}
-                            // Wrapper div for each card
-                            className="w-full sm:w-1/2 lg:w-1/3 px-2 mb-4"
-                        >
+                        <div key={index} className="w-full md:w-1/2 px-2 mb-4">
                             <PlaceCard
                                 place={place}
                                 onClick={() => handlePlaceClick(place)}
