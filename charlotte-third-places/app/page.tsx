@@ -17,7 +17,7 @@ export default async function HomePage() {
     <FilterProvider places={places}>
       <div className="grid grid-cols-1 md:grid-cols-[1fr_220px] gap-4">
         <div className="overflow-hidden">
-          <section className="container mx-auto py-8">
+          <section className="container py-8">
             <div className="mb-6">
               <h1 className="text-3xl font-bold mb-4">
                 Explore <span className="text-primary">{places.length}</span> Third Places in{" "}

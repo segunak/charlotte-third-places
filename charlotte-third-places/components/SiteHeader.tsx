@@ -7,7 +7,7 @@ import { MainNavigation } from "@/components/MainNavigation"
 export function SiteHeader() {
     return (
         <header className="bg-background sticky top-0 z-50 w-full border-b">
-            <div className="container px-6 sm:px-4 flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+            <div className="container m-0 max-w-full flex h-16 items-center space-x-4 sm:space-x-0 sm:justify-between">
 
                 <div className="sm:flex gap-6 md:gap-10 items-center">
                     <Link href="/" className="flex items-center space-x-2">
@@ -17,7 +17,7 @@ export function SiteHeader() {
                     <MainNavigation />
                 </div>
 
-                <div className="flex flex-1 items-center justify-end space-x-4">
+                <div className="flex flex-1 items-center justify-end">
                     <nav className="flex items-center space-x-1">
                         <Link
                             href="https://github.com/segunak/charlotte-third-places"
