@@ -21,38 +21,36 @@ export function FilterDrawer() {
     }, [isDrawerOpen]);
 
     return (
-        <div className="fixed right-3 z-50" style={{ bottom: '4.5rem' }}>
-            <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="right">
-                <DrawerTrigger asChild>
-                    <Button className="px-3 py-2" aria-label="Open Filters">
-                        <Icons.filter className="h-4 w-4" />
-                    </Button>
-                </DrawerTrigger>
+        <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen} direction="right">
+            <DrawerTrigger className="fixed right-3 z-60" style={{ bottom: '4.5rem' }} asChild>
+                <Button className="px-3 py-2" aria-label="Open Filters">
+                    <Icons.filter className="h-4 w-4" />
+                </Button>
+            </DrawerTrigger>
 
-                {/* <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-full flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]"> */}
-                <DrawerContent className="h-full rounded-t-lg">
-                    <DrawerHeader className="p-4">
-                        <DrawerTitle>Filters</DrawerTitle>
-                    </DrawerHeader>
+            {/* <DrawerContent className="fixed inset-x-0 bottom-0 z-[60] mt-24 flex h-full flex-col rounded-t-lg bg-background pb-[env(safe-area-inset-bottom)]"> */}
+            <DrawerContent className="h-full rounded-t-lg z-60">
+                <DrawerHeader className="p-4">
+                    <DrawerTitle>Filters</DrawerTitle>
+                </DrawerHeader>
 
-                    <div className="p-4 space-y-4">
-                        <FilterQuickSearch />
+                <div className="p-4 space-y-4">
+                    <FilterQuickSearch />
 
-                        {Object.entries(filters).map(([field, config]) => (
-                            <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
-                        ))}
-                    </div>
+                    {Object.entries(filters).map(([field, config]) => (
+                        <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
+                    ))}
+                </div>
 
-                    <DrawerFooter className="p-4 space-y-2">
-                        <FilterResetButton />
-                        <DrawerClose asChild>
-                            <Button variant="outline" className="w-full">
-                                Close
-                            </Button>
-                        </DrawerClose>
-                    </DrawerFooter>
-                </DrawerContent>
-            </Drawer>
-        </div>
+                <DrawerFooter className="p-4 space-y-2">
+                    <FilterResetButton />
+                    <DrawerClose asChild>
+                        <Button variant="outline" className="w-full">
+                            Close
+                        </Button>
+                    </DrawerClose>
+                </DrawerFooter>
+            </DrawerContent>
+        </Drawer>
     );
 }
