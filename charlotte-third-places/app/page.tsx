@@ -34,9 +34,10 @@ export default async function HomePage() {
                   {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
                 </span>
               </p>
-              <p className="mt-4 font-bold text-primary">
+              <br/>
+              <span className="font-bold custom-highlight">
                 Click on a card to see more information about a place.
-              </p>
+              </span>
             </div>
             <DataTable rowData={places} />
           </section>

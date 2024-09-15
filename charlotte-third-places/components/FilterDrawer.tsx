@@ -34,7 +34,7 @@ export function FilterDrawer() {
                         ))}
                     </div>
 
-                    <DrawerFooter className="p-4 space-x-2">
+                    <DrawerFooter className="p-4 space-y-2">
                         <FilterResetButton />
                         <DrawerClose asChild>
                             <Button variant="outline" className="w-full">
