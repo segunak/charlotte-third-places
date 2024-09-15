@@ -32,6 +32,7 @@ export function FilterQuickSearch() {
             value={quickFilterText}
             onChange={handleQuickFilterChange}
             className="w-full"
+            autoFocus={false}
         />
     );
 }
