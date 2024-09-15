@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
-import { FilterDrawer } from "@/components/FilterDrawer";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { FilterDialog } from "@/components/FilterDialog";
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // This results in Next.js refreshing the data from Airtable once for the whole site every 12 hours.
@@ -44,7 +44,7 @@ export default async function HomePage() {
         </div>
         {/*On mobile, this provides a button in the lower right for filtering */}
         <div className="md:hidden">
-          <FilterDrawer />
+          <FilterDialog />
         </div>
         {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden md:block">
