@@ -1,6 +1,7 @@
-import { FC } from "react";
-import Image from 'next/image';
+"use client"
+
 import { Place } from "@/lib/types";
+import { FC, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
@@ -11,9 +12,27 @@ interface PlaceModalProps {
 }
 
 export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
+    const contentRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        // Scroll to the top when the modal opens
+        if (contentRef.current) {
+            contentRef.current.scrollTop = 0;
+        }
+    }, []);
+
     return (
         <Dialog open onOpenChange={onClose}>
-            <DialogContent className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto">
+            <DialogContent
+                className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
+                onOpenAutoFocus={(e) => {
+                    // Ensure the modal content starts at the top
+                    if (contentRef.current) {
+                        contentRef.current.scrollTop = 0;
+                    }
+                    e.preventDefault();
+                }}
+            >
                 <DialogHeader className="mt-5">
                     <DialogTitle>{place?.name}</DialogTitle>
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
