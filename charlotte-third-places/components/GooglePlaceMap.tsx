@@ -15,7 +15,7 @@ export function GooglePlaceMap({ places }: GooglePlaceMapProps) {
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
-            <div className="w-full h-[80vh] sm:h-[80vh] md:aspect-square mx-auto border border-gray-200 rounded-xl shadow-xl overflow-hidden">
+            <div className="mb-20 sm:mb-0 w-full h-[80vh] sm:h-[80vh] md:aspect-square mx-auto border border-gray-200 rounded-xl shadow-xl overflow-hidden">
                 <Map defaultCenter={charlotteCityCenter} defaultZoom={10} mapId='7b49fa8eab9db6c7'>
                     {places.map((place, index) => {
                         const position = {
