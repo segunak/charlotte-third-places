@@ -19,6 +19,7 @@ import {
 export function FilterDialog() {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const { filters } = useContext(FilterContext);
+    const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
 
     return (
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
@@ -26,6 +27,11 @@ export function FilterDialog() {
                 <DialogTrigger className="fixed right-3 z-50" style={{ bottom: '5rem' }} asChild>
                     <Button className="px-3 py-2" aria-label="Open Filters">
                         <Icons.filter className="h-4 w-4" />
+                        {activeFilterCount > 0 && (
+                            <span className="absolute top-0 right-0 w-4 h-4 text-xs bg-red-500 text-white rounded-full flex items-center justify-center">
+                                {activeFilterCount}
+                            </span>
+                        )}
                     </Button>
                 </DialogTrigger>
             )}
