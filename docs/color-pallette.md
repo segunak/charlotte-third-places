@@ -135,4 +135,3 @@ Create a vibrant yet simple logo for the Charlotte Third Places project focused 
 2. **Dark Yellow Highlight (Dark Mode)**  
    - **HSL**: 54, 100%, 20%  
    - **Description**: Highlight background color for dark mode.
-
