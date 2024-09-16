@@ -2,6 +2,7 @@
 // pack out there from the same react-icons/PackName library.
 import { ArrowUp } from "lucide-react";
 import { FaFilter, FaChessQueen } from "react-icons/fa";
+import { FaLocationPin } from "react-icons/fa6";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import {
   IoHome,
@@ -33,6 +34,7 @@ export const Icons = {
   searchOutline: IoSearchOutline,
   filter: FaFilter,
   queen: FaChessQueen,
+  pin: FaLocationPin,
   map: IoMap,
   mapOutline: IoMapOutline,
   infoCircle: IoInformationCircle,

@@ -36,14 +36,12 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 title={place.name}
                                 onClick={() => setSelectedPlace(place)}
                             >
-                                {/* <Pin
-                                    background="hsl(var(--primary))"
-                                    glyphColor="hsl(var(--primary-foreground))"
-                                    borderColor="hsl(var(--border))"
-                                    scale={0.8}
-                                /> */}
-                                <div className="flex items-center justify-center w-8 h-8 bg-primary text-white rounded-full shadow-lg border border-black">
-                                    <Icons.queen className="w-4 h-4 text-primary-foreground" />
+                                <div className="relative flex items-center justify-center w-8 h-8">
+                                    <Icons.pin className="w-8 h-8 text-primary" />
+
+                                    <div className="absolute flex items-center justify-center top-1 w-4 h-4 text-white">
+                                        <Icons.queen className="w-full h-full" />
+                                    </div>
                                 </div>
                             </AdvancedMarker>
                         );
