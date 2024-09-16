@@ -7,7 +7,7 @@ import { MainNavigation } from "@/components/MainNavigation"
 export function SiteHeader() {
     return (
         <header className="bg-background sticky top-0 z-50 w-full border-b">
-            <div className="container m-0 max-w-full flex h-16 items-center space-x-4 sm:space-x-0 sm:justify-between">
+            <div className="px-4 sm:px-12 py-8 mx-auto m-0 max-w-full flex h-16 items-center space-x-4 sm:space-x-0 sm:justify-between">
 
                 <div className="sm:flex gap-6 md:gap-10 items-center">
                     <Link href="/" className="flex items-center space-x-2">
