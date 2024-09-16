@@ -11,14 +11,15 @@ export default async function MapPage() {
     const places = await getPlaces();
 
     return (
-        <div className="flex flex-col px-4 sm:px-12 py-8 mx-auto h-screen">
+        <div className="grid grid-rows-[auto_1fr] px-4 sm:px-12 py-8 mx-auto">
             <header className="mb-4">
                 <h1 className="text-2xl font-bold mb-2">Explore the Map</h1>
-                <p>Use the map below to explore various places in the area. Click on a marker to learn more about a location.</p>
+                <p>Use the map below to explore various third places in Charlotte, North Carolina. Click on a marker to learn more about a place.</p>
             </header>
-            <div className="flex flex-1 items-center justify-center">
+
+            <div className="w-full h-[75dvh] sm:h-[90dvh] mx-auto overflow-hidden">
                 <PlaceMap places={places} />
             </div>
-        </div >
+        </div>
     );
 }
