@@ -5,11 +5,11 @@ import { useState } from 'react';
 import { AdvancedMarker, APIProvider, Map, Pin } from '@vis.gl/react-google-maps';
 import { PlaceModal } from '@/components/PlaceModal'; // Import your existing PlaceModal component
 
-interface PlaceMapProps {
+interface GooglePlaceMapProps {
     places: Array<Place>;
 }
 
-export function PlaceMap({ places }: PlaceMapProps) {
+export function GooglePlaceMap({ places }: GooglePlaceMapProps) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 }; // Middle of Uptown Charlotte 
 

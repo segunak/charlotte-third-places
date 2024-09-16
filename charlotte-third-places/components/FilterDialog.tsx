@@ -23,7 +23,7 @@ export function FilterDialog() {
     return (
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             {!isDialogOpen && (
-                <DialogTrigger className="fixed right-3 z-50" style={{ bottom: '4.5rem' }} asChild>
+                <DialogTrigger className="fixed right-3 z-50" style={{ bottom: '5rem' }} asChild>
                     <Button className="px-3 py-2" aria-label="Open Filters">
                         <Icons.filter className="h-4 w-4" />
                     </Button>
