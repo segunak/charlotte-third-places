@@ -20,7 +20,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
             <div className="mb-20 sm:mb-0 w-full h-[80vh] sm:h-[80vh] md:aspect-square mx-auto border border-gray-200 rounded-xl shadow-xl overflow-hidden">
                 <Map
                     defaultCenter={charlotteCityCenter}
-                    defaultZoom={10}
+                    defaultZoom={11}
                     mapId='7b49fa8eab9db6c7'
                     gestureHandling='greedy'>
                     {places.map((place, index) => {
