@@ -19,4 +19,6 @@ export type Place = {
     coverPhotoURL: string;
     localCoverPhotoURL: string;
     comments: string;
+    latitude: number;
+    longitude: number;
 }

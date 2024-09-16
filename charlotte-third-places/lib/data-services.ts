@@ -106,6 +106,8 @@ export async function getPlaces(): Promise<Place[]> {
                 coverPhotoURL: coverPhotoURL,
                 localCoverPhotoURL: localCoverPhotoURL,
                 comments: record.get('Comments') as string,
+                latitude: record.get('Latitude') as number,
+                longitude: record.get('Longitude') as number
             };
         })
     );

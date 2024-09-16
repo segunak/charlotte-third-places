@@ -164,7 +164,7 @@ class AirtableClient:
                         place_id, [
                             'googleMapsUri', 'websiteUri', 'formattedAddress', 'editorialSummary', 
                             'addressComponents', 'parkingOptions', 'priceLevel', 'paymentOptions', 
-                            'primaryType', 'outdoorSeating'
+                            'primaryType', 'outdoorSeating', 'location'
                         ])
 
                     if place_details_response:
@@ -173,7 +173,8 @@ class AirtableClient:
                         neighborhood = next(
                             (component.get('longText', '').title() for component in address_components if 'neighborhood' in component.get('types', [])), ''
                         )
-
+                        
+                        location = place_details_response.get('location')
                         parking_situation = self.get_parking_status(place_details_response)
                         purchase_required = self.determine_purchase_requirement(place_details_response)
 
@@ -185,7 +186,9 @@ class AirtableClient:
                             'Address': (place_details_response.get('formattedAddress'), False),
                             'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
                             'Purchase Required': (purchase_required, False),
-                            'Parking': (parking_situation, False)
+                            'Parking Situation': (parking_situation, False),
+                            'Latitude': (str(location['latitude']), True),
+                            'Longitude': (str(location['longitude']), True)
                         }
 
                         for field_name, (field_value, overwrite) in field_updates.items():
