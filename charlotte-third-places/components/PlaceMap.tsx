@@ -37,7 +37,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 onClick={() => setSelectedPlace(place)}
                             >
                                 <div className="relative flex items-center justify-center w-8 h-8">
-                                    <Icons.pin className="w-8 h-8 text-primary" />
+                                    <Icons.pin className="w-8 h-8 text-primary stroke-black stroke-2" />
                                     <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
                                         <Icons.queen className="w-full h-full text-white" />
                                     </div>
