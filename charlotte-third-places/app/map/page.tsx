@@ -14,7 +14,7 @@ export default async function MapPage() {
         <div className="grid grid-rows-[auto_1fr] px-4 sm:px-12 py-8 mx-auto">
             <header className="mb-4">
                 <h1 className="text-2xl font-bold mb-2">Explore the Map</h1>
-                <p>Use the map below to explore various third places in Charlotte, North Carolina. Click on a marker to learn more about a place.</p>
+                <p>Use the map below to explore various third places in Charlotte, North Carolina. <span className="font-bold custom-highlight">Click on a marker to learn more about a place.</span></p>
             </header>
 
             <div className="w-full h-[75dvh] sm:h-[90dvh] mx-auto overflow-hidden">
