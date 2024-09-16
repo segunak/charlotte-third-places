@@ -22,6 +22,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
                     mapId='7b49fa8eab9db6c7'
+                    fullscreenControl={false}
                     gestureHandling='greedy'>
                     {places.map((place, index) => {
                         const position = {
