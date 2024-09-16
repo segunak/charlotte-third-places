@@ -2,7 +2,7 @@
 
 import { Place } from '@/lib/types';
 import { useState } from 'react';
-import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+import { AdvancedMarker, APIProvider, Map, Pin } from '@vis.gl/react-google-maps';
 import { PlaceModal } from '@/components/PlaceModal'; // Import your existing PlaceModal component
 
 interface PlaceMapProps {
@@ -29,7 +29,14 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 position={position}
                                 title={place.name}
                                 onClick={() => setSelectedPlace(place)}
-                            />
+                            >
+                                <Pin
+                                    background="hsl(var(--primary))"         // Primary background color
+                                    glyphColor="hsl(var(--primary-foreground))" // Glyph (text/icon) color
+                                    borderColor="hsl(var(--border))"          // Border color
+                                    scale={0.8}                               // Smaller size for the pin
+                                />
+                            </AdvancedMarker>
                         );
                     })}
                 </Map>
