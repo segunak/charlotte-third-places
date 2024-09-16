@@ -28,7 +28,7 @@ export function FilterDialog() {
                     <Button className="px-3 py-2" aria-label="Open Filters">
                         <Icons.filter className="h-4 w-4" />
                         {activeFilterCount > 0 && (
-                            <span className="absolute top-0 right-0 w-4 h-4 text-xs bg-red-500 text-white rounded-full flex items-center justify-center">
+                            <span className="absolute -top-1.5 right-0 w-4 h-4 text-xs bg-red-500 text-white rounded-full flex items-center justify-center">
                                 {activeFilterCount}
                             </span>
                         )}
