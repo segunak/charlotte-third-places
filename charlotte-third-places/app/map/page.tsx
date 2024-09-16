@@ -1,6 +1,6 @@
 import * as React from "react";
 import { getPlaces } from '@/lib/data-services';
-import { GooglePlaceMap } from "@/components/GooglePlaceMap";
+import { PlaceMap } from "@/components/PlaceMap";
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // This results in Next.js refreshing the data from Airtable once for the whole site every 12 hours.
@@ -17,7 +17,7 @@ export default async function MapPage() {
                 <p>Use the map below to explore various places in the area. Click on a marker to learn more about a location.</p>
             </header>
             <div className="flex flex-1 items-center justify-center">
-                <GooglePlaceMap places={places} />
+                <PlaceMap places={places} />
             </div>
         </div >
     );
