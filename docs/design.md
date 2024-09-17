@@ -45,19 +45,19 @@ If chosen, it should take the user to a form with the following inputs in order:
 3. **Place:**: A dropdown menu with all the places in the app, where the user must select the place they’re providing feedback about. The subheading should say something to this effect. Select the place you want to provide feedback/enhancements about.
 4. **Enhancements**: This input box encourages users to share specific feedback/enhancements about the selected place. It should remind them that the data for the app comes from multiple sources, mostly Google Maps, and that some fields like `Has Cinnamon Rolls` are based on personal observations or anecdotal data.
 
-### Contact the Site Author
+### Contact the Site Creator
 
-A simple form for any open message users want to send to the site author.
+A simple form for any open message users want to send to the site creator.
 
 1. **Your Name**
 2. **Your Email**
-3. **Message**: This input box should include a caption with friendly language, emphasizing that the app is a passion project. It should also include a hyperlink to the `/about` page for more information about the app and its author. Encourage them to be kind.
+3. **Message**: This input box should include a caption with friendly language, emphasizing that the app is a passion project. It should also include a hyperlink to the `/about` page for more information about the app and its creator. Encourage them to be kind.
 
 ## About
 
-This page features a series of paragraphs with section headings, ending with links to the author's personal website and LinkedIn. The entire page is written in the author's voice, directly addressing users. Sections include:
+This page features a series of paragraphs with section headings, ending with links to the creator's personal website and LinkedIn. The entire page is written in the creator's voice, directly addressing users. Sections include:
 
-- **About the Author**: Background on the author, providing personal context.
+- **About the creator**: Background on the creator, providing personal context.
 - **How Charlotte Third Places Came To Be**: The origin story of the platform. Link to article on personal website.
 - **Tech Stack**: An overview of the technology used to build the site, including the use of Next.js, Shadcn/UI, and Airtable.
 - **Data Sources**: Details on where the data comes from and how it is maintained.
@@ -68,7 +68,7 @@ This page features a series of paragraphs with section headings, ending with lin
     - What criteria are used for inclusion in the app?
     - Why does the app track quirky details like whether a place has cinnamon rolls?
   - Users are directed to the "Contribute" section for submitting corrections or additional suggestions.
-- **Contact**: Information on how to get in touch with the author, with a strong preference for using the "Contribute" section rather than direct email. The author’s LinkedIn and personal website are listed as alternative contact methods.
+- **Contact**: Information on how to get in touch with the creator, with a strong preference for using the "Contribute" section rather than direct email. The author’s LinkedIn and personal website are listed as alternative contact methods.
 
 ## Technical Details
 
