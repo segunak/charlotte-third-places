@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/select";
 
 // Define the max-w value as a variable
-const maxWidth = "min-w-52 max-w-52";
+const maxWidth = "sm:min-w-52 sm:max-w-52";
 
 // Quick search input component
 export function FilterQuickSearch() {
