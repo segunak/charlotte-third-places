@@ -9,15 +9,18 @@ TBD
 ## Stuff Used
 
 * NextJS
+* TypeScript
+* Python
 * React
 * AG Grid (amazing, just so amazing)
 * shadcn/ui
+* Tailwind CSS
 * Microsoft Designer (AI generated images, logos, etc.)
 * OpenAI's ChatGPT
 * Google Maps Places API
 * The officially supported by Google <https://visgl.github.io/react-google-maps/>. There's so many other confusing options out there.
 * Airtable
-* Python Azure Functions to interact with the Google Maps API.
+* Azure Functions to interact with the Google Maps API.
 * Outscraper (getting reviews for amibeince analysis)
 
 ## Stuff Explored

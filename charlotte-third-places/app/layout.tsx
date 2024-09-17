@@ -8,7 +8,6 @@ import { ThemeProvider } from "@/components/ThemeProvider"
 import { GoogleTagManager } from '@next/third-parties/google'
 import { MobileNavigation } from "@/components/MobileNavigation"
 import { TailwindIndicator } from "@/components/TailwindIndicator"
-import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 
 export const metadata: Metadata = {
   title: {

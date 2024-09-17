@@ -73,8 +73,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
                     mapId='7b49fa8eab9db6c7'
-                    zoomControl={!isMobileView} // Enable zoom control on desktop
-                    streetViewControl={!isMobileView} // Enable street view control on desktop
+                    zoomControl={!isMobileView}
+                    streetViewControl={!isMobileView}
                     fullscreenControl={false}
                     gestureHandling='greedy'>
                     {filteredPlaces.map((place, index) => {
@@ -91,9 +91,9 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 onClick={() => setSelectedPlace(place)}
                             >
                                 <div className="relative flex items-center justify-center w-8 h-8">
-                                    <Icons.pin className="w-8 h-8 text-primary stroke-black stroke-2" />
+                                    <Icons.pin className="w-8 h-8 text-charlottePurple stroke-black stroke-2" />
                                     <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
-                                        <Icons.queen className="w-full h-full text-white" />
+                                        <Icons.queen className="w-full h-full text-amberGold" />
                                     </div>
                                 </div>
                             </AdvancedMarker>

@@ -16,31 +16,28 @@ export default async function MapPage() {
     return (
         <FilterProvider places={places}>
             <div className="grid grid-cols-1 md:grid-cols-[1fr_220px]">
-                {/* Main map content */}
                 <div className="overflow-hidden">
-                    <header className="px-4 sm:px-12 pt-4 mb-4 mx-auto">
-                        <h1 className="text-2xl font-bold mb-2">Explore the Map</h1>
-                        <p>Explore a map of various third places in Charlotte, North Carolina. Use the {" "}
-                            <span className="sm:hidden">button in the lower-right corner</span>
-                            <span className="hidden sm:inline">sidebar on the right</span>
-                            {" "} to filter and search through the list.
-                            <span className="font-bold custom-highlight">
-                                {" "} Click on a marker to learn more about a place.
-                            </span>
-                        </p>
-                    </header>
+                    <section className="px-4 sm:px-12 pt-4 mb-4 mx-auto">
+                        <div className="mb-6">
+                            <h1 className="text-3xl font-bold mb-2">Explore the Map</h1>
+                            <p>Explore a map of various third places in Charlotte, North Carolina. Use the {" "}
+                                <span className="sm:hidden">button in the lower-right corner</span>
+                                <span className="hidden sm:inline">sidebar on the right</span>
+                                {" "} to filter and search through the list.
+                                <span className="font-bold custom-highlight">
+                                    {" "} Click on a marker to learn more about a place.
+                                </span>
+                            </p>
+                        </div>
 
-                    <div className="w-full h-[90vh] px-4 sm:px-12 mb-8 sm:mb-4 mx-auto overflow-hidden">
-                        <PlaceMap places={places} />
-                    </div>
+                        <div className="w-full h-[90vh] mb-8 sm:mb-4 mx-auto">
+                            <PlaceMap places={places} />
+                        </div>
+                    </section>
                 </div>
-
-                {/* On mobile, this provides a button in the lower right for filtering */}
                 <div className="md:hidden">
                     <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
-
-                {/* On desktop, this provides a dedicated sidebar for filtering */}
                 <div className="hidden md:block">
                     <FilterSidebar className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12" />
                 </div>
