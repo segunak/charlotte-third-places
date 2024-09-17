@@ -34,7 +34,7 @@ export default async function HomePage() {
                   {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
                 </span>
               </p>
-              <br/>
+              <br />
               <span className="font-bold custom-highlight">
                 Click on a card to see more information about a place.
               </span>
@@ -44,11 +44,11 @@ export default async function HomePage() {
         </div>
         {/*On mobile, this provides a button in the lower right for filtering */}
         <div className="md:hidden">
-          <FilterDialog />
+          <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
         </div>
         {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden md:block">
-          <FilterSidebar />
+          <FilterSidebar className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12" />
         </div>
       </div>
     </FilterProvider>

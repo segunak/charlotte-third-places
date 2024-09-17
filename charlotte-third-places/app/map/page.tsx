@@ -15,27 +15,27 @@ export default async function MapPage() {
 
     return (
         <FilterProvider places={places}>
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_220px]">
+            <div className="flex flex-col md:flex-row px-4 sm:px-12 py-8 mx-auto">
                 {/* Main map content */}
-                <div className="overflow-hidden">
-                    <header className="px-4 sm:px-12 py-8 mx-auto mb-4">
+                <div className="flex-1 flex flex-col overflow-hidden">
+                    <header className="mb-4">
                         <h1 className="text-2xl font-bold mb-2">Explore the Map</h1>
                         <p>Use the map below to explore various third places in Charlotte, North Carolina. <span className="font-bold custom-highlight">Click on a marker to learn more about a place.</span></p>
                     </header>
 
-                    {/* Map component */}
-                    <div className="w-full h-[75dvh] sm:h-[90dvh] mx-auto overflow-hidden">
+                    {/* Map container */}
+                    <div className="flex-1 relative overflow-hidden rounded-lg border border-gray-200 shadow-xl">
                         <PlaceMap places={places} />
                     </div>
                 </div>
 
-                {/*On mobile, this provides a button in the lower right for filtering */}
+                {/* On mobile, this provides a button in the lower right for filtering */}
                 <div className="md:hidden">
                     <FilterDialog />
                 </div>
 
-                {/*On desktop, this provides a dedicated sidebar for filtering */}
-                <div className="hidden md:block">
+                {/* On desktop, this provides a dedicated sidebar for filtering */}
+                <div className="hidden md:block md:w-[220px] ml-4">
                     <FilterSidebar />
                 </div>
             </div>

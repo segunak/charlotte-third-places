@@ -16,7 +16,12 @@ import {
     DialogClose
 } from "@/components/ui/dialog";
 
-export function FilterDialog() {
+interface FilterDialogProps {
+    className?: string; // Optional className prop for customization
+    style?: React.CSSProperties; // Optional style prop for inline styles
+}
+
+export function FilterDialog({ className = "", style = {} }: FilterDialogProps) {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const { filters } = useContext(FilterContext);
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
@@ -24,7 +29,11 @@ export function FilterDialog() {
     return (
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
             {!isDialogOpen && (
-                <DialogTrigger className="fixed right-3 z-50" style={{ bottom: '5rem' }} asChild>
+                <DialogTrigger
+                    className={`${className}`}
+                    style={{ ...style }}
+                    asChild
+                >
                     <Button className="px-3 py-2" aria-label="Open Filters">
                         <Icons.filter className="h-4 w-4" />
                         {activeFilterCount > 0 && (

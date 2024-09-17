@@ -4,11 +4,15 @@ import { useContext } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 
-export function FilterSidebar() {
+interface FilterSidebarProps {
+    className?: string; // Optional className prop to customize styles
+}
+
+export function FilterSidebar({ className = "" }: FilterSidebarProps) {
     const { filters } = useContext(FilterContext);
 
     return (
-        <div className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12">
+        <div className={`${className}`}>
             <h2 className="font-bold text-lg mt-4">Filters</h2>
             <FilterQuickSearch />
             {Object.entries(filters).map(([field, config]) => (
