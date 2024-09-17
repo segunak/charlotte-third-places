@@ -30,7 +30,7 @@ export default async function MapPage() {
                         </p>
                     </header>
 
-                    <div className="w-full h-screen px-4 sm:px-12 mx-auto mb-4 overflow-hidden">
+                    <div className="w-full h-[90vh] px-4 sm:px-12 mb-8 sm:mb-4 mx-auto overflow-hidden">
                         <PlaceMap places={places} />
                     </div>
                 </div>
