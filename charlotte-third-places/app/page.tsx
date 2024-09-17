@@ -16,7 +16,7 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <div className="grid grid-cols-1 md:grid-cols-[1fr_220px]">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_230px]">
         <div className="overflow-hidden">
           <section className="px-4 sm:px-12 py-8 mx-auto">
             <div className="mb-6 space-y-3">
