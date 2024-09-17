@@ -39,7 +39,7 @@ export default async function MapPage() {
                     <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
                 <div className="hidden md:block">
-                    <FilterSidebar className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12" />
+                    <FilterSidebar className="p-4 space-y-4 bg-background border-l border-border h-screen fixed z-50" />
                 </div>
             </div>
         </FilterProvider>
