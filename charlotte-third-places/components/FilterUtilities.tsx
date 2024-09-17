@@ -14,6 +14,9 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
+// Define the max-w value as a variable
+const maxWidth = "min-w-52 max-w-52";
+
 // Quick search input component
 export function FilterQuickSearch() {
     const { quickFilterText, setQuickFilterText } = useContext(FilterContext);
@@ -26,14 +29,16 @@ export function FilterQuickSearch() {
     );
 
     return (
-        <Input
-            type="text"
-            placeholder="Search All Fields..."
-            value={quickFilterText}
-            onChange={handleQuickFilterChange}
-            className="w-full"
-            autoFocus={false}
-        />
+        <div className={maxWidth}>
+            <Input
+                type="text"
+                placeholder="Search All Fields..."
+                value={quickFilterText}
+                onChange={handleQuickFilterChange}
+                className="w-full"
+                autoFocus={false}
+            />
+        </div>
     );
 }
 
@@ -52,28 +57,30 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
     );
 
     return (
-        <Select
-            key={field}
-            value={config.value}
-            onValueChange={handleFilterChange}
-        >
-            <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
-                <SelectValue placeholder={config.placeholder}>
-                    {config.value === "all" ? config.placeholder : config.value}
-                </SelectValue>
-            </SelectTrigger>
-            <SelectContent>
-                <SelectGroup>
-                    <SelectLabel>{config.label}</SelectLabel>
-                    <SelectItem value="all">All</SelectItem>
-                    {getDistinctValues(field).map((item: string) => (
-                        <SelectItem key={item} value={item}>
-                            {item}
-                        </SelectItem>
-                    ))}
-                </SelectGroup>
-            </SelectContent>
-        </Select>
+        <div className={maxWidth}>
+            <Select
+                key={field}
+                value={config.value}
+                onValueChange={handleFilterChange}
+            >
+                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
+                    <SelectValue placeholder={config.placeholder}>
+                        {config.value === "all" ? config.placeholder : config.value}
+                    </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                    <SelectGroup>
+                        <SelectLabel>{config.label}</SelectLabel>
+                        <SelectItem value="all">All</SelectItem>
+                        {getDistinctValues(field).map((item: string) => (
+                            <SelectItem key={item} value={item}>
+                                {item}
+                            </SelectItem>
+                        ))}
+                    </SelectGroup>
+                </SelectContent>
+            </Select>
+        </div>
     );
 }
 
@@ -93,8 +100,10 @@ export function FilterResetButton() {
     }, [setFilters, setQuickFilterText]);
 
     return (
-        <Button onClick={handleResetFilters} className="w-full">
-            Reset Filters
-        </Button>
+        <div className={maxWidth}>
+            <Button onClick={handleResetFilters} className="w-full">
+                Reset Filters
+            </Button>
+        </div>
     );
 }
