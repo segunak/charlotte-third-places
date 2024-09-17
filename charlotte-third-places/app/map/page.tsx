@@ -17,7 +17,7 @@ export default async function MapPage() {
 
     return (
         <FilterProvider places={places}>
-            <div className="grid grid-cols-1 sm:grid-cols-[calc(100vw_-_250px)_250px]">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px]">
                 <div className="overflow-hidden">
                     <section className="px-4 sm:px-12 py-8 mx-auto">
                         <div className="mb-4 space-y-3">
@@ -39,7 +39,7 @@ export default async function MapPage() {
                                 </span>
                             </p>
                         </div>
-                        <div className="w-full h-[60vh] sm:h-screen mb-8 sm:mb-4 mx-auto">
+                        <div className="w-full h-[60vh] sm:h-[80vh] mb-8 sm:mb-4 mx-auto">
                             <PlaceMap places={places} />
                         </div>
                     </section>
@@ -48,7 +48,7 @@ export default async function MapPage() {
                     <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
                 <div className="hidden sm:block">
-                    <FilterSidebar className="max-w-[250px] p-4 space-y-4 bg-background border-l border-border h-screen fixed z-50" />
+                    <FilterSidebar className="max-w-[250px] p-4 space-y-4 bg-background border-l border-border h-screen sticky top-16" />
                 </div>
             </div>
         </FilterProvider>

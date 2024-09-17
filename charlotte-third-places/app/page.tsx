@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
-import { FilterDialog } from "@/components/FilterDialog";
+import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -16,7 +16,7 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <div className="grid grid-cols-1 sm:grid-cols-[calc(100vw_-_250px)_250px]">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px]">
         <div className="overflow-hidden">
           <section className="px-4 sm:px-12 py-8 mx-auto">
             <div className="mb-6 space-y-3">
@@ -47,7 +47,7 @@ export default async function HomePage() {
         </div>
         {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden sm:block">
-          <FilterSidebar className="max-w-[250px] p-4 space-y-4 bg-background border-l border-border h-screen fixed z-50" />
+          <FilterSidebar className="max-w-[250px] p-4 space-y-4 bg-background border-l border-border h-screen sticky top-16" />
         </div>
       </div>
     </FilterProvider>
