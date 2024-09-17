@@ -14,7 +14,6 @@ import {
     SelectValue,
 } from "@/components/ui/select";
 
-// Define the max-w value as a variable
 const maxWidth = "md:min-w-52 md:max-w-52";
 
 // Quick search input component
