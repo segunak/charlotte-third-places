@@ -7,7 +7,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ContributePage() {
     return (
-        <div className="px-4 sm:px-6 py-8 mx-auto max-w-full sm:max-w-6xl border border-gray-300 rounded-lg shadow-lg space-y-6 bg-background">
+        <div className="px-4 sm:px-6 py-8 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg space-y-6 bg-background">
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center">
                 Contribute to Charlotte Third Places
             </h1>
