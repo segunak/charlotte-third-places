@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-
-import { useState } from 'react';
+import { useState, useContext, useMemo } from 'react';
 import { Place } from '@/lib/types';
 import { Icons } from "@/components/Icons";
-import { AdvancedMarker, APIProvider, Map, Pin } from '@vis.gl/react-google-maps';
-import { PlaceModal } from '@/components/PlaceModal'; // Import your existing PlaceModal component
+import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+import { PlaceModal } from '@/components/PlaceModal';
+import { FilterContext } from '@/contexts/FilterContext';
 
 interface PlaceMapProps {
     places: Array<Place>;
@@ -13,7 +13,38 @@ interface PlaceMapProps {
 
 export function PlaceMap({ places }: PlaceMapProps) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 }; // Middle of Uptown Charlotte 
+    const { filters } = useContext(FilterContext); // Access filters from context
+    const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
+
+    // Apply filtering to places before rendering markers
+    const filteredPlaces = useMemo(() => {
+        return places.filter((place) => {
+            const {
+                name,
+                type,
+                size,
+                neighborhood,
+                purchaseRequired,
+                parkingSituation,
+                freeWifi,
+                hasCinnamonRolls,
+            } = filters;
+
+            const isTypeMatch =
+                type.value === "all" || (place.type && place.type.includes(type.value));
+
+            return (
+                isTypeMatch &&
+                (name.value === "all" || place.name === name.value) &&
+                (size.value === "all" || place.size === size.value) &&
+                (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
+                (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
+                (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
+            );
+        });
+    }, [places, filters]);
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
@@ -24,7 +55,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     mapId='7b49fa8eab9db6c7'
                     fullscreenControl={false}
                     gestureHandling='greedy'>
-                    {places.map((place, index) => {
+                    {filteredPlaces.map((place, index) => {
                         const position = {
                             lat: Number(place.latitude),
                             lng: Number(place.longitude)
