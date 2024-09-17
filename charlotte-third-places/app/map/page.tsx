@@ -18,13 +18,19 @@ export default async function MapPage() {
             <div className="grid grid-cols-1 md:grid-cols-[1fr_220px]">
                 {/* Main map content */}
                 <div className="overflow-hidden">
-                    <header className="px-4 sm:px-12 py-8 mx-auto mb-4">
+                    <header className="px-4 sm:px-12 pt-4 mb-4 mx-auto">
                         <h1 className="text-2xl font-bold mb-2">Explore the Map</h1>
-                        <p>Use the map below to explore various third places in Charlotte, North Carolina. <span className="font-bold custom-highlight">Click on a marker to learn more about a place.</span></p>
+                        <p>Explore a map of various third places in Charlotte, North Carolina. Use the {" "}
+                            <span className="sm:hidden">button in the lower-right corner</span>
+                            <span className="hidden sm:inline">sidebar on the right</span>
+                            {" "} to filter and search through the list.
+                            <span className="font-bold custom-highlight">
+                                {" "} Click on a marker to learn more about a place.
+                            </span>
+                        </p>
                     </header>
 
-                    {/* Map container */}
-                    <div className="w-full h-[75dvh] sm:h-[90dvh] mx-auto overflow-hidden">
+                    <div className="w-full h-screen px-4 sm:px-12 mx-auto mb-4 overflow-hidden">
                         <PlaceMap places={places} />
                     </div>
                 </div>

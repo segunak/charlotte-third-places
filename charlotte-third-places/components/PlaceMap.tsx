@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useContext, useMemo } from 'react';
+import { useState, useEffect, useContext, useMemo } from 'react';
 import { Place } from '@/lib/types';
 import { Icons } from "@/components/Icons";
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
@@ -15,6 +15,26 @@ export function PlaceMap({ places }: PlaceMapProps) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const { filters } = useContext(FilterContext); // Access filters from context
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
+
+    // State to track whether it's a mobile view
+    const [isMobileView, setIsMobileView] = useState(false);
+
+    // Effect to manage isMobileView based on screen size
+    useEffect(() => {
+        const updateViewSettings = () => {
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+            setIsMobileView(isMobile);
+        };
+
+        // Initial check
+        updateViewSettings();
+
+        // Listen for screen resize
+        window.addEventListener('resize', updateViewSettings);
+
+        // Cleanup event listener on component unmount
+        return () => window.removeEventListener('resize', updateViewSettings);
+    }, []);
 
     // Apply filtering to places before rendering markers
     const filteredPlaces = useMemo(() => {
@@ -53,6 +73,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
                     mapId='7b49fa8eab9db6c7'
+                    zoomControl={!isMobileView} // Enable zoom control on desktop
+                    streetViewControl={!isMobileView} // Enable street view control on desktop
                     fullscreenControl={false}
                     gestureHandling='greedy'>
                     {filteredPlaces.map((place, index) => {
