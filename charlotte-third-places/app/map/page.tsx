@@ -31,12 +31,12 @@ export default async function MapPage() {
 
                 {/* On mobile, this provides a button in the lower right for filtering */}
                 <div className="md:hidden">
-                    <FilterDialog />
+                    <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
 
                 {/* On desktop, this provides a dedicated sidebar for filtering */}
-                <div className="hidden md:block md:w-[220px] ml-4">
-                    <FilterSidebar />
+                <div className="hidden md:block ml-4">
+                    <FilterSidebar className="p-4 space-y-4 bg-background border-l border-border h-screen sticky top-12" />
                 </div>
             </div>
         </FilterProvider>
