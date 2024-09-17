@@ -1,11 +1,12 @@
 "use client";
 
-import { useState, useEffect, useContext, useMemo } from 'react';
 import { Place } from '@/lib/types';
 import { Icons } from "@/components/Icons";
-import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 import { PlaceModal } from '@/components/PlaceModal';
+import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
+import { useState, useEffect, useContext, useMemo } from 'react';
+import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 interface PlaceMapProps {
     places: Array<Place>;
@@ -13,7 +14,7 @@ interface PlaceMapProps {
 
 export function PlaceMap({ places }: PlaceMapProps) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const { filters } = useContext(FilterContext); // Access filters from context
+    const { filters, quickFilterText } = useContext(FilterContext); // Access filters and quickFilterText from context
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
 
     // State to track whether it's a mobile view
@@ -50,10 +51,15 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 hasCinnamonRolls,
             } = filters;
 
+            // Filter by the quick search input
+            const matchesQuickSearch = normalizeTextForSearch(JSON.stringify(place))
+                .includes(normalizeTextForSearch(quickFilterText));
+
             const isTypeMatch =
                 type.value === "all" || (place.type && place.type.includes(type.value));
 
             return (
+                matchesQuickSearch &&
                 isTypeMatch &&
                 (name.value === "all" || place.name === name.value) &&
                 (size.value === "all" || place.size === size.value) &&
@@ -64,7 +70,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );
         });
-    }, [places, filters]);
+    }, [places, filters, quickFilterText]); // Include quickFilterText in dependencies
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
