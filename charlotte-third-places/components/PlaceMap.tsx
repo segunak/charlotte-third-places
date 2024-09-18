@@ -80,7 +80,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     defaultZoom={11}
                     mapId='7b49fa8eab9db6c7'
                     zoomControl={!isMobileView}
-                    streetViewControl={!isMobileView}
+                    streetViewControl={false}
                     fullscreenControl={false}
                     gestureHandling='greedy'>
                     {filteredPlaces.map((place, index) => {

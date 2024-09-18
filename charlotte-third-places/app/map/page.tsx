@@ -38,7 +38,7 @@ export default async function MapPage() {
                             </span>
                         </p>
                     </div>
-                    <div className="w-full h-[60vh] sm:h-[80vh] mb-8 sm:mb-4 mx-auto">
+                    <div className="w-full h-[50vh] sm:h-[80vh] sm:mb-4 mx-auto">
                         <PlaceMap places={places} />
                     </div>
                 </section>
