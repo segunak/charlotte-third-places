@@ -18,37 +18,35 @@ export default async function MapPage() {
     return (
         <FilterProvider places={places}>
             <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px]">
-                <div className="overflow-hidden">
-                    <section className="px-4 sm:px-12 py-8 mx-auto">
-                        <div className="mb-4 space-y-3">
-                            <h1 className="text-3xl font-bold">
-                                Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
-                                <span className="sm:hidden">Charlotte</span>
-                                <span className="hidden sm:inline">Charlotte, North Carolina</span>
-                            </h1>
-                            <p>
-                                Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the map below. {" "}
-                                <span className="hidden sm:inline">
-                                    {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
-                                </span>
-                                <span className="font-bold text-primary">
-                                    {" "} Filter and search the map using the {" "}
-                                    <span className="sm:hidden">button in the lower-right corner.</span>
-                                    <span className="hidden sm:inline">sidebar on the right.</span>
-                                    {" "}Click on any marker to see more information about that place.
-                                </span>
-                            </p>
-                        </div>
-                        <div className="w-full h-[60vh] sm:h-[80vh] mb-8 sm:mb-4 mx-auto">
-                            <PlaceMap places={places} />
-                        </div>
-                    </section>
-                </div>
+                <section className="px-4 sm:px-12 py-8 mx-auto">
+                    <div className="mb-4 space-y-3">
+                        <h1 className="text-3xl font-bold">
+                            Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
+                            <span className="sm:hidden">Charlotte</span>
+                            <span className="hidden sm:inline">Charlotte, North Carolina</span>
+                        </h1>
+                        <p>
+                            Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the map below. {" "}
+                            <span className="hidden sm:inline">
+                                {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
+                            </span>
+                            <span className="font-bold text-primary">
+                                {" "} Filter and search the map using the {" "}
+                                <span className="sm:hidden">button in the lower-right corner.</span>
+                                <span className="hidden sm:inline">sidebar on the right.</span>
+                                {" "}Click on any marker to see more information about that place.
+                            </span>
+                        </p>
+                    </div>
+                    <div className="w-full h-[60vh] sm:h-[80vh] mb-8 sm:mb-4 mx-auto">
+                        <PlaceMap places={places} />
+                    </div>
+                </section>
                 <div className="sm:hidden">
                     <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
-                <div className="hidden sm:block">
-                    <FilterSidebar className="max-w-[250px] p-4 space-y-4 bg-background border-l border-border h-screen sticky top-16" />
+                <div className="hidden sm:block bg-background border-l border-border">
+                    <FilterSidebar className="max-w-[250px] h-0 sticky top-12 p-4 space-y-4" />
                 </div>
             </div>
         </FilterProvider>
