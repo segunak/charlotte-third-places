@@ -70,6 +70,29 @@ This page features a series of paragraphs with section headings, ending with lin
   - Users are directed to the "Contribute" section for submitting corrections or additional suggestions.
 - **Contact**: Information on how to get in touch with the creator, with a strong preference for using the "Contribute" section rather than direct email. The author’s LinkedIn and personal website are listed as alternative contact methods.
 
+Here's the same information in a more draft format.
+
+This page should be a series of paragraphs with section headings, and should end with a link the the author's personal website and LinkedIn. The entire page should be written in the voice of the author, so the author directly speaking to users. Here are the sections.
+
+- About the Author
+- How Charlotte Third Places Came To Be
+- Frequently Asked Questions
+  - What is a Third Place?
+  - Charlotte is known for having a lot of breweries, and they could be said to qualify as a third place. Why isn't literally every brewery in Charlotte listed in the app?
+    - The author elected to only add breweries that you could also hang out at during the day, grab a coffee in the morning, work/study on your laptop, etc., before the drinking starts. Yes, technically speaking you could consider every brewery a third place, but the goal with this app is to filter to those that really lean into that identity. Simply put, places that cater to more than just the beer crowd.
+  - What about restaurants? Aren't restaurants third places? Why isn't literally every single restaurant in Charlotte listed in the app?
+    - I don't know that restaurants qualify as Third Places. Part of the definition of such is "little to no financial barrier to entry", which disqualifies most restaurants. This is a nuanced topic where no side is right. The app author has simply decided to exclude restaurants, except for those styling themselves as hybrid cafe types, like Amelie's.
+  - Where does the data for the app come from?
+  - Why is there a `Has Cinnamon Rolls` column?
+  - Starbucks locations are quintessential examples of a third place. Why not list every single one in the greater Charlotte area?
+    - This is a valid point. To counter, some Starbucks, like those inside of grocery stores and malls, aren't exactly set up as third places. They're quick stops on your way to doing something else, you're not expected to stay awhile. Other Starbucks are just small, and have removed quite a bit of the interiro seating, ostensibly to discourage hanging about. And so, this project makes the choice to include a Starbucks only when it qualifies as a proper third place, in that there's sufficinet interor seating. There's likely many such Starbucks in the greater Charlotte area that have been left of the list. Feel free to use the Feedback tab to submit new ones, this is a community driven list!
+  - I see some information about a place that's wrong. How can I get it updated?
+    - Link them to the `feedback` tab.
+  - I submitted a place and haven't seen it added to the app yet. What should I do?
+    - The user should do nothing. There's only 1 person maintaining the app, that person is busy. Also, there's a certain amount of filtering going on to only add places that truly qualify as a third place.
+- Contact
+  - Information about how to get in contact with the author. A link to the feedback tab is best (don't list your email.). Here you can list your website and LinkedIn though, approved channels for contacting the author.
+
 ## Technical Details
 
 Here's how the site works.

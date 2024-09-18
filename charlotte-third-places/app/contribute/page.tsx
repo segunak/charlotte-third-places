@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import * as React from "react";
 import { Button } from "@/components/ui/button";
+import AirtableForm from "@/components/AirtableForm"
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -15,54 +16,39 @@ export default function ContributePage() {
                 Help keep Charlotte Third Places up to date by contributing your knowledge and ideas. Whether it's suggesting a new place, enhancing existing information, or contacting the creator directly, your input helps improve this community resource.
             </p>
 
-            {/* Centered circular skyline image */}
             <div className="flex justify-center">
-                <div className="relative w-48 h-48 sm:w-72 sm:h-72 rounded-full overflow-hidden shadow-lg">
+                <div className="relative w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] rounded-full overflow-hidden shadow-lg">
                     <Image
-                        src="/logos/skyline-water.png"
+                        src="/logos/skyline-with-text-badge.png"
                         alt="Charlotte Skyline"
-                        layout="fill"  // Ensures the image takes up the whole container
-                        objectFit="cover" // Makes sure the image covers the circle while maintaining its aspect ratio
-                        className="rounded-full"
+                        layout="fill"
+                        objectFit="contain"
+                        className="rounded-lg p-5"
                     />
                 </div>
             </div>
-
             <div className="space-y-6">
+                { /* Suggest a New Place Form*/}
                 <Card className="border border-gray-300 shadow-sm">
-                    <CardHeader>
-                        <CardTitle className="text-xl sm:text-2xl font-semibold">Suggest a New Place</CardTitle>
-                    </CardHeader>
+                    <CardHeader />
                     <CardContent>
-                        <p className="text-sm sm:text-base text-muted-foreground">
-                            Found a new third place in Charlotte that others should know about? Submit a new place form with all the details so we can add it to the list.
-                        </p>
-                        <Button className="mt-4 text-base sm:text-md font-bold">Suggest New Place</Button>
+                        <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
                     </CardContent>
                 </Card>
 
+                { /* Suggest Enhancements to a Place Form*/}
                 <Card className="border border-gray-300 shadow-sm">
-                    <CardHeader>
-                        <CardTitle className="text-xl sm:text-2xl font-semibold">Suggest Enhancements to a Place</CardTitle>
-                    </CardHeader>
+                    <CardHeader />
                     <CardContent>
-                        <p className="text-sm sm:text-base text-muted-foreground">
-                            Have suggestions to improve the information about a place already listed? Submit an enhancement form to update or improve the existing details.
-                        </p>
-                        <Button className="mt-4 text-base sm:text-md font-bold">Suggest Enhancements</Button>
+                        <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
                     </CardContent>
                 </Card>
 
+                { /* Contact Site Creator Form*/}
                 <Card className="border border-gray-300 shadow-sm">
-                    <CardHeader>
-                        <CardTitle className="text-xl sm:text-2xl font-semibold">Contact the Site Creator</CardTitle>
-                    </CardHeader>
+                    <CardHeader />
                     <CardContent>
-                        <p className="text-sm sm:text-base text-muted-foreground">
-                            Have questions, feedback, or other inquiries? Feel free to contact the creator of this website directly.
-                            Learn more about <ResponsiveLink href="https://segunakinyemi.com">Segun Akinyemi</ResponsiveLink>, the creator of this website, <Link href="/about" className="custom-link">here</Link>.
-                        </p>
-                        <Button className="mt-4 text-base sm:text-md font-bold">Contact Site Creator</Button>
+                        <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
                     </CardContent>
                 </Card>
             </div>
