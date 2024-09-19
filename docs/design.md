@@ -57,41 +57,57 @@ A simple form for any open message users want to send to the site creator.
 
 This page features a series of paragraphs with section headings, ending with links to the creator's personal website and LinkedIn. The entire page is written in the creator's voice, directly addressing users. Sections include:
 
-- **About the creator**: Background on the creator, providing personal context.
-- **How Charlotte Third Places Came To Be**: The origin story of the platform. Link to article on personal website.
-- **Tech Stack**: An overview of the technology used to build the site, including the use of Next.js, Shadcn/UI, and Airtable.
-- **Data Sources**: Details on where the data comes from and how it is maintained.
-- **Frequently Asked Questions (FAQs)**: Common inquiries about third places, the criteria for listing, data sources, and other relevant topics.
-  - *Example Questions*:
-    - What is a Third Place?
-    - Why aren’t all breweries or restaurants included?
-    - What criteria are used for inclusion in the app?
-    - Why does the app track quirky details like whether a place has cinnamon rolls?
-  - Users are directed to the "Contribute" section for submitting corrections or additional suggestions.
-- **Contact**: Information on how to get in touch with the creator, with a strong preference for using the "Contribute" section rather than direct email. The author’s LinkedIn and personal website are listed as alternative contact methods.
-
-Here's the same information in a more draft format.
-
-This page should be a series of paragraphs with section headings, and should end with a link the the author's personal website and LinkedIn. The entire page should be written in the voice of the author, so the author directly speaking to users. Here are the sections.
-
-- About the Author
-- How Charlotte Third Places Came To Be
-- Frequently Asked Questions
+- **About the Site**: A very basic overview of what the site is. Charlotte Third Places is a collection of third places in Charlotte, North Carolian (say this better, add professional tone). It was created by Segun Akinyemi (link to personal website), a software engiener and denizen of Charlotte who works remotely and enjoys rotating spots throughoitu the city and sharing his list of spots with friends. Everything on this about page should be first person, I am now writing as me rather than as some other person.
+- **Contact**: Information on how to get in touch with the creator, basically telling them to use the "Contribute". Then list to your LinkedIn and personal website are as alternative contact methods.
+- **Data Sources**: Details on where the data comes from and how it is maintained. The answer to this is Google Maps is where most of the data comes from. Specifically, here's where each field is from.
+  - Name - Google Maps with a little bit of custom formatting to make some names clearer, bot mostly just the name from Google Maps.
+  - Type - Also from Google Maps, but with some curation to try and best encapsulate all of what a place offers. For example, some places are a coffee shop, cafe, and bar. Google usually will just list one of those, I've tried to captuer all the types of a places in this field the best I can.
+  - Size - Not from Google maps, totally based on my personal experience visting places, and for places I haven't been to, trying to gauge their size from the online photos and map view. If you see a size you disagree with, or one that's listed as unsure, use the contribute page (link to it) to contact me and help get it corrected.
+  - Ambience - TBD. This is future state, a field that mentiosn the overall "vibe" and ambienec of a place. The plan is to let AI analyze user reviews from Google Maps to come up with this data rather than make it subjective to my opinion as the site creator.
+  - Neighborhood - From Google Maps with some curation. For places outside of the city of Charlotte proper, I've listed the neighborhood as simply the name of the city (Matthews, Concord, Fort Mill, etc.). Then there's some places where the neighborhood from Google Maps is some name nobody who lives in Charlotte actually uses or recognizes, so I've changed the neighborhood to be something more representing of that general area. For example, there are specific Google Maps neighborhoods for small areas of South End that people in Charlotte would just call "South End". Rather than using the weird Google Maps name I just changed it to "South End". THere are a handful of places where I did that. You can find them out by clicking "View Google Maps Profile" on any place's pop up modal and comparing what I listed to what's on Google Maps.
+  - Address - From Google Maps 100%.
+  - Purchase Required - Google Maps provides this data but it's not entirely accurate. They're guessing. So as someone livign in Charlotte, I've curated this field to best encapsulate my epxrieince either visiting or place, or inferring whether they'd expect a purchase based on the nature of a place. For example, most coffee shops, cafe's, and restaruatns want you to buy something if you're going to hang out within it, but market halls like Optmist Hall are general spaces where people can go hangout without buying something. So this is a field that's heavily curated, and I'd appreciate you reachign out if you see a place with a value you know is wrong in this field. The goal is for this data to be as accurate as possible!
+  - Parking Sitaution - From Google Maps with some curation. There are places Google Maps says have free parking that don't really, and places they say have free parking that don't really, so I personally reviewed the value of all places regarding this field. This is also one field where I'm looking for community support if you see a value that's wrong.
+  - Free WiFi - 100% from me. This data isn't available on Google Maps. It's a safe bet that almost all coffee shops have WiFi, and places like Panera Bread, but eveyrwhere else, it's been me visiting personally and confirming or me inferring from reading Google Maps and Yelp Reviews. This is another field where community input is greatly appreicated, let me know if you see a wrong value! And as a note, I consider Free WiFi to include password protected WiFi. So in a way, if you go into a place, don't make a purchase, then ask for the WiFi password, they'll probbaly be like "lol why don't you buy something first then we'll tell you". In that case, is it really "Free WiFi"? I mean, probbaly not, but I'm making the base assumption that those visting a place where purchase is required will make a purchase and therby be given access to the WiFi if it's passwrod protected, thus making it free to use, with stipulations. Idk man, I tried not to overthink this field. 
+  - Has Cinnamon Rolls - 100000% from me. I love cinnamon rolls. If you ever run into me, I'd be more than willing to speak in depth on why I believe them to be an exalted form of pastry. I like places that have cinnamon rolls. I added this field for myself. I want a quick way to filter to places that have cinnamon rolls whenever I want to go out and work remotely or hangout somewhere. I hope others get value from it as well. I ABOSUELTLY want community help making sure every single place that actually has cinnamon rolls is marked as "Yes" here.
+  - Description - From Google Maps. This is the description the busienss wrote for themselves on Google Maps. For places with no Gooogle Maps description, the default value is "A third place in or around Charlotte, North Carolina".
+  - Website - From Google Maps. The website the business put on their profile there if they have one.
+  - Google Maps Profile - From Google Maps. A link to the places Google Maps profile.
+  - Comments - Totally from me as the site creator. This is what I think of a place, my tips and tricks, anyhting I've noticed I think others might benefit from having. All me baby.
+- **Frequently Asked Questions**
+  - Who built and maintains Charlotte Third Places?
+    - It is I Segun Akinyemi, you can learn more about me here (link to website.). In short, I'm a software engineer that works remotely and loves doing so from spots around the city. I moved to Charlottte in 2020 during the pandemic and rotated around cofee shops and cafes and variosu other third places as a way to feel human again, connected, and make friends. I kept a list on my phone of my favorte places, and would get asked to share it by people I'd meet. Eventually the list was so long it wasn't effiicent copy/pasting, and out of that the idea to make this website to share it was born.
   - What is a Third Place?
+    - Use the standard professional defintion. Mention that determining what qualfiies as a third place is subjective. Link them to this Reddit thread to read people in Charltote debating about it. Mention that as this is my website, I make the calls, but i'm open to community feedback. I'm trying to avoid listing every single park and every single resturatn and every single community center. Once you do that the site just becomes "lol just use Google Maps" rather than something that's curated and special. <https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/>
   - Charlotte is known for having a lot of breweries, and they could be said to qualify as a third place. Why isn't literally every brewery in Charlotte listed in the app?
     - The author elected to only add breweries that you could also hang out at during the day, grab a coffee in the morning, work/study on your laptop, etc., before the drinking starts. Yes, technically speaking you could consider every brewery a third place, but the goal with this app is to filter to those that really lean into that identity. Simply put, places that cater to more than just the beer crowd.
   - What about restaurants? Aren't restaurants third places? Why isn't literally every single restaurant in Charlotte listed in the app?
     - I don't know that restaurants qualify as Third Places. Part of the definition of such is "little to no financial barrier to entry", which disqualifies most restaurants. This is a nuanced topic where no side is right. The app author has simply decided to exclude restaurants, except for those styling themselves as hybrid cafe types, like Amelie's.
   - Where does the data for the app come from?
+    - Google maps
   - Why is there a `Has Cinnamon Rolls` column?
+    - I love cinnmaon rolls and wanted to have a list of where I can get them easily.
   - Starbucks locations are quintessential examples of a third place. Why not list every single one in the greater Charlotte area?
     - This is a valid point. To counter, some Starbucks, like those inside of grocery stores and malls, aren't exactly set up as third places. They're quick stops on your way to doing something else, you're not expected to stay awhile. Other Starbucks are just small, and have removed quite a bit of the interiro seating, ostensibly to discourage hanging about. And so, this project makes the choice to include a Starbucks only when it qualifies as a proper third place, in that there's sufficinet interor seating. There's likely many such Starbucks in the greater Charlotte area that have been left of the list. Feel free to use the Feedback tab to submit new ones, this is a community driven list!
   - I see some information about a place that's wrong. How can I get it updated?
-    - Link them to the `feedback` tab.
+    - Link them to the contribute page to provide feedback.
   - I submitted a place and haven't seen it added to the app yet. What should I do?
-    - The user should do nothing. There's only 1 person maintaining the app, that person is busy. Also, there's a certain amount of filtering going on to only add places that truly qualify as a third place.
-- Contact
-  - Information about how to get in contact with the author. A link to the feedback tab is best (don't list your email.). Here you can list your website and LinkedIn though, approved channels for contacting the author.
+    - The user should do nothing. There's only 1 person maintaining the app, that person is busy. Also, there's a certain amount of filtering going on to only add places that truly qualify as a third place. Be nice about it.
+- **Tech Stack**: An overview of the technology used to build the site. this is all the stuff I used.
+  - NextJS
+  - TypeScript
+  - Python for interactions with the Google Maps and Outscraper API's in Azure Functions.
+  - React
+  - AG Grid (amazing, just so amazing)
+  - shadcn/ui which is built on Radix UI
+  - Tailwind CSS
+  - Microsoft Designer (AI generated images, logos, etc.)
+  - OpenAI's ChatGPT
+  - Google Maps Places API
+  - The officially supported by Google <https://visgl.github.io/react-google-maps/>. There's so many other confusin-ptions out there.
+  - Airtable to store the places data and the Airtabel JS API for easy integration into the site.
+  - Azure Functions to interact with the Google Maps API.
+  - Outscraper (getting reviews for amibeince analysis)
 
 ## Technical Details
 

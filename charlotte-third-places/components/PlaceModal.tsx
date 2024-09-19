@@ -62,8 +62,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Parking Situation:</strong> {place?.parkingSituation}</p>
                     <p><strong>Free Wifi:</strong> {place?.freeWifi}</p>
                     <p><strong>Has Cinnamon Rolls:</strong> {place?.hasCinnamonRolls}</p>
-                    <p><strong>Description:</strong> {place?.description || "No description available."}</p>
-                    <p><strong>Site Author Comments:</strong> {place?.comments || "None."}</p>
+                    <p><strong>Description:</strong> {place?.description || "A third place in the Charlotte, North Carolina area."}</p>
+                    <p><strong>Curator's Comments:</strong> {place?.comments || "None."}</p>
                 </div>
                 <div className="flex justify-end mt-4">
                     <Button onClick={onClose}>Close</Button>
