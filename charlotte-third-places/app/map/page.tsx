@@ -18,7 +18,7 @@ export default async function MapPage() {
     return (
         <FilterProvider places={places}>
             <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px]">
-                <section className="px-4 sm:px-12 py-8 mx-auto">
+                <section className="px-4 sm:px-20 py-8 mx-auto">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">
                             Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
@@ -42,11 +42,15 @@ export default async function MapPage() {
                         <PlaceMap places={places} />
                     </div>
                 </section>
+
+                {/*On mobile, this provides a button in the lower right for filtering */}
                 <div className="sm:hidden">
                     <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
-                <div className="hidden sm:block bg-background border-l border-border">
-                    <FilterSidebar className="max-w-[250px] h-0 sticky top-12 p-4 space-y-4" />
+
+                {/*On desktop, this provides a dedicated sidebar for filtering */}
+                <div className="hidden sm:block bg-background border-x border-border">
+                    <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
                 </div>
             </div>
         </FilterProvider>
