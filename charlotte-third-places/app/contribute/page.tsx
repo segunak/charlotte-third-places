@@ -23,7 +23,7 @@ export default function ContributePage() {
                 </div>
             </div>
             <p>
-                Got feedback or ideas? You're in the right place! You can suggest new places, enhance existing ones, or contact <Link href="/about" className="custom-link">me</Link> directly using the forms below.
+                Got feedback or ideas about Charlotte Third Places? You're in the right place! You can suggest new places, enhance existing ones, or contact me directly using the forms below.
             </p>
             <div className="space-y-6">
                 { /* Suggest a New Place Form*/}
