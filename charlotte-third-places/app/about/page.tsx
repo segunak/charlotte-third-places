@@ -33,7 +33,7 @@ export default function AboutPage() {
                     </CardTitle>
                     <div className="flex justify-center">
                         <Image
-                            src="/images/obiwan.gif"
+                            src="/gifs/obiwan.gif"
                             alt="Hello There"
                             width={500}
                             height={500}
@@ -184,10 +184,6 @@ export default function AboutPage() {
                     </ul>
                 </CardContent>
             </Card>
-
-
-
-
         </section>
     );
 }
