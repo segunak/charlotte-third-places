@@ -38,7 +38,7 @@ export default async function MapPage() {
                             </span>
                         </p>
                     </div>
-                    <div className="w-full h-[60vh] sm:h-[80vh] mb-0 sm:mb-4 mx-auto">
+                    <div className="w-full h-[70vh] sm:h-[80vh] mb-0 sm:mb-4 mx-auto">
                         <PlaceMap places={places} />
                     </div>
                 </section>
@@ -50,7 +50,7 @@ export default async function MapPage() {
 
                 {/*On desktop, this provides a dedicated sidebar for filtering */}
                 <div className="hidden sm:block bg-background border-x border-border">
-                    <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
+                    <FilterSidebar className="max-w-[250px] sticky top-16 p-4 space-y-4" />
                 </div>
             </div>
         </FilterProvider>

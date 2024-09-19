@@ -47,7 +47,7 @@ export default async function HomePage() {
 
         {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden sm:block bg-background border-x border-border">
-          <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
+          <FilterSidebar className="max-w-[250px] sticky top-16 p-4 space-y-4" />
         </div>
       </div>
     </FilterProvider>
