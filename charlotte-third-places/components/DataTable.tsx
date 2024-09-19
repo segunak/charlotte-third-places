@@ -1,219 +1,158 @@
 "use client";
 
-// See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
-import "@/styles/ag-grid-theme-builder.css";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useIsMobile } from "@/hooks/useIsMobile"
+import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
 import { PlaceCard } from "@/components/PlaceCard";
+import { normalizeTextForSearch } from '@/lib/utils'
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
-import { useCallback, useEffect, useRef, useState, useMemo } from "react";
+import { useWindowWidth } from '@/hooks/useWindowWidth';
+import { FilterContext } from "@/contexts/FilterContext";
+import { useContext, useCallback, useRef, useState, useMemo } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
-import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy, IRowNode } from '@ag-grid-community/core';
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
+import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 interface DataTableProps {
     rowData: Array<object>; // Accepts an array of objects for the row data
-    colDefs: ColDef[]; // Accepts column definitions for AG Grid
-    style?: React.CSSProperties; // Optional style prop with CSS properties
 }
 
 const autoSizeStrategy: SizeColumnsToContentStrategy = {
     type: 'fitCellContents',
 };
 
-export function DataTable({ rowData, colDefs, style }: DataTableProps) {
+export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [filteredData, setFilteredData] = useState(rowData);
-    const [quickFilterText, setQuickFilterText] = useState<string>('');
-    const [selectedRow, setSelectedRow] = useState<any | null>(null);  // For selected card on click
-    const isMobile = useIsMobile();
+    const [selectedCard, setSelectedCard] = useState<any | null>(null);
+    const { filters, quickFilterText } = useContext(FilterContext);
 
-    // Unified filter object
-    const filterConfig = useMemo(() => ({
-        name: { value: "all", placeholder: "Name", label: "Name", predefinedOrder: [] },
-        type: { value: "all", placeholder: "Type", label: "Type", predefinedOrder: [] },
-        size: { value: "all", placeholder: "Size", label: "Size", predefinedOrder: ["Small", "Medium", "Large"] },
-        neighborhood: { value: "all", placeholder: "Neighborhood", label: "Neighborhood", predefinedOrder: [] },
-        purchaseRequired: { value: "all", placeholder: "Purchase Required", label: "Purchase Required", predefinedOrder: ["Yes", "No"] },
-        parkingSituation: { value: "all", placeholder: "Parking Situation", label: "Parking Situation", predefinedOrder: [] },
-        freeWifi: { value: "all", placeholder: "Free Wifi", label: "Free Wifi", predefinedOrder: ["Yes", "No"] },
-        hasCinnamonRolls: { value: "all", placeholder: "Has Cinnamon Rolls", label: "Has Cinnamon Rolls", predefinedOrder: ["Yes", "No", "Sometimes"] }
-    }), []);
+    const isFullWidthRow = useCallback((params: any) => {
+        return true;
+    }, []);
 
-    const [filters, setFilters] = useState(filterConfig);
+    const handlePlaceClick = useCallback((place: any) => {
+        setSelectedCard(place);
+    }, []);
 
-    // Get distinct values for dropdowns
-    const getDistinctValues = useCallback((field: string, predefinedOrder: string[] = []) => {
-        const values = rowData
-            .map((item: any) => item[field])
-            .flat()  // Handle arrays like 'type'
-            .filter(Boolean);  // Remove falsy values
-
-        const distinctValues = Array.from(new Set(values));
-
-        return distinctValues.sort((a, b) => {
-            const indexA = predefinedOrder.indexOf(a);
-            const indexB = predefinedOrder.indexOf(b);
-            if (predefinedOrder.length === 0) {
-                return a.localeCompare(b);
+    const columnDefs = useMemo(() => {
+        const gridColumns: ColDef[] = [
+            {
+                headerName: "",
+                field: "dummy",
+                flex: 1,
+                resizable: false,
+                cellRenderer: "agFullWidthCellRenderer"
             }
-            if (indexA === -1 && indexB === -1) return a.localeCompare(b);
-            if (indexA === -1) return 1;
-            if (indexB === -1) return -1;
-            return indexA - indexB;
-        });
-    }, [rowData]);
+        ];
 
-    // Handle filter changes
-    const handleFilterChange = useCallback((field: keyof typeof filters, value: string) => {
-        setFilters((prevFilters) => ({
-            ...prevFilters,
-            [field]: { ...prevFilters[field], value }
-        }));
-        gridRef.current?.api.onFilterChanged(); // Trigger AG Grid filter
+        return gridColumns;
     }, []);
 
-    // Handle quick search changes
-    const handleQuickFilterChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
-        setQuickFilterText(event.target.value);
-    }, []);
+    const applyFilters = useCallback(
+        (data: any[]) => {
+            return data.filter((place: any) => {
+                const {
+                    name,
+                    type,
+                    size,
+                    neighborhood,
+                    purchaseRequired,
+                    parkingSituation,
+                    freeWifi,
+                    hasCinnamonRolls,
+                } = filters;
 
-    // Reset filters to default values
-    const handleResetFilters = useCallback(() => {
-        setFilters(filterConfig);
-        setQuickFilterText("");
-        gridRef.current?.api.setFilterModel(null);
-        gridRef.current?.api.onFilterChanged();
-    }, [filterConfig]);
+                const isTypeMatch =
+                    type.value === "all" || (place.type && place.type.includes(type.value));
 
-    // Handle row selection
-    const handleRowClick = useCallback((event: any) => {
-        setSelectedRow(event.data); // Set selected row for modal
-    }, []);
+                return (
+                    isTypeMatch &&
+                    (name.value === "all" || place.name === name.value) &&
+                    (size.value === "all" || place.size === size.value) &&
+                    (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
+                    (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
+                    (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                    (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                    (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
+                );
+            });
+        },
+        [filters]
+    );
 
-    // Custom filter logic for AG Grid
-    const isExternalFilterPresent = useCallback(() => {
-        return Object.values(filters).some(filter => filter.value !== "all");
-    }, [filters]);
+    const windowWidth = useWindowWidth();
 
-    const doesExternalFilterPass = useCallback((node: IRowNode) => {
-        const { name, type, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
-        const isTypeMatch = type.value === "all" || (node.data.type && node.data.type.includes(type.value));
+    // Aligns with Tailwind breakpoints at https://tailwindcss.com/docs/responsive-design
+    const columnsPerRow = useMemo(() => {
+        if (windowWidth >= 768) return 2; // md and larger (2 cards)
+        return 1; // anything smaller than md (1 card)
+    }, [windowWidth]);
 
-        return (
-            (name.value === "all" || node.data.name === name.value) &&
-            isTypeMatch &&
-            (size.value === "all" || node.data.size === size.value) &&
-            (neighborhood.value === "all" || node.data.neighborhood === neighborhood.value) &&
-            (purchaseRequired.value === "all" || node.data.purchaseRequired === purchaseRequired.value) &&
-            (parkingSituation.value === "all" || node.data.parkingSituation === parkingSituation.value) &&
-            (freeWifi.value === "all" || node.data.freeWifi === freeWifi.value) &&
-            (hasCinnamonRolls.value === "all" || node.data.hasCinnamonRolls === hasCinnamonRolls.value)
-        );
-    }, [filters]);
 
-    // Memoized column definitions
-    const updatedColDefs = useMemo(() => {
-        return colDefs.map((col) => {
-            if (col.field === "type" || col.field === "ambience") {
-                return {
-                    ...col,
-                    valueFormatter: (params: any) =>
-                        Array.isArray(params.value) ? params.value.join(", ") : params.value, // Handle array values
-                };
-            }
-            return col;
-        });
-    }, [colDefs]);
+    const filteredAndGroupedRowData = useMemo(() => {
+        let filteredData = rowData;
 
-    // Effect to filter the data based on the selected filters
-    useEffect(() => {
-        const filtered = rowData.filter((item: any) => {
-            const { name, size, neighborhood, purchaseRequired, parkingSituation, freeWifi, hasCinnamonRolls } = filters;
-            const isTypeMatch = filters.type.value === "all" || (item.type && item.type.includes(filters.type.value));
-
-            return (
-                (name.value === "all" || item.name === name.value) &&
-                isTypeMatch &&
-                (size.value === "all" || item.size === filters.size.value) &&
-                (neighborhood.value === "all" || item.neighborhood === filters.neighborhood.value) &&
-                (purchaseRequired.value === "all" || item.purchaseRequired === filters.purchaseRequired.value) &&
-                (parkingSituation.value === "all" || item.parkingSituation === filters.parkingSituation.value) &&
-                (freeWifi.value === "all" || item.freeWifi === filters.freeWifi.value) &&
-                (hasCinnamonRolls.value === "all" || item.hasCinnamonRolls === filters.hasCinnamonRolls.value)
+        if (quickFilterText.trim() !== "") {
+            const lowerCaseFilter = quickFilterText.toLowerCase();
+            filteredData = filteredData.filter((place: any) =>
+                normalizeTextForSearch(JSON.stringify(place)).includes(lowerCaseFilter)
             );
-        });
-        setFilteredData(filtered);
-    }, [filters, rowData]);
+        }
+
+        filteredData = applyFilters(filteredData);
+
+        const grouped = [];
+        for (let i = 0; i < filteredData.length; i += columnsPerRow) {
+            const group = filteredData.slice(i, i + columnsPerRow);
+            grouped.push({ group });
+        }
+        return grouped;
+    }, [rowData, quickFilterText, applyFilters, columnsPerRow]);
+
+    const getRowHeight = useCallback(() => {
+        const cardHeight = 215;
+        return cardHeight;
+    }, []);
+
+    const fullWidthCellRenderer = useCallback(
+        (params: any) => {
+            const { group } = params.data;
+            return (
+                <div className="flex flex-wrap -mx-2">
+                    {group.map((place: any, index: number) => (
+                        <div key={index} className="w-full md:w-1/2 px-2 mb-4">
+                            <PlaceCard
+                                place={place}
+                                onClick={() => handlePlaceClick(place)}
+                            />
+                        </div>
+                    ))}
+                </div>
+            );
+        },
+        [handlePlaceClick]
+    );
 
     return (
-        <div>
-            {/* Filters and Search */}
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-5 mb-5 m-px">
-                <Input
-                    type="text"
-                    placeholder="Search All Columns..."
-                    onChange={handleQuickFilterChange}
-                    value={quickFilterText}
-                    className="w-full"
-                />
-
-                {/* Dynamically Render Filters */}
-                {Object.entries(filters).map(([field, config]) => (
-                    <Select key={field} onValueChange={(value) => handleFilterChange(field as keyof typeof filters, value)}>
-                        <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
-                            <SelectValue placeholder={config.placeholder}>
-                                {config.value === "all" ? config.placeholder : config.value}
-                            </SelectValue>
-                        </SelectTrigger>
-                        <SelectContent>
-                            <SelectGroup>
-                                <SelectLabel>{config.label}</SelectLabel>
-                                <SelectItem value="all">All</SelectItem>
-                                {getDistinctValues(field, config.predefinedOrder).map((item: string) => (
-                                    <SelectItem key={item} value={item}>
-                                        {item}
-                                    </SelectItem>
-                                ))}
-                            </SelectGroup>
-                        </SelectContent>
-                    </Select>
-                ))}
-
-                {/* Reset Filters Button */}
-                <Button onClick={handleResetFilters} className="w-full">
-                    Reset Filters
-                </Button>
-            </div>
-
-            <div className="ag-theme-custom" style={{ ...style }}>
+        <div className="flex-1">
+            <div className="ag-theme-custom w-full">
                 <AgGridReact
                     ref={gridRef}
-                    rowData={filteredData}
-                    columnDefs={updatedColDefs}
+                    rowData={filteredAndGroupedRowData}
+                    columnDefs={columnDefs}
                     autoSizeStrategy={autoSizeStrategy}
-                    quickFilterText={quickFilterText}
-                    isExternalFilterPresent={isExternalFilterPresent}
-                    doesExternalFilterPass={doesExternalFilterPass}
+                    includeHiddenColumnsInQuickFilter={true}
                     suppressMovableColumns={true}
-                    onRowClicked={handleRowClick}
+                    domLayout="autoHeight" // Ensures that grid height adjusts to content
+                    getRowHeight={getRowHeight}
+                    isFullWidthRow={isFullWidthRow}
+                    fullWidthCellRenderer={fullWidthCellRenderer}
                 />
             </div>
-
-            {/* Modal for Card Display */}
-            {selectedRow && <PlaceModal place={selectedRow} onClose={() => setSelectedRow(null)} />}
+            {
+                selectedCard &&
+                <PlaceModal place={selectedCard} onClose={() => setSelectedCard(null)} />
+            }
         </div>
     );
 }

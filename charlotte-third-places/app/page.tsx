@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { useState } from "react";
 import { getPlaces } from '@/lib/data-services';
-import { Place, gridColumns } from "@/lib/data-models";
 import { DataTable } from "@/components/DataTable";
+import { FilterDialog } from '@/components/FilterDialog';
+import { FilterProvider } from '@/contexts/FilterContext';
+import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
@@ -14,31 +15,41 @@ export default async function HomePage() {
   const places = await getPlaces();
 
   return (
-    <section className="container mx-auto py-8 px-6 sm:px-4">
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold mb-4">
-          Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
-          <span className="sm:hidden">Charlotte, NC</span>
-          <span className="hidden sm:inline">Charlotte, North Carolina</span>
-        </h1>
-        <p>
-          Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> using the table below. You can filter, search, sort, and scroll through the list. Places are listed in alphabetical order by default.
-        </p>
-        <p className="mt-4">
-          For a map view, click <Link href="/map" className="custom-link">here</Link>. If you'd like to contribute a place, or suggest enhancements to existing places, click <Link href="/contribute" className="custom-link">here</Link>. For more information about the site, click <Link href="/about" className="custom-link">here</Link>.
-        </p>
-        <p className="mt-4 font-bold">
-          Click on a row to expand its details and see additional columns.
-        </p>
-      </div>
+    <FilterProvider places={places}>
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px] min-h-screen">
+        <section className="px-4 sm:px-20 py-8 mx-auto">
+          <div className="mb-6 space-y-3">
+            <h1 className="text-3xl font-bold">
+              Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
+              <span className="sm:hidden">Charlotte</span>
+              <span className="hidden sm:inline">Charlotte, North Carolina</span>
+            </h1>
+            <p>
+              Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the list below. {" "}
+              <span className="hidden sm:inline">
+                {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
+              </span>
+              <span className="font-bold text-primary">
+                {" "} Filter and search the list using the {" "}
+                <span className="sm:hidden">button in the lower-right corner.</span>
+                <span className="hidden sm:inline">sidebar on the right.</span>
+                {" "} Click on any card to see more information about that place.
+              </span>
+            </p>
+          </div>
+          <DataTable rowData={places} />
+        </section>
+        
+        {/*On mobile, this provides a button in the lower right for filtering */}
+        <div className="sm:hidden">
+          <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+        </div>
 
-      <div className="flex-1 overflow-y-auto">
-        <DataTable
-          rowData={places}
-          colDefs={gridColumns}
-          style={{ height: '100vh', width: '100%' }}
-        />
+        {/*On desktop, this provides a dedicated sidebar for filtering */}
+        <div className="hidden sm:block bg-background border-x border-border">
+          <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
+        </div>
       </div>
-    </section>
+    </FilterProvider>
   );
 }

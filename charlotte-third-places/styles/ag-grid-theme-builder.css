@@ -4,14 +4,14 @@
  * See installation docs at https://www.ag-grid.com/javascript-data-grid/applying-theme-builder-styling-grid/
  */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM%20Plex%20Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM%20Plex%20Sans:wght@400;700&display=swap');
 
 
 :where(.ag-root-wrapper, .ag-measurement-container, .ag-apply-theme-variables, .ag-popup) {
-	--ag-background-color: var(--ag-inherited-background-color, #D5C2FF);
-	--ag-foreground-color: var(--ag-inherited-foreground-color, #000000);
+	--ag-background-color: var(--ag-inherited-background-color, #FFF);
+	--ag-foreground-color: var(--ag-inherited-foreground-color, #181d1f);
 	--ag-text-color: var(--ag-inherited-text-color, var(--ag-foreground-color));
-	--ag-accent-color: var(--ag-inherited-accent-color, #2196f3);
+	--ag-accent-color: var(--ag-inherited-accent-color, #59489F);
 	--ag-invalid-color: var(--ag-inherited-invalid-color, #e02525);
 	--ag-border-color: var(--ag-inherited-border-color, color-mix(in srgb, transparent, var(--ag-foreground-color) 15%));
 	--ag-wrapper-border: var(--ag-inherited-wrapper-border, solid 1px var(--ag-border-color));
@@ -27,11 +27,11 @@
 	--ag-side-panel-border: var(--ag-inherited-side-panel-border, solid 1px var(--ag-border-color));
 	--ag-font-family: var(--ag-inherited-font-family, 'IBM Plex Sans');
 	--ag-chrome-background-color: var(--ag-inherited-chrome-background-color, color-mix(in srgb, transparent, var(--ag-foreground-color) 2%));
-	--ag-header-background-color: var(--ag-inherited-header-background-color, var(--ag-chrome-background-color));
+	--ag-header-background-color: var(--ag-inherited-header-background-color, #0092CA);
 	--ag-header-font-family: var(--ag-inherited-header-font-family, var(--ag-font-family));
-	--ag-header-font-weight: var(--ag-inherited-header-font-weight, 500);
+	--ag-header-font-weight: var(--ag-inherited-header-font-weight, 700);
 	--ag-header-font-size: var(--ag-inherited-header-font-size, 14px);
-	--ag-header-text-color: var(--ag-inherited-header-text-color, var(--ag-text-color));
+	--ag-header-text-color: var(--ag-inherited-header-text-color, #FFFFFF);
 	--ag-header-cell-hover-background-color: var(--ag-inherited-header-cell-hover-background-color, transparent);
 	--ag-header-cell-hover-background-transition-duration: var(--ag-inherited-header-cell-hover-background-transition-duration, 0.2s);
 	--ag-cell-text-color: var(--ag-inherited-cell-text-color, var(--ag-text-color));
@@ -46,7 +46,7 @@
 	--ag-column-hover-color: var(--ag-inherited-column-hover-color, color-mix(in srgb, transparent, var(--ag-accent-color) 5%));
 	--ag-selected-row-background-color: var(--ag-inherited-selected-row-background-color, color-mix(in srgb, transparent, var(--ag-accent-color) 8%));
 	--ag-modal-overlay-background-color: var(--ag-inherited-modal-overlay-background-color, color-mix(in srgb, transparent, var(--ag-background-color) 66%));
-	--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, #88FFEC);
+	--ag-odd-row-background-color: var(--ag-inherited-odd-row-background-color, #D4F3FF);
 	--ag-border-radius: var(--ag-inherited-border-radius, 4px);
 	--ag-wrapper-border-radius: var(--ag-inherited-wrapper-border-radius, 8px);
 	--ag-cell-horizontal-padding: var(--ag-inherited-cell-horizontal-padding, calc(var(--ag-grid-size) * 2 * var(--ag-cell-horizontal-padding-scale)));

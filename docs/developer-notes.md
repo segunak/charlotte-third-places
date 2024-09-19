@@ -9,12 +9,7 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 * To run locally `cd` into the `charlotte-third-places` directory and run `npm run dev`.
 
-No website - Should remain empty.
-WiredCoffeeExpress
-MadoCafe
-
-Manually removed website, shouild come back properly formatted
-Wooden Robot
+try rgb(250, 250, 250)
 
 ## Random Information
 
@@ -26,7 +21,18 @@ A PlaceCard component where you pass in the Airtable record Id, and with that, i
 * Remember to start and stop Azurite for local testing if you're using local storage.
 * See [this page](https://outscraper.com/place-id-feature-id-cid/) for a `google_id` explainer. I have found no use for it but it's returned by the Outscraper API.
 * When using Python's logging module pass `exc_info=True` to get the stack trace.
-* Light color for personal website is #0092ca and the dark color is #f21368
+
+## Colors
+
+Light color for personal website is #0092ca and the dark color is #f21368
+
+Background: 197 100% 97%
+Hex Code: #f5fbff
+This is a very light blue color.
+
+Foreground: 197 5% 10%
+Hex Code: #181b1e
+This is a very dark, almost black color with a hint of blue.
 
 ## Azure Function
 

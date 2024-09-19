@@ -45,14 +45,14 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <SiteHeader />
           <div className="flex flex-col min-h-dvh">
-            <div className="flex-1 overflow-y-auto">
+            <SiteHeader />
+            <main className="flex-1 mb-12 sm:mb-0 bg-background">
               {children}
-            </div>
+            </main>
+            <MobileNavigation />
+            <SiteFooter />
           </div>
-          <MobileNavigation />
-          <SiteFooter />
           <TailwindIndicator />
         </ThemeProvider>
       </body>

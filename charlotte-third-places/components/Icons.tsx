@@ -1,4 +1,10 @@
+// See https://react-icons.github.io/react-icons/. You can get Icons from just about every
+// pack out there from the same react-icons/PackName library.
+import { ArrowUp } from "lucide-react";
+import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { FaFilter, FaChessQueen, FaComment } from "react-icons/fa";
+import { FaLocationPin, FaMapPin, FaCirclePlus } from "react-icons/fa6";
 import {
   IoHome,
   IoHomeOutline,
@@ -9,26 +15,33 @@ import {
   IoInformationCircle,
   IoInformationCircleOutline,
   IoCreate,
-  IoCreateOutline
+  IoCreateOutline,
 } from "react-icons/io5";
 import {
   LuMoon,
   LuSunMedium,
   LuLink,
-  LuHome,
   LuLinkedin,
   LuExternalLink
 } from "react-icons/lu";
 
 export const Icons = {
+  arrowUp: ArrowUp,
   sun: LuSunMedium,
   moon: LuMoon,
   home: IoHome,
   homeOutline: IoHomeOutline,
+  editMarker: MdEditLocationAlt,
   search: IoSearch,
   searchOutline: IoSearchOutline,
+  filter: FaFilter,
+  comment: FaComment,
+  queen: FaChessQueen,
+  pin: FaLocationPin,
+  plus: FaCirclePlus,
   map: IoMap,
   mapOutline: IoMapOutline,
+  mapPin: FaMapPin,
   infoCircle: IoInformationCircle,
   infoCircleOutline: IoInformationCircleOutline,
   create: IoCreate,
