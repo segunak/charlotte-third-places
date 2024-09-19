@@ -16,7 +16,7 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px]">
+      <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px] min-h-screen">
         <section className="px-4 sm:px-20 py-8 mx-auto">
           <div className="mb-6 space-y-3">
             <h1 className="text-3xl font-bold">
