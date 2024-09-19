@@ -8,7 +8,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 export default function AboutPage() {
     return (
         <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg bg-background">
-            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center">
+            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 About Charlotte Third Places
             </h1>
             <div className="flex justify-center">
@@ -25,11 +25,11 @@ export default function AboutPage() {
             <p>
                 Welcome to Charlotte Third Places, a curated collection of <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in and around Charlotte, North Carolina. Browse the list of spots <Link href="/" className="custom-link">here</Link>, explore them on a map <Link href="/map" className="custom-link">here</Link>, contribute to the community <Link href="/contribute" className="custom-link">here</Link>, or continue reading to discover more about the site.
             </p>
-            {/* About the Site */}
+            {/* Site Creator*/}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center mb-4">
-                        Creator
+                    <CardTitle className="text-2xl sm:text-3xl text-center mb-4 border-b pb-3">
+                        Site Creator
                     </CardTitle>
                     <div className="flex justify-center">
                         <Image
@@ -44,27 +44,70 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Hello! I'm Segun Akinyemi—Christian, Software Engineer, Writer, Cinnamon Roll Connoisseur, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can study, read, write, chill, watch anime, work remotely, hang out with friends, or enjoy some time alone in a relaxing environment. Whether you're looking for a coffee shop, café, quiet library, or something else, this site aims to help you find the perfect spot. To learn more about me, check out my{" "} <ResponsiveLink href="https://segunakinyemi.com/about">personal website</ResponsiveLink>.
+                        Hello! I'm Segun Akinyemi—Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can study, read, write, chill, watch anime, work remotely, hang out with friends, or enjoy some time alone in a relaxing environment. Whether you're looking for a coffee shop, café, quiet library, or something else, this site aims to help you find the perfect spot. To learn more about me, check out my{" "} <ResponsiveLink href="https://segunakinyemi.com/about">personal website</ResponsiveLink>.
                     </p>
                 </CardContent>
             </Card>
 
-            {/* Site Story */}
+            {/* Contact Information */}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center">
-                        Background
+                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                        Contact Information
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="leading-relaxed">
+                    <p>
+                        The best way to get in touch with me regarding the site is by using the <Link href="/contribute" className="custom-link">Contribute</Link> page. Also feel free to visit my <ResponsiveLink href="https://segunakinyemi.com">personal website</ResponsiveLink> or connect with me on <ResponsiveLink href="https://linkedin.com/in/segunakinyemi">LinkedIn</ResponsiveLink>.
+                    </p>
+                </CardContent>
+            </Card>
+
+            {/* Frequently Asked Questions */}
+            <Card className="border border-gray-300 shadow-sm">
+                <CardHeader>
+                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                        Frequently Asked Questions
+                    </CardTitle>
+                </CardHeader>
+                <CardContent>
+                    <Accordion type="single" collapsible className="space-y-4">
+                        <AccordionItem value="question-1">
+                            <AccordionTrigger>
+                                What is a Third Place?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                Third places are community spaces like cafes, parks, or libraries where people can gather outside of home and work. It's a subjective definition, and for this site, I've focused on places that invite longer stays and are conducive to remote work or socializing.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="question-2">
+                            <AccordionTrigger>
+                                Why aren't all breweries or restaurants listed?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                                I've curated this list to include only places that fit a certain profile of a third place—welcoming, relaxed, and conducive to remote work or gathering during the day.
+                            </AccordionContent>
+                        </AccordionItem>
+                    </Accordion>
+                </CardContent>
+            </Card>
+
+            {/* Project Background */}
+            <Card className="border border-gray-300 shadow-sm">
+                <CardHeader>
+                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                        Project Background
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Of course, building this site wasn’t just about creating a resource; it’s also deeply personal to me. After moving to Charlotte in 2020 during the COVID-19 pandemic, I spent my first year in the city in relative isolation, mostly confined to my rather cramped Uptown apartment. In search of a change of pace, I began exploring local spots where I could work remotely and, hopefully, connect with people in person again. Over time, I started compiling a list of my favorite places—spaces where I could read, work, or just hang out. As I began meeting people and the world slowly reopened, I found myself regularly asked for recommendations. At first, I would share this informal list, but sending out a massive, unorganized block of text filled with my rambles and thoughts quickly became unmanageable.
-
-                        I realized I had a problem—a good problem—but a problem nonetheless. I needed a better way to share my list with friends and fellow remote workers. That's when the idea for this website was born. I envisioned a simple, organized way to share all of my favorite third places around Charlotte, with the added functionality of filtering, searching, and so much more. Given my full-time job, this became a side project that I worked on during evenings and weekends, and, admittedly, it took longer than I originally anticipated. If you're reading this and I once promised to send you my list but went silent for months—well, life happens. But I'm excited to finally share the finished product with you.
-
-                        Building this site has not only allowed me to curate my list more effectively, but it's also been a valuable learning experience. It gave me the chance to dive deep into front-end development, a space I hadn't been in since my college days. From the technical side of things to exploring new cafés and parks, the journey has been more rewarding than I could have imagined.
-
-                        Thank you for visiting Charlotte Third Places. I hope you find it as useful as I've found building it to be enjoyable. Scroll down to explore more about how the site works, the tech stack behind it, and how you can contribute!
+                        The inspiration for this project came from my experiences moving to Charlotte in 2020 during the COVID-19 pandemic. I spent my first year in the city in relative isolation, working remotely from my cramped Uptown apartment, going to the gym that was just downstairs in the building, and rarely venturing further than the Harris Teeter down the street. When things started slowly opening back up around the city, although I was (and am still) working remotely, I was in rather dire need of places to hangout where I could at least see other people, with the hope of eventually talking to some of them. It's tough moving to a new city where you know literally no one, and while I'm not a complete introvert, I'm relatively one (shout to my <ResponsiveLink href="https://www.16personalities.com/intj-personality">INTJ's</ResponsiveLink>), so I was in real danger of staying in my "shell of comfort" and not connecting with anyone in this new city I had been so excited to move to. To combat this, I set out to work from somehwere other than my apartemnt every day of the week.
+                    </p>
+                    <p>
+                        At first, it wasn't about meeting people, it was just about seieng people (COVID was rough y'all). Eventually, it became easy to amek friends, as you become a regular somehwere, get to know the staff, the oother regular,s and make connections. As I kept doing this, I found myself scouring Google Maps, Yelp, <ResponsiveLink href="https://workfrom.co/charlotte">WorkForm</ResponsiveLink> and threads on the Charlotte <ResponsiveLink href="https://www.reddit.com/r/Charlotte/">subreddit</ResponsiveLink> looking for new spots to hangout, work, read, and just chill. As I did this, I kept a list, and it kept growing, and growing, aFnd growing, to the point where it was no longer viable to keep just in my notes app. I'd meet people around the city who also worked remotely (I have no data to back this up but Charlotte seems to have a good crowd of remote workers) and wanted to learn more about some of my favorite spots. Eventaully, sharing a long list with random comments that only made sense to me became untenable, and I wanted to make something more oranized nad formal to share with others. IT was out of that desire that this project was born. As a software enineer, I knew I had the skills to build a website/app that'd do it, I just had to find the time. Well, I finally did (over the course of many evenings and weekends, got to keep my day job) and I'm so happy you're here, reading this right now, and hopefully benefiting from this site.
+                    </p>
+                    <p>
+                        In addition to allowing me to organize my list better, building this site was a learning/tinkering exercise for me. I love making things with software, so much so that I do it professionally, but it can be hard finding time to make things that you want to make, rather than what your coproate employer wants you to. Making this project allowed me to use all sorts of frameworks and libaries and language that I'm unlikely to use in my curretnt job role, allowing me to grow my skills, explore new areas of tech, and just straight up have fun. It was fun. I had fun building this site. I have fun maintaing it. I hope you have fun browsing it! Keep scrolling to read more about the tech that was used to make the site, where the data comes from, and how you can get in contact with me.
                     </p>
                 </CardContent>
             </Card>
@@ -72,7 +115,7 @@ export default function AboutPage() {
             {/* Tech Stack */}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center">
+                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
                         Tech Stack
                     </CardTitle>
                 </CardHeader>
@@ -87,7 +130,7 @@ export default function AboutPage() {
             {/* Data Sources */}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center">
+                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
                         Data Sources
                     </CardTitle>
                 </CardHeader>
@@ -142,49 +185,9 @@ export default function AboutPage() {
                 </CardContent>
             </Card>
 
-            {/* Frequently Asked Questions */}
-            <Card className="border border-gray-300 shadow-sm">
-                <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center">
-                        Frequently Asked Questions
-                    </CardTitle>
-                </CardHeader>
-                <CardContent>
-                    <Accordion type="single" collapsible className="space-y-4">
-                        <AccordionItem value="question-1">
-                            <AccordionTrigger>
-                                What is a Third Place?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Third places are community spaces like cafes, parks, or libraries where people can gather outside of home and work. It's a subjective definition, and for this site, I've focused on places that invite longer stays and are conducive to remote work or socializing.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="question-2">
-                            <AccordionTrigger>
-                                Why aren't all breweries or restaurants listed?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                I've curated this list to include only places that fit a certain profile of a third place—welcoming, relaxed, and conducive to remote work or gathering during the day.
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
-                </CardContent>
-            </Card>
 
 
-            {/* Contact */}
-            <Card className="border border-gray-300 shadow-sm">
-                <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center">
-                        Contact Information
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="leading-relaxed">
-                    <p>
-                        The best way to get in touch is by using the <Link href="/contribute" className="custom-link">Contribute</Link> page. For direct contact, feel free to visit my <ResponsiveLink href="https://segunakinyemi.com">personal website</ResponsiveLink> or connect with me on <ResponsiveLink href="https://linkedin.com/in/segunakinyemi">LinkedIn</ResponsiveLink>.
-                    </p>
-                </CardContent>
-            </Card>
+
         </section>
     );
 }

@@ -8,7 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function ContributePage() {
     return (
         <div className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg bg-background">
-            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center">
+            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 Contribute to Charlotte Third Places
             </h1>
             <div className="flex justify-center">
@@ -23,7 +23,7 @@ export default function ContributePage() {
                 </div>
             </div>
             <p>
-                Got feedback or ideas? You're in the right place! You can suggest new places, enhance existing information, or contact <Link href="/about" className="custom-link">me</Link> directly using the forms below. Pick one that best fits your contribution, and let's make this site even better!
+                Got feedback or ideas? You're in the right place! You can suggest new places, enhance existing ones, or contact <Link href="/about" className="custom-link">me</Link> directly using the forms below.
             </p>
             <div className="space-y-6">
                 { /* Suggest a New Place Form*/}
