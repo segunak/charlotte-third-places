@@ -11,17 +11,6 @@ export default function AboutPage() {
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
-            <div className="flex justify-center">
-                <div className="relative w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] rounded-full overflow-hidden shadow-lg">
-                    <Image
-                        src="/logos/skyline-with-text-badge.png"
-                        alt="Charlotte Skyline"
-                        fill={true}
-                        style={{ objectFit: "contain" }}
-                        className="rounded-lg p-5"
-                    />
-                </div>
-            </div>
             <p>
                 Welcome to Charlotte Third Places, a curated collection of <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in and around Charlotte, North Carolina. Browse the list of spots <Link href="/" className="custom-link">here</Link>, explore them on a map <Link href="/map" className="custom-link">here</Link>, contribute to the community <Link href="/contribute" className="custom-link">here</Link>, or continue reading to discover more about the site.
             </p>

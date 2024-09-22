@@ -11,17 +11,6 @@ export default function ContributePage() {
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 Contribute
             </h1>
-            <div className="flex justify-center">
-                <div className="relative w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] rounded-full overflow-hidden shadow-lg">
-                    <Image
-                        src="/logos/skyline-with-text-badge.png"
-                        alt="Charlotte Skyline"
-                        fill={true}
-                        style={{ objectFit: "contain" }}
-                        className="rounded-lg p-5"
-                    />
-                </div>
-            </div>
             <p>
                 Got feedback or ideas about Charlotte Third Places? You're in the right place! You can suggest new places, enhance existing ones, or contact the site creator directly using the forms below.
             </p>
