@@ -9,7 +9,7 @@ export default function AboutPage() {
     return (
         <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg bg-background">
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
-                About Charlotte Third Places
+                About
             </h1>
             <div className="flex justify-center">
                 <div className="relative w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] rounded-full overflow-hidden shadow-lg">

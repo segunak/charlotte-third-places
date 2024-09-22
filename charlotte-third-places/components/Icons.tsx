@@ -4,7 +4,7 @@ import { ArrowUp } from "lucide-react";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { FaFilter, FaChessQueen, FaComment } from "react-icons/fa";
-import { FaLocationPin, FaMapPin, FaCirclePlus } from "react-icons/fa6";
+import { FaLocationPin, FaMapPin, FaCirclePlus, FaMapLocationDot } from "react-icons/fa6";
 import {
   IoHome,
   IoHomeOutline,
@@ -41,6 +41,7 @@ export const Icons = {
   plus: FaCirclePlus,
   map: IoMap,
   mapOutline: IoMapOutline,
+  mapLocationDot: FaMapLocationDot,
   mapPin: FaMapPin,
   infoCircle: IoInformationCircle,
   infoCircleOutline: IoInformationCircleOutline,
