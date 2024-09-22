@@ -7,7 +7,7 @@ import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/
 
 export default function AboutPage() {
     return (
-        <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg bg-background">
+        <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
