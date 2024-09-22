@@ -14,30 +14,23 @@ interface PlaceMapProps {
 
 export function PlaceMap({ places }: PlaceMapProps) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const { filters, quickFilterText } = useContext(FilterContext); // Access filters and quickFilterText from context
+    const { filters, quickFilterText } = useContext(FilterContext);
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
-
-    // State to track whether it's a mobile view
     const [isMobileView, setIsMobileView] = useState(false);
 
-    // Effect to manage isMobileView based on screen size
     useEffect(() => {
         const updateViewSettings = () => {
             const isMobile = window.matchMedia('(max-width: 768px)').matches;
             setIsMobileView(isMobile);
         };
 
-        // Initial check
         updateViewSettings();
 
-        // Listen for screen resize
         window.addEventListener('resize', updateViewSettings);
 
-        // Cleanup event listener on component unmount
         return () => window.removeEventListener('resize', updateViewSettings);
     }, []);
 
-    // Apply filtering to places before rendering markers
     const filteredPlaces = useMemo(() => {
         return places.filter((place) => {
             const {
@@ -51,7 +44,6 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 hasCinnamonRolls,
             } = filters;
 
-            // Filter by the quick search input
             const matchesQuickSearch = normalizeTextForSearch(JSON.stringify(place))
                 .includes(normalizeTextForSearch(quickFilterText));
 
@@ -70,7 +62,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );
         });
-    }, [places, filters, quickFilterText]); // Include quickFilterText in dependencies
+    }, [places, filters, quickFilterText]);
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
@@ -78,8 +70,11 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 <Map
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
-                    mapId='7b49fa8eab9db6c7'
-                    zoomControl={!isMobileView}
+                    mapId='7b49fa8eab9db6c7' // https://developers.google.com/maps/documentation/get-map-id
+                    renderingType='VECTOR'
+                    colorScheme='LIGHT'
+                    reuseMaps={true} // To avoid re-rendering a map (and thus an API call) for every load.
+                    zoomControl={!isMobileView} // The plus minus buttons in the lower right. On mobile, people just pinch to zoom, so they're not needed.
                     streetViewControl={false}
                     fullscreenControl={false}
                     gestureHandling='greedy'>
