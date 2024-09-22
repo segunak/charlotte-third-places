@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import * as React from "react";
 import { Icons } from "@/components/Icons";
 import AirtableForm from "@/components/AirtableForm"
