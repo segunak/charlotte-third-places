@@ -16,9 +16,51 @@ export default function AboutPage() {
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
-            <p>
-                Welcome to Charlotte Third Places, a curated collection of <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in and around Charlotte, North Carolina. Browse the list of spots <Link href="/" className="custom-link">here</Link>, explore them on a map <Link href="/map" className="custom-link">here</Link>, contribute to the community <Link href="/contribute" className="custom-link">here</Link>, or continue reading to discover more about the site.
+            <p className="text-wrap">
+                Welcome! This site is a personal project built to help others find cool spots in and around Charlotte, North Carolina. Read on to learn more about its creator, how it was built, where the data comes from, and other details.
             </p>
+
+            {/* Creator*/}
+            <Card className="border border-gray-300 shadow-sm">
+                <CardHeader>
+                    <CardTitle className="text-2xl sm:text-3xl text-center mb-4 border-b pb-3">
+                        Creator
+                    </CardTitle>
+                    <div className="flex justify-center">
+                        <Image
+                            src="/gifs/obiwan.gif"
+                            alt="Hello There"
+                            width={500}
+                            height={500}
+                            unoptimized={true}
+                            className="rounded-xl"
+                        />
+                    </div>
+                </CardHeader>
+                <CardContent className="leading-relaxed space-y-4">
+                    <p>
+                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, a Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can...
+                    </p>
+                    <ul className="list-disc list-inside pl-4 space-y-2">
+                        <li>work remotely</li>
+                        <li>study</li>
+                        <li>read</li>
+                        <li>write</li>
+                        <li>chill</li>
+                        <li>watch anime</li>
+                        <li>make friends</li>
+                        <li>hang out with friends</li>
+                        <li>hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie)</li>
+                        <li>people watch (not my thing but do you)</li>
+                        <li>daydream (with cool ambience)</li>
+                        <li>eat cinnamon rolls while doing any of the above</li>
+                    </ul>
+                    <p>
+                        Keep scrolling to get answers to frequently asked questions, or to just learn more about the project.
+                    </p>
+                </CardContent>
+            </Card>
+
             {/* Frequently Asked Questions */}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
@@ -29,25 +71,42 @@ export default function AboutPage() {
                 <CardContent>
                     <Accordion type="single" collapsible className="space-y-4">
 
-                        {/* Who built and maintains the site */}
-                        <AccordionItem value="question-1">
-                            <AccordionTrigger>
-                                Who built and maintains Charlotte Third Places?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                It is I, Segun Akinyemi! I'm a software engineer working remotely, and if you're reading this, I'm the person responsible for curating this site. I moved to Charlotte in 2020 during the pandemic, and like many of you, I spent that year in isolation. Once things opened up, I wanted to explore the city and find spots to work remotely, hang out, or just not be cooped up at home. So, I kept a list of my favorite third places on my phone, and after getting enough requests from friends to share it, I realized: there’s gotta be a better way. Enter this website. It’s a project born out of my love for Charlotte and the countless coffee shops, cafes, and other third places I’ve come to appreciate. You can learn more about me on my <a href="your-website-link" className="text-blue-500">personal website</a>.
-                            </AccordionContent>
-                        </AccordionItem>
-
                         {/* What is a Third Place */}
-                        <AccordionItem value="question-2">
+                        <AccordionItem value="question-1">
                             <AccordionTrigger>
                                 What is a Third Place?
                             </AccordionTrigger>
                             <AccordionContent>
-                                Third places are those spots outside of your home (your "first place") and your workplace (your "second place") where community gathers and you feel a sense of belonging. These places can be coffee shops, parks, libraries, and more. It’s a pretty broad term, and everyone defines it differently. To read more about how people in Charlotte think about third places, check out this <a href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/" className="text-blue-500">Reddit thread</a>. Keep in mind, this website is curated, so not every public space qualifies. I try to stick with places that encourage people to stay a while, whether to work remotely or to socialize. And remember, I’m always open to feedback!
+                                <div className="space-y-3">
+                                    <p>
+                                        Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something on the menu $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about where the term came from and its history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
+                                    </p>
+                                    <p>
+                                        To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you have. This is my list, but I'm always up for learning something new. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">contribute page</Link> to get in touch!
+                                    </p>
+                                </div>
                             </AccordionContent>
                         </AccordionItem>
+
+                        {/* Who built and maintains the site */}
+                        <AccordionItem value="question-2">
+                            <AccordionTrigger>
+                                Who built and maintains Charlotte Third Places?
+                            </AccordionTrigger>
+                            <AccordionContent>
+                            <div className="space-y-3">
+                            </div>
+                                That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. As you might've guessed, I live in Charlotte, and enjoy hanging out at third places around the city. I moved here in 2020 during COVID and used third places as my way to explore the city, meet new people, and escape the isolation brought on by the pandemic. 
+
+
+                                I'm a software engineer working remotely, and if you're reading this, I'm the person responsible for curating this site. I moved to Charlotte in 2020 during the pandemic, and like many of you, I spent that year in isolation. Once things opened up, I wanted to explore the city and find spots to work remotely, hang out, or just not be cooped up at home. So, I kept a list of my favorite third places on my phone, and after getting enough requests from friends to share it, I realized: there's gotta be a better way. Enter this website. It's a project born out of my love for Charlotte and the countless coffee shops, cafes, and other third places I've come to appreciate. You can learn more about me on my <a href="your-website-link" className="text-blue-500">personal website</a>.
+                            </AccordionContent>
+                        </AccordionItem>
+
+
+
+
+
 
                         {/* Why aren’t all breweries or restaurants listed */}
                         <AccordionItem value="question-3">
@@ -129,30 +188,6 @@ export default function AboutPage() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </CardContent>
-            </Card>
-
-            {/* Site Creator*/}
-            <Card className="border border-gray-300 shadow-sm">
-                <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center mb-4 border-b pb-3">
-                        Site Creator
-                    </CardTitle>
-                    <div className="flex justify-center">
-                        <Image
-                            src="/gifs/obiwan.gif"
-                            alt="Hello There"
-                            width={500}
-                            height={500}
-                            unoptimized={true}
-                            className="rounded-xl"
-                        />
-                    </div>
-                </CardHeader>
-                <CardContent className="leading-relaxed space-y-4">
-                    <p>
-                        Hello! I'm Segun Akinyemi—Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can study, read, write, chill, watch anime, work remotely, hang out with friends, or enjoy some time alone in a relaxing environment. Whether you're looking for a coffee shop, café, quiet library, or something else, this site aims to help you find the perfect spot. To learn more about me, check out my{" "} <ResponsiveLink href="https://segunakinyemi.com/about">personal website</ResponsiveLink>.
-                    </p>
                 </CardContent>
             </Card>
 
@@ -329,7 +364,7 @@ export default function AboutPage() {
                         <AccordionItem value="frontend">
                             <AccordionTrigger>Frontend & Styling</AccordionTrigger>
                             <AccordionContent>
-                                <ul className="list-disc list-inside pl-4 space-y-3">
+                                <ul className="list-disc list-inside pl-4 space-y-2">
                                     <li>
                                         <strong>Next.js:</strong> The powerful React framework that handles the server-side rendering and static generation, giving this site speed and reliability. It's a great fit for building modern, SEO-friendly web applications.
                                     </li>
