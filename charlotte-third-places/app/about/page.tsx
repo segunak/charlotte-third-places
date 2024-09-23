@@ -10,6 +10,129 @@ export const metadata: Metadata = {
     title: 'About',
 }
 
+const frequentlyAskedQuestions = [
+    {
+        title: "What is a Third Place?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                    Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about where the term came from and its history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
+                </p>
+                <p>
+                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you have. This is my list, but I'm always up for learning something new. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">contribute page</Link> to get in touch!
+                </p>
+            </div>
+        )
+    },
+    {
+        title: "Who built and maintains Charlotte Third Places?",
+        content: (
+            <div className="space-y-3">
+                That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into an Excel spreadsheet, but where's the fun in that? As a software engineer, I enjoy coding and building stuff with tech, so I over-engineered the heck out of this project. It was and continues to be a great excuse to play around with languages and frameworks I don't get to use much in my day job (where it's mostly backend engineering in Python, Scala, and SQL). If you're into tech, keep scrolling to learn more about what tools I used. In short, the frontend side of engineering is as fascinating as it is complex, but that's just software these days. Whether frontend or backend, human ambition knows no bounds, and the complexity of the software we build to fuel those ambitions evolves with it.
+            </div>
+        )
+    },
+    {
+        title: "Can I contribute to the site?",
+        content: (
+            <div className="space-y-3">
+                Absolutely! This site thrives on community input. Whether it's suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I'd love to hear from you. Use the <Link className="custom-link" href="/contribute">Contribute</Link> page to reach out.
+            </div>
+        )
+    },
+    {
+        title: "I submitted a place and haven't seen it added yet. What should I do?",
+        content: (
+            <div className="space-y-3">
+                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and between my day job and personal life, things can get busy. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places. If we venture into the "list literally every single spot" world this site becomes Google Maps Lite rather than something of particular value. Maybe one day I'll work out a community voting mechanism, although that might be more effort than its worth.
+            </div>
+        )
+    },
+    {
+        title: "I see some information about a place that's wrong. How can I get it updated?",
+        content: (
+            <div className="space-y-3">
+                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections.
+            </div>
+        )
+    },
+    {
+        title: "Where does the data come from?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others (like <em>has cinnamon rolls</em>) are curated from my experiences and community feedback. Review the list below to learn more about each field.
+                </p>
+                <ul className="list-disc list-inside pl-4 space-y-2">
+                    <li>
+                        <strong>Name:</strong> This mostly comes from Google Maps, though I've occasionally edited names to make them clearer. Sometimes the names on Google Maps are too formal, long, or ambiguous, so I tweak them to ensure clarity while preserving the original intent. Take Not Just Coffee as an example. They have multiple locations in Charlotte, and on Google Maps, they're all simply named 'Not Just Coffee.' While that's understandable, it can be hard to tell which location is being referred to at a glance. To make things clearer on this site, I've renamed them to 'Not Just Coffee | [Neighborhood Name]' so it's easier to differentiate. I've made similar small tweaks to other place names where needed.
+                    </li>
+                    <li>
+                        <strong>Type:</strong> Comes from Google Maps as a starting place for further curation. Google might label a place as a coffee shop, but if it's also a bar or café. I try to include all relevant types to capture the full essence of the space. If you see a place that's 'mistyped' in any way let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                    </li>
+                    <li>
+                        <strong>Size:</strong> This one is all me! Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Like, really. I need help lol.
+                    </li>
+                    <li>
+                        <strong>Neighborhood:</strong> This comes from Google Maps, but I do some curation. For places outside Charlotte proper (like Matthews or Concord, which in the spirit of <ResponsiveLink href="https://www.ajc.com/life/radiotvtalk-blog/atlanta-rapper-omeretta-stirs-social-media-pot-over-song-that-narrowly-defines-atlanta/6LBPXWJPUVDHLBVFUZV5IRMDI4/">Omeretta</ResponsiveLink>, are "not Charlotte"), I list the city name as the neighborhood. If Google suggests an obscure neighborhood that nobody recognizes, I simplify it to something more familiar. Because of the curation being done, this is a field where I do <em>really</em> appreciate feedback. If you see a place where the neighborhood tag makes no sense, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page so I can work on getting it updated.
+                    </li>
+                    <li>
+                        <strong>Address:</strong> 100% pulled from Google Maps.
+                    </li>
+                    <li>
+                        <strong>Purchase Required:</strong> Google Maps offers data here, but it's not always accurate. I use Google Maps data by default, but I've also curated values based on my experiences and community feedback. For example, most coffee shops expect you to make a purchase if you're staying for a while, so they're assumed to be "Yes" on "Purchase Required". As someone that's had periods of life where a $5 coffee was not doable, helping people find truly free third places is important to me. The library was always mine during those tough times, but there are some other options around the city. If you see a wrong value in this field, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page. The accuracy of this field matters deeply to me.
+                    </li>
+                    <li>
+                        <strong>Parking Situation:</strong> From Google Maps who have mostly accurate data on this field. That being said, I've found mistakes before, so I review all values based on personal experiences and community feedback. I didn't own a car until moving to Charlotte, and if I had one complaint about this city, it'd be how challenging it is to live here and have any sort of social life without one. I miss the days where parking was never an issue for me because I came on my own two feet (or wheels, shout out bikers) via reliable public transportation. Charlotte's <ResponsiveLink href="https://www.google.com/search?q=Charlotte+Gateway+Station&rlz=1C1ONGR_enUS937US937&oq=Charlotte+Gateway+Station">working on</ResponsiveLink> the bad public transportation thing though. Always nice to see progress.
+                    </li>
+                    <li>
+                        <strong>Free WiFi:</strong> This one fully relies on my experiences and community feedback. Google Maps doesn't have this data. Now here's where things can get sticky. If you visit a place and they have free WiFi, but they expect you to make a purchase to hangout in their space, is it really free WiFi? Even if you get the cheapest thing on the menu, you still had to pay to access the WiFi in a roundabout sort of way. I've spent far too many hours debating internally on the answer to that question. I've settled on listing a place as having free WiFi if you don't have to pay to access the WiFi itself after connecting. Once you're in (password or not) you're in, no "give us your credit card" to browse. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hangout at the library. Charlotte has great libraries. I encourage you to use them. Maybe even keep the laptop closed and read a book while you're there. If you're into science-fiction/fantasy check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
+                    </li>
+                    <li>
+                        <strong>Description:</strong> Comes directly from Google Maps. This is how a place describes itself. The value here comes from what the business put on their own Google Maps profile. If a place doesn't have a description, I use a default: "A third place in the Charlotte, North Carolina area."
+                    </li>
+                    <li>
+                        <strong>Website:</strong> Pulled straight from Google Maps—whatever the business lists as their website, if they list one.
+                    </li>
+                    <li>
+                        <strong>Google Maps Profile:</strong> From Google Maps. This is a direct link to the place's profile, pulled from their listing.
+                    </li>
+                    <li>
+                        <strong>Comments:</strong> These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
+                    </li>
+                    <li>
+                        <strong>Has Cinnamon Rolls:</strong> This one is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but not for all pastries—only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be an exalted form of pastry, a divine delight. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason (perhaps a birthday, anniversary), or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my mental list of favorite places around the city (shout out Sunflour Bakery 🔥). As I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day". You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become—God forbid—<em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?" the answer is no. I just like them. It is actually that simple. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <em>with all manner of immediate speed</em> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
+                    </li>
+                </ul>
+            </div>
+        )
+    },
+    {
+        title: "How often is the data updated?",
+        content: (
+            <div className="space-y-3">
+                A couple times a day, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>.
+            </div>
+        )
+    },
+    {
+        title: "There are a lot of breweries in Charlotte, aren't they considered third places? Why not list literally every single brewery in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I am willing to hear all arguments and reason with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+            </div>
+        )
+    },
+    {
+        title: "Starbucks locations are quintessential examples of third places. Why not list literally every single Starbucks in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                First off, calm down. Not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses, and as such, don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is entirely subjective. As such, I'm more than willing to add a Starbucks to the site that someone validates is cool to hangout at. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+            </div>
+        )
+    }
+];
+
 export default function AboutPage() {
     return (
         <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
@@ -56,7 +179,7 @@ export default function AboutPage() {
                         <li>eat cinnamon rolls while doing any of the above</li>
                     </ul>
                     <p>
-                        Keep scrolling to get answers to frequently asked questions, or to just learn more about the project.
+                        Keep scrolling to get answers to frequently asked questions and learn more about the project.
                     </p>
                 </CardContent>
             </Card>
@@ -70,285 +193,16 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent>
                     <Accordion type="single" collapsible className="space-y-4">
-
-                        {/* What is a Third Place */}
-                        <AccordionItem value="question-1">
-                            <AccordionTrigger>
-                                What is a Third Place?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                <div className="space-y-3">
-                                    <p>
-                                        Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something on the menu $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about where the term came from and its history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
-                                    </p>
-                                    <p>
-                                        To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you have. This is my list, but I'm always up for learning something new. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">contribute page</Link> to get in touch!
-                                    </p>
-                                </div>
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Who built and maintains the site */}
-                        <AccordionItem value="question-2">
-                            <AccordionTrigger>
-                                Who built and maintains Charlotte Third Places?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                            <div className="space-y-3">
-                            </div>
-                                That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. As you might've guessed, I live in Charlotte, and enjoy hanging out at third places around the city. I moved here in 2020 during COVID and used third places as my way to explore the city, meet new people, and escape the isolation brought on by the pandemic. 
-
-
-                                I'm a software engineer working remotely, and if you're reading this, I'm the person responsible for curating this site. I moved to Charlotte in 2020 during the pandemic, and like many of you, I spent that year in isolation. Once things opened up, I wanted to explore the city and find spots to work remotely, hang out, or just not be cooped up at home. So, I kept a list of my favorite third places on my phone, and after getting enough requests from friends to share it, I realized: there's gotta be a better way. Enter this website. It's a project born out of my love for Charlotte and the countless coffee shops, cafes, and other third places I've come to appreciate. You can learn more about me on my <a href="your-website-link" className="text-blue-500">personal website</a>.
-                            </AccordionContent>
-                        </AccordionItem>
-
-
-
-
-
-
-                        {/* Why aren’t all breweries or restaurants listed */}
-                        <AccordionItem value="question-3">
-                            <AccordionTrigger>
-                                Why aren’t all breweries or restaurants listed?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                While Charlotte is known for its brewery scene, I didn’t want to include every single one. My goal is to highlight places where you can hang out during the day, maybe grab a coffee or work on your laptop before the drinking crowd shows up. Sure, technically, breweries can be third places, but I’m focused on places that offer a more diverse environment. As for restaurants, they usually come with the expectation of buying a meal, which doesn’t fully align with the "little to no financial barrier to entry" concept of third places. Exceptions are those spots that have a hybrid cafe-like vibe, like Amelie’s.
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Where does the data come from */}
-                        <AccordionItem value="question-4">
-                            <AccordionTrigger>
-                                Where does the data for the app come from?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                The data comes from a mix of sources. Most of it is pulled from Google Maps—things like the name, address, and type of place. Other fields, like whether a place has cinnamon rolls (yes, really), are based on my personal experience or feedback from users like you. Check out the "Contribute" page if you want to help me improve or add data!
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Why is there a Has Cinnamon Rolls column */}
-                        <AccordionItem value="question-5">
-                            <AccordionTrigger>
-                                Why is there a 'Has Cinnamon Rolls' column?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Simple: I love cinnamon rolls. They are the pinnacle of pastry excellence, and sometimes I just want to know where I can get one when I’m working remotely or hanging out. So, I added this field for myself, but if you also love cinnamon rolls, I’m sure you’ll appreciate it. Feel free to submit any suggestions to help make this list more accurate!
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Why aren’t all Starbucks locations listed */}
-                        <AccordionItem value="question-6">
-                            <AccordionTrigger>
-                                Why aren’t all Starbucks locations listed?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Starbucks is often considered the quintessential third place, but not every location qualifies. Some are inside grocery stores or malls, where you’re not expected to stay and hang out. Others have removed seating, turning them into more of a grab-and-go spot. For this project, I’ve only included the Starbucks locations where you can settle in, work, or just chill for a bit. If you think I’ve missed one, use the Feedback tab to let me know!
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* I see wrong information. How can I update it? */}
-                        <AccordionItem value="question-7">
-                            <AccordionTrigger>
-                                I see some information about a place that's wrong. How can I get it updated?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Mistakes happen! If you spot any incorrect details, head over to the <Link href="/contribute">Contribute</Link> to and submit your corrections. Your input helps me keep things accurate, and I appreciate it!
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* I submitted a place and haven’t seen it added yet. What should I do? */}
-                        <AccordionItem value="question-8">
-                            <AccordionTrigger>
-                                I submitted a place and haven’t seen it added yet. What should I do?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                First off, thanks for submitting! But please bear with me. I’m the only person maintaining the site, and between my day job and other commitments, it can take me a while to review and add new places. Also, I do filter submissions to ensure they fit the vibe of a true third place, so not every suggestion will make it. Rest assured, I appreciate your input.
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Additional Question: Can I contribute to the site? */}
-                        <AccordionItem value="question-9">
-                            <AccordionTrigger>
-                                Can I contribute to the site?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Absolutely! This project thrives on community input. Whether it’s suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I’d love to hear from you. Visit the "Contribute" page to get started.
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Additional Question: How often is the data updated? */}
-                        <AccordionItem value="question-10">
-                            <AccordionTrigger>
-                                How often is the data updated?
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                The data is updated every 12 hours, thanks to Next.js’ incremental static regeneration. This means any changes to the listings, new places added, or corrections made will be reflected regularly. Of course, I rely on the community and my own exploration to keep things fresh, so feel free to pitch in!
-                            </AccordionContent>
-                        </AccordionItem>
+                        {frequentlyAskedQuestions.map((item, index) => (
+                            <AccordionItem key={index} value={`question-${index + 1}`}>
+                                <AccordionTrigger>{item.title}</AccordionTrigger>
+                                <AccordionContent>{item.content}</AccordionContent>
+                            </AccordionItem>
+                        ))}
                     </Accordion>
                 </CardContent>
             </Card>
 
-            {/* Data Sources */}
-            <Card className="border border-gray-300 shadow-sm">
-                <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
-                        Data Sources
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="leading-relaxed space-y-4">
-                    <p>
-                        The data on this site comes from a variety of sources, including Google
-                        Maps, community feedback, and my own experiences visiting each place.
-                        While some fields—like the name and address—come directly from Google
-                        Maps, others (like whether a place has cinnamon rolls) are curated by
-                        me. Let's dive deeper into each field below:
-                    </p>
-                    <Accordion type="single" collapsible>
-                        <AccordionItem value="name">
-                            <AccordionTrigger>
-                                Name
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This mostly comes from Google Maps, though I've occasionally edited names
-                                to make them clearer. Sometimes the names are too formal or long, so I tweak
-                                them to ensure clarity while preserving the original intent.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="type">
-                            <AccordionTrigger>
-                                Type
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This comes from Google Maps but requires some curation. Google might label
-                                a place as a coffee shop, but if it's also a bar or café, I include all
-                                relevant types to capture the full essence of the space.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="size">
-                            <AccordionTrigger>
-                                Size
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This one is all me! Based on personal visits, I gauge the size of each
-                                place. If I haven't been to a location, I infer the size from online
-                                photos or map views. If you think a size is off, feel free to reach
-                                out via the Contribute page.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="ambience">
-                            <AccordionTrigger>
-                                Ambience
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Future feature alert! I'm planning to add ambience data using AI to
-                                analyze reviews on Google Maps. Instead of relying solely on my taste,
-                                I want the vibe of each place to reflect the experiences of others.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="neighborhood">
-                            <AccordionTrigger>
-                                Neighborhood
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This also comes from Google Maps, but I do some extra curation.
-                                For places outside Charlotte proper (like Matthews or Concord),
-                                I list the city name. If Google suggests an obscure neighborhood
-                                that locals don't recognize, I simplify it to something more familiar.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="address">
-                            <AccordionTrigger>
-                                Address
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                100% pulled from Google Maps. Pretty straightforward.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="purchase">
-                            <AccordionTrigger>
-                                Purchase Required
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Google Maps offers data here, but it's not always accurate. I've
-                                curated this based on my experiences. For example, most coffee shops
-                                expect you to make a purchase if you're staying for a while, while
-                                other places like Optimist Hall don't.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="parking">
-                            <AccordionTrigger>
-                                Parking Situation
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                While Google Maps provides parking data, it's hit-or-miss. I've
-                                personally reviewed and curated this field, but if you notice any
-                                mistakes, please help out!
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="wifi">
-                            <AccordionTrigger>
-                                Free WiFi
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This one's all on me. I visit places and confirm if they have free
-                                WiFi, or I infer it from reviews. Even if a place requires a purchase
-                                to get the WiFi password, I still count it as free WiFi.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="cinnamon">
-                            <AccordionTrigger>
-                                Has Cinnamon Rolls
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                100% personal! I'm a huge fan of cinnamon rolls, and this field exists
-                                mostly for me (though I hope others enjoy it too). If you know of a
-                                place that serves them but isn't listed here, let me know!
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="description">
-                            <AccordionTrigger>
-                                Description
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Pulled directly from Google Maps. If a place doesn't have a
-                                description, I use a default: "A third place in the Charlotte,
-                                North Carolina area."
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="website">
-                            <AccordionTrigger>
-                                Website
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                Also pulled straight from Google Maps—whatever the business lists
-                                as their website.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="maps-profile">
-                            <AccordionTrigger>
-                                Google Maps Profile
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                This is the direct link to the place's Google Maps profile, pulled
-                                from their listing.
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="comments">
-                            <AccordionTrigger>
-                                Comments
-                            </AccordionTrigger>
-                            <AccordionContent>
-                                These are my personal tips, tricks, and thoughts about a place. I
-                                add value beyond what's just on the map by sharing any cool or quirky
-                                details I've noticed.
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
-                </CardContent>
-            </Card>
             {/* Tech Stack */}
             <Card className="border border-gray-300 shadow-sm">
                 <CardHeader>
@@ -357,8 +211,9 @@ export default function AboutPage() {
                     </CardTitle>
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
-                    <p>This site was built using a wide range of technologies to create a seamless, dynamic, and efficient experience. Below is an overview of the tools and frameworks used, grouped for clarity.</p>
-
+                    <p>
+                        I'll start by saying, this project is over-engineered, and that's by design. In addition to sharing my list of places, I wanted to learn new things, and that I did. Some might say the entire point of a side project as a developer is to over-engineer things in service of learning. Here's a classic <ResponsiveLink href="https://news.ycombinator.com/item?id=15147660">Hacker News thread</ResponsiveLink> on the topic. I'm not saying I fully agree with that sentiment, but I am saying I took my time building this site because I wanted to explore. Like sure, you can stick to the linear path in an open-world RPG, but you miss out on so much cool stuff that way. Game developers literally spend hours creating things that are only discoverable if you meander. If that reference is hitting home for you, 🙌🏾💯. If not, that's okay, but what follows only gets more nerdy and techy. Here's what I used to build this site and the processes behind it.
+                    </p>
                     <Accordion type="single" collapsible className="space-y-4">
                         {/* Frontend & Styling */}
                         <AccordionItem value="frontend">
@@ -366,19 +221,34 @@ export default function AboutPage() {
                             <AccordionContent>
                                 <ul className="list-disc list-inside pl-4 space-y-2">
                                     <li>
-                                        <strong>Next.js:</strong> The powerful React framework that handles the server-side rendering and static generation, giving this site speed and reliability. It's a great fit for building modern, SEO-friendly web applications.
+                                        <strong>
+                                            <ResponsiveLink href="https://nextjs.org/">Next.js:</ResponsiveLink>
+                                        </strong> {" "}
+                                        Is what this site is built with. There was once a time where people wrote vanilla HTML, CSS, and JavaScript to build websites. Those days are long gone. This <ResponsiveLink href="https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks">article</ResponsiveLink> has a pretty good accounting of how we got to our present frameworks on top of libraries on top of other libraries on top of frameworks era. React has emerged as the winner of the JavaScript library race, and Next.js as the framework on top of it (although <ResponsiveLink href="https://www.reddit.com/r/nextjs/comments/1f92jdv/chatgptcom_switched_from_nextjs_to_remix/">Remix</ResponsiveLink> is rising). These days, there's so much overlap between the React and Next.js (developed by <ResponsiveLink href="https://vercel.com/about">Vercel</ResponsiveLink>) development teams that some are <ResponsiveLink href="https://www.epicweb.dev/why-i-wont-use-nextjs">concerned</ResponsiveLink> they're one in the same. Seeing as this is a hobby project, I'm not with the drama when it comes to the trend chasing nature of frontend development. Everyone and their mama is using Next.js, including many <ResponsiveLink href="https://nextjs.org/showcase">popular websites</ResponsiveLink> you've likely used. That's enough justification for me to use it. My experience has been mostly good, although the app router seems <ResponsiveLink href="https://github.com/vercel/next.js/discussions/54075">overly complex</ResponsiveLink>. Next.js is a React-based framework.
                                     </li>
                                     <li>
-                                        <strong>React:</strong> At the heart of the UI, React's component-based architecture allows for a highly interactive and dynamic experience, making every page of this site feel fluid and responsive.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">React:</ResponsiveLink>
+                                        </strong> {" "}
+                                        At the heart of the UI, React's component-based architecture allows for a highly interactive and dynamic experience, making every page of this site feel fluid and responsive.
                                     </li>
                                     <li>
-                                        <strong>Tailwind CSS:</strong> The utility-first CSS framework that lets me build fast and keep my designs consistent. With Tailwind, responsiveness and custom styling come effortlessly.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Tailwind CSS:</ResponsiveLink>
+                                        </strong> {" "}
+                                        The utility-first CSS framework that lets me build fast and keep my designs consistent. With Tailwind, responsiveness and custom styling come effortlessly.
                                     </li>
                                     <li>
-                                        <strong>Shadcn/UI (Radix UI):</strong> Built on Radix UI, Shadcn provides accessible, reusable components for a smooth user interface. These components make the design of the site cohesive and user-friendly.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">shadcn/ui:</ResponsiveLink>
+                                        </strong> {" "}
+                                        Built on Radix UI, Shadcn provides accessible, reusable components for a smooth user interface. These components make the design of the site cohesive and user-friendly.
                                     </li>
                                     <li>
-                                        <strong>React Icons:</strong> This project uses React Icons, which allows me to pull in icons from multiple libraries without cluttering my dependencies. It's one of those "small joys" that makes building UI fun.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">React Icons:</ResponsiveLink>
+                                        </strong> {" "}
+                                        This project uses React Icons, which allows me to pull in icons from multiple libraries without cluttering my dependencies. It's one of those "small joys" that makes building UI fun.
                                     </li>
                                 </ul>
                             </AccordionContent>
@@ -390,16 +260,28 @@ export default function AboutPage() {
                             <AccordionContent>
                                 <ul className="list-disc list-inside pl-4 space-y-3">
                                     <li>
-                                        <strong>Python (Azure Functions):</strong> All backend interactions, especially with the Google Maps API and Outscraper, are handled through Python scripts running on Azure Functions. This serverless architecture keeps the backend lightweight and scalable.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Python:</ResponsiveLink>
+                                        </strong> {" "}
+                                        All backend interactions, especially with the Google Maps API and Outscraper, are handled through Python scripts running on Azure Functions. This serverless architecture keeps the backend lightweight and scalable.
                                     </li>
                                     <li>
-                                        <strong>Azure Functions:</strong> Azure Functions serve as the engine of the backend, handling tasks like interacting with APIs in a scalable, efficient, and serverless way.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Azure Functions:</ResponsiveLink>
+                                        </strong> {" "}
+                                        Azure Functions serve as the engine of the backend, handling tasks like interacting with APIs in a scalable, efficient, and serverless way.
                                     </li>
                                     <li>
-                                        <strong>Google Maps Places API:</strong> This API powers the site's data, providing details like names, addresses, and types of third places in Charlotte. Google Maps ensures the most accurate information possible.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Google Maps Places API:</ResponsiveLink>
+                                        </strong> {" "}
+                                        This API powers the site's data, providing details like names, addresses, and types of third places in Charlotte. Google Maps ensures the most accurate information possible.
                                     </li>
                                     <li>
-                                        <strong>Outscraper:</strong> Outscraper is responsible for gathering reviews for the "ambience" data field. It's part of a future feature where I plan to analyze reviews to offer insights into the vibe of each location.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Outscraper:</ResponsiveLink>
+                                        </strong> {" "}
+                                        Outscraper is responsible for gathering reviews for the "ambience" data field. It's part of a future feature where I plan to analyze reviews to offer insights into the vibe of each location.
                                     </li>
                                 </ul>
                             </AccordionContent>
@@ -411,13 +293,24 @@ export default function AboutPage() {
                             <AccordionContent>
                                 <ul className="list-disc list-inside pl-4 space-y-3">
                                     <li>
-                                        <strong>Airtable:</strong> All the third place data is stored in Airtable, providing an easy-to-manage and scalable solution. The Airtable JS API is used to pull this data into the site effortlessly.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Airtable:</ResponsiveLink>
+                                        </strong> {" "}
+                                        If you were expecting PostgreSQL or DuckDB or a data lake with delta parquet tables or some other fancy solution, I'm sorry to disappoint. This whole project could be just this Airtable embedded into the website, which is what <ResponsiveLink href="https://layoffs.fyi/">Layoffs.fyi</ResponsiveLink> does for a simple scalable solution. I considered doing that. Then I was like, doing something more complicated (and challenging) is more fun, so I did that instead.
+
+                                        All the third place data is stored in Airtable, providing an easy-to-manage and scalable solution. The Airtable JS API is used to pull this data into the site effortlessly.
                                     </li>
                                     <li>
-                                        <strong>Google Maps Places API:</strong> This is used to pull crucial information about each place—like its name, address, and category. It’s what allows this site to function as a third-place directory.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">Google Maps Places API:</ResponsiveLink>
+                                        </strong> {" "}
+                                        This is used to pull crucial information about each place—like its name, address, and category. It’s what allows this site to function as a third-place directory.
                                     </li>
                                     <li>
-                                        <strong>AG Grid:</strong> AG Grid is used for displaying the list of third places. It’s flexible, customizable, and provides all the functionality you could ever want in a data grid.
+                                        <strong>
+                                            <ResponsiveLink href="REPLACEME">AG Grid:</ResponsiveLink>
+                                        </strong> {" "}
+                                        AG Grid is used for displaying the list of third places. It’s flexible, customizable, and provides all the functionality you could ever want in a data grid.
                                     </li>
                                 </ul>
                             </AccordionContent>
@@ -454,26 +347,6 @@ export default function AboutPage() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
-                </CardContent>
-            </Card>
-
-            {/* Project Background */}
-            <Card className="border border-gray-300 shadow-sm">
-                <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
-                        Project Background
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="leading-relaxed space-y-4">
-                    <p>
-                        The inspiration for this project came from my experiences moving to Charlotte in 2020 during the COVID-19 pandemic. I spent my first year in the city in relative isolation, working remotely from my cramped Uptown apartment, going to the gym that was just downstairs in the building, and rarely venturing further than the Harris Teeter down the street. When things started slowly opening back up around the city, although I was (and am still) working remotely, I was in rather dire need of places to hangout where I could at least see other people, with the hope of eventually talking to some of them. It's tough moving to a new city where you know literally no one, and while I'm not a complete introvert, I'm relatively one (shout to my <ResponsiveLink href="https://www.16personalities.com/intj-personality">INTJ's</ResponsiveLink>), so I was in real danger of staying in my "shell of comfort" and not connecting with anyone in this new city I had been so excited to move to. To combat this, I set out to work from somehwere other than my apartemnt every day of the week.
-                    </p>
-                    <p>
-                        At first, it wasn't about meeting people, it was just about seieng people (COVID was rough y'all). Eventually, it became easy to amek friends, as you become a regular somehwere, get to know the staff, the oother regular,s and make connections. As I kept doing this, I found myself scouring Google Maps, Yelp, <ResponsiveLink href="https://workfrom.co/charlotte">WorkForm</ResponsiveLink> and threads on the Charlotte <ResponsiveLink href="https://www.reddit.com/r/Charlotte/">subreddit</ResponsiveLink> looking for new spots to hangout, work, read, and just chill. As I did this, I kept a list, and it kept growing, and growing, aFnd growing, to the point where it was no longer viable to keep just in my notes app. I'd meet people around the city who also worked remotely (I have no data to back this up but Charlotte seems to have a good crowd of remote workers) and wanted to learn more about some of my favorite spots. Eventaully, sharing a long list with random comments that only made sense to me became untenable, and I wanted to make something more oranized nad formal to share with others. IT was out of that desire that this project was born. As a software enineer, I knew I had the skills to build a website/app that'd do it, I just had to find the time. Well, I finally did (over the course of many evenings and weekends, got to keep my day job) and I'm so happy you're here, reading this right now, and hopefully benefiting from this site.
-                    </p>
-                    <p>
-                        In addition to allowing me to organize my list better, building this site was a learning/tinkering exercise for me. I love making things with software, so much so that I do it professionally, but it can be hard finding time to make things that you want to make, rather than what your coproate employer wants you to. Making this project allowed me to use all sorts of frameworks and libaries and language that I'm unlikely to use in my curretnt job role, allowing me to grow my skills, explore new areas of tech, and just straight up have fun. It was fun. I had fun building this site. I have fun maintaing it. I hope you have fun browsing it! Keep scrolling to read more about the tech that was used to make the site, where the data comes from, and how you can get in contact with me.
-                    </p>
                 </CardContent>
             </Card>
 
