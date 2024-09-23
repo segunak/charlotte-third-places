@@ -1,9 +1,14 @@
 import Link from "next/link";
 import * as React from "react";
 import Image from "next/image";
+import type { Metadata } from 'next'
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
+
+export const metadata: Metadata = {
+    title: 'About',
+}
 
 export default function AboutPage() {
     return (

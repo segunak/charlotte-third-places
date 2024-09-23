@@ -1,7 +1,12 @@
 import * as React from "react";
+import type { Metadata } from 'next'
 import { Icons } from "@/components/Icons";
 import AirtableForm from "@/components/AirtableForm"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+export const metadata: Metadata = {
+    title: 'Contribute',
+}
 
 export default function ContributePage() {
     return (

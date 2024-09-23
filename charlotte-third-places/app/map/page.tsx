@@ -1,11 +1,16 @@
 import Link from "next/link";
 import * as React from "react";
+import type { Metadata } from 'next'
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+
+export const metadata: Metadata = {
+    title: 'Map',
+}
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // This results in Next.js refreshing the data from Airtable once for the whole site every 12 hours.
