@@ -2,6 +2,7 @@ import * as React from "react";
 import type { Metadata } from 'next';
 import { Icons } from "@/components/Icons";
 import AirtableForm from "@/components/AirtableForm";
+import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export const metadata: Metadata = {
@@ -27,14 +28,12 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <a
+                            <ResponsiveLink
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="custom-link text-sm"
+                                className="text-sm"
                             >
                                 Click here to open the form directly.
-                            </a>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
                     </CardContent>
@@ -49,14 +48,12 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <a
+                            <ResponsiveLink
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="custom-link text-sm"
+                                className="text-sm"
                             >
                                 Click here to open the form directly.
-                            </a>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
                     </CardContent>
@@ -71,14 +68,12 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <a
+                            <ResponsiveLink
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="custom-link text-sm"
+                                className="text-sm"
                             >
                                 Click here to open the form directly.
-                            </a>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
                     </CardContent>
