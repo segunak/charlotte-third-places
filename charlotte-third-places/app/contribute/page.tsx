@@ -31,9 +31,9 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="custom-link"
+                                className="custom-link text-sm"
                             >
-                                Form not loading? Click here to access it.
+                                Click here to open the form directly.
                             </a>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
@@ -53,9 +53,9 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="custom-link"
+                                className="custom-link text-sm"
                             >
-                                Form not loading? Click here to access it.
+                                Click here to open the form directly.
                             </a>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
@@ -75,9 +75,9 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="custom-link"
+                                className="custom-link text-sm"
                             >
-                                Form not loading? Click here to access it.
+                                Click here to open the form directly.
                             </a>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />

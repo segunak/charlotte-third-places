@@ -38,7 +38,7 @@ const frequentlyAskedQuestions = [
         )
     },
     {
-        title: "Can I contribute to the site?",
+        title: "Can I submit places for addition to the site?",
         content: (
             <div className="space-y-3">
                 Absolutely! This site thrives on community input. Whether it's suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I'd love to hear from you. Use the <Link className="custom-link" href="/contribute">Contribute</Link> page to reach out.
@@ -196,7 +196,7 @@ export default function AboutPage() {
                 About
             </h1>
             <p className="text-wrap">
-                Welcome! This site is a personal project built to help others find cool spots in and around Charlotte, North Carolina. Read on to learn more about its creator, how it was built, where the data comes from, and other details.
+                Welcome! This site is designed to help you discover third places in and around Charlotte, North Carolina. Read on to learn about the creator, the development process, the data sources, the concept of third places, and more.
             </p>
 
             {/* Creator*/}
@@ -230,8 +230,6 @@ export default function AboutPage() {
                         <li>make friends</li>
                         <li>hang out with friends</li>
                         <li>hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie)</li>
-                        <li>people watch (not my thing but do you)</li>
-                        <li>daydream (with cool ambience)</li>
                         <li>eat cinnamon rolls while doing any of the above</li>
                     </ul>
                     <p>
