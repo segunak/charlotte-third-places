@@ -266,9 +266,9 @@ export default function AboutPage() {
                         Tech Stack
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="leading-relaxed space-y-4">
+                <CardContent className="leading-relaxed space-y-4 ">
                     <p>
-                        Check out my article, <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">Exploring the Tech Stack Behind Charlotte Third Places</ResponsiveLink>, for more details about how this project was built.
+                        Check out my article <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">Exploring the Tech Stack Behind Charlotte Third Places</ResponsiveLink> for details about how this project was built.
                     </p>
                 </CardContent>
             </Card>
