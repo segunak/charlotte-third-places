@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from "next";
 import { SiteHeader } from "@/components/SiteHeader"
 import { SiteFooter } from "@/components/SiteFooter"
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleTagManager } from '@next/third-parties/google'
 import { MobileNavigation } from "@/components/MobileNavigation"
 import { TailwindIndicator } from "@/components/TailwindIndicator"
@@ -90,6 +91,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <SiteFooter />
           </div>
           <TailwindIndicator />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 interface AirtableFormProps {
     src: string;
@@ -10,16 +10,19 @@ interface AirtableFormProps {
 
 const AirtableForm: React.FC<AirtableFormProps> = ({ src, height = "533px", borderColor = "#ccc" }) => {
     const [isLoading, setIsLoading] = useState(true);
+    const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
     useEffect(() => {
-        // Ensure the spinner is shown while the iframe loads
-        const iframe = document.querySelector('iframe');
-        if (iframe) {
-            iframe.addEventListener('load', () => setIsLoading(false));
+        const currentIframeRef = iframeRef.current;
+
+        const handleLoad = () => setIsLoading(false);
+        if (currentIframeRef) {
+            currentIframeRef.addEventListener('load', handleLoad);
         }
+
         return () => {
-            if (iframe) {
-                iframe.removeEventListener('load', () => setIsLoading(false));
+            if (currentIframeRef) {
+                currentIframeRef.removeEventListener('load', handleLoad);
             }
         };
     }, []);
@@ -32,15 +35,16 @@ const AirtableForm: React.FC<AirtableFormProps> = ({ src, height = "533px", bord
                 </div>
             )}
             <iframe
+                ref={iframeRef}
                 className="airtable-embed"
                 src={src}
                 width="100%"
                 height={height}
                 style={{ background: "transparent", border: `1px solid ${borderColor}` }}
                 title="Airtable Form"
+                loading="lazy"
                 onLoad={() => setIsLoading(false)}
-            >
-            </iframe>
+            />
         </div>
     );
 };
