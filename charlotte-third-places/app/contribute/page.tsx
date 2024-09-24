@@ -1,12 +1,12 @@
 import * as React from "react";
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 import { Icons } from "@/components/Icons";
-import AirtableForm from "@/components/AirtableForm"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import AirtableForm from "@/components/AirtableForm";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
 export const metadata: Metadata = {
     title: 'Contribute',
-}
+};
 
 export default function ContributePage() {
     return (
@@ -26,6 +26,16 @@ export default function ContributePage() {
                         </div>
                     </CardHeader>
                     <CardContent>
+                        <div className="mb-4 text-center">
+                            <a
+                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="custom-link"
+                            >
+                                Form not loading? Click here to access it.
+                            </a>
+                        </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
                     </CardContent>
                 </Card>
@@ -38,6 +48,16 @@ export default function ContributePage() {
                         </div>
                     </CardHeader>
                     <CardContent>
+                        <div className="mb-4 text-center">
+                            <a
+                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="custom-link"
+                            >
+                                Form not loading? Click here to access it.
+                            </a>
+                        </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
                     </CardContent>
                 </Card>
@@ -50,6 +70,16 @@ export default function ContributePage() {
                         </div>
                     </CardHeader>
                     <CardContent>
+                        <div className="mb-4 text-center">
+                            <a
+                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="custom-link"
+                            >
+                                Form not loading? Click here to access it.
+                            </a>
+                        </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
                     </CardContent>
                 </Card>
