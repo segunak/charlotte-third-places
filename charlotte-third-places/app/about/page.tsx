@@ -66,49 +66,100 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others are curated from my experiences and community feedback. Review the list below to learn more about each field.
+                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others are curated from my experiences and community feedback. Click on a field name below to learn more abouut how it's sourced.
                 </p>
-                <ul className="list-disc list-inside pl-4 space-y-2">
-                    <li>
-                        <strong>Name:</strong> This mostly comes from Google Maps, though I've occasionally edited names to make them clearer. Sometimes the names on Google Maps are too formal, long, or ambiguous, so I tweak them to ensure clarity while preserving the original intent. Take Not Just Coffee as an example. They have multiple locations in Charlotte, and on Google Maps, they're all simply named 'Not Just Coffee.' While that's understandable, it can be hard to tell which location is being referred to at a glance. To make things clearer on this site, I've renamed them to 'Not Just Coffee | [Neighborhood Name]' so it's easier to differentiate. I've made similar small tweaks to other place names where needed.
-                    </li>
-                    <li>
-                        <strong>Type:</strong> Comes from Google Maps as a starting place for further curation. Google might label a place as a coffee shop, but if it's also a bar or café. I try to include all relevant types to capture the full essence of the space. If you see a place that's 'mistyped' in any way let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page.
-                    </li>
-                    <li>
-                        <strong>Size:</strong> This one is all me! Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Like, really. I need help lol.
-                    </li>
-                    <li>
-                        <strong>Neighborhood:</strong> This comes from Google Maps, but I do some curation. For places outside Charlotte proper (like Matthews or Concord, which in the spirit of <ResponsiveLink href="https://www.ajc.com/life/radiotvtalk-blog/atlanta-rapper-omeretta-stirs-social-media-pot-over-song-that-narrowly-defines-atlanta/6LBPXWJPUVDHLBVFUZV5IRMDI4/">Omeretta</ResponsiveLink>, are "not Charlotte"), I list the city name as the neighborhood. If Google suggests an obscure neighborhood that nobody recognizes, I simplify it to something more familiar. Because of the curation being done, this is a field where I do <em>really</em> appreciate feedback. If you see a place where the neighborhood tag makes no sense, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page so I can work on getting it updated.
-                    </li>
-                    <li>
-                        <strong>Address:</strong> 100% pulled from Google Maps.
-                    </li>
-                    <li>
-                        <strong>Purchase Required:</strong> Google Maps offers data here, but it's not always accurate. I use Google Maps data by default, but I've also curated values based on my experiences and community feedback. For example, most coffee shops expect you to make a purchase if you're staying for a while, so they're assumed to be "Yes" on "Purchase Required". As someone that's had periods of life where a $5 coffee was not doable, helping people find truly free third places is important to me. The library was always mine during those tough times, but there are some other options around the city. If you see a wrong value in this field, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page. The accuracy of this field matters deeply to me.
-                    </li>
-                    <li>
-                        <strong>Parking Situation:</strong> From Google Maps who have mostly accurate data on this field. That being said, I've found mistakes before, so I review all values based on personal experiences and community feedback. I didn't own a car until moving to Charlotte, and if I had one complaint about this city, it'd be how challenging it is to live here and have any sort of social life without one. I miss the days where parking was never an issue for me because I came on my own two feet (or wheels, shout out bikers) via reliable public transportation. Charlotte's <ResponsiveLink href="https://www.google.com/search?q=Charlotte+Gateway+Station&rlz=1C1ONGR_enUS937US937&oq=Charlotte+Gateway+Station">working on</ResponsiveLink> the bad public transportation thing though. Always nice to see progress.
-                    </li>
-                    <li>
-                        <strong>Free WiFi:</strong> This one fully relies on my experiences and community feedback. Google Maps doesn't have this data. Now here's where things can get sticky. If you visit a place and they have free WiFi, but they expect you to make a purchase to hangout in their space, is it really free WiFi? Even if you get the cheapest thing on the menu, you still had to pay to access the WiFi in a roundabout sort of way. I've spent far too many hours debating internally on the answer to that question. I've settled on listing a place as having free WiFi if you don't have to pay to access the WiFi itself after connecting. Once you're in (password or not) you're in, no "give us your credit card" to browse. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hangout at the library. Charlotte has great libraries. I encourage you to use them. Maybe even keep the laptop closed and read a book while you're there. If you're into science-fiction/fantasy check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
-                    </li>
-                    <li>
-                        <strong>Description:</strong> Comes directly from Google Maps. This is how a place describes itself. The value here comes from what the business put on their own Google Maps profile. If a place doesn't have a description, I use a default: "A third place in the Charlotte, North Carolina area."
-                    </li>
-                    <li>
-                        <strong>Website:</strong> Pulled straight from Google Maps—whatever the business lists as their website, if they list one.
-                    </li>
-                    <li>
-                        <strong>Google Maps Profile:</strong> From Google Maps. This is a direct link to the place's profile, pulled from their listing.
-                    </li>
-                    <li>
-                        <strong>Comments:</strong> These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
-                    </li>
-                    <li>
-                        <strong>Has Cinnamon Rolls:</strong> This one is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but not for all pastries—only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be an exalted form of pastry, a divine delight. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason (perhaps a birthday, anniversary), or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my mental list of favorite places around the city (shout out Sunflour Bakery 🔥). As I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day". You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become—God forbid—<em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?" the answer is no. I just like them. It is actually that simple. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <em>with all manner of immediate speed</em> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
-                    </li>
-                </ul>
+                <Accordion type="single" collapsible className="space-y-4 pl-4">
+                    <AccordionItem value="name">
+                        <AccordionTrigger>Name</AccordionTrigger>
+                        <AccordionContent>
+                            This mostly comes from Google Maps, though I've occasionally edited names to make them clearer. Sometimes the names on Google Maps are too formal, long, or ambiguous, so I tweak them to ensure clarity while preserving the original intent. Take Not Just Coffee as an example. They have multiple locations in Charlotte, and on Google Maps, they're all simply named 'Not Just Coffee.' While that's understandable, it can be hard to tell which location is being referenced at a glance. To make things clearer, I've renamed them to 'Not Just Coffee | [Neighborhood Name]'. I've made similar small tweaks to other place names where needed.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="type">
+                        <AccordionTrigger>Type</AccordionTrigger>
+                        <AccordionContent>
+                            Comes from Google Maps as a starting place for further curation. Google might label a place as a coffee shop, but if it's also a bar or café. I try to include all relevant types to capture the full essence of the space. If you see a place that's "mistyped" in any way let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="size">
+                        <AccordionTrigger>Size</AccordionTrigger>
+                        <AccordionContent>
+                            This one is all me. Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="neighborhood">
+                        <AccordionTrigger>Neighborhood</AccordionTrigger>
+                        <AccordionContent>
+                            This comes from Google Maps, but I do some curation. For places outside Charlotte proper like Matthews or Concord—which in the spirit of <ResponsiveLink href="https://www.ajc.com/life/radiotvtalk-blog/atlanta-rapper-omeretta-stirs-social-media-pot-over-song-that-narrowly-defines-atlanta/6LBPXWJPUVDHLBVFUZV5IRMDI4/">Omeretta</ResponsiveLink>, are "not Charlotte"—I list the city name as the neighborhood. Also, if Google suggests an obscure neighborhood that nobody recognizes, I simplify it to something more familiar. Because of the curation being done, this is a field where I do <em>really</em> appreciate feedback. If you see a place where the neighborhood tag makes no sense, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page so I can work on getting it updated.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="address">
+                        <AccordionTrigger>Address</AccordionTrigger>
+                        <AccordionContent>
+                            100% pulled from Google Maps.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="purchase">
+                        <AccordionTrigger>Purchase Required</AccordionTrigger>
+                        <AccordionContent>
+                            Google Maps offers data here, but it's not always accurate. I use Google Maps data by default, but I've also curated values based on my experiences and community feedback. For example, most coffee shops expect you to make a purchase if you're staying for a while, so they're assumed to be "Yes" on "Purchase Required". As someone that's had periods of life where a $5 coffee was not doable, helping people find truly free third places is important to me. The library was always mine during those tough times, but there are some other options around the city. If you see a wrong value in this field, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page. The accuracy of this field matters deeply to me.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="parking">
+                        <AccordionTrigger>Parking Situation</AccordionTrigger>
+                        <AccordionContent>
+                            Comes from Google Maps who have mostly accurate data on this field. That being said, I've found mistakes before, so I review all values based on personal experiences and community feedback.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="wifi">
+                        <AccordionTrigger>Free WiFi</AccordionTrigger>
+                        <AccordionContent>
+                            This one fully relies on my experiences and community feedback. Google Maps doesn't have this data. Now here's where things can get sticky. If you visit a place and they have free WiFi, but they expect you to make a purchase to hangout in their space, is it really free WiFi? Even if you get the cheapest thing on the menu, you still had to pay to access the WiFi in a roundabout sort of way. I've spent far too many hours debating internally on the answer to this question. I've settled on listing a place as having free WiFi if you don't have to pay to access the WiFi itself after connecting. Once you're in (password or not) you're in, no "give us your credit card" to browse. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hangout at the library. Charlotte has great libraries. I encourage you to use them. Maybe even keep the laptop closed and read a book while you're there. If you're into science-fiction/fantasy check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="description">
+                        <AccordionTrigger>Description</AccordionTrigger>
+                        <AccordionContent>
+                            Comes directly from Google Maps. This is how a place describes itself. The value here comes from what the business put on their own Google Maps profile. If a place doesn't have a description, I use a default: "A third place in the Charlotte, North Carolina area."
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="website">
+                        <AccordionTrigger>Website</AccordionTrigger>
+                        <AccordionContent>
+                            Pulled straight from Google Maps, if the business lists one.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="profile">
+                        <AccordionTrigger>Google Maps Profile</AccordionTrigger>
+                        <AccordionContent>
+                            A direct link to the place's profile, pulled from their Google Maps listing.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="comments">
+                        <AccordionTrigger>Comments</AccordionTrigger>
+                        <AccordionContent>
+                            These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="cinnamon-rolls">
+                        <AccordionTrigger>Has Cinnamon Rolls</AccordionTrigger>
+                        <AccordionContent>
+                            This one is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but not for all pastries—only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be an exalted form of pastry, a divine delight. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason (perhaps a birthday, anniversary), or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my mental list of favorite places around the city (shout out Sunflour Bakery 🔥). As I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day". You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become—God forbid—<em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?" the answer is no. I just like them. It is actually that simple. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <em>with all manner of immediate speed</em> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
+                        </AccordionContent>
+                    </AccordionItem>
+                </Accordion>
             </div>
         )
     },
