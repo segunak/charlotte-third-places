@@ -1,11 +1,16 @@
 import Link from "next/link";
 import * as React from "react";
+import type { Metadata } from 'next'
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+
+export const metadata: Metadata = {
+    title: 'Map',
+}
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // This results in Next.js refreshing the data from Airtable once for the whole site every 12 hours.
@@ -30,15 +35,15 @@ export default async function MapPage() {
                             <span className="hidden sm:inline">
                                 {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
                             </span>
+                            {" "} Click on any marker to see more information about that place.
                             <span className="font-bold text-primary">
                                 {" "} Filter and search the map using the {" "}
                                 <span className="sm:hidden">button in the lower-right corner.</span>
                                 <span className="hidden sm:inline">sidebar on the right.</span>
-                                {" "}Click on any marker to see more information about that place.
                             </span>
                         </p>
                     </div>
-                    <div className="w-full h-[60vh] sm:h-[80vh] mb-0 sm:mb-4 mx-auto">
+                    <div className="w-full h-[70vh] sm:h-[80vh] mb-0 sm:mb-4 mx-auto">
                         <PlaceMap places={places} />
                     </div>
                 </section>
@@ -50,7 +55,7 @@ export default async function MapPage() {
 
                 {/*On desktop, this provides a dedicated sidebar for filtering */}
                 <div className="hidden sm:block bg-background border-x border-border">
-                    <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
+                    <FilterSidebar className="max-w-[250px] sticky top-16 p-4 space-y-4" />
                 </div>
             </div>
         </FilterProvider>

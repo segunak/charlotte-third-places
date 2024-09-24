@@ -29,17 +29,17 @@ export default async function HomePage() {
               <span className="hidden sm:inline">
                 {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
               </span>
+              {" "} Click on any card to see more information about that place.
               <span className="font-bold text-primary">
                 {" "} Filter and search the list using the {" "}
                 <span className="sm:hidden">button in the lower-right corner.</span>
                 <span className="hidden sm:inline">sidebar on the right.</span>
-                {" "} Click on any card to see more information about that place.
               </span>
             </p>
           </div>
           <DataTable rowData={places} />
         </section>
-        
+
         {/*On mobile, this provides a button in the lower right for filtering */}
         <div className="sm:hidden">
           <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
@@ -47,7 +47,7 @@ export default async function HomePage() {
 
         {/*On desktop, this provides a dedicated sidebar for filtering */}
         <div className="hidden sm:block bg-background border-x border-border">
-          <FilterSidebar className="max-w-[250px] sticky top-16 h-0 p-4 space-y-4" />
+          <FilterSidebar className="max-w-[250px] sticky top-16 p-4 space-y-4" />
         </div>
       </div>
     </FilterProvider>

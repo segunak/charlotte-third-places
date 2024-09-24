@@ -1,36 +1,28 @@
-import Link from "next/link";
-import Image from "next/image";
 import * as React from "react";
+import type { Metadata } from 'next'
 import { Icons } from "@/components/Icons";
 import AirtableForm from "@/components/AirtableForm"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
+export const metadata: Metadata = {
+    title: 'Contribute',
+}
+
 export default function ContributePage() {
     return (
-        <div className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 rounded-lg shadow-lg bg-background">
+        <div className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
             <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
-                Contribute to Charlotte Third Places
+                Contribute
             </h1>
-            <div className="flex justify-center">
-                <div className="relative w-[18rem] h-[18rem] sm:w-[21rem] sm:h-[21rem] rounded-full overflow-hidden shadow-lg">
-                    <Image
-                        src="/logos/skyline-with-text-badge.png"
-                        alt="Charlotte Skyline"
-                        fill={true}
-                        style={{ objectFit: "contain" }}
-                        className="rounded-lg p-5"
-                    />
-                </div>
-            </div>
             <p>
-                Got feedback or ideas about Charlotte Third Places? You're in the right place! You can suggest new places, enhance existing ones, or contact me directly using the forms below.
+                Got feedback or ideas about Charlotte Third Places? You're in the right place! You can suggest new places, enhance existing ones, or contact the site creator directly using the forms below.
             </p>
             <div className="space-y-6">
                 { /* Suggest a New Place Form*/}
                 <Card className="border border-gray-300 shadow-sm">
                     <CardHeader>
                         <div className="flex justify-center">
-                            <Icons.plus className="h-12 w-12 text-primary" />
+                            <Icons.mapLocationDot className="h-12 w-12 text-primary" />
                         </div>
                     </CardHeader>
                     <CardContent>
