@@ -4,7 +4,7 @@ Charlotte Third Places is a curated collection of third places in and around Cha
 
 **Website:** <https://charlottethirdplaces.com>
 
-It was designed to help people in and around Charlotte, North Carolina find spots to study, read, write, chill, work remotely, hang out with friends, hang out alone, etc. To learn more about the tech stack, check out the article below.
+It was designed to help people find spots to study, read, write, chill, work remotely, hang out with friends, hang out alone, etc. To learn more about the tech stack, see the article below.
 
 [Exploring the Tech Stack Behind Charlotte Third Places](https://segunakinyemi.com/blog/charlotte-third-places-tech-stack)
 
