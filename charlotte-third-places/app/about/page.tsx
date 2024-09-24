@@ -16,10 +16,10 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about where the term came from and its history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
+                    Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about the term's history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
                 </p>
                 <p>
-                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you have. This is my list, but I'm always up for learning something new. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">contribute page</Link> to get in touch!
+                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the list, but I want it to be valuable to more than just me. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
                 </p>
             </div>
         )
@@ -28,7 +28,12 @@ const frequentlyAskedQuestions = [
         title: "Who built and maintains Charlotte Third Places?",
         content: (
             <div className="space-y-3">
-                That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into an Excel spreadsheet, but where's the fun in that? As a software engineer, I enjoy coding and building stuff with tech, so I over-engineered the heck out of this project. It was and continues to be a great excuse to play around with languages and frameworks I don't get to use much in my day job (where it's mostly backend engineering in Python, Scala, and SQL). If you're into tech, keep scrolling to learn more about what tools I used. In short, the frontend side of engineering is as fascinating as it is complex, but that's just software these days. Whether frontend or backend, human ambition knows no bounds, and the complexity of the software we build to fuel those ambitions evolves with it.
+                <p>
+                    That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into a spreadsheet, but where's the fun in that?
+                </p>
+                <p>
+                    As a software engineer, I enjoy building stuff with tech, so I over-engineered the 💩 out of this project as an excuse to learn new things. In the process, I've been able to experiment with languages and frameworks I don't use much in my day job, where I mostly focus on backend data engineering with Python, Scala, and SQL on Azure. If you're into tech, keep scrolling to learn more about what tools I used. In short, the frontend side of engineering is as fascinating as it is complex, but that's just software these days. Whether frontend or backend, human ambition knows no bounds, and the complexity of the software we build grows to match those ambitions.
+                </p>
             </div>
         )
     },
@@ -44,7 +49,7 @@ const frequentlyAskedQuestions = [
         title: "I submitted a place and haven't seen it added yet. What should I do?",
         content: (
             <div className="space-y-3">
-                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and between my day job and personal life, things can get busy. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places. If we venture into the "list literally every single spot" world this site becomes Google Maps Lite rather than something of particular value. Maybe one day I'll work out a community voting mechanism, although that might be more effort than its worth.
+                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life, stuff, and <ResponsiveLink href="https://www.urbandictionary.com/define.php?term=stuff%20and%20thangs">thangs</ResponsiveLink>. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places in the city. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique. I'm not particularly enthused about being the gatekeeper of places though. Maybe one day I'll work out a community voting mechanism, although that might be more effort than its worth. However, the code for this is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">public</ResponsiveLink>, so feel free to write new features and submit a pull request if you're so inclined.
             </div>
         )
     },
@@ -52,16 +57,16 @@ const frequentlyAskedQuestions = [
         title: "I see some information about a place that's wrong. How can I get it updated?",
         content: (
             <div className="space-y-3">
-                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections.
+                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections. I'll do my best to process corrections in a timely manner.
             </div>
         )
     },
     {
-        title: "Where does the data come from?",
+        title: "Where does the data for places come from?",
         content: (
             <div className="space-y-3">
                 <p>
-                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others (like <em>has cinnamon rolls</em>) are curated from my experiences and community feedback. Review the list below to learn more about each field.
+                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others are curated from my experiences and community feedback. Review the list below to learn more about each field.
                 </p>
                 <ul className="list-disc list-inside pl-4 space-y-2">
                     <li>
@@ -111,7 +116,7 @@ const frequentlyAskedQuestions = [
         title: "How often is the data updated?",
         content: (
             <div className="space-y-3">
-                A couple times a day, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>.
+                A few times a day, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>.
             </div>
         )
     },
@@ -119,15 +124,15 @@ const frequentlyAskedQuestions = [
         title: "There are a lot of breweries in Charlotte, aren't they considered third places? Why not list literally every single brewery in Charlotte?",
         content: (
             <div className="space-y-3">
-                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I am willing to hear all arguments and reason with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm willing to hear all arguments and reason with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
             </div>
         )
     },
     {
-        title: "Starbucks locations are quintessential examples of third places. Why not list literally every single Starbucks in Charlotte?",
+        title: "Starbucks locations are quintessential examples of third places. Why not list literally every single Starbucks in the greater Charlotte area?",
         content: (
             <div className="space-y-3">
-                First off, calm down. Not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses, and as such, don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is entirely subjective. As such, I'm more than willing to add a Starbucks to the site that someone validates is cool to hangout at. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                First off, calm down, lol. Not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses, and as such, don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is entirely subjective. As such, I'm more than willing to add a Starbucks to the site that someone validates is a proper third place. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
             </div>
         )
     }
@@ -162,7 +167,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, a Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can...
+                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, a Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>work remotely</li>
@@ -212,141 +217,8 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        I'll start by saying, this project is over-engineered, and that's by design. In addition to sharing my list of places, I wanted to learn new things, and that I did. Some might say the entire point of a side project as a developer is to over-engineer things in service of learning. Here's a classic <ResponsiveLink href="https://news.ycombinator.com/item?id=15147660">Hacker News thread</ResponsiveLink> on the topic. I'm not saying I fully agree with that sentiment, but I am saying I took my time building this site because I wanted to explore. Like sure, you can stick to the linear path in an open-world RPG, but you miss out on so much cool stuff that way. Game developers literally spend hours creating things that are only discoverable if you meander. If that reference is hitting home for you, 🙌🏾💯. If not, that's okay, but what follows only gets more nerdy and techy. Here's what I used to build this site and the processes behind it.
+                        Check out my article, <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">Exploring the Tech Stack Behind Charlotte Third Places</ResponsiveLink>, for more details about how this project was built.
                     </p>
-                    <Accordion type="single" collapsible className="space-y-4">
-                        {/* Frontend & Styling */}
-                        <AccordionItem value="frontend">
-                            <AccordionTrigger>Frontend & Styling</AccordionTrigger>
-                            <AccordionContent>
-                                <ul className="list-disc list-inside pl-4 space-y-2">
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="https://nextjs.org/">Next.js:</ResponsiveLink>
-                                        </strong> {" "}
-                                        Is what this site is built with. There was once a time where people wrote vanilla HTML, CSS, and JavaScript to build websites. Those days are long gone. This <ResponsiveLink href="https://www.pzuraq.com/blog/four-eras-of-javascript-frameworks">article</ResponsiveLink> has a pretty good accounting of how we got to our present frameworks on top of libraries on top of other libraries on top of frameworks era. React has emerged as the winner of the JavaScript library race, and Next.js as the framework on top of it (although <ResponsiveLink href="https://www.reddit.com/r/nextjs/comments/1f92jdv/chatgptcom_switched_from_nextjs_to_remix/">Remix</ResponsiveLink> is rising). These days, there's so much overlap between the React and Next.js (developed by <ResponsiveLink href="https://vercel.com/about">Vercel</ResponsiveLink>) development teams that some are <ResponsiveLink href="https://www.epicweb.dev/why-i-wont-use-nextjs">concerned</ResponsiveLink> they're one in the same. Seeing as this is a hobby project, I'm not with the drama when it comes to the trend chasing nature of frontend development. Everyone and their mama is using Next.js, including many <ResponsiveLink href="https://nextjs.org/showcase">popular websites</ResponsiveLink> you've likely used. That's enough justification for me to use it. My experience has been mostly good, although the app router seems <ResponsiveLink href="https://github.com/vercel/next.js/discussions/54075">overly complex</ResponsiveLink>. Next.js is a React-based framework.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">React:</ResponsiveLink>
-                                        </strong> {" "}
-                                        At the heart of the UI, React's component-based architecture allows for a highly interactive and dynamic experience, making every page of this site feel fluid and responsive.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Tailwind CSS:</ResponsiveLink>
-                                        </strong> {" "}
-                                        The utility-first CSS framework that lets me build fast and keep my designs consistent. With Tailwind, responsiveness and custom styling come effortlessly.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">shadcn/ui:</ResponsiveLink>
-                                        </strong> {" "}
-                                        Built on Radix UI, Shadcn provides accessible, reusable components for a smooth user interface. These components make the design of the site cohesive and user-friendly.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">React Icons:</ResponsiveLink>
-                                        </strong> {" "}
-                                        This project uses React Icons, which allows me to pull in icons from multiple libraries without cluttering my dependencies. It's one of those "small joys" that makes building UI fun.
-                                    </li>
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Backend & APIs */}
-                        <AccordionItem value="backend">
-                            <AccordionTrigger>Backend & APIs</AccordionTrigger>
-                            <AccordionContent>
-                                <ul className="list-disc list-inside pl-4 space-y-3">
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Python:</ResponsiveLink>
-                                        </strong> {" "}
-                                        All backend interactions, especially with the Google Maps API and Outscraper, are handled through Python scripts running on Azure Functions. This serverless architecture keeps the backend lightweight and scalable.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Azure Functions:</ResponsiveLink>
-                                        </strong> {" "}
-                                        Azure Functions serve as the engine of the backend, handling tasks like interacting with APIs in a scalable, efficient, and serverless way.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Google Maps Places API:</ResponsiveLink>
-                                        </strong> {" "}
-                                        This API powers the site's data, providing details like names, addresses, and types of third places in Charlotte. Google Maps ensures the most accurate information possible.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Outscraper:</ResponsiveLink>
-                                        </strong> {" "}
-                                        Outscraper is responsible for gathering reviews for the "ambience" data field. It's part of a future feature where I plan to analyze reviews to offer insights into the vibe of each location.
-                                    </li>
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Data & Storage */}
-                        <AccordionItem value="data">
-                            <AccordionTrigger>Data & Storage</AccordionTrigger>
-                            <AccordionContent>
-                                <ul className="list-disc list-inside pl-4 space-y-3">
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Airtable:</ResponsiveLink>
-                                        </strong> {" "}
-                                        If you were expecting PostgreSQL or DuckDB or a data lake with delta parquet tables or some other fancy solution, I'm sorry to disappoint. This whole project could be just this Airtable embedded into the website, which is what <ResponsiveLink href="https://layoffs.fyi/">Layoffs.fyi</ResponsiveLink> does for a simple scalable solution. I considered doing that. Then I was like, doing something more complicated (and challenging) is more fun, so I did that instead.
-
-                                        All the third place data is stored in Airtable, providing an easy-to-manage and scalable solution. The Airtable JS API is used to pull this data into the site effortlessly.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">Google Maps Places API:</ResponsiveLink>
-                                        </strong> {" "}
-                                        This is used to pull crucial information about each place—like its name, address, and category. It’s what allows this site to function as a third-place directory.
-                                    </li>
-                                    <li>
-                                        <strong>
-                                            <ResponsiveLink href="REPLACEME">AG Grid:</ResponsiveLink>
-                                        </strong> {" "}
-                                        AG Grid is used for displaying the list of third places. It’s flexible, customizable, and provides all the functionality you could ever want in a data grid.
-                                    </li>
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* AI & Tools */}
-                        <AccordionItem value="ai-tools">
-                            <AccordionTrigger>AI & Tools</AccordionTrigger>
-                            <AccordionContent>
-                                <ul className="list-disc list-inside pl-4 space-y-3">
-                                    <li>
-                                        <strong>Microsoft Designer:</strong> This was my go-to tool for AI-generated images, logos, and other creative assets used across the site. It made things visually appealing while saving me a ton of time.
-                                    </li>
-                                    <li>
-                                        <strong>OpenAI's ChatGPT:</strong> I can’t deny how helpful OpenAI’s ChatGPT has been in refining ideas, generating content, and speeding up development. This README itself has been assisted by ChatGPT!
-                                    </li>
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-
-                        {/* Tools Explored */}
-                        <AccordionItem value="explored-tools">
-                            <AccordionTrigger>Tools Explored</AccordionTrigger>
-                            <AccordionContent>
-                                <p>I explored several tools and frameworks before settling on the current stack. Here's a quick breakdown of what I tried but ultimately didn’t use:</p>
-                                <ul className="list-disc list-inside pl-4 space-y-3">
-                                    <li><strong>Firebase:</strong> While I initially thought Firebase might be a good fit, it turned out to be overkill for the simplicity of this project.</li>
-                                    <li><strong>Flutter:</strong> I liked the idea of building with Flutter, but I was turned off by Dart, not because it's bad, but because it didn’t align with the in-demand skills I wanted to focus on.</li>
-                                    <li><strong>React Native:</strong> While React Native is powerful, the headaches of dealing with different platforms (iOS vs. Android vs. Web) led me to decide a website would suffice.</li>
-                                    <li><strong>Mapbox:</strong> Mapbox was considered as an alternative to Google Maps, but its complexity was unnecessary for this project.</li>
-                                    <li><strong>Google Cloud Functions:</strong> They worked well but were swapped out for Azure Functions to align better with my existing Azure workflow.</li>
-                                    <li><strong>Supabase:</strong> Supabase is fantastic, but given the simplicity of this project’s data, it was overkill. However, I’m eager to find a project where I can give Supabase a real shot.</li>
-                                </ul>
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
                 </CardContent>
             </Card>
 
