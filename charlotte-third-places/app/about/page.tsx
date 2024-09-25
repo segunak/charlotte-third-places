@@ -29,10 +29,10 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into a spreadsheet, but where's the fun in that?
+                    That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>—Christian, Software Engineer, Writer, and Tech Enthusiast. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into a spreadsheet, but where's the fun in that?
                 </p>
                 <p>
-                    As a software engineer, I enjoy building stuff with tech, so I over-engineered the 💩 out of this project as an excuse to learn new things. In the process, I've been able to experiment with languages and frameworks I don't use much in my day job, where I mostly focus on backend data engineering with Python, Scala, and SQL on Azure. If you're into tech, keep scrolling to learn more about what tools I used. In short, the frontend side of engineering is as fascinating as it is complex, but that's just software these days. Whether frontend or backend, human ambition knows no bounds, and the complexity of the software we build grows to match those ambitions.
+                    As a software engineer, I enjoy building stuff with tech, so I purposefully over-engineered this project as an excuse to learn new things. In the process, I've been able to experiment with languages, frameworks, and tools I don't use much in my day job, where I mostly focus on backend data engineering with Python, Scala, and SQL on Azure. So, if you're into tech, check out <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">this article</ResponsiveLink> for a dive into how the project was built.
                 </p>
             </div>
         )
@@ -203,7 +203,7 @@ export default function AboutPage() {
                 About
             </h1>
             <p className="text-wrap">
-                Welcome! This site is designed to help you discover third places in and around Charlotte, North Carolina. Read on to learn about the creator, the development process, the data sources, the concept of third places, and more.
+                Welcome! This site is designed to help people in and around Charlotte, North Carolina discover third places in the area. Read on to learn about its creator, data sources, development process, the concept of third places, and more.
             </p>
 
             {/* Creator*/}
@@ -225,19 +225,19 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, a Christian, Software Engineer, Writer, and Tech Enthusiast. I built and maintain this site with the goal of connecting people with places in Charlotte where they can:
+                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I built and maintain this site with the goal of connecting people with places in Charlotte where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
-                        <li>work remotely</li>
-                        <li>study</li>
-                        <li>read</li>
-                        <li>write</li>
-                        <li>chill</li>
-                        <li>watch anime</li>
-                        <li>make friends</li>
-                        <li>hang out with friends</li>
-                        <li>hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie)</li>
-                        <li>eat cinnamon rolls while doing any of the above</li>
+                        <li>Work remotely.</li>
+                        <li>Study.</li>
+                        <li>Read.</li>
+                        <li>Write.</li>
+                        <li>Chill.</li>
+                        <li>Watch anime.</li>
+                        <li>Make friends.</li>
+                        <li>Hang out with friends.</li>
+                        <li>Hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie).</li>
+                        <li>Eat cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
                         Keep scrolling to get answers to frequently asked questions and learn more about the project.
