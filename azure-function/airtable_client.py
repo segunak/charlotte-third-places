@@ -1,5 +1,6 @@
 import os
 import pprint
+import time
 import dotenv
 import logging
 import requests
@@ -58,6 +59,7 @@ class AirtableClient:
             if (current_value in (None, 'Unsure')) or (overwrite and update_value is not None and current_value != update_value):
                 self.charlotte_third_places.update(record_id, {field_to_update: update_value})
                 logging.info(f'Field update PROCESSED for {field_to_update} at place {place_name} with new value: {update_value}.\n')
+                time.sleep(3)
                 return True
             else:
                 logging.info(f'Field update SKIPPED for field {field_to_update} at place {place_name}. The existing value of {current_value} was NOT overwritten with the provided value of {update_value}.\n')
@@ -182,8 +184,8 @@ class AirtableClient:
                             'Google Maps Place Id': (place_id, True),
                             'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
                             'Neighborhood': (neighborhood, False),
-                            'Website': (website, False),
-                            'Address': (place_details_response.get('formattedAddress'), False),
+                            'Website': (website, True),
+                            'Address': (place_details_response.get('formattedAddress'), True),
                             'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
                             'Purchase Required': (purchase_required, False),
                             'Parking Situation': (parking_situation, False),

@@ -14,10 +14,6 @@ from airtable_client import AirtableClient
 
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-# Get long running durable funcition working. Test locally.
-# Remove limit on airtable. 
-# Remove old get outscraper cold.
-
 # HTTP-triggered function that serves as the client and starts the orchestrator function. This is the entry point for the orchestration, and it's publicly accessible.
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
