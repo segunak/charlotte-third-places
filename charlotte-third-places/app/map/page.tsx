@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
 // Airtable has API call limits. Can't have every visit pulling new data.
-export const revalidate = 43200; // Refresh the data every 12 hours.
+export const revalidate = 43200; // Refresh data from Airtable every 12 hours.
 
 export default async function MapPage() {
     const places = await getPlaces();
