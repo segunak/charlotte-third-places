@@ -19,7 +19,7 @@ const frequentlyAskedQuestions = [
                     Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about the term's history. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
                 </p>
                 <p>
-                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the list, but I want it to be valuable to more than just me. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
+                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the list, but I want it to be valuable to the Charlotte community. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
                 </p>
             </div>
         )
@@ -147,7 +147,7 @@ const frequentlyAskedQuestions = [
                     </AccordionItem>
 
                     <AccordionItem value="comments">
-                        <AccordionTrigger>Comments</AccordionTrigger>
+                        <AccordionTrigger>Curator's Comments</AccordionTrigger>
                         <AccordionContent>
                             These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
                         </AccordionContent>
@@ -158,7 +158,7 @@ const frequentlyAskedQuestions = [
                         <AccordionContent>
                             <div className="space-y-3">
                                 <p>
-                                    This one is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but not for all pastries—only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be the chief of all pastries. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason (perhaps a birthday, anniversary), or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my mental list of favorite places around the city (shout out Sunflour Bakery 🔥). As I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day".
+                                    This is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but not for all pastries—only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be the chief of all pastries. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason (perhaps a birthday, anniversary), or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my mental list of favorite places around the city (shout out Sunflour Bakery 🔥). As I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day".
                                 </p>
                                 <p>
                                     You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become—God forbid—<em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?" the answer is no. I just like them. It is actually that simple. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <strong>with all manner of immediate speed</strong> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
@@ -174,23 +174,39 @@ const frequentlyAskedQuestions = [
         title: "How often is the data updated?",
         content: (
             <div className="space-y-3">
-                A few times a day, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>.
+                Every few hours, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>. The data really doesn't change that often since we're dealing with physical places. The refresh process has "check if anything's changed from the Google Maps profile of the place, if not, end script, else, update" logic.
             </div>
         )
     },
     {
-        title: "There are a lot of breweries in Charlotte, aren't they considered third places? Why not list literally every single brewery in Charlotte?",
+        title: "Aren't parks considered third places? Why not list all parks in Charlotte?",
         content: (
             <div className="space-y-3">
-                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm willing to hear all arguments and reason with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                Good point, parks certainly are third places. They're not listed on this website because there's already a great directory of those provided by the Mecklenburg County Parks and Rec department. Check out their park locator tool <ResponsiveLink href="https://parkandrec.mecknc.gov/Places-to-Visit/Parks">here</ResponsiveLink>.
             </div>
         )
     },
     {
-        title: "Starbucks locations are quintessential examples of third places. Why not list literally every single Starbucks in the greater Charlotte area?",
+        title: "Aren't malls considered third places? Why not list all malls in Charlotte?",
         content: (
             <div className="space-y-3">
-                First off, calm down, lol. Not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses, and as such, don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is entirely subjective. As such, I'm more than willing to add a Starbucks to the site that someone validates is a proper third place. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                To start, I don't like malls. Just a personal thing. If you ever meet me, feel free to ask why. Also they're kind of <ResponsiveLink href="https://www.google.com/search?q=why+are+american+malls+dying">dying</ResponsiveLink> as an institution, with the <ResponsiveLink href="https://www.simon.com/mall/southpark">SouthPark mall</ResponsiveLink> being a notable exception. Furthermore, I don't think people need a custom website to find malls in Charlotte. If you're looking for a mall in the area, Google is a better resource than this website could ever be.
+            </div>
+        )
+    },
+    {
+        title: "Aren't breweries considered third places? Why not list all breweries in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm open to hearing all arguments and reasoning with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+            </div>
+        )
+    },
+    {
+        title: "Aren't Starbucks considered third places? Why not list all Starbucks in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                Well, it turns out that not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses and don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is in relation to how well its setup for staying a while. I'm more than willing to add a Starbucks to the site that someone validates is a proper third place. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
             </div>
         )
     }

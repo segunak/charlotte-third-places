@@ -1,13 +1,6 @@
 # Color Pallette
 
-The colors being used for the Charlotte Third Places project.
-
-## Prompt for AI
-
-Create a vibrant yet simple logo for the Charlotte Third Places project focused on showcasing various social gathering spots around the city of Charlotte, North Carolina. It aims to help locals and visitors explore public places such as cafes, parks, and community centers that serve as 'third places' beyond home and work. The logo should have no text, and instead rely on visual elements associated with the city of Charlotte. The color palette you should consider is Primary Blue (#0092CA), Light Blue (#F5FBFF), Light Teal (#00A79C), Purple (#59489F), and Black (#141E28)
-
-
- of Charlotte Third Places includes Dark Charlotte Green (#24824A), Light Charlotte Green (#71BF44), Light Blue Background (#F5FBFF), Dark Blue Foreground (#181B1E), Primary Blue (#0092CA), Yellow (#FADD4A), Orange (#EA983E), Purple (#59489F), Dark Teal (#0A7D8C), Light Teal (#00A79C), Text Black (#141E28), Muted Foreground (#8B8D91), Border Color (#B3C3D4), Muted Background (#D7E6EF), Accent Foreground (#393F46), Dark Background (#1A2A34), Dark Foreground (#F0F4F6), Light Yellow Highlight (hsl(54, 100%, 85%)), and Dark Yellow Highlight (hsl(54, 100%, 20%)). These colors create a vibrant yet professional visual experience for users navigating the platform in both light and dark modes.
+The colors being used for the Charlotte Third Places project, based on colors generally associated with the city.
 
 ## **Primary Colors**
 
