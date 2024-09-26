@@ -32,7 +32,7 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
                                 className="text-sm"
                             >
-                                Click here to open the form directly.
+                                Click here to open the form directly
                             </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
@@ -52,7 +52,7 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
                                 className="text-sm"
                             >
-                                Click here to open the form directly.
+                                Click here to open the form directly
                             </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
@@ -72,7 +72,7 @@ export default function ContributePage() {
                                 href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
                                 className="text-sm"
                             >
-                                Click here to open the form directly.
+                                Click here to open the form directly
                             </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
