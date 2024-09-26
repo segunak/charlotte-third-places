@@ -234,6 +234,7 @@ export default function AboutPage() {
                             alt="Hello There"
                             width={500}
                             height={500}
+                            priority={true}
                             unoptimized={true}
                             className="rounded-xl"
                         />
