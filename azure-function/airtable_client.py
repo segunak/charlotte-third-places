@@ -294,10 +294,19 @@ class AirtableClient:
 
         # Run the enrichment process in parallel for all places
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(process_place, third_place) for third_place in self.all_third_places]
+            futures = {
+                executor.submit(process_place, third_place): third_place['fields']['Place']
+                for third_place in self.all_third_places
+            }
+            
             for future in as_completed(futures):
-                result = future.result()
-                places_updated.append(result)
+                place_name = futures[future]  # Get the place_name associated with the future
+                try:
+                    result = future.result()
+                    places_updated.append(result)
+                    logging.info(f"Successfully processed {place_name}")
+                except Exception as e:
+                    logging.error(f"Error processing {place_name}: {e}")
 
         # Return the list of places with update results and messages
         return places_updated
@@ -327,30 +336,39 @@ class AirtableClient:
         """
         Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API.
         This method uses parallel execution to improve performance.
+
+        Returns:
+            Dict[str, Dict[str, str]]: A dictionary where each key is the place name, and the value is another dictionary
+                                    containing details such as the status of the update or any error messages.
         """
 
         def process_photos_for_place(third_place: dict) -> Dict[str, str]:
             """
             Helper function to process photos for a single place. Defined inside to access variables from outer scope.
+
+            Returns:
+                Dict[str, str]: A dictionary containing the result of the update for the place.
+                                Includes whether the update was successful or any error message.
             """
+            result = {"place_name": third_place['fields']['Place'], "status": "success"}
+
             record_id = third_place['id']
             place_name = third_place['fields']['Place']
             place_id = third_place['fields'].get('Google Maps Place Id', None)
-            place_id = self.google_maps_client.place_id_handler(
-                place_name, place_id)
+            place_id = self.google_maps_client.place_id_handler(place_name, place_id)
 
             if not place_id:
                 logging.warning(f'No place ID available for {place_name}.')
-                return
+                result["status"] = "failed"
+                result["error"] = "No place ID available."
+                return result
 
             place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
 
             if place_details_response and 'photos' in place_details_response:
                 # Use the first photo as the cover
                 photo_name = place_details_response['photos'][0]['name']
-                place_photos_response = self.google_maps_client.place_photo_new(
-                    photo_name, '4800', '4800'
-                )
+                place_photos_response = self.google_maps_client.place_photo_new(photo_name, '4800', '4800')
 
                 if place_photos_response:
                     photo_url = place_photos_response['photoUri']
@@ -361,24 +379,42 @@ class AirtableClient:
 
                     if update_result['updated']:
                         logging.info(
-                            f"Updated cover photo for place {place_name}.\n Old Value: {update_result['old_value']}, New Value:{update_result['new_value']}"
+                            f"Updated cover photo for place {place_name}.\nOld Value: {update_result['old_value']}, New Value: {update_result['new_value']}"
                         )
+                        result["status"] = "updated"
+                        result["old_value"] = update_result['old_value']
+                        result["new_value"] = update_result['new_value']
 
                     if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
-                        formatted_place_name = helpers.format_place_name(
-                            place_name)
+                        formatted_place_name = helpers.format_place_name(place_name)
                         photo_file_name = f'{formatted_place_name}-{place_id}-cover.jpg'
                         self.save_photo_locally(photo_file_name, photo_url)
                 else:
-                    logging.warning(
-                        f'Unable to retrieve photos for {place_name}.')
+                    logging.warning(f'Unable to retrieve photos for {place_name}.')
+                    result["status"] = "failed"
+                    result["error"] = "Unable to retrieve photos."
             else:
                 logging.warning(f'No photos available for {place_name}.')
+                result["status"] = "failed"
+                result["error"] = "No photos available."
 
+            return result
+
+        results = {}
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(process_photos_for_place, third_place) for third_place in self.all_third_places]
+            futures = {
+                executor.submit(process_photos_for_place, third_place): third_place['fields']['Place'] 
+                for third_place in self.all_third_places
+            }
             for future in futures:
-                future.result()
+                place_name = futures[future]
+                try:
+                    results[place_name] = future.result()
+                except Exception as e:
+                    logging.error(f"Error processing photos for place {place_name}: {e}")
+                    results[place_name] = {"status": "failed", "error": str(e)}
+
+        return results
 
     def save_photo_locally(self, photo_name, photo_url):
         """

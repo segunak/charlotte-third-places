@@ -186,7 +186,6 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
 
             enriched_places = airtable.enrich_base_data()
             logging.info("Base data enrichment completed. Proceeding to parse and filter updated places.")
-
             actually_updated_places = [
                 {
                     "place_name": place["place_name"],
@@ -208,8 +207,14 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
             else:
                 logging.info("Enrichment process completed successfully. No places required field updates.")
 
-            airtable.get_place_photos(overwrite_cover_photo=True)
-            logging.info(f"Cover photos refreshed successfully for all places.")
+            logging.info("Running cover photo retrieval. The pass/fail of this operation will not impact overall function return values.")
+            photo_results = airtable.get_place_photos(overwrite_cover_photo=True)
+            photo_failures = any(result['status'] == "failed" for result in photo_results.values())
+
+            if photo_failures:
+                logging.error("The cover photo update process encountered failures.")
+            else:
+                logging.info("The cover photo update process completed successfully with no failures.")
 
             return func.HttpResponse(
                 json.dumps({
