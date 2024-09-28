@@ -15,6 +15,8 @@ from airtable_client import AirtableClient
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
 
 # HTTP-triggered function that serves as the client and starts the orchestrator function. This is the entry point for the orchestration, and it's publicly accessible.
+
+
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
 @app.durable_client_input(client_name="client")
@@ -25,22 +27,24 @@ async def http_start(req: func.HttpRequest, client):
     response = client.create_check_status_response(req, instance_id)
     return response
 
-# Orchestrator function. 
+# Orchestrator function.
+
+
 @app.orchestration_trigger(context_name="context")
 def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext):
     try:
         logging.info("get_outscraper_reviews_orchestrator started.")
-        
+
         tasks = []
         airtable = AirtableClient()
         OUTSCRAPER_API_KEY = os.environ['OUTSCRAPER_API_KEY']
         outscraper = ApiClient(api_key=OUTSCRAPER_API_KEY)
-        
+
         activity_input = {
             "airtable": jsonpickle.encode(airtable),
             "outscraper": jsonpickle.encode(outscraper)
         }
-        
+
         for place in airtable.all_third_places:
             activity_input["place"] = place
             tasks.append(context.call_activity("get_outscraper_data_for_place", activity_input))
@@ -58,59 +62,63 @@ def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext)
         context.set_custom_status('Failed')
         return error_response
 
+
 @app.activity_trigger(input_name="activityInput")
 def get_outscraper_data_for_place(activityInput):
-    
+
     place = activityInput['place']
     airtable = jsonpickle.decode(activityInput['airtable'])
     outscraper = jsonpickle.decode(activityInput['outscraper'])
-    
+
     place_name = place['fields']['Place']
-    logging.info(f"Getting reviews for place: {place_name}")     
+    logging.info(f"Getting reviews for place: {place_name}")
 
     place_id = place['fields'].get('Google Maps Place Id', None)
     place_id = airtable.google_maps_client.place_id_handler(place_name, place_id)
-    
+
     if not place_id:
         return helpers.create_place_response('skipped', place_name, None, f"Warning! No place_id found for {place_name}. Skipping getting reviews.")
-    
+
     airtable_record = airtable.get_record(SearchField.PLACE_ID, place_id)
-    
+
     if airtable_record:
         has_reviews = airtable_record['fields'].get('Has Reviews', 'No')
         if has_reviews == 'Yes':
             return helpers.create_place_response('skipped', place_name, None, f"The place {place_name} with place_id {place_id} has a value of Yes in the Has Reviews column of the Airtable Base. To retrieve reviews, change the Has Reviews value to No.")
         else:
-            logging.info(f"Airtable record found for place {place_name} with place_id {place_id} with a 'Has Reviews' column value of 'No' or empty.")
+            logging.info(
+                f"Airtable record found for place {place_name} with place_id {place_id} with a 'Has Reviews' column value of 'No' or empty.")
     else:
-        logging.warning(f"No Airtable record found for place {place_name} with place_id {place_id}. Proceeding to attempt retrieval and saving of Outscraper data, but there's no Airtable record associated with this place to update.")
-        
+        logging.warning(
+            f"No Airtable record found for place {place_name} with place_id {place_id}. Proceeding to attempt retrieval and saving of Outscraper data, but there's no Airtable record associated with this place to update.")
+
     # Reference https://app.outscraper.com/api-docs
     logging.info(f"Getting reviews for {place_name} with place_id {place_id}.")
     outscraper_response = outscraper.google_maps_reviews(
         place_id, limit=1, reviews_limit=250, sort='newest', language='en', ignore_empty=True
     )
-    
+
     if not outscraper_response:
         return helpers.create_place_response('failed', place_name, outscraper_response, f"Error: Outscraper response was invalid for place {place_name} with place_id {place_id}. Please review the logs for more details. No reviews were saved for this place.")
-    
+
     logging.info(f"Reviews successfully retrieved from Outscraper for {place_name}. Proceeding to save them.")
     structured_outscraper_data = helpers.structure_outscraper_data(outscraper_response[0], place_name, place_id)
-    
+
     full_file_path = f"data/outscraper/{place_id}.json"
     final_json_data = json.dumps(structured_outscraper_data, indent=4)
     logging.info(f"Attempting to save reviews to GitHub at path {full_file_path}")
-    
+
     save_succeeded = helpers.save_json_to_github(final_json_data, full_file_path)
-    
-    if save_succeeded: 
+
+    if save_succeeded:
         if airtable_record:
             airtable.update_place_record(airtable_record['id'], 'Has Reviews', 'Yes', overwrite=True)
             logging.info(f"Airtable column 'Has Reviews' updated for {place_name} updated successfully.")
 
         return helpers.create_place_response('succeeded', place_name, f'https://github.com/segunak/charlotte-third-places/blob/master/{full_file_path}', f"Data processed and saved successfully for {place_name}.")
     else:
-        return helpers.create_place_response('failed', place_name, None, f"Failed to save reviews to GitHub for {place_name} despite having got data back from Outscraper. Review the logs for more details.")         
+        return helpers.create_place_response('failed', place_name, None, f"Failed to save reviews to GitHub for {place_name} despite having got data back from Outscraper. Review the logs for more details.")
+
 
 @app.function_name(name="SmokeTest")
 @app.route(route="smoke-test")
@@ -132,7 +140,8 @@ def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
                 mimetype="application/json"
             )
         else:
-            logging.info(f"Incorrect allegiance provided. Expected {expected_value}, but got {req_body.get(expected_key, None)}")
+            logging.info(
+                f"Incorrect allegiance provided. Expected {expected_value}, but got {req_body.get(expected_key, None)}")
             return func.HttpResponse(
                 json.dumps({"message": "Unexpected or incorrect allegiance provided."}),
                 status_code=400,
@@ -147,6 +156,7 @@ def smoke_test(req: func.HttpRequest) -> func.HttpResponse:
             mimetype="application/json"
         )
 
+
 @app.function_name(name="EnrichAirtableBase")
 @app.route(route="enrich-airtable-base")
 def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
@@ -158,8 +168,14 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
     except ValueError:
         logging.error("Failed to parse JSON payload from the request.", exc_info=True)
         return func.HttpResponse(
-            "Invalid request, please send valid JSON. This endpoint requires specific access rights.",
-            status_code=400
+            json.dumps({
+                "success": False,
+                "message": "Invalid request, please send valid JSON.",
+                "data": None,
+                "error": "Failed to parse JSON payload."
+            }),
+            status_code=400,
+            mimetype="application/json"
         )
 
     if req_body.get("TheMotto") == "What is dead may never die, but rises again harder and stronger":
@@ -169,25 +185,64 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
             airtable = AirtableClient()
             logging.info("AirtableClient instance created, starting the base data enrichment process.")
 
-            places_updated = airtable.enrich_base_data()
-            logging.info("Base data enrichment completed. Proceeding to update place photos.")
+            enriched_places = airtable.enrich_base_data()
+            logging.info("Base data enrichment completed. Proceeding to parse and filter updated places.")
+
+            # Return a list of the places with fields that were actually updated
+            actually_updated_places = [
+                {
+                    "place_name": place["place_name"],
+                    "place_id": place["place_id"],
+                    "record_id": place["record_id"],
+                    "field_updates": {
+                        field: updated for field, updated in place.get('field_updates', {}).items() if updated
+                    }
+                }
+                for place in enriched_places if any(place.get('field_updates', {}).values())
+            ]
+
+            if actually_updated_places:
+                logging.info(f"The following places had at least one field updated: {actually_updated_places}")
+            else:
+                logging.info("There weren't any places that had their fields updated.")
 
             airtable.get_place_photos(overwrite_cover_photo=True)
-            logging.info(f"Photos updated successfully. Total places enriched: {len(places_updated)}.")
+            logging.info(f"Cover photos refreshed successfully for all places.")
 
             return func.HttpResponse(
-                f"Airtable base enrichment processed successfully. Total places enriched: {len(places_updated)}. Places enriched: {places_updated}",
-                status_code=200
+                json.dumps({
+                    "success": True,
+                    "message": "Airtable base enrichment processed successfully.",
+                    "data": {
+                        "total_places_enriched": len(actually_updated_places),
+                        "places_enriched": actually_updated_places
+                    },
+                    "error": None
+                }),
+                status_code=200,
+                mimetype="application/json"
             )
         except Exception as ex:
             logging.error(f"Error encountered during the enrichment process: {ex}", exc_info=True)
             return func.HttpResponse(
-                f"Server error occurred during the enrichment process: {ex}",
-                status_code=500
+                json.dumps({
+                    "success": False,
+                    "message": "Server error occurred during the enrichment process.",
+                    "data": None,
+                    "error": str(ex)
+                }),
+                status_code=500,
+                mimetype="application/json"
             )
     else:
         logging.info("Invalid or unauthorized attempt to access the endpoint with incorrect motto.")
         return func.HttpResponse(
-            "Unauthorized access. This endpoint requires a specific authorization motto to proceed.",
-            status_code=403
+            json.dumps({
+                "success": False,
+                "message": "Unauthorized access. This endpoint requires a specific authorization motto to proceed.",
+                "data": None,
+                "error": "Incorrect authorization motto."
+            }),
+            status_code=403,
+            mimetype="application/json"
         )

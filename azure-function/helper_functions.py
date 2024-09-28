@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import dotenv
 import base64
@@ -11,6 +12,10 @@ from azure.storage.filedatalake import DataLakeServiceClient
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 dotenv.load_dotenv()
+
+def normalize_text(text: str) -> str:
+    # Strip leading/trailing spaces, remove newlines, and compress multiple spaces into one
+    return re.sub(r'\s+', ' ', text.strip()) if isinstance(text, str) else text
 
 def format_place_name(input_string: str) -> str:
     """

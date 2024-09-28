@@ -5,6 +5,7 @@ import dotenv
 import logging
 import requests
 import pyairtable
+from typing import Dict, Any
 from pyairtable import utils
 from datetime import datetime
 from collections import Counter
@@ -24,8 +25,7 @@ class AirtableClient:
         logging.basicConfig(level=logging.INFO)
 
         if 'FUNCTIONS_WORKER_RUNTIME' in os.environ:
-            logging.info(
-                'Airtable Client instantiated for Azure Function use.')
+            logging.info('Airtable Client instantiated for Azure Function use.')
         else:
             logging.info('Airtable Client instantiated for local use.')
             dotenv.load_dotenv()
@@ -57,18 +57,52 @@ class AirtableClient:
             place_name = record['fields']['Place']
             current_value = record['fields'].get(field_to_update)
 
-            # Check if the current value is either 'None' or 'Unsure', or if we should overwrite the existing value
-            # with a new one, provided that the new value is not None and different from the current value.
-            if (current_value in (None, 'Unsure')) or (overwrite and update_value is not None and current_value != update_value):
-                self.charlotte_third_places.update(
-                    record_id, {field_to_update: update_value})
+            current_value_normalized = helpers.normalize_text(current_value)
+            update_value_normalized = helpers.normalize_text(update_value)
+
+            # This logic determines whether an update should be made to a field in Airtable based on the current value,
+            # the new value to update, and an 'overwrite' flag. It aims to ensure updates are only performed when necessary
+            # and appropriate, while respecting the 'overwrite' directive. I wrote this to save myself from ever having to
+            # pay Airtable. There's API call limits to their free tier.
+
+            # 1. First, check if the new value to update (`update_value_normalized`) is meaningful.
+            #    - If `update_value_normalized` is `None` or an empty string, there's no point in proceeding,
+            #      since we don't want to update with 'useless' values. So, we skip the update in such cases.
+            # 2. Then, if the `update_value_normalized` is valid (not `None` or an empty string), we proceed to check the following conditions:
+            #    a) Update if the current value (`current_value_normalized`) is either `None` or 'Unsure'.
+            #       - This ensures we update fields that either don't have any value or have uncertain values.
+            #    b) If the `current_value_normalized` is neither `None` nor 'Unsure', we check if the `overwrite` flag is set:
+            #       - If `overwrite` is `True`, we allow updating even when the current value is already present.
+            #       - However, we still verify that the `update_value_normalized` is different from `current_value_normalized`,
+            #         to avoid making redundant updates where the value already matches.
+            #
+            # Overall, this structure ensures that updates are only made:
+            # - When the new value is meaningful (i.e., not `None` or empty),
+            # - When the current value is missing or uncertain (`None` or 'Unsure`), OR
+            # - When `overwrite` is enabled and the new value is different from the existing one.
+            # This approach prevents unnecessary or redundant updates, respects the `overwrite` flag, and ensures
+            # data integrity by only updating with valid, different values.
+
+            if (
+                update_value_normalized not in (None, '') and  # Skip if update value is None or empty string
+                (
+                    current_value_normalized in (None, 'Unsure') or  # Update if the current value is 'None' or 'Unsure'
+                    (
+                        overwrite and  # Respect the overwrite flag
+                        current_value_normalized != update_value_normalized  # Ensure the update value is different
+                    )
+                )
+            ):
+                self.charlotte_third_places.update(record_id, {field_to_update: update_value})
                 logging.info(
-                    f'Field update PROCESSED for {field_to_update} at place {place_name} with new value: {update_value}.\n')
-                time.sleep(3)
+                    f'Successfully updated the field "{field_to_update}" for place "{place_name}". New value: "{update_value}".'
+                )
+                time.sleep(1)
                 return True
             else:
                 logging.info(
-                    f'Field update SKIPPED for field {field_to_update} at place {place_name}. The existing value of {current_value} was NOT overwritten with the provided value of {update_value}.\n')
+                    f'Skipped updating the field "{field_to_update}" for place "{place_name}". Existing value "{current_value}" was retained and not replaced with the provided value "{update_value}".'
+                )
                 return False
         except KeyError as e:
             logging.error(f"Missing expected field in the record. {e}")
@@ -162,15 +196,39 @@ class AirtableClient:
         """
         places_updated = []
 
-        # Define a worker function that will be executed in parallel
         def process_place(third_place):
+            """
+            Processes a single place to fetch metadata and update the place record.
+
+            Args:
+                third_place (dict): The place data from Airtable.
+
+            Returns:
+                dict: A dictionary containing:
+                    - "place_name": The name of the place.
+                    - "place_id": The place Id (from Google Maps) of the place.
+                    - "record_id": The Airtable record Id oft he palce.
+                    - "field_updates": A dictionary with field update statuses.
+                    - "message": Error message, if any.
+            """
+            return_data = {
+                "place_name": "",
+                "place_id": "",
+                "record_id": "",
+                "field_updates": {},
+                "message": ""
+            }
+
             try:
                 place_name = third_place['fields']['Place']
+                return_data['place_name'] = place_name
+
                 record_id = third_place['id']
-                place_id = third_place['fields'].get(
-                    'Google Maps Place Id', None)
-                place_id = self.google_maps_client.place_id_handler(
-                    place_name, place_id)
+                return_data['record_id'] = record_id
+
+                place_id = third_place['fields'].get('Google Maps Place Id', None)
+                place_id = self.google_maps_client.place_id_handler(place_name, place_id)
+                return_data['place_id'] = place_id
 
                 if place_id:
                     place_details_response = self.google_maps_client.place_details_new(
@@ -181,28 +239,26 @@ class AirtableClient:
                         ])
 
                     if place_details_response:
-                        website = self.get_base_url(
-                            place_details_response.get('websiteUri'))
-                        address_components = place_details_response.get(
-                            'addressComponents', [])
-                        neighborhood = next(
-                            (component.get('longText', '').title(
-                            ) for component in address_components if 'neighborhood' in component.get('types', [])), ''
+                        website = self.get_base_url(place_details_response.get('websiteUri'))
+                        address_components = place_details_response.get('addressComponents', [])
+                        neighborhood = next((
+                            component.get('longText', '').title()
+                            for component in address_components if 'neighborhood' in component.get('types', [])
+                        ), ''
                         )
 
                         location = place_details_response.get('location')
-                        parking_situation = self.get_parking_status(
-                            place_details_response)
-                        purchase_required = self.determine_purchase_requirement(
-                            place_details_response)
+                        parking_situation = self.get_parking_status(place_details_response)
+                        purchase_required = self.determine_purchase_requirement(place_details_response)
 
+                        # "Field Name": (field_value, overwrite_field_in_airtable=True/False)
                         field_updates = {
                             'Google Maps Place Id': (place_id, True),
                             'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),
                             'Neighborhood': (neighborhood, False),
                             'Website': (website, True),
                             'Address': (place_details_response.get('formattedAddress'), True),
-                            'Description': (place_details_response.get('editorialSummary', {}).get('text'), False),
+                            'Description': (place_details_response.get('editorialSummary', {}).get('text', ''), False),
                             'Purchase Required': (purchase_required, False),
                             'Parking Situation': (parking_situation, False),
                             'Latitude': (str(location['latitude']), True),
@@ -211,29 +267,35 @@ class AirtableClient:
 
                         for field_name, (field_value, overwrite) in field_updates.items():
                             update_succeeded = self.update_place_record(
-                                record_id, field_name, field_value, overwrite)
+                                record_id,
+                                field_name,
+                                field_value,
+                                overwrite
+                            )
+                            return_data['field_updates'][field_name] = update_succeeded
 
-                        if update_succeeded:
-                            return place_name
+                        return return_data
                     else:
-                        logging.warning(
-                            f'The record for place {place_name} cannot be updated. Unable to generate a valid place details request.')
+                        logging.warning(f'Failed to fetch place details for {place_name}.')
+                        return_data["message"] = "Failed to fetch place details from Google Maps."
                 else:
-                    logging.warning(
-                        f'The record for place {place_name} cannot be updated. Unable to find a place_id.')
+                    logging.warning(f'No place ID found for {place_name}.')
+                    return_data["message"] = "No valid place ID found."
 
             except Exception as e:
                 logging.error(f"Error processing place {place_name}: {e}")
-                return None
+                return_data["message"] = f"Error: {str(e)}"
 
+            return return_data
+
+        # Run the enrichment process in parallel for all places
         with ThreadPoolExecutor(max_workers=10) as executor:
-            futures = [executor.submit(process_place, third_place)
-                       for third_place in self.all_third_places]
+            futures = [executor.submit(process_place, third_place) for third_place in self.all_third_places]
             for future in as_completed(futures):
                 result = future.result()
-                if result:
-                    places_updated.append(result)
+                places_updated.append(result)
 
+        # Return the list of places with update results and messages
         return places_updated
 
     def get_record(self, search_field: SearchField, search_value: str) -> dict:
