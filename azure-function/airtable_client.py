@@ -38,7 +38,7 @@ class AirtableClient:
         self.google_maps_client = GoogleMapsClient()
         self.all_third_places = self.charlotte_third_places.all(sort=["Place"])
 
-    def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> bool:
+    def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> Dict[str, Any]:
         """
         Attempts to update a record in the Airtable database based on given parameters. 
         The function considers whether the field should be overwritten if it already exists.
@@ -60,10 +60,13 @@ class AirtableClient:
             current_value_normalized = helpers.normalize_text(current_value)
             update_value_normalized = helpers.normalize_text(update_value)
 
-            # This logic determines whether an update should be made to a field in Airtable based on the current value,
-            # the new value to update, and an 'overwrite' flag. It aims to ensure updates are only performed when necessary
-            # and appropriate, while respecting the 'overwrite' directive. I wrote this to save myself from ever having to
-            # pay Airtable. There's API call limits to their free tier.
+            result = {
+                "updated": False,
+                "field_name": field_to_update,
+                "record_id": record_id,
+                "old_value": current_value,
+                "new_value": update_value
+            }
 
             # 1. First, check if the new value to update (`update_value_normalized`) is meaningful.
             #    - If `update_value_normalized` is `None` or an empty string, there's no point in proceeding,
@@ -75,14 +78,6 @@ class AirtableClient:
             #       - If `overwrite` is `True`, we allow updating even when the current value is already present.
             #       - However, we still verify that the `update_value_normalized` is different from `current_value_normalized`,
             #         to avoid making redundant updates where the value already matches.
-            #
-            # Overall, this structure ensures that updates are only made:
-            # - When the new value is meaningful (i.e., not `None` or empty),
-            # - When the current value is missing or uncertain (`None` or 'Unsure`), OR
-            # - When `overwrite` is enabled and the new value is different from the existing one.
-            # This approach prevents unnecessary or redundant updates, respects the `overwrite` flag, and ensures
-            # data integrity by only updating with valid, different values.
-
             if (
                 update_value_normalized not in (None, '') and  # Skip if update value is None or empty string
                 (
@@ -98,18 +93,22 @@ class AirtableClient:
                     f'Successfully updated the field "{field_to_update}" for place "{place_name}". New value: "{update_value}".'
                 )
                 time.sleep(1)
-                return True
+                result["updated"] = True
             else:
                 logging.info(
                     f'Skipped updating the field "{field_to_update}" for place "{place_name}". Existing value "{current_value}" was retained and not replaced with the provided value "{update_value}".'
                 )
-                return False
-        except KeyError as e:
-            logging.error(f"Missing expected field in the record. {e}")
-            return False
+
+            return result
         except Exception as e:
             logging.error(f"Unexpected error: {e}")
-            return False
+            return {
+                "updated": False,
+                "field_name": field_to_update,
+                "record_id": record_id,
+                "old_value": None,
+                "new_value": None
+            }
 
     def get_base_url(self, url: str) -> str:
         """
@@ -266,13 +265,18 @@ class AirtableClient:
                         }
 
                         for field_name, (field_value, overwrite) in field_updates.items():
-                            update_succeeded = self.update_place_record(
+                            update_result = self.update_place_record(
                                 record_id,
                                 field_name,
                                 field_value,
                                 overwrite
                             )
-                            return_data['field_updates'][field_name] = update_succeeded
+
+                            return_data['field_updates'][field_name] = {
+                                "updated": update_result["updated"],
+                                "old_value": update_result["old_value"],
+                                "new_value": update_result["new_value"]
+                            }
 
                         return return_data
                     else:
@@ -319,58 +323,85 @@ class AirtableClient:
                 f"An error occurred while retrieving records: {str(e)}")
             return None
 
-    def get_place_photos(self, overwrite_cover_photo=False):
+    def get_place_photos(self, overwrite_cover_photo=False) -> Dict[str, Dict[str, str]]:
         """
         Retrieves and saves cover photos for each place in the Charlotte Third Places database using the Google Maps Place Photos API.
         This method uses parallel execution to improve performance.
-        """
 
-        def process_photos_for_place(third_place):
+        Returns:
+            A dictionary where each key is the place name, and the value is another dictionary containing:
+            - 'updated': Whether the cover photo was updated (True/False).
+            - 'old_value': The old cover photo URL (if any).
+            - 'new_value': The new cover photo URL (if updated).
+            - 'message': Any warnings or error messages encountered.
+        """
+        results = {}
+
+        def process_photos_for_place(third_place) -> Dict[str, str]:
             """
             Helper function to process photos for a single place. Defined inside to access variables from outer scope.
             """
             record_id = third_place['id']
             place_name = third_place['fields']['Place']
             place_id = third_place['fields'].get('Google Maps Place Id', None)
-            place_id = self.google_maps_client.place_id_handler(
-                place_name, place_id)
+            result = {
+                'updated': False,
+                'old_value': None,
+                'new_value': None,
+                'message': ''
+            }
+
+            place_id = self.google_maps_client.place_id_handler(place_name, place_id)
 
             if not place_id:
-                logging.warning(f'No place ID available for {place_name}.')
-                return
+                result['message'] = f'No place ID available for {place_name}.'
+                logging.warning(result['message'])
+                return result
 
-            place_details_response = self.google_maps_client.place_details_new(place_id, [
-                                                                               'photos'])
+            place_details_response = self.google_maps_client.place_details_new(place_id, ['photos'])
 
             if place_details_response and 'photos' in place_details_response:
                 # Use the first photo as the cover
                 photo_name = place_details_response['photos'][0]['name']
-                place_photos_response = self.google_maps_client.place_photo_new(
-                    photo_name, '4800', '4800')
+                place_photos_response = self.google_maps_client.place_photo_new(photo_name, '4800', '4800')
 
                 if place_photos_response:
                     photo_url = place_photos_response['photoUri']
-                    self.update_place_record(
-                        record_id, 'Cover Photo URL', photo_url, overwrite_cover_photo)
+                    update_result = self.update_place_record(
+                        record_id, 'Cover Photo URL', photo_url, overwrite_cover_photo
+                    )
+
+                    result['updated'] = update_result['updated']
+                    result['old_value'] = update_result['old_value']
+                    result['new_value'] = update_result['new_value']
+
+                    if update_result['updated']:
+                        logging.info(
+                            f"Updated cover photo for place {place_name}. Old Value: {update_result['old_value']}, New Value:{update_result['new_value']}"
+                        )
+                    else:
+                        result['message'] = f'Cover photo for {place_name} was not updated.'
 
                     if 'FUNCTIONS_WORKER_RUNTIME' not in os.environ:
-                        formatted_place_name = helpers.format_place_name(
-                            place_name)
+                        formatted_place_name = helpers.format_place_name(place_name)
                         photo_file_name = f'{formatted_place_name}-{place_id}-cover.jpg'
                         self.save_photo_locally(photo_file_name, photo_url)
                 else:
-                    logging.warning(
-                        f'Unable to retrieve photos for {place_name}.')
+                    result['message'] = f'Unable to retrieve photos for {place_name}.'
+                    logging.warning(result['message'])
             else:
-                logging.warning(f'No photos available for {place_name}.')
+                result['message'] = f'No photos available for {place_name}.'
+                logging.warning(result['message'])
+
+            return result
 
         with ThreadPoolExecutor(max_workers=10) as executor:
-            # List of future objects
-            futures = [executor.submit(process_photos_for_place, third_place)
-                       for third_place in self.all_third_places]
-            # Waiting for all futures to complete execution
+            futures = {executor.submit(process_photos_for_place, third_place): third_place['fields']['Place'] for third_place in self.all_third_places}
             for future in futures:
-                future.result()  # Raises exceptions if any occurred during execution
+                place_name = futures[future]
+                results[place_name] = future.result()
+
+        return results
 
     def save_photo_locally(self, photo_name, photo_url):
         """

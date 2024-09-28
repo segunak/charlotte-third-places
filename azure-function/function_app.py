@@ -14,20 +14,19 @@ from airtable_client import AirtableClient
 
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-# HTTP-triggered function that serves as the client and starts the orchestrator function. This is the entry point for the orchestration, and it's publicly accessible.
-
 
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
 @app.durable_client_input(client_name="client")
 async def http_start(req: func.HttpRequest, client):
+    """
+    HTTP-triggered function that serves as the client and starts the orchestrator function. This is the entry point for the orchestration, and it's publicly accessible.
+    """
     function_name = req.route_params.get('functionName')
     instance_id = await client.start_new(function_name)
     # This creates and sends a response that includes a URL to query the orchestration status
     response = client.create_check_status_response(req, instance_id)
     return response
-
-# Orchestrator function.
 
 
 @app.orchestration_trigger(context_name="context")
@@ -188,23 +187,26 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
             enriched_places = airtable.enrich_base_data()
             logging.info("Base data enrichment completed. Proceeding to parse and filter updated places.")
 
-            # Return a list of the places with fields that were actually updated
             actually_updated_places = [
                 {
                     "place_name": place["place_name"],
                     "place_id": place["place_id"],
                     "record_id": place["record_id"],
                     "field_updates": {
-                        field: updated for field, updated in place.get('field_updates', {}).items() if updated
+                        field: {
+                            "old_value": updates["old_value"],
+                            "new_value": updates["new_value"]
+                        }
+                        for field, updates in place.get('field_updates', {}).items() if updates["updated"]
                     }
                 }
-                for place in enriched_places if any(place.get('field_updates', {}).values())
+                for place in enriched_places if any(updates["updated"] for updates in place.get('field_updates', {}).values())
             ]
 
             if actually_updated_places:
-                logging.info(f"The following places had at least one field updated: {actually_updated_places}")
+                logging.info(f"Enrichment process completed successfully. The following places had at least one field updated: {actually_updated_places}")
             else:
-                logging.info("There weren't any places that had their fields updated.")
+                logging.info("Enrichment process completed successfully. No places required field updates.")
 
             airtable.get_place_photos(overwrite_cover_photo=True)
             logging.info(f"Cover photos refreshed successfully for all places.")

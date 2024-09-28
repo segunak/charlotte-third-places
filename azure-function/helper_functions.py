@@ -5,6 +5,7 @@ import dotenv
 import base64
 import logging
 import requests
+import unicodedata
 from datetime import datetime
 from unidecode import unidecode
 from typing import Iterable, Callable, Any, List
@@ -13,9 +14,32 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 dotenv.load_dotenv()
 
+
 def normalize_text(text: str) -> str:
-    # Strip leading/trailing spaces, remove newlines, and compress multiple spaces into one
-    return re.sub(r'\s+', ' ', text.strip()) if isinstance(text, str) else text
+    """
+    Normalize the text to ensure consistent encoding, formatting, and case.
+    This function will:
+    1. Normalize Unicode characters to NFC form (Normalization Form C).
+    2. Strip leading/trailing spaces.
+    3. Remove newlines.
+    4. Compress multiple spaces into one.
+    5. Convert the text to lowercase for case-insensitive comparison.
+
+    Args:
+        text (str): The input text to normalize.
+
+    Returns:
+        str: The normalized string.
+    """
+    if isinstance(text, str):
+        # Step 1: Normalize the text using NFC (Normalization Form C)
+        text = unicodedata.normalize('NFC', text)
+
+        # Step 2: Strip leading/trailing spaces and normalize whitespace
+        text = re.sub(r'\s+', ' ', text.strip().lower())
+
+    return text
+
 
 def format_place_name(input_string: str) -> str:
     """
@@ -49,6 +73,7 @@ def format_place_name(input_string: str) -> str:
 
     return formatted_string
 
+
 def save_reviews_locally(airtable_place_name: str, reviews_output: dict):
     """
     Saves the provided reviews data into a JSON file within the 'reviews' directory.
@@ -69,7 +94,8 @@ def save_reviews_locally(airtable_place_name: str, reviews_output: dict):
     # Write the data to a JSON file
     with open(review_file_path, "w", encoding="utf-8") as write_file:
         json.dump(reviews_output, write_file, ensure_ascii=False, indent=4)
-        
+
+
 def save_reviews_azure(json_data, review_file_name):
     datalake_connection_string = os.environ['AzureWebJobsStorage']
     datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
@@ -78,9 +104,10 @@ def save_reviews_azure(json_data, review_file_name):
     file_client = directory_client.get_file_client(review_file_name)
     file_client.upload_data(data=json_data, overwrite=True)
 
+
 def save_json_to_github(json_data, full_file_path):
     """ Saves the given JSON data to the specified file path in the GitHub repository.
-    
+
     full_file_path should include the folder and file name, no leading slash. For example
     "data/reviews/review-file.json"
     """
@@ -92,7 +119,7 @@ def save_json_to_github(json_data, full_file_path):
         }
         repo_name = "segunak/charlotte-third-places"
         branch = "master"
-        
+
         # Check if the file exists to get the SHA
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
         url_get = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}?ref={branch}"
@@ -116,11 +143,12 @@ def save_json_to_github(json_data, full_file_path):
 
         # Make the PUT request to create/update the file
         put_response = requests.put(url_put, headers=headers, data=json.dumps(data))
-        return put_response.status_code in {200, 201} 
+        return put_response.status_code in {200, 201}
 
     except Exception as e:
         logging.error(f"Failed to save to GitHub: {str(e)}")
         return False
+
 
 def setup_logging(self):
     """Set up logging to file and console in the directory where the class file is located."""
@@ -134,7 +162,7 @@ def setup_logging(self):
         print("Log directory created at:", log_directory)
     else:
         print("Log directory already exists:", log_directory)
-    
+
     # Define the filename using the current time
     class_name = self.__class__.__name__.lower()
     current_time = datetime.now().strftime("%Y-%m-%d-%H-%M-%S")
@@ -151,10 +179,11 @@ def setup_logging(self):
     # Log that setup is complete
     logging.info("Logging setup complete - logging to console and file.")
 
+
 def create_place_response(operation_status, target_place_name, http_response_data, operation_message):
     """
     Constructs a structured response dictionary with details about an operation performed on a place.
-    
+
     This function logs the operation message and returns a dictionary that encapsulates the status of
     the operation, the name of the place involved, the response data obtained (if any), and a descriptive
     message about the outcome.
@@ -175,7 +204,7 @@ def create_place_response(operation_status, target_place_name, http_response_dat
         logging.warning(operation_message)
     else:
         logging.info(operation_message)
-    
+
     return {
         'status': operation_status,
         'place_name': target_place_name,
@@ -183,10 +212,11 @@ def create_place_response(operation_status, target_place_name, http_response_dat
         'message': operation_message
     }
 
+
 def structure_outscraper_data(outscraper_response, place_name, place_id):
     """
     Creates a structured dictionary containing detailed review information for a specific place.
-    
+
     This function transforms raw review data retrieved from the Outscraper API into a structured
     dictionary that is easier to handle and display in client applications or to store in databases.
 
@@ -203,7 +233,7 @@ def structure_outscraper_data(outscraper_response, place_name, place_id):
     they contain textual content, ensuring that only meaningful data is included in the final dictionary.
     """
     logging.info("Started structure_outscraper_data")
-    
+
     structured_data = {
         "place_name": place_name,
         "place_id": place_id,
@@ -225,9 +255,9 @@ def structure_outscraper_data(outscraper_response, place_name, place_id):
             for review in outscraper_response['reviews_data'] if review.get('review_text')
         ]
     }
-    
+
     logging.info("Completed structure_outscraper_data")
-    
+
     return structured_data
 
 
