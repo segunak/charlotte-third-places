@@ -176,7 +176,7 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
             logging.info(f"Photos updated successfully. Total places enriched: {len(places_updated)}.")
 
             return func.HttpResponse(
-                f"Airtable base enrichment processed successfully. Places updated: {places_updated}",
+                f"Airtable base enrichment processed successfully. Total places enriched: {len(places_updated)}. Places enriched: {places_updated}",
                 status_code=200
             )
         except Exception as ex:

@@ -183,6 +183,7 @@ class GoogleMapsClient:
         Checks if a place ID exists in the details retrieved from Google Maps. Place IDs can change 
         over time, so it's recommended to periodically refresh them. This operation incurs no cost 
         against the Places API.
+
         Reference: https://developers.google.com/maps/documentation/places/web-service/place-id#refresh-id
 
         Args:
