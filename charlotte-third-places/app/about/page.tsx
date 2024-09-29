@@ -134,7 +134,7 @@ const frequentlyAskedQuestions = [
                                 </p>
                             </div>
                         </AccordionContent>
-                    </AccordionItem>    
+                    </AccordionItem>
 
                     <AccordionItem value="description">
                         <AccordionTrigger>Description</AccordionTrigger>
@@ -257,7 +257,11 @@ export default function AboutPage() {
                         <li>Read.</li>
                         <li>Write.</li>
                         <li>Chill.</li>
-                        <li>Watch anime.</li>
+                        <li>
+                            <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">
+                                Watch anime.
+                            </ResponsiveLink>
+                        </li>
                         <li>Make friends.</li>
                         <li>Hang out with friends.</li>
                         <li>Hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie).</li>
