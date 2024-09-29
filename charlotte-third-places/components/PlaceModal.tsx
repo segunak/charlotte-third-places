@@ -23,6 +23,32 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
         }
     }, []);
 
+    const handleShare = async () => {
+        const shareData = {
+            title: place?.name,
+            text: `Check out this place on Charlotte Third Places: ${place?.name}`,
+            url: `${window.location.origin}/places/${place.airtableRecordId}`,
+        };
+
+        // Check if Web Share API is available
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+                console.log('Successfully shared');
+            } catch (error) {
+                console.error('Error sharing', error);
+            }
+        } else {
+            // Fallback to copying the link to the clipboard
+            try {
+                await navigator.clipboard.writeText(shareData.url);
+                alert("Link copied to clipboard!");
+            } catch (error) {
+                console.error("Failed to copy the link to clipboard", error);
+            }
+        }
+    };
+
     return (
         <Dialog open onOpenChange={onClose}>
             <DialogContent
@@ -76,8 +102,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Curator's Comments:</strong> {place?.comments || "None."}</p>
                 </div>
 
-                <div className="flex justify-end mt-4">
-                    <Button onClick={onClose}>Close</Button>
+                <div className="flex justify-end mt-4 space-x-4">
+                    <Button className="!font-bold" onClick={handleShare}>Share</Button>
+                    <Button className="!font-bold" onClick={onClose}>Close</Button>
                 </div>
             </DialogContent>
         </Dialog>
