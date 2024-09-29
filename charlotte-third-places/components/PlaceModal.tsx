@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator"
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import Link from "next/link";
 
 interface PlaceModalProps {
     place: Place;
@@ -39,7 +40,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-
                 <div className="space-y-3">
                     <p>
                         <strong>Website:</strong>{" "}
@@ -50,6 +50,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                         )}
                     </p>
                     <p>
+                        <strong>Site Profile:</strong>{" "}
+                        <Link href={`/places/${place.airtableRecordId}`} className="custom-link" passHref>
+                            Visit Profile
+                        </Link>
+                    </p>
+                    <p>
                         <strong>Google Maps Profile:</strong>{" "}
                         {place?.googleMapsProfileURL ? (
                             <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
@@ -57,8 +63,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                             "No profile available."
                         )}
                     </p>
-                    <p><strong>Added To Site On:</strong> {place?.createdDate}</p>
-                    <p><strong>Last Updated On:</strong> {place?.lastModifiedDate}</p>
                     <Separator />
                     <p><strong>Address:</strong> {place?.address}</p>
                     <p><strong>Neighborhood:</strong> {place?.neighborhood}</p>

@@ -38,30 +38,6 @@ const frequentlyAskedQuestions = [
         )
     },
     {
-        title: "Can I submit places for addition to the site?",
-        content: (
-            <div className="space-y-3">
-                Absolutely! This site thrives on community input. Whether it's suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I'd love to hear from you. Use the <Link className="custom-link" href="/contribute">Contribute</Link> page to reach out.
-            </div>
-        )
-    },
-    {
-        title: "I submitted a place and haven't seen it added yet. What should I do?",
-        content: (
-            <div className="space-y-3">
-                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life, stuff, and <ResponsiveLink href="https://www.urbandictionary.com/define.php?term=stuff%20and%20thangs">thangs</ResponsiveLink>. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places in the city. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique. I'm not particularly enthused about being the gatekeeper of places though. Maybe one day I'll work out a community voting mechanism, although that might be more effort than its worth. However, the code for this is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">public</ResponsiveLink>, so feel free to write new features and submit a pull request if you're so inclined.
-            </div>
-        )
-    },
-    {
-        title: "I see some information about a place that's wrong. How can I get it updated?",
-        content: (
-            <div className="space-y-3">
-                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections. I'll do my best to process corrections in a timely manner.
-            </div>
-        )
-    },
-    {
         title: "Where does the data for places come from?",
         content: (
             <div className="space-y-3">
@@ -83,10 +59,31 @@ const frequentlyAskedQuestions = [
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="size">
-                        <AccordionTrigger>Size</AccordionTrigger>
+                    <AccordionItem value="website">
+                        <AccordionTrigger>Website</AccordionTrigger>
                         <AccordionContent>
-                            This one is all me. Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
+                            Pulled directly from Google Maps, if the business lists one.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="added">
+                        <AccordionTrigger>Added to List On</AccordionTrigger>
+                        <AccordionContent>
+                            The date when the place was first added to the list behind the website. This may not reflect when the place became publicly visible on the site, as the website launched in September 2024. However, the data itself existed as part of my personal list long before that.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="modified">
+                        <AccordionTrigger>Last Modified On</AccordionTrigger>
+                        <AccordionContent>
+                            This is the date when the details of the place were last modified. It reflects the most recent change to any information, either from Google Maps or custom fields in the database. If nothing about the place has changed, this date won't update—there's no need to refresh the data unless something new or different is found. So, think of this as "the last time something important changed about the place." Unnecessary updates are avoided to reduce network traffic and ensure accuracy.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="address">
+                        <AccordionTrigger>Address</AccordionTrigger>
+                        <AccordionContent>
+                            Pulled directly from Google Maps.
                         </AccordionContent>
                     </AccordionItem>
 
@@ -97,10 +94,10 @@ const frequentlyAskedQuestions = [
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="address">
-                        <AccordionTrigger>Address</AccordionTrigger>
+                    <AccordionItem value="size">
+                        <AccordionTrigger>Size</AccordionTrigger>
                         <AccordionContent>
-                            100% pulled from Google Maps.
+                            This one is all me. Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
                         </AccordionContent>
                     </AccordionItem>
 
@@ -125,34 +122,6 @@ const frequentlyAskedQuestions = [
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="description">
-                        <AccordionTrigger>Description</AccordionTrigger>
-                        <AccordionContent>
-                            Comes directly from Google Maps. This is how a place describes itself. The value here comes from what the business put on their own Google Maps profile. If a place doesn't have a description, I use a default: "A third place in the Charlotte, North Carolina area."
-                        </AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="website">
-                        <AccordionTrigger>Website</AccordionTrigger>
-                        <AccordionContent>
-                            Pulled straight from Google Maps, if the business lists one.
-                        </AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="profile">
-                        <AccordionTrigger>Google Maps Profile</AccordionTrigger>
-                        <AccordionContent>
-                            A direct link to the place's profile, pulled from their Google Maps listing.
-                        </AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="comments">
-                        <AccordionTrigger>Curator's Comments</AccordionTrigger>
-                        <AccordionContent>
-                            These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
-                        </AccordionContent>
-                    </AccordionItem>
-
                     <AccordionItem value="cinnamon-rolls">
                         <AccordionTrigger>Has Cinnamon Rolls</AccordionTrigger>
                         <AccordionContent>
@@ -165,6 +134,20 @@ const frequentlyAskedQuestions = [
                                 </p>
                             </div>
                         </AccordionContent>
+                    </AccordionItem>    
+
+                    <AccordionItem value="description">
+                        <AccordionTrigger>Description</AccordionTrigger>
+                        <AccordionContent>
+                            Comes directly from Google Maps. This is how a place describes itself. The value here comes from what the business put on their own Google Maps profile. If a place doesn't have a description, I use a default: "A third place in the Charlotte, North Carolina area."
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="comments">
+                        <AccordionTrigger>Curator's Comments</AccordionTrigger>
+                        <AccordionContent>
+                            These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
+                        </AccordionContent>
                     </AccordionItem>
                 </Accordion>
             </div>
@@ -175,6 +158,30 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 Every few hours, thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">incremental static regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>. The data really doesn't change that often since we're dealing with physical places. The refresh process has "check if anything's changed from the Google Maps profile of the place, if not, end script, else, update" logic.
+            </div>
+        )
+    },
+    {
+        title: "Can I submit places for addition to the site?",
+        content: (
+            <div className="space-y-3">
+                Absolutely! This site thrives on community input. Whether it's suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I'd love to hear from you. Use the <Link className="custom-link" href="/contribute">Contribute</Link> page to reach out.
+            </div>
+        )
+    },
+    {
+        title: "I submitted a place and haven't seen it added yet. What should I do?",
+        content: (
+            <div className="space-y-3">
+                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life, stuff, and <ResponsiveLink href="https://www.urbandictionary.com/define.php?term=stuff%20and%20thangs">thangs</ResponsiveLink>. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places in the city. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique. I'm not particularly enthused about being the gatekeeper of places though. Maybe one day I'll work out a community voting mechanism, although that might be more effort than its worth. However, the code for this is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">public</ResponsiveLink>, so feel free to write new features and submit a pull request if you're so inclined.
+            </div>
+        )
+    },
+    {
+        title: "I see some information about a place that's wrong. How can I get it updated?",
+        content: (
+            <div className="space-y-3">
+                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections. I'll do my best to process corrections in a timely manner.
             </div>
         )
     },
