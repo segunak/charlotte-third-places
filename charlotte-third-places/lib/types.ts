@@ -21,4 +21,6 @@ export type Place = {
     comments: string;
     latitude: number;
     longitude: number;
+    createdDate: string;
+    lastModifiedDate: string;
 }

@@ -74,6 +74,15 @@ const downloadImage = async (coverPhotoURL: string, airtableRecordId: string, pl
     return localCoverPhotoURL;
 };
 
+function formatDate(dateString: string): string {
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).format(date);
+}
+
 export async function getPlaces(): Promise<Place[]> {
     const records = await base('Charlotte Third Places').select({ view: 'Production' }).all();
 
@@ -107,7 +116,9 @@ export async function getPlaces(): Promise<Place[]> {
                 localCoverPhotoURL: localCoverPhotoURL,
                 comments: record.get('Comments') as string,
                 latitude: record.get('Latitude') as number,
-                longitude: record.get('Longitude') as number
+                longitude: record.get('Longitude') as number,
+                createdDate: formatDate(record.get('Created Time') as string) as string,
+                lastModifiedDate: formatDate(record.get('Last Modified Time') as string) as string
             };
         })
     );

@@ -3,6 +3,7 @@
 import { Place } from "@/lib/types";
 import { FC, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator"
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
@@ -37,6 +38,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogTitle>{place?.name}</DialogTitle>
                     <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
                 </DialogHeader>
+                <Separator />
 
                 <div className="space-y-3">
                     <p>
@@ -55,6 +57,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                             "No profile available."
                         )}
                     </p>
+                    <p><strong>Added To Site On:</strong> {place?.createdDate}</p>
+                    <p><strong>Last Updated On:</strong> {place?.lastModifiedDate}</p>
+                    <Separator />
                     <p><strong>Address:</strong> {place?.address}</p>
                     <p><strong>Neighborhood:</strong> {place?.neighborhood}</p>
                     <p><strong>Size:</strong> {place?.size}</p>
@@ -62,9 +67,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Parking Situation:</strong> {place?.parkingSituation}</p>
                     <p><strong>Free Wifi:</strong> {place?.freeWifi}</p>
                     <p><strong>Has Cinnamon Rolls:</strong> {place?.hasCinnamonRolls}</p>
+                    <Separator />
                     <p><strong>Description:</strong> {place?.description || "A third place in the Charlotte, North Carolina area."}</p>
                     <p><strong>Curator's Comments:</strong> {place?.comments || "None."}</p>
                 </div>
+
                 <div className="flex justify-end mt-4">
                     <Button onClick={onClose}>Close</Button>
                 </div>
