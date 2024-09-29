@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { Place } from "@/lib/types";
 import { getPlaces } from "@/lib/data-services";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { ShareButton } from "@/components/ShareButton";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import Link from "next/link";
 
 // `revalidate` defines the interval in seconds during which the cached data is considered valid.
 // After this interval, Next.js will invalidate the cache and fetch fresh data.
@@ -44,15 +45,19 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
     // If no place is found with the given `id`, return a "Place not found" message.
     if (!place) return <div>Place not found</div>;
 
+    const placeUrl = `https://www.charlottethirdplaces.com/places/${place.airtableRecordId}`;
+
     return (
         <div className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
             <h1 className="text-2xl sm:text-3xl font-bold text-center leading-tight border-b pb-3">
                 {place.name}
             </h1>
             <Card className="border border-gray-300 shadow-sm">
-                <CardHeader></CardHeader>
-                <CardContent>
+                <CardContent className="mt-4">
                     <div className="space-y-3">
+                        <p><strong>Added to List On:</strong> {place?.createdDate}</p>
+                        <p><strong>Last Modified On:</strong> {place?.lastModifiedDate}</p>
+                        <Separator />
                         <p><strong>Type:</strong> {place?.type?.join(", ")}</p>
                         <p>
                             <strong>Website:</strong>{" "}
@@ -71,9 +76,6 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                             )}
                         </p>
                         <Separator />
-                        <p><strong>Added to List On:</strong> {place?.createdDate}</p>
-                        <p><strong>Last Modified On:</strong> {place?.lastModifiedDate}</p>
-                        <Separator />
                         <p><strong>Address:</strong> {place?.address}</p>
                         <p><strong>Neighborhood:</strong> {place?.neighborhood}</p>
                         <p><strong>Size:</strong> {place?.size}</p>
@@ -88,12 +90,13 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                 </CardContent>
             </Card>
 
-            <div className="flex justify-end mt-4">
-                <Link href="/">
-                    <Button >
-                        Back to Places
-                    </Button>
-                </Link>
+            <div className="flex justify-center space-x-4 mt-4">
+                <ShareButton
+                    placeName={place?.name}
+                    url={placeUrl} 
+                    className="!font-bold text-lg" 
+                    size="lg" 
+                />
             </div>
         </div >
     );

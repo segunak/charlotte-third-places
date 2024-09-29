@@ -11,6 +11,28 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 try rgb(250, 250, 250)
 
+## Place Types
+
+```txt
+Coffee Shop
+Café
+Library
+Restaurant
+Market Hall
+Bakery
+Bookstore
+Brewery
+Grocery Store
+Game Store
+Coworking Space
+Community Center
+Music Venue
+Art Gallery
+Museum
+Garden
+Other
+```
+
 ## Random Information
 
 A PlaceCard component where you pass in the Airtable record Id, and with that, it returns the full formed card for that place. IT uses cached data to accomplish this, no need to call the Airtable API.
