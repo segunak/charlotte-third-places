@@ -94,8 +94,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                 <ShareButton
                     placeName={place?.name}
                     url={placeUrl} 
-                    className="!font-bold text-lg" 
-                    size="lg" 
+                    className="!font-bold"
                 />
             </div>
         </div >
