@@ -6,7 +6,7 @@ import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
 import { ScrollToTop } from "@/components/ScrollToTop";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // `revalidate` defines the interval in seconds during which the cached data is considered valid.
 // After this interval, Next.js will invalidate the cache and fetch fresh data.
@@ -55,7 +55,10 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                 {place.name}
             </h1>
             <Card className="border border-gray-300 shadow-sm">
-                <CardContent className="mt-4">
+                <CardHeader>
+                    <CardTitle></CardTitle>
+                </CardHeader>
+                <CardContent className="">
                     <div className="space-y-3">
                         <p><strong>Added to List On:</strong> {place?.createdDate}</p>
                         <p><strong>Last Modified On:</strong> {place?.lastModifiedDate}</p>
@@ -92,13 +95,13 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                 </CardContent>
             </Card>
 
-            {/* <div className="flex justify-center space-x-4 mt-4">
+            <div className="flex justify-center space-x-4 mt-4">
                 <ShareButton
                     placeName={place?.name}
-                    url={placeUrl} 
+                    url={placeUrl}
                     className="!font-bold"
                 />
-            </div> */}
+            </div>
         </div >
     );
 }
