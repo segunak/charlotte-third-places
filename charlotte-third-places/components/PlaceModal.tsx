@@ -79,7 +79,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Curator's Comments:</strong> {place?.comments || "None."}</p>
                 </div>
 
-                <div className="flex justify-end mt-4 space-x-4">
+                <div className="flex justify-center mt-6 space-x-4">
                     <ShareButton
                         placeName={place?.name}
                         className="!font-bold"
