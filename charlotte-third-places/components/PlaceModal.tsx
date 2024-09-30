@@ -54,7 +54,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     </p>
                     <p>
                         <strong>Site Profile:</strong>{" "}
-                        <Link href={`/places/${place.airtableRecordId}`} className="custom-link" passHref>
+                        <Link href={`/places/${place.airtableRecordId}`} scroll={false} className="custom-link">
                             Visit Profile
                         </Link>
                     </p>
