@@ -1,5 +1,6 @@
 import React from 'react';
 import { Place } from "@/lib/types";
+import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from "@/lib/data-services";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
@@ -8,8 +9,7 @@ import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 // `revalidate` defines the interval in seconds during which the cached data is considered valid.
 // After this interval, Next.js will invalidate the cache and fetch fresh data.
-// Here, we set it to 12 hours (43200 seconds).
-export const revalidate = 43200;
+export const revalidate = REVALIDATE_TIME;
 
 // `dynamicParams` is a configuration for Next.js to handle paths that weren't pre-rendered at build time.
 // If set to `true`, Next.js will generate pages on-demand for paths not generated during the build.

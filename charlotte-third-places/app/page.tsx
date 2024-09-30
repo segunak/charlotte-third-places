@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
 import { FilterDialog } from '@/components/FilterDialog';
@@ -9,7 +10,7 @@ import { ResponsiveLink } from "@/components/ResponsiveLink";
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
 // Airtable has API call limits. Can't have every visit pulling new data.
-export const revalidate = 43200; // Refresh data from Airtable every 12 hours.
+export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
