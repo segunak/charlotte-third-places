@@ -39,14 +39,14 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                 }}
             >
                 <DialogHeader className="mt-5">
-                    <DialogTitle>{place?.name}</DialogTitle>
-                    <DialogDescription>{place?.type?.join(", ")}</DialogDescription>
+                    <DialogTitle>{place.name}</DialogTitle>
+                    <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
                 <div className="space-y-3">
                     <p>
                         <strong>Website:</strong>{" "}
-                        {place?.website ? (
+                        {place.website ? (
                             <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
                         ) : (
                             "No website available."
@@ -60,28 +60,28 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     </p>
                     <p>
                         <strong>Google Maps Profile:</strong>{" "}
-                        {place?.googleMapsProfileURL ? (
+                        {place.googleMapsProfileURL ? (
                             <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
                         ) : (
                             "No profile available."
                         )}
                     </p>
                     <Separator />
-                    <p><strong>Address:</strong> {place?.address}</p>
-                    <p><strong>Neighborhood:</strong> {place?.neighborhood}</p>
-                    <p><strong>Size:</strong> {place?.size}</p>
-                    <p><strong>Purchase Required:</strong> {place?.purchaseRequired}</p>
-                    <p><strong>Parking Situation:</strong> {place?.parkingSituation}</p>
-                    <p><strong>Free Wifi:</strong> {place?.freeWifi}</p>
-                    <p><strong>Has Cinnamon Rolls:</strong> {place?.hasCinnamonRolls}</p>
+                    <p><strong>Address:</strong> {place.address}</p>
+                    <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
+                    <p><strong>Size:</strong> {place.size}</p>
+                    <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
+                    <p><strong>Parking Situation:</strong> {place.parkingSituation}</p>
+                    <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
+                    <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
                     <Separator />
-                    <p><strong>Description:</strong> {place?.description || "A third place in the Charlotte, North Carolina area."}</p>
-                    <p><strong>Curator's Comments:</strong> {place?.comments || "None."}</p>
+                    <p><strong>Description:</strong> {place.description || "A third place in the Charlotte, North Carolina area."}</p>
+                    <p><strong>Curator's Comments:</strong> {place.comments || "None."}</p>
                 </div>
 
                 <div className="flex justify-center mt-6 space-x-4">
                     <ShareButton
-                        placeName={place?.name}
+                        placeName={place.name}
                         className="!font-bold"
                         url={shareUrl}
                     />
