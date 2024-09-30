@@ -92,13 +92,13 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                 </CardContent>
             </Card>
 
-            <div className="flex justify-center space-x-4 mt-4">
+            {/* <div className="flex justify-center space-x-4 mt-4">
                 <ShareButton
                     placeName={place?.name}
-                    url={placeUrl}
+                    url={placeUrl} 
                     className="!font-bold"
                 />
-            </div>
+            </div> */}
         </div >
     );
 }
