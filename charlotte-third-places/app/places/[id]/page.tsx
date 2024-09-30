@@ -1,14 +1,10 @@
 import React from 'react';
-import Link from "next/link";
 import { Place } from "@/lib/types";
 import { getPlaces } from "@/lib/data-services";
-import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
-import { ScrollToTop } from "@/components/ScrollToTop";
-import { GoBackButton } from "@/components/GoBackButton"
+import { Card, CardContent } from "@/components/ui/card";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 // `revalidate` defines the interval in seconds during which the cached data is considered valid.
 // After this interval, Next.js will invalidate the cache and fetch fresh data.
