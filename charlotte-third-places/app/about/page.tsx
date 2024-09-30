@@ -97,7 +97,7 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="size">
                         <AccordionTrigger>Size</AccordionTrigger>
                         <AccordionContent>
-                            This one is all me. Based on personal visits, I gauge the size of each place. If I haven't been to a location, I infer the size from online photos or map views, or leave it as "Unsure". If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
+                            This is based on both my experiences and community feedback. Defining place sizes can be tricky since everyone has their own ideas of what 'small,' 'medium,' or 'large' means. In general, I classify small places as seating 10 or fewer people, medium as holding 10-20, and large as accommodating 20 or more, or being able to host bigger gatherings. It's an imperfect and subjective system. You may also see "Unsure" in this field for places I haven't visited yet or when the size isn't easy to determine. If you think a size is off, or want to help me switch a place from "Unsure" to a real size, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
                         </AccordionContent>
                     </AccordionItem>
 
