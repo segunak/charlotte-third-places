@@ -54,9 +54,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     </p>
                     <p>
                         <strong>Site Profile:</strong>{" "}
-                        <Link href={`/places/${place.airtableRecordId}`} scroll={true} className="custom-link">
+                        <ResponsiveLink href={`/places/${place.airtableRecordId}`}>
                             Visit Profile
-                        </Link>
+                        </ResponsiveLink>
                     </p>
                     <p>
                         <strong>Google Maps Profile:</strong>{" "}
