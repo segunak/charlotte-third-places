@@ -5,20 +5,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {
             url: 'https://charlottethirdplaces.com',
             lastModified: new Date(),
-            changeFrequency: 'yearly',
+            changeFrequency: 'daily',
             priority: 1,
         },
         {
-            url: 'https://charlottethirdplaces.com',
+            url: 'https://charlottethirdplaces.com/map',
             lastModified: new Date(),
-            changeFrequency: 'monthly',
+            changeFrequency: 'daily',
+            priority: 0.9,
+        },
+        {
+            url: 'https://charlottethirdplaces.com/contribute',
+            lastModified: new Date(),
+            changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
-            url: 'https://charlottethirdplaces.com',
+            url: 'https://charlottethirdplaces.com/about',
             lastModified: new Date(),
             changeFrequency: 'weekly',
-            priority: 0.5,
+            priority: 0.7,
         },
     ]
 }
