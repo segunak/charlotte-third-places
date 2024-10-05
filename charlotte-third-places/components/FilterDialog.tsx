@@ -4,7 +4,7 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { useContext, useState, useEffect } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
-import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
+import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import {
     Dialog,
     DialogContent,
@@ -17,8 +17,8 @@ import {
 } from "@/components/ui/dialog";
 
 interface FilterDialogProps {
-    className?: string; // Optional className prop for customization
-    style?: React.CSSProperties; // Optional style prop for inline styles
+    className?: string;
+    style?: React.CSSProperties;
 }
 
 export function FilterDialog({ className = "", style = {} }: FilterDialogProps) {
@@ -50,9 +50,13 @@ export function FilterDialog({ className = "", style = {} }: FilterDialogProps) 
                 onOpenAutoFocus={(e) => e.preventDefault()}
             >
                 <DialogHeader>
-                    <DialogTitle>Filters</DialogTitle>
-                    <DialogDescription>Use the fields below to filter places.</DialogDescription>
+                    <DialogTitle>Sort and Filter</DialogTitle>
+                    <DialogDescription>Use the fields below to sort and filter places.</DialogDescription>
                 </DialogHeader>
+
+                <div className="space-y-4">
+                    <SortSelect />
+                </div>
 
                 <div className="space-y-4">
                     {Object.entries(filters).map(([field, config]) => (
