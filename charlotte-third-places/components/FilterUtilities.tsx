@@ -84,9 +84,8 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
     );
 }
 
-// Button to reset all filters
 export function FilterResetButton() {
-    const { setFilters, setQuickFilterText } = useContext(FilterContext);
+    const { setFilters, setQuickFilterText, setSortOption  } = useContext(FilterContext);
 
     const handleResetFilters = useCallback(() => {
         setFilters((prevFilters) => {
@@ -97,7 +96,12 @@ export function FilterResetButton() {
             return resetFilters;
         });
         setQuickFilterText("");
-    }, [setFilters, setQuickFilterText]);
+
+        setSortOption({
+            field: SortField.Name,
+            direction: SortDirection.Ascending,
+        });
+    }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
         <div className={maxWidth}>
