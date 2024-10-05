@@ -216,6 +216,22 @@ const frequentlyAskedQuestions = [
                 Well, it turns out that not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and mall's and other businesses and don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is in relation to how well its setup for staying a while. I'm more than willing to add a Starbucks to the site that someone validates is a proper third place. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
             </div>
         )
+    },
+    {
+        title: "What about co-working spaces? Aren't those considered third places? Why aren't they listed on the site?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                    I'll start by saying that the definition of a third place is inherently subjective. Each person must decide for themselves which spaces make them feel at home, welcome, relaxed, and part of a community outside of where they live, work, or go to school. That said, to me, co-working spaces don't qualify as third places because they're essentially "second places"—where people go to work. The whole concept of a third place is that it's not home or work/school.
+                </p>
+                <p>
+                    Co-working spaces also don't meet the "little to no financial barrier to entry" standard often associated with third places. Most require a membership to enter. You can't just drop in to meet friends or get some work done without registering and paying a fee, which creates a significant barrier to entry. It's similar to how a gym works—membership is required for access. For these reasons, I don't consider co-working spaces as third places and don't list them on this site.
+                </p>
+                <p>
+                    Of course, you're welcome to disagree with me, and I'm always open to hearing opposing viewpoints. You can reach out to share your thoughts via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                </p>
+            </div>
+        )
     }
 ];
 
