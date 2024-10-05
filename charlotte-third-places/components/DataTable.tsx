@@ -6,8 +6,8 @@ import { normalizeTextForSearch } from '@/lib/utils'
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
 import { useWindowWidth } from '@/hooks/useWindowWidth';
-import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useRef, useState, useMemo } from "react";
+import { FilterContext, SortField, SortDirection } from "@/contexts/FilterContext";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
 
@@ -24,7 +24,7 @@ const autoSizeStrategy: SizeColumnsToContentStrategy = {
 export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
     const [selectedCard, setSelectedCard] = useState<any | null>(null);
-    const { filters, quickFilterText } = useContext(FilterContext);
+    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
 
     const isFullWidthRow = useCallback((params: any) => {
         return true;
@@ -80,6 +80,30 @@ export function DataTable({ rowData }: DataTableProps) {
         [filters]
     );
 
+    const applySorting = useCallback(
+        (data: any[]) => {
+            return [...data].sort((a: any, b: any) => {
+                const { field, direction } = sortOption;
+
+                // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)
+                const valueA = a[field] || "";
+                const valueB = b[field] || "";
+
+                if (field === SortField.Name) {
+                    return direction === SortDirection.Ascending
+                        ? valueA.localeCompare(valueB)
+                        : valueB.localeCompare(valueA);
+                }
+
+                // For date fields, compare as dates
+                const dateA = new Date(valueA).getTime();
+                const dateB = new Date(valueB).getTime();
+                return direction === SortDirection.Ascending ? dateA - dateB : dateB - dateA;
+            });
+        },
+        [sortOption]
+    );
+
     const windowWidth = useWindowWidth();
 
     // Aligns with Tailwind breakpoints at https://tailwindcss.com/docs/responsive-design
@@ -87,7 +111,6 @@ export function DataTable({ rowData }: DataTableProps) {
         if (windowWidth >= 768) return 2; // md and larger (2 cards)
         return 1; // anything smaller than md (1 card)
     }, [windowWidth]);
-
 
     const filteredAndGroupedRowData = useMemo(() => {
         let filteredData = rowData;
@@ -100,6 +123,8 @@ export function DataTable({ rowData }: DataTableProps) {
         }
 
         filteredData = applyFilters(filteredData);
+        // Apply sorting to the filtered data
+        filteredData = applySorting(filteredData);
 
         const grouped = [];
         for (let i = 0; i < filteredData.length; i += columnsPerRow) {
@@ -107,7 +132,7 @@ export function DataTable({ rowData }: DataTableProps) {
             grouped.push({ group });
         }
         return grouped;
-    }, [rowData, quickFilterText, applyFilters, columnsPerRow]);
+    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow]);
 
     const getRowHeight = useCallback(() => {
         const cardHeight = 215;

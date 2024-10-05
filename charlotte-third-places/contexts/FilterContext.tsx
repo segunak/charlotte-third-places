@@ -9,6 +9,22 @@ interface FilterOption {
     predefinedOrder: string[];
 }
 
+export enum SortField {
+    Name = 'name',
+    DateAdded = 'createdDate',
+    LastModified = 'lastModifiedDate',
+}
+
+export enum SortDirection {
+    Ascending = 'asc',
+    Descending = 'desc',
+}
+
+interface SortOption {
+    field: SortField;
+    direction: SortDirection;
+}
+
 export interface FilterConfig {
     name: FilterOption;
     type: FilterOption;
@@ -26,6 +42,8 @@ interface FilterContextType {
     quickFilterText: string;
     setQuickFilterText: React.Dispatch<React.SetStateAction<string>>;
     getDistinctValues: (field: keyof FilterConfig) => string[];
+    sortOption: SortOption;
+    setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
 }
 
 export const FilterContext = createContext<FilterContextType>({
@@ -42,16 +60,17 @@ export const FilterContext = createContext<FilterContextType>({
     setFilters: () => { },
     quickFilterText: "",
     setQuickFilterText: () => { },
-    getDistinctValues: () => []
+    getDistinctValues: () => [],
+    sortOption: { field: SortField.Name, direction: SortDirection.Ascending },
+    setSortOption: () => { }
 });
 
-// Define the FilterProvider to manage filter state and context
 export const FilterProvider = ({
     children,
     places,
 }: {
     children: ReactNode;
-    places: Array<any>; // Expecting a list of place objects
+    places: Array<any>;
 }) => {
     const [quickFilterText, setQuickFilterText] = useState<string>("");
 
@@ -110,12 +129,15 @@ export const FilterProvider = ({
     );
 
     const [filters, setFilters] = useState<FilterConfig>(filterConfig);
+    const [sortOption, setSortOption] = useState<SortOption>({
+        field: SortField.Name, // Default to sort by Name
+        direction: SortDirection.Ascending // Default to ascending
+    });
 
-    // Function to get distinct values for dropdowns
     const getDistinctValues = useCallback(
         (field: keyof FilterConfig) => {
             const values = places
-                .map((place: any) => place[field]) // Extract field from each place
+                .map((place: any) => place[field])
                 .flat() // Handle arrays like 'type'
                 .filter(Boolean); // Remove falsy values
 
@@ -143,7 +165,9 @@ export const FilterProvider = ({
                 setFilters,
                 quickFilterText,
                 setQuickFilterText,
-                getDistinctValues
+                getDistinctValues,
+                sortOption,
+                setSortOption
             }}
         >
             {children}
