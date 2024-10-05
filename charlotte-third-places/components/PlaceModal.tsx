@@ -46,7 +46,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                 <div className="space-y-3">
                     <p>
                         <strong>Website:</strong>{" "}
-                        {place.website ? (
+                        {place.website?.trim() ? (
                             <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
                         ) : (
                             "No website available."
@@ -60,13 +60,16 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     </p>
                     <p>
                         <strong>Google Maps Profile:</strong>{" "}
-                        {place.googleMapsProfileURL ? (
+                        {place.googleMapsProfileURL?.trim() ? (
                             <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
                         ) : (
                             "No profile available."
                         )}
                     </p>
                     <Separator />
+                    <p className="hidden sm:block"><strong>Added to List On:</strong> {place.createdDate}</p>
+                    <p className="hidden sm:block"><strong>Last Modified On:</strong> {place.lastModifiedDate}</p>
+                    <Separator className="hidden sm:block" />
                     <p><strong>Address:</strong> {place.address}</p>
                     <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
                     <p><strong>Size:</strong> {place.size}</p>
@@ -75,8 +78,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
                     <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
                     <Separator />
-                    <p><strong>Description:</strong> {place.description || "A third place in the Charlotte, North Carolina area."}</p>
-                    <p><strong>Curator's Comments:</strong> {place.comments || "None."}</p>
+                    <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
+                    <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
                 </div>
 
                 <div className="flex justify-center mt-6 space-x-4">

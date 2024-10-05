@@ -54,9 +54,6 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
             <Card className="border border-gray-300 shadow-sm">
                 <CardContent className="mt-4">
                     <div className="space-y-3">
-                        <p><strong>Added to List On:</strong> {place.createdDate}</p>
-                        <p><strong>Last Modified On:</strong> {place.lastModifiedDate}</p>
-                        <Separator />
                         <p><strong>Type:</strong> {place.type.join(", ")}</p>
                         <p>
                             <strong>Website:</strong>{" "}
@@ -74,6 +71,9 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                                 "No profile available."
                             )}
                         </p>
+                        <Separator />
+                        <p><strong>Added to List On:</strong> {place.createdDate}</p>
+                        <p><strong>Last Modified On:</strong> {place.lastModifiedDate}</p>
                         <Separator />
                         <p><strong>Address:</strong> {place.address}</p>
                         <p><strong>Neighborhood:</strong> {place.neighborhood}</p>

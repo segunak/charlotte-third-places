@@ -1,9 +1,9 @@
 "use client";
 
-import { useContext, useCallback } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
+import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useContext, useCallback, useMemo } from "react";
 import {
     Select,
     SelectContent,
@@ -13,6 +13,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
+import { FilterContext, SortField, SortDirection } from "@/contexts/FilterContext";
 
 const maxWidth = "md:min-w-52 md:max-w-52";
 
@@ -103,6 +104,86 @@ export function FilterResetButton() {
             <Button onClick={handleResetFilters} className="w-full">
                 Reset Filters
             </Button>
+        </div>
+    );
+}
+
+export function SortSelect({ className }: { className?: string }) {
+    const { sortOption, setSortOption } = useContext(FilterContext);
+
+    const handleSortChange = useCallback(
+        (value: string) => {
+            const [field, direction] = value.split("-");
+            setSortOption({
+                field: field as SortField,
+                direction: direction as SortDirection,
+            });
+        },
+        [setSortOption]
+    );
+
+    const placeholderText = useMemo(() => {
+        if (sortOption.field === SortField.Name) {
+            return sortOption.direction === SortDirection.Ascending ? "Name (A-Z)" : "Name (Z-A)";
+        }
+        if (sortOption.field === SortField.DateAdded) {
+            return sortOption.direction === SortDirection.Ascending
+                ? "Date Added (Oldest First)"
+                : "Date Added (Newest First)";
+        }
+        if (sortOption.field === SortField.LastModified) {
+            return sortOption.direction === SortDirection.Ascending
+                ? "Last Modified (Oldest First)"
+                : "Last Modified (Newest First)";
+        }
+        return "Sort by...";
+    }, [sortOption]);
+
+    return (
+        <div className={cn(maxWidth, className)}>
+            <Select
+                value={`${sortOption.field}-${sortOption.direction}`}
+                onValueChange={handleSortChange}
+            >
+                <SelectTrigger className="w-full">
+                    <SelectValue placeholder={placeholderText} >
+                        {sortOption.field === SortField.Name
+                            ? sortOption.direction === SortDirection.Ascending
+                                ? "Name (A-Z)"
+                                : "Name (Z-A)"
+                            : sortOption.field === SortField.DateAdded
+                                ? sortOption.direction === SortDirection.Ascending
+                                    ? "Date Added (Oldest First)"
+                                    : "Date Added (Newest First)"
+                                : sortOption.direction === SortDirection.Ascending
+                                    ? "Last Modified (Oldest First)"
+                                    : "Last Modified (Newest First)"}
+                    </SelectValue>
+                </SelectTrigger>
+                <SelectContent>
+                    <SelectGroup>
+                        <SelectLabel>Sort By</SelectLabel>
+                        <SelectItem value={`${SortField.Name}-${SortDirection.Ascending}`}>
+                            Name (A-Z)
+                        </SelectItem>
+                        <SelectItem value={`${SortField.Name}-${SortDirection.Descending}`}>
+                            Name (Z-A)
+                        </SelectItem>
+                        <SelectItem value={`${SortField.DateAdded}-${SortDirection.Ascending}`}>
+                            Date Added (Oldest First)
+                        </SelectItem>
+                        <SelectItem value={`${SortField.DateAdded}-${SortDirection.Descending}`}>
+                            Date Added (Newest First)
+                        </SelectItem>
+                        <SelectItem value={`${SortField.LastModified}-${SortDirection.Ascending}`}>
+                            Last Modified (Oldest First)
+                        </SelectItem>
+                        <SelectItem value={`${SortField.LastModified}-${SortDirection.Descending}`}>
+                            Last Modified (Newest First)
+                        </SelectItem>
+                    </SelectGroup>
+                </SelectContent>
+            </Select>
         </div>
     );
 }
