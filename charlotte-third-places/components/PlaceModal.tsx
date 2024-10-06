@@ -77,8 +77,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <Separator />
                     <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
                     <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
-                    <Separator />
-                    <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
+                    <Separator className="hidden sm:block" />
+                    <p className="hidden sm:block"><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
                 </div>
 
                 <div className="flex justify-center mt-4 space-x-4">
