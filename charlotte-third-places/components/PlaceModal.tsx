@@ -43,7 +43,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-                <div className="space-y-3">
+                <div className="space-y-[0.6rem]">
                     <p>
                         <strong>Website:</strong>{" "}
                         {place.website?.trim() ? (
@@ -81,7 +81,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
                 </div>
 
-                <div className="flex justify-center mt-6 space-x-4">
+                <div className="flex justify-center mt-4 space-x-4">
                     <ShareButton
                         placeName={place.name}
                         className="!font-bold"
