@@ -19,10 +19,11 @@ import {
 
 interface FilterDialogProps {
     className?: string;
+    showSort?: boolean;
     style?: React.CSSProperties;
 }
 
-export function FilterDialog({ className = "", style = {} }: FilterDialogProps) {
+export function FilterDialog({ className = "", showSort = false, style = {} }: FilterDialogProps) {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const { filters } = useContext(FilterContext);
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
@@ -51,11 +52,13 @@ export function FilterDialog({ className = "", style = {} }: FilterDialogProps) 
                 onOpenAutoFocus={(e) => e.preventDefault()}
             >
                 <div className="space-y-4">
-                    <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
 
-                    <div className="space-y-4">
-                        <SortSelect />
-                    </div>
+                    {showSort && (
+                        <div className="space-y-4">
+                            <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
+                            <SortSelect />
+                        </div>
+                    )}
 
                     <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
 

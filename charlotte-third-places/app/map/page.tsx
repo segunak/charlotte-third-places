@@ -38,7 +38,7 @@ export default async function MapPage() {
                             </span>
                             {" "} Click on any marker to see more information about that place.
                             <span className="font-bold text-primary">
-                                {" "} Filter and search the map using the {" "}
+                                {" "} Filter the map using the {" "}
                                 <span className="sm:hidden">button in the lower-right corner.</span>
                                 <span className="hidden sm:inline">sidebar on the right.</span>
                             </span>
@@ -51,7 +51,7 @@ export default async function MapPage() {
 
                 {/*On mobile, this provides a button in the lower right for filtering */}
                 <div className="sm:hidden">
-                    <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+                    <FilterDialog showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
 
                 {/*On desktop, this provides a dedicated sidebar for filtering */}

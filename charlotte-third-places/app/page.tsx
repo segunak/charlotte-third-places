@@ -32,7 +32,7 @@ export default async function HomePage() {
               </span>
               {" "} Click on any card to see more information about that place.
               <span className="font-bold text-primary">
-                {" "} Filter and search the list using the {" "}
+                {" "} Sort and filter the list using the {" "}
                 <span className="sm:hidden">button in the lower-right corner.</span>
                 <span className="hidden sm:inline">sidebar on the right.</span>
               </span>
@@ -43,7 +43,7 @@ export default async function HomePage() {
 
         {/*On mobile, this provides a button in the lower right for filtering */}
         <div className="sm:hidden">
-          <FilterDialog className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+          <FilterDialog showSort={true} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
         </div>
 
         {/*On desktop, this provides a dedicated sidebar for filtering */}
