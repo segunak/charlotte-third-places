@@ -72,9 +72,6 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                             )}
                         </p>
                         <Separator />
-                        <p><strong>Added to List On:</strong> {place.createdDate}</p>
-                        <p><strong>Last Modified On:</strong> {place.lastModifiedDate}</p>
-                        <Separator />
                         <p><strong>Address:</strong> {place.address}</p>
                         <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
                         <p><strong>Size:</strong> {place.size}</p>
@@ -85,6 +82,8 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <Separator />
                         <p><strong>Description:</strong> {place.description || "A third place in the Charlotte, North Carolina area."}</p>
                         <p><strong>Curator's Comments:</strong> {place.comments || "None."}</p>
+                        <Separator />
+                        <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
                     </div>
 
                     <div className="flex justify-center space-x-4 mt-12">

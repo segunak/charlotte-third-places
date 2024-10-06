@@ -66,20 +66,6 @@ const frequentlyAskedQuestions = [
                         </AccordionContent>
                     </AccordionItem>
 
-                    <AccordionItem value="added">
-                        <AccordionTrigger>Added to List On</AccordionTrigger>
-                        <AccordionContent>
-                            The date when the place was first added to the list behind the website. This may not reflect when the place became publicly visible on the site, as the website launched in September 2024. However, the data itself existed as part of my personal list long before that.
-                        </AccordionContent>
-                    </AccordionItem>
-
-                    <AccordionItem value="modified">
-                        <AccordionTrigger>Last Modified On</AccordionTrigger>
-                        <AccordionContent>
-                            This is the date when the details of the place were last modified. It reflects the most recent change to any information, either from Google Maps or custom fields in the database. If nothing about the place has changed, this date won't update—there's no need to refresh the data unless something new or different is found. So, think of this as "the last time something important changed about the place." Unnecessary updates are avoided to reduce network traffic and ensure accuracy.
-                        </AccordionContent>
-                    </AccordionItem>
-
                     <AccordionItem value="address">
                         <AccordionTrigger>Address</AccordionTrigger>
                         <AccordionContent>
@@ -147,6 +133,13 @@ const frequentlyAskedQuestions = [
                         <AccordionTrigger>Curator's Comments</AccordionTrigger>
                         <AccordionContent>
                             These are from me, my personal thoughts or advice regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added to the comments field.
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="metadata">
+                        <AccordionTrigger>Metadata</AccordionTrigger>
+                        <AccordionContent>
+                            This section provides site-specific details about the place. "Added" shows when the place was first included in the site's database, though it may not reflect its public visibility, as the site launched in September 2024. "Last Modified" indicates the most recent significant update to the place's details, either from Google Maps or custom fields. This date only updates when something substantial changes, minimizing unnecessary refreshes and network usage.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>

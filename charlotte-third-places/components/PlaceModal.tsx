@@ -29,7 +29,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
     return (
         <Dialog open onOpenChange={onClose}>
             <DialogContent
-                className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
+                className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[95vh] overflow-y-auto"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
@@ -67,9 +67,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                         )}
                     </p>
                     <Separator />
-                    <p className="hidden sm:block"><strong>Added to List On:</strong> {place.createdDate}</p>
-                    <p className="hidden sm:block"><strong>Last Modified On:</strong> {place.lastModifiedDate}</p>
-                    <Separator className="hidden sm:block" />
                     <p><strong>Address:</strong> {place.address}</p>
                     <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
                     <p><strong>Size:</strong> {place.size}</p>
@@ -80,6 +77,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <Separator />
                     <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
                     <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
+                    <Separator />
+                    <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
                 </div>
 
                 <div className="flex justify-center mt-6 space-x-4">
