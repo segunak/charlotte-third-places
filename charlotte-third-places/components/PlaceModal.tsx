@@ -38,7 +38,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                <DialogHeader className="mt-2">
+                <DialogHeader className="mt-3 sm:mt-0">
                     <DialogTitle>{place.name}</DialogTitle>
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
