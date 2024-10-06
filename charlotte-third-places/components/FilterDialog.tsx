@@ -2,6 +2,7 @@
 
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator"
 import { useContext, useState, useEffect } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
@@ -49,21 +50,21 @@ export function FilterDialog({ className = "", style = {} }: FilterDialogProps) 
                 className="sm:max-w-md rounded-lg bg-background p-6"
                 onOpenAutoFocus={(e) => e.preventDefault()}
             >
-                <DialogHeader>
-                    <DialogTitle>Sort and Filter</DialogTitle>
-                    <DialogDescription>Use the fields below to sort and filter places.</DialogDescription>
-                </DialogHeader>
-
                 <div className="space-y-4">
-                    <SortSelect />
-                </div>
+                    <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
 
-                <div className="space-y-4">
-                    {Object.entries(filters).map(([field, config]) => (
-                        <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
-                    ))}
-                </div>
+                    <div className="space-y-4">
+                        <SortSelect />
+                    </div>
 
+                    <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
+
+                    <div className="space-y-4">
+                        {Object.entries(filters).map(([field, config]) => (
+                            <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
+                        ))}
+                    </div>
+                </div>
                 <DialogFooter className="flex flex-col space-y-4 mt-4">
                     <FilterResetButton />
                     <DialogClose asChild>
