@@ -29,7 +29,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
     return (
         <Dialog open onOpenChange={onClose}>
             <DialogContent
-                className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
+                className="w-full sm:w-auto sm:max-w-7xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[82vh] sm:max-h-[95vh] overflow-y-auto"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
