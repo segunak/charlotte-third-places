@@ -139,7 +139,7 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="metadata">
                         <AccordionTrigger>Metadata</AccordionTrigger>
                         <AccordionContent>
-                            This section provides site-specific details about the place. "Added" shows when the place was first included in the site's database, though it may not reflect its public visibility, as the site launched in September 2024. "Last Modified" indicates the most recent significant update to the place's details, either from Google Maps or custom fields. This date only updates when something substantial changes, minimizing unnecessary refreshes and network usage.
+                            This section provides site-specific details about a place. "Added" shows when the place was first included in the site's database, though it may not reflect its public visibility, as the site launched in September 2024. "Last Modified" indicates the most recent significant update to the place's details, either from Google Maps or custom fields. This date only updates when something substantial changes, minimizing unnecessary refreshes and network usage.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
