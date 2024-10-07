@@ -57,7 +57,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <p><strong>Type:</strong> {place.type.join(", ")}</p>
                         <p>
                             <strong>Website:</strong>{" "}
-                            {place.website ? (
+                            {place.website?.trim() ? (
                                 <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
                             ) : (
                                 "No website available."
@@ -65,7 +65,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         </p>
                         <p>
                             <strong>Google Maps Profile:</strong>{" "}
-                            {place.googleMapsProfileURL ? (
+                            {place.googleMapsProfileURL?.trim() ? (
                                 <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
                             ) : (
                                 "No profile available."
@@ -80,8 +80,8 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
                         <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
                         <Separator />
-                        <p><strong>Description:</strong> {place.description || "A third place in the Charlotte, North Carolina area."}</p>
-                        <p><strong>Curator's Comments:</strong> {place.comments || "None."}</p>
+                        <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
+                        <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
                         <Separator />
                         <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Modified: {place.lastModifiedDate}.</p>
                     </div>
