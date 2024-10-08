@@ -55,6 +55,13 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
         [field, setFilters]
     );
 
+    const handleTriggerClick = useCallback(
+        (e: React.MouseEvent) => {
+            e.stopPropagation();
+        },
+        []
+    );
+
     return (
         <div className={maxWidth}>
             <Select
@@ -63,7 +70,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
                 onValueChange={handleFilterChange}
                 onOpenChange={(isOpen) => setDropdownOpen(isOpen)}
             >
-                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
+                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"} onClick={handleTriggerClick}>
                     <SelectValue placeholder={config.placeholder}>
                         {config.value === "all" ? config.placeholder : config.value}
                     </SelectValue>
