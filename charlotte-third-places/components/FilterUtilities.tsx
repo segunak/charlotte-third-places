@@ -47,19 +47,14 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
 
     const handleFilterChange = useCallback(
         (value: string) => {
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [field]: { ...prevFilters[field], value },
-            }));
+            setTimeout(() => {
+                setFilters((prevFilters) => ({
+                    ...prevFilters,
+                    [field]: { ...prevFilters[field], value },
+                }));
+            }, 300); // Delay of 300ms to prevent immediate interaction with the reset and close buttons
         },
         [field, setFilters]
-    );
-
-    const handleTriggerClick = useCallback(
-        (e: React.MouseEvent) => {
-            e.stopPropagation();
-        },
-        []
     );
 
     return (
@@ -70,7 +65,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
                 onValueChange={handleFilterChange}
                 onOpenChange={(isOpen) => setDropdownOpen(isOpen)}
             >
-                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"} onClick={handleTriggerClick}>
+                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                     <SelectValue placeholder={config.placeholder}>
                         {config.value === "all" ? config.placeholder : config.value}
                     </SelectValue>
