@@ -14,7 +14,7 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
 
     return (
-        <div className={`${className}`}>
+        <div className={`${className} mt-4`}>
             {showSort && (
                 <div className="space-y-[.65rem]">
                     <h2 className="font-bold text-lg">Sort</h2>

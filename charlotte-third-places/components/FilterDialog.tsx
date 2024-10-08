@@ -25,7 +25,7 @@ interface FilterDialogProps {
 
 export function FilterDialog({ className = "", showSort = false, style = {} }: FilterDialogProps) {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
-    const { filters } = useContext(FilterContext);
+    const { filters, dropdownOpen } = useContext(FilterContext);
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
 
     return (
@@ -71,7 +71,7 @@ export function FilterDialog({ className = "", showSort = false, style = {} }: F
                 <DialogFooter className="flex flex-col space-y-4 mt-4">
                     <FilterResetButton />
                     <DialogClose asChild>
-                        <Button variant="outline" className="w-full">
+                        <Button variant="outline" className="w-full" disabled={dropdownOpen}>
                             Close
                         </Button>
                     </DialogClose>

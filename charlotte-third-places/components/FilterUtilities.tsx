@@ -102,7 +102,7 @@ export function FilterResetButton() {
 
     return (
         <div className={maxWidth}>
-            <Button onClick={handleResetFilters} className={cn("w-full z-40", dropdownOpen ? "pointer-events-none" : "")}>
+            <Button className="w-full" onClick={handleResetFilters} disabled={dropdownOpen}>
                 Reset
             </Button>
         </div>
