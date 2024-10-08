@@ -130,8 +130,8 @@ export const FilterProvider = ({
 
     const [filters, setFilters] = useState<FilterConfig>(filterConfig);
     const [sortOption, setSortOption] = useState<SortOption>({
-        field: SortField.Name, // Default to sort by Name
-        direction: SortDirection.Ascending // Default to ascending
+        field: SortField.DateAdded, // Default sorts for the list.
+        direction: SortDirection.Descending
     });
 
     const getDistinctValues = useCallback(
