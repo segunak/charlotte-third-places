@@ -36,6 +36,7 @@ interface FilterContextType {
     setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
     dropdownOpen: boolean;
     setDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
+    handleDropdownStateChange: (isOpen: boolean) => void;
 }
 
 export const FilterContext = createContext<FilterContextType>({
@@ -57,6 +58,7 @@ export const FilterContext = createContext<FilterContextType>({
     setSortOption: () => { },
     dropdownOpen: false,
     setDropdownOpen: () => { },
+    handleDropdownStateChange: () => { },
 });
 
 export const FilterProvider = ({
@@ -67,7 +69,17 @@ export const FilterProvider = ({
     places: Array<any>;
 }) => {
     const [quickFilterText, setQuickFilterText] = useState<string>("");
-    const [dropdownOpen, setDropdownOpen] = useState(false);
+    const [dropdownOpen, setDropdownOpen] = useState(false); // Simple setter
+
+    const handleDropdownStateChange = useCallback((isOpen: boolean) => {
+        if (!isOpen) { // If the dropdown is being closed
+            setTimeout(() => {  // Introduce a delay before re-enabling buttons
+                setDropdownOpen(isOpen);  // Update the state after the delay
+            }, 100);
+        } else {
+            setDropdownOpen(isOpen); // Update immediately when opening
+        }
+    }, []);
 
     const filterConfig = useMemo(
         () => ({
@@ -161,7 +173,8 @@ export const FilterProvider = ({
                 sortOption,
                 setSortOption,
                 dropdownOpen,
-                setDropdownOpen
+                setDropdownOpen,
+                handleDropdownStateChange
             }}
         >
             {children}

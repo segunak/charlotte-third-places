@@ -43,16 +43,14 @@ export function FilterQuickSearch() {
 }
 
 export function FilterSelect({ field, config }: { field: keyof typeof filters; config: any }) {
-    const { filters, setFilters, getDistinctValues, setDropdownOpen } = useContext(FilterContext);
+    const { filters, setFilters, getDistinctValues, handleDropdownStateChange } = useContext(FilterContext);
 
     const handleFilterChange = useCallback(
         (value: string) => {
-            setTimeout(() => {
-                setFilters((prevFilters) => ({
-                    ...prevFilters,
-                    [field]: { ...prevFilters[field], value },
-                }));
-            }, 300); // Delay of 300ms to prevent immediate interaction with the reset and close buttons
+            setFilters((prevFilters) => ({
+                ...prevFilters,
+                [field]: { ...prevFilters[field], value },
+            }));
         },
         [field, setFilters]
     );
@@ -63,7 +61,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
                 key={field}
                 value={config.value}
                 onValueChange={handleFilterChange}
-                onOpenChange={(isOpen) => setDropdownOpen(isOpen)}
+                onOpenChange={(isOpen) => handleDropdownStateChange(isOpen)}
             >
                 <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                     <SelectValue placeholder={config.placeholder}>
