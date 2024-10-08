@@ -103,7 +103,7 @@ export function FilterResetButton() {
 
     return (
         <div className={maxWidth}>
-            <Button onClick={handleResetFilters} className="w-full">
+            <Button onClick={handleResetFilters} className="w-full z-40">
                 Reset
             </Button>
         </div>
