@@ -1,5 +1,6 @@
 "use client";
 
+import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { createContext, useState, useMemo, ReactNode, useCallback } from "react";
 
 interface FilterOption {
@@ -7,17 +8,6 @@ interface FilterOption {
     placeholder: string;
     label: string;
     predefinedOrder: string[];
-}
-
-export enum SortField {
-    Name = 'name',
-    DateAdded = 'createdDate',
-    LastModified = 'lastModifiedDate',
-}
-
-export enum SortDirection {
-    Ascending = 'asc',
-    Descending = 'desc',
 }
 
 interface SortOption {
@@ -129,10 +119,7 @@ export const FilterProvider = ({
     );
 
     const [filters, setFilters] = useState<FilterConfig>(filterConfig);
-    const [sortOption, setSortOption] = useState<SortOption>({
-        field: SortField.DateAdded, // Default sorts for the list.
-        direction: SortDirection.Descending
-    });
+    const [sortOption, setSortOption] = useState<SortOption>(DEFAULT_SORT_OPTION);
 
     const getDistinctValues = useCallback(
         (field: keyof FilterConfig) => {

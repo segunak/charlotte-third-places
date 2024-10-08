@@ -24,3 +24,20 @@ export type Place = {
     createdDate: string;
     lastModifiedDate: string;
 }
+
+// Default sorting option for the application
+export enum SortField {
+    Name = 'name',
+    DateAdded = 'createdDate',
+    LastModified = 'lastModifiedDate',
+}
+
+export enum SortDirection {
+    Ascending = 'asc',
+    Descending = 'desc',
+}
+
+export const DEFAULT_SORT_OPTION = {
+    field: SortField.DateAdded,
+    direction: SortDirection.Descending,
+};

@@ -24,7 +24,7 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
             <h2 className="font-bold text-lg">
                 Filter
                 {activeFilterCount > 0 && (
-                    <span className={`absolute ${showSort ? 'top-[6.3rem] right-[10.2rem]' : 'top-[.5rem] right-[10.2rem]'} flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full`}
+                    <span className={`absolute ${showSort ? 'top-[6.3rem] right-[10.7rem]' : 'top-[.5rem] right-[11rem]'} flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full`}
                     >
                         {activeFilterCount}
                     </span>

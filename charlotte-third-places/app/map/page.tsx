@@ -23,7 +23,7 @@ export default async function MapPage() {
 
     return (
         <FilterProvider places={places}>
-            <div className="grid grid-cols-1 sm:grid-cols-[1fr_250px] min-h-screen">
+            <div className="grid grid-cols-1 sm:grid-cols-[1fr_260px] min-h-screen">
                 <section className="px-4 sm:px-20 py-8 mx-auto">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">
@@ -56,7 +56,7 @@ export default async function MapPage() {
 
                 {/*On desktop, this provides a dedicated sidebar for filtering */}
                 <div className="hidden sm:block bg-background border-x border-border">
-                    <FilterSidebar showSort={false} className="max-w-[250px] sticky top-16 p-4 space-y-[.7rem]" />
+                    <FilterSidebar showSort={false} className="max-w-[260px] sticky top-16 p-4 space-y-[.7rem]" />
                 </div>
             </div>
         </FilterProvider>

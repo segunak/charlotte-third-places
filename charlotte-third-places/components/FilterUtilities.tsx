@@ -13,9 +13,10 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { FilterContext, SortField, SortDirection } from "@/contexts/FilterContext";
+import { FilterContext } from "@/contexts/FilterContext";
+import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 
-const maxWidth = "md:min-w-52 md:max-w-52";
+const maxWidth = "md:min-w-[14.3rem] md:max-w-[14.3rem]";
 
 // Quick search input component
 export function FilterQuickSearch() {
@@ -85,7 +86,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
 }
 
 export function FilterResetButton() {
-    const { setFilters, setQuickFilterText, setSortOption  } = useContext(FilterContext);
+    const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
 
     const handleResetFilters = useCallback(() => {
         setFilters((prevFilters) => {
@@ -96,11 +97,8 @@ export function FilterResetButton() {
             return resetFilters;
         });
         setQuickFilterText("");
+        setSortOption(DEFAULT_SORT_OPTION);
 
-        setSortOption({
-            field: SortField.Name,
-            direction: SortDirection.Ascending,
-        });
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (

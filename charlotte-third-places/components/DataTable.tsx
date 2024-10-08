@@ -5,9 +5,10 @@ import { PlaceCard } from "@/components/PlaceCard";
 import { normalizeTextForSearch } from '@/lib/utils'
 import { PlaceModal } from "@/components/PlaceModal";
 import { AgGridReact } from '@ag-grid-community/react';
+import { SortField, SortDirection } from "@/lib/types";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
+import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useRef, useState, useMemo } from "react";
-import { FilterContext, SortField, SortDirection } from "@/contexts/FilterContext";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
 
