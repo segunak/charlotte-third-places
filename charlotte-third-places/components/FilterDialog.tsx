@@ -71,7 +71,7 @@ export function FilterDialog({ className = "", showSort = false, style = {} }: F
                 <DialogFooter className="flex flex-col space-y-4 mt-4">
                     <FilterResetButton />
                     <DialogClose asChild>
-                        <Button variant="outline" className="w-full" disabled={dropdownOpen}>
+                        <Button variant="outline" className="w-full disabled:opacity-100" disabled={dropdownOpen}>
                             Close
                         </Button>
                     </DialogClose>
