@@ -18,7 +18,6 @@ import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 
 const maxWidth = "md:min-w-[14.3rem] md:max-w-[14.3rem]";
 
-// Quick search input component
 export function FilterQuickSearch() {
     const { quickFilterText, setQuickFilterText } = useContext(FilterContext);
 
@@ -43,9 +42,8 @@ export function FilterQuickSearch() {
     );
 }
 
-// Filter select component for each filter dropdown
 export function FilterSelect({ field, config }: { field: keyof typeof filters; config: any }) {
-    const { filters, setFilters, getDistinctValues } = useContext(FilterContext);
+    const { filters, setFilters, getDistinctValues, setDropdownOpen } = useContext(FilterContext);
 
     const handleFilterChange = useCallback(
         (value: string) => {
@@ -63,6 +61,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
                 key={field}
                 value={config.value}
                 onValueChange={handleFilterChange}
+                onOpenChange={(isOpen) => setDropdownOpen(isOpen)}
             >
                 <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
                     <SelectValue placeholder={config.placeholder}>
@@ -86,7 +85,7 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
 }
 
 export function FilterResetButton() {
-    const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
+    const { setFilters, setQuickFilterText, setSortOption, dropdownOpen } = useContext(FilterContext);
 
     const handleResetFilters = useCallback(() => {
         setFilters((prevFilters) => {
@@ -103,7 +102,7 @@ export function FilterResetButton() {
 
     return (
         <div className={maxWidth}>
-            <Button onClick={handleResetFilters} className="w-full z-40">
+            <Button onClick={handleResetFilters} className={cn("w-full z-40", dropdownOpen ? "pointer-events-none" : "")}>
                 Reset
             </Button>
         </div>

@@ -34,6 +34,8 @@ interface FilterContextType {
     getDistinctValues: (field: keyof FilterConfig) => string[];
     sortOption: SortOption;
     setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
+    dropdownOpen: boolean;
+    setDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const FilterContext = createContext<FilterContextType>({
@@ -52,7 +54,9 @@ export const FilterContext = createContext<FilterContextType>({
     setQuickFilterText: () => { },
     getDistinctValues: () => [],
     sortOption: { field: SortField.Name, direction: SortDirection.Ascending },
-    setSortOption: () => { }
+    setSortOption: () => { },
+    dropdownOpen: false,
+    setDropdownOpen: () => { },
 });
 
 export const FilterProvider = ({
@@ -63,6 +67,7 @@ export const FilterProvider = ({
     places: Array<any>;
 }) => {
     const [quickFilterText, setQuickFilterText] = useState<string>("");
+    const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const filterConfig = useMemo(
         () => ({
@@ -154,7 +159,9 @@ export const FilterProvider = ({
                 setQuickFilterText,
                 getDistinctValues,
                 sortOption,
-                setSortOption
+                setSortOption,
+                dropdownOpen,
+                setDropdownOpen
             }}
         >
             {children}
