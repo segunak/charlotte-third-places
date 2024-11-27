@@ -1,0 +1,1892 @@
+{
+    "place_name": "Seoul Food Meat Company | Mill District",
+    "place_id": "ChIJX2voOFmhVogRlnf0jpzsghY",
+    "place_description": "Southern BBQ and Korean fusion",
+    "place_rating": 3.9,
+    "place_total_reviews": 358,
+    "place_google_id": "0x8856a15938e86b5f:0x1682ec9c8ef47796",
+    "place_reviews_id": "1622118972964239254",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJX2voOFmhVogRlnf0jpzsghY&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyb0x2WUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyb0x2WUJ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDroLvYBw%7CCgwIr86HugYQsOGc7wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1732372271,
+            "review_datetime_utc": "11/23/2024 14:31:11",
+            "review_text": "The food is fine but their outdoor space is the real draw for our family! So much for the toddler to do while we enjoy friends, beverages, and food. Other venues need to take notes....the splash pad and playground are fabulous.\n\nIn winter they put solo stoves out on the splash pad area....lovely but also beware since this does cause a hazard for the littles."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQzaTdlNnlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzaTdlNnlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID3i7e6ygE%7CCgwIuPbuuQYQgNiCsgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1731967800,
+            "review_datetime_utc": "11/18/2024 22:10:00",
+            "review_text": "Sauce could be much improved. Wings coming out dry... please add Honey garlic, soy garlic, spicy garlic with gochujong and sauce the wings up. Other Korea restaurants do a better job"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMzelpYYlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMzelpYYlNBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC3zZXbSA%7CCgwIpNO1uQYQ6PitmQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1731029412,
+            "review_datetime_utc": "11/08/2024 01:30:12",
+            "review_text": "So much fun doing karaoke with family and friends and the food was amazing as well as the staff!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMzb3BucFh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMzb3BucFh3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC3opnpXw%7CCgsInaKhuQYQqJmNVA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1730695453,
+            "review_datetime_utc": "11/04/2024 04:44:13",
+            "review_text": "The service was terrible. It was almost like self service. Tried the beef brisket, bao buns and kimbap. The brisket was cold and chewy. The waitress was of no help. However, the manager quickly resolved the issue and gave us fresh ones. The kimbap was also just average. Not so great.\nThe parking was available. You get coupon and the money will reimbursed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMzaFBHMmpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzaFBHMmpnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC3hPG2jgE%7CCgwI_4-auQYQ4NnskQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730578431,
+            "review_datetime_utc": "11/02/2024 20:13:51",
+            "review_text": "Great spot for hanging out, good food, great drink choices, and awesome outdoor play area for kids!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYdDZpSHZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYdDZpSHZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDXt6iHvQE%7CCgwIpaOQuQYQqMeNvgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730417061,
+            "review_datetime_utc": "10/31/2024 23:24:21",
+            "review_text": "We hosted our Rehearsal Dinner at Seoul Food Meat Company Mill District. Their staff was amazing and the food delicious! Everything was ready when we arrived, set up beautifully, and our guests devoured the food.  We even had kids try foods that they normally wouldn't. The atmosphere was great and provided ample space for guests to mingle, kids to run around and play, and it didn't feel like everyone had to be cramped together. We very much enjoyed the karaoke, that got the crowd going and super excited!  Can't say enough great things about our experience, the staff, the food, and decor/design."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYdTVucFB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYdTVucFB3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDXu5npPw%7CCgsI6MyNuQYQ6IbEIQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730373224,
+            "review_datetime_utc": "10/31/2024 11:13:44",
+            "review_text": "The wings looked great but we'd already had a smorgasbord from the Urban District Food Hall. Instead, this was a stop for a drink and a pleasant time watching people.\n\nA very nice selection of beers on tap and the \"Korean Donkey\" with honey and ginger was a treat.\n\nNice open space and on a warm day with the \"garage doors\" open, it was pleasant. This is a great spot for food and drink or a meetup"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYX283TTZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYX283TTZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDX_o7M6QE%7CCgwIpvX6uAYQ8NTbjwI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1730067110,
+            "review_datetime_utc": "10/27/2024 22:11:50",
+            "review_text": "Went there on Friday night and my card was charged twice at the bar. Tried calling the restaurant number and no one is picking up.."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYMXZhNGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYMXZhNGlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDX1va4igE%7CCgwIwMb2uAYQ2O-5twE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729995584,
+            "review_datetime_utc": "10/27/2024 02:19:44",
+            "review_text": "My favorite place in Charlotte. Walkable to a few breweries and urban street market, games and karaoke on site, and plenty of space if you're bringing a large group. Also, some of the best cocktails in the city."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNYcFkzZnlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYcFkzZnlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICXpY3fygE%7CCgwIsNvKuAYQ2PGhowE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1729277360,
+            "review_datetime_utc": "10/18/2024 18:49:20",
+            "review_text": "If you enjoy Chilis or Applebee's, you will probably enjoy this place as well.\n\nMy experience was the most crystalline example of mid. Mid food, mid service, mid atmosphere. Your cousins from North Dakota will probably rave about this place. What wasn't mid was the price. Expect Southend prices.\n\nThe fire chicken I purchased was weird. Chicken breast laying on top of a \"spicy\" sauce which was spicier than mayonnaise but less so than Texas Pete. Shredded cheese was layered on top, similar to microwave nachos. Flavor profile resembles tv dinner.\n\nI've been to the other location, which is partially why I'm being harsh. I know they can do better than this."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNYMXVqeTh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYMXVqeTh3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICX1ujy8wE%7CCgwI2em9uAYQ-L-ZhQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1729066201,
+            "review_datetime_utc": "10/16/2024 08:10:01",
+            "review_text": "I didn't buy anything. Bc they are too expensive "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNuaFB1TzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuaFB1TzV3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICnhPuO5wE%7CCgwI_vjBtwYQ8OmjzAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1727036542,
+            "review_datetime_utc": "09/22/2024 20:22:22",
+            "review_text": "This place is great, and let me call out JOSH the bartender. He is so kind, took care of me and my kids and was an absolute gem! Josh you rock!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNuOEthb3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuOEthb3ZBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICn8KaovAE%7CCgsIuIO-twYQuOCvBA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1726972344,
+            "review_datetime_utc": "09/22/2024 02:32:24",
+            "review_text": "Here's a draft of an excellent review you can leave for Josh:\n\n---\n\n** Amazing Service by Josh!**\n\nI recently had the pleasure of dining at Seoul, and I must say, the highlight of the evening was the exceptional service provided by Josh. From the moment we sat down, he was attentive, friendly, and went above and beyond to ensure we had a wonderful experience. His knowledge of the menu, quick service, and warm personality made the evening truly memorable. Josh's professionalism and enthusiasm really stood out, and I would highly recommend dining here if you want a great experience with top-notch service. Thank you, Josh, for making our night so enjoyable!\n\n---\n\nFeel free to personalize it further or add any specific details!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNuOElhYUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuOElhYUdnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICn8IaaGg%7CCgwI1YK-twYQ4ITl-wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1726972245,
+            "review_datetime_utc": "09/22/2024 02:30:45",
+            "review_text": "The nice tall guy gave 5 star service! Best experience ever and the food was great! Best drinks I've had in charlotte!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNuOExLeEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuOExLeEFREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICn8LKxAQ%7CCgwIof69twYQ-OjZ9gE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1726971681,
+            "review_datetime_utc": "09/22/2024 02:21:21",
+            "review_text": "Staff was rude. We tried to book a karaoke room and erroneously booked for the wrong night. The guy in the black hoodie said he didn't want to serve us instead of trying to be helpful. He made it clear he wasn't interested in getting any profit from our 15 person group. I regret buying anything."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIMzZ6NWl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIMzZ6NWl3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICH36z5iwE%7CCgwI9vSBtwYQ-LP_iAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1725987446,
+            "review_datetime_utc": "09/10/2024 16:57:26",
+            "review_text": "This location has a great relaxing atmosphere. The interior is decorated nicely, they have a nice inside lounge area with games and a beautiful outside area. My family and I ordered multiple different dishes so we could sample a lot of items on the menu. The food took more than 20 minutes to be ready. We originally were notified that our food was ready but when we went to the counter the food was not there and we waited an additional 5 minutes. The food itself tasted good. You must try the beef kimchi fries they were amazing. My son tried the Korean potato salad which had apples and raisins in it and he enjoyed the dish. If you try the Mac be aware that they do not use macaroni noodles."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNINTlmcGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINTlmcGlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICH59fpigE%7CCgwIyrj9tgYQuNj-qgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725914186,
+            "review_datetime_utc": "09/09/2024 20:36:26",
+            "review_text": "Food and cocktails were yummy. The server was patient with our children while they made decisions. Everything came out quickly. The space is very open and kept the kids entertained while we ate and watched football."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIZ3FHUTdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIZ3FHUTdBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICHgqGQ7AE%7CCgwI_vbXtgYQ-OPougE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1725299582,
+            "review_datetime_utc": "09/02/2024 17:53:02",
+            "review_text": "Food was good. Definitely try the egg rolls. Atmosphere was great. Service was good."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNINkx5OEVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNINkx5OEVnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICH6Ly8Eg%7CCgwIzJXNtgYQ0I-QyAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1725123276,
+            "review_datetime_utc": "08/31/2024 16:54:36",
+            "review_text": "Went there for lunch recently and the food was terrible. Ordered four bao buns, which were obviously reheated poorly. Had the fried fish bao bun and the fried fish was still cold. The meat on the other bao buns (pork belly and brisket) were lukewarm at best. Bao buns were a strange texture, not fluffy at all and doughy in the middle. Never again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3ajlEc2lBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3ajlEc2lBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID7j9DsiAE%7CCgwI5-HDtgYQsMfxmwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1724969191,
+            "review_datetime_utc": "08/29/2024 22:06:31",
+            "review_text": "This is unfortunate to say, but stay the hell away from the 12 hour ribs.\n\nWhen I moved here in January of last year, I found this restaurant and the first thing I order was the ribs. They were amazing as was the price $25. The meat was tender and juicy and delicious and at the price they were the best.\n\nNow I haven't had their ribs since January of this year when they were still $25 for a nice size/weight, primarily because the cost went up to $45.\n\nNow I know the cost of every is up, but the cost increase if 80% put me off until I decided to try them today on preparation of some family visiting.\n\nOh boy was that a mistake and not even solely because of the price. Now you would expect with the 80% increase in cost, they would offer the same sized rib (the weight was much less when I up my to go order, the only way I have ever ordered) with at the very least the same taste. But this rib was about 30% smaller, dryer and less tender nor did it taste as good. When I purchased in the past the meat would last two days for me and my wife.\n\nI know meat can be hit or miss, but I had previously, prior to January 2024 order it 4 times and it was always the same.\n\nI'm just writing this as a warning, don't waste your money on the ribs. It's not worth the cost of $45 just go somewhere else for the ribs.\n\nAll their other food seems about the same, I ordered some wings and they were good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3bWFfOG93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3bWFfOG93RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID7ma_8owE%7CCgwI4o2vtgYQ4JyOvwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1724630754,
+            "review_datetime_utc": "08/26/2024 00:05:54",
+            "review_text": "Really need those fly fans to keep all the flys away!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3bnF2SHpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3bnF2SHpRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID7nqvHzQE%7CCgsIuMSotgYQsMKlMA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724523064,
+            "review_datetime_utc": "08/24/2024 18:11:04",
+            "review_text": "Valeria"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3MmQ2akh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3MmQ2akh3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC72d6jHw%7CCgwI5NiAtgYQqJ273QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1723870308,
+            "review_datetime_utc": "08/17/2024 04:51:48",
+            "review_text": "Horrible experience. Craziest part is that is wasn't even the the bartender or the cooks... it was surprisingly the MANAGER of this location. We ordered about $100 worth of food and drinks unfortunately one of the drinks we had my partner was allergic to and the bartender decided to offer a different drink. The MANAGER shortly after decided to hound out the bartender about the drink in front of us. That alone made us feel super uncomfortable to enjoy our food. I still decided to continue to eat my food. My wings were very very dry and I had asked the cooks for more sauce in which there was ton of communication between them as if they have been ordered to not offer more wing sauce because of cost. I then asked for one of their pre packaged sauces in which they had to discuss further before the trying to provide me with packed ketchup because that indeed was the cheapest sauce they had. I wouldn't have mind paying the difference. This was at their church street location.\n\nTHE MANAGER the decided to walk up and approach me behind my back. He then tried to make it seem as if there was a problem for asking for sauce. I informed him with consideration of paying close to $100 I didn't understand why asking for honestly anything that night was a problem. He then went on to say he didn't have to get sauce and that I could leave which was before we could even eat our food. I then asked for a refund because we couldn't eat our food in which he RAISED his voice to say no and that I'd have no luck even if I tried to dispute with the transaction. He then walked away into his office and slammed the door on us in front of ALL the staff and the customers that were there.\n\nIn conclusion, he was pissed because I guess he felt they lost a total of $3.25 that night for remaking the drink and the providing a sauce when instead he now has lost $100 in total because of his horrible hospitality that didn't exist and horrible customer service. Imagine telling your employees to penny nickle and dime with the 10 customers they had come in that night and now he himself has lost the company $100.\n\nHe never walked up to even ask if we were having a good experience in which that alone I would probably came back 3 more times after meaning they could've made $400 of me.\n\nGood luck explaining to the owners how now you they're -$100 and you're losing more money than the employees here he suppose to manage and report to him.\n\nUNACCEPTABLE. UNPROFESSIONAL. IRATE. DEMEANING. CHEAPSKATE. = Manager"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3bWJYcmhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3bWJYcmhnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC7mbXrhgE%7CCgwIme__tQYQqOzDmgE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1723856793,
+            "review_datetime_utc": "08/17/2024 01:06:33",
+            "review_text": "Food was okay. Great selection. Signs had boneless but wings definitely had bones. Male bathrooms need a sign on the other entrance. Splash pad outside for the kiddos was neat. Margarita was inadvertently spicy. Friend ordered spicy drink before me...guessing there was cross contamination with the mixer they were using. Not sure I would order the same food again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3NnMtY2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3NnMtY2V3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC76s-cew%7CCgwIgZn1tQYQsPDl1QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723681921,
+            "review_datetime_utc": "08/15/2024 00:32:01",
+            "review_text": "Staff is friendly, easy going and good with questions and samples for a great variety of drinks options. Kids/families are welcome, great play area inside and out."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiOWJINUtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiOWJINUtREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDb9bH5KQ%7CCgsIqazQtQYQsKjPFw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1723078185,
+            "review_datetime_utc": "08/08/2024 00:49:45",
+            "review_text": "I never understood why the food here is just ok along with the service. I've been to the other location and just overall better with service, food, and atmosphere.\n\nThis location just feels dull and giving a 20% tip on top of what I order which amounted to about 76-78$ total is definitely not worth it. Giving me a device that suppose to set off to get the food didn't even work so the food sat there for like 15 mins before I went to go see if it was up there.\nPretty sure everyone did the same thing as I was doing when they went to grab their food.\n\nI don't understand what I'm even tipping for if I'm basically serving myself.\n\nOrdered 2 Philly eggrolls, pizza eggrolls, and a fish tacos. Food is ok."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNiNjVPMXl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNiNjVPMXl3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICb65O1ywE%7CCgwIu9ihtQYQyKqs4QI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1722313787,
+            "review_datetime_utc": "07/30/2024 04:29:47",
+            "review_text": "Staff was awesome, wings were delicious but the $45 rib was too salty to eat. Like unbelievably salty. I rinsed it off bc it was $45 and still couldn't eat it"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNibWNHcEZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNibWNHcEZREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICbmcGpFQ%7CCgwIm56btQYQsN_7lQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1722208027,
+            "review_datetime_utc": "07/28/2024 23:07:07",
+            "review_text": "Doesn't answer phone and online ordering doesn't work on two different phones"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyNTZMcUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyNTZMcUFREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDr56LqAQ%7CCgwI2YbxtAYQ0PuS6AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1721516889,
+            "review_datetime_utc": "07/20/2024 23:08:09",
+            "review_text": "Atmosphere and service was really great! The food was odd and entirely over priced. The slider \"buns\" must be made in house as they were not cooked throughly- they were doughy. 4 sliders, side of fries and 2 beer was roughly $70."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURybXNlOTFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURybXNlOTFBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDrmse91AE%7CCgwIm-DbtAYQwPrQrAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1721167899,
+            "review_datetime_utc": "07/16/2024 22:11:39",
+            "review_text": "Do Not waste your money on the 12 hour beef rib, it's $45 and a waste of money, it's tough as nails and dry extremely unpleasant taste"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyM05qcmJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyM05qcmJ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDr3Njrbw%7CCgwImcfWtAYQ4ImO1QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1721082777,
+            "review_datetime_utc": "07/15/2024 22:32:57",
+            "review_text": "Overall good. Food was pricy and the order taker wasn't friendly"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyM0pEanV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyM0pEanV3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDr3JDjuwE%7CCgsIz8LWtAYQkPGOLw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1721082191,
+            "review_datetime_utc": "07/15/2024 22:23:11",
+            "review_text": "My husband and I would eat regularly from the oldest location with very little issue. Wings were great but hardly ever any parking there.\n\nCame to this location last November and had a great time. Our go-to order of 20 spicy BBQ wings came out great as usual. 20 \"wings\" (flats/drummets) in a sweet/spicy bright red gojuchang sauce.\n\nFast forward to last night. Usual order. Receipt read what we said. Order with a mild brown sauce that was NOT what we ordered, nor was it the original soy garlic. It was one we'd never had before in all the years of eating here. And not only was the sauce wrong, there were NO WINGS in the order. They were all BREADED drumstick lollipops. And because there were breaded with a thick breading, it fell off, revealing the fatty layer of unseasoned skin. We asked the staff about the sauce issue and were told that \"mgmnt decided to experiment with the sauce but we're changing it back tomorrow.\"\n\nWe paid $2/wing to get a jacked up order that wasn't suitable for a stray dog. Will NOT spend another dime at either establishment. Let the spacious restaurant and grounds that were paid for when it was a decent place fool you. You're getting played to the left and right fooling with this."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNydC1tendRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNydC1tendRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICrt-mzwQE%7CCgsIr73CtAYQ8JHXfw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720753839,
+            "review_datetime_utc": "07/12/2024 03:10:39",
+            "review_text": "One of the best places to enjoy a delicious meal with a Toddler in Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNyMWVpcTJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyMWVpcTJnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICr1eiq2gE%7CCgsI1N61tAYQyNLjbA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720545108,
+            "review_datetime_utc": "07/09/2024 17:11:48",
+            "review_text": "Great wings and awesome atmosphere! Love karaoke and playing games with my friends!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNybk5mRkpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNybk5mRkpREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICrnNfFJQ%7CCgwIz7uctAYQ-IWRlgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1720131023,
+            "review_datetime_utc": "07/04/2024 22:10:23",
+            "review_text": "I found the restaurant enormous, clean, and modern. They do not take cash, which I do not care for. The soy ribs were excellent, but expensive, $18. You do not get any sides. The boneless wings, pork cracklings, chili were good, but their collard greens were very bland. They added a tip to the bill, even though it more like a take out place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNydFBidF9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNydFBidF9RRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICrtPbt_QE%7CCgwI-52atAYQ2P-FiQM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1720094459,
+            "review_datetime_utc": "07/04/2024 12:00:59",
+            "review_text": "Used to eat here all the time and loved it. Have been to both locations recently and the quality of food has definitely decreased. Small and overcooked pork belly and the egg rolls were over cooked. Very disappointed in the quality after spending over $70 for 2 people. Even more disappointing to find out the cost no longer includes tip for service. Their price used to include this as they claimed to pay their staff livable wages. Did they stop paying staff well and this is why quality suffers? Won't be going back for quite a while after this latest experience and super bummed about it. It used to be one of our favorite restaurants in Charlotte."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMd3FPcE93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMd3FPcE93EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICLwqOpOw%7CCgsIgbm-swYQuKXSbg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1718590593,
+            "review_datetime_utc": "06/17/2024 02:16:33",
+            "review_text": "Food was very weird and was honestly very disappointing. It also came at a premium. Would not recommend, nor will I eat here again. Two stars because it was technically edible."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMMVBHcVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMMVBHcVpnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICL1PGqZg%7CCgwIs663swYQuPLH9AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1718474547,
+            "review_datetime_utc": "06/15/2024 18:02:27",
+            "review_text": "Came here for my daughter's birthday and food is ok but not worth the money! Very nice environment for kids but that's about it.  I would not recommend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMLU1iTnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMLU1iTnVnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICL-MbNugE%7CCgsIq9qzswYQwNqJaQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718414635,
+            "review_datetime_utc": "06/15/2024 01:23:55",
+            "review_text": "Great fun family (and dog) friendly place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6XzVEdTdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6XzVEdTdBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDz_5Du7AE%7CCgwIzLGtswYQkN-OrgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718311116,
+            "review_datetime_utc": "06/13/2024 20:38:36",
+            "review_text": "Tasty food and a great atmosphere! We had a birthday here with a karaoke room, and the staff was very friendly and attentive throughout. Would highly recommend checking out and doubly recommend trying the brisket."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabGVpbVNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabGVpbVNnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZleimSg%7CCgwIlbijswYQkILV8QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718148117,
+            "review_datetime_utc": "06/11/2024 23:21:57",
+            "review_text": "Some of the best wings in Charlotte. The mains are all good but some of the sides are hit or miss. Fries and potato Swirl are great."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6dmFhRWNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6dmFhRWNBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDzvaaEcA%7CCgwImeOiswYQ6Nj1xwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1718137241,
+            "review_datetime_utc": "06/11/2024 20:20:41",
+            "review_text": "Closer to 3.5 however I rather round down than up in this case. Good food, even better atmosphere. Lots of space and tons for little kids to do especially in the summer. Splash pad and lots of games.\n\nWe booked the blue Karaoke room for my sons graduation dinner/gathering on a Saturday afternoon between 1-4. The staff and service left a lot to be desired. After waiting a few minutes a member of the staff came and took my debit card and my license. This card was used for both the room and food.\n\nSo we are in the karaoke room with no instructions on how to operate the equipment. Everything is in Korean, so unless you have been before you would be lost and not know how to work the system. I flagged down the staff member who has been helping me and tell her that we have no idea how to work this. It is now 1:30. This room is $120 hr. So yes time is money in this situation. After getting the 30 sec how to from the staff member we proceed to sing our butts off  ....for about another 20 mins before the sound just completely goes out. We contact a different member and they came and did something and got it back to running again. that lasted about 10 minutes before the Ipad attached to the wall with youtube (Yes you have to basically use Youtube and hope that they have the song you want to sing. I was very disappointed by this) decided to lose signal or crash. So then another member had to come and restart the ipad and turn the volume up because the sound was not very loud. I would have to assume that every room has these issues because it wasn't even an option to switch. They provided water pitchers that needed filling multiple times, but no one in sight to do so. All in all we probably lost an hour of actual karaoke time due to all of the issues. Of course in true current times when it came to settle up that 25% tip button was already selected with when it came time to pay . Because it was for my son and he was with his friends I decided not to make a scene or complain. rather I would just share our experience. The rooms are too expensive for what you get. over $400 for 3 hrs."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtb2JURVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtb2JURVpBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-obTEZA%7CCgwI3a6UswYQwPL_tgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1717901149,
+            "review_datetime_utc": "06/09/2024 02:45:49",
+            "review_text": "This place is enormous.  The beer selection is incredible.  Bartender Jay was friendly.  They even have cages to store children while you drink.  I thankfully don't have children, but it seemed to keep them away from me, which was a plus."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6d2NtLTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6d2NtLTdRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICzwcm-7QE%7CCgwI6JTysgYQuK7jkQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1717340776,
+            "review_datetime_utc": "06/02/2024 15:06:16",
+            "review_text": "They should call this Seoul Food express as the food quality is definitely not as good as as the original Seoul."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6a292ZWhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6a292ZWhnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICzkovehgE%7CCgwIp7_psgYQwJiMkwM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1717198759,
+            "review_datetime_utc": "05/31/2024 23:39:19",
+            "review_text": "Place is great for the kids to play around. Food was pretty bad, service was not good either"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6b3BmZm1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6b3BmZm1RRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICzopffmQE%7CCgwIkujosgYQ8J7OwAM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1717187602,
+            "review_datetime_utc": "05/31/2024 20:33:22",
+            "review_text": "I have been here about 4 times in the last 3 months and keep hoping it will get better each time. I found the bao buns to be stale and cold and the strawberry margarita was absolutely terrible tasting. Also not impressed with their wings but I do remember they used to be really good at the south end location. My friend had the kim bap and said she wouldn't order it again. I really want to love this place because of the location, atmosphere and the beer being so good but the food is seriously disappointing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6NExHUm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6NExHUm5RRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICz4LGRnQE%7CCgsInPPesgYQuL61Zw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1717025180,
+            "review_datetime_utc": "05/29/2024 23:26:20",
+            "review_text": "ZERO STARS. 05/29/2024\nTHERE WAS A BUG  FRIED INTO THE POTATO SWIRL SEASONED AND ALL.\n\nI used to be a fan and thought this time would be no different. Potato swirl was over cooked and broke apart and thankfully caused me to pay more attention to the overcooked/burnt parts and I FOUND THE BUG THAT I WOULD HAVE ATE.\n\nDOES NOT SEEM LIKE AN ACCIDENT CONSIDERING IT WAS SEASONED AND FRIED WITH THE SWIRL\n\nUNSANITARY AND UNSAFE. DO NOT EAT THERE."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUOC1qWHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUOC1qWHJRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDT8-jXrQE%7CCgwI2JvTsgYQiM7dqgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1716833752,
+            "review_datetime_utc": "05/27/2024 18:15:52",
+            "review_text": "Cool place, lots of space for groups... pretty reasonably priced but we waited a long time for food when there wasn't a lot of people there... would still recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUNmJhWVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUNmJhWVpBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDT6baYZA%7CCgwIsZvJsgYQ4NXGpgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1716669873,
+            "review_datetime_utc": "05/25/2024 20:44:33",
+            "review_text": "Very kid friendly, but doesn't cater to the kids food wise.  Great atmosphere. The food was ok."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUcnJIOTBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUcnJIOTBnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICTrrH90gE%7CCgwImOmPsgYQyOeNrQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715729560,
+            "review_datetime_utc": "05/14/2024 23:32:40",
+            "review_text": "Very nice atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUd29uOXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUd29uOXZnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICTwon9vgE%7CCgsI6pmDsgYQ2PLYWQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1715522794,
+            "review_datetime_utc": "05/12/2024 14:06:34",
+            "review_text": "It's a shame that such a great facility and atmosphere is going to waste for most consumers. The value at this business is extremely low, and the prices are not an indication of quality. The wings actually aren't a bad deal, although you cannot get sauce on the side with naked wings; an odd business decision. I've had better kimchi from a gas station in Alabama, which is pretty embarrassing for a Korean fusion restaurant that's charging $6 for a cup. Also, Corona Premier doesn't taste so great when it's $5.50 for a 12-fl.oz. pour.\n\nFor those with gluten sensitivity or celiacs disease: eat before you go. There is nothing for you here. Some versions of the menu say \"gluten friendly\", others say \"gluten free\". This only caters to those who choose not to eat gluten, not those that cannot. All fryers and surfaces are shared, they cannot actually offer anything (as far as I know) that is actually free of gluten.\n\nThe space is cool, the splash pad is nice for kids."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUd3Y3UDlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUd3Y3UDlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICTwv7P9gE%7CCgsIrpaDsgYQ6IyMMw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1715522350,
+            "review_datetime_utc": "05/12/2024 13:59:10",
+            "review_text": "Menu is misleading. One says \"gluten free\" one says \"gluten friendly\" - not the same. Can't accommodate food allergies or children for the most part, but advertise as a family friendly place?\n\nNo weight or serving portions listed, when the mains are THIRTY PLUS DOLLARS?! I understand it's \"family style\" portions...but list how many people it will feed.  Along with tipping for self service? Nah.\n\nThe wings are huge and honestly a good deal, but \"cannot serve naked wings with sauce on the side\"\nForreal? Why offer \"naked wings\" if you're not going to serve them with any sort of dipping sauce or sauce on the side?\n\nDrink menu on the tvs is impossible to use. Ten laminated drink menus on the bar, all with different drinks, have to read each menu individually...with ten people also trying to see the physical menus.\n\nThe only decent thing is the entertainment for kids - IF you're an attentive parent. 80% of the parents are not paying attention.\n\nPeople aren't there to watch their children, they're there to get drunk and socialize while their kids are absolute menaces to everyone - spraying people in the face with squirt guns, throwing water on anyone that's near them. Adults and other kids. I had my kid there - it's not hard to supervise.\n\nIf you're going to spend time here, eat first and pregame. You're going to buy a 12oz corona for $6."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUN05TcUVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUN05TcUVREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICT7NSqEQ%7CCgsItJWAsgYQgI-rbQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715473076,
+            "review_datetime_utc": "05/12/2024 00:17:56",
+            "review_text": "Food is okay, but the service sucks. Why would they make such a big space if they can't manage a lot of people being there? We ordered takeout and never received a notification when it was done. The cashier gave my boyfriend attitude when he had to go back for the $4 tiny Pepsis they forgot to give us. This place is cool if you want to let your children run rampant and eat mediocre food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqaUtpclB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqaUtpclB3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDjiKirPw%7CCgsIsrq5sQYQ-NPgeQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1714314546,
+            "review_datetime_utc": "04/28/2024 14:29:06",
+            "review_text": "Food and atmosphere is great but what happened to the service? We came here a lot last year and it was great but not this time. 30 employees standing around not helping. Bartenders that don't know how to make drinks. No help in the karaoke room. Get this beautiful place kicking again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqdjduVXVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqdjduVXVBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICjv7nUuAE%7CCgwI0fO0sQYQ2M6_iQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1714239953,
+            "review_datetime_utc": "04/27/2024 17:45:53",
+            "review_text": "Order two small items and two beers. Order got lost, asked after 20 minutes to look into order, no resolution. Second time at 30 minutes no resolution. Third time and final after 40 minutes, no resolution, ultimately got refund. Need a better processing system."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqM0xPQjR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqM0xPQjR3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICj3LOB4wE%7CCgwItNiGsQYQgNaDpAM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1713482804,
+            "review_datetime_utc": "04/18/2024 23:26:44",
+            "review_text": "Expensive food with tremendously trash wings. Would never recommend this place to anyone. Waste of money"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREeDZXLTlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREeDZXLTlRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDDx6W-9QE%7CCgwIjLrysAYQ8Nz1vQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1713151244,
+            "review_datetime_utc": "04/15/2024 03:20:44",
+            "review_text": "As much as I love Seoul food, I am disappointed in the large price increase in the Fire Chicken and the change in policy regarding extra sauces. Feels very penny-pinching."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREeDlpcm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREeDlpcm5RRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDDx9irnQE%7CCgsI9YjysAYQ4J2kCQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713144949,
+            "review_datetime_utc": "04/15/2024 01:35:49",
+            "review_text": "Dope atmosphere great drinks next time we eat ! The menu looks amazing! I wanna try it all nice for date nights kid friendly love it here!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREdzhPckhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREdzhPckhREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDDw8OrHQ%7CCgsIyLzqsAYQ6OKsAw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1713020488,
+            "review_datetime_utc": "04/13/2024 15:01:28",
+            "review_text": "Why bother having tofu on the menu if there is fish sauce in it and the vegetarians/vegans can't eat it? Nearly all of the sides have fish sauce in them too. The meat eaters don't want tofu. It's also not clearly labeled on the menu and we had to ask several staff members to understand what was vegetarian (just the broccoli and rice). Fish sauce is an easy replacement there are many vegan versions that nobody would be able to tell the difference. Please consider making the tofu vegetarian/vegan."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREeGFHc0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREeGFHc0pREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDDxaGsJQ%7CCgwIi9DnsAYQ4Kz-igM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712973835,
+            "review_datetime_utc": "04/13/2024 02:03:55",
+            "review_text": "This place is definitely a good place for Korean food. A little on the pricey side but worth it. The wings were large and crunchy. The brisket was perfectly cooked and flavorful. They even have ramen Mac and cheese which was very unique to say the least. Drinks were good too. Overall a great place to hangout and go on a date."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5MXZLS1Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5MXZLS1Z3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC91vKKVw%7CCgwIq9_msAYQgIP30gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712959403,
+            "review_datetime_utc": "04/12/2024 22:03:23",
+            "review_text": "Delicious food, great hang out for the family. Kids can play out on the playground or in the arcade room and everyone can enjoy amazing food. They recently increased the price on their meats. Like a HUGE jump, so that was disappointing. For us, it will likely change this place from a habitual spot to a special occasion spot. Still great food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREaHAzTkR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREaHAzTkR3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDDhp3NDw%7CCgwIiqbQsAYQ6OiPiQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712591626,
+            "review_datetime_utc": "04/08/2024 15:53:46",
+            "review_text": "This is one of our favorite family spots. The atmosphere is great - plenty of space to spread out and free games like air hockey, Killer Queen....they are very generous about having an atmosphere where people come hang out and then eat and drink when the time is right. The bulgogi bao buns are messy but delicious; my kids love the chicken tacos and potato swirls. I wish they would have salt on tables and (personal preference) serve Coke rather than Pepsi, bit those are tiny things! They also have private karaoke rooms and my daughter went to a great birthday party in one of those. We bike there - great choice if you can because parking can be tight when it's busy. A really fun destination - love it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREX1BhaWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREX1BhaWFnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDD_Paiag%7CCgwIgvXHsAYQiPbSxQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712454274,
+            "review_datetime_utc": "04/07/2024 01:44:34",
+            "review_text": "Awful, I would never go back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEcGY2NE1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEcGY2NE1REAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICDpf64MQ%7CCgsI8PigsAYQ8PWNVQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711815792,
+            "review_datetime_utc": "03/30/2024 16:23:12",
+            "review_text": "jeolmeun sedaega aideul derigo waseo pyeonhage sigsa hagie joheun gosibnida coegoyi jangso ibnida"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEcWFlYzBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEcWFlYzBnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICDqaec0gE%7CCgwIyb-dsAYQ-LSa8gI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1711759305,
+            "review_datetime_utc": "03/30/2024 00:41:45",
+            "review_text": "Today we went as a family to the Easter gathering they had. It was fun. We were able to enjoy crafts, playground, and a petting zoo for Easter. It was quite chaotic and parking was TERRIBLE, but overall a fun time with the kids. The atmosphere was fun. Korean music was playing. Plenty of seating. Drinks being made at the bar. While seated inside, we decided to order food to go since it was getting late and our kids bedtime would be soon. I only ordered two Bao buns. The pulled pork and the beef rib. Service was mediocre. It took about 40 minutes for me to get two bun sliders. And I don't think it would've been quicker until I went up and said something to the cashier. Presentation to go was like it was thrown in the box. The beef rib one was quite tough to chew. The pulled pork one was okay. The pork was tasty on this one, however had a lot more filler than pork. Eh. Was it worth the $12? Maybe. But would I order it again? No."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEdE16WXhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEdE16WXhBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICDtMzYxAE%7CCgwI-PiCsAYQ8PCWmAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711324280,
+            "review_datetime_utc": "03/24/2024 23:51:20",
+            "review_text": "Great place to socialize"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5aHBESkNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5aHBESkNBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID9hpDJCA%7CCgsIrb_TrwYQ6NDeHg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1710546861,
+            "review_datetime_utc": "03/15/2024 23:54:21",
+            "review_text": "The manager refused to swap my side after i took one bite and it was absolutely disgusting. She said i would have to pay for a whole nother $6 for something else. This was my first time here and overall a bad experience. None of the employees are welcoming. An absolute waste of money."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5Z3Z2S1NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5Z3Z2S1NnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID9gvvKSg%7CCgsI8LzMrwYQgOCIRg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1710431856,
+            "review_datetime_utc": "03/14/2024 15:57:36",
+            "review_text": "We had a birthday and did karaoke, we enjoyed our first room then upgraded to a bigger one. One person WAS CHARGED for the upgrade. As we were leaving (literally outside of the establishment) the worker let us know the card for the upgraded room declined. We gave her another form of payment and left. TWO people were charged for the upgraded room- we called to let them know & they said it would be refunded. That was 3/2. It's been almost two weeks and there has yet to be a refund. We visited the establishment on 2/24- Karaoke was great but customer service is not there. They have two locations and the East 26th Street one is lacking major."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5XzRLcVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5XzRLcVBBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC9_4KqPA%7CCgwIxu29rwYQsKWyngE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1710192326,
+            "review_datetime_utc": "03/11/2024 21:25:26",
+            "review_text": "Atmosphere is great food is bland and service sucks you just get a buzzer to go get you own food yet food is a bit pricy and flavorless  just not the best experience"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5ODhYbHB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5ODhYbHB3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC988XlpwE%7CCgwIjIuyrwYQuMLBpQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1709999500,
+            "review_datetime_utc": "03/09/2024 15:51:40",
+            "review_text": "My chicken was red on the inside for a few of my wings!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkNzdIZnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkNzdIZnhBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDd77HfxAE%7CCgwIoPz9rgYQ6IPHxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709145632,
+            "review_datetime_utc": "02/28/2024 18:40:32",
+            "review_text": "Everyone needs to know that they now have the super rare Killer Queen arcade game. I don't care if they served cold eggs, I'd still give the location a 5 star for having this masterpiece of a game!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkLV9EQnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkLV9EQnd3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDd-_DBwwE%7CCgwI5-z4rgYQyJan2gE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1709061735,
+            "review_datetime_utc": "02/27/2024 19:22:15",
+            "review_text": "We spent my moms 60th birthday here last weekend and unfortunately it was kind of a disappointment. The service was absolutely terrible- people were waiting 45 minutes in line for drinks and there really was hardly any service to the room. It seemed like no one was in charge. We were charged for drinks that we never even got and some of our drinks were even left on a tray in the common space instead of handing them to who ordered them. The other disappointing piece was that the karaoke sound kept going in and out. The mics would randomly shut off and the volume in the room would cut out on one side. Not to mention half of the time the volume was so low you couldn't even hear the music. when contacting the workers to help they were unable to provide a resolution. We made the most of it but I would never recommend anyone to this location. I was embarrassed to have put the party guests through that experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkaE1yLS1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkaE1yLS1BRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDdhMr--AE%7CCgsIoPzUrgYQgM2zHg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1708473888,
+            "review_datetime_utc": "02/21/2024 00:04:48",
+            "review_text": "This place has a play area so you would think its kid friendly. However, inside there are TVs everywhere with inappropriate music videos playing. Very disturbing\nFood was ok"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkdUwtdXFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkdUwtdXFnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDduL-uqgE%7CCgwIic7UrgYQsPLQwwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708467977,
+            "review_datetime_utc": "02/20/2024 22:26:17",
+            "review_text": "Great service, plenty of space for a get together, amazing drinks"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkcjltd3RRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkcjltd3RRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICdr9mwtQE%7CCgwIn9DNrgYQ0Kng5QE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1708353567,
+            "review_datetime_utc": "02/19/2024 14:39:27",
+            "review_text": "My first time here and would definitely recommend! The wings are great! I had the soy garlic and the spicy BBQ. I also had the \"ram & cheese\" which is mac n cheese but the noodles are Ramen. My wife had the eggrolls and a boa bun."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNkcDRISUZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNkcDRISUZREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICdp4HIFQ%7CCgwIkK_KrgYQsPG5rAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708300176,
+            "review_datetime_utc": "02/18/2024 23:49:36",
+            "review_text": "Fantastic pork belly! All the hot sauce you need"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkdU9lbGp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkdU9lbGp3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICduOeljwE%7CCgsInrKjrgYQoOKYNg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1707661598,
+            "review_datetime_utc": "02/11/2024 14:26:38",
+            "review_text": "Loved this spot for casual date night.  We had the beef rib, sweet/mild wings, kimchi slaw, sweet potato birds nest.  The food was really good. Just a mild hiccup with receiving our order.  The buzzer didn't match the order so our food sat unbeknownst to us.  Had to request fresh wings."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0NVltTElBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0NVltTElBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICt5YmLIA%7CCgsIzMbnrQYQuIneew%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1706681164,
+            "review_datetime_utc": "01/31/2024 06:06:04",
+            "review_text": "I recently dined at Seoul Food Meat Company in the Mill District, and overall, it was a satisfying experience. The food, in general, was delicious, showcasing a diverse range of flavors that truly captured the essence of Korean cuisine. However, my enthusiasm was slightly tempered by the unexpectedly large size of the chicken wings, which, unfortunately, overshadowed their flavor. Despite this minor setback, the rest of the menu offered a delightful array of options, ensuring there's something for everyone.\n\nThe atmosphere at Seoul Food Meat Company is exceptionally family-friendly, making it an ideal spot for gatherings or casual meals. Additionally, the ambiance is conducive to romantic dates, creating a versatile setting that caters to various occasions. What sets this place apart is its expansive layout, providing ample spaces for patrons to relax and enjoy their time. The abundance of seating options makes it easy to find a cozy corner or a spot that suits the mood of your visit.\n\nWhile the food left a positive impression, I found the pricing to be a tad on the higher side, particularly when it comes to the Karaoke rooms. However, considering the overall experience and the restaurant's upscale setting, the cost is somewhat acceptable. It's worth noting that the value you receive in terms of ambiance and variety on the menu helps balance out the prices.\n\nIn terms of service, I found it to be satisfactory. The staff was attentive and accommodating, contributing to the overall positive dining experience. Seoul Food Meat Company is undoubtedly a noteworthy establishment in the Mill District, offering a blend of great food, a family-friendly environment, and a spacious layout. Despite some minor drawbacks, it remains a viable choice for those seeking a diverse culinary experience in a comfortable setting"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROMmRpYU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROMmRpYU9REAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDN2diaOQ%7CCgsInZPBrQYQ2JL1Wg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1706051997,
+            "review_datetime_utc": "01/23/2024 23:19:57",
+            "review_text": "Was never given my receipt after the purchase of $90+ of food and drinks\nI remembered  and asked if it would be possible to get the receipt approximately 1 hour later as it was a business trip and needed to expense it. While one gentlemen did try to help me, the other more tenured staff told me \"we dont do that here\" referring to printing a receipt after the fact.\nSeemed odd considering I've had to do the same thing  myself for others at restaurants before.\n\nBrisket was ok.\nWings were good\nDrinks good"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOal9MRERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOal9MRERBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICNj_LDDA%7CCgsIhZCnrQYQ8MeGFw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1705625605,
+            "review_datetime_utc": "01/19/2024 00:53:25",
+            "review_text": "3.5 stars. Went on a Thursday around 6:30, Plenty of parking, Plenty of seats. Lot's of beer to choose from, and the pork belly is amazing. I had a fire chicken bao bun, delicious. The bulgogi tacos were good too, just nothing special. Both of our bao buns fell apart immediately, so we ate with Forks. Our side was baked Ramen cheese, and it wasn't bad, but it needed more seasoning and definitely more sauce. The noodles were nearly dry and I wanted more flavor. Tons of tv's inside, all playing K-pop, so really cool atmosphere. We'll come back for the pork belly for sure, and there are other things we still haven't tried."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOdF92eUd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOdF92eUd3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICNt_vyGw%7CCgsIiLimrQYQ8M_3KA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1705614344,
+            "review_datetime_utc": "01/18/2024 21:45:44",
+            "review_text": "The soy garlic wings here are pretty awesome. The crispy pork belly was a little dry."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNOc2JmTm5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOc2JmTm5RRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICNsbfNnQE%7CCgsIzOGUrQYQ4K6nFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705324748,
+            "review_datetime_utc": "01/15/2024 13:19:08",
+            "review_text": "Great wings, nice beer selection. It's a fun place for a party."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxOE8ydUlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxOE8ydUlnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID18O2uIg%7CCgsIte3crAYQ8MbJYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704408757,
+            "review_datetime_utc": "01/04/2024 22:52:37",
+            "review_text": "Food came out quick and flavor exceeded my expectations. Servings were so large had to grab a to-go plate. I would return."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxNGJMamRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxNGJMamRREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC14bLjdQ%7CCgwIq-DDrAYQiKa59QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1703997483,
+            "review_datetime_utc": "12/31/2023 04:38:03",
+            "review_text": "food was good and service sucks. never ever ever come back again. never ever recommended for anybody."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxNGRLQ3NRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxNGRLQ3NRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC14dKCsQE%7CCgwI797DrAYQkPP1vgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1703997295,
+            "review_datetime_utc": "12/31/2023 04:34:55",
+            "review_text": "everything is bad, the karaoke sound is extremely bad, it's even worse than the JBL speaker I bought in walmart, Service is negative"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxZ3FiMEN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxZ3FiMEN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC1gqb0Cw%7CCgwI9-GnrAYQ-LSToQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703538935,
+            "review_datetime_utc": "12/25/2023 21:15:35",
+            "review_text": "Delicious food and wonderful customer service! Drinks and food were made quickly, plenty of seating, and overall a great atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxbU5McGl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxbU5McGl3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC1mNLpiwE%7CCgsI79eTrAYQqLWtYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703209967,
+            "review_datetime_utc": "12/22/2023 01:52:47",
+            "review_text": "Great outdoor area"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWXzUtQkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWXzUtQkhnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDV_5-BHg%7CCgwI3qSIrAYQiMa9_gE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1703023198,
+            "review_datetime_utc": "12/19/2023 21:59:58",
+            "review_text": "Restaurant had a school lunchroom feel, but more upscale. We spent over $100 and ordered multiple dishes....unfortunately most  of our dishes ended up in trash. Brisket was mostly gummy fat, corn pimento was refrigerator cold,  wings were too saucy, chicken and fish tacos were super bland, and the drink dispenser needs to be deep cleaned (mold is where the ice is dispensed). Had high expectations because of our past visit to a similar style restaurant (Hawkers) and this place looked really nice. We won't be returning,  but hopefully my feedback can help the restaurant and/or other patrons going forward."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWcjh6WndRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWcjh6WndRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDVr8zZwQE%7CCgsIzMSDrAYQ8NSydg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702945356,
+            "review_datetime_utc": "12/19/2023 00:22:36",
+            "review_text": "I ordered the beef rib and sweet potato strings. It was the biggest piece of meat I'd ever eaten. It was also very tender and seasoned well. The sweet potato strings weren't that great to me because they were extremely sticky and difficult to pull apart. The service was good and the restaurant was clean."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWd2VHRGp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWd2VHRGp3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDVweGDjwE%7CCgsIn6XmqwYQ2LiPXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702466207,
+            "review_datetime_utc": "12/13/2023 11:16:47",
+            "review_text": "Good food and $2 beers on game days!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWc3N2Q1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWc3N2Q1lREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDVssvCYQ%7CCgwI8ZrfqwYQkJ61vgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702350193,
+            "review_datetime_utc": "12/12/2023 03:03:13",
+            "review_text": "Went to A Christmas party here. Great food and had a blast. Well done"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWbGMtbER3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWbGMtbER3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICVlc-lDw%7CCgwIutzMqwYQkMehzgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702047290,
+            "review_datetime_utc": "12/08/2023 14:54:50",
+            "review_text": "The wings! The most unique, flavorful wings I have had in a long time. They are fried but not greasy, the soy glaze is slightly sweet. The wings are big and meaty. Delighted the whole family after a shared beef bulgogi taco that we almost fought over to get the last bite. Don't miss this treasure of a restaurant!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWaU5TT1ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWaU5TT1ZBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICViNSOVA%7CCgsIqcO6qwYQqKT-Ow%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1701749161,
+            "review_datetime_utc": "12/05/2023 04:06:01",
+            "review_text": "Just had our annual holiday work party and was severely disappointed by the customer service provided. The food was good. The wait staff was helpful.\nWe rented a private room, my company spent hundreds of dollars only to come out to two of our cars being towed by the restaurant's hired tow company.\nI'd be more understanding if it wasn't a Monday night.\nI would have been more understanding except where one car was parked-there was no signage for required paid parking.\nI would have been more understanding if one car, that did pay, hadn't been expired by FOUR minutes. The expiration time was 9:25, the car was towed at 9:29.\nWhy are we paying hundreds of dollars at a restaurant that allows for this to happen. I completely understand towing on a weekend or even Thursday and Friday. That area is notorious for people parking and walking other bars and events, but on a Monday....they're going to allow this to happen at their establishment.\nHonestly even if our cars hadn't been towed, it's not good enough to have gone back."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURsMWFHWUNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURsMWFHWUNBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDl1aGYCA%7CCgsIqK-vqwYQsNeMNg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701566376,
+            "review_datetime_utc": "12/03/2023 01:19:36",
+            "review_text": "I love this place! I got sweet & mild wings and kimchi fries and they were so good! My friend got soy garlic boneless wings and the potato swirl, he let me try both and they were delicious as well. Definitely recommend this place for the food and the atmosphere."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURsbHUtR0xBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURsbHUtR0xBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDllu-GLA%7CCgsI-JOpqwYQiIfneg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701464568,
+            "review_datetime_utc": "12/01/2023 21:02:48",
+            "review_text": "Southern style BBQ place with a touch of Korean fusion. A good place to introduce someone to Korean flavor but has an American pallet.\n\nImpressed they had not just Soju behind the bar, but Makgeoli maggeolri and Bokbunja Ju bogbunjaju\n\nWalkable from the light rail station."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsNDVIblJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsNDVIblJREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICl45HnRQ%7CCgwI4_WKqwYQwObykgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700969187,
+            "review_datetime_utc": "11/26/2023 03:26:27",
+            "review_text": "The food was amazing. However, the service sucks. The guy took us into the room, then left and never came back. After 15 minutes, he came back with one cup of water that ONLY filled up 3 cups. We had a group of ppl, which made no sense to me.\nMy first time coming here and i was not impressed with the service. He then comes back 30 minutes later with another water and some extra cups. We wanted to order food however he again disappeared into thin air and we had to leave the room to make orders outside which is such an inconvenience as there was hardly any customer outside of this room that needed service which made no sense to me.\nI would not recommend coming here to pay so much. Service was horrible, but food was good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsNDRpQ3hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsNDRpQ3hnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICl44iCxgE%7CCgwIjaeKqwYQ8PH6vAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700959117,
+            "review_datetime_utc": "11/26/2023 00:38:37",
+            "review_text": "We got a room, and the guy who served us only brought in one water, which only filled 3 cups, and he never came back.\nFirst time here, and I had a horrible experience and would not recommend it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscGRXeFd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscGRXeFd3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIClpdWxWw%7CCgwIn9D6qgYQqJG6tQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1700702239,
+            "review_datetime_utc": "11/23/2023 01:17:19",
+            "review_text": "No vegan options. The atmosphere is really nice but the person who got our order didn't get half of the things."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNsMmFpNDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNsMmFpNDVnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICl2ai45gE%7CCgwI8cr1qgYQiJPkxwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700619633,
+            "review_datetime_utc": "11/22/2023 02:20:33",
+            "review_text": "Awesome casual place with really good food, great beer selection, and very friendly staff.\n\nI ordered the sweet and spicy wings and a potato spiral but I regret not ordering the massive beef rib as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscnNuaVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscnNuaVhBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIClrsniXA%7CCgwI8LPkqgYQyLPH1wI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1700338160,
+            "review_datetime_utc": "11/18/2023 20:09:20",
+            "review_text": "I regret having to post this review.  Afthree years of enjoying the food, wait service and atmosphere I had a serving of Beef ribs, slaw and corn that made me sick.\nI had food poisoning and this was the only meal I had that day.  Manager Adam was not professional at all when I reported my experience to him.\nI only ate part of the meal and returned the remaining portion.\nHe offered to credit me for the sides and told me the Rib was not covered.  I had called the next day after my dine incident  and was not responded to for two weeks. Adam held me responsible because he said that I had ignored 3 calls he made to me; even those never left a message. TERRIBLE MANAGER!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGbllYbTVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGbllYbTVRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICFnYXm5QE%7CCgwInPqDqgYQ8PTAyQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698757916,
+            "review_datetime_utc": "10/31/2023 13:11:56",
+            "review_text": "Great for kids, adults and families! Always a good time!! We come all the time!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGdWZXRTRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGdWZXRTRBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICFufWE4AE%7CCgwIpbX5qQYQ6PP07gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698585253,
+            "review_datetime_utc": "10/29/2023 13:14:13",
+            "review_text": "I enjoy coming to this place every time I come to Charlotte!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1a2VDMjBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1a2VDMjBRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID5keC20QE%7CCgwInpPlqQYQ-LquxAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698253214,
+            "review_datetime_utc": "10/25/2023 17:00:14",
+            "review_text": "This location just makes sense. No paying to park, get a buzzer and bring your food to a huge assortment of tables inside and out. Fantastic outdoor space with much of it covered. Very accessible space as well. Food was just as good and possibly better than than the other location. I've never had boneless wings this juicy. The skin on the pork belly bao was so crispy I don't have words."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1aXVTZFl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1aXVTZFl3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID5iuSdYw%7CCgwI6-7TqQYQ8MDerAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697970027,
+            "review_datetime_utc": "10/22/2023 10:20:27",
+            "review_text": "Always delicious"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1a0xycnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1a0xycnZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID5kLrrvQE%7CCgwI58fAqQYQ0JOTjwI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1697653735,
+            "review_datetime_utc": "10/18/2023 18:28:55",
+            "review_text": "This place represents everything wrong with going out to eat in the US right now. Overpriced, sloppily-prepared food, with absolutely terrible service from employees with no professionalism. They charge $7 for \"gochujang broccoli salad\", which is a small paper tray with cold steamed broccoli and gochujang dumped on top. When I told them I wasn't paying for the broccoli salad, it was a bunch of attitude from the manager, like it's my fault they don't know how to prepare something that is worth the price. It's a shame because they have a really nice space that is very family-friendly. The problem is that the food and service are abysmal. I would never recommend going here to anyone. I wish Google would let you give zero stars because this is the worst dining experience I've had in Charlotte in a very long time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1bWZYQjZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1bWZYQjZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC5mfXB6QE%7CCgwI_6iwqQYQgIP4qAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697387647,
+            "review_datetime_utc": "10/15/2023 16:34:07",
+            "review_text": "Private karaoke rooms were awesome! Great beer selection and although I did not eat there, the food our friends got looked and smelled great. Fun time was had by all!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM1d3BfV3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1d3BfV3pnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC5wp_WzgE%7CCgwIzsedqQYQiMvv0QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697080270,
+            "review_datetime_utc": "10/12/2023 03:11:10",
+            "review_text": "Had the brisket, huge portion and very tasty.  Casual sports bar/arcade atmosphere very family friendly.   Downside  long wait for food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaamZDWjVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaamZDWjVBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDZjfCZ5AE%7CCgwItPL9qAYQ-OS5jAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696561460,
+            "review_datetime_utc": "10/06/2023 03:04:20",
+            "review_text": "Had the wings, the Philly rolls, and the pork buns. All fantastic. The soy ginger sauce on the wings was really good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaOWVpbDZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaOWVpbDZBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDZ9eil6AE%7CCgwI49X8qAYQ8KubmAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696541411,
+            "review_datetime_utc": "10/05/2023 21:30:11",
+            "review_text": "Interesting place, and if your into KPop it's for you. The food was prepared well and came in large portions."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaaGFuWXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaaGFuWXVnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDZhanYugE%7CCgwIooT3qAYQsP73iwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1696449058,
+            "review_datetime_utc": "10/04/2023 19:50:58",
+            "review_text": "World's food I've ever tasted in my entire life I hate this place we only went there because what we had seen on food Network the place is clean the food is absolutely terrible!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaa0xpVlJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaa0xpVlJnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDZkLiVRg%7CCgwInvS1qAYQ2Ie2iQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695382046,
+            "review_datetime_utc": "09/22/2023 11:27:26",
+            "review_text": "En cuanto al servicio muy bueno lo unico que tu haces la orden en el mostrador y tu mismo la recibes cuando te llaman. Servicio a la mesa agua y recoger los trastos."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaNThuUGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaNThuUGN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZ58nPcw%7CCgsImYGoqAYQyLyjaA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695154329,
+            "review_datetime_utc": "09/19/2023 20:12:09",
+            "review_text": "I like the Mill District location a ton. Plenty of seating. Great vibes, next time I'll check out the karaoke room! Food is amazing just like the original location. Parking is much more accessible at this location!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaODllSnZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaODllSnZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZ89eJvQE%7CCgwItZqeqAYQgJWBngM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1694993717,
+            "review_datetime_utc": "09/17/2023 23:35:17",
+            "review_text": "Overall pretty good.. but I would double check your order before paying. They somehow heard wings when I was ordering one of the tofu dishes. When the order came out I told them I didn't order wings.. I was told \"sorry... nothing we can do\".  But who knows you may get gifted wings when you're there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNobmZlOWV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNobmZlOWV3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChnfe9ew%7CCgwIu5uUqAYQkJ_cpgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694830011,
+            "review_datetime_utc": "09/16/2023 02:06:51",
+            "review_text": "Love this place! Food is amazing, drinks are great, atmosphere is perfect for families with young kids."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaOFlpZFpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaOFlpZFpBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZ8YidZA%7CCgwI9c-CqAYQ-IuQ7AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694541813,
+            "review_datetime_utc": "09/12/2023 18:03:33",
+            "review_text": "Great place, tacos are very good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaMXBhbzBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaMXBhbzBRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZ1pao0QE%7CCgwIguT0pwYQ0P2nwgI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1694315010,
+            "review_datetime_utc": "09/10/2023 03:03:30",
+            "review_text": "Amazing atmosphere, food sucks (some was inedible and I don't remember the last time I skipped finishing a meal)."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaMXJLTlN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaMXJLTlN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZ1rKNSw%7CCgsI2dT0pwYQyI6NLw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1694313049,
+            "review_datetime_utc": "09/10/2023 02:30:49",
+            "review_text": "Nothing is vegetarian, everything contains fish. Why put tofu on your menu if you're going to put fish in it??? The bbq sauce, the soy garlic, the side of broccoli, literally everything had fish sauce in it so all we could eat was rice and French fries. Not veg friendly at all which I guess shouldn't be surprising because of the name, but still it wouldn't hurt to leave the animals out of the tofu so vegetarians and vegans could eat there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNabHZXNmJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNabHZXNmJnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZlvW6bg%7CCgoIifjzpwYQ6Iwo%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694301193,
+            "review_datetime_utc": "09/09/2023 23:13:13",
+            "review_text": "First time here and it's great! Got kimchi fries and bulgolgi taco. Delicious!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNac3ZmSjRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNac3ZmSjRnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICZsvfJ4gE%7CCgwIgLjopwYQ6NSW9QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694112768,
+            "review_datetime_utc": "09/07/2023 18:52:48",
+            "review_text": "Great place to hang out, The Karaoke rooms were my favorite part the food was good too "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwX2Nta1V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwX2Nta1V3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDp_cmkUw%7CCgwI64-upwYQkNSZ8QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1693157355,
+            "review_datetime_utc": "08/27/2023 17:29:15",
+            "review_text": "Finding a parking here is a nightmare. Waiting for 30 mins without parking. Never come here again."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwc2FyRTBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwc2FyRTBRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDpsarE0QE%7CCgwIza6apwYQ-Lmo1AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1692833613,
+            "review_datetime_utc": "08/23/2023 23:33:33",
+            "review_text": "Service has FALLEN OFF A CLIFF. It used to be a 10 to 15 minute wait for food and now it's continuously a 30+ minute wait. They apparently stopped profit sharing and I wonder if that has to do with the poor service. Shocking how a month can make such a difference. Also the new trivia person is WAY worse than the old trivia person. Food is still great though"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwMFlMVXZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwMFlMVXZnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDp0YLUvgE%7CCgwIlLeZpwYQ4Im5nQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1692818324,
+            "review_datetime_utc": "08/23/2023 19:18:44",
+            "review_text": "Place is large and very new. I just don't like all the barbecue flavor on all my food. Tried a variety of foods and they all had a strong barbecue taste."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwa2I3NTR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwa2I3NTR3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDpkb754wE%7CCgsIjveYpwYQ6KjGYg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692810126,
+            "review_datetime_utc": "08/23/2023 17:02:06",
+            "review_text": "Incorrectly marking food as \"GF\" when it is not. Fried food marked as Gluten Friendly and food staff having little to no knowledge about gluten. If they update the menu or have dedicated friers that never touch gluten, I'll remove the comment. Otherwise good atmosphere..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwX29fTzJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwX29fTzJRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDp_o_O2QE%7CCgwIn8yVpwYQgLj61gI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1692755487,
+            "review_datetime_utc": "08/23/2023 01:51:27",
+            "review_text": "I had the worst experience in my life here. I ordered wings at 7:45. I did not get my food until 9:20. That is insane. My friend rented a Karoke room and the manager was my server. She never came back and asked us if we need anything. I had to continually walk to the front for service. I do not work at Seoul food meat company. I should not have to run back and forth like I'm a server. We had multiple ppl to join the party and no one came and asked them if they needed anything. This is unacceptable and I will never return. The manager was very nasty and very rude. You may as well have an AI robot run the show if she can't simply provide customer service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwbnZHdGZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwbnZHdGZ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDpnvGtfw%7CCgwIn4yTpwYQqI3KuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692714527,
+            "review_datetime_utc": "08/22/2023 14:28:47",
+            "review_text": "This place is amazing. It has everything: food, a mini water park for the kiddies, live music, an arcade, a food court nearby, K-pop atmosphere and it straddles the thread trail!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwNXQ2Qm9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNXQ2Qm9nRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDp5t6BogE%7CCgwI1MyMpwYQyJTy3QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1692608084,
+            "review_datetime_utc": "08/21/2023 08:54:44",
+            "review_text": "No good for a gluten free meal"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwcFBqbUVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcFBqbUVnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDppPjmEg%7CCgwIrOzypgYQ4ObrggE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692186156,
+            "review_datetime_utc": "08/16/2023 11:42:36",
+            "review_text": "My favorite was the fish bao; didn't like the fried whole tilapia and kimbaps. It's self served at this place and the staff was friendly.  The outside amenities were fantastic with playground and a theater. The karaoke room was nice,  although wireless mic would've been better."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdjdhM1FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdjdhM1FBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpv7a3QA%7CCgwIr97jpgYQgJXw-QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691938607,
+            "review_datetime_utc": "08/13/2023 14:56:47",
+            "review_text": "We love coming here. The atmosphere is relaxed and our kids love it because they can play. There's a playground and a splash pad. The food is really good and there's an awesome selection of beers on tap."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdjRxWGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdjRxWGlnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpv4qXigE%7CCgwI0NPjpgYQ4PrFwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691937232,
+            "review_datetime_utc": "08/13/2023 14:33:52",
+            "review_text": "Great outside area, family friendly, really good food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwcl9tQ0RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwcl9tQ0RBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpr_mCDA%7CCgsIkcbgpgYQkJmkaQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691886353,
+            "review_datetime_utc": "08/13/2023 00:25:53",
+            "review_text": "Love the atmosphere! The food was really good!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwOGRlYndnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwOGRlYndnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICp8debwgE%7CCgwI9f66pgYQsLDGngM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691271029,
+            "review_datetime_utc": "08/05/2023 21:30:29",
+            "review_text": "Great new venue, all in all. Good and fairly priced food and beer and lots to do for the family"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwZ2YtQkF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwZ2YtQkF3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpgf-BAw%7CCgwIuJm2pgYQgKaumwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1691192504,
+            "review_datetime_utc": "08/04/2023 23:41:44",
+            "review_text": "Food was decent a bit overpriced, expect to see naked kids running around back. I Wish management watched this closer. Not how I expected to enjoy my meal. Atmosphere was pretty cool though and the service was great"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwZ1lXb2tRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwZ1lXb2tRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpgYWokQE%7CCgwI4ee1pgYQkLz5pwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691186145,
+            "review_datetime_utc": "08/04/2023 21:55:45",
+            "review_text": "This location is awesome! So much to do for fun and incredibly kid friendly\nThe food is great and the drinks are pretty good too.\nHighly recommend"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwak1QLXp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwak1QLXp3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICpjMP-zwE%7CCgwI3cSWpgYQsOCPqwM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1690673757,
+            "review_datetime_utc": "07/29/2023 23:35:57",
+            "review_text": "Good place to hangout.. food and service is meh"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKdjduWTh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKdjduWTh3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJv7nY8wE%7CCgsImdWBpgYQkMmpYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690331801,
+            "review_datetime_utc": "07/26/2023 00:36:41",
+            "review_text": "The food was out of this world! All of the bao and eggrolls are amazing"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKcjdTTElBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKcjdTTElBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJr7SLIA%7CCgwI1OD-pQYQiOWJ-wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1690284116,
+            "review_datetime_utc": "07/25/2023 11:21:56",
+            "review_text": "Kind of a free for all. Kids everywhere. The food is excellent."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKdFlfbnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKdFlfbnp3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJtY_nzwE%7CCgwIhavqpQYQyJefogI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689949573,
+            "review_datetime_utc": "07/21/2023 14:26:13",
+            "review_text": "Exciting Asian-Southern cuisine fusion with a hip NoDa atmosphere. Dog park, kid's playground, mini fountain play area, air hockey, shuffleboard, karaoke, yoga classes, and a bar. Indoor and outdoor seating available. The Korean bbq wings are serious. Kim bab is on point."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKbnZyTnFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKbnZyTnFRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJnvrNqQE%7CCgwI38LVpQYQiKPalwE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1689608543,
+            "review_datetime_utc": "07/17/2023 15:42:23",
+            "review_text": "It is a very nice place. It is a place where you could bring the family or have lunch with significant other or friends.  The atmosphere is great and the drinks are pretty good!  They even have mock tails for people who don't drink alcohol or you can add liquor to them. Service was helpful . I asked many questions and the server answered all of them.  The food was okay. It wasn't as good as I expected though.  The food wasn't hot at all. I asked the person at the register about it and they stated  the food does not come out hot. So if you like your food hot, you won't get that here from my experience.  The wings were really good! The cheesesteak eggrolls weren't good they were cold, as were the fries, and not flavorful. The vibe of the restaurant was better than the actual food.  I could have just gone on an off day."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKbnZEUUFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKbnZEUUFREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJnvDQAQ%7CCgsI9bzVpQYQwMzvEQ%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1689607797,
+            "review_datetime_utc": "07/17/2023 15:29:57",
+            "review_text": "The outside atmosphere saves this place as a dining option. The food and presentation is lacking. Spent $90 to have food served cafeteria style. The brisket was very good in flavor but due to it being served directly on a metal tray, the meat got cold fast. I was turned off  having to eat my brisket from a shared metal tray. I guess I could have asked for another \"paper plate\".  The bao sliders were pretty good but the side dishes have no flavor at all. If you want a full Asian Fusion dining experience, go elsewhere. This is a nice spot for a hang out and appetizers."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKbW9xZm53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKbW9xZm53RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJmoqfnwE%7CCgsIorrIpQYQ4L7yFQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1689394466,
+            "review_datetime_utc": "07/15/2023 04:14:26",
+            "review_text": "Customer service is terrible!! Find another place in CLT, this place is a disgrace!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKbW9yaE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKbW9yaE9REAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJmorhOQ%7CCgwI57nIpQYQ-NbpxgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1689394407,
+            "review_datetime_utc": "07/15/2023 04:13:27",
+            "review_text": "Customer service is trash! Waiters are rude and the business try to take your money!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKbXZLdU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKbXZLdU9BEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJmvKuOA%7CCgwIuLnIpQYQoLHHhwM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1689394360,
+            "review_datetime_utc": "07/15/2023 04:12:40",
+            "review_text": "Management asked us to leave earlier than the time we paid for. Management also gave us a hard time about rules. When we asked for a copy of the contract, one could not be provided."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKcXRYMGxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcXRYMGxnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJqtX0lgE%7CCgwIue7GpQYQ8OCGpwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1689368377,
+            "review_datetime_utc": "07/14/2023 20:59:37",
+            "review_text": "Food was pricey. The spicy wings wasn't spicy at all, but the sauce was super thick. The games & karaoke rooms looked fun."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKaVBDV0dnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKaVBDV0dnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJiPCWGg%7CCgwIs8K2pQYQsI3LvwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1689100595,
+            "review_datetime_utc": "07/11/2023 18:36:35",
+            "review_text": "Cool place.  Vegan options"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKcU5uUjhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcU5uUjhBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDJqNnR8AE%7CCgwIkditpQYQoMniqAI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1688955921,
+            "review_datetime_utc": "07/10/2023 02:25:21",
+            "review_text": "The only reason I am giving a lower rating is the fact that this place is 100% geared toward families but yet they don't have a kids menu. I'm sorry but the age of kids who want to play in the splash pad are kids who don't eat kimchi. Offer grilled cheese, chicken tenders and regular fries at a minimum."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKLTk3UjRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKLTk3UjRRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJ-97R4QE%7CCgwIndWXpQYQyMzFxAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688595101,
+            "review_datetime_utc": "07/05/2023 22:11:41",
+            "review_text": "Excellent selection of small to medium sized dishes with a large variety of meats to choose from. All meats were tender, well seasoned, and well cut. Awesome beer selection as well. Great for friends, family, or anything in between! Will be returning!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKdTRfcXNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKdTRfcXNBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJu4_qsAE%7CCgsIhq6XpQYQ4MuqcQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1688590086,
+            "review_datetime_utc": "07/05/2023 20:48:06",
+            "review_text": "Very weird environment. We had a large group of employees receive a stern talking to from their manager directly behind our table."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKMl9MWm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKMl9MWm13RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJ2_LZmwE%7CCgsIuJiWpQYQ8NSKMA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1688570936,
+            "review_datetime_utc": "07/05/2023 15:28:56",
+            "review_text": "Was not a fan of the food, pretty disappointed overall. The \"ram and cheese\" $8 side was tasteless."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKb19xQlZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKb19xQlZBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJo_qBVA%7CCgwIzMGNpQYQ8MzGiQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688428748,
+            "review_datetime_utc": "07/03/2023 23:59:08",
+            "review_text": "Really fun family friendly restaurant with lots of activities for kids. The food is really good. Highly recommend the Beef Rib. The only bummer is that Kalbi isn't on the menu."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKN1l2WXBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKN1l2WXBBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJ7YvYpAE%7CCgwImf6HpQYQkPrJwQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1688338201,
+            "review_datetime_utc": "07/02/2023 22:50:01",
+            "review_text": "Horrible service and terrible rude management"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKaVoybnd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKaVoybnd3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJiZ2nwwE%7CCgsI5df3pAYQ6LXrcA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688071141,
+            "review_datetime_utc": "06/29/2023 20:39:01",
+            "review_text": "My first time here, spendy but great fine dining atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKc2ZicTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKc2ZicTdRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJsfbq7QE%7CCgsImon2pAYQqK65Qw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688044698,
+            "review_datetime_utc": "06/29/2023 13:18:18",
+            "review_text": "We went to the Mill District location and it is huge, the food was great and service too, just gotta wait for the area to catch up with the vision, so much construction and stuff there now in the area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKdXNLYlhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKdXNLYlhREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJusKbXQ%7CCgwItMnhpAYQqJ7lwQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687708852,
+            "review_datetime_utc": "06/25/2023 16:00:52",
+            "review_text": "Wear your stretchy pants!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKeUlTTzV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKeUlTTzV3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJyISO5wE%7CCgwIlr_CpAYQoJXztgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687199638,
+            "review_datetime_utc": "06/19/2023 18:33:58",
+            "review_text": "Came here with our family - was blown away! Splash pad and jungle gym play area - it is amazing. We stayed for a few hours. Carly from behind the bar was fantastic. Thanks!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKa0l2UzhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKa0l2UzhBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICJkIvS8AE%7CCgwIr7y_pAYQ6JahmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687150127,
+            "review_datetime_utc": "06/19/2023 04:48:47",
+            "review_text": "The place is an exceptional place to enjoy food and gather with friends....."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4allMVVJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4allMVVJ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxjYLURw%7CCgwI6JigpAYQkK_G9AE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1686637672,
+            "review_datetime_utc": "06/13/2023 06:27:52",
+            "review_text": "not good experience"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4aVlyRHZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4aVlyRHZ3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxiYrDvwE%7CCgwI-fGSpAYQ0MixigM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1686419705,
+            "review_datetime_utc": "06/10/2023 17:55:05",
+            "review_text": "Extremely family friendly restaurant with a splash pad, playground, and large covered patio. I was so amazed!\n\nThe food is not really my style, but I did enjoy the bulgogi fries! I came mainly for the karaoke, and had a blast in the private room with my group of friends!."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4a2FDUDNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4a2FDUDNRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxkaCP3QE%7CCgwIi7aPpAYQwL_hogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686362891,
+            "review_datetime_utc": "06/10/2023 02:08:11",
+            "review_text": "Great wings!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4NGItUVdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4NGItUVdnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDx4b-QWg%7CCgwI1K-PpAYQoP2f_gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686362068,
+            "review_datetime_utc": "06/10/2023 01:54:28",
+            "review_text": "Josh & Carley hit the spot"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4dnJiNkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4dnJiNkZBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxvrb6FA%7CCgwIz9OKpAYQ-JX15QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686284751,
+            "review_datetime_utc": "06/09/2023 04:25:51",
+            "review_text": "Absolutely amazing food! Quick service! Beautiful outdoor eating and indoor eating area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4dnJqZHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4dnJqZHBnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxvrjdpgE%7CCgsI-qKKpAYQ0MngHw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1686278522,
+            "review_datetime_utc": "06/09/2023 02:42:02",
+            "review_text": "The food is not good.  I could put the grease from the dirty rice in my hair because there was so much of it in the bowl's bottom.  They offer those large jumbo wings, which I don't like. The taco with chicken was good. The egg rolls could use a different sauce and more meat. Just not what I was expecting. Very disappointing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4Z3BPc2lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4Z3BPc2lnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxgpOsigE%7CCgwIrKHyowYQ0K7LpgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685885100,
+            "review_datetime_utc": "06/04/2023 13:25:00",
+            "review_text": "Staff very friendly, chicken wings are huge and taste is amazing!!! Recommend asking questions because they explain everything about their items!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4dkxqdndBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4dkxqdndBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDxvLjvwAE%7CCgwI4ervowYQuOuSvgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1685845345,
+            "review_datetime_utc": "06/04/2023 02:22:25",
+            "review_text": "As we were leaving our party witnessed a employee take a puppy directly to the kitchen. One of the kitchen employees was touching the puppy with gloves on. We told Bailey and all she said was she yelled at her for doing so.\n\nOutside of the dog being taken to the kitchen the overall service was terrible. We will NEVER come back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4M1BDSHVRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4M1BDSHVRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDx3PCHuQE%7CCgwIsM3uowYQsK73hgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685825200,
+            "review_datetime_utc": "06/03/2023 20:46:40",
+            "review_text": "A far larger site than the one located within Southend. Those Spicy BBQ wings (bone-in) are thick and delightfully scrumptious. The Pineapple Soju definitely rounded out the meal perfectly lol. Staff was super friendly so A+."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR4OUttSkNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR4OUttSkNBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDx9KmJCA%7CCgwIyebpowYQgLH-kwE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1685746505,
+            "review_datetime_utc": "06/02/2023 22:55:05",
+            "review_text": "I cannot give this place more than 3 stars because of its food. It's too greasy and the sides are very bland. I expected more spice. The bbq has limited variety of sauces which was disappointing. The atmosphere is great though and the drinks are fine. Good for get togethers and hangout but for food I recommend the options in the market next to it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4MjZHYVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4MjZHYVpBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICx26GaZA%7CCgwIh7zEowYQiKLxxwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685134855,
+            "review_datetime_utc": "05/26/2023 21:00:55",
+            "review_text": "The food wasn't bad. But it wasn't great either. Some of the stuff I got was really good and the other stuff was just ok.\n\nIf I could rate this on a scale of 1 thru 10, I'd give it a 7/10 if not 8/10. Some of the meats on their bao buns and tacos are really good and some aren't. The sides, were ok. I wished they had better sides. The one I ordered wasn't the best sides I've had at a korean themed restaurant.\n\nIf you got money to splurge, then splurge on the bbq beef rib. It's expensive but it was actually pretty good. Much better than I had thought it would have been.\n\nThe atmosphere was great though. Seems like a really cool spot to hangout. Good place to get group of friends together to hangout. The bar looked legit.\n\nThe service was great. And their cleaning crew was great. Parking lot was fairly large given the location of the area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4eTRUTHVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4eTRUTHVBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICxy4TLuAE%7CCgwIqdbAowYQwPjq7AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685072681,
+            "review_datetime_utc": "05/26/2023 03:44:41",
+            "review_text": "Very delicious food and a good time was had by all."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4MDdITlhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4MDdITlhnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICx07HNXg%7CCgsIhqO9owYQ6MSVDg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685016966,
+            "review_datetime_utc": "05/25/2023 12:16:06",
+            "review_text": "Amazing place to bring your kids for an afternoon. Everything you could ever ask for in one place: great food and drinks, playground, dog park, splash pad, games... ext."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4MGF2NlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4MGF2NlpnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICx0av6Zg%7CCgwIx8OfowYQiKDK7QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684529607,
+            "review_datetime_utc": "05/19/2023 20:53:27",
+            "review_text": "This is such a cool place with a food hall that is family and pets friendly. Grab food and enjoy a movie in their courtyard that has lots of seating and a playground for the kids to run around. There are karaoke rooms available to sing your heart out and a few other fun game activities in the back room. It was really well thought out. I loved it being that I was visiting from another state and we don't have such a place where I live. I've been craving for crispy pork belly and they delivered along with other really good food too! Great food with great company. A must visit!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4dnAzUUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4dnAzUUh3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICxvp3QHw%7CCgwIjaKZowYQwJvSqAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684427021,
+            "review_datetime_utc": "05/18/2023 16:23:41",
+            "review_text": "I love this new location! The food is still amazing and the spot is so big. I enjoy all the activities they have as well!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NXNUeFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NXNUeFN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICx5sTxSw%7CCgwIxPeOowYQ2LGljQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1684257732,
+            "review_datetime_utc": "05/16/2023 17:22:12",
+            "review_text": "Staff were super friendly! And the Place was clean and comfortable to be able to eat in.\nonly issues is the Food was cold and you can tell they precook everything. Food was Overpriced."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4cXItWVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4cXItWVhREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICxqr-YXQ%7CCgwIqpGIowYQ6O_y_QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684146346,
+            "review_datetime_utc": "05/15/2023 10:25:46",
+            "review_text": "Such a simple setup that works.  Plenty of space with an open design.  Order your food,  grab it when it's ready,  and find a spot inside or outdoors. Food is delicious and the bar has plenty of options for drinks. We will definitely be back with a large group."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4aW95X2xRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4aW95X2xRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICxioy_lQE%7CCgwI1_WEowYQ8IHohgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1684093655,
+            "review_datetime_utc": "05/14/2023 19:47:35",
+            "review_text": "I only gave them one star because I couldn't give them zero. The food was cold and overpriced with little to no taste. Everything was mostly precooked and not too many made to order items. Parking lot was full of cars which gave an illusion that food was good. However, there were more flies in the restaurant than customers. Looks like most of the customers only come here to bring their kids to the playground."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NHZHSUlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NHZHSUlnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICx4vGIIg%7CCgwIpsOAowYQqJTdowM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684021670,
+            "review_datetime_utc": "05/13/2023 23:47:50",
+            "review_text": "Even if the staff wasn't so amazing and kind. the food is what's the best ! Kimchi fries were great !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4aUtPTEZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4aUtPTEZBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICxiKOLFA%7CCgwI5rjoogYQ4NWNuQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683627110,
+            "review_datetime_utc": "05/09/2023 10:11:50",
+            "review_text": "Pretty awesome place...loved the dog park.  Solid selection of beer...only had apps."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSXzRIOWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSXzRIOWRREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDR_4H9dQ%7CCgwIx8bfogYQ8Lrq_AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683481415,
+            "review_datetime_utc": "05/07/2023 17:43:35",
+            "review_text": "Soju and karaoke ?? I think YES. Loved everything about this day. We got the gold room it was beautiful, definitely want to come back with more friends and get a bigger room ! The lychee mock tail was also so so good!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSbjdpNTJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbjdpNTJBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRn7i52AE%7CCgwIgdLcogYQkM_I0QI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1683433729,
+            "review_datetime_utc": "05/07/2023 04:28:49",
+            "review_text": "Count your chicken wings people.\n\nOrdered 10 pieces of the soy garlic chicken wings. Picked them up and noticed that the wings were huge, which I was happy about. Then I started counting my wings, which I never do, and found out they shorted me 4 wings. Had to go back to the counter and ask for the missing wings.\n\nAside from that, I thougt the wings tasted great. Ordered the dirty brown rice which was also good. Will come back for sure."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSejRfTzBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSejRfTzBRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRz4_O0QE%7CCgsI65_aogYQqOvBAg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1683394539,
+            "review_datetime_utc": "05/06/2023 17:35:39",
+            "review_text": "Disappointed. After loving the experience at Seoul Food Meat Company's other location we brought our friends and talked highly of this restaurant but we're sadly eating our words.\n\nSpeaking of food, the pork belly was so over cooked it could cut the roof of your mouth. I could drink the oil from the dirty rice. The brisket was a huge disappointment, dry with a fake smoky flavor. Potato salad was bland and underwhelming.\n\nThe crowd this site brings in on a Saturday around lunch are parents with kids who will take up entire benches for the outside seating area. For a group of four it was hard to find outdoor seating. If you are coming to eat here with friends go to the other location.\n\nLove the original restaurant this site needs some work."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSd19PcmZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSd19PcmZnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRw_Orfg%7CCgsIxrXEogYQ2JinIA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1683036870,
+            "review_datetime_utc": "05/02/2023 14:14:30",
+            "review_text": "great place for family.\na little expensive but good quality of food and drinks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURScGJ1QThnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURScGJ1QThnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRpbuA8gE%7CCgwIp-O2ogYQ2MqbzQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682813351,
+            "review_datetime_utc": "04/30/2023 00:09:11",
+            "review_text": "The beef rib is delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSMmNxNkdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSMmNxNkdnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDR2cq6Gg%7CCgsI1LCxogYQsMnJPw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1682724948,
+            "review_datetime_utc": "04/28/2023 23:35:48",
+            "review_text": "Great concept and a lot of potential.\n\nThe only issue is the large number of children. It wouldn't be bad if they stayed at the playground or water area but they run everywhere while the parents are drinking."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSMmFTODR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSMmFTODR3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDR2aS84wE%7CCgwIxpCxogYQ8Oip2AE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1682720838,
+            "review_datetime_utc": "04/28/2023 22:27:18",
+            "review_text": "Waited for my food for more than 45min and at the end I had to cancel and leave since all my friends were already done eating. They didn't even apologize or tried to make this better. "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSM3VqSDZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSM3VqSDZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDR3ujH6QE%7CCgwIz4-iogYQ0OfWlgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682474959,
+            "review_datetime_utc": "04/26/2023 02:09:19",
+            "review_text": "me and my coworkers love it here! we rented out a room for our company party, and we all came back a few months later just for the vibes. eddie is an amazing server! his vibes were immaculate."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSM3FpYnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSM3FpYnR3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDR3qibtwE%7CCgwIm46iogYQ4Jf5kQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1682474779,
+            "review_datetime_utc": "04/26/2023 02:06:19",
+            "review_text": "eddie was amazing!!! great service great vibes and great place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSc3B5ZlBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSc3B5ZlBnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRspyfPg%7CCgwInfmLogYQgKjUnwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1682111645,
+            "review_datetime_utc": "04/21/2023 21:14:05",
+            "review_text": "The vibe at the new Seoul Food Meat Co location is more like a family friendly restaurant than the original location in South End that has a bar feel.\n\nI thought the food was pretty good but others in my party didn't care for it. I liked the cheesesteak egg rolls and the bulgogi taco.\n\nTip and gratuity are already added into the prices so prices seem high (but you don't add extra tip on when you swipe your card). All beers are $8 and appetizers are each $7. They also don't keep tabs open so you have to pay each time you go up to order more.\n\nThere's a game room in the back and an outdoor area with tables and a playground for the kids.\n\nPretty big parking lot that is shared with the new food hall that opened next door. I think the light rail stops nearby too."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURSdklIdWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURSdklIdWZBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRvIHufA%7CCgwIguaEogYQoJr3wgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681994498,
+            "review_datetime_utc": "04/20/2023 12:41:38",
+            "review_text": "1st time there, will definitely go back again...food tastes great...the ribs OMG"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSdE9XRHZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSdE9XRHZBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRtOWDvAE%7CCgwIoPb8oQYQgL7AvwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681865504,
+            "review_datetime_utc": "04/19/2023 00:51:44",
+            "review_text": "Walked into Seoul on Saturday and was slightly worried due to how busy it was inside. The decor was beautiful inside and one of a kind. To the greeting at the door welcoming me to Seoul despite to how busy everyone was made me feel welcomed. The chicken wings were delicious and flavorful. Decided to walk around outside and let me tell you...to the dog park and outdoor water splash park this is something to see in person and experience! Highly recommend to anyone who is looking for good food, great drinks, amazing customer service and stunning ambience inside and out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSeExqZGx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSeExqZGx3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRxLjdlwE%7CCgsI5O33oQYQyKOkJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1681782500,
+            "review_datetime_utc": "04/18/2023 01:48:20",
+            "review_text": "Best atmosphere in Charlotte to eat, drink and let the kids play"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSa015MDJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSa015MDJRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDRkMy02QE%7CCgwIt_HqoQYQ6Nym0wI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1681569975,
+            "review_datetime_utc": "04/15/2023 14:46:15",
+            "review_text": "We'll never be back after our first visit to this location. Our entire order was wrong, but that would've been fine, mistakes happen. It's how the rest of that one issue was handled that threw us. When picking up from the counter I noticed everything was wrong, and they forgot an item. So in addition to having to wait for them to remake the whole order after already waiting 20 minutes for the wrong one, the manager directs me to the register to pay for the item THEY forgot to ring up. Really?! You couldn't have comped a taco for the trouble? I guess they could tell how put off I was by this, so they later brought us each a free drink ticket. I went to the bar and got mine with no issue. When my sister went to the bar literally a minute later, the bartender asked if she was with me. She replied yes, and was told the drink tickets are only allowed to be used on our next visit. LOL. You have to laugh at how silly that is. Instead of saying, \"hey, they're meant to be for your next visit, but I WASN'T AWARE OF THAT CUZ NOBODY AROUND HERE KNOWS WHAT THEY'RE DOING, so we can make an exception today, ESPECIALLY BECAUSE I JUST DID IT FOR THE OTHER PERSON IN YOUR PARTY\" she turned her away. The entire experience felt intentionally backwards. Anyway, yeah, we won't be back and neither will any of the friends we told about what happened."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSemZlZnZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSemZlZnZBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRzfefvAE%7CCgwIxdfFoQYQ2InrggM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1680960453,
+            "review_datetime_utc": "04/08/2023 13:27:33",
+            "review_text": "The (white male) bartender refused to sell me (brown female) more than a single beer, citing NC law. Sold two to my (white, male) friend twice that evening"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSOWFPNUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSOWFPNUN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICR9aO5Cw%7CCgwI3-nAoQYQ-PewggI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680880863,
+            "review_datetime_utc": "04/07/2023 15:21:03",
+            "review_text": "Stopped by to have a drink with some friends and catch up. Great vibe and lots of seats indoors and out. We saw lots of kids and dogs as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSbGQ2RWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSbGQ2RWFnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRld6Eag%7CCgsI7Me9oQYQ4KrlYQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680827372,
+            "review_datetime_utc": "04/07/2023 00:29:32",
+            "review_text": "Easily one of our favorite spots to go with our toddler. Charlotte always welcomes dogs and kids to their brewery scene but NOTHING like Seoul! Full amazing menu with some of the best food around, a full playground and Astro turf, a dog play area and today they even hosted a petting zoo, Easter egg hunt AND live music. Parents can come and drink, play and have fun with their friends while the kids are actually entertained not just there because you are.\nPricing is legit with no tipping and the amenities they offer - easily our go-to with family and friends!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSbGE3V2hRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSbGE3V2hRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRla7WhQE%7CCgwIi8S9oQYQ0MnixQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680826891,
+            "review_datetime_utc": "04/07/2023 00:21:31",
+            "review_text": "This is the most kid friendly brewery in CLT. They go out of their way to make it easy to have a family day out with their playground, astroturf and kid games. It's truly a breath of fresh air to go out as a family with young kids (2) and (4) and everyone enjoys themselves! the food is also incredible. everything on their menu is unique and worth trying - their wings are legitimately the best weve found in clt, bone in and bone out! The staff is also incredibly kind and accommodating! Carley and team go out of their way. I wish every brewery in CLT was like this!\n\nToday they hosted an Easter party with a petting zoo, hidden easter eggs and other treats for the kiddos - it was such a great hit, it's the small stuff for families that mean so much!\n\nI will note that when they originally opened, we had written this place off due to pricing. They do not accept tip as it's a part of their cost, and when they first opened, the amounts didn't add up to  what you would pay for a beer + tip. After revisiting today, their pricing is more in line! (we're happy to pay more of a premium for what they offer the kids, so the new pricing makes more sense!)\n\nSeoul will be our go to place for our family and friends! Looking forward to our next (weekly) visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSanV6VnBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSanV6VnBBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRjuzVpAE%7CCgwIhayioQYQ8J_dsAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680381445,
+            "review_datetime_utc": "04/01/2023 20:37:25",
+            "review_text": "Great spot for families.  Kids can run around while the adults dine."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSOXJLeG5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSOXJLeG5nRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICR9rKxngE%7CCgsIxbyhoQYQkJ22Kw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1680367173,
+            "review_datetime_utc": "04/01/2023 16:39:33",
+            "review_text": "We walk to this location with great anticipation to try it. It's beautiful! Super excited. However when we got there the manager was amazing. She did check. Unfortunately, they do not cook the food or prepare the food for it. Cannot cross contaminate with spicy food. Spicy food could put me in the emergency room. It's a very serious matter so we couldn't try the food. She was very kind to us. Very attentive. Love the manager. That atmosphere was amazing but the food is nothing we can try. So the only thing we may go there for possibly is drinks. So very sad that they can't do better not to make food spicy. That was just really heartbreaking. Hello"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNSdW9PbVhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNSdW9PbVhREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRuoOmXQ%7CCgwIlsiYoQYQ2M209AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680221206,
+            "review_datetime_utc": "03/31/2023 00:06:46",
+            "review_text": "I've ordered takeout from Seoul\nFood Meat Company in Noda a few times. All in all, the food has been pretty good. This last order, I ordered six wings. They were hot and crunchy. My only negative is it took almost 30 minutes for me to get my order once I placed it. That seems a little crazy for such a small order. I'll probably eat there next time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNSa3RMVTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSa3RMVTNBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICRktLU3AE%7CCgwIwvmNoQYQwOCi2gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1680047298,
+            "review_datetime_utc": "03/28/2023 23:48:18",
+            "review_text": "Tremendous food, great space. Pet-friendly outside, too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURoeTh2SUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURoeTh2SUN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDhy8vICw%7CCgsI1M3ToAYQ8IvwJA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1679091412,
+            "review_datetime_utc": "03/17/2023 22:16:52",
+            "review_text": "Amazing food and their Karaoke is so much fun! "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoLWRpejlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoLWRpejlBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDh-diz9AE%7CCgwIuey5oAYQqOmK0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678669369,
+            "review_datetime_utc": "03/13/2023 01:02:49",
+            "review_text": "Very good food. Enjoyed the outside dining.  Recommend the sweet and mild wings and the kimchi fries."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURoX3ZLQWtnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURoX3ZLQWtnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDh_vKAkgE%7CCgwI6L-qoAYQqITEwQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1678417896,
+            "review_datetime_utc": "03/10/2023 03:11:36",
+            "review_text": "Fun place. Brisket was the best. The kids loved the outside and playground"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURocnVEZld3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURocnVEZld3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDhruDfWw%7CCgwI446loAYQiK3irAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1678329699,
+            "review_datetime_utc": "03/09/2023 02:41:39",
+            "review_text": "It's all fantastic. Food is always consistent and service is always on point. The outdoor area is amazing. So much space for kids and pups. Live music and just overall great atmosphere. The kids have a play area and it keeps them busy!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNobjRmZ3FRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNobjRmZ3FRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChn4fgqQE%7CCgwI7N7wnwYQ4Nz42gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1677471596,
+            "review_datetime_utc": "02/27/2023 04:19:56",
+            "review_text": "Excellent resturant. Food was awesome.great place. The atmosphere is fantastic . They have a fantastic outdoor area. Do not miss this one. They have games for the kids outside. Excellent beer."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNobTlmVjZRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNobTlmVjZRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChm9fV6QE%7CCgsIkqTanwYQ0KvFVQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1677103634,
+            "review_datetime_utc": "02/22/2023 22:07:14",
+            "review_text": "Yikes...so much hope for this place, but it's just not good at all.\nOrdering is a MESS.\nFood is mediocre and WAY overpriced for what you get.\nDrinks are EXPENSIVE, especially for a causal place and they come in plastic. One bartender actually made fun of my friend to me after he left the bar and I was still waiting to order.\nSpace is nice, though."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoczdpbWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoczdpbWVBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChs7imeA%7CCgsI2-fTnwYQ6MSuWQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676997595,
+            "review_datetime_utc": "02/21/2023 16:39:55",
+            "review_text": "First of all, this place is amazing. I can't wait for long summer days hanging out with friends after work. The patio and the outdoor atmosphere are great. Now the inside is beautifully decorated and has plenty of seating for any party you want. I think it's possible to come here and spend a whole day here without running out of things to do. The menu has tons of different options  and is a la carte so you can really pick your own adventure."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoX1l2eFZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoX1l2eFZ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICh_YvxVw%7CCgwI64POnwYQ4LvPngE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1676902891,
+            "review_datetime_utc": "02/20/2023 14:21:31",
+            "review_text": "The highest beer markups I've found in Charlotte,  yet they serve the beer in plastic cups. Beer is make to be enjoyed in glass containers and plastic ruins the taste."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoMWQtQkNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoMWQtQkNREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICh1d-BCQ%7CCgwI9NvDnwYQsN6QoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676733940,
+            "review_datetime_utc": "02/18/2023 15:25:40",
+            "review_text": "Awsome new location with family friendly and late night fun vibes. Food and service were as excellent as their south end location. We will be back for sure"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNocE9ldl93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNocE9ldl93RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChpOev_wE%7CCgsIsYyAnwYQ-JDRQA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675626033,
+            "review_datetime_utc": "02/05/2023 19:40:33",
+            "review_text": "Glad that this Southend staple is now in Noda and closer to where we live.  Same menu but served counter service versus full service. We come here when we crave Korean-style wings and feel like Bonchon is too far of a drive. Plus their Crispy Pork Belly is akin to Liston Kawali."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNocU42dFN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNocU42dFN3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIChqN6tSw%7CCgwI07n3ngYQuMqSmwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1675484371,
+            "review_datetime_utc": "02/04/2023 04:19:31",
+            "review_text": "Really overpriced for what you get. Food is just ok."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCamViaTFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCamViaTFBRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDBjebi1AE%7CCgwI3rjFngYQwPqsuwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1674665054,
+            "review_datetime_utc": "01/25/2023 16:44:14",
+            "review_text": "I absolutely love the new location for Seoul Food Meat Company!  The karaoke rooms are AMAZING! Very spacious and overall a great place to have a get together and have fun! Also; I love the fact that this restaurant is kid friendly where kids can play on the playground outside and they have games inside as well. Bao Buns are to die for; I personally love the Bulgogi and Beef Rib. The staff is very attentive from the bartenders, cleaners and their manager, Courtney. 10/10 recommend! Will definitely be back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCZ2JMdW5BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCZ2JMdW5BRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDBgbLunAE%7CCgsIicusngYQoOX2QA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1674257801,
+            "review_datetime_utc": "01/20/2023 23:36:41",
+            "review_text": "The food has improved massively since the soft opening and they dropped the price of a beer down to be much more reasonable($6).\nA few things to improve to really make this a spot to go to\n-drop food prices a little\n-bring sides with your main order\n-hook into the bar, so you can order all at once, not have to pay twice / queue in two places"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURCM0tDQ1JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURCM0tDQ1JnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIDB3KCCRg%7CCgwI7YuIngYQsLCagwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673659885,
+            "review_datetime_utc": "01/14/2023 01:31:25",
+            "review_text": "Excellent experience.  Karaoke room w/kids, table soccer, 4-person air hockey, delicious Korean/American fusion bbq, and enough Soju to make a Friday night awesome.  Bailey and Josh were awesome servers in the private area.  Absolutely killer experience- great place early if you have kids.  Awesome later experience without them.  Can't wait to go again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbjhuTkdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbjhuTkdBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBn8nNGA%7CCgsIw5HpnQYQuLWpbA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673152707,
+            "review_datetime_utc": "01/08/2023 04:38:27",
+            "review_text": "Excellent service ! Very attentive and nice staff. Got a karaoke room and absolutely loved the experience, would definitely recommend for any occasion!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCbi1IU0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCbi1IU0R3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBn-HSDw%7CCgwIp4npnQYQiL_IhgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673151655,
+            "review_datetime_utc": "01/08/2023 04:20:55",
+            "review_text": "Had an awesome time in the Karaoke rooms with friends. Great food, beverage choices and service. Eddie was awesome!\nTry the Pineapple Soju!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCNzRIbjdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCNzRIbjdRRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICB74Hn7QE%7CCgwI8uHnnQYQkLmenAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1673130226,
+            "review_datetime_utc": "01/07/2023 22:23:46",
+            "review_text": "It was fine until a drink we ordered with no instructions was spilled, and when we asked if we could get it refilled they said no due to policy. No one told me it had to be held a certain way while pouring to prevent spilling, but they insisted they definitely did.\n\nThe food is mediocre at best and way too expensive. The karaoke rooms are too hot. The drinks are terrible.\n\nNo one even tried to compromise on the situation. They just straight up tried to get more money out of their negligence. Rooms are $100/hour which is way too expensive. They're extremely greedy and don't deserve the prices they charge. Don't come here."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCN182Sm13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCN182Sm13RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICB7_6JmwE%7CCgwIqODnnQYQkIbriAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1673130024,
+            "review_datetime_utc": "01/07/2023 22:20:24",
+            "review_text": "Bartender served us a soju cocktail where the lid was not tightened appropriately and spilled all over the floor. Manage refused to offer any sort of compensation or refund. The food was ok. Staff, management, and customer service was poor and I wouldn't recommend. Be wary of unfriendly service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCNy02UlpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCNy02UlpnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICB7-6RZg%7CCgsI0NvnnQYQkOS3Bw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1673129424,
+            "review_datetime_utc": "01/07/2023 22:10:24",
+            "review_text": "New location at their soft opening. Draft beers were discounted from $10 to $6, so the normal price sounds more like going to the ballpark than to a neighborhood tap.\nOutdoor space was nice with kids.\nFood was tasty!\nMinus one star for high prices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCMTQzSVJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMTQzSVJ3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICB143IRw%7CCgsIq4LinQYQgIPWYA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673036075,
+            "review_datetime_utc": "01/06/2023 20:14:35",
+            "review_text": "Fantastic place for a beer with the kids! Delicious food, big selection of beers and the outdoor area is top notch."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCczc2bTFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCczc2bTFnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBs76m1gE%7CCgwI0NXSnQYQyKKMsgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672784592,
+            "review_datetime_utc": "01/03/2023 22:23:12",
+            "review_text": "So great"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCdlo3eE5BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCdlo3eE5BEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBvZ7xNA%7CCgsI07zLnQYQ8KGiBA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672666707,
+            "review_datetime_utc": "01/02/2023 13:38:27",
+            "review_text": "Great spot. Very kid friendly. I would appreciate a little less k-pop. Doesn't have to be on every single TV"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCOVpQdlNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCOVpQdlNREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICB9ZPvSQ%7CCgwIqpTDnQYQ2Nmz8wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672530474,
+            "review_datetime_utc": "12/31/2022 23:47:54",
+            "review_text": "I love the original,  but I hate that most events happening in uptown take up all the parking at the South End location and charge heavily if you're just there to eat. The NoDa location has plenty of parking, ample space to move, and kid friendly (there are highchairs and a playground) . This is the Seoul you'd go to if you have a young one."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCcHB6LUVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCcHB6LUVBEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBppz-EA%7CCgwIwYWZnQYQkIm17QI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1671840449,
+            "review_datetime_utc": "12/24/2022 00:07:29",
+            "review_text": "The location is pretty nice very spacious and finally ample parking.. overall experience was not great. Tried to order a crispy pork belly and a side of plain bao  buns and was told that I can't do it at this location. Huh? It's on the menu. I get trying to promote the sliders but 7 dollars for one slider is crazy. Taste was lacking, the kimbap was the only thing I finished. Prices increased not too fond of that. Gratuity and tax was included in the bill. The bar was nice though quick service. Soft opening prices was a plus. But 10 dollars for a beer? Me personally, I couldn't do that."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCbEpULWhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCbEpULWhnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgICBlJT-hgE%7CCgwIgqD5nAYQiP39pQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1671319554,
+            "review_datetime_utc": "12/17/2022 23:25:54",
+            "review_text": "Beautiful and decent food but the prices are outrageous. Pay less for a pint of beer on a rooftop in uptown than here."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtdTZhVGZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtdTZhVGZnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-u6aTfg%7CCgwIzeLSnAYQkOLFxQE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1670689101,
+            "review_datetime_utc": "12/10/2022 16:18:21",
+            "review_text": "Loved the location, the interior and the free parking lot outside. Beautiful facility and the food was great!! Ordering experience was at best confusing, during the soft opening, ordering some items versus others had to be done by different people? I asked for a specific beer from their draft bar and the bartender didn't know what that beer was without the number beside it on the menu. Hopefully he will memorize the several beers they had on tap over time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtbmZMQ2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtbmZMQ2V3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-nfLCew%7CCgwI3uy_nAYQoOP7gQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670379102,
+            "review_datetime_utc": "12/07/2022 02:11:42",
+            "review_text": "Loved it here! Food was great! Karaoke was fun! Got a private room. Customer service was amazing. Would def recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtaWV2RkJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtaWV2RkJnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-ievFBg%7CCgwIuvWqnAYQ8PTrlAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670036154,
+            "review_datetime_utc": "12/03/2022 02:55:54",
+            "review_text": "Crispy pork belly is better than Asian Market. it's top quality pork belly with good fat & lean ratio and juicy."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtaWJQczZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtaWJQczZ3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-ibPs6wE%7CCgwIj-6qnAYQuN_azgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1670035215,
+            "review_datetime_utc": "12/03/2022 02:40:15",
+            "review_text": "Incredible all around. Future dates beware..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQtdlBmYnp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtdlBmYnp3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-vPfbzwE%7CCgwIm-H8mwYQ6Krv3wE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1669279899,
+            "review_datetime_utc": "11/24/2022 08:51:39",
+            "review_text": "Just way too expensive."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQteVBHYnBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQteVBHYnBnRRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgID-yPGbpgE%7CCgsI5aHlmwYQgP6zXg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1668894949,
+            "review_datetime_utc": "11/19/2022 21:55:49",
+            "review_text": "Great service but the food was not tasty. I don't mean to be harsh but those taco combinations and fries aren't working . Just adding kimchi to everything won't make it taste good. It's like putting soy sauce on pizza.  It's a soft opening so I bet they right the ship."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtcS03c1pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtcS03c1pnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-q-7sZg%7CCgsIprPFmwYQ-LqSeg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1668372902,
+            "review_datetime_utc": "11/13/2022 20:55:02",
+            "review_text": "Great atmosphere and has a lot of potential, but who in their right mind is paying $10 for a pint of beer?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtaTl1TkFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtaTl1TkFREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-i9uNAQ%7CCgwIzO3DmwYQ0KGKxQM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1668347596,
+            "review_datetime_utc": "11/13/2022 13:53:16",
+            "review_text": "I love Seoul Food. Loyal patron of South End location for years. Went to the new location last night. The space is awesome. The food is great. But the reason for my 3 star review is the beer prices. $10 a beer! Come on guys. There's nowhere in Charlotte I pay $10 for a single beer. I wouldn't complain if it was $7 even.. but I feel 10 bucks for a beer is borderline outrageous. It made me stop at two instead of maybe the usual three or four I might have had, and will make me reconsider visiting next time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtMDhiYkNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtMDhiYkNREAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-08bbCQ%7CCgsIqNq_mwYQyP6dOQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668279592,
+            "review_datetime_utc": "11/12/2022 18:59:52",
+            "review_text": "Loving the soft opening. Highly recommend for group. The karaoke room looks so nice. Just wish there were a little extra privacy."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtMGE2M1R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtMGE2M1R3EAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-0a63Tw%7CCgwIs4mfmwYQiPGbxwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667744947,
+            "review_datetime_utc": "11/06/2022 14:29:07",
+            "review_text": "We had an amazing time karaoke-ing at the new Seoul Food location! It's huge with a stunning open design. There are lots of tasty drink options, and the wings are INCREDIBLE. Plus the staff was so kind and helpful the whole night, and quickly moved us to a new karaoke room when the tablet in ours stopped working. Highly recommend all around!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtanJUcVlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtanJUcVlnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-jrTqYg%7CCgwI3P2QmwYQ4O3hygE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667514076,
+            "review_datetime_utc": "11/03/2022 22:21:16",
+            "review_text": "The beef rib was on point! Just as good (maybe better) as you would get in Texas."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtck9TYzZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtck9TYzZ3RRAB!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-rOSc6wE%7CCgwI1L_ymgYQqIuKlgM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1667014612,
+            "review_datetime_utc": "10/29/2022 03:36:52",
+            "review_text": "Swing and a miss...they had the opportunity to make this great...hopefully it works out the kinks during the rest of the soft opening.\n\nThe cafeteria style is a bit confusing when you walk in, and if there's a line at the first station, it will be in the walkway. My order for hot food was rangup incorrectly.  The kitchen somehow didn't receive my order, and then it came out wrong.  Didn't receive my food until after my entire party was done with their meal.  Brisket was dry and overcooked.  Prices have increased 20-40% at both locations.\nAlso can someone explain the corn silos??\n\nThe only redeeming factor was the manager who came to apologize after the second messup. And there is no tip option, which is appropriate as you collect your own food and drinks and bus your own table."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtOUxHTkRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtOUxHTkRnEAE!2m1!1s0x0:0x1682ec9c8ef47796!3m1!1s2@1:CIHM0ogKEICAgIC-9LGNDg%7CCgwImo7vmgYQuJa0ygI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1666959130,
+            "review_datetime_utc": "10/28/2022 12:12:10",
+            "review_text": "So me and my family went for the soft grand opening. I have never in my experience something like this. The southern hospitality was unmatched. The food i can't even explain it I'll be writing all day. Drinks and bar staff so helpful, with giving us different drinks to try because they don't have a certain drink menu but they can absolutely make anything your heart desire. we tried everything I'm not joking. EVERYTHING. we had so many trays on our table. I hate i didn't get pictures. This is stuff i never would eaten before. We went with an open mind and it DID NOT DISAPPOINT. I had to talk to management. I'm not even joking. Go there as fast as you. The icing on the cake it's a freaking dog park for your pups to casually play and so their duties. Annnnndddddddddd a park for the kiddos. This restaurant picked the perfect location. With or without my review i wish them much success. Hospitality goes a longggggg way with me. We were comfortable i didn't have to squeeze no where or worrying about fitting in a small booth. Let me even brag about the restrooms Huge, each single bathroom is fully closed where no one can peep through the cracks and see you. Lololololol. They have gained us as customers for life."
+        }
+    ]
+}
