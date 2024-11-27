@@ -1,0 +1,2012 @@
+{
+    "place_name": "Daniel Stowe Botanical Gardens",
+    "place_id": "ChIJh-Fbfr6WVogRUxsWCJF21sg",
+    "place_description": "Public garden with tropical plant conservatory, fountains & pavilion, available for private events.",
+    "place_rating": 4.5,
+    "place_total_reviews": 2504,
+    "place_google_id": "0x885696be7e5be187:0xc8d6769108161b53",
+    "place_reviews_id": "-3974859255829882029",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJh-Fbfr6WVogRUxsWCJF21sg&authuser=0&hl=en&gl=UA",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREcmJhUF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREcmJhUF9nRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDrbaP_gE%7CCgsIhpSFugYQiPmfMg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732332038,
+            "review_datetime_utc": "11/23/2024 03:20:38",
+            "review_text": "Beautiful"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNQNHZQMUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNQNHZQMUt3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICP4vP1Kw%7CCgwI_sGDugYQwNS_qwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732305150,
+            "review_datetime_utc": "11/22/2024 19:52:30",
+            "review_text": "Small garden, conservatory,  fountains, children's area. Not the right time of year but still a nice walk in the woods on a sunny afternoon."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURFZ3BPZ01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURFZ3BPZ01REAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDEgpOgMQ%7CCgwIpI6DugYQ8JXwjwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732298532,
+            "review_datetime_utc": "11/22/2024 18:02:12",
+            "review_text": "Very Beautiful!!! I loved the butterflies in the garden!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQzbmUtM3lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzbmUtM3lnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID3ne-3ygE%7CCgwIgNzpuQYQ8NHm3AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1731882496,
+            "review_datetime_utc": "11/17/2024 22:28:16",
+            "review_text": "Definitely want to come back each season!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQzb1pIbEx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzb1pIbEx3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID3oZHlLw%7CCgsI4NHeuQYQqL7YKQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1731700960,
+            "review_datetime_utc": "11/15/2024 20:02:40",
+            "review_text": "Even during the fall, this is a cool place to visit. Would really like an EV charger or two in the parking lot. But plenty of parking and we spent $36 for two. Well worth it!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQzcXZfS213RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzcXZfS213RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID3qv_KmwE%7CCgwI45bWuQYQkPmz_QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1731562339,
+            "review_datetime_utc": "11/14/2024 05:32:19",
+            "review_text": "A lovely place to explore the grounds which include a tropical plant conservatory and children's garden.  There are great water features and a lovely collection of trees and shrubs to appreciate along the way."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQzZ0oteWx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzZ0oteWx3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID3gJ-ylwE%7CCgwIgKvFuQYQgKTL2gI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1731286400,
+            "review_datetime_utc": "11/11/2024 00:53:20",
+            "review_text": "Not much "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMzdG9ucWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzdG9ucWpBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC3tonqjAE%7CCgwI4KCouQYQ4NTSsAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1730809952,
+            "review_datetime_utc": "11/05/2024 12:32:32",
+            "review_text": "Very beautiful place to visit I'll be back in the spring when the flowers bloom."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYdWUtdHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYdWUtdHNRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXue-tsQE%7CCgsIx9GYuQYQgKTuAQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1730554055,
+            "review_datetime_utc": "11/02/2024 13:27:35",
+            "review_text": "Visited on September 19, 2024.  Horribly disappointed.  The garden is so poorly maintained it felt like it was about to be closed.  I would say perhaps 75% of the garden was not weeded - and the weeds in many areas were larger than the specimen plants.  This was made more surprising by the fact that the botanical garden isn't even that large... I could have probably weeded it myself in less than a week.  Many of the weeds had clearly been there all summer.  Inside the orchid house someone was doing some minor plant work, and the green waste was scattered around on the concrete walk - like the person couldn't be bothered to carry a bucket with them.  Trees and bushes poorly maintained - some had been planted too closely together and had died back, and the dead tree had been removed - leaving a stump and a huge hole in the landscape.  Visible rust on iron work in many places.  Chipped/old paint.  Who manages their volunteer groups?  Do they have any?  I was so shocked I even went to their web site to check their staff - and they seem to have a full time staff of 10 horticulturalists.  Do they walk the grounds?  My daughter had recommended the visit and spent the entire time apologizing."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMzd0s3U3VBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzd0s3U3VBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC3wK7SuAE%7CCgsIurmUuQYQoIGWeQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730485434,
+            "review_datetime_utc": "11/01/2024 18:23:54",
+            "review_text": "Beautiful place to visit even in the fall!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYdl9pM1Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYdl9pM1Z3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXv_i3Vw%7CCgsIyKyTuQYQuNOqFQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730467400,
+            "review_datetime_utc": "11/01/2024 13:23:20",
+            "review_text": "Beautiful!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYcGF1N1ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYcGF1N1ZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXpau7Vg%7CCgwIyLKEuQYQ4MSahQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730222408,
+            "review_datetime_utc": "10/29/2024 17:20:08",
+            "review_text": "We had a beautiful fall day out with our younger kids. The scarecrow contest was so cute and the staff was very friendly! Can't wait to return for the Christmas season."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYc2FmRTdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYc2FmRTdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXsafE7QE%7CCgwIu6D-uAYQ8ITH5AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730121787,
+            "review_datetime_utc": "10/28/2024 13:23:07",
+            "review_text": "We have enjoyed this lovely garden during Spring, Summer and now Autumn-- each season holds new surprises. I love that the garden sets up vignettes for family photos too. Very thoughtful. I look forward to seeing this in the winter. Camellias are just blooming, azaleas are in bloom and it's amazing how much color the garden has despite cooler temps."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYdnBpOG5RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYdnBpOG5RRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXvpi8nQE%7CCgwIu6v6uAYQqILQ0wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1730057659,
+            "review_datetime_utc": "10/27/2024 19:34:19",
+            "review_text": "Visiting here from crazy LA and loved the beauty and tranquilly. Would highly recommend for a peaceful walk and education."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURYbG8yWm1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYbG8yWm1BRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDXlo2ZmAE%7CCgwI95L2uAYQyKaczgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1729988983,
+            "review_datetime_utc": "10/27/2024 00:29:43",
+            "review_text": "1st time visiting.  Not much to see as nothing is in bloom this time of year.\nI did like the scarecrows and the Orchid house.  The grounds do need some TLC, as mentioned by some one else."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNYM3JpUzR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYM3JpUzR3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICX3riS4wE%7CCgwImbrBuAYQ0OvpqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729125657,
+            "review_datetime_utc": "10/17/2024 00:40:57",
+            "review_text": "Attended a corporate event for CLT Airport and it was wonderful. Great venue and was able to explore during lunch. Beautiful grounds."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNYanVldUNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYanVldUNnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICXjueuCg%7CCgwIncG_uAYQ4P6c6gI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1729093789,
+            "review_datetime_utc": "10/16/2024 15:49:49",
+            "review_text": "Beautiful garden and a joy to photograph on the grounds whether at a wedding or for engagement and bridal portrait sessions. Spring is beautiful at the gardens. The Conservatory is an amazing space."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNYdXZmeW9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYdXZmeW9RRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICXuvfyoQE%7CCgwIsLa6uAYQ0NzZtQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729010480,
+            "review_datetime_utc": "10/15/2024 16:41:20",
+            "review_text": "Needs to be cleaned up a little bit but overall very nice, we had a great time walking barefoot on the grass path and taking pictures. The items at the store were reasonably priced and the employees were really nice and talkative"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNYbXJTZ0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYbXJTZ0d3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICXmrSgGw%7CCgwI5qi5uAYQgN-MoAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1728992358,
+            "review_datetime_utc": "10/15/2024 11:39:18",
+            "review_text": "Beautiful gardens, lovely paths. We have a year pass (family) that allows entry to AHS across the US. It's a wonderful investment, not crazy. We have been choosing a garden then choosing where we stay."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNYeU0yWFVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYeU0yWFVnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICXyM2XUg%7CCgsIsPSquAYQgL-HSg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1728756272,
+            "review_datetime_utc": "10/12/2024 18:04:32",
+            "review_text": "Save money and go to a free park."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURudlpqeERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURudlpqeERBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDnvZjxDA%7CCgwI786XuAYQiMXQ2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1728440175,
+            "review_datetime_utc": "10/09/2024 02:16:15",
+            "review_text": "Always a nice experience and a great place to go for a walk and just admire nature. The water features are a nice touch! I really recommend checking out the lights around the Holiday Season as well!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURucnZhRXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURucnZhRXZ3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDnrvaEvwE%7CCgsIg7OHuAYQoOPdEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1728174467,
+            "review_datetime_utc": "10/06/2024 00:27:47",
+            "review_text": "This is a beautiful place to walk through and learn about flowers, plants and butterflies."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURubElTSHBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURubElTSHBRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDnlISHpQE%7CCgwIsoH6twYQ8NCZ2gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1727955122,
+            "review_datetime_utc": "10/03/2024 11:32:02",
+            "review_text": "Beautiful place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNudjVUQzR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNudjVUQzR3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICnv5TC4wE%7CCgwI3dbwtwYQ4Oz8yQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1727802205,
+            "review_datetime_utc": "10/01/2024 17:03:25",
+            "review_text": "Excelent option for a fall day"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNuc3FpZXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuc3FpZXdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICnsqiewQE%7CCgwI46nLtwYQ0JX8ygM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1727190243,
+            "review_datetime_utc": "09/24/2024 15:04:03",
+            "review_text": "So beautiful!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNuMlBmOU1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuMlBmOU1REAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICn2Pf9MQ%7CCgwIm9rAtwYQiMesyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1727016219,
+            "review_datetime_utc": "09/22/2024 14:43:39",
+            "review_text": "We visited the beautiful botanical gardens on a partly cloudy day in September and it was so much fun. It is a lovely garden, very well kept. The people at the reception are so warm. It was a wonderful experience. Would love to visit it during spring time once."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNua08zNnpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNua08zNnpRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICnkO36zQE%7CCgwIk-K8twYQ6M6mmgM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1726951699,
+            "review_datetime_utc": "09/21/2024 20:48:19",
+            "review_text": "It was nice and a relaxing place to walk."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURIei1XeHJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIei1XeHJRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDHz-WxrQE%7CCgsI0-m4twYQ2KPrFg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1726887123,
+            "review_datetime_utc": "09/21/2024 02:52:03",
+            "review_text": "Lots of potential: space, trails, botanical displays, butterfly tent, event/venue possibilities."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURIMWFTYmt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIMWFTYmt3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDH1aSbkwE%7CCgsInbGrtwYQoN-TOA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1726666909,
+            "review_datetime_utc": "09/18/2024 13:41:49",
+            "review_text": "Amazing spot to walk around and relax. Absolutely loved it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURIMnJxNE9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIMnJxNE9REAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDH2rq4OQ%7CCgsI4rmYtwYQqNqgfg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1726356706,
+            "review_datetime_utc": "09/14/2024 23:31:46",
+            "review_text": "This was a very beautiful peaceful place to visit. We loved the butterfly garden  There was someone there to educate us on the lifecycle of the butterflies and visual aids that were very informative as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURId1BER1lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURId1BER1lnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDHwPDGYg%7CCgsIlv-DtwYQ0Mv0Jg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1726021526,
+            "review_datetime_utc": "09/11/2024 02:25:26",
+            "review_text": "Nice garden but nothing special. Good to visit if you have time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIbHJQcHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIbHJQcHFnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICHlrPpqgE%7CCgwIiI7itgYQkLGPkQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725466376,
+            "review_datetime_utc": "09/04/2024 16:12:56",
+            "review_text": "We had a magical day at Daniel Stowe Botanical Gardens."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNId3JUVV93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNId3JUVV93RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICHwrTU_wE%7CCgwInqXYtgYQqOiPjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725305502,
+            "review_datetime_utc": "09/02/2024 19:31:42",
+            "review_text": "Always love coming here. Lots to see, and everything is gorgeous. Many of the plants are truly impressive. You also get to see a variety of insects, lizards, and other animals if you look closely!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNILU9ua29nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNILU9ua29nRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICH-OnkogE%7CCgsI_JTXtgYQoOjkHA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1725287036,
+            "review_datetime_utc": "09/02/2024 14:23:56",
+            "review_text": "Gorgeous gardens and helpful staff! Such a hidden gem in Belmont."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIdE5lMndnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIdE5lMndnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICHtNe2wgE%7CCgwIguvStgYQiJuVngI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1725216130,
+            "review_datetime_utc": "09/01/2024 18:42:10",
+            "review_text": "I was very disappointed with the gardens. Most of them were dead and overgrown. Only the visible gardens near the welcome center were kept up. More than half the fountains were not working or off. It was our first and last visit here. Not worth the money."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIMk16MjB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIMk16MjB3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICH2Mz20wE%7CCgsIh4bOtgYQiLijKg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1725137671,
+            "review_datetime_utc": "08/31/2024 20:54:31",
+            "review_text": "If the founder of DSBG could see the deplorable condition this garden has fallen, he would be horrified! His vision, after all, was a world glass botanical garden. It is most certainly not that! Weeds everywhere! Trails to woodland meadows gated off! The Children's section was muddy, and overgrown. We've never been so disappointed with a gardens and we've visited many around the world.\nThe current condition of DSBG is pathetic."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIbU1xdjNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIbU1xdjNBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICHmMqv3AE%7CCgwI8dLNtgYQwIy8tAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725131121,
+            "review_datetime_utc": "08/31/2024 19:05:21",
+            "review_text": "It is absolutely gorgeous here and the staff is nothing but sweet"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3MlluWHRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3MlluWHRnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID72YnXtgE%7CCgwI5r6vtgYQ2JP98AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724637030,
+            "review_datetime_utc": "08/26/2024 01:50:30",
+            "review_text": "Beautiful gardens. The staff has a heart for beauty. What a wonderful job they have done to show beauty in nature. The place is so serene and lavish. What a treat for the eyes. Easy walking paths . Can't wait to go again"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ3eWNPaXh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3eWNPaXh3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID7ycOixwE%7CCgwIz8SttgYQ-OytowE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1724605007,
+            "review_datetime_utc": "08/25/2024 16:56:47",
+            "review_text": "Llegamos justo a la hora que cerraban el invernadero para las mariposas asi que no pudimos ver mucho, es un poco caro para lo que se muestra"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3dkptakpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3dkptakpnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID7vJmjJg%7CCgsI9tyctgYQuKP1Kw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724329590,
+            "review_datetime_utc": "08/22/2024 12:26:30",
+            "review_text": "This botanical garden is just about 20 minutes outside of Charlotte and it is a great place to visit to see a wide variety of plants, bushes trees and butterflies."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ3NkxTclBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3NkxTclBBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID76LSrPA%7CCgsI2_KTtgYQgNTBXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724184923,
+            "review_datetime_utc": "08/20/2024 20:15:23",
+            "review_text": "Such a beautiful garden! There is enough parking and areas to eat if you bring your own food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3MV9LMWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3MV9LMWVnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC71_K1eg%7CCgwI-PuJtgYQ-PeIuQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724022264,
+            "review_datetime_utc": "08/18/2024 23:04:24",
+            "review_text": "Lots of fountains, beautiful building, (good for private parties/events)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3cDYyZmR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3cDYyZmR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC7p62fdw%7CCgwI6M-ItgYQwP7VnAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1724000232,
+            "review_datetime_utc": "08/18/2024 16:57:12",
+            "review_text": "Nice experience!\nThe place is very good and with excellent maintenance, every garden is ultra green and the flowers are beautiful, keep in mind to go to the butterfly bungalow, you can miss it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM3NmFpTXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3NmFpTXdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC76aiMwQE%7CCgwIrpb_tQYQqO-C1gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723845422,
+            "review_datetime_utc": "08/16/2024 21:57:02",
+            "review_text": "We had so much fun with our family! Great for babies - we brought our stroller and got around with ease. Amazing and friendly staff"
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSUM3NXNFThAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUM3NXNFThAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC75sEN%7CCgwIm7X3tQYQ6P_N0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723718299,
+            "review_datetime_utc": "08/15/2024 10:38:19",
+            "review_text": "My partner was there before and always wanted to bring me.    We finally went .I liked it so much I became a member there was a jazz band playing in the lawn also that day.  I had lots of fun .and also to see parents with  the kids enjoying plants was heartwarming. Big shout out to Britney and Erin  there privatol players in the hospitality side or things .and genuinely lovely people.  Footnote  when you buy a membership it breaks down over the year so affordable. We're going to catch the Halloween theme night soon the internet newsletter is also fantastic and the email mailing list very informative yall.  "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM3aEkzcU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM3aEkzcU53EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC7hI3qNw%7CCgsInrDotQYQiN2lQQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723471902,
+            "review_datetime_utc": "08/12/2024 14:11:42",
+            "review_text": "Beautiful, and relaxing place to visit! Very friendly and informative staff and lovely walking trails around the entrance that are free."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURiNDd5S3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiNDd5S3N3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDb47yKswE%7CCgwI77HVtQYQwJzXxQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723160815,
+            "review_datetime_utc": "08/08/2024 23:46:55",
+            "review_text": "Very Lovely, it's nice to just walk around and admire the flowers and different flora. Staff was very friendly as well"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiOWY3SFVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiOWY3SFVREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDb9f7HUQ%7CCgwIjKjQtQYQsPv1hgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723077644,
+            "review_datetime_utc": "08/08/2024 00:40:44",
+            "review_text": "Absolutely stunning place!\nAmanda assisted in coordinating our elopement and she made my dream come true! She placed us in the most beautiful spot on the garden, was attentive, friendly and helpful throughout the whole time. I couldn't have picked a better place to get married in and couldn't have gotten a better person to help us. Thank you Amanda and thank you Daniel Stowe Botanical Garden. This experience was unforgettable in the most magical way."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUcC16RHBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUcC16RHBnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICTp-zDpgE%7CCgwIrNLItQYQsLvV_wE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1722951980,
+            "review_datetime_utc": "08/06/2024 13:46:20",
+            "review_text": "I renewed my membership. Care of the garden is coming along, with some areas more cared for than others. Looks like the new CEO is investing in the new coffee shop, not the garden. So the music Pickin on the Porch is free, along with many free trails. Free garden entry after fun run. Free garden evening visits every summer month, I'm told thanks to the generosity of paying members.  Huh? Plus for Members Perks Night  MEMBERS MUST PAY A FEE!  someone kindly explain why I joined? I will save my money next year, since I am apparently subsidizing free admission. Next year I'll visit free."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURicm83Q1pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURicm83Q1pBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDbro7CZA%7CCgwIrsnDtQYQ8ImCsgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722868910,
+            "review_datetime_utc": "08/05/2024 14:41:50",
+            "review_text": "Beautiful atmosphere!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURieHNMTWF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURieHNMTWF3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDbxsLMaw%7CCgsIwry_tQYQiK2OTg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722801730,
+            "review_datetime_utc": "08/04/2024 20:02:10",
+            "review_text": "The design of the separate garden areas was beautiful, and the flow was easy to follow. The butterfly enclosure was especially enjoyable."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURic3RHS093EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURic3RHS093EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDbstGKOw%7CCgwImLy6tQYQ8NH12gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722719768,
+            "review_datetime_utc": "08/03/2024 21:16:08",
+            "review_text": "Beautiful location"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURieE1Ma3l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURieE1Ma3l3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDbxMLkywE%7CCgwI56uxtQYQiPDDoQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722570215,
+            "review_datetime_utc": "08/02/2024 03:43:35",
+            "review_text": "Went for the summer night lights event with my girlfriend after earning a free pass by doing the evening 5K there a couple of weeks ago.\n\nIt was a great experience overall. They had a food truck and an outdoor bar near the start of the trail which was nice after a long day at work.\n\nWe timed it so it was starting to get pretty dark and ended with it being totally night. The light displays were great, lots of neat effects on the plants and trees in the gardens. It was a relaxing walk and well organized so we didn't get lost. We would definitely try this again sometime."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURiMk5EdFZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiMk5EdFZ3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDb2NDtVw%7CCgsIks6vtQYQqO-VLA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1722541842,
+            "review_datetime_utc": "08/01/2024 19:50:42",
+            "review_text": "I really hate writing negative reviews on places but after the unprofessionalism i encountered i have to let anyone looking to book anything here to know what to expect. I recently booked an \"Engagement Package\" here to do a small proposal to my girlfriend and was not communicated properly about what this actually includes. To start things off the first location they were tying to set me up in was in the corner of this \"garden\" which wasn't even a garden it looked like someones backyard with no flowers no decor nothing it was just tucked away next to some bushes so i requested to be moved in to the conservatory which there was no problem in doing so. Why recommend someone a corner to begin with is beyond me. Anyways, here is when it gets even better, on their website they advertise the package as \"Proposal setup with floral decor\" which is not the case, all you get in reality is the lettering. No flowers not even the candles because it was not even offered until i asked about the setup to the planner helping me out who's name was Monica. I sent her a picture of the \"setup\" they have advertised on their website saying if i can have something similar to it and she proceeds to tell me that \"Thats an older picture and we no longer include as many flowers to make it more affordable\" and heres the kicker she said if i wanted to bring flowers on my own and decorate that i could, ending it off with a smiley face, and this is why it bothered me so much, I MENTIONED THAT I WAS DRIVING DOWN FROM NY THE DAY PRIOR, WHEN WOULD I HAVE HAD TIME TO DO THIS?! I even told her that i don't even need the 2 hours, all i needed was 30 min to 1 hour to propose and that i could've been compensated that extra time with more decor. To not even try to work something out in any way is how you get negative reviews like this one. None of this was ever communicated to me prior to payment nor is it advertised anywhere on their website that the setup doesn't include as many flowers as before which i can see why, because who would want to just pay for letters which aren't even that nice to begin with. False advertisement is what it is. Such a huge let down, i should have looked at the most recent reviews beforehand. Maybe it use to be nicer i guess but what kind of customer service is this. Now i have to think of something else i can do within 3 days. Thanks for nothing, do better."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURVdmFmSGd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVdmFmSGd3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDUvafHgwE%7CCgsI_-2rtQYQ8JK1KQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1722480383,
+            "review_datetime_utc": "08/01/2024 02:46:23",
+            "review_text": "Great place for a date, well kept and riveting"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNibm96ZGR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNibm96ZGR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICbnozddw%7CCgwIsrqTtQYQ6LyuxgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722080562,
+            "review_datetime_utc": "07/27/2024 11:42:42",
+            "review_text": "Very nice"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiNUtlYkZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiNUtlYkZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICb5KebFg%7CCgsI6bT_tAYQ2MbkTA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721752169,
+            "review_datetime_utc": "07/23/2024 16:29:29",
+            "review_text": "Beautiful!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiOEpEdlBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiOEpEdlBREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICb8JDvPQ%7CCgwIrdP5tAYQ2MCosQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721657773,
+            "review_datetime_utc": "07/22/2024 14:16:13",
+            "review_text": "It was amazing to experienced with butterflies at the garden."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNiZ0lQM1ZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNiZ0lQM1ZBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICbgIP3VA%7CCgwI6eD2tAYQ4IyymQM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1721610345,
+            "review_datetime_utc": "07/22/2024 01:05:45",
+            "review_text": "The lights were definitely underwhelming this summer. Last year was much better. A lot of areas were dark and unkempt. Doesn't seem like a lot of thought / design went into this year's lights... 2024 summer lights was a big miss for me.. very disappointed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyLWE2R0xnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyLWE2R0xnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDr-a6GLg%7CCgwI8JnltAYQyJyc3QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721322736,
+            "review_datetime_utc": "07/18/2024 17:12:16",
+            "review_text": "what a wonderful visit. you can bet\nI signed up for a membership!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURycVppamJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURycVppamJREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDrqZijbQ%7CCgwIkPrjtAYQyK6n_gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721302288,
+            "review_datetime_utc": "07/18/2024 11:31:28",
+            "review_text": "We truly enjoyed our visit. Lots of walking, of course, and being outside,  it was very hot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURydXJLN1B3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURydXJLN1B3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDrurK7Pw%7CCgsIjbDctAYQ2OPCYg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721178125,
+            "review_datetime_utc": "07/17/2024 01:02:05",
+            "review_text": "Great place to visit away from crowds and relax. The site is huge, but so much to see."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURyaW9EWUVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyaW9EWUVREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDrioDYEQ%7CCgwIkaLatAYQoPHRxQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721143569,
+            "review_datetime_utc": "07/16/2024 15:26:09",
+            "review_text": "Absolute gem in the Charlotte metro area! Insightful staff, wonderful flowers and plants and expertly maintained! My little one loves going here every season and seeing all of the plants! The water arch is fun and makes the experience with a kid even more memorable! I highly suggest driving here and enjoying a leisurely stroll!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURyeE5Yb2tnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURyeE5Yb2tnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDrxNXokgE%7CCgwIr4TStAYQuKeW4AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721008687,
+            "review_datetime_utc": "07/15/2024 01:58:07",
+            "review_text": "Gorgeous gardens and helpful staff! Such a hidden gem in Belmont. The Trailhead store is a fun stop for delicious coffee, baked goods, snacks, beer and wine."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNycDZteU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNycDZteU1BEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICrp6myMA%7CCgsIw57BtAYQkM3hQQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1720733507,
+            "review_datetime_utc": "07/11/2024 21:31:47",
+            "review_text": "Butterflies were awesome.  Orchids were nice. That's all they had. Not worth the money"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNycllEbGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNycllEbGZBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICrrYDlfA%7CCgwI3963tAYQwMm78wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720577887,
+            "review_datetime_utc": "07/10/2024 02:18:07",
+            "review_text": "What an incredible gift we have here in Belmont. There are so many things to do and see in the gardens. Check their website for all kinds of different events, day and night through all of the seasons!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyMWRLUkdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyMWRLUkdBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICr1dKRGA%7CCgwIgOi1tAYQ-IyCtgM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1720546304,
+            "review_datetime_utc": "07/09/2024 17:31:44",
+            "review_text": "Disappointed as to how many fake plants there were, especially in the orchid garden"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNydHB1UDd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNydHB1UDd3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICrtpuP7wE%7CCgwI8sOntAYQwMrmpwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1720312306,
+            "review_datetime_utc": "07/07/2024 00:31:46",
+            "review_text": "Visited with my son! Love all the gardens!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNyZ3JDRUl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNyZ3JDRUl3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICrgrCEIw%7CCgwIn_2dtAYQ8Jqr4AE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1720155807,
+            "review_datetime_utc": "07/05/2024 05:03:27",
+            "review_text": "I'm not sure what to think about our visit. We visited years ago and the grounds were much better than today. Lots of weeds and overgrowth were present. Workers were buzzing around but passing by very obvious weeds. We agreed that admission did not match our expectations and that we would not return. The coffee shop and free trails are the best part. They need something to draw people in and better caretakers. Adding a playground and splash pad would be a huge bonus. Something to bring adults in too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMcDc3bG53RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMcDc3bG53RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDLp77lnwE%7CCgwI45CMtAYQ4PvxywM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719863395,
+            "review_datetime_utc": "07/01/2024 19:49:55",
+            "review_text": "What a beautiful place to visit...and, they have summer concerts !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMdmQyNURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMdmQyNURnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDLvd25Dg%7CCgwIpNWCtAYQyMblvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719708324,
+            "review_datetime_utc": "06/30/2024 00:45:24",
+            "review_text": "Really beautiful place to visit.  Some very exquisite looking flowers of all variety. Not really for little kids, I think they have the attention span to enjoy it. Very relaxing place to visit.  Staff was nice too and a the butterfly garden was interesting see as well"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMNlpyb0h3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMNlpyb0h3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDL6ZroHw%7CCgsIlp78swYQqIH8CA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719602966,
+            "review_datetime_utc": "06/28/2024 19:29:26",
+            "review_text": "Beautifully kept gardens, and grounds."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMenZhOVVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMenZhOVVnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDLzva9Ug%7CCgwIiPb2swYQuIvb2gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719515912,
+            "review_datetime_utc": "06/27/2024 19:18:32",
+            "review_text": "A membership is worth it! I come here often to walk and exercise.   There is beer and wine to drink while sitting among the gardens.  A place to cool off and rest.   The lights at night are going to be spectacular!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMaXZYN0Z3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMaXZYN0Z3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDLivX7Fw%7CCgwIsMTxswYQ8PCevwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719427632,
+            "review_datetime_utc": "06/26/2024 18:47:12",
+            "review_text": "Beautiful venue on a hot day."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMekpuejd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMekpuejd3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDLzJnz7wE%7CCgwIzePtswYQiNzriAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1719366093,
+            "review_datetime_utc": "06/26/2024 01:41:33",
+            "review_text": "The weather is as hot as the garden, worth a visit or throw a party on."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMODdiVjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMODdiVjhnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICL87bV8gE%7CCgwI2vLdswYQiJefqQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719105882,
+            "review_datetime_utc": "06/23/2024 01:24:42",
+            "review_text": "Enjoyed seeing the butterflies and the orchids.  Too hot to walk around on the trails."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMbzdhSldnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMbzdhSldnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICLo7aJWg%7CCgwIrp7cswYQqJu79gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719078702,
+            "review_datetime_utc": "06/22/2024 17:51:42",
+            "review_text": "The gardens are all beautiful, with so many flower varieties, bees and butterflies, fountains, and a butterfly exhibit. I was happy to walk under the fountain that soaked me and my clothes because it was hot today!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMb2Vibmh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMb2Vibmh3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICLoebnhwE%7CCgwIyNnNswYQkKDBpAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718840520,
+            "review_datetime_utc": "06/19/2024 23:42:00",
+            "review_text": "The gardens was peaceful and beautiful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMd2RqUDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMd2RqUDJBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICLwdjP2AE%7CCgwI1ZbNswYQuOik4gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718831957,
+            "review_datetime_utc": "06/19/2024 21:19:17",
+            "review_text": "Everything here is beautiful. There's a butterfly garden, outdoor gardens, green houses, a children's area, and they even let you rent out a space for events."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNMb28zMXV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMb28zMXV3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICLoo31uwE%7CCgwItoe_swYQgODcpwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1718600630,
+            "review_datetime_utc": "06/17/2024 05:03:50",
+            "review_text": "Was very disappointed to see that the grounds are not taken care of.  There are a couple areas that are nice but weeds are growing everywhere.  Was very underwhelmed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNMMUphT1ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNMMUphT1ZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICL1JaOVg%7CCgsImqO3swYQ-LW_NA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718473114,
+            "review_datetime_utc": "06/15/2024 17:38:34",
+            "review_text": "Bring your camera and enjoy what you are about to experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6bDdpN213RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6bDdpN213RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDzl7i7mwE%7CCgwIxsepswYQsIPx6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718248390,
+            "review_datetime_utc": "06/13/2024 03:13:10",
+            "review_text": "Beautiful place to visit"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6aDdYM0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6aDdYM0VBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDzh7X3EA%7CCgwIs6eoswYQkJuzxQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1718227891,
+            "review_datetime_utc": "06/12/2024 21:31:31",
+            "review_text": "Had a lovely week day walk. It was small enough to enjoy and not overwhelm. Love the conservatory and butterfly house. Nice fountains"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR6dTRfUXlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6dTRfUXlRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDzu4_QyQE%7CCgwIseGnswYQyPvw7gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1718218929,
+            "review_datetime_utc": "06/12/2024 19:02:09",
+            "review_text": "Very pretty walk.  It was a bit smaller than i was expecting, but still a great date location. Even saw a cool little water snake."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR6cTh5YWRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6cTh5YWRREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDzq8yadQ%7CCgwI37mmswYQ0OrCyQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1718197471,
+            "review_datetime_utc": "06/12/2024 13:04:31",
+            "review_text": "I don't know if this is an off season for the botanical garden... but it was a sad garden. The soil was very dry everywhere, the canal had only grime. No running water! The poor plants were dehydrated. I thought we would be amazed at the beauty of the plants.. There were some beautiful flowers but the vast majority of the visit was us trying to find any garden with plush plants and flowers. The gardens just felt neglected (maybe lack of personnel?). Unfortunately I don't think Im coming back, the cost of the visit was not worth it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6Zy1uT0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6Zy1uT0x3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICzg-nOLw%7CCgsIuJD8sgYQqNSdVg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717504056,
+            "review_datetime_utc": "06/04/2024 12:27:36",
+            "review_text": "Absolutely beautiful gardens. 10/10 worth the visit!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN6cGREMVl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN6cGREMVl3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICzpdD1Yw%7CCgwIw6r3sgYQgPam_AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1717425475,
+            "review_datetime_utc": "06/03/2024 14:37:55",
+            "review_text": "The family and I went over the weekend to the Butterfly Bungalow and to walk the gardens it was gorgeous, we had an awesome time, very peaceful and we definitely will be going back. They were getting ready for a wedding, it is a gorgeous place for many different events. Love it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN6d2ZuYXVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN6d2ZuYXVnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICzwfnaugE%7CCgsIp5bysgYQ0JTdGA%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1717340967,
+            "review_datetime_utc": "06/02/2024 15:09:27",
+            "review_text": "DSBG has come a long way since I last visited a few years ago, but it still a young garden and lacks cohesion and maturity in some sections. I remain optimistic about their future, although having a general ticket price nearly on par with far larger and more established botanical gardens in other regions may dampen the appeal for some locals. Concessions around the garden are a nice touch but also expensive."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUMzkyNlJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUMzkyNlJREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDT3926RQ%7CCgsIzdLcsgYQgP2iSA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716988237,
+            "review_datetime_utc": "05/29/2024 13:10:37",
+            "review_text": "Such a magically wonderful place to get lost in all of the beauty. You can really tell the staff takes pride and works hard to keep up with everything and I love that there's an area just for kids so that the adults can enjoy the majority of the acreage.  We packed the lunch because we weren't sure but there were snacks and Italian ice along with really good coffee so keep that in mind if you're going and get hungry."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUaDQ3OEtREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUaDQ3OEtREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDTh478KQ%7CCgwI2LnYsgYQoOSqjgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716919512,
+            "review_datetime_utc": "05/28/2024 18:05:12",
+            "review_text": "Serene garden. Makes You forget you're 15min from Charlotte"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUMmJhcmZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUMmJhcmZ3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDT2barfw%7CCgwI4PHJsgYQ6OnR3AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716680928,
+            "review_datetime_utc": "05/25/2024 23:48:48",
+            "review_text": "Daniel Stowe Bontanical Garden is absolutely beautiful. Parking is free, and admission is reasonable. The butterfly exhibit is cool and so is the orchid observatory. There are cold beverages and hotdogs served. The restrooms and gift shop are inside."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUc3RHbGFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUc3RHbGFBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDTstGlaA%7CCgsItZO-sgYQuNWdJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716488629,
+            "review_datetime_utc": "05/23/2024 18:23:49",
+            "review_text": "Beautiful gardens. The Orchid Conservatory is amazing. We went on a Thursday and the garden was not crowded. A varied collection of different types of gardens."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUNUtHbEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUNUtHbEh3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDT5KGlHw%7CCgwI95K5sgYQ4NqswgE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1716406647,
+            "review_datetime_utc": "05/22/2024 19:37:27",
+            "review_text": "I just paid $18 to walk around a garden full of weed. I could've went to my neighbors house to see that for free."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNWY3dFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNWY3dFRBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICT5f7tTA%7CCgwImJecsgYQ6JWTgwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715932056,
+            "review_datetime_utc": "05/17/2024 07:47:36",
+            "review_text": "Gardens needed a lot of work doing on them to make them presentable for paying public. Disappointed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNULXVEbnB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNULXVEbnB3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICT-uDnpwE%7CCgwI8oWKsgYQgKjNzgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715634930,
+            "review_datetime_utc": "05/13/2024 21:15:30",
+            "review_text": "I enjoyed coming here and being in nature. To see the butterflies and the beautiful plants. I can't help but to feel happy and blessed.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUNm9DN2NnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUNm9DN2NnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICT6oC7cg%7CCgsI3IGIsgYQ2OnTMg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715601628,
+            "review_datetime_utc": "05/13/2024 12:00:28",
+            "review_text": "Great for mother's day .\nCould use more volunteers."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNUa3ZXSGhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNUa3ZXSGhBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICTkvWHhAE%7CCgwIstKEsgYQiLCV7wI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1715546418,
+            "review_datetime_utc": "05/12/2024 20:40:18",
+            "review_text": "Beautiful and well kept"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNUN082ZlJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNUN082ZlJ3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICT7O6fRw%7CCgsI6qyAsgYQsOKhEg%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1715476074,
+            "review_datetime_utc": "05/12/2024 01:07:54",
+            "review_text": "This botanical garden is fine. It's not great. There's a few parts of it that are really beautiful and the rest is meh. Coming from the Atlanta botanical gardens, it was very disappointing. We got in for free as members of the ABG. We would be very disappointed if we paid to attend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqMy1pTFBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqMy1pTFBBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDj3-iLPA%7CCgsIsYDysQYQsNnUAg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715241009,
+            "review_datetime_utc": "05/09/2024 07:50:09",
+            "review_text": "Something truly special and stunningly majestic! This place exceeded my expectations and I'm still overjoyed after seeing a lush green and colorful array of flora as if Persephone herself was there tending the land. Walking through the Pergola's onto the succession of spectacular gardens, I was in complete wonderment. The Canal Garden was overflowing with fragrant blossoms and foxgloves lined the pathway as water features and fountains unfolded along the way. I admired an abundance of wonderful plants and sculptures strategically placed throughout in a vivid design. To my surprise, I noticed many plant species that I had never heard of or seen before, forever learning something new. The Orchid Conservatory with the waterfall wall was amazing. (I've always admired glass garden conservatories like the ones found in the US Botanical Garden in DC, Vizcaya Museum in Miami and Isabell Stewart Gardner Museum in Boston.) And if you are an orchid and tropical plant lover, as I am, the conservatory is a must see. The White Garden reminded me of a secret English garden tucked away for tranquility. The children's area called, Lost Hollow, was crazy good. They had a mini amphitheater that reminded me of my visit to Ephesus last year where a reenactment of Cleopatra and Ceasar (or Mark Antony) was held. The childrens area also had a magical/enchanted Fae/Faery like area where you can play in little forest dwellings and king and queen stone carved throne chairs with views of walking trails below. There is so much to see and do here. You can't get bored here. There is so much to learn and explore or just unwind or have a romantic outing. In comparison to my favorite garden, Dallas Arboretum & Garden, I love North Carolina's tree-lined landscape that added a wilderness and untamed backdrop to the garden, giving it a balanced elegantly manicured but not overly groomed appeal. Sometimes it's attractive to be slightly wild and rough around the edges, checkout the wildflowers in the prairie area. As a bonus, this place offers garden classes and workshops, summer camps for children, opportunities for private events, and has two stores (including a gift shop). Special thank you to the lady who welcomed me in and explained the map and noticed I might do a little work and pointed out great shaded spots for working. (She lovingly expressed for me not to work too hard...much appreciated.) Many thanks to the Boards, donors, and staff for the great work here."
+        },
+        {
+            "review_id": "ChRDSUhNMG9nS0VJQ0FnSURqbTdBbxAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSURqbTdBbxAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDjm7Ao%7CCgwIvr3rsQYQ2MTTwQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1715134142,
+            "review_datetime_utc": "05/08/2024 02:09:02",
+            "review_text": "Shhhhh..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqeWVpeFpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqeWVpeFpBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDjyeixZA%7CCgwI0ufZsQYQ4IaErAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1714844626,
+            "review_datetime_utc": "05/04/2024 17:43:46",
+            "review_text": "Children were not well supervised."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURqNFlMYXF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURqNFlMYXF3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDj4YLaqwE%7CCgwIvZjXsQYQkPijugM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714801725,
+            "review_datetime_utc": "05/04/2024 05:48:45",
+            "review_text": "My sister in law had her wedding there and it was absolutely beautiful. Great spots for pictures. They clearly designed parts of the facility for such an occasion. Highly recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqX3RQVUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqX3RQVUt3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDj_tPUKw%7CCgwIn6vVsQYQkOmslQE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1714771359,
+            "review_datetime_utc": "05/03/2024 21:22:39",
+            "review_text": "We were a little disappointed. Not a lot to look at. There were a lot of dead flowers and lots of weeds.  The orchid house was also disappointing. Needs a lot of attention. Close very early."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURqcHRPWFBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqcHRPWFBREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDjptOXPQ%7CCgwInPPOsQYQ0K7ZywE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714665884,
+            "review_datetime_utc": "05/02/2024 16:04:44",
+            "review_text": "One of my favorite places of all time and it's right here in the Charlotte, North Carolina area. Clean, friendly, welcoming staff and awesome events. Been going here for years and just renewed my membership. Great place for a picnic or an afternoon of painting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqX19fT09BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqX19fT09BEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICj___OOA%7CCgwI3Mq1sQYQyIPchQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714251100,
+            "review_datetime_utc": "04/27/2024 20:51:40",
+            "review_text": "This is a beautiful place to escape all the stress and anxiety, and bring calm into your life again. It's beautifully laid out, and I will definitely be back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqeTd6MnZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqeTd6MnZnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjy7z2vgE%7CCgsIlOWqsQYQiJWYdw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714074260,
+            "review_datetime_utc": "04/25/2024 19:44:20",
+            "review_text": "Awesome place. Beautiful gardens and hardscape features."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqdVoyaFJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqdVoyaFJBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjuZ2hRA%7CCgwIld2fsQYQuPzjrAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713893013,
+            "review_datetime_utc": "04/23/2024 17:23:33",
+            "review_text": "Pricey but worth it, often has events at both the main garden area and the coffee shop. There's also free trails and a doggy park."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnNXRMbTNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNXRMbTNnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICg5tLm3gE%7CCgwIzLKfsQYQ0OPjoAM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1713887564,
+            "review_datetime_utc": "04/23/2024 15:52:44",
+            "review_text": "I've visited this garden almost every year since it opened. The garden used to be beautiful and well-kept, with flowers and shrubs blooming every season. It's now a weedy mess, with few flowers, and dead or dying shrubs and trees. There have been some improvements to the natural area outside the \"garden\" and new paths added inside, but the actual flowering garden is completely neglected. It's so sad to see the deterioration from what it once was."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqenRhUEpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqenRhUEpnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjztaPJg%7CCgwIoo2VsQYQ0IvxuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713718946,
+            "review_datetime_utc": "04/21/2024 17:02:26",
+            "review_text": "Came here for a wedding. Gorgeous little venue and garden."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqdHNfYU93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqdHNfYU93EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjts_aOw%7CCgwIjPKTsQYQ2OKDggI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713699084,
+            "review_datetime_utc": "04/21/2024 11:31:24",
+            "review_text": "Went to the gardens for a spring wedding. The grounds were absolutely beautiful, especially after an afternoon rain with the colors popping vibrantly!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqMnNuclZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqMnNuclZREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICj2snrVQ%7CCgsIyuGOsQYQ-N6JeQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713615050,
+            "review_datetime_utc": "04/20/2024 12:10:50",
+            "review_text": "This beautiful garden is a delight! It's well-maintained and has a lovely conservatory filled with lush plants, flowers, and a charming fountain wall. The paths are easy to navigate, and the map provided is helpful. While the garden itself is on the smaller side, it's clear the staff puts a lot of love into caring for it.\n\nThe only thing that could be improved is the snack selection in the gift shop. Unfortunately, our frozen treats were freezer-burned."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqa3FMZExREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqa3FMZExREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjkqLdLQ%7CCgwIl4aKsQYQqMO35QI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1713537815,
+            "review_datetime_utc": "04/19/2024 14:43:35",
+            "review_text": "We had been wanting to visit this botantical garden mainly for the \"orchid observatory.\" The space and area is expansive. There was a cute storybook to read while walking in the first area. After that it was very disappointing, especially for the money. The water fountains were not being used and looked like a the paths design had seen better days and were not being utilized to their full capabilities. The \"orchid observatory\" was upsetting to say the least. There was not special or creative about this space to have such a title. Walmart has a better \"observatory\" of orchids. Very disappointing. Save your money and go to free park."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqN09XNGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqN09XNGZBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICj7OW4fA%7CCgwImciFsQYQuKfxmAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1713464345,
+            "review_datetime_utc": "04/18/2024 18:19:05",
+            "review_text": "A beautiful Botanical Garden located in Belmont NC.\n\nYou enter thru a beautiful pavilion with local artwork and stained glass. There are restrooms and a gift shop located in the pavilion.\n\nYou can stroll thru over 30 acres of gardens displaying local plants,a children's area,conservatory and trails to explore. We visited between seasons so most of the spring flowers were finished blooming and the summer plants were just being planted.\n\nThey were busy at work getting ready for the summer season as the trails were not cut and some of the gardens were closed.\n\nThere is plenty of parking and you will pay an admission fee. Membership plans are available.\n\nDefinitely worth a visit when in the Charlotte area ."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqdUxMYnVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqdUxMYnVBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICjuLLbuAE%7CCgwI5L6AsQYQ2OHqvgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713381220,
+            "review_datetime_utc": "04/17/2024 19:13:40",
+            "review_text": "We arrived early for the bird watching tour, which we loved and plan to attend again. We then paid the entrance fee and strolled through the beautiful gardens and took photographs. We had an amazing time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqMEptRURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqMEptRURnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICj0JmEDg%7CCgwImZL8sAYQkIapmwM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1713309977,
+            "review_datetime_utc": "04/16/2024 23:26:17",
+            "review_text": "Property grounds are not well kept.   I was expecting for this to be a \"wow\", it was underwhelming.  I have neighbors with nicer yards and flowers.. it was super disappointing to book a 2 hour photo session only to find weeds and overgrown beds.. mostly a run down place of the past.\n250 dollars wasted, no color , hardly any flowers .\nCalled and spoke to someone and the told me they understand. No one from management called or addressed ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREXy1IVFRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREXy1IVFRBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDD_-HTTA%7CCgwIzbr5sAYQqK616wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713265997,
+            "review_datetime_utc": "04/16/2024 11:13:17",
+            "review_text": "Exceptional new addition of a trail head store, dog park and additional trails."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREMjcyckJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREMjcyckJ3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDD272rBw%7CCgwIlpnwsAYQqJC1mwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1713114262,
+            "review_datetime_utc": "04/14/2024 17:04:22",
+            "review_text": "Don't waste your money. 57 dollars for a family of four to walk around flower beds full of weeds and dead plants. These photos attached are located in the main garden area. Extremely disappointment in these grounds. They appear to have not been touched in years. Will not return."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREdWRINXB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREdWRINXB3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDudH5pwE%7CCgwIjLLgsAYQoLDhuQI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1712855308,
+            "review_datetime_utc": "04/11/2024 17:08:28",
+            "review_text": "I tried calling to get more info about closing time, but no one answered on Saturday.  We got there at 245 and was told we had to leave by 4, entrance fee is high enough they shouldn't have that attitude, if we hadn't driven 2.5 hours to get there we would have not stayed."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREbWUzd2FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREbWUzd2FnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDme3wag%7CCgwInsjfsAYQ2OHA0gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712841758,
+            "review_datetime_utc": "04/11/2024 13:22:38",
+            "review_text": "Beautiful grounds.  Well maintained and lovely buildings.  The orchid sanctuary is beautiful."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREOGJfSlZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREOGJfSlZBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDD8b_JVA%7CCgsIgfPdsAYQuMTzKA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712814465,
+            "review_datetime_utc": "04/11/2024 05:47:45",
+            "review_text": "Always love the gardens here and the exhibits that they have. Definitely visit the orchid greenhouse."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREMGZhbmRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREMGZhbmRnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDD0fandg%7CCgsI9pTcsAYQsMmHVQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712786038,
+            "review_datetime_utc": "04/10/2024 21:53:58",
+            "review_text": "Don't waste your time.  It's all a joke and it's as though they are intentionally losing money and letting the garden go.  Makes me wonder where the ticket sales and membership fees go. I've nicer plants at a rest stop recently."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREaXJiYlJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREaXJiYlJREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDirbbRQ%7CCgsIiITMsAYQ-Pb7eg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712521736,
+            "review_datetime_utc": "04/07/2024 20:28:56",
+            "review_text": "Great trails for our dogs. Quiet and beautiful. The trailhead store was perfect for an after trail snack break! They have coffee, wine, beer and lots of healthy snack options."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREcExHVkl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREcExHVkl3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDpLGVIw%7CCgwIirvBsAYQuNCYvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712348554,
+            "review_datetime_utc": "04/05/2024 20:22:34",
+            "review_text": "I love botanical garden and this it was a worth visit even it no has much shadows, but it's full of amazing flowers and fun things to do like the fountain's and the little space with butterflies. I got there in July of 2023."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREcE1LVmpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREcE1LVmpRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDpMKVjQE%7CCgsIqKPBsAYQwMvKVQ%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712345512,
+            "review_datetime_utc": "04/05/2024 19:31:52",
+            "review_text": "On April 4 we visited the David Stowe botanical garden. None of the gardens had been weeded and there was garbage strewn out in front obviously, from a party. I would not recommend this place to anybody."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREc0szd0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREc0szd0R3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDDsK3wDw%7CCgwI5MO7sAYQsJHFiQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712251364,
+            "review_datetime_utc": "04/04/2024 17:22:44",
+            "review_text": "Best garden experience in CLT so far."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEMTlmQzlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEMTlmQzlnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD19fC9gE%7CCgwIlOyysAYQsPG6hQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712109076,
+            "review_datetime_utc": "04/03/2024 01:51:16",
+            "review_text": "Very disappointing.  Lots of weeds throughout the place including around the fountains (in the pavers around it) and in many of the plant beds. May have been the time of year we went (early April) but this place has seen better days clearly needs a significantly larger staff to maintain and clean it up.  Many of the plants and trees were not labeled and some of the plants were obviously unhealthy and lots of dead vines and branches.  The \"wings\" stations were scant and butterfly portion was closed. And the main building had a musty stench.  I took visitors in town from out of state and was embarrassed."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEMV9LN29nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEMV9LN29nRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD1_K7ogE%7CCgwIz7qysAYQqP-rkgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712102735,
+            "review_datetime_utc": "04/03/2024 00:05:35",
+            "review_text": "Spring is here!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNENTZLZWVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNENTZLZWVnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD56Keeg%7CCgwI9aKxsAYQ-IO7qgE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1712083317,
+            "review_datetime_utc": "04/02/2024 18:41:57",
+            "review_text": "We visited the garden as an Easter outing for our elderly mother and it was extremely disappointing.  I've been visiting for over a decade and the grounds have never been in such sad shape.  It seemed there was little effort put into making things beautiful for the spring season.  There used to be masses of spring bulbs and annuals and flowering trees and shrubs  I understand some areas need updating as the garden is aging but it was so sad to see how the garden has deteriorated. There was not even attempts to highlight areas with potted plants and spring annuals!   I hope things improve but I am disappointed and wished I had read a few reviews before spending the money.  Very sad!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEbzVHRHN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEbzVHRHN3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICDo5GDswE%7CCgsIvrqosAYQgOrEIw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711938878,
+            "review_datetime_utc": "04/01/2024 02:34:38",
+            "review_text": "Went today for Easter and the place was a joke. There was hardly anything blooming and it looked like 1/2 the stuff was dead. They also kept trying to charge me full price instead of senior price, claiming they raised the prices but yet the board behind them clearly said senior was 14.95 and full price was 16.95.\nTrust me you can go to Lowe's or Home Depot and see more in bloom than what Daniel Stowe has.\nTOTAL WASTE OF TIME AND MONEY, GO FIND A BETTER PLACE!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEX2J2V2l3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEX2J2V2l3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD_bvWiwE%7CCgsI6YqnsAYQ4K_zQA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711916393,
+            "review_datetime_utc": "03/31/2024 20:19:53",
+            "review_text": "Disappointing Visit to Daniel Stowe Botanical Gardens\n\nWhere were the flowers? My recent trip to Daniel Stowe Botanical Gardens was a major letdown. Instead of vibrant blooms and manicured landscapes, we were greeted by a disappointing display of neglect.\n\nOvergrown and Unkempt:  Weeds ran rampant throughout the gardens, choking out any semblance of flowers or well-maintained plant life. Dead plants hung limply, and the whole place had a neglected feel.  The sight of a large blacksnake slithering amongst the weeds only added to the unsettling atmosphere.\n\nWater Woes: The ponds, what should have been a beautiful focal point, were covered in a thick layer of algae.  The presence of dead mice and frogs floating on the surface was not exactly picturesque.\n\nUnderwhelming Exhibit:  The \"exhibit\" was a total dud. It felt more like a high school student's hastily thrown together extra credit project, and not one that deserved any praise.\n\nPricey Neglect:  Charging an admission fee, especially the hefty $14.95 per person, is outrageous considering the state of the gardens.   Being overcharged for an extra person only added insult to injury.\n\nSave your money and your time!  Skip Daniel Stowe Botanical Gardens until they get their act together. There are plenty of other places where you can enjoy beautiful, well-maintained gardens for a fraction of the price."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEdFpfRFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEdFpfRFRnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICDtZ_DTg%7CCgwInu6isAYQ8I-VsQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711847198,
+            "review_datetime_utc": "03/31/2024 01:06:38",
+            "review_text": "Going to the botanical garden was a lovely experience not what we were expecting. It was beautiful, my kids enjoyed doing the Easter scavenger hunt."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEN3JyZmp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEN3JyZmp3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD7rrfjwE%7CCgwIseOVsAYQ0O2igAI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1711632817,
+            "review_datetime_utc": "03/28/2024 13:33:37",
+            "review_text": "Went during off season and found ourselves a bit disappointed. Orchid room was nice. The grounds definitely needed a little more attention. While there we did not notice anyone working on maintaining the grounds."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNENXFuazRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNENXFuazRBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD5qnk4AE%7CCgwIzPiRsAYQoNrEwQE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711569996,
+            "review_datetime_utc": "03/27/2024 20:06:36",
+            "review_text": "Visiting Daniel Stowe Botanical Gardens yesterday, March 26 2024, from Central Florida, I was really excited to see the gardens.  Listed as number 8 of things to do in Charlotte, posted by travel us news, I couldn't wait to visit. What a shock! Instead of seeing beautiful orchids, flowers, plants, etc. I saw a lot of dead, overgrown, under watered and unkempt gardens! Unfortunately, the weeds have taken over everywhere! Dead branches were hanging loosely in trees. The Wings Exhibit was closed and didn't show any signs of opening anytime soon. A mound of mulch waiting to be spread. There were a couple of employees, one riding on a tractor and the other riding on a cart. However, I never saw anyone tending to the gardens. The employee at the front door, who was working the cash register, was nice.\n\nNot sure if it's a lack of employees. However, I would think management would do something about these unloved gardens! At this time, I'm sorry that I wasted my money and time to visit DSBG!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNEc29fbTVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNEc29fbTVBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICDso_m5AE%7CCgwIxLuLsAYQgPjY-QE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1711463876,
+            "review_datetime_utc": "03/26/2024 14:37:56",
+            "review_text": "Something is amiss here as the experience we had and what we saw DO NOT MATCH the reviews we're seeing! A recent visit told an entirely different story from the collected reviews on Google...\n\nDSBG was once a beautiful gem and on a path to being a standout in the USA. What has happened?\n\nAt first when we arrived, things were looking pretty good. They've put in a new trail system and the entry road and wine-cabin thing looked inviting. Plantings by the lake are pretty and the first impression was positive.\n\nPulling into the main parking lot however, it was clear that things were not so great. Weeds were everywhere, poking through the pavement and walkways, formal hedges hadn't been trimmed last season (or arguably in a couple of years) and were dominated by dead tips and unmaintained ground bed plantings (despite the spring daffodils pushing up all over the place) were the dominant feature and a gloomy sense of \"poor maintenance\" or budget issues abounded. Inside the main building, we saw chipped, dirty paint, outdated signage/brochures and handouts and our mention of scalding water in the women's bathroom, when reported to staff, was responded to with a defeated, \"we've told maintenance about it over and over.\" Supplies, chairs and event tables were stored haphazardly and in public view.\n\nThe main gardens were not better. BY FAR, the dominant species in the formal planted areas was grass and weeds. Sure, we were there during a shoulder season but the sheer number of freeze-damaged, absent or otherwise just dead plants was shocking. I saw many identifying marker signs for signature plants that were either dead, physically damaged or just not there. The base and structural plantings (hedging/trees/backgrounds) had obviously not been well maintained over the past few years and just by glancing around, it was clear that neither had the trellises, buildings, pergolas and pathways. Even the fountains showed signs that they hadn't been adjusted (or cleaned out) in at least 3 years! Loved the tattered chlorine feeders sitting where toddlers could easily get to them...\n\nUgly, disorganized infrastructure from holiday event activities litters the landscape and the poorly marked \"improvement projects\" currently underway look to be \"low bidder\" or minimal works - lipstick on a pig. Honestly, a visit to ANY public park, in ANY town (maintained by a local government with minimal resources) would have been a better use of our time than our visit to DSBG.\n\nI frankly saw more spring blooms along the highway and in my own yard!\n\nOh, and the \"Orchid Sanctuary.\" Just wow. It's clear that a failure of the heating system or a major staff problem has happened. 75% of the tropicals in the building showed signs of cold damage or were already totally dead. ALL of the signature orchids had died (except 2 tiny specimens) and their answer was clearly to go to the local garden center, buy $300 of potted orchids and zip-tie them IN THEIR GROWERS POTS randomly around the building. A little moss was evidently used to try and cover up the pots but price tags and bar-codes were still on many of them! All still had their stem stakes and greenhouse clips on the flower stalks and were still in the shipping medium!\n\nOn the way out, a stop at the cabin/wine and picnic operation was a disappointment too... While the concessionaire is obviously trying with wine sales, it's a bit disconcerting to look at the food offerings and find rotten \"fresh fruit\" in clamshells and sandwiches/wraps days past their expiration date on display in the coolers.\n\nFor me, there is a clear reason. Leadership. Sure, their past interim director went to prison for drugs but DSBG HAS A MASTER PLAN AND AN ENDOWMENT to build and operate this place! Letting the garden dwindle, fall apart and \"go to seed\" like this is an embarrassment to the region. This is clearly poor execution on the part of leadership.\n\nAn actual treasure here is being destroyed by neglect, poor volunteer leadership and lost vision. Someone needs to CARE."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEOFA3RFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEOFA3RFZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICD8P7DVg%7CCgwIqZP8rwYQ4KTsgwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711212969,
+            "review_datetime_utc": "03/23/2024 16:56:09",
+            "review_text": "Always a nice time visiting the gardens"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5OWNmVllREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5OWNmVllREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID99cfVYQ%7CCgwIk__mrwYQ6Kn_uwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710866323,
+            "review_datetime_utc": "03/19/2024 16:38:43",
+            "review_text": "Great botanical garden with friendly staff. Multiple areas were quite enjoyable. There were some areas undergoing maintenance so we missed a few sections. Would recommend a few hours here. The gift shop had plenty of goodies for everyone."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ5d0xDT3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ5d0xDT3pBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID9wLCOzAE%7CCgsIsYW_rwYQ4I_jOw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1710211761,
+            "review_datetime_utc": "03/12/2024 02:49:21",
+            "review_text": "It was pretty but a lot of it was under construction when we went"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5MS1YQlFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5MS1YQlFREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC91-XBQQ%7CCgwI8ai5rwYQwJqoxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710118001,
+            "review_datetime_utc": "03/11/2024 00:46:41",
+            "review_text": "Outstanding venue for live music"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5eGFLRk1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5eGFLRk1REAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC9xaKFMQ%7CCgsIxoinrwYQgNjoGQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709818950,
+            "review_datetime_utc": "03/07/2024 13:42:30",
+            "review_text": "Magnificently beautiful even in the winter!\n\nThe enclosed Orchid greenhouse is a great escape from the cold."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM5MkxqeVFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM5MkxqeVFnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC92LjyQg%7CCgwI2_6GrwYQ4KvgpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709293403,
+            "review_datetime_utc": "03/01/2024 11:43:23",
+            "review_text": "The gardens were beautifully lit at night, and the light show set to music was nice."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkLV9Ya3VnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkLV9Ya3VnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDd-_XkugE%7CCgwIlqP5rgYQ2OflwgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709068694,
+            "review_datetime_utc": "02/27/2024 21:18:14",
+            "review_text": "Great hiking trails"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR0NnZiUFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0NnZiUFZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDt6vbPVg%7CCgsI7tz6rQYQ0JrqEw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706995310,
+            "review_datetime_utc": "02/03/2024 21:21:50",
+            "review_text": "Great staff, cool gardens! Just a little small. It's a perfect spring/summer spot."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUROLXI3QU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUROLXI3QU9BEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDN-r7AOA%7CCgwI-8y2rQYQsOHv_QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705879163,
+            "review_datetime_utc": "01/21/2024 23:19:23",
+            "review_text": "Nice place to enjoy the scenery."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQxaGZpcGVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQxaGZpcGVBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID1hfipeA%7CCgwI8LvwrAYQ8Pf95AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1704730096,
+            "review_datetime_utc": "01/08/2024 16:08:16",
+            "review_text": "We went for Christmas lights 2023, and it was fantastic! We took 3 grandbabies and the rest of the family. Obviously, it was super cold, but the atmosphere, the staff, and the food trucks were all just perfect. All the prices were reasonable for holiday season prices. The facilities were clean and well taken care of. This will be our second trip to see the lights at Daniel Stowe, and we will certainly be back next year for more."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxbGVUUTJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxbGVUUTJBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1leTQ2AE%7CCgwI0MjNrAYQgKDdkgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1704158288,
+            "review_datetime_utc": "01/02/2024 01:18:08",
+            "review_text": "A wonderful experience overall with some caveats. The lights are beautiful for the holidays but some areas are very dark and/or dim. You have to watch where you are going which takes away from the experience of viewing the lights because you may trip over something. There was a small wait due to the time slots given, so I recommend going early to be ahead of the crowd. Parking is free and be sure to check out the small Christmas villages in the room prior to going outside."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxcHZpWVNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxcHZpWVNBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1pviYSA%7CCgsIi7y3rAYQsI-TEg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1703796235,
+            "review_datetime_utc": "12/28/2023 20:43:55",
+            "review_text": "Could have been up kepted for the winter.  It was really bare."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxNnNiYWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxNnNiYWRnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC16sbadg%7CCgwI8-SxrAYQ6JG0sAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703703155,
+            "review_datetime_utc": "12/27/2023 18:52:35",
+            "review_text": "Went during their Christmas lights display and had a wonderful time"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxc3NYQ3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxc3NYQ3B3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1ssXCpwE%7CCgsI2uCtrAYQkL6wUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703637082,
+            "review_datetime_utc": "12/27/2023 00:31:22",
+            "review_text": "Christmas at DSBG is amazing. It's our 3rd year in a row and this year we went to see Santa  Totally worth the drive."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxMG9ydTR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxMG9ydTR3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC10oru4wE%7CCgwIprasrAYQ0OakiwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703615270,
+            "review_datetime_utc": "12/26/2023 18:27:50",
+            "review_text": "Went for the holiday lights display, great night walking the grounds and enjoying the scenery.  Despite all the cars in the parking lot, once inside the gardens, it was so spacious that you hardly noticed how busy it was.  Looking forward to coming back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxNG9IZEFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxNG9IZEFREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC14oHdAQ%7CCgwIxomrrAYQgMTFkAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1703593158,
+            "review_datetime_utc": "12/26/2023 12:19:18",
+            "review_text": "I visited the Botanical Gardens while visiting the area. We went to check out the lights. It was something fun to do. While we did enjoy it I will say it was a bit confusing. No map is provided and you aren't given any direction as to where to go. It's also quite dark and hard to see the walkways at times. Everything looks great and the staff we did encounter were very nice. But it would have been nice if there were dim lights along the path to see where you're going. Beautiful lights and plenty to look at. There's also a stand with hot chocolate and other drinks towards the back and you can sit by a fire pit  to warm up. Another issue we had is getting to the main entrance. Our GPS brought us to the back entrance for deliveries only and we had to figure out how to get to the front. There is no signage pointing the way and from the road the main entrance is a ways away. If you go to the back enteance, go back out go the road and tien right, you'll get there down the road. Other than that we did enjoy."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxdEktZ01nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxdEktZ01nEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1tI-gMg%7CCgsIq62drAYQqJ_AbA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703368363,
+            "review_datetime_utc": "12/23/2023 21:52:43",
+            "review_text": "I really need to return for a real visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxdElLcC1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxdElLcC1nRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1tIKp-gE%7CCgsIxs6crAYQ4NfSDw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703356230,
+            "review_datetime_utc": "12/23/2023 18:30:30",
+            "review_text": "We always enjoy our trips to DSBG. It's become an annual tradition to see the Christmas lights. I wish they would keep the display up until New Years."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxeFB1Y2dnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeFB1Y2dnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1xPucggE%7CCgwIo9-YrAYQ8KWUmwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1703292835,
+            "review_datetime_utc": "12/23/2023 00:53:55",
+            "review_text": "Visited the botanical gardens for Christmas lights and felt it was stellar."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMxaEluNFBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxaEluNFBBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1hIn4PA%7CCgwIrqmXrAYQ6JDAugE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703269550,
+            "review_datetime_utc": "12/22/2023 18:25:50",
+            "review_text": "The Christmas lighting program is fantastic!  Kids and adults alike will have a great time"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxbUxiM2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxbUxiM2t3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1mLb3kwE%7CCgsI_-2TrAYQ-KHKeA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703212799,
+            "review_datetime_utc": "12/22/2023 02:39:59",
+            "review_text": "We had a great time and love the Christmas Lights"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxbU5iTHF3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxbU5iTHF3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1mNbLqwE%7CCgwIveyTrAYQoL7h8gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1703212605,
+            "review_datetime_utc": "12/22/2023 02:36:45",
+            "review_text": "Very nice light layout. Wasn't real big but we had a good time. Got to make smorse with the kids around the campfire too."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxNk1ESnl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxNk1ESnl3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC16MDJywE%7CCgwI57CSrAYQyOPs7wI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1703188583,
+            "review_datetime_utc": "12/21/2023 19:56:23",
+            "review_text": "The lights were beautiful christmas trees were fun. Yet I was very disappointed not to see a nativity. Later heard someone complained it was removed. I'm very disappointed. It should be in the festivity."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxeUxEazJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeUxEazJ3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1yLDk2wE%7CCgwIm-6QrAYQsIr2rgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703163675,
+            "review_datetime_utc": "12/21/2023 13:01:15",
+            "review_text": "The lights are always beautiful.  I do wish people would leave the stroller and little ones at home with a sitter."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxc0szNzBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxc0szNzBBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1sK370AE%7CCgwIquaOrAYQuP-FzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703129898,
+            "review_datetime_utc": "12/21/2023 03:38:18",
+            "review_text": "Handicap (wheelchair) accessible, which is wonderful.  We enjoyed the lights for the 2023 holiday display as well as the indoor displays."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxd0tiM3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxd0tiM3ZBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIC1wKb3vAE%7CCgwIpP6JrAYQ4MGQ2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703051044,
+            "review_datetime_utc": "12/20/2023 05:44:04",
+            "review_text": "Very peaceful place! Will go back again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWaDRpeDNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWaDRpeDNnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDVh4ix3gE%7CCgwI8Lf6qwYQuIej_gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702796272,
+            "review_datetime_utc": "12/17/2023 06:57:52",
+            "review_text": "Holiday Lights are great. Obvious how much work was put into. Outside the main building is a bridge with blue lights running under it, between a family of deer. WATCH this light show, that replays a few minutes apart. You can see how the music and colors do an outstanding job of telling the story of the changing seasons, thunderstorms and fires and new life. Surprisingly emotional for such a simple and elegant presentation. Great job!\n\nOh, also, the food trucks are worth a visit, some deals can be found, some a bit pricey. overall the options they have will make it worth skipping the drive-thru for dinner on your way to the botanical gardens"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWMjhucmN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWMjhucmN3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDV28nrcw%7CCgsI9OL3qwYQoNXcBQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702752628,
+            "review_datetime_utc": "12/16/2023 18:50:28",
+            "review_text": "Beautiful Holiday Lights! Also offers food trucks, make your own smores and hot beverages! Love it every year!)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWNjZla1NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWNjZla1NREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDV66ekSQ%7CCgwIuL32qwYQuJTTrwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702731448,
+            "review_datetime_utc": "12/16/2023 12:57:28",
+            "review_text": "The Christmas lights were wonderful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWdGRTWHFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWdGRTWHFnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDVtdSXqgE%7CCgwIoLvsqwYQ-NeipgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702567328,
+            "review_datetime_utc": "12/14/2023 15:22:08",
+            "review_text": "Went for the Christmas lights.  It was gorgeous!  The cider caramel bourbon was delicious as well!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNN2IyV1VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNN2IyV1VBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDM7b2WUA%7CCgwI1bbnqwYQqMecuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702484821,
+            "review_datetime_utc": "12/13/2023 16:27:01",
+            "review_text": "Decorated for Christmas. A very nice walk. Don't miss the Arboretum."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURWMHRuekp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWMHRuekp3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDV0tnzJw%7CCgwIsuzeqwYQoM-fkQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702344242,
+            "review_datetime_utc": "12/12/2023 01:24:02",
+            "review_text": "The Christmas lights are amazing! It's such an awesome place to visit if you like cool plants and even cooler Christmas lights."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWeFBYdXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWeFBYdXdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDVxPXuwQE%7CCgsI1N_ZqwYQ4LH7Sw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702260692,
+            "review_datetime_utc": "12/11/2023 02:11:32",
+            "review_text": "I attended a private event held by my employer, so I cannot comment on purchasing tickets in advance or wait times.  The gardens were beautifully lit at night, and the light show set to music was nice."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURWbUtUcm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURWbUtUcm9RRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDVmKTroQE%7CCgsIsafYqwYQ0PGLKQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702237105,
+            "review_datetime_utc": "12/10/2023 19:38:25",
+            "review_text": "Beautiful light show for Christmas must see great walk they had food trucks and beer was a great date and wife still loves me lol"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWMThlNTFnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWMThlNTFnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICV18e51gE%7CCgwIxerSqwYQ4NWIlwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702147397,
+            "review_datetime_utc": "12/09/2023 18:43:17",
+            "review_text": "Amazing place...even more so considering keeping it in business prevents more neighborhoods from overcrowding Belmont."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWeGZpZ21RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWeGZpZ21RRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICVxfigmQE%7CCgsI2-zLqwYQsLm-fA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1702032987,
+            "review_datetime_utc": "12/08/2023 10:56:27",
+            "review_text": "Absolutely stunning, magical Christmas light display. Great fun, very much worth the visit. Wonderful for families"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNWcWR2dFBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNWcWR2dFBBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICVqdvtPA%7CCgwIvs_JqwYQkJKD0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701996478,
+            "review_datetime_utc": "12/08/2023 00:47:58",
+            "review_text": "A lovely time at the Christmas lights!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWcWY3ai13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWcWY3ai13RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICVqf7j-wE%7CCgwI8brJqwYQ-N6slAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701993841,
+            "review_datetime_utc": "12/08/2023 00:04:01",
+            "review_text": "Beautiful, as always and the conservatory is perfect for Elopements!\n#myoffociantlife"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNWaEpUMXR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWaEpUMXR3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICVhJT1twE%7CCgsInZi8qwYQ8NOIFQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1701776413,
+            "review_datetime_utc": "12/05/2023 11:40:13",
+            "review_text": "Oh my goodness, it was a wonderful experience. Beautiful atmosphere and the greenhouse is a must visit as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsMzRXSzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsMzRXSzNnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDl34WK3gE%7CCgwIrJK4qwYQ-Iza8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701710124,
+            "review_datetime_utc": "12/04/2023 17:15:24",
+            "review_text": "An extraordinary experience.  Well worth the drive.  Will definitely go again"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURsMlpDRm9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURsMlpDRm9BRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDl2ZCFoAE%7CCgoIqNStqwYQ6J4i%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1701538344,
+            "review_datetime_utc": "12/02/2023 17:32:24",
+            "review_text": "Was nice but after having been to  similar one near Asheville, found this one not nearly as nice.  Lots of paths just partially lit, there are no maps so you're kinda just wandering hoping to see something to see something interesting. No Christmas music playing but instead some kind of ominous music more appropriate for Halloween."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsMjVhVEpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsMjVhVEpBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICl25aTJA%7CCgwIvuWTqwYQ-J3n0AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1701114558,
+            "review_datetime_utc": "11/27/2023 19:49:18",
+            "review_text": "Beautiful Christmas lights!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNHNUlqcGx3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHNUlqcGx3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICG5IjplwE%7CCgwIws2KqwYQkNe_4QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700964034,
+            "review_datetime_utc": "11/26/2023 02:00:34",
+            "review_text": "Went to see the Christmas lights at the gardens. $25 adults, self-guided walking tour. Had some decorated trees inside and a miniature Christmas village. Also saw the orchid pavilion. Lights pretty. Had fun!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaaU5IdldBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaaU5IdldBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICZiNHvWA%7CCgsIh8CKqwYQoPeFOg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700962311,
+            "review_datetime_utc": "11/26/2023 01:31:51",
+            "review_text": "Always have a great time here! We especially love the night events!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsX2I3ZEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsX2I3ZEtBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICl_b7dKA%7CCgsIkpCHqwYQqMHUKg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700907026,
+            "review_datetime_utc": "11/25/2023 10:10:26",
+            "review_text": "I visited the garden for the first time the day after Thanksgiving for their Christmas light display. The garden is massive, well organized and quite beautiful. I look forward to visiting several times a year, but most especially when everything is in full bloom. Well worth a visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNscFlQUXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNscFlQUXdnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIClpYPQwgE%7CCgwI7936qgYQwKfB2QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700703983,
+            "review_datetime_utc": "11/23/2023 01:46:23",
+            "review_text": "Just did first annual Fun run through the Christmas lights. Amazing!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNseGJUcDBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNseGJUcDBRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIClxbTp0QE%7CCgwIm4f5qgYQyN_GjQI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1700676507,
+            "review_datetime_utc": "11/22/2023 18:08:27",
+            "review_text": "They were closed when Google said they were open. There were no postings on the door explaining why, and nobody picked up the phone when I called."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsc2ZtcVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsc2ZtcVR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIClsfmqTw%7CCgsIxOLvqgYQiKepHA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700524356,
+            "review_datetime_utc": "11/20/2023 23:52:36",
+            "review_text": "Polu omorpho meros,  pou prepei na episkephteite."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsX3R5VVJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsX3R5VVJnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICl_tyURg%7CCgwIk_boqgYQ0JbwwwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700412179,
+            "review_datetime_utc": "11/19/2023 16:42:59",
+            "review_text": "Absolutely fabulous,  highly recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNsaktpN0xnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsaktpN0xnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICljKi7Lg%7CCgsImNrNqgYQqPeHFA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699966232,
+            "review_datetime_utc": "11/14/2023 12:50:32",
+            "review_text": "Beautiful place."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGbmRub2NREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGbmRub2NREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDFndnocQ%7CCgwIkvyyqgYQgJr0iAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1699528210,
+            "review_datetime_utc": "11/09/2023 11:10:10",
+            "review_text": "Wickedly Rude front desk lady, loud obnoxious and interjects into her coworker's conversations.\nHer poor coworker was quietly saying I am sorry to me as this bully walked all over her.\nI had been excited to visit this garden and had come a long way from western Canada.\nLeft the facility, did not pay for admission and walked on the free trails near the parking lot.\nNot a very warm welcome for a tourist destination!!!\nWill never return."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURGbXN1MFNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURGbXN1MFNnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDFmsu0Sg%7CCgwIlcqgqgYQkJLqhwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1699226901,
+            "review_datetime_utc": "11/05/2023 23:28:21",
+            "review_text": "Not busy. Changing areas for the next event so borders are bare. Enjoyed the walk, though. Staff were knowledgeable and very friendly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGMjZMWDV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGMjZMWDV3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICF26LX5wE%7CCgwIjM2QqgYQ4JjUvAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698965132,
+            "review_datetime_utc": "11/02/2023 22:45:32",
+            "review_text": "Very beautiful! Went to the Vegan Fest that was there. I will definitely will be going back just to walk around and admire all of the beauty. It was a plus that everyone was so kind"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGNi12YUN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGNi12YUN3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICF6-vaCw%7CCgwI2s6PqgYQqMKAsgI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1698948954,
+            "review_datetime_utc": "11/02/2023 18:15:54",
+            "review_text": "Beautiful outdoor space to enjoy a Sunday afternoon with Vegan Vibes Series "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGM1lfOExnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGM1lfOExnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICF3Y_8Lg%7CCgsI6eGEqgYQ6NSxcg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698771177,
+            "review_datetime_utc": "10/31/2023 16:52:57",
+            "review_text": "I had never been to this place before but I'm happy I had a chance to visit this past weekend. It's a beautiful space and I'd love to have a reason to book it in the future. It seems the space would be great for accommodating a large or small indoor or outdoor event."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGN2ZITnJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGN2ZITnJBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICF7fHNrAE%7CCgwIlaGDqgYQkMXTjAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1698746517,
+            "review_datetime_utc": "10/31/2023 10:01:57",
+            "review_text": "Optimum size with great examples of regional plantings that highlight the seasons. Nice option for a relaxing stroll through interesting displays. They also present activities and events that you have difficulty finding anywhere else"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNGMHJ1cmFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNGMHJ1cmFnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICF0rurag%7CCgwIxM3wqQYQoMz8nwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698440900,
+            "review_datetime_utc": "10/27/2023 21:08:20",
+            "review_text": "I always love going here to just walk around the beautiful park. I always see something I haven't noticed before."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1eHVYV2ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1eHVYV2ZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID5xuXWfg%7CCgwIw-XbqQYQsNXOuQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698099907,
+            "review_datetime_utc": "10/23/2023 22:25:07",
+            "review_text": "Beautiful grounds, very pleasant, and informative tour guide."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwNEx2RHl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwNEx2RHl3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDp4LvDywE%7CCgwI94_MqQYQkLq8hwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697843191,
+            "review_datetime_utc": "10/20/2023 23:06:31",
+            "review_text": "Beautiful experience. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1dlBXclBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1dlBXclBnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID5vPWrPg%7CCgsI8fnLqQYQ4OvvEQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697840369,
+            "review_datetime_utc": "10/20/2023 22:19:29",
+            "review_text": "If you live here then buy the season ticket. What a beautiful area"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1Mk9iS01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1Mk9iS01REAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgID52ObKMQ%7CCgwIsuPGqQYQgMXRgQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1697755570,
+            "review_datetime_utc": "10/19/2023 22:46:10",
+            "review_text": "This is my sanctuary. Very beautiful, pleasant place to clear your thoughts, surround yourself with nature, and enjoy a glass of wine.\nPurchase a membership and enjoy the perks."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaa1lleWR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaa1lleWR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZkYeydw%7CCgwI5rPtqAYQkM7L2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696291302,
+            "review_datetime_utc": "10/03/2023 00:01:42",
+            "review_text": "Best Botanical Garden I've been to in a long time and I have been to a few!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaX29EX2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaX29EX2xBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZ_oD_lAE%7CCgwI7MnoqAYQwNT9wAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1696212204,
+            "review_datetime_utc": "10/02/2023 02:03:24",
+            "review_text": "Nice place to hang out\nThis time of year not much flowers to see"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaOW9MVFhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOW9MVFhBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZ9oLTXA%7CCgwI1L_hqAYQiPa9yQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696096212,
+            "review_datetime_utc": "09/30/2023 17:50:12",
+            "review_text": "Absolutely amazing everytime. So peaceful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaaXVLNnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaaXVLNnhBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZiuK6xAE%7CCgwI55TVqAYQ-PTTxwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695894119,
+            "review_datetime_utc": "09/28/2023 09:41:59",
+            "review_text": "What a Beautiful place to  visit  relax and enjoy a jazz concert with recording artist Tom Browne on a Lovely afternoon."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURaNktfZHNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaNktfZHNBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZ6K_dsAE%7CCgwI5Ky8qAYQ6IvT0AE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1695487588,
+            "review_datetime_utc": "09/23/2023 16:46:28",
+            "review_text": "Dogs are not allowed. This requirement is not listed on these pages. I have tried to edit info x 2 for future patrons. It will not accept edit."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURacUs2a3p3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURacUs2a3p3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZqK6kzwE%7CCgwIoKq7qAYQwJfUjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695470880,
+            "review_datetime_utc": "09/23/2023 12:08:00",
+            "review_text": "Beautiful place. Definitely go check it out"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURaOEtIZUxBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaOEtIZUxBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDZ8KHeLA%7CCgwImbK4qAYQoMiZ-wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1695422745,
+            "review_datetime_utc": "09/22/2023 22:45:45",
+            "review_text": "Wonderful tropical exhibit"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNacllEbjJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNacllEbjJBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICZrYDn2AE%7CCgsI15CSqAYQkKveKg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694795863,
+            "review_datetime_utc": "09/15/2023 16:37:43",
+            "review_text": "Even as we head into Autumn, there are plants and flowers and an abundance of birds.\nWe enjoyed a Birding walk today."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNaalBUamt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNaalBUamt3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICZjPTjkwE%7CCgwIscrcpwYQ-JbcjAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693918513,
+            "review_datetime_utc": "09/05/2023 12:55:13",
+            "review_text": "Beautiful garden"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwemNPa0tnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwemNPa0tnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpzcOkKg%7CCgsI1LGppwYQsJzdZw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1693079764,
+            "review_datetime_utc": "08/26/2023 19:56:04",
+            "review_text": "Nice flowers and butterflies"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwaWVtRDVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwaWVtRDVnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpiemD5gE%7CCgwIpM-cpwYQ-NDcywI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692870564,
+            "review_datetime_utc": "08/24/2023 09:49:24",
+            "review_text": "The gardens are beautiful and shouldnt be missed"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwa2ZubVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwa2ZubVR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpkfnmTw%7CCgwI-4GZpwYQqOmP_wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692811515,
+            "review_datetime_utc": "08/23/2023 17:25:15",
+            "review_text": "BEAUTIFUL PLACE"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwMXJQaEdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwMXJQaEdBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDp1rPhGA%7CCgwIz4WOpwYQsNaujAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692631759,
+            "review_datetime_utc": "08/21/2023 15:29:19",
+            "review_text": "Absolutely fantastic! Went for the summer lights show for my wife and I's 2 year anniversary. It was absolutely breathtaking. We spent almost the full 2 hours exploring. We made sure we to not miss anything! The music and animated lights were an amazing touch. Can't wait to return for more fun events. Next up is the summer concert!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwcXFLNWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcXFLNWdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpqqK5gQE%7CCgsIqOiEpwYQ8JPjXw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692480552,
+            "review_datetime_utc": "08/19/2023 21:29:12",
+            "review_text": "Friendly staff, beautiful grounds"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURweXRPeHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURweXRPeHhRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpytOxxQE%7CCgwIl7mEpwYQ-MPtqAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692474519,
+            "review_datetime_utc": "08/19/2023 19:48:39",
+            "review_text": "Such a beautiful place! The butterfly bungalo is a must. A very cool experience. All the flowers and plants are gorgeous. Definitely worth the drive out here from the city if you're visiting."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURwdE9tLVFREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwdE9tLVFREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDptOm-QQ%7CCgwIqfT1pgYQwODcmgM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1692236329,
+            "review_datetime_utc": "08/17/2023 01:38:49",
+            "review_text": "Bonita experiencia paseo por los jardines de noche con luces de colores. Solo le faltan mas luces a las fuentes y en la parte de atras."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURwbUlXaXZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwbUlXaXZ3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDpmIWivwE%7CCgwIq7jupgYQoNGB_wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1692113963,
+            "review_datetime_utc": "08/15/2023 15:39:23",
+            "review_text": "Ok so I would like to be a bit critical here but I really believe in places like this and hope to see a better time. Place is Beautiful ! Layout and permanent installations are great. Summertime butterflies all over. The gardening and horticultural minimum is not being met.  I wish them better times and will visit again."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdi1xd1pBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdi1xd1pBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpv-qwZA%7CCgwIsNjjpgYQoL2tvgE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1691937840,
+            "review_datetime_utc": "08/13/2023 14:44:00",
+            "review_text": "The Summer Lights event, coming out of the main building the lights were great but as you got about one third down the walking paths the lights were more sparse. Disappointing that many of the back smaller water fountains were not lit up with lights. The archway water fountain that you could walk under was ok. I thought it could have had more colorful lights on each of the water spouts highlighting the archway the water was creating. Overall the lighting that was displayed were very colorful. Tickets at $20 per person I was expecting a more fluid flow of lights highlighting all of the static features along the walking path."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwNy1xQlB3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwNy1xQlB3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICp7-qBPw%7CCgwI0rPhpgYQ8IW2rwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691900370,
+            "review_datetime_utc": "08/13/2023 04:19:30",
+            "review_text": "We loved it...Beautiful place grounds and facility! Staff was super sweet and informative.\n\nThis would be a beautiful place for a wedding!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwaC1TMUR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwaC1TMUR3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICph-S1Dw%7CCgwI7dzYpgYQsLHCuwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691758189,
+            "review_datetime_utc": "08/11/2023 12:49:49",
+            "review_text": "Sip n paints at The Botanical Garden are a great price and very different than your normal sip n paint. We booked the class through their online website, which was quick and simple to navigate. We did not know what to expect but were greeted right away soon as we entered the facility by the lady front desk. She pointed us in the right direction for the class. I loved that we were able to pick from a book of pictures to paint. The teacher was very friendly and gave us tips along the way to create our masterpiece.  The ticket also came with 2 glasses of wine and a snack not paid for the price. I think it was well worth it and more."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdlpiMlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdlpiMlNBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpvZb2SA%7CCgsItKLLpgYQ-MPxBg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691537716,
+            "review_datetime_utc": "08/08/2023 23:35:16",
+            "review_text": "Way better and bigger than I expected.  Lots to see.  Highly recommended for an afternoon."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwcFp2dkVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwcFp2dkVnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICppZvvEg%7CCgwIlKjDpgYQuNeagwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1691407380,
+            "review_datetime_utc": "08/07/2023 11:23:00",
+            "review_text": "Too hot! Summer concerts should not start till later in the evening."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwd2ZIbXJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwd2ZIbXJnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpwfHmrgE%7CCgsIme-2pgYQ0IbzLg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691203481,
+            "review_datetime_utc": "08/05/2023 02:44:41",
+            "review_text": "Stunning gardens, beautiful orchid conservatory, butterfly house, children's garden , beautiful walkways, water features gift shop. We had the most wonderful day here . Highly recommend this beautiful botanical gardens!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwanN2Q2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwanN2Q2hBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpjsvChAE%7CCgwIzO-vpgYQyJv8xQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691088844,
+            "review_datetime_utc": "08/03/2023 18:54:04",
+            "review_text": "Daniel Stowe Botanical Gardens is SUCH a gem of a wedding venue. As a wedding photographer, I always appreciate when venues have BOTH amazing indoor and outdoor locations for couples. Whoever you have your wedding at Daniel Stowe, you get just that! The conservatory, surrounding gardens, and ceremony space are all unbelievably stunning. I cannot say enough good things!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwX0lLN3ZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwX0lLN3ZnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICp_IK7vgE%7CCgsI2o6cpgYQ6JHLVQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1690765146,
+            "review_datetime_utc": "07/31/2023 00:59:06",
+            "review_text": "It was our last night in Belmont and the gardens were only 1.5 miles from the house we rented. When researching the area I read in the month of July & August on weekends they opened the gardens up at night for Summer Lights. It was a great night being able to see the beauty of the flowers and plants before the sun went down but in cooler weather. Once the sun was down, the lights were pretty and a great way to end our vacation."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwX1B6R1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwX1B6R1VnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICp_PzGUg%7CCgsIk42cpgYQuNrGeg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690764947,
+            "review_datetime_utc": "07/31/2023 00:55:47",
+            "review_text": "Beautiful gardens, several fountains, nice flowers, take lots of love in this heat.  You can do it all in a full hour."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdk9yVWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdk9yVWdRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpvOrUgQE%7CCgwI95CbpgYQuLuInQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690749047,
+            "review_datetime_utc": "07/30/2023 20:30:47",
+            "review_text": "Always love this place, love seeing the Orchid observatory open again!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwM05pY2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwM05pY2JBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICp3NicbA%7CCgsIrp6apgYQ6NDRTA%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1690734382,
+            "review_datetime_utc": "07/30/2023 16:26:22",
+            "review_text": "Havent had the pleasure of going here yet but I am trult dissapointed that they dont allow pets..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwdUpLdzZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwdUpLdzZBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpuJKw6AE%7CCgwIwciOpgYQ4PuPxQI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1690543169,
+            "review_datetime_utc": "07/28/2023 11:19:29",
+            "review_text": "Most lights were not physically connected.   I'm guessing cause it was a free night you didn't get to experience the full lightning as paid evenings. A bit disappointing when we drove for 90 minutes to to get there."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNwdUlLUkpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdUlLUkpBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpuIKRJA%7CCgsInsSOpgYQyITALQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690542622,
+            "review_datetime_utc": "07/28/2023 11:10:22",
+            "review_text": "Great area and walking paths."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNweUlQR3hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNweUlQR3hBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpyIPGxAE%7CCgwIk8KKpgYQoJ3O_AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690476819,
+            "review_datetime_utc": "07/27/2023 16:53:39",
+            "review_text": "First visit, and I must say, it's very beautiful. The butterfly exhibit was nice and the staff are super friendly and eager to help or explain anything."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwd1B1MXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwd1B1MXNnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpwPu1sgE%7CCgwIo8CEpgYQ6MHdlwM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1690378275,
+            "review_datetime_utc": "07/26/2023 13:31:15",
+            "review_text": "The Daniel Stowe Botanical Garden was enjoyable.  I was disappointed that a well-known and stately garden lacked the opulence one comes to expect.  Some of the botanicals were dead.  The garden was not as colorful and in full bloom as I desired.  This was overpriced.   I hope things improve so my next visit is much better than the first."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwZ09qb193RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwZ09qb193RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICpgOjo_wE%7CCgwImZyDpgYQiJfekQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690357273,
+            "review_datetime_utc": "07/26/2023 07:41:13",
+            "review_text": "Free Summer Thursdays in July"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKdDlfSzNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKdDlfSzNBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJt9_K3AE%7CCgwI-vX7pQYQkLL2tAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690237690,
+            "review_datetime_utc": "07/24/2023 22:28:10",
+            "review_text": "Great garden, well laid-out. Lots of water features, with hardy tropicals, a small conifer garden, and a very innovative children's garden space. Very recommended if you're in the area."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKaDZYamJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKaDZYamJnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJh6Xjbg%7CCgwI3I73pQYQgLzcpQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690158940,
+            "review_datetime_utc": "07/24/2023 00:35:40",
+            "review_text": "Only one word AWESOME!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKLV9yLTNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKLV9yLTNBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJ-_r-3AE%7CCgwIm_D1pQYQ-K3EyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690138651,
+            "review_datetime_utc": "07/23/2023 18:57:31",
+            "review_text": "Beautiful garden. We loved the butterfly experience. I have never been somewhere before that allowed us to \"catch\" the butterflies on foam paint brushes for an up close look. That was a neat experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKcV8yUWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKcV8yUWVBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJq_2QeA%7CCgwI2J3ypQYQgOLzqgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1690078936,
+            "review_datetime_utc": "07/23/2023 02:22:16",
+            "review_text": "A very fun place to explore! Highlights included the butterfly bungalow and the orchid house. Beautiful trails with lots of well maintained plants."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKbWUtZUhREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKbWUtZUhREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJme-eHQ%7CCgwIyIzipQYQ4LSckQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689814600,
+            "review_datetime_utc": "07/20/2023 00:56:40",
+            "review_text": "Big Beautiful Gardens to relax, take pictures, weddings, and ect"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKOXVLeWZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKOXVLeWZBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJ9uKyfA%7CCgwI0Z3RpQYQ0M7npwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1689538257,
+            "review_datetime_utc": "07/16/2023 20:10:57",
+            "review_text": "It's fine if you like nature"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKLXRHRERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKLXRHRERREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJ-tGDDQ%7CCgsIzv3KpQYQgNGGcg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689435854,
+            "review_datetime_utc": "07/15/2023 15:44:14",
+            "review_text": "A wonderful garden west of Charlotte with a wide variety of plants, it's sprawling and needs some time to roam through. The butterfly enclosure was amazing with different kinds of butterflies and information about them.\n\nIt can get pretty hot here on a hot day. Parking is available, and the staff is polite and kind. Overall, it's a great place to visit if you're a plant nerd. They're closed on Mondays and Tuesdays."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKMHZUZ2ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKMHZUZ2ZnEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJ0vTgfg%7CCgsI2M3CpQYQ-MrrIw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689298648,
+            "review_datetime_utc": "07/14/2023 01:37:28",
+            "review_text": "Great place with pretty flowers and fountains."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURKZ3ItOTRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKZ3ItOTRnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJgr-94gE%7CCgsIoru_pQYQwLiuGw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689247138,
+            "review_datetime_utc": "07/13/2023 11:18:58",
+            "review_text": "Nice and serene"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRallyNnh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRallyNnh3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICQjYr6xwE%7CCgwIyK2ypQYQoLL96gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689032392,
+            "review_datetime_utc": "07/10/2023 23:39:52",
+            "review_text": "This garden is very beautiful and the Orchid House is very impressive.\nThe Christmas light show is very impressive and is a must see."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKLVByRmRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKLVByRmRREAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgIDJ-PrFdQ%7CCgwIzZWxpQYQ6O6i_wE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1689012941,
+            "review_datetime_utc": "07/10/2023 18:15:41",
+            "review_text": "It's small considering the cost. Fades in comparison to Biltmore or other gardens.\nNice to grab a glass of wine while in the garden."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKMWRPY3pBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKMWRPY3pBRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJ1dOczAE%7CCgwIu76npQYQyPShlwI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1688854331,
+            "review_datetime_utc": "07/08/2023 22:12:11",
+            "review_text": "I hate to say the greenhouse was infested with spider mites and mealy bugs. It was a huge disappointment."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKMzVTd3hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKMzVTd3hnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJ35SwxgE%7CCgwIloGjpQYQ6J30wwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688780950,
+            "review_datetime_utc": "07/08/2023 01:49:10",
+            "review_text": "It's a calm place and the butterfly garden was a definite highlight"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKajllNTd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKajllNTd3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJj9e57wE%7CCgsIiumfpQYQsLXyeQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688728714,
+            "review_datetime_utc": "07/07/2023 11:18:34",
+            "review_text": "I love this place, the staff is very friendly, highly recommended"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKbzRYLWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKbzRYLWdnRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJo4X-ggE%7CCgwIu-uNpQYQgNuY2gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1688434107,
+            "review_datetime_utc": "07/04/2023 01:28:27",
+            "review_text": "We have been wanting to come here for some time. I would say I'm a little underwhelmed with the visit. Honestly, the gardens that are free at the UNC is actually better. However that being said, it was a nice garden. We did feel that many places seemed to be lacking care which is not what I would expect for the price tag of admission. I would like to return some time and see if perhaps we just came at the wrong time."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKcmZ1QjBRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKcmZ1QjBRRRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJrfuB0QE%7CCgwIk5CHpQYQyPKhsAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688324115,
+            "review_datetime_utc": "07/02/2023 18:55:15",
+            "review_text": "Thursday night free visit with live music and a food truck! The gardens are lovely. The butterfly section was closed but peaking through the mesh it looked nice. In addition to the beautiful flowers we saw deer, lizards, frogs, and so many pollinators"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKdGViLXJ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKdGViLXJ3RRAB!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJteb-rwE%7CCgwIta-DpQYQsOqsvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688262581,
+            "review_datetime_utc": "07/02/2023 01:49:41",
+            "review_text": "Really well kept and a great place for a morning walk. We brought our kids here and they had a blast. The butterfly exhibit was neat and it was cool to see them so up close."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKaFpxbVhBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKaFpxbVhBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJhZqmXA%7CCgsIua3-pAYQqPTeIQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688180409,
+            "review_datetime_utc": "07/01/2023 03:00:09",
+            "review_text": "Beautiful gardens with fountains and water features throughout. Butterfly and orchid exhibits."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKdVotak53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKdVotak53EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJuZ-jNw%7CCgwIgPH8pAYQoOa3xAE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1688156288,
+            "review_datetime_utc": "06/30/2023 20:18:08",
+            "review_text": "I had high hopes based upon what I saw on the Internet; however, they were very few orchids in the orchid building. Maybe it was just the time of year; they should really call it the anthurium building, that's mostly what I saw.\n\nMany areas of the garden needed attention. Areas were dried out, and just not flourishing. You can see parts where they were flowers, and they're beautiful, but I felt like they asked too much money for the experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKeVk3N0R3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKeVk3N0R3EAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJyY77Dw%7CCgwI9Lr4pAYQ6KfRlgE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1688083828,
+            "review_datetime_utc": "06/30/2023 00:10:28",
+            "review_text": "I don't see what all the fuss is about. Too expensive for what amounts to a small garden. There are trails but I had more fun walking in many free parks in the area. My own yard is a certified wildlife habitat with open areas and woodland. I have decades of experience so I know my plants, most annuals and perennials, flowers and herbs of mine are grown from seed or tuber. This looks too much like the work of a property landscape company with a big budget and a very nice greenhouse to store the tropicals they buy.  Might be good for someone who lives in an apartment. Anyone else will be underwhelmed. Some areas are poorly tended to, and were more like just patches of weeds. No nurturing went on in these gardens, just a money grab."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKb1p5d1dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKb1p5d1dBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJoZywWA%7CCgwItIHypAYQiN_7rAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687978164,
+            "review_datetime_utc": "06/28/2023 18:49:24",
+            "review_text": "Had a lovely experience, it was relaxing."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKM3U2R2FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKM3U2R2FBEAE!2m1!1s0x0:0xc8d6769108161b53!3m1!1s2@1:CIHM0ogKEICAgICJ3u6GaA%7CCgsIiZLupAYQ4MPGMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687914761,
+            "review_datetime_utc": "06/28/2023 01:12:41",
+            "review_text": "The garden is a very nice place to go relax and be at peace."
+        }
+    ]
+}
