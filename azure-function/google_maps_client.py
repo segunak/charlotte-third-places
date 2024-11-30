@@ -244,6 +244,6 @@ class GoogleMapsClient:
             operational = business_status != 'CLOSED_PERMANENTLY'
 
         if not operational:
-            logging.warning(f"Unable to determine the business status for place ID {place_id} or it is permanently closed.")
+            logging.warning(f"The place having place Id {place_id} is either permanently closed or has an indertiminate status.")
 
         return operational

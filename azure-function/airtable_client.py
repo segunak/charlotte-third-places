@@ -5,7 +5,7 @@ import dotenv
 import logging
 import requests
 import pyairtable
-from typing import Dict, Any
+from typing import Dict, Any, List
 from pyairtable import utils
 from datetime import datetime
 from collections import Counter
@@ -298,7 +298,7 @@ class AirtableClient:
                 executor.submit(process_place, third_place): third_place['fields']['Place']
                 for third_place in self.all_third_places
             }
-            
+
             for future in as_completed(futures):
                 place_name = futures[future]  # Get the place_name associated with the future
                 try:
@@ -325,7 +325,7 @@ class AirtableClient:
                 return matched_record[0]
             else:
                 logging.warning(
-                    f"No match found for {search_field.value} with value {search_value}.")
+                    f"No match found for {search_field.value} with value {search_value} or more than one result was found.")
                 return None
         except Exception as e:
             logging.error(
@@ -403,7 +403,7 @@ class AirtableClient:
         results = {}
         with ThreadPoolExecutor(max_workers=10) as executor:
             futures = {
-                executor.submit(process_photos_for_place, third_place): third_place['fields']['Place'] 
+                executor.submit(process_photos_for_place, third_place): third_place['fields']['Place']
                 for third_place in self.all_third_places
             }
             for future in futures:
@@ -498,5 +498,162 @@ class AirtableClient:
                 self.print_report_section(
                     report_file, scan_result, f'Missing Records Report: {field_to_scan}')
 
-    def places_without_reviews():
-        return "Function to go through the base and return all places that have no stored Google Maps reviews.  "
+    def has_reviews(self, place_id: str) -> bool:
+        """Checks if the place with the given Google Maps Place ID has stored Google Maps reviews.
+
+        Args:
+            place_id (str): The Google Maps Place ID of the place to check.
+
+        Returns:
+            bool: True if the place has reviews ('Has Reviews' field is 'Yes'), False otherwise.
+        """
+        logging.info(f"Checking if place with Google Maps Place ID {place_id} has reviews.")
+        record = self.get_record(SearchField.GOOGLE_MAPS_PLACE_ID, place_id)
+        if record:
+            has_reviews = record['fields'].get('Has Reviews', 'No')
+            logging.info(f"Has Reviews for Place ID {place_id}: {has_reviews}")
+            return has_reviews == 'Yes'
+        else:
+            logging.warning(f"Record with Place ID {place_id} not found.")
+            return False
+
+    def places_without_reviews(self) -> List[Dict[str, Any]]:
+        """Retrieves all places that have no stored Google Maps reviews.
+
+        Returns:
+            List[Dict[str, Any]]: A list of records where 'Has Reviews' field is 'No'.
+        """
+        logging.info("Fetching places without reviews.")
+        formula = match({'Has Reviews': 'No'})
+        records = self.charlotte_third_places.all(formula=formula)
+        logging.info(f"Found {len(records)} places without reviews.")
+        return records
+
+    def get_place_types(self) -> List[str]:
+        """Retrieves a list of all distinct types from the 'Type' column in the Airtable base.
+
+        Returns:
+            List[str]: A sorted list of unique place types.
+        """
+        logging.info("Collecting all distinct place types from 'Type' column.")
+        place_types = set()
+        for record in self.all_third_places:
+            type_field = record['fields'].get('Type', None)
+            if type_field:
+                if isinstance(type_field, list):
+                    place_types.update(type_field)
+                else:
+                    place_types.add(type_field)
+        logging.info(f"Found {len(place_types)} distinct place types.")
+        return sorted(place_types)
+
+    def refresh_operational_statuses(self) -> List[Dict[str, Any]]:
+        """
+        Refreshes the 'Operational' status of each place in the Airtable base by checking their current status via the Google Maps API.
+
+        For each record in the 'Charlotte Third Places' Airtable base, this method performs the following:
+        - Retrieves the Google Maps Place ID.
+        - Uses the Google Maps API to determine if the place is operational.
+        - Updates the 'Operational' field in Airtable with 'Yes' if the place is operational, 'No' otherwise.
+        - Compares the new operational status with the current value in the 'Operational' field.
+            - If they are the same, the update is skipped to conserve API calls.
+            - If they are different, the record is updated accordingly.
+        - Collects detailed information about each operation, including whether it was updated, skipped, or failed.
+
+        Returns:
+            List[Dict[str, Any]]: A list of dictionaries, each containing:
+                - 'place_name': The name of the place.
+                - 'place_id': The Google Maps Place ID.
+                - 'record_id': The Airtable record ID.
+                - 'old_value': The old value of the 'Operational' field.
+                - 'new_value': The new value of the 'Operational' field.
+                - 'update_status': A string indicating the operation status ('updated', 'skipped', 'failed').
+                - 'message': Any additional messages or error descriptions.
+        """
+        results = []
+
+        def process_place(third_place: dict) -> Dict[str, Any]:
+            result = {
+                'place_name': '',
+                'place_id': '',
+                'record_id': '',
+                'old_value': '',
+                'new_value': '',
+                'update_status': '',
+                'message': ''
+            }
+            try:
+                place_name = third_place['fields'].get('Place', '')
+                result['place_name'] = place_name
+
+                record_id = third_place.get('id', '')
+                result['record_id'] = record_id
+
+                place_id = third_place['fields'].get('Google Maps Place Id')
+                result['place_id'] = place_id
+
+                if not place_id:
+                    logging.warning(f"No Google Maps Place ID for {place_name}.")
+                    result['update_status'] = 'failed'
+                    result['message'] = 'No Google Maps Place ID.'
+                    return result
+
+                # Get current value of 'Operational'
+                current_operational_value = third_place['fields'].get('Operational', '')
+                result['old_value'] = current_operational_value
+
+                # Use Google Maps API to check operational status
+                is_operational = self.google_maps_client.is_place_operational(place_id)
+                new_operational_value = 'Yes' if is_operational else 'No'
+                result['new_value'] = new_operational_value
+
+                if current_operational_value == new_operational_value:
+                    logging.info(f"Operational status for '{place_name}' is unchanged ({current_operational_value}). Skipping update.")
+                    result['update_status'] = 'skipped'
+                else:
+                    # Update the 'Operational' field
+                    update_result = self.update_place_record(
+                        record_id,
+                        'Operational',
+                        new_operational_value,
+                        overwrite=True
+                    )
+                    if update_result['updated']:
+                        logging.info(f"Updated Operational status for '{place_name}' from '{current_operational_value}' to '{new_operational_value}'.")
+                        result['update_status'] = 'updated'
+                    else:
+                        logging.warning(f"Failed to update Operational status for '{place_name}'.")
+                        result['update_status'] = 'failed'
+                        result['message'] = 'Update failed.'
+
+            except Exception as e:
+                logging.error(f"Error processing place '{place_name}': {e}")
+                result['update_status'] = 'failed'
+                result['message'] = str(e)
+
+            return result
+
+        # Process all places using threading to improve performance
+        with ThreadPoolExecutor(max_workers=50) as executor:
+            futures = {
+                executor.submit(process_place, third_place): third_place['fields'].get('Place', 'Unknown Place')
+                for third_place in self.all_third_places
+            }
+            for future in as_completed(futures):
+                place_name = futures[future]
+                try:
+                    result = future.result()
+                    results.append(result)
+                except Exception as e:
+                    logging.error(f"Error processing place '{place_name}': {e}")
+                    results.append({
+                        'place_name': place_name,
+                        'place_id': '',
+                        'record_id': '',
+                        'old_value': '',
+                        'new_value': '',
+                        'update_status': 'failed',
+                        'message': str(e)
+                    })
+
+        return results
