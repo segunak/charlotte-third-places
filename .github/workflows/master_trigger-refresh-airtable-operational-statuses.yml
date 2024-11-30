@@ -36,7 +36,7 @@ jobs:
       - name: Check Script Result
         if: always()
         run: |
-          echo "Script execution completed with outcome: ${{ steps.invoke_script.outcome }}"
-          if ("${{ steps.invoke_script.outcome }}" != "success") {
+          echo "Script execution completed with status: ${{ steps.invoke_script.outcome }}"
+          if ("${{ steps.invoke_script.outcome }}" -ne "success") {
             exit 1
           }
