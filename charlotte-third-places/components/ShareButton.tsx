@@ -14,7 +14,7 @@ export const ShareButton: React.FC<ShareButtonProps> = ({ url, placeName, size =
     const handleShare = async () => {
         const shareData = {
             title: placeName,
-            text: `Check out this place on Charlotte Third Places: ${placeName}`,
+            text: `Charlotte Third Places: ${placeName}`,
             url: url,
         };
 

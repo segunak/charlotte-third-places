@@ -1,15 +1,14 @@
-name: Trigger Enrich Airtable Base
+name: Trigger Refresh Airtable Operational Statuses
 
 on:
   workflow_dispatch:
 
-# Ensures that only one instance of this workflow runs at a time
 concurrency: 
-  group: enrich-airtable-base
+  group: refresh-airtable-operational-statuses
   cancel-in-progress: true
 
 jobs:
-  trigger-enrich-airtable-base:
+  trigger-refresh-operational-statuses:
     runs-on: windows-latest
     steps:
       - name: Checkout repository
@@ -21,11 +20,11 @@ jobs:
         working-directory: ./scripts
         env:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
+        continue-on-error: true
         run: |
-          $FunctionUrl = "https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base"
+          $FunctionUrl = "https://charlotte-third-places.azurewebsites.net/api/refresh-airtable-operational-statuses"
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
-          $RequestBody = '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}'
-          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -RequestBody $RequestBody -TimeoutSeconds 1800
+          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
           if ($LASTEXITCODE -ne 0) {
             Write-Error "Azure Function call failed."

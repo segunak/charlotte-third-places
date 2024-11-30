@@ -5,5 +5,8 @@
     "azureFunctions.projectRuntime": "~4",
     "azureFunctions.projectLanguageModel": 2,
     "azureFunctions.pythonVenv": ".venv",
-    "debug.internalConsoleOptions": "neverOpen"
+    "debug.internalConsoleOptions": "neverOpen",
+    "cSpell.words": [
+        "indertiminate"
+    ]
 }

@@ -21,13 +21,14 @@ jobs:
         env:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
         run: |
-          ./Invoke-DurableFunction.ps1 -OrchestratorUrl "https://charlotte-third-places.azurewebsites.net/api/orchestrators/get_outscraper_reviews_orchestrator" -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 7200
+          ./Invoke-AzureDurableFunction.ps1 -OrchestratorUrl "https://charlotte-third-places.azurewebsites.net/api/orchestrators/get_outscraper_reviews_orchestrator" -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 7200
 
           if ($LASTEXITCODE -ne 0) {
             exit $LASTEXITCODE
           }
 
       - name: Check Script Result
+        if: always()
         run: |
           echo "Script execution completed with status: ${{ steps.invoke_script.outcome }}"
           if ("${{ steps.invoke_script.outcome }}" -ne "success") {

@@ -1,11 +1,8 @@
 import os
-import sys
 import json
 import logging
-import requests
 import jsonpickle
 import azure.functions as func
-from unidecode import unidecode
 from outscraper import ApiClient
 from constants import SearchField
 import helper_functions as helpers
@@ -13,7 +10,6 @@ import azure.durable_functions as df
 from airtable_client import AirtableClient
 
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
-
 
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
@@ -78,7 +74,7 @@ def get_outscraper_data_for_place(activityInput):
     if not place_id:
         return helpers.create_place_response('skipped', place_name, None, f"Warning! No place_id found for {place_name}. Skipping getting reviews.")
 
-    airtable_record = airtable.get_record(SearchField.PLACE_ID, place_id)
+    airtable_record = airtable.get_record(SearchField.GOOGLE_MAPS_PLACE_ID, place_id)
 
     if airtable_record:
         has_reviews = airtable_record['fields'].get('Has Reviews', 'No')
@@ -251,5 +247,73 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
                 "error": "Incorrect authorization motto."
             }),
             status_code=403,
+            mimetype="application/json"
+        )
+
+@app.function_name(name="RefreshAirtableOperationalStatuses")
+@app.route(route="refresh-airtable-operational-statuses")
+def refresh_airtable_operational_statuses(req: func.HttpRequest) -> func.HttpResponse:
+    """
+    This function calls `airtable.refresh_operational_statuses()`, which returns a detailed list of dictionaries with the status of each update.
+
+    The function returns:
+    - 200 OK if the function call completes and there are no return values in the list of dicts where `update_status` is 'failed'.
+    - If there's a return value in the list of dicts with `update_status` 'failed', then it returns 500 Internal Server Error and includes every single record that had a 'failed' status in the return value.
+    - Else, if all return values are 'updated' or 'skipped', it returns 200 OK and returns the entire return value for the caller to parse if they want to.
+    - If there's an exception or big error, it returns an HTTP status that clearly indicates failure to the caller.
+
+    Note: Callers of this Azure Function don't need to provide any input; security is handled via the `x-functions-key` header.
+
+    Args:
+        req (func.HttpRequest): The HTTP request object.
+
+    Returns:
+        func.HttpResponse: The HTTP response containing the operation results.
+    """
+    logging.info("Received request to refresh Airtable operational statuses.")
+
+    try:
+        airtable = AirtableClient()
+        logging.info("AirtableClient instance created, starting to refresh operational statuses.")
+
+        results = airtable.refresh_operational_statuses()
+        logging.info("Operational statuses refreshed, processing results.")
+
+        failed_updates = [res for res in results if res.get('update_status') == 'failed']
+
+        if failed_updates:
+            logging.error(f"Operational status updates failed for {len(failed_updates)} places.")
+            return func.HttpResponse(
+                json.dumps({
+                    "success": False,
+                    "message": "One or more operational status updates failed.",
+                    "data": failed_updates,
+                    "error": None
+                }),
+                status_code=500,
+                mimetype="application/json"
+            )
+        else:
+            logging.info("Operational statuses refreshed successfully for all places.")
+            return func.HttpResponse(
+                json.dumps({
+                    "success": True,
+                    "message": "Operational statuses refreshed successfully.",
+                    "data": results,
+                    "error": None
+                }),
+                status_code=200,
+                mimetype="application/json"
+            )
+    except Exception as ex:
+        logging.error(f"Error encountered during the refresh operation: {ex}", exc_info=True)
+        return func.HttpResponse(
+            json.dumps({
+                "success": False,
+                "message": "Server error occurred during the refresh operation.",
+                "data": None,
+                "error": str(ex)
+            }),
+            status_code=500,
             mimetype="application/json"
         )
