@@ -1,7 +1,6 @@
 import os
 import json
 import logging
-import jsonpickle
 import azure.functions as func
 from outscraper import ApiClient
 from constants import SearchField
@@ -25,31 +24,76 @@ async def http_start(req: func.HttpRequest, client):
     return response
 
 
+@app.function_name(name="PurgeOrchestrations")
+@app.route(route="purge-orchestrations")
+@app.durable_client_input(client_name="client")
+async def purge_orchestrations(req: func.HttpRequest, client):
+    """
+    HTTP-triggered function to purge the history of all orchestration instances.
+
+    This function deletes the execution history of all orchestration instances managed by the Durable Functions framework.
+    Purging the history is useful when you need to reset the state of your orchestrations, especially after code changes
+    that could cause non-deterministic errors in existing instances.
+
+    Args:
+        req (func.HttpRequest): The HTTP request object.
+        client (DurableOrchestrationClient): The Durable Functions client for managing orchestrations.
+
+    Returns:
+        func.HttpResponse: A JSON response indicating the number of instances deleted.
+    """
+    logging.info("Received request to purge orchestration instances.")
+
+    try:
+        # Purge the history of all orchestration instances
+        purge_result = await client.purge_instance_history()
+
+        logging.info(f"Successfully purged orchestration instances. Instances deleted: {purge_result.instances_deleted}")
+
+        # Return a JSON response with the number of instances deleted
+        return func.HttpResponse(
+            json.dumps({
+                "message": "Purged orchestration instances.",
+                "instancesDeleted": purge_result.instances_deleted
+            }),
+            status_code=200,
+            mimetype="application/json"
+        )
+    except Exception as ex:
+        logging.error(f"Error occurred while purging orchestrations: {ex}", exc_info=True)
+        return func.HttpResponse(
+            json.dumps({
+                "message": "Failed to purge orchestration instances.",
+                "error": str(ex)
+            }),
+            status_code=500,
+            mimetype="application/json"
+        )
+
+
 @app.orchestration_trigger(context_name="context")
 def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext):
     try:
         logging.info("get_outscraper_reviews_orchestrator started.")
 
         tasks = []
-        airtable = AirtableClient()
-        OUTSCRAPER_API_KEY = os.environ['OUTSCRAPER_API_KEY']
-        outscraper = ApiClient(api_key=OUTSCRAPER_API_KEY)
+        activity_input = {}
+        all_third_places = yield context.call_activity('get_all_third_places', {})
 
-        activity_input = {
-            "airtable": jsonpickle.encode(airtable),
-            "outscraper": jsonpickle.encode(outscraper)
-        }
-
-        for place in airtable.all_third_places:
+        for place in all_third_places:
+            # Schedule activity functions for each place
             activity_input["place"] = place
             tasks.append(context.call_activity("get_outscraper_data_for_place", activity_input))
 
-        # This runs all tasks in parallel. Similar to asyncio.gather in Python.
+        # Run all tasks in parallel
         results = yield context.task_all(tasks)
-        logging.info(f"get_outscraper_reviews_orchestrator completed.")
+        logging.info("get_outscraper_reviews_orchestrator completed.")
+
+        # Determine overall success
         all_successful = all(result['status'] != 'failed' for result in results)
         custom_status = 'Succeeded' if all_successful else 'Failed'
         context.set_custom_status(custom_status)
+
         return results
     except Exception as ex:
         logging.error(f"Critical error in GetOutscraperReviews processing: {ex}", exc_info=True)
@@ -59,11 +103,17 @@ def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext)
 
 
 @app.activity_trigger(input_name="activityInput")
-def get_outscraper_data_for_place(activityInput):
+def get_all_third_places(activityInput):
+    airtable = AirtableClient()
+    return airtable.all_third_places
 
+
+@app.activity_trigger(input_name="activityInput")
+def get_outscraper_data_for_place(activityInput):
     place = activityInput['place']
-    airtable = jsonpickle.decode(activityInput['airtable'])
-    outscraper = jsonpickle.decode(activityInput['outscraper'])
+    airtable = AirtableClient()
+    OUTSCRAPER_API_KEY = os.environ['OUTSCRAPER_API_KEY']
+    outscraper = ApiClient(api_key=OUTSCRAPER_API_KEY)
 
     place_name = place['fields']['Place']
     logging.info(f"Getting reviews for place: {place_name}")
@@ -249,6 +299,7 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
             status_code=403,
             mimetype="application/json"
         )
+
 
 @app.function_name(name="RefreshAirtableOperationalStatuses")
 @app.route(route="refresh-airtable-operational-statuses")

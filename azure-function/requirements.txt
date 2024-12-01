@@ -11,4 +11,3 @@ azure-storage-file-datalake
 azure-identity
 outscraper
 azure-functions-durable
-jsonpickle
