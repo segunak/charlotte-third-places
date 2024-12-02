@@ -10,4 +10,4 @@ It was designed to help people find spots to study, read, write, chill, work rem
 
 ## Contact
 
-Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/segunakinyemi/) or through my [personal website](https://segunakinyemi.com). I'd love to hear your thoughts and feedback on the project!
+Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/segunakinyemi/) or through my [personal website](https://segunakinyemi.com). You can also leave site feedback on the <https://charlottethirdplaces.com/contribute> page.
