@@ -1,0 +1,28 @@
+name: Auto Merge Master Into Develop
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - 'master'
+
+env:
+  MY_REPO: https://segunak:${{secrets.GITHUB_TOKEN}}@github.com/segunak/charlotte-third-places
+  MY_BRANCH: develop
+  MASTER_REPO: https://github.com/segunak/charlotte-third-places.git
+  MASTER_BRANCH: master
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Merge master into develop
+      run: |
+        git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
+        cd tmp
+        git config user.name "Auto Merge Bot"
+        git config user.email "bot@automerge.com"
+        git config pull.rebase false
+        git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}}
+        git push
