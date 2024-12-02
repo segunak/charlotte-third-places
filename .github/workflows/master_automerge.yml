@@ -6,8 +6,12 @@ on:
     branches:
       - 'master'
 
+concurrency: 
+  group: auto-merge
+  cancel-in-progress: true
+
 env:
-  MY_REPO: https://segunak:${{secrets.GITHUB_TOKEN}}@github.com/segunak/charlotte-third-places
+  MY_REPO: https://segunak:${{secrets.GITHUB_TOKEN}}@github.com/segunak/charlotte-third-places.git
   MY_BRANCH: develop
   MASTER_REPO: https://github.com/segunak/charlotte-third-places.git
   MASTER_BRANCH: master
