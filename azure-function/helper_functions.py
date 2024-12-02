@@ -118,7 +118,7 @@ def save_json_to_github(json_data, full_file_path):
             "Accept": "application/vnd.github.v3+json"
         }
         repo_name = "segunak/charlotte-third-places"
-        branch = "master"
+        branch = "develop"
 
         # Check if the file exists to get the SHA
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#get-repository-content
