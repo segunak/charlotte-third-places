@@ -1,14 +1,17 @@
 import os
 import json
 import logging
+import datetime
 import azure.functions as func
 from outscraper import ApiClient
 from constants import SearchField
 import helper_functions as helpers
 import azure.durable_functions as df
 from airtable_client import AirtableClient
+from azure.durable_functions.models.DurableOrchestrationStatus import OrchestrationRuntimeStatus
 
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
+
 
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
@@ -27,26 +30,22 @@ async def http_start(req: func.HttpRequest, client):
 @app.function_name(name="PurgeOrchestrations")
 @app.route(route="purge-orchestrations")
 @app.durable_client_input(client_name="client")
-async def purge_orchestrations(req: func.HttpRequest, client):
-    """
-    HTTP-triggered function to purge the history of all orchestration instances.
-
-    This function deletes the execution history of all orchestration instances managed by the Durable Functions framework.
-    Purging the history is useful when you need to reset the state of your orchestrations, especially after code changes
-    that could cause non-deterministic errors in existing instances.
-
-    Args:
-        req (func.HttpRequest): The HTTP request object.
-        client (DurableOrchestrationClient): The Durable Functions client for managing orchestrations.
-
-    Returns:
-        func.HttpResponse: A JSON response indicating the number of instances deleted.
-    """
+async def purge_orchestrations(req: func.HttpRequest, client) -> func.HttpResponse:
     logging.info("Received request to purge orchestration instances.")
 
     try:
-        # Purge the history of all orchestration instances
-        purge_result = await client.purge_instance_history()
+        # Purge the history of all orchestration instances ever
+        runtime_statuses = [
+            OrchestrationRuntimeStatus.Failed,
+            OrchestrationRuntimeStatus.Completed,
+            OrchestrationRuntimeStatus.Terminated,
+        ]
+
+        purge_result = await client.purge_instance_history_by(
+            created_time_from=datetime.datetime(1900, 1, 1),
+            created_time_to=datetime.datetime.now(datetime.timezone.utc),
+            runtime_status=runtime_statuses
+        )
 
         logging.info(f"Successfully purged orchestration instances. Instances deleted: {purge_result.instances_deleted}")
 
@@ -60,7 +59,11 @@ async def purge_orchestrations(req: func.HttpRequest, client):
             mimetype="application/json"
         )
     except Exception as ex:
-        logging.error(f"Error occurred while purging orchestrations: {ex}", exc_info=True)
+        logging.error(f"Error occurred while purging orchestrations: {str(ex)}", exc_info=True)
+        # If the exception contains a response, log additional details
+        if hasattr(ex, 'response') and ex.response is not None:
+            logging.error(f"HTTP Status Code: {ex.response.status_code}")
+            logging.error(f"Response Content: {ex.response.content.decode()}")
         return func.HttpResponse(
             json.dumps({
                 "message": "Failed to purge orchestration instances.",
@@ -69,6 +72,7 @@ async def purge_orchestrations(req: func.HttpRequest, client):
             status_code=500,
             mimetype="application/json"
         )
+
 
 
 @app.orchestration_trigger(context_name="context")
