@@ -10,11 +10,6 @@ on:
       - master
     paths:
         - 'azure-function/**'  # Ensures the workflow triggers for changes in the azure-function folder
-  pull_request:
-    branches:
-      - master
-    paths:
-      - 'azure-function/**'  # Ensures the workflow triggers for PRs affecting the azure-function folder
   workflow_dispatch:
 
 concurrency:
