@@ -12,7 +12,6 @@ from azure.durable_functions.models.DurableOrchestrationStatus import Orchestrat
 
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
 
-
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
 @app.durable_client_input(client_name="client")
