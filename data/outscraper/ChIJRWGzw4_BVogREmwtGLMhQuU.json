@@ -1,0 +1,820 @@
+{
+    "place_name": "Gilmore's Mercantile Coffee Roaster",
+    "place_id": "ChIJRWGzw4_BVogREmwtGLMhQuU",
+    "place_description": "Take a step back in time and enjoy the relaxed shopping experience of the 1920\u2019s General Store, and sit with friends at our cafe, or relax with a good book in a comfortable reading space. Enjoy free WiFi while you spend time with us. We will offer in-house roasted coffees, bulk coffees, teas, spices, oils and vinegars.\nOur cafe will offer specialty coffees, teas, soft drinks, and light snacks, such as pastries.\nIn addition, there are a variety of exclusive and reasonably priced items for your entire family.\nWe are open!!!\nStop by anytime and visit !",
+    "place_rating": 4.9,
+    "place_total_reviews": 120,
+    "place_google_id": "0x8856c18fc3b36145:0xe54221b3182d6c12",
+    "place_reviews_id": "-1926940637472658414",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJRWGzw4_BVogREmwtGLMhQuU&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNQLXRtUml3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQLXRtUml3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICP-tmRiwE%7CCgwIyoOIugYQ4JfjwgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732379082,
+            "review_datetime_utc": "11/23/2024 16:24:42",
+            "review_text": "It's our favorite local shop! Great coffee, great atmosphere and GREAT customer service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQzeDZLNlF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzeDZLNlF3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID3x6K6Qw%7CCgsI-bTyuQYQgPzIcw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732024953,
+            "review_datetime_utc": "11/19/2024 14:02:33",
+            "review_text": "Adorable coffee, tea and gift shop. First time in and glad I stopped by. Purchased coffee and some gifts for my boss and some seasoning for myself. Ofcourse I had to try an iced coffee as well. Will return. Support local y'all!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQzeHE3R0ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzeHE3R0ZREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID3xq7GFQ%7CCgwIt7XYuQYQ2Oql2gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1731599031,
+            "review_datetime_utc": "11/14/2024 15:43:51",
+            "review_text": "Lovely old building filled with Quality oils, coffee, and unique gifts.\n\nDeliciousness served with a genuine smile!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYMXNQM01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYMXNQM01REAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDX1sP3MQ%7CCgwInN_2uAYQ6OPAkgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729998748,
+            "review_datetime_utc": "10/27/2024 03:12:28",
+            "review_text": "The White chocolate pumpkin was superb"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYck1IcmZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYck1IcmZBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDXrMHrfA%7CCgsIj5rruAYQ-LvCXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729809679,
+            "review_datetime_utc": "10/24/2024 22:41:19",
+            "review_text": "Cool little coffee shop. Rachel is very nice and accommodating! Happy to do business with them over and over!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURYMEluMEp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYMEluMEp3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDX0In0Jw%7CCgwIndThuAYQyLTTwgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1729653277,
+            "review_datetime_utc": "10/23/2024 03:14:37",
+            "review_text": "It's a great place to hang out with friends. I love the variety of teas and coffees. It's also nice to do a little shopping. Very cozy and the barista is awesome."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURIeXFQSnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIeXFQSnpnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDHyqPJzgE%7CCgsIh_eWtwYQ0IWlVg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1726331783,
+            "review_datetime_utc": "09/14/2024 16:36:23",
+            "review_text": "Great coffee spot that brews the coffee right here, got a cortado and two half pound bags of third shift and creme brulee. Nice place great atmosphere and very helpful staff. will definitely be coming back for more coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNIcXZ5YXRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIcXZ5YXRnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICHqvyatgE%7CCgsItYfdtgYQoN7DNg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725383605,
+            "review_datetime_utc": "09/03/2024 17:13:25",
+            "review_text": "I love this coffee shop it is my favorite one. It is much better than Starbucks. This place has a very nice shopping area that has infused vinegars and oils. I love getting the strawberry balsamic vinegar and using it on salads. It is delicious."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURieUwzNVBBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURieUwzNVBBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDbyL35PA%7CCgwIo6-utQYQwJP7ugE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1722521507,
+            "review_datetime_utc": "08/01/2024 14:11:47",
+            "review_text": "Wow! What a great coffee shop in downtown Gastonia!! Great coffee, friendly service and a warm, inviting place to enjoy the experience."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNicEpqS3BBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNicEpqS3BBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICbpJjKpAE%7CCgwI09z-tAYQ-KnjzQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1721740883,
+            "review_datetime_utc": "07/23/2024 13:21:23",
+            "review_text": "Great place to grab coffee! Very welcoming and fun, coffee tasted great, the atmosphere was good quiet enough for conversation but loud enough to not hear everyone else's!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURMeEtlWWRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMeEtlWWRnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDLxKeYdg%7CCgwI3o7rswYQ6ISPogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719322462,
+            "review_datetime_utc": "06/25/2024 13:34:22",
+            "review_text": "Love this place, so friendly.   Great coffee!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUc011MnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUc011MnR3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDTsMu2twE%7CCgwIrrOzsgYQoPKNpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716312494,
+            "review_datetime_utc": "05/21/2024 17:28:14",
+            "review_text": "Very cozy and relaxing atmosphere. Ordered a Frappe and it was amazing! They made it just right, super sweet, just the way I like it.\n\nPersonally. As someone who is boycotting Starbucks and who has hated them for a while, this place is even better and just a perfect coffee shop overall!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqczc2TWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqczc2TWpnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICjs76MjgE%7CCgwI19epsQYQqOiYigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1714056151,
+            "review_datetime_utc": "04/25/2024 14:42:31",
+            "review_text": "Family-owned local shop with vintage feel and locally made and brewed coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNqM2NEd0JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqM2NEd0JREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICj3cDwBQ%7CCgsI9ralsQYQkICwTA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713986422,
+            "review_datetime_utc": "04/24/2024 19:20:22",
+            "review_text": "Absolutely adorable little coffee shop with a fun little storefront - also the biggest selection of herbs and spices I've seen in the area!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqNW9yamp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqNW9yamp3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICj5orjjwE%7CCgwIpOqRsQYQ2IL4uQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713665316,
+            "review_datetime_utc": "04/21/2024 02:08:36",
+            "review_text": "Great  place with history.. neat little store . Friendly staff. Cool spot to check out ."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqLXVTbi13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqLXVTbi13RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICj-uSn-wE%7CCgwIpMCPsQYQ-JuGswM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713627172,
+            "review_datetime_utc": "04/20/2024 15:32:52",
+            "review_text": "Such a cool place. The coffee is great. Awesome selection of olive oil and balsamic vinegars. Check it out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNqcW96ZWtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqcW96ZWtRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICjqozekQE%7CCgwI7_2MsQYQgIaLxgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1713585903,
+            "review_datetime_utc": "04/20/2024 04:05:03",
+            "review_text": "What a gem. This coffee shop is truly phenomenal. I love everything about this place."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUREOXZuVnZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREOXZuVnZ3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDD9vnVvwE%7CCgsIyaHUsAYQkKabMw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1712656585,
+            "review_datetime_utc": "04/09/2024 09:56:25",
+            "review_text": "Quant shop, with a good selection of balsamic vinegar, infused olive oil, and coffee beans, as well as a variety of fresh brewed specialty coffees. Gifts, nick-nacks. It's worth a the trip from Hickory"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUREekxlRVdBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREekxlRVdBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDDzLeEWA%7CCgwIrJzFsAYQkPTFvQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1712410156,
+            "review_datetime_utc": "04/06/2024 13:29:16",
+            "review_text": "Fantastic place!\n\nFirst time as a local trying out this place. I wish I've known this place a long time ago! The staff were super friendly and knowledgeable. The coffee is delicious and so happy they support local businesses (donuts, sandwiches, and different gifts to purchase). They have the cutest gifts, different spices, and olive oil to choose from. This place screams coffee shop vibes- a must go!\n\nThank you!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNEME9ma1lBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEME9ma1lBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICD0OfkYA%7CCgwI0sb7rwYQ2PfprgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711203154,
+            "review_datetime_utc": "03/23/2024 14:12:34",
+            "review_text": "I own a small coffee bar in Stanley NC but had to check out another local coffee shop and it did not disappoint. This place is so beautiful and the atmosphere is relaxed. The staff is very friendly and attentive."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5aDQtTlV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5aDQtTlV3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID9h4-NUw%7CCgwIuIPyrwYQ8OGSmAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1711047096,
+            "review_datetime_utc": "03/21/2024 18:51:36",
+            "review_text": "Little coffee shop in the back of a shop that has a wide selection of flavored olive oils and spices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ5cm9URktREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5cm9URktREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID9roTFKQ%7CCgsIr7_YrwYQ-Mz4Vg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1710628783,
+            "review_datetime_utc": "03/16/2024 22:39:43",
+            "review_text": "Was introduced to this coffee house. Enjoyed my purchase n will return for some more coffee beans "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4dDdtc2x3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4dDdtc2x3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDxt7mslwE%7CCgwIt4XTrwYQqM27rgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1710539447,
+            "review_datetime_utc": "03/15/2024 21:50:47",
+            "review_text": "GILMORE'S MERCANTILE\nGREAT Coffee shop and store. Great couple who own and run the place. Don't miss this place. The shop front is ON Franklin Blvd.\nOur GPS went kind of stupid when trying to find them. If you are heading WEST in Gastonia, Wilkinson Blvd, (or Hwy 74, or.  Andrew Jackson Hwy) turns into Franklin Blvd., (THE) Boulevard. AFTER you cross over the railroad tracks. Gilmore's is just a bit further on the Left. Look for the banners on the sidewalk in an older brick building on the left. Parking is between 2 buildings, slopes downhill and kind of a squeeze. You can probably park in a lot at the bottom of the hill. Ignore the names on the building...previous owners of the building. The name plaques are there to honor them and for ambiance. They roast their coffee In-House. Many choices in coffee. I like their Americano (their secret blend). They also have some infused olive-oils. We haven't tried that yet. Also, there's a lot of other neat items in the shop. I see a nice area for the kids to hang out in also. Check them out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM5a2F6LTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM5a2F6LTB3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC9kaz-0wE%7CCgwI5OehrwYQgKTl_gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709732836,
+            "review_datetime_utc": "03/06/2024 13:47:16",
+            "review_text": "Love this coffee shop! Tons of local gifts. Also, coffee beans, infused olive oils, spices and teas. Awesome place to spend a morning!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkci0yRkJBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkci0yRkJBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDdr-2FBA%7CCgsI9tb9rgYQ8Jj4Eg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1709140854,
+            "review_datetime_utc": "02/28/2024 17:20:54",
+            "review_text": "Very quiet and quaint place. I appreciate a coffee shop such as this. I hope to visit again in the near future"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURkcWZheDN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURkcWZheDN3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDdqfax3wE%7CCgwI-cvprgYQyMuyhQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708811769,
+            "review_datetime_utc": "02/24/2024 21:56:09",
+            "review_text": "I love going here, it is so relaxing, and the people there are always so nice. I enjoy tasting all the vinegars and olive oils. The teas are great and so is the coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkeWV1TGRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkeWV1TGRnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDdyeuLdg%7CCgwIjK3prgYQ4Ia0nAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1708807820,
+            "review_datetime_utc": "02/24/2024 20:50:20",
+            "review_text": "Very cool old building. Tin ceiling and huge tin crown molding still intact. Plenty of seating and odd assortment of things for sale. We will return."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURkeXMyR2NBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURkeXMyR2NBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDdys2GcA%7CCgwIxLfdrgYQ2JW9lgE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1708612548,
+            "review_datetime_utc": "02/22/2024 14:35:48",
+            "review_text": "I would consider myself a coffee spot connesuier, and the place meets my needs with great customer service, Rachel and her staff have a really nice thing going! The coffee is amazing too!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNkX083aDNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNkX083aDNnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICd_O7h3gE%7CCgwI7sOvrgYQgKSmkwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1707860462,
+            "review_datetime_utc": "02/13/2024 21:41:02",
+            "review_text": "Love this family"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN0OTZQUWdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN0OTZQUWdRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICt96PQgQE%7CCgwI-8HurQYQ2OeI5AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706795259,
+            "review_datetime_utc": "02/01/2024 13:47:39",
+            "review_text": "Cute place to shop for unique gifts on TOP of being a great coffee shop with food and desserts.\n\nGreat selection of coffee beans, different kinds of spices and (olive) oils, much more than it appears to be."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN0aTd6TlV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN0aTd6TlV3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICti7zNUw%7CCgsIyqbrrQYQ6MewWA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1706742602,
+            "review_datetime_utc": "01/31/2024 23:10:02",
+            "review_text": "Great place to relax with a coffee..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURONHZxY3BRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURONHZxY3BRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDN4vqcpQE%7CCgwI_riyrQYQ-JfazwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705811070,
+            "review_datetime_utc": "01/21/2024 04:24:30",
+            "review_text": "Excellent place for coffee and a chat. Many oils to choose from in this eclectic environment"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUROZ3RfSjNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUROZ3RfSjNRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDNgt_J3QE%7CCgwIgdmxrQYQoLKM4wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705798785,
+            "review_datetime_utc": "01/21/2024 00:59:45",
+            "review_text": "Great coffee, cute decor, and some of the best olive oil and balsamic vinegars I've ever had"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOXzliQVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOXzliQVZREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICN_9bAVQ%7CCgwIqICqrQYQyK2l5gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705672744,
+            "review_datetime_utc": "01/19/2024 13:59:04",
+            "review_text": "Amazing coffee and super random and fun collection of items for sale... Jesse is a little ray of morning sunshine as she so attentively creates each customer's perfect coffee beverage."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKaW9LR1JnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKaW9LR1JnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICJioKGRg%7CCgwI_eKmrQYQ-LyuqAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705619837,
+            "review_datetime_utc": "01/18/2024 23:17:17",
+            "review_text": "This place is delicious!! Service with a smile and enough coffee to keep you awake for days, lol. All kinds of extras to see and buy. It's definitely worth a visit and a cup of joe."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNOMmF5S0x3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOMmF5S0x3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICN2ayKLw%7CCgsIqeyWrQYQkJHGJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1705358889,
+            "review_datetime_utc": "01/15/2024 22:48:09",
+            "review_text": "Midnight shift coffee is great."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxcXMyejRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxcXMyejRRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC1qs2z4QE%7CCgwIwqCxrAYQ4MOY5wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703694402,
+            "review_datetime_utc": "12/27/2023 16:26:42",
+            "review_text": "Jesse is the absolute sweetest. She helped me pick out some delicious fresh coffee beans. I love the flavored oil and vinegars."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxeXJPei1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxeXJPei1nRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC1yrOz-gE%7CCgwImtOwrAYQ4NzGwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703684506,
+            "review_datetime_utc": "12/27/2023 13:41:46",
+            "review_text": "Super friendly and coffee is amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMxZ0xYdWpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMxZ0xYdWpBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC1gLXujAE%7CCgwIy5OJrAYQoISJ9wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1703037387,
+            "review_datetime_utc": "12/20/2023 01:56:27",
+            "review_text": "Great place for coffee and fun gifts."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNscnQzeERBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNscnQzeERBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIClrt3xDA%7CCgwIzsfkqgYQ0P2g8QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1700340686,
+            "review_datetime_utc": "11/18/2023 20:51:26",
+            "review_text": "Nice home decor, loose leaf tea and coffee shop in downtown Gastonia. The staff is friendly and the coffee is affordable and good. They have many flavor options to choose from for a latte and a small selection of pastries.\n\nThe baristas were very friendly and sweet!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNGdmZfcHd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGdmZfcHd3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICFvf_pwwE%7CCgwI9MuFqgYQyLqrpQM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1698784756,
+            "review_datetime_utc": "10/31/2023 20:39:16",
+            "review_text": "Excellent selection of coffee and a comfortable  chair to sit in while drinking coffee and catching up on email and calls."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ1MGVpLWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ1MGVpLWZREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID50ei-fQ%7CCgwI3eflqQYQiNfGigE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698264029,
+            "review_datetime_utc": "10/25/2023 20:00:29",
+            "review_text": "I visit Gilmore's every morning for coffee and it is an absolute delight.  The coffee is delicious, customer service is genuine and the homemade baked goods are to amazing!\nThank you Gilmore's!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1OXNYcTJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1OXNYcTJBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID59sXq2AE%7CCgsIoPzeqQYQoMa3Ew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698151968,
+            "review_datetime_utc": "10/24/2023 12:52:48",
+            "review_text": "Fantastic coffee and work space!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ1LXJMSnNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ1LXJMSnNnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID5-rLJsgE%7CCgsI1P7ZqQYQqKuDfw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1698070356,
+            "review_datetime_utc": "10/23/2023 14:12:36",
+            "review_text": "A lovely find. Great coffee and teas - great selection of gift and home items. An old-timey comfy vibe!  I wish it had larger signage so it is more visible when driving by.  Thank you, Rachel for bringing this gem to Gastonia!!  Give it a go - you won't regret!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURadmJ6UnpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURadmJ6UnpBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDZvbzRzAE%7CCgwI8IuDqQYQkLypmAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1696646640,
+            "review_datetime_utc": "10/07/2023 02:44:00",
+            "review_text": "Legit the best coffee spot and at a great price, the workers are so kind and interactive with the customers, it's as if you were family.  I will definitely be coming back along with my friends!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNaODdlYlNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaODdlYlNBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICZ87ebSA%7CCgwIk5yeqAYQ4LaF0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1694993939,
+            "review_datetime_utc": "09/17/2023 23:38:59",
+            "review_text": "What a fun and unexpected gem in downtown Gastonia. Freshly roasted coffee beans, yummy espresso drinks, lots of curated gifts for purchase. Plus friendly hosts with a great back story. Parking down the side of the building."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NHAzQUR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NHAzQUR3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICx4p3ADw%7CCgwI7tLTpgYQgLHlwgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691674990,
+            "review_datetime_utc": "08/10/2023 13:43:10",
+            "review_text": "Lovely experience at Gilmore's.\nVery friendly and helpful.  Chock full  o' stuff!\nChock full o' coffee!.\nThey have ground and whole beans.\nThey grounds some whole beans for me on the spot!\nThey have some unique special blends not found anywhere else on Earth!\nBought a pound of \" Midnight in G-Town \" blend. Had some this morning, 5-13-2023.\nExcellent! I look forward to more tomorrow!\nHighly recommend.\nIf you are reading this, then you need to go check out Gimore's!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNwbmJhZ3pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbmJhZ3pRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICpnbagzQE%7CCgwIzPTJpgYQsKDf0gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1691515468,
+            "review_datetime_utc": "08/08/2023 17:24:28",
+            "review_text": "Great espresso, made the authentic way"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURKMGVLNURREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKMGVLNURREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDJ0eK5DQ%7CCgwIzv_bpQYQyIKGgAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1689714638,
+            "review_datetime_utc": "07/18/2023 21:10:38",
+            "review_text": "Very good coffee. I don't like most coffee at restaurants, this was very good."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNKbGFEd3FBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKbGFEd3FBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICJlaDwqAE%7CCgwIlpmBpQYQ-OfwqQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688226966,
+            "review_datetime_utc": "07/01/2023 15:56:06",
+            "review_text": "Love stopping in for coffee during my lunch break. Really great finds in the store, and super friendly staff! Lots of unique gifts too.\n\nMy only reccomendation would be improving the signage, maybe with a perpendicular wall sign on the front. So more people can see y'all driving down Franklin instead of after they pass."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKeUlmZkxnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKeUlmZkxnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICJyIffLg%7CCgwIpo3DpAYQ8KTYvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1687209638,
+            "review_datetime_utc": "06/19/2023 21:20:38",
+            "review_text": "Love this place. Just what we needed here. Friendly and lots of great items fr sale"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4N2ZmQXpBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4N2ZmQXpBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDx7ffAzAE%7CCgwIk8WipAYQwNOPyQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686676115,
+            "review_datetime_utc": "06/13/2023 17:08:35",
+            "review_text": "Awesome atmosphere and good coffee at good prices.  Tons of sugar-free options, if that's important to you.\n\nAlso, there's WAY more to buy here than just coffee!  Check it out!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4ejV2VmVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4ejV2VmVBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICxz5vVeA%7CCgwI4d3QowYQwMaCsAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1685335777,
+            "review_datetime_utc": "05/29/2023 04:49:37",
+            "review_text": "Cool place where you can have coffee and buy infused oils and vinegars of good quality, coffee beans of may different types, some clothing, local honey, etc.  It's definitely worth more that one visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN4bzVmaXNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4bzVmaXNBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICxo5fisAE%7CCgwIyLq6owYQ8OjowAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684970824,
+            "review_datetime_utc": "05/24/2023 23:27:04",
+            "review_text": "Have an inflammatory bowel disease and the wide range of olive oils and balsamic vinegars help me to stay on my diet with flavorful food."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4eWNYVlR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4eWNYVlR3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICxycXVTw%7CCgwIm76jowYQgIjO6gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684594459,
+            "review_datetime_utc": "05/20/2023 14:54:19",
+            "review_text": "Thanks for the Mommy break today!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURod29uQ0ZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURod29uQ0ZnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDhwonCFg%7CCgsIjoqOoAYQkJnlfQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1677952270,
+            "review_datetime_utc": "03/04/2023 17:51:10",
+            "review_text": "Nice place and good coffee."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoM3V5NHBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoM3V5NHBBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICh3uy4pAE%7CCgwItcuqnwYQ2ImS-QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676322229,
+            "review_datetime_utc": "02/13/2023 21:03:49",
+            "review_text": "We went this morning to check it out.  It was great.  The oil, vinegar and spice variety was something that Gaston County needed.  The coffee was great too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoeHJMcmF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoeHJMcmF3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIChxrLraw%7CCgwI-u6enwYQuNKGqQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676130170,
+            "review_datetime_utc": "02/11/2023 15:42:50",
+            "review_text": "Wow this place is a hidden gem. A charming little store front and coffee roaster. The owners were very friendly and accommodating. All the coffee was fresh and is roasted weekly. A great place for a date or to bring a book and enjoy some delicious coffee. Needless to say I will definitely be coming back. 6/5 stars "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNoNnEzRmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNoNnEzRmtRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICh6q3FkQE%7CCgsIoaOZnwYQqNDMKw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1676038561,
+            "review_datetime_utc": "02/10/2023 14:16:01",
+            "review_text": "I love the southern charm. Must haves are the baked goods, the infused olive oils, and vinegars on display... The staff is extremely friendly, and the coffee beans are amazing.. Great place to relax over coffee or conversation.. I could go on and on, but you must try it for yourself..."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCejV2RFRnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCejV2RFRnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICBz5vDTg%7CCgwI-azmnQYQ6KmbiQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673107065,
+            "review_datetime_utc": "01/07/2023 15:57:45",
+            "review_text": "This is an absolute gem of a coffee and gift shop in Gastonia, NC & I highly recommend you stop by!! Tasty roasts, oils & vinegars, local handmade items, baked goods, comfy chairs, tons of games to play, and just an overall warm and cozy atmosphere! Plus, we had INCREDIBLE service by Jessie (Thank you so much and we'll definitely be back!)\nJessie is super sweet and very knowledgeable and she took the time show us around. We got to see to the beast of a roasting machine they use in-house and she explained how the owner, Rachel, uses locally sourced beans. The place smells incredible, as you can imagine, and the coffee was delicious! So many roasts!\nOh - and did I mention the many oils and vinegars they have there that you can sample?! The strawberry balsamic was superb!\nTheir gift selection was quite ample. I picked up some luxurious Turkish bath towels for about $12 each. You CANNOT beat that! I also bought some fancy mint tea and an adorable locally crocheted snowflake ornament.\nWe came in just for coffee, but left with so much more; a real feeling a being part of the lovely Gastonia community. Do not miss this spot!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNCbEtELXdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCbEtELXdnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICBlKD-wgE%7CCgwIsYj5nAYQ-Nn1mAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1671316529,
+            "review_datetime_utc": "12/17/2022 22:35:29",
+            "review_text": "Great little spot in downtown Gastonia with unique finds as well as olive oils, vinegars, spices, teas, coffees, etc.... Cozy, quaint and enviting. Will definitely be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtMXRiaE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtMXRiaE9BEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID-1tbhOA%7CCgwIuuuWnAYQyP2avwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669707194,
+            "review_datetime_utc": "11/29/2022 07:33:14",
+            "review_text": "I absolutely love this quaint little coffee shop that has come to Gastonia. Coffee is not the only thing they sell. They have imported olive oils with a variety of vinegars. They have a wide variety of spices, coffee, tea as well as other little things. It's a great gift shop to buy something for your friends and loved ones. Jess who is the barista is very kind and knowledgeable about flavors. She also is the baker of all the baked goods that they sell and they are fantastic!! I love taking my time looking at all the little things the shop has to offer. You've gotta stop in to check them out. I truly hope they stay open. They made Gastonia a better place to live. Come support local business!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQtaktyRFF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtaktyRFF3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID-jKrDQw%7CCgsIr4r1mwYQ2OXiZQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1669154095,
+            "review_datetime_utc": "11/22/2022 21:54:55",
+            "review_text": "I'm a coffee freak and after paying a few visits I can safely say this is the absolute best coffee I've ever had in my life and it's not even close. Never too sweet or bitter and super consistent and the prices are great. Side note: you must try their flavored cooking oils!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtazQ2cFhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtazQ2cFhnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC-k46pXg%7CCgwIre6-mwYQgIrhmwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668265773,
+            "review_datetime_utc": "11/12/2022 15:09:33",
+            "review_text": "Get some R&R...\n\nRichard and Rachel will take great care of you."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlMWNHSlJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMWNHSlJnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDe1cGJRg%7CCgwI8LOsmgYQ2KrcrQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665866224,
+            "review_datetime_utc": "10/15/2022 20:37:04",
+            "review_text": "I love the place  and have been telling others about it."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURldUlMRll3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURldUlMRll3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDeuILFYw%7CCgwIocHhmQYQ-Jr-mQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1664639137,
+            "review_datetime_utc": "10/01/2022 15:45:37",
+            "review_text": "Best iced coffee I ever had"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlbmR1NGZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlbmR1NGZREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICendu4fQ%7CCgwIwOirmQYQ2O6TpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1663759424,
+            "review_datetime_utc": "09/21/2022 11:23:44",
+            "review_text": "Super friendly staff, inviting atmosphere. What a beautiful little gem with an amazing sense of community. Delicious house roasted coffee and tasty baked goods, board games available to play while sipping with friends. Lots of local handmade treasures. Also features an amazing loose leaf tea table and a spice wall that I can't wait to explore!\nYesterday was my first visit and today I'm bringing my daughter along. I have a feeling I will be visiting quite often!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNlaXZQbnRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlaXZQbnRBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICeivPntAE%7CCgwI27j0mAYQgPrxpQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662852187,
+            "review_datetime_utc": "09/10/2022 23:23:07",
+            "review_text": "It is a great place with many wonderful things to purchase, love the spices."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlM01fMVpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlM01fMVpBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICe3M_1ZA%7CCgwIgvromAYQoPWDpwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1662663938,
+            "review_datetime_utc": "09/08/2022 19:05:38",
+            "review_text": "Great local shop with English coffee mugs, tea shop,  and other hard to find items"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNlNE1UVmVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNlNE1UVmVnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICe4MTVeg%7CCgsItrHNmAYQyMXmJw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662212278,
+            "review_datetime_utc": "09/03/2022 13:37:58",
+            "review_text": "Best coffee in town"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPaGVfa1FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPaGVfa1FREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDOhe_kQQ%7CCgwIs66olgYQoO6u0QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1657411379,
+            "review_datetime_utc": "07/10/2022 00:02:59",
+            "review_text": "Becoming my new favorite for coffee.  Great place for a coffee, some shopping, and the customer service is excellent!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPbk9tT053EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPbk9tT053EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDOnOmONw%7CCgwI2N3zlQYQ-JKThgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1656549080,
+            "review_datetime_utc": "06/30/2022 00:31:20",
+            "review_text": "Absolutely love your coffee.. See you soon.."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPb2NiMkV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPb2NiMkV3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICOocb2Ew%7CCgwIj5qVlQYQ6I7KpgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1655000335,
+            "review_datetime_utc": "06/12/2022 02:18:55",
+            "review_text": "Such a quaint little place. The coffee was smooth and delicious. They have a wide variety of teas as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPZ2FHOFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPZ2FHOFpnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICOgaG8Zg%7CCgsIpIaTlQYQyJOROw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654965028,
+            "review_datetime_utc": "06/11/2022 16:30:28",
+            "review_text": "Great visit for coffee and a treat  this morning!  Very friendly. Rachel has brought a real gem to downtown Gastonia!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPbHM3a2RBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPbHM3a2RBEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICOls7kdA%7CCgsIsYOGlQYQyLbuJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1654751665,
+            "review_datetime_utc": "06/09/2022 05:14:25",
+            "review_text": "What a neat place! The lady was really nice and helpful. I ordered a cappuccino and she asked if i wanted any flavoring and what type of milk i wanted, I ordered it with almond milk. Will defiantly be back and try one of their cookies!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNPZ05McE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPZ05McE9BEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICOgNLpOA%7CCgwIlsbOlAYQ-KnL0gM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653842710,
+            "review_datetime_utc": "05/29/2022 16:45:10",
+            "review_text": "This is just the COOLEST store and I am so grateful that they've chosen Gastonia. The candy counter is amazing, old timey fixtures and all. So looking forward to bringing my daughter and my friends with kids here! Also, the oils and spice selection is superb. The owner Rachel was so gracious while helping me fill up two bottles of very unique oils. There is a coffee bar and ample comfortable seating, you could easily spend a day playing cards or reading a book or even go on a date! Also, their Baker supplied our baby shower with some of the most BEAUTIFUL and delicious gluten and dairy free sugar cookies.\n\nThis store is a winner. Must see!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyMTZHXy1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyMTZHXy1RRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID216G_-QE%7CCgwIy6bElAYQ2M3dkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653674827,
+            "review_datetime_utc": "05/27/2022 18:07:07",
+            "review_text": "My husband and I came in this afternoon and it was a wonderful experience! The proprietors were helpful and friendly and the products were wonderful. Will definitely come again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyczVMX3pnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyczVMX3pnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID2s5L_zgE%7CCgwIq8KzlAYQuIydugE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1653399851,
+            "review_datetime_utc": "05/24/2022 13:44:11",
+            "review_text": "Glad we found this place, looking forward to seeing it grow. Freshest coffee around."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyemVqbFl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyemVqbFl3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID2zejlYw%7CCgwI37GklAYQuPiSiAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1653151967,
+            "review_datetime_utc": "05/21/2022 16:52:47",
+            "review_text": "Excellent customer service. I can't believe this place has been here for 5 months without me knowing, I'm sad I missed out on 5 months of excellent coffee from a family owned business. WILL return!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQyMHZiMHhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyMHZiMHhRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgID20vb0xQE%7CCgsIpuHqkwYQ2IWjWw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1652207782,
+            "review_datetime_utc": "05/10/2022 18:36:22",
+            "review_text": "Tried this place out for the first time this weekend. We got there about 15 minutes before closing but the owners were very nice and helpful. Picked out a black pepper olive oil that I'm looking forward to using. Next time I'll try out the coffee!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyOTdETHZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyOTdETHZBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC297DLvAE%7CCgwIt9W2kwYQwMqJyQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651354295,
+            "review_datetime_utc": "04/30/2022 21:31:35",
+            "review_text": "From out of town stopped in awesome place great prices good coffee very nice people and a throw back to the past highly recommend this place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyNTdMeS13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyNTdMeS13RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC257Ly-wE%7CCgwI4fSxkwYQkOvf5QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1651276385,
+            "review_datetime_utc": "04/29/2022 23:53:05",
+            "review_text": "Another good place to meet your friends drink coffee and just hanging out"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyLXR2cF9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyLXR2cF9nRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC2-tvp_gE%7CCgwIlab4kgYQ-M7XvAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1650332437,
+            "review_datetime_utc": "04/19/2022 01:40:37",
+            "review_text": "Bought a reusable travel mug and fill it up every Sat AM. These folks are so kind and eager to please! "
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMyd0l1dXB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyd0l1dXB3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIC2wIuupwE%7CCgwIjIPGkgYQ-L-zowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649508748,
+            "review_datetime_utc": "04/09/2022 12:52:28",
+            "review_text": "Unique, friendly, and peaceful. Stop by for something different."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURXdi0tRXpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXdi0tRXpRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDWv--EzQE%7CCgwInLXCkgYQ4MLtrAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1649449628,
+            "review_datetime_utc": "04/08/2022 20:27:08",
+            "review_text": "The ladies are friendly. I was stuck in Gastonia (long story) and they let me chill there for 2 hours while i waited for my ride. I had the iced mocha latte which was delicious. They sell Cheerwine soda and assorted snacks. It's family-owned."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURXakxIY01REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXakxIY01REAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDWjLHcMQ%7CCgwI4pXKkQYQ0JqupAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1647479522,
+            "review_datetime_utc": "03/17/2022 01:12:02",
+            "review_text": "Small coffee bar that also sells locally made specialty teas. Has a great aged oil/basalmic vinegar section for all you healthy folks that you can buy by the decanter. Clean place with a well thought out layout. Ladies... There's a children's section that has crayons, books, and all sorts of stuff to keep them occupied while you chat at one of the booths! Rachel (the owner) and Sam (her daughter) are ready to help you with a good knowledge of the products they sell."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXOTd2VnhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXOTd2VnhBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICW97vVxAE%7CCgwIr7ijkQYQ6Pi1vQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646844975,
+            "review_datetime_utc": "03/09/2022 16:56:15",
+            "review_text": "A great place to sit and share a cup of coffee with a friend."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXLTVHaHR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXLTVHaHR3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICW-5GhtwE%7CCgwIscmakQYQ-JqquAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1646699697,
+            "review_datetime_utc": "03/08/2022 00:34:57",
+            "review_text": "I went to this place and I have never felt at home so quickly before.  Mom  and I were immediately greeted and helped! We only live a few miles away so we will definitely return! I bought a pound of coffee and can't wait to try it!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNXbkotcDlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXbkotcDlBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICWnJ-p9AE%7CCgwImfjJkAYQyKa_6QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645378585,
+            "review_datetime_utc": "02/20/2022 17:36:25",
+            "review_text": "Purchased a half pound bag of their darkest roast coffee -- which they roast in house!! -- because after my free sample of it in the shop I couldn't walk away. It was so smooth it's almost sweet, even taking it black. These guys know their coffee.\nThey also have an incredible selection of infused olive oils and flavored vinaigrettes, a really nice array of teas and spices, just a really good one-stop shop for the kitchen staples at really affordable prices. Will be returning for another bag of the coffee, and more besides!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXbE5ENWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXbE5ENWJ3EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICWlND5bw%7CCgwInovAkAYQ8NjuoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645217182,
+            "review_datetime_utc": "02/18/2022 20:46:22",
+            "review_text": "Heard about this place through my pork supplier, Basswood Creek Farm, as this is one of their pickup locations. Decided to see what it was all about since I was out of coffee at home. Delightful little store, family owned and run. I want to come back to enjoy a cup of coffee and sit for a while one morning. Many of my favorite things here: kitchen items (like Lodge cast iron), spices, teas, quality olive oil... And taste testing! Always fun. I was a little confused about parking as there are no signs indicating I am in the right place, but Google did not lead me astray."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNXNk1taFpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXNk1taFpnEAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICW6MmhZg%7CCgwIoOC1kAYQyJDLnwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1645047840,
+            "review_datetime_utc": "02/16/2022 21:44:00",
+            "review_text": "Fantastic coffee, reasonable prices, and priceless 1930s style ambiance.  A little hard to find, it's right next door to the dry cleaners, but well worth finding. My new favorite place !!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtbDRhOGpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtbDRhOGpRRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDml4a8jQE%7CCgsIw4qbkAYQ4K2odQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1644610883,
+            "review_datetime_utc": "02/11/2022 20:21:23",
+            "review_text": "It's definitely hard to find good service nowadays. These guys hands down gave me the best that I have gotten in a very long time. They were very nice and informative. I will definitely be recommending to all my friends and family to check these guys out."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtMGViYjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtMGViYjhnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDm0ebb8gE%7CCgwIxZzgjwYQ2Kiv2AM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643646533,
+            "review_datetime_utc": "01/31/2022 16:28:53",
+            "review_text": "I love this place!! Great coffee and they are very nice and helpful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURta1ktOHRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURta1ktOHRBRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDmkY-8tAE%7CCgwIj-LfjwYQuKquqwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643639055,
+            "review_datetime_utc": "01/31/2022 14:24:15",
+            "review_text": "Gilmore's Mercantile is my favorite new coffee place! The staff is friendly, the coffee is tasty, and the environment is cozy. There is a kids corner with books and blocks and several tables and booths and armchairs to get comfortable in. They roast their own coffee varieties - over 15 that I saw this morning. We have started buying our homebrew here and love it. They also have lots of cute country store type of items, like toys and candies. Other specialties include teas, fresh spices, and more than a few varieties of specialty cooking oils and vinegars. What a special place!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURtdnNibWt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtdnNibWt3RRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDmvsbmkwE%7CCgsItr_WjwYQ-NiLeQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1643487158,
+            "review_datetime_utc": "01/29/2022 20:12:38",
+            "review_text": "Smooth coffee, great assortment of specialty oils, vinegars, and spices and more!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtOThEeU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtOThEeU5REAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICm98DyNQ%7CCgsI_-T8jgYQyM3MEw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1642017407,
+            "review_datetime_utc": "01/12/2022 19:56:47",
+            "review_text": "I had great conversation with Rachel, the owner, who was as kind and helpful as she could be. I grabbed two varieties of whole beans for home (great selection) and a cup of brewed Colombian to go. I look forward to returning to explore the vast offerings in this beautiful shop when I have more time. Wishing you all so much success, Rachel and family!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtNC1qVkJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtNC1qVkJREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICm4-jVBQ%7CCgsIzZ7jjgYQuOfEGA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641598797,
+            "review_datetime_utc": "01/07/2022 23:39:57",
+            "review_text": "Great roasted coffee!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNtaWRhYk13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNtaWRhYk13EAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgICmidabMw%7CCgwI6uTBjgYQkNunsQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1641050730,
+            "review_datetime_utc": "01/01/2022 15:25:30",
+            "review_text": "This place is extremely nice, the staff is extremely polite. Great place for a lunch break or a place to sit and relax. The coffee is awesome as well."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHdzZIOWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHdzZIOWpnRRAB!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDGw6H9jgE%7CCgwIsvy-jQYQuJ7KpgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1638907442,
+            "review_datetime_utc": "12/07/2021 20:04:02",
+            "review_text": "A very huge selection of seasonings, flavored cooking oils and vinegars. Huge selection of fresh coffee beans that they will grind for you. Very friendly atmosphere and customer service is great!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHbnZqbVVREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHbnZqbVVREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDGnvjmUQ%7CCgwIl9-QjQYQoLWAwAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1638150039,
+            "review_datetime_utc": "11/29/2021 01:40:39",
+            "review_text": "I love the variety of coffee blends and oils and the atmosphere of this shop. My favorite coffee blends are Guatemalan and Tanzanian!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHNXEyWWZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHNXEyWWZREAE!2m1!1s0x0:0xe54221b3182d6c12!3m1!1s2@1:CIHM0ogKEICAgIDG5q2YfQ%7CCgwItvCEjQYQoMvHmAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1637955638,
+            "review_datetime_utc": "11/26/2021 19:40:38",
+            "review_text": "Very nice place, great coffee selection. The oil and vinegar section is very cool and has a lot of options. They are still in the process of opening but it's definitely worth a look."
+        }
+    ]
+}
