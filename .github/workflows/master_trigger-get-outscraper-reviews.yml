@@ -1,6 +1,7 @@
 name: Trigger Get Outscraper Reviews
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 concurrency: 

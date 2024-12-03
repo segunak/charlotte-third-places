@@ -1,5 +1,8 @@
 name: Auto Merge Master Into Develop
 
+# Credit this solution to: https://stackoverflow.com/questions/35445186/can-github-automatically-merge-branches
+# Ensure permissions are correct: https://stackoverflow.com/questions/72851548/permission-denied-to-github-actionsbot
+
 on:
   workflow_dispatch:
   push:

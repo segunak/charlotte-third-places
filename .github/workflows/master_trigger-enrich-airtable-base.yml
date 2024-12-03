@@ -1,6 +1,7 @@
 name: Trigger Enrich Airtable Base
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 # Ensures that only one instance of this workflow runs at a time

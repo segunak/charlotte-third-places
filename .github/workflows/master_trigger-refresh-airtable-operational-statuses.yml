@@ -1,6 +1,7 @@
 name: Trigger Refresh Airtable Operational Statuses
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 concurrency: 
