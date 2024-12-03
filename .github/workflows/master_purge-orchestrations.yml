@@ -1,6 +1,7 @@
 name: Trigger Purge Orchestrations
 
 on:
+  workflow_call:
   workflow_dispatch:
 
 concurrency: 
