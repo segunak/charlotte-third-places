@@ -1,0 +1,1004 @@
+{
+    "place_name": "Starbucks | 5361 Ballantyne Commons Pkwy",
+    "place_id": "ChIJ0zjvlrYnVIgR43iLTFvxDKU",
+    "place_description": "Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability.",
+    "place_rating": 4.2,
+    "place_total_reviews": 233,
+    "place_google_id": "0x885427b696ef38d3:0xa50cf15b4c8b78e3",
+    "place_reviews_id": "-6553597983302387485",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ0zjvlrYnVIgR43iLTFvxDKU&authuser=0&hl=en&gl=UA",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQzaTUtblNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzaTUtblNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID3i5-nSQ%7CCgwIw_nuuQYQ6IWLvwE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1731968195,
+            "review_datetime_utc": "11/18/2024 22:16:35",
+            "review_text": "I don't understand why they are asking for tips here.\nI expect exactly same drink. It's bad convention."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNKbjg2Zk53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKbjg2Zk53EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICJn86fNw%7CCgsIoJ-ipQYQyLWGLQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1688768416,
+            "review_datetime_utc": "07/07/2023 22:20:16",
+            "review_text": "The staff is friendly and clean."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4dTk2QWdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4dTk2QWdnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDxu96AggE%7CCgwIhLOtpAYQyL_unAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1686854020,
+            "review_datetime_utc": "06/15/2023 18:33:40",
+            "review_text": "fine place"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR4Z2U2eXRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR4Z2U2eXRBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDxge6ytAE%7CCgwI2reMpAYQiN_x2QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1686313946,
+            "review_datetime_utc": "06/09/2023 12:32:26",
+            "review_text": "Fast\nAccurate\nDelicious."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4MzZmMVZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4MzZmMVZREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICx36f1VQ%7CCgsIgN_TowYQwNKTLw%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1685385088,
+            "review_datetime_utc": "05/29/2023 18:31:28",
+            "review_text": "The price is high and not worth the value. A $7.00 drink full of ice!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4d1pDMktnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4d1pDMktnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICxwZC2Kg%7CCgsInK-bowYQ0MKURw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1684461468,
+            "review_datetime_utc": "05/19/2023 01:57:48",
+            "review_text": "Friendly and swift"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4NkxiM2VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4NkxiM2VnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICx6Lb3eg%7CCgwIsozqogYQsNPjzgE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1683654194,
+            "review_datetime_utc": "05/09/2023 17:43:14",
+            "review_text": "Sometimes, the wait for drinks takes longer than it should. But overall, the place is nice and the employees are as well."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN4c05mOWN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4c05mOWN3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICxsNf9cw%7CCgwIpcnmogYQ4PTZuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1683596453,
+            "review_datetime_utc": "05/09/2023 01:40:53",
+            "review_text": "Starbucks is always in order. Great passion drink, service was good, and the outdoor seating with a friend on a beautiful day was lovely!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURSaHBYYzVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSaHBYYzVBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDRhpXc5AE%7CCgwI1MiWogYQ4NHWrwM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1682285652,
+            "review_datetime_utc": "04/23/2023 21:34:12",
+            "review_text": "My coffee was on point, service was top knotch, facility wasn't as clean. If customers would clean up after themselves, this would be a good hangout spot. Awesome job guys!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNoNE9Pb2FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoNE9Pb2FBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICh4OOoaA%7CCgwIkp3wngYQwL2c0gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675366034,
+            "review_datetime_utc": "02/02/2023 19:27:14",
+            "review_text": "My Favorite Starbucks, Very Fast and friendly staff and it's always clean!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCbDdycHdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCbDdycHdnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDBl7rpwgE%7CCgwI5pPhngYQgMGfoAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1675119078,
+            "review_datetime_utc": "01/30/2023 22:51:18",
+            "review_text": "Very friendly server."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURCaHJmZDdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCaHJmZDdRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDBhrfd7QE%7CCgwI-uecngYQqJr7yAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1673999354,
+            "review_datetime_utc": "01/17/2023 23:49:14",
+            "review_text": "The only Starbucks I enjoy going to."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNCaFpPRkN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaFpPRkN3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICBhZOFCw%7CCgwIudm7nQYQ8M3IoQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1672408249,
+            "review_datetime_utc": "12/30/2022 13:50:49",
+            "review_text": "This is my go to Starbucks store. I always use the order ahead on the app. My order is always accurate and on time. Staff is friendly and the location is super clean."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtai1fYzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtai1fYzhnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC-j-_c8gE%7CCgwI5pfUmwYQ2Ln7pwE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1668615142,
+            "review_datetime_utc": "11/16/2022 16:12:22",
+            "review_text": "very clean and cozy."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtajU3Y3dRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtajU3Y3dRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC-j57cwQE%7CCgwIruTTmwYQiI_K5AE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1668608558,
+            "review_datetime_utc": "11/16/2022 14:22:38",
+            "review_text": "Waited 12 minutes for a plain cup of coffee while the register attendant just stood there. Major operational problems at this location."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtczhDRXB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtczhDRXB3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC-s8CEpwE%7CCgwIhLHAmwYQ0OaJlAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1668290692,
+            "review_datetime_utc": "11/12/2022 22:04:52",
+            "review_text": "Not a huge place, but comfortable. Pretty busy when we went, but the service was still fast and friendly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMtaWJyNW5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtaWJyNW5nRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC-ibr5ngE%7CCgwI5PmhmwYQ0IK1yAM%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1667792100,
+            "review_datetime_utc": "11/07/2022 03:35:00",
+            "review_text": "Good Apple Oat Crisp Macaccino \n\nThe old i had at the Starbucks in Matthews was lacking something buy this Barista got it right."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUMtdkpuRUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtdkpuRUpnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC-vJnEJg%7CCgwI75D2mgYQ2InxgAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1667074159,
+            "review_datetime_utc": "10/29/2022 20:09:19",
+            "review_text": "Bom atendimento, espaco restrito, ideal para lanches rapidos, especialidade : variedade de cafes, por sinal deliciosos!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlMGZXMlF3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMGZXMlF3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDe0fW2Qw%7CCgwI7IycmgYQwKjfvgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1665599084,
+            "review_datetime_utc": "10/12/2022 18:24:44",
+            "review_text": "I work in the plaza so I go to this location on a regular basis. It's always super clean and the staff is no less than fantastic. They always go the extra a mile, even more so than other Starbucks. I'm a huge coffee person and this is my favorite location to go whenever I need a refill or something to much on! 10 outta 10"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURlanBXS0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlanBXS0pnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDejpWKJg%7CCgwIsPOPmgYQsPTfogE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1665399216,
+            "review_datetime_utc": "10/10/2022 10:53:36",
+            "review_text": "Not open during business hours"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNleHJ6N2lRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNleHJ6N2lRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICexrz7iQE%7CCgwIs6n9mAYQwO3H6AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1662997683,
+            "review_datetime_utc": "09/12/2022 15:48:03",
+            "review_text": "Friendly baristas. Clean. Great coffee."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN1MzhhQWZ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN1MzhhQWZ3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICu38aAfw%7CCgwI2rLLlwYQqJn5qgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1660082522,
+            "review_datetime_utc": "08/09/2022 22:02:02",
+            "review_text": "Well I come here sometimes but I don't drink coffee so I just get bakery items and they are all delicious so far, except for an unwarmed cookie or brownie."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURPaGJDYWNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPaGJDYWNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDOhbCacQ%7CCgsI47CnlgYQuNDWWg%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1657395299,
+            "review_datetime_utc": "07/09/2022 19:34:59",
+            "review_text": "Beautiful location.  But I don't get it  - why when you pour sugar in cold coffee and do not stir ???\nReason to order sweet coffee if it won't be sweet???"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURPeHNpQnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPeHNpQnR3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDOxsiBtwE%7CCgwIjuaIlgYQqMWK1QM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1656894222,
+            "review_datetime_utc": "07/04/2022 00:23:42",
+            "review_text": "This is the most racist Starbucks I have ever visited.  I was waiting for atleast 10 mins just for some to help me with literally no other customers before me, and later someone comes with no apologies and an uncourteous behavior. I don't know how busy they are with their phone orders that they can't take one single walkin order."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQyLV83Z0J3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyLV83Z0J3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID2-_7gBw%7CCgwIuPO9lAYQ-JvJ9gE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1653569976,
+            "review_datetime_utc": "05/26/2022 12:59:36",
+            "review_text": "It's a smaller Starbucks but quick service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzOExyNU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzOExyNU9BEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICs8Lr5OA%7CCgsI9MnijQYQsLCxLg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1639490804,
+            "review_datetime_utc": "12/14/2021 14:06:44",
+            "review_text": "Calm and great staff. I always find this place  best to work for couple of hours"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURHcV9fYi1RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURHcV9fYi1RRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDGq__b-QE%7CCgwI6fXJjQYQiI-J0AE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1639086825,
+            "review_datetime_utc": "12/09/2021 21:53:45",
+            "review_text": "Cake pops were interesting flavor. Service was really slow"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURHeFpDMU53EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHeFpDMU53EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDGxZC1Nw%7CCgwIo76qjQYQuIu95wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1638571811,
+            "review_datetime_utc": "12/03/2021 22:50:11",
+            "review_text": "Excellent service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNHeXFXYmNBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHeXFXYmNBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICGyqWbcA%7CCgwIz6HdiwYQuLyFkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1635209423,
+            "review_datetime_utc": "10/26/2021 00:50:23",
+            "review_text": "Stopped in for a drink between my daughter's basketball championship wins.  Service quick and efficient.  Nice to be able sit outside."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJeXM2eENBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJeXM2eENBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDIys6xCA%7CCgsIovmcigYQ6NPpGg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1632058530,
+            "review_datetime_utc": "09/19/2021 13:35:30",
+            "review_text": "It's a Sunday routine - visit Starbucks, order coffee and a sandwich and then sit outside and read the newspaper. Staff is friendly and helpful. Barista's are fast and make excellent drinks. For those looking for a drive through, try Waverly; otherwise this is a great place to sit down and relax with a coffee. Enjoy!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM2ODVfT0d3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2ODVfT0d3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC685_OGw%7CCgsImbP5iQYQ6OaEfw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1631476121,
+            "review_datetime_utc": "09/12/2021 19:48:41",
+            "review_text": "I came in this location to pick up my order and was not greeted or spoken to ONCE. Meanwhile, other customers around me were greeted and thanked. Not sure what that was about but it doesn't feel good to patronize a business only to be treated that way."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURhMkxHQUdREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhMkxHQUdREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDa2LGAGQ%7CCgwI0-vfiAYQkMnRpQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1628960211,
+            "review_datetime_utc": "08/14/2021 16:56:51",
+            "review_text": "Love this Starbucks that is tucked in the corner of the Promenade. Great baristas that nail the order.  Nice interior environment with a couple of tables outside in a shaded area."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURxeHFEZC1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxeHFEZC1BRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDqxqDd-AE%7CCgwIqt-ShwYQoPuulQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1625599914,
+            "review_datetime_utc": "07/06/2021 19:31:54",
+            "review_text": "Great service!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNxdGZuTVBnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxdGZuTVBnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICqtfnMPg%7CCgwI-oidhgYQyO6HzQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1623671930,
+            "review_datetime_utc": "06/14/2021 11:58:50",
+            "review_text": "cuceonhaeyong~  jeodo cuceonbada masyeobon soltideukyaramel keurim koldeubeuru.. "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLbHAzQ0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLbHAzQ0dBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDKlp3CGA%7CCgwIw_TlhAYQyKPjhwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1620671043,
+            "review_datetime_utc": "05/10/2021 18:24:03",
+            "review_text": "Ordered on app which sent it to this location I was unaware of. They remade what was ordered and fixed everything without any issue. Would recommend."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURLMUlQOGVnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLMUlQOGVnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDK1IP8eg%7CCgwIudu1hAYQiOPiowM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1619881401,
+            "review_datetime_utc": "05/01/2021 15:03:21",
+            "review_text": "Good place.  Always busy.  Crew is very efficient and customer focussed"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNLOHNPUkhnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLOHNPUkhnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICK8sORHg%7CCgwI1-eTgwYQ8P_MqwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1617228759,
+            "review_datetime_utc": "03/31/2021 22:12:39",
+            "review_text": "Barista suggested the Salted Caramel Mocha with oatmilk. It was delicious."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR5aGVXWmJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5aGVXWmJ3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDyheWZbw%7CCgwI8sGzggYQyMjA1wI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1615651058,
+            "review_datetime_utc": "03/13/2021 15:57:38",
+            "review_text": "The gentleman making the drinks was absolutely hustling and doing GREAT. As for the cashier, however, she got every single thing in our order absolutely wrong, down the the name lmao. I'd just drive a few minutes to the next one up the road."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN5cnVQZGRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5cnVQZGRBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICyruPddA%7CCgsIuuLXgAYQqKiFVQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1612050746,
+            "review_datetime_utc": "01/30/2021 23:52:26",
+            "review_text": "Most people are ordering online through so and just picking up\nBest way,  do that during busy times. They are filling online orders before w lkins."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN5LU0yQ3VnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5LU0yQ3VnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICy-M2CugE%7CCgsI9LGbgAYQuPP2Bg%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1611061492,
+            "review_datetime_utc": "01/19/2021 13:04:52",
+            "review_text": "Friendly staff"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURTcDVHUjJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURTcDVHUjJRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDSp5GR2QE%7CCgwImsrz_wUQuO7U_gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1610409242,
+            "review_datetime_utc": "01/11/2021 23:54:02",
+            "review_text": "Quickly made drinks that are delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNTaUk2UERREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNTaUk2UERREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICSiI6PDQ%7CCgsI7YrZ_gUQ8J7PHw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1607877997,
+            "review_datetime_utc": "12/13/2020 16:46:37",
+            "review_text": "Great spot to hang after a ride."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpdkk3S2t3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpdkk3S2t3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDivI7KkwE%7CCgwI3oKL_gUQgM7BrwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606599006,
+            "review_datetime_utc": "11/28/2020 21:30:06",
+            "review_text": "Friendly staff; however, uptight customers..."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURpLVBTd3NBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpLVBTd3NBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDi-PSwsAE%7CCgwIvbv1_QUQsOz5tgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1606245821,
+            "review_datetime_utc": "11/24/2020 19:23:41",
+            "review_text": "Quick, friendly service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNpdGYtNklREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpdGYtNklREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICitf-6IQ%7CCgwI96uq_QUQqOvJowI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1605015031,
+            "review_datetime_utc": "11/10/2020 13:30:31",
+            "review_text": "Quick and courteous service"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNpa2YzZl93RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpa2YzZl93RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICikf3f_wE%7CCgwI45qS_QUQiO2hhgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1604619619,
+            "review_datetime_utc": "11/05/2020 23:40:19",
+            "review_text": "IG @jackrockdiesel"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURDaTZ2ZU9REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDaTZ2ZU9REAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDCi6veOQ%7CCgwItOeM_AUQoJmumAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1602433972,
+            "review_datetime_utc": "10/11/2020 16:32:52",
+            "review_text": "Very polite staff, very friendly, and I love the staff connection with each other to help one another."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDblo2cGxnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDblo2cGxnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDCnZ6plgE%7CCgwI-_f3-wUQ0LztpAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1602092027,
+            "review_datetime_utc": "10/07/2020 17:33:47",
+            "review_text": "Easily one of the best Starbucks I've ever gone to. Even if I'm closer to a different location, I always go out of my way to come here instead."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDdXRINW9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDdXRINW9RRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDCutH5oQE%7CCgwIgrOu-wUQ-OOx9gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1600887170,
+            "review_datetime_utc": "09/23/2020 18:52:50",
+            "review_text": "Fast drive through. Friendly staff. Delicious products."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDa3V2UjBBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDa3V2UjBBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDCkuvR0AE%7CCgwIwpqe-wUQoOOK_QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1600621890,
+            "review_datetime_utc": "09/20/2020 17:11:30",
+            "review_text": "Gave me a great idea on customizing a drink I get."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURDM09xYm9RRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDM09xYm9RRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDC3OqboQE%7CCgsI6uSS-wUQgMnqGg%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1600434794,
+            "review_datetime_utc": "09/18/2020 13:13:14",
+            "review_text": "Starbucks is not what it used to be....."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRbU5YbnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRbU5YbnRRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDQmNXntQE%7CCgwIq7uW-gUQsO2z5gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1598397867,
+            "review_datetime_utc": "08/25/2020 23:24:27",
+            "review_text": "Drinks are always made correctly at The Promenade Starbucks. Some are custom & Waverly Starbucks can't get them right so I appreciate the baristas there. They do a great job!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNDcU1qUWJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDcU1qUWJ3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICCqMjQbw%7CCgwI-92_-QUQ0Mr-hAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1596976891,
+            "review_datetime_utc": "08/09/2020 12:41:31",
+            "review_text": "nicest person we had at the drive thru!! Her name was Rachel I think! She was very happy and energetic and made our morning!! Even at 8:35 In the morning!! She was very kind."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4emVMUHJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4emVMUHJBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID8zeLPrAE%7CCgwI89bt-AUQ4Ou5nQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595632499,
+            "review_datetime_utc": "07/24/2020 23:14:59",
+            "review_text": "I'm not a fancy guy. I get a black coffee/ cold brew. I don't experience any long waits and the staff is very courteous. Location is great too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4emFTYkxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4emFTYkxREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID8zaSbLQ%7CCgwI0bHt-AUQuOzfwAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595627729,
+            "review_datetime_utc": "07/24/2020 21:55:29",
+            "review_text": "Hate starbucks as a company and almost everyone i have been to has been the same old song.  But this particular location.  Hats off to the way a place should be run.  They have that chic-fila type service down."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQ4amMydTl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4amMydTl3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID8jc2u9wE%7CCgwI9NXs-AUQqL_UvQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1595615988,
+            "review_datetime_utc": "07/24/2020 18:39:48",
+            "review_text": "Rude and ignorant staff"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQ4aGIzRUNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4aGIzRUNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID8hb3ECQ%7CCgwI5LDf-AUQyI-8uAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1595398244,
+            "review_datetime_utc": "07/22/2020 06:10:44",
+            "review_text": "I always hated the idea of becoming one of those Milennials who goes to Starbucks every lunch break but honestly, I order here often enough at this point to say this place and the people working there are the bright part of most of my work days."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM4MEtPX2FBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4MEtPX2FBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC80KO_aA%7CCgsI__W99wUQuICtOQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1592752895,
+            "review_datetime_utc": "06/21/2020 15:21:35",
+            "review_text": "I liked the drinks however I ordered a decently heavy recipe drink, a sugar free iced vanilla coffee, double blended, with heavy cream, as a vented and they absolutely murdered it. The ice wasn't broken up and was all in one frozen clump at the bottom of the cup and it was watery the moment they handed it to me. So if you want a good drink, I recommend being simple and ordering from the menu and making one change at most. I am on a kept diet, which is why I ordered what I did, I was In need of a non homemade coffee but this just made my bad day worse."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURzaGM3QkZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURzaGM3QkZBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDshc7BFA%7CCgwIm-OZ8wUQ2LGj4QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1583772059,
+            "review_datetime_utc": "03/09/2020 16:40:59",
+            "review_text": "Great location. Nice working space. Clean. Feels new. Friendly staff. Made drinks correctly."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNzMmQ2M3VnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMmQ2M3VnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICs2d63ugE%7CCgwI_v_18QUQ-OGbwwI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1581088766,
+            "review_datetime_utc": "02/07/2020 15:19:26",
+            "review_text": "Good service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNzc0xHZVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzc0xHZVRBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICssLGeTA%7CCgwIwbiR8QUQuKTCqAI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1579441217,
+            "review_datetime_utc": "01/19/2020 13:40:17",
+            "review_text": "The staff is amazing and they won't let you leave until your drink is exactly the way you like it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURNaTRETi1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNaTRETi1nRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDMi4DN-gE%7CCgwIhuvo8AUQgIPXswE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1578775942,
+            "review_datetime_utc": "01/11/2020 20:52:22",
+            "review_text": "Yum. Nice staff, good drinks, casual atmosphere."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNbXZPcUxREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNbXZPcUxREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDMmvOqLQ%7CCgwIm5qV8AUQ6K_cwwM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1577405723,
+            "review_datetime_utc": "12/27/2019 00:15:23",
+            "review_text": "Waited 20 minutes for a chai tea before I finally gave up.  Being from Seattle, I was quite disappointed with the service (or lack of) as at home, this just never happens.  Added a half hour to our road trip "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURNbUkzLU5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURNbUkzLU5REAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDMmI3-NQ%7CCgsIqMPZ7wUQsMPnDA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1576427944,
+            "review_datetime_utc": "12/15/2019 16:39:04",
+            "review_text": "Everyone is always so nice at this starbucks...."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNNM2Y2SGNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNM2Y2SGNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICM3f6HcQ%7CCgwIqrqQ7wUQ0M_pwgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1575230762,
+            "review_datetime_utc": "12/01/2019 20:06:02",
+            "review_text": "Friendly staff, but the service is still quick. They get to know your regular orders."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQwNUxhR1VnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwNUxhR1VnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgID05LaGUg%7CCgwIrJzC7QUQ2IKCjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1571851820,
+            "review_datetime_utc": "10/23/2019 17:30:20",
+            "review_text": "Good coffee and comfortable couch and chairs to enjoy it. Friendly staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUMwOWZmaXNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwOWZmaXNnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC09ffisgE%7CCgsIscrk7AUQ-MfmJQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1570317617,
+            "review_datetime_utc": "10/05/2019 23:20:17",
+            "review_text": "Lively"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNVMTdEVDhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVMTdEVDhBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICU17DT8AE%7CCgwI5vGs6gUQgM_8tAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1565210854,
+            "review_datetime_utc": "08/07/2019 20:47:34",
+            "review_text": "Loved it"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnOWZDeHdBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnOWZDeHdBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICg9fCxwAE%7CCgsIlubu6AUQ0PWmZQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1562096406,
+            "review_datetime_utc": "07/02/2019 19:40:06",
+            "review_text": "Still has older coffee shop feel that many of the Starbucks have moved away from."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURrdm9tUVRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURrdm9tUVRREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDkvomQTQ%7CCgwI45zP6AUQ2IXBzgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1561579107,
+            "review_datetime_utc": "06/26/2019 19:58:27",
+            "review_text": "I wish I could give ten stars!! I've gone to almost every Starbucks in Charlotte and this one far surpasses all the others. The staff is always friendly; the drinks are always PERFECT and always taste thick and delicious; the bathrooms are always clean; it's our favorite Starbucks! Thank you so much for your hard work."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURFNF9TU3pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURFNF9TU3pRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDE4_SSzQE%7CCgwIvaWu6AUQgIn3-wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1561039549,
+            "review_datetime_utc": "06/20/2019 14:05:49",
+            "review_text": "Pumpkin bread and coffee a must"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUM0MmR1SThRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0MmR1SThRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC42duI8QE%7CCgwIrqL15wUQ0NXtwAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1560105262,
+            "review_datetime_utc": "06/09/2019 18:34:22",
+            "review_text": "Staff was super sweet to my puppy! And my puppy loved his pupchino"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0aE1IWGN3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0aE1IWGN3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC4hMHXcw%7CCgwI5fHO5wUQkJX-gwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559476453,
+            "review_datetime_utc": "06/02/2019 11:54:13",
+            "review_text": "I'm a regular here, and also check out coffee shops wherever I travel; this Starbucks has a high volume of customers, and great staff, who keep up with a lot.  Usually, I stick with the independents, so taking time to write a review is my way of saying thanks.  They keep the coffee fresh and hot, always courteous and real, I can get a half-calf without waiting for a pour-over. Life is good.  Thanks yall"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0OEpPTmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0OEpPTmNnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC48JONcg%7CCgsIx4bC5wUQkNe-FA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1559266119,
+            "review_datetime_utc": "05/31/2019 01:28:39",
+            "review_text": "This Starbucks location fails!  I go to this location from time to time.  It is not what I consider my home Starbucks by any means.  With that being said the issues I have with this location is for one to park here is extremely difficult. There is never enough parking and most times you have to park in front of a completely different building just to get coffee here.  Then as you walk a distance to get to the front you see that there is consistently someone that thinks they don't have to follow the rules or the law and they park in front of the door in the middle of the roundabout by the front entrance.  And for whatever reason every time I have been to this location the staff here seem disgruntled and very unhappy. Today the barista Diane Cracked a smile or two with the person in front of me but as soon as I get up to her she gives me this look of \"what do you want\".  It was about 11:15 AM and she was the only one working behind the counter, is there a staffing issue?  Also this location never seems to be as clean and tidy as the other locations I frequent. And when I say frequent I go to Starbucks many times twice a day. Whoever manages this location needs to get it together!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUM0NFBlQlNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM0NFBlQlNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIC44PeBSQ%7CCgwIq7i_5wUQ2OSpgAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1559223339,
+            "review_datetime_utc": "05/30/2019 13:35:39",
+            "review_text": "My favorite place on the world for coffee. Their mango dragonfruit lemonade is the absolute best drink ever!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZLS1uSDBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZLS1uSDBnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDY--nH0gE%7CCgwIjcKh5wUQ2L3lmgM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1558733069,
+            "review_datetime_utc": "05/24/2019 21:24:29",
+            "review_text": "They were out of some drinks. An unfortunate haven for loud,obnoxious middle schoolers on Fridays."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURZaHUzODhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZaHUzODhnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDYhu388gE%7CCgsI2pfS5gUQ6IyIXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1557433306,
+            "review_datetime_utc": "05/09/2019 20:21:46",
+            "review_text": "Ordered from outside and when I walked in a few minutes later the barista was already making my frappuccino"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURZeUthQlVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZeUthQlVBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDYyKaBUA%7CCgwIroGS5gUQ-PKJ1QI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1556381870,
+            "review_datetime_utc": "04/27/2019 16:17:50",
+            "review_text": "One of the best Starbuck's in town"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNZNDdPeUpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNZNDdPeUpnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICY47OyJg%7CCgsI7IDi5QUQ2MvqBA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1555595372,
+            "review_datetime_utc": "04/18/2019 13:49:32",
+            "review_text": "THE VERY BEST...morning-noon-or night!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNvMzVfQy1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNvMzVfQy1nRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICo35_C-gE%7CCgwI-caB5AUQtPvm8QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1551917945,
+            "review_datetime_utc": "03/07/2019 00:19:05",
+            "review_text": "Great service, coffee good, as always!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURJOF9TTDhRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURJOF9TTDhRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDI8_SL8QE%7CCgwIsruT4gUQiICQ3AE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1548017074,
+            "review_datetime_utc": "01/20/2019 20:44:34",
+            "review_text": "Delicious. My Chicken and Double Smoked Bacon sandwich was hot and tasty. My iced mocha was a wonderful finish to my lunch."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURJbWN5ZWJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJbWN5ZWJREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDImcyebQ%7CCgwIlYbj4QUQlqDLlQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1547223829,
+            "review_datetime_utc": "01/11/2019 16:23:49",
+            "review_text": "The staff did a great job on getting our coffees ready quickly. Just wish they had a drive-thru at this location"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJNlp6WURnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJNlp6WURnEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICI6ZzYDg%7CCgwI9dHi3wUQ0IGy2gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1543022837,
+            "review_datetime_utc": "11/24/2018 01:27:17",
+            "review_text": "Friendly baristas. Busy place tho so it may be hard to find a seat."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNJbnRId05REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNJbnRId05REAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICIntHwNQ%7CCgwI_fq83wUQ5OLCtAM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1542405501,
+            "review_datetime_utc": "11/16/2018 21:58:21",
+            "review_text": "It's way too cold in here . Every time I come in here I'm freezing ."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3MEphWjRBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3MEphWjRBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDw0JaZ4AE%7CCgwI6eut3gUQ6-i9pgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1540060649,
+            "review_datetime_utc": "10/20/2018 18:37:29",
+            "review_text": "Very good location."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR3dHF2cXdRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3dHF2cXdRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDwtqvqwQE%7CCgsIs_z93QUQqOnaaQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1539276339,
+            "review_datetime_utc": "10/11/2018 16:45:39",
+            "review_text": "Caramel macchiato was delicious"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cVptdmp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cVptdmp3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICwqZmvjwE%7CCgsIztvB2wUQgJvuAg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1534094798,
+            "review_datetime_utc": "08/12/2018 17:26:38",
+            "review_text": "I also work in the promenade at The Local Scoop and I went in to this Starbucks on Sunday before church. When the girl took my order she was so sweet and said \"you have gorgeous freckles by the way\" and I've been thinking about that comment all day. I am very touched and that compliment has made me feel wonderful about myself. I couldn't see a name tag or anything but she was so sweet and I hope she's doing great :) also, my strawberry acai refresher was made perfectly."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMV9URFNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMV9URFNREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDg1_TDSQ%7CCgsI3YSX2wUQwLP7cQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1533395549,
+            "review_datetime_utc": "08/04/2018 15:12:29",
+            "review_text": "Typical Starbucks. Nothing you won't find in another SB anywhere else. Good service. Adequate, serviceable, but not exceptional coffee. Good if you're in a pinch and can't make a better cup at home."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNneEp2b0p3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNneEp2b0p3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICgxJvoJw%7CCgwI4fTE2gUQwJWVwAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1532050017,
+            "review_datetime_utc": "07/20/2018 01:26:57",
+            "review_text": "Like every other Starbucks, nice,clean and enjoyable."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3cEtuVzZ3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3cEtuVzZ3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICwpKnW6wE%7CCgwIn5zw2QUQgN3OrAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1530662431,
+            "review_datetime_utc": "07/04/2018 00:00:31",
+            "review_text": "The different frappes and ice tea are great.  The place offers indoor & outdoor eating or drinking and is very cozy for lap tops & small meetings.  Fast service & friendly"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMkpib1JREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMkpib1JREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICQ2JboRQ%7CCgwIz8Dt2QUQgOnJ1gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1530617935,
+            "review_datetime_utc": "07/03/2018 11:38:55",
+            "review_text": "Love the people who work here"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3MU92Q3ZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3MU92Q3ZBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICw1OvCvAE%7CCgwI84_w1gUQwLSyogI%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1524369395,
+            "review_datetime_utc": "04/22/2018 03:56:35",
+            "review_text": "Always good!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnZzh1UGV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnZzh1UGV3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDgg8uPew%7CCgsIpdTn1gUQwI23AQ%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1524230693,
+            "review_datetime_utc": "04/20/2018 13:24:53",
+            "review_text": "Good location no drive thru. Coffee and snacks."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN3dF9xOHV3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3dF9xOHV3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICwt_q8uwE%7CCgwIyIqr1AUQwM3NsgI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1519043912,
+            "review_datetime_utc": "02/19/2018 12:38:32",
+            "review_text": "Slowest service around. Especially early in the morning. Half of the staff is eating and sitting around while there's one person making drinks for a line of people."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURnMWZfS1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURnMWZfS1F3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDg1f_KQw%7CCgwIsoSN1AUQgKiy0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1518551602,
+            "review_datetime_utc": "02/13/2018 19:53:22",
+            "review_text": "Good coffee. What's not to like?"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBbU5yWmFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBbU5yWmFBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDAmNrZaA%7CCgwIutyf0gUQwNnI3AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1514663482,
+            "review_datetime_utc": "12/30/2017 19:51:22",
+            "review_text": "I'm a weekend regular and also a Gold  rewards card holder. The staff at this location is friendly. Try the mobile app for current offers/deals."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBcWRyWkJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBcWRyWkJ3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICAqdrZBw%7CCgsI8-Gy0AUQgIXUGw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1510781171,
+            "review_datetime_utc": "11/15/2017 21:26:11",
+            "review_text": "Soy vanilla latte with extra shot taste like water for the price $5.00 small, you steal money."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNnZ2FtUmpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnZ2FtUmpnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICggamRjgE%7CCgwI1MfnzwUQgLSkgQM%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1509549012,
+            "review_datetime_utc": "11/01/2017 15:10:12",
+            "review_text": "Usually i don't write a review, but this Star Bucks cannot make good coffee. For the amount of Money you have to Spend you will think, you will get your money worth. This hasnt happen the 1st-2nd-3rd time several and yet i still tried to give it a chance, due the convidence of this place. Hopefully they can fix this issue but the coffee taste horrible i am better off getting coffee from the gas station ."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRMnNMZE1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRMnNMZE1BEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICQ2sLdMA%7CCgwIoMnozgUQwNPGigI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1507468448,
+            "review_datetime_utc": "10/08/2017 13:14:08",
+            "review_text": "Good shop. Very convenient"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBeXUySkd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBeXUySkd3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICAyu2JGw%7CCgwIopWTzQUQgI7pigM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1503972002,
+            "review_datetime_utc": "08/29/2017 02:00:02",
+            "review_text": "I was wrong. A+"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBNEp1ZklREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNEp1ZklREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICA4JufIQ%7CCgwIvNGNzQUQwI3J9QE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1503881404,
+            "review_datetime_utc": "08/28/2017 00:50:04",
+            "review_text": "Typical Starbucks.  Good coffee, long lines and slow baristas.  Staff aren't overly friendly at this location, and there is minimal seating compared to surrounding locations.  They do have some outdoor tables but no drive through."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURndEt6YW5nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURndEt6YW5nRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDgtKzangE%7CCgwI05j3ywUQgO6d8gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1501416531,
+            "review_datetime_utc": "07/30/2017 12:08:51",
+            "review_text": "Not a pleasant experience.  Bad attitudes on the cash register side of the table."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBdnFXT3J3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBdnFXT3J3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICAvqWOrwE%7CCgwIpLzpygUQgLnmqAE%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1499094564,
+            "review_datetime_utc": "07/03/2017 15:09:24",
+            "review_text": "Always busy. Mostly clean. Have doggie water bowls."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBaE5yY0tBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaE5yY0tBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICAhNrcKA%7CCgwI6YTmygUQwP7VnAI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1499038313,
+            "review_datetime_utc": "07/02/2017 23:31:53",
+            "review_text": "Long wait times and inaccurate orders are what I've consistently experienced at this location.   Review update:  Visited again 3 months later...ordered two items and neither were prepared correctly.  This location also seems to be always cleaning or restocking while in operation, but to the detriment of customer service.  Mopping the floors two hours before closing...pulling all the food items from the glass case hours before closing...are just two examples I've seen often.  Half the staff will be cleaning or preparing to close hours before they  actually do leaving one person to run the register and prepare drinks."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNFpPOWFBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNFpPOWFBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA4ZO9aA%7CCgwI_oPmygUQwMTKtwE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1499038206,
+            "review_datetime_utc": "07/02/2017 23:30:06",
+            "review_text": "This Starbucks NEVER makes anything right, and I'm not over exaggerating that!  Every time I go here they always mess up how they make my drink. If your looking to go down to a Starbucks and get a drink or just hand out then DON'T go here. This place need employees who actually know how to do there job!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNBbWJiSzNnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBbWJiSzNnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICAmbbK3gE%7CCgwIrMmsygUQwIL8gQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1498096812,
+            "review_datetime_utc": "06/22/2017 02:00:12",
+            "review_text": "Good place to meet."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNBcFB5aEh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBcFB5aEh3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICApPyhHw%7CCgwImIvHxQUQgPPokwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1488045464,
+            "review_datetime_utc": "02/25/2017 17:57:44",
+            "review_text": "What can I say, the love of my life works here Vanilla bean damn great But she is much better"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURRbmFEREV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbmFEREV3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDQnaDDEw%7CCgwIg5rGxQUQwK2CmgE%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1488030979,
+            "review_datetime_utc": "02/25/2017 13:56:19",
+            "review_text": "I know Saturday mornings can be busy but there's no reason for the cashier to be rude. Don't work in a stressful environment if you can't handle it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBenNTRzd3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBenNTRzd3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDAzsSG7wE%7CCgwI99GxwwUQwOnp6wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1483499767,
+            "review_datetime_utc": "01/04/2017 03:16:07",
+            "review_text": "I'm a regular , it's a great location and staff is wonderful. The store can get super busy but they work fast and get the job done. No complaints."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBODhEY0pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBODhEY0pREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA88DcJQ%7CCgsIo7WlwwUQwKKsLA%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1483299491,
+            "review_datetime_utc": "01/01/2017 19:38:11",
+            "review_text": "It's run by children who can't manage their orders nor act professionally. I submitted a mobile order. Drink came 8 minutes later (which is fine) but ~5 minutes after I checked to see if my pastry was \"in line\" or not (I quickly explained I'd sumbitted a mobile over 12 mins ago). I was told it was, but the barista didn't check nor did she ask any other person to check (which would have taken minimal effort from her). Finally, 22 minutes after my order was submitted, a guy behind the counter calls my name and tells me \"I just found this sitting here. We're out of croissants now. What else can I get you?\". I explain that I ordered it 20some minutes ago and asked for someone to check, and he brushed me off. I was made late for an apt but being a little extra late to write this is worth it, so hopefully other customers are warned and their regional manager can get involved."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBX2FMTWh3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBX2FMTWh3RRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA_aLMhwE%7CCgwIgeGkwwUQwNf16QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1483288705,
+            "review_datetime_utc": "01/01/2017 16:38:25",
+            "review_text": "Great location with friendly employees. I only stop in here once a month but it is always a great experience. Micah rocks!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURna2NXMVd3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURna2NXMVd3EAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDgkcW1Ww%7CCgwIqvD1wgUQgJiIyAI%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1482520618,
+            "review_datetime_utc": "12/23/2016 19:16:58",
+            "review_text": "Awful wait times, really inexperienced, poorly trained staff with awful customer service when under any kind of pressure. I really hope this location gets some attention soon, it used to be much better."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN3eHFfQU9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3eHFfQU9BEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICwxq_AOA%7CCgwI9pedwgUQwK_ehgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1481067510,
+            "review_datetime_utc": "12/06/2016 23:38:30",
+            "review_text": "It's got all the regular items you want to pay $4 for."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnZzdib3VRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnZzdib3VRRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDgg7bouQE%7CCgwIifqtwQUQgN6O1wM%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1479245065,
+            "review_datetime_utc": "11/15/2016 21:24:25",
+            "review_text": "Extremely slow on 11-15-16 at 4:15pm. Need to hire more experienced help. Terribly slow!!!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNRNTlDSm9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRNTlDSm9BRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICQ59CJoAE%7CCgwI4qPPwAUQwMv6vwI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1477693922,
+            "review_datetime_utc": "10/28/2016 22:32:02",
+            "review_text": "Your typical Starbucks. Most staff is very kind but today I had an encounter with a rude employee, to put it short, I will not be going here anymore."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURnbUxDcDlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnbUxDcDlnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDgmLCp9gE%7CCgwI7PP9vwUQwP2w4AI%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1476360684,
+            "review_datetime_utc": "10/13/2016 12:11:24",
+            "review_text": "The staff are always nice, but the wait time for this location is ridiculous. After spending almost 20 minutes in line this morning, I'm considering another store."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBNjlPWHZBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNjlPWHZBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA69OXvAE%7CCgsIwNPYvgUQwICXGw%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1473653184,
+            "review_datetime_utc": "09/12/2016 04:06:24",
+            "review_text": "Twenty minutes to get a latte.  One guy making coffee while manager and register girl chat it up on phone and high five with friends."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBeTdTS2hBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBeTdTS2hBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDAy7SKhAE%7CCgwIzLDFuQUQwNm_4gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1462851660,
+            "review_datetime_utc": "05/10/2016 03:41:00",
+            "review_text": "Great location, just inside I485 at Providence Road (exit 57) in south Charlotte NC.  In Promenade on Providence, you'll also find Staples, Home Depot, and The Fresh Market (whose meat counter features completely antibiotic-free selections).  Ask for your coffee in a ceramic mug and enjoy!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURBNy1Db1ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBNy1Db1ZREAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA7-CoVQ%7CCgwI-K3KuAUQwKeSvAI%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1460836088,
+            "review_datetime_utc": "04/16/2016 19:48:08",
+            "review_text": "Just make sure to park your car (illegally, next to the no parking sign) right outside because you're better than everyone else and entitled to do whatever you want because you drive a 3-series. Starbucks is comically overpriced, and most of the seats are taken up by hipsters who finished their drinks hours ago and are there leaching Internet. There's almost never anyplace to sit! I try to avoid this place if at all possible."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNRLWRiSFZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRLWRiSFZBEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICQ-dbHVA%7CCgwIuqr8tgUQgMq17gE%7C?hl=en",
+            "review_rating": 3,
+            "review_timestamp": 1457460538,
+            "review_datetime_utc": "03/08/2016 18:08:58",
+            "review_text": "A little cramped but i have no problems with this starbucks."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNnbUtlLU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNnbUtlLU1BEAE!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgICgmKe-MA%7CCgsI3J76tQUQwLGofw%7C?hl=en",
+            "review_rating": 4,
+            "review_timestamp": 1455329116,
+            "review_datetime_utc": "02/13/2016 02:05:16",
+            "review_text": "good business meeting place\n\nbut too expensive"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURRaF9HTm9nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRaF9HTm9nRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDQh_GNogE%7CCgsI4-jftAUQwNrbJA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1452799075,
+            "review_datetime_utc": "01/14/2016 19:17:55",
+            "review_text": "I like Starbucks new rewards app."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBNnFMVGxBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNnFMVGxBRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDA6qLTlAE%7CCgwI_q6JrwUQgNanngE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1440896894,
+            "review_datetime_utc": "08/30/2015 01:08:14",
+            "review_text": "Come here multiple times a week and always have had a great experience. Seats are comfy, its in a great area, and the baristas always make my drink fast and right."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURBajdfS2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBajdfS2hnRRAB!2m1!1s0x0:0xa50cf15b4c8b78e3!3m1!1s2@1:CIHM0ogKEICAgIDAj7_KhgE%7CCgsIw66J_AQQuNj8Bw%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1333942083,
+            "review_datetime_utc": "04/09/2012 03:28:03",
+            "review_text": "People park illegally in the circle in front of this place creating traffic problems, and when I've been there the service seems slow, which just piles up more cars blocking the road - bad location"
+        }
+    ]
+}
