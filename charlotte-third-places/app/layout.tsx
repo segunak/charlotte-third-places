@@ -72,7 +72,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
-      <GoogleTagManager gtmId="G-CDFREVMH8F" />
+      <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
         className={cn(
           "min-h-dvh bg-background font-sans antialiased",
