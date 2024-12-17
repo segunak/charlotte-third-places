@@ -156,7 +156,7 @@ def get_outscraper_data_for_place(activityInput):
     final_json_data = json.dumps(structured_outscraper_data, indent=4)
     logging.info(f"Attempting to save reviews to GitHub at path {full_file_path}")
 
-    save_succeeded = helpers.save_json_to_github(final_json_data, full_file_path)
+    save_succeeded = helpers.save_reviews_github(final_json_data, full_file_path)
 
     if save_succeeded:
         if airtable_record:

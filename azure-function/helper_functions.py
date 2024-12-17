@@ -130,7 +130,7 @@ def save_reviews_azure(json_data, review_file_name):
         logging.exception(e)
 
 
-def save_json_to_github(json_data, full_file_path):
+def save_reviews_github(json_data, full_file_path):
     """ Saves the given JSON data to the specified file path in the GitHub repository.
 
     full_file_path should include the folder and file name, no leading slash. For example
@@ -157,7 +157,7 @@ def save_json_to_github(json_data, full_file_path):
         # Construct the data for the PUT request to create/update the file
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
         url_put = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}"
-        commit_message = "Saving JSON file via save_json_to_github utility function"
+        commit_message = "Saving JSON file via save_reviews_github utility function"
         data = {
             "message": commit_message,
             "content": base64.b64encode(json_data.encode()).decode(),
