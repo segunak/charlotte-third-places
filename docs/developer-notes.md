@@ -22,7 +22,12 @@ A PlaceCard component where you pass in the Airtable record Id, and with that, i
 
 ## Colors
 
-Light color for personal website is #0092ca and the dark color is #f21368
+* Light Color
+  * Hex: #0092ca
+  * HSL: hsl(197, 100%, 39.6%)
+* Dark Color
+  * Hex: #f21368
+  * HSL: hsl(337, 90%, 51%)
 
 Background: 197 100% 97%
 Hex Code: #f5fbff

@@ -27,7 +27,7 @@
 	--ag-side-panel-border: var(--ag-inherited-side-panel-border, solid 1px var(--ag-border-color));
 	--ag-font-family: var(--ag-inherited-font-family, 'IBM Plex Sans');
 	--ag-chrome-background-color: var(--ag-inherited-chrome-background-color, color-mix(in srgb, transparent, var(--ag-foreground-color) 2%));
-	--ag-header-background-color: var(--ag-inherited-header-background-color, #0092CA);
+	--ag-header-background-color: var(--ag-inherited-header-background-color);
 	--ag-header-font-family: var(--ag-inherited-header-font-family, var(--ag-font-family));
 	--ag-header-font-weight: var(--ag-inherited-header-font-weight, 700);
 	--ag-header-font-size: var(--ag-inherited-header-font-size, 14px);
