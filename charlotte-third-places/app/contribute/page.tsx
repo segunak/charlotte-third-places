@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 
 export default function ContributePage() {
     return (
-        <div className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
-            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
+        <div className="px-4 sm:px-20 py-8 mx-auto space-y-6 sm:border rounded-xl max-w-full sm:max-w-5xl">
+            <h1 className="text-3xl font-bold leading-tight text-center border-b pb-3">
                 Contribute
             </h1>
             <p>
@@ -20,7 +20,7 @@ export default function ContributePage() {
             </p>
             <div className="space-y-6">
                 { /* Suggest a New Place Form*/}
-                <Card className="border border-gray-300 shadow-sm">
+                <Card className="border shadow-sm">
                     <CardHeader>
                         <div className="flex justify-center">
                             <Icons.mapLocationDot className="h-12 w-12 text-primary" />
@@ -40,7 +40,7 @@ export default function ContributePage() {
                 </Card>
 
                 { /* Suggest Enhancements to a Place Form*/}
-                <Card className="border border-gray-300 shadow-sm">
+                <Card className="border shadow-sm">
                     <CardHeader>
                         <div className="flex justify-center">
                             <Icons.editMarker className="h-14 w-14 text-primary" />
@@ -60,7 +60,7 @@ export default function ContributePage() {
                 </Card>
 
                 { /* Contact Site Creator Form*/}
-                <Card className="border border-gray-300 shadow-sm">
+                <Card className="border shadow-sm">
                     <CardHeader>
                         <div className="flex justify-center">
                             <Icons.comment className="h-12 w-12 text-primary" />

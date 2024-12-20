@@ -97,15 +97,40 @@ def save_reviews_locally(airtable_place_name: str, reviews_output: dict):
 
 
 def save_reviews_azure(json_data, review_file_name):
-    datalake_connection_string = os.environ['AzureWebJobsStorage']
-    datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
-    file_system_client = datalake_service_client.get_file_system_client(file_system="data")
-    directory_client = file_system_client.get_directory_client("reviews")
-    file_client = directory_client.get_file_client(review_file_name)
-    file_client.upload_data(data=json_data, overwrite=True)
+    """
+    Save review data as a JSON file to Azure Data Lake Storage.
+
+    This function connects to Azure Data Lake Storage using the connection string 
+    from the environment variable 'AzureWebJobsStorage'. It uploads the provided 
+    JSON data into a file under the 'reviews' directory in the 'data' filesystem.
+
+    Args:
+        json_data (str): JSON-formatted string containing the review data.
+        review_file_name (str): The name of the file to save in the 'reviews' directory.
+    """
+    try:
+        # Retrieve the Azure Data Lake connection string
+        datalake_connection_string = os.environ['AzureWebJobsStorage']
+        logging.info("Retrieved Azure Data Lake connection string.")
+
+        # Initialize the Data Lake Service Client
+        datalake_service_client = DataLakeServiceClient.from_connection_string(datalake_connection_string)
+        logging.info("Initialized DataLakeServiceClient.")
+
+        # Get the file system and directory clients
+        file_system_client = datalake_service_client.get_file_system_client(file_system="data")
+        directory_client = file_system_client.get_directory_client("reviews")
+
+        # Get the file client and upload data
+        file_client = directory_client.get_file_client(review_file_name)
+        file_client.upload_data(data=json_data, overwrite=True)
+        logging.info(f"Successfully uploaded {review_file_name} to Azure Data Lake.")
+    except Exception as e:
+        logging.error(f"An unexpected error occurred while saving '{review_file_name}'.")
+        logging.exception(e)
 
 
-def save_json_to_github(json_data, full_file_path):
+def save_reviews_github(json_data, full_file_path):
     """ Saves the given JSON data to the specified file path in the GitHub repository.
 
     full_file_path should include the folder and file name, no leading slash. For example
@@ -132,7 +157,7 @@ def save_json_to_github(json_data, full_file_path):
         # Construct the data for the PUT request to create/update the file
         # Reference https://docs.github.com/en/rest/repos/contents?apiVersion=2022-11-28#create-or-update-file-contents
         url_put = f"https://api.github.com/repos/{repo_name}/contents/{full_file_path}"
-        commit_message = "Saving JSON file via save_json_to_github utility function"
+        commit_message = "Saving JSON file via save_reviews_github utility function"
         data = {
             "message": commit_message,
             "content": base64.b64encode(json_data.encode()).decode(),

@@ -12,15 +12,16 @@
 
 @layer base {
   :root {
-    --highlight-bg: hsl(54, 100%, 85%);
     /* Light yellow for light mode */
+    --highlight-bg: hsl(54, 100%, 85%);
   }
 
   .dark {
-    --highlight-bg: hsl(54, 100%, 20%);
     /* Darker yellow for dark mode */
+    --highlight-bg: hsl(54, 100%, 20%);
   }
 }
+
 
 @layer utilities {
   .text-balance {
@@ -51,6 +52,7 @@
   :root {
     --background: 197 100% 97%;
     --foreground: 197 5% 10%;
+    --ag-header-background-color: hsl(197, 100%, 39.6%);
     --card: 197 50% 97%;
     --card-foreground: 197 5% 15%;
     --popover: 197 100% 97%;
@@ -74,11 +76,12 @@
   .dark {
     --background: 197 50% 10%;
     --foreground: 197 5% 97%;
+    --ag-header-background-color: hsl(337, 90%, 51%);
     --card: 197 50% 10%;
     --card-foreground: 197 5% 97%;
     --popover: 197 50% 5%;
     --popover-foreground: 197 5% 97%;
-    --primary: 197 100% 39.6%;
+    --primary: 337 90% 51%;
     --primary-foreground: 0 0% 100%;
     --secondary: 197 30% 20%;
     --secondary-foreground: 0 0% 100%;
@@ -88,9 +91,9 @@
     --accent-foreground: 197 5% 95%;
     --destructive: 0 100% 50%;
     --destructive-foreground: 197 5% 97%;
-    --border: 197 30% 50%;
-    --input: 197 30% 50%;
-    --ring: 197 100% 39.6%;
+    --border: 337 90% 51%;
+    --input: 337 90% 51%;
+    --ring: 337 90% 51%;
     --radius: 1rem;
   }
 }

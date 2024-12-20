@@ -230,8 +230,8 @@ const frequentlyAskedQuestions = [
 
 export default function AboutPage() {
     return (
-        <section className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
-            <h1 className="text-2xl sm:text-3xl font-bold leading-tight text-center border-b pb-3">
+        <section className="px-4 sm:px-20 py-8 mx-auto space-y-6 sm:border rounded-xl max-w-full sm:max-w-5xl">
+            <h1 className="text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
             <p className="text-wrap">
@@ -239,7 +239,7 @@ export default function AboutPage() {
             </p>
 
             {/* Creator*/}
-            <Card className="border border-gray-300 shadow-sm">
+            <Card className="border shadow-sm">
                 <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl text-center mb-4 border-b pb-3">
                         Creator
@@ -283,7 +283,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Frequently Asked Questions */}
-            <Card className="border border-gray-300 shadow-sm">
+            <Card className="border shadow-sm">
                 <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
                         Frequently Asked Questions
@@ -302,7 +302,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Tech Stack */}
-            <Card className="border border-gray-300 shadow-sm">
+            <Card className="border shadow-sm">
                 <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
                         Tech Stack
@@ -316,7 +316,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Contact Information */}
-            <Card className="border border-gray-300 shadow-sm">
+            <Card className="border shadow-sm">
                 <CardHeader>
                     <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
                         Contact Information

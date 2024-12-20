@@ -34,7 +34,9 @@ const ensureDirectoryExists = (dir: string) => {
     }
 };
 
-// Image downloading logic moved to its own function
+// TODO Rewrite this to take the new array of photos 'photos', download htem all, and return the array of local URLs
+// Or find some eway to use the photos and make a photo galery users can browse upon clicking then you just get the URL
+// on request. It's a call to Google's API not using any API usage.
 const downloadImage = async (coverPhotoURL: string, airtableRecordId: string, placeName: string): Promise<string> => {
     const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
     const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
@@ -90,10 +92,6 @@ export async function getPlaces(): Promise<Place[]> {
         records.map(async (record) => {
             const airtableRecordId = record.id;
             const placeName = record.get('Place') as string;
-            const coverPhotoURL = record.get('Cover Photo URL') as string;
-            let localCoverPhotoURL = '';
-            // Toggle image download functionality on/off by commenting/uncommenting the next line
-            // localCoverPhotoURL = coverPhotoURL ? await downloadImage(coverPhotoURL, airtableRecordId, placeName) : '';
 
             return {
                 airtableRecordId: airtableRecordId,
@@ -112,8 +110,7 @@ export async function getPlaces(): Promise<Place[]> {
                 website: record.get('Website') as string,
                 googleMapsPlaceId: record.get('Google Maps Place Id') as string,
                 googleMapsProfileURL: record.get('Google Maps Profile URL') as string,
-                coverPhotoURL: coverPhotoURL,
-                localCoverPhotoURL: localCoverPhotoURL,
+                photos: record.get('Photos') as string[],
                 comments: record.get('Comments') as string,
                 latitude: record.get('Latitude') as number,
                 longitude: record.get('Longitude') as number,

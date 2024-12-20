@@ -16,8 +16,7 @@ export type Place = {
     website: string;
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
-    coverPhotoURL: string;
-    localCoverPhotoURL: string;
+    photos: Array<string>;
     comments: string;
     latitude: number;
     longitude: number;

@@ -73,7 +73,6 @@ async def purge_orchestrations(req: func.HttpRequest, client) -> func.HttpRespon
         )
 
 
-
 @app.orchestration_trigger(context_name="context")
 def get_outscraper_reviews_orchestrator(context: df.DurableOrchestrationContext):
     try:
@@ -156,7 +155,7 @@ def get_outscraper_data_for_place(activityInput):
     final_json_data = json.dumps(structured_outscraper_data, indent=4)
     logging.info(f"Attempting to save reviews to GitHub at path {full_file_path}")
 
-    save_succeeded = helpers.save_json_to_github(final_json_data, full_file_path)
+    save_succeeded = helpers.save_reviews_github(final_json_data, full_file_path)
 
     if save_succeeded:
         if airtable_record:
@@ -227,7 +226,7 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
         )
 
     if req_body.get("TheMotto") == "What is dead may never die, but rises again harder and stronger":
-        logging.info("Validation successful, the provided motto matches the expected value.")
+        logging.info("Validation successful, the provided motto matches the expected value. Proceeding with the enrichment process.")
 
         try:
             airtable = AirtableClient()
@@ -255,15 +254,6 @@ def enrich_airtable_base(req: func.HttpRequest) -> func.HttpResponse:
                 logging.info(f"Enrichment process completed successfully. The following places had at least one field updated: {actually_updated_places}")
             else:
                 logging.info("Enrichment process completed successfully. No places required field updates.")
-
-            logging.info("Running cover photo retrieval. The pass/fail of this operation will not impact overall function return values.")
-            photo_results = airtable.get_place_photos(overwrite_cover_photo=True)
-            photo_failures = any(result['status'] == "failed" for result in photo_results.values())
-
-            if photo_failures:
-                logging.error("The cover photo update process encountered failures.")
-            else:
-                logging.info("The cover photo update process completed successfully with no failures.")
 
             return func.HttpResponse(
                 json.dumps({
