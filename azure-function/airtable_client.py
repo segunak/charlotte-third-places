@@ -81,7 +81,7 @@ class AirtableClient:
             if (
                 update_value_normalized not in (None, '') and  # Skip if update value is None or empty string
                 (
-                    current_value_normalized in (None, 'Unsure') and  # Update if current value is None or 'Unsure'
+                    current_value_normalized in (None, 'Unsure') or  # Update if current value is None or 'Unsure'
                     (
                         overwrite and  # Respect the overwrite flag
                         current_value_normalized != update_value_normalized  # Ensure the update value is different

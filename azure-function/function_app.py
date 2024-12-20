@@ -10,16 +10,7 @@ import azure.durable_functions as df
 from airtable_client import AirtableClient
 from azure.durable_functions.models.DurableOrchestrationStatus import OrchestrationRuntimeStatus
 
-
-airtable = AirtableClient()
-
-airtable.enrich_base_data()
-
-
-print("All done big dawg")
-
 app = df.DFApp(http_auth_level=func.AuthLevel.FUNCTION)
-
 
 @app.function_name(name="StartOrchestrator")
 @app.route(route="orchestrators/{functionName}")
