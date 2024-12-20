@@ -1,0 +1,652 @@
+{
+  "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw",
+  "id": "ChIJj61dQgK6j4AR4GeTYWZsKWw",
+  "types": [
+    "corporate_office",
+    "point_of_interest",
+    "establishment"
+  ],
+  "nationalPhoneNumber": "(650) 253-0000",
+  "internationalPhoneNumber": "+1 650-253-0000",
+  "formattedAddress": "1600 Amphitheatre Pkwy, Mountain View, CA 94043, USA",
+  "addressComponents": [
+    {
+      "longText": "1600",
+      "shortText": "1600",
+      "types": [
+        "street_number"
+      ],
+      "languageCode": "en-US"
+    },
+    {
+      "longText": "Amphitheatre Parkway",
+      "shortText": "Amphitheatre Pkwy",
+      "types": [
+        "route"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Mountain View",
+      "shortText": "Mountain View",
+      "types": [
+        "locality",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "Santa Clara County",
+      "shortText": "Santa Clara County",
+      "types": [
+        "administrative_area_level_2",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "California",
+      "shortText": "CA",
+      "types": [
+        "administrative_area_level_1",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "United States",
+      "shortText": "US",
+      "types": [
+        "country",
+        "political"
+      ],
+      "languageCode": "en"
+    },
+    {
+      "longText": "94043",
+      "shortText": "94043",
+      "types": [
+        "postal_code"
+      ],
+      "languageCode": "en-US"
+    }
+  ],
+  "plusCode": {
+    "globalCode": "849VCWC7+RV",
+    "compoundCode": "CWC7+RV Mountain View, CA, USA"
+  },
+  "location": {
+    "latitude": 37.4220541,
+    "longitude": -122.08532419999999
+  },
+  "viewport": {
+    "low": {
+      "latitude": 37.4209489697085,
+      "longitude": -122.08846930000001
+    },
+    "high": {
+      "latitude": 37.4236469302915,
+      "longitude": -122.0829156
+    }
+  },
+  "rating": 4.2,
+  "googleMapsUri": "https://maps.google.com/?cid=7793879817120868320",
+  "websiteUri": "https://about.google/locations/?region=north-america",
+  "regularOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ],
+    "nextCloseTime": "2024-12-21T01:00:00Z"
+  },
+  "utcOffsetMinutes": -480,
+  "adrFormatAddress": "\u003cspan class=\"street-address\"\u003e1600 Amphitheatre Pkwy\u003c/span\u003e, \u003cspan class=\"locality\"\u003eMountain View\u003c/span\u003e, \u003cspan class=\"region\"\u003eCA\u003c/span\u003e \u003cspan class=\"postal-code\"\u003e94043\u003c/span\u003e, \u003cspan class=\"country-name\"\u003eUSA\u003c/span\u003e",
+  "businessStatus": "OPERATIONAL",
+  "userRatingCount": 9721,
+  "iconMaskBaseUri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+  "iconBackgroundColor": "#7B9EB0",
+  "displayName": {
+    "text": "Googleplex",
+    "languageCode": "en"
+  },
+  "primaryTypeDisplayName": {
+    "text": "Corporate Office",
+    "languageCode": "en-US"
+  },
+  "currentOpeningHours": {
+    "openNow": true,
+    "periods": [
+      {
+        "open": {
+          "day": 1,
+          "hour": 8,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 23
+          }
+        },
+        "close": {
+          "day": 1,
+          "hour": 17,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 23
+          }
+        }
+      },
+      {
+        "open": {
+          "day": 2,
+          "hour": 8,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 24
+          }
+        },
+        "close": {
+          "day": 2,
+          "hour": 17,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 24
+          }
+        }
+      },
+      {
+        "open": {
+          "day": 3,
+          "hour": 8,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 25
+          }
+        },
+        "close": {
+          "day": 3,
+          "hour": 17,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 25
+          }
+        }
+      },
+      {
+        "open": {
+          "day": 4,
+          "hour": 8,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 26
+          }
+        },
+        "close": {
+          "day": 4,
+          "hour": 17,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 26
+          }
+        }
+      },
+      {
+        "open": {
+          "day": 5,
+          "hour": 8,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 20
+          }
+        },
+        "close": {
+          "day": 5,
+          "hour": 17,
+          "minute": 0,
+          "date": {
+            "year": 2024,
+            "month": 12,
+            "day": 20
+          }
+        }
+      }
+    ],
+    "weekdayDescriptions": [
+      "Monday: 8:00 AM – 5:00 PM",
+      "Tuesday: 8:00 AM – 5:00 PM",
+      "Wednesday: 8:00 AM – 5:00 PM",
+      "Thursday: 8:00 AM – 5:00 PM",
+      "Friday: 8:00 AM – 5:00 PM",
+      "Saturday: Closed",
+      "Sunday: Closed"
+    ],
+    "nextCloseTime": "2024-12-21T01:00:00Z"
+  },
+  "primaryType": "corporate_office",
+  "shortFormattedAddress": "1600 Amphitheatre Pkwy, Mountain View",
+  "editorialSummary": {
+    "text": "The global headquarters of Google, this campus encompasses offices, green space & recreation areas.",
+    "languageCode": "en"
+  },
+  "reviews": [
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/reviews/ChZDSUhNMG9nS0VJQ0FnSUR0el91SktnEAE",
+      "relativePublishTimeDescription": "10 months ago",
+      "rating": 1,
+      "text": {
+        "text": "Yeah I don’t know what is wrong with Google headquarters but my wife and I went there maybe 7 years ago and went to the campus and it was no problem. The employees were having a party and they greeted us and offered us food and were kind.\n\nThe other day I followed Google Maps to Google Headquarters and I went into the building that said, “You belong here.”\n\nThen I was treated poorly by their security staff who took her name badge and hid it from me. I was told I couldn’t be there and had to walk a half a mile to the Googleplex. I asked if they could give me a ride. No.\n\nBefore I left, after I called them names for being so rude to me, I walked to the Googleplex store, I looked at some products and then a man came up to me and asked me to leave because I caused a disturbance. So I left and in the way out, gave a dog treat to a man with a dog. Then I went pee in their public bathroom which smelled terrible. I then walked back to my car through the same way I just came and 3 security guards approached me, told me I was trespassing and that they would call the police. They then walked right next to me the whole time intimidating me while I then started screaming obscenities at them because Google is a bunch of holier-than-though, velvet rope scumbags.\n\nYou can see my encounter online on my social media websites. They were out of line and I will never return. Ever.\n\nGoogle is no Apple and those people are a bunch of sadistic psychopaths who told me to leave for causing “a disruption.” First of all, I didn’t cause a disruption UNTIL you told me to leave when I was trying to give you money for your inferior products. And second, I thought tech companies like disruptors?\n\nWell not Google. They have a monopoly that the government needs to break up and they don’t want any disruption to their dominating market share and unfair business practices.",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "Yeah I don’t know what is wrong with Google headquarters but my wife and I went there maybe 7 years ago and went to the campus and it was no problem. The employees were having a party and they greeted us and offered us food and were kind.\n\nThe other day I followed Google Maps to Google Headquarters and I went into the building that said, “You belong here.”\n\nThen I was treated poorly by their security staff who took her name badge and hid it from me. I was told I couldn’t be there and had to walk a half a mile to the Googleplex. I asked if they could give me a ride. No.\n\nBefore I left, after I called them names for being so rude to me, I walked to the Googleplex store, I looked at some products and then a man came up to me and asked me to leave because I caused a disturbance. So I left and in the way out, gave a dog treat to a man with a dog. Then I went pee in their public bathroom which smelled terrible. I then walked back to my car through the same way I just came and 3 security guards approached me, told me I was trespassing and that they would call the police. They then walked right next to me the whole time intimidating me while I then started screaming obscenities at them because Google is a bunch of holier-than-though, velvet rope scumbags.\n\nYou can see my encounter online on my social media websites. They were out of line and I will never return. Ever.\n\nGoogle is no Apple and those people are a bunch of sadistic psychopaths who told me to leave for causing “a disruption.” First of all, I didn’t cause a disruption UNTIL you told me to leave when I was trying to give you money for your inferior products. And second, I thought tech companies like disruptors?\n\nWell not Google. They have a monopoly that the government needs to break up and they don’t want any disruption to their dominating market share and unfair business practices.",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "Ian Williams",
+        "uri": "https://www.google.com/maps/contrib/107670812783470007196/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXRv9--b-MW6SEOXZHw6Ho4IVYrwKX4tA2yILlIeYnXXwPMQ2Si_Q=s128-c0x00000000-cc-rp-mo-ba5"
+      },
+      "publishTime": "2024-02-08T13:03:00.989339Z",
+      "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChZDSUhNMG9nS0VJQ0FnSUR0el91SktnEAE&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChZDSUhNMG9nS0VJQ0FnSUR0el91SktnEAE!2m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/reviews/ChdDSUhNMG9nS0VJQ0FnSURkaWJ2MjNnRRAB",
+      "relativePublishTimeDescription": "9 months ago",
+      "rating": 3,
+      "text": {
+        "text": "Came here for a tour and honestly, it was average. Don’t expect too much and you should be fine. I’m pretty sure if you’re a Googler then you’ll get to see more.\n\nIt was nice to be there, and we were taken to two cafes, see the plants that employees plant and a Google bike that went away as an employee used it then it was the end. It’s much better to walk around yourself, visit the Google Store and hang out at the cafe next door.\n\nI had high expectations therefore gave it 3 stars.",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "Came here for a tour and honestly, it was average. Don’t expect too much and you should be fine. I’m pretty sure if you’re a Googler then you’ll get to see more.\n\nIt was nice to be there, and we were taken to two cafes, see the plants that employees plant and a Google bike that went away as an employee used it then it was the end. It’s much better to walk around yourself, visit the Google Store and hang out at the cafe next door.\n\nI had high expectations therefore gave it 3 stars.",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "Helen Bui",
+        "uri": "https://www.google.com/maps/contrib/101985264493939759193/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUlqVb8xMlhnnelVUQbjiGQbtOktWNp9yiSvqAYZgBoZ72-njQq4A=s128-c0x00000000-cc-rp-mo-ba6"
+      },
+      "publishTime": "2024-02-24T19:26:18.091264Z",
+      "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURkaWJ2MjNnRRAB&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURkaWJ2MjNnRRAB!2m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/reviews/ChdDSUhNMG9nS0VJQ0FnSURGcHRxeS1nRRAB",
+      "relativePublishTimeDescription": "a year ago",
+      "rating": 5,
+      "text": {
+        "text": "Walked around after a tour of the Vistor Experience. Not really much to see, but I was fascinated with the landscaping and plants. Not too many tech parks have watermelons growing. Lots of pollinators were being visited by their flying friend. Impressive that a company of this size cares enough to do such a good job!",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "Walked around after a tour of the Vistor Experience. Not really much to see, but I was fascinated with the landscaping and plants. Not too many tech parks have watermelons growing. Lots of pollinators were being visited by their flying friend. Impressive that a company of this size cares enough to do such a good job!",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "Anne Margaret White",
+        "uri": "https://www.google.com/maps/contrib/110847646938702671418/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKcS8MdxYWWPd4cQviiGHGozidIWHyD1Y8GrTjy4EQ0o0nfLA=s128-c0x00000000-cc-rp-mo-ba7"
+      },
+      "publishTime": "2023-11-06T19:47:34.116291Z",
+      "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURGcHRxeS1nRRAB&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURGcHRxeS1nRRAB!2m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/reviews/ChdDSUhNMG9nS0VJQ0FnSURQcXR5bzVnRRAB",
+      "relativePublishTimeDescription": "2 weeks ago",
+      "rating": 5,
+      "text": {
+        "text": "My best experience on my trip to San Francisco. Everything was clean and beautiful.",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "My best experience on my trip to San Francisco. Everything was clean and beautiful.",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "Samuel Schaapen",
+        "uri": "https://www.google.com/maps/contrib/105993294554581133968/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjWH2NHJxyp0_azz0FUBdzf6MjnWMPYc2gyVuiNKuYZl0RquanKZ=s128-c0x00000000-cc-rp-mo-ba4"
+      },
+      "publishTime": "2024-12-01T03:22:30.848918Z",
+      "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSURQcXR5bzVnRRAB&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSURQcXR5bzVnRRAB!2m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/reviews/ChdDSUhNMG9nS0VJQ0FnSUMxc0txajVBRRAB",
+      "relativePublishTimeDescription": "a year ago",
+      "rating": 5,
+      "text": {
+        "text": "google hosts activities occasionally which is such a great way to being about people together. otherwise it's such an inspiring place to just work in, the cafe has very reasonable prices, the environment is great",
+        "languageCode": "en"
+      },
+      "originalText": {
+        "text": "google hosts activities occasionally which is such a great way to being about people together. otherwise it's such an inspiring place to just work in, the cafe has very reasonable prices, the environment is great",
+        "languageCode": "en"
+      },
+      "authorAttribution": {
+        "displayName": "mhyles",
+        "uri": "https://www.google.com/maps/contrib/113071239298658716661/reviews",
+        "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU3FQkGUZkFCmqnn-Zyb7RV6iKIWSdWzFn6t_6agifERs2DCrBX=s128-c0x00000000-cc-rp-mo-ba4"
+      },
+      "publishTime": "2023-12-21T01:30:47.710658Z",
+      "flagContentUri": "https://www.google.com/local/review/rap/report?postId=ChdDSUhNMG9nS0VJQ0FnSUMxc0txajVBRRAB&d=17924085&t=1",
+      "googleMapsUri": "https://www.google.com/maps/reviews/data=!4m6!14m5!1m4!2m3!1sChdDSUhNMG9nS0VJQ0FnSUMxc0txajVBRRAB!2m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    }
+  ],
+  "photos": [
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27zzpZXvr04bQ8rggv0cZQO85S08RvxHj4mp6AwKSK_IUHwKLmQR7MAmBdxwJU1hqvRoZsXYHbcO0BapIcMW3Gy1rqc2VbMBXagR6Iz9grr1oFNvZp1UP5iKK8r_OVadmRm1ydvi1fqZxk_2VKvugLYqez6OSo9afJjq",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "authorAttributions": [
+        {
+          "displayName": "Mark Yan",
+          "uri": "https://maps.google.com/maps/contrib/104861146276467007354",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXvHp8Kg932h80MpoDSJ_Sl4FQ-XPMd6zFK8LllY7GpoqivreKYsA=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipNh0hZ6hjTt6r4sFEOjwBodVFOVnYjGXtMU_GKr&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipNh0hZ6hjTt6r4sFEOjwBodVFOVnYjGXtMU_GKr!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27wy4ykaslyQvyXG0WRNgMTyX4MTXHgVfGB7iGwEDLCwx-pJjr0TQQ5IShbgl_sxu74rid-upS0Q9N0bnAfA9L2bFdJ1N1OoH8727dvJEM7UzkKzI8MpQuh8Uw3J3C2AnC8Cz3HgSudtLl27QkPVdL_NErnFYSJWGyEM",
+      "widthPx": 800,
+      "heightPx": 600,
+      "authorAttributions": [
+        {
+          "displayName": "Hamid Rs",
+          "uri": "https://maps.google.com/maps/contrib/110013516674213805914",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVXNBGL4MQFCYiPVcSbS3lP784A5HhJdLww8KRV_p0rJmsbIFRp=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipN48xS3ZPvflrvtsmy1jCjoLx74xtHgseH3K5wb&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipN48xS3ZPvflrvtsmy1jCjoLx74xtHgseH3K5wb!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27yHpOxTSZe7OGJKcJjZgS5UomLXys9v6GvWvDivGhYaMmkH5qXFg92XMR6WNY4UQymHcvbVopCNA_1S81mLO16VRq-ifq35JODIxOlJey516KaenllVW9uCdlDYz11QElb7DONF2hFRc8VgE_5Xg3au6RBMACMLtQ9C",
+      "widthPx": 1731,
+      "heightPx": 1154,
+      "authorAttributions": [
+        {
+          "displayName": "Klugtscheisser",
+          "uri": "https://maps.google.com/maps/contrib/117855073372519923016",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjU6PT3ABCHridyZr865fsoEw3547yYuOh6F5bb4ob5n1G3oEL9_=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipPuH0-FEIwXGh40aMQg78efiJ13Fn05CSJpfVvf&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPuH0-FEIwXGh40aMQg78efiJ13Fn05CSJpfVvf!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27wOPJMNFeH1vhGsjUTnVWOcpy4Ca1dtEQDroJ4zjsUU4aRyGMTFTLNoy6kRml-4QmAADe-6oqodQQ3z1gbKPmAZ9ns04mT7v0GMXMCT3NM2NPLbhT6STvibTmv7YJDft_25ISmVMY5qFQ7tiYn0oeG8b5kdwIXYq1lh",
+      "widthPx": 1170,
+      "heightPx": 1546,
+      "authorAttributions": [
+        {
+          "displayName": "吳采霏",
+          "uri": "https://maps.google.com/maps/contrib/109583396262059893827",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUFVn-Rue83en9u7_-t3K2JMRuWZFg3RqXqb1zy8IvfKW0wn_R2aw=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMF7XQKJTbWcz9784oBoW1gs5ty2H9gBMZpc_PM&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMF7XQKJTbWcz9784oBoW1gs5ty2H9gBMZpc_PM!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27zIwnDPCWa_XaCaWYlzqj0f8ekvZAhZ5AUIPctKvZrjrxDdh21omKGgNiWi-V5vfRhph5wcMruAJJga8zWkYF-9B_TqGWq2hlKZKl9UydPOoB8oiKkwlOlYoa6vwjvk6zHDyRD2VOqAvAPYKH4NikoM7KemjBUuOeBY",
+      "widthPx": 3072,
+      "heightPx": 4080,
+      "authorAttributions": [
+        {
+          "displayName": "Brian Johnson",
+          "uri": "https://maps.google.com/maps/contrib/100907662529430491672",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVxGRoebBBQ4HBPsuNOUuOBXUk-iMxq5YD9RPANqwcMB7N63kI=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipOFgdX9vYbyNFLhtCF_n3k3yqXQ7GO4H84COLH2&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOFgdX9vYbyNFLhtCF_n3k3yqXQ7GO4H84COLH2!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27zOKd5mDfsgFX6yW5oKYjzyRupPAjkZAPcvmMcQH5Yyo0rd6dlXkCicWmYaN8kSlClZZGhu6YbYu9aqBMvIFxW7YoN4iKeCRC8rJmns3htXjvoJZ2XhJ2FlUUSx9-zSX8-Rl80R9q134rLBx_S4XHTyv4BRuORiRrVA",
+      "widthPx": 4288,
+      "heightPx": 2848,
+      "authorAttributions": [
+        {
+          "displayName": "MomZee Jen",
+          "uri": "https://maps.google.com/maps/contrib/108316326160858492184",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjXOwHrfgdtsu2x3nXFECnk3Qn84ACz3LeAtq3dDwvL0mS9btFRa=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipN58sMbCEXIKIrenmO3Hg30a7mUpf0sa56870kl&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipN58sMbCEXIKIrenmO3Hg30a7mUpf0sa56870kl!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27y9DCvfBL0dC74VE3crVv1lUqCnmtxGLq8oDuDW_Qut_X5NqhqMDOGWg0BZ025fP4jy0LUvTsyF7PB6XILludwNk34hR77l_a_BXkeqP3rw7yfr-l9sDQEEBXDJ1dEP4x4qJ-ViIkEtlhuPUutFD4oXrkU9F-HHU2Ba",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "authorAttributions": [
+        {
+          "displayName": "Jack Liu",
+          "uri": "https://maps.google.com/maps/contrib/104792114110711088396",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVTj9BdqaCDmd0ScmNlEX78i6XjMacKWbrYgNBLlXV03HHdf5C4AA=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipOJkHJc6TTrjGIHgXnGbfp0QgwhN2jHm0Gab_oq&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipOJkHJc6TTrjGIHgXnGbfp0QgwhN2jHm0Gab_oq!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27wLb6QjIZvufSrHBVrf_v8LY6U3cQ4ylR4GJlzb2PFPFnSeR2nDSeZKQznoiSWCOOIMqygqDsbUa4epolXjF2JfVc5I_OaBfRPEUS8A403hO88TtGs5hpbTytlgi6uBvnabwBnakwMlE0weXD4KUGxfH9mNdXl3gETg",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "authorAttributions": [
+        {
+          "displayName": "Juliana Cunha",
+          "uri": "https://maps.google.com/maps/contrib/116636207407466396588",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjVLyqU_Uui3NNoEAN-8-SSJa9N6UBlFWlq2yTDz4KseITJt8HE3kA=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipN9PByBeZ4slOxWGrHyC4VkJ12rF0howeqxOdeE&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipN9PByBeZ4slOxWGrHyC4VkJ12rF0howeqxOdeE!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27yvZP3cIsEiBsZB028zzIr3TlL8YMBEEQgkctYVF7rQ6yQU7p_mHsCURcwVDJZgzRDWnPJxqrfnDTVVZr4FqcsgpRKPIGhsx1RUIJAy8K17Op6qywucXyng_7an9S7ERUCJTAfq80tiJU4qPcnS-Vo5xq1eWADBnyN5",
+      "widthPx": 4032,
+      "heightPx": 3024,
+      "authorAttributions": [
+        {
+          "displayName": "Simone",
+          "uri": "https://maps.google.com/maps/contrib/117851692593417823996",
+          "photoUri": "https://lh3.googleusercontent.com/a/ACg8ocKmwhxILjKfGngHPaoogOUI017iabwcZRA_3pUWG1UMDSBh2g=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipPynsp2nqNX7GxdcpO7AtoLnTsIBwotLptQ7Rqf&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipPynsp2nqNX7GxdcpO7AtoLnTsIBwotLptQ7Rqf!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    },
+    {
+      "name": "places/ChIJj61dQgK6j4AR4GeTYWZsKWw/photos/AWYs27w2JDfYYpfHNKB46urjAImFTkKSaASdesi6tvMaOC1l2IikqgAgI8jquCZZlMcgOJR8WfktT52p84xSgstLIYs_R8GgZpYOptzWQeRt_Izb8rbjtGnXIpQREjxDzgnBmKu92n5VhOfsJzp67ETsshJhHi5Be7HAn9rg",
+      "widthPx": 720,
+      "heightPx": 844,
+      "authorAttributions": [
+        {
+          "displayName": "SUNDAY LAZARUS",
+          "uri": "https://maps.google.com/maps/contrib/110111497492928735725",
+          "photoUri": "https://lh3.googleusercontent.com/a-/ALV-UjUY-mXg0eDO_D_8gQPLmz7XpHsirVc7NVXoGuycFInGUWyvN_oB=s100-p-k-no-mo"
+        }
+      ],
+      "flagContentUri": "https://www.google.com/local/imagery/report/?cb_client=maps_api_places.places_api&image_key=!1e10!2sAF1QipMnn-9MjouiY5rH2sHTjZ2DlXV6eQS9uPUOUIQU&hl=en-US",
+      "googleMapsUri": "https://www.google.com/maps/place//data=!3m4!1e2!3m2!1sAF1QipMnn-9MjouiY5rH2sHTjZ2DlXV6eQS9uPUOUIQU!2e10!4m2!3m1!1s0x808fba02425dad8f:0x6c296c66619367e0"
+    }
+  ],
+  "accessibilityOptions": {
+    "wheelchairAccessibleParking": true,
+    "wheelchairAccessibleEntrance": true
+  },
+  "pureServiceAreaBusiness": false,
+  "addressDescriptor": {
+    "landmarks": [
+      {
+        "name": "places/ChIJN8KDNnq7j4AR18Xh9LVB4c4",
+        "placeId": "ChIJN8KDNnq7j4AR18Xh9LVB4c4",
+        "displayName": {
+          "text": "Google B43",
+          "languageCode": "en"
+        },
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "straightLineDistanceMeters": 124.09476,
+        "travelDistanceMeters": 255.86588
+      },
+      {
+        "name": "places/ChIJ1yjFJ1-7j4ARG_RVqFD1h7k",
+        "placeId": "ChIJ1yjFJ1-7j4ARG_RVqFD1h7k",
+        "displayName": {
+          "text": "Google B40",
+          "languageCode": "en"
+        },
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "straightLineDistanceMeters": 53.60039,
+        "travelDistanceMeters": 314.63434
+      },
+      {
+        "name": "places/ChIJ__8_MQK6j4ARJkaAR_f-2i4",
+        "placeId": "ChIJ__8_MQK6j4ARJkaAR_f-2i4",
+        "displayName": {
+          "text": "Google Mountain View - 1098 Alta",
+          "languageCode": "en"
+        },
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "straightLineDistanceMeters": 208.22464,
+        "travelDistanceMeters": 379.37454
+      },
+      {
+        "name": "places/ChIJo4za6vi5j4ARMua093RgGGA",
+        "placeId": "ChIJo4za6vi5j4ARMua093RgGGA",
+        "displayName": {
+          "text": "Charleston Park",
+          "languageCode": "en"
+        },
+        "types": [
+          "establishment",
+          "park",
+          "point_of_interest"
+        ],
+        "spatialRelationship": "AROUND_THE_CORNER",
+        "straightLineDistanceMeters": 296.3728,
+        "travelDistanceMeters": 239.37967
+      },
+      {
+        "name": "places/ChIJL4yruhy6j4AR2SldohThsJo",
+        "placeId": "ChIJL4yruhy6j4AR2SldohThsJo",
+        "displayName": {
+          "text": "Google Athletic Recreation Field Park (GARField)",
+          "languageCode": "en"
+        },
+        "types": [
+          "establishment",
+          "point_of_interest"
+        ],
+        "straightLineDistanceMeters": 332.9035,
+        "travelDistanceMeters": 409.35977
+      }
+    ]
+  },
+  "googleMapsLinks": {
+    "directionsUri": "https://www.google.com/maps/dir//''/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x808fba02425dad8f:0x6c296c66619367e0!3e0",
+    "placeUri": "https://maps.google.com/?cid=7793879817120868320",
+    "writeAReviewUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x808fba02425dad8f:0x6c296c66619367e0!12e1",
+    "reviewsUri": "https://www.google.com/maps/place//data=!4m4!3m3!1s0x808fba02425dad8f:0x6c296c66619367e0!9m1!1b1",
+    "photosUri": "https://www.google.com/maps/place//data=!4m3!3m2!1s0x808fba02425dad8f:0x6c296c66619367e0!10e5"
+  }
+}
