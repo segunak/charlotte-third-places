@@ -12,15 +12,16 @@
 
 @layer base {
   :root {
-    --highlight-bg: hsl(54, 100%, 85%);
     /* Light yellow for light mode */
+    --highlight-bg: hsl(54, 100%, 85%);
   }
 
   .dark {
-    --highlight-bg: hsl(54, 100%, 20%);
     /* Darker yellow for dark mode */
+    --highlight-bg: hsl(54, 100%, 20%);
   }
 }
+
 
 @layer utilities {
   .text-balance {
