@@ -16,13 +16,17 @@ import {
   IoInformationCircleOutline,
   IoCreate,
   IoCreateOutline,
+  IoLogoTiktok,
+  IoLogoYoutube,
 } from "react-icons/io5";
 import {
   LuMoon,
   LuSunMedium,
   LuLink,
   LuLinkedin,
-  LuExternalLink
+  LuExternalLink,
+  LuInstagram,
+  LuYoutube
 } from "react-icons/lu";
 
 export const Icons = {
@@ -48,6 +52,9 @@ export const Icons = {
   create: IoCreate,
   createOutline: IoCreateOutline,
   linkedin: LuLinkedin,
+  instagram: LuInstagram,
+  youtube: IoLogoYoutube,
+  tiktok: IoLogoTiktok,
   link: LuLink,
   externalLink: LuExternalLink,
   logo: (props: IconProps) => (

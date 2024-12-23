@@ -20,6 +20,51 @@ export function SiteHeader() {
                 <div className="flex flex-1 items-center justify-end">
                     <nav className="flex items-center space-x-1">
                         <Link
+                            href="https://www.tiktok.com/@charlottethirdplaces"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div
+                                className={buttonVariants({
+                                    size: "icon",
+                                    variant: "ghost",
+                                })}
+                            >
+                                <Icons.tiktok className="h-5 w-5" />
+                                <span className="sr-only">TikTok</span>
+                            </div>
+                        </Link>
+                        <Link
+                            href="https://www.instagram.com/charlottethirdplaces/ "
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div
+                                className={buttonVariants({
+                                    size: "icon",
+                                    variant: "ghost",
+                                })}
+                            >
+                                <Icons.instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
+                            </div>
+                        </Link>
+                        <Link
+                            href="https://www.youtube.com/@charlottethirdplaces"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div
+                                className={buttonVariants({
+                                    size: "icon",
+                                    variant: "ghost",
+                                })}
+                            >
+                                <Icons.youtube className="h-5 w-5" />
+                                <span className="sr-only">YouTube</span>
+                            </div>
+                        </Link>
+                        <Link
                             href="https://github.com/segunak/charlotte-third-places"
                             target="_blank"
                             rel="noreferrer"
@@ -32,36 +77,6 @@ export function SiteHeader() {
                             >
                                 <Icons.gitHub className="h-5 w-5" />
                                 <span className="sr-only">GitHub</span>
-                            </div>
-                        </Link>
-                        <Link
-                            href="https://www.linkedin.com/in/segunakinyemi/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <div
-                                className={buttonVariants({
-                                    size: "icon",
-                                    variant: "ghost",
-                                })}
-                            >
-                                <Icons.linkedin className="h-5 w-5" />
-                                <span className="sr-only">LinkedIn</span>
-                            </div>
-                        </Link>
-                        <Link
-                            href="https://segunakinyemi.com/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <div
-                                className={buttonVariants({
-                                    size: "icon",
-                                    variant: "ghost",
-                                })}
-                            >
-                                <Icons.link className="h-5 w-5" />
-                                <span className="sr-only">Personal Website</span>
                             </div>
                         </Link>
                         <ThemeToggle />
