@@ -7,18 +7,16 @@ import { ShareButton } from "@/components/ShareButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 
-// `revalidate` defines the interval in seconds during which the cached data is considered valid.
-// After this interval, Next.js will invalidate the cache and fetch fresh data.
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate
 export const revalidate = REVALIDATE_TIME;
 
-// `dynamicParams` is a configuration for Next.js to handle paths that weren't pre-rendered at build time.
-// If set to `true`, Next.js will generate pages on-demand for paths not generated during the build.
-// If set to `false`, Next.js will return a 404 for any path not pre-rendered.
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
 export const dynamicParams = true;
 
-// `generateStaticParams` is a special function that Next.js runs at build time.
-// Its purpose is to pre-generate static pages based on the data fetched here.
-// In this case, it calls `getPlaces()` to fetch all places from Airtable.
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+export const dynamic = "force-static"
+
+// See https://nextjs.org/docs/app/api-reference/functions/generate-static-params
 export async function generateStaticParams() {
     // Fetch all places from Airtable.
     const places = await getPlaces();
