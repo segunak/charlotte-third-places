@@ -1,7 +1,7 @@
 import React from 'react';
 import { Place } from "@/lib/types";
 import { REVALIDATE_TIME } from '@/lib/config';
-import { getPlaces } from "@/lib/data-services";
+import { getPlaceById, getPlaces } from "@/lib/data-services";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
 import { Card, CardContent } from "@/components/ui/card";
@@ -34,12 +34,8 @@ export async function generateStaticParams() {
 // This is the page component for individual places. It is a dynamic route, 
 // meaning it is rendered based on the `id` parameter provided in the URL.
 export default async function PlacePage({ params: { id } }: { params: { id: string } }) {
-    // Fetch all places again. This is necessary because Next.js does not automatically pass 
-    // the data fetched in `generateStaticParams` to this component.
-    const places = await getPlaces();
-
-    // Find the specific place that matches the `id` from the URL.
-    const place = places.find((place: Place) => place.airtableRecordId === id);
+    // Fetch the specific place by ID
+    const place = await getPlaceById(id);
 
     // If no place is found with the given `id`, return a "Place not found" message.
     if (!place) return <div>Place not found</div>;
