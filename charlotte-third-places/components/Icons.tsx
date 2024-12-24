@@ -18,6 +18,7 @@ import {
   IoCreateOutline,
   IoLogoTiktok,
   IoLogoYoutube,
+  IoLogoReddit,
 } from "react-icons/io5";
 import {
   LuMoon,
@@ -55,6 +56,7 @@ export const Icons = {
   instagram: LuInstagram,
   youtube: IoLogoYoutube,
   tiktok: IoLogoTiktok,
+  reddit: IoLogoReddit,
   link: LuLink,
   externalLink: LuExternalLink,
   logo: (props: IconProps) => (
