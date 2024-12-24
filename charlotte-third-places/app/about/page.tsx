@@ -29,10 +29,20 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    That would be me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. I have them to thank for making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. It didn't take long before the list got so long that my messages app suggested splitting it into chunks before sending it. To solve that problem, I could've spent a few minutes throwing the data into a spreadsheet, but where's the fun in that?
+                    That's me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. They played a huge role in making Charlotte feel like home. This site started as a simple list of my favorite spots on my phone. Before long, the list grew so much that even my messages app suggested splitting it into chunks before sending. Creating a spreadsheet would've been the easiest solution to this challenge, and I did exactly that, except after doing so, I started getting ideas of <ResponsiveLink href="https://www.youtube.com/watch?v=yPZLIf9MqUU">something greater</ResponsiveLink>.
                 </p>
                 <p>
-                    As a software engineer, I enjoy building stuff with tech, so I purposefully over-engineered this project as an excuse to learn new things. In the process, I've been able to experiment with languages, frameworks, and tools I don't use much in my day job, where I mostly focus on backend data engineering with Python, Scala, and SQL on Azure. So, if you're into tech, check out <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">this article</ResponsiveLink> for a dive into how the project was built.
+                    As a software engineer, I enjoy building stuff with tech, so I purposefully over-engineered this project as an excuse to learn new things. In the process, I've been able to experiment with stuff I don't use directly in my day job. I continue to tinker with the site, making improvements here and there, refactoring stuff to see if I can get it faster, more efficient,  more user friendly, etc. If you're into tech, check out <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">this article</ResponsiveLink> for a breakdown of how the project was built.
+                </p>
+            </div>
+        )
+    },
+    {
+        title: "Is Charlotte Third Places on social media?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                Yes, Charlotte Third Places is on <ResponsiveLink href="https://www.tiktok.com/@charlottethirdplaces">TikTok</ResponsiveLink>, <ResponsiveLink href="https://www.instagram.com/charlottethirdplaces">Instagram</ResponsiveLink>, <ResponsiveLink href="https://www.youtube.com/@charlottethirdplaces">YouTube</ResponsiveLink>, and <ResponsiveLink href="https://www.reddit.com/user/charlottethirdplaces">Reddit</ResponsiveLink>. You can visit all links using this <ResponsiveLink href="https://linktr.ee/charlottethirdplaces">Linktree</ResponsiveLink>.
                 </p>
             </div>
         )
