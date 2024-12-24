@@ -85,17 +85,50 @@ function formatDate(dateString: string): string {
     }).format(date);
 }
 
+export async function getPlaceById(id: string) {
+    try {
+        const record = await base('Charlotte Third Places').find(id);
+
+        return {
+            airtableRecordId: record.id,
+            name: record.get('Place') as string,
+            type: record.get('Type') as string[],
+            size: record.get('Size') as string,
+            ambience: record.get('Ambience') as string[],
+            neighborhood: record.get('Neighborhood') as string,
+            address: record.get('Address') as string,
+            purchaseRequired: record.get('Purchase Required') as string,
+            parkingSituation: record.get('Parking Situation') as string,
+            freeWifi: record.get('Free Wi-Fi') as string,
+            hasCinnamonRolls: record.get('Has Cinnamon Rolls') as string,
+            hasReviews: record.get('Has Reviews') as string,
+            description: record.get('Description') as string,
+            website: record.get('Website') as string,
+            googleMapsPlaceId: record.get('Google Maps Place Id') as string,
+            googleMapsProfileURL: record.get('Google Maps Profile URL') as string,
+            photos: record.get('Photos') as string[],
+            comments: record.get('Comments') as string,
+            latitude: record.get('Latitude') as number,
+            longitude: record.get('Longitude') as number,
+            createdDate: formatDate(record.get('Created Time') as string) as string,
+            lastModifiedDate: formatDate(record.get('Last Modified Time') as string) as string
+        };
+    } catch (error) {
+        console.error(`Failed to fetch place with ID ${id}:`, error);
+        throw new Error(`Failed to fetch place with ID ${id}`);
+    }
+}
+
 export async function getPlaces(): Promise<Place[]> {
     const records = await base('Charlotte Third Places').select({ view: 'Production' }).all();
 
     const places = await Promise.all(
         records.map(async (record) => {
             const airtableRecordId = record.id;
-            const placeName = record.get('Place') as string;
 
             return {
                 airtableRecordId: airtableRecordId,
-                name: placeName,
+                name: record.get('Place') as string,
                 type: record.get('Type') as string[],
                 size: record.get('Size') as string,
                 ambience: record.get('Ambience') as string[],
