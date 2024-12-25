@@ -134,8 +134,8 @@ export function SortSelect({ className }: { className?: string }) {
         }
         if (sortOption.field === SortField.LastModified) {
             return sortOption.direction === SortDirection.Ascending
-                ? "Last Modified (Oldest First)"
-                : "Last Modified (Newest First)";
+                ? "Last Updated (Oldest First)"
+                : "Last Updated (Newest First)";
         }
         return "Sort by...";
     }, [sortOption]);
@@ -157,8 +157,8 @@ export function SortSelect({ className }: { className?: string }) {
                                     ? "Date Added (Oldest First)"
                                     : "Date Added (Newest First)"
                                 : sortOption.direction === SortDirection.Ascending
-                                    ? "Last Modified (Oldest First)"
-                                    : "Last Modified (Newest First)"}
+                                    ? "Last Updated (Oldest First)"
+                                    : "Last Updated (Newest First)"}
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
@@ -177,10 +177,10 @@ export function SortSelect({ className }: { className?: string }) {
                             Date Added (Newest First)
                         </SelectItem>
                         <SelectItem value={`${SortField.LastModified}-${SortDirection.Ascending}`}>
-                            Last Modified (Oldest First)
+                            Last Updated (Oldest First)
                         </SelectItem>
                         <SelectItem value={`${SortField.LastModified}-${SortDirection.Descending}`}>
-                            Last Modified (Newest First)
+                            Last Updated (Newest First)
                         </SelectItem>
                     </SelectGroup>
                 </SelectContent>

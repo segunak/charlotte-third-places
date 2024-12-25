@@ -42,7 +42,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                Yes, Charlotte Third Places is on <ResponsiveLink href="https://www.tiktok.com/@charlottethirdplaces">TikTok</ResponsiveLink>, <ResponsiveLink href="https://www.instagram.com/charlottethirdplaces">Instagram</ResponsiveLink>, <ResponsiveLink href="https://www.youtube.com/@charlottethirdplaces">YouTube</ResponsiveLink>, and <ResponsiveLink href="https://www.reddit.com/user/charlottethirdplaces">Reddit</ResponsiveLink>. You can visit all links using this <ResponsiveLink href="https://linktr.ee/charlottethirdplaces">Linktree</ResponsiveLink>.
+                    Yes, Charlotte Third Places is on <ResponsiveLink href="https://www.tiktok.com/@charlottethirdplaces">TikTok</ResponsiveLink>, <ResponsiveLink href="https://www.instagram.com/charlottethirdplaces">Instagram</ResponsiveLink>, <ResponsiveLink href="https://www.youtube.com/@charlottethirdplaces">YouTube</ResponsiveLink>, and <ResponsiveLink href="https://www.reddit.com/user/charlottethirdplaces">Reddit</ResponsiveLink>. You can visit all links using this <ResponsiveLink href="https://linktr.ee/charlottethirdplaces">Linktree</ResponsiveLink>.
                 </p>
             </div>
         )
@@ -149,7 +149,7 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="metadata">
                         <AccordionTrigger>Metadata</AccordionTrigger>
                         <AccordionContent>
-                            This section provides site-specific details about a place. "Added" shows when the place was first included in the site's database, though it may not reflect its public visibility, as the site launched in September 2024. "Last Modified" indicates the most recent significant update to the place's details, either from Google Maps or custom fields. This date only updates when something substantial changes, minimizing unnecessary refreshes and network usage.
+                            This section provides site-specific details about a place. "Date Added" shows when the place was first included in the site's database, though it may not reflect its public visibility, as the site launched in September 2024. "Last Updated" indicates the most recent update to the place's details.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
@@ -245,13 +245,12 @@ export default function AboutPage() {
                 About
             </h1>
             <p className="text-wrap">
-                Welcome! This site is designed to help people in and around Charlotte, North Carolina discover third places in the area. Read on to learn about its creator, data sources, development process, the concept of third places, and more.
+                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. Keep reading to learn more.
             </p>
-
             {/* Creator*/}
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center mb-4 border-b pb-3">
+                    <CardTitle className="text-2xl text-center mb-4 border-b pb-3">
                         Creator
                     </CardTitle>
                     <div className="flex justify-center">
@@ -268,26 +267,18 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I built and maintain this site with the goal of connecting people with places in Charlotte where they can:
+                        Hello, I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>Work remotely.</li>
-                        <li>Study.</li>
-                        <li>Read.</li>
-                        <li>Write.</li>
-                        <li>Chill.</li>
-                        <li>
-                            <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">
-                                Watch anime.
-                            </ResponsiveLink>
+                        <li>Study, read, or write.</li>
+                        <li>Relax, unwind, decompress, people watch, catch up on shows, movies, or <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">anime</ResponsiveLink>.
                         </li>
-                        <li>Make friends.</li>
-                        <li>Hang out with friends.</li>
-                        <li>Hang out alone surrounded by people with friends (me during COVID as a Charlotte newbie).</li>
-                        <li>Eat cinnamon rolls while doing any of the above.</li>
+                        <li>Socialize, meet with friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
+                        <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
-                        Keep scrolling to get answers to frequently asked questions and learn more about the project.
+                        This site is designed to help people find spots in Charlotte for all these activities and more. Keep scrolling to get answers to frequently asked questions and learn more about the project.
                     </p>
                 </CardContent>
             </Card>
@@ -295,7 +286,7 @@ export default function AboutPage() {
             {/* Frequently Asked Questions */}
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                    <CardTitle className="text-2xl text-center border-b pb-3">
                         Frequently Asked Questions
                     </CardTitle>
                 </CardHeader>
@@ -314,7 +305,7 @@ export default function AboutPage() {
             {/* Tech Stack */}
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                    <CardTitle className="text-2xl text-center border-b pb-3">
                         Tech Stack
                     </CardTitle>
                 </CardHeader>
@@ -328,7 +319,7 @@ export default function AboutPage() {
             {/* Contact Information */}
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl sm:text-3xl text-center border-b pb-3">
+                    <CardTitle className="text-2xl text-center border-b pb-3">
                         Contact Information
                     </CardTitle>
                 </CardHeader>
