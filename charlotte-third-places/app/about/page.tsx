@@ -245,7 +245,7 @@ export default function AboutPage() {
                 About
             </h1>
             <p className="text-wrap">
-                Welcome! This site helps people in and around Charlotte, North Carolina, discover third places. Keep reading to learn more.
+                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. Keep reading to learn more.
             </p>
             {/* Creator*/}
             <Card className="border shadow-sm">
@@ -267,7 +267,7 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed space-y-4">
                     <p>
-                        Hello! I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
+                        Hello, I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>Work remotely.</li>
@@ -278,7 +278,7 @@ export default function AboutPage() {
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
-                        This site is designed to help people find the perfect spot in Charlotte for all these activities and more. Keep scrolling to get answers to frequently asked questions and learn more about the project.
+                        This site is designed to help people find spots in Charlotte for all these activities and more. Keep scrolling to get answers to frequently asked questions and learn more about the project.
                     </p>
                 </CardContent>
             </Card>
