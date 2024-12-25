@@ -274,7 +274,7 @@ export default function AboutPage() {
                         <li>Study, read, or write.</li>
                         <li>Relax, unwind, decompress, people watch, catch up on shows, movies, or <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">anime</ResponsiveLink>.
                         </li>
-                        <li>Socialize, meet with friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
+                        <li>Socialize, meet coworkers, meet friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
