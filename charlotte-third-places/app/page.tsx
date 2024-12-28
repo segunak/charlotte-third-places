@@ -2,8 +2,10 @@ import Link from "next/link";
 import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
+import { Separator } from "@/components/ui/separator"
 import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
+import { PlaceCardFeed } from "@/components/PlaceCardFeed";
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 
@@ -38,7 +40,14 @@ export default async function HomePage() {
               </span>
             </p>
           </div>
-          <DataTable rowData={places} />
+          <div className="space-y-4">
+            <Separator />
+            <div className="text-2xl font-bold">Feed</div>
+            <PlaceCardFeed />
+            <Separator />
+            <div className="text-2xl font-bold">All Places</div>
+            <DataTable rowData={places} />
+          </div>
         </section>
 
         {/*On mobile, this provides a button in the lower right for filtering */}
