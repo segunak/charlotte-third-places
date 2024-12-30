@@ -11,6 +11,7 @@ export function PlaceCardFeed({ places }: { places: Place[] }) {
                 items={places}
                 direction="right"
                 speed="normal"
+                pauseOnHover={false}
             />
         </div>
     );
