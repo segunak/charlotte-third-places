@@ -33,8 +33,8 @@ export const InfiniteMovingCards = ({
 
     const speedMapping: Record<Speed, string> = {
         fast: "500s",
-        normal: "1500s",
-        slow: "3500s",
+        normal: "1000s",
+        slow: "3000s",
     };
 
     // Set the speed for scrolling animation via CSS variables
