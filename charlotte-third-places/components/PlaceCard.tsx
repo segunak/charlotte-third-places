@@ -72,7 +72,7 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
     return (
-        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full" onClick={onClick}>
+        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font" onClick={onClick}>
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
                 <CardDescription className="truncate">

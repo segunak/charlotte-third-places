@@ -14,6 +14,7 @@
   :root {
     /* Light yellow for light mode */
     --highlight-bg: hsl(54, 100%, 85%);
+    --card-font-family: "IBM Plex Sans", sans-serif;
   }
 
   .dark {
@@ -34,6 +35,10 @@
 
   .z-60 {
     z-index: 60;
+  }
+
+  .card-font {
+    @apply [font-family:var(--card-font-family)];
   }
 }
 

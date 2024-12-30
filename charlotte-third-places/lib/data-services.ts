@@ -15,11 +15,11 @@ const base = new Airtable({
  * Reads and parses CSV data from a given file name (relative path),
  * converts each row into a `Place` object, and returns an array of `Place`.
  * 
- * @param {string} fileName - The relative path to the CSV file.
+ * @param {string} filePath - The relative path to the CSV file.
  * @returns {Promise<Place[]>} Promise that resolves to an array of Place objects.
  */
-const getPlacesFromCSV = async (fileName: string): Promise<Place[]> => {
-    const localDataPath = path.resolve(fileName);
+const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
+    const localDataPath = path.resolve(filePath);
     const places: Place[] = [];
 
     return new Promise((resolve, reject) => {
@@ -182,8 +182,8 @@ function formatDate(dateString: string): string {
 export async function getPlaceById(id: string) {
     try {
         if (process.env.NODE_ENV === 'development') {
-            console.log('Using CSV file as data source for local development');
-            const localData = await getPlacesFromCSV('./Charlotte Third Places-All.csv');
+            console.log('Info: Local development mode. Using CSV data for places.');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData.find((place) => place.airtableRecordId === id);
         }
 
@@ -231,8 +231,8 @@ export async function getPlaceById(id: string) {
 export async function getPlaces(): Promise<Place[]> {
     try {
         if (process.env.NODE_ENV === 'development') {
-            console.log('Using CSV data for local development');
-            const localData = await getPlacesFromCSV('./Charlotte Third Places-All.csv');
+            console.log('Info: Local development mode. Using CSV data for places.');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData;
         }
 

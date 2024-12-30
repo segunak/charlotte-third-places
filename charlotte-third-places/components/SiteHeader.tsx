@@ -35,21 +35,6 @@ export function SiteHeader() {
                             </div>
                         </Link>
                         <Link
-                            href="https://www.instagram.com/charlottethirdplaces/ "
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <div
-                                className={buttonVariants({
-                                    size: "icon",
-                                    variant: "ghost",
-                                })}
-                            >
-                                <Icons.instagram className="h-5 w-5" />
-                                <span className="sr-only">Instagram</span>
-                            </div>
-                        </Link>
-                        <Link
                             href="https://www.youtube.com/@charlottethirdplaces"
                             target="_blank"
                             rel="noreferrer"
@@ -62,6 +47,21 @@ export function SiteHeader() {
                             >
                                 <Icons.youtube className="h-5 w-5" />
                                 <span className="sr-only">YouTube</span>
+                            </div>
+                        </Link>
+                        <Link
+                            href="https://www.instagram.com/charlottethirdplaces/ "
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div
+                                className={buttonVariants({
+                                    size: "icon",
+                                    variant: "ghost",
+                                })}
+                            >
+                                <Icons.instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
                             </div>
                         </Link>
                         <Link

@@ -17,6 +17,15 @@ export const revalidate = REVALIDATE_TIME;
 export default async function HomePage() {
   const places = await getPlaces();
 
+  // Make a copy so we don’t mutate the original array for a shuffled feed in PlaceCardFeed
+  const shuffledPlaces = [...places];
+
+  // Shuffle in place (Fisher-Yates)
+  for (let i = shuffledPlaces.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledPlaces[i], shuffledPlaces[j]] = [shuffledPlaces[j], shuffledPlaces[i]];
+  }
+
   return (
     <FilterProvider places={places}>
       <div className="grid grid-cols-1 sm:grid-cols-[1fr_260px] min-h-screen">
@@ -43,7 +52,7 @@ export default async function HomePage() {
           <div className="space-y-4">
             <Separator />
             <div className="text-2xl font-bold">Feed</div>
-            <PlaceCardFeed places={places} />
+            <PlaceCardFeed places={shuffledPlaces} />
             <Separator />
             <div className="text-2xl font-bold">All Places</div>
             <DataTable rowData={places} />
