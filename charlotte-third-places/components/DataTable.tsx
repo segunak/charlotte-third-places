@@ -169,7 +169,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     autoSizeStrategy={autoSizeStrategy}
                     includeHiddenColumnsInQuickFilter={true}
                     suppressMovableColumns={true}
-                    domLayout="autoHeight" // Ensures that grid height adjusts to content
+                    domLayout="autoHeight"
                     getRowHeight={getRowHeight}
                     isFullWidthRow={isFullWidthRow}
                     fullWidthCellRenderer={fullWidthCellRenderer}

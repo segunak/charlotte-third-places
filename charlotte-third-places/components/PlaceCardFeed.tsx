@@ -6,7 +6,7 @@ import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
 
 export function PlaceCardFeed({ places }: { places: Place[] }) {
     return (
-        <div className="max-w-full sm:max-w-5xl mx-auto relative overflow-hidden">
+        <div className="relative overflow-hidden">
             <InfiniteMovingCards
                 items={places}
                 direction="right"
