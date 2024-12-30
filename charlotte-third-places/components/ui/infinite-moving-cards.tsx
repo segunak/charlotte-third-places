@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
                     {shuffledItems.map((place, idx) => (
                         <li
                             key={idx}
-                            className="w-[400px] max-w-full relative"
+                            className="w-[350px] sm:w-[400px] max-w-full relative"
                         >
                             <PlaceCard
                                 place={place}
