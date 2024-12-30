@@ -10,7 +10,7 @@ export function PlaceCardFeed({ places }: { places: Place[] }) {
             <InfiniteMovingCards
                 items={places}
                 direction="right"
-                speed="fast"
+                speed="normal"
             />
         </div>
     );

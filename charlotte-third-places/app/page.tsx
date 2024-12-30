@@ -58,11 +58,11 @@ export default async function HomePage() {
               <PlaceCardFeed places={shuffledPlaces} />
             </div>
             <Separator />
-          </div>
 
-          {/* DataTable Section */}
-          <div className="text-2xl font-bold">All Places</div>
-          <DataTable rowData={places} />
+            {/* DataTable Section */}
+            <div className="text-2xl font-bold">All Places</div>
+            <DataTable rowData={places} />
+          </div>
         </section>
 
         {/* Mobile Filter Dialog */}
