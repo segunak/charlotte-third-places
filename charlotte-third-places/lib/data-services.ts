@@ -5,11 +5,45 @@ import crypto from 'crypto';
 import Airtable from 'airtable';
 import csvParser from 'csv-parser';
 import { Place } from '@/lib/types';
+import { parse, format } from "date-fns";
 import stripBomStream from 'strip-bom-stream';
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
 }).base('apptV6h58vA4jhWFg');
+
+
+/**
+ * Parses a date string and formats it to "MM/dd/yyyy".
+ *
+ * This function attempts to parse a date string in the format "M/d/yyyy h:mma"
+ * (e.g., "12/27/2024 2:52pm") and then formats it to "MM/dd/yyyy". If the input
+ * date string is invalid or cannot be parsed, the original date string is returned.
+ *
+ * @param dateStr - The date string to parse and format.
+ * @returns The formatted date string in "MM/dd/yyyy" format, or the original date string if parsing fails.
+ */
+function parseAndFormatDate(dateStr: string): string {
+    if (!dateStr) return "";
+
+    try {
+        // Adjust to match your exact input format. Here, we assume "M/d/yyyy h:mma",
+        // e.g. "12/27/2024 2:52pm"
+        const parsedDate = parse(dateStr, "M/d/yyyy h:mma", new Date());
+
+        // If date-fns couldn’t parse it, parsedDate might be invalid. Check that:
+        if (isNaN(parsedDate.getTime())) {
+            // fallback: return original string if invalid
+            return dateStr;
+        }
+
+        // Format it as just "MM/dd/yyyy"
+        return format(parsedDate, "MM/dd/yyyy");
+    } catch (err) {
+        // fallback
+        return dateStr;
+    }
+}
 
 /**
  * Reads and parses CSV data from a given file name (relative path),
@@ -50,8 +84,10 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
                         comments: row['Comments'],
                         latitude: parseFloat(row['Latitude']) as number,
                         longitude: parseFloat(row['Longitude']) as number,
-                        createdDate: row['Created Time'],
-                        lastModifiedDate: row['Last Modified Time'],
+                        createdDate: parseAndFormatDate(row["Created Time"]),
+                        lastModifiedDate: parseAndFormatDate(row["Last Modified Time"])
+                        // createdDate: row['Created Time'],
+                        // lastModifiedDate: row['Last Modified Time']
                     });
                     rowIndex += 1;
                 } catch (error) {
