@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { shuffleArray } from "@/lib/utils";
 import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { DataTable } from "@/components/DataTable";
@@ -16,13 +17,7 @@ export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
-
-  // Shuffle places for PlaceCardFeed
-  const shuffledPlaces = [...places];
-  for (let i = shuffledPlaces.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledPlaces[i], shuffledPlaces[j]] = [shuffledPlaces[j], shuffledPlaces[i]];
-  }
+  const shuffledPlaces = shuffleArray(places);
 
   return (
     <FilterProvider places={places}>

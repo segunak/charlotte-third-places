@@ -2,6 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { Place } from "@/lib/types";
+import { Icons } from "@/components/Icons";
+import { shuffleArray } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import React, { useEffect, useState, useRef, useCallback } from "react";
@@ -26,41 +29,45 @@ export const InfiniteMovingCards = ({
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [isLoading, setIsLoading] = useState(true);
+    const [shuffledItems, setShuffledItems] = useState([...items, ...items]);
 
-    // Duplicate items array for an infinite "marquee" effect
-    const repeatedItems = [...items, ...items];
+    const speedMapping: Record<Speed, string> = {
+        fast: "500s",
+        normal: "1500s",
+        slow: "3500s",
+    };
 
     // Set the speed for scrolling animation via CSS variables
-    const getSpeed = useCallback(() => {
+    const setSpeed = useCallback((currentSpeed: Speed) => {
         if (scrollerRef.current) {
-            const speedMapping: Record<Speed, string> = {
-                fast: "500s",
-                normal: "1500s",
-                slow: "3500s",
-            };
             scrollerRef.current.style.setProperty(
                 "--animation-duration",
-                speedMapping[speed] ?? "1500s" // Default to "normal"
+                speedMapping[currentSpeed] ?? "1500s"
             );
         }
-    }, [speed]);
+    }, []);
 
     // Set the direction for scrolling animation via CSS variables
-    const getDirection = useCallback(() => {
+    const setDirection = useCallback(() => {
         if (scrollerRef.current) {
             scrollerRef.current.style.setProperty(
                 "--animation-direction",
-                direction === "left" ? "forwards" : "reverse" // Default to "right" = "reverse"
+                direction === "left" ? "forwards" : "reverse"
             );
         }
     }, [direction]);
 
+    const shuffleItems = () => {
+        const shuffled = shuffleArray(items);
+        setShuffledItems([...shuffled, ...shuffled]); // Update state with shuffled items
+    };
+
     // Initialize animation settings and stop loading spinner
     useEffect(() => {
-        getSpeed();
-        getDirection();
+        setSpeed(speed);
+        setDirection();
         setIsLoading(false); // Loading is complete once settings are applied
-    }, [getSpeed, getDirection]);
+    }, [setSpeed, setDirection, speed]);
 
     return (
         <div className="relative">
@@ -72,7 +79,7 @@ export const InfiniteMovingCards = ({
             <div
                 ref={containerRef}
                 className={cn(
-                    "scroller relative z-0 max-w-full overflow-hidden",
+                    "scroller relative z-0 max-w-full overflow-hidden pb-10",
                     "[mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]",
                     className
                 )}
@@ -84,7 +91,7 @@ export const InfiniteMovingCards = ({
                         pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
                 >
-                    {repeatedItems.map((place, idx) => (
+                    {shuffledItems.map((place, idx) => (
                         <li
                             key={idx}
                             className="w-[400px] max-w-full relative"
@@ -104,6 +111,13 @@ export const InfiniteMovingCards = ({
                     onClose={() => setSelectedPlace(null)}
                 />
             )}
+
+            {/* Shuffle Button */}
+            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
+                <Button className="h-8 w-8" size="icon" onClick={shuffleItems}>
+                    <Icons.shuffle className="h-5 w-5" />
+                </Button>
+            </div>
         </div>
     );
 };
