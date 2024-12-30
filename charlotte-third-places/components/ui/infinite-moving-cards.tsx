@@ -113,9 +113,13 @@ export const InfiniteMovingCards = ({
             )}
 
             {/* Shuffle Button */}
-            <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20">
-                <Button className="h-8 w-8" size="icon" onClick={shuffleItems}>
-                    <Icons.shuffle className="h-5 w-5" />
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
+                <Button
+                    className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
+                    size="icon"
+                    onClick={shuffleItems}
+                >
+                    <Icons.shuffle className="h-5 w-5 text-primary" />
                 </Button>
             </div>
         </div>
