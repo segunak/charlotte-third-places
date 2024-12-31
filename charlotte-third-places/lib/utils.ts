@@ -51,3 +51,54 @@ export function shuffleArray<T>(array: T[]): T[] {
   }
   return shuffled;
 }
+
+/**
+ * Shuffles an array ensuring that no two adjacent items have the same 'name' property.
+ * If it's impossible to arrange without adjacent duplicates (e.g., all items have the same name),
+ * the function returns the shuffled array as is.
+ * 
+ * @param array - The array to shuffle.
+ * @returns A new shuffled array with no adjacent duplicates by 'name', if possible.
+ */
+export function shuffleArrayNoAdjacentDuplicates<T extends { name: string }>(array: T[]): T[] {
+  if (array.length <= 1) return array;
+
+  let shuffled = shuffleArray(array);
+
+  const maxAttempts = 1000;
+  for (let attempt = 0; attempt < maxAttempts; attempt++) {
+    let hasAdjacentDuplicates = false;
+
+    for (let i = 1; i < shuffled.length; i++) {
+      if (shuffled[i].name === shuffled[i - 1].name) {
+        hasAdjacentDuplicates = true;
+
+        // Find an element to swap with that doesn't cause a duplicate
+        let swapIndex = -1;
+        for (let j = shuffled.length - 1; j > i; j--) {
+          if (shuffled[j].name !== shuffled[i - 1].name) {
+            swapIndex = j;
+            break;
+          }
+        }
+
+        if (swapIndex !== -1) {
+          [shuffled[i], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[i]];
+        } else {
+          // If no suitable swap found, cannot resolve duplicates in this attempt
+          break;
+        }
+      }
+    }
+
+    if (!hasAdjacentDuplicates) {
+      return shuffled;
+    }
+
+    // Reshuffle and retry
+    shuffled = shuffleArray(array);
+  }
+
+  // If unable to rearrange to avoid duplicates after maxAttempts, return the shuffled array
+  return shuffled;
+}

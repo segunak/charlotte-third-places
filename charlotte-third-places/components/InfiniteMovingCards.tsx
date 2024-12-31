@@ -189,7 +189,7 @@ export const InfiniteMovingCards = ({
     // Handle cases when there are no items after filtering
     if (filteredItems.length === 0) {
         return (
-            <div className="relative">
+            <div>
                 {isLoading && (
                     <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
                         <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>

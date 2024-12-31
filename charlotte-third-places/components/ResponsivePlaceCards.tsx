@@ -2,20 +2,25 @@
 
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
-import { shuffleArray } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
+import React, { useEffect, useState, useCallback } from "react";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
-    const shuffleItems = () => {
-        const shuffled = shuffleArray(places);
-        setShuffledItems([...shuffled, ...shuffled]); // Update state with shuffled items
-    };
+    const shuffleItems = useCallback(() => {
+        const shuffled = shuffleArrayNoAdjacentDuplicates(places);
+        setShuffledItems([...shuffled, ...shuffled]);
+    }, [places]);
+
+    // Initial shuffle on component mount and when 'places' prop changes
+    useEffect(() => {
+        shuffleItems();
+    }, [places, shuffleItems]); // Re-shuffle if 'places' prop changes
 
     return (
         <div className="relative overflow-hidden">
