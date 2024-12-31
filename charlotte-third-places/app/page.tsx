@@ -6,9 +6,9 @@ import { DataTable } from "@/components/DataTable";
 import { Separator } from "@/components/ui/separator";
 import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
-import { PlaceCardFeed } from "@/components/PlaceCardFeed";
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 // Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
@@ -50,7 +50,7 @@ export default async function HomePage() {
             <Separator />
             <div className="text-2xl font-bold">Feed</div>
             <div className="max-w-full">
-              <PlaceCardFeed places={shuffledPlaces} />
+              <ResponsivePlaceCards places={shuffledPlaces} />
             </div>
             <Separator />
 

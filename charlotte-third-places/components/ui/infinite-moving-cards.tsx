@@ -2,12 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { Place } from "@/lib/types";
-import { Icons } from "@/components/Icons";
-import { shuffleArray } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
-import React, { useEffect, useState, useRef, useCallback } from "react";
+import React, { useEffect, useState, useRef, useMemo, useCallback } from "react";
 
 type Direction = "left" | "right";
 type Speed = "fast" | "normal" | "slow";
@@ -29,13 +26,12 @@ export const InfiniteMovingCards = ({
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [isLoading, setIsLoading] = useState(true);
-    const [shuffledItems, setShuffledItems] = useState([...items, ...items]);
 
-    const speedMapping: Record<Speed, string> = {
+    const speedMapping = useMemo(() => ({
         fast: "500s",
         normal: "1000s",
         slow: "3000s",
-    };
+    }), []);
 
     // Set the speed for scrolling animation via CSS variables
     const setSpeed = useCallback((currentSpeed: Speed) => {
@@ -45,7 +41,7 @@ export const InfiniteMovingCards = ({
                 speedMapping[currentSpeed] ?? "1500s"
             );
         }
-    }, []);
+    }, [speedMapping]);
 
     // Set the direction for scrolling animation via CSS variables
     const setDirection = useCallback(() => {
@@ -57,11 +53,6 @@ export const InfiniteMovingCards = ({
         }
     }, [direction]);
 
-    const shuffleItems = () => {
-        const shuffled = shuffleArray(items);
-        setShuffledItems([...shuffled, ...shuffled]); // Update state with shuffled items
-    };
-
     // Initialize animation settings and stop loading spinner
     useEffect(() => {
         setSpeed(speed);
@@ -70,7 +61,7 @@ export const InfiniteMovingCards = ({
     }, [setSpeed, setDirection, speed]);
 
     return (
-        <div className="relative">
+        <div>
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
@@ -91,7 +82,7 @@ export const InfiniteMovingCards = ({
                         pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
                 >
-                    {shuffledItems.map((place, idx) => (
+                    {items.map((place, idx) => (
                         <li
                             key={idx}
                             className="w-[350px] sm:w-[400px] max-w-full relative"
@@ -111,17 +102,6 @@ export const InfiniteMovingCards = ({
                     onClose={() => setSelectedPlace(null)}
                 />
             )}
-
-            {/* Shuffle Button */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-                <Button
-                    className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
-                    size="icon"
-                    onClick={shuffleItems}
-                >
-                    <Icons.shuffle className="h-5 w-5 text-primary" />
-                </Button>
-            </div>
         </div>
     );
 };
