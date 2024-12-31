@@ -4,7 +4,9 @@ import { cn } from "@/lib/utils";
 import { Place } from "@/lib/types";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
-import React, { useEffect, useState, useRef, useMemo, useCallback } from "react";
+import { normalizeTextForSearch } from "@/lib/utils";
+import { FilterContext } from "@/contexts/FilterContext";
+import { useContext, useMemo, useRef, useState, useCallback, useEffect } from "react";
 
 type Direction = "left" | "right";
 type Speed = "fast" | "normal" | "slow";
@@ -24,24 +26,66 @@ export const InfiniteMovingCards = ({
 }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
+    const { filters, quickFilterText } = useContext(FilterContext); // Use FilterContext
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [isLoading, setIsLoading] = useState(true);
 
-    const speedMapping = useMemo(() => ({
-        fast: "500s",
-        normal: "1000s",
-        slow: "3000s",
-    }), []);
+    const speedMapping = useMemo(
+        () => ({
+            fast: "500s",
+            normal: "1000s",
+            slow: "3000s",
+        }),
+        []
+    );
+
+    // Filter the places using the context values
+    const filteredItems = useMemo(() => {
+        return items.filter((place) => {
+            const {
+                name,
+                type,
+                size,
+                neighborhood,
+                purchaseRequired,
+                parkingSituation,
+                freeWifi,
+                hasCinnamonRolls,
+            } = filters;
+
+            const matchesQuickSearch = normalizeTextForSearch(JSON.stringify(place)).includes(
+                normalizeTextForSearch(quickFilterText)
+            );
+
+            const isTypeMatch =
+                type.value === "all" || (place.type && place.type.includes(type.value));
+
+            return (
+                matchesQuickSearch &&
+                isTypeMatch &&
+                (name.value === "all" || place.name === name.value) &&
+                (size.value === "all" || place.size === size.value) &&
+                (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
+                (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
+                (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
+            );
+        });
+    }, [items, filters, quickFilterText]);
 
     // Set the speed for scrolling animation via CSS variables
-    const setSpeed = useCallback((currentSpeed: Speed) => {
-        if (scrollerRef.current) {
-            scrollerRef.current.style.setProperty(
-                "--animation-duration",
-                speedMapping[currentSpeed] ?? "1500s"
-            );
-        }
-    }, [speedMapping]);
+    const setSpeed = useCallback(
+        (currentSpeed: Speed) => {
+            if (scrollerRef.current) {
+                scrollerRef.current.style.setProperty(
+                    "--animation-duration",
+                    speedMapping[currentSpeed] ?? "1500s"
+                );
+            }
+        },
+        [speedMapping]
+    );
 
     // Set the direction for scrolling animation via CSS variables
     const setDirection = useCallback(() => {
@@ -53,7 +97,7 @@ export const InfiniteMovingCards = ({
         }
     }, [direction]);
 
-    // Initialize animation settings and stop loading spinner
+    // Initialize animation settings
     useEffect(() => {
         setSpeed(speed);
         setDirection();
@@ -82,7 +126,7 @@ export const InfiniteMovingCards = ({
                         pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
                 >
-                    {items.map((place, idx) => (
+                    {filteredItems.map((place, idx) => (
                         <li
                             key={idx}
                             className="w-[350px] sm:w-[400px] max-w-full relative"
