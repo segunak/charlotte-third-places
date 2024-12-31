@@ -14,6 +14,7 @@ import {
     useCallback,
     useEffect,
 } from "react";
+import { SortDirection, SortField } from "@/lib/types";
 
 type Direction = "left" | "right";
 type Speed = "fast" | "normal" | "slow";
@@ -36,7 +37,7 @@ export const InfiniteMovingCards = ({
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [animationKey, setAnimationKey] = useState(0);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const { filters, quickFilterText } = useContext(FilterContext);
+    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
 
     const speedMapping = useMemo(
         () => ({
@@ -58,15 +59,42 @@ export const InfiniteMovingCards = ({
         hasCinnamonRolls,
     } = filters;
 
+    const applySorting = useCallback(
+        (data: Place[]) => {
+            const { field, direction } = sortOption;
+
+            if (field === SortField.Name) {
+                return [...data].sort((a, b) =>
+                    direction === SortDirection.Ascending
+                        ? a.name.localeCompare(b.name)
+                        : b.name.localeCompare(a.name)
+                );
+            }
+
+            if (field === SortField.DateAdded || field === SortField.LastModified) {
+                return [...data].sort((a, b) => {
+                    const dateA = new Date(a[field]).getTime();
+                    const dateB = new Date(b[field]).getTime();
+                    return direction === SortDirection.Ascending ? dateA - dateB : dateB - dateA;
+                });
+            }
+
+            // If field is not recognized, return data as is
+            return data;
+        },
+        [sortOption]
+    );
+
     // Filter the places using the context values
     const filteredItems = useMemo(() => {
-        const filtered = items.filter((place) => {
+        let filtered = items.filter((place) => {
             const matchesQuickSearch = normalizeTextForSearch(
                 JSON.stringify(place)
             ).includes(normalizeTextForSearch(quickFilterText));
 
             const isTypeMatch =
-                type.value === "all" || (place.type && place.type.includes(type.value));
+                type.value === "all" ||
+                (place.type && place.type.includes(type.value));
 
             return (
                 matchesQuickSearch &&
@@ -80,6 +108,8 @@ export const InfiniteMovingCards = ({
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );
         });
+
+        filtered = applySorting(filtered);
 
         // If no items match, return empty array to handle gracefully
         if (filtered.length === 0) {
@@ -95,13 +125,25 @@ export const InfiniteMovingCards = ({
 
         // Slice the duplicated array to match the original items length
         return duplicatedItems.slice(0, items.length);
-    }, [items, name.value, type.value, size.value, neighborhood.value, purchaseRequired.value, parkingSituation.value, freeWifi.value, hasCinnamonRolls.value, quickFilterText]);
+    }, [
+        items,
+        name.value,
+        type.value,
+        size.value,
+        neighborhood.value,
+        purchaseRequired.value,
+        parkingSituation.value,
+        freeWifi.value,
+        hasCinnamonRolls.value,
+        quickFilterText,
+        applySorting,
+    ]);
 
     // Determine the current speed and direction
     const currentSpeed = speedMapping[speed] || "1000s";
     const currentDirection = direction === "left" ? "forwards" : "reverse";
 
-    // Restart the animation only when filters, speed, or direction change
+    // Restart the animation only when filters, sortOption, speed, or direction change
     useEffect(() => {
         if (filteredItems.length === 0) {
             // Optionally, handle the empty state here
@@ -113,7 +155,21 @@ export const InfiniteMovingCards = ({
         setAnimationKey((prev) => prev + 1);
 
         setIsLoading(false);
-    }, [name.value, type.value, size.value, neighborhood.value, purchaseRequired.value, parkingSituation.value, freeWifi.value, hasCinnamonRolls.value, currentSpeed, currentDirection, filteredItems.length]);
+    }, [
+        name.value,
+        type.value,
+        size.value,
+        neighborhood.value,
+        purchaseRequired.value,
+        parkingSituation.value,
+        freeWifi.value,
+        hasCinnamonRolls.value,
+        sortOption.field,
+        sortOption.direction,
+        currentSpeed,
+        currentDirection,
+        filteredItems.length,
+    ]);
 
     // Function to restart animation by resetting CSS animation
     const restartAnimation = useCallback(() => {
@@ -162,7 +218,7 @@ export const InfiniteMovingCards = ({
                 )}
             >
                 <ul
-                    key={animationKey} // Key to force re-render and restart animation only on filter, speed, or direction changes
+                    key={animationKey} // Key to force re-render and restart animation only on filter, sort, speed, or direction changes
                     ref={scrollerRef}
                     className={cn(
                         "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
