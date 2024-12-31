@@ -47,20 +47,20 @@ export const InfiniteMovingCards = ({
         []
     );
 
+    const {
+        name,
+        type,
+        size,
+        neighborhood,
+        purchaseRequired,
+        parkingSituation,
+        freeWifi,
+        hasCinnamonRolls,
+    } = filters;
+
     // Filter the places using the context values
     const filteredItems = useMemo(() => {
         const filtered = items.filter((place) => {
-            const {
-                name,
-                type,
-                size,
-                neighborhood,
-                purchaseRequired,
-                parkingSituation,
-                freeWifi,
-                hasCinnamonRolls,
-            } = filters;
-
             const matchesQuickSearch = normalizeTextForSearch(
                 JSON.stringify(place)
             ).includes(normalizeTextForSearch(quickFilterText));
@@ -95,13 +95,13 @@ export const InfiniteMovingCards = ({
 
         // Slice the duplicated array to match the original items length
         return duplicatedItems.slice(0, items.length);
-    }, [items, filters, quickFilterText]);
+    }, [items, name.value, type.value, size.value, neighborhood.value, purchaseRequired.value, parkingSituation.value, freeWifi.value, hasCinnamonRolls.value, quickFilterText]);
 
     // Determine the current speed and direction
     const currentSpeed = speedMapping[speed] || "1000s";
     const currentDirection = direction === "left" ? "forwards" : "reverse";
 
-    // Restart the animation whenever filteredItems, speed, or direction changes
+    // Restart the animation only when filters, speed, or direction change
     useEffect(() => {
         if (filteredItems.length === 0) {
             // Optionally, handle the empty state here
@@ -113,7 +113,7 @@ export const InfiniteMovingCards = ({
         setAnimationKey((prev) => prev + 1);
 
         setIsLoading(false);
-    }, [filteredItems, currentSpeed, currentDirection]);
+    }, [name.value, type.value, size.value, neighborhood.value, purchaseRequired.value, parkingSituation.value, freeWifi.value, hasCinnamonRolls.value, currentSpeed, currentDirection, filteredItems.length]);
 
     // Function to restart animation by resetting CSS animation
     const restartAnimation = useCallback(() => {
@@ -162,7 +162,7 @@ export const InfiniteMovingCards = ({
                 )}
             >
                 <ul
-                    key={animationKey} // Key to force re-render and restart animation
+                    key={animationKey} // Key to force re-render and restart animation only on filter, speed, or direction changes
                     ref={scrollerRef}
                     className={cn(
                         "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
