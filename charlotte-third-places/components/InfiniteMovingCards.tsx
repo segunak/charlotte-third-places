@@ -6,7 +6,14 @@ import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import { normalizeTextForSearch } from "@/lib/utils";
 import { FilterContext } from "@/contexts/FilterContext";
-import { useContext, useMemo, useRef, useState, useCallback, useEffect } from "react";
+import {
+    useContext,
+    useMemo,
+    useRef,
+    useState,
+    useCallback,
+    useEffect,
+} from "react";
 
 type Direction = "left" | "right";
 type Speed = "fast" | "normal" | "slow";
@@ -24,11 +31,12 @@ export const InfiniteMovingCards = ({
     pauseOnHover?: boolean;
     className?: string;
 }) => {
+    const [isLoading, setIsLoading] = useState(true);
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
-    const { filters, quickFilterText } = useContext(FilterContext);
+    const [animationKey, setAnimationKey] = useState(0);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
+    const { filters, quickFilterText } = useContext(FilterContext);
 
     const speedMapping = useMemo(
         () => ({
@@ -53,9 +61,9 @@ export const InfiniteMovingCards = ({
                 hasCinnamonRolls,
             } = filters;
 
-            const matchesQuickSearch = normalizeTextForSearch(JSON.stringify(place)).includes(
-                normalizeTextForSearch(quickFilterText)
-            );
+            const matchesQuickSearch = normalizeTextForSearch(
+                JSON.stringify(place)
+            ).includes(normalizeTextForSearch(quickFilterText));
 
             const isTypeMatch =
                 type.value === "all" || (place.type && place.type.includes(type.value));
@@ -73,46 +81,73 @@ export const InfiniteMovingCards = ({
             );
         });
 
-        // If there's only one card, repeat it for scrolling effect
-        if (filtered.length === 1) {
-            return [...filtered, ...filtered];
+        // If no items match, return empty array to handle gracefully
+        if (filtered.length === 0) {
+            return [];
         }
 
-        return filtered;
+        // Determine how many times to duplicate the filtered items to match the original items length
+        const duplicationFactor = Math.ceil(items.length / filtered.length);
+        const duplicatedItems = Array.from(
+            { length: duplicationFactor },
+            () => filtered
+        ).flat();
+
+        // Slice the duplicated array to match the original items length
+        return duplicatedItems.slice(0, items.length);
     }, [items, filters, quickFilterText]);
 
-    // Set the speed for scrolling animation via CSS variables
-    const setSpeed = useCallback(
-        (currentSpeed: Speed) => {
-            if (scrollerRef.current) {
-                scrollerRef.current.style.setProperty(
-                    "--animation-duration",
-                    speedMapping[currentSpeed] ?? "1000s"
-                );
-            }
-        },
-        [speedMapping]
-    );
+    // Determine the current speed and direction
+    const currentSpeed = speedMapping[speed] || "1000s";
+    const currentDirection = direction === "left" ? "forwards" : "reverse";
 
-    // Set the direction for scrolling animation via CSS variables
-    const setDirection = useCallback(() => {
-        if (scrollerRef.current) {
-            scrollerRef.current.style.setProperty(
-                "--animation-direction",
-                direction === "left" ? "forwards" : "reverse"
-            );
-        }
-    }, [direction]);
-
-    // Initialize animation settings
+    // Restart the animation whenever filteredItems, speed, or direction changes
     useEffect(() => {
-        setSpeed(speed);
-        setDirection();
-        setIsLoading(false); // Loading is complete once settings are applied
-    }, [setSpeed, setDirection, speed]);
+        if (filteredItems.length === 0) {
+            // Optionally, handle the empty state here
+            setIsLoading(false);
+            return;
+        }
+
+        // Update the animation key to trigger re-render and restart animation
+        setAnimationKey((prev) => prev + 1);
+
+        setIsLoading(false);
+    }, [filteredItems, currentSpeed, currentDirection]);
+
+    // Function to restart animation by resetting CSS animation
+    const restartAnimation = useCallback(() => {
+        if (scrollerRef.current) {
+            scrollerRef.current.style.animation = "none";
+            // Trigger reflow to restart the animation
+            scrollerRef.current.offsetHeight;
+            scrollerRef.current.style.animation = "";
+        }
+    }, []);
+
+    // Restart animation whenever animationKey changes
+    useEffect(() => {
+        restartAnimation();
+    }, [animationKey, restartAnimation]);
+
+    // Handle cases when there are no items after filtering
+    if (filteredItems.length === 0) {
+        return (
+            <div className="relative">
+                {isLoading && (
+                    <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
+                        <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    </div>
+                )}
+                <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
+                    <p className="text-gray-500">No places match your filters.</p>
+                </div>
+            </div>
+        );
+    }
 
     return (
-        <div>
+        <div className="relative">
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
@@ -127,12 +162,16 @@ export const InfiniteMovingCards = ({
                 )}
             >
                 <ul
+                    key={animationKey} // Key to force re-render and restart animation
                     ref={scrollerRef}
                     className={cn(
                         "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
-                        pauseOnHover && "hover:[animation-play-state:paused]",
-                        filteredItems.length === 1 && "justify-center"
+                        pauseOnHover && "hover:[animation-play-state:paused]"
                     )}
+                    style={{
+                        "--animation-duration": currentSpeed,
+                        "--animation-direction": currentDirection,
+                    } as React.CSSProperties}
                 >
                     {filteredItems.map((place, idx) => (
                         <li
