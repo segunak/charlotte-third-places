@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import React, { useEffect, useState, useRef, useCallback } from "react";
-import { InfiniteMovingCards } from "@/components/ui/infinite-moving-cards"
+import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
