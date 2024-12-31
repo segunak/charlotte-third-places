@@ -26,7 +26,7 @@ export const InfiniteMovingCards = ({
 }) => {
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
-    const { filters, quickFilterText } = useContext(FilterContext); // Use FilterContext
+    const { filters, quickFilterText } = useContext(FilterContext);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -41,7 +41,7 @@ export const InfiniteMovingCards = ({
 
     // Filter the places using the context values
     const filteredItems = useMemo(() => {
-        return items.filter((place) => {
+        const filtered = items.filter((place) => {
             const {
                 name,
                 type,
@@ -72,6 +72,13 @@ export const InfiniteMovingCards = ({
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );
         });
+
+        // If there's only one card, repeat it for scrolling effect
+        if (filtered.length === 1) {
+            return [...filtered, ...filtered];
+        }
+
+        return filtered;
     }, [items, filters, quickFilterText]);
 
     // Set the speed for scrolling animation via CSS variables
@@ -80,7 +87,7 @@ export const InfiniteMovingCards = ({
             if (scrollerRef.current) {
                 scrollerRef.current.style.setProperty(
                     "--animation-duration",
-                    speedMapping[currentSpeed] ?? "1500s"
+                    speedMapping[currentSpeed] ?? "1000s"
                 );
             }
         },
@@ -123,7 +130,8 @@ export const InfiniteMovingCards = ({
                     ref={scrollerRef}
                     className={cn(
                         "flex min-w-full shrink-0 gap-4 py-4 w-max flex-nowrap animate-scroll",
-                        pauseOnHover && "hover:[animation-play-state:paused]"
+                        pauseOnHover && "hover:[animation-play-state:paused]",
+                        filteredItems.length === 1 && "justify-center"
                     )}
                 >
                     {filteredItems.map((place, idx) => (
