@@ -14,9 +14,9 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
 
     return (
-        <div className={`${className} mt-4`}>
+        <div className={`${className} shadow-2xl rounded-md p-4`}>
             {showSort && (
-                <div className="space-y-[.65rem]">
+                <div className="space-y-[.65rem] mb-6">
                     <h2 className="font-bold text-lg">Sort</h2>
                     <SortSelect />
                 </div>
@@ -24,7 +24,7 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
             <h2 className="font-bold text-lg">
                 Filter
                 {activeFilterCount > 0 && (
-                    <span className={`absolute ${showSort ? 'top-[6.3rem] right-[10.7rem]' : 'top-[.5rem] right-[11rem]'} flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full`}
+                    <span className={`absolute ${showSort ? 'top-[6.7rem] right-[10.7rem]' : 'top-[.5rem] right-[9.7rem]'} flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full`}
                     >
                         {activeFilterCount}
                     </span>

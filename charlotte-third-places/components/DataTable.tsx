@@ -169,7 +169,7 @@ export function DataTable({ rowData }: DataTableProps) {
     return (
         <div className="relative flex-1">
             {isLoading && (
-                <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
+                <div className="mt-16 absolute inset-0 flex items-center justify-center bg-background z-10">
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                 </div>
             )}

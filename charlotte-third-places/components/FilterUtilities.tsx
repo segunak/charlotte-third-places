@@ -16,7 +16,7 @@ import {
 import { FilterContext } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 
-const maxWidth = "md:min-w-[14.3rem] md:max-w-[14.3rem]";
+const maxWidth = "max-w-full";
 
 export function FilterQuickSearch() {
     const { quickFilterText, setQuickFilterText } = useContext(FilterContext);
@@ -129,13 +129,13 @@ export function SortSelect({ className }: { className?: string }) {
         }
         if (sortOption.field === SortField.DateAdded) {
             return sortOption.direction === SortDirection.Ascending
-                ? "Date Added (Oldest First)"
-                : "Date Added (Newest First)";
+                ? "Date Added (Old to New)"
+                : "Date Added (New to Old)";
         }
         if (sortOption.field === SortField.LastModified) {
             return sortOption.direction === SortDirection.Ascending
-                ? "Last Updated (Oldest First)"
-                : "Last Updated (Newest First)";
+                ? "Last Updated (Old to New)"
+                : "Last Updated (New to Old)";
         }
         return "Sort by...";
     }, [sortOption]);
@@ -154,11 +154,11 @@ export function SortSelect({ className }: { className?: string }) {
                                 : "Name (Z-A)"
                             : sortOption.field === SortField.DateAdded
                                 ? sortOption.direction === SortDirection.Ascending
-                                    ? "Date Added (Oldest First)"
-                                    : "Date Added (Newest First)"
+                                    ? "Date Added (Old to New)"
+                                    : "Date Added (New to Old)"
                                 : sortOption.direction === SortDirection.Ascending
-                                    ? "Last Updated (Oldest First)"
-                                    : "Last Updated (Newest First)"}
+                                    ? "Last Updated (Old to New)"
+                                    : "Last Updated (New to Old)"}
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
@@ -171,16 +171,16 @@ export function SortSelect({ className }: { className?: string }) {
                             Name (Z-A)
                         </SelectItem>
                         <SelectItem value={`${SortField.DateAdded}-${SortDirection.Ascending}`}>
-                            Date Added (Oldest First)
+                            Date Added (Old to New)
                         </SelectItem>
                         <SelectItem value={`${SortField.DateAdded}-${SortDirection.Descending}`}>
-                            Date Added (Newest First)
+                            Date Added (New to Old)
                         </SelectItem>
                         <SelectItem value={`${SortField.LastModified}-${SortDirection.Ascending}`}>
-                            Last Updated (Oldest First)
+                            Last Updated (Old to New)
                         </SelectItem>
                         <SelectItem value={`${SortField.LastModified}-${SortDirection.Descending}`}>
-                            Last Updated (Newest First)
+                            Last Updated (New to Old)
                         </SelectItem>
                     </SelectGroup>
                 </SelectContent>

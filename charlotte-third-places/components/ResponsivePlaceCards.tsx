@@ -12,8 +12,7 @@ import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [hasItems, setHasItems] = useState<boolean>(false);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    //const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
-    const [shuffledItems, setShuffledItems] = useState(places.slice(0, 1));
+    const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
 
     const shuffleItems = useCallback(() => {
         const shuffled = shuffleArrayNoAdjacentDuplicates(places);
@@ -31,7 +30,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 className="hidden sm:block"
                 items={shuffledItems}
                 direction="right"
-                speed="fast"
+                speed="normal"
                 pauseOnHover={false}
                 onItemsChange={handleItemsChange}
             />
