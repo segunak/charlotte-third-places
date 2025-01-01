@@ -19,19 +19,23 @@ import { SortDirection, SortField } from "@/lib/types";
 type Direction = "left" | "right";
 type Speed = "fast" | "normal" | "slow";
 
-export const InfiniteMovingCards = ({
-    items,
-    direction = "right", // Default to "right"
-    speed = "normal", // Default to "normal"
-    pauseOnHover = true,
-    className,
-}: {
+interface InfiniteMovingCardsProps {
     items: Place[];
     direction?: Direction;
     speed?: Speed;
     pauseOnHover?: boolean;
     className?: string;
-}) => {
+    onItemsChange?: (count: number) => void; // New Callback Prop
+}
+
+export const InfiniteMovingCards = ({
+    items,
+    direction = "right",
+    speed = "normal",
+    pauseOnHover = true,
+    className,
+    onItemsChange,
+}: InfiniteMovingCardsProps) => {
     const [isLoading, setIsLoading] = useState(true);
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
@@ -61,26 +65,24 @@ export const InfiniteMovingCards = ({
 
     const applySorting = useCallback(
         (data: Place[]) => {
-            const { field, direction } = sortOption;
+            return [...data].sort((a: any, b: any) => {
+                const { field, direction } = sortOption;
 
-            if (field === SortField.Name) {
-                return [...data].sort((a, b) =>
-                    direction === SortDirection.Ascending
-                        ? a.name.localeCompare(b.name)
-                        : b.name.localeCompare(a.name)
-                );
-            }
+                // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)
+                const valueA = a[field] || "";
+                const valueB = b[field] || "";
 
-            if (field === SortField.DateAdded || field === SortField.LastModified) {
-                return [...data].sort((a, b) => {
-                    const dateA = new Date(a[field]).getTime();
-                    const dateB = new Date(b[field]).getTime();
-                    return direction === SortDirection.Ascending ? dateA - dateB : dateB - dateA;
-                });
-            }
+                if (field === SortField.Name) {
+                    return direction === SortDirection.Ascending
+                        ? valueA.localeCompare(valueB)
+                        : valueB.localeCompare(valueA);
+                }
 
-            // If field is not recognized, return data as is
-            return data;
+                // For date fields, compare as dates
+                const dateA = new Date(valueA).getTime();
+                const dateB = new Date(valueB).getTime();
+                return direction === SortDirection.Ascending ? dateA - dateB : dateB - dateA;
+            });
         },
         [sortOption]
     );
@@ -111,20 +113,27 @@ export const InfiniteMovingCards = ({
 
         filtered = applySorting(filtered);
 
+        // Notify parent about the number of filtered items
+        if (onItemsChange) {
+            onItemsChange(filtered.length);
+        }
+
         // If no items match, return empty array to handle gracefully
         if (filtered.length === 0) {
             return [];
         }
 
-        // Determine how many times to duplicate the filtered items to match the original items length
-        const duplicationFactor = Math.ceil(items.length / filtered.length);
-        const duplicatedItems = Array.from(
-            { length: duplicationFactor },
-            () => filtered
-        ).flat();
+        // // Determine how many times to duplicate the filtered items to match the original items length
+        // const duplicationFactor = Math.ceil(items.length / filtered.length);
+        // const duplicatedItems = Array.from(
+        //     { length: duplicationFactor },
+        //     () => filtered
+        // ).flat();
 
-        // Slice the duplicated array to match the original items length
-        return duplicatedItems.slice(0, items.length);
+        // // Slice the duplicated array to match the original items length
+        // return duplicatedItems.slice(0, items.length);
+
+        return filtered;
     }, [
         items,
         name.value,
@@ -137,6 +146,7 @@ export const InfiniteMovingCards = ({
         hasCinnamonRolls.value,
         quickFilterText,
         applySorting,
+        onItemsChange
     ]);
 
     // Determine the current speed and direction
@@ -175,7 +185,6 @@ export const InfiniteMovingCards = ({
     const restartAnimation = useCallback(() => {
         if (scrollerRef.current) {
             scrollerRef.current.style.animation = "none";
-            // Trigger reflow to restart the animation
             scrollerRef.current.offsetHeight;
             scrollerRef.current.style.animation = "";
         }
@@ -195,7 +204,7 @@ export const InfiniteMovingCards = ({
                         <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                     </div>
                 )}
-                <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
+                <div className="flex items-center justify-center bg-background z-10">
                     <p className="text-gray-500">No places match your filters.</p>
                 </div>
             </div>
@@ -231,7 +240,7 @@ export const InfiniteMovingCards = ({
                 >
                     {filteredItems.map((place, idx) => (
                         <li
-                            key={idx}
+                            key={`${place.name}-${idx}`}
                             className="w-[350px] sm:w-[400px] max-w-full relative"
                         >
                             <PlaceCard

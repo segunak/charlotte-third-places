@@ -5,32 +5,35 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
+import React, { useState, useCallback } from "react";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
-import React, { useEffect, useState, useCallback } from "react";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
+    const [hasItems, setHasItems] = useState<boolean>(false);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
+    //const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
+    const [shuffledItems, setShuffledItems] = useState(places.slice(0, 1));
+
     const shuffleItems = useCallback(() => {
         const shuffled = shuffleArrayNoAdjacentDuplicates(places);
         setShuffledItems([...shuffled, ...shuffled]);
     }, [places]);
 
-    // Initial shuffle on component mount and when 'places' prop changes
-    useEffect(() => {
-        shuffleItems();
-    }, [places, shuffleItems]); // Re-shuffle if 'places' prop changes
+    const handleItemsChange = (count: number) => {
+        setHasItems(count > 0);
+    };
 
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden max-w-full">
             {/* Desktop Carousel */}
             <InfiniteMovingCards
                 className="hidden sm:block"
                 items={shuffledItems}
                 direction="right"
-                speed="normal"
+                speed="fast"
                 pauseOnHover={false}
+                onItemsChange={handleItemsChange}
             />
 
             {/* Mobile Random Card Picker */}
@@ -42,15 +45,17 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             </div>
 
             {/* Shuffle Button */}
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-                <Button
-                    className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
-                    size="icon"
-                    onClick={shuffleItems}
-                >
-                    <Icons.shuffle className="h-5 w-5 text-primary" />
-                </Button>
-            </div>
+            {hasItems && (
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
+                    <Button
+                        className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
+                        size="icon"
+                        onClick={shuffleItems}
+                    >
+                        <Icons.shuffle className="h-5 w-5 text-primary" />
+                    </Button>
+                </div>
+            )}
 
             {selectedPlace && (
                 <PlaceModal

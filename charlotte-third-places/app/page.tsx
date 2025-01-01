@@ -7,7 +7,6 @@ import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
 
 // See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
@@ -17,7 +16,6 @@ export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
-  const shuffledPlaces = shuffleArrayNoAdjacentDuplicates(places);
 
   return (
     <FilterProvider places={places}>
@@ -45,13 +43,13 @@ export default async function HomePage() {
             </p>
           </div>
 
-          {/* Feed Section */}
+
           <div className="space-y-4">
             <Separator />
+
+            {/* Feed Section */}
             <div className="text-2xl font-bold">Feed</div>
-            <div className="max-w-full">
-              <ResponsivePlaceCards places={shuffledPlaces} />
-            </div>
+            <ResponsivePlaceCards places={places} />
             <Separator />
 
             {/* DataTable Section */}
