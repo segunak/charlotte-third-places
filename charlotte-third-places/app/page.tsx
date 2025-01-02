@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
-import { DataTable } from "@/components/DataTable";
 import { Separator } from "@/components/ui/separator";
-import { FilterDialog } from '@/components/FilterDialog';
 import { FilterProvider } from '@/contexts/FilterContext';
-import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
+import { PlaceListWithFilters } from "@/components/PlaceListWithFilters";
 
 /* See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
 Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
@@ -46,25 +44,7 @@ export default async function HomePage() {
           <Separator />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
-          <div className="sm:hidden space-y-4 mb-4">
-            <div className="text-xl font-bold">List</div>
-            <p>Browse the complete list of places below. Use the <span className="font-bold text-primary">button in the lower-right corner</span> to sort and filter.</p>
-          </div>
-          <section className="sm:pr-12">
-            <DataTable rowData={places} />
-          </section>
-
-          {/* Mobile Filter Dialog */}
-          <div className="sm:hidden">
-            <FilterDialog showSort={true} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
-          </div>
-
-          {/* Desktop Filter Sidebar */}
-          <div className="hidden sm:block">
-            <FilterSidebar showSort={true} className="max-w-[265px] border border-border sticky top-16 px-6 space-y-[.65rem]" />
-          </div>
-        </div>
+        <PlaceListWithFilters places={places} />
       </div>
     </FilterProvider>
   );
