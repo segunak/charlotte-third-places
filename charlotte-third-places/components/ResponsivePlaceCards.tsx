@@ -3,57 +3,13 @@
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
-import { CardStack } from "@/components/CardStack";
-import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
+import { CardCarousel } from "@/components/CardCarousel";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import React, { useState, useCallback, useEffect } from "react";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
-
-    const CARDS = [
-        {
-            id: 0,
-            name: "Manu Arora",
-            designation: "Senior Software Engineer",
-            content: (
-                <p>
-                    These cards are amazing, I want to use them in my
-                    project. Framer motion is a godsend ngl tbh fam 🙏
-                </p>
-            ),
-        },
-        {
-            id: 1,
-            name: "Elon Musk",
-            designation: "Senior Shitposter",
-            content: (
-                <p>
-                    I dont like this Twitter thing,{" "}
-                    deleting it right away because yolo. Instead, I
-                    would like to call it X.com so that it can easily
-                    be confused with adult sites.
-                </p>
-            ),
-        },
-        {
-            id: 2,
-            name: "Tyler Durden",
-            designation: "Manager Project Mayhem",
-            content: (
-                <p>
-                    The first rule of
-                    Fight Club is that you do not talk about fight
-                    club. The second rule of
-                    Fight club is that you DO NOT TALK about fight
-                    club.
-                </p>
-            ),
-        },
-    ];
-
-
     const [hasItems, setHasItems] = useState<boolean>(false);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
     const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
@@ -67,6 +23,8 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             setIsLoading(false);
         }, 0);
     }, [places]);
+
+    
 
     useEffect(() => {
         shuffleItems();
@@ -95,18 +53,9 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 onItemsChange={handleItemsChange}
             />
 
-            {/* Mobile Random Card Picker */}
+            {/* Mobile Carousel */}
             <div className="sm:hidden mb-20">
-                {/* {shuffledItems.length > 0 && (
-                    <PlaceCard
-                        place={shuffledItems[0]}
-                        onClick={() => setSelectedPlace(shuffledItems[0])}
-                    />
-                )} */}
-
-                <div className="h-[40rem] flex items-center justify-center w-full">
-                    <CardStack items={CARDS} />
-                </div>
+                <CardCarousel items={shuffledItems} />
             </div>
 
             {/* Shuffle Button */}
