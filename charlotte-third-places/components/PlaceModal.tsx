@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Place } from "@/lib/types";
+import { Icons } from "@/components/Icons"
 import { FC, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator"
@@ -44,8 +45,49 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
+
                 <div className="space-y-[0.6rem]">
-                    <p>
+                    <div className="flex justify-center space-x-4">
+                        <Button
+                            variant="outline"
+                            asChild
+                            className="flex items-center space-x-2"
+                            disabled={!place.googleMapsProfileURL?.trim()}
+                        >
+                            <ResponsiveLink
+                                href={place.googleMapsProfileURL?.trim() || "#"}
+                            >
+                                <Icons.google className="h-5 w-5" />
+                                {/* <span>Google Maps</span> */}
+                            </ResponsiveLink>
+                        </Button>
+                        <Button
+                            variant="outline"
+                            asChild
+                            className="flex items-center space-x-2"
+                            disabled={true}
+                        >
+                            <ResponsiveLink
+                                href={place.website?.trim() || "#"}
+                            >
+                                <Icons.externalLink className="h-5 w-5" />
+                                {/* <span>Website</span> */}
+                            </ResponsiveLink>
+                        </Button>
+                        <Button
+                            variant="outline"
+                            asChild
+                            className="flex items-center space-x-2"
+                        >
+                            <ResponsiveLink
+                                href={`/places/${place.airtableRecordId}`}
+                            >
+                                <Icons.link className="h-5 w-5" />
+                                {/* <span>Site Profile</span> */}
+                            </ResponsiveLink>
+                        </Button>
+                    </div>
+                    {/* <p>
                         <strong>Website:</strong>{" "}
                         {place.website?.trim() ? (
                             <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
@@ -66,7 +108,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                         ) : (
                             "No profile available."
                         )}
-                    </p>
+                    </p> */}
                     <Separator />
                     <p><strong>Address:</strong> {place.address}</p>
                     <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
