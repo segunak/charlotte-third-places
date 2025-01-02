@@ -17,7 +17,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const shuffleItems = useCallback(() => {
-        setIsLoading(true)
         if (shuffleTimeout.current) {
             clearTimeout(shuffleTimeout.current);
         }
@@ -25,7 +24,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         shuffleTimeout.current = window.setTimeout(() => {
             const shuffled = shuffleArrayNoAdjacentDuplicates(places);
             setShuffledItems(shuffled);
-            setIsLoading(false);
         }, 0);
     }, [places]);
 
