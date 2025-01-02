@@ -37,8 +37,8 @@ export default async function HomePage() {
         <Separator className="sm:hidden" />
 
         <div className="sm:hidden space-y-4">
-          <div className="text-2xl font-bold">Carousel</div>
-          <p>Swipe through to explore various places. Feeling adventurous? Click the shuffle button for a random pick!</p>
+          <div className="text-xl font-bold">Carousel</div>
+          <p><span className="font-bold text-primary">Swipe through</span> to explore various places. Feeling adventurous? Click the shuffle button for a random pick!</p>
         </div>
         <ResponsivePlaceCards places={places} />
 
@@ -48,8 +48,8 @@ export default async function HomePage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
           <div className="sm:hidden space-y-4 mb-4">
-            <div className="text-2xl font-bold">List</div>
-            <p>Browse the complete list of places below. Use the button in the lower-right corner to sort and filter.</p>
+            <div className="text-xl font-bold">List</div>
+            <p>Browse the complete list of places below. Use the <span className="font-bold text-primary">button in the lower-right corner</span> to sort and filter.</p>
           </div>
           <section className="sm:pr-12">
             <DataTable rowData={places} />

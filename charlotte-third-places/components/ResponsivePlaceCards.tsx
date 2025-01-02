@@ -26,7 +26,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             const shuffled = shuffleArrayNoAdjacentDuplicates(places);
             setShuffledItems(shuffled);
             setIsLoading(false);
-        }, 0); // Instant shuffle without loader
+        }, 0);
     }, [places]);
 
     useEffect(() => {
