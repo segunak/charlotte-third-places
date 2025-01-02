@@ -31,17 +31,27 @@ export default async function HomePage() {
             Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have suggestions or enhancements? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the project, click <Link href="/about" className="custom-link">here</Link>.
           </span>
           {" "}
-          <span className="font-bold text-primary">Click on any card to see more details.</span>
+          <span className="font-bold text-primary">Click on any card to see more info about a place.</span>
         </p>
 
+        <Separator className="sm:hidden" />
+
+        <div className="sm:hidden space-y-4">
+          <div className="text-2xl font-bold">Carousel</div>
+          <p>Swipe through to explore various places. Feeling adventurous? Click the shuffle button for a random pick!</p>
+        </div>
         <ResponsivePlaceCards places={places} />
 
-        <div className="-mx-4 sm:-mx-20">
+        <div className="sm:-mx-4 sm:-mx-20">
           <Separator />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
-          <section className="sm:pr-12 space-y-4">
+          <div className="sm:hidden space-y-4 mb-4">
+            <div className="text-2xl font-bold">List</div>
+            <p>Browse the complete list of places below. Use the button in the lower-right corner to sort and filter.</p>
+          </div>
+          <section className="sm:pr-12">
             <DataTable rowData={places} />
           </section>
 

@@ -60,36 +60,30 @@ export function shuffleArray<T>(array: T[]): T[] {
  * @param array - The array to shuffle.
  * @returns A new shuffled array with no adjacent duplicates by 'name', if possible.
  */
-export function shuffleArrayNoAdjacentDuplicates<T extends { airtableRecordId: string }>(array: T[]): T[] {
-  if (array.length <= 1) return array;
+export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  let currentIndex = shuffled.length;
 
-  let shuffled = shuffleArray(array);
+  while (currentIndex !== 0) {
+    const randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
 
-  for (let attempt = 0; attempt < 1000; attempt++) {
-    let hasAdjacentDuplicates = false;
-
-    for (let i = 1; i < shuffled.length; i++) {
-      if (shuffled[i].airtableRecordId === shuffled[i - 1].airtableRecordId) {
-        hasAdjacentDuplicates = true;
-
-        // Find an element to swap with that doesn't cause a duplicate
-        for (let j = i + 1; j < shuffled.length; j++) {
-          if (shuffled[j].airtableRecordId !== shuffled[i].airtableRecordId && shuffled[j].airtableRecordId !== shuffled[i - 1].airtableRecordId) {
-            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-            break;
-          }
-        }
-      }
-    }
-
-    if (!hasAdjacentDuplicates) {
-      return shuffled;
-    }
-
-    // Reshuffle and retry
-    shuffled = shuffleArray(array);
+    [shuffled[currentIndex], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[currentIndex],
+    ];
   }
 
-  // If unable to rearrange to avoid duplicates after maxAttempts, return the shuffled array
+  // Check for adjacent duplicates
+  for (let i = 0; i < shuffled.length - 1; i++) {
+    if (shuffled[i] === shuffled[i + 1]) {
+      const swapIndex = (i + 2) % shuffled.length;
+      [shuffled[i + 1], shuffled[swapIndex]] = [
+        shuffled[swapIndex],
+        shuffled[i + 1],
+      ];
+    }
+  }
+
   return shuffled;
 }
