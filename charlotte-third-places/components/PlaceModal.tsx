@@ -27,6 +27,31 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
 
     const shareUrl = `${window.location.origin}/places/${place.airtableRecordId}`;
 
+    const handleShare = async () => {
+        const shareData = {
+            title: place.name,
+            text: `Charlotte Third Places: ${place.name}`,
+            url: `${window.location.origin}/places/${place.airtableRecordId}`,
+        };
+
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+                console.log('Successfully shared');
+            } catch (error) {
+                console.error('Error sharing', error);
+            }
+        } else {
+            // Fallback to copying the link to the clipboard
+            try {
+                await navigator.clipboard.writeText(shareData.url);
+                alert("Link copied to clipboard!");
+            } catch (error) {
+                console.error("Failed to copy the link to clipboard", error);
+            }
+        }
+    };
+
     return (
         <Dialog open onOpenChange={onClose}>
             <DialogContent
@@ -45,70 +70,40 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
                         <Button
                             variant="outline"
                             asChild
-                            className="flex items-center space-x-2"
-                            disabled={!place.googleMapsProfileURL?.trim()}
+                            className="flex items-center space-x-3"
                         >
                             <ResponsiveLink
                                 href={place.googleMapsProfileURL?.trim() || "#"}
                             >
-                                <Icons.google className="h-5 w-5" />
-                                {/* <span>Google Maps</span> */}
+                                <Icons.google className="h-6 w-6" />
                             </ResponsiveLink>
                         </Button>
+                        {place.website?.trim() && (
+                            <Button
+                                variant="outline"
+                                asChild
+                                className="flex items-center space-x-3"
+                            >
+                                <ResponsiveLink
+                                    href={place.website?.trim()}
+                                >
+                                    <Icons.externalLink className="h-6 w-6" />
+                                </ResponsiveLink>
+                            </Button>
+                        )}
                         <Button
                             variant="outline"
-                            asChild
-                            className="flex items-center space-x-2"
-                            disabled={true}
+                            onClick={handleShare}
+                            className="flex items-center space-x-3"
                         >
-                            <ResponsiveLink
-                                href={place.website?.trim() || "#"}
-                            >
-                                <Icons.externalLink className="h-5 w-5" />
-                                {/* <span>Website</span> */}
-                            </ResponsiveLink>
-                        </Button>
-                        <Button
-                            variant="outline"
-                            asChild
-                            className="flex items-center space-x-2"
-                        >
-                            <ResponsiveLink
-                                href={`/places/${place.airtableRecordId}`}
-                            >
-                                <Icons.link className="h-5 w-5" />
-                                {/* <span>Site Profile</span> */}
-                            </ResponsiveLink>
+                            <Icons.share className="h-6 w-6 text-primary" />
                         </Button>
                     </div>
-                    {/* <p>
-                        <strong>Website:</strong>{" "}
-                        {place.website?.trim() ? (
-                            <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
-                        ) : (
-                            "No website available."
-                        )}
-                    </p>
-                    <p>
-                        <strong>Site Profile:</strong>{" "}
-                        <ResponsiveLink href={`/places/${place.airtableRecordId}`}>
-                            Visit Profile
-                        </ResponsiveLink>
-                    </p>
-                    <p>
-                        <strong>Google Maps Profile:</strong>{" "}
-                        {place.googleMapsProfileURL?.trim() ? (
-                            <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
-                        ) : (
-                            "No profile available."
-                        )}
-                    </p> */}
                     <Separator />
                     <p><strong>Address:</strong> {place.address}</p>
                     <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
@@ -125,12 +120,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                 </div>
 
                 <div className="flex justify-center mt-4 space-x-4">
-                    <ShareButton
-                        placeName={place.name}
-                        className="!font-bold"
-                        url={shareUrl}
-                    />
-                    <Button className="!font-bold" onClick={onClose}>Close</Button>
+                    <Button className="!font-bold" onClick={onClose}>
+                        Close
+                    </Button>
                 </div>
             </DialogContent>
         </Dialog>

@@ -28,7 +28,7 @@ import {
   LuLinkedin,
   LuExternalLink,
   LuInstagram,
-  LuYoutube
+  LuShare
 } from "react-icons/lu";
 
 export const Icons = {
@@ -37,6 +37,7 @@ export const Icons = {
   moon: LuMoon,
   home: IoHome,
   shuffle: FaShuffle,
+  share: LuShare,
   homeOutline: IoHomeOutline,
   google: FcGoogle,
   editMarker: MdEditLocationAlt,
