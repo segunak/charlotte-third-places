@@ -41,7 +41,7 @@ export default async function HomePage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
-          <section className="pr-12 space-y-4">
+          <section className="sm:pr-12 space-y-4">
             <DataTable rowData={places} />
           </section>
 

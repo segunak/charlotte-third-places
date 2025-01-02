@@ -37,7 +37,6 @@ export function DataTable({ rowData }: DataTableProps) {
     }, []);
 
     useEffect(() => {
-        // Simulate loading
         const timeout = setTimeout(() => setIsLoading(false), 500);
         return () => clearTimeout(timeout);
     }, []);

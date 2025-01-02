@@ -5,8 +5,8 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
-import React, { useState, useCallback } from "react";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
+import React, { useState, useCallback, useEffect } from "react";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
@@ -18,6 +18,10 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         const shuffled = shuffleArrayNoAdjacentDuplicates(places);
         setShuffledItems([...shuffled, ...shuffled]);
     }, [places]);
+
+    useEffect(() => {
+        shuffleItems();
+    }, [shuffleItems]);
 
     const handleItemsChange = (count: number) => {
         setHasItems(count > 0);
