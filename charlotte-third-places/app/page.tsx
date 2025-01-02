@@ -14,6 +14,9 @@ export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
+  // People complain "oh Starbucks and Panera are boring I already knew about them" so to appease them, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
+  const excludedNames = ["Starbucks", "Panera"];
+  const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
   return (
     <FilterProvider places={places}>
@@ -38,13 +41,13 @@ export default async function HomePage() {
           <div className="text-xl font-bold">Carousel</div>
           <p><span className="font-bold text-primary">Swipe right</span> to explore various places. Feeling adventurous? Click the <span className="font-bold text-primary">shuffle button</span> for a random pick!</p>
         </div>
-        <ResponsivePlaceCards places={places} />
+        <ResponsivePlaceCards places={placesFilteredByName} />
 
         <div className="sm:-mx-4 sm:-mx-20">
           <Separator />
         </div>
 
-        <PlaceListWithFilters places={places} />
+        <PlaceListWithFilters places={placesFilteredByName} />
       </div>
     </FilterProvider>
   );
