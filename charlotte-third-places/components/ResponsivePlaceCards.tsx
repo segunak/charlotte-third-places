@@ -11,9 +11,9 @@ import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [hasItems, setHasItems] = useState<boolean>(false);
-    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
     const [isLoading, setIsLoading] = useState<boolean>(true);
+    const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
+    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const shuffleItems = useCallback(() => {
         // Perform shuffling asynchronously to allow loader to render
@@ -23,8 +23,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             setIsLoading(false);
         }, 0);
     }, [places]);
-
-    
 
     useEffect(() => {
         shuffleItems();
