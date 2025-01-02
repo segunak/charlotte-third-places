@@ -52,7 +52,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             )}
 
             {/* Desktop Carousel */}
-            <div className="hidden sm:block mb-16">
+            <div className="hidden sm:block">
                 <InfiniteMovingCards
                     items={shuffledItems}
                     direction="right"
