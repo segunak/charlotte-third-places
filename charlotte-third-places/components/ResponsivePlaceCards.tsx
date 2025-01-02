@@ -12,13 +12,12 @@ import React, { useState, useCallback, useEffect, useRef } from "react";
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const shuffleTimeout = useRef<number | null>(null);
     const [hasItems, setHasItems] = useState<boolean>(false);
-    const [isLoading, setIsLoading] = useState<boolean>(false);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
     const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const shuffleItems = useCallback(() => {
-        //Keep commented for now setIsLoading(true);
-
+        setIsLoading(true)
         if (shuffleTimeout.current) {
             clearTimeout(shuffleTimeout.current);
         }
@@ -26,14 +25,18 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         shuffleTimeout.current = window.setTimeout(() => {
             const shuffled = shuffleArrayNoAdjacentDuplicates(places);
             setShuffledItems(shuffled);
-            // Keep commented for now setIsLoading(false);
-        }, 0); // Debounced shuffle
+            setIsLoading(false);
+        }, 0); // Instant shuffle without loader
     }, [places]);
 
     useEffect(() => {
         setIsLoading(true);
-        shuffleItems();
-        setIsLoading(false);
+        const initialize = () => {
+            shuffleItems();
+            setIsLoading(false);
+        };
+
+        initialize();
     }, [shuffleItems]);
 
     const handleItemsChange = (count: number) => {
