@@ -32,7 +32,6 @@ export const InfiniteMovingCards = ({
     className,
     onItemsChange,
 }: InfiniteMovingCardsProps) => {
-    const [isLoading, setIsLoading] = useState(true);
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [animationKey, setAnimationKey] = useState(0);
@@ -61,7 +60,6 @@ export const InfiniteMovingCards = ({
     // Restart the animation only when speed or direction change
     useEffect(() => {
         setAnimationKey((prev) => prev + 1);
-        setIsLoading(false);
     }, [currentSpeed, currentDirection]);
 
     // Function to restart animation by resetting CSS animation
@@ -80,11 +78,6 @@ export const InfiniteMovingCards = ({
 
     return (
         <div className="relative">
-            {isLoading && (
-                <div className="absolute inset-0 flex items-center justify-center bg-background z-10">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
-                </div>
-            )}
             <div
                 ref={containerRef}
                 className={cn(

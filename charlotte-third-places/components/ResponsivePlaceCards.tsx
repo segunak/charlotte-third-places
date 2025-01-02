@@ -7,16 +7,21 @@ import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import React, { useState, useCallback, useEffect } from "react";
-import { InfiniteMovingCards } from "@/components/InfiniteMovingCards"
+import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [hasItems, setHasItems] = useState<boolean>(false);
     const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
-    const [shuffledItems, setShuffledItems] = useState([...places, ...places]);
+    const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
+    const [isLoading, setIsLoading] = useState<boolean>(true);
 
     const shuffleItems = useCallback(() => {
-        const shuffled = shuffleArrayNoAdjacentDuplicates(places);
-        setShuffledItems([...shuffled, ...shuffled]);
+        // Perform shuffling asynchronously to allow loader to render
+        setTimeout(() => {
+            const shuffled = shuffleArrayNoAdjacentDuplicates(places);
+            setShuffledItems([...shuffled, ...shuffled]);
+            setIsLoading(false);
+        }, 0);
     }, [places]);
 
     useEffect(() => {
@@ -29,6 +34,13 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
 
     return (
         <div className="relative overflow-hidden max-w-full">
+            {/* Loader Spinner */}
+            {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
+                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                </div>
+            )}
+
             {/* Desktop Carousel */}
             <InfiniteMovingCards
                 className="hidden sm:block"
@@ -41,14 +53,16 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
 
             {/* Mobile Random Card Picker */}
             <div className="sm:hidden mb-20">
-                <PlaceCard
-                    place={shuffledItems[0]}
-                    onClick={() => setSelectedPlace(shuffledItems[0])}
-                />
+                {shuffledItems.length > 0 && (
+                    <PlaceCard
+                        place={shuffledItems[0]}
+                        onClick={() => setSelectedPlace(shuffledItems[0])}
+                    />
+                )}
             </div>
 
             {/* Shuffle Button */}
-            {hasItems && (
+            {hasItems && !isLoading && ( // Hide shuffle button when loading
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
                     <Button
                         className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
