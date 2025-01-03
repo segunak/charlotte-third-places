@@ -72,19 +72,19 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                         {place.googleMapsProfileURL?.trim() && (
                             <Button variant="outline">
                                 <ResponsiveLink href={place.googleMapsProfileURL.trim()}>
-                                    <Icons.google className="h-6 w-6" />
+                                    <Icons.google className="h-5 w-5 sm:h-6 w-6" />
                                 </ResponsiveLink>
                             </Button>
                         )}
                         {place.website?.trim() && (
                             <Button variant="outline">
                                 <ResponsiveLink href={place.website.trim()}>
-                                    <Icons.externalLink className="h-6 w-6" />
+                                    <Icons.externalLink className="h-5 w-5 sm:h-6 w-6" />
                                 </ResponsiveLink>
                             </Button>
                         )}
                         <Button variant="outline" onClick={handleShare}>
-                            <Icons.share className="h-6 w-6 text-primary" />
+                            <Icons.share className="h-5 w-5 sm:h-6 w-6 text-primary" />
                         </Button>
                     </div>
                     <Separator />
