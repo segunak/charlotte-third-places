@@ -39,7 +39,7 @@ export default async function HomePage() {
 
         <div className="sm:hidden space-y-4">
           <div className="text-xl font-bold">Carousel</div>
-          <p><span className="font-bold text-primary">Swipe right</span> to explore various places. Feeling adventurous? Click the <span className="font-bold text-primary">shuffle button</span> for a random pick!</p>
+          <p><span className="font-bold text-primary">Swipe left</span> to explore various places. Feeling adventurous? Click the <span className="font-bold text-primary">shuffle button</span> for a random pick!</p>
         </div>
         <ResponsivePlaceCards places={placesFilteredByName} />
 

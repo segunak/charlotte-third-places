@@ -12,69 +12,89 @@ const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
 
 // Extended fallback colors with warm and vibrant tones that get randomly assigned.
 const fallbackColors = [
-    { bgColor: "bg-orange-100", textColor: "text-orange-800" },
-    { bgColor: "bg-teal-100", textColor: "text-teal-800" },
-    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },
-    { bgColor: "bg-pink-100", textColor: "text-pink-800" },
-    { bgColor: "bg-lime-100", textColor: "text-lime-800" },
-    { bgColor: "bg-amber-100", textColor: "text-amber-800" },
-    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" },
-    { bgColor: "bg-rose-100", textColor: "text-rose-800" },
-    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },
-    { bgColor: "bg-violet-100", textColor: "text-violet-800" },
-    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" },
-    { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },
-    { bgColor: "bg-red-100", textColor: "text-red-800" },
-    { bgColor: "bg-red-200", textColor: "text-red-900" },
-    { bgColor: "bg-purple-100", textColor: "text-purple-800" },
-    { bgColor: "bg-purple-200", textColor: "text-purple-900" },
-    { bgColor: "bg-green-100", textColor: "text-green-800" },
-    { bgColor: "bg-green-200", textColor: "text-green-900" },
-    { bgColor: "bg-blue-200", textColor: "text-blue-900" },
-    { bgColor: "bg-pink-200", textColor: "text-pink-900" },
-    { bgColor: "bg-amber-200", textColor: "text-amber-900" },
-    { bgColor: "bg-lime-200", textColor: "text-lime-900" },
-    { bgColor: "bg-teal-200", textColor: "text-teal-900" },
-    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" },
+    { bgColor: "bg-orange-100", textColor: "text-orange-800" },   // Light orange background, dark orange text
+    { bgColor: "bg-teal-100", textColor: "text-teal-800" },       // Light teal background, dark teal text
+    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },   // Light indigo background, dark indigo text
+    { bgColor: "bg-pink-100", textColor: "text-pink-800" },       // Light pink background, dark pink text
+    { bgColor: "bg-lime-100", textColor: "text-lime-800" },       // Light lime background, dark lime text
+    { bgColor: "bg-amber-100", textColor: "text-amber-800" },     // Light amber background, dark amber text
+    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" }, // Light fuchsia background, dark fuchsia text
+    { bgColor: "bg-rose-100", textColor: "text-rose-800" },       // Light rose background, dark rose text
+    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },       // Light cyan background, dark cyan text
+    { bgColor: "bg-violet-100", textColor: "text-violet-800" },   // Light violet background, dark violet text
+    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" }, // Light emerald background, dark emerald text
+    { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
+    { bgColor: "bg-red-100", textColor: "text-red-800" },         // Light red background, dark red text
+    { bgColor: "bg-red-200", textColor: "text-red-900" },         // Bright red background, dark red text
+    { bgColor: "bg-purple-100", textColor: "text-purple-800" },      // Light purple background, dark purple text
+    { bgColor: "bg-purple-200", textColor: "text-purple-900" },   // Bright purple background, dark purple text
+    { bgColor: "bg-green-100", textColor: "text-green-800" }, // Light green background, dark green text
+    { bgColor: "bg-green-200", textColor: "text-green-900" },     // Bright green background, dark green text
+    { bgColor: "bg-blue-200", textColor: "text-blue-900" },       // Bright blue background, dark blue text
+    { bgColor: "bg-pink-200", textColor: "text-pink-900" },       // Bright pink background, dark pink text
+    { bgColor: "bg-amber-200", textColor: "text-amber-900" },     // Bright amber background, dark amber text
+    { bgColor: "bg-lime-200", textColor: "text-lime-900" },       // Bright lime background, dark lime text
+    { bgColor: "bg-teal-200", textColor: "text-teal-900" },       // Bright teal background, dark teal text
+    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
 ];
 
+// Cache to store previously computed colors for attributes
 const colorCache = new Map<string, { bgColor: string; textColor: string }>();
 
+// Function to get colors based on an attribute
 const getAttributeColors = (attribute: string) => {
+    // Check if the color for the given attribute is already in the cache
     if (colorCache.has(attribute)) {
+        // Return the cached color if available
         return colorCache.get(attribute)!;
     }
 
     let result;
+
+    // If the attribute is empty or only contains whitespace, use the first fallback color
     if (!attribute || attribute.trim() === "") {
         result = fallbackColors[0];
-    } else if (colorMap[attribute]) {
+    }
+    // If the attribute exists in the predefined color map, use the corresponding color
+    else if (colorMap[attribute]) {
         result = colorMap[attribute];
-    } else {
+    }
+    // If the attribute is not in the color map, generate a color based on a hash of the attribute
+    else {
         let hash = 0;
+        // Generate a hash value from the attribute string
         for (let i = 0; i < attribute.length; i++) {
             hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
         }
+        // Use the hash value to select a color from the fallback colors
         const colorIndex = Math.abs(hash) % fallbackColors.length;
         result = fallbackColors[colorIndex] || fallbackColors[0];
     }
 
+    // Cache the computed color for future use
     colorCache.set(attribute, result);
+    // Return the computed color
     return result;
 };
 
 interface AttributeTagProps {
-    attribute: string;
+    attribute: string; // The attribute to be displayed
 }
 
+// Functional component wrapped with memo for performance optimization
 const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
+    // Memoize the result of getAttributeColors to avoid unnecessary recalculations
     const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
+
     return (
+        // Render the attribute inside a styled <span> element
         <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
             {attribute}
         </span>
     );
 });
+
+// Set display name for better debugging and development experience
 AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
@@ -138,4 +158,3 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
 });
 
 PlaceCard.displayName = 'PlaceCard';
-
