@@ -67,20 +67,20 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
                         {place.googleMapsProfileURL?.trim() && (
-                            <Button variant="outline" asChild className="flex items-center space-x-3">
+                            <Button variant="outline">
                                 <ResponsiveLink href={place.googleMapsProfileURL.trim()}>
                                     <Icons.google className="h-6 w-6" />
                                 </ResponsiveLink>
                             </Button>
                         )}
                         {place.website?.trim() && (
-                            <Button variant="outline" asChild className="flex items-center space-x-3">
+                            <Button variant="outline">
                                 <ResponsiveLink href={place.website.trim()}>
                                     <Icons.externalLink className="h-6 w-6" />
                                 </ResponsiveLink>
                             </Button>
                         )}
-                        <Button variant="outline" onClick={handleShare} className="flex items-center space-x-3">
+                        <Button variant="outline" onClick={handleShare}>
                             <Icons.share className="h-6 w-6 text-primary" />
                         </Button>
                     </div>
@@ -101,7 +101,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                     </p>
                 </div>
 
-                <div className="flex justify-center mt-4 space-x-4">
+                <div className="flex justify-center mt-4">
                     <Button className="!font-bold" onClick={onClose}>
                         Close
                     </Button>
