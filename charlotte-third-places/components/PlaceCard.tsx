@@ -1,5 +1,5 @@
-import { FC } from "react";
 import { Place } from "@/lib/types";
+import { FC, useMemo, memo, useRef } from "react";
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
@@ -12,109 +12,125 @@ const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
 
 // Extended fallback colors with warm and vibrant tones that get randomly assigned.
 const fallbackColors = [
-    { bgColor: "bg-orange-100", textColor: "text-orange-800" },   // Light orange background, dark orange text
-    { bgColor: "bg-teal-100", textColor: "text-teal-800" },       // Light teal background, dark teal text
-    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },   // Light indigo background, dark indigo text
-    { bgColor: "bg-pink-100", textColor: "text-pink-800" },       // Light pink background, dark pink text
-    { bgColor: "bg-lime-100", textColor: "text-lime-800" },       // Light lime background, dark lime text
-    { bgColor: "bg-amber-100", textColor: "text-amber-800" },     // Light amber background, dark amber text
-    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" }, // Light fuchsia background, dark fuchsia text
-    { bgColor: "bg-rose-100", textColor: "text-rose-800" },       // Light rose background, dark rose text
-    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },       // Light cyan background, dark cyan text
-    { bgColor: "bg-violet-100", textColor: "text-violet-800" },   // Light violet background, dark violet text
-    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" }, // Light emerald background, dark emerald text
-    { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
-    { bgColor: "bg-red-100", textColor: "text-red-800" },         // Light red background, dark red text
-    { bgColor: "bg-red-200", textColor: "text-red-900" },         // Bright red background, dark red text
-    { bgColor: "bg-purple-100", textColor: "text-purple-800" },      // Light purple background, dark purple text
-    { bgColor: "bg-purple-200", textColor: "text-purple-900" },   // Bright purple background, dark purple text
-    { bgColor: "bg-green-100", textColor: "text-green-800" }, // Light green background, dark green text
-    { bgColor: "bg-green-200", textColor: "text-green-900" },     // Bright green background, dark green text
-    { bgColor: "bg-blue-200", textColor: "text-blue-900" },       // Bright blue background, dark blue text
-    { bgColor: "bg-pink-200", textColor: "text-pink-900" },       // Bright pink background, dark pink text
-    { bgColor: "bg-amber-200", textColor: "text-amber-900" },     // Bright amber background, dark amber text
-    { bgColor: "bg-lime-200", textColor: "text-lime-900" },       // Bright lime background, dark lime text
-    { bgColor: "bg-teal-200", textColor: "text-teal-900" },       // Bright teal background, dark teal text
+    { bgColor: "bg-orange-100", textColor: "text-orange-800" },
+    { bgColor: "bg-teal-100", textColor: "text-teal-800" },
+    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },
+    { bgColor: "bg-pink-100", textColor: "text-pink-800" },
+    { bgColor: "bg-lime-100", textColor: "text-lime-800" },
+    { bgColor: "bg-amber-100", textColor: "text-amber-800" },
+    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" },
+    { bgColor: "bg-rose-100", textColor: "text-rose-800" },
+    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },
+    { bgColor: "bg-violet-100", textColor: "text-violet-800" },
+    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" },
+    { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },
+    { bgColor: "bg-red-100", textColor: "text-red-800" },
+    { bgColor: "bg-red-200", textColor: "text-red-900" },
+    { bgColor: "bg-purple-100", textColor: "text-purple-800" },
+    { bgColor: "bg-purple-200", textColor: "text-purple-900" },
+    { bgColor: "bg-green-100", textColor: "text-green-800" },
+    { bgColor: "bg-green-200", textColor: "text-green-900" },
+    { bgColor: "bg-blue-200", textColor: "text-blue-900" },
+    { bgColor: "bg-pink-200", textColor: "text-pink-900" },
+    { bgColor: "bg-amber-200", textColor: "text-amber-900" },
+    { bgColor: "bg-lime-200", textColor: "text-lime-900" },
+    { bgColor: "bg-teal-200", textColor: "text-teal-900" },
     { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
 ];
 
+const colorCache = new Map<string, { bgColor: string; textColor: string }>();
+
 const getAttributeColors = (attribute: string) => {
-    // Fallback to a random selection from the fallbackColors array for empty or undefined attributes
-    const randomIndex = Math.floor(Math.random() * fallbackColors.length);
+    // Check cache first
+    if (colorCache.has(attribute)) {
+        return colorCache.get(attribute)!;
+    }
 
-    // If the attribute is undefined or an empty string, return a random color
+    // If not in cache, compute and store
+    let result;
     if (!attribute || attribute.trim() === "") {
-        return fallbackColors[randomIndex];
+        result = fallbackColors[0];
+    } else if (colorMap[attribute]) {
+        result = colorMap[attribute];
+    } else {
+        let hash = 0;
+        for (let i = 0; i < attribute.length; i++) {
+            hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        const colorIndex = Math.abs(hash) % fallbackColors.length;
+        result = fallbackColors[colorIndex] || fallbackColors[0];
     }
 
-    // First, try to get a color from the predefined color map
-    if (colorMap[attribute]) {
-        return colorMap[attribute];
-    }
-
-    // Generate a hash from the attribute string
-    let hash = 0;
-    for (let i = 0; i < attribute.length; i++) {
-        hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
-    }
-
-    // Ensure the hash is positive and use it to get a color from fallbackColors
-    const colorIndex = Math.abs(hash) % fallbackColors.length;
-
-    // Fallback to a random selection from the fallbackColors array if the hash fails
-    return fallbackColors[colorIndex] || fallbackColors[randomIndex];
+    // Cache the result
+    colorCache.set(attribute, result);
+    return result;
 };
+
+interface AttributeTagProps {
+    attribute: string;
+}
+
+const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
+    const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
+    return (
+        <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+            {attribute}
+        </span>
+    );
+});
+AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
     place: Place;
     onClick: () => void;
 }
 
-export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
+export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
+    const handleClick = useRef(onClick).current;
+
+    const description = useMemo(() =>
+        place?.description && place.description.trim() !== ""
+            ? place.description
+            : "A third place in the Charlotte, North Carolina area",
+        [place?.description]
+    );
+
     return (
-        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font" onClick={onClick}>
+        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font" onClick={handleClick}>
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
                 <CardDescription className="truncate">
-                    {place?.description && place.description.trim() !== ""
-                        ? place.description
-                        : "A third place in the Charlotte, North Carolina area"}
+                    {description}
                 </CardDescription>
             </CardHeader>
             <CardContent className="w-full overflow-hidden">
                 <span className="space-y-2">
                     <span className="text-sm block mt-1">
                         <strong>Size: </strong>
-                        {place?.size && (
-                            <span className={`${getAttributeColors(place.size).bgColor} ${getAttributeColors(place.size).textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                {place.size}
-                            </span>
-                        )}
+                        {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
 
                     <span className="flex flex-wrap space-x-2">
                         <strong>Type: </strong>
-                        {place?.type?.map((tag, index) => {
-                            const { bgColor, textColor } = getAttributeColors(tag);
-                            return (
-                                <span key={tag} className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                    {tag}
-                                </span>
-                            );
-                        })}
+                        {place?.type?.map((tag) => (
+                            <AttributeTag key={tag} attribute={tag} />
+                        ))}
                     </span>
 
                     <span className="flex justify-between">
                         <span className="text-sm block">
                             <strong>Neighborhood: </strong>
-                            {place?.neighborhood && (
-                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-xs text-balance sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                    {place.neighborhood}
-                                </span>
-                            )}
+                            {place?.neighborhood && <AttributeTag attribute={place.neighborhood} />}
                         </span>
 
-                        <Button className="!font-bold" size="sm">
+                        <Button
+                            className="!font-bold"
+                            size="sm"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                handleClick();
+                            }}
+                        >
                             More Info
                         </Button>
                     </span>
@@ -122,4 +138,7 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
             </CardContent>
         </Card>
     );
-};
+});
+
+PlaceCard.displayName = 'PlaceCard';
+

@@ -1,10 +1,11 @@
 import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
 import { fontSans } from "@/lib/fonts"
-import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SiteHeader } from "@/components/SiteHeader"
 import { SiteFooter } from "@/components/SiteFooter"
+import { VercelToolbar } from '@vercel/toolbar/next'
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -69,6 +70,8 @@ export const viewport: Viewport = {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const shouldInjectToolbar = process.env.NODE_ENV === 'development';
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head />
@@ -92,6 +95,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SpeedInsights />
           <Analytics />
         </ThemeProvider>
+        {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>
   );
