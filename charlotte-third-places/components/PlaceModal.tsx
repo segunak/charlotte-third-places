@@ -2,11 +2,13 @@
 
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
-import { FC, useRef, useEffect, useMemo } from "react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { FC, useRef, useEffect, useMemo, lazy } from "react";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+
+const LazyPlaceDetails = lazy(() => import('@/components/PlaceDetails'));
 
 interface PlaceModalProps {
     place: Place;
@@ -20,7 +22,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
         if (contentRef.current) {
             contentRef.current.scrollTop = 0;
         }
-    }, []);
+    }, [place.airtableRecordId]); // Only run when the place changes
 
     const shareUrl = useMemo(() => `${window.location.origin}/places/${place.airtableRecordId}`, [place.airtableRecordId]);
 
@@ -85,20 +87,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                         </Button>
                     </div>
                     <Separator />
-                    <p><strong>Address:</strong> {place.address}</p>
-                    <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
-                    <p><strong>Size:</strong> {place.size}</p>
-                    <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
-                    <p><strong>Parking Situation:</strong> {place.parkingSituation}</p>
-                    <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
-                    <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
-                    <Separator />
-                    <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
-                    <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
-                    <Separator className="hidden sm:block" />
-                    <p className="hidden sm:block">
-                        <strong>Metadata:</strong> Added: {place.createdDate} | Last Updated: {place.lastModifiedDate}.
-                    </p>
+                    <LazyPlaceDetails place={place} />
                 </div>
 
                 <div className="flex justify-center mt-4">
@@ -110,3 +99,4 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
         </Dialog>
     );
 };
+
