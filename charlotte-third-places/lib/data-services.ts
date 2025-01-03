@@ -86,8 +86,6 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
                         longitude: parseFloat(row['Longitude']) as number,
                         createdDate: parseAndFormatDate(row["Created Time"]),
                         lastModifiedDate: parseAndFormatDate(row["Last Modified Time"])
-                        // createdDate: row['Created Time'],
-                        // lastModifiedDate: row['Last Modified Time']
                     });
                     rowIndex += 1;
                 } catch (error) {
