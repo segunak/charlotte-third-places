@@ -25,13 +25,14 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
             }
         );
 
-        if (dataTableRef.current) {
-            observer.observe(dataTableRef.current);
+        const currentDataTableRef = dataTableRef.current;
+        if (currentDataTableRef) {
+            observer.observe(currentDataTableRef);
         }
 
         return () => {
-            if (dataTableRef.current) {
-                observer.unobserve(dataTableRef.current);
+            if (currentDataTableRef) {
+                observer.unobserve(currentDataTableRef);
             }
         };
     }, []);
