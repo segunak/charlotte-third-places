@@ -1,6 +1,6 @@
 import { Place } from "@/lib/types";
-import { FC, useMemo, memo, useRef } from "react";
 import { Button } from "@/components/ui/button"
+import { FC, useMemo, memo, useRef, useCallback } from "react";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 // Predefined color mappings for tag backgrounds and text
@@ -35,18 +35,16 @@ const fallbackColors = [
     { bgColor: "bg-amber-200", textColor: "text-amber-900" },
     { bgColor: "bg-lime-200", textColor: "text-lime-900" },
     { bgColor: "bg-teal-200", textColor: "text-teal-900" },
-    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
+    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" },
 ];
 
 const colorCache = new Map<string, { bgColor: string; textColor: string }>();
 
 const getAttributeColors = (attribute: string) => {
-    // Check cache first
     if (colorCache.has(attribute)) {
         return colorCache.get(attribute)!;
     }
 
-    // If not in cache, compute and store
     let result;
     if (!attribute || attribute.trim() === "") {
         result = fallbackColors[0];
@@ -61,7 +59,6 @@ const getAttributeColors = (attribute: string) => {
         result = fallbackColors[colorIndex] || fallbackColors[0];
     }
 
-    // Cache the result
     colorCache.set(attribute, result);
     return result;
 };
@@ -89,11 +86,14 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
     const handleClick = useRef(onClick).current;
 
     const description = useMemo(() =>
-        place?.description && place.description.trim() !== ""
-            ? place.description
-            : "A third place in the Charlotte, North Carolina area",
+        place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
         [place?.description]
     );
+
+    const handleButtonClick = useCallback((e: React.MouseEvent) => {
+        e.stopPropagation();
+        handleClick();
+    }, [handleClick]);
 
     return (
         <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font" onClick={handleClick}>
@@ -126,10 +126,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
                         <Button
                             className="!font-bold"
                             size="sm"
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                handleClick();
-                            }}
+                            onClick={handleButtonClick}
                         >
                             More Info
                         </Button>
