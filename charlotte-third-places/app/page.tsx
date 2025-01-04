@@ -2,7 +2,6 @@ import Link from "next/link";
 import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { Separator } from "@/components/ui/separator";
-import { ModalProvider } from "@/contexts/ModalContext";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
@@ -21,7 +20,6 @@ export default async function HomePage() {
 
   return (
     <FilterProvider places={places}>
-      <ModalProvider>
         <div className="min-h-screen px-4 sm:px-20 py-8 space-y-4">
           <h1 className="text-3xl font-bold">
             Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
@@ -51,7 +49,6 @@ export default async function HomePage() {
 
           <PlaceListWithFilters places={placesFilteredByName} />
         </div>
-      </ModalProvider>
     </FilterProvider>
   );
 }

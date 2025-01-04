@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/react"
 import { SiteHeader } from "@/components/SiteHeader"
 import { SiteFooter } from "@/components/SiteFooter"
 import { VercelToolbar } from '@vercel/toolbar/next'
+import { ModalProvider } from "@/contexts/ModalContext";
 import { ThemeProvider } from "@/components/ThemeProvider"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleTagManager } from '@next/third-parties/google'
@@ -83,17 +84,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <div className="flex flex-col min-h-dvh">
-            <SiteHeader />
-            <main className="flex-1 mb-12 sm:mb-0 bg-background">
-              {children}
-            </main>
-            <MobileNavigation />
-            <SiteFooter />
-          </div>
-          <TailwindIndicator />
-          <SpeedInsights />
-          <Analytics />
+          <ModalProvider>
+            <div className="flex flex-col min-h-dvh">
+              <SiteHeader />
+              <main className="flex-1 mb-12 sm:mb-0 bg-background">
+                {children}
+              </main>
+              <MobileNavigation />
+              <SiteFooter />
+            </div>
+            <TailwindIndicator />
+            <SpeedInsights />
+            <Analytics />
+          </ModalProvider>
         </ThemeProvider>
         {shouldInjectToolbar && <VercelToolbar />}
       </body>
