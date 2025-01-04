@@ -79,10 +79,10 @@
   }
 
   .dark {
-    --background: 197 50% 10%;
+    --background: 197 50% 15%;
     --foreground: 197 5% 97%;
     --ag-header-background-color: hsl(337, 90%, 51%);
-    --card: 197 50% 10%;
+    --card: 197 50% 18%;
     --card-foreground: 197 5% 97%;
     --popover: 197 50% 5%;
     --popover-foreground: 197 5% 97%;
