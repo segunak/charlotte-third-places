@@ -2,9 +2,9 @@
 
 import { Place } from '@/lib/types';
 import { Icons } from "@/components/Icons";
-import { PlaceModal } from '@/components/PlaceModal';
 import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
+import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
@@ -13,10 +13,10 @@ interface PlaceMapProps {
 }
 
 export function PlaceMap({ places }: PlaceMapProps) {
-    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
+    const { showPlaceModal } = useModalContext();
+    const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
-    const [isMobileView, setIsMobileView] = useState(false);
 
     useEffect(() => {
         const updateViewSettings = () => {
@@ -89,7 +89,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 key={index}
                                 position={position}
                                 title={place.name}
-                                onClick={() => setSelectedPlace(place)}
+                                onClick={() => showPlaceModal(place)}
                             >
                                 <div className="relative flex items-center justify-center w-8 h-8">
                                     <Icons.pin className="w-8 h-8 text-primary stroke-black stroke-2" />
@@ -101,13 +101,6 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         );
                     })}
                 </Map>
-
-                {selectedPlace && (
-                    <PlaceModal
-                        place={selectedPlace}
-                        onClose={() => setSelectedPlace(null)}
-                    />
-                )}
             </div>
         </APIProvider>
     );

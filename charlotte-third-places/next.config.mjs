@@ -1,3 +1,5 @@
+import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
+
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
@@ -13,6 +15,11 @@ const nextConfig = {
         formats: ['image/webp'], // Enable WebP for better compression
         minimumCacheTTL: 604800, // Cache images for 7 days
     },
+    logging: {
+        fetches: {
+            fullUrl: true,
+        },
+    },
 };
 
-export default nextConfig;
+export default withVercelToolbar()(nextConfig);

@@ -4,7 +4,7 @@
 
 azure-functions
 requests
-pyairtable
+pyairtable>=3.0.1
 Unidecode
 python-dotenv
 azure-storage-file-datalake 

@@ -1,18 +1,17 @@
 import os
-import pprint
 import time
+import pprint
 import dotenv
 import logging
 import requests
 import pyairtable
-from typing import Dict, Any, List
-from pyairtable import utils
-from datetime import datetime
 from collections import Counter
 from urllib.parse import urlparse
 from constants import SearchField
 import helper_functions as helpers
+from typing import Dict, Any, List
 from pyairtable.formulas import match
+from pyairtable import Api, Base, Table, Workspace
 from google_maps_client import GoogleMapsClient
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -32,11 +31,14 @@ class AirtableClient:
 
         self.AIRTABLE_BASE_ID = os.environ['AIRTABLE_BASE_ID']
         self.AIRTABLE_PERSONAL_ACCESS_TOKEN = os.environ['AIRTABLE_PERSONAL_ACCESS_TOKEN']
+        self.AIRTABLE_WORKSPACE_ID = os.environ['AIRTABLE_WORKSPACE_ID']
         self.charlotte_third_places = pyairtable.Table(
             self.AIRTABLE_PERSONAL_ACCESS_TOKEN, self.AIRTABLE_BASE_ID, 'Charlotte Third Places'
         )
         self.google_maps_client = GoogleMapsClient()
-        self.all_third_places = self.charlotte_third_places.all(sort=["Place"])
+        self.api = Api(self.AIRTABLE_PERSONAL_ACCESS_TOKEN)
+        # Sort by Created Time in reverse order, newest first.
+        self.all_third_places = self.charlotte_third_places.all(sort=["-Created Time"])
 
     def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> Dict[str, Any]:
         """
@@ -221,6 +223,7 @@ class AirtableClient:
 
             try:
                 place_name = third_place['fields']['Place']
+                logging.info(f"Processing place: {place_name}")
                 return_data['place_name'] = place_name
 
                 record_id = third_place['id']
@@ -255,7 +258,7 @@ class AirtableClient:
                         if not photos_list:
                             logging.warning(f'No photos found for {place_name}.')
 
-                        # "Field Name": (field_value, overwrite_field_in_airtable=True/False)
+                        # "Field Name": (field_value, overwrite=True/False)
                         field_updates = {
                             'Google Maps Place Id': (place_id, True),
                             'Google Maps Profile URL': (place_details_response.get('googleMapsUri'), True),

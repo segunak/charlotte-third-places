@@ -1,6 +1,7 @@
-import { FC } from "react";
 import { Place } from "@/lib/types";
+import { FC, useMemo, memo } from "react";
 import { Button } from "@/components/ui/button"
+import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 // Predefined color mappings for tag backgrounds and text
@@ -38,83 +39,119 @@ const fallbackColors = [
     { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
 ];
 
+// Cache to store previously computed colors for attributes
+const colorCache = new Map<string, { bgColor: string; textColor: string }>();
+
+// Function to get colors based on an attribute
 const getAttributeColors = (attribute: string) => {
-    // Fallback to a random selection from the fallbackColors array for empty or undefined attributes
-    const randomIndex = Math.floor(Math.random() * fallbackColors.length);
+    // Check if the color for the given attribute is already in the cache
+    if (colorCache.has(attribute)) {
+        // Return the cached color if available
+        return colorCache.get(attribute)!;
+    }
 
-    // If the attribute is undefined or an empty string, return a random color
+    let result;
+
+    // If the attribute is empty or only contains whitespace, use the first fallback color
     if (!attribute || attribute.trim() === "") {
-        return fallbackColors[randomIndex];
+        result = fallbackColors[0];
+    }
+    // If the attribute exists in the predefined color map, use the corresponding color
+    else if (colorMap[attribute]) {
+        result = colorMap[attribute];
+    }
+    // If the attribute is not in the color map, generate a color based on a hash of the attribute
+    else {
+        let hash = 0;
+        // Generate a hash value from the attribute string
+        for (let i = 0; i < attribute.length; i++) {
+            hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
+        }
+        // Use the hash value to select a color from the fallback colors
+        const colorIndex = Math.abs(hash) % fallbackColors.length;
+        result = fallbackColors[colorIndex] || fallbackColors[0];
     }
 
-    // First, try to get a color from the predefined color map
-    if (colorMap[attribute]) {
-        return colorMap[attribute];
-    }
-
-    // Generate a hash from the attribute string
-    let hash = 0;
-    for (let i = 0; i < attribute.length; i++) {
-        hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
-    }
-
-    // Ensure the hash is positive and use it to get a color from fallbackColors
-    const colorIndex = Math.abs(hash) % fallbackColors.length;
-
-    // Fallback to a random selection from the fallbackColors array if the hash fails
-    return fallbackColors[colorIndex] || fallbackColors[randomIndex];
+    // Cache the computed color for future use
+    colorCache.set(attribute, result);
+    // Return the computed color
+    return result;
 };
+
+interface AttributeTagProps {
+    attribute: string; // The attribute to be displayed
+}
+
+// Functional component wrapped with memo for performance optimization
+const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
+    // Memoize the result of getAttributeColors to avoid unnecessary recalculations
+    const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
+
+    return (
+        // Render the attribute inside a styled <span> element
+        <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+            {attribute}
+        </span>
+    );
+});
+
+// Set display name for better debugging and development experience
+AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
     place: Place;
-    onClick: () => void;
 }
 
-export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
+export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
+    const { showPlaceModal } = useModalContext();
+
+    const description = useMemo(() =>
+        place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
+        [place?.description]
+    );
+
+    const handleCardClick = () => {
+        showPlaceModal(place);
+    };
+
     return (
-        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full" onClick={onClick}>
+        <Card
+            onClick={handleCardClick}
+            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font">
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
                 <CardDescription className="truncate">
-                    {place?.description && place.description.trim() !== ""
-                        ? place.description
-                        : "A third place in the Charlotte, North Carolina area"}
+                    {description}
                 </CardDescription>
             </CardHeader>
             <CardContent className="w-full overflow-hidden">
                 <span className="space-y-2">
                     <span className="text-sm block mt-1">
                         <strong>Size: </strong>
-                        {place?.size && (
-                            <span className={`${getAttributeColors(place.size).bgColor} ${getAttributeColors(place.size).textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                {place.size}
-                            </span>
-                        )}
+                        {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
 
                     <span className="flex flex-wrap space-x-2">
                         <strong>Type: </strong>
-                        {place?.type?.map((tag, index) => {
-                            const { bgColor, textColor } = getAttributeColors(tag);
-                            return (
-                                <span key={tag} className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                    {tag}
-                                </span>
-                            );
-                        })}
+                        {place?.type?.map((tag) => (
+                            <AttributeTag key={tag} attribute={tag} />
+                        ))}
                     </span>
 
                     <span className="flex justify-between">
                         <span className="text-sm block">
                             <strong>Neighborhood: </strong>
-                            {place?.neighborhood && (
-                                <span className={`${getAttributeColors(place.neighborhood).bgColor} ${getAttributeColors(place.neighborhood).textColor} text-xs text-balance sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-                                    {place.neighborhood}
-                                </span>
-                            )}
+                            {place?.neighborhood && <AttributeTag attribute={place.neighborhood} />}
                         </span>
 
-                        <Button className="!font-bold" size="sm">
+                        <Button
+                            className="!font-bold"
+                            size="sm"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                showPlaceModal(place);
+                            }}
+                        >
                             More Info
                         </Button>
                     </span>
@@ -122,4 +159,6 @@ export const PlaceCard: FC<PlaceCardProps> = ({ place, onClick }) => {
             </CardContent>
         </Card>
     );
-};
+});
+
+PlaceCard.displayName = 'PlaceCard';

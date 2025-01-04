@@ -2,20 +2,19 @@
 
 import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
 import { PlaceCard } from "@/components/PlaceCard";
-import { normalizeTextForSearch } from '@/lib/utils'
-import { PlaceModal } from "@/components/PlaceModal";
+import { normalizeTextForSearch } from '@/lib/utils';
 import { AgGridReact } from '@ag-grid-community/react';
 import { SortField, SortDirection } from "@/lib/types";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
-import { useContext, useCallback, useRef, useState, useMemo } from "react";
+import { useContext, useCallback, useRef, useState, useMemo, useEffect } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 interface DataTableProps {
-    rowData: Array<object>; // Accepts an array of objects for the row data
+    rowData: Array<object>;
 }
 
 const autoSizeStrategy: SizeColumnsToContentStrategy = {
@@ -24,15 +23,16 @@ const autoSizeStrategy: SizeColumnsToContentStrategy = {
 
 export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [selectedCard, setSelectedCard] = useState<any | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
     const { filters, quickFilterText, sortOption } = useContext(FilterContext);
 
     const isFullWidthRow = useCallback((params: any) => {
         return true;
     }, []);
 
-    const handlePlaceClick = useCallback((place: any) => {
-        setSelectedCard(place);
+    useEffect(() => {
+        const timeout = setTimeout(() => setIsLoading(false), 500);
+        return () => clearTimeout(timeout);
     }, []);
 
     const columnDefs = useMemo(() => {
@@ -147,21 +147,22 @@ export function DataTable({ rowData }: DataTableProps) {
                 <div className="flex flex-wrap -mx-2">
                     {group.map((place: any, index: number) => (
                         <div key={index} className="w-full md:w-1/2 px-2 mb-4">
-                            <PlaceCard
-                                place={place}
-                                onClick={() => handlePlaceClick(place)}
-                            />
+                            <PlaceCard place={place} />
                         </div>
                     ))}
                 </div>
             );
-        },
-        [handlePlaceClick]
+        }, []
     );
 
     return (
-        <div className="flex-1">
-            <div className="ag-theme-custom w-full">
+        <div className="relative flex-1">
+            {isLoading && (
+                <div className="mt-16 absolute inset-0 flex items-center justify-center bg-background z-10">
+                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                </div>
+            )}
+            <div className={`ag-theme-custom w-full ${isLoading ? "opacity-0" : ""}`}>
                 <AgGridReact
                     ref={gridRef}
                     rowData={filteredAndGroupedRowData}
@@ -169,16 +170,12 @@ export function DataTable({ rowData }: DataTableProps) {
                     autoSizeStrategy={autoSizeStrategy}
                     includeHiddenColumnsInQuickFilter={true}
                     suppressMovableColumns={true}
-                    domLayout="autoHeight" // Ensures that grid height adjusts to content
+                    domLayout="autoHeight"
                     getRowHeight={getRowHeight}
                     isFullWidthRow={isFullWidthRow}
                     fullWidthCellRenderer={fullWidthCellRenderer}
                 />
             </div>
-            {
-                selectedCard &&
-                <PlaceModal place={selectedCard} onClose={() => setSelectedCard(null)} />
-            }
         </div>
     );
 }

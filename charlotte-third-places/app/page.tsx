@@ -1,55 +1,67 @@
 import Link from "next/link";
 import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
-import { DataTable } from "@/components/DataTable";
-import { FilterDialog } from '@/components/FilterDialog';
+import { Separator } from "@/components/ui/separator";
 import { FilterProvider } from '@/contexts/FilterContext';
-import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
+import { PlaceListWithFilters } from "@/components/PlaceListWithFilters";
 
-// See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
-// Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
-// Airtable has API call limits. Can't have every visit pulling new data.
+/* See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
+Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
+Airtable has API call limits. Can't have every visit pulling new data. */
 export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
+  // People complain "oh Starbucks is boring I already knew about them". So to appease such people, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
+  const excludedNames = ["Starbucks"];
+  const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
   return (
     <FilterProvider places={places}>
-      <div className="grid grid-cols-1 sm:grid-cols-[1fr_260px] min-h-screen">
-        <section className="px-4 sm:px-20 py-8 mx-auto">
-          <div className="mb-6 space-y-3">
-            <h1 className="text-3xl font-bold">
-              Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
-              <span className="sm:hidden">Charlotte</span>
-              <span className="hidden sm:inline">Charlotte, North Carolina</span>
-            </h1>
-            <p>
-              Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the list below. {" "}
-              <span className="hidden sm:inline">
-                {" "} Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
-              </span>
-              {" "} Click on any card to see more information about that place.
-              <span className="font-bold text-primary">
-                {" "} Sort and filter the list using the {" "}
-                <span className="sm:hidden">button in the lower-right corner.</span>
-                <span className="hidden sm:inline">sidebar on the right.</span>
-              </span>
-            </p>
-          </div>
-          <DataTable rowData={places} />
-        </section>
+      <div className="min-h-screen px-4 sm:px-20 py-8 space-y-4">
+        <h1 className="text-3xl font-bold">
+          Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
+          <span className="sm:hidden">Charlotte</span>
+          <span className="hidden sm:inline">Charlotte, North Carolina</span>
+        </h1>
+        <p>
+          Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. {" "}
+          <span className="hidden sm:inline">
+            Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have suggestions or enhancements? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the project, click <Link href="/about" className="custom-link">here</Link>.
+          </span>
+        </p>
+        <Separator />
+        <div className="text-2xl font-bold">
+          {/* Shown on mobile */}
+          <span className="inline sm:hidden">Stack</span>
+          {/* Shown on desktop */}
+          <span className="hidden sm:inline">Feed</span>
+        </div>
+        <p>
+          {/* Shown on mobile only */}
+          <span className="inline sm:hidden">
+            <span className="font-bold text-primary">Swipe left</span> to explore various places.
+          </span>{" "}
 
-        {/*On mobile, this provides a button in the lower right for filtering */}
-        <div className="sm:hidden">
-          <FilterDialog showSort={true} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+          {/* Always visible text */}
+          <span className="font-bold text-primary">Click any card</span> for more info about a place. If you're feeling adventurous,{" "}
+          <span className="font-bold text-primary">click the shuffle button</span>{" "}
+
+          {/* Shown on mobile only */}
+          <span className="inline sm:hidden">for a random place!</span>
+          {/* Shown on desktop only */}
+          <span className="hidden sm:inline">to switch things up!</span>
+        </p>
+
+        <ResponsivePlaceCards places={placesFilteredByName} />
+
+        <div className="sm:-mx-4 sm:-mx-20">
+          <Separator />
         </div>
 
-        {/*On desktop, this provides a dedicated sidebar for filtering */}
-        <div className="hidden sm:block bg-background border-x border-border">
-          <FilterSidebar showSort={true} className="max-w-[260px] sticky top-16 p-4 space-y-[.65rem]" />
-        </div>
+        <PlaceListWithFilters places={placesFilteredByName} />
       </div>
     </FilterProvider>
   );

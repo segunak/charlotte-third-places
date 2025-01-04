@@ -7,7 +7,10 @@ A scratch pad for various notes related to this project.
 
 The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for styling.
 
-* To run locally `cd` into the `charlotte-third-places` directory and run `npm run dev`.
+* To run locally with no Incremental Static Regeneration (a local CSV file will be used, no real interaction with Airtable) `cd` into the `charlotte-third-places` directory and run `npm run dev`.
+* To run locally with Incremental Static Regeneration and thus mirror production (visits will cache and be revalidated according to the set time) `cd` into `charlotte-third-places` and run `npm run build; npm start`.
+
+**Or, simply use the `launch.json` file which has the above commands baked in as configurations**
 
 ## Random Information
 

@@ -42,7 +42,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Yes, Charlotte Third Places is on <ResponsiveLink href="https://www.tiktok.com/@charlottethirdplaces">TikTok</ResponsiveLink>, <ResponsiveLink href="https://www.instagram.com/charlottethirdplaces">Instagram</ResponsiveLink>, <ResponsiveLink href="https://www.youtube.com/@charlottethirdplaces">YouTube</ResponsiveLink>, and <ResponsiveLink href="https://www.reddit.com/user/charlottethirdplaces">Reddit</ResponsiveLink>. You can visit all links using this <ResponsiveLink href="https://linktr.ee/charlottethirdplaces">Linktree</ResponsiveLink>.
+                    Yes, Charlotte Third Places is on <ResponsiveLink href="https://www.tiktok.com/@charlottethirdplaces">TikTok</ResponsiveLink>, <ResponsiveLink href="https://www.youtube.com/@charlottethirdplaces">YouTube</ResponsiveLink>, <ResponsiveLink href="https://www.instagram.com/charlottethirdplaces">Instagram</ResponsiveLink>, and <ResponsiveLink href="https://www.reddit.com/user/charlottethirdplaces">Reddit</ResponsiveLink>. You can visit all links using this <ResponsiveLink href="https://linktr.ee/charlottethirdplaces">Linktree</ResponsiveLink>.
                 </p>
             </div>
         )
@@ -274,7 +274,7 @@ export default function AboutPage() {
                         <li>Study, read, or write.</li>
                         <li>Relax, unwind, decompress, people watch, catch up on shows, movies, or <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">anime</ResponsiveLink>.
                         </li>
-                        <li>Socialize, meet with friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
+                        <li>Socialize, meet friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>

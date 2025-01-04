@@ -7,7 +7,7 @@ import { MainNavigation } from "@/components/MainNavigation"
 export function SiteHeader() {
     return (
         <header className="bg-background sticky top-0 z-50 w-full border-b">
-            <div className="px-4 sm:pl-20 sm:pr-12 py-8 mx-auto m-0 max-w-full flex h-16 items-center space-x-4 sm:space-x-0 sm:justify-between">
+            <div className="px-4 sm:px-20 py-8 mx-auto m-0 max-w-full flex h-16 items-center space-x-4 sm:space-x-0 sm:justify-between">
 
                 <div className="sm:flex gap-6 md:gap-10 items-center">
                     <Link href="/" className="flex items-center space-x-2">
@@ -35,21 +35,6 @@ export function SiteHeader() {
                             </div>
                         </Link>
                         <Link
-                            href="https://www.instagram.com/charlottethirdplaces/ "
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <div
-                                className={buttonVariants({
-                                    size: "icon",
-                                    variant: "ghost",
-                                })}
-                            >
-                                <Icons.instagram className="h-5 w-5" />
-                                <span className="sr-only">Instagram</span>
-                            </div>
-                        </Link>
-                        <Link
                             href="https://www.youtube.com/@charlottethirdplaces"
                             target="_blank"
                             rel="noreferrer"
@@ -62,6 +47,21 @@ export function SiteHeader() {
                             >
                                 <Icons.youtube className="h-5 w-5" />
                                 <span className="sr-only">YouTube</span>
+                            </div>
+                        </Link>
+                        <Link
+                            href="https://www.instagram.com/charlottethirdplaces/ "
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <div
+                                className={buttonVariants({
+                                    size: "icon",
+                                    variant: "ghost",
+                                })}
+                            >
+                                <Icons.instagram className="h-5 w-5" />
+                                <span className="sr-only">Instagram</span>
                             </div>
                         </Link>
                         <Link

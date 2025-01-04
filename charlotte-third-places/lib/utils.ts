@@ -36,3 +36,54 @@ export const normalizeTextForSearch = (value: string | null | undefined): string
     // Step 5: Convert the resulting string to lowercase for case-insensitive matching
     .toLowerCase();
 };
+
+/**
+ * Shuffles an array using the Fisher-Yates algorithm.
+ * 
+ * @param array - The array to shuffle.
+ * @returns A new shuffled array.
+ */
+export function shuffleArray<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}
+
+/**
+ * Shuffles an array ensuring that no two adjacent items have the same 'name' property.
+ * If it's impossible to arrange without adjacent duplicates (e.g., all items have the same name),
+ * the function returns the shuffled array as is.
+ * 
+ * @param array - The array to shuffle.
+ * @returns A new shuffled array with no adjacent duplicates by 'name', if possible.
+ */
+export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
+  const shuffled = [...array];
+  let currentIndex = shuffled.length;
+
+  while (currentIndex !== 0) {
+    const randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    [shuffled[currentIndex], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[currentIndex],
+    ];
+  }
+
+  // Check for adjacent duplicates
+  for (let i = 0; i < shuffled.length - 1; i++) {
+    if (shuffled[i] === shuffled[i + 1]) {
+      const swapIndex = (i + 2) % shuffled.length;
+      [shuffled[i + 1], shuffled[swapIndex]] = [
+        shuffled[swapIndex],
+        shuffled[i + 1],
+      ];
+    }
+  }
+
+  return shuffled;
+}

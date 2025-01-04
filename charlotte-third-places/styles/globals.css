@@ -14,6 +14,7 @@
   :root {
     /* Light yellow for light mode */
     --highlight-bg: hsl(54, 100%, 85%);
+    --card-font-family: "IBM Plex Sans", sans-serif;
   }
 
   .dark {
@@ -34,6 +35,10 @@
 
   .z-60 {
     z-index: 60;
+  }
+
+  .card-font {
+    @apply [font-family:var(--card-font-family)];
   }
 }
 
@@ -74,10 +79,10 @@
   }
 
   .dark {
-    --background: 197 50% 10%;
+    --background: 197 50% 15%;
     --foreground: 197 5% 97%;
     --ag-header-background-color: hsl(337, 90%, 51%);
-    --card: 197 50% 10%;
+    --card: 197 50% 18%;
     --card-foreground: 197 5% 97%;
     --popover: 197 50% 5%;
     --popover-foreground: 197 5% 97%;

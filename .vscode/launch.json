@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Attach to Python Functions",
+            "name": "Azure Function: Attach to Python Host",
             "type": "debugpy",
             "request": "attach",
             "connect": {
@@ -12,36 +12,55 @@
             "preLaunchTask": "func: host start"
         },
         {
-            "name": "Next.js: debug server-side",
+            "name": "Next.js: Run Dev (Local Data, No ISR)",
             "type": "node-terminal",
             "request": "launch",
             "command": "npm run dev",
-            "cwd": "${workspaceFolder}/charlotte-third-places"
-        },
-        {
-            "name": "Next.js: debug client-side",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:3000"
-        },
-        {
-            "name": "Next.js: debug full stack",
-            "type": "node",
-            "request": "launch",
             "cwd": "${workspaceFolder}/charlotte-third-places",
-            "program": "${workspaceFolder}/charlotte-third-places/node_modules/.bin/next",
-            "runtimeArgs": [
-                "--inspect"
-            ],
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
+            "env": {
+                "NODE_ENV": "development"
+            }
+        },
+        {
+            "name": "Next.js: ISR Build",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run build",
+            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
+            "name": "Next.js: ISR Start",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm start",
+            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "env": {
+                "NODE_ENV": "production",
+                "NEXT_PRIVATE_DEBUG_CACHE": "1"
+            },
             "serverReadyAction": {
-                "action": "debugWithEdge",
-                "killOnServerStop": true,
-                "pattern": "- Local:.+(https?://.+)",
+                "pattern": "started server on .+, url: (https?://.+)",
                 "uriFormat": "%s",
-                "webRoot": "${workspaceFolder}/charlotte-third-places"
+                "action": "debugWithChrome"
+            }
+        },
+        {
+            "name": "Next.js: ISR Build & Start",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "npm run build; npm start",
+            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "env": {
+                "NODE_ENV": "production",
+                "NEXT_PRIVATE_DEBUG_CACHE": "1"
+            },
+            "serverReadyAction": {
+                "pattern": "started server on .+, url: (https?://.+)",
+                "uriFormat": "%s",
+                "action": "debugWithChrome"
             }
         }
     ]
