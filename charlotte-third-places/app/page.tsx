@@ -14,8 +14,8 @@ export const revalidate = REVALIDATE_TIME;
 
 export default async function HomePage() {
   const places = await getPlaces();
-  // People complain "oh Starbucks and Panera are boring I already knew about them" so to appease them, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
-  const excludedNames = ["Starbucks", "Panera"];
+  // People complain "oh Starbucks is boring I already knew about them". So to appease such people, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
+  const excludedNames = ["Starbucks"];
   const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
   return (
@@ -43,8 +43,8 @@ export default async function HomePage() {
           {/* Shown on mobile only */}
           <span className="inline sm:hidden">
             <span className="font-bold text-primary">Swipe left</span> to explore various places.
-          </span>
-
+          </span>{" "}
+x
           {/* Always visible text */}
           <span className="font-bold text-primary">Click any card</span> for more info about a place. If you're feeling adventurous,{" "}
           <span className="font-bold text-primary">click the shuffle button</span>{" "}

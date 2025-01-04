@@ -23,7 +23,7 @@ const autoSizeStrategy: SizeColumnsToContentStrategy = {
 
 export function DataTable({ rowData }: DataTableProps) {
     const gridRef = useRef<AgGridReact>(null);
-    const [isLoading, setIsLoading] = useState(true); // Loading state
+    const [isLoading, setIsLoading] = useState(true);
     const { filters, quickFilterText, sortOption } = useContext(FilterContext);
 
     const isFullWidthRow = useCallback((params: any) => {
