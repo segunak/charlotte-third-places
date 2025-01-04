@@ -1,6 +1,7 @@
 import { Place } from "@/lib/types";
+import { FC, useMemo, memo } from "react";
 import { Button } from "@/components/ui/button"
-import { FC, useMemo, memo, useRef, useCallback } from "react";
+import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 // Predefined color mappings for tag backgrounds and text
@@ -99,24 +100,24 @@ AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
     place: Place;
-    onClick: () => void;
 }
 
-export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
-    const handleClick = useRef(onClick).current;
+export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
+    const { showPlaceModal } = useModalContext();
 
     const description = useMemo(() =>
         place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
         [place?.description]
     );
 
-    const handleButtonClick = useCallback((e: React.MouseEvent) => {
-        e.stopPropagation();
-        handleClick();
-    }, [handleClick]);
+    const handleCardClick = () => {
+        showPlaceModal(place);
+    };
 
     return (
-        <Card className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font" onClick={handleClick}>
+        <Card
+            onClick={handleCardClick}
+            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font">
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
                 <CardDescription className="truncate">
@@ -146,7 +147,10 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place, onClick }) => {
                         <Button
                             className="!font-bold"
                             size="sm"
-                            onClick={handleButtonClick}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                showPlaceModal(place);
+                            }}
                         >
                             More Info
                         </Button>

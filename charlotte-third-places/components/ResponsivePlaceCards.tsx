@@ -3,7 +3,6 @@
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
-import { PlaceModal } from "@/components/PlaceModal";
 import { CardCarousel } from "@/components/CardCarousel";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
@@ -19,7 +18,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const [hasItems, setHasItems] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     const [shuffledItems, setShuffledItems] = useState<Place[]>([]);
-    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const shuffleItems = useCallback(() => {
         if (shuffleTimeout.current) {
@@ -43,8 +41,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const handleItemsChange = (count: number) => {
         setHasItems(count > 0);
     };
-
-    const closeModal = () => setSelectedPlace(null);
 
     return (
         <div className="relative overflow-hidden max-w-full">
@@ -82,12 +78,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                     </Button>
                 </div>
             )}
-
-            <PlaceModal
-                place={selectedPlace}
-                open={Boolean(selectedPlace)}
-                onClose={closeModal}
-            />
         </div>
     );
 }

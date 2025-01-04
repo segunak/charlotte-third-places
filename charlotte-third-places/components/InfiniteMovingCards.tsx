@@ -3,7 +3,6 @@
 import { cn } from "@/lib/utils";
 import { Place } from "@/lib/types";
 import { PlaceCard } from "@/components/PlaceCard";
-import { PlaceModal } from "@/components/PlaceModal";
 import {
     useRef,
     useState,
@@ -35,7 +34,6 @@ export const InfiniteMovingCards = ({
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [animationKey, setAnimationKey] = useState(0);
-    const [selectedPlace, setSelectedPlace] = useState<Place | null>(null);
 
     const speedMapping = useMemo(
         () => ({
@@ -103,20 +101,11 @@ export const InfiniteMovingCards = ({
                             key={`${place.name}-${idx}`}
                             className="w-[350px] sm:w-[400px] max-w-full relative"
                         >
-                            <PlaceCard
-                                place={place}
-                                onClick={() => setSelectedPlace(place)}
-                            />
+                            <PlaceCard place={place} />
                         </li>
                     ))}
                 </ul>
             </div>
-
-            <PlaceModal
-                place={selectedPlace}
-                open={Boolean(selectedPlace)}
-                onClose={() => setSelectedPlace(null)}
-            />
         </div>
     );
 };
