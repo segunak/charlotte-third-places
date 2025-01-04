@@ -36,12 +36,16 @@ export default async function MapPage() {
                             <span className="hidden sm:inline">
                                 {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
                             </span>
-                            {" "} Click on any marker to see more information about that place.
-                            <span className="font-bold text-primary">
-                                {" "} Filter the map using the {" "}
-                                <span className="sm:hidden">button in the lower-right corner.</span>
-                                <span className="hidden sm:inline">sidebar on the right.</span>
+                        </p>
+                        <p>
+                            Click any marker for more info about a place. {" "}
+                            <span className="font-bold text-primary">Filter</span> using the {" "}
+                            <span className="sm:hidden">
+                                button in the <span className="font-bold text-primary">lower-right corner</span>
                             </span>
+                            <span className="hidden sm:inline font-bold text-primary">
+                                sidebar on the right
+                            </span>.
                         </p>
                     </div>
                     <div className="w-full h-[70vh] sm:h-[80vh] mb-0 sm:mb-4">
