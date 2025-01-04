@@ -44,7 +44,7 @@ export default async function HomePage() {
           <span className="inline sm:hidden">
             <span className="font-bold text-primary">Swipe left</span> to explore various places.
           </span>{" "}
-x
+
           {/* Always visible text */}
           <span className="font-bold text-primary">Click any card</span> for more info about a place. If you're feeling adventurous,{" "}
           <span className="font-bold text-primary">click the shuffle button</span>{" "}
