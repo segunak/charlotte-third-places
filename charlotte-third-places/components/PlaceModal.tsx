@@ -50,6 +50,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
         }
     };
 
+    const website = place.website?.trim();
+    const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
+
     return (
         <Dialog open onOpenChange={onClose}>
             <DialogContent
@@ -69,16 +72,14 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
                 <Separator />
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
-                        {place.googleMapsProfileURL?.trim() && (
+                        <Button variant="outline">
+                            <ResponsiveLink href={googleMapsProfileURL}>
+                                <Icons.google className="h-5 w-5 sm:h-6 w-6" />
+                            </ResponsiveLink>
+                        </Button>
+                        {website && (
                             <Button variant="outline">
-                                <ResponsiveLink href={place.googleMapsProfileURL.trim()}>
-                                    <Icons.google className="h-5 w-5 sm:h-6 w-6" />
-                                </ResponsiveLink>
-                            </Button>
-                        )}
-                        {place.website?.trim() && (
-                            <Button variant="outline">
-                                <ResponsiveLink href={place.website.trim()}>
+                                <ResponsiveLink href={website}>
                                     <Icons.externalLink className="h-5 w-5 sm:h-6 w-6" />
                                 </ResponsiveLink>
                             </Button>
@@ -111,4 +112,3 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, onClose }) => {
         </Dialog>
     );
 };
-
