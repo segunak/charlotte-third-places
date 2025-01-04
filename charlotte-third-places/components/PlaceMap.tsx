@@ -102,12 +102,11 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     })}
                 </Map>
 
-                {selectedPlace && (
-                    <PlaceModal
-                        place={selectedPlace}
-                        onClose={() => setSelectedPlace(null)}
-                    />
-                )}
+                <PlaceModal
+                    place={selectedPlace}
+                    open={Boolean(selectedPlace)}
+                    onClose={() => setSelectedPlace(null)}
+                />
             </div>
         </APIProvider>
     );

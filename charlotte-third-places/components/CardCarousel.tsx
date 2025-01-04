@@ -4,7 +4,13 @@ import { Place } from "@/lib/types";
 import React, { useState } from "react";
 import { PlaceCard } from "@/components/PlaceCard";
 import { PlaceModal } from "@/components/PlaceModal";
-import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselPrevious,
+    CarouselNext,
+} from "@/components/ui/carousel";
 
 interface CardCarouselProps {
     items: Place[];
@@ -30,12 +36,11 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({ items }) => {
                 <CarouselNext />
             </Carousel>
 
-            {selectedPlace && (
-                <PlaceModal
-                    place={selectedPlace}
-                    onClose={() => setSelectedPlace(null)}
-                />
-            )}
+            <PlaceModal
+                place={selectedPlace}
+                open={Boolean(selectedPlace)}
+                onClose={() => setSelectedPlace(null)}
+            />
         </div>
     );
 };

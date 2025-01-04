@@ -186,7 +186,11 @@ export function DataTable({ rowData }: DataTableProps) {
                     fullWidthCellRenderer={fullWidthCellRenderer}
                 />
             </div>
-            {selectedCard && <PlaceModal place={selectedCard} onClose={() => setSelectedCard(null)} />}
+            <PlaceModal
+                place={selectedCard}
+                open={Boolean(selectedCard)}
+                onClose={() => setSelectedCard(null)}
+            />
         </div>
     );
 }

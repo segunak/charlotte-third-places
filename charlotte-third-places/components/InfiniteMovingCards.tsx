@@ -112,12 +112,11 @@ export const InfiniteMovingCards = ({
                 </ul>
             </div>
 
-            {selectedPlace && (
-                <PlaceModal
-                    place={selectedPlace}
-                    onClose={() => setSelectedPlace(null)}
-                />
-            )}
+            <PlaceModal
+                place={selectedPlace}
+                open={Boolean(selectedPlace)}
+                onClose={() => setSelectedPlace(null)}
+            />
         </div>
     );
 };

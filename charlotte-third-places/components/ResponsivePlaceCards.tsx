@@ -7,7 +7,12 @@ import { PlaceModal } from "@/components/PlaceModal";
 import { CardCarousel } from "@/components/CardCarousel";
 import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
-import React, { useState, useCallback, useEffect, useRef } from "react";
+import React, {
+    useState,
+    useCallback,
+    useEffect,
+    useRef,
+} from "react";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const shuffleTimeout = useRef<number | null>(null);
@@ -20,7 +25,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         if (shuffleTimeout.current) {
             clearTimeout(shuffleTimeout.current);
         }
-
         shuffleTimeout.current = window.setTimeout(() => {
             const shuffled = shuffleArrayNoAdjacentDuplicates(places);
             setShuffledItems(shuffled);
@@ -33,13 +37,14 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             shuffleItems();
             setIsLoading(false);
         };
-
         initialize();
     }, [shuffleItems]);
 
     const handleItemsChange = (count: number) => {
         setHasItems(count > 0);
     };
+
+    const closeModal = () => setSelectedPlace(null);
 
     return (
         <div className="relative overflow-hidden max-w-full">
@@ -78,12 +83,11 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 </div>
             )}
 
-            {selectedPlace && (
-                <PlaceModal
-                    place={selectedPlace}
-                    onClose={() => setSelectedPlace(null)}
-                />
-            )}
+            <PlaceModal
+                place={selectedPlace}
+                open={Boolean(selectedPlace)}
+                onClose={closeModal}
+            />
         </div>
     );
 }
