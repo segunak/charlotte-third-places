@@ -244,7 +244,7 @@ export default function AboutPage() {
             <h1 className="text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
-            <p className="text-wrap">
+            <p className="text-pretty">
                 Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. Keep reading to learn more.
             </p>
             {/* Creator*/}
@@ -265,16 +265,16 @@ export default function AboutPage() {
                         />
                     </div>
                 </CardHeader>
-                <CardContent className="leading-relaxed space-y-4">
+                <CardContent className="leading-relaxed text-pretty space-y-4">
                     <p>
                         Hello, I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>Work remotely.</li>
-                        <li>Study, read, or write.</li>
+                        <li>Read, write, study, etc.</li>
                         <li>Relax, unwind, decompress, people watch, catch up on shows, movies, or <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">anime</ResponsiveLink>.
                         </li>
-                        <li>Socialize, meet friends, meet new people, or savor solitude among others—because sometimes, simply being around friendly faces can lift the spirit and soothe loneliness.</li>
+                        <li>Socialize, meet friends, meet new people, or quietly enjoy the warmth of a shared space, even without interacting. Sometimes, simply being around friendly faces can lift spirits and soothe loneliness.</li>
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
@@ -295,7 +295,7 @@ export default function AboutPage() {
                         {frequentlyAskedQuestions.map((item, index) => (
                             <AccordionItem key={index} value={`question-${index + 1}`}>
                                 <AccordionTrigger>{item.title}</AccordionTrigger>
-                                <AccordionContent>{item.content}</AccordionContent>
+                                <AccordionContent className="text-pretty">{item.content}</AccordionContent>
                             </AccordionItem>
                         ))}
                     </Accordion>
@@ -309,7 +309,7 @@ export default function AboutPage() {
                         Tech Stack
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="leading-relaxed space-y-4 ">
+                <CardContent className="leading-relaxed text-pretty space-y-4 ">
                     <p>
                         Check out my article <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">Exploring the Tech Stack Behind Charlotte Third Places</ResponsiveLink> for details about how this project was built.
                     </p>
@@ -323,9 +323,9 @@ export default function AboutPage() {
                         Contact Information
                     </CardTitle>
                 </CardHeader>
-                <CardContent className="leading-relaxed">
+                <CardContent className="leading-relaxed text-pretty">
                     <p>
-                        The best way to get in touch with me regarding the site is by using the <Link href="/contribute" className="custom-link">Contribute</Link> page. Also feel free to visit my <ResponsiveLink href="https://segunakinyemi.com">personal website</ResponsiveLink> or connect with me on <ResponsiveLink href="https://linkedin.com/in/segunakinyemi">LinkedIn</ResponsiveLink>.
+                        The best way to get in touch is through the <Link href="/contribute" className="custom-link">Contribute</Link> page. Also, check out my <ResponsiveLink href="https://segunakinyemi.com">personal website</ResponsiveLink> or connect on <ResponsiveLink href="https://linkedin.com/in/segunakinyemi">LinkedIn</ResponsiveLink>.
                     </p>
                 </CardContent>
             </Card>

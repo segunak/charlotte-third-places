@@ -39,7 +39,7 @@ export default async function HomePage() {
           {/* Shown on desktop */}
           <span className="hidden sm:inline">Feed</span>
         </div>
-        <p>
+        <p className="text-pretty">
           {/* Shown on mobile only */}
           <span className="inline sm:hidden">
             <span className="font-bold text-primary">Swipe left</span> to explore various places.

@@ -42,7 +42,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
             <div className="col-span-1 space-y-4 mb-4 sm:mb-0 sm:pr-12">
                 {/* Intro Text */}
                 <div className="text-2xl font-bold">List</div>
-                <p>
+                <p className="text-pretty">
                     {/* Always visible portion */}
                     Browse the complete list of places below.{" "}
                     {/* Mobile-only text */}
