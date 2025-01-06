@@ -1,0 +1,908 @@
+{
+    "place_name": "Qahwah House",
+    "place_id": "ChIJL8lGGP2hVogRPpzLhiingmg",
+    "place_description": null,
+    "place_rating": 4.9,
+    "place_total_reviews": 133,
+    "place_google_id": "0x8856a1fd1846c92f:0x6882a72886cb9c3e",
+    "place_reviews_id": "7530765319418911806",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJL8lGGP2hVogRPpzLhiingmg&q=*&authuser=0&hl=en&gl=US",
+    "reviews_data": [
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmNXVDbUdnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmNXVDbUdnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf5uCmGg%7CCgwI7LLtuwYQqIqinwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736137068,
+            "review_datetime_utc": "01/06/2025 04:17:48",
+            "review_text": "Amazing coffee and service ! So generous as well ! We had one order that was a little late and the team was so generous to gift us two of the most delicious desserts they have ! Will definitely come again !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmaHF6MkV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmaHF6MkV3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfhqz2Ew%7CCgwIhIzsuwYQyIDt0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736115716,
+            "review_datetime_utc": "01/05/2025 22:21:56",
+            "review_text": "Amazing Adani Chai and Taj shared Mofawar with us (his favorite). It was amazingly good and we had a great experience both in tasting and learning."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmaHF6MEtBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmaHF6MEtBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfhqz0KA%7CCgwI8YvsuwYQsMrKgQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736115697,
+            "review_datetime_utc": "01/05/2025 22:21:37",
+            "review_text": "The coffee was amazing. Our server Tahj was so helpful and informative about the different type of Yemen coffee. I will definitely come back and try everything on the menu."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmLXVLc21nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmLXVLc21nRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf-uKsmgE%7CCgsIrdzruwYQoLquQQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736109613,
+            "review_datetime_utc": "01/05/2025 20:40:13",
+            "review_text": "I had an amazing experience i'm in love with this place the coffee has a luxurious taste and the pastries was out of this world."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmLXJTZkRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmLXJTZkRREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf-rSfDQ%7CCgwI4tfruwYQkKX6wgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736109026,
+            "review_datetime_utc": "01/05/2025 20:30:26",
+            "review_text": "The best coffee shop in Charlotte. Authentic & Delicious. The pastries are fresh and the people make you feel right at home. Highly recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmMnR1Z2N3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmMnR1Z2N3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf2tugcw%7CCgwImJjruwYQ4JnjowM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736100888,
+            "review_datetime_utc": "01/05/2025 18:14:48",
+            "review_text": "Had an amazing time. Cheesecake swirl was so delicious and the staff helped perfectly with letting me know how long my drinks would take. The drinks were made perfectly and were served with such a kind smile. LOVE this place =)"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmNHNlX1dREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmNHNlX1dREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf4se_WQ%7CCgwIx4vouwYQwMqR8wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736050119,
+            "review_datetime_utc": "01/05/2025 04:08:39",
+            "review_text": "Loved this spot! I will make it my business to visit every time I visit Charlotte. I highly recommend the adeni tea. My only suggestion is to include allergens for dishes. While cross-contamination is a possibility, making an effort to include us allergen-sensitive folks is helpful."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmNHBPMnRnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmNHBPMnRnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf4pO2tgE%7CCgwIwobouwYQ2MzRnwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736049474,
+            "review_datetime_utc": "01/05/2025 03:57:54",
+            "review_text": "Nice coffee shop with yummy lattes & pastries. I personally like adeni chai with golden babuossa. The staff is welcoming especially the person who takes our orders. This place is quiet on the mornings and early evenings, but can be quite busy during the late evenings since this place is dedicated for nightlife who's looking for non-alcoholic options. If you are lucky and come in late evenings, you can get free samples of their special coffees or teas!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmNHJYdUpREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmNHJYdUpREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf4rXuJQ%7CCgwI54DouwYQ8N3XvAE%7C?hl=en",
+            "review_rating": 1,
+            "review_timestamp": 1736048743,
+            "review_datetime_utc": "01/05/2025 03:45:43",
+            "review_text": "Not kids friendly at all, too loud, people screaming and yelling, too loud of music, my little one and my 7 year old were petrified"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmb3VmcVlnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmb3VmcVlnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfoufqYg%7CCgwIktznuwYQ6Oy9lQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736044050,
+            "review_datetime_utc": "01/05/2025 02:27:30",
+            "review_text": "Qahwah House in Charlotte is truly a hidden gem! From the moment you walk in, the friendly staff makes you feel like family. Their hospitality is unmatched and creates such a welcoming atmosphere.\n\nThe coffee here is something special--authentic Yemeni coffee roasted in-house, giving it a flavor that's both unique and unforgettable. You can tell they take great pride in sourcing organic, high-quality beans.\n\nDon't miss out on their pastries, especially the honeycomb! It's perfectly sweet, flaky, and pairs so well with their one-of-a-kind Adani Chai. Speaking of the chai, it's an absolute must-try--rich, aromatic, and unlike anything else you'll find in the city.\n\nIf you're a coffee or tea lover, Qahwah House is a spot you'll keep coming back to. Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmd3FDVDFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmd3FDVDFRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfwqCT1QE%7CCgwItYLnuwYQwPH5zAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736032565,
+            "review_datetime_utc": "01/04/2025 23:16:05",
+            "review_text": "This place is a gem! I saw people online talking of this place! The coffee puts most others to shame. The pastries are amazing! I highly recommend the Sabaya! Happy to come back again sometime!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmdktxN2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmdktxN2JBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfvKq7bA%7CCgwI64TmuwYQyJfE6QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736016491,
+            "review_datetime_utc": "01/04/2025 18:48:11",
+            "review_text": "Went to go check out this new Yemeni coffee shop that opened up near us, and we really enjoyed it! We ordered the Yemeni latte, iced brown sugar latte, honeycomb pastry, and spinach feta pastry. The Yemeni latte was delicious and the honeycomb as well.\n\nWe came at a busy time - Saturday around noon, so it took a little while to get our order, but the staff is very friendly. The atmosphere was lively, with lots of seating, both indoor and outdoor."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmdkpMc2FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmdkpMc2FREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDfvJLsaQ%7CCgsIloLmuwYQyJuqFg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736016150,
+            "review_datetime_utc": "01/04/2025 18:42:30",
+            "review_text": "Staff very friendly.\nYemeni latte is delicious.\n\nWe came at a busy time. It did take a while to order and receive food but the atmosphere is friendly and inviting."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmbE43MjhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmbE43MjhnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDflN728gE%7CCgsIsOHiuwYQ6LeUcQ%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1735962800,
+            "review_datetime_utc": "01/04/2025 03:53:20",
+            "review_text": "I visited the Qahwah House coffee shop. I liked the fact that they showcase their Yemeni background. The coffee and desserts were great. However, the coffee shop was unwelcoming, and the furniture was very cold and hard to sit in for any length of time."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmMk1HTVRREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmMk1HTVRREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDf2MGMTQ%7CCgwI-aLhuwYQ0PTarwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735938425,
+            "review_datetime_utc": "01/03/2025 21:07:05",
+            "review_text": "I've been to other qahwah house locations when typing and im glad it opened up in Charlotte. The drinks and pastries are always fantastic, i'm not as much a chai drinker as i am coffee but both options here are good. its also a very nice place to relax and hangout. the parking during the day is fine but im sure at night it gets a little more challenging as the lot is a bit tight. The interior of the shop is very roomy, larger than most other coffee shops."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmLTkyN29nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmLTkyN29nRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf-927ogE%7CCgwIvfDXuwYQ6LP42wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735784509,
+            "review_datetime_utc": "01/02/2025 02:21:49",
+            "review_text": "Cutest place to hang out at in Charlotte!! Best Coffee I've ever had and the deserts are top notch!! Open late.. staff is friendly.. Zak definitely makes you feel welcomed!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmbThQN2tBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmbThQN2tBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfm8P7kAE%7CCgwIkNTWuwYQgLynkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735764496,
+            "review_datetime_utc": "01/01/2025 20:48:16",
+            "review_text": "Great coffee and education on the origins of coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2bXBxRnpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2bXBxRnpnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvmpqFzgE%7CCgsI_ozRuwYQgMfLag%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735673470,
+            "review_datetime_utc": "12/31/2024 19:31:10",
+            "review_text": "One of the best places to drink Yemeni coffee (Mocha), adni chia, some Yemeni sweets and some cake. I recommend that everyone go to this place.\n\nEverywhere you go there is QH\nMichigan\nNew York\nIllinois\nNew Jersey\nTexas\nOhio\nWisconsin\nVirginia\nNorth Carolina"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmaGNILTl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmaGNILTl3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfhcH-9wE%7CCgsIuqbMuwYQ2MuEJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735594810,
+            "review_datetime_utc": "12/30/2024 21:40:10",
+            "review_text": "Beyond excited to have this unique new spot in the neighborhood! We came in this afternoon for drinks and a snack and were blown away by everything we tried.\n\nFirst of all, the space is beautiful - the high ceilings combine with stone and wood accents to make for an airy, inviting atmosphere.\n\nThe staff couldn't be nicer - we decided to try the pistachio and brown sugar lattes (both iced) with the honeycomb pastry. I truly don't think I have ever tasted anything quite as good as that pistachio latte. We both couldn't get over that one! The brown sugar latte was also fantastic - I tasted lots of warming spices like cinnamon and nutmeg - and the honeycomb came out warm and drizzled with honey... holy moly. Unbelievable. The bread reminded me of a yeast roll, and several pockets of it had a cream cheese mixture that's tartness was perfectly balanced with the sweet honey.\n\nWe already can't wait to come back. Such an incredible new addition to Plaza Midwood!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmaGJhUHp3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmaGJhUHp3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfhbaPzwE%7CCgsIzqHMuwYQ0I_dXg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735594190,
+            "review_datetime_utc": "12/30/2024 21:29:50",
+            "review_text": "Amazing place! The drinks were perfection, and we loved the vibe and thoughtful hospitality of the staff. The pistachio latte and honeycomb pastry were our favorites!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmc2JyRHl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmc2JyRHl3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfsbrDywE%7CCgsI-6nIuwYQyMa6ew%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735529723,
+            "review_datetime_utc": "12/30/2024 03:35:23",
+            "review_text": "My favorite coffee shop"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmMGY3dU9nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmMGY3dU9nEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf0f7uOg%7CCgsIxvTHuwYQsKfCUw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735522886,
+            "review_datetime_utc": "12/30/2024 01:41:26",
+            "review_text": "A nice cafe with very unique yet delicious drinks. The pastries made with farm cheese are incredibly tasty.\nThe staff was very hospitable, and as we were leaving, they gave each of us a gift--a coffee cup."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNma2NpdG13RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNma2NpdG13RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfkcitmwE%7CCgwIxq3HuwYQqPWtxAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735513798,
+            "review_datetime_utc": "12/29/2024 23:09:58",
+            "review_text": "I recently started looking for places that stay open late with a warm, inviting environment and offer great food and service, and this coffee house is that and more! The customer service is very warm and friendly. The overall design and layout of the shop is spacious and absolutely beautiful. This is a great place to enjoy yourself and make great memories.\n\nI can be a bit anxious socially, and I was initially worried when I first entered the shop due to its high volume of customers at the time. I sat at the coffee bar with a close friend, and despite our initial worries, we spent about three hours there! You can tell that this space is focused on creating and housing a genuine, authentic community of kind people.\n\nI ordered the Jubani blend and honeycomb pastry, and they were divine! So far, those are my favorite items. Honorable mentions from others who've ordered here include the Yemeni Tea and Adeni Chai--both are delicious! I look forward to trying more of their menu items."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmb2RTa0lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmb2RTa0lREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfodSkIQ%7CCgsInsXGuwYQ-OL6RQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735500446,
+            "review_datetime_utc": "12/29/2024 19:27:26",
+            "review_text": "I actually stumbled upon Qahwah while I was across the street! It was beautiful, the people are so friendly. The owner Zack was there giving out free samples to everyone. It also is open really late which I am very excited about! I look forward to coming back in the future!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmOXJ2bTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmOXJ2bTB3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf9rvm0wE%7CCgwInMDCuwYQ6P-wswE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735434268,
+            "review_datetime_utc": "12/29/2024 01:04:28",
+            "review_text": "Best environment ever , customer service is a 1000/10. Nothing bad to say regarding this place and this coffee shop close at 11:00 pm weekdays I LOVE THAT . If you want to have a cup of a good coffee , good dessert and also a wonderful customer service I will said this is the perfect place . LOVE IT"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmMXVfaVpnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmMXVfaVpnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf1u_iZg%7CCgwIjdXBuwYQuOSf9QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735420557,
+            "review_datetime_utc": "12/28/2024 21:15:57",
+            "review_text": "Amazing food and atmosphere\nOnly issue is parking is limited"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmbG9mek5REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmbG9mek5REAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICflofzNQ%7CCgwIhq3BuwYQsP-mkgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735415430,
+            "review_datetime_utc": "12/28/2024 19:50:30",
+            "review_text": "Definitely a banger!! \n\nSolid atmosphere. We were with kiddos, but you can see this being a great first date spot, or simply a place to grab a warm cup of fancy joe. Love the tea lights they use to keep large servings warm.\n\nDesserts look great... Tempting.\n\nBrown sugar latte slaps!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmbHE2bFNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmbHE2bFNnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICflq6lSg%7CCgsIsI_BuwYQkObTNQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735411632,
+            "review_datetime_utc": "12/28/2024 18:47:12",
+            "review_text": "The pistachio latte & milk cake were so good! Adeni Karak was amazing!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmeXJHUTlRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmeXJHUTlRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfyrGQ9QE%7CCgsI7IS9uwYQiJuEfQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735344748,
+            "review_datetime_utc": "12/28/2024 00:12:28",
+            "review_text": "I know, do we need another coffee shop in Charlotte, North Carolina? Probably not but absolutely love Qahwah House- Charlotte. The space is very inviting and clean. There are tons of tables inside and about six or eight tables outside. The ordering system is pretty simple. There's paper menus along with a menu on the wall. I like that they have regular espresso and cappuccino drinks along with Middle Eastern specialties. I tried the Jubani with evaporated milk. It was absolutely delicious. I also had the honeycomb and the Sabaya pastries. Both were delicious. The employees were very friendly as well. I thought the prices were fair. Will absolutely go back again!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmOHNLQ2pRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmOHNLQ2pRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf8sKCjQE%7CCgsIq_O7uwYQsIGhAQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735326123,
+            "review_datetime_utc": "12/27/2024 19:02:03",
+            "review_text": "Fantastic coffee shop outside of the norm."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmOHJUUzhBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmOHJUUzhBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICf8rTS8AE%7CCgwIye67uwYQ4Ozp_wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735325513,
+            "review_datetime_utc": "12/27/2024 18:51:53",
+            "review_text": "Great service, great atmosphere, great coffee. Highly recommend!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmdkttQzdnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmdkttQzdnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfvKmC7gE%7CCgwIjPS4uwYQ4K2OzgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735277068,
+            "review_datetime_utc": "12/27/2024 05:24:28",
+            "review_text": "Excelente! Me a encantado "
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNmbklURU1BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmbklURU1BEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfnITEMA%7CCgsIgtm3uwYQsM3-Hw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735257218,
+            "review_datetime_utc": "12/26/2024 23:53:38",
+            "review_text": "Best Yemeni coffee in charlotte, cozy seating and delicious pastries."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmckxmVTBnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmckxmVTBnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfrLfU0gE%7CCgsInpC3uwYQgJzZeA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735247902,
+            "review_datetime_utc": "12/26/2024 21:18:22",
+            "review_text": "I stopped by this cozy cafe, and let me tell you it's a total game changer.\nTheir Yemeni coffee is something special. It's bold and rich, and has this unique spice profile that you won't find anywhere else. It's like a warm hug in a cup"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmekpxMGpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmekpxMGpnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfzJq0jgE%7CCgwIm7i2uwYQiLjHmwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735236635,
+            "review_datetime_utc": "12/26/2024 18:10:35",
+            "review_text": "What a great addition to diversify the coffee scene in Charlotte. The indoor is beautiful and the intricate details in the decor add such a nice touch. It's a family owned coffee shop, and they truly want you to feel connected with their culture, which is beautiful. The pistachio and Yemeni lattes were both delicious. I also ordered a spinach and feta pastry, which was buttery and delicious, and the service was quick with very kind employees. I'll definitely be back here!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmcE1pQ2xBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmcE1pQ2xBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfpMiClAE%7CCgsIt7OzuwYQ4PqbVQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735186871,
+            "review_datetime_utc": "12/26/2024 04:21:11",
+            "review_text": "Tres bel endroit, avec des cafes et des patisseries incroyables. Je recommande vivement ! A tester absolument"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmeE9IeGxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmeE9IeGxRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICfxOHxlQE%7CCgwIppKzuwYQiNusqwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735182630,
+            "review_datetime_utc": "12/26/2024 03:10:30",
+            "review_text": "New favorite coffee shop. It's flavorful and rich."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2OS1DYmNnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2OS1DYmNnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv9-Cbcg%7CCgsImbmuuwYQ-J6fXQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735105689,
+            "review_datetime_utc": "12/25/2024 05:48:09",
+            "review_text": "This is the best coffee house in Charlotte no doubt about it, the service is excellent, slim was very attentive and friendly, Nour was always helpful and funny. Overall very great experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2dF9XT0RREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2dF9XT0RREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvt_WODQ%7CCgsIkeCtuwYQ8NatMg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735094289,
+            "review_datetime_utc": "12/25/2024 02:38:09",
+            "review_text": "Amazing service. The adani chai is fantastic and so is the honeycomb"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2MTRyZF9BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2MTRyZF9BRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv14rd_AE%7CCgwIkI-tuwYQyInh0wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735083920,
+            "review_datetime_utc": "12/24/2024 23:45:20",
+            "review_text": "The experience was absolutely amazing. There was plenty of room for seating and the environment was very nice. The workers were all so sweet and gave us a pastry with our order. Later as we were sitting, they brought us samples of a drink and gave my table a little gift to take home (a little mug :) ) I accidentally dropped mine outside and came back to purchase another one, they just gave me a replacement. 10/10 experience, would definitely come back.\nBtw for what to order, we got the pistachio milk cake which was bomb, and the pistachio dream also bomb, I forgot what the honeycomb was called but it was also really good if you like the cream cheese kind of filling and honey combo. The Adeni pot was really good and for reference, I usually don't like things with cardamom at ALL but this was actually really tasty."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNYX2MzbVJnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYX2MzbVJnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICX_c3mRg%7CCgwI4-OquwYQqLbmuAM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735045603,
+            "review_datetime_utc": "12/24/2024 13:06:43",
+            "review_text": "I love the way they make the iced adani chai ."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2aS0yXzhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2aS0yXzhnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvi-2_8gE%7CCgwIhMmouwYQ-M7dvQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735009412,
+            "review_datetime_utc": "12/24/2024 03:03:32",
+            "review_text": "amazing customer service and even better coffee"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2aS0ySGxRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2aS0ySGxRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvi-2HlQE%7CCgwI-siouwYQgN2_rgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735009402,
+            "review_datetime_utc": "12/24/2024 03:03:22",
+            "review_text": "Best coffee shop in CLT!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2azRyMkp3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2azRyMkp3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvk4r2Jw%7CCgwIsNumuwYQ4MW8vwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734978992,
+            "review_datetime_utc": "12/23/2024 18:36:32",
+            "review_text": "I love this new addition to the city! The design of the cafe is very unique and has illustrations depicting the history of Qahwah, my favorite part was the mirror that was almost as tall as the wall! Taj was amazing and gifted me a beautiful cup and a delicious cup of tea before my order came out :) 1000/10 can't recommend this place enough."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2NDVuM21nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2NDVuM21nRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv45n3mgE%7CCgwIjdemuwYQqLTKjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734978445,
+            "review_datetime_utc": "12/23/2024 18:27:25",
+            "review_text": "Great place for coffee and pastries! Tash is very hospitable and we will definitely be back"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2NF9lQzN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2NF9lQzN3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv4_eC3wE%7CCgwIj8mmuwYQiL-gvQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734976655,
+            "review_datetime_utc": "12/23/2024 17:57:35",
+            "review_text": "Love this place for a coffee date!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2NC1mMUt3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2NC1mMUt3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv4-f1Kw%7CCgwI5cemuwYQiIqbkwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734976485,
+            "review_datetime_utc": "12/23/2024 17:54:45",
+            "review_text": "had the opportunity to visit Qahwah House (CLT) today and it's was such an amazing experience. The atmosphere was very welcoming. Highly recommend this place and will definitely be returning back."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2M2ZxUXN3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2M2ZxUXN3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv3fqQswE%7CCgsIk_ujuwYQoMboVg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734933907,
+            "review_datetime_utc": "12/23/2024 06:05:07",
+            "review_text": "Honestly Qahwah house blew my mind. It's now my favorite coffee shop ever. Their pistachio latte is soo good and pastries are unbelievable. I will definitely be coming back with my friends and family. I recommend everyone to try it I promise you won't regret."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2N2RlMGlnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2N2RlMGlnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7de0igE%7CCgwImKujuwYQ2LSziAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734923672,
+            "review_datetime_utc": "12/23/2024 03:14:32",
+            "review_text": "Beautiful place and great staff."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2N1plajVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2N1plajVBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7Zej5AE%7CCgsI-KqjuwYQyJ2iUA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734923640,
+            "review_datetime_utc": "12/23/2024 03:14:00",
+            "review_text": "Amazing place!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2N2FuSVh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2N2FuSVh3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7anIXw%7CCgwI95ejuwYQ2JfCogE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734921207,
+            "review_datetime_utc": "12/23/2024 02:33:27",
+            "review_text": "The most beautiful coffee shop!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2N2JHUzFBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2N2JHUzFBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7bGS1AE%7CCgsIjpajuwYQiJOgPQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734920974,
+            "review_datetime_utc": "12/23/2024 02:29:34",
+            "review_text": "Great vibes, great drinks, 5-stars all around!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2N2NhNS1nRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2N2NhNS1nRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7ca5-gE%7CCgwI24ujuwYQ6OaMpgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734919643,
+            "review_datetime_utc": "12/23/2024 02:07:23",
+            "review_text": "Everything from the environment, to the service, staff, beverages, and pastries was absolutely wonderful! I'd recommend giving this establishment at least one chance just to see what they're about because they're awesome! Will definitely be back soon."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2cmVMc1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2cmVMc1lREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvreLsYQ%7CCgwIj8uiuwYQkLf6wwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734911375,
+            "review_datetime_utc": "12/22/2024 23:49:35",
+            "review_text": "Very authentic and pleasant experience! The Adani Chai was spot on and the honey Pastries were out of the world"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2amNQSWFnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2amNQSWFnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvjcPIag%7CCgwIsfChuwYQ0KSNnQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734899761,
+            "review_datetime_utc": "12/22/2024 20:36:01",
+            "review_text": "I had a great experience visiting Qahwah House for the first time. The pour-over coffee was tasty, and the customer service was absolutely top-notch. I'll definitely be back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2amQyV0lnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2amQyV0lnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvjd2WIg%7CCgwI8-6huwYQkI3HsgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734899571,
+            "review_datetime_utc": "12/22/2024 20:32:51",
+            "review_text": "Just visited the Qahwah House in Charlotte, and I absolutely loved it! The experience was so culturally immersive. I enjoyed my coffee and Sabaya immensely--such a treat! It's amazing to see Charlotte embracing more diversity. Highly recommend this spot! I'll definitely be back to explore the entire menu. It's a perfect place to visit with friends or family. My husband and I shared a tea pot, and it was such a nice touch. The service was fantastic, and we even got to try some samples, which was a huge plus! Now I know exactly what to order next time!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2allEOUJ3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2allEOUJ3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvjYD9Bw%7CCgsI6sehuwYQkLv6EQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734894570,
+            "review_datetime_utc": "12/22/2024 19:09:30",
+            "review_text": "Amazing place, really great service and the pastries are delicious"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2MWFDN1F3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2MWFDN1F3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv1aC7Qw%7CCgsI0q6guwYQqKTyPw%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734874962,
+            "review_datetime_utc": "12/22/2024 13:42:42",
+            "review_text": "Very lively atmosphere, great coffee and tea, and delicious pastries - many of which appear to be made in-house. Interacted with several employees, all of whom were incredibly friendly and helpful. Really cool spot that stays open late for folks who want a social atmosphere without the alcohol. Great addition to the neighborhood!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2NWVfT3N3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2NWVfT3N3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv5e_OswE%7CCgsIifufuwYQ-OTnWQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734868361,
+            "review_datetime_utc": "12/22/2024 11:52:41",
+            "review_text": "Coffee products at Qahwah House are always top notch and filled with flavor. Staff at this location are kind and surpass any other service experience I've had in CLT.\nWe got a Yemeni latte with hint of honey, small pot of Mofawar coffee, spinach pastry and Khaliat Alnahi (honey comb bread filled with cheese)."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2aGRDWmNREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2aGRDWmNREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvhdCZcQ%7CCgwIybOeuwYQkKX6xQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734842825,
+            "review_datetime_utc": "12/22/2024 04:47:05",
+            "review_text": "Qahwah House in Charlotte offers an exceptional coffee experience that beautifully blends Yemeni tradition with modern ambiance. Located at 1318 Pecan Ave, this cozy cafe provides a welcoming atmosphere where the rich culture of Yemen shines through. The menu features high-quality, organic coffees and teas, with standout options like the Adeni Chai, a flavorful and aromatic beverage that's a delightful alternative to traditional coffee. Pair your drink with their fresh pastries and desserts, which strike the perfect balance of sweetness and texture. The friendly and efficient staff ensure excellent service, even during busy times, and the inviting decor and comfortable seating make it an ideal spot to relax or catch up with friends. Whether you're a coffee enthusiast or simply looking to explore authentic Yemeni flavors, Qahwah House is a must-visit gem in Charlotte."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2dWIzUWpnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2dWIzUWpnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvub3QjgE%7CCgwI2fGduwYQ6Nz-jwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734834393,
+            "review_datetime_utc": "12/22/2024 02:26:33",
+            "review_text": "Amazing atmosphere, great service , I ordered Sanaani coffee, it hit the spot , Zakaria let us try some special Adani tea on the house , highly recommended , will definitely be back to try more items on the menu"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2dWEybFl3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2dWEybFl3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvua2lYw%7CCgsItfCduwYQiLSEGQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734834229,
+            "review_datetime_utc": "12/22/2024 02:23:49",
+            "review_text": "Amazing atmosphere"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bHRTM0t3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bHRTM0t3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvltS3Kw%7CCgwIoOecuwYQiN3j0wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734816672,
+            "review_datetime_utc": "12/21/2024 21:31:12",
+            "review_text": "Wow wow wow wow I can't have enough wows"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bWREcGZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bWREcGZBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvmdDpfA%7CCgsI4NmcuwYQ8Ju1KA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734814944,
+            "review_datetime_utc": "12/21/2024 21:02:24",
+            "review_text": "Just came in looking for a cup of coffee, and found 5 star customer service, excellent desserts, and the coffee is the best I've had. Excellent experience!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2NmYtYWpRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2NmYtYWpRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv6f-ajQE%7CCgsIqNecuwYQoKuKJQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734814632,
+            "review_datetime_utc": "12/21/2024 20:57:12",
+            "review_text": "Some of the best coffee and desserts I've had in CLT, hands down. Coffee beans roasted in-house, wonderful atmosphere, and incredibly nice staff. I will definitely be coming back!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2NmVfLW1BRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2NmVfLW1BRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv6e_-mAE%7CCgsI6tWcuwYQwKuWXA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734814442,
+            "review_datetime_utc": "12/21/2024 20:54:02",
+            "review_text": "Excellent service and wonderful food best service ever very nice and would recommend"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2eVlLN2V3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2eVlLN2V3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvyYK7ew%7CCgwI8NSbuwYQsNWVxgM%7C?hl=en",
+            "review_rating": 2,
+            "review_timestamp": 1734797936,
+            "review_datetime_utc": "12/21/2024 16:18:56",
+            "review_text": "First experience at a Qahwah house and was very disappointed! Iced Yemeni latte was watered down and the iced pistachio latte had nothing to do with pistachio! Honeycomb was very dry and the dough tasted basic. Desserts were decent but coffee was subpar. Paid around $50 but we left our cups full. Spacious cafe but no ambiance to it."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2a2FXVTJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2a2FXVTJnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvkaWU2gE%7CCgwI7I2auwYQ8NuJ8gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734772460,
+            "review_datetime_utc": "12/21/2024 09:14:20",
+            "review_text": "Great caffe, I loved their pastries"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2d2JMMTVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2d2JMMTVnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvwbL15gE%7CCgwI1O6YuwYQiOfhmAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734752084,
+            "review_datetime_utc": "12/21/2024 03:34:44",
+            "review_text": "Amazing atmosphere and great hospitality! Drinks and food are amazing, definitely worth a visit!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2d2RMNHVBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2d2RMNHVBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvwdL4uAE%7CCgwIiO6YuwYQ8LPNwQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734752008,
+            "review_datetime_utc": "12/21/2024 03:33:28",
+            "review_text": "best coffee and dessert in charlotte! great service and staff, always so friendly and generous, will continue to visit here often"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2Z2J2R1pREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2Z2J2R1pREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvgbvGZQ%7CCgwIkdiYuwYQwLfwjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734749201,
+            "review_datetime_utc": "12/21/2024 02:46:41",
+            "review_text": "I'm so excited Qahwa House is finally here! I have visited them in New York before; and they've brought the perfect Arabic Yemeni coffee vibes to Charlotte. The place is super spacious, and the atmosphere is just awesome. On top of that, the customer service was amazing - everyone was so friendly and welcoming.\nThe patio is also spacious and good.\nIt might take you a minute to find parking in busy times but overall worth it.\n\nCant wait to come back, especially during Ramadan nights. It feels like it's going to be such a great spot to chill and enjoy some good coffee and sweets! Definitely check it out!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2Z1lINnVnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2Z1lINnVnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvgYH6ugE%7CCgwIusqYuwYQ4Ibi4AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734747450,
+            "review_datetime_utc": "12/21/2024 02:17:30",
+            "review_text": "Absolutely adore this place. The food, the tea/coffee, to the service and atmosphere is top tier. Solomon is a great co-owner and all of the staff is so sweet! I recommend the pistachio latte and the pistachio cheesecake. Absolutely delicious. Also recommend Adeni Chai! I ordered one to go home, and didn't regret it! Great job guys!\n\nwill be coming back again soon!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2dnFpMFlREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2dnFpMFlREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvvqi0YQ%7CCgwI1c-XuwYQ2O2frwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734731733,
+            "review_datetime_utc": "12/20/2024 21:55:33",
+            "review_text": "Had the opportunity to try the new coffee shop in Charlotte (Qahwah house) and I was first blown away by the look of it and how friendly and quick there staff are then I got to try there adani chai and honestly was the best Ive ever had and they lots of pastries and I got to try there honeycomb bread and there pistachio dream and that was a 10/10 for me. Highly recommend this place definitely will be back with friends and family."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2M3BlUWVBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2M3BlUWVBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv3peQeA%7CCgwIsMaXuwYQkOuD1wI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734730544,
+            "review_datetime_utc": "12/20/2024 21:35:44",
+            "review_text": "The coffee Was amazing and the environment was perfect! I loved this place"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2M3N2eExREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2M3N2eExREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv3svxLQ%7CCgwIt8KXuwYQ0OmLkwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734730039,
+            "review_datetime_utc": "12/20/2024 21:27:19",
+            "review_text": "Amazing atmosphere, very beautiful decoration. I was there for 2 hours. I tried the pistachio and hazelnut dream cake. It was so good. I tried 7 different drinks and they were all good. They customer service was great all the guys were nice and respectful. Only complaint is the parking."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2M3QyX0VBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2M3QyX0VBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv3t2_EA%7CCgwIxb6XuwYQiI649QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734729541,
+            "review_datetime_utc": "12/20/2024 21:19:01",
+            "review_text": "I loved everything about this cafe, employees are so nice MashaAllah. They gave us so many things to try, me and friends been there for about 2-3 hours. Loved the experience, thank you Qahwa House"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bm9yVE1nEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bm9yVE1nEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvnorTMg%7CCgwI2oOXuwYQqI3sgwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734722010,
+            "review_datetime_utc": "12/20/2024 19:13:30",
+            "review_text": "Great Chai, atmosphere and customer service"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bnJqN1VREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bnJqN1VREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvnrj7UQ%7CCgsI9PmWuwYQsIT0Yg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734720756,
+            "review_datetime_utc": "12/20/2024 18:52:36",
+            "review_text": "Wonderful atmosphere and fantastic staff. They were very accommodating and went above and beyond with the service, checking in even after the drinks were served. The different drinks were lovely and the selections of sweets were great! Overall this is a great place for social and work."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bnVpWFlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bnVpWFlBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvnuiXYA%7CCgwI7PiWuwYQyLrzkAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734720620,
+            "review_datetime_utc": "12/20/2024 18:50:20",
+            "review_text": "Great drinks and pastries! I also love the ambiance and friendly atmosphere. I definitely will be coming again soon!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2N29LcDhnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2N29LcDhnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv7oKp8gE%7CCgwI5dWWuwYQ-NyMlAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734716133,
+            "review_datetime_utc": "12/20/2024 17:35:33",
+            "review_text": "Customer service was amazing, fast service and amazing coffee. Tea was smooth as well. Honeycomb pastry was sweet and crunchy."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2enJtcFZnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2enJtcFZnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvzrmpVg%7CCgwItY6WuwYQsK7ciQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734706997,
+            "review_datetime_utc": "12/20/2024 15:03:17",
+            "review_text": "Great place to try out! Coffee and service were both excellent!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2eHZQdHNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2eHZQdHNRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvxvPtsQE%7CCgwI7_6VuwYQkLqPkwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734705007,
+            "review_datetime_utc": "12/20/2024 14:30:07",
+            "review_text": "The flavors of coffee & Tea had such depth. It is a fair price for the amount of coffee received in comparison to a big corporate coffee shop. The flavors were authentic and the service was excellent.  I was able to sample a variety of desserts which all were delicious. The space is open and the atmosphere is welcoming and clean in all aspects. I will be returning, and will be bringing back more family and friends for the experience."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bG95OEZBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bG95OEZBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvloy8FA%7CCgwIqqaUuwYQwJDGxgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734677290,
+            "review_datetime_utc": "12/20/2024 06:48:10",
+            "review_text": "Great coffee and pastries"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2NXZQUE13EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2NXZQUE13EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv5vPPMw%7CCgwIhJWUuwYQ6N_R7gI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734675076,
+            "review_datetime_utc": "12/20/2024 06:11:16",
+            "review_text": "Great experience, i can easily tell the quality of the coffee is the best I ever had. I also had a khaliah dessert with a honey on top of it and it was amazing. Hope u guys soonly open more locations in the state."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2eHNlX0dBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2eHNlX0dBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvxse_GA%7CCgsI6sGTuwYQiNjfSg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734664426,
+            "review_datetime_utc": "12/20/2024 03:13:46",
+            "review_text": "Amazing coffee roasted and brewed to perfection. Amazing and kind staff made the experience very memorable. Love this for the neighborhood!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2eHBhSmt3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2eHBhSmt3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvxpaJkwE%7CCgwIxKWTuwYQyMiGmgE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734660804,
+            "review_datetime_utc": "12/20/2024 02:13:24",
+            "review_text": "Glad to see a new Yemeni coffee shop in town, great customer service and hospitality! Highly recommend the honeycomb."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2dXE2WVRBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2dXE2WVRBEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvuq6YTA%7CCgsIhaCTuwYQgI2EGQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734660101,
+            "review_datetime_utc": "12/20/2024 02:01:41",
+            "review_text": "This is the best coffee I ever taste if they have excellent dessert"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2aHNpY2FREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2aHNpY2FREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvhsicaQ%7CCgsIstySuwYQkM_ieA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734651442,
+            "review_datetime_utc": "12/19/2024 23:37:22",
+            "review_text": "First day opening and staff was so attentive even when they were slammed and busy.\nFood and drinks were amazing and the ambiance was just perfect. Thank you to the staff for their amazing hospitality and service."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2aG9pOUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2aG9pOUh3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDvhoi9Hw%7CCgwIltySuwYQwJWR6wE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734651414,
+            "review_datetime_utc": "12/19/2024 23:36:54",
+            "review_text": "great hospitality and the quality of the coffee is great\nyou can tell so much effort was put into this business!! Glad to have Qahwah house here in CLT"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2MnQyNFBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2MnQyNFBREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv2t24PQ%7CCgwIstWRuwYQgMmFjwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734634162,
+            "review_datetime_utc": "12/19/2024 18:49:22",
+            "review_text": "The best coffee shop in town\n\nHighly recommend"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2MnFXa2hnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2MnFXa2hnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv2qWkhgE%7CCgwI3tCRuwYQgJCRuwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734633566,
+            "review_datetime_utc": "12/19/2024 18:39:26",
+            "review_text": "I recently visited Qahwa House Charlotte, and it was an absolutely delightful experience! From the moment I walked in, the warm and welcoming atmosphere made me feel right at home. The decor is beautiful and cozy, creating the perfect spot to relax or catch up with friends.\n\nThe Yemeni coffee is truly exceptional--rich, flavorful, and brewed to perfection. Their unique blend of spices is something you won't find anywhere else. I also loved their pastries and snacks, which paired wonderfully with the coffee.\n\nThe staff was friendly, knowledgeable, and eager to ensure that every guest has a great experience. It's clear they take pride in what they do, and it shows in every detail.\n\nIf you're in Charlotte and looking for a place with incredible coffee, a great vibe, and outstanding service, Qahwa House is a must-visit. I can't wait to go back!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2NHNYYkJREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2NHNYYkJREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDv4sXbBQ%7CCgwItc2NuwYQkNW32QE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734567605,
+            "review_datetime_utc": "12/19/2024 00:20:05",
+            "review_text": "All of the workers were excellent, especially nouraldeen. Their coffee was really good and their pastries were fresh. Would definitely recommend!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUQzcGZMTEV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzcGZMTEV3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgID3pfLLEw%7CCgwI44PluQYQuJjdzQE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1731805667,
+            "review_datetime_utc": "11/17/2024 01:07:47",
+            "review_text": "Best customer service and the best coffee I've ever had in my life! Can't wait for this to open in charlotte!!!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUQzcXJxQ3F3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzcXJxQ3F3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgID3qrqCqwE%7CCgwI3_XVuQYQyOnuxAI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1731558111,
+            "review_datetime_utc": "11/14/2024 04:21:51",
+            "review_text": "I visited the branch in Westbury Long Island and I had a great experience, the food was top tier and the employees were attentive"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNINXZmNWl3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINXZmNWl3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgICH5vf5iwE%7CCgsI7drhtgYQwOCCQQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1725459821,
+            "review_datetime_utc": "09/04/2024 14:23:41",
+            "review_text": "I've been to their Williamsburg, Brooklyn location. Their coffee is amazing! Waiting for a Charlotte location to open."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUN29hdnRRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUN29hdnRRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7oavtQE%7CCgsInuzztQYQkLy6Qg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1723659806,
+            "review_datetime_utc": "08/14/2024 18:23:26",
+            "review_text": "The body of their coffee is rich and smooth. One of the best coffee's I've tried in my life! I am most definitely looking forward to the opening day."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURMN05xTDJBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMN05xTDJBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDL7NqL2AE%7CCgwIzJLuswYQ-M2siwE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1719372108,
+            "review_datetime_utc": "06/26/2024 03:21:48",
+            "review_text": "The Best coffee ever..\nVery delicious food"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUbnFhT3B3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUbnFhT3B3RRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTnqaOpwE%7CCgwI2rjEsgYQiJXogwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716591706,
+            "review_datetime_utc": "05/24/2024 23:01:46",
+            "review_text": "Can't wait for this place to open!!! Been to this coffee shop in a lot of different states always the best"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUbnFEVTJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUbnFEVTJRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTnqDU2QE%7CCgwIjabEsgYQkJeDjQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716589325,
+            "review_datetime_utc": "05/24/2024 22:22:05",
+            "review_text": "Amazing food! Great hospitality and amazing staff"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3Z2X1FnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3Z2X1FnEAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7vv_Qg%7CCgsIqJ_EsgYQoJPLEg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716588456,
+            "review_datetime_utc": "05/24/2024 22:07:36",
+            "review_text": "Great coffee and experience"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3NYcE1REAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3NYcE1REAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7sXpMQ%7CCgsImJTEsgYQgM3CGQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716587032,
+            "review_datetime_utc": "05/24/2024 21:43:52",
+            "review_text": "The pull apart bread is fire !"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3Jtdkx3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3Jtdkx3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7rmvLw%7CCgwIn5PEsgYQkNet6gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716586911,
+            "review_datetime_utc": "05/24/2024 21:41:51",
+            "review_text": "Such a beautiful shop! The customer service is like no other."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3VtcVBREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3VtcVBREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7umqPQ%7CCgwI9ZHEsgYQyKvG9AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716586741,
+            "review_datetime_utc": "05/24/2024 21:39:01",
+            "review_text": "FINALLY AUTHENTIC TASTING COFFEE"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUN3NucDNBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUN3NucDNBRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7snp3AE%7CCgsIopHEsgYQ6KrLbg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716586658,
+            "review_datetime_utc": "05/24/2024 21:37:38",
+            "review_text": "Better than Starbucks !!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3ZHeU93EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3ZHeU93EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7vGyOw%7CCgwIwJDEsgYQyPCv9AI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716586560,
+            "review_datetime_utc": "05/24/2024 21:36:00",
+            "review_text": "CANT WAIT!!!!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3Vic1lREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3Vic1lREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7ubsYQ%7CCgwIxonEsgYQsMbQugE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716585670,
+            "review_datetime_utc": "05/24/2024 21:21:10",
+            "review_text": "Amazing food!"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUN29hLXNRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUN29hLXNRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7oa-sQE%7CCgwIzYjEsgYQsM3K0QM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716585549,
+            "review_datetime_utc": "05/24/2024 21:19:09",
+            "review_text": "The best authentic Yemeni cafe you can find in Charlotte. Nothing will top their sana'ani and the sabaya is a must try!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUN3JTSUh3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUN3JTSUh3EAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDT7rSIHw%7CCgwIwv_DsgYQqNC20wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716584386,
+            "review_datetime_utc": "05/24/2024 20:59:46",
+            "review_text": "Great food, service, and atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcnQyYnFRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcnQyYnFRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTrt2bqQE%7CCgsI5uvDsgYQwNzdMQ%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716581862,
+            "review_datetime_utc": "05/24/2024 20:17:42",
+            "review_text": "Everything was amazing! The food the drinks even the people."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcnAybXJRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcnAybXJRRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTrp2mrQE%7CCgsIquvDsgYQuPSDSA%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716581802,
+            "review_datetime_utc": "05/24/2024 20:16:42",
+            "review_text": "Amazing!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURUcnAyU1ZREAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURUcnAyU1ZREAE!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTrp2SVQ%7CCgwIqevDsgYQuKvzhgM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716581801,
+            "review_datetime_utc": "05/24/2024 20:16:41",
+            "review_text": "great coffee. great atmosphere."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURUcnVIT2lnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURUcnVIT2lnRRAB!2m1!1s0x0:0x6882a72886cb9c3e!3m1!1s2@1:CIHM0ogKEICAgIDTruHOigE%7CCgwIzOPDsgYQwMDLvwM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1716580812,
+            "review_datetime_utc": "05/24/2024 20:00:12",
+            "review_text": "Yum"
+        }
+    ]
+}
