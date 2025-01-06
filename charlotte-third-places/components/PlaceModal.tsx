@@ -94,7 +94,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
                         <ResponsiveLink href={googleMapsProfileURL}>
@@ -113,7 +112,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             <Icons.share className="h-6 w-6 text-primary" />
                         </Button>
                     </div>
-
                     <Separator />
                     <p>
                         <strong>Address:</strong> {place.address}
