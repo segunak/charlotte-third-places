@@ -1,3 +1,4 @@
+import { Place } from "@/lib/types"
 import { twMerge } from "tailwind-merge"
 import { clsx, type ClassValue } from "clsx"
 
@@ -87,3 +88,28 @@ export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
 
   return shuffled;
 }
+
+/**
+ * Handles sharing data using the Web Share API if available, otherwise falls back to copying the URL to the clipboard.
+ * 
+ * @param shareData - An object containing the title, text, and URL to be shared.
+ * @returns A promise that resolves when the share or copy action is complete.
+ */
+export const handleShare = async (shareData: { title: string; text: string; url: string }) => {
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+      console.log("Successfully shared");
+    } catch (error) {
+      console.error("Error sharing", error);
+    }
+  } else {
+    // Fallback to copying the link to the clipboard
+    try {
+      await navigator.clipboard.writeText(shareData.url);
+      alert("Link copied to clipboard!");
+    } catch (error) {
+      console.error("Failed to copy the link to clipboard", error);
+    }
+  }
+};

@@ -75,6 +75,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
 
     const website = place.website?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
+    const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -99,6 +100,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <ResponsiveLink href={googleMapsProfileURL}>
                             <Button variant="outline">
                                 <Icons.google className="h-6 w-6" />
+                            </Button>
+                        </ResponsiveLink>
+                        <ResponsiveLink href={appleMapsProfileURL}>
+                            <Button variant="outline">
+                                <Icons.apple className="h-6 w-6" />
                             </Button>
                         </ResponsiveLink>
                         {website && (

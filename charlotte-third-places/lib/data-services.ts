@@ -209,7 +209,6 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     };
 };
 
-
 /**
  * Reads and parses CSV data from a given file name (relative path),
  * converts each row into a `Place` object, and returns an array of `Place`.
