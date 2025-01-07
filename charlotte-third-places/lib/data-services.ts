@@ -12,6 +12,31 @@ const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
 }).base('apptV6h58vA4jhWFg');
 
+/**
+ * Generates a SHA1 hash from a given URL string.
+ * 
+ * @param {string} url - The URL to hash.
+ * @returns {string} The SHA1 hash of the URL.
+ */
+const generateHashFromURL = (url: string): string => {
+    return crypto.createHash('sha1').update(url).digest('hex');
+};
+
+
+/**
+ * Formats a date string into an 'MM/DD/YYYY' format.
+ * 
+ * @param {string} dateString - The date string to format.
+ * @returns {string} The formatted date string in 'MM/DD/YYYY' format.
+ */
+function formatDate(dateString: string): string {
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).format(date);
+}
 
 /**
  * Parses a date string and formats it to "MM/dd/yyyy".
@@ -45,67 +70,6 @@ function parseAndFormatDate(dateStr: string): string {
     }
 }
 
-/**
- * Reads and parses CSV data from a given file name (relative path),
- * converts each row into a `Place` object, and returns an array of `Place`.
- * 
- * @param {string} filePath - The relative path to the CSV file.
- * @returns {Promise<Place[]>} Promise that resolves to an array of Place objects.
- */
-const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
-    const localDataPath = path.resolve(filePath);
-    const places: Place[] = [];
-
-    return new Promise((resolve, reject) => {
-        let rowIndex = 0;
-        fs.createReadStream(localDataPath)
-            .pipe(stripBomStream())
-            .pipe(csvParser())
-            .on('data', (row) => {
-                try {
-                    places.push({
-                        airtableRecordId: rowIndex.toString(),
-                        name: row['Place'],
-                        type: row['Type']?.split(',') || [],
-                        size: row['Size'],
-                        ambience: row['Ambience']?.split(',') || [],
-                        neighborhood: row['Neighborhood'],
-                        address: row['Address'],
-                        purchaseRequired: row['Purchase Required'],
-                        parkingSituation: row['Parking Situation'],
-                        freeWifi: row['Free Wi-Fi'],
-                        hasCinnamonRolls: row['Has Cinnamon Rolls'],
-                        hasReviews: row['Has Reviews'],
-                        description: row['Description'],
-                        website: row['Website'],
-                        googleMapsPlaceId: row['Google Maps Place Id'],
-                        googleMapsProfileURL: row['Google Maps Profile URL'],
-                        photos: row['Photos']?.split(',') || [],
-                        comments: row['Comments'],
-                        latitude: parseFloat(row['Latitude']) as number,
-                        longitude: parseFloat(row['Longitude']) as number,
-                        createdDate: parseAndFormatDate(row["Created Time"]),
-                        lastModifiedDate: parseAndFormatDate(row["Last Modified Time"])
-                    });
-                    rowIndex += 1;
-                } catch (error) {
-                    console.warn(`Failed to parse row: ${JSON.stringify(row)}. Error: ${error}`);
-                }
-            })
-            .on('end', () => resolve(places))
-            .on('error', (error) => reject(error));
-    });
-};
-
-/**
- * Generates a SHA1 hash from a given URL string.
- * 
- * @param {string} url - The URL to hash.
- * @returns {string} The SHA1 hash of the URL.
- */
-const generateHashFromURL = (url: string): string => {
-    return crypto.createHash('sha1').update(url).digest('hex');
-};
 
 /**
  * Sends a HEAD request to a given URL and extracts the file extension from the
@@ -139,23 +103,24 @@ const ensureDirectoryExists = (dir: string) => {
     }
 };
 
+
 /**
  * Downloads an image from the given URL and saves it to the `/public/images/` directory.
  * Returns the relative URL path if successful, otherwise returns an empty string.
  * 
  * @param {string} coverPhotoURL - The URL of the image to download.
- * @param {string} airtableRecordId - The Airtable record ID of the place.
+ * @param {string} recordId - The Airtable record ID of the place.
  * @param {string} placeName - The name of the place (for logging purposes).
  * @returns {Promise<string>} A promise that resolves to the local image URL (relative to `/public/images/`), or an empty string on failure.
  */
 /* TODO Rewrite this to take the new array of photos 'photos', download them all, and return the array of local URLs
 Or find some way to use the photos and make a photo gallery users can browse upon clicking then you just get the URL
 on request. It's a call to Google's API not using any API usage. */
-const downloadImage = async (coverPhotoURL: string, airtableRecordId: string, placeName: string): Promise<string> => {
+const downloadImage = async (coverPhotoURL: string, recordId: string, placeName: string): Promise<string> => {
     const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
     const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
-    const filePath = path.resolve(`./public/images/${airtableRecordId}-${urlHash}.${extension}`);
-    const localCoverPhotoURL = `/images/${airtableRecordId}-${urlHash}.${extension}`;
+    const filePath = path.resolve(`./public/images/${recordId}-${urlHash}.${extension}`);
+    const localCoverPhotoURL = `/images/${recordId}-${urlHash}.${extension}`;
 
     // Ensure the directory exists
     ensureDirectoryExists(path.resolve('./public/images/'));
@@ -178,32 +143,100 @@ const downloadImage = async (coverPhotoURL: string, airtableRecordId: string, pl
                 writer.on('error', reject);
             });
 
-            console.log(`Image downloaded for place "${placeName}" (ID: ${airtableRecordId})`);
+            console.log(`Image downloaded for place "${placeName}" (ID: ${recordId})`);
         } catch (error) {
-            console.error(`Error downloading image for place "${placeName}" (ID: ${airtableRecordId}):`, error);
+            console.error(`Error downloading image for place "${placeName}" (ID: ${recordId}):`, error);
             return ''; // Return empty string if the download fails
         }
     } else {
-        console.log(`Image for place "${placeName}" (ID: ${airtableRecordId}) already exists, skipping download.`);
+        console.log(`Image for place "${placeName}" (ID: ${recordId}) already exists, skipping download.`);
     }
 
     return localCoverPhotoURL;
 };
 
 /**
- * Formats a date string into an 'MM/DD/YYYY' format.
+ * Maps a record (either from Airtable or CSV) to a Place object.
  * 
- * @param {string} dateString - The date string to format.
- * @returns {string} The formatted date string in 'MM/DD/YYYY' format.
+ * @param record - The record to map, either an Airtable record or a CSV row.
+ * @param isCSV - A boolean indicating whether the record is from a CSV file.
+ * @param rowIndex - The row index for CSV records, used as a fallback ID.
+ * @returns A Place object.
  */
-function formatDate(dateString: string): string {
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(date);
-}
+const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number = 0): Place => {
+    const getField = (key: string): any => {
+        if (isCSV) {
+            const value = record[key];
+            if (key === "Type" || key === "Ambience" || key === "Photos") {
+                return value?.split(',') || [];
+            }
+            if (key === "Latitude" || key === "Longitude") {
+                return parseFloat(value);
+            }
+            if (key === "Created Time" || key === "Last Modified Time") {
+                return parseAndFormatDate(value);
+            }
+            return value;
+        } else {
+            return record.get(key);
+        }
+    };
+
+    return {
+        recordId: isCSV ? rowIndex.toString() : record.id,
+        name: getField("Place"),
+        type: getField("Type"),
+        size: getField("Size"),
+        ambience: getField("Ambience"),
+        neighborhood: getField("Neighborhood"),
+        address: getField("Address"),
+        purchaseRequired: getField("Purchase Required"),
+        parkingSituation: getField("Parking Situation"),
+        freeWifi: getField("Free Wi-Fi"),
+        hasCinnamonRolls: getField("Has Cinnamon Rolls"),
+        hasReviews: getField("Has Reviews"),
+        description: getField("Description"),
+        website: getField("Website"),
+        googleMapsPlaceId: getField("Google Maps Place Id"),
+        googleMapsProfileURL: getField("Google Maps Profile URL"),
+        appleMapsProfileURL: getField("Apple Maps Profile URL"),
+        photos: getField("Photos"),
+        comments: getField("Comments"),
+        latitude: getField("Latitude"),
+        longitude: getField("Longitude"),
+        createdDate: formatDate(getField("Created Time")),
+        lastModifiedDate: formatDate(getField("Last Modified Time")),
+    };
+};
+
+/**
+ * Reads and parses CSV data from a given file name (relative path),
+ * converts each row into a `Place` object, and returns an array of `Place`.
+ * 
+ * @param {string} filePath - The relative path to the CSV file.
+ * @returns {Promise<Place[]>} Promise that resolves to an array of Place objects.
+ */
+const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
+    const localDataPath = path.resolve(filePath);
+    const places: Place[] = [];
+
+    return new Promise((resolve, reject) => {
+        let rowIndex = 0;
+        fs.createReadStream(localDataPath)
+            .pipe(stripBomStream())
+            .pipe(csvParser())
+            .on('data', (row) => {
+                try {
+                    places.push(mapRecordToPlace(row, true, rowIndex));
+                    rowIndex += 1;
+                } catch (error) {
+                    console.warn(`Failed to parse row: ${JSON.stringify(row)}. Error: ${error}`);
+                }
+            })
+            .on('end', () => resolve(places))
+            .on('error', (error) => reject(error));
+    });
+};
 
 /**
  * Fetch a single place by ID. In development, it uses local data from CSV;
@@ -217,36 +250,12 @@ export async function getPlaceById(id: string) {
     try {
         if (process.env.NODE_ENV === 'development') {
             console.log('Info: Local development mode. Using CSV data for places.');
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
-            return localData.find((place) => place.airtableRecordId === id);
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places.csv');
+            return localData.find((place) => place.recordId === id);
         }
 
         const record = await base('Charlotte Third Places').find(id);
-
-        return {
-            airtableRecordId: record.id,
-            name: record.get('Place') as string,
-            type: record.get('Type') as string[],
-            size: record.get('Size') as string,
-            ambience: record.get('Ambience') as string[],
-            neighborhood: record.get('Neighborhood') as string,
-            address: record.get('Address') as string,
-            purchaseRequired: record.get('Purchase Required') as string,
-            parkingSituation: record.get('Parking Situation') as string,
-            freeWifi: record.get('Free Wi-Fi') as string,
-            hasCinnamonRolls: record.get('Has Cinnamon Rolls') as string,
-            hasReviews: record.get('Has Reviews') as string,
-            description: record.get('Description') as string,
-            website: record.get('Website') as string,
-            googleMapsPlaceId: record.get('Google Maps Place Id') as string,
-            googleMapsProfileURL: record.get('Google Maps Profile URL') as string,
-            photos: record.get('Photos') as string[],
-            comments: record.get('Comments') as string,
-            latitude: record.get('Latitude') as number,
-            longitude: record.get('Longitude') as number,
-            createdDate: formatDate(record.get('Created Time') as string) as string,
-            lastModifiedDate: formatDate(record.get('Last Modified Time') as string) as string
-        };
+        return mapRecordToPlace(record);
     } catch (error) {
         console.error(`Failed to fetch place with ID ${id}:`, error);
         throw new Error(`Failed to fetch place with ID ${id}`);
@@ -264,46 +273,19 @@ export async function getPlaceById(id: string) {
  */
 export async function getPlaces(): Promise<Place[]> {
     try {
+        // Get places from a CSV file
         if (process.env.NODE_ENV === 'development') {
             console.log('Info: Local development mode. Using CSV data for places.');
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places.csv');
             return localData;
         }
 
+        // Get places from Airtable
         const records = await base('Charlotte Third Places')
             .select({ view: 'Production' })
             .all();
 
-        const places = await Promise.all(
-            records.map(async (record) => {
-                return {
-                    airtableRecordId: record.id,
-                    name: record.get('Place') as string,
-                    type: record.get('Type') as string[],
-                    size: record.get('Size') as string,
-                    ambience: record.get('Ambience') as string[],
-                    neighborhood: record.get('Neighborhood') as string,
-                    address: record.get('Address') as string,
-                    purchaseRequired: record.get('Purchase Required') as string,
-                    parkingSituation: record.get('Parking Situation') as string,
-                    freeWifi: record.get('Free Wi-Fi') as string,
-                    hasCinnamonRolls: record.get('Has Cinnamon Rolls') as string,
-                    hasReviews: record.get('Has Reviews') as string,
-                    description: record.get('Description') as string,
-                    website: record.get('Website') as string,
-                    googleMapsPlaceId: record.get('Google Maps Place Id') as string,
-                    googleMapsProfileURL: record.get('Google Maps Profile URL') as string,
-                    photos: record.get('Photos') as string[],
-                    comments: record.get('Comments') as string,
-                    latitude: record.get('Latitude') as number,
-                    longitude: record.get('Longitude') as number,
-                    createdDate: formatDate(record.get('Created Time') as string) as string,
-                    lastModifiedDate: formatDate(record.get('Last Modified Time') as string) as string
-                };
-            })
-        );
-
-        return places;
+        return records.map((record) => mapRecordToPlace(record));
     } catch (error) {
         console.error('Failed to fetch places:', error);
         throw new Error('Failed to fetch places');

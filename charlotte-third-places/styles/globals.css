@@ -40,6 +40,10 @@
   .card-font {
     @apply [font-family:var(--card-font-family)];
   }
+
+  .text-apple {
+    color: var(--apple-icon-color);
+  }
 }
 
 @layer base {
@@ -76,6 +80,7 @@
     --input: 197 30% 50%;
     --ring: 197 100% 39.6%;
     --radius: 1rem;
+    --apple-icon-color: #1d1d1f;
   }
 
   .dark {
@@ -100,5 +105,6 @@
     --input: 337 90% 51%;
     --ring: 337 90% 51%;
     --radius: 1rem;
+    --apple-icon-color: #ffffff;
   }
 }

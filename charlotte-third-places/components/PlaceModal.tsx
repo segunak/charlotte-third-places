@@ -4,6 +4,7 @@ import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import { ShareButton } from "@/components/ShareButton";
 import {
     FC,
     useRef,
@@ -40,7 +41,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         if (typeof window === "undefined" || !place) {
             return "";
         }
-        return `${window.location.origin}/places/${place.airtableRecordId}`;
+        return `${window.location.origin}/places/${place.recordId}`;
     }, [place]);
 
     // If place is null, we can skip rendering or show fallback
@@ -48,32 +49,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         return null; // Or return an empty Dialog if you prefer
     }
 
-    const handleShare = async () => {
-        const shareData = {
-            title: place.name,
-            text: `Charlotte Third Places: ${place.name}`,
-            url: shareUrl,
-        };
-
-        if (navigator.share) {
-            try {
-                await navigator.share(shareData);
-                console.log("Successfully shared");
-            } catch (error) {
-                console.error("Error sharing", error);
-            }
-        } else {
-            // Fallback to copying the link to the clipboard
-            try {
-                await navigator.clipboard.writeText(shareData.url);
-                alert("Link copied to clipboard!");
-            } catch (error) {
-                console.error("Failed to copy the link to clipboard", error);
-            }
-        }
-    };
-
     const website = place.website?.trim();
+    const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
 
     return (
@@ -96,11 +73,20 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 <Separator />
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
-                        <ResponsiveLink href={googleMapsProfileURL}>
-                            <Button variant="outline">
-                                <Icons.google className="h-6 w-6" />
-                            </Button>
-                        </ResponsiveLink>
+                        {googleMapsProfileURL && (
+                            <ResponsiveLink href={googleMapsProfileURL}>
+                                <Button variant="outline">
+                                    <Icons.google className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
+                        )}
+                        {appleMapsProfileURL && (
+                            <ResponsiveLink href={appleMapsProfileURL}>
+                                <Button variant="outline">
+                                    <Icons.apple className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
+                        )}
                         {website && (
                             <ResponsiveLink href={website}>
                                 <Button variant="outline">
@@ -108,9 +94,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                 </Button>
                             </ResponsiveLink>
                         )}
-                        <Button variant="outline" onClick={handleShare}>
-                            <Icons.share className="h-6 w-6 text-primary" />
-                        </Button>
+                        <ShareButton
+                            placeName={place.name}
+                            url={shareUrl}
+                            variant="outline"
+                            displayType="icon"
+                        />
                     </div>
                     <Separator />
                     <p>

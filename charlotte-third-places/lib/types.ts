@@ -1,6 +1,6 @@
 // General definition for the schema returned by Airtable
 export type Place = {
-    airtableRecordId: string;
+    recordId: string;
     name: string;
     type: Array<string>;
     size: string;
@@ -16,6 +16,7 @@ export type Place = {
     website: string;
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
+    appleMapsProfileURL: string;
     photos: Array<string>;
     comments: string;
     latitude: number;

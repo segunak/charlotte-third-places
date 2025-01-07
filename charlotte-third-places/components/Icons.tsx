@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { FaFilter, FaChessQueen, FaComment } from "react-icons/fa";
-import { FaLocationPin, FaMapPin, FaCirclePlus, FaMapLocationDot, FaShuffle} from "react-icons/fa6";
+import { FaLocationPin, FaMapPin, FaCirclePlus, FaMapLocationDot, FaShuffle, FaApple } from "react-icons/fa6";
 import {
   IoHome,
   IoHomeOutline,
@@ -40,6 +40,9 @@ export const Icons = {
   share: LuShare,
   homeOutline: IoHomeOutline,
   google: FcGoogle,
+  apple: (props: IconProps) => (
+    <FaApple {...props} className={`text-apple ${props.className ?? ""}`} />
+  ),
   editMarker: MdEditLocationAlt,
   search: IoSearch,
   searchOutline: IoSearchOutline,

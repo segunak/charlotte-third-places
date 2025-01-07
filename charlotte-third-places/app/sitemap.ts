@@ -41,7 +41,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
     // Generate sitemap entries for individual place pages
     const placePages: MetadataRoute.Sitemap = places.map((place: Place) => ({
-        url: `${baseUrl}/places/${place.airtableRecordId}`,
+        url: `${baseUrl}/places/${place.recordId}`,
         lastModified: new Date(place.lastModifiedDate),
         changeFrequency: 'weekly',
         priority: 0.6,
