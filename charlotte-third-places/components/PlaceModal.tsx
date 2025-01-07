@@ -95,6 +95,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             </ResponsiveLink>
                         )}
                         <ShareButton
+                            placeName={place.name}
                             url={shareUrl}
                             variant="outline"
                             displayType="icon"

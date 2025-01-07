@@ -76,6 +76,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                                 </ResponsiveLink>
                             )}
                             <ShareButton
+                                placeName={place.name}
                                 url={shareUrl}
                                 variant="outline"
                                 displayType="icon"
