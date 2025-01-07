@@ -62,6 +62,8 @@ Challenge then becomes mapping values from Google to a multi select field, but i
 - Garage
 - Time-Limited
 - Validated
+- Limited
+- Plentiful
 
 ## Next.js
 

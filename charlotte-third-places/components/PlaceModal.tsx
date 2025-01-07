@@ -40,7 +40,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         if (typeof window === "undefined" || !place) {
             return "";
         }
-        return `${window.location.origin}/places/${place.airtableRecordId}`;
+        return `${window.location.origin}/places/${place.recordId}`;
     }, [place]);
 
     // If place is null, we can skip rendering or show fallback

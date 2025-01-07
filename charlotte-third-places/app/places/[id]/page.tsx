@@ -25,7 +25,7 @@ export async function generateStaticParams() {
     // each containing the `id` of a place. This `id` corresponds 
     // to the Airtable record ID and will be used to generate dynamic routes.
     return places.map((place: Place) => ({
-        id: place.airtableRecordId,
+        id: place.recordId,
     }));
 }
 
@@ -38,7 +38,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
     // If no place is found with the given `id`, return a "Place not found" message.
     if (!place) return <div>Place not found</div>;
 
-    const placeUrl = `https://www.charlottethirdplaces.com/places/${place.airtableRecordId}`;
+    const placeUrl = `https://www.charlottethirdplaces.com/places/${place.recordId}`;
 
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
