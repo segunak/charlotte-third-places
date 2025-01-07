@@ -22,6 +22,22 @@ const generateHashFromURL = (url: string): string => {
     return crypto.createHash('sha1').update(url).digest('hex');
 };
 
+
+/**
+ * Formats a date string into an 'MM/DD/YYYY' format.
+ * 
+ * @param {string} dateString - The date string to format.
+ * @returns {string} The formatted date string in 'MM/DD/YYYY' format.
+ */
+function formatDate(dateString: string): string {
+    const date = new Date(dateString);
+    return new Intl.DateTimeFormat('en-US', {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit'
+    }).format(date);
+}
+
 /**
  * Parses a date string and formats it to "MM/dd/yyyy".
  *
@@ -188,8 +204,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         comments: getField("Comments"),
         latitude: getField("Latitude"),
         longitude: getField("Longitude"),
-        createdDate: getField("Created Time"),
-        lastModifiedDate: getField("Last Modified Time"),
+        createdDate: formatDate(getField("Created Time")),
+        lastModifiedDate: formatDate(getField("Last Modified Time")),
     };
 };
 
