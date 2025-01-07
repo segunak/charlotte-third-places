@@ -1,11 +1,13 @@
 import React from 'react';
 import { Place } from "@/lib/types";
+import { Icons } from "@/components/Icons";
 import { REVALIDATE_TIME } from '@/lib/config';
-import { getPlaceById, getPlaces } from "@/lib/data-services";
+import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { getPlaceById, getPlaces } from "@/lib/data-services";
 
 // See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate
 export const revalidate = REVALIDATE_TIME;
@@ -38,7 +40,10 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
     // If no place is found with the given `id`, return a "Place not found" message.
     if (!place) return <div>Place not found</div>;
 
-    const placeUrl = `https://www.charlottethirdplaces.com/places/${place.recordId}`;
+    const website = place.website?.trim();
+    const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
+    const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
+    const shareUrl = `https://www.charlottethirdplaces.com/places/${place.recordId}`;
 
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
@@ -48,24 +53,36 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
             <Card className="border border-gray-300 shadow-sm">
                 <CardContent className="mt-4">
                     <div className="space-y-3">
-                        <p><strong>Type:</strong> {place.type.join(", ")}</p>
-                        <p>
-                            <strong>Website:</strong>{" "}
-                            {place.website?.trim() ? (
-                                <ResponsiveLink href={place.website}>Visit Website</ResponsiveLink>
-                            ) : (
-                                "No website available."
+                        <div className="flex justify-center space-x-4">
+                            {googleMapsProfileURL && (
+                                <ResponsiveLink href={googleMapsProfileURL}>
+                                    <Button variant="outline">
+                                        <Icons.google className="h-6 w-6" />
+                                    </Button>
+                                </ResponsiveLink>
                             )}
-                        </p>
-                        <p>
-                            <strong>Google Maps Profile:</strong>{" "}
-                            {place.googleMapsProfileURL?.trim() ? (
-                                <ResponsiveLink href={place.googleMapsProfileURL}>Visit Profile</ResponsiveLink>
-                            ) : (
-                                "No profile available."
+                            {appleMapsProfileURL && (
+                                <ResponsiveLink href={appleMapsProfileURL}>
+                                    <Button variant="outline">
+                                        <Icons.apple className="h-6 w-6" />
+                                    </Button>
+                                </ResponsiveLink>
                             )}
-                        </p>
+                            {website && (
+                                <ResponsiveLink href={website}>
+                                    <Button variant="outline">
+                                        <Icons.externalLink className="h-6 w-6" />
+                                    </Button>
+                                </ResponsiveLink>
+                            )}
+                            <ShareButton
+                                url={shareUrl}
+                                variant="outline"
+                                displayType="icon"
+                            />
+                        </div>
                         <Separator />
+                        <p><strong>Type:</strong> {place.type.join(", ")}</p>
                         <p><strong>Address:</strong> {place.address}</p>
                         <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
                         <p><strong>Size:</strong> {place.size}</p>
@@ -78,14 +95,6 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
                         <Separator />
                         <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Updated: {place.lastModifiedDate}.</p>
-                    </div>
-
-                    <div className="flex justify-center space-x-4 mt-12">
-                        <ShareButton
-                            placeName={place.name}
-                            url={placeUrl}
-                            className="!font-bold"
-                        />
                     </div>
                 </CardContent>
             </Card>
