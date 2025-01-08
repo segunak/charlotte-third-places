@@ -42,7 +42,7 @@ class AirtableClient:
 
     def update_place_record(self, record_id: str, field_to_update: str, update_value, overwrite: bool) -> Dict[str, Any]:
         """
-        Attempts to update a record in the Airtable database based on given parameters. 
+        Attempts to update a record in the Airtable database based on given parameters.
         The function considers whether the field should be overwritten if it already exists.
 
         Args:
@@ -322,10 +322,6 @@ class AirtableClient:
                         parking_situation = self.get_parking_status(place_details_response)
                         purchase_required = self.determine_purchase_requirement(place_details_response)
 
-                        photos_list = self.get_place_photos(place_details_response.get('photos', []))
-                        if not photos_list:
-                            logging.warning(f'No photos found for {place_name}.')
-
                         # "Field Name": (field_value, overwrite=True/False)
                         field_updates = {
                             'Google Maps Place Id': (place_id, True),
@@ -337,9 +333,14 @@ class AirtableClient:
                             'Purchase Required': (purchase_required, False),
                             'Parking Situation': (parking_situation, False),
                             'Latitude': (str(location['latitude']), True),
-                            'Longitude': (str(location['longitude']), True),
-                            'Photos': (str(photos_list), True)
+                            'Longitude': (str(location['longitude']), True)
                         }
+
+                        photos_list = self.get_place_photos(place_details_response.get('photos', []))
+                        if photos_list:
+                            field_updates['Photos'] = (str(photos_list), True)
+                        else:
+                            logging.warning(f'No photos found for {place_name}.')
 
                         for field_name, (field_value, overwrite) in field_updates.items():
                             update_result = self.update_place_record(
