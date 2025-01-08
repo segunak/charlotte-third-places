@@ -2,6 +2,7 @@
 // pack out there from the same react-icons/PackName library.
 import { ArrowUp } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
+import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { FaFilter, FaChessQueen, FaComment } from "react-icons/fa";
@@ -51,6 +52,7 @@ export const Icons = {
   queen: FaChessQueen,
   pin: FaLocationPin,
   plus: FaCirclePlus,
+  globe: HiOutlineGlobeAlt,
   map: IoMap,
   mapOutline: IoMapOutline,
   mapLocationDot: FaMapLocationDot,
