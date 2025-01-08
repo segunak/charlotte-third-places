@@ -90,7 +90,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         {website && (
                             <ResponsiveLink href={website}>
                                 <Button variant="outline">
-                                    <Icons.externalLink className="h-6 w-6" />
+                                    <Icons.globe className="h-7 w-7" />
                                 </Button>
                             </ResponsiveLink>
                         )}
