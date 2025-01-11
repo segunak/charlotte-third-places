@@ -65,21 +65,6 @@ export function SiteHeader() {
                             </div>
                         </Link>
                         <Link
-                            href="https://www.reddit.com/user/charlottethirdplaces"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <div
-                                className={buttonVariants({
-                                    size: "icon",
-                                    variant: "ghost",
-                                })}
-                            >
-                                <Icons.reddit className="h-5 w-5" />
-                                <span className="sr-only">Reddit</span>
-                            </div>
-                        </Link>
-                        <Link
                             href="https://github.com/segunak/charlotte-third-places"
                             target="_blank"
                             rel="noreferrer"
