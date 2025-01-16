@@ -272,13 +272,12 @@ export default function AboutPage() {
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>Work remotely.</li>
                         <li>Read, write, study, etc.</li>
-                        <li>Relax, unwind, decompress, people watch, catch up on shows, movies, or <ResponsiveLink href="https://segunakinyemi.com/blog/attack-on-titan-cemented-greatness/">anime</ResponsiveLink>.
-                        </li>
-                        <li>Socialize, meet friends, meet new people, or quietly enjoy the warmth of a shared space, even without interacting. Sometimes, simply being around friendly faces can lift spirits and soothe loneliness.</li>
+                        <li>Relax, unwind, hang out, decompress.</li>
+                        <li>Meet friends, make new friends, or quietly enjoy the warmth of a shared space, because sometimes, simply being around friendly faces can lift the spirit.</li>
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
-                        This site is designed to help people find spots in Charlotte for all these activities and more. Keep scrolling to get answers to frequently asked questions and learn more about the project.
+                        This site is your guide to discovering Charlotte's best third places. Keep scrolling to get answers to frequently asked questions and learn more about the project.
                     </p>
                 </CardContent>
             </Card>
