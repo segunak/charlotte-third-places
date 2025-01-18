@@ -19,6 +19,12 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface PlaceModalProps {
     place: Place | null;
@@ -74,32 +80,68 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
                         {googleMapsProfileURL && (
-                            <ResponsiveLink href={googleMapsProfileURL}>
-                                <Button variant="outline">
-                                    <Icons.google className="h-6 w-6" />
-                                </Button>
-                            </ResponsiveLink>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <ResponsiveLink href={googleMapsProfileURL}>
+                                            <Button variant="outline">
+                                                <Icons.google className="h-6 w-6" />
+                                            </Button>
+                                        </ResponsiveLink>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Visit Google Maps Page</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         )}
                         {appleMapsProfileURL && (
-                            <ResponsiveLink href={appleMapsProfileURL}>
-                                <Button variant="outline">
-                                    <Icons.apple className="h-6 w-6" />
-                                </Button>
-                            </ResponsiveLink>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <ResponsiveLink href={appleMapsProfileURL}>
+                                            <Button variant="outline">
+                                                <Icons.apple className="h-6 w-6" />
+                                            </Button>
+                                        </ResponsiveLink>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Visit Apple Maps Page</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         )}
                         {website && (
-                            <ResponsiveLink href={website}>
-                                <Button variant="outline">
-                                    <Icons.globe className="h-7 w-7" />
-                                </Button>
-                            </ResponsiveLink>
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <ResponsiveLink href={website}>
+                                            <Button variant="outline">
+                                                <Icons.globe className="h-7 w-7" />
+                                            </Button>
+                                        </ResponsiveLink>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>Visit Website</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
                         )}
-                        <ShareButton
-                            placeName={place.name}
-                            url={shareUrl}
-                            variant="outline"
-                            displayType="icon"
-                        />
+                        <TooltipProvider>
+                            <Tooltip>
+                                <TooltipTrigger>
+                                    <ShareButton
+                                        placeName={place.name}
+                                        url={shareUrl}
+                                        variant="outline"
+                                        displayType="icon"
+                                    />
+                                </TooltipTrigger>
+                                <TooltipContent>
+                                    <p>Share Place</p>
+                                </TooltipContent>
+                            </Tooltip>
+                        </TooltipProvider>
                     </div>
                     <Separator />
                     <p>
