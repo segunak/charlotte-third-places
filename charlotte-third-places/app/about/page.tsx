@@ -53,7 +53,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Nope, and nope. Every place listed on this site has been discovered organically—either through my own experiences or community feedback. No money has ever been accepted to feature or promote a business on this site, and it never will be. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've detailed how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here, y'all—everything's out in the open. This is just one random Charlotte resident's personal project. I've got a day job lol.
+                    Nope, and nope. Every place listed on this site has been discovered organically—either through my own experiences or community feedback. No money has ever been accepted to feature or promote a business on this site, and it never will be. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've detailed how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here, everything's out in the open. This is just one random Charlotte resident's personal project. I've got a day job lol.
                 </p>
             </div>
         )
