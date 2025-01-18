@@ -2,19 +2,139 @@
     "place_name": "Vicente | Bakery & Bistro",
     "place_id": "ChIJ14Mb4NafVogR_Otcia1hJWs",
     "place_description": null,
-    "place_rating": 4.7,
-    "place_total_reviews": 203,
+    "place_rating": 4.8,
+    "place_total_reviews": 218,
     "place_google_id": "0x88569fd6e01b83d7:0x6b2561ad895cebfc",
     "place_reviews_id": "7720684534158388220",
-    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ14Mb4NafVogR_Otcia1hJWs&authuser=0&hl=en&gl=UA",
+    "place_reviews_link": "https://search.google.com/local/reviews?placeid=ChIJ14Mb4NafVogR_Otcia1hJWs&authuser=0&hl=en&gl=US",
     "reviews_data": [
         {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURmcDRELTZnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmcDRELTZnRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDfp4D-6gE%7CCgwI8biFvAYQyMn-2wM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736531057,
+            "review_datetime_utc": "01/10/2025 17:44:17",
+            "review_text": "Best croissants in Charlotte. Flaky, buttery, soft, all the things!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmay0tS0xBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmay0tS0xBEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDfk--KLA%7CCgwI5ZmCvAYQsN6fmwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736477925,
+            "review_datetime_utc": "01/10/2025 02:58:45",
+            "review_text": "Loved their croissants collection, coffee was good. Ambience was excellent."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmenZqY2JBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmenZqY2JBEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDfzvjcbA%7CCgwInu_vuwYQuJrnhAE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736177566,
+            "review_datetime_utc": "01/06/2025 15:32:46",
+            "review_text": "from wherever you come from. If you are in Charlotte NC, you must visit this place. An authentic puff pastry croissant and the best coffee will await you in addition to a cozy atmosphere. Try the classic croissant and with bacon. Also a delicious hazelnut dessert."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURmcXBldFlBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmcXBldFlBEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDfqpetYA%7CCgwIh6XquwYQ4M-d4QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1736086151,
+            "review_datetime_utc": "01/05/2025 14:09:11",
+            "review_text": "Great coffee & consistently good pastries! Perfect for a Sunday morning coffee pickup."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUNmaXJMTnR3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmaXJMTnR3RRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgICfirLNtwE%7CCgwInaW8uwYQqLa9nwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1735332509,
+            "review_datetime_utc": "12/27/2024 20:48:29",
+            "review_text": "I've been eyeing this place since they've opened, and if you like croissants this is your place!! The staff was great and the food was even better. The bacon egg and cheese croissant was a 10/10 I'll definitely be back :) they also have free parking which is hard to find on south blvd."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2OWFlaTB3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2OWFlaTB3RRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDv9aei0wE%7CCgwIj8GhuwYQ0ILe6gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734893711,
+            "review_datetime_utc": "12/22/2024 18:55:11",
+            "review_text": "Amazing pastries and drinks! Love coming here for a sweet treat on a Saturday or Sunday morning. Some of the best pastries in town"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2OWMzMmlBRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2OWMzMmlBRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDv9c32iAE%7CCgwIzbWhuwYQgL2vqQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734892237,
+            "review_datetime_utc": "12/22/2024 18:30:37",
+            "review_text": "Incredible pastries! The lamination of their dough is unreal.... Flavors are always delicious.... We love the kouign aman ... And the coffee is great too!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUR2bE1YVE9BEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2bE1YVE9BEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDvlMXTOA%7CCgwImf6HuwYQ-JOE_QI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734475545,
+            "review_datetime_utc": "12/17/2024 22:45:45",
+            "review_text": "Great pastries, excellent breakfast sandwiches. A+"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUR2b09yeXJnRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2b09yeXJnRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDvoOryrgE%7CCgwI7IGBuwYQ8IS-6gE%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734361324,
+            "review_datetime_utc": "12/16/2024 15:02:04",
+            "review_text": "This place always has a line out the door and I can see why! The pastry selection and quality is impeccable and the coffee  Small dining space, so I definitely suggesting getting it to go."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN2eTdpa0pnEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2eTdpa0pnEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgICvy7ikJg%7CCgwI4vf2ugYQ-OOJrQI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734196194,
+            "review_datetime_utc": "12/14/2024 17:09:54",
+            "review_text": "Absolutely delicious  highly recommend"
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSUN2czlYS3d3RRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN2czlYS3d3RRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgICvs9XKwwE%7CCgwIv_31ugYQ2O71rgI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734180543,
+            "review_datetime_utc": "12/14/2024 12:49:03",
+            "review_text": "Amazing croissant, coffee hits right ! Definitely a hit"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSUN2cWJPdFV3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2cWJPdFV3EAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgICvqbOtUw%7CCgsI7qXrugYQ4KCBPg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1734005486,
+            "review_datetime_utc": "12/12/2024 12:11:26",
+            "review_text": "5 's. I don't care that it's a just a liiiittle more on the expensive side, or that they don't have the friendliest people, because those pastries more than make up for it. The price point makes sense considering how delicious those pastries are.  Would recommend to anyone. They sell out of their popular pastries quickly so I'd try to go in the AM."
+        },
+        {
+            "review_id": "ChdDSUhNMG9nS0VJQ0FnSURQaGItSmtRRRAB",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURQaGItSmtRRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDPhb-JkQE%7CCgwIsJa_ugYQ4P2EgwI%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1733282608,
+            "review_datetime_utc": "12/04/2024 03:23:28",
+            "review_text": "Absolutely 5+++++******to this lovely atmosphere of yummies!!!! Croissants and coffee and friendly smiles. I work across the street. Love to go. Sam and Yerman amazing"
+        },
+        {
             "review_id": "ChdDSUhNMG9nS0VJQ0FnSURucjVxUzZRRRAB",
-            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURucjVxUzZRRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDnr5qS6QE%7CCgsIj-mXugYQgMvgKw%7C?hl=en",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURucjVxUzZRRRAB!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDnr5qS6QE%7CCgwIjf27ugYQ8KKJnwM%7C?hl=en",
             "review_rating": 3,
-            "review_timestamp": 1732637839,
-            "review_datetime_utc": "11/26/2024 16:17:19",
-            "review_text": "11/26/2024\nI drove for 40 minutes to get here.\nBut it closed. So I spent my time ( 1hr 20 minutes) for NOTHING. I checked the Google before hitting the road.\nYou can change the time on Google for the customer's precious time& efforts. There is no phone number, so I can't check they're open or not. I feel like they don't care about customer's time.\nSo indifferent and careless...\n_ _ _ _\nIt took a while to get here, but I enjoyed breads. I ordered the Pamasan Leek , Pistachio pound cake , Butter Croissant, and Almond Croissant. I wanted to try a chocolate croissant, but it was sold out. I really liked Butter Croissant and Pistachio Pound cake :) I will definitely visit again and try others."
+            "review_timestamp": 1733230221,
+            "review_datetime_utc": "12/03/2024 12:50:21",
+            "review_text": "[11/26/2024]\nI drove for 40 minutes to get here.\nBut it was closed. So I spent my time ( 1hr 20 minutes) for NOTHING. I checked the Google before hitting the road.\nYou can change the time on Google for the customer's precious time& efforts. There is no phone number, so I can't check they're open or not. I feel like they don't care about customer's time.\nSo indifferent and careless...\n_ _ _ _\nIt took a while to get here, but I enjoyed breads. I ordered the Pamasan Leek , Pistachio pound cake , Butter Croissant, and Almond Croissant. I wanted to try a chocolate croissant, but it was sold out. I really liked Butter Croissant and Pistachio Pound cake :) I will definitely visit again and try others."
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURQOU9pRVR3EAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQOU9pRVR3EAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDP9OiETw%7CCgsIpbinugYQiKvdJg%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732893733,
+            "review_datetime_utc": "11/29/2024 15:22:13",
+            "review_text": "Pastries never disappoint and they always have unique new things to try. The service is always friendly and quick, even when they are busy. Toddler approved!"
+        },
+        {
+            "review_id": "ChZDSUhNMG9nS0VJQ0FnSURQOUtpSlpBEAE",
+            "review_link": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQOUtpSlpBEAE!2m1!1s0x0:0x6b2561ad895cebfc!3m1!1s2@1:CIHM0ogKEICAgIDP9KiJZA%7CCgwIibinugYQ0IrxwQM%7C?hl=en",
+            "review_rating": 5,
+            "review_timestamp": 1732893705,
+            "review_datetime_utc": "11/29/2024 15:21:45",
+            "review_text": "Vicente's pastries are authentically exquisite. You can tell each delicious pastry is made with the utmost care. I will keep coming back!"
         },
         {
             "review_id": "ChZDSUhNMG9nS0VJQ0FnSUNQM3N2VEJ3EAE",
