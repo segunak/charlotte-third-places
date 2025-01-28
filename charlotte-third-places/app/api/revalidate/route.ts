@@ -6,8 +6,10 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({ message: "Method not allowed" }, { status: 405 });
     }
 
-    const secret = request.headers.get("revalidate_token");
-    if (secret !== process.env.REVALIDATE_TOKEN) {
+    const authorizationHeader = request.headers.get("Authorization");
+    const token = authorizationHeader?.replace("Bearer ", "");
+
+    if (token !== process.env.REVALIDATE_TOKEN) {
         return NextResponse.json({ message: "Invalid token" }, { status: 401 });
     }
 

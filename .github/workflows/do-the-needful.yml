@@ -19,3 +19,8 @@ jobs:
     needs: get-outscraper-reviews
     uses: ./.github/workflows/master_trigger-refresh-airtable-operational-statuses.yml
     secrets: inherit
+
+  trigger-site-revalidation:
+    needs: refresh-airtable-operational-statuses
+    uses: ./.github/workflows/master_trigger_site_revalidation.yml
+    secrets: inherit
