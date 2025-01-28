@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { Separator } from "@/components/ui/separator";
 import { FilterProvider } from '@/contexts/FilterContext';
@@ -7,10 +6,8 @@ import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
 import { PlaceListWithFilters } from "@/components/PlaceListWithFilters";
 
-/* See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
-Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
-Airtable has API call limits. Can't have every visit pulling new data. */
-export const revalidate = REVALIDATE_TIME;
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+export const dynamic = "force-static"
 
 export default async function HomePage() {
   const places = await getPlaces();

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import * as React from "react";
 import type { Metadata } from 'next'
-import { REVALIDATE_TIME } from '@/lib/config';
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDialog } from '@/components/FilterDialog';
@@ -13,10 +12,8 @@ export const metadata: Metadata = {
     title: 'Map',
 }
 
-// See https://nextjs.org/docs/app/building-your-application/data-fetching/incremental-static-regeneration
-// Also https://support.airtable.com/docs/getting-started-with-airtables-web-api
-// Airtable has API call limits. Can't have every visit pulling new data.
-export const revalidate = REVALIDATE_TIME; // Refresh data from Airtable every 12 hours.
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+export const dynamic = "force-static"
 
 export default async function MapPage() {
     const places = await getPlaces();
