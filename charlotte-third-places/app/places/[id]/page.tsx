@@ -1,16 +1,12 @@
 import React from 'react';
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
-import { REVALIDATE_TIME } from '@/lib/config';
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
 import { Card, CardContent } from "@/components/ui/card";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { getPlaceById, getPlaces } from "@/lib/data-services";
-
-// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#revalidate
-export const revalidate = REVALIDATE_TIME;
 
 // See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
 export const dynamicParams = true;

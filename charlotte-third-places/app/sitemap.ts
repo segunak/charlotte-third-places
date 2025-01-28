@@ -1,9 +1,9 @@
 import { Place } from "@/lib/types"
 import type { MetadataRoute } from 'next'
-import { REVALIDATE_TIME } from '@/lib/config'
 import { getPlaces } from "@/lib/data-services"
 
-export const revalidate = REVALIDATE_TIME
+// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
+export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://charlottethirdplaces.com'

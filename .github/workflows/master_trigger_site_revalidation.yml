@@ -1,0 +1,38 @@
+name: Trigger Site Revalidation
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+# Ensures that only one instance of this workflow runs at a time
+concurrency: 
+    group: trigger-site-revalidation
+    cancel-in-progress: true
+
+jobs:
+  trigger-site-revalidation:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+    
+      - name: Invoke PowerShell Script
+        id: invoke_script
+        shell: pwsh
+        working-directory: ./scripts
+        env:
+          REVALIDATE_TOKEN: ${{ secrets.REVALIDATE_TOKEN }}
+        run: |
+          ./Invoke-ApiRequest.ps1 -ApiUrl "https://www.charlottethirdplaces.com/api/revalidate" -AuthorizationToken "$Env:REVALIDATE_TOKEN"
+
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      - name: Check Script Result
+        if: always()
+        run: |
+          echo "Script execution completed with status: ${{ steps.invoke_script.outcome }}"
+          if ("${{ steps.invoke_script.outcome }}" -ne "success") {
+            exit 1
+          }
