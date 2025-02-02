@@ -16,6 +16,24 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 - When using Python's logging module pass `exc_info=True` to get the stack trace.
 
+## Place Types
+
+- Bakery  
+- Café  
+- Coffee Shop  
+- Bubble Tea Store  
+- Restaurant  
+- Market  
+- Grocery Store  
+- Market Hall  
+- Library  
+- Bookstore  
+- Public Market  
+- Game Store  
+- Garden  
+- Brewery  
+- Deli  
+
 ## Colors
 
 - Light Color
