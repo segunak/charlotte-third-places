@@ -4,6 +4,30 @@ import { Button } from "@/components/ui/button"
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
+const sizeEmojiMap: { [key: string]: string } = {
+    "Small": "🐭",   // Mouse for Small
+    "Medium": "🐕",  // Dog for Medium
+    "Large": "🐘",   // Elephant for Large
+};
+
+const typeEmojiMap: { [key: string]: string } = {
+    "Bakery": "🍞",
+    "Café": "☕",
+    "Coffee Shop": "☕",
+    "Bubble Tea Store": "🧋",
+    "Restaurant": "🍽️",
+    "Market": "🛍️",
+    "Grocery Store": "🛒",
+    "Market Hall": "🏬",
+    "Library": "📚",
+    "Bookstore": "📖",
+    "Public Market": "🏪",
+    "Game Store": "🎮",
+    "Garden": "🪴",
+    "Brewery": "🍺",
+    "Deli": "🥪",
+};
+
 // Predefined color mappings for tag backgrounds and text
 const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
     "Cafe": { bgColor: "bg-blue-100", textColor: "text-blue-800" },         // Light blue background, dark blue text
@@ -87,10 +111,14 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     // Memoize the result of getAttributeColors to avoid unnecessary recalculations
     const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
 
+    // Determine if this is a size attribute or type attribute
+    const emoji = sizeEmojiMap[attribute] || typeEmojiMap[attribute] || "";
+    const displayText = `${attribute} ${emoji}`;
+
     return (
         // Render the attribute inside a styled <span> element
         <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-            {attribute}
+            {displayText}
         </span>
     );
 });
