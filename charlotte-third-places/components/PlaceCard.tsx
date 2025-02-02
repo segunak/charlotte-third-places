@@ -131,7 +131,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
 
-                    <span className="flex flex-wrap space-x-2">
+                    <span className="text-sm flex flex-wrap space-x-2">
                         <strong>Type: </strong>
                         {place?.type?.map((tag) => (
                             <AttributeTag key={tag} attribute={tag} />
