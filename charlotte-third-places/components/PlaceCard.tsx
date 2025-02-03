@@ -8,6 +8,7 @@ const sizeEmojiMap: { [key: string]: string } = {
     "Small": "🐭",   // Mouse for Small
     "Medium": "🐕",  // Dog for Medium
     "Large": "🐘",   // Elephant for Large
+    "Unsure": "🤷"   // Person shrugging for Unsure
 };
 
 const typeEmojiMap: { [key: string]: string } = {
