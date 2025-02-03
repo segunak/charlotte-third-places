@@ -1,16 +1,17 @@
 import { Place } from "@/lib/types";
 import { FC, useMemo, memo } from "react";
+import { Icons } from "@/components/Icons"
 import { Button } from "@/components/ui/button"
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
-const neighborhoodEmoji = "🏘️"; // Houses emoji for Neighborhoods
+const neighborhoodEmoji = "🏘️";
 
-const sizeEmojiMap: { [key: string]: string } = {
-    "Small": "🐭",   // Mouse for Small
-    "Medium": "🐕",  // Dog for Medium
-    "Large": "🐘",   // Elephant for Large
-    "Unsure": "🤷"   // Person shrugging for Unsure
+const sizeIconMap: { [key: string]: React.ReactNode } = {
+    "Small": <Icons.mobile className="inline-block h-3 w-3" />,
+    "Medium": <Icons.tablet className="inline-block h-3 w-3" />,
+    "Large": <Icons.desktop className="inline-block h-3 w-3" />,
+    "Unsure": "🤷",
 };
 
 const typeEmojiMap: { [key: string]: string } = {
@@ -114,14 +115,21 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     // Memoize the result of getAttributeColors to avoid unnecessary recalculations
     const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
 
-    // Determine if this is a size attribute or type attribute
-    const emoji = sizeEmojiMap[attribute] || typeEmojiMap[attribute] || "";
-    const displayText = `${attribute} ${emoji}`;
+    /* We want it to appear as "attribute iconOrEmoji" on one line If iconOrEmoji is a string (like "🤷" or "🍞"), 
+    do string concatenation. If it's a React node (like <Icons.mobile />), render it inline */
+    let displayContent;
+    const iconOrEmoji = sizeIconMap[attribute] ?? typeEmojiMap[attribute] ?? "";
+
+    if (typeof iconOrEmoji === "string") {
+        displayContent = `${attribute} ${iconOrEmoji}`;
+    } else {
+        displayContent = (<>{attribute} {iconOrEmoji}</>);
+    }
 
     return (
-        // Render the attribute inside a styled <span> element
+        // Render the attribute
         <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
-            {displayText}
+            {displayContent}
         </span>
     );
 });
@@ -172,7 +180,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                     <span className="flex justify-between">
                         <span className="text-sm block">
                             <strong>Neighborhood: </strong>
-                            {place?.neighborhood && <AttributeTag attribute={`${place.neighborhood} ${neighborhoodEmoji}`}/>}
+                            {place?.neighborhood && <AttributeTag attribute={`${place.neighborhood} ${neighborhoodEmoji}`} />}
                         </span>
 
                         <Button
