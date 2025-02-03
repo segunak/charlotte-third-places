@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
+const neighborhoodEmoji = "🏘️"; // Houses emoji for Neighborhoods
+
 const sizeEmojiMap: { [key: string]: string } = {
     "Small": "🐭",   // Mouse for Small
     "Medium": "🐕",  // Dog for Medium
@@ -31,9 +33,9 @@ const typeEmojiMap: { [key: string]: string } = {
 
 // Predefined color mappings for tag backgrounds and text
 const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
-    "Cafe": { bgColor: "bg-blue-100", textColor: "text-blue-800" },         // Light blue background, dark blue text
+    "Cafe": { bgColor: "bg-blue-100", textColor: "text-blue-800" },             // Light blue background, dark blue text
     "Coffee Shop": { bgColor: "bg-yellow-100", textColor: "text-yellow-800" }, // Light yellow background, dark yellow text
-    "Unsure": { bgColor: "bg-gray-200", textColor: "text-black" },          // Light gray background, black text for "Unsure"
+    "Unsure": { bgColor: "bg-gray-200", textColor: "text-black" },            // Light gray background, black text for "Unsure"
 };
 
 // Extended fallback colors with warm and vibrant tones that get randomly assigned.
@@ -52,9 +54,9 @@ const fallbackColors = [
     { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
     { bgColor: "bg-red-100", textColor: "text-red-800" },         // Light red background, dark red text
     { bgColor: "bg-red-200", textColor: "text-red-900" },         // Bright red background, dark red text
-    { bgColor: "bg-purple-100", textColor: "text-purple-800" },      // Light purple background, dark purple text
+    { bgColor: "bg-purple-100", textColor: "text-purple-800" },   // Light purple background, dark purple text
     { bgColor: "bg-purple-200", textColor: "text-purple-900" },   // Bright purple background, dark purple text
-    { bgColor: "bg-green-100", textColor: "text-green-800" }, // Light green background, dark green text
+    { bgColor: "bg-green-100", textColor: "text-green-800" },     // Light green background, dark green text
     { bgColor: "bg-green-200", textColor: "text-green-900" },     // Bright green background, dark green text
     { bgColor: "bg-blue-200", textColor: "text-blue-900" },       // Bright blue background, dark blue text
     { bgColor: "bg-pink-200", textColor: "text-pink-900" },       // Bright pink background, dark pink text
@@ -170,7 +172,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                     <span className="flex justify-between">
                         <span className="text-sm block">
                             <strong>Neighborhood: </strong>
-                            {place?.neighborhood && <AttributeTag attribute={place.neighborhood} />}
+                            {place?.neighborhood && <AttributeTag attribute={`${place.neighborhood} ${neighborhoodEmoji}`}/>}
                         </span>
 
                         <Button
