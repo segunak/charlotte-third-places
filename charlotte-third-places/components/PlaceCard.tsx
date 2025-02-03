@@ -5,6 +5,7 @@ import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 const sizeEmojiMap: { [key: string]: string } = {
+    "Unsure": "🤷",   // Person shrugging for unsure
     "Small": "🐭",   // Mouse for Small
     "Medium": "🐕",  // Dog for Medium
     "Large": "🐘",   // Elephant for Large
