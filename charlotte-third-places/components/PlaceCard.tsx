@@ -127,14 +127,13 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     }
 
     return (
-        // Render the attribute
-        <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+        <span className={`${bgColor} ${textColor} text-balance text-xs font-semibold mr-2 px-1.5 py-0.5 rounded-lg`}>
             {displayContent}
         </span>
     );
 });
 
-// Set display name for better debugging and development experience
+// This only matters for development, so we can see the name of the component in the React DevTools
 AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
@@ -200,4 +199,5 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     );
 });
 
+// This only matters for development, so we can see the name of the component in the React DevTools
 PlaceCard.displayName = 'PlaceCard';
