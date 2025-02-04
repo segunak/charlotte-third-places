@@ -133,7 +133,7 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     );
 });
 
-// Set display name for better debugging and development experience
+// This only matters for development, so we can see the name of the component in the React DevTools
 AttributeTag.displayName = 'AttributeTag';
 
 interface PlaceCardProps {
@@ -199,4 +199,5 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     );
 });
 
+// This only matters for development, so we can see the name of the component in the React DevTools
 PlaceCard.displayName = 'PlaceCard';
