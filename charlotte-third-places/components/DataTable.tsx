@@ -108,10 +108,11 @@ export function DataTable({ rowData }: DataTableProps) {
     const windowWidth = useWindowWidth();
 
     // Aligns with Tailwind breakpoints at https://tailwindcss.com/docs/responsive-design
+    // See tailwind.config.ts for 3xl and higher custom breakpoints
     const columnsPerRow = useMemo(() => {
-        if (windowWidth >= 1280) return 3;  // xl -> 3 columns, 3 cards per row
-        if (windowWidth >= 768) return 2;   // md -> 2 columns, 2 cards per row
-        return 1; // Anything smaller than md, 1 column, 1 card per row
+        if (windowWidth >= 1920) return 3;  // 3xl and higher -> 3 columns, 3 cards per row
+        if (windowWidth >= 1024) return 2;  // lg and higher  -> 2 columns, 2 cards per row
+        return 1; // Anything smaller than lg, 1 column, 1 card per row
     }, [windowWidth]);
 
     const filteredAndGroupedRowData = useMemo(() => {
@@ -148,7 +149,7 @@ export function DataTable({ rowData }: DataTableProps) {
                 <div className="flex flex-wrap -mx-2">
                     {group.map((place: any, index: number) => (
                         // The breakpoints here are tied to the columnsPerRow calculation
-                        <div key={index} className="w-full md:w-1/2 xl:w-1/3 px-2 mb-4">
+                        <div key={index} className="w-full lg:w-1/2 3xl:w-1/3 px-2 mb-4">
                             <PlaceCard place={place} />
                         </div>
                     ))}
