@@ -127,8 +127,7 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     }
 
     return (
-        // Render the attribute
-        <span className={`${bgColor} ${textColor} text-balance text-xs sm:text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-lg`}>
+        <span className={`${bgColor} ${textColor} text-balance text-xs font-semibold mr-2 px-1.5 py-0.5 rounded-lg`}>
             {displayContent}
         </span>
     );
