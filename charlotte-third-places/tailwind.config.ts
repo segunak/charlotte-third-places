@@ -31,8 +31,11 @@ const config: Config = {
 			center: true,
 			padding: "2rem",
 			screens: {
-				"2xl": "1400px",
-			},
+				"3xl": "1920px",  // Optimized for Full HD (1080p) and entry-level 1440p screens
+				"4xl": "2560px",  // Perfect for large 1440p and standard 4K screens
+				"5xl": "3200px",  // Supports ultrawide and high-end 4K+ displays
+				"6xl": "3840px",  // Future-proofing for 4K+ professional and multi-display setups
+			},					
 		},
 		extend: {
 			fontFamily: {
