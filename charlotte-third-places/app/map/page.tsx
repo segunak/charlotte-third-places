@@ -21,7 +21,7 @@ export default async function MapPage() {
     return (
         <FilterProvider places={places}>
             <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px] min-h-screen">
-                <section className="px-4 sm:px-20 py-8 mx-auto">
+                <section className="px-4 sm:px-20 py-8">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">
                             Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
