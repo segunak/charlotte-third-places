@@ -23,7 +23,7 @@ jobs:
         env:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
         run: |
-          $FunctionUrl = "https://charlotte-third-places.azurewebsites.net/api/enrich-airtable-base"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/enrich-airtable-base"
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
           $RequestBody = '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}'
           ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -RequestBody $RequestBody -TimeoutSeconds 1800
