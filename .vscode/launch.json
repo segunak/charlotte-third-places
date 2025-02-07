@@ -2,16 +2,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Azure Function: Attach to Python Host",
-            "type": "debugpy",
-            "request": "attach",
-            "connect": {
-                "host": "localhost",
-                "port": 9091
-            },
-            "preLaunchTask": "func: host start"
-        },
-        {
             "name": "Next.js: Run Dev (Local Data, No ISR)",
             "type": "node-terminal",
             "request": "launch",

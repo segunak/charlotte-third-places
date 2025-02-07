@@ -23,7 +23,7 @@ jobs:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
         continue-on-error: true
         run: |
-          $FunctionUrl = "https://charlotte-third-places.azurewebsites.net/api/purge-orchestrations"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/purge-orchestrations"
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
           ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 300
 
