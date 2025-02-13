@@ -6,24 +6,6 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 /**
- * Formats a Date object into an 'MM/DD/YYYY' format.
- * 
- * @param {Date} date - The Date object to format.
- * @returns {string} The formatted date string in 'MM/DD/YYYY' format.
- */
-export function formatDate(date: Date): string {
-  if (!(date instanceof Date) || isNaN(date.getTime())) {
-      return "";
-  }
-
-  return new Intl.DateTimeFormat("en-US", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-  }).format(date);
-}
-
-/**
  * Normalizes text for improved searching and filtering in AG Grid.
  * This function removes diacritics, replaces specific ligatures,
  * removes most special characters, and converts the text to lowercase.

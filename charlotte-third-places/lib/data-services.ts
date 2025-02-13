@@ -253,7 +253,6 @@ export async function getPlaceById(id: string) {
  */
 export async function getPlaces(): Promise<Place[]> {
     try {
-        // Get places from a CSV file
         if (process.env.NODE_ENV === 'development') {
             console.log('Info: Local development mode. Using CSV data for places.');
             const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
