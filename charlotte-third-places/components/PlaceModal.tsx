@@ -1,6 +1,7 @@
 "use client";
 
 import { Place } from "@/lib/types";
+import { formatDate } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -177,8 +178,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </p>
                     <Separator className="hidden sm:block" />
                     <p className="hidden sm:block">
-                        <strong>Metadata:</strong> Added: {place.createdDate} | Last Updated:{" "}
-                        {place.lastModifiedDate}.
+                        <strong>Metadata:</strong> Added: {formatDate(place.createdDate)} | Last Updated:{" "}
+                        {formatDate(place.lastModifiedDate)}.
                     </p>
                 </div>
 

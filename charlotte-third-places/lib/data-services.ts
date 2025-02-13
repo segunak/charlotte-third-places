@@ -5,8 +5,8 @@ import crypto from 'crypto';
 import Airtable from 'airtable';
 import csvParser from 'csv-parser';
 import { Place } from '@/lib/types';
-import { parse, format } from "date-fns";
 import stripBomStream from 'strip-bom-stream';
+import { parse, parseISO, isValid } from "date-fns";
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
@@ -22,54 +22,34 @@ const generateHashFromURL = (url: string): string => {
     return crypto.createHash('sha1').update(url).digest('hex');
 };
 
-
 /**
- * Formats a date string into an 'MM/DD/YYYY' format.
+ * Parses a date string and returns a `Date` object.
+ * - Uses `parseISO()` for ISO 8601 dates (Airtable).
+ * - Uses `parse()` for CSV format (`M/d/yyyy h:mma`).
+ * - Returns `null` if parsing fails.
  * 
- * @param {string} dateString - The date string to format.
- * @returns {string} The formatted date string in 'MM/DD/YYYY' format.
+ * @param dateStr - The date string to parse.
+ * @returns A `Date` object or `null` if parsing fails.
  */
-function formatDate(dateString: string): string {
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat('en-US', {
-        year: 'numeric',
-        month: '2-digit',
-        day: '2-digit'
-    }).format(date);
-}
-
-/**
- * Parses a date string and formats it to "MM/dd/yyyy".
- *
- * This function attempts to parse a date string in the format "M/d/yyyy h:mma"
- * (e.g., "12/27/2024 2:52pm") and then formats it to "MM/dd/yyyy". If the input
- * date string is invalid or cannot be parsed, the original date string is returned.
- *
- * @param dateStr - The date string to parse and format.
- * @returns The formatted date string in "MM/dd/yyyy" format, or the original date string if parsing fails.
- */
-function parseAndFormatDate(dateStr: string): string {
-    if (!dateStr) return "";
+function parseDate(dateStr: string): Date | null {
+    if (!dateStr) return null;
 
     try {
-        // Adjust to match your exact input format. Here, we assume "M/d/yyyy h:mma",
-        // e.g. "12/27/2024 2:52pm"
-        const parsedDate = parse(dateStr, "M/d/yyyy h:mma", new Date());
+        // First, try ISO 8601 (Airtable format for dates)
+        const isoDate = parseISO(dateStr);
+        if (isValid(isoDate)) return isoDate;
 
-        // If date-fns couldn’t parse it, parsedDate might be invalid. Check that:
-        if (isNaN(parsedDate.getTime())) {
-            // fallback: return original string if invalid
-            return dateStr;
+        // If that fails, try CSV format ("M/d/yyyy h:mma")
+        if (/^\d{1,2}\/\d{1,2}\/\d{4} \d{1,2}:\d{2}(am|pm)$/i.test(dateStr)) {
+            const csvDate = parse(dateStr, "M/d/yyyy h:mma", new Date());
+            return isValid(csvDate) ? csvDate : null;
         }
 
-        // Format it as just "MM/dd/yyyy"
-        return format(parsedDate, "MM/dd/yyyy");
-    } catch (err) {
-        // fallback
-        return dateStr;
+        return null; // If no known format matches, return `null`
+    } catch {
+        return null;
     }
 }
-
 
 /**
  * Sends a HEAD request to a given URL and extracts the file extension from the
@@ -174,7 +154,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                 return parseFloat(value);
             }
             if (key === "Created Time" || key === "Last Modified Time") {
-                return parseAndFormatDate(value);
+                return parseDate(value);
             }
             return value;
         } else {
@@ -204,8 +184,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         comments: getField("Comments"),
         latitude: getField("Latitude"),
         longitude: getField("Longitude"),
-        createdDate: formatDate(getField("Created Time")),
-        lastModifiedDate: formatDate(getField("Last Modified Time")),
+        createdDate: getField("Created Time"),
+        lastModifiedDate: getField("Last Modified Time"),
     };
 };
 
@@ -250,7 +230,7 @@ export async function getPlaceById(id: string) {
     try {
         if (process.env.NODE_ENV === 'development') {
             console.log('Info: Local development mode. Using CSV data for places.');
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places.csv');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData.find((place) => place.recordId === id);
         }
 
@@ -276,7 +256,7 @@ export async function getPlaces(): Promise<Place[]> {
         // Get places from a CSV file
         if (process.env.NODE_ENV === 'development') {
             console.log('Info: Local development mode. Using CSV data for places.');
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places.csv');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData;
         }
 
