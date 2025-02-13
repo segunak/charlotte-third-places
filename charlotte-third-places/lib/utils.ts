@@ -1,4 +1,3 @@
-import { Place } from "@/lib/types"
 import { twMerge } from "tailwind-merge"
 import { clsx, type ClassValue } from "clsx"
 

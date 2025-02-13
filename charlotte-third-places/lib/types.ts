@@ -21,8 +21,8 @@ export type Place = {
     comments: string;
     latitude: number;
     longitude: number;
-    createdDate: string;
-    lastModifiedDate: string;
+    createdDate: Date;
+    lastModifiedDate: Date;
 }
 
 // Defines the fields that are available for sorting to users.

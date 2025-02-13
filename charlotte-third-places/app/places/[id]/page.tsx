@@ -91,7 +91,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
                         <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
                         <Separator />
-                        <p><strong>Metadata:</strong> Added: {place.createdDate} | Last Updated: {place.lastModifiedDate}.</p>
+                        <p><strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.</p>
                     </div>
                 </CardContent>
             </Card>
