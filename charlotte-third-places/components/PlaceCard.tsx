@@ -30,6 +30,9 @@ const typeEmojiMap: { [key: string]: string } = {
     "Garden": "🪴",
     "Brewery": "🍺",
     "Deli": "🥪",
+    "Eatery": "🍴",
+    "Creamery": "🍦",
+    "Ice Cream Shop": "🍨",
 };
 
 // Predefined color mappings for tag backgrounds and text
