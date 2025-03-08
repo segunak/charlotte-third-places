@@ -11,14 +11,15 @@ const sizeIconMap: { [key: string]: React.ReactNode } = {
     "Small": <Icons.mobile className="inline-block h-3 w-3" />,
     "Medium": <Icons.tablet className="inline-block h-3 w-3" />,
     "Large": <Icons.desktop className="inline-block h-3 w-3" />,
-    "Unsure": "🤷",
+    "Unsure": "🤷🏾",
 };
 
 const typeEmojiMap: { [key: string]: string } = {
     "Bakery": "🍞",
     "Café": "☕",
     "Coffee Shop": "☕",
-    "Bubble Tea Store": "🧋",
+    "Tea Shop": "🍵",
+    "Bubble Tea Shop": "🧋",
     "Restaurant": "🍽️",
     "Market": "🛍️",
     "Grocery Store": "🛒",
@@ -33,6 +34,12 @@ const typeEmojiMap: { [key: string]: string } = {
     "Eatery": "🍴",
     "Creamery": "🍦",
     "Ice Cream Shop": "🍨",
+    "Art Gallery": "🖼️",
+    "Bar": "🍸",
+    "Community Center": "🤝",
+    "Coworking Space": "💻",
+    "Museum": "🏛️",
+    "Other": "🤷🏾",
 };
 
 // Predefined color mappings for tag backgrounds and text
