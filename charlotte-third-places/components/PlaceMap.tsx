@@ -39,7 +39,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 size,
                 neighborhood,
                 purchaseRequired,
-                parkingSituation,
+                parking,
                 freeWifi,
                 hasCinnamonRolls,
             } = filters;
@@ -50,14 +50,17 @@ export function PlaceMap({ places }: PlaceMapProps) {
             const isTypeMatch =
                 type.value === "all" || (place.type && place.type.includes(type.value));
 
+            const isParkingMatch =
+                parking.value === "all" || (place.parking && place.parking.includes(parking.value));
+
             return (
                 matchesQuickSearch &&
                 isTypeMatch &&
+                isParkingMatch &&
                 (name.value === "all" || place.name === name.value) &&
                 (size.value === "all" || place.size === size.value) &&
                 (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
                 (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
                 (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );

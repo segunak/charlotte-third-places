@@ -147,13 +147,13 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     const getField = (key: string): any => {
         if (isCSV) {
             const value = record[key];
-            if (key === "Type" || key === "Ambience" || key === "Photos") {
+            if (["Type", "Ambience", "Photos", "Parking"].includes(key)) {
                 return value?.split(',') || [];
             }
-            if (key === "Latitude" || key === "Longitude") {
+            if (["Latitude", "Longitude"].includes(key)) {
                 return parseFloat(value);
             }
-            if (key === "Created Time" || key === "Last Modified Time") {
+            if (["Created Time", "Last Modified Time"].includes(key)) {
                 return parseDate(value);
             }
             return value;
@@ -171,7 +171,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         neighborhood: getField("Neighborhood"),
         address: getField("Address"),
         purchaseRequired: getField("Purchase Required"),
-        parkingSituation: getField("Parking Situation"),
+        parking: getField("Parking"),
         freeWifi: getField("Free Wi-Fi"),
         hasCinnamonRolls: getField("Has Cinnamon Rolls"),
         hasReviews: getField("Has Reviews"),
