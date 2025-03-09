@@ -84,7 +84,7 @@ export default async function PlacePage({ params: { id } }: { params: { id: stri
                         <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
                         <p><strong>Size:</strong> {place.size}</p>
                         <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
-                        <p><strong>Parking Situation:</strong> {place.parkingSituation}</p>
+                        <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
                         <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
                         <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
                         <Separator />

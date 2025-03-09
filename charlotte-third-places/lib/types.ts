@@ -8,7 +8,7 @@ export type Place = {
     neighborhood: string;
     address: string;
     purchaseRequired: string;
-    parkingSituation: string;
+    parking: Array<string>;
     freeWifi: string;
     hasCinnamonRolls: string;
     hasReviews: string;
@@ -60,7 +60,7 @@ export interface FilterConfig {
     size: FilterOption;
     neighborhood: FilterOption;
     purchaseRequired: FilterOption;
-    parkingSituation: FilterOption;
+    parking: FilterOption;
     freeWifi: FilterOption;
     hasCinnamonRolls: FilterOption;
 }
@@ -96,10 +96,10 @@ export const DEFAULT_FILTER_CONFIG: FilterConfig = {
         label: "Purchase Required",
         predefinedOrder: ["Yes", "No"],
     },
-    parkingSituation: {
+    parking: {
         value: "all",
-        placeholder: "Parking Situation",
-        label: "Parking Situation",
+        placeholder: "Parking",
+        label: "Parking",
         predefinedOrder: [],
     },
     freeWifi: {

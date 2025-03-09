@@ -17,10 +17,13 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Third places are spots outside of your home (your "first place") and your workplace/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, community center, or coffee shop with reasonable pricing (something $5 or less you can buy to justify hanging around). In truth, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about the history of the term. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
+                    Third places are spots outside of your home (your "first place") and your work/school (your "second place") where you can hang out, build community, read, study, chill, feel welcomed, etc. They typically have little to no barrier to entry, so think a library, café, or coffee shop with reasonable pricing.
                 </p>
                 <p>
-                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the list, but I want it to be valuable to the Charlotte community. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
+                    Now, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about the history of the term. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
+                </p>
+                <p>
+                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the site, but I want it to be valuable to the Charlotte community. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
                 </p>
             </div>
         )
@@ -30,7 +33,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    It's me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in 2020 during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. They played a huge role in making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. Before long, the list grew so much that even my messages app suggested splitting it into chunks before sending. Creating a spreadsheet would've been the easiest solution to this challenge, and I did exactly that, except after doing so, I started getting ideas of <ResponsiveLink href="https://www.youtube.com/watch?v=yPZLIf9MqUU">something greater</ResponsiveLink>.
+                    Me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte in during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. They played a huge role in making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. Before long, the list grew so much that even my messages app suggested splitting it into chunks before sending. Creating a spreadsheet would've been the easiest solution to this challenge, and I did exactly that, except after doing so, I started getting ideas of <ResponsiveLink href="https://www.youtube.com/watch?v=yPZLIf9MqUU">something greater</ResponsiveLink>.
                 </p>
                 <p>
                     I'm a software engineer, and I enjoy building stuff with tech, so I purposefully over-engineered this project as an excuse to learn new things. I continue to tinker with the site, making improvements here and there, refactoring stuff to see if I can get it faster, more efficient, more user friendly, etc. If you're into tech, check out <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">this article</ResponsiveLink> for a breakdown of how the project was built.
@@ -49,11 +52,17 @@ const frequentlyAskedQuestions = [
         )
     },
     {
-        title: "Do businesses have to pay to be featured on the site or can they pay to have their place promoted?",
+        title: "Do places have to pay to be listed on the site?",
         content: (
             <div className="space-y-3">
                 <p>
-                    Nope, and nope. Every place listed on this site has been discovered organically—either through my own experiences or community feedback. No money has ever been accepted to feature or promote a business on this site, and it never will be. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've detailed how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here, this is just one random Charlotte resident's personal project. I've got a day job lol.
+                    Nope, this is an open source community directory, no charge for listings. That said, I may collaborate with places to promote their spots or update their profile info, but that would be a separate agreement, completely unrelated to getting listed. There's no charge to be included.
+                </p>
+                <p>
+                    There's also some curation, where I choose not to list places that request to be added but don't meet the criteria of a third place (which, admittedly, is somewhat arbitrary). The main rule is: if a spot requires a reservation or membership before you can use it, it's disqualified. If you can't just walk in, make a simple purchase, and hang out, then it's not a third place in my opinion. If you disagree, I'm open to hearing your thoughts, use the <Link className="custom-link" href="contribute">Contribute</Link> page to reach out.
+                </p>
+                <p>
+                    Overall, my goal is to keep this site as open and community-driven as possible. The code for this site is <a href="https://github.com/segunak/charlotte-third-places">open source</a>, and I've documented how it was built <a href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</a>. No secrets here—just a personal project from a Charlotte resident who loves exploring the city.
                 </p>
             </div>
         )
@@ -116,7 +125,7 @@ const frequentlyAskedQuestions = [
                     </AccordionItem>
 
                     <AccordionItem value="parking">
-                        <AccordionTrigger>Parking Situation</AccordionTrigger>
+                        <AccordionTrigger>Parking</AccordionTrigger>
                         <AccordionContent>
                             Comes from Google Maps who have mostly accurate data on this field. That being said, I've found mistakes before, so I review all values based on personal experiences and community feedback.
                         </AccordionContent>

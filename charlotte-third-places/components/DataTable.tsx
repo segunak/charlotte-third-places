@@ -58,7 +58,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     size,
                     neighborhood,
                     purchaseRequired,
-                    parkingSituation,
+                    parking,
                     freeWifi,
                     hasCinnamonRolls,
                 } = filters;
@@ -72,7 +72,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     (size.value === "all" || place.size === size.value) &&
                     (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
                     (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                    (parkingSituation.value === "all" || place.parkingSituation === parkingSituation.value) &&
+                    (parking.value === "all" || place.parking === parking.value) &&
                     (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
                     (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
                 );
