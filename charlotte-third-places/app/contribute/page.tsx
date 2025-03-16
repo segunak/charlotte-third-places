@@ -4,6 +4,7 @@ import { Icons } from "@/components/Icons";
 import AirtableForm from "@/components/AirtableForm";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
     title: 'Contribute',
@@ -28,14 +29,11 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <p className="text-sm">
-                                <ResponsiveLink
-                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
-                                    className="text-sm underline"
-                                >
-                                    Suggest New Place
-                                </ResponsiveLink>
-                            </p>
+                            <ResponsiveLink href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form">
+                                <Button>
+                                    New Place
+                                </Button>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
                     </CardContent>
@@ -50,14 +48,11 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <p className="text-sm">
-                                <ResponsiveLink
-                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
-                                    className="text-sm underline"
-                                >
-                                    Suggest Place Enhancements
-                                </ResponsiveLink>
-                            </p>
+                            <ResponsiveLink href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form">
+                                <Button>
+                                    Place Enhancements
+                                </Button>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
                     </CardContent>
@@ -72,14 +67,11 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <p className="text-sm">
-                                <ResponsiveLink
-                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
-                                    className="text-sm underline"
-                                >
-                                    Contact Site Creator
-                                </ResponsiveLink>
-                            </p>
+                            <ResponsiveLink href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form">
+                                <Button>
+                                    Contact Creator
+                                </Button>
+                            </ResponsiveLink>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
                     </CardContent>
