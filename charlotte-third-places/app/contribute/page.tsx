@@ -28,12 +28,14 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <ResponsiveLink
-                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
-                                className="text-sm"
-                            >
-                                Click here to open the form directly
-                            </ResponsiveLink>
+                            <p className="text-sm">
+                                <ResponsiveLink
+                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form"
+                                    className="text-sm underline"
+                                >
+                                    Suggest New Place
+                                </ResponsiveLink>
+                            </p>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form" />
                     </CardContent>
@@ -48,12 +50,14 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <ResponsiveLink
-                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
-                                className="text-sm"
-                            >
-                                Click here to open the form directly
-                            </ResponsiveLink>
+                            <p className="text-sm">
+                                <ResponsiveLink
+                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form"
+                                    className="text-sm underline"
+                                >
+                                    Suggest Place Enhancements
+                                </ResponsiveLink>
+                            </p>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form" />
                     </CardContent>
@@ -68,12 +72,14 @@ export default function ContributePage() {
                     </CardHeader>
                     <CardContent>
                         <div className="mb-4 text-center">
-                            <ResponsiveLink
-                                href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
-                                className="text-sm"
-                            >
-                                Click here to open the form directly
-                            </ResponsiveLink>
+                            <p className="text-sm">
+                                <ResponsiveLink
+                                    href="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form"
+                                    className="text-sm underline"
+                                >
+                                    Contact Site Creator
+                                </ResponsiveLink>
+                            </p>
                         </div>
                         <AirtableForm src="https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form" />
                     </CardContent>
