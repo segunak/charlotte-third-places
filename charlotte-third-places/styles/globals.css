@@ -63,13 +63,13 @@
   :root {
     --background: 190 60% 97%;                  /* Brighter teal backdrop */
     --foreground: 210 5% 20%;                  /* Slightly warmer dark text */
-    --ag-header-background-color: hsl(190, 90%, 40%); 
+    --ag-header-background-color: hsl(190, 90%, 42%); 
     --card: 40 30% 98%;                        /* Warm near-white for card */
     --card-foreground: 210 5% 20%;
     --popover: 40 30% 98%;                     /* Matches card for consistency */
     --popover-foreground: 210 5% 20%;
 
-    --primary: 190 100% 40%;                   /* More neon teal */
+    --primary: 190 100% 42%;                   /* More neon teal */
     --primary-foreground: 0 0% 100%;           /* White text on teal */
 
     --secondary: 270 90% 65%;                  /* Vibrant purple */
@@ -89,7 +89,7 @@
 
     --border: 190 20% 80%;
     --input: 190 20% 80%;
-    --ring: 190 100% 40%;                      /* Matches primary for focus ring */
+    --ring: 190 100% 42%;                      /* Matches primary for focus ring */
     --radius: 1.25rem;                         /* Increased border-radius for softer UI */
 
     --apple-icon-color: #1d1d1f;
@@ -101,7 +101,7 @@
   .dark {
     --background: 190 50% 9%;                  /* Dark teal-tinted near-black */
     --foreground: 0 0% 100%;                   /* White text on dark */
-    --ag-header-background-color: hsl(190, 90%, 40%);
+    --ag-header-background-color: hsl(190, 90%, 42%);
     --card: 190 40% 12%;                       /* Slightly lighter than body for contrast */
     --card-foreground: 0 0% 100%;
     --popover: 190 40% 12%;                    /* Matches card for consistency */
@@ -127,7 +127,7 @@
 
     --border: 210 15% 25%;
     --input: 210 15% 25%;
-    --ring: 190 90% 40%;                       /* Teal focus ring */
+    --ring: 190 90% 42%;                       /* Teal focus ring */
     --radius: 1.25rem;
 
     --apple-icon-color: #ffffff;
