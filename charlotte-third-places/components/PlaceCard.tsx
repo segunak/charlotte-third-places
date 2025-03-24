@@ -1,7 +1,7 @@
 import { Place } from "@/lib/types";
 import { FC, useMemo, memo } from "react";
-import { Icons } from "@/components/Icons"
-import { Button } from "@/components/ui/button"
+import { Icons } from "@/components/Icons";
+import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
@@ -44,37 +44,33 @@ const typeEmojiMap: { [key: string]: string } = {
 
 // Predefined color mappings for tag backgrounds and text
 const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
-    "Cafe": { bgColor: "bg-blue-100", textColor: "text-blue-800" },             // Light blue background, dark blue text
-    "Coffee Shop": { bgColor: "bg-yellow-100", textColor: "text-yellow-800" }, // Light yellow background, dark yellow text
-    "Unsure": { bgColor: "bg-gray-200", textColor: "text-black" },            // Light gray background, black text for "Unsure"
+    "Cafe": { bgColor: "bg-blue-200", textColor: "text-blue-900" },             // Light blue background, dark blue text
+    "Coffee Shop": { bgColor: "bg-yellow-200", textColor: "text-yellow-900" }, // Light yellow background, dark yellow text
+    "Unsure": { bgColor: "bg-gray-300", textColor: "text-gray-900" },            // Light gray background, dark gray text for "Unsure"
 };
 
-// Extended fallback colors with warm and vibrant tones that get randomly assigned.
 const fallbackColors = [
-    { bgColor: "bg-orange-100", textColor: "text-orange-800" },   // Light orange background, dark orange text
-    { bgColor: "bg-teal-100", textColor: "text-teal-800" },       // Light teal background, dark teal text
-    { bgColor: "bg-indigo-100", textColor: "text-indigo-800" },   // Light indigo background, dark indigo text
-    { bgColor: "bg-pink-100", textColor: "text-pink-800" },       // Light pink background, dark pink text
-    { bgColor: "bg-lime-100", textColor: "text-lime-800" },       // Light lime background, dark lime text
-    { bgColor: "bg-amber-100", textColor: "text-amber-800" },     // Light amber background, dark amber text
-    { bgColor: "bg-fuchsia-100", textColor: "text-fuchsia-800" }, // Light fuchsia background, dark fuchsia text
-    { bgColor: "bg-rose-100", textColor: "text-rose-800" },       // Light rose background, dark rose text
-    { bgColor: "bg-cyan-100", textColor: "text-cyan-800" },       // Light cyan background, dark cyan text
-    { bgColor: "bg-violet-100", textColor: "text-violet-800" },   // Light violet background, dark violet text
-    { bgColor: "bg-emerald-100", textColor: "text-emerald-800" }, // Light emerald background, dark emerald text
-    { bgColor: "bg-yellow-200", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
-    { bgColor: "bg-red-100", textColor: "text-red-800" },         // Light red background, dark red text
-    { bgColor: "bg-red-200", textColor: "text-red-900" },         // Bright red background, dark red text
-    { bgColor: "bg-purple-100", textColor: "text-purple-800" },   // Light purple background, dark purple text
-    { bgColor: "bg-purple-200", textColor: "text-purple-900" },   // Bright purple background, dark purple text
-    { bgColor: "bg-green-100", textColor: "text-green-800" },     // Light green background, dark green text
-    { bgColor: "bg-green-200", textColor: "text-green-900" },     // Bright green background, dark green text
-    { bgColor: "bg-blue-200", textColor: "text-blue-900" },       // Bright blue background, dark blue text
-    { bgColor: "bg-pink-200", textColor: "text-pink-900" },       // Bright pink background, dark pink text
-    { bgColor: "bg-amber-200", textColor: "text-amber-900" },     // Bright amber background, dark amber text
-    { bgColor: "bg-lime-200", textColor: "text-lime-900" },       // Bright lime background, dark lime text
-    { bgColor: "bg-teal-200", textColor: "text-teal-900" },       // Bright teal background, dark teal text
-    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
+    { bgColor: "bg-orange-200", textColor: "text-orange-900" },   // Light orange background, dark orange text
+    { bgColor: "bg-teal-200", textColor: "text-teal-900" },       // Light teal background, dark teal text
+    { bgColor: "bg-indigo-200", textColor: "text-indigo-900" },   // Light indigo background, dark indigo text
+    { bgColor: "bg-pink-200", textColor: "text-pink-900" },       // Light pink background, dark pink text
+    { bgColor: "bg-lime-200", textColor: "text-lime-900" },       // Light lime background, dark lime text
+    { bgColor: "bg-amber-200", textColor: "text-amber-900" },     // Light amber background, dark amber text
+    { bgColor: "bg-fuchsia-200", textColor: "text-fuchsia-900" }, // Light fuchsia background, dark fuchsia text
+    { bgColor: "bg-rose-200", textColor: "text-rose-900" },       // Light rose background, dark rose text
+    { bgColor: "bg-cyan-200", textColor: "text-cyan-900" },       // Light cyan background, dark cyan text
+    { bgColor: "bg-violet-200", textColor: "text-violet-900" },   // Light violet background, dark violet text
+    { bgColor: "bg-emerald-200", textColor: "text-emerald-900" }, // Light emerald background, dark emerald text
+    { bgColor: "bg-yellow-300", textColor: "text-yellow-900" },   // Bright yellow background, dark yellow text
+    { bgColor: "bg-red-200", textColor: "text-red-900" },         // Light red background, dark red text
+    { bgColor: "bg-purple-200", textColor: "text-purple-900" },   // Light purple background, dark purple text
+    { bgColor: "bg-green-200", textColor: "text-green-900" },     // Light green background, dark green text
+    { bgColor: "bg-blue-300", textColor: "text-blue-900" },       // Bright blue background, dark blue text
+    { bgColor: "bg-pink-300", textColor: "text-pink-900" },       // Bright pink background, dark pink text
+    { bgColor: "bg-amber-300", textColor: "text-amber-900" },     // Bright amber background, dark amber text
+    { bgColor: "bg-lime-300", textColor: "text-lime-900" },       // Bright lime background, dark lime text
+    { bgColor: "bg-teal-300", textColor: "text-teal-900" },       // Bright teal background, dark teal text
+    { bgColor: "bg-fuchsia-300", textColor: "text-fuchsia-900" }, // Bright fuchsia background, dark fuchsia text
 ];
 
 // Cache to store previously computed colors for attributes

@@ -3,26 +3,25 @@
 @tailwind utilities;
 
 .custom-link {
-  @apply text-primary hover:text-purple-600 underline underline-offset-4;
+  @apply text-primary hover:text-accent underline underline-offset-4;
 }
 
 .custom-hover {
-  @apply hover:text-purple-600 hover:underline hover:underline-offset-4
+  @apply hover:text-accent hover:underline hover:underline-offset-4;
 }
 
 @layer base {
   :root {
-    /* Light yellow for light mode */
-    --highlight-bg: hsl(54, 100%, 85%);
+    /* Light teal highlight in light mode */
+    --highlight-bg: hsl(190, 70%, 85%);
     --card-font-family: "IBM Plex Sans", sans-serif;
   }
 
   .dark {
-    /* Darker yellow for dark mode */
-    --highlight-bg: hsl(54, 100%, 20%);
+    /* Dark teal highlight in dark mode */
+    --highlight-bg: hsl(190, 70%, 20%);
   }
 }
-
 
 @layer utilities {
   .text-balance {
@@ -58,53 +57,79 @@
 }
 
 @layer base {
+  /* 
+    LIGHT THEME
+  */
   :root {
-    --background: 197 100% 97%;
-    --foreground: 197 5% 10%;
-    --ag-header-background-color: hsl(197, 100%, 39.6%);
-    --card: 197 50% 97%;
-    --card-foreground: 197 5% 15%;
-    --popover: 197 100% 97%;
-    --popover-foreground: 197 100% 10%;
-    --primary: 197 100% 39.6%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 197 30% 90%;
-    --secondary-foreground: 0 0% 0%;
-    --muted: 159 30% 95%;
-    --muted-foreground: 197 5% 40%;
-    --accent: 159 30% 90%;
-    --accent-foreground: 197 5% 15%;
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 197 5% 97%;
-    --border: 197 30% 82%;
-    --input: 197 30% 50%;
-    --ring: 197 100% 39.6%;
-    --radius: 1rem;
+    --background: 190 60% 97%;                  /* Brighter teal backdrop */
+    --foreground: 210 5% 20%;                  /* Slightly warmer dark text */
+    --ag-header-background-color: hsl(190, 90%, 42%); 
+    --card: 40 30% 98%;                        /* Warm near-white for card */
+    --card-foreground: 210 5% 20%;
+    --popover: 40 30% 98%;                     /* Matches card for consistency */
+    --popover-foreground: 210 5% 20%;
+
+    --primary: 190 100% 42%;                   /* More neon teal */
+    --primary-foreground: 0 0% 100%;           /* White text on teal */
+
+    --secondary: 270 90% 65%;                  /* Vibrant purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 270 90% 65%;                     /* Same as secondary by default */
+    --accent-foreground: 0 0% 100%;
+
+    --warm-accent: 30 90% 70%;                 /* Optional warm accent (peachy) */
+    --warm-accent-foreground: 210 5% 20%;
+
+    --muted: 190 10% 90%;                      /* Subtle off‐teal for muted elements */
+    --muted-foreground: 210 5% 40%;
+
+    --destructive: 0 100% 50%;                 /* Vivid red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 190 20% 80%;
+    --input: 190 20% 80%;
+    --ring: 190 100% 42%;                      /* Matches primary for focus ring */
+    --radius: 1.25rem;                         /* Increased border-radius for softer UI */
+
     --apple-icon-color: #1d1d1f;
   }
 
+  /* 
+    DARK THEME
+  */
   .dark {
-    --background: 197 50% 15%;
-    --foreground: 197 5% 97%;
-    --ag-header-background-color: hsl(337, 90%, 51%);
-    --card: 197 50% 18%;
-    --card-foreground: 197 5% 97%;
-    --popover: 197 50% 5%;
-    --popover-foreground: 197 5% 97%;
-    --primary: 337 90% 51%;
+    --background: 190 50% 9%;                  /* Dark teal-tinted near-black */
+    --foreground: 0 0% 100%;                   /* White text on dark */
+    --ag-header-background-color: hsl(190, 90%, 42%);
+    --card: 190 40% 12%;                       /* Slightly lighter than body for contrast */
+    --card-foreground: 0 0% 100%;
+    --popover: 190 40% 12%;                    /* Matches card for consistency */
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 190 90% 45%;                    /* Neon teal */
     --primary-foreground: 0 0% 100%;
-    --secondary: 197 30% 20%;
+
+    --secondary: 270 90% 65%;                  /* Neon purple */
     --secondary-foreground: 0 0% 100%;
-    --muted: 159 30% 25%;
-    --muted-foreground: 197 5% 65%;
-    --accent: 159 30% 25%;
-    --accent-foreground: 197 5% 95%;
-    --destructive: 0 100% 50%;
-    --destructive-foreground: 197 5% 97%;
-    --border: 337 90% 51%;
-    --input: 337 90% 51%;
-    --ring: 337 90% 51%;
-    --radius: 1rem;
+
+    --accent: 270 90% 65%;                     /* Same as secondary by default */
+    --accent-foreground: 0 0% 100%;
+
+    --warm-accent: 30 90% 60%;                 /* Warm accent in dark mode */
+    --warm-accent-foreground: 0 0% 100%;
+
+    --muted: 210 15% 25%;                      /* Muted gray‐teal */
+    --muted-foreground: 210 5% 80%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 190 90% 42%;                       /* Teal focus ring */
+    --radius: 1.25rem;
+
     --apple-icon-color: #ffffff;
   }
 }
