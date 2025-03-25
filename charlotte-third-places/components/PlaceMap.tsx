@@ -122,7 +122,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 <TooltipTrigger asChild>
                                     <Button
                                         onClick={handleLocationClick}
-                                        className="bg-destructive hover:bg-destructive/90 text-destructive-foreground flex items-center gap-2 shadow-lg rounded-sm"
+                                        className="bg-destructive hover:bg-destructive/90 text-destructive-foreground flex items-center gap-2 shadow-lg rounded-sm font-bold"
                                         size="sm"
                                     >
                                         <Icons.locate className="w-5 h-5" />
