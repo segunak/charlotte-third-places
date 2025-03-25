@@ -78,7 +78,7 @@
     --accent: 270 90% 65%;                     /* Same as secondary by default */
     --accent-foreground: 0 0% 100%;
 
-    --warm-accent: 30 90% 70%;                 /* Optional warm accent (peachy) */
+    --warm-accent: 30 90% 70%;                 /* Warm accent (peachy) */
     --warm-accent-foreground: 210 5% 20%;
 
     --muted: 190 10% 90%;                      /* Subtle off‐teal for muted elements */
