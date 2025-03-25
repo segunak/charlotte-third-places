@@ -62,7 +62,7 @@ const frequentlyAskedQuestions = [
                     There's also some curation, where I choose not to list places that request to be added but don't meet the criteria of a third place (which, admittedly, is somewhat arbitrary). The main rule is: if a spot requires a reservation or membership before you can use it, it's disqualified. If you can't just walk in, make a simple purchase, and hang out, then it's not a third place in my opinion. If you disagree, I'm open to hearing your thoughts, use the <Link className="custom-link" href="contribute">Contribute</Link> page to reach out.
                 </p>
                 <p>
-                    Overall, my goal is to keep this site as open and community-driven as possible. The code for this site is <a href="https://github.com/segunak/charlotte-third-places">open source</a>, and I've documented how it was built <a href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</a>. No secrets here—just a personal project from a Charlotte resident who loves exploring the city.
+                    Overall, my goal is to keep this site as open and community-driven as possible. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've documented how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here—just a personal project from a Charlotte resident who loves exploring the city.
                 </p>
             </div>
         )
