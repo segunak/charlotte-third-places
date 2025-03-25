@@ -122,8 +122,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 <TooltipTrigger asChild>
                                     <Button
                                         onClick={handleLocationClick}
-                                        className="bg-warm-accent hover:bg-warm-accent/90 text-warm-accent-foreground flex items-center gap-2 shadow-lg"
-                                        size="lg"
+                                        className="bg-destructive hover:bg-destructive/90 text-destructive-foreground flex items-center gap-2 shadow-lg rounded-sm"
+                                        size="sm"
                                     >
                                         <Icons.locate className="w-5 h-5" />
                                         <span>Find Me</span>
