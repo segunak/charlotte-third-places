@@ -38,9 +38,17 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     setUserLocation(newLocation);
                     
                     if (mapInstance) {
+                        const currentZoom = mapInstance.getZoom();
                         const bounds = mapInstance.getBounds();
-                        if (!bounds?.contains(newLocation)) {
-                            // Only pan if the location is outside the current view
+                        
+                        // If we're very zoomed out, adjust to a moderate zoom level
+                        if (currentZoom && currentZoom < 11) {
+                            mapInstance.setOptions({
+                                zoom: 13,
+                                center: newLocation,
+                            });
+                        } else if (!bounds?.contains(newLocation)) {
+                            // If location is outside view but zoom is good, just pan
                             mapInstance.panTo(newLocation);
                         }
                     }
