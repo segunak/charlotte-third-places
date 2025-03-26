@@ -35,14 +35,14 @@ export default async function MapPage() {
                             </span>
                         </p>
                         <p className="text-pretty">
-                            Click any marker for more info about a place. {" "}
+                            Click any marker for more info about a place. Use the <span className="font-bold text-primary">Find Me</span> button in the upper-right corner to see your location on the map. {" "}
                             <span className="font-bold text-primary">Filter</span> using the {" "}
                             <span className="sm:hidden">
                                 button in the <span className="font-bold text-primary">lower-right corner</span>
                             </span>
                             <span className="hidden sm:inline font-bold text-primary">
-                                sidebar on the right
-                            </span>.
+                                sidebar
+                            </span> on the right.
                         </p>
                     </div>
                     <div className="w-full h-[70vh] sm:h-[80vh] mb-0 sm:mb-4">
