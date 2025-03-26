@@ -68,6 +68,7 @@
     --card-foreground: 210 5% 20%;
     --popover: 40 30% 98%;                     /* Matches card for consistency */
     --popover-foreground: 210 5% 20%;
+    --button-white: rgb(255, 255, 255);        /* White background for buttons */
 
     --primary: 190 100% 42%;                   /* More neon teal */
     --primary-foreground: 0 0% 100%;           /* White text on teal */
