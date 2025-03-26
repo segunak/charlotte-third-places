@@ -20,46 +20,42 @@ export function PlaceMap({ places }: PlaceMapProps) {
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);
+    const [isLocating, setIsLocating] = useState(false);
 
     const handleLocationClick = () => {
-        if ("geolocation" in navigator) {
-            navigator.geolocation.getCurrentPosition(
-                (position) => {
-                    const newLocation = {
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude
-                    };
-                    setUserLocation(newLocation);
-
-                    if (mapInstance) {
-                        const currentZoom = mapInstance.getZoom();
-                        const bounds = mapInstance.getBounds();
-
-                        // If we're very zoomed out, adjust to a moderate zoom level
-                        if (currentZoom && currentZoom < 11) {
-                            mapInstance.setOptions({
-                                zoom: 13,
-                                center: newLocation,
-                            });
-                        } else if (!bounds?.contains(newLocation)) {
-                            // If location is outside view but zoom is good, just pan
-                            mapInstance.panTo(newLocation);
-                        }
-                    }
-                },
-                (error) => {
-                    console.error("Error getting location:", error);
-                    alert("Please allow location access to use this feature.");
-                },
-                {
-                    enableHighAccuracy: true,
-                    timeout: 10000,
-                    maximumAge: 0
-                }
-            );
-        } else {
+        if (!("geolocation" in navigator)) {
             alert("Geolocation is not supported by your browser.");
+            return;
         }
+
+        setIsLocating(true);
+
+        navigator.geolocation.getCurrentPosition(
+            (position) => {
+                const newLocation = {
+                    lat: position.coords.latitude,
+                    lng: position.coords.longitude
+                };
+                setUserLocation(newLocation);
+
+                if (mapInstance) {
+                    // Use a fixed zoom level for consistency and speed
+                    mapInstance.setZoom(14);
+                    mapInstance.panTo(newLocation);
+                }
+                setIsLocating(false);
+            },
+            (error) => {
+                console.error("Error getting location:", error);
+                alert("Please allow location access to use this feature.");
+                setIsLocating(false);
+            },
+            {
+                enableHighAccuracy: false, // Faster response with lower accuracy
+                timeout: 5000,
+                maximumAge: 300000 // Cache positions up to 5 minutes old for better performance
+            }
+        );
     };
 
     useEffect(() => {
@@ -136,9 +132,19 @@ export function PlaceMap({ places }: PlaceMapProps) {
                             onClick={handleLocationClick}
                             className="bg-[var(--button-white)] hover:bg-gray-100 text-black flex items-center gap-2 shadow-lg rounded-sm font-bold"
                             size="sm"
+                            disabled={isLocating}
                         >
-                            <Icons.locate className="w-5 h-5" />
-                            <span>Find Me</span>
+                            {isLocating ? (
+                                <>
+                                    <Icons.loader className="w-5 h-5 animate-spin" />
+                                    <span>Locating...</span>
+                                </>
+                            ) : (
+                                <>
+                                    <Icons.locate className="w-5 h-5" />
+                                    <span>Find Me</span>
+                                </>
+                            )}
                         </Button>
                     </div>
 
