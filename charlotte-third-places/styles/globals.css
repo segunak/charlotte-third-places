@@ -64,9 +64,9 @@
     --background: 190 60% 97%;                  /* Brighter teal backdrop */
     --foreground: 210 5% 20%;                  /* Slightly warmer dark text */
     --ag-header-background-color: hsl(190, 90%, 42%); 
-    --card: 40 30% 98%;                        /* Warm near-white for card */
+    --card: 0 0% 99%;                          /* Almost pure white for card */
     --card-foreground: 210 5% 20%;
-    --popover: 40 30% 98%;                     /* Matches card for consistency */
+    --popover: 0 0% 99%;                       /* Matches card for consistency */
     --popover-foreground: 210 5% 20%;
     --button-white: rgb(255, 255, 255);        /* White background for buttons */
 
