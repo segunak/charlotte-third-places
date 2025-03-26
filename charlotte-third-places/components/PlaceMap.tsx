@@ -20,12 +20,12 @@ interface PlaceMapProps {
 }
 
 export function PlaceMap({ places }: PlaceMapProps) {
-    const map = useMap();
     const { showPlaceModal } = useModalContext();
     const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
+    const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);
 
     const handleLocationClick = () => {
         if ("geolocation" in navigator) {
@@ -36,8 +36,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         lng: position.coords.longitude
                     };
                     setUserLocation(newLocation);
-                    map?.panTo(newLocation);
-                    map?.setZoom(14);
+                    mapInstance?.panTo(newLocation);
+                    mapInstance?.setZoom(14);
                 },
                 (error) => {
                     console.error("Error getting location:", error);
@@ -112,8 +112,13 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         zoomControl={!isMobileView} // The plus minus buttons in the lower right. On mobile, people just pinch to zoom, so they're not needed.
                         streetViewControl={false}
                         fullscreenControl={false}
-                        gestureHandling='greedy'>
-                        {/* Location Button with Tooltip */}
+                        gestureHandling='greedy'
+                        onDrag={(e) => {
+                            if (e.map) {
+                                setMapInstance(e.map);
+                            }
+                        }}
+                    >
                         <div className="absolute top-4 right-4 z-10">
                             <Tooltip>
                                 <TooltipTrigger asChild>
@@ -132,7 +137,6 @@ export function PlaceMap({ places }: PlaceMapProps) {
                             </Tooltip>
                         </div>
 
-                        {/* User Location Marker */}
                         {userLocation && (
                             <AdvancedMarker
                                 position={userLocation}
