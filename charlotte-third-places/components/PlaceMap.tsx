@@ -29,24 +29,21 @@ export function PlaceMap({ places }: PlaceMapProps) {
 
     const handleLocationClick = () => {
         if ("geolocation" in navigator) {
-            // Show a confirmation dialog
-            if (confirm("Would you like to share your location to see where you are on the map?")) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        const newLocation = {
-                            lat: position.coords.latitude,
-                            lng: position.coords.longitude
-                        };
-                        setUserLocation(newLocation);
-                        map?.panTo(newLocation);
-                        map?.setZoom(14);
-                    },
-                    (error) => {
-                        console.error("Error getting location:", error);
-                        alert("Please allow location access to use this feature.");
-                    }
-                );
-            }
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const newLocation = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+                    setUserLocation(newLocation);
+                    map?.panTo(newLocation);
+                    map?.setZoom(14);
+                },
+                (error) => {
+                    console.error("Error getting location:", error);
+                    alert("Please allow location access to use this feature.");
+                }
+            );
         } else {
             alert("Geolocation is not supported by your browser.");
         }
