@@ -36,15 +36,13 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         lng: position.coords.longitude
                     };
                     setUserLocation(newLocation);
+                    
                     if (mapInstance) {
-                        // Calculate proper zoom level based on accuracy
-                        const zoomLevel = position.coords.accuracy < 100 ? 16 : 14;
-                        
-                        // First pan to the location
-                        mapInstance.panTo(newLocation);
-                        
-                        // Then set zoom level
-                        mapInstance.setZoom(zoomLevel);
+                        const bounds = mapInstance.getBounds();
+                        if (!bounds?.contains(newLocation)) {
+                            // Only pan if the location is outside the current view
+                            mapInstance.panTo(newLocation);
+                        }
                     }
                 },
                 (error) => {
@@ -52,9 +50,9 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     alert("Please allow location access to use this feature.");
                 },
                 {
-                    enableHighAccuracy: true, // Request high accuracy
-                    timeout: 10000, // 10 second timeout
-                    maximumAge: 0 // Don't use cached position
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 0
                 }
             );
         } else {
