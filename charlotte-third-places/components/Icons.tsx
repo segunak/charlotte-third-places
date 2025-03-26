@@ -1,5 +1,5 @@
 // See https://react-icons.github.io/react-icons/
-import { ArrowUp } from "lucide-react";
+import { ArrowUp, Locate } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { MdEditLocationAlt } from "react-icons/md";
@@ -70,6 +70,7 @@ export const Icons = {
   reddit: IoLogoReddit,
   link: LuLink,
   externalLink: LuExternalLink,
+  locate: Locate,
   logo: (props: IconProps) => (
     <svg
       width="800px"
