@@ -123,13 +123,6 @@ htmlcov/
 .azurite
 local.settings.json
 
-# VS Code specific files
-.vscode/*
-!.vscode/extensions.json
-!.vscode/launch.json
-!.vscode/tasks.json
-!.vscode/settings.json
-
 # JetBrains IDE files
 .idea/
 *.iml
@@ -162,34 +155,6 @@ coverage
 # Temporary folders
 tmp/
 temp/
-
-# Large media files
-*.mp4
-*.tiff
-*.avi
-*.flv
-*.mov
-*.wmv
-
-# Avoid committing large data files
-*.csv
-*.dat
-*.efx
-*.gbr
-*.ppt
-*.pptx
-*.pdf
-*.xls
-*.xlsx
-*.xlsm
-*.doc
-*.docx
-# Uncomment if you want to exclude images from git
-# *.jpg
-# *.jpeg
-# *.png
-# *.gif
-# *.ico
 
 # Storybook
 storybook-static/
