@@ -174,7 +174,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         parking: getField("Parking"),
         freeWifi: getField("Free Wi-Fi"),
         hasCinnamonRolls: getField("Has Cinnamon Rolls"),
-        hasReviews: getField("Has Reviews"),
+        hasReviews: getField("Has Data File"),
         description: getField("Description"),
         website: getField("Website"),
         googleMapsPlaceId: getField("Google Maps Place Id"),
