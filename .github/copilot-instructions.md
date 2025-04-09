@@ -1,0 +1,1 @@
+The user is developing this project on a Windows machine, so any terminal commands must be run in proper PowerShell syntax.
