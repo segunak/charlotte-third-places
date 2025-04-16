@@ -13,6 +13,29 @@ const base = new Airtable({
 }).base('apptV6h58vA4jhWFg');
 
 /**
+ * Determines whether to use local data or production data.
+ * Returns true for local data, false for production data.
+ * 
+ * @returns {boolean} True if should use local data, false for production data
+ */
+const shouldUseLocalData = (): boolean => {
+    // Check if we should force production data (even in development)
+    if (process.env.FORCE_PRODUCTION_DATA === 'true') {
+        console.log('Info: Using production data (forced via FORCE_PRODUCTION_DATA).');
+        return false;
+    }
+    
+    // Default development behavior: use local data
+    if (process.env.NODE_ENV === 'development') {
+        console.log('Info: Local development mode. Using CSV data for places.');
+        return true;
+    }
+    
+    // Production environment always uses production data
+    return false;
+};
+
+/**
  * Generates a SHA1 hash from a given URL string.
  * 
  * @param {string} url - The URL to hash.
@@ -228,8 +251,7 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
  */
 export async function getPlaceById(id: string) {
     try {
-        if (process.env.NODE_ENV === 'development') {
-            console.log('Info: Local development mode. Using CSV data for places.');
+        if (shouldUseLocalData()) {
             const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData.find((place) => place.recordId === id);
         }
@@ -253,8 +275,7 @@ export async function getPlaceById(id: string) {
  */
 export async function getPlaces(): Promise<Place[]> {
     try {
-        if (process.env.NODE_ENV === 'development') {
-            console.log('Info: Local development mode. Using CSV data for places.');
+        if (shouldUseLocalData()) {
             const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
             return localData;
         }
