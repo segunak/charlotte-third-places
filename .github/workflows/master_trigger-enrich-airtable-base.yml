@@ -25,8 +25,7 @@ jobs:
         run: |
           $FunctionUrl = "https://third-places-data.azurewebsites.net/api/enrich-airtable-base"
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
-          $RequestBody = '{"TheMotto":"What is dead may never die, but rises again harder and stronger"}'
-          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -RequestBody $RequestBody -TimeoutSeconds 1800
+          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
           if ($LASTEXITCODE -ne 0) {
             Write-Error "Azure Function call failed."
