@@ -2,7 +2,29 @@ name: Trigger Refresh Airtable Operational Statuses
 
 on:
   workflow_call:
+    inputs:
+      provider_type:
+        description: 'Provider type for data refresh'
+        required: false
+        default: 'outscraper'
+        type: string
+      sequential_mode:
+        description: 'Whether to run in sequential mode'
+        required: false
+        default: 'false'
+        type: string
   workflow_dispatch:
+    inputs:
+      provider_type:
+        description: 'Provider type for data refresh'
+        required: false
+        default: 'outscraper'
+        type: string
+      sequential_mode:
+        description: 'Whether to run in sequential mode'
+        required: false
+        default: 'false'
+        type: string
 
 concurrency: 
   group: refresh-airtable-operational-statuses
@@ -23,7 +45,13 @@ jobs:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
         continue-on-error: true
         run: |
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-airtable-operational-statuses"
+          $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
+          $sequentialMode = "${{ github.event.inputs.sequential_mode || 'false' }}"
+          
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-airtable-operational-statuses?provider_type=$providerType&sequential_mode=$sequentialMode"
+          
+          Write-Host "Using function URL: $FunctionUrl"
+          
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
           ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
