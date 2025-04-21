@@ -1,10 +1,10 @@
-name: Trigger Enrich Airtable Base
+name: Trigger Refresh Place Data
 
 on:
   workflow_call:
     inputs:
       provider_type:
-        description: 'Provider type for data enrichment'
+        description: 'Provider type for data refresh'
         required: false
         default: 'outscraper'
         type: string
@@ -19,14 +19,14 @@ on:
         default: 'false'
         type: string
       city:
-        description: 'City to enrich data for'
+        description: 'City to refresh data for'
         required: false
         default: 'charlotte'
         type: string
   workflow_dispatch:
     inputs:
       provider_type:
-        description: 'Provider type for data enrichment'
+        description: 'Provider type for data refresh'
         required: false
         default: 'outscraper'
         type: string
@@ -41,18 +41,17 @@ on:
         default: 'false'
         type: string
       city:
-        description: 'City to enrich data for'
+        description: 'City to refresh data for'
         required: false
         default: 'charlotte'
         type: string
 
-# Ensures that only one instance of this workflow runs at a time
 concurrency: 
-  group: enrich-airtable-base
+  group: refresh-place-data
   cancel-in-progress: true
 
 jobs:
-  trigger-enrich-airtable-base:
+  trigger-refresh-place-data:
     runs-on: windows-latest
     steps:
       - name: Checkout repository
@@ -60,8 +59,8 @@ jobs:
 
       - name: Invoke PowerShell Script
         id: invoke_script
-        shell: pwsh
         working-directory: ./scripts
+        shell: pwsh
         env:
           AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
         run: |
@@ -70,18 +69,14 @@ jobs:
           $forceRefresh = "${{ github.event.inputs.force_refresh || 'false' }}"
           $city = "${{ github.event.inputs.city || 'charlotte' }}"
           
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/enrich-airtable-base?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&city=$city"
+          $orchestratorUrl = "https://third-places-data.azurewebsites.net/api/refresh-place-data?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&city=$city"
           
-          Write-Host "Using function URL: $FunctionUrl"
+          Write-Host "Using orchestrator URL: $orchestratorUrl"
           
-          $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
-          ./Invoke-AzureDurableFunction.ps1 -OrchestratorUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
+          ./Invoke-AzureDurableFunction.ps1 -OrchestratorUrl $orchestratorUrl -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 7200
 
           if ($LASTEXITCODE -ne 0) {
-            Write-Error "Azure Function call failed."
             exit $LASTEXITCODE
-          } else {
-            Write-Output "Azure Function call succeeded."
           }
 
       - name: Check Script Result
