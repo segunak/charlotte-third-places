@@ -9,14 +9,9 @@ jobs:
   enrich-airtable-base:
     uses: ./.github/workflows/master_trigger-enrich-airtable-base.yml
     secrets: inherit
-  
-  get-outscraper-reviews:
-    needs: enrich-airtable-base
-    uses: ./.github/workflows/master_trigger-get-outscraper-reviews.yml
-    secrets: inherit
 
   refresh-airtable-operational-statuses:
-    needs: get-outscraper-reviews
+    needs: enrich-airtable-base
     uses: ./.github/workflows/master_trigger-refresh-airtable-operational-statuses.yml
     secrets: inherit
 
