@@ -15,7 +15,12 @@ jobs:
     uses: ./.github/workflows/master_trigger-refresh-airtable-operational-statuses.yml
     secrets: inherit
 
-  trigger-site-revalidation:
+  purge-orchestrations:
     needs: refresh-airtable-operational-statuses
+    uses: ./.github/workflows/master_purge-orchestrations.yml
+    secrets: inherit
+
+  trigger-site-revalidation:
+    needs: purge-orchestrations
     uses: ./.github/workflows/master_trigger_site_revalidation.yml
     secrets: inherit

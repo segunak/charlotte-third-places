@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  trigger-refresh-operational-statuses:
+  trigger-purge-orchestrations:
     runs-on: windows-latest
     steps:
       - name: Checkout repository
