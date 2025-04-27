@@ -12,6 +12,7 @@ import {
     useMemo
 } from "react";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { useModalContext } from "@/contexts/ModalContext"; // Correct import
 import {
     Dialog,
     DialogContent,
@@ -34,6 +35,7 @@ interface PlaceModalProps {
 
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
+    const { showPlacePhotos } = useModalContext(); // Use the correct hook and destructure showPlacePhotos
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -58,6 +60,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
+    const hasPhotos = place.photos && place.photos.length > 0;
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -111,6 +114,27 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                 </Tooltip>
                             </TooltipProvider>
                         )}
+
+                        {/* Add Camera Button if photos exist */} 
+                        {hasPhotos && (
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger>
+                                        <Button 
+                                            variant="outline"
+                                            onClick={() => showPlacePhotos(place)} // Use showPlacePhotos
+                                            aria-label="View photos"
+                                        >
+                                            <Icons.camera className="h-6 w-6 text-primary" />
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent>
+                                        <p>View Photos</p>
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                        )}
+
                         {website && (
                             <TooltipProvider>
                                 <Tooltip>

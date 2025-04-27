@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { FC, useState, useRef, useEffect, useCallback } from 'react';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
     Dialog,
     DialogContent,
@@ -99,8 +99,6 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 className="max-w-[95vw] max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
-                showCloseButton={false} // Explicitly hide default close if prop exists (check Dialog component)
-                                        // If not, the structure change below handles it.
             >
                 <DialogTitle className="sr-only">
                     {place.name} Photos
@@ -204,14 +202,17 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         </div>
                         
                         {showThumbnails && (
-                            <div className="h-20">
-                                <ScrollArea className="h-full">
-                                    <div className="flex gap-2 px-4 pb-2 overflow-x-auto">
+                            // Ensure container has enough vertical space and padding
+                            <div className="h-24 px-4 pb-2"> 
+                                <ScrollArea className="h-full w-full whitespace-nowrap rounded-md">
+                                    {/* Use inline-flex for horizontal layout within scroll area */}
+                                    <div className="inline-flex gap-2 py-2"> 
                                         {photos.map((photo, idx) => (
                                             <button
                                                 key={idx}
                                                 className={cn(
-                                                    "flex-shrink-0 w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative",
+                                                    // Removed flex-shrink-0 as inline-flex handles layout
+                                                    "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-black/50",
                                                     idx === currentIndex 
                                                         ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50" 
                                                         : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
@@ -233,6 +234,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                             </button>
                                         ))}
                                     </div>
+                                    {/* Scrollbar component from ui/scroll-area if needed, ensure it's horizontal */}
+                                    <ScrollBar orientation="horizontal" /> 
                                 </ScrollArea>
                             </div>
                         )}
