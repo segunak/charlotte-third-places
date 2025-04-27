@@ -12,6 +12,7 @@ import {
     DialogContent,
     DialogTitle,
     DialogDescription,
+    DialogClose // Import DialogClose
 } from "@/components/ui/dialog";
 
 interface PhotosModalProps {
@@ -92,11 +93,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
+            {/* Remove default close button by not rendering DialogClose inside DialogContent directly */}
             <DialogContent 
                 ref={dialogRef}
-                className="max-w-[95vw] max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden"
+                className="max-w-[95vw] max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
+                showCloseButton={false} // Explicitly hide default close if prop exists (check Dialog component)
+                                        // If not, the structure change below handles it.
             >
                 <DialogTitle className="sr-only">
                     {place.name} Photos
@@ -105,136 +109,139 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                     Photo gallery for {place.name} - Image {currentIndex + 1} of {photos.length}
                 </DialogDescription>
                 
-                {/* Main container with fixed structure */}
-                <div className="grid grid-rows-[auto_1fr_auto] h-full w-full">
-                    {/* Top bar - fixed height */}
-                    <div className="h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800">
-                        <div className="text-white font-bold truncate">
-                            {place.name} - Photo {currentIndex + 1} of {photos.length}
-                        </div>
+                {/* Top bar - fixed height */}
+                <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
+                    <div className="text-white font-bold truncate">
+                        {place.name} - Photo {currentIndex + 1} of {photos.length}
+                    </div>
+                    {/* Use DialogClose for the custom close button */}
+                    <DialogClose asChild>
                         <Button 
                             variant="ghost" 
                             size="sm" 
                             className="text-white hover:bg-white/20"
-                            onClick={onClose}
+                            aria-label="Close photo gallery"
                         >
                             <Icons.close className="h-6 w-6" />
                         </Button>
-                    </div>
+                    </DialogClose>
+                </div>
 
-                    {/* Main image container - takes all available space */}
-                    <div className="relative w-full h-full flex items-center justify-center overflow-hidden bg-black">
-                        {!imageLoaded && (
-                            <div className="absolute inset-0 flex items-center justify-center z-10">
-                                <Icons.loader className="h-10 w-10 animate-spin text-primary" />
-                            </div>
-                        )}
-                        
-                        {/* Main image with proper sizing */}
-                        <div className="w-full h-full flex items-center justify-center">
-                            {currentPhoto && (
-                                <div className="relative flex items-center justify-center max-w-[90%] max-h-[90%]">
-                                    <Image
-                                        src={optimizeGooglePhotoUrl(cleanPhotoUrl(currentPhoto))}
-                                        alt={`${place.name} photo ${currentIndex + 1} of ${photos.length}`}
-                                        width={1280}
-                                        height={720}
-                                        quality={80}
-                                        priority={currentIndex === 0}
-                                        sizes="(max-width: 768px) 95vw, (max-width: 1200px) 80vw, 1200px"
-                                        className={cn(
-                                            "object-contain max-h-[70vh] transition-opacity duration-300",
-                                            imageLoaded ? "opacity-100" : "opacity-0"
-                                        )}
-                                        onLoad={() => setImageLoaded(true)}
-                                        unoptimized={!currentPhoto.includes('googleusercontent.com')}
-                                        style={{
-                                            margin: '0 auto',
-                                            maxWidth: '100%',
-                                            height: 'auto'
-                                        }}
-                                    />
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Navigation arrows - absolutely positioned over the image container */}
-                        <Button 
-                            variant="ghost" 
-                            size="icon" 
-                            className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-50 w-10 h-10 flex items-center justify-center"
-                            onClick={handlePrevious}
-                            aria-label="Previous photo"
-                        >
-                            <Icons.chevronLeft className="h-6 w-6" />
-                        </Button>
-                        <Button 
-                            variant="ghost" 
-                            size="icon" 
-                            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-50 w-10 h-10 flex items-center justify-center"
-                            onClick={handleNext}
-                            aria-label="Next photo"
-                        >
-                            <Icons.chevronRight className="h-6 w-6" />
-                        </Button>
-                    </div>
-
-                    {/* Thumbnails section - fixed height at the bottom */}
-                    {photos.length > 1 && (
-                        <div className="bg-black/80 border-t border-gray-800">
-                            <div className="flex justify-center py-2">
-                                <Button 
-                                    variant="ghost" 
-                                    size="sm"
-                                    className="text-white py-0.5"
-                                    onClick={() => setShowThumbnails(prev => !prev)}
-                                >
-                                    {showThumbnails ? 'Hide thumbnails' : 'Show thumbnails'}
-                                </Button>
-                            </div>
-                            
-                            {showThumbnails && (
-                                <div className="h-24">
-                                    <ScrollArea className="h-full">
-                                        <div className="flex gap-2 px-4 pb-3 overflow-x-auto">
-                                            {photos.map((photo, idx) => (
-                                                <button
-                                                    key={idx}
-                                                    className={cn(
-                                                        "flex-shrink-0 w-16 h-16 rounded-md overflow-hidden transition-all duration-200",
-                                                        idx === currentIndex 
-                                                            ? "ring-2 ring-primary" 
-                                                            : "ring-1 ring-gray-700 opacity-70 hover:opacity-100"
-                                                    )}
-                                                    onClick={() => {
-                                                        setCurrentIndex(idx);
-                                                        setImageLoaded(false);
-                                                    }}
-                                                    aria-label={`Go to photo ${idx + 1}`}
-                                                >
-                                                    <div className="relative w-full h-full">
-                                                        <Image
-                                                            src={optimizeGooglePhotoUrl(cleanPhotoUrl(photo), 100)}
-                                                            alt={`Thumbnail ${idx + 1}`}
-                                                            width={64}
-                                                            height={64}
-                                                            className="object-cover w-full h-full"
-                                                            unoptimized={!photo.includes('googleusercontent.com')}
-                                                        />
-                                                    </div>
-                                                </button>
-                                            ))}
-                                        </div>
-                                    </ScrollArea>
-                                </div>
-                            )}
-
-                            <div className="text-white text-center pb-2">
-                                {currentIndex + 1} / {photos.length}
-                            </div>
+                {/* Main image container - takes remaining space */}
+                <div className="flex-grow relative w-full h-full flex items-center justify-center overflow-hidden bg-black p-4">
+                    {!imageLoaded && (
+                        <div className="absolute inset-0 flex items-center justify-center z-20 bg-black/50">
+                            <Icons.loader className="h-10 w-10 animate-spin text-primary" />
                         </div>
                     )}
+                    
+                    {/* Image wrapper for centering and max sizing */}
+                    <div className="relative w-full h-full flex items-center justify-center">
+                        {currentPhoto && (
+                            <div className="relative flex items-center justify-center max-w-full max-h-full">
+                                <Image
+                                    src={optimizeGooglePhotoUrl(cleanPhotoUrl(currentPhoto))}
+                                    alt={`${place.name} photo ${currentIndex + 1} of ${photos.length}`}
+                                    width={1280}
+                                    height={720}
+                                    quality={80}
+                                    priority={currentIndex === 0}
+                                    sizes="(max-width: 768px) 90vw, (max-width: 1200px) 80vw, 1200px"
+                                    className={cn(
+                                        "object-contain max-w-full max-h-[calc(95vh-10rem)] transition-opacity duration-300", // Adjusted max-h calculation
+                                        imageLoaded ? "opacity-100" : "opacity-0"
+                                    )}
+                                    onLoad={() => setImageLoaded(true)}
+                                    unoptimized={!currentPhoto.includes('googleusercontent.com')}
+                                    style={{
+                                        display: 'block', // Ensure image behaves like a block element
+                                        margin: 'auto', // Center horizontally
+                                    }}
+                                />
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Navigation arrows - absolutely positioned within the padded container */}
+                    {photos.length > 1 && (
+                        <>
+                            <Button 
+                                variant="ghost" 
+                                size="icon" 
+                                className="absolute left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-50 w-10 h-10 flex items-center justify-center"
+                                onClick={handlePrevious}
+                                aria-label="Previous photo"
+                                disabled={photos.length <= 1}
+                            >
+                                <Icons.chevronLeft className="h-6 w-6" />
+                            </Button>
+                            <Button 
+                                variant="ghost" 
+                                size="icon" 
+                                className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-50 w-10 h-10 flex items-center justify-center"
+                                onClick={handleNext}
+                                aria-label="Next photo"
+                                disabled={photos.length <= 1}
+                            >
+                                <Icons.chevronRight className="h-6 w-6" />
+                            </Button>
+                        </>
+                    )}
                 </div>
+
+                {/* Thumbnails section - fixed height at the bottom */}
+                {photos.length > 1 && (
+                    <div className="flex-shrink-0 bg-black/80 border-t border-gray-800 z-10">
+                        <div className="flex justify-center py-1">
+                            <Button 
+                                variant="ghost" 
+                                size="sm"
+                                className="text-white py-0.5 h-auto text-xs"
+                                onClick={() => setShowThumbnails(prev => !prev)}
+                            >
+                                {showThumbnails ? 'Hide thumbnails' : 'Show thumbnails'}
+                            </Button>
+                        </div>
+                        
+                        {showThumbnails && (
+                            <div className="h-20">
+                                <ScrollArea className="h-full">
+                                    <div className="flex gap-2 px-4 pb-2 overflow-x-auto">
+                                        {photos.map((photo, idx) => (
+                                            <button
+                                                key={idx}
+                                                className={cn(
+                                                    "flex-shrink-0 w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative",
+                                                    idx === currentIndex 
+                                                        ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50" 
+                                                        : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
+                                                )}
+                                                onClick={() => {
+                                                    setCurrentIndex(idx);
+                                                    setImageLoaded(false);
+                                                }}
+                                                aria-label={`Go to photo ${idx + 1}`}
+                                            >
+                                                <Image
+                                                    src={optimizeGooglePhotoUrl(cleanPhotoUrl(photo), 100)}
+                                                    alt={`Thumbnail ${idx + 1}`}
+                                                    fill
+                                                    sizes="64px"
+                                                    className="object-cover"
+                                                    unoptimized={!photo.includes('googleusercontent.com')}
+                                                />
+                                            </button>
+                                        ))}
+                                    </div>
+                                </ScrollArea>
+                            </div>
+                        )}
+
+                        <div className="text-white text-center text-xs pb-1 pt-1">
+                            {currentIndex + 1} / {photos.length}
+                        </div>
+                    </div>
+                )}
             </DialogContent>
         </Dialog>
     );
