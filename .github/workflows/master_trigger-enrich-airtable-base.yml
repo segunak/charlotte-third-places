@@ -18,6 +18,11 @@ on:
         required: false
         default: 'false'
         type: string
+      insufficient_only:
+        description: 'Only process records with insufficient data'
+        required: false
+        default: 'true'
+        type: string
       city:
         description: 'City to enrich data for'
         required: false
@@ -39,6 +44,11 @@ on:
         description: 'Force refresh of all data'
         required: false
         default: 'false'
+        type: string
+      insufficient_only:
+        description: 'Only process records with insufficient data'
+        required: false
+        default: 'true'
         type: string
       city:
         description: 'City to enrich data for'
@@ -68,9 +78,10 @@ jobs:
           $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
           $sequentialMode = "${{ github.event.inputs.sequential_mode || 'false' }}"
           $forceRefresh = "${{ github.event.inputs.force_refresh || 'false' }}"
+          $insufficientOnly = "${{ github.event.inputs.insufficient_only || 'true' }}"
           $city = "${{ github.event.inputs.city || 'charlotte' }}"
           
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/enrich-airtable-base?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&city=$city"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/enrich-airtable-base?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&insufficient_only=$insufficientOnly&city=$city"
           
           Write-Host "Using function URL: $FunctionUrl"
           
