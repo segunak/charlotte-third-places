@@ -67,8 +67,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     const photos = place.photos;
     const currentPhoto = photos[currentIndex];
     
-    // Generate photo URL parameters to optimize based on device size
-    // Remove any string artifacts from the photo URL
+    // Clean up URL from any string artifacts
     const cleanPhotoUrl = (url: string): string => {
         if (!url) return '';
         
@@ -106,9 +105,10 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                     Photo gallery for {place.name} - Image {currentIndex + 1} of {photos.length}
                 </DialogDescription>
                 
-                <div className="relative flex flex-col h-full">
-                    {/* Top bar */}
-                    <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800">
+                {/* Main container with fixed structure */}
+                <div className="grid grid-rows-[auto_1fr_auto] h-full w-full">
+                    {/* Top bar - fixed height */}
+                    <div className="h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800">
                         <div className="text-white font-bold truncate">
                             {place.name} - Photo {currentIndex + 1} of {photos.length}
                         </div>
@@ -122,17 +122,18 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         </Button>
                     </div>
 
-                    {/* Main image container */}
-                    <div className="flex-grow relative flex items-center justify-center">
+                    {/* Main image container - takes all available space */}
+                    <div className="relative w-full h-full flex items-center justify-center overflow-hidden bg-black">
                         {!imageLoaded && (
                             <div className="absolute inset-0 flex items-center justify-center z-10">
                                 <Icons.loader className="h-10 w-10 animate-spin text-primary" />
                             </div>
                         )}
                         
-                        <div className="relative w-full h-full flex items-center justify-center p-4">
+                        {/* Main image with proper sizing */}
+                        <div className="w-full h-full flex items-center justify-center">
                             {currentPhoto && (
-                                <div className="relative max-w-full max-h-full">
+                                <div className="relative flex items-center justify-center max-w-[90%] max-h-[90%]">
                                     <Image
                                         src={optimizeGooglePhotoUrl(cleanPhotoUrl(currentPhoto))}
                                         alt={`${place.name} photo ${currentIndex + 1} of ${photos.length}`}
@@ -140,7 +141,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         height={720}
                                         quality={80}
                                         priority={currentIndex === 0}
-                                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                                        sizes="(max-width: 768px) 95vw, (max-width: 1200px) 80vw, 1200px"
                                         className={cn(
                                             "object-contain max-h-[70vh] transition-opacity duration-300",
                                             imageLoaded ? "opacity-100" : "opacity-0"
@@ -148,6 +149,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         onLoad={() => setImageLoaded(true)}
                                         unoptimized={!currentPhoto.includes('googleusercontent.com')}
                                         style={{
+                                            margin: '0 auto',
                                             maxWidth: '100%',
                                             height: 'auto'
                                         }}
@@ -156,7 +158,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             )}
                         </div>
 
-                        {/* Navigation arrows - positioned with absolute to ensure they're always visible */}
+                        {/* Navigation arrows - absolutely positioned over the image container */}
                         <Button 
                             variant="ghost" 
                             size="icon" 
@@ -177,9 +179,9 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         </Button>
                     </div>
 
-                    {/* Thumbnails */}
+                    {/* Thumbnails section - fixed height at the bottom */}
                     {photos.length > 1 && (
-                        <div className="flex-shrink-0 bg-black/80 border-t border-gray-800">
+                        <div className="bg-black/80 border-t border-gray-800">
                             <div className="flex justify-center py-2">
                                 <Button 
                                     variant="ghost" 
@@ -216,7 +218,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                             alt={`Thumbnail ${idx + 1}`}
                                                             width={64}
                                                             height={64}
-                                                            className="object-cover"
+                                                            className="object-cover w-full h-full"
                                                             unoptimized={!photo.includes('googleusercontent.com')}
                                                         />
                                                     </div>
