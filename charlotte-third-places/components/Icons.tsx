@@ -20,6 +20,8 @@ import {
   IoLogoTiktok,
   IoLogoYoutube,
   IoLogoReddit,
+  IoCamera,
+  IoCameraOutline,
 } from "react-icons/io5";
 import {
   LuMoon,
@@ -72,6 +74,8 @@ export const Icons = {
   externalLink: LuExternalLink,
   locate: Locate,
   loader: Loader2,
+  camera: IoCamera,
+  cameraOutline: IoCameraOutline,
   logo: (props: IconProps) => (
     <svg
       width="800px"

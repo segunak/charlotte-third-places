@@ -6,6 +6,7 @@ import React, { createContext, useCallback, useContext, useState } from "react";
 
 interface ModalContextValue {
     showPlaceModal: (place: Place) => void;
+    showPlacePhotos: (place: Place) => void;
     closeModal: () => void;
 }
 
@@ -18,12 +19,17 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
         setSelectedPlace(place);
     }, []);
 
+    const showPlacePhotos = useCallback((place: Place) => {
+        // Placeholder function for showing photos - to be implemented later
+        console.log("Show photos for:", place.name);
+    }, []);
+
     const closeModal = useCallback(() => {
         setSelectedPlace(null);
     }, []);
 
     return (
-        <ModalContext.Provider value={{ showPlaceModal, closeModal }}>
+        <ModalContext.Provider value={{ showPlaceModal, showPlacePhotos, closeModal }}>
             {children}
             <PlaceModal place={selectedPlace} open={Boolean(selectedPlace)} onClose={closeModal} />
         </ModalContext.Provider>
