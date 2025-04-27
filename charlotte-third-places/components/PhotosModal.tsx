@@ -209,14 +209,15 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                     setLoadingSlide(null);
                                                 }
                                             }}
-                                            onError={() => {
-                                                // Optional: Handle image loading errors
+                                            onError={(e) => { // Accept the event object 'e'
                                                 if (loadingSlide === idx) {
                                                     setLoadingSlide(null); // Stop showing loader even on error
                                                 }
-                                                console.error(`Failed to load image ${idx + 1}`);
+                                                // Log the error event and the failed URL
+                                                console.error(`Failed to load image ${idx + 1} at URL: ${optimizeGooglePhotoUrl(cleanPhotoUrl(photo))}`, e);
                                             }}
                                             unoptimized={photo.includes('googleusercontent.com')}
+                                            referrerPolicy="no-referrer"
                                             style={{
                                                 display: 'block',
                                                 margin: 'auto',
@@ -290,6 +291,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                     fill
                                                     sizes="64px"
                                                     className="object-cover"
+                                                    referrerPolicy="no-referrer"
                                                     unoptimized={photo.includes('googleusercontent.com')}
                                                 />
                                             </button>
