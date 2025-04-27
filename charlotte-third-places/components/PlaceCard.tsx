@@ -194,8 +194,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                 size="icon"
                                 className="h-8 w-8 sm:h-9 sm:w-9 rounded-full"
                                 onClick={(e) => {
-                                    e.stopPropagation();
-                                    showPlacePhotos(place);
+                                    e.stopPropagation(); // Prevent click from bubbling to Card
+                                    showPlacePhotos(place, 'card'); // Specify origin as 'card'
                                 }}
                                 aria-label="View photos"
                             >
@@ -206,7 +206,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                 size="icon"
                                 className="h-8 w-8 sm:h-9 sm:w-9 rounded-full"
                                 onClick={(e) => {
-                                    e.stopPropagation();
+                                    e.stopPropagation(); // Prevent click from bubbling to Card
                                     showPlaceModal(place);
                                 }}
                                 aria-label="More information"

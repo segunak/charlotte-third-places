@@ -93,12 +93,11 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
-            {/* Remove default close button by not rendering DialogClose inside DialogContent directly */}
             <DialogContent 
                 ref={dialogRef}
                 className="max-w-[95vw] max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => e.preventDefault()}
-                aria-describedby="photo-description"
+                aria-describedby="Photo gallery for the place"
             >
                 <DialogTitle className="sr-only">
                     {place.name} Photos
