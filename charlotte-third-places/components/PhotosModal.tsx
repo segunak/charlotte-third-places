@@ -174,7 +174,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={dialogRef}
-                className="max-w-[95vw] max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden flex flex-col"
+                className="max-h-[80vh] sm:max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl bg-black/95 overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
             >

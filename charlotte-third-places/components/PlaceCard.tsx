@@ -192,26 +192,26 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             <Button
                                 variant="default"
                                 size="icon"
-                                className="h-8 w-8 sm:h-9 sm:w-9 rounded-full"
+                                className="h-9 w-9 rounded-full"
                                 onClick={(e) => {
                                     e.stopPropagation(); // Prevent click from bubbling to Card
                                     showPlacePhotos(place, 'card'); // Specify origin as 'card'
                                 }}
                                 aria-label="View photos"
                             >
-                                <Icons.camera className="h4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
+                                <Icons.camera className="h-5 w-5 text-primary-foreground" />
                             </Button>
                             <Button
                                 variant="default"
                                 size="icon"
-                                className="h-8 w-8 sm:h-9 sm:w-9 rounded-full"
+                                className="h-9 w-9 rounded-full"
                                 onClick={(e) => {
                                     e.stopPropagation(); // Prevent click from bubbling to Card
                                     showPlaceModal(place);
                                 }}
                                 aria-label="More information"
                             >
-                                <Icons.infoCircle className="h4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
+                                <Icons.infoCircle className="h-5 w-5 text-primary-foreground" />
                             </Button>
                         </div>
                     </span>
