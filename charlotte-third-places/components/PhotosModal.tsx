@@ -28,6 +28,8 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip"
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 
 interface PhotosModalProps {
     place: Place | null;
@@ -46,6 +48,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     const [visibleSlideCount, setVisibleSlideCount] = useState(0);
     const [showThumbnails, setShowThumbnails] = useState(true);
     const dialogRef = useRef<HTMLDivElement>(null);
+    const isMobile = useIsMobile();
+    const [showInfoDrawer, setShowInfoDrawer] = useState(false);
 
     // Get photos array without filtering - move this to top level
     const photos = useMemo(() => (place?.photos ?? []), [place]);
@@ -220,23 +224,50 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         <div className="text-white font-semibold truncate"> 
                             {place.name} - Photo {hasVisiblePhotos ? visibleSlideNumber : 0} of {visibleSlideCount}
                         </div>
-                        <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger asChild>
-                                    <Button
-                                        variant="ghost"
-                                        size="sm"
-                                        className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto" 
-                                    >
-                                        <Icons.infoCircle className="h-4 w-4" />
-                                        <span className="sr-only">Photo Source Information</span>
-                                    </Button>
-                                </TooltipTrigger>
-                                <TooltipContent side="bottom" className="bg-black/95 text-white/90 max-w-xs"> 
-                                    Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
-                                </TooltipContent>
-                            </Tooltip>
-                        </TooltipProvider>
+                        {isMobile ? (
+                            <>
+                                <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto"
+                                    onClick={() => setShowInfoDrawer(true)}
+                                    aria-label="Photo Source Information"
+                                >
+                                    <Icons.infoCircle className="h-4 w-4" />
+                                </Button>
+                                <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
+                                    <DrawerContent className="bg-black/95 text-white">
+                                        <DrawerHeader>
+                                            <DrawerTitle>Photo Source Information</DrawerTitle>
+                                            <DrawerDescription className="text-white/90">
+                                                Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                            </DrawerDescription>
+                                            <DrawerClose asChild>
+                                                <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
+                                            </DrawerClose>
+                                        </DrawerHeader>
+                                    </DrawerContent>
+                                </Drawer>
+                            </>
+                        ) : (
+                            <TooltipProvider>
+                                <Tooltip>
+                                    <TooltipTrigger asChild>
+                                        <Button
+                                            variant="ghost"
+                                            size="sm"
+                                            className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto" 
+                                        >
+                                            <Icons.infoCircle className="h-4 w-4" />
+                                            <span className="sr-only">Photo Source Information</span>
+                                        </Button>
+                                    </TooltipTrigger>
+                                    <TooltipContent side="bottom" className="bg-black/95 text-white/90 max-w-xs"> 
+                                        Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                    </TooltipContent>
+                                </Tooltip>
+                            </TooltipProvider>
+                        )}
                     </div>
                     <DialogClose asChild>
                         <Button
