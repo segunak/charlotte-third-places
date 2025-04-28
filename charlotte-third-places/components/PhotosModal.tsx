@@ -22,6 +22,12 @@ import {
     CarouselNext,
     type CarouselApi,
 } from "@/components/ui/carousel";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 interface PhotosModalProps {
     place: Place | null;
@@ -181,8 +187,27 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
                 {/* Top bar - fixed height */}
                 <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
-                    <div className="text-white font-bold truncate">
-                        {place.name} - Photo {hasVisiblePhotos ? visibleSlideNumber : 0} of {visibleSlideCount}
+                    <div className="flex items-center gap-2">
+                        <div className="text-white font-bold truncate">
+                            {place.name} - Photo {hasVisiblePhotos ? visibleSlideNumber : 0} of {visibleSlideCount}
+                        </div>
+                        <TooltipProvider>
+                            <Tooltip>
+                                <TooltipTrigger asChild>
+                                    <Button
+                                        variant="ghost"
+                                        size="sm"
+                                        className="text-white/80 hover:text-white hover:bg-white/10"
+                                    >
+                                        <Icons.infoCircle className="h-4 w-4" />
+                                        <span className="sr-only">Photo Source Information</span>
+                                    </Button>
+                                </TooltipTrigger>
+                                <TooltipContent side="bottom" className="bg-black/95 text-white/90">
+                                    Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                </TooltipContent>
+                            </Tooltip>
+                        </TooltipProvider>
                     </div>
                     <DialogClose asChild>
                         <Button

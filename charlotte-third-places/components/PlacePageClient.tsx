@@ -19,6 +19,12 @@ import {
     CarouselNext,
     type CarouselApi,
 } from "@/components/ui/carousel";
+import {
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+} from "@/components/ui/tooltip";
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place }: { place: Place }) {
@@ -110,6 +116,26 @@ export function PlacePageClient({ place }: { place: Place }) {
                 {hasPhotos && (
                     <div className="w-full space-y-4">
                         <div className="relative bg-muted rounded-lg overflow-hidden border border-gray-300 shadow-md">
+                            {/* Photo source disclaimer */}
+                            <div className="absolute top-2 right-2 z-10">
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Button
+                                                variant="ghost"
+                                                size="sm"
+                                                className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
+                                            >
+                                                <Icons.infoCircle className="h-4 w-4" />
+                                                <span className="sr-only">Photo Source Information</span>
+                                            </Button>
+                                        </TooltipTrigger>
+                                        <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
+                                            Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
+                            </div>
                             <Carousel
                                 setApi={setApi}
                                 opts={{ loop: photos.length > 1, align: "center" }}
