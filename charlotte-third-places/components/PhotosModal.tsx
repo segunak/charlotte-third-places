@@ -287,30 +287,23 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         key={`photo-${index}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2" 
                                     >
-                                        {/* Container to center the image */}
-                                        <div className="relative w-full h-full flex items-center justify-center">
+                                        {/* Container to center the image with fixed height for desktop */}
+                                        <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
                                             <Image
                                                 src={optimizeGooglePhotoUrl(photo)}
                                                 alt={`${place.name} photo ${getVisibleSlideNumber(index)}`} 
-                                                width={1280} 
-                                                height={720} 
+                                                fill
                                                 quality={80} 
                                                 priority={isPriority} 
                                                 sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px" 
                                                 placeholder="blur" 
                                                 blurDataURL={blurDataURL}
                                                 className={cn(
-                                                    "transition-opacity duration-300 ease-in-out", 
+                                                    "object-contain transition-opacity duration-300 ease-in-out", 
                                                 )}
                                                 style={{
-                                                    display: 'block', 
-                                                    maxWidth: '100%',
-                                                    maxHeight: '100%', 
-                                                    width: 'auto',
-                                                    height: 'auto',
                                                     objectFit: 'contain',
                                                     objectPosition: 'center', 
-                                                    margin: 'auto', 
                                                 }}
                                                 onLoad={() => {
                                                     setLoadedIndices(prev => new Set(prev).add(index));
