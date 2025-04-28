@@ -5,7 +5,17 @@ import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { FaLocationPin, FaMapPin, FaMapLocationDot, FaShuffle, FaApple } from "react-icons/fa6";
-import { FaFilter, FaChessQueen, FaComment, FaMobileAlt, FaTabletAlt, FaDesktop, FaCircle } from "react-icons/fa";
+import {
+  FaFilter,
+  FaChessQueen, 
+  FaComment,
+  FaChevronDown,
+  FaChevronUp,
+  FaMobileAlt, 
+  FaTabletAlt, 
+  FaDesktop, 
+  FaCircle
+} from "react-icons/fa";
 import {
   IoHome,
   IoHomeOutline,
@@ -42,6 +52,8 @@ export const Icons = {
   sun: LuSunMedium,
   moon: LuMoon,
   home: IoHome,
+  chevronDown: FaChevronDown,
+  chevronUp: FaChevronUp,
   alertCircle: IoAlertCircle,
   mobile: FaMobileAlt,
   tablet: FaTabletAlt,
