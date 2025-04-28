@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { memo } from "react";
 import { Place } from "@/lib/types";
 import { PlaceCard } from "@/components/PlaceCard";
 import {
@@ -13,7 +13,12 @@ import {
 
 interface CardCarouselProps {
     items: Place[];
+    currentIndex: number;
+    total: number;
+    onSwipe: (direction: 'next' | 'prev') => void;
 }
+
+const MemoPlaceCard = memo(PlaceCard);
 
 export const CardCarousel: React.FC<CardCarouselProps> = ({ items }) => {
     return (
@@ -26,8 +31,6 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({ items }) => {
                         </CarouselItem>
                     ))}
                 </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
             </Carousel>
         </div>
     );

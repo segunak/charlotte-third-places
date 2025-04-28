@@ -1,18 +1,34 @@
+export const dynamic = "force-static";
+
 import Link from "next/link";
 import { getPlaces } from '@/lib/data-services';
 import { Separator } from "@/components/ui/separator";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { ResponsivePlaceCards } from "@/components/ResponsivePlaceCards";
-import { PlaceListWithFilters } from "@/components/PlaceListWithFilters";
+import nextDynamic from "next/dynamic";
 
-// See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamic
-export const dynamic = "force-static"
+const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePlaceCards").then(mod => mod.ResponsivePlaceCards), {
+  ssr: false,
+  loading: () => (
+    <div className="h-64 flex items-center justify-center">
+      <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+    </div>
+  )
+});
+const PlaceListWithFilters = nextDynamic(() => import("@/components/PlaceListWithFilters").then(mod => mod.PlaceListWithFilters), {
+  ssr: false,
+  loading: () => (
+    <div className="h-64 flex items-center justify-center">
+      <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+    </div>
+  )
+});
 
 export default async function HomePage() {
   const places = await getPlaces();
   // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease such people, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
   const excludedNames = ["Starbucks", "Panera"];
+  // Use a regular variable for filtered places
   const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
   return (

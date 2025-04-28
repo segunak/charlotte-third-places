@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from 'react';
-import Image from 'next/image';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
@@ -12,19 +11,20 @@ import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { cn } from "@/lib/utils";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-    CarouselPrevious,
-    CarouselNext,
-    type CarouselApi,
-} from "@/components/ui/carousel";
-import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
 } from "@/components/ui/tooltip";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselPrevious,
+    CarouselNext,
+} from "@/components/ui/carousel";
+import Image from "next/image";
+import type { CarouselApi } from "@/components/ui/carousel";
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place }: { place: Place }) {
@@ -100,7 +100,8 @@ export function PlacePageClient({ place }: { place: Place }) {
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
     const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`;
-    const photos = place.photos || [];
+    const photos = useMemo(() => place.photos || [], [place.photos]);
+    const optimizedPhotos = useMemo(() => photos.map(photo => optimizeGooglePhotoUrl(photo, 1024)), [photos]);
     const hasPhotos = photos.length > 0;
 
     return (
@@ -142,31 +143,30 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 className="w-full h-[300px] md:h-[500px]" // Increased height for better visibility
                             >
                                 <CarouselContent className="h-full">
-                                    {photos.map((photo, idx) => (
+                                    {optimizedPhotos.map((photo, idx) => (
                                         <CarouselItem key={idx} className="h-full bg-black/5 flex items-center justify-center">
-                                            <div className="relative w-full h-[300px] md:h-[500px] flex items-center justify-center"> {/* Added flex centering */}
-                                                {loadingSlide === idx && (
+                                            <div className="relative w-full h-[300px] md:h-[500px] flex items-center justify-center">
+                                                {!loadedIndices.has(idx) && (
                                                     <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/10">
                                                         <Icons.loader className="h-10 w-10 animate-spin text-primary" />
                                                     </div>
                                                 )}
                                                 <Image
-                                                    src={optimizeGooglePhotoUrl(photo, 1024)}
+                                                    src={photo}
                                                     alt={`${place.name} photo ${idx + 1} of ${photos.length}`}
                                                     fill
                                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                                                    className={cn(
-                                                        "!relative !h-auto !w-auto max-h-[300px] md:max-h-[500px] max-w-full object-contain transition-opacity duration-300",
-                                                        loadingSlide === idx ? 'opacity-0' : 'opacity-100'
-                                                    )}
+                                                    className="!relative !h-auto !w-auto max-h-[300px] md:max-h-[500px] max-w-full object-contain transition-opacity duration-300"
+                                                    style={{
+                                                        opacity: loadedIndices.has(idx) ? 1 : 0,
+                                                        transition: "opacity 0.3s",
+                                                    }}
                                                     priority={idx === 0}
                                                     onLoad={() => {
-                                                        setLoadedIndices((prev) => new Set<number>(prev).add(idx));
-                                                        if (loadingSlide === idx) setLoadingSlide(null);
+                                                        setLoadedIndices((prev) => new Set(prev).add(idx));
                                                     }}
-                                                    onError={(e) => {
-                                                        if (loadingSlide === idx) setLoadingSlide(null);
-                                                        console.error(`Failed to load image ${idx + 1}: ${optimizeGooglePhotoUrl(photo)}`, e);
+                                                    onError={() => {
+                                                        setLoadedIndices((prev) => new Set(prev).add(idx));
                                                     }}
                                                     unoptimized={photo.includes('googleusercontent.com')}
                                                     referrerPolicy="no-referrer"

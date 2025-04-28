@@ -1,10 +1,16 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { DataTable } from "@/components/DataTable";
 import { FilterDialog } from "@/components/FilterDialog";
 import { FilterSidebar } from "@/components/FilterSidebar";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, Suspense } from "react";
+import dynamic from "next/dynamic";
+
+// Dynamically import DataTable for lazy loading
+const DataTable = dynamic<{ rowData: Place[] }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
+    ssr: false,
+    loading: () => <div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>,
+});
 
 interface PlaceListWithFiltersProps {
     places: Place[];
@@ -57,7 +63,9 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
-                    <DataTable rowData={places} />
+                    <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
+                        <DataTable rowData={places} />
+                    </Suspense>
                 </section>
 
                 {/* Mobile Filter Dialog */}

@@ -46,9 +46,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         return `${window.location.origin}/places/${place.recordId}`;
     }, [place]);
 
-    // If place is null, we can skip rendering or show fallback
-    if (!place) {
-        return null; // Or return an empty Dialog if you prefer
+    if (!open || !place) {
+        return null;
     }
 
     const website = place.website?.trim();

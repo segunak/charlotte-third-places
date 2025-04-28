@@ -37,9 +37,9 @@ export const InfiniteMovingCards = ({
 
     const speedMapping = useMemo(
         () => ({
-            fast: "500s",
-            normal: "1000s",
-            slow: "3000s",
+            fast: "20s",
+            normal: "40s",
+            slow: "80s",
         }),
         []
     );
