@@ -318,14 +318,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             })}
                         </CarouselContent>
 
-                        {/* Navigation controls - only show if multiple visible photos */}
+                        {/* Navigation controls - only show if multiple visible photos and not on mobile */}
                         {visibleSlideCount > 1 && (
                             <>
                                 <CarouselPrevious
                                     variant="ghost"
                                     size="icon" 
                                     className={cn(
-                                        "absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
+                                        "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50", 
                                         "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black" 
                                     )}
@@ -335,7 +335,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                     variant="ghost"
                                     size="icon" 
                                     className={cn(
-                                        "absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
+                                        "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50", 
                                         "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black" 
                                     )}
