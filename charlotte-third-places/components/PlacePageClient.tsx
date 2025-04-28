@@ -25,10 +25,35 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import type { CarouselApi } from "@/components/ui/carousel";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
+
+// --- Utility functions from PhotosModal ---
+const cleanPhotoUrl = (url: string): string => {
+    if (!url) return '';
+    if (typeof url === 'string') {
+        const urlMatch = url.match(/(https?:\/\/[^\s,\[\]'"]+)/);
+        if (urlMatch && urlMatch[0]) {
+            return urlMatch[0];
+        }
+    }
+    return url;
+};
+
+const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
+    const cleanedUrl = cleanPhotoUrl(url);
+    if (!cleanedUrl || !cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
+    // Adjust regex to handle URLs that might already have size parameters
+    return cleanedUrl.replace(/=w\d+(?:-h\d+)?/, `=w${width}`);
+};
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place }: { place: Place }) {
     const id = place.recordId;
+    // --- Move these up so they're available for hooks ---
+    const photos = useMemo(() => place.photos || [], [place.photos]);
+    const hasPhotos = photos.length > 0;
+    const optimizedPhotos = useMemo(() => photos.map(photo => optimizeGooglePhotoUrl(photo, 1024)), [photos]);
     // --- State and Refs from PhotosModal (adapted) ---
     const [api, setApi] = useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -36,6 +61,8 @@ export function PlacePageClient({ place }: { place: Place }) {
     const [loadingSlide, setLoadingSlide] = useState<number | null>(null); // Start loading slide 0 if photos exist
     const [loadedIndices, setLoadedIndices] = useState<Set<number>>(new Set<number>());
     const [showThumbnails, setShowThumbnails] = useState(true); // Keep thumbnails visible by default on page
+    const isMobile = useIsMobile();
+    const [showInfoDrawer, setShowInfoDrawer] = useState(false);
 
     // --- Effects from PhotosModal (adapted) ---
     useEffect(() => {
@@ -75,34 +102,23 @@ export function PlacePageClient({ place }: { place: Place }) {
         };
     }, [api, loadedIndices, loadingSlide]);
 
-
-    // --- Utility functions from PhotosModal ---
-    const cleanPhotoUrl = (url: string): string => {
-        if (!url) return '';
-        if (typeof url === 'string') {
-            const urlMatch = url.match(/(https?:\/\/[^\s,\[\]'"]+)/);
-            if (urlMatch && urlMatch[0]) {
-                return urlMatch[0];
+    // Ensure the first image is marked as loaded if already loaded
+    useEffect(() => {
+        if (hasPhotos && loadedIndices.size === 0 && typeof window !== 'undefined') {
+            const img = document.querySelector(
+                'img[alt="' + place.name + ' photo 1 of ' + photos.length + '"]'
+            ) as HTMLImageElement | null;
+            if (img && img.complete) {
+                setLoadedIndices((prev) => new Set(prev).add(0));
             }
         }
-        return url;
-    };
-
-    const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
-        const cleanedUrl = cleanPhotoUrl(url);
-        if (!cleanedUrl || !cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-        // Adjust regex to handle URLs that might already have size parameters
-        return cleanedUrl.replace(/=w\d+(?:-h\d+)?/, `=w${width}`);
-    };
+    }, [hasPhotos, loadedIndices, place.name, photos.length]);
 
     // --- Component Props ---
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
     const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`;
-    const photos = useMemo(() => place.photos || [], [place.photos]);
-    const optimizedPhotos = useMemo(() => photos.map(photo => optimizeGooglePhotoUrl(photo, 1024)), [photos]);
-    const hasPhotos = photos.length > 0;
 
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl"> {/* Increased max-width */}
@@ -117,25 +133,52 @@ export function PlacePageClient({ place }: { place: Place }) {
                 {hasPhotos && (
                     <div className="w-full space-y-4">
                         <div className="relative bg-muted rounded-lg overflow-hidden border border-gray-300 shadow-md">
-                            {/* Photo source disclaimer */}
+                            {/* Photo source disclaimer - match PhotosModal UX */}
                             <div className="absolute top-2 right-2 z-10">
-                                <TooltipProvider>
-                                    <Tooltip>
-                                        <TooltipTrigger asChild>
-                                            <Button
-                                                variant="ghost"
-                                                size="sm"
-                                                className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
-                                            >
-                                                <Icons.infoCircle className="h-4 w-4" />
-                                                <span className="sr-only">Photo Source Information</span>
-                                            </Button>
-                                        </TooltipTrigger>
-                                        <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
-                                            Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
-                                        </TooltipContent>
-                                    </Tooltip>
-                                </TooltipProvider>
+                                {isMobile ? (
+                                    <>
+                                        <Button
+                                            variant="ghost"
+                                            size="sm"
+                                            className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
+                                            onClick={() => setShowInfoDrawer(true)}
+                                            aria-label="Photo Source Information"
+                                        >
+                                            <Icons.infoCircle className="h-4 w-4" />
+                                        </Button>
+                                        <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
+                                            <DrawerContent className="bg-black/95 text-white">
+                                                <DrawerHeader>
+                                                    <DrawerTitle>Photo Source Information</DrawerTitle>
+                                                    <DrawerDescription className="text-white/90">
+                                                        Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                                    </DrawerDescription>
+                                                    <DrawerClose asChild>
+                                                        <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
+                                                    </DrawerClose>
+                                                </DrawerHeader>
+                                            </DrawerContent>
+                                        </Drawer>
+                                    </>
+                                ) : (
+                                    <TooltipProvider>
+                                        <Tooltip>
+                                            <TooltipTrigger asChild>
+                                                <Button
+                                                    variant="ghost"
+                                                    size="sm"
+                                                    className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
+                                                    aria-label="Photo Source Information"
+                                                >
+                                                    <Icons.infoCircle className="h-4 w-4" />
+                                                </Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
+                                                Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    </TooltipProvider>
+                                )}
                             </div>
                             <Carousel
                                 setApi={setApi}

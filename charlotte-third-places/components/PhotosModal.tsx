@@ -45,19 +45,31 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
     const [loadedIndices, setLoadedIndices] = useState<Set<number>>(new Set<number>());
     const [failedIndices, setFailedIndices] = useState<Set<number>>(new Set<number>());
-    const [visibleSlideCount, setVisibleSlideCount] = useState(0);
     const [showThumbnails, setShowThumbnails] = useState(true);
     const dialogRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
+    const hasResetScrollRef = useRef(false);
 
     // Get photos array without filtering - move this to top level
     const photos = useMemo(() => (place?.photos ?? []), [place]);
     const totalPhotos = photos.length;
-    
-    // Define this at the top level to avoid conditional hooks
+
+    // Build a filtered array of visible photos and a mapping to their original indices
+    const visiblePhotoData = useMemo(() => {
+        const arr: { photo: string; originalIdx: number }[] = [];
+        photos.forEach((photo, idx) => {
+            if (!failedIndices.has(idx)) {
+                arr.push({ photo, originalIdx: idx });
+            }
+        });
+        return arr;
+    }, [photos, failedIndices]);
+    const visiblePhotos = visiblePhotoData.map((d) => d.photo);
+    const visibleToOriginalIdx = visiblePhotoData.map((d) => d.originalIdx);
+    const visibleSlideCount = visiblePhotos.length;
     const hasVisiblePhotos = visibleSlideCount > 0;
-    
+
     // Move all callback definitions to the top level
     // Escape key handler
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
@@ -70,13 +82,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     // Calculate the visible slide number (1-based for display)
     const getVisibleSlideNumber = useCallback((rawIndex: number): number => {
         if (!hasVisiblePhotos) return 0;
-        let visibleCount = 0;
-        for (let i = 0; i < totalPhotos; i++) {
-            if (i > rawIndex) break;
-            if (isSlideVisible(i)) visibleCount++;
-        }
-        return visibleCount;
-    }, [hasVisiblePhotos, totalPhotos, isSlideVisible]);
+        return visibleToOriginalIdx.indexOf(rawIndex) + 1;
+    }, [hasVisiblePhotos, visibleToOriginalIdx]);
 
     const visibleSlideNumber = useMemo(() => 
         getVisibleSlideNumber(currentSlide), 
@@ -108,51 +115,64 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     // Reset state when modal opens or place changes
     useEffect(() => {
         if (open && totalPhotos > 0) {
-            // Reset all state
             setFailedIndices(new Set<number>());
             setLoadedIndices(new Set<number>());
             setCurrentSlide(0);
-            setVisibleSlideCount(totalPhotos); // Start assuming all are visible
-            setShowThumbnails(true); // Default to showing thumbnails
-
-            // Ensure carousel is at the first slide when it initializes or photos change
-            if (api) {
-                // Use timeout to ensure API is ready after potential re-render
-                setTimeout(() => api.scrollTo(0, true), 0);
-            }
+            setShowThumbnails(true);
+            hasResetScrollRef.current = false; // Reset the ref on open
         } else if (!open) {
-            // Reset when closing
             setLoadedIndices(new Set<number>());
             setFailedIndices(new Set<number>());
-            setCurrentSlide(0); // Reset slide index
+            setCurrentSlide(0);
         }
-    }, [open, totalPhotos, api]); // Depend on totalPhotos and api
+    }, [open, totalPhotos]); // Remove api from deps
+
+    // Only scroll to first slide once per open event
+    useEffect(() => {
+        if (open && api && totalPhotos > 0 && !hasResetScrollRef.current) {
+            hasResetScrollRef.current = true;
+            api.scrollTo(0, true);
+        }
+    }, [open, api, totalPhotos]);
 
     // Handle carousel selection and update loaded state
     useEffect(() => {
         if (!api) return;
-
+        
         const onSelect = () => {
             const selected = api.selectedScrollSnap();
-            setCurrentSlide(selected);
-            // Mark the selected slide as loaded (attempted)
-            setLoadedIndices(prev => new Set(prev).add(selected));
+            // Only update state if the value has actually changed
+            // This prevents unnecessary re-renders
+            if (selected !== currentSlide) {
+                setCurrentSlide(selected);
+                
+                // Mark the original index as loaded only if we have valid data
+                if (selected >= 0 && selected < visibleToOriginalIdx.length) {
+                    const origIdx = visibleToOriginalIdx[selected];
+                    setLoadedIndices(prev => {
+                        // Only update if not already in the set
+                        if (!prev.has(origIdx)) {
+                            const updated = new Set(prev);
+                            updated.add(origIdx);
+                            return updated;
+                        }
+                        return prev;
+                    });
+                }
+            }
         };
-
+        
         api.on("select", onSelect);
-        // Initialize current slide state
-        onSelect();
-
+        
+        // Initial selection - only call if needed
+        if (api.selectedScrollSnap() !== currentSlide) {
+            onSelect();
+        }
+        
         return () => {
             api.off("select", onSelect);
         };
-    }, [api]);
-
-    // Update visible slide count when failed indices change
-    useEffect(() => {
-        const newVisibleCount = totalPhotos - failedIndices.size;
-        setVisibleSlideCount(newVisibleCount > 0 ? newVisibleCount : 0);
-    }, [failedIndices, totalPhotos]);
+    }, [api, visibleToOriginalIdx]); // Remove currentSlide from dependencies to prevent loops
 
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
@@ -292,56 +312,46 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         className="w-full h-full"
                     >
                         <CarouselContent className="h-full">
-                            {photos.map((photo, index) => {
-                                const isVisible = isSlideVisible(index);
-                                
+                            {visiblePhotos.map((photo, idx) => {
+                                const origIdx = visibleToOriginalIdx[idx];
                                 // Calculate priority without hooks
                                 let isPriority = false;
                                 if (!enableLoop) {
-                                    isPriority = index === currentSlide || index === currentSlide - 1 || index === currentSlide + 1;
+                                    isPriority = idx === currentSlide || idx === currentSlide - 1 || idx === currentSlide + 1;
                                 } else {
                                     // Handle looping indices
-                                    const prevIndex = (currentSlide - 1 + totalPhotos) % totalPhotos;
-                                    const nextIndex = (currentSlide + 1) % totalPhotos;
-                                    isPriority = index === currentSlide || index === prevIndex || index === nextIndex;
+                                    const prevIndex = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
+                                    const nextIndex = (currentSlide + 1) % visiblePhotos.length;
+                                    isPriority = idx === currentSlide || idx === prevIndex || idx === nextIndex;
                                 }
-
-                                // Skip rendering failed items entirely to avoid layout shifts
-                                if (!isVisible) {
-                                    return (
-                                        <CarouselItem key={`failed-${index}`} className="hidden" />
-                                    );
-                                }
-
                                 return (
                                     <CarouselItem
-                                        key={`photo-${index}`}
-                                        className="flex items-center justify-center h-full p-1 md:p-2" 
+                                        key={`photo-${origIdx}`}
+                                        className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        {/* Container to center the image with fixed height for desktop */}
                                         <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
                                             <Image
                                                 src={optimizeGooglePhotoUrl(photo)}
-                                                alt={`${place.name} photo ${getVisibleSlideNumber(index)}`} 
+                                                alt={`${place.name} photo ${getVisibleSlideNumber(origIdx)}`}
                                                 fill
-                                                quality={80} 
-                                                priority={isPriority} 
-                                                sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px" 
-                                                placeholder="blur" 
+                                                quality={80}
+                                                priority={isPriority}
+                                                sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
+                                                placeholder="blur"
                                                 blurDataURL={blurDataURL}
                                                 className={cn(
-                                                    "object-contain transition-opacity duration-300 ease-in-out", 
+                                                    "object-contain transition-opacity duration-300 ease-in-out",
                                                 )}
                                                 style={{
                                                     objectFit: 'contain',
-                                                    objectPosition: 'center', 
+                                                    objectPosition: 'center',
                                                 }}
                                                 onLoad={() => {
-                                                    setLoadedIndices(prev => new Set(prev).add(index));
+                                                    setLoadedIndices(prev => new Set(prev).add(origIdx));
                                                 }}
-                                                onError={() => handleImageError(index, photo)}
-                                                unoptimized={photo.includes('googleusercontent.com')} 
-                                                referrerPolicy="no-referrer" 
+                                                onError={() => handleImageError(origIdx, photo)}
+                                                unoptimized={photo.includes('googleusercontent.com')}
+                                                referrerPolicy="no-referrer"
                                             />
                                         </div>
                                     </CarouselItem>
@@ -432,23 +442,20 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             {showThumbnails && ( 
                                 <ScrollArea className="h-full w-full whitespace-nowrap rounded-md">
                                     <div className="inline-flex gap-2 py-2">
-                                        {photos.map((photo, index) => {
-                                            // Skip rendering failed thumbnails
-                                            if (!isSlideVisible(index)) return null;
-
-                                            const thumbVisibleNumber = getVisibleSlideNumber(index);
-
+                                        {visiblePhotos.map((photo, idx) => {
+                                            const origIdx = visibleToOriginalIdx[idx];
+                                            const thumbVisibleNumber = idx + 1;
                                             return (
                                                 <button
-                                                    key={`thumb-${index}`}
+                                                    key={`thumb-${origIdx}`}
                                                     className={cn(
                                                         "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative flex-shrink-0", 
                                                         "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50", 
-                                                        index === currentSlide
+                                                        idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50"
                                                             : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
                                                     )}
-                                                    onClick={() => api?.scrollTo(index)}
+                                                    onClick={() => api?.scrollTo(idx)}
                                                     aria-label={`Go to photo ${thumbVisibleNumber}`}
                                                 >
                                                     <Image
@@ -461,7 +468,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                         blurDataURL={blurDataURL}
                                                         referrerPolicy="no-referrer"
                                                         unoptimized={photo.includes('googleusercontent.com')}
-                                                        onError={() => handleImageError(index, photo)} 
+                                                        onError={() => handleImageError(origIdx, photo)} 
                                                     />
                                                 </button>
                                             );
