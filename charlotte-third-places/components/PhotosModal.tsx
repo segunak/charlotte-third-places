@@ -479,13 +479,21 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             )}
                         </div>
 
-                        {/* Always show counter if thumbnails *could* be shown */}
-                        <div className={cn(
-                            "text-white/70 text-center text-xs transition-opacity duration-300",
-                            showThumbnails ? "opacity-100 pb-1" : "opacity-0" 
-                        )}>
-                            {hasVisiblePhotos ? visibleSlideNumber : 0} / {visibleSlideCount}
-                        </div>
+                        {/* Remove inaccurate counter at the bottom under thumbnails */}
+                    </div>
+                )}
+
+                {/* Add a Close button at the bottom on mobile for easier access */}
+                {isMobile && (
+                    <div className="flex-shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
+                        <Button
+                            variant="default"
+                            size="lg"
+                            className="w-1/4 bg-primary max-w-xs text-base"
+                            onClick={onClose}
+                        >
+                            Close
+                        </Button>
                     </div>
                 )}
             </DialogContent>
