@@ -10,35 +10,6 @@
   @apply hover:text-accent hover:underline hover:underline-offset-4;
 }
 
-@layer base {
-  :root {
-    /* Light teal highlight in light mode */
-    --highlight-bg: hsl(190, 70%, 85%);
-    --card-font-family: "IBM Plex Sans", sans-serif;
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    /* Dark teal highlight in dark mode */
-    --highlight-bg: hsl(190, 70%, 20%);
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -110,6 +81,19 @@
     --radius: 1.25rem;                         /* Increased border-radius for softer UI */
 
     --apple-icon-color: #1d1d1f;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Light teal highlight in light mode */
+    --highlight-bg: hsl(190, 70%, 85%);
+    --card-font-family: "IBM Plex Sans", sans-serif;
   }
 
   /* 
@@ -148,5 +132,17 @@
     --radius: 1.25rem;
 
     --apple-icon-color: #ffffff;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Dark teal highlight in dark mode */
+    --highlight-bg: hsl(190, 70%, 20%);
   }
 }

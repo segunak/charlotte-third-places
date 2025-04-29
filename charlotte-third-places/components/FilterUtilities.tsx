@@ -1,9 +1,9 @@
 "use client";
 
+import React, { useContext, useCallback, useMemo, useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useContext, useCallback, useMemo } from "react";
 import {
     Select,
     SelectContent,
@@ -15,6 +15,8 @@ import {
 } from "@/components/ui/select";
 import { FilterContext } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 
 const maxWidth = "max-w-full";
 
@@ -42,8 +44,26 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, config }: { field: keyof typeof filters; config: any }) {
+export function FilterSelect({ field, config, resetSignal }: { field: keyof typeof filters; config: any; resetSignal?: number }) {
     const { filters, setFilters, getDistinctValues, handleDropdownStateChange } = useContext(FilterContext);
+    const isMobile = useIsMobile();
+    const [pickerOpen, setPickerOpen] = useState(false);
+
+    useEffect(() => {
+        setPickerOpen(false);
+    }, [resetSignal]);
+    
+    // Store the previous value to detect changes from reset operations
+    const prevValueRef = useRef(config.value);
+
+    // Handle picker select manually to control closing behavior
+    const handlePickerSelect = (value: string) => {
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [field]: { ...prevFilters[field], value },
+        }));
+        setPickerOpen(false); // Only close here, not on external reset
+    };
 
     const handleFilterChange = useCallback(
         (value: string) => {
@@ -54,6 +74,40 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
         },
         [field, setFilters]
     );
+
+    // Use effect to track value changes due to reset
+    useEffect(() => {
+        // If the value changes to "all" but pickerOpen was true, it's likely a reset
+        // Don't close the parent dialog in this case
+        prevValueRef.current = config.value;
+    }, [config.value]);
+
+    // Always use modal picker for 'name', 'type', and 'neighborhood' fields on mobile
+    if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+        return (
+            <>
+                <Button
+                    variant={config.value === "all" ? "outline" : "default"}
+                    className="w-full justify-between"
+                    onClick={() => setPickerOpen(true)}
+                >
+                    {config.value === "all" ? config.placeholder : config.value}
+                </Button>
+                {/* Conditionally render the modal only when pickerOpen is true */}
+                {pickerOpen && (
+                    <SearchablePickerModal
+                        open={pickerOpen}
+                        onOpenChange={setPickerOpen}
+                        options={getDistinctValues(field)}
+                        value={config.value}
+                        label={config.label}
+                        placeholder={config.placeholder}
+                        onSelect={handlePickerSelect}
+                    />
+                )}
+            </>
+        );
+    }
 
     return (
         <div className={maxWidth}>
@@ -87,7 +141,11 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
 export function FilterResetButton() {
     const { setFilters, setQuickFilterText, setSortOption, dropdownOpen } = useContext(FilterContext);
 
-    const handleResetFilters = useCallback(() => {
+    const handleResetFilters = useCallback((e: React.MouseEvent) => {
+        // Prevent any event bubbling that might affect parent dialogs
+        e.preventDefault();
+        e.stopPropagation();
+        
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
             Object.keys(resetFilters).forEach((key) => {
@@ -97,12 +155,15 @@ export function FilterResetButton() {
         });
         setQuickFilterText("");
         setSortOption(DEFAULT_SORT_OPTION);
-
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
         <div className={maxWidth}>
-            <Button className="w-full disabled:opacity-100" onClick={handleResetFilters} disabled={dropdownOpen}>
+            <Button 
+                className="w-full disabled:opacity-100" 
+                onClick={handleResetFilters}
+                disabled={dropdownOpen}
+            >
                 Reset
             </Button>
         </div>

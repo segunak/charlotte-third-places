@@ -1,9 +1,9 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { FilterDialog } from "@/components/FilterDialog";
 import { FilterSidebar } from "@/components/FilterSidebar";
-import React, { useEffect, useRef, useState, Suspense } from "react";
+import { FilterDrawer } from "@/components/FilterDrawer";
+import React, { useEffect, useRef, useState, Suspense, useCallback } from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import DataTable for lazy loading
@@ -17,31 +17,25 @@ interface PlaceListWithFiltersProps {
 }
 
 export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
-    const dataTableRef = useRef<HTMLDivElement>(null);
-    const [isDataTableInView, setIsDataTableInView] = useState(false);
+    // Custom hook for intersection observer
+    function useInView<T extends HTMLElement = HTMLElement>(options?: IntersectionObserverInit) {
+        const ref = useRef<T | null>(null);
+        const [inView, setInView] = useState(true); // Default to true for SSR/first render
 
-    useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                setIsDataTableInView(entry.isIntersecting);
-            },
-            {
-                root: null,
-                threshold: 0.007,
-            }
-        );
+        useEffect(() => {
+            if (!ref.current) return;
+            const observer = new window.IntersectionObserver(
+                ([entry]) => setInView(entry.isIntersecting),
+                options
+            );
+            observer.observe(ref.current);
+            return () => observer.disconnect();
+        }, [options]);
 
-        const currentDataTableRef = dataTableRef.current;
-        if (currentDataTableRef) {
-            observer.observe(currentDataTableRef);
-        }
+        return [ref, inView] as const;
+    }
 
-        return () => {
-            if (currentDataTableRef) {
-                observer.unobserve(currentDataTableRef);
-            }
-        };
-    }, []);
+    const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
@@ -68,15 +62,14 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     </Suspense>
                 </section>
 
-                {/* Mobile Filter Dialog */}
+                {/* Place FilterDrawer here, wrapped for mobile only */}
                 <div className="sm:hidden">
-                    {isDataTableInView && (
-                        <FilterDialog
-                            showSort={true}
-                            className="fixed right-3 z-50"
-                            style={{ bottom: "5rem" }}
-                        />
-                    )}
+                    <FilterDrawer
+                        showSort={true}
+                        className="fixed right-3 z-50"
+                        style={{ bottom: '5rem' }}
+                        showButton={isDataTableInView}
+                    />
                 </div>
             </div>
 
