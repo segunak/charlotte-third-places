@@ -1,6 +1,6 @@
 "use client";
 
-import { useContext, useState } from "react";
+import React, { useState, useContext, useCallback } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { Button } from "@/components/ui/button";
@@ -26,12 +26,26 @@ export function FilterDrawer({
   showButton?: boolean;
 }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-  const { filters, dropdownOpen } = useContext(FilterContext);
+  const { filters } = useContext(FilterContext);
   const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
+  // Track open state for all selects
+  const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
+  const handleDropdownStateChange = useCallback((open: boolean) => {
+    setAnyDropdownOpen(open);
+  }, []);
+  const triggerRef = React.useRef<HTMLButtonElement>(null);
+
+  // Callback to focus the trigger after modal closes
+  const focusDrawerTrigger = useCallback(() => {
+    if (triggerRef.current) {
+      triggerRef.current.focus();
+    }
+  }, []);
 
   return (
     <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
       <Button
+        ref={triggerRef}
         variant="outline"
         size="icon"
         className={`fixed bottom-20 right-3 z-50 bg-primary rounded-full shadow-lg transition-opacity duration-200
@@ -59,20 +73,20 @@ export function FilterDrawer({
           {showSort && (
             <div className="space-y-4">
               <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
-              <SortSelect className="font-normal text-muted-foreground" />
+              <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
             </div>
           )}
           <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
           <div className="space-y-4">
             {Object.entries(filters).map(([field, config]) => (
-              <FilterSelect key={field} field={field as keyof typeof filters} config={config} />
+              <FilterSelect key={field} field={field as keyof typeof filters} config={config} onDropdownOpenChange={handleDropdownStateChange} onModalClose={focusDrawerTrigger} />
             ))}
           </div>
         </div>
         <DrawerFooter>
-          <FilterResetButton />
+          <FilterResetButton disabled={anyDropdownOpen} />
           <DrawerClose asChild>
-            <Button variant="outline" className="w-full disabled:opacity-100" disabled={dropdownOpen}>
+            <Button variant="outline" className="w-full disabled:opacity-100">
               Close
             </Button>
           </DrawerClose>

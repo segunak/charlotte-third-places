@@ -16,9 +16,6 @@ interface FilterContextType {
     getDistinctValues: (field: keyof FilterConfig) => string[];
     sortOption: SortOption;
     setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
-    dropdownOpen: boolean;
-    setDropdownOpen: React.Dispatch<React.SetStateAction<boolean>>;
-    handleDropdownStateChange: (isOpen: boolean) => void;
 }
 
 export const FilterContext = createContext<FilterContextType>({
@@ -29,9 +26,6 @@ export const FilterContext = createContext<FilterContextType>({
     getDistinctValues: () => [],
     sortOption: DEFAULT_SORT_OPTION,
     setSortOption: () => { },
-    dropdownOpen: false,
-    setDropdownOpen: () => { },
-    handleDropdownStateChange: () => { },
 });
 
 export const FilterProvider = ({
@@ -43,20 +37,8 @@ export const FilterProvider = ({
 }) => {
     // Basic states
     const [quickFilterText, setQuickFilterText] = useState<string>("");
-    const [dropdownOpen, setDropdownOpen] = useState(false);
     const [filters, setFilters] = useState<FilterConfig>(DEFAULT_FILTER_CONFIG);
     const [sortOption, setSortOption] = useState<SortOption>(DEFAULT_SORT_OPTION);
-
-    // A small delay when closing a dropdown
-    const handleDropdownStateChange = useCallback((isOpen: boolean) => {
-        if (!isOpen) {
-            setTimeout(() => {
-                setDropdownOpen(isOpen);
-            }, 100);
-        } else {
-            setDropdownOpen(isOpen);
-        }
-    }, []);
 
     // A function that returns distinct values for each filter field,
     // respecting `predefinedOrder` if present, otherwise sorting alphabetically.
@@ -103,9 +85,6 @@ export const FilterProvider = ({
                 getDistinctValues,
                 sortOption,
                 setSortOption,
-                dropdownOpen,
-                setDropdownOpen,
-                handleDropdownStateChange,
             }}
         >
             {children}

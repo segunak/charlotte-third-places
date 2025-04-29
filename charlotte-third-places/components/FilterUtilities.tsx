@@ -44,15 +44,30 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, config, resetSignal }: { field: keyof typeof filters; config: any; resetSignal?: number }) {
-    const { filters, setFilters, getDistinctValues, handleDropdownStateChange } = useContext(FilterContext);
+export function FilterSelect({ field, config, resetSignal, onDropdownOpenChange, onModalClose }: { field: keyof typeof filters; config: any; resetSignal?: number; onDropdownOpenChange?: (open: boolean) => void; onModalClose?: () => void }) {
+    const { filters, setFilters, getDistinctValues } = useContext(FilterContext);
     const isMobile = useIsMobile();
     const [pickerOpen, setPickerOpen] = useState(false);
+    const [selectOpen, setSelectOpen] = useState(false);
 
+    // Always call hooks in the same order
     useEffect(() => {
         setPickerOpen(false);
     }, [resetSignal]);
-    
+
+    // Notify parent of open state (mobile or desktop)
+    useEffect(() => {
+        if (onDropdownOpenChange) {
+            if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+                onDropdownOpenChange(pickerOpen);
+            } else {
+                onDropdownOpenChange(selectOpen);
+            }
+        }
+        // Only depend on relevant open state
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
+
     // Store the previous value to detect changes from reset operations
     const prevValueRef = useRef(config.value);
 
@@ -77,8 +92,6 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
 
     // Use effect to track value changes due to reset
     useEffect(() => {
-        // If the value changes to "all" but pickerOpen was true, it's likely a reset
-        // Don't close the parent dialog in this case
         prevValueRef.current = config.value;
     }, [config.value]);
 
@@ -102,7 +115,12 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
                 {pickerOpen && (
                     <SearchablePickerModal
                         open={pickerOpen}
-                        onOpenChange={setPickerOpen}
+                        onOpenChange={(open) => {
+                            setPickerOpen(open);
+                            if (!open && onModalClose) {
+                                setTimeout(onModalClose, 10);
+                            }
+                        }}
                         options={getDistinctValues(field)}
                         value={config.value}
                         label={config.label}
@@ -120,7 +138,7 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
                 key={field}
                 value={config.value}
                 onValueChange={handleFilterChange}
-                onOpenChange={(isOpen) => handleDropdownStateChange(isOpen)}
+                onOpenChange={setSelectOpen}
             >
                 <SelectTrigger 
                 className={cn(
@@ -134,7 +152,7 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
                         {config.value === "all" ? config.placeholder : config.value}
                     </SelectValue>
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent position="popper">
                     <SelectGroup>
                         <SelectLabel>{config.label}</SelectLabel>
                         <SelectItem value="all">All</SelectItem>
@@ -150,8 +168,8 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
     );
 }
 
-export function FilterResetButton() {
-    const { setFilters, setQuickFilterText, setSortOption, dropdownOpen } = useContext(FilterContext);
+export function FilterResetButton({ disabled }: { disabled?: boolean }) {
+    const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
 
     const handleResetFilters = useCallback((e: React.MouseEvent) => {
         // Prevent any event bubbling that might affect parent dialogs
@@ -172,9 +190,9 @@ export function FilterResetButton() {
     return (
         <div className={maxWidth}>
             <Button 
-                className="w-full disabled:opacity-100" 
+                className="w-full"
                 onClick={handleResetFilters}
-                disabled={dropdownOpen}
+                disabled={disabled}
             >
                 Reset
             </Button>
@@ -182,8 +200,12 @@ export function FilterResetButton() {
     );
 }
 
-export function SortSelect({ className }: { className?: string }) {
+export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useContext(FilterContext);
+    const [selectOpen, setSelectOpen] = useState(false);
+    useEffect(() => {
+        if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
+    }, [selectOpen, onDropdownOpenChange]);
 
     const handleSortChange = useCallback(
         (value: string) => {
@@ -218,6 +240,7 @@ export function SortSelect({ className }: { className?: string }) {
             <Select
                 value={`${sortOption.field}-${sortOption.direction}`}
                 onValueChange={handleSortChange}
+                onOpenChange={setSelectOpen}
             >
                 <SelectTrigger className="w-full hover:bg-primary/90 hover:text-accent-foreground">
                     <SelectValue placeholder={placeholderText}>
