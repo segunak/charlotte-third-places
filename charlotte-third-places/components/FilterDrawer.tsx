@@ -53,13 +53,13 @@ export function FilterDrawer({
       </Button>
       <DrawerContent>
         <DrawerHeader>
-          <DrawerTitle>Sort & Filter</DrawerTitle>
+          <DrawerTitle></DrawerTitle>
         </DrawerHeader>
         <div className="space-y-4 px-4 pb-4">
           {showSort && (
             <div className="space-y-4">
               <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
-              <SortSelect />
+              <SortSelect className="font-normal text-muted-foreground" />
             </div>
           )}
           <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>

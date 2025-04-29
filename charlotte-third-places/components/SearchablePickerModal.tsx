@@ -50,7 +50,6 @@ export function SearchablePickerModal({
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
         <Input
-          autoFocus
           placeholder={`Search ${label}...`}
           value={search}
           onChange={(e) => setSearch(e.target.value)}

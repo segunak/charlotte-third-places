@@ -172,7 +172,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
         return () => {
             api.off("select", onSelect);
         };
-    }, [api, visibleToOriginalIdx]); // Remove currentSlide from dependencies to prevent loops
+    }, [api, visibleToOriginalIdx, currentSlide]);
 
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
@@ -486,12 +486,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 {/* Add a Close button at the bottom on mobile for easier access */}
                 {isMobile && (
                     <div className="flex-shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
-                        <Button
-                            variant="default"
-                            size="lg"
-                            className="w-1/4 bg-primary max-w-xs text-base"
-                            onClick={onClose}
-                        >
+                        <Button onClick={onClose}>
                             Close
                         </Button>
                     </div>

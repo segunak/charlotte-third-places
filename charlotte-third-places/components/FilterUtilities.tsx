@@ -88,7 +88,7 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
             <>
                 <Button
                     variant={config.value === "all" ? "outline" : "default"}
-                    className="w-full justify-between"
+                    className="w-full justify-between text-muted-foreground font-normal"
                     onClick={() => setPickerOpen(true)}
                 >
                     {config.value === "all" ? config.placeholder : config.value}
@@ -208,7 +208,7 @@ export function SortSelect({ className }: { className?: string }) {
                 onValueChange={handleSortChange}
             >
                 <SelectTrigger className="w-full">
-                    <SelectValue placeholder={placeholderText} >
+                    <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending
                                 ? "Name (A-Z)"
