@@ -348,19 +348,6 @@ const frequentlyAskedQuestions = [
                 </p>
             </div>
         )
-    },
-    {
-        title: "Where do the photos for each place come from?",
-        content: (
-            <div className="space-y-3">
-                <p>
-                    All photos come directly from Google Maps. I don't upload or select them—Google does. If you see a weird or unflattering image, that's on Google, not me.
-                </p>
-                <p>
-                    Want a photo removed? Contact me via the <Link className="custom-link" href="/contribute">Contribute</Link> page and I'll take care of it.
-                </p>
-            </div>
-        )
     }
 ];
 

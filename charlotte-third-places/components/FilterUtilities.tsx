@@ -219,7 +219,7 @@ export function SortSelect({ className }: { className?: string }) {
                 value={`${sortOption.field}-${sortOption.direction}`}
                 onValueChange={handleSortChange}
             >
-                <SelectTrigger className="w-full">
+                <SelectTrigger className="w-full hover:bg-primary/90 hover:text-accent-foreground">
                     <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending
