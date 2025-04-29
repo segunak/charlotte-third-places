@@ -1,9 +1,8 @@
-import { useState, useMemo, useEffect, useCallback } from "react";
+import { useState, useMemo, useEffect, useCallback, useRef } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/Icons";
 
 interface SearchablePickerModalProps {
   open: boolean;
@@ -25,10 +24,14 @@ export function SearchablePickerModal({
   onSelect,
 }: SearchablePickerModalProps) {
   const [search, setSearch] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
   
   useEffect(() => {
     if (open) {
       setSearch("");
+    }
+    if (open && inputRef.current) {
+      inputRef.current.blur();
     }
   }, [open]);
   
@@ -51,9 +54,11 @@ export function SearchablePickerModal({
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
         <Input
+          ref={inputRef}
           placeholder={`Search ${label}...`}
           value={search}
           tabIndex={-1}
+          autoFocus={false}
           onChange={(e) => setSearch(e.target.value)}
           className="mb-3 w-full"
         />
