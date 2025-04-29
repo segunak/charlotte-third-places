@@ -57,7 +57,6 @@ export function SearchablePickerModal({
           ref={inputRef}
           placeholder={`Search ${label}...`}
           value={search}
-          tabIndex={-1}
           autoFocus={false}
           onChange={(e) => setSearch(e.target.value)}
           className="mb-3 w-full"

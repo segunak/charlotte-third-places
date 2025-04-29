@@ -92,7 +92,7 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
                         "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
                         config.value === "all"
                             ? "text-muted-foreground font-normal"
-                            : "font-bold bg-accent"
+                            : "font-bold"
                     )}
                     onClick={() => setPickerOpen(true)}
                 >
@@ -123,12 +123,11 @@ export function FilterSelect({ field, config, resetSignal }: { field: keyof type
                 onOpenChange={(isOpen) => handleDropdownStateChange(isOpen)}
             >
                 <SelectTrigger 
-                //className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}
                 className={cn(
                     "w-full hover:bg-primary/90 hover:text-accent-foreground",
                     config.value === "all"
                         ? "text-muted-foreground font-normal"
-                        : "font-bold bg-accent text-primary-foreground"
+                        : "font-bold bg-primary text-primary-foreground"
                 )}
                 >
                     <SelectValue placeholder={config.placeholder}>
