@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react';
 import Image from 'next/image';
 import { Place } from "@/lib/types";
 import { cn } from "@/lib/utils";
@@ -39,6 +40,49 @@ interface PhotosModalProps {
 
 // Simple gray placeholder
 const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
+
+// --- Utility functions that don't need to be memoized ---
+const cleanPhotoUrl = (url: string): string => {
+    if (typeof url === 'string' && url.startsWith('http')) {
+        return url.trim();
+    }
+    return '';
+};
+
+const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
+    const cleanedUrl = cleanPhotoUrl(url);
+
+    // Early returns for invalid URLs or special cases
+    if (!cleanedUrl) return '';
+    // Assume non-google URLs are already optimized or don't support this
+    if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
+    // Skip known problematic proxy URLs
+    if (cleanedUrl.includes('/gps-proxy/')) return cleanedUrl;
+
+    // Check if already has desired width parameter (more robust check)
+    const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
+    if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
+
+    // Try replacing existing size parameters (e.g., =s1600, =w800-h600)
+    const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
+    if (sizeRegex.test(cleanedUrl)) {
+        return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
+    }
+
+    // If URL has other parameters but no size, append (less common)
+    if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
+         // Avoid appending if it might break other params; return as is
+         return cleanedUrl;
+    }
+
+    // If no parameters, append the width parameter
+    if (!cleanedUrl.includes('=')) {
+        return cleanedUrl + `=w${width}-k-no`;
+    }
+
+    // Default fallback: return cleaned URL if unsure
+    return cleanedUrl;
+};
 
 export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     const [api, setApi] = useState<CarouselApi>();
@@ -174,54 +218,86 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
         };
     }, [api, visibleToOriginalIdx, currentSlide]);
 
+    // Helper: get indices to render (current, prev, next)
+    const getActiveIndices = useCallback((): Set<number> => {
+        if (!hasVisiblePhotos) return new Set();
+        const prev = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
+        const next = (currentSlide + 1) % visiblePhotos.length;
+        return new Set([prev, currentSlide, next]);
+    }, [currentSlide, visiblePhotos.length, hasVisiblePhotos]);
+
+    // Preload next/prev images
+    useEffect(() => {
+        if (!hasVisiblePhotos) return;
+        const preload = (idx: number) => {
+            const photo = visiblePhotos[idx];
+            if (!photo) return;
+            const img = new window.Image();
+            img.src = optimizeGooglePhotoUrl(photo, 800);
+        };
+        const indices = getActiveIndices();
+        indices.forEach(idx => {
+            if (idx !== currentSlide) preload(idx);
+        });
+    }, [currentSlide, visiblePhotos, getActiveIndices, hasVisiblePhotos]);
+
+    // Memoized CarouselItem to avoid unnecessary re-renders
+    const MemoCarouselItem = useMemo(() => {
+        const Comp = React.memo(({ idx, origIdx, photo }: { idx: number, origIdx: number, photo: string }) => {
+            const activeIndices = getActiveIndices();
+            const isActive = activeIndices.has(idx);
+            const quality = isActive ? 80 : 40;
+            const width = isActive ? 1280 : 400;
+            let isPriority = false;
+            if (isActive) isPriority = true;
+            return (
+                <CarouselItem
+                    key={`photo-${origIdx}`}
+                    className="flex items-center justify-center h-full p-1 md:p-2"
+                >
+                    <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
+                        {isActive ? (
+                            <Image
+                                src={optimizeGooglePhotoUrl(photo, width)}
+                                alt={`${place?.name ?? ''} photo ${getVisibleSlideNumber(origIdx)}`}
+                                fill
+                                quality={quality}
+                                priority={isPriority}
+                                sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
+                                placeholder="blur"
+                                blurDataURL={blurDataURL}
+                                className={cn(
+                                    "object-contain transition-opacity duration-300 ease-in-out",
+                                )}
+                                style={{
+                                    objectFit: 'contain',
+                                    objectPosition: 'center',
+                                }}
+                                onLoad={() => {
+                                    setLoadedIndices(prev => new Set(prev).add(origIdx));
+                                }}
+                                onError={() => handleImageError(origIdx, photo)}
+                                unoptimized={photo.includes('googleusercontent.com')}
+                                referrerPolicy="no-referrer"
+                            />
+                        ) : (
+                            <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
+                                <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 17l6-6 4 4 8-8"/></svg>
+                            </div>
+                        )}
+                    </div>
+                </CarouselItem>
+            );
+        });
+        Comp.displayName = 'MemoCarouselItem';
+        return Comp;
+    }, [getActiveIndices, handleImageError, place, getVisibleSlideNumber]);
+
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
 
     // Determine if loop should be enabled - moved from hook to render time calculation
     const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
-
-    // --- Utility functions that don't need to be memoized ---
-    const cleanPhotoUrl = (url: string): string => {
-        if (typeof url === 'string' && url.startsWith('http')) {
-            return url.trim();
-        }
-        return '';
-    };
-
-    const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
-        const cleanedUrl = cleanPhotoUrl(url);
-
-        // Early returns for invalid URLs or special cases
-        if (!cleanedUrl) return '';
-        // Assume non-google URLs are already optimized or don't support this
-        if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-        // Skip known problematic proxy URLs
-        if (cleanedUrl.includes('/gps-proxy/')) return cleanedUrl;
-
-        // Check if already has desired width parameter (more robust check)
-        const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
-        if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
-
-        // Try replacing existing size parameters (e.g., =s1600, =w800-h600)
-        const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
-        if (sizeRegex.test(cleanedUrl)) {
-            return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
-        }
-
-        // If URL has other parameters but no size, append (less common)
-        if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
-             // Avoid appending if it might break other params; return as is
-             return cleanedUrl;
-        }
-
-        // If no parameters, append the width parameter
-        if (!cleanedUrl.includes('=')) {
-            return cleanedUrl + `=w${width}-k-no`;
-        }
-
-        // Default fallback: return cleaned URL if unsure
-        return cleanedUrl;
-    };
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -314,47 +390,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         <CarouselContent className="h-full">
                             {visiblePhotos.map((photo, idx) => {
                                 const origIdx = visibleToOriginalIdx[idx];
-                                // Calculate priority without hooks
-                                let isPriority = false;
-                                if (!enableLoop) {
-                                    isPriority = idx === currentSlide || idx === currentSlide - 1 || idx === currentSlide + 1;
-                                } else {
-                                    // Handle looping indices
-                                    const prevIndex = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
-                                    const nextIndex = (currentSlide + 1) % visiblePhotos.length;
-                                    isPriority = idx === currentSlide || idx === prevIndex || idx === nextIndex;
-                                }
                                 return (
-                                    <CarouselItem
-                                        key={`photo-${origIdx}`}
-                                        className="flex items-center justify-center h-full p-1 md:p-2"
-                                    >
-                                        <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
-                                            <Image
-                                                src={optimizeGooglePhotoUrl(photo)}
-                                                alt={`${place.name} photo ${getVisibleSlideNumber(origIdx)}`}
-                                                fill
-                                                quality={80}
-                                                priority={isPriority}
-                                                sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
-                                                placeholder="blur"
-                                                blurDataURL={blurDataURL}
-                                                className={cn(
-                                                    "object-contain transition-opacity duration-300 ease-in-out",
-                                                )}
-                                                style={{
-                                                    objectFit: 'contain',
-                                                    objectPosition: 'center',
-                                                }}
-                                                onLoad={() => {
-                                                    setLoadedIndices(prev => new Set(prev).add(origIdx));
-                                                }}
-                                                onError={() => handleImageError(origIdx, photo)}
-                                                unoptimized={photo.includes('googleusercontent.com')}
-                                                referrerPolicy="no-referrer"
-                                            />
-                                        </div>
-                                    </CarouselItem>
+                                    <MemoCarouselItem key={`photo-${origIdx}`} idx={idx} origIdx={origIdx} photo={photo} />
                                 );
                             })}
                         </CarouselContent>
