@@ -219,8 +219,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     }, [api, visibleToOriginalIdx, currentSlide]);
 
     // Helper: get indices to render (current, prev, next)
-    const getActiveIndices = useCallback((): Set<number> => {
-        if (!hasVisiblePhotos) return new Set();
+    const activeIndices = useMemo(() => {
+        if (!hasVisiblePhotos) return new Set<number>();
         const prev = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
         const next = (currentSlide + 1) % visiblePhotos.length;
         return new Set([prev, currentSlide, next]);
@@ -235,63 +235,11 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
             const img = new window.Image();
             img.src = optimizeGooglePhotoUrl(photo, 800);
         };
-        const indices = getActiveIndices();
+        const indices = activeIndices;
         indices.forEach(idx => {
             if (idx !== currentSlide) preload(idx);
         });
-    }, [currentSlide, visiblePhotos, getActiveIndices, hasVisiblePhotos]);
-
-    // Memoized CarouselItem to avoid unnecessary re-renders
-    const MemoCarouselItem = useMemo(() => {
-        const Comp = React.memo(({ idx, origIdx, photo }: { idx: number, origIdx: number, photo: string }) => {
-            const activeIndices = getActiveIndices();
-            const isActive = activeIndices.has(idx);
-            const quality = isActive ? 80 : 40;
-            const width = isActive ? 1280 : 400;
-            let isPriority = false;
-            if (isActive) isPriority = true;
-            return (
-                <CarouselItem
-                    key={`photo-${origIdx}`}
-                    className="flex items-center justify-center h-full p-1 md:p-2"
-                >
-                    <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
-                        {isActive ? (
-                            <Image
-                                src={optimizeGooglePhotoUrl(photo, width)}
-                                alt={`${place?.name ?? ''} photo ${getVisibleSlideNumber(origIdx)}`}
-                                fill
-                                quality={quality}
-                                priority={isPriority}
-                                sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
-                                placeholder="blur"
-                                blurDataURL={blurDataURL}
-                                className={cn(
-                                    "object-contain transition-opacity duration-300 ease-in-out",
-                                )}
-                                style={{
-                                    objectFit: 'contain',
-                                    objectPosition: 'center',
-                                }}
-                                onLoad={() => {
-                                    setLoadedIndices(prev => new Set(prev).add(origIdx));
-                                }}
-                                onError={() => handleImageError(origIdx, photo)}
-                                unoptimized={photo.includes('googleusercontent.com')}
-                                referrerPolicy="no-referrer"
-                            />
-                        ) : (
-                            <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
-                                <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 17l6-6 4 4 8-8"/></svg>
-                            </div>
-                        )}
-                    </div>
-                </CarouselItem>
-            );
-        });
-        Comp.displayName = 'MemoCarouselItem';
-        return Comp;
-    }, [getActiveIndices, handleImageError, place, getVisibleSlideNumber]);
+    }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);
 
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
@@ -390,8 +338,48 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                         <CarouselContent className="h-full">
                             {visiblePhotos.map((photo, idx) => {
                                 const origIdx = visibleToOriginalIdx[idx];
+                                const isActive = activeIndices.has(idx);
+                                const quality = isActive ? 80 : 40;
+                                const width = isActive ? 1280 : 400;
+                                let isPriority = false;
+                                if (isActive) isPriority = true;
                                 return (
-                                    <MemoCarouselItem key={`photo-${origIdx}`} idx={idx} origIdx={origIdx} photo={photo} />
+                                    <CarouselItem
+                                        key={`photo-${origIdx}`}
+                                        className="flex items-center justify-center h-full p-1 md:p-2"
+                                    >
+                                        <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
+                                            {isActive ? (
+                                                <Image
+                                                    src={optimizeGooglePhotoUrl(photo, width)}
+                                                    alt={`${place?.name ?? ''} photo ${getVisibleSlideNumber(origIdx)}`}
+                                                    fill
+                                                    quality={quality}
+                                                    priority={isPriority}
+                                                    sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
+                                                    placeholder="blur"
+                                                    blurDataURL={blurDataURL}
+                                                    className={cn(
+                                                        "object-contain transition-opacity duration-300 ease-in-out",
+                                                    )}
+                                                    style={{
+                                                        objectFit: 'contain',
+                                                        objectPosition: 'center',
+                                                    }}
+                                                    onLoad={() => {
+                                                        setLoadedIndices(prev => new Set(prev).add(origIdx));
+                                                    }}
+                                                    onError={() => handleImageError(origIdx, photo)}
+                                                    unoptimized={photo.includes('googleusercontent.com')}
+                                                    referrerPolicy="no-referrer"
+                                                />
+                                            ) : (
+                                                <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
+                                                    <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 17l6-6 4 4 8-8"/></svg>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </CarouselItem>
                                 );
                             })}
                         </CarouselContent>
