@@ -47,11 +47,13 @@ export function SearchablePickerModal({
       <DialogContent
         className="sm:max-w-md rounded-lg bg-background p-6 pt-4 w-full max-w-full overflow-hidden"
         style={{ maxHeight: '90vh' }}
+        onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
         <Input
           placeholder={`Search ${label}...`}
           value={search}
+          tabIndex={-1}
           onChange={(e) => setSearch(e.target.value)}
           className="mb-3 w-full"
         />

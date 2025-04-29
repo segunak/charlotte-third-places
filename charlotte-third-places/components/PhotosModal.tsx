@@ -123,17 +123,6 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     // Helper to check if a slide is visible (not failed)
     const isSlideVisible = useCallback((index: number) => !failedIndices.has(index), [failedIndices]);
 
-    // Calculate the visible slide number (1-based for display)
-    const getVisibleSlideNumber = useCallback((rawIndex: number): number => {
-        if (!hasVisiblePhotos) return 0;
-        return visibleToOriginalIdx.indexOf(rawIndex) + 1;
-    }, [hasVisiblePhotos, visibleToOriginalIdx]);
-
-    const visibleSlideNumber = useMemo(() => 
-        getVisibleSlideNumber(currentSlide), 
-        [currentSlide, getVisibleSlideNumber]
-    );
-
     // Function to handle image loading errors
     const handleImageError = useCallback((index: number, photoUrl: string) => {
         console.error(`Failed to load image ${index + 1}: ${photoUrl}`);
@@ -266,7 +255,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
                     <div className="flex items-center gap-2 min-w-0"> 
                         <div className="text-white font-semibold truncate"> 
-                            {place.name} - Photo {hasVisiblePhotos ? visibleSlideNumber : 0} of {visibleSlideCount}
+                            {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
                         </div>
                         {isMobile ? (
                             <>
@@ -352,7 +341,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                             {isActive ? (
                                                 <Image
                                                     src={optimizeGooglePhotoUrl(photo, width)}
-                                                    alt={`${place?.name ?? ''} photo ${getVisibleSlideNumber(origIdx)}`}
+                                                    alt={`${place?.name ?? ''} photo ${currentSlide + 1}`}
                                                     fill
                                                     quality={quality}
                                                     priority={isPriority}
