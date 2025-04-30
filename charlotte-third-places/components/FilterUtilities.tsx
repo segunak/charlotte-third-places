@@ -153,7 +153,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         {value === "all" ? placeholder : value}
                     </SelectValue>
                 </SelectTrigger>
-                <SelectContent position="popper">
+                <SelectContent position="popper" side="top">
                     <SelectGroup>
                         <SelectLabel>{label}</SelectLabel>
                         <SelectItem value="all">All</SelectItem>

@@ -92,7 +92,19 @@ export function FilterDrawer({
             ))}
           </div>
         </div>
-        <DrawerFooter>
+        <DrawerFooter style={{ position: 'relative' }}>
+          {anyDropdownOpen && (
+            <div
+              style={{
+                position: 'absolute',
+                inset: 0,
+                zIndex: 10,
+                background: 'transparent',
+                pointerEvents: 'auto',
+              }}
+              aria-hidden="true"
+            />
+          )}
           <FilterResetButton disabled={anyDropdownOpen} />
           <DrawerClose asChild>
             <Button variant="outline" className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
