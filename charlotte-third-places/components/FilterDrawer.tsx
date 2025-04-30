@@ -66,6 +66,19 @@ export function FilterDrawer({
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
       <DrawerContent>
+        {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
+        {anyDropdownOpen && (
+          <div
+            style={{
+              position: 'fixed',
+              inset: 0,
+              zIndex: 40,
+              background: 'transparent',
+              pointerEvents: 'auto',
+            }}
+            aria-hidden="true"
+          />
+        )}
         <DrawerHeader>
           <DrawerTitle></DrawerTitle>
         </DrawerHeader>
