@@ -86,7 +86,7 @@ export function FilterDrawer({
         <DrawerFooter>
           <FilterResetButton disabled={anyDropdownOpen} />
           <DrawerClose asChild>
-            <Button variant="outline" className="w-full disabled:opacity-100">
+            <Button variant="outline" className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
               Close
             </Button>
           </DrawerClose>
