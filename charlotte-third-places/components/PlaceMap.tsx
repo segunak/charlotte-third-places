@@ -80,7 +80,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 neighborhood,
                 purchaseRequired,
                 parking,
-                freeWifi,
+                freeWiFi,
                 hasCinnamonRolls,
             } = filters;
 
@@ -101,7 +101,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 (size.value === "all" || place.size === size.value) &&
                 (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
                 (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
                 (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
             );
         });

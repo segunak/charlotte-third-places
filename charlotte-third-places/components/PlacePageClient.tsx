@@ -328,7 +328,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 <p><strong>Size:</strong> {place.size}</p>
                                 <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
                                 <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
-                                <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
+                                <p><strong>Free Wi-Fi:</strong> {place.freeWiFi}</p>
                                 <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
                                 <Separator />
                                 <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>

@@ -133,7 +133,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <strong>Parking:</strong> {place.parking.join(", ")}
                     </p>
                     <p>
-                        <strong>Free Wifi:</strong> {place.freeWifi}
+                        <strong>Free Wi-Fi:</strong> {place.freeWiFi}
                     </p>
                     <p>
                         <strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}

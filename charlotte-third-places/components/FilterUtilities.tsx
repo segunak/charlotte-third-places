@@ -85,10 +85,13 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     const handleFilterChange = useCallback(
         (newValue: string) => {
             setFilters((prevFilters) => {
-                const updatedFilterValue = { ...prevFilters[field], value: newValue };
+                // Defensive: Only update the intended field, never replace the whole object
+                if (!prevFilters[field]) return prevFilters;
+                // Defensive: Only allow string values
+                const safeValue = typeof newValue === "string" ? newValue : "all";
                 return {
                     ...prevFilters,
-                    [field]: updatedFilterValue,
+                    [field]: { ...prevFilters[field], value: safeValue },
                 };
             });
         },

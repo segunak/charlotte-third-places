@@ -60,7 +60,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     neighborhood,
                     purchaseRequired,
                     parking,
-                    freeWifi,
+                    freeWiFi,
                     hasCinnamonRolls,
                 } = filters;
 
@@ -74,7 +74,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
                     (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
                     (parking.value === "all" || (place.parking && place.parking.includes(parking.value))) &&
-                    (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                    (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
                     (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
                 );
             });
