@@ -94,6 +94,8 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     [field]: { ...prevFilters[field], value: safeValue },
                 };
             });
+            // Add a short delay before closing the select to prevent click-through
+            setTimeout(() => setSelectOpen(false), 50);
         },
         [field, setFilters]
     );
