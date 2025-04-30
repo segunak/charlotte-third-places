@@ -45,7 +45,7 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose }: {
+export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: {
     field: keyof FilterConfig;
     value: string;
     label: string;
@@ -54,6 +54,8 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     resetSignal?: number;
     onDropdownOpenChange?: (open: boolean) => void;
     onModalClose?: () => void;
+    isActivePopover?: boolean;
+    anyPopoverOpen?: boolean;
 }) {
     const { setFilters, getDistinctValues } = useContext(FilterContext);
     const isMobile = useIsMobile();
@@ -98,9 +100,14 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         [field, setFilters]
     );
 
+    // Only allow pointer events if this is the active popover or none are open
+    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
+        ? undefined
+        : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
+
     if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
         return (
-            <>
+            <div style={pointerEventsStyle}>
                 <Button
                     variant={value === "all" ? "outline" : "default"}
                     className={cn(
@@ -129,12 +136,12 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         onSelect={handlePickerSelect}
                     />
                 )}
-            </>
+            </div>
         );
     }
 
     return (
-        <div className={maxWidth}>
+        <div className={maxWidth} style={pointerEventsStyle}>
             <Select
                 key={field}
                 value={value}

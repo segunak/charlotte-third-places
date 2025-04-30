@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useContext, useCallback } from "react";
+import React, { useState, useContext, useCallback, useRef } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { Button } from "@/components/ui/button";
@@ -34,6 +34,12 @@ export function FilterDrawer({
     setAnyDropdownOpen(open);
   }, []);
   const triggerRef = React.useRef<HTMLButtonElement>(null);
+
+  // Track which select or modal is open
+  const [activePopover, setActivePopover] = useState<string | null>(null);
+
+  // Helper to generate a unique id for each filter select
+  const getPopoverId = (field: string) => `filter-select-${field}`;
 
   // Callback to focus the trigger after modal closes
   const focusDrawerTrigger = useCallback(() => {
@@ -99,8 +105,13 @@ export function FilterDrawer({
                 label={config.label}
                 placeholder={config.placeholder}
                 predefinedOrder={config.predefinedOrder}
-                onDropdownOpenChange={handleDropdownStateChange}
+                onDropdownOpenChange={(open: boolean) => {
+                  handleDropdownStateChange(open);
+                  setActivePopover(open ? getPopoverId(field) : null);
+                }}
                 onModalClose={focusDrawerTrigger}
+                isActivePopover={activePopover === getPopoverId(field)}
+                anyPopoverOpen={!!activePopover}
               />
             ))}
           </div>
