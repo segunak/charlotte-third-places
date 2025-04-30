@@ -9,7 +9,7 @@ export type Place = {
     address: string;
     purchaseRequired: string;
     parking: Array<string>;
-    freeWifi: string;
+    freeWiFi: string;
     hasCinnamonRolls: string;
     hasReviews: string;
     description: string;
@@ -61,7 +61,7 @@ export interface FilterConfig {
     neighborhood: FilterOption;
     purchaseRequired: FilterOption;
     parking: FilterOption;
-    freeWifi: FilterOption;
+    freeWiFi: FilterOption;
     hasCinnamonRolls: FilterOption;
 }
 
@@ -102,10 +102,10 @@ export const DEFAULT_FILTER_CONFIG: FilterConfig = {
         label: "Parking",
         predefinedOrder: [],
     },
-    freeWifi: {
+    freeWiFi: {
         value: "all",
-        placeholder: "Free Wifi",
-        label: "Free Wifi",
+        placeholder: "Free Wi-Fi",
+        label: "Free Wi-Fi",
         predefinedOrder: ["Yes", "No"],
     },
     hasCinnamonRolls: {

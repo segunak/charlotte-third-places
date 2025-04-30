@@ -147,7 +147,7 @@ interface PlaceCardProps {
 }
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
-    const { showPlaceModal } = useModalContext();
+    const { showPlaceModal, showPlacePhotos } = useModalContext();
 
     const description = useMemo(() =>
         place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
@@ -188,16 +188,32 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             {place?.neighborhood && <AttributeTag attribute={`${place.neighborhood} ${neighborhoodEmoji}`} />}
                         </span>
 
-                        <Button
-                            className="!font-bold"
-                            size="sm"
-                            onClick={(e) => {
-                                e.stopPropagation();
-                                showPlaceModal(place);
-                            }}
-                        >
-                            More Info
-                        </Button>
+                        <div className="flex space-x-2">
+                            <Button
+                                variant="default"
+                                size="icon"
+                                className="h-9 w-9 rounded-full"
+                                onClick={(e) => {
+                                    e.stopPropagation(); // Prevent click from bubbling to Card
+                                    showPlacePhotos(place, 'card'); // Specify origin as 'card'
+                                }}
+                                aria-label="View photos"
+                            >
+                                <Icons.camera className="h-5 w-5 text-primary-foreground" />
+                            </Button>
+                            <Button
+                                variant="default"
+                                size="icon"
+                                className="h-9 w-9 rounded-full"
+                                onClick={(e) => {
+                                    e.stopPropagation(); // Prevent click from bubbling to Card
+                                    showPlaceModal(place);
+                                }}
+                                aria-label="More information"
+                            >
+                                <Icons.infoCircle className="h-5 w-5 text-primary-foreground" />
+                            </Button>
+                        </div>
                     </span>
                 </span>
             </CardContent>

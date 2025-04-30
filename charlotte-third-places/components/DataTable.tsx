@@ -10,6 +10,7 @@ import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useRef, useState, useMemo, useEffect } from "react";
 import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
 import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
+import { FixedSizeList as List } from "react-window";
 
 ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
@@ -59,7 +60,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     neighborhood,
                     purchaseRequired,
                     parking,
-                    freeWifi,
+                    freeWiFi,
                     hasCinnamonRolls,
                 } = filters;
 
@@ -73,7 +74,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
                     (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
                     (parking.value === "all" || (place.parking && place.parking.includes(parking.value))) &&
-                    (freeWifi.value === "all" || place.freeWifi === freeWifi.value) &&
+                    (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
                     (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
                 );
             });
@@ -160,26 +161,39 @@ export function DataTable({ rowData }: DataTableProps) {
         }, []
     );
 
+    // Virtualized Row Renderer for react-window
+    const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
+        const { group } = filteredAndGroupedRowData[index];
+        return (
+            <div style={style}>
+                <div className="flex flex-wrap -mx-2">
+                    {group.map((place: any, idx: number) => (
+                        <div key={idx} className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4">
+                            <PlaceCard place={place} />
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    };
+
     return (
-        <div className="relative flex-1">
+        <div className="relative flex-1 w-full overflow-visible">
             {isLoading && (
                 <div className="mt-16 absolute inset-0 flex items-center justify-center bg-background z-10">
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                 </div>
             )}
-            <div className={`ag-theme-custom w-full ${isLoading ? "opacity-0" : ""}`}>
-                <AgGridReact
-                    ref={gridRef}
-                    rowData={filteredAndGroupedRowData}
-                    columnDefs={columnDefs}
-                    autoSizeStrategy={autoSizeStrategy}
-                    includeHiddenColumnsInQuickFilter={true}
-                    suppressMovableColumns={true}
-                    domLayout="autoHeight"
-                    getRowHeight={getRowHeight}
-                    isFullWidthRow={isFullWidthRow}
-                    fullWidthCellRenderer={fullWidthCellRenderer}
-                />
+            <div className={`ag-theme-custom w-full ${isLoading ? "opacity-0" : ""}`} style={{ overflow: "visible" }}>
+                <List
+                    height={filteredAndGroupedRowData.length * getRowHeight()}
+                    itemCount={filteredAndGroupedRowData.length}
+                    itemSize={getRowHeight()}
+                    width={"100%"}
+                    style={{ overflow: "visible" }}
+                >
+                    {Row}
+                </List>
             </div>
         </div>
     );

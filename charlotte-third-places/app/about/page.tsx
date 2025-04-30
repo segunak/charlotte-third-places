@@ -255,6 +255,99 @@ const frequentlyAskedQuestions = [
                 </p>
             </div>
         )
+    },
+    {
+        title: "Where do the photos for each place come from?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                    All photos come directly from the Google Maps page of the place. If you see a weird or unflattering image, that's on Google, not me!
+                </p>
+                <p>
+                    If you want a photo removed, contact me via the <Link className="custom-link" href="/contribute">Contribute</Link> page and I'll take care of it.
+                </p>
+            </div>
+        )
+    },
+    {
+        title: "How often is the data updated?",
+        content: (
+            <div className="space-y-3">
+                As needed, typically when new places are added or existing information changes. Thanks to <ResponsiveLink href="https://nextjs.org/docs/pages/building-your-application/data-fetching/incremental-static-regeneration">Incremental Static Regeneration</ResponsiveLink> from <ResponsiveLink href="https://nextjs.org/">Next.js</ResponsiveLink>, updates are handled efficiently. Since we're dealing with physical locations, the associated data doesn't change frequently. During updates, the system also checks if a place is still operational and removes any that have permanently closed.
+            </div>
+        )
+    },
+    {
+        title: "Can I submit places for addition to the site?",
+        content: (
+            <div className="space-y-3">
+                Absolutely! This site thrives on community input. Whether it's suggesting a new place, providing updates to existing ones, or just offering ideas for improvement, I'd love to hear from you. Use the <Link className="custom-link" href="/contribute">Contribute</Link> page to reach out.
+            </div>
+        )
+    },
+    {
+        title: "I submitted a place and haven't seen it added yet. What should I do?",
+        content: (
+            <div className="space-y-3">
+                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life, stuff, and <ResponsiveLink href="https://www.urbandictionary.com/define.php?term=stuff%20and%20thangs">thangs</ResponsiveLink>. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique.
+            </div>
+        )
+    },
+    {
+        title: "I see some information about a place that's wrong. How can I get it updated?",
+        content: (
+            <div className="space-y-3">
+                Mistakes happen! If you spot any incorrect details, head over to the <Link className="custom-link" href="/contribute">Contribute</Link> page to submit your corrections. I'll do my best to process corrections in a timely manner.
+            </div>
+        )
+    },
+    {
+        title: "Aren't parks considered third places? Why not list all parks in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                Good point, parks certainly are third places. They're not listed on this website because there's already a great directory of those provided by the Mecklenburg County Parks and Rec department. Check out their park locator tool <ResponsiveLink href="https://parkandrec.mecknc.gov/Places-to-Visit/Parks">here</ResponsiveLink>.
+            </div>
+        )
+    },
+    {
+        title: "Aren't malls considered third places? Why not list all malls in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                To start, I don't like malls. Just a personal thing. If you ever meet me, feel free to ask why. Also they're kind of <ResponsiveLink href="https://www.google.com/search?q=why+are+american+malls+dying">dying</ResponsiveLink> as an institution, with the <ResponsiveLink href="https://www.simon.com/mall/southpark">SouthPark mall</ResponsiveLink> being a notable exception. Furthermore, I don't think people need a custom website to find malls in Charlotte. If you're looking for a mall in the area, Google is a better resource than this website could ever be.
+            </div>
+        )
+    },
+    {
+        title: "Aren't breweries considered third places? Why not list all breweries in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm open to hearing all arguments and reasoning with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+            </div>
+        )
+    },
+    {
+        title: "Aren't Starbucks considered third places? Why not list all Starbucks in Charlotte?",
+        content: (
+            <div className="space-y-3">
+                Well, it turns out that not every Starbucks qualifies as a third place. Some of them are inside Harris Teeter's and malls and other businesses and don't have their own seating areas. They're quick stops, not places to hangout for a while. Others have seating space but it's small, or the vibes of the place just kind of suck, so they're not worth listing. Basically, I've taken to only listing "good" Starbucks, where "good" is in relation to how well its setup for staying a while. I'm more than willing to add a Starbucks to the site that someone validates is a proper third place. You can submit new ones via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+            </div>
+        )
+    },
+    {
+        title: "What about co-working spaces? Aren't those considered third places? Why aren't they listed on the site?",
+        content: (
+            <div className="space-y-3">
+                <p>
+                    I'll start by saying that the definition of a third place is inherently subjective. Each person must decide for themselves which spaces make them feel at home, welcome, relaxed, and part of a community outside of where they live, work, or go to school. That said, to me, co-working spaces don't qualify as third places because they're essentially "second places"—a dedicated space that people associate with work. The whole concept of a third place is that it's not home or work/school.
+                </p>
+                <p>
+                    Co-working spaces also don't meet the "little to no financial barrier to entry" standard often associated with third places. Most require a membership to enter. You can't just drop in to meet friends or get some work done without registering and paying a fee, which creates a significant barrier to entry. For these reasons, I don't consider co-working spaces as third places and don't list them on this site.
+                </p>
+                <p>
+                    Of course, you're welcome to disagree with me, and I'm always open to hearing opposing viewpoints. You can reach out to share your thoughts via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                </p>
+            </div>
+        )
     }
 ];
 

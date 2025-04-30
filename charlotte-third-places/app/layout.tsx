@@ -75,7 +75,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
+      <head>
+        <meta name="mobile-web-app-capable" content="yes" />
+      </head>
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
         className={cn(

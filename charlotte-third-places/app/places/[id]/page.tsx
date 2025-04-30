@@ -1,12 +1,6 @@
-import React from 'react';
 import { Place } from "@/lib/types";
-import { Icons } from "@/components/Icons";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { ShareButton } from "@/components/ShareButton";
-import { Card, CardContent } from "@/components/ui/card";
-import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { getPlaceById, getPlaces } from "@/lib/data-services";
+import { PlacePageClient } from "@/components/PlacePageClient"; // Import the new client component
 
 // See https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config#dynamicparams
 export const dynamicParams = true;
@@ -27,74 +21,18 @@ export async function generateStaticParams() {
     }));
 }
 
-// This is the page component for individual places. It is a dynamic route, 
-// meaning it is rendered based on the `id` parameter provided in the URL.
 export default async function PlacePage({ params: { id } }: { params: { id: string } }) {
     // Fetch the specific place by ID
     const place = await getPlaceById(id);
 
     // If no place is found with the given `id`, return a "Place not found" message.
-    if (!place) return <div>Place not found</div>;
+    // Consider using Next.js notFound() for better handling
+    if (!place) {
+        // import { notFound } from 'next/navigation';
+        // notFound();
+        return <div>Place not found</div>;
+    }
 
-    const website = place.website?.trim();
-    const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
-    const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
-    const shareUrl = `https://www.charlottethirdplaces.com/places/${place.recordId}`;
-
-    return (
-        <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full sm:max-w-4xl border border-gray-300 shadow-lg bg-background">
-            <h1 className="text-2xl sm:text-3xl font-bold text-center leading-tight border-b pb-3">
-                {place.name}
-            </h1>
-            <Card className="border border-gray-300 shadow-sm">
-                <CardContent className="mt-4">
-                    <div className="space-y-3">
-                        <div className="flex justify-center space-x-4">
-                            {googleMapsProfileURL && (
-                                <ResponsiveLink href={googleMapsProfileURL}>
-                                    <Button variant="outline">
-                                        <Icons.google className="h-6 w-6" />
-                                    </Button>
-                                </ResponsiveLink>
-                            )}
-                            {appleMapsProfileURL && (
-                                <ResponsiveLink href={appleMapsProfileURL}>
-                                    <Button variant="outline">
-                                        <Icons.apple className="h-6 w-6" />
-                                    </Button>
-                                </ResponsiveLink>
-                            )}
-                            {website && (
-                                <ResponsiveLink href={website}>
-                                    <Button variant="outline">
-                                        <Icons.globe className="h-7 w-7" />
-                                    </Button>
-                                </ResponsiveLink>
-                            )}
-                            <ShareButton
-                                placeName={place.name}
-                                url={shareUrl}
-                                variant="outline"
-                                displayType="icon"
-                            />
-                        </div>
-                        <Separator />
-                        <p><strong>Type:</strong> {place.type.join(", ")}</p>
-                        <p><strong>Address:</strong> {place.address}</p>
-                        <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
-                        <p><strong>Size:</strong> {place.size}</p>
-                        <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
-                        <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
-                        <p><strong>Free Wifi:</strong> {place.freeWifi}</p>
-                        <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
-                        <Separator />
-                        <p><strong>Description:</strong> {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}</p>
-                        <p><strong>Curator's Comments:</strong> {place.comments?.trim() || "None."}</p>
-                        <Separator />
-                        <p><strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.</p>
-                    </div>
-                </CardContent>
-            </Card>
-        </div >
-    );
+    // Pass the fetched place data to the client component
+    return <PlacePageClient place={place} />;
 }

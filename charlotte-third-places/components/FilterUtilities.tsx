@@ -1,9 +1,9 @@
 "use client";
 
+import React, { useContext, useCallback, useMemo, useState, useRef, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useContext, useCallback, useMemo } from "react";
 import {
     Select,
     SelectContent,
@@ -15,6 +15,9 @@ import {
 } from "@/components/ui/select";
 import { FilterContext } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { SearchablePickerModal } from "@/components/SearchablePickerModal";
+import type { FilterConfig } from "@/lib/types";
 
 const maxWidth = "max-w-full";
 
@@ -42,35 +45,124 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, config }: { field: keyof typeof filters; config: any }) {
-    const { filters, setFilters, getDistinctValues, handleDropdownStateChange } = useContext(FilterContext);
+export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: {
+    field: keyof FilterConfig;
+    value: string;
+    label: string;
+    placeholder: string;
+    predefinedOrder: string[];
+    resetSignal?: number;
+    onDropdownOpenChange?: (open: boolean) => void;
+    onModalClose?: () => void;
+    isActivePopover?: boolean;
+    anyPopoverOpen?: boolean;
+}) {
+    const { setFilters, getDistinctValues } = useContext(FilterContext);
+    const isMobile = useIsMobile();
+    const [pickerOpen, setPickerOpen] = useState(false);
+    const [selectOpen, setSelectOpen] = useState(false);
+
+    useEffect(() => {
+        setPickerOpen(false);
+    }, [resetSignal]);
+
+    useEffect(() => {
+        if (onDropdownOpenChange) {
+            if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+                onDropdownOpenChange(pickerOpen);
+            } else {
+                onDropdownOpenChange(selectOpen);
+            }
+        }
+    }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
+
+    const handlePickerSelect = (newValue: string) => {
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [field]: { ...prevFilters[field], value: newValue },
+        }));
+        setPickerOpen(false);
+    };
 
     const handleFilterChange = useCallback(
-        (value: string) => {
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [field]: { ...prevFilters[field], value },
-            }));
+        (newValue: string) => {
+            setFilters((prevFilters) => {
+                // Defensive: Only update the intended field, never replace the whole object
+                if (!prevFilters[field]) return prevFilters;
+                // Defensive: Only allow string values
+                const safeValue = typeof newValue === "string" ? newValue : "all";
+                return {
+                    ...prevFilters,
+                    [field]: { ...prevFilters[field], value: safeValue },
+                };
+            });
         },
         [field, setFilters]
     );
 
+    // Only allow pointer events if this is the active popover or none are open
+    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
+        ? undefined
+        : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
+
+    if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+        return (
+            <div style={pointerEventsStyle}>
+                <Button
+                    variant={value === "all" ? "outline" : "default"}
+                    className={cn(
+                        "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
+                        value === "all"
+                            ? "text-muted-foreground font-normal"
+                            : "font-bold"
+                    )}
+                    onClick={() => setPickerOpen(true)}
+                >
+                    {value === "all" ? placeholder : value}
+                </Button>
+                {pickerOpen && (
+                    <SearchablePickerModal
+                        open={pickerOpen}
+                        onOpenChange={(open) => {
+                            setPickerOpen(open);
+                            if (!open && onModalClose) {
+                                setTimeout(onModalClose, 10);
+                            }
+                        }}
+                        options={getDistinctValues(field)}
+                        value={value}
+                        label={label}
+                        placeholder={placeholder}
+                        onSelect={handlePickerSelect}
+                    />
+                )}
+            </div>
+        );
+    }
+
     return (
-        <div className={maxWidth}>
+        <div className={maxWidth} style={pointerEventsStyle}>
             <Select
                 key={field}
-                value={config.value}
+                value={value}
                 onValueChange={handleFilterChange}
-                onOpenChange={(isOpen) => handleDropdownStateChange(isOpen)}
+                onOpenChange={setSelectOpen}
             >
-                <SelectTrigger className={config.value === "all" ? "w-full text-muted-foreground" : "w-full"}>
-                    <SelectValue placeholder={config.placeholder}>
-                        {config.value === "all" ? config.placeholder : config.value}
+                <SelectTrigger
+                    className={cn(
+                        "w-full hover:bg-primary/90 hover:text-accent-foreground",
+                        value === "all"
+                            ? "text-muted-foreground font-normal"
+                            : "font-bold bg-primary text-primary-foreground"
+                    )}
+                >
+                    <SelectValue placeholder={placeholder}>
+                        {value === "all" ? placeholder : value}
                     </SelectValue>
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent position="popper" side="top">
                     <SelectGroup>
-                        <SelectLabel>{config.label}</SelectLabel>
+                        <SelectLabel>{label}</SelectLabel>
                         <SelectItem value="all">All</SelectItem>
                         {getDistinctValues(field).map((item: string) => (
                             <SelectItem key={item} value={item}>
@@ -84,10 +176,14 @@ export function FilterSelect({ field, config }: { field: keyof typeof filters; c
     );
 }
 
-export function FilterResetButton() {
-    const { setFilters, setQuickFilterText, setSortOption, dropdownOpen } = useContext(FilterContext);
+export function FilterResetButton({ disabled }: { disabled?: boolean }) {
+    const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
 
-    const handleResetFilters = useCallback(() => {
+    const handleResetFilters = useCallback((e: React.MouseEvent) => {
+        // Prevent any event bubbling that might affect parent dialogs
+        e.preventDefault();
+        e.stopPropagation();
+        
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
             Object.keys(resetFilters).forEach((key) => {
@@ -97,20 +193,27 @@ export function FilterResetButton() {
         });
         setQuickFilterText("");
         setSortOption(DEFAULT_SORT_OPTION);
-
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
         <div className={maxWidth}>
-            <Button className="w-full disabled:opacity-100" onClick={handleResetFilters} disabled={dropdownOpen}>
+            <Button 
+                className="w-full"
+                onClick={handleResetFilters}
+                disabled={disabled}
+            >
                 Reset
             </Button>
         </div>
     );
 }
 
-export function SortSelect({ className }: { className?: string }) {
+export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useContext(FilterContext);
+    const [selectOpen, setSelectOpen] = useState(false);
+    useEffect(() => {
+        if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
+    }, [selectOpen, onDropdownOpenChange]);
 
     const handleSortChange = useCallback(
         (value: string) => {
@@ -145,9 +248,10 @@ export function SortSelect({ className }: { className?: string }) {
             <Select
                 value={`${sortOption.field}-${sortOption.direction}`}
                 onValueChange={handleSortChange}
+                onOpenChange={setSelectOpen}
             >
-                <SelectTrigger className="w-full">
-                    <SelectValue placeholder={placeholderText} >
+                <SelectTrigger className="w-full hover:bg-primary/90 hover:text-accent-foreground">
+                    <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending
                                 ? "Name (A-Z)"

@@ -12,6 +12,7 @@ import {
     useMemo
 } from "react";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { useModalContext } from "@/contexts/ModalContext"; // Correct import
 import {
     Dialog,
     DialogContent,
@@ -19,12 +20,6 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipProvider,
-    TooltipTrigger,
-} from "@/components/ui/tooltip"
 
 interface PlaceModalProps {
     place: Place | null;
@@ -34,6 +29,7 @@ interface PlaceModalProps {
 
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
+    const { showPlacePhotos } = useModalContext(); // Use the correct hook and destructure showPlacePhotos
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -50,14 +46,14 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         return `${window.location.origin}/places/${place.recordId}`;
     }, [place]);
 
-    // If place is null, we can skip rendering or show fallback
-    if (!place) {
-        return null; // Or return an empty Dialog if you prefer
+    if (!open || !place) {
+        return null;
     }
 
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
+    const hasPhotos = place.photos && place.photos.length > 0;
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -80,68 +76,45 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 <div className="space-y-[0.6rem]">
                     <div className="flex justify-center space-x-4">
                         {googleMapsProfileURL && (
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        <ResponsiveLink href={googleMapsProfileURL}>
-                                            <Button variant="outline">
-                                                <Icons.google className="h-6 w-6" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Visit Google Maps Page</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+                            <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
+                                <Button variant="outline">
+                                    <Icons.google className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
                         )}
                         {appleMapsProfileURL && (
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        <ResponsiveLink href={appleMapsProfileURL}>
-                                            <Button variant="outline">
-                                                <Icons.apple className="h-6 w-6" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Visit Apple Maps Page</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+                            <ResponsiveLink href={appleMapsProfileURL} aria-label="Visit Apple Maps Page">
+                                <Button variant="outline">
+                                    <Icons.apple className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
                         )}
+
+                        {/* Add Camera Button if photos exist */} 
+                        {hasPhotos && (
+                            <Button 
+                                variant="outline"
+                                onClick={() => showPlacePhotos(place, 'modal')} // Specify origin as 'modal'
+                                aria-label="View photos"
+                            >
+                                <Icons.camera className="h-6 w-6 text-primary" />
+                            </Button>
+                        )}
+
                         {website && (
-                            <TooltipProvider>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        <ResponsiveLink href={website}>
-                                            <Button variant="outline">
-                                                <Icons.globe className="h-7 w-7" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>Visit Website</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
+                            <ResponsiveLink href={website} aria-label="Visit Website">
+                                <Button variant="outline">
+                                    <Icons.globe className="h-7 w-7" />
+                                </Button>
+                            </ResponsiveLink>
                         )}
-                        <TooltipProvider>
-                            <Tooltip>
-                                <TooltipTrigger>
-                                    <ShareButton
-                                        placeName={place.name}
-                                        url={shareUrl}
-                                        variant="outline"
-                                        displayType="icon"
-                                    />
-                                </TooltipTrigger>
-                                <TooltipContent>
-                                    <p>Share Place</p>
-                                </TooltipContent>
-                            </Tooltip>
-                        </TooltipProvider>
+                        <ShareButton
+                            placeName={place.name}
+                            url={shareUrl}
+                            variant="outline"
+                            displayType="icon"
+                            aria-label="Share Place"
+                        />
                     </div>
                     <Separator />
                     <p>
@@ -160,7 +133,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <strong>Parking:</strong> {place.parking.join(", ")}
                     </p>
                     <p>
-                        <strong>Free Wifi:</strong> {place.freeWifi}
+                        <strong>Free Wi-Fi:</strong> {place.freeWiFi}
                     </p>
                     <p>
                         <strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}

@@ -3,7 +3,7 @@ import * as React from "react";
 import type { Metadata } from 'next'
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
-import { FilterDialog } from '@/components/FilterDialog';
+import { FilterDrawer } from '@/components/FilterDrawer';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -52,7 +52,7 @@ export default async function MapPage() {
 
                 {/*On mobile, this provides a button in the lower right for filtering */}
                 <div className="sm:hidden">
-                    <FilterDialog showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+                    <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
                 </div>
 
                 {/*On desktop, this provides a dedicated sidebar for filtering */}
