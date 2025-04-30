@@ -17,6 +17,7 @@ import { FilterContext } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
+import type { FilterConfig } from "@/lib/types";
 
 const maxWidth = "max-w-full";
 
@@ -44,18 +45,25 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, config, resetSignal, onDropdownOpenChange, onModalClose }: { field: keyof typeof filters; config: any; resetSignal?: number; onDropdownOpenChange?: (open: boolean) => void; onModalClose?: () => void }) {
-    const { filters, setFilters, getDistinctValues } = useContext(FilterContext);
+export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose }: {
+    field: keyof FilterConfig;
+    value: string;
+    label: string;
+    placeholder: string;
+    predefinedOrder: string[];
+    resetSignal?: number;
+    onDropdownOpenChange?: (open: boolean) => void;
+    onModalClose?: () => void;
+}) {
+    const { setFilters, getDistinctValues } = useContext(FilterContext);
     const isMobile = useIsMobile();
     const [pickerOpen, setPickerOpen] = useState(false);
     const [selectOpen, setSelectOpen] = useState(false);
 
-    // Always call hooks in the same order
     useEffect(() => {
         setPickerOpen(false);
     }, [resetSignal]);
 
-    // Notify parent of open state (mobile or desktop)
     useEffect(() => {
         if (onDropdownOpenChange) {
             if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
@@ -64,54 +72,44 @@ export function FilterSelect({ field, config, resetSignal, onDropdownOpenChange,
                 onDropdownOpenChange(selectOpen);
             }
         }
-        // Only depend on relevant open state
-        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
 
-    // Store the previous value to detect changes from reset operations
-    const prevValueRef = useRef(config.value);
-
-    // Handle picker select manually to control closing behavior
-    const handlePickerSelect = (value: string) => {
+    const handlePickerSelect = (newValue: string) => {
         setFilters((prevFilters) => ({
             ...prevFilters,
-            [field]: { ...prevFilters[field], value },
+            [field]: { ...prevFilters[field], value: newValue },
         }));
-        setPickerOpen(false); // Only close here, not on external reset
+        setPickerOpen(false);
     };
 
     const handleFilterChange = useCallback(
-        (value: string) => {
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [field]: { ...prevFilters[field], value },
-            }));
+        (newValue: string) => {
+            setFilters((prevFilters) => {
+                const updatedFilterValue = { ...prevFilters[field], value: newValue };
+                return {
+                    ...prevFilters,
+                    [field]: updatedFilterValue,
+                };
+            });
         },
         [field, setFilters]
     );
 
-    // Use effect to track value changes due to reset
-    useEffect(() => {
-        prevValueRef.current = config.value;
-    }, [config.value]);
-
-    // Always use modal picker for 'name', 'type', and 'neighborhood' fields on mobile
     if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
         return (
             <>
                 <Button
-                    variant={config.value === "all" ? "outline" : "default"}
+                    variant={value === "all" ? "outline" : "default"}
                     className={cn(
                         "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
-                        config.value === "all"
+                        value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold"
                     )}
                     onClick={() => setPickerOpen(true)}
                 >
-                    {config.value === "all" ? config.placeholder : config.value}
+                    {value === "all" ? placeholder : value}
                 </Button>
-                {/* Conditionally render the modal only when pickerOpen is true */}
                 {pickerOpen && (
                     <SearchablePickerModal
                         open={pickerOpen}
@@ -122,9 +120,9 @@ export function FilterSelect({ field, config, resetSignal, onDropdownOpenChange,
                             }
                         }}
                         options={getDistinctValues(field)}
-                        value={config.value}
-                        label={config.label}
-                        placeholder={config.placeholder}
+                        value={value}
+                        label={label}
+                        placeholder={placeholder}
                         onSelect={handlePickerSelect}
                     />
                 )}
@@ -136,25 +134,25 @@ export function FilterSelect({ field, config, resetSignal, onDropdownOpenChange,
         <div className={maxWidth}>
             <Select
                 key={field}
-                value={config.value}
+                value={value}
                 onValueChange={handleFilterChange}
                 onOpenChange={setSelectOpen}
             >
-                <SelectTrigger 
-                className={cn(
-                    "w-full hover:bg-primary/90 hover:text-accent-foreground",
-                    config.value === "all"
-                        ? "text-muted-foreground font-normal"
-                        : "font-bold bg-primary text-primary-foreground"
-                )}
+                <SelectTrigger
+                    className={cn(
+                        "w-full hover:bg-primary/90 hover:text-accent-foreground",
+                        value === "all"
+                            ? "text-muted-foreground font-normal"
+                            : "font-bold bg-primary text-primary-foreground"
+                    )}
                 >
-                    <SelectValue placeholder={config.placeholder}>
-                        {config.value === "all" ? config.placeholder : config.value}
+                    <SelectValue placeholder={placeholder}>
+                        {value === "all" ? placeholder : value}
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent position="popper">
                     <SelectGroup>
-                        <SelectLabel>{config.label}</SelectLabel>
+                        <SelectLabel>{label}</SelectLabel>
                         <SelectItem value="all">All</SelectItem>
                         {getDistinctValues(field).map((item: string) => (
                             <SelectItem key={item} value={item}>

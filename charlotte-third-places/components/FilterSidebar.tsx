@@ -41,7 +41,10 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
                 <FilterSelect
                     key={field}
                     field={field as keyof typeof filters}
-                    config={config}
+                    value={config.value}
+                    label={config.label}
+                    placeholder={config.placeholder}
+                    predefinedOrder={config.predefinedOrder}
                     onDropdownOpenChange={handleDropdownStateChange}
                 />
             ))}

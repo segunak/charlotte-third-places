@@ -79,7 +79,16 @@ export function FilterDrawer({
           <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
           <div className="space-y-4">
             {Object.entries(filters).map(([field, config]) => (
-              <FilterSelect key={field} field={field as keyof typeof filters} config={config} onDropdownOpenChange={handleDropdownStateChange} onModalClose={focusDrawerTrigger} />
+              <FilterSelect
+                key={field}
+                field={field as keyof typeof filters}
+                value={config.value}
+                label={config.label}
+                placeholder={config.placeholder}
+                predefinedOrder={config.predefinedOrder}
+                onDropdownOpenChange={handleDropdownStateChange}
+                onModalClose={focusDrawerTrigger}
+              />
             ))}
           </div>
         </div>
