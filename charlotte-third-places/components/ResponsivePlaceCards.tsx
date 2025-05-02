@@ -40,8 +40,10 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             clearTimeout(shuffleTimeout.current);
         }
         shuffleTimeout.current = window.setTimeout(() => {
+            // Instead of always resetting to 0, keep the current index position
             setShuffledOrder(shuffleIndexes());
-            setCurrentIndex(0);
+            // Keep the same index so the user stays on the same position in the new shuffled stack
+            setCurrentIndex(idx => idx); 
         }, 0);
     }, [shuffleIndexes]);
 
@@ -68,11 +70,18 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         return [prev, curr, next].filter(idx => idx !== null).map(idx => places[idx!]);
     }, [shuffledOrder, currentIndex, places]);
 
-    // Handler for swipe (next/prev)
+    // Handler for swipe (next/prev) - now infinite/looping
     const handleSwipe = useCallback((direction: 'next' | 'prev') => {
         setCurrentIndex(idx => {
-            if (direction === 'next') return Math.min(idx + 1, shuffledOrder.length - 1);
-            if (direction === 'prev') return Math.max(idx - 1, 0);
+            if (shuffledOrder.length === 0) return 0;
+            if (direction === 'next') {
+                // Loop to first card if at end
+                return (idx + 1) % shuffledOrder.length;
+            }
+            if (direction === 'prev') {
+                // Loop to last card if at start
+                return (idx - 1 + shuffledOrder.length) % shuffledOrder.length;
+            }
             return idx;
         });
     }, [shuffledOrder.length]);
@@ -108,7 +117,13 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             </div>
 
             {/* Mobile Carousel (show all cards in shuffled order) */}
-            <div className="sm:hidden mb-16">
+            <div className="sm:hidden mb-16 relative">
+                {/* Swipe arrows affordance */}
+                <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
+                    <Icons.arrowLeft className="h-5 w-5 text-primary" />
+                    <span className="text-md font-bold text-primary">Swipe</span>
+                    <Icons.arrowRight className="h-5 w-5 text-primary" />
+                </div>
                 <CardCarousel
                     items={shuffledOrder.map(idx => places[idx])}
                     currentIndex={currentIndex}

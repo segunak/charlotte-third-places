@@ -27,7 +27,7 @@ const PlaceListWithFilters = nextDynamic(() => import("@/components/PlaceListWit
 export default async function HomePage() {
   const places = await getPlaces();
   // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease such people, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
-  const excludedNames =  ["Starbucks", "Panera"];
+  const excludedNames = ["Starbucks", "Panera"];
   // Use a regular variable for filtered places
   const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
@@ -53,15 +53,8 @@ export default async function HomePage() {
           <span className="hidden sm:inline">Feed</span>
         </div>
         <p className="text-pretty">
-          {/* Shown on mobile only */}
-          <span className="inline sm:hidden">
-            <span className="font-bold text-primary">Swipe left</span> to explore various places.
-          </span>{" "}
-
-          {/* Always visible text */}
-          <span className="font-bold text">Click any card</span> for more info about a place. If you're feeling adventurous,{" "}
-          <span className="font-bold text-primary">click the shuffle button</span>{" "}
-
+          Click any card for more info about a place. If you're feeling adventurous, click the{" "}
+          <span className="font-bold text-primary">shuffle button</span>{" "}
           {/* Shown on mobile only */}
           <span className="inline sm:hidden">for a random place!</span>
           {/* Shown on desktop only */}
