@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState, useContext, useCallback, useRef } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
-import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
-import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
+import { Button } from "@/components/ui/button";
+import { FilterContext } from "@/contexts/FilterContext";
+import React, { useState, useContext, useCallback } from "react";
+import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import {
   Drawer,
   DrawerContent,
