@@ -40,8 +40,11 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             clearTimeout(shuffleTimeout.current);
         }
         shuffleTimeout.current = window.setTimeout(() => {
-            setShuffledOrder(shuffleIndexes());
-            setCurrentIndex(0);
+            const newOrder = shuffleIndexes();
+            setShuffledOrder(newOrder);
+            // Trigger a state update to pass the new items and potentially the same index
+            // to CardCarousel, signaling a programmatic scroll is needed.
+            setCurrentIndex(idx => idx < newOrder.length ? idx : 0); // Ensure index is valid
         }, 0);
     }, [shuffleIndexes]);
 
@@ -67,15 +70,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         const next = currentIndex < shuffledOrder.length - 1 ? shuffledOrder[currentIndex + 1] : null;
         return [prev, curr, next].filter(idx => idx !== null).map(idx => places[idx!]);
     }, [shuffledOrder, currentIndex, places]);
-
-    // Handler for swipe (next/prev)
-    const handleSwipe = useCallback((direction: 'next' | 'prev') => {
-        setCurrentIndex(idx => {
-            if (direction === 'next') return Math.min(idx + 1, shuffledOrder.length - 1);
-            if (direction === 'prev') return Math.max(idx - 1, 0);
-            return idx;
-        });
-    }, [shuffledOrder.length]);
 
     // Virtualized Card Renderer for react-window
     const CardRow = ({ index, style }: { index: number; style: React.CSSProperties }) => (
@@ -108,12 +102,17 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             </div>
 
             {/* Mobile Carousel (show all cards in shuffled order) */}
-            <div className="sm:hidden mb-16">
+            <div className="sm:hidden mb-16 relative">
+                <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
+                    <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
+                </div>
                 <CardCarousel
+                    // Pass a key that changes when items change to force re-initialization if needed
+                    key={shuffledOrder.join('-')}
                     items={shuffledOrder.map(idx => places[idx])}
-                    currentIndex={currentIndex}
+                    // Pass currentIndex to indicate the target index after shuffle
+                    initialIndex={currentIndex}
                     total={shuffledOrder.length}
-                    onSwipe={handleSwipe}
                 />
             </div>
 
