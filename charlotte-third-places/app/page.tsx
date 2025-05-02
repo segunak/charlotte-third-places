@@ -53,10 +53,19 @@ export default async function HomePage() {
           <span className="hidden sm:inline">Feed</span>
         </div>
         <p className="text-pretty">
+          {/* Shown on mobile only */}
+          <span className="inline sm:hidden">
+            <span className="font-bold text-primary">Swipe</span> to explore various places.
+          </span>{" "}
+
+          {/* Always visible text */}
           Click any card for more info about a place. If you're feeling adventurous, click the{" "}
-          <span className="font-bold text-primary">shuffle button</span>{" "}
+
+          <span className="font-bold text-primary">shuffle</span> button{" "}
+
           {/* Shown on mobile only */}
           <span className="inline sm:hidden">for a random place!</span>
+
           {/* Shown on desktop only */}
           <span className="hidden sm:inline">to switch things up!</span>
         </p>
