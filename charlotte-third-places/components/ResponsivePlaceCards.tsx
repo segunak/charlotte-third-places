@@ -103,18 +103,15 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
 
             {/* Mobile Carousel (show all cards in shuffled order) */}
             <div className="sm:hidden mb-16 relative">
-                {/* Swipe arrows affordance */}
-                <div className="flex items-center justify-center gap-4 mb-4 select-none" aria-hidden="true">
-                    <Icons.arrowLeft className="h-5 w-5 text-primary" />
-                    <span className="text-md font-bold text-primary">Swipe</span>
-                    <Icons.arrowRight className="h-5 w-5 text-primary" />
+                <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
+                    <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
                 </div>
                 <CardCarousel
                     // Pass a key that changes when items change to force re-initialization if needed
-                    key={shuffledOrder.join('-')} 
+                    key={shuffledOrder.join('-')}
                     items={shuffledOrder.map(idx => places[idx])}
                     // Pass currentIndex to indicate the target index after shuffle
-                    initialIndex={currentIndex} 
+                    initialIndex={currentIndex}
                     total={shuffledOrder.length}
                 />
             </div>
