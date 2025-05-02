@@ -104,7 +104,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             {/* Mobile Carousel (show all cards in shuffled order) */}
             <div className="sm:hidden mb-16 relative">
                 {/* Swipe arrows affordance */}
-                <div className="flex items-center justify-center gap-4 mb-5 select-none" aria-hidden="true">
+                <div className="flex items-center justify-center gap-4 mb-4 select-none" aria-hidden="true">
                     <Icons.arrowLeft className="h-5 w-5 text-primary" />
                     <span className="text-md font-bold text-primary">Swipe</span>
                     <Icons.arrowRight className="h-5 w-5 text-primary" />
