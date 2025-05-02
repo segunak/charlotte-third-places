@@ -45,7 +45,19 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: {
+export function FilterSelect({ 
+    field, 
+    value, 
+    label, 
+    placeholder, 
+    predefinedOrder, 
+    resetSignal, 
+    onDropdownOpenChange, 
+    onModalClose, 
+    isActivePopover, 
+    anyPopoverOpen,
+    style = {} 
+}: {
     field: keyof FilterConfig;
     value: string;
     label: string;
@@ -56,34 +68,39 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     onModalClose?: () => void;
     isActivePopover?: boolean;
     anyPopoverOpen?: boolean;
+    style?: React.CSSProperties;
 }) {
     const { setFilters, getDistinctValues } = useContext(FilterContext);
-    const isMobile = useIsMobile();
     const [pickerOpen, setPickerOpen] = useState(false);
     const [selectOpen, setSelectOpen] = useState(false);
+    const buttonRef = useRef<HTMLButtonElement>(null);
 
+    // Reset modal state when parent signals reset
     useEffect(() => {
         setPickerOpen(false);
     }, [resetSignal]);
 
+    // Notify parent about dropdown/modal state
     useEffect(() => {
         if (onDropdownOpenChange) {
-            if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+            if (field === "name" || field === "type" || field === "neighborhood") {
                 onDropdownOpenChange(pickerOpen);
             } else {
                 onDropdownOpenChange(selectOpen);
             }
         }
-    }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
+    }, [pickerOpen, selectOpen, onDropdownOpenChange, field]);
 
-    const handlePickerSelect = (newValue: string) => {
+    // Handle selection in the searchable picker modal
+    const handlePickerSelect = useCallback((newValue: string) => {
         setFilters((prevFilters) => ({
             ...prevFilters,
             [field]: { ...prevFilters[field], value: newValue },
         }));
         setPickerOpen(false);
-    };
+    }, [field, setFilters]);
 
+    // Handle filter selection change
     const handleFilterChange = useCallback(
         (newValue: string) => {
             setFilters((prevFilters) => {
@@ -100,15 +117,25 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         [field, setFilters]
     );
 
-    // Only allow pointer events if this is the active popover or none are open
-    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
-        ? undefined
-        : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
+    // Prevent propagation of click events
+    const preventPropagation = useCallback((e: React.MouseEvent) => {
+        e.stopPropagation();
+    }, []);
 
-    if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+    // Control pointer events and visual appearance when other popovers are open
+    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
+        ? style
+        : { 
+            ...style,
+            pointerEvents: 'none' as React.CSSProperties['pointerEvents'], 
+            opacity: 0.7 
+        };
+
+    if (field === "name" || field === "type" || field === "neighborhood") {
         return (
-            <div style={pointerEventsStyle}>
+            <div style={pointerEventsStyle} onClick={preventPropagation}>
                 <Button
+                    ref={buttonRef}
                     variant={value === "all" ? "outline" : "default"}
                     className={cn(
                         "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
@@ -116,32 +143,39 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                             ? "text-muted-foreground font-normal"
                             : "font-bold"
                     )}
-                    onClick={() => setPickerOpen(true)}
+                    onClick={(e) => {
+                        e.stopPropagation();
+                        setPickerOpen(true);
+                    }}
                 >
                     {value === "all" ? placeholder : value}
                 </Button>
-                {pickerOpen && (
-                    <SearchablePickerModal
-                        open={pickerOpen}
-                        onOpenChange={(open) => {
-                            setPickerOpen(open);
-                            if (!open && onModalClose) {
-                                setTimeout(onModalClose, 10);
-                            }
-                        }}
-                        options={getDistinctValues(field)}
-                        value={value}
-                        label={label}
-                        placeholder={placeholder}
-                        onSelect={handlePickerSelect}
-                    />
-                )}
+                <SearchablePickerModal
+                    open={pickerOpen}
+                    onOpenChange={(open) => {
+                        setPickerOpen(open);
+                        if (!open && onModalClose) {
+                            // Return focus to the button after a short delay
+                            setTimeout(() => {
+                                if (buttonRef.current) {
+                                    buttonRef.current.focus();
+                                }
+                                onModalClose();
+                            }, 50);
+                        }
+                    }}
+                    options={getDistinctValues(field)}
+                    value={value}
+                    label={label}
+                    placeholder={placeholder}
+                    onSelect={handlePickerSelect}
+                />
             </div>
         );
     }
 
     return (
-        <div className={maxWidth} style={pointerEventsStyle}>
+        <div className={maxWidth} style={pointerEventsStyle} onClick={preventPropagation}>
             <Select
                 key={field}
                 value={value}
@@ -161,7 +195,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent position="popper" side="top">
-                    <SelectGroup>
+                    <SelectGroup onClick={preventPropagation}>
                         <SelectLabel>{label}</SelectLabel>
                         <SelectItem value="all">All</SelectItem>
                         {getDistinctValues(field).map((item: string) => (
@@ -208,9 +242,14 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
     );
 }
 
-export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
+export function SortSelect({ className, onDropdownOpenChange, style = {} }: { 
+    className?: string; 
+    onDropdownOpenChange?: (open: boolean) => void;
+    style?: React.CSSProperties;
+}) {
     const { sortOption, setSortOption } = useContext(FilterContext);
     const [selectOpen, setSelectOpen] = useState(false);
+    
     useEffect(() => {
         if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
     }, [selectOpen, onDropdownOpenChange]);
@@ -225,6 +264,11 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
         },
         [setSortOption]
     );
+
+    // Prevent propagation of click events
+    const preventPropagation = useCallback((e: React.MouseEvent) => {
+        e.stopPropagation();
+    }, []);
 
     const placeholderText = useMemo(() => {
         if (sortOption.field === SortField.Name) {
@@ -244,7 +288,7 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
     }, [sortOption]);
 
     return (
-        <div className={cn(maxWidth, className)}>
+        <div className={cn(maxWidth, className)} style={style} onClick={preventPropagation}>
             <Select
                 value={`${sortOption.field}-${sortOption.direction}`}
                 onValueChange={handleSortChange}
@@ -265,7 +309,7 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                                     : "Last Updated (New to Old)"}
                     </SelectValue>
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent onClick={preventPropagation}>
                     <SelectGroup>
                         <SelectLabel>Sort By</SelectLabel>
                         <SelectItem value={`${SortField.Name}-${SortDirection.Ascending}`}>
