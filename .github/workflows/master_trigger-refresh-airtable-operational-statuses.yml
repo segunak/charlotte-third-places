@@ -53,7 +53,7 @@ jobs:
           Write-Host "Using function URL: $FunctionUrl"
           
           $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
-          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
+          ./Invoke-AzureDurableFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
           if ($LASTEXITCODE -ne 0) {
             Write-Error "Azure Function call failed."

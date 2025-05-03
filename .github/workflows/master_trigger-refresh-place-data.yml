@@ -69,11 +69,11 @@ jobs:
           $forceRefresh = "${{ github.event.inputs.force_refresh || 'false' }}"
           $city = "${{ github.event.inputs.city || 'charlotte' }}"
           
-          $orchestratorUrl = "https://third-places-data.azurewebsites.net/api/refresh-place-data?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&city=$city"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-place-data?provider_type=$providerType&sequential_mode=$sequentialMode&force_refresh=$forceRefresh&city=$city"
           
-          Write-Host "Using orchestrator URL: $orchestratorUrl"
+          Write-Host "Using orchestrator URL: $FunctionUrl"
           
-          ./Invoke-AzureDurableFunction.ps1 -OrchestratorUrl $orchestratorUrl -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 7200
+          ./Invoke-AzureDurableFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 7200
 
           if ($LASTEXITCODE -ne 0) {
             exit $LASTEXITCODE
