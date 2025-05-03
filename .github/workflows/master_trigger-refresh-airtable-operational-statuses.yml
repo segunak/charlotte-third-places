@@ -13,6 +13,11 @@ on:
         required: false
         default: 'false'
         type: string
+      city:
+        description: 'City for the data refresh'
+        required: false
+        default: 'charlotte'
+        type: string
   workflow_dispatch:
     inputs:
       provider_type:
@@ -24,6 +29,11 @@ on:
         description: 'Whether to run in sequential mode'
         required: false
         default: 'false'
+        type: string
+      city:
+        description: 'City for the data refresh'
+        required: false
+        default: 'charlotte'
         type: string
 
 concurrency: 
@@ -47,8 +57,9 @@ jobs:
         run: |
           $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
           $sequentialMode = "${{ github.event.inputs.sequential_mode || 'false' }}"
-          
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-airtable-operational-statuses?provider_type=$providerType&sequential_mode=$sequentialMode"
+          $city = "${{ github.event.inputs.city || 'charlotte' }}"
+
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-airtable-operational-statuses?provider_type=$providerType&sequential_mode=$sequentialMode&city=$city"
           
           Write-Host "Using function URL: $FunctionUrl"
           
