@@ -111,7 +111,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                 <Button
                     variant={value === "all" ? "outline" : "default"}
                     className={cn(
-                        "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
+                        "w-full justify-between",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold"
@@ -150,7 +150,8 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
             >
                 <SelectTrigger
                     className={cn(
-                        "w-full hover:bg-primary/90 hover:text-accent-foreground",
+                        "w-full",
+                        !isMobile && "hover:bg-primary/90 hover:text-accent-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -211,6 +212,8 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
 export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useContext(FilterContext);
     const [selectOpen, setSelectOpen] = useState(false);
+    const isMobile = useIsMobile();
+
     useEffect(() => {
         if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
     }, [selectOpen, onDropdownOpenChange]);
@@ -250,7 +253,10 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                 onValueChange={handleSortChange}
                 onOpenChange={setSelectOpen}
             >
-                <SelectTrigger className="w-full hover:bg-primary/90 hover:text-accent-foreground">
+                <SelectTrigger className={cn(
+                    "w-full",
+                    !isMobile && "hover:bg-primary/90 hover:text-accent-foreground"
+                )}>
                     <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending
