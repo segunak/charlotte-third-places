@@ -151,7 +151,9 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                 <SelectTrigger
                     className={cn(
                         "w-full",
-                        !isMobile && "hover:bg-primary/90 hover:text-accent-foreground",
+                        isMobile
+                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
+                            : "hover:bg-primary/90 hover:text-accent-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -253,10 +255,14 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                 onValueChange={handleSortChange}
                 onOpenChange={setSelectOpen}
             >
-                <SelectTrigger className={cn(
-                    "w-full",
-                    !isMobile && "hover:bg-primary/90 hover:text-accent-foreground"
-                )}>
+                <SelectTrigger
+                    className={cn(
+                        "w-full",
+                        isMobile
+                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
+                            : "hover:bg-primary/90 hover:text-accent-foreground"
+                    )}
+                >
                     <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending
