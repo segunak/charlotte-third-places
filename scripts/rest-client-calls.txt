@@ -8,4 +8,4 @@ https://marketplace.visualstudio.com/items?itemName=humao.rest-client
 
 
 
-.\TestDurableFunction.ps1 -orchestratorUrl "http://localhost:7071/api/orchestrators/get_outscraper_reviews_orchestrator"
+.\TestDurableFunction.ps1 -FunctionUrl "http://localhost:7071/api/orchestrators/get_outscraper_reviews_orchestrator"

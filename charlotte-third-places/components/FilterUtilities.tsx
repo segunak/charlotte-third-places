@@ -17,6 +17,7 @@ import { FilterContext } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
+import { CaretSortIcon } from "@radix-ui/react-icons";
 import type { FilterConfig } from "@/lib/types";
 
 const maxWidth = "max-w-full";
@@ -108,18 +109,25 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
         return (
             <div style={pointerEventsStyle}>
-                <Button
-                    variant={value === "all" ? "outline" : "default"}
+                {/* This is a custom implementation of the same styling seen in select.tsx's SelectTrigger which is the shadcn/ui select built on top of Radix UI. For certain fields, I want my own custom modal with a search bar, built in SearchablePickerModal.tsx, but want it to appear the same as a select. For consistency, the styling here makes it look like any other select but clicking it opens the SearchablePickerModal.*/}
+                <button
+                    type="button"
                     className={cn(
-                        "w-full hover:bg-primary/90 hover:text-accent-foreground justify-between",
+                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                        isMobile
+                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
+                            : "hover:bg-primary/90 hover:text-accent-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
-                            : "font-bold"
+                            : "font-bold bg-primary text-primary-foreground"
                     )}
                     onClick={() => setPickerOpen(true)}
+                    aria-haspopup="dialog"
+                    aria-expanded={pickerOpen}
                 >
-                    {value === "all" ? placeholder : value}
-                </Button>
+                    <span className="truncate flex-1 text-left">{value === "all" ? placeholder : value}</span>
+                    <CaretSortIcon className="h-4 w-4 opacity-50 ml-2" />
+                </button>
                 {pickerOpen && (
                     <SearchablePickerModal
                         open={pickerOpen}
@@ -150,7 +158,10 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
             >
                 <SelectTrigger
                     className={cn(
-                        "w-full hover:bg-primary/90 hover:text-accent-foreground",
+                        "w-full",
+                        isMobile
+                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
+                            : "hover:bg-primary/90 hover:text-accent-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -183,7 +194,7 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
         // Prevent any event bubbling that might affect parent dialogs
         e.preventDefault();
         e.stopPropagation();
-        
+
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
             Object.keys(resetFilters).forEach((key) => {
@@ -197,7 +208,7 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
 
     return (
         <div className={maxWidth}>
-            <Button 
+            <Button
                 className="w-full"
                 onClick={handleResetFilters}
                 disabled={disabled}
@@ -211,6 +222,8 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
 export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useContext(FilterContext);
     const [selectOpen, setSelectOpen] = useState(false);
+    const isMobile = useIsMobile();
+
     useEffect(() => {
         if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
     }, [selectOpen, onDropdownOpenChange]);
@@ -250,7 +263,14 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                 onValueChange={handleSortChange}
                 onOpenChange={setSelectOpen}
             >
-                <SelectTrigger className="w-full hover:bg-primary/90 hover:text-accent-foreground">
+                <SelectTrigger
+                    className={cn(
+                        "w-full",
+                        isMobile
+                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
+                            : "hover:bg-primary/90 hover:text-accent-foreground"
+                    )}
+                >
                     <SelectValue placeholder={placeholderText}>
                         {sortOption.field === SortField.Name
                             ? sortOption.direction === SortDirection.Ascending

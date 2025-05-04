@@ -1,6 +1,6 @@
 param(
     [Parameter(Mandatory = $true)]
-    [string]$OrchestratorUrl,
+    [string]$FunctionUrl,
 
     [Parameter(Mandatory = $false)]
     [string]$FunctionKey,
@@ -33,7 +33,7 @@ $stopwatch = [System.Diagnostics.Stopwatch]::StartNew()
 try {
     if ([string]::IsNullOrWhiteSpace($FunctionKey)) {
         Write-Output "Info: No FunctionKey provided, sending the request without headers."
-        $initialResponse = Invoke-WebRequest -Uri $OrchestratorUrl
+        $initialResponse = Invoke-WebRequest -Uri $FunctionUrl
     } 
     else { 
         Write-Output "Info: FunctionKey provided, sending the request with headers."
@@ -41,7 +41,7 @@ try {
             "x-functions-key" = $FunctionKey
             "Content-Type"    = "application/json"
         }
-        $initialResponse = Invoke-WebRequest -Uri $OrchestratorUrl -Headers $headers
+        $initialResponse = Invoke-WebRequest -Uri $FunctionUrl -Headers $headers
     }
 
     $statusUri = ($initialResponse.Content | ConvertFrom-Json).statusQueryGetUri

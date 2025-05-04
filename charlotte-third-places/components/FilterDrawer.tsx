@@ -33,7 +33,8 @@ export function FilterDrawer({
   const handleDropdownStateChange = useCallback((open: boolean) => {
     setAnyDropdownOpen(open);
   }, []);
-  const triggerRef = React.useRef<HTMLButtonElement>(null);
+
+  const triggerRef = useRef<HTMLButtonElement>(null);
 
   // Track which select or modal is open
   const [activePopover, setActivePopover] = useState<string | null>(null);

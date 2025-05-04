@@ -30,7 +30,6 @@ export function SearchablePickerModal({
     if (open) {
       setSearch("");
     }
-    // Removed inputRef.current.blur() to let Radix handle focus
   }, [open]);
   
   const filteredOptions = useMemo(() => {
