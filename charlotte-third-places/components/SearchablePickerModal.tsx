@@ -26,11 +26,9 @@ export function SearchablePickerModal({
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   
-  // Reset search when modal opens/closes
   useEffect(() => {
     if (open) {
       setSearch("");
-      // We don't auto-focus - this prevents the keyboard from appearing automatically
     }
   }, [open]);
   
@@ -39,61 +37,34 @@ export function SearchablePickerModal({
     return options.filter((opt) => opt.toLowerCase().includes(search.toLowerCase()));
   }, [options, search]);
 
-  // Handle selection with proper event handling
-  const handleSelect = useCallback((selectedValue: string, e: React.MouseEvent) => {
-    // Stop event propagation to prevent it from reaching elements behind the modal
-    e.stopPropagation();
+  const handleSelect = useCallback((selectedValue: string) => {
     onSelect(selectedValue);
     onOpenChange(false);
   }, [onSelect, onOpenChange]);
-
-  // Prevent clicks from propagating through the modal
-  const preventPropagation = useCallback((e: React.MouseEvent) => {
-    e.stopPropagation();
-  }, []);
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         className="sm:max-w-md rounded-lg bg-background p-6 pt-4 w-full max-w-full overflow-hidden"
-        style={{ maxHeight: '90vh', zIndex: 100 }}
-        onClick={preventPropagation}
-        onOpenAutoFocus={(e) => {
-          // This prevents automatic focus when the dialog opens
-          // which is important to avoid triggering the keyboard on mobile
-          e.preventDefault();
-        }}
-        onPointerDownOutside={(e) => {
-          // Prevent clicks outside from triggering things behind the modal
-          e.preventDefault();
-        }}
-        onInteractOutside={(e) => {
-          // Stop interactions outside the modal from affecting elements behind
-          e.preventDefault();
-          e.stopPropagation();
-        }}
+        style={{ maxHeight: '90vh' }}
+        onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
         <Input
           ref={inputRef}
           placeholder={`Search ${label}...`}
           value={search}
+          autoFocus={false}
           onChange={(e) => setSearch(e.target.value)}
           className="mb-3 w-full"
-          onClick={preventPropagation}
-          // Important: don't auto-focus to prevent keyboard pop-up on mobile
-          autoFocus={false}
         />
-        <ScrollArea 
-          className="h-64 max-h-[55vh] w-full rounded-md border bg-background"
-          onClick={preventPropagation}
-        >
-          <ul className="space-y-1" onClick={preventPropagation}>
+        <ScrollArea className="h-64 max-h-[55vh] w-full rounded-md border bg-background">
+          <ul className="space-y-1">
             <li>
               <Button
                 variant={value === "all" ? "default" : "ghost"}
                 className="w-full justify-start mb-1"
-                onClick={(e) => handleSelect("all", e)}
+                onClick={() => handleSelect("all")}
               >
                 All
               </Button>
@@ -103,7 +74,7 @@ export function SearchablePickerModal({
                 <Button
                   variant={value === opt ? "default" : "ghost"}
                   className="w-full justify-start mb-1"
-                  onClick={(e) => handleSelect(opt, e)}
+                  onClick={() => handleSelect(opt)}
                 >
                   {opt}
                 </Button>

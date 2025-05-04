@@ -1,10 +1,10 @@
 "use client";
 
-import { Icons } from "@/components/Icons";
-import { Button } from "@/components/ui/button";
+import React, { useState, useContext, useCallback, useRef } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
-import React, { useState, useContext, useCallback, useEffect } from "react";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
+import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/Icons";
 import {
   Drawer,
   DrawerContent,
@@ -33,7 +33,6 @@ export function FilterDrawer({
   const handleDropdownStateChange = useCallback((open: boolean) => {
     setAnyDropdownOpen(open);
   }, []);
-  
   const triggerRef = React.useRef<HTMLButtonElement>(null);
 
   // Track which select or modal is open
@@ -48,19 +47,6 @@ export function FilterDrawer({
       triggerRef.current.focus();
     }
   }, []);
-  
-  // When the drawer closes, make sure we reset any open popover/dropdown state
-  useEffect(() => {
-    if (!isDrawerOpen) {
-      setActivePopover(null);
-      setAnyDropdownOpen(false);
-    }
-  }, [isDrawerOpen]);
-
-  // Prevent clicks from propagating through
-  const preventPropagation = useCallback((e: React.MouseEvent) => {
-    e.stopPropagation();
-  }, []);
 
   return (
     <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
@@ -68,7 +54,7 @@ export function FilterDrawer({
         ref={triggerRef}
         variant="outline"
         size="icon"
-        className={`fixed bottom-20 right-3 z-40 bg-primary rounded-full shadow-lg transition-opacity duration-200
+        className={`fixed bottom-20 right-3 z-50 bg-primary rounded-full shadow-lg transition-opacity duration-200
           ${className}
           ${!showButton ? "opacity-0 pointer-events-none" : "opacity-100"}
         `}
@@ -83,33 +69,18 @@ export function FilterDrawer({
             {activeFilterCount}
           </span>
         )}
-        <span className="sr-only">Open Filters</span>
+        <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent 
-        className="z-50" 
-        onClick={preventPropagation}
-        onOpenAutoFocus={(e) => {
-          // Since FilterDrawer is only used on mobile, preventing auto-focus
-          // is appropriate as mobile devices don't use tab navigation and 
-          // we want to avoid triggering the on-screen keyboard
-          e.preventDefault();
-        }}
-      >
+      <DrawerContent>
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
             style={{
               position: 'fixed',
               inset: 0,
-              zIndex: 60,
-              background: 'rgba(0, 0, 0, 0.05)',
+              zIndex: 40,
+              background: 'transparent',
               pointerEvents: 'auto',
-            }}
-            onClick={(e) => {
-              e.stopPropagation();
-              // Close any open dropdowns when clicking on the overlay
-              setActivePopover(null);
-              setAnyDropdownOpen(false);
             }}
             aria-hidden="true"
           />
@@ -117,16 +88,11 @@ export function FilterDrawer({
         <DrawerHeader>
           <DrawerTitle></DrawerTitle>
         </DrawerHeader>
-        <div className="drawer-content space-y-4 px-4 pb-4" onClick={preventPropagation}>
+        <div className="space-y-4 px-4 pb-4">
           {showSort && (
             <div className="space-y-4">
               <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
-              <SortSelect 
-                className="font-normal text-muted-foreground" 
-                onDropdownOpenChange={handleDropdownStateChange}
-                // Apply higher z-index to active popover
-                style={{ zIndex: activePopover === 'sort-select' ? 70 : 50 }}
-              />
+              <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
             </div>
           )}
           <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
@@ -146,39 +112,26 @@ export function FilterDrawer({
                 onModalClose={focusDrawerTrigger}
                 isActivePopover={activePopover === getPopoverId(field)}
                 anyPopoverOpen={!!activePopover}
-                // Apply higher z-index to active popover
-                style={{ zIndex: activePopover === getPopoverId(field) ? 70 : 50 }}
               />
             ))}
           </div>
         </div>
-        <DrawerFooter style={{ position: 'relative', zIndex: 55 }} onClick={preventPropagation}>
+        <DrawerFooter style={{ position: 'relative' }}>
           {anyDropdownOpen && (
             <div
               style={{
                 position: 'absolute',
                 inset: 0,
-                zIndex: 60,
+                zIndex: 10,
                 background: 'transparent',
                 pointerEvents: 'auto',
-              }}
-              onClick={(e) => {
-                e.stopPropagation();
-                // Clicking on this overlay in the footer should close all dropdowns
-                setActivePopover(null);
-                setAnyDropdownOpen(false);
               }}
               aria-hidden="true"
             />
           )}
           <FilterResetButton disabled={anyDropdownOpen} />
           <DrawerClose asChild>
-            <Button 
-              variant="outline" 
-              className="w-full disabled:opacity-100" 
-              disabled={anyDropdownOpen}
-              tabIndex={anyDropdownOpen ? -1 : 0}
-            >
+            <Button variant="outline" className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
               Close
             </Button>
           </DrawerClose>
