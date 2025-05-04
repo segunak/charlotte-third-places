@@ -114,7 +114,9 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         "w-full justify-between",
                         value === "all"
                             ? "text-muted-foreground font-normal"
-                            : "font-bold"
+                            : "font-bold",
+                        // Disable hover and focus styles on mobile
+                        "focus:outline-none focus:ring-0 focus:shadow-none hover:bg-transparent hover:text-inherit"
                     )}
                     onClick={() => setPickerOpen(true)}
                 >
