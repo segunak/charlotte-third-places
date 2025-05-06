@@ -77,7 +77,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={contentRef}
-                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
+                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-[80%] h-[70vh] bg-card sm:mx-auto rounded-lg sm:rounded-xl overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
@@ -91,7 +91,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-                <div className="flex justify-center space-x-4 mb-4 relative z-10">
+                <div className="flex justify-center space-x-4 mb-4 relative z-10 px-4">
                     {googleMapsProfileURL && (
                         <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
                             <Button variant="outline">
@@ -133,7 +133,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         aria-label="Share Place"
                     />
                 </div>
-                <div className="h-64 overflow-y-auto relative z-0">
+                
+                <div className="flex-1 overflow-y-auto px-4">
                     <Tabs defaultValue="overview" className="w-full">
                         <div className="sticky top-0 bg-card z-10 pb-2">
                             <TabsList className="grid grid-cols-3 w-full">
@@ -210,7 +211,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             value="details"
                             className="space-y-3 px-1 py-2"
                         >
-                            <Accordion type="single" collapsible className="w-full">
+                            <Accordion defaultValue="description" type="single" collapsible className="w-full">
                                 <AccordionItem value="description">
                                     <AccordionTrigger className="font-medium">Description</AccordionTrigger>
                                     <AccordionContent>
@@ -270,7 +271,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </Tabs>
                 </div>
 
-                <div className="flex justify-center mt-4">
+                <div className="flex justify-center py-4 px-4 mt-auto border-t">
                     <Button className="!font-bold" onClick={onClose}>
                         Close
                     </Button>
