@@ -68,16 +68,17 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const hasPhotos = place.photos && place.photos.length > 0;
     const hasComments = place.comments?.trim();
 
-    const instagram = undefined; // place.instagram?.trim();
+    const instagram = undefined // place.instagram?.trim();
     const tiktok = undefined; // place.tiktok?.trim();
     const twitter = undefined; // place.twitter?.trim();
-    const youtube = undefined; // place.youtube?.trim();
+    const youtube = undefined // place.youtube?.trim();
+    const facebook = undefined; // place.facebook?.trim();
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={contentRef}
-                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-[80%] h-[70vh] bg-card sm:mx-auto rounded-lg sm:rounded-xl overflow-hidden flex flex-col"
+                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-[85vh] bg-card sm:mx-auto rounded-lg sm:rounded-xl overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
@@ -150,17 +151,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             className="space-y-4 px-1 py-2"
                         >
                             {/* Social Media Icons - Horizontal row with no labels - Only shown when profiles exist */}
-                            {(instagram || tiktok || twitter || youtube) && (
+                            {(instagram || tiktok || twitter || youtube || facebook) && (
                                 <>
                                     <div className="flex justify-center space-x-3 mb-2">
-                                        {instagram && (
-                                            <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                    <Icons.instagram className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-
                                         {tiktok && (
                                             <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
                                                 <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
@@ -169,10 +162,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                             </ResponsiveLink>
                                         )}
 
-                                        {twitter && (
-                                            <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                    <Icons.twitter className="h-5 w-5 text-white" />
+                                        {instagram && (
+                                            <ResponsiveLink href={instagram} aria-label="Visit Instagram">
+                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                    <Icons.instagram className="h-5 w-5 text-white" />
                                                 </div>
                                             </ResponsiveLink>
                                         )}
@@ -181,6 +174,22 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                             <ResponsiveLink href={youtube} aria-label="Visit YouTube">
                                                 <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
                                                     <Icons.youtube className="h-5 w-5 text-white" />
+                                                </div>
+                                            </ResponsiveLink>
+                                        )}
+                             
+                                        {facebook && (
+                                            <ResponsiveLink href={facebook} aria-label="Visit Facebook">
+                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                    <Icons.facebook className="h-5 w-5 text-white" />
+                                                </div>
+                                            </ResponsiveLink>
+                                        )}
+
+                                        {twitter && (
+                                            <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                    <Icons.twitter className="h-5 w-5 text-white" />
                                                 </div>
                                             </ResponsiveLink>
                                         )}
@@ -211,7 +220,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             value="details"
                             className="space-y-3 px-1 py-2"
                         >
-                            <Accordion defaultValue="description" type="single" collapsible className="w-full">
+                            <Accordion type="single" collapsible className="w-full">
                                 <AccordionItem value="description">
                                     <AccordionTrigger className="font-medium">Description</AccordionTrigger>
                                     <AccordionContent>
