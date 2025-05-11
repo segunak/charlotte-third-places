@@ -32,6 +32,7 @@ import {
     AccordionItem,
     AccordionTrigger
 } from "@/components/ui/accordion";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 interface PlaceModalProps {
     place: Place | null;
@@ -42,6 +43,7 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const { showPlacePhotos } = useModalContext();
+    const isMobile = useIsMobile();
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -134,128 +136,125 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         aria-label="Share Place"
                     />
                 </div>
-                
-                <div className="flex-1 overflow-y-auto px-4">
-                    <Tabs defaultValue="overview" className="w-full">
-                        <div className="sticky top-0 bg-card z-10 pb-2">
-                            <TabsList className="grid grid-cols-3 w-full">
-                                <TabsTrigger value="overview">Overview</TabsTrigger>
-                                <TabsTrigger value="details">Details</TabsTrigger>
-                                <TabsTrigger value="amenities">Amenities</TabsTrigger>
-                            </TabsList>
-                        </div>
-
-                        {/* Overview Tab - Essential Information */}
-                        <TabsContent
-                            value="overview"
-                            className="space-y-4 px-1 py-2"
-                        >
-                            {/* Social Media Icons - Horizontal row with no labels - Only shown when profiles exist */}
-                            {(instagram || tiktok || twitter || youtube || facebook) && (
-                                <>
-                                    <div className="flex justify-center space-x-3 mb-2">
-                                        {tiktok && (
-                                            <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                    <Icons.tiktok className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-
-                                        {instagram && (
-                                            <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                    <Icons.instagram className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-
-                                        {youtube && (
-                                            <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                                    <Icons.youtube className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-                             
-                                        {facebook && (
-                                            <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                                    <Icons.facebook className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-
-                                        {twitter && (
-                                            <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                                <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                    <Icons.twitter className="h-5 w-5 text-white" />
-                                                </div>
-                                            </ResponsiveLink>
-                                        )}
-                                    </div>
-
-                                    <Separator className="mb-2" />
-                                </>
-                            )}
-
-                            <div>
-                                <p className="font-medium">Address</p>
-                                <p className="text-sm text-muted-foreground">{place.address}</p>
+                {/* Main content and tab navigation */}
+                <div className="flex-1 flex flex-col px-4">
+                    <Tabs defaultValue="overview" className="w-full flex flex-col h-full">
+                        {/* TabsList at top for desktop */}
+                        {!isMobile && (
+                            <div className="sticky top-0 bg-card z-10 pb-2">
+                                <TabsList className="grid grid-cols-2 w-full">
+                                    <TabsTrigger value="overview">Overview</TabsTrigger>
+                                    <TabsTrigger value="amenities">Amenities</TabsTrigger>
+                                </TabsList>
                             </div>
+                        )}
+                        {/* Tab contents with min-height for consistent height on mobile */}
+                        <div className="flex-1 flex flex-col">
+                            <TabsContent
+                                value="overview"
+                                className="space-y-4 px-1 py-2 min-h-[220px]"
+                            >
+                                {/* Social Media Icons - Horizontal row with no labels - Only shown when profiles exist */}
+                                {(instagram || tiktok || twitter || youtube || facebook) && (
+                                    <>
+                                        <div className="flex justify-center space-x-3 mb-2">
+                                            {tiktok && (
+                                                <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
+                                                    <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                        <Icons.tiktok className="h-5 w-5 text-white" />
+                                                    </div>
+                                                </ResponsiveLink>
+                                            )}
 
-                            <div>
-                                <p className="font-medium">Neighborhood</p>
-                                <p className="text-sm text-muted-foreground">{place.neighborhood}</p>
-                            </div>
+                                            {instagram && (
+                                                <ResponsiveLink href={instagram} aria-label="Visit Instagram">
+                                                    <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                        <Icons.instagram className="h-5 w-5 text-white" />
+                                                    </div>
+                                                </ResponsiveLink>
+                                            )}
 
-                            <div>
-                                <p className="font-medium">Size</p>
-                                <p className="text-sm text-muted-foreground">{place.size}</p>
-                            </div>
-                        </TabsContent>
+                                            {youtube && (
+                                                <ResponsiveLink href={youtube} aria-label="Visit YouTube">
+                                                    <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                        <Icons.youtube className="h-5 w-5 text-white" />
+                                                    </div>
+                                                </ResponsiveLink>
+                                            )}
+                                    
+                                            {facebook && (
+                                                <ResponsiveLink href={facebook} aria-label="Visit Facebook">
+                                                    <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                        <Icons.facebook className="h-5 w-5 text-white" />
+                                                    </div>
+                                                </ResponsiveLink>
+                                            )}
 
-                        {/* Details Tab - Description and Comments */}
-                        <TabsContent
-                            value="details"
-                            className="space-y-3 px-1 py-2"
-                        >
-                            <Accordion type="single" collapsible className="w-full">
-                                <AccordionItem value="description">
-                                    <AccordionTrigger className="font-medium">Description</AccordionTrigger>
-                                    <AccordionContent>
-                                        {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
-                                    </AccordionContent>
-                                </AccordionItem>
-                                {hasComments && (
-                                    <AccordionItem value="comments">
-                                        <AccordionTrigger className="font-medium">Curator's Comments</AccordionTrigger>
-                                        <AccordionContent>
-                                            {place.comments}
-                                        </AccordionContent>
-                                    </AccordionItem>
+                                            {twitter && (
+                                                <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                                    <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                        <Icons.twitter className="h-5 w-5 text-white" />
+                                                    </div>
+                                                </ResponsiveLink>
+                                            )}
+                                        </div>
+
+                                        <Separator className="mb-2" />
+                                    </>
                                 )}
-                                <AccordionItem value="metadata">
-                                    <AccordionTrigger className="font-medium">Metadata</AccordionTrigger>
-                                    <AccordionContent>
-                                        <p className="text-sm">
-                                            <span className="font-medium">Added:</span> {new Date(place.createdDate).toLocaleDateString("en-US")}
-                                        </p>
-                                        <p className="text-sm">
-                                            <span className="font-medium">Last Updated:</span> {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}
-                                        </p>
-                                    </AccordionContent>
-                                </AccordionItem>
-                            </Accordion>
-                        </TabsContent>
 
-                        {/* Amenities Tab - Features and Facilities */}
-                        <TabsContent
-                            value="amenities"
-                            className="space-y-3 px-1 py-2"
-                        >
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div className="flex flex-col gap-2">
+                                <div>
+                                    <p className="font-medium">Address</p>
+                                    <p className="text-sm text-muted-foreground">{place.address}</p>
+                                </div>
+
+                                <div>
+                                    <p className="font-medium">Neighborhood</p>
+                                    <p className="text-sm text-muted-foreground">{place.neighborhood}</p>
+                                </div>
+
+                                <div>
+                                    <p className="font-medium">Size</p>
+                                    <p className="text-sm text-muted-foreground">{place.size}</p>
+                                </div>
+                                <div>
+                                    <Accordion type="single" collapsible className="w-full">
+                                        <AccordionItem value="description">
+                                            <AccordionTrigger className="font-medium">Description</AccordionTrigger>
+                                            <AccordionContent>
+                                                {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                        {hasComments && (
+                                            <AccordionItem value="comments">
+                                                <AccordionTrigger className="font-medium">Curator's Comments</AccordionTrigger>
+                                                <AccordionContent>
+                                                    {place.comments}
+                                                </AccordionContent>
+                                            </AccordionItem>
+                                        )}
+                                        <AccordionItem value="metadata">
+                                            <AccordionTrigger className="font-medium">Metadata</AccordionTrigger>
+                                            <AccordionContent>
+                                                <p className="text-sm">
+                                                    <span className="font-medium">Added:</span> {new Date(place.createdDate).toLocaleDateString("en-US")}
+                                                </p>
+                                                <p className="text-sm">
+                                                    <span className="font-medium">Last Updated:</span> {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}
+                                                </p>
+                                            </AccordionContent>
+                                        </AccordionItem>
+                                    </Accordion>
+                                </div>
+                            </TabsContent>
+
+                            {/* Amenities Tab - Features and Facilities */}
+                            <TabsContent
+                                value="amenities"
+                                className="space-y-3 px-1 py-2 min-h-[220px]"
+                            >
+                                {/* Amenities as vertical stack for all screens */}
+                                <div className="flex flex-col gap-4">
                                     <div>
                                         <p className="font-medium">Purchase Required</p>
                                         <p className="text-sm text-muted-foreground">{place.purchaseRequired}</p>
@@ -264,8 +263,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                         <p className="font-medium">Free Wi-Fi</p>
                                         <p className="text-sm text-muted-foreground">{place.freeWiFi}</p>
                                     </div>
-                                </div>
-                                <div className="flex flex-col gap-2">
                                     <div>
                                         <p className="font-medium">Parking</p>
                                         <p className="text-sm text-muted-foreground">{place.parking.join(", ")}</p>
@@ -275,13 +272,23 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                         <p className="text-sm text-muted-foreground">{place.hasCinnamonRolls}</p>
                                     </div>
                                 </div>
+                            </TabsContent>
+                        </div>
+                        {/* TabsList for mobile, at the very bottom above Close button, with margin and separator */}
+                        {isMobile && (
+                            <div className="w-full flex flex-col items-center mt-auto">
+                                <Separator className="my-2 w-full" />
+                                <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto mb-2">
+                                    <TabsTrigger value="overview">Overview</TabsTrigger>
+                                    <TabsTrigger value="amenities">Amenities</TabsTrigger>
+                                </TabsList>
                             </div>
-                        </TabsContent>
+                        )}
                     </Tabs>
                 </div>
-
+                {/* Close button always at the bottom */}
                 <div className="flex justify-center py-4 px-4 mt-auto border-t">
-                    <Button className="!font-bold" onClick={onClose}>
+                    <Button className="!font-bold w-full max-w-md" onClick={onClose}>
                         Close
                     </Button>
                 </div>
