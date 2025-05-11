@@ -70,7 +70,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const hasPhotos = place.photos && place.photos.length > 0;
     const hasComments = place.comments?.trim();
 
-    const instagram = undefined // place.instagram?.trim();
+    const instagram = "undefined" // place.instagram?.trim();
     const tiktok = undefined; // place.tiktok?.trim();
     const twitter = undefined; // place.twitter?.trim();
     const youtube = undefined // place.youtube?.trim();
@@ -94,7 +94,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-                <div className="flex justify-center space-x-4 mb-4 relative z-10 px-4">
+                <div className="flex justify-center space-x-4 mb-2 relative z-10 px-4">
                     {googleMapsProfileURL && (
                         <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
                             <Button variant="outline">
@@ -137,7 +137,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     />
                 </div>
                 {/* Main content and tab navigation */}
-                <div className="flex-1 flex flex-col px-4">
+                <div className="flex-1 flex flex-col px-4 overflow-hidden">
                     <Tabs defaultValue="overview" className="w-full flex flex-col h-full">
                         {/* TabsList at top for desktop */}
                         {!isMobile && (
@@ -149,15 +149,15 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             </div>
                         )}
                         {/* Tab contents with min-height for consistent height on mobile */}
-                        <div className="flex-1 flex flex-col">
+                        <div className="flex-1 overflow-y-auto">
                             <TabsContent
                                 value="overview"
-                                className="space-y-4 px-1 py-2 min-h-[220px]"
+                                className="space-y-4 px-1 py-2"
                             >
                                 {/* Social Media Icons - Horizontal row with no labels - Only shown when profiles exist */}
                                 {(instagram || tiktok || twitter || youtube || facebook) && (
                                     <>
-                                        <div className="flex justify-center space-x-3 mb-2">
+                                        <div className="flex justify-center space-x-3">
                                             {tiktok && (
                                                 <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
                                                     <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
@@ -181,7 +181,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                                     </div>
                                                 </ResponsiveLink>
                                             )}
-                                    
+
                                             {facebook && (
                                                 <ResponsiveLink href={facebook} aria-label="Visit Facebook">
                                                     <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
@@ -198,25 +198,25 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                                 </ResponsiveLink>
                                             )}
                                         </div>
-
-                                        <Separator className="mb-2" />
+                                        <Separator className="mt-1 mb-2" />
                                     </>
                                 )}
 
                                 <div>
-                                    <p className="font-medium">Address</p>
+                                    <p className="text-sm font-medium">Address</p>
                                     <p className="text-sm text-muted-foreground">{place.address}</p>
                                 </div>
-
+                                <Separator className="my-1" />
                                 <div>
-                                    <p className="font-medium">Neighborhood</p>
+                                    <p className="text-sm font-medium">Neighborhood</p>
                                     <p className="text-sm text-muted-foreground">{place.neighborhood}</p>
                                 </div>
-
+                                <Separator className="my-1" />
                                 <div>
-                                    <p className="font-medium">Size</p>
+                                    <p className="text-sm font-medium">Size</p>
                                     <p className="text-sm text-muted-foreground">{place.size}</p>
                                 </div>
+                                {/* No separator here; accordions below handle their own separation */}
                                 <div>
                                     <Accordion type="single" collapsible className="w-full">
                                         <AccordionItem value="description">
@@ -251,7 +251,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             {/* Amenities Tab - Features and Facilities */}
                             <TabsContent
                                 value="amenities"
-                                className="space-y-3 px-1 py-2 min-h-[220px]"
+                                className="space-y-3 px-1 py-2"
                             >
                                 {/* Amenities as vertical stack for all screens */}
                                 <div className="flex flex-col gap-4">
@@ -277,8 +277,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         {/* TabsList for mobile, at the very bottom above Close button, with margin and separator */}
                         {isMobile && (
                             <div className="w-full flex flex-col items-center mt-auto">
-                                <Separator className="my-2 w-full" />
-                                <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto mb-2">
+                                <TabsList className="grid grid-cols-2 w-full max-w-md mx-auto my-2">
                                     <TabsTrigger value="overview">Overview</TabsTrigger>
                                     <TabsTrigger value="amenities">Amenities</TabsTrigger>
                                 </TabsList>
@@ -287,7 +286,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </Tabs>
                 </div>
                 {/* Close button always at the bottom */}
-                <div className="flex justify-center py-4 px-4 mt-auto border-t">
+                <div className={`flex justify-center py-4 px-4 mt-auto ${isMobile ? '' : 'border-t'}`}>
+                    {isMobile && <Separator className="absolute left-0 right-0 top-0 w-full" />}
                     <Button className="!font-bold w-full max-w-md" onClick={onClose}>
                         Close
                     </Button>
