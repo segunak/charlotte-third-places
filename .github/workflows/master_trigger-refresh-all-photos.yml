@@ -1,0 +1,92 @@
+name: Trigger Refresh All Photos From Cache
+
+on:
+  workflow_call:
+    inputs:
+      provider_type:
+        description: 'Provider type for photo selection algorithm'
+        required: false
+        default: 'outscraper'
+        type: string
+      city:
+        description: 'City to process'
+        required: false
+        default: 'charlotte'
+        type: string
+      dry_run:
+        description: 'Dry run: If true, only logs what would be done without making changes'
+        required: false
+        default: 'true'
+        type: string
+      max_places:
+        description: 'Maximum number of places to process (optional)'
+        required: false
+        default: ''
+        type: string
+  workflow_dispatch:
+    inputs:
+      provider_type:
+        description: 'Provider type for photo selection algorithm'
+        required: false
+        default: 'outscraper'
+        type: string
+      city:
+        description: 'City to process'
+        required: false
+        default: 'charlotte'
+        type: string
+      dry_run:
+        description: 'Dry run: If true, only logs what would be done without making changes'
+        required: false
+        default: 'true'
+        type: string
+      max_places:
+        description: 'Maximum number of places to process (optional)'
+        required: false
+        default: ''
+        type: string
+
+concurrency: 
+  group: refresh-all-photos
+  cancel-in-progress: true
+
+jobs:
+  trigger-refresh-all-photos:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Invoke PowerShell Script
+        id: invoke_script
+        working-directory: ./scripts
+        shell: pwsh
+        env:
+          AZURE_FUNCTION_KEY: ${{ secrets.AZURE_FUNCTION_KEY }}
+        run: |
+          $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
+          $city = "${{ github.event.inputs.city || 'charlotte' }}"
+          $dryRun = "${{ github.event.inputs.dry_run || 'true' }}"
+          $maxPlaces = "${{ github.event.inputs.max_places || '' }}"
+          
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-all-photos?provider_type=$providerType&city=$city&dry_run=$dryRun"
+          
+          if ($maxPlaces -ne '') {
+            $FunctionUrl += "&max_places=$maxPlaces"
+          }
+          
+          Write-Host "Using function URL: $FunctionUrl"
+          
+          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 1800
+
+          if ($LASTEXITCODE -ne 0) {
+            exit $LASTEXITCODE
+          }
+
+      - name: Check Script Result
+        if: always()
+        run: |
+          echo "Script execution completed with status: ${{ steps.invoke_script.outcome }}"
+          if ("${{ steps.invoke_script.outcome }}" -ne "success") {
+            exit 1
+          }

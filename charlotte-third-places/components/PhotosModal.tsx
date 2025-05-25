@@ -56,8 +56,14 @@ const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
     if (!cleanedUrl) return '';
     // Assume non-google URLs are already optimized or don't support this
     if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-    // Skip known problematic proxy URLs
-    if (cleanedUrl.includes('/gps-proxy/')) return cleanedUrl;
+      // Most problematic URLs should be filtered out by backend, but this is a fallback
+    // if any restricted URLs make it through to the frontend
+    // The _is_valid_photo_url method in both OutscraperProvider and GoogleMapsProvider
+    // should have already removed these, but we keep this check as a defense-in-depth measure
+    if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
+        console.warn(`Potentially restricted Google photo URL detected: ${cleanedUrl}`);
+        return cleanedUrl;
+    }
 
     // Check if already has desired width parameter (more robust check)
     const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
