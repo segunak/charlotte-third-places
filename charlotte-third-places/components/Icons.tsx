@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { FaLocationPin, FaMapPin, FaMapLocationDot, FaShuffle, FaApple } from "react-icons/fa6";
+import { FaLocationPin, FaMapPin, FaMapLocationDot, FaShuffle, FaApple, FaXTwitter, FaFacebook } from "react-icons/fa6";
 import {
   FaFilter,
   FaChessQueen, 
@@ -92,6 +92,7 @@ export const Icons = {
   instagram: LuInstagram,
   youtube: IoLogoYoutube,
   tiktok: IoLogoTiktok,
+  twitter: FaXTwitter,
   reddit: IoLogoReddit,
   link: LuLink,
   externalLink: LuExternalLink,
@@ -102,6 +103,7 @@ export const Icons = {
   chevronLeft: IoChevronBack,
   chevronRight: IoChevronForward,
   close: IoClose,
+  facebook: FaFacebook,
   logo: (props: IconProps) => (
     <svg
       width="800px"
