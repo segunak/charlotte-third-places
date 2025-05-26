@@ -16,7 +16,7 @@ on:
       dry_run:
         description: 'Dry run: If true, only logs what would be done without making changes'
         required: false
-        default: 'true'
+        default: 'false'
         type: string
       max_places:
         description: 'Maximum number of places to process (optional)'
@@ -38,7 +38,7 @@ on:
       dry_run:
         description: 'Dry run: If true, only logs what would be done without making changes'
         required: false
-        default: 'true'
+        default: 'false'
         type: string
       max_places:
         description: 'Maximum number of places to process (optional)'
