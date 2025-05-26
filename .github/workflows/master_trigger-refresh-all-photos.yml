@@ -92,10 +92,7 @@ jobs:
           ./Invoke-AzureDurableFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
           if ($LASTEXITCODE -ne 0) {
-            Write-Error "Azure Function call failed."
             exit $LASTEXITCODE
-          } else {
-            Write-Output "Azure Function call succeeded."
           }
 
       - name: Check Script Result
