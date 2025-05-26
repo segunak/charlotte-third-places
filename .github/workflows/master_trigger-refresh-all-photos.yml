@@ -23,6 +23,11 @@ on:
         required: false
         default: ''
         type: string
+      sequential_mode:
+        description: 'Whether to run in sequential mode'
+        required: false
+        default: 'false'
+        type: string
   workflow_dispatch:
     inputs:
       provider_type:
@@ -45,6 +50,11 @@ on:
         required: false
         default: ''
         type: string
+      sequential_mode:
+        description: 'Whether to run in sequential mode'
+        required: false
+        default: 'false'
+        type: string
 
 concurrency: 
   group: refresh-all-photos
@@ -66,10 +76,11 @@ jobs:
         run: |
           $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
           $city = "${{ github.event.inputs.city || 'charlotte' }}"
-          $dryRun = "${{ github.event.inputs.dry_run || 'true' }}"
+          $dryRun = "${{ github.event.inputs.dry_run || 'false' }}"
           $maxPlaces = "${{ github.event.inputs.max_places || '' }}"
+          $sequentialMode = "${{ github.event.inputs.sequential_mode || 'false' }}"
           
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-all-photos?provider_type=$providerType&city=$city&dry_run=$dryRun"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-all-photos?provider_type=$providerType&city=$city&dry_run=$dryRun&sequential_mode=$sequentialMode"
           
           if ($maxPlaces -ne '') {
             $FunctionUrl += "&max_places=$maxPlaces"
@@ -77,10 +88,14 @@ jobs:
           
           Write-Host "Using function URL: $FunctionUrl"
           
-          ./Invoke-AzureFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey "$Env:AZURE_FUNCTION_KEY" -TimeoutSeconds 1800
+          $FunctionKey = "$Env:AZURE_FUNCTION_KEY"
+          ./Invoke-AzureDurableFunction.ps1 -FunctionUrl $FunctionUrl -FunctionKey $FunctionKey -TimeoutSeconds 1800
 
           if ($LASTEXITCODE -ne 0) {
+            Write-Error "Azure Function call failed."
             exit $LASTEXITCODE
+          } else {
+            Write-Output "Azure Function call succeeded."
           }
 
       - name: Check Script Result
