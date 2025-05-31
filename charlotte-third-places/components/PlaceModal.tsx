@@ -127,13 +127,15 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         {(instagram || tiktok || twitter || youtube || facebook) && (
                             <p>
                                 <span className="font-semibold">Socials:</span>
-                                <span className="inline-flex items-center space-x-2 ml-2">                                    {tiktok && (
+                                <span className="inline-flex items-center space-x-2 ml-2">
+                                    {tiktok && (
                                         <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
                                             <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
                                                 <Icons.tiktok className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
-                                    )}                                    {instagram && (
+                                    )}
+                                    {instagram && (
                                         <ResponsiveLink href={instagram} aria-label="Visit Instagram">
                                             <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
                                                 <Icons.instagram className="h-4 w-4 text-white" />
@@ -214,8 +216,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated:{" "}
                         {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
                     </p>
-                    {/* Bottom spacing for scroll */}
-                    <div className="h-4" />
                 </div>
                 {/* CLOSE BUTTON */}
                 <div className="flex justify-center py-4 px-4 mt-auto">

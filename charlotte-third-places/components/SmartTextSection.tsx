@@ -33,19 +33,20 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
     const isMobile = useIsMobile();
     const [expanded, setExpanded] = useState(false);
     const shouldTruncate = isMobile && !expanded && priority !== 'high';
-
     if (inline) {
         return (
             <div className="space-y-2">
-                <p>
-                    <span className="font-semibold">{heading}:</span>
-                    <span className={clsx(
-                        "ml-1",
+                <div className="relative">
+                    <p className={clsx(
                         shouldTruncate && "line-clamp-4"
                     )}>
-                        {children}
-                    </span>
-                </p>
+                        <span className="font-semibold">{heading}:</span>
+                        <span className="ml-1">{children}</span>
+                    </p>
+                    {shouldTruncate && (
+                        <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />
+                    )}
+                </div>
                 {isMobile && priority !== 'high' && (
                     <Button
                         variant="link"
