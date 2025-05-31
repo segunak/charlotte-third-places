@@ -9,10 +9,12 @@ import {
     FC,
     useRef,
     useEffect,
-    useMemo
+    useMemo,
+    useState
 } from "react";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { useModalContext } from "@/contexts/ModalContext"; // Correct import
+import { SmartTextSection } from "@/components/SmartTextSection";
+import { useModalContext } from "@/contexts/ModalContext";
 import {
     Dialog,
     DialogContent,
@@ -29,7 +31,7 @@ interface PlaceModalProps {
 
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
-    const { showPlacePhotos } = useModalContext(); // Use the correct hook and destructure showPlacePhotos
+    const { showPlacePhotos } = useModalContext();
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -50,10 +52,18 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         return null;
     }
 
-    const website = place.website?.trim();
+    const hasComments = place.comments?.trim();
+    const hasPhotos = place.photos && place.photos.length > 0;
+
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
-    const hasPhotos = place.photos && place.photos.length > 0;
+
+    const website = place.website?.trim();
+    const instagram = place.instagram?.trim();
+    const tiktok = place.tiktok?.trim();
+    const twitter = place.twitter?.trim();
+    const youtube = place.youtube?.trim();
+    const facebook = place.facebook?.trim();
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -73,7 +83,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-                <div className="space-y-[0.6rem]">
+                <div className="space-y-4">
                     <div className="flex justify-center space-x-4">
                         {googleMapsProfileURL && (
                             <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
@@ -89,18 +99,15 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                 </Button>
                             </ResponsiveLink>
                         )}
-
-                        {/* Add Camera Button if photos exist */} 
                         {hasPhotos && (
-                            <Button 
+                            <Button
                                 variant="outline"
-                                onClick={() => showPlacePhotos(place, 'modal')} // Specify origin as 'modal'
+                                onClick={() => showPlacePhotos(place, 'modal')}
                                 aria-label="View photos"
                             >
                                 <Icons.camera className="h-6 w-6 text-primary" />
                             </Button>
                         )}
-
                         {website && (
                             <ResponsiveLink href={website} aria-label="Visit Website">
                                 <Button variant="outline">
@@ -117,46 +124,105 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         />
                     </div>
                     <Separator />
-                    <p>
-                        <strong>Address:</strong> {place.address}
-                    </p>
-                    <p>
-                        <strong>Neighborhood:</strong> {place.neighborhood}
-                    </p>
-                    <p>
-                        <strong>Size:</strong> {place.size}
-                    </p>
-                    <p>
-                        <strong>Purchase Required:</strong> {place.purchaseRequired}
-                    </p>
-                    <p>
-                        <strong>Parking:</strong> {place.parking.join(", ")}
-                    </p>
-                    <p>
-                        <strong>Free Wi-Fi:</strong> {place.freeWiFi}
-                    </p>
-                    <p>
-                        <strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}
-                    </p>
+                    <div className="space-y-2">
+                        {(instagram || tiktok || twitter || youtube || facebook) && (
+                            <div>
+                                <span className="font-semibold">Socials:</span>
+                                <span className="inline-flex items-center space-x-2 ml-2">
+                                    {tiktok && (
+                                        <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.tiktok className="h-4 w-4 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {instagram && (
+                                        <ResponsiveLink href={instagram} aria-label="Visit Instagram">
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                <Icons.instagram className="h-4 w-4 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {youtube && (
+                                        <ResponsiveLink href={youtube} aria-label="Visit YouTube">
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                <Icons.youtube className="h-4 w-4 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {facebook && (
+                                        <ResponsiveLink href={facebook} aria-label="Visit Facebook">
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                <Icons.facebook className="h-4 w-4 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {twitter && (
+                                        <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.twitter className="h-4 w-4 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                </span>
+                            </div>
+                        )}
+                        <p>
+                            <span className="font-semibold">Address:</span> {place.address}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Neighborhood:</span> {place.neighborhood}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Size:</span> {place.size}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Purchase Required:</span> {place.purchaseRequired}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Parking:</span> {place.parking.join(", ")}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Free Wi-Fi:</span> {place.freeWiFi}
+                        </p>
+                        <p>
+                            <span className="font-semibold">Has Cinnamon Rolls:</span> {place.hasCinnamonRolls}
+                        </p>
+                    </div>
+
                     <Separator />
-                    <p>
-                        <strong>Description:</strong>{" "}
-                        {place.description?.trim() ||
-                            "A third place in the Charlotte, North Carolina area."}
-                    </p>
-                    <p>
-                        <strong>Curator's Comments:</strong>{" "}
-                        {place.comments?.trim() || "None."}
-                    </p>
+
+                    {/* DESCRIPTION - Always visible, high priority */}
+                    <SmartTextSection
+                        heading="Description"
+                        priority="high"
+                        inline={true}
+                    >
+                        {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
+                    </SmartTextSection>
+
+                    {/* CURATOR'S COMMENTS - Smart truncation for long content */}
+                    {hasComments && (
+                        <>
+                            <Separator />
+                            <SmartTextSection
+                                heading="Curator's Comments"
+                                priority="medium"
+                                inline={true}
+                            >
+                                {place.comments!}
+                            </SmartTextSection>
+                        </>
+                    )}
                     <Separator className="hidden sm:block" />
                     <p className="hidden sm:block">
                         <strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated:{" "}
                         {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
                     </p>
                 </div>
-
-                <div className="flex justify-center mt-4">
-                    <Button className="!font-bold" onClick={onClose}>
+                {/* CLOSE BUTTON */}
+                <div className="flex justify-center py-4 px-4 mt-auto">
+                    <Button className="font-bold w-full max-w-xs" onClick={onClose}>
                         Close
                     </Button>
                 </div>

@@ -15,6 +15,7 @@ const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePl
     </div>
   )
 });
+
 const PlaceListWithFilters = nextDynamic(() => import("@/components/PlaceListWithFilters").then(mod => mod.PlaceListWithFilters), {
   ssr: false,
   loading: () => (
@@ -28,7 +29,6 @@ export default async function HomePage() {
   const places = await getPlaces();
   // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease such people, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
   const excludedNames = ["Starbucks", "Panera"];
-  // Use a regular variable for filtered places
   const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
   return (

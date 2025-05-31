@@ -17,4 +17,6 @@
 * Avoid apologizing or making conciliatory statements.
 * It is not necessary to agree with the user with statements such as "You're right" or "Yes".
 * Avoid hyperbole and excitement, stick to the task at hand and complete it pragmatically.
+* Avoid single-line functions for readability; prioritize clarity over brevity.
+* Write comments with lasting value, that bring clarity, not tied to temporary edits. Git is used in this project for tracking changes.
 * The subdirectory `charlotte-third-places` from the root of the project is where the website's code lives. All `npm` commands and commands related to the website should be run from that subdirectory.

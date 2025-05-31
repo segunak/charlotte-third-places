@@ -14,6 +14,11 @@ export type Place = {
     hasReviews: string;
     description: string;
     website: string;
+    tiktok: string;
+    instagram: string;
+    youtube: string;
+    facebook: string;
+    twitter: string;
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
     appleMapsProfileURL: string;
