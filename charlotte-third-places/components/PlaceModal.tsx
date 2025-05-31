@@ -22,12 +22,6 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
-import {
-    Collapsible,
-    CollapsibleContent,
-    CollapsibleTrigger,
-} from "@/components/ui/collapsible";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 interface PlaceModalProps {
     place: Place | null;
@@ -38,7 +32,6 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const { showPlacePhotos } = useModalContext();
-    const isMobile = useIsMobile();
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -85,100 +78,96 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                {/* HEADER */}
-                <DialogHeader className="mt-5 sm:mt-0 px-4">
+                <DialogHeader className="mt-5 sm:mt-0">
                     <DialogTitle>{place.name}</DialogTitle>
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
-                <div className="px-4">
-                    <Separator />
-                </div>
-                {/* PRIMARY ACTIONS */}
-                <div className="flex justify-center space-x-4 mb-2 relative z-10 px-4">
-                    {googleMapsProfileURL && (
-                        <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
-                            <Button variant="outline">
-                                <Icons.google className="h-6 w-6" />
+                <Separator />
+                <div className="space-y-[0.6rem]">
+                    <div className="flex justify-center space-x-4">
+                        {googleMapsProfileURL && (
+                            <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
+                                <Button variant="outline">
+                                    <Icons.google className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
+                        )}
+                        {appleMapsProfileURL && (
+                            <ResponsiveLink href={appleMapsProfileURL} aria-label="Visit Apple Maps Page">
+                                <Button variant="outline">
+                                    <Icons.apple className="h-6 w-6" />
+                                </Button>
+                            </ResponsiveLink>
+                        )}
+                        {hasPhotos && (
+                            <Button
+                                variant="outline"
+                                onClick={() => showPlacePhotos(place, 'modal')}
+                                aria-label="View photos"
+                            >
+                                <Icons.camera className="h-6 w-6 text-primary" />
                             </Button>
-                        </ResponsiveLink>
-                    )}
-                    {appleMapsProfileURL && (
-                        <ResponsiveLink href={appleMapsProfileURL} aria-label="Visit Apple Maps Page">
-                            <Button variant="outline">
-                                <Icons.apple className="h-6 w-6" />
-                            </Button>
-                        </ResponsiveLink>
-                    )}
-                    {hasPhotos && (
-                        <Button
+                        )}
+                        {website && (
+                            <ResponsiveLink href={website} aria-label="Visit Website">
+                                <Button variant="outline">
+                                    <Icons.globe className="h-7 w-7" />
+                                </Button>
+                            </ResponsiveLink>
+                        )}
+                        <ShareButton
+                            placeName={place.name}
+                            url={shareUrl}
                             variant="outline"
-                            onClick={() => showPlacePhotos(place, 'modal')}
-                            aria-label="View photos"
-                        >
-                            <Icons.camera className="h-6 w-6 text-primary" />
-                        </Button>
-                    )}
-                    {website && (
-                        <ResponsiveLink href={website} aria-label="Visit Website">
-                            <Button variant="outline">
-                                <Icons.globe className="h-7 w-7" />
-                            </Button>
-                        </ResponsiveLink>
-                    )}
-                    <ShareButton
-                        placeName={place.name}
-                        url={shareUrl}
-                        variant="outline"
-                        displayType="icon"
-                        aria-label="Share Place"
-                    />
-                </div>
-                {/* MAIN CONTENT - Single scrollable section */}
-                <div className="space-y-4 px-2">
-                    {/* SOCIAL MEDIA */}
-                    {(instagram || tiktok || twitter || youtube || facebook) && (
-                        <>
-                            <Separator />
-                            <div className="flex justify-center space-x-3">
-                                {tiktok && (
-                                    <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                        <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                            <Icons.tiktok className="h-5 w-5 text-white" />
-                                        </div>
-                                    </ResponsiveLink>
-                                )}
-                                {instagram && (
-                                    <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                        <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                            <Icons.instagram className="h-5 w-5 text-white" />
-                                        </div>
-                                    </ResponsiveLink>
-                                )}
-                                {youtube && (
-                                    <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                        <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                            <Icons.youtube className="h-5 w-5 text-white" />
-                                        </div>
-                                    </ResponsiveLink>
-                                )}
-                                {facebook && (
-                                    <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                        <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                            <Icons.facebook className="h-5 w-5 text-white" />
-                                        </div>
-                                    </ResponsiveLink>
-                                )}
-                                {twitter && (
-                                    <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                        <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                            <Icons.twitter className="h-5 w-5 text-white" />
-                                        </div>
-                                    </ResponsiveLink>
-                                )}
-                            </div>
-                            <Separator />
-                        </>
-                    )}                     <div className="space-y-[0.6rem]">
+                            displayType="icon"
+                            aria-label="Share Place"
+                        />
+                    </div>
+                    <div className="space-y-4">
+                        {/* SOCIAL MEDIA */}
+                        {(instagram || tiktok || twitter || youtube || facebook) && (
+                            <>
+                                <Separator />
+                                <div className="flex justify-center space-x-3">
+                                    {tiktok && (
+                                        <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
+                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.tiktok className="h-5 w-5 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {instagram && (
+                                        <ResponsiveLink href={instagram} aria-label="Visit Instagram">
+                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                <Icons.instagram className="h-5 w-5 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {youtube && (
+                                        <ResponsiveLink href={youtube} aria-label="Visit YouTube">
+                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                <Icons.youtube className="h-5 w-5 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {facebook && (
+                                        <ResponsiveLink href={facebook} aria-label="Visit Facebook">
+                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                <Icons.facebook className="h-5 w-5 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                    {twitter && (
+                                        <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.twitter className="h-5 w-5 text-white" />
+                                            </div>
+                                        </ResponsiveLink>
+                                    )}
+                                </div>
+                                <Separator />
+                            </>
+                        )}
                         <p>
                             <span className="font-semibold">Address:</span> {place.address}
                         </p>
