@@ -50,7 +50,7 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
                 {isMobile && priority !== 'high' && (
                     <Button
                         variant="link"
-                        size="sm"
+                        size="lg"
                         className="px-0 h-auto text-primary"
                         onClick={() => setExpanded(!expanded)}
                     >
@@ -77,7 +77,7 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
         {isMobile && priority !== 'high' && (
             <Button
                 variant="link"
-                size="sm"
+                size="lg"
                 className="px-0 h-auto text-primary"
                 onClick={() => setExpanded(!expanded)}
             >
