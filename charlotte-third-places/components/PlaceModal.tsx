@@ -222,7 +222,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 </div>
                 {/* CLOSE BUTTON */}
                 <div className="flex justify-center py-4 px-4 mt-auto">
-                    <Button className="font-bold w-full max-w-md" onClick={onClose}>
+                    <Button className="font-bold w-full max-w-xs" onClick={onClose}>
                         Close
                     </Button>
                 </div>
