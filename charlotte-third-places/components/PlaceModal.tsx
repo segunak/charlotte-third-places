@@ -122,51 +122,47 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             displayType="icon"
                             aria-label="Share Place"
                         />
-                    </div>
-                    <Separator />
+                    </div>                    <Separator />
                     <div className="space-y-2">
-                        {/* SOCIAL MEDIA */}
                         {(instagram || tiktok || twitter || youtube || facebook) && (
-                            <>
-                                <div className="flex justify-center space-x-3">
-                                    {tiktok && (
+                            <p>
+                                <span className="font-semibold">Socials:</span>
+                                <span className="inline-flex items-center space-x-2 ml-2">                                    {tiktok && (
                                         <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.tiktok className="h-5 w-5 text-white" />
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.tiktok className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
-                                    )}
-                                    {instagram && (
+                                    )}                                    {instagram && (
                                         <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                <Icons.instagram className="h-5 w-5 text-white" />
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                <Icons.instagram className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {youtube && (
                                         <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                                <Icons.youtube className="h-5 w-5 text-white" />
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                <Icons.youtube className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {facebook && (
                                         <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                                <Icons.facebook className="h-5 w-5 text-white" />
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                <Icons.facebook className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {twitter && (
                                         <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                            <div className="h-9 w-9 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.twitter className="h-5 w-5 text-white" />
+                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.twitter className="h-4 w-4 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
-                                </div>
-                                <Separator />
-                            </>
+                                </span>
+                            </p>
                         )}
                         <p>
                             <span className="font-semibold">Address:</span> {place.address}
@@ -179,11 +175,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         </p>
                         <p>
                             <span className="font-semibold">Purchase Required:</span> {place.purchaseRequired}
-                        </p>
-                        <p>
+                        </p>                        <p>
                             <span className="font-semibold">Parking:</span> {place.parking.join(", ")}
-                        </p>
-                        <p>
+                        </p>                        <p>
                             <span className="font-semibold">Free Wi-Fi:</span> {place.freeWiFi}
                         </p>
                         <p>
@@ -197,6 +191,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <SmartTextSection
                         heading="Description"
                         priority="high"
+                        inline={true}
                     >
                         {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                     </SmartTextSection>
@@ -208,6 +203,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             <SmartTextSection
                                 heading="Curator's Comments"
                                 priority="medium"
+                                inline={true}
                             >
                                 {place.comments!}
                             </SmartTextSection>

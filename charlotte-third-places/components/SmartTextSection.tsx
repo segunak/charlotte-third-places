@@ -9,6 +9,7 @@ interface SmartTextSectionProps {
     heading: string;
     children: string;
     priority?: 'high' | 'medium' | 'low';
+    inline?: boolean;
 }
 
 /**
@@ -18,16 +19,46 @@ interface SmartTextSectionProps {
  * - high: Always shows full content (no truncation)
  * - medium: Truncates on mobile with "Read more" option
  * - low: Truncates on mobile with "Read more" option
+ * 
+ * Styling options:
+ * - inline: false (default) - Heading appears as block element on separate line
+ * - inline: true - Heading appears inline with content (like "Label: content")
  */
 export const SmartTextSection: FC<SmartTextSectionProps> = ({
     heading,
     children,
-    priority = 'medium'
+    priority = 'medium',
+    inline = false
 }) => {
     const isMobile = useIsMobile();
     const [expanded, setExpanded] = useState(false);
-
     const shouldTruncate = isMobile && !expanded && priority !== 'high';
+
+    if (inline) {
+        return (
+            <div className="space-y-2">
+                <p>
+                    <span className="font-semibold">{heading}:</span>
+                    <span className={clsx(
+                        "ml-1",
+                        shouldTruncate && "line-clamp-4"
+                    )}>
+                        {children}
+                    </span>
+                </p>
+                {isMobile && priority !== 'high' && (
+                    <Button
+                        variant="link"
+                        size="sm"
+                        className="px-0 h-auto text-primary"
+                        onClick={() => setExpanded(!expanded)}
+                    >
+                        {expanded ? "Show less" : "Read more"}
+                    </Button>
+                )}
+            </div>
+        );
+    }
 
     return (<div className="space-y-2">
         <h3 className="font-semibold">{heading}</h3>
