@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
@@ -29,90 +29,179 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { SmartTextSection } from "@/components/SmartTextSection";
 
-// --- Utility functions from PhotosModal ---
+// Simple gray placeholder
+const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
+
+// --- Utility functions from PhotosModal (exact replica) ---
 const cleanPhotoUrl = (url: string): string => {
-    if (!url) return '';
-    if (typeof url === 'string') {
-        const urlMatch = url.match(/(https?:\/\/[^\s,\[\]'"]+)/);
-        if (urlMatch && urlMatch[0]) {
-            return urlMatch[0];
-        }
+    if (typeof url === 'string' && url.startsWith('http')) {
+        return url.trim();
     }
-    return url;
+    return '';
 };
 
 const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
     const cleanedUrl = cleanPhotoUrl(url);
-    if (!cleanedUrl || !cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-    // Adjust regex to handle URLs that might already have size parameters
-    return cleanedUrl.replace(/=w\d+(?:-h\d+)?/, `=w${width}`);
+
+    // Early returns for invalid URLs or special cases
+    if (!cleanedUrl) return '';
+    // Assume non-google URLs are already optimized or don't support this
+    if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
+    // Most problematic URLs should be filtered out by backend, but this is a fallback
+    // if any restricted URLs make it through to the frontend
+    // The _is_valid_photo_url method in both OutscraperProvider and GoogleMapsProvider
+    // should have already removed these, but we keep this check as a defense-in-depth measure
+    if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
+        console.warn(`Potentially restricted Google photo URL detected: ${cleanedUrl}`);
+        return cleanedUrl;
+    }
+
+    // Check if already has desired width parameter (more robust check)
+    const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
+    if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
+
+    // Try replacing existing size parameters (e.g., =s1600, =w800-h600)
+    const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
+    if (sizeRegex.test(cleanedUrl)) {
+        return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
+    }
+
+    // If URL has other parameters but no size, append (less common)
+    if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
+        // Avoid appending if it might break other params; return as is
+        return cleanedUrl;
+    }
+
+    // If no parameters, append the width parameter
+    if (!cleanedUrl.includes('=')) {
+        return cleanedUrl + `=w${width}-k-no`;
+    }
+
+    // Default fallback: return cleaned URL if unsure
+    return cleanedUrl;
 };
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place }: { place: Place }) {
     const id = place.recordId;
-    const photos = useMemo(() => place.photos || [], [place.photos]);
-    const hasPhotos = photos.length > 0;
-    const optimizedPhotos = useMemo(() => photos.map(photo => optimizeGooglePhotoUrl(photo, 1024)), [photos]);
+
+    // Get photos array without filtering - move this to top level
+    const photos = useMemo(() => (place?.photos ?? []), [place]);
+    const totalPhotos = photos.length;
 
     const [api, setApi] = useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [totalSlides, setTotalSlides] = useState<number>(0);
-    const [loadingSlide, setLoadingSlide] = useState<number | null>(null);
     const [loadedIndices, setLoadedIndices] = useState<Set<number>>(new Set<number>());
+    const [failedIndices, setFailedIndices] = useState<Set<number>>(new Set<number>());
     const [showThumbnails, setShowThumbnails] = useState(true);
     const isMobile = useIsMobile();
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
 
-    // --- Effects from PhotosModal (adapted) ---
-    useEffect(() => {
-        if (place?.photos?.length) {
-            setTotalSlides(place.photos.length);
-            setCurrentSlide(0);
-            setLoadedIndices(new Set<number>());
-            setLoadingSlide(0); // Mark first slide as loading initially
-            api?.scrollTo(0, true);
-        }
-    }, [place?.photos, api]);
+    // Build a filtered array of visible photos and a mapping to their original indices
+    const visiblePhotoData = useMemo(() => {
+        const arr: { photo: string; originalIdx: number }[] = [];
+        photos.forEach((photo, idx) => {
+            if (!failedIndices.has(idx)) {
+                arr.push({ photo, originalIdx: idx });
+            }
+        });
+        return arr;
+    }, [photos, failedIndices]);
+    const visiblePhotos = visiblePhotoData.map((d) => d.photo);
+    const visibleToOriginalIdx = visiblePhotoData.map((d) => d.originalIdx);
+    const visibleSlideCount = visiblePhotos.length;
+    const hasVisiblePhotos = visibleSlideCount > 0;
+    const hasPhotos = totalPhotos > 0;
 
+    // Function to handle image loading errors
+    const handleImageError = useCallback((index: number, photoUrl: string) => {
+        console.error(`Failed to load image ${index + 1}: ${photoUrl}`);
+        setFailedIndices(prev => {
+            // Avoid infinite loops if state update itself causes issues
+            if (prev.has(index)) return prev;
+            const updated = new Set(prev);
+            updated.add(index);
+            return updated;
+        });
+    }, []);
+
+    // Reset state when place changes
+    useEffect(() => {
+        if (totalPhotos > 0) {
+            setFailedIndices(new Set<number>());
+            setLoadedIndices(new Set<number>());
+            setCurrentSlide(0);
+            setShowThumbnails(true);
+        } else {
+            setLoadedIndices(new Set<number>());
+            setFailedIndices(new Set<number>());
+            setCurrentSlide(0);
+        }
+    }, [totalPhotos]);
+
+    // Handle carousel selection and update loaded state
     useEffect(() => {
         if (!api) return;
 
         const onSelect = () => {
-            if (!api) return;
             const selected = api.selectedScrollSnap();
-            setCurrentSlide(selected);
-            if (!loadedIndices.has(selected)) {
-                setLoadingSlide(selected);
-            } else if (loadingSlide === selected) {
-                setLoadingSlide(null);
+            // Only update state if the value has actually changed
+            // This prevents unnecessary re-renders
+            if (selected !== currentSlide) {
+                setCurrentSlide(selected);
+
+                // Mark the original index as loaded only if we have valid data
+                if (selected >= 0 && selected < visibleToOriginalIdx.length) {
+                    const origIdx = visibleToOriginalIdx[selected];
+                    setLoadedIndices(prev => {
+                        // Only update if not already in the set
+                        if (!prev.has(origIdx)) {
+                            const updated = new Set(prev);
+                            updated.add(origIdx);
+                            return updated;
+                        }
+                        return prev;
+                    });
+                }
             }
         };
 
-        setTotalSlides(api.scrollSnapList().length);
-        setCurrentSlide(api.selectedScrollSnap());
-        // Initial loading slide set above
-
         api.on("select", onSelect);
-        api.on("reInit", onSelect);
+
+        // Initial selection - only call if needed
+        if (api.selectedScrollSnap() !== currentSlide) {
+            onSelect();
+        }
 
         return () => {
             api.off("select", onSelect);
-            api.off("reInit", onSelect);
         };
-    }, [api, loadedIndices, loadingSlide]);
+    }, [api, visibleToOriginalIdx, currentSlide]);
 
-    // Ensure the first image is marked as loaded if already loaded
+    // Helper: get indices to render (current, prev, next)
+    const activeIndices = useMemo(() => {
+        if (!hasVisiblePhotos) return new Set<number>();
+        const prev = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
+        const next = (currentSlide + 1) % visiblePhotos.length;
+        return new Set([prev, currentSlide, next]);
+    }, [currentSlide, visiblePhotos.length, hasVisiblePhotos]);
+
+    // Preload next/prev images
     useEffect(() => {
-        if (hasPhotos && loadedIndices.size === 0 && typeof window !== 'undefined') {
-            const img = document.querySelector(
-                'img[alt="' + place.name + ' photo 1 of ' + photos.length + '"]'
-            ) as HTMLImageElement | null;
-            if (img && img.complete) {
-                setLoadedIndices((prev) => new Set(prev).add(0));
-            }
-        }
-    }, [hasPhotos, loadedIndices, place.name, photos.length]);
+        if (!hasVisiblePhotos) return;
+        const preload = (idx: number) => {
+            const photo = visiblePhotos[idx];
+            if (!photo) return;
+            const img = new window.Image();
+            img.src = optimizeGooglePhotoUrl(photo, 800);
+        };
+        const indices = activeIndices;
+        indices.forEach(idx => {
+            if (idx !== currentSlide) preload(idx);
+        });
+    }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);    // Determine if loop should be enabled - moved from hook to render time calculation
+    const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
+
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
@@ -186,43 +275,58 @@ export function PlacePageClient({ place }: { place: Place }) {
                             </div>
                             <Carousel
                                 setApi={setApi}
-                                opts={{ loop: photos.length > 1, align: "center" }}
+                                opts={{ loop: enableLoop, align: "center" }}
                                 className="w-full h-[300px] md:h-[500px]" // Increased height for better visibility
                             >
                                 <CarouselContent className="h-full">
-                                    {optimizedPhotos.map((photo, idx) => (
-                                        <CarouselItem key={idx} className="h-full bg-black/5 flex items-center justify-center">
-                                            <div className="relative w-full h-[300px] md:h-[500px] flex items-center justify-center">
-                                                {!loadedIndices.has(idx) && (
-                                                    <div className="absolute inset-0 flex items-center justify-center z-10 bg-black/10">
-                                                        <Icons.loader className="h-10 w-10 animate-spin text-primary" />
-                                                    </div>
-                                                )}
-                                                <Image
-                                                    src={photo}
-                                                    alt={`${place.name} photo ${idx + 1} of ${photos.length}`}
-                                                    fill
-                                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
-                                                    className="!relative !h-auto !w-auto max-h-[300px] md:max-h-[500px] max-w-full object-contain transition-opacity duration-300"
-                                                    style={{
-                                                        opacity: loadedIndices.has(idx) ? 1 : 0,
-                                                        transition: "opacity 0.3s",
-                                                    }}
-                                                    priority={idx === 0}
-                                                    onLoad={() => {
-                                                        setLoadedIndices((prev) => new Set(prev).add(idx));
-                                                    }}
-                                                    onError={() => {
-                                                        setLoadedIndices((prev) => new Set(prev).add(idx));
-                                                    }}
-                                                    unoptimized={photo.includes('googleusercontent.com')}
-                                                    referrerPolicy="no-referrer"
-                                                />
-                                            </div>
-                                        </CarouselItem>
-                                    ))}
+                                    {visiblePhotos.map((photo, idx) => {
+                                        const origIdx = visibleToOriginalIdx[idx];
+                                        const isActive = activeIndices.has(idx);
+                                        const quality = isActive ? 80 : 40;
+                                        const width = isActive ? 1024 : 400;
+                                        let isPriority = false;
+                                        if (isActive) isPriority = true;
+                                        return (
+                                            <CarouselItem
+                                                key={`photo-${origIdx}`}
+                                                className="h-full bg-black/5 flex items-center justify-center"
+                                            >
+                                                <div className="relative w-full h-[300px] md:h-[500px] flex items-center justify-center">
+                                                    {isActive ? (
+                                                        <Image
+                                                            src={optimizeGooglePhotoUrl(photo, width)}
+                                                            alt={`${place?.name ?? ''} photo ${currentSlide + 1}`}
+                                                            fill
+                                                            quality={quality}
+                                                            priority={isPriority}
+                                                            sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 800px"
+                                                            placeholder="blur"
+                                                            blurDataURL={blurDataURL}
+                                                            className={cn(
+                                                                "object-contain transition-opacity duration-300 ease-in-out",
+                                                            )}
+                                                            style={{
+                                                                objectFit: 'contain',
+                                                                objectPosition: 'center',
+                                                            }}
+                                                            onLoad={() => {
+                                                                setLoadedIndices(prev => new Set(prev).add(origIdx));
+                                                            }}
+                                                            onError={() => handleImageError(origIdx, photo)}
+                                                            unoptimized={photo.includes('googleusercontent.com')}
+                                                            referrerPolicy="no-referrer"
+                                                        />
+                                                    ) : (
+                                                        <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
+                                                            <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 17l6-6 4 4 8-8" /></svg>
+                                                        </div>
+                                                    )}
+                                                </div>
+                                            </CarouselItem>
+                                        );
+                                    })}
                                 </CarouselContent>
-                                {photos.length > 1 && (
+                                {visibleSlideCount > 1 && (
                                     <>
                                         <CarouselPrevious
                                             variant="ghost"
@@ -237,13 +341,24 @@ export function PlacePageClient({ place }: { place: Place }) {
                                     </>
                                 )}
                             </Carousel>
+
+                            {/* Show message when no photos are visible */}
+                            {!hasVisiblePhotos && hasPhotos && (
+                                <div className="absolute inset-0 flex items-center justify-center text-white text-center p-4 z-30">
+                                    <div className="bg-black/80 p-6 rounded-lg max-w-sm shadow-lg">
+                                        <Icons.alertCircle className="h-12 w-12 mx-auto mb-4 text-yellow-400" />
+                                        <h3 className="text-lg font-semibold mb-2">No Photos Available</h3>
+                                        <p className="text-sm text-white/80">We couldn't load the photos for this place at the moment.</p>
+                                    </div>
+                                </div>
+                            )}
                         </div>
 
-                        {/* Thumbnails (only if more than 1 photo) */}
-                        {photos.length > 1 && (
+                        {/* Thumbnails (only if more than 1 visible photo) */}
+                        {visibleSlideCount > 1 && (
                             <div className="bg-card border border-gray-300 shadow-sm rounded-lg p-2">
                                 <div className="flex justify-between items-center mb-1 px-1">
-                                    <span className="text-xs text-muted-foreground">Photo {currentSlide + 1} of {totalSlides}</span>
+                                    <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
                                     <Button
                                         variant="ghost"
                                         size="sm"
@@ -256,29 +371,36 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 {showThumbnails && (
                                     <ScrollArea className="h-20 w-full whitespace-nowrap rounded-md">
                                         <div className="flex gap-2 py-1">
-                                            {photos.map((photo, idx) => (
-                                                <button
-                                                    key={idx}
-                                                    className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
-                                                        idx === currentSlide
-                                                            ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
-                                                            : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
-                                                    )}
-                                                    onClick={() => api?.scrollTo(idx)}
-                                                    aria-label={`Go to photo ${idx + 1}`}
-                                                >
-                                                    <Image
-                                                        src={optimizeGooglePhotoUrl(photo, 100)} // Smaller size for thumbs
-                                                        alt={`Thumbnail ${idx + 1}`}
-                                                        fill
-                                                        sizes="64px"
-                                                        className="object-cover"
-                                                        referrerPolicy="no-referrer"
-                                                        unoptimized={photo.includes('googleusercontent.com')}
-                                                    />
-                                                </button>
-                                            ))}
+                                            {visiblePhotos.map((photo, idx) => {
+                                                const origIdx = visibleToOriginalIdx[idx];
+                                                const thumbVisibleNumber = idx + 1;
+                                                return (
+                                                    <button
+                                                        key={`thumb-${origIdx}`}
+                                                        className={cn(
+                                                            "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
+                                                            idx === currentSlide
+                                                                ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
+                                                                : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
+                                                        )}
+                                                        onClick={() => api?.scrollTo(idx)}
+                                                        aria-label={`Go to photo ${thumbVisibleNumber}`}
+                                                    >
+                                                        <Image
+                                                            src={optimizeGooglePhotoUrl(photo, 100)} // Smaller size for thumbs
+                                                            alt={`Thumbnail ${thumbVisibleNumber}`}
+                                                            fill
+                                                            sizes="64px"
+                                                            className="object-cover"
+                                                            placeholder="blur"
+                                                            blurDataURL={blurDataURL}
+                                                            referrerPolicy="no-referrer"
+                                                            unoptimized={photo.includes('googleusercontent.com')}
+                                                            onError={() => handleImageError(origIdx, photo)}
+                                                        />
+                                                    </button>
+                                                );
+                                            })}
                                         </div>
                                         <ScrollBar orientation="horizontal" />
                                     </ScrollArea>
