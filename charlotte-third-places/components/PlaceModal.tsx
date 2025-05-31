@@ -64,17 +64,18 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         return null;
     }
 
-    const website = place.website?.trim();
+    const hasComments = place.comments?.trim();
+    const hasPhotos = place.photos && place.photos.length > 0;
+
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
-    const hasPhotos = place.photos && place.photos.length > 0;
-    const hasComments = place.comments?.trim();
 
-    const instagram = "undefined" // place.instagram?.trim();
-    const tiktok = undefined; // place.tiktok?.trim();
-    const twitter = undefined; // place.twitter?.trim();
-    const youtube = undefined // place.youtube?.trim();
-    const facebook = undefined; // place.facebook?.trim();
+    const website = place.website?.trim();
+    const instagram = place.instagram?.trim();
+    const tiktok = place.tiktok?.trim();
+    const twitter = place.twitter?.trim();
+    const youtube = place.youtube?.trim();
+    const facebook = place.facebook?.trim();
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
