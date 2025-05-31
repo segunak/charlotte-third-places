@@ -122,10 +122,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             displayType="icon"
                             aria-label="Share Place"
                         />
-                    </div>                    <Separator />
+                    </div>
+                    <Separator />
                     <div className="space-y-2">
                         {(instagram || tiktok || twitter || youtube || facebook) && (
-                            <p>
+                            <div>
                                 <span className="font-semibold">Socials:</span>
                                 <span className="inline-flex items-center space-x-2 ml-2">
                                     {tiktok && (
@@ -164,7 +165,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                         </ResponsiveLink>
                                     )}
                                 </span>
-                            </p>
+                            </div>
                         )}
                         <p>
                             <span className="font-semibold">Address:</span> {place.address}
@@ -177,9 +178,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         </p>
                         <p>
                             <span className="font-semibold">Purchase Required:</span> {place.purchaseRequired}
-                        </p>                        <p>
+                        </p>
+                        <p>
                             <span className="font-semibold">Parking:</span> {place.parking.join(", ")}
-                        </p>                        <p>
+                        </p>
+                        <p>
                             <span className="font-semibold">Free Wi-Fi:</span> {place.freeWiFi}
                         </p>
                         <p>

@@ -113,11 +113,16 @@ export function PlacePageClient({ place }: { place: Place }) {
             }
         }
     }, [hasPhotos, loadedIndices, place.name, photos.length]);
-
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
     const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`;
+
+    const instagram = place.instagram?.trim();
+    const tiktok = place.tiktok?.trim();
+    const twitter = place.twitter?.trim();
+    const youtube = place.youtube?.trim();
+    const facebook = place.facebook?.trim();
 
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl"> {/* Increased max-width */}
@@ -309,7 +314,6 @@ export function PlacePageClient({ place }: { place: Place }) {
                                             </Button>
                                         </ResponsiveLink>
                                     )}
-
                                     <ShareButton
                                         placeName={place.name}
                                         url={shareUrl}
@@ -318,20 +322,61 @@ export function PlacePageClient({ place }: { place: Place }) {
                                         aria-label="Share Place"
                                     />
                                 </div>
-
                                 <Separator />
+                                <div className="space-y-2">
+                                    {(instagram || tiktok || twitter || youtube || facebook) && (
+                                        <div>
+                                            <span className="font-semibold">Socials:</span>
+                                            <span className="inline-flex items-center space-x-2 ml-2">
+                                                {tiktok && (
+                                                    <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                            <Icons.tiktok className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                                {instagram && (
+                                                    <ResponsiveLink href={instagram} aria-label="Visit Instagram">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                            <Icons.instagram className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                                {youtube && (
+                                                    <ResponsiveLink href={youtube} aria-label="Visit YouTube">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                            <Icons.youtube className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                                {facebook && (
+                                                    <ResponsiveLink href={facebook} aria-label="Visit Facebook">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                            <Icons.facebook className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                                {twitter && (
+                                                    <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                            <Icons.twitter className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                            </span>
+                                        </div>
+                                    )}
 
-                                <p><strong>Type:</strong> {place.type.join(", ")}</p>
-                                <p><strong>Address:</strong> {place.address}</p>
-                                <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
-                                <p><strong>Size:</strong> {place.size}</p>
-                                <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
-                                <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
-                                <p><strong>Free Wi-Fi:</strong> {place.freeWiFi}</p>
-                                <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
-
+                                    <p><strong>Type:</strong> {place.type.join(", ")}</p>
+                                    <p><strong>Address:</strong> {place.address}</p>
+                                    <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
+                                    <p><strong>Size:</strong> {place.size}</p>
+                                    <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
+                                    <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
+                                    <p><strong>Free Wi-Fi:</strong> {place.freeWiFi}</p>
+                                    <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
+                                </div>
                                 <Separator />
-
                                 {/* DESCRIPTION - Always visible, high priority */}
                                 <SmartTextSection
                                     heading="Description"
