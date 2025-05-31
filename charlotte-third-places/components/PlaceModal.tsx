@@ -83,7 +83,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
-                <div className="space-y-[0.6rem]">
+                <div className="space-y-4">
                     <div className="flex justify-center space-x-4">
                         {googleMapsProfileURL && (
                             <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
@@ -123,11 +123,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             aria-label="Share Place"
                         />
                     </div>
-                    <div className="space-y-4">
+                    <Separator />
+                    <div className="space-y-2">
                         {/* SOCIAL MEDIA */}
                         {(instagram || tiktok || twitter || youtube || facebook) && (
                             <>
-                                <Separator />
                                 <div className="flex justify-center space-x-3">
                                     {tiktok && (
                                         <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
