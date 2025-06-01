@@ -39,7 +39,7 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
             <div className="space-y-2">
                 <div className="relative">
                     <p className={clsx(
-                        shouldTruncate && "line-clamp-4"
+                        shouldTruncate && "line-clamp-5"
                     )}>
                         <span className="font-semibold">{heading}:</span>
                         <span className="ml-1">{children}</span>
@@ -71,7 +71,7 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
             <div className="relative">
                 <p className={clsx(
                     "text-foreground leading-relaxed",
-                    shouldTruncate && "line-clamp-4"
+                    shouldTruncate && "line-clamp-5"
                 )}>
                     {children}
                 </p>
