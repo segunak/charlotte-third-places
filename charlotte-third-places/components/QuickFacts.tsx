@@ -13,10 +13,9 @@ interface QuickFactsProps {
     hasCinnamonRolls: string;
 }
 
-// Icon mappings for each attribute type
 const attributeIcons = {
     address: <Icons.mapPin className="h-4 w-4 text-red-500" />,
-    neighborhood: <span className="text-base">🏘️</span>,
+    neighborhood: <Icons.houses className="h-4 w-4 text-amber-600" />,
     size: (value: string) => {
         const sizeIconMap: { [key: string]: React.ReactNode } = {
             "Small": <Icons.mobile className="h-4 w-4 text-muted-foreground" />,
@@ -26,10 +25,10 @@ const attributeIcons = {
         return sizeIconMap[value] || <span className="text-base">📏</span>;
     },
     parking: <Icons.car className="h-4 w-4 text-blue-500" />,
-    wifi: <span className="text-base">📶</span>,
-    purchase: <span className="text-base">💸</span>,
-    cinnamonRolls: <span className="text-base">🥐</span>,
-    socials: <span className="text-base">🔗</span>,
+    wifi: <Icons.wifi className="h-4 w-4 text-sky-500" />,
+    purchase: <Icons.dollarSign className="h-4 w-4 text-green-600" />,
+    cinnamonRolls: <Icons.cinnamonRoll className="h-4 w-4 text-amber-800" />,
+    socials: <Icons.boldLink className="h-4 w-4 text-blue-600" />,
 };
 
 const YesNoBadge: FC<{
@@ -40,7 +39,7 @@ const YesNoBadge: FC<{
     const isYes = value.toLowerCase() === "yes";
 
     let badgeVariant: "default" | "outline" = "outline";
-    let className = "gap-1 px-2 py-0.5 rounded-full text-xs font-medium";
+    let className = "gap-1 px-2 py-0.5 rounded-full font-medium";
 
     if (variant === "positive" && isYes) {
         className += " bg-emerald-100 text-emerald-900 border-emerald-200";
@@ -73,7 +72,7 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
 }) => (
     <Badge
         variant="secondary"
-        className={cn("rounded-full px-2 py-0.5 text-xs font-medium gap-1", className)}
+        className={cn("rounded-full px-2 py-0.5 text-sm font-medium gap-1", className)}
     >
         {icon && <span className="flex-shrink-0">{icon}</span>}
         <span className="truncate">{text}</span>
@@ -135,7 +134,7 @@ export const QuickFacts: FC<QuickFactsProps & { socials?: React.ReactNode }> = (
                         <td className="py-1.5 align-middle">
                             <div className="flex flex-wrap gap-1">
                                 {parking.length > 0 ? parking.map((p) => (
-                                    <InfoTag key={p} text={p} className="text-xs" />
+                                    <InfoTag key={p} text={p} />
                                 )) : <span className="text-muted-foreground">None</span>}
                             </div>
                         </td>

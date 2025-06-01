@@ -2,8 +2,10 @@
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { MdEditLocationAlt } from "react-icons/md";
+import { MdEditLocationAlt, MdAttachMoney } from "react-icons/md";
+import { BsFillHousesFill } from "react-icons/bs";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { TbCakeRoll } from "react-icons/tb";
 import {
   FaLocationPin,
   FaMapPin,
@@ -13,7 +15,8 @@ import {
   FaXTwitter,
   FaFacebookF,
   FaLinkedinIn,
-  FaCar
+  FaCar,
+  FaWifi
 } from "react-icons/fa6";
 import {
   FaFilter,
@@ -21,14 +24,15 @@ import {
   FaComment,
   FaArrowRight,
   FaArrowLeft,
-  FaLinkedin,
   FaArrowsAltH,
   FaChevronDown,
   FaChevronUp,
   FaMobileAlt,
+  FaDollarSign,
   FaTabletAlt,
   FaDesktop,
-  FaCircle
+  FaCircle,
+  FaLink
 } from "react-icons/fa";
 import {
   IoHome,
@@ -66,10 +70,14 @@ export const Icons = {
   moon: LuMoon,
   home: IoHome,
   chevronDown: FaChevronDown,
+  dollarSign: FaDollarSign,
   chevronUp: FaChevronUp,
+  cinnamonRoll: TbCakeRoll,
   alertCircle: IoAlertCircle,
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
+  houses: BsFillHousesFill,
+  wifi: FaWifi,
   arrowLeft: FaArrowLeft,
   mobile: FaMobileAlt,
   tablet: FaTabletAlt,
@@ -105,6 +113,7 @@ export const Icons = {
   twitter: FaXTwitter,
   reddit: IoLogoReddit,
   link: LuLink,
+  boldLink: FaLink,
   externalLink: LuExternalLink,
   locate: Locate,
   loader: Loader2,
