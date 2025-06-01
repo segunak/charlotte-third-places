@@ -476,17 +476,17 @@ export function PlacePageClient({ place }: { place: Place }) {
                                                         </div>
                                                     </ResponsiveLink>
                                                 )}
-                                                {twitter && (
-                                                    <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                            <Icons.twitter className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
                                                 {linkedIn && (
                                                     <ResponsiveLink href={linkedIn} aria-label="Visit LinkedIn">
                                                         <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#0077B5] hover:scale-110 transition-transform">
                                                             <Icons.linkedIn className="h-4 w-4 text-white" />
+                                                        </div>
+                                                    </ResponsiveLink>
+                                                )}
+                                                {twitter && (
+                                                    <ResponsiveLink href={twitter} aria-label="Visit Twitter">
+                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                            <Icons.twitter className="h-4 w-4 text-white" />
                                                         </div>
                                                     </ResponsiveLink>
                                                 )}

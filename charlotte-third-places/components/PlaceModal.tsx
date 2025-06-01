@@ -13,6 +13,8 @@ import {
     useMemo,
     useState
 } from "react";
+import React from "react";
+import { cn } from "@/lib/utils";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { SmartTextSection } from "@/components/SmartTextSection";
 import { useModalContext } from "@/contexts/ModalContext";
@@ -68,27 +70,51 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
 
     // Socials row for QuickFacts
     const socials = [
-        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
         { url: tiktok, icon: <Icons.tiktok className="h-6 w-6 text-black" />, label: "TikTok" },
-        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
+        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
         { url: youtube, icon: <Icons.youtube className="h-6 w-6 text-red-600" />, label: "YouTube" },
         { url: facebook, icon: <Icons.facebook className="h-6 w-6 text-blue-700" />, label: "Facebook" },
         { url: linkedIn, icon: <Icons.linkedIn className="h-6 w-6 text-blue-800" />, label: "LinkedIn" },
-    ].filter(s => s.url);
-    const socialsRow = socials.length > 0 ? (
-        <div className="flex flex-row flex-wrap gap-3 items-center">
-            {socials.map(({ url, icon, label }) => (
-                <a
-                    key={label}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                    className="hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-primary rounded-full"
-                >
-                    {icon}
-                </a>
-            ))}
+        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
+    ].filter(s => s.url); const socialsRow = socials.length > 0 ? (
+        <div className="flex flex-row flex-wrap gap-2 items-center">
+            {socials.map(({ url, icon, label }) => {
+                // Style based on platform
+                let bgClass = "bg-gray-600"; // default
+                let iconClass = "h-4 w-4 text-white";
+
+                if (label === "Instagram") {
+                    bgClass = "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600";
+                } else if (label === "TikTok") {
+                    bgClass = "bg-black";
+                } else if (label === "Twitter") {
+                    bgClass = "bg-black";
+                } else if (label === "YouTube") {
+                    bgClass = "bg-red-600";
+                } else if (label === "Facebook") {
+                    bgClass = "bg-[#1877F2]";
+                } else if (label === "LinkedIn") {
+                    bgClass = "bg-[#0077B5]";
+                }
+
+                return (
+                    <a
+                        key={label}
+                        href={url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={label}
+                        className={cn(
+                            "h-7 w-7 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+                            bgClass
+                        )}
+                    >
+                        {React.cloneElement(icon as React.ReactElement, {
+                            className: iconClass
+                        })}
+                    </a>
+                );
+            })}
         </div>
     ) : undefined;
 
@@ -153,7 +179,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
 
                     <Separator />
-                    {/* Quick facts - new compact grid */}
                     <QuickFacts
                         address={place.address}
                         neighborhood={place.neighborhood}

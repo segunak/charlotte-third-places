@@ -111,7 +111,8 @@ export const Icons = {
   camera: IoCamera,
   cameraOutline: IoCameraOutline,
   chevronLeft: IoChevronBack,
-  chevronRight: IoChevronForward,  close: IoClose,
+  chevronRight: IoChevronForward,
+  close: IoClose,
   facebook: FaFacebookF,
   car: FaCar,
   logo: (props: IconProps) => (
