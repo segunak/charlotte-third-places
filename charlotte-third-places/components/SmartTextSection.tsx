@@ -1,8 +1,8 @@
 "use client";
 
 import { FC, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Icons } from "@/components/Icons";
 import clsx from "clsx";
 
 interface SmartTextSectionProps {
@@ -33,6 +33,7 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
     const isMobile = useIsMobile();
     const [expanded, setExpanded] = useState(false);
     const shouldTruncate = isMobile && !expanded && priority !== 'high';
+
     if (inline) {
         return (
             <div className="space-y-2">
@@ -48,42 +49,49 @@ export const SmartTextSection: FC<SmartTextSectionProps> = ({
                     )}
                 </div>
                 {isMobile && priority !== 'high' && (
-                    <Button
-                        variant="link"
-                        size="lg"
-                        className="px-0 h-auto text-primary"
+                    <div
+                        className="w-full py-2 cursor-pointer flex items-center justify-between transition-colors"
                         onClick={() => setExpanded(!expanded)}
                     >
-                        {expanded ? "Show less" : "Read more"}
-                    </Button>
+                        <span className="text-primary font-medium">{expanded ? "Show less" : "Read more"}</span>
+                        {expanded ? (
+                            <Icons.chevronUp className="h-4 w-4 text-primary" />
+                        ) : (
+                            <Icons.chevronDown className="h-4 w-4 text-primary" />
+                        )}
+                    </div>
                 )}
             </div>
         );
     }
 
-    return (<div className="space-y-2">
-        <h3 className="font-semibold">{heading}</h3>
-        <div className="relative">
-            <p className={clsx(
-                "text-foreground leading-relaxed",
-                shouldTruncate && "line-clamp-4"
-            )}>
-                {children}
-            </p>
-            {shouldTruncate && (
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />
+    return (
+        <div className="space-y-2">
+            <h3 className="font-semibold">{heading}</h3>
+            <div className="relative">
+                <p className={clsx(
+                    "text-foreground leading-relaxed",
+                    shouldTruncate && "line-clamp-4"
+                )}>
+                    {children}
+                </p>
+                {shouldTruncate && (
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />
+                )}
+            </div>
+            {isMobile && priority !== 'high' && (
+                <div
+                    className="w-full py-2 cursor-pointer flex items-center justify-between transition-colors"
+                    onClick={() => setExpanded(!expanded)}
+                >
+                    <span className="text-primary font-medium">{expanded ? "Show less" : "Read more"}</span>
+                    {expanded ? (
+                        <Icons.chevronUp className="h-4 w-4 text-primary" />
+                    ) : (
+                        <Icons.chevronDown className="h-4 w-4 text-primary" />
+                    )}
+                </div>
             )}
         </div>
-        {isMobile && priority !== 'high' && (
-            <Button
-                variant="link"
-                size="lg"
-                className="px-0 h-auto text-primary"
-                onClick={() => setExpanded(!expanded)}
-            >
-                {expanded ? "Show less" : "Read more"}
-            </Button>
-        )}
-    </div>
     );
 };

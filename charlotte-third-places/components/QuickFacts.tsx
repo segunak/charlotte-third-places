@@ -204,7 +204,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                                 Address
                             </span>
                         </th>
-                        <td className="py-1.5 text-xs sm:text-sm text-muted-foreground align-middle">{address}</td>
+                        <td className="py-1.5 text-muted-foreground align-middle">{address}</td>
                     </tr>
                     {/* Neighborhood */}
                     <tr>
