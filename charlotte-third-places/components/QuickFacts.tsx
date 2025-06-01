@@ -99,46 +99,62 @@ const createSocialsRow = (
         linkedIn?: string;
     }
 ): React.ReactNode | undefined => {
-    const { instagram, tiktok, twitter, youtube, facebook, linkedIn } = socialUrls;
-
-    const socials = [
-        { url: tiktok, icon: <Icons.tiktok className="h-6 w-6 text-black" />, label: "TikTok" },
-        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
-        { url: youtube, icon: <Icons.youtube className="h-6 w-6 text-red-600" />, label: "YouTube" },
-        { url: facebook, icon: <Icons.facebook className="h-6 w-6 text-blue-700" />, label: "Facebook" },
-        { url: linkedIn, icon: <Icons.linkedIn className="h-6 w-6 text-blue-800" />, label: "LinkedIn" },
-        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
+    const { instagram, tiktok, twitter, youtube, facebook, linkedIn } = socialUrls; const socials = [
+        {
+            url: tiktok,
+            icon: <Icons.tiktok />,
+            label: "TikTok",
+            bgClass: "bg-black"
+        },
+        {
+            url: instagram,
+            icon: <Icons.instagram />,
+            label: "Instagram",
+            bgClass: "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600"
+        },
+        {
+            url: youtube,
+            icon: <Icons.youtube />,
+            label: "YouTube",
+            bgClass: "bg-red-600"
+        },
+        {
+            url: facebook,
+            icon: <Icons.facebook />,
+            label: "Facebook",
+            bgClass: "bg-[#1877F2]"
+        },
+        {
+            url: linkedIn,
+            icon: <Icons.linkedIn />,
+            label: "LinkedIn",
+            bgClass: "bg-[#0077B5]"
+        },
+        {
+            url: twitter,
+            icon: <Icons.twitter />,
+            label: "Twitter",
+            bgClass: "bg-black"
+        }
     ].filter(s => s.url?.trim());
 
     if (socials.length === 0) return undefined;
 
     return (
-        <div className="flex flex-row flex-wrap gap-2 items-center">
-            {socials.map(({ url, icon, label }) => {
-                let bgClass = "bg-gray-600"; // default
-                let iconClass = "h-4 w-4 text-white";
-
-                if (label === "Instagram") {
-                    bgClass = "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600";
-                } else if (label === "TikTok") {
-                    bgClass = "bg-black";
-                } else if (label === "Twitter") {
-                    bgClass = "bg-black";
-                } else if (label === "YouTube") {
-                    bgClass = "bg-red-600";
-                } else if (label === "Facebook") {
-                    bgClass = "bg-[#1877F2]";
-                } else if (label === "LinkedIn") {
-                    bgClass = "bg-[#0077B5]";
-                }
+        <div className="flex flex-row flex-wrap gap-3 sm:gap-4 items-center">
+            {socials.map(({ url, icon, label, bgClass }) => {
+                // Container size (background circle) - smaller on mobile, larger on desktop
+                const containerSize = "h-8 w-8 sm:h-9 sm:w-9";
+                // Icon size (actual icon within the circle) - smaller on mobile, larger on desktop
+                const iconSize = "h-5 w-5 sm:h-6 sm:w-6";
 
                 const linkClassNames = cn(
-                    "h-7 w-7 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+                    `${containerSize} flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`,
                     bgClass
                 );
 
                 const iconElement = React.cloneElement(icon as React.ReactElement, {
-                    className: iconClass
+                    className: `${iconSize} text-white`
                 });
 
                 return (
