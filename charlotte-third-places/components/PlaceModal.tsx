@@ -121,7 +121,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             variant="outline"
                             displayType="icon"
                             aria-label="Share Place"
-                        />                    </div>
+                        />
+                    </div>
+
                     <Separator />
                     <div className="space-y-2">
                         {(instagram || tiktok || twitter || youtube || facebook || linkedIn) && (
