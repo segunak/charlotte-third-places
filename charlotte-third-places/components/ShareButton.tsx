@@ -46,7 +46,7 @@ export const ShareButton = React.forwardRef<HTMLButtonElement, ShareButtonProps>
                 {...props}
             >
                 {displayType === "icon" ? (
-                    <Icons.share className="h-6 w-6 text-primary" aria-label="Share" />
+                    <Icons.share className="h-7 w-7 text-primary" aria-label="Share" />
                 ) : (
                     "Share"
                 )}

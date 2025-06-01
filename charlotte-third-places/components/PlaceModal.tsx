@@ -84,18 +84,18 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 </DialogHeader>
                 <Separator />
                 <div className="space-y-4">
-                    <div className="flex justify-center space-x-4">
+                    <div className="flex justify-center space-x-2 sm:space-x-4">
                         {googleMapsProfileURL && (
                             <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
                                 <Button variant="outline">
-                                    <Icons.google className="h-6 w-6" />
+                                    <Icons.google className="h-7 w-7" />
                                 </Button>
                             </ResponsiveLink>
                         )}
                         {appleMapsProfileURL && (
                             <ResponsiveLink href={appleMapsProfileURL} aria-label="Visit Apple Maps Page">
                                 <Button variant="outline">
-                                    <Icons.apple className="h-6 w-6" />
+                                    <Icons.apple className="h-7 w-7" />
                                 </Button>
                             </ResponsiveLink>
                         )}
@@ -105,7 +105,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                                 onClick={() => showPlacePhotos(place, 'modal')}
                                 aria-label="View photos"
                             >
-                                <Icons.camera className="h-6 w-6 text-primary" />
+                                <Icons.camera className="h-7 w-7 text-primary" />
                             </Button>
                         )}
                         {website && (
@@ -123,50 +123,54 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             aria-label="Share Place"
                         />
                     </div>
-                    <Separator />
-                    <div className="space-y-2">
-                        {(instagram || tiktok || twitter || youtube || facebook) && (
-                            <div>
-                                <span className="font-semibold">Socials:</span>
-                                <span className="inline-flex items-center space-x-2 ml-2">
+
+                    {/* SOCIAL MEDIA PILL */}
+                    {(instagram || tiktok || twitter || youtube || facebook) && (
+                        <>
+                            <Separator />
+                            <div className="flex justify-center">
+                                <div className="inline-flex items-center gap-4 px-4 py-2 bg-muted/50 rounded-full border border-border/40 hover:bg-muted/70 transition-colors">
                                     {tiktok && (
                                         <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.tiktok className="h-4 w-4 text-white" />
+                                            <div className="h-8 w-8 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.tiktok className="h-5 w-5 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {instagram && (
                                         <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                <Icons.instagram className="h-4 w-4 text-white" />
+                                            <div className="h-8 w-8 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
+                                                <Icons.instagram className="h-5 w-5 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {youtube && (
                                         <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                                <Icons.youtube className="h-4 w-4 text-white" />
+                                            <div className="h-8 w-8 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
+                                                <Icons.youtube className="h-5 w-5 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {facebook && (
                                         <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                                <Icons.facebook className="h-4 w-4 text-white" />
+                                            <div className="h-8 w-8 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
+                                                <Icons.facebook className="h-5 w-5 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
                                     {twitter && (
                                         <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.twitter className="h-4 w-4 text-white" />
+                                            <div className="h-8 w-8 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
+                                                <Icons.twitter className="h-5 w-5 text-white" />
                                             </div>
                                         </ResponsiveLink>
                                     )}
-                                </span>
+                                </div>
                             </div>
-                        )}
+                        </>
+                    )}
+                    <Separator />
+                    <div className="space-y-2">
                         <p>
                             <span className="font-semibold">Address:</span> {place.address}
                         </p>
