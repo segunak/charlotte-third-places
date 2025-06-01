@@ -261,6 +261,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         youtube: getField("YouTube"),
         facebook: getField("Facebook"),
         twitter: getField("Twitter"),
+        linkedIn: getField("LinkedIn"),
         googleMapsPlaceId: getField("Google Maps Place Id"),
         googleMapsProfileURL: getField("Google Maps Profile URL"),
         appleMapsProfileURL: getField("Apple Maps Profile URL"),

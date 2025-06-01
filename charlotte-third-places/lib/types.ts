@@ -19,6 +19,7 @@ export type Place = {
     youtube: string;
     facebook: string;
     twitter: string;
+    linkedIn: string;
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
     appleMapsProfileURL: string;

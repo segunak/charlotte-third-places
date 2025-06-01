@@ -4,13 +4,23 @@ import { FcGoogle } from "react-icons/fc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { MdEditLocationAlt } from "react-icons/md";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { FaLocationPin, FaMapPin, FaMapLocationDot, FaShuffle, FaApple, FaXTwitter, FaFacebookF } from "react-icons/fa6";
+import {
+  FaLocationPin,
+  FaMapPin,
+  FaMapLocationDot,
+  FaShuffle,
+  FaApple,
+  FaXTwitter,
+  FaFacebookF,
+  FaLinkedinIn
+} from "react-icons/fa6";
 import {
   FaFilter,
   FaChessQueen,
   FaComment,
   FaArrowRight,
   FaArrowLeft,
+  FaLinkedin,
   FaArrowsAltH,
   FaChevronDown,
   FaChevronUp,
@@ -44,7 +54,6 @@ import {
   LuMoon,
   LuSunMedium,
   LuLink,
-  LuLinkedin,
   LuExternalLink,
   LuInstagram,
   LuShare
@@ -88,7 +97,7 @@ export const Icons = {
   infoCircleOutline: IoInformationCircleOutline,
   create: IoCreate,
   createOutline: IoCreateOutline,
-  linkedin: LuLinkedin,
+  linkedIn: FaLinkedinIn,
   instagram: LuInstagram,
   youtube: IoLogoYoutube,
   tiktok: IoLogoTiktok,
