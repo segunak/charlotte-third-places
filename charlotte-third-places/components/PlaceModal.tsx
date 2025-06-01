@@ -69,6 +69,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={contentRef}
+                crossCloseIconSize="h-7 w-7"
                 className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
@@ -78,7 +79,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                <DialogHeader className="mt-5 sm:mt-0">
+                <DialogHeader className="mt-7 sm:mt-0">
                     <DialogTitle>{place.name}</DialogTitle>
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
