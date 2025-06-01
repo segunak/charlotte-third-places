@@ -2,22 +2,38 @@
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { FcGoogle } from "react-icons/fc";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { MdEditLocationAlt } from "react-icons/md";
+import { MdEditLocationAlt, MdAttachMoney } from "react-icons/md";
+import { BsFillHousesFill } from "react-icons/bs";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { FaLocationPin, FaMapPin, FaMapLocationDot, FaShuffle, FaApple } from "react-icons/fa6";
+import { TbCakeRoll } from "react-icons/tb";
+import {
+  FaLocationPin,
+  FaMapPin,
+  FaMapLocationDot,
+  FaShuffle,
+  FaApple,
+  FaXTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+  FaCar,
+  FaWifi
+} from "react-icons/fa6";
 import {
   FaFilter,
-  FaChessQueen, 
+  FaChessQueen,
   FaComment,
   FaArrowRight,
   FaArrowLeft,
   FaArrowsAltH,
   FaChevronDown,
   FaChevronUp,
-  FaMobileAlt, 
-  FaTabletAlt, 
-  FaDesktop, 
-  FaCircle
+  FaMobileAlt,
+  FaDollarSign,
+  FaTabletAlt,
+  FaDesktop,
+  FaCircle,
+  FaLink,
+  FaQuestion
 } from "react-icons/fa";
 import {
   IoHome,
@@ -44,7 +60,6 @@ import {
   LuMoon,
   LuSunMedium,
   LuLink,
-  LuLinkedin,
   LuExternalLink,
   LuInstagram,
   LuShare
@@ -56,10 +71,15 @@ export const Icons = {
   moon: LuMoon,
   home: IoHome,
   chevronDown: FaChevronDown,
+  dollarSign: FaDollarSign,
   chevronUp: FaChevronUp,
+  cinnamonRoll: TbCakeRoll,
   alertCircle: IoAlertCircle,
+  questionMark: FaQuestion,
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
+  houses: BsFillHousesFill,
+  wifi: FaWifi,
   arrowLeft: FaArrowLeft,
   mobile: FaMobileAlt,
   tablet: FaTabletAlt,
@@ -88,12 +108,14 @@ export const Icons = {
   infoCircleOutline: IoInformationCircleOutline,
   create: IoCreate,
   createOutline: IoCreateOutline,
-  linkedin: LuLinkedin,
+  linkedIn: FaLinkedinIn,
   instagram: LuInstagram,
   youtube: IoLogoYoutube,
   tiktok: IoLogoTiktok,
+  twitter: FaXTwitter,
   reddit: IoLogoReddit,
   link: LuLink,
+  boldLink: FaLink,
   externalLink: LuExternalLink,
   locate: Locate,
   loader: Loader2,
@@ -102,6 +124,8 @@ export const Icons = {
   chevronLeft: IoChevronBack,
   chevronRight: IoChevronForward,
   close: IoClose,
+  facebook: FaFacebookF,
+  car: FaCar,
   logo: (props: IconProps) => (
     <svg
       width="800px"

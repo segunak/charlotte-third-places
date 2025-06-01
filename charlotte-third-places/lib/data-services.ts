@@ -24,13 +24,13 @@ const shouldUseLocalData = (): boolean => {
         console.log('Info: Using production data (forced via FORCE_PRODUCTION_DATA).');
         return false;
     }
-    
+
     // Default development behavior: use local data
     if (process.env.NODE_ENV === 'development') {
         console.log('Info: Local development mode. Using CSV data for places.');
         return true;
     }
-    
+
     // Production environment always uses production data
     return false;
 };
@@ -170,7 +170,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     // Parse Python-style array string to JavaScript array
     const parsePythonStyleArray = (value: string): string[] => {
         if (!value) return [];
-        
+
         try {
             // Handle Python-style arrays with single quotes
             if (value.trim().startsWith('[') && value.trim().endsWith(']')) {
@@ -180,7 +180,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                     .replace(/^\['/g, '["')         // Replace opening [' with ["
                     .replace(/'\]$/g, '"]')         // Replace closing '] with "]
                     .replace(/', '/g, '", "');      // Replace ', ' with ", "
-                
+
                 try {
                     return JSON.parse(jsonString);
                 } catch (e) {
@@ -191,7 +191,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                     if (matches && matches.length > 0) {
                         return matches;
                     }
-                    
+
                     // Last resort: split by comma and clean up
                     return value.split(',')
                         .map(item => item.trim()
@@ -199,7 +199,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                         .filter(Boolean);
                 }
             }
-            
+
             // If it's a single value, return it in an array
             return [value];
         } catch (e) {
@@ -228,7 +228,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         } else {
             // For Airtable records
             const value = record.get(key);
-            
+
             // Special handling for Photos field from Airtable
             if (key === "Photos") {
                 if (!value) return [];
@@ -236,7 +236,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                 if (Array.isArray(value)) return value;
                 return parsePythonStyleArray(value);
             }
-            
+
             return value;
         }
     };
@@ -256,6 +256,12 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         hasReviews: getField("Has Data File"),
         description: getField("Description"),
         website: getField("Website"),
+        tiktok: getField("TikTok"),
+        instagram: getField("Instagram"),
+        youtube: getField("YouTube"),
+        facebook: getField("Facebook"),
+        twitter: getField("Twitter"),
+        linkedIn: getField("LinkedIn"),
         googleMapsPlaceId: getField("Google Maps Place Id"),
         googleMapsProfileURL: getField("Google Maps Profile URL"),
         appleMapsProfileURL: getField("Apple Maps Profile URL"),
@@ -308,7 +314,7 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
 export async function getPlaceById(id: string) {
     try {
         if (shouldUseLocalData()) {
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-Production.csv');
             return localData.find((place) => place.recordId === id);
         }
 
@@ -332,7 +338,7 @@ export async function getPlaceById(id: string) {
 export async function getPlaces(): Promise<Place[]> {
     try {
         if (shouldUseLocalData()) {
-            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-All.csv');
+            const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-Production.csv');
             return localData;
         }
 

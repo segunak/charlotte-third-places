@@ -132,14 +132,14 @@ const frequentlyAskedQuestions = [
                     </AccordionItem>
 
                     <AccordionItem value="Wi-Fi">
-                        <AccordionTrigger>Free Wi-Fi</AccordionTrigger>
+                        <AccordionTrigger>Wi-Fi</AccordionTrigger>
                         <AccordionContent>
                             This information is based entirely on my experiences and community feedback, as Google Maps does not provide this data. The concept of "free Wi-Fi" can be tricky. If a place offers Wi-Fi but expects you to make a purchase to stay, is it truly free? Even if you buy the cheapest item, you still had to pay to access the Wi-Fi indirectly. After much deliberation, I've decided to list a place as having free Wi-Fi if you don't need to pay specifically to access it once connected. Whether there's a password or not, as long as you can use the Wi-Fi without additional charges, it's considered free. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hangout at the library. Charlotte has great libraries, I encourage you to use them! Maybe even keep the laptop closed and read a book while you're there. If you're into science-fiction/fantasy check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="cinnamon-rolls">
-                        <AccordionTrigger>Has Cinnamon Rolls</AccordionTrigger>
+                        <AccordionTrigger>Cinnamon Rolls</AccordionTrigger>
                         <AccordionContent>
                             <div className="space-y-3">
                                 <p>
@@ -160,7 +160,7 @@ const frequentlyAskedQuestions = [
                     </AccordionItem>
 
                     <AccordionItem value="comments">
-                        <AccordionTrigger>Curator's Comments</AccordionTrigger>
+                        <AccordionTrigger>Comments</AccordionTrigger>
                         <AccordionContent>
                             These are from me, my personal thoughts regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added.
                         </AccordionContent>
