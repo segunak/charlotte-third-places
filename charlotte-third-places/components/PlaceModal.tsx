@@ -151,12 +151,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                     </SmartTextSection>
 
-                    {/* CURATOR'S COMMENTS - Smart truncation for long content */}
+                    {/* COMMENTS - Smart truncation for long content */}
                     {hasComments && (
                         <>
                             <Separator />
                             <SmartTextSection
-                                heading="Curator's Comments"
+                                heading="Comments"
                                 priority="medium"
                                 inline={true}
                             >

@@ -470,12 +470,12 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 >
                                     {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                                 </SmartTextSection>
-                                {/* CURATOR'S COMMENTS - Smart truncation for long content, only if comments exist */}
+                                {/* COMMENTS - Smart truncation for long content, only if comments exist */}
                                 {place.comments?.trim() && (
                                     <>
                                         <Separator />
                                         <SmartTextSection
-                                            heading="Curator's Comments"
+                                            heading="Comments"
                                             priority="medium"
                                             inline={true}
                                         >

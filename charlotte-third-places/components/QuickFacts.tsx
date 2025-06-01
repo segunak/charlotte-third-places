@@ -262,7 +262,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                         </th>
                         <td className="py-1.5 align-middle"><YesNoBadge value={purchaseRequired} /></td>
                     </tr>
-                    {/* Has Cinnamon Rolls */}
+                    {/* Cinnamon Rolls */}
                     <tr>
                         <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
