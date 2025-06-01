@@ -28,6 +28,7 @@ import type { CarouselApi } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { SmartTextSection } from "@/components/SmartTextSection";
+import { QuickFacts } from "@/components/QuickFacts";
 
 // Simple gray placeholder
 const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
@@ -205,7 +206,8 @@ export function PlacePageClient({ place }: { place: Place }) {
     const website = place.website?.trim();
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
-    const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`; const instagram = place.instagram?.trim();
+    const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`;
+    const instagram = place.instagram?.trim();
     const tiktok = place.tiktok?.trim();
     const twitter = place.twitter?.trim();
     const youtube = place.youtube?.trim();
@@ -444,65 +446,21 @@ export function PlacePageClient({ place }: { place: Place }) {
                                     />
                                 </div>
                                 <Separator />
-                                <div className="space-y-2">
-                                    {(instagram || tiktok || twitter || youtube || facebook || linkedIn) && (
-                                        <div>
-                                            <span className="font-semibold">Socials:</span>
-                                            <span className="inline-flex items-center space-x-2 ml-2">                                                {tiktok && (
-                                                <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                                    <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                        <Icons.tiktok className="h-4 w-4 text-white" />
-                                                    </div>
-                                                </ResponsiveLink>
-                                            )}
-                                                {instagram && (
-                                                    <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                            <Icons.instagram className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
-                                                {youtube && (
-                                                    <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                                            <Icons.youtube className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
-                                                {facebook && (
-                                                    <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                                            <Icons.facebook className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
-                                                {linkedIn && (
-                                                    <ResponsiveLink href={linkedIn} aria-label="Visit LinkedIn">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#0077B5] hover:scale-110 transition-transform">
-                                                            <Icons.linkedIn className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
-                                                {twitter && (
-                                                    <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                                        <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                            <Icons.twitter className="h-4 w-4 text-white" />
-                                                        </div>
-                                                    </ResponsiveLink>
-                                                )}
-                                            </span>
-                                        </div>
-                                    )}
-
-                                    <p><strong>Type:</strong> {place.type.join(", ")}</p>
-                                    <p><strong>Address:</strong> {place.address}</p>
-                                    <p><strong>Neighborhood:</strong> {place.neighborhood}</p>
-                                    <p><strong>Size:</strong> {place.size}</p>
-                                    <p><strong>Purchase Required:</strong> {place.purchaseRequired}</p>
-                                    <p><strong>Parking:</strong> {place.parking.join(", ")}</p>
-                                    <p><strong>Free Wi-Fi:</strong> {place.freeWiFi}</p>
-                                    <p><strong>Has Cinnamon Rolls:</strong> {place.hasCinnamonRolls}</p>
-                                </div>
+                                <QuickFacts
+                                    address={place.address}
+                                    neighborhood={place.neighborhood}
+                                    size={place.size}
+                                    purchaseRequired={place.purchaseRequired}
+                                    parking={place.parking}
+                                    freeWiFi={place.freeWiFi}
+                                    hasCinnamonRolls={place.hasCinnamonRolls}
+                                    instagram={instagram}
+                                    tiktok={tiktok}
+                                    twitter={twitter}
+                                    youtube={youtube}
+                                    facebook={facebook}
+                                    linkedIn={linkedIn}
+                                />
                                 <Separator />
                                 {/* DESCRIPTION - Always visible, high priority */}
                                 <SmartTextSection

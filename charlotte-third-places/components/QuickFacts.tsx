@@ -1,7 +1,9 @@
 import { FC } from "react";
+import React from "react";
 import { Icons } from "@/components/Icons";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
+import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 interface QuickFactsProps {
     address: string;
@@ -11,6 +13,13 @@ interface QuickFactsProps {
     parking: string[];
     freeWiFi: string;
     hasCinnamonRolls: string;
+    instagram?: string;
+    tiktok?: string;
+    twitter?: string;
+    youtube?: string;
+    facebook?: string;
+    linkedIn?: string;
+    socials?: React.ReactNode; // Custom socials override
 }
 
 const attributeIcons = {
@@ -54,7 +63,7 @@ const YesNoBadge: FC<{
         className += " bg-muted text-muted-foreground border-muted";
     }
     return (
-        <Badge variant={badgeVariant} className={cn(className)}>
+        <Badge variant={badgeVariant} className={cn(className)} disableHover>
             {isYes ? (
                 <span className="text-emerald-600 font-bold text-sm">Yes</span>
             ) : (
@@ -72,6 +81,7 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
 }) => (
     <Badge
         variant="secondary"
+        disableHover
         className={cn("rounded-full px-2 py-0.5 text-sm font-medium gap-1", className)}
     >
         {icon && <span className="flex-shrink-0">{icon}</span>}
@@ -79,7 +89,74 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
     </Badge>
 );
 
-export const QuickFacts: FC<QuickFactsProps & { socials?: React.ReactNode }> = ({
+const createSocialsRow = (
+    socialUrls: {
+        instagram?: string;
+        tiktok?: string;
+        twitter?: string;
+        youtube?: string;
+        facebook?: string;
+        linkedIn?: string;
+    }
+): React.ReactNode | undefined => {
+    const { instagram, tiktok, twitter, youtube, facebook, linkedIn } = socialUrls;
+
+    const socials = [
+        { url: tiktok, icon: <Icons.tiktok className="h-6 w-6 text-black" />, label: "TikTok" },
+        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
+        { url: youtube, icon: <Icons.youtube className="h-6 w-6 text-red-600" />, label: "YouTube" },
+        { url: facebook, icon: <Icons.facebook className="h-6 w-6 text-blue-700" />, label: "Facebook" },
+        { url: linkedIn, icon: <Icons.linkedIn className="h-6 w-6 text-blue-800" />, label: "LinkedIn" },
+        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
+    ].filter(s => s.url?.trim());
+
+    if (socials.length === 0) return undefined;
+
+    return (
+        <div className="flex flex-row flex-wrap gap-2 items-center">
+            {socials.map(({ url, icon, label }) => {
+                let bgClass = "bg-gray-600"; // default
+                let iconClass = "h-4 w-4 text-white";
+
+                if (label === "Instagram") {
+                    bgClass = "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600";
+                } else if (label === "TikTok") {
+                    bgClass = "bg-black";
+                } else if (label === "Twitter") {
+                    bgClass = "bg-black";
+                } else if (label === "YouTube") {
+                    bgClass = "bg-red-600";
+                } else if (label === "Facebook") {
+                    bgClass = "bg-[#1877F2]";
+                } else if (label === "LinkedIn") {
+                    bgClass = "bg-[#0077B5]";
+                }
+
+                const linkClassNames = cn(
+                    "h-7 w-7 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
+                    bgClass
+                );
+
+                const iconElement = React.cloneElement(icon as React.ReactElement, {
+                    className: iconClass
+                });
+
+                return (
+                    <ResponsiveLink
+                        key={label}
+                        href={url!}
+                        aria-label={label}
+                        className={linkClassNames}
+                    >
+                        {iconElement}
+                    </ResponsiveLink>
+                );
+            })}
+        </div>
+    );
+};
+
+export const QuickFacts: FC<QuickFactsProps> = ({
     address,
     neighborhood,
     size,
@@ -87,8 +164,18 @@ export const QuickFacts: FC<QuickFactsProps & { socials?: React.ReactNode }> = (
     parking,
     freeWiFi,
     hasCinnamonRolls,
-    socials,
+    instagram,
+    tiktok,
+    twitter,
+    youtube,
+    facebook,
+    linkedIn,
+    socials: customSocials,
 }) => {
+    // Create socials row internally unless custom socials provided
+    const socialsRow = customSocials || createSocialsRow(
+        { instagram, tiktok, twitter, youtube, facebook, linkedIn }
+    );
     return (
         <div className="overflow-x-auto">
             <table className="min-w-full border-separate border-spacing-y-0.5">
@@ -169,8 +256,7 @@ export const QuickFacts: FC<QuickFactsProps & { socials?: React.ReactNode }> = (
                         </th>
                         <td className="py-1.5 align-middle"><YesNoBadge value={hasCinnamonRolls} variant="positive" /></td>
                     </tr>
-                    {/* Socials */}
-                    {socials && (
+                    {socialsRow && (
                         <tr>
                             <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
                                 <span className="inline-flex items-center gap-2">
@@ -178,7 +264,7 @@ export const QuickFacts: FC<QuickFactsProps & { socials?: React.ReactNode }> = (
                                     Socials
                                 </span>
                             </th>
-                            <td className="py-1.5 align-middle">{socials}</td>
+                            <td className="py-1.5 align-middle">{socialsRow}</td>
                         </tr>
                     )}
                 </tbody>

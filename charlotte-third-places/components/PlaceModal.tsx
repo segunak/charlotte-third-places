@@ -10,11 +10,9 @@ import {
     FC,
     useRef,
     useEffect,
-    useMemo,
-    useState
+    useMemo
 } from "react";
 import React from "react";
-import { cn } from "@/lib/utils";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { SmartTextSection } from "@/components/SmartTextSection";
 import { useModalContext } from "@/contexts/ModalContext";
@@ -57,7 +55,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
 
     const hasComments = place.comments?.trim();
     const hasPhotos = place.photos && place.photos.length > 0;
-
     const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
     const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
     const website = place.website?.trim();
@@ -67,56 +64,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const youtube = place.youtube?.trim();
     const facebook = place.facebook?.trim();
     const linkedIn = place.linkedIn?.trim();
-
-    // Socials row for QuickFacts
-    const socials = [
-        { url: tiktok, icon: <Icons.tiktok className="h-6 w-6 text-black" />, label: "TikTok" },
-        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
-        { url: youtube, icon: <Icons.youtube className="h-6 w-6 text-red-600" />, label: "YouTube" },
-        { url: facebook, icon: <Icons.facebook className="h-6 w-6 text-blue-700" />, label: "Facebook" },
-        { url: linkedIn, icon: <Icons.linkedIn className="h-6 w-6 text-blue-800" />, label: "LinkedIn" },
-        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
-    ].filter(s => s.url); const socialsRow = socials.length > 0 ? (
-        <div className="flex flex-row flex-wrap gap-2 items-center">
-            {socials.map(({ url, icon, label }) => {
-                // Style based on platform
-                let bgClass = "bg-gray-600"; // default
-                let iconClass = "h-4 w-4 text-white";
-
-                if (label === "Instagram") {
-                    bgClass = "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600";
-                } else if (label === "TikTok") {
-                    bgClass = "bg-black";
-                } else if (label === "Twitter") {
-                    bgClass = "bg-black";
-                } else if (label === "YouTube") {
-                    bgClass = "bg-red-600";
-                } else if (label === "Facebook") {
-                    bgClass = "bg-[#1877F2]";
-                } else if (label === "LinkedIn") {
-                    bgClass = "bg-[#0077B5]";
-                }
-
-                return (
-                    <a
-                        key={label}
-                        href={url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={label}
-                        className={cn(
-                            "h-7 w-7 flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2",
-                            bgClass
-                        )}
-                    >
-                        {React.cloneElement(icon as React.ReactElement, {
-                            className: iconClass
-                        })}
-                    </a>
-                );
-            })}
-        </div>
-    ) : undefined;
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -177,7 +124,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             aria-label="Share Place"
                         />
                     </div>
-
                     <Separator />
                     <QuickFacts
                         address={place.address}
@@ -187,7 +133,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         parking={place.parking}
                         freeWiFi={place.freeWiFi}
                         hasCinnamonRolls={place.hasCinnamonRolls}
-                        socials={socialsRow}
+                        instagram={instagram}
+                        tiktok={tiktok}
+                        twitter={twitter}
+                        youtube={youtube}
+                        facebook={facebook}
+                        linkedIn={linkedIn}
                     />
                     <Separator />
                     {/* DESCRIPTION - Always visible, high priority */}
