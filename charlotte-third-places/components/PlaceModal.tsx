@@ -5,6 +5,7 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { ShareButton } from "@/components/ShareButton";
+import { QuickFacts } from "@/components/QuickFacts";
 import {
     FC,
     useRef,
@@ -65,6 +66,32 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const facebook = place.facebook?.trim();
     const linkedIn = place.linkedIn?.trim();
 
+    // Socials row for QuickFacts
+    const socials = [
+        { url: instagram, icon: <Icons.instagram className="h-6 w-6 text-pink-500" />, label: "Instagram" },
+        { url: tiktok, icon: <Icons.tiktok className="h-6 w-6 text-black" />, label: "TikTok" },
+        { url: twitter, icon: <Icons.twitter className="h-6 w-6 text-sky-500" />, label: "Twitter" },
+        { url: youtube, icon: <Icons.youtube className="h-6 w-6 text-red-600" />, label: "YouTube" },
+        { url: facebook, icon: <Icons.facebook className="h-6 w-6 text-blue-700" />, label: "Facebook" },
+        { url: linkedIn, icon: <Icons.linkedIn className="h-6 w-6 text-blue-800" />, label: "LinkedIn" },
+    ].filter(s => s.url);
+    const socialsRow = socials.length > 0 ? (
+        <div className="flex flex-row flex-wrap gap-3 items-center">
+            {socials.map(({ url, icon, label }) => (
+                <a
+                    key={label}
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="hover:scale-110 transition-transform focus:outline-none focus:ring-2 focus:ring-primary rounded-full"
+                >
+                    {icon}
+                </a>
+            ))}
+        </div>
+    ) : undefined;
+
     return (
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
@@ -83,6 +110,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription>{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
                 <Separator />
+                {/* Primary Actions */}
                 <div className="space-y-4">
                     <div className="flex justify-center space-x-2 sm:space-x-4">
                         {googleMapsProfileURL && (
@@ -125,81 +153,18 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
 
                     <Separator />
-                    <div className="space-y-2">
-                        {(instagram || tiktok || twitter || youtube || facebook || linkedIn) && (
-                            <p>
-                                <span className="font-semibold">Socials:</span>
-                                <span className="inline-flex items-center space-x-2 ml-2">
-                                    {tiktok && (
-                                        <ResponsiveLink href={tiktok} aria-label="Visit TikTok">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.tiktok className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                    {instagram && (
-                                        <ResponsiveLink href={instagram} aria-label="Visit Instagram">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:scale-110 transition-transform">
-                                                <Icons.instagram className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                    {youtube && (
-                                        <ResponsiveLink href={youtube} aria-label="Visit YouTube">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-red-600 hover:scale-110 transition-transform">
-                                                <Icons.youtube className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                    {facebook && (
-                                        <ResponsiveLink href={facebook} aria-label="Visit Facebook">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#1877F2] hover:scale-110 transition-transform">
-                                                <Icons.facebook className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                    {twitter && (
-                                        <ResponsiveLink href={twitter} aria-label="Visit Twitter">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-black hover:scale-110 transition-transform">
-                                                <Icons.twitter className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                    {linkedIn && (
-                                        <ResponsiveLink href={linkedIn} aria-label="Visit LinkedIn">
-                                            <div className="h-7 w-7 flex items-center justify-center rounded-full bg-[#0077B5] hover:scale-110 transition-transform">
-                                                <Icons.linkedIn className="h-4 w-4 text-white" />
-                                            </div>
-                                        </ResponsiveLink>
-                                    )}
-                                </span>
-                            </p>
-                        )}
-                        <p>
-                            <span className="font-semibold">Address:</span> {place.address}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Neighborhood:</span> {place.neighborhood}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Size:</span> {place.size}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Purchase Required:</span> {place.purchaseRequired}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Parking:</span> {place.parking.join(", ")}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Free Wi-Fi:</span> {place.freeWiFi}
-                        </p>
-                        <p>
-                            <span className="font-semibold">Has Cinnamon Rolls:</span> {place.hasCinnamonRolls}
-                        </p>
-                    </div>
-
+                    {/* Quick facts - new compact grid */}
+                    <QuickFacts
+                        address={place.address}
+                        neighborhood={place.neighborhood}
+                        size={place.size}
+                        purchaseRequired={place.purchaseRequired}
+                        parking={place.parking}
+                        freeWiFi={place.freeWiFi}
+                        hasCinnamonRolls={place.hasCinnamonRolls}
+                        socials={socialsRow}
+                    />
                     <Separator />
-
                     {/* DESCRIPTION - Always visible, high priority */}
                     <SmartTextSection
                         heading="Description"
