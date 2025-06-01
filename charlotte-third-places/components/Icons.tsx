@@ -32,7 +32,8 @@ import {
   FaTabletAlt,
   FaDesktop,
   FaCircle,
-  FaLink
+  FaLink,
+  FaQuestion
 } from "react-icons/fa";
 import {
   IoHome,
@@ -74,6 +75,7 @@ export const Icons = {
   chevronUp: FaChevronUp,
   cinnamonRoll: TbCakeRoll,
   alertCircle: IoAlertCircle,
+  questionMark: FaQuestion,
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
   houses: BsFillHousesFill,

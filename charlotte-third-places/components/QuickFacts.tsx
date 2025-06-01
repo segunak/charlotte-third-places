@@ -31,7 +31,7 @@ const attributeIcons = {
             "Medium": <Icons.tablet className="h-4 w-4 text-muted-foreground" />,
             "Large": <Icons.desktop className="h-4 w-4 text-muted-foreground" />,
         };
-        return sizeIconMap[value] || <span className="text-base">📏</span>;
+        return sizeIconMap[value] || <Icons.questionMark className="h-4 w-4 text-muted-foreground" />;
     },
     parking: <Icons.car className="h-4 w-4 text-blue-500" />,
     wifi: <Icons.wifi className="h-4 w-4 text-sky-500" />,
