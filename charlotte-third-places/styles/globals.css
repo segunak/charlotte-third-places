@@ -50,7 +50,6 @@
   :root {
     --background: 190 60% 97%;                  /* Brighter teal backdrop */
     --foreground: 210 5% 20%;                  /* Slightly warmer dark text */
-    --ag-header-background-color: hsl(190, 90%, 42%); 
     --card: 0 0% 99%;                          /* Almost pure white for card */
     --card-foreground: 210 5% 20%;
     --popover: 0 0% 99%;                       /* Matches card for consistency */
@@ -102,7 +101,6 @@
   .dark {
     --background: 190 50% 9%;                  /* Dark teal-tinted near-black */
     --foreground: 0 0% 100%;                   /* White text on dark */
-    --ag-header-background-color: hsl(190, 90%, 42%);
     --card: 190 40% 12%;                       /* Slightly lighter than body for contrast */
     --card-foreground: 0 0% 100%;
     --popover: 190 40% 12%;                    /* Matches card for consistency */
