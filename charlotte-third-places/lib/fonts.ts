@@ -1,11 +1,13 @@
-import { JetBrains_Mono as FontMono, Inter as FontSans } from "next/font/google"
+import { Inter, JetBrains_Mono } from 'next/font/google'
 
-export const fontSans = FontSans({
-    subsets: ["latin"],
-    variable: "--font-sans",
+export const fontSans = Inter({
+    subsets: ['latin'],
+    variable: '--font-sans',
+    display: 'swap',
 })
 
-export const fontMono = FontMono({
-    subsets: ["latin"],
-    variable: "--font-mono",
+export const fontMono = JetBrains_Mono({
+    subsets: ['latin'],
+    variable: '--font-mono',
+    display: 'swap',
 })

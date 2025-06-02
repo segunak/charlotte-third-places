@@ -72,9 +72,8 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const shouldInjectToolbar = process.env.NODE_ENV === 'development';
-
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={fontSans.className}>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
@@ -82,7 +81,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
         className={cn(
-          "min-h-dvh bg-background font-sans antialiased",
+          "min-h-dvh bg-background antialiased",
           fontSans.variable
         )}
       >
