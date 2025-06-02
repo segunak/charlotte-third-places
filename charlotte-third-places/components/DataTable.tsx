@@ -1,53 +1,24 @@
 "use client";
 
-import "@/styles/ag-grid-theme-builder.css"; // See https://www.ag-grid.com/react-data-grid/applying-theme-builder-styling-grid/
 import { PlaceCard } from "@/components/PlaceCard";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { AgGridReact } from '@ag-grid-community/react';
 import { SortField, SortDirection } from "@/lib/types";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
-import { useContext, useCallback, useRef, useState, useMemo, useEffect } from "react";
-import { ClientSideRowModelModule } from "@ag-grid-community/client-side-row-model";
-import { ModuleRegistry, ColDef, SizeColumnsToContentStrategy } from '@ag-grid-community/core';
+import { useContext, useCallback, useState, useMemo, useEffect } from "react";
 import { FixedSizeList as List } from "react-window";
-
-ModuleRegistry.registerModules([ClientSideRowModelModule]);
 
 interface DataTableProps {
     rowData: Array<object>;
 }
 
-const autoSizeStrategy: SizeColumnsToContentStrategy = {
-    type: 'fitCellContents',
-};
-
 export function DataTable({ rowData }: DataTableProps) {
-    const gridRef = useRef<AgGridReact>(null);
     const [isLoading, setIsLoading] = useState(true);
     const { filters, quickFilterText, sortOption } = useContext(FilterContext);
-
-    const isFullWidthRow = useCallback((params: any) => {
-        return true;
-    }, []);
 
     useEffect(() => {
         const timeout = setTimeout(() => setIsLoading(false), 500);
         return () => clearTimeout(timeout);
-    }, []);
-
-    const columnDefs = useMemo(() => {
-        const gridColumns: ColDef[] = [
-            {
-                headerName: "",
-                field: "dummy",
-                flex: 1,
-                resizable: false,
-                cellRenderer: "agFullWidthCellRenderer"
-            }
-        ];
-
-        return gridColumns;
     }, []);
 
     const applyFilters = useCallback(
@@ -145,22 +116,6 @@ export function DataTable({ rowData }: DataTableProps) {
         return cardHeight;
     }, []);
 
-    const fullWidthCellRenderer = useCallback(
-        (params: any) => {
-            const { group } = params.data;
-            return (
-                <div className="flex flex-wrap -mx-2">
-                    {group.map((place: any, index: number) => (
-                        // The breakpoints here are tied to the columnsPerRow calculation
-                        <div key={index} className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4">
-                            <PlaceCard place={place} />
-                        </div>
-                    ))}
-                </div>
-            );
-        }, []
-    );
-
     // Virtualized Row Renderer for react-window
     const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
         const { group } = filteredAndGroupedRowData[index];
@@ -184,7 +139,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                 </div>
             )}
-            <div className={`ag-theme-custom w-full ${isLoading ? "opacity-0" : ""}`} style={{ overflow: "visible" }}>
+            <div className={`w-full ${isLoading ? "opacity-0" : ""}`} style={{ overflow: "visible" }}>
                 <List
                     height={filteredAndGroupedRowData.length * getRowHeight()}
                     itemCount={filteredAndGroupedRowData.length}
