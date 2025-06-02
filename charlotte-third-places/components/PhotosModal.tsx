@@ -56,7 +56,8 @@ const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
     if (!cleanedUrl) return '';
     // Assume non-google URLs are already optimized or don't support this
     if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-      // Most problematic URLs should be filtered out by backend, but this is a fallback
+
+    // Most problematic URLs should be filtered out by backend, but this is a fallback
     // if any restricted URLs make it through to the frontend
     // The _is_valid_photo_url method in both OutscraperProvider and GoogleMapsProvider
     // should have already removed these, but we keep this check as a defense-in-depth measure
@@ -77,8 +78,8 @@ const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
 
     // If URL has other parameters but no size, append (less common)
     if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
-         // Avoid appending if it might break other params; return as is
-         return cleanedUrl;
+        // Avoid appending if it might break other params; return as is
+        return cleanedUrl;
     }
 
     // If no parameters, append the width parameter
@@ -177,14 +178,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     // Handle carousel selection and update loaded state
     useEffect(() => {
         if (!api) return;
-        
+
         const onSelect = () => {
             const selected = api.selectedScrollSnap();
             // Only update state if the value has actually changed
             // This prevents unnecessary re-renders
             if (selected !== currentSlide) {
                 setCurrentSlide(selected);
-                
+
                 // Mark the original index as loaded only if we have valid data
                 if (selected >= 0 && selected < visibleToOriginalIdx.length) {
                     const origIdx = visibleToOriginalIdx[selected];
@@ -200,14 +201,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 }
             }
         };
-        
+
         api.on("select", onSelect);
-        
+
         // Initial selection - only call if needed
         if (api.selectedScrollSnap() !== currentSlide) {
             onSelect();
         }
-        
+
         return () => {
             api.off("select", onSelect);
         };
@@ -246,8 +247,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={dialogRef}
-                className="max-h-[90vh] sm:max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl bg-black/95 overflow-hidden flex flex-col" 
-                onOpenAutoFocus={(e) => e.preventDefault()} 
+                className="max-h-[90vh] sm:max-h-[95vh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl bg-black/95 overflow-hidden flex flex-col"
+                onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
             >
                 <DialogTitle className="sr-only">
@@ -259,8 +260,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
                 {/* Top bar - fixed height */}
                 <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
-                    <div className="flex items-center gap-2 min-w-0"> 
-                        <div className="text-white font-semibold truncate"> 
+                    <div className="flex items-center gap-2 min-w-0">
+                        <div className="text-white font-semibold truncate">
                             {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
                         </div>
                         {isMobile ? (
@@ -295,13 +296,13 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         <Button
                                             variant="ghost"
                                             size="sm"
-                                            className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto" 
+                                            className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto"
                                         >
                                             <Icons.infoCircle className="h-4 w-4" />
                                             <span className="sr-only">Photo Source Information</span>
                                         </Button>
                                     </TooltipTrigger>
-                                    <TooltipContent side="bottom" className="bg-black/95 text-white/90 max-w-xs"> 
+                                    <TooltipContent side="bottom" className="bg-black/95 text-white/90 max-w-xs">
                                         Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
                                     </TooltipContent>
                                 </Tooltip>
@@ -311,11 +312,11 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                     <DialogClose asChild>
                         <Button
                             variant="ghost"
-                            size="icon" 
+                            size="icon"
                             className="text-white hover:bg-white/20"
                             aria-label="Close photo gallery"
                         >
-                            <Icons.close className="h-5 w-5" /> 
+                            <Icons.close className="h-5 w-5" />
                         </Button>
                     </DialogClose>
                 </div>
@@ -370,7 +371,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 />
                                             ) : (
                                                 <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
-                                                    <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 17l6-6 4 4 8-8"/></svg>
+                                                    <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 17l6-6 4 4 8-8" /></svg>
                                                 </div>
                                             )}
                                         </div>
@@ -384,21 +385,21 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             <>
                                 <CarouselPrevious
                                     variant="ghost"
-                                    size="icon" 
+                                    size="icon"
                                     className={cn(
-                                        "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
-                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50", 
-                                        "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black" 
+                                        "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
+                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
+                                        "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                                     )}
                                     aria-label="Previous photo"
                                 />
                                 <CarouselNext
                                     variant="ghost"
-                                    size="icon" 
+                                    size="icon"
                                     className={cn(
-                                        "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20", 
-                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50", 
-                                        "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black" 
+                                        "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
+                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
+                                        "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                                     )}
                                     aria-label="Next photo"
                                 />
@@ -407,14 +408,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                     </Carousel>
 
                     {/* Show message when no photos are visible */}
-                    {!hasVisiblePhotos && open && ( 
+                    {!hasVisiblePhotos && open && (
                         <div className="absolute inset-0 flex items-center justify-center text-white text-center p-4 z-30">
                             <div className="bg-black/80 p-6 rounded-lg max-w-sm shadow-lg">
                                 <Icons.alertCircle className="h-12 w-12 mx-auto mb-4 text-yellow-400" />
                                 <h3 className="text-lg font-semibold mb-2">No Photos Available</h3>
                                 <p className="text-sm text-white/80">We couldn't load the photos for this place at the moment.</p>
                                 <Button
-                                    variant="secondary" 
+                                    variant="secondary"
                                     className="mt-4"
                                     onClick={onClose}
                                     size="sm"
@@ -430,9 +431,9 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 {visibleSlideCount > 1 && (
                     <div className={cn(
                         "flex-shrink-0 bg-black/80 border-t border-gray-800 z-10 transition-all duration-300 ease-in-out",
-                        showThumbnails ? "py-2" : "py-0 h-8" 
+                        showThumbnails ? "py-2" : "py-0 h-8"
                     )}>
-                        <div className="flex justify-center h-6 items-center"> 
+                        <div className="flex justify-center h-6 items-center">
                             <Button
                                 variant="ghost"
                                 size="sm"
@@ -459,7 +460,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                 showThumbnails ? "h-24 px-4 pb-2" : "h-0"
                             )}
                         >
-                            {showThumbnails && ( 
+                            {showThumbnails && (
                                 <ScrollArea className="h-full w-full whitespace-nowrap rounded-md">
                                     <div className="inline-flex gap-2 py-2">
                                         {visiblePhotos.map((photo, idx) => {
@@ -469,8 +470,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 <button
                                                     key={`thumb-${origIdx}`}
                                                     className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative flex-shrink-0", 
-                                                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50", 
+                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative flex-shrink-0",
+                                                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50",
                                                         idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50"
                                                             : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
@@ -479,16 +480,16 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                     aria-label={`Go to photo ${thumbVisibleNumber}`}
                                                 >
                                                     <Image
-                                                        src={optimizeGooglePhotoUrl(photo, 100)} 
+                                                        src={optimizeGooglePhotoUrl(photo, 100)}
                                                         alt={`Thumbnail ${thumbVisibleNumber}`}
                                                         fill
-                                                        sizes="64px" 
+                                                        sizes="64px"
                                                         className="object-cover"
-                                                        placeholder="blur" 
+                                                        placeholder="blur"
                                                         blurDataURL={blurDataURL}
                                                         referrerPolicy="no-referrer"
                                                         unoptimized={photo.includes('googleusercontent.com')}
-                                                        onError={() => handleImageError(origIdx, photo)} 
+                                                        onError={() => handleImageError(origIdx, photo)}
                                                     />
                                                 </button>
                                             );
