@@ -68,6 +68,7 @@ interface RootLayoutProps {
 
 export const viewport: Viewport = {
   themeColor: 'white',
+  viewportFit: 'cover',
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {

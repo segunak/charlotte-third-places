@@ -72,7 +72,7 @@ export function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent>
+      <DrawerContent className="pb-safe">
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -89,7 +89,7 @@ export function FilterDrawer({
         <DrawerHeader>
           <DrawerTitle></DrawerTitle>
         </DrawerHeader>
-        <div className="space-y-4 px-4 pb-4">
+        <div className="space-y-4 px-4">
           {showSort && (
             <div className="space-y-4">
               <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
