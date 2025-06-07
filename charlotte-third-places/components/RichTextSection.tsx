@@ -4,6 +4,7 @@ import { FC, useState, useRef, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Icons } from '@/components/Icons';
+import { ResponsiveLink } from '@/components/ResponsiveLink';
 import clsx from 'clsx';
 
 interface RichTextSectionProps {
@@ -58,21 +59,17 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
         return () => window.removeEventListener('resize', checkOverflow);
     }, [isMobile, priority, children]);
 
+
     const renderMarkdownContent = (content: string) => (
         <ReactMarkdown
             components={{
-                // Custom link styling for better UX
+                // Use ResponsiveLink for better UX across devices
                 a: ({ href, children, ...props }) => (
-                    <a
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors"
-                        {...props}
-                    >
+                    <ResponsiveLink href={href || ''} {...props}>
                         {children}
-                    </a>
+                    </ResponsiveLink>
                 ),
+
                 // Handle paragraphs with proper spacing for natural reading
                 p: ({ children, ...props }) => (
                     <p className="mb-3 last:mb-0" {...props}>
@@ -99,13 +96,15 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
     return (
         <div className="space-y-2">
             <div className="relative">
+
+
                 <div
                     ref={contentRef}
                     className={clsx(
                         shouldTruncate && "line-clamp-5"
                     )}
                 >
-                    <span className="font-semibold">{heading}:</span>
+                    <span className="font-semibold mr-1">{heading}:</span>
                     <span className="ml-1">
                         {renderMarkdownContent(children)}
                     </span>
