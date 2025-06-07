@@ -466,7 +466,6 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 <RichTextSection
                                     heading="Description"
                                     priority="high"
-                                    inline={true}
                                 >
                                     {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                                 </RichTextSection>
@@ -477,7 +476,6 @@ export function PlacePageClient({ place }: { place: Place }) {
                                         <RichTextSection
                                             heading="Comments"
                                             priority="medium"
-                                            inline={true}
                                         >
                                             {place.comments.trim()}
                                         </RichTextSection>

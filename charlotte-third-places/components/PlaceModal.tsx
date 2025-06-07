@@ -146,7 +146,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <RichTextSection
                         heading="Description"
                         priority="high"
-                        inline={true}
                     >
                         {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                     </RichTextSection>
@@ -158,7 +157,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             <RichTextSection
                                 heading="Comments"
                                 priority="medium"
-                                inline={true}
                             >
                                 {place.comments!}
                             </RichTextSection>
