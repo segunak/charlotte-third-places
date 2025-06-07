@@ -27,7 +27,7 @@ import Image from "next/image";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
-import { SmartTextSection } from "@/components/SmartTextSection";
+import { RichTextSection } from "@/components/RichTextSection";
 import { QuickFacts } from "@/components/QuickFacts";
 
 // Simple gray placeholder
@@ -463,24 +463,24 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 />
                                 <Separator />
                                 {/* DESCRIPTION - Always visible, high priority */}
-                                <SmartTextSection
+                                <RichTextSection
                                     heading="Description"
                                     priority="high"
                                     inline={true}
                                 >
                                     {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
-                                </SmartTextSection>
+                                </RichTextSection>
                                 {/* COMMENTS - Smart truncation for long content, only if comments exist */}
                                 {place.comments?.trim() && (
                                     <>
                                         <Separator />
-                                        <SmartTextSection
+                                        <RichTextSection
                                             heading="Comments"
                                             priority="medium"
                                             inline={true}
                                         >
                                             {place.comments.trim()}
-                                        </SmartTextSection>
+                                        </RichTextSection>
                                     </>
                                 )}
                                 <Separator />

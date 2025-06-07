@@ -1,8 +1,31 @@
 import { twMerge } from "tailwind-merge"
 import { clsx, type ClassValue } from "clsx"
+import removeMd from 'remove-markdown';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
+}
+
+/**
+ * Strips Markdown formatting from text to get plain text.
+ * Uses the remove-markdown library for comprehensive markdown removal.
+ * Also removes the trailing newline that Airtable adds.
+ * 
+ * @param markdown - The markdown text to strip
+ * @returns Plain text without markdown formatting
+ */
+export function stripMarkdown(markdown: string): string {
+  if (!markdown) return '';
+  
+  // Use remove-markdown library with options
+  const stripped = removeMd(markdown, {
+    stripListLeaders: true,    // Remove list item leaders (e.g. "* " or "1. ")
+    gfm: true,                 // Support GitHub Flavored Markdown
+    useImgAltText: true        // Replace images with their alt text
+  });
+  
+  // Remove trailing newline that Airtable adds and trim
+  return stripped.replace(/\n$/, '').trim();
 }
 
 /**
