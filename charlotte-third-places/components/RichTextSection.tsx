@@ -131,10 +131,9 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
                                         <p key={index} className="mb-3">
                                             {IconComponent && (
                                                 <IconComponent
-                                                    className={`h-4 w-4 ${iconColorClass} inline align-text-bottom`}
+                                                    className={`h-4 w-4 ${iconColorClass} inline align-text-bottom mr-2`}
                                                 />
                                             )}
-                                            {" "}
                                             <strong className="font-semibold">{heading}:</strong>
                                             {' '}
                                             {node.children?.map((child, i) => renderNode(child, `${index}-${i}`))}

@@ -489,7 +489,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 <Separator />
                                 <p>
                                     <Icons.folder className="h-4 w-4 text-yellow-400 inline mr-2" />
-                                    <strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
+                                    <span className="font-semibold">Metadata:</span> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
                                 </p>
                             </div>
                         </CardContent>

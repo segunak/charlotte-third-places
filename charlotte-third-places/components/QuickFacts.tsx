@@ -198,7 +198,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 <tbody className="divide-y divide-muted/60">
                     {/* Address */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle w-44">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle w-44">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.address}
                                 Address
@@ -208,7 +208,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Neighborhood */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.neighborhood}
                                 Neighborhood
@@ -218,7 +218,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Size */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {typeof attributeIcons.size === 'function' ? attributeIcons.size(size) : attributeIcons.size}
                                 Size
@@ -228,7 +228,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Parking */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.parking}
                                 Parking
@@ -244,7 +244,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Free Wi-Fi */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.wifi}
                                 Wi-Fi
@@ -254,7 +254,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Purchase Required */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.purchase}
                                 Purchase Required
@@ -264,7 +264,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {/* Cinnamon Rolls */}
                     <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                             <span className="inline-flex items-center gap-2">
                                 {attributeIcons.cinnamonRolls}
                                 Cinnamon Rolls
@@ -274,7 +274,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                     </tr>
                     {socialsRow && (
                         <tr>
-                            <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-medium whitespace-nowrap align-middle">
+                            <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
                                 <span className="inline-flex items-center gap-2">
                                     {attributeIcons.socials}
                                     Socials
