@@ -60,6 +60,7 @@ import {
   LuMoon,
   LuSunMedium,
   LuLink,
+  LuNotebookPen,
   LuExternalLink,
   LuInstagram,
   LuShare
@@ -80,6 +81,7 @@ export const Icons = {
   arrowRight: FaArrowRight,
   houses: BsFillHousesFill,
   wifi: FaWifi,
+  notebookPen: LuNotebookPen,
   arrowLeft: FaArrowLeft,
   mobile: FaMobileAlt,
   tablet: FaTabletAlt,

@@ -59,6 +59,8 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
         return () => window.removeEventListener('resize', checkOverflow);
     }, [isMobile, priority, children]);
 
+    // Combine heading and content into a single markdown string
+    const combinedMarkdown = `**${heading}:** ${children?.trim() || ''}`;
 
     const renderMarkdownContent = (content: string) => (
         <ReactMarkdown
@@ -90,24 +92,19 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
                 ),
             }}
         >
-            {content?.trim() || ''}
+            {content}
         </ReactMarkdown>
     );
     return (
         <div className="space-y-2">
             <div className="relative">
-
-
                 <div
                     ref={contentRef}
                     className={clsx(
                         shouldTruncate && "line-clamp-5"
                     )}
                 >
-                    <span className="font-semibold mr-1">{heading}:</span>
-                    <span className="ml-1">
-                        {renderMarkdownContent(children)}
-                    </span>
+                    {renderMarkdownContent(combinedMarkdown)}
                 </div>
                 {shouldTruncate && isOverflowing && (
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />
