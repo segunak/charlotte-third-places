@@ -14,7 +14,7 @@ import {
 } from "react";
 import React from "react";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { SmartTextSection } from "@/components/SmartTextSection";
+import { RichTextSection } from "@/components/RichTextSection";
 import { useModalContext } from "@/contexts/ModalContext";
 import {
     Dialog,
@@ -143,33 +143,33 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     />
                     <Separator />
                     {/* DESCRIPTION - Always visible, high priority */}
-                    <SmartTextSection
+                    <RichTextSection
                         heading="Description"
                         priority="high"
-                        inline={true}
                     >
                         {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
-                    </SmartTextSection>
+                    </RichTextSection>
 
                     {/* COMMENTS - Smart truncation for long content */}
                     {hasComments && (
                         <>
                             <Separator />
-                            <SmartTextSection
+                            <RichTextSection
                                 heading="Comments"
                                 priority="medium"
-                                inline={true}
                             >
                                 {place.comments!}
-                            </SmartTextSection>
-                        </>
-                    )}
+                            </RichTextSection>
+                        </>)
+                    }
                     <Separator className="hidden sm:block" />
                     <p className="hidden sm:block">
-                        <strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated:{" "}
+                        <Icons.folder className="h-4 w-4 text-yellow-400 inline mr-2" />
+                        <span className="font-semibold">Metadata:</span> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated:{" "}
                         {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
                     </p>
                 </div>
+
                 {/* CLOSE BUTTON */}
                 <div className="flex justify-center py-4 px-4 mt-auto">
                     <Button className="font-bold w-full max-w-xs" onClick={onClose}>

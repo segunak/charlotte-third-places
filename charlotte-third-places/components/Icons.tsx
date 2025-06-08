@@ -16,7 +16,8 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaCar,
-  FaWifi
+  FaWifi,
+  FaBookOpen
 } from "react-icons/fa6";
 import {
   FaFilter,
@@ -33,7 +34,8 @@ import {
   FaDesktop,
   FaCircle,
   FaLink,
-  FaQuestion
+  FaQuestion,
+  FaFolder
 } from "react-icons/fa";
 import {
   IoHome,
@@ -60,6 +62,7 @@ import {
   LuMoon,
   LuSunMedium,
   LuLink,
+  LuNotebookPen,
   LuExternalLink,
   LuInstagram,
   LuShare
@@ -76,10 +79,14 @@ export const Icons = {
   cinnamonRoll: TbCakeRoll,
   alertCircle: IoAlertCircle,
   questionMark: FaQuestion,
+  folder: FaFolder,
+  openBook: FaBookOpen,
+  attachMoney: MdAttachMoney,
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
   houses: BsFillHousesFill,
   wifi: FaWifi,
+  notebookPen: LuNotebookPen,
   arrowLeft: FaArrowLeft,
   mobile: FaMobileAlt,
   tablet: FaTabletAlt,

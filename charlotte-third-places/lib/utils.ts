@@ -87,3 +87,140 @@ export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
 
   return shuffled;
 }
+
+/**
+ * Parsed markdown node structure for rendering
+ */
+export interface ParsedMarkdownNode {
+  type: 'paragraph' | 'text' | 'bold' | 'italic' | 'strikethrough' | 'link' | 'linebreak';
+  content?: string;
+  children?: ParsedMarkdownNode[];
+  href?: string; // for links
+}
+
+/**
+ * Complete parsed markdown structure
+ */
+export interface ParsedMarkdown {
+  nodes: ParsedMarkdownNode[];
+}
+
+/**
+ * Parses Airtable-specific markdown into a structured format for rendering.
+ * Handles the specific markdown features that Airtable supports:
+ * - **Bold text**
+ * - *Italic text*
+ * - ~~Strikethrough text~~
+ * - [Link text](URL)
+ * - Line breaks (preserved as hard breaks)
+ * - Paragraph breaks (double line breaks)
+ * - Trailing newlines (common in Airtable data)
+ * 
+ * @param markdown - The Airtable markdown text to parse
+ * @returns Structured markdown that can be rendered with full control
+ */
+export function parseAirtableMarkdown(markdown: string): ParsedMarkdown {
+  if (!markdown) {
+    return { nodes: [] };
+  }
+
+  // Remove trailing newline that Airtable adds and trim
+  const cleaned = markdown.replace(/\n$/, '').trim();
+
+  if (!cleaned) {
+    return { nodes: [] };
+  }
+
+  // Split by paragraph breaks (double newlines or more)
+  const paragraphTexts = cleaned.split(/\n\n+/);
+
+  const paragraphs: ParsedMarkdownNode[] = paragraphTexts
+    .filter(text => text.trim()) // Remove empty paragraphs
+    .map(text => ({
+      type: 'paragraph' as const,
+      children: parseInlineElements(text.trim())
+    }));
+
+  return { nodes: paragraphs };
+}
+
+/**
+ * Parses inline markdown elements within a paragraph.
+ * Handles bold, italic, strikethrough, links, line breaks, and plain text.
+ * 
+ * @param text - The paragraph text to parse
+ * @returns Array of parsed inline nodes
+ */
+function parseInlineElements(text: string): ParsedMarkdownNode[] {
+  const nodes: ParsedMarkdownNode[] = [];
+  let remaining = text;
+  while (remaining.length > 0) {
+    // Check for links first [text](url)
+    const linkMatch = remaining.match(/^\[([^\]]*)\]\(([^)]*)\)/);
+    if (linkMatch) {
+      nodes.push({
+        type: 'link',
+        content: linkMatch[1],
+        href: linkMatch[2]
+      });
+      remaining = remaining.slice(linkMatch[0].length);
+      continue;
+    }
+
+    // Check for strikethrough ~~text~~ (must come before other patterns)
+    const strikethroughMatch = remaining.match(/^~~([^~]*(?:~(?!~)[^~]*)*)~~/);
+    if (strikethroughMatch) {
+      nodes.push({
+        type: 'strikethrough',
+        content: strikethroughMatch[1]
+      });
+      remaining = remaining.slice(strikethroughMatch[0].length);
+      continue;
+    }
+
+    // Check for bold **text** (must come before italic to handle ***text***)
+    const boldMatch = remaining.match(/^\*\*([^*]*(?:\*(?!\*)[^*]*)*)\*\*/);
+    if (boldMatch) {
+      nodes.push({
+        type: 'bold',
+        content: boldMatch[1]
+      });
+      remaining = remaining.slice(boldMatch[0].length);
+      continue;
+    }    // Check for italic _text_ (Airtable uses underscores)
+    const italicMatch = remaining.match(/^_([^_\n]+)_/);
+    if (italicMatch) {
+      nodes.push({
+        type: 'italic',
+        content: italicMatch[1]
+      });
+      remaining = remaining.slice(italicMatch[0].length);
+      continue;
+    }
+
+    // Check for single line break (preserved as hard break in Airtable)
+    if (remaining.startsWith('\n')) {
+      nodes.push({ type: 'linebreak' });
+      remaining = remaining.slice(1);
+      continue;
+    }    // Regular text - take until next special character or end
+    const nextSpecial = remaining.search(/[\[*~_\n]/);
+    if (nextSpecial === -1) {
+      // No more special characters, take the rest
+      if (remaining) {
+        nodes.push({ type: 'text', content: remaining });
+      }
+      break;
+    } else if (nextSpecial > 0) {
+      // Text before next special character
+      nodes.push({ type: 'text', content: remaining.slice(0, nextSpecial) });
+      remaining = remaining.slice(nextSpecial);
+    } else {
+      // Special character at start didn't match patterns, treat as text
+      nodes.push({ type: 'text', content: remaining[0] });
+      remaining = remaining.slice(1);
+    }
+  }
+
+  return nodes;
+}
