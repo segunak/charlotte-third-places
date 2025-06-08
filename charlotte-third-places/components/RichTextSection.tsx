@@ -1,10 +1,11 @@
 'use client';
 
 import { FC, useState, useRef, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Icons } from '@/components/Icons';
 import { ResponsiveLink } from '@/components/ResponsiveLink';
+import { parseAirtableMarkdown, ParsedMarkdownNode } from '@/lib/utils';
 import clsx from 'clsx';
 
 interface RichTextSectionProps {
@@ -25,10 +26,10 @@ interface RichTextSectionProps {
  * - low: Truncates on mobile with "Read more" option
  *  * Styling options:
  * - Always displays heading inline with content (like "Label: content")
- * 
- * Airtable Markdown Support (per official documentation):
+ *  * Airtable Markdown Support (per official documentation):
  * - **Bold text**
  * - *Italic text*
+ * - ~~Strikethrough text~~
  * - [Link text](URL)
  * - Line breaks are preserved as hard breaks
  * - Paragraph breaks (double line breaks) create new paragraphs
@@ -49,62 +50,119 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
     useEffect(() => {
         const checkOverflow = () => {
             if (contentRef.current && isMobile && priority !== 'high') {
-                const element = contentRef.current;
-                setIsOverflowing(element.scrollHeight > element.clientHeight);
+                // Only update isOverflowing based on measurements if not currently expanded.
+                // This ensures the measurement happens against the clamped height.
+                if (!expanded) {
+                    setTimeout(() => {
+                        if (contentRef.current) {
+                            setIsOverflowing(contentRef.current.scrollHeight > contentRef.current.clientHeight);
+                        }
+                    }, 0);
+                }
+                // If `expanded` is true, we don't modify `isOverflowing` here.
+                // It retains its previous value, which should be `true` if "Show less" is visible.
+            } else {
+                // If not on mobile or priority is high, truncation is not applicable.
+                setIsOverflowing(false);
             }
         };
 
         checkOverflow();
         window.addEventListener('resize', checkOverflow);
         return () => window.removeEventListener('resize', checkOverflow);
-    }, [isMobile, priority, children]);
+    }, [isMobile, priority, children, heading, expanded]);
 
-    // Combine heading and content into a single markdown string
-    const combinedMarkdown = `**${heading}:** ${children?.trim() || ''}`;
+    let IconComponent: React.ElementType | null = null;
+    let iconColorClass = '';
 
-    const renderMarkdownContent = (content: string) => (
-        <ReactMarkdown
-            components={{
-                // Use ResponsiveLink for better UX across devices
-                a: ({ href, children, ...props }) => (
-                    <ResponsiveLink href={href || ''} {...props}>
-                        {children}
+    if (heading === 'Description') {
+        IconComponent = Icons.notebookPen;
+        iconColorClass = 'text-purple-600';
+    } else if (heading === 'Comments') {
+        IconComponent = Icons.comment;
+        iconColorClass = 'text-primary';
+    } else if (heading === 'Metadata') {
+        IconComponent = Icons.folder;
+        iconColorClass = 'text-yellow-600';
+    }
+
+    // Parse the content without the heading (we'll handle heading separately)
+    const parsed = parseAirtableMarkdown(children?.trim() || '');    // Render a parsed markdown node
+    const renderNode = (node: ParsedMarkdownNode, key: string | number): React.ReactNode => {
+        switch (node.type) {
+            case 'text':
+                return <span key={key}>{node.content}</span>;
+            case 'bold':
+                return <strong key={key} className="font-semibold">{node.content}</strong>;
+            case 'italic':
+                return <em key={key} className="italic">{node.content}</em>;
+            case 'strikethrough':
+                return <span key={key} className="line-through">{node.content}</span>;
+            case 'link':
+                return (
+                    <ResponsiveLink key={key} href={node.href || ''}>
+                        {node.content}
                     </ResponsiveLink>
-                ),
-
-                // Handle paragraphs with proper spacing for natural reading
-                p: ({ children, ...props }) => (
-                    <p className="mb-3 last:mb-0" {...props}>
-                        {children}
-                    </p>
-                ),
-                // Handle strong (bold) text
-                strong: ({ children, ...props }) => (
-                    <strong className="font-semibold" {...props}>
-                        {children}
-                    </strong>
-                ),
-                // Handle emphasis (italic) text
-                em: ({ children, ...props }) => (
-                    <em className="italic" {...props}>
-                        {children}
-                    </em>
-                ),
-            }}
-        >
-            {content}
-        </ReactMarkdown>
-    );
-    return (
+                );
+            case 'linebreak':
+                return <br key={key} />;
+            case 'paragraph':
+                return node.children?.map((child, i) => renderNode(child, `${key}-${i}`));
+            default:
+                return null;
+        }
+    }; return (
         <div className="space-y-2">
             <div className="relative">
-                <div
-                    ref={contentRef}
-                    className={clsx(
-                        shouldTruncate && "line-clamp-5"
-                    )}
-                >
-                    {renderMarkdownContent(combinedMarkdown)}
+                {/* Container for icon and text content */}
+                <div>
+                    <div
+                        ref={contentRef}
+                        className={clsx(
+                            "leading-relaxed",
+                            shouldTruncate && "line-clamp-5"
+                        )}
+                    >
+                        {parsed.nodes.length > 0 ? (
+                            parsed.nodes.map((node, index) => {
+                                if (node.type === 'paragraph' && index === 0) {
+                                    // First paragraph - render inline with icon and heading
+                                    return (
+                                        <p key={index} className="mb-3">
+                                            {IconComponent && (
+                                                <IconComponent
+                                                    className={`h-4 w-4 ${iconColorClass} inline align-text-bottom`}
+                                                />
+                                            )}
+                                            {" "}
+                                            <strong className="font-semibold">{heading}:</strong>
+                                            {' '}
+                                            {node.children?.map((child, i) => renderNode(child, `${index}-${i}`))}
+                                        </p>
+                                    );
+                                } else if (node.type === 'paragraph') {
+                                    // Subsequent paragraphs
+                                    return (
+                                        <p key={index} className="mb-3">
+                                            {node.children?.map((child, i) => renderNode(child, `${index}-${i}`))}
+                                        </p>
+                                    );
+                                }
+                                return null;
+                            })
+                        ) : (
+                            // Fallback when there's no content
+                            <p className="mb-3">
+                                {IconComponent && (
+                                    <IconComponent
+                                        className={`h-4 w-4 ${iconColorClass} inline align-text-bottom`}
+                                    />
+                                )}
+                                {" "}
+                                <strong className="font-semibold">{heading}:</strong>
+                            </p>
+                        )}
+                    </div>
                 </div>
                 {shouldTruncate && isOverflowing && (
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />

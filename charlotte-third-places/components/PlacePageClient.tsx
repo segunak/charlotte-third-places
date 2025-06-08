@@ -445,7 +445,9 @@ export function PlacePageClient({ place }: { place: Place }) {
                                         aria-label="Share Place"
                                     />
                                 </div>
+
                                 <Separator />
+
                                 <QuickFacts
                                     address={place.address}
                                     neighborhood={place.neighborhood}
@@ -461,7 +463,9 @@ export function PlacePageClient({ place }: { place: Place }) {
                                     facebook={facebook}
                                     linkedIn={linkedIn}
                                 />
+
                                 <Separator />
+
                                 {/* DESCRIPTION - Always visible, high priority */}
                                 <RichTextSection
                                     heading="Description"
@@ -469,6 +473,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 >
                                     {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
                                 </RichTextSection>
+
                                 {/* COMMENTS - Smart truncation for long content, only if comments exist */}
                                 {place.comments?.trim() && (
                                     <>
@@ -482,7 +487,10 @@ export function PlacePageClient({ place }: { place: Place }) {
                                     </>
                                 )}
                                 <Separator />
-                                <p><strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.</p>
+                                <p>
+                                    <Icons.folder className="h-4 w-4 text-yellow-400 inline mr-2" />
+                                    <strong>Metadata:</strong> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
+                                </p>
                             </div>
                         </CardContent>
                     </Card>
