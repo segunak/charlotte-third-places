@@ -19,13 +19,22 @@ export function FilterDrawer({
   showSort = false,
   style = {},
   showButton = true,
+  open,
+  onOpenChange,
 }: {
   className?: string;
   showSort?: boolean;
   style?: React.CSSProperties;
   showButton?: boolean;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+  // Use controlled state if provided, otherwise use internal state
+  const isOpen = open !== undefined ? open : isDrawerOpen;
+  const setIsOpen = onOpenChange || setIsDrawerOpen;
+
   const { filters } = useContext(FilterContext);
   const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
   // Track open state for all selects
@@ -48,9 +57,8 @@ export function FilterDrawer({
       triggerRef.current.focus();
     }
   }, []);
-
   return (
-    <Drawer open={isDrawerOpen} onOpenChange={setIsDrawerOpen}>
+    <Drawer open={isOpen} onOpenChange={setIsOpen}>
       <Button
         ref={triggerRef}
         variant="outline"
@@ -60,7 +68,7 @@ export function FilterDrawer({
           ${!showButton ? "opacity-0 pointer-events-none" : "opacity-100"}
         `}
         style={style}
-        onClick={() => setIsDrawerOpen(true)}
+        onClick={() => setIsOpen(true)}
         aria-label="Open Filters"
         tabIndex={!showButton ? -1 : 0}
       >
@@ -132,7 +140,7 @@ export function FilterDrawer({
           )}
           <FilterResetButton disabled={anyDropdownOpen} />
           <DrawerClose asChild>
-            <Button variant="outline" className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
+            <Button className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
               Close
             </Button>
           </DrawerClose>

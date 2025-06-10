@@ -37,7 +37,6 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
     }
 
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
-
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
 
     return (
@@ -47,11 +46,13 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 <div className="text-2xl font-bold">List</div>
                 <p className="text-pretty">
                     {/* Always visible portion */}
-                    Browse the complete list of places below.{" "}
+                    Browse the complete list of places.{" "}
+
                     {/* Mobile-only text */}
                     <span className="inline sm:hidden">
-                        Use the quick filters or the <span className="font-bold text-primary">button in the lower-right corner</span> for more options.
+                        Use the menu below or the <span className="font-bold text-primary">filter icon button</span> in the lower-right corner for more options.
                     </span>
+
                     {/* Desktop-only text */}
                     <span className="hidden sm:inline">
                         Use the <span className="font-bold text-primary">sidebar on the right</span> to sort and filter.
@@ -67,8 +68,9 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
                         <DataTable rowData={places} />
                     </Suspense>
-                </section>
-                {/* Place FilterDrawer here, wrapped for mobile only */}
+                </section>'
+                '
+                {/* Mobile only */}
                 <div className="sm:hidden">
                     <FilterDrawer
                         showSort={true}

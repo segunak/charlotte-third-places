@@ -212,6 +212,7 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
         <div className={maxWidth}>
             <Button
                 className="w-full"
+                variant="outline"
                 onClick={handleResetFilters}
                 disabled={disabled}
             >
