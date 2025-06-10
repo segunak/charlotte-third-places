@@ -68,8 +68,8 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
                         <DataTable rowData={places} />
                     </Suspense>
-                </section>'
-                '
+                </section>
+
                 {/* Mobile only */}
                 <div className="sm:hidden">
                     <FilterDrawer
