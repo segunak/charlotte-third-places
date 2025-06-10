@@ -3,6 +3,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Button } from "@/components/ui/button";
+import { Icons } from "@/components/Icons";
 
 interface SearchablePickerModalProps {
   open: boolean;
@@ -25,13 +26,13 @@ export function SearchablePickerModal({
 }: SearchablePickerModalProps) {
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
-  
+
   useEffect(() => {
     if (open) {
       setSearch("");
     }
   }, [open]);
-  
+
   const filteredOptions = useMemo(() => {
     if (!search) return options;
     return options.filter((opt) => opt.toLowerCase().includes(search.toLowerCase()));
@@ -50,14 +51,16 @@ export function SearchablePickerModal({
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
-        <Input
-          ref={inputRef}
-          placeholder={`Search ${label}...`}
-          value={search}
-          autoFocus={false}
-          onChange={(e) => setSearch(e.target.value)}
-          className="mb-3 w-full"
-        />
+        <div className="relative mb-3">
+          <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-primary pointer-events-none" />
+          <Input
+            ref={inputRef}
+            value={search}
+            autoFocus={false}
+            onChange={(e) => setSearch(e.target.value)}
+            className="w-full pl-10"
+          />
+        </div>
         <ScrollArea className="h-64 max-h-[55vh] w-full rounded-md border bg-background">
           <ul className="space-y-1">
             <li>

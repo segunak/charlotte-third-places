@@ -18,6 +18,7 @@ import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { CaretSortIcon } from "@radix-ui/react-icons";
+import { Icons } from "@/components/Icons";
 import type { FilterConfig } from "@/lib/types";
 
 const maxWidth = "max-w-full";
@@ -31,17 +32,18 @@ export function FilterQuickSearch() {
         },
         [setQuickFilterText]
     );
-
     return (
         <div className={maxWidth}>
-            <Input
-                type="text"
-                placeholder="Search All Fields..."
-                value={quickFilterText}
-                onChange={handleQuickFilterChange}
-                className="w-full"
-                autoFocus={false}
-            />
+            <div className="relative">
+                <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-primary pointer-events-none" />
+                <Input
+                    type="text"
+                    value={quickFilterText}
+                    onChange={handleQuickFilterChange}
+                    className="w-full pl-10"
+                    autoFocus={false}
+                />
+            </div>
         </div>
     );
 }
