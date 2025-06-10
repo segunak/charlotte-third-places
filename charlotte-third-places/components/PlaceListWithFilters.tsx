@@ -35,7 +35,9 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
         return [ref, inView] as const;
     }
+
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
+
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
 
     return (
