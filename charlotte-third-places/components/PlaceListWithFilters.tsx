@@ -74,7 +74,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                         showSort={true}
                         className="fixed right-3 z-50"
                         style={{ bottom: '5rem' }}
-                        showButton={isQuickFiltersInView}
+                        showButton={isQuickFiltersInView || isDataTableInView}
                     />
                 </div>
             </div>
