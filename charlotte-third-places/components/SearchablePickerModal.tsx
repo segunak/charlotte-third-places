@@ -47,7 +47,7 @@ export function SearchablePickerModal({
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         className="sm:max-w-md rounded-lg bg-background p-6 pt-4 w-full max-w-full overflow-hidden"
-        style={{ maxHeight: '90vh' }}
+        style={{ maxHeight: '100vh' }}
         onOpenAutoFocus={(e) => e.preventDefault()}
       >
         <DialogTitle className="text-center w-full mb-2">Select {label}</DialogTitle>
