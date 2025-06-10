@@ -192,7 +192,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
 export function FilterResetButton({ disabled, variant }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" }) {
     const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
 
-    const handleResetFilters = useCallback((e: React.MouseEvent) => {
+    const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
         // Prevent any event bubbling that might affect parent dialogs
         e.preventDefault();
         e.stopPropagation();
@@ -204,8 +204,12 @@ export function FilterResetButton({ disabled, variant }: { disabled?: boolean; v
             });
             return resetFilters;
         });
+
         setQuickFilterText("");
         setSortOption(DEFAULT_SORT_OPTION);
+
+        // Blur the button to remove focus and any lingering hover/focus effects
+        e.currentTarget.blur();
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
