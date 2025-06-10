@@ -50,7 +50,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     Browse the complete list of places below.{" "}
                     {/* Mobile-only text */}
                     <span className="inline sm:hidden">
-                        Use the quick filters below or the <span className="font-bold text-primary">button in the lower-right corner</span> for more options.
+                        Use the quick filters or the <span className="font-bold text-primary">button in the lower-right corner</span> for more options.
                     </span>
                     {/* Desktop-only text */}
                     <span className="hidden sm:inline">
@@ -74,7 +74,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                         showSort={true}
                         className="fixed right-3 z-50"
                         style={{ bottom: '5rem' }}
-                        showButton={isDataTableInView}
+                        showButton={isQuickFiltersInView}
                     />
                 </div>
             </div>
