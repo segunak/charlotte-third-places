@@ -56,7 +56,7 @@ export function SearchablePickerModal({
           value={search}
           autoFocus={false}
           onChange={(e) => setSearch(e.target.value)}
-          className="mb-3 w-full text-sm"
+          className="mb-3 w-full"
         />
         <ScrollArea className="h-64 max-h-[55vh] w-full rounded-md border bg-background">
           <ul className="space-y-1">

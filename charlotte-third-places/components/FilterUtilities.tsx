@@ -39,7 +39,7 @@ export function FilterQuickSearch() {
                 placeholder="Search All Fields..."
                 value={quickFilterText}
                 onChange={handleQuickFilterChange}
-                className="w-full text-sm"
+                className="w-full"
                 autoFocus={false}
             />
         </div>
