@@ -3,6 +3,7 @@
 import { Place } from "@/lib/types";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
+import { MobileQuickFilters } from "@/components/MobileQuickFilters";
 import React, { useEffect, useRef, useState, Suspense, useCallback } from "react";
 import dynamic from "next/dynamic";
 
@@ -34,8 +35,8 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
         return [ref, inView] as const;
     }
-
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
+    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
@@ -47,7 +48,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     Browse the complete list of places below.{" "}
                     {/* Mobile-only text */}
                     <span className="inline sm:hidden">
-                        Use the <span className="font-bold text-primary">button in the lower-right corner</span> to sort and filter.
+                        Use the quick filters below or the <span className="font-bold text-primary">button in the lower-right corner</span> for more options.
                     </span>
                     {/* Desktop-only text */}
                     <span className="hidden sm:inline">
@@ -55,13 +56,16 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     </span>
                 </p>
 
+                <div className="sm:hidden" ref={quickFiltersRef}>
+                    <MobileQuickFilters />
+                </div>
+
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
                         <DataTable rowData={places} />
                     </Suspense>
                 </section>
-
                 {/* Place FilterDrawer here, wrapped for mobile only */}
                 <div className="sm:hidden">
                     <FilterDrawer
