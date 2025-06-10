@@ -207,9 +207,6 @@ export function FilterResetButton({ disabled, variant }: { disabled?: boolean; v
 
         setQuickFilterText("");
         setSortOption(DEFAULT_SORT_OPTION);
-
-        // Blur the button to remove focus and any lingering hover/focus effects
-        e.currentTarget.blur();
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
