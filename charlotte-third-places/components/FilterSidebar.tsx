@@ -48,7 +48,8 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
                     onDropdownOpenChange={handleDropdownStateChange}
                 />
             ))}
-            <FilterResetButton disabled={anyDropdownOpen} />
+
+            <FilterResetButton variant="default" disabled={anyDropdownOpen} />
         </div>
     );
 }

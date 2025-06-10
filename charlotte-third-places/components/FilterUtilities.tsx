@@ -189,7 +189,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     );
 }
 
-export function FilterResetButton({ disabled }: { disabled?: boolean }) {
+export function FilterResetButton({ disabled, variant }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link" }) {
     const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
 
     const handleResetFilters = useCallback((e: React.MouseEvent) => {
@@ -212,7 +212,7 @@ export function FilterResetButton({ disabled }: { disabled?: boolean }) {
         <div className={maxWidth}>
             <Button
                 className="w-full"
-                variant="outline"
+                variant={variant}
                 onClick={handleResetFilters}
                 disabled={disabled}
             >

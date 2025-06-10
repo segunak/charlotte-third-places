@@ -5,7 +5,6 @@ import { FilterContext } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { Button } from "@/components/ui/button";
-import { Icons } from "@/components/Icons";
 
 export function MobileQuickFilters() {
     const { filters } = useContext(FilterContext);
@@ -49,7 +48,7 @@ export function MobileQuickFilters() {
                 {/* Action buttons row */}
                 <div className="flex gap-2">
                     <div className="flex-1">
-                        <FilterResetButton />
+                        <FilterResetButton variant="outline" />
                     </div>
                     <Button
                         className="flex-1"

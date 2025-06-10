@@ -138,7 +138,9 @@ export function FilterDrawer({
               aria-hidden="true"
             />
           )}
-          <FilterResetButton disabled={anyDropdownOpen} />
+
+          <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
+
           <DrawerClose asChild>
             <Button className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
               Close
