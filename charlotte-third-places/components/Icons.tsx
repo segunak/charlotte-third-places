@@ -35,13 +35,12 @@ import {
   FaCircle,
   FaLink,
   FaQuestion,
-  FaFolder
+  FaFolder,
+  FaSearch
 } from "react-icons/fa";
 import {
   IoHome,
   IoHomeOutline,
-  IoSearch,
-  IoSearchOutline,
   IoMap,
   IoMapOutline,
   IoInformationCircle,
@@ -80,6 +79,7 @@ export const Icons = {
   alertCircle: IoAlertCircle,
   questionMark: FaQuestion,
   folder: FaFolder,
+  search: FaSearch,
   openBook: FaBookOpen,
   attachMoney: MdAttachMoney,
   arrowLeftRight: FaArrowsAltH,
@@ -99,8 +99,6 @@ export const Icons = {
     <FaApple {...props} className={`text-apple ${props.className ?? ""}`} />
   ),
   editMarker: MdEditLocationAlt,
-  search: IoSearch,
-  searchOutline: IoSearchOutline,
   filter: FaFilter,
   comment: FaComment,
   queen: FaChessQueen,
