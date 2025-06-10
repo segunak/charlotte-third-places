@@ -37,7 +37,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
     }
 
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
-    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.05 });
+    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.3 });
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
