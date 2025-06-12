@@ -50,7 +50,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
                     {/* Mobile-only text */}
                     <span className="inline sm:hidden">
-                        Use the menu below or the <span className="font-bold text-primary">filter icon button</span> in the lower-right corner for more options.
+                        Use the menu below or the <span className="font-bold text-primary">filter button</span> in the lower-right corner for more options.
                     </span>
 
                     {/* Desktop-only text */}
