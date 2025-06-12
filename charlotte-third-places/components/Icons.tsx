@@ -1,11 +1,12 @@
 // See https://react-icons.github.io/react-icons/
-import { ArrowUp, Locate, Loader2 } from "lucide-react";
+
 import { FcGoogle } from "react-icons/fc";
-import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { MdEditLocationAlt, MdAttachMoney } from "react-icons/md";
-import { BsFillHousesFill } from "react-icons/bs";
-import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { TbCakeRoll } from "react-icons/tb";
+import { BsFillHousesFill } from "react-icons/bs";
+import { HiOutlineGlobeAlt } from "react-icons/hi";
+import { ArrowUp, Locate, Loader2 } from "lucide-react";
+import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { MdEditLocationAlt, MdAttachMoney } from "react-icons/md";
 import {
   FaLocationPin,
   FaMapPin,
