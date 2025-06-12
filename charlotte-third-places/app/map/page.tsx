@@ -31,17 +31,11 @@ export default async function MapPage() {
                         <p className="text-pretty">
                             Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the map below. {" "}
                             <span className="hidden sm:inline">
-                                {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>.
+                                {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>. {" "}
                             </span>
-                        </p>
-                        <p className="text-pretty">
-                            Click any marker for more info about a place. Use the <span className="font-bold text-primary">Find Me</span> button in the upper-right corner to see your location on the map. {" "}
-                            <span className="font-bold text-primary">Filter</span> using the {" "}
+                            Click any <span className="font-bold text-primary">marker</span> for more info about a place.
                             <span className="sm:hidden">
-                                button in the <span className="font-bold text-primary">lower-right</span> corner.
-                            </span>
-                            <span className="hidden sm:inline">
-                                <span className="font-bold text-primary">sidebar</span> on the right.
+                                {" "}<span className="font-bold text-primary">Filter</span> using the button in the lower-right.
                             </span>
                         </p>
                     </div>
