@@ -31,9 +31,12 @@ export default async function MapPage() {
                         <p className="text-pretty">
                             Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink> with the map below. {" "}
                             <span className="hidden sm:inline">
-                                {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>. {""}
+                                {" "} Prefer a list? Click <Link href="/" className="custom-link">here</Link>. Have a suggestion or enhancement? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the site, click <Link href="/about" className="custom-link">here</Link>. {" "}
                             </span>
                             Click any <span className="font-bold text-primary">marker</span> for more info about a place.
+                            <span className="sm:hidden">
+                                {" "}<span className="font-bold text-primary">Filter</span> using the button in the lower-right.
+                            </span>
                         </p>
                     </div>
                     <div className="w-full h-[70vh] sm:h-[80vh] mb-0 sm:mb-4">
