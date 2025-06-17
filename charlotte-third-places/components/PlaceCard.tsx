@@ -160,9 +160,9 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         <Card
             onClick={handleCardClick}
             className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">            {place?.featured && (
-                <div className="absolute top-3 right-3 z-10">
+                <div className="absolute top-3 right-[1.4rem] z-10">
                     <div className="bg-amber-500 rounded-full p-1.5 shadow-md">
-                        <Icons.star className="h-4 w-4 text-white fill-white" title="Featured Place" />
+                        <Icons.star className="h-5 w-5 text-white fill-white" title="Featured Place" />
                     </div>
                 </div>
             )}
