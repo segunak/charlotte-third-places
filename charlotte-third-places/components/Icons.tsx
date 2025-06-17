@@ -37,7 +37,9 @@ import {
   FaLink,
   FaQuestion,
   FaFolder,
-  FaSearch
+  FaSearch,
+  FaStar,
+  FaCrown
 } from "react-icons/fa";
 import {
   IoHome,
@@ -102,6 +104,8 @@ export const Icons = {
   editMarker: MdEditLocationAlt,
   filter: FaFilter,
   comment: FaComment,
+  star: FaStar,
+  crown: FaCrown,
   queen: FaChessQueen,
   pin: FaLocationPin,
   circle: FaCircle,

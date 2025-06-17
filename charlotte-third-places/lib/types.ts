@@ -12,6 +12,7 @@ export type Place = {
     freeWiFi: string;
     hasCinnamonRolls: string;
     hasReviews: string;
+    featured: boolean;
     description: string;
     website: string;
     tiktok: string;

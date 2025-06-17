@@ -207,7 +207,6 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
             return [];
         }
     };
-
     const getField = (key: string): any => {
         if (isCSV) {
             const value = record[key];
@@ -224,6 +223,10 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
             if (["Created Time", "Last Modified Time"].includes(key)) {
                 return parseDate(value);
             }
+            if (key === "Featured") {
+                // For CSV: "checked" = true, empty/other = false
+                return value?.toLowerCase() === "checked";
+            }
             return value;
         } else {
             // For Airtable records
@@ -235,6 +238,11 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                 // If it's already an array, return it
                 if (Array.isArray(value)) return value;
                 return parsePythonStyleArray(value);
+            }
+
+            // For Featured field from Airtable (boolean checkbox)
+            if (key === "Featured") {
+                return Boolean(value);
             }
 
             return value;
@@ -254,6 +262,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         freeWiFi: getField("Free Wi-Fi"),
         hasCinnamonRolls: getField("Has Cinnamon Rolls"),
         hasReviews: getField("Has Data File"),
+        featured: getField("Featured"),
         description: getField("Description"),
         website: getField("Website"),
         tiktok: getField("TikTok"),
