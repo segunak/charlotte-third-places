@@ -42,8 +42,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={contentRef}
-                crossCloseIconSize="h-6 w-6"
-                crossCloseIconColor={place.featured ? "text-gray-900" : undefined}
+                crossCloseIconSize="h-7 w-7"
                 className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
@@ -53,16 +52,17 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                {/* Premium Modal Header */}
+                {/* Featured ribbon, corner banner */}
                 {place.featured && (
-                    <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-3 text-center font-semibold text-lg flex items-center justify-center gap-1.5 -mx-6 -mt-6 mb-1 rounded-t-xl">
-                        <Icons.star className="h-5 w-5" />
-                        Featured Third Place
-                        <Icons.star className="h-5 w-5" />
+                    <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                        <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
+                            <Icons.star className="h-4 w-4 mr-1" />
+                            <span>Featured</span>
+                        </div>
                     </div>
                 )}
 
-                <DialogHeader className={place.featured ? "mt-0" : "mt-7 sm:mt-0"}>
+                <DialogHeader className="mt-7 sm:mt-0">
                     <DialogTitle className="text-center">
                         {place.name}
                     </DialogTitle>
