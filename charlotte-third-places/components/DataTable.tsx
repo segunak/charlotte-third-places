@@ -56,6 +56,12 @@ export function DataTable({ rowData }: DataTableProps) {
     const applySorting = useCallback(
         (data: any[]) => {
             return [...data].sort((a: any, b: any) => {
+                // First priority: Featured places come first
+                if (a.featured !== b.featured) {
+                    return b.featured ? 1 : -1; // featured places (true) come before non-featured (false)
+                }
+
+                // Second priority: Apply user's selected sorting
                 const { field, direction } = sortOption;
 
                 // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)

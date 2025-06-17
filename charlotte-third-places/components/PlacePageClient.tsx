@@ -215,9 +215,12 @@ export function PlacePageClient({ place }: { place: Place }) {
     const linkedIn = place.linkedIn?.trim();
 
     return (
-        <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl"> {/* Increased max-width */}
-            <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6">
+        <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl">
+            <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6 flex items-center justify-center gap-3">
                 {place.name}
+                {place.featured && (
+                    <Icons.star className="h-6 w-6 sm:h-8 sm:w-8 text-amber-500 flex-shrink-0" title="Featured Place" />
+                )}
             </h1>
 
             {/* Responsive Layout: Grid on large screens, Stacked on smaller */}

@@ -156,14 +156,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
     const handleCardClick = () => {
         showPlaceModal(place);
-    };
-
-    return (
+    }; return (
         <Card
             onClick={handleCardClick}
-            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font">
+            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">            {place?.featured && (
+                <div className="absolute top-3 right-[1.5rem] z-10">
+                    <div className="bg-amber-500 rounded-full p-1.5 shadow-md">
+                        <Icons.star className="h-5 w-5 text-white fill-white" title="Featured Place" />
+                    </div>
+                </div>
+            )}
             <CardHeader className="pb-2">
-                <CardTitle className="text-lg truncate">{place?.name}</CardTitle>
+                <CardTitle className="text-lg truncate">
+                    {place?.name}
+                </CardTitle>
                 <CardDescription className="truncate">
                     {description}
                 </CardDescription>
