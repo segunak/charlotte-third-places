@@ -198,7 +198,6 @@ export function PlacePageClient({ place }: { place: Place }) {
         });
     }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);    // Determine if loop should be enabled - moved from hook to render time calculation
     const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
-
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl">
             <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6 flex items-center justify-center gap-3">
@@ -395,19 +394,16 @@ export function PlacePageClient({ place }: { place: Place }) {
                         )}
                     </div>
                 )}
-
                 <div className={cn(!hasPhotos && "lg:col-span-2")}>
                     <Card className="border border-gray-300 shadow-sm h-full relative">
-                        {/* Featured ribbon, corner banner */}
                         {place.featured && (
-                            <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
-                                <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
-                                    <Icons.star className="h-4 w-4 mr-1" />
-                                    <span>Featured</span>
-                                </div>
+                            <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5">
+                                <Icons.star className="h-5 w-5" />
+                                Featured Third Place
+                                <Icons.star className="h-5 w-5" />
                             </div>
                         )}
-                        <CardContent className="pt-6">
+                        <CardContent className={place.featured ? "pt-4" : "pt-6"}>
                             <PlaceContent
                                 place={place}
                                 layout="page"
