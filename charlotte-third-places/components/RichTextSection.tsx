@@ -79,7 +79,7 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
         IconComponent = Icons.notebookPen;
         iconColorClass = 'text-purple-600';
     } else if (heading === 'Comments') {
-        IconComponent = Icons.comment;
+        IconComponent = Icons.commentAlt;
         iconColorClass = 'text-primary';
     } else if (heading === 'Metadata') {
         IconComponent = Icons.folder;

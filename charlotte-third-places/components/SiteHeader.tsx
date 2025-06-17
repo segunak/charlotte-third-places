@@ -30,7 +30,7 @@ export function SiteHeader() {
                                     variant: "ghost",
                                 })}
                             >
-                                <Icons.tiktok className="h-5 w-5" />
+                                <Icons.tiktok className="h-5 w-5 text-black dark:text-white" />
                                 <span className="sr-only">TikTok</span>
                             </div>
                         </Link>
@@ -45,7 +45,7 @@ export function SiteHeader() {
                                     variant: "ghost",
                                 })}
                             >
-                                <Icons.youtube className="h-5 w-5" />
+                                <Icons.youtube className="h-5 w-5 text-red-600" />
                                 <span className="sr-only">YouTube</span>
                             </div>
                         </Link>
@@ -60,7 +60,7 @@ export function SiteHeader() {
                                     variant: "ghost",
                                 })}
                             >
-                                <Icons.instagram className="h-5 w-5" />
+                                <Icons.instagram className="h-5 w-5 text-pink-500" />
                                 <span className="sr-only">Instagram</span>
                             </div>
                         </Link>
