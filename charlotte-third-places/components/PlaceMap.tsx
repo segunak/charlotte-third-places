@@ -171,7 +171,11 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 <div className="relative flex items-center justify-center w-8 h-8">
                                     <Icons.pin className={`w-8 h-8 stroke-black stroke-2 ${place.featured ? 'text-amber-500' : 'text-primary'}`} />
                                     <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
-                                        <Icons.queen className="w-full h-full text-charlottePaperWhite" />
+                                        {place.featured ? (
+                                            <Icons.star className="w-full h-full text-white fill-white" />
+                                        ) : (
+                                            <Icons.queen className="w-full h-full text-charlottePaperWhite" />
+                                        )}
                                     </div>
                                 </div>
                             </AdvancedMarker>
