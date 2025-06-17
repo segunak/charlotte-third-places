@@ -18,7 +18,7 @@ export function SiteHeader() {
                 </div>
 
                 <div className="flex flex-1 items-center justify-end">
-                    <nav className="flex items-center space-x-1">
+                    <nav className="flex items-center">
                         <Link
                             href="https://www.tiktok.com/@charlottethirdplaces"
                             target="_blank"
