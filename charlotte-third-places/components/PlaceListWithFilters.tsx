@@ -4,7 +4,7 @@ import { Place } from "@/lib/types";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
-import React, { useEffect, useRef, useState, Suspense, useCallback } from "react";
+import React, { useEffect, useRef, useState, Suspense } from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import DataTable for lazy loading

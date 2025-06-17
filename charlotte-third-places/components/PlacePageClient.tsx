@@ -4,10 +4,7 @@ import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react'
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { ShareButton } from "@/components/ShareButton";
 import { Card, CardContent } from "@/components/ui/card";
-import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { cn } from "@/lib/utils";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
@@ -27,8 +24,7 @@ import Image from "next/image";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
-import { RichTextSection } from "@/components/RichTextSection";
-import { QuickFacts } from "@/components/QuickFacts";
+import { PlaceContent } from "@/components/PlaceContent";
 
 // Simple gray placeholder
 const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
@@ -202,25 +198,10 @@ export function PlacePageClient({ place }: { place: Place }) {
         });
     }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);    // Determine if loop should be enabled - moved from hook to render time calculation
     const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
-
-    const website = place.website?.trim();
-    const appleMapsProfileURL = place.appleMapsProfileURL?.trim();
-    const googleMapsProfileURL = place.googleMapsProfileURL?.trim();
-    const shareUrl = typeof window !== 'undefined' ? `${window.location.origin}/places/${place.recordId}` : `https://www.charlottethirdplaces.com/places/${place.recordId}`;
-    const instagram = place.instagram?.trim();
-    const tiktok = place.tiktok?.trim();
-    const twitter = place.twitter?.trim();
-    const youtube = place.youtube?.trim();
-    const facebook = place.facebook?.trim();
-    const linkedIn = place.linkedIn?.trim();
-
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl">
             <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6 flex items-center justify-center gap-3">
                 {place.name}
-                {place.featured && (
-                    <Icons.star className="h-6 w-6 sm:h-8 sm:w-8 text-amber-500 flex-shrink-0" title="Featured Place" />
-                )}
             </h1>
 
             {/* Responsive Layout: Grid on large screens, Stacked on smaller */}
@@ -413,88 +394,21 @@ export function PlacePageClient({ place }: { place: Place }) {
                         )}
                     </div>
                 )}
-
                 <div className={cn(!hasPhotos && "lg:col-span-2")}>
-                    <Card className="border border-gray-300 shadow-sm h-full">
-                        <CardContent className="pt-6">
-                            <div className="space-y-3">
-                                <div className="flex justify-center space-x-4">
-                                    {googleMapsProfileURL && (
-                                        <ResponsiveLink href={googleMapsProfileURL} aria-label="Visit Google Maps Page">
-                                            <Button variant="outline">
-                                                <Icons.google className="h-6 w-6" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    )}
-                                    {appleMapsProfileURL && (
-                                        <ResponsiveLink href={appleMapsProfileURL} aria-label="Visit Apple Maps Page">
-                                            <Button variant="outline">
-                                                <Icons.apple className="h-6 w-6" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    )}
-                                    {website && (
-                                        <ResponsiveLink href={website} aria-label="Visit Website">
-                                            <Button variant="outline">
-                                                <Icons.globe className="h-7 w-7" />
-                                            </Button>
-                                        </ResponsiveLink>
-                                    )}
-                                    <ShareButton
-                                        placeName={place.name}
-                                        url={shareUrl}
-                                        variant="outline"
-                                        displayType="icon"
-                                        aria-label="Share Place"
-                                    />
-                                </div>
-
-                                <Separator />
-
-                                <QuickFacts
-                                    address={place.address}
-                                    neighborhood={place.neighborhood}
-                                    size={place.size}
-                                    purchaseRequired={place.purchaseRequired}
-                                    parking={place.parking}
-                                    freeWiFi={place.freeWiFi}
-                                    hasCinnamonRolls={place.hasCinnamonRolls}
-                                    instagram={instagram}
-                                    tiktok={tiktok}
-                                    twitter={twitter}
-                                    youtube={youtube}
-                                    facebook={facebook}
-                                    linkedIn={linkedIn}
-                                />
-
-                                <Separator />
-
-                                {/* DESCRIPTION - Always visible, high priority */}
-                                <RichTextSection
-                                    heading="Description"
-                                    priority="high"
-                                >
-                                    {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
-                                </RichTextSection>
-
-                                {/* COMMENTS - Smart truncation for long content, only if comments exist */}
-                                {place.comments?.trim() && (
-                                    <>
-                                        <Separator />
-                                        <RichTextSection
-                                            heading="Comments"
-                                            priority="medium"
-                                        >
-                                            {place.comments.trim()}
-                                        </RichTextSection>
-                                    </>
-                                )}
-                                <Separator />
-                                <p>
-                                    <Icons.folder className="h-4 w-4 text-yellow-400 inline mr-2" />
-                                    <span className="font-semibold">Metadata:</span> Added: {new Date(place.createdDate).toLocaleDateString("en-US")} | Last Updated: {new Date(place.lastModifiedDate).toLocaleDateString("en-US")}.
-                                </p>
+                    <Card className="border border-gray-300 shadow-sm h-full relative">
+                        {place.featured && (
+                            <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5">
+                                <Icons.star className="h-5 w-5" />
+                                Featured Third Place
+                                <Icons.star className="h-5 w-5" />
                             </div>
+                        )}
+                        <CardContent className={place.featured ? "pt-4" : "pt-6"}>
+                            <PlaceContent
+                                place={place}
+                                layout="page"
+                                showPhotosButton={false}
+                            />
                         </CardContent>
                     </Card>
                 </div>
