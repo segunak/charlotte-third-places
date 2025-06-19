@@ -1,12 +1,13 @@
 // See https://react-icons.github.io/react-icons/
 
 import { FcGoogle } from "react-icons/fc";
-import { TbCakeRoll } from "react-icons/tb";
+import { TbCakeRoll, TbCoffee } from "react-icons/tb";
 import { BsFillHousesFill } from "react-icons/bs";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
+import { RiDrinks2Fill } from "react-icons/ri";
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { MdEditLocationAlt, MdAttachMoney } from "react-icons/md";
+import { MdEditLocationAlt, MdAttachMoney, MdCoffee, MdEmojiFoodBeverage } from "react-icons/md";
 import {
   FaLocationPin,
   FaMapPin,
@@ -18,8 +19,30 @@ import {
   FaLinkedinIn,
   FaCar,
   FaWifi,
-  FaBookOpen
+  FaBookOpen,
+  FaBreadSlice,
+  FaUtensils,
+  FaStore,
+  FaBook,
+  FaGamepad,
+  FaPalette,
+  FaUsers,
+  FaLaptop
 } from "react-icons/fa6";
+
+import {
+  FaCoffee,
+  FaShoppingCart,
+  FaBeer,
+  FaIceCream,
+  FaCocktail,
+  FaUniversity
+} from "react-icons/fa";
+
+import {
+  GiPlantSeed,
+  GiCoffeeMug
+} from "react-icons/gi";
 import {
   FaFilter,
   FaChessQueen,
@@ -59,7 +82,8 @@ import {
   IoCameraOutline,
   IoChevronBack,
   IoChevronForward,
-  IoClose
+  IoClose,
+  IoFastFood
 } from "react-icons/io5";
 import {
   LuMoon,
@@ -70,6 +94,45 @@ import {
   LuInstagram,
   LuShare
 } from "react-icons/lu";
+
+export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
+  "Bakery": FaBreadSlice,
+  "Café": GiCoffeeMug,
+  "Coffee Shop": FaCoffee,
+  "Tea House": MdEmojiFoodBeverage,
+  "Bubble Tea Shop": RiDrinks2Fill,
+  "Restaurant": FaUtensils,
+  "Market": FaStore,
+  "Grocery Store": FaShoppingCart,
+  "Library": FaBook,
+  "Bookstore": FaBookOpen,
+  "Game Store": FaGamepad,
+  "Garden": GiPlantSeed,
+  "Brewery": FaBeer,
+  "Deli": IoFastFood,
+  "Eatery": FaUtensils,
+  "Creamery": FaIceCream,
+  "Ice Cream Shop": FaIceCream,
+  "Art Gallery": FaPalette,
+  "Bar": FaCocktail,
+  "Community Center": FaUsers,
+  "Coworking Space": FaLaptop,
+  "Museum": FaUniversity,
+  "Other": FaQuestion,
+};
+
+// Helper function to get the appropriate icon for a place type
+export const getPlaceTypeIcon = (placeTypes: string | string[] | undefined): React.ComponentType<any> => {
+  if (!placeTypes) {
+    return FaChessQueen; // Fallback to queen icon
+  }
+
+  // If it's an array, use the first type
+  const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
+
+  // Return the mapped icon or fallback to queen
+  return typeIconMap[typeToCheck] || FaChessQueen;
+};
 
 export const Icons = {
   arrowUp: ArrowUp,
