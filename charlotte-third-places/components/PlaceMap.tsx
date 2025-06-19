@@ -30,7 +30,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
     // Google Maps zoom levels: 1 = world view, 20+ = building level
     // Higher numbers = more zoomed in, lower numbers = more zoomed out
     // Zoom 11 = city level, 13 = neighborhood, 15 = street level, 18 = building details
-    const SHOW_LABELS_ZOOM = 15; // Only show place labels when zoomed to street level or closer
+    const SHOW_LABELS_ZOOM = 14; // Only show place labels when zoomed to street level or closer
     const MAX_LABELS_SHOWN = 20; // Limit labels for performance (prevents too many DOM elements)
 
     const handleLocationClick = () => {
