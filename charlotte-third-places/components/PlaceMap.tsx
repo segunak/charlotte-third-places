@@ -7,7 +7,7 @@ import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo } from 'react';
-import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+import { AdvancedMarker, APIProvider, Map, InfoWindow } from '@vis.gl/react-google-maps';
 
 // Cache for consistent color assignments (moved outside component)
 const colorCache: { [key: string]: string } = {};
@@ -24,6 +24,14 @@ export function PlaceMap({ places }: PlaceMapProps) {
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);
     const [isLocating, setIsLocating] = useState(false);
+    const [currentZoom, setCurrentZoom] = useState(11);
+    const [mapBounds, setMapBounds] = useState<google.maps.LatLngBounds | null>(null);
+
+    // Google Maps zoom levels: 1 = world view, 20+ = building level
+    // Higher numbers = more zoomed in, lower numbers = more zoomed out
+    // Zoom 11 = city level, 13 = neighborhood, 15 = street level, 18 = building details
+    const SHOW_LABELS_ZOOM = 15; // Only show place labels when zoomed to street level or closer
+    const MAX_LABELS_SHOWN = 10; // Limit labels for performance (prevents too many DOM elements)
 
     const handleLocationClick = () => {
         if (!("geolocation" in navigator)) {
@@ -159,7 +167,6 @@ export function PlaceMap({ places }: PlaceMapProps) {
         colorCache[typeToCheck] = result;
         return result;
     };
-
     const filteredPlaces = useMemo(() => {
         return places.filter((place) => {
             const {
@@ -196,6 +203,30 @@ export function PlaceMap({ places }: PlaceMapProps) {
         });
     }, [places, filters, quickFilterText]);
 
+    // Helper function to check if a place is within the current map bounds
+    const isPlaceInBounds = (place: Place): boolean => {
+        if (!mapBounds) return false;
+
+        const lat = Number(place.latitude);
+        const lng = Number(place.longitude);
+
+        if (isNaN(lat) || isNaN(lng)) return false;
+
+        return mapBounds.contains(new google.maps.LatLng(lat, lng));
+    };
+
+    // Get places that should show labels (in bounds, limited quantity)
+    const placesWithLabels = useMemo(() => {
+        if (currentZoom < SHOW_LABELS_ZOOM || !mapBounds) {
+            return [];
+        }
+
+        const placesInBounds = filteredPlaces.filter(isPlaceInBounds);
+
+        // Limit the number of labels shown for performance
+        return placesInBounds.slice(0, MAX_LABELS_SHOWN);
+    }, [filteredPlaces, currentZoom, mapBounds, SHOW_LABELS_ZOOM, MAX_LABELS_SHOWN]);
+
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
             <div className="w-full h-full border border-gray-200 rounded-xl shadow-xl relative">
@@ -212,6 +243,18 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     onBoundsChanged={(e: { map: google.maps.Map }) => {
                         if (e.map) {
                             setMapInstance(e.map);
+                            const bounds = e.map.getBounds();
+                            if (bounds) {
+                                setMapBounds(bounds);
+                            }
+                        }
+                    }}
+                    onZoomChanged={(e: { map: google.maps.Map }) => {
+                        if (e.map) {
+                            const zoom = e.map.getZoom();
+                            if (zoom !== undefined) {
+                                setCurrentZoom(zoom);
+                            }
                         }
                     }}
                 >
@@ -253,27 +296,43 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         const PlaceIcon = getPlaceTypeIcon(place.type);
                         const pinColor = place.featured ? 'text-amber-500' : getPlaceTypeColor(place.type);
 
+                        // Check if this place should show a label
+                        const shouldShowLabel = placesWithLabels.some(labelPlace => labelPlace.name === place.name);
+
                         return (
-                            <AdvancedMarker
-                                key={index}
-                                position={position}
-                                title={place.name}
-                                onClick={() => showPlaceModal(place)}
-                            >
-                                <div className="relative flex items-center justify-center w-8 h-8">
-                                    <Icons.pin
-                                        className={`w-8 h-8 stroke-black stroke-2`}
-                                        style={{ color: place.featured ? '#f59e0b' : pinColor }}
-                                    />
-                                    <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
-                                        {place.featured ? (
-                                            <Icons.star className="w-full h-full text-white fill-white" />
-                                        ) : (
-                                            <PlaceIcon className="w-full h-full text-charlottePaperWhite" />
+                            <div key={index}>
+                                <AdvancedMarker
+                                    position={position}
+                                    title={place.name}
+                                    onClick={() => showPlaceModal(place)}
+                                >
+                                    <div className="relative flex flex-col items-center">
+                                        <div className="relative flex items-center justify-center w-8 h-8">
+                                            <Icons.pin
+                                                className={`w-8 h-8 stroke-black stroke-2`}
+                                                style={{ color: place.featured ? '#f59e0b' : pinColor }}
+                                            />
+                                            <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
+                                                {place.featured ? (
+                                                    <Icons.star className="w-full h-full text-white fill-white" />
+                                                ) : (
+                                                    <PlaceIcon className="w-full h-full text-charlottePaperWhite" />
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        {/* Custom label positioned above the marker */}
+                                        {shouldShowLabel && (
+                                            <div
+                                                className="absolute -top-8 bg-black/80 text-white px-1.5 py-0.5 rounded text-xs font-normal whitespace-nowrap pointer-events-none cursor-pointer"
+                                                title={place.name} // Full name on hover
+                                            >
+                                                {place.name.length > 20 ? `${place.name.substring(0, 20)}...` : place.name}
+                                            </div>
                                         )}
                                     </div>
-                                </div>
-                            </AdvancedMarker>
+                                </AdvancedMarker>
+                            </div>
                         );
                     })}
                 </Map>
