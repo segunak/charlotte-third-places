@@ -31,7 +31,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
     // Higher numbers = more zoomed in, lower numbers = more zoomed out
     // Zoom 11 = city level, 13 = neighborhood, 15 = street level, 18 = building details
     const SHOW_LABELS_ZOOM = 15; // Only show place labels when zoomed to street level or closer
-    const MAX_LABELS_SHOWN = 10; // Limit labels for performance (prevents too many DOM elements)
+    const MAX_LABELS_SHOWN = 20; // Limit labels for performance (prevents too many DOM elements)
 
     const handleLocationClick = () => {
         if (!("geolocation" in navigator)) {
