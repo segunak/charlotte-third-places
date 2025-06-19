@@ -7,7 +7,7 @@ import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo } from 'react';
-import { AdvancedMarker, APIProvider, Map, InfoWindow } from '@vis.gl/react-google-maps';
+import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 // Cache for consistent color assignments (moved outside component)
 const colorCache: { [key: string]: string } = {};
