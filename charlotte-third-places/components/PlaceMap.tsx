@@ -324,7 +324,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                         {/* Custom label positioned above the marker */}
                                         {shouldShowLabel && (
                                             <div
-                                                className="absolute -top-8 bg-black/80 text-white px-1.5 py-0.5 rounded text-xs font-normal whitespace-nowrap pointer-events-none cursor-pointer"
+                                                className="absolute -top-7 bg-black/80 text-white px-1.5 py-0.5 rounded text-xs font-normal whitespace-nowrap pointer-events-none cursor-pointer"
                                                 title={place.name} // Full name on hover
                                             >
                                                 {place.name.length > 20 ? `${place.name.substring(0, 20)}...` : place.name}
