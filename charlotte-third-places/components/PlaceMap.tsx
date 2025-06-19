@@ -75,12 +75,11 @@ export function PlaceMap({ places }: PlaceMapProps) {
     }, []);
 
     // Specific color assignments for certain place types.
-    // The comment for each entry matches the actual hex color.
     const specificTypeColors: { [key: string]: string } = {
-        "Art Gallery": "#FF00DC",        // Electric Pink
+        "Art Gallery": "#FF00DC",        // Vivid Magenta
         "Bakery": "#FFC649",             // Saffron Yellow
         "Bar": "#8B008B",                // Dark Magenta
-        "Bookstore": "#1E3A8A",          // Dark Blue
+        "Bookstore": "#1E3A8A",          // Navy Blue
         "Brewery": "#FF6347",            // Tomato Red
         "Bubble Tea Shop": "#FF00FF",    // Magenta
         "Café": "#FF1493",               // Deep Pink
@@ -90,16 +89,16 @@ export function PlaceMap({ places }: PlaceMapProps) {
         "Creamery": "#FF69B4",           // Hot Pink
         "Deli": "#00CED1",               // Dark Turquoise
         "Eatery": "#DA70D6",             // Orchid
-        "Game Store": "#107C10",         // Dark Green
+        "Game Store": "#107C10",         // Microsoft Green
         "Garden": "#50C878",             // Emerald Green
-        "Grocery Store": "#50C878",      // Shocking Pink
+        "Grocery Store": "#50C878",      // Emerald Green
         "Ice Cream Shop": "#FF77FF",     // Light Fuchsia Pink
         "Library": "#BF00FF",            // Purple
         "Market": "#FF7F50",             // Coral
         "Museum": "#8A2BE2",             // Blue Violet
         "Other": "#6B7280",              // Gray
         "Restaurant": "#FF0033",         // Bright Red
-        "Tea House": "#08FF08",           // Bright Green
+        "Tea House": "#08FF08",          // Bright Green
     };
 
     // Comprehensive color palette for automatic type-based color assignment
