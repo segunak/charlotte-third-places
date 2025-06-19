@@ -79,7 +79,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
         "Art Gallery": "#FF00DC",        // Vivid Magenta
         "Bakery": "#FFC649",             // Saffron Yellow
         "Bar": "#8B008B",                // Dark Magenta
-        "Bookstore": "#1E3A8A",          // Navy Blue
+        "Bookstore": "#144EE3",          // Laser Blue
         "Brewery": "#C21807",            // Chili Red
         "Bubble Tea Shop": "#FF00FF",    // Magenta
         "Café": "#FF1493",               // Deep Pink
