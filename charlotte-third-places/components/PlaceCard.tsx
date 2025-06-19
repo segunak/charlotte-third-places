@@ -18,7 +18,7 @@ const typeEmojiMap: { [key: string]: string } = {
     "Bakery": "🍞",
     "Café": "☕",
     "Coffee Shop": "☕",
-    "Tea Shop": "🍵",
+    "Tea House": "🍵",
     "Bubble Tea Shop": "🧋",
     "Restaurant": "🍽️",
     "Market": "🛍️",

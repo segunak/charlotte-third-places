@@ -99,7 +99,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Bakery": FaBreadSlice,
   "Café": GiCoffeeMug,
   "Coffee Shop": FaCoffee,
-  "Tea Shop": MdEmojiFoodBeverage,
+  "Tea House": MdEmojiFoodBeverage,
   "Bubble Tea Shop": RiDrinks2Fill,
   "Restaurant": FaUtensils,
   "Market": FaStore,
