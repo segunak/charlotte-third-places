@@ -2,12 +2,15 @@
 
 import { Place } from '@/lib/types';
 import { Button } from './ui/button';
-import { Icons } from "@/components/Icons";
+import { Icons, getPlaceTypeIcon } from "@/components/Icons";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+
+// Cache for consistent color assignments (moved outside component)
+const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
     places: Array<Place>;
@@ -70,6 +73,107 @@ export function PlaceMap({ places }: PlaceMapProps) {
 
         return () => window.removeEventListener('resize', updateViewSettings);
     }, []);
+
+    // Predefined colors for specific place types
+    // const specificTypeColors: { [key: string]: string } = {
+    //     "Café": "#8A2BE2",
+    //     "Coffee Shop": "#FF0050",
+    //     "Tea Shop": "#08FF08",
+    //     "Bookstore": "#00FF41",
+    //     "Library": "#BF00FF",
+    //     "Garden": "#2E7D32",
+    //     "Deli": "#833AB4",
+    //     "Restaurant": "#FF3131",
+    //     "Market": "#FF1DCE",
+    //     "Bakery": "#FF00FF",
+    //     "Grocery Store": "#FF5722",
+    //     "Brewery": "#9B30FF",
+    //     "Unsure": "#6B7280",
+    // };
+
+    const specificTypeColors: { [key: string]: string } = {
+        "Art Gallery": "#FF00DC",        // Electric Pink
+        "Bakery": "#FFC649",            // Orange Red
+        "Bar": "#8B008B",               // Dark Magenta
+        "Bookstore": "#1E3A8A   ",         // Indigo (dark electric)
+        "Brewery": "#FF6347",           // Tomato Orange
+        "Bubble Tea Shop": "#FF00FF",   // Bright Magenta
+        "Café": "#FF1493",              // Deep Pink (keeping)
+        "Coffee Shop": "#00BFFF",       // Deep Sky Blue (keeping)
+        "Community Center": "#9400D3",   // Dark Violet (electric)
+        "Coworking Space": "#00CED1",   // Dark Turquoise
+        "Creamery": "#FF69B4",          // Hot Pink
+        "Deli": "#00CED1",              // Dark Orange
+        "Eatery": "#DA70D6",            // Orchid Purple
+        "Game Store": "#107C10",        // Midnight Blue (dark electric)
+        "Garden": "#50C878",            // Turquoise
+        "Grocery Store": "#FF20B2",     // Electric Rose
+        "Ice Cream Shop": "#FF77FF",    // Electric Fuchsia
+        "Library": "#BF00FF",           // Purple
+        "Market": "#FF7F50",            // Coral
+        "Museum": "#8A2BE2",            // Blue Violet
+        "Other": "#6B7280",             // Gray
+        "Restaurant": "#FF0033",        // Crimson (dark electric)
+        "Tea Shop": "#08FF08",          // Medium Turquoise
+    };
+    // Comprehensive color palette for automatic type-based color assignment
+    // Each place type gets a unique, consistent color through hash-based selection
+    const typeColorPalette = [
+        "#FB923C", // Orange
+        "#14B8A6", // Teal
+        "#6366F1", // Indigo
+        "#EC4899", // Pink
+        "#84CC16", // Lime
+        "#F59E0B", // Amber
+        "#D946EF", // Fuchsia
+        "#F43F5E", // Rose
+        "#06B6D4", // Cyan
+        "#8B5CF6", // Violet
+        "#10B981", // Emerald
+        "#FBBF24", // Bright Yellow
+        "#DC2626", // Red (minimal use)
+        "#9333EA", // Purple
+        "#22C55E", // Green
+        "#3B82F6", // Bright Blue
+        "#F472B6", // Bright Pink
+        "#F59E0B", // Bright Amber
+        "#A3E635", // Bright Lime
+        "#2DD4BF", // Bright Teal        
+        "#E879F9", // Bright Fuchsia
+    ];
+
+    const getPlaceTypeColor = (placeTypes: string | string[] | undefined): string => {
+        if (!placeTypes) {
+            return "#3B82F6"; // Default blue
+        }
+
+        // If it's an array, use the first type
+        const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
+        // Check cache first
+        if (colorCache[typeToCheck]) {
+            return colorCache[typeToCheck];
+        } let result;
+
+        // If empty or whitespace, use first color from palette
+        if (!typeToCheck || typeToCheck.trim() === "") {
+            result = typeColorPalette[0];
+        }
+        // Check if this type has a specific predefined color
+        else if (specificTypeColors[typeToCheck]) {
+            result = specificTypeColors[typeToCheck];
+        }
+        // Generate hash-based color for automatic consistent assignment
+        else {
+            let hash = 0;
+            for (let i = 0; i < typeToCheck.length; i++) {
+                hash = typeToCheck.charCodeAt(i) + ((hash << 5) - hash);
+            }
+            const colorIndex = Math.abs(hash) % typeColorPalette.length;
+            result = typeColorPalette[colorIndex] || typeColorPalette[0];
+        }// Cache the result
+        colorCache[typeToCheck] = result;
+        return result;
+    };
 
     const filteredPlaces = useMemo(() => {
         return places.filter((place) => {
@@ -154,13 +258,16 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         >
                             <div className="w-6 h-6 rounded-full border-4 border-white shadow-lg" style={{ backgroundColor: 'hsl(var(--destructive))' }} />
                         </AdvancedMarker>
-                    )}
-
-                    {filteredPlaces.map((place, index) => {
+                    )}                    {filteredPlaces.map((place, index) => {
                         const position = {
                             lat: Number(place.latitude),
                             lng: Number(place.longitude)
                         };
+
+                        // Get the appropriate icon and color for the place type
+                        const PlaceIcon = getPlaceTypeIcon(place.type);
+                        const pinColor = place.featured ? 'text-amber-500' : getPlaceTypeColor(place.type);
+
                         return (
                             <AdvancedMarker
                                 key={index}
@@ -169,12 +276,15 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 onClick={() => showPlaceModal(place)}
                             >
                                 <div className="relative flex items-center justify-center w-8 h-8">
-                                    <Icons.pin className={`w-8 h-8 stroke-black stroke-2 ${place.featured ? 'text-amber-500' : 'text-primary'}`} />
+                                    <Icons.pin
+                                        className={`w-8 h-8 stroke-black stroke-2`}
+                                        style={{ color: place.featured ? '#f59e0b' : pinColor }}
+                                    />
                                     <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
                                         {place.featured ? (
                                             <Icons.star className="w-full h-full text-white fill-white" />
                                         ) : (
-                                            <Icons.queen className="w-full h-full text-charlottePaperWhite" />
+                                            <PlaceIcon className="w-full h-full text-charlottePaperWhite" />
                                         )}
                                     </div>
                                 </div>

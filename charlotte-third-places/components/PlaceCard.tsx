@@ -46,10 +46,10 @@ const typeEmojiMap: { [key: string]: string } = {
 const colorMap: { [key: string]: { bgColor: string; textColor: string } } = {
     "Cafe": { bgColor: "bg-blue-200", textColor: "text-blue-900" },             // Light blue background, dark blue text
     "Coffee Shop": { bgColor: "bg-yellow-200", textColor: "text-yellow-900" }, // Light yellow background, dark yellow text
-    "Unsure": { bgColor: "bg-gray-300", textColor: "text-gray-900" },            // Light gray background, dark gray text for "Unsure"
+    "Unsure": { bgColor: "bg-gray-300", textColor: "text-gray-900" },          // Light gray background, dark gray text for "Unsure"
 };
 
-const fallbackColors = [
+const typeColorPalette = [
     { bgColor: "bg-orange-200", textColor: "text-orange-900" },   // Light orange background, dark orange text
     { bgColor: "bg-teal-200", textColor: "text-teal-900" },       // Light teal background, dark teal text
     { bgColor: "bg-indigo-200", textColor: "text-indigo-900" },   // Light indigo background, dark indigo text
@@ -86,9 +86,9 @@ const getAttributeColors = (attribute: string) => {
 
     let result;
 
-    // If the attribute is empty or only contains whitespace, use the first fallback color
+    // If the attribute is empty or only contains whitespace, use the first mapped color
     if (!attribute || attribute.trim() === "") {
-        result = fallbackColors[0];
+        result = typeColorPalette[0];
     }
     // If the attribute exists in the predefined color map, use the corresponding color
     else if (colorMap[attribute]) {
@@ -101,9 +101,10 @@ const getAttributeColors = (attribute: string) => {
         for (let i = 0; i < attribute.length; i++) {
             hash = attribute.charCodeAt(i) + ((hash << 5) - hash);
         }
-        // Use the hash value to select a color from the fallback colors
-        const colorIndex = Math.abs(hash) % fallbackColors.length;
-        result = fallbackColors[colorIndex] || fallbackColors[0];
+
+        // Use the hash value to select a color from the mapped colors
+        const colorIndex = Math.abs(hash) % typeColorPalette.length;
+        result = typeColorPalette[colorIndex] || typeColorPalette[0];
     }
 
     // Cache the computed color for future use
