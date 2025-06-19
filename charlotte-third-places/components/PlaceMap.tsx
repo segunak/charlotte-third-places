@@ -74,48 +74,34 @@ export function PlaceMap({ places }: PlaceMapProps) {
         return () => window.removeEventListener('resize', updateViewSettings);
     }, []);
 
-    // Predefined colors for specific place types
-    // const specificTypeColors: { [key: string]: string } = {
-    //     "Café": "#8A2BE2",
-    //     "Coffee Shop": "#FF0050",
-    //     "Tea Shop": "#08FF08",
-    //     "Bookstore": "#00FF41",
-    //     "Library": "#BF00FF",
-    //     "Garden": "#2E7D32",
-    //     "Deli": "#833AB4",
-    //     "Restaurant": "#FF3131",
-    //     "Market": "#FF1DCE",
-    //     "Bakery": "#FF00FF",
-    //     "Grocery Store": "#FF5722",
-    //     "Brewery": "#9B30FF",
-    //     "Unsure": "#6B7280",
-    // };
-
+    // Specific color assignments for certain place types.
+    // The comment for each entry matches the actual hex color.
     const specificTypeColors: { [key: string]: string } = {
         "Art Gallery": "#FF00DC",        // Electric Pink
-        "Bakery": "#FFC649",            // Orange Red
-        "Bar": "#8B008B",               // Dark Magenta
-        "Bookstore": "#1E3A8A   ",         // Indigo (dark electric)
-        "Brewery": "#FF6347",           // Tomato Orange
-        "Bubble Tea Shop": "#FF00FF",   // Bright Magenta
-        "Café": "#FF1493",              // Deep Pink (keeping)
-        "Coffee Shop": "#00BFFF",       // Deep Sky Blue (keeping)
-        "Community Center": "#9400D3",   // Dark Violet (electric)
-        "Coworking Space": "#00CED1",   // Dark Turquoise
-        "Creamery": "#FF69B4",          // Hot Pink
-        "Deli": "#00CED1",              // Dark Orange
-        "Eatery": "#DA70D6",            // Orchid Purple
-        "Game Store": "#107C10",        // Midnight Blue (dark electric)
-        "Garden": "#50C878",            // Turquoise
-        "Grocery Store": "#FF20B2",     // Electric Rose
-        "Ice Cream Shop": "#FF77FF",    // Electric Fuchsia
-        "Library": "#BF00FF",           // Purple
-        "Market": "#FF7F50",            // Coral
-        "Museum": "#8A2BE2",            // Blue Violet
-        "Other": "#6B7280",             // Gray
-        "Restaurant": "#FF0033",        // Crimson (dark electric)
-        "Tea Shop": "#08FF08",          // Medium Turquoise
+        "Bakery": "#FFC649",             // Saffron Yellow
+        "Bar": "#8B008B",                // Dark Magenta
+        "Bookstore": "#1E3A8A",          // Dark Blue
+        "Brewery": "#FF6347",            // Tomato Red
+        "Bubble Tea Shop": "#FF00FF",    // Magenta
+        "Café": "#FF1493",               // Deep Pink
+        "Coffee Shop": "#00BFFF",        // Deep Sky Blue
+        "Community Center": "#9400D3",   // Dark Violet
+        "Coworking Space": "#00CED1",    // Dark Turquoise
+        "Creamery": "#FF69B4",           // Hot Pink
+        "Deli": "#00CED1",               // Dark Turquoise
+        "Eatery": "#DA70D6",             // Orchid
+        "Game Store": "#107C10",         // Dark Green
+        "Garden": "#50C878",             // Emerald Green
+        "Grocery Store": "#FF20B2",      // Shocking Pink
+        "Ice Cream Shop": "#FF77FF",     // Light Fuchsia Pink
+        "Library": "#BF00FF",            // Purple
+        "Market": "#FF7F50",             // Coral
+        "Museum": "#8A2BE2",             // Blue Violet
+        "Other": "#6B7280",              // Gray
+        "Restaurant": "#FF0033",         // Bright Red
+        "Tea Shop": "#08FF08",           // Bright Green
     };
+
     // Comprehensive color palette for automatic type-based color assignment
     // Each place type gets a unique, consistent color through hash-based selection
     const typeColorPalette = [
