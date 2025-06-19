@@ -91,14 +91,14 @@ export function PlaceMap({ places }: PlaceMapProps) {
         "Eatery": "#DA70D6",             // Orchid
         "Game Store": "#107C10",         // Microsoft Green
         "Garden": "#50C878",             // Emerald Green
-        "Grocery Store": "#50C878",      // Emerald Green
+        "Grocery Store": "#00A651",      // Publix Green
         "Ice Cream Shop": "#FF77FF",     // Light Fuchsia Pink
         "Library": "#BF00FF",            // Purple
         "Market": "#FF7F50",             // Coral
         "Museum": "#8A2BE2",             // Blue Violet
         "Other": "#6B7280",              // Gray
         "Restaurant": "#FF0033",         // Bright Red
-        "Tea House": "#08FF08",          // Bright Green
+        "Tea House": "#00FF00",          // Bright Green
     };
 
     // Comprehensive color palette for automatic type-based color assignment
