@@ -157,14 +157,50 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
     const handleCardClick = () => {
         showPlaceModal(place);
-    }; return (
+    };
+
+    // Create badges array for flexible badge management
+    const badges = useMemo(() => {
+        const badgeList = [];
+        // Add cinnamon roll badge if place has cinnamon rolls
+        if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
+            badgeList.push({
+                key: 'cinnamonRoll',
+                icon: <Icons.cinnamonRoll className="h-5 w-5" />,
+                bgColor: 'bg-amber-100', // Light amber background to complement the cinnamon roll colors
+                priority: 1
+            });
+        }
+
+        // Add featured badge (star) - always has highest priority to be rightmost
+        if (place?.featured) {
+            badgeList.push({
+                key: 'featured',
+                icon: <Icons.star className="h-5 w-5 text-white fill-white" />,
+                bgColor: 'bg-amber-500',
+                priority: 2
+            });
+        }
+
+        // Sort by priority (highest priority = rightmost position)
+        return badgeList.sort((a, b) => a.priority - b.priority);
+    }, [place?.hasCinnamonRolls, place?.featured]);
+
+    return (
         <Card
             onClick={handleCardClick}
-            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">            {place?.featured && (
-                <div className="absolute top-3 right-[1.4rem] z-10">
-                    <div className="bg-amber-500 rounded-full p-1.5 shadow-md">
-                        <Icons.star className="h-5 w-5 text-white fill-white" title="Featured Place" />
-                    </div>
+            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
+            {/* Render badges */}            {badges.length > 0 && (
+                <div className="absolute top-3 right-[1.4rem] z-10 flex space-x-2">
+                    {badges.map((badge) => (
+                        <div
+                            key={badge.key}
+                            className={`${badge.bgColor} rounded-full p-1.5 shadow-md`}
+                            title={badge.key === 'cinnamonRoll' ? 'Has Cinnamon Rolls' : 'Featured Place'}
+                        >
+                            {badge.icon}
+                        </div>
+                    ))}
                 </div>
             )}
             <CardHeader className="pb-2">
