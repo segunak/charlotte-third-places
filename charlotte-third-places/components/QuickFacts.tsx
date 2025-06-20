@@ -45,30 +45,30 @@ const YesNoBadge: FC<{
     label?: string;
     variant?: "default" | "positive" | "negative";
 }> = ({ value, label, variant = "default" }) => {
-    const isYes = value.toLowerCase() === "yes";
+    const normalizedValue = value.toLowerCase();
+    const isYes = normalizedValue === "yes";
+    const isUnsure = normalizedValue === "unsure";
+    const isNo = !isYes && !isUnsure;
 
-    let badgeVariant: "default" | "outline" = "outline";
+    let badgeVariant: "default" | "outline" = "default";
     let className = "gap-1 px-2 py-0.5 rounded-full font-medium";
 
-    if (variant === "positive" && isYes) {
+    if (isYes) {
         className += " bg-emerald-100 text-emerald-900 border-emerald-200";
-        badgeVariant = "default";
-    } else if (variant === "negative" && !isYes) {
+    } else if (isUnsure) {
+        className += " bg-gray-100 text-gray-900 border-gray-200";
+    } else if (variant === "negative") {
         className += " bg-red-100 text-red-900 border-red-200";
-        badgeVariant = "default";
-    } else if (isYes) {
-        className += " bg-emerald-100 text-emerald-900 border-emerald-200";
-        badgeVariant = "default";
     } else {
         className += " bg-muted text-muted-foreground border-muted";
+        badgeVariant = "outline";
     }
+
     return (
         <Badge variant={badgeVariant} className={cn(className)} disableHover>
-            {isYes ? (
-                <span className="text-emerald-600 font-bold text-sm">Yes</span>
-            ) : (
-                <span className="text-red-500 font-bold text-sm">No</span>
-            )}
+            {isYes && <span className="text-emerald-600 font-bold text-sm">Yes</span>}
+            {isUnsure && <span className="text-gray-600 font-bold text-sm">Unsure</span>}
+            {isNo && <span className="text-red-500 font-bold text-sm">No</span>}
             {label && <span className="ml-1">{label}</span>}
         </Badge>
     );
