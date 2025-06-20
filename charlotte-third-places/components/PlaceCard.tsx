@@ -4,6 +4,7 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const neighborhoodEmoji = "🏘️";
 
@@ -149,6 +150,7 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
+    const isMobile = useIsMobile();
 
     const description = useMemo(() =>
         place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
@@ -183,22 +185,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
         // Sort by priority (highest priority = rightmost position)
         return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured]);
-
-    // Smart truncation: 36 chars if badges present, no truncation if no badges
+    }, [place?.hasCinnamonRolls, place?.featured]);    // Smart truncation: only on mobile with badges present
     const displayTitle = useMemo(() => {
         const name = place?.name || '';
 
-        // If there are badges, truncate at 36 characters to prevent overlap
-        if (badges.length > 0) {
+        // Only truncate if we have badges AND we're on mobile
+        if (badges.length > 0 && isMobile) {
             if (name.length > 36) {
                 return name.substring(0, 33).trim() + '...';
             }
         }
 
-        // If no badges, return full name (rely on CSS truncate)
+        // Otherwise, return full name (rely on CSS truncate)
         return name;
-    }, [place?.name, badges.length]);
+    }, [place?.name, badges.length, isMobile]);
 
     return (
         <Card
