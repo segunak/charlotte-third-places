@@ -23,6 +23,34 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     // Instead of shuffling the array, keep a shuffled order of indexes
     const [shuffledOrder, setShuffledOrder] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
+    const [isShuffled, setIsShuffled] = useState<boolean>(false);
+
+    // Create initial order: featured places first (by created date desc), then rest
+    const getInitialOrder = useCallback(() => {
+        const featuredPlaces: { index: number; place: Place }[] = [];
+        const nonFeaturedPlaces: { index: number; place: Place }[] = [];
+
+        places.forEach((place, index) => {
+            if (place.featured) {
+                featuredPlaces.push({ index, place });
+            } else {
+                nonFeaturedPlaces.push({ index, place });
+            }
+        });
+
+        // Sort featured places by created date (newest first)
+        featuredPlaces.sort((a, b) =>
+            new Date(b.place.createdDate).getTime() - new Date(a.place.createdDate).getTime()
+        );
+
+        // Sort non-featured places by created date (newest first)
+        nonFeaturedPlaces.sort((a, b) =>
+            new Date(b.place.createdDate).getTime() - new Date(a.place.createdDate).getTime()
+        );
+
+        // Combine: featured first, then non-featured
+        return [...featuredPlaces, ...nonFeaturedPlaces].map(item => item.index);
+    }, [places]);
 
     // Shuffle logic: returns a shuffled array of indexes
     const shuffleIndexes = useCallback(() => {
@@ -33,7 +61,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         }
         return arr;
     }, [places.length]);
-
     // Shuffle handler
     const shuffleItems = useCallback(() => {
         if (shuffleTimeout.current) {
@@ -42,21 +69,22 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         shuffleTimeout.current = window.setTimeout(() => {
             const newOrder = shuffleIndexes();
             setShuffledOrder(newOrder);
+            setIsShuffled(true);
             // Trigger a state update to pass the new items and potentially the same index
             // to CardCarousel, signaling a programmatic scroll is needed.
             setCurrentIndex(idx => idx < newOrder.length ? idx : 0); // Ensure index is valid
         }, 0);
-    }, [shuffleIndexes]);
-
-    useEffect(() => {
+    }, [shuffleIndexes]); useEffect(() => {
         setIsLoading(true);
         const initialize = () => {
-            setShuffledOrder(shuffleIndexes());
+            // Use initial order on first load (featured first), not shuffled
+            setShuffledOrder(getInitialOrder());
             setCurrentIndex(0);
+            setIsShuffled(false);
             setIsLoading(false);
         };
         initialize();
-    }, [shuffleIndexes]);
+    }, [getInitialOrder]);
 
     const handleItemsChange = (count: number) => {
         setHasItems(count > 0);
