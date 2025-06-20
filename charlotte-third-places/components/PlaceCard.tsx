@@ -158,7 +158,6 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const handleCardClick = () => {
         showPlaceModal(place);
     };
-
     // Create badges array for flexible badge management
     const badges = useMemo(() => {
         const badgeList = [];
@@ -186,6 +185,21 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         return badgeList.sort((a, b) => a.priority - b.priority);
     }, [place?.hasCinnamonRolls, place?.featured]);
 
+    // Smart truncation: 36 chars if badges present, no truncation if no badges
+    const displayTitle = useMemo(() => {
+        const name = place?.name || '';
+
+        // If there are badges, truncate at 36 characters to prevent overlap
+        if (badges.length > 0) {
+            if (name.length > 36) {
+                return name.substring(0, 33).trim() + '...';
+            }
+        }
+
+        // If no badges, return full name (rely on CSS truncate)
+        return name;
+    }, [place?.name, badges.length]);
+
     return (
         <Card
             onClick={handleCardClick}
@@ -205,7 +219,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             )}
             <CardHeader className="pb-2">
                 <CardTitle className="text-lg truncate">
-                    {place?.name}
+                    {displayTitle}
                 </CardTitle>
                 <CardDescription className="truncate">
                     {description}
