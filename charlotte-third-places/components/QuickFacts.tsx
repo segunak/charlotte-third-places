@@ -1,8 +1,8 @@
-import { FC } from "react";
 import React from "react";
+import { FC } from "react";
+import { cn } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
 import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 
 interface QuickFactsProps {
