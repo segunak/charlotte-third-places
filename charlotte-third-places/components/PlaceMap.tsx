@@ -6,7 +6,7 @@ import { Icons, getPlaceTypeIcon } from "@/components/Icons";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
-import { useState, useEffect, useContext, useMemo } from 'react';
+import { useState, useEffect, useContext, useMemo, useCallback } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 // Cache for consistent color assignments (moved outside component)
@@ -179,8 +179,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 freeWiFi,
                 hasCinnamonRolls,
             } = filters;
-
-            const matchesQuickSearch = normalizeTextForSearch(JSON.stringify(place))
+            const matchesQuickSearch = normalizeTextForSearch(place.name || '')
                 .includes(normalizeTextForSearch(quickFilterText));
 
             const isTypeMatch =
@@ -204,7 +203,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
     }, [places, filters, quickFilterText]);
 
     // Helper function to check if a place is within the current map bounds
-    const isPlaceInBounds = (place: Place): boolean => {
+    // Wrapped in useCallback to prevent unnecessary dependency changes in useMemo
+    const isPlaceInBounds = useCallback((place: Place): boolean => {
         if (!mapBounds) return false;
 
         const lat = Number(place.latitude);
@@ -213,7 +213,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
         if (isNaN(lat) || isNaN(lng)) return false;
 
         return mapBounds.contains(new google.maps.LatLng(lat, lng));
-    };
+    }, [mapBounds]);
 
     // Get places that should show labels (in bounds, limited quantity)
     const placesWithLabels = useMemo(() => {
@@ -225,7 +225,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
 
         // Limit the number of labels shown for performance
         return placesInBounds.slice(0, MAX_LABELS_SHOWN);
-    }, [filteredPlaces, currentZoom, mapBounds, SHOW_LABELS_ZOOM, MAX_LABELS_SHOWN]);
+    }, [filteredPlaces, currentZoom, mapBounds, isPlaceInBounds, SHOW_LABELS_ZOOM, MAX_LABELS_SHOWN]);
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>

@@ -97,11 +97,10 @@ export function DataTable({ rowData }: DataTableProps) {
 
     const filteredAndGroupedRowData = useMemo(() => {
         let filteredData = rowData;
-
         if (quickFilterText.trim() !== "") {
-            const lowerCaseFilter = quickFilterText.toLowerCase();
+            const lowerCaseFilter = normalizeTextForSearch(quickFilterText);
             filteredData = filteredData.filter((place: any) =>
-                normalizeTextForSearch(JSON.stringify(place)).includes(lowerCaseFilter)
+                normalizeTextForSearch(place.name || '').includes(lowerCaseFilter)
             );
         }
 
