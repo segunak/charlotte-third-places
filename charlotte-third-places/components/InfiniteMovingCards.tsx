@@ -98,7 +98,7 @@ export const InfiniteMovingCards = ({
                     {items.map((place, idx) => (
                         <li
                             key={`${place.name}-${idx}`}
-                            className="w-[350px] sm:w-[400px] max-w-full relative"
+                            className="w-[350px] sm:w-[400px] max-w-full relative flex"
                         >
                             <PlaceCard place={place} />
                         </li>
