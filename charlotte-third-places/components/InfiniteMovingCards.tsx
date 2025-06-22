@@ -12,7 +12,7 @@ import {
 } from "react";
 
 type Direction = "left" | "right";
-type Speed = "fast" | "normal" | "slow";
+type Speed = "fast" | "normal" | "slow" | string;
 
 interface InfiniteMovingCardsProps {
     items: Place[];
@@ -34,7 +34,6 @@ export const InfiniteMovingCards = ({
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [animationKey, setAnimationKey] = useState(0);
-
     const speedMapping = useMemo(
         () => ({
             fast: "20s",
@@ -52,7 +51,7 @@ export const InfiniteMovingCards = ({
     }, [items.length, onItemsChange]);
 
     // Determine the current speed and direction
-    const currentSpeed = speedMapping[speed] || "1000s";
+    const currentSpeed = speedMapping[speed as keyof typeof speedMapping] || speed || "50s";
     const currentDirection = direction === "left" ? "forwards" : "reverse";
 
     // Restart the animation only when speed or direction change

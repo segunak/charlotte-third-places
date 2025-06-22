@@ -4,17 +4,13 @@ import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
-import { shuffleArrayNoAdjacentDuplicates } from "@/lib/utils";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
-import { PlaceCard } from "@/components/PlaceCard";
 import React, {
     useState,
     useCallback,
     useEffect,
-    useRef,
-    useMemo,
+    useRef
 } from "react";
-import { FixedSizeList as List } from "react-window";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const shuffleTimeout = useRef<number | null>(null);
@@ -23,7 +19,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     // Instead of shuffling the array, keep a shuffled order of indexes
     const [shuffledOrder, setShuffledOrder] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
-    const [isShuffled, setIsShuffled] = useState<boolean>(false);
 
     // Create initial order: featured places first (by created date desc), then rest
     const getInitialOrder = useCallback(() => {
@@ -61,7 +56,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         }
         return arr;
     }, [places.length]);
-    // Shuffle handler
+
     const shuffleItems = useCallback(() => {
         if (shuffleTimeout.current) {
             clearTimeout(shuffleTimeout.current);
@@ -69,7 +64,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         shuffleTimeout.current = window.setTimeout(() => {
             const newOrder = shuffleIndexes();
             setShuffledOrder(newOrder);
-            setIsShuffled(true);
             // Trigger a state update to pass the new items and potentially the same index
             // to CardCarousel, signaling a programmatic scroll is needed.
             setCurrentIndex(idx => idx < newOrder.length ? idx : 0); // Ensure index is valid
@@ -80,7 +74,6 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             // Use initial order on first load (featured first), not shuffled
             setShuffledOrder(getInitialOrder());
             setCurrentIndex(0);
-            setIsShuffled(false);
             setIsLoading(false);
         };
         initialize();
@@ -90,24 +83,8 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         setHasItems(count > 0);
     };
 
-    // Memoize the visible cards for CardCarousel (current, prev, next)
-    const mobileCards = useMemo(() => {
-        if (shuffledOrder.length === 0) return [];
-        const prev = currentIndex > 0 ? shuffledOrder[currentIndex - 1] : null;
-        const curr = shuffledOrder[currentIndex];
-        const next = currentIndex < shuffledOrder.length - 1 ? shuffledOrder[currentIndex + 1] : null;
-        return [prev, curr, next].filter(idx => idx !== null).map(idx => places[idx!]);
-    }, [shuffledOrder, currentIndex, places]);
-
-    // Virtualized Card Renderer for react-window
-    const CardRow = ({ index, style }: { index: number; style: React.CSSProperties }) => (
-        <div style={style}>
-            <PlaceCard place={places[shuffledOrder[index]]} />
-        </div>
-    );
-
     // Only render a limited number of cards in InfiniteMovingCards (desktop)
-    const VIRTUALIZED_CARD_COUNT = 12; // Show 12 at a time for animation, adjust as needed
+    const VIRTUALIZED_CARD_COUNT = 50; // Show this many at a time for animation, adjust as needed
     const visibleDesktopItems = shuffledOrder.slice(0, VIRTUALIZED_CARD_COUNT).map(idx => places[idx]);
 
     return (
@@ -123,7 +100,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 <InfiniteMovingCards
                     items={visibleDesktopItems}
                     direction="right"
-                    speed="normal"
+                    speed="150s"
                     pauseOnHover={false}
                     onItemsChange={handleItemsChange}
                 />
