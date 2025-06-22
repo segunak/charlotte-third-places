@@ -4,7 +4,6 @@ import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
-import { useIsMobile } from "@/hooks/use-mobile";
 
 const neighborhoodEmoji = "🏘️";
 
@@ -150,7 +149,6 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
-    const isMobile = useIsMobile();
 
     const description = useMemo(() =>
         place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
@@ -160,6 +158,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const handleCardClick = () => {
         showPlaceModal(place);
     };
+
     // Create badges array for flexible badge management
     const badges = useMemo(() => {
         const badgeList = [];
@@ -185,42 +184,37 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
         // Sort by priority (highest priority = rightmost position)
         return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured]);    // Smart truncation: only on mobile with badges present
+    }, [place?.hasCinnamonRolls, place?.featured]);    // Always use full name - CSS flex layout will handle truncation
+
     const displayTitle = useMemo(() => {
-        const name = place?.name || '';
-
-        // Only truncate if we have badges AND we're on mobile
-        if (badges.length > 0 && isMobile) {
-            if (name.length > 36) {
-                return name.substring(0, 33).trim() + '...';
-            }
-        }
-
-        // Otherwise, return full name (rely on CSS truncate)
-        return name;
-    }, [place?.name, badges.length, isMobile]);
+        return place?.name || '';
+    }, [place?.name]);
 
     return (
         <Card
             onClick={handleCardClick}
             className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
-            {/* Render badges */}            {badges.length > 0 && (
-                <div className="absolute top-3 right-[1.4rem] z-10 flex space-x-2">
-                    {badges.map((badge) => (
-                        <div
-                            key={badge.key}
-                            className={`${badge.bgColor} rounded-full p-1.5 shadow-md`}
-                            title={badge.key === 'cinnamonRoll' ? 'Has Cinnamon Rolls' : 'Featured Place'}
-                        >
-                            {badge.icon}
-                        </div>
-                    ))}
-                </div>
-            )}
             <CardHeader className="pb-2">
-                <CardTitle className="text-lg truncate">
-                    {displayTitle}
-                </CardTitle>
+                {/* Flex container for title and badges */}
+                <div className="flex items-start justify-between gap-3">
+                    <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
+                        {displayTitle}
+                    </CardTitle>
+                    {/* Badges container - takes only needed space */}
+                    {badges.length > 0 && (
+                        <div className="flex space-x-2 flex-shrink-0 -mt-1.5">
+                            {badges.map((badge) => (
+                                <div
+                                    key={badge.key}
+                                    className={`${badge.bgColor} rounded-full p-1.5 shadow-md`}
+                                    title={badge.key === 'cinnamonRoll' ? 'Has Cinnamon Rolls' : 'Featured Place'}
+                                >
+                                    {badge.icon}
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                </div>
                 <CardDescription className="truncate">
                     {description}
                 </CardDescription>
