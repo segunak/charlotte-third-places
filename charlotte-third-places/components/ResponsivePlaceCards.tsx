@@ -84,7 +84,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     };
 
     // Only render a limited number of cards in InfiniteMovingCards (desktop)
-    const VIRTUALIZED_CARD_COUNT = 50; // Show this many at a time for animation, adjust as needed
+    const VIRTUALIZED_CARD_COUNT = 200; // Show this many at a time for animation, adjust as needed
     const visibleDesktopItems = shuffledOrder.slice(0, VIRTUALIZED_CARD_COUNT).map(idx => places[idx]);
 
     return (
@@ -100,7 +100,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 <InfiniteMovingCards
                     items={visibleDesktopItems}
                     direction="right"
-                    speed="150s"
+                    speed="650s"
                     pauseOnHover={false}
                     onItemsChange={handleItemsChange}
                 />
