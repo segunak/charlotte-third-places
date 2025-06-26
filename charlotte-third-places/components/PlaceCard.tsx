@@ -16,6 +16,7 @@ const sizeIconMap: { [key: string]: React.ReactNode } = {
 
 const typeEmojiMap: { [key: string]: string } = {
     "Bakery": "🍞",
+    "Bottle Shop": "🍷",
     "Café": "☕",
     "Coffee Shop": "☕",
     "Tea House": "🍵",
