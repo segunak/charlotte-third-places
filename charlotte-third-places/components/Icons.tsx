@@ -35,7 +35,8 @@ import {
   FaBeer,
   FaIceCream,
   FaCocktail,
-  FaUniversity
+  FaUniversity,
+  FaWineBottle
 } from "react-icons/fa";
 
 import {
@@ -96,6 +97,7 @@ import {
 
 export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Bakery": FaBreadSlice,
+  "Bottle Shop": FaWineBottle,
   "Café": GiCoffeeMug,
   "Coffee Shop": FaCoffee,
   "Tea House": MdEmojiFoodBeverage,
