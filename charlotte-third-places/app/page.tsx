@@ -42,7 +42,7 @@ export default async function HomePage() {
         <p>
           Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. {" "}
           <span className="hidden sm:inline">
-            Prefer a map? Click <Link href="/map" className="custom-link">here</Link>. Have suggestions or enhancements? Click <Link href="/contribute" className="custom-link">here</Link>. To learn more about the project, click <Link href="/about" className="custom-link">here</Link>.
+            You can also check out the <Link href="/map" className="custom-link">map view</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>.
           </span>
         </p>
         <Separator />
@@ -55,11 +55,17 @@ export default async function HomePage() {
         <p className="text-pretty">
           {/* Shown on mobile only */}
           <span className="inline sm:hidden">
-            <span className="font-bold text-primary">Swipe</span> to explore various places.
+            <span className="font-bold text-primary">Swipe</span> to explore.
           </span>{" "}
 
+          {/* Show "tap" on mobile, "click" on desktop */}
+          <span>
+            <span className="inline sm:hidden">Tap</span>
+            <span className="hidden sm:inline">Click</span>
+          </span>{" "}
+          
           {/* Always visible text */}
-          Click any card for more info about a place. Want a random suggestion? Click the{" "}
+          any card for more info. Want a random suggestion? Use the{" "}
           <span className="font-bold text-primary">shuffle</span> button to switch things up!
         </p>
 
