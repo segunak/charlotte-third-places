@@ -210,7 +210,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     const getField = (key: string): any => {
         if (isCSV) {
             const value = record[key];
-            if (["Type", "Ambience", "Parking"].includes(key)) {
+            if (["Type", "Tags", "Parking"].includes(key)) {
                 return value?.split(',').map((item: string) => item.trim()) || [];
             }
             if (["Photos"].includes(key)) {
@@ -254,7 +254,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         name: getField("Place"),
         type: getField("Type"),
         size: getField("Size"),
-        ambience: getField("Ambience"),
+        tags: getField("Tags"),
         neighborhood: getField("Neighborhood"),
         address: getField("Address"),
         purchaseRequired: getField("Purchase Required"),
