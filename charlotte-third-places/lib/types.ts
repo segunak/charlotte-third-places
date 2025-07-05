@@ -4,7 +4,7 @@ export type Place = {
     name: string;
     type: Array<string>;
     size: string;
-    ambience: Array<string>;
+    tags: Array<string>;
     neighborhood: string;
     address: string;
     purchaseRequired: string;
