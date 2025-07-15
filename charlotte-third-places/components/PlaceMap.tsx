@@ -14,9 +14,10 @@ const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
     places: Array<Place>;
+    fullScreen?: boolean;
 }
 
-export function PlaceMap({ places }: PlaceMapProps) {
+export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     const { showPlaceModal } = useModalContext();
     const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
@@ -168,6 +169,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
         colorCache[typeToCheck] = result;
         return result;
     };
+
     const filteredPlaces = useMemo(() => {
         return places.filter((place) => {
             const {
@@ -180,8 +182,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 freeWiFi,
                 hasCinnamonRolls,
             } = filters;
-            const matchesQuickSearch = normalizeTextForSearch(place.name || '')
-                .includes(normalizeTextForSearch(quickFilterText));
+
+            const matchesQuickSearch = normalizeTextForSearch(place.name || '').includes(normalizeTextForSearch(quickFilterText));
 
             const isTypeMatch =
                 type.value === "all" || (place.type && place.type.includes(type.value));
@@ -230,7 +232,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
-            <div className="w-full h-full border border-gray-200 rounded-xl shadow-xl relative">
+            <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
                 <Map
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
@@ -262,7 +264,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     <div className="absolute top-4 right-4 z-10">
                         <Button
                             onClick={handleLocationClick}
-                            className="bg-[var(--button-white)] hover:bg-gray-100 text-black flex items-center gap-2 shadow-lg rounded-sm font-bold"
+                            className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
                             size="sm"
                             disabled={isLocating}
                         >
@@ -273,7 +275,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                                 </>
                             ) : (
                                 <>
-                                    <Icons.locate className="w-5 h-5" />
+                                    <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }}/>
                                     <span>Find Me</span>
                                 </>
                             )}
@@ -287,7 +289,9 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         >
                             <div className="w-6 h-6 rounded-full border-4 border-white shadow-lg" style={{ backgroundColor: 'hsl(var(--destructive))' }} />
                         </AdvancedMarker>
-                    )}                    {filteredPlaces.map((place, index) => {
+                    )}
+
+                    {filteredPlaces.map((place, index) => {
                         const position = {
                             lat: Number(place.latitude),
                             lng: Number(place.longitude)

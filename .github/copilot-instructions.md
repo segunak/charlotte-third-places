@@ -20,3 +20,7 @@
 * Avoid single-line functions for readability; prioritize clarity over brevity.
 * Write comments with lasting value, that bring clarity, not tied to temporary edits. Git is used in this project for tracking changes.
 * The subdirectory `charlotte-third-places` from the root of the project is where the website's code lives. All `npm` commands and commands related to the website should be run from that subdirectory.
+
+## Important Notes
+
+* You do not ever need to run the development server using `npm run dev` for the user after making changes. The user handles that themselves.
