@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDrawer } from '@/components/FilterDrawer';
+import { FindMeButton } from '@/components/FindMeButton';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -25,12 +26,13 @@ export default async function MapPage() {
                 <div className="w-full h-screen">
                     <PlaceMap places={places} fullScreen={true} />
                 </div>
+                <FindMeButton className="fixed right-3 z-50" style={{ top: '5rem' }} />
                 <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
             </div>
 
             {/* Desktop */}
             <div className="hidden sm:grid grid-cols-[minmax(0,_1fr)_265px] min-h-screen">
-                <section className="px-20 py-8">
+                <section className="px-20 py-8 relative">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">
                             Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
