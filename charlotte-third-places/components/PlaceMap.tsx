@@ -275,7 +275,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                                 </>
                             ) : (
                                 <>
-                                    <Icons.locate className="w-5 h-5" />
+                                    <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }}/>
                                     <span>Find Me</span>
                                 </>
                             )}
