@@ -26,7 +26,8 @@ import {
   FaGamepad,
   FaPalette,
   FaUsers,
-  FaLaptop
+  FaLaptop,
+  FaList
 } from "react-icons/fa6";
 
 import {
@@ -199,6 +200,7 @@ export const Icons = {
   share: LuShare,
   homeOutline: IoHomeOutline,
   google: FcGoogle,
+  list: FaList,
   apple: (props: IconProps) => (
     <FaApple {...props} className={`text-apple ${props.className ?? ""}`} />
   ),
