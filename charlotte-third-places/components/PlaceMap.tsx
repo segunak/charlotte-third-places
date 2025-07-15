@@ -264,7 +264,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                     <div className="absolute top-4 right-4 z-10">
                         <Button
                             onClick={handleLocationClick}
-                            className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
+                            className="bg-primary hover:bg-primary/90 text-white font-extrabold sm:bg-[var(--button-white)] sm:hover:bg-gray-100 sm:text-black sm:font-bold flex items-center gap-2 shadow-lg rounded-sm font-bold"
                             size="sm"
                             disabled={isLocating}
                         >
