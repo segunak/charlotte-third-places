@@ -57,7 +57,11 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                     <Button
                         onClick={() => {
                             const stackSection = document.getElementById('stack-section');
-                            stackSection?.scrollIntoView({ behavior: 'smooth' });
+                            if (stackSection) {
+                                const yOffset = -80; // Offset to show the heading clearly
+                                const y = stackSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                window.scrollTo({ top: y, behavior: 'smooth' });
+                            }
                         }}
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-[hsl(var(--action-random))] hover:bg-[hsl(335,92%,46%)] text-white rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
@@ -79,8 +83,12 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                     {/* List Button - Purple with darker hover */}
                     <Button
                         onClick={() => {
-                            const listSection = document.getElementById('list-section');
-                            listSection?.scrollIntoView({ behavior: 'smooth' });
+                            const browseSection = document.getElementById('browse-section');
+                            if (browseSection) {
+                                const yOffset = -80; // Offset to show the heading clearly
+                                const y = browseSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                                window.scrollTo({ top: y, behavior: 'smooth' });
+                            }
                         }}
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-[hsl(var(--action-browse))] hover:bg-[hsl(335,92%,46%)] text-white rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
@@ -92,7 +100,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                 <Separator />
                 <div id="stack-section" className="text-2xl font-bold">
                     {/* Shown on mobile */}
-                    <span className="inline sm:hidden">Stack</span>
+                    <span className="inline sm:hidden">Random</span>
                     {/* Shown on desktop */}
                     <span className="hidden sm:inline">Feed</span>
                 </div>
