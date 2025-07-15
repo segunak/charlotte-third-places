@@ -18,7 +18,7 @@ interface PlaceMapProps {
     fullScreen?: boolean;
 }
 
-export const PlaceMap = React.memo(function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
+export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     const { showPlaceModal } = useModalContext();
     const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
@@ -232,117 +232,121 @@ export const PlaceMap = React.memo(function PlaceMap({ places, fullScreen = fals
     }, [filteredPlaces, currentZoom, mapBounds, isPlaceInBounds, SHOW_LABELS_ZOOM, MAX_LABELS_SHOWN]);
 
     return (
-        <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
-            <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
-                <div className="absolute top-4 right-4 z-40 pointer-events-auto">
-                    <Button
-                        onClick={handleLocationClick}
-                        className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
-                        size="sm"
-                        disabled={isLocating}
-                    >
-                        {isLocating ? (
-                            <>
-                                <Icons.loader className="w-5 h-5 animate-spin" />
-                                <span>Locating...</span>
-                            </>
-                        ) : (
-                            <>
-                                <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }} />
-                                <span>Find Me</span>
-                            </>
-                        )}
-                    </Button>
-                </div>
-                <Map
-                    defaultCenter={charlotteCityCenter}
-                    defaultZoom={11}
-                    mapId='7b49fa8eab9db6c7' // https://developers.google.com/maps/documentation/get-map-id
-                    renderingType='VECTOR'
-                    colorScheme='LIGHT'
-                    reuseMaps={true} // To avoid re-rendering a map (and thus an API call) for every load.
-                    zoomControl={!isMobileView} // The plus minus buttons in the lower right. On mobile, people just pinch to zoom, so they're not needed.
-                    disableDefaultUI={true} // Disable all default UI elements. Enable only what you want to show.
-                    gestureHandling='greedy'
-                    onBoundsChanged={(e: { map: google.maps.Map }) => {
-                        if (e.map) {
-                            setMapInstance(e.map);
-                            const bounds = e.map.getBounds();
-                            if (bounds) {
-                                setMapBounds(bounds);
-                            }
-                        }
-                    }}
-                    onZoomChanged={(e: { map: google.maps.Map }) => {
-                        if (e.map) {
-                            const zoom = e.map.getZoom();
-                            if (zoom !== undefined) {
-                                setCurrentZoom(zoom);
-                            }
-                        }
-                    }}
+        <>
+            {/* Find Me button positioned like FilterDrawer - completely separate from Map */}
+            <div className="absolute top-4 right-4 z-40 pointer-events-auto">
+                <Button
+                    onClick={handleLocationClick}
+                    className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
+                    size="sm"
+                    disabled={isLocating}
                 >
-
-                    {userLocation && (
-                        <AdvancedMarker
-                            position={userLocation}
-                            title="Your Location"
-                        >
-                            <div className="w-6 h-6 rounded-full border-4 border-white shadow-lg" style={{ backgroundColor: 'hsl(var(--destructive))' }} />
-                        </AdvancedMarker>
+                    {isLocating ? (
+                        <>
+                            <Icons.loader className="w-5 h-5 animate-spin" />
+                            <span>Locating...</span>
+                        </>
+                    ) : (
+                        <>
+                            <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }} />
+                            <span>Find Me</span>
+                        </>
                     )}
-
-                    {filteredPlaces.map((place, index) => {
-                        const position = {
-                            lat: Number(place.latitude),
-                            lng: Number(place.longitude)
-                        };
-
-                        // Get the appropriate icon and color for the place type
-                        const PlaceIcon = getPlaceTypeIcon(place.type);
-                        const pinColor = place.featured ? 'text-amber-500' : getPlaceTypeColor(place.type);
-
-                        // Check if this place should show a label
-                        const shouldShowLabel = placesWithLabels.some(labelPlace => labelPlace.name === place.name);
-
-                        return (
-                            <div key={index}>
-                                <AdvancedMarker
-                                    position={position}
-                                    title={place.name}
-                                    onClick={() => showPlaceModal(place)}
-                                >
-                                    <div className="relative flex flex-col items-center">
-                                        <div className="relative flex items-center justify-center w-8 h-8">
-                                            <Icons.pin
-                                                className={`w-8 h-8 stroke-black stroke-2`}
-                                                style={{ color: place.featured ? '#f59e0b' : pinColor }}
-                                            />
-                                            <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
-                                                {place.featured ? (
-                                                    <Icons.star className="w-full h-full text-white fill-white" />
-                                                ) : (
-                                                    <PlaceIcon className="w-full h-full text-charlottePaperWhite" />
-                                                )}
-                                            </div>
-                                        </div>
-
-                                        {/* Custom label positioned above the marker */}
-                                        {shouldShowLabel && (
-                                            <div
-                                                className="absolute -top-7 bg-black/80 text-white px-1.5 py-0.5 rounded text-xs font-normal whitespace-nowrap pointer-events-none cursor-pointer"
-                                                title={place.name} // Full name on hover
-                                            >
-                                                {place.name.length > 20 ? `${place.name.substring(0, 20)}...` : place.name}
-                                            </div>
-                                        )}
-                                    </div>
-                                </AdvancedMarker>
-                            </div>
-                        );
-                    })}
-                </Map>
+                </Button>
             </div>
-        </APIProvider>
+
+            <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
+                <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
+                    <Map
+                        defaultCenter={charlotteCityCenter}
+                        defaultZoom={11}
+                        mapId='7b49fa8eab9db6c7' // https://developers.google.com/maps/documentation/get-map-id
+                        renderingType='VECTOR'
+                        colorScheme='LIGHT'
+                        reuseMaps={true} // To avoid re-rendering a map (and thus an API call) for every load.
+                        zoomControl={!isMobileView} // The plus minus buttons in the lower right. On mobile, people just pinch to zoom, so they're not needed.
+                        disableDefaultUI={true} // Disable all default UI elements. Enable only what you want to show.
+                        gestureHandling='greedy'
+                        onBoundsChanged={(e: { map: google.maps.Map }) => {
+                            if (e.map) {
+                                setMapInstance(e.map);
+                                const bounds = e.map.getBounds();
+                                if (bounds) {
+                                    setMapBounds(bounds);
+                                }
+                            }
+                        }}
+                        onZoomChanged={(e: { map: google.maps.Map }) => {
+                            if (e.map) {
+                                const zoom = e.map.getZoom();
+                                if (zoom !== undefined) {
+                                    setCurrentZoom(zoom);
+                                }
+                            }
+                        }}
+                    >
+
+                        {userLocation && (
+                            <AdvancedMarker
+                                position={userLocation}
+                                title="Your Location"
+                            >
+                                <div className="w-6 h-6 rounded-full border-4 border-white shadow-lg" style={{ backgroundColor: 'hsl(var(--destructive))' }} />
+                            </AdvancedMarker>
+                        )}
+
+                        {filteredPlaces.map((place, index) => {
+                            const position = {
+                                lat: Number(place.latitude),
+                                lng: Number(place.longitude)
+                            };
+
+                            // Get the appropriate icon and color for the place type
+                            const PlaceIcon = getPlaceTypeIcon(place.type);
+                            const pinColor = place.featured ? 'text-amber-500' : getPlaceTypeColor(place.type);
+
+                            // Check if this place should show a label
+                            const shouldShowLabel = placesWithLabels.some(labelPlace => labelPlace.name === place.name);
+
+                            return (
+                                <div key={index}>
+                                    <AdvancedMarker
+                                        position={position}
+                                        title={place.name}
+                                        onClick={() => showPlaceModal(place)}
+                                    >
+                                        <div className="relative flex flex-col items-center">
+                                            <div className="relative flex items-center justify-center w-8 h-8">
+                                                <Icons.pin
+                                                    className={`w-8 h-8 stroke-black stroke-2`}
+                                                    style={{ color: place.featured ? '#f59e0b' : pinColor }}
+                                                />
+                                                <div className="top-1 absolute flex items-center justify-center w-4 h-4 text-white">
+                                                    {place.featured ? (
+                                                        <Icons.star className="w-full h-full text-white fill-white" />
+                                                    ) : (
+                                                        <PlaceIcon className="w-full h-full text-charlottePaperWhite" />
+                                                    )}
+                                                </div>
+                                            </div>
+
+                                            {/* Custom label positioned above the marker */}
+                                            {shouldShowLabel && (
+                                                <div
+                                                    className="absolute -top-7 bg-black/80 text-white px-1.5 py-0.5 rounded text-xs font-normal whitespace-nowrap pointer-events-none cursor-pointer"
+                                                    title={place.name} // Full name on hover
+                                                >
+                                                    {place.name.length > 20 ? `${place.name.substring(0, 20)}...` : place.name}
+                                                </div>
+                                            )}
+                                        </div>
+                                    </AdvancedMarker>
+                                </div>
+                            );
+                        })}
+                    </Map>
+                </div>
+            </APIProvider>
+        </>
     );
-});
+}
