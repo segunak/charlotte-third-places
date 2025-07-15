@@ -29,9 +29,8 @@ export default async function MapPage() {
                             <span className="hidden sm:inline">Charlotte, North Carolina</span>
                         </h1>
                         <p className="text-pretty">
-                            Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. {" "}
                             <span className="hidden sm:inline">
-                                You can also browse the <Link href="/" className="custom-link">full list</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>. {" "}
+                                Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. You can also browse the <Link href="/" className="custom-link">full list</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>. {" "}
                             </span>
                             {/* Show "tap" on mobile, "click" on desktop */}
                             <span className="inline sm:hidden">Tap</span>

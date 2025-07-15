@@ -168,6 +168,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
         colorCache[typeToCheck] = result;
         return result;
     };
+
     const filteredPlaces = useMemo(() => {
         return places.filter((place) => {
             const {
@@ -180,8 +181,8 @@ export function PlaceMap({ places }: PlaceMapProps) {
                 freeWiFi,
                 hasCinnamonRolls,
             } = filters;
-            const matchesQuickSearch = normalizeTextForSearch(place.name || '')
-                .includes(normalizeTextForSearch(quickFilterText));
+
+            const matchesQuickSearch = normalizeTextForSearch(place.name || '').includes(normalizeTextForSearch(quickFilterText));
 
             const isTypeMatch =
                 type.value === "all" || (place.type && place.type.includes(type.value));
@@ -287,7 +288,9 @@ export function PlaceMap({ places }: PlaceMapProps) {
                         >
                             <div className="w-6 h-6 rounded-full border-4 border-white shadow-lg" style={{ backgroundColor: 'hsl(var(--destructive))' }} />
                         </AdvancedMarker>
-                    )}                    {filteredPlaces.map((place, index) => {
+                    )}
+
+                    {filteredPlaces.map((place, index) => {
                         const position = {
                             lat: Number(place.latitude),
                             lng: Number(place.longitude)
