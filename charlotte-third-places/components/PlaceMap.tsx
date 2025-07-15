@@ -80,8 +80,24 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
 
         window.addEventListener('resize', updateViewSettings);
 
-        return () => window.removeEventListener('resize', updateViewSettings);
-    }, []);
+        // Listen for location events from the MobileFindMeButton
+        const handleLocationFound = (event: any) => {
+            const { location } = event.detail;
+            setUserLocation(location);
+
+            if (mapInstance) {
+                mapInstance.setZoom(14);
+                mapInstance.panTo(location);
+            }
+        };
+
+        window.addEventListener('userLocationFound', handleLocationFound);
+
+        return () => {
+            window.removeEventListener('resize', updateViewSettings);
+            window.removeEventListener('userLocationFound', handleLocationFound);
+        };
+    }, [mapInstance]);
 
     // Specific color assignments for certain place types.
     const specificTypeColors: { [key: string]: string } = {
@@ -261,26 +277,29 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         }
                     }}
                 >
-                    <div className="absolute top-4 right-4 z-10">
-                        <Button
-                            onClick={handleLocationClick}
-                            className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
-                            size="sm"
-                            disabled={isLocating}
-                        >
-                            {isLocating ? (
-                                <>
-                                    <Icons.loader className="w-5 h-5 animate-spin" />
-                                    <span>Locating...</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }}/>
-                                    <span>Find Me</span>
-                                </>
-                            )}
-                        </Button>
-                    </div>
+                    {/* Desktop Find Me Button - hidden on mobile. Mobile uses MobileFindMeButton.tsx for reasons related to preventing PlaceModal's showing up after clicking a marker from leading to the Find Me Button disappearing */}
+                    {!isMobileView && (
+                        <div className="absolute top-4 right-4 z-10">
+                            <Button
+                                onClick={handleLocationClick}
+                                className="bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
+                                size="sm"
+                                disabled={isLocating}
+                            >
+                                {isLocating ? (
+                                    <>
+                                        <Icons.loader className="w-5 h-5 animate-spin" />
+                                        <span>Locating...</span>
+                                    </>
+                                ) : (
+                                    <>
+                                        <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }} />
+                                        <span>Find Me</span>
+                                    </>
+                                )}
+                            </Button>
+                        </div>
+                    )}
 
                     {userLocation && (
                         <AdvancedMarker
