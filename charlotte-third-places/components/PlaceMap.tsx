@@ -233,7 +233,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
             <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
-                <div className="absolute top-4 right-4 z-[49]">
+                <div className="absolute top-4 right-4 z-[60]">
                     <Button
                         onClick={handleLocationClick}
                         className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
