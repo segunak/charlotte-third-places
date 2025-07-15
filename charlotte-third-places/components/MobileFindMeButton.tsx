@@ -4,12 +4,12 @@ import { useState } from 'react';
 import { Button } from './ui/button';
 import { Icons } from "./Icons";
 
-interface FindMeButtonProps {
+interface MobileFindMeButtonProps {
     className?: string;
     style?: React.CSSProperties;
 }
 
-export function FindMeButton({ className = "", style }: FindMeButtonProps) {
+export function MobileFindMeButton({ className = "", style }: MobileFindMeButtonProps) {
     const [isLocating, setIsLocating] = useState(false);
 
     const handleLocationClick = () => {

@@ -277,7 +277,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         }
                     }}
                 >
-                    {/* Desktop Find Me Button - hidden on mobile. Mobile uses FindMeButton.tsx for reasons related to preventing PlaceModal's showing up after clicking a marker from leading to the Find Me Button disappearing */}
+                    {/* Desktop Find Me Button - hidden on mobile. Mobile uses MobileFindMeButton.tsx for reasons related to preventing PlaceModal's showing up after clicking a marker from leading to the Find Me Button disappearing */}
                     {!isMobileView && (
                         <div className="absolute top-4 right-4 z-10">
                             <Button

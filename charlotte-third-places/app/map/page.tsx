@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDrawer } from '@/components/FilterDrawer';
-import { FindMeButton } from '@/components/FindMeButton';
+import { MobileFindMeButton } from '@/components/MobileFindMeButton';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -26,7 +26,7 @@ export default async function MapPage() {
                 <div className="w-full h-screen">
                     <PlaceMap places={places} fullScreen={true} />
                 </div>
-                <FindMeButton className="fixed right-3 z-50" style={{ top: '5rem' }} />
+                <MobileFindMeButton className="fixed right-3 z-50" style={{ top: '5rem' }} />
                 <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
             </div>
 
