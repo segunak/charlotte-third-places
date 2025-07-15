@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react';
 import { Place } from '@/lib/types';
 import { Button } from './ui/button';
 import { Icons, getPlaceTypeIcon } from "@/components/Icons";
@@ -9,7 +10,7 @@ import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo, useCallback } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
-// Cache for consistent color assignments (moved outside component)
+// Cache for consistent color assignments
 const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
@@ -17,7 +18,7 @@ interface PlaceMapProps {
     fullScreen?: boolean;
 }
 
-export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
+export const PlaceMap = React.memo(function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     const { showPlaceModal } = useModalContext();
     const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
@@ -233,7 +234,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
             <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
-                <div className="absolute top-4 right-4 z-[60]">
+                <div className="absolute top-4 right-4 z-40 pointer-events-auto">
                     <Button
                         onClick={handleLocationClick}
                         className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
@@ -344,4 +345,4 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
             </div>
         </APIProvider>
     );
-}
+});

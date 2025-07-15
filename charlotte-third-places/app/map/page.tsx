@@ -28,7 +28,7 @@ export default async function MapPage() {
                 <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
             </div>
 
-            {/* Desktop: Keep existing layout with header text and sidebar */}
+            {/* Desktop */}
             <div className="hidden sm:grid grid-cols-[minmax(0,_1fr)_265px] min-h-screen">
                 <section className="px-20 py-8">
                     <div className="mb-4 space-y-3">
