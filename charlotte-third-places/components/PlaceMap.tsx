@@ -241,7 +241,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                     colorScheme='LIGHT'
                     reuseMaps={true} // To avoid re-rendering a map (and thus an API call) for every load.
                     zoomControl={!isMobileView} // The plus minus buttons in the lower right. On mobile, people just pinch to zoom, so they're not needed.
-                    disableDefaultUI={true} // Disable all default UI elements. Enable only what you want to show.
+                    disableDefaultUI={true} // Disable all default UI elements. Things show by enable only.
                     gestureHandling='greedy'
                     onBoundsChanged={(e: { map: google.maps.Map }) => {
                         if (e.map) {
