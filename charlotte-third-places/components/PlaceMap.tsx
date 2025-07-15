@@ -14,9 +14,10 @@ const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
     places: Array<Place>;
+    fullScreen?: boolean;
 }
 
-export function PlaceMap({ places }: PlaceMapProps) {
+export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     const { showPlaceModal } = useModalContext();
     const [isMobileView, setIsMobileView] = useState(false);
     const { filters, quickFilterText } = useContext(FilterContext);
@@ -231,7 +232,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
 
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
-            <div className="w-full h-full border border-gray-200 rounded-xl shadow-xl relative">
+            <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
                 <Map
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
@@ -263,7 +264,7 @@ export function PlaceMap({ places }: PlaceMapProps) {
                     <div className="absolute top-4 right-4 z-10">
                         <Button
                             onClick={handleLocationClick}
-                            className="bg-[var(--button-white)] hover:bg-gray-100 text-black flex items-center gap-2 shadow-lg rounded-sm font-bold"
+                            className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
                             size="sm"
                             disabled={isLocating}
                         >
