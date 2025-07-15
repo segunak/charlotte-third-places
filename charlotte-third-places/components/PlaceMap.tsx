@@ -233,6 +233,26 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     return (
         <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? ''}>
             <div className={`w-full h-full relative ${fullScreen ? '' : 'border border-gray-200 rounded-xl shadow-xl'}`}>
+                <div className="absolute top-4 right-4 z-10">
+                    <Button
+                        onClick={handleLocationClick}
+                        className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
+                        size="sm"
+                        disabled={isLocating}
+                    >
+                        {isLocating ? (
+                            <>
+                                <Icons.loader className="w-5 h-5 animate-spin" />
+                                <span>Locating...</span>
+                            </>
+                        ) : (
+                            <>
+                                <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }} />
+                                <span>Find Me</span>
+                            </>
+                        )}
+                    </Button>
+                </div>
                 <Map
                     defaultCenter={charlotteCityCenter}
                     defaultZoom={11}
@@ -261,26 +281,6 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         }
                     }}
                 >
-                    <div className="absolute top-4 right-4 z-10">
-                        <Button
-                            onClick={handleLocationClick}
-                            className={`${isMobileView ? 'bg-primary hover:bg-primary/90 text-white font-extrabold' : 'bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold'} flex items-center gap-2 shadow-lg rounded-sm`}
-                            size="sm"
-                            disabled={isLocating}
-                        >
-                            {isLocating ? (
-                                <>
-                                    <Icons.loader className="w-5 h-5 animate-spin" />
-                                    <span>Locating...</span>
-                                </>
-                            ) : (
-                                <>
-                                    <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }}/>
-                                    <span>Find Me</span>
-                                </>
-                            )}
-                        </Button>
-                    </div>
 
                     {userLocation && (
                         <AdvancedMarker
