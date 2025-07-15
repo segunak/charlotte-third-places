@@ -80,7 +80,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
 
         window.addEventListener('resize', updateViewSettings);
 
-        // Listen for location events from the FindMeButton (mobile only)
+        // Listen for location events from the MobileFindMeButton
         const handleLocationFound = (event: any) => {
             const { location } = event.detail;
             setUserLocation(location);
