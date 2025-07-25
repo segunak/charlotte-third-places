@@ -93,12 +93,40 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
             case 'text':
                 return <span key={key}>{node.content}</span>;
             case 'bold':
+                if (node.children) {
+                    return (
+                        <strong key={key} className="font-semibold">
+                            {node.children.map((child, i) => renderNode(child, `${key}-bold-${i}`))}
+                        </strong>
+                    );
+                }
                 return <strong key={key} className="font-semibold">{node.content}</strong>;
             case 'italic':
+                if (node.children) {
+                    return (
+                        <em key={key} className="italic">
+                            {node.children.map((child, i) => renderNode(child, `${key}-italic-${i}`))}
+                        </em>
+                    );
+                }
                 return <em key={key} className="italic">{node.content}</em>;
             case 'strikethrough':
+                if (node.children) {
+                    return (
+                        <span key={key} className="line-through">
+                            {node.children.map((child, i) => renderNode(child, `${key}-strike-${i}`))}
+                        </span>
+                    );
+                }
                 return <span key={key} className="line-through">{node.content}</span>;
             case 'link':
+                if (node.children) {
+                    return (
+                        <ResponsiveLink key={key} href={node.href || ''}>
+                            {node.children.map((child, i) => renderNode(child, `${key}-link-${i}`))}
+                        </ResponsiveLink>
+                    );
+                }
                 return (
                     <ResponsiveLink key={key} href={node.href || ''}>
                         {node.content}

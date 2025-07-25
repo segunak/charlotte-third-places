@@ -158,11 +158,23 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
     // Check for links first [text](url)
     const linkMatch = remaining.match(/^\[([^\]]*)\]\(([^)]*)\)/);
     if (linkMatch) {
-      nodes.push({
-        type: 'link',
-        content: linkMatch[1],
-        href: linkMatch[2]
-      });
+      // Parse the link text for nested formatting
+      const linkTextNodes = parseInlineElements(linkMatch[1]);
+      if (linkTextNodes.length === 1 && linkTextNodes[0].type === 'text') {
+        // Simple case: just text in the link
+        nodes.push({
+          type: 'link',
+          content: linkTextNodes[0].content,
+          href: linkMatch[2]
+        });
+      } else {
+        // Complex case: formatted text in the link
+        nodes.push({
+          type: 'link',
+          children: linkTextNodes,
+          href: linkMatch[2]
+        });
+      }
       remaining = remaining.slice(linkMatch[0].length);
       continue;
     }
@@ -170,10 +182,19 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
     // Check for strikethrough ~~text~~ (must come before other patterns)
     const strikethroughMatch = remaining.match(/^~~([^~]*(?:~(?!~)[^~]*)*)~~/);
     if (strikethroughMatch) {
-      nodes.push({
-        type: 'strikethrough',
-        content: strikethroughMatch[1]
-      });
+      // Parse the strikethrough content for nested formatting
+      const strikethroughNodes = parseInlineElements(strikethroughMatch[1]);
+      if (strikethroughNodes.length === 1 && strikethroughNodes[0].type === 'text') {
+        nodes.push({
+          type: 'strikethrough',
+          content: strikethroughNodes[0].content
+        });
+      } else {
+        nodes.push({
+          type: 'strikethrough',
+          children: strikethroughNodes
+        });
+      }
       remaining = remaining.slice(strikethroughMatch[0].length);
       continue;
     }
@@ -181,19 +202,37 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
     // Check for bold **text** (must come before italic to handle ***text***)
     const boldMatch = remaining.match(/^\*\*([^*]*(?:\*(?!\*)[^*]*)*)\*\*/);
     if (boldMatch) {
-      nodes.push({
-        type: 'bold',
-        content: boldMatch[1]
-      });
+      // Parse the bold content for nested formatting
+      const boldNodes = parseInlineElements(boldMatch[1]);
+      if (boldNodes.length === 1 && boldNodes[0].type === 'text') {
+        nodes.push({
+          type: 'bold',
+          content: boldNodes[0].content
+        });
+      } else {
+        nodes.push({
+          type: 'bold',
+          children: boldNodes
+        });
+      }
       remaining = remaining.slice(boldMatch[0].length);
       continue;
     }    // Check for italic _text_ (Airtable uses underscores)
     const italicMatch = remaining.match(/^_([^_\n]+)_/);
     if (italicMatch) {
-      nodes.push({
-        type: 'italic',
-        content: italicMatch[1]
-      });
+      // Parse the italic content for nested formatting
+      const italicNodes = parseInlineElements(italicMatch[1]);
+      if (italicNodes.length === 1 && italicNodes[0].type === 'text') {
+        nodes.push({
+          type: 'italic',
+          content: italicNodes[0].content
+        });
+      } else {
+        nodes.push({
+          type: 'italic',
+          children: italicNodes
+        });
+      }
       remaining = remaining.slice(italicMatch[0].length);
       continue;
     }
