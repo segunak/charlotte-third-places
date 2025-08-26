@@ -162,13 +162,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
     // Create badges array for flexible badge management
     const badges = useMemo(() => {
-        const badgeList = [];
+        const badgeList: Array<{
+            key: string;
+            icon: React.ReactNode;
+            bgColor: string;
+            priority: number;
+            containerClass?: string;
+        }> = [];
         // Add cinnamon roll badge if place has cinnamon rolls
         if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
             badgeList.push({
                 key: 'cinnamonRoll',
-                icon: <Icons.cinnamonRoll className="h-5 w-5" />,
-                bgColor: 'bg-amber-100', // Light amber background to complement the cinnamon roll colors
+                icon: <Icons.cinnamonRoll className="h-7 w-7" />,
+                containerClass: 'rounded-full shadow-md p-0.5',
+                bgColor: 'bg-amber-100',
                 priority: 1
             });
         }
@@ -207,7 +214,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             {badges.map((badge) => (
                                 <div
                                     key={badge.key}
-                                    className={`${badge.bgColor} rounded-full p-1.5 shadow-md`}
+                                    className={`${badge.bgColor} ${badge.containerClass ? '' : 'rounded-full shadow-md p-1.5'} ${badge.containerClass ?? ''}`}
                                     title={badge.key === 'cinnamonRoll' ? 'Has Cinnamon Rolls' : 'Featured Place'}
                                 >
                                     {badge.icon}
