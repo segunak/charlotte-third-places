@@ -160,6 +160,10 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         showPlaceModal(place);
     };
 
+    // Only show photos button if photos exist
+    const hasPhotos = !!(place?.photos && place.photos.length > 0);
+    const shouldShowPhotosButton = hasPhotos;
+
     // Create badges array for flexible badge management
     const badges = useMemo(() => {
         const badgeList: Array<{
@@ -248,18 +252,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         </span>
 
                         <div className="flex space-x-2">
-                            <Button
-                                variant="default"
-                                size="icon"
-                                className="h-9 w-9 rounded-full"
-                                onClick={(e) => {
-                                    e.stopPropagation(); // Prevent click from bubbling to Card
-                                    showPlacePhotos(place, 'card'); // Specify origin as 'card'
-                                }}
-                                aria-label="View photos"
-                            >
-                                <Icons.camera className="h-5 w-5 text-primary-foreground" />
-                            </Button>
+                            {shouldShowPhotosButton && (
+                                <Button
+                                    variant="default"
+                                    size="icon"
+                                    className="h-9 w-9 rounded-full"
+                                    onClick={(e) => {
+                                        e.stopPropagation(); // Prevent click from bubbling to Card
+                                        showPlacePhotos(place, 'card'); // Specify origin as 'card'
+                                    }}
+                                    aria-label="View photos"
+                                >
+                                    <Icons.camera className="h-5 w-5 text-primary-foreground" />
+                                </Button>
+                            )}
                             <Button
                                 variant="default"
                                 size="icon"
