@@ -184,7 +184,17 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         // while the featured badge is always forced to the far right with a very high priority.
         let nextPriority = 0;
 
-        // Add cross badge for Christian-tagged places (appears left of others like cinnamon roll)
+        // Add Black-owned badge using Pan-African flag if tagged
+        if (place?.tags?.includes("Black Owned")) {
+            badgeList.push({
+                key: 'blackOwned',
+                icon: <Icons.panAfricanFlag className="h-6 w-6" />,
+                bgColor: 'bg-amber-100',
+                priority: nextPriority++,
+            });
+        }
+
+        // Add cross badge for Christian-tagged places
         if (place?.tags?.includes("Christian")) {
             badgeList.push({
                 key: 'christian',
@@ -247,7 +257,9 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                             ? 'Has Cinnamon Rolls'
                                             : badge.key === 'christian'
                                                 ? 'Christian Business'
-                                                : 'Featured Place'
+                                                : badge.key === 'blackOwned'
+                                                    ? 'Black-owned Business'
+                                                    : 'Featured Place'
                                     }
                                 >
                                     {badge.icon}

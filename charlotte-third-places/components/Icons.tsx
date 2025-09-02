@@ -246,6 +246,19 @@ export const Icons = {
   close: IoClose,
   facebook: FaFacebookF,
   car: FaCar,
+  panAfricanFlag: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="800px"
+      height="800px"
+      viewBox="0 0 900 600"
+      {...props}
+    >
+      <path fill="#00853f" d="M0 0h900v600H0z" />
+      <path d="M0 0h900v400H0z" />
+      <path fill="#e31b23" d="M0 0h900v200H0z" />
+    </svg>
+  ),
   logo: (props: IconProps) => (
     <svg
       width="800px"
