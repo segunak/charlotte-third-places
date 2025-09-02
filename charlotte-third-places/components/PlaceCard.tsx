@@ -209,7 +209,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         if (place?.tags?.includes("Christian")) {
             badgeList.push({
                 key: 'christian',
-                icon: <Icons.cross className="h-5 w-5 text-amber-900" />,
+                icon: <Icons.cross className="h-6 w-6 text-amber-900" />,
                 bgColor: 'bg-amber-100',
                 title: 'Christian Business',
                 priority: nextPriority++,
