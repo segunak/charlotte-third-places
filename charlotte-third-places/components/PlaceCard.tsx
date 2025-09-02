@@ -164,6 +164,11 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const hasPhotos = !!(place?.photos && place.photos.length > 0);
     const shouldShowPhotosButton = hasPhotos;
 
+    // Badge rendering defaults (centralized for consistency and easy future updates)
+    // Use inline-flex to keep badges sized to their content + padding and prevent vertical stretching
+    const BADGE_BASE_CLASS = 'inline-flex items-center justify-center rounded-full shadow-md';
+    const DEFAULT_BADGE_PADDING = 'p-1.5';
+
     // Create badges array for flexible badge management
     const badges = useMemo(() => {
         const badgeList: Array<{
@@ -171,16 +176,33 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             icon: React.ReactNode;
             bgColor: string;
             priority: number;
-            containerClass?: string;
+            // Optional per-badge padding override (e.g., 'p-1', 'px-2 py-1')
+            paddingClass?: string;
         }> = [];
+
+        // We assign priorities incrementally so that visual order follows insertion order (left -> right),
+        // while the featured badge is always forced to the far right with a very high priority.
+        let nextPriority = 0;
+
+        // Add cross badge for Christian-tagged places (appears left of others like cinnamon roll)
+        if (place?.tags?.includes("Christian")) {
+            badgeList.push({
+                key: 'christian',
+                icon: <Icons.cross className="h-5 w-5 text-amber-900" />,
+                bgColor: 'bg-amber-100',
+                priority: nextPriority++,
+            });
+        }
+
         // Add cinnamon roll badge if place has cinnamon rolls
         if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
             badgeList.push({
                 key: 'cinnamonRoll',
                 icon: <Icons.cinnamonRoll className="h-7 w-7" />,
-                containerClass: 'rounded-full shadow-md p-0.5',
+                // Custom padding to give the larger icon more breathing room within the circle
+                paddingClass: 'p-1',
                 bgColor: 'bg-amber-100',
-                priority: 1
+                priority: nextPriority++
             });
         }
 
@@ -190,13 +212,13 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                 key: 'featured',
                 icon: <Icons.star className="h-5 w-5 text-white fill-white" />,
                 bgColor: 'bg-amber-500',
-                priority: 2
+                priority: Number.MAX_SAFE_INTEGER
             });
         }
 
         // Sort by priority (highest priority = rightmost position)
         return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured]);    // Always use full name - CSS flex layout will handle truncation
+    }, [place?.hasCinnamonRolls, place?.featured, place?.tags]); // Always use full name - CSS flex layout will handle truncation
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
@@ -214,12 +236,19 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                     </CardTitle>
                     {/* Badges container - takes only needed space */}
                     {badges.length > 0 && (
-                        <div className="flex space-x-2 flex-shrink-0 -mt-1.5">
+                        // Center items to avoid align-stretch making some badges taller when neighbors are larger
+                        <div className="flex items-center space-x-2 flex-shrink-0 -mt-1.5">
                             {badges.map((badge) => (
                                 <div
                                     key={badge.key}
-                                    className={`${badge.bgColor} ${badge.containerClass ? '' : 'rounded-full shadow-md p-1.5'} ${badge.containerClass ?? ''}`}
-                                    title={badge.key === 'cinnamonRoll' ? 'Has Cinnamon Rolls' : 'Featured Place'}
+                                    className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
+                                    title={
+                                        badge.key === 'cinnamonRoll'
+                                            ? 'Has Cinnamon Rolls'
+                                            : badge.key === 'christian'
+                                                ? 'Christian Business'
+                                                : 'Featured Place'
+                                    }
                                 >
                                     {badge.icon}
                                 </div>

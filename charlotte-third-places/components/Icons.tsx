@@ -48,6 +48,7 @@ import {
   FaFilter,
   FaChessQueen,
   FaComment,
+  FaCross,
   FaArrowRight,
   FaArrowLeft,
   FaArrowsAltH,
@@ -144,6 +145,7 @@ export const Icons = {
   chevronDown: FaChevronDown,
   dollarSign: FaDollarSign,
   chevronUp: FaChevronUp,
+  cross: FaCross,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"
