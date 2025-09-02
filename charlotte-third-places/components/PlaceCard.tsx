@@ -178,33 +178,44 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             priority: number;
             // Optional per-badge padding override (e.g., 'p-1', 'px-2 py-1')
             paddingClass?: string;
+            // Tooltip/title for the badge
+            title?: string;
         }> = [];
 
         // We assign priorities incrementally so that visual order follows insertion order (left -> right),
         // while the featured badge is always forced to the far right with a very high priority.
         let nextPriority = 0;
 
-        // Add Black-owned badge using Pan-African flag if tagged
+        if (place?.tags?.includes("Ethiopian")) {
+            badgeList.push({
+                key: 'ethiopian',
+                icon: <Icons.ethiopianFlag className="h-6 w-6" />,
+                bgColor: 'bg-amber-100',
+                title: 'Ethiopian Business',
+                priority: nextPriority++,
+            });
+        }
+
         if (place?.tags?.includes("Black Owned")) {
             badgeList.push({
                 key: 'blackOwned',
                 icon: <Icons.panAfricanFlag className="h-6 w-6" />,
                 bgColor: 'bg-amber-100',
+                title: 'Black-owned Business',
                 priority: nextPriority++,
             });
         }
 
-        // Add cross badge for Christian-tagged places
         if (place?.tags?.includes("Christian")) {
             badgeList.push({
                 key: 'christian',
                 icon: <Icons.cross className="h-5 w-5 text-amber-900" />,
                 bgColor: 'bg-amber-100',
+                title: 'Christian Business',
                 priority: nextPriority++,
             });
         }
 
-        // Add cinnamon roll badge if place has cinnamon rolls
         if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
             badgeList.push({
                 key: 'cinnamonRoll',
@@ -212,6 +223,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                 // Custom padding to give the larger icon more breathing room within the circle
                 paddingClass: 'p-1',
                 bgColor: 'bg-amber-100',
+                title: 'Has Cinnamon Rolls',
                 priority: nextPriority++
             });
         }
@@ -222,6 +234,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                 key: 'featured',
                 icon: <Icons.star className="h-5 w-5 text-white fill-white" />,
                 bgColor: 'bg-amber-500',
+                title: 'Featured Place',
                 priority: Number.MAX_SAFE_INTEGER
             });
         }
@@ -252,15 +265,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                 <div
                                     key={badge.key}
                                     className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
-                                    title={
-                                        badge.key === 'cinnamonRoll'
-                                            ? 'Has Cinnamon Rolls'
-                                            : badge.key === 'christian'
-                                                ? 'Christian Business'
-                                                : badge.key === 'blackOwned'
-                                                    ? 'Black-owned Business'
-                                                    : 'Featured Place'
-                                    }
+                                    title={badge.title}
                                 >
                                     {badge.icon}
                                 </div>
