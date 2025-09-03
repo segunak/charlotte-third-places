@@ -64,7 +64,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                             }
                         }}
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem]
-                                   bg-secondary text-primary-foreground
+                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Icons.shuffle className="text-primary-foreground text-xl mb-1" />
@@ -93,7 +93,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                             }
                         }}
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem]
-                                   bg-secondary text-primary-foreground
+                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Icons.list className="text-primary-foreground text-xl mb-1" />
