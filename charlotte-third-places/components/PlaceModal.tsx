@@ -51,7 +51,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
                     // Branch-specific sizing/rounding and scroll behavior
                     isMobile
-                        ? "w-full max-h-[88dvh] overflow-y-auto"
+                        ? "w-full max-h-[86dvh] overflow-y-auto"
                         : "w-auto max-w-3xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                 )}
                 onOpenAutoFocus={(e) => {
