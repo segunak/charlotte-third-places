@@ -252,26 +252,21 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             onClick={handleCardClick}
             className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
             <CardHeader className="pb-2">
-                {/* Flex container for title and badges */}
                 <div className="flex items-start justify-between gap-3">
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
                         {displayTitle}
                     </CardTitle>
-                    {/* Badges container - takes only needed space */}
-                    {badges.length > 0 && (
-                        // Center items to avoid align-stretch making some badges taller when neighbors are larger
-                        <div className="flex items-center space-x-2 flex-shrink-0 -mt-1.5">
-                            {badges.map((badge) => (
-                                <div
-                                    key={badge.key}
-                                    className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
-                                    title={badge.title}
-                                >
-                                    {badge.icon}
-                                </div>
-                            ))}
-                        </div>
-                    )}
+                    <div className="flex items-center space-x-2 flex-shrink-0 h-3">
+                        {badges.map((badge) => (
+                            <div
+                                key={badge.key}
+                                className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
+                                title={badge.title}
+                            >
+                                {badge.icon}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <CardDescription className="truncate">
                     {description}
@@ -283,8 +278,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         <strong>Size: </strong>
                         {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
-
-                    <span className="text-sm flex flex-wrap space-x-2">
+                    <span className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden">
                         <strong>Type: </strong>
                         {place?.type?.map((tag) => (
                             <AttributeTag key={tag} attribute={tag} />

@@ -82,10 +82,13 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
     <Badge
         variant="secondary"
         disableHover
-        className={cn("rounded-full px-2 py-0.5 text-sm font-medium gap-1", className)}
+        className={cn(
+            "rounded-full px-3 py-1 text-sm font-medium gap-1 max-w-full",
+            className
+        )}
     >
         {icon && <span className="flex-shrink-0">{icon}</span>}
-        <span className="truncate">{text}</span>
+        <span className="flex-1 min-w-0 break-words whitespace-normal leading-snug text-left">{text}</span>
     </Badge>
 );
 
@@ -194,7 +197,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
     );
     return (
         <div className="overflow-x-auto">
-            <table className="min-w-full border-separate border-spacing-y-0.5">
+            <table className="min-w-full table-fixed border-separate border-spacing-y-0.5">
                 <tbody className="divide-y divide-muted/60">
                     {/* Address */}
                     <tr>

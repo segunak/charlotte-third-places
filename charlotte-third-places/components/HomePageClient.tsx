@@ -53,7 +53,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
 
                 {/* Mobile-only instant action buttons */}
                 <div className="sm:hidden grid grid-cols-3 gap-3 !mt-6 !mb-6">
-                    {/* Stack Button - Instagram Pink with darker hover */}
+                    {/* Stack Button */}
                     <Button
                         onClick={() => {
                             const stackSection = document.getElementById('stack-section');
@@ -63,13 +63,15 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
                         }}
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-[hsl(var(--action-random))] hover:bg-[hsl(335,92%,46%)] text-white rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
+                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
+                                   rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
-                        <Icons.shuffle className="text-white text-xl mb-1" />
-                        <span className="text-white font-semibold text-sm">Random</span>
+                        <Icons.shuffle className="text-primary-foreground text-xl mb-1" />
+                        <span className="text-primary-foreground font-semibold text-sm">Random</span>
                     </Button>
 
-                    {/* Map Button - Primary Teal (Center/Hero) */}
+                    {/* Map Button */}
                     <Button
                         asChild
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-md active:scale-95 transition-all duration-200 transform scale-105 border-0"
@@ -80,7 +82,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                         </Link>
                     </Button>
 
-                    {/* List Button - Purple with darker hover */}
+                    {/* List Button */}
                     <Button
                         onClick={() => {
                             const browseSection = document.getElementById('browse-section');
@@ -90,10 +92,12 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
                         }}
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-[hsl(var(--action-browse))] hover:bg-[hsl(335,92%,46%)] text-white rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
+                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
+                                   rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
-                        <Icons.list className="text-white text-xl mb-1" />
-                        <span className="text-white font-semibold text-sm">Browse</span>
+                        <Icons.list className="text-primary-foreground text-xl mb-1" />
+                        <span className="text-primary-foreground font-semibold text-sm">Browse</span>
                     </Button>
                 </div>
 

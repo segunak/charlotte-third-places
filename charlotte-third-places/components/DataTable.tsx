@@ -116,9 +116,12 @@ export function DataTable({ rowData }: DataTableProps) {
         return grouped;
     }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow]);
 
+    // Virtualization sizes must include spacing because children margins don't affect
+    // react-window's absolute positioning. Reserve a small, explicit gap per row.
     const getRowHeight = useCallback(() => {
-        const cardHeight = 215;
-        return cardHeight;
+        const CARD_HEIGHT = 215;
+        const ROW_GAP = 4;
+        return CARD_HEIGHT + ROW_GAP;
     }, []);
 
     // Virtualized Row Renderer for react-window

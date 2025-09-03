@@ -92,7 +92,6 @@ export const PlaceContent: FC<PlaceContentProps> = ({
 
             <Separator />
 
-            {/* Quick Facts */}
             <QuickFacts
                 address={place.address}
                 neighborhood={place.neighborhood}
