@@ -47,12 +47,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 ref={isMobile ? contentRef : undefined}
                 crossCloseIconSize="h-7 w-7"
                 className={cn(
-                    // Base positioning and sizing shared across mobile/desktop
-                    "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[90dvh]",
-                    // Only the scroll behavior and desktop extra cap differ
+                    // Base positioning and shared styles
+                    "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
+                    // Branch-specific sizing/rounding and scroll behavior
                     isMobile
-                        ? "overflow-y-auto"
-                        : "sm:max-h-[95dvh] overflow-hidden flex flex-col"
+                        ? "w-full max-h-[85dvh] overflow-y-auto"
+                        : "w-auto max-w-3xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                 )}
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
