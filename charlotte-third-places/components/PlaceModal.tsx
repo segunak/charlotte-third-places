@@ -48,7 +48,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 crossCloseIconSize="h-7 w-7"
                 className={cn(
                     // Base positioning and sizing shared across mobile/desktop
-                    "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[85dvh]",
+                    "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[90dvh]",
                     // Only the scroll behavior and desktop extra cap differ
                     isMobile
                         ? "overflow-y-auto"
