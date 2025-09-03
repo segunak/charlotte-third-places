@@ -17,6 +17,8 @@ import {
     DialogTitle,
     DialogDescription,
 } from "@/components/ui/dialog";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { cn } from "@/lib/utils";
 
 interface PlaceModalProps {
     place: Place | null;
@@ -26,6 +28,7 @@ interface PlaceModalProps {
 
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
+    const isMobile = useIsMobile();
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -41,8 +44,16 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     return (
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
+                ref={isMobile ? contentRef : undefined}
                 crossCloseIconSize="h-7 w-7"
-                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[85dvh] sm:max-h-[95dvh] overflow-hidden flex flex-col"
+                className={cn(
+                    // Base positioning and sizing shared across mobile/desktop
+                    "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[85dvh]",
+                    // Only the scroll behavior and desktop extra cap differ
+                    isMobile
+                        ? "overflow-y-auto"
+                        : "sm:max-h-[95dvh] overflow-hidden flex flex-col"
+                )}
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
@@ -68,15 +79,15 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
 
-                {/* Scrollable body */}
-                <div ref={contentRef} className="flex-1 overflow-y-auto">
-                    <PlaceContent
-                        place={place}
-                        layout="modal"
-                    />
-                </div>
+                {/* Body: desktop pins footer by making only this part scroll; mobile lets outer scroll */}
+                {isMobile ? (
+                    <PlaceContent place={place} layout="modal" />
+                ) : (
+                    <div ref={contentRef} className="flex-1 overflow-y-auto">
+                        <PlaceContent place={place} layout="modal" />
+                    </div>
+                )}
 
-                {/* CLOSE BUTTON */}
                 <div className="flex justify-center py-4 px-4 mt-auto shrink-0">
                     <Button className="font-bold w-full max-w-xs" onClick={onClose}>
                         Close
