@@ -74,10 +74,6 @@
     --warm-accent: 30 90% 70%;                 /* Warm accent (peachy) */
     --warm-accent-foreground: 210 5% 20%;
 
-    /* Action button colors */
-    --action-random: 335 92% 52%;              /* #f21368 */
-    --action-browse: 335 92% 52%;              /* Same #f21368 */
-
     --muted: 190 10% 90%;                      /* Subtle off‐teal for muted elements */
     --muted-foreground: 210 5% 40%;
 
@@ -127,10 +123,6 @@
 
     --warm-accent: 30 90% 60%;                 /* Warm accent in dark mode */
     --warm-accent-foreground: 0 0% 100%;
-
-    /* Action button colors - lifted lightness for dark mode */
-    --action-random: 335 92% 58%;              /* Lighter #f21368 for dark UI */
-    --action-browse: 335 92% 58%;              /* Same lighter #f21368 for dark UI */
 
     --muted: 210 15% 25%;                      /* Muted gray‐teal */
     --muted-foreground: 210 5% 80%;
