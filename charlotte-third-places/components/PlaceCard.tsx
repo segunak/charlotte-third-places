@@ -252,13 +252,10 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             onClick={handleCardClick}
             className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
             <CardHeader className="pb-2">
-                {/* Flex container for title and badges */}
                 <div className="flex items-start justify-between gap-3">
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
                         {displayTitle}
                     </CardTitle>
-                    {/* Badges container - always rendered to keep header height constant
-                        even when no badges exist. */}
                     <div className="flex items-center space-x-2 flex-shrink-0 h-3">
                         {badges.map((badge) => (
                             <div
@@ -281,12 +278,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         <strong>Size: </strong>
                         {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
-
-                          {/* Type chips row normalization:
-                              - Wrapping to multiple lines was a primary source of card height variance.
-                              - We force a single-line row and clip overflow to keep card height constant.
-                              - h-6 reserves a consistent line height matching the chip size. */}
-                          <span className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden">
+                    <span className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden">
                         <strong>Type: </strong>
                         {place?.type?.map((tag) => (
                             <AttributeTag key={tag} attribute={tag} />
