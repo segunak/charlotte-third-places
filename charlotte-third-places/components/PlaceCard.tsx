@@ -257,21 +257,19 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
                         {displayTitle}
                     </CardTitle>
-                    {/* Badges container - takes only needed space */}
-                    {badges.length > 0 && (
-                        // Center items to avoid align-stretch making some badges taller when neighbors are larger
-                        <div className="flex items-center space-x-2 flex-shrink-0 -mt-1.5">
-                            {badges.map((badge) => (
-                                <div
-                                    key={badge.key}
-                                    className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
-                                    title={badge.title}
-                                >
-                                    {badge.icon}
-                                </div>
-                            ))}
-                        </div>
-                    )}
+                    {/* Badges container - always rendered to keep header height constant
+                        even when no badges exist. */}
+                    <div className="flex items-center space-x-2 flex-shrink-0 h-3">
+                        {badges.map((badge) => (
+                            <div
+                                key={badge.key}
+                                className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
+                                title={badge.title}
+                            >
+                                {badge.icon}
+                            </div>
+                        ))}
+                    </div>
                 </div>
                 <CardDescription className="truncate">
                     {description}
@@ -284,7 +282,11 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
 
-                    <span className="text-sm flex flex-wrap space-x-2">
+                          {/* Type chips row normalization:
+                              - Wrapping to multiple lines was a primary source of card height variance.
+                              - We force a single-line row and clip overflow to keep card height constant.
+                              - h-6 reserves a consistent line height matching the chip size. */}
+                          <span className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden">
                         <strong>Type: </strong>
                         {place?.type?.map((tag) => (
                             <AttributeTag key={tag} attribute={tag} />
