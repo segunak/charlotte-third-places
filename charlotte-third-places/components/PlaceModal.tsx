@@ -41,9 +41,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     return (
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
-                ref={contentRef}
                 crossCloseIconSize="h-7 w-7"
-                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[80vh] sm:max-h-[95vh] overflow-y-auto"
+                className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full sm:w-auto bg-card sm:max-w-2xl sm:mx-auto rounded-lg sm:rounded-xl max-h-[85dvh] sm:max-h-[95dvh] overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => {
                     // Ensure the modal content starts at the top
                     if (contentRef.current) {
@@ -62,20 +61,23 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
                 )}
 
-                <DialogHeader className="mt-7 sm:mt-0">
+                <DialogHeader className="mt-7 sm:mt-0 shrink-0">
                     <DialogTitle className="text-center">
                         {place.name}
                     </DialogTitle>
                     <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>
                 </DialogHeader>
 
-                <PlaceContent
-                    place={place}
-                    layout="modal"
-                />
+                {/* Scrollable body */}
+                <div ref={contentRef} className="flex-1 overflow-y-auto">
+                    <PlaceContent
+                        place={place}
+                        layout="modal"
+                    />
+                </div>
 
                 {/* CLOSE BUTTON */}
-                <div className="flex justify-center py-4 px-4 mt-auto">
+                <div className="flex justify-center py-4 px-4 mt-auto shrink-0">
                     <Button className="font-bold w-full max-w-xs" onClick={onClose}>
                         Close
                     </Button>
