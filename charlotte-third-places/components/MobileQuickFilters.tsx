@@ -54,12 +54,12 @@ export function MobileQuickFilters() {
                         className="flex-1"
                         onClick={() => setIsMoreOptionsOpen(true)}
                     >
-                        More Options
+                        More Filters
                     </Button>
                 </div>
             </div>
 
-            {/* FilterDrawer component for more options */}
+            {/* FilterDrawer component for more filters */}
             <FilterDrawer
                 showSort={true}
                 showButton={false}

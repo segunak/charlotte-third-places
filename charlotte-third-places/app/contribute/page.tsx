@@ -45,14 +45,12 @@ export default function ContributePage() {
             </p>
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl text-center mb-4 border-b pb-3">
-                        Ways to Contribute
-                    </CardTitle>
+                    <CardTitle></CardTitle>
                 </CardHeader>
                 <CardContent>
                     <div className="flex flex-col gap-8">
                         {forms.map((form) => (
-                            <div key={form.title} className="flex flex-col sm:flex-row items-center gap-6 p-4 rounded-lg bg-card/80 border border-muted/30">
+                            <div key={form.title} className="flex flex-col sm:flex-row items-center gap-6 p-4 rounded-lg bg-card/80 border border-muted">
                                 <div className="flex-shrink-0 flex items-center justify-center mb-2 sm:mb-0">
                                     {form.icon}
                                 </div>
