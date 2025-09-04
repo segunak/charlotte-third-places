@@ -1,6 +1,7 @@
 "use client";
 
 import { PlaceCard } from "@/components/PlaceCard";
+import { FilterResetButton } from "@/components/FilterUtilities";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
@@ -147,16 +148,31 @@ export function DataTable({ rowData }: DataTableProps) {
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                 </div>
             )}
-            <div className={`w-full ${isLoading ? "opacity-0" : ""}`} style={{ overflow: "visible" }}>
-                <List
-                    height={filteredAndGroupedRowData.length * getRowHeight()}
-                    itemCount={filteredAndGroupedRowData.length}
-                    itemSize={getRowHeight()}
-                    width={"100%"}
-                    style={{ overflow: "visible" }}
-                >
-                    {Row}
-                </List>
+            {!isLoading && filteredAndGroupedRowData.length === 0 && (
+                <div className="flex flex-col items-center justify-center text-center gap-4 py-24 px-6 border rounded-xl bg-card/60">
+                    <div className="space-y-2 max-w-md">
+                        <h3 className="text-lg font-semibold">No places match those filters</h3>
+                        <p className="text-sm text-muted-foreground">
+                            Try widening your search or resetting the filters to see all places again.
+                        </p>
+                    </div>
+                    <div className="w-40">
+                        <FilterResetButton variant="outline" />
+                    </div>
+                </div>
+            )}
+            <div className={`w-full ${isLoading ? "opacity-0" : ""} ${(!isLoading && filteredAndGroupedRowData.length === 0) ? "hidden" : ""}`} style={{ overflow: "visible" }}>
+                {filteredAndGroupedRowData.length > 0 && (
+                    <List
+                        height={filteredAndGroupedRowData.length * getRowHeight()}
+                        itemCount={filteredAndGroupedRowData.length}
+                        itemSize={getRowHeight()}
+                        width={"100%"}
+                        style={{ overflow: "visible" }}
+                    >
+                        {Row}
+                    </List>
+                )}
             </div>
         </div>
     );
