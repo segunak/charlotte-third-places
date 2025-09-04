@@ -283,8 +283,8 @@ export default function AboutPage() {
             {/* Creator*/}
             <Card className="border shadow-sm">
                 <CardHeader>
-                    <CardTitle className="text-2xl text-center mb-4 border-b pb-3">
-                        Creator
+                    <CardTitle>
+                        
                     </CardTitle>
                     <div className="flex justify-center">
                         <Image
@@ -300,17 +300,16 @@ export default function AboutPage() {
                 </CardHeader>
                 <CardContent className="leading-relaxed text-pretty space-y-4">
                     <p>
-                        Hello, I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
+                        What's up, I'm <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>, the creator and maintainer of this site. My goal is to connect people in Charlotte with places where they can:
                     </p>
                     <ul className="list-disc list-inside pl-4 space-y-2">
                         <li>Work remotely.</li>
-                        <li>Read, write, study, etc.</li>
-                        <li>Relax, unwind, hang out, decompress.</li>
-                        <li>Meet friends, make new friends, or quietly enjoy the warmth of a shared space, because sometimes, simply being around friendly faces can lift the spirit.</li>
+                        <li>Read, write, study, relax, unwind, hang out, decompress, etc.</li>
+                        <li>Meet friends, make new friends, or quietly enjoy the warmth of a shared space.</li>
                         <li>Enjoy cinnamon rolls while doing any of the above.</li>
                     </ul>
                     <p>
-                        This site is your guide to discovering Charlotte's best third places. Keep scrolling to get answers to frequently asked questions and learn more about the project.
+                        This site exists as a community resource for discovering Charlotte's many third places. Keep scrolling to get answers to frequently asked questions and learn more about the project.
                     </p>
                 </CardContent>
             </Card>
