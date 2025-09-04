@@ -92,7 +92,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light" disableTransitionOnChange>
+        <ThemeProvider>
           <ModalProvider>
             <div className="flex flex-col min-h-dvh">
               <SiteHeader />
