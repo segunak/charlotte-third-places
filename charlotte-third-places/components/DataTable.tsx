@@ -1,8 +1,10 @@
 "use client";
 
 import { PlaceCard } from "@/components/PlaceCard";
+import { FilteredEmptyState } from "@/components/FilteredEmptyState";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
+import { placeMatchesFilters } from "@/lib/utils";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useState, useMemo, useEffect } from "react";
@@ -22,34 +24,7 @@ export function DataTable({ rowData }: DataTableProps) {
     }, []);
 
     const applyFilters = useCallback(
-        (data: any[]) => {
-            return data.filter((place: any) => {
-                const {
-                    name,
-                    type,
-                    size,
-                    neighborhood,
-                    purchaseRequired,
-                    parking,
-                    freeWiFi,
-                    hasCinnamonRolls,
-                } = filters;
-
-                const isTypeMatch =
-                    type.value === "all" || (place.type && place.type.includes(type.value));
-
-                return (
-                    isTypeMatch &&
-                    (name.value === "all" || place.name === name.value) &&
-                    (size.value === "all" || place.size === size.value) &&
-                    (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
-                    (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                    (parking.value === "all" || (place.parking && place.parking.includes(parking.value))) &&
-                    (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
-                    (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
-                );
-            });
-        },
+        (data: any[]) => data.filter((place: any) => placeMatchesFilters(place, filters as any)),
         [filters]
     );
 
@@ -147,16 +122,21 @@ export function DataTable({ rowData }: DataTableProps) {
                     <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
                 </div>
             )}
-            <div className={`w-full ${isLoading ? "opacity-0" : ""}`} style={{ overflow: "visible" }}>
-                <List
-                    height={filteredAndGroupedRowData.length * getRowHeight()}
-                    itemCount={filteredAndGroupedRowData.length}
-                    itemSize={getRowHeight()}
-                    width={"100%"}
-                    style={{ overflow: "visible" }}
-                >
-                    {Row}
-                </List>
+            {!isLoading && filteredAndGroupedRowData.length === 0 && (
+                <FilteredEmptyState />
+            )}
+            <div className={`w-full ${isLoading ? "opacity-0" : ""} ${(!isLoading && filteredAndGroupedRowData.length === 0) ? "hidden" : ""}`} style={{ overflow: "visible" }}>
+                {filteredAndGroupedRowData.length > 0 && (
+                    <List
+                        height={filteredAndGroupedRowData.length * getRowHeight()}
+                        itemCount={filteredAndGroupedRowData.length}
+                        itemSize={getRowHeight()}
+                        width={"100%"}
+                        style={{ overflow: "visible" }}
+                    >
+                        {Row}
+                    </List>
+                )}
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import { twMerge } from "tailwind-merge"
 import { clsx, type ClassValue } from "clsx"
+import { Place, FilterConfig } from "./types";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
@@ -86,6 +87,38 @@ export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
   }
 
   return shuffled;
+}
+
+/**
+ * Returns true if a place passes all active filters in the provided FilterConfig.
+ * Each filter uses the convention value === 'all' => ignore.
+ * Keep this single source of truth updated when adding or modifying filters.
+ */
+export function placeMatchesFilters(place: Place, filters: FilterConfig): boolean {
+  const { name, type, size, neighborhood, purchaseRequired, parking, freeWiFi, hasCinnamonRolls } = filters;
+
+  const isTypeMatch = type.value === 'all' || (Array.isArray(place.type) && place.type.includes(type.value));
+  if (!isTypeMatch) return false;
+
+  if (!(name.value === 'all' || place.name === name.value)) return false;
+  if (!(size.value === 'all' || place.size === size.value)) return false;
+  if (!(neighborhood.value === 'all' || place.neighborhood === neighborhood.value)) return false;
+  if (!(purchaseRequired.value === 'all' || place.purchaseRequired === purchaseRequired.value)) return false;
+
+  const parkingValues = Array.isArray(place.parking) ? place.parking : [];
+  if (!(parking.value === 'all' || parkingValues.includes(parking.value))) return false;
+
+  if (!(freeWiFi.value === 'all' || place.freeWiFi === freeWiFi.value)) return false;
+  if (!(hasCinnamonRolls.value === 'all' || place.hasCinnamonRolls === hasCinnamonRolls.value)) return false;
+
+  return true;
+}
+
+/**
+ * Filters an array of places using current filters. Provided for convenience.
+ */
+export function filterPlaces(places: Place[], filters: FilterConfig): Place[] {
+  return places.filter(p => placeMatchesFilters(p, filters));
 }
 
 /**

@@ -4,6 +4,7 @@ import { Place } from '@/lib/types';
 import { Button } from './ui/button';
 import { Icons, getPlaceTypeIcon } from "@/components/Icons";
 import { normalizeTextForSearch } from '@/lib/utils';
+import { placeMatchesFilters } from "@/lib/utils";
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo, useCallback } from 'react';
@@ -187,37 +188,10 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     };
 
     const filteredPlaces = useMemo(() => {
-        return places.filter((place) => {
-            const {
-                name,
-                type,
-                size,
-                neighborhood,
-                purchaseRequired,
-                parking,
-                freeWiFi,
-                hasCinnamonRolls,
-            } = filters;
-
-            const matchesQuickSearch = normalizeTextForSearch(place.name || '').includes(normalizeTextForSearch(quickFilterText));
-
-            const isTypeMatch =
-                type.value === "all" || (place.type && place.type.includes(type.value));
-
-            const isParkingMatch =
-                parking.value === "all" || (place.parking && place.parking.includes(parking.value));
-
-            return (
-                matchesQuickSearch &&
-                isTypeMatch &&
-                isParkingMatch &&
-                (name.value === "all" || place.name === name.value) &&
-                (size.value === "all" || place.size === size.value) &&
-                (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
-                (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
-                (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
-            );
+        const normalizedSearchTerm = normalizeTextForSearch(quickFilterText);
+        return places.filter(place => {
+            if (normalizedSearchTerm && !normalizeTextForSearch(place.name || '').includes(normalizedSearchTerm)) return false;
+            return placeMatchesFilters(place as any, filters as any);
         });
     }, [places, filters, quickFilterText]);
 
