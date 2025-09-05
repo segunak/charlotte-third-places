@@ -1,9 +1,10 @@
 "use client";
 
 import { PlaceCard } from "@/components/PlaceCard";
-import { FilterResetButton } from "@/components/FilterUtilities";
+import { FilteredEmptyState } from "@/components/FilteredEmptyState";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
+import { placeMatchesFilters } from "@/lib/utils";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useState, useMemo, useEffect } from "react";
@@ -23,34 +24,7 @@ export function DataTable({ rowData }: DataTableProps) {
     }, []);
 
     const applyFilters = useCallback(
-        (data: any[]) => {
-            return data.filter((place: any) => {
-                const {
-                    name,
-                    type,
-                    size,
-                    neighborhood,
-                    purchaseRequired,
-                    parking,
-                    freeWiFi,
-                    hasCinnamonRolls,
-                } = filters;
-
-                const isTypeMatch =
-                    type.value === "all" || (place.type && place.type.includes(type.value));
-
-                return (
-                    isTypeMatch &&
-                    (name.value === "all" || place.name === name.value) &&
-                    (size.value === "all" || place.size === size.value) &&
-                    (neighborhood.value === "all" || place.neighborhood === neighborhood.value) &&
-                    (purchaseRequired.value === "all" || place.purchaseRequired === purchaseRequired.value) &&
-                    (parking.value === "all" || (place.parking && place.parking.includes(parking.value))) &&
-                    (freeWiFi.value === "all" || place.freeWiFi === freeWiFi.value) &&
-                    (hasCinnamonRolls.value === "all" || place.hasCinnamonRolls === hasCinnamonRolls.value)
-                );
-            });
-        },
+        (data: any[]) => data.filter((place: any) => placeMatchesFilters(place, filters as any)),
         [filters]
     );
 
@@ -149,17 +123,7 @@ export function DataTable({ rowData }: DataTableProps) {
                 </div>
             )}
             {!isLoading && filteredAndGroupedRowData.length === 0 && (
-                <div className="flex flex-col items-center justify-center text-center gap-4 py-24 px-6 border rounded-xl bg-card/60">
-                    <div className="space-y-2 max-w-md">
-                        <h3 className="text-lg font-semibold">No places match those filters</h3>
-                        <p className="text-sm text-muted-foreground">
-                            Try widening your search or resetting the filters to see all places again.
-                        </p>
-                    </div>
-                    <div className="w-40">
-                        <FilterResetButton variant="outline" />
-                    </div>
-                </div>
+                <FilteredEmptyState />
             )}
             <div className={`w-full ${isLoading ? "opacity-0" : ""} ${(!isLoading && filteredAndGroupedRowData.length === 0) ? "hidden" : ""}`} style={{ overflow: "visible" }}>
                 {filteredAndGroupedRowData.length > 0 && (
