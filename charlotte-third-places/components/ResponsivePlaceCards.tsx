@@ -58,16 +58,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         return sorted;
     }, [places, filters, quickFilterText, sortOption]);
 
-    // Desktop (InfiniteMovingCards) should ignore active filters.
-    // Build initial ordering of ALL places: featured first (newest first), then others (newest first).
-    const getInitialOrder = useCallback(() => {
-        const featured: { index: number; place: Place }[] = [];
-        const nonFeatured: { index: number; place: Place }[] = [];
-        places.forEach((p, i) => (p.featured ? featured : nonFeatured).push({ index: i, place: p }));
-        featured.sort((a, b) => new Date(b.place.createdDate).getTime() - new Date(a.place.createdDate).getTime());
-        nonFeatured.sort((a, b) => new Date(b.place.createdDate).getTime() - new Date(a.place.createdDate).getTime());
-        return [...featured, ...nonFeatured].map(item => item.index);
-    }, [places]);
+    // Desktop ignores filters; we now want an initial random order each load (not fixed).
 
     // Generic Fisher-Yates shuffle for an index range
     const shuffleIndexes = useCallback((length: number) => {
@@ -99,13 +90,13 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     useEffect(() => {
         setIsLoading(true);
         const initialize = () => {
-            // Use initial order on first load (featured first), not shuffled
-            setDesktopShuffledOrder(getInitialOrder());
+            // Initial load: random shuffle of all places
+            setDesktopShuffledOrder(shuffleIndexes(places.length));
             setCurrentIndex(0);
             setIsLoading(false);
         };
         initialize();
-    }, [getInitialOrder, places]);
+    }, [shuffleIndexes, places.length]);
 
     // Reinitialize mobile order whenever filteredPlaces changes (filters applied)
     useEffect(() => {
