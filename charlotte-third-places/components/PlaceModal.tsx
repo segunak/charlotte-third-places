@@ -72,6 +72,16 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
                 )}
 
+                {/* Opening Soon ribbon, corner banner */}
+                {place.tags?.includes("Opening Soon") && (
+                    <div className="absolute top-0 right-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                        <div className="absolute top-4 -right-16 w-[200px] flex justify-center items-center bg-blue-500 text-white text-sm font-semibold py-2.5 transform rotate-[45deg] shadow-lg">
+                            <Icons.clock className="h-4 w-4 mr-1" />
+                            <span>Opening Soon</span>
+                        </div>
+                    </div>
+                )}
+
                 <DialogHeader className="mt-7 sm:mt-0 shrink-0">
                     <DialogTitle className="text-center">
                         {place.name}

@@ -66,7 +66,8 @@ import {
   FaSearch,
   FaStar,
   FaCrown,
-  FaCommentAlt
+  FaCommentAlt,
+  FaClock
 } from "react-icons/fa";
 import {
   IoHome,
@@ -209,6 +210,7 @@ export const Icons = {
   star: FaStar,
   crown: FaCrown,
   queen: FaChessQueen,
+  clock: FaClock,
   pin: FaLocationPin,
   circle: FaCircle,
   globe: HiOutlineGlobeAlt,

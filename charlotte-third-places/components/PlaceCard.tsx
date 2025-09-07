@@ -228,6 +228,17 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             });
         }
 
+        // Add opening soon badge (clock) - has very high priority to be rightmost, but not as high as featured
+        if (place?.tags?.includes("Opening Soon")) {
+            badgeList.push({
+                key: 'openingSoon',
+                icon: <Icons.clock className="h-5 w-5 text-white fill-white" />,
+                bgColor: 'bg-blue-500',
+                title: 'Opening Soon',
+                priority: Number.MAX_SAFE_INTEGER - 1
+            });
+        }
+
         // Add featured badge (star) - always has highest priority to be rightmost
         if (place?.featured) {
             badgeList.push({
@@ -247,10 +258,22 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         return place?.name || '';
     }, [place?.name]);
 
+    // Add visual indicator for opening soon places
+    const cardClassName = useMemo(() => {
+        const baseClass = "mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative";
+        const isOpeningSoon = place?.tags?.includes("Opening Soon");
+        
+        if (isOpeningSoon) {
+            return `${baseClass} border-2 border-blue-200`;
+        }
+        
+        return baseClass;
+    }, [place?.tags]);
+
     return (
         <Card
             onClick={handleCardClick}
-            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
+            className={cardClassName}>
             <CardHeader className="pb-2">
                 <div className="flex items-start justify-between gap-3">
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
