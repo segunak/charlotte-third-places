@@ -71,7 +71,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                         onClick={() => showPlacePhotos(place, layout === "page" ? "card" : "modal")}
                         aria-label="View photos"
                     >
-                        <Icons.camera className={`${iconSize} text-primary`} />
+                        <Icons.photoGallery className={`${iconSize} text-primary`} />
                     </Button>
                 )}
                 {website && (

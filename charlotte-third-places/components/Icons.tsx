@@ -57,6 +57,7 @@ import {
   FaMobileAlt,
   FaDollarSign,
   FaTabletAlt,
+  FaImages,
   FaDesktop,
   FaCircle,
   FaLink,
@@ -146,6 +147,7 @@ export const Icons = {
   dollarSign: FaDollarSign,
   chevronUp: FaChevronUp,
   cross: FaCross,
+  photoGallery: FaImages,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"
