@@ -303,7 +303,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                     }}
                                     aria-label="View photos"
                                 >
-                                    <Icons.camera className="h-5 w-5 text-primary-foreground" />
+                                    <Icons.photoGallery className="h-5 w-5 text-primary-foreground" />
                                 </Button>
                             )}
                             <Button
