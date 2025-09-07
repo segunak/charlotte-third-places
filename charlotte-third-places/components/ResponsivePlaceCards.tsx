@@ -158,7 +158,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 )}
             </div>
 
-            {/* Shuffle Button: always visible on desktop; on mobile only when there are filtered results */}
+            {/* Shuffle Button: Always visible on desktop; on mobile only when there are filtered results */}
             {(!isMobile || (filteredPlaces.length > 0 && !isLoading)) && (
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
                     <Button
