@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
+import { useIsMobile } from "@/hooks/use-mobile";
 import React, {
     useState,
     useCallback,
@@ -21,8 +22,8 @@ import React, {
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     // Consume filtering context so discovery feed reflects current filters
     const { filters, quickFilterText, sortOption } = useContext(FilterContext);
+    const isMobile = useIsMobile();
     const shuffleTimeout = useRef<number | null>(null);
-    const [hasItems, setHasItems] = useState<boolean>(false);
     const [isLoading, setIsLoading] = useState<boolean>(true);
     // Desktop shuffled order (full data, ignores filters)
     const [desktopShuffledOrder, setDesktopShuffledOrder] = useState<number[]>([]);
@@ -104,9 +105,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         setCurrentIndex(0);
     }, [filteredPlaces]);
 
-    const handleItemsChange = (count: number) => {
-        setHasItems(count > 0);
-    };
+    const handleItemsChange = () => { };
 
     // Only render a limited number of cards in InfiniteMovingCards (desktop)
     const VIRTUALIZED_CARD_COUNT = 100; // Show this many at a time for animation, adjust as needed
@@ -159,8 +158,8 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                 )}
             </div>
 
-            {/* Shuffle Button */}
-            {hasItems && !isLoading && filteredPlaces.length > 0 && (
+            {/* Shuffle Button: always visible on desktop; on mobile only when there are filtered results */}
+            {(!isMobile || (filteredPlaces.length > 0 && !isLoading)) && (
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
                     <Button
                         className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
