@@ -8,9 +8,11 @@ import { Place } from '@/lib/types';
 import stripBomStream from 'strip-bom-stream';
 import { parse, parseISO, isValid } from "date-fns";
 
-const base = new Airtable({
-    apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
-}).base('apptV6h58vA4jhWFg');
+const base = process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN 
+    ? new Airtable({
+        apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
+    }).base('apptV6h58vA4jhWFg')
+    : null;
 
 /**
  * Determines whether to use local data or production data.
@@ -327,6 +329,10 @@ export async function getPlaceById(id: string) {
             return localData.find((place) => place.recordId === id);
         }
 
+        if (!base) {
+            throw new Error('Airtable base not configured');
+        }
+        
         const record = await base('Charlotte Third Places').find(id);
         return mapRecordToPlace(record);
     } catch (error) {
@@ -349,6 +355,10 @@ export async function getPlaces(): Promise<Place[]> {
         if (shouldUseLocalData()) {
             const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-Production.csv');
             return localData;
+        }
+
+        if (!base) {
+            throw new Error('Airtable base not configured');
         }
 
         // Get places from Airtable
