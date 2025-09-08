@@ -1,6 +1,6 @@
 import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
-// import { fontSans } from "@/lib/fonts"
+import { fontSans } from "@/lib/fonts"
 import type { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SiteHeader } from "@/components/SiteHeader"
@@ -74,7 +74,7 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: RootLayoutProps) {
   const shouldInjectToolbar = process.env.NODE_ENV === 'development';
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className={fontSans.className}>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
@@ -88,7 +88,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
         className={cn(
-          "min-h-dvh bg-background antialiased"
+          "min-h-dvh bg-background antialiased",
+          fontSans.variable
         )}
       >
         <ThemeProvider>
