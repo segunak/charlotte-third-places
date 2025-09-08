@@ -62,25 +62,30 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                {/* Featured ribbon, corner banner */}
-                {place.featured && (
-                    <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
-                        <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
-                            <Icons.star className="h-4 w-4 mr-1" />
-                            <span>Featured</span>
-                        </div>
-                    </div>
-                )}
-
-                {/* Opening Soon ribbon, corner banner */}
-                {place.tags?.includes("Opening Soon") && (
-                    <div className="absolute top-0 right-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
-                        <div className="absolute top-4 -right-16 w-[200px] flex justify-center items-center bg-blue-500 text-white text-sm font-semibold py-2.5 transform rotate-[45deg] shadow-lg">
-                            <Icons.clock className="h-4 w-4 mr-1" />
-                            <span>Opening Soon</span>
-                        </div>
-                    </div>
-                )}
+                {/* Unified ribbon system - priority: Featured > Opening Soon > future ribbons */}
+                {(() => {
+                    // Determine which ribbon to show based on priority
+                    if (place.featured) {
+                        return (
+                            <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                                <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
+                                    <Icons.star className="h-4 w-4 mr-1" />
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                        );
+                    } else if (place.tags?.includes("Opening Soon")) {
+                        return (
+                            <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                                <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-blue-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
+                                    <Icons.clock className="h-4 w-4 mr-1" />
+                                    <span>Opening Soon</span>
+                                </div>
+                            </div>
+                        );
+                    }
+                    return null;
+                })()}
 
                 <DialogHeader className="mt-7 sm:mt-0 shrink-0">
                     <DialogTitle className="text-center">

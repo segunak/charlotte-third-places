@@ -36,7 +36,14 @@ export function DataTable({ rowData }: DataTableProps) {
                     return b.featured ? 1 : -1; // featured places (true) come before non-featured (false)
                 }
 
-                // Second priority: Apply user's selected sorting
+                // Second priority: Opening Soon places come after Featured but before regular places
+                const aIsOpeningSoon = a.tags?.includes("Opening Soon") || false;
+                const bIsOpeningSoon = b.tags?.includes("Opening Soon") || false;
+                if (aIsOpeningSoon !== bIsOpeningSoon) {
+                    return bIsOpeningSoon ? 1 : -1; // opening soon places come before regular places
+                }
+
+                // Third priority: Apply user's selected sorting
                 const { field, direction } = sortOption;
 
                 // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)
