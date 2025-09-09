@@ -150,6 +150,7 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
+    const isOpeningSoon = place?.operational === "Opening Soon";
 
     const description = useMemo(() =>
         place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
@@ -180,6 +181,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             paddingClass?: string;
             // Tooltip/title for the badge
             title?: string;
+            // Optional inline label text displayed to the right of the icon
+            label?: string;
         }> = [];
 
         // We assign priorities incrementally so that visual order follows insertion order (left -> right),
@@ -229,12 +232,14 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         }
 
         // Add opening soon badge (clock) - has very high priority to be rightmost, but not as high as featured
-        if (place?.tags?.includes("Opening Soon")) {
+        if (isOpeningSoon) {
             badgeList.push({
                 key: 'openingSoon',
-                icon: <Icons.clock className="h-5 w-5 text-white fill-white" />,
+                icon: <Icons.clock className="h-4 w-4 text-white fill-white" />,
                 bgColor: 'bg-blue-500',
                 title: 'Opening Soon',
+                label: 'Opening Soon',
+                paddingClass: 'p-2',
                 priority: Number.MAX_SAFE_INTEGER - 1
             });
         }
@@ -252,7 +257,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
         // Sort by priority (highest priority = rightmost position)
         return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured, place?.tags]); // Always use full name - CSS flex layout will handle truncation
+    }, [place?.hasCinnamonRolls, place?.featured, place?.tags, isOpeningSoon]);
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
@@ -261,14 +266,11 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     // Add visual indicator for opening soon places
     const cardClassName = useMemo(() => {
         const baseClass = "mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative";
-        const isOpeningSoon = place?.tags?.includes("Opening Soon");
-        
         if (isOpeningSoon) {
-            return `${baseClass} border-2 border-blue-200`;
+            return `${baseClass} border-2 border-blue-200 overflow-hidden bg-[repeating-linear-gradient(45deg,rgba(56,189,248,0.12)_0px,rgba(56,189,248,0.12)_14px,rgba(255,255,255,0)_14px,rgba(255,255,255,0)_36px)] dark:bg-[repeating-linear-gradient(45deg,rgba(71,85,105,0.35)_0px,rgba(71,85,105,0.35)_14px,rgba(30,41,59,0)_14px,rgba(30,41,59,0)_36px)]`;
         }
-        
         return baseClass;
-    }, [place?.tags]);
+    }, [isOpeningSoon]);
 
     return (
         <Card
@@ -286,7 +288,14 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                 className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
                                 title={badge.title}
                             >
-                                {badge.icon}
+                                <span className="inline-flex items-center">
+                                    {badge.icon}
+                                    {badge.label && (
+                                        <span className="ml-1 text-xs font-semibold leading-none text-white whitespace-nowrap">
+                                            {badge.label}
+                                        </span>
+                                    )}
+                                </span>
                             </div>
                         ))}
                     </div>

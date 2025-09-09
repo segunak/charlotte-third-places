@@ -49,8 +49,8 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             }
             
             // Second priority: Opening Soon places come after Featured but before regular places
-            const aIsOpeningSoon = a.tags?.includes("Opening Soon") || false;
-            const bIsOpeningSoon = b.tags?.includes("Opening Soon") || false;
+            const aIsOpeningSoon = a.operational === "Opening Soon";
+            const bIsOpeningSoon = b.operational === "Opening Soon";
             if (aIsOpeningSoon !== bIsOpeningSoon) {
                 return bIsOpeningSoon ? 1 : -1; // opening soon places come before regular places
             }
