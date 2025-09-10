@@ -1,7 +1,7 @@
 import { Place } from "@/lib/types";
 import { FC, useMemo, memo } from "react";
 import { Icons } from "@/components/Icons";
-import { parseAirtableMarkdown } from "@/lib/utils";
+import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";

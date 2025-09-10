@@ -5,7 +5,7 @@ import React from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import { Icons } from '@/components/Icons';
 import { ResponsiveLink } from '@/components/ResponsiveLink';
-import { parseAirtableMarkdown, ParsedMarkdownNode } from '@/lib/utils';
+import { parseAirtableMarkdown, ParsedMarkdownNode } from '@/lib/parsing';
 import clsx from 'clsx';
 
 interface RichTextSectionProps {
