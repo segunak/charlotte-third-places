@@ -276,7 +276,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const cardClassName = useMemo(() => {
         const baseClass = "mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative";
         if (isOpeningSoon) {
-            return `${baseClass} border-2 border-blue-200 overflow-hidden bg-[repeating-linear-gradient(45deg,rgba(56,189,248,0.12)_0px,rgba(56,189,248,0.12)_14px,rgba(255,255,255,0)_14px,rgba(255,255,255,0)_36px)] dark:bg-[repeating-linear-gradient(45deg,rgba(71,85,105,0.35)_0px,rgba(71,85,105,0.35)_14px,rgba(30,41,59,0)_14px,rgba(30,41,59,0)_36px)]`;
+            // Opening Soon gradient
+            return `${baseClass} border border-blue-200/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_45%,rgba(56,189,248,0.05)_75%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_50%,rgba(71,85,105,0.20)_82%,rgba(71,85,105,0.14)_100%)]`;
         }
         return baseClass;
     }, [isOpeningSoon]);

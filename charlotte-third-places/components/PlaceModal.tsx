@@ -50,8 +50,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 className={cn(
                     // Base positioning and shared styles
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
-                    // Apply Opening Soon stripe styling similar to PlaceCard (kept subtle)
-                    isOpeningSoon && "border-2 border-blue-200 overflow-hidden bg-[repeating-linear-gradient(45deg,rgba(56,189,248,0.12)_0px,rgba(56,189,248,0.12)_14px,rgba(255,255,255,0)_14px,rgba(255,255,255,0)_36px)] dark:bg-[repeating-linear-gradient(45deg,rgba(71,85,105,0.35)_0px,rgba(71,85,105,0.35)_14px,rgba(30,41,59,0)_14px,rgba(30,41,59,0)_36px)]",
+                    // Opening Soon gradient backdrop
+                    isOpeningSoon && "border border-blue-200/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_48%,rgba(56,189,248,0.05)_80%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_52%,rgba(71,85,105,0.20)_84%,rgba(71,85,105,0.14)_100%)]",
                     // Branch-specific sizing/rounding and scroll behavior
                     isMobile
                         ? "w-full max-h-[86dvh] overflow-y-auto"
