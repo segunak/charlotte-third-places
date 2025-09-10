@@ -175,15 +175,9 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     // Only show photos button if photos exist
     const hasPhotos = !!(place?.photos && place.photos.length > 0);
     const shouldShowPhotosButton = hasPhotos;
-
-    // Badge rendering defaults (centralized for consistency and easy future updates)
-    // Use inline-flex to keep badges sized to their content + padding and prevent vertical stretching
     const BADGE_BASE_CLASS = 'inline-flex items-center justify-center rounded-full shadow-md';
     const DEFAULT_BADGE_PADDING = 'p-1.5';
-
-    // Centralized highlight badges. Ordering handled in resolver:
-    //  - Badges without badgePriority appear first (left), in definition order.
-    //  - Badges with smaller badgePriority numbers appear further right (higher emphasis).
+    // Badges array already ordered so that most important (lowest numeric priority) ends up at the far right.
     const badges = highlights.badges;
 
     const displayTitle = useMemo(() => {
@@ -210,7 +204,6 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             <div
                                 key={badge.key}
                                 className={`${badge.bgClass} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
-                                title={badge.title}
                                 aria-label={badge.ariaLabel}
                             >
                                 <span className="inline-flex items-center">

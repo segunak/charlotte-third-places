@@ -211,14 +211,14 @@ export const QuickFacts: FC<QuickFactsProps> = ({
         tdClassName?: string;
         hidden?: boolean;
     }> = [
-        {
-            key: 'address',
-            label: 'Address',
-            icon: attributeIcons.address,
-            value: <span className="text-muted-foreground">{address}</span>,
-            thClassName: `${TH_BASE_CLASS} w-44`,
-            tdClassName: TD_BASE_CLASS
-        },
+            {
+                key: 'address',
+                label: 'Address',
+                icon: attributeIcons.address,
+                value: <span className="text-muted-foreground">{address}</span>,
+                thClassName: `${TH_BASE_CLASS} w-44`,
+                tdClassName: TD_BASE_CLASS
+            },
             {
                 key: 'neighborhood',
                 label: 'Neighborhood',
@@ -265,18 +265,18 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 value: <YesNoBadge value={hasCinnamonRolls} variant="positive" />,
                 tdClassName: TD_BASE_CLASS
             },
-        {
-            key: 'tags',
-            label: 'Tags',
-            icon: attributeIcons.tags,
-            value: (
-                <div className="flex flex-wrap gap-1">
-                    {tags.map(tag => <InfoTag key={tag} text={tag} />)}
-                </div>
-            ),
-            tdClassName: TD_BASE_CLASS,
-            hidden: tags.length === 0
-        },
+            {
+                key: 'tags',
+                label: 'Tags',
+                icon: attributeIcons.tags,
+                value: (
+                    <div className="flex flex-wrap gap-1">
+                        {tags.map(tag => <InfoTag key={tag} text={tag} />)}
+                    </div>
+                ),
+                tdClassName: TD_BASE_CLASS,
+                hidden: tags.length === 0
+            },
             {
                 key: 'socials',
                 label: 'Socials',
