@@ -1,6 +1,7 @@
 import { Place } from "@/lib/types";
 import { FC, useMemo, memo } from "react";
 import { Icons } from "@/components/Icons";
+import { parseAirtableMarkdown } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
@@ -152,10 +153,18 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
     const isOpeningSoon = place?.operational === "Opening Soon";
 
-    const description = useMemo(() =>
-        place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
-        [place?.description]
-    );
+    const description = useMemo(() => {
+        const raw = place?.description?.trim();
+        if (!raw) {
+            return "A third place in the Charlotte, North Carolina area";
+        }
+        // Get plain text from Airtable markdown so that description previews don't show raw markdown syntax
+        try {
+            return parseAirtableMarkdown(raw, { plain: true }).plainText || "";
+        } catch {
+            return raw;
+        }
+    }, [place?.description]);
 
     const handleCardClick = () => {
         showPlaceModal(place);

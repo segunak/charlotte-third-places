@@ -152,27 +152,42 @@ export interface ParsedMarkdown {
  * @param markdown - The Airtable markdown text to parse
  * @returns Structured markdown that can be rendered with full control
  */
-export function parseAirtableMarkdown(markdown: string): ParsedMarkdown {
+// Overloads: default structured output OR plain text only when { plain: true }
+export function parseAirtableMarkdown(markdown: string): ParsedMarkdown;
+export function parseAirtableMarkdown(markdown: string, options: { plain: true }): { plainText: string };
+export function parseAirtableMarkdown(markdown: string, options?: { plain?: boolean }): ParsedMarkdown | { plainText: string } {
+  const wantPlain = options?.plain === true;
+
   if (!markdown) {
-    return { nodes: [] };
+    return wantPlain ? { plainText: '' } : { nodes: [] };
   }
 
-  // Remove trailing newline that Airtable adds and trim
+  // Remove trailing newline that Airtable sometimes adds and trim
   const cleaned = markdown.replace(/\n$/, '').trim();
-
   if (!cleaned) {
-    return { nodes: [] };
+    return wantPlain ? { plainText: '' } : { nodes: [] };
   }
 
   // Split by paragraph breaks (double newlines or more)
   const paragraphTexts = cleaned.split(/\n\n+/);
 
-  const paragraphs: ParsedMarkdownNode[] = paragraphTexts
-    .filter(text => text.trim()) // Remove empty paragraphs
-    .map(text => ({
-      type: 'paragraph' as const,
-      children: parseInlineElements(text.trim())
-    }));
+  const paragraphs: ParsedMarkdownNode[] = [];
+  const plainParts: string[] = wantPlain ? [] : [];
+
+  for (const paragraph of paragraphTexts) {
+    const trimmed = paragraph.trim();
+    if (!trimmed) continue;
+    const children = parseInlineElements(trimmed);
+    if (!wantPlain) {
+      paragraphs.push({ type: 'paragraph', children });
+    } else {
+      plainParts.push(flattenInline(children));
+    }
+  }
+
+  if (wantPlain) {
+    return { plainText: normalizePlain(plainParts.join(' ')) };
+  }
 
   return { nodes: paragraphs };
 }
@@ -276,7 +291,23 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
       remaining = remaining.slice(1);
       continue;
     }    // Regular text - take until next special character or end
-    const nextSpecial = remaining.search(/[\[*~_\n]/);
+    // NOTE: We intentionally do NOT always treat a solitary underscore as a special character.
+    // Problem case: Social handles or identifiers like @bayt_almocha were being split at the underscore
+    // which later rendered (or appeared) as an escaped form (@bayt\_almocha) in some contexts.
+    // We only want to consider an underscore as a potential italic delimiter if there is a corresponding
+    // closing underscore later in the string (before a newline). This keeps `_italic_` working while
+    // leaving single underscores (or unmatched underscores inside words) untouched.
+    let nextSpecial = remaining.search(/[\[*~\n]/); // initial scan excluding underscore
+    const underscoreIndex = remaining.indexOf('_');
+    if (underscoreIndex !== -1) {
+      const closingUnderscore = remaining.indexOf('_', underscoreIndex + 1);
+      if (closingUnderscore !== -1) {
+        // A candidate italic pair exists; treat the first underscore as a special starter if earlier
+        if (nextSpecial === -1 || underscoreIndex < nextSpecial) {
+          nextSpecial = underscoreIndex;
+        }
+      }
+    }
     if (nextSpecial === -1) {
       // No more special characters, take the rest
       if (remaining) {
@@ -295,4 +326,56 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
   }
 
   return nodes;
+}
+
+// ---------------- Plain text helpers (kept separate to avoid altering core parse logic) ----------------
+
+function flattenInline(nodes: ParsedMarkdownNode[] | undefined): string {
+  if (!nodes || nodes.length === 0) return '';
+  const parts: string[] = [];
+  for (const n of nodes) {
+    switch (n.type) {
+      case 'text':
+        if (n.content) parts.push(n.content);
+        break;
+      case 'bold':
+      case 'italic':
+      case 'strikethrough':
+        if (n.children && n.children.length) {
+          parts.push(flattenInline(n.children));
+        } else if (n.content) {
+          parts.push(n.content);
+        }
+        break;
+      case 'link':
+        if (n.children && n.children.length) {
+          parts.push(flattenInline(n.children));
+        } else if (n.content) {
+          parts.push(n.content);
+        } else if (n.href) {
+          // Fallback: use hostname if valid URL, else ignore
+          try {
+            const url = new URL(n.href);
+            parts.push(url.hostname.replace(/^www\./i, ''));
+          } catch { /* ignore invalid URL */ }
+        }
+        break;
+      case 'linebreak':
+        parts.push(' ');
+        break;
+      case 'paragraph':
+        parts.push(flattenInline(n.children));
+        break;
+      default:
+        break;
+    }
+  }
+  return parts.join(' ');
+}
+
+function normalizePlain(text: string): string {
+  return text
+    .replace(/[\t\r\n]+/g, ' ')
+    .replace(/ +/g, ' ')
+    .trim();
 }
