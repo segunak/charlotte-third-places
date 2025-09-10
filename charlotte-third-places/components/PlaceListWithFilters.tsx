@@ -65,6 +65,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 <div className="sm:hidden" ref={quickFiltersRef}>
                     <MobileQuickFilters />
                 </div>
+
                 {/* Opening Soon Banner on Mobile and Desktop*/}
                 {openingSoonPlaces.length > 0 && (
                     <button
