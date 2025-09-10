@@ -5,6 +5,7 @@ import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { getPlaceHighlights } from "@/components/PlaceHighlights";
 
 const neighborhoodEmoji = "🏘️";
 
@@ -151,7 +152,8 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
-    const isOpeningSoon = place?.operational === "Opening Soon";
+    const highlights = getPlaceHighlights(place);
+    const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
     const description = useMemo(() => {
         const raw = place?.description?.trim();
@@ -179,108 +181,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const BADGE_BASE_CLASS = 'inline-flex items-center justify-center rounded-full shadow-md';
     const DEFAULT_BADGE_PADDING = 'p-1.5';
 
-    // Create badges array for flexible badge management
-    const badges = useMemo(() => {
-        const badgeList: Array<{
-            key: string;
-            icon: React.ReactNode;
-            bgColor: string;
-            priority: number;
-            // Optional per-badge padding override (e.g., 'p-1', 'px-2 py-1')
-            paddingClass?: string;
-            // Tooltip/title for the badge
-            title?: string;
-            // Optional inline label text displayed to the right of the icon
-            label?: string;
-        }> = [];
-
-        // We assign priorities incrementally so that visual order follows insertion order (left -> right),
-        // while the featured badge is always forced to the far right with a very high priority.
-        let nextPriority = 0;
-
-        if (place?.tags?.includes("Ethiopian")) {
-            badgeList.push({
-                key: 'ethiopian',
-                icon: <Icons.ethiopianFlag className="h-6 w-6" />,
-                bgColor: 'bg-amber-100',
-                title: 'Ethiopian Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.tags?.includes("Black Owned")) {
-            badgeList.push({
-                key: 'blackOwned',
-                icon: <Icons.panAfricanFlag className="h-6 w-6" />,
-                bgColor: 'bg-amber-100',
-                title: 'Black-owned Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.tags?.includes("Christian")) {
-            badgeList.push({
-                key: 'christian',
-                icon: <Icons.cross className="h-6 w-6 text-amber-900" />,
-                bgColor: 'bg-amber-100',
-                title: 'Christian Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
-            badgeList.push({
-                key: 'cinnamonRoll',
-                icon: <Icons.cinnamonRoll className="h-7 w-7" />,
-                // Custom padding to give the larger icon more breathing room within the circle
-                paddingClass: 'p-1',
-                bgColor: 'bg-amber-100',
-                title: 'Has Cinnamon Rolls',
-                priority: nextPriority++
-            });
-        }
-
-        // Add opening soon badge (clock) - has very high priority to be rightmost, but not as high as featured
-        if (isOpeningSoon) {
-            badgeList.push({
-                key: 'openingSoon',
-                icon: <Icons.clock className="h-4 w-4 text-white fill-white" />,
-                bgColor: 'bg-blue-500',
-                title: 'Opening Soon',
-                label: 'Opening Soon',
-                paddingClass: 'p-2',
-                priority: Number.MAX_SAFE_INTEGER - 1
-            });
-        }
-
-        // Add featured badge (star) - always has highest priority to be rightmost
-        if (place?.featured) {
-            badgeList.push({
-                key: 'featured',
-                icon: <Icons.star className="h-5 w-5 text-white fill-white" />,
-                bgColor: 'bg-amber-500',
-                title: 'Featured Place',
-                priority: Number.MAX_SAFE_INTEGER
-            });
-        }
-
-        // Sort by priority (highest priority = rightmost position)
-        return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured, place?.tags, isOpeningSoon]);
+    // Centralized highlight badges. Ordering handled in resolver:
+    //  - Badges without badgePriority appear first (left), in definition order.
+    //  - Badges with smaller badgePriority numbers appear further right (higher emphasis).
+    const badges = highlights.badges;
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
     }, [place?.name]);
 
-    // Add visual indicator for opening soon places
+    // Base class plus optional gradient from highlights
     const cardClassName = useMemo(() => {
         const baseClass = "mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative";
-        if (isOpeningSoon) {
-            // Opening Soon gradient
-            return `${baseClass} border border-blue-200/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_45%,rgba(56,189,248,0.05)_75%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_50%,rgba(71,85,105,0.20)_82%,rgba(71,85,105,0.14)_100%)]`;
-        }
-        return baseClass;
-    }, [isOpeningSoon]);
+        return highlights.gradients.card ? `${baseClass} ${highlights.gradients.card}` : baseClass;
+    }, [highlights.gradients.card]);
 
     return (
         <Card
@@ -292,18 +206,17 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         {displayTitle}
                     </CardTitle>
                     <div className="flex items-center space-x-2 flex-shrink-0 h-3">
-                        {badges.map((badge) => (
+                        {badges.map(badge => (
                             <div
                                 key={badge.key}
-                                className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
+                                className={`${badge.bgClass} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
                                 title={badge.title}
+                                aria-label={badge.ariaLabel}
                             >
                                 <span className="inline-flex items-center">
                                     {badge.icon}
                                     {badge.label && (
-                                        <span className="ml-1 text-xs font-semibold leading-none text-white whitespace-nowrap">
-                                            {badge.label}
-                                        </span>
+                                        <span className="ml-1 text-xs font-semibold leading-none text-white whitespace-nowrap">{badge.label}</span>
                                     )}
                                 </span>
                             </div>

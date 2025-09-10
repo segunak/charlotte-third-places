@@ -211,7 +211,13 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         if (isCSV) {
             const value = record[key];
             if (["Type", "Tags", "Parking"].includes(key)) {
-                return value?.split(',').map((item: string) => item.trim()) || [];
+                // Split comma-separated list, trim whitespace, drop empty tokens, and deduplicate while preserving order
+                if (!value) return [];
+                return value
+                    .split(',')
+                    .map((item: string) => item.trim())
+                    .filter((item: string) => item.length > 0)
+                    .filter((item: string, idx: number, arr: string[]) => arr.indexOf(item) === idx);
             }
             if (["Photos"].includes(key)) {
                 if (!value) return [];

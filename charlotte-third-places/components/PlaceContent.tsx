@@ -100,6 +100,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 parking={place.parking}
                 freeWiFi={place.freeWiFi}
                 hasCinnamonRolls={place.hasCinnamonRolls}
+                tags={place.tags}
                 instagram={instagram}
                 tiktok={tiktok}
                 twitter={twitter}
