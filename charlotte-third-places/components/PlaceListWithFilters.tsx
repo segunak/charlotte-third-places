@@ -4,7 +4,8 @@ import { Place } from "@/lib/types";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
-import React, { useEffect, useRef, useState, Suspense } from "react";
+import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
+import { useIsMobile } from "@/hooks/use-mobile";
 import dynamic from "next/dynamic";
 
 // Dynamically import DataTable for lazy loading
@@ -38,6 +39,18 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.3 });
+    const isMobile = useIsMobile();
+    const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
+
+    // displayedPlaces: the list actually rendered in the main table.
+    // On mobile we intentionally exclude "Opening Soon" so they surface only via the separate modal trigger.
+    // On desktop we include everything inline.
+    const displayedPlaces = useMemo(() => {
+        if (isMobile) {
+            return places.filter(p => p.operational !== 'Opening Soon');
+        }
+        return places;
+    }, [places, isMobile]);
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
@@ -60,13 +73,16 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 </p>
 
                 <div className="sm:hidden" ref={quickFiltersRef}>
-                    <MobileQuickFilters />
+                    {/* Pass only the Opening Soon subset; component no longer needs the full list. */}
+                    <MobileQuickFilters openingSoonPlaces={openingSoonPlaces} />
                 </div>
 
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
-                        <DataTable rowData={places} />
+                        {/* DataTable receives the already mobile-filtered array (displayedPlaces).
+                            This keeps DataTable focused on presentation + generic filtering/sorting logic only. */}
+                        <DataTable rowData={displayedPlaces} />
                     </Suspense>
                 </section>
 
