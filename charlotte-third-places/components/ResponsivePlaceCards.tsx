@@ -41,11 +41,21 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
 
         data = data.filter((place: any) => placeMatchesFilters(place, filters));
 
-        // Sorting: mimic DataTable's featured-first, then chosen sort
+        // Sorting: mimic DataTable's featured-first, then opening soon, then chosen sort
         const sorted = [...data].sort((a: any, b: any) => {
+            // First priority: Featured places come first
             if (a.featured !== b.featured) {
                 return b.featured ? 1 : -1; // featured first
             }
+            
+            // Second priority: Opening Soon places come after Featured but before regular places
+            const aIsOpeningSoon = a.operational === "Opening Soon";
+            const bIsOpeningSoon = b.operational === "Opening Soon";
+            if (aIsOpeningSoon !== bIsOpeningSoon) {
+                return bIsOpeningSoon ? 1 : -1; // opening soon places come before regular places
+            }
+            
+            // Third priority: Apply user's selected sorting
             const { field, direction } = sortOption;
             const valueA = a[field] || "";
             const valueB = b[field] || "";

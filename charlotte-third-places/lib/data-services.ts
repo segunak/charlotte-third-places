@@ -252,6 +252,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     return {
         recordId: isCSV ? rowIndex.toString() : record.id,
         name: getField("Place"),
+        operational: getField("Operational"),
         type: getField("Type"),
         size: getField("Size"),
         tags: getField("Tags"),

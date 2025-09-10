@@ -29,6 +29,7 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
+    const isOpeningSoon = place?.operational === "Opening Soon";
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -49,6 +50,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 className={cn(
                     // Base positioning and shared styles
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
+                    // Apply Opening Soon stripe styling similar to PlaceCard (kept subtle)
+                    isOpeningSoon && "border-2 border-blue-200 overflow-hidden bg-[repeating-linear-gradient(45deg,rgba(56,189,248,0.12)_0px,rgba(56,189,248,0.12)_14px,rgba(255,255,255,0)_14px,rgba(255,255,255,0)_36px)] dark:bg-[repeating-linear-gradient(45deg,rgba(71,85,105,0.35)_0px,rgba(71,85,105,0.35)_14px,rgba(30,41,59,0)_14px,rgba(30,41,59,0)_36px)]",
                     // Branch-specific sizing/rounding and scroll behavior
                     isMobile
                         ? "w-full max-h-[86dvh] overflow-y-auto"
@@ -62,15 +65,28 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                {/* Featured ribbon, corner banner */}
-                {place.featured && (
-                    <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
-                        <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
-                            <Icons.star className="h-4 w-4 mr-1" />
-                            <span>Featured</span>
-                        </div>
-                    </div>
-                )}
+                {(() => {
+                    // Determine which ribbon to show based on priority
+                    if (place.featured) {
+                        return (
+                            <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                                <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
+                                    <Icons.star className="h-4 w-4 mr-1" />
+                                    <span>Featured</span>
+                                </div>
+                            </div>
+                        );
+                    } else if (place.operational === "Opening Soon") {
+                        return (
+                            <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                                <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-blue-500 text-white text-xs font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
+                                    <span>Opening Soon</span>
+                                </div>
+                            </div>
+                        );
+                    }
+                    return null;
+                })()}
 
                 <DialogHeader className="mt-7 sm:mt-0 shrink-0">
                     <DialogTitle className="text-center">

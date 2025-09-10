@@ -2,6 +2,7 @@
 export type Place = {
     recordId: string;
     name: string;
+    operational: string;
     type: Array<string>;
     size: string;
     tags: Array<string>;
