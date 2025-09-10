@@ -2,6 +2,7 @@
 
 import React, { useState, useContext, useCallback, useRef } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
+import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
@@ -36,7 +37,8 @@ export function FilterDrawer({
   const setIsOpen = onOpenChange || setIsDrawerOpen;
 
   const { filters } = useContext(FilterContext);
-  const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
+  // Count only filters whose value diverges from 'all' (the sentinel meaning no constraint)
+  const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
   // Track open state for all selects
   const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
   const handleDropdownStateChange = useCallback((open: boolean) => {
@@ -106,23 +108,27 @@ export function FilterDrawer({
           )}
           <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
           <div className="space-y-4">
-            {Object.entries(filters).map(([field, config]) => (
-              <FilterSelect
-                key={field}
-                field={field as keyof typeof filters}
-                value={config.value}
-                label={config.label}
-                placeholder={config.placeholder}
-                predefinedOrder={config.predefinedOrder}
-                onDropdownOpenChange={(open: boolean) => {
-                  handleDropdownStateChange(open);
-                  setActivePopover(open ? getPopoverId(field) : null);
-                }}
-                onModalClose={focusDrawerTrigger}
-                isActivePopover={activePopover === getPopoverId(field)}
-                anyPopoverOpen={!!activePopover}
-              />
-            ))}
+            {FILTER_DEFS.map(def => {
+              const config = filters[def.key as FilterKey];
+              const field = def.key;
+              return (
+                <FilterSelect
+                  key={field}
+                  field={field as FilterKey}
+                  value={config.value}
+                  label={config.label}
+                  placeholder={config.placeholder}
+                  predefinedOrder={config.predefinedOrder}
+                  onDropdownOpenChange={(open: boolean) => {
+                    handleDropdownStateChange(open);
+                    setActivePopover(open ? getPopoverId(field) : null);
+                  }}
+                  onModalClose={focusDrawerTrigger}
+                  isActivePopover={activePopover === getPopoverId(field)}
+                  anyPopoverOpen={!!activePopover}
+                />
+              );
+            })}
           </div>
         </div>
         <DrawerFooter style={{ position: 'relative' }}>

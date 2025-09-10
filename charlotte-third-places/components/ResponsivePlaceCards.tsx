@@ -3,7 +3,7 @@
 import { Place } from "@/lib/types";
 import { FilterContext } from "@/contexts/FilterContext";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from '@/lib/utils';
+import { placeMatchesFilters } from '@/lib/filters';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";

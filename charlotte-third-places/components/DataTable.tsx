@@ -4,7 +4,7 @@ import { PlaceCard } from "@/components/PlaceCard";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
-import { placeMatchesFilters } from "@/lib/utils";
+import { placeMatchesFilters } from "@/lib/filters";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useState, useMemo, useEffect } from "react";

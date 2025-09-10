@@ -4,7 +4,7 @@ import { Place } from '@/lib/types';
 import { Button } from './ui/button';
 import { Icons, getPlaceTypeIcon } from "@/components/Icons";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from "@/lib/utils";
+import { placeMatchesFilters } from "@/lib/filters";
 import { FilterContext } from '@/contexts/FilterContext';
 import { useModalContext } from "@/contexts/ModalContext";
 import { useState, useEffect, useContext, useMemo, useCallback } from 'react';

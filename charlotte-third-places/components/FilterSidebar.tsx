@@ -2,6 +2,7 @@
 
 import React, { useState, useContext, useCallback } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
+import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
 import { FilterQuickSearch, FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 
 interface FilterSidebarProps {
@@ -11,7 +12,8 @@ interface FilterSidebarProps {
 
 export function FilterSidebar({ className = "", showSort = false }: FilterSidebarProps) {
     const { filters } = useContext(FilterContext);
-    const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== 'all').length;
+    // Active filter count excludes fields still at the 'all' sentinel (meaning no constraint)
+    const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
     // Track open state for all selects
     const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
 
@@ -37,17 +39,20 @@ export function FilterSidebar({ className = "", showSort = false }: FilterSideba
                 )}
             </h2>
             <FilterQuickSearch />
-            {Object.entries(filters).map(([field, config]) => (
-                <FilterSelect
-                    key={field}
-                    field={field as keyof typeof filters}
-                    value={config.value}
-                    label={config.label}
-                    placeholder={config.placeholder}
-                    predefinedOrder={config.predefinedOrder}
-                    onDropdownOpenChange={handleDropdownStateChange}
-                />
-            ))}
+            {FILTER_DEFS.map(def => {
+                const config = filters[def.key as FilterKey];
+                return (
+                    <FilterSelect
+                        key={def.key}
+                        field={def.key as FilterKey}
+                        value={config.value}
+                        label={config.label}
+                        placeholder={config.placeholder}
+                        predefinedOrder={config.predefinedOrder}
+                        onDropdownOpenChange={handleDropdownStateChange}
+                    />
+                );
+            })}
 
             <FilterResetButton variant="default" disabled={anyDropdownOpen} />
         </div>
