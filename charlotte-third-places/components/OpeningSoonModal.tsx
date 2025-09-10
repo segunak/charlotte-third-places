@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { Place } from "@/lib/types";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
@@ -39,6 +38,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
       <Sheet open={open} onOpenChange={onOpenChange}>
         <SheetContent
           side="bottom"
+          crossCloseIconSize="h-7 w-7"
           className="h-[85vh] overflow-hidden flex flex-col"
           // Prevent underlying sheet from closing due to outside interactions triggered by nested PlaceModal
           onInteractOutside={(e) => e.preventDefault()}
