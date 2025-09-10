@@ -5,11 +5,8 @@ import { FilterContext } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { Button } from "@/components/ui/button";
-import { OpeningSoonTrigger } from "@/components/OpeningSoonTrigger";
-import { Place } from "@/lib/types";
 
-// Expects only the subset of Opening Soon places it needs to drive the trigger.
-export function MobileQuickFilters({ openingSoonPlaces }: { openingSoonPlaces: Place[] }) {
+export function MobileQuickFilters() {
     const { filters } = useContext(FilterContext);
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
 
@@ -60,12 +57,6 @@ export function MobileQuickFilters({ openingSoonPlaces }: { openingSoonPlaces: P
                         More Filters
                     </Button>
                 </div>
-                {/* Opening Soon trigger (mobile only) */}
-                {openingSoonPlaces.length > 0 && (
-                    <div className="pt-2 border-t mt-2">
-                        <OpeningSoonTrigger places={openingSoonPlaces} />
-                    </div>
-                )}
             </div>
 
             {/* FilterDrawer component for more filters */}
