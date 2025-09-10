@@ -43,10 +43,10 @@ export interface PlaceHighlightResult {
     badges: HighlightBadge[];
 }
 
-const OPENING_SOON_GRADIENT_CARD = "border border-blue-200/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_45%,rgba(56,189,248,0.05)_75%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_50%,rgba(71,85,105,0.20)_82%,rgba(71,85,105,0.14)_100%)]";
-const OPENING_SOON_GRADIENT_MODAL = "border border-blue-200/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_48%,rgba(56,189,248,0.05)_80%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_52%,rgba(71,85,105,0.20)_84%,rgba(71,85,105,0.14)_100%)]";
-const FEATURED_GRADIENT_CARD = "border border-amber-300/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_45%,rgba(251,191,36,0.04)_75%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_50%,rgba(146,95,22,0.18)_82%,rgba(146,95,22,0.12)_100%)]";
-const FEATURED_GRADIENT_MODAL = "border border-amber-300/50 overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_48%,rgba(251,191,36,0.04)_80%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_52%,rgba(146,95,22,0.18)_84%,rgba(146,95,22,0.12)_100%)]";
+const OPENING_SOON_GRADIENT_CARD = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_45%,rgba(56,189,248,0.05)_75%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_50%,rgba(71,85,105,0.20)_82%,rgba(71,85,105,0.14)_100%)]";
+const OPENING_SOON_GRADIENT_MODAL = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(56,189,248,0.14)_0%,rgba(56,189,248,0.09)_48%,rgba(56,189,248,0.05)_80%,rgba(56,189,248,0.02)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(71,85,105,0.40)_0%,rgba(71,85,105,0.28)_52%,rgba(71,85,105,0.20)_84%,rgba(71,85,105,0.14)_100%)]";
+const FEATURED_GRADIENT_CARD = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_45%,rgba(251,191,36,0.04)_75%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_50%,rgba(146,95,22,0.18)_82%,rgba(146,95,22,0.12)_100%)]";
+const FEATURED_GRADIENT_MODAL = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_48%,rgba(251,191,36,0.04)_80%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_52%,rgba(146,95,22,0.18)_84%,rgba(146,95,22,0.12)_100%)]";
 
 const DEFINITIONS: HighlightDefinition[] = [
     // Priority / ordering model

@@ -148,7 +148,9 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
                         ref={contentRef}
                         className={clsx(
                             "leading-relaxed",
-                            shouldTruncate && "line-clamp-5"
+                            shouldTruncate && "line-clamp-5",
+                            // Apply mask fade only when truncated and overflowing. This ensures the fade color always matches the underlying surface.
+                            shouldTruncate && isOverflowing && "fade-bottom"
                         )}
                     >
                         {parsed.nodes.length > 0 ? (
@@ -191,9 +193,7 @@ export const RichTextSection: FC<RichTextSectionProps> = ({
                         )}
                     </div>
                 </div>
-                {shouldTruncate && isOverflowing && (
-                    <div className="pointer-events-none absolute inset-x-0 bottom-0 h-6 bg-gradient-to-t from-background" />
-                )}
+                {/* Mask-based fade replaces previous absolutely-positioned gradient element. */}
             </div>
             {isMobile && priority !== 'high' && isOverflowing && (
                 <div
