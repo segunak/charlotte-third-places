@@ -37,17 +37,17 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerContent
-          className="max-h-[86dvh] overflow-hidden flex flex-col"
+          className="overflow-hidden flex flex-col pb-safe"
           onInteractOutside={(e) => e.preventDefault()}
           onOpenAutoFocus={(e) => e.preventDefault()}
           onFocusOutside={(e) => e.preventDefault()}
           onPointerDownOutside={(e) => e.preventDefault()}
         >
-          <DrawerHeader className="pb-2">
-            <DrawerTitle></DrawerTitle>
+          <DrawerHeader className="mt-2 mb-2">
+            <DrawerTitle>Opening Soon</DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
-          <DrawerFooter className="pt-0">
+          <DrawerFooter>
             <Button className="w-full font-bold" onClick={() => onOpenChange(false)}>Close</Button>
           </DrawerFooter>
         </DrawerContent>
