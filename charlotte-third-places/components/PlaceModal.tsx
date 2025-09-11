@@ -2,6 +2,7 @@
 
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
+import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { Button } from "@/components/ui/button";
 import { PlaceContent } from "@/components/PlaceContent";
 import {
@@ -29,6 +30,7 @@ interface PlaceModalProps {
 export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
+    const highlights = place ? getPlaceHighlights(place) : null;
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -47,27 +49,30 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 ref={isMobile ? contentRef : undefined}
                 crossCloseIconSize="h-7 w-7"
                 className={cn(
-                    // Base positioning and shared styles
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
-                    // Branch-specific sizing/rounding and scroll behavior
+                    // Apply centralized gradient (featured/openingSoon) if provided
+                    highlights?.gradients.modal,
                     isMobile
                         ? "w-full max-h-[86dvh] overflow-y-auto"
                         : "w-auto max-w-3xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                 )}
                 onOpenAutoFocus={(e) => {
-                    // Ensure the modal content starts at the top
                     if (contentRef.current) {
                         contentRef.current.scrollTop = 0;
                     }
                     e.preventDefault();
                 }}
             >
-                {/* Featured ribbon, corner banner */}
-                {place.featured && (
+                {highlights?.ribbon && (
                     <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
-                        <div className="absolute top-4 -left-16 w-[200px] flex justify-center items-center bg-amber-500 text-white text-sm font-semibold py-2.5 transform rotate-[-45deg] shadow-lg">
-                            <Icons.star className="h-4 w-4 mr-1" />
-                            <span>Featured</span>
+                        <div className={cn(
+                            "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
+                            highlights.ribbon.bgClass,
+                            // Preserve original font sizing: featured was text-sm, opening soon text-xs
+                            highlights.ribbon.label === 'Opening Soon' ? 'text-xs' : 'text-sm'
+                        )}>
+                            {highlights.ribbon.icon}
+                            <span>{highlights.ribbon.label}</span>
                         </div>
                     </div>
                 )}

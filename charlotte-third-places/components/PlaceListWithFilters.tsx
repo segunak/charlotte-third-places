@@ -4,7 +4,8 @@ import { Place } from "@/lib/types";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
-import React, { useEffect, useRef, useState, Suspense } from "react";
+import { OpeningSoonModal } from "@/components/OpeningSoonModal";
+import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import DataTable for lazy loading
@@ -38,6 +39,8 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
     const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.3 });
+    const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
+    const [openingSoonOpen, setOpeningSoonOpen] = useState(false);
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
@@ -63,9 +66,53 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     <MobileQuickFilters />
                 </div>
 
+                {/* Opening Soon Banner on Mobile and Desktop*/}
+                {openingSoonPlaces.length > 0 && (
+                    <button
+                        type="button"
+                        onClick={() => setOpeningSoonOpen(true)}
+                        aria-haspopup="dialog"
+                        aria-expanded={openingSoonOpen}
+                        aria-label={`View ${openingSoonPlaces.length} places opening soon`}
+                        className="group w-full text-left mb-2 relative overflow-hidden rounded-lg border border-border bg-card/80 backdrop-blur-sm px-4 py-3 shadow-sm hover:shadow-md transition focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                    >
+                        <div className="flex items-start gap-3">
+                            <div className="mt-0.5 text-primary">
+                                {/* clock icon */}
+                                <span className="inline-block">
+                                    {/* Reuse Icons.clock */}
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+                                </span>
+                            </div>
+                            <div className="flex-1 min-w-0">
+                                <p className="font-semibold text-sm text-foreground mb-0.5">
+                                    {openingSoonPlaces.length} {openingSoonPlaces.length === 1 ? 'place' : 'places'} opening soon
+                                </p>
+                                <p className="text-xs text-muted-foreground">
+                                    Preview spots before they open. Tap for details.
+                                </p>
+                            </div>
+                            <div className="self-center text-primary transition-transform group-hover:translate-x-0.5">
+                                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+                            </div>
+                        </div>
+                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
+                    </button>
+                )}
+                {openingSoonPlaces.length > 0 && (
+                    <OpeningSoonModal
+                        open={openingSoonOpen}
+                        onOpenChange={setOpeningSoonOpen}
+                        places={openingSoonPlaces}
+                    />
+                )}
+
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
+                        {/* DataTable receives the already mobile-filtered array (displayedPlaces).
+                            This keeps DataTable focused on presentation + generic filtering/sorting logic only. */}
                         <DataTable rowData={places} />
                     </Suspense>
                 </section>

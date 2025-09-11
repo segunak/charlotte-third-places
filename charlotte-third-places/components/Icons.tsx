@@ -27,7 +27,8 @@ import {
   FaPalette,
   FaUsers,
   FaLaptop,
-  FaList
+  FaList,
+  FaTags
 } from "react-icons/fa6";
 
 import {
@@ -66,7 +67,8 @@ import {
   FaSearch,
   FaStar,
   FaCrown,
-  FaCommentAlt
+  FaCommentAlt,
+  FaClock
 } from "react-icons/fa";
 import {
   IoHome,
@@ -199,6 +201,7 @@ export const Icons = {
   homeOutline: IoHomeOutline,
   google: FcGoogle,
   list: FaList,
+  tags: FaTags,
   apple: (props: IconProps) => (
     <FaApple {...props} className={`text-apple ${props.className ?? ""}`} />
   ),
@@ -209,6 +212,7 @@ export const Icons = {
   star: FaStar,
   crown: FaCrown,
   queen: FaChessQueen,
+  clock: FaClock,
   pin: FaLocationPin,
   circle: FaCircle,
   globe: HiOutlineGlobeAlt,

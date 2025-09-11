@@ -2,6 +2,7 @@
 export type Place = {
     recordId: string;
     name: string;
+    operational: string;
     type: Array<string>;
     size: string;
     tags: Array<string>;
@@ -52,73 +53,4 @@ export interface SortOption {
 export const DEFAULT_SORT_OPTION = {
     field: SortField.DateAdded,
     direction: SortDirection.Descending,
-};
-
-export interface FilterOption {
-    value: string;
-    placeholder: string;
-    label: string;
-    predefinedOrder: string[];
-}
-
-export interface FilterConfig {
-    name: FilterOption;
-    type: FilterOption;
-    size: FilterOption;
-    neighborhood: FilterOption;
-    purchaseRequired: FilterOption;
-    parking: FilterOption;
-    freeWiFi: FilterOption;
-    hasCinnamonRolls: FilterOption;
-}
-
-export const DEFAULT_FILTER_CONFIG: FilterConfig = {
-    name: {
-        value: "all",
-        placeholder: "Name",
-        label: "Name",
-        predefinedOrder: [],
-    },
-    type: {
-        value: "all",
-        placeholder: "Type",
-        label: "Type",
-        predefinedOrder: [],
-    },
-    size: {
-        value: "all",
-        placeholder: "Size",
-        label: "Size",
-        predefinedOrder: ["Small", "Medium", "Large"],
-    },
-    neighborhood: {
-        value: "all",
-        placeholder: "Neighborhood",
-        label: "Neighborhood",
-        predefinedOrder: [],
-    },
-    purchaseRequired: {
-        value: "all",
-        placeholder: "Purchase Required",
-        label: "Purchase Required",
-        predefinedOrder: ["Yes", "No"],
-    },
-    parking: {
-        value: "all",
-        placeholder: "Parking",
-        label: "Parking",
-        predefinedOrder: [],
-    },
-    freeWiFi: {
-        value: "all",
-        placeholder: "Free Wi-Fi",
-        label: "Free Wi-Fi",
-        predefinedOrder: ["Yes", "No"],
-    },
-    hasCinnamonRolls: {
-        value: "all",
-        placeholder: "Has Cinnamon Rolls",
-        label: "Has Cinnamon Rolls",
-        predefinedOrder: ["Yes", "No", "Sometimes"],
-    },
 };

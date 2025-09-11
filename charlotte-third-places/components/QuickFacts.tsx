@@ -1,5 +1,4 @@
-import React from "react";
-import { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
 import { Badge } from "@/components/ui/badge";
@@ -13,6 +12,7 @@ interface QuickFactsProps {
     parking: string[];
     freeWiFi: string;
     hasCinnamonRolls: string;
+    tags?: string[];
     instagram?: string;
     tiktok?: string;
     twitter?: string;
@@ -38,6 +38,7 @@ const attributeIcons = {
     purchase: <Icons.dollarSign className="h-4 w-4 text-green-600" />,
     cinnamonRolls: <Icons.cinnamonRoll className="h-4 w-4 text-amber-800" />,
     socials: <Icons.boldLink className="h-4 w-4 text-blue-600" />,
+    tags: <Icons.tags className="h-4 w-4 text-purple-600" />,
 };
 
 const YesNoBadge: FC<{
@@ -83,7 +84,7 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
         variant="secondary"
         disableHover
         className={cn(
-            "rounded-full px-3 py-1 text-sm font-medium gap-1 max-w-full",
+            "rounded-full px-2.5 py-1 text-sm font-medium gap-1 max-w-full",
             className
         )}
     >
@@ -183,6 +184,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
     parking,
     freeWiFi,
     hasCinnamonRolls,
+    tags = [],
     instagram,
     tiktok,
     twitter,
@@ -195,97 +197,111 @@ export const QuickFacts: FC<QuickFactsProps> = ({
     const socialsRow = customSocials || createSocialsRow(
         { instagram, tiktok, twitter, youtube, facebook, linkedIn }
     );
+
+    const sizeIcon = typeof attributeIcons.size === 'function' ? attributeIcons.size(size) : attributeIcons.size;
+    const TH_BASE_CLASS = "py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle";
+    const TD_BASE_CLASS = "py-1.5 align-middle";
+
+    const rows: Array<{
+        key: string;
+        label: string;
+        icon: React.ReactNode;
+        value: React.ReactNode;
+        thClassName?: string;
+        tdClassName?: string;
+        hidden?: boolean;
+    }> = [
+            {
+                key: 'address',
+                label: 'Address',
+                icon: attributeIcons.address,
+                value: <span className="text-muted-foreground">{address}</span>,
+                thClassName: `${TH_BASE_CLASS} w-44`,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'neighborhood',
+                label: 'Neighborhood',
+                icon: attributeIcons.neighborhood,
+                value: <InfoTag text={neighborhood} />,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'size',
+                label: 'Size',
+                icon: sizeIcon,
+                value: <InfoTag text={size} />,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'parking',
+                label: 'Parking',
+                icon: attributeIcons.parking,
+                value: (
+                    <div className="flex flex-wrap gap-1">
+                        {parking.length > 0 ? parking.map(p => <InfoTag key={p} text={p} />) : <span className="text-muted-foreground">None</span>}
+                    </div>
+                ),
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'wifi',
+                label: 'Wi-Fi',
+                icon: attributeIcons.wifi,
+                value: <YesNoBadge value={freeWiFi} variant="positive" />,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'purchaseRequired',
+                label: 'Purchase Required',
+                icon: attributeIcons.purchase,
+                value: <YesNoBadge value={purchaseRequired} />,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'cinnamonRolls',
+                label: 'Cinnamon Rolls',
+                icon: attributeIcons.cinnamonRolls,
+                value: <YesNoBadge value={hasCinnamonRolls} variant="positive" />,
+                tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'tags',
+                label: 'Tags',
+                icon: attributeIcons.tags,
+                value: (
+                    <div className="flex flex-wrap gap-1">
+                        {tags.map(tag => <InfoTag key={tag} text={tag} />)}
+                    </div>
+                ),
+                tdClassName: TD_BASE_CLASS,
+                hidden: tags.length === 0
+            },
+            {
+                key: 'socials',
+                label: 'Socials',
+                icon: attributeIcons.socials,
+                value: socialsRow as React.ReactNode,
+                tdClassName: TD_BASE_CLASS,
+                hidden: !socialsRow
+            }
+        ];
+
     return (
         <div className="overflow-x-auto">
             <table className="min-w-full table-fixed border-separate border-spacing-y-0.5">
                 <tbody className="divide-y divide-muted/60">
-                    {/* Address */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle w-44">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.address}
-                                Address
-                            </span>
-                        </th>
-                        <td className="py-1.5 text-muted-foreground align-middle">{address}</td>
-                    </tr>
-                    {/* Neighborhood */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.neighborhood}
-                                Neighborhood
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle"><InfoTag text={neighborhood} /></td>
-                    </tr>
-                    {/* Size */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {typeof attributeIcons.size === 'function' ? attributeIcons.size(size) : attributeIcons.size}
-                                Size
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle"><InfoTag text={size} /></td>
-                    </tr>
-                    {/* Parking */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.parking}
-                                Parking
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle">
-                            <div className="flex flex-wrap gap-1">
-                                {parking.length > 0 ? parking.map((p) => (
-                                    <InfoTag key={p} text={p} />
-                                )) : <span className="text-muted-foreground">None</span>}
-                            </div>
-                        </td>
-                    </tr>
-                    {/* Free Wi-Fi */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.wifi}
-                                Wi-Fi
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle"><YesNoBadge value={freeWiFi} variant="positive" /></td>
-                    </tr>
-                    {/* Purchase Required */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.purchase}
-                                Purchase Required
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle"><YesNoBadge value={purchaseRequired} /></td>
-                    </tr>
-                    {/* Cinnamon Rolls */}
-                    <tr>
-                        <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
-                            <span className="inline-flex items-center gap-2">
-                                {attributeIcons.cinnamonRolls}
-                                Cinnamon Rolls
-                            </span>
-                        </th>
-                        <td className="py-1.5 align-middle"><YesNoBadge value={hasCinnamonRolls} variant="positive" /></td>
-                    </tr>
-                    {socialsRow && (
-                        <tr>
-                            <th scope="row" className="py-1.5 pr-3 pl-0 text-left font-semibold whitespace-nowrap align-middle">
+                    {rows.filter(r => !r.hidden).map(r => (
+                        <tr key={r.key}>
+                            <th scope="row" className={r.thClassName || TH_BASE_CLASS}>
                                 <span className="inline-flex items-center gap-2">
-                                    {attributeIcons.socials}
-                                    Socials
+                                    {r.icon}
+                                    {r.label}
                                 </span>
                             </th>
-                            <td className="py-1.5 align-middle">{socialsRow}</td>
+                            <td className={r.tdClassName || TD_BASE_CLASS}>{r.value}</td>
                         </tr>
-                    )}
+                    ))}
                 </tbody>
             </table>
         </div>

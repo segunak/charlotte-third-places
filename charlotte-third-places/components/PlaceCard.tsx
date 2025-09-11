@@ -1,9 +1,11 @@
 import { Place } from "@/lib/types";
 import { FC, useMemo, memo } from "react";
 import { Icons } from "@/components/Icons";
+import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
+import { getPlaceHighlights } from "@/components/PlaceHighlights";
 
 const neighborhoodEmoji = "🏘️";
 
@@ -150,11 +152,21 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos } = useModalContext();
+    const highlights = getPlaceHighlights(place);
+    const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
-    const description = useMemo(() =>
-        place?.description?.trim() || "A third place in the Charlotte, North Carolina area",
-        [place?.description]
-    );
+    const description = useMemo(() => {
+        const raw = place?.description?.trim();
+        if (!raw) {
+            return "A third place in the Charlotte, North Carolina area";
+        }
+        // Get plain text from Airtable markdown so that description previews don't show raw markdown syntax
+        try {
+            return parseAirtableMarkdown(raw, { plain: true }).plainText || "";
+        } catch {
+            return raw;
+        }
+    }, [place?.description]);
 
     const handleCardClick = () => {
         showPlaceModal(place);
@@ -163,107 +175,43 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     // Only show photos button if photos exist
     const hasPhotos = !!(place?.photos && place.photos.length > 0);
     const shouldShowPhotosButton = hasPhotos;
-
-    // Badge rendering defaults (centralized for consistency and easy future updates)
-    // Use inline-flex to keep badges sized to their content + padding and prevent vertical stretching
     const BADGE_BASE_CLASS = 'inline-flex items-center justify-center rounded-full shadow-md';
     const DEFAULT_BADGE_PADDING = 'p-1.5';
-
-    // Create badges array for flexible badge management
-    const badges = useMemo(() => {
-        const badgeList: Array<{
-            key: string;
-            icon: React.ReactNode;
-            bgColor: string;
-            priority: number;
-            // Optional per-badge padding override (e.g., 'p-1', 'px-2 py-1')
-            paddingClass?: string;
-            // Tooltip/title for the badge
-            title?: string;
-        }> = [];
-
-        // We assign priorities incrementally so that visual order follows insertion order (left -> right),
-        // while the featured badge is always forced to the far right with a very high priority.
-        let nextPriority = 0;
-
-        if (place?.tags?.includes("Ethiopian")) {
-            badgeList.push({
-                key: 'ethiopian',
-                icon: <Icons.ethiopianFlag className="h-6 w-6" />,
-                bgColor: 'bg-amber-100',
-                title: 'Ethiopian Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.tags?.includes("Black Owned")) {
-            badgeList.push({
-                key: 'blackOwned',
-                icon: <Icons.panAfricanFlag className="h-6 w-6" />,
-                bgColor: 'bg-amber-100',
-                title: 'Black-owned Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.tags?.includes("Christian")) {
-            badgeList.push({
-                key: 'christian',
-                icon: <Icons.cross className="h-6 w-6 text-amber-900" />,
-                bgColor: 'bg-amber-100',
-                title: 'Christian Business',
-                priority: nextPriority++,
-            });
-        }
-
-        if (place?.hasCinnamonRolls === 'Yes' || place?.hasCinnamonRolls === 'TRUE' || place?.hasCinnamonRolls === 'true') {
-            badgeList.push({
-                key: 'cinnamonRoll',
-                icon: <Icons.cinnamonRoll className="h-7 w-7" />,
-                // Custom padding to give the larger icon more breathing room within the circle
-                paddingClass: 'p-1',
-                bgColor: 'bg-amber-100',
-                title: 'Has Cinnamon Rolls',
-                priority: nextPriority++
-            });
-        }
-
-        // Add featured badge (star) - always has highest priority to be rightmost
-        if (place?.featured) {
-            badgeList.push({
-                key: 'featured',
-                icon: <Icons.star className="h-5 w-5 text-white fill-white" />,
-                bgColor: 'bg-amber-500',
-                title: 'Featured Place',
-                priority: Number.MAX_SAFE_INTEGER
-            });
-        }
-
-        // Sort by priority (highest priority = rightmost position)
-        return badgeList.sort((a, b) => a.priority - b.priority);
-    }, [place?.hasCinnamonRolls, place?.featured, place?.tags]); // Always use full name - CSS flex layout will handle truncation
+    // Badges array already ordered so that most important (lowest numeric priority) ends up at the far right.
+    const badges = highlights.badges;
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
     }, [place?.name]);
 
+    // Base class plus optional gradient from highlights
+    const cardClassName = useMemo(() => {
+        const baseClass = "mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative";
+        return highlights.gradients.card ? `${baseClass} ${highlights.gradients.card}` : baseClass;
+    }, [highlights.gradients.card]);
+
     return (
         <Card
             onClick={handleCardClick}
-            className="mb-4 cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-200 rounded-lg w-full card-font relative">
+            className={cardClassName}>
             <CardHeader className="pb-2">
                 <div className="flex items-start justify-between gap-3">
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
                         {displayTitle}
                     </CardTitle>
                     <div className="flex items-center space-x-2 flex-shrink-0 h-3">
-                        {badges.map((badge) => (
+                        {badges.map(badge => (
                             <div
                                 key={badge.key}
-                                className={`${badge.bgColor} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
-                                title={badge.title}
+                                className={`${badge.bgClass} ${BADGE_BASE_CLASS} ${badge.paddingClass ?? DEFAULT_BADGE_PADDING}`}
+                                aria-label={badge.ariaLabel}
                             >
-                                {badge.icon}
+                                <span className="inline-flex items-center">
+                                    {badge.icon}
+                                    {badge.label && (
+                                        <span className="ml-1 text-xs font-semibold leading-none text-white whitespace-nowrap">{badge.label}</span>
+                                    )}
+                                </span>
                             </div>
                         ))}
                     </div>

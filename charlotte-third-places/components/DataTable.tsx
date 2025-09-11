@@ -4,7 +4,7 @@ import { PlaceCard } from "@/components/PlaceCard";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
-import { placeMatchesFilters } from "@/lib/utils";
+import { placeMatchesFilters } from "@/lib/filters";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
 import { FilterContext } from "@/contexts/FilterContext";
 import { useContext, useCallback, useState, useMemo, useEffect } from "react";
@@ -36,7 +36,7 @@ export function DataTable({ rowData }: DataTableProps) {
                     return b.featured ? 1 : -1; // featured places (true) come before non-featured (false)
                 }
 
-                // Second priority: Apply user's selected sorting
+                // Apply user's selected sorting next
                 const { field, direction } = sortOption;
 
                 // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)

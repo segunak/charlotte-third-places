@@ -19,6 +19,14 @@
     background-color: var(--highlight-bg);
   }
 
+  /* Utility: vertical text fade-out at bottom without imposing a background color.
+     Uses mask so underlying surface color (including dynamic featured modal backgrounds) shows through.
+     Black mask area remains visible; transparent area fades text out. */
+  .fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+            mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  }
+
   .z-60 {
     z-index: 60;
   }

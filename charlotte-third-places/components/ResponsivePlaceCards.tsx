@@ -3,7 +3,7 @@
 import { Place } from "@/lib/types";
 import { FilterContext } from "@/contexts/FilterContext";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from '@/lib/utils';
+import { placeMatchesFilters } from '@/lib/filters';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
@@ -41,11 +41,13 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
 
         data = data.filter((place: any) => placeMatchesFilters(place, filters));
 
-        // Sorting: mimic DataTable's featured-first, then chosen sort
+        // Sorting: featured-first, then user-selected sort
         const sorted = [...data].sort((a: any, b: any) => {
+            // First priority: Featured places come first
             if (a.featured !== b.featured) {
                 return b.featured ? 1 : -1; // featured first
             }
+            // Apply user's selected sorting next
             const { field, direction } = sortOption;
             const valueA = a[field] || "";
             const valueB = b[field] || "";

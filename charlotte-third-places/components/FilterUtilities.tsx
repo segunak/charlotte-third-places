@@ -19,7 +19,8 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import type { FilterConfig } from "@/lib/types";
+import { MOBILE_PICKER_FIELDS } from "@/lib/filters";
+import type { FilterKey } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
 
@@ -49,7 +50,7 @@ export function FilterQuickSearch() {
 }
 
 export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: {
-    field: keyof FilterConfig;
+    field: FilterKey;
     value: string;
     label: string;
     placeholder: string;
@@ -71,7 +72,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
 
     useEffect(() => {
         if (onDropdownOpenChange) {
-            if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+            if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
                 onDropdownOpenChange(pickerOpen);
             } else {
                 onDropdownOpenChange(selectOpen);
@@ -108,7 +109,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         ? undefined
         : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
 
-    if (isMobile && (field === "name" || field === "type" || field === "neighborhood")) {
+    if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
         return (
             <div style={pointerEventsStyle}>
                 {/* This is a custom implementation of the same styling seen in select.tsx's SelectTrigger which is the shadcn/ui select built on top of Radix UI. For certain fields, I want my own custom modal with a search bar, built in SearchablePickerModal.tsx, but want it to appear the same as a select. For consistency, the styling here makes it look like any other select but clicking it opens the SearchablePickerModal.*/}
@@ -127,7 +128,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     aria-haspopup="dialog"
                     aria-expanded={pickerOpen}
                 >
-                    <span className="truncate flex-1 text-left">{value === "all" ? placeholder : value}</span>
+                    <span className="truncate flex-1 text-left">{value === 'all' ? placeholder : value}</span>
                     <CaretSortIcon className="h-4 w-4 opacity-50 ml-2" />
                 </button>
                 {pickerOpen && (
@@ -164,13 +165,13 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
                             : "hover:bg-primary/90 hover:text-accent-foreground",
-                        value === "all"
+                        (value === 'all')
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
                     )}
                 >
                     <SelectValue placeholder={placeholder}>
-                        {value === "all" ? placeholder : value}
+                        {value === 'all' ? placeholder : value}
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent position="popper" side="top">
@@ -200,7 +201,8 @@ export function FilterResetButton({ disabled, variant }: { disabled?: boolean; v
         setFilters((prevFilters) => {
             const resetFilters = { ...prevFilters };
             Object.keys(resetFilters).forEach((key) => {
-                resetFilters[key as keyof typeof prevFilters].value = "all";
+                // Uniform reset: set every single-select filter back to 'all' (sentinel meaning no constraint)
+                (resetFilters as any)[key].value = "all";
             });
             return resetFilters;
         });
