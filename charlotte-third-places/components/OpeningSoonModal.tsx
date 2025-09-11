@@ -24,7 +24,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
   if (places.length === 0) return null;
 
   const content = (
-    <div className="space-y-4 max-h-[65vh] overflow-y-auto px-1 sm:px-2" role="list">
+    <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
       {places.map(p => (
         <div key={p.recordId} role="listitem" className="first:mt-1">
           <PlaceCard place={p} />
