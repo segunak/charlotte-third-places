@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono, IBM_Plex_Sans } from 'next/font/google'
 // Inter is the primary sitewide sans-serif font (self-hosted via next/font).
 export const fontSans = Inter({
     subsets: ['latin'],
+    weight: ['400', '500', '600', '700'],
     variable: '--font-sans',
     display: 'swap',
 })
@@ -17,7 +18,7 @@ export const fontMono = JetBrains_Mono({
 // Dedicated card font (IBM Plex Sans) used only on place cards for subtle typographic contrast.
 export const fontCard = IBM_Plex_Sans({
     subsets: ['latin'],
-    weight: ['400','700'],
+    weight: ['400', '700'],
     variable: '--font-card',
     display: 'swap',
 })
