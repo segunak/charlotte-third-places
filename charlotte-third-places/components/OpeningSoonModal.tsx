@@ -1,7 +1,6 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { useRef } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -20,7 +19,6 @@ interface OpeningSoonModalProps {
  */
 export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModalProps) {
   const isMobile = useIsMobile();
-  const titleRef = useRef<HTMLHeadingElement>(null);
 
   // Guard: never render empty state modal – parent should hide trigger if none.
   if (places.length === 0) return null;
@@ -41,15 +39,13 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         <SheetContent
           side="bottom"
           crossCloseIconSize="h-7 w-7"
-          className="w-full max-h-[86dvh] overflow-y-auto flex flex-col"
+          className="w-full max-h-[85dvh] overflow-y-auto flex flex-col"
           onInteractOutside={(e) => e.preventDefault()}
-          onOpenAutoFocus={(e) => {
-            e.preventDefault();
-            requestAnimationFrame(() => titleRef.current?.focus());
-          }}
+          // Let default focus handling occur (usually close button) without forcing focus on title.
+          onOpenAutoFocus={(e) => { e.preventDefault(); }}
         >
           <SheetHeader className="shrink-0">
-            <SheetTitle ref={titleRef} tabIndex={-1}>Opening Soon</SheetTitle>
+            <SheetTitle>Opening Soon</SheetTitle>
           </SheetHeader>
           <div className="mt-4 flex-1">{content}</div>
           <div className="p-4 pt-2 shrink-0">
