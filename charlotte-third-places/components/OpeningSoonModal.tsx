@@ -41,7 +41,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         <SheetContent
           side="bottom"
           crossCloseIconSize="h-7 w-7"
-          className="h-[85vh] overflow-hidden flex flex-col"
+          className="w-full max-h-[86dvh] overflow-y-auto flex flex-col"
           onInteractOutside={(e) => e.preventDefault()}
           onOpenAutoFocus={(e) => {
             e.preventDefault();
@@ -63,7 +63,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className="max-w-2xl max-h-[80vh] overflow-hidden flex flex-col"
+        className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-2xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
         onInteractOutside={(e) => e.preventDefault()}
       >
         <DialogHeader className="shrink-0">
