@@ -31,7 +31,17 @@ export function parseAirtableMarkdown(markdown: string, options?: { plain?: bool
 function parseInlineElements(text: string): ParsedMarkdownNode[] {
   const nodes: ParsedMarkdownNode[] = [];
   let remaining = text;
+  // Airtable (and standard Markdown) allow escaping special characters with a leading backslash.
+  // Example: "@bayt\_almocha" should surface as "@bayt_almocha" with no italic parsing attempt.
+  // We treat a backslash followed by an escapable punctuation character as a literal of that character.
+  const escapable = new Set(['\\', '[', ']', '(', ')', '*', '_', '~']);
   while (remaining.length > 0) {
+    // Backslash escape handling
+    if (remaining[0] === '\\' && remaining.length > 1 && escapable.has(remaining[1])) {
+      nodes.push({ type: 'text', content: remaining[1] });
+      remaining = remaining.slice(2);
+      continue;
+    }
     const linkMatch = remaining.match(/^[[]([^\]]*)\]\(([^)]*)\)/);
     if (linkMatch) {
       const linkTextNodes = parseInlineElements(linkMatch[1]);
