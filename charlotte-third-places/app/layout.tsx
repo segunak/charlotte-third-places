@@ -1,6 +1,6 @@
 import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
-import { fontSans } from "@/lib/fonts"
+import { fontSans, fontCard } from "@/lib/fonts"
 import type { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/react"
 import { SiteHeader } from "@/components/SiteHeader"
@@ -78,18 +78,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="format-detection" content="telephone=no, address=no, email=no" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       </head>
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
         className={cn(
           "min-h-dvh bg-background antialiased",
-          fontSans.variable
+          fontSans.variable,
+          fontCard.variable
         )}
       >
         <ThemeProvider>

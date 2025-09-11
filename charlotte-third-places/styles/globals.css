@@ -31,12 +31,13 @@
     z-index: 60;
   }
 
-  .card-font {
-    @apply [font-family:var(--card-font-family)];
-  }
 
   .text-apple {
     color: var(--apple-icon-color);
+  }
+
+  .card-font {
+    font-family: var(--font-card);
   }
 
   /* Safe area utilities */
@@ -106,7 +107,6 @@
 
     /* Light teal highlight in light mode */
     --highlight-bg: hsl(190, 70%, 85%);
-    --card-font-family: "IBM Plex Sans", sans-serif;
   }
 
   /* 
