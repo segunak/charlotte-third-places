@@ -2,7 +2,7 @@
 
 import { Place } from "@/lib/types";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
+import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerFooter } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { PlaceCard } from "@/components/PlaceCard";
@@ -35,31 +35,30 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
 
   if (isMobile) {
     return (
-      <Sheet open={open} onOpenChange={onOpenChange}>
-        <SheetContent
-          side="bottom"
-          crossCloseIconSize="h-7 w-7"
-          className="w-full max-h-[85dvh] overflow-y-auto flex flex-col"
+      <Drawer open={open} onOpenChange={onOpenChange}>
+        <DrawerContent
+          className="max-h-[86dvh] overflow-hidden flex flex-col"
           onInteractOutside={(e) => e.preventDefault()}
-          // Let default focus handling occur (usually close button) without forcing focus on title.
-          onOpenAutoFocus={(e) => { e.preventDefault(); }}
+          onOpenAutoFocus={(e) => e.preventDefault()}
+          onFocusOutside={(e) => e.preventDefault()}
+          onPointerDownOutside={(e) => e.preventDefault()}
         >
-          <SheetHeader className="shrink-0">
-            <SheetTitle>Opening Soon</SheetTitle>
-          </SheetHeader>
-          <div className="mt-4 flex-1">{content}</div>
-          <div className="p-4 pt-2 shrink-0">
+          <DrawerHeader className="pb-2">
+            <DrawerTitle></DrawerTitle>
+          </DrawerHeader>
+          <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
+          <DrawerFooter className="pt-0">
             <Button className="w-full font-bold" onClick={() => onOpenChange(false)}>Close</Button>
-          </div>
-        </SheetContent>
-      </Sheet>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     );
   }
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-2xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
+        className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-3xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
         onInteractOutside={(e) => e.preventDefault()}
       >
         <DialogHeader className="shrink-0">
