@@ -1,6 +1,7 @@
 "use client";
 
 import { Place } from "@/lib/types";
+import { useMemo } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerFooter } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
@@ -19,15 +20,18 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
   // Guard: never render empty state modal – parent should hide trigger if none.
   if (places.length === 0) return null;
 
-  const content = (
-    <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
-      {places.map(p => (
-        <div key={p.recordId} role="listitem" className="first:mt-1">
-          <PlaceCard place={p} />
-        </div>
-      ))}
-    </div>
-  );
+  const content = useMemo(() => {
+    if (!open) return null; // Avoid building list while closed
+    return (
+      <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
+        {places.map(p => (
+          <div key={p.recordId} role="listitem" className="first:mt-1">
+            <PlaceCard place={p} />
+          </div>
+        ))}
+      </div>
+    );
+  }, [open, places]);
 
   if (isMobile) {
     return (
