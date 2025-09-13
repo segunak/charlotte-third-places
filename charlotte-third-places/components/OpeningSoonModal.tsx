@@ -13,10 +13,6 @@ interface OpeningSoonModalProps {
   places: Place[];
 }
 
-/**
- * Presents a lightweight list of Opening Soon places separate from the main browse list.
- * Uses a Sheet on mobile (bottom drawer) and a Dialog on larger screens for familiarity.
- */
 export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModalProps) {
   const isMobile = useIsMobile();
 
@@ -44,7 +40,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
           onPointerDownOutside={(e) => e.preventDefault()}
         >
           <DrawerHeader className="mt-2 mb-2">
-            <DrawerTitle>Opening Soon</DrawerTitle>
+            <DrawerTitle></DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
           <DrawerFooter>
@@ -62,7 +58,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         onInteractOutside={(e) => e.preventDefault()}
       >
         <DialogHeader className="shrink-0">
-          <DialogTitle>Opening Soon</DialogTitle>
+          <DialogTitle></DialogTitle>
         </DialogHeader>
         <div className="flex-1">{content}</div>
         <div className="pt-2 pb-4 px-4 shrink-0">
