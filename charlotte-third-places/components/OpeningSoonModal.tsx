@@ -1,6 +1,7 @@
 "use client";
 
 import { Place } from "@/lib/types";
+import { useMemo } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerFooter } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
@@ -13,25 +14,25 @@ interface OpeningSoonModalProps {
   places: Place[];
 }
 
-/**
- * Presents a lightweight list of Opening Soon places separate from the main browse list.
- * Uses a Sheet on mobile (bottom drawer) and a Dialog on larger screens for familiarity.
- */
 export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModalProps) {
   const isMobile = useIsMobile();
+  
+  // Build list content only when open and there are places; memoized to avoid re-mapping on unrelated renders.
+  const content = useMemo(() => {
+    if (!open || places.length === 0) return null;
+    return (
+      <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
+        {places.map(p => (
+          <div key={p.recordId} role="listitem" className="first:mt-1">
+            <PlaceCard place={p} />
+          </div>
+        ))}
+      </div>
+    );
+  }, [open, places]);
 
-  // Guard: never render empty state modal – parent should hide trigger if none.
+  // After hooks: if no places, render nothing.
   if (places.length === 0) return null;
-
-  const content = (
-    <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
-      {places.map(p => (
-        <div key={p.recordId} role="listitem" className="first:mt-1">
-          <PlaceCard place={p} />
-        </div>
-      ))}
-    </div>
-  );
 
   if (isMobile) {
     return (
@@ -44,7 +45,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
           onPointerDownOutside={(e) => e.preventDefault()}
         >
           <DrawerHeader className="mt-2 mb-2">
-            <DrawerTitle>Opening Soon</DrawerTitle>
+            <DrawerTitle></DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
           <DrawerFooter>
@@ -62,7 +63,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         onInteractOutside={(e) => e.preventDefault()}
       >
         <DialogHeader className="shrink-0">
-          <DialogTitle>Opening Soon</DialogTitle>
+          <DialogTitle></DialogTitle>
         </DialogHeader>
         <div className="flex-1">{content}</div>
         <div className="pt-2 pb-4 px-4 shrink-0">
