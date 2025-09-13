@@ -16,12 +16,10 @@ interface OpeningSoonModalProps {
 
 export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModalProps) {
   const isMobile = useIsMobile();
-
-  // Guard: never render empty state modal – parent should hide trigger if none.
-  if (places.length === 0) return null;
-
+  
+  // Build list content only when open and there are places; memoized to avoid re-mapping on unrelated renders.
   const content = useMemo(() => {
-    if (!open) return null; // Avoid building list while closed
+    if (!open || places.length === 0) return null;
     return (
       <div className="space-y-4 overflow-y-auto px-1 sm:px-2" role="list">
         {places.map(p => (
@@ -32,6 +30,9 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
       </div>
     );
   }, [open, places]);
+
+  // After hooks: if no places, render nothing.
+  if (places.length === 0) return null;
 
   if (isMobile) {
     return (
