@@ -67,13 +67,38 @@ try {
     Write-Output "Final HTTP Status: $($statusResponse.StatusCode) $($statusResponse.StatusDescription)"
     Write-Output "Final Azure Function Output:`n$($status | ConvertTo-Json -Depth 10)"
 
-    if ($status.customStatus -eq "Succeeded") {
-        Write-Output "Operation succeeded with final customStatus: $($status.customStatus). Exiting with success."
-        exit 0  # Exit with success code
+    $runtimeStatus = $status.runtimeStatus
+    $output = $status.output
+
+    if ($runtimeStatus -in ('Failed','Canceled','Terminated')) {
+        Write-Output "Runtime status indicates failure state: $runtimeStatus. Exiting with failure."
+        exit 1
     }
-    else {
-        Write-Output "Operation failed with final customStatus: $($status.customStatus). Exiting with failure."
-        exit 1  # Exit with failure code
+    elseif ($runtimeStatus -eq 'Completed') {
+        if ($null -ne $output) {
+            $success = $false
+            try { 
+                if ($output.PSObject.Properties.Name -contains 'success') { 
+                    $success = [bool]$output.success 
+                } 
+            } 
+            catch { 
+                $success = $false 
+            }
+            if ($success) {
+                Write-Output "Completed with success=true. Exiting 0."
+                exit 0
+            } else {
+                Write-Output "Completed but success flag missing or false. Exiting 1."
+                exit 1
+            }
+        } else {
+            Write-Output "Warning: Completed with no output payload. Exiting with failure for safety."
+            exit 1
+        }
+    } else {
+        Write-Output "Orchestration did not reach a terminal successful state (status=$runtimeStatus). Exiting with failure."
+        exit 1
     }
 }
 catch {

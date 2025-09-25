@@ -44,14 +44,25 @@ try {
         Write-Output "No response body received."
     }
 
-    # Check if the status code is 200 OK
-    if ($response.StatusCode -eq 200) {
-        Write-Output "Operation succeeded."
-        exit 0
+    # Treat any non-2xx as failure
+    if ($response.StatusCode -lt 200 -or $response.StatusCode -ge 300) {
+        Write-Output "Operation failed with HTTP status code $($response.StatusCode)."
+        exit 1
+    }
+
+    # If JSON body has a success flag, honor it
+    if ($responseBody -and ($responseBody.PSObject.Properties.Name -contains 'success')) {
+        if ($responseBody.success -eq $true) {
+            Write-Output "Operation succeeded (HTTP + success flag)."
+            exit 0
+        } else {
+            Write-Output "Operation reported success=false in body. Exiting with failure despite HTTP $($response.StatusCode)."
+            exit 1
+        }
     }
     else {
-        Write-Output "Operation failed with status code $($response.StatusCode)."
-        exit 1
+        Write-Output "No explicit success flag found; treating 2xx transport as success."
+        exit 0
     }
 }
 catch {
