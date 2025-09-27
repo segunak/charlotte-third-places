@@ -3,7 +3,7 @@
 ## Project Overview
 
 * **Name:** Charlotte Third Places
-* **Tech Stack:** Next.js 14, shadcn/ui, Tailwind CSS, TypeScript, React 18, Vercel for hosting, Azure for Serverless Functions
+* **Tech Stack:** Next.js 15, shadcn/ui, Tailwind CSS, TypeScript, React 18, Vercel for hosting, Azure for Serverless Functions
 * **Purpose:** A curated website featuring "third places" (locations other than home or work) in and around Charlotte, North Carolina. Helps users find spots suitable for studying, reading, writing, remote work, relaxing, or socializing.
 * **Data Source:** Airtable for production data, local CSV files for development
 * **Architecture:** Server-side rendered Next.js app with App Router, component-based UI with shadcn/ui, responsive design
