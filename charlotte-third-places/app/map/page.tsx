@@ -48,7 +48,7 @@ export default async function MapPage() {
                     </div>
                 </section>
 
-                <div className="mt-8 mr-6">
+                <div className="mt-8 mb-8 mr-6">
                     <FilterSidebar showSort={false} className="max-w-[265px] border border-border sticky top-16 px-4 space-y-4" />
                 </div>
             </div>
