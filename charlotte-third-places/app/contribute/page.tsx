@@ -2,9 +2,8 @@ import * as React from "react";
 import type { Metadata } from 'next';
 import { Icons } from "@/components/Icons";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 export const metadata: Metadata = {
     title: 'Contribute',
