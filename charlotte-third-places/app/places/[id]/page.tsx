@@ -21,7 +21,10 @@ export async function generateStaticParams() {
     }));
 }
 
-export default async function PlacePage({ params: { id } }: { params: { id: string } }) {
+export default async function PlacePage({ params }: { params: Promise<{ id: string }> }) {
+    // In NextJS 15, params is now a Promise and must be awaited
+    const { id } = await params;
+    
     // Fetch the specific place by ID
     const place = await getPlaceById(id);
 
