@@ -12,9 +12,16 @@ import { FixedSizeList as List } from "react-window";
 
 interface DataTableProps {
     rowData: Array<object>;
+    /**
+     * Callback invoked with the count of rows remaining after quick text search, filter criteria,
+     * and sorting have been applied. This allows parent components to reflect a live "visible items" count
+     * without duplicating filtering logic here. The callback is only called after the initial loading
+     * placeholder has resolved to avoid transient zero states.
+     */
+    onFilteredCountChange?: (count: number) => void;
 }
 
-export function DataTable({ rowData }: DataTableProps) {
+export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
     const [isLoading, setIsLoading] = useState(true);
     const { filters, quickFilterText, sortOption } = useContext(FilterContext);
 
@@ -88,8 +95,16 @@ export function DataTable({ rowData }: DataTableProps) {
             const group = filteredData.slice(i, i + columnsPerRow);
             grouped.push({ group });
         }
+        // Notify parent about the current filtered count (after all transformations)
+        const count = filteredData.length;
+        // Defer notification until after initial loading state clears; parent handles own state guard.
+        Promise.resolve().then(() => {
+            if (!isLoading) {
+                onFilteredCountChange?.(count);
+            }
+        });
         return grouped;
-    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow]);
+    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow, onFilteredCountChange, isLoading]);
 
     // Virtualization sizes must include spacing because children margins don't affect
     // react-window's absolute positioning. Reserve a small, explicit gap per row.
