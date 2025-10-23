@@ -42,7 +42,7 @@ export default function ContributePage() {
                 Want to help make <span className="font-semibold text-primary">Charlotte Third Places</span> better? Suggest new places, enhance listings, or reach out directly. Your input helps the community!
             </p>
 
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 max-w-2xl mx-auto">
                 {forms.map((form) => (
                     <div key={form.title} className="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-lg bg-card border shadow-md hover:shadow-lg transition-shadow">
                         <div className="flex-shrink-0 flex items-center justify-center mb-2 sm:mb-0">
