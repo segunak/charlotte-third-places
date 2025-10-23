@@ -157,7 +157,7 @@ const createSocialsRow = (
                     bgClass
                 );
 
-                const iconElement = React.cloneElement(icon as React.ReactElement, {
+                const iconElement = React.cloneElement(icon as React.ReactElement<{ className?: string }>, {
                     className: `${iconSize} text-white`
                 });
 
