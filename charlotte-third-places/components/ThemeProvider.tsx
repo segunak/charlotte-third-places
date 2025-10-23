@@ -1,6 +1,4 @@
-import * as React from "react"
-import { ThemeProvider as NextThemesProvider } from "next-themes"
-import { type ThemeProviderProps } from "next-themes/dist/types"
+import { ThemeProvider as NextThemesProvider, type ThemeProviderProps } from "next-themes"
 
 // We explicitly disable system theme detection so users CANNOT land in dark mode
 // unless they have previously toggled it via the UI (which stores the value).

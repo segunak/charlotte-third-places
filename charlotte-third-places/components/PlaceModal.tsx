@@ -54,7 +54,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     highlights?.gradients.modal,
                     isMobile
                         ? "w-full max-h-[86dvh] overflow-y-auto"
-                        : "w-auto max-w-3xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
+                        : "w-auto max-w-2xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                 )}
                 onOpenAutoFocus={(e) => {
                     if (contentRef.current) {
