@@ -48,8 +48,9 @@ const YesNoBadge: FC<{
 }> = ({ value, label, variant = "default" }) => {
     const normalizedValue = value.toLowerCase();
     const isYes = normalizedValue === "yes";
+    const isNo = normalizedValue === "no";
     const isUnsure = normalizedValue === "unsure";
-    const isNo = !isYes && !isUnsure;
+    const isOther = !isYes && !isNo && !isUnsure;
 
     let badgeVariant: "default" | "outline" = "default";
     let className = "gap-1 px-2 py-0.5 rounded-full font-medium";
@@ -58,6 +59,8 @@ const YesNoBadge: FC<{
         className += " bg-emerald-100 text-emerald-900 border-emerald-200";
     } else if (isUnsure) {
         className += " bg-gray-100 text-gray-900 border-gray-200";
+    } else if (isOther) {
+        className += " bg-blue-100 text-blue-900 border-blue-200";
     } else if (variant === "negative") {
         className += " bg-red-100 text-red-900 border-red-200";
     } else {
@@ -69,6 +72,7 @@ const YesNoBadge: FC<{
         <Badge variant={badgeVariant} className={cn(className)} disableHover>
             {isYes && <span className="text-emerald-600 font-bold text-sm">Yes</span>}
             {isUnsure && <span className="text-gray-600 font-bold text-sm">Unsure</span>}
+            {isOther && <span className="text-blue-700 font-bold text-sm">{value}</span>}
             {isNo && <span className="text-red-500 font-bold text-sm">No</span>}
             {label && <span className="ml-1">{label}</span>}
         </Badge>
