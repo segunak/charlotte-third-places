@@ -57,12 +57,12 @@ const YesNoBadge: FC<{
 
     if (isYes) {
         className += " bg-emerald-100 text-emerald-900 border-emerald-200";
+    } else if (isNo) {
+        className += " bg-red-100 text-red-900 border-red-200";
     } else if (isUnsure) {
         className += " bg-gray-100 text-gray-900 border-gray-200";
     } else if (isOther) {
         className += " bg-blue-100 text-blue-900 border-blue-200";
-    } else if (variant === "negative") {
-        className += " bg-red-100 text-red-900 border-red-200";
     } else {
         className += " bg-muted text-muted-foreground border-muted";
         badgeVariant = "outline";
