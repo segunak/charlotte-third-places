@@ -62,7 +62,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
                     {/* Desktop-only text */}
                     <span className="hidden sm:inline">
-                        Use the <span className="font-bold text-primary">sidebar on the right</span> to sort and filter.
+                        Use the <span className="font-bold text-primary">sidebar on the right</span> to filter.
                     </span>
                 </p>
 
