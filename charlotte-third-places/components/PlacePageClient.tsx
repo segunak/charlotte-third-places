@@ -199,220 +199,216 @@ export function PlacePageClient({ place }: { place: Place }) {
     }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);    // Determine if loop should be enabled - moved from hook to render time calculation
     const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
     return (
-        <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-6xl">
+        <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-3xl">
             <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6 flex items-center justify-center gap-3">
                 {place.name}
             </h1>
 
-            {/* Responsive Layout: Grid on large screens, Stacked on smaller */}
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
-
-                {/* Column 1: Photos Carousel (only if photos exist) */}
-                {hasPhotos && (
-                    <div className="w-full space-y-4">
-                        <div className="relative bg-muted rounded-lg overflow-hidden border border-gray-300 shadow-md">
-                            {/* Photo source disclaimer - match PhotosModal UX */}
-                            <div className="absolute top-2 right-2 z-10">
-                                {isMobile ? (
-                                    <>
-                                        <Button
-                                            variant="ghost"
-                                            size="sm"
-                                            className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
-                                            onClick={() => setShowInfoDrawer(true)}
-                                            aria-label="Photo Source Information"
-                                        >
-                                            <Icons.infoCircle className="h-4 w-4" />
-                                        </Button>
-                                        <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
-                                            <DrawerContent className="bg-black/95 text-white">
-                                                <DrawerHeader>
-                                                    <DrawerTitle>Photo Source Information</DrawerTitle>
-                                                    <DrawerDescription className="text-white/90">
-                                                        Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
-                                                    </DrawerDescription>
-                                                    <DrawerClose asChild>
-                                                        <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
-                                                    </DrawerClose>
-                                                </DrawerHeader>
-                                            </DrawerContent>
-                                        </Drawer>
-                                    </>
-                                ) : (
-                                    <TooltipProvider>
-                                        <Tooltip>
-                                            <TooltipTrigger asChild>
-                                                <Button
-                                                    variant="ghost"
-                                                    size="sm"
-                                                    className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
-                                                    aria-label="Photo Source Information"
-                                                >
-                                                    <Icons.infoCircle className="h-4 w-4" />
-                                                </Button>
-                                            </TooltipTrigger>
-                                            <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
-                                                Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                )}
-                            </div>
-                            <Carousel
-                                setApi={setApi}
-                                opts={{ loop: enableLoop, align: "center" }}
-                                className="w-full h-[300px] md:h-[500px]" // Increased height for better visibility
-                            >
-                                <CarouselContent className="h-full">
-                                    {visiblePhotos.map((photo, idx) => {
-                                        const origIdx = visibleToOriginalIdx[idx];
-                                        const isActive = activeIndices.has(idx);
-                                        const quality = isActive ? 80 : 40;
-                                        const width = isActive ? 1024 : 400;
-                                        let isPriority = false;
-                                        if (isActive) isPriority = true;
-                                        return (
-                                            <CarouselItem
-                                                key={`photo-${origIdx}`}
-                                                className="h-full bg-black/5 flex items-center justify-center"
-                                            >
-                                                <div className="relative w-full h-[300px] md:h-[500px] flex items-center justify-center">
-                                                    {isActive ? (
-                                                        <Image
-                                                            src={optimizeGooglePhotoUrl(photo, width)}
-                                                            alt={`${place?.name ?? ''} photo ${currentSlide + 1}`}
-                                                            fill
-                                                            quality={quality}
-                                                            priority={isPriority}
-                                                            sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 800px"
-                                                            placeholder="blur"
-                                                            blurDataURL={blurDataURL}
-                                                            className={cn(
-                                                                "object-contain transition-opacity duration-300 ease-in-out",
-                                                            )}
-                                                            style={{
-                                                                objectFit: 'contain',
-                                                                objectPosition: 'center',
-                                                            }}
-                                                            onLoad={() => {
-                                                                setLoadedIndices(prev => new Set(prev).add(origIdx));
-                                                            }}
-                                                            onError={() => handleImageError(origIdx, photo)}
-                                                            unoptimized={photo.includes('googleusercontent.com')}
-                                                            referrerPolicy="no-referrer"
-                                                        />
-                                                    ) : (
-                                                        <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
-                                                            <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 17l6-6 4 4 8-8" /></svg>
-                                                        </div>
-                                                    )}
-                                                </div>
-                                            </CarouselItem>
-                                        );
-                                    })}
-                                </CarouselContent>
-                                {visibleSlideCount > 1 && (
-                                    <>
-                                        <CarouselPrevious
-                                            variant="ghost"
-                                            className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
-                                            aria-label="Previous photo"
-                                        />
-                                        <CarouselNext
-                                            variant="ghost"
-                                            className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
-                                            aria-label="Next photo"
-                                        />
-                                    </>
-                                )}
-                            </Carousel>
-
-                            {/* Show message when no photos are visible */}
-                            {!hasVisiblePhotos && hasPhotos && (
-                                <div className="absolute inset-0 flex items-center justify-center text-white text-center p-4 z-30">
-                                    <div className="bg-black/80 p-6 rounded-lg max-w-sm shadow-lg">
-                                        <Icons.alertCircle className="h-12 w-12 mx-auto mb-4 text-yellow-400" />
-                                        <h3 className="text-lg font-semibold mb-2">No Photos Available</h3>
-                                        <p className="text-sm text-white/80">We couldn't load the photos for this place at the moment.</p>
-                                    </div>
-                                </div>
-                            )}
-                        </div>
-
-                        {/* Thumbnails (only if more than 1 visible photo) */}
-                        {visibleSlideCount > 1 && (
-                            <div className="bg-card border border-gray-300 shadow-sm rounded-lg p-2">
-                                <div className="flex justify-between items-center mb-1 px-1">
-                                    <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
+            {/* Photo Gallery on Top */}
+            {hasPhotos && (
+                <div className="w-full space-y-4">
+                    <div className="relative bg-muted rounded-lg overflow-hidden border border-gray-300 shadow-md">
+                        {/* Photo source disclaimer - match PhotosModal UX */}
+                        <div className="absolute top-2 right-2 z-10">
+                            {isMobile ? (
+                                <>
                                     <Button
                                         variant="ghost"
                                         size="sm"
-                                        className="text-muted-foreground hover:text-foreground py-0.5 h-auto text-xs"
-                                        onClick={() => setShowThumbnails(prev => !prev)}
+                                        className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
+                                        onClick={() => setShowInfoDrawer(true)}
+                                        aria-label="Photo Source Information"
                                     >
-                                        {showThumbnails ? 'Hide' : 'Show'} Thumbnails
+                                        <Icons.infoCircle className="h-4 w-4" />
                                     </Button>
-                                </div>
-                                {showThumbnails && (
-                                    <ScrollArea className="h-20 w-full whitespace-nowrap rounded-md">
-                                        <div className="flex gap-2 py-1">
-                                            {visiblePhotos.map((photo, idx) => {
-                                                const origIdx = visibleToOriginalIdx[idx];
-                                                const thumbVisibleNumber = idx + 1;
-                                                return (
-                                                    <button
-                                                        key={`thumb-${origIdx}`}
+                                    <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
+                                        <DrawerContent className="bg-black/95 text-white">
+                                            <DrawerHeader>
+                                                <DrawerTitle>Photo Source Information</DrawerTitle>
+                                                <DrawerDescription className="text-white/90">
+                                                    Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                                </DrawerDescription>
+                                                <DrawerClose asChild>
+                                                    <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
+                                                </DrawerClose>
+                                            </DrawerHeader>
+                                        </DrawerContent>
+                                    </Drawer>
+                                </>
+                            ) : (
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Button
+                                                variant="ghost"
+                                                size="sm"
+                                                className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
+                                                aria-label="Photo Source Information"
+                                            >
+                                                <Icons.infoCircle className="h-4 w-4" />
+                                            </Button>
+                                        </TooltipTrigger>
+                                        <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
+                                            Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
+                            )}
+                        </div>
+                        <Carousel
+                            setApi={setApi}
+                            opts={{ loop: enableLoop, align: "center" }}
+                            className="w-full h-[300px] md:h-[400px]"
+                        >
+                            <CarouselContent className="h-full">
+                                {visiblePhotos.map((photo, idx) => {
+                                    const origIdx = visibleToOriginalIdx[idx];
+                                    const isActive = activeIndices.has(idx);
+                                    const quality = isActive ? 80 : 40;
+                                    const width = isActive ? 1024 : 400;
+                                    let isPriority = false;
+                                    if (isActive) isPriority = true;
+                                    return (
+                                        <CarouselItem
+                                            key={`photo-${origIdx}`}
+                                            className="h-full bg-black/5 flex items-center justify-center"
+                                        >
+                                            <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center">
+                                                {isActive ? (
+                                                    <Image
+                                                        src={optimizeGooglePhotoUrl(photo, width)}
+                                                        alt={`${place?.name ?? ''} photo ${currentSlide + 1}`}
+                                                        fill
+                                                        quality={quality}
+                                                        priority={isPriority}
+                                                        sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 800px"
+                                                        placeholder="blur"
+                                                        blurDataURL={blurDataURL}
                                                         className={cn(
-                                                            "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
-                                                            idx === currentSlide
-                                                                ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
-                                                                : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
+                                                            "object-contain transition-opacity duration-300 ease-in-out",
                                                         )}
-                                                        onClick={() => api?.scrollTo(idx)}
-                                                        aria-label={`Go to photo ${thumbVisibleNumber}`}
-                                                    >
-                                                        <Image
-                                                            src={optimizeGooglePhotoUrl(photo, 100)} // Smaller size for thumbs
-                                                            alt={`Thumbnail ${thumbVisibleNumber}`}
-                                                            fill
-                                                            sizes="64px"
-                                                            className="object-cover"
-                                                            placeholder="blur"
-                                                            blurDataURL={blurDataURL}
-                                                            referrerPolicy="no-referrer"
-                                                            unoptimized={photo.includes('googleusercontent.com')}
-                                                            onError={() => handleImageError(origIdx, photo)}
-                                                        />
-                                                    </button>
-                                                );
-                                            })}
-                                        </div>
-                                        <ScrollBar orientation="horizontal" />
-                                    </ScrollArea>
-                                )}
+                                                        style={{
+                                                            objectFit: 'contain',
+                                                            objectPosition: 'center',
+                                                        }}
+                                                        onLoad={() => {
+                                                            setLoadedIndices(prev => new Set(prev).add(origIdx));
+                                                        }}
+                                                        onError={() => handleImageError(origIdx, photo)}
+                                                        unoptimized={photo.includes('googleusercontent.com')}
+                                                        referrerPolicy="no-referrer"
+                                                    />
+                                                ) : (
+                                                    <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
+                                                        <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 17l6-6 4 4 8-8" /></svg>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </CarouselItem>
+                                    );
+                                })}
+                            </CarouselContent>
+                            {visibleSlideCount > 1 && (
+                                <>
+                                    <CarouselPrevious
+                                        variant="ghost"
+                                        className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
+                                        aria-label="Previous photo"
+                                    />
+                                    <CarouselNext
+                                        variant="ghost"
+                                        className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
+                                        aria-label="Next photo"
+                                    />
+                                </>
+                            )}
+                        </Carousel>
+
+                        {/* Show message when no photos are visible */}
+                        {!hasVisiblePhotos && hasPhotos && (
+                            <div className="absolute inset-0 flex items-center justify-center text-white text-center p-4 z-30">
+                                <div className="bg-black/80 p-6 rounded-lg max-w-sm shadow-lg">
+                                    <Icons.alertCircle className="h-12 w-12 mx-auto mb-4 text-yellow-400" />
+                                    <h3 className="text-lg font-semibold mb-2">No Photos Available</h3>
+                                    <p className="text-sm text-white/80">We couldn't load the photos for this place at the moment.</p>
+                                </div>
                             </div>
                         )}
                     </div>
-                )}
-                <div className={cn(!hasPhotos && "lg:col-span-2")}>
-                    <Card className="border border-gray-300 shadow-sm h-full relative">
-                        {place.featured && (
-                            <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5">
-                                <Icons.star className="h-5 w-5" />
-                                Featured Third Place
-                                <Icons.star className="h-5 w-5" />
+
+                    {/* Thumbnails (only if more than 1 visible photo) */}
+                    {visibleSlideCount > 1 && (
+                        <div className="bg-card border border-gray-300 shadow-sm rounded-lg p-2">
+                            <div className="flex justify-between items-center mb-1 px-1">
+                                <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
+                                <Button
+                                    variant="ghost"
+                                    size="sm"
+                                    className="text-muted-foreground hover:text-foreground py-0.5 h-auto text-xs"
+                                    onClick={() => setShowThumbnails(prev => !prev)}
+                                >
+                                    {showThumbnails ? 'Hide' : 'Show'} Thumbnails
+                                </Button>
                             </div>
-                        )}
-                        <CardContent className={place.featured ? "pt-4" : "pt-6"}>
-                            <PlaceContent
-                                place={place}
-                                layout="page"
-                                showPhotosButton={false}
-                            />
-                        </CardContent>
-                    </Card>
+                            {showThumbnails && (
+                                <ScrollArea className="h-20 w-full whitespace-nowrap rounded-md">
+                                    <div className="flex gap-2 py-1">
+                                        {visiblePhotos.map((photo, idx) => {
+                                            const origIdx = visibleToOriginalIdx[idx];
+                                            const thumbVisibleNumber = idx + 1;
+                                            return (
+                                                <button
+                                                    key={`thumb-${origIdx}`}
+                                                    className={cn(
+                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
+                                                        idx === currentSlide
+                                                            ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
+                                                            : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
+                                                    )}
+                                                    onClick={() => api?.scrollTo(idx)}
+                                                    aria-label={`Go to photo ${thumbVisibleNumber}`}
+                                                >
+                                                    <Image
+                                                        src={optimizeGooglePhotoUrl(photo, 100)} // Smaller size for thumbs
+                                                        alt={`Thumbnail ${thumbVisibleNumber}`}
+                                                        fill
+                                                        sizes="64px"
+                                                        className="object-cover"
+                                                        placeholder="blur"
+                                                        blurDataURL={blurDataURL}
+                                                        referrerPolicy="no-referrer"
+                                                        unoptimized={photo.includes('googleusercontent.com')}
+                                                        onError={() => handleImageError(origIdx, photo)}
+                                                    />
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
+                                    <ScrollBar orientation="horizontal" />
+                                </ScrollArea>
+                            )}
+                        </div>
+                    )}
                 </div>
-            </div>
+            )}
+
+            {/* Place Content Below */}
+            <Card className="border border-gray-300 shadow-sm relative">
+                {place.featured && (
+                    <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5">
+                        <Icons.star className="h-5 w-5" />
+                        Featured Third Place
+                        <Icons.star className="h-5 w-5" />
+                    </div>
+                )}
+                <CardContent className={place.featured ? "pt-4" : "pt-6"}>
+                    <PlaceContent
+                        place={place}
+                        layout="page"
+                        showPhotosButton={false}
+                    />
+                </CardContent>
+            </Card>
         </div>
     );
 }
