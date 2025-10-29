@@ -42,13 +42,43 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
       remaining = remaining.slice(2);
       continue;
     }
-    const linkMatch = remaining.match(/^[[]([^\]]*)\]\(([^)]*)\)/);
-    if (linkMatch) {
-      const linkTextNodes = parseInlineElements(linkMatch[1]);
-      if (linkTextNodes.length === 1 && linkTextNodes[0].type === 'text') {
-        nodes.push({ type: 'link', content: linkTextNodes[0].content, href: linkMatch[2] });
-      } else { nodes.push({ type: 'link', children: linkTextNodes, href: linkMatch[2] }); }
-      remaining = remaining.slice(linkMatch[0].length); continue;
+    // Match markdown links: [text](url)
+    // 
+    // The challenge: URLs can contain parentheses (common in Wikipedia URLs like
+    // https://en.wikipedia.org/wiki/Page_(film)), which breaks naive regex patterns.
+    // 
+    // Solution: Use a parenthesis depth counter to find the correct closing paren.
+    // - Start with depth=1 for the opening paren in ](
+    // - Increment depth for each ( we encounter in the URL
+    // - Decrement depth for each ) we encounter
+    // - Stop when depth reaches 0 (that's our closing paren)
+    // 
+    // Example: [Movie](https://wiki.org/Film_(2020)) text after
+    //          ^-----^  ^-----------------------^
+    //          |        |                       
+    //          text     URL with balanced parens
+    //                                           ^ stops here (depth 0)
+    const linkStart = remaining.match(/^[[]([^\]]*)\]\(/);
+    if (linkStart) {
+      const urlStart = linkStart[0].length;
+      let depth = 1;
+      let urlEnd = urlStart;
+      // Walk through characters counting parentheses depth
+      while (urlEnd < remaining.length && depth > 0) {
+        if (remaining[urlEnd] === '(') depth++;
+        else if (remaining[urlEnd] === ')') depth--;
+        if (depth > 0) urlEnd++;
+      }
+      if (depth === 0) {
+        const linkText = linkStart[1];
+        const href = remaining.slice(urlStart, urlEnd);
+        const linkTextNodes = parseInlineElements(linkText);
+        if (linkTextNodes.length === 1 && linkTextNodes[0].type === 'text') {
+          nodes.push({ type: 'link', content: linkTextNodes[0].content, href });
+        } else { nodes.push({ type: 'link', children: linkTextNodes, href }); }
+        remaining = remaining.slice(urlEnd + 1);
+        continue;
+      }
     }
     const strikeMatch = remaining.match(/^~~([^~]*(?:~(?!~)[^~]*)*)~~/);
     if (strikeMatch) {
