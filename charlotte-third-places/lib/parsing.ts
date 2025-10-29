@@ -42,7 +42,7 @@ function parseInlineElements(text: string): ParsedMarkdownNode[] {
       remaining = remaining.slice(2);
       continue;
     }
-    const linkMatch = remaining.match(/^[[]([^\]]*)\]\(([^)]*)\)/);
+    const linkMatch = remaining.match(/^[[]([^\]]*)\]\(([^)]*(?:\([^)]*\)[^)]*)*)\)/);
     if (linkMatch) {
       const linkTextNodes = parseInlineElements(linkMatch[1]);
       if (linkTextNodes.length === 1 && linkTextNodes[0].type === 'text') {
