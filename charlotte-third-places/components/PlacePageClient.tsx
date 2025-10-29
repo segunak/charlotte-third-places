@@ -142,8 +142,7 @@ export function PlacePageClient({ place }: { place: Place }) {
 
         const onSelect = () => {
             const selected = api.selectedScrollSnap();
-            // Only update state if the value has actually changed
-            // This prevents unnecessary re-renders
+            // Only update state if the value has actually changed. This prevents unnecessary re-renders
             if (selected !== currentSlide) {
                 setCurrentSlide(selected);
 
