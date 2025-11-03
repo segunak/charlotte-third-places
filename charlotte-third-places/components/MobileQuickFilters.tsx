@@ -20,7 +20,7 @@ export function MobileQuickFilters() {
                 {/* Search bar */}
                 <FilterQuickSearch />
 
-                {/* Three key filters */}
+                {/* Key filters */}
                 <div className="space-y-3">
                     <FilterSelect
                         field="neighborhood"
@@ -42,6 +42,13 @@ export function MobileQuickFilters() {
                         label={filters.size.label}
                         placeholder={filters.size.placeholder}
                         predefinedOrder={filters.size.predefinedOrder}
+                    />
+                    <FilterSelect
+                        field="tags"
+                        value={filters.tags.value}
+                        label={filters.tags.label}
+                        placeholder={filters.tags.placeholder}
+                        predefinedOrder={filters.tags.predefinedOrder}
                     />
                 </div>
 
