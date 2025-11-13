@@ -17,6 +17,11 @@ on:
         required: false
         default: 'charlotte'
         type: string
+      force_refresh:
+        description: 'Force refresh data from provider API'
+        required: false
+        default: 'true'
+        type: string
   workflow_dispatch:
     inputs:
       place_id:
@@ -32,6 +37,11 @@ on:
         description: 'City for caching'
         required: false
         default: 'charlotte'
+        type: string
+      force_refresh:
+        description: 'Force refresh data from provider API'
+        required: false
+        default: 'true'
         type: string
 
 # Ensures that only one instance of this workflow runs at a time
@@ -56,6 +66,7 @@ jobs:
           $placeId = "${{ github.event.inputs.place_id }}"
           $providerType = "${{ github.event.inputs.provider_type || 'outscraper' }}"
           $city = "${{ github.event.inputs.city || 'charlotte' }}"
+          $forceRefresh = "${{ github.event.inputs.force_refresh || 'true' }}"
           
           # Validate required place_id parameter
           if ([string]::IsNullOrWhiteSpace($placeId)) {
@@ -63,7 +74,7 @@ jobs:
             exit 1
           }
           
-          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-single-place?place_id=$placeId&provider_type=$providerType&city=$city"
+          $FunctionUrl = "https://third-places-data.azurewebsites.net/api/refresh-single-place?place_id=$placeId&provider_type=$providerType&city=$city&force_refresh=$forceRefresh"
           
           Write-Host "Using orchestrator URL: $FunctionUrl"
           
