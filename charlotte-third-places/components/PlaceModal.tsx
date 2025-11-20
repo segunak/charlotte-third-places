@@ -10,7 +10,6 @@ import {
     useRef,
     useEffect
 } from "react";
-import React from "react";
 import {
     Dialog,
     DialogContent,
@@ -47,7 +46,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={isMobile ? contentRef : undefined}
-                crossCloseIconSize="h-7 w-7"
+                crossCloseIconSize="h-6 w-6"
+                crossCloseIconColor="text-black dark:text-white"
                 className={cn(
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
                     // Apply centralized gradient (featured/openingSoon) if provided
@@ -63,8 +63,24 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
+                {/* Mobile: Horizontal banner */}
                 {highlights?.ribbon && (
-                    <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                    <div className={cn(
+                        "sm:hidden -mx-6 -mt-6 px-4 py-4 pb-6 text-center font-semibold text-md flex items-center justify-center gap-1.5 relative",
+                        highlights.ribbon.bgClass
+                    )}
+                    style={{
+                        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 13px), 50% 100%, 0 calc(100% - 13px))'
+                    }}>
+                        {highlights.ribbon.icon}
+                        <span>{highlights.ribbon.label}</span>
+                        {highlights.ribbon.icon}
+                    </div>
+                )}
+
+                {/* Desktop: Diagonal ribbon */}
+                {highlights?.ribbon && (
+                    <div className="hidden sm:block absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
                         <div className={cn(
                             "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
                             highlights.ribbon.bgClass,
@@ -76,7 +92,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
                 )}
 
-                <DialogHeader className="mt-7 sm:mt-0 shrink-0">
+                <DialogHeader className={cn(
+                    "sm:mt-0 shrink-0",
+                    !highlights?.ribbon && "mt-7"
+                )}>
                     <DialogTitle className="text-center">
                         {place.name}
                     </DialogTitle>

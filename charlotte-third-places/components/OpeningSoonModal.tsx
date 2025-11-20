@@ -45,7 +45,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
           onPointerDownOutside={(e) => e.preventDefault()}
         >
           <DrawerHeader className="mt-2 mb-2">
-            <DrawerTitle></DrawerTitle>
+            <DrawerTitle>Opening Soon</DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
           <DrawerFooter>
