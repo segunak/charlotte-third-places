@@ -46,7 +46,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={isMobile ? contentRef : undefined}
-                crossCloseIconSize="h-6 w-6"
+                crossCloseIconSize="h-7 w-7"
                 crossCloseIconColor="text-black dark:text-white"
                 className={cn(
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
@@ -70,7 +70,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         highlights.ribbon.bgClass
                     )}
                     style={{
-                        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px))'
+                        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 13px), 50% 100%, 0 calc(100% - 13px))'
                     }}>
                         {highlights.ribbon.icon}
                         <span>{highlights.ribbon.label}</span>
