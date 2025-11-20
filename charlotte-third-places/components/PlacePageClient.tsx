@@ -25,6 +25,7 @@ import type { CarouselApi } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { PlaceContent } from "@/components/PlaceContent";
+import { getPlaceHighlights } from "@/components/PlaceHighlights";
 
 // Simple gray placeholder
 const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
@@ -93,6 +94,9 @@ export function PlacePageClient({ place }: { place: Place }) {
     const [showThumbnails, setShowThumbnails] = useState(true);
     const isMobile = useIsMobile();
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
+
+    // Get highlights for this place
+    const highlights = useMemo(() => getPlaceHighlights(place), [place]);
 
     // Build a filtered array of visible photos and a mapping to their original indices
     const visiblePhotoData = useMemo(() => {
@@ -392,15 +396,21 @@ export function PlacePageClient({ place }: { place: Place }) {
             )}
 
             {/* Place Content Below */}
-            <Card className="border border-gray-300 shadow-sm relative">
-                {place.featured && (
-                    <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5">
-                        <Icons.star className="h-5 w-5" />
-                        Featured Third Place
-                        <Icons.star className="h-5 w-5" />
+            <Card className={cn(
+                "border border-gray-300 shadow-sm relative",
+                highlights.gradients.card
+            )}>
+                {highlights.ribbon && (
+                    <div className={cn(
+                        "px-4 py-2 text-center font-semibold text-lg flex items-center justify-center gap-1.5",
+                        highlights.ribbon.bgClass
+                    )}>
+                        {highlights.ribbon.icon}
+                        {highlights.ribbon.label}
+                        {highlights.ribbon.icon}
                     </div>
                 )}
-                <CardContent className={place.featured ? "pt-4" : "pt-6"}>
+                <CardContent className={highlights.ribbon ? "pt-4" : "pt-6"}>
                     <PlaceContent
                         place={place}
                         layout="page"

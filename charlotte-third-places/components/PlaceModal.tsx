@@ -68,7 +68,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <div className={cn(
                             "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
                             highlights.ribbon.bgClass,
-                            // Preserve original font sizing: featured was text-sm, opening soon text-xs
                             highlights.ribbon.label === 'Opening Soon' ? 'text-xs' : 'text-sm'
                         )}>
                             {highlights.ribbon.icon}

@@ -63,7 +63,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         onInteractOutside={(e) => e.preventDefault()}
       >
         <DialogHeader className="shrink-0">
-          <DialogTitle></DialogTitle>
+          <DialogTitle>Opening Soon</DialogTitle>
         </DialogHeader>
         <div className="flex-1">{content}</div>
         <div className="pt-2 pb-4 px-4 shrink-0">
