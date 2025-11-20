@@ -62,21 +62,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
-                {/* Mobile: Horizontal banner */}
+                {/* Diagonal ribbon */}
                 {highlights?.ribbon && (
-                    <div className={cn(
-                        "sm:hidden -mx-6 -mt-6 px-4 py-4 mb-1 text-center font-semibold text-md flex items-center justify-center gap-1.5 shadow-lg",
-                        highlights.ribbon.bgClass
-                    )}>
-                        {highlights.ribbon.icon}
-                        <span>{highlights.ribbon.label}</span>
-                        {highlights.ribbon.icon}
-                    </div>
-                )}
-
-                {/* Desktop: Diagonal ribbon */}
-                {highlights?.ribbon && (
-                    <div className="hidden sm:block absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
+                    <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
                         <div className={cn(
                             "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
                             highlights.ribbon.bgClass,
@@ -88,11 +76,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
                 )}
 
-                <DialogHeader className={cn(
-                    "sm:mt-0 shrink-0",
-                    !highlights?.ribbon && "mt-7"
-                )}>
-                    <DialogTitle className="text-center">
+                <DialogHeader className="mt-7 sm:mt-0 shrink-0">
+                    <DialogTitle className={cn(
+                        "text-center",
+                        highlights?.ribbon && "px-8 sm:px-0"
+                    )}>
                         {place.name}
                     </DialogTitle>
                     <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>
