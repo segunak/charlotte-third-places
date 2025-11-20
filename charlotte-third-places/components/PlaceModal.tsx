@@ -1,7 +1,6 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { Icons } from "@/components/Icons";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { Button } from "@/components/ui/button";
 import { PlaceContent } from "@/components/PlaceContent";
