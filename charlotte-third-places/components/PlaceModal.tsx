@@ -1,7 +1,6 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { Icons } from "@/components/Icons";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { Button } from "@/components/ui/button";
 import { PlaceContent } from "@/components/PlaceContent";
@@ -10,7 +9,6 @@ import {
     useRef,
     useEffect
 } from "react";
-import React from "react";
 import {
     Dialog,
     DialogContent,
@@ -48,6 +46,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
             <DialogContent
                 ref={isMobile ? contentRef : undefined}
                 crossCloseIconSize="h-7 w-7"
+                crossCloseIconColor="text-black dark:text-white"
                 className={cn(
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
                     // Apply centralized gradient (featured/openingSoon) if provided
@@ -63,12 +62,12 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     e.preventDefault();
                 }}
             >
+                {/* Diagonal ribbon */}
                 {highlights?.ribbon && (
                     <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
                         <div className={cn(
                             "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
                             highlights.ribbon.bgClass,
-                            // Preserve original font sizing: featured was text-sm, opening soon text-xs
                             highlights.ribbon.label === 'Opening Soon' ? 'text-xs' : 'text-sm'
                         )}>
                             {highlights.ribbon.icon}
@@ -78,7 +77,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 )}
 
                 <DialogHeader className="mt-7 sm:mt-0 shrink-0">
-                    <DialogTitle className="text-center">
+                    <DialogTitle className={cn(
+                        "text-center",
+                        highlights?.ribbon && "px-8 sm:px-0"
+                    )}>
                         {place.name}
                     </DialogTitle>
                     <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>

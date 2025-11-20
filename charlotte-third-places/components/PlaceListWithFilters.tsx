@@ -96,7 +96,6 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     </div>
                 </div>
 
-                {/* Opening Soon Banner (mobile only) */}
                 {openingSoonPlaces.length > 0 && (
                     <button
                         type="button"
