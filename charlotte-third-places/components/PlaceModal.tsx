@@ -70,7 +70,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         highlights.ribbon.bgClass
                     )}
                     style={{
-                        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 13px), 50% 100%, 0 calc(100% - 13px))'
+                        clipPath: 'polygon(0 0, 100% 0, 100% calc(100% - 14px), 50% 100%, 0 calc(100% - 14px))'
                     }}>
                         {highlights.ribbon.icon}
                         <span>{highlights.ribbon.label}</span>
