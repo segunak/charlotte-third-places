@@ -65,7 +65,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 {/* Mobile: Horizontal banner */}
                 {highlights?.ribbon && (
                     <div className={cn(
-                        "sm:hidden -mx-6 -mt-6 px-4 py-4 text-center font-semibold text-md flex items-center justify-center gap-1.5 shadow-lg",
+                        "sm:hidden -mx-6 -mt-6 px-4 py-4 mb-1 text-center font-semibold text-md flex items-center justify-center gap-1.5 shadow-sm",
                         highlights.ribbon.bgClass
                     )}>
                         {highlights.ribbon.icon}
