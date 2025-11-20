@@ -65,12 +65,9 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 {/* Mobile: Horizontal banner */}
                 {highlights?.ribbon && (
                     <div className={cn(
-                        "sm:hidden -mx-6 -mt-6 px-4 py-4 pb-5 text-center font-semibold text-md flex items-center justify-center gap-1.5",
+                        "sm:hidden -mx-6 -mt-6 px-4 py-4 text-center font-semibold text-md flex items-center justify-center gap-1.5 border-b-2 border-black/50 shadow-[0_1px_0_0_rgba(255,255,255,0.5)]",
                         highlights.ribbon.bgClass
-                    )}
-                    style={{
-                        clipPath: 'polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%)'
-                    }}>
+                    )}>
                         {highlights.ribbon.icon}
                         <span>{highlights.ribbon.label}</span>
                         {highlights.ribbon.icon}
