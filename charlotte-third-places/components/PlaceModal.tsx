@@ -45,7 +45,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={isMobile ? contentRef : undefined}
-                crossCloseIconSize="h-6 w-6"
+                crossCloseIconSize="h-7 w-7"
                 crossCloseIconColor="text-black dark:text-white"
                 className={cn(
                     "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
