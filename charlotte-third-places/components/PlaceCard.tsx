@@ -42,6 +42,7 @@ const typeEmojiMap: { [key: string]: string } = {
     "Community Center": "🤝",
     "Coworking Space": "💻",
     "Museum": "🏛️",
+    "Photo Shop": "📷",
     "Other": "🤷🏾",
 };
 

@@ -124,6 +124,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         "Market": "#FF7F50",             // Coral
         "Museum": "#8A2BE2",             // Blue Violet
         "Other": "#6B7280",              // Gray
+        "Photo Shop": "#9333EA",         // Purple
         "Restaurant": "#FF0033",         // Bright Red
         "Tea House": "#00FF00",          // Bright Green
     };

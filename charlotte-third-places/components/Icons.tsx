@@ -124,6 +124,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Community Center": FaUsers,
   "Coworking Space": FaLaptop,
   "Museum": FaUniversity,
+  "Photo Shop": IoCamera,
   "Other": FaQuestion,
 };
 
