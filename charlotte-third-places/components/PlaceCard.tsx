@@ -42,8 +42,8 @@ const typeEmojiMap: { [key: string]: string } = {
     "Community Center": "🤝",
     "Coworking Space": "💻",
     "Museum": "🏛️",
-    "Photo Shop": "📷",
     "Other": "🤷🏾",
+    "Photo Shop": "📷",
 };
 
 // Predefined color mappings for tag backgrounds and text
