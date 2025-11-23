@@ -125,6 +125,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Coworking Space": FaLaptop,
   "Museum": FaUniversity,
   "Other": FaQuestion,
+  "Photo Shop": IoCamera,
 };
 
 // Helper function to get the appropriate icon for a place type
