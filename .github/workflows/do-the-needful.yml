@@ -1,4 +1,6 @@
 # A wrapping/orchestration workflow that calls other workflows to do stuff and thangs for the project.
+# This workflow orchestrates cross-repo calls to third-places-data for Azure Function workflows,
+# then triggers site revalidation locally.
 
 name: Do The Needful
 
@@ -8,17 +10,17 @@ on:
 jobs:
 
   purge-orchestrations:
-    uses: ./.github/workflows/master_purge-orchestrations.yml
+    uses: segunak/third-places-data/.github/workflows/master_purge-orchestrations.yml@master
     secrets: inherit
 
   enrich-airtable-base:
     needs: purge-orchestrations
-    uses: ./.github/workflows/master_trigger-enrich-airtable-base.yml
+    uses: segunak/third-places-data/.github/workflows/master_trigger-enrich-airtable-base.yml@master
     secrets: inherit
 
   refresh-airtable-operational-statuses:
     needs: enrich-airtable-base
-    uses: ./.github/workflows/master_trigger-refresh-airtable-operational-statuses.yml
+    uses: segunak/third-places-data/.github/workflows/master_trigger-refresh-airtable-operational-statuses.yml@master
     secrets: inherit
 
   trigger-site-revalidation:
