@@ -3,10 +3,21 @@
 import { FcGoogle } from "react-icons/fc";
 import { BsFillHousesFill } from "react-icons/bs";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { RiDrinks2Fill } from "react-icons/ri";
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { MdEditLocationAlt, MdAttachMoney, MdEmojiFoodBeverage } from "react-icons/md";
+import { 
+  MdEditLocationAlt,
+  MdAttachMoney,
+  MdEmojiFoodBeverage,
+  MdAutoAwesome
+} from "react-icons/md";
+import { 
+  RiDrinks2Fill,
+  RiChatAiLine,
+  RiChatAiFill,
+  RiRobot2Line,
+  RiRobot2Fill
+} from "react-icons/ri";
 import {
   FaLocationPin,
   FaMapPin,
@@ -28,7 +39,8 @@ import {
   FaUsers,
   FaLaptop,
   FaList,
-  FaTags
+  FaTags,
+  FaMagnifyingGlassLocation
 } from "react-icons/fa6";
 
 import {
@@ -38,7 +50,7 @@ import {
   FaIceCream,
   FaCocktail,
   FaUniversity,
-  FaWineBottle
+  FaWineBottle,
 } from "react-icons/fa";
 
 import {
@@ -88,7 +100,10 @@ import {
   IoChevronBack,
   IoChevronForward,
   IoClose,
-  IoFastFood
+  IoFastFood,
+  IoTrash,
+  IoSparkles,
+  IoSparklesOutline
 } from "react-icons/io5";
 import {
   LuMoon,
@@ -187,11 +202,20 @@ export const Icons = {
   folder: FaFolder,
   search: FaSearch,
   openBook: FaBookOpen,
+  sparkles: IoSparkles,
+  sparkesOutline: IoSparklesOutline,
+  chat: RiChatAiFill,
+  chatOutline: RiChatAiLine,
+  robot: RiRobot2Fill,
+  robotOutline: RiRobot2Line,
+  book: FaBook,
   attachMoney: MdAttachMoney,
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
   houses: BsFillHousesFill,
   wifi: FaWifi,
+  users: FaUsers,
+  coffee: FaCoffee,
   notebookPen: LuNotebookPen,
   arrowLeft: FaArrowLeft,
   mobile: FaMobileAlt,
@@ -243,6 +267,8 @@ export const Icons = {
   close: IoClose,
   facebook: FaFacebookF,
   car: FaCar,
+  trash: IoTrash,
+  magnifyingGlassLocationPin: FaMagnifyingGlassLocation,
   panAfricanFlag: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"

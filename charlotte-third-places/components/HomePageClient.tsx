@@ -47,13 +47,13 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                 <p>
                     Discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink> in Charlotte, North Carolina and its <ResponsiveLink href="https://en.wikipedia.org/wiki/Charlotte_metropolitan_area">surrounding areas</ResponsiveLink>. {" "}
                     <span className="hidden sm:inline">
-                        You can also check out the <Link href="/map" className="custom-link">map view</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>.
+                        If you're not sure where to start, you can <Link href="/chat" className="custom-link">ask AI for recommendations</Link>. You can also check out the <Link href="/map" className="custom-link">map view</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>.
                     </span>
                 </p>
 
                 {/* Mobile-only instant action buttons */}
-                <div className="sm:hidden grid grid-cols-3 gap-3 !mt-6 !mb-6">
-                    {/* Stack Button */}
+                <div className="sm:hidden grid grid-cols-4 gap-3 !mt-6 !mb-6">
+                    {/* Random Button */}
                     <Button
                         onClick={() => {
                             const stackSection = document.getElementById('stack-section');
@@ -74,7 +74,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                     {/* Map Button */}
                     <Button
                         asChild
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-md active:scale-95 transition-all duration-200 transform scale-105 border-0"
+                        className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Link href="/map">
                             <Icons.map className="text-primary-foreground text-xl mb-1" />
@@ -82,7 +82,20 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                         </Link>
                     </Button>
 
-                    {/* List Button */}
+                    {/* Chat Button */}
+                    <Button
+                        asChild
+                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
+                                   rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
+                    >
+                        <Link href="/chat">
+                            <Icons.sparkles className="text-primary-foreground text-xl mb-1" />
+                            <span className="text-primary-foreground font-semibold text-sm">Chat</span>
+                        </Link>
+                    </Button>
+
+                    {/* Browse Button */}
                     <Button
                         onClick={() => {
                             const browseSection = document.getElementById('browse-section');
@@ -93,7 +106,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                             }
                         }}
                         className="flex flex-col items-center justify-center p-3 h-[4.5rem]
-                                   bg-secondary hover:bg-secondary/90 text-primary-foreground
+                                   bg-primary hover:bg-primary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Icons.list className="text-primary-foreground text-xl mb-1" />
@@ -120,9 +133,10 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                         <span className="hidden sm:inline">Click</span>
                     </span>{" "}
 
-                    {/* Always visible text */}
-                    any card for more info. Want a random suggestion? Use the{" "}
-                    <span className="font-bold text-primary">shuffle</span> button to switch things up!
+                    {/* Always visible text on mobile */}
+                    any card for more info. For a random suggestion, use the{" "}
+                    <span className="font-bold text-primary">shuffle</span> button, or{" "}
+                    <Link href="/chat" className="custom-link font-semibold">ask AI</Link> for personalized picks!
                 </p>
 
                 <ResponsivePlaceCards places={placesFilteredByName} />

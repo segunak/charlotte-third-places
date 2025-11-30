@@ -23,6 +23,12 @@ export function MobileNavigation() {
       inactiveIcon: <Icons.mapOutline className={iconClass} />
     },
     {
+      href: '/chat',
+      label: 'Chat',
+      activeIcon: <Icons.chat className={iconClass} />,
+      inactiveIcon: <Icons.chatOutline className={iconClass} />
+    },
+    {
       href: '/contribute',
       label: 'Contribute',
       activeIcon: <Icons.create className={iconClass} />,
