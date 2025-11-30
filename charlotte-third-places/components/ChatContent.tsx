@@ -1,10 +1,10 @@
 "use client"
 
-import { useState, useEffect, useCallback } from "react"
-import { Button } from "@/components/ui/button"
-import { Icons } from "@/components/Icons"
-import { useIsMobile } from "@/hooks/use-mobile"
 import { Place } from "@/lib/types"
+import { Icons } from "@/components/Icons"
+import { Button } from "@/components/ui/button"
+import { useIsMobile } from "@/hooks/use-mobile"
+import { useState, useEffect, useCallback } from "react"
 import {
     Conversation,
     ConversationContent,
