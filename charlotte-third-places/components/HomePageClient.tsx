@@ -38,7 +38,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
 
     return (
         <FilterProvider places={places}>
-            <div className="min-h-screen px-4 sm:px-20 py-8 space-y-4">
+            <div className="min-h-screen px-4 sm:px-24 py-8 space-y-4">
                 <h1 className="text-3xl font-bold">
                     Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
                     <span className="sm:hidden">Charlotte</span>
@@ -90,7 +90,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Link href="/chat">
-                            <Icons.sparkles className="text-primary-foreground text-xl mb-1" />
+                            <Icons.chat className="text-primary-foreground text-xl mb-1" />
                             <span className="text-primary-foreground font-semibold text-sm">Chat</span>
                         </Link>
                     </Button>
