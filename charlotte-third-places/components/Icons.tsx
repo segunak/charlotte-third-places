@@ -28,7 +28,8 @@ import {
   FaUsers,
   FaLaptop,
   FaList,
-  FaTags
+  FaTags,
+  FaCouch
 } from "react-icons/fa6";
 
 import {
@@ -126,6 +127,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Museum": FaUniversity,
   "Other": FaQuestion,
   "Photo Shop": IoCamera,
+  "Lounge": FaCouch,
 };
 
 // Helper function to get the appropriate icon for a place type
