@@ -26,7 +26,7 @@ export function ChatDialog({ open, onClose, place, initialMessage }: ChatDialogP
         return (
             <Drawer open={open} onOpenChange={(isOpen) => !isOpen && onClose()} repositionInputs={false}>
                 <DrawerContent className="h-[80dvh] pb-safe">
-                    <DrawerHeader className="shrink-0 py-2">
+                    <DrawerHeader className="shrink-0 py-2 mt-4">
                         <DrawerTitle>{title}</DrawerTitle>
                         <DrawerDescription className="text-xs">
                             {description}
