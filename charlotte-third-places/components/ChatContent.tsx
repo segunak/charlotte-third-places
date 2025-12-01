@@ -27,9 +27,6 @@ import { Response } from "@/components/ui/shadcn-io/ai/response"
 import { PromptLibrary } from "@/components/PromptLibrary"
 import { CopyIcon, CheckIcon, Trash2Icon } from "lucide-react"
 
-// Storage key prefix for localStorage
-const CHAT_STORAGE_KEY = "charlotte-third-places-chat"
-
 interface ChatMessage {
     id: string
     role: "user" | "assistant"
@@ -52,45 +49,6 @@ export interface ChatContentProps {
 // Generate unique ID for messages
 function generateId(): string {
     return `${Date.now()}-${Math.random().toString(36).slice(2, 11)}`
-}
-
-// Get storage key for a specific place or general chat
-function getStorageKey(placeId?: string): string {
-    return placeId ? `${CHAT_STORAGE_KEY}-${placeId}` : `${CHAT_STORAGE_KEY}-general`
-}
-
-// Load messages from localStorage
-function loadMessages(placeId?: string): ChatMessage[] {
-    if (typeof window === "undefined") return []
-    try {
-        const stored = localStorage.getItem(getStorageKey(placeId))
-        if (stored) {
-            return JSON.parse(stored)
-        }
-    } catch (e) {
-        console.error("Failed to load chat history:", e)
-    }
-    return []
-}
-
-// Save messages to localStorage
-function saveMessages(messages: ChatMessage[], placeId?: string): void {
-    if (typeof window === "undefined") return
-    try {
-        localStorage.setItem(getStorageKey(placeId), JSON.stringify(messages))
-    } catch (e) {
-        console.error("Failed to save chat history:", e)
-    }
-}
-
-// Clear messages from localStorage
-function clearMessages(placeId?: string): void {
-    if (typeof window === "undefined") return
-    try {
-        localStorage.removeItem(getStorageKey(placeId))
-    } catch (e) {
-        console.error("Failed to clear chat history:", e)
-    }
 }
 
 // Starter prompts for empty chat (general)
@@ -128,19 +86,11 @@ export function ChatContent({
     const isDialog = variant === "dialog"
     const isPage = variant === "page"
 
-    // Load messages from localStorage on mount
+    // Reset state when place changes
     useEffect(() => {
-        const storedMessages = loadMessages(placeId)
-        setMessages(storedMessages)
+        setMessages([])
         setInitialMessageSent(false)
     }, [placeId])
-
-    // Save messages to localStorage when they change
-    useEffect(() => {
-        if (messages.length > 0) {
-            saveMessages(messages, placeId)
-        }
-    }, [messages, placeId])
 
     const handleSendMessage = useCallback(async (content: string) => {
         if (!content.trim() || isLoading) return
@@ -217,8 +167,7 @@ export function ChatContent({
 
     const handleClearHistory = useCallback(() => {
         setMessages([])
-        clearMessages(placeId)
-    }, [placeId])
+    }, [])
 
     const handleCopy = async (content: string, messageId: string) => {
         await navigator.clipboard.writeText(content)
@@ -344,7 +293,7 @@ export function ChatContent({
             )}
 
             {/* Input area */}
-            <div className={isPage ? "shrink-0 p-4 sm:p-6" : "shrink-0 p-3"}>
+            <div className={isPage ? "shrink p-4 sm:p-6" : "shrink p-3"}>
                 <PromptInput
                     onSubmit={handleSubmit}
                     className={isPage ? "shadow-lg rounded-3xl relative" : "rounded-3xl relative"}

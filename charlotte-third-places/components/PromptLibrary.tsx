@@ -89,7 +89,7 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
 
     const TriggerButton = (
         <Button
-            variant="ghost"
+            variant="default"
             size="sm"
             className="gap-2"
         >
