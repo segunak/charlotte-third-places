@@ -28,7 +28,7 @@ export const MessageContent = ({
     className={cn(
       'flex flex-col gap-2 overflow-hidden rounded-2xl px-4 py-3 text-sm font-medium max-w-[85%]',
       'group-[.is-user]:bg-primary group-[.is-user]:text-primary-foreground',
-      'group-[.is-assistant]:bg-secondary group-[.is-assistant]:text-foreground',
+      'group-[.is-assistant]:bg-secondary group-[.is-assistant]:text-secondary-foreground',
       className
     )}
     {...(props as any)}

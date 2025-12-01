@@ -63,8 +63,8 @@ const starterPrompts = [
 const placePrompts = [
     "What's the vibe like here?",
     "What are the best times to visit?",
-    "Is this a good spot to work remotely?",
-    "Is this a good spot to meet up with friends?",
+    "What amenities does this spot offer?",
+    "Is this a good spot to work remotely?"
 ];
 
 export function ChatContent({
@@ -213,11 +213,11 @@ export function ChatContent({
             </div>
         </div>
     ) : (
-        <div className="flex flex-col items-center justify-center flex-1 p-4 text-center">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
-                <Icons.mapPin className="h-6 w-6 text-primary" />
+        <div className="flex flex-col items-center justify-center flex-1 p-3 text-center">
+            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-3">
+                <Icons.mapPin className="h-5 w-5 text-primary" />
             </div>
-            <p className="text-muted-foreground text-sm max-w-sm mb-6">
+            <p className="text-muted-foreground text-sm max-w-sm mb-4">
                 {welcomeMessage}
             </p>
             {place && (
@@ -259,6 +259,7 @@ export function ChatContent({
                                                 tooltip="Copy"
                                                 label="Copy message"
                                                 onClick={() => handleCopy(message.content, message.id)}
+                                                className="text-secondary-foreground hover:text-secondary-foreground/80"
                                             >
                                                 {copiedId === message.id ? (
                                                     <CheckIcon className="size-4" />

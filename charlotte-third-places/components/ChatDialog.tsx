@@ -24,17 +24,13 @@ export function ChatDialog({ open, onClose, place, initialMessage }: ChatDialogP
     // Mobile: Full-screen drawer from bottom
     if (isMobile) {
         return (
-            <Drawer open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
-                <DrawerContent className="h-[90dvh] pb-safe">
-                    <DrawerHeader className="shrink-0 pb-2">
-                        <div className="flex items-center justify-between">
-                            <div className="flex-1">
-                                <DrawerTitle>{title}</DrawerTitle>
-                                <DrawerDescription className="text-xs mt-1">
-                                    {description}
-                                </DrawerDescription>
-                            </div>
-                        </div>
+            <Drawer open={open} onOpenChange={(isOpen) => !isOpen && onClose()} repositionInputs={false}>
+                <DrawerContent className="h-[80dvh] pb-safe">
+                    <DrawerHeader className="shrink-0 py-2">
+                        <DrawerTitle>{title}</DrawerTitle>
+                        <DrawerDescription className="text-xs">
+                            {description}
+                        </DrawerDescription>
                     </DrawerHeader>
                     <div className="flex-1 overflow-hidden">
                         <ChatContent
