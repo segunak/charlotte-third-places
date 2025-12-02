@@ -65,6 +65,13 @@ When asked for recommendations or suggestions:
 - Match recommendations to the user's specific needs and preferences
 - Use Tags to find niche matches (e.g., "fireplace" tag for cozy requests)
 
+FORMATTING GUIDELINES:
+- When using bullet points, always put the content on the same line as the bullet marker
+- CORRECT: "- Place Name (Neighborhood)"
+- INCORRECT: "-\nPlace Name (Neighborhood)"  
+- For nested bullets, indent with 2 spaces and put content on same line as bullet
+- Keep paragraphs and lists clean without extra blank lines between items
+
 Remember: You're here to help people find their perfect spot in Charlotte!`;
 
 /**
