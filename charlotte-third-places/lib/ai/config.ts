@@ -18,7 +18,7 @@ export const AI_CONFIG = {
   /** Azure OpenAI endpoint for Foundry */
   endpoint: "https://foundry-third-places.cognitiveservices.azure.com/",
   /** Chat completion model deployment name */
-  chatModel: "gpt-5-mini",
+  chatModel: "gpt-4.1-mini",
   /** Embedding model deployment name */
   embeddingModel: "text-embedding-3-small",
   /** Embedding vector dimensions */
