@@ -46,18 +46,18 @@ export interface ChatContentProps {
 
 // Starter prompts for empty chat (general)
 const starterPrompts = [
-    "What are some hidden gem cafes?",
     "What are some good spots for groups?",
     "What places are great for remote work?",
-    "Where can I find a quiet spot to study?",
+    "What are some hidden gem third places?",
+    "Where can I find a quiet spot to read with a view?",
 ];
 
 // Place-specific prompts for dialog variant
 const placePrompts = [
-    "What's the vibe like here?",
-    "What are the best times to visit?",
-    "What amenities does this spot offer?",
-    "Is this a good spot to work remotely?"
+    "How's access to outlets and Wi-Fi?",
+    "What's the vibe and aesthetic like here?",
+    "What are some fun facts about this place?",
+    "What are the best times to visit to avoid crowds?"
 ];
 
 // Helper to extract text content from UIMessage parts
@@ -178,7 +178,13 @@ export function ChatContent({
             <p className="text-muted-foreground text-center max-w-md mb-8 text-sm sm:text-base">
                 {welcomeMessage}
             </p>
-            <Suggestions className="!w-full !flex-wrap gap-3 max-w-2xl justify-center [&>div]:w-full [&>div]:flex-wrap [&>div]:justify-center">
+            {/* 
+              Using a plain div instead of <Suggestions> here for proper centering.
+              The Suggestions component wraps content in a ScrollArea with internal 
+              styles (display: table, w-max, flex-nowrap) that prevent flex centering.
+              Since we don't need horizontal scrolling, a simple flexbox works better.
+            */}
+            <div className="flex flex-wrap gap-3 justify-center w-full">
                 {starterPrompts.map((prompt) => (
                     <Suggestion
                         key={prompt}
@@ -187,7 +193,7 @@ export function ChatContent({
                         className="whitespace-normal text-center h-auto py-3 px-5 rounded-full justify-center text-sm"
                     />
                 ))}
-            </Suggestions>
+            </div>
             <div className="mt-6">
                 <PromptLibrary onSelectPrompt={handleSuggestionClick} />
             </div>
@@ -207,7 +213,7 @@ export function ChatContent({
               Since we don't need horizontal scrolling in the dialog, a simple flexbox works better.
             */}
             {place && (
-                <div className="flex flex-wrap gap-2 justify-center max-w-xl">
+                <div className="flex flex-wrap gap-2 justify-center max-w-full">
                     {placePrompts.map((prompt) => (
                         <Suggestion
                             key={prompt}
