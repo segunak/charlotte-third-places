@@ -6,7 +6,7 @@
 // Azure OpenAI / Foundry configuration
 export const AI_CONFIG = {
   /** Azure OpenAI endpoint for Foundry */
-  endpoint: "https://foundry-third-places.services.ai.azure.com/",
+  endpoint: "https://foundry-third-places.cognitiveservices.azure.com/",
   /** Chat completion model deployment name */
   chatModel: "gpt-5-mini",
   /** Embedding model deployment name */
@@ -14,7 +14,7 @@ export const AI_CONFIG = {
   /** Embedding vector dimensions */
   embeddingDimensions: 1536,
   /** Azure OpenAI API version */
-  apiVersion: "2024-10-21",
+  apiVersion: "2024-05-01-preview",
   /** Max output tokens for chat completion response */
   maxOutputTokens: 1024,
   /** Temperature for chat completion (1 = more creative) */

@@ -11,10 +11,13 @@ import { SYSTEM_PROMPT } from "@/lib/ai/prompts";
 import { AI_CONFIG } from "@/lib/ai/config";
 
 // Create Azure OpenAI provider configured for Foundry
+// useDeploymentBasedUrls: true uses the legacy format {baseURL}/deployments/{deploymentId}{path}
+// which is required for Azure AI Foundry endpoints
 const azure = createAzure({
   apiKey: process.env.FOUNDRY_API_KEY,
-  baseURL: `${AI_CONFIG.endpoint}openai/deployments`,
+  baseURL: `${AI_CONFIG.endpoint}openai`,
   apiVersion: AI_CONFIG.apiVersion,
+  useDeploymentBasedUrls: true,
 });
 
 // Allow streaming responses up to 30 seconds
