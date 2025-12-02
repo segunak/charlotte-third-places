@@ -1,6 +1,16 @@
 /**
  * AI configuration constants for chat and RAG functionality.
  * Uses Azure OpenAI via Microsoft Foundry for chat and embeddings.
+ *
+ * Azure OpenAI REST API Reference:
+ * @see https://learn.microsoft.com/en-us/azure/ai-foundry/openai/reference?view=foundry-classic
+ *
+ * Microsoft Foundry SDKs and Endpoints:
+ * @see https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?view=foundry&pivots=programming-language-javascript
+ *
+ * URL Format (deployment-based):
+ * POST https://{endpoint}/openai/deployments/{deployment-id}/chat/completions?api-version={version}
+ * Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/gpt-5-mini/chat/completions?api-version=2024-05-01-preview
  */
 
 // Azure OpenAI / Foundry configuration

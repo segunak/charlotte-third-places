@@ -10,9 +10,23 @@ import { performRAG } from "@/lib/ai/rag";
 import { SYSTEM_PROMPT } from "@/lib/ai/prompts";
 import { AI_CONFIG } from "@/lib/ai/config";
 
-// Create Azure OpenAI provider configured for Foundry
-// useDeploymentBasedUrls: true uses the legacy format {baseURL}/deployments/{deploymentId}{path}
-// which is required for Azure AI Foundry endpoints
+/**
+ * Create Azure OpenAI provider configured for Foundry.
+ *
+ * Azure OpenAI REST API Reference:
+ * @see https://learn.microsoft.com/en-us/azure/ai-foundry/openai/reference?view=foundry-classic
+ *
+ * Microsoft Foundry SDKs and Endpoints:
+ * @see https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?view=foundry&pivots=programming-language-javascript
+ *
+ * Vercel AI SDK Azure Provider:
+ * @see https://ai-sdk.dev/providers/ai-sdk-providers/azure
+ *
+ * Configuration:
+ * - useDeploymentBasedUrls: true - Uses deployment-based URL format required by Azure AI Foundry
+ * - URL format: {baseURL}/deployments/{deploymentId}{path}?api-version={version}
+ * - Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/gpt-5-mini/chat/completions?api-version=2024-05-01-preview
+ */
 const azure = createAzure({
   apiKey: process.env.FOUNDRY_API_KEY,
   baseURL: `${AI_CONFIG.endpoint}openai`,

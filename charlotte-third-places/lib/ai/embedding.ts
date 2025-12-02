@@ -1,6 +1,13 @@
 /**
  * Embedding service for generating vector embeddings using Azure OpenAI.
  * Uses text-embedding-3-small model for 1536-dimensional embeddings.
+ *
+ * Azure OpenAI REST API Reference:
+ * @see https://learn.microsoft.com/en-us/azure/ai-foundry/openai/reference?view=foundry-classic
+ *
+ * URL Format (deployment-based):
+ * POST https://{endpoint}/openai/deployments/{deployment-id}/embeddings?api-version={version}
+ * Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-05-01-preview
  */
 
 import { AI_CONFIG } from "./config";
