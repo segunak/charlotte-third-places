@@ -1,89 +1,111 @@
-import { type NextRequest, NextResponse } from "next/server"
+/**
+ * Chat API route with Vercel AI SDK streaming.
+ * Uses RAG to retrieve relevant places and reviews from Cosmos DB,
+ * then streams responses from Azure OpenAI via Foundry.
+ */
 
-// Azure Function base URL
-const AZURE_FUNCTION_URL = "https://third-places-data.azurewebsites.net"
-const AZURE_FUNCTION_KEY = process.env.AZURE_FUNCTION_KEY
+import { streamText, convertToModelMessages, type UIMessage } from "ai";
+import { createAzure } from "@ai-sdk/azure";
+import { performRAG } from "@/lib/ai/rag";
+import { SYSTEM_PROMPT } from "@/lib/ai/prompts";
+import { AI_CONFIG } from "@/lib/ai/config";
 
-export async function POST(request: NextRequest) {
-    try {
-        const body = await request.json()
-        
-        const { messages, placeId } = body
-        
-        if (!messages || !Array.isArray(messages)) {
-            return NextResponse.json(
-                { error: "messages array is required" },
-                { status: 400 }
-            )
-        }
+// Create Azure OpenAI provider configured for Foundry
+const azure = createAzure({
+  apiKey: process.env.FOUNDRY_API_KEY,
+  baseURL: `${AI_CONFIG.endpoint}openai/deployments`,
+  apiVersion: AI_CONFIG.apiVersion,
+});
 
-        // Validate messages format
-        for (const msg of messages) {
-            if (!msg.role || !msg.content) {
-                return NextResponse.json(
-                    { error: "Each message must have role and content" },
-                    { status: 400 }
-                )
-            }
-            if (!["user", "assistant"].includes(msg.role)) {
-                return NextResponse.json(
-                    { error: "Message role must be 'user' or 'assistant'" },
-                    { status: 400 }
-                )
-            }
-        }
+// Allow streaming responses up to 30 seconds
+export const maxDuration = 30;
 
-        // Build Azure Function URL
-        const functionUrl = new URL("/api/chat", AZURE_FUNCTION_URL)
-        
-        // Add function key if available
-        if (AZURE_FUNCTION_KEY) {
-            functionUrl.searchParams.set("code", AZURE_FUNCTION_KEY)
-        }
+export async function POST(request: Request) {
+  try {
+    const body = await request.json();
+    const { messages, placeId } = body;
 
-        // Forward request to Azure Function
-        const azureResponse = await fetch(functionUrl.toString(), {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                messages,
-                placeId,
-                stream: false
-            }),
-        })
-
-        if (!azureResponse.ok) {
-            const errorData = await azureResponse.json().catch(() => ({}))
-            console.error("Azure Function error:", errorData)
-            
-            return NextResponse.json(
-                { 
-                    error: errorData.error || "Failed to get AI response",
-                    message: errorData.message || "The AI service is temporarily unavailable"
-                },
-                { status: azureResponse.status }
-            )
-        }
-
-        const data = await azureResponse.json()
-
-        // Return the response content
-        return NextResponse.json({
-            content: data.data?.content || data.content,
-            context: data.data?.context || data.context
-        })
-
-    } catch (error) {
-        console.error("Chat API error:", error)
-        
-        return NextResponse.json(
-            { 
-                error: "Internal server error",
-                message: error instanceof Error ? error.message : "Unknown error"
-            },
-            { status: 500 }
-        )
+    // Validate messages
+    if (!messages || !Array.isArray(messages) || messages.length === 0) {
+      return new Response(
+        JSON.stringify({ error: "messages array is required" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
     }
+
+    // Validate message format
+    for (const msg of messages) {
+      if (!msg.role) {
+        return new Response(
+          JSON.stringify({ error: "Each message must have a role" }),
+          { status: 400, headers: { "Content-Type": "application/json" } }
+        );
+      }
+      if (!["user", "assistant"].includes(msg.role)) {
+        return new Response(
+          JSON.stringify({ error: "Message role must be 'user' or 'assistant'" }),
+          { status: 400, headers: { "Content-Type": "application/json" } }
+        );
+      }
+    }
+
+    // Get the latest user message for RAG retrieval
+    const userMessages = messages.filter((m: { role: string }) => m.role === "user");
+    if (userMessages.length === 0) {
+      return new Response(
+        JSON.stringify({ error: "At least one user message is required" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
+
+    // Extract text from the latest user message (parts array contains text parts)
+    const lastUserMessage = userMessages[userMessages.length - 1];
+    const textParts = lastUserMessage.parts?.filter((p: { type: string }) => p.type === "text") || [];
+    const latestQuery = textParts.map((p: { text: string }) => p.text).join(" ") || "";
+
+    // Perform RAG retrieval
+    const ragResult = await performRAG({
+      query: latestQuery,
+      placeId: placeId || undefined,
+    });
+
+    console.log(
+      `RAG completed: ${ragResult.placesCount} places, ${ragResult.chunksCount} chunks${
+        placeId ? ` (place-specific: ${placeId})` : ""
+      }`
+    );
+
+    // Build system messages with RAG context
+    const systemMessages = [
+      { role: "system" as const, content: SYSTEM_PROMPT },
+      {
+        role: "system" as const,
+        content: `Here is relevant information about Charlotte third places to help answer the user's question:\n\n${ragResult.context}`,
+      },
+    ];
+
+    // Convert UIMessages (parts-based) to model messages (content-based)
+    const modelMessages = convertToModelMessages(messages as UIMessage[]);
+
+    // Stream response from Azure OpenAI
+    const result = streamText({
+      model: azure(AI_CONFIG.chatModel),
+      messages: [...systemMessages, ...modelMessages],
+      maxOutputTokens: AI_CONFIG.maxOutputTokens,
+      temperature: AI_CONFIG.temperature,
+    });
+
+    // Return streaming response for AI SDK UI integration
+    return result.toUIMessageStreamResponse();
+  } catch (error) {
+    console.error("Chat API error:", error);
+
+    return new Response(
+      JSON.stringify({
+        error: "Internal server error",
+        message: error instanceof Error ? error.message : "Unknown error",
+      }),
+      { status: 500, headers: { "Content-Type": "application/json" } }
+    );
+  }
 }
