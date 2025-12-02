@@ -26,9 +26,9 @@ export const AI_CONFIG = {
   /** Azure OpenAI API version */
   apiVersion: "2024-05-01-preview",
   /** Max output tokens for chat completion response */
-  maxOutputTokens: 2048,
-  /** Temperature for chat completion (1 = more creative) */
-  temperature: 1,
+  maxOutputTokens: 1024,
+  /** Temperature for chat completion (0.7 = balanced creativity/speed) */
+  temperature: 0.7,
 } as const;
 
 // Cosmos DB configuration
@@ -51,7 +51,7 @@ export const RAG_CONFIG = {
   /** General search - chunks (reviews) */
   generalChunks: {
     topK: 10,
-    minScore: 0.65,
+    minScore: 0.7,
   },
   /** Place-specific search - places (for broader context) */
   placeSpecificPlaces: {
@@ -60,7 +60,7 @@ export const RAG_CONFIG = {
   },
   /** Place-specific search - chunks (reviews for that place) */
   placeSpecificChunks: {
-    topK: 8,
-    minScore: 0.65,
+    topK: 15,
+    minScore: 0.7,
   },
 } as const;

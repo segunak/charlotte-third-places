@@ -105,11 +105,13 @@ export async function POST(request: Request) {
     const modelMessages = convertToModelMessages(messages as UIMessage[]);
 
     // Stream response from Azure OpenAI
+    // AbortSignal.timeout ensures we fail gracefully before Vercel's 30s maxDuration limit
     const result = streamText({
       model: azure(AI_CONFIG.chatModel),
       messages: [...systemMessages, ...modelMessages],
       maxOutputTokens: AI_CONFIG.maxOutputTokens,
       temperature: AI_CONFIG.temperature,
+      abortSignal: AbortSignal.timeout(28000),
     });
 
     // Return streaming response for AI SDK UI integration

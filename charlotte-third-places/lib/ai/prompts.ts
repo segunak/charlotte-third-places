@@ -89,7 +89,7 @@ function formatPlace(place: PlaceDocument): string {
   
   // Curator comments - prioritize these as authoritative insider knowledge
   if (place.comments) {
-    lines.push(`Curator Notes: ${place.comments}`);
+    lines.push(`Authoritative Curator Notes: ${place.comments}`);
   }
   
   // Tags reveal niche characteristics
@@ -114,15 +114,7 @@ function formatPlace(place: PlaceDocument): string {
     lines.push(`Purchase Required: ${place.purchaseRequired ? "Yes" : "No"}`);
   }
   
-  if (place.placeRating) lines.push(`Rating: ${place.placeRating}/5`);
-  if (place.reviewsCount) lines.push(`Number of Reviews: ${place.reviewsCount}`);
   if (place.typicalTimeSpent) lines.push(`Typical Time Spent: ${place.typicalTimeSpent}`);
-  
-  // Category and subtypes from Google Maps
-  if (place.category) lines.push(`Category: ${place.category}`);
-  if (place.subtypes && Array.isArray(place.subtypes) && place.subtypes.length > 0) {
-    lines.push(`Subtypes: ${place.subtypes.join(", ")}`);
-  };
   
   if (place.workingHours && typeof place.workingHours === "object") {
     const hoursStr = Object.entries(place.workingHours)
