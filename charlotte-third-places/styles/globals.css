@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Streamdown list styling - reduce default left padding on bullet lists */
+[data-streamdown="unordered-list"],
+[data-streamdown="ordered-list"] {
+  padding-left: 0.5rem;
+}
+
+[data-streamdown="list-item"] {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
 .custom-link {
   @apply text-primary hover:text-accent underline underline-offset-4;
 }

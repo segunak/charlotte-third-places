@@ -45,7 +45,7 @@ export const COSMOS_CONFIG = {
 export const RAG_CONFIG = {
   /** General search - places */
   generalPlaces: {
-    topK: 5,
+    topK: 10,
     minScore: 0.7,
   },
   /** General search - chunks (reviews) */
