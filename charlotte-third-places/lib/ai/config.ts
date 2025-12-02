@@ -27,8 +27,8 @@ export const AI_CONFIG = {
   apiVersion: "2024-05-01-preview",
   /** Max output tokens for chat completion response (balance between completeness and speed) */
   maxOutputTokens: 1536,
-  /** Temperature for chat completion (0.7 = balanced creativity/speed) */
-  temperature: 0.7,
+  /** Temperature for chat completion (0.4 = grounded but still conversational) */
+  temperature: 0.4,
 } as const;
 
 // Cosmos DB configuration
