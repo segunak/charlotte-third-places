@@ -172,7 +172,7 @@ export function ChatContent({
     const emptyStateContent = isPage && showStarterPrompts ? (
         <div className="flex flex-col items-center justify-center flex-1 p-6 sm:p-8">
             <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center mb-6">
-                <Icons.mapPin className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
+                <Icons.logo className="h-7 w-7 sm:h-8 sm:w-8 text-primary" />
             </div>
             <h2 className="text-xl sm:text-2xl font-semibold mb-3 text-center">Charlotte Third Places</h2>
             <p className="text-muted-foreground text-center max-w-md mb-8 text-sm sm:text-base">
@@ -195,7 +195,7 @@ export function ChatContent({
     ) : (
         <div className="flex flex-col items-center justify-center flex-1 min-h-[320px] p-3 text-center">
             <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-3">
-                <Icons.mapPin className="h-5 w-5 text-primary" />
+                <Icons.logo className="h-5 w-5 text-primary" />
             </div>
             <p className="text-muted-foreground text-sm max-w-sm mb-4">
                 {welcomeMessage}
