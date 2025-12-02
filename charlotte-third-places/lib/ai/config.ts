@@ -25,8 +25,8 @@ export const AI_CONFIG = {
   embeddingDimensions: 1536,
   /** Azure OpenAI API version */
   apiVersion: "2024-05-01-preview",
-  /** Max output tokens for chat completion response */
-  maxOutputTokens: 1024,
+  /** Max output tokens for chat completion response (balance between completeness and speed) */
+  maxOutputTokens: 1536,
   /** Temperature for chat completion (0.7 = balanced creativity/speed) */
   temperature: 0.7,
 } as const;
