@@ -177,7 +177,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                 <SelectContent position="popper" side="top">
                     <SelectGroup>
                         <SelectLabel>{label}</SelectLabel>
-                        <SelectItem value="all">All</SelectItem>
+                        <SelectItem value="all">Don't Filter By {label}</SelectItem>
                         {getDistinctValues(field).map((item: string) => (
                             <SelectItem key={item} value={item}>
                                 {item}

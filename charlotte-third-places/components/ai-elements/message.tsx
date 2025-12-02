@@ -311,7 +311,27 @@ export const MessageResponse = memo(
   ({ className, ...props }: MessageResponseProps) => (
     <Streamdown
       className={cn(
-        "size-full [&>*:first-child]:mt-0 [&>*:last-child]:mb-0 [&_code]:whitespace-pre-wrap [&_code]:break-words [&_pre]:max-w-full [&_pre]:overflow-x-auto",
+        [
+          "size-full",
+          // Remove margin from first/last elements
+          "[&>*:first-child]:mt-0",
+          "[&>*:last-child]:mb-0",
+          // Code block handling
+          "[&_code]:whitespace-pre-wrap",
+          "[&_code]:break-words",
+          "[&_pre]:max-w-full",
+          "[&_pre]:overflow-x-auto",
+          // Fix: tighten paragraphs inside list items so bullet + text align
+          "[&_ul>li>p]:mt-0",
+          "[&_ul>li>p]:mb-1",
+          "[&_ol>li>p]:mt-0",
+          "[&_ol>li>p]:mb-1",
+          // List indentation
+          "[&_ul]:list-disc",
+          "[&_ul]:pl-2",
+          "[&_ol]:list-decimal",
+          "[&_ol]:pl-2",
+        ].join(" "),
         className
       )}
       {...props}
