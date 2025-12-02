@@ -23,24 +23,53 @@ Your knowledge:
 - You understand what makes different places suitable for different activities (studying vs. socializing vs. remote work)
 - You're familiar with Charlotte's neighborhoods and can suggest places based on location
 
+HOW TO USE THE DATA PROVIDED:
+
+1. **Tags** - These are curated category labels (e.g., "Fireplace", "Outdoor Seating", "Good for Groups", "Quiet Atmosphere", "Late Night"). Tags reveal niche characteristics that make a place special. When a user asks about specific features (fireplaces, patios, cozy spots), prioritize places with matching tags.
+
+2. **Comments** - These are CURATOR NOTES written by the person who maintains this third places database. They contain insider knowledge, personal observations, and tips you won't find elsewhere. Treat curator comments as highly authoritative - they're first-hand accounts from someone who has visited these places.
+
+3. **Reviews** - These are real customer reviews from Google Maps. They show what actual visitors think about a place. Pay close attention to:
+   - Specific details people mention (seating comfort, noise levels, food quality, staff friendliness)
+   - Patterns across multiple reviews (if several people mention crowding or great Wi-Fi, it's likely accurate)
+   - Review ratings as an indicator of overall satisfaction
+   - Owner responses which show how engaged the business is
+
+4. **About** - This contains structured Google Maps attributes (wheelchair accessible, good for kids, has restrooms, etc.). Use these for accessibility and amenity questions.
+
+5. **Reviews Tags** - These are aggregated keywords from Google Maps reviews highlighting common themes (e.g., "cozy atmosphere", "great coffee", "good for work"). Use these to quickly understand what a place is known for.
+
 Guidelines:
 - Always base recommendations on the context provided about specific places
 - If asked about a place not in your context, acknowledge you don't have specific information about it
 - Provide practical details: hours, parking, Wi-Fi availability when known
-- Suggest alternatives when a specific place might not meet someone's needs
 - Keep responses conversational but informative
 - If someone asks about something unrelated to third places or Charlotte, gently redirect the conversation
 
+IMPORTANT - Stay on topic:
+- When asked about a SPECIFIC place, focus your answer entirely on that place. Do NOT end your response by suggesting other places unless the user explicitly asks for alternatives.
+- Only suggest other places when the user asks for recommendations, comparisons, or alternatives.
+- If the user asks "What are the best times to visit [Place]?" - answer about that place only. Don't add "You might also like..." or similar.
+- Keep answers focused and direct. Users appreciate thorough answers about what they asked, not tangential suggestions.
+
 When discussing a specific place, mention:
-- What makes it special or suitable for their needs
+- What makes it special or suitable for their needs (draw from Tags and Curator Comments)
+- What real visitors say about it (draw from Reviews)
 - Practical details (neighborhood, parking, Wi-Fi if known)
 - Any caveats or considerations
-- Similar alternatives if relevant
+
+When asked for recommendations or suggestions:
+- Draw from the full range of over 300 places in your knowledge base
+- Vary your recommendations - don't always suggest the same popular spots
+- Consider lesser-known gems alongside popular favorites
+- Match recommendations to the user's specific needs and preferences
+- Use Tags to find niche matches (e.g., "fireplace" tag for cozy requests)
 
 Remember: You're here to help people find their perfect spot in Charlotte!`;
 
 /**
  * Format a place document for context injection.
+ * Includes curator comments and tags prominently for better AI utilization.
  */
 function formatPlace(place: PlaceDocument): string {
   const lines: string[] = [];
@@ -51,9 +80,20 @@ function formatPlace(place: PlaceDocument): string {
   if (place.address) lines.push(`Address: ${place.address}`);
   if (place.description) lines.push(`Description: ${place.description}`);
   
+  // Curator comments - prioritize these as authoritative insider knowledge
+  if (place.comments) {
+    lines.push(`Curator Notes: ${place.comments}`);
+  }
+  
+  // Tags reveal niche characteristics
   if (place.tags) {
     const tags = Array.isArray(place.tags) ? place.tags : [place.tags];
     lines.push(`Tags: ${tags.join(", ")}`);
+  }
+  
+  // Reviews tags - aggregated keywords from Google Maps reviews
+  if (place.reviewsTags && Array.isArray(place.reviewsTags) && place.reviewsTags.length > 0) {
+    lines.push(`What People Say: ${place.reviewsTags.join(", ")}`);
   }
   
   if (place.freeWifi !== undefined && place.freeWifi !== null) {
@@ -70,6 +110,12 @@ function formatPlace(place: PlaceDocument): string {
   if (place.placeRating) lines.push(`Rating: ${place.placeRating}/5`);
   if (place.reviewsCount) lines.push(`Number of Reviews: ${place.reviewsCount}`);
   if (place.typicalTimeSpent) lines.push(`Typical Time Spent: ${place.typicalTimeSpent}`);
+  
+  // Category and subtypes from Google Maps
+  if (place.category) lines.push(`Category: ${place.category}`);
+  if (place.subtypes && Array.isArray(place.subtypes) && place.subtypes.length > 0) {
+    lines.push(`Subtypes: ${place.subtypes.join(", ")}`);
+  };
   
   if (place.workingHours && typeof place.workingHours === "object") {
     const hoursStr = Object.entries(place.workingHours)
@@ -92,15 +138,27 @@ function formatPlace(place: PlaceDocument): string {
 
 /**
  * Format a chunk (review) document for context injection.
+ * Reviews are real customer experiences - highlight the authentic voice.
  */
 function formatChunk(chunk: ChunkDocument): string {
   const lines: string[] = [];
 
   if (chunk.placeName) lines.push(`Place: ${chunk.placeName}`);
   if (chunk.neighborhood) lines.push(`Neighborhood: ${chunk.neighborhood}`);
-  if (chunk.reviewText) lines.push(`Review: ${chunk.reviewText}`);
-  if (chunk.reviewRating) lines.push(`Rating: ${chunk.reviewRating}/5`);
-  if (chunk.ownerAnswer) lines.push(`Owner Response: ${chunk.ownerAnswer}`);
+  
+  // Review rating gives context to the review text
+  if (chunk.reviewRating) lines.push(`Customer Rating: ${chunk.reviewRating}/5`);
+  
+  // Review text is the primary content - the authentic customer voice
+  if (chunk.reviewText) lines.push(`Customer Review: "${chunk.reviewText}"`);
+  
+  // Owner response shows business engagement
+  if (chunk.ownerAnswer) lines.push(`Owner Response: "${chunk.ownerAnswer}"`);
+  
+  // Review tags (if available on chunks) show themes
+  if (chunk.reviewsTags && Array.isArray(chunk.reviewsTags) && chunk.reviewsTags.length > 0) {
+    lines.push(`Review Themes: ${chunk.reviewsTags.join(", ")}`);
+  }
 
   return lines.join("\n");
 }

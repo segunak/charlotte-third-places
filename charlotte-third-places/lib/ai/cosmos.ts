@@ -109,9 +109,10 @@ export async function vectorSearchPlaces(
   const query = `
     SELECT TOP @topK
       c.id, c.place, c.neighborhood, c.address, c.type, c.tags,
-      c.description, c.googleMapsProfileUrl, c.appleMapsProfileUrl,
+      c.description, c.comments, c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.website, c.freeWifi, c.parking, c.size, c.purchaseRequired,
       c.placeRating, c.reviewsCount, c.workingHours, c.about, c.typicalTimeSpent,
+      c.reviewsTags, c.category, c.subtypes,
       VectorDistance(c.embedding, @queryEmbedding) AS distance
     FROM c
     WHERE VectorDistance(c.embedding, @queryEmbedding) < @maxDistance

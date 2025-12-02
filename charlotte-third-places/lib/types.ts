@@ -42,6 +42,8 @@ export interface PlaceDocument {
   type?: string | string[];
   tags?: string | string[];
   description?: string;
+  /** Curator notes - insider knowledge from the database maintainer */
+  comments?: string;
   googleMapsProfileUrl?: string;
   appleMapsProfileUrl?: string;
   website?: string;
@@ -54,6 +56,12 @@ export interface PlaceDocument {
   workingHours?: Record<string, string>;
   about?: Record<string, unknown>;
   typicalTimeSpent?: string;
+  /** Aggregated review keywords from Google Maps */
+  reviewsTags?: string[];
+  /** Category from Google Maps */
+  category?: string;
+  /** Subtypes from Google Maps */
+  subtypes?: string[];
   embedding?: number[];
   /** Added by vector search results */
   similarityScore?: number;

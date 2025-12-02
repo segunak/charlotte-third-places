@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { Button } from "@/components/ui/button";
 import {
@@ -22,6 +22,7 @@ import {
 import type { ComponentProps, HTMLAttributes, ReactElement } from "react";
 import { createContext, memo, useContext, useEffect, useState } from "react";
 import { Streamdown } from "streamdown";
+import Image from "next/image";
 
 export type MessageProps = HTMLAttributes<HTMLDivElement> & {
   from: UIMessage["role"];
@@ -47,9 +48,9 @@ export const MessageContent = ({
 }: MessageContentProps) => (
   <div
     className={cn(
-      "flex w-fit flex-col gap-2 overflow-hidden text-sm",
+      "is-user:dark flex w-fit flex-col gap-2 overflow-hidden text-sm",
       "group-[.is-user]:ml-auto group-[.is-user]:rounded-lg group-[.is-user]:bg-primary group-[.is-user]:px-4 group-[.is-user]:py-3 group-[.is-user]:text-white group-[.is-user]:font-medium",
-      "group-[.is-assistant]:rounded-lg group-[.is-assistant]:bg-secondary group-[.is-assistant]:px-4 group-[.is-assistant]:py-3 group-[.is-assistant]:text-white group-[.is-assistant]:font-medium",
+      "group-[.is-assistant]:text-foreground",
       className
     )}
     {...props}
@@ -80,7 +81,7 @@ export const MessageAction = ({
   children,
   label,
   variant = "ghost",
-  size = "sm",
+  size = "icon",
   ...props
 }: MessageActionProps) => {
   const button = (
@@ -249,7 +250,7 @@ export const MessageBranchPrevious = ({
       aria-label="Previous branch"
       disabled={totalBranches <= 1}
       onClick={goToPrevious}
-      size="sm"
+      size="icon"
       type="button"
       variant="ghost"
       {...props}
@@ -273,7 +274,7 @@ export const MessageBranchNext = ({
       aria-label="Next branch"
       disabled={totalBranches <= 1}
       onClick={goToNext}
-      size="sm"
+      size="icon"
       type="button"
       variant="ghost"
       {...props}
@@ -349,18 +350,18 @@ export function MessageAttachment({
     >
       {isImage ? (
         <>
-          <img
+          <Image
             alt={filename || "attachment"}
-            className="size-full object-cover"
+            className="h-full w-full object-cover"
             height={100}
-            src={data.url}
+            src={data.url as string}
             width={100}
           />
           {onRemove && (
             <Button
               aria-label="Remove attachment"
               className="absolute top-2 right-2 size-6 rounded-full bg-background/80 p-0 opacity-0 backdrop-blur-sm transition-opacity hover:bg-background group-hover:opacity-100 [&>svg]:size-3"
-              onClick={(e) => {
+              onClick={(e: { stopPropagation: () => void; }) => {
                 e.stopPropagation();
                 onRemove();
               }}
@@ -388,7 +389,7 @@ export function MessageAttachment({
             <Button
               aria-label="Remove attachment"
               className="size-6 shrink-0 rounded-full p-0 opacity-0 transition-opacity hover:bg-accent group-hover:opacity-100 [&>svg]:size-3"
-              onClick={(e) => {
+              onClick={(e: { stopPropagation: () => void; }) => {
                 e.stopPropagation();
                 onRemove();
               }}

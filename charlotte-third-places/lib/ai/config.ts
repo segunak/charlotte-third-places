@@ -26,7 +26,7 @@ export const AI_CONFIG = {
   /** Azure OpenAI API version */
   apiVersion: "2024-05-01-preview",
   /** Max output tokens for chat completion response */
-  maxOutputTokens: 1024,
+  maxOutputTokens: 2048,
   /** Temperature for chat completion (1 = more creative) */
   temperature: 1,
 } as const;

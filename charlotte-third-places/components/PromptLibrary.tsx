@@ -18,7 +18,7 @@ import {
 } from "@/components/ui/drawer"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Lightbulb, BookOpen, Laptop, Users, Coffee, MapPin, Sparkles } from "lucide-react"
+import { Lightbulb, BookOpen, Laptop, Users, Coffee, MapPin, Sparkles, Clock, Armchair, Sun, Moon } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface PromptCategory {
@@ -29,31 +29,61 @@ interface PromptCategory {
 
 const promptCategories: PromptCategory[] = [
     {
+        name: "Cozy Vibes",
+        icon: <Armchair className="h-4 w-4" />,
+        prompts: [
+            "Where can I find a coffee shop with comfy couches to sink into?",
+            "Are there any cafés in Charlotte with a fireplace?",
+            "Show me cozy, warm spots perfect for a rainy day.",
+            "What places feel spacious and spread out, not cramped?",
+        ],
+    },
+    {
         name: "Solo Activities",
         icon: <BookOpen className="h-4 w-4" />,
         prompts: [
-            "Show me quiet spots in Charlotte where I can read a book alone.",
-            "Where should I go in Charlotte if I just want to sit and people-watch?",
-            "Show me places where I can work for a few hours without buying a full meal.",
+            "Where's a good spot to read a book alone on a Saturday morning?",
+            "Show me quiet spots in Charlotte where I can journal or write.",
+            "Where should I go if I just want to sit and people-watch?",
+            "What cafés are good for introverts who want to be alone in public?",
         ],
     },
     {
         name: "Work & Study",
         icon: <Laptop className="h-4 w-4" />,
         prompts: [
-            "Find me a cozy coffee shop with strong Wi-Fi and lots of outlets.",
-            "Find late-evening spots that are good for studying or laptop work.",
-            "What are some laptop-friendly places that don't feel crowded on weekends?",
-            "Recommend spots with outdoor seating and access to power outlets.",
+            "Find me a coffee shop with strong Wi-Fi and lots of outlets.",
+            "Where can I work remotely for a full day without feeling rushed?",
+            "What are laptop-friendly places that aren't too crowded on weekends?",
+            "Recommend spots with outdoor seating and power outlets.",
+        ],
+    },
+    {
+        name: "Late Night",
+        icon: <Moon className="h-4 w-4" />,
+        prompts: [
+            "What coffee shops or cafés stay open late in Charlotte?",
+            "Where can I study or work after 8 PM?",
+            "Find me late-night spots that aren't bars.",
+        ],
+    },
+    {
+        name: "Morning & Weekend",
+        icon: <Sun className="h-4 w-4" />,
+        prompts: [
+            "Where's a great spot for early morning coffee before 7 AM?",
+            "What places are best for a lazy Sunday morning?",
+            "Show me brunch spots where I can also get work done.",
         ],
     },
     {
         name: "Groups & Social",
         icon: <Users className="h-4 w-4" />,
         prompts: [
-            "Where can a group of 6–8 people meet with a big table and Wi-Fi?",
-            "Where can I meet friends to play board games or hang out for a few hours?",
-            "What's a good first-date spot that's relaxed and not too loud?",
+            "Where can a group of 6–8 people meet with a big table?",
+            "What's a good spot for board games or hanging out for hours?",
+            "What's a relaxed first-date spot that's not too loud?",
+            "Where can I meet up with friends who have a dog?",
         ],
     },
     {
@@ -61,15 +91,30 @@ const promptCategories: PromptCategory[] = [
         icon: <Sparkles className="h-4 w-4" />,
         prompts: [
             "What are some underrated hidden-gem cafés around Charlotte?",
-            "Recommend Black-owned coffee shops and cafés I should check out.",
+            "Recommend Black-owned coffee shops and cafés to check out.",
             "Suggest libraries or bookstores that feel like true third places.",
+            "What lesser-known spots do locals love?",
         ],
     },
     {
-        name: "Location & Amenities",
+        name: "Food & Drinks",
+        icon: <Coffee className="h-4 w-4" />,
+        prompts: [
+            "Where can I get great hot chocolate in Charlotte?",
+            "What places have the best pastries to go with my coffee?",
+            "Show me bubble tea shops where I can hang out.",
+            "Are there any cafés that serve food beyond just coffee and pastries?",
+        ],
+    },
+    {
+        name: "By Neighborhood",
         icon: <MapPin className="h-4 w-4" />,
         prompts: [
-            "Find chill places with free parking on the east side of Charlotte.",
+            "What are the best third places in South End?",
+            "Find me spots to work from in the Ballantyne area.",
+            "Show me cafés near Uptown Charlotte.",
+            "What's good in NoDa for remote work?",
+            "Find chill places with free parking on the east side.",
         ],
     },
 ]
