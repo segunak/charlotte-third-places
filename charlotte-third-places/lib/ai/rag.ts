@@ -9,6 +9,7 @@ import {
   getChunksByPlaceId,
   vectorSearchPlaces,
   vectorSearchChunks,
+  vectorSearchChunksForPlaces,
   type PlaceDocument,
   type ChunkDocument,
 } from "./cosmos";
@@ -76,22 +77,27 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
       RAG_CONFIG.placeSpecificPlaces.minScore
     );
   } else {
-    // General search across all places and reviews
-    const [placesResult, chunksResult] = await Promise.all([
-      vectorSearchPlaces(
-        queryEmbedding,
-        RAG_CONFIG.generalPlaces.topK,
-        RAG_CONFIG.generalPlaces.minScore
-      ),
-      vectorSearchChunks(
-        queryEmbedding,
-        RAG_CONFIG.generalChunks.topK,
-        RAG_CONFIG.generalChunks.minScore
-      ),
-    ]);
+    // General search - Two-phase retrieval for performance:
+    // Phase 1: Vector search places to find relevant place IDs
+    // Phase 2: Vector search chunks only within those place partitions
+    // This avoids expensive cross-partition scans on the chunks container
+    
+    places = await vectorSearchPlaces(
+      queryEmbedding,
+      RAG_CONFIG.generalPlaces.topK,
+      RAG_CONFIG.generalPlaces.minScore
+    );
 
-    places = placesResult;
-    chunks = chunksResult;
+    // Extract place IDs from the found places
+    const relevantPlaceIds = places.map(p => p.id).filter((id): id is string => !!id);
+
+    // Search chunks only within the relevant place partitions
+    chunks = await vectorSearchChunksForPlaces(
+      queryEmbedding,
+      RAG_CONFIG.generalChunks.topK,
+      RAG_CONFIG.generalChunks.minScore,
+      relevantPlaceIds
+    );
   }
 
   // Build context message
