@@ -97,6 +97,7 @@ export function ChatContent({
     const {
         messages,
         sendMessage,
+        stop,
         status,
         error,
         setMessages,
@@ -316,8 +317,9 @@ export function ChatContent({
                             )}
                         </PromptInputTools>
                         <PromptInputSubmit
-                            disabled={isLoading || !input.trim()}
+                            disabled={!isLoading && !input.trim()}
                             status={chatStatus}
+                            onClick={isLoading ? stop : undefined}
                             className="h-9 w-9 rounded-full"
                         />
                     </PromptInputFooter>
