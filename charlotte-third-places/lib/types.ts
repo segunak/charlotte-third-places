@@ -33,6 +33,59 @@ export type Place = {
     lastModifiedDate: Date;
 }
 
+// Cosmos DB document types for AI/RAG functionality
+export interface PlaceDocument {
+  id: string;
+  place?: string;
+  neighborhood?: string;
+  address?: string;
+  type?: string | string[];
+  tags?: string | string[];
+  description?: string;
+  /** Curator notes - insider knowledge from the database maintainer */
+  comments?: string;
+  googleMapsProfileUrl?: string;
+  appleMapsProfileUrl?: string;
+  website?: string;
+  freeWifi?: boolean;
+  parking?: string;
+  size?: string;
+  purchaseRequired?: boolean;
+  placeRating?: number;
+  reviewsCount?: number;
+  workingHours?: Record<string, string>;
+  about?: Record<string, unknown>;
+  typicalTimeSpent?: string;
+  /** Aggregated review keywords from Google Maps */
+  reviewsTags?: string[];
+  /** Category from Google Maps */
+  category?: string;
+  /** Subtypes from Google Maps */
+  subtypes?: string[];
+  embedding?: number[];
+  /** Added by vector search results */
+  similarityScore?: number;
+}
+
+export interface ChunkDocument {
+  id: string;
+  placeId: string;
+  placeName?: string;
+  neighborhood?: string;
+  address?: string;
+  placeType?: string | string[];
+  placeTags?: string | string[];
+  reviewText?: string;
+  reviewRating?: number;
+  reviewDatetimeUtc?: string;
+  reviewLink?: string;
+  ownerAnswer?: string;
+  reviewsTags?: string[];
+  embedding?: number[];
+  /** Added by vector search results */
+  similarityScore?: number;
+}
+
 // Defines the fields that are available for sorting to users.
 export enum SortField {
     Name = 'name',

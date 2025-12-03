@@ -149,7 +149,7 @@ export function FilterDrawer({
 
           <DrawerClose asChild>
             <Button className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
-              Close
+              Save
             </Button>
           </DrawerClose>
         </DrawerFooter>

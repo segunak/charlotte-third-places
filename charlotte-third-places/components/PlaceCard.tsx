@@ -153,7 +153,7 @@ interface PlaceCardProps {
 }
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
-    const { showPlaceModal, showPlacePhotos } = useModalContext();
+    const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalContext();
     const highlights = getPlaceHighlights(place);
     const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
@@ -242,6 +242,18 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         </span>
 
                         <div className="flex space-x-2">
+                            <Button
+                                variant="default"
+                                size="icon"
+                                className="h-9 w-9 rounded-full"
+                                onClick={(e) => {
+                                    e.stopPropagation(); // Prevent click from bubbling to Card
+                                    showPlaceChat(place);
+                                }}
+                                aria-label="Ask AI about this place"
+                            >
+                                <Icons.chat className="h-5 w-5 text-primary-foreground" />
+                            </Button>
                             {shouldShowPhotosButton && (
                                 <Button
                                     variant="default"

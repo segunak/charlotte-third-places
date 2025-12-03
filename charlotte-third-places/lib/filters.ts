@@ -55,7 +55,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Size',
         predefinedOrder: ['Small', 'Medium', 'Large'],
         valueType: 'scalar',
-        mobilePicker: false,
+        mobilePicker: true,
         accessor: p => p.size
     },
     {
@@ -80,7 +80,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         label: 'Parking',
         placeholder: 'Parking',
         valueType: 'array',
-        mobilePicker: false,
+        mobilePicker: true,
         accessor: p => p.parking
     },
     {

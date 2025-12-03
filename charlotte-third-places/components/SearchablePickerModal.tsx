@@ -69,7 +69,7 @@ export function SearchablePickerModal({
                 className="w-full justify-start mb-1"
                 onClick={() => handleSelect("all")}
               >
-                All
+                Don't Filter By {label}
               </Button>
             </li>
             {filteredOptions.map((opt) => (

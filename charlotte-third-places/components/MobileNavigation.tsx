@@ -1,6 +1,5 @@
 'use client';
 
-import React from 'react';
 import Link from 'next/link';
 import { Icons } from "@/components/Icons";
 import { usePathname } from 'next/navigation';
@@ -23,6 +22,12 @@ export function MobileNavigation() {
       inactiveIcon: <Icons.mapOutline className={iconClass} />
     },
     {
+      href: '/chat',
+      label: 'Chat',
+      activeIcon: <Icons.chat className={iconClass} />,
+      inactiveIcon: <Icons.chatOutline className={iconClass} />
+    },
+    {
       href: '/contribute',
       label: 'Contribute',
       activeIcon: <Icons.create className={iconClass} />,
@@ -38,9 +43,9 @@ export function MobileNavigation() {
 
   return (
     <nav className="sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-50">
-      <div className="flex justify-around items-center h-16">
+      <div className="grid grid-cols-5 h-16">
         {navItems.map((item) => (
-          <Link href={item.href} key={item.href} className="flex flex-col items-center px-1">
+          <Link href={item.href} key={item.href} className="flex flex-col items-center justify-center">
             {pathname === item.href ? (
               item.activeIcon
             ) : (

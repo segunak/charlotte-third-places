@@ -273,7 +273,7 @@ const frequentlyAskedQuestions = [
 
 export default function AboutPage() {
     return (
-        <section className="px-4 sm:px-20 py-8 mx-auto space-y-6 sm:border-l sm:border-r rounded-xl max-w-full sm:max-w-5xl">
+        <section className="px-4 sm:px-24 py-8 mx-auto space-y-6 sm:border-l sm:border-r rounded-xl max-w-full sm:max-w-5xl">
             <h1 className="text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>

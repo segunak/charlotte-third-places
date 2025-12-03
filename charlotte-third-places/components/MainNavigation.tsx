@@ -18,6 +18,12 @@ export function MainNavigation() {
                     Map
                 </Link>
                 <Link
+                    href="/chat"
+                    className="flex items-center text-sm font-medium text-muted-foreground custom-hover"
+                >
+                    Chat
+                </Link>
+                <Link
                     href="/contribute"
                     className="flex items-center text-sm font-medium text-muted-foreground custom-hover"
                 >

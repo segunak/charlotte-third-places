@@ -26,6 +26,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
+import { ChatDialog } from "@/components/ChatDialog";
 
 // Simple gray placeholder
 const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
@@ -94,6 +95,7 @@ export function PlacePageClient({ place }: { place: Place }) {
     const [showThumbnails, setShowThumbnails] = useState(true);
     const isMobile = useIsMobile();
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
+    const [showChat, setShowChat] = useState(false);
 
     // Get highlights for this place
     const highlights = useMemo(() => getPlaceHighlights(place), [place]);
@@ -418,6 +420,26 @@ export function PlacePageClient({ place }: { place: Place }) {
                     />
                 </CardContent>
             </Card>
+
+            {/* Ask AI Button */}
+            <div className="flex justify-center">
+                <Button
+                    variant="outline"
+                    size="lg"
+                    className="font-semibold"
+                    onClick={() => setShowChat(true)}
+                >
+                    <Icons.comment className="h-5 w-5 mr-2" />
+                    Ask AI about {place.name}
+                </Button>
+            </div>
+
+            {/* Chat Dialog */}
+            <ChatDialog
+                open={showChat}
+                onClose={() => setShowChat(false)}
+                place={place}
+            />
         </div>
     );
 }
