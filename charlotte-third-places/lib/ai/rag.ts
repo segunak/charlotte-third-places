@@ -9,7 +9,6 @@ import {
   getChunksByPlaceId,
   vectorSearchPlaces,
   vectorSearchChunks,
-  vectorSearchChunksForPlaces,
   type PlaceDocument,
   type ChunkDocument,
 } from "./cosmos";
@@ -77,26 +76,27 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
       RAG_CONFIG.placeSpecificPlaces.minScore
     );
   } else {
-    // General search - Two-phase retrieval for performance:
-    // Phase 1: Vector search places to find relevant place IDs
-    // Phase 2: Vector search chunks only within those place partitions
-    // This avoids expensive cross-partition scans on the chunks container
+    // General search - places only, no chunks
+    // 
+    // PERFORMANCE OPTIMIZATION: We skip chunk (review) retrieval for general queries.
+    // 
+    // Reason: The chunks container is partitioned by placeId. General queries require
+    // cross-partition vector search across all ~300+ partitions, which takes 5-10+ seconds
+    // and often causes Vercel's 30-second timeout to be exceeded.
+    // 
+    // For general recommendations, place-level data is sufficient:
+    // - Tags (curated category labels like "Fireplace", "Good for Groups")
+    // - Curator comments (insider knowledge and first-hand observations)
+    // - Reviews tags (aggregated keywords from Google Maps reviews)
+    // - Description, amenities, working hours, etc.
+    //
+    // Detailed review chunks are fetched only for place-specific queries where
+    // the placeId filter enables fast single-partition searches.
     
     places = await vectorSearchPlaces(
       queryEmbedding,
       RAG_CONFIG.generalPlaces.topK,
       RAG_CONFIG.generalPlaces.minScore
-    );
-
-    // Extract place IDs from the found places
-    const relevantPlaceIds = places.map(p => p.id).filter((id): id is string => !!id);
-
-    // Search chunks only within the relevant place partitions
-    chunks = await vectorSearchChunksForPlaces(
-      queryEmbedding,
-      RAG_CONFIG.generalChunks.topK,
-      RAG_CONFIG.generalChunks.minScore,
-      relevantPlaceIds
     );
   }
 
