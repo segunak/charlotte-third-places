@@ -27,8 +27,41 @@ export const AI_CONFIG = {
   apiVersion: "2024-05-01-preview",
   /** Max output tokens for chat completion response (balance between completeness and speed) */
   maxOutputTokens: 1536,
-  /** Temperature for chat completion */
-  temperature: 0.7,
+  /**
+   * Temperature for chat completion - controls randomness/creativity of responses.
+   * 
+   * Temperature Guide for Charlotte Third Places:
+   * 
+   * 0.0  - Deterministic. Same question = identical answer every time.
+   *        "Best coffee shop?" always returns exact same places in same order.
+   * 
+   * 0.3  - Very focused. Mostly consistent recommendations with minor variation.
+   *        Might occasionally swap #2 and #3. Good for factual Q&A.
+   * 
+   * 0.5  - Balanced. Some variation in which places are highlighted, but predictable.
+   * 
+   * 0.7  - Moderate creativity. Industry default for chat. Good variety in recommendations.
+   *        Same question might highlight different places from the pool.
+   * 
+   * 0.8  - More creative. LLM more willing to pick "interesting" places over obvious
+   *        top matches. More varied sentence structure. Good for discovery.
+   * 
+   * 0.9  - High creativity. Noticeably different answers each time. May make unexpected
+   *        connections ("this brewery has a cozy reading nook!"). Great for variety.
+   *        Sweet spot for discovery/recommendation apps with rich context.
+   * 
+   * 1.0  - Maximum useful creativity. Very diverse answers, each feels fresh. May include
+   *        tangential info or creative flourishes. Risk: occasionally picks less-relevant
+   *        places just for variety.
+   * 
+   * 1.2+ - Chaotic. Not recommended. Inconsistent, sometimes nonsensical responses.
+   *        Hallucination risk increases significantly.
+   * 
+   * Recommendation: 0.8-0.9 is ideal for Charlotte Third Places since we want varied
+   * recommendations from the 25+ places in context. Higher temps encourage the LLM
+   * to highlight hidden gems rather than always picking the same popular spots.
+   */
+  temperature: 0.9,
 } as const;
 
 // Cosmos DB configuration
@@ -43,10 +76,10 @@ export const COSMOS_CONFIG = {
 
 // RAG search parameters
 export const RAG_CONFIG = {
-  /** General search - places */
+  /** General search - places (topK=25 for variety, minScore=0.65 for hidden gems) */
   generalPlaces: {
-    topK: 10,
-    minScore: 0.7,
+    topK: 25,
+    minScore: 0.65,
   },
   /** General search - chunks (reviews) */
   generalChunks: {
