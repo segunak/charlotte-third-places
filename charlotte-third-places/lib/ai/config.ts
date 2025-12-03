@@ -72,10 +72,10 @@ export const COSMOS_CONFIG = {
 
 // RAG search parameters
 export const RAG_CONFIG = {
-  /** General search - places (topK=25 for variety, minScore=0.65 for hidden gems) */
+  /** General search - places */
   generalPlaces: {
-    topK: 25,
-    minScore: 0.65,
+    topK: 30,
+    minScore: 0.70,
   },
   /** General search - chunks (reviews) */
   generalChunks: {

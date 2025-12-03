@@ -326,11 +326,16 @@ export const MessageResponse = memo(
           "[&_ul>li>p]:mb-1",
           "[&_ol>li>p]:mt-0",
           "[&_ol>li>p]:mb-1",
-          // List indentation
+          // List styling - override Streamdown's list-inside which causes
+          // whitespace issues with newlines between <li> and <p> tags.
+          // list-outside (default) positions bullets outside content flow.
+          // See: https://github.com/vercel/streamdown/issues/68
           "[&_ul]:list-disc",
-          "[&_ul]:pl-2",
+          "[&_ul]:list-outside",
+          "[&_ul]:pl-5",
           "[&_ol]:list-decimal",
-          "[&_ol]:pl-2",
+          "[&_ol]:list-outside",
+          "[&_ol]:pl-5",
         ].join(" "),
         className
       )}

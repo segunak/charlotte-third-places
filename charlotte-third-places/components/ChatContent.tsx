@@ -309,7 +309,7 @@ export function ChatContent({
                                     variant="ghost"
                                     size="sm"
                                     onClick={handleClearHistory}
-                                    className="text-muted-foreground hover:text-foreground h-8 text-xs"
+                                    className="text-muted-foreground hover:bg-primary h-8 text-xs"
                                 >
                                     <Trash2Icon className="size-3.5 mr-1" />
                                     New chat
