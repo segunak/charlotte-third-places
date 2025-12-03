@@ -56,12 +56,8 @@ export const AI_CONFIG = {
    * 
    * 1.2+ - Chaotic. Not recommended. Inconsistent, sometimes nonsensical responses.
    *        Hallucination risk increases significantly.
-   * 
-   * Recommendation: 0.8-0.9 is ideal for Charlotte Third Places since we want varied
-   * recommendations from the 25+ places in context. Higher temps encourage the LLM
-   * to highlight hidden gems rather than always picking the same popular spots.
    */
-  temperature: 0.9,
+  temperature: 1.0,
 } as const;
 
 // Cosmos DB configuration
