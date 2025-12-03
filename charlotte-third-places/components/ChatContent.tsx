@@ -298,7 +298,7 @@ export function ChatContent({
                         onChange={handleInputChange}
                         placeholder={placeholder}
                         disabled={isLoading}
-                        className="min-h-12 max-h-32"
+                        className={isPage ? "min-h-8 sm:min-h-12 max-h-12" : "min-h-12 max-h-32"}
                     />
                     <PromptInputFooter className="p-2">
                         <PromptInputTools>
