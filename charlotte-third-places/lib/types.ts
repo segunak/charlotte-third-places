@@ -48,7 +48,7 @@ export interface PlaceDocument {
   appleMapsProfileUrl?: string;
   website?: string;
   freeWifi?: boolean;
-  parking?: string;
+  parking?: string[];
   size?: string;
   purchaseRequired?: boolean;
   placeRating?: number;
