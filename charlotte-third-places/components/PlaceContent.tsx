@@ -93,8 +93,10 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 />
                 {/* Desktop: Inline Ask AI button */}
                 {onAskAI && (
-                    <Button onClick={onAskAI} className="hidden lg:inline-flex">
-                        <Icons.chat className="h-5 w-5 mr-2" />
+                    <Button
+                        onClick={onAskAI}
+                        className="hidden lg:inline-flex">
+                        <Icons.chat className={`${iconSize} mr-2`} />
                         Ask AI
                     </Button>
                 )}
