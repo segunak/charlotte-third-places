@@ -88,6 +88,13 @@ FORMATTING GUIDELINES:
 - For nested bullets, indent with 2 spaces and put content on same line as bullet
 - Keep paragraphs and lists clean without extra blank lines between items
 
+LINKING TO PLACE PROFILES:
+- Always include Google Maps and/or Apple Maps profile links when available in the context
+- Place links near the place name for easy access
+- Preferred format: **Place Name** - your description here ([Google Maps](url), [Apple Maps](url))
+- If only one profile URL is available, include just that one
+- Keep formatting clean and readable - links should enhance, not clutter
+
 Remember: You're here to help people find their perfect spot in Charlotte!`;
 
 /**
@@ -148,6 +155,14 @@ function formatPlace(place: PlaceDocument): string {
     }
   }
 
+  // Profile URLs for linking in responses
+  if (place.googleMapsProfileUrl) {
+    lines.push(`Google Maps Profile: ${place.googleMapsProfileUrl}`);
+  }
+  if (place.appleMapsProfileUrl) {
+    lines.push(`Apple Maps Profile: ${place.appleMapsProfileUrl}`);
+  }
+
   return lines.join("\n");
 }
 
@@ -173,6 +188,16 @@ function formatChunk(chunk: ChunkDocument): string {
   // Review tags (if available on chunks) show themes
   if (chunk.reviewsTags && Array.isArray(chunk.reviewsTags) && chunk.reviewsTags.length > 0) {
     lines.push(`Review Themes: ${chunk.reviewsTags.join(", ")}`);
+  }
+
+  // Reviewer ratings/questions (e.g., Food: 5, Service: 4, Price per person: $20-30)
+  if (chunk.reviewQuestions && typeof chunk.reviewQuestions === "object") {
+    const questionItems = Object.entries(chunk.reviewQuestions)
+      .filter(([, v]) => v)
+      .map(([k, v]) => `${k}: ${v}`);
+    if (questionItems.length > 0) {
+      lines.push(`Reviewer Ratings: ${questionItems.join(", ")}`);
+    }
   }
 
   return lines.join("\n");

@@ -48,6 +48,7 @@ export interface PlaceDocument {
   appleMapsProfileUrl?: string;
   website?: string;
   freeWifi?: boolean;
+  hasCinnamonRolls?: string;
   parking?: string[];
   size?: string;
   purchaseRequired?: boolean;
@@ -55,6 +56,7 @@ export interface PlaceDocument {
   reviewsCount?: number;
   workingHours?: Record<string, string>;
   about?: Record<string, unknown>;
+  popularTimes?: unknown[];
   typicalTimeSpent?: string;
   /** Aggregated review keywords from Google Maps */
   reviewsTags?: string[];
@@ -73,6 +75,8 @@ export interface ChunkDocument {
   placeName?: string;
   neighborhood?: string;
   address?: string;
+  googleMapsProfileUrl?: string;
+  appleMapsProfileUrl?: string;
   placeType?: string | string[];
   placeTags?: string | string[];
   reviewText?: string;
@@ -80,6 +84,10 @@ export interface ChunkDocument {
   reviewDatetimeUtc?: string;
   reviewLink?: string;
   ownerAnswer?: string;
+  /** Whether the owner responded to this review */
+  hasOwnerResponse?: boolean;
+  /** Reviewer ratings/questions (e.g., Food: 5, Service: 4) */
+  reviewQuestions?: Record<string, string>;
   reviewsTags?: string[];
   embedding?: number[];
   /** Added by vector search results */

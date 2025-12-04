@@ -417,22 +417,10 @@ export function PlacePageClient({ place }: { place: Place }) {
                         place={place}
                         layout="page"
                         showPhotosButton={false}
+                        onAskAI={() => setShowChat(true)}
                     />
                 </CardContent>
             </Card>
-
-            {/* Ask AI Button */}
-            <div className="flex justify-center">
-                <Button
-                    variant="outline"
-                    size="lg"
-                    className="font-semibold"
-                    onClick={() => setShowChat(true)}
-                >
-                    <Icons.comment className="h-5 w-5 mr-2" />
-                    Ask AI about {place.name}
-                </Button>
-            </div>
 
             {/* Chat Dialog */}
             <ChatDialog

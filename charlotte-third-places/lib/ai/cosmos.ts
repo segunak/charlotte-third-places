@@ -163,8 +163,9 @@ export async function vectorSearchChunks(
     query = `
       SELECT TOP @topK
         c.id, c.placeId, c.placeName, c.neighborhood, c.address, c.googleMapsProfileUrl,
-        c.appleMapsProfileUrl, c.placeType, c.placeTags, c.reviewText,
-        c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.reviewsTags,
+        c.appleMapsProfileUrl, c.placeType, c.placeTags, c.reviewText, c.reviewRating,
+        c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.hasOwnerResponse,
+        c.reviewQuestions, c.reviewsTags,
         VectorDistance(c.embedding, @queryEmbedding) AS distance
       FROM c
       WHERE c.placeId = @placeId
@@ -182,8 +183,10 @@ export async function vectorSearchChunks(
     query = `
       SELECT TOP @topK
         c.id, c.placeId, c.placeName, c.neighborhood, c.address,
+        c.googleMapsProfileUrl, c.appleMapsProfileUrl,
         c.placeType, c.placeTags, c.reviewText, c.reviewRating,
-        c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.reviewsTags,
+        c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.hasOwnerResponse,
+        c.reviewQuestions, c.reviewsTags,
         VectorDistance(c.embedding, @queryEmbedding) AS distance
       FROM c
       WHERE VectorDistance(c.embedding, @queryEmbedding) < @maxDistance
