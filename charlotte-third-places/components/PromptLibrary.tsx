@@ -206,7 +206,7 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
     )
 
     const LibraryContent = (
-        <ScrollArea className="h-[75dvh] sm:h-[500px]">
+        <ScrollArea className="h-[78dvh] sm:h-[500px]">
             <div className="pb-4 pl-1 pr-6">
                 <Accordion type="single" collapsible className="w-full">
                     {promptCategories.map((category) => (
