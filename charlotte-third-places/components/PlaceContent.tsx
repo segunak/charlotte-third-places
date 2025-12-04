@@ -95,7 +95,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 {onAskAI && (
                     <Button onClick={onAskAI} className="hidden lg:inline-flex">
                         <Icons.chat className="h-5 w-5 mr-2" />
-                        Ask AI!
+                        Ask AI
                     </Button>
                 )}
             </div>
