@@ -42,18 +42,10 @@ import {
   FaTags,
   FaMagnifyingGlassLocation,
   FaCouch,
-  FaSuperpowers
+  FaSuperpowers,
+  FaLightbulb,
+  FaRegLightbulb
 } from "react-icons/fa6";
-
-import {
-  FaCoffee,
-  FaShoppingCart,
-  FaBeer,
-  FaIceCream,
-  FaCocktail,
-  FaUniversity,
-  FaWineBottle,
-} from "react-icons/fa";
 
 import {
   GiPlantSeed,
@@ -64,6 +56,13 @@ import {
   FaChessQueen,
   FaComment,
   FaCross,
+  FaCoffee,
+  FaShoppingCart,
+  FaBeer,
+  FaIceCream,
+  FaCocktail,
+  FaUniversity,
+  FaWineBottle,
   FaArrowRight,
   FaArrowLeft,
   FaArrowsAltH,
@@ -107,7 +106,6 @@ import {
   IoSparkles,
   IoSparklesOutline
 } from "react-icons/io5";
-import { FaLightbulb } from "react-icons/fa6";
 import {
   LuMoon,
   LuSunMedium,
@@ -116,7 +114,6 @@ import {
   LuExternalLink,
   LuInstagram,
   LuShare,
-  LuLightbulb,
   LuArmchair,
   LuHeart,
   LuHeartHandshake,
@@ -177,6 +174,7 @@ export const Icons = {
   cross: FaCross,
   photoGallery: FaImages,
   lightbulb: FaLightbulb,
+  lightbulbOutline: FaRegLightbulb,
   armchair: LuArmchair,
   heart: LuHeart,
   handHeart: LuHeartHandshake,

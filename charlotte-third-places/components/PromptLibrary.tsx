@@ -183,9 +183,11 @@ const promptCategories: PromptCategory[] = [
 
 interface PromptLibraryProps {
     onSelectPrompt: (prompt: string) => void
+    /** Variant for styling - 'default' shows primary button, 'toolbar' shows ghost button matching input tools */
+    variant?: "default" | "toolbar"
 }
 
-export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
+export function PromptLibrary({ onSelectPrompt, variant = "default" }: PromptLibraryProps) {
     const [open, setOpen] = useState(false)
     const isMobile = useIsMobile()
 
@@ -194,7 +196,17 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
         setOpen(false)
     }
 
-    const TriggerButton = (
+const TriggerButton = variant === "toolbar" ? (
+        <Button
+            type="button"
+            variant="ghost"
+            size="sm"
+            className="text-muted-foreground hover:bg-primary h-8 px-2 text-xs inline-flex items-center"
+        >
+            <Icons.lightbulbOutline className="size-3.5 mr-1 shrink-0" />
+            <span className="leading-none">Prompt Ideas</span>
+        </Button>
+    ) : (
         <Button
             variant="default"
             size="sm"

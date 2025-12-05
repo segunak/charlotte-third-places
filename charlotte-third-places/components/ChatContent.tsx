@@ -302,18 +302,24 @@ export function ChatContent({
                         className={isPage ? "min-h-8 sm:min-h-12 max-h-12" : "min-h-12 max-h-32"}
                     />
                     <PromptInputFooter className="p-2">
-                        <PromptInputTools>
+                        <PromptInputTools className="gap-0">
                             {messages.length > 0 && (
-                                <Button
-                                    type="button"
-                                    variant="ghost"
-                                    size="sm"
-                                    onClick={handleClearHistory}
-                                    className="text-muted-foreground hover:bg-primary h-8 text-xs"
-                                >
-                                    <Trash2Icon className="size-3.5 mr-1" />
-                                    New chat
-                                </Button>
+                                <>
+                                    <Button
+                                        type="button"
+                                        variant="ghost"
+                                        size="sm"
+                                        onClick={handleClearHistory}
+                                        className="text-muted-foreground hover:bg-primary h-8 px-2 text-xs inline-flex items-center"
+                                    >
+                                        <Trash2Icon className="size-3.5 mr-1 shrink-0" />
+                                        <span className="leading-none">New Chat</span>
+                                    </Button>
+                                    <PromptLibrary 
+                                        onSelectPrompt={handleSuggestionClick} 
+                                        variant="toolbar" 
+                                    />
+                                </>
                             )}
                         </PromptInputTools>
                         <PromptInputSubmit
