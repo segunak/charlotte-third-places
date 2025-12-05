@@ -41,7 +41,8 @@ import {
   FaList,
   FaTags,
   FaMagnifyingGlassLocation,
-  FaCouch
+  FaCouch,
+  FaSuperpowers
 } from "react-icons/fa6";
 
 import {
@@ -143,6 +144,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Other": FaQuestion,
   "Photo Shop": IoCamera,
   "Lounge": FaCouch,
+  "Comic Book Store": FaSuperpowers,
 };
 
 // Helper function to get the appropriate icon for a place type
