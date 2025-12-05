@@ -107,10 +107,10 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 <Button
                     onClick={onAskAI}
                     size="icon"
-                    className="fixed bottom-20 right-3 z-50 h-9 w-9 rounded-full shadow-lg sm:hidden"
+                    className="fixed bottom-20 right-3 z-50 h-10 w-10 rounded-full shadow-lg sm:hidden"
                     aria-label="Ask AI about this place"
                 >
-                    <Icons.chat className="h-5 w-5" />
+                    <Icons.chat className="h-6 w-6" />
                 </Button>
             )}
 
