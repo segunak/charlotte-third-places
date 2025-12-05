@@ -56,7 +56,8 @@ import {
 
 import {
   GiPlantSeed,
-  GiCoffeeMug
+  GiCoffeeMug,
+  GiChatBubble
 } from "react-icons/gi";
 import {
   FaFilter,
@@ -143,6 +144,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Other": FaQuestion,
   "Photo Shop": IoCamera,
   "Lounge": FaCouch,
+  "Comic Book Store": GiChatBubble,
 };
 
 // Helper function to get the appropriate icon for a place type
