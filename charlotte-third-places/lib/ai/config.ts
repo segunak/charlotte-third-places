@@ -10,7 +10,6 @@
  *
  * URL Format (deployment-based):
  * POST https://{endpoint}/openai/deployments/{deployment-id}/chat/completions?api-version={version}
- * Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/gpt-5-mini/chat/completions?api-version=2024-05-01-preview
  */
 
 // Azure OpenAI / Foundry configuration

@@ -1,23 +1,22 @@
 /**
  * Embedding service for generating vector embeddings using Azure OpenAI.
- * Uses text-embedding-3-small model for 1536-dimensional embeddings.
+ * Model configuration is defined in config.ts.
  *
  * Azure OpenAI REST API Reference:
  * @see https://learn.microsoft.com/en-us/azure/ai-foundry/openai/reference?view=foundry-classic
  *
  * URL Format (deployment-based):
  * POST https://{endpoint}/openai/deployments/{deployment-id}/embeddings?api-version={version}
- * Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2024-05-01-preview
  */
 
 import { AI_CONFIG } from "./config";
 
 /**
  * Generate an embedding vector for a single text string.
- * Uses Azure OpenAI's text-embedding-3-small model via Foundry.
+ * Uses the embedding model configured in config.ts.
  * 
  * @param text - The text to embed
- * @returns 1536-dimensional embedding vector
+ * @returns Embedding vector (dimensions configured in config.ts)
  */
 export async function getEmbedding(text: string): Promise<number[]> {
   const apiKey = process.env.FOUNDRY_API_KEY;

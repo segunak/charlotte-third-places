@@ -28,8 +28,8 @@ flowchart TB
     end
 
     subgraph OpenAI["Azure OpenAI (Foundry)"]
-        GPT[gpt-4.1-mini]
-        Embed[text-embedding-3-small]
+        GPT[Chat Model]
+        Embed[Embedding Model]
     end
 
     Chat --> API
@@ -131,10 +131,12 @@ Located in `charlotte-third-places/lib/ai/` and `charlotte-third-places/app/api/
 
 ### Models (Azure OpenAI via Foundry)
 
-| Model | Deployment Name | Use |
-|-------|-----------------|-----|
-| GPT-4.1 Mini | `gpt-4.1-mini` | Chat completions |
-| text-embedding-3-small | `text-embedding-3-small` | Query embeddings |
+Models are configured in `charlotte-third-places/lib/ai/config.ts`. See `AI_CONFIG` for current deployment names.
+
+| Purpose | Config Key | Description |
+|---------|------------|-------------|
+| Chat completions | `chatModel` | Generates conversational responses |
+| Query embeddings | `embeddingModel` | Converts text to vectors for similarity search |
 
 **Endpoint**: `https://foundry-third-places.cognitiveservices.azure.com/`
 
