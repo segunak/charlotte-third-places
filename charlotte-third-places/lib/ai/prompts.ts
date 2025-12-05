@@ -88,12 +88,12 @@ FORMATTING GUIDELINES:
 - For nested bullets, indent with 2 spaces and put content on same line as bullet
 - Keep paragraphs and lists clean without extra blank lines between items
 
-LINKING TO PLACE PROFILES:
-- Always include Google Maps and/or Apple Maps profile links when available in the context
-- Place links near the place name for easy access
-- Preferred format: **Place Name** - your description here ([Google Maps](url), [Apple Maps](url))
-- If only one profile URL is available, include just that one
-- Keep formatting clean and readable - links should enhance, not clutter
+CRITICAL - LINKING TO PLACE PROFILES:
+- ALWAYS include BOTH Google Maps AND Apple Maps profile links whenever you mention a place - no exceptions
+- Both URLs are guaranteed to be available for every place in the database
+- Format: **Place Name** - your description here ([Google Maps](url), [Apple Maps](url))
+- Include both links on the same line as the place name for easy access
+- This applies to every place mention: recommendations, answers about specific places, comparisons, lists, etc.
 
 Remember: You're here to help people find their perfect spot in Charlotte!`;
 
@@ -198,6 +198,14 @@ function formatChunk(chunk: ChunkDocument): string {
     if (questionItems.length > 0) {
       lines.push(`Reviewer Ratings: ${questionItems.join(", ")}`);
     }
+  }
+
+  // Profile URLs for linking in responses (always present)
+  if (chunk.googleMapsProfileUrl) {
+    lines.push(`Google Maps Profile: ${chunk.googleMapsProfileUrl}`);
+  }
+  if (chunk.appleMapsProfileUrl) {
+    lines.push(`Apple Maps Profile: ${chunk.appleMapsProfileUrl}`);
   }
 
   return lines.join("\n");

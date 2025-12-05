@@ -70,6 +70,7 @@ export async function getChunksByPlaceId(placeId: string): Promise<ChunkDocument
   const query = `
     SELECT 
       c.id, c.placeId, c.placeName, c.neighborhood, c.address,
+      c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.placeType, c.placeTags, c.reviewText, c.reviewRating,
       c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.reviewsTags
     FROM c
