@@ -95,7 +95,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 {onAskAI && (
                     <Button
                         onClick={onAskAI}
-                        className="hidden lg:inline-flex">
+                        className="hidden sm:inline-flex">
                         <Icons.chat className={`${iconSize} mr-2`} />
                         Ask AI
                     </Button>
@@ -107,10 +107,10 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 <Button
                     onClick={onAskAI}
                     size="icon"
-                    className="fixed bottom-20 right-3 z-50 h-11 w-11 rounded-full shadow-lg lg:hidden"
+                    className="fixed bottom-20 right-3 z-50 h-9 w-9 rounded-full shadow-lg sm:hidden"
                     aria-label="Ask AI about this place"
                 >
-                    <Icons.chat className="h-6 w-6" />
+                    <Icons.chat className="h-5 w-5" />
                 </Button>
             )}
 
