@@ -41,7 +41,8 @@ import {
   FaList,
   FaTags,
   FaMagnifyingGlassLocation,
-  FaCouch
+  FaCouch,
+  FaSuperpowers
 } from "react-icons/fa6";
 
 import {
@@ -56,8 +57,7 @@ import {
 
 import {
   GiPlantSeed,
-  GiCoffeeMug,
-  GiChatBubble
+  GiCoffeeMug
 } from "react-icons/gi";
 import {
   FaFilter,
@@ -144,7 +144,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Other": FaQuestion,
   "Photo Shop": IoCamera,
   "Lounge": FaCouch,
-  "Comic Book Store": GiChatBubble,
+  "Comic Book Store": FaSuperpowers,
 };
 
 // Helper function to get the appropriate icon for a place type
