@@ -107,6 +107,7 @@ import {
   IoSparkles,
   IoSparklesOutline
 } from "react-icons/io5";
+import { FaLightbulb } from "react-icons/fa6";
 import {
   LuMoon,
   LuSunMedium,
@@ -114,7 +115,12 @@ import {
   LuNotebookPen,
   LuExternalLink,
   LuInstagram,
-  LuShare
+  LuShare,
+  LuLightbulb,
+  LuArmchair,
+  LuHeart,
+  LuHeartHandshake,
+  LuGamepad2
 } from "react-icons/lu";
 
 export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
@@ -170,6 +176,13 @@ export const Icons = {
   chevronUp: FaChevronUp,
   cross: FaCross,
   photoGallery: FaImages,
+  lightbulb: FaLightbulb,
+  armchair: LuArmchair,
+  heart: LuHeart,
+  handHeart: LuHeartHandshake,
+  gamepad: FaGamepad,
+  gamepad2: LuGamepad2,
+  laptop: FaLaptop,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"
