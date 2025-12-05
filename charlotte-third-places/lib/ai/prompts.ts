@@ -82,11 +82,30 @@ When asked for recommendations or suggestions:
 - Surface interesting details that make a recommendation memorable - the hidden back room, the homemade scones, the sunset view
 
 FORMATTING GUIDELINES:
+- ALWAYS bold place names: use **Place Name** every time you mention a place
 - When using bullet points, always put the content on the same line as the bullet marker
-- CORRECT: "- Place Name (Neighborhood)"
+- CORRECT: "- **Place Name** (Neighborhood)"
 - INCORRECT: "-\nPlace Name (Neighborhood)"  
 - For nested bullets, indent with 2 spaces and put content on same line as bullet
 - Keep paragraphs and lists clean without extra blank lines between items
+
+MANDATORY - PLACE PROFILE LINKS:
+Every place has both a Google Maps URL and an Apple Maps URL in the context data. You MUST use them.
+
+When mentioning a place for the FIRST TIME in a conversation:
+- Include BOTH links - Google Maps AND Apple Maps - never just one
+- Format exactly like this: **Place Name** - your text here ([Google Maps](url), [Apple Maps](url))
+- Find the URLs in the context under "Google Maps Profile:" and "Apple Maps Profile:"
+- Do not skip this step. Do not include only one link. Always both.
+
+On SUBSEQUENT mentions of the same place in the same conversation:
+- Just use **Place Name** without repeating the links
+
+Example first mention:
+"**Amelie's French Bakery** - A beloved NoDa spot with amazing pastries and cozy seating ([Google Maps](https://maps.google.com/...), [Apple Maps](https://maps.apple.com/...))"
+
+Example subsequent mention:
+"If you prefer something quieter than **Amelie's French Bakery**, consider..."
 
 Remember: You're here to help people find their perfect spot in Charlotte!`;
 
@@ -148,6 +167,14 @@ function formatPlace(place: PlaceDocument): string {
     }
   }
 
+  // Profile URLs for linking in responses
+  if (place.googleMapsProfileUrl) {
+    lines.push(`Google Maps Profile: ${place.googleMapsProfileUrl}`);
+  }
+  if (place.appleMapsProfileUrl) {
+    lines.push(`Apple Maps Profile: ${place.appleMapsProfileUrl}`);
+  }
+
   return lines.join("\n");
 }
 
@@ -173,6 +200,24 @@ function formatChunk(chunk: ChunkDocument): string {
   // Review tags (if available on chunks) show themes
   if (chunk.reviewsTags && Array.isArray(chunk.reviewsTags) && chunk.reviewsTags.length > 0) {
     lines.push(`Review Themes: ${chunk.reviewsTags.join(", ")}`);
+  }
+
+  // Reviewer ratings/questions (e.g., Food: 5, Service: 4, Price per person: $20-30)
+  if (chunk.reviewQuestions && typeof chunk.reviewQuestions === "object") {
+    const questionItems = Object.entries(chunk.reviewQuestions)
+      .filter(([, v]) => v)
+      .map(([k, v]) => `${k}: ${v}`);
+    if (questionItems.length > 0) {
+      lines.push(`Reviewer Ratings: ${questionItems.join(", ")}`);
+    }
+  }
+
+  // Profile URLs for linking in responses (always present)
+  if (chunk.googleMapsProfileUrl) {
+    lines.push(`Google Maps Profile: ${chunk.googleMapsProfileUrl}`);
+  }
+  if (chunk.appleMapsProfileUrl) {
+    lines.push(`Apple Maps Profile: ${chunk.appleMapsProfileUrl}`);
   }
 
   return lines.join("\n");

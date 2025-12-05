@@ -16,12 +16,15 @@ interface PlaceContentProps {
     /** The layout context - affects spacing and sizing */
     layout?: "modal" | "page";
     showPhotosButton?: boolean;
+    /** Callback for Ask AI button - if provided, shows the button */
+    onAskAI?: () => void;
 }
 
 export const PlaceContent: FC<PlaceContentProps> = ({
     place,
     layout = "modal",
-    showPhotosButton = true
+    showPhotosButton = true,
+    onAskAI
 }) => {
     const { showPlacePhotos } = useModalContext();
 
@@ -88,7 +91,28 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                     displayType="icon"
                     aria-label="Share Place"
                 />
+                {/* Desktop: Inline Ask AI button */}
+                {onAskAI && (
+                    <Button
+                        onClick={onAskAI}
+                        className="hidden sm:inline-flex">
+                        <Icons.chat className={`${iconSize} mr-2`} />
+                        Ask AI
+                    </Button>
+                )}
             </div>
+
+            {/* Mobile: Floating Ask AI button */}
+            {onAskAI && (
+                <Button
+                    onClick={onAskAI}
+                    size="icon"
+                    className="fixed bottom-20 right-3 z-50 h-10 w-10 rounded-full shadow-lg sm:hidden"
+                    aria-label="Ask AI about this place"
+                >
+                    <Icons.chat className="h-6 w-6" />
+                </Button>
+            )}
 
             <Separator />
 

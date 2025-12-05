@@ -31,8 +31,8 @@ export default async function MapPage() {
             </div>
 
             {/* Desktop */}
-            <div className="hidden sm:grid grid-cols-[minmax(0,_1fr)_265px] min-h-screen">
-                <section className="px-20 py-8">
+            <div className="hidden sm:grid grid-cols-[minmax(0,_1fr)_365px] min-h-screen">
+                <section className="site-padding-left pr-8 py-8">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">
                             Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
@@ -48,8 +48,8 @@ export default async function MapPage() {
                     </div>
                 </section>
 
-                <div className="mt-8 mb-8 mr-6">
-                    <FilterSidebar className="max-w-[265px] border border-border sticky top-16 px-4 space-y-3" />
+                <div className="mt-8 mb-8 mr-32">
+                    <FilterSidebar className="max-w-[365px] border border-border sticky top-16 px-4 space-y-3" />
                 </div>
             </div>
         </FilterProvider>

@@ -38,7 +38,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
 
     return (
         <FilterProvider places={places}>
-            <div className="min-h-screen px-4 sm:px-24 py-8 space-y-4">
+            <div className="min-h-screen site-padding-x py-8 space-y-4">
                 <h1 className="text-3xl font-bold">
                     Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
                     <span className="sm:hidden">Charlotte</span>
@@ -50,6 +50,25 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                         If you're not sure where to start, you can <Link href="/chat" className="custom-link">ask AI for recommendations</Link>. You can also check out the <Link href="/map" className="custom-link">map view</Link>, <Link href="/contribute" className="custom-link">share feedback</Link>, or <Link href="/about" className="custom-link">learn about this project</Link>.
                     </span>
                 </p>
+
+                {/* Desktop Hero AI Section - Entire banner is clickable */}
+                <Link href="/chat" className="hidden sm:block group">
+                    <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 border border-primary/20 rounded-xl p-6 flex items-center justify-between transition-all duration-200 hover:shadow-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer">
+                        <div className="flex items-center gap-4">
+                            <div className="bg-primary/20 rounded-full p-3 transition-colors group-hover:bg-primary/30">
+                                <Icons.chat className="h-8 w-8 text-primary" />
+                            </div>
+                            <div>
+                                <h2 className="text-lg font-semibold">Not sure where to go?</h2>
+                                <p className="text-muted-foreground">Get personalized recommendations from our AI assistant</p>
+                            </div>
+                        </div>
+                        <div className="bg-primary text-primary-foreground font-semibold px-6 py-2 rounded-md flex items-center transition-colors group-hover:bg-primary/90">
+                            Get Recommendations
+                            <Icons.arrowRight className="ml-2 h-4 w-4" />
+                        </div>
+                    </div>
+                </Link>
 
                 {/* Mobile-only instant action buttons */}
                 <div className="sm:hidden grid grid-cols-4 gap-3 !mt-6 !mb-6">
