@@ -25,7 +25,7 @@ import { AI_CONFIG } from "@/lib/ai/config";
  * Configuration:
  * - useDeploymentBasedUrls: true - Uses deployment-based URL format required by Azure AI Foundry
  * - URL format: {baseURL}/deployments/{deploymentId}{path}?api-version={version}
- * - Example: https://foundry-third-places.cognitiveservices.azure.com/openai/deployments/gpt-5-mini/chat/completions?api-version=2024-05-01-preview
+ * - Model configuration defined in lib/ai/config.ts
  */
 const azure = createAzure({
   apiKey: process.env.FOUNDRY_API_KEY,
