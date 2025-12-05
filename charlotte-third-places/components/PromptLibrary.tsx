@@ -36,7 +36,7 @@ interface PromptCategory {
 const promptCategories: PromptCategory[] = [
     {
         name: "Cozy Vibes",
-        icon: <Icons.armchair className="h-4 w-4" />,
+        icon: <Icons.armchair className="h-4 w-4 text-primary" />,
         prompts: [
             "Where can I find a spot with comfy couches to sink into?",
             "Are there any places in Charlotte with a fireplace?",
@@ -47,7 +47,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Solo Activities",
-        icon: <Icons.openBook className="h-4 w-4" />,
+        icon: <Icons.openBook className="h-4 w-4 text-primary" />,
         prompts: [
             "Where's a good spot to read a book alone on a Saturday morning?",
             "Show me quiet spots in Charlotte where I can journal or write.",
@@ -58,7 +58,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Work & Study",
-        icon: <Icons.laptop className="h-4 w-4" />,
+        icon: <Icons.laptop className="h-4 w-4 text-primary" />,
         prompts: [
             "Find me a spot with strong Wi-Fi and lots of outlets.",
             "Where can I work remotely for a full day without feeling rushed?",
@@ -69,7 +69,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Late Night",
-        icon: <Icons.moon className="h-4 w-4" />,
+        icon: <Icons.moon className="h-4 w-4 text-primary" />,
         prompts: [
             "What spots stay open late in Charlotte?",
             "Where can I study or work after 8 PM?",
@@ -80,7 +80,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Morning & Weekend",
-        icon: <Icons.sun className="h-4 w-4" />,
+        icon: <Icons.sun className="h-4 w-4 text-primary" />,
         prompts: [
             "Where's a great spot for early morning coffee before 7 AM?",
             "What places are best for a lazy Sunday morning?",
@@ -91,7 +91,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Groups & Social",
-        icon: <Icons.users className="h-4 w-4" />,
+        icon: <Icons.users className="h-4 w-4 text-primary" />,
         prompts: [
             "Where can a group of 6-8 people meet with a big table?",
             "What's a good spot for board games or hanging out for hours?",
@@ -102,7 +102,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Making Friends",
-        icon: <Icons.handHeart className="h-4 w-4" />,
+        icon: <Icons.handHeart className="h-4 w-4 text-primary" />,
         prompts: [
             "Where can I go to meet new people and make friends in Charlotte?",
             "What spots have a community vibe where regulars chat with each other?",
@@ -116,7 +116,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Hobbies & Interests",
-        icon: <Icons.gamepad2 className="h-4 w-4" />,
+        icon: <Icons.gamepad2 className="h-4 w-4 text-primary" />,
         prompts: [
             "Where do board game, Dungeons & Dragons, Magic the Gathering, and tabletop RPG fans hang out in Charlotte?",
             "Are there any places where book lovers gather or have book clubs?",
@@ -131,7 +131,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Date Ideas",
-        icon: <Icons.heart className="h-4 w-4" />,
+        icon: <Icons.heart className="h-4 w-4 text-primary" />,
         prompts: [
             "Where should I take someone who loves nature on a date?",
             "My date loves flowers, what's a romantic spot with gardens nearby?",
@@ -148,7 +148,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Hidden Gems",
-        icon: <Icons.sparkles className="h-4 w-4" />,
+        icon: <Icons.sparkles className="h-4 w-4 text-primary" />,
         prompts: [
             "What are some underrated hidden-gem spots around Charlotte?",
             "Recommend Black-owned spots to check out.",
@@ -159,7 +159,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Food & Drinks",
-        icon: <Icons.coffee className="h-4 w-4" />,
+        icon: <Icons.coffee className="h-4 w-4 text-primary" />,
         prompts: [
             "Where can I get great hot chocolate in Charlotte?",
             "What places have the best pastries to go with my coffee?",
@@ -170,7 +170,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "By Neighborhood",
-        icon: <Icons.mapPin className="h-4 w-4" />,
+        icon: <Icons.mapPin className="h-4 w-4 text-primary" />,
         prompts: [
             "What are the best third places in South End?",
             "Find me spots to work from in the Ballantyne area.",
@@ -263,7 +263,7 @@ const TriggerButton = variant === "toolbar" ? (
                 <DrawerContent>
                     <DrawerHeader>
                         <DrawerTitle className="flex items-center justify-center gap-2">
-                            <Icons.lightbulb className="h-5 w-5 text-yellow-500" />
+                            <Icons.lightbulb className="h-5 w-5 text-primary" />
                             Prompt Ideas
                         </DrawerTitle>
                     </DrawerHeader>
@@ -283,7 +283,7 @@ const TriggerButton = variant === "toolbar" ? (
             <DialogContent className="sm:max-w-xl">
                 <DialogHeader>
                     <DialogTitle className="flex items-center justify-center gap-2">
-                        <Icons.lightbulb className="h-5 w-5 text-yellow-500" />
+                        <Icons.lightbulb className="h-5 w-5 text-primary" />
                         Prompt Ideas
                     </DialogTitle>
                 </DialogHeader>
