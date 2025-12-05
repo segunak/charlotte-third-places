@@ -24,7 +24,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { Lightbulb, BookOpen, Laptop, Users, Coffee, MapPin, Sparkles, Armchair, Sun, Moon, Heart, Gamepad2, HandHeart } from "lucide-react"
+import { Icons } from "@/components/Icons"
 import { cn } from "@/lib/utils"
 
 interface PromptCategory {
@@ -36,7 +36,7 @@ interface PromptCategory {
 const promptCategories: PromptCategory[] = [
     {
         name: "Cozy Vibes",
-        icon: <Armchair className="h-4 w-4" />,
+        icon: <Icons.armchair className="h-4 w-4" />,
         prompts: [
             "Where can I find a spot with comfy couches to sink into?",
             "Are there any places in Charlotte with a fireplace?",
@@ -47,7 +47,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Solo Activities",
-        icon: <BookOpen className="h-4 w-4" />,
+        icon: <Icons.openBook className="h-4 w-4" />,
         prompts: [
             "Where's a good spot to read a book alone on a Saturday morning?",
             "Show me quiet spots in Charlotte where I can journal or write.",
@@ -58,7 +58,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Work & Study",
-        icon: <Laptop className="h-4 w-4" />,
+        icon: <Icons.laptop className="h-4 w-4" />,
         prompts: [
             "Find me a spot with strong Wi-Fi and lots of outlets.",
             "Where can I work remotely for a full day without feeling rushed?",
@@ -69,7 +69,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Late Night",
-        icon: <Moon className="h-4 w-4" />,
+        icon: <Icons.moon className="h-4 w-4" />,
         prompts: [
             "What spots stay open late in Charlotte?",
             "Where can I study or work after 8 PM?",
@@ -80,7 +80,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Morning & Weekend",
-        icon: <Sun className="h-4 w-4" />,
+        icon: <Icons.sun className="h-4 w-4" />,
         prompts: [
             "Where's a great spot for early morning coffee before 7 AM?",
             "What places are best for a lazy Sunday morning?",
@@ -91,7 +91,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Groups & Social",
-        icon: <Users className="h-4 w-4" />,
+        icon: <Icons.users className="h-4 w-4" />,
         prompts: [
             "Where can a group of 6-8 people meet with a big table?",
             "What's a good spot for board games or hanging out for hours?",
@@ -102,7 +102,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Making Friends",
-        icon: <HandHeart className="h-4 w-4" />,
+        icon: <Icons.handHeart className="h-4 w-4" />,
         prompts: [
             "Where can I go to meet new people and make friends in Charlotte?",
             "What spots have a community vibe where regulars chat with each other?",
@@ -116,7 +116,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Hobbies & Interests",
-        icon: <Gamepad2 className="h-4 w-4" />,
+        icon: <Icons.gamepad2 className="h-4 w-4" />,
         prompts: [
             "Where do board game, Dungeons & Dragons, Magic the Gathering, and tabletop RPG fans hang out in Charlotte?",
             "Are there any places where book lovers gather or have book clubs?",
@@ -131,7 +131,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Date Ideas",
-        icon: <Heart className="h-4 w-4" />,
+        icon: <Icons.heart className="h-4 w-4" />,
         prompts: [
             "Where should I take someone who loves nature on a date?",
             "My date loves flowers, what's a romantic spot with gardens nearby?",
@@ -148,7 +148,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Hidden Gems",
-        icon: <Sparkles className="h-4 w-4" />,
+        icon: <Icons.sparkles className="h-4 w-4" />,
         prompts: [
             "What are some underrated hidden-gem spots around Charlotte?",
             "Recommend Black-owned spots to check out.",
@@ -159,7 +159,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "Food & Drinks",
-        icon: <Coffee className="h-4 w-4" />,
+        icon: <Icons.coffee className="h-4 w-4" />,
         prompts: [
             "Where can I get great hot chocolate in Charlotte?",
             "What places have the best pastries to go with my coffee?",
@@ -170,7 +170,7 @@ const promptCategories: PromptCategory[] = [
     },
     {
         name: "By Neighborhood",
-        icon: <MapPin className="h-4 w-4" />,
+        icon: <Icons.mapPin className="h-4 w-4" />,
         prompts: [
             "What are the best third places in South End?",
             "Find me spots to work from in the Ballantyne area.",
@@ -200,8 +200,8 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
             size="sm"
             className="gap-2"
         >
-            <Lightbulb className="h-4 w-4" />
-            <span className="text-sm">Prompt Ideas</span>
+            <Icons.lightbulb className="h-4 w-4" />
+            <span className="text-sm font-semibold">Prompt Ideas</span>
         </Button>
     )
 
@@ -251,7 +251,7 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
                 <DrawerContent>
                     <DrawerHeader>
                         <DrawerTitle className="flex items-center justify-center gap-2">
-                            <Lightbulb className="h-5 w-5 text-primary" />
+                            <Icons.lightbulb className="h-5 w-5 text-yellow-500" />
                             Prompt Ideas
                         </DrawerTitle>
                     </DrawerHeader>
@@ -271,7 +271,7 @@ export function PromptLibrary({ onSelectPrompt }: PromptLibraryProps) {
             <DialogContent className="sm:max-w-xl">
                 <DialogHeader>
                     <DialogTitle className="flex items-center justify-center gap-2">
-                        <Lightbulb className="h-5 w-5 text-primary" />
+                        <Icons.lightbulb className="h-5 w-5 text-yellow-500" />
                         Prompt Ideas
                     </DialogTitle>
                 </DialogHeader>
