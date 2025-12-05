@@ -5,7 +5,7 @@ export function SiteFooter() {
 
     return (
         <footer className="hidden md:block bg-background z-50 py-6 md:py-0 border-t">
-            <div className="px-4 sm:px-24 py-8 mx-auto m-0 max-w-full flex flex-col items-center justify-between gap-4 md:h-10 md:flex-row">
+            <div className="site-padding-x py-8 mx-auto m-0 max-w-full flex flex-col items-center justify-between gap-4 md:h-10 md:flex-row">
                 <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
                     Built by{" "}
                     <a
