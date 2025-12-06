@@ -274,9 +274,9 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
      * Long neighborhood names (e.g., "Northwest Charlotte 🏘️") can collide with buttons.
      * 
-     * Solution: Measure once, apply all optimizations together if overflow is detected.
-     * This prevents flickering that would occur from progressive state changes where
-     * applying partial fixes changes measurements, creating a feedback loop.
+     * Solution: Measure once on mount, cache the result, and don't re-measure during scrolling.
+     * We use a ref to track whether we've already computed the overflow state for this place,
+     * preventing the feedback loop that causes flickering during scroll.
      * 
      * When overflow is detected, we apply ALL of these simultaneously:
      * - Reduced right padding (pr-[2px]) - recovers ~4px
@@ -291,9 +291,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      */
     const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
     const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
+    const hasCheckedOverflow = useRef(false);
     const [neighborhoodOverflows, setNeighborhoodOverflows] = useState(false);
-    const [neighborhoodNeedsReducedPadding, setNeighborhoodNeedsReducedPadding] = useState(false);
-    const [neighborhoodNeedsReducedFont, setNeighborhoodNeedsReducedFont] = useState(false);
 
     const checkNeighborhoodOverflow = useCallback(() => {
         const row = neighborhoodRowRef.current;
@@ -309,22 +308,34 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         const availableWidth = row.clientWidth - buttonsWidth - gap;
         
         // Check if text content would overflow at default size
-        // IMPORTANT: We measure once and apply all optimizations together to avoid
-        // feedback loops where applying partial fixes changes measurements
         const textScrollWidth = text.scrollWidth;
         const wouldOverflow = textScrollWidth > availableWidth;
         
-        // If ANY overflow detected, apply ALL optimizations at once
-        // This prevents flickering from progressive state changes
-        setNeighborhoodNeedsReducedPadding(wouldOverflow);
-        setNeighborhoodNeedsReducedFont(wouldOverflow);
         setNeighborhoodOverflows(wouldOverflow);
+        hasCheckedOverflow.current = true;
     }, []);
 
+    // Only check on mount and resize, not during scroll
     useEffect(() => {
-        checkNeighborhoodOverflow();
-        window.addEventListener('resize', checkNeighborhoodOverflow);
-        return () => window.removeEventListener('resize', checkNeighborhoodOverflow);
+        // Use requestAnimationFrame to ensure DOM is painted before measuring
+        const rafId = requestAnimationFrame(() => {
+            checkNeighborhoodOverflow();
+        });
+        
+        const handleResize = () => {
+            // Reset and re-measure on resize
+            hasCheckedOverflow.current = false;
+            setNeighborhoodOverflows(false);
+            requestAnimationFrame(() => {
+                checkNeighborhoodOverflow();
+            });
+        };
+        
+        window.addEventListener('resize', handleResize);
+        return () => {
+            cancelAnimationFrame(rafId);
+            window.removeEventListener('resize', handleResize);
+        };
     }, [checkNeighborhoodOverflow]);
 
     const displayTitle = useMemo(() => {
@@ -412,15 +423,14 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             className={`text-sm block min-w-0 flex-1 whitespace-nowrap overflow-hidden ${neighborhoodOverflows ? 'text-ellipsis' : ''}`}
                         >
                             <strong>Neighborhood: </strong>
-                            {/* AttributeTag gets pr-[2px] when space is tight (neighborhoodNeedsReducedPadding)
-                                and text-[0.7rem] for additional space recovery (neighborhoodNeedsReducedFont).
+                            {/* AttributeTag gets pr-[2px] and text-[0.7rem] when overflow detected.
                                 Using minimal padding (2px) instead of zero maintains visual breathing room.
-                                Combined, these can recover ~12-15px which may prevent truncation entirely */}
+                                All optimizations applied together to prevent flickering. */}
                             {place?.neighborhood && (
                                 <AttributeTag 
                                     className={cn(
-                                        neighborhoodNeedsReducedPadding && 'pr-[2px]',
-                                        neighborhoodNeedsReducedFont && 'text-[0.7rem]'
+                                        neighborhoodOverflows && 'pr-[2px]',
+                                        neighborhoodOverflows && 'text-[0.7rem]'
                                     )} 
                                     attribute={`${place.neighborhood} ${neighborhoodEmoji}`} 
                                 />
