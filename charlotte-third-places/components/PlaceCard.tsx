@@ -274,29 +274,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
      * Long neighborhood names (e.g., "Northwest Charlotte 🏘️") can collide with buttons.
      * 
-     * Solution: Three-phase approach to gracefully handle overflow:
+     * Solution: Measure once, apply all optimizations together if overflow is detected.
+     * This prevents flickering that would occur from progressive state changes where
+     * applying partial fixes changes measurements, creating a feedback loop.
      * 
-     * Phase 1 - Reduce padding (neighborhoodNeedsReducedPadding):
-     *   If content would overflow, first try reducing right padding (pr-[2px]).
-     *   This recovers ~4px while maintaining minimal visual breathing room.
-     *   Example: "University City 🏘️" might fit perfectly with reduced padding.
-     * 
-     * Phase 2 - Reduce font size (neighborhoodNeedsReducedFont):
-     *   If still overflowing after Phase 1, try reducing font size (text-[0.7rem]).
-     *   Combined with reduced padding, this recovers additional width (~10% of text width).
-     *   Example: "Northwest Charlotte 🏘️" might fit with smaller padding + font.
-     * 
-     * Phase 3 - Truncate with ellipsis (neighborhoodOverflows):
-     *   If content still overflows after Phases 1 & 2, apply text-ellipsis.
-     *   Example: "Very Long Neighborhood Name 🏘️" → "Very Long Neigh..." 🏘️
+     * When overflow is detected, we apply ALL of these simultaneously:
+     * - Reduced right padding (pr-[2px]) - recovers ~4px
+     * - Reduced font size (text-[0.7rem]) - recovers ~10px  
+     * - Text truncation with ellipsis
      * 
      * Edge cases handled:
      * 1. Short neighborhoods that fit fine → no changes applied
-     * 2. Medium neighborhoods that fit with reduced padding → pr-[2px] only
-     * 3. Longer neighborhoods that fit with reduced padding + font → pr-[2px] + text-[0.7rem]
-     * 4. Very long neighborhoods that need truncation → pr-[2px] + text-[0.7rem] + ellipsis
-     * 5. Recalculates on window resize for responsive behavior
-     * 6. Action buttons are protected with flex-shrink-0 so they never compress
+     * 2. Any overflow detected → all optimizations applied at once (no flickering)
+     * 3. Recalculates on window resize for responsive behavior
+     * 4. Action buttons are protected with flex-shrink-0 so they never compress
      */
     const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
     const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
@@ -313,43 +304,21 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         const buttonsDiv = row.querySelector('[data-buttons]') as HTMLElement;
         const buttonsWidth = buttonsDiv?.offsetWidth ?? 0;
         const gap = 8; // gap-2
-        // Reduced padding from px-1.5 (6px) to pr-[2px] recovers ~4px
-        const paddingRecovery = 4;
-        // Font reduction from text-xs (0.75rem) to text-[0.7rem] saves ~6.7% width
-        // For typical neighborhood text of ~150px, this recovers ~10px
-        const fontSizeRecovery = Math.round(text.scrollWidth * 0.067);
         
         // Available width for neighborhood text
         const availableWidth = row.clientWidth - buttonsWidth - gap;
         
-        // Check if text content would overflow at each phase
+        // Check if text content would overflow at default size
+        // IMPORTANT: We measure once and apply all optimizations together to avoid
+        // feedback loops where applying partial fixes changes measurements
         const textScrollWidth = text.scrollWidth;
         const wouldOverflow = textScrollWidth > availableWidth;
-        const wouldFitWithReducedPadding = textScrollWidth <= availableWidth + paddingRecovery;
-        const wouldFitWithReducedPaddingAndFont = textScrollWidth <= availableWidth + paddingRecovery + fontSizeRecovery;
         
-        // Apply progressive fixes: padding first, then font, then truncation
-        if (!wouldOverflow) {
-            // Fits fine, no changes needed
-            setNeighborhoodNeedsReducedPadding(false);
-            setNeighborhoodNeedsReducedFont(false);
-            setNeighborhoodOverflows(false);
-        } else if (wouldFitWithReducedPadding) {
-            // Phase 1: Reduced padding is enough
-            setNeighborhoodNeedsReducedPadding(true);
-            setNeighborhoodNeedsReducedFont(false);
-            setNeighborhoodOverflows(false);
-        } else if (wouldFitWithReducedPaddingAndFont) {
-            // Phase 2: Need both reduced padding and font
-            setNeighborhoodNeedsReducedPadding(true);
-            setNeighborhoodNeedsReducedFont(true);
-            setNeighborhoodOverflows(false);
-        } else {
-            // Phase 3: Still overflows, need all optimizations plus truncation
-            setNeighborhoodNeedsReducedPadding(true);
-            setNeighborhoodNeedsReducedFont(true);
-            setNeighborhoodOverflows(true);
-        }
+        // If ANY overflow detected, apply ALL optimizations at once
+        // This prevents flickering from progressive state changes
+        setNeighborhoodNeedsReducedPadding(wouldOverflow);
+        setNeighborhoodNeedsReducedFont(wouldOverflow);
+        setNeighborhoodOverflows(wouldOverflow);
     }, []);
 
     useEffect(() => {
