@@ -17,15 +17,15 @@
 
   /* Site-wide horizontal padding: mobile gets the first px value, desktop gets the second */
   .site-padding-x {
-    @apply px-4 sm:px-32;
+    @apply px-4 sm:px-24;
   }
 
   .site-padding-left {
-    @apply pl-4 sm:pl-32;
+    @apply pl-4 sm:pl-24;
   }
 
   .site-padding-right { 
-    @apply pr-4 sm:pr-32;
+    @apply pr-4 sm:pr-24;
   }
 
   .custom-highlight {

@@ -44,7 +44,8 @@ import {
   FaCouch,
   FaSuperpowers,
   FaLightbulb,
-  FaRegLightbulb
+  FaRegLightbulb,
+  FaHouseChimney
 } from "react-icons/fa6";
 
 import {
@@ -228,6 +229,7 @@ export const Icons = {
   arrowLeftRight: FaArrowsAltH,
   arrowRight: FaArrowRight,
   houses: BsFillHousesFill,
+  houseChimney: FaHouseChimney,
   wifi: FaWifi,
   users: FaUsers,
   coffee: FaCoffee,
