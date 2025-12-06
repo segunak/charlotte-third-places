@@ -161,7 +161,7 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute, icon, className }
         <span className={cn(
             bgColor,
             textColor,
-            "whitespace-nowrap text-[0.71rem] font-semibold px-1.5 py-0.5 rounded-lg",
+            "whitespace-nowrap text-xs font-semibold px-1.5 py-0.5 rounded-lg",
             className
         )}>
             {displayContent}
@@ -274,28 +274,35 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
      * Long neighborhood names (e.g., "Northwest Charlotte 🏘️") can collide with buttons.
      * 
-     * Solution: Two-phase approach to gracefully handle overflow:
+     * Solution: Three-phase approach to gracefully handle overflow:
      * 
      * Phase 1 - Reduce padding (neighborhoodNeedsReducedPadding):
-     *   If content would overflow, first try removing right padding (pr-0).
-     *   This recovers ~6px which may be enough for borderline cases.
-     *   Example: "University City 🏘️" might fit perfectly with pr-0.
+     *   If content would overflow, first try reducing right padding (pr-[2px]).
+     *   This recovers ~4px while maintaining minimal visual breathing room.
+     *   Example: "University City 🏘️" might fit perfectly with reduced padding.
      * 
-     * Phase 2 - Truncate with ellipsis (neighborhoodOverflows):
-     *   If content still overflows after removing padding, apply text-ellipsis.
-     *   Example: "Northwest Charlotte 🏘️" → "Northwest Charl..." 🏘️
+     * Phase 2 - Reduce font size (neighborhoodNeedsReducedFont):
+     *   If still overflowing after Phase 1, try reducing font size (text-[0.7rem]).
+     *   Combined with reduced padding, this recovers additional width (~10% of text width).
+     *   Example: "Northwest Charlotte 🏘️" might fit with smaller padding + font.
+     * 
+     * Phase 3 - Truncate with ellipsis (neighborhoodOverflows):
+     *   If content still overflows after Phases 1 & 2, apply text-ellipsis.
+     *   Example: "Very Long Neighborhood Name 🏘️" → "Very Long Neigh..." 🏘️
      * 
      * Edge cases handled:
      * 1. Short neighborhoods that fit fine → no changes applied
-     * 2. Medium neighborhoods that fit with reduced padding → pr-0 only, no ellipsis
-     * 3. Long neighborhoods that need truncation → pr-0 AND ellipsis
-     * 4. Recalculates on window resize for responsive behavior
-     * 5. Action buttons are protected with flex-shrink-0 so they never compress
+     * 2. Medium neighborhoods that fit with reduced padding → pr-[2px] only
+     * 3. Longer neighborhoods that fit with reduced padding + font → pr-[2px] + text-[0.7rem]
+     * 4. Very long neighborhoods that need truncation → pr-[2px] + text-[0.7rem] + ellipsis
+     * 5. Recalculates on window resize for responsive behavior
+     * 6. Action buttons are protected with flex-shrink-0 so they never compress
      */
     const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
     const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
     const [neighborhoodOverflows, setNeighborhoodOverflows] = useState(false);
     const [neighborhoodNeedsReducedPadding, setNeighborhoodNeedsReducedPadding] = useState(false);
+    const [neighborhoodNeedsReducedFont, setNeighborhoodNeedsReducedFont] = useState(false);
 
     const checkNeighborhoodOverflow = useCallback(() => {
         const row = neighborhoodRowRef.current;
@@ -306,28 +313,42 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         const buttonsDiv = row.querySelector('[data-buttons]') as HTMLElement;
         const buttonsWidth = buttonsDiv?.offsetWidth ?? 0;
         const gap = 8; // gap-2
-        const paddingRecovery = 6; // Approximate px-1.5 = 6px that pr-0 would recover
+        // Reduced padding from px-1.5 (6px) to pr-[2px] recovers ~4px
+        const paddingRecovery = 4;
+        // Font reduction from text-xs (0.75rem) to text-[0.7rem] saves ~6.7% width
+        // For typical neighborhood text of ~150px, this recovers ~10px
+        const fontSizeRecovery = Math.round(text.scrollWidth * 0.067);
         
         // Available width for neighborhood text
         const availableWidth = row.clientWidth - buttonsWidth - gap;
         
-        // Check if text content would overflow
+        // Check if text content would overflow at each phase
         const textScrollWidth = text.scrollWidth;
         const wouldOverflow = textScrollWidth > availableWidth;
         const wouldFitWithReducedPadding = textScrollWidth <= availableWidth + paddingRecovery;
+        const wouldFitWithReducedPaddingAndFont = textScrollWidth <= availableWidth + paddingRecovery + fontSizeRecovery;
         
-        // If it would overflow, first try reducing padding
-        if (wouldOverflow && wouldFitWithReducedPadding) {
-            setNeighborhoodNeedsReducedPadding(true);
-            setNeighborhoodOverflows(false);
-        } else if (wouldOverflow) {
-            // Still overflows even with reduced padding - apply both
-            setNeighborhoodNeedsReducedPadding(true);
-            setNeighborhoodOverflows(true);
-        } else {
+        // Apply progressive fixes: padding first, then font, then truncation
+        if (!wouldOverflow) {
             // Fits fine, no changes needed
             setNeighborhoodNeedsReducedPadding(false);
+            setNeighborhoodNeedsReducedFont(false);
             setNeighborhoodOverflows(false);
+        } else if (wouldFitWithReducedPadding) {
+            // Phase 1: Reduced padding is enough
+            setNeighborhoodNeedsReducedPadding(true);
+            setNeighborhoodNeedsReducedFont(false);
+            setNeighborhoodOverflows(false);
+        } else if (wouldFitWithReducedPaddingAndFont) {
+            // Phase 2: Need both reduced padding and font
+            setNeighborhoodNeedsReducedPadding(true);
+            setNeighborhoodNeedsReducedFont(true);
+            setNeighborhoodOverflows(false);
+        } else {
+            // Phase 3: Still overflows, need all optimizations plus truncation
+            setNeighborhoodNeedsReducedPadding(true);
+            setNeighborhoodNeedsReducedFont(true);
+            setNeighborhoodOverflows(true);
         }
     }, []);
 
@@ -422,11 +443,16 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             className={`text-sm block min-w-0 flex-1 whitespace-nowrap overflow-hidden ${neighborhoodOverflows ? 'text-ellipsis' : ''}`}
                         >
                             <strong>Neighborhood: </strong>
-                            {/* AttributeTag gets pr-0 when space is tight (neighborhoodNeedsReducedPadding)
-                                This can recover ~6px which may prevent the need for truncation entirely */}
+                            {/* AttributeTag gets pr-[2px] when space is tight (neighborhoodNeedsReducedPadding)
+                                and text-[0.7rem] for additional space recovery (neighborhoodNeedsReducedFont).
+                                Using minimal padding (2px) instead of zero maintains visual breathing room.
+                                Combined, these can recover ~12-15px which may prevent truncation entirely */}
                             {place?.neighborhood && (
                                 <AttributeTag 
-                                    className={neighborhoodNeedsReducedPadding ? 'pr-0' : ''} 
+                                    className={cn(
+                                        neighborhoodNeedsReducedPadding && 'pr-[2px]',
+                                        neighborhoodNeedsReducedFont && 'text-[0.7rem]'
+                                    )} 
                                     attribute={`${place.neighborhood} ${neighborhoodEmoji}`} 
                                 />
                             )}
