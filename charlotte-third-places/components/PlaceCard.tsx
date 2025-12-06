@@ -274,9 +274,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
      * Long neighborhood names (e.g., "Northwest Charlotte 🏘️") can collide with buttons.
      * 
-     * Solution: Measure once on mount, cache the result, and don't re-measure during scrolling.
-     * We use a ref to track whether we've already computed the overflow state for this place,
-     * preventing the feedback loop that causes flickering during scroll.
+     * Solution: Measure ONCE on mount, cache the result. Only re-measure on window resize.
+     * This prevents any recalculation during scrolling which causes flickering.
      * 
      * When overflow is detected, we apply ALL of these simultaneously:
      * - Reduced right padding (pr-[2px]) - recovers ~4px
@@ -285,58 +284,60 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * 
      * Edge cases handled:
      * 1. Short neighborhoods that fit fine → no changes applied
-     * 2. Any overflow detected → all optimizations applied at once (no flickering)
-     * 3. Recalculates on window resize for responsive behavior
+     * 2. Any overflow detected → all optimizations applied at once
+     * 3. Only recalculates on window resize, NEVER during scroll
      * 4. Action buttons are protected with flex-shrink-0 so they never compress
      */
     const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
     const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
-    const hasCheckedOverflow = useRef(false);
     const [neighborhoodOverflows, setNeighborhoodOverflows] = useState(false);
 
-    const checkNeighborhoodOverflow = useCallback(() => {
-        const row = neighborhoodRowRef.current;
-        const text = neighborhoodTextRef.current;
-        if (!row || !text) return;
-
-        // Get the buttons width (flex-shrink-0 div)
-        const buttonsDiv = row.querySelector('[data-buttons]') as HTMLElement;
-        const buttonsWidth = buttonsDiv?.offsetWidth ?? 0;
-        const gap = 8; // gap-2
-        
-        // Available width for neighborhood text
-        const availableWidth = row.clientWidth - buttonsWidth - gap;
-        
-        // Check if text content would overflow at default size
-        const textScrollWidth = text.scrollWidth;
-        const wouldOverflow = textScrollWidth > availableWidth;
-        
-        setNeighborhoodOverflows(wouldOverflow);
-        hasCheckedOverflow.current = true;
-    }, []);
-
-    // Only check on mount and resize, not during scroll
+    // Measure once on mount and on resize only - never during scroll
     useEffect(() => {
-        // Use requestAnimationFrame to ensure DOM is painted before measuring
-        const rafId = requestAnimationFrame(() => {
-            checkNeighborhoodOverflow();
-        });
+        const measureOverflow = () => {
+            const row = neighborhoodRowRef.current;
+            const text = neighborhoodTextRef.current;
+            if (!row || !text) return;
+
+            // Temporarily remove optimization classes to measure true content width
+            const originalClassName = text.className;
+            text.className = text.className.replace('text-ellipsis', '');
+            
+            // Get the buttons width (flex-shrink-0 div)
+            const buttonsDiv = row.querySelector('[data-buttons]') as HTMLElement;
+            const buttonsWidth = buttonsDiv?.offsetWidth ?? 0;
+            const gap = 8; // gap-2
+            
+            // Available width for neighborhood text
+            const availableWidth = row.clientWidth - buttonsWidth - gap;
+            
+            // Check if text content would overflow
+            const textScrollWidth = text.scrollWidth;
+            const wouldOverflow = textScrollWidth > availableWidth;
+            
+            // Restore original class
+            text.className = originalClassName;
+            
+            setNeighborhoodOverflows(wouldOverflow);
+        };
+
+        // Initial measurement after DOM paint
+        const rafId = requestAnimationFrame(measureOverflow);
         
+        // Debounced resize handler
+        let resizeTimeout: NodeJS.Timeout;
         const handleResize = () => {
-            // Reset and re-measure on resize
-            hasCheckedOverflow.current = false;
-            setNeighborhoodOverflows(false);
-            requestAnimationFrame(() => {
-                checkNeighborhoodOverflow();
-            });
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(measureOverflow, 100);
         };
         
         window.addEventListener('resize', handleResize);
         return () => {
             cancelAnimationFrame(rafId);
+            clearTimeout(resizeTimeout);
             window.removeEventListener('resize', handleResize);
         };
-    }, [checkNeighborhoodOverflow]);
+    }, [place?.neighborhood]); // Only re-run if neighborhood changes
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
