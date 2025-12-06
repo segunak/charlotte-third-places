@@ -1,6 +1,7 @@
 import { Place } from "@/lib/types";
-import { FC, useMemo, memo } from "react";
+import { FC, useMemo, memo, useRef, useState, useEffect, useCallback } from "react";
 import { Icons } from "@/components/Icons";
+import { cn } from "@/lib/utils";
 import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
@@ -121,17 +122,34 @@ const getAttributeColors = (attribute: string) => {
 
 interface AttributeTagProps {
     attribute: string; // The attribute to be displayed
+    icon?: React.ReactNode; // Optional icon to display after attribute
+    /**
+     * Optional className to override default styles.
+     * 
+     * IMPORTANT: AttributeTag has NO default margin (mr-0). Callers must explicitly add
+     * margin classes (e.g., "mr-2") when spacing between multiple tags is needed.
+     * This design choice ensures the last tag in a row (like Neighborhood) doesn't have
+     * unwanted trailing space that could cause layout issues with adjacent elements.
+     */
+    className?: string;
 }
 
-// Functional component wrapped with memo for performance optimization
-const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
+/**
+ * Displays an attribute as a styled tag with a colored background and optional icon/emoji.
+ * 
+ * Key styling decisions:
+ * - `whitespace-nowrap`: Prevents text + emoji from wrapping mid-tag (e.g., "Coffee" on one line, "☕" on the next)
+ * - No default margin: Callers control spacing via className prop
+ * - Uses cn() for class merging so callers can override padding (e.g., pr-0 for tight spaces)
+ */
+const AttributeTag: FC<AttributeTagProps> = memo(({ attribute, icon, className }) => {
     // Memoize the result of getAttributeColors to avoid unnecessary recalculations
     const { bgColor, textColor } = useMemo(() => getAttributeColors(attribute), [attribute]);
 
     /* We want it to appear as "attribute iconOrEmoji" on one line If iconOrEmoji is a string (like "🤷" or "🍞"), 
     do string concatenation. If it's a React node (like <Icons.mobile />), render it inline */
     let displayContent;
-    const iconOrEmoji = sizeIconMap[attribute] ?? typeEmojiMap[attribute] ?? "";
+    const iconOrEmoji = icon ?? sizeIconMap[attribute] ?? typeEmojiMap[attribute] ?? "";
 
     if (typeof iconOrEmoji === "string") {
         displayContent = `${attribute} ${iconOrEmoji}`;
@@ -140,7 +158,12 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute }) => {
     }
 
     return (
-        <span className={`${bgColor} ${textColor} text-balance text-xs font-semibold mr-2 px-1.5 py-0.5 rounded-lg`}>
+        <span className={cn(
+            bgColor,
+            textColor,
+            "whitespace-nowrap text-xs font-semibold px-1.5 py-0.5 rounded-lg",
+            className
+        )}>
             {displayContent}
         </span>
     );
@@ -182,6 +205,97 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const DEFAULT_BADGE_PADDING = 'p-1.5';
     // Badges array already ordered so that most important (lowest numeric priority) ends up at the far right.
     const badges = highlights.badges;
+
+    /**
+     * OVERFLOW DETECTION FOR TYPE ROW
+     * 
+     * Problem: Places can have multiple types (e.g., "Comic Book Store", "Game Store", "Ice Cream Shop").
+     * Long type names or many types can overflow the card width, causing ugly wrapping.
+     * 
+     * Solution: Dynamically calculate how many type tags fit, and show "+N more" for the rest.
+     * 
+     * Edge cases handled:
+     * 1. Long individual type names (e.g., "Comic Book Store" takes more space than "Café")
+     * 2. Multiple types that together exceed available width
+     * 3. Always show at least 2 types (if they exist) to maintain visual consistency
+     * 4. Reserve space for "+N more" indicator when calculating fit
+     * 5. Recalculate on window resize for responsive behavior
+     * 
+     * Example: "Comic Book Store", "Game Store", "Ice Cream Shop" → "Comic Book Store", "Game Store", "+1 more"
+     */
+    const typeContainerRef = useRef<HTMLSpanElement>(null);
+    const [visibleTypeCount, setVisibleTypeCount] = useState(place?.type?.length ?? 0);
+
+    const calculateVisibleTypes = useCallback(() => {
+        const container = typeContainerRef.current;
+        if (!container || !place?.type?.length) return;
+
+        const containerWidth = container.clientWidth;
+        const children = Array.from(container.children) as HTMLElement[];
+        
+        // Find the "Type:" label width (first child)
+        let usedWidth = children[0]?.offsetWidth ?? 0;
+        usedWidth += 8; // space-x-2 gap
+        
+        let fitCount = 0;
+        const moreIndicatorWidth = 70; // Approximate width for "+N more" badge
+        
+        for (let i = 1; i < children.length; i++) {
+            const child = children[i];
+            if (!child || child.dataset.moreIndicator) continue;
+            
+            const childWidth = child.offsetWidth + 8; // Include gap
+            const remainingTypes = place.type.length - fitCount;
+            const needsMoreIndicator = remainingTypes > 1;
+            const reservedWidth = needsMoreIndicator ? moreIndicatorWidth : 0;
+            
+            if (usedWidth + childWidth + reservedWidth <= containerWidth) {
+                usedWidth += childWidth;
+                fitCount++;
+            } else {
+                break;
+            }
+        }
+        
+        // Show at least 2 types if they exist
+        const minTypes = Math.min(2, place.type.length);
+        setVisibleTypeCount(Math.max(minTypes, fitCount));
+    }, [place?.type?.length]);
+
+    useEffect(() => {
+        calculateVisibleTypes();
+        window.addEventListener('resize', calculateVisibleTypes);
+        return () => window.removeEventListener('resize', calculateVisibleTypes);
+    }, [calculateVisibleTypes]);
+
+    /**
+     * OVERFLOW HANDLING FOR NEIGHBORHOOD ROW
+     * 
+     * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
+     * Long neighborhood names (e.g., "North Sharon Amity / Reddman Road") can collide with buttons.
+     * 
+     * Solution: Deterministic character-length check instead of runtime DOM measurement.
+     * This eliminates flickering because the value is computed once and never changes.
+     * 
+     * Threshold: 13 characters (based on actual data analysis)
+     * - We append " 🏘️" (space + emoji) which adds ~3 character widths
+     * - So effective display length = neighborhood.length + 3
+     * - Threshold of 13 catches neighborhoods like "West Sugar Creek" (16 chars)
+     *   that would otherwise overflow when the emoji is added
+     * 
+     * When overflow is predicted, we apply ALL of these:
+     * - Reduced right padding (pr-[2px]) - recovers ~4px
+     * - Reduced font size (text-[0.7rem]) - recovers ~10px  
+     * - Text truncation with ellipsis as final fallback
+     */
+    const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
+    const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
+    
+    const NEIGHBORHOOD_CHAR_THRESHOLD = 13;
+    const neighborhoodOverflows = useMemo(() => {
+        if (!place?.neighborhood) return false;
+        return place.neighborhood.length > NEIGHBORHOOD_CHAR_THRESHOLD;
+    }, [place?.neighborhood]);
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
@@ -229,20 +343,63 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         <strong>Size: </strong>
                         {place?.size && <AttributeTag attribute={place.size} />}
                     </span>
-                    <span className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden">
+                    {/* TYPE ROW: Uses overflow detection to show only types that fit, with "+N more" for extras.
+                        - ref={typeContainerRef}: Used by calculateVisibleTypes() to measure available width
+                        - flex-nowrap: Prevents types from wrapping to next line (we handle overflow with "+N more" instead)
+                        - overflow-hidden: Clips any content that might still exceed bounds
+                        - h-6: Fixed height prevents layout shift when type count changes */}
+                    <span 
+                        ref={typeContainerRef}
+                        className="text-sm flex flex-nowrap items-center space-x-2 h-6 overflow-hidden"
+                    >
                         <strong>Type: </strong>
-                        {place?.type?.map((tag) => (
+                        {place?.type?.slice(0, visibleTypeCount).map((tag) => (
                             <AttributeTag key={tag} attribute={tag} />
                         ))}
+                        {place?.type && place.type.length > visibleTypeCount && (
+                            <span 
+                                data-more-indicator="true"
+                                className="bg-gray-200 text-gray-700 whitespace-nowrap text-xs font-semibold px-1.5 py-0.5 rounded-lg"
+                            >
+                                +{place.type.length - visibleTypeCount} more
+                            </span>
+                        )}
                     </span>
 
-                    <span className="flex justify-between">
-                        <span className="text-sm block">
+                    {/* NEIGHBORHOOD ROW: Shares space with action buttons, uses smart overflow handling.
+                        - ref={neighborhoodRowRef}: Used by checkNeighborhoodOverflow() to measure available width
+                        - justify-between: Pushes neighborhood text to left, buttons to right
+                        - gap-2: Ensures minimum spacing between text and buttons */}
+                    <span ref={neighborhoodRowRef} className="flex justify-between gap-2">
+                        {/* Neighborhood text container:
+                            - min-w-0: Allows flex item to shrink below content size (required for truncation)
+                            - flex-1: Takes remaining space after buttons
+                            - whitespace-nowrap: Prevents wrapping (we use ellipsis instead)
+                            - overflow-hidden: Required for text-ellipsis to work
+                            - text-ellipsis: Only applied when neighborhoodOverflows is true */}
+                        <span 
+                            ref={neighborhoodTextRef}
+                            className={`text-sm block min-w-0 flex-1 whitespace-nowrap overflow-hidden ${neighborhoodOverflows ? 'text-ellipsis' : ''}`}
+                        >
                             <strong>Neighborhood: </strong>
-                            {place?.neighborhood && <AttributeTag attribute={`${place.neighborhood} ${neighborhoodEmoji}`} />}
+                            {/* AttributeTag gets pr-[2px] and text-[0.7rem] when overflow detected.
+                                Using minimal padding (2px) instead of zero maintains visual breathing room.
+                                All optimizations applied together to prevent flickering. */}
+                            {place?.neighborhood && (
+                                <AttributeTag 
+                                    className={cn(
+                                        neighborhoodOverflows && 'pr-[2px]',
+                                        neighborhoodOverflows && 'text-[0.7rem]'
+                                    )} 
+                                    attribute={`${place.neighborhood} ${neighborhoodEmoji}`} 
+                                />
+                            )}
                         </span>
 
-                        <div className="flex space-x-2">
+                        {/* Action buttons container:
+                            - flex-shrink-0: CRITICAL - prevents buttons from compressing when space is tight
+                            - data-buttons: Used by checkNeighborhoodOverflow() to measure button width */}
+                        <div data-buttons className="flex space-x-2 flex-shrink-0">
                             <Button
                                 variant="default"
                                 size="icon"
