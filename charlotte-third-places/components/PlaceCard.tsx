@@ -269,75 +269,33 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     }, [calculateVisibleTypes]);
 
     /**
-     * OVERFLOW DETECTION FOR NEIGHBORHOOD ROW
+     * OVERFLOW HANDLING FOR NEIGHBORHOOD ROW
      * 
      * Problem: The Neighborhood row shares space with action buttons (Chat, Photos, Info).
-     * Long neighborhood names (e.g., "Northwest Charlotte 🏘️") can collide with buttons.
+     * Long neighborhood names (e.g., "North Sharon Amity / Reddman Road") can collide with buttons.
      * 
-     * Solution: Measure ONCE on mount, cache the result. Only re-measure on window resize.
-     * This prevents any recalculation during scrolling which causes flickering.
+     * Solution: Deterministic character-length check instead of runtime DOM measurement.
+     * This eliminates flickering because the value is computed once and never changes.
      * 
-     * When overflow is detected, we apply ALL of these simultaneously:
+     * Threshold: 13 characters (based on actual data analysis)
+     * - We append " 🏘️" (space + emoji) which adds ~3 character widths
+     * - So effective display length = neighborhood.length + 3
+     * - Threshold of 13 catches neighborhoods like "West Sugar Creek" (16 chars)
+     *   that would otherwise overflow when the emoji is added
+     * 
+     * When overflow is predicted, we apply ALL of these:
      * - Reduced right padding (pr-[2px]) - recovers ~4px
      * - Reduced font size (text-[0.7rem]) - recovers ~10px  
-     * - Text truncation with ellipsis
-     * 
-     * Edge cases handled:
-     * 1. Short neighborhoods that fit fine → no changes applied
-     * 2. Any overflow detected → all optimizations applied at once
-     * 3. Only recalculates on window resize, NEVER during scroll
-     * 4. Action buttons are protected with flex-shrink-0 so they never compress
+     * - Text truncation with ellipsis as final fallback
      */
     const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
     const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
-    const [neighborhoodOverflows, setNeighborhoodOverflows] = useState(false);
-
-    // Measure once on mount and on resize only - never during scroll
-    useEffect(() => {
-        const measureOverflow = () => {
-            const row = neighborhoodRowRef.current;
-            const text = neighborhoodTextRef.current;
-            if (!row || !text) return;
-
-            // Temporarily remove optimization classes to measure true content width
-            const originalClassName = text.className;
-            text.className = text.className.replace('text-ellipsis', '');
-            
-            // Get the buttons width (flex-shrink-0 div)
-            const buttonsDiv = row.querySelector('[data-buttons]') as HTMLElement;
-            const buttonsWidth = buttonsDiv?.offsetWidth ?? 0;
-            const gap = 8; // gap-2
-            
-            // Available width for neighborhood text
-            const availableWidth = row.clientWidth - buttonsWidth - gap;
-            
-            // Check if text content would overflow
-            const textScrollWidth = text.scrollWidth;
-            const wouldOverflow = textScrollWidth > availableWidth;
-            
-            // Restore original class
-            text.className = originalClassName;
-            
-            setNeighborhoodOverflows(wouldOverflow);
-        };
-
-        // Initial measurement after DOM paint
-        const rafId = requestAnimationFrame(measureOverflow);
-        
-        // Debounced resize handler
-        let resizeTimeout: NodeJS.Timeout;
-        const handleResize = () => {
-            clearTimeout(resizeTimeout);
-            resizeTimeout = setTimeout(measureOverflow, 100);
-        };
-        
-        window.addEventListener('resize', handleResize);
-        return () => {
-            cancelAnimationFrame(rafId);
-            clearTimeout(resizeTimeout);
-            window.removeEventListener('resize', handleResize);
-        };
-    }, [place?.neighborhood]); // Only re-run if neighborhood changes
+    
+    const NEIGHBORHOOD_CHAR_THRESHOLD = 13;
+    const neighborhoodOverflows = useMemo(() => {
+        if (!place?.neighborhood) return false;
+        return place.neighborhood.length > NEIGHBORHOOD_CHAR_THRESHOLD;
+    }, [place?.neighborhood]);
 
     const displayTitle = useMemo(() => {
         return place?.name || '';
