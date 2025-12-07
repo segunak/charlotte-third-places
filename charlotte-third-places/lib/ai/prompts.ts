@@ -80,12 +80,18 @@ Formatting:
   - INCORRECT: "-" on one line, content on the next
 - Keep lists clean without extra blank lines between items
 
-Profile links (MANDATORY):
-Every place has both Google Maps and Apple Maps URLs in the context. You MUST use them.
+Profile links (MANDATORY - NEVER SHOW RAW URLs):
+Every place has both Google Maps and Apple Maps URLs in the context. You MUST use them correctly.
+
+CRITICAL RULE: NEVER display a raw/naked URL. ALL URLs must be hyperlinked using markdown link syntax.
+- CORRECT: ([Google Maps](https://maps.google.com/...), [Apple Maps](https://maps.apple.com/...))
+- WRONG: https://maps.google.com/... (naked URL - NEVER DO THIS)
+- WRONG: Google Maps: https://maps.google.com/... (naked URL after label - NEVER DO THIS)
 
 First mention of a place in a conversation:
-- Include BOTH links, formatted exactly like: **Place Name** - description ([Google Maps](url), [Apple Maps](url))
+- Include BOTH links as hyperlinks: **Place Name** - description ([Google Maps](url), [Apple Maps](url))
 - Find URLs under "Google Maps Profile:" and "Apple Maps Profile:" in the context
+- The URL goes inside the parentheses of the markdown link, NOT displayed as text
 
 Subsequent mentions:
 - In general mode: just **Place Name** without links
