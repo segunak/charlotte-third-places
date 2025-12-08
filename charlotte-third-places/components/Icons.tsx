@@ -50,7 +50,8 @@ import {
 
 import {
   GiPlantSeed,
-  GiCoffeeMug
+  GiCoffeeMug,
+  GiTennisRacket
 } from "react-icons/gi";
 import {
   FaFilter,
@@ -149,6 +150,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Photo Shop": IoCamera,
   "Lounge": FaCouch,
   "Comic Book Store": FaSuperpowers,
+  "Pickleball Club": GiTennisRacket,
 };
 
 // Helper function to get the appropriate icon for a place type
