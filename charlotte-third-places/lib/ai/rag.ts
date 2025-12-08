@@ -92,6 +92,14 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
     //
     // Detailed review chunks are fetched only for place-specific queries where
     // the placeId filter enables fast single-partition searches.
+    //
+    // VECTOR INDEX CHOICE: quantizedFlat (not diskANN)
+    // ------------------------------------------------
+    // This architecture is why we use quantizedFlat instead of diskANN:
+    // - Microsoft recommends quantizedFlat for <50k vectors/partition OR when using filters
+    // - quantizedFlat gives ~99% accuracy vs diskANN's ~95% (better AI quality)
+    // See: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
+    // See: docs/ai.md for full rationale
     
     places = await vectorSearchPlaces(
       queryEmbedding,

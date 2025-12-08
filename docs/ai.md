@@ -62,8 +62,52 @@ Located in `third-places-data/azure-function/`.
 - **Containers**:
   - `places` - One document per place, partitioned by `id` (Google Maps Place ID)
   - `chunks` - One document per review, partitioned by `placeId`
-- **Provisioned Throughput**: 500 RU/s per container
+- **Provisioned Throughput**: 500 RU/s per container (1000 RU/s total, free tier limit)
 - **Vector Index**: `quantizedFlat` on `embedding` field (1536 dimensions, cosine similarity)
+- **Infrastructure Script**: `third-places-data/scripts/Initialize-CosmosDB.ps1`
+
+#### Vector Index Choice: quantizedFlat vs diskANN
+
+We use `quantizedFlat` instead of `diskANN`. This was a deliberate decision based on our data scale and query patterns.
+
+**Microsoft's Guidance** ([Vector Search Documentation](https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search)):
+
+> "quantizedFlat is recommended when the number of vectors to be indexed is somewhere around 50,000 or fewer per physical partition. This is a good option for smaller scenarios, or scenarios where you're using query filters to narrow down the vector search to a relatively small set of vectors."
+
+**Our Data Scale (as of December 2025)**:
+
+| Container | Current / Max Vectors | Vectors Searched Per Query | Filter Used? |
+|-----------|----------------------|---------------------------|--------------|
+| `places` | ~380 / 500 projected | 380-500 (no filter) | No |
+| `chunks` | ~95k / 125k max (500 × 250) | ~250 (filtered by placeId) | Yes |
+
+**Why quantizedFlat Wins**:
+
+1. **places container**: ~380 vectors (500 max projected) is 100× below the 50k/partition threshold. Brute-force over 500 vectors is trivially fast.
+
+2. **chunks container**: We NEVER do unfiltered cross-partition vector search on chunks:
+   - General queries (`/chat` page) skip chunk retrieval entirely (performance optimization)
+   - Place-specific queries always filter by `placeId`, limiting search to ~250 vectors
+
+3. **Accuracy**: quantizedFlat is still brute-force search with ~99% accuracy. diskANN is approximate nearest neighbors with ~95% accuracy. For an AI chatbot where quality matters, the extra accuracy is valuable.
+
+4. **Simplicity**: No tuning parameters needed (diskANN has `indexingSearchListSize`, `quantizationByteSize`).
+
+5. **Storage**: No separate graph index overhead.
+
+**When to Reconsider diskANN**:
+
+- If we add cross-partition chunk search for general queries (currently skipped)
+- If we exceed 50,000+ places (currently ~380, projected max ~500)
+- If P99 vector search latency becomes problematic (not observed)
+
+**Vector Index Types Reference**:
+
+| Type | Search Method | Accuracy | Best For |
+|------|--------------|----------|----------|
+| `flat` | Exact brute-force | 100% | ≤505 dimensions, tiny datasets |
+| `quantizedFlat` | Compressed brute-force | ~99% | <50k vectors/partition, or filtered queries |
+| `diskANN` | Graph-based ANN | ~95%+ | >50k vectors/partition, unfiltered queries |
 
 ### Sync Process
 
@@ -163,7 +207,6 @@ lib/ai/rag.ts - performRAG()
 
 RAG_CONFIG = {
   generalPlaces: { topK: 25, minScore: 0.65 },    // More variety, catch hidden gems
-  generalChunks: { topK: 10, minScore: 0.7 },     // Not used for general (see below)
   placeSpecificPlaces: { topK: 3, minScore: 0.7 },
   placeSpecificChunks: { topK: 15, minScore: 0.7 },
 }
@@ -257,6 +300,17 @@ Place documents contain aggregated data sufficient for recommendations:
 - `description`, `neighborhood`, `type`, etc.
 
 Individual review chunks are only needed when discussing a specific place in depth.
+
+### Why This Enables quantizedFlat
+
+This architectural decision is why we can use `quantizedFlat` instead of `diskANN`:
+
+| Query Type | Container | Vectors Searched | Index Needed |
+|------------|-----------|-----------------|--------------|
+| General (`/chat`) | `places` only | ~380-500 | quantizedFlat ✓ |
+| Place-specific | `chunks` with filter | ~250 | quantizedFlat ✓ |
+
+If we ever re-enable cross-partition chunk search for general queries, we would need to reconsider diskANN for the chunks container. See [Vector Index Choice](#vector-index-choice-quantizedflat-vs-diskann) for full rationale.
 
 ---
 
