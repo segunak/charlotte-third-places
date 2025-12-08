@@ -74,12 +74,7 @@ export const RAG_CONFIG = {
   /** General search - places */
   generalPlaces: {
     topK: 30,
-    minScore: 0.50,
-  },
-  /** General search - chunks (reviews) */
-  generalChunks: {
-    topK: 10,
-    minScore: 0.7,
+    minScore: 0.6,
   },
   /** Place-specific search - places (for broader context) */
   placeSpecificPlaces: {

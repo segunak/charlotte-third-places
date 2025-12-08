@@ -69,7 +69,7 @@ export async function getChunksByPlaceId(placeId: string): Promise<ChunkDocument
 
   const query = `
     SELECT 
-      c.id, c.placeId, c.placeName, c.neighborhood, c.address,
+      c.id, c.placeId, c.airtableRecordId, c.placeName, c.neighborhood, c.address,
       c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.placeType, c.placeTags, c.reviewText, c.reviewRating,
       c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.reviewsTags
@@ -109,7 +109,7 @@ export async function vectorSearchPlaces(
 
   const query = `
     SELECT TOP @topK
-      c.id, c.place, c.neighborhood, c.address, c.type, c.tags,
+      c.id, c.airtableRecordId, c.place, c.neighborhood, c.address, c.type, c.tags,
       c.description, c.comments, c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.website, c.freeWifi, c.hasCinnamonRolls, c.parking, c.size, c.purchaseRequired,
       c.placeRating, c.reviewsCount, c.workingHours, c.about, c.popularTimes, c.typicalTimeSpent,
@@ -163,7 +163,7 @@ export async function vectorSearchChunks(
     // Search within a specific place's reviews (single partition)
     query = `
       SELECT TOP @topK
-        c.id, c.placeId, c.placeName, c.neighborhood, c.address, c.googleMapsProfileUrl,
+        c.id, c.placeId, c.airtableRecordId, c.placeName, c.neighborhood, c.address, c.googleMapsProfileUrl,
         c.appleMapsProfileUrl, c.placeType, c.placeTags, c.reviewText, c.reviewRating,
         c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.hasOwnerResponse,
         c.reviewQuestions, c.reviewsTags,
@@ -183,7 +183,7 @@ export async function vectorSearchChunks(
     // Cross-partition search across all reviews
     query = `
       SELECT TOP @topK
-        c.id, c.placeId, c.placeName, c.neighborhood, c.address,
+        c.id, c.placeId, c.airtableRecordId, c.placeName, c.neighborhood, c.address,
         c.googleMapsProfileUrl, c.appleMapsProfileUrl,
         c.placeType, c.placeTags, c.reviewText, c.reviewRating,
         c.reviewDatetimeUtc, c.reviewLink, c.ownerAnswer, c.hasOwnerResponse,

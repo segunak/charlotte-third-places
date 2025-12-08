@@ -36,6 +36,7 @@ export type Place = {
 // Cosmos DB document types for AI/RAG functionality
 export interface PlaceDocument {
   id: string;
+  airtableRecordId?: string;
   place?: string;
   neighborhood?: string;
   address?: string;
@@ -72,6 +73,7 @@ export interface PlaceDocument {
 export interface ChunkDocument {
   id: string;
   placeId: string;
+  airtableRecordId?: string;
   placeName?: string;
   neighborhood?: string;
   address?: string;
