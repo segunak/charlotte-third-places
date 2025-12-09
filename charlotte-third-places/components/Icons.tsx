@@ -86,6 +86,9 @@ import {
   FaClock
 } from "react-icons/fa";
 import {
+  SiApplearcade
+} from "react-icons/si";
+import {
   IoHome,
   IoHomeOutline,
   IoMap,
@@ -151,6 +154,8 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Lounge": FaCouch,
   "Comic Book Store": FaSuperpowers,
   "Pickleball Club": FaTableTennisPaddleBall,
+  "Social Club": FaUsers,
+  "Arcade": SiApplearcade,
 };
 
 // Helper function to get the appropriate icon for a place type
