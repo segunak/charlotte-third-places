@@ -34,7 +34,7 @@ import {
   FaUtensils,
   FaStore,
   FaBook,
-  FaGamepad as FaGamepadV6,
+  FaGamepad,
   FaPalette,
   FaUsers,
   FaLaptop,
@@ -83,9 +83,11 @@ import {
   FaStar,
   FaCrown,
   FaCommentAlt,
-  FaClock,
-  FaGamepad
+  FaClock
 } from "react-icons/fa";
+import {
+  SiApplearcade
+} from "react-icons/si";
 import {
   IoHome,
   IoHomeOutline,
@@ -135,7 +137,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Grocery Store": FaShoppingCart,
   "Library": FaBook,
   "Bookstore": FaBookOpen,
-  "Game Store": FaGamepadV6,
+  "Game Store": FaGamepad,
   "Garden": GiPlantSeed,
   "Brewery": FaBeer,
   "Deli": IoFastFood,
@@ -153,7 +155,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Comic Book Store": FaSuperpowers,
   "Pickleball Club": FaTableTennisPaddleBall,
   "Social Club": FaUsers,
-  "Arcade": FaGamepad,
+  "Arcade": SiApplearcade,
 };
 
 // Helper function to get the appropriate icon for a place type
@@ -184,7 +186,7 @@ export const Icons = {
   armchair: LuArmchair,
   heart: LuHeart,
   handHeart: LuHeartHandshake,
-  gamepad: FaGamepadV6,
+  gamepad: FaGamepad,
   gamepad2: LuGamepad2,
   laptop: FaLaptop,
   cinnamonRoll: (props: IconProps) => (
