@@ -83,7 +83,8 @@ import {
   FaStar,
   FaCrown,
   FaCommentAlt,
-  FaClock
+  FaClock,
+  FaGamepad as FaGamepadV5
 } from "react-icons/fa";
 import {
   IoHome,
@@ -152,6 +153,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Comic Book Store": FaSuperpowers,
   "Pickleball Club": FaTableTennisPaddleBall,
   "Social Club": FaUsers,
+  "Arcade": FaGamepadV5,
 };
 
 // Helper function to get the appropriate icon for a place type
