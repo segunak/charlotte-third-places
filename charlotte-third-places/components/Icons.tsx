@@ -45,7 +45,8 @@ import {
   FaSuperpowers,
   FaLightbulb,
   FaRegLightbulb,
-  FaHouseChimney
+  FaHouseChimney,
+  FaTableTennisPaddleBall
 } from "react-icons/fa6";
 
 import {
@@ -149,6 +150,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Photo Shop": IoCamera,
   "Lounge": FaCouch,
   "Comic Book Store": FaSuperpowers,
+  "Pickleball Club": FaTableTennisPaddleBall,
 };
 
 // Helper function to get the appropriate icon for a place type
