@@ -23,7 +23,7 @@ const frequentlyAskedQuestions = [
                     Now, the term <em>third place</em> is at best loosely defined. I suggest you read this <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">Wikipedia page</ResponsiveLink> to learn more about the history of the term. After doing so, check out this <ResponsiveLink href="https://www.reddit.com/r/Charlotte/comments/1cid1i5/what_are_your_favorite_third_places_in_charlotte/">Reddit thread</ResponsiveLink> which features people in Charlotte discussing the concept (and arguing about it if you scroll far enough, as is typical of Reddit).
                 </p>
                 <p>
-                    To put it simply, defining a third place is subjective, and since this is a personal project, the places listed here are ones I view as third places. Of course, I'm open to different perspectives and value any feedback or thoughts you might have. I made the site, but I want it to be valuable to the Charlotte community. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
+                    To put it simply, defining a third place is subjective, and as the site's curator, my bias is present in the places listed here. However, I'm very much open to feedback and suggestions. I made the site, but I want it to be valuable to the Charlotte community. If you'd like to share your thoughts, please visit the <Link className="custom-link" href="/contribute">Contribute</Link> page to get in touch!
                 </p>
             </div>
         )
@@ -33,7 +33,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. They played a huge role in making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. Before long, the list grew so much that even my messages app suggested splitting it into chunks before sending. Creating a spreadsheet would've been the easiest solution to this challenge, and I did exactly that, except after doing so, I started getting ideas of <ResponsiveLink href="https://www.youtube.com/watch?v=yPZLIf9MqUU">something greater</ResponsiveLink>.
+                    Me, <ResponsiveLink href="https://segunakinyemi.com/">Segun Akinyemi</ResponsiveLink>. I moved to Charlotte during the pandemic, and third places became my way of exploring the city and meeting people while working remotely. They played a huge role in making Charlotte feel like home. This site started as a simple list on my phone of my favorite spots. Before long, the list grew so much that the Messages app suggested splitting it into chunks before sending. Creating a spreadsheet would've been the easiest solution to this challenge, and I did exactly that, except after doing so, I started getting ideas of <ResponsiveLink href="https://www.youtube.com/watch?v=yPZLIf9MqUU">something greater</ResponsiveLink>.
                 </p>
                 <p>
                     I'm a software engineer, and I enjoy building stuff with tech, so I purposefully over-engineered this project as an excuse to learn new things. I continue to tinker with the site, making improvements here and there, refactoring stuff to see if I can get it faster, more efficient, more user friendly, etc. If you're into tech, check out <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack">this article</ResponsiveLink> for a breakdown of how the project was built.
@@ -62,7 +62,7 @@ const frequentlyAskedQuestions = [
                     There's also some curation, where I choose not to list places that request to be added but don't meet the criteria of a third place (which, admittedly, is somewhat arbitrary). The main rule is: if a spot requires a reservation or membership before you can use it, it's disqualified. If you can't just walk in, make a simple purchase, and hang out, then it's not a third place in my opinion. If you disagree, I'm open to hearing your thoughts, use the <Link className="custom-link" href="contribute">Contribute</Link> page to reach out.
                 </p>
                 <p>
-                    Overall, my goal is to keep this site as open and community-driven as possible. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've documented how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here—just a personal project from a Charlotte resident who loves exploring the city.
+                    Overall, my goal is to keep this site as open and community-driven as possible. The code for this site is <ResponsiveLink href="https://github.com/segunak/charlotte-third-places">open source</ResponsiveLink>, and I've documented how it was built <ResponsiveLink href="https://segunakinyemi.com/blog/charlotte-third-places-tech-stack/">on my website</ResponsiveLink>. No secrets here, just a personal project from a Charlotte resident who loves exploring the city.
                 </p>
             </div>
         )
@@ -72,7 +72,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    It depends on the field we're talking about. Some fields—like <em>description</em> and <em>address</em>—come directly from Google Maps via their <ResponsiveLink href="https://developers.google.com/maps/documentation/places/web-service/overview">Places API</ResponsiveLink>, while others are curated from my experiences and community feedback. Click on a field name below to learn more abouut how it's sourced.
+                    It depends on the field we're talking about. Click on a field name below to learn more about how it's sourced.
                 </p>
                 <Accordion type="single" collapsible className="space-y-4 pl-4">
                     <AccordionItem value="name">
@@ -106,21 +106,21 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="neighborhood">
                         <AccordionTrigger>Neighborhood</AccordionTrigger>
                         <AccordionContent>
-                            This comes from Google Maps, but I do some curation. For places outside Charlotte proper like Matthews or Concord—which in the spirit of <ResponsiveLink href="https://www.ajc.com/life/radiotvtalk-blog/atlanta-rapper-omeretta-stirs-social-media-pot-over-song-that-narrowly-defines-atlanta/6LBPXWJPUVDHLBVFUZV5IRMDI4/">Omeretta</ResponsiveLink>, are "not Charlotte"—I list the city name as the neighborhood. Also, if Google suggests an obscure neighborhood that nobody recognizes, I simplify it to something more familiar. Because of the curation being done, this is a field where I do <em>really</em> appreciate feedback. If you see a place where the neighborhood makes no sense, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                            This comes from Google Maps, but I do some curation. For places outside Charlotte proper like Matthews or Concord, which in the spirit of <ResponsiveLink href="https://www.ajc.com/life/radiotvtalk-blog/atlanta-rapper-omeretta-stirs-social-media-pot-over-song-that-narrowly-defines-atlanta/6LBPXWJPUVDHLBVFUZV5IRMDI4/">Omeretta</ResponsiveLink>, are "not Charlotte", I list the city name as the neighborhood. Also, if Google suggests an obscure neighborhood that nobody recognizes, I simplify it to something more familiar. Because of the curation being done, this is a field where I do <em>really</em> appreciate feedback. If you see a place where the neighborhood makes no sense, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="size">
                         <AccordionTrigger>Size</AccordionTrigger>
                         <AccordionContent>
-                            This is based on both my experiences and community feedback. Defining place sizes can be tricky since everyone has their own ideas of what 'small,' 'medium,' or 'large' means. In general, I classify small places as seating 10 or fewer people, medium as holding 10-20, and large as accommodating 20 or more. It's an imperfect and subjective system. You may also see 'Unsure' in this field for places I haven't visited yet or when the size isn't easy to determine. If you think a size is off, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
+                            This is based on both my experiences and community feedback. Defining place sizes can be tricky since everyone has their own ideas of what 'small,' 'medium,' or 'large' means. In general, I classify small places as cozy spots with limited seating, medium as places with a solid amount of room, and large as spacious places that can easily handle a crowd. When in doubt, I use medium. It's an imperfect and subjective system. You may also see 'Unsure' in this field for places I haven't visited yet or when the size isn't easy to determine. If you think a size is off, please feel free to reach out via the <Link className="custom-link" href="contribute">Contribute</Link> page. Any help is greatly appreciated!
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="purchase">
                         <AccordionTrigger>Purchase Required</AccordionTrigger>
                         <AccordionContent>
-                            Google Maps offers data here, but it's not always accurate. I use Google Maps data by default, but I've also curated values based on my experiences and community feedback. For example, most coffee shops expect you to make a purchase if you're staying for a while, so they're assumed to be "Yes" on "Purchase Required". As someone that has had periods of life where a $5 coffee was not doable, helping people find free third places is important to me. The library was always mine during those tough times, but there are some other options around the city. If you see a wrong value in this field, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page. The accuracy of this field matters deeply to me.
+                            Google Maps offers data here, but it's not always accurate. I use Google Maps data by default, but I've also curated values based on my experiences and community feedback. For example, most coffee shops expect you to make a purchase if you're staying for a while, so they're assumed to be "Yes" on "Purchase Required". As someone that has had periods of life where a $5 coffee was not doable, helping people find free third places is important to me. The library was always mine during those tough times (and still is). Free Wi-Fi when you can't afford it at home and a huge building where you can cozy up in a corner and not feel like the staff is hovering over you made all the difference for me. There are some other options around the city too. If you see a wrong value in this field, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page. The accuracy of this field matters deeply to me.
                         </AccordionContent>
                     </AccordionItem>
 
@@ -134,7 +134,7 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="Wi-Fi">
                         <AccordionTrigger>Wi-Fi</AccordionTrigger>
                         <AccordionContent>
-                            This information is based entirely on my experiences and community feedback, as Google Maps does not provide this data. The concept of "free Wi-Fi" can be tricky. If a place offers Wi-Fi but expects you to make a purchase to stay, is it truly free? Even if you buy the cheapest item, you still had to pay to access the Wi-Fi indirectly. After much deliberation, I've decided to list a place as having free Wi-Fi if you don't need to pay specifically to access it once connected. Whether there's a password or not, as long as you can use the Wi-Fi without additional charges, it's considered free. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hangout at the library. Charlotte has great libraries, I encourage you to use them! Maybe even keep the laptop closed and read a book while you're there. If you're into science-fiction/fantasy check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
+                            Google Maps provides this data but it's not always consistently accurate. I default to Google Maps but do some curation as well. The concept of "Free Wi-Fi" can be tricky. If a place offers Wi-Fi but expects you to make a purchase to stay, is it truly free? Even if you buy the cheapest item, you still had to pay to access the Wi-Fi indirectly. After much deliberation, I've decided to list a place as having Free Wi-Fi if you don't need to pay specifically to access it once connected. Whether there's a password or not, as long as you can use the Wi-Fi without additional charges, it's considered free. Am I right about that? I don't know. If you're worried about this though, you know what solves the problem? Going to the library. Bring a snack from home, fill up your water bottle, and hang out at the library. Charlotte has great libraries, and I encourage you to use them! Maybe even keep the laptop closed and read a book while you're there. If you're into science fiction or fantasy, check out the <ResponsiveLink href="https://www.google.com/search?q=red+rising+series">Red Rising</ResponsiveLink> series. Or the Bible. Whatever you may believe, it's an interesting read.
                         </AccordionContent>
                     </AccordionItem>
 
@@ -143,10 +143,10 @@ const frequentlyAskedQuestions = [
                         <AccordionContent>
                             <div className="space-y-3">
                                 <p>
-                                    This is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but only for cinnamon rolls specifically. This field exists to satiate my personal enthusiasm for what I consider to be the chief of all pastries. There is no greater <em>carnal</em> act of munificence than to gift someone a tray of well made cinnamon rolls, for every reason, or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my list of favorite places around the city (shout out Sunflour Bakery 🔥). When I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today—I've committed to eating healthier, and today isn't a cheat day".
+                                    This is all me. I'm a fan of cinnamon rolls. In fact, to say that I'm a fan is an understatement. I'm an advocate, a connoisseur, the pastry equivalent of a cinephile, but only for cinnamon rolls specifically. This field exists to satiate <ResponsiveLink href="https://segunakinyemi.com/tags/#dough-diaries">my personal enthusiasm</ResponsiveLink> for what I consider to be the chief of all pastries. There is no greater <em>carnal</em> act of <ResponsiveLink href="https://www.google.com/search?q=munificence">munificence</ResponsiveLink> than to gift someone a tray of well made cinnamon rolls, for every reason, or for no reason at all. Any spot with cinnamon rolls immediately climbs to the top of my list of favorite places around the city (shout out Sunflour Bakery 🔥). When I consider going somewhere, the question "do they have cinnamon rolls" is consistently a part of my evaluation. Not always so that I can indulge, but sometimes to practice self-discipline, acknowledging, "Yes, they have cinnamon rolls, but no, I can't partake today, I've committed to eating healthier, and today isn't a cheat day".
                                 </p>
                                 <p>
-                                    You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become—God forbid—<em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?", the answer is no. I just like them. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <strong>with all manner of immediate speed</strong> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
+                                    You see, <ResponsiveLink href="https://knowyourmeme.com/memes/one-does-not-simply-walk-into-mordor">one cannot live</ResponsiveLink> in a constant state of indulgence. To do so would be surrender to gluttony, to wallow in hedonism, to revel in unchecked extravagance. Familiarity breeds contempt, excess breeds waste, and overindulgence breeds boredom. Far be it from me to eat cinnamon rolls so often that they lose their significance in my heart and mind. That they become, God forbid, <em>commonplace</em>. I will not allow it. If you're wondering, "does this guy have some sort of deeply personal story behind his love of cinnamon rolls?", the answer is no. I just like them. We all have our passions. That being said, if you know of a place with cinnamon rolls that's marked incorrectly on this website, I need you to tell me <strong>with all manner of immediate speed</strong> so I can get it fixed. Please use the <Link className="custom-link" href="contribute">Contribute</Link> page. Thank you.
                                 </p>
                             </div>
                         </AccordionContent>
@@ -155,14 +155,28 @@ const frequentlyAskedQuestions = [
                     <AccordionItem value="description">
                         <AccordionTrigger>Description</AccordionTrigger>
                         <AccordionContent>
-                            This information is sourced directly from Google Maps, based on the business's profile. If the business hasn't listed a description, a default message is used: "A third place in the Charlotte, North Carolina area."
+                            This information is sourced from Google Maps, based on the business's profile. There are cases though were the Google Maps description isn't very good and sells the place short. In those cases, I generate a description, usually with the help of AI, that properly encapsulates all the place has going on.
                         </AccordionContent>
                     </AccordionItem>
 
                     <AccordionItem value="comments">
                         <AccordionTrigger>Comments</AccordionTrigger>
                         <AccordionContent>
-                            These are from me, my personal thoughts regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting it added.
+                            These are from me, my personal thoughts regarding a place. It's my attempt at adding detail you wouldn't get from Google Maps. I welcome community feedback here. If you notice something cool about a place and want to share that knowledge with others, let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page and I'll work on getting your comments added!
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="tags">
+                        <AccordionTrigger>Tags</AccordionTrigger>
+                        <AccordionContent>
+                            These are keywords or labels that help categorize and describe the place. They make it easier to find and group similar places together. They're fully curated by me, with some help from behind the scenes data Google stores about places, and can be added or removed based on community feedback. If you have any suggestions for new tags or think a tag is incorrectly applied, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page!
+                        </AccordionContent>
+                    </AccordionItem>
+
+                    <AccordionItem value="socials">
+                        <AccordionTrigger>Socials</AccordionTrigger>
+                        <AccordionContent>
+                            These are links to the place's social media profiles. They help you connect with the place on platforms like Facebook, Instagram, TikTok, Twitter, YouTube, and LinkedIn. If you notice a missing or incorrect social link, please let me know via the <Link className="custom-link" href="contribute">Contribute</Link> page!
                         </AccordionContent>
                     </AccordionItem>
 
@@ -209,7 +223,7 @@ const frequentlyAskedQuestions = [
         title: "I submitted a place and haven't seen it added yet. What should I do?",
         content: (
             <div className="space-y-3">
-                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life, stuff, and <ResponsiveLink href="https://www.urbandictionary.com/define.php?term=stuff%20and%20thangs">thangs</ResponsiveLink>. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique.
+                First off, thanks for submitting! I'd say bear with me, I'll get to it, eventually. I'm the sole maintainer of the site, and like most, can get busy with life. Also, there's no guarantee that every submitted place will make it onto the site. I put effort into curating the list to highlight spots that stand out as third places. I'm trying to avoid having too many places listed, such that this site starts feeling like "Google Maps Lite" rather than something truly unique.
             </div>
         )
     },
@@ -241,7 +255,7 @@ const frequentlyAskedQuestions = [
         title: "Aren't breweries considered third places? Why not list all breweries in Charlotte?",
         content: (
             <div className="space-y-3">
-                While Charlotte is known for its brewery scene, and they are arguably third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out during the day (not just afternoon/evening), maybe grab a coffee or work on your laptop, read, chill, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm open to hearing all arguments and reasoning with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
+                While Charlotte is known for its brewery scene, and they're certainly third places, I didn't want to include every single one. At that point, Google Maps itself becomes a better tool. My goal is to highlight places where you can hang out, maybe grab a coffee or work on your laptop, read, chill, meet friends, make new friends, people watch, and not feel any pressure to order a beer. There are breweries that meet this vibe (like Suffolk Punch, Petty Thieves, Wooden Robot, etc.), and they're listed on the site. Others that don't are not. Now, the definition of a third place is subjective, so you're welcome to disagree with me. I'm open to hearing all arguments and reasoning with anyone willing to engage in civil conversation. You can contact me via the <Link className="custom-link" href="contribute">Contribute</Link> page.
             </div>
         )
     },
@@ -258,7 +272,7 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    I'll start by saying that the definition of a third place is inherently subjective. Each person must decide for themselves which spaces make them feel at home, welcome, relaxed, and part of a community outside of where they live, work, or go to school. That said, to me, co-working spaces don't qualify as third places because they're essentially "second places"—a dedicated space that people associate with work. The whole concept of a third place is that it's not home or work/school.
+                    I'll start by saying that the definition of a third place is inherently subjective. Each person must decide for themselves which spaces make them feel at home, welcome, relaxed, and part of a community outside of where they live, work, or go to school. That said, to me, co-working spaces don't qualify as third places because they're essentially "second places". A dedicated space that people associate with work. The whole concept of a third place is that it's not home or work/school.
                 </p>
                 <p>
                     Co-working spaces also don't meet the "little to no financial barrier to entry" standard often associated with third places. Most require a membership to enter. You can't just drop in to meet friends or get some work done without registering and paying a fee, which creates a significant barrier to entry. For these reasons, I don't consider co-working spaces as third places and don't list them on this site.
@@ -284,7 +298,7 @@ export default function AboutPage() {
             <Card className="border shadow-sm">
                 <CardHeader>
                     <CardTitle>
-                        
+
                     </CardTitle>
                     <div className="flex justify-center">
                         <Image

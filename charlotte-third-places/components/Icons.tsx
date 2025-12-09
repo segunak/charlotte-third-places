@@ -125,52 +125,6 @@ import {
   LuGamepad2
 } from "react-icons/lu";
 
-export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
-  "Bakery": FaBreadSlice,
-  "Bottle Shop": FaWineBottle,
-  "Café": GiCoffeeMug,
-  "Coffee Shop": FaCoffee,
-  "Tea House": MdEmojiFoodBeverage,
-  "Bubble Tea Shop": RiDrinks2Fill,
-  "Restaurant": FaUtensils,
-  "Market": FaStore,
-  "Grocery Store": FaShoppingCart,
-  "Library": FaBook,
-  "Bookstore": FaBookOpen,
-  "Game Store": FaGamepad,
-  "Garden": GiPlantSeed,
-  "Brewery": FaBeer,
-  "Deli": IoFastFood,
-  "Eatery": FaUtensils,
-  "Creamery": FaIceCream,
-  "Ice Cream Shop": FaIceCream,
-  "Art Gallery": FaPalette,
-  "Bar": FaCocktail,
-  "Community Center": FaUsers,
-  "Coworking Space": FaLaptop,
-  "Museum": FaUniversity,
-  "Other": FaQuestion,
-  "Photo Shop": IoCamera,
-  "Lounge": FaCouch,
-  "Comic Book Store": FaSuperpowers,
-  "Pickleball Club": FaTableTennisPaddleBall,
-  "Social Club": FaUsers,
-  "Arcade": SiApplearcade,
-};
-
-// Helper function to get the appropriate icon for a place type
-export const getPlaceTypeIcon = (placeTypes: string | string[] | undefined): React.ComponentType<any> => {
-  if (!placeTypes) {
-    return FaChessQueen; // Fallback to queen icon
-  }
-
-  // If it's an array, use the first type
-  const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
-
-  // Return the mapped icon or fallback to queen
-  return typeIconMap[typeToCheck] || FaChessQueen;
-};
-
 export const Icons = {
   arrowUp: ArrowUp,
   sun: LuSunMedium,
@@ -189,6 +143,25 @@ export const Icons = {
   gamepad: FaGamepad,
   gamepad2: LuGamepad2,
   laptop: FaLaptop,
+  arcade: SiApplearcade,
+  breadSlice: FaBreadSlice,
+  wineBottle: FaWineBottle,
+  coffeeMug: GiCoffeeMug,
+  teaCup: MdEmojiFoodBeverage,
+  bubbleTea: RiDrinks2Fill,
+  utensils: FaUtensils,
+  store: FaStore,
+  shoppingCart: FaShoppingCart,
+  plantSeed: GiPlantSeed,
+  beer: FaBeer,
+  fastFood: IoFastFood,
+  iceCream: FaIceCream,
+  palette: FaPalette,
+  cocktail: FaCocktail,
+  museum: FaUniversity,
+  couch: FaCouch,
+  comicBook: FaSuperpowers,
+  pickleball: FaTableTennisPaddleBall,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"

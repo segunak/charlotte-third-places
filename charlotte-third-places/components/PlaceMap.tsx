@@ -2,7 +2,8 @@
 
 import { Place } from '@/lib/types';
 import { Button } from './ui/button';
-import { Icons, getPlaceTypeIcon } from "@/components/Icons";
+import { Icons } from "@/components/Icons";
+import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
 import { FilterContext } from '@/contexts/FilterContext';
@@ -100,37 +101,8 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         };
     }, [mapInstance]);
 
-    // Specific color assignments for certain place types.
-    const specificTypeColors: { [key: string]: string } = {
-        "Art Gallery": "#FF00DC",        // Vivid Magenta
-        "Bakery": "#FFC649",             // Saffron Yellow
-        "Bar": "#8B008B",                // Dark Magenta
-        "Bookstore": "#144EE3",          // Laser Blue
-        "Bottle Shop": "#800020",        // Burgundy Wine Red
-        "Brewery": "#C21807",            // Chili Red
-        "Bubble Tea Shop": "#FF00FF",    // Magenta
-        "Café": "#FF1493",               // Deep Pink
-        "Coffee Shop": "#00BFFF",        // Deep Sky Blue
-        "Community Center": "#9400D3",   // Dark Violet
-        "Coworking Space": "#00CED1",    // Dark Turquoise
-        "Creamery": "#FF69B4",           // Hot Pink
-        "Deli": "#00CED1",               // Dark Turquoise
-        "Eatery": "#DA70D6",             // Orchid
-        "Game Store": "#107C10",         // Microsoft Green
-        "Garden": "#50C878",             // Emerald Green
-        "Grocery Store": "#00A651",      // Publix Green
-        "Ice Cream Shop": "#FF77FF",     // Light Fuchsia Pink
-        "Library": "#BF00FF",            // Purple
-        "Market": "#FF7F50",             // Coral
-        "Museum": "#8A2BE2",             // Blue Violet
-        "Other": "#6B7280",              // Gray
-        "Photo Shop": "#9333EA",         // Purple
-        "Restaurant": "#FF0033",         // Bright Red
-        "Tea House": "#00FF00",          // Bright Green
-    };
-
-    // Comprehensive color palette for automatic type-based color assignment
-    // Each place type gets a unique, consistent color through hash-based selection
+    // Comprehensive color palette for hash-based fallback color assignment
+    // Used when a place type is not defined in the centralized config
     const typeColorPalette = [
         "#FB923C", // Orange
         "#14B8A6", // Teal
@@ -145,11 +117,9 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         "#10B981", // Emerald
         "#FBBF24", // Bright Yellow
         "#DC2626", // Red (minimal use)
-        "#9333EA", // Purple
         "#22C55E", // Green
         "#3B82F6", // Bright Blue
         "#F472B6", // Bright Pink
-        "#F59E0B", // Bright Amber
         "#A3E635", // Bright Lime
         "#2DD4BF", // Bright Teal        
         "#E879F9", // Bright Fuchsia
@@ -162,28 +132,37 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
 
         // If it's an array, use the first type
         const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
+        
         // Check cache first
         if (colorCache[typeToCheck]) {
             return colorCache[typeToCheck];
-        } let result;
+        }
+        
+        let result;
 
         // If empty or whitespace, use first color from palette
         if (!typeToCheck || typeToCheck.trim() === "") {
             result = typeColorPalette[0];
         }
-        // Check if this type has a specific predefined color
-        else if (specificTypeColors[typeToCheck]) {
-            result = specificTypeColors[typeToCheck];
-        }
-        // Generate hash-based color for automatic consistent assignment
+        // Check centralized config for this type's color
         else {
-            let hash = 0;
-            for (let i = 0; i < typeToCheck.length; i++) {
-                hash = typeToCheck.charCodeAt(i) + ((hash << 5) - hash);
+            const configuredColor = getConfiguredColor(typeToCheck);
+            // If config returns a non-default color, use it
+            if (configuredColor !== "#3B82F6") {
+                result = configuredColor;
             }
-            const colorIndex = Math.abs(hash) % typeColorPalette.length;
-            result = typeColorPalette[colorIndex] || typeColorPalette[0];
-        }// Cache the result
+            // Otherwise, generate hash-based color for unknown types
+            else {
+                let hash = 0;
+                for (let i = 0; i < typeToCheck.length; i++) {
+                    hash = typeToCheck.charCodeAt(i) + ((hash << 5) - hash);
+                }
+                const colorIndex = Math.abs(hash) % typeColorPalette.length;
+                result = typeColorPalette[colorIndex] || typeColorPalette[0];
+            }
+        }
+        
+        // Cache the result
         colorCache[typeToCheck] = result;
         return result;
     };
