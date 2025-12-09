@@ -2,6 +2,7 @@ import { Place } from "@/lib/types";
 import { FC, useMemo, memo, useRef, useState, useEffect, useCallback } from "react";
 import { Icons } from "@/components/Icons";
 import { cn } from "@/lib/utils";
+import { getPlaceTypeEmoji } from "@/lib/place-type-config";
 import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
 import { useModalContext } from "@/contexts/ModalContext";
@@ -15,41 +16,6 @@ const sizeIconMap: { [key: string]: React.ReactNode } = {
     "Medium": <Icons.tablet className="inline-block h-3 w-3" />,
     "Large": <Icons.desktop className="inline-block h-3 w-3" />,
     "Unsure": "🤷🏾",
-};
-
-const typeEmojiMap: { [key: string]: string } = {
-    "Bakery": "🍞",
-    "Bottle Shop": "🍷",
-    "Café": "☕",
-    "Coffee Shop": "☕",
-    "Tea House": "🍵",
-    "Bubble Tea Shop": "🧋",
-    "Restaurant": "🍽️",
-    "Market": "🛍️",
-    "Grocery Store": "🛒",
-    "Market Hall": "🏬",
-    "Library": "📚",
-    "Bookstore": "📖",
-    "Public Market": "🏪",
-    "Game Store": "🎮",
-    "Garden": "🪴",
-    "Brewery": "🍺",
-    "Deli": "🥪",
-    "Eatery": "🍴",
-    "Creamery": "🍦",
-    "Ice Cream Shop": "🍨",
-    "Art Gallery": "🖼️",
-    "Bar": "🍸",
-    "Community Center": "🤝",
-    "Coworking Space": "💻",
-    "Lounge": "🛋️",
-    "Museum": "🏛️",
-    "Other": "🤷🏾",
-    "Photo Shop": "📷",
-    "Comic Book Store": "🦸",
-    "Pickleball Club": "🏓",
-    "Social Club": "🎉",
-    "Arcade": "🕹️",
 };
 
 // Predefined color mappings for tag backgrounds and text
@@ -152,7 +118,7 @@ const AttributeTag: FC<AttributeTagProps> = memo(({ attribute, icon, className }
     /* We want it to appear as "attribute iconOrEmoji" on one line If iconOrEmoji is a string (like "🤷" or "🍞"), 
     do string concatenation. If it's a React node (like <Icons.mobile />), render it inline */
     let displayContent;
-    const iconOrEmoji = icon ?? sizeIconMap[attribute] ?? typeEmojiMap[attribute] ?? "";
+    const iconOrEmoji = icon ?? sizeIconMap[attribute] ?? getPlaceTypeEmoji(attribute) ?? "";
 
     if (typeof iconOrEmoji === "string") {
         displayContent = `${attribute} ${iconOrEmoji}`;
