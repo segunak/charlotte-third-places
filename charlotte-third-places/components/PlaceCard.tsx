@@ -48,6 +48,7 @@ const typeEmojiMap: { [key: string]: string } = {
     "Photo Shop": "📷",
     "Comic Book Store": "🦸",
     "Pickleball Club": "🏓",
+    "Social Club": "🎉",
 };
 
 // Predefined color mappings for tag backgrounds and text

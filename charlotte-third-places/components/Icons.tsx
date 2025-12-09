@@ -151,6 +151,7 @@ export const typeIconMap: { [key: string]: React.ComponentType<any> } = {
   "Lounge": FaCouch,
   "Comic Book Store": FaSuperpowers,
   "Pickleball Club": FaTableTennisPaddleBall,
+  "Social Club": FaUsers,
 };
 
 // Helper function to get the appropriate icon for a place type
