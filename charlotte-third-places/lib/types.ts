@@ -57,7 +57,8 @@ export interface PlaceDocument {
   reviewsCount?: number;
   workingHours?: Record<string, string>;
   about?: Record<string, unknown>;
-  popularTimes?: unknown[];
+  /** Pre-formatted busy/moderate/quiet hours per day from Google Maps popular times data */
+  popularTimesFormatted?: string;
   typicalTimeSpent?: string;
   /** Aggregated review keywords from Google Maps */
   reviewsTags?: string[];
@@ -65,6 +66,13 @@ export interface PlaceDocument {
   category?: string;
   /** Subtypes from Google Maps */
   subtypes?: string[];
+  /** Social media and web presence */
+  facebook?: string;
+  instagram?: string;
+  tikTok?: string;
+  twitter?: string;
+  linkedIn?: string;
+  youTube?: string;
   embedding?: number[];
   /** Added by vector search results */
   similarityScore?: number;

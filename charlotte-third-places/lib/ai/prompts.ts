@@ -49,6 +49,7 @@ The context includes all relevant data about each place - use whatever fields ar
 Key things to know:
 - **Authoritative Curator Notes** - First-hand observations from the site maintainer. Treat these as especially reliable insider knowledge.
 - **Customer Review** - Real Google Maps reviews. Look for patterns across multiple reviews rather than relying on any single one.
+- **Website & Social Profiles** - When available, you have the place's official website and social media links (Instagram, Facebook, TikTok, YouTube, Twitter, LinkedIn). Not all places have all profiles. Use these to help users who want to learn more, follow the business, or get real-time updates. Hyperlink the platform name when mentioning: e.g., "check their [Instagram](url) for the latest specials."
 - All other fields are self-explanatory. Use them as needed.
 
 === RECOMMENDATION BEHAVIOR ===
@@ -202,11 +203,15 @@ function formatPlace(place: PlaceDocument): string {
   
   // Reviews tags - aggregated keywords from Google Maps reviews
   if (place.reviewsTags && Array.isArray(place.reviewsTags) && place.reviewsTags.length > 0) {
-    lines.push(`What People Say: ${place.reviewsTags.join(", ")}`);
+    lines.push(`Reviews Tags: ${place.reviewsTags.join(", ")}`);
   }
   
   if (place.freeWifi !== undefined && place.freeWifi !== null) {
     lines.push(`Free Wi-Fi: ${place.freeWifi ? "Yes" : "No"}`);
+  }
+
+  if (place.hasCinnamonRolls) {
+    lines.push(`Has Cinnamon Rolls: ${place.hasCinnamonRolls}`);
   }
   
   if (place.parking) lines.push(`Parking: ${place.parking}`);
@@ -224,13 +229,24 @@ function formatPlace(place: PlaceDocument): string {
       .join(", ");
     lines.push(`Hours: ${hoursStr}`);
   }
+
+  // Popular times - pre-formatted busy/moderate/quiet patterns from ingestion pipeline
+  if (place.popularTimesFormatted) {
+    lines.push(`Popular Times: ${place.popularTimesFormatted}`);
+  }
   
+  // About/Amenities - flatten nested structure and show true values only
   if (place.about && typeof place.about === "object") {
-    const aboutItems = Object.entries(place.about)
-      .filter(([, v]) => v)
-      .map(([k, v]) => `${k}: ${v}`);
-    if (aboutItems.length > 0) {
-      lines.push(`About: ${aboutItems.join("; ")}`);
+    const features: string[] = [];
+    for (const [, categoryValue] of Object.entries(place.about)) {
+      if (typeof categoryValue === "object" && categoryValue !== null) {
+        for (const [feature, value] of Object.entries(categoryValue as Record<string, unknown>)) {
+          if (value === true) features.push(feature);
+        }
+      }
+    }
+    if (features.length > 0) {
+      lines.push(`Amenities: ${features.join(", ")}`);
     }
   }
 
@@ -240,6 +256,23 @@ function formatPlace(place: PlaceDocument): string {
   }
   if (place.appleMapsProfileUrl) {
     lines.push(`Apple Maps Profile: ${place.appleMapsProfileUrl}`);
+  }
+  
+  // Website - official business site
+  if (place.website) {
+    lines.push(`Website: ${place.website}`);
+  }
+  
+  // Social profiles - only include platforms that exist for this place
+  const socialLinks: string[] = [];
+  if (place.instagram) socialLinks.push(`Instagram: ${place.instagram}`);
+  if (place.facebook) socialLinks.push(`Facebook: ${place.facebook}`);
+  if (place.tikTok) socialLinks.push(`TikTok: ${place.tikTok}`);
+  if (place.youTube) socialLinks.push(`YouTube: ${place.youTube}`);
+  if (place.twitter) socialLinks.push(`Twitter: ${place.twitter}`);
+  if (place.linkedIn) socialLinks.push(`LinkedIn: ${place.linkedIn}`);
+  if (socialLinks.length > 0) {
+    lines.push(`Social Profiles: ${socialLinks.join(", ")}`);
   }
   
   // Place Page URL for hyperlinking place names
@@ -259,6 +292,17 @@ function formatChunk(chunk: ChunkDocument): string {
 
   if (chunk.placeName) lines.push(`Place: ${chunk.placeName}`);
   if (chunk.neighborhood) lines.push(`Neighborhood: ${chunk.neighborhood}`);
+  if (chunk.address) lines.push(`Address: ${chunk.address}`);
+  
+  // Place type and tags for context
+  if (chunk.placeType) {
+    const type = Array.isArray(chunk.placeType) ? chunk.placeType.join(", ") : chunk.placeType;
+    lines.push(`Type: ${type}`);
+  }
+  if (chunk.placeTags) {
+    const tags = Array.isArray(chunk.placeTags) ? chunk.placeTags.join(", ") : chunk.placeTags;
+    lines.push(`Tags: ${tags}`);
+  }
   
   // Review rating gives context to the review text
   if (chunk.reviewRating) lines.push(`Customer Rating: ${chunk.reviewRating}/5`);
