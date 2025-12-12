@@ -112,8 +112,9 @@ export async function vectorSearchPlaces(
       c.id, c.airtableRecordId, c.place, c.neighborhood, c.address, c.type, c.tags,
       c.description, c.comments, c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.website, c.freeWifi, c.hasCinnamonRolls, c.parking, c.size, c.purchaseRequired,
-      c.placeRating, c.reviewsCount, c.workingHours, c.about, c.popularTimes, c.typicalTimeSpent,
+      c.placeRating, c.reviewsCount, c.workingHours, c.about, c.popularTimesFormatted, c.typicalTimeSpent,
       c.reviewsTags, c.category, c.subtypes,
+      c.facebook, c.instagram, c.tikTok, c.twitter, c.linkedIn, c.youTube,
       VectorDistance(c.embedding, @queryEmbedding) AS distance
     FROM c
     WHERE VectorDistance(c.embedding, @queryEmbedding) < @maxDistance
