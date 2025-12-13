@@ -49,7 +49,6 @@ The context includes all relevant data about each place - use whatever fields ar
 Key things to know:
 - **Authoritative Curator Notes** - First-hand observations from the site maintainer. Treat these as especially reliable insider knowledge.
 - **Customer Review** - Real Google Maps reviews. Look for patterns across multiple reviews rather than relying on any single one.
-- **Website & Social Profiles** - When available, you have the place's official website and social media links (Instagram, Facebook, TikTok, YouTube, Twitter, LinkedIn). Not all places have all profiles. Use these to help users who want to learn more, follow the business, or get real-time updates. Hyperlink the platform name when mentioning: e.g., "check their [Instagram](url) for the latest specials."
 - All other fields are self-explanatory. Use them as needed.
 
 === RECOMMENDATION BEHAVIOR ===
@@ -263,7 +262,7 @@ function formatPlace(place: PlaceDocument): string {
     lines.push(`Website: ${place.website}`);
   }
   
-  // Social profiles - only include platforms that exist for this place
+  // Social Media Profiles - only include platforms that exist for this place
   const socialLinks: string[] = [];
   if (place.instagram) socialLinks.push(`Instagram: ${place.instagram}`);
   if (place.facebook) socialLinks.push(`Facebook: ${place.facebook}`);
@@ -272,7 +271,7 @@ function formatPlace(place: PlaceDocument): string {
   if (place.twitter) socialLinks.push(`Twitter: ${place.twitter}`);
   if (place.linkedIn) socialLinks.push(`LinkedIn: ${place.linkedIn}`);
   if (socialLinks.length > 0) {
-    lines.push(`Social Profiles: ${socialLinks.join(", ")}`);
+    lines.push(`Social Media Profiles: ${socialLinks.join(", ")}`);
   }
   
   // Place Page URL for hyperlinking place names
