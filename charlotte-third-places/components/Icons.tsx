@@ -5,13 +5,13 @@ import { BsFillHousesFill } from "react-icons/bs";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { 
+import {
   MdEditLocationAlt,
   MdAttachMoney,
   MdEmojiFoodBeverage,
   MdAutoAwesome
 } from "react-icons/md";
-import { 
+import {
   RiDrinks2Fill,
   RiChatAiLine,
   RiChatAiFill,
@@ -277,6 +277,48 @@ export const Icons = {
       <path fill="#00853f" d="M0 0h900v600H0z" />
       <path d="M0 0h900v400H0z" />
       <path fill="#e31b23" d="M0 0h900v200H0z" />
+    </svg>
+  ),
+  habeshaFlags: (props: IconProps) => (
+    <svg
+      width="800px"
+      height="800px"
+      viewBox="0 0 72 36"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      {/* Ethiopian Flag (left) */}
+      <g>
+        <rect x="0" y="0" width="36" height="12" fill="#088930" />
+        <rect x="0" y="12" width="36" height="12" fill="#FCDD0A" />
+        <rect x="0" y="24" width="36" height="12" fill="#DA1219" />
+        <circle cx="18" cy="18" r="8" fill="#0F47AF" />
+        <g fill="#FCDD0A" transform="translate(18, 18)">
+          {/* 5-pointed star */}
+          <polygon points="0,-6 1.76,-1.85 6.18,-1.85 2.94,1.18 4.05,5.71 0,3 -4.05,5.71 -2.94,1.18 -6.18,-1.85 -1.76,-1.85" />
+          {/* Star rays */}
+          <line x1="0" y1="-8" x2="0" y2="-6" stroke="#FCDD0A" strokeWidth="0.8" />
+          <line x1="7.6" y1="-2.5" x2="5.7" y2="-1.85" stroke="#FCDD0A" strokeWidth="0.8" />
+          <line x1="4.7" y1="6.5" x2="3.5" y2="4.9" stroke="#FCDD0A" strokeWidth="0.8" />
+          <line x1="-4.7" y1="6.5" x2="-3.5" y2="4.9" stroke="#FCDD0A" strokeWidth="0.8" />
+          <line x1="-7.6" y1="-2.5" x2="-5.7" y2="-1.85" stroke="#FCDD0A" strokeWidth="0.8" />
+        </g>
+      </g>
+
+      {/* Eritrean Flag (right) */}
+      <g transform="translate(36, 0)">
+        {/* Green top triangle */}
+        <polygon points="0,0 36,0 0,18" fill="#12AD2B" />
+        {/* Blue bottom triangle */}
+        <polygon points="0,36 36,36 0,18" fill="#4189DD" />
+        {/* Red right portion */}
+        <polygon points="36,0 36,36 0,18" fill="#EA0437" />
+        {/* Olive wreath emblem */}
+        <g transform="translate(10, 18)" fill="#F3C515">
+          <ellipse cx="0" cy="0" rx="6" ry="7" fill="none" stroke="#F3C515" strokeWidth="2.5" />
+          <circle cx="0" cy="-8" r="1.5" />
+        </g>
+      </g>
     </svg>
   ),
   ethiopianFlag: (props: IconProps) => (

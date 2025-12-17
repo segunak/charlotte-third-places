@@ -94,7 +94,7 @@ const DEFINITIONS: HighlightDefinition[] = [
         key: 'ethiopian',
         test: p => p.tags?.includes('Ethiopian') ?? false,
         badge: {
-            icon: <Icons.ethiopianFlag className="h-6 w-6" />,
+            icon: <Icons.habeshaFlags className="h-7 w-7" />,
             bgClass: 'bg-amber-100',
             ariaLabel: 'Ethiopian business'
         }
