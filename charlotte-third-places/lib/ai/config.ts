@@ -24,8 +24,13 @@ export const AI_CONFIG = {
   embeddingDimensions: 1536,
   /** Azure OpenAI API version */
   apiVersion: "2024-05-01-preview",
-  /** Max output tokens for chat completion response (balance between completeness and speed) */
-  maxOutputTokens: 1536,
+  /** 
+   * Max output tokens for chat completion response.
+   * Sized to support up to 15 place recommendations (~100 tokens each) plus intro/outro text.
+   * Default responses (7 places) use ~800 tokens and exit early—no latency impact.
+   * Only max-length responses (15 places) use the full 2048 tokens.
+   */
+  maxOutputTokens: 2048,
   /**
    * Temperature for chat completion - controls randomness/creativity of responses.
    * 
@@ -71,9 +76,9 @@ export const COSMOS_CONFIG = {
 
 // RAG search parameters
 export const RAG_CONFIG = {
-  /** General search - places */
+  /** General search - places (topK sized to support up to 15 recommendations with variety) */
   generalPlaces: {
-    topK: 30,
+    topK: 35,
     minScore: 0.6,
   },
   /** Place-specific search - places (for broader context) */
