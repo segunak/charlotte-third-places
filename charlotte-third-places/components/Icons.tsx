@@ -5,13 +5,13 @@ import { BsFillHousesFill } from "react-icons/bs";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
 import { ArrowUp, Locate, Loader2 } from "lucide-react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { 
+import {
   MdEditLocationAlt,
   MdAttachMoney,
   MdEmojiFoodBeverage,
   MdAutoAwesome
 } from "react-icons/md";
-import { 
+import {
   RiDrinks2Fill,
   RiChatAiLine,
   RiChatAiFill,
@@ -277,6 +277,42 @@ export const Icons = {
       <path fill="#00853f" d="M0 0h900v600H0z" />
       <path d="M0 0h900v400H0z" />
       <path fill="#e31b23" d="M0 0h900v200H0z" />
+    </svg>
+  ),
+  habeshaFlags: (props: IconProps) => (
+    <svg
+      width="800px"
+      height="800px"
+      viewBox="0 0 36 36"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      {/* Diagonal split - Ethiopian (top-left) and Eritrean (bottom-right) */}
+      <defs>
+        <clipPath id="topLeft">
+          <polygon points="0,0 36,0 0,36" />
+        </clipPath>
+        <clipPath id="bottomRight">
+          <polygon points="36,0 36,36 0,36" />
+        </clipPath>
+      </defs>
+
+      {/* Ethiopian Flag (top-left triangle) */}
+      <g clipPath="url(#topLeft)">
+        <rect x="0" y="0" width="36" height="12" fill="#088930" />
+        <rect x="0" y="12" width="36" height="12" fill="#FCDD0A" />
+        <rect x="0" y="24" width="36" height="12" fill="#DA1219" />
+      </g>
+
+      {/* Eritrean Flag (bottom-right triangle) */}
+      <g clipPath="url(#bottomRight)">
+        <rect x="0" y="0" width="36" height="12" fill="#12AD2B" />
+        <rect x="0" y="12" width="36" height="12" fill="#4189DD" />
+        <rect x="0" y="24" width="36" height="12" fill="#EA0437" />
+      </g>
+
+      {/* Thin white diagonal divider for clarity */}
+      <line x1="0" y1="36" x2="36" y2="0" stroke="white" strokeWidth="1.5" />
     </svg>
   ),
   ethiopianFlag: (props: IconProps) => (
