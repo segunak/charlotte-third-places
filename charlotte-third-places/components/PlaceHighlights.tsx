@@ -91,12 +91,12 @@ const DEFINITIONS: HighlightDefinition[] = [
     },
     // Badge-only definitions
     {
-        key: 'ethiopian',
-        test: p => p.tags?.includes('Ethiopian') ?? false,
+        key: 'habesha',
+        test: p => p.tags?.includes('Habesha') ?? false,
         badge: {
-            icon: <Icons.habeshaFlags className="h-7 w-7" />,
+            icon: <Icons.habeshaFlags className="h-5 w-5" />,
             bgClass: 'bg-amber-100',
-            ariaLabel: 'Ethiopian business'
+            ariaLabel: 'Habesha business'
         }
     },
     {

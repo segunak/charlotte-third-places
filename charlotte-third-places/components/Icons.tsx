@@ -283,42 +283,36 @@ export const Icons = {
     <svg
       width="800px"
       height="800px"
-      viewBox="0 0 72 36"
+      viewBox="0 0 36 36"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >
-      {/* Ethiopian Flag (left) */}
-      <g>
+      {/* Diagonal split - Ethiopian (top-left) and Eritrean (bottom-right) */}
+      <defs>
+        <clipPath id="topLeft">
+          <polygon points="0,0 36,0 0,36" />
+        </clipPath>
+        <clipPath id="bottomRight">
+          <polygon points="36,0 36,36 0,36" />
+        </clipPath>
+      </defs>
+
+      {/* Ethiopian Flag (top-left triangle) */}
+      <g clipPath="url(#topLeft)">
         <rect x="0" y="0" width="36" height="12" fill="#088930" />
         <rect x="0" y="12" width="36" height="12" fill="#FCDD0A" />
         <rect x="0" y="24" width="36" height="12" fill="#DA1219" />
-        <circle cx="18" cy="18" r="8" fill="#0F47AF" />
-        <g fill="#FCDD0A" transform="translate(18, 18)">
-          {/* 5-pointed star */}
-          <polygon points="0,-6 1.76,-1.85 6.18,-1.85 2.94,1.18 4.05,5.71 0,3 -4.05,5.71 -2.94,1.18 -6.18,-1.85 -1.76,-1.85" />
-          {/* Star rays */}
-          <line x1="0" y1="-8" x2="0" y2="-6" stroke="#FCDD0A" strokeWidth="0.8" />
-          <line x1="7.6" y1="-2.5" x2="5.7" y2="-1.85" stroke="#FCDD0A" strokeWidth="0.8" />
-          <line x1="4.7" y1="6.5" x2="3.5" y2="4.9" stroke="#FCDD0A" strokeWidth="0.8" />
-          <line x1="-4.7" y1="6.5" x2="-3.5" y2="4.9" stroke="#FCDD0A" strokeWidth="0.8" />
-          <line x1="-7.6" y1="-2.5" x2="-5.7" y2="-1.85" stroke="#FCDD0A" strokeWidth="0.8" />
-        </g>
       </g>
 
-      {/* Eritrean Flag (right) */}
-      <g transform="translate(36, 0)">
-        {/* Green top triangle */}
-        <polygon points="0,0 36,0 0,18" fill="#12AD2B" />
-        {/* Blue bottom triangle */}
-        <polygon points="0,36 36,36 0,18" fill="#4189DD" />
-        {/* Red right portion */}
-        <polygon points="36,0 36,36 0,18" fill="#EA0437" />
-        {/* Olive wreath emblem */}
-        <g transform="translate(10, 18)" fill="#F3C515">
-          <ellipse cx="0" cy="0" rx="6" ry="7" fill="none" stroke="#F3C515" strokeWidth="2.5" />
-          <circle cx="0" cy="-8" r="1.5" />
-        </g>
+      {/* Eritrean Flag (bottom-right triangle) */}
+      <g clipPath="url(#bottomRight)">
+        <rect x="0" y="0" width="36" height="12" fill="#12AD2B" />
+        <rect x="0" y="12" width="36" height="12" fill="#4189DD" />
+        <rect x="0" y="24" width="36" height="12" fill="#EA0437" />
       </g>
+
+      {/* Thin white diagonal divider for clarity */}
+      <line x1="0" y1="36" x2="36" y2="0" stroke="white" strokeWidth="1.5" />
     </svg>
   ),
   ethiopianFlag: (props: IconProps) => (
