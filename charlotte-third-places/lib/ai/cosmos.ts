@@ -90,16 +90,24 @@ export async function getChunksByPlaceId(placeId: string): Promise<ChunkDocument
 /**
  * Perform vector similarity search on places container.
  * Uses Cosmos DB's VectorDistance function for cosine similarity.
+ * Optionally filters by neighborhoods and/or tags using ARRAY_CONTAINS.
  * 
  * @param queryEmbedding - The embedding vector to search with (1536 dimensions)
  * @param topK - Maximum number of results to return
  * @param minScore - Minimum similarity score threshold (0-1, higher = more similar)
+ * @param filters - Optional filters for neighborhoods and tags
+ * @param queryText - Optional original query text for development logging
  * @returns Array of place documents with similarity scores, ordered by relevance
  */
 export async function vectorSearchPlaces(
   queryEmbedding: number[],
   topK: number = 5,
-  minScore: number = 0.7
+  minScore: number = 0.7,
+  filters?: {
+    neighborhoods?: { primary: string[]; nearby: string[] };
+    tags?: string[];
+  },
+  queryText?: string
 ): Promise<PlaceDocument[]> {
   const { places } = getContainers();
 
@@ -107,35 +115,111 @@ export async function vectorSearchPlaces(
   // For cosine, distance = 1 - similarity, so filter where distance < (1 - minScore)
   const maxDistance = 1 - minScore;
 
+  // Build WHERE clauses and parameters dynamically
+  const whereClauses: string[] = [];
+  const parameters: SqlParameter[] = [
+    { name: "@topK", value: topK },
+    { name: "@queryEmbedding", value: queryEmbedding },
+    { name: "@maxDistance", value: maxDistance },
+  ];
+
+  // Neighborhood filtering: ARRAY_CONTAINS(@neighborhoods, LOWER(c.neighborhood))
+  const hasNeighborhoodFilter = filters?.neighborhoods && 
+    (filters.neighborhoods.primary.length > 0 || filters.neighborhoods.nearby.length > 0);
+  
+  if (hasNeighborhoodFilter) {
+    // Combine primary and nearby neighborhoods, lowercase for case-insensitive matching
+    const allNeighborhoods = [
+      ...filters!.neighborhoods!.primary,
+      ...filters!.neighborhoods!.nearby,
+    ].map((n) => n.toLowerCase());
+    
+    whereClauses.push("ARRAY_CONTAINS(@neighborhoods, LOWER(c.neighborhood))");
+    parameters.push({ name: "@neighborhoods", value: allNeighborhoods });
+  }
+
+  // Tag filtering: Match places that have ANY of the detected tags
+  // Uses EXISTS with a subquery to check if any tag in c.tags matches @tags
+  const hasTagFilter = filters?.tags && filters.tags.length > 0;
+  
+  if (hasTagFilter) {
+    // Lowercase tags for case-insensitive matching
+    const tagsLower = filters!.tags!.map((t) => t.toLowerCase());
+    
+    // EXISTS subquery checks if any element in c.tags array is in @tags array
+    whereClauses.push("EXISTS(SELECT VALUE t FROM t IN c.tags WHERE ARRAY_CONTAINS(@tags, LOWER(t)))");
+    parameters.push({ name: "@tags", value: tagsLower });
+  }
+
+  // Always include vector distance filter
+  whereClauses.push("VectorDistance(c.embedding, @queryEmbedding) < @maxDistance");
+
+  // Build the complete query
+  const whereClause = whereClauses.join("\n        AND ");
+  
   const query = `
     SELECT TOP @topK
-      c.id, c.airtableRecordId, c.place, c.neighborhood, c.address, c.type, c.tags,
+      c.id, c.airtableRecordId, c.placeName, c.neighborhood, c.address, c.type, c.tags,
       c.description, c.comments, c.googleMapsProfileUrl, c.appleMapsProfileUrl,
       c.website, c.freeWifi, c.hasCinnamonRolls, c.parking, c.size, c.purchaseRequired,
       c.placeRating, c.reviewsCount, c.workingHours, c.about, c.popularTimesFormatted, c.typicalTimeSpent,
-      c.reviewsTags, c.category, c.subtypes,
+      c.reviewsTags, c.category, c.subtypes, c.operational,
       c.facebook, c.instagram, c.tikTok, c.twitter, c.linkedIn, c.youTube,
       VectorDistance(c.embedding, @queryEmbedding) AS distance
     FROM c
-    WHERE VectorDistance(c.embedding, @queryEmbedding) < @maxDistance
+    WHERE ${whereClause}
     ORDER BY VectorDistance(c.embedding, @queryEmbedding)
   `;
+
+  // Development-only logging for debugging RAG queries
+  if (process.env.NODE_ENV !== "production") {
+    const queryType = hasNeighborhoodFilter && hasTagFilter
+      ? "FILTERED (neighborhood + tag)"
+      : hasNeighborhoodFilter
+        ? "FILTERED (neighborhood only)"
+        : hasTagFilter
+          ? "FILTERED (tag only)"
+          : "UNFILTERED (pure vector search)";
+
+    console.log("\n[RAG Vector Search] ═══════════════════════════════════════");
+    if (queryText) {
+      console.log(`  User Prompt: "${queryText}"`);
+    }
+    console.log(`  Query Type:  ${queryType}`);
+    console.log(`  Min Score:   ${minScore} (maxDistance: ${maxDistance.toFixed(4)})`);
+    console.log(`  Top K:       ${topK}`);
+    
+    if (hasNeighborhoodFilter) {
+      console.log(`  Neighborhoods: [${[...filters!.neighborhoods!.primary, ...filters!.neighborhoods!.nearby].join(", ")}]`);
+    }
+    if (hasTagFilter) {
+      console.log(`  Tags: [${filters!.tags!.join(", ")}]`);
+    }
+    
+    console.log("  SQL Query:");
+    console.log(query.split("\n").map(line => `    ${line}`).join("\n"));
+    console.log("═══════════════════════════════════════════════════════════\n");
+  }
 
   const { resources } = await places.items
     .query<PlaceDocument & { distance: number }>({
       query,
-      parameters: [
-        { name: "@topK", value: topK },
-        { name: "@queryEmbedding", value: queryEmbedding },
-        { name: "@maxDistance", value: maxDistance },
-      ],
+      parameters,
     })
     .fetchAll();
 
-  // Convert distance to similarity score
+  // Convert distance to similarity score and tag places from nearby neighborhoods
+  const primarySet = new Set(
+    (filters?.neighborhoods?.primary ?? []).map((n) => n.toLowerCase())
+  );
+  
   return resources.map(({ distance, ...place }) => ({
     ...place,
     similarityScore: Math.round((1 - distance) * 10000) / 10000,
+    // True if this place is from a nearby neighborhood, not the exact one the user asked for
+    isFromNearbyNeighborhood: hasNeighborhoodFilter && primarySet.size > 0 && place.neighborhood
+      ? !primarySet.has(place.neighborhood.toLowerCase())
+      : false,
   }));
 }
 

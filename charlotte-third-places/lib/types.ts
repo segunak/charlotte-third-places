@@ -37,7 +37,7 @@ export type Place = {
 export interface PlaceDocument {
   id: string;
   airtableRecordId?: string;
-  place?: string;
+  placeName?: string;
   neighborhood?: string;
   address?: string;
   type?: string | string[];
@@ -73,9 +73,13 @@ export interface PlaceDocument {
   twitter?: string;
   linkedIn?: string;
   youTube?: string;
+  /** Operational status: "Yes", "No", or "Opening Soon" */
+  operational?: string;
   embedding?: number[];
   /** Added by vector search results */
   similarityScore?: number;
+  /** True if this place is from a nearby neighborhood (not the exact one requested) */
+  isFromNearbyNeighborhood?: boolean;
 }
 
 export interface ChunkDocument {
