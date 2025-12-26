@@ -81,6 +81,22 @@ export const RAG_CONFIG = {
     topK: 35,
     minScore: 0.6,
   },
+  /**
+   * Minimum similarity score when entity filters (neighborhoods, tags) are detected.
+   * 
+   * Set to 0.0 because when users explicitly mention a neighborhood or tag,
+   * the filter itself is the primary constraint. We don't want the similarity
+   * threshold to exclude places that ARE in the requested neighborhood just
+   * because the query text ("Places in NoDa") doesn't semantically match
+   * coffee shop embeddings.
+   * 
+   * With filters applied:
+   * - The ARRAY_CONTAINS filter narrows results to the correct neighborhood/tags
+   * - Vector search ranks results by relevance within that filtered set
+   * - topK limits the number of results returned
+   * - No similarity threshold needed since the filter is the user's intent
+   */
+  filteredMinScore: 0.0,
   /** Place-specific search - places (for broader context) */
   placeSpecificPlaces: {
     topK: 3,

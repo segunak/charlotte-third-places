@@ -6,7 +6,6 @@
 import { getEmbedding } from "./embedding";
 import {
   getPlaceById,
-  getChunksByPlaceId,
   vectorSearchPlaces,
   vectorSearchChunks,
   type PlaceDocument,
@@ -14,6 +13,7 @@ import {
 } from "./cosmos";
 import { createContextMessage } from "./prompts";
 import { RAG_CONFIG } from "./config";
+import { detectEntities, type EntityDetectionResult } from "./entity-detection";
 
 export interface RAGResult {
   /** Formatted context message for injection into system prompt */
@@ -24,6 +24,8 @@ export interface RAGResult {
   chunksCount: number;
   /** Place ID if this was a place-specific search */
   placeId?: string;
+  /** Detected entities from the query (neighborhoods and tags) */
+  entityContext?: EntityDetectionResult;
 }
 
 export interface RAGParams {
@@ -42,8 +44,8 @@ export interface RAGParams {
  * - Also get related places for broader context
  * 
  * If no placeId:
- * - Vector search across all places
- * - Vector search across all reviews
+ * - Detect entities (neighborhoods and tags) from query
+ * - Vector search across places (filtered by detected entities)
  * 
  * @param params - Query and optional placeId
  * @returns RAG result with formatted context
@@ -51,6 +53,12 @@ export interface RAGParams {
 export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResult> {
   // Generate embedding for the query
   const queryEmbedding = await getEmbedding(query);
+
+  // Detect entities (neighborhoods and tags) from the query
+  const entityContext = detectEntities(query);
+  const hasNeighborhoodFilter = entityContext.neighborhoods.primary.length > 0;
+  const hasTagFilter = entityContext.tags.length > 0;
+  const hasFilters = hasNeighborhoodFilter || hasTagFilter;
 
   let placeContext: PlaceDocument | null = null;
   let places: PlaceDocument[] = [];
@@ -93,6 +101,13 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
     // Detailed review chunks are fetched only for place-specific queries where
     // the placeId filter enables fast single-partition searches.
     //
+    // ENTITY FILTERING:
+    // When neighborhoods or tags are detected in the query, we use ARRAY_CONTAINS
+    // to pre-filter places before vector search. This ensures:
+    // - Exact neighborhood matching (e.g., "NoDa" only returns NoDa places)
+    // - Tag matching (e.g., "fireplace" only returns places with Fireplace tag)
+    // Nearby neighborhoods are included to give users more options.
+    //
     // VECTOR INDEX CHOICE: quantizedFlat (not diskANN)
     // ------------------------------------------------
     // This architecture is why we use quantizedFlat instead of diskANN:
@@ -101,10 +116,23 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
     // See: https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/vector-search
     // See: docs/ai.md for full rationale
     
+    // When filters are detected, use filteredMinScore (0.0) instead of the normal threshold.
+    // The filter itself is the constraint; we want all matching places ranked by relevance.
+    const effectiveMinScore = hasFilters
+      ? RAG_CONFIG.filteredMinScore
+      : RAG_CONFIG.generalPlaces.minScore;
+
     places = await vectorSearchPlaces(
       queryEmbedding,
       RAG_CONFIG.generalPlaces.topK,
-      RAG_CONFIG.generalPlaces.minScore
+      effectiveMinScore,
+      hasFilters
+        ? {
+            neighborhoods: hasNeighborhoodFilter ? entityContext.neighborhoods : undefined,
+            tags: hasTagFilter ? entityContext.tags : undefined,
+          }
+        : undefined,
+      query // Pass query text for development logging
     );
   }
 
@@ -113,6 +141,7 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
     places,
     chunks,
     placeContext,
+    entityContext: hasFilters ? entityContext : undefined,
   });
 
   return {
@@ -120,5 +149,6 @@ export async function performRAG({ query, placeId }: RAGParams): Promise<RAGResu
     placesCount: places.length,
     chunksCount: chunks.length,
     placeId,
+    entityContext: hasFilters ? entityContext : undefined,
   };
 }

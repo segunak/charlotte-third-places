@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npx tsx scripts/generate-airtable-data.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-airtable-data": "npx tsx scripts/generate-airtable-data.ts"
   },
   "dependencies": {
     "@ai-sdk/azure": "^2.0.77",

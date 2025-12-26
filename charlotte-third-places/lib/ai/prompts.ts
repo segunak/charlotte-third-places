@@ -1,4 +1,7 @@
 import type { PlaceDocument, ChunkDocument } from "@/lib/types";
+import type {
+  EntityDetectionResult
+} from "./entity-detection";
 
 export const SYSTEM_PROMPT = `You are a friendly, knowledgeable local guide for Charlotte, North Carolina, specializing in "third places" - spots that aren't home or work where people go to study, read, write, work remotely, relax, or socialize.
 
@@ -58,6 +61,12 @@ The context includes all relevant data about each place - use whatever fields ar
 Key things to know:
 - **Authoritative Curator Notes** - First-hand observations from the site maintainer. Treat these as especially reliable insider knowledge.
 - **Customer Review** - Real Google Maps reviews. Look for patterns across multiple reviews rather than relying on any single one.
+- **Operational Status** - Each place has an operational status with exactly three possible values:
+  - "Yes" - The place is currently open and operating (this is the default, not shown in context)
+  - "No" - The place is permanently or temporarily closed
+  - "Opening Soon" - The place is announced but not yet open to the public
+  When a place shows "Operational Status: Opening Soon", mention this clearly to the user. They may still be interested, but should understand it's not yet available to visit. When a place shows "Operational Status: No", generally avoid recommending it unless the user specifically asks about closed places.
+- **From Nearby Neighborhood** - When results include places from nearby neighborhoods (not the exact one the user asked about), they will be marked with "From Nearby Neighborhood: Yes". Prioritize places from the exact neighborhood requested, then optionally mention nearby options.
 - All other fields are self-explanatory. Use them as needed.
 
 === RECOMMENDATION BEHAVIOR ===
@@ -75,6 +84,12 @@ When few places match:
 - Be honest: "I found 2 spots that fit all your criteria" is better than padding with poor matches
 - Offer to relax constraints: "If you're flexible on [X], I can suggest more options"
 - Never invent or fabricate places to fill out a list
+
+Neighborhood-aware responses:
+When a user asks about a specific neighborhood and results include places from nearby neighborhoods:
+- First present places from the exact neighborhood the user asked about
+- Then optionally mention places from nearby neighborhoods with language like "if you're open to nearby places"
+- Do NOT make assumptions about walking distances, travel times, or physical layout between neighborhoods
 
 === FORMATTING & LINKING ===
 
@@ -195,6 +210,21 @@ User: "Give me 25 coffee shops"
 - **[Place Name 2](place-page-url)** (Neighborhood) - [description] ([Google Maps](url), [Apple Maps](url))
 ...[continue through 15 places]"
 
+**Neighborhood-specific query with nearby results:**
+User: "What coffee shops are in NoDa?"
+
+"Here are coffee shops in NoDa:
+
+- **[Place Name 1](place-page-url)** - [description] ([Google Maps](url), [Apple Maps](url))
+- **[Place Name 2](place-page-url)** - [description] ([Google Maps](url), [Apple Maps](url))
+
+If you're open to nearby places, there are also great options in Plaza Midwood and Optimist Park."
+
+**Opening Soon place:**
+User: "Any new cafés opening up?"
+
+"Yes! **[Place Name](place-page-url)** in [Neighborhood] is opening soon ([Google Maps](url), [Apple Maps](url)). While it's not available to visit yet, it's worth keeping on your radar for when it opens."
+
 You're here to help people find their perfect spot in Charlotte!`;
 
 /**
@@ -204,11 +234,21 @@ You're here to help people find their perfect spot in Charlotte!`;
 function formatPlace(place: PlaceDocument): string {
   const lines: string[] = [];
 
-  if (place.place) lines.push(`Name: ${place.place}`);
+  if (place.placeName) lines.push(`Name: ${place.placeName}`);
   if (place.type) lines.push(`Type: ${place.type}`);
   if (place.neighborhood) lines.push(`Neighborhood: ${place.neighborhood}`);
   if (place.address) lines.push(`Address: ${place.address}`);
   if (place.description) lines.push(`Description: ${place.description}`);
+  
+  // Operational status - show when NOT "Yes" (i.e., closed or opening soon)
+  if (place.operational && place.operational !== "Yes") {
+    lines.push(`Operational Status: ${place.operational}`);
+  }
+  
+  // Mark if this place is from a nearby neighborhood (not the exact one requested)
+  if (place.isFromNearbyNeighborhood) {
+    lines.push(`From Nearby Neighborhood: Yes (not the exact neighborhood requested, but close by)`);
+  }
   
   // Curator comments - prioritize these as authoritative insider knowledge
   if (place.comments) {
@@ -371,6 +411,8 @@ export interface CreateContextMessageParams {
   chunks: ChunkDocument[];
   /** Optional specific place context for place-specific chats */
   placeContext?: PlaceDocument | null;
+  /** Optional entity context when neighborhoods or tags were detected in query */
+  entityContext?: EntityDetectionResult;
 }
 
 /**
@@ -381,8 +423,39 @@ export function createContextMessage({
   places,
   chunks,
   placeContext,
+  entityContext,
 }: CreateContextMessageParams): string {
   const contextParts: string[] = [];
+
+  // Add entity context if provided (neighborhoods and/or tags detected in query)
+  if (entityContext) {
+    const hasNeighborhoods = entityContext.neighborhoods.primary.length > 0;
+    const hasTags = entityContext.tags.length > 0;
+
+    if (hasNeighborhoods || hasTags) {
+      contextParts.push("=== Query Filter Context ===");
+
+      if (hasNeighborhoods) {
+        contextParts.push(
+          `Primary neighborhoods searched: ${entityContext.neighborhoods.primary.join(", ")}`
+        );
+        if (entityContext.neighborhoods.nearby.length > 0) {
+          contextParts.push(
+            `Nearby neighborhoods also included: ${entityContext.neighborhoods.nearby.join(", ")}`
+          );
+        }
+      }
+
+      if (hasTags) {
+        contextParts.push(`Tags matched: ${entityContext.tags.join(", ")}`);
+        contextParts.push(
+          `Note: Results are filtered to places with these tags. The user mentioned these specific features.`
+        );
+      }
+
+      contextParts.push("");
+    }
+  }
 
   // Add specific place context if provided (for place-specific chats)
   if (placeContext) {
