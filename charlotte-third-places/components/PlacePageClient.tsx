@@ -417,7 +417,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                         place={place}
                         layout="page"
                         showPhotosButton={false}
-                        onAskAI={() => setShowChat(true)}
+                        onAskAI={place.operational !== "Opening Soon" ? () => setShowChat(true) : undefined}
                     />
                 </CardContent>
             </Card>

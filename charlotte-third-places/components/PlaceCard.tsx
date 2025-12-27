@@ -369,18 +369,20 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             - flex-shrink-0: CRITICAL - prevents buttons from compressing when space is tight
                             - data-buttons: Used by checkNeighborhoodOverflow() to measure button width */}
                         <div data-buttons className="flex space-x-2 flex-shrink-0">
-                            <Button
-                                variant="default"
-                                size="icon"
-                                className="h-9 w-9 rounded-full"
-                                onClick={(e) => {
-                                    e.stopPropagation(); // Prevent click from bubbling to Card
-                                    showPlaceChat(place);
-                                }}
-                                aria-label="Ask AI about this place"
-                            >
-                                <Icons.chat className="h-5 w-5 text-primary-foreground" />
-                            </Button>
+                            {!isOpeningSoon && (
+                                <Button
+                                    variant="default"
+                                    size="icon"
+                                    className="h-9 w-9 rounded-full"
+                                    onClick={(e) => {
+                                        e.stopPropagation(); // Prevent click from bubbling to Card
+                                        showPlaceChat(place);
+                                    }}
+                                    aria-label="Ask AI about this place"
+                                >
+                                    <Icons.chat className="h-5 w-5 text-primary-foreground" />
+                                </Button>
+                            )}
                             {shouldShowPhotosButton && (
                                 <Button
                                     variant="default"
