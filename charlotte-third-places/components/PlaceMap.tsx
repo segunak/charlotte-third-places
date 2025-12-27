@@ -264,7 +264,13 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         </AdvancedMarker>
                     )}
 
-                    {filteredPlaces.map((place, index) => {
+                    {filteredPlaces
+                        .filter((place) => {
+                            const lat = Number(place.latitude);
+                            const lng = Number(place.longitude);
+                            return !isNaN(lat) && !isNaN(lng) && lat !== 0 && lng !== 0;
+                        })
+                        .map((place, index) => {
                         const position = {
                             lat: Number(place.latitude),
                             lng: Number(place.longitude)

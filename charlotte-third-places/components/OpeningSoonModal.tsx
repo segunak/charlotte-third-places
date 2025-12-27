@@ -38,7 +38,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerContent
-          className="overflow-hidden flex flex-col pb-safe"
+          className="overflow-hidden flex flex-col pb-safe max-h-[86dvh]"
           onInteractOutside={(e) => e.preventDefault()}
           onOpenAutoFocus={(e) => e.preventDefault()}
           onFocusOutside={(e) => e.preventDefault()}
@@ -65,7 +65,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         <DialogHeader className="shrink-0">
           <DialogTitle>Opening Soon</DialogTitle>
         </DialogHeader>
-        <div className="flex-1">{content}</div>
+        <div className="flex-1 overflow-y-auto">{content}</div>
         <div className="pt-2 pb-4 px-4 shrink-0">
           <Button className="w-full font-bold" onClick={() => onOpenChange(false)}>Close</Button>
         </div>
