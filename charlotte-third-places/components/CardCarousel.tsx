@@ -1,6 +1,6 @@
 "use client";
 
-import React, { memo, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Place } from "@/lib/types";
 import { PlaceCard } from "@/components/PlaceCard";
 import {
@@ -11,16 +11,12 @@ import {
 
 interface CardCarouselProps {
     items: Place[];
-    initialIndex: number; // Renamed from currentIndex
+    initialIndex: number;
     total: number;
-    // Removed onSwipe prop
 }
-
-const MemoPlaceCard = memo(PlaceCard);
 
 export const CardCarousel: React.FC<CardCarouselProps> = ({ items, initialIndex }) => {
     const [emblaApi, setEmblaApi] = useState<any>(null);
-    // No need for prevIndexRef or isProgrammaticScroll
 
     // Scroll to the initialIndex only when the component mounts or items change
     useEffect(() => {
