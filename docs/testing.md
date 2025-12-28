@@ -7,7 +7,7 @@ This document describes the automated testing infrastructure for the Charlotte T
 The project uses a two-tier testing approach:
 
 1. **Unit & Component Tests** — Vitest + React Testing Library
-2. **End-to-End Tests** — Playwright (Chromium only)
+2. **End-to-End Tests (E2E)** — Playwright (Chromium only)
 
 Both tiers run in GitHub Actions CI. Unit tests run on every push and PR, while E2E tests run against Vercel preview deployments after they complete.
 
