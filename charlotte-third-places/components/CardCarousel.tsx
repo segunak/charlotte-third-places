@@ -8,7 +8,6 @@ import {
     CarouselContent,
     CarouselItem,
 } from "@/components/ui/carousel";
-import useEmblaCarousel from "embla-carousel-react";
 
 interface CardCarouselProps {
     items: Place[];
