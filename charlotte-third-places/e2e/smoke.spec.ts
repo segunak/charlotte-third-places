@@ -1,0 +1,253 @@
+import { test, expect } from '@playwright/test'
+
+/**
+ * Smoke tests for Charlotte Third Places frontend.
+ * These tests verify core functionality is working on the deployed site.
+ */
+
+test.describe('Smoke Tests', () => {
+  test('homepage loads successfully', async ({ page }) => {
+    await page.goto('/')
+    
+    // Check that the page title is set
+    await expect(page).toHaveTitle(/Charlotte Third Places/i)
+    
+    // Check that main content is visible
+    await expect(page.locator('main')).toBeVisible()
+  })
+
+  test('homepage displays place count', async ({ page }) => {
+    await page.goto('/')
+    
+    // The heading should show a number of places (e.g., "Explore 150 Third Places")
+    const heading = page.getByRole('heading', { level: 1 })
+    await expect(heading).toBeVisible()
+    await expect(heading).toContainText(/Explore \d+ Third Places/i)
+  })
+
+  test('homepage displays browse section with places', async ({ page }) => {
+    await page.goto('/')
+    
+    // Wait for page to load
+    await expect(page.locator('main')).toBeVisible()
+    
+    // The browse section should exist and contain place cards
+    const browseSection = page.locator('#browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 10000 })
+  })
+
+  test('about page loads', async ({ page }) => {
+    await page.goto('/about')
+    
+    await expect(page).toHaveTitle(/About/i)
+    await expect(page.locator('main')).toBeVisible()
+  })
+
+  test('map page loads', async ({ page }) => {
+    await page.goto('/map')
+    
+    await expect(page.locator('main')).toBeVisible()
+    
+    // Wait for the APIProvider/Map to load - look for the Google Maps container
+    // The @vis.gl/react-google-maps library renders into a div
+    const mapElement = page.locator('[class*="gm-style"], [id*="map"], .gm-style').first()
+    await expect(mapElement).toBeVisible({ timeout: 20000 })
+  })
+
+  test('navigation to map page works', async ({ page }) => {
+    await page.goto('/')
+    
+    // Find and click map link in navigation
+    const mapLink = page.getByRole('link', { name: /map/i }).first()
+    await mapLink.click()
+    
+    // Verify navigation occurred
+    await expect(page).toHaveURL(/\/map/)
+  })
+
+  test('responsive: mobile navigation is accessible', async ({ page }) => {
+    // Set mobile viewport
+    await page.setViewportSize({ width: 375, height: 667 })
+    
+    await page.goto('/')
+    
+    // Check that page loads correctly on mobile
+    await expect(page.locator('main')).toBeVisible()
+  })
+})
+
+test.describe('Homepage Content', () => {
+  test('displays Feed/Random section', async ({ page }) => {
+    await page.goto('/')
+    
+    // Wait for content to load
+    await expect(page.locator('main')).toBeVisible()
+    
+    // Should have either "Feed" (desktop) or "Random" (mobile) section
+    const feedSection = page.locator('#stack-section')
+    await expect(feedSection).toBeVisible()
+  })
+
+  test('displays navigation links', async ({ page }) => {
+    await page.goto('/')
+    
+    // Desktop navigation links in intro text
+    await expect(page.getByRole('link', { name: /map/i }).first()).toBeVisible()
+  })
+
+  test('displays AI hero section on desktop', async ({ page }) => {
+    // Use desktop viewport
+    await page.setViewportSize({ width: 1280, height: 800 })
+    
+    await page.goto('/')
+    
+    // AI hero section should be visible
+    const aiSection = page.getByText(/Not sure where to go/i)
+    await expect(aiSection).toBeVisible()
+  })
+
+  test('displays quick action buttons on mobile', async ({ page }) => {
+    // Use mobile viewport
+    await page.setViewportSize({ width: 375, height: 667 })
+    
+    await page.goto('/')
+    
+    // Mobile quick action buttons are in main content area
+    // Use getByRole('main') to scope to the main content and avoid matching nav links
+    const main = page.getByRole('main')
+    
+    // "Random" and "Browse" are buttons, "Map" and "Chat" are links styled as buttons
+    await expect(main.getByRole('button', { name: 'Random' })).toBeVisible()
+    await expect(main.getByRole('link', { name: 'Map' })).toBeVisible()
+    await expect(main.getByRole('link', { name: 'Chat' })).toBeVisible()
+    await expect(main.getByRole('button', { name: 'Browse' })).toBeVisible()
+  })
+})
+
+test.describe('Places Functionality', () => {
+  // Place detail pages are accessed directly via URL (not via links from homepage)
+  // Homepage place cards open modals, not links to /places/[id]
+  // For local development, recordId is the row index (1, 2, 3, etc.)
+  
+  test('place detail page loads directly', async ({ page }) => {
+    // Navigate directly to a place detail page
+    // Using recordId "1" which is valid for local CSV data
+    await page.goto('/places/1')
+    
+    // Page should load successfully
+    await expect(page.locator('main')).toBeVisible()
+    // Should not show "Place not found"
+    await expect(page.getByText('Place not found')).not.toBeVisible()
+  })
+
+  test('place detail page shows place name in heading', async ({ page }) => {
+    await page.goto('/places/1')
+    
+    // The place name should appear in the h1 heading
+    const heading = page.getByRole('heading', { level: 1 })
+    await expect(heading).toBeVisible()
+    // Heading should have actual content (not empty)
+    await expect(heading).not.toBeEmpty()
+  })
+
+  test('place detail page shows description section', async ({ page }) => {
+    await page.goto('/places/1')
+    
+    // Description section should be visible
+    await expect(page.getByText(/Description/i)).toBeVisible()
+  })
+
+  test('place detail page shows share button', async ({ page }) => {
+    await page.goto('/places/1')
+    
+    // Should have share button - use getByRole to target the button specifically
+    await expect(page.getByRole('button', { name: 'Share Place' })).toBeVisible()
+  })
+})
+
+test.describe('Map Page', () => {
+  test('map shows on desktop', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 })
+    
+    await page.goto('/map')
+    
+    // Wait for Google Maps to load - look for the gm-style class added by Google Maps
+    const mapContainer = page.locator('.gm-style').first()
+    await expect(mapContainer).toBeVisible({ timeout: 20000 })
+  })
+
+  test('map page shows place count on desktop', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 })
+    
+    await page.goto('/map')
+    
+    // Heading should show place count
+    const heading = page.getByRole('heading', { level: 1 })
+    await expect(heading).toContainText(/\d+ Third Places/i)
+  })
+
+  test('map page shows filter sidebar on desktop', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 })
+    
+    await page.goto('/map')
+    
+    // Filter sidebar should be visible on desktop
+    // Look for filter-related elements
+    const sidebar = page.locator('[class*="sticky"]').first()
+    await expect(sidebar).toBeVisible()
+  })
+})
+
+test.describe('PlaceCard Interaction', () => {
+  test('clicking place card opens modal on homepage', async ({ page }) => {
+    await page.goto('/')
+    
+    // Wait for the browse section to load (contains DataTable with PlaceCards)
+    const browseSection = page.locator('#browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 10000 })
+    
+    // Wait a bit more for the DataTable loading spinner to finish
+    await page.waitForTimeout(2000)
+    
+    // Find a clickable place card (they have cursor-pointer class)
+    const placeCard = browseSection.locator('[class*="cursor-pointer"]').first()
+    
+    if (await placeCard.count() > 0) {
+      await placeCard.click()
+      
+      // Radix Dialog should appear with role="dialog"
+      const dialog = page.locator('[role="dialog"]')
+      await expect(dialog).toBeVisible({ timeout: 5000 })
+    }
+  })
+
+  test('modal has close button', async ({ page }) => {
+    await page.goto('/')
+    
+    // Wait for the browse section and cards to load
+    const browseSection = page.locator('#browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 10000 })
+    await page.waitForTimeout(2000)
+    
+    const placeCard = browseSection.locator('[class*="cursor-pointer"]').first()
+    
+    if (await placeCard.count() > 0) {
+      await placeCard.click()
+      
+      // Wait for dialog
+      const dialog = page.locator('[role="dialog"]')
+      await expect(dialog).toBeVisible({ timeout: 5000 })
+      
+      // Close button should be visible (the dialog has a "Close" button in the footer)
+      const closeButton = dialog.getByRole('button', { name: /close/i })
+      await expect(closeButton).toBeVisible()
+      
+      // Clicking close should dismiss the modal
+      await closeButton.click()
+      
+      await expect(dialog).not.toBeVisible()
+    }
+  })
+})
+
+

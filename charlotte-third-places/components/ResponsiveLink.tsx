@@ -8,12 +8,13 @@ export function ResponsiveLink({
     children,
     className = "",
     applyDefaultStyling = true,
+    ...props
 }: {
     href: string;
     children: React.ReactNode;
     className?: string;
     applyDefaultStyling?: boolean;
-}) {
+} & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
     const [isDesktop, setIsDesktop] = useState(false);
 
     useEffect(() => {
@@ -30,7 +31,7 @@ export function ResponsiveLink({
     }, []);
 
     return (
-        <a href={href} target={isDesktop ? "_blank" : "_self"} rel="noopener" className={cn(applyDefaultStyling ? "custom-link" : "", className)}>
+        <a href={href} target={isDesktop ? "_blank" : "_self"} rel="noopener" className={cn(applyDefaultStyling ? "custom-link" : "", className)} {...props}>
             {children}
         </a>
     );

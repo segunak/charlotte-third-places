@@ -8,7 +8,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate-airtable-data": "npx tsx scripts/generate-airtable-data.ts"
+    "generate-airtable-data": "npx tsx scripts/generate-airtable-data.ts",
+    "test": "vitest run && start-server-and-test dev http://localhost:3000 test:e2e",
+    "test:unit": "vitest",
+    "test:unit:run": "vitest run",
+    "test:ci": "vitest run --coverage",
+    "test:coverage": "vitest run --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "@ai-sdk/azure": "^2.0.77",
@@ -81,15 +88,25 @@
     "zod": "^4.1.13"
   },
   "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.1",
     "@types/node": "^20",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@types/react-syntax-highlighter": "^15.5.13",
     "@types/react-window": "^1.8.8",
+    "@vitejs/plugin-react": "^5.1.2",
+    "@vitest/coverage-v8": "^4.0.16",
     "eslint": "^8",
     "eslint-config-next": "15.5.4",
+    "jsdom": "^27.4.0",
     "postcss": "^8",
+    "start-server-and-test": "^2.1.3",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vite-tsconfig-paths": "^6.0.3",
+    "vitest": "^4.0.16"
   }
 }
