@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from "react";
+import React, { FC } from "react";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
 import { Badge } from "@/components/ui/badge";
@@ -219,7 +219,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 key: 'address',
                 label: 'Address',
                 icon: attributeIcons.address,
-                value: <span className="text-muted-foreground">{address}</span>,
+                value: address ? <span className="text-muted-foreground">{address}</span> : <YesNoBadge variant="positive" value="Unsure" />,
                 thClassName: `${TH_BASE_CLASS} w-44`,
                 tdClassName: TD_BASE_CLASS
             },
