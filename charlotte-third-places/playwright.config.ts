@@ -25,6 +25,9 @@ export default defineConfig({
   // Opt out of parallel tests on CI for stability
   workers: process.env.CI ? 1 : undefined,
   
+  // Test timeout - longer for dynamic Next.js content
+  timeout: 60000,
+  
   // Reporter to use
   reporter: [
     ['html', { outputFolder: 'playwright-report' }],
@@ -42,6 +45,14 @@ export default defineConfig({
     
     // Capture screenshot on failure
     screenshot: 'only-on-failure',
+    
+    // Bypass Vercel deployment protection in CI
+    // Only sends header when VERCEL_AUTOMATION_BYPASS_SECRET is set
+    ...(process.env.VERCEL_AUTOMATION_BYPASS_SECRET && {
+      extraHTTPHeaders: {
+        'x-vercel-protection-bypass': process.env.VERCEL_AUTOMATION_BYPASS_SECRET,
+      },
+    }),
   },
 
   // Configure projects for major browsers

@@ -50,7 +50,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
             <div className="col-span-1 space-y-4 mb-4 sm:mb-0 sm:pr-12">
                 {/* Intro Text */}
-                <div id="browse-section" className="text-2xl font-bold">Browse</div>
+                <div id="browse-section" data-testid="browse-section" className="text-2xl font-bold">Browse</div>
                 <p className="text-pretty">
                     {/* Always visible portion */}
                     Browse the complete list of places.{" "}

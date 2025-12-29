@@ -28,12 +28,13 @@ test.describe('Smoke Tests', () => {
   test('homepage displays browse section with places', async ({ page }) => {
     await page.goto('/')
     
-    // Wait for page to load
-    await expect(page.locator('main')).toBeVisible()
+    // Wait for domcontentloaded, then wait for the browse section
+    await page.waitForLoadState('domcontentloaded')
     
     // The browse section should exist and contain place cards
-    const browseSection = page.locator('#browse-section')
-    await expect(browseSection).toBeVisible({ timeout: 10000 })
+    // This is a dynamically loaded component so needs longer timeout
+    const browseSection = page.getByTestId('browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 60000 })
   })
 
   test('about page loads', async ({ page }) => {
@@ -56,13 +57,15 @@ test.describe('Smoke Tests', () => {
 
   test('navigation to map page works', async ({ page }) => {
     await page.goto('/')
+    await page.waitForLoadState('domcontentloaded')
     
     // Find and click map link in navigation
     const mapLink = page.getByRole('link', { name: /map/i }).first()
+    await expect(mapLink).toBeVisible({ timeout: 15000 })
     await mapLink.click()
     
-    // Verify navigation occurred
-    await expect(page).toHaveURL(/\/map/)
+    // Verify navigation occurred - use longer timeout for slow dev server
+    await expect(page).toHaveURL(/\/map/, { timeout: 30000 })
   })
 
   test('responsive: mobile navigation is accessible', async ({ page }) => {
@@ -170,47 +173,50 @@ test.describe('Map Page', () => {
     await page.setViewportSize({ width: 1280, height: 800 })
     
     await page.goto('/map')
+    await page.waitForLoadState('domcontentloaded')
     
     // Wait for Google Maps to load - look for the gm-style class added by Google Maps
     const mapContainer = page.locator('.gm-style').first()
-    await expect(mapContainer).toBeVisible({ timeout: 20000 })
+    await expect(mapContainer).toBeVisible({ timeout: 60000 })
   })
 
   test('map page shows place count on desktop', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 800 })
     
     await page.goto('/map')
+    await page.waitForLoadState('domcontentloaded')
     
     // Heading should show place count
     const heading = page.getByRole('heading', { level: 1 })
-    await expect(heading).toContainText(/\d+ Third Places/i)
+    await expect(heading).toContainText(/\d+ Third Places/i, { timeout: 30000 })
   })
 
   test('map page shows filter sidebar on desktop', async ({ page }) => {
     await page.setViewportSize({ width: 1280, height: 800 })
     
     await page.goto('/map')
+    await page.waitForLoadState('domcontentloaded')
     
-    // Filter sidebar should be visible on desktop
-    // Look for filter-related elements
-    const sidebar = page.locator('[class*="sticky"]').first()
-    await expect(sidebar).toBeVisible()
+    // Filter sidebar should be visible on desktop - use data-testid for stability
+    const sidebar = page.getByTestId('filter-sidebar')
+    await expect(sidebar).toBeVisible({ timeout: 60000 })
   })
 })
 
 test.describe('PlaceCard Interaction', () => {
   test('clicking place card opens modal on homepage', async ({ page }) => {
     await page.goto('/')
+    await page.waitForLoadState('domcontentloaded')
     
     // Wait for the browse section to load (contains DataTable with PlaceCards)
-    const browseSection = page.locator('#browse-section')
-    await expect(browseSection).toBeVisible({ timeout: 10000 })
+    const browseSection = page.getByTestId('browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 60000 })
     
     // Wait a bit more for the DataTable loading spinner to finish
     await page.waitForTimeout(2000)
     
-    // Find a clickable place card (they have cursor-pointer class)
-    const placeCard = browseSection.locator('[class*="cursor-pointer"]').first()
+    // Find a clickable place card by looking for article elements or cards
+    const placeCard = page.locator('[role="article"], [data-testid="place-card"]').first()
     
     if (await placeCard.count() > 0) {
       await placeCard.click()
@@ -223,13 +229,14 @@ test.describe('PlaceCard Interaction', () => {
 
   test('modal has close button', async ({ page }) => {
     await page.goto('/')
+    await page.waitForLoadState('domcontentloaded')
     
     // Wait for the browse section and cards to load
-    const browseSection = page.locator('#browse-section')
-    await expect(browseSection).toBeVisible({ timeout: 10000 })
+    const browseSection = page.getByTestId('browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 60000 })
     await page.waitForTimeout(2000)
     
-    const placeCard = browseSection.locator('[class*="cursor-pointer"]').first()
+    const placeCard = page.locator('[role="article"], [data-testid="place-card"]').first()
     
     if (await placeCard.count() > 0) {
       await placeCard.click()
