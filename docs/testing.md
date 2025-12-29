@@ -81,13 +81,13 @@ This is powered by `start-server-and-test`, which handles server lifecycle manag
 
 ### Unit Tests
 
-**File**: [.github/workflows/test.yml](../.github/workflows/test.yml)
+**File**: [.github/workflows/unit-tests.yml](../.github/workflows/unit-tests.yml)
 
 Runs `npm run test:ci` (Vitest with coverage) on push to `develop`/`master` and on PRs targeting `master`.
 
 ### E2E Tests
 
-**File**: [.github/workflows/playwright.yml](../.github/workflows/playwright.yml)
+**File**: [.github/workflows/playwright-tests.yml](../.github/workflows/playwright-tests.yml)
 
 Triggered by `deployment_status` event when Vercel preview deployment completes. Runs Playwright against the preview URL.
 
@@ -99,8 +99,8 @@ To require tests to pass before merging PRs into `master`:
 2. Add rule for `master`
 3. Enable **Require status checks to pass before merging**
 4. Add these required checks:
-   - `Run Vitest` (from test.yml)
-   - `Run Playwright` (from playwright.yml)
+   - `Run Vitest` (from unit-tests.yml)
+   - `Run Playwright` (from playwright-tests.yml)
 
 ## Writing Tests
 
