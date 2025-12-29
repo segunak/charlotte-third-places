@@ -1,8 +1,9 @@
-name: Unit & Component Tests
+name: Unit Tests
 
 on:
   push:
     branches: [develop]
+  workflow_dispatch:
 
 # Cancel in-progress runs for the same branch
 concurrency:

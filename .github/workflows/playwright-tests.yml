@@ -1,0 +1,98 @@
+name: Playwright E2E Tests
+
+# Triggered by Vercel deployment status - runs after preview deploy completes
+# Can also be triggered manually with optional URL override
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: 'URL to test against'
+        required: false
+        default: 'https://charlotte-third-places-git-develop-segun-akinyemis-projects.vercel.app'
+
+# Cancel in-progress runs for the same deployment (or run ID for manual triggers)
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.deployment.id || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Check Skip Conditions
+    runs-on: ubuntu-latest
+    # Run on successful deployment OR manual trigger
+    if: github.event.deployment_status.state == 'success' || github.event_name == 'workflow_dispatch'
+    outputs:
+      should-run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Check for auto-merge commit
+        id: check
+        run: |
+          # Always run for manual triggers
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "run=true" >> $GITHUB_OUTPUT
+            echo "Manual trigger - running E2E tests"
+            exit 0
+          fi
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if [[ "$COMMIT_MSG" == *"[auto-merge]"* ]]; then
+            echo "run=false" >> $GITHUB_OUTPUT
+            echo "Skipping E2E tests - auto-merge commit detected"
+          else
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
+
+  test:
+    name: Run Playwright
+    needs: check
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    if: needs.check.outputs.should-run == 'true'
+    
+    defaults:
+      run:
+        working-directory: charlotte-third-places
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 'lts/*'
+          cache: 'npm'
+          cache-dependency-path: charlotte-third-places/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install chromium --with-deps
+
+      - name: Run Playwright tests
+        run: npx playwright test
+        env:
+          # Use the Vercel preview URL from deployment event, or input URL for manual triggers
+          PLAYWRIGHT_TEST_BASE_URL: ${{ github.event.deployment_status.target_url || inputs.url }}
+          # Bypass Vercel deployment protection for automated testing
+          VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+
+      - name: Upload Playwright report
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: charlotte-third-places/playwright-report/
+          retention-days: 30
+
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: test-results
+          path: charlotte-third-places/test-results/
+          retention-days: 7
