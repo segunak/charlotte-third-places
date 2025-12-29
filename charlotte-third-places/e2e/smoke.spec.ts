@@ -130,12 +130,28 @@ test.describe('Homepage Content', () => {
 test.describe('Places Functionality', () => {
   // Place detail pages are accessed directly via URL (not via links from homepage)
   // Homepage place cards open modals, not links to /places/[id]
-  // For local development, recordId is the row index (1, 2, 3, etc.)
+  // Dynamically fetch a valid place ID from sitemap - works for both local CSV (numeric IDs)
+  // and production Airtable (record IDs like recXXXXXX)
   
+  let validPlaceId: string = '1' // fallback for local development
+
+  test.beforeAll(async ({ request }) => {
+    try {
+      const response = await request.get('/sitemap.xml')
+      const text = await response.text()
+      // Extract first place ID from sitemap (works for both /places/1 and /places/recXXXXXX)
+      const match = text.match(/\/places\/([^<\s]+)/)
+      if (match) {
+        validPlaceId = match[1]
+      }
+    } catch {
+      // Keep fallback if sitemap fetch fails
+    }
+  })
+
   test('place detail page loads directly', async ({ page }) => {
-    // Navigate directly to a place detail page
-    // Using recordId "1" which is valid for local CSV data
-    await page.goto('/places/1')
+    // Navigate directly to a place detail page using dynamically fetched ID
+    await page.goto(`/places/${validPlaceId}`)
     
     // Page should load successfully
     await expect(page.locator('main')).toBeVisible()
@@ -144,7 +160,7 @@ test.describe('Places Functionality', () => {
   })
 
   test('place detail page shows place name in heading', async ({ page }) => {
-    await page.goto('/places/1')
+    await page.goto(`/places/${validPlaceId}`)
     
     // The place name should appear in the h1 heading
     const heading = page.getByRole('heading', { level: 1 })
@@ -154,14 +170,14 @@ test.describe('Places Functionality', () => {
   })
 
   test('place detail page shows description section', async ({ page }) => {
-    await page.goto('/places/1')
+    await page.goto(`/places/${validPlaceId}`)
     
     // Description section should be visible
     await expect(page.getByText(/Description/i)).toBeVisible()
   })
 
   test('place detail page shows share button', async ({ page }) => {
-    await page.goto('/places/1')
+    await page.goto(`/places/${validPlaceId}`)
     
     // Should have share button - use getByRole to target the button specifically
     await expect(page.getByRole('button', { name: 'Share Place' })).toBeVisible()
