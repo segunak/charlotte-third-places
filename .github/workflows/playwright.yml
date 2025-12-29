@@ -10,13 +10,33 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  check:
+    name: Check Skip Conditions
+    runs-on: ubuntu-latest
+    if: github.event.deployment_status.state == 'success'
+    outputs:
+      should-run: ${{ steps.check.outputs.run }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Check for auto-merge commit
+        id: check
+        run: |
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          if [[ "$COMMIT_MSG" == *"[auto-merge]"* ]]; then
+            echo "run=false" >> $GITHUB_OUTPUT
+            echo "Skipping E2E tests - auto-merge commit detected"
+          else
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
+
   test:
     name: Run Playwright
+    needs: check
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    
-    # Only run when Vercel deployment succeeds
-    if: github.event.deployment_status.state == 'success'
+    if: needs.check.outputs.should-run == 'true'
     
     defaults:
       run:

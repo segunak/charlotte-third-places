@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  MY_REPO: https://segunak:${{secrets.GITHUB_TOKEN}}@github.com/segunak/charlotte-third-places.git
+  MY_REPO: https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/segunak/charlotte-third-places.git
   MY_BRANCH: develop
   MASTER_REPO: https://github.com/segunak/charlotte-third-places.git
   MASTER_BRANCH: master
@@ -28,8 +28,9 @@ jobs:
       run: |
         git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
         cd tmp
-        git config user.name "Auto Merge Bot"
-        git config user.email "bot@automerge.com"
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
         git config pull.rebase false
-        git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}}
+        git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}} --no-edit
+        git commit --amend -m "[auto-merge] Merge master into develop"
         git push
