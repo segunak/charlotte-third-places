@@ -22,7 +22,7 @@ export function FilterSidebar({ className = "" }: FilterSidebarProps) {
     }, []);
 
     return (
-        <div className={`${className} shadow-2xl rounded-md p-4 relative`}>
+        <div data-testid="filter-sidebar" className={`${className} shadow-2xl rounded-md p-4 relative`}>
             <div className="flex items-center justify-between mb-2">
                 <h2 className="font-bold text-lg">Filter</h2>
                 {activeFilterCount > 0 && (

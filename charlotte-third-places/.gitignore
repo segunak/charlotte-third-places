@@ -8,6 +8,8 @@
 
 # testing
 /coverage
+playwright-report/
+test-results/
 
 # next.js
 /.next/
@@ -34,8 +36,5 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# Generated Airtable entity data (regenerated on each build)
-lib/ai/airtable-generated-data.ts
 
 public/images
