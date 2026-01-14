@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .custom-link {
-  @apply text-primary hover:text-accent underline underline-offset-4;
+  @apply text-primary hover:text-secondary underline underline-offset-4;
 }
 
 .custom-hover {
-  @apply hover:text-accent hover:underline hover:underline-offset-4;
+  @apply hover:text-secondary hover:underline hover:underline-offset-4;
 }
 
 @layer utilities {
@@ -99,9 +99,9 @@
     /* Vibrant purple */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 270 90% 65%;
-    /* Same as secondary by default */
-    --accent-foreground: 0 0% 100%;
+    --accent: 190 30% 88%;
+    /* Subtle muted teal for hover/focus states */
+    --accent-foreground: 210 5% 20%;
 
     --warm-accent: 30 90% 70%;
     /* Warm accent (peachy) */
@@ -160,8 +160,8 @@
     /* Neon purple */
     --secondary-foreground: 0 0% 100%;
 
-    --accent: 270 90% 65%;
-    /* Same as secondary by default */
+    --accent: 190 30% 22%;
+    /* Subtle muted teal for hover/focus states */
     --accent-foreground: 0 0% 100%;
 
     --warm-accent: 30 90% 60%;
