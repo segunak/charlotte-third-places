@@ -119,7 +119,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground",
+                            : "hover:bg-primary/90 hover:text-primary-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -164,7 +164,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         "w-full",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground",
+                            : "hover:bg-primary/90 hover:text-primary-foreground",
                         (value === 'all')
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -310,7 +310,7 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                         "w-full",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground"
+                            : "hover:bg-primary/90 hover:text-primary-foreground"
                     )}
                 >
                     <SelectValue placeholder={placeholderText}>
