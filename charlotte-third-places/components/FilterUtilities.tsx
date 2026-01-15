@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useContext, useCallback, useMemo, useState, useRef, useEffect } from "react";
+import React, { useContext, useCallback, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -19,7 +19,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import { MOBILE_PICKER_FIELDS } from "@/lib/filters";
+import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
@@ -105,9 +105,9 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     );
 
     // Only allow pointer events if this is the active popover or none are open
-    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
+    const pointerEventsStyle: React.CSSProperties | undefined = (!anyPopoverOpen || isActivePopover)
         ? undefined
-        : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
+        : { pointerEvents: 'none', opacity: 0.7 };
 
     if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
         return (
@@ -119,7 +119,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground",
+                            : "hover:bg-primary/90 hover:text-primary-foreground",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -164,7 +164,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                         "w-full",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground",
+                            : "hover:bg-primary/90 hover:text-primary-foreground",
                         (value === 'all')
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -228,44 +228,80 @@ export function FilterResetButton({ disabled, variant, fullWidth = true }: { dis
 export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useContext(FilterContext);
     const [selectOpen, setSelectOpen] = useState(false);
+    const [pickerOpen, setPickerOpen] = useState(false);
     const isMobile = useIsMobile();
 
     useEffect(() => {
-        if (onDropdownOpenChange) onDropdownOpenChange(selectOpen);
-    }, [selectOpen, onDropdownOpenChange]);
+        if (onDropdownOpenChange) {
+            if (isMobile && SORT_USES_MOBILE_PICKER) {
+                onDropdownOpenChange(pickerOpen);
+            } else {
+                onDropdownOpenChange(selectOpen);
+            }
+        }
+    }, [selectOpen, pickerOpen, onDropdownOpenChange, isMobile]);
 
     const handleSortChange = useCallback(
         (value: string) => {
-            const [field, direction] = value.split("-");
-            setSortOption({
-                field: field as SortField,
-                direction: direction as SortDirection,
-            });
+            const sortDef = SORT_DEFS.find(d => d.key === value);
+            if (sortDef) {
+                setSortOption({
+                    field: sortDef.field,
+                    direction: sortDef.direction,
+                });
+            }
         },
         [setSortOption]
     );
 
-    const placeholderText = useMemo(() => {
-        if (sortOption.field === SortField.Name) {
-            return sortOption.direction === SortDirection.Ascending ? "Name (A-Z)" : "Name (Z-A)";
-        }
-        if (sortOption.field === SortField.DateAdded) {
-            return sortOption.direction === SortDirection.Ascending
-                ? "Date Added (Old to New)"
-                : "Date Added (New to Old)";
-        }
-        if (sortOption.field === SortField.LastModified) {
-            return sortOption.direction === SortDirection.Ascending
-                ? "Last Updated (Old to New)"
-                : "Last Updated (New to Old)";
-        }
-        return "Sort by...";
-    }, [sortOption]);
+    const currentSortKey = `${sortOption.field}-${sortOption.direction}`;
+    const currentSortDef = SORT_DEFS.find(d => d.key === currentSortKey);
+    const placeholderText = currentSortDef?.label ?? "Sort by...";
+    const defaultSortKey = `${DEFAULT_SORT_OPTION.field}-${DEFAULT_SORT_OPTION.direction}`;
+    const isDefaultSort = currentSortKey === defaultSortKey;
 
+    // Mobile: use SearchablePickerModal
+    if (isMobile && SORT_USES_MOBILE_PICKER) {
+        return (
+            <div className={cn(maxWidth, className)}>
+                <button
+                    type="button"
+                    className={cn(
+                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-0 focus:shadow-none disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                        isDefaultSort
+                            ? "text-muted-foreground font-normal"
+                            : "font-bold bg-primary text-primary-foreground"
+                    )}
+                    onClick={() => setPickerOpen(true)}
+                    aria-haspopup="dialog"
+                    aria-expanded={pickerOpen}
+                >
+                    <span className="truncate flex-1 text-left">{placeholderText}</span>
+                    <CaretSortIcon className="h-4 w-4 opacity-50 ml-2" />
+                </button>
+                {pickerOpen && (
+                    <SearchablePickerModal
+                        open={pickerOpen}
+                        onOpenChange={setPickerOpen}
+                        options={SORT_DEFS.map(d => d.label)}
+                        value={currentSortDef?.label ?? ""}
+                        label="Sort"
+                        onSelect={handleSortChange}
+                        showSearch={false}
+                        showDefaultOption={false}
+                        title="Sort By"
+                        optionKey={(label) => SORT_DEFS.find(d => d.label === label)?.key ?? ""}
+                    />
+                )}
+            </div>
+        );
+    }
+
+    // Desktop: use standard Select
     return (
         <div className={cn(maxWidth, className)}>
             <Select
-                value={`${sortOption.field}-${sortOption.direction}`}
+                value={currentSortKey}
                 onValueChange={handleSortChange}
                 onOpenChange={setSelectOpen}
             >
@@ -274,47 +310,25 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                         "w-full",
                         isMobile
                             ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-accent-foreground"
+                            : "hover:bg-primary/90 hover:text-primary-foreground"
                     )}
                 >
                     <SelectValue placeholder={placeholderText}>
-                        {sortOption.field === SortField.Name
-                            ? sortOption.direction === SortDirection.Ascending
-                                ? "Name (A-Z)"
-                                : "Name (Z-A)"
-                            : sortOption.field === SortField.DateAdded
-                                ? sortOption.direction === SortDirection.Ascending
-                                    ? "Date Added (Old to New)"
-                                    : "Date Added (New to Old)"
-                                : sortOption.direction === SortDirection.Ascending
-                                    ? "Last Updated (Old to New)"
-                                    : "Last Updated (New to Old)"}
+                        {placeholderText}
                     </SelectValue>
                 </SelectTrigger>
                 <SelectContent>
                     <SelectGroup>
                         <SelectLabel>Sort By</SelectLabel>
-                        <SelectItem value={`${SortField.Name}-${SortDirection.Ascending}`}>
-                            Name (A-Z)
-                        </SelectItem>
-                        <SelectItem value={`${SortField.Name}-${SortDirection.Descending}`}>
-                            Name (Z-A)
-                        </SelectItem>
-                        <SelectItem value={`${SortField.DateAdded}-${SortDirection.Ascending}`}>
-                            Date Added (Old to New)
-                        </SelectItem>
-                        <SelectItem value={`${SortField.DateAdded}-${SortDirection.Descending}`}>
-                            Date Added (New to Old)
-                        </SelectItem>
-                        <SelectItem value={`${SortField.LastModified}-${SortDirection.Ascending}`}>
-                            Last Updated (Old to New)
-                        </SelectItem>
-                        <SelectItem value={`${SortField.LastModified}-${SortDirection.Descending}`}>
-                            Last Updated (New to Old)
-                        </SelectItem>
+                        {SORT_DEFS.map((def) => (
+                            <SelectItem key={def.key} value={def.key}>
+                                {def.label}
+                            </SelectItem>
+                        ))}
                     </SelectGroup>
                 </SelectContent>
             </Select>
         </div>
     );
 }
+

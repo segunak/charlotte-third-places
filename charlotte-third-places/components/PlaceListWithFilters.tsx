@@ -96,39 +96,30 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     </div>
                 </div>
 
-                {openingSoonPlaces.length > 0 && (
-                    <button
-                        type="button"
-                        onClick={() => setOpeningSoonOpen(true)}
-                        aria-haspopup="dialog"
-                        aria-expanded={openingSoonOpen}
-                        aria-label={`View ${openingSoonPlaces.length} places opening soon`}
-                        className="group w-full text-left mb-2 relative overflow-hidden rounded-lg border border-border bg-card/80 backdrop-blur-sm px-4 py-3 shadow-sm hover:shadow-md transition focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50 sm:hidden"
-                    >
-                        <div className="flex items-start gap-3">
-                            <div className="mt-0.5 text-primary">
-                                {/* clock icon */}
-                                <span className="inline-block">
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
-                                </span>
-                            </div>
-                            <div className="flex-1 min-w-0">
-                                <p className="font-semibold text-sm text-foreground mb-0.5">
-                                    {openingSoonPlaces.length} {openingSoonPlaces.length === 1 ? 'place' : 'places'} opening soon
-                                </p>
-                                <p className="text-xs text-muted-foreground">
-                                    Preview spots before they open. Tap for details.
-                                </p>
-                            </div>
-                            <div className="self-center text-primary transition-transform group-hover:translate-x-0.5">
-                                <svg className="h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
-                            </div>
-                        </div>
-                        <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition bg-gradient-to-r from-primary/5 via-transparent to-primary/5" />
-                    </button>
-                )}
-
+                {/* Mobile: Opening Soon + Place Count Row */}
+                <div className="sm:hidden flex items-center gap-3">
+                    {openingSoonPlaces.length > 0 && (
+                        <button
+                            type="button"
+                            onClick={() => setOpeningSoonOpen(true)}
+                            aria-haspopup="dialog"
+                            aria-expanded={openingSoonOpen}
+                            aria-label={`View ${openingSoonPlaces.length} places opening soon`}
+                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                        >
+                            <Icons.clock className="h-4 w-4 text-primary shrink-0" />
+                            <span className="text-sm font-semibold text-foreground truncate">
+                                {openingSoonPlaces.length} {openingSoonPlaces.length === 1 ? 'place' : 'places'} opening soon
+                            </span>
+                            <svg className="h-4 w-4 text-primary shrink-0 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
+                        </button>
+                    )}
+                    <div className={`h-11 flex items-center justify-center rounded-lg bg-primary px-4 ${openingSoonPlaces.length > 0 ? '' : 'flex-1'}`}>
+                        <span className="text-sm font-semibold text-primary-foreground whitespace-nowrap">
+                            {visibleCount} {visibleCount === 1 ? 'place' : 'places'}
+                        </span>
+                    </div>
+                </div>
 
                 {openingSoonPlaces.length > 0 && (
                     <OpeningSoonModal
