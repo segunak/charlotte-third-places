@@ -49,6 +49,7 @@ export function FilterChips({ field, value, label }: FilterChipsProps) {
                                 isSelected && "bg-primary text-primary-foreground"
                             )}
                             onClick={() => handleChipClick(option)}
+                            data-selected={isSelected ? "" : undefined}
                         >
                             {option}
                         </Button>

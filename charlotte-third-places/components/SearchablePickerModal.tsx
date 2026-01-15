@@ -89,6 +89,7 @@ export function SearchablePickerModal({
                   variant={value === "all" ? "default" : "ghost"}
                   className="w-full justify-start mb-1"
                   onClick={() => handleSelect("all")}
+                  data-selected={value === "all" ? "" : undefined}
                 >
                   Don't Filter By {label}
                 </Button>
@@ -100,6 +101,7 @@ export function SearchablePickerModal({
                   variant={value === opt ? "default" : "ghost"}
                   className="w-full justify-start mb-1"
                   onClick={() => handleSelect(opt)}
+                  data-selected={value === opt ? "" : undefined}
                 >
                   {opt}
                 </Button>

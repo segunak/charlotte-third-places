@@ -201,9 +201,10 @@
   Disable hover states on touch devices (no hover capability).
   This prevents "sticky" hover states when scrolling on mobile.
   Scoped to filter drawer context via data attribute.
+  Excludes selected buttons (data-selected) so they keep their primary color.
 */
 @media (hover: none) {
-  [data-filter-context] button:hover,
+  [data-filter-context] button:not([data-selected]):hover,
   [data-filter-context] [role="option"]:hover {
     background-color: inherit;
     color: inherit;
