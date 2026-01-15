@@ -84,7 +84,7 @@ export function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe">
+      <DrawerContent className="pb-safe max-h-[90dvh] flex flex-col">
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -101,7 +101,7 @@ export function FilterDrawer({
         <DrawerHeader>
           <DrawerTitle>Filters</DrawerTitle>
         </DrawerHeader>
-        <div className="space-y-4 px-4">
+        <div className="space-y-4 px-4 overflow-y-auto flex-1">
           {showSort && (
             <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
           )}
