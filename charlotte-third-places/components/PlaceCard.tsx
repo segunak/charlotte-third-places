@@ -147,7 +147,8 @@ interface PlaceCardProps {
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalActions();
-    const highlights = getPlaceHighlights(place);
+    // Memoize highlights computation - runs 100× per InfiniteMovingCards render without this
+    const highlights = useMemo(() => getPlaceHighlights(place), [place]);
     const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
     const description = useMemo(() => {
@@ -257,9 +258,6 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
      * - Reduced font size (text-[0.7rem]) - recovers ~10px  
      * - Text truncation with ellipsis as final fallback
      */
-    const neighborhoodRowRef = useRef<HTMLSpanElement>(null);
-    const neighborhoodTextRef = useRef<HTMLSpanElement>(null);
-    
     const NEIGHBORHOOD_CHAR_THRESHOLD = 13;
     const neighborhoodOverflows = useMemo(() => {
         if (!place?.neighborhood) return false;
@@ -335,11 +333,10 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         )}
                     </span>
 
-                    {/* NEIGHBORHOOD ROW: Shares space with action buttons, uses smart overflow handling.
-                        - ref={neighborhoodRowRef}: Used by checkNeighborhoodOverflow() to measure available width
+                    {/* NEIGHBORHOOD ROW: Shares space with action buttons, uses character-length overflow detection.
                         - justify-between: Pushes neighborhood text to left, buttons to right
                         - gap-2: Ensures minimum spacing between text and buttons */}
-                    <span ref={neighborhoodRowRef} className="flex justify-between gap-2">
+                    <span className="flex justify-between gap-2">
                         {/* Neighborhood text container:
                             - min-w-0: Allows flex item to shrink below content size (required for truncation)
                             - flex-1: Takes remaining space after buttons
@@ -347,7 +344,6 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                             - overflow-hidden: Required for text-ellipsis to work
                             - text-ellipsis: Only applied when neighborhoodOverflows is true */}
                         <span 
-                            ref={neighborhoodTextRef}
                             className={`text-sm block min-w-0 flex-1 whitespace-nowrap overflow-hidden ${neighborhoodOverflows ? 'text-ellipsis' : ''}`}
                         >
                             <strong>Neighborhood: </strong>
@@ -366,9 +362,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         </span>
 
                         {/* Action buttons container:
-                            - flex-shrink-0: CRITICAL - prevents buttons from compressing when space is tight
-                            - data-buttons: Used by checkNeighborhoodOverflow() to measure button width */}
-                        <div data-buttons className="flex space-x-2 flex-shrink-0">
+                            - flex-shrink-0: CRITICAL - prevents buttons from compressing when space is tight */}
+                        <div className="flex space-x-2 flex-shrink-0">
                             {!isOpeningSoon && (
                                 <Button
                                     variant="default"
