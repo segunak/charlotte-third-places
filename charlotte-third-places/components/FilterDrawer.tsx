@@ -84,7 +84,7 @@ export function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe max-h-[96dvh] flex flex-col" data-filter-context>
+      <DrawerContent className="pb-safe h-[90dvh] flex flex-col" data-filter-context>
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
