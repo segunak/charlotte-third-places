@@ -105,9 +105,9 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     );
 
     // Only allow pointer events if this is the active popover or none are open
-    const pointerEventsStyle = (!anyPopoverOpen || isActivePopover)
+    const pointerEventsStyle: React.CSSProperties | undefined = (!anyPopoverOpen || isActivePopover)
         ? undefined
-        : { pointerEvents: 'none' as React.CSSProperties['pointerEvents'], opacity: 0.7 };
+        : { pointerEvents: 'none', opacity: 0.7 };
 
     if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
         return (

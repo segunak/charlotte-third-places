@@ -64,7 +64,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
 function FilterContextConsumer({
   onContext,
 }: {
-  onContext: (context: ReturnType<typeof useContext<typeof FilterContext>>) => void
+  onContext: (context: any) => void
 }) {
   const context = useContext(FilterContext)
   onContext(context)
