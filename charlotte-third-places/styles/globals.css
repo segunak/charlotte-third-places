@@ -196,3 +196,16 @@
     --highlight-bg: hsl(190, 70%, 20%);
   }
 }
+
+/* 
+  Disable hover states on touch devices (no hover capability).
+  This prevents "sticky" hover states when scrolling on mobile.
+  Scoped to filter drawer context via data attribute.
+*/
+@media (hover: none) {
+  [data-filter-context] button:hover,
+  [data-filter-context] [role="option"]:hover {
+    background-color: inherit;
+    color: inherit;
+  }
+}

@@ -66,6 +66,7 @@ export function SearchablePickerModal({
         style={{ maxHeight: '100vh' }}
         onOpenAutoFocus={(e) => e.preventDefault()}
         crossCloseIconSize="h-6 w-6"
+        data-filter-context
       >
         <DialogTitle className="text-center w-full mb-2">{modalTitle}</DialogTitle>
         {showSearch && (
