@@ -33,29 +33,27 @@ export function FilterChips({ field, value, label }: FilterChipsProps) {
     );
 
     return (
-        <div className="space-y-2">
-            <span className="text-sm font-medium text-foreground">{label}</span>
-            <div className="flex flex-wrap gap-2">
-                {options.map((option) => {
-                    const isSelected = value === option;
-                    return (
-                        <Button
-                            key={option}
-                            type="button"
-                            variant={isSelected ? "default" : "outline"}
-                            size="sm"
-                            className={cn(
-                                "transition-colors",
-                                isSelected && "bg-primary text-primary-foreground"
-                            )}
-                            onClick={() => handleChipClick(option)}
-                            data-selected={isSelected ? "" : undefined}
-                        >
-                            {option}
-                        </Button>
-                    );
-                })}
-            </div>
+        <div className="flex flex-wrap items-center gap-2">
+            <span className="text-sm font-medium text-foreground">{label}:</span>
+            {options.map((option) => {
+                const isSelected = value === option;
+                return (
+                    <Button
+                        key={option}
+                        type="button"
+                        variant={isSelected ? "default" : "outline"}
+                        size="sm"
+                        className={cn(
+                            "transition-colors",
+                            isSelected && "bg-primary text-primary-foreground"
+                        )}
+                        onClick={() => handleChipClick(option)}
+                        data-selected={isSelected ? "" : undefined}
+                    >
+                        {option}
+                    </Button>
+                );
+            })}
         </div>
     );
 }
