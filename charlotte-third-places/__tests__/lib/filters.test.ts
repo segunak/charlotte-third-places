@@ -5,6 +5,9 @@ import {
   DEFAULT_FILTER_CONFIG,
   placeMatchesFilters,
   filterPlaces,
+  MOBILE_PICKER_FIELDS,
+  MOBILE_CHIP_FIELDS,
+  SORT_DEFS,
   type FilterConfig,
 } from '@/lib/filters'
 import type { Place } from '@/lib/types'
@@ -61,7 +64,9 @@ describe('FILTER_DEFS', () => {
       expect(def).toHaveProperty('placeholder')
       expect(def).toHaveProperty('valueType')
       expect(def).toHaveProperty('accessor')
+      expect(def).toHaveProperty('useChips')
       expect(typeof def.accessor).toBe('function')
+      expect(typeof def.useChips).toBe('boolean')
     }
   })
 
@@ -76,6 +81,89 @@ describe('FILTER_DEFS', () => {
         expect(typeof value).toBe('string')
       }
     }
+  })
+
+  it('parking filter has allowedValues restricting to Free and Paid', () => {
+    const parkingDef = FILTER_DEFS.find(d => d.key === 'parking')
+    expect(parkingDef).toBeDefined()
+    expect(parkingDef?.allowedValues).toEqual(['Free', 'Paid'])
+  })
+
+  it('filters with useChips=true are in MOBILE_CHIP_FIELDS', () => {
+    const chipFilters = FILTER_DEFS.filter(d => d.useChips)
+    expect(chipFilters.length).toBeGreaterThan(0)
+    for (const def of chipFilters) {
+      expect(MOBILE_CHIP_FIELDS.has(def.key)).toBe(true)
+    }
+  })
+})
+
+describe('MOBILE_CHIP_FIELDS', () => {
+  it('is derived from FILTER_DEFS with useChips=true', () => {
+    const expectedFields = FILTER_DEFS.filter(d => d.useChips).map(d => d.key)
+    expect(MOBILE_CHIP_FIELDS.size).toBe(expectedFields.length)
+    for (const field of expectedFields) {
+      expect(MOBILE_CHIP_FIELDS.has(field)).toBe(true)
+    }
+  })
+
+  it('includes parking, freeWiFi, purchaseRequired, size, and hasCinnamonRolls', () => {
+    expect(MOBILE_CHIP_FIELDS.has('parking')).toBe(true)
+    expect(MOBILE_CHIP_FIELDS.has('freeWiFi')).toBe(true)
+    expect(MOBILE_CHIP_FIELDS.has('purchaseRequired')).toBe(true)
+    expect(MOBILE_CHIP_FIELDS.has('size')).toBe(true)
+    expect(MOBILE_CHIP_FIELDS.has('hasCinnamonRolls')).toBe(true)
+  })
+
+  it('does not include name, neighborhood, type, or tags', () => {
+    expect(MOBILE_CHIP_FIELDS.has('name')).toBe(false)
+    expect(MOBILE_CHIP_FIELDS.has('neighborhood')).toBe(false)
+    expect(MOBILE_CHIP_FIELDS.has('type')).toBe(false)
+    expect(MOBILE_CHIP_FIELDS.has('tags')).toBe(false)
+  })
+})
+
+describe('SORT_DEFS', () => {
+  it('has unique keys for each sort option', () => {
+    const keys = SORT_DEFS.map(d => d.key)
+    const uniqueKeys = new Set(keys)
+    expect(uniqueKeys.size).toBe(keys.length)
+  })
+
+  it('all sort options have required properties', () => {
+    for (const def of SORT_DEFS) {
+      expect(def).toHaveProperty('key')
+      expect(def).toHaveProperty('label')
+      expect(def).toHaveProperty('field')
+      expect(def).toHaveProperty('direction')
+    }
+  })
+
+  it('includes name ascending and descending', () => {
+    const nameAsc = SORT_DEFS.find(d => d.key === 'name-asc')
+    const nameDesc = SORT_DEFS.find(d => d.key === 'name-desc')
+    expect(nameAsc).toBeDefined()
+    expect(nameDesc).toBeDefined()
+    expect(nameAsc?.label).toBe('Name (A-Z)')
+    expect(nameDesc?.label).toBe('Name (Z-A)')
+  })
+
+  it('includes date added ascending and descending', () => {
+    const dateAsc = SORT_DEFS.find(d => d.key === 'createdDate-asc')
+    const dateDesc = SORT_DEFS.find(d => d.key === 'createdDate-desc')
+    expect(dateAsc).toBeDefined()
+    expect(dateDesc).toBeDefined()
+  })
+
+  it('includes last modified ascending and descending', () => {
+    const lastModAsc = SORT_DEFS.find(d => d.key === 'lastModifiedDate-asc')
+    const lastModDesc = SORT_DEFS.find(d => d.key === 'lastModifiedDate-desc')
+    expect(lastModAsc).toBeDefined()
+    expect(lastModDesc).toBeDefined()
+  })
+
+  it('has 6 total sort options', () => {
+    expect(SORT_DEFS.length).toBe(6)
   })
 })
 

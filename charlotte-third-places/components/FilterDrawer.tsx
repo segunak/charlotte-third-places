@@ -2,8 +2,9 @@
 
 import React, { useState, useContext, useCallback, useRef } from "react";
 import { FilterContext } from "@/contexts/FilterContext";
-import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
+import { FILTER_DEFS, FILTER_SENTINEL, FilterKey, MOBILE_CHIP_FIELDS } from "@/lib/filters";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
+import { FilterChips } from "@/components/FilterChips";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
 import {
@@ -14,6 +15,7 @@ import {
   DrawerFooter,
   DrawerClose,
 } from "@/components/ui/drawer";
+import { Separator } from "@/components/ui/separator";
 
 export function FilterDrawer({
   className = "",
@@ -82,7 +84,7 @@ export function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe">
+      <DrawerContent className="pb-safe max-h-[95dvh] flex flex-col" data-filter-context>
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -97,20 +99,30 @@ export function FilterDrawer({
           />
         )}
         <DrawerHeader>
-          <DrawerTitle></DrawerTitle>
+          <DrawerTitle>Filters</DrawerTitle>
         </DrawerHeader>
-        <div className="space-y-4 px-4">
+        <div className="space-y-4 px-4 overflow-y-auto flex-1">
           {showSort && (
-            <div className="space-y-4">
-              <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Sort</h2>
-              <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
-            </div>
+            <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
           )}
-          <h2 className="text-center text-lg font-semibold leading-none tracking-tight">Filter</h2>
           <div className="space-y-4">
             {FILTER_DEFS.map(def => {
               const config = filters[def.key as FilterKey];
               const field = def.key;
+              
+              // Use chips for fields marked with useChips
+              if (MOBILE_CHIP_FIELDS.has(field)) {
+                return (
+                  <FilterChips
+                    key={field}
+                    field={field as FilterKey}
+                    value={config.value}
+                    label={config.label}
+                  />
+                );
+              }
+              
+              // Use picker/select for other fields
               return (
                 <FilterSelect
                   key={field}
@@ -145,13 +157,16 @@ export function FilterDrawer({
             />
           )}
 
-          <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
+          <Separator className="mb-4 mt-4" />
+          <div className="grid grid-cols-2 gap-3 w-full mb-4">
+            <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
 
-          <DrawerClose asChild>
-            <Button className="w-full disabled:opacity-100" disabled={anyDropdownOpen}>
-              Save
-            </Button>
-          </DrawerClose>
+            <DrawerClose asChild>
+              <Button className="disabled:opacity-100" disabled={anyDropdownOpen}>
+                Save
+              </Button>
+            </DrawerClose>
+          </div>
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
