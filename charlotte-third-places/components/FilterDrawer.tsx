@@ -158,7 +158,7 @@ export function FilterDrawer({
           )}
 
           <Separator className="mb-4 mt-4" />
-          <div className="grid grid-cols-2 gap-3 w-full">
+          <div className="grid grid-cols-2 gap-3 w-full mb-4">
             <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
 
             <DrawerClose asChild>
