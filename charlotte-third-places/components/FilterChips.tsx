@@ -42,7 +42,6 @@ export function FilterChips({ field, value, label }: FilterChipsProps) {
                         key={option}
                         type="button"
                         variant={isSelected ? "default" : "outline"}
-                        size="sm"
                         className={cn(
                             "transition-colors",
                             isSelected && "bg-primary text-primary-foreground"
