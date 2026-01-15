@@ -35,7 +35,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         valueType: 'scalar',
         mobilePicker: true,
         useChips: false,
-        desktopPicker: true,
+        desktopPicker: false,
         accessor: p => p.name
     },
     {
@@ -44,7 +44,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Neighborhood',
         valueType: 'scalar',
         mobilePicker: true,
-        desktopPicker: true,
+        desktopPicker: false,
         useChips: false,
         accessor: p => p.neighborhood
     },
@@ -54,7 +54,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Type',
         valueType: 'array',
         mobilePicker: true,
-        desktopPicker: true,
+        desktopPicker: false,
         useChips: false,
         accessor: p => p.type
     },
@@ -64,7 +64,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Tag',
         valueType: 'array',
         mobilePicker: true,
-        desktopPicker: true,
+        desktopPicker: false,
         useChips: false,
         accessor: p => p.tags
     },

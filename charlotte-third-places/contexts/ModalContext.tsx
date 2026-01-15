@@ -145,23 +145,29 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
     }, []);
 
     const closePlaceModal = useCallback(() => {
-        setSelectedPlace(null);
-        setShowPhotos(false);
-        setPhotoModalOrigin(null);
+        startTransition(() => {
+            setSelectedPlace(null);
+            setShowPhotos(false);
+            setPhotoModalOrigin(null);
+        });
     }, []);
 
     const closePhotosModal = useCallback(() => {
-        // Read from ref to avoid dependency on photoModalOrigin state
-        if (photoModalOriginRef.current === 'card') {
-            setSelectedPlace(null);
-        }
-        setShowPhotos(false);
-        setPhotoModalOrigin(null);
+        startTransition(() => {
+            // Read from ref to avoid dependency on photoModalOrigin state
+            if (photoModalOriginRef.current === 'card') {
+                setSelectedPlace(null);
+            }
+            setShowPhotos(false);
+            setPhotoModalOrigin(null);
+        });
     }, []); // Empty deps - reads from ref
 
     const closeChatDialog = useCallback(() => {
-        setShowChat(false);
-        setChatPlace(null);
+        startTransition(() => {
+            setShowChat(false);
+            setChatPlace(null);
+        });
     }, []);
 
     // Memoize the actions object - it never changes because all callbacks are stable
