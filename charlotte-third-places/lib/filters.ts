@@ -1,6 +1,6 @@
 // Centralized filtering domain: definitions, configuration, and predicate helpers.
 // This file owns all filter-related constructs so other modules only need to import from here.
-import { Place } from "./types";
+import { Place, SortField, SortDirection } from "./types";
 
 // A single sentinel value meaning "no constraint" for a filter field.
 export const FILTER_SENTINEL = 'all';
@@ -19,8 +19,10 @@ export interface FilterDefinition {
     label: string;                      // Label displayed to users
     placeholder: string;                // Placeholder text when sentinel selected
     predefinedOrder?: string[];         // Fixed ordering for distinct values if needed
+    allowedValues?: string[];           // When present, restricts which values are shown (allowlist)
     valueType: FilterValueType;         // Indicates whether accessor returns a scalar or string[]
     mobilePicker: boolean;              // Drives whether mobile uses custom searchable picker
+    useChips: boolean;                  // If true, mobile displays inline chips instead of picker/select
     accessor: (p: Place) => string | string[]; // Function to extract raw value(s) from a Place
 }
 
@@ -31,7 +33,17 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Name',
         valueType: 'scalar',
         mobilePicker: true,
+        useChips: false,
         accessor: p => p.name
+    },
+    {
+        key: 'neighborhood',
+        label: 'Neighborhood',
+        placeholder: 'Neighborhood',
+        valueType: 'scalar',
+        mobilePicker: true,
+        useChips: false,
+        accessor: p => p.neighborhood
     },
     {
         key: 'type',
@@ -39,6 +51,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Type',
         valueType: 'array',
         mobilePicker: true,
+        useChips: false,
         accessor: p => p.type
     },
     {
@@ -47,40 +60,18 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Tag',
         valueType: 'array',
         mobilePicker: true,
+        useChips: false,
         accessor: p => p.tags
-    },
-    {
-        key: 'size',
-        label: 'Size',
-        placeholder: 'Size',
-        predefinedOrder: ['Small', 'Medium', 'Large'],
-        valueType: 'scalar',
-        mobilePicker: true,
-        accessor: p => p.size
-    },
-    {
-        key: 'neighborhood',
-        label: 'Neighborhood',
-        placeholder: 'Neighborhood',
-        valueType: 'scalar',
-        mobilePicker: true,
-        accessor: p => p.neighborhood
-    },
-    {
-        key: 'purchaseRequired',
-        label: 'Purchase Required',
-        placeholder: 'Purchase Required',
-        predefinedOrder: ['Yes', 'No'],
-        valueType: 'scalar',
-        mobilePicker: false,
-        accessor: p => p.purchaseRequired
     },
     {
         key: 'parking',
         label: 'Parking',
         placeholder: 'Parking',
+        predefinedOrder: ['Free', 'Paid'],
+        allowedValues: ['Free', 'Paid'],
         valueType: 'array',
-        mobilePicker: true,
+        mobilePicker: false,
+        useChips: true,
         accessor: p => p.parking
     },
     {
@@ -90,7 +81,28 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         predefinedOrder: ['Yes', 'No'],
         valueType: 'scalar',
         mobilePicker: false,
+        useChips: true,
         accessor: p => p.freeWiFi
+    },
+    {
+        key: 'purchaseRequired',
+        label: 'Purchase Required',
+        placeholder: 'Purchase Required',
+        predefinedOrder: ['Yes', 'No'],
+        valueType: 'scalar',
+        mobilePicker: false,
+        useChips: true,
+        accessor: p => p.purchaseRequired
+    },
+    {
+        key: 'size',
+        label: 'Size',
+        placeholder: 'Size',
+        predefinedOrder: ['Small', 'Medium', 'Large'],
+        valueType: 'scalar',
+        mobilePicker: true,
+        useChips: true,
+        accessor: p => p.size
     },
     {
         key: 'hasCinnamonRolls',
@@ -99,6 +111,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         predefinedOrder: ['Yes', 'No', 'Sometimes'],
         valueType: 'scalar',
         mobilePicker: false,
+        useChips: true,
         accessor: p => p.hasCinnamonRolls
     },
 ] as const;
@@ -123,6 +136,30 @@ export const FILTER_DEFINITION_MAP: Record<FilterKey, FilterDefinition> = FILTER
 export const MOBILE_PICKER_FIELDS: Set<string> = new Set(
     FILTER_DEFS.filter(d => d.mobilePicker).map(d => d.key)
 );
+
+export const MOBILE_CHIP_FIELDS: Set<string> = new Set(
+    FILTER_DEFS.filter(d => d.useChips).map(d => d.key)
+);
+
+// Sort definitions for consistent sort options across the app
+export interface SortDefinition {
+    key: string;
+    label: string;
+    field: SortField;
+    direction: SortDirection;
+}
+
+export const SORT_DEFS: readonly SortDefinition[] = [
+    { key: 'name-asc', label: 'Name (A-Z)', field: SortField.Name, direction: SortDirection.Ascending },
+    { key: 'name-desc', label: 'Name (Z-A)', field: SortField.Name, direction: SortDirection.Descending },
+    { key: 'createdDate-asc', label: 'Date Added (Old to New)', field: SortField.DateAdded, direction: SortDirection.Ascending },
+    { key: 'createdDate-desc', label: 'Date Added (New to Old)', field: SortField.DateAdded, direction: SortDirection.Descending },
+    { key: 'lastModifiedDate-asc', label: 'Last Updated (Old to New)', field: SortField.LastModified, direction: SortDirection.Ascending },
+    { key: 'lastModifiedDate-desc', label: 'Last Updated (New to Old)', field: SortField.LastModified, direction: SortDirection.Descending },
+] as const;
+
+// Sort uses mobile picker (6 options warrants a picker for better UX)
+export const SORT_USES_MOBILE_PICKER = true;
 
 /**
  * Returns true if a place passes all active filters in the provided FilterConfig.

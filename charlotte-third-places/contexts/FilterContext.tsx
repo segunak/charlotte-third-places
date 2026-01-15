@@ -37,7 +37,8 @@ export const FilterProvider = ({
     const [sortOption, setSortOption] = useState<SortOption>(DEFAULT_SORT_OPTION);
 
     // A function that returns distinct values for each filter field,
-    // respecting `predefinedOrder` if present, otherwise sorting alphabetically.
+    // respecting `allowedValues` as an allowlist when present,
+    // and `predefinedOrder` for sorting, otherwise sorting alphabetically.
     const getDistinctValues = useCallback(
         (field: FilterKey) => {
             // Produces the list of candidate values a user can select (excluding the 'all' sentinel which is UI-only).
@@ -47,7 +48,14 @@ export const FilterProvider = ({
                 .flat()
                 .filter((v: any) => typeof v === 'string' && v.length > 0);
 
-            const distinctValues = Array.from(new Set(rawValues));
+            let distinctValues = Array.from(new Set(rawValues));
+            
+            // If allowedValues is defined, filter to only include those values (allowlist)
+            if (def.allowedValues && def.allowedValues.length > 0) {
+                const allowedSet = new Set(def.allowedValues);
+                distinctValues = distinctValues.filter(v => allowedSet.has(v));
+            }
+            
             const predefinedOrder = filters[field].predefinedOrder;
 
             return distinctValues.sort((a, b) => {

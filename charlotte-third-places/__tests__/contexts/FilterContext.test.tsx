@@ -329,6 +329,33 @@ describe('FilterContext', () => {
 
       expect(neighborhoods).toEqual([])
     })
+
+    it('respects allowedValues when present (parking filter)', () => {
+      let capturedContext: any
+      // Create places with various parking options including ones not in allowedValues
+      const places = [
+        createMockPlace({ parking: ['Free'] }),
+        createMockPlace({ parking: ['Paid'] }),
+        createMockPlace({ parking: ['Street Parking'] }), // Not in allowedValues
+        createMockPlace({ parking: ['Garage'] }), // Not in allowedValues
+        createMockPlace({ parking: ['Free', 'Street Parking'] }), // Mixed
+      ]
+
+      render(
+        <FilterProvider places={places}>
+          <FilterContextConsumer onContext={(ctx) => (capturedContext = ctx)} />
+        </FilterProvider>
+      )
+
+      const parkingOptions = capturedContext.getDistinctValues('parking')
+
+      // Should only include Free and Paid (from allowedValues), not Street Parking or Garage
+      expect(parkingOptions).toContain('Free')
+      expect(parkingOptions).toContain('Paid')
+      expect(parkingOptions).not.toContain('Street Parking')
+      expect(parkingOptions).not.toContain('Garage')
+      expect(parkingOptions.length).toBe(2)
+    })
   })
 
   describe('Filter Definitions Integration', () => {
