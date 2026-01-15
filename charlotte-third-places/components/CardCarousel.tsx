@@ -15,7 +15,7 @@ interface CardCarouselProps {
     total: number;
 }
 
-export const CardCarousel: React.FC<CardCarouselProps> = ({ items, initialIndex }) => {
+export const CardCarousel: React.FC<CardCarouselProps> = React.memo(({ items, initialIndex }) => {
     const [emblaApi, setEmblaApi] = useState<any>(null);
 
     // Scroll to the initialIndex only when the component mounts or items change
@@ -47,4 +47,6 @@ export const CardCarousel: React.FC<CardCarouselProps> = ({ items, initialIndex 
             </Carousel>
         </div>
     );
-};
+});
+
+CardCarousel.displayName = "CardCarousel";

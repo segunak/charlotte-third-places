@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useContext, useCallback } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
+import React, { useState, useCallback } from "react";
+import { useFilters } from "@/contexts/FilterContext";
 import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 
@@ -9,8 +9,8 @@ interface FilterSidebarProps {
     className?: string;
 }
 
-export function FilterSidebar({ className = "" }: FilterSidebarProps) {
-    const { filters } = useContext(FilterContext);
+export const FilterSidebar = React.memo(function FilterSidebar({ className = "" }: FilterSidebarProps) {
+    const { filters } = useFilters();
     // Active filter count excludes fields still at the 'all' sentinel (meaning no constraint)
     const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
     // Track open state for all selects
@@ -50,4 +50,6 @@ export function FilterSidebar({ className = "" }: FilterSidebarProps) {
             <FilterResetButton variant="default" disabled={anyDropdownOpen} />
         </div>
     );
-}
+});
+
+FilterSidebar.displayName = "FilterSidebar";

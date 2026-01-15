@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { getPlaceTypeEmoji } from "@/lib/place-type-config";
 import { parseAirtableMarkdown } from "@/lib/parsing";
 import { Button } from "@/components/ui/button";
-import { useModalContext } from "@/contexts/ModalContext";
+import { useModalActions } from "@/contexts/ModalContext";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 
@@ -146,7 +146,7 @@ interface PlaceCardProps {
 }
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
-    const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalContext();
+    const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalActions();
     const highlights = getPlaceHighlights(place);
     const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 

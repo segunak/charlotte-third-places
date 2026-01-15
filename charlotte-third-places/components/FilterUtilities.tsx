@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useContext, useCallback, useState, useEffect } from "react";
+import React, { useCallback, useState, useEffect, useTransition } from "react";
+import { useDebouncedCallback } from "use-debounce";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -13,36 +14,58 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select";
-import { FilterContext } from "@/contexts/FilterContext";
+import { useQuickSearch, useFilters, useFilterData, useSort } from "@/contexts/FilterContext";
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
+import { MOBILE_PICKER_FIELDS, DESKTOP_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
 
 export function FilterQuickSearch() {
-    const { quickFilterText, setQuickFilterText } = useContext(FilterContext);
+    const { quickFilterText, setQuickFilterText } = useQuickSearch();
+    // Local state for immediate input feedback
+    const [localValue, setLocalValue] = useState(quickFilterText);
+    const [, startTransition] = useTransition();
+
+    // Sync local state when context value changes externally (e.g., reset)
+    useEffect(() => {
+        setLocalValue(quickFilterText);
+    }, [quickFilterText]);
+
+    // Debounce the context update by 150ms to reduce filtering work during typing
+    const debouncedSetQuickFilterText = useDebouncedCallback(
+        (value: string) => {
+            startTransition(() => {
+                setQuickFilterText(value);
+            });
+        },
+        150
+    );
 
     const handleQuickFilterChange = useCallback(
         (event: React.ChangeEvent<HTMLInputElement>) => {
-            setQuickFilterText(event.target.value);
+            const newValue = event.target.value;
+            setLocalValue(newValue); // Immediate UI update
+            debouncedSetQuickFilterText(newValue); // Debounced context update
         },
-        [setQuickFilterText]
+        [debouncedSetQuickFilterText]
     );
+
     return (
         <div className={maxWidth}>
             <div className="relative">
                 <Icons.search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-primary pointer-events-none" />
                 <Input
                     type="text"
-                    value={quickFilterText}
+                    value={localValue}
                     onChange={handleQuickFilterChange}
                     className="w-full pl-10"
                     autoFocus={false}
+                    data-testid="quick-search-input"
                 />
             </div>
         </div>
@@ -61,10 +84,12 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     isActivePopover?: boolean;
     anyPopoverOpen?: boolean;
 }) {
-    const { setFilters, getDistinctValues } = useContext(FilterContext);
+    const { setFilters } = useFilters();
+    const { getDistinctValues } = useFilterData();
     const isMobile = useIsMobile();
     const [pickerOpen, setPickerOpen] = useState(false);
     const [selectOpen, setSelectOpen] = useState(false);
+    const [, startTransition] = useTransition();
 
     useEffect(() => {
         setPickerOpen(false);
@@ -81,27 +106,31 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
     }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
 
     const handlePickerSelect = (newValue: string) => {
-        setFilters((prevFilters) => ({
-            ...prevFilters,
-            [field]: { ...prevFilters[field], value: newValue },
-        }));
+        startTransition(() => {
+            setFilters((prevFilters) => ({
+                ...prevFilters,
+                [field]: { ...prevFilters[field], value: newValue },
+            }));
+        });
         setPickerOpen(false);
     };
 
     const handleFilterChange = useCallback(
         (newValue: string) => {
-            setFilters((prevFilters) => {
-                // Defensive: Only update the intended field, never replace the whole object
-                if (!prevFilters[field]) return prevFilters;
-                // Defensive: Only allow string values
-                const safeValue = typeof newValue === "string" ? newValue : "all";
-                return {
-                    ...prevFilters,
-                    [field]: { ...prevFilters[field], value: safeValue },
-                };
+            startTransition(() => {
+                setFilters((prevFilters) => {
+                    // Defensive: Only update the intended field, never replace the whole object
+                    if (!prevFilters[field]) return prevFilters;
+                    // Defensive: Only allow string values
+                    const safeValue = typeof newValue === "string" ? newValue : "all";
+                    return {
+                        ...prevFilters,
+                        [field]: { ...prevFilters[field], value: safeValue },
+                    };
+                });
             });
         },
-        [field, setFilters]
+        [field, setFilters, startTransition]
     );
 
     // Only allow pointer events if this is the active popover or none are open
@@ -109,7 +138,12 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         ? undefined
         : { pointerEvents: 'none', opacity: 0.7 };
 
-    if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
+    // Use searchable picker for:
+    // 1. Mobile + high-cardinality fields (MOBILE_PICKER_FIELDS)
+    // 2. Desktop + ultra-high-cardinality fields (DESKTOP_PICKER_FIELDS) - e.g., "name" with 60+ unique values
+    const usePickerModal = (isMobile && MOBILE_PICKER_FIELDS.has(field)) || DESKTOP_PICKER_FIELDS.has(field);
+
+    if (usePickerModal) {
         return (
             <div style={pointerEventsStyle}>
                 {/* This is a custom implementation of the same styling seen in select.tsx's SelectTrigger which is the shadcn/ui select built on top of Radix UI. For certain fields, I want my own custom modal with a search bar, built in SearchablePickerModal.tsx, but want it to appear the same as a select. For consistency, the styling here makes it look like any other select but clicking it opens the SearchablePickerModal.*/}
@@ -151,6 +185,9 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         );
     }
 
+    // Desktop (and low-cardinality mobile): use native Select with lazy-rendered items
+    // Items are only rendered when dropdown is open, avoiding 60+ SelectItem renders on state changes
+    const isHighCardinality = MOBILE_PICKER_FIELDS.has(field);
     return (
         <div className={maxWidth} style={pointerEventsStyle}>
             <Select
@@ -178,7 +215,8 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     <SelectGroup>
                         <SelectLabel>{label}</SelectLabel>
                         <SelectItem value="all">Don't Filter By {label}</SelectItem>
-                        {getDistinctValues(field).map((item: string) => (
+                        {/* Lazy render: only mount SelectItems when dropdown is open for high-cardinality fields */}
+                        {(!isHighCardinality || selectOpen) && getDistinctValues(field).map((item: string) => (
                             <SelectItem key={item} value={item}>
                                 {item}
                             </SelectItem>
@@ -191,24 +229,30 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
 }
 
 export function FilterResetButton({ disabled, variant, fullWidth = true }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean }) {
-    const { setFilters, setQuickFilterText, setSortOption } = useContext(FilterContext);
+    const { setFilters } = useFilters();
+    const { setQuickFilterText } = useQuickSearch();
+    const { setSortOption } = useSort();
+    const [, startTransition] = useTransition();
 
     const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
         // Prevent any event bubbling that might affect parent dialogs
         e.preventDefault();
         e.stopPropagation();
 
-        setFilters((prevFilters) => {
-            const resetFilters = { ...prevFilters };
-            Object.keys(resetFilters).forEach((key) => {
-                // Uniform reset: set every single-select filter back to 'all' (sentinel meaning no constraint)
-                (resetFilters as any)[key].value = "all";
+        // Use startTransition to mark reset as non-urgent, preventing UI blocking
+        startTransition(() => {
+            setFilters((prevFilters) => {
+                const resetFilters = { ...prevFilters };
+                Object.keys(resetFilters).forEach((key) => {
+                    // Uniform reset: set every single-select filter back to 'all' (sentinel meaning no constraint)
+                    (resetFilters as any)[key].value = "all";
+                });
+                return resetFilters;
             });
-            return resetFilters;
-        });
 
-        setQuickFilterText("");
-        setSortOption(DEFAULT_SORT_OPTION);
+            setQuickFilterText("");
+            setSortOption(DEFAULT_SORT_OPTION);
+        });
     }, [setFilters, setQuickFilterText, setSortOption]);
 
     return (
@@ -226,7 +270,7 @@ export function FilterResetButton({ disabled, variant, fullWidth = true }: { dis
 }
 
 export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
-    const { sortOption, setSortOption } = useContext(FilterContext);
+    const { sortOption, setSortOption } = useSort();
     const [selectOpen, setSelectOpen] = useState(false);
     const [pickerOpen, setPickerOpen] = useState(false);
     const isMobile = useIsMobile();

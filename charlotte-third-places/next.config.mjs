@@ -3,6 +3,7 @@ import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
+    reactCompiler: true, // Enable React Compiler for automatic memoization
     images: {
         remotePatterns: [
             {

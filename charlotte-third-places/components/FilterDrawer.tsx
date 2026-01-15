@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useContext, useCallback, useRef } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
+import React, { useState, useCallback, useRef } from "react";
+import { useFilters } from "@/contexts/FilterContext";
 import { FILTER_DEFS, FILTER_SENTINEL, FilterKey, MOBILE_CHIP_FIELDS } from "@/lib/filters";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { FilterChips } from "@/components/FilterChips";
@@ -17,28 +17,30 @@ import {
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 
-export function FilterDrawer({
-  className = "",
-  showSort = false,
-  style = {},
-  showButton = true,
-  open,
-  onOpenChange,
-}: {
+interface FilterDrawerProps {
   className?: string;
   showSort?: boolean;
   style?: React.CSSProperties;
   showButton?: boolean;
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
-}) {
+}
+
+export const FilterDrawer = React.memo(function FilterDrawer({
+  className = "",
+  showSort = false,
+  style = {},
+  showButton = true,
+  open,
+  onOpenChange,
+}: FilterDrawerProps) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   // Use controlled state if provided, otherwise use internal state
   const isOpen = open !== undefined ? open : isDrawerOpen;
   const setIsOpen = onOpenChange || setIsDrawerOpen;
 
-  const { filters } = useContext(FilterContext);
+  const { filters } = useFilters();
   // Count only filters whose value diverges from 'all' (the sentinel meaning no constraint)
   const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
   // Track open state for all selects
@@ -171,4 +173,6 @@ export function FilterDrawer({
       </DrawerContent>
     </Drawer>
   );
-}
+});
+
+FilterDrawer.displayName = "FilterDrawer";

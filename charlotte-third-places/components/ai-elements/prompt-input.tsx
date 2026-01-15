@@ -68,7 +68,9 @@ import {
   useMemo,
   useRef,
   useState,
+  useTransition,
 } from "react";
+import { useDebouncedCallback } from "use-debounce";
 
 // ============================================================================
 // Provider Context & Types
@@ -817,6 +819,29 @@ export const PromptInputTextarea = ({
   const attachments = usePromptInputAttachments();
   const [isComposing, setIsComposing] = useState(false);
 
+  // Local state for immediate UI feedback - prevents 2408ms INP
+  const [localValue, setLocalValue] = useState(controller?.textInput.value ?? "");
+  const [, startTransition] = useTransition();
+
+  // Sync local state when controller value changes externally (e.g., after submit)
+  useEffect(() => {
+    if (controller && controller.textInput.value !== localValue) {
+      setLocalValue(controller.textInput.value);
+    }
+    // Only sync when controller value changes, not localValue
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [controller?.textInput.value]);
+
+  // Debounced update to controller (150ms standard debounce)
+  const debouncedSetInput = useDebouncedCallback(
+    (value: string) => {
+      startTransition(() => {
+        controller?.textInput.setInput(value);
+      });
+    },
+    150
+  );
+
   const handleKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = (e) => {
     if (e.key === "Enter") {
       if (isComposing || e.nativeEvent.isComposing) {
@@ -826,6 +851,9 @@ export const PromptInputTextarea = ({
         return;
       }
       e.preventDefault();
+
+      // Flush debounced input before submitting
+      debouncedSetInput.flush();
 
       // Check if the submit button is disabled before submitting
       const form = e.currentTarget.form;
@@ -879,9 +907,13 @@ export const PromptInputTextarea = ({
 
   const controlledProps = controller
     ? {
-        value: controller.textInput.value,
+        value: localValue,
         onChange: (e: ChangeEvent<HTMLTextAreaElement>) => {
-          controller.textInput.setInput(e.currentTarget.value);
+          const newValue = e.currentTarget.value;
+          // Immediate local update for responsive UI
+          setLocalValue(newValue);
+          // Debounced controller update wrapped in transition
+          debouncedSetInput(newValue);
           onChange?.(e);
         },
       }

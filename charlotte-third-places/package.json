@@ -9,13 +9,14 @@
     "start": "next start",
     "lint": "next lint",
     "generate-airtable-data": "npx tsx scripts/generate-airtable-data.ts",
-    "test": "vitest run && start-server-and-test dev http://localhost:3000 test:e2e",
+    "test": "vitest run && start-server-and-test dev http://localhost:3000 test:e2e:run",
     "test:unit": "vitest",
     "test:unit:run": "vitest run",
     "test:ci": "vitest run --coverage",
     "test:coverage": "vitest run --coverage",
-    "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e": "start-server-and-test dev http://localhost:3000 test:e2e:run",
+    "test:e2e:run": "playwright test",
+    "test:e2e:ui": "start-server-and-test dev http://localhost:3000 'playwright test --ui'"
   },
   "dependencies": {
     "@ai-sdk/azure": "^2.0.77",
@@ -54,6 +55,8 @@
     "ai": "^5.0.105",
     "airtable": "^0.12.2",
     "axios": "^1.8.2",
+    "babel-plugin-react-compiler": "^1.0.0",
+    "better-auth": "^1.4.10",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
@@ -83,6 +86,7 @@
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
     "tokenlens": "^1.3.1",
+    "use-debounce": "^10.1.0",
     "use-stick-to-bottom": "^1.1.1",
     "vaul": "^1.1.2",
     "zod": "^4.1.13"
@@ -92,6 +96,7 @@
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^20",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",

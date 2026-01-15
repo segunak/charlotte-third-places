@@ -11,26 +11,70 @@
  * - showPlaceChat/closeChatDialog
  */
 
-import { describe, it, expect, vi } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
-import { ModalProvider, useModalContext } from '@/contexts/ModalContext'
+import React from 'react'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { render, screen, fireEvent, act, waitFor } from '@testing-library/react'
 import type { Place } from '@/lib/types'
 
-// Mock the modal components to avoid complex rendering
-vi.mock('@/components/PlaceModal', () => ({
-  PlaceModal: ({ place, open }: { place: Place | null; open: boolean }) =>
-    open && place ? <div data-testid="place-modal">{place.name}</div> : null,
+// Store references to preloaded modules
+let preloadedModules: string[] = []
+
+// Mock the LoadingSpinner
+vi.mock('@/components/ui/loading-spinner', () => ({
+  LoadingSpinner: () => React.createElement('div', { 'data-testid': 'loading-spinner' }),
 }))
 
-vi.mock('@/components/PhotosModal', () => ({
-  PhotosModal: ({ place, open }: { place: Place | null; open: boolean }) =>
-    open && place ? <div data-testid="photos-modal">{place.name} Photos</div> : null,
+// Mock modal components to track preloading
+vi.mock('@/components/PlaceModal', () => {
+  preloadedModules.push('PlaceModal')
+  return {
+    PlaceModal: ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      open && place ? React.createElement('div', { 'data-testid': 'place-modal' }, place.name) : null
+  }
+})
+
+vi.mock('@/components/PhotosModal', () => {
+  preloadedModules.push('PhotosModal')
+  return {
+    PhotosModal: ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      open && place ? React.createElement('div', { 'data-testid': 'photos-modal' }, `${place.name} Photos`) : null
+  }
+})
+
+vi.mock('@/components/ChatDialog', () => {
+  preloadedModules.push('ChatDialog')
+  return {
+    ChatDialog: ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      open && place ? React.createElement('div', { 'data-testid': 'chat-dialog' }, `${place.name} Chat`) : null
+  }
+})
+
+// Mock next/dynamic to execute imports synchronously and return mocked components
+vi.mock('next/dynamic', () => ({
+  default: (importFn: () => Promise<any>) => {
+    // Execute the import to get the path, then return appropriate mock
+    const importStr = importFn.toString()
+    
+    if (importStr.includes('PlaceModal')) {
+      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+        open && place ? React.createElement('div', { 'data-testid': 'place-modal' }, place.name) : null
+    }
+    if (importStr.includes('PhotosModal')) {
+      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+        open && place ? React.createElement('div', { 'data-testid': 'photos-modal' }, `${place.name} Photos`) : null
+    }
+    if (importStr.includes('ChatDialog')) {
+      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+        open && place ? React.createElement('div', { 'data-testid': 'chat-dialog' }, `${place.name} Chat`) : null
+    }
+    
+    // Fallback: return a component that shows loading
+    return () => React.createElement('div', { 'data-testid': 'loading-spinner' })
+  },
 }))
 
-vi.mock('@/components/ChatDialog', () => ({
-  ChatDialog: ({ place, open }: { place: Place | null; open: boolean }) =>
-    open && place ? <div data-testid="chat-dialog">{place.name} Chat</div> : null,
-}))
+// Import ModalContext AFTER mocks are set up
+import { ModalProvider, useModalContext, useModalActions } from '@/contexts/ModalContext'
 
 /**
  * Factory for creating test Place objects
@@ -237,6 +281,194 @@ describe('ModalContext', () => {
       }).toThrow()
 
       consoleSpy.mockRestore()
+    })
+  })
+
+  describe('useModalActions hook', () => {
+    /**
+     * Test component that uses the optimized useModalActions hook
+     * This is the recommended hook for components that trigger modals
+     */
+    function ActionsTestConsumer() {
+      const {
+        showPlaceModal,
+        showPlacePhotos,
+        showPlaceChat,
+        closePlaceModal,
+        closePhotosModal,
+        closeChatDialog,
+      } = useModalActions()
+
+      const testPlace = createMockPlace({ name: 'Actions Test Place' })
+
+      return (
+        <div>
+          <button onClick={() => showPlaceModal(testPlace)}>Actions: Show Modal</button>
+          <button onClick={() => showPlacePhotos(testPlace, 'card')}>Actions: Show Photos</button>
+          <button onClick={() => showPlaceChat(testPlace)}>Actions: Show Chat</button>
+          <button onClick={closePlaceModal}>Actions: Close Modal</button>
+          <button onClick={closePhotosModal}>Actions: Close Photos</button>
+          <button onClick={closeChatDialog}>Actions: Close Chat</button>
+        </div>
+      )
+    }
+
+    it('throws error when used outside ModalProvider', () => {
+      const consoleSpy = vi.spyOn(console, 'error').mockImplementation(() => {})
+
+      expect(() => {
+        render(<ActionsTestConsumer />)
+      }).toThrow('useModalActions must be used within a ModalProvider')
+
+      consoleSpy.mockRestore()
+    })
+
+    it('provides working showPlaceModal function', () => {
+      render(
+        <ModalProvider>
+          <ActionsTestConsumer />
+        </ModalProvider>
+      )
+
+      expect(screen.queryByTestId('place-modal')).not.toBeInTheDocument()
+
+      fireEvent.click(screen.getByText('Actions: Show Modal'))
+
+      expect(screen.getByTestId('place-modal')).toBeInTheDocument()
+      expect(screen.getByText('Actions Test Place')).toBeInTheDocument()
+    })
+
+    it('provides working showPlacePhotos function', () => {
+      render(
+        <ModalProvider>
+          <ActionsTestConsumer />
+        </ModalProvider>
+      )
+
+      fireEvent.click(screen.getByText('Actions: Show Photos'))
+
+      expect(screen.getByTestId('photos-modal')).toBeInTheDocument()
+    })
+
+    it('provides working showPlaceChat function', () => {
+      render(
+        <ModalProvider>
+          <ActionsTestConsumer />
+        </ModalProvider>
+      )
+
+      fireEvent.click(screen.getByText('Actions: Show Chat'))
+
+      expect(screen.getByTestId('chat-dialog')).toBeInTheDocument()
+    })
+
+    it('provides working close functions', () => {
+      render(
+        <ModalProvider>
+          <ActionsTestConsumer />
+        </ModalProvider>
+      )
+
+      // Open and close modal
+      fireEvent.click(screen.getByText('Actions: Show Modal'))
+      expect(screen.getByTestId('place-modal')).toBeInTheDocument()
+      fireEvent.click(screen.getByText('Actions: Close Modal'))
+      expect(screen.queryByTestId('place-modal')).not.toBeInTheDocument()
+
+      // Open and close photos
+      fireEvent.click(screen.getByText('Actions: Show Photos'))
+      expect(screen.getByTestId('photos-modal')).toBeInTheDocument()
+      fireEvent.click(screen.getByText('Actions: Close Photos'))
+      expect(screen.queryByTestId('photos-modal')).not.toBeInTheDocument()
+
+      // Open and close chat
+      fireEvent.click(screen.getByText('Actions: Show Chat'))
+      expect(screen.getByTestId('chat-dialog')).toBeInTheDocument()
+      fireEvent.click(screen.getByText('Actions: Close Chat'))
+      expect(screen.queryByTestId('chat-dialog')).not.toBeInTheDocument()
+    })
+
+    it('returns the same function references across renders (stable identity)', () => {
+      const functionRefs: { showPlaceModal: any[] } = { showPlaceModal: [] }
+
+      function ReferenceTracker() {
+        const { showPlaceModal } = useModalActions()
+        functionRefs.showPlaceModal.push(showPlaceModal)
+        return <button onClick={() => {}}>Trigger Re-render</button>
+      }
+
+      const { rerender } = render(
+        <ModalProvider>
+          <ReferenceTracker />
+        </ModalProvider>
+      )
+
+      // Force a re-render
+      rerender(
+        <ModalProvider>
+          <ReferenceTracker />
+        </ModalProvider>
+      )
+
+      // Both references should be the same function
+      expect(functionRefs.showPlaceModal.length).toBe(2)
+      expect(functionRefs.showPlaceModal[0]).toBe(functionRefs.showPlaceModal[1])
+    })
+  })
+
+  describe('Preloading', () => {
+    let mockRequestIdleCallback: ReturnType<typeof vi.fn>
+    let originalRequestIdleCallback: typeof window.requestIdleCallback | undefined
+
+    beforeEach(() => {
+      preloadedModules = []
+      originalRequestIdleCallback = window.requestIdleCallback
+      mockRequestIdleCallback = vi.fn((callback: IdleRequestCallback) => {
+        // Execute the callback immediately for testing
+        callback({ didTimeout: false, timeRemaining: () => 50 })
+        return 1
+      })
+      // @ts-expect-error - Mocking requestIdleCallback
+      window.requestIdleCallback = mockRequestIdleCallback
+    })
+
+    afterEach(() => {
+      if (originalRequestIdleCallback) {
+        window.requestIdleCallback = originalRequestIdleCallback
+      } else {
+        // @ts-expect-error - Removing the mock if it wasn't originally present
+        delete window.requestIdleCallback
+      }
+    })
+
+    it('uses requestIdleCallback to preload modal chunks', async () => {
+      render(
+        <ModalProvider>
+          <TestConsumer />
+        </ModalProvider>
+      )
+
+      // requestIdleCallback should have been called
+      expect(mockRequestIdleCallback).toHaveBeenCalled()
+    })
+
+    it('falls back to setTimeout when requestIdleCallback is not available', async () => {
+      // Remove requestIdleCallback to simulate Safari
+      // @ts-expect-error - Removing the mock
+      delete window.requestIdleCallback
+      
+      const setTimeoutSpy = vi.spyOn(globalThis, 'setTimeout')
+
+      render(
+        <ModalProvider>
+          <TestConsumer />
+        </ModalProvider>
+      )
+
+      // Should fall back to setTimeout
+      expect(setTimeoutSpy).toHaveBeenCalledWith(expect.any(Function), 1000)
+      
+      setTimeoutSpy.mockRestore()
     })
   })
 })

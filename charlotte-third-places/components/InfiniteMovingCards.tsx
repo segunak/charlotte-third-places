@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { Place } from "@/lib/types";
 import { PlaceCard } from "@/components/PlaceCard";
-import {
+import React, {
     useRef,
     useState,
     useCallback,
@@ -23,14 +23,14 @@ interface InfiniteMovingCardsProps {
     onItemsChange?: (count: number) => void;
 }
 
-export const InfiniteMovingCards = ({
+export const InfiniteMovingCards = React.memo(function InfiniteMovingCards({
     items,
     direction = "right",
     speed = "normal",
     pauseOnHover = true,
     className,
     onItemsChange,
-}: InfiniteMovingCardsProps) => {
+}: InfiniteMovingCardsProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     const scrollerRef = useRef<HTMLUListElement>(null);
     const [animationKey, setAnimationKey] = useState(0);
@@ -107,4 +107,4 @@ export const InfiniteMovingCards = ({
             </div>
         </div>
     );
-};
+});

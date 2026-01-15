@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Icons } from "@/components/Icons";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
 
@@ -13,7 +14,7 @@ const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePl
     ssr: false,
     loading: () => (
         <div className="h-64 flex items-center justify-center">
-            <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+            <LoadingSpinner />
         </div>
     )
 });
@@ -22,7 +23,7 @@ const PlaceListWithFilters = nextDynamic(() => import("@/components/PlaceListWit
     ssr: false,
     loading: () => (
         <div className="h-64 flex items-center justify-center">
-            <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+            <LoadingSpinner />
         </div>
     )
 });

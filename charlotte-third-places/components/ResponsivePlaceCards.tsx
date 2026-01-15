@@ -1,7 +1,7 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { FilterContext } from "@/contexts/FilterContext";
+import { useFilters, useQuickSearch, useSort } from "@/contexts/FilterContext";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from '@/lib/filters';
 import { Icons } from "@/components/Icons";
@@ -9,19 +9,21 @@ import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { useIsMobile } from "@/hooks/use-mobile";
 import React, {
     useState,
     useCallback,
     useEffect,
     useRef,
-    useContext,
     useMemo
 } from "react";
 
 export function ResponsivePlaceCards({ places }: { places: Place[] }) {
-    // Consume filtering context so discovery feed reflects current filters
-    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
+    // Consume granular filtering contexts for optimal render performance
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
+    const { sortOption } = useSort();
     const isMobile = useIsMobile();
     const shuffleTimeout = useRef<number | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -107,7 +109,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         setCurrentIndex(0);
     }, [filteredPlaces]);
 
-    const handleItemsChange = () => { };
+    const handleItemsChange = useCallback(() => { }, []);
 
     // Only render a limited number of cards in InfiniteMovingCards (desktop)
     const VIRTUALIZED_CARD_COUNT = 100; // Show this many at a time for animation, adjust as needed
@@ -116,11 +118,17 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         [desktopShuffledOrder, places]
     );
 
+    // Memoize mobile carousel items to prevent new array reference on each render
+    const mobileCarouselItems = useMemo(
+        () => mobileShuffledOrder.map(i => filteredPlaces[i]).filter(Boolean),
+        [mobileShuffledOrder, filteredPlaces]
+    );
+
     return (
         <div className="relative overflow-hidden max-w-full">
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    <LoadingSpinner />
                 </div>
             )}
 
@@ -152,7 +160,7 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
                         </div>
                         <CardCarousel
                             key={mobileShuffledOrder.join('-')}
-                            items={mobileShuffledOrder.map(i => filteredPlaces[i]).filter(Boolean)}
+                            items={mobileCarouselItems}
                             initialIndex={currentIndex}
                             total={mobileShuffledOrder.length}
                         />

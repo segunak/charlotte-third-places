@@ -273,4 +273,95 @@ test.describe('PlaceCard Interaction', () => {
   })
 })
 
+/**
+ * INP (Interaction to Next Paint) Performance Tests
+ * 
+ * These tests measure interaction responsiveness for WARM STATE interactions.
+ * We test the experience of users who are already on the site, not cold-start.
+ * 
+ * Strategy: Pre-warm → Reset → Measure
+ * 1. Perform interaction once (loads lazy chunks, initializes state)
+ * 2. Reset/close the interaction
+ * 3. Measure the same interaction again
+ * 
+ * Target: < 200ms for good INP, < 500ms for acceptable INP
+ */
+test.describe('INP Performance (Warm State)', () => {
+  const INP_THRESHOLD_MS = 500 // Acceptable threshold - good is < 200ms
+
+  test('place card click opens modal within INP threshold', async ({ page }) => {
+    await page.goto('/')
+    await page.waitForLoadState('domcontentloaded')
+
+    // Wait for place cards to load
+    const browseSection = page.getByTestId('browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 60000 })
+    await page.waitForTimeout(2000)
+
+    const placeCard = page.locator('[role="article"], [data-testid="place-card"]').first()
+    const dialog = page.locator('[role="dialog"]')
+
+    if (await placeCard.count() > 0) {
+      // PRE-WARM: Open modal once to load lazy chunks, then close it
+      await placeCard.click()
+      await expect(dialog).toBeVisible({ timeout: 5000 })
+      
+      // Close the modal (click close button or press Escape)
+      await page.keyboard.press('Escape')
+      await expect(dialog).toBeHidden({ timeout: 2000 })
+      await page.waitForTimeout(300) // Brief settle time
+
+      // MEASURE: Now measure the warm interaction
+      const startTime = Date.now()
+      await placeCard.click()
+      await expect(dialog).toBeVisible({ timeout: 2000 })
+      const endTime = Date.now()
+
+      const interactionTime = endTime - startTime
+      console.log(`Place card click to modal visible (warm): ${interactionTime}ms`)
+
+      // Warm modal should appear quickly - no lazy loading overhead
+      expect(interactionTime).toBeLessThan(INP_THRESHOLD_MS)
+    }
+  })
+
+  test('filter select interaction responds within INP threshold', async ({ page }) => {
+    await page.goto('/')
+    await page.waitForLoadState('domcontentloaded')
+
+    // Wait for content to load
+    const browseSection = page.getByTestId('browse-section')
+    await expect(browseSection).toBeVisible({ timeout: 60000 })
+    
+    // Scroll to browse section so filters are visible
+    await browseSection.scrollIntoViewIfNeeded()
+    await page.waitForTimeout(500) // Let filters render
+
+    // Look for a filter select/button - must be visible
+    const filterTrigger = page.locator('button[aria-haspopup="listbox"], button[aria-haspopup="dialog"]').first()
+
+    // Skip if no visible filter trigger (mobile view may hide sidebar filters)
+    if (await filterTrigger.count() > 0 && await filterTrigger.isVisible()) {
+      // PRE-WARM: Open dropdown once to load lazy chunks, then close it
+      await filterTrigger.click()
+      await page.waitForTimeout(500) // Wait for dropdown to render
+      await page.keyboard.press('Escape') // Close dropdown
+      await page.waitForTimeout(300) // Brief settle time
+
+      // MEASURE: Now measure the warm interaction
+      const startTime = Date.now()
+      await filterTrigger.click()
+      const endTime = Date.now()
+
+      const interactionTime = endTime - startTime
+      console.log(`Filter select click time (warm): ${interactionTime}ms`)
+
+      expect(interactionTime).toBeLessThan(INP_THRESHOLD_MS)
+    }
+  })
+
+  // Note: Navigation test removed - SSR navigation is inherently cold and not representative
+  // of INP. Consider adding back when implementing View Transitions or client-side routing.
+})
+
 

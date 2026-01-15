@@ -13,7 +13,11 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
-import { FilterContext } from '@/contexts/FilterContext'
+import { 
+    FiltersContext, 
+    QuickSearchContext, 
+    SortContext 
+} from '@/contexts/FilterContext'
 import { DEFAULT_FILTER_CONFIG, FilterConfig } from '@/lib/filters'
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from '@/lib/types'
 import type { Place } from '@/lib/types'
@@ -21,6 +25,11 @@ import type { Place } from '@/lib/types'
 // Mock ModalContext
 vi.mock('@/contexts/ModalContext', () => ({
   useModalContext: () => ({
+    showPlaceModal: vi.fn(),
+    showPlacePhotos: vi.fn(),
+    showPlaceChat: vi.fn(),
+  }),
+  useModalActions: () => ({
     showPlaceModal: vi.fn(),
     showPlacePhotos: vi.fn(),
     showPlaceChat: vi.fn(),
@@ -102,9 +111,13 @@ function renderWithFilterContext(
   }
 
   return render(
-    <FilterContext.Provider value={defaultContext}>
-      <DataTable rowData={places} />
-    </FilterContext.Provider>
+    <FiltersContext.Provider value={{ filters: defaultContext.filters, setFilters: defaultContext.setFilters }}>
+      <QuickSearchContext.Provider value={{ quickFilterText: defaultContext.quickFilterText, setQuickFilterText: defaultContext.setQuickFilterText }}>
+        <SortContext.Provider value={{ sortOption: defaultContext.sortOption, setSortOption: defaultContext.setSortOption }}>
+          <DataTable rowData={places} />
+        </SortContext.Provider>
+      </QuickSearchContext.Provider>
+    </FiltersContext.Provider>
   )
 }
 
@@ -282,19 +295,13 @@ describe('DataTable', () => {
       ]
 
       render(
-        <FilterContext.Provider
-          value={{
-            filters: DEFAULT_FILTER_CONFIG,
-            setFilters: vi.fn(),
-            quickFilterText: 'Coffee',
-            setQuickFilterText: vi.fn(),
-            getDistinctValues: () => [],
-            sortOption: DEFAULT_SORT_OPTION,
-            setSortOption: vi.fn(),
-          }}
-        >
-          <DataTable rowData={places} onFilteredCountChange={mockCallback} />
-        </FilterContext.Provider>
+        <FiltersContext.Provider value={{ filters: DEFAULT_FILTER_CONFIG, setFilters: vi.fn() }}>
+          <QuickSearchContext.Provider value={{ quickFilterText: 'Coffee', setQuickFilterText: vi.fn() }}>
+            <SortContext.Provider value={{ sortOption: DEFAULT_SORT_OPTION, setSortOption: vi.fn() }}>
+              <DataTable rowData={places} onFilteredCountChange={mockCallback} />
+            </SortContext.Provider>
+          </QuickSearchContext.Provider>
+        </FiltersContext.Provider>
       )
 
       await waitFor(() => {

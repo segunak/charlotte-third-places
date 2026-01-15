@@ -2,13 +2,38 @@
 
 import { PlaceCard } from "@/components/PlaceCard";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { SortField, SortDirection } from "@/lib/types";
 import { placeMatchesFilters } from "@/lib/filters";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
-import { FilterContext } from "@/contexts/FilterContext";
-import { useContext, useCallback, useState, useMemo, useEffect } from "react";
-import { FixedSizeList as List } from "react-window";
+import { useFilters, useQuickSearch, useSort } from "@/contexts/FilterContext";
+import { useCallback, useState, useMemo, useEffect, memo } from "react";
+import { FixedSizeList as List, ListChildComponentProps } from "react-window";
+
+/**
+ * Memoized Row component for react-window virtualization.
+ * Extracted outside DataTable to prevent recreation on every render,
+ * which would defeat react-window's optimization.
+ */
+interface RowData {
+    groups: Array<{ group: any[] }>;
+}
+
+const VirtualizedRow = memo(function VirtualizedRow({ index, style, data }: ListChildComponentProps<RowData>) {
+    const { group } = data.groups[index];
+    return (
+        <div style={style}>
+            <div className="flex flex-wrap -mx-2">
+                {group.map((place: any, idx: number) => (
+                    <div key={place.recordId || idx} className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4">
+                        <PlaceCard place={place} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+});
 
 interface DataTableProps {
     rowData: Array<object>;
@@ -23,7 +48,10 @@ interface DataTableProps {
 
 export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
     const [isLoading, setIsLoading] = useState(true);
-    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
+    // Consume granular contexts for optimal render performance
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
+    const { sortOption } = useSort();
 
     useEffect(() => {
         const timeout = setTimeout(() => setIsLoading(false), 500);
@@ -77,7 +105,7 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
         return 1; // Anything smaller than lg, 1 column, 1 card per row
     }, [windowWidth]);
 
-    const filteredAndGroupedRowData = useMemo(() => {
+    const { grouped: filteredAndGroupedRowData, filteredCount } = useMemo(() => {
         let filteredData = rowData;
         if (quickFilterText.trim() !== "") {
             const lowerCaseFilter = normalizeTextForSearch(quickFilterText);
@@ -95,16 +123,16 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
             const group = filteredData.slice(i, i + columnsPerRow);
             grouped.push({ group });
         }
-        // Notify parent about the current filtered count (after all transformations)
-        const count = filteredData.length;
-        // Defer notification until after initial loading state clears; parent handles own state guard.
-        Promise.resolve().then(() => {
-            if (!isLoading) {
-                onFilteredCountChange?.(count);
-            }
-        });
-        return grouped;
-    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow, onFilteredCountChange, isLoading]);
+        return { grouped, filteredCount: filteredData.length };
+    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow]);
+
+    // Notify parent about filtered count in a separate effect (not inside useMemo)
+    // This follows React rules - side effects belong in useEffect, not useMemo
+    useEffect(() => {
+        if (!isLoading) {
+            onFilteredCountChange?.(filteredCount);
+        }
+    }, [filteredCount, isLoading, onFilteredCountChange]);
 
     // Virtualization sizes must include spacing because children margins don't affect
     // react-window's absolute positioning. Reserve a small, explicit gap per row.
@@ -114,27 +142,16 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
         return CARD_HEIGHT + ROW_GAP;
     }, []);
 
-    // Virtualized Row Renderer for react-window
-    const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
-        const { group } = filteredAndGroupedRowData[index];
-        return (
-            <div style={style}>
-                <div className="flex flex-wrap -mx-2">
-                    {group.map((place: any, idx: number) => (
-                        <div key={idx} className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4">
-                            <PlaceCard place={place} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-        );
-    };
+    // Memoized itemData for react-window to prevent unnecessary row re-renders
+    const itemData = useMemo<RowData>(() => ({
+        groups: filteredAndGroupedRowData,
+    }), [filteredAndGroupedRowData]);
 
     return (
         <div className="relative flex-1 w-full overflow-visible">
             {isLoading && (
                 <div className="mt-16 absolute inset-0 flex items-center justify-center bg-background z-10">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    <LoadingSpinner />
                 </div>
             )}
             {!isLoading && filteredAndGroupedRowData.length === 0 && (
@@ -146,10 +163,11 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
                         height={filteredAndGroupedRowData.length * getRowHeight()}
                         itemCount={filteredAndGroupedRowData.length}
                         itemSize={getRowHeight()}
+                        itemData={itemData}
                         width={"100%"}
                         style={{ overflow: "visible" }}
                     >
-                        {Row}
+                        {VirtualizedRow}
                     </List>
                 )}
             </div>

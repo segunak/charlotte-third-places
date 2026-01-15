@@ -9,11 +9,12 @@ import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 
 // Dynamically import DataTable for lazy loading with count callback
 const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: number) => void }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
     ssr: false,
-    loading: () => <div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>,
+    loading: () => <div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>,
 });
 
 interface PlaceListWithFiltersProps {
@@ -131,7 +132,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
-                    <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
+                    <Suspense fallback={<div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>}>
                         {/* DataTable receives the already mobile-filtered array (displayedPlaces).
                             This keeps DataTable focused on presentation + generic filtering/sorting logic only. */}
                         <DataTable rowData={places} onFilteredCountChange={setVisibleCount} />

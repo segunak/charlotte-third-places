@@ -23,6 +23,7 @@ export interface FilterDefinition {
     valueType: FilterValueType;         // Indicates whether accessor returns a scalar or string[]
     mobilePicker: boolean;              // Drives whether mobile uses custom searchable picker
     useChips: boolean;                  // If true, mobile displays inline chips instead of picker/select
+    desktopPicker?: boolean;            // If true, uses searchable picker on desktop (for ultra-high cardinality)
     accessor: (p: Place) => string | string[]; // Function to extract raw value(s) from a Place
 }
 
@@ -34,6 +35,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         valueType: 'scalar',
         mobilePicker: true,
         useChips: false,
+        desktopPicker: true,
         accessor: p => p.name
     },
     {
@@ -42,6 +44,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Neighborhood',
         valueType: 'scalar',
         mobilePicker: true,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.neighborhood
     },
@@ -51,6 +54,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Type',
         valueType: 'array',
         mobilePicker: true,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.type
     },
@@ -60,6 +64,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Tag',
         valueType: 'array',
         mobilePicker: true,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.tags
     },
@@ -138,6 +143,11 @@ export const FILTER_DEFINITION_MAP: Record<FilterKey, FilterDefinition> = FILTER
 
 export const MOBILE_PICKER_FIELDS: Set<string> = new Set(
     FILTER_DEFS.filter(d => d.mobilePicker).map(d => d.key)
+);
+
+// Fields that use searchable picker on desktop (ultra-high cardinality)
+export const DESKTOP_PICKER_FIELDS: Set<string> = new Set(
+    FILTER_DEFS.filter(d => d.desktopPicker).map(d => d.key)
 );
 
 export const MOBILE_CHIP_FIELDS: Set<string> = new Set(
