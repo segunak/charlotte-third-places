@@ -18,9 +18,10 @@ import { useQuickSearch, useFilters, useFilterData, useSort } from "@/contexts/F
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
+import { VirtualizedSelect } from "@/components/VirtualizedSelect";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import { MOBILE_PICKER_FIELDS, DESKTOP_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
+import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
@@ -138,12 +139,8 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         ? undefined
         : { pointerEvents: 'none', opacity: 0.7 };
 
-    // Use searchable picker for:
-    // 1. Mobile + high-cardinality fields (MOBILE_PICKER_FIELDS)
-    // 2. Desktop + ultra-high-cardinality fields (DESKTOP_PICKER_FIELDS) - e.g., "name" with 60+ unique values
-    const usePickerModal = (isMobile && MOBILE_PICKER_FIELDS.has(field)) || DESKTOP_PICKER_FIELDS.has(field);
-
-    if (usePickerModal) {
+    // Mobile: Use SearchablePickerModal for high-cardinality fields
+    if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
         return (
             <div style={pointerEventsStyle}>
                 {/* This is a custom implementation of the same styling seen in select.tsx's SelectTrigger which is the shadcn/ui select built on top of Radix UI. For certain fields, I want my own custom modal with a search bar, built in SearchablePickerModal.tsx, but want it to appear the same as a select. For consistency, the styling here makes it look like any other select but clicking it opens the SearchablePickerModal.*/}
@@ -151,9 +148,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     type="button"
                     className={cn(
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
-                        isMobile
-                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-primary-foreground",
+                        "focus:outline-none focus:ring-0 focus:shadow-none",
                         value === "all"
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -185,8 +180,25 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         );
     }
 
-    // Desktop (and low-cardinality mobile): use native Select with lazy-rendered items
-    // Items are only rendered when dropdown is open, avoiding 60+ SelectItem renders on state changes
+    // Desktop: Use VirtualizedSelect for all fields (virtualized dropdown)
+    // This provides consistent performance across all filter dropdowns
+    if (!isMobile) {
+        return (
+            <div className={maxWidth} style={pointerEventsStyle}>
+                <VirtualizedSelect
+                    options={getDistinctValues(field)}
+                    value={value}
+                    onValueChange={handleFilterChange}
+                    placeholder={placeholder}
+                    label={label}
+                    onOpenChange={onDropdownOpenChange}
+                />
+            </div>
+        );
+    }
+
+    // Mobile low-cardinality fields: use native Radix Select
+    // (Mobile high-cardinality fields already handled above with SearchablePickerModal)
     const isHighCardinality = MOBILE_PICKER_FIELDS.has(field);
     return (
         <div className={maxWidth} style={pointerEventsStyle}>
@@ -214,7 +226,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                 <SelectContent position="popper" side="top">
                     <SelectGroup>
                         <SelectLabel>{label}</SelectLabel>
-                        <SelectItem value="all">Don't Filter By {label}</SelectItem>
+                        <SelectItem value="all">All</SelectItem>
                         {/* Lazy render: only mount SelectItems when dropdown is open for high-cardinality fields */}
                         {(!isHighCardinality || selectOpen) && getDistinctValues(field).map((item: string) => (
                             <SelectItem key={item} value={item}>

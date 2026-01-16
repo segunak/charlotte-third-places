@@ -23,7 +23,7 @@ export interface FilterDefinition {
     valueType: FilterValueType;         // Indicates whether accessor returns a scalar or string[]
     mobilePicker: boolean;              // Drives whether mobile uses custom searchable picker
     useChips: boolean;                  // If true, mobile displays inline chips instead of picker/select
-    desktopPicker?: boolean;            // If true, uses searchable picker on desktop (for ultra-high cardinality)
+    desktopPicker: boolean;             // If true, uses VirtualizedSelect on desktop for performance
     accessor: (p: Place) => string | string[]; // Function to extract raw value(s) from a Place
 }
 
@@ -34,8 +34,8 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Name',
         valueType: 'scalar',
         mobilePicker: true,
+        desktopPicker: true,
         useChips: false,
-        desktopPicker: false,
         accessor: p => p.name
     },
     {
@@ -44,7 +44,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Neighborhood',
         valueType: 'scalar',
         mobilePicker: true,
-        desktopPicker: false,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.neighborhood
     },
@@ -54,7 +54,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Type',
         valueType: 'array',
         mobilePicker: true,
-        desktopPicker: false,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.type
     },
@@ -64,7 +64,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         placeholder: 'Tag',
         valueType: 'array',
         mobilePicker: true,
-        desktopPicker: false,
+        desktopPicker: true,
         useChips: false,
         accessor: p => p.tags
     },
@@ -76,6 +76,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         allowedValues: ['Free', 'Paid'],
         valueType: 'array',
         mobilePicker: false,
+        desktopPicker: false,
         useChips: true,
         accessor: p => p.parking
     },
@@ -87,6 +88,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         allowedValues: ['Yes', 'No'],
         valueType: 'scalar',
         mobilePicker: false,
+        desktopPicker: false,
         useChips: true,
         accessor: p => p.freeWiFi
     },
@@ -97,6 +99,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         predefinedOrder: ['Yes', 'No'],
         valueType: 'scalar',
         mobilePicker: false,
+        desktopPicker: false,
         useChips: true,
         accessor: p => p.purchaseRequired
     },
@@ -108,6 +111,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         allowedValues: ['Small', 'Medium', 'Large'],
         valueType: 'scalar',
         mobilePicker: true,
+        desktopPicker: false,
         useChips: true,
         accessor: p => p.size
     },
@@ -119,6 +123,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         allowedValues: ['Yes', 'No', 'Sometimes'],
         valueType: 'scalar',
         mobilePicker: false,
+        desktopPicker: false,
         useChips: true,
         accessor: p => p.hasCinnamonRolls
     },

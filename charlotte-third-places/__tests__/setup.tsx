@@ -7,6 +7,15 @@ afterEach(() => {
   cleanup()
 })
 
+// Mock ResizeObserver for virtua virtualization library
+// Must be a class constructor, not a mock function
+class ResizeObserverMock {
+  observe = vi.fn()
+  unobserve = vi.fn()
+  disconnect = vi.fn()
+}
+global.ResizeObserver = ResizeObserverMock
+
 // Mock window.matchMedia for responsive components
 Object.defineProperty(window, 'matchMedia', {
   writable: true,

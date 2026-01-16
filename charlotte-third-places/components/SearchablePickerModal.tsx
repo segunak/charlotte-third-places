@@ -15,7 +15,7 @@ interface SearchablePickerModalProps {
   onSelect: (value: string) => void;
   /** Hide the search input (default: true) */
   showSearch?: boolean;
-  /** Hide the "Don't Filter By" default option (default: true) */
+  /** Hide the "All" default option (default: true) */
   showDefaultOption?: boolean;
   /** Custom title (default: "Select {label}") */
   title?: string;
@@ -91,7 +91,7 @@ export function SearchablePickerModal({
                   onClick={() => handleSelect("all")}
                   data-selected={value === "all" ? "" : undefined}
                 >
-                  Don't Filter By {label}
+                  All
                 </Button>
               </li>
             )}

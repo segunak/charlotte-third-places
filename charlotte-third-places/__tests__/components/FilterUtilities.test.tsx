@@ -215,85 +215,89 @@ describe("FilterSelect", () => {
 
 describe("FilterSelect - desktopPicker behavior", () => {
     /**
-     * Tests for the desktopPicker optimization.
+     * Tests for the virtualized dropdown optimization.
      * 
-     * Fields with desktopPicker: true (name, neighborhood, type, tags) should render
-     * the SearchablePickerModal on desktop instead of the native Select.
-     * This prevents rendering 60+ SelectItems which caused 863ms INP.
+     * ALL desktop fields now use VirtualizedSelect for consistent performance.
+     * This uses virtua virtualization to render only visible items
+     * instead of rendering all items at once.
      * 
-     * The picker modal uses aria-haspopup="dialog" while native Select uses role="combobox".
+     * VirtualizedSelect is built on Radix Select with role="combobox".
      */
-    
-    it("uses picker modal for desktopPicker fields on desktop (name)", () => {
+
+    it("uses virtualized select for all desktop fields (name)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
-            <FilterSelect 
-                field="name" 
-                value="all" 
-                label="Name" 
+            <FilterSelect
+                field="name"
+                value="all"
+                label="Name"
                 placeholder="All Names"
                 predefinedOrder={[]}
-            />, 
+            />,
             contextValue
         );
 
-        // desktopPicker: true fields use a button with aria-haspopup="dialog"
-        const trigger = screen.getByRole("button", { name: /all names/i });
-        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
+        // All desktop fields use VirtualizedSelect with role="combobox"
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
+        expect(trigger).toHaveTextContent(/all names/i);
     });
 
-    it("uses picker modal for desktopPicker fields on desktop (neighborhood)", () => {
+    it("uses virtualized select for all desktop fields (neighborhood)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
-            <FilterSelect 
-                field="neighborhood" 
-                value="all" 
-                label="Neighborhood" 
+            <FilterSelect
+                field="neighborhood"
+                value="all"
+                label="Neighborhood"
                 placeholder="All Neighborhoods"
                 predefinedOrder={[]}
-            />, 
+            />,
             contextValue
         );
 
-        const trigger = screen.getByRole("button", { name: /all neighborhoods/i });
-        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
+        expect(trigger).toHaveTextContent(/all neighborhoods/i);
     });
 
-    it("uses picker modal for desktopPicker fields on desktop (type)", () => {
+    it("uses virtualized select for all desktop fields (type)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
-            <FilterSelect 
-                field="type" 
-                value="all" 
-                label="Type" 
+            <FilterSelect
+                field="type"
+                value="all"
+                label="Type"
                 placeholder="All Types"
                 predefinedOrder={[]}
-            />, 
+            />,
             contextValue
         );
 
-        const trigger = screen.getByRole("button", { name: /all types/i });
-        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
+        expect(trigger).toHaveTextContent(/all types/i);
     });
 
-    it("uses picker modal for desktopPicker fields on desktop (tags)", () => {
+    it("uses virtualized select for all desktop fields (tags)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
-            <FilterSelect 
-                field="tags" 
-                value="all" 
-                label="Tag" 
+            <FilterSelect
+                field="tags"
+                value="all"
+                label="Tag"
                 placeholder="All Tags"
                 predefinedOrder={[]}
-            />, 
+            />,
             contextValue
         );
 
-        const trigger = screen.getByRole("button", { name: /all tags/i });
-        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
+        expect(trigger).toHaveTextContent(/all tags/i);
     });
 
-    it("uses native Select for non-desktopPicker fields on desktop (parking)", () => {
+    it("uses virtualized select for all desktop fields (parking)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect 
@@ -306,11 +310,12 @@ describe("FilterSelect - desktopPicker behavior", () => {
             contextValue
         );
 
-        // Non-desktopPicker fields use native Select which has role="combobox"
-        expect(screen.getByRole("combobox")).toBeInTheDocument();
+        // All desktop fields use VirtualizedSelect with role="combobox"
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
     });
 
-    it("uses native Select for non-desktopPicker fields on desktop (size)", () => {
+    it("uses virtualized select for all desktop fields (size)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect 
@@ -323,7 +328,8 @@ describe("FilterSelect - desktopPicker behavior", () => {
             contextValue
         );
 
-        expect(screen.getByRole("combobox")).toBeInTheDocument();
+        const trigger = screen.getByRole("combobox");
+        expect(trigger).toBeInTheDocument();
     });
 });
 
