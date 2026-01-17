@@ -280,7 +280,7 @@ export const Icons = {
       <path fill="#e31b23" d="M0 0h900v200H0z" />
     </svg>
   ),
-  habeshaFlags: (props: IconProps) => {
+  HabeshaFlags: (props: IconProps) => {
     const id = useId();
     return (
       <svg

@@ -24,6 +24,9 @@ vi.mock('@/contexts/ModalContext', () => ({
   useModalContext: () => ({
     showPlacePhotos: mockShowPlacePhotos,
   }),
+  useModalActions: () => ({
+    showPlacePhotos: mockShowPlacePhotos,
+  }),
 }))
 
 // Import after mocks

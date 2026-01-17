@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from 'react';
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 
 interface AirtableFormProps {
     src: string;
@@ -31,7 +32,7 @@ const AirtableForm: React.FC<AirtableFormProps> = ({ src, height = "533px", bord
         <div className="relative airtable-container">
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-white">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    <LoadingSpinner />
                 </div>
             )}
             <iframe

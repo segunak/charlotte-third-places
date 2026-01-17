@@ -6,9 +6,9 @@ import { Icons } from "@/components/Icons";
 import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
-import { FilterContext } from '@/contexts/FilterContext';
-import { useModalContext } from "@/contexts/ModalContext";
-import { useState, useEffect, useContext, useMemo, useCallback } from 'react';
+import { useFilters, useQuickSearch } from '@/contexts/FilterContext';
+import { useModalActions } from "@/contexts/ModalContext";
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 // Cache for consistent color assignments (moved outside component)
@@ -20,9 +20,11 @@ interface PlaceMapProps {
 }
 
 export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
-    const { showPlaceModal } = useModalContext();
+    const { showPlaceModal } = useModalActions();
     const [isMobileView, setIsMobileView] = useState(false);
-    const { filters, quickFilterText } = useContext(FilterContext);
+    // Consume granular contexts for optimal render performance
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);

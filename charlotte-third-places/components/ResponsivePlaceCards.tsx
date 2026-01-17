@@ -1,37 +1,136 @@
 "use client";
 
 import { Place } from "@/lib/types";
-import { FilterContext } from "@/contexts/FilterContext";
+import { useFilters, useQuickSearch, useSort } from "@/contexts/FilterContext";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from '@/lib/filters';
+import { placeMatchesFilters, sortPlaces } from '@/lib/filters';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
 import { InfiniteMovingCards } from "@/components/InfiniteMovingCards";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
-import { useIsMobile } from "@/hooks/use-mobile";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import React, {
     useState,
     useCallback,
     useEffect,
     useRef,
-    useContext,
-    useMemo
+    useMemo,
+    useDeferredValue
 } from "react";
 
-export function ResponsivePlaceCards({ places }: { places: Place[] }) {
-    // Consume filtering context so discovery feed reflects current filters
-    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
-    const isMobile = useIsMobile();
-    const shuffleTimeout = useRef<number | null>(null);
+/**
+ * DesktopInfiniteCarousel - Isolated component for desktop carousel.
+ * 
+ * PERFORMANCE CRITICAL: This component does NOT consume useFilters/useQuickSearch/useSort.
+ * It only receives `places` as a prop, so filter changes in the parent don't trigger re-renders
+ * of the 100 PlaceCards inside InfiniteMovingCards.
+ * 
+ * The desktop carousel intentionally ignores filters and shows a random sampling of all places.
+ */
+interface DesktopInfiniteCarouselProps {
+    places: Place[];
+    onShuffle: () => void;
+}
+
+const DesktopInfiniteCarousel = React.memo(function DesktopInfiniteCarousel({ 
+    places, 
+    onShuffle 
+}: DesktopInfiniteCarouselProps) {
     const [isLoading, setIsLoading] = useState<boolean>(true);
-    // Desktop shuffled order (full data, ignores filters)
-    const [desktopShuffledOrder, setDesktopShuffledOrder] = useState<number[]>([]);
-    // Mobile shuffled order (over filtered set)
+    const [shuffledOrder, setShuffledOrder] = useState<number[]>([]);
+
+    // Fisher-Yates shuffle
+    const shuffleIndexes = useCallback((length: number) => {
+        const arr = Array.from({ length }, (_, i) => i);
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }, []);
+
+    // Initialize shuffle order on mount or when places change
+    useEffect(() => {
+        setIsLoading(true);
+        setShuffledOrder(shuffleIndexes(places.length));
+        setIsLoading(false);
+    }, [shuffleIndexes, places.length]);
+
+    // Handle shuffle button click
+    const handleShuffle = useCallback(() => {
+        setShuffledOrder(shuffleIndexes(places.length));
+        onShuffle();
+    }, [shuffleIndexes, places.length, onShuffle]);
+
+    // Limit to 100 cards for performance
+    const VIRTUALIZED_CARD_COUNT = 100;
+    const visibleItems = useMemo(
+        () => shuffledOrder.slice(0, VIRTUALIZED_CARD_COUNT).map(idx => places[idx]).filter(Boolean),
+        [shuffledOrder, places]
+    );
+
+    // Stable empty callback - InfiniteMovingCards calls this but we don't need to track count
+    const handleItemsChange = useCallback(() => {}, []);
+
+    return (
+        <div className="relative">
+            {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
+                    <LoadingSpinner />
+                </div>
+            )}
+            <InfiniteMovingCards
+                items={visibleItems}
+                direction="right"
+                speed="450s"
+                pauseOnHover={false}
+                onItemsChange={handleItemsChange}
+            />
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
+                <Button
+                    className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
+                    size="icon"
+                    onClick={handleShuffle}
+                >
+                    <Icons.shuffle className="h-5 w-5 text-primary" />
+                </Button>
+            </div>
+        </div>
+    );
+});
+
+DesktopInfiniteCarousel.displayName = 'DesktopInfiniteCarousel';
+
+/**
+ * MobileCardCarousel - Isolated component for mobile carousel.
+ * 
+ * PERFORMANCE CRITICAL: Only this component consumes filter/sort context.
+ * The parent ResponsivePlaceCards does NOT consume context, so on desktop,
+ * sort/filter changes don't trigger parent re-renders at all.
+ * 
+ * This solves the performance issue where the entire tree re-rendered on sort change.
+ */
+interface MobileCardCarouselProps {
+    places: Place[];
+}
+
+const MobileCardCarousel = React.memo(function MobileCardCarousel({ places }: MobileCardCarouselProps) {
+    // Consume filter contexts - ONLY done here, not in parent
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
+    const { sortOption } = useSort();
+    // Defer sortOption to allow React to prioritize more urgent updates
+    const deferredSortOption = useDeferredValue(sortOption);
+    
+    const shuffleTimeout = useRef<number | null>(null);
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [mobileShuffledOrder, setMobileShuffledOrder] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
+    // Shuffle counter for stable key - only increments on explicit shuffle, not filter changes
+    const [shuffleCount, setShuffleCount] = useState<number>(0);
 
-    // Apply quick text filter + structured filters + sorting to the incoming places prop
+    // Apply quick text filter + structured filters + sorting
     const filteredPlaces: Place[] = useMemo(() => {
         let data = places;
         if (quickFilterText.trim() !== "") {
@@ -42,26 +141,8 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         data = data.filter((place: any) => placeMatchesFilters(place, filters));
 
         // Sorting: featured-first, then user-selected sort
-        const sorted = [...data].sort((a: any, b: any) => {
-            // First priority: Featured places come first
-            if (a.featured !== b.featured) {
-                return b.featured ? 1 : -1; // featured first
-            }
-            // Apply user's selected sorting next
-            const { field, direction } = sortOption;
-            const valueA = a[field] || "";
-            const valueB = b[field] || "";
-            if (field === 'name') {
-                return direction === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
-            }
-            const dateA = new Date(valueA).getTime();
-            const dateB = new Date(valueB).getTime();
-            return direction === 'asc' ? dateA - dateB : dateB - dateA;
-        });
-        return sorted;
-    }, [places, filters, quickFilterText, sortOption]);
-
-    // Desktop ignores filters; we now want an initial random order each load (not fixed).
+        return sortPlaces(data, deferredSortOption);
+    }, [places, filters, quickFilterText, deferredSortOption]);
 
     // Generic Fisher-Yates shuffle for an index range
     const shuffleIndexes = useCallback((length: number) => {
@@ -73,105 +154,101 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         return arr;
     }, []);
 
-    const shuffleItems = useCallback(() => {
+    // Mobile shuffle handler
+    const shuffleMobileItems = useCallback(() => {
         if (shuffleTimeout.current) {
             clearTimeout(shuffleTimeout.current);
         }
         shuffleTimeout.current = window.setTimeout(() => {
-            // Desktop shuffle over full dataset
-            const newDesktop = shuffleIndexes(places.length);
-            setDesktopShuffledOrder(newDesktop);
-            // Mobile shuffle over current filtered dataset
             const newMobile = shuffleIndexes(filteredPlaces.length);
             setMobileShuffledOrder(newMobile);
-            // Ensure currentIndex valid for mobile set
             setCurrentIndex(idx => idx < newMobile.length ? idx : 0);
+            // Increment shuffle count to trigger carousel key change (forces Embla reInit)
+            setShuffleCount(c => c + 1);
         }, 0);
-    }, [shuffleIndexes, places.length, filteredPlaces.length]);
+    }, [shuffleIndexes, filteredPlaces.length]);
 
-    // Reinitialize desktop order when underlying data changes
-    useEffect(() => {
-        setIsLoading(true);
-        const initialize = () => {
-            // Initial load: random shuffle of all places
-            setDesktopShuffledOrder(shuffleIndexes(places.length));
-            setCurrentIndex(0);
-            setIsLoading(false);
-        };
-        initialize();
-    }, [shuffleIndexes, places.length]);
-
-    // Reinitialize mobile order whenever filteredPlaces changes (filters applied)
+    // Reinitialize mobile order whenever filteredPlaces changes
     useEffect(() => {
         setMobileShuffledOrder(Array.from({ length: filteredPlaces.length }, (_, i) => i));
         setCurrentIndex(0);
     }, [filteredPlaces]);
 
-    const handleItemsChange = () => { };
-
-    // Only render a limited number of cards in InfiniteMovingCards (desktop)
-    const VIRTUALIZED_CARD_COUNT = 100; // Show this many at a time for animation, adjust as needed
-    const visibleDesktopItems = useMemo(
-        () => desktopShuffledOrder.slice(0, VIRTUALIZED_CARD_COUNT).map(idx => places[idx]).filter(Boolean),
-        [desktopShuffledOrder, places]
+    // Memoize mobile carousel items to prevent new array reference on each render
+    const mobileCarouselItems = useMemo(
+        () => mobileShuffledOrder.map(i => filteredPlaces[i]).filter(Boolean),
+        [mobileShuffledOrder, filteredPlaces]
     );
 
     return (
-        <div className="relative overflow-hidden max-w-full">
+        <div
+            className="relative"
+            style={{ minHeight: 325 }}
+        >
             {isLoading && (
                 <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    <LoadingSpinner />
                 </div>
             )}
-
-            {/* Desktop Virtualized Carousel */}
-            <div className="hidden sm:block">
-                <InfiniteMovingCards
-                    items={visibleDesktopItems}
-                    direction="right"
-                    speed="450s"
-                    pauseOnHover={false}
-                    onItemsChange={handleItemsChange}
+            {!isLoading && filteredPlaces.length === 0 ? (
+                <FilteredEmptyState
+                    description="Adjust or reset your filters to see places in this discovery feed."
+                    fullHeight
                 />
-            </div>
-
-            {/* Mobile area: persistent height so button position is stable */}
-            <div
-                className="sm:hidden relative"
-                style={{ minHeight: 325 }}
-            >
-                {!isLoading && filteredPlaces.length === 0 ? (
-                    <FilteredEmptyState
-                        description="Adjust or reset your filters to see places in this discovery feed."
-                        fullHeight
+            ) : (
+                <>
+                    <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
+                        <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardCarousel
+                        key={shuffleCount}
+                        items={mobileCarouselItems}
+                        initialIndex={currentIndex}
+                        total={mobileShuffledOrder.length}
                     />
-                ) : (
-                    <>
-                        <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
-                            <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
-                        </div>
-                        <CardCarousel
-                            key={mobileShuffledOrder.join('-')}
-                            items={mobileShuffledOrder.map(i => filteredPlaces[i]).filter(Boolean)}
-                            initialIndex={currentIndex}
-                            total={mobileShuffledOrder.length}
-                        />
-                    </>
-                )}
-            </div>
-
-            {/* Shuffle Button: Always visible on desktop; on mobile only when there are filtered results */}
-            {(!isMobile || (filteredPlaces.length > 0 && !isLoading)) && (
+                </>
+            )}
+            {/* Mobile Shuffle Button - only when there are filtered results */}
+            {filteredPlaces.length > 0 && !isLoading && (
                 <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
                     <Button
                         className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
                         size="icon"
-                        onClick={shuffleItems}
+                        onClick={shuffleMobileItems}
                     >
                         <Icons.shuffle className="h-5 w-5 text-primary" />
                     </Button>
                 </div>
             )}
+        </div>
+    );
+});
+
+MobileCardCarousel.displayName = 'MobileCardCarousel';
+
+/**
+ * ResponsivePlaceCards - Container that renders appropriate carousel based on viewport.
+ * 
+ * PERFORMANCE CRITICAL: This component does NOT consume any filter/sort context.
+ * Each device-specific child component handles its own context consumption.
+ * This prevents unnecessary re-renders of the desktop carousel when mobile users
+ * change filters, and vice versa.
+ */
+export function ResponsivePlaceCards({ places }: { places: Place[] }) {
+    // Desktop shuffle is handled by DesktopInfiniteCarousel - this is just a no-op callback
+    const handleDesktopShuffle = useCallback(() => {}, []);
+
+    return (
+        <div className="relative overflow-hidden max-w-full">
+            {/* Desktop Virtualized Carousel - Isolated component that doesn't re-render on filter changes */}
+            <div className="hidden sm:block">
+                <DesktopInfiniteCarousel places={places} onShuffle={handleDesktopShuffle} />
+            </div>
+
+            {/* Mobile area: Uses MobileCardCarousel which consumes filter context */}
+            <div className="sm:hidden">
+                <MobileCardCarousel places={places} />
+            </div>
         </div>
     );
 }

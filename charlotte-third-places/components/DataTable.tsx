@@ -1,14 +1,71 @@
 "use client";
 
+import React from "react";
 import { PlaceCard } from "@/components/PlaceCard";
 import { FilteredEmptyState } from "@/components/FilteredEmptyState";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { SortField, SortDirection } from "@/lib/types";
-import { placeMatchesFilters } from "@/lib/filters";
+import { Place } from "@/lib/types";
+import { placeMatchesFilters, sortPlaces } from "@/lib/filters";
 import { useWindowWidth } from '@/hooks/useWindowWidth';
-import { FilterContext } from "@/contexts/FilterContext";
-import { useContext, useCallback, useState, useMemo, useEffect } from "react";
-import { FixedSizeList as List } from "react-window";
+import { useFilters, useQuickSearch, useSort } from "@/contexts/FilterContext";
+import { useCallback, useState, useMemo, useEffect, useRef } from "react";
+import { useVirtualizer, VirtualItem } from "@tanstack/react-virtual";
+
+// Virtualization row height: card height + gap between rows
+const ROW_HEIGHT = 219;
+
+/**
+ * Memoized row component for virtualized grid.
+ * Compares by first place recordId to skip re-render when row content is unchanged.
+ * This is critical for performance - prevents React from re-rendering all cards
+ * when only the row position changes.
+ */
+interface VirtualizedRowProps {
+    virtualRow: VirtualItem;
+    group: Place[];
+}
+
+const VirtualizedRow = React.memo(function VirtualizedRow({ virtualRow, group }: VirtualizedRowProps) {
+    return (
+        <div
+            data-index={virtualRow.index}
+            style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: `${virtualRow.size}px`,
+                transform: `translateY(${virtualRow.start}px)`,
+            }}
+        >
+            <div className="flex flex-wrap -mx-2">
+                {group.map((place: Place, idx: number) => (
+                    <div
+                        key={place.recordId || idx}
+                        className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4"
+                    >
+                        <PlaceCard place={place} />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}, (prevProps, nextProps) => {
+    // Custom comparator: skip re-render if same places in same positions
+    const prevGroup = prevProps.group;
+    const nextGroup = nextProps.group;
+    
+    if (prevGroup.length !== nextGroup.length) return false;
+    if (prevGroup.length === 0) return true;
+    
+    // Compare all recordIds to catch any reordering or middle-item changes
+    // This is safe because groups are small (typically 2-5 items per row)
+    for (let i = 0; i < prevGroup.length; i++) {
+        if (prevGroup[i]?.recordId !== nextGroup[i]?.recordId) return false;
+    }
+    return true;
+});
 
 interface DataTableProps {
     rowData: Array<object>;
@@ -23,7 +80,14 @@ interface DataTableProps {
 
 export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
     const [isLoading, setIsLoading] = useState(true);
-    const { filters, quickFilterText, sortOption } = useContext(FilterContext);
+    // Consume granular contexts for optimal render performance
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
+    const { sortOption } = useSort();
+
+    // Track sorting state for UI overlay (opacity dim during sort)
+    const [isSorting, setIsSorting] = useState(false);
+    const prevSortOption = useRef(sortOption);
 
     useEffect(() => {
         const timeout = setTimeout(() => setIsLoading(false), 500);
@@ -33,36 +97,6 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
     const applyFilters = useCallback(
         (data: any[]) => data.filter((place: any) => placeMatchesFilters(place, filters as any)),
         [filters]
-    );
-
-    const applySorting = useCallback(
-        (data: any[]) => {
-            return [...data].sort((a: any, b: any) => {
-                // First priority: Featured places come first
-                if (a.featured !== b.featured) {
-                    return b.featured ? 1 : -1; // featured places (true) come before non-featured (false)
-                }
-
-                // Apply user's selected sorting next
-                const { field, direction } = sortOption;
-
-                // Compare values based on the selected sort field (name, createdDate, lastModifiedDate)
-                const valueA = a[field] || "";
-                const valueB = b[field] || "";
-
-                if (field === SortField.Name) {
-                    return direction === SortDirection.Ascending
-                        ? valueA.localeCompare(valueB)
-                        : valueB.localeCompare(valueA);
-                }
-
-                // For date fields, compare as dates
-                const dateA = new Date(valueA).getTime();
-                const dateB = new Date(valueB).getTime();
-                return direction === SortDirection.Ascending ? dateA - dateB : dateB - dateA;
-            });
-        },
-        [sortOption]
     );
 
     const windowWidth = useWindowWidth();
@@ -77,80 +111,122 @@ export function DataTable({ rowData, onFilteredCountChange }: DataTableProps) {
         return 1; // Anything smaller than lg, 1 column, 1 card per row
     }, [windowWidth]);
 
-    const filteredAndGroupedRowData = useMemo(() => {
-        let filteredData = rowData;
+    // Step 1: Filter and sort data synchronously, preserving object references
+    // Critical: sortPlaces returns the original Place objects, not copies.
+    // This allows React.memo's identity check to skip re-renders for unchanged places.
+    const filteredAndSortedData = useMemo(() => {
+        let data = rowData as Place[];
         if (quickFilterText.trim() !== "") {
             const lowerCaseFilter = normalizeTextForSearch(quickFilterText);
-            filteredData = filteredData.filter((place: any) =>
+            data = data.filter((place) =>
                 normalizeTextForSearch(place.name || '').includes(lowerCaseFilter)
             );
         }
+        const filtered = applyFilters(data) as Place[];
+        return sortPlaces(filtered, sortOption);
+    }, [rowData, quickFilterText, applyFilters, sortOption]);
 
-        filteredData = applyFilters(filteredData);
-        // Apply sorting to the filtered data
-        filteredData = applySorting(filteredData);
+    // Show sorting overlay when sort option changes
+    useEffect(() => {
+        if (prevSortOption.current !== sortOption) {
+            setIsSorting(true);
+            prevSortOption.current = sortOption;
+            // Clear overlay after a brief delay to show visual feedback
+            const timeout = setTimeout(() => setIsSorting(false), 100);
+            return () => clearTimeout(timeout);
+        }
+    }, [sortOption]);
 
+    // Step 2: Use sorted data directly
+    const displayData = filteredAndSortedData;
+    const filteredCount = displayData.length;
+
+    // Step 3: Group data for virtualization
+    const filteredAndGroupedRowData = useMemo(() => {
         const grouped = [];
-        for (let i = 0; i < filteredData.length; i += columnsPerRow) {
-            const group = filteredData.slice(i, i + columnsPerRow);
+        for (let i = 0; i < displayData.length; i += columnsPerRow) {
+            const group = displayData.slice(i, i + columnsPerRow);
             grouped.push({ group });
         }
-        // Notify parent about the current filtered count (after all transformations)
-        const count = filteredData.length;
-        // Defer notification until after initial loading state clears; parent handles own state guard.
-        Promise.resolve().then(() => {
-            if (!isLoading) {
-                onFilteredCountChange?.(count);
-            }
-        });
         return grouped;
-    }, [rowData, quickFilterText, applyFilters, applySorting, columnsPerRow, onFilteredCountChange, isLoading]);
+    }, [displayData, columnsPerRow]);
 
-    // Virtualization sizes must include spacing because children margins don't affect
-    // react-window's absolute positioning. Reserve a small, explicit gap per row.
-    const getRowHeight = useCallback(() => {
-        const CARD_HEIGHT = 215;
-        const ROW_GAP = 4;
-        return CARD_HEIGHT + ROW_GAP;
-    }, []);
+    // Notify parent about filtered count in a separate effect (not inside useMemo)
+    // This follows React rules - side effects belong in useEffect, not useMemo
+    useEffect(() => {
+        if (!isLoading) {
+            onFilteredCountChange?.(filteredCount);
+        }
+    }, [filteredCount, isLoading, onFilteredCountChange]);
 
-    // Virtualized Row Renderer for react-window
-    const Row = ({ index, style }: { index: number; style: React.CSSProperties }) => {
-        const { group } = filteredAndGroupedRowData[index];
-        return (
-            <div style={style}>
-                <div className="flex flex-wrap -mx-2">
-                    {group.map((place: any, idx: number) => (
-                        <div key={idx} className="w-full lg:w-1/2 3xl:w-1/3 4xl:w-1/4 5xl:w-1/5 px-2 mb-4">
-                            <PlaceCard place={place} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-        );
-    };
+    // NOTE: We intentionally access filteredAndGroupedRowData directly in the virtualizer
+    // render loop below, rather than through a ref. Using a ref with useEffect caused a
+    // race condition where stale/unfiltered data was displayed for one frame because
+    // useEffect runs after paint. The useMemo result is already stable during render,
+    // so direct access is both correct and simpler.
+
+    // Scroll container ref for TanStack Virtual
+    const scrollContainerRef = useRef<HTMLDivElement>(null);
+
+    // TanStack Virtual virtualizer
+    const virtualizer = useVirtualizer({
+        count: filteredAndGroupedRowData.length,
+        getScrollElement: () => scrollContainerRef.current,
+        estimateSize: () => ROW_HEIGHT,
+        overscan: 3,
+    });
 
     return (
         <div className="relative flex-1 w-full overflow-visible">
+            {/* Initial loading state */}
             {isLoading && (
                 <div className="mt-16 absolute inset-0 flex items-center justify-center bg-background z-10">
-                    <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+                    <LoadingSpinner />
                 </div>
+            )}
+            {/* Sorting overlay - shows previous results with opacity while worker sorts */}
+            {!isLoading && isSorting && (
+                <div className="absolute inset-0 bg-background/50 z-10 pointer-events-none" />
             )}
             {!isLoading && filteredAndGroupedRowData.length === 0 && (
                 <FilteredEmptyState />
             )}
-            <div className={`w-full ${isLoading ? "opacity-0" : ""} ${(!isLoading && filteredAndGroupedRowData.length === 0) ? "hidden" : ""}`} style={{ overflow: "visible" }}>
+            <div
+                className={`w-full ${isLoading ? "opacity-0" : ""} ${(!isLoading && filteredAndGroupedRowData.length === 0) ? "hidden" : ""}`}
+                style={{ overflow: "visible" }}
+            >
                 {filteredAndGroupedRowData.length > 0 && (
-                    <List
-                        height={filteredAndGroupedRowData.length * getRowHeight()}
-                        itemCount={filteredAndGroupedRowData.length}
-                        itemSize={getRowHeight()}
-                        width={"100%"}
-                        style={{ overflow: "visible" }}
+                    <div
+                        ref={scrollContainerRef}
+                        style={{
+                            height: filteredAndGroupedRowData.length * ROW_HEIGHT,
+                            width: "100%",
+                            overflow: "visible",
+                        }}
                     >
-                        {Row}
-                    </List>
+                        <div
+                            style={{
+                                height: virtualizer.getTotalSize(),
+                                width: "100%",
+                                position: "relative",
+                                overflow: "visible",
+                            }}
+                        >
+                            {virtualizer.getVirtualItems().map((virtualRow) => {
+                                // Bounds check: virtualizer may have stale items during transition
+                                const rowData = filteredAndGroupedRowData[virtualRow.index];
+                                if (!rowData) return null;
+                                const { group } = rowData;
+                                return (
+                                    <VirtualizedRow
+                                        key={virtualRow.key}
+                                        virtualRow={virtualRow}
+                                        group={group}
+                                    />
+                                );
+                            })}
+                        </div>
+                    </div>
                 )}
             </div>
         </div>

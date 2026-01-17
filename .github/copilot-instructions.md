@@ -81,8 +81,11 @@
 
 * ESLint configuration extends `next/core-web-vitals`
 * TypeScript strict mode enabled
-* No formal test suite currently implemented
-* Manual testing preferred for UI changes
+* **Testing infrastructure**: See [docs/testing.md](../docs/testing.md) for complete testing guide
+* **Before running any tests**, read the testing guide to understand which commands to use:
+  - `npm run test:unit` — Unit tests (no server needed)
+  - `npm run test:e2e` — E2E tests (starts server automatically via start-server-and-test)
+  - `npm test` — Runs both with automatic server management
 
 ## Technical Specifications
 

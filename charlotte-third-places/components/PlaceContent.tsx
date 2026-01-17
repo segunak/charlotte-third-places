@@ -8,7 +8,7 @@ import { ShareButton } from "@/components/ShareButton";
 import { QuickFacts } from "@/components/QuickFacts";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { RichTextSection } from "@/components/RichTextSection";
-import { useModalContext } from "@/contexts/ModalContext";
+import { useModalActions } from "@/contexts/ModalContext";
 import { FC, useMemo } from "react";
 
 interface PlaceContentProps {
@@ -26,7 +26,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
     showPhotosButton = true,
     onAskAI
 }) => {
-    const { showPlacePhotos } = useModalContext();
+    const { showPlacePhotos } = useModalActions();
 
     const shareUrl = useMemo(() => {
         // SSR safety: if `window` is undefined, fallback

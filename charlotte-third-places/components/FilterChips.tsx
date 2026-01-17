@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useContext, useCallback } from "react";
+import React, { useCallback } from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
-import { FilterContext } from "@/contexts/FilterContext";
+import { useFilters, useFilterData } from "@/contexts/FilterContext";
 import { FILTER_SENTINEL } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
 
@@ -13,8 +13,9 @@ interface FilterChipsProps {
     label: string;
 }
 
-export function FilterChips({ field, value, label }: FilterChipsProps) {
-    const { setFilters, getDistinctValues } = useContext(FilterContext);
+export const FilterChips = React.memo(function FilterChips({ field, value, label }: FilterChipsProps) {
+    const { setFilters } = useFilters();
+    const { getDistinctValues } = useFilterData();
     const options = getDistinctValues(field);
 
     const handleChipClick = useCallback(
@@ -55,4 +56,6 @@ export function FilterChips({ field, value, label }: FilterChipsProps) {
             })}
         </div>
     );
-}
+});
+
+FilterChips.displayName = "FilterChips";
