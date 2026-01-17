@@ -11,8 +11,15 @@ interface FilterSidebarProps {
 
 export const FilterSidebar = React.memo(function FilterSidebar({ className = "" }: FilterSidebarProps) {
     const { filters } = useFilters();
-    // Active filter count excludes fields still at the 'all' sentinel (meaning no constraint)
-    const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
+    // Active filter count excludes fields with no constraint:
+    // - Single-select: value === 'all' sentinel
+    // - Multi-select: value is empty array []
+    const activeFilterCount = Object.values(filters).filter((filter) => {
+        if (Array.isArray(filter.value)) {
+            return filter.value.length > 0;
+        }
+        return filter.value !== FILTER_SENTINEL;
+    }).length;
     // Track open state for all selects
     const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
 
@@ -42,6 +49,7 @@ export const FilterSidebar = React.memo(function FilterSidebar({ className = "" 
                         label={config.label}
                         placeholder={config.placeholder}
                         predefinedOrder={config.predefinedOrder}
+                        matchMode={config.matchMode}
                         onDropdownOpenChange={handleDropdownStateChange}
                     />
                 );

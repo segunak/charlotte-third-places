@@ -1,8 +1,50 @@
 "use client";
 
-import { createContext, useState, useCallback, useMemo, useContext, ReactNode } from "react";
+import { createContext, useCallback, useMemo, useContext, ReactNode, useReducer } from "react";
 import { DEFAULT_SORT_OPTION, SortOption } from "@/lib/types";
 import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey } from "@/lib/filters";
+
+// ============================================================================
+// CONSOLIDATED REDUCER - Single state update for atomic operations
+// ============================================================================
+
+interface FilterState {
+    filters: FilterConfig;
+    quickFilterText: string;
+    sortOption: SortOption;
+}
+
+type FilterAction =
+    | { type: 'SET_FILTERS'; payload: FilterConfig | ((prev: FilterConfig) => FilterConfig) }
+    | { type: 'SET_QUICK_SEARCH'; payload: string }
+    | { type: 'SET_SORT'; payload: SortOption }
+    | { type: 'RESET_ALL' };
+
+const initialState: FilterState = {
+    filters: DEFAULT_FILTER_CONFIG,
+    quickFilterText: "",
+    sortOption: DEFAULT_SORT_OPTION,
+};
+
+function filterReducer(state: FilterState, action: FilterAction): FilterState {
+    switch (action.type) {
+        case 'SET_FILTERS':
+            return {
+                ...state,
+                filters: typeof action.payload === 'function'
+                    ? action.payload(state.filters)
+                    : action.payload,
+            };
+        case 'SET_QUICK_SEARCH':
+            return { ...state, quickFilterText: action.payload };
+        case 'SET_SORT':
+            return { ...state, sortOption: action.payload };
+        case 'RESET_ALL':
+            return initialState;
+        default:
+            return state;
+    }
+}
 
 // ============================================================================
 // GRANULAR CONTEXTS - Use these for optimal performance
@@ -40,7 +82,7 @@ export const FiltersContext = createContext<FiltersContextType>({
  */
 interface QuickSearchContextType {
     quickFilterText: string;
-    setQuickFilterText: React.Dispatch<React.SetStateAction<string>>;
+    setQuickFilterText: (value: string) => void;
 }
 
 export const QuickSearchContext = createContext<QuickSearchContextType>({
@@ -54,7 +96,7 @@ export const QuickSearchContext = createContext<QuickSearchContextType>({
  */
 interface SortContextType {
     sortOption: SortOption;
-    setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
+    setSortOption: (value: SortOption) => void;
 }
 
 export const SortContext = createContext<SortContextType>({
@@ -79,28 +121,19 @@ export const useQuickSearch = () => useContext(QuickSearchContext);
 export const useSort = () => useContext(SortContext);
 
 // ============================================================================
-// LEGACY CONTEXT - Combines all for backward compatibility
+// ACTIONS CONTEXT - Single dispatch for atomic operations
 // ============================================================================
 
-interface FilterContextType {
-    filters: FilterConfig;
-    setFilters: React.Dispatch<React.SetStateAction<FilterConfig>>;
-    quickFilterText: string;
-    setQuickFilterText: React.Dispatch<React.SetStateAction<string>>;
-    getDistinctValues: (field: FilterKey) => string[];
-    sortOption: SortOption;
-    setSortOption: React.Dispatch<React.SetStateAction<SortOption>>;
+interface FilterActionsContextType {
+    resetAll: () => void;
 }
 
-export const FilterContext = createContext<FilterContextType>({
-    filters: DEFAULT_FILTER_CONFIG,
-    setFilters: () => { },
-    quickFilterText: "",
-    setQuickFilterText: () => { },
-    getDistinctValues: () => [],
-    sortOption: DEFAULT_SORT_OPTION,
-    setSortOption: () => { },
+export const FilterActionsContext = createContext<FilterActionsContextType>({
+    resetAll: () => { },
 });
+
+/** Hook for components that need filter actions (reset, etc.) */
+export const useFilterActions = () => useContext(FilterActionsContext);
 
 // ============================================================================
 // PROVIDER COMPONENT - Nests all granular providers
@@ -119,10 +152,35 @@ export const FilterProvider = ({
     children: ReactNode;
     places: Array<any>;
 }) => {
-    // Basic states - each in its own provider for granular updates
-    const [quickFilterText, setQuickFilterText] = useState<string>("");
-    const [filters, setFilters] = useState<FilterConfig>(DEFAULT_FILTER_CONFIG);
-    const [sortOption, setSortOption] = useState<SortOption>(DEFAULT_SORT_OPTION);
+    // Consolidated state using reducer - single update for atomic operations like reset
+    const [state, dispatch] = useReducer(filterReducer, initialState);
+    const { filters, quickFilterText, sortOption } = state;
+
+    // Stable setter functions that wrap dispatch for backward compatibility with granular contexts
+    const setFilters = useCallback(
+        (value: FilterConfig | ((prev: FilterConfig) => FilterConfig)) => {
+            dispatch({ type: 'SET_FILTERS', payload: value });
+        },
+        []
+    );
+
+    const setQuickFilterText = useCallback(
+        (value: string) => {
+            dispatch({ type: 'SET_QUICK_SEARCH', payload: value });
+        },
+        []
+    );
+
+    const setSortOption = useCallback(
+        (value: SortOption) => {
+            dispatch({ type: 'SET_SORT', payload: value });
+        },
+        []
+    );
+
+    const resetAll = useCallback(() => {
+        dispatch({ type: 'RESET_ALL' });
+    }, []);
 
     // Pre-compute distinct values for ALL filter fields once when places change.
     // This eliminates repeated computation on every filter interaction (was causing 536-824ms INP).
@@ -176,43 +234,34 @@ export const FilterProvider = ({
 
     const filtersValue = useMemo(
         () => ({ filters, setFilters }),
-        [filters]
+        [filters, setFilters]
     );
 
     const quickSearchValue = useMemo(
         () => ({ quickFilterText, setQuickFilterText }),
-        [quickFilterText]
+        [quickFilterText, setQuickFilterText]
     );
 
     const sortValue = useMemo(
         () => ({ sortOption, setSortOption }),
-        [sortOption]
+        [sortOption, setSortOption]
     );
 
-    // Legacy combined context value for backward compatibility
-    const legacyContextValue = useMemo(
-        () => ({
-            filters,
-            setFilters,
-            quickFilterText,
-            setQuickFilterText,
-            getDistinctValues,
-            sortOption,
-            setSortOption,
-        }),
-        [filters, quickFilterText, getDistinctValues, sortOption]
+    const actionsValue = useMemo(
+        () => ({ resetAll }),
+        [resetAll]
     );
 
-    // Nesting order (outermost to innermost): FilterDataContext → FiltersContext → QuickSearchContext → SortContext
+    // Nesting order (outermost to innermost): FilterDataContext → FiltersContext → QuickSearchContext → SortContext → ActionsContext
     // This puts the least-frequently-changing context outermost.
     return (
         <FilterDataContext.Provider value={filterDataValue}>
             <FiltersContext.Provider value={filtersValue}>
                 <QuickSearchContext.Provider value={quickSearchValue}>
                     <SortContext.Provider value={sortValue}>
-                        <FilterContext.Provider value={legacyContextValue}>
+                        <FilterActionsContext.Provider value={actionsValue}>
                             {children}
-                        </FilterContext.Provider>
+                        </FilterActionsContext.Provider>
                     </SortContext.Provider>
                 </QuickSearchContext.Provider>
             </FiltersContext.Provider>

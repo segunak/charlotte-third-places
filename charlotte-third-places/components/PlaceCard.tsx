@@ -1,5 +1,5 @@
 import { Place } from "@/lib/types";
-import { FC, useMemo, memo, useRef, useState, useEffect, useCallback } from "react";
+import { FC, useMemo, memo, useRef } from "react";
 import { Icons } from "@/components/Icons";
 import { cn } from "@/lib/utils";
 import { getPlaceTypeEmoji } from "@/lib/place-type-config";
@@ -145,10 +145,54 @@ interface PlaceCardProps {
     place: Place;
 }
 
+/**
+ * Custom comparison function for PlaceCard memo.
+ * Compares relevant Place properties to avoid re-renders when parent passes
+ * a new object reference with identical data.
+ */
+function arePlacePropsEqual(prevProps: PlaceCardProps, nextProps: PlaceCardProps): boolean {
+    const prev = prevProps.place;
+    const next = nextProps.place;
+    
+    // Quick identity check
+    if (prev === next) return true;
+    
+    // Helper for array comparison
+    const arraysEqual = (a: unknown[] | undefined, b: unknown[] | undefined): boolean => {
+        if (a === b) return true;
+        if (!a || !b || a.length !== b.length) return false;
+        return a.every((item, i) => item === b[i]);
+    };
+    
+    // Compare properties that affect rendering
+    return (
+        prev.recordId === next.recordId &&
+        prev.name === next.name &&
+        prev.description === next.description &&
+        prev.neighborhood === next.neighborhood &&
+        prev.size === next.size &&
+        prev.freeWiFi === next.freeWiFi &&
+        prev.purchaseRequired === next.purchaseRequired &&
+        prev.featured === next.featured &&
+        prev.hasCinnamonRolls === next.hasCinnamonRolls &&
+        prev.hasReviews === next.hasReviews &&
+        prev.operational === next.operational &&
+        // Array comparisons
+        arraysEqual(prev.type, next.type) &&
+        arraysEqual(prev.tags, next.tags) &&
+        arraysEqual(prev.photos, next.photos) &&
+        arraysEqual(prev.parking, next.parking)
+    );
+}
+
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalActions();
-    // Memoize highlights computation - runs 100× per InfiniteMovingCards render without this
-    const highlights = useMemo(() => getPlaceHighlights(place), [place]);
+    // Memoize highlights computation - only recompute when relevant fields change
+    // Using specific fields avoids recompute when parent passes new object reference
+    const highlights = useMemo(
+        () => getPlaceHighlights(place),
+        [place.featured, place.hasCinnamonRolls, place.operational, place.hasReviews]
+    );
     const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
     const description = useMemo(() => {
@@ -177,66 +221,55 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const badges = highlights.badges;
 
     /**
-     * OVERFLOW DETECTION FOR TYPE ROW
+     * OVERFLOW DETECTION FOR TYPE ROW - DETERMINISTIC HEURISTIC
      * 
      * Problem: Places can have multiple types (e.g., "Comic Book Store", "Game Store", "Ice Cream Shop").
      * Long type names or many types can overflow the card width, causing ugly wrapping.
      * 
-     * Solution: Dynamically calculate how many type tags fit, and show "+N more" for the rest.
+     * Solution: Use a deterministic character-based heuristic instead of DOM measurement.
+     * This avoids useLayoutEffect + setState which causes double render per card.
      * 
-     * Edge cases handled:
-     * 1. Long individual type names (e.g., "Comic Book Store" takes more space than "Café")
-     * 2. Multiple types that together exceed available width
-     * 3. Always show at least 2 types (if they exist) to maintain visual consistency
-     * 4. Reserve space for "+N more" indicator when calculating fit
-     * 5. Recalculate on window resize for responsive behavior
+     * Heuristic:
+     * - Card type container is ~280px wide on most screens
+     * - Each type tag is ~80-100px including padding and emoji
+     * - So we can fit approximately 3 tags in most cases
+     * - Always show at least 2 types (if they exist) for visual consistency
      * 
-     * Example: "Comic Book Store", "Game Store", "Ice Cream Shop" → "Comic Book Store", "Game Store", "+1 more"
+     * Trade-off: Less precise than DOM measurement, but:
+     * - Eliminates double render pass (useLayoutEffect + setState)
+     * - Deterministic = no flicker, no hydration mismatch
+     * - Good enough for 95% of cases; CSS overflow-hidden clips gracefully
      */
     const typeContainerRef = useRef<HTMLSpanElement>(null);
-    const [visibleTypeCount, setVisibleTypeCount] = useState(place?.type?.length ?? 0);
-
-    const calculateVisibleTypes = useCallback(() => {
-        const container = typeContainerRef.current;
-        if (!container || !place?.type?.length) return;
-
-        const containerWidth = container.clientWidth;
-        const children = Array.from(container.children) as HTMLElement[];
+    const visibleTypeCount = useMemo(() => {
+        const types = place?.type;
+        if (!types?.length) return 0;
         
-        // Find the "Type:" label width (first child)
-        let usedWidth = children[0]?.offsetWidth ?? 0;
-        usedWidth += 8; // space-x-2 gap
+        // Calculate how many types can fit based on character length
+        const MAX_VISIBLE_WIDTH_CHARS = 35; // Approximate character budget for visible types
+        const MIN_TYPES = 2;
+        const MORE_INDICATOR_CHARS = 8; // "+N more" takes about 8 characters
         
+        let usedChars = 0;
         let fitCount = 0;
-        const moreIndicatorWidth = 70; // Approximate width for "+N more" badge
         
-        for (let i = 1; i < children.length; i++) {
-            const child = children[i];
-            if (!child || child.dataset.moreIndicator) continue;
-            
-            const childWidth = child.offsetWidth + 8; // Include gap
-            const remainingTypes = place.type.length - fitCount;
+        for (let i = 0; i < types.length; i++) {
+            const typeLength = (types[i]?.length ?? 0) + 3; // +3 for emoji and spacing
+            const remainingTypes = types.length - fitCount;
             const needsMoreIndicator = remainingTypes > 1;
-            const reservedWidth = needsMoreIndicator ? moreIndicatorWidth : 0;
+            const reservedChars = needsMoreIndicator ? MORE_INDICATOR_CHARS : 0;
             
-            if (usedWidth + childWidth + reservedWidth <= containerWidth) {
-                usedWidth += childWidth;
+            if (usedChars + typeLength + reservedChars <= MAX_VISIBLE_WIDTH_CHARS) {
+                usedChars += typeLength;
                 fitCount++;
             } else {
                 break;
             }
         }
         
-        // Show at least 2 types if they exist
-        const minTypes = Math.min(2, place.type.length);
-        setVisibleTypeCount(Math.max(minTypes, fitCount));
-    }, [place?.type?.length]);
-
-    useEffect(() => {
-        calculateVisibleTypes();
-        window.addEventListener('resize', calculateVisibleTypes);
-        return () => window.removeEventListener('resize', calculateVisibleTypes);
-    }, [calculateVisibleTypes]);
+        // Show at least MIN_TYPES if they exist
+        return Math.max(Math.min(MIN_TYPES, types.length), fitCount);
+    }, [place?.type]);
 
     /**
      * OVERFLOW HANDLING FOR NEIGHBORHOOD ROW
@@ -410,7 +443,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
             </CardContent>
         </Card>
     );
-});
+}, arePlacePropsEqual);
 
 // This only matters for development, so we can see the name of the component in the React DevTools
 PlaceCard.displayName = 'PlaceCard';

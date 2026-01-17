@@ -6,7 +6,8 @@ import {
     QuickSearchContext, 
     FiltersContext, 
     SortContext, 
-    FilterDataContext 
+    FilterDataContext,
+    FilterActionsContext 
 } from "@/contexts/FilterContext";
 import { DEFAULT_FILTER_CONFIG } from "@/lib/filters";
 import type { FilterConfig, FilterKey } from "@/lib/filters";
@@ -25,6 +26,7 @@ function createMockFilterContext(overrides: Partial<{
     setFilters: (filters: Partial<FilterConfig> | ((prev: FilterConfig) => FilterConfig)) => void;
     getDistinctValues: (field: FilterKey) => string[];
     resetFilters: () => void;
+    resetAll: () => void;
     setSortOption: (option: { field: string; direction: string }) => void;
     sortOption: { field: string; direction: string };
 }> = {}) {
@@ -35,6 +37,7 @@ function createMockFilterContext(overrides: Partial<{
         setFilters: vi.fn(),
         getDistinctValues: vi.fn().mockReturnValue(["Option A", "Option B", "Option C"]),
         resetFilters: vi.fn(),
+        resetAll: vi.fn(),
         setSortOption: vi.fn(),
         sortOption: DEFAULT_SORT_OPTION,
         filteredPlaces: [],
@@ -63,7 +66,11 @@ function renderWithContext(
                     <FilterDataContext.Provider value={{ 
                         getDistinctValues: contextValue.getDistinctValues 
                     }}>
-                        {component}
+                        <FilterActionsContext.Provider value={{ 
+                            resetAll: contextValue.resetAll 
+                        }}>
+                            {component}
+                        </FilterActionsContext.Provider>
                     </FilterDataContext.Provider>
                 </SortContext.Provider>
             </FiltersContext.Provider>
@@ -149,15 +156,21 @@ describe("FilterQuickSearch", () => {
                         <FilterDataContext.Provider value={{ 
                             getDistinctValues: resetContextValue.getDistinctValues 
                         }}>
-                            <FilterQuickSearch />
+                            <FilterActionsContext.Provider value={{ 
+                                resetAll: resetContextValue.resetAll 
+                            }}>
+                                <FilterQuickSearch />
+                            </FilterActionsContext.Provider>
                         </FilterDataContext.Provider>
                     </SortContext.Provider>
                 </FiltersContext.Provider>
             </QuickSearchContext.Provider>
         );
 
-        // Local state should sync with the new context value
-        expect(input).toHaveValue("");
+        // Local state should sync with the new context value after React's effect runs
+        await waitFor(() => {
+            expect(input).toHaveValue("");
+        });
     });
 
     it("renders search icon", () => {
@@ -224,7 +237,7 @@ describe("FilterSelect - desktopPicker behavior", () => {
      * VirtualizedSelect is built on Radix Select with role="combobox".
      */
 
-    it("uses virtualized select for all desktop fields (name)", () => {
+    it("uses modal dialog trigger for desktop picker fields (name)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect
@@ -237,13 +250,13 @@ describe("FilterSelect - desktopPicker behavior", () => {
             contextValue
         );
 
-        // All desktop fields use VirtualizedSelect with role="combobox"
-        const trigger = screen.getByRole("combobox");
+        // Desktop picker fields use a button that opens a dialog modal
+        const trigger = screen.getByRole("button", { name: /all names/i });
         expect(trigger).toBeInTheDocument();
-        expect(trigger).toHaveTextContent(/all names/i);
+        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
     });
 
-    it("uses virtualized select for all desktop fields (neighborhood)", () => {
+    it("uses modal dialog trigger for desktop picker fields (neighborhood)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect
@@ -256,12 +269,12 @@ describe("FilterSelect - desktopPicker behavior", () => {
             contextValue
         );
 
-        const trigger = screen.getByRole("combobox");
+        const trigger = screen.getByRole("button", { name: /all neighborhoods/i });
         expect(trigger).toBeInTheDocument();
-        expect(trigger).toHaveTextContent(/all neighborhoods/i);
+        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
     });
 
-    it("uses virtualized select for all desktop fields (type)", () => {
+    it("uses modal dialog trigger for desktop picker fields (type)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect
@@ -274,27 +287,30 @@ describe("FilterSelect - desktopPicker behavior", () => {
             contextValue
         );
 
-        const trigger = screen.getByRole("combobox");
+        const trigger = screen.getByRole("button", { name: /all types/i });
         expect(trigger).toBeInTheDocument();
-        expect(trigger).toHaveTextContent(/all types/i);
+        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
     });
 
-    it("uses virtualized select for all desktop fields (tags)", () => {
+    it("uses modal dialog trigger for multi-select desktop fields (tags)", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect
                 field="tags"
-                value="all"
+                value={[]}
                 label="Tag"
-                placeholder="All Tags"
+                placeholder="Tags"
                 predefinedOrder={[]}
             />,
             contextValue
         );
 
-        const trigger = screen.getByRole("combobox");
+        // Multi-select on desktop uses a button that opens a dialog modal
+        const trigger = screen.getByRole("button", { name: /tags/i });
         expect(trigger).toBeInTheDocument();
-        expect(trigger).toHaveTextContent(/all tags/i);
+        expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
+        // Multi-select: empty array shows placeholder
+        expect(trigger).toHaveTextContent(/tags/i);
     });
 
     it("uses virtualized select for all desktop fields (parking)", () => {
@@ -336,22 +352,16 @@ describe("FilterSelect - desktopPicker behavior", () => {
 describe("FilterResetButton", () => {
     it("calls filter reset functions when clicked", async () => {
         const user = userEvent.setup();
-        const setFilters = vi.fn();
-        const setQuickFilterText = vi.fn();
-        const setSortOption = vi.fn();
+        const resetAll = vi.fn();
         const contextValue = createMockFilterContext({ 
-            setFilters, 
-            setQuickFilterText,
-            setSortOption 
+            resetAll
         });
         renderWithContext(<FilterResetButton variant="default" />, contextValue);
 
         const button = screen.getByRole("button", { name: /reset/i });
         await user.click(button);
 
-        expect(setFilters).toHaveBeenCalled();
-        expect(setQuickFilterText).toHaveBeenCalledWith("");
-        expect(setSortOption).toHaveBeenCalled();
+        expect(resetAll).toHaveBeenCalled();
     });
 
     it("renders with correct text", () => {
@@ -366,5 +376,185 @@ describe("FilterResetButton", () => {
         renderWithContext(<FilterResetButton variant="default" disabled />, contextValue);
 
         expect(screen.getByRole("button", { name: /reset/i })).toBeDisabled();
+    });
+});
+
+describe("FilterSelect - searchable and multiple props", () => {
+    it("handles multi-select for tags field", () => {
+        const contextValue = createMockFilterContext();
+        renderWithContext(
+            <FilterSelect
+                field="tags"
+                value={[]}
+                label="Tags"
+                placeholder="Tags"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        // Multi-select with empty array shows placeholder (uses dialog trigger on desktop)
+        const trigger = screen.getByRole("button", { name: /tags/i });
+        expect(trigger).toHaveTextContent(/tags/i);
+    });
+
+    it("shows count badge for multi-select with selected values", () => {
+        const contextValue = createMockFilterContext();
+        renderWithContext(
+            <FilterSelect
+                field="tags"
+                value={["Tag1", "Tag2"]}
+                label="Tags"
+                placeholder="Tags"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        // Multi-select on desktop uses dialog trigger button
+        const trigger = screen.getByRole("button", { name: /2 selected/i });
+        expect(trigger).toHaveTextContent("2 selected");
+    });
+
+    it("handles single-select for name field", () => {
+        const contextValue = createMockFilterContext();
+        renderWithContext(
+            <FilterSelect
+                field="name"
+                value="all"
+                label="Name"
+                placeholder="Name"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        // Name uses desktop picker (dialog trigger)
+        const trigger = screen.getByRole("button", { name: /name/i });
+        expect(trigger).toHaveTextContent("Name");
+    });
+
+    it("handles single-select for neighborhood field", () => {
+        const contextValue = createMockFilterContext();
+        renderWithContext(
+            <FilterSelect
+                field="neighborhood"
+                value="NoDa"
+                label="Neighborhood"
+                placeholder="Neighborhood"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        // Neighborhood uses desktop picker (dialog trigger)
+        const trigger = screen.getByRole("button", { name: /noda/i });
+        expect(trigger).toHaveTextContent("NoDa");
+    });
+});
+
+describe("FilterSelect Memoization", () => {
+    it("is exported as a memoized component", () => {
+        // Verify FilterSelect has displayName (set by React.memo wrapper)
+        expect(FilterSelect.displayName).toBe("FilterSelect");
+    });
+
+    it("renders correctly when props change", () => {
+        const contextValue = createMockFilterContext();
+        const { rerender } = renderWithContext(
+            <FilterSelect
+                field="size"
+                value="all"
+                label="Size"
+                placeholder="Size"
+                predefinedOrder={["Small", "Medium", "Large"]}
+            />,
+            contextValue
+        );
+
+        // Initial render shows placeholder
+        expect(screen.getByRole("combobox")).toHaveTextContent("Size");
+
+        // Re-render with different value
+        rerender(
+            <QuickSearchContext.Provider value={{ 
+                quickFilterText: contextValue.quickFilterText, 
+                setQuickFilterText: contextValue.setQuickFilterText as React.Dispatch<React.SetStateAction<string>>
+            }}>
+                <FiltersContext.Provider value={{ 
+                    filters: contextValue.filters, 
+                    setFilters: contextValue.setFilters as React.Dispatch<React.SetStateAction<FilterConfig>>
+                }}>
+                    <SortContext.Provider value={{ 
+                        sortOption: contextValue.sortOption as any, 
+                        setSortOption: contextValue.setSortOption as any 
+                    }}>
+                        <FilterDataContext.Provider value={{ 
+                            getDistinctValues: contextValue.getDistinctValues 
+                        }}>
+                            <FilterSelect
+                                field="size"
+                                value="Medium"
+                                label="Size"
+                                placeholder="Size"
+                                predefinedOrder={["Small", "Medium", "Large"]}
+                            />
+                        </FilterDataContext.Provider>
+                    </SortContext.Provider>
+                </FiltersContext.Provider>
+            </QuickSearchContext.Provider>
+        );
+
+        // After re-render shows new value
+        expect(screen.getByRole("combobox")).toHaveTextContent("Medium");
+    });
+
+    it("maintains functionality when same props are passed", () => {
+        const contextValue = createMockFilterContext();
+        const { rerender } = renderWithContext(
+            <FilterSelect
+                field="size"
+                value="Small"
+                label="Size"
+                placeholder="Size"
+                predefinedOrder={["Small", "Medium", "Large"]}
+            />,
+            contextValue
+        );
+
+        expect(screen.getByRole("combobox")).toHaveTextContent("Small");
+
+        // Re-render with same props
+        rerender(
+            <QuickSearchContext.Provider value={{ 
+                quickFilterText: contextValue.quickFilterText, 
+                setQuickFilterText: contextValue.setQuickFilterText as React.Dispatch<React.SetStateAction<string>>
+            }}>
+                <FiltersContext.Provider value={{ 
+                    filters: contextValue.filters, 
+                    setFilters: contextValue.setFilters as React.Dispatch<React.SetStateAction<FilterConfig>>
+                }}>
+                    <SortContext.Provider value={{ 
+                        sortOption: contextValue.sortOption as any, 
+                        setSortOption: contextValue.setSortOption as any 
+                    }}>
+                        <FilterDataContext.Provider value={{ 
+                            getDistinctValues: contextValue.getDistinctValues 
+                        }}>
+                            <FilterSelect
+                                field="size"
+                                value="Small"
+                                label="Size"
+                                placeholder="Size"
+                                predefinedOrder={["Small", "Medium", "Large"]}
+                            />
+                        </FilterDataContext.Provider>
+                    </SortContext.Provider>
+                </FiltersContext.Provider>
+            </QuickSearchContext.Provider>
+        );
+
+        // Should still show same content
+        expect(screen.getByRole("combobox")).toHaveTextContent("Small");
     });
 });

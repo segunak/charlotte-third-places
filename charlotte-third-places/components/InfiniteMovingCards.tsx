@@ -95,9 +95,9 @@ export const InfiniteMovingCards = React.memo(function InfiniteMovingCards({
                         "--animation-direction": currentDirection,
                     } as React.CSSProperties}
                 >
-                    {items.map((place, idx) => (
+                    {items.map((place) => (
                         <li
-                            key={`${place.name}-${idx}`}
+                            key={place.recordId}
                             className="w-[350px] sm:w-[400px] max-w-full relative flex"
                         >
                             <PlaceCard place={place} />

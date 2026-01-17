@@ -19,7 +19,7 @@ import { render, screen, fireEvent, act, cleanup } from '@testing-library/react'
 import React, { useState, useCallback, createContext, useContext } from 'react'
 import { ModalProvider, useModalActions } from '@/contexts/ModalContext'
 import { FilterProvider, useFilters, useQuickSearch, useSort, useFilterData } from '@/contexts/FilterContext'
-import { Place } from '@/lib/types'
+import { Place, SortField, SortDirection } from '@/lib/types'
 
 // INP threshold in milliseconds
 const INP_THRESHOLD_MS = 200
@@ -36,18 +36,30 @@ const createMockPlace = (overrides: Partial<Place> = {}): Place => ({
   type: ['Coffee Shop'],
   tags: ['WiFi', 'Outdoor Seating'],
   description: 'A great place to work',
-  personalNotes: 'Love this spot',
+  comments: 'Love this spot',
   featured: false,
-  verified: true,
-  freeWiFi: true,
-  hasCinnamonRolls: false,
+  freeWiFi: 'Yes',
+  hasCinnamonRolls: 'No',
+  hasReviews: 'Yes',
   operational: 'Open',
   parking: ['Free'],
   size: 'Medium',
-  seating: 'Indoor & Outdoor',
-  images: [],
-  googleMapsUrl: 'https://maps.google.com',
-  appleMapsUrl: 'https://maps.apple.com',
+  purchaseRequired: 'No',
+  photos: [],
+  googleMapsProfileURL: 'https://maps.google.com',
+  appleMapsProfileURL: 'https://maps.apple.com',
+  website: '',
+  tiktok: '',
+  instagram: '',
+  youtube: '',
+  facebook: '',
+  twitter: '',
+  linkedIn: '',
+  googleMapsPlaceId: '',
+  latitude: 35.2271,
+  longitude: -80.8431,
+  createdDate: new Date(),
+  lastModifiedDate: new Date(),
   ...overrides,
 })
 
@@ -240,7 +252,7 @@ describe('Performance Tests - Render Times', () => {
             return reset
           })
           setQuickFilterText('')
-          setSortOption({ field: 'name', direction: 'asc' })
+          setSortOption({ field: SortField.Name, direction: SortDirection.Ascending })
         }, [setFilters, setQuickFilterText, setSortOption])
 
         return (

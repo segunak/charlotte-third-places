@@ -1,6 +1,30 @@
+/**
+ * ESLint Configuration for Next.js Project
+ * 
+ * This configuration extends Next.js core web vitals rules and includes
+ * the React Compiler plugin for build-time optimizations.
+ * 
+ * @plugin react-compiler - The React Compiler (formerly React Forget) plugin
+ *   that enables automatic memoization and optimization of React components.
+ * 
+ * @rule react-compiler/react-compiler: "error"
+ *   This rule enforces that your code follows patterns compatible with the
+ *   React Compiler. When set to "error", ESLint will:
+ *   - Flag code that violates React's rules (e.g., mutating props, breaking
+ *     rules of hooks, side effects during render)
+ *   - Identify patterns that prevent the compiler from optimizing components
+ *   - Ensure components can be safely auto-memoized by the compiler
+ * 
+ *   The React Compiler analyzes your code at build time and automatically
+ *   inserts useMemo, useCallback, and memo() calls where beneficial,
+ *   eliminating the need for manual memoization while improving performance.
+ *   Setting this to "error" ensures all code is compiler-compatible.
+ */
 {
   "extends": "next/core-web-vitals",
+  "plugins": ["react-compiler"],
   "rules": {
-    "react/no-unescaped-entities": "off"
+    "react/no-unescaped-entities": "off",
+    "react-compiler/react-compiler": "error"
   }
 }

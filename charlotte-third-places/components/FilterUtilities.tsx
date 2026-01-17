@@ -1,27 +1,19 @@
 "use client";
 
-import React, { useCallback, useState, useEffect, useTransition } from "react";
+import React, { useCallback, useState, useEffect, useLayoutEffect, useTransition, useRef } from "react";
+import { flushSync } from "react-dom";
 import { useDebouncedCallback } from "use-debounce";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import {
-    Select,
-    SelectContent,
-    SelectGroup,
-    SelectItem,
-    SelectLabel,
-    SelectTrigger,
-    SelectValue,
-} from "@/components/ui/select";
-import { useQuickSearch, useFilters, useFilterData, useSort } from "@/contexts/FilterContext";
-import { SortField, SortDirection, DEFAULT_SORT_OPTION } from "@/lib/types";
+import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions } from "@/contexts/FilterContext";
+import { DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { VirtualizedSelect } from "@/components/VirtualizedSelect";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
+import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, DEFAULT_FILTER_CONFIG } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
@@ -33,7 +25,8 @@ export function FilterQuickSearch() {
     const [, startTransition] = useTransition();
 
     // Sync local state when context value changes externally (e.g., reset)
-    useEffect(() => {
+    // Using useLayoutEffect to ensure sync happens before paint, preventing flash on reset
+    useLayoutEffect(() => {
         setLocalValue(quickFilterText);
     }, [quickFilterText]);
 
@@ -73,65 +66,96 @@ export function FilterQuickSearch() {
     );
 }
 
-export function FilterSelect({ field, value, label, placeholder, predefinedOrder, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: {
+interface FilterSelectProps {
     field: FilterKey;
-    value: string;
+    value: string | string[];
     label: string;
     placeholder: string;
     predefinedOrder: string[];
+    matchMode?: 'and' | 'or';
     resetSignal?: number;
     onDropdownOpenChange?: (open: boolean) => void;
     onModalClose?: () => void;
     isActivePopover?: boolean;
     anyPopoverOpen?: boolean;
-}) {
+}
+
+export const FilterSelect = React.memo(function FilterSelect({ field, value, label, placeholder, predefinedOrder, matchMode, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: FilterSelectProps) {
     const { setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
     const isMobile = useIsMobile();
     const [pickerOpen, setPickerOpen] = useState(false);
-    const [selectOpen, setSelectOpen] = useState(false);
-    const [, startTransition] = useTransition();
 
-    useEffect(() => {
+    const isMultiSelect = MULTI_SELECT_FIELDS.has(field);
+    const isDesktopPicker = DESKTOP_PICKER_FIELDS.has(field);
+    // Normalize value for comparison
+    const singleValue = isMultiSelect ? "" : (value as string);
+    const multiValue = isMultiSelect ? (value as string[]) : [];
+
+    // Handler for match mode changes
+    const handleMatchModeChange = useCallback(
+        (newMode: 'and' | 'or') => {
+            setFilters((prevFilters) => {
+                if (!prevFilters[field]) return prevFilters;
+                return {
+                    ...prevFilters,
+                    [field]: { ...prevFilters[field], matchMode: newMode },
+                };
+            });
+        },
+        [field, setFilters]
+    );
+
+    // Close picker when reset signal changes - use useLayoutEffect to prevent flash
+    useLayoutEffect(() => {
         setPickerOpen(false);
     }, [resetSignal]);
 
     useEffect(() => {
-        if (onDropdownOpenChange) {
-            if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
-                onDropdownOpenChange(pickerOpen);
-            } else {
-                onDropdownOpenChange(selectOpen);
-            }
+        // Only need to track pickerOpen for mobile picker case
+        // VirtualizedSelect handles its own onOpenChange callback
+        if (onDropdownOpenChange && isMobile && MOBILE_PICKER_FIELDS.has(field)) {
+            onDropdownOpenChange(pickerOpen);
         }
-    }, [pickerOpen, selectOpen, onDropdownOpenChange, isMobile, field]);
+    }, [pickerOpen, onDropdownOpenChange, isMobile, field]);
 
     const handlePickerSelect = (newValue: string) => {
-        startTransition(() => {
-            setFilters((prevFilters) => ({
-                ...prevFilters,
-                [field]: { ...prevFilters[field], value: newValue },
-            }));
-        });
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [field]: { ...prevFilters[field], value: newValue },
+        }));
         setPickerOpen(false);
     };
 
-    const handleFilterChange = useCallback(
+    // Handler for single-select value changes
+    // Note: Removed startTransition to prevent race condition with VirtualizedSelect's
+    // snapshot pattern. The deferred update caused a 1-2s jank when selecting "All".
+    const handleSingleFilterChange = useCallback(
         (newValue: string) => {
-            startTransition(() => {
-                setFilters((prevFilters) => {
-                    // Defensive: Only update the intended field, never replace the whole object
-                    if (!prevFilters[field]) return prevFilters;
-                    // Defensive: Only allow string values
-                    const safeValue = typeof newValue === "string" ? newValue : "all";
-                    return {
-                        ...prevFilters,
-                        [field]: { ...prevFilters[field], value: safeValue },
-                    };
-                });
+            setFilters((prevFilters) => {
+                if (!prevFilters[field]) return prevFilters;
+                const safeValue = typeof newValue === "string" ? newValue : "all";
+                return {
+                    ...prevFilters,
+                    [field]: { ...prevFilters[field], value: safeValue },
+                };
             });
         },
-        [field, setFilters, startTransition]
+        [field, setFilters]
+    );
+
+    // Handler for multi-select value changes
+    const handleMultiFilterChange = useCallback(
+        (newValue: string[]) => {
+            setFilters((prevFilters) => {
+                if (!prevFilters[field]) return prevFilters;
+                return {
+                    ...prevFilters,
+                    [field]: { ...prevFilters[field], value: newValue },
+                };
+            });
+        },
+        [field, setFilters]
     );
 
     // Only allow pointer events if this is the active popover or none are open
@@ -139,8 +163,34 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         ? undefined
         : { pointerEvents: 'none', opacity: 0.7 };
 
+    // Helper to get display text for trigger
+    const getDisplayText = (): string => {
+        if (isMultiSelect) {
+            return multiValue.length === 0 ? placeholder : `${multiValue.length} selected`;
+        }
+        return singleValue === "all" ? placeholder : singleValue;
+    };
+
+    // Helper to determine if trigger should use "active" styling
+    const isActiveFilter = isMultiSelect ? multiValue.length > 0 : singleValue !== "all";
+
+    // Detect "active → default" transition to suppress CSS transition during reset
+    // This prevents visual jarring when all filters reset simultaneously
+    const wasActiveRef = useRef(isActiveFilter);
+    const suppressTransition = wasActiveRef.current && !isActiveFilter;
+    useLayoutEffect(() => {
+        wasActiveRef.current = isActiveFilter;
+    }, [isActiveFilter]);
+
     // Mobile: Use SearchablePickerModal for high-cardinality fields
     if (isMobile && MOBILE_PICKER_FIELDS.has(field)) {
+        const handleOpenChange = (open: boolean) => {
+            setPickerOpen(open);
+            if (!open && onModalClose) {
+                setTimeout(onModalClose, 10);
+            }
+        };
+
         return (
             <div style={pointerEventsStyle}>
                 {/* This is a custom implementation of the same styling seen in select.tsx's SelectTrigger which is the shadcn/ui select built on top of Radix UI. For certain fields, I want my own custom modal with a search bar, built in SearchablePickerModal.tsx, but want it to appear the same as a select. For consistency, the styling here makes it look like any other select but clicking it opens the SearchablePickerModal.*/}
@@ -149,7 +199,7 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     className={cn(
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
                         "focus:outline-none focus:ring-0 focus:shadow-none",
-                        value === "all"
+                        !isActiveFilter
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
                     )}
@@ -157,20 +207,27 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
                     aria-haspopup="dialog"
                     aria-expanded={pickerOpen}
                 >
-                    <span className="truncate flex-1 text-left">{value === 'all' ? placeholder : value}</span>
+                    <span className="truncate flex-1 text-left">{getDisplayText()}</span>
                     <CaretSortIcon className="h-4 w-4 opacity-50 ml-2" />
                 </button>
-                {pickerOpen && (
+                {pickerOpen && isMultiSelect && (
                     <SearchablePickerModal
                         open={pickerOpen}
-                        onOpenChange={(open) => {
-                            setPickerOpen(open);
-                            if (!open && onModalClose) {
-                                setTimeout(onModalClose, 10);
-                            }
-                        }}
+                        onOpenChange={handleOpenChange}
                         options={getDistinctValues(field)}
-                        value={value}
+                        value={multiValue}
+                        label={label}
+                        placeholder={placeholder}
+                        onSelect={handleMultiFilterChange}
+                        multiple
+                    />
+                )}
+                {pickerOpen && !isMultiSelect && (
+                    <SearchablePickerModal
+                        open={pickerOpen}
+                        onOpenChange={handleOpenChange}
+                        options={getDistinctValues(field)}
+                        value={singleValue}
                         label={label}
                         placeholder={placeholder}
                         onSelect={handlePickerSelect}
@@ -180,15 +237,87 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         );
     }
 
-    // Desktop: Use VirtualizedSelect for all fields (virtualized dropdown)
-    // This provides consistent performance across all filter dropdowns
+    // Desktop: Use SearchablePickerModal for desktopPicker fields, VirtualizedSelect for others
     if (!isMobile) {
+        if (isDesktopPicker) {
+            const handleDesktopModalOpenChange = (open: boolean) => {
+                setPickerOpen(open);
+                if (onDropdownOpenChange) {
+                    onDropdownOpenChange(open);
+                }
+            };
+
+            return (
+                <div className={maxWidth} style={pointerEventsStyle}>
+                    <button
+                        type="button"
+                        className={cn(
+                            "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                            // Suppress transition when going from active→default (reset scenario)
+                            suppressTransition ? "" : "transition-colors",
+                            !isActiveFilter
+                                ? "text-muted-foreground font-normal hover:bg-primary/90 hover:text-primary-foreground"
+                                : "font-bold bg-primary text-primary-foreground hover:bg-primary/90"
+                        )}
+                        onClick={() => setPickerOpen(true)}
+                        aria-haspopup="dialog"
+                        aria-expanded={pickerOpen}
+                    >
+                        <span className="truncate flex-1 text-left">{getDisplayText()}</span>
+                        <CaretSortIcon className="h-4 w-4 opacity-50 ml-2" />
+                    </button>
+                    {pickerOpen && isMultiSelect && (
+                        <SearchablePickerModal
+                            open={pickerOpen}
+                            onOpenChange={handleDesktopModalOpenChange}
+                            options={getDistinctValues(field)}
+                            value={multiValue}
+                            label={label}
+                            placeholder={placeholder}
+                            onSelect={handleMultiFilterChange}
+                            multiple
+                            matchMode={matchMode}
+                            onMatchModeChange={handleMatchModeChange}
+                        />
+                    )}
+                    {pickerOpen && !isMultiSelect && (
+                        <SearchablePickerModal
+                            open={pickerOpen}
+                            onOpenChange={handleDesktopModalOpenChange}
+                            options={getDistinctValues(field)}
+                            value={singleValue}
+                            label={label}
+                            placeholder={placeholder}
+                            onSelect={handlePickerSelect}
+                        />
+                    )}
+                </div>
+            );
+        }
+        // Desktop non-picker fields use VirtualizedSelect
+        if (isMultiSelect) {
+            return (
+                <div className={maxWidth} style={pointerEventsStyle}>
+                    <VirtualizedSelect
+                        options={getDistinctValues(field)}
+                        value={multiValue}
+                        onValueChange={handleMultiFilterChange}
+                        placeholder={placeholder}
+                        label={label}
+                        onOpenChange={onDropdownOpenChange}
+                        multiple
+                        matchMode={matchMode}
+                        onMatchModeChange={handleMatchModeChange}
+                    />
+                </div>
+            );
+        }
         return (
             <div className={maxWidth} style={pointerEventsStyle}>
                 <VirtualizedSelect
                     options={getDistinctValues(field)}
-                    value={value}
-                    onValueChange={handleFilterChange}
+                    value={singleValue}
+                    onValueChange={handleSingleFilterChange}
                     placeholder={placeholder}
                     label={label}
                     onOpenChange={onDropdownOpenChange}
@@ -197,75 +326,55 @@ export function FilterSelect({ field, value, label, placeholder, predefinedOrder
         );
     }
 
-    // Mobile low-cardinality fields: use native Radix Select
+    // Mobile low-cardinality fields: use VirtualizedSelect for consistency
     // (Mobile high-cardinality fields already handled above with SearchablePickerModal)
-    const isHighCardinality = MOBILE_PICKER_FIELDS.has(field);
+    if (isMultiSelect) {
+        return (
+            <div className={maxWidth} style={pointerEventsStyle}>
+                <VirtualizedSelect
+                    options={getDistinctValues(field)}
+                    value={multiValue}
+                    onValueChange={handleMultiFilterChange}
+                    placeholder={placeholder}
+                    label={label}
+                    onOpenChange={onDropdownOpenChange}
+                    multiple
+                    matchMode={matchMode}
+                    onMatchModeChange={handleMatchModeChange}
+                />
+            </div>
+        );
+    }
     return (
         <div className={maxWidth} style={pointerEventsStyle}>
-            <Select
-                key={field}
-                value={value}
-                onValueChange={handleFilterChange}
-                onOpenChange={setSelectOpen}
-            >
-                <SelectTrigger
-                    className={cn(
-                        "w-full",
-                        isMobile
-                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-primary-foreground",
-                        (value === 'all')
-                            ? "text-muted-foreground font-normal"
-                            : "font-bold bg-primary text-primary-foreground"
-                    )}
-                >
-                    <SelectValue placeholder={placeholder}>
-                        {value === 'all' ? placeholder : value}
-                    </SelectValue>
-                </SelectTrigger>
-                <SelectContent position="popper" side="top">
-                    <SelectGroup>
-                        <SelectLabel>{label}</SelectLabel>
-                        <SelectItem value="all">All</SelectItem>
-                        {/* Lazy render: only mount SelectItems when dropdown is open for high-cardinality fields */}
-                        {(!isHighCardinality || selectOpen) && getDistinctValues(field).map((item: string) => (
-                            <SelectItem key={item} value={item}>
-                                {item}
-                            </SelectItem>
-                        ))}
-                    </SelectGroup>
-                </SelectContent>
-            </Select>
+            <VirtualizedSelect
+                options={getDistinctValues(field)}
+                value={singleValue}
+                onValueChange={handleSingleFilterChange}
+                placeholder={placeholder}
+                label={label}
+                onOpenChange={onDropdownOpenChange}
+            />
         </div>
     );
-}
+});
+
+FilterSelect.displayName = "FilterSelect";
 
 export function FilterResetButton({ disabled, variant, fullWidth = true }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean }) {
-    const { setFilters } = useFilters();
-    const { setQuickFilterText } = useQuickSearch();
-    const { setSortOption } = useSort();
-    const [, startTransition] = useTransition();
+    const { resetAll } = useFilterActions();
 
     const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
         // Prevent any event bubbling that might affect parent dialogs
         e.preventDefault();
         e.stopPropagation();
 
-        // Use startTransition to mark reset as non-urgent, preventing UI blocking
-        startTransition(() => {
-            setFilters((prevFilters) => {
-                const resetFilters = { ...prevFilters };
-                Object.keys(resetFilters).forEach((key) => {
-                    // Uniform reset: set every single-select filter back to 'all' (sentinel meaning no constraint)
-                    (resetFilters as any)[key].value = "all";
-                });
-                return resetFilters;
-            });
-
-            setQuickFilterText("");
-            setSortOption(DEFAULT_SORT_OPTION);
+        // Use flushSync to force synchronous rendering, eliminating visual lag
+        // where selects briefly show stale values before resetting to placeholders
+        flushSync(() => {
+            resetAll();
         });
-    }, [setFilters, setQuickFilterText, setSortOption]);
+    }, [resetAll]);
 
     return (
         <div className={maxWidth}>
@@ -283,20 +392,20 @@ export function FilterResetButton({ disabled, variant, fullWidth = true }: { dis
 
 export function SortSelect({ className, onDropdownOpenChange }: { className?: string; onDropdownOpenChange?: (open: boolean) => void }) {
     const { sortOption, setSortOption } = useSort();
-    const [selectOpen, setSelectOpen] = useState(false);
     const [pickerOpen, setPickerOpen] = useState(false);
     const isMobile = useIsMobile();
 
     useEffect(() => {
-        if (onDropdownOpenChange) {
-            if (isMobile && SORT_USES_MOBILE_PICKER) {
-                onDropdownOpenChange(pickerOpen);
-            } else {
-                onDropdownOpenChange(selectOpen);
-            }
+        // Only need to track pickerOpen for mobile picker case
+        // VirtualizedSelect handles its own onOpenChange callback
+        if (onDropdownOpenChange && isMobile && SORT_USES_MOBILE_PICKER) {
+            onDropdownOpenChange(pickerOpen);
         }
-    }, [selectOpen, pickerOpen, onDropdownOpenChange, isMobile]);
+    }, [pickerOpen, onDropdownOpenChange, isMobile]);
 
+    // Note: Removed startTransition to prevent race condition with VirtualizedSelect's
+    // frozen snapshot pattern. The deferred update caused first selection to appear
+    // unresponsive. useDeferredValue in DataTable provides the non-blocking benefit.
     const handleSortChange = useCallback(
         (value: string) => {
             const sortDef = SORT_DEFS.find(d => d.key === value);
@@ -314,10 +423,12 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
     const currentSortDef = SORT_DEFS.find(d => d.key === currentSortKey);
     const placeholderText = currentSortDef?.label ?? "Sort by...";
     const defaultSortKey = `${DEFAULT_SORT_OPTION.field}-${DEFAULT_SORT_OPTION.direction}`;
-    const isDefaultSort = currentSortKey === defaultSortKey;
+    const defaultSortDef = SORT_DEFS.find(d => d.key === defaultSortKey);
+    const defaultSortLabel = defaultSortDef?.label ?? "";
 
     // Mobile: use SearchablePickerModal
     if (isMobile && SORT_USES_MOBILE_PICKER) {
+        const isDefaultSort = currentSortKey === defaultSortKey;
         return (
             <div className={cn(maxWidth, className)}>
                 <button
@@ -353,37 +464,24 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
         );
     }
 
-    // Desktop: use standard Select
+    // Desktop: use VirtualizedSelect for consistent performance
     return (
         <div className={cn(maxWidth, className)}>
-            <Select
-                value={currentSortKey}
-                onValueChange={handleSortChange}
-                onOpenChange={setSelectOpen}
-            >
-                <SelectTrigger
-                    className={cn(
-                        "w-full",
-                        isMobile
-                            ? "focus:outline-none focus:ring-0 focus:shadow-none"
-                            : "hover:bg-primary/90 hover:text-primary-foreground"
-                    )}
-                >
-                    <SelectValue placeholder={placeholderText}>
-                        {placeholderText}
-                    </SelectValue>
-                </SelectTrigger>
-                <SelectContent>
-                    <SelectGroup>
-                        <SelectLabel>Sort By</SelectLabel>
-                        {SORT_DEFS.map((def) => (
-                            <SelectItem key={def.key} value={def.key}>
-                                {def.label}
-                            </SelectItem>
-                        ))}
-                    </SelectGroup>
-                </SelectContent>
-            </Select>
+            <VirtualizedSelect
+                options={SORT_DEFS.map(d => d.label)}
+                value={currentSortDef?.label ?? ""}
+                onValueChange={(label) => {
+                    const sortDef = SORT_DEFS.find(d => d.label === label);
+                    if (sortDef) {
+                        handleSortChange(sortDef.key);
+                    }
+                }}
+                placeholder={defaultSortLabel}
+                label="Sort By"
+                onOpenChange={onDropdownOpenChange}
+                showDefaultOption={false}
+                defaultValue={defaultSortLabel}
+            />
         </div>
     );
 }

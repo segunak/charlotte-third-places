@@ -3,7 +3,7 @@
 import { Place } from "@/lib/types";
 import { useFilters, useQuickSearch, useSort } from "@/contexts/FilterContext";
 import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from '@/lib/filters';
+import { placeMatchesFilters, sortPlaces } from '@/lib/filters';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
 import { CardCarousel } from "@/components/CardCarousel";
@@ -15,7 +15,8 @@ import React, {
     useCallback,
     useEffect,
     useRef,
-    useMemo
+    useMemo,
+    useDeferredValue
 } from "react";
 
 /**
@@ -101,18 +102,35 @@ const DesktopInfiniteCarousel = React.memo(function DesktopInfiniteCarousel({
 
 DesktopInfiniteCarousel.displayName = 'DesktopInfiniteCarousel';
 
-export function ResponsivePlaceCards({ places }: { places: Place[] }) {
-    // Mobile-only: Consume filter contexts (desktop carousel is isolated and doesn't use these)
+/**
+ * MobileCardCarousel - Isolated component for mobile carousel.
+ * 
+ * PERFORMANCE CRITICAL: Only this component consumes filter/sort context.
+ * The parent ResponsivePlaceCards does NOT consume context, so on desktop,
+ * sort/filter changes don't trigger parent re-renders at all.
+ * 
+ * This solves the performance issue where the entire tree re-rendered on sort change.
+ */
+interface MobileCardCarouselProps {
+    places: Place[];
+}
+
+const MobileCardCarousel = React.memo(function MobileCardCarousel({ places }: MobileCardCarouselProps) {
+    // Consume filter contexts - ONLY done here, not in parent
     const { filters } = useFilters();
     const { quickFilterText } = useQuickSearch();
     const { sortOption } = useSort();
+    // Defer sortOption to allow React to prioritize more urgent updates
+    const deferredSortOption = useDeferredValue(sortOption);
+    
     const shuffleTimeout = useRef<number | null>(null);
     const [isLoading, setIsLoading] = useState<boolean>(false);
-    // Mobile shuffled order (over filtered set)
     const [mobileShuffledOrder, setMobileShuffledOrder] = useState<number[]>([]);
     const [currentIndex, setCurrentIndex] = useState<number>(0);
+    // Shuffle counter for stable key - only increments on explicit shuffle, not filter changes
+    const [shuffleCount, setShuffleCount] = useState<number>(0);
 
-    // Apply quick text filter + structured filters + sorting to the incoming places prop (mobile only)
+    // Apply quick text filter + structured filters + sorting
     const filteredPlaces: Place[] = useMemo(() => {
         let data = places;
         if (quickFilterText.trim() !== "") {
@@ -123,26 +141,10 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
         data = data.filter((place: any) => placeMatchesFilters(place, filters));
 
         // Sorting: featured-first, then user-selected sort
-        const sorted = [...data].sort((a: any, b: any) => {
-            // First priority: Featured places come first
-            if (a.featured !== b.featured) {
-                return b.featured ? 1 : -1; // featured first
-            }
-            // Apply user's selected sorting next
-            const { field, direction } = sortOption;
-            const valueA = a[field] || "";
-            const valueB = b[field] || "";
-            if (field === 'name') {
-                return direction === 'asc' ? valueA.localeCompare(valueB) : valueB.localeCompare(valueA);
-            }
-            const dateA = new Date(valueA).getTime();
-            const dateB = new Date(valueB).getTime();
-            return direction === 'asc' ? dateA - dateB : dateB - dateA;
-        });
-        return sorted;
-    }, [places, filters, quickFilterText, sortOption]);
+        return sortPlaces(data, deferredSortOption);
+    }, [places, filters, quickFilterText, deferredSortOption]);
 
-    // Generic Fisher-Yates shuffle for an index range (mobile only)
+    // Generic Fisher-Yates shuffle for an index range
     const shuffleIndexes = useCallback((length: number) => {
         const arr = Array.from({ length }, (_, i) => i);
         for (let i = arr.length - 1; i > 0; i--) {
@@ -161,13 +163,12 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
             const newMobile = shuffleIndexes(filteredPlaces.length);
             setMobileShuffledOrder(newMobile);
             setCurrentIndex(idx => idx < newMobile.length ? idx : 0);
+            // Increment shuffle count to trigger carousel key change (forces Embla reInit)
+            setShuffleCount(c => c + 1);
         }, 0);
     }, [shuffleIndexes, filteredPlaces.length]);
 
-    // Desktop shuffle is handled by DesktopInfiniteCarousel - this is just a no-op callback
-    const handleDesktopShuffle = useCallback(() => {}, []);
-
-    // Reinitialize mobile order whenever filteredPlaces changes (filters applied)
+    // Reinitialize mobile order whenever filteredPlaces changes
     useEffect(() => {
         setMobileShuffledOrder(Array.from({ length: filteredPlaces.length }, (_, i) => i));
         setCurrentIndex(0);
@@ -180,52 +181,73 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     );
 
     return (
+        <div
+            className="relative"
+            style={{ minHeight: 325 }}
+        >
+            {isLoading && (
+                <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
+                    <LoadingSpinner />
+                </div>
+            )}
+            {!isLoading && filteredPlaces.length === 0 ? (
+                <FilteredEmptyState
+                    description="Adjust or reset your filters to see places in this discovery feed."
+                    fullHeight
+                />
+            ) : (
+                <>
+                    <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
+                        <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
+                    </div>
+                    <CardCarousel
+                        key={shuffleCount}
+                        items={mobileCarouselItems}
+                        initialIndex={currentIndex}
+                        total={mobileShuffledOrder.length}
+                    />
+                </>
+            )}
+            {/* Mobile Shuffle Button - only when there are filtered results */}
+            {filteredPlaces.length > 0 && !isLoading && (
+                <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
+                    <Button
+                        className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
+                        size="icon"
+                        onClick={shuffleMobileItems}
+                    >
+                        <Icons.shuffle className="h-5 w-5 text-primary" />
+                    </Button>
+                </div>
+            )}
+        </div>
+    );
+});
+
+MobileCardCarousel.displayName = 'MobileCardCarousel';
+
+/**
+ * ResponsivePlaceCards - Container that renders appropriate carousel based on viewport.
+ * 
+ * PERFORMANCE CRITICAL: This component does NOT consume any filter/sort context.
+ * Each device-specific child component handles its own context consumption.
+ * This prevents unnecessary re-renders of the desktop carousel when mobile users
+ * change filters, and vice versa.
+ */
+export function ResponsivePlaceCards({ places }: { places: Place[] }) {
+    // Desktop shuffle is handled by DesktopInfiniteCarousel - this is just a no-op callback
+    const handleDesktopShuffle = useCallback(() => {}, []);
+
+    return (
         <div className="relative overflow-hidden max-w-full">
             {/* Desktop Virtualized Carousel - Isolated component that doesn't re-render on filter changes */}
             <div className="hidden sm:block">
                 <DesktopInfiniteCarousel places={places} onShuffle={handleDesktopShuffle} />
             </div>
 
-            {/* Mobile area: persistent height so button position is stable */}
-            <div
-                className="sm:hidden relative"
-                style={{ minHeight: 325 }}
-            >
-                {isLoading && (
-                    <div className="absolute inset-0 flex items-center justify-center bg-background z-20">
-                        <LoadingSpinner />
-                    </div>
-                )}
-                {!isLoading && filteredPlaces.length === 0 ? (
-                    <FilteredEmptyState
-                        description="Adjust or reset your filters to see places in this discovery feed."
-                        fullHeight
-                    />
-                ) : (
-                    <>
-                        <div className="flex items-center justify-center gap-4 mb-2 select-none" aria-hidden="true">
-                            <Icons.arrowLeftRight className="h-8 w-8 text-primary" />
-                        </div>
-                        <CardCarousel
-                            key={mobileShuffledOrder.join('-')}
-                            items={mobileCarouselItems}
-                            initialIndex={currentIndex}
-                            total={mobileShuffledOrder.length}
-                        />
-                    </>
-                )}
-                {/* Mobile Shuffle Button - only when there are filtered results */}
-                {filteredPlaces.length > 0 && !isLoading && (
-                    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20">
-                        <Button
-                            className="h-10 w-10 flex items-center justify-center rounded-full shadow-lg bg-background border border-border border-primary hover:bg-muted"
-                            size="icon"
-                            onClick={shuffleMobileItems}
-                        >
-                            <Icons.shuffle className="h-5 w-5 text-primary" />
-                        </Button>
-                    </div>
-                )}
+            {/* Mobile area: Uses MobileCardCarousel which consumes filter context */}
+            <div className="sm:hidden">
+                <MobileCardCarousel places={places} />
             </div>
         </div>
     );

@@ -21,6 +21,8 @@ export const CardCarousel: React.FC<CardCarouselProps> = React.memo(({ items, in
     // Scroll to the initialIndex only when the component mounts or items change
     useEffect(() => {
         if (emblaApi) {
+            // ReInit carousel when items change to handle new slides without full remount
+            emblaApi.reInit();
             emblaApi.scrollTo(initialIndex, true); // Use true for instant scroll
         }
     }, [emblaApi, initialIndex, items]); // Depend on items to re-scroll after shuffle

@@ -41,8 +41,15 @@ export const FilterDrawer = React.memo(function FilterDrawer({
   const setIsOpen = onOpenChange || setIsDrawerOpen;
 
   const { filters } = useFilters();
-  // Count only filters whose value diverges from 'all' (the sentinel meaning no constraint)
-  const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
+  // Active filter count excludes fields with no constraint:
+  // - Single-select: value === 'all' sentinel
+  // - Multi-select: value is empty array []
+  const activeFilterCount = Object.values(filters).filter((filter) => {
+    if (Array.isArray(filter.value)) {
+      return filter.value.length > 0;
+    }
+    return filter.value !== FILTER_SENTINEL;
+  }).length;
   // Track open state for all selects
   const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
   const handleDropdownStateChange = useCallback((open: boolean) => {
@@ -86,7 +93,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe max-h-[95dvh] flex flex-col" data-filter-context>
+      <DrawerContent className="pb-safe max-h-[95dvh] flex flex-col">
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -112,13 +119,13 @@ export const FilterDrawer = React.memo(function FilterDrawer({
               const config = filters[def.key as FilterKey];
               const field = def.key;
               
-              // Use chips for fields marked with useChips
+              // Use chips for fields marked with useChips (all are single-select)
               if (MOBILE_CHIP_FIELDS.has(field)) {
                 return (
                   <FilterChips
                     key={field}
                     field={field as FilterKey}
-                    value={config.value}
+                    value={config.value as string}
                     label={config.label}
                   />
                 );
@@ -133,6 +140,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
                   label={config.label}
                   placeholder={config.placeholder}
                   predefinedOrder={config.predefinedOrder}
+                  matchMode={config.matchMode}
                   onDropdownOpenChange={(open: boolean) => {
                     handleDropdownStateChange(open);
                     setActivePopover(open ? getPopoverId(field) : null);

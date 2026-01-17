@@ -5,11 +5,12 @@ import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
 import { OpeningSoonModal } from "@/components/OpeningSoonModal";
-import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
+import React, { useState, Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { useInView } from "@/hooks/useInView";
 
 // Dynamically import DataTable for lazy loading with count callback
 const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: number) => void }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
@@ -22,33 +23,16 @@ interface PlaceListWithFiltersProps {
 }
 
 export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
-    // Custom hook for intersection observer
-    function useInView<T extends HTMLElement = HTMLElement>(options?: IntersectionObserverInit) {
-        const ref = useRef<T | null>(null);
-        const [inView, setInView] = useState(true); // Default to true for SSR/first render
-
-        useEffect(() => {
-            if (!ref.current) return;
-            const observer = new window.IntersectionObserver(
-                ([entry]) => setInView(entry.isIntersecting),
-                options
-            );
-            observer.observe(ref.current);
-            return () => observer.disconnect();
-        }, [options]);
-
-        return [ref, inView] as const;
-    }
-
-    const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
-    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.3 });
+    // Use external hook with primitive parameters for stable dependencies
+    const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>(0.01);
+    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>(0.3);
     const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
     const [openingSoonOpen, setOpeningSoonOpen] = useState(false);
     const [visibleCount, setVisibleCount] = useState<number>(places.length);
 
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
+        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_260px]">
             <div className="col-span-1 space-y-4 mb-4 sm:mb-0 sm:pr-12">
                 {/* Intro Text */}
                 <div id="browse-section" data-testid="browse-section" className="text-2xl font-bold">Browse</div>
@@ -153,7 +137,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
             {/* Second Column: Desktop Filter Sidebar */}
             <div className="hidden sm:block">
                 <FilterSidebar
-                    className="max-w-[265px] border border-border sticky top-16 px-6 space-y-[.65rem]"
+                    className="max-w-[260px] border border-border sticky top-16 px-6 space-y-[.65rem]"
                 />
             </div>
         </div>

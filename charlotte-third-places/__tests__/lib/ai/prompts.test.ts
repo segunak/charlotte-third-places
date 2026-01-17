@@ -19,7 +19,6 @@ import type { EntityDetectionResult } from '@/lib/ai/entity-detection'
 function createMockPlaceDocument(overrides: Partial<PlaceDocument> = {}): PlaceDocument {
   return {
     id: 'place-123',
-    placeId: 'ChIJ123',
     airtableRecordId: 'rec123456',
     placeName: 'Test Coffee Shop',
     neighborhood: 'South End',
@@ -28,7 +27,7 @@ function createMockPlaceDocument(overrides: Partial<PlaceDocument> = {}): PlaceD
     description: 'A cozy spot for coffee and work.',
     tags: ['Good for Groups', 'Has Outlets'],
     freeWifi: true,
-    parking: 'Street Parking',
+    parking: ['Street Parking'],
     size: 'Medium',
     purchaseRequired: true,
     comments: 'Curator notes: Great espresso and friendly staff.',
