@@ -104,7 +104,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         </div>
                     )}
 
-                    <div className="px-6 py-4 border-t bg-muted/20 grid grid-cols-2 gap-3 mt-auto shrink-0">
+                    <div className="px-6 py-4 border-t grid grid-cols-2 gap-3 mt-auto shrink-0">
                         {place.operational !== "Opening Soon" && (
                             <Button
                                 className="h-11 text-base"
