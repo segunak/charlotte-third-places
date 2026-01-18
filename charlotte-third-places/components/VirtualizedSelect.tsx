@@ -50,12 +50,6 @@ type VirtualizedSelectProps = SingleSelectProps | MultiSelectProps;
 
 const ITEM_HEIGHT = 32;
 const MAX_VISIBLE_ITEMS = 10;
-// Width calculation constants
-const CHAR_WIDTH = 9; // Character width for 14px Inter font
-const BASE_PADDING = 56; // px-2 (8px) + pr-8 (32px for checkmark) + buffer (16px)
-const CHECKBOX_WIDTH = 28; // Checkbox (16px) + margin-right (8px) + buffer (4px)
-const MIN_CONTENT_WIDTH = 200;
-// No max - let content determine width, constrained only by viewport via collisionPadding
 
 /**
  * VirtualizedSelect - A high-performance Select component using TanStack Virtual.
@@ -290,18 +284,6 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
         scrollContainerRef.current?.scrollBy({ top: ITEM_HEIGHT * 3, behavior: 'smooth' });
     }, []);
 
-    // Calculate width based on longest item
-    // Multi-select needs extra width for checkbox
-    const contentWidth = React.useMemo(() => {
-        const longestItem = displayItems.reduce(
-            (max, item) => (item.length > max.length ? item : max),
-            ""
-        );
-        const checkboxExtra = isMultiple ? CHECKBOX_WIDTH : 0;
-        const calculatedWidth = longestItem.length * CHAR_WIDTH + BASE_PADDING + checkboxExtra;
-        return Math.max(calculatedWidth, MIN_CONTENT_WIDTH);
-    }, [displayItems, isMultiple]);
-
     // Determine trigger display text and styling
     // Uses optimistic UI pattern: during close, derive from snapshot to prevent jank
     const getTriggerDisplay = (): { text: string; isDefault: boolean } => {
@@ -362,9 +344,8 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
                 </button>
             </PopoverTrigger>
             <PopoverContent
-                className={cn("p-0", "data-[state=closed]:duration-0")}
+                className={cn("p-0 w-auto", "data-[state=closed]:duration-0")}
                 style={{
-                    width: contentWidth,
                     minWidth: triggerRef.current?.getBoundingClientRect().width ?? 'auto'
                 }}
                 align="start"
@@ -467,10 +448,9 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
                         role="listbox"
                         ref={scrollContainerRef}
                         onScroll={handleScroll}
-                        className="scrollbar-none"
+                        className="scrollbar-none w-full"
                         style={{
                             height: listHeight,
-                            width: contentWidth,
                             overflow: 'auto',
                             scrollbarWidth: 'none',
                             overscrollBehavior: 'contain',
