@@ -6,10 +6,6 @@
   @apply text-primary hover:text-secondary underline underline-offset-4;
 }
 
-.custom-hover {
-  @apply hover:text-secondary hover:underline hover:underline-offset-4;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
