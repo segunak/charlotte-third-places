@@ -173,7 +173,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
 
             <DrawerClose asChild>
               <Button className="disabled:opacity-100" disabled={anyDropdownOpen}>
-                Save
+                Done
               </Button>
             </DrawerClose>
           </div>
