@@ -86,12 +86,6 @@ export async function POST(request: Request) {
       placeId: placeId || undefined,
     });
 
-    console.log(
-      `RAG completed: ${ragResult.placesCount} places, ${ragResult.chunksCount} chunks${
-        placeId ? ` (place-specific: ${placeId})` : ""
-      }`
-    );
-
     // Build system messages with RAG context
     const systemMessages = [
       { role: "system" as const, content: SYSTEM_PROMPT },

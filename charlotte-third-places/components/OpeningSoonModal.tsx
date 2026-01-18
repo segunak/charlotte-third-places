@@ -38,7 +38,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerContent
-          className="overflow-hidden flex flex-col pb-safe max-h-[86dvh]"
+          className="overflow-hidden flex flex-col pb-safe max-h-[95dvh]"
           onInteractOutside={(e) => e.preventDefault()}
           onOpenAutoFocus={(e) => e.preventDefault()}
           onFocusOutside={(e) => e.preventDefault()}
