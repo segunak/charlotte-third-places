@@ -62,7 +62,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         highlights?.gradients.modal,
                         isMobile
                             ? "w-full max-h-[86dvh] overflow-y-auto"
-                            : "w-auto max-w-2xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
+                            : "w-auto max-w-xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                     )}
                     onOpenAutoFocus={(e) => {
                         if (contentRef.current) {
@@ -104,17 +104,17 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         </div>
                     )}
 
-                    <div className="flex justify-center gap-3 py-4 px-4 mt-auto shrink-0">
+                    <div className="px-6 py-4 border-t bg-muted/20 grid grid-cols-2 gap-3 mt-auto shrink-0">
                         {place.operational !== "Opening Soon" && (
                             <Button
-                                className="font-bold flex-1 max-w-[160px]"
+                                className="h-11 text-base"
                                 onClick={() => setShowChat(true)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
                                 Ask AI
                             </Button>
                         )}
-                        <Button className="font-bold flex-1 max-w-[160px]" onClick={onClose}>
+                        <Button className="h-11 text-base" onClick={onClose}>
                             Close
                         </Button>
                     </div>
