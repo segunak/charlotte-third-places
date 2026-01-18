@@ -131,7 +131,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         className="sm:max-w-lg rounded-lg bg-background p-0 w-full max-w-full overflow-hidden flex flex-col"
         style={{ maxHeight: '95vh' }}
         onOpenAutoFocus={(e) => e.preventDefault()}
-        crossCloseIconSize="h-5 w-5"
+        crossCloseIconSize="h-7 w-7"
       >
         {/* Header section */}
         <div className="px-6 pt-5 pb-4 border-b space-y-4">
@@ -195,7 +195,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         </div>
         
         {/* Scrollable options list */}
-        <div className="flex-1 overflow-y-auto min-h-0 px-2 py-2" style={{ maxHeight: '70vh' }}>
+        <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2" style={{ maxHeight: '70vh' }}>
           <ul className={cn(
             isMultiple ? "grid grid-cols-2 gap-1" : "space-y-0.5"
           )}>
@@ -235,7 +235,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                       )}>
                         {isSelected && <CheckIcon className="h-3.5 w-3.5 text-primary-foreground" />}
                       </span>
-                      <span className="text-sm">{opt}</span>
+                      <span className="text-sm min-w-0 whitespace-normal break-words">{opt}</span>
                     </button>
                   </li>
                 );
@@ -245,7 +245,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                 <li key={opt}>
                   <Button
                     variant={isSelected ? "default" : "ghost"}
-                    className="w-full justify-start mb-1"
+                    className="w-full justify-start mb-1 min-w-0 whitespace-normal break-words text-left"
                     onClick={() => handleSingleSelect(opt)}
                     data-selected={isSelected ? "" : undefined}
                   >
