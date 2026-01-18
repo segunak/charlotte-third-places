@@ -14,7 +14,21 @@
  * is the primary bottleneck we're optimizing.
  */
 
-import { describe, it, expect, beforeEach, afterEach } from 'vitest'
+import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
+
+// Mock dynamically imported modal components to prevent "Closing rpc while fetch was pending" errors.
+// ModalContext uses next/dynamic to lazy-load these components, which triggers async module fetches.
+// In CI, tests can complete before these fetches resolve, causing unhandled promise rejections.
+// Mocking eliminates the async fetch entirely, making tests faster and deterministic.
+vi.mock('@/components/PlaceModal', () => ({
+  PlaceModal: () => null
+}))
+vi.mock('@/components/PhotosModal', () => ({
+  PhotosModal: () => null
+}))
+vi.mock('@/components/ChatDialog', () => ({
+  ChatDialog: () => null
+}))
 import { render, screen, fireEvent, act, cleanup } from '@testing-library/react'
 import React, { useState, useCallback, createContext, useContext } from 'react'
 import { ModalProvider, useModalActions } from '@/contexts/ModalContext'
@@ -64,11 +78,8 @@ const createMockPlace = (overrides: Partial<Place> = {}): Place => ({
 })
 
 describe('Performance Tests - Render Times', () => {
-  afterEach(async () => {
+  afterEach(() => {
     cleanup()
-    // Allow pending dynamic imports (from ModalProvider's lazy-loaded components) to settle
-    // This prevents "Closing rpc while fetch was pending" errors
-    await new Promise(resolve => setTimeout(resolve, 0))
   })
 
   describe('Modal Interactions', () => {
