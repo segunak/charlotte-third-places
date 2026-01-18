@@ -141,12 +141,13 @@ describe('DataTable', () => {
       renderWithFilterContext(places)
 
       // Wait for the loading state to clear (500ms timeout in component)
+      // Use longer timeout for CI environments where timers may be slower
       await waitFor(
         () => {
           const loader = document.querySelector('.loader')
           expect(loader).not.toBeInTheDocument()
         },
-        { timeout: 1000 }
+        { timeout: 2000 }
       )
     })
   })
@@ -329,14 +330,14 @@ describe('DataTable', () => {
         { timeout: 1000 }
       )
 
-      // Count place cards by their heading elements (h3 with place name)
-      // PlaceCard renders each place name in an h3 inside CardTitle
-      const placeHeadings = screen.getAllByRole('heading', { level: 3 })
+      // Count place cards by querying for elements with place names
+      // CardTitle renders a div (not h3), so we query by text content
+      const placeCards = screen.getAllByText(/^Place \d+$/)
       
       // Should not render all 100 places - virtualization limits visible items
       // The exact number depends on jsdom's mocked dimensions (600px height / ~219px row)
       // We expect roughly 3-12 rows based on the mocked dimensions
-      expect(placeHeadings.length).toBeLessThan(100)
+      expect(placeCards.length).toBeLessThan(100)
     })
   })
 

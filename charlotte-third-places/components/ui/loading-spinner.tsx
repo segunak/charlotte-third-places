@@ -15,6 +15,7 @@ interface LoadingSpinnerProps {
 export function LoadingSpinner({ size = "default", className }: LoadingSpinnerProps) {
     return (
         <div
+            data-slot="loading-spinner"
             className={cn(
                 "loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary border-t-transparent",
                 size === "default" ? "h-12 w-12" : "h-6 w-6",

@@ -45,7 +45,7 @@ function Badge({ className, variant, disableHover, ...props }: BadgeProps) {
     ) : variant;
 
   return (
-    <div className={cn(badgeVariants({ variant: effectiveVariant }), className)} {...props} />
+    <div data-slot="badge" className={cn(badgeVariants({ variant: effectiveVariant }), className)} {...props} />
   )
 }
 
