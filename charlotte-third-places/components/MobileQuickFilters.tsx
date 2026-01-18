@@ -49,6 +49,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters() {
                         label={filters.tags.label}
                         placeholder={filters.tags.placeholder}
                         predefinedOrder={filters.tags.predefinedOrder}
+                        matchMode={filters.tags.matchMode}
                     />
                 </div>
 

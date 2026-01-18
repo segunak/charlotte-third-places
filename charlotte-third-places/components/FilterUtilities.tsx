@@ -220,6 +220,8 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         placeholder={placeholder}
                         onSelect={handleMultiFilterChange}
                         multiple
+                        matchMode={matchMode}
+                        onMatchModeChange={handleMatchModeChange}
                     />
                 )}
                 {pickerOpen && !isMultiSelect && (
