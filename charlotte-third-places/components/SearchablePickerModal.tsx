@@ -170,7 +170,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                   Match Any
                 </button>
               </div>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 {localMatchMode === 'and' 
                   ? "Results must have every selected tag" 
                   : "Results can have any selected tag"}
@@ -195,7 +195,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         </div>
         
         {/* Scrollable options list */}
-        <div className="flex-1 overflow-y-auto min-h-0 px-2 py-2" style={{ maxHeight: '50vh' }}>
+        <div className="flex-1 overflow-y-auto min-h-0 px-2 py-2" style={{ maxHeight: '70vh' }}>
           <ul className={cn(
             isMultiple ? "grid grid-cols-2 gap-1" : "space-y-0.5"
           )}>
