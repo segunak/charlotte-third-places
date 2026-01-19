@@ -130,7 +130,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </DialogHeader>
 
                     {/* Body: scrollable content area, footer stays fixed */}
-                    <div ref={contentRef} className="relative flex-1 overflow-y-auto min-h-0">
+                    <div ref={contentRef} className={cn(
+                        "relative flex-1 overflow-y-auto min-h-0",
+                        isMobile && "scrollbar-hide"
+                    )}>
                         <PlaceContent place={place} layout="modal" />
                         
                         {/* Floating scroll hint arrow - shows on open, fades out after first scroll */}
@@ -139,7 +142,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             size="icon"
                             onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
                             className={cn(
-                                "absolute bottom-1 right-2 rounded-full shadow-lg transition-opacity duration-300",
+                                "absolute bottom-1 right-1 rounded-full shadow-lg transition-opacity duration-300",
                                 showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
                             )}
                             aria-label="Scroll for more"
