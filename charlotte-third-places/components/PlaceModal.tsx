@@ -10,7 +10,8 @@ import {
     FC,
     useRef,
     useEffect,
-    useState
+    useState,
+    useCallback
 } from "react";
 import {
     Dialog,
@@ -33,6 +34,40 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const isMobile = useIsMobile();
     const highlights = place ? getPlaceHighlights(place) : null;
     const [showChat, setShowChat] = useState(false);
+    const [showScrollHint, setShowScrollHint] = useState(false);
+
+    // Show scroll hint on mobile when modal opens, hide once user scrolls
+    useEffect(() => {
+        if (!open || !isMobile) {
+            setShowScrollHint(false);
+            return;
+        }
+
+        let scrollElement: HTMLDivElement | null = null;
+
+        const handleScroll = () => {
+            // User scrolled — they know it scrolls, never show hint again this session
+            setShowScrollHint(false);
+        };
+
+        // Delay to let the dialog mount and content render
+        const timeout = setTimeout(() => {
+            scrollElement = contentRef.current;
+            if (!scrollElement) return;
+
+            const { scrollHeight, clientHeight } = scrollElement;
+            // Only show if there's actually content to scroll
+            if (scrollHeight > clientHeight) {
+                setShowScrollHint(true);
+                scrollElement.addEventListener('scroll', handleScroll, { once: true });
+            }
+        }, 200);
+
+        return () => {
+            clearTimeout(timeout);
+            scrollElement?.removeEventListener('scroll', handleScroll);
+        };
+    }, [open, isMobile, place]);
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -95,8 +130,22 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </DialogHeader>
 
                     {/* Body: scrollable content area, footer stays fixed */}
-                    <div ref={contentRef} className="flex-1 overflow-y-auto min-h-0">
+                    <div ref={contentRef} className="relative flex-1 overflow-y-auto min-h-0">
                         <PlaceContent place={place} layout="modal" />
+                        
+                        {/* Floating scroll hint arrow - shows on open, fades out after first scroll */}
+                        <button
+                            type="button"
+                            onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
+                            className={cn(
+                                "absolute bottom-3 right-1 h-10 w-10 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center transition-opacity duration-300",
+                                showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
+                            )}
+                            aria-label="Scroll for more"
+                            aria-hidden={!showScrollHint}
+                        >
+                            <Icons.chevronDown className="h-5 w-5" />
+                        </button>
                     </div>
 
                     <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
