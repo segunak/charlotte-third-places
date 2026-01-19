@@ -187,11 +187,10 @@ function arePlacePropsEqual(prevProps: PlaceCardProps, nextProps: PlaceCardProps
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalActions();
-    // Memoize highlights computation - only recompute when relevant fields change
-    // Using specific fields avoids recompute when parent passes new object reference
+    // Memoize highlights computation - only recompute when place changes
     const highlights = useMemo(
         () => getPlaceHighlights(place),
-        [place.featured, place.hasCinnamonRolls, place.operational, place.hasReviews]
+        [place]
     );
     const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
 
@@ -316,7 +315,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                     <CardTitle className="text-lg flex-1 min-w-0 leading-tight truncate">
                         {displayTitle}
                     </CardTitle>
-                    <div className="flex items-center space-x-2 flex-shrink-0 h-3">
+                    <div className="flex items-center space-x-2 shrink-0 h-3">
                         {badges.map(badge => (
                             <div
                                 key={badge.key}
@@ -395,8 +394,8 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         </span>
 
                         {/* Action buttons container:
-                            - flex-shrink-0: CRITICAL - prevents buttons from compressing when space is tight */}
-                        <div className="flex space-x-2 flex-shrink-0">
+                            - shrink-0: CRITICAL - prevents buttons from compressing when space is tight */}
+                        <div className="flex space-x-2 shrink-0">
                             {!isOpeningSoon && (
                                 <Button
                                     variant="default"

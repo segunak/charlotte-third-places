@@ -48,7 +48,7 @@ export function ChatDialog({ open, onClose, place, initialMessage }: ChatDialogP
     return (
         <Dialog open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
             <DialogContent
-                className="sm:max-w-2xl h-[90vh] flex flex-col p-0 gap-0"
+                className="sm:max-w-xl h-[90vh] flex flex-col p-0 gap-0"
                 crossCloseIconSize="h-7 w-7"
                 crossCloseIconColor="text-black dark:text-white"
             >

@@ -168,11 +168,11 @@ export const FilterDrawer = React.memo(function FilterDrawer({
           )}
 
           <Separator className="mb-4 mt-4" />
-          <div className="grid grid-cols-2 gap-3 w-full mb-4">
-            <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
+          <div className="flex justify-center gap-3 w-full mb-4">
+            <FilterResetButton variant="outline" disabled={anyDropdownOpen} fullWidth={false} className="h-11 text-base w-[calc(50%-6px)]" />
 
             <DrawerClose asChild>
-              <Button className="disabled:opacity-100" disabled={anyDropdownOpen}>
+              <Button className="h-11 text-base w-[calc(50%-6px)] disabled:opacity-100" disabled={anyDropdownOpen}>
                 Done
               </Button>
             </DrawerClose>

@@ -259,7 +259,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 </DialogDescription>
 
                 {/* Top bar - fixed height */}
-                <div className="flex-shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
+                <div className="shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
                     <div className="flex items-center gap-2 min-w-0">
                         <div className="text-white font-semibold truncate">
                             {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
@@ -322,7 +322,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 </div>
 
                 {/* Main image container using Carousel */}
-                <div className="flex-grow relative w-full h-full flex items-center justify-center overflow-hidden bg-black">
+                <div className="grow relative w-full h-full flex items-center justify-center overflow-hidden bg-black">
                     <Carousel
                         setApi={setApi}
                         opts={{
@@ -430,14 +430,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 {/* Thumbnails section - only show if we have multiple visible photos */}
                 {visibleSlideCount > 1 && (
                     <div className={cn(
-                        "flex-shrink-0 bg-black/80 border-t border-gray-800 z-10 transition-all duration-300 ease-in-out",
+                        "shrink-0 bg-black/80 border-t border-gray-800 z-10 transition-all duration-300 ease-in-out",
                         showThumbnails ? "py-2" : "py-0 h-8"
                     )}>
                         <div className="flex justify-center h-6 items-center">
                             <Button
                                 variant="ghost"
                                 size="sm"
-                                className="text-white/80 hover:text-white/100 py-0.5 h-auto text-xs"
+                                className="text-white/80 hover:text-white py-0.5 h-auto text-xs"
                                 onClick={() => setShowThumbnails(prev => !prev)}
                                 aria-expanded={showThumbnails}
                                 aria-controls="thumbnail-scroll-area"
@@ -470,8 +470,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 <button
                                                     key={`thumb-${origIdx}`}
                                                     className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative flex-shrink-0",
-                                                        "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50",
+                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative shrink-0",
+                                                        "focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50",
                                                         idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50"
                                                             : "ring-1 ring-gray-700 opacity-60 hover:opacity-100"
@@ -506,7 +506,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
                 {/* Add a Close button at the bottom on mobile for easier access */}
                 {isMobile && (
-                    <div className="flex-shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
+                    <div className="shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
                         <Button onClick={onClose}>
                             Close
                         </Button>

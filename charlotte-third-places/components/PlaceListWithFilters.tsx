@@ -32,7 +32,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_260px]">
+        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_260px]">
             <div className="col-span-1 space-y-4 mb-4 sm:mb-0 sm:pr-12">
                 {/* Intro Text */}
                 <div id="browse-section" data-testid="browse-section" className="text-2xl font-bold">Browse</div>
@@ -75,7 +75,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                             <span>Opening Soon ({openingSoonPlaces.length})</span>
                         </button>
                     )}
-                    <div className="flex-grow" />
+                    <div className="grow" />
                     <div className="flex items-center gap-3">
                         <span className="text-base font-semibold tracking-tight tabular-nums">{visibleCount} {visibleCount === 1 ? 'place' : 'places'}</span>
                     </div>
@@ -90,7 +90,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                             aria-haspopup="dialog"
                             aria-expanded={openingSoonOpen}
                             aria-label={`View ${openingSoonPlaces.length} places opening soon`}
-                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-xs focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
                         >
                             <Icons.clock className="h-4 w-4 text-primary shrink-0" />
                             <span className="text-sm font-semibold text-foreground truncate">

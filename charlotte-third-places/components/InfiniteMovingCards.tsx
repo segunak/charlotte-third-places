@@ -79,7 +79,7 @@ export const InfiniteMovingCards = React.memo(function InfiniteMovingCards({
                 ref={containerRef}
                 className={cn(
                     "scroller relative z-0 max-w-full overflow-hidden pb-10",
-                    "[mask-image:linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]",
+                    "mask-[linear-gradient(to_right,transparent,white_5%,white_95%,transparent)]",
                     className
                 )}
             >

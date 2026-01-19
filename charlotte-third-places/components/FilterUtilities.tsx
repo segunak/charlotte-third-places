@@ -197,8 +197,8 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                 <button
                     type="button"
                     className={cn(
-                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
-                        "focus:outline-none focus:ring-0 focus:shadow-none",
+                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                        "focus:outline-hidden focus:ring-0 focus:shadow-none",
                         !isActiveFilter
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"
@@ -254,7 +254,7 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                     <button
                         type="button"
                         className={cn(
-                            "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                            "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
                             // Suppress transition when going from active→default (reset scenario)
                             suppressTransition ? "" : "transition-colors",
                             !isActiveFilter
@@ -363,7 +363,7 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
 
 FilterSelect.displayName = "FilterSelect";
 
-export function FilterResetButton({ disabled, variant, fullWidth = true }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean }) {
+export function FilterResetButton({ disabled, variant, fullWidth = true, className }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string }) {
     const { resetAll } = useFilterActions();
 
     const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
@@ -379,16 +379,14 @@ export function FilterResetButton({ disabled, variant, fullWidth = true }: { dis
     }, [resetAll]);
 
     return (
-        <div className={maxWidth}>
-            <Button
-                className={cn(fullWidth ? "w-full" : "w-auto px-4")}
-                variant={variant}
-                onClick={handleResetFilters}
-                disabled={disabled}
-            >
-                Reset
-            </Button>
-        </div>
+        <Button
+            className={cn(fullWidth ? "w-full" : "w-auto px-4", className)}
+            variant={variant}
+            onClick={handleResetFilters}
+            disabled={disabled}
+        >
+            Reset
+        </Button>
     );
 }
 
@@ -436,7 +434,7 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                 <button
                     type="button"
                     className={cn(
-                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-0 focus:shadow-none disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
+                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-0 focus:shadow-none disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
                         isDefaultSort
                             ? "text-muted-foreground font-normal"
                             : "font-bold bg-primary text-primary-foreground"

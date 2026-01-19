@@ -27,7 +27,7 @@
 * `lib/data-services.ts` - Handles data fetching from Airtable or local CSV
 * `lib/types.ts` - TypeScript type definitions for Place and other data structures
 * `lib/utils.ts` - Utility functions (includes shadcn/ui cn helper)
-* `tailwind.config.ts` - Tailwind CSS configuration with custom theme
+* `styles/globals.css` - Tailwind CSS v4 configuration (CSS-first approach)
 * `components.json` - shadcn/ui configuration
 
 ### Data Flow
@@ -91,8 +91,8 @@
 
 ### Styling
 
-* **Primary**: Tailwind CSS with shadcn/ui design system
-* **Theme**: Custom theme defined in `tailwind.config.ts`
+* **Primary**: Tailwind CSS v4 with shadcn/ui design system
+* **Theme**: Custom theme defined in `styles/globals.css` using CSS-first configuration (`@theme` block)
 * **Colors**: Brand colors defined in HSL format (see `/docs/developer-notes.md`)
 * **Fonts**: Inter (body), IBM Plex Sans (cards), JetBrains Mono (code)
 * **Responsive**: Mobile-first design with custom breakpoints (3xl: 1920px, 4xl: 2560px, etc.)

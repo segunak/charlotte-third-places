@@ -150,7 +150,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                   className={cn(
                     "px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
                     localMatchMode === 'and'
-                      ? "bg-primary text-primary-foreground shadow-sm"
+                      ? "bg-primary text-primary-foreground shadow-xs"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   )}
                 >
@@ -163,7 +163,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                   className={cn(
                     "px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
                     localMatchMode === 'or'
-                      ? "bg-primary text-primary-foreground shadow-sm"
+                      ? "bg-primary text-primary-foreground shadow-xs"
                       : "text-muted-foreground hover:text-foreground hover:bg-accent"
                   )}
                 >
@@ -235,7 +235,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                       )}>
                         {isSelected && <CheckIcon className="h-3.5 w-3.5 text-primary-foreground" />}
                       </span>
-                      <span className="text-sm min-w-0 whitespace-normal break-words">{opt}</span>
+                      <span className="text-sm min-w-0 whitespace-normal wrap-break-word">{opt}</span>
                     </button>
                   </li>
                 );
@@ -245,7 +245,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                 <li key={opt}>
                   <Button
                     variant={isSelected ? "default" : "ghost"}
-                    className="w-full justify-start mb-1 min-w-0 whitespace-normal break-words text-left"
+                    className="w-full justify-start mb-1 min-w-0 whitespace-normal wrap-break-word text-left"
                     onClick={() => handleSingleSelect(opt)}
                     data-selected={isSelected ? "" : undefined}
                   >

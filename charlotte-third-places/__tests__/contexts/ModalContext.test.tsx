@@ -56,20 +56,28 @@ vi.mock('next/dynamic', () => ({
     const importStr = importFn.toString()
     
     if (importStr.includes('PlaceModal')) {
-      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      const MockPlaceModal = ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
         open && place ? React.createElement('div', { 'data-testid': 'place-modal' }, place.name) : null
+      MockPlaceModal.displayName = 'MockPlaceModal'
+      return MockPlaceModal
     }
     if (importStr.includes('PhotosModal')) {
-      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      const MockPhotosModal = ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
         open && place ? React.createElement('div', { 'data-testid': 'photos-modal' }, `${place.name} Photos`) : null
+      MockPhotosModal.displayName = 'MockPhotosModal'
+      return MockPhotosModal
     }
     if (importStr.includes('ChatDialog')) {
-      return ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
+      const MockChatDialog = ({ place, open }: { place: any; open: boolean; onClose: () => void }) =>
         open && place ? React.createElement('div', { 'data-testid': 'chat-dialog' }, `${place.name} Chat`) : null
+      MockChatDialog.displayName = 'MockChatDialog'
+      return MockChatDialog
     }
     
     // Fallback: return a component that shows loading
-    return () => React.createElement('div', { 'data-testid': 'loading-spinner' })
+    const MockFallback = () => React.createElement('div', { 'data-testid': 'loading-spinner' })
+    MockFallback.displayName = 'MockFallback'
+    return MockFallback
   },
 }))
 

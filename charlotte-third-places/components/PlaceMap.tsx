@@ -8,11 +8,8 @@ import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
 import { useFilters, useQuickSearch } from '@/contexts/FilterContext';
 import { useModalActions } from "@/contexts/ModalContext";
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
-
-// Cache for consistent color assignments (moved outside component)
-const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
     places: Array<Place>;
@@ -21,6 +18,8 @@ interface PlaceMapProps {
 
 export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     const { showPlaceModal } = useModalActions();
+    // Cache for consistent color assignments - using useRef to persist across renders without causing re-renders
+    const colorCacheRef = useRef<{ [key: string]: string }>({});
     const [isMobileView, setIsMobileView] = useState(false);
     // Consume granular contexts for optimal render performance
     const { filters } = useFilters();
@@ -136,6 +135,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
         
         // Check cache first
+        const colorCache = colorCacheRef.current;
         if (colorCache[typeToCheck]) {
             return colorCache[typeToCheck];
         }
@@ -238,7 +238,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         <div className="absolute top-4 right-4 z-10">
                             <Button
                                 onClick={handleLocationClick}
-                                className="bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
+                                className="bg-(--button-white) hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
                                 size="sm"
                                 disabled={isLocating}
                             >

@@ -42,7 +42,7 @@ export const ModelSelectorContent = ({
 }: ModelSelectorContentProps) => (
   <DialogContent className={cn("p-0", className)} {...props}>
     <DialogTitle className="sr-only">{title}</DialogTitle>
-    <Command className="**:data-[slot=command-input-wrapper]:h-auto">
+    <Command className="data-[slot=command-input-wrapper]:**:h-auto">
       {children}
     </Command>
   </DialogContent>
@@ -170,6 +170,7 @@ export const ModelSelectorLogo = ({
   className,
   ...props
 }: ModelSelectorLogoProps) => (
+  // eslint-disable-next-line @next/next/no-img-element -- External SVG logos from third-party CDN
   <img
     {...props}
     alt={`${provider} logo`}

@@ -328,7 +328,7 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
                     aria-haspopup="listbox"
                     style={frozenTriggerWidth ? { width: `${frozenTriggerWidth}px` } : undefined}
                     className={cn(
-                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
+                        "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-1 focus:ring-ring disabled:cursor-not-allowed disabled:opacity-50",
                         // Suppress transition when going from active→default (reset scenario)
                         // to prevent visual jarring when all filters reset simultaneously
                         suppressTransition ? "" : "transition-colors duration-150",
@@ -414,7 +414,7 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
                                 value={searchText}
                                 onChange={(e) => setSearchText(e.target.value)}
                                 placeholder="Search..."
-                                className="w-full pl-8 pr-2 py-1 text-sm bg-transparent border rounded-md focus:outline-none focus:ring-1 focus:ring-ring"
+                                className="w-full pl-8 pr-2 py-1 text-sm bg-transparent border rounded-md focus:outline-hidden focus:ring-1 focus:ring-ring"
                             />
                         </div>
                     </div>
@@ -482,7 +482,7 @@ export function VirtualizedSelect(props: VirtualizedSelectProps) {
                                             transform: `translateY(${virtualRow.start}px)`,
                                         }}
                                         className={cn(
-                                            "relative flex cursor-pointer select-none items-center rounded-sm px-2 pr-8 text-sm outline-none",
+                                            "relative flex cursor-pointer select-none items-center rounded-sm px-2 pr-8 text-sm outline-hidden",
                                             "hover:bg-accent hover:text-accent-foreground",
                                             isSelected && "bg-accent text-accent-foreground"
                                         )}

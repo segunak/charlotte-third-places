@@ -51,7 +51,7 @@ export function MobileFindMeButton({ className = "", style }: MobileFindMeButton
     return (
         <Button
             onClick={handleLocationClick}
-            className={`bg-primary hover:bg-primary/90 text-white font-extrabold sm:bg-[var(--button-white)] sm:hover:bg-gray-100 sm:text-black sm:font-bold flex items-center gap-2 shadow-lg rounded-sm ${className}`}
+            className={`bg-primary hover:bg-primary/90 text-white font-extrabold sm:bg-(--button-white) sm:hover:bg-gray-100 sm:text-black sm:font-bold flex items-center gap-2 shadow-lg rounded-sm ${className}`}
             size="sm"
             disabled={isLocating}
             style={style}

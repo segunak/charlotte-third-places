@@ -16,6 +16,18 @@ The front end us Next.js deployed to Vercel (Hobby Tier) with `shadcn/ui` for st
 
 - When using Python's logging module pass `exc_info=True` to get the stack trace.
 
+## Tailwind CSS v4
+
+This project uses Tailwind CSS v4 with the CSS-first configuration approach. Key points:
+
+- **Configuration lives in `styles/globals.css`** — No `tailwind.config.ts` file. Theme values, custom utilities, and variants are defined directly in CSS.
+- **`@theme` block** — Defines design tokens (colors, fonts, breakpoints, spacing). Values are evaluated at build time.
+- **`@utility` directive** — Creates custom utility classes. Use this instead of `@theme` when you need runtime CSS variable evaluation.
+- **`@custom-variant`** — Defines custom variants like dark mode: `@custom-variant dark (&:is(.dark *))`
+- **`tw-animate-css`** — Animation library replacing `tailwindcss-animate` for v4 compatibility.
+
+For full documentation, see the [Tailwind CSS v4 Upgrade Guide](https://tailwindcss.com/docs/upgrade-guide).
+
 ## Colors
 
 Brand colors.

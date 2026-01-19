@@ -75,7 +75,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     {highlights?.ribbon && (
                         <div className="absolute top-0 left-0 z-10 overflow-hidden w-44 h-44 pointer-events-none">
                             <div className={cn(
-                                "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform rotate-[-45deg] shadow-lg",
+                                "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform -rotate-45 shadow-lg",
                                 highlights.ribbon.bgClass,
                                 highlights.ribbon.label === 'Opening Soon' ? 'text-xs' : 'text-sm'
                             )}>
@@ -104,17 +104,23 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         </div>
                     )}
 
-                    <div className="px-6 py-4 border-t grid grid-cols-2 gap-3 mt-auto shrink-0">
+                    <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
                         {place.operational !== "Opening Soon" && (
                             <Button
-                                className="h-11 text-base"
+                                className="h-11 text-base w-[calc(50%-6px)]"
                                 onClick={() => setShowChat(true)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
                                 Ask AI
                             </Button>
                         )}
-                        <Button className="h-11 text-base" onClick={onClose}>
+                        <Button 
+                            className={cn(
+                                "h-11 text-base",
+                                place.operational === "Opening Soon" ? "w-full" : "w-[calc(50%-6px)]"
+                            )} 
+                            onClick={onClose}
+                        >
                             Close
                         </Button>
                     </div>
