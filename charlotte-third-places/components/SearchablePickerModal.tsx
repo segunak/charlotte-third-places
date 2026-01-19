@@ -187,8 +187,8 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
               </div>
               <p className="text-md text-muted-foreground">
                 {localMatchMode === 'and' 
-                  ? "Results must have every selected tag" 
-                  : "Results can have any selected tag"}
+                  ? "Places must have all selected tags" 
+                  : "Places must have at least one selected tag"}
               </p>
             </div>
           )}

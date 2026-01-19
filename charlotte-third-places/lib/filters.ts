@@ -63,7 +63,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
     },
     {
         key: 'tags',
-        label: 'Tag',
+        label: 'Tags',
         placeholder: 'Tags',
         valueType: 'array',
         mobilePicker: true,

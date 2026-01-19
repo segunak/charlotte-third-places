@@ -298,7 +298,7 @@ describe("FilterSelect - desktopPicker behavior", () => {
             <FilterSelect
                 field="tags"
                 value={[]}
-                label="Tag"
+                label="Tags"
                 placeholder="Tags"
                 predefinedOrder={[]}
             />,
