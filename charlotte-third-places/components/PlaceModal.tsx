@@ -139,7 +139,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             size="icon"
                             onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
                             className={cn(
-                                "absolute bottom-1 right-1 rounded-full shadow-lg transition-opacity duration-300",
+                                "absolute bottom-1 right-2 rounded-full shadow-lg transition-opacity duration-300",
                                 showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
                             )}
                             aria-label="Scroll for more"
