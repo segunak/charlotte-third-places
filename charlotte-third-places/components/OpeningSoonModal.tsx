@@ -59,7 +59,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
-        className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
+        className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-2xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
         onInteractOutside={(e) => e.preventDefault()}
         crossCloseIconSize="h-7 w-7"
       >
