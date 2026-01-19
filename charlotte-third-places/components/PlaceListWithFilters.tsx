@@ -25,7 +25,9 @@ interface PlaceListWithFiltersProps {
 
 export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
     // Use external hook with primitive parameters for stable dependencies
-    const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>(0.01);
+    // DataTable uses threshold 0 (any pixel visible) because it's a tall virtualized list
+    // QuickFilters uses threshold 0.3 (30% visible) for more precise visibility detection
+    const [dataTableRef, isDataTableInView] = useInView<HTMLElement>(0);
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>(0.3);
     const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
     const [openingSoonOpen, setOpeningSoonOpen] = useState(false);
