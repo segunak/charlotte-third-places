@@ -92,8 +92,8 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
             className
         )}
     >
-        {icon && <span className="flex-shrink-0">{icon}</span>}
-        <span className="flex-1 min-w-0 break-words whitespace-normal leading-snug text-left">{text}</span>
+        {icon && <span className="shrink-0">{icon}</span>}
+        <span className="flex-1 min-w-0 wrap-break-word whitespace-normal leading-snug text-left">{text}</span>
     </Badge>
 );
 
@@ -118,7 +118,7 @@ const createSocialsRow = (
             url: instagram,
             icon: <Icons.instagram />,
             label: "Instagram",
-            bgClass: "bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600"
+            bgClass: "bg-linear-to-tr from-yellow-500 via-red-500 to-purple-600"
         },
         {
             url: youtube,
@@ -157,7 +157,7 @@ const createSocialsRow = (
                 const iconSize = "h-5 w-5 sm:h-6 sm:w-6";
 
                 const linkClassNames = cn(
-                    `${containerSize} flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2`,
+                    `${containerSize} flex items-center justify-center rounded-full transition-all duration-200 hover:scale-110 cursor-pointer shadow-xs focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2`,
                     bgClass
                 );
 

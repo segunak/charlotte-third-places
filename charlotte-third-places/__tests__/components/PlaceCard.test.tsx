@@ -25,6 +25,11 @@ vi.mock('@/contexts/ModalContext', () => ({
     showPlacePhotos: mockShowPlacePhotos,
     showPlaceChat: mockShowPlaceChat,
   }),
+  useModalActions: () => ({
+    showPlaceModal: mockShowPlaceModal,
+    showPlacePhotos: mockShowPlacePhotos,
+    showPlaceChat: mockShowPlaceChat,
+  }),
 }))
 
 // Import after mocks are set up
@@ -348,5 +353,90 @@ describe('getAttributeColors', () => {
     // (There's a small chance of hash collision, but very unlikely with these test values)
     expect(bgColor1).toBeDefined()
     expect(bgColor2).toBeDefined()
+  })
+})
+
+describe('PlaceCard Memoization', () => {
+  it('renders correctly with all required place properties', () => {
+    // Test that PlaceCard renders with a complete Place object
+    // This verifies the memo comparison function doesn't break rendering
+    const place = createMockPlace({
+      name: 'Memoized Test Place',
+      description: 'Testing memo',
+      neighborhood: 'Test Neighborhood',
+      type: ['Coffee Shop', 'Bakery'],
+      tags: ['Good for Groups', 'Has Fireplace'],
+      photos: ['photo1.jpg', 'photo2.jpg'],
+      parking: ['Free', 'Street Parking'],
+      featured: true,
+    })
+
+    render(<PlaceCard place={place} />)
+
+    expect(screen.getByText('Memoized Test Place')).toBeInTheDocument()
+    expect(screen.getByText(/Testing memo/)).toBeInTheDocument()
+  })
+
+  it('handles place with empty arrays', () => {
+    // Edge case: empty arrays should not break memo comparison
+    const place = createMockPlace({
+      name: 'Empty Arrays Place',
+      type: [],
+      tags: [],
+      photos: [],
+      parking: [],
+    })
+
+    render(<PlaceCard place={place} />)
+
+    expect(screen.getByText('Empty Arrays Place')).toBeInTheDocument()
+  })
+
+  it('handles place with undefined optional properties', () => {
+    // Edge case: optional properties might be undefined
+    const place = createMockPlace({
+      name: 'Minimal Place',
+    })
+
+    render(<PlaceCard place={place} />)
+
+    expect(screen.getByText('Minimal Place')).toBeInTheDocument()
+  })
+
+  it('renders different content when place prop changes', () => {
+    const place1 = createMockPlace({ recordId: 'rec1', name: 'First Place' })
+    const place2 = createMockPlace({ recordId: 'rec2', name: 'Second Place' })
+
+    const { rerender } = render(<PlaceCard place={place1} />)
+    expect(screen.getByText('First Place')).toBeInTheDocument()
+
+    rerender(<PlaceCard place={place2} />)
+    expect(screen.getByText('Second Place')).toBeInTheDocument()
+    expect(screen.queryByText('First Place')).not.toBeInTheDocument()
+  })
+
+  it('updates when featured status changes', () => {
+    const notFeatured = createMockPlace({ name: 'Test Place', featured: false })
+    const featured = createMockPlace({ name: 'Test Place', featured: true })
+
+    const { rerender } = render(<PlaceCard place={notFeatured} />)
+    // Initially not featured - no special ribbon
+    
+    rerender(<PlaceCard place={featured} />)
+    // Now featured - should show featured indicator
+    // The exact visual depends on PlaceHighlights, but the component should re-render
+    expect(screen.getByText('Test Place')).toBeInTheDocument()
+  })
+
+  it('updates when type array changes', () => {
+    const coffeeShop = createMockPlace({ name: 'Type Test', type: ['Coffee Shop'] })
+    const bakery = createMockPlace({ name: 'Type Test', type: ['Bakery'] })
+
+    const { rerender } = render(<PlaceCard place={coffeeShop} />)
+    expect(screen.getByText(/Coffee Shop/)).toBeInTheDocument()
+
+    rerender(<PlaceCard place={bakery} />)
+    expect(screen.getByText(/Bakery/)).toBeInTheDocument()
+    expect(screen.queryByText(/Coffee Shop/)).not.toBeInTheDocument()
   })
 })

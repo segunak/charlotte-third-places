@@ -239,7 +239,7 @@ const TriggerButton = variant === "toolbar" ? (
                                                 "w-full text-left px-4 py-3 rounded-lg text-sm",
                                                 "bg-muted/50 hover:bg-muted transition-colors",
                                                 "border border-transparent hover:border-border",
-                                                "focus:outline-none"
+                                                "focus:outline-hidden"
                                             )}
                                         >
                                             {prompt}

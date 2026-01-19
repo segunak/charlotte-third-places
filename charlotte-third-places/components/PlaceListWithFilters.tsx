@@ -5,15 +5,18 @@ import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
 import { OpeningSoonModal } from "@/components/OpeningSoonModal";
-import React, { useEffect, useRef, useState, Suspense, useMemo } from "react";
+import React, { useState, Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
 import { SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { Button } from "@/components/ui/button";
+import { useInView } from "@/hooks/useInView";
 
 // Dynamically import DataTable for lazy loading with count callback
 const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: number) => void }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
     ssr: false,
-    loading: () => <div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>,
+    loading: () => <div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>,
 });
 
 interface PlaceListWithFiltersProps {
@@ -21,33 +24,18 @@ interface PlaceListWithFiltersProps {
 }
 
 export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
-    // Custom hook for intersection observer
-    function useInView<T extends HTMLElement = HTMLElement>(options?: IntersectionObserverInit) {
-        const ref = useRef<T | null>(null);
-        const [inView, setInView] = useState(true); // Default to true for SSR/first render
-
-        useEffect(() => {
-            if (!ref.current) return;
-            const observer = new window.IntersectionObserver(
-                ([entry]) => setInView(entry.isIntersecting),
-                options
-            );
-            observer.observe(ref.current);
-            return () => observer.disconnect();
-        }, [options]);
-
-        return [ref, inView] as const;
-    }
-
-    const [dataTableRef, isDataTableInView] = useInView<HTMLDivElement>({ threshold: 0.01 });
-    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>({ threshold: 0.3 });
+    // Use external hook with primitive parameters for stable dependencies
+    // DataTable uses threshold 0 (any pixel visible) because it's a tall virtualized list
+    // QuickFilters uses threshold 0.3 (30% visible) for more precise visibility detection
+    const [dataTableRef, isDataTableInView] = useInView<HTMLElement>(0);
+    const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>(0.3);
     const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
     const [openingSoonOpen, setOpeningSoonOpen] = useState(false);
     const [visibleCount, setVisibleCount] = useState<number>(places.length);
 
 
     return (
-        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,_1fr)_265px]">
+        <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_260px]">
             <div className="col-span-1 space-y-4 mb-4 sm:mb-0 sm:pr-12">
                 {/* Intro Text */}
                 <div id="browse-section" data-testid="browse-section" className="text-2xl font-bold">Browse</div>
@@ -73,24 +61,24 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 {/* Desktop Unified Results Toolbar */}
                 <div className="hidden sm:flex flex-wrap items-center gap-6 border-b border-border/60 pb-4 mt-2">
                     {/* Sort */}
-                    <div className="flex items-center gap-3 min-w-[260px]">
+                    <div className="flex items-center gap-3">
                         <span className="text-base font-semibold tracking-tight">Sort</span>
-                        <div className="w-full text-sm"><SortSelect className="sm:w-xl" /></div>
+                        <div className="text-sm"><SortSelect /></div>
                     </div>
                     {/* Opening Soon Pill */}
                     {openingSoonPlaces.length > 0 && (
-                        <button
-                            type="button"
+                        <Button
+                            variant="ghost"
                             onClick={() => setOpeningSoonOpen(true)}
                             aria-haspopup="dialog"
                             aria-expanded={openingSoonOpen}
-                            className="inline-flex items-center gap-1 rounded-full bg-primary/10 hover:bg-primary/15 text-primary text-sm h-8 px-3 font-bold transition"
+                            className="rounded-md border border-primary/30 bg-primary/10 hover:bg-primary/15 text-primary text-sm h-8 px-3 font-bold gap-1"
                         >
                             <Icons.clock className="h-4 w-4" />
-                            <span>Opening Soon ({openingSoonPlaces.length})</span>
-                        </button>
+                            Opening Soon ({openingSoonPlaces.length})
+                        </Button>
                     )}
-                    <div className="flex-grow" />
+                    <div className="grow" />
                     <div className="flex items-center gap-3">
                         <span className="text-base font-semibold tracking-tight tabular-nums">{visibleCount} {visibleCount === 1 ? 'place' : 'places'}</span>
                     </div>
@@ -105,7 +93,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                             aria-haspopup="dialog"
                             aria-expanded={openingSoonOpen}
                             aria-label={`View ${openingSoonPlaces.length} places opening soon`}
-                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-xs focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
                         >
                             <Icons.clock className="h-4 w-4 text-primary shrink-0" />
                             <span className="text-sm font-semibold text-foreground truncate">
@@ -131,7 +119,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
 
                 {/* DataTable Section */}
                 <section ref={dataTableRef}>
-                    <Suspense fallback={<div className="mt-16 flex items-center justify-center"><div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div></div>}>
+                    <Suspense fallback={<div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>}>
                         {/* DataTable receives the already mobile-filtered array (displayedPlaces).
                             This keeps DataTable focused on presentation + generic filtering/sorting logic only. */}
                         <DataTable rowData={places} onFilteredCountChange={setVisibleCount} />
@@ -152,7 +140,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
             {/* Second Column: Desktop Filter Sidebar */}
             <div className="hidden sm:block">
                 <FilterSidebar
-                    className="max-w-[265px] border border-border sticky top-16 px-6 space-y-[.65rem]"
+                    className="max-w-[260px] border border-border sticky top-16 px-6 space-y-[.65rem]"
                 />
             </div>
         </div>

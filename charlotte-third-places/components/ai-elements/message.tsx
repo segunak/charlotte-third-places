@@ -20,7 +20,7 @@ import {
   XIcon,
 } from "lucide-react";
 import type { ComponentProps, HTMLAttributes, ReactElement } from "react";
-import { createContext, memo, useContext, useEffect, useState } from "react";
+import { createContext, memo, useContext, useEffect, useMemo, useState } from "react";
 import { Streamdown } from "streamdown";
 import Image from "next/image";
 
@@ -49,7 +49,7 @@ export const MessageContent = ({
   <div
     className={cn(
       "flex w-fit flex-col gap-2 overflow-hidden text-sm leading-relaxed",
-      "group-[.is-user]:ml-auto group-[.is-user]:rounded-lg group-[.is-user]:bg-primary/90 group-[.is-user]:px-4 group-[.is-user]:py-3 group-[.is-user]:text-primary-foreground group-[.is-user]:font-medium group-[.is-user]:shadow",
+      "group-[.is-user]:ml-auto group-[.is-user]:rounded-lg group-[.is-user]:bg-primary/90 group-[.is-user]:px-4 group-[.is-user]:py-3 group-[.is-user]:text-primary-foreground group-[.is-user]:font-medium group-[.is-user]:shadow-sm",
       "group-[.is-assistant]:rounded-lg group-[.is-assistant]:bg-muted/50 group-[.is-assistant]:px-4 group-[.is-assistant]:py-3 group-[.is-assistant]:text-foreground",
       className
     )}
@@ -189,7 +189,10 @@ export const MessageBranchContent = ({
   ...props
 }: MessageBranchContentProps) => {
   const { currentBranch, setBranches, branches } = useMessageBranch();
-  const childrenArray = Array.isArray(children) ? children : [children];
+  const childrenArray = useMemo(
+    () => (Array.isArray(children) ? children : [children]),
+    [children]
+  );
 
   // Use useEffect to update branches when they change
   useEffect(() => {
@@ -318,7 +321,7 @@ export const MessageResponse = memo(
           "[&>*:last-child]:mb-0",
           // Code block handling
           "[&_code]:whitespace-pre-wrap",
-          "[&_code]:break-words",
+          "[&_code]:wrap-break-word",
           "[&_pre]:max-w-full",
           "[&_pre]:overflow-x-auto",
           // Fix: tighten paragraphs inside list items so bullet + text align
@@ -385,7 +388,7 @@ export function MessageAttachment({
           {onRemove && (
             <Button
               aria-label="Remove attachment"
-              className="absolute top-2 right-2 size-6 rounded-full bg-background/80 p-0 opacity-0 backdrop-blur-sm transition-opacity hover:bg-background group-hover:opacity-100 [&>svg]:size-3"
+              className="absolute top-2 right-2 size-6 rounded-full bg-background/80 p-0 opacity-0 backdrop-blur-xs transition-opacity hover:bg-background group-hover:opacity-100 [&>svg]:size-3"
               onClick={(e: { stopPropagation: () => void; }) => {
                 e.stopPropagation();
                 onRemove();

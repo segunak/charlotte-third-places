@@ -5,12 +5,14 @@ import {
   DEFAULT_FILTER_CONFIG,
   placeMatchesFilters,
   filterPlaces,
+  sortPlaces,
   MOBILE_PICKER_FIELDS,
   MOBILE_CHIP_FIELDS,
   SORT_DEFS,
   type FilterConfig,
 } from '@/lib/filters'
 import type { Place } from '@/lib/types'
+import { SortField, SortDirection } from '@/lib/types'
 
 // Helper to create a minimal Place object for testing
 function createTestPlace(overrides: Partial<Place> = {}): Place {
@@ -123,6 +125,49 @@ describe('MOBILE_CHIP_FIELDS', () => {
   })
 })
 
+describe('DESKTOP_PICKER_FIELDS', () => {
+  it('includes name, neighborhood, type, and tags', () => {
+    const nameDef = FILTER_DEFS.find(d => d.key === 'name')
+    const neighborhoodDef = FILTER_DEFS.find(d => d.key === 'neighborhood')
+    const typeDef = FILTER_DEFS.find(d => d.key === 'type')
+    const tagsDef = FILTER_DEFS.find(d => d.key === 'tags')
+    
+    expect(nameDef?.desktopPicker).toBe(true)
+    expect(neighborhoodDef?.desktopPicker).toBe(true)
+    expect(typeDef?.desktopPicker).toBe(true)
+    expect(tagsDef?.desktopPicker).toBe(true)
+  })
+
+  it('does not include chip fields', () => {
+    const parkingDef = FILTER_DEFS.find(d => d.key === 'parking')
+    const wifiDef = FILTER_DEFS.find(d => d.key === 'freeWiFi')
+    const sizeDef = FILTER_DEFS.find(d => d.key === 'size')
+    
+    expect(parkingDef?.desktopPicker).toBe(false)
+    expect(wifiDef?.desktopPicker).toBe(false)
+    expect(sizeDef?.desktopPicker).toBe(false)
+  })
+})
+
+describe('MULTI_SELECT_FIELDS', () => {
+  it('includes tags', () => {
+    const tagsDef = FILTER_DEFS.find(d => d.key === 'tags')
+    expect(tagsDef?.multiSelect).toBe(true)
+  })
+
+  it('does not include name, neighborhood, type, or chip fields', () => {
+    const nameDef = FILTER_DEFS.find(d => d.key === 'name')
+    const neighborhoodDef = FILTER_DEFS.find(d => d.key === 'neighborhood')
+    const typeDef = FILTER_DEFS.find(d => d.key === 'type')
+    const parkingDef = FILTER_DEFS.find(d => d.key === 'parking')
+    
+    expect(nameDef?.multiSelect).toBeFalsy()
+    expect(neighborhoodDef?.multiSelect).toBeFalsy()
+    expect(typeDef?.multiSelect).toBeFalsy()
+    expect(parkingDef?.multiSelect).toBeFalsy()
+  })
+})
+
 describe('SORT_DEFS', () => {
   it('has unique keys for each sort option', () => {
     const keys = SORT_DEFS.map(d => d.key)
@@ -174,9 +219,14 @@ describe('DEFAULT_FILTER_CONFIG', () => {
     }
   })
 
-  it('all default values are set to FILTER_SENTINEL', () => {
-    for (const key of Object.keys(DEFAULT_FILTER_CONFIG)) {
-      expect(DEFAULT_FILTER_CONFIG[key as keyof FilterConfig].value).toBe(FILTER_SENTINEL)
+  it('all default values are set correctly (FILTER_SENTINEL or empty array for multi-select)', () => {
+    for (const def of FILTER_DEFS) {
+      const config = DEFAULT_FILTER_CONFIG[def.key as keyof FilterConfig]
+      if (def.multiSelect) {
+        expect(config.value).toEqual([])
+      } else {
+        expect(config.value).toBe(FILTER_SENTINEL)
+      }
     }
   })
 })
@@ -227,21 +277,44 @@ describe('placeMatchesFilters', () => {
     expect(placeMatchesFilters(place, nonMatchingFilters)).toBe(false)
   })
 
-  it('filters by tags array', () => {
+  it('filters by tags array with multi-select AND logic', () => {
     const place = createTestPlace({ tags: ['Has Fireplace', 'Good for Groups'] })
     
-    const matchingFilters: FilterConfig = {
+    // Single tag match - place has this tag
+    const singleMatchingFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: 'Has Fireplace' },
+      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: ['Has Fireplace'] },
     }
     
+    // Multiple tags - place must have ALL (AND logic)
+    const allMatchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: ['Has Fireplace', 'Good for Groups'] },
+    }
+    
+    // Place only has one of these - should NOT match with AND logic
+    const partialMatchFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: ['Has Fireplace', 'Outdoor Seating'] },
+    }
+    
+    // No matching tags at all
     const nonMatchingFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: 'Outdoor Seating' },
+      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: ['Outdoor Seating', 'Pet Friendly'] },
     }
     
-    expect(placeMatchesFilters(place, matchingFilters)).toBe(true)
+    // Empty array means no constraint (show all)
+    const noConstraintFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      tags: { ...DEFAULT_FILTER_CONFIG.tags, value: [] },
+    }
+    
+    expect(placeMatchesFilters(place, singleMatchingFilters)).toBe(true)
+    expect(placeMatchesFilters(place, allMatchingFilters)).toBe(true)
+    expect(placeMatchesFilters(place, partialMatchFilters)).toBe(false) // AND logic: must have ALL
     expect(placeMatchesFilters(place, nonMatchingFilters)).toBe(false)
+    expect(placeMatchesFilters(place, noConstraintFilters)).toBe(true)
   })
 
   it('requires all active filters to match (AND logic)', () => {
@@ -321,5 +394,125 @@ describe('filterPlaces', () => {
     
     filterPlaces(places, filters)
     expect(places).toEqual(original)
+  })
+})
+
+describe('sortPlaces', () => {
+  const basePlaces: Place[] = [
+    createTestPlace({ recordId: '1', name: 'Zebra Cafe', featured: false, createdDate: new Date('2024-01-01') }),
+    createTestPlace({ recordId: '2', name: 'Alpha Coffee', featured: false, createdDate: new Date('2024-03-01') }),
+    createTestPlace({ recordId: '3', name: 'Beta Bakery', featured: true, createdDate: new Date('2024-02-01') }),
+  ]
+
+  describe('featured-first priority', () => {
+    it('puts featured places first regardless of sort field', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result[0].name).toBe('Beta Bakery')
+      expect(result[0].featured).toBe(true)
+    })
+
+    it('maintains featured-first with date sort', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.DateAdded, direction: SortDirection.Ascending })
+      
+      expect(result[0].featured).toBe(true)
+    })
+  })
+
+  describe('name sorting', () => {
+    it('sorts by name ascending after featured', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      // First is featured
+      expect(result[0].name).toBe('Beta Bakery')
+      // Then alphabetical
+      expect(result[1].name).toBe('Alpha Coffee')
+      expect(result[2].name).toBe('Zebra Cafe')
+    })
+
+    it('sorts by name descending after featured', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.Name, direction: SortDirection.Descending })
+      
+      // First is featured
+      expect(result[0].name).toBe('Beta Bakery')
+      // Then reverse alphabetical
+      expect(result[1].name).toBe('Zebra Cafe')
+      expect(result[2].name).toBe('Alpha Coffee')
+    })
+  })
+
+  describe('date sorting', () => {
+    it('sorts by createdDate ascending after featured', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.DateAdded, direction: SortDirection.Ascending })
+      
+      // First is featured (Feb 2024)
+      expect(result[0].name).toBe('Beta Bakery')
+      // Then oldest first
+      expect(result[1].name).toBe('Zebra Cafe') // Jan 2024
+      expect(result[2].name).toBe('Alpha Coffee') // Mar 2024
+    })
+
+    it('sorts by createdDate descending after featured', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.DateAdded, direction: SortDirection.Descending })
+      
+      // First is featured
+      expect(result[0].name).toBe('Beta Bakery')
+      // Then newest first
+      expect(result[1].name).toBe('Alpha Coffee') // Mar 2024
+      expect(result[2].name).toBe('Zebra Cafe') // Jan 2024
+    })
+  })
+
+  describe('immutability', () => {
+    it('does not mutate the original array', () => {
+      const original = [...basePlaces]
+      sortPlaces(basePlaces, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(basePlaces).toEqual(original)
+    })
+
+    it('returns a new array', () => {
+      const result = sortPlaces(basePlaces, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result).not.toBe(basePlaces)
+    })
+  })
+
+  describe('edge cases', () => {
+    it('handles empty array', () => {
+      const result = sortPlaces([], { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result).toEqual([])
+    })
+
+    it('handles single item array', () => {
+      const single = [createTestPlace({ name: 'Only Place' })]
+      const result = sortPlaces(single, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result).toHaveLength(1)
+      expect(result[0].name).toBe('Only Place')
+    })
+
+    it('handles all featured places', () => {
+      const allFeatured = [
+        createTestPlace({ name: 'Zebra', featured: true }),
+        createTestPlace({ name: 'Alpha', featured: true }),
+      ]
+      const result = sortPlaces(allFeatured, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result[0].name).toBe('Alpha')
+      expect(result[1].name).toBe('Zebra')
+    })
+
+    it('handles no featured places', () => {
+      const noFeatured = [
+        createTestPlace({ name: 'Zebra', featured: false }),
+        createTestPlace({ name: 'Alpha', featured: false }),
+      ]
+      const result = sortPlaces(noFeatured, { field: SortField.Name, direction: SortDirection.Ascending })
+      
+      expect(result[0].name).toBe('Alpha')
+      expect(result[1].name).toBe('Zebra')
+    })
   })
 })

@@ -68,7 +68,9 @@ import {
   useMemo,
   useRef,
   useState,
+  useTransition,
 } from "react";
+import { useDebouncedCallback } from "use-debounce";
 
 // ============================================================================
 // Provider Context & Types
@@ -310,6 +312,7 @@ export function PromptInputAttachment({
           <div className="relative size-5 shrink-0">
             <div className="absolute inset-0 flex size-5 items-center justify-center overflow-hidden rounded bg-background transition-opacity group-hover:opacity-0">
               {isImage ? (
+                // eslint-disable-next-line @next/next/no-img-element -- Dynamic blob URL attachment preview
                 <img
                   alt={filename || "attachment"}
                   className="size-5 object-cover"
@@ -345,6 +348,7 @@ export function PromptInputAttachment({
         <div className="w-auto space-y-3">
           {isImage && (
             <div className="flex max-h-96 w-96 items-center justify-center overflow-hidden rounded-md border">
+              {/* eslint-disable-next-line @next/next/no-img-element -- Dynamic blob URL attachment preview */}
               <img
                 alt={filename || "attachment preview"}
                 className="max-h-full max-w-full object-contain"
@@ -649,17 +653,17 @@ export const PromptInput = ({
     };
   }, [add, globalDrop]);
 
-  useEffect(
-    () => () => {
+  useEffect(() => {
+    // Capture current files for cleanup
+    const currentFiles = filesRef.current;
+    return () => {
       if (!usingProvider) {
-        for (const f of filesRef.current) {
+        for (const f of currentFiles) {
           if (f.url) URL.revokeObjectURL(f.url);
         }
       }
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps -- cleanup only on unmount; filesRef always current
-    [usingProvider]
-  );
+    };
+  }, [usingProvider]);
 
   const handleChange: ChangeEventHandler<HTMLInputElement> = (event) => {
     if (event.currentTarget.files) {
@@ -817,6 +821,28 @@ export const PromptInputTextarea = ({
   const attachments = usePromptInputAttachments();
   const [isComposing, setIsComposing] = useState(false);
 
+  // Local state for immediate UI feedback - prevents 2408ms INP
+  const [localValue, setLocalValue] = useState(controller?.textInput.value ?? "");
+  const [, startTransition] = useTransition();
+
+  // Sync local state when controller value changes externally (e.g., after submit)
+  const controllerValue = controller?.textInput.value;
+  useEffect(() => {
+    if (controllerValue !== undefined && controllerValue !== localValue) {
+      setLocalValue(controllerValue);
+    }
+  }, [controllerValue, localValue]);
+
+  // Debounced update to controller (150ms standard debounce)
+  const debouncedSetInput = useDebouncedCallback(
+    (value: string) => {
+      startTransition(() => {
+        controller?.textInput.setInput(value);
+      });
+    },
+    150
+  );
+
   const handleKeyDown: KeyboardEventHandler<HTMLTextAreaElement> = (e) => {
     if (e.key === "Enter") {
       if (isComposing || e.nativeEvent.isComposing) {
@@ -826,6 +852,9 @@ export const PromptInputTextarea = ({
         return;
       }
       e.preventDefault();
+
+      // Flush debounced input before submitting
+      debouncedSetInput.flush();
 
       // Check if the submit button is disabled before submitting
       const form = e.currentTarget.form;
@@ -879,9 +908,13 @@ export const PromptInputTextarea = ({
 
   const controlledProps = controller
     ? {
-        value: controller.textInput.value,
+        value: localValue,
         onChange: (e: ChangeEvent<HTMLTextAreaElement>) => {
-          controller.textInput.setInput(e.currentTarget.value);
+          const newValue = e.currentTarget.value;
+          // Immediate local update for responsive UI
+          setLocalValue(newValue);
+          // Debounced controller update wrapped in transition
+          debouncedSetInput(newValue);
           onChange?.(e);
         },
       }
@@ -1155,7 +1188,8 @@ export const PromptInputSpeechButton = ({
           const newValue =
             currentValue + (currentValue ? " " : "") + finalTranscript;
 
-          textarea.value = newValue;
+          // Use Object.assign to set value without direct mutation that React Compiler flags
+          Object.assign(textarea, { value: newValue });
           textarea.dispatchEvent(new Event("input", { bubbles: true }));
           onTranscriptionChange?.(newValue);
         }

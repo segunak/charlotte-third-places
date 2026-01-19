@@ -10,49 +10,57 @@ interface ShareButtonProps extends ButtonProps {
     displayType?: "text" | "icon";
 }
 
-export const ShareButton = React.forwardRef<HTMLButtonElement, ShareButtonProps>(
-    ({ url, placeName, displayType = "text", variant = "default", size = "default", ...props }, ref) => {
-        const handleShare = async () => {
-            const shareData = {
-                title: placeName || "",
-                text: placeName ? `Charlotte Third Places: ${placeName}` : "",
-                url,
-            };
-
-            if (navigator.share) {
-                try {
-                    await navigator.share(shareData);
-                    console.log("Successfully shared");
-                } catch (error) {
-                    console.error("Error sharing", error);
-                }
-            } else {
-                // Fallback to copying the link to the clipboard
-                try {
-                    await navigator.clipboard.writeText(shareData.url);
-                    alert("Link copied to clipboard!");
-                } catch (error) {
-                    console.error("Failed to copy the link to clipboard", error);
-                }
-            }
+export const ShareButton = (
+    {
+        ref,
+        url,
+        placeName,
+        displayType = "text",
+        variant = "default",
+        size = "default",
+        ...props
+    }: ShareButtonProps & {
+        ref?: React.RefObject<HTMLButtonElement>;
+    }
+) => {
+    const handleShare = async () => {
+        const shareData = {
+            title: placeName || "",
+            text: placeName ? `Charlotte Third Places: ${placeName}` : "",
+            url,
         };
 
-        return (
-            <Button
-                ref={ref}
-                variant={variant}
-                size={size}
-                onClick={handleShare}
-                {...props}
-            >
-                {displayType === "icon" ? (
-                    <Icons.share className="h-7 w-7 text-primary" aria-label="Share" />
-                ) : (
-                    "Share"
-                )}
-            </Button>
-        );
-    }
-);
+        if (navigator.share) {
+            try {
+                await navigator.share(shareData);
+                console.log("Successfully shared");
+            } catch (error) {
+                console.error("Error sharing", error);
+            }
+        } else {
+            // Fallback to copying the link to the clipboard
+            try {
+                await navigator.clipboard.writeText(shareData.url);
+                alert("Link copied to clipboard!");
+            } catch (error) {
+                console.error("Failed to copy the link to clipboard", error);
+            }
+        }
+    };
 
-ShareButton.displayName = "ShareButton";
+    return (
+        <Button
+            ref={ref}
+            variant={variant}
+            size={size}
+            onClick={handleShare}
+            {...props}
+        >
+            {displayType === "icon" ? (
+                <Icons.share className="h-7 w-7 text-primary" aria-label="Share" />
+            ) : (
+                "Share"
+            )}
+        </Button>
+    );
+};

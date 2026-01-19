@@ -38,7 +38,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
     return (
       <Drawer open={open} onOpenChange={onOpenChange}>
         <DrawerContent
-          className="overflow-hidden flex flex-col pb-safe max-h-[86dvh]"
+          className="overflow-hidden flex flex-col pb-safe max-h-[95dvh]"
           onInteractOutside={(e) => e.preventDefault()}
           onOpenAutoFocus={(e) => e.preventDefault()}
           onFocusOutside={(e) => e.preventDefault()}
@@ -48,8 +48,8 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
             <DrawerTitle>Opening Soon</DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
-          <DrawerFooter>
-            <Button className="w-full font-bold" onClick={() => onOpenChange(false)}>Close</Button>
+          <DrawerFooter className="flex-row justify-center">
+            <Button className="h-11 text-base w-4xl" onClick={() => onOpenChange(false)}>Close</Button>
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
@@ -61,13 +61,14 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
       <DialogContent
         className="fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg w-auto max-w-xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
         onInteractOutside={(e) => e.preventDefault()}
+        crossCloseIconSize="h-7 w-7"
       >
         <DialogHeader className="shrink-0">
           <DialogTitle>Opening Soon</DialogTitle>
         </DialogHeader>
         <div className="flex-1 overflow-y-auto">{content}</div>
-        <div className="pt-2 pb-4 px-4 shrink-0">
-          <Button className="w-full font-bold" onClick={() => onOpenChange(false)}>Close</Button>
+        <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
+          <Button className="h-11 text-base w-full" onClick={() => onOpenChange(false)}>Close</Button>
         </div>
       </DialogContent>
     </Dialog>
