@@ -26,13 +26,17 @@
 /*
   Scrollbar hide utility.
   Hides scrollbar while keeping scroll functionality.
+  
+  Usage:
+  - scrollbar-hide         → Always hide scrollbar
+  - max-md:scrollbar-hide  → Hide on mobile only (<768px)
+  - md:scrollbar-hide      → Hide on desktop only (≥768px)
 */
 @utility scrollbar-hide {
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  scrollbar-width: none; /* Firefox */
   
   &::-webkit-scrollbar {
-    display: none;
+    display: none; /* Chrome, Safari, Opera */
   }
 }
 
