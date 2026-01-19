@@ -53,7 +53,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <>
             <Dialog open={open} onOpenChange={onClose}>
                 <DialogContent
-                    ref={isMobile ? contentRef : undefined}
                     crossCloseIconSize="h-7 w-7"
                     crossCloseIconColor="text-black dark:text-white"
                     className={cn(
@@ -61,7 +60,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         // Apply centralized gradient (featured/openingSoon) if provided
                         highlights?.gradients.modal,
                         isMobile
-                            ? "w-full max-h-[95dvh] overflow-y-auto"
+                            ? "w-full max-h-[95dvh] overflow-hidden flex flex-col"
                             : "w-auto max-w-xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
                     )}
                     onOpenAutoFocus={(e) => {
@@ -95,14 +94,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>
                     </DialogHeader>
 
-                    {/* Body: desktop pins footer by making only this part scroll; mobile lets outer scroll */}
-                    {isMobile ? (
+                    {/* Body: scrollable content area, footer stays fixed */}
+                    <div ref={contentRef} className="flex-1 overflow-y-auto min-h-0">
                         <PlaceContent place={place} layout="modal" />
-                    ) : (
-                        <div ref={contentRef} className="flex-1 overflow-y-auto">
-                            <PlaceContent place={place} layout="modal" />
-                        </div>
-                    )}
+                    </div>
 
                     <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
                         {place.operational !== "Opening Soon" && (
