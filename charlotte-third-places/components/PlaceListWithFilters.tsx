@@ -10,6 +10,7 @@ import dynamic from "next/dynamic";
 import { SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { Button } from "@/components/ui/button";
 import { useInView } from "@/hooks/useInView";
 
 // Dynamically import DataTable for lazy loading with count callback
@@ -58,22 +59,22 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 {/* Desktop Unified Results Toolbar */}
                 <div className="hidden sm:flex flex-wrap items-center gap-6 border-b border-border/60 pb-4 mt-2">
                     {/* Sort */}
-                    <div className="flex items-center gap-3 min-w-[260px]">
+                    <div className="flex items-center gap-3">
                         <span className="text-base font-semibold tracking-tight">Sort</span>
-                        <div className="w-full text-sm"><SortSelect className="sm:w-xl" /></div>
+                        <div className="text-sm"><SortSelect /></div>
                     </div>
                     {/* Opening Soon Pill */}
                     {openingSoonPlaces.length > 0 && (
-                        <button
-                            type="button"
+                        <Button
+                            variant="ghost"
                             onClick={() => setOpeningSoonOpen(true)}
                             aria-haspopup="dialog"
                             aria-expanded={openingSoonOpen}
-                            className="inline-flex items-center gap-1 rounded-full bg-primary/10 hover:bg-primary/15 text-primary text-sm h-8 px-3 font-bold transition"
+                            className="rounded-md border border-primary/30 bg-primary/10 hover:bg-primary/15 text-primary text-sm h-8 px-3 font-bold gap-1"
                         >
                             <Icons.clock className="h-4 w-4" />
-                            <span>Opening Soon ({openingSoonPlaces.length})</span>
-                        </button>
+                            Opening Soon ({openingSoonPlaces.length})
+                        </Button>
                     )}
                     <div className="grow" />
                     <div className="flex items-center gap-3">

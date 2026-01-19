@@ -481,6 +481,7 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
                 onOpenChange={onDropdownOpenChange}
                 showDefaultOption={false}
                 defaultValue={defaultSortLabel}
+                className="w-60"
             />
         </div>
     );
