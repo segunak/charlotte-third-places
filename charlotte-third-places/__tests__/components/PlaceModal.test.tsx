@@ -11,15 +11,19 @@
  * Key functionality tested:
  * - Modal visibility logic (returns null when closed)
  * - getPlaceHighlights integration for featured/opening soon
+ * - Scroll hint arrow visibility (mobile-only feature)
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
+import { render, screen, waitFor, fireEvent, act } from '@testing-library/react'
 import type { Place } from '@/lib/types'
+
+// Track the mock return value so we can change it per test
+let mockIsMobile = false
 
 // Mock hooks
 vi.mock('@/hooks/use-mobile', () => ({
-  useIsMobile: () => false,
+  useIsMobile: () => mockIsMobile,
 }))
 
 // Mock ModalContext
@@ -77,8 +81,43 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
 }
 
 describe('PlaceModal', () => {
+  // Store original property descriptors to restore later
+  let originalScrollHeight: PropertyDescriptor | undefined
+  let originalClientHeight: PropertyDescriptor | undefined
+
   beforeEach(() => {
     vi.clearAllMocks()
+    mockIsMobile = false // Reset to desktop by default
+    vi.useFakeTimers()
+
+    // Mock scrollHeight and clientHeight on HTMLDivElement.prototype
+    // so contentRef.current.scrollHeight > clientHeight returns true
+    originalScrollHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'scrollHeight')
+    originalClientHeight = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'clientHeight')
+
+    Object.defineProperty(HTMLElement.prototype, 'scrollHeight', {
+      configurable: true,
+      get: function () {
+        return 2000 // Simulate scrollable content
+      },
+    })
+    Object.defineProperty(HTMLElement.prototype, 'clientHeight', {
+      configurable: true,
+      get: function () {
+        return 600 // Simulate visible viewport
+      },
+    })
+  })
+
+  afterEach(() => {
+    vi.useRealTimers()
+    // Restore original property descriptors
+    if (originalScrollHeight) {
+      Object.defineProperty(HTMLElement.prototype, 'scrollHeight', originalScrollHeight)
+    }
+    if (originalClientHeight) {
+      Object.defineProperty(HTMLElement.prototype, 'clientHeight', originalClientHeight)
+    }
   })
 
   describe('Visibility Logic', () => {
@@ -170,6 +209,88 @@ describe('PlaceModal', () => {
       // Should have at least one Ask AI button
       const askAIButtons = screen.getAllByRole('button', { name: /ask ai/i })
       expect(askAIButtons.length).toBeGreaterThan(0)
+    })
+  })
+
+  describe('Scroll Hint Arrow', () => {
+    it('shows scroll hint arrow on mobile when content is scrollable', async () => {
+      mockIsMobile = true
+      const place = createMockPlace()
+      render(<PlaceModal place={place} open={true} onClose={vi.fn()} />)
+
+      // Advance timers to trigger the scroll hint logic (200ms delay)
+      // Use act() to flush React state updates
+      await act(async () => {
+        vi.advanceTimersByTime(250)
+      })
+
+      // The scroll hint button should be visible (aria-hidden="false" when shown)
+      const scrollHintButton = screen.getByRole('button', { name: /scroll for more/i })
+      expect(scrollHintButton).toBeInTheDocument()
+      expect(scrollHintButton).toHaveClass('opacity-100')
+      expect(scrollHintButton).toHaveAttribute('aria-hidden', 'false')
+    })
+
+    it('does NOT show scroll hint arrow on desktop', async () => {
+      mockIsMobile = false
+      const place = createMockPlace()
+      render(<PlaceModal place={place} open={true} onClose={vi.fn()} />)
+
+      // Advance timers
+      await act(async () => {
+        vi.advanceTimersByTime(250)
+      })
+
+      // The scroll hint button should be hidden (opacity-0) and aria-hidden
+      // On desktop, the button still exists but is hidden via opacity-0 and aria-hidden
+      // Use querySelector since aria-hidden elements aren't accessible to getByRole
+      const scrollHintButton = document.querySelector('[aria-label="Scroll for more"]')
+      expect(scrollHintButton).toBeInTheDocument()
+      expect(scrollHintButton).toHaveClass('opacity-0')
+      expect(scrollHintButton).toHaveAttribute('aria-hidden', 'true')
+    })
+
+    it('hides scroll hint arrow after user scrolls', async () => {
+      mockIsMobile = true
+      const place = createMockPlace()
+      render(<PlaceModal place={place} open={true} onClose={vi.fn()} />)
+
+      // Advance timers to show the hint
+      await act(async () => {
+        vi.advanceTimersByTime(250)
+      })
+
+      // Hint should be visible
+      const scrollHintButton = screen.getByRole('button', { name: /scroll for more/i })
+      expect(scrollHintButton).toHaveClass('opacity-100')
+
+      // Find the scroll container and trigger a scroll event
+      const scrollContainer = scrollHintButton.closest('[class*="overflow-y-auto"]')
+      expect(scrollContainer).toBeInTheDocument()
+      
+      if (scrollContainer) {
+        await act(async () => {
+          fireEvent.scroll(scrollContainer)
+        })
+      }
+
+      // Hint should now be hidden (aria-hidden changes to "true")
+      expect(scrollHintButton).toHaveClass('opacity-0')
+      expect(scrollHintButton).toHaveAttribute('aria-hidden', 'true')
+    })
+
+    it('does not show scroll hint when modal is closed', async () => {
+      mockIsMobile = true
+      const place = createMockPlace()
+      const { container } = render(<PlaceModal place={place} open={false} onClose={vi.fn()} />)
+
+      // Advance timers
+      await act(async () => {
+        vi.advanceTimersByTime(250)
+      })
+
+      // Modal should not render anything
+      expect(container.textContent).toBe('')
     })
   })
 })

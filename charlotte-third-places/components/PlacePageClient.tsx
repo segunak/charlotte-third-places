@@ -224,7 +224,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                         onClick={() => setShowInfoDrawer(true)}
                                         aria-label="Photo Source Information"
                                     >
-                                        <Icons.infoCircle className="h-4 w-4" />
+                                        <Icons.infoCircle className="h-6 w-6" />
                                     </Button>
                                     <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
                                         <DrawerContent className="bg-black/95 text-white">
@@ -250,7 +250,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                                 className="h-8 w-8 p-0 rounded-full bg-black/40 hover:bg-black/60 text-white"
                                                 aria-label="Photo Source Information"
                                             >
-                                                <Icons.infoCircle className="h-4 w-4" />
+                                                <Icons.infoCircle className="h-6 w-6" />
                                             </Button>
                                         </TooltipTrigger>
                                         <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
@@ -317,11 +317,13 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 <>
                                     <CarouselPrevious
                                         variant="ghost"
+                                        iconClassName="h-7 w-7"
                                         className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
                                         aria-label="Previous photo"
                                     />
                                     <CarouselNext
                                         variant="ghost"
+                                        iconClassName="h-7 w-7"
                                         className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
                                         aria-label="Next photo"
                                     />

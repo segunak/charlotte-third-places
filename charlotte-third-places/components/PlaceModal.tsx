@@ -10,7 +10,8 @@ import {
     FC,
     useRef,
     useEffect,
-    useState
+    useState,
+    useCallback
 } from "react";
 import {
     Dialog,
@@ -33,6 +34,40 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
     const isMobile = useIsMobile();
     const highlights = place ? getPlaceHighlights(place) : null;
     const [showChat, setShowChat] = useState(false);
+    const [showScrollHint, setShowScrollHint] = useState(false);
+
+    // Show scroll hint on mobile when modal opens, hide once user scrolls
+    useEffect(() => {
+        if (!open || !isMobile) {
+            setShowScrollHint(false);
+            return;
+        }
+
+        let scrollElement: HTMLDivElement | null = null;
+
+        const handleScroll = () => {
+            // User scrolled — they know it scrolls, never show hint again this session
+            setShowScrollHint(false);
+        };
+
+        // Delay to let the dialog mount and content render
+        const timeout = setTimeout(() => {
+            scrollElement = contentRef.current;
+            if (!scrollElement) return;
+
+            const { scrollHeight, clientHeight } = scrollElement;
+            // Only show if there's actually content to scroll
+            if (scrollHeight > clientHeight) {
+                setShowScrollHint(true);
+                scrollElement.addEventListener('scroll', handleScroll, { once: true });
+            }
+        }, 200);
+
+        return () => {
+            clearTimeout(timeout);
+            scrollElement?.removeEventListener('scroll', handleScroll);
+        };
+    }, [open, isMobile, place]);
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -53,7 +88,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         <>
             <Dialog open={open} onOpenChange={onClose}>
                 <DialogContent
-                    ref={isMobile ? contentRef : undefined}
                     crossCloseIconSize="h-7 w-7"
                     crossCloseIconColor="text-black dark:text-white"
                     className={cn(
@@ -61,8 +95,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         // Apply centralized gradient (featured/openingSoon) if provided
                         highlights?.gradients.modal,
                         isMobile
-                            ? "w-full max-h-[86dvh] overflow-y-auto"
-                            : "w-auto max-w-xl mx-auto rounded-xl max-h-[95dvh] overflow-hidden flex flex-col"
+                            ? "w-full max-h-[90dvh] overflow-hidden flex flex-col"
+                            : "w-auto max-w-xl mx-auto rounded-xl max-h-[96dvh] overflow-hidden flex flex-col"
                     )}
                     onOpenAutoFocus={(e) => {
                         if (contentRef.current) {
@@ -95,19 +129,30 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <DialogDescription className="text-center">{place.type.join(", ")}</DialogDescription>
                     </DialogHeader>
 
-                    {/* Body: desktop pins footer by making only this part scroll; mobile lets outer scroll */}
-                    {isMobile ? (
+                    {/* Body: scrollable content area, footer stays fixed */}
+                    <div ref={contentRef} className="relative flex-1 overflow-y-auto min-h-0">
                         <PlaceContent place={place} layout="modal" />
-                    ) : (
-                        <div ref={contentRef} className="flex-1 overflow-y-auto">
-                            <PlaceContent place={place} layout="modal" />
-                        </div>
-                    )}
+                        
+                        {/* Floating scroll hint arrow - shows on open, fades out after first scroll */}
+                        <Button
+                            variant="default"
+                            size="icon"
+                            onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
+                            className={cn(
+                                "absolute bottom-1 right-2 rounded-full shadow-lg transition-opacity duration-300",
+                                showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
+                            )}
+                            aria-label="Scroll for more"
+                            aria-hidden={!showScrollHint}
+                        >
+                            <Icons.chevronDown className="h-4 w-4" />
+                        </Button>
+                    </div>
 
-                    <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
+                    <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
                         {place.operational !== "Opening Soon" && (
                             <Button
-                                className="h-11 text-base w-[calc(50%-6px)]"
+                                className="h-11 text-base flex-1 font-medium"
                                 onClick={() => setShowChat(true)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
@@ -116,8 +161,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         )}
                         <Button 
                             className={cn(
-                                "h-11 text-base",
-                                place.operational === "Opening Soon" ? "w-full" : "w-[calc(50%-6px)]"
+                                "h-11 text-base font-medium",
+                                place.operational === "Opening Soon" ? "w-full" : "flex-1"
                             )} 
                             onClick={onClose}
                         >
