@@ -28,7 +28,7 @@ export const CardCarousel: React.FC<CardCarouselProps> = React.memo(({ items, in
     }, [emblaApi, initialIndex, items]); // Depend on items to re-scroll after shuffle
 
     return (
-        <div className="relative">
+        <div className="relative" data-testid="card-carousel">
             <Carousel 
                 setApi={setEmblaApi} 
                 opts={{ 
