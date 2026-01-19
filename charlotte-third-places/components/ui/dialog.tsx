@@ -35,6 +35,7 @@ const DialogOverlay = (
 interface DialogContentProps extends React.ComponentPropsWithoutRef<typeof DialogPrimitive.Content> {
   crossCloseIconSize?: string;
   crossCloseIconColor?: string;
+  crossCloseClassName?: string;
 }
 
 const DialogContent = (
@@ -44,6 +45,7 @@ const DialogContent = (
     children,
     crossCloseIconSize = "h-5 w-5",
     crossCloseIconColor,
+    crossCloseClassName,
     ...props
   }: DialogContentProps & {
     ref?: React.Ref<React.ComponentRef<typeof DialogPrimitive.Content>>;
@@ -60,7 +62,7 @@ const DialogContent = (
     {...props}
   >
     {children}
-    <DialogPrimitive.Close className="absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+    <DialogPrimitive.Close className={cn("absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:outline-hidden focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground", crossCloseClassName)}>
       <X className={cn(crossCloseIconSize, crossCloseIconColor)} />
       <span className="sr-only">Close</span>
     </DialogPrimitive.Close>
