@@ -82,10 +82,17 @@
 * ESLint configuration extends `next/core-web-vitals`
 * TypeScript strict mode enabled
 * **Testing infrastructure**: See [docs/testing.md](../docs/testing.md) for complete testing guide
-* **Before running any tests**, read the testing guide to understand which commands to use:
-  - `npm run test:unit` — Unit tests (no server needed)
-  - `npm run test:e2e` — E2E tests (starts server automatically via start-server-and-test)
-  - `npm test` — Runs both with automatic server management
+
+#### Test Commands (use these, NOT raw playwright/vitest commands)
+
+| Command | Purpose | Server Handling |
+|---------|---------|-----------------|
+| `npm run test:unit` | Run unit tests (Vitest) in watch mode | No server needed |
+| `npm run test:unit:run` | Run unit tests once and exit | No server needed |
+| `npm run test:e2e` | Run E2E tests (Playwright) | **Auto-starts** dev server via `start-server-and-test` |
+| `npm test` | Run ALL tests (unit + E2E) | Auto-starts server for E2E portion |
+
+**IMPORTANT**: Always use `npm run test:e2e` for E2E tests—it starts the dev server automatically. Do NOT run `npx playwright test` directly as it requires a running server.
 
 ## Technical Specifications
 

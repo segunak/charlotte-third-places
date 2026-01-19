@@ -18,6 +18,9 @@ export function useWindowWidth(debounceMs = 150) {
     }, []);
 
     useEffect(() => {
+        // Set the correct width on mount (handles SSR hydration mismatch)
+        handleResize();
+        
         let timeoutId: ReturnType<typeof setTimeout>;
 
         const debouncedResize = () => {

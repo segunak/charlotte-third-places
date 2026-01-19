@@ -239,14 +239,14 @@ export function ResponsivePlaceCards({ places }: { places: Place[] }) {
     const handleDesktopShuffle = useCallback(() => {}, []);
 
     return (
-        <div className="relative overflow-hidden max-w-full">
+        <div className="relative overflow-hidden max-w-full" data-testid="responsive-place-cards">
             {/* Desktop Virtualized Carousel - Isolated component that doesn't re-render on filter changes */}
-            <div className="hidden sm:block">
+            <div className="hidden sm:block" data-testid="desktop-carousel-container">
                 <DesktopInfiniteCarousel places={places} onShuffle={handleDesktopShuffle} />
             </div>
 
             {/* Mobile area: Uses MobileCardCarousel which consumes filter context */}
-            <div className="sm:hidden">
+            <div className="sm:hidden" data-testid="mobile-carousel-container">
                 <MobileCardCarousel places={places} />
             </div>
         </div>

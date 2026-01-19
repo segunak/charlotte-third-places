@@ -308,6 +308,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
 
     return (
         <Card
+            data-testid="place-card"
             onClick={handleCardClick}
             className={cardClassName}>
             <CardHeader className="pb-2">
