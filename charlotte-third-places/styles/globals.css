@@ -24,6 +24,19 @@
 }
 
 /*
+  Scrollbar hide utility.
+  Hides scrollbar while keeping scroll functionality.
+*/
+@utility scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/*
   Custom scroll animation utility that uses runtime CSS variables.
   The @theme block evaluates variables at compile time, so we define
   this as a regular utility to pick up --animation-duration and 

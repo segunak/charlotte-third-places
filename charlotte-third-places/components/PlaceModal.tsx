@@ -95,7 +95,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         // Apply centralized gradient (featured/openingSoon) if provided
                         highlights?.gradients.modal,
                         isMobile
-                            ? "w-full max-h-[90dvh] overflow-hidden flex flex-col"
+                            ? "w-full max-h-[90dvh] overflow-hidden flex flex-col scrollbar-hide"
                             : "w-auto max-w-xl mx-auto rounded-xl max-h-[96dvh] overflow-hidden flex flex-col"
                     )}
                     onOpenAutoFocus={(e) => {
