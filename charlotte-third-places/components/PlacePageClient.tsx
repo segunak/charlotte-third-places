@@ -317,11 +317,13 @@ export function PlacePageClient({ place }: { place: Place }) {
                                 <>
                                     <CarouselPrevious
                                         variant="ghost"
+                                        iconClassName="h-7 w-7"
                                         className="hidden md:flex absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
                                         aria-label="Previous photo"
                                     />
                                     <CarouselNext
                                         variant="ghost"
+                                        iconClassName="h-7 w-7"
                                         className="hidden md:flex absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white border-none h-9 w-9"
                                         aria-label="Next photo"
                                     />

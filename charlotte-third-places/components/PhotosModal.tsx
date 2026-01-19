@@ -379,6 +379,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                 <CarouselPrevious
                                     variant="ghost"
                                     size="icon"
+                                    iconClassName="h-7 w-7"
                                     className={cn(
                                         "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
@@ -389,6 +390,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                 <CarouselNext
                                     variant="ghost"
                                     size="icon"
+                                    iconClassName="h-7 w-7"
                                     className={cn(
                                         "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
