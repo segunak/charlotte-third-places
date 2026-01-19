@@ -168,7 +168,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
           )}
 
           <Separator className="mb-4" />
-          <div className="flex justify-center gap-3 w-full mb-4">
+          <div className="flex justify-center gap-3 w-full">
             <FilterResetButton variant="outline" disabled={anyDropdownOpen} fullWidth={false} className="h-11 text-base w-[calc(50%-6px)]" />
 
             <DrawerClose asChild>
