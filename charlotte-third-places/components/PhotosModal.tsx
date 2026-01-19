@@ -247,7 +247,10 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
         <Dialog open={open} onOpenChange={onClose}>
             <DialogContent
                 ref={dialogRef}
-                className="max-h-[86dvh] sm:max-h-[95dvh] w-full h-full p-0 md:max-w-4xl lg:max-w-5xl xl:max-w-6xl bg-black/95 overflow-hidden flex flex-col"
+                crossCloseIconSize="h-7 w-7"
+                crossCloseIconColor="text-white"
+                crossCloseClassName="hidden md:block"
+                className="max-h-[86dvh] sm:max-h-[95dvh] w-full h-full p-0 md:max-w-2xl bg-black/95 overflow-hidden flex flex-col"
                 onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
             >
@@ -259,7 +262,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 </DialogDescription>
 
                 {/* Top bar - fixed height */}
-                <div className="shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800 z-10">
+                <div className="shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800">
                     <div className="flex items-center gap-2 min-w-0">
                         <div className="text-white font-semibold truncate">
                             {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
@@ -273,7 +276,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                     onClick={() => setShowInfoDrawer(true)}
                                     aria-label="Photo Source Information"
                                 >
-                                    <Icons.infoCircle className="h-4 w-4" />
+                                    <Icons.infoCircle className="h-6 w-6" />
                                 </Button>
                                 <Drawer open={showInfoDrawer} onOpenChange={setShowInfoDrawer}>
                                     <DrawerContent className="bg-black/95 text-white">
@@ -283,7 +286,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
                                             </DrawerDescription>
                                             <DrawerClose asChild>
-                                                <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
+                                                <Button variant="ghost" className="mt-4 text-base w-full text-white border border-white/20">Close</Button>
                                             </DrawerClose>
                                         </DrawerHeader>
                                     </DrawerContent>
@@ -298,7 +301,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                             size="sm"
                                             className="text-white/80 hover:text-white hover:bg-white/10 p-1 h-auto"
                                         >
-                                            <Icons.infoCircle className="h-4 w-4" />
+                                            <Icons.infoCircle className="h-6 w-6" />
                                             <span className="sr-only">Photo Source Information</span>
                                         </Button>
                                     </TooltipTrigger>
@@ -309,16 +312,6 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                             </TooltipProvider>
                         )}
                     </div>
-                    <DialogClose asChild>
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            className="text-white hover:bg-white/20"
-                            aria-label="Close photo gallery"
-                        >
-                            <Icons.close className="h-5 w-5" />
-                        </Button>
-                    </DialogClose>
                 </div>
 
                 {/* Main image container using Carousel */}
@@ -344,7 +337,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         key={`photo-${origIdx}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
+                                        <div className="relative w-full h-[50dvh] md:h-[65dvh] max-h-full flex items-center justify-center">
                                             {isActive ? (
                                                 <Image
                                                     src={optimizeGooglePhotoUrl(photo, width)}
@@ -386,6 +379,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                 <CarouselPrevious
                                     variant="ghost"
                                     size="icon"
+                                    iconClassName="h-7 w-7"
                                     className={cn(
                                         "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
@@ -396,6 +390,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                 <CarouselNext
                                     variant="ghost"
                                     size="icon"
+                                    iconClassName="h-7 w-7"
                                     className={cn(
                                         "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
                                         "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
@@ -504,14 +499,12 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                     </div>
                 )}
 
-                {/* Add a Close button at the bottom on mobile for easier access */}
-                {isMobile && (
-                    <div className="shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
-                        <Button onClick={onClose}>
-                            Close
-                        </Button>
-                    </div>
-                )}
+                {/* Close button at the bottom for easy access */}
+                <div className="shrink-0 w-full flex justify-center items-center py-4 px-6 bg-black/90 border-t border-gray-800">
+                    <Button onClick={onClose} className="h-11 text-base w-full md:w-auto md:px-28">
+                        Close
+                    </Button>
+                </div>
             </DialogContent>
         </Dialog>
     );

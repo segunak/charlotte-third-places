@@ -25,7 +25,7 @@ export function ChatDialog({ open, onClose, place, initialMessage }: ChatDialogP
     if (isMobile) {
         return (
             <Drawer open={open} onOpenChange={(isOpen) => !isOpen && onClose()} repositionInputs={false}>
-                <DrawerContent className="h-[80dvh] pb-safe">
+                <DrawerContent className="h-[95dvh] pb-safe">
                     <DrawerHeader className="shrink-0 py-2 mt-4">
                         <DrawerTitle>{title}</DrawerTitle>
                         <DrawerDescription className="text-xs">
@@ -48,7 +48,7 @@ export function ChatDialog({ open, onClose, place, initialMessage }: ChatDialogP
     return (
         <Dialog open={open} onOpenChange={(isOpen) => !isOpen && onClose()}>
             <DialogContent
-                className="sm:max-w-xl h-[90vh] flex flex-col p-0 gap-0"
+                className="sm:max-w-xl h-[95dvh] flex flex-col p-0 gap-0"
                 crossCloseIconSize="h-7 w-7"
                 crossCloseIconColor="text-black dark:text-white"
             >
