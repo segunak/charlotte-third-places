@@ -1,6 +1,11 @@
 import * as React from "react"
 
-const MOBILE_BREAKPOINT = 768
+/**
+ * Tailwind's md: breakpoint. Screens >= this value are desktop.
+ * Mobile is defined as width < DESKTOP_BREAKPOINT.
+ * @see https://tailwindcss.com/docs/responsive-design#overview
+ */
+const DESKTOP_BREAKPOINT = 768
 
 /**
  * Hook to detect if the current viewport is mobile-sized.
@@ -18,12 +23,12 @@ export function useIsMobile() {
   const [isMobile, setIsMobile] = React.useState<boolean>(false)
 
   React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
+    const mql = window.matchMedia(`(width < ${DESKTOP_BREAKPOINT}px)`)
     const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+      setIsMobile(window.innerWidth < DESKTOP_BREAKPOINT)
     }
     mql.addEventListener("change", onChange)
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+    setIsMobile(window.innerWidth < DESKTOP_BREAKPOINT)
     return () => mql.removeEventListener("change", onChange)
   }, [])
 
