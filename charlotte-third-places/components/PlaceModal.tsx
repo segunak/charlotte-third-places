@@ -99,10 +99,10 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <PlaceContent place={place} layout="modal" />
                     </div>
 
-                    <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
+                    <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
                         {place.operational !== "Opening Soon" && (
                             <Button
-                                className="h-11 text-base flex-1"
+                                className="h-11 text-base flex-1 font-medium"
                                 onClick={() => setShowChat(true)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
@@ -111,7 +111,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         )}
                         <Button 
                             className={cn(
-                                "h-11 text-base",
+                                "h-11 text-base font-medium",
                                 place.operational === "Opening Soon" ? "w-full" : "flex-1"
                             )} 
                             onClick={onClose}

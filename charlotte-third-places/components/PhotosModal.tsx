@@ -283,7 +283,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
                                             </DrawerDescription>
                                             <DrawerClose asChild>
-                                                <Button variant="ghost" className="h-11 text-base w-full text-white border border-white/20">Close</Button>
+                                                <Button variant="ghost" className="mt-4 text-base w-full text-white border border-white/20">Close</Button>
                                             </DrawerClose>
                                         </DrawerHeader>
                                     </DrawerContent>
