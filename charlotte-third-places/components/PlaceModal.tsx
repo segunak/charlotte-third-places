@@ -96,7 +96,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         highlights?.gradients.modal,
                         isMobile
                             ? "w-full max-h-[90dvh] overflow-hidden flex flex-col"
-                            : "w-auto max-w-xl mx-auto rounded-xl max-h-[90dvh] overflow-hidden flex flex-col"
+                            : "w-auto max-w-xl mx-auto rounded-xl max-h-[96dvh] overflow-hidden flex flex-col"
                     )}
                     onOpenAutoFocus={(e) => {
                         if (contentRef.current) {
@@ -139,7 +139,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             size="icon"
                             onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
                             className={cn(
-                                "absolute bottom-3 right-1 h-8 w-8 rounded-full shadow-lg transition-opacity duration-300",
+                                "absolute bottom-1 right-1 rounded-full shadow-lg transition-opacity duration-300",
                                 showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
                             )}
                             aria-label="Scroll for more"
