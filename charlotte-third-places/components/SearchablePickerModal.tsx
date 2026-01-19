@@ -134,49 +134,10 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         crossCloseIconSize="h-7 w-7"
       >
         {/* Header section */}
-        <div className="px-6 pt-5 pb-4 border-b space-y-4">
+        <div className="px-6 pt-5 pb-5 border-b space-y-5">
           <DialogTitle className="text-lg font-semibold text-center">
             {modalTitle}
           </DialogTitle>
-          
-          {/* Multi-select match mode toggle */}
-          {isMultiple && onMatchModeChange && (
-            <div className="flex flex-col items-center gap-1.5">
-              <div className="inline-flex rounded-lg border border-input bg-muted/30 p-0.5">
-                <button
-                  type="button"
-                  onClick={() => handleMatchModeClick('and')}
-                  aria-pressed={localMatchMode === 'and'}
-                  className={cn(
-                    "px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
-                    localMatchMode === 'and'
-                      ? "bg-primary text-primary-foreground shadow-xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                  )}
-                >
-                  Match All
-                </button>
-                <button
-                  type="button"
-                  onClick={() => handleMatchModeClick('or')}
-                  aria-pressed={localMatchMode === 'or'}
-                  className={cn(
-                    "px-3 py-1.5 text-sm font-medium rounded-md transition-colors",
-                    localMatchMode === 'or'
-                      ? "bg-primary text-primary-foreground shadow-xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                  )}
-                >
-                  Match Any
-                </button>
-              </div>
-              <p className="text-sm text-muted-foreground">
-                {localMatchMode === 'and' 
-                  ? "Results must have every selected tag" 
-                  : "Results can have any selected tag"}
-              </p>
-            </div>
-          )}
           
           {/* Search input */}
           {showSearch && (
@@ -190,6 +151,45 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                 placeholder="Search..."
                 className="w-full pl-10 bg-muted/30"
               />
+            </div>
+          )}
+          
+          {/* Multi-select match mode toggle - below search, sized like action buttons */}
+          {isMultiple && onMatchModeChange && (
+            <div className="flex flex-col items-center gap-2">
+              <div className="inline-flex rounded-lg border border-input bg-muted/30 p-1 w-full">
+                <button
+                  type="button"
+                  onClick={() => handleMatchModeClick('and')}
+                  aria-pressed={localMatchMode === 'and'}
+                  className={cn(
+                    "flex-1 h-11 text-base font-medium rounded-md transition-colors",
+                    localMatchMode === 'and'
+                      ? "bg-primary text-primary-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  )}
+                >
+                  Has All Tags
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleMatchModeClick('or')}
+                  aria-pressed={localMatchMode === 'or'}
+                  className={cn(
+                    "flex-1 h-11 text-base font-medium rounded-md transition-colors",
+                    localMatchMode === 'or'
+                      ? "bg-primary text-primary-foreground shadow-xs"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                  )}
+                >
+                  Has Any Tag
+                </button>
+              </div>
+              <p className="text-md text-muted-foreground">
+                {localMatchMode === 'and' 
+                  ? "Results must have every selected tag" 
+                  : "Results can have any selected tag"}
+              </p>
             </div>
           )}
         </div>
