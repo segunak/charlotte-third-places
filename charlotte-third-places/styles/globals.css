@@ -24,6 +24,23 @@
 }
 
 /*
+  Scrollbar hide utility.
+  Hides scrollbar while keeping scroll functionality.
+  
+  Usage:
+  - scrollbar-hide         → Always hide scrollbar
+  - max-md:scrollbar-hide  → Hide on mobile only (<768px)
+  - md:scrollbar-hide      → Hide on desktop only (≥768px)
+*/
+@utility scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+/*
   Custom scroll animation utility that uses runtime CSS variables.
   The @theme block evaluates variables at compile time, so we define
   this as a regular utility to pick up --animation-duration and 
