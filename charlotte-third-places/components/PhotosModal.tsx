@@ -344,7 +344,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         key={`photo-${origIdx}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        <div className="relative w-full h-[50vh] md:h-[65vh] max-h-full flex items-center justify-center">
+                                        <div className="relative w-full h-[50dvh] md:h-[65dvh] max-h-full flex items-center justify-center">
                                             {isActive ? (
                                                 <Image
                                                     src={optimizeGooglePhotoUrl(photo, width)}
