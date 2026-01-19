@@ -134,18 +134,19 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <PlaceContent place={place} layout="modal" />
                         
                         {/* Floating scroll hint arrow - shows on open, fades out after first scroll */}
-                        <button
-                            type="button"
+                        <Button
+                            variant="default"
+                            size="icon"
                             onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
                             className={cn(
-                                "absolute bottom-3 right-1 h-10 w-10 rounded-full bg-primary text-primary-foreground shadow-lg flex items-center justify-center transition-opacity duration-300",
+                                "absolute bottom-3 right-1 h-8 w-8 rounded-full shadow-lg transition-opacity duration-300",
                                 showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
                             )}
                             aria-label="Scroll for more"
                             aria-hidden={!showScrollHint}
                         >
-                            <Icons.chevronDown className="h-5 w-5" />
-                        </button>
+                            <Icons.chevronDown className="h-4 w-4" />
+                        </Button>
                     </div>
 
                     <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
