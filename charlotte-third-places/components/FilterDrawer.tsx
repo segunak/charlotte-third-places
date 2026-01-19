@@ -93,7 +93,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe max-h-[95dvh] flex flex-col">
+      <DrawerContent className="pb-safe max-h-[97dvh] flex flex-col">
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -167,7 +167,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
             />
           )}
 
-          <Separator className="mb-4 mt-4" />
+          <Separator className="mb-4" />
           <div className="flex justify-center gap-3 w-full mb-4">
             <FilterResetButton variant="outline" disabled={anyDropdownOpen} fullWidth={false} className="h-11 text-base w-[calc(50%-6px)]" />
 
