@@ -283,7 +283,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                                 Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
                                             </DrawerDescription>
                                             <DrawerClose asChild>
-                                                <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
+                                                <Button variant="ghost" className="h-11 text-base w-full text-white border border-white/20">Close</Button>
                                             </DrawerClose>
                                         </DrawerHeader>
                                     </DrawerContent>
@@ -506,8 +506,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
 
                 {/* Add a Close button at the bottom on mobile for easier access */}
                 {isMobile && (
-                    <div className="shrink-0 w-full flex justify-center items-center py-4 bg-black/90 border-t border-gray-800">
-                        <Button onClick={onClose}>
+                    <div className="shrink-0 w-full flex justify-center items-center py-4 px-6 bg-black/90 border-t border-gray-800">
+                        <Button onClick={onClose} className="h-11 text-base w-full">
                             Close
                         </Button>
                     </div>

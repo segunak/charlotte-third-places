@@ -102,7 +102,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">
                         {place.operational !== "Opening Soon" && (
                             <Button
-                                className="h-11 text-base w-[calc(50%-6px)]"
+                                className="h-11 text-base flex-1"
                                 onClick={() => setShowChat(true)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
@@ -112,7 +112,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <Button 
                             className={cn(
                                 "h-11 text-base",
-                                place.operational === "Opening Soon" ? "w-full" : "w-[calc(50%-6px)]"
+                                place.operational === "Opening Soon" ? "w-full" : "flex-1"
                             )} 
                             onClick={onClose}
                         >
