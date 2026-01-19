@@ -343,7 +343,7 @@ export function PlacePageClient({ place }: { place: Place }) {
 
                     {/* Thumbnails (only if more than 1 visible photo) */}
                     {visibleSlideCount > 1 && (
-                        <div className="bg-card border border-gray-300 shadow-sm rounded-lg p-2">
+                        <div className="bg-card border border-gray-300 shadow-xs rounded-lg p-2">
                             <div className="flex justify-between items-center mb-1 px-1">
                                 <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
                                 <Button
@@ -365,7 +365,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                                 <button
                                                     key={`thumb-${origIdx}`}
                                                     className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
+                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
                                                         idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
                                                             : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
@@ -399,7 +399,7 @@ export function PlacePageClient({ place }: { place: Place }) {
 
             {/* Place Content Below */}
             <Card className={cn(
-                "border border-gray-300 shadow-sm relative",
+                "border border-gray-300 shadow-xs relative",
                 highlights.gradients.card
             )}>
                 {highlights.ribbon && (

@@ -31,7 +31,7 @@ export default async function MapPage() {
             </div>
 
             {/* Desktop */}
-            <div className="hidden sm:grid grid-cols-[minmax(0,_1fr)_365px] min-h-screen">
+            <div className="hidden sm:grid grid-cols-[minmax(0,1fr)_365px] min-h-screen">
                 <section className="site-padding-left pr-8 py-8">
                     <div className="mb-4 space-y-3">
                         <h1 className="text-3xl font-bold">

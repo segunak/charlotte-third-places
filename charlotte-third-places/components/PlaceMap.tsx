@@ -6,13 +6,11 @@ import { Icons } from "@/components/Icons";
 import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
-import { FilterContext } from '@/contexts/FilterContext';
-import { useModalContext } from "@/contexts/ModalContext";
-import { useState, useEffect, useContext, useMemo, useCallback } from 'react';
+import { useFilters, useQuickSearch } from '@/contexts/FilterContext';
+import { useModalActions } from "@/contexts/ModalContext";
+import { useIsMobile } from "@/hooks/use-mobile";
+import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
-
-// Cache for consistent color assignments (moved outside component)
-const colorCache: { [key: string]: string } = {};
 
 interface PlaceMapProps {
     places: Array<Place>;
@@ -20,9 +18,13 @@ interface PlaceMapProps {
 }
 
 export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
-    const { showPlaceModal } = useModalContext();
-    const [isMobileView, setIsMobileView] = useState(false);
-    const { filters, quickFilterText } = useContext(FilterContext);
+    const { showPlaceModal } = useModalActions();
+    // Cache for consistent color assignments - using useRef to persist across renders without causing re-renders
+    const colorCacheRef = useRef<{ [key: string]: string }>({});
+    const isMobileView = useIsMobile();
+    // Consume granular contexts for optimal render performance
+    const { filters } = useFilters();
+    const { quickFilterText } = useQuickSearch();
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);
@@ -73,15 +75,6 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     };
 
     useEffect(() => {
-        const updateViewSettings = () => {
-            const isMobile = window.matchMedia('(max-width: 768px)').matches;
-            setIsMobileView(isMobile);
-        };
-
-        updateViewSettings();
-
-        window.addEventListener('resize', updateViewSettings);
-
         // Listen for location events from the MobileFindMeButton
         const handleLocationFound = (event: any) => {
             const { location } = event.detail;
@@ -96,7 +89,6 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         window.addEventListener('userLocationFound', handleLocationFound);
 
         return () => {
-            window.removeEventListener('resize', updateViewSettings);
             window.removeEventListener('userLocationFound', handleLocationFound);
         };
     }, [mapInstance]);
@@ -134,6 +126,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
         const typeToCheck = Array.isArray(placeTypes) ? placeTypes[0] : placeTypes;
         
         // Check cache first
+        const colorCache = colorCacheRef.current;
         if (colorCache[typeToCheck]) {
             return colorCache[typeToCheck];
         }
@@ -236,7 +229,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         <div className="absolute top-4 right-4 z-10">
                             <Button
                                 onClick={handleLocationClick}
-                                className="bg-[var(--button-white)] hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
+                                className="bg-(--button-white) hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
                                 size="sm"
                                 disabled={isLocating}
                             >

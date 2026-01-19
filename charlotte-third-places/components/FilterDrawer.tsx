@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState, useContext, useCallback, useRef } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
+import React, { useState, useCallback, useRef } from "react";
+import { useFilters } from "@/contexts/FilterContext";
 import { FILTER_DEFS, FILTER_SENTINEL, FilterKey, MOBILE_CHIP_FIELDS } from "@/lib/filters";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { FilterChips } from "@/components/FilterChips";
@@ -17,30 +17,39 @@ import {
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 
-export function FilterDrawer({
-  className = "",
-  showSort = false,
-  style = {},
-  showButton = true,
-  open,
-  onOpenChange,
-}: {
+interface FilterDrawerProps {
   className?: string;
   showSort?: boolean;
   style?: React.CSSProperties;
   showButton?: boolean;
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
-}) {
+}
+
+export const FilterDrawer = React.memo(function FilterDrawer({
+  className = "",
+  showSort = false,
+  style = {},
+  showButton = true,
+  open,
+  onOpenChange,
+}: FilterDrawerProps) {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
   // Use controlled state if provided, otherwise use internal state
   const isOpen = open !== undefined ? open : isDrawerOpen;
   const setIsOpen = onOpenChange || setIsDrawerOpen;
 
-  const { filters } = useContext(FilterContext);
-  // Count only filters whose value diverges from 'all' (the sentinel meaning no constraint)
-  const activeFilterCount = Object.values(filters).filter((filter) => filter.value !== FILTER_SENTINEL).length;
+  const { filters } = useFilters();
+  // Active filter count excludes fields with no constraint:
+  // - Single-select: value === 'all' sentinel
+  // - Multi-select: value is empty array []
+  const activeFilterCount = Object.values(filters).filter((filter) => {
+    if (Array.isArray(filter.value)) {
+      return filter.value.length > 0;
+    }
+    return filter.value !== FILTER_SENTINEL;
+  }).length;
   // Track open state for all selects
   const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
   const handleDropdownStateChange = useCallback((open: boolean) => {
@@ -84,7 +93,7 @@ export function FilterDrawer({
         )}
         <span className="sr-only">Open Filters</span> {/* Added for accessibility */}
       </Button>
-      <DrawerContent className="pb-safe max-h-[95dvh] flex flex-col" data-filter-context>
+      <DrawerContent className="pb-safe max-h-[97dvh] flex flex-col">
         {/* Overlay to absorb all pointer events when anyDropdownOpen is true */}
         {anyDropdownOpen && (
           <div
@@ -110,13 +119,13 @@ export function FilterDrawer({
               const config = filters[def.key as FilterKey];
               const field = def.key;
               
-              // Use chips for fields marked with useChips
+              // Use chips for fields marked with useChips (all are single-select)
               if (MOBILE_CHIP_FIELDS.has(field)) {
                 return (
                   <FilterChips
                     key={field}
                     field={field as FilterKey}
-                    value={config.value}
+                    value={config.value as string}
                     label={config.label}
                   />
                 );
@@ -131,6 +140,7 @@ export function FilterDrawer({
                   label={config.label}
                   placeholder={config.placeholder}
                   predefinedOrder={config.predefinedOrder}
+                  matchMode={config.matchMode}
                   onDropdownOpenChange={(open: boolean) => {
                     handleDropdownStateChange(open);
                     setActivePopover(open ? getPopoverId(field) : null);
@@ -157,13 +167,13 @@ export function FilterDrawer({
             />
           )}
 
-          <Separator className="mb-4 mt-4" />
-          <div className="grid grid-cols-2 gap-3 w-full mb-4">
-            <FilterResetButton variant="outline" disabled={anyDropdownOpen} />
+          <Separator className="mb-4" />
+          <div className="flex justify-center gap-3 w-full">
+            <FilterResetButton variant="outline" disabled={anyDropdownOpen} fullWidth={false} className="h-11 text-base w-[calc(50%-6px)]" />
 
             <DrawerClose asChild>
-              <Button className="disabled:opacity-100" disabled={anyDropdownOpen}>
-                Save
+              <Button className="h-11 text-base w-[calc(50%-6px)] disabled:opacity-100" disabled={anyDropdownOpen}>
+                Done
               </Button>
             </DrawerClose>
           </div>
@@ -171,4 +181,6 @@ export function FilterDrawer({
       </DrawerContent>
     </Drawer>
   );
-}
+});
+
+FilterDrawer.displayName = "FilterDrawer";

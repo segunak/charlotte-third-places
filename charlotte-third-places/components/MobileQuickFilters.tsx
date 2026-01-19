@@ -1,13 +1,13 @@
 "use client";
 
-import React, { useContext, useState } from "react";
-import { FilterContext } from "@/contexts/FilterContext";
+import React, { useState } from "react";
+import { useFilters } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { Button } from "@/components/ui/button";
 
-export function MobileQuickFilters() {
-    const { filters } = useContext(FilterContext);
+export const MobileQuickFilters = React.memo(function MobileQuickFilters() {
+    const { filters } = useFilters();
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
 
     return (
@@ -49,6 +49,7 @@ export function MobileQuickFilters() {
                         label={filters.tags.label}
                         placeholder={filters.tags.placeholder}
                         predefinedOrder={filters.tags.predefinedOrder}
+                        matchMode={filters.tags.matchMode}
                     />
                 </div>
 
@@ -77,4 +78,6 @@ export function MobileQuickFilters() {
             />
         </>
     );
-}
+});
+
+MobileQuickFilters.displayName = "MobileQuickFilters";

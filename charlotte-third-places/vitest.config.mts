@@ -5,11 +5,15 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   test: {
-    environment: 'jsdom',
+    environment: 'happy-dom',
     globals: true,
     setupFiles: ['./__tests__/setup.tsx'],
     include: ['__tests__/**/*.test.{ts,tsx}'],
     exclude: ['node_modules', '.next', 'e2e'],
+    // See: https://vitest.dev/guide/improving-performance
+    pool: 'threads',
+    fileParallelism: true,
+    maxWorkers: 3,
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],

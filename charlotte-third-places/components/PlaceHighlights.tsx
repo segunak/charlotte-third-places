@@ -94,7 +94,7 @@ const DEFINITIONS: HighlightDefinition[] = [
         key: 'habesha',
         test: p => p.tags?.includes('Habesha') ?? false,
         badge: {
-            icon: <Icons.habeshaFlags className="h-5 w-5" />,
+            icon: <Icons.HabeshaFlags className="h-5 w-5" />,
             bgClass: 'bg-amber-100',
             ariaLabel: 'Habesha business'
         }

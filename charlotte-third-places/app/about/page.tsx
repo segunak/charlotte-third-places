@@ -295,7 +295,7 @@ export default function AboutPage() {
                 Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. Keep reading to learn more.
             </p>
             {/* Creator*/}
-            <Card className="border shadow-sm">
+            <Card className="border shadow-xs">
                 <CardHeader>
                     <CardTitle>
 
@@ -329,7 +329,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Frequently Asked Questions */}
-            <Card className="border shadow-sm">
+            <Card className="border shadow-xs">
                 <CardHeader>
                     <CardTitle className="text-2xl text-center border-b pb-3">
                         Frequently Asked Questions
@@ -348,7 +348,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Tech Stack */}
-            <Card className="border shadow-sm">
+            <Card className="border shadow-xs">
                 <CardHeader>
                     <CardTitle className="text-2xl text-center border-b pb-3">
                         Tech Stack
@@ -362,7 +362,7 @@ export default function AboutPage() {
             </Card>
 
             {/* Contact Information */}
-            <Card className="border shadow-sm">
+            <Card className="border shadow-xs">
                 <CardHeader>
                     <CardTitle className="text-2xl text-center border-b pb-3">
                         Contact Information

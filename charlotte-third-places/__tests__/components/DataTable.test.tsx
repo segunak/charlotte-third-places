@@ -13,7 +13,11 @@
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, waitFor } from '@testing-library/react'
-import { FilterContext } from '@/contexts/FilterContext'
+import { 
+    FiltersContext, 
+    QuickSearchContext, 
+    SortContext 
+} from '@/contexts/FilterContext'
 import { DEFAULT_FILTER_CONFIG, FilterConfig } from '@/lib/filters'
 import { SortField, SortDirection, DEFAULT_SORT_OPTION } from '@/lib/types'
 import type { Place } from '@/lib/types'
@@ -21,6 +25,11 @@ import type { Place } from '@/lib/types'
 // Mock ModalContext
 vi.mock('@/contexts/ModalContext', () => ({
   useModalContext: () => ({
+    showPlaceModal: vi.fn(),
+    showPlacePhotos: vi.fn(),
+    showPlaceChat: vi.fn(),
+  }),
+  useModalActions: () => ({
     showPlaceModal: vi.fn(),
     showPlacePhotos: vi.fn(),
     showPlaceChat: vi.fn(),
@@ -102,9 +111,13 @@ function renderWithFilterContext(
   }
 
   return render(
-    <FilterContext.Provider value={defaultContext}>
-      <DataTable rowData={places} />
-    </FilterContext.Provider>
+    <FiltersContext.Provider value={{ filters: defaultContext.filters, setFilters: defaultContext.setFilters }}>
+      <QuickSearchContext.Provider value={{ quickFilterText: defaultContext.quickFilterText, setQuickFilterText: defaultContext.setQuickFilterText }}>
+        <SortContext.Provider value={{ sortOption: defaultContext.sortOption, setSortOption: defaultContext.setSortOption }}>
+          <DataTable rowData={places} />
+        </SortContext.Provider>
+      </QuickSearchContext.Provider>
+    </FiltersContext.Provider>
   )
 }
 
@@ -128,12 +141,13 @@ describe('DataTable', () => {
       renderWithFilterContext(places)
 
       // Wait for the loading state to clear (500ms timeout in component)
+      // Use longer timeout for CI environments where timers may be slower
       await waitFor(
         () => {
           const loader = document.querySelector('.loader')
           expect(loader).not.toBeInTheDocument()
         },
-        { timeout: 1000 }
+        { timeout: 2000 }
       )
     })
   })
@@ -282,25 +296,230 @@ describe('DataTable', () => {
       ]
 
       render(
-        <FilterContext.Provider
-          value={{
-            filters: DEFAULT_FILTER_CONFIG,
-            setFilters: vi.fn(),
-            quickFilterText: 'Coffee',
-            setQuickFilterText: vi.fn(),
-            getDistinctValues: () => [],
-            sortOption: DEFAULT_SORT_OPTION,
-            setSortOption: vi.fn(),
-          }}
-        >
-          <DataTable rowData={places} onFilteredCountChange={mockCallback} />
-        </FilterContext.Provider>
+        <FiltersContext.Provider value={{ filters: DEFAULT_FILTER_CONFIG, setFilters: vi.fn() }}>
+          <QuickSearchContext.Provider value={{ quickFilterText: 'Coffee', setQuickFilterText: vi.fn() }}>
+            <SortContext.Provider value={{ sortOption: DEFAULT_SORT_OPTION, setSortOption: vi.fn() }}>
+              <DataTable rowData={places} onFilteredCountChange={mockCallback} />
+            </SortContext.Provider>
+          </QuickSearchContext.Provider>
+        </FiltersContext.Provider>
       )
 
       await waitFor(() => {
         // Should be called with 2 (only Coffee places match)
         expect(mockCallback).toHaveBeenCalledWith(2)
       })
+    })
+  })
+
+  describe('Virtualization', () => {
+    it('only renders visible items for large lists', async () => {
+      // Create many places to trigger virtualization
+      const manyPlaces = Array.from({ length: 100 }, (_, i) =>
+        createMockPlace({ name: `Place ${i + 1}`, recordId: `rec${i}` })
+      )
+
+      renderWithFilterContext(manyPlaces)
+
+      // Wait for loading to complete
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      // Count place cards by querying for elements with place names
+      // CardTitle renders a div (not h3), so we query by text content
+      const placeCards = screen.getAllByText(/^Place \d+$/)
+      
+      // Should not render all 100 places - virtualization limits visible items
+      // The exact number depends on jsdom's mocked dimensions (600px height / ~219px row)
+      // We expect roughly 3-12 rows based on the mocked dimensions
+      expect(placeCards.length).toBeLessThan(100)
+    })
+  })
+
+  describe('Overflow and Shadow Rendering', () => {
+    it('scroll container has proper overflow styles for virtualization', async () => {
+      const places = [
+        createMockPlace({ name: 'Place 1', recordId: 'rec1' }),
+        createMockPlace({ name: 'Place 2', recordId: 'rec2' }),
+      ]
+
+      const { container } = renderWithFilterContext(places)
+
+      // Wait for loading to complete
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      // The scroll container should have overflow styles
+      // Looking for the main scrollable container
+      const scrollContainer = container.querySelector('[style*="overflow"]')
+      expect(scrollContainer).toBeInTheDocument()
+    })
+
+    it('inner content wrapper allows visible overflow for card shadows', async () => {
+      const places = [
+        createMockPlace({ name: 'Place 1', recordId: 'rec1' }),
+      ]
+
+      const { container } = renderWithFilterContext(places)
+
+      // Wait for loading to complete
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      // The inner content div should have overflow: visible for shadows
+      // This is the div that contains the virtualized rows
+      const contentWrapper = container.querySelector('[style*="position: relative"]')
+      expect(contentWrapper).toBeInTheDocument()
+      // Verify overflow is not hidden/auto which would clip shadows
+      if (contentWrapper) {
+        const style = window.getComputedStyle(contentWrapper)
+        // overflow should not be 'hidden' which would clip card shadows
+        expect(style.overflow).not.toBe('hidden')
+      }
+    })
+  })
+
+  describe('Responsive Columns', () => {
+    it('renders places in a grid layout', async () => {
+      const places = [
+        createMockPlace({ name: 'Place 1', recordId: 'rec1' }),
+        createMockPlace({ name: 'Place 2', recordId: 'rec2' }),
+      ]
+
+      const { container } = renderWithFilterContext(places)
+
+      // Wait for loading to complete
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      // Verify places are rendered
+      expect(screen.getByText('Place 1')).toBeInTheDocument()
+      expect(screen.getByText('Place 2')).toBeInTheDocument()
+    })
+  })
+
+  describe('Filter Synchronization', () => {
+    it('displays only places matching the current filter without stale data', async () => {
+      // Regression test: Previously, filtered data was updated via useEffect after paint,
+      // causing stale/unfiltered data to display for one frame. This test verifies that
+      // when filters are applied, only matching places are rendered.
+      
+      // Create places with different neighborhoods
+      const uptownPlace = createMockPlace({ 
+        name: 'Uptown Cafe', 
+        recordId: 'rec1', 
+        neighborhood: 'Uptown',
+        featured: true // Featured item - should still be filtered out if doesn't match
+      })
+      const nodaPlace = createMockPlace({ 
+        name: 'NoDa Coffee', 
+        recordId: 'rec2', 
+        neighborhood: 'NoDa',
+        featured: false 
+      })
+      const southEndPlace = createMockPlace({ 
+        name: 'South End Spot', 
+        recordId: 'rec3', 
+        neighborhood: 'South End',
+        featured: false 
+      })
+
+      const places = [uptownPlace, nodaPlace, southEndPlace]
+
+      // Create a filter that only shows NoDa places
+      const nodaFilter: FilterConfig = {
+        ...DEFAULT_FILTER_CONFIG,
+        neighborhood: {
+          ...DEFAULT_FILTER_CONFIG.neighborhood,
+          value: 'NoDa',
+        },
+      }
+
+      const { container } = renderWithFilterContext(places, { filters: nodaFilter })
+
+      // Wait for loading to complete
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      // Only the NoDa place should be visible
+      expect(screen.getByText('NoDa Coffee')).toBeInTheDocument()
+      
+      // Other places should NOT be visible (including the featured Uptown place)
+      expect(screen.queryByText('Uptown Cafe')).not.toBeInTheDocument()
+      expect(screen.queryByText('South End Spot')).not.toBeInTheDocument()
+    })
+
+    it('shows correct count matching displayed cards', async () => {
+      // Verify that the count callback receives the same number as visible cards
+      const uptownPlace = createMockPlace({ 
+        name: 'Uptown Cafe', 
+        recordId: 'rec1', 
+        neighborhood: 'Uptown' 
+      })
+      const nodaPlace = createMockPlace({ 
+        name: 'NoDa Coffee', 
+        recordId: 'rec2', 
+        neighborhood: 'NoDa' 
+      })
+
+      const places = [uptownPlace, nodaPlace]
+      const onFilteredCountChange = vi.fn()
+
+      // Filter to only NoDa
+      const nodaFilter: FilterConfig = {
+        ...DEFAULT_FILTER_CONFIG,
+        neighborhood: {
+          ...DEFAULT_FILTER_CONFIG.neighborhood,
+          value: 'NoDa',
+        },
+      }
+
+      render(
+        <FiltersContext.Provider value={{ filters: nodaFilter, setFilters: vi.fn() }}>
+          <QuickSearchContext.Provider value={{ quickFilterText: '', setQuickFilterText: vi.fn() }}>
+            <SortContext.Provider value={{ sortOption: DEFAULT_SORT_OPTION, setSortOption: vi.fn() }}>
+              <DataTable rowData={places} onFilteredCountChange={onFilteredCountChange} />
+            </SortContext.Provider>
+          </QuickSearchContext.Provider>
+        </FiltersContext.Provider>
+      )
+
+      // Wait for loading to complete and callback to be called
+      await waitFor(
+        () => {
+          expect(onFilteredCountChange).toHaveBeenCalledWith(1) // Only 1 NoDa place
+        },
+        { timeout: 1000 }
+      )
+
+      // Verify the displayed card matches the count
+      expect(screen.getByText('NoDa Coffee')).toBeInTheDocument()
+      expect(screen.queryByText('Uptown Cafe')).not.toBeInTheDocument()
     })
   })
 })

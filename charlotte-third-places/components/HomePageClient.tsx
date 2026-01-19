@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FilterProvider } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Icons } from "@/components/Icons";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
 
@@ -13,7 +14,7 @@ const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePl
     ssr: false,
     loading: () => (
         <div className="h-64 flex items-center justify-center">
-            <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+            <LoadingSpinner />
         </div>
     )
 });
@@ -22,7 +23,7 @@ const PlaceListWithFilters = nextDynamic(() => import("@/components/PlaceListWit
     ssr: false,
     loading: () => (
         <div className="h-64 flex items-center justify-center">
-            <div className="loader animate-spin ease-linear rounded-full border-4 border-t-4 border-primary h-12 w-12 border-t-transparent"></div>
+            <LoadingSpinner />
         </div>
     )
 });
@@ -53,7 +54,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
 
                 {/* Desktop Hero AI Section - Entire banner is clickable */}
                 <Link href="/chat" className="hidden sm:block group">
-                    <div className="bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 border border-primary/20 rounded-xl p-6 flex items-center justify-between transition-all duration-200 hover:shadow-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer">
+                    <div className="bg-linear-to-r from-primary/10 via-secondary/10 to-primary/10 border border-primary/20 rounded-xl p-6 flex items-center justify-between transition-all duration-200 hover:shadow-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer">
                         <div className="flex items-center gap-4">
                             <div className="bg-primary/20 rounded-full p-3 transition-colors group-hover:bg-primary/30">
                                 <Icons.chat className="h-8 w-8 text-primary" />
@@ -71,7 +72,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                 </Link>
 
                 {/* Mobile-only instant action buttons */}
-                <div className="sm:hidden grid grid-cols-4 gap-3 !mt-6 !mb-6">
+                <div className="sm:hidden grid grid-cols-4 gap-3 mt-6! mb-6!">
                     {/* Random Button */}
                     <Button
                         onClick={() => {
@@ -82,7 +83,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
                         }}
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                        className="flex flex-col items-center justify-center p-3 h-18
                                    bg-secondary hover:bg-secondary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
@@ -93,7 +94,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                     {/* Map Button */}
                     <Button
                         asChild
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem] bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
+                        className="flex flex-col items-center justify-center p-3 h-18 bg-primary hover:bg-primary/90 text-primary-foreground rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
                         <Link href="/map">
                             <Icons.map className="text-primary-foreground text-xl mb-1" />
@@ -104,7 +105,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                     {/* Chat Button */}
                     <Button
                         asChild
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                        className="flex flex-col items-center justify-center p-3 h-18
                                    bg-secondary hover:bg-secondary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
@@ -124,7 +125,7 @@ export default function HomePageClient({ places }: HomePageClientProps) {
                                 window.scrollTo({ top: y, behavior: 'smooth' });
                             }
                         }}
-                        className="flex flex-col items-center justify-center p-3 h-[4.5rem]
+                        className="flex flex-col items-center justify-center p-3 h-18
                                    bg-primary hover:bg-primary/90 text-primary-foreground
                                    rounded-xl shadow-md active:scale-95 transition-all duration-200 border-0"
                     >
