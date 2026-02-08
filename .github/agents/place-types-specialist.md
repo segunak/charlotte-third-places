@@ -1,5 +1,5 @@
 ---
-name: Place-Types-Specialist
+name: Place Types Specialist
 description: Expert at adding new place type configurations (icons, emojis, and map colors) when new types are added to the Charlotte Third Places Airtable database.
 ---
 
