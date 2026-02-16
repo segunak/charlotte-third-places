@@ -1,95 +1,14 @@
 /**
  * Photo Utilities Tests
  *
- * Tests for the photo URL processing utilities used in PhotosModal and PlacePageClient.
- * These are pure string transformation functions.
- *
- * Since these utilities are currently defined inline in components,
- * this file tests them by reimplementing the same logic.
- * Consider extracting these to a shared utility file.
+ * Tests for the photo URL processing utilities defined in lib/utils.ts
+ * and used by PhotosModal and PlacePageClient.
  */
 
 import { describe, it, expect } from 'vitest'
-
-// Reimplementing the utility functions for testing
-// These match the implementations in PhotosModal.tsx and PlacePageClient.tsx
-function cleanPhotoUrl(url: string): string {
-  if (typeof url === 'string' && url.startsWith('http')) {
-    return url.trim()
-  }
-  return ''
-}
-
-function optimizeGooglePhotoUrl(url: string, width = 1280): string {
-  const cleanedUrl = cleanPhotoUrl(url)
-
-  // Early returns for invalid URLs or special cases
-  if (!cleanedUrl) return ''
-  // Assume non-google URLs are already optimized or don't support this
-  if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl
-
-  // Most problematic URLs should be filtered out by backend, but this is a fallback
-  if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
-    return cleanedUrl
-  }
-
-  // Check if already has desired width parameter (more robust check)
-  const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`)
-  if (widthParamRegex.test(cleanedUrl)) return cleanedUrl
-
-  // Try replacing existing size parameters (e.g., =s1600, =w800-h600)
-  const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/
-  if (sizeRegex.test(cleanedUrl)) {
-    return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`)
-  }
-
-  // If URL has other parameters but no size, append (less common)
-  if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
-    // Avoid appending if it might break other params; return as is
-    return cleanedUrl
-  }
-
-  // If no parameters, append the width parameter
-  if (!cleanedUrl.includes('=')) {
-    return cleanedUrl + `=w${width}-k-no`
-  }
-
-  // Default fallback: return cleaned URL if unsure
-  return cleanedUrl
-}
+import { optimizeGooglePhotoUrl } from '@/lib/utils'
 
 describe('Photo Utilities', () => {
-  describe('cleanPhotoUrl', () => {
-    it('returns empty string for non-string input', () => {
-      // @ts-expect-error testing invalid input
-      expect(cleanPhotoUrl(null)).toBe('')
-      // @ts-expect-error testing invalid input
-      expect(cleanPhotoUrl(undefined)).toBe('')
-      // @ts-expect-error testing invalid input
-      expect(cleanPhotoUrl(123)).toBe('')
-    })
-
-    it('returns empty string for non-http URLs', () => {
-      expect(cleanPhotoUrl('')).toBe('')
-      expect(cleanPhotoUrl('not-a-url')).toBe('')
-      expect(cleanPhotoUrl('ftp://example.com/photo.jpg')).toBe('')
-    })
-
-    it('returns trimmed URL for valid http URLs', () => {
-      expect(cleanPhotoUrl('http://example.com/photo.jpg')).toBe('http://example.com/photo.jpg')
-      expect(cleanPhotoUrl('https://example.com/photo.jpg')).toBe('https://example.com/photo.jpg')
-    })
-
-    it('handles URLs with leading/trailing whitespace', () => {
-      // URL with leading whitespace doesn't start with 'http' so returns empty
-      expect(cleanPhotoUrl('  https://example.com/photo.jpg  ')).toBe('')
-      // URL with only trailing whitespace works and gets trimmed
-      expect(cleanPhotoUrl('https://example.com/photo.jpg  ')).toBe(
-        'https://example.com/photo.jpg'
-      )
-    })
-  })
-
   describe('optimizeGooglePhotoUrl', () => {
     it('returns empty string for invalid URLs', () => {
       expect(optimizeGooglePhotoUrl('')).toBe('')
