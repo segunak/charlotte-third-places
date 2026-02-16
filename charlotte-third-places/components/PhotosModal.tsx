@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Place } from "@/lib/types";
-import { cn } from "@/lib/utils";
+import { cn, blurDataURL, optimizeGooglePhotoUrl } from "@/lib/utils";
 import { FC, useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
@@ -37,59 +37,6 @@ interface PhotosModalProps {
     open: boolean;
     onClose: () => void;
 }
-
-// Simple gray placeholder
-const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
-
-// --- Utility functions that don't need to be memoized ---
-const cleanPhotoUrl = (url: string): string => {
-    if (typeof url === 'string' && url.startsWith('http')) {
-        return url.trim();
-    }
-    return '';
-};
-
-const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
-    const cleanedUrl = cleanPhotoUrl(url);
-
-    // Early returns for invalid URLs or special cases
-    if (!cleanedUrl) return '';
-    // Assume non-google URLs are already optimized or don't support this
-    if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
-
-    // Most problematic URLs should be filtered out by backend, but this is a fallback
-    // if any restricted URLs make it through to the frontend
-    // The _is_valid_photo_url method in both OutscraperProvider and GoogleMapsProvider
-    // should have already removed these, but we keep this check as a defense-in-depth measure
-    if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
-        console.warn(`Potentially restricted Google photo URL detected: ${cleanedUrl}`);
-        return cleanedUrl;
-    }
-
-    // Check if already has desired width parameter (more robust check)
-    const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
-    if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
-
-    // Try replacing existing size parameters (e.g., =s1600, =w800-h600)
-    const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
-    if (sizeRegex.test(cleanedUrl)) {
-        return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
-    }
-
-    // If URL has other parameters but no size, append (less common)
-    if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
-        // Avoid appending if it might break other params; return as is
-        return cleanedUrl;
-    }
-
-    // If no parameters, append the width parameter
-    if (!cleanedUrl.includes('=')) {
-        return cleanedUrl + `=w${width}-k-no`;
-    }
-
-    // Default fallback: return cleaned URL if unsure
-    return cleanedUrl;
-};
 
 export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
     const [api, setApi] = useState<CarouselApi>();

@@ -88,3 +88,47 @@ export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
   return shuffled;
 }
 
+/**
+ * Simple gray placeholder image for use with next/image blurDataURL.
+ */
+export const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
+
+/**
+ * Optimizes a Google photo URL by adjusting its width/size parameters.
+ * Passes through non-Google URLs unchanged. Leaves restricted gps-cs-s and
+ * gps-proxy URLs unmodified since they use a different path structure that
+ * may not support standard Google photo sizing parameters.
+ *
+ * @param url - The photo URL to optimize.
+ * @param width - The desired width in pixels (default: 1280).
+ * @returns The optimized URL string, or an empty string if invalid.
+ */
+export const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
+  const cleanedUrl = (typeof url === 'string' && url.startsWith('http')) ? url.trim() : '';
+
+  if (!cleanedUrl) return '';
+  if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
+
+  if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
+    return cleanedUrl;
+  }
+
+  const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
+  if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
+
+  const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
+  if (sizeRegex.test(cleanedUrl)) {
+    return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
+  }
+
+  if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
+    return cleanedUrl;
+  }
+
+  if (!cleanedUrl.includes('=')) {
+    return cleanedUrl + `=w${width}-k-no`;
+  }
+
+  return cleanedUrl;
+};
+
