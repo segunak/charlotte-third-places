@@ -3,6 +3,8 @@ name: Unit Tests
 on:
   push:
     branches: [develop]
+  pull_request:
+    branches: [develop, main, master]
   workflow_dispatch:
 
 # Cancel in-progress runs for the same branch
