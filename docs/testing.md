@@ -87,7 +87,7 @@ Runs `npm run test:ci` (Vitest with coverage) on push to `develop`/`master` and 
 
 ### E2E Tests
 
-**File**: [.github/workflows/playwright-tests.yml](../.github/workflows/playwright-tests.yml)
+**File**: [.github/workflows/e2e-tests.yml](../.github/workflows/e2e-tests.yml)
 
 Triggered by `deployment_status` event when Vercel preview deployment completes. Runs Playwright against the preview URL.
 
@@ -100,7 +100,7 @@ To require tests to pass before merging PRs into `master`:
 3. Enable **Require status checks to pass before merging**
 4. Add these required checks:
    - `Run Vitest` (from unit-tests.yml)
-   - `Run Playwright` (from playwright-tests.yml)
+   - `Run Playwright` (from e2e-tests.yml)
 
 ## Writing Tests
 
