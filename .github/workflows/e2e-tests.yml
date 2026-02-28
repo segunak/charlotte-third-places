@@ -1,4 +1,4 @@
-name: Playwright E2E Tests
+name: E2E Tests
 
 # Triggered by Vercel deployment status - runs after preview deploy completes
 # Can also be triggered manually with optional URL override
