@@ -59,7 +59,7 @@
     "@xyflow/react": "^12.9.3",
     "ai": "^5.0.105",
     "airtable": "^0.12.2",
-    "axios": "^1.8.2",
+    "axios": "^1.13.6",
     "babel-plugin-react-compiler": "^1.0.0",
     "better-auth": "^1.4.10",
     "class-variance-authority": "^0.7.1",
