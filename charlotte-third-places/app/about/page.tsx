@@ -1,5 +1,4 @@
 import Link from "next/link";
-import * as React from "react";
 import Image from "next/image";
 import type { Metadata } from 'next'
 import { Icons } from "@/components/Icons";
@@ -292,7 +291,7 @@ export default function AboutPage() {
                 About
             </h1>
             <p className="text-pretty text-center max-w-2xl mx-auto">
-                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. Keep reading to learn more.
+                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. To learn more about the project and the story behind it, check out the feature in <ResponsiveLink href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6">The Charlotte Observer</ResponsiveLink>, or keep reading below.
             </p>
             {/* Creator*/}
             <Card className="border shadow-xs">
@@ -344,6 +343,20 @@ export default function AboutPage() {
                             </AccordionItem>
                         ))}
                     </Accordion>
+                </CardContent>
+            </Card>
+
+            {/* Charlotte Observer Feature */}
+            <Card className="border shadow-xs">
+                <CardHeader>
+                    <CardTitle className="text-2xl text-center border-b pb-3">
+                        Charlotte Observer Feature
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="leading-relaxed text-pretty space-y-4">
+                    <p>
+                        Charlotte Third Places was featured in <ResponsiveLink href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6">The Charlotte Observer</ResponsiveLink>. The article covers the story behind the project, details on <ResponsiveLink href="https://segunakinyemi.com">its creator</ResponsiveLink>, and the mission of making third places in greater Charlotte easier to find. Give it a read!
+                    </p>
                 </CardContent>
             </Card>
 
