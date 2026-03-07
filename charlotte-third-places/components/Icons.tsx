@@ -84,7 +84,8 @@ import {
   FaStar,
   FaCrown,
   FaCommentAlt,
-  FaClock
+  FaClock,
+  FaGem
 } from "react-icons/fa";
 import {
   SiApplearcade
@@ -163,6 +164,7 @@ export const Icons = {
   couch: FaCouch,
   comicBook: FaSuperpowers,
   pickleball: FaTableTennisPaddleBall,
+  gem: FaGem,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"
