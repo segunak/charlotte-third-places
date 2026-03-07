@@ -8,7 +8,7 @@ description: Researches places in or near Charlotte. Produces structured listing
 # Unrecognized tool names are silently ignored, so both environments coexist safely.
 # https://code.visualstudio.com/docs/copilot/customization/custom-agents
 # https://docs.github.com/en/copilot/reference/custom-agents-configuration#tools
-tools: [vscode, web, airtable/get_table_schema, airtable/list_bases, airtable/list_records_for_table, airtable/list_tables_for_base, airtable/ping, airtable/search_bases, todo]
+tools: [vscode, web, read, airtable/get_table_schema, airtable/list_bases, airtable/list_records_for_table, airtable/list_tables_for_base, airtable/ping, airtable/search_bases, todo]
 # mcp-servers is used ONLY by GitHub Copilot coding agent (cloud). VS Code ignores it
 # and uses .vscode/mcp.json instead. The tools key here controls which MCP tools are
 # exposed to the system; the top-level tools list above filters what the agent actually uses.
@@ -291,13 +291,12 @@ Tags are curated labels that describe notable characteristics of a place. They h
 
 The tags currently used on the website are:
 
-Black Owned, Christian, Great Date Spot, Great For Students, Habesha, Has Fireplace, Hidden Gem, Latino Owned, Loose Leaf Tea, Middle Eastern, Open Late, Outdoor Outlets
+Black Owned, Charlotte Local, Christian, Great Date Spot, Great For Students, Habesha, Has Fireplace, Hidden Gem, Latino Owned, Loose Leaf Tea, Middle Eastern, Open Late, Outdoor Outlets, Woman Owned
 
 Rules:
 
 - Review all research (official site, reviews, Reddit threads, social media, news articles, etc.) and suggest any tags from the list above that clearly apply.
 - You may also suggest NEW tags that are not on the list if research strongly supports them. If suggesting a new tag, label it as **"Suggested New Tag: [Your Suggestion]"** with a brief justification.
-- Examples of potentially useful new tags: Veteran Owned, Dog Friendly, Live Music, Board Games, Family Friendly, Women Owned, Asian Owned, Patio Seating, Locally Roasted, Art On Display, Event Space, Quiet, Disability Inclusive, Charlotte Local (meaning the business is not a nationwide or regional chain and is instead locally owned and operated), etc.
 - Do not tag based on assumptions. Every tag must be supported by evidence from your research.
 - If no tags apply, write "None identified".
 
