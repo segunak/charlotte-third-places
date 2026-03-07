@@ -64,6 +64,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "☕",
     mapColor: "#00BFFF", // Deep Sky Blue
   },
+  "Collectibles Shop": {
+    icon: Icons.gem,
+    emoji: "💎",
+    mapColor: "#B8860B", // Dark Goldenrod
+  },
   "Comic Book Store": {
     icon: Icons.comicBook,
     emoji: "🦸",
