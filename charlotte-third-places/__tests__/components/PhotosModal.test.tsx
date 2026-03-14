@@ -64,6 +64,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     twitter: '',
     linkedIn: '',
     tags: [],
+    curatorPhotos: [],
     photos: [
       'https://lh3.googleusercontent.com/photo1',
       'https://lh3.googleusercontent.com/photo2',
@@ -261,6 +262,22 @@ describe('PhotosModal', () => {
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
       expect(screen.getByText(/Photo gallery for Test Place/)).toBeInTheDocument()
+    })
+  })
+
+  describe('Mixed Photo Sources', () => {
+    it('renders with both blob storage and Google URLs', () => {
+      const place = createMockPlace({
+        photos: [
+          'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg',
+          'https://lh3.googleusercontent.com/photo1',
+          'https://lh3.googleusercontent.com/photo2',
+        ],
+      })
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      expect(screen.getByRole('dialog')).toBeInTheDocument()
+      expect(screen.getByText(/Photo 1 of 3/)).toBeInTheDocument()
     })
   })
 })

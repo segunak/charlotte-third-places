@@ -179,7 +179,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                             <DrawerHeader>
                                                 <DrawerTitle>Photo Source Information</DrawerTitle>
                                                 <DrawerDescription className="text-white/90">
-                                                    Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                                    Photos are sourced from Google Maps, the site curator, and community contributors.
                                                 </DrawerDescription>
                                                 <DrawerClose asChild>
                                                     <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
@@ -202,7 +202,7 @@ export function PlacePageClient({ place }: { place: Place }) {
                                             </Button>
                                         </TooltipTrigger>
                                         <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
-                                            Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                            Photos are sourced from Google Maps, the site curator, and community contributors.
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>
