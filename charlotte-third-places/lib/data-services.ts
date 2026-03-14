@@ -219,7 +219,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                     .filter((item: string) => item.length > 0)
                     .filter((item: string, idx: number, arr: string[]) => arr.indexOf(item) === idx);
             }
-            if (["Photos"].includes(key)) {
+            if (["Photos", "Curator Photo URLs"].includes(key)) {
                 if (!value) return [];
                 return parsePythonStyleArray(value);
             }
@@ -238,8 +238,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
             // For Airtable records
             const value = record.get(key);
 
-            // Special handling for Photos field from Airtable
-            if (key === "Photos") {
+            // Special handling for Photos and Curator Photo URLs fields from Airtable
+            if (key === "Photos" || key === "Curator Photo URLs") {
                 if (!value) return [];
                 // If it's already an array, return it
                 if (Array.isArray(value)) return value;
@@ -281,7 +281,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         googleMapsPlaceId: getField("Google Maps Place Id"),
         googleMapsProfileURL: getField("Google Maps Profile URL"),
         appleMapsProfileURL: getField("Apple Maps Profile URL"),
-        photos: getField("Photos"),
+        curatorPhotos: getField("Curator Photo URLs"),
+        photos: [...getField("Curator Photo URLs"), ...getField("Photos")],
         comments: getField("Comments"),
         latitude: getField("Latitude"),
         longitude: getField("Longitude"),

@@ -70,5 +70,10 @@ describe('Photo Utilities', () => {
       const url = 'https://lh3.googleusercontent.com/gps-proxy/abc123'
       expect(optimizeGooglePhotoUrl(url)).toBe(url)
     })
+
+    it('returns Azure Blob Storage URLs unchanged', () => {
+      const url = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg'
+      expect(optimizeGooglePhotoUrl(url)).toBe(url)
+    })
   })
 })

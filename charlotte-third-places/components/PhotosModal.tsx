@@ -230,7 +230,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         <DrawerHeader>
                                             <DrawerTitle>Photo Source Information</DrawerTitle>
                                             <DrawerDescription className="text-white/90">
-                                                Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                                Photos are sourced from Google Maps, the site curator, and community contributors.
                                             </DrawerDescription>
                                             <DrawerClose asChild>
                                                 <Button variant="ghost" className="mt-4 text-base w-full text-white border border-white/20">Close</Button>
@@ -253,7 +253,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                                         </Button>
                                     </TooltipTrigger>
                                     <TooltipContent side="bottom" className="bg-black/95 text-white/90 max-w-xs">
-                                        Photos are sourced from Google Maps and its users. They are not taken or owned by Charlotte Third Places.
+                                        Photos are sourced from Google Maps, the site curator, and community contributors.
                                     </TooltipContent>
                                 </Tooltip>
                             </TooltipProvider>
