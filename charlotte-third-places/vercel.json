@@ -11,6 +11,10 @@
             {
                 "protocol": "https",
                 "hostname": "lh3.googleusercontent.com"
+            },
+            {
+                "protocol": "https",
+                "hostname": "thirdplacesdata.blob.core.windows.net"
             }
         ],
         "minimumCacheTTL": 604800
