@@ -94,10 +94,30 @@ export function shuffleArrayNoAdjacentDuplicates<T>(array: T[]): T[] {
 export const blurDataURL = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8//9/PQAI8wNPvd7POQAAAABJRU5ErkJggg==';
 
 /**
- * Optimizes a Google photo URL by adjusting its width/size parameters.
- * Passes through non-Google URLs unchanged. Leaves restricted gps-cs-s and
- * gps-proxy URLs unmodified since they use a different path structure that
- * may not support standard Google photo sizing parameters.
+ * Optimizes a Google photo URL by adjusting its width/size parameters and
+ * requesting WebP format with v1 compression for smaller file sizes.
+ *
+ * Passes through non-Google URLs unchanged (e.g. Street View thumbnails on
+ * streetviewpixels-pa.googleapis.com use a different parameter system and are
+ * already served as WebP by Next.js image optimization).
+ *
+ * Google's lh3.googleusercontent.com image serving infrastructure supports an
+ * undocumented but widely-used URL parameter system. Parameters are appended
+ * after "=" and separated by hyphens. The key parameters used here are:
+ *
+ *   - w{n}     — set image width to n pixels
+ *   - rw       — request WebP format (RequestWebp). Also available:
+ *                 rj (JPEG), rp (PNG), rg (GIF)
+ *   - v{0-3}   — WebP/JPEG compression level. v0 (or omitted) = original
+ *                 quality, v1 = slight compression, v2 = moderate,
+ *                 v3 = aggressive. v1 yields ~30-46% smaller files than
+ *                 rw alone with no visible quality loss.
+ *   - k        — kill animation (serve static image)
+ *   - no       — no overlay (removes video play button on thumbnails)
+ *
+ * Example: =w1280-rw-v1-k-no
+ *
+ * Reference: https://stackoverflow.com/questions/25148567/list-of-all-the-app-engine-images-service-get-serving-url-uri-options
  *
  * @param url - The photo URL to optimize.
  * @param width - The desired width in pixels (default: 1280).
@@ -109,16 +129,14 @@ export const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
   if (!cleanedUrl) return '';
   if (!cleanedUrl.includes('googleusercontent.com')) return cleanedUrl;
 
-  if (cleanedUrl.includes('/gps-cs-s/') || cleanedUrl.includes('/gps-proxy/')) {
-    return cleanedUrl;
-  }
+  const suffix = `=w${width}-rw-v1-k-no`;
 
   const widthParamRegex = new RegExp(`=[whs]${width}(-[^=]+)?$`);
-  if (widthParamRegex.test(cleanedUrl)) return cleanedUrl;
+  if (widthParamRegex.test(cleanedUrl) && cleanedUrl.includes('-rw-')) return cleanedUrl;
 
-  const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-k-no)?$/;
+  const sizeRegex = /=[swh]\d+(-[swh]\d+)?(-rw)?(-v\d)?(-k-no)?$/;
   if (sizeRegex.test(cleanedUrl)) {
-    return cleanedUrl.replace(sizeRegex, `=w${width}-k-no`);
+    return cleanedUrl.replace(sizeRegex, suffix);
   }
 
   if (cleanedUrl.includes('=') && !sizeRegex.test(cleanedUrl)) {
@@ -126,7 +144,7 @@ export const optimizeGooglePhotoUrl = (url: string, width = 1280): string => {
   }
 
   if (!cleanedUrl.includes('=')) {
-    return cleanedUrl + `=w${width}-k-no`;
+    return cleanedUrl + suffix;
   }
 
   return cleanedUrl;
