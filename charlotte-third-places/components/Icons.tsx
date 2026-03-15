@@ -10,7 +10,8 @@ import {
   MdEditLocationAlt,
   MdAttachMoney,
   MdEmojiFoodBeverage,
-  MdAutoAwesome
+  MdAutoAwesome,
+  MdMilitaryTech
 } from "react-icons/md";
 import {
   RiDrinks2Fill,
@@ -196,6 +197,7 @@ export const Icons = {
       <path d="M426.984 190.034a84.796 22.756 0 1 0 169.592 0 84.796 22.756 0 1 0-169.592 0Z" fill="#E58D23" />
     </svg>
   ),
+  militaryTech: MdMilitaryTech,
   alertCircle: IoAlertCircle,
   questionMark: FaQuestion,
   folder: FaFolder,
