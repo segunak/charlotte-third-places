@@ -109,6 +109,15 @@ const DEFINITIONS: HighlightDefinition[] = [
         }
     },
     {
+        key: 'veteranOwned',
+        test: p => p.tags?.includes('Veteran Owned') ?? false,
+        badge: {
+            icon: <Icons.militaryTech className="h-6 w-6 text-amber-400" />,
+            bgClass: 'bg-emerald-900',
+            ariaLabel: 'Veteran-owned business'
+        }
+    },
+    {
         key: 'christian',
         priority: 3,
         test: p => p.tags?.includes('Christian') ?? false,
