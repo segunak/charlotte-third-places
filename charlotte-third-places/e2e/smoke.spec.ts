@@ -269,8 +269,8 @@ test.describe('PlaceCard Interaction', () => {
       const dialog = page.locator('[role="dialog"]')
       await expect(dialog).toBeVisible({ timeout: 5000 })
       
-      // Close button in footer should be visible (use .first() since there's also an X button)
-      const closeButton = dialog.getByRole('button', { name: /close/i }).first()
+      // Close button in footer should be visible — use exact name to avoid matching "Closing Soon" badge
+      const closeButton = dialog.getByRole('button', { name: 'Close', exact: true }).first()
       await expect(closeButton).toBeVisible()
       
       // Clicking close should dismiss the modal
