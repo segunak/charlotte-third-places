@@ -123,44 +123,47 @@ const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
         timeZone: "America/New_York",
     }).format(new Date());
 
-    // Status badge colors — mobile shows just the status word, desktop shows full detail
+    // Extract today's hours for mobile display (e.g., "7 AM - 9 PM" or "Closed")
+    const todayLine = hours.find(h => h.toLowerCase().startsWith(today.toLowerCase() + ":"));
+    const todayHours = todayLine ? todayLine.substring(todayLine.indexOf(":") + 1).trim() : null;
+    const mobileLabel = todayHours ? `Today: ${todayHours}` : "Hours";
+
+    // Status badge colors — mobile shows today's hours, desktop shows real-time status
     const badgeConfig = (() => {
-        switch (status.state) {
-            case "open":
-                return {
-                    className: "bg-emerald-100 text-emerald-900 border-emerald-200",
-                    label: <>
-                        <span className="text-emerald-600 font-bold">Open</span>
-                        <span className="hidden sm:inline">{" · Closes "}{status.closesAt}</span>
-                    </>,
-                };
-            case "closing-soon":
-                return {
-                    className: "bg-orange-100 text-orange-900 border-orange-200",
-                    label: <>
-                        <span className="text-orange-600 font-bold">Closing Soon</span>
-                        <span className="hidden sm:inline">{" · Closes "}{status.closesAt}</span>
-                    </>,
-                };
-            case "closed":
-                return {
-                    className: "bg-red-100 text-red-900 border-red-200",
-                    label: <>
-                        <span className="text-red-500 font-bold">Closed</span>
-                        {status.opensAt && <span className="hidden sm:inline">{` · Opens ${status.opensAt}`}</span>}
-                    </>,
-                };
-            case "closed-today":
-                return {
-                    className: "bg-red-100 text-red-900 border-red-200",
-                    label: <span className="text-red-500 font-bold">Closed</span>,
-                };
-            default:
-                return {
-                    className: "bg-gray-100 text-gray-900 border-gray-200",
-                    label: <span>Hours</span>,
-                };
-        }
+        // Determine badge color based on status
+        const colorClass = (() => {
+            switch (status.state) {
+                case "open": return "bg-emerald-100 text-emerald-900 border-emerald-200";
+                case "closing-soon": return "bg-orange-100 text-orange-900 border-orange-200";
+                case "closed":
+                case "closed-today": return "bg-red-100 text-red-900 border-red-200";
+                default: return "bg-gray-100 text-gray-900 border-gray-200";
+            }
+        })();
+
+        // Desktop label with real-time status
+        const desktopLabel = (() => {
+            switch (status.state) {
+                case "open":
+                    return <><span className="text-emerald-600 font-bold">Open</span>{" · Closes "}{status.closesAt}</>;
+                case "closing-soon":
+                    return <><span className="text-orange-600 font-bold">Closing Soon</span>{" · Closes "}{status.closesAt}</>;
+                case "closed":
+                    return <><span className="text-red-500 font-bold">Closed</span>{status.opensAt ? ` · Opens ${status.opensAt}` : ""}</>;
+                case "closed-today":
+                    return <span className="text-red-500 font-bold">Closed Today</span>;
+                default:
+                    return <span>Hours</span>;
+            }
+        })();
+
+        return {
+            className: colorClass,
+            label: <>
+                <span className="sm:hidden">{mobileLabel}</span>
+                <span className="hidden sm:inline">{desktopLabel}</span>
+            </>,
+        };
     })();
 
     return (
@@ -175,7 +178,7 @@ const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
                         variant="default"
                         disableHover
                         className={cn(
-                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis max-w-full",
+                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer sm:whitespace-nowrap max-w-full",
                             badgeConfig.className
                         )}
                     >
@@ -189,7 +192,7 @@ const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
                         variant="default"
                         disableHover
                         className={cn(
-                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer whitespace-nowrap",
+                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer sm:whitespace-nowrap max-w-full",
                             badgeConfig.className
                         )}
                     >
@@ -425,8 +428,8 @@ export const QuickFacts: FC<QuickFactsProps> = ({
         ];
 
     return (
-        <div className="overflow-x-auto">
-            <table className="min-w-full table-fixed border-separate border-spacing-y-0.5">
+        <div className="overflow-hidden">
+            <table className="w-full table-fixed border-separate border-spacing-y-0.5">
                 <tbody className="divide-y divide-muted/60">
                     {rows.filter(r => !r.hidden).map(r => (
                         <tr key={r.key}>

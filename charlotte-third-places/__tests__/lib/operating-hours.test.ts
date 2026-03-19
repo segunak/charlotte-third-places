@@ -3,6 +3,7 @@ import {
     parseHour24,
     parseTimeToMinutes,
     getClosingHour,
+    getDayTimeRange,
     isOpenLate,
     injectOpenLateTags,
     getHoursStatus,
@@ -199,5 +200,99 @@ describe("getHoursStatus", () => {
         const hours = [`${today}: 12 PM - 9 PM`];
         const status = getHoursStatus(hours);
         expect(status.state).not.toBe("unknown");
+    });
+
+    it("handles multi-range hours (dual opening periods)", () => {
+        const today = new Intl.DateTimeFormat("en-US", {
+            weekday: "long",
+            timeZone: "America/New_York",
+        }).format(new Date());
+        const hours = [`${today}: 8 AM - 2 PM, 5 PM - 12 AM`];
+        const status = getHoursStatus(hours);
+        // Should resolve to a real status, not unknown
+        expect(status.state).not.toBe("unknown");
+    });
+
+    it("returns a valid status for all-week hours regardless of current time", () => {
+        const today = new Intl.DateTimeFormat("en-US", {
+            weekday: "long",
+            timeZone: "America/New_York",
+        }).format(new Date());
+        const hours = [`${today}: 6 AM - 11 PM`];
+        const status = getHoursStatus(hours);
+        expect(["open", "closed", "closing-soon"]).toContain(status.state);
+    });
+});
+
+describe("getDayTimeRange", () => {
+    it("parses single range", () => {
+        const range = getDayTimeRange("7 AM - 5 PM");
+        expect(range).not.toBeNull();
+        expect(range!.openMinutes).toBe(7 * 60);
+        expect(range!.closeMinutes).toBe(17 * 60);
+    });
+
+    it("parses multi-range using first open and last close", () => {
+        const range = getDayTimeRange("8 AM - 2 PM, 5 PM - 12 AM");
+        expect(range).not.toBeNull();
+        expect(range!.openMinutes).toBe(8 * 60);
+        // 12 AM = 0, but normalized past midnight = 24 * 60
+        expect(range!.closeMinutes).toBe(24 * 60);
+    });
+
+    it("returns null for Closed", () => {
+        expect(getDayTimeRange("Closed")).toBeNull();
+    });
+
+    it("handles Open 24 hours", () => {
+        const range = getDayTimeRange("Open 24 hours");
+        expect(range).not.toBeNull();
+        expect(range!.openMinutes).toBe(0);
+        expect(range!.closeMinutes).toBe(24 * 60);
+    });
+
+    it("returns null for empty string", () => {
+        expect(getDayTimeRange("")).toBeNull();
+    });
+
+    it("parses times with minutes", () => {
+        const range = getDayTimeRange("7:30 AM - 5:30 PM");
+        expect(range).not.toBeNull();
+        expect(range!.openMinutes).toBe(7 * 60 + 30);
+        expect(range!.closeMinutes).toBe(17 * 60 + 30);
+    });
+
+    it("handles past-midnight close times", () => {
+        const range = getDayTimeRange("5 PM - 2 AM");
+        expect(range).not.toBeNull();
+        expect(range!.openMinutes).toBe(17 * 60);
+        // 2 AM normalized past midnight
+        expect(range!.closeMinutes).toBe(26 * 60);
+    });
+});
+
+describe("injectOpenLateTags - null safety", () => {
+    it("handles places with undefined tags without crashing", () => {
+        const places = [
+            { tags: undefined as any, operatingHours: ["Monday: 7 AM - 11 PM"] },
+        ];
+        // Should not throw — the ?? [] guard prevents .includes() on undefined
+        expect(() => injectOpenLateTags(places)).not.toThrow();
+    });
+
+    it("handles places with undefined operatingHours without crashing", () => {
+        const places = [
+            { tags: ["Coffee Shop"], operatingHours: undefined as any },
+        ];
+        expect(() => injectOpenLateTags(places)).not.toThrow();
+        const result = injectOpenLateTags(places);
+        expect(result[0].tags).toEqual(["Coffee Shop"]);
+    });
+
+    it("handles places with both undefined without crashing", () => {
+        const places = [
+            { tags: undefined as any, operatingHours: undefined as any },
+        ];
+        expect(() => injectOpenLateTags(places)).not.toThrow();
     });
 });
