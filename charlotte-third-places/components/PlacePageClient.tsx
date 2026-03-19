@@ -33,8 +33,10 @@ import { isOpenLate } from "@/lib/operating-hours";
 export function PlacePageClient({ place: rawPlace }: { place: Place }) {
     // Enrich with dynamic "Open Late" tag based on current day in Charlotte
     const place = useMemo(() => {
-        if (isOpenLate(rawPlace.operatingHours) && !rawPlace.tags.includes("Open Late")) {
-            return { ...rawPlace, tags: [...rawPlace.tags, "Open Late"] };
+        const tags = rawPlace.tags ?? [];
+        const operatingHours = rawPlace.operatingHours ?? [];
+        if (isOpenLate(operatingHours) && !tags.includes("Open Late")) {
+            return { ...rawPlace, tags: [...tags, "Open Late"] };
         }
         return rawPlace;
     }, [rawPlace]);

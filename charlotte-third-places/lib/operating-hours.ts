@@ -244,8 +244,10 @@ export function injectOpenLateTags<T extends { tags: string[]; operatingHours: s
     places: T[]
 ): T[] {
     return places.map((place) => {
-        if (isOpenLate(place.operatingHours) && !place.tags.includes("Open Late")) {
-            return { ...place, tags: [...place.tags, "Open Late"] };
+        const tags = place.tags ?? [];
+        const operatingHours = place.operatingHours ?? [];
+        if (isOpenLate(operatingHours) && !tags.includes("Open Late")) {
+            return { ...place, tags: [...tags, "Open Late"] };
         }
         return place;
     });
