@@ -223,6 +223,10 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                 if (!value) return [];
                 return parsePythonStyleArray(value);
             }
+            if (key === "Operating Hours") {
+                if (!value) return [];
+                try { return JSON.parse(value); } catch { return []; }
+            }
             if (["Latitude", "Longitude"].includes(key)) {
                 return parseFloat(value);
             }
@@ -244,6 +248,13 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
                 // If it's already an array, return it
                 if (Array.isArray(value)) return value;
                 return parsePythonStyleArray(value);
+            }
+
+            // Parse Operating Hours JSON array from Airtable
+            if (key === "Operating Hours") {
+                if (!value) return [];
+                if (Array.isArray(value)) return value;
+                try { return JSON.parse(value); } catch { return []; }
             }
 
             // For Featured field from Airtable (boolean checkbox)
@@ -284,6 +295,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
         curatorPhotos: getField("Curator Photo URLs"),
         photos: [...getField("Curator Photo URLs"), ...getField("Photos")],
         comments: getField("Comments"),
+        operatingHours: getField("Operating Hours"),
         latitude: getField("Latitude"),
         longitude: getField("Longitude"),
         createdDate: getField("Created Time"),

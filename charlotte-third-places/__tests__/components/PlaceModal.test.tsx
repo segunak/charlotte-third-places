@@ -73,6 +73,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     curatorPhotos: [],
     photos: [],
     comments: '',
+    operatingHours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

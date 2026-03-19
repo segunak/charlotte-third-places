@@ -9,6 +9,7 @@ import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
+import { injectOpenLateTags } from "@/lib/operating-hours";
 
 const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePlaceCards").then(mod => mod.ResponsivePlaceCards), {
     ssr: false,
@@ -32,7 +33,10 @@ interface HomePageClientProps {
     places: Place[];
 }
 
-export default function HomePageClient({ places }: HomePageClientProps) {
+export default function HomePageClient({ places: rawPlaces }: HomePageClientProps) {
+    // Enrich places with dynamic "Open Late" tag based on current day in Charlotte
+    const places = injectOpenLateTags(rawPlaces);
+
     // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease them, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
     const excludedNames = ["Starbucks", "Panera"];
     const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
