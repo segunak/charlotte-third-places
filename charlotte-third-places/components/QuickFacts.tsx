@@ -128,7 +128,7 @@ const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
     const todayHours = todayLine ? todayLine.substring(todayLine.indexOf(":") + 1).trim() : null;
     const mobileLabel = todayHours ? `Today: ${todayHours}` : "Hours";
 
-    // Status badge colors — mobile shows today's hours, desktop shows real-time status
+    // Status badge colors, mobile shows today's hours, desktop shows real-time status
     const badgeConfig = (() => {
         // Determine badge color based on status
         const colorClass = (() => {
