@@ -28,6 +28,7 @@ export type Place = {
     curatorPhotos: Array<string>;
     photos: Array<string>;
     comments: string;
+    operatingHours: Array<string>;
     latitude: number;
     longitude: number;
     createdDate: Date;

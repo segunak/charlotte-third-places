@@ -15,7 +15,7 @@
  */
 
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import type { Place } from '@/lib/types'
 
 // Mock ModalContext
@@ -65,6 +65,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     curatorPhotos: [],
     photos: [],
     comments: '',
+    operatingHours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),
@@ -269,6 +270,57 @@ describe('PlaceContent', () => {
 
       expect(screen.getByText(/Added:/)).toBeInTheDocument()
       expect(screen.getByText(/Last Updated:/)).toBeInTheDocument()
+    })
+  })
+
+  describe('Hours in QuickFacts', () => {
+    it('renders Hours label in QuickFacts when operatingHours provided', () => {
+      const place = createMockPlace({ operatingHours: [
+        'Sunday: 10 AM - 5 PM',
+        'Monday: 7 AM - 5 PM',
+        'Tuesday: 7 AM - 5 PM',
+        'Wednesday: 7 AM - 5 PM',
+        'Thursday: 7 AM - 5 PM',
+        'Friday: 7 AM - 5 PM',
+        'Saturday: 10 AM - 5 PM',
+      ] })
+      render(<PlaceContent place={place} />)
+
+      // The "Hours" label appears in the table header
+      expect(screen.getByText('Hours')).toBeInTheDocument()
+    })
+
+    it('does not render Hours row when operatingHours is empty', () => {
+      const place = createMockPlace({ operatingHours: [] })
+      render(<PlaceContent place={place} />)
+
+      expect(screen.queryByText('Hours')).not.toBeInTheDocument()
+    })
+
+    it('shows status and expands to show all days on click', () => {
+      const place = createMockPlace({ operatingHours: [
+        'Sunday: 12 PM - 7 PM',
+        'Monday: 3 PM - 8 PM',
+        'Tuesday: 4 PM - 10 PM',
+        'Wednesday: 4 PM - 10 PM',
+        'Thursday: 4 PM - 10 PM',
+        'Friday: 1 PM - 11 PM',
+        'Saturday: 12 PM - 11 PM'
+      ] })
+      render(<PlaceContent place={place} />)
+
+      // Should show open/closed status (the button with chevron)
+      const hoursRow = screen.getByText('Hours')
+      expect(hoursRow).toBeInTheDocument()
+
+      // Find and click the expand button (contains Open/Closed/Closing soon)
+      const statusButton = hoursRow.closest('tr')?.querySelector('button')
+      if (statusButton) {
+        fireEvent.click(statusButton)
+        // All 7 days should now be visible
+        const listItems = screen.getAllByRole('listitem')
+        expect(listItems).toHaveLength(7)
+      }
     })
   })
 })

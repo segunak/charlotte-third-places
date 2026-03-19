@@ -1,8 +1,9 @@
-import React, { FC } from "react";
+import React, { FC, useState, useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
 import { Badge } from "@/components/ui/badge";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { getHoursStatus, type HoursStatus } from "@/lib/operating-hours";
 
 interface QuickFactsProps {
     address: string;
@@ -12,6 +13,7 @@ interface QuickFactsProps {
     parking: string[];
     freeWiFi: string;
     hasCinnamonRolls: string;
+    operatingHours?: string[];
     tags?: string[];
     instagram?: string;
     tiktok?: string;
@@ -37,6 +39,7 @@ const attributeIcons = {
     wifi: <Icons.wifi className="h-4 w-4 text-sky-500" />,
     purchase: <Icons.dollarSign className="h-4 w-4 text-green-600" />,
     cinnamonRolls: <Icons.cinnamonRoll className="h-4 w-4 text-amber-800" />,
+    hours: <Icons.clock className="h-4 w-4 text-teal-600" />,
     socials: <Icons.boldLink className="h-4 w-4 text-blue-600" />,
     tags: <Icons.tags className="h-4 w-4 text-purple-600" />,
 };
@@ -96,6 +99,127 @@ const InfoTag: FC<{ text: string; icon?: React.ReactNode; className?: string }> 
         <span className="flex-1 min-w-0 wrap-break-word whitespace-normal leading-snug text-left">{text}</span>
     </Badge>
 );
+
+const dayAbbreviations: Record<string, string> = {
+    "Sunday": "Sun",
+    "Monday": "Mon",
+    "Tuesday": "Tue",
+    "Wednesday": "Wed",
+    "Thursday": "Thu",
+    "Friday": "Fri",
+    "Saturday": "Sat",
+};
+
+const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
+    const [expanded, setExpanded] = useState(false);
+    const status = useMemo<HoursStatus>(() => getHoursStatus(hours), [hours]);
+
+    if (hours.length === 0) {
+        return <span className="text-sm text-muted-foreground">Not available</span>;
+    }
+
+    const today = new Intl.DateTimeFormat("en-US", {
+        weekday: "long",
+        timeZone: "America/New_York",
+    }).format(new Date());
+
+    // Status badge colors — mobile shows just the status word, desktop shows full detail
+    const badgeConfig = (() => {
+        switch (status.state) {
+            case "open":
+                return {
+                    className: "bg-emerald-100 text-emerald-900 border-emerald-200",
+                    label: <>
+                        <span className="text-emerald-600 font-bold">Open</span>
+                        <span className="hidden sm:inline">{" · Closes "}{status.closesAt}</span>
+                    </>,
+                };
+            case "closing-soon":
+                return {
+                    className: "bg-orange-100 text-orange-900 border-orange-200",
+                    label: <>
+                        <span className="text-orange-600 font-bold">Closing Soon</span>
+                        <span className="hidden sm:inline">{" · Closes "}{status.closesAt}</span>
+                    </>,
+                };
+            case "closed":
+                return {
+                    className: "bg-red-100 text-red-900 border-red-200",
+                    label: <>
+                        <span className="text-red-500 font-bold">Closed</span>
+                        {status.opensAt && <span className="hidden sm:inline">{` · Opens ${status.opensAt}`}</span>}
+                    </>,
+                };
+            case "closed-today":
+                return {
+                    className: "bg-red-100 text-red-900 border-red-200",
+                    label: <span className="text-red-500 font-bold">Closed</span>,
+                };
+            default:
+                return {
+                    className: "bg-gray-100 text-gray-900 border-gray-200",
+                    label: <span>Hours</span>,
+                };
+        }
+    })();
+
+    return (
+        <div>
+            <button
+                type="button"
+                onClick={() => setExpanded(!expanded)}
+                className="flex items-center gap-1.5 transition-colors group"
+            >
+                {!expanded ? (
+                    <Badge
+                        variant="default"
+                        disableHover
+                        className={cn(
+                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer whitespace-nowrap overflow-hidden text-ellipsis max-w-full",
+                            badgeConfig.className
+                        )}
+                    >
+                        {badgeConfig.label}
+                        <Icons.chevronDown
+                            className="h-3 w-3 shrink-0 opacity-60"
+                        />
+                    </Badge>
+                ) : (
+                    <Badge
+                        variant="default"
+                        disableHover
+                        className={cn(
+                            "gap-1.5 px-2.5 py-0.5 rounded-full font-medium text-sm cursor-pointer whitespace-nowrap",
+                            badgeConfig.className
+                        )}
+                    >
+                        {badgeConfig.label}
+                        <Icons.chevronUp
+                            className="h-3 w-3 shrink-0 opacity-60"
+                        />
+                    </Badge>
+                )}
+            </button>
+            {expanded && (
+                <ul className="mt-1.5 ml-2 space-y-0.5 text-sm text-muted-foreground">
+                    {hours.map((line, i) => {
+                        const isToday = line.toLowerCase().startsWith(today.toLowerCase() + ":");
+                        const colonIdx = line.indexOf(":");
+                        const dayName = colonIdx > -1 ? line.substring(0, colonIdx) : "";
+                        const timesPart = colonIdx > -1 ? line.substring(colonIdx) : line;
+                        const shortDay = dayAbbreviations[dayName] || dayName;
+                        return (
+                            <li key={i} className={isToday ? "font-semibold text-foreground" : ""}>
+                                <span className="sm:hidden">{shortDay}{timesPart}</span>
+                                <span className="hidden sm:inline">{line}</span>
+                            </li>
+                        );
+                    })}
+                </ul>
+            )}
+        </div>
+    );
+};
 
 const createSocialsRow = (
     socialUrls: {
@@ -188,6 +312,7 @@ export const QuickFacts: FC<QuickFactsProps> = ({
     parking,
     freeWiFi,
     hasCinnamonRolls,
+    operatingHours = [],
     tags = [],
     instagram,
     tiktok,
@@ -222,6 +347,14 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 value: address ? <span className="text-muted-foreground">{address}</span> : <YesNoBadge variant="positive" value="Unsure" />,
                 thClassName: `${TH_BASE_CLASS} w-44`,
                 tdClassName: TD_BASE_CLASS
+            },
+            {
+                key: 'hours',
+                label: 'Hours',
+                icon: attributeIcons.hours,
+                value: <HoursValue hours={operatingHours} />,
+                tdClassName: TD_BASE_CLASS,
+                hidden: operatingHours.length === 0
             },
             {
                 key: 'neighborhood',
