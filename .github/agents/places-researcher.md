@@ -291,7 +291,9 @@ Tags are curated labels that describe notable characteristics of a place. They h
 
 The tags currently used on the website are:
 
-Black Owned, Charlotte Local, Christian, Great Date Spot, Great For Students, Habesha, Has Fireplace, Hidden Gem, Latino Owned, Loose Leaf Tea, Middle Eastern, Open Late, Outdoor Outlets, Woman Owned
+Black Owned, Charlotte Local, Christian, Great Date Spot, Great For Students, Habesha, Has Fireplace, Hidden Gem, Latino Owned, Loose Leaf Tea, Middle Eastern, Outdoor Outlets, Veteran Owned, Woman Owned
+
+Do not limit yourself to that list. Use any tags that are clearly supported by evidence from your research, even if they are not on the current list. If you suggest a new tag, label it as **"Suggested New Tag: [Your Suggestion]"** with a brief justification based on your research.
 
 Rules:
 
