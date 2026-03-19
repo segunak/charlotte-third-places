@@ -102,6 +102,23 @@ const frequentlyAskedQuestions = [
                         </AccordionContent>
                     </AccordionItem>
 
+                    <AccordionItem value="hours">
+                        <AccordionTrigger>Hours</AccordionTrigger>
+                        <AccordionContent>
+                            <div className="space-y-3">
+                                <p>
+                                    Operating hours are pulled from the Google Maps Places API and refreshed weekly via an automated pipeline. The hours shown reflect the regular weekly schedule as reported by each business on their Google Maps profile.
+                                </p>
+                                <p>
+                                    The site shows whether a place is currently <span className="text-emerald-600 font-semibold">Open</span>, <span className="text-red-500 font-semibold">Closed</span>, or <span className="text-orange-500 font-semibold">Closing Soon</span> (within one hour of closing) based on the current time in Charlotte's timezone (Eastern). This status is calculated in real time when you visit the page, it's not baked into the data.
+                                </p>
+                                <p>
+                                    Places that are open until 10 PM or later on the current day automatically receive an "Open Late" tag, which you can use as a filter. Keep in mind that hours can change due to holidays, special events, or business decisions that haven't been updated on Google Maps yet. When in doubt, check the place's Google Maps page or website directly.
+                                </p>
+                            </div>
+                        </AccordionContent>
+                    </AccordionItem>
+
                     <AccordionItem value="neighborhood">
                         <AccordionTrigger>Neighborhood</AccordionTrigger>
                         <AccordionContent>
