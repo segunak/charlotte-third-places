@@ -13,7 +13,8 @@
 const CHARLOTTE_TIMEZONE = "America/New_York";
 
 const OPEN_LATE_THRESHOLD_HOUR = 22; // 10 PM in 24-hour format
-const CLOSING_SOON_MINUTES = 60; // within 1 hour of closing
+const OPEN_EARLY_THRESHOLD_HOUR = 7; // 7 AM in 24-hour format
+const OPENING_OR_CLOSING_SOON_MINUTES = 60; // within 1 hour of opening or closing
 
 /**
  * Get the current day name in Charlotte's timezone.
@@ -126,9 +127,39 @@ function getDayTimeRange(hoursStr: string): { openMinutes: number; closeMinutes:
 export type HoursStatus =
     | { state: "open"; closesAt: string }
     | { state: "closing-soon"; closesAt: string }
+    | { state: "opening-soon"; opensAt: string }
     | { state: "closed"; opensAt: string | null }
-    | { state: "closed-today" }
+    | { state: "closed-today"; opensAt: string | null }
     | { state: "unknown" };
+
+const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"] as const;
+
+/**
+ * Search up to 6 days forward from a given day to find the next open day.
+ * Returns a formatted string like "7 AM Mon" or null if no open day found.
+ */
+function findNextOpenDay(
+    operatingHours: string[],
+    fromDay: string,
+    formatTime: (totalMins: number) => string
+): string | null {
+    const fromIdx = DAYS.indexOf(fromDay as typeof DAYS[number]);
+    if (fromIdx === -1) return null;
+
+    for (let offset = 1; offset <= 6; offset++) {
+        const nextDay = DAYS[(fromIdx + offset) % 7];
+        const line = getTodayLine(operatingHours, nextDay);
+        if (!line) continue;
+        const hoursStr = getHoursFromLine(line);
+        if (hoursStr.toLowerCase() === "closed") continue;
+        const range = getDayTimeRange(hoursStr);
+        if (range) {
+            const shortDay = nextDay.substring(0, 3);
+            return `${formatTime(range.openMinutes)} ${shortDay}`;
+        }
+    }
+    return null;
+}
 
 /**
  * Determine the current hours status for a place in Charlotte's timezone.
@@ -145,7 +176,18 @@ export function getHoursStatus(operatingHours: string[]): HoursStatus {
     if (!todayLine) return { state: "unknown" };
 
     const hoursStr = getHoursFromLine(todayLine);
-    if (hoursStr.toLowerCase() === "closed") return { state: "closed-today" };
+    if (hoursStr.toLowerCase() === "closed") {
+        const formatTimeClosed = (totalMins: number): string => {
+            let m = totalMins % (24 * 60);
+            const h = Math.floor(m / 60);
+            const min = m % 60;
+            const period = h >= 12 ? "PM" : "AM";
+            const displayHour = h === 0 ? 12 : h > 12 ? h - 12 : h;
+            return min === 0 ? `${displayHour} ${period}` : `${displayHour}:${String(min).padStart(2, "0")} ${period}`;
+        };
+        const opensAt = findNextOpenDay(operatingHours, day, formatTimeClosed);
+        return { state: "closed-today", opensAt };
+    }
 
     const range = getDayTimeRange(hoursStr);
     if (!range) return { state: "unknown" };
@@ -163,34 +205,25 @@ export function getHoursStatus(operatingHours: string[]): HoursStatus {
     };
 
     if (nowTotalMinutes < openMinutes) {
-        // Before opening
+        // Before opening — check if opening soon
+        const minutesUntilOpen = openMinutes - nowTotalMinutes;
+        if (minutesUntilOpen <= OPENING_OR_CLOSING_SOON_MINUTES) {
+            return { state: "opening-soon", opensAt: formatTime(openMinutes) };
+        }
         return { state: "closed", opensAt: formatTime(openMinutes) };
     }
 
     if (nowTotalMinutes >= closeMinutes) {
-        // After closing — find tomorrow's open time
-        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        const todayIdx = days.indexOf(day);
-        const tomorrowDay = days[(todayIdx + 1) % 7];
-        const tomorrowLine = getTodayLine(operatingHours, tomorrowDay);
-        if (tomorrowLine) {
-            const tomorrowHours = getHoursFromLine(tomorrowLine);
-            if (tomorrowHours.toLowerCase() !== "closed") {
-                const tomorrowRange = getDayTimeRange(tomorrowHours);
-                if (tomorrowRange) {
-                    const shortDay = tomorrowDay.substring(0, 3);
-                    return { state: "closed", opensAt: `${formatTime(tomorrowRange.openMinutes)} ${shortDay}` };
-                }
-            }
-        }
-        return { state: "closed", opensAt: null };
+        // After closing — search up to 6 days forward for next open day
+        const opensAt = findNextOpenDay(operatingHours, day, formatTime);
+        return { state: "closed", opensAt };
     }
 
     // Currently within operating hours
     const minutesUntilClose = closeMinutes - nowTotalMinutes;
     const closesAtStr = formatTime(closeMinutes);
 
-    if (minutesUntilClose <= CLOSING_SOON_MINUTES) {
+    if (minutesUntilClose <= OPENING_OR_CLOSING_SOON_MINUTES) {
         return { state: "closing-soon", closesAt: closesAtStr };
     }
 
@@ -238,20 +271,70 @@ export function isOpenLate(operatingHours: string[]): boolean {
 }
 
 /**
- * Enrich a list of places by injecting the "Open Late" tag.
+ * Extract the opening hour (24h format) for a given day from operating hours.
+ * For multi-range days, uses the first open time.
  */
-export function injectOpenLateTags<T extends { tags: string[]; operatingHours: string[] }>(
+function getOpeningHour(operatingHours: string[], day: string): number | null {
+    const line = getTodayLine(operatingHours, day);
+    if (!line) return null;
+
+    const hoursStr = getHoursFromLine(line);
+    if (hoursStr.toLowerCase() === "closed") return null;
+    if (hoursStr.toLowerCase().includes("open 24 hours")) return 0;
+
+    const ranges = hoursStr.split(",").map((r) => r.trim());
+    const firstRange = ranges[0];
+    const dashIndex = firstRange.indexOf(" - ");
+    if (dashIndex === -1) return null;
+
+    const openTimeStr = firstRange.substring(0, dashIndex).trim();
+    return parseHour24(openTimeStr);
+}
+
+/**
+ * Determines if a place is "Open Early" based on its operating hours for the current day.
+ * A place is open early if it opens at 7 AM or earlier.
+ */
+export function isOpenEarly(operatingHours: string[]): boolean {
+    if (!operatingHours || operatingHours.length === 0) return false;
+
+    const today = getCurrentDayInCharlotte();
+    const openingHour = getOpeningHour(operatingHours, today);
+
+    if (openingHour === null) return false;
+    return openingHour <= OPEN_EARLY_THRESHOLD_HOUR;
+}
+
+/**
+ * Enrich a list of places by injecting dynamic tags based on operating hours:
+ * - "Open Late" for places open until 10 PM or later today
+ * - "Open Early" for places opening at 7 AM or earlier today
+ *
+ * Designed to run client-side so tags are dynamic based on the user's visit day.
+ */
+export function injectDynamicTags<T extends { tags: string[]; operatingHours: string[] }>(
     places: T[]
 ): T[] {
     return places.map((place) => {
         const tags = place.tags ?? [];
         const operatingHours = place.operatingHours ?? [];
-        if (isOpenLate(operatingHours) && !tags.includes("Open Late")) {
-            return { ...place, tags: [...tags, "Open Late"] };
+        let newTags = tags;
+
+        if (isOpenLate(operatingHours) && !newTags.includes("Open Late")) {
+            newTags = [...newTags, "Open Late"];
         }
-        return place;
+        if (isOpenEarly(operatingHours) && !newTags.includes("Open Early")) {
+            newTags = [...newTags, "Open Early"];
+        }
+
+        return newTags !== tags ? { ...place, tags: newTags } : place;
     });
 }
 
+/**
+ * @deprecated Use injectDynamicTags instead
+ */
+export const injectOpenLateTags = injectDynamicTags;
+
 // Exported for testing
-export { parseHour24, parseTimeToMinutes, getClosingHour, getCurrentDayInCharlotte, getDayTimeRange, OPEN_LATE_THRESHOLD_HOUR, CLOSING_SOON_MINUTES };
+export { parseHour24, parseTimeToMinutes, getClosingHour, getOpeningHour, getCurrentDayInCharlotte, getDayTimeRange, OPEN_LATE_THRESHOLD_HOUR, OPEN_EARLY_THRESHOLD_HOUR, OPENING_OR_CLOSING_SOON_MINUTES };

@@ -3,11 +3,15 @@ import {
     parseHour24,
     parseTimeToMinutes,
     getClosingHour,
+    getOpeningHour,
     getDayTimeRange,
     isOpenLate,
+    isOpenEarly,
     injectOpenLateTags,
+    injectDynamicTags,
     getHoursStatus,
     OPEN_LATE_THRESHOLD_HOUR,
+    OPEN_EARLY_THRESHOLD_HOUR,
 } from "@/lib/operating-hours";
 
 // Mock getCurrentDayInCharlotte by mocking the module partially
@@ -182,14 +186,57 @@ describe("getHoursStatus", () => {
         expect(getHoursStatus(null as any)).toEqual({ state: "unknown" });
     });
 
-    it("returns closed-today for Closed day", () => {
-        // This only works if today matches — test the logic directly
+    it("returns closed-today with opensAt for Closed day", () => {
         const today = new Intl.DateTimeFormat("en-US", {
             weekday: "long",
             timeZone: "America/New_York",
         }).format(new Date());
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const todayIdx = days.indexOf(today);
+        const tomorrow = days[(todayIdx + 1) % 7];
+        const hours = [
+            `${today}: Closed`,
+            `${tomorrow}: 10 AM - 6 PM`,
+        ];
+        expect(getHoursStatus(hours)).toEqual({
+            state: "closed-today",
+            opensAt: `10 AM ${tomorrow.substring(0, 3)}`,
+        });
+    });
+
+    it("returns closed-today with null opensAt when no future open day found", () => {
+        const today = new Intl.DateTimeFormat("en-US", {
+            weekday: "long",
+            timeZone: "America/New_York",
+        }).format(new Date());
+        // Only today's data, all closed or missing
         const hours = [`${today}: Closed`];
-        expect(getHoursStatus(hours)).toEqual({ state: "closed-today" });
+        expect(getHoursStatus(hours)).toEqual({
+            state: "closed-today",
+            opensAt: null,
+        });
+    });
+
+    it("closed-today skips multiple closed days (Lorem Ipsum style)", () => {
+        const today = new Intl.DateTimeFormat("en-US", {
+            weekday: "long",
+            timeZone: "America/New_York",
+        }).format(new Date());
+        const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const todayIdx = days.indexOf(today);
+        const tomorrow = days[(todayIdx + 1) % 7];
+        const dayAfter = days[(todayIdx + 2) % 7];
+        const thirdDay = days[(todayIdx + 3) % 7];
+        const hours = [
+            `${today}: Closed`,
+            `${tomorrow}: Closed`,
+            `${dayAfter}: Closed`,
+            `${thirdDay}: 6 PM - 11 PM`,
+        ];
+        expect(getHoursStatus(hours)).toEqual({
+            state: "closed-today",
+            opensAt: `6 PM ${thirdDay.substring(0, 3)}`,
+        });
     });
 
     it("handles bare noon opening time", () => {
@@ -294,5 +341,247 @@ describe("injectOpenLateTags - null safety", () => {
             { tags: undefined as any, operatingHours: undefined as any },
         ];
         expect(() => injectOpenLateTags(places)).not.toThrow();
+    });
+});
+
+describe("getOpeningHour", () => {
+    it("returns opening hour for a given day", () => {
+        const hours = ["Monday: 7 AM - 5 PM", "Tuesday: 9 AM - 5 PM"];
+        expect(getOpeningHour(hours, "Monday")).toBe(7);
+        expect(getOpeningHour(hours, "Tuesday")).toBe(9);
+    });
+
+    it("returns null for Closed day", () => {
+        const hours = ["Monday: Closed"];
+        expect(getOpeningHour(hours, "Monday")).toBeNull();
+    });
+
+    it("returns 0 for Open 24 hours", () => {
+        const hours = ["Monday: Open 24 hours"];
+        expect(getOpeningHour(hours, "Monday")).toBe(0);
+    });
+
+    it("returns null for missing day", () => {
+        const hours = ["Monday: 7 AM - 5 PM"];
+        expect(getOpeningHour(hours, "Sunday")).toBeNull();
+    });
+
+    it("uses first range for multi-range", () => {
+        const hours = ["Monday: 8 AM - 2 PM, 5 PM - 10 PM"];
+        expect(getOpeningHour(hours, "Monday")).toBe(8);
+    });
+});
+
+describe("isOpenEarly", () => {
+    it("returns false for empty hours", () => {
+        expect(isOpenEarly([])).toBe(false);
+    });
+
+    it("returns false for null/undefined", () => {
+        expect(isOpenEarly(null as any)).toBe(false);
+        expect(isOpenEarly(undefined as any)).toBe(false);
+    });
+});
+
+describe("injectDynamicTags", () => {
+    it("does not crash with undefined tags and operatingHours", () => {
+        const places = [
+            { tags: undefined as any, operatingHours: undefined as any },
+        ];
+        expect(() => injectDynamicTags(places)).not.toThrow();
+    });
+
+    it("does not duplicate existing tags", () => {
+        const places = [
+            {
+                tags: ["Open Late", "Open Early"],
+                operatingHours: ["Monday: 6 AM - 11 PM"],
+            },
+        ];
+        const result = injectDynamicTags(places);
+        expect(result[0].tags.filter(t => t === "Open Late")).toHaveLength(1);
+        expect(result[0].tags.filter(t => t === "Open Early")).toHaveLength(1);
+    });
+
+    it("preserves places without operating hours", () => {
+        const places = [{ tags: ["Coffee Shop"], operatingHours: [] }];
+        const result = injectDynamicTags(places);
+        expect(result[0].tags).toEqual(["Coffee Shop"]);
+    });
+
+    it("does not mutate the original array", () => {
+        const original = [
+            { tags: ["Coffee Shop"], operatingHours: ["Monday: 6 AM - 11 PM"] },
+        ];
+        const originalTags = [...original[0].tags];
+        injectDynamicTags(original);
+        expect(original[0].tags).toEqual(originalTags);
+    });
+
+    it("injectOpenLateTags is an alias for injectDynamicTags", () => {
+        expect(injectOpenLateTags).toBe(injectDynamicTags);
+    });
+});
+
+// Helper: get today + offset day names in Charlotte timezone
+function getDayName(offset: number = 0): string {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const today = new Intl.DateTimeFormat("en-US", {
+        weekday: "long",
+        timeZone: "America/New_York",
+    }).format(new Date());
+    const idx = days.indexOf(today);
+    return days[(idx + offset) % 7];
+}
+
+describe("getHoursStatus - all states", () => {
+    const today = getDayName(0);
+    const tomorrow = getDayName(1);
+    const dayAfter = getDayName(2);
+    const thirdDay = getDayName(3);
+
+    it("open state includes closesAt time", () => {
+        // Wide open range that covers any time of day
+        const hours = [`${today}: 12 AM - 11:59 PM`];
+        const status = getHoursStatus(hours);
+        if (status.state === "open") {
+            expect(status.closesAt).toMatch(/\d{1,2}(:\d{2})?\s(AM|PM)/);
+        }
+        // Could also be closing-soon near end — both are valid
+        expect(["open", "closing-soon"]).toContain(status.state);
+    });
+
+    it("closed state after hours includes opensAt with day abbreviation", () => {
+        // Place that closed hours ago
+        const hours = [
+            `${today}: 6 AM - 7 AM`,
+            `${tomorrow}: 9 AM - 5 PM`,
+        ];
+        const status = getHoursStatus(hours);
+        // At any time after 7 AM (which is most of the day), should be closed
+        if (status.state === "closed") {
+            expect(status.opensAt).toMatch(/\d{1,2}(:\d{2})?\s(AM|PM)\s\w{3}/);
+        }
+    });
+
+    it("closed state before opening includes opensAt without day", () => {
+        // Place that opens very late today — before opening, opensAt is just a time (no day)
+        const hours = [`${today}: 11:59 PM - 11:59 PM`];
+        // This is a degenerate range but tests the before-opening path
+        const status = getHoursStatus(hours);
+        // Should be closed or opening-soon, with opensAt as just a time
+        if (status.state === "closed" && status.opensAt) {
+            // opensAt before today's opening has no day abbreviation
+            expect(status.opensAt).toMatch(/\d{1,2}(:\d{2})?\s(AM|PM)$/);
+        }
+    });
+
+    it("closed-today with forward lookup returns opensAt with day abbreviation", () => {
+        const hours = [
+            `${today}: Closed`,
+            `${tomorrow}: 10 AM - 6 PM`,
+        ];
+        const status = getHoursStatus(hours);
+        expect(status.state).toBe("closed-today");
+        if (status.state === "closed-today") {
+            expect(status.opensAt).toBe(`10 AM ${tomorrow.substring(0, 3)}`);
+        }
+    });
+
+    it("closed-today skips closed days to find next open (Wildroots style)", () => {
+        const hours = [
+            `${today}: Closed`,
+            `${tomorrow}: Closed`,
+            `${dayAfter}: Closed`,
+            `${thirdDay}: 7 AM - 2 PM`,
+        ];
+        const status = getHoursStatus(hours);
+        expect(status.state).toBe("closed-today");
+        if (status.state === "closed-today") {
+            expect(status.opensAt).toBe(`7 AM ${thirdDay.substring(0, 3)}`);
+        }
+    });
+
+    it("closed-today with no future open days returns opensAt null", () => {
+        const hours = [`${today}: Closed`];
+        const status = getHoursStatus(hours);
+        expect(status.state).toBe("closed-today");
+        if (status.state === "closed-today") {
+            expect(status.opensAt).toBeNull();
+        }
+    });
+
+    it("after-closing forward lookup skips closed days", () => {
+        // Place that closed early today, tomorrow and day after are closed
+        const hours = [
+            `${today}: 6 AM - 7 AM`,
+            `${tomorrow}: Closed`,
+            `${dayAfter}: 12 PM - 9 PM`,
+        ];
+        const status = getHoursStatus(hours);
+        if (status.state === "closed") {
+            // Should skip tomorrow (Closed) and land on dayAfter
+            expect(status.opensAt).toBe(`12 PM ${dayAfter.substring(0, 3)}`);
+        }
+    });
+
+    it("unknown state for missing day data", () => {
+        // Hours array that doesn't contain today
+        const otherDay = getDayName(4);
+        const hours = [`${otherDay}: 9 AM - 5 PM`];
+        // Only if today != otherDay
+        if (today !== otherDay) {
+            expect(getHoursStatus(hours)).toEqual({ state: "unknown" });
+        }
+    });
+
+    it("handles hours with :30 minute times", () => {
+        const hours = [`${today}: 11:30 AM - 9:30 PM`];
+        const status = getHoursStatus(hours);
+        expect(status.state).not.toBe("unknown");
+        if (status.state === "open") {
+            expect(status.closesAt).toBe("9:30 PM");
+        }
+    });
+
+    it("handles past-midnight close (1 AM)", () => {
+        const hours = [`${today}: 8 AM - 1 AM`];
+        const status = getHoursStatus(hours);
+        expect(status.state).not.toBe("unknown");
+        if (status.state === "open") {
+            expect(status.closesAt).toBe("1 AM");
+        }
+    });
+
+    it("all states have time info (never bare status)", () => {
+        // Test with a variety of scenarios
+        const scenarios = [
+            [`${today}: 6 AM - 11 PM`],
+            [`${today}: Closed`, `${tomorrow}: 10 AM - 6 PM`],
+            [`${today}: 12 AM - 11:59 PM`],
+        ];
+        for (const hours of scenarios) {
+            const status = getHoursStatus(hours);
+            switch (status.state) {
+                case "open":
+                    expect(status.closesAt).toBeTruthy();
+                    break;
+                case "closing-soon":
+                    expect(status.closesAt).toBeTruthy();
+                    break;
+                case "opening-soon":
+                    expect(status.opensAt).toBeTruthy();
+                    break;
+                case "closed":
+                    // opensAt can be null if no future data, but with full week data it should be present
+                    break;
+                case "closed-today":
+                    // opensAt populated from forward lookup
+                    expect(status.opensAt).toBeTruthy();
+                    break;
+                case "unknown":
+                    break;
+            }
+        }
     });
 });
