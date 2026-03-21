@@ -192,7 +192,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
         () => getPlaceHighlights(place),
         [place]
     );
-    const isOpeningSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Opening Soon';
+    const isComingSoon = !!highlights.gradients.card && highlights.ribbon?.label === 'Coming Soon';
 
     const description = useMemo(() => {
         const raw = place?.description?.trim();
@@ -397,7 +397,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                         {/* Action buttons container:
                             - shrink-0: CRITICAL - prevents buttons from compressing when space is tight */}
                         <div className="flex space-x-2 shrink-0">
-                            {!isOpeningSoon && (
+                            {!isComingSoon && (
                                 <Button
                                     variant="default"
                                     size="icon"

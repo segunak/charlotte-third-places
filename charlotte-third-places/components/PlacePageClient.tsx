@@ -27,18 +27,23 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, Dr
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { ChatDialog } from "@/components/ChatDialog";
-import { isOpenLate } from "@/lib/operating-hours";
+import { isOpenLateAt, isOpenEarlyAt, getCharlotteTimeNow } from "@/lib/operating-hours";
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place: rawPlace }: { place: Place }) {
-    // Enrich with dynamic "Open Late" tag based on current day in Charlotte
+    // Enrich with dynamic tags (Open Late, Open Early) based on current day in Charlotte
     const place = useMemo(() => {
+        const { day } = getCharlotteTimeNow(); // 2 Intl calls total (not 4)
         const tags = rawPlace.tags ?? [];
         const operatingHours = rawPlace.operatingHours ?? [];
-        if (isOpenLate(operatingHours) && !tags.includes("Open Late")) {
-            return { ...rawPlace, tags: [...tags, "Open Late"] };
+        let newTags = tags;
+        if (isOpenLateAt(operatingHours, day) && !newTags.includes("Open Late")) {
+            newTags = [...newTags, "Open Late"];
         }
-        return rawPlace;
+        if (isOpenEarlyAt(operatingHours, day) && !newTags.includes("Open Early")) {
+            newTags = [...newTags, "Open Early"];
+        }
+        return newTags !== tags ? { ...rawPlace, tags: newTags } : rawPlace;
     }, [rawPlace]);
 
     const id = place.recordId;
@@ -378,7 +383,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                         place={place}
                         layout="page"
                         showPhotosButton={false}
-                        onAskAI={place.operational !== "Opening Soon" ? () => setShowChat(true) : undefined}
+                        onAskAI={place.operational !== "Coming Soon" ? () => setShowChat(true) : undefined}
                     />
                 </CardContent>
             </Card>

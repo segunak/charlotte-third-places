@@ -69,6 +69,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     curatorPhotos: [],
     photos: [],
+    operatingHours: [],
     featured: false,
     operational: 'Open',
     comments: '',
@@ -208,9 +209,9 @@ describe('PlaceCard', () => {
     })
   })
 
-  describe('Opening Soon State', () => {
-    it('does not show chat button for Opening Soon places', () => {
-      const place = createMockPlace({ operational: 'Opening Soon' })
+  describe('Coming Soon State', () => {
+    it('does not show chat button for Coming Soon places', () => {
+      const place = createMockPlace({ operational: 'Coming Soon' })
       render(<PlaceCard place={place} />)
 
       expect(screen.queryByRole('button', { name: /ask ai about this place/i })).not.toBeInTheDocument()

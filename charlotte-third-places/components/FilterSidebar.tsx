@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useCallback } from "react";
-import { useFilters } from "@/contexts/FilterContext";
+import { useFilters, useOpenNow } from "@/contexts/FilterContext";
 import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
 import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
 
@@ -11,15 +11,17 @@ interface FilterSidebarProps {
 
 export const FilterSidebar = React.memo(function FilterSidebar({ className = "" }: FilterSidebarProps) {
     const { filters } = useFilters();
+    const { openNow } = useOpenNow();
     // Active filter count excludes fields with no constraint:
     // - Single-select: value === 'all' sentinel
     // - Multi-select: value is empty array []
+    // - Open Now: counted when active
     const activeFilterCount = Object.values(filters).filter((filter) => {
         if (Array.isArray(filter.value)) {
             return filter.value.length > 0;
         }
         return filter.value !== FILTER_SENTINEL;
-    }).length;
+    }).length + (openNow ? 1 : 0);
     // Track open state for all selects
     const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
 

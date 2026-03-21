@@ -6,9 +6,10 @@ import { Icons } from "@/components/Icons";
 import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
-import { useFilters, useQuickSearch } from '@/contexts/FilterContext';
+import { useFilters, useQuickSearch, useOpenNow } from '@/contexts/FilterContext';
 import { useModalActions } from "@/contexts/ModalContext";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { isPlaceOpenNow, getCharlotteTimeNow } from '@/lib/operating-hours';
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
@@ -25,6 +26,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
     // Consume granular contexts for optimal render performance
     const { filters } = useFilters();
     const { quickFilterText } = useQuickSearch();
+    const { openNow, setOpenNow, openNowCount } = useOpenNow();
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
     const [mapInstance, setMapInstance] = useState<google.maps.Map | null>(null);
@@ -162,11 +164,18 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
 
     const filteredPlaces = useMemo(() => {
         const normalizedSearchTerm = normalizeTextForSearch(quickFilterText);
-        return places.filter(place => {
+        let result = places.filter(place => {
             if (normalizedSearchTerm && !normalizeTextForSearch(place.name || '').includes(normalizedSearchTerm)) return false;
             return placeMatchesFilters(place as any, filters as any);
         });
-    }, [places, filters, quickFilterText]);
+
+        if (openNow) {
+            const time = getCharlotteTimeNow();
+            result = result.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time));
+        }
+
+        return result;
+    }, [places, filters, quickFilterText, openNow]);
 
     // Helper function to check if a place is within the current map bounds
     // Wrapped in useCallback to prevent unnecessary dependency changes in useMemo
@@ -224,9 +233,23 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                         }
                     }}
                 >
-                    {/* Desktop Find Me Button - hidden on mobile. Mobile uses MobileFindMeButton.tsx for reasons related to preventing PlaceModal's showing up after clicking a marker from leading to the Find Me Button disappearing */}
+                    {/* Desktop-only toolbar: Open Now toggle + Find Me button.
+                        Mobile uses external MobileMapOpenNow + MobileFindMeButton (fixed-positioned outside the map)
+                        to avoid z-index/overlap issues with PlaceModal. */}
                     {!isMobileView && (
-                        <div className="absolute top-4 right-4 z-10">
+                        <div className="absolute top-4 right-4 z-10 flex items-center gap-2">
+                            <Button
+                                onClick={() => setOpenNow(!openNow)}
+                                aria-pressed={openNow}
+                                className={openNow
+                                    ? "bg-emerald-100 hover:bg-emerald-200 text-emerald-800 border border-emerald-300 font-bold flex items-center gap-1.5 shadow-lg rounded-sm"
+                                    : "bg-(--button-white) hover:bg-gray-100 text-black font-bold flex items-center gap-1.5 shadow-lg rounded-sm"
+                                }
+                                size="sm"
+                            >
+                                <Icons.clock className={`w-4 h-4 shrink-0 ${openNow ? 'text-emerald-600' : 'text-emerald-500'}`} />
+                                Open Now ({openNowCount})
+                            </Button>
                             <Button
                                 onClick={handleLocationClick}
                                 className="bg-(--button-white) hover:bg-gray-100 text-black font-bold flex items-center gap-2 shadow-lg rounded-sm"
@@ -240,7 +263,7 @@ export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
                                     </>
                                 ) : (
                                     <>
-                                        <Icons.locate className="w-5 h-5" style={{ strokeWidth: 3 }} />
+                                        <Icons.locate className="w-5 h-5 text-secondary" style={{ strokeWidth: 3 }} />
                                         <span>Find Me</span>
                                     </>
                                 )}
