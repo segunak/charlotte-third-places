@@ -539,7 +539,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Filter drawer opens on mobile', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -551,7 +551,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile picker modal opens for Name filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -573,7 +573,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile picker modal opens for Neighborhood filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -595,7 +595,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile picker modal opens for Type filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -617,7 +617,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile picker modal opens for Tags filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -639,7 +639,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile chip filters work in drawer - Size', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -657,7 +657,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile chip filters work in drawer - Parking', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()
@@ -675,7 +675,7 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile chip filters work in drawer - Has Cinnamon Rolls', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
+    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
     
     if (await filterButton.count() > 0 && await filterButton.isVisible()) {
       await filterButton.click()

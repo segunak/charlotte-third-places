@@ -8,7 +8,7 @@ description: Researches places in or near Charlotte. Produces structured listing
 # Unrecognized tool names are silently ignored, so both environments coexist safely.
 # https://code.visualstudio.com/docs/copilot/customization/custom-agents
 # https://docs.github.com/en/copilot/reference/custom-agents-configuration#tools
-tools: [vscode, web, read, airtable/get_table_schema, airtable/list_bases, airtable/list_records_for_table, airtable/list_tables_for_base, airtable/ping, airtable/search_bases, todo]
+tools: [vscode/extensions, vscode/askQuestions, vscode/getProjectSetupInfo, vscode/installExtension, vscode/memory, vscode/newWorkspace, vscode/resolveMemoryFileUri, vscode/runCommand, vscode/vscodeAPI, read/terminalSelection, read/terminalLastCommand, read/getTaskOutput, read/getNotebookSummary, read/problems, read/readFile, read/viewImage, read/readNotebookCellOutput, airtable/create_field, airtable/create_records_for_table, airtable/create_table, airtable/get_table_schema, airtable/list_bases, airtable/list_records_for_table, airtable/list_tables_for_base, airtable/ping, airtable/search_bases, airtable/update_field, airtable/update_records_for_table, airtable/update_table, web/fetch, web/githubRepo, todo]
 # mcp-servers is used ONLY by GitHub Copilot coding agent (cloud). VS Code ignores it
 # and uses .vscode/mcp.json instead. The tools key here controls which MCP tools are
 # exposed to the system; the top-level tools list above filters what the agent actually uses.

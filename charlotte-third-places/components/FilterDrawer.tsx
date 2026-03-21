@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useCallback, useRef } from "react";
-import { useFilters } from "@/contexts/FilterContext";
+import { useFilters, useOpenNow } from "@/contexts/FilterContext";
 import { FILTER_DEFS, FILTER_SENTINEL, FilterKey, MOBILE_CHIP_FIELDS } from "@/lib/filters";
 import { FilterSelect, FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { FilterChips } from "@/components/FilterChips";
@@ -41,15 +41,17 @@ export const FilterDrawer = React.memo(function FilterDrawer({
   const setIsOpen = onOpenChange || setIsDrawerOpen;
 
   const { filters } = useFilters();
+  const { openNow } = useOpenNow();
   // Active filter count excludes fields with no constraint:
   // - Single-select: value === 'all' sentinel
   // - Multi-select: value is empty array []
+  // - Open Now: counted when active (toggle lives outside drawer but badge reflects it)
   const activeFilterCount = Object.values(filters).filter((filter) => {
     if (Array.isArray(filter.value)) {
       return filter.value.length > 0;
     }
     return filter.value !== FILTER_SENTINEL;
-  }).length;
+  }).length + (openNow ? 1 : 0);
   // Track open state for all selects
   const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
   const handleDropdownStateChange = useCallback((open: boolean) => {

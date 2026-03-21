@@ -73,12 +73,10 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                     </div>
 
                     {/* Action buttons */}
-                    <div className="flex gap-2">
-                        <div className="flex-1">
-                            <FilterResetButton variant="outline" />
-                        </div>
+                    <div className="grid grid-cols-2 gap-2">
+                        <FilterResetButton variant="outline" className="h-11 rounded-full" />
                         <Button
-                            className="flex-1"
+                            className="h-11 rounded-full"
                             onClick={() => setIsMoreOptionsOpen(true)}
                         >
                             All Filters
@@ -88,10 +86,8 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
 
                 {/* Footer zone — Open Now + Coming Soon */}
                 <div className="border-t bg-muted/30 px-4 py-3">
-                    <div className="flex items-center gap-2">
-                        <div className="flex-1">
-                            <OpenNowToggle />
-                        </div>
+                    <div className="grid grid-cols-2 gap-2">
+                        <OpenNowToggle className="rounded-full" />
                         {comingSoonPlaces.length > 0 && (
                             <button
                                 type="button"
@@ -99,7 +95,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                                 aria-haspopup="dialog"
                                 aria-expanded={comingSoonOpen}
                                 aria-label={`View ${comingSoonPlaces.length} places coming soon`}
-                                className="flex-1 h-11 flex items-center justify-center gap-2 rounded-lg border border-border bg-background text-sm font-bold text-muted-foreground transition hover:bg-card focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
+                                className="h-11 flex items-center justify-center gap-2 rounded-full border border-border bg-background text-sm font-bold text-muted-foreground transition hover:bg-card focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
                             >
                                 <Icons.clock className="h-4 w-4 shrink-0 text-primary" />
                                 Coming Soon ({comingSoonPlaces.length})
