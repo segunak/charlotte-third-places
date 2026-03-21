@@ -5,6 +5,7 @@ import { getPlaces } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDrawer } from '@/components/FilterDrawer';
 import { MobileFindMeButton } from '@/components/MobileFindMeButton';
+import { MobileMapOpenNow } from '@/components/MobileMapOpenNow';
 import { FilterProvider } from '@/contexts/FilterContext';
 import { FilterSidebar } from '@/components/FilterSidebar';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
@@ -26,7 +27,10 @@ export default async function MapPage() {
                 <div className="w-full h-screen">
                     <PlaceMap places={places} fullScreen={true} />
                 </div>
-                <MobileFindMeButton className="fixed right-3 z-50" style={{ top: '5rem' }} />
+                <div className="fixed right-3 z-50 flex items-center gap-2" style={{ top: '5rem' }}>
+                    <MobileMapOpenNow />
+                    <MobileFindMeButton />
+                </div>
                 <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
             </div>
 
