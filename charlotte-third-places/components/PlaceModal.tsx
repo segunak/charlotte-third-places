@@ -92,7 +92,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     crossCloseIconColor="text-black dark:text-white"
                     className={cn(
                         "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
-                        // Apply centralized gradient (featured/openingSoon) if provided
+                        // Apply centralized gradient (featured/comingSoon) if provided
                         highlights?.gradients.modal,
                         isMobile
                             ? "w-full max-h-[90dvh] overflow-hidden flex flex-col"
@@ -111,7 +111,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                             <div className={cn(
                                 "absolute top-4 -left-16 w-[200px] flex justify-center items-center text-white font-semibold py-2.5 transform -rotate-45 shadow-lg",
                                 highlights.ribbon.bgClass,
-                                highlights.ribbon.label === 'Opening Soon' ? 'text-xs' : 'text-sm'
+                                highlights.ribbon.label === 'Coming Soon' ? 'text-xs' : 'text-sm'
                             )}>
                                 {highlights.ribbon.icon}
                                 <span>{highlights.ribbon.label}</span>
@@ -153,7 +153,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
 
                     <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
-                        {place.operational !== "Opening Soon" && (
+                        {place.operational !== "Coming Soon" && (
                             <Button
                                 className="h-11 text-base flex-1 font-medium"
                                 onClick={() => setShowChat(true)}
@@ -165,7 +165,7 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                         <Button 
                             className={cn(
                                 "h-11 text-base font-medium",
-                                place.operational === "Opening Soon" ? "w-full" : "flex-1"
+                                place.operational === "Coming Soon" ? "w-full" : "flex-1"
                             )} 
                             onClick={onClose}
                         >

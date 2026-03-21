@@ -1,8 +1,9 @@
 "use client";
 
 import { createContext, useCallback, useMemo, useContext, ReactNode, useReducer } from "react";
-import { DEFAULT_SORT_OPTION, SortOption } from "@/lib/types";
+import { DEFAULT_SORT_OPTION, SortOption, Place } from "@/lib/types";
 import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey } from "@/lib/filters";
+import { isPlaceOpenNow, getCharlotteTimeNow } from "@/lib/operating-hours";
 
 // ============================================================================
 // CONSOLIDATED REDUCER - Single state update for atomic operations
@@ -12,18 +13,21 @@ interface FilterState {
     filters: FilterConfig;
     quickFilterText: string;
     sortOption: SortOption;
+    openNow: boolean;
 }
 
 type FilterAction =
     | { type: 'SET_FILTERS'; payload: FilterConfig | ((prev: FilterConfig) => FilterConfig) }
     | { type: 'SET_QUICK_SEARCH'; payload: string }
     | { type: 'SET_SORT'; payload: SortOption }
+    | { type: 'SET_OPEN_NOW'; payload: boolean }
     | { type: 'RESET_ALL' };
 
 const initialState: FilterState = {
     filters: DEFAULT_FILTER_CONFIG,
     quickFilterText: "",
     sortOption: DEFAULT_SORT_OPTION,
+    openNow: false,
 };
 
 function filterReducer(state: FilterState, action: FilterAction): FilterState {
@@ -39,6 +43,8 @@ function filterReducer(state: FilterState, action: FilterAction): FilterState {
             return { ...state, quickFilterText: action.payload };
         case 'SET_SORT':
             return { ...state, sortOption: action.payload };
+        case 'SET_OPEN_NOW':
+            return { ...state, openNow: action.payload };
         case 'RESET_ALL':
             return initialState;
         default:
@@ -104,6 +110,22 @@ export const SortContext = createContext<SortContextType>({
     setSortOption: () => { },
 });
 
+/**
+ * OpenNowContext: Open Now toggle state and pre-computed count.
+ * Changes when user toggles Open Now or when places change.
+ */
+interface OpenNowContextType {
+    openNow: boolean;
+    setOpenNow: (value: boolean) => void;
+    openNowCount: number;
+}
+
+export const OpenNowContext = createContext<OpenNowContextType>({
+    openNow: false,
+    setOpenNow: () => { },
+    openNowCount: 0,
+});
+
 // ============================================================================
 // CONVENIENCE HOOKS - Use granular contexts directly for best performance
 // ============================================================================
@@ -119,6 +141,9 @@ export const useQuickSearch = () => useContext(QuickSearchContext);
 
 /** Hook for components that only need sort options */
 export const useSort = () => useContext(SortContext);
+
+/** Hook for components that need Open Now filter state */
+export const useOpenNow = () => useContext(OpenNowContext);
 
 // ============================================================================
 // ACTIONS CONTEXT - Single dispatch for atomic operations
@@ -154,7 +179,7 @@ export const FilterProvider = ({
 }) => {
     // Consolidated state using reducer - single update for atomic operations like reset
     const [state, dispatch] = useReducer(filterReducer, initialState);
-    const { filters, quickFilterText, sortOption } = state;
+    const { filters, quickFilterText, sortOption, openNow } = state;
 
     // Stable setter functions that wrap dispatch for backward compatibility with granular contexts
     const setFilters = useCallback(
@@ -181,6 +206,20 @@ export const FilterProvider = ({
     const resetAll = useCallback(() => {
         dispatch({ type: 'RESET_ALL' });
     }, []);
+
+    const setOpenNow = useCallback(
+        (value: boolean) => {
+            dispatch({ type: 'SET_OPEN_NOW', payload: value });
+        },
+        []
+    );
+
+    // Pre-compute how many places are currently open (single timezone snapshot).
+    // Computed once when places change, shared by all consumers via context.
+    const openNowCount = useMemo(() => {
+        const time = getCharlotteTimeNow();
+        return (places as Place[]).filter(p => isPlaceOpenNow(p.operatingHours ?? [], time)).length;
+    }, [places]);
 
     // Pre-compute distinct values for ALL filter fields once when places change.
     // This eliminates repeated computation on every filter interaction (was causing 536-824ms INP).
@@ -252,16 +291,23 @@ export const FilterProvider = ({
         [resetAll]
     );
 
-    // Nesting order (outermost to innermost): FilterDataContext → FiltersContext → QuickSearchContext → SortContext → ActionsContext
+    const openNowValue = useMemo(
+        () => ({ openNow, setOpenNow, openNowCount }),
+        [openNow, setOpenNow, openNowCount]
+    );
+
+    // Nesting order (outermost to innermost): FilterDataContext → FiltersContext → QuickSearchContext → SortContext → OpenNowContext → ActionsContext
     // This puts the least-frequently-changing context outermost.
     return (
         <FilterDataContext.Provider value={filterDataValue}>
             <FiltersContext.Provider value={filtersValue}>
                 <QuickSearchContext.Provider value={quickSearchValue}>
                     <SortContext.Provider value={sortValue}>
-                        <FilterActionsContext.Provider value={actionsValue}>
-                            {children}
-                        </FilterActionsContext.Provider>
+                        <OpenNowContext.Provider value={openNowValue}>
+                            <FilterActionsContext.Provider value={actionsValue}>
+                                {children}
+                            </FilterActionsContext.Provider>
+                        </OpenNowContext.Provider>
                     </SortContext.Provider>
                 </QuickSearchContext.Provider>
             </FiltersContext.Provider>

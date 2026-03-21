@@ -75,7 +75,7 @@ export interface PlaceDocument {
   twitter?: string;
   linkedIn?: string;
   youTube?: string;
-  /** Operational status: "Yes", "No", or "Opening Soon" */
+  /** Operational status: "Yes", "No", or "Coming Soon" */
   operational?: string;
   embedding?: number[];
   /** Added by vector search results */

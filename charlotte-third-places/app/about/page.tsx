@@ -113,7 +113,7 @@ const frequentlyAskedQuestions = [
                                     The site shows whether a place is currently <span className="text-emerald-600 font-semibold">Open</span>, <span className="text-red-500 font-semibold">Closed</span>, or <span className="text-orange-500 font-semibold">Closing Soon</span> (within one hour of closing) based on the current time in Charlotte's timezone (Eastern). This status is calculated in real time when you visit the page, it's not baked into the data.
                                 </p>
                                 <p>
-                                    Places that are open until 10 PM or later on the current day automatically receive an "Open Late" tag, which you can use as a filter. Keep in mind that hours can change due to holidays, special events, or business decisions that haven't been updated on Google Maps yet. When in doubt, check the place's Google Maps page or website directly.
+                                    Places that are open until 10 PM or later on the current day automatically receive an "Open Late" tag. Similarly, places that open at 7 AM or earlier receive an "Open Early" tag. Both tags can be used as filters to find places that fit your schedule. Keep in mind that hours can change due to holidays, special events, or business decisions that haven't been updated on Google Maps yet. When in doubt, check the place's Google Maps page or website directly.
                                 </p>
                             </div>
                         </AccordionContent>

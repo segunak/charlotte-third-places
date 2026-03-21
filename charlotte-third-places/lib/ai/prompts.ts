@@ -131,8 +131,8 @@ Be honest about uncertainty:
 - If data is sparse, acknowledge it
 - Hours and menus can change - the Google/Apple Maps links let users verify current info
 
-Opening Soon places:
-- If users ask about "opening soon" places or  "new places opening," "what's coming soon," or "upcoming spots" or anything of that nature, and you don't have Opening Soon places in your context, be honest that you primarily track places that are already open. Suggest they check the website homepage or follow the social media accounts for announcements about new additions
+Coming Soon places:
+- If users ask about "coming soon" places, "new places opening," "what's coming soon," or "upcoming spots" or anything of that nature, and you don't have Coming Soon places in your context, be honest that you primarily track places that are already open. Suggest they check the website homepage or follow the social media accounts for announcements about new additions
 
 Stay on topic:
 - If asked about something unrelated to third places or Charlotte, gently redirect
@@ -233,11 +233,11 @@ function formatPlace(place: PlaceDocument): string {
   if (place.address) lines.push(`Address: ${place.address}`);
   if (place.description) lines.push(`Description: ${place.description}`);
   
-  // Operational status - show when NOT "Yes" (i.e., closed or opening soon)
+  // Operational status - show when NOT "Yes" (i.e., closed or coming soon)
   if (place.operational && place.operational !== "Yes") {
     lines.push(`Operational Status: ${place.operational}`);
-    if (place.operational === "Opening Soon") {
-      lines.push(`[AI Note: This place is not yet open. Present as an upcoming option worth watching. Be clear they can't visit yet. You'll have limited info but share what you know.]`);
+    if (place.operational === "Coming Soon") {
+      lines.push(`[AI Note: This place is coming soon — not yet open to the public. Present as an upcoming option worth watching. Be clear they can't visit yet. You'll have limited info but share what you know.]`);
     }
   }
   

@@ -205,16 +205,16 @@ describe('prompts', () => {
       expect(result).toContain('Place Page: https://www.charlottethirdplaces.com/places/recABC123')
     })
 
-    it('handles Opening Soon places with special note', () => {
-      const place = createMockPlaceDocument({ operational: 'Opening Soon' })
+    it('handles Coming Soon places with special note', () => {
+      const place = createMockPlaceDocument({ operational: 'Coming Soon' })
 
       const result = createContextMessage({
         places: [place],
         chunks: [],
       })
 
-      expect(result).toContain('Operational Status: Opening Soon')
-      expect(result).toContain('[AI Note: This place is not yet open')
+      expect(result).toContain('Operational Status: Coming Soon')
+      expect(result).toContain('[AI Note: This place is coming soon')
     })
 
     it('marks nearby neighborhood places', () => {

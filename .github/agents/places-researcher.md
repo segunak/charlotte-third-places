@@ -172,10 +172,10 @@ For each place, output the following fields in this exact order and with this ex
 - Include noteworthy details that help an AI chatbot answer questions later, like seating style, noise level, ordering approach, standout menu items, ambiance cues, and what people typically use the place for.
 - This field is critical because it is used for Retrieval-Augmented Generation (RAG) by an AI chatbot on the website. The better and more detailed the description, the better the chatbot can answer user questions about the place.
 
-#### Description Rules for Opening Soon Places
+#### Description Rules for Coming Soon Places
 
 - If a place is not yet open, write the description in future-oriented language that makes it clear the place is not open yet.
-- Use phrasing like "opening soon", "is expected to open", "tentatively scheduled to open in [month/year]".
+- Use phrasing like "opening soon", "coming soon", "is expected to open", "tentatively scheduled to open in [month/year]".
 - Include what is known about the concept, the owners, the expected menu or vibe, and the location.
 - Include a hyperlink to evidence of the planned opening (Instagram post, news article, press release, etc.).
 - Include the expected opening date or timeframe if available.
