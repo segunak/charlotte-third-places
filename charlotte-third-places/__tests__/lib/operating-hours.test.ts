@@ -11,7 +11,6 @@ import {
     injectDynamicTags,
     getHoursStatus,
     OPEN_LATE_THRESHOLD_HOUR,
-    OPEN_EARLY_THRESHOLD_HOUR,
 } from "@/lib/operating-hours";
 
 // Mock getCurrentDayInCharlotte by mocking the module partially
