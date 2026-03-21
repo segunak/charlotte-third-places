@@ -372,7 +372,7 @@ export function OpenNowToggle({ className }: { className?: string }) {
             onClick={() => setOpenNow(!openNow)}
             aria-pressed={openNow}
             className={cn(
-                "w-full flex items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm font-bold transition-colors",
+                "w-full h-11 flex items-center justify-center gap-2 rounded-lg border px-3 text-sm font-bold transition-colors",
                 openNow
                     ? "border-emerald-300 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 dark:border-emerald-700 dark:bg-emerald-950 dark:hover:bg-emerald-900 dark:text-emerald-300"
                     : "border-border bg-card hover:bg-muted text-muted-foreground",
@@ -407,7 +407,7 @@ export function FilterResetButton({ disabled, variant, fullWidth = true, classNa
             onClick={handleResetFilters}
             disabled={disabled}
         >
-            Reset
+            Reset Filters
         </Button>
     );
 }
