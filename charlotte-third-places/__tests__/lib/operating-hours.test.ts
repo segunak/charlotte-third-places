@@ -200,7 +200,7 @@ describe("getHoursStatus", () => {
         ];
         expect(getHoursStatus(hours)).toEqual({
             state: "closed-today",
-            opensAt: `10 AM ${tomorrow.substring(0, 3)}`,
+            opensAt: `10 AM`,
         });
     });
 
@@ -235,7 +235,7 @@ describe("getHoursStatus", () => {
         ];
         expect(getHoursStatus(hours)).toEqual({
             state: "closed-today",
-            opensAt: `6 PM ${thirdDay.substring(0, 3)}`,
+            opensAt: `${thirdDay.substring(0, 3)} 6 PM`,
         });
     });
 
@@ -451,8 +451,8 @@ describe("getHoursStatus - all states", () => {
         expect(["open", "closing-soon"]).toContain(status.state);
     });
 
-    it("closed state after hours includes opensAt with day abbreviation", () => {
-        // Place that closed hours ago
+    it("closed state after hours includes opensAt without day for tomorrow", () => {
+        // Place that closed hours ago, opens tomorrow
         const hours = [
             `${today}: 6 AM - 7 AM`,
             `${tomorrow}: 9 AM - 5 PM`,
@@ -460,7 +460,8 @@ describe("getHoursStatus - all states", () => {
         const status = getHoursStatus(hours);
         // At any time after 7 AM (which is most of the day), should be closed
         if (status.state === "closed") {
-            expect(status.opensAt).toMatch(/\d{1,2}(:\d{2})?\s(AM|PM)\s\w{3}/);
+            // Tomorrow: just time, no day abbreviation
+            expect(status.opensAt).toMatch(/^\d{1,2}(:\d{2})?\s(AM|PM)$/);
         }
     });
 
@@ -476,7 +477,7 @@ describe("getHoursStatus - all states", () => {
         }
     });
 
-    it("closed-today with forward lookup returns opensAt with day abbreviation", () => {
+    it("closed-today with forward lookup returns opensAt without day for tomorrow", () => {
         const hours = [
             `${today}: Closed`,
             `${tomorrow}: 10 AM - 6 PM`,
@@ -484,7 +485,8 @@ describe("getHoursStatus - all states", () => {
         const status = getHoursStatus(hours);
         expect(status.state).toBe("closed-today");
         if (status.state === "closed-today") {
-            expect(status.opensAt).toBe(`10 AM ${tomorrow.substring(0, 3)}`);
+            // Tomorrow: just time, no day abbreviation
+            expect(status.opensAt).toBe(`10 AM`);
         }
     });
 
@@ -498,7 +500,7 @@ describe("getHoursStatus - all states", () => {
         const status = getHoursStatus(hours);
         expect(status.state).toBe("closed-today");
         if (status.state === "closed-today") {
-            expect(status.opensAt).toBe(`7 AM ${thirdDay.substring(0, 3)}`);
+            expect(status.opensAt).toBe(`${thirdDay.substring(0, 3)} 7 AM`);
         }
     });
 
@@ -511,8 +513,8 @@ describe("getHoursStatus - all states", () => {
         }
     });
 
-    it("after-closing forward lookup skips closed days", () => {
-        // Place that closed early today, tomorrow and day after are closed
+    it("after-closing forward lookup skips closed tomorrow, shows day for 2+ days out", () => {
+        // Place that closed early today, tomorrow is closed, dayAfter is open
         const hours = [
             `${today}: 6 AM - 7 AM`,
             `${tomorrow}: Closed`,
@@ -520,8 +522,8 @@ describe("getHoursStatus - all states", () => {
         ];
         const status = getHoursStatus(hours);
         if (status.state === "closed") {
-            // Should skip tomorrow (Closed) and land on dayAfter
-            expect(status.opensAt).toBe(`12 PM ${dayAfter.substring(0, 3)}`);
+            // 2+ days out: day first, then time
+            expect(status.opensAt).toBe(`${dayAfter.substring(0, 3)} 12 PM`);
         }
     });
 

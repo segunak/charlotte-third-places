@@ -34,6 +34,8 @@ function createTestPlace(overrides: Partial<Place> = {}): Place {
     googleMapsProfileURL: '',
     appleMapsProfileURL: '',
     photos: [],
+    curatorPhotos: [],
+    operatingHours: [],
     comments: '',
     latitude: 35.2271,
     longitude: -80.8431,
@@ -53,7 +55,7 @@ describe('listHighlightKeys', () => {
   it('includes expected highlight keys', () => {
     const keys = listHighlightKeys()
     expect(keys).toContain('featured')
-    expect(keys).toContain('openingSoon')
+    expect(keys).toContain('comingSoon')
     expect(keys).toContain('blackOwned')
     expect(keys).toContain('habesha')
     expect(keys).toContain('cinnamonRoll')
@@ -113,22 +115,22 @@ describe('getPlaceHighlights - Featured places', () => {
   })
 })
 
-describe('getPlaceHighlights - Opening Soon places', () => {
-  it('returns opening soon badge and ribbon', () => {
-    const place = createTestPlace({ operational: 'Opening Soon' })
+describe('getPlaceHighlights - Coming Soon places', () => {
+  it('returns coming soon badge and ribbon', () => {
+    const place = createTestPlace({ operational: 'Coming Soon' })
     const result = getPlaceHighlights(place)
 
     expect(result.ribbon).not.toBeNull()
-    expect(result.ribbon?.label).toBe('Opening Soon')
+    expect(result.ribbon?.label).toBe('Coming Soon')
     expect(result.ribbon?.bgClass).toContain('blue')
 
-    const openingSoonBadge = result.badges.find(b => b.key === 'openingSoon')
-    expect(openingSoonBadge).toBeDefined()
-    expect(openingSoonBadge?.label).toBe('Opening Soon')
+    const comingSoonBadge = result.badges.find(b => b.key === 'comingSoon')
+    expect(comingSoonBadge).toBeDefined()
+    expect(comingSoonBadge?.label).toBe('Coming Soon')
   })
 
-  it('provides gradients for opening soon places', () => {
-    const place = createTestPlace({ operational: 'Opening Soon' })
+  it('provides gradients for coming soon places', () => {
+    const place = createTestPlace({ operational: 'Coming Soon' })
     const result = getPlaceHighlights(place)
 
     expect(result.gradients.card).toBeDefined()
@@ -218,11 +220,11 @@ describe('getPlaceHighlights - Cinnamon Rolls badge', () => {
 })
 
 describe('getPlaceHighlights - Priority and ordering', () => {
-  it('Featured takes priority over Opening Soon for ribbon/gradient', () => {
-    const place = createTestPlace({ featured: true, operational: 'Opening Soon' })
+  it('Featured takes priority over Coming Soon for ribbon/gradient', () => {
+    const place = createTestPlace({ featured: true, operational: 'Coming Soon' })
     const result = getPlaceHighlights(place)
 
-    // Featured has priority 1, Opening Soon has priority 2
+    // Featured has priority 1, Coming Soon has priority 2
     expect(result.ribbon?.label).toBe('Featured')
     // Featured uses amber color (rgba(251,191,36)) in gradient
     expect(result.gradients.card).toContain('251,191,36')
@@ -262,17 +264,17 @@ describe('getPlaceHighlights - Priority and ordering', () => {
   })
 
   it('prioritized badges sorted descending (highest priority number first, lowest rightmost)', () => {
-    // Featured (1) and Opening Soon (2)
-    const place = createTestPlace({ featured: true, operational: 'Opening Soon' })
+    // Featured (1) and Coming Soon (2)
+    const place = createTestPlace({ featured: true, operational: 'Coming Soon' })
     const result = getPlaceHighlights(place)
 
     const badgeKeys = result.badges.map(b => b.key)
     const featuredIndex = badgeKeys.indexOf('featured')
-    const openingSoonIndex = badgeKeys.indexOf('openingSoon')
+    const comingSoonIndex = badgeKeys.indexOf('comingSoon')
 
     // Both are prioritized, sorted DESC by priority
-    // DESC: [2, 1] -> openingSoon (2) comes before featured (1)
-    expect(openingSoonIndex).toBeLessThan(featuredIndex)
+    // DESC: [2, 1] -> comingSoon (2) comes before featured (1)
+    expect(comingSoonIndex).toBeLessThan(featuredIndex)
   })
 })
 
@@ -299,17 +301,17 @@ describe('getPlaceHighlights - Edge cases', () => {
     const place = createTestPlace({ operational: '' })
     const result = getPlaceHighlights(place)
 
-    const openingSoonBadge = result.badges.find(b => b.key === 'openingSoon')
-    expect(openingSoonBadge).toBeUndefined()
+    const comingSoonBadge = result.badges.find(b => b.key === 'comingSoon')
+    expect(comingSoonBadge).toBeUndefined()
   })
 
   it('handles mixed case operational status', () => {
-    // Opening Soon check is exact match, so 'opening soon' (lowercase) should not match
-    const place = createTestPlace({ operational: 'opening soon' })
+    // Coming Soon check is exact match, so 'coming soon' (lowercase) should not match
+    const place = createTestPlace({ operational: 'coming soon' })
     const result = getPlaceHighlights(place)
 
-    const openingSoonBadge = result.badges.find(b => b.key === 'openingSoon')
-    expect(openingSoonBadge).toBeUndefined()
+    const comingSoonBadge = result.badges.find(b => b.key === 'comingSoon')
+    expect(comingSoonBadge).toBeUndefined()
   })
 
   it('handles false featured as non-featured', () => {

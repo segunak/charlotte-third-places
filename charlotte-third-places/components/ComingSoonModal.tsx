@@ -8,13 +8,13 @@ import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { PlaceCard } from "@/components/PlaceCard";
 
-interface OpeningSoonModalProps {
+interface ComingSoonModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   places: Place[];
 }
 
-export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModalProps) {
+export function ComingSoonModal({ open, onOpenChange, places }: ComingSoonModalProps) {
   const isMobile = useIsMobile();
   
   // Build list content only when open and there are places; memoized to avoid re-mapping on unrelated renders.
@@ -45,7 +45,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
           onPointerDownOutside={(e) => e.preventDefault()}
         >
           <DrawerHeader className="mt-2 mb-2">
-            <DrawerTitle>Opening Soon</DrawerTitle>
+            <DrawerTitle>Coming Soon</DrawerTitle>
           </DrawerHeader>
           <div className="flex-1 overflow-y-auto px-4 pb-2 -mt-1">{content}</div>
           <DrawerFooter className="flex-row justify-center">
@@ -64,7 +64,7 @@ export function OpeningSoonModal({ open, onOpenChange, places }: OpeningSoonModa
         crossCloseIconSize="h-7 w-7"
       >
         <DialogHeader className="shrink-0">
-          <DialogTitle>Opening Soon</DialogTitle>
+          <DialogTitle>Coming Soon</DialogTitle>
         </DialogHeader>
         <div className="flex-1 overflow-y-auto">{content}</div>
         <div className="px-6 py-4 border-t mt-auto shrink-0 flex justify-center gap-3">

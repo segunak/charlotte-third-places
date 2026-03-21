@@ -10,7 +10,7 @@
  *
  * Key functionality tested:
  * - Modal visibility logic (returns null when closed)
- * - getPlaceHighlights integration for featured/opening soon
+ * - getPlaceHighlights integration for featured/coming soon
  * - Scroll hint arrow visibility (mobile-only feature)
  */
 
@@ -165,12 +165,12 @@ describe('PlaceModal', () => {
     })
   })
 
-  describe('Opening Soon Places', () => {
-    it('does not show Ask AI button for Opening Soon places', () => {
-      const place = createMockPlace({ operational: 'Opening Soon' })
+  describe('Coming Soon Places', () => {
+    it('does not show Ask AI button for Coming Soon places', () => {
+      const place = createMockPlace({ operational: 'Coming Soon' })
       render(<PlaceModal place={place} open={true} onClose={vi.fn()} />)
 
-      // The Ask AI button should not appear for Opening Soon places
+      // The Ask AI button should not appear for Coming Soon places
       const askAIButtons = screen.queryAllByRole('button', { name: /ask ai/i })
       expect(askAIButtons.length).toBe(0)
     })
@@ -184,11 +184,11 @@ describe('PlaceModal', () => {
       expect(screen.getByText('Featured')).toBeInTheDocument()
     })
 
-    it('shows ribbon for Opening Soon places', () => {
-      const place = createMockPlace({ operational: 'Opening Soon' })
+    it('shows ribbon for Coming Soon places', () => {
+      const place = createMockPlace({ operational: 'Coming Soon' })
       render(<PlaceModal place={place} open={true} onClose={vi.fn()} />)
 
-      expect(screen.getByText('Opening Soon')).toBeInTheDocument()
+      expect(screen.getByText('Coming Soon')).toBeInTheDocument()
     })
   })
 

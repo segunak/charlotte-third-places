@@ -27,19 +27,20 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, Dr
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { ChatDialog } from "@/components/ChatDialog";
-import { isOpenLate, isOpenEarly } from "@/lib/operating-hours";
+import { isOpenLateAt, isOpenEarlyAt, getCharlotteTimeNow } from "@/lib/operating-hours";
 
 // Helper component to handle client-side logic
 export function PlacePageClient({ place: rawPlace }: { place: Place }) {
     // Enrich with dynamic tags (Open Late, Open Early) based on current day in Charlotte
     const place = useMemo(() => {
+        const { day } = getCharlotteTimeNow(); // 2 Intl calls total (not 4)
         const tags = rawPlace.tags ?? [];
         const operatingHours = rawPlace.operatingHours ?? [];
         let newTags = tags;
-        if (isOpenLate(operatingHours) && !newTags.includes("Open Late")) {
+        if (isOpenLateAt(operatingHours, day) && !newTags.includes("Open Late")) {
             newTags = [...newTags, "Open Late"];
         }
-        if (isOpenEarly(operatingHours) && !newTags.includes("Open Early")) {
+        if (isOpenEarlyAt(operatingHours, day) && !newTags.includes("Open Early")) {
             newTags = [...newTags, "Open Early"];
         }
         return newTags !== tags ? { ...rawPlace, tags: newTags } : rawPlace;
@@ -382,7 +383,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                         place={place}
                         layout="page"
                         showPhotosButton={false}
-                        onAskAI={place.operational !== "Opening Soon" ? () => setShowChat(true) : undefined}
+                        onAskAI={place.operational !== "Coming Soon" ? () => setShowChat(true) : undefined}
                     />
                 </CardContent>
             </Card>

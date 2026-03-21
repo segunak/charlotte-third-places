@@ -6,7 +6,7 @@ import { useDebouncedCallback } from "use-debounce";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions } from "@/contexts/FilterContext";
+import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions, useOpenNow } from "@/contexts/FilterContext";
 import { DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
@@ -362,6 +362,28 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
 });
 
 FilterSelect.displayName = "FilterSelect";
+
+export function OpenNowToggle({ className }: { className?: string }) {
+    const { openNow, setOpenNow, openNowCount } = useOpenNow();
+
+    return (
+        <button
+            type="button"
+            onClick={() => setOpenNow(!openNow)}
+            aria-pressed={openNow}
+            className={cn(
+                "w-full flex items-center justify-center gap-2 rounded-md border px-3 py-2 text-sm font-bold transition-colors",
+                openNow
+                    ? "border-emerald-300 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 dark:border-emerald-700 dark:bg-emerald-950 dark:hover:bg-emerald-900 dark:text-emerald-300"
+                    : "border-border bg-card hover:bg-muted text-muted-foreground",
+                className,
+            )}
+        >
+            <Icons.clock className={cn("h-4 w-4 shrink-0", openNow ? "text-emerald-600 dark:text-emerald-400" : "text-emerald-500")} />
+            Open Now ({openNowCount})
+        </button>
+    );
+}
 
 export function FilterResetButton({ disabled, variant, fullWidth = true, className }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string }) {
     const { resetAll } = useFilterActions();

@@ -4,14 +4,16 @@ import { Place } from "@/lib/types";
 import { FilterSidebar } from "@/components/FilterSidebar";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { MobileQuickFilters } from "@/components/MobileQuickFilters";
-import { OpeningSoonModal } from "@/components/OpeningSoonModal";
+import { ComingSoonModal } from "@/components/ComingSoonModal";
 import React, { useState, Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
-import { SortSelect } from "@/components/FilterUtilities";
+import { SortSelect, OpenNowToggle } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { Button } from "@/components/ui/button";
 import { useInView } from "@/hooks/useInView";
+import { useOpenNow } from "@/contexts/FilterContext";
+import { isPlaceOpenNow, getCharlotteTimeNow } from "@/lib/operating-hours";
 
 // Dynamically import DataTable for lazy loading with count callback
 const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: number) => void }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
@@ -29,10 +31,24 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
     // QuickFilters uses threshold 0.3 (30% visible) for more precise visibility detection
     const [dataTableRef, isDataTableInView] = useInView<HTMLElement>(0);
     const [quickFiltersRef, isQuickFiltersInView] = useInView<HTMLDivElement>(0.3);
-    const openingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Opening Soon'), [places]);
-    const [openingSoonOpen, setOpeningSoonOpen] = useState(false);
-    const [visibleCount, setVisibleCount] = useState<number>(places.length);
+    const [comingSoonOpen, setComingSoonOpen] = useState(false);
+    const { openNow, setOpenNow, openNowCount } = useOpenNow();
 
+    // Pre-compute open-now places using a single timezone snapshot (2 Intl calls, not 2×N)
+    const openNowPlaces = useMemo(() => {
+        const time = getCharlotteTimeNow();
+        return places.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time));
+    }, [places]);
+
+    // When Open Now is active, DataTable receives only open places
+    const displayPlaces = openNow ? openNowPlaces : places;
+
+    // "Coming Soon" = places with operational status "Coming Soon" in Airtable.
+    // This is a BUSINESS lifecycle concept (not yet open to the public), completely separate
+    // from the hours-based "Open Now" filter or the "Opens Soon" hours status.
+    // Derives from ALL places, not displayPlaces, so it's always visible regardless of Open Now toggle.
+    const comingSoonPlaces = useMemo(() => places.filter(p => p.operational === 'Coming Soon'), [places]);
+    const [visibleCount, setVisibleCount] = useState<number>(places.length);
 
     return (
         <div className="grid grid-cols-1 sm:grid-cols-[minmax(0,1fr)_260px]">
@@ -55,7 +71,12 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                 </p>
 
                 <div className="sm:hidden" ref={quickFiltersRef}>
-                    <MobileQuickFilters />
+                    <MobileQuickFilters
+                        comingSoonPlaces={comingSoonPlaces}
+                        comingSoonOpen={comingSoonOpen}
+                        setComingSoonOpen={setComingSoonOpen}
+                        visibleCount={visibleCount}
+                    />
                 </div>
 
                 {/* Desktop Unified Results Toolbar */}
@@ -65,17 +86,30 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                         <span className="text-base font-semibold tracking-tight">Sort</span>
                         <div className="text-sm"><SortSelect /></div>
                     </div>
-                    {/* Opening Soon Pill */}
-                    {openingSoonPlaces.length > 0 && (
+                    {/* Open Now Toggle */}
+                    <Button
+                        variant="ghost"
+                        onClick={() => setOpenNow(!openNow)}
+                        aria-pressed={openNow}
+                        className={openNow
+                            ? "rounded-md border border-emerald-300 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 text-sm h-8 px-3 font-bold gap-1"
+                            : "rounded-md border border-border/60 bg-card hover:bg-muted text-muted-foreground text-sm h-8 px-3 font-bold gap-1"
+                        }
+                    >
+                        <Icons.clock className="h-4 w-4 text-emerald-500" />
+                        Open Now ({openNowCount})
+                    </Button>
+                    {/* Coming Soon Pill — neutral idle state matching Open Now's off-state */}
+                    {comingSoonPlaces.length > 0 && (
                         <Button
                             variant="ghost"
-                            onClick={() => setOpeningSoonOpen(true)}
+                            onClick={() => setComingSoonOpen(true)}
                             aria-haspopup="dialog"
-                            aria-expanded={openingSoonOpen}
-                            className="rounded-md border border-primary/30 bg-primary/10 hover:bg-primary/15 text-primary text-sm h-8 px-3 font-bold gap-1"
+                            aria-expanded={comingSoonOpen}
+                            className="rounded-md border border-border/60 bg-card hover:bg-muted text-muted-foreground text-sm h-8 px-3 font-bold gap-1"
                         >
-                            <Icons.clock className="h-4 w-4" />
-                            Opening Soon ({openingSoonPlaces.length})
+                            <Icons.clock className="h-4 w-4 text-primary" />
+                            Coming Soon ({comingSoonPlaces.length})
                         </Button>
                     )}
                     <div className="grow" />
@@ -84,36 +118,11 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     </div>
                 </div>
 
-                {/* Mobile: Opening Soon + Place Count Row */}
-                <div className="sm:hidden flex items-center gap-3">
-                    {openingSoonPlaces.length > 0 && (
-                        <button
-                            type="button"
-                            onClick={() => setOpeningSoonOpen(true)}
-                            aria-haspopup="dialog"
-                            aria-expanded={openingSoonOpen}
-                            aria-label={`View ${openingSoonPlaces.length} places opening soon`}
-                            className="flex-1 h-11 flex items-center gap-2 rounded-lg border border-border bg-card/80 px-3 text-left transition hover:shadow-xs focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
-                        >
-                            <Icons.clock className="h-4 w-4 text-primary shrink-0" />
-                            <span className="text-sm font-semibold text-foreground truncate">
-                                {openingSoonPlaces.length} {openingSoonPlaces.length === 1 ? 'place' : 'places'} opening soon
-                            </span>
-                            <svg className="h-4 w-4 text-primary shrink-0 ml-auto" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6" /></svg>
-                        </button>
-                    )}
-                    <div className={`h-11 flex items-center justify-center rounded-lg bg-primary px-4 ${openingSoonPlaces.length > 0 ? '' : 'flex-1'}`}>
-                        <span className="text-sm font-semibold text-primary-foreground whitespace-nowrap">
-                            {visibleCount} {visibleCount === 1 ? 'place' : 'places'}
-                        </span>
-                    </div>
-                </div>
-
-                {openingSoonPlaces.length > 0 && (
-                    <OpeningSoonModal
-                        open={openingSoonOpen}
-                        onOpenChange={setOpeningSoonOpen}
-                        places={openingSoonPlaces}
+                {comingSoonPlaces.length > 0 && (
+                    <ComingSoonModal
+                        open={comingSoonOpen}
+                        onOpenChange={setComingSoonOpen}
+                        places={comingSoonPlaces}
                     />
                 )}
 
@@ -122,7 +131,7 @@ export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
                     <Suspense fallback={<div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>}>
                         {/* DataTable receives the already mobile-filtered array (displayedPlaces).
                             This keeps DataTable focused on presentation + generic filtering/sorting logic only. */}
-                        <DataTable rowData={places} onFilteredCountChange={setVisibleCount} />
+                        <DataTable rowData={displayPlaces} onFilteredCountChange={setVisibleCount} />
                     </Suspense>
                 </section>
 
