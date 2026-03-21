@@ -98,11 +98,9 @@
 
 ### Styling
 
-* **Primary**: Tailwind CSS v4 with shadcn/ui design system
+* **Primary**: Tailwind CSS with shadcn/ui design system
 * **Theme**: Custom theme defined in `styles/globals.css` using CSS-first configuration (`@theme` block)
 * **Colors**: Brand colors defined in HSL format (see `/docs/developer-notes.md`)
-* **Fonts**: Inter (body), IBM Plex Sans (cards), JetBrains Mono (code)
-* **Responsive**: Mobile-first design with custom breakpoints (3xl: 1920px, 4xl: 2560px, etc.)
 
 ### Performance
 
