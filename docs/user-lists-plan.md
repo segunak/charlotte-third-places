@@ -1,6 +1,6 @@
 # User Lists Feature
 
-Enable users to save third places to personal lists with community sharing. Email-based authentication (magic link + OTP code), full GDPR compliance, offline resilience, and comprehensive test coverage.
+Enable users to save third places to personal lists with ratings, manual ranking, and community sharing. Email-based authentication (magic link + OTP code), Reddit-style usernames for public identity, full GDPR compliance, and comprehensive test coverage.
 
 ---
 
@@ -12,12 +12,11 @@ Enable users to save third places to personal lists with community sharing. Emai
 4. [API Routes](#api-routes)
 5. [UI Components](#ui-components)
 6. [Navigation Changes](#navigation-changes)
-7. [Offline Resilience](#offline-resilience)
-8. [Implementation Checklist](#implementation-checklist)
-9. [Manual Configuration Steps](#manual-configuration-steps)
-10. [Testing Strategy](#testing-strategy)
-11. [Privacy & Compliance](#privacy--compliance)
-12. [Cost Estimates](#cost-estimates)
+7. [Implementation Checklist](#implementation-checklist)
+8. [Manual Configuration Steps](#manual-configuration-steps)
+9. [Testing Strategy](#testing-strategy)
+10. [Privacy & Compliance](#privacy--compliance)
+11. [Cost Estimates](#cost-estimates)
 
 ---
 
@@ -26,8 +25,10 @@ Enable users to save third places to personal lists with community sharing. Emai
 ### What We're Building
 
 - **Personal Lists**: 3 default lists (Favorites, To Visit, Visited) + up to 5 custom lists per user
-- **Community Features**: Users can publish any list (including defaults) publicly; curators can create featured lists
+- **Ratings & Rankings**: 1–5 star ratings per place with manual drag-and-drop reordering
+- **Community Features**: Users can publish any list publicly with Reddit-style usernames; curators can create featured lists; `/community` page for discovery
 - **Authentication**: Email-based (magic link + OTP code) — no passwords, no OAuth complexity
+- **Content Safety**: Notes are private-only; ratings shown on public lists with disclaimer; profanity filter on list names/descriptions
 - **Privacy**: Full GDPR/CCPA compliance with account deletion, data export, and privacy policy
 
 ### Key Technology Choices
@@ -37,6 +38,8 @@ Enable users to save third places to personal lists with community sharing. Emai
 | **Authentication** | [Better Auth](https://www.better-auth.com/) (magic link + email OTP) | No rotating secrets, no provider portals, works on localhost, zero maintenance |
 | **Email Service** | [Azure Communication Services](https://learn.microsoft.com/en-us/azure/communication-services/overview) | Free tier (100 emails/day), stays within existing Azure ecosystem and $150/month credits |
 | **Database** | [Azure Table Storage](https://learn.microsoft.com/en-us/azure/storage/tables/table-storage-overview) | ~$0.03/month, uses existing `thirdplacesdata` account, no RU limits |
+| **Drag & Drop** | [@dnd-kit/sortable](https://dndkit.com/) | Manual list reordering with accessible drag-and-drop |
+| **Content Filter** | [leo-profanity](https://www.npmjs.com/package/leo-profanity) | Lightweight profanity filter for list names/descriptions at publish time |
 | **Legal Policies** | [Termly](https://termly.io/) Paid Plan | Privacy Policy, Cookie Policy, Terms & Conditions. Auto-updates with law changes, cookie consent banner included. |
 
 ### Why Magic Link + Email Code Instead of OAuth?
@@ -194,13 +197,86 @@ session: {
 
 ### Publishing: Lightweight Index Pattern
 
-**Decision**: Store published list metadata in a separate `publishedLists` partition for efficient community feed queries.
+**Decision**: Store published list metadata in a separate `publishedLists` partition for efficient community feed queries. Community feed available at `/community` for all users (logged in or not).
 
 **Rationale**:
 
 - Querying across all users' lists would be slow (cross-partition)
-- Index contains only metadata (name, place count, preview)
+- Index contains only metadata (name, place count, preview, username)
 - Full list data fetched on-demand when user clicks
+- `/community` page always visible in navigation to encourage discovery
+
+**Dual-Write Operations:**
+
+Three operations maintain the index:
+- **Publish**: Write metadata to `publishedLists` (includes username snapshot)
+- **Unpublish**: Delete from `publishedLists`
+- **Delete list**: If `isPublic`, also delete from `publishedLists`
+
+**Shareable URL Format:** `/community/lists/{listId}` — no user identifier in the URL for privacy.
+
+### Usernames: Reddit-Style Public Identity
+
+**Decision**: Reddit-style usernames for public identity on published lists. Optional until publishing. Changeable anytime.
+
+**Username Rules** (matching Reddit conventions):
+- 3–20 characters
+- Alphanumeric characters and underscores only: `[a-zA-Z0-9_]`
+- No spaces
+- Case-insensitive uniqueness (store lowercase for comparison, display as entered)
+- Changeable anytime (it's cosmetic, not the identity key — `userId` tracks identity internally)
+
+**UX Flow:**
+- **Settings page** (`/settings`): Username field, clearly labeled optional. Helper text: "Choose a display name — like a Reddit username. Can be your name, a nickname, or something fun. This will be shown on any lists you publish publicly."
+- **First publish attempt**: If `username` is null, a dialog prompts the user to choose one before proceeding. Not a separate page — a modal that validates uniqueness inline (debounced API call as they type), then continues the publish flow.
+- **Published lists**: Display username as author. Example: "A list by **coffee_crawler_clt**"
+
+**Uniqueness Check:** The `user` table stores a secondary partition (`PartitionKey: "username"`, `RowKey: {lowercase_username}`) for O(1) availability checks.
+
+### Ratings & Rankings
+
+**Decision**: 1–5 star ratings with manual drag-and-drop reordering via [@dnd-kit/sortable](https://dndkit.com/).
+
+**Rating Scale**: 1–5 numeric stars with labels (Skip it / It's okay / Solid / Great / Outstanding). Ratings are optional — `null` means unrated.
+
+**Sort Options** available on any list view:
+
+| Sort | How It Works |
+|------|-------------|
+| **Custom order** (default) | By `position` field. Drag-and-drop to reorder. |
+| **By rating** | High → low. Unrated places sorted to bottom. |
+| **Recently added** | By `addedAt` descending. |
+| **Alphabetical** | By place name. |
+
+**Drag-and-Drop Library**: [@dnd-kit/sortable](https://dndkit.com/). Initial position of newly added places = end of list (current max position + 1). Reorder uses sequential integers with batch transactions (see [Database Schema](#database-schema) for details).
+
+### Content Moderation
+
+**Decision**: Notes are private-only. Ratings shown on public lists with disclaimer. Profanity filter on list names/descriptions at publish time.
+
+**Rationale**: Free-text notes could contain offensive content. Stripping them from public views eliminates the moderation problem entirely. Star ratings (1–5) are numeric and can't be offensive. A disclaimer protects the site from being associated with user opinions.
+
+**Implementation:**
+- At publish time, run list name and description through [leo-profanity](https://www.npmjs.com/package/leo-profanity) (npm package, no API calls)
+- If profanity detected, block publish with inline validation message
+- Public list views show ratings + disclaimer banner, never notes
+- Private notes remain visible only to the list owner
+
+### Offline Resilience: Deferred
+
+**Decision**: Cut from v1. If an API call fails, show an error toast and let the user retry manually.
+
+**Rationale**: Optimistic updates with a localStorage-backed retry queue, conflict resolution, and sync-on-login adds significant complexity for a feature that hasn't launched yet. Ship without it; add only if users report actual issues with flaky connections.
+
+**Future Roadmap**: If needed, implement optimistic UI updates with a retry queue. The normalized `listEntries` table (one row per place) makes conflict resolution simpler than the original JSON blob approach — individual row operations don't conflict with each other.
+
+### Backend Repository: No Changes Required
+
+**Decision**: The `third-places-data` Azure Functions backend does not need any code changes for user lists. All list-related API routes live as Next.js API routes in the `charlotte-third-places` repository.
+
+**Rationale**: User list operations are simple CRUD on Azure Table Storage, well within what Next.js API routes handle. The Azure Functions backend specializes in data enrichment (Google Maps, Outscraper, Airtable sync) which is unrelated to user lists.
+
+**Azure Table Storage is an infrastructure dependency only**: The tables are created on the existing `thirdplacesdata` storage account (Manual Step 2), and the connection string is consumed by the Next.js app via environment variable.
 
 ### Curator Lists: Airtable + ISR
 
@@ -242,7 +318,7 @@ A place can belong to many curator lists and a curator list can contain many pla
 
 ### Azure Table Storage Tables
 
-All tables created on existing `thirdplacesdata` storage account.
+All tables created on existing `thirdplacesdata` storage account. Six tables total.
 
 #### Authentication Tables (Better Auth)
 
@@ -252,9 +328,20 @@ PartitionKey: "users"
 RowKey: {userId}  (uuid generated by Better Auth)
 Properties:
   - email: string
+  - username: string | null          # null until user sets one (required before publishing)
   - emailVerified: boolean
   - createdAt: datetime
   - updatedAt: datetime
+```
+
+Username uniqueness index (same `user` table, different partition):
+
+```txt
+Table: user (username index)
+PartitionKey: "username"
+RowKey: {lowercase_username}         # case-insensitive uniqueness check
+Properties:
+  - userId: string                   # maps back to the user record
 ```
 
 ```txt
@@ -282,7 +369,7 @@ Properties:
 
 **Note:** No `account` table needed — that was for storing OAuth provider tokens, which magic link authentication doesn't require.
 
-#### User Lists Table
+#### User Lists Table (List Metadata)
 
 ```txt
 Table: userLists
@@ -291,14 +378,6 @@ RowKey: favorites | to-visit | visited | custom_{uuid}
 Properties:
   - name: string (e.g., "Favorites", "Best Coffee Spots")
   - description: string (empty string for default lists)
-  - placeEntries: JSON string
-      [
-        {
-          "placeId": "google-maps-place-id",
-          "notes": "Great pour-over, quiet on weekdays",
-          "addedAt": "2026-01-15T10:30:00Z"
-        }
-      ]
   - isDefaultList: boolean (true for favorites/to-visit/visited)
   - isPublic: boolean (whether list is published to community)
   - publishedAt: datetime | null
@@ -306,11 +385,63 @@ Properties:
   - updatedAt: datetime
 ```
 
+#### List Entries Table (One Row Per Place)
+
+```txt
+Table: listEntries
+PartitionKey: user_{userId}_list_{listId}
+RowKey: {placeId}                    # Google Maps Place ID
+Properties:
+  - notes: string                    # private notes (never shown publicly)
+  - rating: number | null            # 1-5 star rating, null = unrated
+  - position: number                 # sequential integer for manual ordering (1, 2, 3, ...)
+  - addedAt: datetime
+```
+
+**Why Two Tables Instead of a JSON Blob?**
+
+The original plan stored `placeEntries` as a JSON string on the `userLists` row. This was replaced with a normalized `listEntries` table for data engineering maturity:
+
+| Concern | JSON Blob (old) | One-Row-Per-Entry (current) |
+|---------|-----------------|----------------------------|
+| **Add/remove place** | Read blob → parse → modify → serialize → write full blob | Insert or delete one row |
+| **Rate a place** | Read blob → parse → find → update → serialize → write full blob | Update one row |
+| **Reorder via drag-and-drop** | Rewrite entire array | Batch-update only the moved rows |
+| **Concurrency** | Two tabs adding simultaneously → last-write-wins, one add silently lost | Both inserts succeed independently |
+| **Size limit** | 64KB Azure Table Storage property limit (~50 places with max notes) | No practical limit |
+| **Fetch a list** | Point read (1 row) | Partition query within `user_{userId}_list_{listId}` |
+
+The fetch trade-off (partition query vs point read) is negligible. Azure Table Storage partition queries retrieving 100 rows take single-digit milliseconds.
+
+**Reorder Strategy: Sequential Integers with Batch Transactions**
+
+Positions are simple sequential integers: `1, 2, 3, ..., N`. No gap strategy needed because Azure Table Storage supports [entity group transactions](https://learn.microsoft.com/en-us/rest/api/storageservices/performing-entity-group-transactions) — all entities in the same partition can be updated in a single atomic batch of up to 100 operations. Since `MAX_PLACES_PER_LIST = 100`, a full renumber fits in one batch.
+
+On drag-and-drop reorder:
+1. User drags item from position 5 to position 2
+2. Compute new positions in memory (array splice)
+3. Batch-update the affected rows (positions 2–5) in a single atomic transaction
+4. ~15 lines of code, no edge cases
+
 **List Limits** (enforced in API routes via constants in `lib/constants.ts`):
 
 - `MAX_CUSTOM_LISTS = 5` — custom lists per user (3 defaults don't count)
 - `MAX_PLACES_PER_LIST = 100` — places per list
 - `MAX_NOTE_LENGTH = 500` — characters per note
+- `RATING_MIN = 1` — minimum star rating
+- `RATING_MAX = 5` — maximum star rating
+
+**Rating Labels:**
+
+| Stars | Label |
+|-------|-------|
+| 1 | Skip it |
+| 2 | It's okay |
+| 3 | Solid |
+| 4 | Great |
+| 5 | Outstanding |
+
+Ratings are optional — a place in a list can have no rating (null). The labels are displayed in the UI alongside the stars for clarity but are not stored.
 
 #### Published Lists Index
 
@@ -320,7 +451,8 @@ PartitionKey: "community"
 RowKey: {reverseTimestamp}_{listId}
 Properties:
   - listId: string (matches userLists RowKey)
-  - userId: string (for lookup only, NOT displayed publicly)
+  - userId: string (for internal lookup only, NOT displayed publicly)
+  - username: string (Reddit-style display name, shown publicly)
   - name: string
   - description: string
   - placeCount: number
@@ -328,9 +460,19 @@ Properties:
   - publishedAt: datetime
 ```
 
-**Privacy Note**: Published lists display only the **list name** — never the author's email. The `userId` is stored only for internal lookup (e.g., allowing the owner to unpublish).
+**Privacy Note**: Published lists display the **username** and **list name** — never the author's email. The `userId` is stored only for internal lookup (e.g., allowing the owner to unpublish).
 
-**Why reverseTimestamp?**: Azure Table Storage sorts RowKey ascending. Using `(MAX_TIMESTAMP - timestamp)` puts newest first, enabling efficient "recent lists" queries.
+**Public List Content Rules:**
+
+When a list is published, the public view shows:
+- List name and description (owner-written, profanity-filtered at publish time)
+- Username of the author (e.g., "by coffee_crawler_clt")
+- All places with their curated data (photos, address, attributes — controlled by site curator)
+- The user's star ratings (1–5) for each rated place
+- **Notes are stripped entirely** — never shown publicly
+- **Disclaimer banner**: "Ratings reflect this community member's personal experience, not an official Charlotte Third Places rating."
+
+**Why reverseTimestamp?**: Azure Table Storage sorts RowKey ascending. Using `(MAX_TIMESTAMP - timestamp)` puts newest first, enabling efficient "recent lists" queries on the `/community` page.
 
 ---
 
@@ -346,28 +488,32 @@ Properties:
 
 | Route | Method | Auth | Description |
 |-------|--------|------|-------------|
-| `/api/lists` | GET | Required | Get all lists for current user |
+| `/api/lists` | GET | Required | Get all lists for current user (metadata only) |
 | `/api/lists` | POST | Required | Create custom list |
-| `/api/lists/[listId]` | GET | Required | Get single list with full place data |
-| `/api/lists/[listId]` | PATCH | Required | Update list (name, description) |
+| `/api/lists/[listId]` | GET | Required | Get single list with entries and full place data |
+| `/api/lists/[listId]` | PATCH | Required | Update list metadata (name, description) |
 | `/api/lists/[listId]` | DELETE | Required | Delete custom list (not defaults) |
-| `/api/lists/[listId]/places` | POST | Required | Add place to list |
-| `/api/lists/[listId]/places/[placeId]` | PATCH | Required | Update note for place in list |
+| `/api/lists/[listId]/places` | POST | Required | Add place to list (with optional rating, notes) |
+| `/api/lists/[listId]/places/[placeId]` | PATCH | Required | Update entry (notes, rating) |
 | `/api/lists/[listId]/places/[placeId]` | DELETE | Required | Remove place from list |
-| `/api/lists/[listId]/publish` | POST | Required | Publish list to community |
+| `/api/lists/[listId]/reorder` | POST | Required | Batch update positions after drag-and-drop |
+| `/api/lists/[listId]/publish` | POST | Required | Publish list to community (requires username) |
 | `/api/lists/[listId]/unpublish` | POST | Required | Remove list from community |
 
 ### Community Routes
 
 | Route | Method | Auth | Description |
 |-------|--------|------|-------------|
-| `/api/community/lists` | GET | None | Get published lists feed (paginated) |
-| `/api/community/lists/[userId]/[listId]` | GET | None | Get full public list by ID |
+| `/api/community/lists` | GET | None | Get published lists feed (paginated, newest first) |
+| `/api/community/lists/[listId]` | GET | None | Get full public list by ID (ratings visible, notes stripped) |
 
 ### User Routes
 
 | Route | Method | Auth | Description |
 |-------|--------|------|-------------|
+| `/api/user/username` | POST | Required | Set username (first time) |
+| `/api/user/username` | PATCH | Required | Change username |
+| `/api/user/username/check` | GET | None | Check username availability (`?username=foo`) |
 | `/api/user/export` | GET | Required | Download all user data as JSON |
 | `/api/user` | DELETE | Required | Delete account and all data |
 
@@ -386,18 +532,26 @@ Properties:
 | Component | Location | Description |
 |-----------|----------|-------------|
 | `SaveButton.tsx` | `components/` | Bookmark icon button, opens list picker |
-| `ListPicker.tsx` | `components/` | Drawer (mobile) / Sheet (desktop) with checkboxes |
-| `ListsPageClient.tsx` | `app/lists/` | Main lists page with tabs |
-| `ListCard.tsx` | `components/` | Card showing list preview (for community feed) |
-| `PublishListDialog.tsx` | `components/` | Confirmation dialog for publishing |
+| `VisitedToggle.tsx` | `components/` | Checkmark toggle on place cards and list view — adds/removes from Visited list |
+| `StarRating.tsx` | `components/` | 1–5 star input with hover labels (Skip it / It's okay / Solid / Great / Outstanding) |
+| `ListPicker.tsx` | `components/` | Drawer (mobile) / Sheet (desktop) with checkboxes for selecting lists |
+| `SortableListEntries.tsx` | `components/` | Drag-and-drop sortable list of places using @dnd-kit/sortable |
+| `ListsPageClient.tsx` | `app/lists/` | Main lists page with tabs per list, sort options, drag-and-drop |
+| `CommunityPageClient.tsx` | `app/community/` | Community feed showing published lists |
+| `ListCard.tsx` | `components/` | Card showing list preview (name, author username, place count, thumbnails) |
+| `PublishListDialog.tsx` | `components/` | Confirmation dialog for publishing (triggers username prompt if not set) |
+| `UsernameDialog.tsx` | `components/` | Modal for setting/changing Reddit-style username with inline availability check |
 | `CreateListDialog.tsx` | `components/` | Form to create custom list |
 | `AuthDialog.tsx` | `components/` | Sign in prompt — email input, then magic link/code entry |
-| `UserMenu.tsx` | `components/` | Email display dropdown with settings, sign out |
+| `UserMenu.tsx` | `components/` | Username/email display dropdown with settings, sign out |
 
 ### New Pages to Create
 
 | Page | Route | Description |
 |------|-------|-------------|
+| `app/community/page.tsx` | `/community` | Community feed — all published lists, newest first |
+| `app/community/lists/[listId]/page.tsx` | `/community/lists/{listId}` | Public list view (ratings visible, notes stripped, disclaimer) |
+| `app/settings/page.tsx` | `/settings` | Account settings (username, export data, delete account) |
 | `app/privacy/page.tsx` | `/privacy` | Privacy Policy (Termly embed) |
 | `app/cookies/page.tsx` | `/cookies` | Cookie Policy (Termly embed) |
 | `app/terms/page.tsx` | `/terms` | Terms and Conditions (Termly embed) |
@@ -406,14 +560,14 @@ Properties:
 
 | Component | Changes |
 |-----------|---------|
-| `PlaceCard.tsx` | Add SaveButton |
-| `PlaceModal.tsx` | Add SaveButton in header |
-| `PlacePageClient.tsx` | Add SaveButton |
-| `MainNavigation.tsx` | Add "Lists" link when authenticated |
-| `MobileNavigation.tsx` | Replace "About" with "Lists" when authenticated |
+| `PlaceCard.tsx` | Add SaveButton; add VisitedToggle (checkmark overlay, visible when logged in) |
+| `PlaceModal.tsx` | Add SaveButton in header; add VisitedToggle |
+| `PlacePageClient.tsx` | Add SaveButton; add VisitedToggle |
+| `MainNavigation.tsx` | Add "Community" always; add "Lists" when authenticated |
+| `MobileNavigation.tsx` | Logged out: replace About with Community. Logged in: Home, Map, Chat, Lists, Community |
 | `SiteHeader.tsx` | Add UserMenu when authenticated |
-| `SiteFooter.tsx` | Add "About", "Privacy", "Cookies", "Terms" links |
-| `Icons.tsx` | Add Bookmark, BookmarkCheck icons |
+| `SiteFooter.tsx` | Add "About", "Contribute" (logged-in mobile fallback), "Privacy", "Cookies", "Terms" links |
+| `Icons.tsx` | Add Bookmark, BookmarkCheck, Star, StarFilled, Check, GripVertical icons |
 
 ### shadcn/ui Components to Install
 
@@ -422,6 +576,14 @@ npx shadcn@latest add checkbox input-otp
 ```
 
 Already available: [Drawer](https://ui.shadcn.com/docs/components/drawer), [Sheet](https://ui.shadcn.com/docs/components/sheet), [Tabs](https://ui.shadcn.com/docs/components/tabs), [Dialog](https://ui.shadcn.com/docs/components/dialog), [Button](https://ui.shadcn.com/docs/components/button), [Avatar](https://ui.shadcn.com/docs/components/avatar)
+
+### npm Packages to Install
+
+```bash
+npm install @azure/data-tables @azure/communication-email @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities leo-profanity
+```
+
+> Note: `better-auth` is already installed.
 
 ### Authentication UX Flow
 
@@ -465,13 +627,13 @@ Already available: [Drawer](https://ui.shadcn.com/docs/components/drawer), [Shee
 **Logged Out:**
 
 ```
-Home | Map | Chat | Contribute | About
+Home | Map | Chat | Contribute | Community | About
 ```
 
 **Logged In:**
 
 ```
-Home | Map | Chat | Contribute | Lists | About    [User Menu]
+Home | Map | Chat | Contribute | Lists | Community | About    [User Menu]
 ```
 
 ### Mobile (MobileNavigation.tsx)
@@ -479,47 +641,29 @@ Home | Map | Chat | Contribute | Lists | About    [User Menu]
 **Logged Out:**
 
 ```
-🏠 Home | 🗺️ Map | 💬 Chat | ➕ Contribute | ℹ️ About
+🏠 Home | 🗺️ Map | 💬 Chat | ➕ Contribute | 🌐 Community
 ```
+
+About moves to SiteFooter (standard pattern for mobile — footer always accessible).
 
 **Logged In:**
 
 ```
-🏠 Home | 🗺️ Map | 💬 Chat | ➕ Contribute | 📚 Lists
+🏠 Home | 🗺️ Map | 💬 Chat | 📚 Lists | 🌐 Community
 ```
 
-**Where does About go?**
-
-- Added to SiteFooter (already common pattern)
-- Also accessible from UserMenu dropdown
+Contribute moves to UserMenu dropdown + SiteFooter when logged in. Lists and Community take priority in mobile nav because they're the primary engagement surfaces for authenticated users.
 
 ### Mobile Header (SiteHeader.tsx)
 
 **Logged In:**
 
-- Add user icon on right side (initials or generic icon — no avatar since we only collect email)
-- Tap opens UserMenu with: My Lists, Settings, About, Sign Out
+- Add user icon on right side (first letter of username, or generic icon if no username set)
+- Tap opens UserMenu with: My Lists, Community, Contribute, Settings, About, Sign Out
 
----
+### SiteFooter Links
 
-## Offline Resilience
-
-### Strategy: Optimistic Updates with Retry Queue
-
-When a user saves a place while online, it updates immediately. If the network fails mid-request, the action is queued for retry.
-
-### User Experience
-
-1. **Save action** → Optimistic UI update (immediate feedback)
-2. **API call succeeds** → Done
-3. **API call fails** → Action queued, user sees subtle "syncing" indicator
-4. **Network restored** → Queue processed automatically
-5. **Max retries exceeded** → Toast notification, user can retry manually
-
-### Conflict Resolution
-
-- **Last-write-wins**: If same place is added/removed while offline, most recent action wins
-- **Server is source of truth**: On login, fetch fresh data from server, merge with localStorage
+Footer always includes: About, Contribute, Privacy, Cookies, Terms, and "Consent Preferences" (conditionally shown based on `NEXT_PUBLIC_ENABLE_COOKIE_CONSENT`).
 
 ---
 
@@ -531,11 +675,11 @@ Ordered list of implementation tasks. Complete in sequence; some tasks depend on
 
 - [ ] Install dependencies:
   ```bash
-  npm install @azure/data-tables @azure/communication-email
+  npm install @azure/data-tables @azure/communication-email @dnd-kit/core @dnd-kit/sortable @dnd-kit/utilities leo-profanity
   npx shadcn@latest add checkbox input-otp
   ```
   > Note: `better-auth` is already installed
-- [ ] Create `lib/constants.ts` with list limits, feature flags, session config
+- [ ] Create `lib/constants.ts` with list limits, rating config, username rules, feature flags, session config
 - [ ] Create Azure Communication Services resource (see Manual Steps)
 - [ ] Create Azure Table Storage tables (see Manual Steps)
 - [ ] Create `lib/auth.ts` — Better Auth server config with magic link + email OTP plugins
@@ -544,42 +688,59 @@ Ordered list of implementation tasks. Complete in sequence; some tasks depend on
 - [ ] Create `app/api/auth/[...all]/route.ts` (Better Auth catch-all handler)
 - [ ] Create AuthContext and AuthProvider
 - [ ] Build AuthDialog component (email input → code entry)
+- [ ] Build UsernameDialog component (Reddit-style username picker with inline validation)
 - [ ] Add UserMenu to SiteHeader
 
 ### Core Lists Functionality
 
 - [ ] Create `lib/table-storage.ts` singleton client
-- [ ] Create `lib/lists-service.ts` for API calls
+- [ ] Create `lib/lists-service.ts` for API calls (CRUD for lists and entries)
 - [ ] Build API routes:
   - `/api/lists` (GET, POST)
   - `/api/lists/[listId]` (GET, PATCH, DELETE)
   - `/api/lists/[listId]/places` (POST)
   - `/api/lists/[listId]/places/[placeId]` (PATCH, DELETE)
+  - `/api/lists/[listId]/reorder` (POST — batch position update)
 - [ ] Create ListsContext and ListsProvider
 - [ ] Build SaveButton and ListPicker components
-- [ ] Add SaveButton to PlaceCard, PlaceModal, PlacePageClient
+- [ ] Build VisitedToggle component (checkmark overlay for place cards)
+- [ ] Build StarRating component (1–5 stars with hover labels)
+- [ ] Add SaveButton and VisitedToggle to PlaceCard, PlaceModal, PlacePageClient
 
 ### Lists Page
 
 - [ ] Create `/app/lists/page.tsx` with tabs
 - [ ] Build ListsPageClient with:
-  - Tab per list
-  - Place cards with notes
+  - Tab per list (Favorites, To Visit, Visited, custom lists)
+  - Sort options (Custom order, By rating, Recently added, Alphabetical)
+  - Drag-and-drop reordering via SortableListEntries + @dnd-kit
+  - StarRating inline editing
+  - Notes editing
   - Remove from list action
-  - Empty state
+  - Empty state per list
 - [ ] Update navigation:
-  - MainNavigation: Add "Lists" when logged in
-  - MobileNavigation: Replace "About" with "Lists"
-  - SiteFooter: Add "About" link
+  - MainNavigation: Add "Community" always, "Lists" when logged in
+  - MobileNavigation: Logged out → replace About with Community. Logged in → Home, Map, Chat, Lists, Community
+  - SiteFooter: Add About, Contribute, Privacy, Cookies, Terms
+
+### Username & User Routes
+
+- [ ] Build username API routes:
+  - `/api/user/username` (POST set, PATCH change)
+  - `/api/user/username/check` (GET availability)
+- [ ] Integrate UsernameDialog into publish flow (prompt if username is null)
+- [ ] Add username field to Settings page
 
 ### Community Features
 
-- [ ] Build publish/unpublish API routes
-- [ ] Create PublishListDialog component
+- [ ] Build publish/unpublish API routes (with profanity filter on name/description)
+- [ ] Create PublishListDialog component (triggers UsernameDialog if no username)
 - [ ] Add publish toggle to list settings
 - [ ] Build community feed:
-  - `/app/community/page.tsx`
+  - `/app/community/page.tsx` (paginated, newest first)
+  - `/app/community/lists/[listId]/page.tsx` (public list view with ratings, no notes, disclaimer)
   - `/api/community/lists` endpoint
+  - `/api/community/lists/[listId]` endpoint
   - ListCard component
 - [ ] Set up curator lists:
   - Create `lib/curator-lists-service.ts`
@@ -594,14 +755,16 @@ Ordered list of implementation tasks. Complete in sequence; some tasks depend on
 
 - [ ] Build data export:
   - `/api/user/export` endpoint
-  - Download as JSON
+  - Download as JSON (lists, entries, ratings, notes, username)
 - [ ] Build account deletion:
   - `/api/user` DELETE endpoint
-  - Cascade delete from all tables
+  - Cascade delete from all tables (`user`, `session`, `userLists`, `listEntries`, `publishedLists`, username index)
   - Confirmation dialog
-- [ ] Add Settings page with:
+- [ ] Build Settings page (`/settings`) with:
+  - Username field (set/change)
   - Export data button
   - Delete account button
+  - Privacy link
 
 ### Termly Policy Pages & Cookie Consent
 
@@ -615,12 +778,11 @@ Ordered list of implementation tasks. Complete in sequence; some tasks depend on
 - [ ] Add "Consent Preferences" button to footer (conditionally shown)
 - [ ] Add Privacy link to UserMenu dropdown
 
-### Offline Support & Polish
+### Error Handling & Polish
 
-- [ ] Implement OfflineQueue (localStorage-backed retry queue)
-- [ ] Add sync indicators
-- [ ] Implement localStorage → account sync on login
-- [ ] Add loading states and error handling
+- [ ] Add error toasts for failed API calls (save, rate, reorder)
+- [ ] Add loading states for all async operations
+- [ ] Add empty states for lists with no places
 - [ ] Final testing and bug fixes
 
 ---
@@ -644,11 +806,12 @@ Ordered list of implementation tasks. Complete in sequence; some tasks depend on
 1. Go to [Azure Portal](https://portal.azure.com/)
 2. Navigate to **Storage accounts → thirdplacesdata**
 3. Click **Tables** in left sidebar
-4. Create tables:
-   - `user` (Better Auth users — stores email only)
+4. Create 6 tables:
+   - `user` (Better Auth users — stores email, username)
    - `session` (Better Auth sessions — long-lived)
    - `verification` (Better Auth magic link/OTP tokens — auto-expire)
-   - `userLists` (user's saved lists)
+   - `userLists` (list metadata — one row per list)
+   - `listEntries` (place entries — one row per place-in-list, with rating/position/notes)
    - `publishedLists` (community published lists index)
 
 ### 3. Get Table Storage Connection String ⏳ TODO
@@ -845,22 +1008,27 @@ charlotte-third-places/
   __tests__/
     components/
       SaveButton.test.tsx
+      VisitedToggle.test.tsx
+      StarRating.test.tsx
       ListPicker.test.tsx
+      SortableListEntries.test.tsx
       ListsPage.test.tsx
+      CommunityPage.test.tsx
       Navigation.test.tsx
       UserMenu.test.tsx
       AuthDialog.test.tsx
+      UsernameDialog.test.tsx
     contexts/
       AuthContext.test.tsx
       ListsContext.test.tsx
     lib/
       lists-service.test.ts
-      offline-queue.test.ts
       table-storage.test.ts
   e2e/
     auth-flow.spec.ts
     save-place.spec.ts
     lists-page.spec.ts
+    rating-and-ranking.spec.ts
     community-feed.spec.ts
     account-deletion.spec.ts
 ```
@@ -870,25 +1038,30 @@ charlotte-third-places/
 | Test File | Coverage |
 |-----------|----------|
 | `SaveButton.test.tsx` | Renders bookmark icon, opens drawer/sheet, shows login prompt when unauthenticated, displays filled icon when place is saved |
+| `VisitedToggle.test.tsx` | Renders unchecked when not visited, toggles on click, updates Visited list, hidden when logged out |
+| `StarRating.test.tsx` | Renders empty stars, click sets rating, hover shows label, null rating displays as unrated |
 | `ListPicker.test.tsx` | Checkbox toggles work, notes input accepts text, save/cancel actions, loading states |
-| `ListsPage.test.tsx` | Tabs render for each list, places display correctly, empty states, delete from list |
-| `Navigation.test.tsx` | Shows correct nav items based on auth state |
-| `UserMenu.test.tsx` | Email displays, dropdown opens, sign out works |
+| `SortableListEntries.test.tsx` | Drag-and-drop reorder fires position updates, respects sort mode |
+| `ListsPage.test.tsx` | Tabs render for each list, sort options work, places display correctly, empty states, delete from list |
+| `CommunityPage.test.tsx` | Published lists display, ratings visible, notes not visible, disclaimer shown, username displayed |
+| `Navigation.test.tsx` | Shows correct nav items based on auth state, Community always visible, Lists only when logged in |
+| `UserMenu.test.tsx` | Username displays, dropdown opens, sign out works |
 | `AuthDialog.test.tsx` | Email input validation, OTP code entry, loading states, error handling |
+| `UsernameDialog.test.tsx` | Validation (3-20 chars, alphanumeric + underscore), availability check, debounced API call |
 | `AuthContext.test.tsx` | Auth state management, login/logout flows, session persistence |
-| `ListsContext.test.tsx` | Lists CRUD operations, optimistic updates, error states |
-| `lists-service.test.ts` | API calls, error handling, retry logic |
-| `offline-queue.test.ts` | Queue persistence, retry behavior, conflict resolution |
-| `table-storage.test.ts` | CRUD operations, error handling |
+| `ListsContext.test.tsx` | Lists CRUD operations, error states, rating updates, reorder |
+| `lists-service.test.ts` | API calls, error handling |
+| `table-storage.test.ts` | CRUD operations, batch transactions, error handling |
 
 ### E2E Tests (Playwright)
 
 | Test File | Coverage |
 |-----------|----------|
 | `auth-flow.spec.ts` | Magic link/OTP login, session persistence across pages, logout clears session |
-| `save-place.spec.ts` | Save to Favorites, appears in /lists, update note, remove from list |
-| `lists-page.spec.ts` | Navigate tabs, create custom list, delete custom list, rename list |
-| `community-feed.spec.ts` | Publish list, appears in community, unpublish removes it |
+| `save-place.spec.ts` | Save to Favorites, mark as visited via toggle, appears in /lists, update note, remove from list |
+| `lists-page.spec.ts` | Navigate tabs, create custom list, delete custom list, rename list, switch sort modes |
+| `rating-and-ranking.spec.ts` | Rate a place (1–5 stars), change rating, clear rating, drag-and-drop reorder, sort by rating |
+| `community-feed.spec.ts` | Set username, publish list, appears in community with username displayed, ratings visible, notes hidden, unpublish removes it |
 | `account-deletion.spec.ts` | Delete account, all data removed, can't sign in |
 
 ### API Route Tests
@@ -897,11 +1070,16 @@ charlotte-third-places/
 |-------|------------|
 | `GET /api/lists` | Returns empty array for new user, returns all lists, rejects unauthenticated |
 | `POST /api/lists` | Creates custom list, enforces 5 list limit, validates name length |
-| `POST /api/lists/[listId]/places` | Adds place, prevents duplicates, enforces 100 place limit |
-| `DELETE /api/lists/[listId]` | Deletes custom list, cannot delete default list |
-| `POST /api/lists/[listId]/publish` | Adds to publishedLists, updates isPublic |
-| `GET /api/community/lists` | Returns paginated results, sorted newest first |
-| `DELETE /api/user` | Cascade deletes all user data |
+| `POST /api/lists/[listId]/places` | Adds place with position, prevents duplicates, enforces 100 place limit, accepts optional rating |
+| `PATCH /api/lists/[listId]/places/[placeId]` | Updates notes, updates rating (1-5 or null), validates note length |
+| `POST /api/lists/[listId]/reorder` | Batch updates positions, validates all entries belong to list |
+| `DELETE /api/lists/[listId]` | Deletes custom list + all entries, cannot delete default list |
+| `POST /api/lists/[listId]/publish` | Requires username, runs profanity filter, adds to publishedLists, updates isPublic |
+| `GET /api/community/lists` | Returns paginated results, sorted newest first, includes username |
+| `GET /api/community/lists/[listId]` | Returns ratings, strips notes, includes disclaimer context |
+| `POST /api/user/username` | Validates format (3-20, [a-zA-Z0-9_]), enforces uniqueness, creates index row |
+| `PATCH /api/user/username` | Updates username, updates index (delete old, create new) |
+| `DELETE /api/user` | Cascade deletes all user data (user, sessions, lists, entries, published, username index) |
 
 ### Mocking Strategy
 
@@ -910,6 +1088,7 @@ charlotte-third-places/
 | Azure Table Storage | Mock `TableClient` with in-memory Map |
 | Better Auth | Mock `auth.api.getSession()` to return test user |
 | Azure Communication Services | Mock email sending, verify correct recipient/content |
+| @dnd-kit | Use testing utilities to simulate drag events |
 | localStorage | Use jsdom's built-in localStorage |
 | Network | Use [MSW (Mock Service Worker)](https://mswjs.io/) for API mocking in E2E |
 
@@ -917,16 +1096,21 @@ charlotte-third-places/
 
 These tests must pass before every deploy:
 
-1. ✅ Unauthenticated user can browse places
+1. ✅ Unauthenticated user can browse places (no auth required for core site)
 2. ✅ Email sign-in flow completes successfully
 3. ✅ Session persists across page navigation
 4. ✅ Authenticated user can save place to Favorites
-5. ✅ Saved place appears in /lists
-6. ✅ User can remove place from list
-7. ✅ User can export all data as JSON
-8. ✅ Account deletion removes all user data
-9. ✅ Published list appears in community feed
-10. ✅ Unpublished list removed from community feed
+5. ✅ Authenticated user can mark place as visited via toggle
+6. ✅ Authenticated user can rate a place (1–5 stars)
+7. ✅ Authenticated user can reorder places via drag-and-drop
+8. ✅ Saved place appears in /lists with correct rating and notes
+9. ✅ User can remove place from list
+10. ✅ User can set Reddit-style username
+11. ✅ User can publish list (ratings visible, notes stripped, disclaimer shown)
+12. ✅ Published list appears in /community with username attribution
+13. ✅ Unpublished list removed from /community
+14. ✅ User can export all data as JSON
+15. ✅ Account deletion removes all user data
 
 ---
 
@@ -937,14 +1121,16 @@ These tests must pass before every deploy:
 | Data | Purpose | Retention |
 |------|---------|-----------|
 | Email | Authentication, unique identifier | Until account deletion |
+| Username | Public identity on published lists | Until account deletion |
 | Session token | Maintaining login state | Until sign-out or account deletion |
-| Saved places | Core feature | Until account deletion |
-| Notes | User-created content on saved places | Until account deletion |
+| Saved places | Core feature (list entries with position) | Until account deletion |
+| Ratings | User's 1–5 star ratings per place | Until account deletion |
+| Notes | Private user-created content on saved places | Until account deletion |
 
 ### Data We Don't Store
 
 - ❌ Passwords (magic link only)
-- ❌ Names (not collected)
+- ❌ Real names (not collected — only Reddit-style username)
 - ❌ Profile pictures (not collected)
 - ❌ OAuth tokens (no OAuth)
 - ❌ Payment information
@@ -1043,7 +1229,9 @@ The following environment variables are needed in both local `.env` and Vercel:
 
 export interface PlaceEntry {
   placeId: string;           // Google Maps Place ID
-  notes: string;
+  notes: string;             // private notes (never shown publicly)
+  rating: number | null;     // 1-5 star rating, null = unrated
+  position: number;          // sequential integer for manual ordering
   addedAt: string;           // ISO timestamp
 }
 
@@ -1052,7 +1240,6 @@ export interface UserList {
   userId: string;
   name: string;
   description: string;
-  placeEntries: PlaceEntry[];
   isDefaultList: boolean;
   isPublic: boolean;
   publishedAt: string | null;
@@ -1060,14 +1247,37 @@ export interface UserList {
   updatedAt: string;
 }
 
+/** Full list with resolved place data, used on /lists page */
+export interface UserListWithEntries extends UserList {
+  entries: PlaceEntry[];
+}
+
 export interface PublishedList {
   listId: string;
   userId: string;            // For internal lookup only, NOT displayed publicly
+  username: string;          // Reddit-style display name, shown publicly
   name: string;
   description: string;
   placeCount: number;
   previewPlaceIds: string[];
   publishedAt: string;
+}
+
+/** Public list view — notes stripped, ratings visible */
+export interface PublicListView {
+  listId: string;
+  username: string;
+  name: string;
+  description: string;
+  entries: PublicPlaceEntry[];
+  publishedAt: string;
+}
+
+/** Place entry as seen in a public list — no notes */
+export interface PublicPlaceEntry {
+  placeId: string;
+  rating: number | null;
+  position: number;
 }
 
 export interface CuratorList {
@@ -1094,20 +1304,21 @@ charlotte-third-places/
         route.ts             # GET all, POST create
         [listId]/
           route.ts           # GET, PATCH, DELETE list
+          reorder/
+            route.ts         # POST batch position update
           places/
             route.ts         # POST add place
             [placeId]/
-              route.ts       # PATCH note, DELETE place
+              route.ts       # PATCH entry (notes, rating), DELETE place
           publish/
-            route.ts         # POST publish
+            route.ts         # POST publish (profanity filter + username check)
           unpublish/
             route.ts         # POST unpublish
       community/
         lists/
-          route.ts           # GET feed
-          [userId]/
-            [listId]/
-              route.ts       # GET public list
+          route.ts           # GET feed (paginated, newest first)
+          [listId]/
+            route.ts         # GET public list (ratings visible, notes stripped)
       curator/
         lists/
           route.ts           # GET curator lists
@@ -1115,25 +1326,36 @@ charlotte-third-places/
         route.ts             # DELETE account
         export/
           route.ts           # GET data export
+        username/
+          route.ts           # POST set, PATCH change username
+          check/
+            route.ts         # GET availability check
     lists/
       page.tsx               # Lists page
     community/
       page.tsx               # Community feed
+      lists/
+        [listId]/
+          page.tsx           # Public list view (ratings, no notes, disclaimer)
+    settings/
+      page.tsx               # Account settings (username, export, delete)
     privacy/
       page.tsx               # Privacy Policy (Termly embed)
     cookies/
       page.tsx               # Cookie Policy (Termly embed)
     terms/
       page.tsx               # Terms and Conditions (Termly embed)
-    settings/
-      page.tsx               # Account settings
   components/
     SaveButton.tsx
+    VisitedToggle.tsx          # Checkmark toggle for marking places as visited
+    StarRating.tsx             # 1–5 star input with hover labels
+    SortableListEntries.tsx    # Drag-and-drop sortable list (@dnd-kit)
     ListPicker.tsx
     ListCard.tsx
     PublishListDialog.tsx
+    UsernameDialog.tsx         # Reddit-style username picker
     CreateListDialog.tsx
-    AuthDialog.tsx           # Email input → magic link/code entry
+    AuthDialog.tsx             # Email input → magic link/code entry
     UserMenu.tsx
   contexts/
     AuthContext.tsx
@@ -1141,14 +1363,13 @@ charlotte-third-places/
   lib/
     auth.ts                  # Better Auth server config (magic link + email OTP)
     auth-client.ts           # Better Auth client
-    constants.ts             # List limits, feature flags, session config
+    constants.ts             # List limits, rating config, username rules, feature flags
     email.ts                 # Azure Communication Services email sender
     table-storage.ts         # Azure Table Storage client
-    lists-service.ts         # User lists API service
+    lists-service.ts         # User lists API service (CRUD for lists + entries)
     curator-lists-service.ts # Curator lists from Airtable (always hits real API)
-    lists/
-      offline-queue.ts
-      types.ts
+    types/
+      lists.ts               # List-related TypeScript types
 ```
 
 ---
@@ -1169,3 +1390,17 @@ charlotte-third-places/
 ### OAuth Sign-In (Deferred)
 
 OAuth (Google, Microsoft, Apple) can be added later as an optional enhancement. Better Auth supports [adding social providers](https://www.better-auth.com/docs/concepts/oauth) alongside magic link, so authenticated users could link a social account to their existing email-based account. This is not needed for launch but could improve UX for users who prefer one-click sign-in.
+
+### Offline Resilience (Deferred)
+
+If users report issues with flaky connections, implement optimistic UI updates with a localStorage-backed retry queue. The normalized `listEntries` table makes this simpler than a JSON blob approach — individual row operations (add place, update rating) don't conflict with each other. Strategy: optimistic update → queue failed requests → process queue on reconnect → server is source of truth on conflict.
+
+### Community Engagement Features (Deferred)
+
+Future enhancements to the `/community` page:
+
+- Feature a user's list as "List of the Week"
+- Highlight top-rated lists
+- "Trending" lists based on view count
+- User profiles with all published lists
+- Follow other users to see their new lists
