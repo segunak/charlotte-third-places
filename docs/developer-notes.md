@@ -44,3 +44,27 @@ Brand colors.
 - Dark Blue
   - Hex: #181b1e
   - HSL: hsl(197, 5%, 10%)
+
+## API Endpoints
+
+### `GET /api/places`
+
+**URL**: <https://www.charlottethirdplaces.com/api/places>
+
+Returns all places on the site as a JSON array. Each element matches the `Place` type defined in `lib/types.ts`. Uses `force-static` rendering, so the response is generated at build time and refreshed when `/api/revalidate` is called.
+
+**Response**: `200 OK` — JSON array of `Place` objects. Date fields (`createdDate`, `lastModifiedDate`) are serialized as ISO 8601 strings.
+
+**Implementation**: `app/api/places/route.ts`
+
+### `GET /api/revalidate`
+
+On-demand ISR revalidation. Requires `Authorization: Bearer {REVALIDATE_TOKEN}` header. Revalidates the entire site including all API routes.
+
+**Implementation**: `app/api/revalidate/route.ts`
+
+### `POST /api/chat`
+
+AI-powered chat endpoint using RAG retrieval against Cosmos DB. See `docs/ai.md` for full documentation.
+
+**Implementation**: `app/api/chat/route.ts`
