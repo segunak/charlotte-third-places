@@ -451,13 +451,13 @@ describe("getHoursStatus - all states", () => {
     });
 
     it("closed state after hours includes opensAt without day for tomorrow", () => {
-        // Place that closed hours ago, opens tomorrow
+        // Place that closed very early today (1-2 AM), so at any normal test execution time
+        // we're past closing and the forward lookup finds tomorrow.
         const hours = [
-            `${today}: 6 AM - 7 AM`,
+            `${today}: 1 AM - 2 AM`,
             `${tomorrow}: 9 AM - 5 PM`,
         ];
         const status = getHoursStatus(hours);
-        // At any time after 7 AM (which is most of the day), should be closed
         if (status.state === "closed") {
             // Tomorrow: just time, no day abbreviation
             expect(status.opensAt).toMatch(/^\d{1,2}(:\d{2})?\s(AM|PM)$/);
@@ -513,9 +513,10 @@ describe("getHoursStatus - all states", () => {
     });
 
     it("after-closing forward lookup skips closed tomorrow, shows day for 2+ days out", () => {
-        // Place that closed early today, tomorrow is closed, dayAfter is open
+        // Place that closed very early today (1-2 AM), so at any normal test execution time
+        // we're past closing. Tomorrow is closed, dayAfter is open.
         const hours = [
-            `${today}: 6 AM - 7 AM`,
+            `${today}: 1 AM - 2 AM`,
             `${tomorrow}: Closed`,
             `${dayAfter}: 12 PM - 9 PM`,
         ];
