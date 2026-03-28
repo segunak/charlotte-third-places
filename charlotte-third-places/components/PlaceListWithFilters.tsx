@@ -12,7 +12,7 @@ import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { Button } from "@/components/ui/button";
 import { useInView } from "@/hooks/useInView";
-import { useOpenNow } from "@/contexts/FilterContext";
+import { useOpenNow, usePlaces } from "@/contexts/FilterContext";
 import { isPlaceOpenNow, getCharlotteTimeNow } from "@/lib/operating-hours";
 
 // Dynamically import DataTable for lazy loading with count callback
@@ -21,11 +21,8 @@ const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: nu
     loading: () => <div className="mt-16 flex items-center justify-center"><LoadingSpinner /></div>,
 });
 
-interface PlaceListWithFiltersProps {
-    places: Place[];
-}
-
-export function PlaceListWithFilters({ places }: PlaceListWithFiltersProps) {
+export function PlaceListWithFilters() {
+    const { places } = usePlaces();
     // Use external hook with primitive parameters for stable dependencies
     // DataTable uses threshold 0 (any pixel visible) because it's a tall virtualized list
     // QuickFilters uses threshold 0.3 (30% visible) for more precise visibility detection

@@ -27,24 +27,13 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, Dr
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { ChatDialog } from "@/components/ChatDialog";
-import { isOpenLateAt, isOpenEarlyAt, getCharlotteTimeNow } from "@/lib/operating-hours";
+import { injectDynamicTags } from "@/lib/operating-hours";
 
-// Helper component to handle client-side logic
+// Single place detail page — not inside a FilterProvider tree.
+// Enriches the place directly with injectDynamicTags() instead of usePlaces().
+// See PlacesContext in FilterContext.tsx for the full explanation of the two paths.
 export function PlacePageClient({ place: rawPlace }: { place: Place }) {
-    // Enrich with dynamic tags (Open Late, Open Early) based on current day in Charlotte
-    const place = useMemo(() => {
-        const { day } = getCharlotteTimeNow(); // 2 Intl calls total (not 4)
-        const tags = rawPlace.tags ?? [];
-        const operatingHours = rawPlace.operatingHours ?? [];
-        let newTags = tags;
-        if (isOpenLateAt(operatingHours, day) && !newTags.includes("Open Late")) {
-            newTags = [...newTags, "Open Late"];
-        }
-        if (isOpenEarlyAt(operatingHours, day) && !newTags.includes("Open Early")) {
-            newTags = [...newTags, "Open Early"];
-        }
-        return newTags !== tags ? { ...rawPlace, tags: newTags } : rawPlace;
-    }, [rawPlace]);
+    const place = useMemo(() => injectDynamicTags([rawPlace])[0], [rawPlace]);
 
     const id = place.recordId;
 

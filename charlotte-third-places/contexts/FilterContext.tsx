@@ -3,7 +3,7 @@
 import { createContext, useCallback, useMemo, useContext, ReactNode, useReducer } from "react";
 import { DEFAULT_SORT_OPTION, SortOption, Place } from "@/lib/types";
 import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey } from "@/lib/filters";
-import { isPlaceOpenNow, getCharlotteTimeNow } from "@/lib/operating-hours";
+import { isPlaceOpenNow, getCharlotteTimeNow, injectDynamicTags } from "@/lib/operating-hours";
 
 // ============================================================================
 // CONSOLIDATED REDUCER - Single state update for atomic operations
@@ -126,6 +126,29 @@ export const OpenNowContext = createContext<OpenNowContextType>({
     openNowCount: 0,
 });
 
+/**
+ * PlacesContext: Enriched places array with dynamic tags (Open Late, Open Early).
+ * Computed once when raw places change, shared by all consumers.
+ *
+ * HOW TO GET PLACES:
+ * 1. usePlaces() — For any component inside a FilterProvider tree (homepage, map, browse).
+ *    Returns places enriched with dynamic day-of-week tags. This is the primary path.
+ * 2. injectDynamicTags([place]) — For components NOT inside a FilterProvider tree (e.g.,
+ *    the single place detail page). Call injectDynamicTags directly on the raw place(s).
+ *    Both paths use the same enrichment function; the detail page just doesn't need
+ *    the full FilterProvider infrastructure for a single place.
+ *
+ * DO NOT use raw places from getPlaces() directly in client components — they lack
+ * dynamic tags. Always go through one of the two paths above.
+ */
+interface PlacesContextType {
+    places: Place[];
+}
+
+export const PlacesContext = createContext<PlacesContextType>({
+    places: [],
+});
+
 // ============================================================================
 // CONVENIENCE HOOKS - Use granular contexts directly for best performance
 // ============================================================================
@@ -144,6 +167,13 @@ export const useSort = () => useContext(SortContext);
 
 /** Hook for components that need Open Now filter state */
 export const useOpenNow = () => useContext(OpenNowContext);
+
+/**
+ * Hook for components that need the enriched places array.
+ * Use this inside any FilterProvider tree (homepage, map, browse views).
+ * For single place views without a FilterProvider, use injectDynamicTags() directly instead.
+ */
+export const usePlaces = () => useContext(PlacesContext);
 
 // ============================================================================
 // ACTIONS CONTEXT - Single dispatch for atomic operations
@@ -172,11 +202,15 @@ type DistinctValuesCache = Record<FilterKey, string[]>;
 
 export const FilterProvider = ({
     children,
-    places,
+    places: rawPlaces,
 }: {
     children: ReactNode;
     places: Array<any>;
 }) => {
+    // Enrich places with dynamic tags (Open Late, Open Early) based on current day in Charlotte.
+    // This is the single enrichment point — all consumers get enriched data automatically.
+    const places = useMemo(() => injectDynamicTags(rawPlaces as Place[]), [rawPlaces]);
+
     // Consolidated state using reducer - single update for atomic operations like reset
     const [state, dispatch] = useReducer(filterReducer, initialState);
     const { filters, quickFilterText, sortOption, openNow } = state;
@@ -296,21 +330,28 @@ export const FilterProvider = ({
         [openNow, setOpenNow, openNowCount]
     );
 
-    // Nesting order (outermost to innermost): FilterDataContext → FiltersContext → QuickSearchContext → SortContext → OpenNowContext → ActionsContext
-    // This puts the least-frequently-changing context outermost.
+    const placesValue = useMemo(
+        () => ({ places }),
+        [places]
+    );
+
+    // Nesting order (outermost to innermost): PlacesContext → FilterDataContext → FiltersContext → QuickSearchContext → SortContext → OpenNowContext → ActionsContext
+    // PlacesContext is outermost because it changes least (only when raw places change).
     return (
-        <FilterDataContext.Provider value={filterDataValue}>
-            <FiltersContext.Provider value={filtersValue}>
-                <QuickSearchContext.Provider value={quickSearchValue}>
-                    <SortContext.Provider value={sortValue}>
-                        <OpenNowContext.Provider value={openNowValue}>
-                            <FilterActionsContext.Provider value={actionsValue}>
-                                {children}
-                            </FilterActionsContext.Provider>
-                        </OpenNowContext.Provider>
-                    </SortContext.Provider>
-                </QuickSearchContext.Provider>
-            </FiltersContext.Provider>
-        </FilterDataContext.Provider>
+        <PlacesContext.Provider value={placesValue}>
+            <FilterDataContext.Provider value={filterDataValue}>
+                <FiltersContext.Provider value={filtersValue}>
+                    <QuickSearchContext.Provider value={quickSearchValue}>
+                        <SortContext.Provider value={sortValue}>
+                            <OpenNowContext.Provider value={openNowValue}>
+                                <FilterActionsContext.Provider value={actionsValue}>
+                                    {children}
+                                </FilterActionsContext.Provider>
+                            </OpenNowContext.Provider>
+                        </SortContext.Provider>
+                    </QuickSearchContext.Provider>
+                </FiltersContext.Provider>
+            </FilterDataContext.Provider>
+        </PlacesContext.Provider>
     );
 };
