@@ -360,6 +360,11 @@ export async function getPlaceById(id: string) {
  * 
  * If the environment is set to 'development', it uses data from a CSV file.
  * Otherwise, it fetches data from an Airtable base.
+ *
+ * IMPORTANT: Returns RAW places without dynamic tags (Open Late, Open Early).
+ * Dynamic tags depend on the visitor's current day-of-week and must be computed
+ * client-side. For enriched places in list/browse views, use the usePlaces() hook
+ * from FilterContext. For single place detail pages, call injectDynamicTags() directly.
  * 
  * @returns {Promise<Place[]>} A promise that resolves to an array of Place objects.
  * @throws {Error} Throws an error if fetching places fails.

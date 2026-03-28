@@ -21,6 +21,7 @@ import {
   useQuickSearch,
   useSort,
   useFilterActions,
+  usePlaces,
   FilterDataContext,
   FiltersContext,
   QuickSearchContext,
@@ -61,6 +62,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     curatorPhotos: [],
     photos: [],
+    operatingHours: [],
     comments: '',
     featured: false,
     operational: 'Open',
@@ -815,5 +817,131 @@ describe('FilterContext', () => {
         expect(result.current.filters.neighborhood.value).toBe('DirectTest')
       })
     })
+  })
+})
+
+describe('usePlaces - Dynamic Tag Enrichment', () => {
+  it('enriches places with Open Late tag when closing hour >= 22', () => {
+    // Get current day in Charlotte for the test
+    const today = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long',
+      timeZone: 'America/New_York',
+    }).format(new Date())
+
+    const places = [
+      createMockPlace({
+        name: 'Late Night Cafe',
+        operatingHours: [`${today}: 8 AM - 11 PM`],
+        tags: ['Coffee Shop'],
+      }),
+    ]
+
+    const { result } = renderHook(() => usePlaces(), {
+      wrapper: ({ children }: { children: ReactNode }) => (
+        <FilterProvider places={places}>{children}</FilterProvider>
+      ),
+    })
+
+    const enrichedPlace = result.current.places[0]
+    expect(enrichedPlace.tags).toContain('Open Late')
+    // Original tags preserved
+    expect(enrichedPlace.tags).toContain('Coffee Shop')
+  })
+
+  it('enriches places with Open Early tag when opening hour <= 7', () => {
+    const today = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long',
+      timeZone: 'America/New_York',
+    }).format(new Date())
+
+    const places = [
+      createMockPlace({
+        name: 'Early Bird Cafe',
+        operatingHours: [`${today}: 6 AM - 5 PM`],
+        tags: [],
+      }),
+    ]
+
+    const { result } = renderHook(() => usePlaces(), {
+      wrapper: ({ children }: { children: ReactNode }) => (
+        <FilterProvider places={places}>{children}</FilterProvider>
+      ),
+    })
+
+    expect(result.current.places[0].tags).toContain('Open Early')
+  })
+
+  it('does not add dynamic tags when hours do not qualify', () => {
+    const today = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long',
+      timeZone: 'America/New_York',
+    }).format(new Date())
+
+    const places = [
+      createMockPlace({
+        name: 'Normal Hours Place',
+        operatingHours: [`${today}: 9 AM - 5 PM`],
+        tags: ['Bakery'],
+      }),
+    ]
+
+    const { result } = renderHook(() => usePlaces(), {
+      wrapper: ({ children }: { children: ReactNode }) => (
+        <FilterProvider places={places}>{children}</FilterProvider>
+      ),
+    })
+
+    expect(result.current.places[0].tags).not.toContain('Open Late')
+    expect(result.current.places[0].tags).not.toContain('Open Early')
+    expect(result.current.places[0].tags).toContain('Bakery')
+  })
+
+  it('does not duplicate existing dynamic tags', () => {
+    const today = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long',
+      timeZone: 'America/New_York',
+    }).format(new Date())
+
+    const places = [
+      createMockPlace({
+        name: 'Already Tagged',
+        operatingHours: [`${today}: 6 AM - 11 PM`],
+        tags: ['Open Late', 'Open Early'],
+      }),
+    ]
+
+    const { result } = renderHook(() => usePlaces(), {
+      wrapper: ({ children }: { children: ReactNode }) => (
+        <FilterProvider places={places}>{children}</FilterProvider>
+      ),
+    })
+
+    const tags = result.current.places[0].tags
+    expect(tags.filter(t => t === 'Open Late')).toHaveLength(1)
+    expect(tags.filter(t => t === 'Open Early')).toHaveLength(1)
+  })
+
+  it('enriched places include Open Late/Early in distinct tag values', () => {
+    const today = new Intl.DateTimeFormat('en-US', {
+      weekday: 'long',
+      timeZone: 'America/New_York',
+    }).format(new Date())
+
+    const places = [
+      createMockPlace({
+        operatingHours: [`${today}: 6 AM - 11 PM`],
+        tags: [],
+      }),
+    ]
+
+    const { result } = renderHook(() => useFilterData(), {
+      wrapper: ({ children }: { children: ReactNode }) => (
+        <FilterProvider places={places}>{children}</FilterProvider>
+      ),
+    })
+
+    const distinctTags = result.current.getDistinctValues('tags')
+    expect(distinctTags).toContain('Open Late')
+    expect(distinctTags).toContain('Open Early')
   })
 })

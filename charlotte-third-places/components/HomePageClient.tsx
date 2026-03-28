@@ -3,13 +3,12 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { FilterProvider } from '@/contexts/FilterContext';
+import { FilterProvider, usePlaces } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Icons } from "@/components/Icons";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
-import { injectDynamicTags } from "@/lib/operating-hours";
 
 const ResponsivePlaceCards = nextDynamic(() => import("@/components/ResponsivePlaceCards").then(mod => mod.ResponsivePlaceCards), {
     ssr: false,
@@ -34,15 +33,25 @@ interface HomePageClientProps {
 }
 
 export default function HomePageClient({ places: rawPlaces }: HomePageClientProps) {
-    // Enrich places with dynamic tags (Open Late, Open Early) based on current day in Charlotte
-    const places = injectDynamicTags(rawPlaces);
+    return (
+        <FilterProvider places={rawPlaces}>
+            <HomePageContent />
+        </FilterProvider>
+    );
+}
+
+/**
+ * Inner component that reads enriched places from FilterProvider context.
+ * Separated so usePlaces() is called inside the provider tree.
+ */
+function HomePageContent() {
+    const { places } = usePlaces();
 
     // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease them, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
     const excludedNames = ["Starbucks", "Panera"];
     const placesFilteredByName = places.filter(place => !new RegExp(excludedNames.join("|"), "i").test(place.name));
 
     return (
-        <FilterProvider places={places}>
             <div className="min-h-screen site-padding-x py-8 space-y-4">
                 <h1 className="text-3xl font-bold">
                     Explore <span className="text-primary">{places.length}</span> Third Places in{" "}
@@ -170,9 +179,8 @@ export default function HomePageClient({ places: rawPlaces }: HomePageClientProp
                 </div>
 
                 <div id="list-section">
-                    <PlaceListWithFilters places={places} />
+                    <PlaceListWithFilters />
                 </div>
             </div>
-        </FilterProvider>
     );
 }
