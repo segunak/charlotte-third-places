@@ -6,7 +6,7 @@ import { Icons } from "@/components/Icons";
 import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
 import { normalizeTextForSearch } from '@/lib/utils';
 import { placeMatchesFilters } from "@/lib/filters";
-import { useFilters, useQuickSearch, useOpenNow } from '@/contexts/FilterContext';
+import { useFilters, useQuickSearch, useOpenNow, usePlaces } from '@/contexts/FilterContext';
 import { useModalActions } from "@/contexts/ModalContext";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { isPlaceOpenNow, getCharlotteTimeNow } from '@/lib/operating-hours';
@@ -14,11 +14,11 @@ import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
 interface PlaceMapProps {
-    places: Array<Place>;
     fullScreen?: boolean;
 }
 
-export function PlaceMap({ places, fullScreen = false }: PlaceMapProps) {
+export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
+    const { places } = usePlaces();
     const { showPlaceModal } = useModalActions();
     // Cache for consistent color assignments - using useRef to persist across renders without causing re-renders
     const colorCacheRef = useRef<{ [key: string]: string }>({});

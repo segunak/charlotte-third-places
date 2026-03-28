@@ -25,7 +25,7 @@ export default async function MapPage() {
             {/* Mobile: Full-screen map with no header text */}
             <div className="sm:hidden min-h-screen relative">
                 <div className="w-full h-screen">
-                    <PlaceMap places={places} fullScreen={true} />
+                    <PlaceMap fullScreen={true} />
                 </div>
                 <div className="fixed right-3 z-50 flex items-center gap-2" style={{ top: '5rem' }}>
                     <MobileMapOpenNow />
@@ -48,7 +48,7 @@ export default async function MapPage() {
                         </p>
                     </div>
                     <div className="w-full h-[80vh] mb-4">
-                        <PlaceMap places={places} />
+                        <PlaceMap />
                     </div>
                 </section>
 

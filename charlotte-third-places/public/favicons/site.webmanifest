@@ -2,8 +2,10 @@
   "id": "/",
   "name": "Charlotte Third Places",
   "short_name": "Third Places",
-  "description": "Discover third places in Charlotte, NC, cafes, coffee shops, libraries, and more. Find spots for studying, remote work, reading, or hanging out.",
+  "description": "Discover third places in Charlotte, North Carolina: cafes, coffee shops, bookstores, bakeries, libraries, and more. Find spots for remote work, studying, reading, meeting friends, or hanging out.",
+  "categories": ["lifestyle", "social", "food", "travel"],
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
   "theme_color": "#00b2d6",
@@ -28,5 +30,45 @@
       "purpose": "any"
     }
   ],
-  "categories": ["lifestyle", "food", "travel"]
+  "shortcuts": [
+    {
+      "name": "Map View",
+      "short_name": "Map",
+      "url": "/map",
+      "description": "View all places on a map",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Ask AI for Recommendations",
+      "short_name": "AI Chat",
+      "url": "/chat",
+      "description": "Get personalized place recommendations from AI",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Suggest a Place",
+      "short_name": "Contribute",
+      "url": "/contribute",
+      "description": "Recommend a new place to add",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
 }
