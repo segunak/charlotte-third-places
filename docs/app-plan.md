@@ -46,14 +46,14 @@ These are needed for both stores and can be prepared in advance.
 | Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
 | Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
 | Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Not created |
-| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners. Generate from the social media logo on a solid `#00b2d6` background | Not created |
-| Screenshots (phone) | At least 4-8 showing homepage, map, place detail, AI chat | Not created |
+| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners. Generate from `public/logos/social-media-logo.png` on a solid `#00b2d6` background | Not created |
+| Screenshots (phone) | 5 screenshots: homepage, map, chat, contribute, about | Done — `public/screenshots/` |
 
-**Screenshots**: Take these from a real phone or emulator after the PWA code is deployed (Phase 3). But the feature graphic and 1024x1024 icon can be created now.
+**Screenshots**: Take these from a real phone in mobile view. Open each page on the live site, screenshot it. These same 5 images are used for Google Play, Apple App Store, and the manifest `screenshots` field (step 2.9).
 
-**Google Play screenshots**: Minimum 2, ideally 4-8. Min 320px, max 3840px on any side.
+**Google Play**: Min 320px, max 3840px on any side. Use the phone screenshots as-is.
 
-**Apple App Store screenshots**: Required for each device size. At minimum: iPhone 6.7" (1290x2796) and iPhone 6.5" (1242x2688).
+**Apple App Store**: Required for each device size. At minimum: iPhone 6.7" (1290x2796) and iPhone 6.5" (1242x2688). Take the screenshots on an iPhone that matches one of these sizes, or resize them.
 
 ### 1.3 Write store listing copy
 
@@ -63,12 +63,22 @@ Prepare these text assets now so they're ready at submission time.
 > Discover 400+ third places in Charlotte, NC
 
 **Full description** (both stores, ≤4000 chars):
-> Expand on what the app does, key features. Highlight: 400+ curated places, map view, AI recommendations, offline support.
+> Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina — cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
+>
+> Features:
+> • Browse 400+ curated places with details on Wi-Fi, parking, size, hours, and whether a purchase is required
+> • Interactive map view showing every place across the Charlotte area
+> • AI-powered recommendations — describe what you're looking for and get personalized suggestions
+> • Filter by neighborhood, type, tags, and more
+> • Real-time open/closed status based on current hours
+> • Offline support — previously visited pages load without internet
+>
+> Built and maintained by a Charlotte resident as a free community resource. Featured in The Charlotte Observer. Open source at github.com/segunak/charlotte-third-places.
 
 **Keywords** (Apple, 100 char limit, comma-separated):
 > charlotte, third places, coffee shops, cafes, libraries, study spots, remote work, queen city
 
-**Category**: Primary: **Lifestyle**. Secondary: **Food & Drink** or **Travel**
+**Category**: Primary: **Lifestyle**. Secondary: **Travel**
 
 ---
 
@@ -218,26 +228,7 @@ public/swe-worker*
 
 Modern browsers (Chrome 120+) show a richer install UI when the manifest includes `screenshots`. Add to `app/manifest.webmanifest`:
 
-```json
-"screenshots": [
-  {
-    "src": "/screenshots/home-narrow.png",
-    "sizes": "390x844",
-    "type": "image/png",
-    "form_factor": "narrow",
-    "label": "Homepage showing curated third places in Charlotte"
-  },
-  {
-    "src": "/screenshots/map-narrow.png",
-    "sizes": "390x844",
-    "type": "image/png",
-    "form_factor": "narrow",
-    "label": "Map view of all places"
-  }
-]
-```
-
-The actual screenshot files get created in Phase 1.2 and placed in `public/screenshots/`. This step just adds the manifest entries.
+Already done. Screenshots are in `public/screenshots/` and the `screenshots` field has been added to `app/manifest.webmanifest` with the correct filenames (`home-page-screenshot.png`, etc.), dimensions (1290x2358), and MIME type (`image/png`).
 
 ### 2.10 Local build verification
 
@@ -249,6 +240,7 @@ npm run start
 ```
 
 Then open `http://localhost:3000` in Chrome, open DevTools → Application tab:
+
 - Verify the service worker is registered under "Service Workers"
 - Verify the manifest is detected under "Manifest"
 - Check the Console for any Serwist errors
@@ -287,12 +279,14 @@ Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially
 
 ### 3.5 Take screenshots for store listings
 
-Now that the PWA is live, take phone screenshots for both stores:
-- Homepage
-- Map view
-- A place detail page
-- AI chat
-- Save as PNGs in the sizes listed in Phase 1.2
+Take 5 screenshots from a phone in mobile view of the live site:
+1. Homepage (`/`)
+2. Map (`/map`)
+3. AI Chat (`/chat`)
+4. Contribute (`/contribute`)
+5. About (`/about`)
+
+Done. Screenshots are in `public/screenshots/` as `home-page-screenshot.png`, `map-page-screenshot.png`, `chat-page-screenshot.png`, `contribute-page-screenshot.png`, `about-page-screenshot.png`. These same files are referenced by the manifest `screenshots` field (step 2.9) and used for both store listings.
 
 ### 3.6 Package and deploy Android (Google Play)
 
@@ -345,12 +339,12 @@ No Mac required. All portal work is browser-based, and the Xcode build runs on a
 #### Prerequisites
 
 - **Apple Developer account** ($99/year) — [enroll here](https://developer.apple.com/programs/enroll/)
-- A GitHub repo to host the PWABuilder-generated iOS project and the CI workflow
+- The iOS project and CI workflow go in the existing repo: `github.com/segunak/charlotte-third-places`
 
 #### 3.7a Generate iOS package from PWABuilder
 
 1. On PWABuilder → **"Package for stores"** → iOS → **"Generate Package"**
-2. Note the **Bundle ID** (e.g. `com.charlottethirdplaces.app`)
+2. Set the **Bundle ID** to `com.charlottethirdplaces.app`
 3. Download the zip
 
 #### 3.7b Customize the Swift project (from Windows)
@@ -372,7 +366,7 @@ if launchCount >= 3 {
 
 **Set the splash image** — replace the image asset in `Assets.xcassets` with `app-splash-page.png`. The `.xcassets` folder is just a directory of JSON + image files, editable without Xcode. If the `LaunchScreen.storyboard` needs changes, it's an XML file that can be edited in a text editor.
 
-3. Push the entire unzipped project to a GitHub repo (e.g. `charlotte-third-places-ios`)
+3. Push the unzipped project to a new directory (e.g. `ios/`) in the existing repo at `github.com/segunak/charlotte-third-places`
 
 #### 3.7c Apple Developer Portal setup (all browser, no Mac)
 
@@ -406,7 +400,7 @@ if launchCount >= 3 {
 
 #### 3.7e Store GitHub Secrets
 
-In the GitHub repo from step 3.7b, go to Settings → Secrets and variables → Actions. Add:
+In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. Add:
 
 | Secret name | Value |
 |---|---|
@@ -425,7 +419,7 @@ In the GitHub repo from step 3.7b, go to Settings → Secrets and variables → 
 
 #### 3.7f Create GitHub Actions workflow
 
-Create `.github/workflows/ios-build.yml` in the iOS repo:
+Create `.github/workflows/ios-build.yml` in `segunak/charlotte-third-places`:
 
 ```yaml
 name: Build and Upload iOS App
@@ -467,7 +461,7 @@ jobs:
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
 ```
 
-Replace `YourProject` and `YourScheme` with the actual names from the PWABuilder-generated Xcode project.
+The `YourProject` and `YourScheme` placeholders can't be filled in until PWABuilder generates the package in step 3.7a. After unzipping, look for the `.xcodeproj` and `.xcworkspace` filenames and the scheme name in the project, then update this workflow file.
 
 #### 3.7g Run the workflow and submit
 
@@ -502,9 +496,9 @@ The upload goes to TestFlight automatically. Install TestFlight on an iPhone, ac
 
 3. **Local build verification step**: The service worker only generates during `npm run build`, not `npm run dev`. Without testing a production build locally first, you'd only discover issues after deploying. Added in step 2.10.
 
-4. **`display_override` in manifest**: Could add `"display_override": ["standalone", "window-controls-overlay"]` for progressive enhancement on desktop. Not critical for mobile app stores — optional future improvement.
+4. **`display_override` in manifest**: Not adding this. It enables "window controls overlay" which is a desktop Chrome feature that replaces the title bar with a custom web-rendered header. Irrelevant to this project — the app targets mobile.
 
-5. **Old favicons at root level**: The root `/favicon.ico`, `/favicon-16x16.png`, and `/apple-touch-icon.png` referenced in the current `layout.tsx` may or may not exist. After updating paths to `/favicons/`, the old root files become dead weight. Cleaning them up is optional but tidy.
+5. **Old favicons at root level**: Confirmed — no `favicon.ico`, `favicon-16x16.png`, or `apple-touch-icon.png` exist at `public/`. The only files at the root of `public/` are `app-splash-page.png`, `blur.jpg`, `next.svg`, and `vercel.svg`. No cleanup needed.
 
 6. **Manifest location**: The manifest was originally at `public/favicons/site.webmanifest` and needed a manual `manifest` field in the metadata export. It's now at `app/manifest.webmanifest`, which is the Next.js App Router file convention. Next.js automatically serves it and adds the `<link rel="manifest">` tag. PWABuilder follows this link tag to find the manifest.
 

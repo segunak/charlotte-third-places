@@ -70,5 +70,42 @@
         }
       ]
     }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Homepage showing curated third places in Charlotte"
+    },
+    {
+      "src": "/screenshots/map-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Interactive map of all places"
+    },
+    {
+      "src": "/screenshots/chat-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI-powered place recommendations"
+    },
+    {
+      "src": "/screenshots/contribute-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Suggest a new place to add"
+    },
+    {
+      "src": "/screenshots/about-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "About the project"
+    }
   ]
 }
