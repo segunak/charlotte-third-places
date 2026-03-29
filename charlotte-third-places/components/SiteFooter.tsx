@@ -26,7 +26,7 @@ export function SiteFooter() {
                     .
                 </p>
                 <p className="text-balance text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    © {currentYear} Segun Akinyemi. All rights reserved.
+                    © {currentYear} Charlotte Third Places. All rights reserved.
                 </p>
             </div>
         </footer>

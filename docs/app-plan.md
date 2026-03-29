@@ -29,10 +29,10 @@ Things to set up before any code changes.
 
 ### 1.1 Create developer accounts
 
-| Account | Cost | Link |
+| Account | Cost | Status |
 |---|---|---|
-| Google Play Developer | $25 one-time | [https://play.google.com/console/signup](https://play.google.com/console/signup) |
-| Apple Developer Program | $99/year | [https://developer.apple.com/programs/enroll/](https://developer.apple.com/programs/enroll/) |
+| Google Play Developer | $25 one-time | Done |
+| Apple Developer Program | $99/year | Done |
 
 Both can be created from any browser on any OS. No Mac required — the iOS build and upload is handled by GitHub Actions (see Phase 3.7).
 
@@ -82,168 +82,85 @@ Prepare these text assets now so they're ready at submission time.
 
 ---
 
-## Phase 2: Local Coding (We Do These Together)
+## Phase 2: Local Coding
 
-All code changes to make the site PWA-ready. Do these in order.
+All code changes to make the site PWA-ready. All steps are done.
 
-### 2.1 Update metadata in layout.tsx
+### 2.1 Update metadata in layout.tsx — Done
 
-The manifest file is at `app/manifest.webmanifest`. Next.js automatically detects this file convention and adds `<link rel="manifest">` to the HTML head — no manual `manifest` field needed in the metadata export.
+Added `applicationName: 'Charlotte Third Places'` to the metadata export. Updated `icons` paths from root-level (`/favicon.ico`, etc.) to `/favicons/` directory.
 
-The favicon paths in `layout.tsx` still point to the old root-level locations instead of `/favicons/`.
+> **Note**: No `manifest` field in the metadata export. Next.js handles this automatically via the `app/manifest.webmanifest` file convention.
 
-**Add `applicationName` to the metadata export and update `icons` paths:**
+### 2.2 Fix viewport themeColor — Done
 
-```ts
-export const metadata: Metadata = {
-  applicationName: 'Charlotte Third Places',
-  // ...existing fields...
-  icons: {
-    icon: [
-      { url: '/favicons/favicon.ico' },
-      { url: '/favicons/favicon.svg', type: 'image/svg+xml' },
-      { url: '/favicons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-    ],
-    apple: '/favicons/apple-touch-icon.png',
-  },
-  // ...rest of metadata...
-}
-```
+Changed `themeColor` from `'white'` to `'#00b2d6'` to match the manifest. This affects the status bar color when the app runs in standalone mode.
 
-`applicationName` is used by PWABuilder and some browsers for the installed app name.
+### 2.3 Install Serwist (Turbopack) — Done
 
-> **Note**: Do NOT add a `manifest` field to the metadata export. Next.js handles this automatically via the `app/manifest.webmanifest` file convention. Adding it manually would create a duplicate link tag.
-
-### 2.2 Fix viewport themeColor mismatch
-
-The current `viewport` export in `layout.tsx` sets `themeColor: 'white'`, but the manifest uses `#00b2d6`. When the app runs in standalone mode, the OS uses the viewport theme color for the status bar. White looks wrong against the brand color.
-
-**Update the viewport export:**
-
-```ts
-export const viewport: Viewport = {
-  themeColor: '#00b2d6',
-  viewportFit: 'cover',
-}
-```
-
-### 2.3 Install Serwist
-
-Serwist is a service worker library for Next.js. It pre-caches the app shell, runtime-caches visited pages, and shows a fallback page when offline.
+Using `@serwist/turbopack` (not `@serwist/next`) because Next.js 16 defaults to Turbopack. The webpack-based `@serwist/next` package doesn't work with Turbopack builds.
 
 ```bash
-cd charlotte-third-places
-npm i @serwist/next
-npm i -D serwist
+npm i -D @serwist/turbopack esbuild serwist
 ```
 
-### 2.4 Wrap next.config.mjs with Serwist
+### 2.4 Wrap next.config.mjs with Serwist — Done
 
 ```js
-import { spawnSync } from "node:child_process";
-import withSerwistInit from "@serwist/next";
+import { withSerwist } from "@serwist/turbopack";
 import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 
-const revision = spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" }).stdout?.trim() ?? crypto.randomUUID();
-
-const withSerwist = withSerwistInit({
-  additionalPrecacheEntries: [{ url: "/~offline", revision }],
-  swSrc: "app/sw.ts",
-  swDest: "public/sw.js",
-});
-
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  // ...existing config...
-};
+// ...nextConfig...
 
 export default withSerwist(withVercelToolbar()(nextConfig));
 ```
 
-### 2.5 Create the service worker at `app/sw.ts`
+### 2.5 Create Serwist route handler at `app/serwist/[path]/route.ts` — Done
+
+The turbopack version uses a Next.js route handler instead of a webpack plugin to build and serve the service worker. This generates `/serwist/sw.js` at build time.
 
 ```ts
-import { defaultCache } from "@serwist/next/worker";
-import type { PrecacheEntry, SerwistGlobalConfig } from "serwist";
-import { Serwist } from "serwist";
+import { spawnSync } from "node:child_process";
+import { createSerwistRoute } from "@serwist/turbopack";
 
-declare global {
-  interface WorkerGlobalScope extends SerwistGlobalConfig {
-    __SW_MANIFEST: (PrecacheEntry | string)[] | undefined;
-  }
-}
+const revision = spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" }).stdout ?? crypto.randomUUID();
 
-declare const self: ServiceWorkerGlobalScope;
-
-const serwist = new Serwist({
-  precacheEntries: self.__SW_MANIFEST,
-  skipWaiting: true,
-  clientsClaim: true,
-  navigationPreload: true,
-  runtimeCaching: defaultCache,
-  fallbacks: {
-    entries: [
-      {
-        url: "/~offline",
-        matcher({ request }) {
-          return request.destination === "document";
-        },
-      },
-    ],
-  },
+export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } = createSerwistRoute({
+  additionalPrecacheEntries: [{ url: "/~offline", revision }],
+  swSrc: "app/sw.ts",
+  useNativeEsbuild: true,
 });
-
-serwist.addEventListeners();
 ```
 
-### 2.6 Create the offline fallback page at `app/~offline/page.tsx`
+### 2.6 Create the service worker at `app/sw.ts` — Done
 
-A simple branded page shown when the user navigates to a page that isn't cached and they're offline. Style it to match the site's look and feel — logo, "You're offline" message, and a retry button.
+Uses `@serwist/turbopack/worker` imports (not `@serwist/next/worker`). Includes triple-slash references for webworker types scoped to this file only.
 
-### 2.7 Update tsconfig.json
+### 2.7 Create SerwistProvider at `app/serwist-provider.ts` — Done
 
-Add `"webworker"` to the `lib` array, add Serwist types, and exclude the generated service worker:
+Client component re-exporting `SerwistProvider` from `@serwist/turbopack/react`. Added to `layout.tsx` wrapping the body content, with `swUrl="/serwist/sw.js"`.
 
-```json
-{
-  "compilerOptions": {
-    "types": ["@serwist/next/typings"],
-    "lib": ["dom", "dom.iterable", "esnext", "webworker"]
-  },
-  "exclude": ["node_modules", "public/sw.js"]
-}
-```
+### 2.8 Create the offline fallback page at `app/~offline/page.tsx` — Done
 
-### 2.8 Update .gitignore
+Client component with "You're Offline" message and a "Try Again" button that calls `window.location.reload()`.
 
-The service worker is generated at build time and shouldn't be committed:
+### 2.9 Update tsconfig.json — Done
 
-```
-# Serwist
-public/sw*
-public/swe-worker*
-```
+Excluded `app/sw.ts` and `public/sw.js` from type checking. The service worker file uses `/// <reference no-default-lib="true" />` which conflicts with the main tsconfig — excluding it prevents the `window is not defined` error in other files.
 
-### 2.9 Add manifest `screenshots` for richer install prompts
+> **Note**: Do NOT add `"webworker"` to the main tsconfig `lib` array. The service worker gets its webworker types via triple-slash references scoped to that file only.
 
-Modern browsers (Chrome 120+) show a richer install UI when the manifest includes `screenshots`. Add to `app/manifest.webmanifest`:
+### 2.10 Update .gitignore — Done
 
-Already done. Screenshots are in `public/screenshots/` and the `screenshots` field has been added to `app/manifest.webmanifest` with the correct filenames (`home-page-screenshot.png`, etc.), dimensions (1290x2358), and MIME type (`image/png`).
+Added `public/sw*` and `public/swe-worker*`.
 
-### 2.10 Local build verification
+### 2.11 Add manifest `screenshots` — Done (earlier)
 
-The service worker only runs in production builds, not `npm run dev`. Verify locally:
+Already completed. Screenshots are in `public/screenshots/` and referenced in `app/manifest.webmanifest`.
 
-```bash
-npm run build
-npm run start
-```
+### 2.12 Build verification — Done
 
-Then open `http://localhost:3000` in Chrome, open DevTools → Application tab:
-
-- Verify the service worker is registered under "Service Workers"
-- Verify the manifest is detected under "Manifest"
-- Check the Console for any Serwist errors
+`npm run build` passes with Turbopack. Service worker routes generated at `/serwist/sw.js` and `/serwist/sw.js.map`.
 
 ---
 
@@ -511,12 +428,40 @@ The upload goes to TestFlight automatically. Install TestFlight on an iPhone, ac
 - PWABuilder: [https://www.pwabuilder.com/](https://www.pwabuilder.com/)
 - PWABuilder iOS docs: [https://docs.pwabuilder.com/#/builder/app-store](https://docs.pwabuilder.com/#/builder/app-store)
 - PWABuilder Android docs: [https://docs.pwabuilder.com/#/builder/android](https://docs.pwabuilder.com/#/builder/android)
-- Serwist Next.js docs: [https://serwist.pages.dev/docs/next/getting-started](https://serwist.pages.dev/docs/next/getting-started)
+- Serwist Turbopack docs: [https://serwist.pages.dev/docs/next/turbo](https://serwist.pages.dev/docs/next/turbo)
 - Lighthouse: Built into Chrome DevTools (F12 → Lighthouse tab)
 - Google Play Console: [https://play.google.com/console/](https://play.google.com/console/)
 - App Store Connect: [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/)
 - Apple Developer Portal: [https://developer.apple.com/account/](https://developer.apple.com/account/)
 - Favicon generator (used for icons): [https://realfavicongenerator.net/](https://realfavicongenerator.net/)
+
+## After the Apps Are Live
+
+Follow-up tasks to do once both apps are published on the stores.
+
+1. **Add `itunes` metadata to `layout.tsx`** — shows a native "Get the app" smart banner at the top of iOS Safari when users visit the website. Requires the App Store ID (available after the iOS app is approved).
+
+    ```ts
+    itunes: { appId: 'YOUR_APP_STORE_ID' },
+    ```
+
+2. **Add `appLinks` metadata to `layout.tsx`** — tells Facebook, Twitter, and other social crawlers about the native apps so they can deep-link to them instead of the website.
+
+   ```ts
+   appLinks: {
+     ios: { url: 'https://charlottethirdplaces.com', app_store_id: 'YOUR_APP_STORE_ID' },
+     android: { package: 'com.charlottethirdplaces.app', app_name: 'Charlotte Third Places' },
+     web: { url: 'https://charlottethirdplaces.com', should_fallback: true },
+   },
+   ```
+
+3. **Add `category` metadata to `layout.tsx`** — sets the `<meta name="category">` tag for search engine categorization.
+
+   ```ts
+   category: 'lifestyle',
+   ```
+
+---
 
 ## If Apple Rejects
 
