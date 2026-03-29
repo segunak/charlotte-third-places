@@ -34,7 +34,7 @@ Things to set up before any code changes.
 | Google Play Developer | $25 one-time | [https://play.google.com/console/signup](https://play.google.com/console/signup) |
 | Apple Developer Program | $99/year | [https://developer.apple.com/programs/enroll/](https://developer.apple.com/programs/enroll/) |
 
-Do the Google Play account now. The Apple account requires a macOS computer for the later Xcode steps, so it can wait until Phase 3 if needed.
+Both can be created from any browser on any OS. No Mac required — the iOS build and upload is handled by GitHub Actions (see Phase 3.7).
 
 ### 1.2 Create store listing assets
 
@@ -340,10 +340,12 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 
 ### 3.7 Package and deploy iOS (Apple App Store)
 
+No Mac required. All portal work is browser-based, and the Xcode build runs on a GitHub Actions `macos-latest` runner.
+
 #### Prerequisites
 
-- **macOS computer** with Xcode installed (iOS 17+)
-- **Apple Developer account** ($99/year)
+- **Apple Developer account** ($99/year) — [enroll here](https://developer.apple.com/programs/enroll/)
+- A GitHub repo to host the PWABuilder-generated iOS project and the CI workflow
 
 #### 3.7a Generate iOS package from PWABuilder
 
@@ -351,17 +353,12 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 2. Note the **Bundle ID** (e.g. `com.charlottethirdplaces.app`)
 3. Download the zip
 
-#### 3.7b Build the iOS project
+#### 3.7b Customize the Swift project (from Windows)
 
 1. Unzip the package
-2. In the `src` directory, run `pod install` (install CocoaPods first: `brew install cocoapods`)
-3. Open the `.xcworkspace` in Xcode (not `.xcodeproj`)
-4. **Product > Build** to verify it compiles
-5. Test in the iPhone simulator
+2. Edit the Swift source files in any text editor (VS Code works fine)
 
-#### 3.7c Add App Review Prompt
-
-In the Swift project's WebView controller:
+**Add App Review Prompt** — find the WebView controller and add:
 
 ```swift
 import StoreKit
@@ -373,41 +370,127 @@ if launchCount >= 3 {
 }
 ```
 
-#### 3.7d Set the splash/launch screen
+**Set the splash image** — replace the image asset in `Assets.xcassets` with `app-splash-page.png`. The `.xcassets` folder is just a directory of JSON + image files, editable without Xcode. If the `LaunchScreen.storyboard` needs changes, it's an XML file that can be edited in a text editor.
 
-1. Open `Assets.xcassets` in Xcode
-2. Add `app-splash-page.png`
-3. Update `LaunchScreen.storyboard` to use your image
+3. Push the entire unzipped project to a GitHub repo (e.g. `charlotte-third-places-ios`)
 
-#### 3.7e Apple Developer Portal setup
+#### 3.7c Apple Developer Portal setup (all browser, no Mac)
 
-1. **Create Bundle ID**: Developer portal → Identifiers → + → App IDs → enter Bundle ID → enable Associated Domains → Register
-2. **Create CSR**: Keychain Access → Certificate Assistant → Request a Certificate from a Certificate Authority → save to disk
-3. **Create Distribution Certificate**: Developer portal → Certificates → + → Apple Distribution → upload CSR → download and install `.cer`
-4. **Create Provisioning Profile**: Developer portal → Profiles → + → App Store Connect → select Bundle ID → select certificate → generate → download
+1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → enter Bundle ID → enable Associated Domains → Register
 
-#### 3.7f Configure Xcode signing
+2. **Create CSR from Windows** using OpenSSL (no Keychain Access needed):
+   ```
+   openssl req -nodes -newkey rsa:2048 -keyout ios_distribution.key -out ios_distribution.csr -subj "/emailAddress=you@email.com, CN=Your Name, C=US"
+   ```
 
-1. Project navigator → Build Settings > Signing
-2. Code Signing Identity (Release): **Apple Distribution**
-3. Code Signing Style (Release): **Manual**
-4. Development Team (Release): your team
-5. Signing & Capabilities > Release: select the provisioning profile
+3. **Create Distribution Certificate**: Developer portal → Certificates → + → Apple Distribution → upload the `.csr` from step 2 → download the `.cer` file
 
-#### 3.7g Create App Reservation on App Store Connect
+4. **Convert to .p12** (needed for GitHub Actions signing):
+   ```
+   openssl x509 -in ios_distribution.cer -inform DER -out ios_distribution.pem -outform PEM
+   openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in ios_distribution.pem
+   ```
+   You'll set a password — remember it, you'll need it as a GitHub secret.
 
-1. [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/) → My Apps → + → New App
+5. **Create Provisioning Profile**: Developer portal → Profiles → + → App Store Connect → select Bundle ID → select the certificate → generate → download the `.mobileprovision` file
+
+6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → Integrations → App Store Connect API → + → role: **App Manager** → download the `.p8` file (can only be downloaded once). Note the **Key ID** and **Issuer ID**.
+
+#### 3.7d Create App Reservation on App Store Connect
+
+1. [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → My Apps → + → New App
 2. Platform: iOS
 3. Name: Charlotte Third Places
 4. Bundle ID: from step 3.7a
 5. SKU: `charlotte-third-places-001`
 
-#### 3.7h Upload and submit
+#### 3.7e Store GitHub Secrets
 
-1. In Xcode: select **Any iOS Device (arm64)** → **Product > Archive**
-2. **Distribute App > App Store Connect > Upload**
-3. On App Store Connect: fill metadata (description, keywords, screenshots, icon, category) → select build → **Submit for Review**
+In the GitHub repo from step 3.7b, go to Settings → Secrets and variables → Actions. Add:
+
+| Secret name | Value |
+|---|---|
+| `P12_BASE64` | Base64-encoded `.p12` file: `openssl base64 -in ios_distribution.p12 -A` |
+| `P12_PASSWORD` | The password you set when creating the `.p12` |
+| `MOBILEPROVISION_BASE64` | Base64-encoded `.mobileprovision`: `openssl base64 -in profile.mobileprovision -A` |
+| `APPSTORE_API_PRIVATE_KEY` | Contents of the `.p8` file |
+| `APPSTORE_API_KEY_ID` | Key ID from App Store Connect |
+| `APPSTORE_ISSUER_ID` | Issuer ID from App Store Connect |
+| `TEAM_ID` | Your Apple Developer Team ID (found in Membership details) |
+
+> **Note on Windows**: If `openssl base64 -A` isn't available, use PowerShell:
+> ```powershell
+> [Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.p12"))
+> ```
+
+#### 3.7f Create GitHub Actions workflow
+
+Create `.github/workflows/ios-build.yml` in the iOS repo:
+
+```yaml
+name: Build and Upload iOS App
+
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install CocoaPods dependencies
+        run: |
+          cd src
+          pod install
+
+      - name: Build and sign IPA
+        uses: yukiarrr/ios-build-action@v1.12.0
+        with:
+          project-path: src/YourProject.xcodeproj
+          workspace-path: src/YourProject.xcworkspace
+          p12-base64: ${{ secrets.P12_BASE64 }}
+          certificate-password: ${{ secrets.P12_PASSWORD }}
+          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
+          code-signing-identity: "Apple Distribution"
+          team-id: ${{ secrets.TEAM_ID }}
+          export-method: app-store
+          scheme: YourScheme
+          output-path: build/App.ipa
+
+      - name: Upload to App Store Connect
+        uses: apple-actions/upload-testflight-build@v4
+        with:
+          app-path: build/App.ipa
+          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
+          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+```
+
+Replace `YourProject` and `YourScheme` with the actual names from the PWABuilder-generated Xcode project.
+
+#### 3.7g Run the workflow and submit
+
+1. Go to the GitHub repo → Actions → "Build and Upload iOS App" → **Run workflow**
+2. The runner builds the IPA on macOS and uploads it to App Store Connect via API
+3. On [appstoreconnect.apple.com](https://appstoreconnect.apple.com/): fill metadata (description, keywords, screenshots, icon, category) → select the build → **Submit for Review**
 4. Review turnaround: 24-48 hours
+
+#### 3.7h Test on a real device
+
+The upload goes to TestFlight automatically. Install TestFlight on an iPhone, accept the invite, and test the app before submitting for App Store review.
+
+#### How this works without a Mac
+
+| Step | Runs on |
+|---|---|
+| Apple portal setup (Bundle ID, certs, profiles) | Browser (any OS) |
+| CSR + .p12 creation | `openssl` on Windows |
+| Swift code edits (review prompt, splash) | Text editor on Windows |
+| Xcode build + signing | GitHub Actions `macos-latest` runner |
+| Upload to App Store Connect | GitHub Actions via API |
+| App Store Connect metadata + submit | Browser (any OS) |
+| Testing the app | TestFlight on a physical iPhone |
 
 ---
 
@@ -424,6 +507,8 @@ if launchCount >= 3 {
 5. **Old favicons at root level**: The root `/favicon.ico`, `/favicon-16x16.png`, and `/apple-touch-icon.png` referenced in the current `layout.tsx` may or may not exist. After updating paths to `/favicons/`, the old root files become dead weight. Cleaning them up is optional but tidy.
 
 6. **Manifest location**: The manifest was originally at `public/favicons/site.webmanifest` and needed a manual `manifest` field in the metadata export. It's now at `app/manifest.webmanifest`, which is the Next.js App Router file convention. Next.js automatically serves it and adds the `<link rel="manifest">` tag. PWABuilder follows this link tag to find the manifest.
+
+7. **No Mac required for iOS**: The original plan assumed a physical Mac for Xcode. The entire iOS pipeline can run from Windows: CSR creation via `openssl`, portal setup in a browser, Xcode build on a GitHub Actions `macos-latest` runner via [`yukiarrr/ios-build-action`](https://github.com/yukiarrr/ios-build-action), and upload via [`Apple-Actions/upload-testflight-build`](https://github.com/Apple-Actions/upload-testflight-build). PWABuilder's own FAQ [confirms this approach](https://docs.pwabuilder.com/#/builder/faq?id=ios).
 
 ---
 
