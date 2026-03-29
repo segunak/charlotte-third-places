@@ -23,49 +23,103 @@ Apple rejects apps under Guideline 4.2 (Minimum Functionality) if they're "just 
 
 ---
 
-## Step 1: Link Manifest and Update Favicon Paths in layout.tsx
+## Phase 1: Manual Prerequisites (You Do These)
 
-The web app manifest at `public/favicons/site.webmanifest` is already complete. The favicon images are generated and in `public/favicons/`. Two things remain:
+Things to set up before any code changes.
 
-### 1a. Add manifest link to layout.tsx
+### 1.1 Create developer accounts
 
-The manifest file exists but isn't linked from the page. Add it to the `metadata` export in `app/layout.tsx`:
+| Account | Cost | Link |
+|---|---|---|
+| Google Play Developer | $25 one-time | [https://play.google.com/console/signup](https://play.google.com/console/signup) |
+| Apple Developer Program | $99/year | [https://developer.apple.com/programs/enroll/](https://developer.apple.com/programs/enroll/) |
 
-```ts
-// In the metadata export, add:
-manifest: '/favicons/site.webmanifest',
-```
+Do the Google Play account now. The Apple account requires a macOS computer for the later Xcode steps, so it can wait until Phase 3 if needed.
 
-### 1b. Update favicon paths in layout.tsx metadata
+### 1.2 Create store listing assets
 
-The current `icons` field in metadata still points to old paths. Update to point to the `/favicons/` directory:
+These are needed for both stores and can be prepared in advance.
 
-```ts
-icons: {
-  icon: [
-    { url: '/favicons/favicon.ico' },
-    { url: '/favicons/favicon.svg', type: 'image/svg+xml' },
-    { url: '/favicons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-  ],
-  apple: '/favicons/apple-touch-icon.png',
-},
-```
+| Asset | Spec | Status |
+|---|---|---|
+| App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` |
+| Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
+| Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
+| Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Not created |
+| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners. Generate from the social media logo on a solid `#00b2d6` background | Not created |
+| Screenshots (phone) | At least 4-8 showing homepage, map, place detail, AI chat | Not created |
 
-### 1c. Add `applicationName` to metadata
+**Screenshots**: Take these from a real phone or emulator after the PWA code is deployed (Phase 3). But the feature graphic and 1024x1024 icon can be created now.
 
-```ts
-applicationName: 'Charlotte Third Places',
-```
+**Google Play screenshots**: Minimum 2, ideally 4-8. Min 320px, max 3840px on any side.
 
-This field is used by PWABuilder and some browsers for the installed app name.
+**Apple App Store screenshots**: Required for each device size. At minimum: iPhone 6.7" (1290x2796) and iPhone 6.5" (1242x2688).
+
+### 1.3 Write store listing copy
+
+Prepare these text assets now so they're ready at submission time.
+
+**Short description** (Google Play, ≤80 chars):
+> Discover 400+ third places in Charlotte, NC
+
+**Full description** (both stores, ≤4000 chars):
+> Expand on what the app does, key features. Highlight: 400+ curated places, map view, AI recommendations, offline support.
+
+**Keywords** (Apple, 100 char limit, comma-separated):
+> charlotte, third places, coffee shops, cafes, libraries, study spots, remote work, queen city
+
+**Category**: Primary: **Lifestyle**. Secondary: **Food & Drink** or **Travel**
 
 ---
 
-## Step 2: Set Up Serwist for Offline Support
+## Phase 2: Local Coding (We Do These Together)
 
-Serwist is a service worker library for Next.js that handles offline caching automatically. It pre-caches the app shell, runtime-caches visited pages, and shows a fallback page when offline.
+All code changes to make the site PWA-ready. Do these in order.
 
-### 2a. Install dependencies
+### 2.1 Update metadata in layout.tsx
+
+The manifest file is at `app/manifest.webmanifest`. Next.js automatically detects this file convention and adds `<link rel="manifest">` to the HTML head — no manual `manifest` field needed in the metadata export.
+
+The favicon paths in `layout.tsx` still point to the old root-level locations instead of `/favicons/`.
+
+**Add `applicationName` to the metadata export and update `icons` paths:**
+
+```ts
+export const metadata: Metadata = {
+  applicationName: 'Charlotte Third Places',
+  // ...existing fields...
+  icons: {
+    icon: [
+      { url: '/favicons/favicon.ico' },
+      { url: '/favicons/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicons/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: '/favicons/apple-touch-icon.png',
+  },
+  // ...rest of metadata...
+}
+```
+
+`applicationName` is used by PWABuilder and some browsers for the installed app name.
+
+> **Note**: Do NOT add a `manifest` field to the metadata export. Next.js handles this automatically via the `app/manifest.webmanifest` file convention. Adding it manually would create a duplicate link tag.
+
+### 2.2 Fix viewport themeColor mismatch
+
+The current `viewport` export in `layout.tsx` sets `themeColor: 'white'`, but the manifest uses `#00b2d6`. When the app runs in standalone mode, the OS uses the viewport theme color for the status bar. White looks wrong against the brand color.
+
+**Update the viewport export:**
+
+```ts
+export const viewport: Viewport = {
+  themeColor: '#00b2d6',
+  viewportFit: 'cover',
+}
+```
+
+### 2.3 Install Serwist
+
+Serwist is a service worker library for Next.js. It pre-caches the app shell, runtime-caches visited pages, and shows a fallback page when offline.
 
 ```bash
 cd charlotte-third-places
@@ -73,13 +127,12 @@ npm i @serwist/next
 npm i -D serwist
 ```
 
-### 2b. Wrap next.config.mjs with Serwist
-
-Update `next.config.mjs` to wrap the config with `withSerwist`:
+### 2.4 Wrap next.config.mjs with Serwist
 
 ```js
 import { spawnSync } from "node:child_process";
 import withSerwistInit from "@serwist/next";
+import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 
 const revision = spawnSync("git", ["rev-parse", "HEAD"], { encoding: "utf-8" }).stdout?.trim() ?? crypto.randomUUID();
 
@@ -89,11 +142,15 @@ const withSerwist = withSerwistInit({
   swDest: "public/sw.js",
 });
 
-// Wrap existing config with withSerwist
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  // ...existing config...
+};
+
 export default withSerwist(withVercelToolbar()(nextConfig));
 ```
 
-### 2c. Create the service worker at `app/sw.ts`
+### 2.5 Create the service worker at `app/sw.ts`
 
 ```ts
 import { defaultCache } from "@serwist/next/worker";
@@ -129,27 +186,27 @@ const serwist = new Serwist({
 serwist.addEventListeners();
 ```
 
-### 2d. Create the offline fallback page at `app/~offline/page.tsx`
+### 2.6 Create the offline fallback page at `app/~offline/page.tsx`
 
-A simple page shown when the user navigates to a page that isn't cached and they're offline. Style it to match the site's look and feel.
+A simple branded page shown when the user navigates to a page that isn't cached and they're offline. Style it to match the site's look and feel — logo, "You're offline" message, and a retry button.
 
-### 2e. Update tsconfig.json
+### 2.7 Update tsconfig.json
 
-Add to `compilerOptions`:
+Add `"webworker"` to the `lib` array, add Serwist types, and exclude the generated service worker:
 
 ```json
 {
   "compilerOptions": {
     "types": ["@serwist/next/typings"],
-    "lib": ["webworker"]
+    "lib": ["dom", "dom.iterable", "esnext", "webworker"]
   },
-  "exclude": ["public/sw.js"]
+  "exclude": ["node_modules", "public/sw.js"]
 }
 ```
 
-### 2f. Update .gitignore
+### 2.8 Update .gitignore
 
-Add:
+The service worker is generated at build time and shouldn't be committed:
 
 ```
 # Serwist
@@ -157,64 +214,103 @@ public/sw*
 public/swe-worker*
 ```
 
+### 2.9 Add manifest `screenshots` for richer install prompts
+
+Modern browsers (Chrome 120+) show a richer install UI when the manifest includes `screenshots`. Add to `app/manifest.webmanifest`:
+
+```json
+"screenshots": [
+  {
+    "src": "/screenshots/home-narrow.png",
+    "sizes": "390x844",
+    "type": "image/png",
+    "form_factor": "narrow",
+    "label": "Homepage showing curated third places in Charlotte"
+  },
+  {
+    "src": "/screenshots/map-narrow.png",
+    "sizes": "390x844",
+    "type": "image/png",
+    "form_factor": "narrow",
+    "label": "Map view of all places"
+  }
+]
+```
+
+The actual screenshot files get created in Phase 1.2 and placed in `public/screenshots/`. This step just adds the manifest entries.
+
+### 2.10 Local build verification
+
+The service worker only runs in production builds, not `npm run dev`. Verify locally:
+
+```bash
+npm run build
+npm run start
+```
+
+Then open `http://localhost:3000` in Chrome, open DevTools → Application tab:
+- Verify the service worker is registered under "Service Workers"
+- Verify the manifest is detected under "Manifest"
+- Check the Console for any Serwist errors
+
 ---
 
-## Step 3: Validate PWA
+## Phase 3: Post-Deployment (After Pushing to Vercel)
 
-### 3a. Deploy to Vercel
+Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially.
 
-Push the changes from steps 1-2 and let Vercel deploy.
-
-### 3b. Run Lighthouse PWA Audit
+### 3.1 Run Lighthouse PWA audit
 
 1. Open `https://charlottethirdplaces.com` in Chrome
-2. Open DevTools → Lighthouse tab
-3. Check "Progressive Web App" category
-4. Run audit
-5. Verify all PWA checks pass (installability, service worker, manifest)
+2. DevTools → Lighthouse tab → check "Progressive Web App"
+3. Run audit
+4. All PWA checks should pass (installability, service worker, manifest)
 
-### 3c. Test Installability
+### 3.2 Test installability
 
-- **Android Chrome**: Visit the site → tap the three-dot menu → "Add to Home Screen" or "Install app" prompt should appear
-- **iOS Safari**: Visit the site → tap the share button → "Add to Home Screen" → verify it opens in standalone mode (no Safari chrome)
+- **Android Chrome**: Visit the site → three-dot menu → "Install app" prompt should appear
+- **iOS Safari**: Visit the site → share button → "Add to Home Screen" → verify it opens in standalone mode (no Safari chrome)
 
-### 3d. Test Offline Mode
+### 3.3 Test offline mode
 
 1. Install the PWA on a device
 2. Browse a few pages (home, a place detail, about)
 3. Enable airplane mode
-4. Navigate to a previously visited page — it should load from cache
-5. Navigate to a new page — the `~offline` fallback should appear
+4. Visit a previously viewed page — should load from cache
+5. Visit a new page — the `~offline` fallback should appear
 
-### 3e. Validate on PWABuilder
+### 3.4 Validate on PWABuilder
 
-1. Visit [https://www.pwabuilder.com/](https://www.pwabuilder.com/)
+1. Go to [https://www.pwabuilder.com/](https://www.pwabuilder.com/)
 2. Enter `https://charlottethirdplaces.com`
-3. PWABuilder will scan the manifest, service worker, and security
-4. Verify a passing score — this is the same tool used in steps 4 and 5 to generate the native packages
+3. Verify a passing score on manifest, service worker, and security
 
----
+### 3.5 Take screenshots for store listings
 
-## Step 4: Package for Google Play (Android)
+Now that the PWA is live, take phone screenshots for both stores:
+- Homepage
+- Map view
+- A place detail page
+- AI chat
+- Save as PNGs in the sizes listed in Phase 1.2
 
-Google Play uses a Trusted Web Activity (TWA) — Chrome running the PWA full-screen without a URL bar. Effectively zero issues getting approved.
+### 3.6 Package and deploy Android (Google Play)
 
-### 4a. Generate Android package from PWABuilder
+#### 3.6a Generate Android package from PWABuilder
 
-1. On [https://www.pwabuilder.com/](https://www.pwabuilder.com/), after validating the URL, click **"Package for stores"**
-2. Select **"Generate Package"** under the Android section
-3. Configure the package metadata:
-   - **Package ID**: `com.charlottethirdplaces.app` (or similar)
+1. On PWABuilder, click **"Package for stores"** → Android → **"Generate Package"**
+2. Config:
+   - **Package ID**: `com.charlottethirdplaces.app`
    - **App name**: Charlotte Third Places
    - **App version**: `1.0.0`
    - **Display mode**: Standalone
-4. Click **"Download Package"** — this gives you a zip with a ready-to-build Android project
+3. Download the zip
 
-### 4b. Set up Digital Asset Links
+#### 3.6b Set up Digital Asset Links
 
-**This must be done BEFORE the first Play Store upload.** If you skip this, users will see a URL bar in the app (the TWA won't trust your domain).
+**Do this BEFORE uploading to Play Store.** Without it, the TWA shows a URL bar.
 
-Create `public/.well-known/assetlinks.json` with the SHA-256 fingerprint of your signing key. PWABuilder provides this fingerprint in the generated package. The file format:
+Create `public/.well-known/assetlinks.json` with the SHA-256 fingerprint from the PWABuilder-generated package:
 
 ```json
 [
@@ -229,174 +325,107 @@ Create `public/.well-known/assetlinks.json` with the SHA-256 fingerprint of your
 ]
 ```
 
-Deploy this file to Vercel so it's accessible at `https://charlottethirdplaces.com/.well-known/assetlinks.json`.
+Push this file to Vercel. Verify it's accessible at `https://charlottethirdplaces.com/.well-known/assetlinks.json`.
 
-### 4c. Upload to Google Play Console
+Note: Vercel serves files from `public/.well-known/` automatically. No routing config needed.
+
+#### 3.6c Upload to Google Play Console
 
 1. Sign in at [https://play.google.com/console/](https://play.google.com/console/)
-   - Requires a Google Play Developer account — **$25 one-time fee** to register at [https://play.google.com/console/signup](https://play.google.com/console/signup)
 2. Create a new app
-3. Fill in the store listing: title, description, screenshots, icon, feature graphic
-4. Upload the AAB file from the PWABuilder-generated package under **Production > Create new release**
+3. Fill in the store listing (title, description, screenshots, icon, feature graphic)
+4. Upload the AAB file under **Production > Create new release**
 5. Complete the content rating questionnaire and data safety form
-6. **Important**: Google requires a **14-day closed testing period with 20+ testers** before you can release to production. Set up a closed testing track first.
+6. **Important**: Google requires a **14-day closed testing period with 20+ testers** before production release. Set up a closed testing track first.
 
-### 4d. Store Listing Assets Needed
+### 3.7 Package and deploy iOS (Apple App Store)
 
-- **App icon**: 512x512 PNG (use `public/favicons/web-app-manifest-512x512.png`)
-- **Feature graphic**: 1024x500 PNG (landscape banner shown at top of store listing — needs to be created)
-- **Screenshots**: At least 2, ideally 4-8, showing the homepage, map view, place detail, AI chat. Take these from a phone or emulator. Minimum 320px, maximum 3840px on any side.
-- **Short description**: ≤80 characters. e.g. "Discover 400+ third places in Charlotte, NC"
-- **Full description**: ≤4000 characters. Expand on what the app does, features, etc.
+#### Prerequisites
 
----
+- **macOS computer** with Xcode installed (iOS 17+)
+- **Apple Developer account** ($99/year)
 
-## Step 5: Package for Apple App Store (iOS)
+#### 3.7a Generate iOS package from PWABuilder
 
-PWABuilder generates a Swift project with WKWebView that loads the live website. Additional native features are added in Xcode.
+1. On PWABuilder → **"Package for stores"** → iOS → **"Generate Package"**
+2. Note the **Bundle ID** (e.g. `com.charlottethirdplaces.app`)
+3. Download the zip
 
-### 5a. Prerequisites
+#### 3.7b Build the iOS project
 
-- **macOS computer** with Xcode installed (supports iOS 17+)
-- **Apple Developer account** — **$99/year** to register at [https://developer.apple.com/programs/enroll/](https://developer.apple.com/programs/enroll/)
+1. Unzip the package
+2. In the `src` directory, run `pod install` (install CocoaPods first: `brew install cocoapods`)
+3. Open the `.xcworkspace` in Xcode (not `.xcodeproj`)
+4. **Product > Build** to verify it compiles
+5. Test in the iPhone simulator
 
-### 5b. Generate iOS package from PWABuilder
+#### 3.7c Add App Review Prompt
 
-1. On [https://www.pwabuilder.com/](https://www.pwabuilder.com/), click **"Package for stores"**
-2. Select **"Generate Package"** under the iOS section
-3. Note the **Bundle ID** (e.g. `com.charlottethirdplaces.app`) — you'll need this later
-4. Click **"Download Package"**
-
-### 5c. Build the iOS project
-
-1. Unzip the downloaded package
-2. Open a terminal in the `src` directory
-3. Run `pod install` (install CocoaPods first with `brew install cocoapods` if needed)
-4. Open the `.xcworkspace` file in Xcode (not the `.xcodeproj`)
-5. Click **Product > Build** to verify it compiles
-6. Click ▶️ to test in the iPhone simulator
-
-### 5d. Add App Review Prompt
-
-In the Swift project, find the view controller that loads the WebView. Add:
+In the Swift project's WebView controller:
 
 ```swift
 import StoreKit
 
-// After the WebView has finished loading (e.g., in webView didFinish navigation):
-// Increment a counter in UserDefaults, and after 3 launches:
+// After the WebView finishes loading, increment a counter in UserDefaults.
+// After 3 launches:
 if launchCount >= 3 {
     SKStoreReviewController.requestReview()
 }
 ```
 
-This shows the native iOS "Rate this app" dialog. Apple's system rate-limits it automatically.
+#### 3.7d Set the splash/launch screen
 
-### 5e. Set the splash/launch screen
+1. Open `Assets.xcassets` in Xcode
+2. Add `app-splash-page.png`
+3. Update `LaunchScreen.storyboard` to use your image
 
-Replace the default launch screen in the Xcode project with `app-splash-page.png`. In Xcode:
+#### 3.7e Apple Developer Portal setup
 
-1. Open `Assets.xcassets`
-2. Add the splash page image
-3. Update the `LaunchScreen.storyboard` to use your image (or replace it entirely with a launch image set)
+1. **Create Bundle ID**: Developer portal → Identifiers → + → App IDs → enter Bundle ID → enable Associated Domains → Register
+2. **Create CSR**: Keychain Access → Certificate Assistant → Request a Certificate from a Certificate Authority → save to disk
+3. **Create Distribution Certificate**: Developer portal → Certificates → + → Apple Distribution → upload CSR → download and install `.cer`
+4. **Create Provisioning Profile**: Developer portal → Profiles → + → App Store Connect → select Bundle ID → select certificate → generate → download
 
-### 5f. Create Bundle ID on Apple Developer portal
+#### 3.7f Configure Xcode signing
 
-1. Go to [https://developer.apple.com/account/](https://developer.apple.com/account/)
-2. Select **Certificates, Identifiers & Profiles**
-3. Select **Identifiers** → click **+**
-4. Select **App IDs** → **App** type
-5. Enter a description and the Bundle ID from step 5b
-6. Enable **Associated Domains** capability
-7. Click **Continue** → **Register**
+1. Project navigator → Build Settings > Signing
+2. Code Signing Identity (Release): **Apple Distribution**
+3. Code Signing Style (Release): **Manual**
+4. Development Team (Release): your team
+5. Signing & Capabilities > Release: select the provisioning profile
 
-### 5g. Create a Certificate Signing Request (CSR)
+#### 3.7g Create App Reservation on App Store Connect
 
-1. Open **Keychain Access** on Mac
-2. Menu: **Keychain Access > Certificate Assistant > Request a Certificate from a Certificate Authority**
-3. Enter your email and name, select **Saved to disk**
-4. Save the `.certSigningRequest` file
+1. [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/) → My Apps → + → New App
+2. Platform: iOS
+3. Name: Charlotte Third Places
+4. Bundle ID: from step 3.7a
+5. SKU: `charlotte-third-places-001`
 
-### 5h. Create a Distribution Certificate
+#### 3.7h Upload and submit
 
-1. Back on [https://developer.apple.com/account/](https://developer.apple.com/account/) → **Certificates, Identifiers & Profiles**
-2. Select **Certificates** → click **+**
-3. Select **Apple Distribution** → **Continue**
-4. Upload the CSR from the previous step
-5. Download the `.cer` file
-6. Double-click it to install in Keychain Access
-
-### 5i. Create a Provisioning Profile
-
-1. On the Apple Developer portal → **Profiles** → click **+**
-2. Select **App Store Connect** under Distribution
-3. Select the Bundle ID from step 5f
-4. Select the certificate from step 5h
-5. Name the profile and click **Generate**
-6. Download the `.mobileprovision` file
-
-### 5j. Configure Xcode signing
-
-1. In Xcode, select the project in the navigator
-2. Go to **Build Settings > Signing**
-3. Set **Code Signing Identity (Release)** to **Apple Distribution**
-4. Set **Code Signing Style (Release)** to **Manual**
-5. Set **Development Team (Release)** to your Apple Developer team
-6. Go to **Signing & Capabilities > Release** and select the provisioning profile
-
-### 5k. Create App Reservation on App Store Connect
-
-1. Go to [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/)
-2. Select **My Apps** → click **+** → **New App**
-3. Platform: **iOS**
-4. Name: **Charlotte Third Places**
-5. Select the Bundle ID from step 5f
-6. SKU: any unique string (e.g. `charlotte-third-places-001`)
-7. Click **Create**
-
-### 5l. Upload the app
-
-1. In Xcode, select **Any iOS Device (arm64)** as the build target
-2. Select **Product > Archive**
-3. When archiving completes, select **Distribute App > App Store Connect > Upload**
-4. Follow the prompts
-
-### 5m. Submit for review
-
-1. Go to [https://appstoreconnect.apple.com/](https://appstoreconnect.apple.com/) → your app
-2. Fill in metadata: description, keywords, screenshots, app icon, category
-3. Under **Build**, select the archive you just uploaded
-4. Click **Submit for Review**
-5. Typical review turnaround is 24-48 hours
-
-### 5n. App Store Listing Assets Needed
-
-- **App icon**: 1024x1024 PNG, no transparency, no rounded corners (iOS applies its own mask). Generate from the social media logo on a solid `#00b2d6` background.
-- **Screenshots**: Required for each device size you support. At minimum, iPhone 6.7" display (1290x2796) and iPhone 6.5" display (1242x2688). Take screenshots of homepage, map view, place detail, AI chat.
-- **Description**: What the app does, key features. Highlight: 400+ curated places, map view, AI recommendations, offline support.
-- **Keywords**: charlotte, third places, coffee shops, cafes, libraries, study spots, remote work, queen city (100 character limit, comma-separated)
-- **Category**: Primary: **Lifestyle**. Secondary: **Food & Drink** or **Travel**
-- **Splash screen**: `app-splash-page.png` (already created)
+1. In Xcode: select **Any iOS Device (arm64)** → **Product > Archive**
+2. **Distribute App > App Store Connect > Upload**
+3. On App Store Connect: fill metadata (description, keywords, screenshots, icon, category) → select build → **Submit for Review**
+4. Review turnaround: 24-48 hours
 
 ---
 
-## Asset Checklist
+## Things the Original Plan Was Missing
 
-| Asset | Status | Location |
-|---|---|---|
-| App icon (favicons, all sizes) | Done | `public/favicons/` |
-| Web app manifest | Done | `public/favicons/site.webmanifest` |
-| Splash screen | Done | `public/app-splash-page.png` |
-| Feature graphic (Google Play, 1024x500) | Not created | Needed for Play Store listing |
-| Screenshots (phone) | Not created | Take from live site on mobile device |
-| `assetlinks.json` (Android TWA) | Not created | Create after PWABuilder generates the fingerprint |
+1. **Viewport `themeColor` mismatch**: `layout.tsx` has `themeColor: 'white'` but the manifest uses `#00b2d6`. In standalone mode the OS uses the viewport value for the status bar, so white looks wrong. Fixed in step 2.2.
 
-## Account Requirements
+2. **Manifest `screenshots` field**: Chrome 120+ shows a richer install UI (app-store-like bottom sheet with screenshots) when the manifest has a `screenshots` array. Without it, users get the minimal "Add to home screen" bar. Added in step 2.9.
 
-| Account | Cost | Link |
-|---|---|---|
-| Google Play Developer | $25 one-time | [https://play.google.com/console/signup](https://play.google.com/console/signup) |
-| Apple Developer Program | $99/year | [https://developer.apple.com/programs/enroll/](https://developer.apple.com/programs/enroll/) |
+3. **Local build verification step**: The service worker only generates during `npm run build`, not `npm run dev`. Without testing a production build locally first, you'd only discover issues after deploying. Added in step 2.10.
+
+4. **`display_override` in manifest**: Could add `"display_override": ["standalone", "window-controls-overlay"]` for progressive enhancement on desktop. Not critical for mobile app stores — optional future improvement.
+
+5. **Old favicons at root level**: The root `/favicon.ico`, `/favicon-16x16.png`, and `/apple-touch-icon.png` referenced in the current `layout.tsx` may or may not exist. After updating paths to `/favicons/`, the old root files become dead weight. Cleaning them up is optional but tidy.
+
+6. **Manifest location**: The manifest was originally at `public/favicons/site.webmanifest` and needed a manual `manifest` field in the metadata export. It's now at `app/manifest.webmanifest`, which is the Next.js App Router file convention. Next.js automatically serves it and adds the `<link rel="manifest">` tag. PWABuilder follows this link tag to find the manifest.
+
+---
 
 ## Key Links
 
