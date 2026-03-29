@@ -45,8 +45,8 @@ These are needed for both stores and can be prepared in advance.
 | App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` |
 | Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
 | Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
-| Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Not created |
-| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners. Generate from `public/logos/social-media-logo.png` on a solid `#00b2d6` background | Not created |
+| Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Done — `public/logos/google-play-banner.png` |
+| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners | Done — `public/logos/apple-app-icon.png` |
 | Screenshots (phone) | 5 screenshots: homepage, map, chat, contribute, about | Done — `public/screenshots/` |
 
 **Screenshots**: Take these from a real phone in mobile view. Open each page on the live site, screenshot it. These same 5 images are used for Google Play, Apple App Store, and the manifest `screenshots` field (step 2.9).
