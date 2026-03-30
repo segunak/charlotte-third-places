@@ -8,12 +8,18 @@
     }
   ],
   "servers": {
+    // https://support.airtable.com/docs/using-the-airtable-mcp-server
     "airtable": {
       "type": "http",
       "url": "https://mcp.airtable.com/mcp",
       "headers": {
         "Authorization": "Bearer ${input:airtable_pat}"
       }
+    },
+    // https://github.com/MicrosoftDocs/mcp
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
     }
   }
 }
