@@ -20,6 +20,11 @@
     "microsoft-learn": {
       "type": "http",
       "url": "https://learn.microsoft.com/api/mcp"
+    },
+    // https://github.com/microsoft/playwright-mcp
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest", "--browser=msedge"]
     }
   }
 }

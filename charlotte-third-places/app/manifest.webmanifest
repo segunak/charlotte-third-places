@@ -1,15 +1,21 @@
 {
   "id": "/",
   "name": "Charlotte Third Places",
-  "short_name": "Third Places",
+  "short_name": "CLT Third Places",
   "description": "Discover third places in Charlotte, North Carolina: cafes, coffee shops, bookstores, bakeries, libraries, and more. Find spots for remote work, studying, reading, meeting friends, or hanging out.",
   "categories": ["lifestyle", "social", "food", "travel"],
   "start_url": "/",
   "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
   "display": "standalone",
+  "display_override": ["standalone"],
   "orientation": "portrait",
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192.png",
@@ -67,38 +73,73 @@
   ],
   "screenshots": [
     {
-      "src": "/screenshots/home-page-screenshot.png",
-      "sizes": "1290x2358",
+      "src": "/screenshots/home-mobile.png",
+      "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Homepage showing curated third places in Charlotte"
     },
     {
-      "src": "/screenshots/map-page-screenshot.png",
-      "sizes": "1290x2358",
+      "src": "/screenshots/map-mobile.png",
+      "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Interactive map of all places"
     },
     {
-      "src": "/screenshots/chat-page-screenshot.png",
-      "sizes": "1290x2358",
+      "src": "/screenshots/chat-mobile.png",
+      "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "AI-powered place recommendations"
     },
     {
-      "src": "/screenshots/contribute-page-screenshot.png",
-      "sizes": "1290x2358",
+      "src": "/screenshots/contribute-mobile.png",
+      "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow",
       "label": "Suggest a new place to add"
     },
     {
-      "src": "/screenshots/about-page-screenshot.png",
-      "sizes": "1290x2358",
+      "src": "/screenshots/about-mobile.png",
+      "sizes": "1290x2796",
       "type": "image/png",
       "form_factor": "narrow",
+      "label": "About the project"
+    },
+    {
+      "src": "/screenshots/home-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Homepage showing curated third places in Charlotte"
+    },
+    {
+      "src": "/screenshots/map-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Interactive map of all places"
+    },
+    {
+      "src": "/screenshots/chat-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AI-powered place recommendations"
+    },
+    {
+      "src": "/screenshots/contribute-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Suggest a new place to add"
+    },
+    {
+      "src": "/screenshots/about-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
       "label": "About the project"
     }
   ]
