@@ -1,7 +1,7 @@
 {
   "id": "/",
   "name": "Charlotte Third Places",
-  "short_name": "CLT Third Places",
+  "short_name": "Charlotte Third Places",
   "description": "Discover third places in Charlotte, North Carolina: cafes, coffee shops, bookstores, bakeries, libraries, and more. Find spots for remote work, studying, reading, meeting friends, or hanging out.",
   "categories": ["lifestyle", "social", "food", "travel"],
   "start_url": "/",
