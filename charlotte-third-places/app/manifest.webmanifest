@@ -8,26 +8,20 @@
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "theme_color": "#00b2d6",
-  "background_color": "#00b2d6",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
   "icons": [
     {
       "src": "/favicons/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "any maskable"
     },
     {
       "src": "/favicons/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "/favicons/web-app-manifest-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ],
   "shortcuts": [
@@ -69,6 +63,43 @@
           "type": "image/png"
         }
       ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Homepage showing curated third places in Charlotte"
+    },
+    {
+      "src": "/screenshots/map-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Interactive map of all places"
+    },
+    {
+      "src": "/screenshots/chat-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI-powered place recommendations"
+    },
+    {
+      "src": "/screenshots/contribute-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Suggest a new place to add"
+    },
+    {
+      "src": "/screenshots/about-page-screenshot.png",
+      "sizes": "1290x2358",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "About the project"
     }
   ]
 }
