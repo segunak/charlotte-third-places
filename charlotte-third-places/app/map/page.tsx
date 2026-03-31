@@ -31,7 +31,7 @@ export default async function MapPage() {
                     <MobileMapOpenNow />
                     <MobileFindMeButton />
                 </div>
-                <FilterDrawer showSort={false} className="fixed right-3 z-50" style={{ bottom: '5rem' }} />
+                <FilterDrawer showSort={false} />
             </div>
 
             {/* Desktop */}

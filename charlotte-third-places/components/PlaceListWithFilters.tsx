@@ -136,8 +136,6 @@ export function PlaceListWithFilters() {
                 <div className="sm:hidden">
                     <FilterDrawer
                         showSort={true}
-                        className="fixed right-3 z-50"
-                        style={{ bottom: '5rem' }}
                         showButton={isQuickFiltersInView || isDataTableInView}
                     />
                 </div>

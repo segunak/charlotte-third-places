@@ -101,7 +101,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <ModalProvider>
               <div className="flex flex-col min-h-dvh">
                 <SiteHeader />
-                <main className="flex-1 mb-12 sm:mb-0 bg-background">
+                <main className="flex-1 bg-background">
                   {children}
                 </main>
                 <MobileNavigation />
