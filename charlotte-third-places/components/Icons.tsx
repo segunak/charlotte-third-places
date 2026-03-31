@@ -48,7 +48,8 @@ import {
   FaLightbulb,
   FaRegLightbulb,
   FaHouseChimney,
-  FaTableTennisPaddleBall
+  FaTableTennisPaddleBall,
+  FaHashtag,
 } from "react-icons/fa6";
 
 import {
@@ -127,6 +128,7 @@ import {
   LuHeartHandshake,
   LuGamepad2
 } from "react-icons/lu";
+import { hash } from "crypto";
 
 export const Icons = {
   arrowUp: ArrowUp,
@@ -143,6 +145,7 @@ export const Icons = {
   armchair: LuArmchair,
   heart: LuHeart,
   handHeart: LuHeartHandshake,
+  hashtag: FaHashtag,
   gamepad: FaGamepad,
   gamepad2: LuGamepad2,
   laptop: FaLaptop,

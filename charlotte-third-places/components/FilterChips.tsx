@@ -1,11 +1,11 @@
 "use client";
 
-import React, { useCallback } from "react";
 import { cn } from "@/lib/utils";
+import React, { useCallback } from "react";
 import { Button } from "@/components/ui/button";
-import { useFilters, useFilterData } from "@/contexts/FilterContext";
 import { FILTER_SENTINEL } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
+import { useFilters, useFilterData } from "@/contexts/FilterContext";
 
 interface FilterChipsProps {
     field: FilterKey;

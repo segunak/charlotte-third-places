@@ -329,8 +329,9 @@ export function isOpenEarly(operatingHours: string[]): boolean {
 // ============================================================================
 
 /**
- * Check if a place is currently open (or opening/closing soon) using a pre-computed
- * CharlotteTime snapshot. Returns true for states: open, closing-soon, opening-soon.
+ * Check if a place is currently open using a pre-computed CharlotteTime snapshot.
+ * Returns true only for places that are actually open right now (open or closing-soon).
+ * "Opening soon" places are NOT considered open, they haven't opened yet.
  *
  * Designed for batch filtering (e.g., "Open Now" button) where you compute
  * the time once and check all places against it - no Intl calls per place.
@@ -338,7 +339,7 @@ export function isOpenEarly(operatingHours: string[]): boolean {
 export function isPlaceOpenNow(operatingHours: string[], time: CharlotteTime): boolean {
     if (!operatingHours || operatingHours.length === 0) return false;
     const status = getHoursStatusAt(operatingHours, time);
-    return status.state === "open" || status.state === "closing-soon" || status.state === "opening-soon";
+    return status.state === "open" || status.state === "closing-soon";
 }
 
 // ============================================================================
