@@ -31,7 +31,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                     {/* Heading with live place count */}
                     <div className="flex items-center justify-between">
                         <h3 className="text-sm font-semibold">Quick Filters</h3>
-                        <span className="text-sm text-muted-foreground tabular-nums">
+                        <span className="text-sm font-semibold tabular-nums">
                             {visibleCount} {visibleCount === 1 ? 'place' : 'places'}
                         </span>
                     </div>
