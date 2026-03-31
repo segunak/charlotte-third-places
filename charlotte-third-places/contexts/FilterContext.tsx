@@ -2,8 +2,9 @@
 
 import { createContext, useCallback, useMemo, useContext, ReactNode, useReducer } from "react";
 import { DEFAULT_SORT_OPTION, SortOption, Place } from "@/lib/types";
-import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey } from "@/lib/filters";
+import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey, placeMatchesFilters } from "@/lib/filters";
 import { isPlaceOpenNow, getCharlotteTimeNow, injectDynamicTags } from "@/lib/operating-hours";
+import { normalizeTextForSearch } from "@/lib/utils";
 
 // ============================================================================
 // CONSOLIDATED REDUCER - Single state update for atomic operations
@@ -248,12 +249,24 @@ export const FilterProvider = ({
         []
     );
 
-    // Pre-compute how many places are currently open (single timezone snapshot).
-    // Computed once when places change, shared by all consumers via context.
+    // Pre-compute how many filtered places are currently open.
+    // Filter-aware: applies active filters + quick search before counting,
+    // so the count reflects "of your current results, how many are open now?"
     const openNowCount = useMemo(() => {
         const time = getCharlotteTimeNow();
-        return (places as Place[]).filter(p => isPlaceOpenNow(p.operatingHours ?? [], time)).length;
-    }, [places]);
+        let filtered = places as Place[];
+
+        // Apply quick search (same logic as DataTable)
+        if (quickFilterText.trim() !== "") {
+            const lowerSearch = normalizeTextForSearch(quickFilterText);
+            filtered = filtered.filter(p => normalizeTextForSearch(p.name || '').includes(lowerSearch));
+        }
+
+        // Apply active filters (same predicate as DataTable)
+        filtered = filtered.filter(p => placeMatchesFilters(p, filters));
+
+        return filtered.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time)).length;
+    }, [places, filters, quickFilterText]);
 
     // Pre-compute distinct values for ALL filter fields once when places change.
     // This eliminates repeated computation on every filter interaction (was causing 536-824ms INP).
