@@ -78,7 +78,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
         ref={triggerRef}
         variant="outline"
         size="icon"
-        className={`fixed bottom-20 right-3 z-50 bg-primary rounded-full shadow-lg transition-opacity duration-200
+        className={`fixed bottom-[calc(5rem+env(safe-area-inset-bottom))] right-3 z-50 bg-primary rounded-full shadow-lg transition-opacity duration-200
           ${className}
           ${!showButton ? "opacity-0 pointer-events-none" : "opacity-100"}
         `}
