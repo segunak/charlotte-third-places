@@ -42,19 +42,22 @@ export function MobileNavigation() {
   ];
 
   return (
-    <nav className="sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-50 pb-safe">
-      <div className="grid grid-cols-5 h-16">
-        {navItems.map((item) => (
-          <Link href={item.href} key={item.href} className="flex flex-col items-center justify-center">
-            {pathname === item.href ? (
-              item.activeIcon
-            ) : (
-              item.inactiveIcon
-            )}
-            <span className="text-xs">{item.label}</span>
-          </Link>
-        ))}
-      </div>
-    </nav>
+    <>
+      <nav className="sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-50 pb-safe">
+        <div className="grid grid-cols-5 h-14">
+          {navItems.map((item) => (
+            <Link href={item.href} key={item.href} className="flex flex-col items-center justify-center">
+              {pathname === item.href ? (
+                item.activeIcon
+              ) : (
+                item.inactiveIcon
+              )}
+              <span className="text-xs">{item.label}</span>
+            </Link>
+          ))}
+        </div>
+      </nav>
+      <div className="sm:hidden h-14 pb-safe" aria-hidden="true" />
+    </>
   );
 }
