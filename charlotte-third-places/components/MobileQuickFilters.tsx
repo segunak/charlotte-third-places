@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { useFilters } from "@/contexts/FilterContext";
+import { useFilters, useOpenNow } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { Button } from "@/components/ui/button";
@@ -22,15 +22,18 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
     visibleCount,
 }: MobileQuickFiltersProps) {
     const { filters } = useFilters();
+    const { openNow } = useOpenNow();
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
 
     return (
         <>
             <div className="bg-card rounded-lg border overflow-hidden">
                 <div className="space-y-3 p-4">
-                    {/* Heading with live place count */}
+                    {/* Heading with live place count — changes text when Open Now is active */}
                     <div className="flex items-center justify-between">
-                        <h3 className="text-sm font-semibold">Quick Filters</h3>
+                        <h3 className={`text-sm font-semibold ${openNow ? 'text-emerald-700 dark:text-emerald-400' : ''}`}>
+                            {openNow ? 'Showing Open Now' : 'Quick Filters'}
+                        </h3>
                         <span className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-2.5 py-1">
                             <Icons.list className="h-3 w-3 text-primary shrink-0" />
                             <span className="text-xs font-bold text-foreground tabular-nums">
