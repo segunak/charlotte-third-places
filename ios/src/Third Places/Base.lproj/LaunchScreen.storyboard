@@ -17,16 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="I2s-HW-Q4d">
-                                <rect key="frame" x="175" y="416" width="64" height="64"/>
-                                <color key="tintColor" systemColor="secondarySystemFillColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" image="LaunchIcon" id="I2s-HW-Q4d" clipsSubviews="YES">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XpK-Bq-A7U"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="centerY" secondItem="4mO-e4-REQ" secondAttribute="centerY" id="4kv-Qc-mPU"/>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="centerX" secondItem="4mO-e4-REQ" secondAttribute="centerX" id="6Z0-rS-c8Q"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="top" secondItem="4mO-e4-REQ" secondAttribute="top" id="top-con"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="bottom" secondItem="4mO-e4-REQ" secondAttribute="bottom" id="bot-con"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="leading" secondItem="4mO-e4-REQ" secondAttribute="leading" id="lead-con"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="trailing" secondItem="4mO-e4-REQ" secondAttribute="trailing" id="trail-con"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -36,9 +37,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchIcon" width="64" height="64"/>
-        <systemColor name="secondarySystemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="LaunchIcon" width="1080" height="1920"/>
     </resources>
 </document>

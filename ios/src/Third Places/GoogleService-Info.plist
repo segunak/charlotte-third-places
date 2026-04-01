@@ -1,3 +1,4 @@
+<!-- NOTE: Firebase is not currently used. Replace placeholder values with real Firebase project config to enable push notifications. -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -13,11 +14,11 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.microsoft.pwabuilder-ios</string>
+	<string>com.charlottethirdplaces.app</string>
 	<key>PROJECT_ID</key>
-	<string>pwabuilder-ios-template</string>
+	<string>placeholder-project-id</string>
 	<key>STORAGE_BUCKET</key>
-	<string>pwabuilder-ios-template.appspot.com</string>
+	<string>placeholder-project-id.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +30,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:619930292029:ios:f6737372189b8ee9123f54</string>
+	<string>0:000000000000:ios:0000000000000000000000</string>
 </dict>
 </plist>
