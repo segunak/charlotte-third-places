@@ -10,10 +10,11 @@ func createWebView(container: UIView, WKSMH: WKScriptMessageHandler, WKND: WKNav
     let userContentController = WKUserContentController()
 
     userContentController.add(WKSMH, name: "print")
-    userContentController.add(WKSMH, name: "push-subscribe")
-    userContentController.add(WKSMH, name: "push-permission-request")
-    userContentController.add(WKSMH, name: "push-permission-state")
-    userContentController.add(WKSMH, name: "push-token")
+    // NOTE: Push notification message handlers are disabled. Uncomment to enable.
+    // userContentController.add(WKSMH, name: "push-subscribe")
+    // userContentController.add(WKSMH, name: "push-permission-request")
+    // userContentController.add(WKSMH, name: "push-permission-state")
+    // userContentController.add(WKSMH, name: "push-token")
 
     config.userContentController = userContentController
 

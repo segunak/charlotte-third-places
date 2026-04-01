@@ -259,17 +259,18 @@ extension ViewController: WKScriptMessageHandler {
         if message.name == "print" {
             printView(webView: ThirdPlaces.webView)
         }
-        if message.name == "push-subscribe" {
-            handleSubscribeTouch(message: message)
-        }
-        if message.name == "push-permission-request" {
-            handlePushPermission()
-        }
-        if message.name == "push-permission-state" {
-            handlePushState()
-        }
-        if message.name == "push-token" {
-            handleFCMToken()
-        }
+        // NOTE: Push notification handlers are disabled. Uncomment to enable.
+        // if message.name == "push-subscribe" {
+        //     handleSubscribeTouch(message: message)
+        // }
+        // if message.name == "push-permission-request" {
+        //     handlePushPermission()
+        // }
+        // if message.name == "push-permission-state" {
+        //     handlePushState()
+        // }
+        // if message.name == "push-token" {
+        //     handleFCMToken()
+        // }
   }
 }

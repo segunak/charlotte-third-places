@@ -197,7 +197,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         {/* Scrollable options list */}
         <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2" style={{ maxHeight: '70vh' }}>
           <ul className={cn(
-            isMultiple ? "grid grid-cols-2 gap-1" : "space-y-0.5"
+            isMultiple ? "columns-2 gap-1" : "space-y-0.5"
           )}>
             {showDefaultOption && !isMultiple && (
               <li>
@@ -219,7 +219,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
 
               if (isMultiple) {
                 return (
-                  <li key={opt}>
+                  <li key={opt} className="break-inside-avoid">
                     <button
                       type="button"
                       className={cn(
