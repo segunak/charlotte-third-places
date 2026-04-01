@@ -5,7 +5,8 @@ struct Cookie {
     var value: String
 }
 
-let gcmMessageIDKey = "00000000000" // update this with actual ID if using Firebase 
+// NOTE: Firebase is not currently used. Uncomment if enabling push notifications.
+// let gcmMessageIDKey = "00000000000" // Replace with actual Firebase Sender ID
 
 // URL for first launch
 let rootUrl = URL(string: "https://www.charlottethirdplaces.com")!
