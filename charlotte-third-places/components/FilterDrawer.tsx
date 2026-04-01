@@ -61,7 +61,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   // Track which select or modal is open
-  const [activePopover, setActivePopover] = useState<string | null>(null);
+  const [activePopover, setActivePopover] = useState<string | null>(null);fds
 
   // Helper to generate a unique id for each filter select
   const getPopoverId = (field: string) => `filter-select-${field}`;
