@@ -17,9 +17,8 @@ Wrap the live website (`charlottethirdplaces.com`) in native app shells using PW
 Apple rejects apps under Guideline 4.2 (Minimum Functionality) if they're "just a website in a WebView." To improve approval odds:
 
 - **Offline mode** via Serwist service worker — cached pages work without network
-- **App Review Prompt** — native iOS `SKStoreReviewController` dialog after a few app launches
-- **Branded splash screen** — custom launch screen with logo and tagline
-- If Apple rejects, push notifications via FCM/APNs can be added to the Swift wrapper as a targeted fix
+- **Branded splash screen** — custom launch screen with logo and tagline (done — `app-splash-page.png`)
+- If Apple rejects, push notifications via FCM/APNs can be added to the Swift wrapper as a targeted fix (Firebase scaffolding is commented out in the iOS project, ready to enable)
 
 ---
 
@@ -30,7 +29,7 @@ Things to set up before any code changes.
 ### 1.1 Create developer accounts
 
 | Account | Cost | Status |
-|---|---|---|
+| --- | --- | --- |
 | Google Play Developer | $25 one-time | Done |
 | Apple Developer Program | $99/year | Done |
 
@@ -41,13 +40,13 @@ Both can be created from any browser on any OS. No Mac required — the iOS buil
 These are needed for both stores and can be prepared in advance.
 
 | Asset | Spec | Status |
-|---|---|---|
-| App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` |
+| --- | --- | --- |
+| App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` and `ios/src/Third Places/Assets.xcassets/AppIcon.appiconset/` |
 | Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
-| Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
+| Splash screen | Launch screen image (iOS only, Android generates from manifest) | Done — `ios/src/Third Places/Assets.xcassets/LaunchIcon.imageset/splash.png` |
 | Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Done — `public/logos/google-play-banner.png` |
-| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners | Done — `public/logos/apple-app-icon.png` |
-| Screenshots (phone) | 5 screenshots: homepage, map, chat, contribute, about | Done — `public/screenshots/` |
+| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners | Done — `ios/src/Third Places/Assets.xcassets/AppIcon.appiconset/1024.png` |
+| Screenshots (phone + desktop) | 5 pages: homepage, map, chat, contribute, about | Done — `public/screenshots/` (mobile and desktop variants) |
 
 **Screenshots**: Take these from a real phone in mobile view. Open each page on the live site, screenshot it. These same 5 images are used for Google Play, Apple App Store, and the manifest `screenshots` field (step 2.9).
 
@@ -59,19 +58,72 @@ These are needed for both stores and can be prepared in advance.
 
 Prepare these text assets now so they're ready at submission time.
 
+### 1.4 Privacy policy — Done
+
+Both Apple and Google **require** a privacy policy URL before you can submit. This is handled via Termly (paid plan, auto-updates with law changes).
+
+**TODO**: Update Termly policies to reflect the new business name. Log in to [Termly Dashboard](https://app.termly.io/) and update the company/business name across all three policies before submitting to either store.
+
+| Policy | URL |
+| --- | --- |
+| Privacy Policy | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6) |
+| Cookie Policy | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=1416a187-4ce6-4e4b-abdd-39c1cb4f7671) |
+| Terms and Conditions | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=354be667-fbde-479e-a4b9-1a3b261ef0ed) |
+
+Use the Privacy Policy URL for:
+
+- Google Play Console → App content → Privacy policy
+- App Store Connect → App Information → Privacy Policy URL
+
+### 1.5 Set up legal policy URLs — TODO
+
+Create branded URLs on the site so legal policies live under our domain instead of raw Termly links.
+
+**Approach**: One `/legal` page with all three policies, plus individual redirect routes.
+
+| Route | Behavior |
+| --- | --- |
+| `/legal` | Next.js page displaying links to all three Termly policies |
+| `/privacy` | Redirect → Termly Privacy Policy URL |
+| `/cookies` | Redirect → Termly Cookie Policy URL |
+| `/terms` | Redirect → Termly Terms and Conditions URL |
+
+**Implementation:**
+
+1. **Create `app/legal/page.tsx`** — simple page with the site header/footer and three links (Privacy Policy, Cookie Policy, Terms and Conditions) pointing to the Termly URLs from step 1.4.
+
+2. **Add redirects in `next.config.mjs`** for the three shortcut routes:
+
+   ```js
+   redirects: async () => [
+     { source: '/privacy', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6', permanent: false },
+     { source: '/cookies', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=1416a187-4ce6-4e4b-abdd-39c1cb4f7671', permanent: false },
+     { source: '/terms', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=354be667-fbde-479e-a4b9-1a3b261ef0ed', permanent: false },
+   ],
+   ```
+
+3. **Update store submissions** to use `https://charlottethirdplaces.com/privacy` as the privacy policy URL instead of the raw Termly link.
+
+**Why one page + redirects:**
+
+- `/legal` is a single page to maintain with all three links visible together
+- `/privacy`, `/cookies`, `/terms` give clean branded URLs when a store or footer needs a direct link to one specific policy
+- No content duplication — redirects go straight to Termly, which hosts the actual policy text
+- `permanent: false` (302) so the redirect target can be updated without cache issues if Termly UUIDs ever change
+
 **Short description** (Google Play, ≤80 chars):
 > Discover 400+ third places in Charlotte, NC
 
 **Full description** (both stores, ≤4000 chars):
-> Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina — cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
+> Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina, including cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
 >
 > Features:
 > • Browse 400+ curated places with details on Wi-Fi, parking, size, hours, and whether a purchase is required
 > • Interactive map view showing every place across the Charlotte area
-> • AI-powered recommendations — describe what you're looking for and get personalized suggestions
+> • AI-powered recommendations. Describe what you're looking for and get personalized suggestions.
 > • Filter by neighborhood, type, tags, and more
 > • Real-time open/closed status based on current hours
-> • Offline support — previously visited pages load without internet
+> • Offline support. Previously visited pages load without internet.
 >
 > Built and maintained by a Charlotte resident as a free community resource. Featured in The Charlotte Observer. Open source at github.com/segunak/charlotte-third-places.
 
@@ -197,13 +249,14 @@ Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially
 ### 3.5 Take screenshots for store listings
 
 Take 5 screenshots from a phone in mobile view of the live site:
+
 1. Homepage (`/`)
 2. Map (`/map`)
 3. AI Chat (`/chat`)
 4. Contribute (`/contribute`)
 5. About (`/about`)
 
-Done. Screenshots are in `public/screenshots/` as `home-page-screenshot.png`, `map-page-screenshot.png`, `chat-page-screenshot.png`, `contribute-page-screenshot.png`, `about-page-screenshot.png`. These same files are referenced by the manifest `screenshots` field (step 2.9) and used for both store listings.
+Done. Screenshots are in `public/screenshots/` with mobile and desktop variants for each page: `home-mobile.png`, `home-desktop.png`, `map-mobile.png`, `map-desktop.png`, `chat-mobile.png`, `chat-desktop.png`, `contribute-mobile.png`, `contribute-desktop.png`, `about-mobile.png`, `about-desktop.png`. Mobile screenshots are used for both store listings. Desktop and mobile variants are referenced by the manifest `screenshots` field (step 2.9).
 
 ### 3.6 Package and deploy Android (Google Play)
 
@@ -246,8 +299,25 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 2. Create a new app
 3. Fill in the store listing (title, description, screenshots, icon, feature graphic)
 4. Upload the AAB file under **Production > Create new release**
-5. Complete the content rating questionnaire and data safety form
-6. **Important**: Google requires a **14-day closed testing period with 20+ testers** before production release. Set up a closed testing track first.
+5. Complete the content rating questionnaire, data safety form, target audience, and privacy policy
+6. Set age rating to `13+` and target audience to `Older Users` (required for PWAs/TWAs)
+
+> **Note on testing requirements**: Google's 14-day closed testing requirement with 12 testers only applies to **personal developer accounts created after November 13, 2023**. Since this project uses an **organization account**, the testing requirement does not apply — you can publish directly to production.
+
+#### 3.6d Update assetlinks.json after Google re-signs
+
+**Important**: After uploading the AAB, Google Play re-signs your app with its own key. You must update `assetlinks.json` with the new SHA-256 fingerprint:
+
+1. Go to Google Play Console → your app → Setup → App integrity → App signing tab
+2. Copy the **SHA-256 certificate fingerprint** shown there
+3. Add it to `public/.well-known/assetlinks.json` (keep the original PWABuilder fingerprint too — both are needed)
+4. Deploy the updated file to Vercel
+
+Without this step, the app will show a browser address bar instead of running full-screen.
+
+#### 3.6e Save your signing key
+
+The PWABuilder zip contains `signing.keystore` and `signing-key-info.txt`. Keep both in a safe place — you need them to publish future updates.
 
 ### 3.7 Package and deploy iOS (Apple App Store)
 
@@ -255,57 +325,65 @@ No Mac required. All portal work is browser-based, and the Xcode build runs on a
 
 #### Prerequisites
 
-- **Apple Developer account** ($99/year) — [enroll here](https://developer.apple.com/programs/enroll/)
-- The iOS project and CI workflow go in the existing repo: `github.com/segunak/charlotte-third-places`
+- **Apple Developer account** ($99/year, organization) — Done
+- The iOS project lives at `ios/src/` in the existing repo: `github.com/segunak/charlotte-third-places`
 
-#### 3.7a Generate iOS package from PWABuilder
+#### 3.7a Generate iOS package from PWABuilder — Done
 
-1. On PWABuilder → **"Package for stores"** → iOS → **"Generate Package"**
-2. Set the **Bundle ID** to `com.charlottethirdplaces.app`
-3. Download the zip
+The PWABuilder-generated Swift project is already in `ios/src/` with:
 
-#### 3.7b Customize the Swift project (from Windows)
+- Bundle ID: `com.charlottethirdplaces.app`
+- Scheme: `Third Places`
+- Project: `Third Places.xcodeproj` / `Third Places.xcworkspace`
 
-1. Unzip the package
-2. Edit the Swift source files in any text editor (VS Code works fine)
+#### 3.7b Customize the Swift project — Done
 
-**Add App Review Prompt** — find the WebView controller and add:
+All customizations completed from Windows using VS Code:
 
-```swift
-import StoreKit
-
-// After the WebView finishes loading, increment a counter in UserDefaults.
-// After 3 launches:
-if launchCount >= 3 {
-    SKStoreReviewController.requestReview()
-}
-```
-
-**Set the splash image** — replace the image asset in `Assets.xcassets` with `app-splash-page.png`. The `.xcassets` folder is just a directory of JSON + image files, editable without Xcode. If the `LaunchScreen.storyboard` needs changes, it's an XML file that can be edited in a text editor.
-
-3. Push the unzipped project to a new directory (e.g. `ios/`) in the existing repo at `github.com/segunak/charlotte-third-places`
+- **Splash screen**: Full-bleed `app-splash-page.png` via `LaunchScreen.storyboard` (image pins to all edges, `scaleAspectFill`)
+- **App category**: Changed from `productivity` to `public.app-category.lifestyle` in `Info.plist`
+- **Display name**: "Third Places" (fits under the home screen icon without truncation)
+- **Firebase/push notifications**: All Firebase code commented out with re-enablement instructions. Can be uncommented if needed for Apple approval.
+- **Capabilities**: Push notification entitlement (`aps-environment`) commented out in `Entitlements.plist` since Firebase is disabled
 
 #### 3.7c Apple Developer Portal setup (all browser, no Mac)
 
-1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → enter Bundle ID → enable Associated Domains → Register
+Apple requires every app to be cryptographically signed. This proves the app came from you and hasn't been tampered with. Every iOS developer — solo or Fortune 500 — must do these steps. There is no alternative.
 
-2. **Create CSR from Windows** using OpenSSL (no Keychain Access needed):
-   ```
+| Artifact | What it is | Why Apple requires it |
+| --- | --- | --- |
+| Bundle ID | Unique app identifier (like a domain name for your app) | Tracks your app forever across all Apple systems |
+| CSR | Certificate Signing Request — proves you own a private key | Standard PKI: your key stays on your machine, Apple signs the public part |
+| Distribution Certificate | Apple's proof that you're an authorized developer | Without it, iOS refuses to run your app |
+| Provisioning Profile | Links your cert + Bundle ID + entitlements together | Tells iOS "this app from this developer is allowed to run with these capabilities" |
+| API Key (.p8) | Allows GitHub Actions to upload builds without your Apple ID password | Automated CI/CD authentication |
+
+**Steps:**
+
+1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → `com.charlottethirdplaces.app` → enable **Associated Domains** (Push Notifications can stay disabled since Firebase is commented out) → Register
+
+2. **Create CSR from Windows** using OpenSSL:
+
+   ```sh
    openssl req -nodes -newkey rsa:2048 -keyout ios_distribution.key -out ios_distribution.csr -subj "/emailAddress=you@email.com, CN=Your Name, C=US"
    ```
 
-3. **Create Distribution Certificate**: Developer portal → Certificates → + → Apple Distribution → upload the `.csr` from step 2 → download the `.cer` file
+   This creates two files: a private key (`ios_distribution.key` — keep this safe, never share it) and a CSR (`ios_distribution.csr` — upload this to Apple).
 
-4. **Convert to .p12** (needed for GitHub Actions signing):
-   ```
+3. **Create Distribution Certificate**: Developer portal → Certificates → + → **Apple Distribution** → upload the `.csr` from step 2 → download the `.cer` file
+
+4. **Convert to .p12** (GitHub Actions needs this format for code signing):
+
+   ```sh
    openssl x509 -in ios_distribution.cer -inform DER -out ios_distribution.pem -outform PEM
    openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in ios_distribution.pem
    ```
-   You'll set a password — remember it, you'll need it as a GitHub secret.
 
-5. **Create Provisioning Profile**: Developer portal → Profiles → + → App Store Connect → select Bundle ID → select the certificate → generate → download the `.mobileprovision` file
+   You'll be prompted to set a password — remember it, you'll need it as a GitHub secret.
 
-6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → Integrations → App Store Connect API → + → role: **App Manager** → download the `.p8` file (can only be downloaded once). Note the **Key ID** and **Issuer ID**.
+5. **Create Provisioning Profile**: Developer portal → Profiles → + → **App Store Connect** (under Distribution) → select your Bundle ID → select the certificate from step 3 → generate → download the `.mobileprovision` file
+
+6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → Integrations → App Store Connect API → + → role: **App Manager** → download the `.p8` file (**can only be downloaded once** — save it immediately). Note the **Key ID** and **Issuer ID** shown on that page.
 
 #### 3.7d Create App Reservation on App Store Connect
 
@@ -320,7 +398,7 @@ if launchCount >= 3 {
 In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. Add:
 
 | Secret name | Value |
-|---|---|
+| --- | --- |
 | `P12_BASE64` | Base64-encoded `.p12` file: `openssl base64 -in ios_distribution.p12 -A` |
 | `P12_PASSWORD` | The password you set when creating the `.p12` |
 | `MOBILEPROVISION_BASE64` | Base64-encoded `.mobileprovision`: `openssl base64 -in profile.mobileprovision -A` |
@@ -330,6 +408,7 @@ In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and var
 | `TEAM_ID` | Your Apple Developer Team ID (found in Membership details) |
 
 > **Note on Windows**: If `openssl base64 -A` isn't available, use PowerShell:
+>
 > ```powershell
 > [Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.p12"))
 > ```
@@ -352,21 +431,21 @@ jobs:
 
       - name: Install CocoaPods dependencies
         run: |
-          cd src
+          cd ios/src
           pod install
 
       - name: Build and sign IPA
         uses: yukiarrr/ios-build-action@v1.12.0
         with:
-          project-path: src/YourProject.xcodeproj
-          workspace-path: src/YourProject.xcworkspace
+          project-path: "ios/src/Third Places.xcodeproj"
+          workspace-path: "ios/src/Third Places.xcworkspace"
           p12-base64: ${{ secrets.P12_BASE64 }}
           certificate-password: ${{ secrets.P12_PASSWORD }}
           mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
           code-signing-identity: "Apple Distribution"
           team-id: ${{ secrets.TEAM_ID }}
           export-method: app-store
-          scheme: YourScheme
+          scheme: "Third Places"
           output-path: build/App.ipa
 
       - name: Upload to App Store Connect
@@ -378,23 +457,27 @@ jobs:
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
 ```
 
-The `YourProject` and `YourScheme` placeholders can't be filled in until PWABuilder generates the package in step 3.7a. After unzipping, look for the `.xcodeproj` and `.xcworkspace` filenames and the scheme name in the project, then update this workflow file.
+#### 3.7g Run the workflow and test
 
-#### 3.7g Run the workflow and submit
-
-1. Go to the GitHub repo → Actions → "Build and Upload iOS App" → **Run workflow**
+1. Go to the GitHub repo → Actions → **"Build and Upload iOS App"** → **Run workflow**
 2. The runner builds the IPA on macOS and uploads it to App Store Connect via API
-3. On [appstoreconnect.apple.com](https://appstoreconnect.apple.com/): fill metadata (description, keywords, screenshots, icon, category) → select the build → **Submit for Review**
-4. Review turnaround: 24-48 hours
+3. The build automatically appears in **TestFlight** on App Store Connect
+4. Install **TestFlight** on your iPhone → accept the invite → test the app
+5. Verify: splash screen shows, pages load, offline mode works, tabs work, safe area looks right
 
-#### 3.7h Test on a real device
+#### 3.7h Fill metadata and submit for review
 
-The upload goes to TestFlight automatically. Install TestFlight on an iPhone, accept the invite, and test the app before submitting for App Store review.
+1. On [appstoreconnect.apple.com](https://appstoreconnect.apple.com/): go to your app
+2. Fill in the store listing: description, keywords, screenshots, 1024x1024 icon, category (Lifestyle), privacy policy URL
+3. Under **Build**, select the TestFlight build you just tested
+4. **Important**: In Signing & Capabilities, disable any capabilities the app doesn't use. Since push notifications are commented out, make sure that capability is not enabled. Apple can reject apps that declare capabilities they don't use.
+5. Click **Submit for Review**
+6. Review turnaround: typically 24-48 hours
 
 #### How this works without a Mac
 
 | Step | Runs on |
-|---|---|
+| --- | --- |
 | Apple portal setup (Bundle ID, certs, profiles) | Browser (any OS) |
 | CSR + .p12 creation | `openssl` on Windows |
 | Swift code edits (review prompt, splash) | Text editor on Windows |
@@ -419,7 +502,17 @@ The upload goes to TestFlight automatically. Install TestFlight on an iPhone, ac
 
 6. **Manifest location**: The manifest was originally at `public/favicons/site.webmanifest` and needed a manual `manifest` field in the metadata export. It's now at `app/manifest.webmanifest`, which is the Next.js App Router file convention. Next.js automatically serves it and adds the `<link rel="manifest">` tag. PWABuilder follows this link tag to find the manifest.
 
-7. **No Mac required for iOS**: The original plan assumed a physical Mac for Xcode. The entire iOS pipeline can run from Windows: CSR creation via `openssl`, portal setup in a browser, Xcode build on a GitHub Actions `macos-latest` runner via [`yukiarrr/ios-build-action`](https://github.com/yukiarrr/ios-build-action), and upload via [`Apple-Actions/upload-testflight-build`](https://github.com/Apple-Actions/upload-testflight-build). PWABuilder's own FAQ [confirms this approach](https://docs.pwabuilder.com/#/builder/faq?id=ios).
+7. **No Mac required for iOS**: The original plan assumed a physical Mac for Xcode. The entire iOS pipeline runs from Windows: CSR creation via `openssl`, portal setup in a browser, Xcode build on a GitHub Actions `macos-latest` runner via [`yukiarrr/ios-build-action`](https://github.com/yukiarrr/ios-build-action), and upload via [`Apple-Actions/upload-testflight-build`](https://github.com/Apple-Actions/upload-testflight-build). PWABuilder's own FAQ [confirms CI services as an alternative](https://docs.pwabuilder.com/#/builder/faq?id=ios).
+
+8. **Google Play testing requirement doesn't apply**: The 14-day closed testing with 12 testers only applies to personal developer accounts created after November 13, 2023. Organization accounts can publish to production immediately.
+
+9. **Adjust Capabilities step missing**: PWABuilder docs require disabling unused capabilities in Xcode's Signing & Capabilities tab before submission. Apple can reject apps that declare capabilities they don't use. Since Firebase/push is commented out, the push notification capability must not be enabled.
+
+10. **Google Play re-signing**: After uploading the AAB, Google re-signs it with their own key. The `assetlinks.json` must be updated with Google's SHA-256 fingerprint (found in Play Console → App integrity → App signing), otherwise the app shows a browser address bar.
+
+11. **Privacy policy required**: Both stores require a privacy policy URL. Cannot submit without one. Added as step 1.4.
+
+12. **Unused iOS entitlements and usage descriptions**: PWABuilder's template declares microphone, camera, location, file access, and print entitlements by default. The app doesn't use any of these. Removed from `Entitlements.plist` and corresponding `NS*UsageDescription` strings from `Info.plist`. Apple rejects apps that declare capabilities they don't use or that show permission prompts for features the app doesn't need.
 
 ---
 
