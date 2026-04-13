@@ -4,7 +4,7 @@ import { useId } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { BsFillHousesFill } from "react-icons/bs";
 import { HiOutlineGlobeAlt } from "react-icons/hi";
-import { ArrowUp, Locate, Loader2 } from "lucide-react";
+import { ArrowUp, Locate, Loader2, ShieldCheck, Cookie, FileText } from "lucide-react";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import {
   MdEditLocationAlt,
@@ -132,6 +132,9 @@ import { hash } from "crypto";
 
 export const Icons = {
   arrowUp: ArrowUp,
+  shieldCheck: ShieldCheck,
+  cookie: Cookie,
+  fileText: FileText,
   sun: LuSunMedium,
   moon: LuMoon,
   home: IoHome,

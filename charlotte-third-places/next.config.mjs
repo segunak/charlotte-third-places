@@ -5,6 +5,13 @@ import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 
 const nextConfig = {
     reactCompiler: true, // Enable React Compiler for automatic memoization
+    async redirects() {
+        return [
+            { source: '/privacy', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6', permanent: false },
+            { source: '/cookies', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=1416a187-4ce6-4e4b-abdd-39c1cb4f7671', permanent: false },
+            { source: '/terms', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=354be667-fbde-479e-a4b9-1a3b261ef0ed', permanent: false },
+        ];
+    },
     images: {
         remotePatterns: [
             {
