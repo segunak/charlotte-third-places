@@ -29,7 +29,7 @@ Things to set up before any code changes.
 ### 1.1 Create developer accounts
 
 | Account | Cost | Status |
-|---|---|---|
+| --- | --- | --- |
 | Google Play Developer | $25 one-time | Done |
 | Apple Developer Program | $99/year | Done |
 
@@ -40,7 +40,7 @@ Both can be created from any browser on any OS. No Mac required — the iOS buil
 These are needed for both stores and can be prepared in advance.
 
 | Asset | Spec | Status |
-|---|---|---|
+| --- | --- | --- |
 | App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` |
 | Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
 | Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
@@ -58,19 +58,36 @@ These are needed for both stores and can be prepared in advance.
 
 Prepare these text assets now so they're ready at submission time.
 
+### 1.4 Privacy policy — Done
+
+Both Apple and Google **require** a privacy policy URL before you can submit. This is handled via Termly (paid plan, auto-updates with law changes).
+
+**TODO**: Update Termly policies to reflect the new business name. Log in to [Termly Dashboard](https://app.termly.io/) and update the company/business name across all three policies before submitting to either store.
+
+| Policy | URL |
+| --- | --- |
+| Privacy Policy | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6) |
+| Cookie Policy | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=1416a187-4ce6-4e4b-abdd-39c1cb4f7671) |
+| Terms and Conditions | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=354be667-fbde-479e-a4b9-1a3b261ef0ed) |
+
+Use the Privacy Policy URL for:
+
+- Google Play Console → App content → Privacy policy
+- App Store Connect → App Information → Privacy Policy URL
+
 **Short description** (Google Play, ≤80 chars):
 > Discover 400+ third places in Charlotte, NC
 
 **Full description** (both stores, ≤4000 chars):
-> Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina — cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
+> Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina, including cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
 >
 > Features:
 > • Browse 400+ curated places with details on Wi-Fi, parking, size, hours, and whether a purchase is required
 > • Interactive map view showing every place across the Charlotte area
-> • AI-powered recommendations — describe what you're looking for and get personalized suggestions
+> • AI-powered recommendations. Describe what you're looking for and get personalized suggestions.
 > • Filter by neighborhood, type, tags, and more
 > • Real-time open/closed status based on current hours
-> • Offline support — previously visited pages load without internet
+> • Offline support. Previously visited pages load without internet.
 >
 > Built and maintained by a Charlotte resident as a free community resource. Featured in The Charlotte Observer. Open source at github.com/segunak/charlotte-third-places.
 
@@ -196,6 +213,7 @@ Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially
 ### 3.5 Take screenshots for store listings
 
 Take 5 screenshots from a phone in mobile view of the live site:
+
 1. Homepage (`/`)
 2. Map (`/map`)
 3. AI Chat (`/chat`)
@@ -277,6 +295,7 @@ No Mac required. All portal work is browser-based, and the Xcode build runs on a
 #### 3.7a Generate iOS package from PWABuilder — Done
 
 The PWABuilder-generated Swift project is already in `ios/src/` with:
+
 - Bundle ID: `com.charlottethirdplaces.app`
 - Scheme: `Third Places`
 - Project: `Third Places.xcodeproj` / `Third Places.xcworkspace`
@@ -284,6 +303,7 @@ The PWABuilder-generated Swift project is already in `ios/src/` with:
 #### 3.7b Customize the Swift project — Done
 
 All customizations completed from Windows using VS Code:
+
 - **Splash screen**: Full-bleed `app-splash-page.png` via `LaunchScreen.storyboard` (image pins to all edges, `scaleAspectFill`)
 - **App category**: Changed from `productivity` to `public.app-category.lifestyle` in `Info.plist`
 - **Display name**: "Third Places" (fits under the home screen icon without truncation)
@@ -295,7 +315,7 @@ All customizations completed from Windows using VS Code:
 Apple requires every app to be cryptographically signed. This proves the app came from you and hasn't been tampered with. Every iOS developer — solo or Fortune 500 — must do these steps. There is no alternative.
 
 | Artifact | What it is | Why Apple requires it |
-|---|---|---|
+| --- | --- | --- |
 | Bundle ID | Unique app identifier (like a domain name for your app) | Tracks your app forever across all Apple systems |
 | CSR | Certificate Signing Request — proves you own a private key | Standard PKI: your key stays on your machine, Apple signs the public part |
 | Distribution Certificate | Apple's proof that you're an authorized developer | Without it, iOS refuses to run your app |
@@ -307,18 +327,22 @@ Apple requires every app to be cryptographically signed. This proves the app cam
 1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → `com.charlottethirdplaces.app` → enable **Associated Domains** (Push Notifications can stay disabled since Firebase is commented out) → Register
 
 2. **Create CSR from Windows** using OpenSSL:
-   ```
+
+   ```sh
    openssl req -nodes -newkey rsa:2048 -keyout ios_distribution.key -out ios_distribution.csr -subj "/emailAddress=you@email.com, CN=Your Name, C=US"
    ```
+
    This creates two files: a private key (`ios_distribution.key` — keep this safe, never share it) and a CSR (`ios_distribution.csr` — upload this to Apple).
 
 3. **Create Distribution Certificate**: Developer portal → Certificates → + → **Apple Distribution** → upload the `.csr` from step 2 → download the `.cer` file
 
 4. **Convert to .p12** (GitHub Actions needs this format for code signing):
-   ```
+
+   ```sh
    openssl x509 -in ios_distribution.cer -inform DER -out ios_distribution.pem -outform PEM
    openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in ios_distribution.pem
    ```
+
    You'll be prompted to set a password — remember it, you'll need it as a GitHub secret.
 
 5. **Create Provisioning Profile**: Developer portal → Profiles → + → **App Store Connect** (under Distribution) → select your Bundle ID → select the certificate from step 3 → generate → download the `.mobileprovision` file
@@ -338,7 +362,7 @@ Apple requires every app to be cryptographically signed. This proves the app cam
 In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. Add:
 
 | Secret name | Value |
-|---|---|
+| --- | --- |
 | `P12_BASE64` | Base64-encoded `.p12` file: `openssl base64 -in ios_distribution.p12 -A` |
 | `P12_PASSWORD` | The password you set when creating the `.p12` |
 | `MOBILEPROVISION_BASE64` | Base64-encoded `.mobileprovision`: `openssl base64 -in profile.mobileprovision -A` |
@@ -348,6 +372,7 @@ In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and var
 | `TEAM_ID` | Your Apple Developer Team ID (found in Membership details) |
 
 > **Note on Windows**: If `openssl base64 -A` isn't available, use PowerShell:
+>
 > ```powershell
 > [Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.p12"))
 > ```
@@ -416,7 +441,7 @@ jobs:
 #### How this works without a Mac
 
 | Step | Runs on |
-|---|---|
+| --- | --- |
 | Apple portal setup (Bundle ID, certs, profiles) | Browser (any OS) |
 | CSR + .p12 creation | `openssl` on Windows |
 | Swift code edits (review prompt, splash) | Text editor on Windows |
@@ -448,6 +473,10 @@ jobs:
 9. **Adjust Capabilities step missing**: PWABuilder docs require disabling unused capabilities in Xcode's Signing & Capabilities tab before submission. Apple can reject apps that declare capabilities they don't use. Since Firebase/push is commented out, the push notification capability must not be enabled.
 
 10. **Google Play re-signing**: After uploading the AAB, Google re-signs it with their own key. The `assetlinks.json` must be updated with Google's SHA-256 fingerprint (found in Play Console → App integrity → App signing), otherwise the app shows a browser address bar.
+
+11. **Privacy policy required**: Both stores require a privacy policy URL. Cannot submit without one. Added as step 1.4.
+
+12. **Unused iOS entitlements and usage descriptions**: PWABuilder's template declares microphone, camera, location, file access, and print entitlements by default. The app doesn't use any of these. Removed from `Entitlements.plist` and corresponding `NS*UsageDescription` strings from `Info.plist`. Apple rejects apps that declare capabilities they don't use or that show permission prompts for features the app doesn't need.
 
 ---
 
