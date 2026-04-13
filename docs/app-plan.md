@@ -41,12 +41,12 @@ These are needed for both stores and can be prepared in advance.
 
 | Asset | Spec | Status |
 | --- | --- | --- |
-| App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` |
+| App icon (all sizes) | Various sizes, already generated | Done — `public/favicons/` and `ios/src/Third Places/Assets.xcassets/AppIcon.appiconset/` |
 | Web app manifest | JSON manifest | Done — `app/manifest.webmanifest` |
-| Splash screen | Launch screen image | Done — `public/app-splash-page.png` |
+| Splash screen | Launch screen image (iOS only, Android generates from manifest) | Done — `ios/src/Third Places/Assets.xcassets/LaunchIcon.imageset/splash.png` |
 | Feature graphic (Google Play) | 1024x500 PNG, landscape banner | Done — `public/logos/google-play-banner.png` |
-| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners | Done — `public/logos/apple-app-icon.png` |
-| Screenshots (phone) | 5 screenshots: homepage, map, chat, contribute, about | Done — `public/screenshots/` |
+| App icon (Apple, 1024x1024) | 1024x1024 PNG, no transparency, no rounded corners | Done — `ios/src/Third Places/Assets.xcassets/AppIcon.appiconset/1024.png` |
+| Screenshots (phone + desktop) | 5 pages: homepage, map, chat, contribute, about | Done — `public/screenshots/` (mobile and desktop variants) |
 
 **Screenshots**: Take these from a real phone in mobile view. Open each page on the live site, screenshot it. These same 5 images are used for Google Play, Apple App Store, and the manifest `screenshots` field (step 2.9).
 
@@ -74,6 +74,42 @@ Use the Privacy Policy URL for:
 
 - Google Play Console → App content → Privacy policy
 - App Store Connect → App Information → Privacy Policy URL
+
+### 1.5 Set up legal policy URLs — TODO
+
+Create branded URLs on the site so legal policies live under our domain instead of raw Termly links.
+
+**Approach**: One `/legal` page with all three policies, plus individual redirect routes.
+
+| Route | Behavior |
+| --- | --- |
+| `/legal` | Next.js page displaying links to all three Termly policies |
+| `/privacy` | Redirect → Termly Privacy Policy URL |
+| `/cookies` | Redirect → Termly Cookie Policy URL |
+| `/terms` | Redirect → Termly Terms and Conditions URL |
+
+**Implementation:**
+
+1. **Create `app/legal/page.tsx`** — simple page with the site header/footer and three links (Privacy Policy, Cookie Policy, Terms and Conditions) pointing to the Termly URLs from step 1.4.
+
+2. **Add redirects in `next.config.mjs`** for the three shortcut routes:
+
+   ```js
+   redirects: async () => [
+     { source: '/privacy', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6', permanent: false },
+     { source: '/cookies', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=1416a187-4ce6-4e4b-abdd-39c1cb4f7671', permanent: false },
+     { source: '/terms', destination: 'https://app.termly.io/policy-viewer/policy.html?policyUUID=354be667-fbde-479e-a4b9-1a3b261ef0ed', permanent: false },
+   ],
+   ```
+
+3. **Update store submissions** to use `https://charlottethirdplaces.com/privacy` as the privacy policy URL instead of the raw Termly link.
+
+**Why one page + redirects:**
+
+- `/legal` is a single page to maintain with all three links visible together
+- `/privacy`, `/cookies`, `/terms` give clean branded URLs when a store or footer needs a direct link to one specific policy
+- No content duplication — redirects go straight to Termly, which hosts the actual policy text
+- `permanent: false` (302) so the redirect target can be updated without cache issues if Termly UUIDs ever change
 
 **Short description** (Google Play, ≤80 chars):
 > Discover 400+ third places in Charlotte, NC
@@ -220,7 +256,7 @@ Take 5 screenshots from a phone in mobile view of the live site:
 4. Contribute (`/contribute`)
 5. About (`/about`)
 
-Done. Screenshots are in `public/screenshots/` as `home-page-screenshot.png`, `map-page-screenshot.png`, `chat-page-screenshot.png`, `contribute-page-screenshot.png`, `about-page-screenshot.png`. These same files are referenced by the manifest `screenshots` field (step 2.9) and used for both store listings.
+Done. Screenshots are in `public/screenshots/` with mobile and desktop variants for each page: `home-mobile.png`, `home-desktop.png`, `map-mobile.png`, `map-desktop.png`, `chat-mobile.png`, `chat-desktop.png`, `contribute-mobile.png`, `contribute-desktop.png`, `about-mobile.png`, `about-desktop.png`. Mobile screenshots are used for both store listings. Desktop and mobile variants are referenced by the manifest `screenshots` field (step 2.9).
 
 ### 3.6 Package and deploy Android (Google Play)
 
