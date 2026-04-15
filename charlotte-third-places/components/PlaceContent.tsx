@@ -136,15 +136,15 @@ export const PlaceContent: FC<PlaceContentProps> = ({
 
             <Separator />
 
-            {/* DESCRIPTION - Always visible, high priority */}
+            {/* DESCRIPTION */}
             <RichTextSection
                 heading="Description"
-                priority="high"
+                priority="medium"
             >
                 {place.description?.trim() || "A third place in the Charlotte, North Carolina area."}
             </RichTextSection>
 
-            {/* COMMENTS - Smart truncation for long content */}
+            {/* COMMENTS*/}
             {hasComments && (
                 <>
                     <Separator />
