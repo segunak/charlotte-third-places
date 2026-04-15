@@ -42,3 +42,7 @@ public/images
 # Serwist
 public/sw*
 public/swe-worker*
+
+# Android signing keys (PWABuilder)
+signing.keystore
+signing-key-info.txt
