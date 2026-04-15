@@ -6,15 +6,15 @@ import { useDebouncedCallback } from "use-debounce";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions, useOpenNow } from "@/contexts/FilterContext";
 import { DEFAULT_SORT_OPTION } from "@/lib/types";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { VirtualizedSelect } from "@/components/VirtualizedSelect";
 import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
-import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, DEFAULT_FILTER_CONFIG } from "@/lib/filters";
 import type { FilterKey } from "@/lib/filters";
+import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions, useOpenNow } from "@/contexts/FilterContext";
+import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, DEFAULT_FILTER_CONFIG } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
 
