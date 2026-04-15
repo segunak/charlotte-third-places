@@ -399,8 +399,8 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 label: 'Tags',
                 icon: attributeIcons.tags,
                 value: (
-                    <div className="flex flex-wrap gap-1">
-                        {tags.map(tag => <InfoTag key={tag} text={tag} />)}
+                    <div className="flex flex-col gap-1 sm:flex-row sm:flex-wrap">
+                        {tags.map(tag => <InfoTag key={tag} text={tag} className="w-fit" />)}
                     </div>
                 ),
                 tdClassName: TD_BASE_CLASS,
