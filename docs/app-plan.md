@@ -33,7 +33,7 @@ Things to set up before any code changes.
 | Google Play Developer | $25 one-time | Done |
 | Apple Developer Program | $99/year | Done |
 
-Both can be created from any browser on any OS. No Mac required — the iOS build and upload is handled by GitHub Actions (see Phase 3.7).
+Both can be created from any browser on any OS. No Mac required — the iOS build and upload is handled by GitHub Actions (see Phase 3.6).
 
 ### 1.2 Create store listing assets
 
@@ -146,7 +146,7 @@ Added `applicationName: 'Charlotte Third Places'` to the metadata export. Update
 
 ### 2.2 Fix viewport themeColor — Done
 
-Changed `themeColor` from `'white'` to `'#00b2d6'` to match the manifest. This affects the status bar color when the app runs in standalone mode.
+Changed `themeColor` from `'white'` to `'#00b2d6'` (brand cyan). This controls the browser status/address bar color when visiting the site in a regular mobile browser. The manifest's `theme_color` (`#ffffff`) is separate — it controls the status bar when the app is installed as a PWA in standalone mode. They don't need to match.
 
 ### 2.3 Install Serwist (Turbopack) — Done
 
@@ -220,19 +220,12 @@ Already completed. Screenshots are in `public/screenshots/` and referenced in `a
 
 Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially.
 
-### 3.1 Run Lighthouse PWA audit
-
-1. Open `https://charlottethirdplaces.com` in Chrome
-2. DevTools → Lighthouse tab → check "Progressive Web App"
-3. Run audit
-4. All PWA checks should pass (installability, service worker, manifest)
-
-### 3.2 Test installability
+### 3.1 Test installability — Done
 
 - **Android Chrome**: Visit the site → three-dot menu → "Install app" prompt should appear
 - **iOS Safari**: Visit the site → share button → "Add to Home Screen" → verify it opens in standalone mode (no Safari chrome)
 
-### 3.3 Test offline mode
+### 3.2 Test offline mode — Done
 
 1. Install the PWA on a device
 2. Browse a few pages (home, a place detail, about)
@@ -240,13 +233,13 @@ Push all Phase 2 changes and let Vercel deploy. Then do these steps sequentially
 4. Visit a previously viewed page — should load from cache
 5. Visit a new page — the `~offline` fallback should appear
 
-### 3.4 Validate on PWABuilder
+### 3.3 Validate on PWABuilder
 
 1. Go to [https://www.pwabuilder.com/](https://www.pwabuilder.com/)
 2. Enter `https://charlottethirdplaces.com`
 3. Verify a passing score on manifest, service worker, and security
 
-### 3.5 Take screenshots for store listings
+### 3.4 Take screenshots for store listings
 
 Take 5 screenshots from a phone in mobile view of the live site:
 
@@ -258,19 +251,78 @@ Take 5 screenshots from a phone in mobile view of the live site:
 
 Done. Screenshots are in `public/screenshots/` with mobile and desktop variants for each page: `home-mobile.png`, `home-desktop.png`, `map-mobile.png`, `map-desktop.png`, `chat-mobile.png`, `chat-desktop.png`, `contribute-mobile.png`, `contribute-desktop.png`, `about-mobile.png`, `about-desktop.png`. Mobile screenshots are used for both store listings. Desktop and mobile variants are referenced by the manifest `screenshots` field (step 2.9).
 
-### 3.6 Package and deploy Android (Google Play)
+### 3.5 Package and deploy Android (Google Play)
 
-#### 3.6a Generate Android package from PWABuilder
+#### 3.5a Generate Android package from PWABuilder
 
 1. On PWABuilder, click **"Package for stores"** → Android → **"Generate Package"**
-2. Config:
-   - **Package ID**: `com.charlottethirdplaces.app`
-   - **App name**: Charlotte Third Places
-   - **App version**: `1.0.0`
-   - **Display mode**: Standalone
-3. Download the zip
+2. Configure all fields as documented below, then download the zip
 
-#### 3.6b Set up Digital Asset Links
+**Identity & URLs**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Package ID | `com.charlottethirdplaces.app` | Changed from default `.www.twa` suffix to `.app` to match the iOS bundle ID |
+| App name | `Charlotte Third Places` | Full name, matches manifest `name` |
+| Short name | `Third Places` | Matches manifest `short_name`, fits under home screen icon |
+| Include source code | Disable | Don't need the Android Studio project — just the AAB |
+| Host | `charlottethirdplaces.com` | Bare domain, no `www.` prefix |
+| Start URL | `/` | Default, correct |
+| Manifest URL | `https://charlottethirdplaces.com/manifest.webmanifest` | Bare domain to match host |
+| Icon URL | `https://charlottethirdplaces.com/favicons/web-app-manifest-512x512.png` | Bare domain to match host |
+| Maskable icon URL | `https://charlottethirdplaces.com/favicons/web-app-manifest-512x512.png` | Manifest declares these icons as `"purpose": "any maskable"` |
+| Monochrome icon URL | *(blank)* | No monochrome icon exists in the manifest — the default path doesn't resolve |
+
+**Versioning**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Version | `1.0.0.0` | Initial release |
+| Version code | `1` | Increment for each new upload to Google Play |
+
+**Colors**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Theme color | `#ffffff` | Matches manifest `theme_color` |
+| Theme dark color | `#0d2629` | Derived from dark theme `--background: 190 50% 9%` in globals.css |
+| Background color | `#ffffff` | Matches manifest `background_color`, controls splash screen |
+| Nav color | `#ffffff` | Bottom nav bar in light mode |
+| Nav dark color | `#0d2629` | Bottom nav bar in dark mode |
+| Nav divider color | `#ffffff` | Invisible divider in light mode |
+| Nav divider dark color | `#0d2629` | Invisible divider in dark mode |
+
+**Behavior**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Splash fade out duration | `300` | Default, fine |
+| Settings shortcut | Disable | No settings screen in the PWA — would open Chrome settings |
+| Display mode | Standalone | Matches manifest. Not Fullscreen (hides status bar) or Fullscreen sticky (game mode) |
+| Notification delegation | Disable | App doesn't send push notifications |
+| Location delegation | Enable | Map uses `navigator.geolocation` for the "Find Me" button — needs permission passthrough |
+| Google Play billing | Disable | No in-app purchases |
+| Fallback behavior | Custom Tabs | If TWA can't run, Custom Tabs opens the site in Chrome with minimal UI. Better than Web View |
+
+**Signing key**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| Signing key | New | Let PWABuilder generate a keystore. Save `signing.keystore` and `signing-key-info.txt` from the zip |
+| Key alias | `my-key-alias` | Default |
+| Key full name | `Mersee LLC` | Legal entity behind the developer accounts |
+| Key organization | `Mersee LLC` | Legal entity, not the DBA ("Charlotte Third Places" is the brand/app name) |
+| Key organizational unit | `Engineering` | Default |
+| Key country code | `US` | Correct |
+
+**Platform targeting**
+
+| Field | Value | Notes |
+| --- | --- | --- |
+| ChromeOS only | Disable | Target phones and tablets, not just Chromebooks |
+| Meta Quest compatible | Disable | Not a VR app |
+
+#### 3.5b Set up Digital Asset Links
 
 **Do this BEFORE uploading to Play Store.** Without it, the TWA shows a URL bar.
 
@@ -293,7 +345,7 @@ Push this file to Vercel. Verify it's accessible at `https://charlottethirdplace
 
 Note: Vercel serves files from `public/.well-known/` automatically. No routing config needed.
 
-#### 3.6c Upload to Google Play Console
+#### 3.5c Upload to Google Play Console
 
 1. Sign in at [https://play.google.com/console/](https://play.google.com/console/)
 2. Create a new app
@@ -304,7 +356,7 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 
 > **Note on testing requirements**: Google's 14-day closed testing requirement with 12 testers only applies to **personal developer accounts created after November 13, 2023**. Since this project uses an **organization account**, the testing requirement does not apply — you can publish directly to production.
 
-#### 3.6d Update assetlinks.json after Google re-signs
+#### 3.5d Update assetlinks.json after Google re-signs
 
 **Important**: After uploading the AAB, Google Play re-signs your app with its own key. You must update `assetlinks.json` with the new SHA-256 fingerprint:
 
@@ -315,11 +367,11 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 
 Without this step, the app will show a browser address bar instead of running full-screen.
 
-#### 3.6e Save your signing key
+#### 3.5e Save your signing key
 
 The PWABuilder zip contains `signing.keystore` and `signing-key-info.txt`. Keep both in a safe place — you need them to publish future updates.
 
-### 3.7 Package and deploy iOS (Apple App Store)
+### 3.6 Package and deploy iOS (Apple App Store)
 
 No Mac required. All portal work is browser-based, and the Xcode build runs on a GitHub Actions `macos-latest` runner.
 
@@ -328,7 +380,7 @@ No Mac required. All portal work is browser-based, and the Xcode build runs on a
 - **Apple Developer account** ($99/year, organization) — Done
 - The iOS project lives at `ios/src/` in the existing repo: `github.com/segunak/charlotte-third-places`
 
-#### 3.7a Generate iOS package from PWABuilder — Done
+#### 3.6a Generate iOS package from PWABuilder — Done
 
 The PWABuilder-generated Swift project is already in `ios/src/` with:
 
@@ -336,7 +388,7 @@ The PWABuilder-generated Swift project is already in `ios/src/` with:
 - Scheme: `Third Places`
 - Project: `Third Places.xcodeproj` / `Third Places.xcworkspace`
 
-#### 3.7b Customize the Swift project — Done
+#### 3.6b Customize the Swift project — Done
 
 All customizations completed from Windows using VS Code:
 
@@ -346,7 +398,7 @@ All customizations completed from Windows using VS Code:
 - **Firebase/push notifications**: All Firebase code commented out with re-enablement instructions. Can be uncommented if needed for Apple approval.
 - **Capabilities**: Push notification entitlement (`aps-environment`) commented out in `Entitlements.plist` since Firebase is disabled
 
-#### 3.7c Apple Developer Portal setup (all browser, no Mac)
+#### 3.6c Apple Developer Portal setup (all browser, no Mac)
 
 Apple requires every app to be cryptographically signed. This proves the app came from you and hasn't been tampered with. Every iOS developer — solo or Fortune 500 — must do these steps. There is no alternative.
 
@@ -385,15 +437,15 @@ Apple requires every app to be cryptographically signed. This proves the app cam
 
 6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → Integrations → App Store Connect API → + → role: **App Manager** → download the `.p8` file (**can only be downloaded once** — save it immediately). Note the **Key ID** and **Issuer ID** shown on that page.
 
-#### 3.7d Create App Reservation on App Store Connect
+#### 3.6d Create App Reservation on App Store Connect
 
 1. [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → My Apps → + → New App
 2. Platform: iOS
 3. Name: Charlotte Third Places
-4. Bundle ID: from step 3.7a
+4. Bundle ID: from step 3.6a
 5. SKU: `charlotte-third-places-001`
 
-#### 3.7e Store GitHub Secrets
+#### 3.6e Store GitHub Secrets
 
 In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. Add:
 
@@ -413,7 +465,7 @@ In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and var
 > [Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.p12"))
 > ```
 
-#### 3.7f Create GitHub Actions workflow
+#### 3.6f Create GitHub Actions workflow
 
 Create `.github/workflows/ios-build.yml` in `segunak/charlotte-third-places`:
 
@@ -457,7 +509,7 @@ jobs:
           api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
 ```
 
-#### 3.7g Run the workflow and test
+#### 3.6g Run the workflow and test
 
 1. Go to the GitHub repo → Actions → **"Build and Upload iOS App"** → **Run workflow**
 2. The runner builds the IPA on macOS and uploads it to App Store Connect via API
@@ -465,7 +517,7 @@ jobs:
 4. Install **TestFlight** on your iPhone → accept the invite → test the app
 5. Verify: splash screen shows, pages load, offline mode works, tabs work, safe area looks right
 
-#### 3.7h Fill metadata and submit for review
+#### 3.6h Fill metadata and submit for review
 
 1. On [appstoreconnect.apple.com](https://appstoreconnect.apple.com/): go to your app
 2. Fill in the store listing: description, keywords, screenshots, 1024x1024 icon, category (Lifestyle), privacy policy URL
@@ -490,7 +542,7 @@ jobs:
 
 ## Things the Original Plan Was Missing
 
-1. **Viewport `themeColor` mismatch**: `layout.tsx` has `themeColor: 'white'` but the manifest uses `#00b2d6`. In standalone mode the OS uses the viewport value for the status bar, so white looks wrong. Fixed in step 2.2.
+1. **Viewport `themeColor` was white**: `layout.tsx` had `themeColor: 'white'`, which made the browser status bar look plain. Changed to `#00b2d6` (brand cyan) in step 2.2. Note: the manifest `theme_color` is `#ffffff` (white) — this is intentional. The viewport theme color controls the browser status bar; the manifest theme color controls the PWA standalone status bar. They don't need to match.
 
 2. **Manifest `screenshots` field**: Chrome 120+ shows a richer install UI (app-store-like bottom sheet with screenshots) when the manifest has a `screenshots` array. Without it, users get the minimal "Add to home screen" bar. Added in step 2.9.
 

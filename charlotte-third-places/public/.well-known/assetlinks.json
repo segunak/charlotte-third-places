@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.charlottethirdplaces.app",
+        "sha256_cert_fingerprints": ["48:67:A4:83:24:5C:C0:F2:7D:E2:FA:73:98:FD:EE:4F:76:FF:C3:68:C3:0B:DD:7C:26:65:1B:40:28:86:86:92"]
+      }
+    }]
