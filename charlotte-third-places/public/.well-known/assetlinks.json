@@ -3,6 +3,9 @@
       "target": {
         "namespace": "android_app",
         "package_name": "com.charlottethirdplaces.app",
-        "sha256_cert_fingerprints": ["48:67:A4:83:24:5C:C0:F2:7D:E2:FA:73:98:FD:EE:4F:76:FF:C3:68:C3:0B:DD:7C:26:65:1B:40:28:86:86:92"]
+        "sha256_cert_fingerprints": [
+          "48:67:A4:83:24:5C:C0:F2:7D:E2:FA:73:98:FD:EE:4F:76:FF:C3:68:C3:0B:DD:7C:26:65:1B:40:28:86:86:92",
+          "F5:CA:78:3E:D0:74:6B:25:02:F2:FC:38:C2:31:CD:81:3D:BE:7E:BF:DC:A1:12:76:7C:99:FB:2E:55:F0:72:B6"
+        ]
       }
     }]

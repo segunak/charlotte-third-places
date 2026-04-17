@@ -253,7 +253,7 @@ Done. Screenshots are in `public/screenshots/` with mobile and desktop variants 
 
 ### 3.5 Package and deploy Android (Google Play)
 
-#### 3.5a Generate Android package from PWABuilder
+#### 3.5a Generate Android package from PWABuilder — Done
 
 1. On PWABuilder, click **"Package for stores"** → Android → **"Generate Package"**
 2. Configure all fields as documented below, then download the zip
@@ -322,7 +322,7 @@ Done. Screenshots are in `public/screenshots/` with mobile and desktop variants 
 | ChromeOS only | Disable | Target phones and tablets, not just Chromebooks |
 | Meta Quest compatible | Disable | Not a VR app |
 
-#### 3.5b Set up Digital Asset Links
+#### 3.5b Set up Digital Asset Links — Done
 
 **Do this BEFORE uploading to Play Store.** Without it, the TWA shows a URL bar.
 
@@ -345,7 +345,9 @@ Push this file to Vercel. Verify it's accessible at `https://charlottethirdplace
 
 Note: Vercel serves files from `public/.well-known/` automatically. No routing config needed.
 
-#### 3.5c Upload to Google Play Console
+#### 3.5c Upload to Google Play Console — Done
+
+Submitted for review on April 15, 2026. Managed publishing is off — app will go live automatically once approved.
 
 1. Sign in at [https://play.google.com/console/](https://play.google.com/console/)
 2. Create a new app
@@ -354,9 +356,40 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 5. Complete the content rating questionnaire, data safety form, target audience, and privacy policy
 6. Set age rating to `13+` and target audience to `Older Users` (required for PWAs/TWAs)
 
+**Store settings used:**
+
+- **Category**: Travel & Local
+- **Tags**: Food & drink, Lifestyle, Maps & navigation, Travel & local, Travel guide
+- **Target age groups**: 13-15, 16-17, 18 and over
+
+**Short description** (Google Play, ≤80 chars):
+
+```txt
+Discover 400+ third places in Charlotte, NC
+```
+
+**Full description** (Google Play, ≤4000 chars):
+
+```txt
+Charlotte Third Places is a curated directory of 400+ third places in and around Charlotte, North Carolina, including cafes, coffee shops, bookstores, bakeries, libraries, and more. Third places are spots outside of home and work where you can hang out, study, read, work remotely, meet friends, or just relax.
+
+Features:
+
+• Browse 400+ curated places with details on Wi-Fi, parking, size, hours, and whether a purchase is required
+• Interactive map view showing every place across the Charlotte area
+• AI-powered recommendations. Describe what you're looking for and get personalized suggestions.
+• Filter by neighborhood, type, tags, and more
+• Real-time open/closed status based on current hours
+• Offline support. Previously visited pages load without internet.
+
+Built and maintained by a Charlotte resident as a free community resource.
+```
+
 > **Note on testing requirements**: Google's 14-day closed testing requirement with 12 testers only applies to **personal developer accounts created after November 13, 2023**. Since this project uses an **organization account**, the testing requirement does not apply — you can publish directly to production.
 
-#### 3.5d Update assetlinks.json after Google re-signs
+#### 3.5d Update assetlinks.json after Google re-signs — Done
+
+Google's SHA-256 fingerprint (`F5:CA:78:3E:D0:74:6B:25:02:F2:FC:38:C2:31:CD:81:3D:BE:7E:BF:DC:A1:12:76:7C:99:FB:2E:55:F0:72:B6`) added to `assetlinks.json` alongside the original PWABuilder fingerprint. Deployed to Vercel.
 
 **Important**: After uploading the AAB, Google Play re-signs your app with its own key. You must update `assetlinks.json` with the new SHA-256 fingerprint:
 
@@ -367,9 +400,9 @@ Note: Vercel serves files from `public/.well-known/` automatically. No routing c
 
 Without this step, the app will show a browser address bar instead of running full-screen.
 
-#### 3.5e Save your signing key
+#### 3.5e Save your signing key — Done
 
-The PWABuilder zip contains `signing.keystore` and `signing-key-info.txt`. Keep both in a safe place — you need them to publish future updates.
+The PWABuilder zip contains `signing.keystore` and `signing-key-info.txt`. Both saved externally in a secure location. These files are gitignored (`signing.keystore` and `signing-key-info.txt` added to `.gitignore`).
 
 ### 3.6 Package and deploy iOS (Apple App Store)
 
