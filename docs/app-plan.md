@@ -431,7 +431,7 @@ All customizations completed from Windows using VS Code:
 - **Firebase/push notifications**: All Firebase code commented out with re-enablement instructions. Can be uncommented if needed for Apple approval.
 - **Capabilities**: Push notification entitlement (`aps-environment`) commented out in `Entitlements.plist` since Firebase is disabled
 
-#### 3.6c Apple Developer Portal setup (all browser, no Mac)
+#### 3.6c Apple Developer Portal setup (all browser, no Mac) — Done
 
 Apple requires every app to be cryptographically signed. This proves the app came from you and hasn't been tampered with. Every iOS developer — solo or Fortune 500 — must do these steps. There is no alternative.
 
@@ -445,102 +445,61 @@ Apple requires every app to be cryptographically signed. This proves the app cam
 
 **Steps:**
 
-1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → `com.charlottethirdplaces.app` → enable **Associated Domains** (Push Notifications can stay disabled since Firebase is commented out) → Register
+1. **Create Bundle ID**: [developer.apple.com](https://developer.apple.com/account/) → Identifiers → + → App IDs → `com.charlottethirdplaces.app` → enable **Associated Domains** and **Sign In with Apple** (Push Notifications left disabled since Firebase is commented out) → Register
 
-2. **Create CSR from Windows** using OpenSSL:
-
-   ```sh
-   openssl req -nodes -newkey rsa:2048 -keyout ios_distribution.key -out ios_distribution.csr -subj "/emailAddress=you@email.com, CN=Your Name, C=US"
-   ```
-
-   This creates two files: a private key (`ios_distribution.key` — keep this safe, never share it) and a CSR (`ios_distribution.csr` — upload this to Apple).
-
-3. **Create Distribution Certificate**: Developer portal → Certificates → + → **Apple Distribution** → upload the `.csr` from step 2 → download the `.cer` file
-
-4. **Convert to .p12** (GitHub Actions needs this format for code signing):
+2. **Create CSR from Windows** using OpenSSL (run from a secure folder outside the repo — the `.key` file is a private key):
 
    ```sh
-   openssl x509 -in ios_distribution.cer -inform DER -out ios_distribution.pem -outform PEM
-   openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in ios_distribution.pem
+   openssl req -nodes -newkey rsa:2048 -keyout ios_distribution.key -out ios_distribution.csr -subj "/emailAddress=contact@mersee.org, CN=Mersee LLC, C=US"
    ```
 
-   You'll be prompted to set a password — remember it, you'll need it as a GitHub secret.
+3. **Create Distribution Certificate**: Developer portal → Certificates → + → **Apple Distribution** (under Software, not Services) → upload the `.csr` from step 2 → download the `.cer` file
 
-5. **Create Provisioning Profile**: Developer portal → Profiles → + → **App Store Connect** (under Distribution) → select your Bundle ID → select the certificate from step 3 → generate → download the `.mobileprovision` file
+4. **Convert .cer to .pem** (intermediate step — the .p12 conversion is handled by the GitHub Actions workflow on macOS to avoid OpenSSL 3.x compatibility issues on Windows):
 
-6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → Integrations → App Store Connect API → + → role: **App Manager** → download the `.p8` file (**can only be downloaded once** — save it immediately). Note the **Key ID** and **Issuer ID** shown on that page.
+   ```sh
+   openssl x509 -in distribution.cer -inform DER -out ios_distribution.pem -outform PEM
+   ```
 
-#### 3.6d Create App Reservation on App Store Connect
+   > **Note**: Do NOT try to create a `.p12` file on Windows with OpenSSL 3.x. It uses AES-256-CBC encryption by default, which macOS's `security import` command can't read (reports "wrong password" even with the correct password). The `-legacy` flag requires a provider module that isn't included in most Windows OpenSSL distributions. The workflow handles the .p12 conversion on the macOS runner instead.
+
+5. **Create Provisioning Profile**: Developer portal → **Profiles** (left sidebar) → + → **App Store Connect** (under Distribution) → select Bundle ID `com.charlottethirdplaces.app` → select the Mersee LLC distribution certificate → name it `Charlotte Third Places Distribution` → generate → download the `.mobileprovision` file
+
+6. **Create App Store Connect API Key**: [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → Users and Access → **Integrations** → **Team Keys** → + → name: `GitHub Actions` → role: **App Manager** → generate → download the `.p8` file (**can only be downloaded once** — save it immediately). Note the **Key ID** and **Issuer ID** shown on that page.
+
+#### 3.6d Create App Reservation on App Store Connect — Done
 
 1. [appstoreconnect.apple.com](https://appstoreconnect.apple.com/) → My Apps → + → New App
 2. Platform: iOS
-3. Name: Charlotte Third Places
-4. Bundle ID: from step 3.6a
-5. SKU: `charlotte-third-places-001`
+3. Company Name: Mersee LLC
+4. Name: Charlotte Third Places
+5. Primary Language: English (U.S.)
+6. Bundle ID: Charlotte Third Places - com.charlottethirdplaces.app
+7. SKU: `charlotte-third-places`
+8. User Access: Full Access
 
-#### 3.6e Store GitHub Secrets
+#### 3.6e Store GitHub Secrets — Done
 
-In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. Add:
+In the `segunak/charlotte-third-places` repo, go to Settings → Secrets and variables → Actions. The workflow needs these secrets:
 
-| Secret name | Value |
-| --- | --- |
-| `P12_BASE64` | Base64-encoded `.p12` file: `openssl base64 -in ios_distribution.p12 -A` |
-| `P12_PASSWORD` | The password you set when creating the `.p12` |
-| `MOBILEPROVISION_BASE64` | Base64-encoded `.mobileprovision`: `openssl base64 -in profile.mobileprovision -A` |
-| `APPSTORE_API_PRIVATE_KEY` | Contents of the `.p8` file |
-| `APPSTORE_API_KEY_ID` | Key ID from App Store Connect |
-| `APPSTORE_ISSUER_ID` | Issuer ID from App Store Connect |
-| `TEAM_ID` | Your Apple Developer Team ID (found in Membership details) |
+| Secret name | Value | How to generate |
+| --- | --- | --- |
+| `IOS_DISTRIBUTION_KEY_BASE64` | Base64-encoded private key | `[Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.key")) \| Set-Clipboard` |
+| `IOS_DISTRIBUTION_PEM_BASE64` | Base64-encoded PEM certificate | `[Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.pem")) \| Set-Clipboard` |
+| `P12_PASSWORD` | Password for the .p12 (workflow creates .p12 on macOS runner) | Choose any password |
+| `MOBILEPROVISION_BASE64` | Base64-encoded provisioning profile | `[Convert]::ToBase64String([IO.File]::ReadAllBytes("Charlotte_Third_Places_Distribution.mobileprovision")) \| Set-Clipboard` |
+| `APPSTORE_API_PRIVATE_KEY` | Full contents of the `.p8` file (including BEGIN/END lines) | Open `.p8` in Notepad → Select All → Copy |
+| `APPSTORE_API_KEY_ID` | Key ID from App Store Connect Integrations page | Copy from portal |
+| `APPSTORE_ISSUER_ID` | Issuer ID from App Store Connect Integrations page | Copy from portal |
+| `TEAM_ID` | Apple Developer Team ID: `99D8WCTX5D` | From Membership details |
 
-> **Note on Windows**: If `openssl base64 -A` isn't available, use PowerShell:
->
-> ```powershell
-> [Convert]::ToBase64String([IO.File]::ReadAllBytes("ios_distribution.p12"))
-> ```
+> **Why no `P12_BASE64` secret?** OpenSSL 3.x on Windows creates `.p12` files with AES-256-CBC encryption that macOS can't import. Instead, the workflow takes the raw `.key` and `.pem` files as secrets and builds the `.p12` on the macOS runner where OpenSSL handles the conversion correctly.
 
-#### 3.6f Create GitHub Actions workflow
+#### 3.6f Create GitHub Actions workflow — Done
 
-Create `.github/workflows/ios-build.yml` in `segunak/charlotte-third-places`:
+Create `.github/workflows/ios-build.yml` in `segunak/charlotte-third-places`. The workflow builds the `.p12` on the macOS runner (to avoid OpenSSL 3.x Windows compatibility issues) and uses `upload-testflight-build@v3` (v4 has a [known bug](https://github.com/Apple-Actions/upload-testflight-build/issues/139) where iTMSTransporter is missing from GitHub's macOS runners since Xcode 14+).
 
-```yaml
-name: Build and Upload iOS App
-
-on:
-  workflow_dispatch: # Manual trigger
-
-jobs:
-  build:
-    runs-on: macos-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Install CocoaPods dependencies
-        run: |
-          cd ios/src
-          pod install
-
-      - name: Build and sign IPA
-        uses: yukiarrr/ios-build-action@v1.12.0
-        with:
-          project-path: "ios/src/Third Places.xcodeproj"
-          workspace-path: "ios/src/Third Places.xcworkspace"
-          p12-base64: ${{ secrets.P12_BASE64 }}
-          certificate-password: ${{ secrets.P12_PASSWORD }}
-          mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
-          code-signing-identity: "Apple Distribution"
-          team-id: ${{ secrets.TEAM_ID }}
-          export-method: app-store
-          scheme: "Third Places"
-          output-path: build/App.ipa
-
-      - name: Upload to App Store Connect
-        uses: apple-actions/upload-testflight-build@v4
-        with:
-          app-path: build/App.ipa
-          issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
-          api-key-id: ${{ secrets.APPSTORE_API_KEY_ID }}
-          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
-```
+See the actual workflow file at `.github/workflows/ios-build.yml` for the current implementation.
 
 #### 3.6g Run the workflow and test
 
@@ -550,14 +509,30 @@ jobs:
 4. Install **TestFlight** on your iPhone → accept the invite → test the app
 5. Verify: splash screen shows, pages load, offline mode works, tabs work, safe area looks right
 
-#### 3.6h Fill metadata and submit for review
+#### 3.6h Fill metadata and submit for review — Partially Done
 
-1. On [appstoreconnect.apple.com](https://appstoreconnect.apple.com/): go to your app
-2. Fill in the store listing: description, keywords, screenshots, 1024x1024 icon, category (Lifestyle), privacy policy URL
-3. Under **Build**, select the TestFlight build you just tested
-4. **Important**: In Signing & Capabilities, disable any capabilities the app doesn't use. Since push notifications are commented out, make sure that capability is not enabled. Apple can reject apps that declare capabilities they don't use.
-5. Click **Submit for Review**
-6. Review turnaround: typically 24-48 hours
+Metadata filled out on App Store Connect. Waiting for a successful build upload to attach and submit.
+
+**App Information settings used:**
+
+- **Category**: Primary: Lifestyle, Secondary: Food & Drink
+- **Age Rating**: 4+
+- **Content Rights**: No third-party content
+- **License Agreement**: Apple's Standard License Agreement
+- **App Encryption**: `ITSAppUsesNonExemptEncryption` set to `false` in Info.plist (no custom encryption)
+- **Digital Services Act**: Completed with Mersee LLC business info (required for EU distribution)
+
+**Version 1.0 metadata:**
+
+- **Screenshots**: 5 Apple-resized screenshots at 1242x2688 (`apple-home-mobile.png`, `apple-map-mobile.png`, `apple-chat-mobile.png`, `apple-contribute-mobile.png`, `apple-about-mobile.png`)
+- **Description**: Same as Google Play (see section 3.5c)
+- **Keywords**: `charlotte,third places,coffee shops,cafes,libraries,study spots,remote work,north carolina`
+- **Support URL**: `https://charlottethirdplaces.com/about`
+- **Marketing URL**: `https://charlottethirdplaces.com`
+- **Version**: `1.0`
+- **Copyright**: `2026 Mersee LLC`
+- **App Review Notes**: Description of features without mentioning PWA/PWABuilder — focuses on what the app does (offline support, map with geolocation, AI chat, filtering) and states no login required
+- **Release**: Automatically release after approval
 
 #### How this works without a Mac
 
