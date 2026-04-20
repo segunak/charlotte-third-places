@@ -1,12 +1,12 @@
 ---
 name: 'Theme Color Sync'
-description: 'Keep ThemeColorSync, globals.css --background, viewport.themeColor, and manifest theme_color consistent so the native iOS/Android status bar tint matches the web page background.'
-applyTo: 'charlotte-third-places/components/ThemeColorSync.tsx,charlotte-third-places/styles/globals.css,charlotte-third-places/app/manifest.webmanifest,charlotte-third-places/app/layout.tsx'
+description: 'Keep ThemeColorSync, globals.css --background, viewport.themeColor, manifest theme_color, and LaunchScreen.storyboard consistent so the native iOS/Android status bar tint matches the web page background.'
+applyTo: 'charlotte-third-places/components/ThemeColorSync.tsx,charlotte-third-places/styles/globals.css,charlotte-third-places/app/manifest.webmanifest,charlotte-third-places/app/layout.tsx,ios/src/Third Places/Base.lproj/LaunchScreen.storyboard'
 ---
 
 # Theme Color Synchronization
 
-The native iOS wrapper (`ios/src/Third Places/ViewController.swift`) uses KVO (Key-Value Observing — Apple's Foundation API that notifies observers when a property on an object changes) to watch `WKWebView.themeColor` and tints the status bar area to match the `<meta name="theme-color">` value emitted by the web app. Android TWA (Trusted Web Activity — Chrome's wrapper that lets a Progressive Web App run as a full-screen Android app) does the same. This means four web-side values **must stay in sync** with the `--background` CSS (Cascading Style Sheets) variable:
+The native iOS wrapper (`ios/src/Third Places/ViewController.swift`) uses KVO (Key-Value Observing — Apple's Foundation API that notifies observers when a property on an object changes) to watch `WKWebView.themeColor` and tints the status bar area to match the `<meta name="theme-color">` value emitted by the web app. Android TWA (Trusted Web Activity — Chrome's wrapper that lets a Progressive Web App run as a full-screen Android app) does the same. The iOS launch screen (`LaunchScreen.storyboard`) also uses the same background color so the splash-to-web transition is seamless. This means five values **must stay in sync** with the `--background` CSS (Cascading Style Sheets) variable:
 
 1. **`styles/globals.css`**
    - `:root { --background: ... }` (light theme)
@@ -18,6 +18,8 @@ The native iOS wrapper (`ios/src/Third Places/ViewController.swift`) uses KVO (K
    - `viewport.themeColor` = hex of light `--background` (SSR fallback)
 4. **`app/manifest.webmanifest`**
    - `theme_color` and `background_color` = hex of light `--background`
+5. **`ios/src/Third Places/Base.lproj/LaunchScreen.storyboard`**
+   - `<color key="backgroundColor" red="R" green="G" blue="B">` = RGB decimals of light `--background` (0.953, 0.980, 0.988 for `#F3FAFC`)
 
 ## Rules
 
