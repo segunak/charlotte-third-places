@@ -27,7 +27,7 @@
                                         <color key="backgroundColor" red="0" green="0.698" blue="0.839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-mU-n27" userLabel="Loading View">
-                                                <rect key="frame" x="95" y="322" width="200" height="200"/>
+                                                <rect key="frame" x="95" y="282" width="200" height="280"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                 <subviews>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LaunchIcon" translatesAutoresizingMaskIntoConstraints="NO" id="4oa-LZ-pgs">
@@ -37,7 +37,7 @@
                                                         <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
                                                     </imageView>
                                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.10000000000000001" id="xSD-dq-HF9">
-                                                        <rect key="frame" x="50" y="146" width="100" height="15"/>
+                                                        <rect key="frame" x="50" y="215" width="100" height="15"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                                         <color key="backgroundColor" systemColor="secondarySystemFillColor"/>
                                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
