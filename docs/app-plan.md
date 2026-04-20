@@ -2,6 +2,11 @@
 
 Turn the existing Next.js website into an iOS and Android app using PWA + PWABuilder. No custom native code required for the initial release.
 
+You must upload a screenshot for 13-inch iPad displays.
+You must enter a Privacy Policy URL in App Privacy.
+Before you can submit this app for review, an Admin must provide information about the app’s privacy practices in the App Privacy section. Learn More
+You must choose a price tier in Pricing.
+
 ## Approach
 
 Wrap the live website (`charlottethirdplaces.com`) in native app shells using PWABuilder. The website loads inside a WebView (iOS) or Trusted Web Activity (Android). All existing functionality — SSR, ISR, API routes, AI chat — continues working because the app loads the live URL.
