@@ -1,50 +1,102 @@
 ---
 name: 'Theme Color Sync'
-description: 'Keep runtime UI background in sync across ThemeColorSync, globals.css --background, viewport.themeColor, and manifest theme_color. Launch/splash backgrounds (LaunchScreen.storyboard, manifest background_color) use brand cyan and are intentionally decoupled.'
-applyTo: 'charlotte-third-places/components/ThemeColorSync.tsx,charlotte-third-places/styles/globals.css,charlotte-third-places/app/manifest.webmanifest,charlotte-third-places/app/layout.tsx,ios/src/Third Places/Base.lproj/LaunchScreen.storyboard'
+description: 'Keep runtime UI background in sync across ThemeColorSync, globals.css --background, viewport.themeColor, and manifest theme_color. Launch/splash backgrounds (LaunchScreen.storyboard, Main.storyboard, manifest background_color) use brand cyan and are intentionally decoupled.'
+applyTo: 'charlotte-third-places/components/ThemeColorSync.tsx,charlotte-third-places/styles/globals.css,charlotte-third-places/app/manifest.webmanifest,charlotte-third-places/app/layout.tsx,ios/src/Third Places/Base.lproj/LaunchScreen.storyboard,ios/src/Third Places/Base.lproj/Main.storyboard'
 ---
 
 # Theme Color Synchronization
 
 There are **two distinct color surfaces** that must be kept consistent across the web, iOS, and Android shells:
 
-1. **Runtime UI background** — the color behind the running web app. Drives the native status bar tint (iOS WKWebView KVO — Key-Value Observing — on `themeColor`; Android TWA — Trusted Web Activity — status bar). Must match the CSS `--background` variable so native chrome blends with the page.
-2. **Launch / splash background** — the color shown briefly at cold-start, before the WebView paints. On iOS this is `LaunchScreen.storyboard`; on Android TWA and PWA installs this is the manifest `background_color`. Intentionally set to the brand cyan (`#00b2d6`) so the iOS AppIcon-to-launch-screen zoom transition is seamless and Android splash is brand-consistent.
+1. **Runtime UI background** — the color behind the running web app. Drives the native status bar tint (iOS WKWebView KVO on `themeColor`; Android TWA status bar). Must match the CSS `--background` variable so native chrome blends with the page.
+2. **Launch / splash background** — the color shown briefly at cold-start before the WebView paints. On iOS this spans two storyboards plus the AppIcon zoom animation. On Android TWA and PWA installs this is the manifest `background_color`. Intentionally set to the brand cyan (`#00b2d6`) so the transition is seamless.
 
 These two surfaces are **decoupled on purpose**. Do not re-couple them.
+
+---
 
 ## Runtime UI background — keep these in sync
 
 Value: near-white `#F3FAFC` (light) / `#0B1F22` (dark).
 
-1. **`styles/globals.css`**
-   - `:root { --background: ... }` (light theme)
-   - `.dark { --background: ... }` (dark theme)
-2. **`components/ThemeColorSync.tsx`**
-   - `LIGHT_BG` constant = hex of light `--background`
-   - `DARK_BG` constant = hex of dark `--background`
-3. **`app/layout.tsx`**
-   - `viewport.themeColor` = hex of light `--background` (SSR — Server-Side Rendering — fallback)
-4. **`app/manifest.webmanifest`**
-   - `theme_color` = hex of light `--background` (NOT `background_color` — that's the splash color)
+1. **`styles/globals.css`** — `:root { --background: ... }` and `.dark { --background: ... }`
+2. **`components/ThemeColorSync.tsx`** — `LIGHT_BG` / `DARK_BG` constants
+3. **`app/layout.tsx`** — `viewport.themeColor` (SSR fallback)
+4. **`app/manifest.webmanifest`** — `theme_color` only (NOT `background_color`)
+
+---
 
 ## Launch / splash background — keep these in sync
 
-Value: brand cyan `#00b2d6` (RGB 0, 178, 214 → storyboard decimals 0, 0.698, 0.839). Matches the AppIcon background so the iOS icon-zoom flash blends into the launch screen.
+Value: brand cyan `#00b2d6` (RGB 0, 178, 214 → storyboard decimals `red="0" green="0.698" blue="0.839"`).
 
-1. **`ios/src/Third Places/Base.lproj/LaunchScreen.storyboard`**
-   - `<color key="backgroundColor" red="0" green="0.698" blue="0.839" ...>` = RGB decimals of `#00b2d6`
-2. **`app/manifest.webmanifest`**
-   - `background_color` = `#00b2d6` (Android TWA splash + PWA install splash)
+### Why this color?
+
+On iOS, when a user taps the app icon, the system plays an **icon-zoom animation** — the AppIcon expands from the home screen to fill the display, then the launch screen renders. If the launch screen background matches the AppIcon background color, the zoom-to-launch transition is invisible — no jarring color flash. The same cyan is used on Android TWA for brand consistency.
+
+### iOS cold-start sequence (5 layers)
+
+Understanding the full iOS startup sequence is critical for a seamless splash. There are **five visual layers** that render in order. All must use the same background color, or the user sees a color flash between steps.
+
+| Step | What renders | Where it's configured | Key detail |
+|------|-------------|----------------------|------------|
+| 1. **Icon zoom** | iOS system animation — AppIcon expands to fill screen | `AppIcon.appiconset` | System-controlled, cannot be changed at runtime |
+| 2. **LaunchScreen.storyboard** | Static launch screen shown by iOS before app code runs | `ios/.../Base.lproj/LaunchScreen.storyboard` | `backgroundColor` on the root view; `LaunchIcon` imageView centered at 200×200pt |
+| 3. **Main.storyboard root view** | The ViewController's root view, renders immediately when app code starts | `ios/.../Base.lproj/Main.storyboard` — `<color key="backgroundColor">` on view `id="8bC-Xf-vdC"` | Must NOT be `systemBackgroundColor` (white) — set to cyan explicitly |
+| 4. **Main.storyboard "Splash Background"** | Full-screen child view behind the loading UI | `ios/.../Base.lproj/Main.storyboard` — view `userLabel="Splash Background"` | Needs its own explicit `backgroundColor` — does NOT inherit from parent reliably |
+| 5. **Main.storyboard "Loading View"** | Centered box containing `LaunchIcon` image + progress bar, visible while WKWebView loads | `ios/.../Base.lproj/Main.storyboard` — view `userLabel="Loading View"` | Logo should match LaunchScreen size (200×200pt); progress bar positioned below logo |
+| 6. **Web page** | WKWebView finishes loading, `loadingView` is hidden, webview is shown | `ViewController.swift` `didFinish` handler | `view.backgroundColor` is updated via KVO to `themeColor` from the web page (near-white `#F3FAFC`) |
+
+**Critical lessons learned:**
+- The "Splash Background" view in Main.storyboard has **no default background color** — it inherits from its parent, which if set to `systemBackgroundColor` means white. Both the root view AND the Splash Background need explicit cyan.
+- The `LaunchIcon` imageView in Main.storyboard was originally 64×64pt while LaunchScreen uses 200×200pt. Mismatched sizes cause the logo to visibly shrink between steps 2→5. Keep them the same.
+- iOS storyboard `UIImageView` renders transparent PNG pixels as **white**, not as the parent view's background color. The `LaunchIcon` image (`main-logo.png`) must be **fully opaque** — flatten transparent areas by compositing onto a cyan `#00b2d6` canvas before adding to the asset catalog.
+- iOS aggressively caches launch screens. After changing `LaunchScreen.storyboard`, you may need to delete the app, reboot the device, and reinstall to see changes.
+
+### Files to update when changing the splash color
+
+| File | What to change |
+|------|---------------|
+| `ios/.../Base.lproj/LaunchScreen.storyboard` | `<color key="backgroundColor" red="R" green="G" blue="B">` on the root view |
+| `ios/.../Base.lproj/Main.storyboard` | `<color key="backgroundColor">` on **both** the root view (`id="8bC-Xf-vdC"`) AND the "Splash Background" view (`id="p0s-Fg-eGP"`) |
+| `ios/.../Assets.xcassets/LaunchIcon.imageset/main-logo.png` | Re-flatten: composite the source logo onto the new color as a solid canvas (PowerShell `System.Drawing` or equivalent). Must have zero transparency. |
+| `app/manifest.webmanifest` | `background_color` value |
+
+### Android TWA splash
+
+Android TWA reads `background_color` from `manifest.webmanifest` at **APK build time** and bakes it into `res/` drawables. Changing the manifest value only takes effect after:
+1. Merging to production and deploying via Vercel (so the live manifest is updated).
+2. Going to **Google Play Console → Setup → Deep links (or TWA setup) → Create patch** to trigger a rebuild that re-ingests the manifest.
+3. Rolling out the new version.
+
+There is no way to update the Android splash without a Play Console patch + rollout.
+
+---
 
 ## Rules
 
-- If you change `--background` in `globals.css`, update **all runtime-UI values** in the first section to the matching hex. A mismatch causes the native status bar area to be a different color than the web page background.
-- If you change the `LIGHT_BG` / `DARK_BG` constants in `ThemeColorSync.tsx`, update `--background` in `globals.css` and the other runtime-UI files to match.
-- **Never** set `theme_color` in the manifest to the splash cyan — it controls the running-app status bar, not the launch splash.
-- **Never** set `viewport.themeColor` to the primary/brand color — same reason.
-- Keep `LIGHT_BG` = hsl(190 60% 97%) ≈ `#F3FAFC` and `DARK_BG` = hsl(190 50% 9%) ≈ `#0B1F22` unless deliberately rebranding.
-- If you rebrand (change the AppIcon background / primary cyan), update **both splash values** (storyboard RGB decimals and manifest `background_color`) to the new hex.
-- The iOS launch screen image (`LaunchIcon.imageset`) uses `main-logo.png` (cyan square + white map-pin), not the detailed wordmark — the cyan square blends into the cyan launch background and only the pin shows.
-- Do **not** remove `<ThemeColorSync />` from `layout.tsx` — without it the meta tag stays frozen at the SSR value and the status bar won't update when the user toggles dark mode via the in-app theme switch (`next-themes` uses `attribute="class"` with `enableSystem={false}`, so OS `prefers-color-scheme` media queries do not apply here).
-- After changing `background_color` in `manifest.webmanifest`, the Android TWA splash only updates after a Play Console "Create patch" rollout that re-ingests the manifest.
+- If you change `--background` in `globals.css`, update **all runtime-UI values** to match. A mismatch causes the native status bar to be a different color than the web page.
+- **Never** set `theme_color` in the manifest or `viewport.themeColor` to the splash/brand cyan — those control the running-app status bar, not the splash.
+- Keep `LIGHT_BG` = `#F3FAFC` and `DARK_BG` = `#0B1F22` unless deliberately rebranding.
+- If rebranding (changing the AppIcon background / primary cyan), update **all splash files** listed above, re-flatten the `main-logo.png`, and trigger both an iOS build and an Android Play Console patch.
+- The iOS `LaunchIcon.imageset` must use `main-logo.png` (the opaque, cyan-background map-pin logo). On a cyan background the square edges are invisible; only the white pin shows.
+- Do **not** remove `<ThemeColorSync />` from `layout.tsx` — without it the meta tag stays frozen at the SSR value and the status bar won't update on theme toggle (`next-themes` uses `attribute="class"` with `enableSystem={false}`).
+
+---
+
+## Deployment checklist for splash changes
+
+### iOS
+- [ ] Edit `LaunchScreen.storyboard` backgroundColor
+- [ ] Edit `Main.storyboard` — root view backgroundColor AND "Splash Background" backgroundColor
+- [ ] Re-flatten `main-logo.png` if the splash color changed
+- [ ] Commit and push → GitHub Actions builds a new `.ipa`
+- [ ] New TestFlight build appears → install and test (may need delete + reboot + reinstall due to iOS launch screen caching)
+- [ ] Promote to App Store release
+
+### Android
+- [ ] Update `background_color` in `manifest.webmanifest`
+- [ ] Merge to master → Vercel deploys to production
+- [ ] Verify the live manifest at `https://www.charlottethirdplaces.com/manifest.webmanifest`
+- [ ] Google Play Console → Setup → Deep links → **Create patch**
+- [ ] Roll out new version via Play Console
