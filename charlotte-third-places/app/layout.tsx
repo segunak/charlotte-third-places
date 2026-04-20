@@ -8,6 +8,7 @@ import { SiteFooter } from "@/components/SiteFooter"
 import { VercelToolbar } from '@vercel/toolbar/next'
 import { ModalProvider } from "@/contexts/ModalContext";
 import { ThemeProvider } from "@/components/ThemeProvider"
+import { ThemeColorSync } from "@/components/ThemeColorSync"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GoogleTagManager } from '@next/third-parties/google'
 import { MobileNavigation } from "@/components/MobileNavigation"
@@ -77,7 +78,9 @@ interface RootLayoutProps {
 }
 
 export const viewport: Viewport = {
-  themeColor: '#00b2d6',
+  // Matches --background in light mode (hsl(190 60% 97%)). The ThemeColorSync
+  // client component updates this at runtime when the user toggles dark mode.
+  themeColor: '#F3FAFC',
   viewportFit: 'cover',
 }
 
@@ -98,6 +101,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       >
         <SerwistProvider swUrl="/serwist/sw.js">
           <ThemeProvider>
+            <ThemeColorSync />
             <ModalProvider>
               <div className="flex flex-col min-h-dvh">
                 <SiteHeader />
