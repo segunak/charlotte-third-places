@@ -47,6 +47,15 @@
 * Implement responsive design mobile-first with Tailwind CSS
 * Use semantic HTML and proper accessibility attributes
 
+### Icons
+
+* **ALL icons must go through `components/Icons.tsx`.** Never import directly from `lucide-react`, `react-icons/*`, `@radix-ui/react-icons`, or any other icon library in feature components.
+* To add a new icon:
+  1. Import it into `components/Icons.tsx` from its source library
+  2. Add it as a property on the exported `Icons` object (camelCase key)
+  3. In the consuming component, `import { Icons } from "@/components/Icons"` and render it as `<Icons.myIcon className="..." />`
+* This keeps icon dependencies centralized, makes swaps trivial, and ensures consistent sizing/styling props across the app.
+
 ### Naming Conventions
 
 * Components: PascalCase (e.g., `PlaceCard.tsx`)
