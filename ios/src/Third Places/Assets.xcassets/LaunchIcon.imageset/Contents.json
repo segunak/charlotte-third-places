@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "blue-background-logo.png",
+      "filename" : "detailed-logo.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "blue-background-logo.png",
+      "filename" : "detailed-logo.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "blue-background-logo.png",
+      "filename" : "detailed-logo.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
