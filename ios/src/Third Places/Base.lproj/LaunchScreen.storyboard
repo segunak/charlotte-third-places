@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" image="LaunchIcon" id="I2s-HW-Q4d">
-                                <rect key="frame" x="127" y="368" width="160" height="160"/>
+                                <rect key="frame" x="107" y="348" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="w-con"/>
-                                    <constraint firstAttribute="height" constant="160" id="h-con"/>
+                                    <constraint firstAttribute="width" constant="200" id="w-con"/>
+                                    <constraint firstAttribute="height" constant="200" id="h-con"/>
                                 </constraints>
                             </imageView>
                         </subviews>
