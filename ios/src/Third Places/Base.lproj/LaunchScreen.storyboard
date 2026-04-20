@@ -17,17 +17,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" image="LaunchIcon" id="I2s-HW-Q4d" clipsSubviews="YES">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" image="AppIcon" id="I2s-HW-Q4d">
+                                <rect key="frame" x="127" y="368" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="w-con"/>
+                                    <constraint firstAttribute="height" constant="160" id="h-con"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XpK-Bq-A7U"/>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="top" secondItem="4mO-e4-REQ" secondAttribute="top" id="top-con"/>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="bottom" secondItem="4mO-e4-REQ" secondAttribute="bottom" id="bot-con"/>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="leading" secondItem="4mO-e4-REQ" secondAttribute="leading" id="lead-con"/>
-                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="trailing" secondItem="4mO-e4-REQ" secondAttribute="trailing" id="trail-con"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="centerX" secondItem="4mO-e4-REQ" secondAttribute="centerX" id="cx-con"/>
+                            <constraint firstItem="I2s-HW-Q4d" firstAttribute="centerY" secondItem="4mO-e4-REQ" secondAttribute="centerY" id="cy-con"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -37,6 +39,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchIcon" width="1080" height="1920"/>
+        <image name="AppIcon" width="512" height="512"/>
     </resources>
 </document>
