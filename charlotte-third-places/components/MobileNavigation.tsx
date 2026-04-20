@@ -57,7 +57,7 @@ export function MobileNavigation() {
 
   // In native app mode, use a smaller fixed bottom padding (8px) instead of
   // env(safe-area-inset-bottom) which is too generous in WKWebView/TWA context.
-  const bottomPadding = isNativeApp ? 'pb-2' : 'pb-safe';
+  const bottomPadding = isNativeApp ? 'pb-5' : 'pb-safe';
 
   return (
     <>
