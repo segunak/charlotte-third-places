@@ -16,6 +16,11 @@ jobs:
           cd ios/src
           pod install
 
+      - name: Set build number from run number
+        run: |
+          sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*/CURRENT_PROJECT_VERSION = ${{ github.run_number }}/g" "ios/src/Third Places.xcodeproj/project.pbxproj"
+          echo "Build number set to ${{ github.run_number }}"
+
       - name: Create .p12 from key and certificate
         run: |
           echo "${{ secrets.IOS_DISTRIBUTION_KEY_BASE64 }}" | base64 --decode > ios_distribution.key

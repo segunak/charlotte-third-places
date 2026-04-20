@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Icons } from "@/components/Icons";
 import { usePathname } from 'next/navigation';
@@ -7,6 +8,14 @@ import { usePathname } from 'next/navigation';
 export function MobileNavigation() {
   const pathname = usePathname();
   const iconClass = "h-5 w-5";
+
+  // In standalone mode (PWA installed or native iOS/Android wrapper), the native
+  // container already handles the safe area inset for the home indicator. Adding
+  // pb-safe on top of that creates a visible gap. Only apply pb-safe in browser mode.
+  const [isStandalone, setIsStandalone] = useState(false);
+  useEffect(() => {
+    setIsStandalone(window.matchMedia('(display-mode: standalone)').matches);
+  }, []);
 
   const navItems = [
     {
@@ -43,7 +52,7 @@ export function MobileNavigation() {
 
   return (
     <>
-      <nav className="sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-50 pb-safe">
+      <nav className={`sm:hidden fixed bottom-0 left-0 right-0 bg-background border-t border-border z-50 ${isStandalone ? '' : 'pb-safe'}`}>
         <div className="grid grid-cols-5 h-14">
           {navItems.map((item) => (
             <Link href={item.href} key={item.href} className="flex flex-col items-center justify-center">
@@ -57,7 +66,7 @@ export function MobileNavigation() {
           ))}
         </div>
       </nav>
-      <div className="sm:hidden h-14 pb-safe" aria-hidden="true" />
+      <div className={`sm:hidden h-14 ${isStandalone ? '' : 'pb-safe'}`} aria-hidden="true" />
     </>
   );
 }

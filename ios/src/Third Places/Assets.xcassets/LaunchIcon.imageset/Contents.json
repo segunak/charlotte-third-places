@@ -2,7 +2,18 @@
   "images" : [
     {
       "filename" : "splash.png",
-      "idiom" : "universal"
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "splash.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "splash.png",
+      "idiom" : "universal",
+      "scale" : "3x"
     }
   ],
   "info" : {
@@ -10,6 +21,7 @@
     "version" : 1
   },
   "properties" : {
-    "compression-type" : "automatic"
+    "compression-type" : "automatic",
+    "preserves-vector-representation" : true
   }
 }
