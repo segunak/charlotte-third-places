@@ -14,12 +14,21 @@ jobs:
           cd ios/src
           pod install
 
+      - name: Create .p12 from key and certificate
+        run: |
+          echo "${{ secrets.IOS_DISTRIBUTION_KEY_BASE64 }}" | base64 --decode > ios_distribution.key
+          echo "${{ secrets.IOS_DISTRIBUTION_PEM_BASE64 }}" | base64 --decode > ios_distribution.pem
+          openssl pkcs12 -export -out ios_distribution.p12 -inkey ios_distribution.key -in ios_distribution.pem -passout pass:${{ secrets.P12_PASSWORD }}
+          P12_BASE64=$(base64 -i ios_distribution.p12)
+          echo "P12_BASE64=$P12_BASE64" >> $GITHUB_ENV
+          rm ios_distribution.key ios_distribution.pem
+
       - name: Build and sign IPA
         uses: yukiarrr/ios-build-action@v1.12.0
         with:
           project-path: "ios/src/Third Places.xcodeproj"
           workspace-path: "ios/src/Third Places.xcworkspace"
-          p12-base64: ${{ secrets.P12_BASE64 }}
+          p12-base64: ${{ env.P12_BASE64 }}
           certificate-password: ${{ secrets.P12_PASSWORD }}
           mobileprovision-base64: ${{ secrets.MOBILEPROVISION_BASE64 }}
           code-signing-identity: "Apple Distribution"
