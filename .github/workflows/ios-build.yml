@@ -38,7 +38,7 @@ jobs:
           output-path: build/App.ipa
 
       - name: Upload to App Store Connect
-        uses: apple-actions/upload-testflight-build@v4
+        uses: apple-actions/upload-testflight-build@v3
         with:
           app-path: build/App.ipa
           issuer-id: ${{ secrets.APPSTORE_ISSUER_ID }}
