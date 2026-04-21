@@ -24,7 +24,6 @@
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p0s-Fg-eGP" userLabel="Splash Background">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" red="0" green="0.698" blue="0.839" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DIO-mU-n27" userLabel="Loading View">
                                                 <rect key="frame" x="95" y="282" width="200" height="280"/>
