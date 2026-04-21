@@ -42,13 +42,14 @@ Understanding the full iOS startup sequence is critical for a seamless splash. T
 |------|-------------|----------------------|------------|
 | 1. **Icon zoom** | iOS system animation — AppIcon expands to fill screen | `AppIcon.appiconset` | System-controlled, cannot be changed at runtime |
 | 2. **LaunchScreen.storyboard** | Static launch screen shown by iOS before app code runs | `ios/.../Base.lproj/LaunchScreen.storyboard` | `backgroundColor` on the root view; `LaunchIcon` imageView centered at 200×200pt |
-| 3. **Main.storyboard root view** | The ViewController's root view, renders immediately when app code starts | `ios/.../Base.lproj/Main.storyboard` — `<color key="backgroundColor">` on view `id="8bC-Xf-vdC"` | Must NOT be `systemBackgroundColor` (white) — set to cyan explicitly |
-| 4. **Main.storyboard "Splash Background"** | Full-screen child view behind the loading UI | `ios/.../Base.lproj/Main.storyboard` — view `userLabel="Splash Background"` | Needs its own explicit `backgroundColor` — does NOT inherit from parent reliably |
+| 3. **Main.storyboard root view** | The ViewController's root view, renders immediately when app code starts | `ios/.../Base.lproj/Main.storyboard` — `<color key="backgroundColor">` on view `id="8bC-Xf-vdC"` | Set to cyan explicitly (NOT `systemBackgroundColor`). KVO updates this at runtime to `themeColor` from the web page, so it adapts to light/dark mode. |
+| 4. **Main.storyboard "Splash Background"** | Full-screen child view behind the loading UI | `ios/.../Base.lproj/Main.storyboard` — view `userLabel="Splash Background"` | Must have **NO explicit backgroundColor** (transparent). This view is never hidden, so if it has an opaque color it permanently paints over the root view and blocks KVO theme updates (causing a stuck status bar color). Transparent = shows root view = KVO works. |
 | 5. **Main.storyboard "Loading View"** | Centered box containing `LaunchIcon` image + progress bar, visible while WKWebView loads | `ios/.../Base.lproj/Main.storyboard` — view `userLabel="Loading View"` | Logo should match LaunchScreen size (200×200pt); progress bar positioned below logo |
 | 6. **Web page** | WKWebView finishes loading, `loadingView` is hidden, webview is shown | `ViewController.swift` `didFinish` handler | `view.backgroundColor` is updated via KVO to `themeColor` from the web page (near-white `#F3FAFC`) |
 
 **Critical lessons learned:**
-- The "Splash Background" view in Main.storyboard has **no default background color** — it inherits from its parent, which if set to `systemBackgroundColor` means white. Both the root view AND the Splash Background need explicit cyan.
+- The "Splash Background" view in Main.storyboard must be **transparent** (no explicit `backgroundColor`). It is never hidden at runtime — only its child "Loading View" is hidden when the page loads. If Splash Background has an opaque color, it permanently covers the root view in the status bar gap area, blocking KVO-driven theme updates. Transparent = inherits from root view = KVO works for light/dark mode.
+- The **root view** (`id="8bC-Xf-vdC"`) must have an explicit cyan color (not `systemBackgroundColor` which is white). This provides the cyan during splash. After the page loads, KVO sets `view.backgroundColor = themeColor`, overriding the cyan with whatever color the web app emits (near-white for light, dark for dark mode).
 - The `LaunchIcon` imageView in Main.storyboard was originally 64×64pt while LaunchScreen uses 200×200pt. Mismatched sizes cause the logo to visibly shrink between steps 2→5. Keep them the same.
 - iOS storyboard `UIImageView` renders transparent PNG pixels as **white**, not as the parent view's background color. The `LaunchIcon` image (`main-logo.png`) must be **fully opaque** — flatten transparent areas by compositing onto a cyan `#00b2d6` canvas before adding to the asset catalog.
 - iOS aggressively caches launch screens. After changing `LaunchScreen.storyboard`, you may need to delete the app, reboot the device, and reinstall to see changes.
@@ -58,7 +59,7 @@ Understanding the full iOS startup sequence is critical for a seamless splash. T
 | File | What to change |
 |------|---------------|
 | `ios/.../Base.lproj/LaunchScreen.storyboard` | `<color key="backgroundColor" red="R" green="G" blue="B">` on the root view |
-| `ios/.../Base.lproj/Main.storyboard` | `<color key="backgroundColor">` on **both** the root view (`id="8bC-Xf-vdC"`) AND the "Splash Background" view (`id="p0s-Fg-eGP"`) |
+| `ios/.../Base.lproj/Main.storyboard` | `<color key="backgroundColor">` on the root view (`id="8bC-Xf-vdC"`) only. Do NOT add a color to "Splash Background" (`id="p0s-Fg-eGP"`) — it must stay transparent for KVO theme updates to work. |
 | `ios/.../Assets.xcassets/LaunchIcon.imageset/main-logo.png` | Re-flatten: composite the source logo onto the new color as a solid canvas (PowerShell `System.Drawing` or equivalent). Must have zero transparency. |
 | `app/manifest.webmanifest` | `background_color` value |
 
