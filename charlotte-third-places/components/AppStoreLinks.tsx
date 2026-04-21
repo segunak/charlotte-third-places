@@ -6,7 +6,11 @@ import { Icons } from "@/components/Icons"
 const APP_STORE_URL = "https://apps.apple.com/app/id6762573563"
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app"
 
-export function AppStoreLinks() {
+interface AppStoreLinksProps {
+    className?: string
+}
+
+export function AppStoreLinks({ className }: AppStoreLinksProps) {
     const [isNativeApp, setIsNativeApp] = useState(false)
 
     useEffect(() => {
@@ -20,13 +24,17 @@ export function AppStoreLinks() {
     // Don't show app store links inside the native apps
     if (isNativeApp) return null
 
+    const hasCustomLayout = Boolean(className)
+    const anchorClass = hasCustomLayout ? "block w-full" : undefined
+    const badgeClass = hasCustomLayout ? "w-full h-auto" : "h-10 w-auto sm:h-12"
+
     return (
-        <div className="flex flex-wrap items-center justify-center gap-4">
-            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer">
-                <Icons.appleAppStoreBadge className="h-10 w-auto sm:h-12" />
+        <div className={className ?? "flex flex-wrap items-center justify-center gap-4"}>
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={anchorClass}>
+                <Icons.appleAppStoreBadge className={badgeClass} />
             </a>
-            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer">
-                <Icons.googlePlayStoreBadge className="h-10 w-auto sm:h-12" />
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className={anchorClass}>
+                <Icons.googlePlayStoreBadge className={badgeClass} />
             </a>
         </div>
     )

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { FilterProvider, usePlaces } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Icons } from "@/components/Icons";
+import { AppStoreLinks } from "@/components/AppStoreLinks";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
@@ -145,6 +146,16 @@ function HomePageContent() {
                         <Icons.list className="text-primary-foreground text-xl mb-1" />
                         <span className="text-primary-foreground font-semibold text-sm">Browse</span>
                     </Button>
+                </div>
+
+                {/* Mobile-only Get the App */}
+                <div className="sm:hidden">
+                    <Separator className="mb-4" />
+                    <div className="text-2xl font-bold mb-2">Get the App</div>
+                    <p className="text-pretty mb-4">
+                        Take Charlotte's third places with you.
+                    </p>
+                    <AppStoreLinks className="grid grid-cols-2 gap-3" />
                 </div>
 
                 <Separator />
