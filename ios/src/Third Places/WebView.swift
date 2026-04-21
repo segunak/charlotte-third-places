@@ -158,9 +158,29 @@ extension ViewController: WKUIDelegate, WKDownloadDelegate {
 
 
                 if ["http", "https"].contains(requestUrl.scheme?.lowercased() ?? "") {
-                    // Can open with SFSafariViewController
-                    let safariViewController = SFSafariViewController(url: requestUrl)
-                    self.present(safariViewController, animated: true, completion: nil)
+                    // Map URLs open in native apps (Apple Maps, Google Maps) via Universal Links.
+                    // UIApplication.shared.open() triggers Universal Link handling, launching the
+                    // native app if installed or falling back to Safari outside the app.
+                    //
+                    // Google Maps Universal Links (per official docs) match:
+                    //   maps.google.{TLD}/           — e.g. maps.google.com, maps.google.co.uk
+                    //   (www.)?google.{TLD}/maps/    — e.g. google.com/maps, www.google.de/maps
+                    //   goo.gl/maps/                 — legacy short links
+                    //   maps.app.goo.gl/             — newer share links
+                    // Apple Maps: maps.apple.com only (no TLD variants)
+                    let host = requestUrl.host?.lowercased() ?? ""
+                    let path = requestUrl.path.lowercased()
+                    let isMapUrl = host.hasPrefix("maps.google.")                        // maps.google.{any TLD}
+                        || host == "maps.apple.com"                                      // Apple Maps
+                        || (host.contains("google.") && path.hasPrefix("/maps"))         // (www.)google.{TLD}/maps
+                        || host == "maps.app.goo.gl"                                     // newer share links
+                        || (host == "goo.gl" && path.hasPrefix("/maps"))                 // legacy goo.gl/maps/...
+                    if isMapUrl {
+                        UIApplication.shared.open(requestUrl)
+                    } else {
+                        let safariViewController = SFSafariViewController(url: requestUrl)
+                        self.present(safariViewController, animated: true, completion: nil)
+                    }
                 } else {
                     // Scheme is not supported or no scheme is given, use openURL
                     if (UIApplication.shared.canOpenURL(requestUrl)) {
