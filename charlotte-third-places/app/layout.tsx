@@ -90,6 +90,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <html lang="en" suppressHydrationWarning className={fontSans.className}>
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-itunes-app" content="app-id=6762573563" />
       </head>
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body
