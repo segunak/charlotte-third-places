@@ -149,10 +149,10 @@ function HomePageContent() {
                 </div>
 
                 {/* Mobile-only Get the App */}
-                <div className="sm:hidden">
-                    <Separator className="mb-4" />
-                    <div className="text-2xl font-bold mb-2">Get the App</div>
-                    <p className="text-pretty mb-4">
+                <div className="sm:hidden space-y-4">
+                    <Separator />
+                    <div className="text-2xl font-bold">Get the App</div>
+                    <p className="text-pretty">
                         Take Charlotte's third places with you.
                     </p>
                     <AppStoreLinks className="grid grid-cols-2 gap-3" />

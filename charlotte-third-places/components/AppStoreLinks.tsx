@@ -31,10 +31,10 @@ export function AppStoreLinks({ className }: AppStoreLinksProps) {
     return (
         <div className={className ?? "flex flex-wrap items-center justify-center gap-4"}>
             <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" className={anchorClass}>
-                <Icons.appleAppStoreBadge className={badgeClass} />
+                <Icons.appleAppStoreBadge className={`${badgeClass} text-secondary`} />
             </a>
             <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" className={anchorClass}>
-                <Icons.googlePlayStoreBadge className={badgeClass} />
+                <Icons.googlePlayStoreBadge className={`${badgeClass} text-primary`} />
             </a>
         </div>
     )
