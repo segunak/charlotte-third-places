@@ -62,7 +62,6 @@ import {
   FaComment,
   FaCross,
   FaCoffee,
-  FaShoppingCart,
   FaBeer,
   FaIceCream,
   FaCocktail,
@@ -87,7 +86,8 @@ import {
   FaCrown,
   FaCommentAlt,
   FaClock,
-  FaGem
+  FaGem,
+  FaShoppingCart
 } from "react-icons/fa";
 import {
   SiApplearcade
