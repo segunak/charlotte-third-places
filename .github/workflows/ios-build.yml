@@ -16,8 +16,14 @@ jobs:
           cd ios/src
           pod install
 
-      - name: Set build number from run number
+      - name: Set version and build number
         run: |
+          # Marketing version: CalVer date format (always higher than any previous release)
+          MARKETING_VERSION=$(date -u +"%Y.%-m.%-d")
+          sed -i '' "s/MARKETING_VERSION = [^;]*/MARKETING_VERSION = $MARKETING_VERSION/g" "ios/src/Third Places.xcodeproj/project.pbxproj"
+          echo "Marketing version set to $MARKETING_VERSION"
+
+          # Build number: monotonically increasing run number
           sed -i '' "s/CURRENT_PROJECT_VERSION = [0-9]*/CURRENT_PROJECT_VERSION = ${{ github.run_number }}/g" "ios/src/Third Places.xcodeproj/project.pbxproj"
           echo "Build number set to ${{ github.run_number }}"
 
