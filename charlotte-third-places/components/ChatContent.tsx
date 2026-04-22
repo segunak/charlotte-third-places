@@ -243,7 +243,7 @@ export function ChatContent({
                                 <Message key={message.id} from={message.role}>
                                     <MessageContent>
                                         {message.role === "assistant" ? (
-                                            <MessageResponse>{textContent}</MessageResponse>
+                                            <MessageResponse linkSafety={{ enabled: false }}>{textContent}</MessageResponse>
                                         ) : (
                                             textContent
                                         )}
