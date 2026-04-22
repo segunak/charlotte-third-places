@@ -202,6 +202,23 @@
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+/*
+  Hides "Get the App" promotional UI inside native app wrappers and installed PWAs.
+  - `display-mode: standalone` matches Android TWAs and installed PWAs (fires before paint, no JS needed).
+  - `html[data-native-app]` is set by an inline script in app/layout.tsx for iOS WKWebView
+    (detected via the "app-platform" cookie) and iOS Safari home-screen PWAs (navigator.standalone).
+  Together these eliminate the brief flash the client-only useIsNativeApp hook cannot prevent.
+*/
+@media (display-mode: standalone) {
+  .hide-in-native-app {
+    display: none !important;
+  }
+}
+
+html[data-native-app] .hide-in-native-app {
+  display: none !important;
+}
+
 @layer utilities {
   .custom-link {
     @apply text-primary hover:text-secondary underline underline-offset-4;

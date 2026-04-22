@@ -2,10 +2,7 @@
 
 Turn the existing Next.js website into an iOS and Android app using PWA + PWABuilder. No custom native code required for the initial release.
 
-You must upload a screenshot for 13-inch iPad displays.
-You must enter a Privacy Policy URL in App Privacy.
-Before you can submit this app for review, an Admin must provide information about the app’s privacy practices in the App Privacy section. Learn More
-You must choose a price tier in Pricing.
+**Status**: Both apps are live. iOS on the [Apple App Store](https://apps.apple.com/app/id6762573563), Android on [Google Play](https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app).
 
 ## Approach
 
@@ -67,8 +64,6 @@ Prepare these text assets now so they're ready at submission time.
 
 Both Apple and Google **require** a privacy policy URL before you can submit. This is handled via Termly (paid plan, auto-updates with law changes).
 
-**TODO**: Update Termly policies to reflect the new business name. Log in to [Termly Dashboard](https://app.termly.io/) and update the company/business name across all three policies before submitting to either store.
-
 | Policy | URL |
 | --- | --- |
 | Privacy Policy | [View](https://app.termly.io/policy-viewer/policy.html?policyUUID=4af666ad-5f20-42ae-96d3-0b587717c6f6) |
@@ -80,7 +75,7 @@ Use the Privacy Policy URL for:
 - Google Play Console → App content → Privacy policy
 - App Store Connect → App Information → Privacy Policy URL
 
-### 1.5 Set up legal policy URLs — TODO
+### 1.5 Set up legal policy URLs — Done
 
 Create branded URLs on the site so legal policies live under our domain instead of raw Termly links.
 
@@ -271,19 +266,19 @@ Done. Screenshots are in `public/screenshots/` with mobile and desktop variants 
 | App name | `Charlotte Third Places` | Full name, matches manifest `name` |
 | Short name | `Third Places` | Matches manifest `short_name`, fits under home screen icon |
 | Include source code | Disable | Don't need the Android Studio project — just the AAB |
-| Host | `charlottethirdplaces.com` | Bare domain, no `www.` prefix |
+| Host | `www.charlottethirdplaces.com` | Must use `www` — internal links use `www`, and Chrome TWA verifies against the host the page actually loads on. v1 used bare domain which caused a URL bar to appear. |
 | Start URL | `/` | Default, correct |
-| Manifest URL | `https://charlottethirdplaces.com/manifest.webmanifest` | Bare domain to match host |
-| Icon URL | `https://charlottethirdplaces.com/favicons/web-app-manifest-512x512.png` | Bare domain to match host |
-| Maskable icon URL | `https://charlottethirdplaces.com/favicons/web-app-manifest-512x512.png` | Manifest declares these icons as `"purpose": "any maskable"` |
+| Manifest URL | `https://www.charlottethirdplaces.com/manifest.webmanifest` | Uses `www` to match host |
+| Icon URL | `https://www.charlottethirdplaces.com/favicons/web-app-manifest-512x512.png` | Uses `www` to match host |
+| Maskable icon URL | `https://www.charlottethirdplaces.com/favicons/web-app-manifest-maskable-512x512.png` | Dedicated maskable icon with safe-area padding |
 | Monochrome icon URL | *(blank)* | No monochrome icon exists in the manifest — the default path doesn't resolve |
 
 **Versioning**
 
 | Field | Value | Notes |
 | --- | --- | --- |
-| Version | `1.0.0.0` | Initial release |
-| Version code | `1` | Increment for each new upload to Google Play |
+| Version | `2.0.0.0` | v2 — rebuilt with `www` host to fix TWA URL bar |
+| Version code | `2` | Incremented from v1 |
 
 **Colors**
 
@@ -291,7 +286,7 @@ Done. Screenshots are in `public/screenshots/` with mobile and desktop variants 
 | --- | --- | --- |
 | Theme color | `#ffffff` | Matches manifest `theme_color` |
 | Theme dark color | `#0d2629` | Derived from dark theme `--background: 190 50% 9%` in globals.css |
-| Background color | `#ffffff` | Matches manifest `background_color`, controls splash screen |
+| Background color | `#F3FAFC` | Matches manifest `background_color`, controls splash screen |
 | Nav color | `#ffffff` | Bottom nav bar in light mode |
 | Nav dark color | `#0d2629` | Bottom nav bar in dark mode |
 | Nav divider color | `#ffffff` | Invisible divider in light mode |
@@ -313,7 +308,7 @@ Done. Screenshots are in `public/screenshots/` with mobile and desktop variants 
 
 | Field | Value | Notes |
 | --- | --- | --- |
-| Signing key | New | Let PWABuilder generate a keystore. Save `signing.keystore` and `signing-key-info.txt` from the zip |
+| Signing key | Use mine | Reuse the existing `signing.keystore` from v1 so fingerprints stay the same and `assetlinks.json` doesn't need updating |
 | Key alias | `my-key-alias` | Default |
 | Key full name | `Mersee LLC` | Legal entity behind the developer accounts |
 | Key organization | `Mersee LLC` | Legal entity, not the DBA ("Charlotte Third Places" is the brand/app name) |
@@ -514,9 +509,9 @@ See the actual workflow file at `.github/workflows/ios-build.yml` for the curren
 4. Install **TestFlight** on your iPhone → accept the invite → test the app
 5. Verify: splash screen shows, pages load, offline mode works, tabs work, safe area looks right
 
-#### 3.6h Fill metadata and submit for review — Partially Done
+#### 3.6h Fill metadata and submit for review — Done
 
-Metadata filled out on App Store Connect. Waiting for a successful build upload to attach and submit.
+App approved and live on the App Store as of April 2026.
 
 **App Information settings used:**
 
@@ -593,34 +588,22 @@ Metadata filled out on App Store Connect. Waiting for a successful build upload 
 - Apple Developer Portal: [https://developer.apple.com/account/](https://developer.apple.com/account/)
 - Favicon generator (used for icons): [https://realfavicongenerator.net/](https://realfavicongenerator.net/)
 
-## After the Apps Are Live
+## After the Apps Are Live — Done
 
-Follow-up tasks to do once both apps are published on the stores.
+All post-launch tasks completed:
 
-1. **Add `itunes` metadata to `layout.tsx`** — shows a native "Get the app" smart banner at the top of iOS Safari when users visit the website. Requires the App Store ID (available after the iOS app is approved).
+1. **iOS Smart App Banner** — Done. `<meta name="apple-itunes-app" content="app-id=6762573563" />` added to `layout.tsx`. Shows a native "Get the app" banner in iOS Safari.
 
-    ```ts
-    itunes: { appId: 'YOUR_APP_STORE_ID' },
-    ```
+2. **`appLinks` metadata** — Done. Added to `layout.tsx` metadata export with iOS `app_store_id: '6762573563'`, Android `package: 'com.charlottethirdplaces.app'`, and web fallback.
 
-2. **Add `appLinks` metadata to `layout.tsx`** — tells Facebook, Twitter, and other social crawlers about the native apps so they can deep-link to them instead of the website.
+3. **`category` metadata** — Done. `category: 'lifestyle'` added to `layout.tsx` metadata export.
 
-   ```ts
-   appLinks: {
-     ios: { url: 'https://charlottethirdplaces.com', app_store_id: 'YOUR_APP_STORE_ID' },
-     android: { package: 'com.charlottethirdplaces.app', app_name: 'Charlotte Third Places' },
-     web: { url: 'https://charlottethirdplaces.com', should_fallback: true },
-   },
-   ```
+4. **`manifest.webmanifest`** — `prefer_related_applications: true` and `related_applications` array configured with both App Store and Google Play entries.
 
-3. **Add `category` metadata to `layout.tsx`** — sets the `<meta name="category">` tag for search engine categorization.
-
-   ```ts
-   category: 'lifestyle',
-   ```
+5. **Native app detection** — `useIsNativeApp` hook hides "Get the App" promotional sections (home page and about page) when the user is already inside the iOS or Android app.
 
 ---
 
-## If Apple Rejects
+## Apple Approval Notes
 
-If Apple rejects under Guideline 4.2, the next step is adding native push notifications to the Swift wrapper via Firebase Cloud Messaging (FCM). This requires a Firebase account (free) and modifications to the PWABuilder-generated Swift project. The notification content would be "Check out this week's featured places" — leveraging the existing `featured` boolean on places in Airtable. This is documented separately if needed.
+Apple approved the app without requiring push notifications or additional native functionality. The combination of offline support (Serwist service worker), real content (400+ places with map, AI chat, filtering), and a branded splash screen was sufficient to pass Guideline 4.2 review. Firebase push notification scaffolding remains commented out in the iOS project (`ios/src/`) if ever needed for future features.
