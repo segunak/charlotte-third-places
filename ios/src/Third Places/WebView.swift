@@ -177,10 +177,46 @@ extension ViewController: WKUIDelegate, WKDownloadDelegate {
                         || (host == "goo.gl" && path.hasPrefix("/maps"))                 // legacy goo.gl/maps/...
                     if isMapUrl {
                         UIApplication.shared.open(requestUrl)
-                    } else {
-                        let safariViewController = SFSafariViewController(url: requestUrl)
-                        self.present(safariViewController, animated: true, completion: nil)
+                        return
                     }
+
+                    // Social media URLs are opened via Universal Links so iOS launches the
+                    // native app (TikTok, YouTube, Instagram, etc.) when installed. If the
+                    // app is not installed, .universalLinksOnly fails and we fall back to
+                    // SFSafariViewController (in-app browser), matching current behavior.
+                    //
+                    // Domain matching uses exact equality or .hasSuffix(".domain") to avoid
+                    // false positives on unrelated domains (e.g. "nottiktok.com").
+                    let socialMediaDomains = [
+                        "tiktok.com",       // www.tiktok.com, vm.tiktok.com, m.tiktok.com
+                        "instagram.com",    // www.instagram.com, m.instagram.com
+                        "youtube.com",      // www.youtube.com, m.youtube.com, music.youtube.com
+                        "youtu.be",         // YouTube short links
+                        "facebook.com",     // www.facebook.com, m.facebook.com
+                        "linkedin.com",     // www.linkedin.com
+                        "github.com",       // github.com, www.github.com
+                        "x.com",            // x.com (formerly Twitter)
+                        "twitter.com",      // legacy Twitter links
+                    ]
+                    let isSocialMediaUrl = socialMediaDomains.contains(where: { domain in
+                        host == domain || host.hasSuffix(".\(domain)")
+                    })
+                    if isSocialMediaUrl {
+                        UIApplication.shared.open(requestUrl, options: [.universalLinksOnly: true]) { success in
+                            if !success {
+                                // Native app not installed — fall back to in-app browser
+                                DispatchQueue.main.async {
+                                    let safariViewController = SFSafariViewController(url: requestUrl)
+                                    self.present(safariViewController, animated: true, completion: nil)
+                                }
+                            }
+                        }
+                        return
+                    }
+
+                    // All other external HTTP/HTTPS URLs open in the in-app browser
+                    let safariViewController = SFSafariViewController(url: requestUrl)
+                    self.present(safariViewController, animated: true, completion: nil)
                 } else {
                     // Scheme is not supported or no scheme is given, use openURL
                     if (UIApplication.shared.canOpenURL(requestUrl)) {

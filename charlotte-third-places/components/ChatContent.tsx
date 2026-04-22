@@ -4,7 +4,7 @@ import { Place } from "@/lib/types"
 import { Icons } from "@/components/Icons"
 import { Button } from "@/components/ui/button"
 import { useIsMobile } from "@/hooks/use-mobile"
-import { useChat, type UseChatHelpers } from "@ai-sdk/react"
+import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport, type UIMessage } from "ai"
 import { useEffect, useCallback, useState, useRef } from "react"
 import {
@@ -243,7 +243,7 @@ export function ChatContent({
                                 <Message key={message.id} from={message.role}>
                                     <MessageContent>
                                         {message.role === "assistant" ? (
-                                            <MessageResponse>{textContent}</MessageResponse>
+                                            <MessageResponse linkSafety={{ enabled: false }}>{textContent}</MessageResponse>
                                         ) : (
                                             textContent
                                         )}
