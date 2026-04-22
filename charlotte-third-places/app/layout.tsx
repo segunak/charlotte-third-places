@@ -70,6 +70,12 @@ export const metadata: Metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://charlottethirdplaces.com'),
+  category: 'lifestyle',
+  appLinks: {
+    ios: { url: 'https://charlottethirdplaces.com', app_store_id: '6762573563' },
+    android: { package: 'com.charlottethirdplaces.app', app_name: 'Charlotte Third Places' },
+    web: { url: 'https://charlottethirdplaces.com', should_fallback: true },
+  },
   keywords: ['Charlotte, NC', 'Charlotte, North Carolina', 'Charlotte Third Places', 'Charlotte Third Spaces', 'third places', 'third spaces', 'community spaces', 'cafes', 'coffee shops', 'coffee shops in Charlotte', 'remote work', 'work remotely', 'Charlotte black-owned businesses', 'Charlotte cafes', 'family-owned cafes in Charlotte', 'work-friendly cafes Charlotte', 'third places in Charlotte', 'third spaces in Charlotte', 'community gathering spaces Charlotte', 'remote work cafes Charlotte', 'places to work remotely in Charlotte', 'Charlotte NC community spaces', 'local cafes in Charlotte', 'Charlotte coffee shop recommendations', 'best places for coffee in Charlotte', 'coffee shop with free WiFi Charlotte', 'black-owned cafes Charlotte', 'cafe with pastries Charlotte', 'Fort Mill cafes', 'best coffee shops in Fort Mill', 'remote work spaces in Fort Mill', 'Ballantyne coffee shops', 'family-owned cafes Ballantyne', 'Concord coffee shops', 'remote work cafes Concord', 'third places in Concord', 'third spaces in Concord', 'Rock Hill coffee shops', 'third places in Rock Hill', 'third spaces in Rock Hill', 'Belmont cafes', 'remote work spaces Belmont', 'third places in Belmont', 'third spaces in Belmont', 'Kannapolis cafes', 'community spaces in Kannapolis', 'third places in Kannapolis', 'third spaces in Kannapolis', 'Matthews cafes', 'family-friendly cafes Matthews', 'top coffee shops in Ballantyne', 'quiet cafes for working in Charlotte', 'best cafes for studying in Charlotte', 'Charlotte coworking cafes', 'hidden gem coffee shops Charlotte', 'outdoor seating cafes Charlotte', 'local favorite coffee shops Charlotte', 'coffee shops with parking in Charlotte', 'Charlotte study spots', 'best places to work in Charlotte', 'Fort Mill community spaces', 'coffee shops open late in Charlotte', 'Ballantyne community gathering spaces', 'local coffee culture Charlotte', 'best cafes in Charlotte for meetings', 'Uptown Charlotte coffee spots', 'black-owned coffee shops in Charlotte', 'local Charlotte businesses', 'Fort Mill gathering spaces', 'Kannapolis third places', 'Kannapolis third spaces', 'Belmont third places', 'Belmont third spaces', 'coffee shops near me Charlotte', 'Matthews community gathering spots', 'remote work spots Fort Mill', 'best cafes to work remotely in Rock Hill', 'outdoor cafes in Belmont', 'remote work spaces in Matthews', 'best breakfast cafes in Charlotte', 'free WiFi coffee shops in Fort Mill', 'Kannapolis study spots', 'pet-friendly cafes Charlotte', 'Charlotte coffee shops with vegan options', 'laptop-friendly cafes in Charlotte', 'family-friendly coffee shops Charlotte', 'Charlotte neighborhood cafes', 'Queen City Quarter cafes', 'coffee shops with meeting rooms Charlotte']
 }
 
@@ -91,6 +97,19 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-itunes-app" content="app-id=6762573563" />
+        {/*
+          Sets data-native-app on <html> before first paint when the user is inside
+          the iOS WKWebView wrapper (detected via the "app-platform" cookie set by
+          the Swift wrapper) or an iOS Safari home-screen PWA (navigator.standalone).
+          Combined with the `.hide-in-native-app` CSS rule in globals.css, this prevents
+          a flash of "Get the App" promotional UI inside native apps. Android TWAs and
+          installed PWAs are handled purely via `display-mode: standalone` in CSS.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var c=document.cookie||"";var s=window.navigator&&window.navigator.standalone===true;if(c.indexOf("app-platform")!==-1||s){document.documentElement.setAttribute("data-native-app","true");}}catch(e){}})();`,
+          }}
+        />
       </head>
       <GoogleTagManager gtmId="GTM-KFSPZP5P" />
       <body

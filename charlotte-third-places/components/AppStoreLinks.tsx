@@ -1,7 +1,7 @@
 "use client"
 
-import { useEffect, useState } from "react"
 import { Icons } from "@/components/Icons"
+import { useIsNativeApp } from "@/hooks/useIsNativeApp"
 
 const APP_STORE_URL = "https://apps.apple.com/app/id6762573563"
 const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app"
@@ -11,15 +11,7 @@ interface AppStoreLinksProps {
 }
 
 export function AppStoreLinks({ className }: AppStoreLinksProps) {
-    const [isNativeApp, setIsNativeApp] = useState(false)
-
-    useEffect(() => {
-        const isStandalone = window.matchMedia("(display-mode: standalone)").matches
-        const isIOSApp = document.cookie.includes("app-platform")
-        const isAndroidTWA = document.referrer.includes("android-app://")
-        const isSafariStandalone = (window.navigator as unknown as Record<string, unknown>).standalone === true
-        setIsNativeApp(isStandalone || isIOSApp || isAndroidTWA || isSafariStandalone)
-    }, [])
+    const isNativeApp = useIsNativeApp()
 
     // Don't show app store links inside the native apps
     if (isNativeApp) return null
