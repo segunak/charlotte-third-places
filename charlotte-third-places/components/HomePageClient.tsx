@@ -7,6 +7,7 @@ import { FilterProvider, usePlaces } from '@/contexts/FilterContext';
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Icons } from "@/components/Icons";
 import { AppStoreLinks } from "@/components/AppStoreLinks";
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import nextDynamic from "next/dynamic";
 import { Place } from "@/lib/types";
@@ -47,6 +48,7 @@ export default function HomePageClient({ places: rawPlaces }: HomePageClientProp
  */
 function HomePageContent() {
     const { places } = usePlaces();
+    const isNativeApp = useIsNativeApp();
 
     // People complain "oh Starbucks and Panera are boring I already knew about them". So to appease them, they're excluded from the responsive components used for discovering places, but they do appear in the full DataTable list.
     const excludedNames = ["Starbucks", "Panera"];
@@ -148,15 +150,17 @@ function HomePageContent() {
                     </Button>
                 </div>
 
-                {/* Mobile-only Get the App */}
-                <div className="sm:hidden space-y-4">
-                    <Separator />
-                    <div className="text-2xl font-bold">Get the App</div>
-                    <p className="text-pretty">
-                        Take Charlotte's third places with you.
-                    </p>
-                    <AppStoreLinks className="grid grid-cols-2 gap-3" />
-                </div>
+                {/* Mobile-only Get the App — hidden inside native apps (CSS handles first paint, hook handles runtime) */}
+                {!isNativeApp && (
+                    <div className="sm:hidden space-y-4 hide-in-native-app">
+                        <Separator />
+                        <div className="text-2xl font-bold">Get the App</div>
+                        <p className="text-pretty">
+                            Take Charlotte&apos;s third places with you.
+                        </p>
+                        <AppStoreLinks className="grid grid-cols-2 gap-3" />
+                    </div>
+                )}
 
                 <Separator />
                 <div id="stack-section" className="text-2xl font-bold">

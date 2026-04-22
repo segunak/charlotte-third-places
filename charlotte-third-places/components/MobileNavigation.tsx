@@ -1,26 +1,18 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import { Icons } from "@/components/Icons";
 import { usePathname } from 'next/navigation';
+import { useIsNativeApp } from "@/hooks/useIsNativeApp";
 
 export function MobileNavigation() {
   const pathname = usePathname();
   const iconClass = "h-5 w-5";
 
-  // Detect native app context (iOS WKWebView wrapper or Android TWA).
   // In native apps, env(safe-area-inset-bottom) via pb-safe adds too much padding
   // because the native container already partially accounts for the safe area.
   // We apply a smaller fixed padding instead.
-  const [isNativeApp, setIsNativeApp] = useState(false);
-  useEffect(() => {
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches;
-    const isIOSApp = document.cookie.includes('app-platform');
-    const isAndroidTWA = document.referrer.includes('android-app://');
-    const isSafariStandalone = (window.navigator as unknown as Record<string, unknown>).standalone === true;
-    setIsNativeApp(isStandalone || isIOSApp || isAndroidTWA || isSafariStandalone);
-  }, []);
+  const isNativeApp = useIsNativeApp();
 
   const navItems = [
     {
