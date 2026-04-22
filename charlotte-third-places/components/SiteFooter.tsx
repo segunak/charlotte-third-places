@@ -1,5 +1,8 @@
 import React from 'react';
 
+const APP_STORE_URL = "https://apps.apple.com/app/id6762573563"
+const PLAY_STORE_URL = "https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app"
+
 export function SiteFooter() {
     const currentYear: number = new Date().getFullYear();
 
@@ -15,13 +18,29 @@ export function SiteFooter() {
                     >
                         Segun Akinyemi
                     </a>
-                    . The source code is available on{" "}
+                    {". Open source on "}
                     <a
                         href="https://github.com/segunak/charlotte-third-places"
                         target="_blank"
                         className="font-medium custom-link"
                     >
                         GitHub
+                    </a>
+                    {", available on the "}
+                    <a
+                        href={APP_STORE_URL}
+                        target="_blank"
+                        className="font-medium custom-link"
+                    >
+                        Apple App Store
+                    </a>
+                    {" and "}
+                    <a
+                        href={PLAY_STORE_URL}
+                        target="_blank"
+                        className="font-medium custom-link"
+                    >
+                        Google Play Store
                     </a>
                     .
                 </p>

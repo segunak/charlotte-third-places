@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Metadata } from 'next'
 import { Icons } from "@/components/Icons";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
+import { AppStoreLinks } from "@/components/AppStoreLinks";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from "@/components/ui/accordion";
 
@@ -307,8 +308,8 @@ export default function AboutPage() {
             <h1 className="text-3xl font-bold leading-tight text-center border-b pb-3">
                 About
             </h1>
-            <p className="text-pretty text-center max-w-2xl mx-auto">
-                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>. To learn more about the project and the story behind it, check out the feature in <ResponsiveLink href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6">The Charlotte Observer</ResponsiveLink>, or keep reading below.
+            <p className="text-pretty text-center max-w-3xl mx-auto">
+                Welcome! This site helps people in and around Charlotte, North Carolina, discover <ResponsiveLink href="https://en.wikipedia.org/wiki/Third_place">third places</ResponsiveLink>.
             </p>
             {/* Creator*/}
             <Card className="border shadow-xs">
@@ -344,6 +345,36 @@ export default function AboutPage() {
                 </CardContent>
             </Card>
 
+            {/* Get the App (mobile only) */}
+            <Card className="border shadow-xs sm:hidden">
+                <CardHeader>
+                    <CardTitle className="text-2xl text-center border-b pb-3">
+                        Get the App
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="leading-relaxed text-pretty space-y-4">
+                    <AppStoreLinks className="grid grid-cols-2 gap-3 max-w-md mx-auto" />
+                </CardContent>
+            </Card>
+
+            {/* Charlotte Observer Feature */}
+            <Card className="border shadow-xs">
+                <CardHeader>
+                    <CardTitle className="text-2xl text-center border-b pb-3">
+                        As Featured In
+                    </CardTitle>
+                </CardHeader>
+                <CardContent className="leading-relaxed text-pretty space-y-4">
+                    <div className="flex justify-center">
+                        <ResponsiveLink href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6" aria-label="Read the Charlotte Observer article">
+                            <div className="bg-black rounded-lg px-5 py-3 inline-block">
+                                <Icons.charlotteObserverLogo className="h-6 w-auto sm:h-8 [&_path]:fill-white" />
+                            </div>
+                        </ResponsiveLink>
+                    </div>
+                </CardContent>
+            </Card>
+
             {/* Frequently Asked Questions */}
             <Card className="border shadow-xs">
                 <CardHeader>
@@ -363,19 +394,6 @@ export default function AboutPage() {
                 </CardContent>
             </Card>
 
-            {/* Charlotte Observer Feature */}
-            <Card className="border shadow-xs">
-                <CardHeader>
-                    <CardTitle className="text-2xl text-center border-b pb-3">
-                        Charlotte Observer Feature
-                    </CardTitle>
-                </CardHeader>
-                <CardContent className="leading-relaxed text-pretty space-y-4">
-                    <p>
-                        Charlotte Third Places was featured in <ResponsiveLink href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6">The Charlotte Observer</ResponsiveLink>. The article covers the story behind the project, details on <ResponsiveLink href="https://segunakinyemi.com">its creator</ResponsiveLink>, and the mission of making third places in greater Charlotte easier to find. Give it a read!
-                    </p>
-                </CardContent>
-            </Card>
 
             {/* Tech Stack */}
             <Card className="border shadow-xs">
