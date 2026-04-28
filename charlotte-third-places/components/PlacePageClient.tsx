@@ -26,7 +26,7 @@ import { useIsMobile } from "@/hooks/use-mobile";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
-import { ChatDialog } from "@/components/ChatDialog";
+import { ChatModal } from "@/components/ChatModal";
 import { injectDynamicTags } from "@/lib/operating-hours";
 
 // Single place detail page — not inside a FilterProvider tree.
@@ -377,8 +377,8 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                 </CardContent>
             </Card>
 
-            {/* Chat Dialog */}
-            <ChatDialog
+            {/* Chat Modal */}
+            <ChatModal
                 open={showChat}
                 onClose={() => setShowChat(false)}
                 place={place}

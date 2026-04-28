@@ -339,13 +339,19 @@ export const MessageResponse = memo(
           "[&_ol]:list-decimal",
           "[&_ol]:list-outside",
           "[&_ol]:pl-5",
+          // Fix: Streamdown hardcodes font-medium on <a> tags, which overrides
+          // the font-semibold from **bold** markdown wrappers. This restores
+          // bold weight on links inside bold text (e.g., **[Place Name](url)**).
+          "[&_[data-streamdown=strong]_a]:font-bold",
         ].join(" "),
         className
       )}
       {...props}
     />
   ),
-  (prevProps, nextProps) => prevProps.children === nextProps.children
+  (prevProps, nextProps) =>
+    prevProps.children === nextProps.children &&
+    prevProps.components === nextProps.components
 );
 
 MessageResponse.displayName = "MessageResponse";

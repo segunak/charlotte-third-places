@@ -27,13 +27,12 @@ vi.mock('@/hooks/use-mobile', () => ({
 }))
 
 // Mock ModalContext
-const mockShowPlacePhotos = vi.fn()
+const mockPushPhotos = vi.fn()
+const mockPushChat = vi.fn()
 vi.mock('@/contexts/ModalContext', () => ({
-  useModalContext: () => ({
-    showPlacePhotos: mockShowPlacePhotos,
-  }),
   useModalActions: () => ({
-    showPlacePhotos: mockShowPlacePhotos,
+    pushPhotos: mockPushPhotos,
+    pushChat: mockPushChat,
   }),
 }))
 

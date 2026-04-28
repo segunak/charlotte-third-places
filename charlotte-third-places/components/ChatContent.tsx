@@ -4,9 +4,10 @@ import { Place } from "@/lib/types"
 import { Icons } from "@/components/Icons"
 import { Button } from "@/components/ui/button"
 import { useIsMobile } from "@/hooks/use-mobile"
+import { useModalActions } from "@/contexts/ModalContext"
 import { useChat } from "@ai-sdk/react"
 import { DefaultChatTransport, type UIMessage } from "ai"
-import { useEffect, useCallback, useState, useRef } from "react"
+import { useEffect, useCallback, useState, useRef, useMemo } from "react"
 import {
     Conversation,
     ConversationContent,
@@ -40,8 +41,6 @@ export interface ChatContentProps {
     variant?: "dialog" | "page"
     /** Show starter prompts in empty state (only for page variant) */
     showStarterPrompts?: boolean
-    /** Callback when dialog should be opened (triggered by state changes) */
-    onOpenChange?: (open: boolean) => void
 }
 
 // Starter prompts for empty chat (general)
@@ -76,22 +75,54 @@ export function ChatContent({
     showStarterPrompts = false,
 }: ChatContentProps) {
     const isMobile = useIsMobile()
+    const { pushPlace } = useModalActions()
     const [copiedId, setCopiedId] = useState<string | null>(null)
     const [initialMessageSent, setInitialMessageSent] = useState(false)
     const [input, setInput] = useState("")
+    const conversationRef = useRef<HTMLDivElement>(null)
+    const placeCacheRef = useRef<Map<string, Promise<Place> | Place>>(new Map())
 
     const placeId = place?.googleMapsPlaceId
+    const placeRecordId = place?.recordId
     const isDialog = variant === "dialog"
     const isPage = variant === "page"
 
-    // Create a stable transport reference that includes placeId in the body
-    const transportRef = useRef<DefaultChatTransport<UIMessage> | null>(null)
-    if (!transportRef.current || transportRef.current !== null) {
-        transportRef.current = new DefaultChatTransport({
+    // Render-layer override for Streamdown links. In a place-scoped chat,
+    // any link pointing to the SAME place the user is already chatting about
+    // is rendered as <strong> instead of <a> — deterministically eliminates
+    // the no-op self-reference click. The AI's output is irrelevant; this
+    // renderer is the gatekeeper.
+    const messageComponents = useMemo(() => {
+        if (!placeRecordId) return undefined;
+        return {
+            a: ({ href, children, ...props }: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+                const matchedId = href?.match(/(?:charlottethirdplaces\.com)?\/places\/([^/?#]+)/i)?.[1];
+                if (matchedId && matchedId === placeRecordId) {
+                    return <strong>{children}</strong>;
+                }
+                // Re-apply Streamdown's default link classes since custom
+                // components fully replace defaults (including built-in styles).
+                return (
+                    <a
+                        href={href}
+                        className="text-primary underline wrap-anywhere font-medium"
+                        {...props}
+                    >
+                        {children}
+                    </a>
+                );
+            },
+        };
+    }, [placeRecordId]);
+
+    // Stable transport that only rebuilds when placeId changes.
+    const transport = useMemo(
+        () => new DefaultChatTransport({
             api: "/api/chat",
             body: { placeId },
-        })
-    }
+        }),
+        [placeId]
+    )
 
     // Use the Vercel AI SDK v5 useChat hook
     const {
@@ -102,23 +133,111 @@ export function ChatContent({
         error,
         setMessages,
     } = useChat({
-        transport: transportRef.current,
+        transport,
         onError: (err) => {
             console.error("Chat error:", err)
         },
     })
 
-    // Reset state when place changes
+    // Reset state when place changes (transport itself is rebuilt by useMemo above).
     useEffect(() => {
-        setMessages([])
         setInitialMessageSent(false)
         setInput("")
-        // Recreate transport with new placeId
-        transportRef.current = new DefaultChatTransport({
-            api: "/api/chat",
-            body: { placeId },
-        })
-    }, [placeId, setMessages])
+    }, [placeId])
+
+    // Intercept clicks on internal place links in AI responses so the chat
+    // session is preserved instead of navigating away.
+    //
+    // Implementation: document-level click delegation, scoped via the chat
+    // root element id. This is bulletproof against:
+    // - Streamdown's `components.a` override being ignored
+    // - StickToBottom not forwarding React onClick events
+    // - Ref/render-timing races (the document is always there)
+    // - Streaming content being inserted after the listener attached
+    //
+    // Lookup: fetch /api/places/[id] on demand, with a client-side Map cache
+    // so repeat clicks on the same place are instant. On miss, render an
+    // inline error so the chat session is never silently destroyed.
+    useEffect(() => {
+        const handleClick = async (e: MouseEvent) => {
+            const target = e.target as HTMLElement | null;
+            if (!target) return;
+
+            const anchor = target.closest('a');
+            if (!anchor) return;
+
+            // Only intercept clicks INSIDE this chat instance.
+            const root = conversationRef.current;
+            if (!root || !root.contains(anchor)) return;
+
+            const href = anchor.getAttribute('href');
+            if (!href) return;
+
+            // Anything pointing to /places/<id> on our domain (or relative) is
+            // an internal place link — open it in the modal instead of navigating.
+            const match = href.match(/(?:charlottethirdplaces\.com)?\/places\/([^/?#]+)/i)?.[1];
+            if (!match) return; // Not an internal place link — let browser handle it.
+
+            e.preventDefault();
+            // stopPropagation in capture phase intentionally suppresses any
+            // nested handlers (e.g. Streamdown's hardcoded <a> behaviors) so
+            // only this delegate processes the click.
+            e.stopPropagation();
+
+            // Check cache first. Entries may be either a resolved Place or an
+            // in-flight Promise<Place> (dedupes concurrent clicks on the same id).
+            const cached = placeCacheRef.current.get(match);
+            if (cached) {
+                try {
+                    const place = await cached;
+                    pushPlace(place, { hideAskAI: true });
+                    return;
+                } catch {
+                    // Fall through to fetch retry below.
+                }
+            }
+
+            // Fetch single place by ID. Store the promise in the cache BEFORE
+            // awaiting so concurrent clicks reuse it.
+            const pending = (async (): Promise<Place> => {
+                const res = await fetch(`/api/places/${encodeURIComponent(match)}`);
+                if (!res.ok) throw new Error(`status ${res.status}`);
+                return res.json() as Promise<Place>;
+            })();
+            placeCacheRef.current.set(match, pending);
+
+            try {
+                const fetched = await pending;
+                placeCacheRef.current.set(match, fetched);
+                pushPlace(fetched, { hideAskAI: true });
+                return;
+            } catch {
+                // Drop failed entry so a future click can retry.
+                placeCacheRef.current.delete(match);
+            }
+
+            // Last resort: render an inline error chip into the chat so the
+            // user sees what went wrong without losing the chat session.
+            console.warn('[ChatContent] place not found for', match);
+            setMessages(prev => [
+                ...prev,
+                {
+                    id: `place-error-${Date.now()}`,
+                    role: 'assistant',
+                    parts: [
+                        {
+                            type: 'text',
+                            text: `Sorry — I couldn’t open that place. It may have been removed or is temporarily unavailable.`,
+                        },
+                    ],
+                } as UIMessage,
+            ]);
+        };
+
+        // Capture phase so we run before any nested handlers (e.g. Streamdown's).
+        document.addEventListener('click', handleClick, true);
+        return () => document.removeEventListener('click', handleClick, true);
+    }, [pushPlace, setMessages]);
 
     // Send initial message if provided
     useEffect(() => {
@@ -237,13 +356,14 @@ export function ChatContent({
                 /* Conversation area */
                 <Conversation className="flex-1 min-h-0">
                     <ConversationContent className={isPage ? "px-4 sm:px-6" : "px-4"}>
+                        <div ref={conversationRef} data-testid="conversation-links">
                         {messages.map((message) => {
                             const textContent = getMessageText(message)
                             return (
                                 <Message key={message.id} from={message.role}>
                                     <MessageContent>
                                         {message.role === "assistant" ? (
-                                            <MessageResponse linkSafety={{ enabled: false }}>{textContent}</MessageResponse>
+                                            <MessageResponse linkSafety={{ enabled: false }} components={messageComponents}>{textContent}</MessageResponse>
                                         ) : (
                                             textContent
                                         )}
@@ -283,6 +403,7 @@ export function ChatContent({
                                 {error.message || "Something went wrong. Please try again."}
                             </div>
                         )}
+                        </div>
                     </ConversationContent>
                     <ConversationScrollButton />
                 </Conversation>

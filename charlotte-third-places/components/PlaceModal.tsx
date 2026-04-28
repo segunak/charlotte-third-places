@@ -4,7 +4,7 @@ import { Place } from "@/lib/types";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { Button } from "@/components/ui/button";
 import { PlaceContent } from "@/components/PlaceContent";
-import { ChatDialog } from "@/components/ChatDialog";
+import { useModalActions } from "@/contexts/ModalContext";
 import { Icons } from "@/components/Icons";
 import {
     FC,
@@ -27,13 +27,24 @@ interface PlaceModalProps {
     place: Place | null;
     open: boolean;
     onClose: () => void;
+    /**
+     * Stacking z-index for this modal surface. Applied as inline style to both
+     * the overlay and content so it overrides any class-based z. Higher values
+     * stack above lower ones.
+     */
+    zIndex?: number;
+    /**
+     * Whether the Ask AI button should be visible. Hidden for nested PlaceModals
+     * that were reached via a chat → place link, to prevent opening a second chat.
+     */
+    showAskAI?: boolean;
 }
 
-export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
+export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose, zIndex, showAskAI = true }) => {
     const contentRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
     const highlights = place ? getPlaceHighlights(place) : null;
-    const [showChat, setShowChat] = useState(false);
+    const { pushChat } = useModalActions();
     const [showScrollHint, setShowScrollHint] = useState(false);
 
     // Show scroll hint on mobile when modal opens, hide once user scrolls
@@ -74,15 +85,13 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
         if (contentRef.current && open && place) {
             contentRef.current.scrollTop = 0;
         }
-        // Reset chat when modal closes
-        if (!open) {
-            setShowChat(false);
-        }
     }, [open, place]);
 
     if (!open || !place) {
         return null;
     }
+
+    const zStyle = zIndex !== undefined ? { zIndex } : undefined;
 
     return (
         <>
@@ -90,6 +99,8 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                 <DialogContent
                     crossCloseIconSize="h-7 w-7"
                     crossCloseIconColor="text-black dark:text-white"
+                    overlayStyle={zStyle}
+                    style={zStyle}
                     className={cn(
                         "fixed left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-card rounded-lg",
                         // Apply centralized gradient (featured/comingSoon) if provided
@@ -153,20 +164,20 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
 
                     <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">
-                        {place.operational !== "Coming Soon" && (
+                        {place.operational !== "Coming Soon" && showAskAI && (
                             <Button
                                 className="h-11 text-base flex-1 font-medium"
-                                onClick={() => setShowChat(true)}
+                                onClick={() => pushChat(place)}
                             >
                                 <Icons.chat className="h-4 w-4 mr-2" />
                                 Ask AI
                             </Button>
                         )}
-                        <Button 
+                        <Button
                             className={cn(
                                 "h-11 text-base font-medium",
-                                place.operational === "Coming Soon" ? "w-full" : "flex-1"
-                            )} 
+                                (place.operational === "Coming Soon" || !showAskAI) ? "w-full" : "flex-1"
+                            )}
                             onClick={onClose}
                         >
                             Close
@@ -174,13 +185,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose }) => {
                     </div>
                 </DialogContent>
             </Dialog>
-
-            {/* Chat Dialog */}
-            <ChatDialog
-                open={showChat}
-                onClose={() => setShowChat(false)}
-                place={place}
-            />
         </>
     );
 };

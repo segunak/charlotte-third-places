@@ -26,7 +26,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
     showPhotosButton = true,
     onAskAI
 }) => {
-    const { showPlacePhotos } = useModalActions();
+    const { pushPhotos } = useModalActions();
 
     const shareUrl = useMemo(() => {
         // SSR safety: if `window` is undefined, fallback
@@ -71,7 +71,7 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 {shouldShowPhotosButton && (
                     <Button
                         variant="outline"
-                        onClick={() => showPlacePhotos(place, layout === "page" ? "card" : "modal")}
+                        onClick={() => pushPhotos(place)}
                         aria-label="View photos"
                     >
                         <Icons.photoGallery className={`${iconSize} text-primary`} />

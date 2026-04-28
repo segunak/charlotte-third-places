@@ -26,8 +26,8 @@ vi.mock('@/components/PlaceModal', () => ({
 vi.mock('@/components/PhotosModal', () => ({
   PhotosModal: () => null
 }))
-vi.mock('@/components/ChatDialog', () => ({
-  ChatDialog: () => null
+vi.mock('@/components/ChatModal', () => ({
+  ChatModal: () => null
 }))
 import { render, screen, fireEvent, act, cleanup } from '@testing-library/react'
 import React, { useState, useCallback, createContext, useContext } from 'react'
@@ -59,7 +59,9 @@ const createMockPlace = (overrides: Partial<Place> = {}): Place => ({
   parking: ['Free'],
   size: 'Medium',
   purchaseRequired: 'No',
+  curatorPhotos: [],
   photos: [],
+  operatingHours: [],
   googleMapsProfileURL: 'https://maps.google.com',
   appleMapsProfileURL: 'https://maps.apple.com',
   website: '',
@@ -84,26 +86,26 @@ describe('Performance Tests - Render Times', () => {
 
   describe('Modal Interactions', () => {
     /**
-     * Test that showPlaceModal callback invocation is fast.
+     * Test that pushPlace callback invocation is fast.
      * 
      * The key optimization we verify here:
      * - useModalActions returns STABLE callback references
-     * - Calling these callbacks triggers internal state updates via startTransition
+      * - Calling these callbacks triggers a small internal modal stack update
      * - Components using useModalActions do NOT re-render when modal state changes
      * 
      * We can't directly read modal state (by design - hiding state prevents re-renders),
      * so we measure callback execution time and verify no cascading re-renders.
      */
-    it('showPlaceModal state update completes within threshold', async () => {
+    it('pushPlace state update completes within threshold', async () => {
       const testPlace = createMockPlace()
       let callbackCompleted = false
 
       // Component that triggers modal and tracks callback completion
       function TestComponent() {
-        const { showPlaceModal } = useModalActions()
+        const { pushPlace } = useModalActions()
 
         const handleClick = () => {
-          showPlaceModal(testPlace)
+          pushPlace(testPlace)
           callbackCompleted = true
         }
 
@@ -141,21 +143,21 @@ describe('Performance Tests - Render Times', () => {
       expect(totalTime).toBeLessThan(TEST_THRESHOLD_MS)
     })
 
-    it('closePlaceModal state update completes within threshold', async () => {
+    it('pop state update completes within threshold', async () => {
       const testPlace = createMockPlace()
       let openCompleted = false
       let closeCompleted = false
 
       function TestComponent() {
-        const { showPlaceModal, closePlaceModal } = useModalActions()
+        const { pushPlace, pop } = useModalActions()
 
         const handleOpen = () => {
-          showPlaceModal(testPlace)
+          pushPlace(testPlace)
           openCompleted = true
         }
 
         const handleClose = () => {
-          closePlaceModal()
+          pop()
           closeCompleted = true
         }
 
@@ -317,7 +319,7 @@ describe('Performance Tests - Render Times', () => {
      * 
      * This is the KEY optimization we made: by splitting ModalContext into
      * ModalActionsContext (stable callbacks) and keeping state internal,
-     * PlaceCard components that only call showPlaceModal don't re-render
+     * PlaceCard components that only call pushPlace don't re-render
      * when another card's modal opens.
      */
     it('modal actions do not cause unrelated components to re-render', async () => {
@@ -331,8 +333,8 @@ describe('Performance Tests - Render Times', () => {
       })
 
       function ModalTrigger() {
-        const { showPlaceModal } = useModalActions()
-        return <button onClick={() => showPlaceModal(testPlace)}>Open Modal</button>
+        const { pushPlace } = useModalActions()
+        return <button onClick={() => pushPlace(testPlace)}>Open Modal</button>
       }
 
       render(
@@ -362,13 +364,13 @@ describe('Performance Tests - Render Times', () => {
       // This component uses useModalActions (stable callbacks)
       // It should NOT re-render when modal opens/closes
       function ActionsConsumer() {
-        const { showPlaceModal, closePlaceModal } = useModalActions()
+        const { pushPlace, pop } = useModalActions()
         actionsConsumerRenderCount++
         return (
           <div>
             <span data-testid="actions-renders">{actionsConsumerRenderCount}</span>
-            <button onClick={() => showPlaceModal(testPlace)}>Open</button>
-            <button onClick={closePlaceModal}>Close</button>
+            <button onClick={() => pushPlace(testPlace)}>Open</button>
+            <button onClick={pop}>Close</button>
           </div>
         )
       }

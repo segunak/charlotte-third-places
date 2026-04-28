@@ -186,7 +186,7 @@ function arePlacePropsEqual(prevProps: PlaceCardProps, nextProps: PlaceCardProps
 }
 
 export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
-    const { showPlaceModal, showPlacePhotos, showPlaceChat } = useModalActions();
+    const { pushPlace, pushPhotos, pushChat } = useModalActions();
     // Memoize highlights computation - only recompute when place changes
     const highlights = useMemo(
         () => getPlaceHighlights(place),
@@ -208,7 +208,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
     }, [place?.description]);
 
     const handleCardClick = () => {
-        showPlaceModal(place);
+        pushPlace(place);
     };
 
     // Only show photos button if photos exist
@@ -404,7 +404,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                     className="h-9 w-9 rounded-full"
                                     onClick={(e) => {
                                         e.stopPropagation(); // Prevent click from bubbling to Card
-                                        showPlaceChat(place);
+                                        pushChat(place);
                                     }}
                                     aria-label="Ask AI about this place"
                                 >
@@ -418,7 +418,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                     className="h-9 w-9 rounded-full"
                                     onClick={(e) => {
                                         e.stopPropagation(); // Prevent click from bubbling to Card
-                                        showPlacePhotos(place, 'card'); // Specify origin as 'card'
+                                        pushPhotos(place);
                                     }}
                                     aria-label="View photos"
                                 >
@@ -431,7 +431,7 @@ export const PlaceCard: FC<PlaceCardProps> = memo(({ place }) => {
                                 className="h-9 w-9 rounded-full"
                                 onClick={(e) => {
                                     e.stopPropagation(); // Prevent click from bubbling to Card
-                                    showPlaceModal(place);
+                                    pushPlace(place);
                                 }}
                                 aria-label="More information"
                             >

@@ -19,7 +19,7 @@ interface PlaceMapProps {
 
 export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
     const { places } = usePlaces();
-    const { showPlaceModal } = useModalActions();
+    const { pushPlace } = useModalActions();
     // Cache for consistent color assignments - using useRef to persist across renders without causing re-renders
     const colorCacheRef = useRef<{ [key: string]: string }>({});
     const isMobileView = useIsMobile();
@@ -304,7 +304,7 @@ export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
                                 <AdvancedMarker
                                     position={position}
                                     title={place.name}
-                                    onClick={() => showPlaceModal(place)}
+                                    onClick={() => pushPlace(place)}
                                 >
                                     <div className="relative flex flex-col items-center">
                                         <div className="relative flex items-center justify-center w-8 h-8">

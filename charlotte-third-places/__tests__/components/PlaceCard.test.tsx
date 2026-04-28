@@ -15,20 +15,15 @@ import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { render, screen, fireEvent } from '@testing-library/react'
 
 // Mock the context and hooks before importing the component
-const mockShowPlaceModal = vi.fn()
-const mockShowPlacePhotos = vi.fn()
-const mockShowPlaceChat = vi.fn()
+const mockPushPlace = vi.fn()
+const mockPushPhotos = vi.fn()
+const mockPushChat = vi.fn()
 
 vi.mock('@/contexts/ModalContext', () => ({
-  useModalContext: () => ({
-    showPlaceModal: mockShowPlaceModal,
-    showPlacePhotos: mockShowPlacePhotos,
-    showPlaceChat: mockShowPlaceChat,
-  }),
   useModalActions: () => ({
-    showPlaceModal: mockShowPlaceModal,
-    showPlacePhotos: mockShowPlacePhotos,
-    showPlaceChat: mockShowPlaceChat,
+    pushPlace: mockPushPlace,
+    pushPhotos: mockPushPhotos,
+    pushChat: mockPushChat,
   }),
 }))
 
@@ -142,7 +137,7 @@ describe('PlaceCard', () => {
   })
 
   describe('Click Interactions', () => {
-    it('calls showPlaceModal when card is clicked', () => {
+    it('calls pushPlace when card is clicked', () => {
       const place = createMockPlace()
       render(<PlaceCard place={place} />)
 
@@ -150,23 +145,23 @@ describe('PlaceCard', () => {
       expect(card).toBeInTheDocument()
       if (card) {
         fireEvent.click(card)
-        expect(mockShowPlaceModal).toHaveBeenCalledWith(place)
+        expect(mockPushPlace).toHaveBeenCalledWith(place)
       }
     })
 
-    it('calls showPlaceChat when chat button is clicked', () => {
+    it('calls pushChat when chat button is clicked', () => {
       const place = createMockPlace({ operational: 'Open' })
       render(<PlaceCard place={place} />)
 
       const chatButton = screen.getByRole('button', { name: /ask ai about this place/i })
       fireEvent.click(chatButton)
 
-      expect(mockShowPlaceChat).toHaveBeenCalledWith(place)
+      expect(mockPushChat).toHaveBeenCalledWith(place)
       // Should not bubble to card click
-      expect(mockShowPlaceModal).not.toHaveBeenCalled()
+      expect(mockPushPlace).not.toHaveBeenCalled()
     })
 
-    it('calls showPlacePhotos when photos button is clicked', () => {
+    it('calls pushPhotos when photos button is clicked', () => {
       const place = createMockPlace({
         photos: ['https://example.com/photo.jpg'],
       })
@@ -175,19 +170,19 @@ describe('PlaceCard', () => {
       const photosButton = screen.getByRole('button', { name: /view photos/i })
       fireEvent.click(photosButton)
 
-      expect(mockShowPlacePhotos).toHaveBeenCalledWith(place, 'card')
+      expect(mockPushPhotos).toHaveBeenCalledWith(place)
       // Should not bubble to card click
-      expect(mockShowPlaceModal).not.toHaveBeenCalled()
+      expect(mockPushPlace).not.toHaveBeenCalled()
     })
 
-    it('calls showPlaceModal when info button is clicked', () => {
+    it('calls pushPlace when info button is clicked', () => {
       const place = createMockPlace()
       render(<PlaceCard place={place} />)
 
       const infoButton = screen.getByRole('button', { name: /more information/i })
       fireEvent.click(infoButton)
 
-      expect(mockShowPlaceModal).toHaveBeenCalledWith(place)
+      expect(mockPushPlace).toHaveBeenCalledWith(place)
     })
   })
 
