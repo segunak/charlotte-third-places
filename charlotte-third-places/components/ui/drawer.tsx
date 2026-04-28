@@ -40,13 +40,17 @@ const DrawerContent = (
   {
     ref,
     className,
+    overlayClassName,
+    overlayStyle,
     children,
     ...props
   }: React.ComponentPropsWithoutRef<typeof DrawerPrimitive.Content> & {
     ref?: React.Ref<React.ComponentRef<typeof DrawerPrimitive.Content>>;
+    overlayClassName?: string;
+    overlayStyle?: React.CSSProperties;
   }
 ) => (<DrawerPortal>
-  <DrawerOverlay />
+  <DrawerOverlay className={overlayClassName} style={overlayStyle} />
   <DrawerPrimitive.Content
     ref={ref}
     data-slot="drawer-content"

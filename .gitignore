@@ -139,6 +139,11 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# Generated test output captures
+**/test_output.txt
+**/*test_output.txt
+**/vitest_full_output.txt
+
 # Debug files
 .debug/
 

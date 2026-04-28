@@ -19,13 +19,10 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import type { Place } from '@/lib/types'
 
 // Mock ModalContext
-const mockShowPlacePhotos = vi.fn()
+const mockPushPhotos = vi.fn()
 vi.mock('@/contexts/ModalContext', () => ({
-  useModalContext: () => ({
-    showPlacePhotos: mockShowPlacePhotos,
-  }),
   useModalActions: () => ({
-    showPlacePhotos: mockShowPlacePhotos,
+    pushPhotos: mockPushPhotos,
   }),
 }))
 
