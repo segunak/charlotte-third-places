@@ -7,7 +7,7 @@
  * Key functionality tested:
  * - pushPlace / pushPhotos / pushChat append surfaces to the stack
  * - pop / popTo / closeAll reduce the stack via browser history
- * - Surface stack is capped at MAX_SURFACES (3); excess pushes are warned and dropped
+ * - Nested flows can keep stacking when a visible action opens another modal
  * - showAskAI is FALSE on a PlaceModal that sits above an earlier chat surface
  * - Browser back/forward gestures reduce and restore the stack from history entries
  * - useModalActions returns stable callback references across renders
@@ -154,6 +154,7 @@ function TestConsumer() {
       <button onClick={() => actions.pushPlace(placeC)}>Push C (place)</button>
       <button onClick={() => actions.pushPlace(placeD)}>Push D (place)</button>
       <button onClick={() => actions.pushPhotos(placeA)}>Push A photos</button>
+      <button onClick={() => actions.pushPhotos(placeB)}>Push B photos</button>
       <button onClick={() => actions.pushChat(placeA)}>Push A chat</button>
       <button onClick={() => actions.pushChat(placeB)}>Push B chat</button>
       <button onClick={actions.pop}>Pop</button>
@@ -220,9 +221,8 @@ describe('ModalContext — pushing surfaces', () => {
   })
 })
 
-describe('ModalContext — surface stack cap (MAX=3)', () => {
-  it('refuses to push beyond 3 surfaces and warns in dev', () => {
-    const warn = vi.spyOn(console, 'warn').mockImplementation(() => {})
+describe('ModalContext — nested functional surfaces', () => {
+  it('allows photos to open after place → chat → chat-linked place', () => {
     render(
       <ModalProvider>
         <TestConsumer />
@@ -230,16 +230,17 @@ describe('ModalContext — surface stack cap (MAX=3)', () => {
     )
 
     fireEvent.click(screen.getByText('Push A (place)'))
-    fireEvent.click(screen.getByText('Push B (place)'))
-    fireEvent.click(screen.getByText('Push C (place)'))
-    // 4th push must be ignored
-    fireEvent.click(screen.getByText('Push D (place)'))
+    fireEvent.click(screen.getByText('Push A chat'))
+    fireEvent.click(screen.getByText('Push B chat-origin place'))
+    fireEvent.click(screen.getByText('Push B photos'))
 
-    // We render every surface in the stack — count rendered PlaceModals.
-    const renderedPlaces = screen.getAllByTestId('place-modal')
-    expect(renderedPlaces).toHaveLength(3)
-    expect(warn).toHaveBeenCalled()
-    warn.mockRestore()
+    expect(screen.getAllByTestId('place-modal')).toHaveLength(2)
+    expect(screen.getByTestId('chat-modal')).toBeInTheDocument()
+
+    const photos = screen.getByTestId('photos-modal')
+    expect(photos).toBeInTheDocument()
+    expect(photos).toHaveTextContent('Bravo Photos')
+    expect(photos.getAttribute('data-z')).toBe('80')
   })
 })
 

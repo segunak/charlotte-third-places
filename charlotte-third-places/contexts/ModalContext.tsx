@@ -81,8 +81,6 @@ interface ChatSurface extends BaseSurface {
 
 export type Surface = PlaceSurface | PhotosSurface | ChatSurface;
 
-const MAX_SURFACES = 3;
-
 interface PushPlaceOptions {
     hideAskAI?: boolean;
 }
@@ -116,10 +114,10 @@ function getSurfaceHistoryState(rawState: unknown): HistorySurfaceState | null {
 
 function getTargetDepth(state: HistorySurfaceState | null): number {
     if (typeof state?.surfaceStackDepth === 'number' && Number.isFinite(state.surfaceStackDepth)) {
-        return Math.max(0, Math.min(MAX_SURFACES, Math.floor(state.surfaceStackDepth)));
+        return Math.max(0, Math.floor(state.surfaceStackDepth));
     }
     if (Array.isArray(state?.surfaceStack)) {
-        return Math.max(0, Math.min(MAX_SURFACES, state.surfaceStack.length));
+        return state.surfaceStack.length;
     }
     return 0;
 }
@@ -210,16 +208,6 @@ export function ModalProvider({ children }: { children: React.ReactNode }) {
 
     const pushSurface = useCallback((surface: Surface) => {
         const current = surfacesRef.current;
-        if (current.length >= MAX_SURFACES) {
-            if (process.env.NODE_ENV !== 'production') {
-                console.warn(
-                    `[ModalContext] surface stack at cap (${MAX_SURFACES}); ignoring push of`,
-                    surface.kind
-                );
-            }
-            return;
-        }
-
         const next = [...current, surface];
         if (typeof window !== 'undefined') {
             // Keep pushState outside React state updates. History is a browser
