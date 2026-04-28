@@ -35,6 +35,14 @@ const shouldUseLocalData = (): boolean => {
     return false;
 };
 
+function isAirtableNotFoundError(error: unknown): boolean {
+    if (!error || typeof error !== 'object') return false;
+    const maybeError = error as { error?: string; statusCode?: number; message?: string };
+    return maybeError.statusCode === 404
+        || maybeError.error === 'NOT_FOUND'
+        || /not[_\s-]?found|could not find/i.test(maybeError.message ?? '');
+}
+
 /**
  * Generates a SHA1 hash from a given URL string.
  * 
@@ -163,10 +171,9 @@ const downloadImage = async (coverPhotoURL: string, recordId: string, placeName:
  * 
  * @param record - The record to map, either an Airtable record or a CSV row.
  * @param isCSV - A boolean indicating whether the record is from a CSV file.
- * @param rowIndex - The row index for CSV records, used as a fallback ID.
  * @returns A Place object.
  */
-const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number = 0): Place => {
+const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
     // Parse Python-style array string to JavaScript array
     const parsePythonStyleArray = (value: string): string[] => {
         if (!value) return [];
@@ -267,7 +274,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false, rowIndex: number 
     };
 
     return {
-        recordId: isCSV ? rowIndex.toString() : record.id,
+        // CSV exports always include the real Airtable Record ID.
+        recordId: isCSV ? record["Record ID"] : record.id,
         name: getField("Place"),
         operational: getField("Operational"),
         type: getField("Type"),
@@ -315,14 +323,12 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
     const places: Place[] = [];
 
     return new Promise((resolve, reject) => {
-        let rowIndex = 0;
         fs.createReadStream(localDataPath)
             .pipe(stripBomStream())
             .pipe(csvParser())
             .on('data', (row) => {
                 try {
-                    places.push(mapRecordToPlace(row, true, rowIndex));
-                    rowIndex += 1;
+                    places.push(mapRecordToPlace(row, true));
                 } catch (error) {
                     console.warn(`Failed to parse row: ${JSON.stringify(row)}. Error: ${error}`);
                 }
@@ -341,8 +347,10 @@ const getPlacesFromCSV = async (filePath: string): Promise<Place[]> => {
  * @throws {Error} Throws an error if fetching the place fails.
  */
 export async function getPlaceById(id: string) {
+    const useLocalData = shouldUseLocalData();
+
     try {
-        if (shouldUseLocalData()) {
+        if (useLocalData) {
             const localData = await getPlacesFromCSV('./local-data/Charlotte Third Places-Production.csv');
             return localData.find((place) => place.recordId === id);
         }
@@ -350,6 +358,10 @@ export async function getPlaceById(id: string) {
         const record = await base('Charlotte Third Places').find(id);
         return mapRecordToPlace(record);
     } catch (error) {
+        if (!useLocalData && isAirtableNotFoundError(error)) {
+            return undefined;
+        }
+
         console.error(`Failed to fetch place with ID ${id}:`, error);
         throw new Error(`Failed to fetch place with ID ${id}`);
     }

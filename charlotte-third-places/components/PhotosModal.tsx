@@ -36,9 +36,15 @@ interface PhotosModalProps {
     place: Place | null;
     open: boolean;
     onClose: () => void;
+    /**
+     * Stacking z-index for this modal surface. Applied as inline style to both
+     * the overlay and content so it overrides any class-based z. Higher values
+     * stack above lower ones.
+     */
+    zIndex?: number;
 }
 
-export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
+export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex }) => {
     const [api, setApi] = useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = useState(0);
     const [loadedIndices, setLoadedIndices] = useState<Set<number>>(new Set<number>());
@@ -198,6 +204,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose }) => {
                 crossCloseIconColor="text-white"
                 crossCloseClassName="hidden md:block"
                 className="max-h-[86dvh] sm:max-h-[95dvh] w-full h-full p-0 md:max-w-2xl bg-black/95 overflow-hidden flex flex-col"
+                style={zIndex !== undefined ? { zIndex } : undefined}
+                overlayStyle={zIndex !== undefined ? { zIndex } : undefined}
                 onOpenAutoFocus={(e) => e.preventDefault()}
                 aria-describedby="photo-description"
             >

@@ -24,15 +24,10 @@ import type { Place } from '@/lib/types'
 
 // Mock ModalContext
 vi.mock('@/contexts/ModalContext', () => ({
-  useModalContext: () => ({
-    showPlaceModal: vi.fn(),
-    showPlacePhotos: vi.fn(),
-    showPlaceChat: vi.fn(),
-  }),
   useModalActions: () => ({
-    showPlaceModal: vi.fn(),
-    showPlacePhotos: vi.fn(),
-    showPlaceChat: vi.fn(),
+    pushPlace: vi.fn(),
+    pushPhotos: vi.fn(),
+    pushChat: vi.fn(),
   }),
 }))
 

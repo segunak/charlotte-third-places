@@ -36,6 +36,8 @@ interface DialogContentProps extends React.ComponentPropsWithoutRef<typeof Dialo
   crossCloseIconSize?: string;
   crossCloseIconColor?: string;
   crossCloseClassName?: string;
+  overlayClassName?: string;
+  overlayStyle?: React.CSSProperties;
 }
 
 const DialogContent = (
@@ -46,12 +48,14 @@ const DialogContent = (
     crossCloseIconSize = "h-5 w-5",
     crossCloseIconColor,
     crossCloseClassName,
+    overlayClassName,
+    overlayStyle,
     ...props
   }: DialogContentProps & {
     ref?: React.Ref<React.ComponentRef<typeof DialogPrimitive.Content>>;
   }
 ) => (<DialogPortal>
-  <DialogOverlay />
+  <DialogOverlay className={overlayClassName} style={overlayStyle} />
   <DialogPrimitive.Content
     ref={ref}
     data-slot="dialog-content"
