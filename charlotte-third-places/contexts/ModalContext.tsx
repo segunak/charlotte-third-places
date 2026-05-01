@@ -2,22 +2,13 @@
 
 import { Place } from "@/lib/types";
 import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { PlaceModal } from "@/components/PlaceModal";
 import dynamic from "next/dynamic";
 import React, { createContext, useCallback, useContext, useState, useEffect, useMemo, useRef } from "react";
 
-// Lazy-load modal components to reduce initial bundle and defer rendering work
-const PlaceModal = dynamic(
-    () => import("@/components/PlaceModal").then(mod => ({ default: mod.PlaceModal })),
-    {
-        ssr: false,
-        loading: () => (
-            <div className="fixed inset-0 flex items-center justify-center bg-background/80 z-50">
-                <LoadingSpinner />
-            </div>
-        ),
-    }
-);
-
+// PlaceModal is imported directly because place details are the primary app
+// interaction and should open without a first-click chunk loading state.
+// Less common modal surfaces stay lazy-loaded to keep the initial bundle focused.
 const PhotosModal = dynamic(
     () => import("@/components/PhotosModal").then(mod => ({ default: mod.PhotosModal })),
     {
@@ -42,9 +33,8 @@ const ChatModal = dynamic(
     }
 );
 
-// Preload modal chunks after page is interactive so first click is instant
+// Preload lazy modal chunks after page is interactive so their first open is fast.
 function preloadModalChunks() {
-    import("@/components/PlaceModal");
     import("@/components/PhotosModal");
     import("@/components/ChatModal");
 }
