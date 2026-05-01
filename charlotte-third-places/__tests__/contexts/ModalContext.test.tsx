@@ -11,7 +11,7 @@
  * - showAskAI is FALSE on a PlaceModal that sits above an earlier chat surface
  * - Browser back/forward gestures reduce and restore the stack from history entries
  * - useModalActions returns stable callback references across renders
- * - Modal chunks are preloaded via requestIdleCallback (with setTimeout fallback)
+ * - Lazy modal chunks are preloaded via requestIdleCallback (with setTimeout fallback)
  */
 
 import React from 'react'
@@ -34,11 +34,23 @@ vi.mock('@/components/ui/loading-spinner', () => ({
   LoadingSpinner: () => React.createElement('div', { 'data-testid': 'loading-spinner' }),
 }))
 
-// Mock the modal modules directly so that the raw `import("@/components/...")`
-// calls inside preloadModalChunks resolve synchronously to a no-op module.
-// Without these mocks, the in-flight dynamic imports outlive the test worker
-// and surface as unhandled rejections at process exit.
-vi.mock('@/components/PlaceModal', () => ({ PlaceModal: () => null }))
+// PlaceModal is imported directly by ModalContext, so its mock records props here.
+vi.mock('@/components/PlaceModal', () => ({
+  PlaceModal: (props: CapturedProps) => {
+    hoisted.capturedPlaceModalProps.push(props)
+    return props.open && props.place
+      ? React.createElement(
+          'div',
+          { 'data-testid': 'place-modal', 'data-z': props.zIndex, 'data-show-ask-ai': String(props.showAskAI) },
+          props.place.name
+        )
+      : null
+  },
+}))
+
+// Mock lazy modal modules so raw `import("@/components/...")` calls inside
+// preloadModalChunks resolve synchronously. Without these mocks, in-flight
+// dynamic imports can outlive the test worker and surface as exit rejections.
 vi.mock('@/components/PhotosModal', () => ({ PhotosModal: () => null }))
 vi.mock('@/components/ChatModal', () => ({ ChatModal: () => null }))
 
@@ -48,21 +60,6 @@ vi.mock('@/components/ChatModal', () => ({ ChatModal: () => null }))
 vi.mock('next/dynamic', () => ({
   default: (importFn: () => Promise<unknown>) => {
     const importStr = importFn.toString()
-    if (importStr.includes('PlaceModal')) {
-      hoisted.preloadedModules.push('PlaceModal')
-      const Mock = (props: CapturedProps) => {
-        hoisted.capturedPlaceModalProps.push(props)
-        return props.open && props.place
-          ? React.createElement(
-              'div',
-              { 'data-testid': 'place-modal', 'data-z': props.zIndex, 'data-show-ask-ai': String(props.showAskAI) },
-              props.place.name
-            )
-          : null
-      }
-      Mock.displayName = 'MockPlaceModal'
-      return Mock
-    }
     if (importStr.includes('PhotosModal')) {
       hoisted.preloadedModules.push('PhotosModal')
       const Mock = (props: CapturedProps) => {
@@ -131,6 +128,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     curatorPhotos: [],
     photos: [],
+    operatingHours: [],
     comments: '',
     featured: false,
     operational: 'Open',

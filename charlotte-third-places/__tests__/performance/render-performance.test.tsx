@@ -16,10 +16,8 @@
 
 import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
 
-// Mock dynamically imported modal components to prevent "Closing rpc while fetch was pending" errors.
-// ModalContext uses next/dynamic to lazy-load these components, which triggers async module fetches.
-// In CI, tests can complete before these fetches resolve, causing unhandled promise rejections.
-// Mocking eliminates the async fetch entirely, making tests faster and deterministic.
+// Mock modal components so performance tests measure provider update cost instead
+// of real modal rendering or lazy module loading.
 vi.mock('@/components/PlaceModal', () => ({
   PlaceModal: () => null
 }))
