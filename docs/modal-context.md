@@ -42,6 +42,7 @@ Places opened from chat are marked as chat-origin. That signal hides the Ask AI 
 
 - Treat the surface stack as the source of truth for rendered overlays.
 - Keep browser history and the visible stack in sync.
+- Keep place details on the fast path: `PlaceModal` is imported directly because it is the primary modal interaction.
 - Do not put browser history writes inside React state updater functions.
 - Keep modal actions stable so action-only consumers avoid unnecessary re-renders.
 - Preserve chat sessions when AI links point to places in this app.
