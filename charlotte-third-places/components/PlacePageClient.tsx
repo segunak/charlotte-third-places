@@ -184,7 +184,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                             <DrawerHeader>
                                                 <DrawerTitle>Photo Source Information</DrawerTitle>
                                                 <DrawerDescription className="text-white/90">
-                                                    Photos are sourced from Google Maps, the site curator, and community contributors.
+                                                    Photos come from publicly available sources, the site curator, and users. Use the Contribute page to request a takedown.
                                                 </DrawerDescription>
                                                 <DrawerClose asChild>
                                                     <Button variant="ghost" className="mt-4 text-white border border-white/20">Close</Button>
@@ -207,7 +207,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                             </Button>
                                         </TooltipTrigger>
                                         <TooltipContent side="left" className="max-w-[200px] text-center bg-black/80 text-white">
-                                            Photos are sourced from Google Maps, the site curator, and community contributors.
+                                            Photos come from publicly available sources, the site curator, and users. Use the Contribute page to request a takedown.
                                         </TooltipContent>
                                     </Tooltip>
                                 </TooltipProvider>

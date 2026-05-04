@@ -34,7 +34,6 @@ function createTestPlace(overrides: Partial<Place> = {}): Place {
     googleMapsProfileURL: '',
     appleMapsProfileURL: '',
     photos: [],
-    curatorPhotos: [],
     operatingHours: [],
     comments: '',
     latitude: 35.2271,

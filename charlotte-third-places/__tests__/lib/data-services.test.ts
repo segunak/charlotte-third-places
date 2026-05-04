@@ -1,122 +1,77 @@
 /**
  * Data Services Tests
  *
- * Tests for data transformation functions in lib/data-services.ts,
- * specifically the curator photo merging logic.
+ * Tests for the Photos-only display contract used by lib/data-services.ts.
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
+import { beforeAll, describe, expect, it } from 'vitest'
+import type { parsePhotoUrlArray as parsePhotoUrlArrayFn } from '@/lib/data-services'
 
-// We can't easily import the internal parsePythonStyleArray or mapRecordToPlace
-// because they're not exported. Instead, we test the behavior through the
-// Place object structure by mocking the Airtable record.
+let parsePhotoUrlArray: typeof parsePhotoUrlArrayFn
 
-// Test the Python-style array parsing logic that data-services uses
-describe('Photo Merging Logic', () => {
-  // Replicate the parsePythonStyleArray function logic for unit testing
-  function parsePythonStyleArray(value: string): string[] {
-    if (!value) return []
+beforeAll(async () => {
+  process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN = 'test-api-key'
+  const dataServices = await import('@/lib/data-services')
+  parsePhotoUrlArray = dataServices.parsePhotoUrlArray
+})
 
-    try {
-      if (value.trim().startsWith('[') && value.trim().endsWith(']')) {
-        const jsonString = value
-          .replace(/^\['/g, '["')
-          .replace(/'\]$/g, '"]')
-          .replace(/', '/g, '", "')
+describe('Photos field parsing', () => {
+  it('parses JSON array of Azure blob storage URLs', () => {
+    const input = '["https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg", "https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg"]'
 
-        try {
-          return JSON.parse(jsonString)
-        } catch {
-          const urlRegex = /(https?:\/\/[^',\s]+)/g
-          const matches = value.match(urlRegex)
-          if (matches && matches.length > 0) return matches
-          return value
-            .split(',')
-            .map((item) => item.trim().replace(/^\[['"]|['"]\]$|^['"]|['"]$/g, ''))
-            .filter(Boolean)
-        }
-      }
-      return [value]
-    } catch {
-      return []
-    }
-  }
-
-  describe('parsePythonStyleArray with blob storage URLs', () => {
-    it('parses JSON array of blob storage URLs', () => {
-      const input = '["https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg", "https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att456_interior.png"]'
-      const result = parsePythonStyleArray(input)
-      expect(result).toHaveLength(2)
-      expect(result[0]).toContain('thirdplacesdata.blob.core.windows.net')
-      expect(result[1]).toContain('att456_interior.png')
-    })
-
-    it('parses Python-style array of blob storage URLs', () => {
-      const input = "['https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg']"
-      const result = parsePythonStyleArray(input)
-      expect(result).toHaveLength(1)
-      expect(result[0]).toContain('thirdplacesdata.blob.core.windows.net')
-    })
-
-    it('returns empty array for empty input', () => {
-      expect(parsePythonStyleArray('')).toEqual([])
-      expect(parsePythonStyleArray(null as unknown as string)).toEqual([])
-    })
-
-    it('returns single URL in array for non-array input', () => {
-      const url = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/photo.jpg'
-      const result = parsePythonStyleArray(url)
-      expect(result).toEqual([url])
-    })
+    expect(parsePhotoUrlArray(input)).toEqual([
+      'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg',
+      'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg',
+    ])
   })
 
-  describe('curator photos merged before Google photos', () => {
-    it('curator photos appear first when both exist', () => {
-      const curatorPhotos = [
-        'https://thirdplacesdata.blob.core.windows.net/curator-photos/rec1/att1_photo.jpg',
-        'https://thirdplacesdata.blob.core.windows.net/curator-photos/rec1/att2_photo.jpg',
-      ]
-      const googlePhotos = [
-        'https://lh3.googleusercontent.com/photo1',
-        'https://lh3.googleusercontent.com/photo2',
-      ]
+  it('parses runtime arrays of URLs', () => {
+    const curatorUrl = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg'
+    const providerUrl = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
 
-      const merged = [...curatorPhotos, ...googlePhotos]
+    expect(parsePhotoUrlArray([curatorUrl, providerUrl])).toEqual([
+      curatorUrl,
+      providerUrl,
+    ])
+  })
 
-      expect(merged).toHaveLength(4)
-      expect(merged[0]).toContain('thirdplacesdata.blob.core.windows.net')
-      expect(merged[1]).toContain('thirdplacesdata.blob.core.windows.net')
-      expect(merged[2]).toContain('googleusercontent.com')
-      expect(merged[3]).toContain('googleusercontent.com')
-    })
+  it('ignores invalid items in runtime arrays', () => {
+    const url = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
 
-    it('returns only Google photos when no curator photos', () => {
-      const curatorPhotos: string[] = []
-      const googlePhotos = [
-        'https://lh3.googleusercontent.com/photo1',
-      ]
+    expect(parsePhotoUrlArray([url, '', '   ', null, 12])).toEqual([url])
+  })
 
-      const merged = [...curatorPhotos, ...googlePhotos]
+  it('returns empty array for Python-style array strings', () => {
+    const input = "['https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg']"
 
-      expect(merged).toHaveLength(1)
-      expect(merged[0]).toContain('googleusercontent.com')
-    })
+    expect(parsePhotoUrlArray(input)).toEqual([])
+  })
 
-    it('returns only curator photos when no Google photos', () => {
-      const curatorPhotos = [
-        'https://thirdplacesdata.blob.core.windows.net/curator-photos/rec1/att1_photo.jpg',
-      ]
-      const googlePhotos: string[] = []
+  it('preserves the curator-first order already stored in Photos', () => {
+    const curatorUrl = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/rec1/att1_photo.jpg'
+    const providerUrl = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
 
-      const merged = [...curatorPhotos, ...googlePhotos]
+    expect(parsePhotoUrlArray(JSON.stringify([curatorUrl, providerUrl]))).toEqual([
+      curatorUrl,
+      providerUrl,
+    ])
+  })
 
-      expect(merged).toHaveLength(1)
-      expect(merged[0]).toContain('thirdplacesdata.blob.core.windows.net')
-    })
+  it('returns empty array for empty input', () => {
+    expect(parsePhotoUrlArray('')).toEqual([])
+    expect(parsePhotoUrlArray('   ')).toEqual([])
+    expect(parsePhotoUrlArray(null)).toEqual([])
+  })
 
-    it('returns empty array when both are empty', () => {
-      const merged = [...[], ...[]]
-      expect(merged).toEqual([])
-    })
+  it('returns empty array for bare URL input', () => {
+    const url = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
+
+    expect(parsePhotoUrlArray(url)).toEqual([])
+  })
+
+  it('returns empty array for malformed JSON and non-array JSON', () => {
+    expect(parsePhotoUrlArray('["https://example.com/photo.jpg"')).toEqual([])
+    expect(parsePhotoUrlArray('"https://example.com/photo.jpg"')).toEqual([])
+    expect(parsePhotoUrlArray('{"url":"https://example.com/photo.jpg"}')).toEqual([])
   })
 })

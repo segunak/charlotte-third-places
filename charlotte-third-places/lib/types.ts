@@ -25,7 +25,6 @@ export type Place = {
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
     appleMapsProfileURL: string;
-    curatorPhotos: Array<string>;
     photos: Array<string>;
     comments: string;
     operatingHours: Array<string>;

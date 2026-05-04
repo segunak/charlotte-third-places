@@ -43,6 +43,25 @@ function isAirtableNotFoundError(error: unknown): boolean {
         || /not[_\s-]?found|could not find/i.test(maybeError.message ?? '');
 }
 
+function isNonEmptyString(value: unknown): value is string {
+    return typeof value === 'string' && value.trim().length > 0;
+}
+
+export function parsePhotoUrlArray(value: unknown): string[] {
+    if (Array.isArray(value)) {
+        return value.filter(isNonEmptyString);
+    }
+
+    if (typeof value !== 'string' || value.trim().length === 0) return [];
+
+    try {
+        const parsedValue = JSON.parse(value);
+        return Array.isArray(parsedValue) ? parsedValue.filter(isNonEmptyString) : [];
+    } catch {
+        return [];
+    }
+}
+
 /**
  * Generates a SHA1 hash from a given URL string.
  * 
@@ -174,46 +193,6 @@ const downloadImage = async (coverPhotoURL: string, recordId: string, placeName:
  * @returns A Place object.
  */
 const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
-    // Parse Python-style array string to JavaScript array
-    const parsePythonStyleArray = (value: string): string[] => {
-        if (!value) return [];
-
-        try {
-            // Handle Python-style arrays with single quotes
-            if (value.trim().startsWith('[') && value.trim().endsWith(']')) {
-                // Convert Python-style array to valid JSON format by replacing single quotes with double quotes
-                // but only for quotes that are part of the array syntax, not within URLs
-                const jsonString = value
-                    .replace(/^\['/g, '["')         // Replace opening [' with ["
-                    .replace(/'\]$/g, '"]')         // Replace closing '] with "]
-                    .replace(/', '/g, '", "');      // Replace ', ' with ", "
-
-                try {
-                    return JSON.parse(jsonString);
-                } catch (e) {
-                    // If the above replacement pattern fails, try this more general approach
-                    // Extract URLs directly using regex
-                    const urlRegex = /(https?:\/\/[^',\s]+)/g;
-                    const matches = value.match(urlRegex);
-                    if (matches && matches.length > 0) {
-                        return matches;
-                    }
-
-                    // Last resort: split by comma and clean up
-                    return value.split(',')
-                        .map(item => item.trim()
-                            .replace(/^\[['"]|['"]\]$|^['"]|['"]$/g, '')) // Remove brackets and quotes
-                        .filter(Boolean);
-                }
-            }
-
-            // If it's a single value, return it in an array
-            return [value];
-        } catch (e) {
-            console.warn(`Error parsing array value: ${value}`, e);
-            return [];
-        }
-    };
     const getField = (key: string): any => {
         if (isCSV) {
             const value = record[key];
@@ -226,9 +205,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
                     .filter((item: string) => item.length > 0)
                     .filter((item: string, idx: number, arr: string[]) => arr.indexOf(item) === idx);
             }
-            if (["Photos", "Curator Photo URLs"].includes(key)) {
-                if (!value) return [];
-                return parsePythonStyleArray(value);
+            if (key === "Photos") {
+                return parsePhotoUrlArray(value);
             }
             if (key === "Operating Hours") {
                 if (!value) return [];
@@ -249,12 +227,9 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
             // For Airtable records
             const value = record.get(key);
 
-            // Special handling for Photos and Curator Photo URLs fields from Airtable
-            if (key === "Photos" || key === "Curator Photo URLs") {
-                if (!value) return [];
-                // If it's already an array, return it
-                if (Array.isArray(value)) return value;
-                return parsePythonStyleArray(value);
+            // Special handling for Photos from Airtable
+            if (key === "Photos") {
+                return parsePhotoUrlArray(value);
             }
 
             // Parse Operating Hours JSON array from Airtable
@@ -300,8 +275,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
         googleMapsPlaceId: getField("Google Maps Place Id"),
         googleMapsProfileURL: getField("Google Maps Profile URL"),
         appleMapsProfileURL: getField("Apple Maps Profile URL"),
-        curatorPhotos: getField("Curator Photo URLs"),
-        photos: [...getField("Curator Photo URLs"), ...getField("Photos")],
+        photos: getField("Photos"),
         comments: getField("Comments"),
         operatingHours: getField("Operating Hours"),
         latitude: getField("Latitude"),
