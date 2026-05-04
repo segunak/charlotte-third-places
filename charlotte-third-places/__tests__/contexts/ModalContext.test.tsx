@@ -48,10 +48,23 @@ vi.mock('@/components/PlaceModal', () => ({
   },
 }))
 
+// PhotosModal is imported directly by ModalContext, so its mock records props here.
+vi.mock('@/components/PhotosModal', () => ({
+  PhotosModal: (props: CapturedProps) => {
+    hoisted.capturedPhotosModalProps.push(props)
+    return props.open && props.place
+      ? React.createElement(
+          'div',
+          { 'data-testid': 'photos-modal', 'data-z': props.zIndex },
+          `${props.place.name} Photos`
+        )
+      : null
+  },
+}))
+
 // Mock lazy modal modules so raw `import("@/components/...")` calls inside
 // preloadModalChunks resolve synchronously. Without these mocks, in-flight
 // dynamic imports can outlive the test worker and surface as exit rejections.
-vi.mock('@/components/PhotosModal', () => ({ PhotosModal: () => null }))
 vi.mock('@/components/ChatModal', () => ({ ChatModal: () => null }))
 
 // Mock next/dynamic so the dynamic imports resolve synchronously to a small
@@ -60,21 +73,6 @@ vi.mock('@/components/ChatModal', () => ({ ChatModal: () => null }))
 vi.mock('next/dynamic', () => ({
   default: (importFn: () => Promise<unknown>) => {
     const importStr = importFn.toString()
-    if (importStr.includes('PhotosModal')) {
-      hoisted.preloadedModules.push('PhotosModal')
-      const Mock = (props: CapturedProps) => {
-        hoisted.capturedPhotosModalProps.push(props)
-        return props.open && props.place
-          ? React.createElement(
-              'div',
-              { 'data-testid': 'photos-modal', 'data-z': props.zIndex },
-              `${props.place.name} Photos`
-            )
-          : null
-      }
-      Mock.displayName = 'MockPhotosModal'
-      return Mock
-    }
     if (importStr.includes('ChatModal')) {
       hoisted.preloadedModules.push('ChatModal')
       const Mock = (props: CapturedProps) => {
