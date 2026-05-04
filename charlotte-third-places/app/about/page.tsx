@@ -212,10 +212,10 @@ const frequentlyAskedQuestions = [
         content: (
             <div className="space-y-3">
                 <p>
-                    Most photos come from the Google Maps page of each place. In some cases, I also take my own photos or receive them from community members who want to share their experience. Curator and community-contributed photos appear first in the gallery, followed by Google Maps images.
+                    Photos come from publicly available sources, the site curator, and users who want to share their experience. Curator and user-submitted photos appear first in the gallery, followed by other publicly available photos.
                 </p>
                 <p>
-                    If you see a weird or unflattering image, or want a photo removed, contact me via the <Link className="custom-link" href="/contribute">Contribute</Link> page and I'll take care of it.
+                    If you see an image you want removed, contact me via the <Link className="custom-link" href="/contribute">Contribute</Link> page and I'll take care of it.
                 </p>
             </div>
         )

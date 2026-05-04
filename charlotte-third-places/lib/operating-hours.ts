@@ -3,6 +3,7 @@
  *
  * Operating hours are stored as a JSON array of strings in the canonical format:
  *   "Day: H AM/PM - H AM/PM" (on the hour) or "Day: H:MM AM/PM - H:MM AM/PM" (with minutes)
+ * 
  * Examples:
  *   "Monday: 3 PM - 8 PM"
  *   "Tuesday: 11 AM - 2 PM, 5 PM - 10 PM"

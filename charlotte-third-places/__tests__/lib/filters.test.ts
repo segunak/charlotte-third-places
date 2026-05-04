@@ -44,6 +44,7 @@ function createTestPlace(overrides: Partial<Place> = {}): Place {
     appleMapsProfileURL: 'https://maps.apple.com',
     photos: [],
     comments: '',
+    operatingHours: [],
     latitude: 35.2271,
     longitude: -80.8431,
     createdDate: new Date(),

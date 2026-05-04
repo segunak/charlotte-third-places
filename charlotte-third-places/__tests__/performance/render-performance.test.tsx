@@ -57,7 +57,6 @@ const createMockPlace = (overrides: Partial<Place> = {}): Place => ({
   parking: ['Free'],
   size: 'Medium',
   purchaseRequired: 'No',
-  curatorPhotos: [],
   photos: [],
   operatingHours: [],
   googleMapsProfileURL: 'https://maps.google.com',
