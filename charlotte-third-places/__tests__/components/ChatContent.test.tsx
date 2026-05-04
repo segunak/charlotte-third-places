@@ -90,7 +90,6 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
         googleMapsProfileURL: 'https://maps.google.com',
         appleMapsProfileURL: 'https://maps.apple.com',
         photos: [],
-        curatorPhotos: [],
         comments: '',
         latitude: 35.2271,
         longitude: -80.8431,

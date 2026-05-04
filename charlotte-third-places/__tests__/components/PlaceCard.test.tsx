@@ -62,7 +62,6 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     twitter: '',
     linkedIn: '',
     tags: [],
-    curatorPhotos: [],
     photos: [],
     operatingHours: [],
     featured: false,

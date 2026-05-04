@@ -66,6 +66,7 @@ const createMockPlace = (name: string): Place => ({
   appleMapsProfileURL: '',
   photos: [],
   comments: '',
+  operatingHours: [],
   createdDate: new Date('2024-01-01'),
   lastModifiedDate: new Date('2024-01-01'),
 })
