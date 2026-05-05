@@ -164,3 +164,4 @@ temp/
 # Storybook
 storybook-static/
 
+.playwright-mcp
