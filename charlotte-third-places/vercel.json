@@ -7,11 +7,12 @@
             2048,
             3840
         ],
+        "qualities": [
+            40,
+            75,
+            80
+        ],
         "remotePatterns": [
-            {
-                "protocol": "https",
-                "hostname": "lh3.googleusercontent.com"
-            },
             {
                 "protocol": "https",
                 "hostname": "thirdplacesdata.blob.core.windows.net"

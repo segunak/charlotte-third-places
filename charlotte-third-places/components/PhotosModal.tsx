@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Place } from "@/lib/types";
-import { cn, blurDataURL, optimizeGooglePhotoUrl } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { FC, useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
@@ -13,7 +13,6 @@ import {
     DialogContent,
     DialogTitle,
     DialogDescription,
-    DialogClose
 } from "@/components/ui/dialog";
 import {
     Carousel,
@@ -47,7 +46,6 @@ interface PhotosModalProps {
 export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex }) => {
     const [api, setApi] = useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = useState(0);
-    const [loadedIndices, setLoadedIndices] = useState<Set<number>>(new Set<number>());
     const [failedIndices, setFailedIndices] = useState<Set<number>>(new Set<number>());
     const [showThumbnails, setShowThumbnails] = useState(true);
     const dialogRef = useRef<HTMLDivElement>(null);
@@ -55,11 +53,10 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
     const hasResetScrollRef = useRef(false);
 
-    // Get photos array without filtering - move this to top level
     const photos = useMemo(() => (place?.photos ?? []), [place]);
+    const airtableRecordId = place?.recordId ?? '';
     const totalPhotos = photos.length;
 
-    // Build a filtered array of visible photos and a mapping to their original indices
     const visiblePhotoData = useMemo(() => {
         const arr: { photo: string; originalIdx: number }[] = [];
         photos.forEach((photo, idx) => {
@@ -69,25 +66,18 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
         });
         return arr;
     }, [photos, failedIndices]);
-    const visiblePhotos = visiblePhotoData.map((d) => d.photo);
-    const visibleToOriginalIdx = visiblePhotoData.map((d) => d.originalIdx);
+    const visiblePhotos = useMemo(() => visiblePhotoData.map((d) => d.photo), [visiblePhotoData]);
+    const visibleToOriginalIdx = useMemo(() => visiblePhotoData.map((d) => d.originalIdx), [visiblePhotoData]);
     const visibleSlideCount = visiblePhotos.length;
     const hasVisiblePhotos = visibleSlideCount > 0;
 
-    // Move all callback definitions to the top level
-    // Escape key handler
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') onClose();
     }, [onClose]);
 
-    // Helper to check if a slide is visible (not failed)
-    const isSlideVisible = useCallback((index: number) => !failedIndices.has(index), [failedIndices]);
-
-    // Function to handle image loading errors
-    const handleImageError = useCallback((index: number, photoUrl: string) => {
+    const markPhotoFailed = useCallback((index: number, photoUrl: string) => {
         console.error(`Failed to load image ${index + 1}: ${photoUrl}`);
         setFailedIndices(prev => {
-            // Avoid infinite loops if state update itself causes issues
             if (prev.has(index)) return prev;
             const updated = new Set(prev);
             updated.add(index);
@@ -109,16 +99,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     useEffect(() => {
         if (open && totalPhotos > 0) {
             setFailedIndices(new Set<number>());
-            setLoadedIndices(new Set<number>());
             setCurrentSlide(0);
             setShowThumbnails(true);
-            hasResetScrollRef.current = false; // Reset the ref on open
+            hasResetScrollRef.current = false;
         } else if (!open) {
-            setLoadedIndices(new Set<number>());
             setFailedIndices(new Set<number>());
             setCurrentSlide(0);
         }
-    }, [open, totalPhotos]); // Remove api from deps
+    }, [open, totalPhotos, airtableRecordId]);
 
     // Only scroll to first slide once per open event
     useEffect(() => {
@@ -126,32 +114,16 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
             hasResetScrollRef.current = true;
             api.scrollTo(0, true);
         }
-    }, [open, api, totalPhotos]);
+    }, [open, api, totalPhotos, airtableRecordId]);
 
-    // Handle carousel selection and update loaded state
+    // Handle carousel selection
     useEffect(() => {
         if (!api) return;
 
         const onSelect = () => {
             const selected = api.selectedScrollSnap();
-            // Only update state if the value has actually changed
-            // This prevents unnecessary re-renders
             if (selected !== currentSlide) {
                 setCurrentSlide(selected);
-
-                // Mark the original index as loaded only if we have valid data
-                if (selected >= 0 && selected < visibleToOriginalIdx.length) {
-                    const origIdx = visibleToOriginalIdx[selected];
-                    setLoadedIndices(prev => {
-                        // Only update if not already in the set
-                        if (!prev.has(origIdx)) {
-                            const updated = new Set(prev);
-                            updated.add(origIdx);
-                            return updated;
-                        }
-                        return prev;
-                    });
-                }
             }
         };
 
@@ -165,35 +137,37 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
         return () => {
             api.off("select", onSelect);
         };
-    }, [api, visibleToOriginalIdx, currentSlide]);
+    }, [api, currentSlide]);
 
-    // Helper: get indices to render (current, prev, next)
-    const activeIndices = useMemo(() => {
-        if (!hasVisiblePhotos) return new Set<number>();
-        const prev = (currentSlide - 1 + visiblePhotos.length) % visiblePhotos.length;
-        const next = (currentSlide + 1) % visiblePhotos.length;
-        return new Set([prev, currentSlide, next]);
-    }, [currentSlide, visiblePhotos.length, hasVisiblePhotos]);
-
-    // Preload next/prev images
     useEffect(() => {
+        if (!api) return;
+
+        api.reInit();
+
         if (!hasVisiblePhotos) return;
-        const preload = (idx: number) => {
-            const photo = visiblePhotos[idx];
-            if (!photo) return;
-            const img = new window.Image();
-            img.src = optimizeGooglePhotoUrl(photo, 800);
-        };
-        const indices = activeIndices;
-        indices.forEach(idx => {
-            if (idx !== currentSlide) preload(idx);
+
+        setCurrentSlide(prev => {
+            const targetSlide = Math.min(prev, visibleSlideCount - 1);
+            api.scrollTo(targetSlide, true);
+            return targetSlide;
         });
-    }, [currentSlide, visiblePhotos, activeIndices, hasVisiblePhotos]);
+    }, [api, visibleSlideCount, hasVisiblePhotos, airtableRecordId]);
+
+    const renderedSlideIndices = useMemo(() => {
+        if (!hasVisiblePhotos) return new Set<number>();
+        const indices = new Set<number>();
+        const radius = Math.min(2, visibleSlideCount - 1);
+
+        for (let offset = -radius; offset <= radius; offset += 1) {
+            indices.add((currentSlide + offset + visibleSlideCount) % visibleSlideCount);
+        }
+
+        return indices;
+    }, [currentSlide, visibleSlideCount, hasVisiblePhotos]);
 
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
 
-    // Determine if loop should be enabled - moved from hook to render time calculation
     const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
 
     return (
@@ -282,27 +256,25 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                         <CarouselContent className="h-full">
                             {visiblePhotos.map((photo, idx) => {
                                 const origIdx = visibleToOriginalIdx[idx];
-                                const isActive = activeIndices.has(idx);
-                                const quality = isActive ? 80 : 40;
-                                const width = isActive ? 1280 : 400;
-                                let isPriority = false;
-                                if (isActive) isPriority = true;
+                                const shouldRenderImage = renderedSlideIndices.has(idx);
+                                const isCurrentSlide = idx === currentSlide;
                                 return (
                                     <CarouselItem
                                         key={`photo-${origIdx}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        <div className="relative w-full h-[50dvh] md:h-[65dvh] max-h-full flex items-center justify-center">
-                                            {isActive ? (
+                                        <div className="relative w-full h-[50dvh] md:h-[65dvh] max-h-full flex items-center justify-center bg-black">
+                                            {shouldRenderImage ? (
                                                 <Image
-                                                    src={optimizeGooglePhotoUrl(photo, width)}
-                                                    alt={`${place?.name ?? ''} photo ${currentSlide + 1}`}
+                                                    src={photo}
+                                                    alt={`${place?.name ?? ''} photo ${idx + 1}`}
                                                     fill
-                                                    quality={quality}
-                                                    priority={isPriority}
-                                                    sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 1200px"
-                                                    placeholder="blur"
-                                                    blurDataURL={blurDataURL}
+                                                    quality={80}
+                                                    sizes="(max-width: 767px) 95vw, 672px"
+                                                    loading="eager"
+                                                    fetchPriority={isCurrentSlide ? "high" : "auto"}
+                                                    decoding="async"
+                                                    placeholder="empty"
                                                     className={cn(
                                                         "object-contain transition-opacity duration-300 ease-in-out",
                                                     )}
@@ -310,17 +282,11 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                         objectFit: 'contain',
                                                         objectPosition: 'center',
                                                     }}
-                                                    onLoad={() => {
-                                                        setLoadedIndices(prev => new Set(prev).add(origIdx));
-                                                    }}
-                                                    onError={() => handleImageError(origIdx, photo)}
-                                                    unoptimized={photo.includes('googleusercontent.com')}
+                                                    onError={() => markPhotoFailed(origIdx, photo)}
                                                     referrerPolicy="no-referrer"
                                                 />
                                             ) : (
-                                                <div className="w-full h-full flex items-center justify-center bg-gray-900/60 animate-pulse rounded">
-                                                    <svg className="h-12 w-12 text-gray-700" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" /><path d="M3 17l6-6 4 4 8-8" /></svg>
-                                                </div>
+                                                <div className="w-full h-full bg-black rounded" aria-hidden="true" />
                                             )}
                                         </div>
                                     </CarouselItem>
@@ -420,7 +386,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                 <button
                                                     key={`thumb-${origIdx}`}
                                                     className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative shrink-0",
+                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative shrink-0 bg-black",
                                                         "focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50",
                                                         idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50"
@@ -430,16 +396,16 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                     aria-label={`Go to photo ${thumbVisibleNumber}`}
                                                 >
                                                     <Image
-                                                        src={optimizeGooglePhotoUrl(photo, 100)}
+                                                        src={photo}
                                                         alt={`Thumbnail ${thumbVisibleNumber}`}
                                                         fill
+                                                        quality={40}
                                                         sizes="64px"
                                                         className="object-cover"
-                                                        placeholder="blur"
-                                                        blurDataURL={blurDataURL}
+                                                        loading="lazy"
+                                                        placeholder="empty"
                                                         referrerPolicy="no-referrer"
-                                                        unoptimized={photo.includes('googleusercontent.com')}
-                                                        onError={() => handleImageError(origIdx, photo)}
+                                                        onError={() => markPhotoFailed(origIdx, photo)}
                                                     />
                                                 </button>
                                             );
@@ -449,8 +415,6 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                 </ScrollArea>
                             )}
                         </div>
-
-                        {/* Remove inaccurate counter at the bottom under thumbnails */}
                     </div>
                 )}
 
