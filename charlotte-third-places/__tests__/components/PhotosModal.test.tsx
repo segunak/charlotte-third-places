@@ -83,6 +83,11 @@ describe('PhotosModal', () => {
   beforeEach(() => {
     vi.clearAllMocks()
     mockIsMobile = false // Reset to desktop by default
+    Object.defineProperty(window, 'innerWidth', {
+      writable: true,
+      configurable: true,
+      value: 1024,
+    })
   })
 
   describe('Visibility Logic', () => {
@@ -206,12 +211,86 @@ describe('PhotosModal', () => {
   })
 
   describe('Dialog Styling', () => {
-    it('has correct max-width class for desktop', () => {
+    it('has correct max-width classes for desktop', () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
       const dialogContent = document.querySelector('[data-slot="dialog-content"]')
-      expect(dialogContent).toHaveClass('md:max-w-2xl')
+      expect(dialogContent).toHaveClass('md:max-w-3xl')
+      expect(dialogContent).not.toHaveClass('md:max-w-4xl')
+      expect(dialogContent).not.toHaveClass('lg:max-w-5xl')
+    })
+
+    it('uses larger image container sizing', () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const imageContainer = screen.getByAltText('Test Coffee Shop photo 1').parentElement
+      expect(imageContainer).toHaveClass('h-[52dvh]')
+      expect(imageContainer).toHaveClass('md:h-[72dvh]')
+      expect(imageContainer).toHaveClass('lg:h-[76dvh]')
+    })
+
+    it('uses responsive main image sizes for the capped modal', () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute(
+        'sizes',
+        '(max-width: 767px) 95vw, 768px'
+      )
+    })
+
+    it('uses the standard carousel content structure', () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const carouselContent = document.querySelector('[data-slot="carousel-content"]')
+      const carouselViewport = carouselContent?.parentElement
+
+      expect(carouselViewport).toHaveClass('overflow-hidden')
+      expect(carouselContent).toHaveClass('flex')
+      expect(carouselContent).toHaveClass('-ml-4')
+      expect(carouselContent).not.toHaveClass('will-change-transform')
+      expect(carouselContent).not.toHaveClass('transform-gpu')
+    })
+
+    it('keeps slides full width on mobile and desktop', () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const carouselItem = document.querySelector('[data-slot="carousel-item"]')
+      expect(carouselItem).not.toHaveClass('basis-[calc(100%-2rem)]')
+      expect(carouselItem).not.toHaveClass('md:basis-full')
+    })
+
+    it('shows mobile navigation arrows with touch-sized targets', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const previousButton = screen.getByRole('button', { name: 'Previous photo' })
+      const nextButton = screen.getByRole('button', { name: 'Next photo' })
+
+      expect(previousButton).toHaveClass('flex')
+      expect(previousButton).not.toHaveClass('hidden')
+      expect(previousButton).toHaveClass('left-3')
+      expect(previousButton).toHaveClass('h-11')
+      expect(previousButton).toHaveClass('w-11')
+      expect(previousButton).toHaveClass('disabled:bg-black/25')
+      expect(previousButton).toHaveClass('disabled:text-white/35')
+      expect(nextButton).toHaveClass('flex')
+      expect(nextButton).not.toHaveClass('hidden')
+      expect(nextButton).toHaveClass('right-3')
+      expect(nextButton).toHaveClass('h-11')
+      expect(nextButton).toHaveClass('w-11')
+      expect(nextButton).toHaveClass('disabled:bg-black/25')
+      expect(nextButton).toHaveClass('disabled:text-white/35')
     })
 
     it('has full width on mobile', () => {
@@ -233,28 +312,92 @@ describe('PhotosModal', () => {
   })
 
   describe('Thumbnails', () => {
-    it('shows thumbnails section when multiple photos exist', () => {
+    it('shows thumbnails by default on desktop when multiple photos exist', async () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
-      // Should show Hide Thumbnails button when thumbnails are visible
-      // Use getByRole to avoid matching the sr-only span
-      const toggleButton = screen.getByRole('button', { name: /thumbnails/i })
-      expect(toggleButton).toBeInTheDocument()
-      expect(toggleButton).toHaveAttribute('aria-expanded', 'true')
+      await waitFor(() => {
+        const toggleButton = screen.getByRole('button', { name: /hide thumbnails/i })
+        expect(toggleButton).toBeInTheDocument()
+        expect(toggleButton).toHaveAttribute('aria-expanded', 'true')
+      })
     })
 
-    it('toggles thumbnails visibility when button is clicked', () => {
+    it('hides thumbnails by default on mobile when multiple photos exist', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
-      // Find and click the toggle button
-      const toggleButton = screen.getByRole('button', { name: /thumbnails/i })
+      const toggleButton = screen.getByRole('button', { name: /show thumbnails/i })
+      const thumbnailScrollArea = document.getElementById('thumbnail-scroll-area')
+
+      expect(toggleButton).toHaveAttribute('aria-expanded', 'false')
+      expect(toggleButton).toHaveClass('text-white/80')
+      expect(toggleButton).toHaveClass('py-0.5')
+      expect(toggleButton).toHaveClass('h-auto')
+      expect(toggleButton).toHaveClass('text-xs')
+      expect(toggleButton.querySelector('svg')).toBeInTheDocument()
+      expect(thumbnailScrollArea).toHaveClass('h-0')
+      expect(screen.queryByRole('button', { name: 'Go to photo 1' })).not.toBeInTheDocument()
+    })
+
+    it('expands thumbnails when mobile toggle is clicked', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const toggleButton = screen.getByRole('button', { name: /show thumbnails/i })
+      fireEvent.click(toggleButton)
+
+      const expandedToggleButton = screen.getByRole('button', { name: /hide thumbnails/i })
+      expect(expandedToggleButton).toHaveAttribute('aria-expanded', 'true')
+      expect(screen.getByRole('button', { name: 'Go to photo 1' })).toBeInTheDocument()
+    })
+
+    it('toggles thumbnails visibility when button is clicked', async () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const toggleButton = await screen.findByRole('button', { name: /hide thumbnails/i })
       expect(toggleButton).toHaveAttribute('aria-expanded', 'true')
       fireEvent.click(toggleButton)
 
-      // Should now be collapsed
-      expect(toggleButton).toHaveAttribute('aria-expanded', 'false')
+      const collapsedToggleButton = screen.getByRole('button', { name: /show thumbnails/i })
+      expect(collapsedToggleButton).toHaveAttribute('aria-expanded', 'false')
+    })
+
+    it('uses compact thumbnail sizing', async () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const thumbnailScrollArea = document.getElementById('thumbnail-scroll-area')
+
+      await waitFor(() => {
+        expect(screen.getByRole('button', { name: 'Go to photo 1' })).toBeInTheDocument()
+      })
+
+      const thumbnailButton = screen.getByRole('button', { name: 'Go to photo 1' })
+      expect(thumbnailScrollArea).toHaveClass('h-20')
+      expect(thumbnailScrollArea).toHaveClass('px-3')
+      expect(thumbnailScrollArea).toHaveClass('pb-1')
+      expect(thumbnailButton).toHaveClass('w-12')
+      expect(thumbnailButton).toHaveClass('h-12')
+      expect(thumbnailButton).toHaveClass('md:w-14')
+      expect(thumbnailButton).toHaveClass('md:h-14')
+      expect(screen.getByAltText('Thumbnail 1')).toHaveAttribute(
+        'sizes',
+        '(max-width: 767px) 48px, 56px'
+      )
     })
   })
 

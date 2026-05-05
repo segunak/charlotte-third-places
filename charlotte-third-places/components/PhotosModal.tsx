@@ -47,11 +47,16 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     const [api, setApi] = useState<CarouselApi>();
     const [currentSlide, setCurrentSlide] = useState(0);
     const [failedIndices, setFailedIndices] = useState<Set<number>>(new Set<number>());
-    const [showThumbnails, setShowThumbnails] = useState(true);
+    const [showThumbnails, setShowThumbnails] = useState(false);
     const dialogRef = useRef<HTMLDivElement>(null);
     const isMobile = useIsMobile();
     const [showInfoDrawer, setShowInfoDrawer] = useState(false);
     const hasResetScrollRef = useRef(false);
+
+    const getDefaultThumbnailVisibility = useCallback(() => {
+        if (typeof window === 'undefined') return false;
+        return !isMobile && window.innerWidth >= 768;
+    }, [isMobile]);
 
     const photos = useMemo(() => (place?.photos ?? []), [place]);
     const airtableRecordId = place?.recordId ?? '';
@@ -100,13 +105,13 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
         if (open && totalPhotos > 0) {
             setFailedIndices(new Set<number>());
             setCurrentSlide(0);
-            setShowThumbnails(true);
+            setShowThumbnails(getDefaultThumbnailVisibility());
             hasResetScrollRef.current = false;
         } else if (!open) {
             setFailedIndices(new Set<number>());
             setCurrentSlide(0);
         }
-    }, [open, totalPhotos, airtableRecordId]);
+    }, [open, totalPhotos, airtableRecordId, getDefaultThumbnailVisibility]);
 
     // Only scroll to first slide once per open event
     useEffect(() => {
@@ -168,7 +173,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     // Early return - important to place after all hooks are defined
     if (!place || totalPhotos === 0) return null;
 
-    const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
+    const enableLoop = false;
 
     return (
         <Dialog open={open} onOpenChange={onClose}>
@@ -177,7 +182,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                 crossCloseIconSize="h-7 w-7"
                 crossCloseIconColor="text-white"
                 crossCloseClassName="hidden md:block"
-                className="max-h-[86dvh] sm:max-h-[95dvh] w-full h-full p-0 md:max-w-2xl bg-black/95 overflow-hidden flex flex-col"
+                className="max-h-[86dvh] sm:max-h-[95dvh] w-full h-full p-0 md:max-w-3xl bg-black/95 overflow-hidden flex flex-col"
                 style={zIndex !== undefined ? { zIndex } : undefined}
                 overlayStyle={zIndex !== undefined ? { zIndex } : undefined}
                 onOpenAutoFocus={(e) => e.preventDefault()}
@@ -263,14 +268,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                         key={`photo-${origIdx}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        <div className="relative w-full h-[50dvh] md:h-[65dvh] max-h-full flex items-center justify-center bg-black">
+                                        <div className="relative w-full h-[52dvh] md:h-[72dvh] lg:h-[76dvh] max-h-full flex items-center justify-center bg-black">
                                             {shouldRenderImage ? (
                                                 <Image
                                                     src={photo}
                                                     alt={`${place?.name ?? ''} photo ${idx + 1}`}
                                                     fill
                                                     quality={80}
-                                                    sizes="(max-width: 767px) 95vw, 672px"
+                                                    sizes="(max-width: 767px) 95vw, 768px"
                                                     loading="eager"
                                                     fetchPriority={isCurrentSlide ? "high" : "auto"}
                                                     decoding="async"
@@ -294,7 +299,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                             })}
                         </CarouselContent>
 
-                        {/* Navigation controls - only show if multiple visible photos and not on mobile */}
+                        {/* Navigation controls - show for every viewport when multiple photos exist */}
                         {visibleSlideCount > 1 && (
                             <>
                                 <CarouselPrevious
@@ -302,8 +307,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                     size="icon"
                                     iconClassName="h-7 w-7"
                                     className={cn(
-                                        "hidden md:flex absolute left-2 md:left-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
-                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
+                                        "flex absolute left-3 md:left-4 top-1/2 -translate-y-1/2 h-11 w-11 md:h-8 md:w-8 bg-black/45 hover:bg-black/70 rounded-full text-white z-20",
+                                        "border border-white/15 disabled:bg-black/25 disabled:text-white/35 disabled:border-white/10 disabled:opacity-45",
                                         "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                                     )}
                                     aria-label="Previous photo"
@@ -313,8 +318,8 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                     size="icon"
                                     iconClassName="h-7 w-7"
                                     className={cn(
-                                        "hidden md:flex absolute right-2 md:right-4 top-1/2 -translate-y-1/2 bg-black/50 hover:bg-black/70 rounded-full text-white z-20",
-                                        "border-none disabled:bg-black/30 disabled:text-gray-500 disabled:opacity-50",
+                                        "flex absolute right-3 md:right-4 top-1/2 -translate-y-1/2 h-11 w-11 md:h-8 md:w-8 bg-black/45 hover:bg-black/70 rounded-full text-white z-20",
+                                        "border border-white/15 disabled:bg-black/25 disabled:text-white/35 disabled:border-white/10 disabled:opacity-45",
                                         "focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black"
                                     )}
                                     aria-label="Next photo"
@@ -373,12 +378,12 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                             id="thumbnail-scroll-area"
                             className={cn(
                                 "transition-[height] duration-300 ease-in-out overflow-hidden",
-                                showThumbnails ? "h-24 px-4 pb-2" : "h-0"
+                                showThumbnails ? "h-20 px-3 pb-1" : "h-0"
                             )}
                         >
                             {showThumbnails && (
                                 <ScrollArea className="h-full w-full whitespace-nowrap rounded-md">
-                                    <div className="inline-flex gap-2 py-2">
+                                    <div className="inline-flex gap-2 py-1">
                                         {visiblePhotos.map((photo, idx) => {
                                             const origIdx = visibleToOriginalIdx[idx];
                                             const thumbVisibleNumber = idx + 1;
@@ -386,7 +391,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                 <button
                                                     key={`thumb-${origIdx}`}
                                                     className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative shrink-0 bg-black",
+                                                        "w-12 h-12 md:w-14 md:h-14 rounded-md overflow-hidden transition-all duration-200 relative shrink-0 bg-black",
                                                         "focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 focus-visible:ring-offset-black/50",
                                                         idx === currentSlide
                                                             ? "ring-2 ring-primary ring-offset-2 ring-offset-black/50"
@@ -400,7 +405,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                         alt={`Thumbnail ${thumbVisibleNumber}`}
                                                         fill
                                                         quality={40}
-                                                        sizes="64px"
+                                                        sizes="(max-width: 767px) 48px, 56px"
                                                         className="object-cover"
                                                         loading="lazy"
                                                         placeholder="empty"
