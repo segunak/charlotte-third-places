@@ -227,10 +227,11 @@ describe('PhotosModal', () => {
 
       const imageContainer = screen.getByAltText('Test Coffee Shop photo 1').parentElement
       // Mobile is shorter (h-[48dvh]) to make room for the always-visible
-      // filmstrip below the photo on mobile. Desktop keeps the larger sizes.
+      // filmstrip below the photo on mobile. Desktop uses calc() to subtract
+      // modal chrome (top bar + thumbnail rail + close bar) so the full image
+      // fits inside the capped modal without bottom clipping.
       expect(imageContainer).toHaveClass('h-[48dvh]')
-      expect(imageContainer).toHaveClass('md:h-[72dvh]')
-      expect(imageContainer).toHaveClass('lg:h-[76dvh]')
+      expect(imageContainer).toHaveClass('md:h-[calc(95dvh-280px)]')
     })
 
     it('uses responsive main image sizes for the capped modal', () => {
