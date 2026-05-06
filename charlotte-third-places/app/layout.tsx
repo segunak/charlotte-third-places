@@ -92,6 +92,12 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   const shouldInjectToolbar = process.env.NODE_ENV === 'development';
+  // Vercel auto-injects VERCEL_ENV ("production" | "preview" | "development").
+  // Preview deployments sit behind deployment protection; the browser's service
+  // worker fetch can't carry the bypass header, so registration fails with a
+  // 401 noise console error. Suppress SW registration on preview only —
+  // production keeps the service worker.
+  const disableServiceWorker = process.env.VERCEL_ENV === 'preview';
   return (
     <html lang="en" suppressHydrationWarning className={fontSans.className}>
       <head>
@@ -119,7 +125,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           fontCard.variable
         )}
       >
-        <SerwistProvider swUrl="/serwist/sw.js">
+        <SerwistProvider swUrl="/serwist/sw.js" disable={disableServiceWorker}>
           <ThemeProvider>
             <ThemeColorSync />
             <ModalProvider>

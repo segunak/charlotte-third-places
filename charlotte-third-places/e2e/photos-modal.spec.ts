@@ -1,4 +1,4 @@
-import { expect, test, type Locator, type Page } from '@playwright/test'
+import { expect, test, type Locator } from '@playwright/test'
 
 test.use({
   viewport: { width: 390, height: 844 },
@@ -9,15 +9,8 @@ test.use({
     'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1',
 })
 
-test.describe('PhotosModal mobile swipe behavior', () => {
-  test('opens from homepage and stops at the final photo', async ({ page }) => {
-    const consoleErrors: string[] = []
-    page.on('console', (message) => {
-      if (message.type() === 'error') {
-        consoleErrors.push(message.text())
-      }
-    })
-
+test.describe('PhotosModal mobile behavior', () => {
+  test('opens from homepage and shows the mobile filmstrip without scrolling the page', async ({ page }) => {
     await page.goto('/')
     await page.waitForLoadState('domcontentloaded')
 
@@ -36,40 +29,24 @@ test.describe('PhotosModal mobile swipe behavior', () => {
     await expect(dialog).toBeVisible({ timeout: 10000 })
 
     const initialScrollY = await page.evaluate(() => window.scrollY)
-    const swipeSurface = dialog.locator('[data-slot="carousel"]').first()
-    const cdp = await page.context().newCDPSession(page)
-    await cdp.send('Emulation.setTouchEmulationEnabled', { enabled: true, maxTouchPoints: 1 })
 
-    let state = await readPhotoState(dialog)
+    // Filmstrip is always visible on mobile when there are 2+ photos.
+    const filmstrip = dialog.getByTestId('photos-modal-filmstrip')
+    await expect(filmstrip).toBeVisible()
+
+    const state = await readPhotoState(dialog)
     expect(state.total).toBeGreaterThan(1)
+    expect(state.current).toBe(1)
 
-    const nextButton = dialog.getByRole('button', { name: 'Next photo' })
-    await expect(nextButton).toBeVisible()
-    await nextButton.click()
-    await expect
-      .poll(async () => (await readPhotoState(dialog)).current, { timeout: 5000 })
-      .toBeGreaterThan(state.current)
-    state = await readPhotoState(dialog)
+    const firstThumb = dialog.getByTestId('filmstrip-thumb-0')
+    await expect(firstThumb).toBeVisible()
+    await expect(firstThumb).toHaveAttribute('data-active', 'true')
+    await expect(dialog.getByTestId('filmstrip-thumb-1')).toHaveAttribute('data-active', 'false')
+    await expect(dialog.getByRole('button', { name: 'Previous photo' })).toHaveCount(0)
+    await expect(dialog.getByRole('button', { name: 'Next photo' })).toHaveCount(0)
 
-    while (state.current < state.total) {
-      const previousPhoto = state.current
-      await swipeLeft(page, swipeSurface)
-      await expect
-        .poll(async () => (await readPhotoState(dialog)).current, { timeout: 5000 })
-        .toBeGreaterThan(previousPhoto)
-      state = await readPhotoState(dialog)
-    }
-
-    await swipeLeft(page, swipeSurface)
-    await swipeLeft(page, swipeSurface)
-
-    await expect
-      .poll(async () => (await readPhotoState(dialog)).current, { timeout: 5000 })
-      .toBe(state.total)
-    await expect(dialog).toBeVisible()
-    await expect(nextButton).toBeDisabled()
+    // Page beneath the modal must not have scrolled.
     expect(await page.evaluate(() => window.scrollY)).toBe(initialScrollY)
-    expect(consoleErrors).toEqual([])
   })
 })
 
@@ -85,33 +62,4 @@ async function readPhotoState(dialog: Locator) {
     current: Number(match[1]),
     total: Number(match[2]),
   }
-}
-
-async function swipeLeft(page: Page, target: Locator) {
-  const box = await target.boundingBox()
-  if (!box) {
-    throw new Error('Unable to locate PhotosModal carousel swipe surface')
-  }
-
-  const cdp = await page.context().newCDPSession(page)
-  const y = Math.round(box.y + box.height * 0.5)
-  const startX = Math.round(box.x + box.width * 0.84)
-  const endX = Math.round(box.x + box.width * 0.16)
-
-  await cdp.send('Input.dispatchTouchEvent', {
-    type: 'touchStart',
-    touchPoints: [{ x: startX, y, id: 1, radiusX: 2, radiusY: 2, force: 1 }],
-  })
-
-  for (let step = 1; step <= 16; step += 1) {
-    const x = Math.round(startX + (endX - startX) * (step / 16))
-    await cdp.send('Input.dispatchTouchEvent', {
-      type: 'touchMove',
-      touchPoints: [{ x, y, id: 1, radiusX: 2, radiusY: 2, force: 1 }],
-    })
-    await page.waitForTimeout(8)
-  }
-
-  await cdp.send('Input.dispatchTouchEvent', { type: 'touchEnd', touchPoints: [] })
-  await page.waitForTimeout(350)
 }

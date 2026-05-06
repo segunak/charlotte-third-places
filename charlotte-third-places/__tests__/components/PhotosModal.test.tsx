@@ -226,7 +226,9 @@ describe('PhotosModal', () => {
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
       const imageContainer = screen.getByAltText('Test Coffee Shop photo 1').parentElement
-      expect(imageContainer).toHaveClass('h-[52dvh]')
+      // Mobile is shorter (h-[48dvh]) to make room for the always-visible
+      // filmstrip below the photo on mobile. Desktop keeps the larger sizes.
+      expect(imageContainer).toHaveClass('h-[48dvh]')
       expect(imageContainer).toHaveClass('md:h-[72dvh]')
       expect(imageContainer).toHaveClass('lg:h-[76dvh]')
     })
@@ -264,7 +266,7 @@ describe('PhotosModal', () => {
       expect(carouselItem).not.toHaveClass('md:basis-full')
     })
 
-    it('shows mobile navigation arrows with touch-sized targets', () => {
+    it('does not render navigation arrows on mobile (filmstrip is the navigation)', () => {
       mockIsMobile = true
       Object.defineProperty(window, 'innerWidth', {
         writable: true,
@@ -274,23 +276,26 @@ describe('PhotosModal', () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
+      expect(screen.queryByRole('button', { name: 'Previous photo' })).not.toBeInTheDocument()
+      expect(screen.queryByRole('button', { name: 'Next photo' })).not.toBeInTheDocument()
+    })
+
+    it('shows desktop navigation arrows on desktop with subtle styling', () => {
+      mockIsMobile = false
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
       const previousButton = screen.getByRole('button', { name: 'Previous photo' })
       const nextButton = screen.getByRole('button', { name: 'Next photo' })
 
-      expect(previousButton).toHaveClass('flex')
-      expect(previousButton).not.toHaveClass('hidden')
-      expect(previousButton).toHaveClass('left-3')
-      expect(previousButton).toHaveClass('h-11')
-      expect(previousButton).toHaveClass('w-11')
-      expect(previousButton).toHaveClass('disabled:bg-black/25')
-      expect(previousButton).toHaveClass('disabled:text-white/35')
-      expect(nextButton).toHaveClass('flex')
-      expect(nextButton).not.toHaveClass('hidden')
-      expect(nextButton).toHaveClass('right-3')
-      expect(nextButton).toHaveClass('h-11')
-      expect(nextButton).toHaveClass('w-11')
-      expect(nextButton).toHaveClass('disabled:bg-black/25')
-      expect(nextButton).toHaveClass('disabled:text-white/35')
+      expect(previousButton).toHaveClass('md:flex')
+      expect(previousButton).toHaveClass('left-4')
+      expect(previousButton).toHaveClass('h-8')
+      expect(previousButton).toHaveClass('w-8')
+      expect(nextButton).toHaveClass('md:flex')
+      expect(nextButton).toHaveClass('right-4')
+      expect(nextButton).toHaveClass('h-8')
+      expect(nextButton).toHaveClass('w-8')
     })
 
     it('has full width on mobile', () => {
@@ -333,20 +338,15 @@ describe('PhotosModal', () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
-      const toggleButton = screen.getByRole('button', { name: /show thumbnails/i })
-      const thumbnailScrollArea = document.getElementById('thumbnail-scroll-area')
-
-      expect(toggleButton).toHaveAttribute('aria-expanded', 'false')
-      expect(toggleButton).toHaveClass('text-white/80')
-      expect(toggleButton).toHaveClass('py-0.5')
-      expect(toggleButton).toHaveClass('h-auto')
-      expect(toggleButton).toHaveClass('text-xs')
-      expect(toggleButton.querySelector('svg')).toBeInTheDocument()
-      expect(thumbnailScrollArea).toHaveClass('h-0')
-      expect(screen.queryByRole('button', { name: 'Go to photo 1' })).not.toBeInTheDocument()
+      // The desktop togglable thumbnail rail ("Show/Hide thumbnails" pill +
+      // ScrollArea) should NOT exist on mobile — we render the always-visible
+      // mobile filmstrip instead.
+      expect(screen.queryByRole('button', { name: /show thumbnails/i })).not.toBeInTheDocument()
+      expect(screen.queryByRole('button', { name: /hide thumbnails/i })).not.toBeInTheDocument()
+      expect(document.getElementById('thumbnail-scroll-area')).not.toBeInTheDocument()
     })
 
-    it('expands thumbnails when mobile toggle is clicked', () => {
+    it('renders the always-visible mobile filmstrip when multiple photos exist', () => {
       mockIsMobile = true
       Object.defineProperty(window, 'innerWidth', {
         writable: true,
@@ -356,12 +356,74 @@ describe('PhotosModal', () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
-      const toggleButton = screen.getByRole('button', { name: /show thumbnails/i })
-      fireEvent.click(toggleButton)
+      const filmstrip = screen.getByTestId('photos-modal-filmstrip')
+      const track = screen.getByTestId('photos-modal-filmstrip-track')
+      expect(filmstrip).toBeInTheDocument()
+      expect(filmstrip).toHaveClass('overflow-x-auto')
+      expect(filmstrip).toHaveClass('[touch-action:pan-x]')
+      expect(track).toHaveClass('px-3')
+      expect(track).not.toHaveAttribute('style')
 
-      const expandedToggleButton = screen.getByRole('button', { name: /hide thumbnails/i })
-      expect(expandedToggleButton).toHaveAttribute('aria-expanded', 'true')
-      expect(screen.getByRole('button', { name: 'Go to photo 1' })).toBeInTheDocument()
+      // One thumb per photo, with stable test IDs.
+      expect(screen.getByTestId('filmstrip-thumb-0')).toBeInTheDocument()
+      expect(screen.getByTestId('filmstrip-thumb-1')).toBeInTheDocument()
+      expect(screen.getByTestId('filmstrip-thumb-2')).toBeInTheDocument()
+      expect(screen.queryByTestId('filmstrip-thumb-3')).not.toBeInTheDocument()
+    })
+
+    it('marks the first filmstrip thumb active on initial render', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      expect(screen.getByTestId('filmstrip-thumb-0')).toHaveAttribute('data-active', 'true')
+      expect(screen.getByTestId('filmstrip-thumb-0')).toHaveAttribute('aria-current', 'true')
+      expect(screen.getByTestId('filmstrip-thumb-1')).toHaveAttribute('data-active', 'false')
+      expect(screen.getByTestId('filmstrip-thumb-1')).toHaveAttribute('aria-current', 'false')
+      expect(screen.getByTestId('filmstrip-thumb-2')).toHaveAttribute('data-active', 'false')
+    })
+
+    it('uses 40×40 plain images inside filmstrip thumbs', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const thumbButton = screen.getByTestId('filmstrip-thumb-0')
+      const img = thumbButton.querySelector('img')
+
+      expect(img).toBeInTheDocument()
+      expect(img).toHaveAttribute('width', '40')
+      expect(img).toHaveAttribute('height', '40')
+      expect(img).toHaveAttribute('loading', 'lazy')
+      expect(img).toHaveAttribute(
+        'src',
+        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp'
+      )
+    })
+
+    it('does not render the mobile filmstrip when only one photo exists', () => {
+      mockIsMobile = true
+      Object.defineProperty(window, 'innerWidth', {
+        writable: true,
+        configurable: true,
+        value: 390,
+      })
+      const place = createMockPlace({
+        photos: ['https://thirdplacesdata.blob.core.windows.net/photos/rec123456/only.webp'],
+      })
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      expect(screen.queryByTestId('photos-modal-filmstrip')).not.toBeInTheDocument()
     })
 
     it('toggles thumbnails visibility when button is clicked', async () => {
