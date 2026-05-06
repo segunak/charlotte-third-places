@@ -388,7 +388,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                         key={`photo-${origIdx}`}
                                         className="flex items-center justify-center h-full p-1 md:p-2"
                                     >
-                                        <div className="relative w-full h-[48dvh] md:h-[72dvh] lg:h-[76dvh] max-h-full flex items-center justify-center bg-black">
+                                        <div className="relative w-full h-[48dvh] md:h-[calc(95dvh-280px)] max-h-full flex items-center justify-center bg-black">
                                             {shouldRenderImage ? (
                                                 <Image
                                                     src={photo}
