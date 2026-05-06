@@ -138,7 +138,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
         return new Set([prev, currentSlide, next]);
     }, [currentSlide, visiblePhotos.length, hasVisiblePhotos]);
 
-    const enableLoop = hasVisiblePhotos && visibleSlideCount > 1;
+    const enableLoop = false;
     return (
         <div id={id} className="px-4 sm:px-6 py-8 space-y-6 mx-auto max-w-full lg:max-w-3xl">
             <h1 className="text-3xl sm:text-4xl font-bold text-center leading-tight border-b pb-4 mb-6 flex items-center justify-center gap-3">
