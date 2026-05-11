@@ -1,7 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import axios from 'axios';
-import crypto from 'crypto';
 import Airtable from 'airtable';
 import csvParser from 'csv-parser';
 import { Place } from '@/lib/types';
@@ -63,16 +61,6 @@ export function parsePhotoUrlArray(value: unknown): string[] {
 }
 
 /**
- * Generates a SHA1 hash from a given URL string.
- * 
- * @param {string} url - The URL to hash.
- * @returns {string} The SHA1 hash of the URL.
- */
-const generateHashFromURL = (url: string): string => {
-    return crypto.createHash('sha1').update(url).digest('hex');
-};
-
-/**
  * Parses a date string and returns a `Date` object.
  * - Uses `parseISO()` for ISO 8601 dates (Airtable).
  * - Uses `parse()` for CSV format (`M/d/yyyy h:mma`).
@@ -100,90 +88,6 @@ function parseDate(dateStr: string): Date | null {
         return null;
     }
 }
-
-/**
- * Sends a HEAD request to a given URL and extracts the file extension from the
- * `content-type` header. Defaults to 'jpg' if the extension cannot be determined.
- * 
- * @param {string} url - The URL of the image.
- * @param {string} placeName - The name of the place associated with this image (used for logging).
- * @returns {Promise<string>} A promise that resolves to the file extension (e.g., "jpeg" or "jpg").
- */
-const getImageExtension = async (url: string, placeName: string): Promise<string> => {
-    try {
-        const headResponse = await axios.head(url);
-        const contentType = headResponse.headers['content-type'];
-        const extension = contentType.split('/')[1]; // e.g., "image/jpeg" -> "jpeg"
-        return extension || 'jpg'; // Default to 'jpg' if no extension found
-    } catch (error) {
-        console.warn(`Failed to get image extension for place "${placeName}" at URL "${url}". Defaulting to .jpg`);
-        return 'jpg'; // Fallback to 'jpg' if the request fails
-    }
-};
-
-/**
- * Ensures that a directory exists at the specified path. If it does not exist,
- * it will be created (recursively).
- * 
- * @param {string} dir - The directory path to ensure.
- */
-const ensureDirectoryExists = (dir: string) => {
-    if (!fs.existsSync(dir)) {
-        fs.mkdirSync(dir, { recursive: true });
-    }
-};
-
-
-/**
- * Downloads an image from the given URL and saves it to the `/public/images/` directory.
- * Returns the relative URL path if successful, otherwise returns an empty string.
- * 
- * @param {string} coverPhotoURL - The URL of the image to download.
- * @param {string} recordId - The Airtable record ID of the place.
- * @param {string} placeName - The name of the place (for logging purposes).
- * @returns {Promise<string>} A promise that resolves to the local image URL (relative to `/public/images/`), or an empty string on failure.
- */
-/* TODO Rewrite this to take the new array of photos 'photos', download them all, and return the array of local URLs
-Or find some way to use the photos and make a photo gallery users can browse upon clicking then you just get the URL
-on request. It's a call to Google's API not using any API usage. */
-const downloadImage = async (coverPhotoURL: string, recordId: string, placeName: string): Promise<string> => {
-    const urlHash = generateHashFromURL(coverPhotoURL); // Generate a SHA1 hash from the URL
-    const extension = await getImageExtension(coverPhotoURL, placeName); // Get the file extension
-    const filePath = path.resolve(`./public/images/${recordId}-${urlHash}.${extension}`);
-    const localCoverPhotoURL = `/images/${recordId}-${urlHash}.${extension}`;
-
-    // Ensure the directory exists
-    ensureDirectoryExists(path.resolve('./public/images/'));
-
-    // Check if the file already exists by checking the file path
-    if (!fs.existsSync(filePath)) {
-        try {
-            const response = await axios({
-                url: coverPhotoURL,
-                method: 'GET',
-                responseType: 'stream',
-            });
-
-            // Save image to public folder
-            const writer = fs.createWriteStream(filePath);
-            response.data.pipe(writer);
-
-            await new Promise<void>((resolve, reject) => {
-                writer.on('finish', resolve);
-                writer.on('error', reject);
-            });
-
-            console.log(`Image downloaded for place "${placeName}" (ID: ${recordId})`);
-        } catch (error) {
-            console.error(`Error downloading image for place "${placeName}" (ID: ${recordId}):`, error);
-            return ''; // Return empty string if the download fails
-        }
-    } else {
-        console.log(`Image for place "${placeName}" (ID: ${recordId}) already exists, skipping download.`);
-    }
-
-    return localCoverPhotoURL;
-};
 
 /**
  * Maps a record (either from Airtable or CSV) to a Place object.

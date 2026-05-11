@@ -3,6 +3,8 @@ import { withVercelToolbar } from '@vercel/toolbar/plugins/next';
 
 /** @type {import('next').NextConfig} */
 
+const disableImageOptimization = true;
+
 const nextConfig = {
     reactCompiler: true, // Enable React Compiler for automatic memoization
     async redirects() {
@@ -23,17 +25,22 @@ const nextConfig = {
         ];
     },
     images: {
+        unoptimized: disableImageOptimization,
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: "**", // Allow all hostnames for remote images
+                hostname: 'thirdplacesdata.blob.core.windows.net',
+                port: '',
+                pathname: '/**',
+                search: '',
             },
         ],
-        deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-        imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+        deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+        imageSizes: [48, 64, 96, 128, 256],
         qualities: [40, 75, 80],
         formats: ['image/webp'], // Enable WebP for better compression
-        minimumCacheTTL: 604800, // Cache images for 7 days
+        minimumCacheTTL: 2678400, // Cache images for 31 days, the maximum allowed by Vercel's Image Optimization per https://vercel.com/docs/image-optimization/managing-image-optimization-costs
+        maximumRedirects: 0,
         dangerouslyAllowSVG: true,
         contentDispositionType: 'attachment',
         contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
