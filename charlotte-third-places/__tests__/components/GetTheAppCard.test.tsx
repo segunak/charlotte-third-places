@@ -48,7 +48,7 @@ describe('GetTheAppCard', () => {
     const heading = screen.getByText('Get the App')
     const card = heading.closest('.hide-in-native-app')
     expect(card).not.toBeNull()
-    expect(card).toHaveClass('sm:hidden')
+    expect(card).not.toHaveClass('sm:hidden')
   })
 
   it('returns null inside a native app (standalone display-mode)', () => {
