@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
+import { MobilePhotoFilmstrip } from "@/components/MobilePhotoFilmstrip";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
@@ -272,56 +273,73 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
 
                     {/* Thumbnails (only if more than 1 visible photo) */}
                     {visibleSlideCount > 1 && (
-                        <div className="bg-card border border-gray-300 shadow-xs rounded-lg p-2">
-                            <div className="flex justify-between items-center mb-1 px-1">
-                                <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
-                                <Button
-                                    variant="ghost"
-                                    size="sm"
-                                    className="text-muted-foreground hover:text-foreground py-0.5 h-auto text-xs"
-                                    onClick={() => setShowThumbnails(prev => !prev)}
-                                >
-                                    {showThumbnails ? 'Hide' : 'Show'} Thumbnails
-                                </Button>
+                        isMobile ? (
+                            <div className="bg-card border border-gray-300 shadow-xs rounded-lg overflow-hidden">
+                                <div className="px-3 py-2 text-xs text-muted-foreground">
+                                    Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
+                                </div>
+                                <MobilePhotoFilmstrip
+                                    photos={visiblePhotos}
+                                    api={api}
+                                    placeId={place.recordId}
+                                    testId="place-page-photo-filmstrip"
+                                    trackTestId="place-page-photo-filmstrip-track"
+                                    thumbTestId={(idx) => `place-page-filmstrip-thumb-${idx}`}
+                                    className="bg-card border-t border-gray-300"
+                                />
                             </div>
-                            {showThumbnails && (
-                                <ScrollArea className="h-20 w-full whitespace-nowrap rounded-md">
-                                    <div className="flex gap-2 py-1">
-                                        {visiblePhotos.map((photo, idx) => {
-                                            const origIdx = visibleToOriginalIdx[idx];
-                                            const thumbVisibleNumber = idx + 1;
-                                            return (
-                                                <button
-                                                    key={`thumb-${origIdx}`}
-                                                    className={cn(
-                                                        "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
-                                                        idx === currentSlide
-                                                            ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
-                                                            : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
-                                                    )}
-                                                    onClick={() => api?.scrollTo(idx)}
-                                                    aria-label={`Go to photo ${thumbVisibleNumber}`}
-                                                >
-                                                    <Image
-                                                        src={photo}
-                                                        alt={`Thumbnail ${thumbVisibleNumber}`}
-                                                        fill
-                                                        quality={40}
-                                                        sizes="64px"
-                                                        className="object-cover"
-                                                        loading="lazy"
-                                                        placeholder="empty"
-                                                        referrerPolicy="no-referrer"
-                                                        onError={() => handleImageError(origIdx, photo)}
-                                                    />
-                                                </button>
-                                            );
-                                        })}
-                                    </div>
-                                    <ScrollBar orientation="horizontal" />
-                                </ScrollArea>
-                            )}
-                        </div>
+                        ) : (
+                            <div className="bg-card border border-gray-300 shadow-xs rounded-lg p-2">
+                                <div className="flex justify-between items-center mb-1 px-1">
+                                    <span className="text-xs text-muted-foreground">Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}</span>
+                                    <Button
+                                        variant="ghost"
+                                        size="sm"
+                                        className="text-muted-foreground hover:text-foreground py-0.5 h-auto text-xs"
+                                        onClick={() => setShowThumbnails(prev => !prev)}
+                                    >
+                                        {showThumbnails ? 'Hide' : 'Show'} Thumbnails
+                                    </Button>
+                                </div>
+                                {showThumbnails && (
+                                    <ScrollArea className="h-20 w-full whitespace-nowrap rounded-md">
+                                        <div className="flex gap-2 py-1">
+                                            {visiblePhotos.map((photo, idx) => {
+                                                const origIdx = visibleToOriginalIdx[idx];
+                                                const thumbVisibleNumber = idx + 1;
+                                                return (
+                                                    <button
+                                                        key={`thumb-${origIdx}`}
+                                                        className={cn(
+                                                            "w-16 h-16 rounded-md overflow-hidden transition-all duration-200 relative focus:outline-hidden focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:ring-offset-background",
+                                                            idx === currentSlide
+                                                                ? "ring-2 ring-primary ring-offset-2 ring-offset-background"
+                                                                : "ring-1 ring-gray-300 opacity-70 hover:opacity-100"
+                                                        )}
+                                                        onClick={() => api?.scrollTo(idx)}
+                                                        aria-label={`Go to photo ${thumbVisibleNumber}`}
+                                                    >
+                                                        <Image
+                                                            src={photo}
+                                                            alt={`Thumbnail ${thumbVisibleNumber}`}
+                                                            fill
+                                                            quality={40}
+                                                            sizes="64px"
+                                                            className="object-cover"
+                                                            loading="lazy"
+                                                            placeholder="empty"
+                                                            referrerPolicy="no-referrer"
+                                                            onError={() => handleImageError(origIdx, photo)}
+                                                        />
+                                                    </button>
+                                                );
+                                            })}
+                                        </div>
+                                        <ScrollBar orientation="horizontal" />
+                                    </ScrollArea>
+                                )}
+                            </div>
+                        )
                     )}
                 </div>
             )}
