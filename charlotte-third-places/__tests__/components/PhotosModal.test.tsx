@@ -362,6 +362,8 @@ describe('PhotosModal', () => {
       expect(filmstrip).toBeInTheDocument()
       expect(filmstrip).toHaveClass('overflow-x-auto')
       expect(filmstrip).toHaveClass('[touch-action:pan-x]')
+      expect(filmstrip).toHaveClass('bg-black/80')
+      expect(filmstrip).toHaveClass('border-t')
       expect(track).toHaveClass('px-3')
       expect(track).not.toHaveAttribute('style')
 

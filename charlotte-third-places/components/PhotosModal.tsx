@@ -1,11 +1,11 @@
 "use client";
 
-import React from 'react';
 import Image from 'next/image';
 import { Place } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { FC, useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Icons } from "@/components/Icons";
+import { MobilePhotoFilmstrip } from "@/components/MobilePhotoFilmstrip";
 import { Button } from "@/components/ui/button";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
@@ -42,126 +42,6 @@ interface PhotosModalProps {
      */
     zIndex?: number;
 }
-
-interface MobileFilmstripProps {
-    photos: string[];
-    api: CarouselApi | undefined;
-    placeId: string;
-}
-
-/**
- * Mobile filmstrip rendered below the main image.
- *
- * Performance contract (do not violate):
- * - No React state inside. Active-thumb visuals are toggled imperatively via
- *   `data-active` on the DOM node, so the component never re-renders during a
- *   swipe.
- * - Plain `<img>` tags (not `next/image`) and native `overflow-x-auto` (not
- *   Radix `ScrollArea`) keep iOS Safari on the GPU compositor path.
- * - Wrapped in `React.memo` with referentially stable props (`photos`, `api`,
- *   `placeId`) so the parent's `currentSlide` updates never re-render this tree.
- */
-const MobileFilmstrip = React.memo(function MobileFilmstrip({
-    photos,
-    api,
-    placeId,
-}: MobileFilmstripProps) {
-    const thumbRefs = useRef<(HTMLButtonElement | null)[]>([]);
-    const previousActiveRef = useRef<number>(0);
-
-    // Keep the ref array length in sync with the photos array so dropped slides
-    // (e.g. an image that errored) don't leave stale entries behind.
-    if (thumbRefs.current.length > photos.length) {
-        thumbRefs.current.length = photos.length;
-    }
-
-    useEffect(() => {
-        if (!api) return undefined;
-
-        const setActive = (nextIdx: number, smooth: boolean) => {
-            if (photos.length === 0) return;
-            const safeIdx = Math.max(0, Math.min(nextIdx, photos.length - 1));
-            const prevEl = thumbRefs.current[previousActiveRef.current];
-            const nextEl = thumbRefs.current[safeIdx];
-            if (prevEl && prevEl !== nextEl) {
-                prevEl.dataset.active = 'false';
-                prevEl.setAttribute('aria-current', 'false');
-            }
-            if (nextEl) {
-                nextEl.dataset.active = 'true';
-                nextEl.setAttribute('aria-current', 'true');
-                nextEl.scrollIntoView({
-                    inline: 'nearest',
-                    block: 'nearest',
-                    behavior: smooth ? 'smooth' : 'auto',
-                });
-            }
-            previousActiveRef.current = safeIdx;
-        };
-
-        // Sync immediately to current carousel position (no smooth animation on
-        // mount or when the photos array changes due to a failed image).
-        setActive(api.selectedScrollSnap(), false);
-
-        const onSelect = () => setActive(api.selectedScrollSnap(), true);
-        api.on('select', onSelect);
-
-        return () => {
-            api.off('select', onSelect);
-        };
-    }, [api, photos, placeId]);
-
-    return (
-        <div
-            data-testid="photos-modal-filmstrip"
-            className={cn(
-                "shrink-0 h-16 bg-black/80 border-t border-gray-800 overflow-x-auto",
-                "[touch-action:pan-x] [contain:paint] [overscroll-behavior:contain]",
-                "[scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-            )}
-        >
-            <div
-                data-testid="photos-modal-filmstrip-track"
-                className="flex gap-1 h-full items-center px-3 will-change-transform"
-            >
-                {photos.map((photo, idx) => (
-                    <button
-                        key={`filmstrip-${idx}`}
-                        ref={(el) => { thumbRefs.current[idx] = el; }}
-                        type="button"
-                        data-testid={`filmstrip-thumb-${idx}`}
-                        data-active={idx === 0}
-                        aria-current={idx === 0 ? 'true' : 'false'}
-                        aria-label={`Go to photo ${idx + 1}`}
-                        onClick={() => api?.scrollTo(idx)}
-                        className={cn(
-                            "shrink-0 rounded-sm transition-transform duration-150 ease-out",
-                            "[contain:layout_paint] focus:outline-hidden",
-                            "data-[active=true]:scale-125 data-[active=true]:outline",
-                            "data-[active=true]:outline-2 data-[active=true]:outline-white",
-                            "data-[active=true]:z-10"
-                        )}
-                    >
-                        {/* Plain <img> on purpose: no Next/Image wrapper, no fill,
-                            no sizes parsing — minimum work per swipe frame. */}
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                            src={photo}
-                            alt=""
-                            width={40}
-                            height={40}
-                            loading="lazy"
-                            decoding="async"
-                            referrerPolicy="no-referrer"
-                            draggable={false}
-                            className="w-10 h-10 object-cover rounded-sm pointer-events-none"
-                        />
-                    </button>
-                ))}
-            </div>
-        </div>
-    );
-});
 
 export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex }) => {
     const [api, setApi] = useState<CarouselApi>();
@@ -472,10 +352,14 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                 {/* Thumbnails section - only show if we have multiple visible photos */}
                 {visibleSlideCount > 1 && (
                     isMobile ? (
-                        <MobileFilmstrip
+                        <MobilePhotoFilmstrip
                             photos={visiblePhotos}
                             api={api}
                             placeId={airtableRecordId}
+                            testId="photos-modal-filmstrip"
+                            trackTestId="photos-modal-filmstrip-track"
+                            thumbTestId={(idx) => `filmstrip-thumb-${idx}`}
+                            className="bg-black/80 border-t border-gray-800"
                         />
                     ) : (
                         <div className={cn(

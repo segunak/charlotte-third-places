@@ -70,10 +70,10 @@ function HomePageContent() {
 
                 {/* Desktop Hero AI Section - Entire banner is clickable */}
                 <Link href="/chat" className="hidden sm:block group">
-                    <div className="bg-linear-to-r from-primary/10 via-secondary/10 to-primary/10 border border-primary/20 rounded-xl p-6 flex items-center justify-between transition-all duration-200 hover:shadow-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer">
-                        <div className="flex items-center gap-4">
-                            <div className="bg-primary/20 rounded-full p-3 transition-colors group-hover:bg-primary/30">
-                                <Icons.chat className="h-8 w-8 text-primary" />
+                    <div className="bg-linear-to-r from-primary/10 via-secondary/10 to-primary/10 border border-primary/20 rounded-xl px-5 py-3 flex items-center justify-between transition-all duration-200 hover:shadow-lg hover:border-primary/40 hover:-translate-y-0.5 cursor-pointer">
+                        <div className="flex items-center gap-3">
+                            <div className="bg-primary/20 rounded-full p-2 transition-colors group-hover:bg-primary/30">
+                                <Icons.chat className="h-6 w-6 text-primary" />
                             </div>
                             <div>
                                 <h2 className="text-lg font-semibold">Not sure where to go?</h2>
@@ -86,6 +86,24 @@ function HomePageContent() {
                         </div>
                     </div>
                 </Link>
+
+                {/* Desktop Get the App banner — hidden inside native apps (CSS handles first paint, hook handles runtime) */}
+                {!isNativeApp && (
+                    <div className="hidden sm:block group hide-in-native-app" data-testid="desktop-app-banner">
+                        <div className="bg-linear-to-r from-secondary/10 via-primary/10 to-secondary/10 border border-secondary/20 rounded-xl px-5 py-3 flex items-center justify-between gap-6 transition-all duration-200 hover:shadow-lg hover:border-secondary/40 hover:-translate-y-0.5">
+                            <div className="flex items-center gap-3 min-w-0">
+                                <div className="bg-secondary/20 rounded-full p-2 transition-colors group-hover:bg-secondary/30">
+                                    <Icons.mobile className="h-6 w-6 text-secondary" />
+                                </div>
+                                <div>
+                                    <h2 className="text-lg font-semibold">Get the mobile app</h2>
+                                    <p className="text-muted-foreground">Take Charlotte&apos;s third places with you while you explore.</p>
+                                </div>
+                            </div>
+                            <AppStoreLinks className="grid grid-cols-2 gap-3 w-full max-w-sm shrink-0" />
+                        </div>
+                    </div>
+                )}
 
                 {/* Mobile-only instant action buttons */}
                 <div className="sm:hidden grid grid-cols-4 gap-3 mt-6! mb-6!">
