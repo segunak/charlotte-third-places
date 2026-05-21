@@ -48,6 +48,13 @@ const COMING_SOON_GRADIENT_MODAL = "overflow-hidden bg-[linear-gradient(to_botto
 const FEATURED_GRADIENT_CARD = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_45%,rgba(251,191,36,0.04)_75%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_50%,rgba(146,95,22,0.18)_82%,rgba(146,95,22,0.12)_100%)]";
 const FEATURED_GRADIENT_MODAL = "overflow-hidden bg-[linear-gradient(to_bottom_right,rgba(251,191,36,0.16)_0%,rgba(251,191,36,0.09)_48%,rgba(251,191,36,0.04)_80%,rgba(251,191,36,0)_100%)] dark:bg-[linear-gradient(to_bottom_right,rgba(146,95,22,0.45)_0%,rgba(146,95,22,0.30)_52%,rgba(146,95,22,0.18)_84%,rgba(146,95,22,0.12)_100%)]";
 
+function hasTag(place: Place, expectedTag: string): boolean {
+    const expected = expectedTag.trim().toLowerCase();
+    const tags = place.tags ?? [];
+
+    return tags.some(tag => tag.trim().toLowerCase() === expected);
+}
+
 const DEFINITIONS: HighlightDefinition[] = [
     // Priority / ordering model
     //  - Lower numeric priority means higher importance.
@@ -94,16 +101,16 @@ const DEFINITIONS: HighlightDefinition[] = [
     // Badge-only definitions
     {
         key: 'habesha',
-        test: p => p.tags?.includes('Habesha') ?? false,
+        test: place => hasTag(place, 'Habesha'),
         badge: {
-            icon: <Icons.HabeshaFlags className="h-5 w-5" />,
+            icon: <Icons.HabeshaFlags className="h-6 w-6" />,
             bgClass: 'bg-amber-100',
             ariaLabel: 'Habesha business'
         }
     },
     {
         key: 'blackOwned',
-        test: p => p.tags?.includes('Black Owned') ?? false,
+        test: place => hasTag(place, 'Black Owned'),
         badge: {
             icon: <Icons.panAfricanFlag className="h-6 w-6" />,
             bgClass: 'bg-amber-100',
@@ -111,8 +118,17 @@ const DEFINITIONS: HighlightDefinition[] = [
         }
     },
     {
+        key: 'french',
+        test: place => hasTag(place, 'French'),
+        badge: {
+            icon: <Icons.frenchFlag className="h-6 w-6" />,
+            bgClass: 'bg-amber-100',
+            ariaLabel: 'French place'
+        }
+    },
+    {
         key: 'veteranOwned',
-        test: p => p.tags?.includes('Veteran Owned') ?? false,
+        test: place => hasTag(place, 'Veteran Owned'),
         badge: {
             icon: <Icons.militaryTech className="h-6 w-6 text-amber-400" />,
             bgClass: 'bg-emerald-900',
@@ -122,7 +138,7 @@ const DEFINITIONS: HighlightDefinition[] = [
     {
         key: 'christian',
         priority: 3,
-        test: p => p.tags?.includes('Christian') ?? false,
+        test: place => hasTag(place, 'Christian'),
         badge: {
             icon: <Icons.cross className="h-6 w-6 text-amber-900" />,
             bgClass: 'bg-amber-100',

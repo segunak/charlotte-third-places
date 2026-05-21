@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image';
-import { Place } from "@/lib/types";
+import { Place, type PlacePhoto } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { FC, useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Icons } from "@/components/Icons";
@@ -63,7 +63,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     const totalPhotos = photos.length;
 
     const visiblePhotoData = useMemo(() => {
-        const arr: { photo: string; originalIdx: number }[] = [];
+        const arr: { photo: PlacePhoto; originalIdx: number }[] = [];
         photos.forEach((photo, idx) => {
             if (!failedIndices.has(idx)) {
                 arr.push({ photo, originalIdx: idx });
@@ -72,6 +72,10 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
         return arr;
     }, [photos, failedIndices]);
     const visiblePhotos = useMemo(() => visiblePhotoData.map((d) => d.photo), [visiblePhotoData]);
+    // Main slides use display assets; rails and filmstrips use thumbnails to
+    // keep decoded image memory low in mobile WebViews.
+    const visibleDisplayUrls = useMemo(() => visiblePhotos.map((photo) => photo.display), [visiblePhotos]);
+    const visibleThumbnailUrls = useMemo(() => visiblePhotos.map((photo) => photo.thumbnail), [visiblePhotos]);
     const visibleToOriginalIdx = useMemo(() => visiblePhotoData.map((d) => d.originalIdx), [visiblePhotoData]);
     const visibleSlideCount = visiblePhotos.length;
     const hasVisiblePhotos = visibleSlideCount > 0;
@@ -261,6 +265,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                         <CarouselContent className="h-full">
                             {visiblePhotos.map((photo, idx) => {
                                 const origIdx = visibleToOriginalIdx[idx];
+                                const displayUrl = visibleDisplayUrls[idx];
                                 const shouldRenderImage = renderedSlideIndices.has(idx);
                                 const isCurrentSlide = idx === currentSlide;
                                 return (
@@ -271,12 +276,12 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                         <div className="relative w-full h-[48dvh] md:h-[calc(95dvh-280px)] max-h-full flex items-center justify-center bg-black">
                                             {shouldRenderImage ? (
                                                 <Image
-                                                    src={photo}
+                                                    src={displayUrl}
                                                     alt={`${place?.name ?? ''} photo ${idx + 1}`}
                                                     fill
                                                     quality={80}
                                                     sizes="(max-width: 767px) 95vw, 768px"
-                                                    loading="eager"
+                                                    loading={isCurrentSlide ? "eager" : "lazy"}
                                                     fetchPriority={isCurrentSlide ? "high" : "auto"}
                                                     decoding="async"
                                                     placeholder="empty"
@@ -287,7 +292,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                         objectFit: 'contain',
                                                         objectPosition: 'center',
                                                     }}
-                                                    onError={() => markPhotoFailed(origIdx, photo)}
+                                                    onError={() => markPhotoFailed(origIdx, displayUrl)}
                                                     referrerPolicy="no-referrer"
                                                 />
                                             ) : (
@@ -353,7 +358,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                 {visibleSlideCount > 1 && (
                     isMobile ? (
                         <MobilePhotoFilmstrip
-                            photos={visiblePhotos}
+                            photos={visibleThumbnailUrls}
                             api={api}
                             placeId={airtableRecordId}
                             testId="photos-modal-filmstrip"
@@ -398,6 +403,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                         <div className="inline-flex gap-2 py-1">
                                             {visiblePhotos.map((photo, idx) => {
                                                 const origIdx = visibleToOriginalIdx[idx];
+                                                const thumbnailUrl = visibleThumbnailUrls[idx];
                                                 const thumbVisibleNumber = idx + 1;
                                                 return (
                                                     <button
@@ -413,7 +419,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                         aria-label={`Go to photo ${thumbVisibleNumber}`}
                                                     >
                                                         <Image
-                                                            src={photo}
+                                                            src={thumbnailUrl}
                                                             alt={`Thumbnail ${thumbVisibleNumber}`}
                                                             fill
                                                             quality={40}
@@ -422,7 +428,9 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                                                             loading="lazy"
                                                             placeholder="empty"
                                                             referrerPolicy="no-referrer"
-                                                            onError={() => markPhotoFailed(origIdx, photo)}
+                                                            onError={(event) => {
+                                                                event.currentTarget.style.visibility = 'hidden';
+                                                            }}
                                                         />
                                                     </button>
                                                 );

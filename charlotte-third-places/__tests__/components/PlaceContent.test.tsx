@@ -146,7 +146,7 @@ describe('PlaceContent', () => {
   describe('Photos Button', () => {
     it('renders Photos button when photos exist', () => {
       const place = createMockPlace({
-        photos: ['https://example.com/photo.jpg'],
+        photos: [{ display: 'https://example.com/photo.jpg', thumbnail: 'https://example.com/thumb.jpg' }],
       })
       render(<PlaceContent place={place} />)
 
@@ -162,7 +162,7 @@ describe('PlaceContent', () => {
 
     it('does not render Photos button when showPhotosButton is false', () => {
       const place = createMockPlace({
-        photos: ['https://example.com/photo.jpg'],
+        photos: [{ display: 'https://example.com/photo.jpg', thumbnail: 'https://example.com/thumb.jpg' }],
       })
       render(<PlaceContent place={place} showPhotosButton={false} />)
 

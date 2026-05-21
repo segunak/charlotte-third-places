@@ -5,73 +5,60 @@
  */
 
 import { beforeAll, describe, expect, it } from 'vitest'
-import type { parsePhotoUrlArray as parsePhotoUrlArrayFn } from '@/lib/data-services'
+import type { parsePlacePhotoManifests as parsePlacePhotoManifestsFn } from '@/lib/data-services'
 
-let parsePhotoUrlArray: typeof parsePhotoUrlArrayFn
+let parsePlacePhotoManifests: typeof parsePlacePhotoManifestsFn
 
 beforeAll(async () => {
   process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN = 'test-api-key'
   const dataServices = await import('@/lib/data-services')
-  parsePhotoUrlArray = dataServices.parsePhotoUrlArray
+  parsePlacePhotoManifests = dataServices.parsePlacePhotoManifests
 })
 
-describe('Photos field parsing', () => {
-  it('parses JSON array of Azure blob storage URLs', () => {
-    const input = '["https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg", "https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg"]'
+describe('Photos manifest parsing', () => {
+  it('parses display and thumbnail photo objects from JSON', () => {
+    const displayUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/display/photo.webp'
+    const thumbnailUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/thumbnail/photo.webp'
 
-    expect(parsePhotoUrlArray(input)).toEqual([
-      'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg',
-      'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg',
+    expect(parsePlacePhotoManifests(JSON.stringify([
+      { display: displayUrl, thumbnail: thumbnailUrl },
+    ]))).toEqual([
+      { display: displayUrl, thumbnail: thumbnailUrl },
     ])
   })
 
-  it('parses runtime arrays of URLs', () => {
-    const curatorUrl = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg'
-    const providerUrl = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
+  it('parses display and thumbnail photo objects from runtime arrays', () => {
+    const displayUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/display/photo.webp'
+    const thumbnailUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/thumbnail/photo.webp'
 
-    expect(parsePhotoUrlArray([curatorUrl, providerUrl])).toEqual([
-      curatorUrl,
-      providerUrl,
+    expect(parsePlacePhotoManifests([
+      { display: displayUrl, thumbnail: thumbnailUrl },
+    ])).toEqual([
+      { display: displayUrl, thumbnail: thumbnailUrl },
     ])
   })
 
-  it('ignores invalid items in runtime arrays', () => {
-    const url = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
+  it('ignores URL strings and malformed photo objects', () => {
+    const displayUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/display/photo.webp'
+    const thumbnailUrl = 'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/thumbnail/photo.webp'
 
-    expect(parsePhotoUrlArray([url, '', '   ', null, 12])).toEqual([url])
-  })
-
-  it('returns empty array for Python-style array strings', () => {
-    const input = "['https://thirdplacesdata.blob.core.windows.net/curator-photos/recABC/att123_photo.jpg']"
-
-    expect(parsePhotoUrlArray(input)).toEqual([])
-  })
-
-  it('preserves the curator-first order already stored in Photos', () => {
-    const curatorUrl = 'https://thirdplacesdata.blob.core.windows.net/curator-photos/rec1/att1_photo.jpg'
-    const providerUrl = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
-
-    expect(parsePhotoUrlArray(JSON.stringify([curatorUrl, providerUrl]))).toEqual([
-      curatorUrl,
-      providerUrl,
+    expect(parsePlacePhotoManifests([
+      'https://thirdplacesdata.blob.core.windows.net/photos/ChIJ123/source.webp',
+      { display: displayUrl },
+      { thumbnail: thumbnailUrl },
+      { display: '', thumbnail: thumbnailUrl },
+      { display: displayUrl, thumbnail: thumbnailUrl },
+    ])).toEqual([
+      { display: displayUrl, thumbnail: thumbnailUrl },
     ])
   })
 
-  it('returns empty array for empty input', () => {
-    expect(parsePhotoUrlArray('')).toEqual([])
-    expect(parsePhotoUrlArray('   ')).toEqual([])
-    expect(parsePhotoUrlArray(null)).toEqual([])
-  })
-
-  it('returns empty array for bare URL input', () => {
-    const url = 'https://thirdplacesdata.blob.core.windows.net/place-photos/charlotte/ChIJ123/photo.jpg'
-
-    expect(parsePhotoUrlArray(url)).toEqual([])
-  })
-
-  it('returns empty array for malformed JSON and non-array JSON', () => {
-    expect(parsePhotoUrlArray('["https://example.com/photo.jpg"')).toEqual([])
-    expect(parsePhotoUrlArray('"https://example.com/photo.jpg"')).toEqual([])
-    expect(parsePhotoUrlArray('{"url":"https://example.com/photo.jpg"}')).toEqual([])
+  it('returns empty array for empty input, malformed JSON, and non-array JSON', () => {
+    expect(parsePlacePhotoManifests('')).toEqual([])
+    expect(parsePlacePhotoManifests('   ')).toEqual([])
+    expect(parsePlacePhotoManifests(null)).toEqual([])
+    expect(parsePlacePhotoManifests('[{"display":"https://example.com/photo.webp"}')).toEqual([])
+    expect(parsePlacePhotoManifests('"https://example.com/photo.webp"')).toEqual([])
+    expect(parsePlacePhotoManifests('{"display":"https://example.com/photo.webp"}')).toEqual([])
   })
 })
