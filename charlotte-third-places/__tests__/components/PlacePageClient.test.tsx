@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { Place } from '@/lib/types'
 
@@ -37,6 +37,13 @@ vi.mock('next/image', () => ({
 
 import { PlacePageClient } from '@/components/PlacePageClient'
 
+function createPhotoAsset(name: string, placeId = 'rec123456') {
+  return {
+    display: `https://thirdplacesdata.blob.core.windows.net/photos/${placeId}/display/${name}.webp`,
+    thumbnail: `https://thirdplacesdata.blob.core.windows.net/photos/${placeId}/thumbnail/${name}.webp`,
+  }
+}
+
 function createMockPlace(overrides: Partial<Place> = {}): Place {
   return {
     recordId: 'rec123456',
@@ -65,9 +72,9 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     linkedIn: '',
     tags: [],
     photos: [
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp',
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-2.webp',
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-3.webp',
+      createPhotoAsset('photo-1'),
+      createPhotoAsset('photo-2'),
+      createPhotoAsset('photo-3'),
     ],
     comments: '',
     operatingHours: [],
@@ -119,6 +126,19 @@ describe('PlacePageClient', () => {
     expect(firstThumb).toHaveAttribute('data-active', 'true')
     expect(firstImg).toHaveAttribute('width', '40')
     expect(firstImg).toHaveAttribute('height', '40')
+    expect(firstImg).toHaveAttribute(
+      'src',
+      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/thumbnail/photo-1.webp'
+    )
+  })
+
+  it('uses display URLs for main images', () => {
+    render(<PlacePageClient place={createMockPlace()} />)
+
+    expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute(
+      'src',
+      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/display/photo-1.webp'
+    )
   })
 
   it('keeps the existing desktop thumbnail controls', () => {
@@ -127,5 +147,23 @@ describe('PlacePageClient', () => {
     expect(screen.queryByTestId('place-page-photo-filmstrip')).not.toBeInTheDocument()
     expect(screen.getByRole('button', { name: /hide thumbnails/i })).toBeInTheDocument()
     expect(screen.getByAltText('Thumbnail 1')).toHaveAttribute('sizes', '64px')
+    expect(screen.getByAltText('Thumbnail 1')).toHaveAttribute(
+      'src',
+      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/thumbnail/photo-1.webp'
+    )
+  })
+
+  it('keeps the display image when only a desktop thumbnail fails', () => {
+    render(<PlacePageClient place={createMockPlace()} />)
+
+    const thumbnail = screen.getByAltText('Thumbnail 1')
+    fireEvent.error(thumbnail)
+
+    expect(screen.getByText('Photo 1 of 3')).toBeInTheDocument()
+    expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute(
+      'src',
+      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/display/photo-1.webp'
+    )
+    expect(thumbnail).toHaveStyle({ visibility: 'hidden' })
   })
 })

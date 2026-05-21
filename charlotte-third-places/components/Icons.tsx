@@ -349,6 +349,19 @@ export const Icons = {
       <path fill="#e31b23" d="M0 0h900v200H0z" />
     </svg>
   ),
+  frenchFlag: (props: IconProps) => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="900"
+      height="600"
+      viewBox="0 0 900 600"
+      {...props}
+    >
+      <path fill="#CE1126" d="M0 0h900v600H0" />
+      <path fill="#fff" d="M0 0h600v600H0" />
+      <path fill="#002654" d="M0 0h300v600H0" />
+    </svg>
+  ),
   HabeshaFlags: (props: IconProps) => {
     const id = useId();
     return (
