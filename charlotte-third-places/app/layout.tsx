@@ -1,7 +1,7 @@
 import "@/styles/globals.css"
 import { cn } from "@/lib/utils"
-import { fontSans, fontCard } from "@/lib/fonts"
 import type { Metadata, Viewport } from "next"
+import { fontSans, fontCard } from "@/lib/fonts"
 import { Analytics } from "@vercel/analytics/react"
 import { SiteHeader } from "@/components/SiteHeader"
 import { SiteFooter } from "@/components/SiteFooter"
