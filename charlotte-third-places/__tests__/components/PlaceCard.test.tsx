@@ -162,7 +162,7 @@ describe('PlaceCard', () => {
 
     it('calls pushPhotos when photos button is clicked', () => {
       const place = createMockPlace({
-        photos: ['https://example.com/photo.jpg'],
+        photos: [{ display: 'https://example.com/photo.jpg', thumbnail: 'https://example.com/thumb.jpg' }],
       })
       render(<PlaceCard place={place} />)
 
@@ -188,7 +188,7 @@ describe('PlaceCard', () => {
   describe('Photos Button Visibility', () => {
     it('shows photos button when place has photos', () => {
       const place = createMockPlace({
-        photos: ['https://example.com/photo.jpg'],
+        photos: [{ display: 'https://example.com/photo.jpg', thumbnail: 'https://example.com/thumb.jpg' }],
       })
       render(<PlaceCard place={place} />)
 
@@ -249,6 +249,13 @@ describe('PlaceCard', () => {
       render(<PlaceCard place={place} />)
 
       expect(screen.getByLabelText('Habesha business')).toBeInTheDocument()
+    })
+
+    it('renders French badge when tag is present', () => {
+      const place = createMockPlace({ tags: ['French'] })
+      render(<PlaceCard place={place} />)
+
+      expect(screen.getByLabelText('French place')).toBeInTheDocument()
     })
 
     it('renders Christian badge when tag is present', () => {
@@ -362,7 +369,10 @@ describe('PlaceCard Memoization', () => {
       neighborhood: 'Test Neighborhood',
       type: ['Coffee Shop', 'Bakery'],
       tags: ['Good for Groups', 'Has Fireplace'],
-      photos: ['photo1.jpg', 'photo2.jpg'],
+      photos: [
+        { display: 'photo1.jpg', thumbnail: 'photo1-thumb.jpg' },
+        { display: 'photo2.jpg', thumbnail: 'photo2-thumb.jpg' },
+      ],
       parking: ['Free', 'Street Parking'],
       featured: true,
     })

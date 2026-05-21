@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useMemo, useCallback, useRef } from 'react';
-import { Place } from "@/lib/types";
+import { Place, type PlacePhoto } from "@/lib/types";
 import { Icons } from "@/components/Icons";
 import { MobilePhotoFilmstrip } from "@/components/MobilePhotoFilmstrip";
 import { Button } from "@/components/ui/button";
@@ -53,7 +53,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
     const highlights = useMemo(() => getPlaceHighlights(place), [place]);
 
     const visiblePhotoData = useMemo(() => {
-        const arr: { photo: string; originalIdx: number }[] = [];
+        const arr: { photo: PlacePhoto; originalIdx: number }[] = [];
         photos.forEach((photo, idx) => {
             if (!failedIndices.has(idx)) {
                 arr.push({ photo, originalIdx: idx });
@@ -62,6 +62,10 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
         return arr;
     }, [photos, failedIndices]);
     const visiblePhotos = useMemo(() => visiblePhotoData.map((d) => d.photo), [visiblePhotoData]);
+    // Main slides use display assets; rails and filmstrips use thumbnails to
+    // keep decoded image memory low in mobile WebViews.
+    const visibleDisplayUrls = useMemo(() => visiblePhotos.map((photo) => photo.display), [visiblePhotos]);
+    const visibleThumbnailUrls = useMemo(() => visiblePhotos.map((photo) => photo.thumbnail), [visiblePhotos]);
     const visibleToOriginalIdx = useMemo(() => visiblePhotoData.map((d) => d.originalIdx), [visiblePhotoData]);
     const visibleSlideCount = visiblePhotos.length;
     const hasVisiblePhotos = visibleSlideCount > 0;
@@ -205,6 +209,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                             <CarouselContent className="h-full">
                                 {visiblePhotos.map((photo, idx) => {
                                     const origIdx = visibleToOriginalIdx[idx];
+                                    const displayUrl = visibleDisplayUrls[idx];
                                     const isActive = activeIndices.has(idx);
                                     return (
                                         <CarouselItem
@@ -214,12 +219,12 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                             <div className="relative w-full h-[300px] md:h-[400px] flex items-center justify-center bg-black">
                                                 {isActive ? (
                                                     <Image
-                                                        src={photo}
+                                                        src={displayUrl}
                                                         alt={`${place?.name ?? ''} photo ${idx + 1}`}
                                                         fill
                                                         quality={80}
                                                         sizes="(max-width: 767px) 95vw, (max-width: 1023px) 80vw, 800px"
-                                                        loading="eager"
+                                                        loading={idx === currentSlide ? "eager" : "lazy"}
                                                         fetchPriority={idx === currentSlide ? "high" : "auto"}
                                                         decoding="async"
                                                         placeholder="empty"
@@ -230,7 +235,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                                             objectFit: 'contain',
                                                             objectPosition: 'center',
                                                         }}
-                                                        onError={() => handleImageError(origIdx, photo)}
+                                                        onError={() => handleImageError(origIdx, displayUrl)}
                                                         referrerPolicy="no-referrer"
                                                     />
                                                 ) : (
@@ -279,7 +284,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                     Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
                                 </div>
                                 <MobilePhotoFilmstrip
-                                    photos={visiblePhotos}
+                                    photos={visibleThumbnailUrls}
                                     api={api}
                                     placeId={place.recordId}
                                     testId="place-page-photo-filmstrip"
@@ -306,6 +311,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                         <div className="flex gap-2 py-1">
                                             {visiblePhotos.map((photo, idx) => {
                                                 const origIdx = visibleToOriginalIdx[idx];
+                                                const thumbnailUrl = visibleThumbnailUrls[idx];
                                                 const thumbVisibleNumber = idx + 1;
                                                 return (
                                                     <button
@@ -320,7 +326,7 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                                         aria-label={`Go to photo ${thumbVisibleNumber}`}
                                                     >
                                                         <Image
-                                                            src={photo}
+                                                            src={thumbnailUrl}
                                                             alt={`Thumbnail ${thumbVisibleNumber}`}
                                                             fill
                                                             quality={40}
@@ -329,7 +335,9 @@ export function PlacePageClient({ place: rawPlace }: { place: Place }) {
                                                             loading="lazy"
                                                             placeholder="empty"
                                                             referrerPolicy="no-referrer"
-                                                            onError={() => handleImageError(origIdx, photo)}
+                                                            onError={(event) => {
+                                                                event.currentTarget.style.visibility = 'hidden';
+                                                            }}
                                                         />
                                                     </button>
                                                 );

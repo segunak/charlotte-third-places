@@ -57,6 +57,7 @@ describe('listHighlightKeys', () => {
     expect(keys).toContain('comingSoon')
     expect(keys).toContain('blackOwned')
     expect(keys).toContain('habesha')
+    expect(keys).toContain('french')
     expect(keys).toContain('cinnamonRoll')
   })
 
@@ -156,6 +157,23 @@ describe('getPlaceHighlights - Tag-based badges', () => {
     expect(blackOwnedBadge?.ariaLabel).toBe('Black-owned business')
   })
 
+  it('returns French badge', () => {
+    const place = createTestPlace({ tags: ['French'] })
+    const result = getPlaceHighlights(place)
+
+    const frenchBadge = result.badges.find(b => b.key === 'french')
+    expect(frenchBadge).toBeDefined()
+    expect(frenchBadge?.ariaLabel).toBe('French place')
+  })
+
+  it('matches tag badges case-insensitively and trims whitespace', () => {
+    const place = createTestPlace({ tags: [' french ', 'black owned'] })
+    const result = getPlaceHighlights(place)
+
+    expect(result.badges.find(b => b.key === 'french')).toBeDefined()
+    expect(result.badges.find(b => b.key === 'blackOwned')).toBeDefined()
+  })
+
   it('returns Christian badge with correct priority', () => {
     const place = createTestPlace({ tags: ['Christian'] })
     const result = getPlaceHighlights(place)
@@ -166,12 +184,13 @@ describe('getPlaceHighlights - Tag-based badges', () => {
   })
 
   it('returns multiple badges for multiple tags', () => {
-    const place = createTestPlace({ tags: ['Black Owned', 'Habesha'] })
+    const place = createTestPlace({ tags: ['Black Owned', 'Habesha', 'French'] })
     const result = getPlaceHighlights(place)
 
-    expect(result.badges.length).toBeGreaterThanOrEqual(2)
+    expect(result.badges.length).toBeGreaterThanOrEqual(3)
     expect(result.badges.find(b => b.key === 'blackOwned')).toBeDefined()
     expect(result.badges.find(b => b.key === 'habesha')).toBeDefined()
+    expect(result.badges.find(b => b.key === 'french')).toBeDefined()
   })
 
   it('no ribbon or gradient for tag-only badges', () => {
@@ -326,7 +345,7 @@ describe('getPlaceHighlights - Badge properties', () => {
   it('all badges have required properties', () => {
     const place = createTestPlace({
       featured: true,
-      tags: ['Black Owned', 'Habesha'],
+      tags: ['Black Owned', 'Habesha', 'French'],
       hasCinnamonRolls: 'Yes'
     })
     const result = getPlaceHighlights(place)

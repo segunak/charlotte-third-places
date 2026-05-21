@@ -34,6 +34,13 @@ vi.mock('next/image', () => ({
 // Import after mocks
 import { PhotosModal } from '@/components/PhotosModal'
 
+function createPhotoAsset(name: string, placeId = 'rec123456') {
+  return {
+    display: `https://thirdplacesdata.blob.core.windows.net/photos/${placeId}/display/${name}.webp`,
+    thumbnail: `https://thirdplacesdata.blob.core.windows.net/photos/${placeId}/thumbnail/${name}.webp`,
+  }
+}
+
 /**
  * Factory function to create test Place objects with photos
  */
@@ -65,9 +72,9 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     linkedIn: '',
     tags: [],
     photos: [
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp',
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-2.webp',
-      'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-3.webp',
+      createPhotoAsset('photo-1'),
+      createPhotoAsset('photo-2'),
+      createPhotoAsset('photo-3'),
     ],
     comments: '',
     operatingHours: [],
@@ -124,13 +131,13 @@ describe('PhotosModal', () => {
       expect(screen.getByText(/Amazing Cafe - Photo 1 of 3/)).toBeInTheDocument()
     })
 
-    it('uses Azure photo URLs directly', () => {
+    it('uses display URLs for main images', () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
       expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute(
         'src',
-        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp'
+        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/display/photo-1.webp'
       )
     })
   })
@@ -410,8 +417,21 @@ describe('PhotosModal', () => {
       expect(img).toHaveAttribute('loading', 'lazy')
       expect(img).toHaveAttribute(
         'src',
-        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp'
+        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/thumbnail/photo-1.webp'
       )
+    })
+
+    it('uses thumbnail URLs for the desktop thumbnail rail', async () => {
+      mockIsMobile = false
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      await waitFor(() => {
+        expect(screen.getByAltText('Thumbnail 1')).toHaveAttribute(
+          'src',
+          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/thumbnail/photo-1.webp'
+        )
+      })
     })
 
     it('does not render the mobile filmstrip when only one photo exists', () => {
@@ -422,7 +442,7 @@ describe('PhotosModal', () => {
         value: 390,
       })
       const place = createMockPlace({
-        photos: ['https://thirdplacesdata.blob.core.windows.net/photos/rec123456/only.webp'],
+        photos: [createPhotoAsset('only')],
       })
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
@@ -467,6 +487,21 @@ describe('PhotosModal', () => {
   })
 
   describe('Image Loading Failures', () => {
+    it('keeps a photo visible when only its thumbnail fails', () => {
+      const place = createMockPlace()
+      render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
+
+      const thumbnail = screen.getByAltText('Thumbnail 1')
+      fireEvent.error(thumbnail)
+
+      expect(screen.getByText(/Test Coffee Shop - Photo 1 of 3/)).toBeInTheDocument()
+      expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute(
+        'src',
+        'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/display/photo-1.webp'
+      )
+      expect(thumbnail).toHaveStyle({ visibility: 'hidden' })
+    })
+
     it('removes a failed image from the visible carousel', async () => {
       const place = createMockPlace()
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
@@ -478,13 +513,13 @@ describe('PhotosModal', () => {
       })
 
       expect(
-        document.querySelector('img[src="https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp"]')
+        document.querySelector('img[src="https://thirdplacesdata.blob.core.windows.net/photos/rec123456/display/photo-1.webp"]')
       ).not.toBeInTheDocument()
     })
 
     it('shows the empty state when every image fails', async () => {
       const place = createMockPlace({
-        photos: ['https://thirdplacesdata.blob.core.windows.net/photos/rec123456/broken.webp'],
+        photos: [createPhotoAsset('broken')],
       })
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
 
@@ -500,16 +535,16 @@ describe('PhotosModal', () => {
         recordId: 'recFirst',
         name: 'First Cafe',
         photos: [
-          'https://thirdplacesdata.blob.core.windows.net/photos/recFirst/photo-1.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/recFirst/photo-2.webp',
+          createPhotoAsset('photo-1', 'recFirst'),
+          createPhotoAsset('photo-2', 'recFirst'),
         ],
       })
       const secondPlace = createMockPlace({
         recordId: 'recSecond',
         name: 'Second Cafe',
         photos: [
-          'https://thirdplacesdata.blob.core.windows.net/photos/recSecond/photo-1.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/recSecond/photo-2.webp',
+          createPhotoAsset('photo-1', 'recSecond'),
+          createPhotoAsset('photo-2', 'recSecond'),
         ],
       })
       const { rerender } = render(<PhotosModal place={firstPlace} open={true} onClose={vi.fn()} />)
@@ -527,19 +562,19 @@ describe('PhotosModal', () => {
       })
       expect(screen.getByAltText('Second Cafe photo 1')).toHaveAttribute(
         'src',
-        'https://thirdplacesdata.blob.core.windows.net/photos/recSecond/photo-1.webp'
+        'https://thirdplacesdata.blob.core.windows.net/photos/recSecond/display/photo-1.webp'
       )
     })
 
     it('uses plain black placeholders for distant slides', () => {
       const place = createMockPlace({
         photos: [
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-1.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-2.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-3.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-4.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-5.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/rec123456/photo-6.webp',
+          createPhotoAsset('photo-1'),
+          createPhotoAsset('photo-2'),
+          createPhotoAsset('photo-3'),
+          createPhotoAsset('photo-4'),
+          createPhotoAsset('photo-5'),
+          createPhotoAsset('photo-6'),
         ],
       })
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)
@@ -574,9 +609,9 @@ describe('PhotosModal', () => {
     it('renders with canonical blob storage URLs', () => {
       const place = createMockPlace({
         photos: [
-          'https://thirdplacesdata.blob.core.windows.net/photos/recABC/curator-photo.jpg',
-          'https://thirdplacesdata.blob.core.windows.net/photos/recABC/provider-photo-1.webp',
-          'https://thirdplacesdata.blob.core.windows.net/photos/recABC/provider-photo-2.webp',
+          createPhotoAsset('curator-photo', 'recABC'),
+          createPhotoAsset('provider-photo-1', 'recABC'),
+          createPhotoAsset('provider-photo-2', 'recABC'),
         ],
       })
       render(<PhotosModal place={place} open={true} onClose={vi.fn()} />)

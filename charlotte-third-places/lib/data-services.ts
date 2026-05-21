@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import Airtable from 'airtable';
 import csvParser from 'csv-parser';
-import { Place } from '@/lib/types';
+import { Place, PlacePhoto } from '@/lib/types';
 import stripBomStream from 'strip-bom-stream';
 import { parse, parseISO, isValid } from "date-fns";
 
@@ -45,19 +45,32 @@ function isNonEmptyString(value: unknown): value is string {
     return typeof value === 'string' && value.trim().length > 0;
 }
 
-export function parsePhotoUrlArray(value: unknown): string[] {
-    if (Array.isArray(value)) {
-        return value.filter(isNonEmptyString);
-    }
+function isPlacePhotoManifest(value: unknown): value is PlacePhoto {
+    if (!value || typeof value !== 'object' || Array.isArray(value)) return false;
 
-    if (typeof value !== 'string' || value.trim().length === 0) return [];
+    const candidate = value as { display?: unknown; thumbnail?: unknown };
+    return isNonEmptyString(candidate.display) && isNonEmptyString(candidate.thumbnail);
+}
 
-    try {
-        const parsedValue = JSON.parse(value);
-        return Array.isArray(parsedValue) ? parsedValue.filter(isNonEmptyString) : [];
-    } catch {
-        return [];
-    }
+export function parsePlacePhotoManifests(value: unknown): PlacePhoto[] {
+    const parsedValue = typeof value === 'string' && value.trim().length > 0
+        ? (() => {
+            try {
+                return JSON.parse(value);
+            } catch {
+                return null;
+            }
+        })()
+        : value;
+
+    if (!Array.isArray(parsedValue)) return [];
+
+    return parsedValue
+        .filter(isPlacePhotoManifest)
+        .map((photo) => ({
+            display: photo.display,
+            thumbnail: photo.thumbnail,
+        }));
 }
 
 /**
@@ -110,7 +123,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
                     .filter((item: string, idx: number, arr: string[]) => arr.indexOf(item) === idx);
             }
             if (key === "Photos") {
-                return parsePhotoUrlArray(value);
+                return parsePlacePhotoManifests(value);
             }
             if (key === "Operating Hours") {
                 if (!value) return [];
@@ -133,7 +146,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
 
             // Special handling for Photos from Airtable
             if (key === "Photos") {
-                return parsePhotoUrlArray(value);
+                return parsePlacePhotoManifests(value);
             }
 
             // Parse Operating Hours JSON array from Airtable

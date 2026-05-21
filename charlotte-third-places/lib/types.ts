@@ -1,3 +1,8 @@
+export type PlacePhoto = {
+    display: string;
+    thumbnail: string;
+}
+
 // General definition for the schema returned by Airtable
 export type Place = {
     recordId: string;
@@ -25,7 +30,7 @@ export type Place = {
     googleMapsPlaceId: string;
     googleMapsProfileURL: string;
     appleMapsProfileURL: string;
-    photos: Array<string>;
+    photos: Array<PlacePhoto>;
     comments: string;
     operatingHours: Array<string>;
     latitude: number;
