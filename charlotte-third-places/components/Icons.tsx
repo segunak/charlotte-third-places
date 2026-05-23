@@ -50,6 +50,7 @@ import {
   FaHouseChimney,
   FaTableTennisPaddleBall,
   FaHashtag,
+  FaCat,
 } from "react-icons/fa6";
 
 import {
@@ -172,6 +173,7 @@ export const Icons = {
   comicBook: FaSuperpowers,
   pickleball: FaTableTennisPaddleBall,
   gem: FaGem,
+  cat: FaCat,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"

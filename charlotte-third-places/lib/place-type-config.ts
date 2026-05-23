@@ -59,6 +59,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "☕",
     mapColor: "#FF1493", // Deep Pink
   },
+  "Cat Café": {
+    icon: Icons.cat,
+    emoji: "🐱",
+    mapColor: "#FFB347", // Apricot Pastel Orange
+  },
   "Coffee Shop": {
     icon: Icons.coffee,
     emoji: "☕",
