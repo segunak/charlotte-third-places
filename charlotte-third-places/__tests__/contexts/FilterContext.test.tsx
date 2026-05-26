@@ -28,6 +28,7 @@ import {
   SortContext 
 } from '@/contexts/FilterContext'
 import { DEFAULT_SORT_OPTION, SortField, SortDirection } from '@/lib/types'
+import { MULTI_SELECT_FIELDS } from '@/lib/filters'
 import type { Place } from '@/lib/types'
 
 /**
@@ -200,11 +201,11 @@ describe('FilterContext', () => {
       act(() => {
         capturedContext.setFilters((prev: any) => ({
           ...prev,
-          neighborhood: { ...prev.neighborhood, value: 'NoDa' },
+          neighborhood: { ...prev.neighborhood, value: ['NoDa'] },
         }))
       })
 
-      expect(capturedContext.filters.neighborhood.value).toBe('NoDa')
+      expect(capturedContext.filters.neighborhood.value).toEqual(['NoDa'])
     })
   })
 
@@ -402,7 +403,7 @@ describe('FilterContext', () => {
       expect(capturedContext.filters.size.predefinedOrder).toContain('Large')
     })
 
-    it('all filter keys have value initialized to "all"', () => {
+    it('all filter keys have default values initialized by filter type', () => {
       let capturedContext: any
       const places = [createMockPlace()]
 
@@ -413,7 +414,7 @@ describe('FilterContext', () => {
       )
 
       Object.keys(capturedContext.filters).forEach((key) => {
-        const expectedDefault = key === 'tags' ? [] : 'all'
+        const expectedDefault = MULTI_SELECT_FIELDS.has(key) ? [] : 'all'
         expect(capturedContext.filters[key].value).toEqual(expectedDefault)
       })
     })
@@ -491,11 +492,11 @@ describe('FilterContext', () => {
         act(() => {
           result.current.setFilters((prev) => ({
             ...prev,
-            neighborhood: { ...prev.neighborhood, value: 'NoDa' },
+            neighborhood: { ...prev.neighborhood, value: ['NoDa'] },
           }))
         })
 
-        expect(result.current.filters.neighborhood.value).toBe('NoDa')
+        expect(result.current.filters.neighborhood.value).toEqual(['NoDa'])
       })
     })
 

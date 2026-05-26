@@ -26,7 +26,10 @@ export interface FilterDefinition {
     mobilePicker: boolean;              // Drives whether mobile uses custom searchable picker
     desktopPicker: boolean;             // If true, desktop uses SearchablePickerModal instead of VirtualizedSelect
     useChips: boolean;                  // If true, mobile displays inline chips instead of picker/select
-    multiSelect?: boolean;              // If true, filter accepts multiple values (OR logic)
+    multiSelect?: boolean;              // If true, filter accepts multiple selected values
+    defaultMatchMode?: MatchMode;       // Optional default for configurable multi-select filters
+    fixedMatchMode?: MatchMode;         // If set, match mode is not user-configurable
+    fixedMatchModeHint?: string;        // Optional UI hint for fixed match mode
     accessor: (p: Place) => string | string[]; // Function to extract raw value(s) from a Place
 }
 
@@ -49,6 +52,9 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         mobilePicker: true,
         desktopPicker: true,
         useChips: false,
+        multiSelect: true,
+        fixedMatchMode: 'or',
+        fixedMatchModeHint: 'Places in any selected neighborhood.',
         accessor: p => p.neighborhood
     },
     {
@@ -59,6 +65,8 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         mobilePicker: true,
         desktopPicker: true,
         useChips: false,
+        multiSelect: true,
+        defaultMatchMode: 'or',
         accessor: p => p.type
     },
     {
@@ -142,7 +150,7 @@ export const DEFAULT_FILTER_CONFIG: FilterConfig = FILTER_DEFS.reduce((acc, def)
         placeholder: def.placeholder,
         label: def.label,
         predefinedOrder: def.predefinedOrder ?? [],
-        matchMode: def.multiSelect ? 'and' : undefined, // Default to AND for multi-select
+        matchMode: def.multiSelect ? (def.fixedMatchMode ?? def.defaultMatchMode ?? 'and') : undefined,
     };
     return acc;
 }, {} as Record<FilterKey, FilterOption>);

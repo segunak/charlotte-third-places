@@ -60,6 +60,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             label={filters.type.label}
                             placeholder={filters.type.placeholder}
                             predefinedOrder={filters.type.predefinedOrder}
+                            matchMode={filters.type.matchMode}
                         />
                         <FilterSelect
                             field="size"

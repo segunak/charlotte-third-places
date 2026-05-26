@@ -31,6 +31,7 @@ import { render, screen, fireEvent, act, cleanup } from '@testing-library/react'
 import React, { useState, useCallback, createContext, useContext } from 'react'
 import { ModalProvider, useModalActions } from '@/contexts/ModalContext'
 import { FilterProvider, useFilters, useQuickSearch, useSort, useFilterData } from '@/contexts/FilterContext'
+import { DEFAULT_FILTER_CONFIG } from '@/lib/filters'
 import { Place, SortField, SortDirection } from '@/lib/types'
 
 // INP threshold in milliseconds
@@ -212,7 +213,7 @@ describe('Performance Tests - Render Times', () => {
         const handleFilter = useCallback(() => {
           setFilters(prev => ({
             ...prev,
-            neighborhood: { ...prev.neighborhood, value: 'NoDa' }
+            neighborhood: { ...prev.neighborhood, value: ['NoDa'] }
           }))
           setRenderCount(c => c + 1)
         }, [setFilters])
@@ -254,13 +255,7 @@ describe('Performance Tests - Render Times', () => {
         const { setSortOption } = useSort()
 
         const handleReset = useCallback(() => {
-          setFilters(prev => {
-            const reset = { ...prev }
-            Object.keys(reset).forEach(key => {
-              (reset as any)[key].value = 'all'
-            })
-            return reset
-          })
+          setFilters(DEFAULT_FILTER_CONFIG)
           setQuickFilterText('')
           setSortOption({ field: SortField.Name, direction: SortDirection.Ascending })
         }, [setFilters, setQuickFilterText, setSortOption])
@@ -269,12 +264,12 @@ describe('Performance Tests - Render Times', () => {
           <div>
             <button onClick={() => setFilters(prev => ({
               ...prev,
-              neighborhood: { ...prev.neighborhood, value: 'NoDa' },
-              type: { ...prev.type, value: 'Coffee Shop' }
+              neighborhood: { ...prev.neighborhood, value: ['NoDa'] },
+              type: { ...prev.type, value: ['Coffee Shop'] }
             }))}>Set Filters</button>
             <button onClick={handleReset}>Reset</button>
-            <div data-testid="neighborhood">{filters.neighborhood?.value || 'all'}</div>
-            <div data-testid="type">{filters.type?.value || 'all'}</div>
+            <div data-testid="neighborhood">{Array.isArray(filters.neighborhood?.value) && filters.neighborhood.value.length === 0 ? 'all' : filters.neighborhood?.value}</div>
+            <div data-testid="type">{Array.isArray(filters.type?.value) && filters.type.value.length === 0 ? 'all' : filters.type?.value}</div>
           </div>
         )
       }
