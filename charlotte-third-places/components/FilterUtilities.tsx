@@ -14,9 +14,25 @@ import { CaretSortIcon } from "@radix-ui/react-icons";
 import { Icons } from "@/components/Icons";
 import type { FilterKey } from "@/lib/filters";
 import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions, useOpenNow } from "@/contexts/FilterContext";
-import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, DEFAULT_FILTER_CONFIG } from "@/lib/filters";
+import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, FILTER_DEFINITION_MAP } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
+
+const MATCH_MODE_COPY_BY_FIELD: Partial<Record<FilterKey, {
+    andLabel: string;
+    orLabel: string;
+    andDescription: string;
+    orDescription: string;
+    order?: Array<'and' | 'or'>;
+}>> = {
+    type: {
+        andLabel: 'Has All Types',
+        orLabel: 'Has Any Type',
+        andDescription: 'Places must match every selected type',
+        orDescription: 'Places can match any selected type',
+        order: ['or', 'and'],
+    },
+};
 
 export function FilterQuickSearch() {
     const { quickFilterText, setQuickFilterText } = useQuickSearch();
@@ -88,6 +104,12 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
 
     const isMultiSelect = MULTI_SELECT_FIELDS.has(field);
     const isDesktopPicker = DESKTOP_PICKER_FIELDS.has(field);
+    const filterDefinition = FILTER_DEFINITION_MAP[field];
+    const fixedMatchMode = filterDefinition?.fixedMatchMode;
+    const defaultMatchMode = filterDefinition?.defaultMatchMode ?? (isMultiSelect ? 'and' : undefined);
+    const effectiveMatchMode = fixedMatchMode ?? matchMode ?? defaultMatchMode;
+    const matchModeHint = filterDefinition?.fixedMatchModeHint;
+    const matchModeCopy = MATCH_MODE_COPY_BY_FIELD[field];
     // Normalize value for comparison
     const singleValue = isMultiSelect ? "" : (value as string);
     const multiValue = isMultiSelect ? (value as string[]) : [];
@@ -105,6 +127,7 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
         },
         [field, setFilters]
     );
+    const onConfigurableMatchModeChange = fixedMatchMode ? undefined : handleMatchModeChange;
 
     // Close picker when reset signal changes - use useLayoutEffect to prevent flash
     useLayoutEffect(() => {
@@ -149,13 +172,17 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
         (newValue: string[]) => {
             setFilters((prevFilters) => {
                 if (!prevFilters[field]) return prevFilters;
+                const nextFilter = { ...prevFilters[field], value: newValue };
+                if (isMultiSelect && effectiveMatchMode && !nextFilter.matchMode) {
+                    nextFilter.matchMode = effectiveMatchMode;
+                }
                 return {
                     ...prevFilters,
-                    [field]: { ...prevFilters[field], value: newValue },
+                    [field]: nextFilter,
                 };
             });
         },
-        [field, setFilters]
+        [effectiveMatchMode, field, isMultiSelect, setFilters]
     );
 
     // Only allow pointer events if this is the active popover or none are open
@@ -220,8 +247,10 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         placeholder={placeholder}
                         onSelect={handleMultiFilterChange}
                         multiple
-                        matchMode={matchMode}
-                        onMatchModeChange={handleMatchModeChange}
+                        matchMode={effectiveMatchMode}
+                        onMatchModeChange={onConfigurableMatchModeChange}
+                        matchModeHint={matchModeHint}
+                        matchModeCopy={matchModeCopy}
                     />
                 )}
                 {pickerOpen && !isMultiSelect && (
@@ -278,8 +307,10 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                             placeholder={placeholder}
                             onSelect={handleMultiFilterChange}
                             multiple
-                            matchMode={matchMode}
-                            onMatchModeChange={handleMatchModeChange}
+                            matchMode={effectiveMatchMode}
+                            onMatchModeChange={onConfigurableMatchModeChange}
+                            matchModeHint={matchModeHint}
+                            matchModeCopy={matchModeCopy}
                         />
                     )}
                     {pickerOpen && !isMultiSelect && (
@@ -308,8 +339,8 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         label={label}
                         onOpenChange={onDropdownOpenChange}
                         multiple
-                        matchMode={matchMode}
-                        onMatchModeChange={handleMatchModeChange}
+                        matchMode={effectiveMatchMode}
+                        onMatchModeChange={onConfigurableMatchModeChange}
                     />
                 </div>
             );
@@ -341,8 +372,8 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                     label={label}
                     onOpenChange={onDropdownOpenChange}
                     multiple
-                    matchMode={matchMode}
-                    onMatchModeChange={handleMatchModeChange}
+                    matchMode={effectiveMatchMode}
+                    onMatchModeChange={onConfigurableMatchModeChange}
                 />
             </div>
         );

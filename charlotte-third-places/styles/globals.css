@@ -223,6 +223,40 @@ html[data-native-app] .hide-in-native-app {
   .custom-link {
     @apply text-primary hover:text-secondary underline underline-offset-4;
   }
+
+  @media (width < 40rem) {
+    .mobile-map-control {
+      background-color: var(--map-control) !important;
+      background-image: none !important;
+      border-color: var(--map-control-border) !important;
+      color: var(--map-control-foreground) !important;
+      box-shadow: 0 0 0 1px var(--map-control-halo), 0 8px 18px var(--map-control-shadow), 0 0 12px var(--map-control-glow), 0 0 22px var(--map-control-outer-glow) !important;
+      text-shadow: 0 1px 2px var(--map-control-text-shadow);
+    }
+
+    .mobile-map-control:active {
+      background-color: var(--map-control-hover) !important;
+      background-image: none !important;
+      color: var(--map-control-foreground) !important;
+    }
+
+    @media (hover: hover) {
+      .mobile-map-control:hover {
+        background-color: var(--map-control-hover) !important;
+        background-image: none !important;
+        color: var(--map-control-foreground) !important;
+      }
+    }
+
+    .mobile-map-control:focus-visible {
+      --tw-ring-color: var(--map-control-ring) !important;
+      box-shadow: 0 0 0 2px var(--map-control-ring), 0 0 0 5px var(--map-control-focus-shadow), 0 8px 18px var(--map-control-shadow), 0 0 14px var(--map-control-glow), 0 0 24px var(--map-control-outer-glow) !important;
+    }
+
+    .mobile-map-control svg {
+      filter: drop-shadow(0 1px 1px var(--map-control-text-shadow));
+    }
+  }
 }
 
 @layer base {
@@ -254,6 +288,18 @@ html[data-native-app] .hide-in-native-app {
     --popover-foreground: 210 5% 20%;
     --button-white: rgb(255, 255, 255);
     /* White background for buttons */
+
+    --map-control: #0f172a;
+    --map-control-hover: #111f36;
+    --map-control-foreground: #ffffff;
+    --map-control-border: rgb(255 255 255 / 76%);
+    --map-control-halo: rgb(255 255 255 / 92%);
+    --map-control-glow: rgb(0 245 255 / 38%);
+    --map-control-outer-glow: rgb(0 245 255 / 18%);
+    --map-control-ring: rgb(255 255 255 / 96%);
+    --map-control-shadow: rgb(0 0 0 / 34%);
+    --map-control-focus-shadow: rgb(0 245 255 / 22%);
+    --map-control-text-shadow: rgb(0 0 0 / 72%);
 
     --primary: 190 100% 42%;
     /* More neon teal */
@@ -316,6 +362,18 @@ html[data-native-app] .hide-in-native-app {
     --popover: 190 40% 12%;
     /* Matches card for consistency */
     --popover-foreground: 0 0% 100%;
+
+    --map-control: #0f172a;
+    --map-control-hover: #111f36;
+    --map-control-foreground: #ffffff;
+    --map-control-border: rgb(255 255 255 / 76%);
+    --map-control-halo: rgb(255 255 255 / 88%);
+    --map-control-glow: rgb(0 245 255 / 34%);
+    --map-control-outer-glow: rgb(0 245 255 / 16%);
+    --map-control-ring: rgb(255 255 255 / 96%);
+    --map-control-shadow: rgb(0 0 0 / 38%);
+    --map-control-focus-shadow: rgb(0 245 255 / 20%);
+    --map-control-text-shadow: rgb(0 0 0 / 74%);
 
     --primary: 190 90% 45%;
     /* Neon teal */

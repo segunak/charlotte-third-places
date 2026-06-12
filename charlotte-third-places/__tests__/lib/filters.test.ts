@@ -8,6 +8,7 @@ import {
   sortPlaces,
   MOBILE_PICKER_FIELDS,
   MOBILE_CHIP_FIELDS,
+  MULTI_SELECT_FIELDS,
   SORT_DEFS,
   type FilterConfig,
 } from '@/lib/filters'
@@ -151,20 +152,25 @@ describe('DESKTOP_PICKER_FIELDS', () => {
 })
 
 describe('MULTI_SELECT_FIELDS', () => {
-  it('includes tags', () => {
+  it('includes tags, neighborhood, and type', () => {
     const tagsDef = FILTER_DEFS.find(d => d.key === 'tags')
-    expect(tagsDef?.multiSelect).toBe(true)
-  })
-
-  it('does not include name, neighborhood, type, or chip fields', () => {
-    const nameDef = FILTER_DEFS.find(d => d.key === 'name')
     const neighborhoodDef = FILTER_DEFS.find(d => d.key === 'neighborhood')
     const typeDef = FILTER_DEFS.find(d => d.key === 'type')
+    expect(tagsDef?.multiSelect).toBe(true)
+    expect(neighborhoodDef?.multiSelect).toBe(true)
+    expect(neighborhoodDef?.fixedMatchMode).toBe('or')
+    expect(typeDef?.multiSelect).toBe(true)
+    expect(typeDef?.defaultMatchMode).toBe('or')
+    expect(MULTI_SELECT_FIELDS.has('tags')).toBe(true)
+    expect(MULTI_SELECT_FIELDS.has('neighborhood')).toBe(true)
+    expect(MULTI_SELECT_FIELDS.has('type')).toBe(true)
+  })
+
+  it('does not include name or chip fields', () => {
+    const nameDef = FILTER_DEFS.find(d => d.key === 'name')
     const parkingDef = FILTER_DEFS.find(d => d.key === 'parking')
     
     expect(nameDef?.multiSelect).toBeFalsy()
-    expect(neighborhoodDef?.multiSelect).toBeFalsy()
-    expect(typeDef?.multiSelect).toBeFalsy()
     expect(parkingDef?.multiSelect).toBeFalsy()
   })
 })
@@ -230,6 +236,12 @@ describe('DEFAULT_FILTER_CONFIG', () => {
       }
     }
   })
+
+  it('uses OR for neighborhood and type, and AND for tags', () => {
+    expect(DEFAULT_FILTER_CONFIG.neighborhood.matchMode).toBe('or')
+    expect(DEFAULT_FILTER_CONFIG.type.matchMode).toBe('or')
+    expect(DEFAULT_FILTER_CONFIG.tags.matchMode).toBe('and')
+  })
 })
 
 describe('placeMatchesFilters', () => {
@@ -238,44 +250,67 @@ describe('placeMatchesFilters', () => {
     expect(placeMatchesFilters(place, DEFAULT_FILTER_CONFIG)).toBe(true)
   })
 
-  it('filters by scalar value (neighborhood)', () => {
+  it('filters by multi-select neighborhood with fixed OR logic', () => {
     const place = createTestPlace({ neighborhood: 'NoDa' })
     
     const matchingFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
     }
-    
-    const nonMatchingFilters: FilterConfig = {
-      ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'Plaza Midwood' },
-    }
-    
-    expect(placeMatchesFilters(place, matchingFilters)).toBe(true)
-    expect(placeMatchesFilters(place, nonMatchingFilters)).toBe(false)
-  })
 
-  it('filters by array value (type)', () => {
-    const place = createTestPlace({ type: ['Coffee Shop', 'Bakery'] })
-    
-    const matchingFilters: FilterConfig = {
-      ...DEFAULT_FILTER_CONFIG,
-      type: { ...DEFAULT_FILTER_CONFIG.type, value: 'Coffee Shop' },
-    }
-    
     const alsoMatchingFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      type: { ...DEFAULT_FILTER_CONFIG.type, value: 'Bakery' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa', 'Plaza Midwood'] },
     }
     
     const nonMatchingFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      type: { ...DEFAULT_FILTER_CONFIG.type, value: 'Restaurant' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['Plaza Midwood'] },
     }
     
     expect(placeMatchesFilters(place, matchingFilters)).toBe(true)
     expect(placeMatchesFilters(place, alsoMatchingFilters)).toBe(true)
     expect(placeMatchesFilters(place, nonMatchingFilters)).toBe(false)
+  })
+
+  it('filters by multi-select type with default OR logic', () => {
+    const place = createTestPlace({ type: ['Coffee Shop', 'Bakery'] })
+    
+    const matchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      type: { ...DEFAULT_FILTER_CONFIG.type, value: ['Coffee Shop'] },
+    }
+    
+    const alsoMatchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      type: { ...DEFAULT_FILTER_CONFIG.type, value: ['Bakery', 'Restaurant'] },
+    }
+    
+    const nonMatchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      type: { ...DEFAULT_FILTER_CONFIG.type, value: ['Restaurant'] },
+    }
+    
+    expect(placeMatchesFilters(place, matchingFilters)).toBe(true)
+    expect(placeMatchesFilters(place, alsoMatchingFilters)).toBe(true)
+    expect(placeMatchesFilters(place, nonMatchingFilters)).toBe(false)
+  })
+
+  it('filters by multi-select type with configurable AND logic', () => {
+    const place = createTestPlace({ type: ['Coffee Shop', 'Bookstore'] })
+
+    const allMatchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      type: { ...DEFAULT_FILTER_CONFIG.type, value: ['Coffee Shop', 'Bookstore'], matchMode: 'and' },
+    }
+
+    const partialMatchingFilters: FilterConfig = {
+      ...DEFAULT_FILTER_CONFIG,
+      type: { ...DEFAULT_FILTER_CONFIG.type, value: ['Coffee Shop', 'Bakery'], matchMode: 'and' },
+    }
+
+    expect(placeMatchesFilters(place, allMatchingFilters)).toBe(true)
+    expect(placeMatchesFilters(place, partialMatchingFilters)).toBe(false)
   })
 
   it('filters by tags array with multi-select AND logic', () => {
@@ -326,13 +361,13 @@ describe('placeMatchesFilters', () => {
     
     const bothMatchFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
       size: { ...DEFAULT_FILTER_CONFIG.size, value: 'Large' },
     }
     
     const oneMatchFilters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
       size: { ...DEFAULT_FILTER_CONFIG.size, value: 'Small' },
     }
     
@@ -356,7 +391,7 @@ describe('filterPlaces', () => {
   it('filters by single criterion', () => {
     const filters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
     }
     
     const result = filterPlaces(places, filters)
@@ -367,7 +402,7 @@ describe('filterPlaces', () => {
   it('filters by multiple criteria', () => {
     const filters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
       size: { ...DEFAULT_FILTER_CONFIG.size, value: 'Small' },
     }
     
@@ -379,7 +414,7 @@ describe('filterPlaces', () => {
   it('returns empty array when no matches', () => {
     const filters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'Dilworth' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['Dilworth'] },
     }
     
     const result = filterPlaces(places, filters)
@@ -390,7 +425,7 @@ describe('filterPlaces', () => {
     const original = [...places]
     const filters: FilterConfig = {
       ...DEFAULT_FILTER_CONFIG,
-      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: 'NoDa' },
+      neighborhood: { ...DEFAULT_FILTER_CONFIG.neighborhood, value: ['NoDa'] },
     }
     
     filterPlaces(places, filters)

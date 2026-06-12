@@ -1,4 +1,4 @@
-import { test, expect, Page } from '@playwright/test'
+import { test, expect, Locator, Page } from '@playwright/test'
 
 /**
  * COMPREHENSIVE Filter and Sort E2E Tests
@@ -8,8 +8,8 @@ import { test, expect, Page } from '@playwright/test'
  * 
  * FILTERS (from FILTER_DEFS in lib/filters.ts):
  * 1. Name - VirtualizedSelect/Picker
- * 2. Neighborhood - VirtualizedSelect/Picker
- * 3. Type - VirtualizedSelect/Picker
+ * 2. Neighborhood - Multi-select Picker
+ * 3. Type - Multi-select Picker
  * 4. Tags - Multi-select
  * 5. Parking - Chip filter (Free/Paid)
  * 6. Free Wi-Fi - Chip filter (Yes/No)
@@ -37,6 +37,89 @@ async function clickChipFilter(page: Page, sidebar: ReturnType<Page['getByTestId
       return button
     }
   }
+  return null
+}
+
+async function expectSelectedDialogFilter(sidebar: ReturnType<Page['getByTestId']>) {
+  const selectedFilter = sidebar.locator('button[aria-haspopup="dialog"]').filter({ hasText: /selected/i }).first()
+  await expect(selectedFilter).toHaveClass(/bg-primary/)
+  await expect(selectedFilter).toContainText(/selected/i)
+}
+
+async function expectTypeMatchMode(modal: Locator) {
+  const anyType = modal.getByRole('button', { name: 'Has Any Type' })
+  const allTypes = modal.getByRole('button', { name: 'Has All Types' })
+
+  await expect(anyType).toBeVisible()
+  await expect(allTypes).toBeVisible()
+  await expect(anyType).toHaveAttribute('aria-pressed', 'true')
+  await expect(allTypes).toHaveAttribute('aria-pressed', 'false')
+  await expect(modal.locator('button').filter({ hasText: /Has (Any Type|All Types)/ }).nth(0)).toHaveText('Has Any Type')
+  await expect(modal.locator('button').filter({ hasText: /Has (Any Type|All Types)/ }).nth(1)).toHaveText('Has All Types')
+  await expect(modal.getByText('Places can match any selected type')).toBeVisible()
+  await expect(modal.getByText('Has All Tags')).toHaveCount(0)
+  await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
+}
+
+async function expectTagsMatchMode(modal: Locator) {
+  const allTags = modal.getByRole('button', { name: 'Has All Tags' })
+  const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
+
+  await expect(allTags).toBeVisible()
+  await expect(anyTag).toBeVisible()
+  await expect(allTags).toHaveAttribute('aria-pressed', 'true')
+  await expect(anyTag).toHaveAttribute('aria-pressed', 'false')
+  await expect(modal.locator('button').filter({ hasText: /Has (All Tags|Any Tag)/ }).nth(0)).toHaveText('Has All Tags')
+  await expect(modal.locator('button').filter({ hasText: /Has (All Tags|Any Tag)/ }).nth(1)).toHaveText('Has Any Tag')
+  await expect(modal.getByText('Places must have all selected tags')).toBeVisible()
+  await expect(modal.getByText('Has Any Type')).toHaveCount(0)
+  await expect(modal.getByText('Has All Types')).toHaveCount(0)
+}
+
+async function openMobileFilterDrawer(page: Page): Promise<Locator | null> {
+  const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
+
+  if (await filterButton.count() > 0 && await filterButton.isVisible()) {
+    await filterButton.click()
+    await page.waitForTimeout(500)
+
+    const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').filter({ hasText: 'Filters' }).last()
+    await expect(drawer).toBeVisible({ timeout: 5000 })
+    return drawer
+  }
+
+  return null
+}
+
+async function openMobilePickerModal(page: Page, label: string): Promise<Locator | null> {
+  const drawer = await openMobileFilterDrawer(page)
+  if (!drawer) return null
+
+  const picker = drawer.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+
+  if (await picker.count() > 0 && await picker.isVisible()) {
+    await picker.click({ force: true })
+
+    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
+    await expect(modal).toBeVisible({ timeout: 5000 })
+    return modal
+  }
+
+  return null
+}
+
+async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator | null> {
+  const browseSection = page.getByTestId('browse-section')
+  const picker = browseSection.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+
+  if (await picker.count() > 0 && await picker.isVisible()) {
+    await picker.click({ force: true })
+
+    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
+    await expect(modal).toBeVisible({ timeout: 5000 })
+    return modal
+  }
+
   return null
 }
 
@@ -82,74 +165,74 @@ test.describe('Homepage Filters (Desktop)', () => {
     }
   })
 
-  test('Neighborhood filter filters by neighborhood', async ({ page }) => {
-    const neighborhoodFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Neighborhood$/i }).first()
+  test('Neighborhood filter selects multiple neighborhoods', async ({ page }) => {
+    const neighborhoodFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Neighborhood$/i }).first()
     
     if (await neighborhoodFilter.count() > 0 && await neighborhoodFilter.isVisible()) {
       await neighborhoodFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
-      
-      const uptownOption = page.locator('[role="option"]').filter({ hasText: 'Uptown' }).first()
-      if (await uptownOption.count() > 0) {
-        await uptownOption.click()
-        await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
-        await expect(neighborhoodFilter).toContainText('Uptown')
-      } else {
-        const firstOption = page.locator('[role="option"]').filter({ hasNotText: 'All' }).first()
-        if (await firstOption.count() > 0) {
-          await firstOption.click()
-          await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
+      await expect(modal.getByText('Has All Tags')).toHaveCount(0)
+      await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
+
+      const options = modal.locator('ul button')
+      if (await options.count() > 0) {
+        await options.nth(0).click()
+        if (await options.count() > 1) {
+          await options.nth(1).click()
         }
+        await modal.getByRole('button', { name: /done/i }).click()
+        await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
+        await expect(neighborhoodFilter).toContainText(/selected/i)
       }
     }
   })
 
-  test('Type filter filters by place type', async ({ page }) => {
-    const typeFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Type$/i }).first()
+  test('Type filter selects multiple types', async ({ page }) => {
+    const typeFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Type$/i }).first()
     
     if (await typeFilter.count() > 0 && await typeFilter.isVisible()) {
       await typeFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expectTypeMatchMode(modal)
       
-      const coffeeOption = page.locator('[role="option"]').filter({ hasText: 'Coffee Shop' }).first()
-      if (await coffeeOption.count() > 0) {
-        await coffeeOption.click()
-        await expect(typeFilter).toHaveClass(/bg-primary/)
-        await expect(typeFilter).toContainText('Coffee Shop')
-      } else {
-        const firstOption = page.locator('[role="option"]').filter({ hasNotText: 'All' }).first()
-        if (await firstOption.count() > 0) {
-          await firstOption.click()
-          await expect(typeFilter).toHaveClass(/bg-primary/)
+      const options = modal.locator('ul button')
+      if (await options.count() > 0) {
+        await options.nth(0).click()
+        if (await options.count() > 1) {
+          await options.nth(1).click()
         }
+        await modal.getByRole('button', { name: /done/i }).click()
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
 
   test('Tags multi-select filter selects multiple tags', async ({ page }) => {
-    const tagsFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Tags$/i }).first()
+    const tagsFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Tags$/i }).first()
     
     if (await tagsFilter.count() > 0 && await tagsFilter.isVisible()) {
       await tagsFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expectTagsMatchMode(modal)
+      await expect(modal.getByText('Places in any selected neighborhood.')).toHaveCount(0)
       
-      const firstOption = page.locator('[role="option"]').first()
+      const firstOption = modal.locator('ul button').first()
       if (await firstOption.count() > 0) {
         await firstOption.click()
         
-        // Multi-select: dropdown should still be open
-        await expect(listbox).toBeVisible()
-        
-        await page.keyboard.press('Escape')
+        // Multi-select: modal should still be open until Done
+        await expect(modal).toBeVisible()
+        await modal.getByRole('button', { name: /done/i }).click()
         
         await expect(tagsFilter).toContainText(/1 selected/i)
         await expect(tagsFilter).toHaveClass(/bg-primary/)
@@ -430,56 +513,61 @@ test.describe('Map Page Filters (Desktop)', () => {
   })
 
   test('Neighborhood filter works on map page', async ({ page }) => {
-    const neighborhoodFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Neighborhood$/i }).first()
+    const neighborhoodFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Neighborhood$/i }).first()
     
     if (await neighborhoodFilter.count() > 0 && await neighborhoodFilter.isVisible()) {
       await neighborhoodFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
       
-      const firstOption = page.locator('[role="option"]').filter({ hasNotText: 'All' }).first()
+      const firstOption = modal.locator('ul button').first()
       if (await firstOption.count() > 0) {
         await firstOption.click()
-        await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
+        await page.keyboard.press('Escape')
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
 
   test('Type filter works on map page', async ({ page }) => {
-    const typeFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Type$/i }).first()
+    const typeFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Type$/i }).first()
     
     if (await typeFilter.count() > 0 && await typeFilter.isVisible()) {
       await typeFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expectTypeMatchMode(modal)
       
-      const firstOption = page.locator('[role="option"]').filter({ hasNotText: 'All' }).first()
+      const firstOption = modal.locator('ul button').first()
       if (await firstOption.count() > 0) {
         await firstOption.click()
-        await expect(typeFilter).toHaveClass(/bg-primary/)
+        await page.keyboard.press('Escape')
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
 
   test('Tags filter works on map page', async ({ page }) => {
-    const tagsFilter = page.locator('button[role="combobox"]').filter({ hasText: /^Tags$/i }).first()
+    const tagsFilter = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /^Tags$/i }).first()
     
     if (await tagsFilter.count() > 0 && await tagsFilter.isVisible()) {
       await tagsFilter.click()
       await page.waitForTimeout(300)
       
-      const listbox = page.getByRole('listbox')
-      await expect(listbox).toBeVisible({ timeout: 3000 })
+      const modal = page.getByRole('dialog').last()
+      await expect(modal).toBeVisible({ timeout: 5000 })
+      await expectTagsMatchMode(modal)
       
-      const firstOption = page.locator('[role="option"]').first()
+      const firstOption = modal.locator('ul button').first()
       if (await firstOption.count() > 0) {
         await firstOption.click()
         await page.keyboard.press('Escape')
-        await expect(tagsFilter).toHaveClass(/bg-primary/)
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
@@ -551,90 +639,68 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Mobile picker modal opens for Name filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(500) // Wait for drawer animation
-      
-      const namePicker = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /Name/i }).first()
-      
-      if (await namePicker.count() > 0 && await namePicker.isVisible()) {
-        await namePicker.click({ force: true })
-        await page.waitForTimeout(500)
-        
-        // Look for any dialog that opened
-        const modal = page.getByRole('dialog').last()
-        await expect(modal).toBeVisible({ timeout: 5000 })
-        
-        await page.keyboard.press('Escape')
-      }
+    const modal = await openMobilePickerModal(page, 'Name')
+
+    if (modal) {
+      await page.keyboard.press('Escape')
     }
   })
 
   test('Mobile picker modal opens for Neighborhood filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(500) // Wait for drawer animation
-      
-      const picker = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /Neighborhood/i }).first()
-      
-      if (await picker.count() > 0 && await picker.isVisible()) {
-        await picker.click({ force: true })
-        await page.waitForTimeout(500)
-        
-        // Look for any dialog with Select in the title or a dialog with a listbox
-        const modal = page.getByRole('dialog').last()
-        await expect(modal).toBeVisible({ timeout: 5000 })
-        
-        await page.keyboard.press('Escape')
-      }
+    const modal = await openMobilePickerModal(page, 'Neighborhood')
+
+    if (modal) {
+      await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
+      await expect(modal.getByText('Has All Tags')).toHaveCount(0)
+      await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
+
+      await page.keyboard.press('Escape')
     }
   })
 
   test('Mobile picker modal opens for Type filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(500) // Wait for drawer animation
-      
-      const picker = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /Type/i }).first()
-      
-      if (await picker.count() > 0 && await picker.isVisible()) {
-        await picker.click({ force: true })
-        await page.waitForTimeout(500)
-        
-        // Look for any dialog that opened
-        const modal = page.getByRole('dialog').last()
-        await expect(modal).toBeVisible({ timeout: 5000 })
-        
-        await page.keyboard.press('Escape')
-      }
+    const modal = await openMobilePickerModal(page, 'Type')
+
+    if (modal) {
+      await expectTypeMatchMode(modal)
+
+      await page.keyboard.press('Escape')
+    }
+  })
+
+  test('Mobile quick Type picker defaults to Has Any Type', async ({ page }) => {
+    const modal = await openMobileQuickPickerModal(page, 'Type')
+
+    if (modal) {
+      await expectTypeMatchMode(modal)
+
+      await page.keyboard.press('Escape')
     }
   })
 
   test('Mobile picker modal opens for Tags filter', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(500) // Wait for drawer animation
-      
-      const picker = page.locator('button[aria-haspopup="dialog"]').filter({ hasText: /Tags/i }).first()
-      
-      if (await picker.count() > 0 && await picker.isVisible()) {
-        await picker.click({ force: true })
-        await page.waitForTimeout(500)
-        
-        // Look for any dialog that opened
-        const modal = page.getByRole('dialog').last()
-        await expect(modal).toBeVisible({ timeout: 5000 })
-        
-        await page.keyboard.press('Escape')
-      }
+    const modal = await openMobilePickerModal(page, 'Tags')
+
+    if (modal) {
+      await expectTagsMatchMode(modal)
+
+      await page.keyboard.press('Escape')
+    }
+  })
+
+  test('Mobile quick Tags picker honors Has Any Tag selection', async ({ page }) => {
+    const modal = await openMobileQuickPickerModal(page, 'Tags')
+
+    if (modal) {
+      const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
+      const allTags = modal.getByRole('button', { name: 'Has All Tags' })
+
+      await expectTagsMatchMode(modal)
+      await anyTag.click()
+      await expect(anyTag).toHaveAttribute('aria-pressed', 'true')
+      await expect(allTags).toHaveAttribute('aria-pressed', 'false')
+
+      await page.keyboard.press('Escape')
     }
   })
 
