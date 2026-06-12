@@ -40,6 +40,16 @@ interface MultiSelectPickerProps extends BaseSearchablePickerModalProps {
   matchMode?: 'and' | 'or';
   /** Callback when match mode changes */
   onMatchModeChange?: (mode: 'and' | 'or') => void;
+  /** Optional description for fixed match-mode multi-selects */
+  matchModeHint?: string;
+  /** Labels and helper text for configurable match-mode controls */
+  matchModeCopy?: {
+    andLabel: string;
+    orLabel: string;
+    andDescription: string;
+    orDescription: string;
+    order?: Array<'and' | 'or'>;
+  };
 }
 
 type SearchablePickerModalProps = SingleSelectPickerProps | MultiSelectPickerProps;
@@ -67,6 +77,17 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
   const showDefaultOption = !isMultiple && ((props as SingleSelectPickerProps).showDefaultOption ?? true);
   const matchMode = isMultiple ? (props as MultiSelectPickerProps).matchMode : undefined;
   const onMatchModeChange = isMultiple ? (props as MultiSelectPickerProps).onMatchModeChange : undefined;
+  const matchModeHint = isMultiple ? (props as MultiSelectPickerProps).matchModeHint : undefined;
+  const matchModeCopy = isMultiple
+    ? (props as MultiSelectPickerProps).matchModeCopy ?? {
+      andLabel: 'Has All Tags',
+      orLabel: 'Has Any Tag',
+      andDescription: 'Places must have all selected tags',
+      orDescription: 'Places must have at least one selected tag',
+      order: ['and', 'or'],
+    }
+    : undefined;
+  const matchModeOrder = matchModeCopy?.order ?? ['and', 'or'];
 
   // Match mode can be stored in context higher up; keep a local copy so the UI
   // reflects the click immediately (avoids "updates after mouse leaves" feel).
@@ -153,42 +174,38 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
               />
             </div>
           )}
+
+          {isMultiple && matchModeHint && (
+            <p className="text-sm text-muted-foreground text-center">
+              {matchModeHint}
+            </p>
+          )}
           
           {/* Multi-select match mode toggle - below search, sized like action buttons */}
           {isMultiple && onMatchModeChange && (
             <div className="flex flex-col items-center gap-2">
               <div className="inline-flex rounded-lg border border-input bg-muted/30 p-1 w-full">
-                <button
-                  type="button"
-                  onClick={() => handleMatchModeClick('and')}
-                  aria-pressed={localMatchMode === 'and'}
-                  className={cn(
-                    "flex-1 h-11 text-base font-medium rounded-md transition-colors",
-                    localMatchMode === 'and'
-                      ? "bg-primary text-primary-foreground shadow-xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                  )}
-                >
-                  Has All Tags
-                </button>
-                <button
-                  type="button"
-                  onClick={() => handleMatchModeClick('or')}
-                  aria-pressed={localMatchMode === 'or'}
-                  className={cn(
-                    "flex-1 h-11 text-base font-medium rounded-md transition-colors",
-                    localMatchMode === 'or'
-                      ? "bg-primary text-primary-foreground shadow-xs"
-                      : "text-muted-foreground hover:text-foreground hover:bg-accent"
-                  )}
-                >
-                  Has Any Tag
-                </button>
+                {matchModeOrder.map((mode) => (
+                  <button
+                    key={mode}
+                    type="button"
+                    onClick={() => handleMatchModeClick(mode)}
+                    aria-pressed={localMatchMode === mode}
+                    className={cn(
+                      "flex-1 h-11 text-base font-medium rounded-md transition-colors",
+                      localMatchMode === mode
+                        ? "bg-primary text-primary-foreground shadow-xs"
+                        : "text-muted-foreground hover:text-foreground hover:bg-accent"
+                    )}
+                  >
+                    {mode === 'and' ? matchModeCopy?.andLabel : matchModeCopy?.orLabel}
+                  </button>
+                ))}
               </div>
               <p className="text-md text-muted-foreground">
                 {localMatchMode === 'and' 
-                  ? "Places must have all selected tags" 
-                  : "Places must have at least one selected tag"}
+                  ? matchModeCopy?.andDescription
+                  : matchModeCopy?.orDescription}
               </p>
             </div>
           )}

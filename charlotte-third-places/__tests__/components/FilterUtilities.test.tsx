@@ -13,9 +13,11 @@ import { DEFAULT_FILTER_CONFIG } from "@/lib/filters";
 import type { FilterConfig, FilterKey } from "@/lib/filters";
 import { DEFAULT_SORT_OPTION } from "@/lib/types";
 
+const mockUseIsMobile = vi.fn(() => false);
+
 // Mock the useIsMobile hook
 vi.mock("@/hooks/use-mobile", () => ({
-    useIsMobile: () => false,
+    useIsMobile: () => mockUseIsMobile(),
 }));
 
 // Helper to create a mock filter context
@@ -80,6 +82,7 @@ function renderWithContext(
 
 describe("FilterQuickSearch", () => {
     beforeEach(() => {
+        mockUseIsMobile.mockReturnValue(false);
         vi.useFakeTimers({ shouldAdvanceTime: true });
     });
 
@@ -261,15 +264,15 @@ describe("FilterSelect - desktopPicker behavior", () => {
         renderWithContext(
             <FilterSelect
                 field="neighborhood"
-                value="all"
+                value={[]}
                 label="Neighborhood"
-                placeholder="All Neighborhoods"
+                placeholder="Neighborhood"
                 predefinedOrder={[]}
             />,
             contextValue
         );
 
-        const trigger = screen.getByRole("button", { name: /all neighborhoods/i });
+        const trigger = screen.getByRole("button", { name: /neighborhood/i });
         expect(trigger).toBeInTheDocument();
         expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
     });
@@ -279,15 +282,15 @@ describe("FilterSelect - desktopPicker behavior", () => {
         renderWithContext(
             <FilterSelect
                 field="type"
-                value="all"
+                value={[]}
                 label="Type"
-                placeholder="All Types"
+                placeholder="Type"
                 predefinedOrder={[]}
             />,
             contextValue
         );
 
-        const trigger = screen.getByRole("button", { name: /all types/i });
+        const trigger = screen.getByRole("button", { name: /type/i });
         expect(trigger).toBeInTheDocument();
         expect(trigger).toHaveAttribute("aria-haspopup", "dialog");
     });
@@ -346,6 +349,69 @@ describe("FilterSelect - desktopPicker behavior", () => {
 
         const trigger = screen.getByRole("combobox");
         expect(trigger).toBeInTheDocument();
+    });
+});
+
+describe("FilterSelect - mobile match-mode behavior", () => {
+    beforeEach(() => {
+        mockUseIsMobile.mockReturnValue(true);
+    });
+
+    afterEach(() => {
+        mockUseIsMobile.mockReturnValue(false);
+    });
+
+    it("defaults Type to Has Any Type on mobile when matchMode is omitted", async () => {
+        const user = userEvent.setup();
+        const contextValue = createMockFilterContext({
+            getDistinctValues: vi.fn().mockReturnValue(["Coffee Shop", "Bookstore"]),
+        });
+        renderWithContext(
+            <FilterSelect
+                field="type"
+                value={[]}
+                label="Type"
+                placeholder="Type"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        await user.click(screen.getByRole("button", { name: /type/i }));
+
+        const anyType = await screen.findByRole("button", { name: "Has Any Type" });
+        const allTypes = screen.getByRole("button", { name: "Has All Types" });
+        expect(anyType).toHaveAttribute("aria-pressed", "true");
+        expect(allTypes).toHaveAttribute("aria-pressed", "false");
+        expect(anyType.compareDocumentPosition(allTypes) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+        expect(screen.getByText("Places can match any selected type")).toBeInTheDocument();
+    });
+
+    it("honors Has Any Tag on mobile when tags matchMode is OR", async () => {
+        const user = userEvent.setup();
+        const contextValue = createMockFilterContext({
+            getDistinctValues: vi.fn().mockReturnValue(["Good for Groups", "Has Fireplace"]),
+        });
+        renderWithContext(
+            <FilterSelect
+                field="tags"
+                value={[]}
+                label="Tags"
+                placeholder="Tags"
+                predefinedOrder={[]}
+                matchMode="or"
+            />,
+            contextValue
+        );
+
+        await user.click(screen.getByRole("button", { name: /tags/i }));
+
+        const anyTag = await screen.findByRole("button", { name: "Has Any Tag" });
+        const allTags = screen.getByRole("button", { name: "Has All Tags" });
+        expect(anyTag).toHaveAttribute("aria-pressed", "true");
+        expect(allTags).toHaveAttribute("aria-pressed", "false");
+        expect(allTags.compareDocumentPosition(anyTag) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+        expect(screen.getByText("Places must have at least one selected tag")).toBeInTheDocument();
     });
 });
 
@@ -434,12 +500,12 @@ describe("FilterSelect - searchable and multiple props", () => {
         expect(trigger).toHaveTextContent("Name");
     });
 
-    it("handles single-select for neighborhood field", () => {
+    it("handles multi-select for neighborhood field", () => {
         const contextValue = createMockFilterContext();
         renderWithContext(
             <FilterSelect
                 field="neighborhood"
-                value="NoDa"
+                value={["NoDa", "Plaza Midwood"]}
                 label="Neighborhood"
                 placeholder="Neighborhood"
                 predefinedOrder={[]}
@@ -448,8 +514,105 @@ describe("FilterSelect - searchable and multiple props", () => {
         );
 
         // Neighborhood uses desktop picker (dialog trigger)
-        const trigger = screen.getByRole("button", { name: /noda/i });
-        expect(trigger).toHaveTextContent("NoDa");
+        const trigger = screen.getByRole("button", { name: /2 selected/i });
+        expect(trigger).toHaveTextContent("2 selected");
+    });
+
+    it("handles multi-select for type field", () => {
+        const contextValue = createMockFilterContext();
+        renderWithContext(
+            <FilterSelect
+                field="type"
+                value={["Coffee Shop", "Bookstore"]}
+                label="Type"
+                placeholder="Type"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        const trigger = screen.getByRole("button", { name: /2 selected/i });
+        expect(trigger).toHaveTextContent("2 selected");
+    });
+
+    it("shows fixed OR hint without the tags match-mode switch for neighborhood", async () => {
+        const user = userEvent.setup();
+        const contextValue = createMockFilterContext({
+            getDistinctValues: vi.fn().mockReturnValue(["NoDa", "Plaza Midwood", "Uptown"]),
+        });
+        renderWithContext(
+            <FilterSelect
+                field="neighborhood"
+                value={[]}
+                label="Neighborhood"
+                placeholder="Neighborhood"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        await user.click(screen.getByRole("button", { name: /neighborhood/i }));
+
+        expect(await screen.findByText("Places in any selected neighborhood.")).toBeInTheDocument();
+        expect(screen.queryByText("Has All Tags")).not.toBeInTheDocument();
+        expect(screen.queryByText("Has Any Tag")).not.toBeInTheDocument();
+    });
+
+    it("keeps the tags match-mode switch for tags", async () => {
+        const user = userEvent.setup();
+        const contextValue = createMockFilterContext({
+            getDistinctValues: vi.fn().mockReturnValue(["Good for Groups", "Has Fireplace"]),
+        });
+        renderWithContext(
+            <FilterSelect
+                field="tags"
+                value={[]}
+                label="Tags"
+                placeholder="Tags"
+                predefinedOrder={[]}
+                matchMode="and"
+            />,
+            contextValue
+        );
+
+        await user.click(screen.getByRole("button", { name: /tags/i }));
+
+        expect(await screen.findByText("Has All Tags")).toBeInTheDocument();
+        expect(screen.getByText("Has Any Tag")).toBeInTheDocument();
+        expect(screen.queryByText("Places in any selected neighborhood.")).not.toBeInTheDocument();
+    });
+
+    it("shows the type match-mode switch with Has Any Type as the default", async () => {
+        const user = userEvent.setup();
+        const contextValue = createMockFilterContext({
+            getDistinctValues: vi.fn().mockReturnValue(["Coffee Shop", "Bookstore", "Bakery"]),
+        });
+        renderWithContext(
+            <FilterSelect
+                field="type"
+                value={[]}
+                label="Type"
+                placeholder="Type"
+                predefinedOrder={[]}
+            />,
+            contextValue
+        );
+
+        await user.click(screen.getByRole("button", { name: /type/i }));
+
+        const anyType = await screen.findByRole("button", { name: "Has Any Type" });
+        const allTypes = screen.getByRole("button", { name: "Has All Types" });
+        expect(anyType).toHaveAttribute("aria-pressed", "true");
+        expect(allTypes).toHaveAttribute("aria-pressed", "false");
+        expect(anyType.compareDocumentPosition(allTypes) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+        expect(screen.getByText("Places can match any selected type")).toBeInTheDocument();
+        expect(screen.queryByText("Has All Tags")).not.toBeInTheDocument();
+        expect(screen.queryByText("Has Any Tag")).not.toBeInTheDocument();
+
+        await user.click(allTypes);
+
+        expect(allTypes).toHaveAttribute("aria-pressed", "true");
+        expect(screen.getByText("Places must match every selected type")).toBeInTheDocument();
     });
 });
 

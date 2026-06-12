@@ -447,7 +447,7 @@ describe('DataTable', () => {
         ...DEFAULT_FILTER_CONFIG,
         neighborhood: {
           ...DEFAULT_FILTER_CONFIG.neighborhood,
-          value: 'NoDa',
+          value: ['NoDa'],
         },
       }
 
@@ -486,12 +486,12 @@ describe('DataTable', () => {
       const places = [uptownPlace, nodaPlace]
       const onFilteredCountChange = vi.fn()
 
-      // Filter to only NoDa
+      // Filter to NoDa or Uptown
       const nodaFilter: FilterConfig = {
         ...DEFAULT_FILTER_CONFIG,
         neighborhood: {
           ...DEFAULT_FILTER_CONFIG.neighborhood,
-          value: 'NoDa',
+          value: ['NoDa', 'Uptown'],
         },
       }
 
@@ -508,14 +508,135 @@ describe('DataTable', () => {
       // Wait for loading to complete and callback to be called
       await waitFor(
         () => {
-          expect(onFilteredCountChange).toHaveBeenCalledWith(1) // Only 1 NoDa place
+          expect(onFilteredCountChange).toHaveBeenCalledWith(2) // NoDa or Uptown
         },
         { timeout: 1000 }
       )
 
       // Verify the displayed card matches the count
       expect(screen.getByText('NoDa Coffee')).toBeInTheDocument()
-      expect(screen.queryByText('Uptown Cafe')).not.toBeInTheDocument()
+      expect(screen.getByText('Uptown Cafe')).toBeInTheDocument()
+    })
+
+    it('filters Type by any selected type by default', async () => {
+      const coffeePlace = createMockPlace({
+        name: 'Coffee Only',
+        recordId: 'rec1',
+        type: ['Coffee Shop'],
+      })
+      const bookstorePlace = createMockPlace({
+        name: 'Bookstore Only',
+        recordId: 'rec2',
+        type: ['Bookstore'],
+      })
+      const bakeryPlace = createMockPlace({
+        name: 'Bakery Only',
+        recordId: 'rec3',
+        type: ['Bakery'],
+      })
+
+      const filters: FilterConfig = {
+        ...DEFAULT_FILTER_CONFIG,
+        type: {
+          ...DEFAULT_FILTER_CONFIG.type,
+          value: ['Coffee Shop', 'Bookstore'],
+        },
+      }
+
+      renderWithFilterContext([coffeePlace, bookstorePlace, bakeryPlace], { filters })
+
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      expect(screen.getByText('Coffee Only')).toBeInTheDocument()
+      expect(screen.getByText('Bookstore Only')).toBeInTheDocument()
+      expect(screen.queryByText('Bakery Only')).not.toBeInTheDocument()
+    })
+
+    it('filters Type by all selected types when match mode is AND', async () => {
+      const coffeePlace = createMockPlace({
+        name: 'Coffee Only',
+        recordId: 'rec1',
+        type: ['Coffee Shop'],
+      })
+      const hybridPlace = createMockPlace({
+        name: 'Coffee Bookstore Hybrid',
+        recordId: 'rec2',
+        type: ['Coffee Shop', 'Bookstore'],
+      })
+      const bookstorePlace = createMockPlace({
+        name: 'Bookstore Only',
+        recordId: 'rec3',
+        type: ['Bookstore'],
+      })
+
+      const filters: FilterConfig = {
+        ...DEFAULT_FILTER_CONFIG,
+        type: {
+          ...DEFAULT_FILTER_CONFIG.type,
+          value: ['Coffee Shop', 'Bookstore'],
+          matchMode: 'and',
+        },
+      }
+
+      renderWithFilterContext([coffeePlace, hybridPlace, bookstorePlace], { filters })
+
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      expect(screen.getByText('Coffee Bookstore Hybrid')).toBeInTheDocument()
+      expect(screen.queryByText('Coffee Only')).not.toBeInTheDocument()
+      expect(screen.queryByText('Bookstore Only')).not.toBeInTheDocument()
+    })
+
+    it('filters Tags by all selected tags by default', async () => {
+      const allTagsPlace = createMockPlace({
+        name: 'Quiet Outdoor Cafe',
+        recordId: 'rec1',
+        tags: ['Quiet', 'Outdoor Seating'],
+      })
+      const partialTagsPlace = createMockPlace({
+        name: 'Quiet Only Cafe',
+        recordId: 'rec2',
+        tags: ['Quiet'],
+      })
+      const unrelatedTagsPlace = createMockPlace({
+        name: 'Late Night Cafe',
+        recordId: 'rec3',
+        tags: ['Open Late'],
+      })
+
+      const filters: FilterConfig = {
+        ...DEFAULT_FILTER_CONFIG,
+        tags: {
+          ...DEFAULT_FILTER_CONFIG.tags,
+          value: ['Quiet', 'Outdoor Seating'],
+        },
+      }
+
+      renderWithFilterContext([allTagsPlace, partialTagsPlace, unrelatedTagsPlace], { filters })
+
+      await waitFor(
+        () => {
+          const loader = document.querySelector('.loader')
+          expect(loader).not.toBeInTheDocument()
+        },
+        { timeout: 1000 }
+      )
+
+      expect(screen.getByText('Quiet Outdoor Cafe')).toBeInTheDocument()
+      expect(screen.queryByText('Quiet Only Cafe')).not.toBeInTheDocument()
+      expect(screen.queryByText('Late Night Cafe')).not.toBeInTheDocument()
     })
   })
 })

@@ -138,4 +138,5 @@
 ## Workflow Notes
 
 * **Development server**: You do not need to run `npm run dev` after changes - the user handles this
+* **Production builds**: Never run `npm run build`, `npx next build`, `next build`, or any other production build command when working locally unless the user explicitly asks for a production build for that task
 * **Working directory**: Always work from the `charlotte-third-places` subdirectory for npm commands

@@ -78,7 +78,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
         ref={triggerRef}
         variant="outline"
         size="icon"
-        className={`fixed bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-3 z-50 bg-primary rounded-full shadow-lg transition-opacity duration-200
+        className={`fixed bottom-[calc(4.25rem+env(safe-area-inset-bottom))] right-3 z-50 mobile-map-control rounded-full shadow-lg transition-opacity duration-200
           ${className}
           ${!showButton ? "opacity-0 pointer-events-none" : "opacity-100"}
         `}
@@ -89,7 +89,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
       >
         <Icons.filter className="h-4 w-4 text-white" />
         {activeFilterCount > 0 && (
-          <span className="absolute -top-2 -right-2 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full">
+          <span className="absolute -top-2 -right-2 flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full ring-2 ring-white">
             {activeFilterCount}
           </span>
         )}

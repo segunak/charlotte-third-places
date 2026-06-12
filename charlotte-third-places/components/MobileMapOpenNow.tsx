@@ -13,7 +13,7 @@ export function MobileMapOpenNow() {
             aria-pressed={openNow}
             className={openNow
                 ? "bg-emerald-100 hover:bg-emerald-200 text-emerald-800 border border-emerald-300 font-extrabold flex items-center gap-1.5 shadow-lg rounded-sm"
-                : "bg-primary hover:bg-primary/90 text-white font-extrabold flex items-center gap-1.5 shadow-lg rounded-sm"
+                : "mobile-map-control bg-primary hover:bg-primary/90 text-white font-extrabold flex items-center gap-1.5 shadow-lg rounded-sm"
             }
             size="sm"
         >
