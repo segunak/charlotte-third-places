@@ -55,7 +55,8 @@ import {
 
 import {
   GiPlantSeed,
-  GiCoffeeMug
+  GiCoffeeMug,
+  GiFruitBowl
 } from "react-icons/gi";
 import {
   FaFilter,
@@ -163,6 +164,7 @@ export const Icons = {
   store: FaStore,
   shoppingCart: FaShoppingCart,
   plantSeed: GiPlantSeed,
+  acaiBowl: GiFruitBowl,
   beer: FaBeer,
   fastFood: IoFastFood,
   iceCream: FaIceCream,
