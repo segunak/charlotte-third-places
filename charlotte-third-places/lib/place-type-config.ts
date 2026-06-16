@@ -14,6 +14,11 @@ export interface PlaceTypeConfig {
  * Check existing mapColor values before choosing a new one.
  */
 export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
+  "Açaí Shop": {
+    icon: Icons.acaiBowl,
+    emoji: "🫐",
+    mapColor: "#4B0082", // Indigo
+  },
   "Arcade": {
     icon: Icons.arcade,
     emoji: "🕹️",
