@@ -8,5 +8,10 @@
     "debug.internalConsoleOptions": "neverOpen",
     "cSpell.words": [
         "indertiminate"
-    ]
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit",
+        "source.sortMembers": "explicit"
+    }
 }

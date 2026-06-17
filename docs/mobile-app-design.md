@@ -1,7 +1,5 @@
 # Mobile App Design And Architecture Plan
 
-Last updated: 2026-06-16
-
 This document captures the current mobile architecture decision for Charlotte Third Places.
 
 The final product direction is:
@@ -72,6 +70,40 @@ This means:
 - keep Expo Go useful for early development where possible, but do not constrain architecture to Expo Go's limits
 
 Expo is how we get the native app done without hand-maintaining separate raw iOS and Android projects as the primary workflow. When the app needs native capability, the answer is not to fall back to WebView; the answer is to use Expo's native-extension path, a compatible native module, or a small custom native module.
+
+## Expo And Next.js Tooling Requirements
+
+Implementation work should use the project-local Expo agent skills and MCP servers where relevant.
+
+The Expo skills installed under `.github/skills` are part of the planned workflow. Before implementing or changing Expo-specific areas, consult the matching skill instead of relying on memory or generic React Native assumptions.
+
+Use the Expo skills for:
+
+- `building-native-ui`: native UI, Expo Router patterns, navigation, tabs, headers, controls, animations, storage, media, icons, and polished mobile interaction patterns
+- `expo-ui`: native SwiftUI/Jetpack Compose-backed Expo UI surfaces where standard React Native components are not the right fit
+- `native-data-fetching`: mobile API calls, caching, offline behavior, React Query/SWR decisions, and Expo Router loaders
+- `expo-dev-client`: development builds, native capability testing, and TestFlight development-client workflows
+- `expo-deployment`: App Store, Play Store, TestFlight, production build, submit, and metadata planning
+- `expo-cicd-workflows`: EAS workflow YAML, CI/CD, build automation, and deployment automation
+- `expo-module`: custom Expo native modules, native views, config plugins, lifecycle hooks, and native bridge work
+- `expo-observe`: startup, route, launch, update, and interaction metrics through EAS Observe
+- `eas-update-insights`: EAS Update health checks, rollout health, crash rates, install/launch counts, and OTA adoption
+- `upgrading-expo`: Expo SDK upgrades, React Native New Architecture changes, React 19, React Compiler, and dependency migrations
+- `add-app-clip`: future iOS App Clip work, AASA files, app clips, and smart app banner flows
+- `expo-brownfield`: only if a future decision requires integrating Expo into an existing native wrapper during migration
+- `expo-api-routes`: only if Expo Router API routes or EAS Hosting become part of a future mobile-supporting service
+
+The `use-dom` skill exists in the repository, but it is explicitly not part of the final mobile app architecture. Do not use it for production mobile interactive surfaces. It may be read only to understand tradeoffs or to reject WebView/DOM approaches with evidence.
+
+The workspace MCP configuration in `.vscode/mcp.json` is also part of the planned workflow:
+
+- Use the Expo MCP server (`expo`, `https://mcp.expo.dev/mcp`) for Expo documentation, library guidance, build information, workflows, and TestFlight-related Expo tooling when working on the mobile app.
+- Use the Next.js MCP server (`next-devtools`, `next-devtools-mcp@latest`) when changing or validating the existing Next.js app, especially App Router behavior, server/client boundaries, route behavior, and development diagnostics.
+- Use the Airtable MCP server only when Airtable schema/data questions are relevant and credentials are available.
+- Use the Microsoft Learn MCP server for Microsoft platform documentation when Azure, Microsoft identity, or related platform behavior is relevant.
+- Use the Playwright MCP server for browser-level validation of the Next.js web app when visual or interaction checks are needed.
+
+For Expo-specific implementation, prefer the Expo MCP server and Expo skills before generic web searches. For Next.js-specific implementation, prefer the Next.js MCP server before guessing about framework behavior. The intent is to build with current Expo and Next.js guidance, not stale assumptions.
 
 ## Why This Is The Correct Split
 
