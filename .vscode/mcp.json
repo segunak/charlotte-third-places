@@ -8,6 +8,11 @@
     }
   ],
   "servers": {
+    // https://docs.expo.dev/mcp/
+    "expo": {
+      "type": "http",
+      "url": "https://mcp.expo.dev/mcp"
+    },
     // https://support.airtable.com/docs/using-the-airtable-mcp-server
     "airtable": {
       "type": "http",
