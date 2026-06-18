@@ -1,0 +1,421 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Override Tailwind v4's default hover variant.
+  Tailwind v4 uses @media (hover: hover) which fails on hybrid devices
+  (touchscreen laptops) where the browser reports touch as primary input.
+  Hover is enabled on desktop (>= 768px) and disabled on mobile (< 768px).
+  768px is the tailwind breakpoint defined at https://tailwindcss.com/docs/responsive-design#overview
+*/
+@custom-variant hover {
+  @media (width >= 768px) {
+    &:hover {
+      @slot;
+    }
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+/*
+  Scrollbar hide utility.
+  Hides scrollbar while keeping scroll functionality.
+  
+  Usage:
+  - scrollbar-hide         → Always hide scrollbar
+  - max-md:scrollbar-hide  → Hide on mobile only (<768px)
+  - md:scrollbar-hide      → Hide on desktop only (≥768px)
+*/
+@utility scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+}
+
+/*
+  Custom scroll animation utility that uses runtime CSS variables.
+  The @theme block evaluates variables at compile time, so we define
+  this as a regular utility to pick up --animation-duration and 
+  --animation-direction from inline styles at runtime.
+*/
+@utility animate-scroll {
+  animation: scroll var(--animation-duration, 1000s) var(--animation-direction, forwards) linear infinite;
+}
+
+@theme {
+  /* Custom breakpoints must use rem to match Tailwind v4's default breakpoints (sm: 40rem, md: 48rem, etc.)
+     Mixing px and rem units causes CSS media query sorting issues where breakpoints don't cascade correctly.
+     Conversion: px ÷ 16 = rem (assuming default 16px root font size) */
+  --breakpoint-3xl: 120rem;  /* 1920px - Full HD / entry-level 1440p */
+  --breakpoint-4xl: 160rem;  /* 2560px - Large 1440p / standard 4K */
+  --breakpoint-5xl: 200rem;  /* 3200px - Ultrawide / high-end 4K+ */
+  --breakpoint-6xl: 240rem;  /* 3840px - 4K+ professional displays */
+
+  --font-sans:
+    var(--font-sans), ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+
+  --color-chart-1: hsl(var(--chart-1));
+  --color-chart-2: hsl(var(--chart-2));
+  --color-chart-3: hsl(var(--chart-3));
+  --color-chart-4: hsl(var(--chart-4));
+  --color-chart-5: hsl(var(--chart-5));
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility site-padding-x {
+  /* Site-wide horizontal padding: mobile gets the first px value, desktop gets the second */
+  @apply px-4 sm:px-24;
+}
+
+@utility site-padding-left {
+  @apply pl-4 sm:pl-24;
+}
+
+@utility site-padding-right {
+  @apply pr-4 sm:pr-24;
+}
+
+@utility custom-highlight {
+  background-color: var(--highlight-bg);
+}
+
+@utility fade-bottom {
+  /* Utility: vertical text fade-out at bottom without imposing a background color.
+     Uses mask so underlying surface color (including dynamic featured modal backgrounds) shows through.
+     Black mask area remains visible; transparent area fades text out. */
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    black 0%,
+    black 70%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+}
+
+@utility z-60 {
+  z-index: 60;
+}
+
+@utility text-apple {
+  color: var(--apple-icon-color);
+}
+
+@utility card-font {
+  font-family: var(--font-card);
+}
+
+@utility pb-safe {
+  /* Safe area utilities */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/*
+  Hides "Get the App" promotional UI inside native app wrappers and installed PWAs.
+  - `display-mode: standalone` matches Android TWAs and installed PWAs (fires before paint, no JS needed).
+  - `html[data-native-app]` is set by an inline script in app/layout.tsx for iOS WKWebView
+    (detected via the "app-platform" cookie) and iOS Safari home-screen PWAs (navigator.standalone).
+  Together these eliminate the brief flash the client-only useIsNativeApp hook cannot prevent.
+*/
+@media (display-mode: standalone) {
+  .hide-in-native-app {
+    display: none !important;
+  }
+}
+
+html[data-native-app] .hide-in-native-app {
+  display: none !important;
+}
+
+@layer utilities {
+  .custom-link {
+    @apply text-primary hover:text-secondary underline underline-offset-4;
+  }
+
+  @media (width < 40rem) {
+    .mobile-map-control {
+      background-color: var(--map-control) !important;
+      background-image: none !important;
+      border-color: var(--map-control-border) !important;
+      color: var(--map-control-foreground) !important;
+      box-shadow: 0 0 0 1px var(--map-control-halo), 0 8px 18px var(--map-control-shadow), 0 0 12px var(--map-control-glow), 0 0 22px var(--map-control-outer-glow) !important;
+      text-shadow: 0 1px 2px var(--map-control-text-shadow);
+    }
+
+    .mobile-map-control:active {
+      background-color: var(--map-control-hover) !important;
+      background-image: none !important;
+      color: var(--map-control-foreground) !important;
+    }
+
+    @media (hover: hover) {
+      .mobile-map-control:hover {
+        background-color: var(--map-control-hover) !important;
+        background-image: none !important;
+        color: var(--map-control-foreground) !important;
+      }
+    }
+
+    .mobile-map-control:focus-visible {
+      --tw-ring-color: var(--map-control-ring) !important;
+      box-shadow: 0 0 0 2px var(--map-control-ring), 0 0 0 5px var(--map-control-focus-shadow), 0 8px 18px var(--map-control-shadow), 0 0 14px var(--map-control-glow), 0 0 24px var(--map-control-outer-glow) !important;
+    }
+
+    .mobile-map-control svg {
+      filter: drop-shadow(0 1px 1px var(--map-control-text-shadow));
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer base {
+
+  /* 
+    LIGHT THEME
+  */
+  :root {
+    --background: 190 60% 97%;
+    /* Brighter teal backdrop */
+    --foreground: 210 5% 20%;
+    /* Slightly warmer dark text */
+    --card: 0 0% 99%;
+    /* Almost pure white for card */
+    --card-foreground: 210 5% 20%;
+    --popover: 0 0% 99%;
+    /* Matches card for consistency */
+    --popover-foreground: 210 5% 20%;
+    --button-white: rgb(255, 255, 255);
+    /* White background for buttons */
+
+    --map-control: #0f172a;
+    --map-control-hover: #111f36;
+    --map-control-foreground: #ffffff;
+    --map-control-border: rgb(255 255 255 / 76%);
+    --map-control-halo: rgb(255 255 255 / 92%);
+    --map-control-glow: rgb(0 245 255 / 38%);
+    --map-control-outer-glow: rgb(0 245 255 / 18%);
+    --map-control-ring: rgb(255 255 255 / 96%);
+    --map-control-shadow: rgb(0 0 0 / 34%);
+    --map-control-focus-shadow: rgb(0 245 255 / 22%);
+    --map-control-text-shadow: rgb(0 0 0 / 72%);
+
+    --primary: 190 100% 42%;
+    /* More neon teal */
+    --primary-foreground: 0 0% 100%;
+    /* White text on teal */
+
+    --secondary: 270 90% 65%;
+    /* Vibrant purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 190 30% 88%;
+    /* Subtle muted teal for hover/focus states */
+    --accent-foreground: 210 5% 20%;
+
+    --warm-accent: 30 90% 70%;
+    /* Warm accent (peachy) */
+    --warm-accent-foreground: 210 5% 20%;
+
+    --muted: 190 10% 90%;
+    /* Subtle off‐teal for muted elements */
+    --muted-foreground: 210 5% 40%;
+
+    --destructive: 0 100% 50%;
+    /* Vivid red for destructive actions */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 190 20% 80%;
+    --input: 190 20% 80%;
+    --ring: 190 100% 42%;
+    /* Matches primary for focus ring */
+    --radius: 1.25rem;
+    /* Increased border-radius for softer UI */
+
+    --apple-icon-color: #1d1d1f;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Light teal highlight in light mode */
+    --highlight-bg: hsl(190, 70%, 85%);
+  }
+
+  /* 
+    DARK THEME
+  */
+  .dark {
+    --background: 190 50% 9%;
+    /* Dark teal-tinted near-black */
+    --foreground: 0 0% 100%;
+    /* White text on dark */
+    --card: 190 40% 12%;
+    /* Slightly lighter than body for contrast */
+    --card-foreground: 0 0% 100%;
+    --popover: 190 40% 12%;
+    /* Matches card for consistency */
+    --popover-foreground: 0 0% 100%;
+
+    --map-control: #0f172a;
+    --map-control-hover: #111f36;
+    --map-control-foreground: #ffffff;
+    --map-control-border: rgb(255 255 255 / 76%);
+    --map-control-halo: rgb(255 255 255 / 88%);
+    --map-control-glow: rgb(0 245 255 / 34%);
+    --map-control-outer-glow: rgb(0 245 255 / 16%);
+    --map-control-ring: rgb(255 255 255 / 96%);
+    --map-control-shadow: rgb(0 0 0 / 38%);
+    --map-control-focus-shadow: rgb(0 245 255 / 20%);
+    --map-control-text-shadow: rgb(0 0 0 / 74%);
+
+    --primary: 190 90% 45%;
+    /* Neon teal */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 90% 65%;
+    /* Neon purple */
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 190 30% 22%;
+    /* Subtle muted teal for hover/focus states */
+    --accent-foreground: 0 0% 100%;
+
+    --warm-accent: 30 90% 60%;
+    /* Warm accent in dark mode */
+    --warm-accent-foreground: 0 0% 100%;
+
+    --muted: 210 15% 25%;
+    /* Muted gray‐teal */
+    --muted-foreground: 210 5% 80%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 15% 25%;
+    --input: 210 15% 25%;
+    --ring: 190 90% 42%;
+    /* Teal focus ring */
+    --radius: 1.25rem;
+
+    --apple-icon-color: #ffffff;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    /* Dark teal highlight in dark mode */
+    --highlight-bg: hsl(190, 70%, 20%);
+  }
+}

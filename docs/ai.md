@@ -77,7 +77,7 @@ We use `quantizedFlat` instead of `diskANN`. This was a deliberate decision base
 **Our Data Scale (as of December 2025)**:
 
 | Container | Current / Max Vectors | Vectors Searched Per Query | Filter Used? |
-|-----------|----------------------|---------------------------|--------------|
+| --- | --- | --- | --- |
 | `places` | ~380 / 500 projected | 380-500 (no filter) | No |
 | `chunks` | ~95k / 125k max (500 × 250) | ~250 (filtered by placeId) | Yes |
 
@@ -104,7 +104,7 @@ We use `quantizedFlat` instead of `diskANN`. This was a deliberate decision base
 **Vector Index Types Reference**:
 
 | Type | Search Method | Accuracy | Best For |
-|------|--------------|----------|----------|
+| --- | --- | --- | --- |
 | `flat` | Exact brute-force | 100% | ≤505 dimensions, tiny datasets |
 | `quantizedFlat` | Compressed brute-force | ~99% | <50k vectors/partition, or filtered queries |
 | `diskANN` | Graph-based ANN | ~95%+ | >50k vectors/partition, unfiltered queries |
@@ -159,12 +159,12 @@ Tags: {tags}
 
 ## Frontend Chat (Next.js)
 
-Located in `charlotte-third-places/lib/ai/` and `charlotte-third-places/app/api/chat/`.
+Located in `web/lib/ai/` and `web/app/api/chat/`.
 
 ### Technology Stack
 
 | Component | Package | Version | Purpose |
-|-----------|---------|---------|---------|
+| --- | --- | --- | --- |
 | AI SDK Core | `ai` | 5.0.x | Streaming, message handling |
 | React Hooks | `@ai-sdk/react` | 2.0.x | `useChat` hook |
 | Azure Provider | `@ai-sdk/azure` | 2.0.x | Azure OpenAI integration |
@@ -175,10 +175,10 @@ Located in `charlotte-third-places/lib/ai/` and `charlotte-third-places/app/api/
 
 ### Models (Azure OpenAI via Foundry)
 
-Models are configured in `charlotte-third-places/lib/ai/config.ts`. See `AI_CONFIG` for current deployment names.
+Models are configured in `web/lib/ai/config.ts`. See `AI_CONFIG` for current deployment names.
 
 | Purpose | Config Key | Description |
-|---------|------------|-------------|
+| --- | --- | --- |
 | Chat completions | `chatModel` | Generates conversational responses |
 | Query embeddings | `embeddingModel` | Converts text to vectors for similarity search |
 
@@ -306,7 +306,7 @@ Individual review chunks are only needed when discussing a specific place in dep
 This architectural decision is why we can use `quantizedFlat` instead of `diskANN`:
 
 | Query Type | Container | Vectors Searched | Index Needed |
-|------------|-----------|-----------------|--------------|
+| --- | --- | --- | --- |
 | General (`/chat`) | `places` only | ~380-500 | quantizedFlat ✓ |
 | Place-specific | `chunks` with filter | ~250 | quantizedFlat ✓ |
 
@@ -360,7 +360,7 @@ Located in `lib/ai/prompts.ts`.
 ### Components
 
 | Component | Location | Purpose |
-|-----------|----------|---------|
+| --- | --- | --- |
 | `ChatContent` | `components/ChatContent.tsx` | Main chat UI with `useChat` hook |
 | `Message` | `components/ai-elements/message.tsx` | Message bubbles with markdown |
 | `PromptInput` | `components/ai-elements/prompt-input.tsx` | Input field with stop button |

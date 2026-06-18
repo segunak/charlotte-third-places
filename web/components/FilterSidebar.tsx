@@ -1,0 +1,65 @@
+"use client";
+
+import React, { useState, useCallback } from "react";
+import { useFilters, useOpenNow } from "@/contexts/FilterContext";
+import { FILTER_DEFS, FILTER_SENTINEL, FilterKey } from "@/lib/filters";
+import { FilterQuickSearch, FilterSelect, FilterResetButton } from "@/components/FilterUtilities";
+
+interface FilterSidebarProps {
+    className?: string;
+}
+
+export const FilterSidebar = React.memo(function FilterSidebar({ className = "" }: FilterSidebarProps) {
+    const { filters } = useFilters();
+    const { openNow } = useOpenNow();
+    // Active filter count excludes fields with no constraint:
+    // - Single-select: value === 'all' sentinel
+    // - Multi-select: value is empty array []
+    // - Open Now: counted when active
+    const activeFilterCount = Object.values(filters).filter((filter) => {
+        if (Array.isArray(filter.value)) {
+            return filter.value.length > 0;
+        }
+        return filter.value !== FILTER_SENTINEL;
+    }).length + (openNow ? 1 : 0);
+    // Track open state for all selects
+    const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
+
+    // Handler to pass to selects
+    const handleDropdownStateChange = useCallback((open: boolean) => {
+        setAnyDropdownOpen(open);
+    }, []);
+
+    return (
+        <div data-testid="filter-sidebar" className={`${className} shadow-2xl rounded-md p-4 relative`}>
+            <div className="flex items-center justify-between mb-2">
+                <h2 className="font-bold text-lg">Filter</h2>
+                {activeFilterCount > 0 && (
+                    <span className="flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-red-500 rounded-full">
+                        {activeFilterCount}
+                    </span>
+                )}
+            </div>
+            <FilterQuickSearch />
+            {FILTER_DEFS.map(def => {
+                const config = filters[def.key as FilterKey];
+                return (
+                    <FilterSelect
+                        key={def.key}
+                        field={def.key as FilterKey}
+                        value={config.value}
+                        label={config.label}
+                        placeholder={config.placeholder}
+                        predefinedOrder={config.predefinedOrder}
+                        matchMode={config.matchMode}
+                        onDropdownOpenChange={handleDropdownStateChange}
+                    />
+                );
+            })}
+
+            <FilterResetButton variant="default" disabled={anyDropdownOpen} />
+        </div>
+    );
+});
+
+FilterSidebar.displayName = "FilterSidebar";

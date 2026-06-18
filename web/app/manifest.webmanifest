@@ -1,0 +1,171 @@
+{
+  "id": "/",
+  "name": "Charlotte Third Places",
+  "short_name": "Third Places",
+  "description": "Discover third places in Charlotte, North Carolina: cafes, coffee shops, bookstores, bakeries, libraries, and more. Find spots for remote work, studying, reading, meeting friends, or hanging out.",
+  "categories": ["lifestyle", "social", "food", "travel"],
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en",
+  "dir": "ltr",
+  "display": "standalone",
+  "display_override": ["standalone"],
+  "orientation": "portrait",
+  "theme_color": "#F3FAFC",
+  "background_color": "#F3FAFC",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/id6762573563",
+      "id": "id6762573563"
+    },
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app",
+      "id": "com.charlottethirdplaces.app"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "icons": [
+    {
+      "src": "/favicons/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicons/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicons/web-app-manifest-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/favicons/web-app-manifest-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Map View",
+      "short_name": "Map",
+      "url": "/map",
+      "description": "View all places on a map",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Ask AI for Recommendations",
+      "short_name": "AI Chat",
+      "url": "/chat",
+      "description": "Get personalized place recommendations from AI",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Suggest a Place",
+      "short_name": "Contribute",
+      "url": "/contribute",
+      "description": "Recommend a new place to add",
+      "icons": [
+        {
+          "src": "/favicons/favicon-96x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Homepage showing curated third places in Charlotte"
+    },
+    {
+      "src": "/screenshots/map-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Interactive map of all places"
+    },
+    {
+      "src": "/screenshots/chat-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AI-powered place recommendations"
+    },
+    {
+      "src": "/screenshots/contribute-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Suggest a new place to add"
+    },
+    {
+      "src": "/screenshots/about-mobile.png",
+      "sizes": "1290x2796",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "About the project"
+    },
+    {
+      "src": "/screenshots/home-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Homepage showing curated third places in Charlotte"
+    },
+    {
+      "src": "/screenshots/map-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Interactive map of all places"
+    },
+    {
+      "src": "/screenshots/chat-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "AI-powered place recommendations"
+    },
+    {
+      "src": "/screenshots/contribute-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Suggest a new place to add"
+    },
+    {
+      "src": "/screenshots/about-desktop.png",
+      "sizes": "1712x1233",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "About the project"
+    }
+  ]
+}

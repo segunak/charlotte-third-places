@@ -1,0 +1,32 @@
+{
+    "images": {
+        "sizes": [
+            48,
+            64,
+            96,
+            128,
+            256,
+            640,
+            750,
+            828,
+            1080,
+            1200,
+            1920
+        ],
+        "qualities": [
+            40,
+            75,
+            80
+        ],
+        "remotePatterns": [
+            {
+                "protocol": "https",
+                "hostname": "thirdplacesdata.blob.core.windows.net",
+                "port": "",
+                "pathname": "/**",
+                "search": ""
+            }
+        ],
+        "minimumCacheTTL": 2678400
+    }
+}

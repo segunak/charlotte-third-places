@@ -14,7 +14,7 @@ Both tiers run in GitHub Actions CI. Unit tests run on every push and PR, while 
 ## Tools
 
 | Tool | Purpose |
-|------|---------|
+| --- | --- |
 | [Vitest](https://vitest.dev/) | Test runner with native ESM support, compatible with Vite |
 | [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/) | Tests components the way users interact with them |
 | [jsdom](https://github.com/jsdom/jsdom) | Browser environment simulation for component tests |
@@ -24,7 +24,7 @@ Both tiers run in GitHub Actions CI. Unit tests run on every push and PR, while 
 ## Directory Structure
 
 ```txt
-charlotte-third-places/
+web/
 ├── __tests__/
 │   ├── setup.tsx              # Global test setup (mocks, cleanup)
 │   ├── lib/                   # Unit tests for utility functions
@@ -41,16 +41,16 @@ charlotte-third-places/
 
 ### Vitest
 
-See [vitest.config.mts](../charlotte-third-places/vitest.config.mts) for full configuration. Key settings:
+See [vitest.config.mts](../web/vitest.config.mts) for full configuration. Key settings:
 
 - **Environment**: `jsdom` for browser simulation
-- **Setup file**: [setup.tsx](../charlotte-third-places/__tests__/setup.tsx) runs before each test file (mocks Next.js router, matchMedia, etc.)
+- **Setup file**: [setup.tsx](../web/__tests__/setup.tsx) runs before each test file (mocks Next.js router, matchMedia, etc.)
 - **Test pattern**: `__tests__/**/*.test.{ts,tsx}`
 - **Coverage**: V8 provider with HTML/JSON/text reporters
 
 ### Playwright
 
-See [playwright.config.ts](../charlotte-third-places/playwright.config.ts) for full configuration. Key settings:
+See [playwright.config.ts](../web/playwright.config.ts) for full configuration. Key settings:
 
 - **Browser**: Chromium only (reduces CI time)
 - **Base URL**: Uses `PLAYWRIGHT_TEST_BASE_URL` env var, falls back to `localhost:3000`
@@ -59,7 +59,7 @@ See [playwright.config.ts](../charlotte-third-places/playwright.config.ts) for f
 ## NPM Scripts
 
 | Script | Command | Purpose |
-|--------|---------|---------|
+| --- | --- | --- |
 | `npm test` | `vitest run && start-server-and-test dev http://localhost:3000 test:e2e` | Run all tests (unit + E2E) |
 | `npm run test:unit` | `vitest` | Run unit tests in watch mode |
 | `npm run test:unit:run` | `vitest run` | Run unit tests once |
