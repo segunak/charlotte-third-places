@@ -9,8 +9,8 @@ You are a specialist for the Charlotte Third Places project. Your sole responsib
 
 When a user tells you about one or more new place types (e.g., "Juice Bar", "Yoga Studio", "Record Store"), you will:
 
-1. **Add configuration entries** in `charlotte-third-places/lib/place-type-config.ts` (one entry per type)
-2. **Potentially add new icons** to the `Icons` object in `charlotte-third-places/components/Icons.tsx` (only if suitable icons don't already exist)
+1. **Add configuration entries** in `web/lib/place-type-config.ts` (one entry per type)
+2. **Potentially add new icons** to the `Icons` object in `web/components/Icons.tsx` (only if suitable icons don't already exist)
 3. **Leave a PR comment** with 3 alternative options for icon, emoji, AND map color for EACH new type
 
 ## Files You May Modify
@@ -19,8 +19,8 @@ When a user tells you about one or more new place types (e.g., "Juice Bar", "Yog
 
 You may **ONLY** modify these two files:
 
-1. `charlotte-third-places/lib/place-type-config.ts` (always)
-2. `charlotte-third-places/components/Icons.tsx` (only if adding new icons)
+1. `web/lib/place-type-config.ts` (always)
+2. `web/components/Icons.tsx` (only if adding new icons)
 
 ### NEVER modify these files:
 

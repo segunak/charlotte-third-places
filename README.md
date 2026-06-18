@@ -10,11 +10,11 @@ It was designed to help people find spots to study, read, write, chill, work rem
 
 ## Get the App
 
-<a href="https://apps.apple.com/app/id6762573563"><img src="charlotte-third-places/media/no-padding-apple-app-store-badge.svg" alt="Download on the App Store" height="60"></a> <a href="https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app"><img src="charlotte-third-places/media/no-padding-google-play-badge.svg" alt="Get it on Google Play" height="60"></a>
+<a href="https://apps.apple.com/app/id6762573563"><img src="web/media/no-padding-apple-app-store-badge.svg" alt="Download on the App Store" height="60"></a> <a href="https://play.google.com/store/apps/details?id=com.charlottethirdplaces.app"><img src="web/media/no-padding-google-play-badge.svg" alt="Get it on Google Play" height="60"></a>
 
 ## As Featured In
 
-<a href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6"><img src="charlotte-third-places/media/charlotte-observer-logo-dark.svg" alt="Charlotte Observer" height="60"></a>
+<a href="https://www.charlotteobserver.com/charlottefive/c5-things-to-do/article313920154.html?giftCode=e0835193f58a4a8563465be207634851564120a35a862bb4284878d1bc96abd6"><img src="web/media/charlotte-observer-logo-dark.svg" alt="Charlotte Observer" height="60"></a>
 
 ## Contact
 
