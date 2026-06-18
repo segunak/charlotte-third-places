@@ -94,6 +94,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "💻",
     mapColor: "#00CED1", // Dark Turquoise
   },
+  "Craft Café": {
+    icon: Icons.paintBrush,
+    emoji: "🎨",
+    mapColor: "#FF8C00", // Dark Orange
+  },
   "Creamery": {
     icon: Icons.iceCream,
     emoji: "🍦",
