@@ -89,7 +89,8 @@ import {
   FaCommentAlt,
   FaClock,
   FaGem,
-  FaShoppingCart
+  FaShoppingCart,
+  FaPaintBrush
 } from "react-icons/fa";
 import {
   SiApplearcade
@@ -169,6 +170,7 @@ export const Icons = {
   fastFood: IoFastFood,
   iceCream: FaIceCream,
   palette: FaPalette,
+  paintBrush: FaPaintBrush,
   cocktail: FaCocktail,
   museum: FaUniversity,
   couch: FaCouch,
