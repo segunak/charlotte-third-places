@@ -6,7 +6,7 @@
             "type": "node-terminal",
             "request": "launch",
             "command": "npm run dev",
-            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "cwd": "${workspaceFolder}/web",
             "env": {
                 "NODE_ENV": "development"
             }
@@ -16,7 +16,7 @@
             "type": "node-terminal",
             "request": "launch",
             "command": "npm run build",
-            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "cwd": "${workspaceFolder}/web",
             "env": {
                 "NODE_ENV": "production"
             }
@@ -26,7 +26,7 @@
             "type": "node-terminal",
             "request": "launch",
             "command": "npm start",
-            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "cwd": "${workspaceFolder}/web",
             "env": {
                 "NODE_ENV": "production",
                 "NEXT_PRIVATE_DEBUG_CACHE": "1"
@@ -42,7 +42,7 @@
             "type": "node-terminal",
             "request": "launch",
             "command": "npm run build; npm start",
-            "cwd": "${workspaceFolder}/charlotte-third-places",
+            "cwd": "${workspaceFolder}/web",
             "env": {
                 "NODE_ENV": "production",
                 "NEXT_PRIVATE_DEBUG_CACHE": "1"
