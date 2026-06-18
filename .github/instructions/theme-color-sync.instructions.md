@@ -1,7 +1,7 @@
 ---
 name: 'Theme Color Sync'
 description: 'Keep runtime UI background in sync across ThemeColorSync, globals.css --background, viewport.themeColor, manifest.webmanifest, and splash backgrounds. Use when: changing theme colors, splash screens, or native wrapper backgrounds.'
-applyTo: 'charlotte-third-places/components/ThemeColorSync.tsx,charlotte-third-places/styles/globals.css,charlotte-third-places/app/manifest.webmanifest,charlotte-third-places/app/layout.tsx,ios/src/Third Places/Base.lproj/LaunchScreen.storyboard,ios/src/Third Places/Base.lproj/Main.storyboard'
+applyTo: 'web/components/ThemeColorSync.tsx,web/styles/globals.css,web/app/manifest.webmanifest,web/app/layout.tsx,ios/src/Third Places/Base.lproj/LaunchScreen.storyboard,ios/src/Third Places/Base.lproj/Main.storyboard'
 ---
 
 # Theme Color Synchronization

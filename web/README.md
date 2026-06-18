@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server from the `charlotte-third-places` sub folder:
+First, run the development server from the `web` folder:
 
 ```powershell
 npm run dev
@@ -25,6 +25,7 @@ npm run dev
 ```
 
 To switch back to local CSV data:
+
 1. Either comment out the line with `# FORCE_PRODUCTION_DATA=true`
 2. Or set it to false with `FORCE_PRODUCTION_DATA=false`
 3. Restart the development server

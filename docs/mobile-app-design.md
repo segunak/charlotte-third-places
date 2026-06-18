@@ -1,416 +1,1321 @@
 # Mobile App Design And Architecture Plan
 
-Last updated: 2026-06-16
+This document is the implementation handoff for replacing the current Charlotte Third Places PWA wrapper with a true Expo/React Native app while preserving the existing Next.js website as the web product.
 
-This document captures the current mobile architecture decision for Charlotte Third Places.
+The migration target is exact parity with the current live app and website. The React Native app must preserve the same catalog, same Home/Random/Browse/Map/Chat/Place Detail/Photos/Contribute/About/Legal functionality, same filtering semantics, same AI behavior, same visual identity, same place highlighting rules, same external link behavior, same sharing behavior, and same app-store bundle identity.
 
-The final product direction is:
+This document is intentionally deterministic. It does not use "if needed" as an implementation strategy. Each code path is classified as shared, platform-specific, and out of scope for the parity migration.
 
-> One shared TypeScript domain core, a native Expo/React Native mobile app with no WebView on interactive surfaces, and the existing Next.js app serving web, SEO, shareable links, and web-first workflows.
+## Engineering Discipline For The Implementing Agent
 
-This supersedes the older plan that treated the PWABuilder `WKWebView`/Trusted Web Activity apps as the long-term mobile foundation. The shipped PWA wrappers can remain available while the native app is built, and some web/PWA performance work remains useful, but the final mobile product is native React Native views, not a WebView wrapper.
+This plan is executed by an LLM coding agent. The agent must follow these rules on every step. They are not optional.
 
-## Executive Summary
-
-Charlotte Third Places should become one product with three explicit layers:
-
-1. `packages/core`: shared TypeScript domain logic consumed by web and mobile.
-2. `charlotte-third-places`: the existing Next.js web app for public web, SEO, share links, admin, and web-specific UI.
-3. `mobile`: a new Expo/React Native app for iOS and Android using native mobile views for every interactive surface.
-
-The key architectural split is not "one UI everywhere." The split is shared logic and data, platform-specific rendering.
-
-Shared code should include types, schemas, API contracts, pure mappers, business rules, formatting, auth/session helpers, and future credits/wallet logic. It should not include React DOM components, React Native screens, Tailwind, shadcn, Next.js server APIs, Expo APIs, or direct database clients.
-
-Web UI remains React DOM plus Tailwind/shadcn. Mobile UI is React Native components plus native modules where the platform is the right tool. The mobile app does not use `use dom`, Expo DOM Components, or WebView for Home, Random, Browse, Map, Chat, Places, Lists, Auth, Settings, Payments, Account, or any other primary interactive flow.
+- Build only what this plan specifies. Do not add features, screens, settings, abstractions, or configuration that this plan does not list.
+- Do not over-engineer. Do not introduce a generic framework, plugin system, dependency-injection layer, event bus, or "future-proof" abstraction for a one-time operation.
+- Do not add libraries that are not named in this plan. If a step seems to need a new dependency, stop and surface it before installing it.
+- Match the existing code. Before writing a new function, read the current web implementation named in this plan and preserve its exact names, field names, constants, thresholds, and behavior.
+- Move shared logic by extraction, not rewrite. When this plan says move a function to `packages/core`, copy the existing implementation, change imports, and keep the logic identical. Do not "improve" it.
+- Do not add comments, JSDoc, or type annotations to code that is moved unchanged. Keep the original comments only.
+- Do not add error handling for conditions that cannot occur. Validate only at the system boundaries this plan names: API responses, persisted cache reads, and untrusted Airtable/CSV input.
+- Do not add defensive fallbacks, retries, or logging beyond what the named source already does and what this plan requests.
+- Keep diffs tight. Each step touches only the files that step names. Do not reformat untouched files. Do not perform drive-by refactors.
+- Do not delete or rewrite unfamiliar files. If a file's purpose is unclear, surface it instead of removing it.
+- Do not run production builds (`next build`, release `expo prebuild`, EAS production builds) unless the active step explicitly requires it.
+- When a step is ambiguous, stop and ask. Do not guess names, contracts, or behavior. This plan lists resolved decisions and verification items; treat any new ambiguity as a blocker.
+- Prefer the smallest correct change. Clean, direct, minimal code wins over clever code.
 
 ## Product Decision
 
-The long-term mobile product will be built with Expo and React Native, using React Native's New Architecture from the start. Expo is not an optional wrapper in this plan; it is the mobile app platform we are choosing.
+Charlotte Third Places will have four explicit workspace areas:
 
-The existing Next.js app remains the public website and web product. It continues to own:
+1. `packages/core`: pure TypeScript domain, data, API contract, and business logic shared by web and mobile.
+2. `packages/shared-react`: React-only, renderer-agnostic state and behavior shared by React DOM and React Native.
+3. `web`: the existing Next.js web app for public web, SEO, shareable pages, legal pages, admin/web workflows, and server-side integrations. The former nested `charlotte-third-places` app folder has already been renamed to `web`.
+4. `mobile`: the Expo/React Native app for iOS and Android app-store experiences.
 
-- SEO and metadata
-- public place pages
-- shareable list links
-- featured/public community pages
-- legal pages
-- admin workflows
-- web-specific layouts and UI
-- server-side integration with Airtable, PostgreSQL, Cosmos DB, and other server-only services
+The key split is shared logic, platform-specific rendering. The plan does not share DOM UI with React Native and does not render website pages inside the mobile app.
 
-The native mobile app owns:
+The repository uses npm workspaces after the web folder rename. `web`, `mobile`, `packages/core`, and `packages/shared-react` remain separate npm packages. The repo-root `package.json` exists only to coordinate workspace linking and shared install behavior.
 
-- iOS and Android app-store experiences
-- native navigation stacks and tabs
-- native modal/sheet behavior
-- native list performance
-- native map integration
-- native share sheet
-- native deep links
-- native push notification registration and handling
-- native secure storage
-- native purchase flows and entitlements
-- app-like offline and repeat-launch behavior
+## Non-Negotiable Constraints
 
-The shared core owns the product language and rules that both clients must agree on.
+- The React Native app ports the current live app first. The parity migration does not add user accounts, authentication, saved lists, billing, credits, subscriptions, push notifications, account deletion, local relational SQLite tables, and Drizzle.
+- The mobile app renders primary interactive surfaces with native React Native views. It does not use `WebView`, `use dom`, Expo DOM Components, and embedded Next.js pages for Home, Random, Browse, Map, Chat, Places, Photos, Contribute, About, Legal, Settings, Payments, and Account.
+- The mobile app does not import Airtable SDK, Cosmos DB SDK, Azure OpenAI SDK, filesystem modules, Next.js server code, server secrets, and direct database clients.
+- The mobile app consumes typed HTTP APIs served by the Next.js app. A future backend service must preserve those same HTTP contracts.
+- Shared business logic moves to `packages/core`. Shared React state moves to `packages/shared-react`. DOM rendering stays in `web`. Native rendering stays in `mobile`.
+- All automated mobile tests use deterministic fixtures. API-bound automated tests use fixture-backed API responses. Automated tests do not depend on live Airtable production data.
 
-## Expo Platform Decision
+## Bundle Identity And Store Transition
 
-The mobile app will use Expo and the current Expo ecosystem as the default way to build, test, ship, and maintain the native app.
+Charlotte Third Places is being entirely replaced with the React Native app in the App Store. The current PWA version uses `com.charlottethirdplaces.app` and is live in the App Store.
 
-This means:
+The Expo app uses the same iOS bundle identifier:
 
-- use the latest stable Expo SDK that is appropriate when implementation begins
-- use Expo Router for mobile app routing, tabs, stacks, and deep-link structure
-- use Expo development builds when native modules require capabilities beyond Expo Go
-- use EAS Build for iOS and Android build pipelines unless a concrete repo-specific blocker appears
-- use EAS Submit or an equivalent automated release path for App Store Connect and Google Play submissions
-- use Expo config plugins for native configuration where possible
-- use Expo Modules or custom native modules when the app needs platform capability that is not covered by maintained Expo/community packages
-- prefer libraries that support React Native's New Architecture and Expo development builds
-- keep Expo Go useful for early development where possible, but do not constrain architecture to Expo Go's limits
+```text
+com.charlottethirdplaces.app
+```
 
-Expo is how we get the native app done without hand-maintaining separate raw iOS and Android projects as the primary workflow. When the app needs native capability, the answer is not to fall back to WebView; the answer is to use Expo's native-extension path, a compatible native module, or a small custom native module.
+Development builds use this PowerShell environment variable after EAS reports a capability syncing failure against the existing Apple App ID entitlements:
 
-## Why This Is The Correct Split
+```powershell
+$env:EXPO_NO_CAPABILITY_SYNC=1
+npx eas-cli@latest build --profile development --platform ios
+```
 
-The product goal is not merely to package the website. The goal is an iOS-first consumer app that can eventually support thousands of users, accounts, lists, social sharing, push, local/offline state, deep links, credits or subscriptions, and fast interactive surfaces that feel like a professional mobile app.
+This disables automatic EAS capability syncing for the build command. It does not remove capabilities from the Apple Developer account, and it does not change the App Store Connect app record.
 
-Trying to share rendering across web and mobile usually produces the wrong compromise. Web components carry web assumptions. Native screens need native gestures, navigation, scroll behavior, sheet behavior, keyboard behavior, accessibility conventions, and platform-specific performance tuning.
+Production replacement must keep the existing App Store Connect app record. Do not delete, remove, and archive the existing App Store Connect app record to "free" the bundle ID. Apple locks a bundle ID to an app record after a build has been uploaded, and removing the app record can make that bundle ID unavailable for reuse.
 
-The correct shared layer is the domain layer:
+The React Native app replaces the current PWA wrapper by submitting a new version update to the existing App Store Connect app record using the same bundle identifier, `com.charlottethirdplaces.app`. Existing users receive the React Native app as a normal App Store update.
 
-- what a place is
-- how a catalog payload is shaped
-- how filters and sorts work
-- what a list can contain
-- who can see a list
-- what a share token means
-- how auth/session payloads are represented
-- what account deletion must clear
-- how credits, wallet balances, and entitlements work later
+Production replacement steps:
 
-The correct platform-specific layer is presentation and runtime integration:
+1. Keep the existing App Store Connect app record.
+2. Keep `ios.bundleIdentifier` set to `com.charlottethirdplaces.app`.
+3. Complete the Apple Developer App ID capability procedure below.
+4. Use EAS-managed remote iOS credentials as the signing source of truth. Before the production build, run `npx eas-cli@latest credentials -p ios`, select `com.charlottethirdplaces.app`, and remove the EAS-stored App Store provisioning profile for the production profile so the next production build must create a fresh profile from the current Apple Developer App ID capabilities.
+5. Increment the iOS marketing version and build number.
+6. Build the React Native production binary with EAS without `EXPO_NO_CAPABILITY_SYNC=1` so EAS syncs supported capabilities and creates the fresh App Store provisioning profile.
+7. Upload the binary to the existing App Store Connect app as a new version/build.
+8. Submit that existing app record for App Review.
 
-- web renders with React DOM, Tailwind, and shadcn
-- mobile renders with React Native views and native modules
-- web uses browser storage and server components where appropriate
-- mobile uses secure storage, native app lifecycle APIs, push APIs, purchase APIs, and real-device navigation behavior
+Apple Developer App ID capability procedure:
 
-This is how "one codebase" becomes real without pretending that web and native are the same runtime.
+1. Treat `mobile/app.json` as the iOS capability source of truth for the Expo app.
+2. For the parity migration, configure exactly one App ID capability: Associated Domains. Authentication, Sign in with Apple, Push Notifications, App Groups, iCloud, Wallet, Apple Pay, and In-App Purchase stay disabled because they are future-only features in this migration plan.
+3. Add the production universal-link domains to the Expo iOS config:
 
-## Final Architecture
+   ```json
+   {
+     "expo": {
+       "ios": {
+         "bundleIdentifier": "com.charlottethirdplaces.app",
+         "associatedDomains": [
+           "applinks:www.charlottethirdplaces.com",
+           "applinks:charlottethirdplaces.com"
+         ]
+       }
+     }
+   }
+   ```
+
+4. From `mobile/`, generate the introspected native config:
+
+   ```powershell
+   npx expo config --type introspect | Out-File .\expo-introspect.json -Encoding utf8
+   ```
+
+5. Confirm `expo-introspect.json` contains `com.apple.developer.associated-domains` with exactly these values:
+
+   ```text
+   applinks:www.charlottethirdplaces.com
+   applinks:charlottethirdplaces.com
+   ```
+
+6. Delete the temporary introspection file after inspection:
+
+   ```powershell
+   Remove-Item .\expo-introspect.json
+   ```
+
+7. In Apple Developer Console, open Certificates, IDs & Profiles, then Identifiers, then the App ID for `com.charlottethirdplaces.app`.
+8. Enable Associated Domains on that App ID. Leave the future-only capabilities listed in step 2 disabled.
+9. Save the App ID changes and confirm the Apple capability modification dialog.
+10. Run the EAS credential reset step in production replacement step 4 so the stale App Store provisioning profile is removed from EAS.
+11. Run the production EAS build without the capability-sync bypass:
+
+    ```powershell
+    Remove-Item Env:\EXPO_NO_CAPABILITY_SYNC -ErrorAction SilentlyContinue
+    npx eas-cli@latest build --profile production --platform ios
+    ```
+
+12. Treat any production build error that says the provisioning profile does not support Associated Domains and any production build error that says the provisioning profile does not include `com.apple.developer.associated-domains` as a failed capability procedure. Correct the App ID capability list, remove the EAS-stored App Store provisioning profile again, then rerun the production build. Do not upload a binary from a build that reports entitlement/provisioning errors.
+
+## Completed Web App Folder Rename
+
+The nested Next.js application folder has been renamed from `charlotte-third-places` to `web`.
+
+The Vercel project Root Directory has also been updated to `web`. Keep that setting unchanged.
+
+Previous local structure:
 
 ```text
 charlotte-third-places/
-  packages/
-    core/
-      package.json
-      src/
-        index.ts
-        places/
-        lists/
-        auth/
-        billing/
-        api/
-        validation/
-        formatting/
   charlotte-third-places/
     app/
     components/
     lib/
     styles/
   mobile/
+```
+
+Target local structure:
+
+```text
+charlotte-third-places/
+  web/
+    app/
+    components/
+    lib/
+    styles/
+  mobile/
+```
+
+Completed rename command:
+
+```powershell
+Rename-Item -Path .\charlotte-third-places -NewName web
+```
+
+Repository references that pointed at the old nested app folder were updated as part of the rename cleanup. Verified reference groups include:
+
+- GitHub Actions paths in `.github/workflows/unit-tests.yml` and `.github/workflows/e2e-tests.yml`, including `cache-dependency-path`, coverage artifacts, Playwright report artifacts, and test result artifacts.
+- `.github/copilot-instructions.md`, which identifies `web/` as the main Next.js application directory.
+- `.github/instructions/theme-color-sync.instructions.md`, whose `applyTo` pattern points at `web/components/ThemeColorSync.tsx`, `web/styles/globals.css`, `web/app/manifest.webmanifest`, and `web/app/layout.tsx`.
+- `.github/agents/place-types-specialist.md`, whose target files point at `web/lib/place-type-config.ts` and `web/components/Icons.tsx`.
+- Root `README.md` media paths that point at `web/media/...`.
+- Documentation paths in `docs/testing.md`, `docs/ai.md`, `docs/user-lists-plan.md`, and this document.
+- Any scripts, task definitions, and command examples that run Next.js commands from the app folder now point at `web`.
+
+The Next.js package `name` field stays `charlotte-third-places`. The rename changes the filesystem app folder name, not the product name, npm package identity, Expo slug, bundle identifier, and public domain.
+
+Vercel project root directory setting:
+
+```text
+https://vercel.com/segun-akinyemis-projects/charlotte-third-places/settings/build-and-deployment
+```
+
+Current Vercel Root Directory:
+
+```text
+web
+```
+
+Do not change this back to the old nested folder name.
+
+## npm Workspace Setup
+
+Create a repo-root `package.json` at `c:\GitHub\charlotte-third-places\package.json`. This file is private workspace coordination only. It does not replace `web/package.json` and does not replace `mobile/package.json`.
+
+Required root `package.json` contents:
+
+```json
+{
+  "private": true,
+  "workspaces": [
+    "web",
+    "mobile",
+    "packages/*"
+  ]
+}
+```
+
+Workspace package responsibilities:
+
+- `web/package.json`: owns Next.js, web scripts, web dependencies, and web deployment behavior.
+- `mobile/package.json`: owns Expo, native scripts, native dependencies, and EAS build behavior.
+- `packages/core/package.json`: owns pure TypeScript shared domain code.
+- `packages/shared-react/package.json`: owns React-only shared state.
+- root `package.json`: owns workspace membership only. Do not add app-specific dependencies to the root package.
+
+Package names:
+
+- `packages/core/package.json` name: `@charlotte-third-places/core`.
+- `packages/shared-react/package.json` name: `@charlotte-third-places/shared-react`.
+
+`web` and `mobile` import shared code through package names, not relative paths into `../packages`.
+
+```ts
+import { Place, filterPlaces } from "@charlotte-third-places/core";
+import { FilterProvider } from "@charlotte-third-places/shared-react";
+```
+
+Do not use `npm link`. Do not copy shared source into `web` or `mobile`. npm workspaces provide the local symlinks.
+
+## Current Codebase Facts
+
+These facts were verified from the current repository and must drive the implementation plan.
+
+### Existing Web Routes
+
+- `web/app/page.tsx`: current Home route. It fetches places server-side and renders `components/HomePageClient.tsx`.
+- `web/app/map/page.tsx`: current Map route. It fetches places server-side, wraps the page in `contexts/FilterContext.tsx`, and renders `components/PlaceMap.tsx`.
+- `web/app/chat/page.tsx`: current Chat route. It renders `components/ChatContent.tsx` in page mode.
+- `web/app/places/[id]/page.tsx`: current Place Detail route. It resolves a place by Airtable record ID and renders `components/PlacePageClient.tsx`.
+- `web/app/contribute/page.tsx`: current Contribute route. It renders three native web cards that open Airtable form URLs.
+- `web/app/about/page.tsx`: current About route.
+- `web/app/legal/page.tsx`: current Legal route.
+- `web/app/~offline/page.tsx`: current web PWA offline fallback route.
+
+### Existing API Routes
+
+- `web/app/api/places/route.ts`: current compatibility endpoint. It returns raw `Place[]` from `getPlaces()`. It declares `export const dynamic = "force-static"`. Status 200 on success, 500 on error.
+- `web/app/api/places/[id]/route.ts`: current compatibility endpoint. It returns one raw `Place` from `getPlaceById(id)`. Missing records return a JSON 404. It declares `export const dynamic = "force-static"`, `export const dynamicParams = true`, and a `generateStaticParams()` that pre-generates routes for all known `place.recordId` values. Status 200 on success, 404 when not found, 500 on error.
+- `web/app/api/chat/route.ts`: current streaming AI chat endpoint used by `components/ChatContent.tsx`. It declares `export const maxDuration = 30` and runs on the default Node.js runtime. See the AI Chat Contract section for the full request/response and RAG behavior.
+- `web/app/api/revalidate/route.ts`: current ISR/cache invalidation endpoint for the web app. Static `/api/places` output is rebuilt through this route, not through time-based revalidation.
+
+These endpoints are not speculative. They are the current compatibility surface.
+
+### Existing Data Source
+
+`web/lib/data-services.ts` currently owns data loading:
+
+- Development data source: `web/local-data/Charlotte Third Places-Production.csv`.
+- Production data source: Airtable base `apptV6h58vA4jhWFg`, table `Charlotte Third Places`, view `Production`.
+- Environment override: `FORCE_PRODUCTION_DATA=true` forces Airtable data while local development normally reads CSV.
+- Public server functions: `getPlaces(): Promise<Place[]>` and `getPlaceById(id: string): Promise<Place | undefined>`.
+- Pure helper currently mixed into the server file and already exported: `parsePlacePhotoManifests(value: unknown): PlacePhoto[]`.
+- Private record mapper currently mixed into the server file and not exported: `mapRecordToPlace`. The CSV reader `getPlacesFromCSV` is also private and not exported.
+- Server-only imports in this file: `fs`, `path`, `airtable`, `csv-parser`, `strip-bom-stream`, and `parse`/`parseISO`/`isValid` from `date-fns`.
+- Environment variables read in this file: `AIRTABLE_PERSONAL_ACCESS_TOKEN`, `FORCE_PRODUCTION_DATA` (checked `=== 'true'`), and `NODE_ENV` (checked `=== 'development'`).
+
+Server-only parts of this file stay server-only. Only `parsePlacePhotoManifests` is pure and movable. `mapRecordToPlace` parsing logic that is pure (string/date normalization) is re-created in `packages/core` as the place normalizer; the Airtable/CSV I/O stays in `web`.
+
+## Resolved Mobile Implementation Decisions
+
+These decisions were made after auditing the current codebase. The implementing agent must follow them and must not reopen them without a new explicit product decision.
+
+1. npm workspaces are used. After the nested Next.js folder is renamed to `web`, create a private repo-root `package.json` at `c:\GitHub\charlotte-third-places\package.json` with workspaces for `web`, `mobile`, and `packages/*`. This root file does not replace `web/package.json` or `mobile/package.json`.
+2. Mobile routes live at `mobile/app`, not `mobile/src/app`. The current Expo starter routes in `mobile/src/app` are removed during the route-tree replacement.
+3. Mobile UI uses NativeWind v5 and React Native Reusables for parity surfaces. The current Expo template `@expo/ui` component pattern is not used for the parity app UI.
+4. Production mobile API origin is `https://www.charlottethirdplaces.com`.
+5. Develop mobile API origin is `https://charlotte-third-places-git-develop-segun-akinyemis-projects.vercel.app`.
+6. Mobile Chat calls the existing web-hosted `/api/chat` endpoint. The mobile app does not create a separate chat backend for the parity migration.
+7. Shared `Place` app semantics are preserved: string flag fields stay strings, `createdDate` and `lastModifiedDate` are `Date` objects in app code, and HTTP transports dates as ISO strings that are parsed by core validators/normalizers.
+8. Mobile catalog cache behavior matches the current web freshness model: fetch fresh on app launch when online, keep the last successful catalog for offline launch, and never clear visible cached data because a refetch fails.
+9. Android Google Maps SDK key is provided through an EAS secret named `GOOGLE_MAPS_API_KEY`, read by `mobile/app.config.ts`, and injected into Android map config. iOS uses Apple Maps through `react-native-maps` and does not require a Google Maps key.
+10. Associated Domains verification is an implementation task. The implementation must verify `apple-app-site-association` for both `https://www.charlottethirdplaces.com/.well-known/apple-app-site-association` and `https://charlottethirdplaces.com/.well-known/apple-app-site-association`.
+11. Native UI icons use Expo-managed React Native Vector Icons through `@expo/vector-icons`. Native map markers use generated PNG assets, not live React icon components.
+12. Native map marker PNG assets are generated from core place type metadata by a script. Assets are produced at 1x, 2x, and 3x densities under `mobile/assets/map-markers/`.
+13. Fixture mode uses bundled JSON and MSW handlers. `EXPO_PUBLIC_MOBILE_DATA_MODE=fixture` makes the built app read bundled fixture data and fixture chat responses; Maestro does not depend on network or live Airtable data.
+14. Native external links use browser handoff through Expo/browser/linking APIs. Native sharing uses the native share sheet first and falls back to clipboard on failure.
+15. Native photo galleries silently remove failed images from rails and slides. If all photos fail, the native surface shows a single empty state.
+16. Mobile fonts are bundled local assets loaded with `expo-font`. The source archives currently sit in `fonts/`: `fonts/Inter-4.1.zip`, `fonts/IBM_Plex_Sans.zip`, and `fonts/IBM_Plex_Sans,JetBrains_Mono.zip`.
+
+## Implementation Verification Items
+
+The following items are not product decisions. They are required verification steps during implementation.
+
+- Confirm real `Place.photos[].display` and `Place.photos[].thumbnail` URLs load in a physical iOS build through `expo-image`. The current website allows remote images from `thirdplacesdata.blob.core.windows.net`, and service-worker photo requests are network-only.
+- Confirm both associated-domain hosts return valid Apple AASA JSON with the App ID for `com.charlottethirdplaces.app` before the Real iOS Gate passes.
+- Confirm the EAS secret `GOOGLE_MAPS_API_KEY` is present before Android map validation.
+- Confirm the generated marker PNG set contains one marker for every core `iconKey` plus the featured marker.
+- Confirm bundled fixture mode works with airplane mode enabled before running Maestro offline flows.
+
+## Verified Source Inventory
+
+Every symbol, constant, and behavior below was read from the current `charlotte-third-places` source. The implementing agent treats these as exact. It must not rename, round, or reinterpret them.
+
+### `lib/types.ts`
+
+- `PlacePhoto` = `{ display: string; thumbnail: string }`.
+- `Place` has exactly these fields: `recordId`, `name`, `operational`, `type: string[]`, `size`, `tags: string[]`, `neighborhood`, `address`, `purchaseRequired`, `parking: string[]`, `freeWiFi`, `hasCinnamonRolls`, `hasReviews`, `featured: boolean`, `description`, `website`, `tiktok`, `instagram`, `youtube`, `facebook`, `twitter`, `linkedIn`, `googleMapsPlaceId`, `googleMapsProfileURL`, `appleMapsProfileURL`, `photos: PlacePhoto[]`, `comments`, `operatingHours: string[]`, `latitude: number`, `longitude: number`, `createdDate: Date`, `lastModifiedDate: Date`.
+- `PlaceDocument` and `ChunkDocument` are Cosmos-shaped types with optional `embedding?: number[]` and `similarityScore?: number`. They are server/AI types. They are moved to `packages/core` as types only; mobile never instantiates them.
+- `SortField` enum: `Name`, `DateAdded`, `LastModified`. `SortDirection` enum: `Ascending`, `Descending`. `SortOption` = `{ field: SortField; direction: SortDirection }`. `DEFAULT_SORT_OPTION` = `{ field: SortField.DateAdded, direction: SortDirection.Descending }`.
+
+### `lib/filters.ts`
+
+- `FILTER_SENTINEL = 'all'`.
+- `FILTER_DEFS` has exactly 9 entries in this order: `name`, `neighborhood`, `type`, `tags`, `parking`, `freeWiFi`, `purchaseRequired`, `size`, `hasCinnamonRolls`. `neighborhood` has `fixedMatchMode: 'or'`. `type` has `defaultMatchMode: 'or'`. `tags` defaults to AND. `parking` allowedValues `['Free','Paid']`. `freeWiFi` allowedValues `['Yes','No']`. `size` allowedValues `['Small','Medium','Large']`. `hasCinnamonRolls` allowedValues `['Yes','No','Sometimes']`.
+- `SORT_DEFS` has exactly these keys: `name-asc`, `name-desc`, `createdDate-asc`, `createdDate-desc`, `lastModifiedDate-asc`, `lastModifiedDate-desc`. `SORT_USES_MOBILE_PICKER = true`.
+- Functions to move unchanged: `placeMatchesFilters(place: Place, filters: FilterConfig): boolean`, `filterPlaces(places: Place[], filters: FilterConfig): Place[]`, `sortPlaces(places: Place[], sortOption: SortOption): Place[]`.
+- Also export from this module and move: `FilterValueType`, `MatchMode`, `FilterOption`, `FilterDefinition`, `FilterKey`, `FilterConfig`, `DEFAULT_FILTER_CONFIG`, `FILTER_DEFINITION_MAP`, `MOBILE_PICKER_FIELDS`, `MOBILE_CHIP_FIELDS`, `DESKTOP_PICKER_FIELDS`, `MULTI_SELECT_FIELDS`, `SortDefinition`.
+
+### `lib/operating-hours.ts`
+
+- Constants: `CHARLOTTE_TIMEZONE = "America/New_York"`, `OPEN_LATE_THRESHOLD_HOUR = 22`, `OPEN_EARLY_THRESHOLD_HOUR = 7`, `OPENING_OR_CLOSING_SOON_MINUTES = 60`, and `DAYS` Sunday-first.
+- It uses native `Intl.DateTimeFormat` only. It does not import `date-fns`. It has no DOM usage.
+- Dynamic tags: `injectDynamicTags` adds `Open Late` when closing hour `>= 22` and `Open Early` when opening hour `<= 7`, computed once per batch with a single `getCharlotteTimeNow()` snapshot.
+- Exported helpers include `getCharlotteTimeNow`, `getHoursStatus`, `isPlaceOpenNow`, `isOpenLate`, `isOpenEarly`, `injectDynamicTags`, the `*At` variants, and the low-level parsers `parseHour24`, `parseTimeToMinutes`, `getClosingHour`, `getOpeningHour`, `getCurrentDayInCharlotte`, `getDayTimeRange`. Move these exports unchanged.
+
+### `lib/fonts.ts`
+
+- Website fonts are loaded through `next/font/google`.
+- `fontSans = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'], variable: '--font-sans', display: 'swap' })`.
+- `fontMono = JetBrains_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' })`.
+- `fontCard = IBM_Plex_Sans({ subsets: ['latin'], weight: ['400', '700'], variable: '--font-card', display: 'swap' })`.
+- `app/layout.tsx` applies `fontSans.className` on `<html>` and `fontSans.variable` plus `fontCard.variable` on `<body>`.
+- `styles/globals.css` defines `@utility card-font { font-family: var(--font-card); }`; `components/PlaceCard.tsx` uses `card-font`, so native place cards use IBM Plex Sans.
+- No `.ttf`, `.otf`, `.woff`, or `.woff2` font files are committed under current web or mobile assets. Mobile font files come from the zip archives in `fonts/` listed in the Mobile Font Assets section.
+
+### `lib/utils.ts`
+
+- Exports `cn`, `normalizeTextForSearch`, `shuffleArray`, `shuffleArrayNoAdjacentDuplicates`. Only `cn` depends on Tailwind merging; the other three move to `packages/core`. No DOM usage.
+
+### `lib/parsing.ts`
+
+- Exports `parseAirtableMarkdown(markdown: string): ParsedMarkdown` and `parseAirtableMarkdown(markdown: string, options: { plain: true }): { plainText: string }`. No DOM dependency. `PlaceCard` uses the `{ plain: true }` form for description previews. Node types: `paragraph`, `text`, `bold`, `italic`, `strikethrough`, `link`, `linebreak`. This module moves to `packages/core` so native description rendering uses the same AST.
+
+### `lib/place-type-config.ts`
+
+- `PlaceTypeConfig` = `{ icon: React.ComponentType<any>; emoji: string; mapColor: string }`. Because `icon` is a React component, this file cannot move to core unchanged. Core owns `{ type, iconKey, emoji, mapColor }` metadata; the React `icon` mapping stays platform-side.
+- `placeTypeConfig` defines a fixed set of place types, each with a unique hex `mapColor`. Fallbacks: `FALLBACK_ICON = Icons.queen`, `FALLBACK_EMOJI = "\uD83E\uDD37\uD83C\uDFFE"`, `FALLBACK_COLOR = "#3B82F6"`.
+- Exported helpers: `getPlaceTypeIcon`, `getPlaceTypeEmoji`, `getPlaceTypeColor`, `getAllMapColors`. The color helpers (minus the React icon) move to core; the icon helper stays platform-side.
+- Map color rule: the map uses the configured `mapColor`; when a type resolves to the default `#3B82F6`, the web map derives a stable hash color from a 19-entry palette. The native map must reproduce this exact featured/default/hash behavior.
+
+### `contexts/FilterContext.tsx`
+
+- Exports 7 contexts and 7 hooks: `FilterDataContext`/`useFilterData`, `FiltersContext`/`useFilters`, `QuickSearchContext`/`useQuickSearch`, `SortContext`/`useSort`, `OpenNowContext`/`useOpenNow`, `PlacesContext`/`usePlaces`, `FilterActionsContext`/`useFilterActions`.
+- Internal `FilterState` = `{ filters: FilterConfig; quickFilterText: string; sortOption: SortOption; openNow: boolean }`. Reducer actions: `SET_FILTERS`, `SET_QUICK_SEARCH`, `SET_SORT`, `SET_OPEN_NOW`, `RESET_ALL`.
+- No DOM, `window`, or Next APIs. It moves to `packages/shared-react` unchanged.
+- `openNowCount` recomputes on `[places, filters, quickFilterText]` and counts places passing search + filters that are open now, using one `getCharlotteTimeNow()` snapshot. `getDistinctValues` is backed by a `distinctValuesCache` keyed by `FilterKey`, rebuilt only when `places` changes, applying `accessor`, allowed-value allowlists, and `predefinedOrder`. The native implementation must preserve this caching to avoid the INP regression noted in the source comments.
+
+### `contexts/ModalContext.tsx`
+
+- Surfaces: `place` (`hideAskAI?`), `photos`, `chat` (`initialMessage?`). Actions: `pushPlace(place, { hideAskAI? })`, `pushPhotos(place)`, `pushChat(place, initialMessage?)`, `pop()`, `popTo(id)`, `closeAll()`.
+- Web specifics that stay in `web`: `ChatModal` is `next/dynamic` with `ssr: false` and a spinner; `PlaceModal` and `PhotosModal` are static imports; `preloadModalChunks()` uses `requestIdleCallback`. Navigation uses `window.history.pushState`, `back()`, `go(-n)`, and a `popstate` listener that restores `surfaceStack` from history state. Surfaces render at `zIndex = 50 + index * 10`. Ask AI shows only when `!hideAskAI` and no chat surface is below.
+- The shared part that moves to `packages/shared-react` is the surface types, the stack reducer, and the action contract. The native provider re-implements stack navigation with Expo Router/native primitives, not `window.history`.
+
+### `components/PlaceHighlights.tsx`
+
+- 8 highlight definitions with exact tags and priorities: `featured` (priority 1, badge + ribbon + gradient), `comingSoon` (priority 2, `operational === 'Coming Soon'`, badge + ribbon + gradient), `christian` (priority 3, tag `Christian`, badge), and badge-only `habesha` (`Habesha`), `blackOwned` (`Black Owned`), `french` (`French`), `veteranOwned` (`Veteran Owned`), `cinnamonRoll` (`hasCinnamonRolls` in `['Yes','TRUE','true']`).
+- Tag matching is case-insensitive trimmed against `place.tags`. Badge order: unprioritized first in definition order, then prioritized appended sorted descending so priority 1 is rightmost. Ribbon/gradient provider is the matched definition with the lowest numeric priority. Core returns these as descriptors; web/native map descriptors to styles and icons.
+
+### `components/PlaceCard.tsx`
+
+- Description preview uses `parseAirtableMarkdown(place.description, { plain: true })`. Type overflow uses a character-budget heuristic, not DOM measurement: `MAX_VISIBLE_WIDTH_CHARS = 35`, `MIN_TYPES = 2`, `MORE_INDICATOR_CHARS = 8`. The native card reproduces this exact `+N more` math.
+- Buttons: Chat shows when not Coming Soon; Photos shows only when `place.photos.length > 0`; Info always shows. Web icons used: `Icons.chat`, `Icons.photoGallery`, `Icons.infoCircle`. Card is `React.memo` with a field-list comparator (`recordId, name, description, neighborhood, size, freeWiFi, purchaseRequired, featured, hasCinnamonRolls, hasReviews, operational, type, tags, photos, parking`).
+
+### `components/PlaceMap.tsx`
+
+- Web map constants the native map must mirror: default center `{ lat: 35.23075539296459, lng: -80.83165532446358 }`, default zoom `11`, `SHOW_LABELS_ZOOM = 12`, `MAX_LABELS_SHOWN = 30`, featured marker color `#f59e0b`, Find Me success zoom `14`, geolocation options `{ enableHighAccuracy: false, timeout: 5000, maximumAge: 300000 }`.
+- Fallback marker palette has exactly these 19 colors, in order: `#FB923C`, `#14B8A6`, `#6366F1`, `#EC4899`, `#84CC16`, `#F59E0B`, `#D946EF`, `#F43F5E`, `#06B6D4`, `#8B5CF6`, `#10B981`, `#FBBF24`, `#DC2626`, `#22C55E`, `#3B82F6`, `#F472B6`, `#A3E635`, `#2DD4BF`, `#E879F9`. The hash algorithm initializes `hash = 0`, then for each character runs `hash = charCode + ((hash << 5) - hash)`, then uses `Math.abs(hash) % typeColorPalette.length`.
+- The web map listens for a `userLocationFound` custom DOM event from a separate mobile Find Me button; that DOM-event bridge is web-only and is not ported. Native Find Me calls `expo-location` directly.
+
+### Current `mobile` App Facts
+
+- `mobile/package.json` currently uses Expo `~56.0.12`, React `19.2.3`, React Native `0.85.3`, Expo Router `~56.2.11`, `expo-image`, `expo-web-browser`, `expo-symbols`, `@expo/ui`, React Native Reanimated `4.3.1`, and no NativeWind/TanStack Query/react-native-maps/Jest/MSW/Maestro dependencies yet.
+- `mobile/app.json` currently uses `scheme: "charlotte-third-places"`, iOS bundle identifier `com.charlottethirdplaces.app`, `userInterfaceStyle: "automatic"`, and no `ios.associatedDomains` entry yet. The implementation must add the associated domains from this plan.
+- `mobile/eas.json` currently has `development`, `preview`, and `production` profiles only. Add an `e2e-test` profile for fixture-mode Maestro builds.
+- Current Expo starter route files live under `mobile/src/app/_layout.tsx`, `mobile/src/app/index.tsx`, and `mobile/src/app/explore.tsx`. The parity app moves routes to root `mobile/app` and removes the starter `src/app` route tree.
+
+### `components/HomePageClient.tsx`
+
+- Random/feed exclusion list is exactly `["Starbucks", "Panera"]`, applied as a case-insensitive name regex, only to the feed and the Random action, never to the full Browse list.
+- Total count heading text is `Explore {places.length} Third Places in Charlotte`, sourced from `usePlaces()`. Mobile instant actions are Random, Map, Chat, Browse. The web Random/Browse buttons scroll to sections; native Random/Browse navigate within the Home tab.
+
+### `components/ResponsivePlaceCards.tsx`
+
+- Desktop renders `InfiniteMovingCards`, a custom CSS-animation marquee (no carousel library) that ignores filters and shows 100 random places with a shuffle action. Mobile renders `CardCarousel` built on the shadcn `components/ui/carousel` (Embla) with options `{ loop: true, align: "center", skipSnaps: false, dragFree: false, startIndex }`, respecting filters/search/sort. The native Home feed reproduces the mobile `CardCarousel` behavior, not the desktop marquee.
+
+### `components/PlaceListWithFilters.tsx` and `components/DataTable.tsx`
+
+- Open Now is pre-filtered in `PlaceListWithFilters` before `DataTable`. `DataTable` applies, in order: quick search (`normalizeTextForSearch(place.name)`), `placeMatchesFilters`, then `sortPlaces`. Coming Soon count is `places.filter(p => p.operational === 'Coming Soon').length` and is always shown.
+- The web list virtualizes with `@tanstack/react-virtual` (`useVirtualizer`, `ROW_HEIGHT = 219`, `overscan: 3`) and uses responsive column counts by width (1/2/3/4/5). The native Browse list uses `FlashList` (single column on phones) and is not required to reproduce the desktop multi-column grid.
+
+## AI Chat Contract
+
+The mobile Chat screen must talk to the existing chat endpoint over HTTPS and must not re-implement RAG, embeddings, or Cosmos access on the client.
+
+Verified facts about `app/api/chat/route.ts` and `lib/ai/*`:
+
+- Runtime: default Node.js runtime. `export const maxDuration = 30`. The route aborts near 28 seconds to stay under the limit.
+- Request body: `{ messages: Array<{ role: 'user' | 'assistant'; parts?: Array<{ type: 'text'; text: string }> }>, placeId?: string }`. The latest user message is read from `parts[]`.
+- Model: `gpt-4.1-mini` via `@ai-sdk/azure` (`createAzure`, deployment-based URLs, API version `2024-05-01-preview`). Embedding model `text-embedding-3-small` (1536 dims).
+- Environment variables (server-only, never in the mobile bundle): `FOUNDRY_API_KEY`, `COSMOS_DB_CONNECTION_STRING`.
+- System prompt: `SYSTEM_PROMPT` in `lib/ai/prompts.ts`. Context is built by `createContextMessage()`. RAG is orchestrated by `performRAG()` in `lib/ai/rag.ts`, backed by Cosmos vector search in `lib/ai/cosmos.ts`, with neighborhood/tag detection driven by the generated `lib/ai/airtable-generated-data.ts`.
+- Response: streamed `UIMessage` output from the Vercel AI SDK `streamText().toUIMessageStreamResponse()`.
+
+Mobile chat requirements:
+
+- The mobile client sends the same `{ messages, placeId? }` body to the production `/api/chat` origin and consumes the streamed response.
+- Place-scoped chat sends `placeId` (the Airtable `recordId`). General chat omits `placeId`.
+- Internal `/places/{id}` links in AI output are intercepted and open a native place surface with `hideAskAI: true`. The same-place link renders as non-clickable emphasis. A failed place fetch appends an assistant error message and preserves the session.
+- The mobile app does not import `@azure/cosmos`, `@ai-sdk/azure`, `lib/ai/*`, or any AI secret. All AI work stays server-side behind `/api/chat`.
+
+
+## Target Repository Layout
+
+```text
+charlotte-third-places/
+  package.json
+  fonts/
+    Inter-4.1.zip
+    IBM_Plex_Sans.zip
+    IBM_Plex_Sans,JetBrains_Mono.zip
+  packages/
+    core/
+      package.json
+      src/
+        index.ts
+        places/
+          types.ts
+          schemas.ts
+          normalize.ts
+          place-type-metadata.ts
+          highlights.ts
+        filters/
+          definitions.ts
+          predicates.ts
+          sorting.ts
+        hours/
+          operating-hours.ts
+        api/
+          contracts.ts
+          client.ts
+        text/
+          normalize.ts
+        arrays/
+          shuffle.ts
+    shared-react/
+      package.json
+      src/
+        index.ts
+        filters/
+          FilterProvider.tsx
+          reducer.ts
+          hooks.ts
+        modals/
+          surface-stack.ts
+          types.ts
+          actions.ts
+  web/
+    app/
+    components/
+    contexts/
+    lib/
+    styles/
+  mobile/
     app/
     components/
     features/
+    hooks/
     lib/
+    styles/
     assets/
+      fonts/
+      map-markers/
 ```
 
-The exact folder names can change during implementation, but the boundary should not.
+`packages/core` and `packages/shared-react` are separate because `packages/core` must not import React. Shared React state belongs in `packages/shared-react`, not core.
 
-## Shared Core
+## Code Reuse Classification
 
-`packages/core` is a pure TypeScript package. It must be boring, deterministic, and platform-safe.
+Every migration task must classify source code using this table before moving and rewriting it.
 
-It should include:
+| Classification | Rule | Examples |
+| --- | --- | --- |
+| Shared pure core | Runs without React, DOM, Next.js, Expo, native APIs, Tailwind, shadcn, and secrets | `Place`, `SortOption`, filter definitions, filtering predicates, sort logic, hours parsing, text normalization |
+| Shared React state | Imports `react` only and has no renderer-specific API | `FilterProvider`, filter reducer, filter hooks, modal surface stack action contract |
+| Shared contract with platform adapters | Same behavior, different rendering/runtime implementation | modal stack provider, place type icons, place highlights, share action, external links |
+| Web-only | Requires DOM, Next.js, Radix/shadcn DOM primitives, `window`, `document`, CSS media queries, browser history | `DataTable`, `PlaceModal`, `PhotosModal`, web `ModalProvider`, `FilterDrawer`, `FilterSidebar` |
+| Native-only | Requires Expo or React Native APIs | Expo Router routes, native tabs/stacks, native map, `expo-image`, native share sheet, native offline storage |
 
-- `Place` and place-related types
-- catalog manifest and catalog payload types
-- Airtable/API-to-Place pure mappers where they do not require secrets or platform APIs
-- place filtering, sorting, open-now, and label helpers
-- list, list-entry, share-token, report, and featured-list types
-- user and auth identity types
-- API request and response envelopes
-- Zod schemas for input/output validation
-- route and deep-link parameter schemas
-- auth/session payload helpers that are safe for clients
-- permission and visibility rules
-- future credits, wallet, purchases, and entitlement types
-- future credit math and entitlement business rules
-- formatting helpers shared by web and mobile
+## `packages/core` Requirements
 
-It must not import:
+`packages/core` is pure TypeScript. It must not import:
 
 - `react`
 - `react-dom`
 - `react-native`
 - `next`
 - `expo`
-- Tailwind or shadcn code
-- browser-only APIs such as `window`, `document`, `localStorage`, or IndexedDB directly
-- native-only APIs such as secure storage or push registration directly
-- server-only database clients
-- server secrets or environment-specific configuration
+- Tailwind and shadcn code
+- icon components
+- `window`, `document`, `navigator`, `localStorage`, IndexedDB, and Service Worker APIs
+- SecureStore, SQLite, FileSystem, Location, Share, and native platform APIs
+- Airtable SDK
+- Cosmos DB SDK
+- Azure OpenAI SDK
+- `fs`, `path`, `csv-parser`, and `strip-bom-stream`
+- server secrets and environment-specific configuration
 
-When core needs platform behavior, it should define interfaces or pure data contracts. The web and mobile apps provide platform implementations.
+Move these current concepts into `packages/core`:
 
-## Web App Responsibilities
+- From `web/lib/types.ts`: `PlacePhoto`, `Place`, `PlaceDocument`, `ChunkDocument`, `SortField`, `SortDirection`, `SortOption`, `DEFAULT_SORT_OPTION`.
+- From `web/lib/filters.ts`: `FILTER_SENTINEL`, `FilterValueType`, `MatchMode`, `FilterOption`, `FilterDefinition`, `FILTER_DEFS`, `FilterKey`, `FilterConfig`, `DEFAULT_FILTER_CONFIG`, `FILTER_DEFINITION_MAP`, `MOBILE_PICKER_FIELDS`, `MOBILE_CHIP_FIELDS`, `DESKTOP_PICKER_FIELDS`, `MULTI_SELECT_FIELDS`, `SORT_DEFS`, `SORT_USES_MOBILE_PICKER`, `placeMatchesFilters`, `filterPlaces`, `sortPlaces`.
+- From `web/lib/operating-hours.ts`: `CharlotteTime`, `HoursStatus`, `getCharlotteTimeNow`, `getHoursStatus`, `isPlaceOpenNow`, `injectDynamicTags`, `isOpenLate`, `isOpenEarly`, parsing helpers, Charlotte timezone constants, dynamic tag thresholds.
+- From `web/lib/utils.ts`: `normalizeTextForSearch`, `shuffleArray`, `shuffleArrayNoAdjacentDuplicates`.
+- From `web/lib/data-services.ts`: `parsePlacePhotoManifests(value)` after removing server imports.
+- From `web/lib/place-type-config.ts`: place type labels, emoji values, marker colors, semantic icon keys, fallback marker metadata.
+- From `web/components/PlaceHighlights.tsx`: pure highlight predicates, priority ordering, semantic highlight descriptors.
 
-The existing Next.js app remains the web application. It should consume `packages/core` for shared types, schemas, API clients, and pure business logic while keeping its own React DOM UI.
+Do not move `cn()` to core. `cn()` depends on Tailwind class merging and belongs in platform UI utility packages.
 
-The web app owns:
+## Runtime Validation Decision
 
-- App Router pages and layouts
-- server components
-- static rendering and ISR behavior
-- Vercel deployment
-- SEO metadata
-- sitemap and robots behavior
-- public place pages
-- shareable list pages
-- public/featured community list pages
-- legal pages
-- admin interfaces
-- web-specific chat UI
-- Tailwind/shadcn/Radix components
-- Serwist/PWA behavior for the website
-- server-side Airtable, PostgreSQL, Cosmos DB, and other secret-backed integrations
+The current Next.js app already lists `zod` as a direct dependency, but first-party source currently does not define app-owned Zod schemas for the catalog. Current runtime validation is mostly ad hoc parsing in `data-services.ts`.
 
-The web app should not become React Native Web as part of this plan. There is no product reason to rewrite the public website into a lowest-common-denominator UI layer.
+Zod is a TypeScript-first runtime validation library. TypeScript checks code at compile time. Zod checks untrusted data at runtime. It is needed at boundaries where Airtable, CSV, and HTTP JSON enter the application.
 
-## Mobile App Responsibilities
+Use Zod in `packages/core` only for untrusted data boundaries:
 
-The mobile app is a new Expo/React Native app. Expo is the primary app framework, tooling layer, build path, and native configuration system for the mobile product.
+- normalized Airtable/CSV place payloads
+- `GET /api/places` compatibility response during migration
+- `GET /api/places/[id]` compatibility response during migration
+- `GET /api/v1/places` response envelope
+- `GET /api/v1/places/[id]` response envelope
+- `POST /api/chat` request payloads
+- future public mutation payloads after those features exist
 
-It should consume `packages/core` for shared types, schemas, API clients, and pure business logic while rendering native mobile screens.
+Do not create Zod schemas for every internal UI type. Do not validate local component state with Zod unless that state crosses a network/storage/persistence boundary.
 
-The mobile app owns:
+Required validator files:
 
-- Expo Router app structure
-- native stacks and tabs
-- native screen transitions
-- native sheets and modals
-- native cards and lists
-- native map surface
-- native image handling and caching strategy
-- native share sheet
-- native deep linking and universal/app links
-- native secure storage
-- native push registration and notification handling
-- native purchase flows through StoreKit and Google Play Billing, likely via RevenueCat
-- native app lifecycle behavior
-- native offline/repeat-launch behavior
-- native settings and account flows
+```text
+packages/core/src/places/schemas.ts
+packages/core/src/filters/schemas.ts
+packages/core/src/api/contracts.ts
+```
 
-The mobile app must not use WebView or DOM components for primary interactive surfaces.
+The `Place` TypeScript type and the `PlaceSchema` runtime validator must agree. API routes must validate outbound data before returning it to mobile. Mobile must validate API responses before storing them in the persisted query cache.
 
-Forbidden in final mobile interactive flows:
+## Shared React State Requirements
 
-- `WebView`
-- `use dom`
-- Expo DOM Components
-- rendering existing Next.js pages inside the app shell
-- using web routes as the mobile UI for Home, Random, Browse, Map, Chat, Places, Lists, Auth, Settings, Payments, or Account
+`web/contexts/FilterContext.tsx` is reusable as React state because it imports React and shared helper functions but does not depend on DOM APIs. It must be lifted into `packages/shared-react`.
 
-Temporary developer prototypes may be used locally if they speed up learning, but they are not part of the product architecture and should not become production surfaces.
+Move these pieces into `packages/shared-react`:
+
+- `FilterState`
+- `FilterAction`
+- `initialState`
+- `filterReducer`
+- `FilterDataContext`
+- `FiltersContext`
+- `QuickSearchContext`
+- `SortContext`
+- `OpenNowContext`
+- `PlacesContext`
+- `FilterActionsContext`
+- `FilterProvider`
+- `useFilterData`
+- `useFilters`
+- `useQuickSearch`
+- `useSort`
+- `useOpenNow`
+- `usePlaces`
+- `useFilterActions`
+
+Both web and mobile must import filter state from `packages/shared-react`. The mobile app must not create a separate native-only filter reducer.
+
+The UI that consumes filter state remains platform-specific:
+
+- Web filter UI remains in `web/components/FilterSidebar.tsx`, `web/components/FilterDrawer.tsx`, `web/components/MobileQuickFilters.tsx`, `web/components/FilterUtilities.tsx`, `web/components/VirtualizedSelect.tsx`, and `web/components/SearchablePickerModal.tsx`.
+- Mobile filter UI is implemented in `mobile/features/filters/` and consumes the shared contexts from `packages/shared-react` plus filter metadata from `packages/core`.
+- Browse and Map share one `FilterProvider` state tree in the mobile app. A filter applied from Browse filters Map markers. A filter applied from Map filters Browse results.
+
+## Modal Surface Stack Requirements
+
+`web/contexts/ModalContext.tsx` cannot be moved wholesale because it imports Next dynamic, web modal components, DOM loading states, and writes to `window.history`.
+
+The shared part is the surface stack contract:
+
+```ts
+type SurfaceKind = 'place' | 'chat' | 'photos';
+
+type Surface =
+  | { id: string; kind: 'place'; place: Place; hideAskAI?: boolean }
+  | { id: string; kind: 'photos'; place: Place }
+  | { id: string; kind: 'chat'; place: Place; initialMessage?: string };
+
+type ModalActions = {
+  pushPlace(place: Place, options?: { hideAskAI?: boolean }): void;
+  pushPhotos(place: Place): void;
+  pushChat(place: Place, initialMessage?: string): void;
+  pop(): void;
+  popTo(id: string): void;
+  closeAll(): void;
+};
+```
+
+Required behavior:
+
+- Stack order is bottom-to-top.
+- Back closes the top surface first.
+- Place -> Photos reveals Place again after Photos closes.
+- Place -> Chat preserves the place context.
+- Chat -> Place opens the place above the chat and preserves the chat session.
+- Places opened from chat use `hideAskAI: true` to prevent Chat -> Place -> Ask AI -> Chat loops.
+- Web Back/Forward sync remains in the web provider.
+- Native back handling is implemented in the native provider through Expo Router/native navigation primitives.
+
+Implementation split:
+
+- `packages/shared-react/src/modals/*`: shared surface types, reducer, action contract.
+- `web/contexts/ModalContext.tsx`: web provider, `window.history` sync, renders `PlaceModal`, `PhotosModal`, `ChatModal`.
+- `mobile/features/modals/modal-provider.tsx`: native provider, native back behavior, renders native Place/Photos/Chat surfaces.
+
+## Place Type Metadata And Icons
+
+`web/lib/place-type-config.ts` imports `components/Icons.tsx`, so it cannot move unchanged into core.
+
+Split it into shared metadata plus platform icon adapters.
+
+Core metadata shape:
+
+```ts
+type PlaceTypeMetadata = {
+  type: string;
+  iconKey: string;
+  emoji: string;
+  mapColor: string;
+};
+```
+
+Core owns:
+
+- place type labels
+- emoji values
+- marker colors
+- semantic icon keys
+- fallback type metadata
+
+Web owns:
+
+- mapping `iconKey` to `Icons.*` from `components/Icons.tsx`
+
+Mobile owns:
+
+- mapping `iconKey` to the selected native icon implementation
+- native marker glyph rendering
+
+Map marker colors must come from core metadata on both platforms.
+
+## Place Highlight Rules
+
+`web/components/PlaceHighlights.tsx` mixes pure highlight rules with JSX icons and Tailwind classes. It cannot move unchanged.
+
+Split it into:
+
+1. Core highlight rules.
+2. Web highlight rendering adapter.
+3. Native highlight rendering adapter.
+
+Core returns semantic descriptors:
+
+```ts
+type HighlightDescriptor = {
+  key: string;
+  priority?: number;
+  badgeToken?: string;
+  ribbonToken?: string;
+  gradientToken?: 'featured' | 'comingSoon';
+  label?: string;
+  iconKey?: string;
+  ariaLabel?: string;
+};
+```
+
+Core must preserve current highlight logic:
+
+- `featured`: priority 1, featured badge, featured ribbon, featured card/modal gradient.
+- `comingSoon`: priority 2, coming soon badge, coming soon ribbon, coming soon card/modal gradient.
+- `habesha`: tag match `Habesha`, badge only.
+- `blackOwned`: tag match `Black Owned`, badge only.
+- `french`: tag match `French`, badge only.
+- `veteranOwned`: tag match `Veteran Owned`, badge only.
+- `christian`: tag match `Christian`, priority 3, badge only.
+- `cinnamonRoll`: `hasCinnamonRolls` matches one of `Yes`, `TRUE`, and `true`, badge only.
+
+Web adapter maps descriptors to Tailwind classes and web icons. Native adapter maps descriptors to NativeWind classes/native styles and native icons. The ordering of badges must match current web behavior: unprioritized badges first in definition order, prioritized badges sorted descending so priority 1 ends rightmost.
+
+## API Boundary
+
+The mobile app consumes HTTP APIs. It never talks directly to Airtable, CSV files, Cosmos DB, Azure OpenAI, and server secrets.
+
+Preserve the current endpoints:
+
+- `GET /api/places`: compatibility endpoint returning raw `Place[]`.
+- `GET /api/places/[id]`: compatibility endpoint returning a raw `Place`. Missing records return 404.
+- `POST /api/chat`: streaming chat endpoint.
+
+Add versioned endpoints for the mobile implementation:
+
+- `GET /api/v1/places`: returns a typed envelope.
+- `GET /api/v1/places/[id]`: returns a typed envelope for a single place.
+
+Mobile must use the versioned endpoints. Existing web code keeps using server functions and compatibility endpoints during the extraction. New cross-platform clients use versioned endpoints.
+
+Catalog envelope:
+
+```ts
+type PlacesResponse = {
+  schemaVersion: 1;
+  generatedAt: string;
+  source: 'airtable' | 'local-csv';
+  totalCount: number;
+  places: Place[];
+};
+```
+
+Single place envelope:
+
+```ts
+type PlaceResponse = {
+  schemaVersion: 1;
+  generatedAt: string;
+  place: Place;
+};
+```
+
+API routes validate data before returning. Mobile validates data before persisting it.
+
+## Data Fetching And Offline Storage
+
+Use TanStack Query for mobile server state. Use Expo SQLite only as the persisted key-value storage backend for TanStack Query cache during the parity migration. Do not create relational SQLite tables or use Drizzle in the parity migration.
+
+These tools occupy different layers:
+
+- TanStack Query: server-state orchestration, request deduping, loading/error states, retry, stale/fresh timing, background refetch, reconnect behavior, and cache persistence.
+- Expo SQLite: on-device SQL database engine for local relational storage, full-text search, SQL queries, transactions, and durable local data.
+- Drizzle: TypeScript ORM/query builder/migration layer that sits on top of SQLite and future SQL databases. Drizzle does not replace TanStack Query.
+
+Parity migration decision:
+
+1. Install and use `@tanstack/react-query`.
+2. Install and use `@tanstack/react-query-persist-client`.
+3. Install and use `@tanstack/query-async-storage-persister`.
+4. Install and use `expo-sqlite` for `expo-sqlite/kv-store` as the AsyncStorage-compatible persistence backend.
+5. Install and use a network state integration such as `@react-native-community/netinfo` for online/offline state.
+6. Do not create `places`, `photos`, `tags`, and `filters` SQLite tables during the parity migration.
+7. Do not add Drizzle during the parity migration.
+
+Mobile query behavior:
+
+- On every app launch while online, refetch `GET /api/v1/places` from the configured API origin.
+- Keep rendering the last successful catalog while the launch refetch is in flight.
+- If launch refetch fails, keep the last successful catalog visible and show an offline/error state.
+- Persist the last successful catalog through TanStack Query persistence backed by `expo-sqlite/kv-store`.
+- Do not enforce a time-based cache expiration during the parity migration. The persisted catalog remains usable until a newer successful response replaces it or the user clears app storage.
+- Pull-to-refresh triggers the same catalog refetch and never clears visible cached data on failure.
+- Reconnect triggers a catalog refetch and keeps visible cached data until a newer valid response replaces it.
+
+Mobile API origin configuration:
+
+- Production builds use `EXPO_PUBLIC_API_BASE_URL=https://www.charlottethirdplaces.com`.
+- Develop builds use `EXPO_PUBLIC_API_BASE_URL=https://charlotte-third-places-git-develop-segun-akinyemis-projects.vercel.app`.
+- Fixture builds set `EXPO_PUBLIC_MOBILE_DATA_MODE=fixture` and do not call the network for catalog or chat fixtures.
+- The API client trims trailing slashes from `EXPO_PUBLIC_API_BASE_URL` before appending `/api/v1/places`, `/api/v1/places/[id]`, and `/api/chat`.
+
+Professional offline behavior for the parity migration means:
+
+- After one successful online launch, the app can cold-launch offline and show the last successful catalog.
+- Place detail works offline for places already present in the cached catalog.
+- Filters, quick search, sort, Open Now, dynamic tags, and card rendering work over the cached catalog.
+- The app shows an explicit offline state when offline.
+- Pull-to-refresh attempts to refetch and reports failure without clearing cached data.
+- Reconnect triggers refetch of stale queries.
+
+SQLite tables and Drizzle become required only when a later feature adds local relational ownership: offline saved lists, offline user mutations, queued writes, conflict resolution, full offline full-text search, and catalog size/performance that cannot be handled by persisted JSON plus in-memory shared filters.
+
+## Mobile Styling Stack
+
+Use NativeWind v5 as the styling foundation and React Native Reusables as the component layer.
+
+This decision intentionally follows the local `expo-tailwind-setup` skill instead of the general Expo UI preference for inline styles because this migration requires exact visual parity with an existing Tailwind/shadcn web app.
+
+Required mobile styling stack:
+
+- NativeWind v5
+- React Native Reusables
+- `react-native-css` per the local Expo Tailwind setup guidance
+- `tailwind-merge` and `clsx` in the native UI utility layer
+- Expo font loading for exact local Inter, IBM Plex Sans, and JetBrains Mono font assets
+
+Port these web tokens from `web/styles/globals.css` into the native theme.
+
+- light: `--background: 190 60% 97%`
+- light: `--foreground: 210 5% 20%`
+- light: `--card: 0 0% 99%`
+- light: `--primary: 190 100% 42%`
+- light: `--primary-foreground: 0 0% 100%`
+- light: `--secondary: 270 90% 65%`
+- light: `--secondary-foreground: 0 0% 100%`
+- light: `--accent: 190 30% 88%`
+- light: `--warm-accent: 30 90% 70%`
+- light: `--muted: 190 10% 90%`
+- light: `--muted-foreground: 210 5% 40%`
+- light: `--destructive: 0 100% 50%`
+- light: `--border: 190 20% 80%`
+- light: `--input: 190 20% 80%`
+- light: `--ring: 190 100% 42%`
+- `--radius: 1.25rem`
+- all `--map-control*` tokens
+- all dark theme equivalents in `.dark`
+
+Native components must not hardcode replacement brand colors. They consume shared tokens.
+
+### Mobile Font Assets
+
+The website uses `next/font/google` in `web/lib/fonts.ts`. The mobile app cannot use `next/font`, so it bundles local font files and loads them with `expo-font` at app startup.
+
+Current downloaded font archives:
+
+```text
+fonts/Inter-4.1.zip
+fonts/IBM_Plex_Sans.zip
+fonts/IBM_Plex_Sans,JetBrains_Mono.zip
+```
+
+Required font preparation steps:
+
+1. Create `mobile/assets/fonts/`.
+2. Create a temporary extraction folder outside runtime assets, such as `.tmp-font-extract/` at the repo root.
+3. Unzip `fonts/Inter-4.1.zip`, `fonts/IBM_Plex_Sans.zip`, and `fonts/IBM_Plex_Sans,JetBrains_Mono.zip` into `.tmp-font-extract/`.
+4. Copy only the required `.ttf` or `.otf` files into `mobile/assets/fonts/`.
+5. Rename copied files to stable app-owned names.
+6. Delete `.tmp-font-extract/` after copying.
+7. Do not reference `.zip` files from app code. Do not leave extracted temporary font folders under `mobile/assets/`.
+
+Required mobile font files:
+
+```text
+mobile/assets/fonts/Inter-Regular.ttf
+mobile/assets/fonts/Inter-Medium.ttf
+mobile/assets/fonts/Inter-SemiBold.ttf
+mobile/assets/fonts/Inter-Bold.ttf
+mobile/assets/fonts/IBMPlexSans-Regular.ttf
+mobile/assets/fonts/IBMPlexSans-Bold.ttf
+mobile/assets/fonts/JetBrainsMono-Regular.ttf
+mobile/assets/fonts/JetBrainsMono-Bold.ttf
+```
+
+Mobile font family mapping:
+
+- default app text: `Inter`
+- medium text: `Inter-Medium`
+- semibold text: `Inter-SemiBold`
+- bold text: `Inter-Bold`
+- place cards: `IBMPlexSans-Regular` and `IBMPlexSans-Bold`
+- code/mono UI: `JetBrainsMono-Regular` and `JetBrainsMono-Bold`
+
+`mobile` must load all eight font files before rendering the primary route tree. The startup loading state uses the existing Expo splash screen and does not show placeholder text with system fonts.
+
+## Mobile Testing Strategy
+
+The mobile app must have automated test parity with the current web app. The current web app uses Vitest for unit/component tests and Playwright for user-flow E2E tests. The mobile app uses a React Native test stack with the same coverage intent.
+
+Required mobile test stack:
+
+- Unit test runner: Jest with `jest-expo`.
+- Component and screen tests: `@testing-library/react-native`.
+- Expo Router integration tests: `expo-router/testing-library`.
+- API boundary mocks: MSW.
+- End-to-end user flows: Maestro against a built app artifact.
+- Non-default fallback: Detox. Detox is introduced only after a written technical exception identifies a flow Maestro cannot automate.
+
+Required `mobile/package.json` scripts:
+
+```json
+{
+  "scripts": {
+    "test:unit": "jest --watchAll",
+    "test:unit:run": "jest --runInBand",
+    "test:e2e:mobile": "maestro test .maestro"
+  }
+}
+```
+
+Required mobile test dependencies:
+
+```powershell
+cd mobile
+npx expo install jest-expo jest @types/jest "--" --dev
+npx expo install @testing-library/react-native "--" --dev
+npm install --save-dev msw
+```
+
+Required Jest configuration:
+
+- Create `mobile/jest.config.js` and set `preset: "jest-expo"` there.
+- Add `jest` to the `compilerOptions.types` array in `mobile/tsconfig.json`.
+- Keep test files outside `mobile/app`. Expo Router route files live in `mobile/app`; tests live in `mobile/__tests__`.
+- Use `expo-router/testing-library` for route tests that need an in-memory route tree and `initialUrl`.
+
+Required mobile test data strategy:
+
+- Core unit tests import deterministic fixtures from `packages/core/src/__fixtures__/`.
+- Mobile component, route, and Maestro tests import deterministic fixtures from `mobile/__tests__/fixtures/`.
+- Component and route integration tests use MSW handlers that return deterministic `/api/v1/places`, `/api/v1/places/[id]`, and `/api/chat` responses.
+- Maestro E2E builds set `EXPO_PUBLIC_MOBILE_DATA_MODE=fixture` in the EAS `e2e-test` build profile. The mobile app reads bundled fixture data when that value is `fixture`. Maestro tests do not call live Airtable production data.
+- Manual QA and production monitoring are the only places where production Airtable data is used for mobile validation.
+
+Required mobile test coverage:
+
+1. Core unit tests cover filters, match modes, sorting, featured-first ordering, text normalization, operating hours, dynamic tags, place type metadata, highlight descriptors, photo manifest parsing, and API validators.
+2. Shared React state tests cover `FilterProvider`, `openNowCount`, distinct-value caching, reset behavior, and modal surface stack reducer/actions.
+3. Component tests cover PlaceCard, native filter controls, Place Detail content, photo disclosure, Chat prompt/input states, Contribute cards, and offline banner states.
+4. Expo Router integration tests cover tabs, `/places/[id]`, modal photo/chat routes, and deep-link route parsing.
+5. Maestro E2E tests cover app launch, Home rendering, Browse filters, Map marker tap opening Place Detail, Chat prompt submission, Place Detail share/action rendering, Contribute external target selection, offline launch with cached catalog, and reconnect refetch.
+
+Required Maestro files:
+
+```text
+mobile/.maestro/home.yml
+mobile/.maestro/browse-filters.yml
+mobile/.maestro/map-place-open.yml
+mobile/.maestro/chat.yml
+mobile/.maestro/place-detail.yml
+mobile/.maestro/contribute.yml
+mobile/.maestro/offline-cache.yml
+```
+
+EAS Workflows must add a mobile E2E job after the mobile E2E build profile exists. The EAS build profile for E2E creates an Android `.apk` and an iOS simulator `.app` that Maestro can install. The workflow uses Maestro flow paths under `mobile/.maestro/`.
+
+## Native Map Strategy
+
+The native map renderer is `react-native-maps`. The mobile app does not use `expo-maps` for the parity migration.
+
+Current web `PlaceMap.tsx` cannot be exported directly as native code. It depends on `@vis.gl/react-google-maps`, `google.maps.*` types, browser geolocation, DOM marker composition, shadcn buttons, Tailwind DOM classes, and browser events.
+
+Shareable map logic moves to `packages/core`:
+
+- `placeMatchesFilters`
+- `normalizeTextForSearch`
+- `isPlaceOpenNow`
+- `getCharlotteTimeNow`
+- shared place type map colors
+- marker view-model construction: `recordId`, coordinate, title, featured flag, type color, semantic icon key, label text, label eligibility
+- label rules: zoom threshold `12`, max visible labels `30`, label truncation at `20` characters
+- Charlotte center: `{ latitude: 35.23075539296459, longitude: -80.83165532446358 }`
+
+Native map renderer decision:
+
+- Install the Expo-compatible `react-native-maps` package with `npx expo install react-native-maps` from `mobile/`.
+- Reject any resolved `react-native-maps` version below `1.26.1` because Fabric/New Architecture support starts at `1.26.1`.
+- Keep React Native pinned at the current `0.85.3` until an Expo SDK upgrade changes it through the documented Expo upgrade process.
+- Use Apple Maps on iOS through `react-native-maps` platform defaults.
+- Use Google Maps on Android through `react-native-maps` platform defaults.
+- Use `expo-location` for foreground-only location reads.
+
+Decision rationale:
+
+- Current `react-native-maps` upstream documentation and npm package documentation state Fabric/New Architecture support for `react-native-maps` `1.26.1+` with React Native `>= 0.81.1`.
+- The mobile app currently uses React Native `0.85.3`, so the older Reddit thread claiming no New Architecture support is stale for this project.
+- `expo-maps` is first-party, but the Expo docs mark it as alpha.
+- `expo-maps` supports Apple Maps on iOS and Google Maps on Android. It does not support Google Maps on iOS.
+- Expo Maps iOS marker and annotation click callbacks are documented as iOS `18.0+`. The parity requirement needs marker tap-to-open-place across supported iPhones, so that version gate blocks exact parity.
+- Functional parity is the requirement. Base tile parity with the web Google map is not required.
+
+Native map implementation requirements:
+
+1. Add `react-native-maps` with `npx expo install react-native-maps` from `mobile/`.
+2. Add `expo-location` with `npx expo install expo-location` from `mobile/`.
+3. Convert `mobile/app.json` to `mobile/app.config.ts` before adding secret-backed Android map configuration.
+4. Add the iOS foreground location copy through the `expo-location` config plugin.
+5. Read `process.env.GOOGLE_MAPS_API_KEY` in `mobile/app.config.ts` and inject it into Android Google Maps configuration. Do not commit the key.
+6. Do not request location on app launch.
+7. Request foreground location only when the user taps Find Me.
+8. Use `Location.getLastKnownPositionAsync({ maxAge: 300000 })` first for a fast cached response, then use `Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Balanced })` when no suitable cached position exists.
+9. Render markers from the shared marker view-model, not raw `Place` objects inside the native map component.
+10. Use generated image-based marker assets through the `Marker` image prop. Store generated assets under `mobile/assets/map-markers/`. Generate one regular marker asset per semantic place type key plus one featured marker asset. Do not use custom React marker views in the parity implementation.
+11. Marker press calls the shared native modal action to open the place surface.
+12. The Find Me success path sets a user marker, pans to user location, and uses the native equivalent of web zoom `14`.
+13. The map shows labels at zoom `12` and higher, caps labels at `30`, and truncates labels after `20` characters.
+14. Open Now, quick search, and all filter state come from the shared mobile `FilterProvider`, so Browse and Map stay synchronized.
+
+Native marker asset requirements:
+
+- Add `mobile/scripts/generate-map-markers.ts`.
+- The script imports place type metadata from `@charlotte-third-places/core` after core metadata exists.
+- The script writes marker PNGs to `mobile/assets/map-markers/`.
+- File naming pattern: `{iconKey}.png`, `{iconKey}@2x.png`, `{iconKey}@3x.png`.
+- Featured marker naming pattern: `featured.png`, `featured@2x.png`, `featured@3x.png`.
+- The script uses the exact shared marker colors, featured marker color `#f59e0b`, fallback color `#3B82F6`, and the shared 19-color hash fallback.
+- The script fails when two place types resolve to the same `iconKey` and would overwrite the same marker asset.
+
+## Native Icon Strategy
+
+Mobile UI icons use `@expo/vector-icons`, installed from `mobile/` with:
+
+```powershell
+npx expo install @expo/vector-icons
+```
+
+The mobile icon adapter lives in `mobile/lib/icons.tsx` and maps core `iconKey` values to named icons from `@expo/vector-icons` icon families. Feature components import from the mobile icon adapter only. They do not import directly from `@expo/vector-icons`.
+
+The web icon adapter remains `web/components/Icons.tsx`. Core never imports icon components.
+
+Map marker glyphs are generated PNG assets. The map component does not render `@expo/vector-icons` components inside markers during the parity migration.
+
+## Mobile Route Tree
+
+The Expo app uses Expo Router. Routes live in `mobile/app`. Components, hooks, utilities, and feature code do not live in route files.
+
+Required route tree:
+
+```text
+mobile/app/
+  _layout.tsx
+  (tabs)/
+    _layout.tsx
+    index.tsx
+    map.tsx
+    chat.tsx
+    contribute.tsx
+    more.tsx
+  places/
+    [id].tsx
+  modals/
+    photos.tsx
+    chat.tsx
+  +not-found.tsx
+```
+
+Tab mapping:
+
+- `index.tsx`: Home, Random/feed, Browse list.
+- `map.tsx`: Map.
+- `chat.tsx`: AI chat page.
+- `contribute.tsx`: Contribute cards linking to Airtable form URLs.
+- `more.tsx`: About and Legal entry points.
+
+Place detail route:
+
+- `places/[id].tsx`: native place detail screen for deep links and direct navigation.
+
+Modal routes:
+
+- `modals/photos.tsx`: native photos surface.
+- `modals/chat.tsx`: place-scoped chat surface.
+
+## Screen Parity Requirements
+
+### Home
+
+Native Home must reproduce the current `HomePageClient` behavior:
+
+- Load places from the shared query hook backed by `/api/v1/places`.
+- Wrap Home content in the shared `FilterProvider` from `packages/shared-react`.
+- Display total place count.
+- Preserve copy meaning from the web Home page.
+- Preserve AI recommendation CTA behavior by navigating to the native Chat tab.
+- Do not show the web "Get the App" banner in native.
+- Provide four mobile instant actions matching the current web mobile layout: Random, Map, Chat, Browse.
+- Preserve Random/feed behavior using the same exclusion list: `Starbucks`, `Panera`.
+- Render a native Random/feed carousel equivalent to `ResponsivePlaceCards`.
+- Render Browse list below the Random/feed section.
+
+### Browse List
+
+Native Browse must preserve the current `PlaceListWithFilters` and `DataTable` behavior:
+
+- Use the shared `PlacesContext` enriched by `injectDynamicTags`.
+- Use the shared filter contexts.
+- Apply quick search with `normalizeTextForSearch`.
+- Apply `placeMatchesFilters`.
+- Apply Open Now by filtering with `isPlaceOpenNow` using one `getCharlotteTimeNow()` snapshot per operation.
+- Apply `sortPlaces` with featured-first priority.
+- Show Coming Soon count from `operational === 'Coming Soon'`.
+- Show visible result count.
+- Use `FlashList` from `@shopify/flash-list` for native list virtualization. Install it from `mobile/` with `npx expo install @shopify/flash-list`. The virtualized list must keep smooth scrolling with the full current catalog.
+
+Filter fields must match `FILTER_DEFS` exactly:
+
+- `name`: scalar, picker field.
+- `neighborhood`: multi-select scalar, fixed OR mode, picker field.
+- `type`: multi-select array, default OR mode, picker field.
+- `tags`: multi-select array, default AND mode, picker field.
+- `parking`: array, chip field, allowed `Free`, `Paid`.
+- `freeWiFi`: scalar, chip field, allowed `Yes`, `No`.
+- `purchaseRequired`: scalar, chip field.
+- `size`: scalar, chip field, allowed `Small`, `Medium`, `Large`.
+- `hasCinnamonRolls`: scalar, chip field, allowed `Yes`, `No`, `Sometimes`.
+
+### Place Card
+
+Native place cards must preserve visible information and actions from `PlaceCard`:
+
+- Name.
+- Plain-text description preview derived from Airtable markdown.
+- Size tag.
+- Type tags with overflow handling and `+N more` indicator.
+- Neighborhood tag with overflow handling.
+- Highlight badges in the same semantic order.
+- Chat button unless the place is Coming Soon.
+- Photos button only when photos exist.
+- Info button opens place detail.
+- Tapping the card opens place detail.
+
+Native cards use native press handlers, native haptics where appropriate, and shared highlight descriptors. Web JSX and web icon components are not reused.
+
+### Place Detail
+
+Native place detail must preserve the current `PlacePageClient` and `PlaceContent` behavior:
+
+- Enrich a single raw place with `injectDynamicTags([place])[0]`.
+- Display title.
+- Display photo gallery at the top when photos exist.
+- Use display image URLs for main slides.
+- Use thumbnail URLs for filmstrips/rails to keep decoded image memory low.
+- Hide failed images from the visible carousel.
+- Show photo source disclosure text: "Photos come from publicly available sources, the site curator, and users. Use the Contribute page to request a takedown."
+- Show primary action row: Google Maps, Apple Maps, Photos, Website, Share, Ask AI.
+- Google Maps, Apple Maps, Website, and social links open outside the app with native link handling.
+- Share uses native share sheet.
+- Quick facts include address, neighborhood, size, purchase required, parking, free Wi-Fi, cinnamon rolls, operating hours, tags, and social links.
+- Description renders Airtable rich text/markdown as native text.
+- Comments render when non-empty.
+- Metadata displays Added and Last Updated dates.
+- Ask AI opens place-scoped chat using the shared modal surface contract.
+
+### Photos
+
+Native Photos must preserve the current photos behavior:
+
+- Full-screen native surface.
+- Swipe between photos.
+- Use display URLs for active/full-size images.
+- Use thumbnail URLs for preview rails.
+- Exclude failed images after image load failure.
+- Preserve photo source disclosure.
+- Back closes Photos and returns to the place surface underneath.
+
+### Map
+
+Native Map must preserve `PlaceMap` behavior:
+
+- Default center: Charlotte city center `{ lat: 35.23075539296459, lng: -80.83165532446358 }`.
+- Default zoom equivalent: web zoom 11.
+- Show markers only for places with valid non-zero latitude and longitude.
+- Use shared place type map colors.
+- Featured places use featured marker treatment.
+- Marker tap opens place surface.
+- Open Now toggle filters markers using shared hours logic.
+- Find Me requests foreground location permission only from the user action, not on app launch.
+- Successful location sets user marker, pans map to the user, and uses zoom equivalent to web zoom 14.
+- Location failure shows a native error state explaining that location access is required.
+- Web zoom-dependent labels are reproduced using native marker labels. Native implementation must cap visible labels at 30 and only show labels when zoom is greater than or equal to the native equivalent of web zoom 12.
+
+### Chat
+
+Native Chat must preserve `ChatContent` behavior:
+
+- General page chat uses `/api/chat`.
+- Place-scoped chat sends the place context to `/api/chat`.
+- Starter prompts on the Chat page:
+  - "What are some good spots for groups?"
+  - "What places are great for remote work?"
+  - "What are some hidden gem third places?"
+  - "Where can I find a quiet spot to read with a view?"
+- Place prompts:
+  - "How's access to outlets and Wi-Fi?"
+  - "What's the vibe and aesthetic like here?"
+  - "What are some fun facts about this place?"
+  - "What are the best times to visit to avoid crowds?"
+- Initial message support is preserved.
+- Clear history is preserved.
+- Stop streaming is preserved.
+- Copy message is preserved through native clipboard.
+- Internal `/places/{id}` links in AI responses are intercepted. They open a native place surface above the chat instead of replacing the chat route.
+- Links to the same place currently being discussed render as non-clickable emphasis text.
+- Failed place link resolution appends an assistant error message instead of destroying the chat session.
+
+### Contribute
+
+The current web Contribute page shows three cards and opens Airtable form URLs. Native must implement the same three cards as native UI and open the same URLs with `expo-web-browser` or the platform browser. It must not embed the forms in a WebView.
+
+Required cards:
+
+1. Title: `Suggest a New Place`
+   - Description: `Know a great third place in Charlotte that's not listed? Suggest it here and help others discover new spots!`
+   - URL: `https://airtable.com/embed/apptV6h58vA4jhWFg/pag4ZYWhjh1Ua96ul/form`
+   - Button: `Submit Suggestion`
+2. Title: `Enhance an Existing Place`
+   - Description: `Have updates, corrections, or more details about a place already listed? Submit your enhancements to keep info fresh.`
+   - URL: `https://airtable.com/embed/apptV6h58vA4jhWFg/pagu6cjLrQKhXBnvS/form`
+   - Button: `Submit Update`
+3. Title: `Contact the Site Creator`
+   - Description: `Questions, feedback, or want to get in touch? Use this form to contact the creator directly.`
+   - URL: `https://airtable.com/embed/apptV6h58vA4jhWFg/pagLva6jz6obzayaT/form`
+   - Button: `Send Message`
+
+### About And Legal
+
+Native app parity requires About and Legal access from the More tab.
+
+Implementation decision:
+
+- More renders native list rows for About and Legal.
+- Selecting About opens the platform browser route to the web About page. The current public website owns SEO/legal content and there is no account-specific native legal requirement in the current app.
+- Selecting Legal opens the platform browser route to the web Legal page.
+- No WebView is used.
 
 ## React Native New Architecture
 
-React Native's New Architecture is the modern internal runtime foundation for React Native. It is not a visual design system and it does not automatically make an app fast.
-
-It matters because it removes older architectural bottlenecks and gives the app better primitives for high-polish native experiences.
+React Native New Architecture stays enabled.
 
 Important pieces:
 
-- Fabric: the newer native renderer for React Native views.
-- TurboModules: the newer system for native modules, including lazy loading and better JS/native contracts.
+- Fabric: native renderer for React Native views.
+- TurboModules: native module system with lazy loading and typed contracts.
 - Codegen: generated typed bindings between JavaScript/TypeScript and native code.
-- JSI: JavaScript Interface, which lets JavaScript and native/C++ objects communicate without the old serialized bridge cost.
-- Concurrent React support: support for modern React scheduling features, automatic batching, transitions, Suspense-compatible patterns, and more responsive update prioritization.
+- JSI: direct JavaScript/native interface without the old serialized bridge cost.
+- Concurrent React support: modern scheduling, transitions, automatic batching, and responsive update prioritization.
 
-Practical expectations:
+New Architecture is not a performance guarantee. It is the runtime foundation. The app still needs native list virtualization, careful image usage, minimal render churn, and real-device testing.
 
-- Use an Expo/React Native version where the New Architecture is supported and enabled.
-- Do not opt out unless a critical dependency blocks the app and no replacement exists.
-- Choose libraries that are compatible with the New Architecture.
-- Treat bridge-only or poorly maintained native libraries as architecture risks.
-- Profile on real iPhones, not only simulators.
-- Still design screens carefully. New Architecture enables better performance patterns, but it does not replace disciplined implementation.
+## Native Modules And Native Code
 
-## Native Code And Native Modules
+Native code is allowed when it is the correct tool. Use Expo config plugins, Expo Modules, or maintained Expo/community modules for native capabilities.
 
-React Native does not mean avoiding native code forever. Native escape hatches are expected.
+Native modules are allowed for:
 
-Shopify's five-year React Native review is especially relevant here: React Native apps can be fast, TypeScript creates leverage, shared foundations matter, and native code is still crucial. Their framing is the right one for this project: think native and React Native, not native or React Native.
+- maps
+- location
+- image caching
+- share sheet
+- browser handoff
+- secure storage after auth exists
+- push notifications after push exists
+- purchases after billing exists
+- app intents, widgets, Live Activities, or background work after those features exist
 
-Use native modules or Expo config/plugins when the platform is the right tool for:
+The parity migration does not add push, purchases, auth, accounts, lists, or billing.
 
-- push notifications
-- purchases and subscriptions
-- app intents and shortcuts
-- widgets or Live Activities later
-- background work
-- secure storage
-- deep links and universal links
-- camera/media work if it becomes performance-sensitive
-- platform-specific release, signing, and store requirements
+## Future-Only Features
 
-The anti-goal is not native code. The anti-goal is WebView pretending to be native for the core app experience.
+The following areas are architecturally planned but are not part of the current parity migration:
 
-## Data And API Boundary
-
-The Expo app should not talk directly to Airtable, PostgreSQL, Cosmos DB, or any secret-backed server resource.
-
-The backend/API layer should expose typed, mobile-safe endpoints for:
-
-- catalog sync
-- place details
-- auth/session
-- current user
-- lists
-- list entries
+- user accounts
+- authentication
 - saved places
-- share links
-- reports and moderation flows
-- featured lists
-- account export
+- user-created lists
+- list sharing and moderation
 - account deletion
-- push token registration
-- future credits/wallet/entitlements
+- push notifications
+- purchases
+- credits
+- subscriptions
+- RevenueCat
+- StoreKit/Google Play Billing
+- local relational SQLite tables
+- Drizzle ORM
 
-`packages/core` defines the contracts and schemas. The Next.js app or another backend service implements server-side behavior. The Expo app consumes those APIs.
+When those features start, they must be designed against shared contracts in `packages/core` and separate web/native clients. They must not be bolted onto the current PWA wrapper as the long-term path.
 
-## Auth And Account State
+## Implementation Order
 
-The native app must prove auth early, before account-heavy features are deeply built.
-
-Required proof points:
-
-- sign in on real iOS hardware
-- callback/deep-link handling
-- secure token or session storage
-- session refresh
-- sign out
-- account deletion
-- local state clearing after sign out or deletion
-- web and mobile user identity matching the same backend user
-
-WorkOS/AuthKit may remain the right auth provider, but it must be validated against native mobile flows rather than assumed from the web plan.
-
-## Lists, Sharing, And Social Surfaces
-
-The planned user-lists work should be reframed as shared backend contracts plus separate web and native clients.
-
-Core/shared:
-
-- list types
-- visibility rules
-- list item schemas
-- share token schemas
-- report payload schemas
-- permission helpers
-- mutation contracts
-
-Web-specific:
-
-- public share pages
-- SEO for featured/public lists
-- web admin tools
-- web forms and dialogs
-
-Mobile-specific:
-
-- native list screens
-- native save-to-list flow
-- native reorder and edit interactions
-- native share sheet
-- native report/block flows
-- native offline read behavior
-- native deep links into lists and places
-
-## Billing, Credits, And Entitlements
-
-If credits, boosts, subscriptions, paid tiers, or other paid digital functionality unlock value inside the mobile app, the architecture must be app-store-native from the beginning.
-
-Expected direction:
-
-- StoreKit on iOS
-- Google Play Billing on Android
-- RevenueCat or equivalent to unify purchases and entitlements
-- shared entitlement state in the backend
-- shared entitlement types and business rules in `packages/core`
-- web billing handled separately but mapped to the same backend entitlement model
-
-Do not build a web-only credit model that later has to be patched into IAP rules.
-
-## Current PWA/WKWebView/TWA Apps
-
-The current PWABuilder iOS app and Android TWA are interim distribution channels.
-
-They are useful because the app already ships today. They can remain available while the native app is rebuilt properly. They should not receive major new user-owned workflows unless those workflows are built against shared backend/core contracts that the native app will also consume.
-
-The older PWA performance work still has value for:
-
-- today's shipped app
-- the public website
-- catalog generation
-- local/offline web behavior
-- repeat launch stability
-- reusable schema and catalog contracts
-
-But it is no longer the final mobile app strategy.
-
-## Near-Term Implementation Order
-
-This plan should be implemented in deliberate slices.
-
-1. Add workspace/package structure for `packages/core`.
-2. Move shared `Place` and catalog types into core.
-3. Add Zod schemas for place catalog payloads and API envelopes.
-4. Split pure place mappers/filtering/sorting helpers into core while keeping server-only data access in Next.js.
-5. Wire the Next.js app to consume core without changing user-facing web UI.
-6. Scaffold the Expo/React Native mobile app with New Architecture enabled.
-7. Add native navigation, native app shell, and a minimal native Home/Random screen.
-8. Add catalog sync from typed backend/core contracts.
-9. Add native Place detail screen or sheet.
-10. Add auth proof on real iOS hardware.
-11. Add one authenticated Save-to-List vertical slice.
-12. Expand native screens for Browse, Map, Chat, Lists, Settings, and account flows.
-13. Add push-token registration and notification handling.
-14. Add purchase sandbox flow before any paid credits/subscriptions ship.
-15. Replace store binaries only after parity and real-device verification.
-
-## First Native Vertical Slice
-
-The first Expo slice should be small but real. It should prove the architecture, not just render a demo screen.
-
-Target slice:
-
-- app boots on a physical iPhone
-- New Architecture is enabled
-- app imports `packages/core`
-- app fetches or loads a catalog using core schemas
-- Home/Random renders as native RN views
-- Place detail opens through native navigation or a native sheet
-- native scroll and gestures feel correct
-- one auth flow works on device
-- one Save-to-List mutation works against the shared backend contract
-- sign out clears local mobile state
-
-This slice is the proof that the shared-core/native-views boundary works.
+1. Create the repo-root private npm workspace `package.json` with workspaces `web`, `mobile`, and `packages/*`.
+2. Create `packages/core` and `packages/shared-react` with their own package files.
+3. Move platform-free types into `packages/core`.
+4. Move filter definitions, predicates, sort logic, text normalization, and operating-hours logic into `packages/core`.
+5. Add Zod runtime validators at data/API boundaries only.
+6. Split place type config into core metadata and web/native icon adapters.
+7. Split place highlights into core rules and web/native render adapters.
+8. Move FilterContext into `packages/shared-react`.
+9. Extract modal surface stack contract into shared code and keep platform providers separate.
+10. Update the existing Next.js app imports so all current web tests and behavior continue to pass.
+11. Preserve existing `/api/places`, `/api/places/[id]`, and `/api/chat` compatibility behavior.
+12. Add `/api/v1/places` and `/api/v1/places/[id]` typed envelope endpoints for mobile.
+13. Configure mobile NativeWind v5, React Native Reusables, local fonts, tokens, and shared icon adapters.
+14. Prepare mobile font assets from `fonts/Inter-4.1.zip`, `fonts/IBM_Plex_Sans.zip`, and `fonts/IBM_Plex_Sans,JetBrains_Mono.zip`.
+15. Configure TanStack Query with persisted cache using `expo-sqlite/kv-store`.
+16. Configure Jest, `jest-expo`, React Native Testing Library, Expo Router testing utilities, MSW, and Maestro.
+17. Convert `mobile/app.json` to `mobile/app.config.ts` and configure `GOOGLE_MAPS_API_KEY`, Associated Domains, `react-native-maps`, `expo-location`, and the shared map marker view-model.
+18. Generate native map marker assets.
+19. Replace Expo starter screens with the required `mobile/app` route tree.
+20. Implement Home, Browse, and Place Card parity.
+21. Implement Place Detail and Photos parity.
+22. Implement Map parity with `react-native-maps`.
+23. Implement Chat parity.
+24. Implement Contribute, More, About, and Legal access parity.
+25. Validate offline cold launch after one successful online launch.
+26. Validate mobile unit, integration, router, and Maestro E2E tests.
+27. Validate on a physical iPhone development build.
+28. Validate Android after iOS parity is stable.
+29. Update the repository instruction files listed in Repository Instruction Updates to match the new folder layout and the new mobile architecture.
 
 ## Verification Gates
 
@@ -425,10 +1330,23 @@ Fail the gate if core imports:
 - Expo
 - React Native
 - Tailwind/shadcn
-- browser storage APIs directly
-- native storage APIs directly
+- icon components
+- browser storage APIs
+- native storage APIs
 - direct database clients
 - server secrets
+
+Required tests:
+
+- filters and match modes
+- sort behavior and featured-first ordering
+- quick search normalization
+- operating-hours parsing
+- dynamic tag injection
+- place photo manifest parsing
+- place type metadata lookup
+- highlight descriptor ordering
+- API response validation
 
 ### Web Gate
 
@@ -438,13 +1356,15 @@ The Next.js app must continue to serve:
 - place pages
 - map page
 - chat page
-- share links
-- SEO metadata
+- contribute page
+- about page
+- legal page
+- places API routes
+- chat API route
 - sitemap and robots
-- legal pages
-- admin workflows
+- existing PWA/offline behavior
 
-The web app may import core, but its UI remains React DOM/Tailwind/shadcn.
+Existing web tests for filters, operating hours, modal context, place cards, and performance must pass after shared-code extraction.
 
 ### Mobile Gate
 
@@ -456,62 +1376,135 @@ Fail the gate if final mobile flows use:
 - `use dom`
 - Expo DOM Components
 - embedded Next.js pages for primary app screens
+- direct Airtable access
+- direct Cosmos DB access
+- direct Azure OpenAI access from the client
+
+### Mobile Testing Gate
+
+The mobile app must define these scripts in `mobile/package.json`:
+
+- `npm run test:unit`
+- `npm run test:unit:run`
+- `npm run test:e2e:mobile`
+
+Required test suites:
+
+- Jest core tests for shared filters, sorting, hours, dynamic tags, place metadata, highlights, and API validators.
+- React Native Testing Library component tests for PlaceCard, filter controls, Place Detail, Chat prompt states, Contribute cards, and offline banner states.
+- Expo Router integration tests for tab routes, `/places/[id]`, modal routes, and deep-link route parsing.
+- MSW-backed API integration tests for `/api/v1/places`, `/api/v1/places/[id]`, and `/api/chat` client behavior.
+- Maestro flows in `mobile/.maestro/` for launch, Browse filters, Map marker-to-place, Chat, Place Detail, Contribute, and offline cache behavior.
+
+Mobile automated tests use deterministic fixtures. They do not call live Airtable production data.
+
+### Repository Instruction Gate
+
+After the folder rename and the shared-package extraction land, the repository instruction files must describe the new reality. Fail the gate if any instruction file still points at the old nested `charlotte-third-places/` app path, or if the mobile instruction file does not mention the shared packages, the mobile testing stack, and the native map stack.
+
+### Native Map Gate
+
+The mobile app must use `react-native-maps` and `expo-location` for the parity migration.
+
+Fail the gate if the implementation:
+
+- uses `expo-maps` for the parity migration
+- uses Google Maps on iOS for tile parity
+- requests location on app launch
+- builds markers directly from raw `Place` objects inside the map component
+- keeps map filters separate from Browse filters
+- renders labels beyond the shared cap of `30`
+- renders labels before zoom `12`
+- uploads a build where marker tap does not open the native place surface
 
 ### Real iOS Gate
 
-Test on physical iPhones for:
+Test on a physical iPhone for:
 
 - cold launch
 - repeat launch
+- Metro connection in development build
 - foreground/background restore
-- native stack transitions
 - tabs
-- sheets/modals
-- scroll performance
-- list virtualization
-- image loading
-- deep links
-- auth callback
-- session persistence
-- sign out
-- account deletion
+- native stack transitions
+- native modal/sheet transitions
+- Browse virtualization
+- Random/feed carousel
+- image loading and failed-image handling
+- place detail
+- photos
+- map markers
+- Find Me permission flow
+- marker tap opens native place detail
+- map zoom and pan remain smooth with 30 visible labels
+- Apple Maps base tiles render on iOS through `react-native-maps`
 - share sheet
+- chat streaming
+- internal chat place links
+- external links
+- Maestro E2E flow passes on the iOS development build
 - offline repeat launch
-- push token registration
-- purchase sandbox flow when billing exists
+- reconnect refetch
 
-### Store Policy Gate
+### Offline Gate
 
-Before release, validate:
+1. Launch online.
+2. Load catalog successfully.
+3. Open at least one place detail.
+4. Quit the app.
+5. Enable airplane mode.
+6. Relaunch.
+7. Confirm cached catalog renders.
+8. Confirm filters/search/sort work against cached data.
+9. Confirm cached place detail opens.
+10. Confirm app displays offline state.
+11. Disable airplane mode.
+12. Confirm stale catalog refetches without clearing visible cached data.
 
-- App Store account deletion requirement
-- App Store UGC report/block/contact/moderation requirements if public user content ships
-- social login equivalency requirements if third-party/social login is used
-- StoreKit requirements for paid digital features
-- Google Play Billing requirements for paid digital features
-- privacy policy and data deletion language
-- reviewer demo account or demo mode
+## Repository Instruction Updates
 
-## Non-Goals
+The folder rename and the monorepo extraction change facts that the `.github` instruction and agent files assert. Those files must be updated in the same effort so future agent runs are not misled. The implementing agent updates exactly the files below and changes only the facts named. It does not rewrite unrelated guidance.
 
-- No WebView final mobile app.
-- No Expo DOM Components in mobile interactive surfaces.
-- No `use dom` in the mobile app.
-- No shared rendering layer across web and mobile.
-- No React Native Web rewrite of the public website.
-- No Capacitor or NextNative migration as the final architecture.
-- No direct mobile access to Airtable, PostgreSQL, Cosmos DB, or server secrets.
-- No payment architecture that ignores StoreKit or Google Play Billing for in-app digital value.
-- No major new account/list/payment workflow coupled only to the current PWABuilder wrapper.
+### `.github/copilot-instructions.md`
+
+- Keep the directory-structure section aligned with the current layout: `web/` is the Next.js app, `packages/core/` is platform-free TypeScript, `packages/shared-react/` is React-only shared state, and `mobile/` is the Expo app.
+- Update the Key Files paths so `lib/data-services.ts`, `lib/types.ts`, `lib/utils.ts`, `styles/globals.css`, and `components.json` are listed under `web/`, and note that types, filters, operating-hours, text utilities, place metadata, and highlight rules now live in `packages/core`.
+- Update the Data Flow line so it no longer implies time-based ISR; static `/api/places` output is rebuilt through `/api/revalidate`.
+- Add a short statement that the mobile app is a true Expo/React Native app that imports shared logic from `packages/core` and `packages/shared-react` and never accesses Airtable, Cosmos, or Azure OpenAI directly.
+
+### `.github/instructions/theme-color-sync.instructions.md`
+
+- Update the `applyTo` frontmatter so the web paths are rooted at `web/` instead of `charlotte-third-places/`: `web/components/ThemeColorSync.tsx`, `web/styles/globals.css`, `web/app/manifest.webmanifest`, `web/app/layout.tsx`. Keep the two iOS storyboard paths unchanged.
+- Update any in-body references to `globals.css`, `ThemeColorSync.tsx`, `layout.tsx`, and `manifest.webmanifest` so they resolve under `web/`.
+
+### `.github/agents/place-types-specialist.md`
+
+- Keep referenced paths pointed at `web/lib/place-type-config.ts` and `web/components/Icons.tsx`.
+- Add a note that place type `mapColor`/`emoji`/`iconKey` metadata now lives in `packages/core`, while the React `icon` mapping stays in `web/components/Icons.tsx` and the native icon adapter lives in `mobile`.
+
+### `.github/instructions/mobile.instructions.md`
+
+- Add that mobile feature code imports shared domain logic from `packages/core` (no React) and shared state from `packages/shared-react`, and must not duplicate filters, sorting, operating-hours, or place metadata logic.
+- Add that the mobile testing stack is Jest with `jest-expo`, React Native Testing Library, the Expo Router testing utilities, MSW for API mocks, and Maestro for E2E, and that the test scripts are `test:unit`, `test:unit:run`, and `test:e2e:mobile`.
+- Add that native maps use `react-native-maps` (Apple Maps on iOS, Google Maps on Android) with `expo-location` for foreground-only Find Me, and that `expo-maps` is not used for the parity migration.
+- Add that mobile never imports `@azure/cosmos`, `@ai-sdk/azure`, `lib/ai/*`, or any AI secret, and reaches AI only through the web-hosted `/api/chat` endpoint.
 
 ## Sources And Rationale
 
-- Shopify Engineering, "Five years of React Native at Shopify": React Native apps can be fast, TypeScript unlocks portability, native expertise still matters, native code remains crucial, and shared foundations create leverage. https://shopify.engineering/five-years-of-react-native-at-shopify
-- Shopify Engineering, "React Native is the Future of Mobile at Shopify": strategic rationale for React Native as a serious mobile platform. https://shopify.engineering/react-native-future-mobile-shopify
-- React Native, "About the New Architecture": explains Fabric, TurboModules, JSI, synchronous layout/effects, concurrent renderer support, and what enabling New Architecture does and does not guarantee. https://reactnative.dev/architecture/landing-page
-- Expo Router docs: native app routing and deep-link-oriented app structure. https://docs.expo.dev/router/introduction/
-- React Navigation native stack docs: native stack behavior through platform-native navigation primitives. https://reactnavigation.org/docs/native-stack-navigator/
-- React Native Screens docs: native screen primitives used by navigation. https://docs.swmansion.com/react-native-screens/
-- Apple App Store Review Guidelines: app-like functionality, WebKit requirement for web browsing apps, account deletion, UGC, login, and in-app purchase constraints. https://developer.apple.com/app-store/review/guidelines/
-- Google Play Billing docs: Play Billing requirements and backend entitlement considerations for Android digital goods. https://developer.android.com/google/play/billing
-- RevenueCat React Native docs: native mobile purchase integration path for shared entitlements. https://www.revenuecat.com/docs/getting-started/installation/reactnative
+- Expo SQLite docs: persistent local SQL database, key-value storage, SQLCipher, FTS, Drizzle integration. <https://docs.expo.dev/versions/latest/sdk/sqlite/>
+- TanStack Query docs: server-state fetching, caching, synchronization, retries, stale/fresh state, persistence. <https://tanstack.com/query/latest/docs/framework/react/overview>
+- TanStack Query AsyncStorage persister docs. <https://tanstack.com/query/latest/docs/framework/react/plugins/createAsyncStoragePersister>
+- Drizzle ORM overview and Expo SQLite integration. <https://orm.drizzle.team/docs/overview>, <https://orm.drizzle.team/docs/connect-expo-sqlite>
+- NativeWind docs: Tailwind CSS styling workflow for React Native. <https://www.nativewind.dev/>
+- React Native Reusables docs: shadcn/ui-style component layer for React Native. <https://reactnativereusables.com/>
+- Expo unit testing docs: Jest and `jest-expo` setup. <https://docs.expo.dev/develop/unit-testing/>
+- Expo Router testing docs: `expo-router/testing-library`. <https://docs.expo.dev/router/reference/testing/>
+- Expo EAS Workflows Maestro E2E docs. <https://docs.expo.dev/eas/workflows/examples/e2e-tests/>
+- Maestro docs: mobile E2E flow automation. <https://docs.maestro.dev/>
+- React Native Maps docs and package metadata. <https://github.com/react-native-maps/react-native-maps>, <https://www.npmjs.com/package/react-native-maps>
+- Expo Maps docs: alpha status and platform map support. <https://docs.expo.dev/versions/latest/sdk/maps/>
+- Expo Location docs: foreground location permission and current-position APIs. <https://docs.expo.dev/versions/latest/sdk/location/>
+- React Native New Architecture docs. <https://reactnative.dev/architecture/landing-page>
+- Expo Router docs. <https://docs.expo.dev/router/introduction/>
+- Shopify Engineering, "Five years of React Native at Shopify." <https://shopify.engineering/five-years-of-react-native-at-shopify>
+- Shopify Engineering, "React Native is the Future of Mobile at Shopify." <https://shopify.engineering/react-native-future-mobile-shopify>

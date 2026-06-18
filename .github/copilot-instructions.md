@@ -12,23 +12,23 @@
 
 ### Directory Structure
 
-* `/charlotte-third-places/` - Main Next.js application directory
-* `/app/` - Next.js App Router pages and API routes
-* `/components/` - Reusable React components (UI and business logic)
-* `/components/ui/` - shadcn/ui components
-* `/lib/` - Utility functions, types, and data services
-* `/contexts/` - React context providers
-* `/hooks/` - Custom React hooks
-* `/public/` - Static assets
-* `/styles/` - Global CSS and Tailwind configurations
+* `/web/` - Main Next.js application directory
+* `/web/app/` - Next.js App Router pages and API routes
+* `/web/components/` - Reusable React components (UI and business logic)
+* `/web/components/ui/` - shadcn/ui components
+* `/web/lib/` - Utility functions, types, and data services
+* `/web/contexts/` - React context providers
+* `/web/hooks/` - Custom React hooks
+* `/web/public/` - Static assets
+* `/web/styles/` - Global CSS and Tailwind configurations
 
 ### Key Files
 
-* `lib/data-services.ts` - Handles data fetching from Airtable or local CSV
-* `lib/types.ts` - TypeScript type definitions for Place and other data structures
-* `lib/utils.ts` - Utility functions (includes shadcn/ui cn helper)
-* `styles/globals.css` - Tailwind CSS v4 configuration (CSS-first approach)
-* `components.json` - shadcn/ui configuration
+* `web/lib/data-services.ts` - Handles data fetching from Airtable or local CSV
+* `web/lib/types.ts` - TypeScript type definitions for Place and other data structures
+* `web/lib/utils.ts` - Utility functions (includes shadcn/ui cn helper)
+* `web/styles/globals.css` - Tailwind CSS v4 configuration (CSS-first approach)
+* `web/components.json` - shadcn/ui configuration
 
 ### Data Flow
 
@@ -139,4 +139,4 @@
 
 * **Development server**: You do not need to run `npm run dev` after changes - the user handles this
 * **Production builds**: Never run `npm run build`, `npx next build`, `next build`, or any other production build command when working locally unless the user explicitly asks for a production build for that task
-* **Working directory**: Always work from the `charlotte-third-places` subdirectory for npm commands
+* **Working directory**: Always work from the `web` subdirectory for web npm commands

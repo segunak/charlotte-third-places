@@ -1244,7 +1244,7 @@ Do not create:
 
 ## Testing Strategy
 
-Use the repo's existing commands from `charlotte-third-places/charlotte-third-places`:
+Use the repo's existing commands from `charlotte-third-places/web`:
 
 | Command | Purpose |
 | --- | --- |
