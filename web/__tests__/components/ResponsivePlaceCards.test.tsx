@@ -17,10 +17,9 @@
  * - Performance isolation (filter context only consumed by mobile child)
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen } from '@testing-library/react'
 import { Place } from '@/lib/types'
-import React from 'react'
+import { render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Helper to create mock places
 const createMockPlace = (name: string, idx: number): Place => ({
@@ -53,7 +52,7 @@ const createMockPlace = (name: string, idx: number): Place => ({
   appleMapsProfileURL: '',
   photos: [],
   comments: '',
-  operatingHours: [],
+  hours: [],
   createdDate: new Date('2024-01-01'),
   lastModifiedDate: new Date('2024-01-01'),
 })

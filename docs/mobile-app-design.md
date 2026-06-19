@@ -310,7 +310,7 @@ Every symbol, constant, and behavior below was read from the current `charlotte-
 ### `lib/types.ts`
 
 - `PlacePhoto` = `{ display: string; thumbnail: string }`.
-- `Place` has exactly these fields: `recordId`, `name`, `operational`, `type: string[]`, `size`, `tags: string[]`, `neighborhood`, `address`, `purchaseRequired`, `parking: string[]`, `freeWiFi`, `hasCinnamonRolls`, `hasReviews`, `featured: boolean`, `description`, `website`, `tiktok`, `instagram`, `youtube`, `facebook`, `twitter`, `linkedIn`, `googleMapsPlaceId`, `googleMapsProfileURL`, `appleMapsProfileURL`, `photos: PlacePhoto[]`, `comments`, `operatingHours: string[]`, `latitude: number`, `longitude: number`, `createdDate: Date`, `lastModifiedDate: Date`.
+- `Place` has exactly these fields: `recordId`, `name`, `operational`, `type: string[]`, `size`, `tags: string[]`, `neighborhood`, `address`, `purchaseRequired`, `parking: string[]`, `freeWiFi`, `hasCinnamonRolls`, `hasReviews`, `featured: boolean`, `description`, `website`, `tiktok`, `instagram`, `youtube`, `facebook`, `twitter`, `linkedIn`, `googleMapsPlaceId`, `googleMapsProfileURL`, `appleMapsProfileURL`, `photos: PlacePhoto[]`, `comments`, `hours: string[]`, `latitude: number`, `longitude: number`, `createdDate: Date`, `lastModifiedDate: Date`.
 - `PlaceDocument` and `ChunkDocument` are Cosmos-shaped types with optional `embedding?: number[]` and `similarityScore?: number`. They are server/AI types. They are moved to `packages/core` as types only; mobile never instantiates them.
 - `SortField` enum: `Name`, `DateAdded`, `LastModified`. `SortDirection` enum: `Ascending`, `Descending`. `SortOption` = `{ field: SortField; direction: SortDirection }`. `DEFAULT_SORT_OPTION` = `{ field: SortField.DateAdded, direction: SortDirection.Descending }`.
 
@@ -322,7 +322,7 @@ Every symbol, constant, and behavior below was read from the current `charlotte-
 - Functions to move unchanged: `placeMatchesFilters(place: Place, filters: FilterConfig): boolean`, `filterPlaces(places: Place[], filters: FilterConfig): Place[]`, `sortPlaces(places: Place[], sortOption: SortOption): Place[]`.
 - Also export from this module and move: `FilterValueType`, `MatchMode`, `FilterOption`, `FilterDefinition`, `FilterKey`, `FilterConfig`, `DEFAULT_FILTER_CONFIG`, `FILTER_DEFINITION_MAP`, `MOBILE_PICKER_FIELDS`, `MOBILE_CHIP_FIELDS`, `DESKTOP_PICKER_FIELDS`, `MULTI_SELECT_FIELDS`, `SortDefinition`.
 
-### `lib/operating-hours.ts`
+### `lib/hours.ts`
 
 - Constants: `CHARLOTTE_TIMEZONE = "America/New_York"`, `OPEN_LATE_THRESHOLD_HOUR = 22`, `OPEN_EARLY_THRESHOLD_HOUR = 7`, `OPENING_OR_CLOSING_SOON_MINUTES = 60`, and `DAYS` Sunday-first.
 - It uses native `Intl.DateTimeFormat` only. It does not import `date-fns`. It has no DOM usage.
@@ -450,7 +450,7 @@ charlotte-third-places/
           predicates.ts
           sorting.ts
         hours/
-          operating-hours.ts
+          hours.ts
         api/
           contracts.ts
           client.ts
@@ -525,7 +525,7 @@ Move these current concepts into `packages/core`:
 
 - From `web/lib/types.ts`: `PlacePhoto`, `Place`, `PlaceDocument`, `ChunkDocument`, `SortField`, `SortDirection`, `SortOption`, `DEFAULT_SORT_OPTION`.
 - From `web/lib/filters.ts`: `FILTER_SENTINEL`, `FilterValueType`, `MatchMode`, `FilterOption`, `FilterDefinition`, `FILTER_DEFS`, `FilterKey`, `FilterConfig`, `DEFAULT_FILTER_CONFIG`, `FILTER_DEFINITION_MAP`, `MOBILE_PICKER_FIELDS`, `MOBILE_CHIP_FIELDS`, `DESKTOP_PICKER_FIELDS`, `MULTI_SELECT_FIELDS`, `SORT_DEFS`, `SORT_USES_MOBILE_PICKER`, `placeMatchesFilters`, `filterPlaces`, `sortPlaces`.
-- From `web/lib/operating-hours.ts`: `CharlotteTime`, `HoursStatus`, `getCharlotteTimeNow`, `getHoursStatus`, `isPlaceOpenNow`, `injectDynamicTags`, `isOpenLate`, `isOpenEarly`, parsing helpers, Charlotte timezone constants, dynamic tag thresholds.
+- From `web/lib/hours.ts`: `CharlotteTime`, `HoursStatus`, `getCharlotteTimeNow`, `getHoursStatus`, `isPlaceOpenNow`, `injectDynamicTags`, `isOpenLate`, `isOpenEarly`, parsing helpers, Charlotte timezone constants, dynamic tag thresholds.
 - From `web/lib/utils.ts`: `normalizeTextForSearch`, `shuffleArray`, `shuffleArrayNoAdjacentDuplicates`.
 - From `web/lib/data-services.ts`: `parsePlacePhotoManifests(value)` after removing server imports.
 - From `web/lib/place-type-config.ts`: place type labels, emoji values, marker colors, semantic icon keys, fallback marker metadata.
@@ -933,7 +933,7 @@ Required mobile test data strategy:
 
 Required mobile test coverage:
 
-1. Core unit tests cover filters, match modes, sorting, featured-first ordering, text normalization, operating hours, dynamic tags, place type metadata, highlight descriptors, photo manifest parsing, and API validators.
+1. Core unit tests cover filters, match modes, sorting, featured-first ordering, text normalization, hours, dynamic tags, place type metadata, highlight descriptors, photo manifest parsing, and API validators.
 2. Shared React state tests cover `FilterProvider`, `openNowCount`, distinct-value caching, reset behavior, and modal surface stack reducer/actions.
 3. Component tests cover PlaceCard, native filter controls, Place Detail content, photo disclosure, Chat prompt/input states, Contribute cards, and offline banner states.
 4. Expo Router integration tests cover tabs, `/places/[id]`, modal photo/chat routes, and deep-link route parsing.
@@ -1144,7 +1144,7 @@ Native place detail must preserve the current `PlacePageClient` and `PlaceConten
 - Show primary action row: Google Maps, Apple Maps, Photos, Website, Share, Ask AI.
 - Google Maps, Apple Maps, Website, and social links open outside the app with native link handling.
 - Share uses native share sheet.
-- Quick facts include address, neighborhood, size, purchase required, parking, free Wi-Fi, cinnamon rolls, operating hours, tags, and social links.
+- Quick facts include address, neighborhood, size, purchase required, parking, free Wi-Fi, cinnamon rolls, hours, tags, and social links.
 - Description renders Airtable rich text/markdown as native text.
 - Comments render when non-empty.
 - Metadata displays Added and Last Updated dates.
@@ -1290,7 +1290,7 @@ When those features start, they must be designed against shared contracts in `pa
 1. Create the repo-root private npm workspace `package.json` with workspaces `web`, `mobile`, and `packages/*`.
 2. Create `packages/core` and `packages/shared-react` with their own package files.
 3. Move platform-free types into `packages/core`.
-4. Move filter definitions, predicates, sort logic, text normalization, and operating-hours logic into `packages/core`.
+4. Move filter definitions, predicates, sort logic, text normalization, and hours logic into `packages/core`.
 5. Add Zod runtime validators at data/API boundaries only.
 6. Split place type config into core metadata and web/native icon adapters.
 7. Split place highlights into core rules and web/native render adapters.
@@ -1341,7 +1341,7 @@ Required tests:
 - filters and match modes
 - sort behavior and featured-first ordering
 - quick search normalization
-- operating-hours parsing
+- hours parsing
 - dynamic tag injection
 - place photo manifest parsing
 - place type metadata lookup
@@ -1364,7 +1364,7 @@ The Next.js app must continue to serve:
 - sitemap and robots
 - existing PWA/offline behavior
 
-Existing web tests for filters, operating hours, modal context, place cards, and performance must pass after shared-code extraction.
+Existing web tests for filters, hours, modal context, place cards, and performance must pass after shared-code extraction.
 
 ### Mobile Gate
 
@@ -1468,7 +1468,7 @@ The folder rename and the monorepo extraction change facts that the `.github` in
 ### `.github/copilot-instructions.md`
 
 - Keep the directory-structure section aligned with the current layout: `web/` is the Next.js app, `packages/core/` is platform-free TypeScript, `packages/shared-react/` is React-only shared state, and `mobile/` is the Expo app.
-- Update the Key Files paths so `lib/data-services.ts`, `lib/types.ts`, `lib/utils.ts`, `styles/globals.css`, and `components.json` are listed under `web/`, and note that types, filters, operating-hours, text utilities, place metadata, and highlight rules now live in `packages/core`.
+- Update the Key Files paths so `lib/data-services.ts`, `lib/types.ts`, `lib/utils.ts`, `styles/globals.css`, and `components.json` are listed under `web/`, and note that types, filters, ohours, text utilities, place metadata, and highlight rules now live in `packages/core`.
 - Update the Data Flow line so it no longer implies time-based ISR; static `/api/places` output is rebuilt through `/api/revalidate`.
 - Add a short statement that the mobile app is a true Expo/React Native app that imports shared logic from `packages/core` and `packages/shared-react` and never accesses Airtable, Cosmos, or Azure OpenAI directly.
 
@@ -1484,7 +1484,7 @@ The folder rename and the monorepo extraction change facts that the `.github` in
 
 ### `.github/instructions/mobile.instructions.md`
 
-- Add that mobile feature code imports shared domain logic from `packages/core` (no React) and shared state from `packages/shared-react`, and must not duplicate filters, sorting, operating-hours, or place metadata logic.
+- Add that mobile feature code imports shared domain logic from `packages/core` (no React) and shared state from `packages/shared-react`, and must not duplicate filters, sorting, hours, or place metadata logic.
 - Add that the mobile testing stack is Jest with `jest-expo`, React Native Testing Library, the Expo Router testing utilities, MSW for API mocks, and Maestro for E2E, and that the test scripts are `test:unit`, `test:unit:run`, and `test:e2e:mobile`.
 - Add that native maps use `react-native-maps` (Apple Maps on iOS, Google Maps on Android) with `expo-location` for foreground-only Find Me, and that `expo-maps` is not used for the parity migration.
 - Add that mobile never imports `@azure/cosmos`, `@ai-sdk/azure`, `lib/ai/*`, or any AI secret, and reaches AI only through the web-hosted `/api/chat` endpoint.

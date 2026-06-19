@@ -1,7 +1,7 @@
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { render, screen, waitFor, act } from '@testing-library/react'
 import { ChatContent } from '@/components/ChatContent'
 import type { Place } from '@/lib/types'
+import { act, render, screen, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Track the props passed to Streamdown so we can assert linkSafety config
 let capturedStreamdownProps: Record<string, unknown> = {}
@@ -93,7 +93,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
         comments: '',
         latitude: 35.2271,
         longitude: -80.8431,
-        operatingHours: [],
+        hours: [],
         createdDate: new Date(),
         lastModifiedDate: new Date(),
         ...overrides,

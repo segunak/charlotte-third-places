@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest'
-import { getPlaceHighlights, listHighlightKeys, type PlaceHighlightResult } from '@/components/PlaceHighlights'
+import { getPlaceHighlights, listHighlightKeys } from '@/components/PlaceHighlights'
 import { Place } from '@/lib/types'
+import { describe, expect, it } from 'vitest'
 
 /**
  * Creates a minimal Place object for testing PlaceHighlights.
@@ -34,7 +34,7 @@ function createTestPlace(overrides: Partial<Place> = {}): Place {
     googleMapsProfileURL: '',
     appleMapsProfileURL: '',
     photos: [],
-    operatingHours: [],
+    hours: [],
     comments: '',
     latitude: 35.2271,
     longitude: -80.8431,

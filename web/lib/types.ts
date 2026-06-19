@@ -32,7 +32,8 @@ export type Place = {
     appleMapsProfileURL: string;
     photos: Array<PlacePhoto>;
     comments: string;
-    operatingHours: Array<string>;
+    hours: Array<string>;
+    hoursType?: string;
     latitude: number;
     longitude: number;
     createdDate: Date;

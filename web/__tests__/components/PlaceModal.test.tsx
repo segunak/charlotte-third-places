@@ -14,9 +14,9 @@
  * - Scroll hint arrow visibility (mobile-only feature)
  */
 
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { render, screen, waitFor, fireEvent, act } from '@testing-library/react'
 import type { Place } from '@/lib/types'
+import { act, fireEvent, render, screen } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Track the mock return value so we can change it per test
 let mockIsMobile = false
@@ -71,7 +71,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     photos: [],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

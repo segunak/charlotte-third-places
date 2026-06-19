@@ -11,16 +11,16 @@
  * Here we test the component integration with context.
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
-import { 
-    FiltersContext, 
-    QuickSearchContext, 
-    SortContext 
+import {
+    FiltersContext,
+    QuickSearchContext,
+    SortContext
 } from '@/contexts/FilterContext'
 import { DEFAULT_FILTER_CONFIG, FilterConfig } from '@/lib/filters'
-import { SortField, SortDirection, DEFAULT_SORT_OPTION } from '@/lib/types'
 import type { Place } from '@/lib/types'
+import { DEFAULT_SORT_OPTION, SortDirection, SortField } from '@/lib/types'
+import { render, screen, waitFor } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock ModalContext
 vi.mock('@/contexts/ModalContext', () => ({
@@ -71,7 +71,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     photos: [],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

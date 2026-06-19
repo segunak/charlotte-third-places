@@ -1,14 +1,14 @@
 "use client";
 
-import { Place } from "@/lib/types";
 import { Icons } from "@/components/Icons";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { ShareButton } from "@/components/ShareButton";
 import { QuickFacts } from "@/components/QuickFacts";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { RichTextSection } from "@/components/RichTextSection";
+import { ShareButton } from "@/components/ShareButton";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useModalActions } from "@/contexts/ModalContext";
+import { Place } from "@/lib/types";
 import { FC, useMemo } from "react";
 
 interface PlaceContentProps {
@@ -124,7 +124,8 @@ export const PlaceContent: FC<PlaceContentProps> = ({
                 parking={place.parking}
                 freeWiFi={place.freeWiFi}
                 hasCinnamonRolls={place.hasCinnamonRolls}
-                operatingHours={place.operatingHours}
+                hours={place.hours}
+                hoursType={place.hoursType}
                 tags={place.tags}
                 instagram={instagram}
                 tiktok={tiktok}
