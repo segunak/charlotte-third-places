@@ -14,10 +14,10 @@
  * - Lazy modal chunks are preloaded via requestIdleCallback (with setTimeout fallback)
  */
 
-import React from 'react'
-import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest'
-import { render, screen, fireEvent, act, waitFor } from '@testing-library/react'
 import type { Place } from '@/lib/types'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import React from 'react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 // vi.mock factories are hoisted above top-level statements, so any module-scoped
 // references they touch must be declared via vi.hoisted to avoid TDZ errors.
@@ -125,7 +125,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     linkedIn: '',
     tags: [],
     photos: [],
-    operatingHours: [],
+    hours: [],
     comments: '',
     featured: false,
     operational: 'Open',

@@ -11,25 +11,21 @@
  * all filtering and sorting functionality.
  */
 
-import { describe, it, expect, vi } from 'vitest'
-import { render, screen, act, renderHook } from '@testing-library/react'
-import { ReactNode } from 'react'
-import { 
-  FilterProvider,
-  useFilterData,
-  useFilters,
-  useQuickSearch,
-  useSort,
-  useFilterActions,
-  usePlaces,
-  FilterDataContext,
-  FiltersContext,
-  QuickSearchContext,
-  SortContext 
+import {
+    FilterProvider,
+    useFilterActions,
+    useFilterData,
+    useFilters,
+    usePlaces,
+    useQuickSearch,
+    useSort
 } from '@/contexts/FilterContext'
-import { DEFAULT_SORT_OPTION, SortField, SortDirection } from '@/lib/types'
 import { MULTI_SELECT_FIELDS } from '@/lib/filters'
 import type { Place } from '@/lib/types'
+import { DEFAULT_SORT_OPTION, SortDirection, SortField } from '@/lib/types'
+import { act, render, renderHook, screen } from '@testing-library/react'
+import { ReactNode } from 'react'
+import { describe, expect, it } from 'vitest'
 
 /**
  * Factory function to create test Place objects
@@ -62,7 +58,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     linkedIn: '',
     tags: [],
     photos: [],
-    operatingHours: [],
+    hours: [],
     comments: '',
     featured: false,
     operational: 'Open',
@@ -831,7 +827,7 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
     const places = [
       createMockPlace({
         name: 'Late Night Cafe',
-        operatingHours: [`${today}: 8 AM - 11 PM`],
+        hours: [`${today}: 8 AM - 11 PM`],
         tags: ['Coffee Shop'],
       }),
     ]
@@ -857,7 +853,7 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
     const places = [
       createMockPlace({
         name: 'Early Bird Cafe',
-        operatingHours: [`${today}: 6 AM - 5 PM`],
+        hours: [`${today}: 6 AM - 5 PM`],
         tags: [],
       }),
     ]
@@ -880,7 +876,7 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
     const places = [
       createMockPlace({
         name: 'Normal Hours Place',
-        operatingHours: [`${today}: 9 AM - 5 PM`],
+        hours: [`${today}: 9 AM - 5 PM`],
         tags: ['Bakery'],
       }),
     ]
@@ -905,7 +901,7 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
     const places = [
       createMockPlace({
         name: 'Already Tagged',
-        operatingHours: [`${today}: 6 AM - 11 PM`],
+        hours: [`${today}: 6 AM - 11 PM`],
         tags: ['Open Late', 'Open Early'],
       }),
     ]
@@ -929,7 +925,7 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
 
     const places = [
       createMockPlace({
-        operatingHours: [`${today}: 6 AM - 11 PM`],
+        hours: [`${today}: 6 AM - 11 PM`],
         tags: [],
       }),
     ]

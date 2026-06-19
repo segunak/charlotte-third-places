@@ -11,9 +11,9 @@
  * - Photo counter display
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import type { Place } from '@/lib/types'
+import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Track the mock return value so we can change it per test
 let mockIsMobile = false
@@ -77,7 +77,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
       createPhotoAsset('photo-3'),
     ],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

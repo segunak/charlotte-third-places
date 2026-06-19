@@ -1,7 +1,7 @@
 /**
- * Utilities for parsing and deriving insights from operating hours data.
+ * Utilities for parsing and deriving insights from hours data.
  *
- * Operating hours are stored as a JSON array of strings in the canonical format:
+ * Hours are stored as a JSON array of strings in the canonical format:
  *   "Day: H AM/PM - H AM/PM" (on the hour) or "Day: H:MM AM/PM - H:MM AM/PM" (with minutes)
  * 
  * Examples:
@@ -102,9 +102,9 @@ function parseHour24(timeStr: string): number | null {
     return Math.floor(minutes / 60);
 }
 
-/** Get today's hours line from operating hours array. */
-function getTodayLine(operatingHours: string[], day: string): string | null {
-    const line = operatingHours.find((l) =>
+/** Get today's hours line from hours array. */
+function getTodayLine(hours: string[], day: string): string | null {
+    const line = hours.find((l) =>
         l.toLowerCase().startsWith(day.toLowerCase() + ":")
     );
     return line ?? null;
@@ -178,13 +178,13 @@ const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", 
  * or null if no open day found. Day-first format ensures the most critical info (which day)
  * survives truncation in the UI badge.
  */
-function findNextOpenDay(operatingHours: string[], fromDay: string): string | null {
+function findNextOpenDay(hours: string[], fromDay: string): string | null {
     const fromIdx = DAYS.indexOf(fromDay as typeof DAYS[number]);
     if (fromIdx === -1) return null;
 
     for (let offset = 1; offset <= 6; offset++) {
         const nextDay = DAYS[(fromIdx + offset) % 7];
-        const line = getTodayLine(operatingHours, nextDay);
+        const line = getTodayLine(hours, nextDay);
         if (!line) continue;
         const hoursStr = getHoursFromLine(line);
         if (hoursStr.toLowerCase() === "closed") continue;
@@ -202,17 +202,17 @@ function findNextOpenDay(operatingHours: string[], fromDay: string): string | nu
  * Internal: Determine hours status using a pre-computed CharlotteTime snapshot.
  * No Intl calls - pure string parsing and math.
  */
-function getHoursStatusAt(operatingHours: string[], time: CharlotteTime): HoursStatus {
-    if (!operatingHours || operatingHours.length === 0) return { state: "unknown" };
+function getHoursStatusAt(hours: string[], time: CharlotteTime): HoursStatus {
+    if (!hours || hours.length === 0) return { state: "unknown" };
 
     const { day, totalMinutes: nowTotalMinutes } = time;
 
-    const todayLine = getTodayLine(operatingHours, day);
+    const todayLine = getTodayLine(hours, day);
     if (!todayLine) return { state: "unknown" };
 
     const hoursStr = getHoursFromLine(todayLine);
     if (hoursStr.toLowerCase() === "closed") {
-        const opensAt = findNextOpenDay(operatingHours, day);
+        const opensAt = findNextOpenDay(hours, day);
         return { state: "closed-today", opensAt };
     }
 
@@ -230,7 +230,7 @@ function getHoursStatusAt(operatingHours: string[], time: CharlotteTime): HoursS
     }
 
     if (nowTotalMinutes >= closeMinutes) {
-        const opensAt = findNextOpenDay(operatingHours, day);
+        const opensAt = findNextOpenDay(hours, day);
         return { state: "closed", opensAt };
     }
 
@@ -249,17 +249,17 @@ function getHoursStatusAt(operatingHours: string[], time: CharlotteTime): HoursS
  * Public API - creates a fresh CharlotteTime snapshot per call.
  * For batch operations, use getCharlotteTimeNow() + getHoursStatusAt() directly.
  */
-export function getHoursStatus(operatingHours: string[]): HoursStatus {
-    return getHoursStatusAt(operatingHours, getCharlotteTimeNow());
+export function getHoursStatus(hours: string[]): HoursStatus {
+    return getHoursStatusAt(hours, getCharlotteTimeNow());
 }
 
 // ============================================================================
 // OPEN LATE / OPEN EARLY - with CharlotteTime parameter
 // ============================================================================
 
-/** Extract the closing hour (24h format) for a given day from operating hours. */
-function getClosingHour(operatingHours: string[], day: string): number | null {
-    const line = getTodayLine(operatingHours, day);
+/** Extract the closing hour (24h format) for a given day from hours. */
+function getClosingHour(hours: string[], day: string): number | null {
+    const line = getTodayLine(hours, day);
     if (!line) return null;
 
     const hoursStr = getHoursFromLine(line);
@@ -281,9 +281,9 @@ function getClosingHour(operatingHours: string[], day: string): number | null {
     return hour;
 }
 
-/** Extract the opening hour (24h format) for a given day from operating hours. */
-function getOpeningHour(operatingHours: string[], day: string): number | null {
-    const line = getTodayLine(operatingHours, day);
+/** Extract the opening hour (24h format) for a given day from hours. */
+function getOpeningHour(hours: string[], day: string): number | null {
+    const line = getTodayLine(hours, day);
     if (!line) return null;
 
     const hoursStr = getHoursFromLine(line);
@@ -300,29 +300,29 @@ function getOpeningHour(operatingHours: string[], day: string): number | null {
 }
 
 /** Internal: check Open Late using pre-computed day. */
-function isOpenLateAt(operatingHours: string[], day: string): boolean {
-    if (!operatingHours || operatingHours.length === 0) return false;
-    const closingHour = getClosingHour(operatingHours, day);
+function isOpenLateAt(hours: string[], day: string): boolean {
+    if (!hours || hours.length === 0) return false;
+    const closingHour = getClosingHour(hours, day);
     if (closingHour === null) return false;
     return closingHour >= OPEN_LATE_THRESHOLD_HOUR;
 }
 
 /** Internal: check Open Early using pre-computed day. */
-function isOpenEarlyAt(operatingHours: string[], day: string): boolean {
-    if (!operatingHours || operatingHours.length === 0) return false;
-    const openingHour = getOpeningHour(operatingHours, day);
+function isOpenEarlyAt(hours: string[], day: string): boolean {
+    if (!hours || hours.length === 0) return false;
+    const openingHour = getOpeningHour(hours, day);
     if (openingHour === null) return false;
     return openingHour <= OPEN_EARLY_THRESHOLD_HOUR;
 }
 
 /** Public: Determines if a place is "Open Late" based on today's hours. */
-export function isOpenLate(operatingHours: string[]): boolean {
-    return isOpenLateAt(operatingHours, getCharlotteTimeNow().day);
+export function isOpenLate(hours: string[]): boolean {
+    return isOpenLateAt(hours, getCharlotteTimeNow().day);
 }
 
 /** Public: Determines if a place is "Open Early" (opens at 7 AM or earlier today). */
-export function isOpenEarly(operatingHours: string[]): boolean {
-    return isOpenEarlyAt(operatingHours, getCharlotteTimeNow().day);
+export function isOpenEarly(hours: string[]): boolean {
+    return isOpenEarlyAt(hours, getCharlotteTimeNow().day);
 }
 
 // ============================================================================
@@ -337,9 +337,9 @@ export function isOpenEarly(operatingHours: string[]): boolean {
  * Designed for batch filtering (e.g., "Open Now" button) where you compute
  * the time once and check all places against it - no Intl calls per place.
  */
-export function isPlaceOpenNow(operatingHours: string[], time: CharlotteTime): boolean {
-    if (!operatingHours || operatingHours.length === 0) return false;
-    const status = getHoursStatusAt(operatingHours, time);
+export function isPlaceOpenNow(hours: string[], time: CharlotteTime): boolean {
+    if (!hours || hours.length === 0) return false;
+    const status = getHoursStatusAt(hours, time);
     return status.state === "open" || status.state === "closing-soon";
 }
 
@@ -348,27 +348,27 @@ export function isPlaceOpenNow(operatingHours: string[], time: CharlotteTime): b
 // ============================================================================
 
 /**
- * Enrich a list of places by injecting dynamic tags based on operating hours:
+ * Enrich a list of places by injecting dynamic tags based on hours:
  * - "Open Late" for places open until 10 PM or later today
  * - "Open Early" for places opening at 7 AM or earlier today
  *
  * PERFORMANCE: Computes Charlotte timezone ONCE (2 Intl calls total, not 4xN).
  * Designed to run client-side so tags are dynamic based on the user's visit day.
  */
-export function injectDynamicTags<T extends { tags: string[]; operatingHours: string[] }>(
+export function injectDynamicTags<T extends { tags: string[]; hours: string[] }>(
     places: T[]
 ): T[] {
     const { day } = getCharlotteTimeNow(); // 2 Intl calls for entire batch
 
     return places.map((place) => {
         const tags = place.tags ?? [];
-        const operatingHours = place.operatingHours ?? [];
+        const hours = place.hours ?? [];
         let newTags = tags;
 
-        if (isOpenLateAt(operatingHours, day) && !newTags.includes("Open Late")) {
+        if (isOpenLateAt(hours, day) && !newTags.includes("Open Late")) {
             newTags = [...newTags, "Open Late"];
         }
-        if (isOpenEarlyAt(operatingHours, day) && !newTags.includes("Open Early")) {
+        if (isOpenEarlyAt(hours, day) && !newTags.includes("Open Early")) {
             newTags = [...newTags, "Open Early"];
         }
 
@@ -385,7 +385,8 @@ export const injectOpenLateTags = injectDynamicTags;
 // EXPORTS - backward compatible
 // ============================================================================
 
-export { parseHour24, parseTimeToMinutes, getClosingHour, getOpeningHour, getCurrentDayInCharlotte, getDayTimeRange, OPEN_LATE_THRESHOLD_HOUR, OPEN_EARLY_THRESHOLD_HOUR, OPENING_OR_CLOSING_SOON_MINUTES };
+export { getClosingHour, getCurrentDayInCharlotte, getDayTimeRange, getOpeningHour, OPEN_EARLY_THRESHOLD_HOUR, OPEN_LATE_THRESHOLD_HOUR, OPENING_OR_CLOSING_SOON_MINUTES, parseHour24, parseTimeToMinutes };
 
 // New exports for batch callers (PlaceListWithFilters Open Now, PlacePageClient)
-export { getHoursStatusAt, isOpenLateAt, isOpenEarlyAt };
+    export { getHoursStatusAt, isOpenEarlyAt, isOpenLateAt };
+

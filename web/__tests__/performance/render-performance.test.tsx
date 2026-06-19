@@ -14,7 +14,13 @@
  * is the primary bottleneck we're optimizing.
  */
 
-import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest'
+import { FilterProvider, useFilterData, useFilters, useQuickSearch, useSort } from '@/contexts/FilterContext'
+import { ModalProvider, useModalActions } from '@/contexts/ModalContext'
+import { DEFAULT_FILTER_CONFIG } from '@/lib/filters'
+import { Place, SortDirection, SortField } from '@/lib/types'
+import { act, cleanup, fireEvent, render, screen } from '@testing-library/react'
+import React, { useCallback, useState } from 'react'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 
 // Mock modal components so performance tests measure provider update cost instead
 // of real modal rendering or lazy module loading.
@@ -27,12 +33,6 @@ vi.mock('@/components/PhotosModal', () => ({
 vi.mock('@/components/ChatModal', () => ({
   ChatModal: () => null
 }))
-import { render, screen, fireEvent, act, cleanup } from '@testing-library/react'
-import React, { useState, useCallback, createContext, useContext } from 'react'
-import { ModalProvider, useModalActions } from '@/contexts/ModalContext'
-import { FilterProvider, useFilters, useQuickSearch, useSort, useFilterData } from '@/contexts/FilterContext'
-import { DEFAULT_FILTER_CONFIG } from '@/lib/filters'
-import { Place, SortField, SortDirection } from '@/lib/types'
 
 // INP threshold in milliseconds
 const INP_THRESHOLD_MS = 200
@@ -59,7 +59,7 @@ const createMockPlace = (overrides: Partial<Place> = {}): Place => ({
   size: 'Medium',
   purchaseRequired: 'No',
   photos: [],
-  operatingHours: [],
+  hours: [],
   googleMapsProfileURL: 'https://maps.google.com',
   appleMapsProfileURL: 'https://maps.apple.com',
   website: '',

@@ -1,10 +1,10 @@
 "use client";
 
-import { createContext, useCallback, useMemo, useContext, ReactNode, useReducer } from "react";
-import { DEFAULT_SORT_OPTION, SortOption, Place } from "@/lib/types";
 import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey, placeMatchesFilters } from "@/lib/filters";
-import { isPlaceOpenNow, getCharlotteTimeNow, injectDynamicTags } from "@/lib/operating-hours";
+import { getCharlotteTimeNow, injectDynamicTags, isPlaceOpenNow } from "@/lib/hours";
+import { DEFAULT_SORT_OPTION, Place, SortOption } from "@/lib/types";
 import { normalizeTextForSearch } from "@/lib/utils";
+import { createContext, ReactNode, useCallback, useContext, useMemo, useReducer } from "react";
 
 // ============================================================================
 // CONSOLIDATED REDUCER - Single state update for atomic operations
@@ -265,7 +265,7 @@ export const FilterProvider = ({
         // Apply active filters (same predicate as DataTable)
         filtered = filtered.filter(p => placeMatchesFilters(p, filters));
 
-        return filtered.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time)).length;
+        return filtered.filter(p => isPlaceOpenNow(p.hours ?? [], time)).length;
     }, [places, filters, quickFilterText]);
 
     // Pre-compute distinct values for ALL filter fields once when places change.

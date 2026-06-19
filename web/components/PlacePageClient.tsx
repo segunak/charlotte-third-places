@@ -28,7 +28,7 @@ import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, Dr
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { ChatModal } from "@/components/ChatModal";
-import { injectDynamicTags } from "@/lib/operating-hours";
+import { injectDynamicTags } from "@/lib/hours";
 
 // Single place detail page — not inside a FilterProvider tree.
 // Enriches the place directly with injectDynamicTags() instead of usePlaces().
