@@ -117,7 +117,7 @@ const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursT
 
     if (hours.length === 0) {
         if (hoursType === "Event Based") {
-            return <span className="text-sm text-muted-foreground">Event Based</span>;
+            return <InfoTag text="Event Based" />;
         }
 
         return <span className="text-sm text-muted-foreground">Not available</span>;
