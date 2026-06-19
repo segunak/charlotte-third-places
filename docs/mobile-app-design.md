@@ -267,6 +267,9 @@ These endpoints are not speculative. They are the current compatibility surface.
 - Public server functions: `getPlaces(): Promise<Place[]>` and `getPlaceById(id: string): Promise<Place | undefined>`.
 - Pure helper currently mixed into the server file and already exported: `parsePlacePhotoManifests(value: unknown): PlacePhoto[]`.
 - Private record mapper currently mixed into the server file and not exported: `mapRecordToPlace`. The CSV reader `getPlacesFromCSV` is also private and not exported.
+- Hours fields currently mapped by `mapRecordToPlace`: `hours: getField("Hours")` and `hoursType: getField("Hours Type")`.
+- Airtable `Hours` values are parsed as a JSON array when present. CSV `Hours` values are parsed through the same JSON-array path. Missing or malformed `Hours` values become `[]`.
+- Current local CSV data uses `Hours Type = Regular` for all rows. The UI also supports `Hours Type = Event Based` as an explicit special case when no concrete weekly hours are available.
 - Server-only imports in this file: `fs`, `path`, `airtable`, `csv-parser`, `strip-bom-stream`, and `parse`/`parseISO`/`isValid` from `date-fns`.
 - Environment variables read in this file: `AIRTABLE_PERSONAL_ACCESS_TOKEN`, `FORCE_PRODUCTION_DATA` (checked `=== 'true'`), and `NODE_ENV` (checked `=== 'development'`).
 
@@ -310,7 +313,7 @@ Every symbol, constant, and behavior below was read from the current `charlotte-
 ### `lib/types.ts`
 
 - `PlacePhoto` = `{ display: string; thumbnail: string }`.
-- `Place` has exactly these fields: `recordId`, `name`, `operational`, `type: string[]`, `size`, `tags: string[]`, `neighborhood`, `address`, `purchaseRequired`, `parking: string[]`, `freeWiFi`, `hasCinnamonRolls`, `hasReviews`, `featured: boolean`, `description`, `website`, `tiktok`, `instagram`, `youtube`, `facebook`, `twitter`, `linkedIn`, `googleMapsPlaceId`, `googleMapsProfileURL`, `appleMapsProfileURL`, `photos: PlacePhoto[]`, `comments`, `hours: string[]`, `latitude: number`, `longitude: number`, `createdDate: Date`, `lastModifiedDate: Date`.
+- `Place` has exactly these fields: `recordId`, `name`, `operational`, `type: string[]`, `size`, `tags: string[]`, `neighborhood`, `address`, `purchaseRequired`, `parking: string[]`, `freeWiFi`, `hasCinnamonRolls`, `hasReviews`, `featured: boolean`, `description`, `website`, `tiktok`, `instagram`, `youtube`, `facebook`, `twitter`, `linkedIn`, `googleMapsPlaceId`, `googleMapsProfileURL`, `appleMapsProfileURL`, `photos: PlacePhoto[]`, `comments`, `hours: string[]`, `hoursType?: string`, `latitude: number`, `longitude: number`, `createdDate: Date`, `lastModifiedDate: Date`.
 - `PlaceDocument` and `ChunkDocument` are Cosmos-shaped types with optional `embedding?: number[]` and `similarityScore?: number`. They are server/AI types. They are moved to `packages/core` as types only; mobile never instantiates them.
 - `SortField` enum: `Name`, `DateAdded`, `LastModified`. `SortDirection` enum: `Ascending`, `Descending`. `SortOption` = `{ field: SortField; direction: SortDirection }`. `DEFAULT_SORT_OPTION` = `{ field: SortField.DateAdded, direction: SortDirection.Descending }`.
 
@@ -327,7 +330,10 @@ Every symbol, constant, and behavior below was read from the current `charlotte-
 - Constants: `CHARLOTTE_TIMEZONE = "America/New_York"`, `OPEN_LATE_THRESHOLD_HOUR = 22`, `OPEN_EARLY_THRESHOLD_HOUR = 7`, `OPENING_OR_CLOSING_SOON_MINUTES = 60`, and `DAYS` Sunday-first.
 - It uses native `Intl.DateTimeFormat` only. It does not import `date-fns`. It has no DOM usage.
 - Dynamic tags: `injectDynamicTags` adds `Open Late` when closing hour `>= 22` and `Open Early` when opening hour `<= 7`, computed once per batch with a single `getCharlotteTimeNow()` snapshot.
-- Exported helpers include `getCharlotteTimeNow`, `getHoursStatus`, `isPlaceOpenNow`, `isOpenLate`, `isOpenEarly`, `injectDynamicTags`, the `*At` variants, and the low-level parsers `parseHour24`, `parseTimeToMinutes`, `getClosingHour`, `getOpeningHour`, `getCurrentDayInCharlotte`, `getDayTimeRange`. Move these exports unchanged.
+- Hours status union: `{ state: "open"; closesAt }`, `{ state: "closing-soon"; closesAt }`, `{ state: "opening-soon"; opensAt }`, `{ state: "closed"; opensAt: string | null }`, `{ state: "closed-today"; opensAt: string | null }`, `{ state: "unknown" }`.
+- `getHoursStatus(hours)` creates a fresh Charlotte time snapshot. Batch callers must use one `getCharlotteTimeNow()` snapshot and pass it to the `*At` helpers.
+- `isPlaceOpenNow(hours, time)` returns `true` only for `open` and `closing-soon`. `opening-soon`, `closed`, `closed-today`, and `unknown` are not open.
+- Exported helpers include `getCharlotteTimeNow`, `getHoursStatus`, `getHoursStatusAt`, `isPlaceOpenNow`, `isOpenLate`, `isOpenEarly`, `isOpenLateAt`, `isOpenEarlyAt`, `injectDynamicTags`, and the low-level parsers `parseHour24`, `parseTimeToMinutes`, `getClosingHour`, `getOpeningHour`, `getCurrentDayInCharlotte`, `getDayTimeRange`. Move these exports unchanged.
 
 ### `lib/fonts.ts`
 
@@ -382,6 +388,16 @@ Every symbol, constant, and behavior below was read from the current `charlotte-
 - Web map constants the native map must mirror: default center `{ lat: 35.23075539296459, lng: -80.83165532446358 }`, default zoom `11`, `SHOW_LABELS_ZOOM = 12`, `MAX_LABELS_SHOWN = 30`, featured marker color `#f59e0b`, Find Me success zoom `14`, geolocation options `{ enableHighAccuracy: false, timeout: 5000, maximumAge: 300000 }`.
 - Fallback marker palette has exactly these 19 colors, in order: `#FB923C`, `#14B8A6`, `#6366F1`, `#EC4899`, `#84CC16`, `#F59E0B`, `#D946EF`, `#F43F5E`, `#06B6D4`, `#8B5CF6`, `#10B981`, `#FBBF24`, `#DC2626`, `#22C55E`, `#3B82F6`, `#F472B6`, `#A3E635`, `#2DD4BF`, `#E879F9`. The hash algorithm initializes `hash = 0`, then for each character runs `hash = charCode + ((hash << 5) - hash)`, then uses `Math.abs(hash) % typeColorPalette.length`.
 - The web map listens for a `userLocationFound` custom DOM event from a separate mobile Find Me button; that DOM-event bridge is web-only and is not ported. Native Find Me calls `expo-location` directly.
+
+### `components/QuickFacts.tsx`
+
+- `QuickFactsProps` includes `hours?: string[]` and `hoursType?: string`.
+- The Hours row renders when `hours.length > 0` or when `hoursType === "Event Based"`.
+- When `hours.length === 0` and `hoursType === "Event Based"`, the Hours row value is exactly `Event Based` in muted text.
+- When `hours.length === 0` and `hoursType !== "Event Based"`, the Hours row is hidden.
+- When `hours.length > 0`, `HoursValue` calls `getHoursStatus(hours)` and renders the real-time status badge plus expandable weekly hours. `hoursType` does not override normal status rendering when hours exist.
+- `hoursType` values other than the exact string `Event Based` do not change rendering. `Regular`, empty, and undefined values behave the same when `hours.length === 0`: the Hours row is hidden.
+- Expanded weekly hours abbreviate day labels on mobile (`Sun`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`) and show full stored lines on desktop.
 
 ### Current `mobile` App Facts
 
@@ -1145,6 +1161,8 @@ Native place detail must preserve the current `PlacePageClient` and `PlaceConten
 - Google Maps, Apple Maps, Website, and social links open outside the app with native link handling.
 - Share uses native share sheet.
 - Quick facts include address, neighborhood, size, purchase required, parking, free Wi-Fi, cinnamon rolls, hours, tags, and social links.
+- Quick facts pass both `place.hours` and `place.hoursType` to the native QuickFacts equivalent.
+- Native Hours row behavior must match web `QuickFacts`: render `Event Based` when `hours` is empty and `hoursType === "Event Based"`; hide the Hours row when `hours` is empty and `hoursType` is not `Event Based`; render live status and expandable weekly hours when `hours` has entries.
 - Description renders Airtable rich text/markdown as native text.
 - Comments render when non-empty.
 - Metadata displays Added and Last Updated dates.
@@ -1468,7 +1486,7 @@ The folder rename and the monorepo extraction change facts that the `.github` in
 ### `.github/copilot-instructions.md`
 
 - Keep the directory-structure section aligned with the current layout: `web/` is the Next.js app, `packages/core/` is platform-free TypeScript, `packages/shared-react/` is React-only shared state, and `mobile/` is the Expo app.
-- Update the Key Files paths so `lib/data-services.ts`, `lib/types.ts`, `lib/utils.ts`, `styles/globals.css`, and `components.json` are listed under `web/`, and note that types, filters, ohours, text utilities, place metadata, and highlight rules now live in `packages/core`.
+- Update the Key Files paths so `lib/data-services.ts`, `lib/types.ts`, `lib/utils.ts`, `styles/globals.css`, and `components.json` are listed under `web/`, and note that types, filters, hours, text utilities, place metadata, and highlight rules now live in `packages/core`.
 - Update the Data Flow line so it no longer implies time-based ISR; static `/api/places` output is rebuilt through `/api/revalidate`.
 - Add a short statement that the mobile app is a true Expo/React Native app that imports shared logic from `packages/core` and `packages/shared-react` and never accesses Airtable, Cosmos, or Azure OpenAI directly.
 

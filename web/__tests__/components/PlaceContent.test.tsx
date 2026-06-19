@@ -298,7 +298,7 @@ describe('PlaceContent', () => {
       render(<PlaceContent place={place} />)
 
       expect(screen.getByText('Hours')).toBeInTheDocument()
-      expect(screen.getByText('Event Based - Check website or socials before visiting.')).toBeInTheDocument()
+      expect(screen.getByText('Event Based')).toBeInTheDocument()
     })
 
     it('shows status and expands to show all days on click', () => {
