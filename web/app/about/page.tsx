@@ -108,7 +108,7 @@ const frequentlyAskedQuestions = [
                         <AccordionContent>
                             <div className="space-y-3">
                                 <p>
-                                    Operating hours are pulled from the Google Maps Places API and refreshed weekly via an automated pipeline. The hours shown reflect the regular weekly schedule as reported by each business on their Google Maps profile.
+                                    Hours are pulled from the Google Maps Places API and refreshed weekly via an automated pipeline. The hours shown reflect the regular weekly schedule as reported by each business on their Google Maps profile.
                                 </p>
                                 <p>
                                     The site shows whether a place is currently <span className="text-emerald-600 font-semibold">Open</span>, <span className="text-red-500 font-semibold">Closed</span>, or <span className="text-orange-500 font-semibold">Closing Soon</span> (within one hour of closing) based on the current time in Charlotte's timezone (Eastern). This status is calculated in real time when you visit the page, it's not baked into the data.

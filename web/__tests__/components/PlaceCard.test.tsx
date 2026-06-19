@@ -11,8 +11,8 @@
  * - Overflow handling for type and neighborhood
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
+import { fireEvent, render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock the context and hooks before importing the component
 const mockPushPlace = vi.fn()
@@ -63,7 +63,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     linkedIn: '',
     tags: [],
     photos: [],
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     comments: '',

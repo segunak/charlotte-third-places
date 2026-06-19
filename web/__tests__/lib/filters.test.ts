@@ -1,19 +1,18 @@
-import { describe, it, expect } from 'vitest'
 import {
-  FILTER_SENTINEL,
-  FILTER_DEFS,
-  DEFAULT_FILTER_CONFIG,
-  placeMatchesFilters,
-  filterPlaces,
-  sortPlaces,
-  MOBILE_PICKER_FIELDS,
-  MOBILE_CHIP_FIELDS,
-  MULTI_SELECT_FIELDS,
-  SORT_DEFS,
-  type FilterConfig,
+    DEFAULT_FILTER_CONFIG,
+    FILTER_DEFS,
+    FILTER_SENTINEL,
+    filterPlaces,
+    MOBILE_CHIP_FIELDS,
+    MULTI_SELECT_FIELDS,
+    placeMatchesFilters,
+    SORT_DEFS,
+    sortPlaces,
+    type FilterConfig
 } from '@/lib/filters'
 import type { Place } from '@/lib/types'
-import { SortField, SortDirection } from '@/lib/types'
+import { SortDirection, SortField } from '@/lib/types'
+import { describe, expect, it } from 'vitest'
 
 // Helper to create a minimal Place object for testing
 function createTestPlace(overrides: Partial<Place> = {}): Place {
@@ -45,7 +44,7 @@ function createTestPlace(overrides: Partial<Place> = {}): Place {
     appleMapsProfileURL: 'https://maps.apple.com',
     photos: [],
     comments: '',
-    operatingHours: [],
+    hours: [],
     latitude: 35.2271,
     longitude: -80.8431,
     createdDate: new Date(),

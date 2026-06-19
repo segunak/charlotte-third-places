@@ -9,7 +9,7 @@ import { placeMatchesFilters } from "@/lib/filters";
 import { useFilters, useQuickSearch, useOpenNow, usePlaces } from '@/contexts/FilterContext';
 import { useModalActions } from "@/contexts/ModalContext";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { isPlaceOpenNow, getCharlotteTimeNow } from '@/lib/operating-hours';
+import { isPlaceOpenNow, getCharlotteTimeNow } from '@/lib/hours';
 import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
 
@@ -171,7 +171,7 @@ export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
 
         if (openNow) {
             const time = getCharlotteTimeNow();
-            result = result.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time));
+            result = result.filter(p => isPlaceOpenNow(p.hours ?? [], time));
         }
 
         return result;

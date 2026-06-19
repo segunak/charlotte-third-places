@@ -1,21 +1,21 @@
-import { describe, it, expect, vi, afterEach } from "vitest";
 import {
+    getClosingHour,
+    getDayTimeRange,
+    getHoursStatus,
+    getOpeningHour,
+    injectDynamicTags,
+    injectOpenLateTags,
+    isOpenEarly,
+    isOpenLate,
+    OPEN_LATE_THRESHOLD_HOUR,
     parseHour24,
     parseTimeToMinutes,
-    getClosingHour,
-    getOpeningHour,
-    getDayTimeRange,
-    isOpenLate,
-    isOpenEarly,
-    injectOpenLateTags,
-    injectDynamicTags,
-    getHoursStatus,
-    OPEN_LATE_THRESHOLD_HOUR,
-} from "@/lib/operating-hours";
+} from "@/lib/hours";
+import { describe, expect, it, vi } from "vitest";
 
 // Mock getCurrentDayInCharlotte by mocking the module partially
-vi.mock("@/lib/operating-hours", async () => {
-    const actual = await vi.importActual<typeof import("@/lib/operating-hours")>("@/lib/operating-hours");
+vi.mock("@/lib/hours", async () => {
+    const actual = await vi.importActual<typeof import("@/lib/hours")>("@/lib/hours");
     return {
         ...actual,
         // We'll override isOpenLate in specific tests via spying on getCurrentDayInCharlotte
@@ -129,7 +129,7 @@ describe("injectOpenLateTags", () => {
         const places = [
             {
                 tags: ["Open Late", "Coffee Shop"],
-                operatingHours: ["Monday: 7 AM - 11 PM"],
+                hours: ["Monday: 7 AM - 11 PM"],
             },
         ];
         // Even if isOpenLate would return true, the tag is already there
@@ -138,8 +138,8 @@ describe("injectOpenLateTags", () => {
         expect(openLateTags).toHaveLength(1);
     });
 
-    it("preserves places without operating hours", () => {
-        const places = [{ tags: ["Coffee Shop"], operatingHours: [] }];
+    it("preserves places without hours", () => {
+        const places = [{ tags: ["Coffee Shop"], hours: [] }];
         const result = injectOpenLateTags(places);
         expect(result[0].tags).toEqual(["Coffee Shop"]);
     });
@@ -148,7 +148,7 @@ describe("injectOpenLateTags", () => {
         const original = [
             {
                 tags: ["Coffee Shop"],
-                operatingHours: ["Monday: 7 AM - 11 PM"],
+                hours: ["Monday: 7 AM - 11 PM"],
             },
         ];
         const originalTags = [...original[0].tags];
@@ -320,15 +320,15 @@ describe("getDayTimeRange", () => {
 describe("injectOpenLateTags - null safety", () => {
     it("handles places with undefined tags without crashing", () => {
         const places = [
-            { tags: undefined as any, operatingHours: ["Monday: 7 AM - 11 PM"] },
+            { tags: undefined as any, hours: ["Monday: 7 AM - 11 PM"] },
         ];
         // Should not throw — the ?? [] guard prevents .includes() on undefined
         expect(() => injectOpenLateTags(places)).not.toThrow();
     });
 
-    it("handles places with undefined operatingHours without crashing", () => {
+    it("handles places with undefined hours without crashing", () => {
         const places = [
-            { tags: ["Coffee Shop"], operatingHours: undefined as any },
+            { tags: ["Coffee Shop"], hours: undefined as any },
         ];
         expect(() => injectOpenLateTags(places)).not.toThrow();
         const result = injectOpenLateTags(places);
@@ -337,7 +337,7 @@ describe("injectOpenLateTags - null safety", () => {
 
     it("handles places with both undefined without crashing", () => {
         const places = [
-            { tags: undefined as any, operatingHours: undefined as any },
+            { tags: undefined as any, hours: undefined as any },
         ];
         expect(() => injectOpenLateTags(places)).not.toThrow();
     });
@@ -383,9 +383,9 @@ describe("isOpenEarly", () => {
 });
 
 describe("injectDynamicTags", () => {
-    it("does not crash with undefined tags and operatingHours", () => {
+    it("does not crash with undefined tags and hours", () => {
         const places = [
-            { tags: undefined as any, operatingHours: undefined as any },
+            { tags: undefined as any, hours: undefined as any },
         ];
         expect(() => injectDynamicTags(places)).not.toThrow();
     });
@@ -394,7 +394,7 @@ describe("injectDynamicTags", () => {
         const places = [
             {
                 tags: ["Open Late", "Open Early"],
-                operatingHours: ["Monday: 6 AM - 11 PM"],
+                hours: ["Monday: 6 AM - 11 PM"],
             },
         ];
         const result = injectDynamicTags(places);
@@ -402,15 +402,15 @@ describe("injectDynamicTags", () => {
         expect(result[0].tags.filter(t => t === "Open Early")).toHaveLength(1);
     });
 
-    it("preserves places without operating hours", () => {
-        const places = [{ tags: ["Coffee Shop"], operatingHours: [] }];
+    it("preserves places without hours", () => {
+        const places = [{ tags: ["Coffee Shop"], hours: [] }];
         const result = injectDynamicTags(places);
         expect(result[0].tags).toEqual(["Coffee Shop"]);
     });
 
     it("does not mutate the original array", () => {
         const original = [
-            { tags: ["Coffee Shop"], operatingHours: ["Monday: 6 AM - 11 PM"] },
+            { tags: ["Coffee Shop"], hours: ["Monday: 6 AM - 11 PM"] },
         ];
         const originalTags = [...original[0].tags];
         injectDynamicTags(original);

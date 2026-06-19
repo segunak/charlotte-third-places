@@ -1,7 +1,7 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, waitFor } from '@testing-library/react'
 import { CardCarousel } from '@/components/CardCarousel'
 import { Place } from '@/lib/types'
+import { render, screen, waitFor } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock embla-carousel-react with complete API
 const mockScrollTo = vi.fn()
@@ -66,7 +66,7 @@ const createMockPlace = (name: string): Place => ({
   appleMapsProfileURL: '',
   photos: [],
   comments: '',
-  operatingHours: [],
+  hours: [],
   createdDate: new Date('2024-01-01'),
   lastModifiedDate: new Date('2024-01-01'),
 })

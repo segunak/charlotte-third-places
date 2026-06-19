@@ -1,7 +1,7 @@
-import type React from 'react'
-import { render, screen, within } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
 import type { Place } from '@/lib/types'
+import { render, screen, within } from '@testing-library/react'
+import type React from 'react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 const mockState = vi.hoisted(() => ({
   isNativeApp: false,
@@ -52,7 +52,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     photos: [],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

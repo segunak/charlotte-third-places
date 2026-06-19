@@ -1,19 +1,19 @@
 "use client";
 
-import { Place } from "@/lib/types";
-import { FilterSidebar } from "@/components/FilterSidebar";
-import { FilterDrawer } from "@/components/FilterDrawer";
-import { MobileQuickFilters } from "@/components/MobileQuickFilters";
 import { ComingSoonModal } from "@/components/ComingSoonModal";
-import React, { useState, Suspense, useMemo } from "react";
-import dynamic from "next/dynamic";
-import { SortSelect, OpenNowToggle } from "@/components/FilterUtilities";
+import { FilterDrawer } from "@/components/FilterDrawer";
+import { FilterSidebar } from "@/components/FilterSidebar";
+import { SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
-import { LoadingSpinner } from "@/components/ui/loading-spinner";
+import { MobileQuickFilters } from "@/components/MobileQuickFilters";
 import { Button } from "@/components/ui/button";
-import { useInView } from "@/hooks/useInView";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { useOpenNow, usePlaces } from "@/contexts/FilterContext";
-import { isPlaceOpenNow, getCharlotteTimeNow } from "@/lib/operating-hours";
+import { useInView } from "@/hooks/useInView";
+import { getCharlotteTimeNow, isPlaceOpenNow } from "@/lib/hours";
+import { Place } from "@/lib/types";
+import dynamic from "next/dynamic";
+import { Suspense, useMemo, useState } from "react";
 
 // Dynamically import DataTable for lazy loading with count callback
 const DataTable = dynamic<{ rowData: Place[]; onFilteredCountChange?: (count: number) => void }>(() => import("@/components/DataTable").then(mod => mod.DataTable), {
@@ -34,7 +34,7 @@ export function PlaceListWithFilters() {
     // Pre-compute open-now places using a single timezone snapshot (2 Intl calls, not 2×N)
     const openNowPlaces = useMemo(() => {
         const time = getCharlotteTimeNow();
-        return places.filter(p => isPlaceOpenNow(p.operatingHours ?? [], time));
+        return places.filter(p => isPlaceOpenNow(p.hours ?? [], time));
     }, [places]);
 
     // When Open Now is active, DataTable receives only open places

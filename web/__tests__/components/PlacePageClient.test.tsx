@@ -1,6 +1,6 @@
+import type { Place } from '@/lib/types'
 import { fireEvent, render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
-import type { Place } from '@/lib/types'
 
 let mockIsMobile = false
 
@@ -24,7 +24,7 @@ vi.mock('@/components/PlaceHighlights', () => ({
   }),
 }))
 
-vi.mock('@/lib/operating-hours', () => ({
+vi.mock('@/lib/hours', () => ({
   injectDynamicTags: (places: Place[]) => places,
 }))
 
@@ -77,7 +77,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
       createPhotoAsset('photo-3'),
     ],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),

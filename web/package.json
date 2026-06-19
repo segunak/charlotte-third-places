@@ -7,7 +7,7 @@
     "prebuild": "tsx scripts/generate-airtable-data.ts",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-pattern .next/",
     "generate-airtable-data": "tsx scripts/generate-airtable-data.ts",
     "test": "vitest run && start-server-and-test dev http://localhost:3000 test:e2e:run",
     "test:unit": "vitest",

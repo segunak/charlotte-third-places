@@ -14,9 +14,9 @@
  * - Description and Comments sections
  */
 
-import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen, fireEvent } from '@testing-library/react'
 import type { Place } from '@/lib/types'
+import { fireEvent, render, screen } from '@testing-library/react'
+import { beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Mock ModalContext
 const mockPushPhotos = vi.fn()
@@ -61,7 +61,7 @@ function createMockPlace(overrides: Partial<Place> = {}): Place {
     tags: [],
     photos: [],
     comments: '',
-    operatingHours: [],
+    hours: [],
     featured: false,
     operational: 'Open',
     createdDate: new Date('2024-01-01T00:00:00.000Z'),
@@ -270,8 +270,8 @@ describe('PlaceContent', () => {
   })
 
   describe('Hours in QuickFacts', () => {
-    it('renders Hours label in QuickFacts when operatingHours provided', () => {
-      const place = createMockPlace({ operatingHours: [
+    it('renders Hours label in QuickFacts when hours provided', () => {
+      const place = createMockPlace({ hours: [
         'Sunday: 10 AM - 5 PM',
         'Monday: 7 AM - 5 PM',
         'Tuesday: 7 AM - 5 PM',
@@ -286,15 +286,23 @@ describe('PlaceContent', () => {
       expect(screen.getByText('Hours')).toBeInTheDocument()
     })
 
-    it('does not render Hours row when operatingHours is empty', () => {
-      const place = createMockPlace({ operatingHours: [] })
+    it('does not render Hours row when hours is empty', () => {
+      const place = createMockPlace({ hours: [] })
       render(<PlaceContent place={place} />)
 
       expect(screen.queryByText('Hours')).not.toBeInTheDocument()
     })
 
+    it('renders Event Based message when hours is empty and hoursType is Event Based', () => {
+      const place = createMockPlace({ hours: [], hoursType: 'Event Based' })
+      render(<PlaceContent place={place} />)
+
+      expect(screen.getByText('Hours')).toBeInTheDocument()
+      expect(screen.getByText('Event Based')).toBeInTheDocument()
+    })
+
     it('shows status and expands to show all days on click', () => {
-      const place = createMockPlace({ operatingHours: [
+      const place = createMockPlace({ hours: [
         'Sunday: 12 PM - 7 PM',
         'Monday: 3 PM - 8 PM',
         'Tuesday: 4 PM - 10 PM',

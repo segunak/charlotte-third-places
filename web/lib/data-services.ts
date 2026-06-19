@@ -1,10 +1,10 @@
-import fs from 'fs';
-import path from 'path';
+import { Place, PlacePhoto } from '@/lib/types';
 import Airtable from 'airtable';
 import csvParser from 'csv-parser';
-import { Place, PlacePhoto } from '@/lib/types';
+import { isValid, parse, parseISO } from "date-fns";
+import fs from 'fs';
+import path from 'path';
 import stripBomStream from 'strip-bom-stream';
-import { parse, parseISO, isValid } from "date-fns";
 
 const base = new Airtable({
     apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
@@ -125,7 +125,7 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
             if (key === "Photos") {
                 return parsePlacePhotoManifests(value);
             }
-            if (key === "Operating Hours") {
+            if (key === "Hours") {
                 if (!value) return [];
                 try { return JSON.parse(value); } catch { return []; }
             }
@@ -149,8 +149,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
                 return parsePlacePhotoManifests(value);
             }
 
-            // Parse Operating Hours JSON array from Airtable
-            if (key === "Operating Hours") {
+            // Parse Hours JSON array from Airtable
+            if (key === "Hours") {
                 if (!value) return [];
                 if (Array.isArray(value)) return value;
                 try { return JSON.parse(value); } catch { return []; }
@@ -194,7 +194,8 @@ const mapRecordToPlace = (record: any, isCSV: boolean = false): Place => {
         appleMapsProfileURL: getField("Apple Maps Profile URL"),
         photos: getField("Photos"),
         comments: getField("Comments"),
-        operatingHours: getField("Operating Hours"),
+        hours: getField("Hours"),
+        hoursType: getField("Hours Type"),
         latitude: getField("Latitude"),
         longitude: getField("Longitude"),
         createdDate: getField("Created Time"),

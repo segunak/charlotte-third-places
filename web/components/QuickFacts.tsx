@@ -1,9 +1,9 @@
-import React, { FC, useState, useMemo } from "react";
-import { cn } from "@/lib/utils";
 import { Icons } from "@/components/Icons";
-import { Badge } from "@/components/ui/badge";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
-import { getHoursStatus, type HoursStatus } from "@/lib/operating-hours";
+import { Badge } from "@/components/ui/badge";
+import { getHoursStatus, type HoursStatus } from "@/lib/hours";
+import { cn } from "@/lib/utils";
+import React, { FC, useMemo, useState } from "react";
 
 interface QuickFactsProps {
     address: string;
@@ -13,7 +13,8 @@ interface QuickFactsProps {
     parking: string[];
     freeWiFi: string;
     hasCinnamonRolls: string;
-    operatingHours?: string[];
+    hours?: string[];
+    hoursType?: string;
     tags?: string[];
     instagram?: string;
     tiktok?: string;
@@ -110,11 +111,15 @@ const dayAbbreviations: Record<string, string> = {
     "Saturday": "Sat",
 };
 
-const HoursValue: FC<{ hours: string[] }> = ({ hours }) => {
+const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursType }) => {
     const [expanded, setExpanded] = useState(false);
     const status = useMemo<HoursStatus>(() => getHoursStatus(hours), [hours]);
 
     if (hours.length === 0) {
+        if (hoursType === "Event Based") {
+            return <span className="text-sm text-muted-foreground">Event Based</span>;
+        }
+
         return <span className="text-sm text-muted-foreground">Not available</span>;
     }
 
@@ -304,7 +309,8 @@ export const QuickFacts: FC<QuickFactsProps> = ({
     parking,
     freeWiFi,
     hasCinnamonRolls,
-    operatingHours = [],
+    hours = [],
+    hoursType,
     tags = [],
     instagram,
     tiktok,
@@ -344,9 +350,9 @@ export const QuickFacts: FC<QuickFactsProps> = ({
                 key: 'hours',
                 label: 'Hours',
                 icon: attributeIcons.hours,
-                value: <HoursValue hours={operatingHours} />,
+                value: <HoursValue hours={hours} hoursType={hoursType} />,
                 tdClassName: TD_BASE_CLASS,
-                hidden: operatingHours.length === 0
+                hidden: hours.length === 0 && hoursType !== "Event Based"
             },
             {
                 key: 'neighborhood',
