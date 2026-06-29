@@ -109,6 +109,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "🥪",
     mapColor: "#D2691E", // Chocolate Brown
   },
+  "Donut Shop": {
+    icon: Icons.donut,
+    emoji: "🍩",
+    mapColor: "#E75480", // Thulian Pink (strawberry frosting)
+  },
   "Eatery": {
     icon: Icons.utensils,
     emoji: "🍴",
