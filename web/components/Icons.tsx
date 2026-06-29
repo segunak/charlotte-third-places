@@ -88,6 +88,7 @@ import {
 } from "react-icons/fa";
 import {
   GiCoffeeMug,
+  GiDonut,
   GiFruitBowl,
   GiPlantSeed
 } from "react-icons/gi";
@@ -155,6 +156,7 @@ export const Icons = {
   laptop: FaLaptop,
   arcade: SiApplearcade,
   breadSlice: FaBreadSlice,
+  donut: GiDonut,
   wineBottle: FaWineBottle,
   coffeeMug: GiCoffeeMug,
   teaCup: MdEmojiFoodBeverage,
