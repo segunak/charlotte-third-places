@@ -12,7 +12,7 @@ concurrency:
 
 jobs:
   test:
-    name: Run Vitest
+    name: Run Unit Tests
     runs-on: ubuntu-latest
     timeout-minutes: 15
     
@@ -21,7 +21,7 @@ jobs:
         working-directory: web
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v6
 
       - name: Setup Node.js
@@ -31,13 +31,13 @@ jobs:
           cache: 'npm'
           cache-dependency-path: web/package-lock.json
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Run tests with coverage
+      - name: Run Unit Tests With Coverage
         run: npm run test:ci
 
-      - name: Upload coverage report
+      - name: Upload Coverage Report
         uses: actions/upload-artifact@v7
         if: always()
         with:
