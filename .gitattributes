@@ -1,2 +1,4 @@
 *.tsx linguist-language=TypeScript
 *.css linguist-detectable=false
+
+.github/workflows/*.lock.yml linguist-generated=true merge=ours
