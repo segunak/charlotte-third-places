@@ -25,10 +25,10 @@ jobs:
     outputs:
       should-run: ${{ steps.check.outputs.run }}
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v6
 
-      - name: Check for auto-merge commit
+      - name: Check for Auto-Merge Commit
         id: check
         run: |
           # Always run for manual triggers
@@ -57,7 +57,7 @@ jobs:
         working-directory: web
 
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v6
 
       - name: Setup Node.js
@@ -67,10 +67,10 @@ jobs:
           cache: 'npm'
           cache-dependency-path: web/package-lock.json
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm ci
 
-      - name: Run Playwright tests
+      - name: Run Playwright Tests
         run: npx playwright test
         env:
           # Use the Vercel preview URL from deployment event, or input URL for manual triggers
@@ -78,7 +78,7 @@ jobs:
           # Bypass Vercel deployment protection for automated testing
           VERCEL_AUTOMATION_BYPASS_SECRET: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
 
-      - name: Upload Playwright report
+      - name: Upload Playwright Report
         uses: actions/upload-artifact@v7
         if: ${{ !cancelled() }}
         with:
@@ -86,7 +86,7 @@ jobs:
           path: web/playwright-report/
           retention-days: 30
 
-      - name: Upload test results
+      - name: Upload Test Results
         uses: actions/upload-artifact@v7
         if: failure()
         with:
