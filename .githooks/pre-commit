@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+staged_agentic_workflows="$(git diff --cached --name-only --diff-filter=ACM -- '.github/workflows/*.md')"
+
+if [ -z "$staged_agentic_workflows" ]; then
+  exit 0
+fi
+
+if ! command -v gh >/dev/null 2>&1; then
+  echo "pre-commit: gh CLI is required to compile Agentic Workflow files." >&2
+  exit 1
+fi
+
+if ! gh aw --help >/dev/null 2>&1; then
+  echo "pre-commit: gh aw is required to compile Agentic Workflow files." >&2
+  echo "pre-commit: install GitHub Agentic Workflows before committing workflow source changes." >&2
+  exit 1
+fi
+
+while IFS= read -r file; do
+  [ -n "$file" ] || continue
+  [ -f "$file" ] || continue
+
+  if ! git diff --quiet -- "$file"; then
+    echo "pre-commit: $file has unstaged changes." >&2
+    echo "pre-commit: stage or stash them before compiling the Agentic Workflow lock file." >&2
+    exit 1
+  fi
+
+  lock_file="${file%.md}.lock.yml"
+
+  if [ -f "$lock_file" ] && ! git diff --quiet -- "$lock_file"; then
+    echo "pre-commit: $lock_file has unstaged changes." >&2
+    echo "pre-commit: stage or stash them before compiling from $file." >&2
+    exit 1
+  fi
+
+  echo "pre-commit: compiling $file"
+  gh aw compile "$file"
+
+  if [ ! -f "$lock_file" ]; then
+    echo "pre-commit: expected $lock_file after compiling $file, but it was not created." >&2
+    exit 1
+  fi
+
+  git add "$file" "$lock_file"
+  echo "pre-commit: staged $lock_file"
+done <<< "$staged_agentic_workflows"
