@@ -19,6 +19,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "🫐",
     mapColor: "#4B0082", // Indigo
   },
+  "Antique Store": {
+    icon: Icons.amphora,
+    emoji: "🏺",
+    mapColor: "#8B4513", // Saddle Brown
+  },
   "Arcade": {
     icon: Icons.arcade,
     emoji: "🕹️",
@@ -198,6 +203,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     icon: Icons.teaCup,
     emoji: "🍵",
     mapColor: "#00FF00", // Bright Green
+  },
+  "Thrift Store": {
+    icon: Icons.shirt,
+    emoji: "👕",
+    mapColor: "#008080", // Teal
   },
 };
 
