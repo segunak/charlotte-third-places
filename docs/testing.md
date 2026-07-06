@@ -9,7 +9,7 @@ The project uses a two-tier testing approach:
 1. **Unit & Component Tests** — Vitest + React Testing Library
 2. **End-to-End Tests (E2E)** — Playwright (Chromium only)
 
-Both tiers run in GitHub Actions CI. Unit tests run on every push and PR, while E2E tests run against Vercel preview deployments after they complete.
+Both tiers run in GitHub Actions CI. Unit tests run on every push and PR. E2E tests are a PR gate for `master`: they pass immediately when `web/` is unchanged, and otherwise wait for the Vercel preview deployment before running Playwright against the deployed URL.
 
 ## Tools
 
@@ -89,7 +89,13 @@ Runs `npm run test:ci` (Vitest with coverage) on push to `develop`/`master` and 
 
 **File**: [.github/workflows/e2e-tests.yml](../.github/workflows/e2e-tests.yml)
 
-Triggered by `deployment_status` event when Vercel preview deployment completes. Runs Playwright against the preview URL.
+Triggered by pull requests targeting `master`, with a manual `workflow_dispatch` URL override for ad hoc runs. The workflow checks whether `web/` changed relative to `master`:
+
+```bash
+git diff --quiet origin/master...HEAD -- web
+```
+
+If `web/` is unchanged, the E2E gate passes without running Playwright. If `web/` changed, the workflow waits for the Vercel preview deployment for the PR head SHA, then runs Playwright against that deployed preview URL.
 
 ## Branch Protection
 
