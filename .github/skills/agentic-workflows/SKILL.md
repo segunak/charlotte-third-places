@@ -9,6 +9,20 @@ Use this skill when a user asks to design, create, update, debug, or upgrade Git
 
 This skill is a dispatcher: identify the task type, load the matching workflow prompt/skill file, and follow it directly. Keep responses concise and ask a clarifying question if the correct prompt is unclear.
 
+## Model Selection Policy
+
+For gh-aw workflow creation or updates, default to explicit high-effort Opus unless the user explicitly chooses another model:
+
+```yaml
+# Docs: https://github.github.com/gh-aw/reference/model-tables/#model-aliases
+# Docs: https://github.github.com/gh-aw/specs/model-alias-specification/#61-effort
+engine:
+  id: copilot
+  model: "opus?effort=high"
+```
+
+If the user asks for GPT, research the current GitHub Agentic Workflows model alias documentation before choosing the model string. Use the latest documented GPT alias available through the Copilot gateway with `?effort=high`, state the exact `engine.id` and `engine.model` to the user, and ask when the model preference is ambiguous. If the user does not choose, use Opus high-effort.
+
 Read only the files you need:
 Load these files from `github/gh-aw` (they are not available locally).
 - `.github/aw/agentic-chat.md`

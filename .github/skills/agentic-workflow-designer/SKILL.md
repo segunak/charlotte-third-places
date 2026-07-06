@@ -92,14 +92,19 @@ Map to:
 - `secrets:` / `env:` wiring for integration tokens
 - GHES/GHEC settings such as `engine.api-target` and `aw.json` `ghes: true` (when applicable)
 
-### Phase 7: Engine (optional)
+### Phase 7: Engine and Model
 
-Ask only if ambiguous: **"Any AI engine preference?"**
+Default to the repository's explicit high-effort Opus policy unless the user explicitly asks for another model:
 
-If no preference, suggest default:
-- "I'd suggest Copilot since you haven't mentioned a preference. Sound good?"
+```yaml
+# Docs: https://github.github.com/gh-aw/reference/model-tables/#model-aliases
+# Docs: https://github.github.com/gh-aw/specs/model-alias-specification/#61-effort
+engine:
+  id: copilot
+  model: "opus?effort=high"
+```
 
-Map to `engine:` only when not default.
+If the user asks for GPT instead, research the current GitHub Agentic Workflows model alias docs before choosing the model string. Use the latest documented GPT alias available through the Copilot gateway with `?effort=high`; do not guess or hard-code an outdated GPT version. Always tell the user the exact `engine.id` and `engine.model` that will be used. If the model preference is ambiguous, ask whether they want Opus high-effort or the latest documented GPT high-effort model. If they do not choose, use Opus high-effort.
 
 ### Phase 8: Confirmation
 
@@ -357,7 +362,7 @@ Before final output, run this internal self-check:
 - [ ] Network access is scoped; avoid blanket wildcard entries
 - [ ] Trigger matches the user's intended activation event
 - [ ] Prompt instructs agent to call `noop` when no action is needed
-- [ ] Unnecessary defaults are omitted (for example `engine: copilot`)
+- [ ] Workflow uses explicit `engine.id: copilot` and `engine.model` (`opus?effort=high` by default, or the user-approved latest documented GPT high-effort alias)
 - [ ] If reading GitHub data, `steps:` pre-fetches compact JSON (DataOps)
 - [ ] `tools.github.mode` is `gh-proxy` unless broader MCP toolsets are explicitly needed
 - [ ] Only required toolsets are listed (avoid blanket toolset lists)

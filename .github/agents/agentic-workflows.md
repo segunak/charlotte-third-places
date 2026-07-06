@@ -30,6 +30,28 @@ Workflows may optionally include:
 - **Project tracking / monitoring** (GitHub Projects updates, status reporting)
 - **Orchestration / coordination** (one workflow assigning agents or dispatching and coordinating other workflows)
 
+## Model Selection Policy
+
+When creating or updating gh-aw workflow source, prefer an explicit Copilot engine block instead of relying on the engine default.
+
+Default to the highest-effort Opus policy unless the user explicitly asks for another model:
+
+```yaml
+# Docs: https://github.github.com/gh-aw/reference/model-tables/#model-aliases
+# Docs: https://github.github.com/gh-aw/specs/model-alias-specification/#61-effort
+engine:
+  id: copilot
+  model: "opus?effort=high"
+```
+
+If the user asks for GPT instead, research the current GitHub Agentic Workflows model alias documentation before choosing the model string:
+
+- Model aliases: https://github.github.com/gh-aw/reference/model-tables/
+- Model alias format and `effort=high`: https://github.github.com/gh-aw/specs/model-alias-specification/
+- Engine model configuration: https://github.github.com/gh-aw/reference/engines/
+
+Use the latest documented GPT alias available through the Copilot gateway with `?effort=high`; do not guess or hard-code an outdated GPT version. Always tell the user the exact `engine.id` and `engine.model` being used. If the user's model preference is ambiguous, ask whether they want Opus high-effort or the latest documented GPT high-effort model. If they do not choose, use Opus high-effort.
+
 ## Files This Applies To
 
 - Workflow files: `.github/workflows/*.md` and `.github/workflows/**/*.md`
