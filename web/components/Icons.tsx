@@ -12,6 +12,7 @@ import {
   FaCar,
   FaCat,
   FaCouch,
+  FaDog,
   FaFacebookF,
   FaGamepad,
   FaHashtag,
@@ -180,6 +181,7 @@ export const Icons = {
   pickleball: FaTableTennisPaddleBall,
   gem: FaGem,
   cat: FaCat,
+  dog: FaDog,
   shirt: FaShirt,
   amphora: GiAmphora,
   cinnamonRoll: (props: IconProps) => (
