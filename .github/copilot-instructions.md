@@ -62,6 +62,7 @@
 * Functions: camelCase (e.g., `fetchPlaces`)
 * Files: kebab-case for pages, PascalCase for components
 * CSS classes: Follow Tailwind utility patterns
+* YAML display names: In `.yml` and `.yaml` files, use Title Case for human-facing `name` values, workflow names, job names, step names, PR title prefixes, titles, and similar labels unless an external tool requires exact casing.
 
 ### State Management
 
