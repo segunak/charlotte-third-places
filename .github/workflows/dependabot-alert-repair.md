@@ -21,7 +21,11 @@ permissions:
   security-events: read
   vulnerability-alerts: read
 timeout-minutes: 90
-engine: copilot
+# Docs: https://github.github.com/gh-aw/reference/model-tables/#model-aliases
+# Docs: https://github.github.com/gh-aw/specs/model-alias-specification/#61-effort
+engine:
+  id: copilot
+  model: "opus?effort=high"
 tools:
   github:
     toolsets: [dependabot, repos, pull_requests]
