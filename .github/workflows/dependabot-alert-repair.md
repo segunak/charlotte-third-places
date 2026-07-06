@@ -41,6 +41,9 @@ network:
 # issue, or other GitHub action, then a separate permissioned job performs it.
 safe-outputs:
   github-token: ${{ secrets.GH_AW_GITHUB_TOKEN }}
+  # Do not create automatic failure-report issues for this workflow.
+  # Docs: https://github.github.com/gh-aw/reference/safe-outputs/#failure-issue-reporting-report-failure-as-issue
+  report-failure-as-issue: false
   create-pull-request:
     title-prefix: "[Dependabot Alert Repair] "
     labels: [dependencies, security]
@@ -48,10 +51,20 @@ safe-outputs:
     allowed-base-branches: [master]
     allowed-branches: [automation/dependabot-alert-repair]
     draft: false
+    # Do not fall back to creating an issue if PR creation is blocked.
+    # Docs: https://github.github.com/gh-aw/reference/safe-outputs-pull-requests/#pull-request-creation-create-pull-request
+    fallback-as-issue: false
     max: 1
     max-patch-files: 50
     max-patch-size: 4096
-    protected-files: request_review
+    # This workflow is explicitly designed to update dependency manifests and lockfiles.
+    # Keep protected-file review for other protected files, but allow dependency files.
+    # Docs: https://github.github.com/gh-aw/reference/safe-outputs-pull-requests/#protected-files
+    protected-files:
+      policy: request_review
+      exclude:
+        - package.json
+        - package-lock.json
     preserve-branch-name: true
     recreate-ref: true
     allowed-files:
