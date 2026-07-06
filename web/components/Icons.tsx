@@ -69,6 +69,7 @@ import {
   FaCross,
   FaCrown,
   FaDesktop,
+  FaDog,
   FaDollarSign,
   FaFilter,
   FaFolder,
@@ -178,6 +179,7 @@ export const Icons = {
   pickleball: FaTableTennisPaddleBall,
   gem: FaGem,
   cat: FaCat,
+  dog: FaDog,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"

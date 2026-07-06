@@ -166,6 +166,16 @@ describe('getPlaceHighlights - Tag-based badges', () => {
     expect(frenchBadge?.ariaLabel).toBe('French place')
   })
 
+  it('returns Dog Friendly badge with default priority', () => {
+    const place = createTestPlace({ tags: ['Dog Friendly'] })
+    const result = getPlaceHighlights(place)
+
+    const dogBadge = result.badges.find(b => b.key === 'dogFriendly')
+    expect(dogBadge).toBeDefined()
+    expect(dogBadge?.ariaLabel).toBe('Dog friendly')
+    expect(dogBadge?.priority).toBeUndefined()
+  })
+
   it('matches tag badges case-insensitively and trims whitespace', () => {
     const place = createTestPlace({ tags: [' french ', 'black owned'] })
     const result = getPlaceHighlights(place)
