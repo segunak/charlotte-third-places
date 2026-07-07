@@ -12,6 +12,7 @@ import {
   FaCar,
   FaCat,
   FaCouch,
+  FaDog,
   FaFacebookF,
   FaGamepad,
   FaHashtag,
@@ -26,6 +27,7 @@ import {
   FaMapPin,
   FaPalette,
   FaRegLightbulb,
+  FaShirt,
   FaShuffle,
   FaStore,
   FaSuperpowers,
@@ -87,6 +89,7 @@ import {
   FaWineBottle
 } from "react-icons/fa";
 import {
+  GiAmphora,
   GiCoffeeMug,
   GiDonut,
   GiFruitBowl,
@@ -178,6 +181,9 @@ export const Icons = {
   pickleball: FaTableTennisPaddleBall,
   gem: FaGem,
   cat: FaCat,
+  dog: FaDog,
+  shirt: FaShirt,
+  amphora: GiAmphora,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"

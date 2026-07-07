@@ -146,6 +146,15 @@ const DEFINITIONS: HighlightDefinition[] = [
         }
     },
     {
+        key: 'dogFriendly',
+        test: place => hasTag(place, 'Dog Friendly'),
+        badge: {
+            icon: <Icons.dog className="h-6 w-6 text-amber-900" />,
+            bgClass: 'bg-amber-100',
+            ariaLabel: 'Dog friendly'
+        }
+    },
+    {
         key: 'cinnamonRoll',
         test: p => ['Yes', 'TRUE', 'true'].includes(p.hasCinnamonRolls ?? ''),
         badge: {
