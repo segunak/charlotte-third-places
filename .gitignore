@@ -165,3 +165,7 @@ temp/
 storybook-static/
 
 .playwright-mcp
+
+# Local only stuff
+
+local/
