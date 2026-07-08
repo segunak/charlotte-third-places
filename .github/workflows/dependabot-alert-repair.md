@@ -25,7 +25,7 @@ timeout-minutes: 90
 # Docs: https://github.github.com/gh-aw/specs/model-alias-specification/#61-effort
 engine:
   id: copilot
-  model: agent?effort=high
+  model: claude-opus-4.8
 tools:
   github:
     toolsets: [dependabot, repos, pull_requests]
