@@ -209,6 +209,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "👕",
     mapColor: "#008080", // Teal
   },
+  "Yarn Store": {
+    icon: Icons.yarn,
+    emoji: "🧶",
+    mapColor: "#CD5C5C", // Indian Red
+  },
 };
 
 // Fallback values for unknown types
