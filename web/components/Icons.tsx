@@ -93,7 +93,8 @@ import {
   GiCoffeeMug,
   GiDonut,
   GiFruitBowl,
-  GiPlantSeed
+  GiPlantSeed,
+  GiWool
 } from "react-icons/gi";
 import {
   IoAlertCircle,
@@ -184,6 +185,7 @@ export const Icons = {
   dog: FaDog,
   shirt: FaShirt,
   amphora: GiAmphora,
+  yarn: GiWool,
   cinnamonRoll: (props: IconProps) => (
     <svg
       height="800px"
