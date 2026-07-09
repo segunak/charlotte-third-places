@@ -108,22 +108,14 @@ Manual `workflow_dispatch` runs should skip this time gate and continue immediat
 
 ## Branch Strategy
 
-This repository develops on `develop` and promotes to `master` by pull request.
+This repository develops product work on `develop` and promotes to `master` by pull request. Dependabot security repair is different: it must target `master` directly so the PR contains only the dependency repair, not unrelated unreleased `develop` work. After the Dependabot PR merges to `master`, the repository's automerge workflow brings the fix back into `develop`.
 
-Before editing dependencies, work from the latest `origin/develop` and use the automation branch name `automation/dependabot-alert-repair`:
-
-```bash
-git fetch origin master develop
-git checkout -B automation/dependabot-alert-repair origin/develop
-```
-
-Record the existing `develop` to `master` delta before making changes:
+Before editing dependencies, work from the latest `origin/master` and use the automation branch name `automation/dependabot-alert-repair`:
 
 ```bash
-git log --oneline origin/master..origin/develop
+git fetch origin master
+git checkout -B automation/dependabot-alert-repair origin/master
 ```
-
-Include that commit list in the pull request body so the final PR is transparent about the current `develop` contents plus the dependency repair.
 
 ## Alert Inventory
 
@@ -231,7 +223,6 @@ automation/dependabot-alert-repair
 
 The pull request body must include:
 
-- the `origin/master..origin/develop` commit list
 - a table of all Dependabot alerts found
 - how each alert was classified: dependency update only, dependency update plus source migration, GitHub Actions reference update, or not safely fixable by automation
 - what packages, action references, source files, or test files were changed

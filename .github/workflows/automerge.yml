@@ -24,17 +24,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Merge master into develop
+    - name: Sync Master Into Develop
       run: |
-        git clone ${{env.MY_REPO}} -b ${{env.MY_BRANCH}} tmp
+        git clone ${{env.MY_REPO}} tmp
         cd tmp
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git config pull.rebase false
-        git pull ${{env.MASTER_REPO}} ${{env.MASTER_BRANCH}} --no-edit
-        if [ -n "$(git log origin/${{env.MY_BRANCH}}..${{env.MY_BRANCH}})" ]; then
-          git commit --amend -m "[auto-merge] Merge master into develop"
-          git push
+        git fetch origin ${{env.MASTER_BRANCH}} ${{env.MY_BRANCH}}
+        git checkout -B ${{env.MY_BRANCH}} origin/${{env.MY_BRANCH}}
+
+        if git merge-base --is-ancestor origin/${{env.MY_BRANCH}} origin/${{env.MASTER_BRANCH}}; then
+          git merge --ff-only origin/${{env.MASTER_BRANCH}}
+        else
+          git merge origin/${{env.MASTER_BRANCH}} --no-edit
+        fi
+
+        if [ -n "$(git log origin/${{env.MY_BRANCH}}..HEAD)" ]; then
+          git push origin ${{env.MY_BRANCH}}
         else
           echo "Already up to date. Nothing to merge."
         fi
