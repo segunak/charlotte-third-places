@@ -37,7 +37,6 @@ Load these files from `github/gh-aw` (they are not available locally).
 - `.github/aw/create-agentic-workflow.md`
 - `.github/aw/create-shared-agentic-workflow.md`
 - `.github/aw/debug-agentic-workflow.md`
-- `.github/aw/dependabot.md`
 - `.github/aw/deployment-status.md`
 - `.github/aw/experiments.md`
 - `.github/aw/github-agentic-workflows.md`
@@ -89,7 +88,6 @@ After loading the matching workflow prompt or skill, follow it directly:
 - Upgrade workflows and fix deprecations: `.github/aw/upgrade-agentic-workflows.md`
 - Create shared components or MCP wrappers: `.github/aw/create-shared-agentic-workflow.md`
 - Create report-generating workflows: `.github/aw/report.md`
-- Fix Dependabot manifest PRs: `.github/aw/dependabot.md`
 - Analyze coverage workflows: `.github/aw/test-coverage.md`
 - Render compact markdown charts: `.github/aw/asciicharts.md`
 - Map CLI commands to MCP usage: `.github/aw/cli-commands.md`
