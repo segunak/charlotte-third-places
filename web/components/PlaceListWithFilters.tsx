@@ -31,14 +31,14 @@ export function PlaceListWithFilters() {
     const [comingSoonOpen, setComingSoonOpen] = useState(false);
     const { openNow, setOpenNow, openNowCount } = useOpenNow();
 
-    // Pre-compute open-now places using a single timezone snapshot (2 Intl calls, not 2×N)
-    const openNowPlaces = useMemo(() => {
+    // Compute the open-now subset only while the toggle is active, reading a fresh timezone
+    // snapshot each time it recomputes. Depending on `openNow` ensures the set is re-evaluated
+    // at the moment the user flips the toggle rather than being frozen at mount time.
+    const displayPlaces = useMemo(() => {
+        if (!openNow) return places;
         const time = getCharlotteTimeNow();
         return places.filter(p => isPlaceOpenNow(p.hours ?? [], time));
-    }, [places]);
-
-    // When Open Now is active, DataTable receives only open places
-    const displayPlaces = openNow ? openNowPlaces : places;
+    }, [places, openNow]);
 
     // "Coming Soon" = places with operational status "Coming Soon" in Airtable.
     // This is a BUSINESS lifecycle concept (not yet open to the public), completely separate
