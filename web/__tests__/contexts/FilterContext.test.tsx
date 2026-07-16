@@ -16,6 +16,7 @@ import {
     useFilterActions,
     useFilterData,
     useFilters,
+    useOpenNow,
     usePlaces,
     useQuickSearch,
     useSort
@@ -25,7 +26,7 @@ import type { Place } from '@/lib/types'
 import { DEFAULT_SORT_OPTION, SortDirection, SortField } from '@/lib/types'
 import { act, render, renderHook, screen } from '@testing-library/react'
 import { ReactNode } from 'react'
-import { describe, expect, it } from 'vitest'
+import { afterEach, describe, expect, it, vi } from 'vitest'
 
 /**
  * Factory function to create test Place objects
@@ -939,5 +940,46 @@ describe('usePlaces - Dynamic Tag Enrichment', () => {
     const distinctTags = result.current.getDistinctValues('tags')
     expect(distinctTags).toContain('Open Late')
     expect(distinctTags).toContain('Open Early')
+  })
+})
+
+describe('useOpenNow - time freshness', () => {
+  afterEach(() => {
+    vi.useRealTimers()
+  })
+
+  it('recomputes openNowCount against current time when filters change', () => {
+    vi.useFakeTimers({ shouldAdvanceTime: true })
+    // Wednesday 8 PM ET (2026-07-15) — the cafe is open.
+    vi.setSystemTime(new Date('2026-07-16T00:00:00.000Z'))
+
+    const places = [
+      createMockPlace({
+        name: 'Evening Cafe',
+        hours: ['Wednesday: 9 AM - 10 PM', 'Thursday: 9 AM - 10 PM'],
+      }),
+    ]
+
+    const { result } = renderHook(
+      () => ({ openNow: useOpenNow(), quickSearch: useQuickSearch() }),
+      {
+        wrapper: ({ children }: { children: ReactNode }) => (
+          <FilterProvider places={places}>{children}</FilterProvider>
+        ),
+      }
+    )
+
+    // At mount (8 PM) the cafe counts as open.
+    expect(result.current.openNow.openNowCount).toBe(1)
+
+    // Advance to Thursday 3 AM ET — the cafe has long since closed. Any filter/search
+    // interaction recomputes the count against the fresh time rather than reusing the
+    // mount-time value.
+    vi.setSystemTime(new Date('2026-07-16T07:00:00.000Z'))
+    act(() => {
+      result.current.quickSearch.setQuickFilterText('Evening')
+    })
+
+    expect(result.current.openNow.openNowCount).toBe(0)
   })
 })

@@ -2,12 +2,15 @@ import {
     getClosingHour,
     getDayTimeRange,
     getHoursStatus,
+    getHoursStatusAt,
     getOpeningHour,
     injectDynamicTags,
     injectOpenLateTags,
     isOpenEarly,
     isOpenLate,
+    isPlaceOpenNow,
     OPEN_LATE_THRESHOLD_HOUR,
+    parseDayIntervals,
     parseHour24,
     parseTimeToMinutes,
 } from "@/lib/hours";
@@ -585,5 +588,131 @@ describe("getHoursStatus - all states", () => {
                     break;
             }
         }
+    });
+});
+
+describe("parseDayIntervals", () => {
+    it("returns empty array for Closed", () => {
+        expect(parseDayIntervals("Closed")).toEqual([]);
+    });
+
+    it("returns empty array for empty string", () => {
+        expect(parseDayIntervals("")).toEqual([]);
+    });
+
+    it("parses a single range", () => {
+        expect(parseDayIntervals("7 AM - 5 PM")).toEqual([{ open: 7 * 60, close: 17 * 60 }]);
+    });
+
+    it("preserves discrete intervals for split ranges (does not flatten the gap)", () => {
+        expect(parseDayIntervals("7 AM - 2 PM, 5 PM - 1 AM")).toEqual([
+            { open: 7 * 60, close: 14 * 60 },
+            { open: 17 * 60, close: 25 * 60 }, // 1 AM normalized past midnight
+        ]);
+    });
+
+    it("handles Open 24 hours", () => {
+        expect(parseDayIntervals("Open 24 hours")).toEqual([{ open: 0, close: 24 * 60 }]);
+    });
+
+    it("normalizes a midnight close to 24:00", () => {
+        expect(parseDayIntervals("4 PM - 12 AM")).toEqual([{ open: 16 * 60, close: 24 * 60 }]);
+    });
+
+    it("sorts intervals by opening time", () => {
+        const result = parseDayIntervals("5 PM - 1 AM, 7 AM - 2 PM");
+        expect(result[0].open).toBe(7 * 60);
+        expect(result[1].open).toBe(17 * 60);
+    });
+});
+
+describe("getHoursStatusAt - split ranges (gaps respected)", () => {
+    // Antagonist Coffee and Cocktails: open, mid-afternoon break, then evening service.
+    const antagonist = ["Wednesday: 7 AM - 2 PM, 5 PM - 1 AM"];
+
+    it("open during the first (morning) service period", () => {
+        const status = getHoursStatusAt(antagonist, { day: "Wednesday", totalMinutes: 12 * 60 });
+        expect(status.state).toBe("open");
+        if (status.state === "open") expect(status.closesAt).toBe("2 PM");
+    });
+
+    it("closing-soon near the end of the first period", () => {
+        const status = getHoursStatusAt(antagonist, { day: "Wednesday", totalMinutes: 13 * 60 + 30 });
+        expect(status.state).toBe("closing-soon");
+        if (status.state === "closing-soon") expect(status.closesAt).toBe("2 PM");
+    });
+
+    it("closed during the mid-afternoon gap between periods", () => {
+        const status = getHoursStatusAt(antagonist, { day: "Wednesday", totalMinutes: 15 * 60 });
+        expect(status.state).toBe("closed");
+        if (status.state === "closed") expect(status.opensAt).toBe("5 PM");
+    });
+
+    it("open during the second (evening) service period", () => {
+        const status = getHoursStatusAt(antagonist, { day: "Wednesday", totalMinutes: 20 * 60 });
+        expect(status.state).toBe("open");
+        if (status.state === "open") expect(status.closesAt).toBe("1 AM");
+    });
+});
+
+describe("getHoursStatusAt - overnight carryover from previous day", () => {
+    // Belmont Social House: closes at 2 AM, so early-morning hours belong to the prior day.
+    const belmont = ["Friday: 5 PM - 2 AM", "Saturday: 12 PM - 2 AM"];
+
+    it("open after midnight due to the previous day's 2 AM close", () => {
+        const status = getHoursStatusAt(belmont, { day: "Saturday", totalMinutes: 30 }); // 12:30 AM
+        expect(status.state).toBe("open");
+        if (status.state === "open") expect(status.closesAt).toBe("2 AM");
+    });
+
+    it("closing-soon in the final hour of the overnight period", () => {
+        const status = getHoursStatusAt(belmont, { day: "Saturday", totalMinutes: 90 }); // 1:30 AM
+        expect(status.state).toBe("closing-soon");
+        if (status.state === "closing-soon") expect(status.closesAt).toBe("2 AM");
+    });
+
+    it("closed after the overnight period ends, before today's opening", () => {
+        const status = getHoursStatusAt(belmont, { day: "Saturday", totalMinutes: 3 * 60 }); // 3 AM
+        expect(status.state).toBe("closed");
+        if (status.state === "closed") expect(status.opensAt).toBe("12 PM");
+    });
+
+    it("a midnight (12 AM) close does not spill into the next day", () => {
+        // Queen Park Social closes exactly at 12 AM, so 12:30 AM the next day is closed.
+        const queen = ["Wednesday: 4 PM - 12 AM", "Thursday: 4 PM - 12 AM"];
+        const status = getHoursStatusAt(queen, { day: "Thursday", totalMinutes: 30 });
+        expect(status.state).toBe("closed");
+        if (status.state === "closed") expect(status.opensAt).toBe("4 PM");
+    });
+});
+
+describe("isPlaceOpenNow - reported Open Now cases", () => {
+    const queen = [
+        "Monday: 4 PM - 12 AM", "Tuesday: 4 PM - 12 AM", "Wednesday: 4 PM - 12 AM",
+        "Thursday: 4 PM - 12 AM", "Friday: 4 PM - 1 AM", "Saturday: 11 AM - 1 AM",
+        "Sunday: 11 AM - 10 PM",
+    ];
+    const antagonist = [
+        "Monday: 7 AM - 2 PM, 5 PM - 11 PM", "Tuesday: 7 AM - 2 PM",
+        "Wednesday: 7 AM - 2 PM, 5 PM - 1 AM", "Thursday: 7 AM - 2 PM, 5 PM - 1 AM",
+        "Friday: 7 AM - 2 PM, 5 PM - 1 AM", "Saturday: 8 AM - 2 PM, 5 PM - 1 AM",
+        "Sunday: 8 AM - 2 PM, 5 PM - 11 PM",
+    ];
+
+    it("both are open late on Wednesday night", () => {
+        const wed1130pm = { day: "Wednesday", totalMinutes: 23 * 60 + 30 };
+        expect(isPlaceOpenNow(queen, wed1130pm)).toBe(true);
+        expect(isPlaceOpenNow(antagonist, wed1130pm)).toBe(true);
+    });
+
+    it("both are closed at 2 AM Thursday (the reported bug)", () => {
+        const thu2am = { day: "Thursday", totalMinutes: 2 * 60 };
+        expect(isPlaceOpenNow(queen, thu2am)).toBe(false);
+        expect(isPlaceOpenNow(antagonist, thu2am)).toBe(false);
+    });
+
+    it("Antagonist is closed during its 2-5 PM gap on Wednesday", () => {
+        const wed3pm = { day: "Wednesday", totalMinutes: 15 * 60 };
+        expect(isPlaceOpenNow(antagonist, wed3pm)).toBe(false);
     });
 });

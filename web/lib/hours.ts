@@ -148,6 +148,39 @@ function getDayTimeRange(hoursStr: string): { openMinutes: number; closeMinutes:
     return { openMinutes, closeMinutes };
 }
 
+/**
+ * Parse a day's hours string into discrete open intervals (minutes since midnight).
+ * Unlike getDayTimeRange, which flattens to first-open/last-close, this preserves each
+ * range separately so gaps between service periods (e.g. "7 AM - 2 PM, 5 PM - 1 AM") are
+ * respected rather than treated as one continuous span. Past-midnight closes are normalized
+ * to > 1440 (e.g. 1 AM -> 1500) so overnight ranges can be detected by callers. Returns
+ * intervals sorted by opening time; an empty array for Closed / unparseable input.
+ */
+function parseDayIntervals(hoursStr: string): Array<{ open: number; close: number }> {
+    if (!hoursStr) return [];
+    const lower = hoursStr.toLowerCase();
+    if (lower === "closed") return [];
+    if (lower.includes("open 24 hours")) return [{ open: 0, close: 24 * 60 }];
+
+    const intervals: Array<{ open: number; close: number }> = [];
+    for (const rangeStr of hoursStr.split(",")) {
+        const range = rangeStr.trim();
+        const dash = range.indexOf(" - ");
+        if (dash === -1) continue;
+        const open = parseTimeToMinutes(range.substring(0, dash).trim());
+        let close = parseTimeToMinutes(range.substring(dash + 3).trim());
+        if (open === null || close === null) continue;
+        // Past-midnight close (e.g. 5 PM - 1 AM). The `< 6 AM` guard mirrors getDayTimeRange
+        // so malformed same-day ranges aren't mistaken for overnight ones.
+        if (close <= open && close < 6 * 60) {
+            close += 24 * 60;
+        }
+        intervals.push({ open, close });
+    }
+
+    return intervals.sort((a, b) => a.open - b.open);
+}
+
 /** Format a minutes-since-midnight value to display time like "7 AM" or "9:30 PM". */
 function formatMinutesToTime(totalMins: number): string {
     const m = totalMins % (24 * 60);
@@ -207,6 +240,30 @@ function getHoursStatusAt(hours: string[], time: CharlotteTime): HoursStatus {
 
     const { day, totalMinutes: nowTotalMinutes } = time;
 
+    // 1. Overnight carryover: a previous-day range may extend past midnight into today
+    //    (e.g. yesterday "5 PM - 1 AM" and it is now 12:30 AM). Check this before today's
+    //    line so a place that is genuinely still open reads as open, not closed.
+    const dayIdx = DAYS.indexOf(day as typeof DAYS[number]);
+    if (dayIdx !== -1) {
+        const prevDay = DAYS[(dayIdx + 6) % 7];
+        const prevLine = getTodayLine(hours, prevDay);
+        if (prevLine) {
+            for (const interval of parseDayIntervals(getHoursFromLine(prevLine))) {
+                if (interval.close > 24 * 60) {
+                    const carryCloseMinutes = interval.close - 24 * 60;
+                    if (nowTotalMinutes < carryCloseMinutes) {
+                        const minutesUntilClose = carryCloseMinutes - nowTotalMinutes;
+                        const closesAtStr = formatMinutesToTime(carryCloseMinutes);
+                        return minutesUntilClose <= OPENING_OR_CLOSING_SOON_MINUTES
+                            ? { state: "closing-soon", closesAt: closesAtStr }
+                            : { state: "open", closesAt: closesAtStr };
+                    }
+                }
+            }
+        }
+    }
+
+    // 2. Today's schedule.
     const todayLine = getTodayLine(hours, day);
     if (!todayLine) return { state: "unknown" };
 
@@ -216,32 +273,34 @@ function getHoursStatusAt(hours: string[], time: CharlotteTime): HoursStatus {
         return { state: "closed-today", opensAt };
     }
 
-    const range = getDayTimeRange(hoursStr);
-    if (!range) return { state: "unknown" };
+    const intervals = parseDayIntervals(hoursStr);
+    if (intervals.length === 0) return { state: "unknown" };
 
-    const { openMinutes, closeMinutes } = range;
-
-    if (nowTotalMinutes < openMinutes) {
-        const minutesUntilOpen = openMinutes - nowTotalMinutes;
-        if (minutesUntilOpen <= OPENING_OR_CLOSING_SOON_MINUTES) {
-            return { state: "opening-soon", opensAt: formatMinutesToTime(openMinutes) };
+    // Currently within one of today's intervals? Intervals are discrete, so the gap
+    // between service periods (e.g. a 2 PM - 5 PM break) correctly reads as closed.
+    for (const interval of intervals) {
+        if (nowTotalMinutes >= interval.open && nowTotalMinutes < interval.close) {
+            const minutesUntilClose = interval.close - nowTotalMinutes;
+            const closesAtStr = formatMinutesToTime(interval.close);
+            return minutesUntilClose <= OPENING_OR_CLOSING_SOON_MINUTES
+                ? { state: "closing-soon", closesAt: closesAtStr }
+                : { state: "open", closesAt: closesAtStr };
         }
-        return { state: "closed", opensAt: formatMinutesToTime(openMinutes) };
     }
 
-    if (nowTotalMinutes >= closeMinutes) {
-        const opensAt = findNextOpenDay(hours, day);
-        return { state: "closed", opensAt };
+    // Not open now — find the next interval that opens later today (intervals are sorted).
+    for (const interval of intervals) {
+        if (nowTotalMinutes < interval.open) {
+            const minutesUntilOpen = interval.open - nowTotalMinutes;
+            return minutesUntilOpen <= OPENING_OR_CLOSING_SOON_MINUTES
+                ? { state: "opening-soon", opensAt: formatMinutesToTime(interval.open) }
+                : { state: "closed", opensAt: formatMinutesToTime(interval.open) };
+        }
     }
 
-    const minutesUntilClose = closeMinutes - nowTotalMinutes;
-    const closesAtStr = formatMinutesToTime(closeMinutes);
-
-    if (minutesUntilClose <= OPENING_OR_CLOSING_SOON_MINUTES) {
-        return { state: "closing-soon", closesAt: closesAtStr };
-    }
-
-    return { state: "open", closesAt: closesAtStr };
+    // Past all of today's intervals — look forward to the next open day.
+    const opensAt = findNextOpenDay(hours, day);
+    return { state: "closed", opensAt };
 }
 
 /**
@@ -385,7 +444,7 @@ export const injectOpenLateTags = injectDynamicTags;
 // EXPORTS - backward compatible
 // ============================================================================
 
-export { getClosingHour, getCurrentDayInCharlotte, getDayTimeRange, getOpeningHour, OPEN_EARLY_THRESHOLD_HOUR, OPEN_LATE_THRESHOLD_HOUR, OPENING_OR_CLOSING_SOON_MINUTES, parseHour24, parseTimeToMinutes };
+export { getClosingHour, getCurrentDayInCharlotte, getDayTimeRange, getOpeningHour, OPEN_EARLY_THRESHOLD_HOUR, OPEN_LATE_THRESHOLD_HOUR, OPENING_OR_CLOSING_SOON_MINUTES, parseDayIntervals, parseHour24, parseTimeToMinutes };
 
 // New exports for batch callers (PlaceListWithFilters Open Now, PlacePageClient)
     export { getHoursStatusAt, isOpenEarlyAt, isOpenLateAt };
