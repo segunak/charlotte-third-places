@@ -34,6 +34,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "🖼️",
     mapColor: "#FF00DC", // Vivid Magenta
   },
+  "Arts Center": {
+    icon: Icons.palette,
+    emoji: "🎭",
+    mapColor: "#C026D3", // Deep Fuchsia
+  },
   "Bakery": {
     icon: Icons.breadSlice,
     emoji: "🍞",
@@ -153,6 +158,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     icon: Icons.couch,
     emoji: "🛋️",
     mapColor: "#708090", // Slate Gray
+  },
+  "Makerspace": {
+    icon: Icons.lightbulb,
+    emoji: "🛠️",
+    mapColor: "#0F766E", // Deep Teal
   },
   "Market": {
     icon: Icons.store,
