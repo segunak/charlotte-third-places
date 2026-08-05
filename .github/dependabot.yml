@@ -1,0 +1,22 @@
+version: 2
+
+updates:
+  - package-ecosystem: "npm"
+    directories:
+      - "/web"
+      - "/mobile"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "America/New_York"
+    versioning-strategy: "increase-if-necessary"
+    groups:
+      all-version-updates:
+        applies-to: "version-updates"
+        patterns:
+          - "*"
+      all-security-updates:
+        applies-to: "security-updates"
+        patterns:
+          - "*"
