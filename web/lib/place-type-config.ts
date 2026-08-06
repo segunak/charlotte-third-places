@@ -120,7 +120,7 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     mapColor: "#D2691E", // Chocolate Brown
   },
   "Dessert Shop": {
-    icon: Icons.cookie,
+    icon: Icons.cake,
     emoji: "🍰",
     mapColor: "#C2416C", // Raspberry Rose
   },
