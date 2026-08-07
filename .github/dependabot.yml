@@ -11,11 +11,24 @@ updates:
       time: "09:00"
       timezone: "America/New_York"
     versioning-strategy: "increase-if-necessary"
+    # Disable version-update PRs. Security-update PRs are not subject to this limit.
+    open-pull-requests-limit: 0
+
+    # If enabled, this would allow only semantic-version patch updates and group
+    # them into one PR. Set open-pull-requests-limit above to a positive number,
+    # then uncomment both the allow rule and patch-version-updates group.
+    # allow:
+    #   - dependency-name: "*"
+    #     update-types:
+    #       - "version-update:semver-patch"
+
     groups:
-      all-version-updates:
-        applies-to: "version-updates"
-        patterns:
-          - "*"
+      # patch-version-updates:
+      #   applies-to: "version-updates"
+      #   patterns:
+      #     - "*"
+      #   update-types:
+      #     - "patch"
       all-security-updates:
         applies-to: "security-updates"
         patterns:
