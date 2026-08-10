@@ -1,5 +1,7 @@
 # Copilot Instructions
 
+Use [ASD-STE100 Simplified Technical English](https://en.wikipedia.org/wiki/Simplified_Technical_English) in all responses, documentation, code, and literally everything you generate.
+
 ## Project Overview
 
 * **Name:** Charlotte Third Places
