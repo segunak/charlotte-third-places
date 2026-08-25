@@ -1,4 +1,4 @@
-import { test, expect, Locator, Page } from '@playwright/test'
+import { expect, Locator, Page, test } from '@playwright/test'
 
 /**
  * COMPREHENSIVE Filter and Sort E2E Tests
@@ -104,10 +104,10 @@ async function openMobilePickerModal(page: Page, label: string): Promise<Locator
 }
 
 async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator> {
-  const browseSection = page.getByTestId('browse-section')
+  const listSection = page.locator('#list-section')
   const picker = label === 'Tags'
-    ? browseSection.getByRole('button', { name: /^More Tags/ })
-    : browseSection.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+    ? listSection.getByRole('button', { name: /^More Tags/ })
+    : listSection.getByRole('button', { name: label, exact: true })
 
   await expect(picker).toBeVisible()
   await picker.click()
