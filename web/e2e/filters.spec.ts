@@ -76,51 +76,45 @@ async function expectTagsMatchMode(modal: Locator) {
   await expect(modal.getByText('Has All Types')).toHaveCount(0)
 }
 
-async function openMobileFilterDrawer(page: Page): Promise<Locator | null> {
-  const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
+async function openMobileFilterDrawer(page: Page): Promise<Locator> {
+  const filterButton = page.getByRole('button', { name: 'More Filters', exact: true })
+  await expect(filterButton).toBeVisible()
+  await filterButton.click()
 
-  if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-    await filterButton.click()
-    await page.waitForTimeout(500)
-
-    const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').filter({ hasText: 'Filters' }).last()
-    await expect(drawer).toBeVisible({ timeout: 5000 })
-    return drawer
-  }
-
-  return null
+  const drawer = page.locator('[data-slot="drawer-content"]').last()
+  await expect(drawer).toBeVisible({ timeout: 5000 })
+  return drawer
 }
 
-async function openMobilePickerModal(page: Page, label: string): Promise<Locator | null> {
+async function openMobilePickerModal(page: Page, label: string): Promise<Locator> {
   const drawer = await openMobileFilterDrawer(page)
-  if (!drawer) return null
+  const sectionLabel = label === 'Name' ? 'Place Name' : label
+  const section = drawer.locator(`section[aria-label="${sectionLabel}"]`)
+  const picker = label === 'Name'
+    ? section.getByRole('button', { name: 'Search Places', exact: true })
+    : section.locator('button[aria-haspopup="dialog"]')
 
-  const picker = drawer.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+  await expect(picker).toBeVisible()
+  await picker.click()
 
-  if (await picker.count() > 0 && await picker.isVisible()) {
-    await picker.click({ force: true })
-
-    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
-    await expect(modal).toBeVisible({ timeout: 5000 })
-    return modal
-  }
-
-  return null
+  const modalTitle = label === 'Name' ? 'Choose a Place' : `Select ${label}`
+  const modal = page.getByRole('dialog').filter({ hasText: modalTitle }).last()
+  await expect(modal).toBeVisible({ timeout: 5000 })
+  return modal
 }
 
-async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator | null> {
+async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator> {
   const browseSection = page.getByTestId('browse-section')
-  const picker = browseSection.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+  const picker = label === 'Tags'
+    ? browseSection.getByRole('button', { name: /^More Tags/ })
+    : browseSection.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
 
-  if (await picker.count() > 0 && await picker.isVisible()) {
-    await picker.click({ force: true })
+  await expect(picker).toBeVisible()
+  await picker.click()
 
-    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
-    await expect(modal).toBeVisible({ timeout: 5000 })
-    return modal
-  }
-
-  return null
+  const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
+  await expect(modal).toBeVisible({ timeout: 5000 })
+  return modal
 }
 
 // ============================================================================
@@ -234,8 +228,7 @@ test.describe('Homepage Filters (Desktop)', () => {
         await expect(modal).toBeVisible()
         await modal.getByRole('button', { name: /done/i }).click()
         
-        await expect(tagsFilter).toContainText(/1 selected/i)
-        await expect(tagsFilter).toHaveClass(/bg-primary/)
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
@@ -627,140 +620,88 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Filter drawer opens on mobile', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      await expect(drawer).toBeVisible({ timeout: 3000 })
-    }
+    await openMobileFilterDrawer(page)
   })
 
   test('Mobile picker modal opens for Name filter', async ({ page }) => {
-    const modal = await openMobilePickerModal(page, 'Name')
-
-    if (modal) {
-      await page.keyboard.press('Escape')
-    }
+    await openMobilePickerModal(page, 'Name')
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Neighborhood filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Neighborhood')
 
-    if (modal) {
-      await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
-      await expect(modal.getByText('Has All Tags')).toHaveCount(0)
-      await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
+    await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
+    await expect(modal.getByText('Has All Tags')).toHaveCount(0)
+    await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Type filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Type')
 
-    if (modal) {
-      await expectTypeMatchMode(modal)
+    await expectTypeMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile quick Type picker defaults to Has Any Type', async ({ page }) => {
     const modal = await openMobileQuickPickerModal(page, 'Type')
 
-    if (modal) {
-      await expectTypeMatchMode(modal)
+    await expectTypeMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Tags filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Tags')
 
-    if (modal) {
-      await expectTagsMatchMode(modal)
+    await expectTagsMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile quick Tags picker honors Has Any Tag selection', async ({ page }) => {
     const modal = await openMobileQuickPickerModal(page, 'Tags')
 
-    if (modal) {
-      const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
-      const allTags = modal.getByRole('button', { name: 'Has All Tags' })
+    const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
+    const allTags = modal.getByRole('button', { name: 'Has All Tags' })
 
-      await expectTagsMatchMode(modal)
-      await anyTag.click()
-      await expect(anyTag).toHaveAttribute('aria-pressed', 'true')
-      await expect(allTags).toHaveAttribute('aria-pressed', 'false')
+    await expectTagsMatchMode(modal)
+    await anyTag.click()
+    await expect(anyTag).toHaveAttribute('aria-pressed', 'true')
+    await expect(allTags).toHaveAttribute('aria-pressed', 'false')
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile chip filters work in drawer - Size', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const smallButton = drawer.getByRole('button', { name: 'Small', exact: true })
-        if (await smallButton.count() > 0 && await smallButton.isVisible()) {
-          await smallButton.click()
-          await expect(smallButton).toHaveClass(/bg-primary/)
-        }
-      }
-    }
+    const drawer = await openMobileFilterDrawer(page)
+    const smallButton = drawer.getByRole('group', { name: 'Size' }).getByRole('button', { name: 'Small', exact: true })
+
+    await expect(smallButton).toBeVisible()
+    await smallButton.click()
+    await expect(smallButton).toHaveAttribute('aria-pressed', 'true')
   })
 
   test('Mobile chip filters work in drawer - Parking', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const freeButton = drawer.getByRole('button', { name: 'Free', exact: true })
-        if (await freeButton.count() > 0 && await freeButton.isVisible()) {
-          await freeButton.click()
-          await expect(freeButton).toHaveClass(/bg-primary/)
-        }
-      }
-    }
+    const drawer = await openMobileFilterDrawer(page)
+    const freeButton = drawer.getByRole('group', { name: 'Parking' }).getByRole('button', { name: 'Free', exact: true })
+
+    await expect(freeButton).toBeVisible()
+    await freeButton.click()
+    await expect(freeButton).toHaveAttribute('aria-pressed', 'true')
   })
 
   test('Mobile chip filters work in drawer - Has Cinnamon Rolls', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const cinnamonLabel = drawer.getByText('Has Cinnamon Rolls')
-        if (await cinnamonLabel.count() > 0) {
-          await cinnamonLabel.scrollIntoViewIfNeeded()
-          const section = cinnamonLabel.locator('..')
-          const yesInSection = section.getByRole('button', { name: 'Yes', exact: true })
-          if (await yesInSection.count() > 0 && await yesInSection.isVisible()) {
-            await yesInSection.click()
-            await expect(yesInSection).toHaveClass(/bg-primary/)
-          }
-        }
-      }
-    }
+    const drawer = await openMobileFilterDrawer(page)
+    const yesButton = drawer.getByRole('group', { name: 'Has Cinnamon Rolls' }).getByRole('button', { name: 'Yes', exact: true })
+
+    await yesButton.scrollIntoViewIfNeeded()
+    await expect(yesButton).toBeVisible()
+    await yesButton.click()
+    await expect(yesButton).toHaveAttribute('aria-pressed', 'true')
   })
 })
 
