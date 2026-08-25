@@ -48,6 +48,7 @@ Use [ASD-STE100 Simplified Technical English](https://en.wikipedia.org/wiki/Simp
 * Use shadcn/ui components as the foundation for UI elements
 * Implement responsive design mobile-first with Tailwind CSS
 * Use semantic HTML and proper accessibility attributes
+* For UI/UX design work, study relevant patterns in widely used consumer apps such as Google Maps, Airbnb, Zillow, Booking.com, Spotify, Uber, Lyft, and major social apps. Adapt the best patterns to this product, its users, and its existing design system.
 
 ### Icons
 

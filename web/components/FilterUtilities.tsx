@@ -416,7 +416,7 @@ export function OpenNowToggle({ className }: { className?: string }) {
     );
 }
 
-export function FilterResetButton({ disabled, variant, fullWidth = true, className }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string }) {
+export function FilterResetButton({ disabled, variant, fullWidth = true, className, showIcon = false }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string; showIcon?: boolean }) {
     const { resetAll } = useFilterActions();
 
     const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
@@ -438,6 +438,7 @@ export function FilterResetButton({ disabled, variant, fullWidth = true, classNa
             onClick={handleResetFilters}
             disabled={disabled}
         >
+            {showIcon && <Icons.close className="h-3.5 w-3.5 shrink-0" />}
             Reset Filters
         </Button>
     );
@@ -481,16 +482,13 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
 
     // Mobile: use SearchablePickerModal
     if (isMobile && SORT_USES_MOBILE_PICKER) {
-        const isDefaultSort = currentSortKey === defaultSortKey;
         return (
             <div className={cn(maxWidth, className)}>
                 <button
                     type="button"
                     className={cn(
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-0 focus:shadow-none disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
-                        isDefaultSort
-                            ? "text-muted-foreground font-normal"
-                            : "font-bold bg-primary text-primary-foreground"
+                        "text-foreground font-normal"
                     )}
                     onClick={() => setPickerOpen(true)}
                     aria-haspopup="dialog"

@@ -18,12 +18,12 @@ import { test, expect, Locator, Page } from '@playwright/test'
  * 9. Has Cinnamon Rolls - Chip filter (Yes/No/Sometimes)
  * 
  * SORT OPTIONS (from SORT_DEFS in lib/filters.ts):
- * 1. Name (A-Z)
- * 2. Name (Z-A)
- * 3. Date Added (Old to New)
- * 4. Date Added (New to Old)
- * 5. Last Updated (Old to New)
- * 6. Last Updated (New to Old)
+ * 1. Name, A to Z
+ * 2. Name, Z to A
+ * 3. Date Added, Oldest First
+ * 4. Date Added, Newest First
+ * 5. Last Updated, Oldest First
+ * 6. Last Updated, Newest First
  */
 
 // Helper function to find a chip filter section by label and click a chip value
@@ -369,7 +369,7 @@ test.describe('Homepage Sort (Desktop)', () => {
     await expect(browseSection).toBeVisible({ timeout: 60000 })
   })
 
-  test('Sort by Name (A-Z)', async ({ page }) => {
+  test('Sort by Name, A to Z', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -379,15 +379,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Name \(A-Z\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Name, A to Z/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Name \(A-Z\)/i)
+        await expect(sortTrigger).toContainText(/Name, A to Z/i)
       }
     }
   })
 
-  test('Sort by Name (Z-A)', async ({ page }) => {
+  test('Sort by Name, Z to A', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -397,15 +397,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Name \(Z-A\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Name, Z to A/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Name \(Z-A\)/i)
+        await expect(sortTrigger).toContainText(/Name, Z to A/i)
       }
     }
   })
 
-  test('Sort by Date Added (Old to New)', async ({ page }) => {
+  test('Sort by Date Added, Oldest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -415,15 +415,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Date Added \(Old to New\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Date Added, Oldest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Date Added \(Old to New\)/i)
+        await expect(sortTrigger).toContainText(/Date Added, Oldest First/i)
       }
     }
   })
 
-  test('Sort by Date Added (New to Old)', async ({ page }) => {
+  test('Sort by Date Added, Newest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -433,15 +433,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Date Added \(New to Old\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Date Added, Newest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Date Added \(New to Old\)/i)
+        await expect(sortTrigger).toContainText(/Date Added, Newest First/i)
       }
     }
   })
 
-  test('Sort by Last Updated (Old to New)', async ({ page }) => {
+  test('Sort by Last Updated, Oldest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date|Last/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -451,15 +451,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated \(Old to New\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated, Oldest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Last Updated \(Old to New\)/i)
+        await expect(sortTrigger).toContainText(/Last Updated, Oldest First/i)
       }
     }
   })
 
-  test('Sort by Last Updated (New to Old)', async ({ page }) => {
+  test('Sort by Last Updated, Newest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date|Last/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -469,10 +469,10 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated \(New to Old\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated, Newest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Last Updated \(New to Old\)/i)
+        await expect(sortTrigger).toContainText(/Last Updated, Newest First/i)
       }
     }
   })

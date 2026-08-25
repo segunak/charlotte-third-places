@@ -15,6 +15,8 @@ interface BaseSearchablePickerModalProps {
   placeholder?: string;
   /** Hide the search input (default: true) */
   showSearch?: boolean;
+  /** Search input placeholder (default: "Search...") */
+  searchPlaceholder?: string;
   /** Custom title (default: "Select {label}") */
   title?: string;
   /** Map display option to a key value on select (default: identity) */
@@ -28,6 +30,8 @@ interface SingleSelectPickerProps extends BaseSearchablePickerModalProps {
   onSelect: (value: string) => void;
   /** Hide the "All" default option (default: true) */
   showDefaultOption?: boolean;
+  /** Label for the default option (default: "All") */
+  defaultOptionLabel?: string;
 }
 
 // Multi-select mode props
@@ -62,6 +66,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
     label,
     placeholder,
     showSearch = true,
+    searchPlaceholder = "Search...",
     title,
     optionKey,
     multiple = false,
@@ -75,6 +80,9 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
   const singleValue = isMultiple ? "" : (props as SingleSelectPickerProps).value;
   const multiValue = isMultiple ? (props as MultiSelectPickerProps).value : [];
   const showDefaultOption = !isMultiple && ((props as SingleSelectPickerProps).showDefaultOption ?? true);
+  const defaultOptionLabel = !isMultiple
+    ? (props as SingleSelectPickerProps).defaultOptionLabel ?? "All"
+    : "All";
   const matchMode = isMultiple ? (props as MultiSelectPickerProps).matchMode : undefined;
   const onMatchModeChange = isMultiple ? (props as MultiSelectPickerProps).onMatchModeChange : undefined;
   const matchModeHint = isMultiple ? (props as MultiSelectPickerProps).matchModeHint : undefined;
@@ -169,7 +177,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                 value={search}
                 autoFocus={false}
                 onChange={(e) => setSearch(e.target.value)}
-                placeholder="Search..."
+                placeholder={searchPlaceholder}
                 className="w-full pl-10 bg-muted/30"
               />
             </div>
@@ -224,7 +232,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
                   onClick={() => handleSingleSelect("all")}
                   data-selected={singleValue === "all" ? "" : undefined}
                 >
-                  All
+                  {defaultOptionLabel}
                 </Button>
               </li>
             )}

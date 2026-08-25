@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useFilters, useOpenNow } from "@/contexts/FilterContext";
 import { FilterQuickSearch, FilterSelect, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
+import { PopularTagFilters } from "@/components/PopularTagFilters";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
 import { Place } from "@/lib/types";
@@ -69,24 +70,18 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             placeholder={filters.size.placeholder}
                             predefinedOrder={filters.size.predefinedOrder}
                         />
-                        <FilterSelect
-                            field="tags"
-                            value={filters.tags.value}
-                            label={filters.tags.label}
-                            placeholder={filters.tags.placeholder}
-                            predefinedOrder={filters.tags.predefinedOrder}
-                            matchMode={filters.tags.matchMode}
-                        />
+                        <PopularTagFilters />
                     </div>
 
                     {/* Action buttons */}
                     <div className="grid grid-cols-2 gap-2">
-                        <FilterResetButton variant="outline" className="h-11 rounded-full" />
+                        <FilterResetButton variant="outline" className="h-11 rounded-full gap-2" showIcon />
                         <Button
-                            className="h-11 rounded-full"
+                            className="h-11 rounded-full gap-2"
                             onClick={() => setIsMoreOptionsOpen(true)}
                         >
-                            All Filters
+                            <Icons.filter className="h-3.5 w-3.5" />
+                            More Filters
                         </Button>
                     </div>
                 </div>
