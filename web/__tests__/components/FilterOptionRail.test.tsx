@@ -1,7 +1,7 @@
 import { FilterOptionRail } from "@/components/FilterOptionRail";
 import { FilterDataContext, FiltersContext } from "@/contexts/FilterContext";
 import { DEFAULT_FILTER_CONFIG, type FilterConfig, type FilterKey } from "@/lib/filters";
-import { render, screen } from "@testing-library/react";
+import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { useState } from "react";
 import { describe, expect, it } from "vitest";
@@ -9,7 +9,7 @@ import { describe, expect, it } from "vitest";
 function TestHarness() {
     const [filters, setFilters] = useState<FilterConfig>(DEFAULT_FILTER_CONFIG);
     const getDistinctValues = (field: FilterKey) => field === "type"
-        ? ["Zoo", "Coffee Shop", "Bookstore", "Coffee Shop"]
+        ? ["Zoo", "Coffee Shop", "Bookstore", "Bakery", "Library", "Coffee Shop"]
         : [];
 
     return (
@@ -27,47 +27,29 @@ function TestHarness() {
 }
 
 describe("FilterOptionRail", () => {
-    it("keeps featured values first and preserves the existing picker behavior", async () => {
+    it("prioritizes a selected chip and toggles it directly", async () => {
         const user = userEvent.setup();
         render(<TestHarness />);
 
-        const rail = screen.getByLabelText("Scrollable type options");
-        const labels = Array.from(rail.querySelectorAll("button"), button => button.textContent);
-        expect(labels).toEqual(["Bookstore", "Coffee Shop", "Zoo"]);
+        const rail = screen.getByRole("group", { name: "Type options" });
+        const zooChip = within(rail).getByRole("button", { name: "Zoo" });
+        expect(within(rail).getAllByRole("button")[0]).not.toHaveAccessibleName("Zoo");
 
-        await user.click(screen.getByRole("button", { name: "Coffee Shop" }));
-        expect(screen.getByTestId("selected-types")).toHaveTextContent("Coffee Shop");
+        await user.click(zooChip);
 
-        await user.click(screen.getByRole("button", { name: "See all 3" }));
-        expect(await screen.findByRole("heading", { name: "Select Type" })).toBeInTheDocument();
-        expect(screen.getByRole("button", { name: "Has Any Type" })).toHaveAttribute("aria-pressed", "true");
+        expect(screen.getByTestId("selected-types")).toHaveTextContent("Zoo");
+        expect(within(rail).getAllByRole("button")[0]).toHaveAccessibleName("Zoo");
+        expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
+
+        await user.click(zooChip);
+        expect(screen.getByTestId("selected-types")).toBeEmptyDOMElement();
     });
 
-    it("uses alphabetical order when Neighborhood has no featured values", async () => {
+    it("opens the picker from the browse button", async () => {
         const user = userEvent.setup();
-        const getDistinctValues = (field: FilterKey) => field === "neighborhood"
-            ? ["Uptown", "NoDa", "Ballantyne"]
-            : [];
+        render(<TestHarness />);
 
-        render(
-            <FilterDataContext.Provider value={{ getDistinctValues }}>
-                <FiltersContext.Provider value={{ filters: DEFAULT_FILTER_CONFIG, setFilters: () => {} }}>
-                    <FilterOptionRail
-                        field="neighborhood"
-                        label="Neighborhood"
-                        featuredValues={[]}
-                    />
-                </FiltersContext.Provider>
-            </FilterDataContext.Provider>
-        );
-
-        const rail = screen.getByLabelText("Scrollable neighborhood options");
-        const labels = Array.from(rail.querySelectorAll("button"), button => button.textContent);
-        expect(labels).toEqual(["Ballantyne", "NoDa", "Uptown"]);
-
-        await user.click(screen.getByRole("button", { name: "See all 3" }));
-        expect(await screen.findByText("Places in any selected neighborhood.")).toBeInTheDocument();
-        expect(screen.queryByRole("button", { name: /Has Any/i })).not.toBeInTheDocument();
+        await user.click(screen.getByRole("button", { name: /^Type:/ }));
+        expect(await screen.findByRole("dialog", { name: "Select Type" })).toBeInTheDocument();
     });
-
 });

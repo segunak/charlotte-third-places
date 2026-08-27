@@ -33,7 +33,10 @@ export function PlaceSearchFilter({ onPickerOpenChange }: PlaceSearchFilterProps
     }, [setFilters]);
 
     return (
-        <section className="space-y-2" aria-label="Place Name">
+        <section
+            className="grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
+            aria-label="Place Name"
+        >
             <h3 className="text-sm font-semibold text-foreground">Place Name</h3>
             <div className={cn(
                 "flex h-10 w-full items-center rounded-xl border border-input bg-background shadow-xs",

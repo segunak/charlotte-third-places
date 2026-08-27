@@ -130,8 +130,8 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
     },
     {
         key: 'hasCinnamonRolls',
-        label: 'Has Cinnamon Rolls',
-        placeholder: 'Has Cinnamon Rolls',
+        label: 'Cinnamon Rolls',
+        placeholder: 'Cinnamon Rolls',
         predefinedOrder: ['Yes', 'No', 'Sometimes'],
         allowedValues: ['Yes', 'No', 'Sometimes'],
         valueType: 'scalar',

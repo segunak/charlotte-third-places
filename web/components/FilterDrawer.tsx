@@ -1,7 +1,7 @@
 "use client";
 
+import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
 import { FilterOptionRail } from "@/components/FilterOptionRail";
-import { FilterSegmentedControl } from "@/components/FilterSegmentedControl";
 import { FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { PlaceSearchFilter } from "@/components/PlaceSearchFilter";
@@ -16,7 +16,7 @@ import {
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 import { useFilters, useOpenNow } from "@/contexts/FilterContext";
-import { FEATURED_FILTER_VALUES, FILTER_DEFS, FILTER_SENTINEL, FilterKey, MOBILE_CHIP_FIELDS } from "@/lib/filters";
+import { FEATURED_FILTER_VALUES, FILTER_SENTINEL, type FilterKey } from "@/lib/filters";
 import React, { useCallback, useRef, useState } from "react";
 
 interface FilterDrawerProps {
@@ -28,9 +28,57 @@ interface FilterDrawerProps {
   onOpenChange?: (open: boolean) => void;
 }
 
-const DRAWER_DETAIL_DEFS = FILTER_DEFS.filter(
-  def => MOBILE_CHIP_FIELDS.has(def.key)
-);
+const DRAWER_SEGMENTED_DEFS = [
+  {
+    field: "parking",
+    label: "Free Parking",
+    options: [
+      { label: "Yes", value: "Free" },
+      { label: "No", value: "Paid" },
+    ],
+  },
+  {
+    field: "freeWiFi",
+    label: "Free Wi-Fi",
+    options: [
+      { label: "Yes", value: "Yes" },
+      { label: "No", value: "No" },
+    ],
+  },
+  {
+    field: "purchaseRequired",
+    label: "Free to Hang Out",
+    options: [
+      { label: "Yes", value: "No" },
+      { label: "No", value: "Yes" },
+    ],
+  },
+  {
+    field: "size",
+    label: "Size",
+    options: [
+      { label: "Small", value: "Small" },
+      { label: "Medium", value: "Medium" },
+      { label: "Large", value: "Large" },
+    ],
+    columnsClassName: "grid-cols-[0.9fr_1.3fr_1fr]",
+  },
+  {
+    field: "hasCinnamonRolls",
+    label: "Cinnamon Rolls",
+    options: [
+      { label: "Yes", value: "Yes" },
+      { label: "No", value: "No" },
+      { label: "Sometimes", value: "Sometimes" },
+    ],
+    columnsClassName: "grid-cols-[0.85fr_0.75fr_1.6fr]",
+  },
+] as const satisfies ReadonlyArray<{
+  field: FilterKey;
+  label: string;
+  options: readonly { label: string; value: string }[];
+  columnsClassName?: string;
+}>;
 
 export const FilterDrawer = React.memo(function FilterDrawer({
   className = "",
@@ -119,53 +167,60 @@ export const FilterDrawer = React.memo(function FilterDrawer({
           <DrawerTitle>Filters</DrawerTitle>
         </DrawerHeader>
         <div className="px-4 overflow-y-auto flex-1">
-          <div className="space-y-5 pb-2">
+          <div className="space-y-5">
+            {showSort && (
+              <section
+                className="grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
+                aria-label="Sort By"
+              >
+                <h3 className="text-sm font-semibold text-foreground">Sort By</h3>
+                <SortSelect
+                  className="font-normal text-muted-foreground"
+                  onDropdownOpenChange={handleDropdownStateChange}
+                />
+              </section>
+            )}
+
+            {showSort && <Separator />}
+
             <div className="space-y-3">
-              {showSort && (
-                <section className="space-y-2" aria-label="Sort By">
-                  <h3 className="text-sm font-semibold text-foreground">Sort By</h3>
-                  <SortSelect className="font-normal text-muted-foreground" onDropdownOpenChange={handleDropdownStateChange} />
-                </section>
-              )}
               <PlaceSearchFilter onPickerOpenChange={handleNestedPickerOpenChange} />
-            </div>
 
-            <Separator />
+              <FilterOptionRail
+                field="neighborhood"
+                label="Neighborhood"
+                featuredValues={FEATURED_FILTER_VALUES.neighborhood}
+                onPickerOpenChange={handleNestedPickerOpenChange}
+              />
 
-            <FilterOptionRail
-              field="neighborhood"
-              label="Neighborhood"
-              featuredValues={FEATURED_FILTER_VALUES.neighborhood}
-              onPickerOpenChange={handleNestedPickerOpenChange}
-            />
+              <FilterOptionRail
+                field="type"
+                label="Type"
+                featuredValues={FEATURED_FILTER_VALUES.type}
+                onPickerOpenChange={handleNestedPickerOpenChange}
+              />
 
-            <FilterOptionRail
-              field="type"
-              label="Type"
-              featuredValues={FEATURED_FILTER_VALUES.type}
-              onPickerOpenChange={handleNestedPickerOpenChange}
-            />
+              <FilterOptionRail
+                field="tags"
+                label="Tags"
+                featuredValues={FEATURED_FILTER_VALUES.tags}
+                onPickerOpenChange={handleNestedPickerOpenChange}
+              />
 
-            <FilterOptionRail
-              field="tags"
-              label="Tags"
-              featuredValues={FEATURED_FILTER_VALUES.tags}
-              onPickerOpenChange={handleNestedPickerOpenChange}
-            />
-
-            <div className="space-y-4">
-              {DRAWER_DETAIL_DEFS.map(def => {
-                const config = filters[def.key as FilterKey];
-
-                return (
-                  <FilterSegmentedControl
-                    key={def.key}
-                    field={def.key as FilterKey}
-                    value={config.value as string}
-                    label={config.label}
+              <div className="space-y-3">
+                {DRAWER_SEGMENTED_DEFS.map(definition => (
+                  <FilterFullWidthSegments
+                    key={definition.field}
+                    field={definition.field}
+                    value={filters[definition.field].value as string}
+                    label={definition.label}
+                    options={definition.options}
+                    columnsClassName={"columnsClassName" in definition
+                      ? definition.columnsClassName
+                      : undefined}
                   />
-                );
-              })}
+                ))}
+              </div>
             </div>
           </div>
         </div>

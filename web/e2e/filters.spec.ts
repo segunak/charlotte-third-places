@@ -11,11 +11,11 @@ import { expect, Locator, Page, test } from '@playwright/test'
  * 2. Neighborhood - Multi-select Picker
  * 3. Type - Multi-select Picker
  * 4. Tags - Multi-select
- * 5. Parking - Chip filter (Free/Paid)
- * 6. Free Wi-Fi - Chip filter (Yes/No)
- * 7. Purchase Required - Chip filter (Yes/No)
- * 8. Size - Chip filter (Small/Medium/Large)
- * 9. Has Cinnamon Rolls - Chip filter (Yes/No/Sometimes)
+ * 5. Parking - Desktop chips (Free/Paid), mobile segments (Yes/No)
+ * 6. Free Wi-Fi - Desktop chips (Yes/No), mobile segments (Yes/No)
+ * 7. Purchase Required - Desktop chips (Yes/No/Unsure), mobile Free to Hang Out segments (Yes/No)
+ * 8. Size - Single-select chips on desktop, segments on mobile
+ * 9. Cinnamon Rolls - Single-select chips on desktop, segments on mobile
  * 
  * SORT OPTIONS (from SORT_DEFS in lib/filters.ts):
  * 1. Name, A to Z
@@ -307,25 +307,25 @@ test.describe('Homepage Filters (Desktop)', () => {
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - Yes', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - Yes', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Yes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Yes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - No', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - No', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'No')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'No')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - Sometimes', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - Sometimes', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Sometimes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Sometimes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
@@ -597,9 +597,9 @@ test.describe('Map Page Filters (Desktop)', () => {
     }
   })
 
-  test('Has Cinnamon Rolls chip filter works on map page', async ({ page }) => {
+  test('Cinnamon Rolls chip filter works on map page', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Yes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Yes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
@@ -676,32 +676,23 @@ test.describe('Mobile Filters', () => {
     await page.keyboard.press('Escape')
   })
 
-  test('Mobile chip filters work in drawer - Size', async ({ page }) => {
+  test('Mobile segmented controls apply and clear filters', async ({ page }) => {
     const drawer = await openMobileFilterDrawer(page)
-    const smallButton = drawer.getByRole('group', { name: 'Size' }).getByRole('button', { name: 'Small', exact: true })
+    const filterLabels = ['Free Parking', 'Free Wi-Fi', 'Free to Hang Out', 'Size', 'Cinnamon Rolls']
 
-    await expect(smallButton).toBeVisible()
-    await smallButton.click()
-    await expect(smallButton).toHaveAttribute('aria-pressed', 'true')
-  })
+    for (const label of filterLabels) {
+      await expect(drawer.getByRole('group', { name: label })).toBeVisible()
+    }
 
-  test('Mobile chip filters work in drawer - Parking', async ({ page }) => {
-    const drawer = await openMobileFilterDrawer(page)
-    const freeButton = drawer.getByRole('group', { name: 'Parking' }).getByRole('button', { name: 'Free', exact: true })
+    const freeToHangOutYes = drawer
+      .getByRole('group', { name: 'Free to Hang Out' })
+      .getByRole('button', { name: 'Yes', exact: true })
 
-    await expect(freeButton).toBeVisible()
-    await freeButton.click()
-    await expect(freeButton).toHaveAttribute('aria-pressed', 'true')
-  })
+    await freeToHangOutYes.click()
+    await expect(freeToHangOutYes).toHaveAttribute('aria-pressed', 'true')
 
-  test('Mobile chip filters work in drawer - Has Cinnamon Rolls', async ({ page }) => {
-    const drawer = await openMobileFilterDrawer(page)
-    const yesButton = drawer.getByRole('group', { name: 'Has Cinnamon Rolls' }).getByRole('button', { name: 'Yes', exact: true })
-
-    await yesButton.scrollIntoViewIfNeeded()
-    await expect(yesButton).toBeVisible()
-    await yesButton.click()
-    await expect(yesButton).toHaveAttribute('aria-pressed', 'true')
+    await freeToHangOutYes.click()
+    await expect(freeToHangOutYes).toHaveAttribute('aria-pressed', 'false')
   })
 })
 
