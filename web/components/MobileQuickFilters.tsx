@@ -1,12 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import { useFilters, useOpenNow } from "@/contexts/FilterContext";
-import { FilterQuickSearch, FilterSelect, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
+import { useFilters, useOpenNow, useQuickSearch } from "@/contexts/FilterContext";
+import { FilterQuickSearch, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
+import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
+import { FilterOptionRail } from "@/components/FilterOptionRail";
 import { PopularTagFilters } from "@/components/PopularTagFilters";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
+import { FEATURED_FILTER_VALUES, FILTER_SENTINEL } from "@/lib/filters";
 import { Place } from "@/lib/types";
 
 interface MobileQuickFiltersProps {
@@ -24,53 +27,79 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
 }: MobileQuickFiltersProps) {
     const { filters } = useFilters();
     const { openNow } = useOpenNow();
+    const { quickFilterText } = useQuickSearch();
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
+    const activeFilterCount = Object.values(filters).filter(filter =>
+        Array.isArray(filter.value)
+            ? filter.value.length > 0
+            : filter.value !== FILTER_SENTINEL
+    ).length + (quickFilterText.trim() ? 1 : 0);
+    const filterStatus = `${activeFilterCount} ${activeFilterCount === 1 ? "Filter" : "Filters"}`;
 
     return (
         <>
             <div className="bg-card rounded-lg border overflow-hidden">
                 <div className="space-y-3 p-4">
-                    {/* Heading with live place count — changes text when Open Now is active */}
-                    <div className="flex items-center justify-between">
-                        <h3 className={`text-sm font-semibold ${openNow ? 'text-emerald-700 dark:text-emerald-400' : ''}`}>
-                            {openNow ? 'Showing Open Now' : 'Quick Filters'}
-                        </h3>
-                        <span className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-2.5 py-1">
-                            <Icons.list className="h-3 w-3 text-primary shrink-0" />
-                            <span className="text-xs font-bold text-foreground tabular-nums">
-                                {visibleCount} {visibleCount === 1 ? 'place' : 'places'}
+                    <div
+                        role="status"
+                        aria-live="polite"
+                        aria-atomic="true"
+                        className="-mt-4 flex h-9 items-center justify-between border-b border-border/60 px-1 text-xs font-semibold"
+                    >
+                        <span className="flex min-w-0 items-center gap-1.5">
+                            <Icons.infoCircle className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
+                            {openNow ? (
+                                <>
+                                    <span className="text-emerald-700 dark:text-emerald-300">Open Now</span>
+                                    {activeFilterCount > 0 && (
+                                        <>
+                                            <span className="text-muted-foreground">·</span>
+                                            <span className="text-primary">{filterStatus}</span>
+                                        </>
+                                    )}
+                                </>
+                            ) : activeFilterCount > 0 ? (
+                                <span className="text-primary">{filterStatus}</span>
+                            ) : (
+                                <span className="text-muted-foreground">All Places</span>
+                            )}
+                        </span>
+                        <span className="inline-flex shrink-0 items-center gap-1.5">
+                            <Icons.list className="h-3 w-3 shrink-0 text-primary" aria-hidden="true" />
+                            <span className="font-bold text-foreground tabular-nums">
+                                {visibleCount} {visibleCount === 1 ? 'Place' : 'Places'}
                             </span>
                         </span>
                     </div>
 
                     {/* Search bar */}
-                    <FilterQuickSearch />
+                    <FilterQuickSearch
+                        className="h-10 rounded-xl bg-background text-sm shadow-xs"
+                        placeholder="Search Places"
+                    />
 
                     {/* Key filters */}
                     <div className="space-y-3">
-                        <FilterSelect
+                        <FilterOptionRail
                             field="neighborhood"
-                            value={filters.neighborhood.value}
                             label={filters.neighborhood.label}
-                            placeholder={filters.neighborhood.placeholder}
-                            predefinedOrder={filters.neighborhood.predefinedOrder}
+                            featuredValues={FEATURED_FILTER_VALUES.neighborhood}
+                            layout="fieldset"
                             pickerMaxHeight="86dvh"
                         />
-                        <FilterSelect
+                        <FilterOptionRail
                             field="type"
-                            value={filters.type.value}
                             label={filters.type.label}
-                            placeholder={filters.type.placeholder}
-                            predefinedOrder={filters.type.predefinedOrder}
-                            matchMode={filters.type.matchMode}
+                            featuredValues={FEATURED_FILTER_VALUES.type}
+                            layout="fieldset"
                             pickerMaxHeight="86dvh"
                         />
-                        <FilterSelect
+                        <FilterFullWidthSegments
                             field="size"
-                            value={filters.size.value}
+                            value={filters.size.value as string}
                             label={filters.size.label}
-                            placeholder={filters.size.placeholder}
-                            predefinedOrder={filters.size.predefinedOrder}
+                            options={filters.size.predefinedOrder.map(value => ({ label: value, value }))}
+                            layout="fieldset"
                         />
                         <PopularTagFilters />
                     </div>

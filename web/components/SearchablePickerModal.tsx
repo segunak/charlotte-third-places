@@ -3,6 +3,7 @@ import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Icons } from "@/components/Icons";
+import { ScrollHintButton } from "@/components/ScrollHintButton";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { cn } from "@/lib/utils";
 
@@ -76,6 +77,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
 
   const [search, setSearch] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
+  const optionsRef = useRef<HTMLDivElement>(null);
 
   // Type guards
   const isMultiple = multiple === true;
@@ -222,7 +224,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         </div>
         
         {/* Scrollable options list */}
-        <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2">
+        <div ref={optionsRef} className="relative flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2">
           <ul className={cn(
             isMultiple ? "columns-2 gap-1" : "space-y-0.5"
           )}>
@@ -285,6 +287,11 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
               <li className="text-muted-foreground text-center py-8">No results found</li>
             )}
           </ul>
+          <ScrollHintButton
+            key={`${search}:${filteredOptions.length}`}
+            contentRef={optionsRef}
+            enabled={open}
+          />
         </div>
         
         {/* Footer with Clear and Done buttons */}

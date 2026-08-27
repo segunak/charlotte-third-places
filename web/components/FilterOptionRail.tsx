@@ -5,7 +5,7 @@ import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { useFilterData, useFilters } from "@/contexts/FilterContext";
 import { FILTER_DEFINITION_MAP } from "@/lib/filters";
 import { cn } from "@/lib/utils";
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 type RailFilterKey = "neighborhood" | "type" | "tags";
 
@@ -22,6 +22,8 @@ interface FilterOptionRailProps {
     label: string;
     featuredValues?: readonly string[];
     onPickerOpenChange?: (open: boolean) => void;
+    layout?: "inline" | "stacked" | "fieldset";
+    pickerMaxHeight?: CSSProperties["maxHeight"];
 }
 
 export function FilterOptionRail({
@@ -29,6 +31,8 @@ export function FilterOptionRail({
     label,
     featuredValues = [],
     onPickerOpenChange,
+    layout = "inline",
+    pickerMaxHeight,
 }: FilterOptionRailProps) {
     const { filters, setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
@@ -62,6 +66,9 @@ export function FilterOptionRail({
     }, [featuredValues, options, selectedValues]);
     const hasSelection = selectedValues.length > 0;
     const displayCount = hasSelection ? selectedValues.length : options.length;
+    const usesFieldset = layout === "fieldset";
+    const Container = usesFieldset ? "fieldset" : "section";
+    const Label = usesFieldset ? "legend" : "h3";
 
     const handlePickerOpenChange = useCallback((open: boolean) => {
         setPickerOpen(open);
@@ -104,14 +111,24 @@ export function FilterOptionRail({
     }, [selectedValues]);
 
     return (
-        <section
-            className="grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
+        <Container
+            className={cn(
+                usesFieldset
+                    ? "w-full min-w-0 rounded-xl border border-border bg-muted/20 px-2.5 pb-2.5"
+                    : layout === "stacked"
+                        ? "space-y-2"
+                        : "grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
+            )}
             aria-label={label}
         >
-            <h3 className="text-sm font-semibold text-foreground">{label}</h3>
+            <Label className={cn(
+                "text-sm font-semibold text-foreground",
+                usesFieldset && "mx-auto bg-card px-2"
+            )}>{label}</Label>
             <div
                 className={cn(
                     "flex h-10 w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
+                    usesFieldset && "mt-1",
                     hasSelection && "border-primary/50 bg-primary/5"
                 )}
             >
@@ -179,7 +196,8 @@ export function FilterOptionRail({
                 onMatchModeChange={fixedMatchMode ? undefined : setMatchMode}
                 matchModeHint={definition.fixedMatchModeHint}
                 matchModeCopy={field === "type" ? TYPE_MATCH_MODE_COPY : undefined}
+                maxHeight={pickerMaxHeight}
             />
-        </section>
+        </Container>
     );
 }

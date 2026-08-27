@@ -107,7 +107,7 @@ async function openMobileQuickPickerModal(page: Page, label: string): Promise<Lo
   const listSection = page.locator('#list-section')
   const picker = label === 'Tags'
     ? listSection.getByRole('button', { name: /^More Tags/ })
-    : listSection.getByRole('button', { name: label, exact: true })
+    : listSection.locator(`section[aria-label="${label}"] button[aria-haspopup="dialog"]`)
 
   await expect(picker).toBeVisible()
   await picker.click()

@@ -34,7 +34,7 @@ const MATCH_MODE_COPY_BY_FIELD: Partial<Record<FilterKey, {
     },
 };
 
-export function FilterQuickSearch() {
+export function FilterQuickSearch({ className, placeholder }: { className?: string; placeholder?: string } = {}) {
     const { quickFilterText, setQuickFilterText } = useQuickSearch();
     // Local state for immediate input feedback
     const [localValue, setLocalValue] = useState(quickFilterText);
@@ -73,7 +73,8 @@ export function FilterQuickSearch() {
                     type="text"
                     value={localValue}
                     onChange={handleQuickFilterChange}
-                    className="w-full pl-10"
+                    className={cn("w-full pl-10", className)}
+                    placeholder={placeholder}
                     autoFocus={false}
                     data-testid="quick-search-input"
                 />
@@ -94,10 +95,9 @@ interface FilterSelectProps {
     onModalClose?: () => void;
     isActivePopover?: boolean;
     anyPopoverOpen?: boolean;
-    pickerMaxHeight?: React.CSSProperties["maxHeight"];
 }
 
-export const FilterSelect = React.memo(function FilterSelect({ field, value, label, placeholder, predefinedOrder, matchMode, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen, pickerMaxHeight }: FilterSelectProps) {
+export const FilterSelect = React.memo(function FilterSelect({ field, value, label, placeholder, predefinedOrder, matchMode, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: FilterSelectProps) {
     const { setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
     const isMobile = useIsMobile();
@@ -252,7 +252,6 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         onMatchModeChange={onConfigurableMatchModeChange}
                         matchModeHint={matchModeHint}
                         matchModeCopy={matchModeCopy}
-                        maxHeight={pickerMaxHeight}
                     />
                 )}
                 {pickerOpen && !isMultiSelect && (
@@ -264,7 +263,6 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         label={label}
                         placeholder={placeholder}
                         onSelect={handlePickerSelect}
-                        maxHeight={pickerMaxHeight}
                     />
                 )}
             </div>
