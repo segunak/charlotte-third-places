@@ -54,6 +54,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             label={filters.neighborhood.label}
                             placeholder={filters.neighborhood.placeholder}
                             predefinedOrder={filters.neighborhood.predefinedOrder}
+                            pickerMaxHeight="86dvh"
                         />
                         <FilterSelect
                             field="type"
@@ -62,6 +63,7 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             placeholder={filters.type.placeholder}
                             predefinedOrder={filters.type.predefinedOrder}
                             matchMode={filters.type.matchMode}
+                            pickerMaxHeight="86dvh"
                         />
                         <FilterSelect
                             field="size"

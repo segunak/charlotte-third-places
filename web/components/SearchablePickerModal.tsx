@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, useCallback, useRef } from "react";
+import { useState, useMemo, useEffect, useCallback, useRef, type CSSProperties } from "react";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -21,6 +21,7 @@ interface BaseSearchablePickerModalProps {
   title?: string;
   /** Map display option to a key value on select (default: identity) */
   optionKey?: (option: string) => string;
+  maxHeight?: CSSProperties["maxHeight"];
 }
 
 // Single-select mode props
@@ -69,6 +70,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
     searchPlaceholder = "Search...",
     title,
     optionKey,
+    maxHeight = "95vh",
     multiple = false,
   } = props;
 
@@ -158,7 +160,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent
         className="sm:max-w-lg rounded-lg bg-background p-0 w-full max-w-full overflow-hidden flex flex-col"
-        style={{ maxHeight: '95vh' }}
+        style={{ maxHeight }}
         onOpenAutoFocus={(e) => e.preventDefault()}
         crossCloseIconSize="h-7 w-7"
       >
@@ -220,7 +222,7 @@ export function SearchablePickerModal(props: SearchablePickerModalProps) {
         </div>
         
         {/* Scrollable options list */}
-        <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2" style={{ maxHeight: '70vh' }}>
+        <div className="flex-1 overflow-y-auto overflow-x-hidden min-h-0 px-2 py-2">
           <ul className={cn(
             isMultiple ? "columns-2 gap-1" : "space-y-0.5"
           )}>

@@ -94,9 +94,10 @@ interface FilterSelectProps {
     onModalClose?: () => void;
     isActivePopover?: boolean;
     anyPopoverOpen?: boolean;
+    pickerMaxHeight?: React.CSSProperties["maxHeight"];
 }
 
-export const FilterSelect = React.memo(function FilterSelect({ field, value, label, placeholder, predefinedOrder, matchMode, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen }: FilterSelectProps) {
+export const FilterSelect = React.memo(function FilterSelect({ field, value, label, placeholder, predefinedOrder, matchMode, resetSignal, onDropdownOpenChange, onModalClose, isActivePopover, anyPopoverOpen, pickerMaxHeight }: FilterSelectProps) {
     const { setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
     const isMobile = useIsMobile();
@@ -251,6 +252,7 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         onMatchModeChange={onConfigurableMatchModeChange}
                         matchModeHint={matchModeHint}
                         matchModeCopy={matchModeCopy}
+                        maxHeight={pickerMaxHeight}
                     />
                 )}
                 {pickerOpen && !isMultiSelect && (
@@ -262,6 +264,7 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
                         label={label}
                         placeholder={placeholder}
                         onSelect={handlePickerSelect}
+                        maxHeight={pickerMaxHeight}
                     />
                 )}
             </div>
