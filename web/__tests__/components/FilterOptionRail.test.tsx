@@ -77,6 +77,8 @@ describe("FilterOptionRail", () => {
         expect(legend).toHaveClass("w-full", "p-0");
         expect(fieldset).toHaveClass("border-0", "bg-transparent", "p-0");
         expect(legend?.querySelectorAll('[aria-hidden="true"]')).toHaveLength(2);
+        expect(rail.parentElement?.parentElement).toHaveClass("h-11");
+        expect(within(rail).getByRole("button", { name: "Zoo" })).toHaveClass("h-8", "px-2", "text-[11px]");
 
         await user.click(within(rail).getByRole("button", { name: "Zoo" }));
 

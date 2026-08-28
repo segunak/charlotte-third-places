@@ -103,7 +103,8 @@ export function FilterOptionRail({
         <>
             <div
                 className={cn(
-                    "flex h-10 w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
+                    "flex w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
+                    usesFieldset ? "h-11" : "h-10",
                     hasSelection && "border-primary/50 bg-primary/3"
                 )}
             >
@@ -130,7 +131,8 @@ export function FilterOptionRail({
                                         key={value}
                                         aria-pressed={selected}
                                         className={cn(
-                                            "inline-flex h-7 shrink-0 items-center whitespace-nowrap rounded-full border px-2 text-[11px] font-medium focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50",
+                                            "inline-flex shrink-0 items-center whitespace-nowrap rounded-full border px-2 text-[11px] font-medium focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50",
+                                            usesFieldset ? "h-8" : "h-7",
                                             selected
                                                 ? "border-primary bg-primary text-primary-foreground"
                                                 : "border-border/70 bg-muted/30 text-muted-foreground hover:bg-muted/60 hover:text-foreground"
