@@ -27,23 +27,29 @@ function TestHarness() {
 }
 
 describe("FilterOptionRail", () => {
-    it("prioritizes a selected chip and toggles it directly", async () => {
+    it("keeps chip order stable when toggling a selection directly", async () => {
         const user = userEvent.setup();
         render(<TestHarness />);
 
         const rail = screen.getByRole("group", { name: "Type options" });
         const zooChip = within(rail).getByRole("button", { name: "Zoo" });
-        expect(within(rail).getAllByRole("button")[0]).not.toHaveAccessibleName("Zoo");
+        const initialOrder = within(rail).getAllByRole("button").map(button => button.textContent);
+        rail.scrollLeft = 40;
 
         await user.click(zooChip);
 
         expect(screen.getByTestId("selected-types")).toHaveTextContent("Zoo");
-        expect(within(rail).getAllByRole("button")[0]).toHaveAccessibleName("Zoo");
+        expect(zooChip).toHaveAttribute("aria-pressed", "true");
+        expect(within(rail).getAllByRole("button").map(button => button.textContent)).toEqual(initialOrder);
+        expect(rail).toHaveProperty("scrollLeft", 40);
         expect(screen.getByRole("button", { name: "View all 5 Type options, 1 selected" })).toHaveTextContent("5");
         expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
 
         await user.click(zooChip);
         expect(screen.getByTestId("selected-types")).toBeEmptyDOMElement();
+        expect(zooChip).toHaveAttribute("aria-pressed", "false");
+        expect(within(rail).getAllByRole("button").map(button => button.textContent)).toEqual(initialOrder);
+        expect(rail).toHaveProperty("scrollLeft", 40);
     });
 
     it("opens the picker from the browse button", async () => {

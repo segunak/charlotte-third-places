@@ -105,9 +105,9 @@ async function openMobilePickerModal(page: Page, label: string): Promise<Locator
 
 async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator> {
   const listSection = page.locator('#list-section')
-  const picker = label === 'Tags'
-    ? listSection.getByRole('button', { name: /^More Tags/ })
-    : listSection.locator(`section[aria-label="${label}"] button[aria-haspopup="dialog"]`)
+  const picker = listSection.getByRole('button', {
+    name: new RegExp(`^View all \\d+ ${label} options(?:, \\d+ selected)?$`),
+  })
 
   await expect(picker).toBeVisible()
   await picker.click()
@@ -179,8 +179,7 @@ test.describe('Homepage Filters (Desktop)', () => {
           await options.nth(1).click()
         }
         await modal.getByRole('button', { name: /done/i }).click()
-        await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
-        await expect(neighborhoodFilter).toContainText(/selected/i)
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })

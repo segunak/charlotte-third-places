@@ -5,7 +5,7 @@ import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { useFilterData, useFilters } from "@/contexts/FilterContext";
 import { FILTER_DEFINITION_MAP } from "@/lib/filters";
 import { cn } from "@/lib/utils";
-import { type CSSProperties, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { type CSSProperties, useCallback, useMemo, useState } from "react";
 
 type RailFilterKey = "neighborhood" | "type" | "tags";
 
@@ -37,7 +37,6 @@ export function FilterOptionRail({
     const { filters, setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
     const [pickerOpen, setPickerOpen] = useState(false);
-    const railRef = useRef<HTMLDivElement>(null);
     const selectedValues = useMemo(() => {
         const value = filters[field].value;
         return Array.isArray(value) ? value : [];
@@ -52,18 +51,15 @@ export function FilterOptionRail({
     );
     const orderedOptions = useMemo(() => {
         const optionSet = new Set(options);
-        const selectedOptions = Array.from(new Set(selectedValues))
-            .filter(value => optionSet.has(value));
-        const selectedOptionSet = new Set(selectedOptions);
         const featuredOptions = Array.from(new Set(featuredValues))
-            .filter(value => optionSet.has(value) && !selectedOptionSet.has(value));
+            .filter(value => optionSet.has(value));
         const featuredOptionSet = new Set(featuredOptions);
         const remainingOptions = options
-            .filter(value => !selectedOptionSet.has(value) && !featuredOptionSet.has(value))
+            .filter(value => !featuredOptionSet.has(value))
             .sort((first, second) => first.localeCompare(second));
 
-        return [...selectedOptions, ...featuredOptions, ...remainingOptions];
-    }, [featuredValues, options, selectedValues]);
+        return [...featuredOptions, ...remainingOptions];
+    }, [featuredValues, options]);
     const hasSelection = selectedValues.length > 0;
     const totalOptionCount = options.length;
     const usesFieldset = layout === "fieldset";
@@ -104,12 +100,6 @@ export function FilterOptionRail({
         }));
     }, [field, setFilters]);
 
-    useEffect(() => {
-        if (railRef.current) {
-            railRef.current.scrollLeft = 0;
-        }
-    }, [selectedValues]);
-
     return (
         <Container
             className={cn(
@@ -135,7 +125,6 @@ export function FilterOptionRail({
                     <div
                         role="group"
                         aria-label={`${label} options`}
-                        ref={railRef}
                         data-filter-option-rail=""
                         data-vaul-no-drag=""
                         className="h-full overflow-x-auto overscroll-x-contain [scrollbar-width:none] touch-pan-x touch-pan-y [&::-webkit-scrollbar]:hidden"
