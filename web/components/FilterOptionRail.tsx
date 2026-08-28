@@ -111,16 +111,32 @@ export function FilterOptionRail({
             )}
             aria-label={label}
         >
-            <Label className={cn(
-                "text-sm font-semibold text-foreground",
-                usesFieldset && "mx-auto bg-card px-2"
-            )}>{label}</Label>
+            {usesFieldset ? (
+                <Label className="mx-auto bg-card px-2 text-sm font-semibold text-foreground">
+                    {label}
+                </Label>
+            ) : (
+                <div className="min-w-0">
+                    <Label className="text-sm font-semibold text-foreground">{label}</Label>
+                    {hasSelection && (
+                        <span className="block whitespace-nowrap text-[11px] font-bold leading-tight text-primary">
+                            {selectedValues.length} Selected
+                        </span>
+                    )}
+                </div>
+            )}
             <div
                 className={cn(
                     "flex h-10 w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
-                    usesFieldset && "mt-1"
+                    usesFieldset && "mt-1",
+                    hasSelection && "border-primary/50 bg-primary/3"
                 )}
             >
+                {usesFieldset && hasSelection && (
+                    <span className="flex h-full w-16 shrink-0 items-center justify-center whitespace-nowrap border-r border-primary/20 bg-primary/5 px-1 text-center text-[10px] font-bold leading-none text-primary">
+                        {selectedValues.length} Selected
+                    </span>
+                )}
                 <div className="relative min-w-0 flex-1 self-stretch overflow-hidden">
                     <div
                         role="group"
@@ -152,7 +168,10 @@ export function FilterOptionRail({
                             })}
                         </div>
                     </div>
-                    <span className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-r from-transparent to-background" />
+                    <span className={cn(
+                        "pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-r from-transparent",
+                        hasSelection ? "to-primary/3" : "to-background"
+                    )} />
                 </div>
                 <button
                     type="button"

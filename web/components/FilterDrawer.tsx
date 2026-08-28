@@ -2,17 +2,18 @@
 
 import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
 import { FilterOptionRail } from "@/components/FilterOptionRail";
+import { FilterStatusRow } from "@/components/FilterStatusRow";
 import { FilterResetButton, SortSelect } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { PlaceSearchFilter } from "@/components/PlaceSearchFilter";
 import { Button } from "@/components/ui/button";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
+    Drawer,
+    DrawerClose,
+    DrawerContent,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 import { useFilters, useOpenNow } from "@/contexts/FilterContext";
@@ -96,16 +97,17 @@ export const FilterDrawer = React.memo(function FilterDrawer({
 
   const { filters } = useFilters();
   const { openNow } = useOpenNow();
-  // Active filter count excludes fields with no constraint:
+  // Applied filter count excludes fields with no constraint:
   // - Single-select: value === 'all' sentinel
   // - Multi-select: value is empty array []
-  // - Open Now: counted when active (toggle lives outside drawer but badge reflects it)
-  const activeFilterCount = Object.values(filters).filter((filter) => {
+  const appliedFilterCount = Object.values(filters).filter((filter) => {
     if (Array.isArray(filter.value)) {
       return filter.value.length > 0;
     }
     return filter.value !== FILTER_SENTINEL;
-  }).length + (openNow ? 1 : 0);
+  }).length;
+  // Open Now lives outside the drawer, but the floating badge reflects the complete state.
+  const activeFilterCount = appliedFilterCount + (openNow ? 1 : 0);
   // Track open state for all selects
   const [anyDropdownOpen, setAnyDropdownOpen] = useState(false);
   const handleDropdownStateChange = useCallback((open: boolean) => {
@@ -164,7 +166,8 @@ export const FilterDrawer = React.memo(function FilterDrawer({
           />
         )}
         <DrawerHeader>
-          <DrawerTitle>Filters</DrawerTitle>
+          <DrawerTitle className="sr-only">Filters</DrawerTitle>
+          <FilterStatusRow className="-mt-4" />
         </DrawerHeader>
         <div className="px-4 overflow-y-auto flex-1">
           <div className="space-y-5">

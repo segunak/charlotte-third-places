@@ -3,11 +3,12 @@
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
 import { FilterOptionRail } from "@/components/FilterOptionRail";
+import { FilterStatusRow } from "@/components/FilterStatusRow";
 import { FilterQuickSearch, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
 import { Button } from "@/components/ui/button";
-import { useFilters, useOpenNow, useQuickSearch } from "@/contexts/FilterContext";
-import { FEATURED_FILTER_VALUES, FILTER_SENTINEL } from "@/lib/filters";
+import { useFilters } from "@/contexts/FilterContext";
+import { FEATURED_FILTER_VALUES } from "@/lib/filters";
 import { Place } from "@/lib/types";
 import React, { useState } from "react";
 
@@ -15,61 +16,21 @@ interface MobileQuickFiltersProps {
     comingSoonPlaces: Place[];
     comingSoonOpen: boolean;
     setComingSoonOpen: (open: boolean) => void;
-    visibleCount: number;
 }
 
 export const MobileQuickFilters = React.memo(function MobileQuickFilters({
     comingSoonPlaces,
     comingSoonOpen,
     setComingSoonOpen,
-    visibleCount,
 }: MobileQuickFiltersProps) {
     const { filters } = useFilters();
-    const { openNow } = useOpenNow();
-    const { quickFilterText } = useQuickSearch();
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
-    const activeFilterCount = Object.values(filters).filter(filter =>
-        Array.isArray(filter.value)
-            ? filter.value.length > 0
-            : filter.value !== FILTER_SENTINEL
-    ).length + (quickFilterText.trim() ? 1 : 0);
-    const filterStatus = `${activeFilterCount} ${activeFilterCount === 1 ? "Filter" : "Filters"}`;
 
     return (
         <>
             <div className="bg-card rounded-lg border overflow-hidden">
                 <div className="space-y-3 p-4">
-                    <div
-                        role="status"
-                        aria-live="polite"
-                        aria-atomic="true"
-                        className="-mt-4 flex h-9 items-center justify-between border-b border-border/60 px-1 text-xs font-semibold"
-                    >
-                        <span className="flex min-w-0 items-center gap-1.5">
-                            <Icons.infoCircle className="h-3.5 w-3.5 shrink-0 text-muted-foreground" aria-hidden="true" />
-                            {openNow ? (
-                                <>
-                                    <span className="text-emerald-700 dark:text-emerald-300">Open Now</span>
-                                    {activeFilterCount > 0 && (
-                                        <>
-                                            <span className="text-muted-foreground">·</span>
-                                            <span className="text-primary">{filterStatus}</span>
-                                        </>
-                                    )}
-                                </>
-                            ) : activeFilterCount > 0 ? (
-                                <span className="text-primary">{filterStatus}</span>
-                            ) : (
-                                <span className="text-muted-foreground">All Places</span>
-                            )}
-                        </span>
-                        <span className="inline-flex shrink-0 items-center gap-1.5">
-                            <Icons.list className="h-3 w-3 shrink-0 text-primary" aria-hidden="true" />
-                            <span className="font-bold text-foreground tabular-nums">
-                                {visibleCount} {visibleCount === 1 ? 'Place' : 'Places'}
-                            </span>
-                        </span>
-                    </div>
+                    <FilterStatusRow className="-mt-4" />
 
                     {/* Search bar */}
                     <FilterQuickSearch

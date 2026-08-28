@@ -42,6 +42,9 @@ describe("FilterOptionRail", () => {
         expect(zooChip).toHaveAttribute("aria-pressed", "true");
         expect(within(rail).getAllByRole("button").map(button => button.textContent)).toEqual(initialOrder);
         expect(rail).toHaveProperty("scrollLeft", 40);
+        const selectionStatus = screen.getByText("1 Selected");
+        expect(screen.getByRole("heading", { name: "Type" })).toHaveTextContent(/^Type$/);
+        expect(selectionStatus.compareDocumentPosition(rail) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
         expect(screen.getByRole("button", { name: "View all 5 Type options, 1 selected" })).toHaveTextContent("5");
         expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
 
@@ -50,6 +53,7 @@ describe("FilterOptionRail", () => {
         expect(zooChip).toHaveAttribute("aria-pressed", "false");
         expect(within(rail).getAllByRole("button").map(button => button.textContent)).toEqual(initialOrder);
         expect(rail).toHaveProperty("scrollLeft", 40);
+        expect(screen.queryByText("1 Selected")).not.toBeInTheDocument();
     });
 
     it("opens the picker from the browse button", async () => {
