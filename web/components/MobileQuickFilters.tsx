@@ -1,16 +1,15 @@
 "use client";
 
-import React, { useState } from "react";
-import { useFilters, useOpenNow, useQuickSearch } from "@/contexts/FilterContext";
-import { FilterQuickSearch, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
 import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
 import { FilterOptionRail } from "@/components/FilterOptionRail";
-import { PopularTagFilters } from "@/components/PopularTagFilters";
-import { Button } from "@/components/ui/button";
+import { FilterQuickSearch, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
+import { Button } from "@/components/ui/button";
+import { useFilters, useOpenNow, useQuickSearch } from "@/contexts/FilterContext";
 import { FEATURED_FILTER_VALUES, FILTER_SENTINEL } from "@/lib/filters";
 import { Place } from "@/lib/types";
+import React, { useState } from "react";
 
 interface MobileQuickFiltersProps {
     comingSoonPlaces: Place[];
@@ -94,6 +93,13 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             layout="fieldset"
                             pickerMaxHeight="86dvh"
                         />
+                        <FilterOptionRail
+                            field="tags"
+                            label={filters.tags.label}
+                            featuredValues={FEATURED_FILTER_VALUES.tags}
+                            layout="fieldset"
+                            pickerMaxHeight="86dvh"
+                        />
                         <FilterFullWidthSegments
                             field="size"
                             value={filters.size.value as string}
@@ -101,7 +107,6 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             options={filters.size.predefinedOrder.map(value => ({ label: value, value }))}
                             layout="fieldset"
                         />
-                        <PopularTagFilters />
                     </div>
 
                     {/* Action buttons */}

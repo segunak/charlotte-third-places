@@ -39,6 +39,7 @@ describe("FilterOptionRail", () => {
 
         expect(screen.getByTestId("selected-types")).toHaveTextContent("Zoo");
         expect(within(rail).getAllByRole("button")[0]).toHaveAccessibleName("Zoo");
+        expect(screen.getByRole("button", { name: "View all 5 Type options, 1 selected" })).toHaveTextContent("5");
         expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
 
         await user.click(zooChip);
@@ -49,7 +50,7 @@ describe("FilterOptionRail", () => {
         const user = userEvent.setup();
         render(<TestHarness />);
 
-        await user.click(screen.getByRole("button", { name: /^Type:/ }));
+        await user.click(screen.getByRole("button", { name: "View all 5 Type options" }));
         expect(await screen.findByRole("dialog", { name: "Select Type" })).toBeInTheDocument();
     });
 });

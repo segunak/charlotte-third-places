@@ -65,7 +65,7 @@ export function FilterOptionRail({
         return [...selectedOptions, ...featuredOptions, ...remainingOptions];
     }, [featuredValues, options, selectedValues]);
     const hasSelection = selectedValues.length > 0;
-    const displayCount = hasSelection ? selectedValues.length : options.length;
+    const totalOptionCount = options.length;
     const usesFieldset = layout === "fieldset";
     const Container = usesFieldset ? "fieldset" : "section";
     const Label = usesFieldset ? "legend" : "h3";
@@ -128,8 +128,7 @@ export function FilterOptionRail({
             <div
                 className={cn(
                     "flex h-10 w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
-                    usesFieldset && "mt-1",
-                    hasSelection && "border-primary/50 bg-primary/5"
+                    usesFieldset && "mt-1"
                 )}
             >
                 <div className="relative min-w-0 flex-1 self-stretch overflow-hidden">
@@ -153,7 +152,7 @@ export function FilterOptionRail({
                                         className={cn(
                                             "inline-flex h-7 shrink-0 items-center whitespace-nowrap rounded-full border px-2 text-[11px] font-medium focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50",
                                             selected
-                                                ? "border-primary/30 bg-primary/10 text-primary"
+                                                ? "border-primary bg-primary text-primary-foreground"
                                                 : "border-border/70 bg-muted/30 text-muted-foreground hover:bg-muted/60 hover:text-foreground"
                                         )}
                                         onClick={() => toggleValue(value)}
@@ -164,24 +163,18 @@ export function FilterOptionRail({
                             })}
                         </div>
                     </div>
-                    <span className={cn(
-                        "pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-r from-transparent",
-                        hasSelection ? "to-primary/5" : "to-background"
-                    )} />
+                    <span className="pointer-events-none absolute inset-y-0 right-0 w-8 bg-linear-to-r from-transparent to-background" />
                 </div>
                 <button
                     type="button"
-                    aria-label={`${label}: ${hasSelection ? `${displayCount} selected` : `${displayCount} options`}`}
+                    aria-label={`View all ${totalOptionCount} ${label} ${totalOptionCount === 1 ? "option" : "options"}${hasSelection ? `, ${selectedValues.length} selected` : ""}`}
                     aria-haspopup="dialog"
                     aria-expanded={pickerOpen}
-                    className={cn(
-                        "relative z-10 flex h-full shrink-0 items-center gap-1 pl-2 pr-3 text-xs font-medium text-primary focus:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary/50",
-                        hasSelection ? "bg-primary/5" : "bg-background"
-                    )}
+                    className="relative z-10 flex h-full w-12 shrink-0 items-center justify-center gap-1 border-l border-border/70 bg-primary/5 px-1 text-xs font-bold text-primary transition-colors hover:bg-primary/10 active:bg-primary/15 focus:outline-hidden focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-primary/50"
                     onClick={() => handlePickerOpenChange(true)}
                 >
-                    <span className="tabular-nums">{displayCount}</span>
-                    <Icons.chevronRight className="h-3.5 w-3.5" />
+                    <span className="font-bold tabular-nums">{totalOptionCount}</span>
+                    <Icons.chevronRightBold className="h-3 w-3" aria-hidden="true" />
                 </button>
             </div>
             <SearchablePickerModal
