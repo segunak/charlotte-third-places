@@ -62,10 +62,13 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             pickerMaxHeight="86dvh"
                         />
                         <FilterFullWidthSegments
-                            field="size"
-                            value={filters.size.value as string}
-                            label={filters.size.label}
-                            options={filters.size.predefinedOrder.map(value => ({ label: value, value }))}
+                            field="purchaseRequired"
+                            value={filters.purchaseRequired.value as string}
+                            label={filters.purchaseRequired.label}
+                            options={[
+                                { label: "Yes", value: "Yes" },
+                                { label: "No", value: "No" },
+                            ]}
                             layout="fieldset"
                         />
                     </div>

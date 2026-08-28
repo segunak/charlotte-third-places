@@ -1,5 +1,6 @@
 "use client";
 
+import { FilterFieldset } from "@/components/FilterFieldset";
 import { Icons } from "@/components/Icons";
 import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { useFilterData, useFilters } from "@/contexts/FilterContext";
@@ -63,8 +64,6 @@ export function FilterOptionRail({
     const hasSelection = selectedValues.length > 0;
     const totalOptionCount = options.length;
     const usesFieldset = layout === "fieldset";
-    const Container = usesFieldset ? "fieldset" : "section";
-    const Label = usesFieldset ? "legend" : "h3";
 
     const handlePickerOpenChange = useCallback((open: boolean) => {
         setPickerOpen(open);
@@ -100,35 +99,11 @@ export function FilterOptionRail({
         }));
     }, [field, setFilters]);
 
-    return (
-        <Container
-            className={cn(
-                usesFieldset
-                    ? "w-full min-w-0 rounded-xl border border-border bg-muted/20 px-2.5 pb-2.5"
-                    : layout === "stacked"
-                        ? "space-y-2"
-                        : "grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
-            )}
-            aria-label={label}
-        >
-            {usesFieldset ? (
-                <Label className="mx-auto bg-card px-2 text-sm font-semibold text-foreground">
-                    {label}
-                </Label>
-            ) : (
-                <div className="min-w-0">
-                    <Label className="text-sm font-semibold text-foreground">{label}</Label>
-                    {hasSelection && (
-                        <span className="block whitespace-nowrap text-[11px] font-bold leading-tight text-primary">
-                            {selectedValues.length} Selected
-                        </span>
-                    )}
-                </div>
-            )}
+    const railContent = (
+        <>
             <div
                 className={cn(
                     "flex h-10 w-full min-w-0 items-center overflow-hidden rounded-xl border border-input bg-background shadow-xs",
-                    usesFieldset && "mt-1",
                     hasSelection && "border-primary/50 bg-primary/3"
                 )}
             >
@@ -199,6 +174,34 @@ export function FilterOptionRail({
                 matchModeCopy={field === "type" ? TYPE_MATCH_MODE_COPY : undefined}
                 maxHeight={pickerMaxHeight}
             />
-        </Container>
+        </>
+    );
+
+    if (usesFieldset) {
+        return (
+            <FilterFieldset active={hasSelection} label={label}>
+                {railContent}
+            </FilterFieldset>
+        );
+    }
+
+    return (
+        <section
+            className={layout === "stacked"
+                ? "space-y-2"
+                : "grid grid-cols-[8rem_minmax(0,1fr)] items-center gap-2 max-[359px]:grid-cols-1"
+            }
+            aria-label={label}
+        >
+            <div className="min-w-0">
+                <h3 className="text-sm font-semibold text-foreground">{label}</h3>
+                {hasSelection && (
+                    <span className="block whitespace-nowrap text-[11px] font-bold leading-tight text-primary">
+                        {selectedValues.length} Selected
+                    </span>
+                )}
+            </div>
+            {railContent}
+        </section>
     );
 }

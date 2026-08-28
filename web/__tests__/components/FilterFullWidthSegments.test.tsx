@@ -14,10 +14,10 @@ function TestHarness() {
             <FilterFullWidthSegments
                 field="purchaseRequired"
                 value={filters.purchaseRequired.value as string}
-                label="Free to Hang Out"
+                label="Purchase Required"
                 options={[
-                    { label: "Yes", value: "No" },
-                    { label: "No", value: "Yes" },
+                    { label: "Yes", value: "Yes" },
+                    { label: "No", value: "No" },
                 ]}
             />
             <output data-testid="purchase-required-value">
@@ -28,15 +28,24 @@ function TestHarness() {
 }
 
 describe("FilterFullWidthSegments", () => {
-    it("selects and clears a mapped value", async () => {
+    it("selects and clears direct Purchase Required values", async () => {
         const user = userEvent.setup();
         render(<TestHarness />);
         const yesButton = screen.getByRole("button", { name: "Yes" });
+        const noButton = screen.getByRole("button", { name: "No" });
+
+        expect(document.querySelectorAll('[data-segment-divider=""]')).toHaveLength(1);
 
         await user.click(yesButton);
-        expect(screen.getByTestId("purchase-required-value")).toHaveTextContent("No");
+        expect(screen.getByTestId("purchase-required-value")).toHaveTextContent("Yes");
+        expect(document.querySelector('[data-segment-divider=""]')).not.toBeInTheDocument();
 
         await user.click(yesButton);
         expect(screen.getByTestId("purchase-required-value")).toHaveTextContent("all");
+        expect(document.querySelectorAll('[data-segment-divider=""]')).toHaveLength(1);
+
+        await user.click(noButton);
+        expect(screen.getByTestId("purchase-required-value")).toHaveTextContent("No");
+        expect(document.querySelector('[data-segment-divider=""]')).not.toBeInTheDocument();
     });
 });

@@ -8,12 +8,12 @@ import { Icons } from "@/components/Icons";
 import { PlaceSearchFilter } from "@/components/PlaceSearchFilter";
 import { Button } from "@/components/ui/button";
 import {
-    Drawer,
-    DrawerClose,
-    DrawerContent,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerTitle,
+  Drawer,
+  DrawerClose,
+  DrawerContent,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerTitle,
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 import { useFilters, useOpenNow } from "@/contexts/FilterContext";
@@ -48,10 +48,10 @@ const DRAWER_SEGMENTED_DEFS = [
   },
   {
     field: "purchaseRequired",
-    label: "Free to Hang Out",
+    label: "Purchase Required",
     options: [
-      { label: "Yes", value: "No" },
-      { label: "No", value: "Yes" },
+      { label: "Yes", value: "Yes" },
+      { label: "No", value: "No" },
     ],
   },
   {

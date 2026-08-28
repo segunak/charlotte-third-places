@@ -6,7 +6,7 @@ import userEvent from "@testing-library/user-event";
 import { useState } from "react";
 import { describe, expect, it } from "vitest";
 
-function TestHarness() {
+function TestHarness({ layout = "inline" }: { layout?: "inline" | "fieldset" }) {
     const [filters, setFilters] = useState<FilterConfig>(DEFAULT_FILTER_CONFIG);
     const getDistinctValues = (field: FilterKey) => field === "type"
         ? ["Zoo", "Coffee Shop", "Bookstore", "Bakery", "Library", "Coffee Shop"]
@@ -19,6 +19,7 @@ function TestHarness() {
                     field="type"
                     label="Type"
                     featuredValues={["Bookstore"]}
+                    layout={layout}
                 />
                 <output data-testid="selected-types">{(filters.type.value as string[]).join("|")}</output>
             </FiltersContext.Provider>
@@ -62,5 +63,26 @@ describe("FilterOptionRail", () => {
 
         await user.click(screen.getByRole("button", { name: "View all 5 Type options" }));
         expect(await screen.findByRole("dialog", { name: "Select Type" })).toBeInTheDocument();
+    });
+
+    it("uses a centered rule legend and fixed selection status in fieldset layout", async () => {
+        const user = userEvent.setup();
+        render(<TestHarness layout="fieldset" />);
+
+        const label = screen.getByText("Type");
+        const legend = label.closest("legend");
+        const fieldset = label.closest("fieldset");
+        const rail = screen.getByRole("group", { name: "Type options" });
+
+        expect(legend).toHaveClass("w-full", "p-0");
+        expect(fieldset).toHaveClass("border-0", "bg-transparent", "p-0");
+        expect(legend?.querySelectorAll('[aria-hidden="true"]')).toHaveLength(2);
+
+        await user.click(within(rail).getByRole("button", { name: "Zoo" }));
+
+        expect(screen.getByText("1 Selected")).toHaveClass("whitespace-nowrap");
+        for (const rule of legend?.querySelectorAll('[aria-hidden="true"]') ?? []) {
+            expect(rule).toHaveClass("bg-primary/40");
+        }
     });
 });

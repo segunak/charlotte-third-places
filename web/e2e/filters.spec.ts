@@ -13,7 +13,7 @@ import { expect, Locator, Page, test } from '@playwright/test'
  * 4. Tags - Multi-select
  * 5. Parking - Desktop chips (Free/Paid), mobile segments (Yes/No)
  * 6. Free Wi-Fi - Desktop chips (Yes/No), mobile segments (Yes/No)
- * 7. Purchase Required - Desktop chips (Yes/No/Unsure), mobile Free to Hang Out segments (Yes/No)
+ * 7. Purchase Required - Desktop chips and mobile segments (Yes/No)
  * 8. Size - Single-select chips on desktop, segments on mobile
  * 9. Cinnamon Rolls - Single-select chips on desktop, segments on mobile
  * 
@@ -677,21 +677,21 @@ test.describe('Mobile Filters', () => {
 
   test('Mobile segmented controls apply and clear filters', async ({ page }) => {
     const drawer = await openMobileFilterDrawer(page)
-    const filterLabels = ['Free Parking', 'Free Wi-Fi', 'Free to Hang Out', 'Size', 'Cinnamon Rolls']
+    const filterLabels = ['Free Parking', 'Free Wi-Fi', 'Purchase Required', 'Size', 'Cinnamon Rolls']
 
     for (const label of filterLabels) {
       await expect(drawer.getByRole('group', { name: label })).toBeVisible()
     }
 
-    const freeToHangOutYes = drawer
-      .getByRole('group', { name: 'Free to Hang Out' })
+    const purchaseRequiredYes = drawer
+      .getByRole('group', { name: 'Purchase Required' })
       .getByRole('button', { name: 'Yes', exact: true })
 
-    await freeToHangOutYes.click()
-    await expect(freeToHangOutYes).toHaveAttribute('aria-pressed', 'true')
+    await purchaseRequiredYes.click()
+    await expect(purchaseRequiredYes).toHaveAttribute('aria-pressed', 'true')
 
-    await freeToHangOutYes.click()
-    await expect(freeToHangOutYes).toHaveAttribute('aria-pressed', 'false')
+    await purchaseRequiredYes.click()
+    await expect(purchaseRequiredYes).toHaveAttribute('aria-pressed', 'false')
   })
 })
 
