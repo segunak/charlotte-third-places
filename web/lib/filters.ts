@@ -148,7 +148,7 @@ export type FilterConfig = { [K in FilterKey]: FilterOption };
 export const FEATURED_FILTER_VALUES: Partial<Record<FilterKey, readonly string[]>> = {
     neighborhood: ['South End', 'NoDa', 'Dilworth', 'Plaza Midwood', 'SouthPark', 'LoSo', 'Uptown', 'University City', 'Ballantyne', 'Eastover'],
     type: ['Coffee Shop', 'Café', 'Bookstore', 'Bakery', 'Library'],
-    tags: ['Charlotte Local', 'Date Spot', 'Hidden Gem', 'Dog Friendly'],
+    tags: ['Charlotte Local', 'Date Spot', 'Hidden Gem', 'Dog Friendly', 'Kid Friendly', 'Black Owned', 'Woman Owned', 'Latino Owned', 'Veteran Owned'],
 };
 
 export const DEFAULT_FILTER_CONFIG: FilterConfig = FILTER_DEFS.reduce((acc, def) => {
