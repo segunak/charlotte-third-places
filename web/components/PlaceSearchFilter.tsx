@@ -1,17 +1,18 @@
 "use client";
 
-import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { Icons } from "@/components/Icons";
+import { SearchablePickerModal } from "@/components/SearchablePickerModal";
 import { useFilterData, useFilters } from "@/contexts/FilterContext";
 import { FILTER_SENTINEL } from "@/lib/filters";
 import { cn } from "@/lib/utils";
-import { useCallback, useState } from "react";
+import { type CSSProperties, useCallback, useState } from "react";
 
 interface PlaceSearchFilterProps {
     onPickerOpenChange?: (open: boolean) => void;
+    pickerMaxHeight?: CSSProperties["maxHeight"];
 }
 
-export function PlaceSearchFilter({ onPickerOpenChange }: PlaceSearchFilterProps) {
+export function PlaceSearchFilter({ onPickerOpenChange, pickerMaxHeight }: PlaceSearchFilterProps) {
     const { filters, setFilters } = useFilters();
     const { getDistinctValues } = useFilterData();
     const [pickerOpen, setPickerOpen] = useState(false);
@@ -79,6 +80,7 @@ export function PlaceSearchFilter({ onPickerOpenChange }: PlaceSearchFilterProps
                 searchPlaceholder="Search Places"
                 defaultOptionLabel="All Places"
                 onSelect={setSelectedPlace}
+                maxHeight={pickerMaxHeight}
             />
         </section>
     );

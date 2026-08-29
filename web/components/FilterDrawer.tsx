@@ -8,12 +8,12 @@ import { Icons } from "@/components/Icons";
 import { PlaceSearchFilter } from "@/components/PlaceSearchFilter";
 import { Button } from "@/components/ui/button";
 import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerTitle,
+    Drawer,
+    DrawerClose,
+    DrawerContent,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerTitle,
 } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
 import { useFilters, useOpenNow } from "@/contexts/FilterContext";
@@ -28,6 +28,8 @@ interface FilterDrawerProps {
   open?: boolean;
   onOpenChange?: (open: boolean) => void;
 }
+
+const FILTER_DRAWER_PICKER_MAX_HEIGHT = "86dvh";
 
 const DRAWER_SEGMENTED_DEFS = [
   {
@@ -187,13 +189,17 @@ export const FilterDrawer = React.memo(function FilterDrawer({
             {showSort && <Separator />}
 
             <div className="space-y-3">
-              <PlaceSearchFilter onPickerOpenChange={handleNestedPickerOpenChange} />
+              <PlaceSearchFilter
+                onPickerOpenChange={handleNestedPickerOpenChange}
+                pickerMaxHeight={FILTER_DRAWER_PICKER_MAX_HEIGHT}
+              />
 
               <FilterOptionRail
                 field="neighborhood"
                 label="Neighborhood"
                 featuredValues={FEATURED_FILTER_VALUES.neighborhood}
                 onPickerOpenChange={handleNestedPickerOpenChange}
+                pickerMaxHeight={FILTER_DRAWER_PICKER_MAX_HEIGHT}
               />
 
               <FilterOptionRail
@@ -201,6 +207,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
                 label="Type"
                 featuredValues={FEATURED_FILTER_VALUES.type}
                 onPickerOpenChange={handleNestedPickerOpenChange}
+                pickerMaxHeight={FILTER_DRAWER_PICKER_MAX_HEIGHT}
               />
 
               <FilterOptionRail
@@ -208,6 +215,7 @@ export const FilterDrawer = React.memo(function FilterDrawer({
                 label="Tags"
                 featuredValues={FEATURED_FILTER_VALUES.tags}
                 onPickerOpenChange={handleNestedPickerOpenChange}
+                pickerMaxHeight={FILTER_DRAWER_PICKER_MAX_HEIGHT}
               />
 
               <div className="space-y-3">

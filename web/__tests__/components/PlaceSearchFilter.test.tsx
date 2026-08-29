@@ -12,7 +12,7 @@ function TestHarness() {
     return (
         <FilterDataContext.Provider value={{ getDistinctValues: () => ["Amélie's", "The Hobbyist"] }}>
             <FiltersContext.Provider value={{ filters, setFilters }}>
-                <PlaceSearchFilter />
+                <PlaceSearchFilter pickerMaxHeight="86dvh" />
                 <output data-testid="place-value">{filters.name.value as string}</output>
             </FiltersContext.Provider>
         </FilterDataContext.Provider>
@@ -26,6 +26,7 @@ describe("PlaceSearchFilter", () => {
 
         await user.click(screen.getByRole("button", { name: "Search Places" }));
         expect(await screen.findByRole("heading", { name: "Choose a Place" })).toBeInTheDocument();
+        expect(screen.getByRole("dialog")).toHaveStyle({ maxHeight: "86dvh" });
         expect(screen.getByPlaceholderText("Search Places")).toBeInTheDocument();
         expect(screen.getByRole("button", { name: "All Places" })).toBeInTheDocument();
 

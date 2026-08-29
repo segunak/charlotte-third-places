@@ -71,40 +71,48 @@ export const MobileQuickFilters = React.memo(function MobileQuickFilters({
                             ]}
                             layout="fieldset"
                         />
+                        <div className="border-t border-border/60 pt-4">
+                            <OpenNowToggle />
+                        </div>
                     </div>
 
                     {/* Action buttons */}
-                    <div className="grid grid-cols-2 gap-2">
-                        <FilterResetButton variant="outline" className="h-11 rounded-full gap-2" showIcon />
-                        <Button
-                            className="h-11 rounded-full gap-2"
-                            onClick={() => setIsMoreOptionsOpen(true)}
-                        >
-                            <Icons.filter className="h-3.5 w-3.5" />
-                            More Filters
-                        </Button>
+                    <div className="border-t border-border/60 pt-4">
+                        <div className="grid grid-cols-2 gap-2">
+                            <FilterResetButton variant="outline" className="h-11 rounded-full gap-2" showIcon />
+                            <Button
+                                className="h-11 rounded-full gap-2"
+                                onClick={() => setIsMoreOptionsOpen(true)}
+                            >
+                                <Icons.filter className="h-3.5 w-3.5" />
+                                More Filters
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
-                {/* Footer zone — Open Now + Coming Soon */}
-                <div className="border-t bg-muted/30 px-4 py-3">
-                    <div className="grid grid-cols-2 gap-2">
-                        <OpenNowToggle className="rounded-full" />
-                        {comingSoonPlaces.length > 0 && (
-                            <button
-                                type="button"
-                                onClick={() => setComingSoonOpen(true)}
-                                aria-haspopup="dialog"
-                                aria-expanded={comingSoonOpen}
-                                aria-label={`View ${comingSoonPlaces.length} places coming soon`}
-                                className="h-11 flex items-center justify-center gap-2 rounded-full border border-border bg-background text-sm font-bold text-muted-foreground transition hover:bg-card focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
-                            >
+                {/* Related destination */}
+                {comingSoonPlaces.length > 0 && (
+                    <div className="border-t bg-muted/30 px-4 py-3">
+                        <button
+                            type="button"
+                            onClick={() => setComingSoonOpen(true)}
+                            aria-haspopup="dialog"
+                            aria-expanded={comingSoonOpen}
+                            aria-label={`View ${comingSoonPlaces.length} places coming soon`}
+                            className="grid h-11 w-full grid-cols-[minmax(0,1fr)_auto_0.75rem] items-center gap-3 rounded-xl border border-border bg-background px-3 text-sm font-semibold text-foreground shadow-xs transition-colors hover:bg-muted focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
+                        >
+                            <span className="flex min-w-0 items-center gap-2">
                                 <Icons.clock className="h-4 w-4 shrink-0 text-primary" />
-                                Coming Soon ({comingSoonPlaces.length})
-                            </button>
-                        )}
+                                Coming Soon
+                            </span>
+                            <span className="justify-self-end tabular-nums">
+                                {comingSoonPlaces.length} {comingSoonPlaces.length === 1 ? "Place" : "Places"}
+                            </span>
+                            <Icons.chevronRightBold className="h-3 w-3 text-primary" aria-hidden="true" />
+                        </button>
                     </div>
-                </div>
+                )}
             </div>
 
             {/* FilterDrawer component for more filters */}

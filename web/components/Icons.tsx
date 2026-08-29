@@ -1,7 +1,7 @@
 // See https://react-icons.github.io/react-icons/
 
 import { IconProps } from "@radix-ui/react-icons/dist/types";
-import { ArrowUp, Cookie, FileText, Loader2, Locate, ShieldCheck } from "lucide-react";
+import { ArrowUp, Check, Cookie, FileText, Loader2, Locate, ShieldCheck } from "lucide-react";
 import { useId } from "react";
 import { BsFillHousesFill } from "react-icons/bs";
 import {
@@ -140,6 +140,7 @@ import {
 
 export const Icons = {
   arrowUp: ArrowUp,
+  check: Check,
   shieldCheck: ShieldCheck,
   cookie: Cookie,
   fileText: FileText,

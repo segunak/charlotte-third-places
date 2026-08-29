@@ -3,10 +3,16 @@ import { FilterDataContext, FiltersContext } from "@/contexts/FilterContext";
 import { DEFAULT_FILTER_CONFIG, type FilterConfig, type FilterKey } from "@/lib/filters";
 import { render, screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { useState } from "react";
+import { type CSSProperties, useState } from "react";
 import { describe, expect, it } from "vitest";
 
-function TestHarness({ layout = "inline" }: { layout?: "inline" | "fieldset" }) {
+function TestHarness({
+    layout = "inline",
+    pickerMaxHeight,
+}: {
+    layout?: "inline" | "fieldset";
+    pickerMaxHeight?: CSSProperties["maxHeight"];
+}) {
     const [filters, setFilters] = useState<FilterConfig>(DEFAULT_FILTER_CONFIG);
     const getDistinctValues = (field: FilterKey) => field === "type"
         ? ["Zoo", "Coffee Shop", "Bookstore", "Bakery", "Library", "Coffee Shop"]
@@ -20,6 +26,7 @@ function TestHarness({ layout = "inline" }: { layout?: "inline" | "fieldset" }) 
                     label="Type"
                     featuredValues={["Bookstore"]}
                     layout={layout}
+                    pickerMaxHeight={pickerMaxHeight}
                 />
                 <output data-testid="selected-types">{(filters.type.value as string[]).join("|")}</output>
             </FiltersContext.Provider>
@@ -59,10 +66,11 @@ describe("FilterOptionRail", () => {
 
     it("opens the picker from the browse button", async () => {
         const user = userEvent.setup();
-        render(<TestHarness />);
+        render(<TestHarness pickerMaxHeight="86dvh" />);
 
         await user.click(screen.getByRole("button", { name: "View all 5 Type options" }));
-        expect(await screen.findByRole("dialog", { name: "Select Type" })).toBeInTheDocument();
+        const dialog = await screen.findByRole("dialog", { name: "Select Type" });
+        expect(dialog).toHaveStyle({ maxHeight: "86dvh" });
     });
 
     it("uses a centered rule legend and fixed selection status in fieldset layout", async () => {
