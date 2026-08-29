@@ -1,6 +1,6 @@
 // Centralized filtering domain: definitions, configuration, and predicate helpers.
 // This file owns all filter-related constructs so other modules only need to import from here.
-import { Place, SortField, SortDirection, SortOption } from "./types";
+import { Place, SortDirection, SortField, SortOption } from "./types";
 
 // A single sentinel value meaning "no constraint" for a filter field.
 export const FILTER_SENTINEL = 'all';
@@ -146,8 +146,8 @@ export type FilterKey = typeof FILTER_DEFS[number]['key'];
 export type FilterConfig = { [K in FilterKey]: FilterOption };
 
 export const FEATURED_FILTER_VALUES: Partial<Record<FilterKey, readonly string[]>> = {
-    neighborhood: ['South End', 'NoDa', 'Dilworth', 'Plaza Midwood'],
-    type: ['Coffee Shop', 'Café', 'Bookstore', 'Bakery'],
+    neighborhood: ['South End', 'NoDa', 'Dilworth', 'Plaza Midwood', 'SouthPark', 'LoSo', 'Uptown', 'University City', 'Ballantyne', 'Eastover'],
+    type: ['Coffee Shop', 'Café', 'Bookstore', 'Bakery', 'Library'],
     tags: ['Charlotte Local', 'Date Spot', 'Hidden Gem', 'Dog Friendly'],
 };
 
