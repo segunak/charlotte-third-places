@@ -108,11 +108,6 @@ export function FilterOptionRail({
                     hasSelection && "border-primary/50 bg-primary/3"
                 )}
             >
-                {usesFieldset && hasSelection && (
-                    <span className="flex h-full w-16 shrink-0 items-center justify-center whitespace-nowrap border-r border-primary/20 bg-primary/5 px-1 text-center text-[10px] font-bold leading-none text-primary">
-                        {selectedValues.length} Selected
-                    </span>
-                )}
                 <div className="relative min-w-0 flex-1 self-stretch overflow-hidden">
                     <div
                         role="group"
@@ -181,7 +176,7 @@ export function FilterOptionRail({
 
     if (usesFieldset) {
         return (
-            <FilterFieldset active={hasSelection} label={label}>
+            <FilterFieldset active={hasSelection} label={label} selectionCount={selectedValues.length}>
                 {railContent}
             </FilterFieldset>
         );

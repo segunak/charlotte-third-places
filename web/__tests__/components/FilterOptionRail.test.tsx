@@ -90,7 +90,10 @@ describe("FilterOptionRail", () => {
 
         await user.click(within(rail).getByRole("button", { name: "Zoo" }));
 
-        expect(screen.getByText("1 Selected")).toHaveClass("whitespace-nowrap");
+        const selectionStatus = screen.getByRole("status", { name: "1 selected" });
+        expect(legend).toContainElement(selectionStatus);
+        expect(selectionStatus).toHaveTextContent("1");
+        expect(rail.parentElement?.parentElement?.firstElementChild).toBe(rail.parentElement);
         for (const rule of legend?.querySelectorAll('[aria-hidden="true"]') ?? []) {
             expect(rule).toHaveClass("bg-primary/40");
         }
