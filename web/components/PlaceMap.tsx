@@ -1,31 +1,26 @@
 "use client";
 
-import { Place } from '@/lib/types';
-import { Button } from './ui/button';
 import { Icons } from "@/components/Icons";
-import { getPlaceTypeIcon, getPlaceTypeColor as getConfiguredColor } from "@/lib/place-type-config";
-import { normalizeTextForSearch } from '@/lib/utils';
-import { placeMatchesFilters } from "@/lib/filters";
-import { useFilters, useQuickSearch, useOpenNow, usePlaces } from '@/contexts/FilterContext';
+import { useOpenNow } from '@/contexts/FilterContext';
 import { useModalActions } from "@/contexts/ModalContext";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { isPlaceOpenNow, getCharlotteTimeNow } from '@/lib/hours';
-import { useState, useEffect, useMemo, useCallback, useRef } from 'react';
+import { useFilteredPlaceSummary } from "@/hooks/useFilteredPlaceSummary";
+import { getPlaceTypeColor as getConfiguredColor, getPlaceTypeIcon } from "@/lib/place-type-config";
+import { Place } from '@/lib/types';
 import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
+import { Button } from './ui/button';
 
 interface PlaceMapProps {
     fullScreen?: boolean;
 }
 
 export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
-    const { places } = usePlaces();
+    const { filteredPlaces } = useFilteredPlaceSummary();
     const { pushPlace } = useModalActions();
     // Cache for consistent color assignments - using useRef to persist across renders without causing re-renders
     const colorCacheRef = useRef<{ [key: string]: string }>({});
     const isMobileView = useIsMobile();
-    // Consume granular contexts for optimal render performance
-    const { filters } = useFilters();
-    const { quickFilterText } = useQuickSearch();
     const { openNow, setOpenNow, openNowCount } = useOpenNow();
     const charlotteCityCenter = { lat: 35.23075539296459, lng: -80.83165532446358 };
     const [userLocation, setUserLocation] = useState<{ lat: number; lng: number } | null>(null);
@@ -161,21 +156,6 @@ export function PlaceMap({ fullScreen = false }: PlaceMapProps) {
         colorCache[typeToCheck] = result;
         return result;
     };
-
-    const filteredPlaces = useMemo(() => {
-        const normalizedSearchTerm = normalizeTextForSearch(quickFilterText);
-        let result = places.filter(place => {
-            if (normalizedSearchTerm && !normalizeTextForSearch(place.name || '').includes(normalizedSearchTerm)) return false;
-            return placeMatchesFilters(place as any, filters as any);
-        });
-
-        if (openNow) {
-            const time = getCharlotteTimeNow();
-            result = result.filter(p => isPlaceOpenNow(p.hours ?? [], time));
-        }
-
-        return result;
-    }, [places, filters, quickFilterText, openNow]);
 
     // Helper function to check if a place is within the current map bounds
     // Wrapped in useCallback to prevent unnecessary dependency changes in useMemo

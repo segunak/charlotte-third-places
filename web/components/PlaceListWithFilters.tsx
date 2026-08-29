@@ -72,7 +72,6 @@ export function PlaceListWithFilters() {
                         comingSoonPlaces={comingSoonPlaces}
                         comingSoonOpen={comingSoonOpen}
                         setComingSoonOpen={setComingSoonOpen}
-                        visibleCount={visibleCount}
                     />
                 </div>
 

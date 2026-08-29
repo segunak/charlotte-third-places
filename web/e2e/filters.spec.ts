@@ -1,4 +1,4 @@
-import { test, expect, Locator, Page } from '@playwright/test'
+import { expect, Locator, Page, test } from '@playwright/test'
 
 /**
  * COMPREHENSIVE Filter and Sort E2E Tests
@@ -11,19 +11,19 @@ import { test, expect, Locator, Page } from '@playwright/test'
  * 2. Neighborhood - Multi-select Picker
  * 3. Type - Multi-select Picker
  * 4. Tags - Multi-select
- * 5. Parking - Chip filter (Free/Paid)
- * 6. Free Wi-Fi - Chip filter (Yes/No)
- * 7. Purchase Required - Chip filter (Yes/No)
- * 8. Size - Chip filter (Small/Medium/Large)
- * 9. Has Cinnamon Rolls - Chip filter (Yes/No/Sometimes)
+ * 5. Parking - Desktop chips (Free/Paid), mobile segments (Yes/No)
+ * 6. Free Wi-Fi - Desktop chips (Yes/No), mobile segments (Yes/No)
+ * 7. Purchase Required - Desktop chips and mobile segments (Yes/No)
+ * 8. Size - Single-select chips on desktop, segments on mobile
+ * 9. Cinnamon Rolls - Single-select chips on desktop, segments on mobile
  * 
  * SORT OPTIONS (from SORT_DEFS in lib/filters.ts):
- * 1. Name (A-Z)
- * 2. Name (Z-A)
- * 3. Date Added (Old to New)
- * 4. Date Added (New to Old)
- * 5. Last Updated (Old to New)
- * 6. Last Updated (New to Old)
+ * 1. Name, A to Z
+ * 2. Name, Z to A
+ * 3. Date Added, Oldest First
+ * 4. Date Added, Newest First
+ * 5. Last Updated, Oldest First
+ * 6. Last Updated, Newest First
  */
 
 // Helper function to find a chip filter section by label and click a chip value
@@ -76,51 +76,45 @@ async function expectTagsMatchMode(modal: Locator) {
   await expect(modal.getByText('Has All Types')).toHaveCount(0)
 }
 
-async function openMobileFilterDrawer(page: Page): Promise<Locator | null> {
-  const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
+async function openMobileFilterDrawer(page: Page): Promise<Locator> {
+  const filterButton = page.getByRole('button', { name: 'More Filters', exact: true })
+  await expect(filterButton).toBeVisible()
+  await filterButton.click()
 
-  if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-    await filterButton.click()
-    await page.waitForTimeout(500)
-
-    const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').filter({ hasText: 'Filters' }).last()
-    await expect(drawer).toBeVisible({ timeout: 5000 })
-    return drawer
-  }
-
-  return null
+  const drawer = page.locator('[data-slot="drawer-content"]').last()
+  await expect(drawer).toBeVisible({ timeout: 5000 })
+  return drawer
 }
 
-async function openMobilePickerModal(page: Page, label: string): Promise<Locator | null> {
+async function openMobilePickerModal(page: Page, label: string): Promise<Locator> {
   const drawer = await openMobileFilterDrawer(page)
-  if (!drawer) return null
+  const sectionLabel = label === 'Name' ? 'Place Name' : label
+  const section = drawer.locator(`section[aria-label="${sectionLabel}"]`)
+  const picker = label === 'Name'
+    ? section.getByRole('button', { name: 'Search Places', exact: true })
+    : section.locator('button[aria-haspopup="dialog"]')
 
-  const picker = drawer.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+  await expect(picker).toBeVisible()
+  await picker.click()
 
-  if (await picker.count() > 0 && await picker.isVisible()) {
-    await picker.click({ force: true })
-
-    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
-    await expect(modal).toBeVisible({ timeout: 5000 })
-    return modal
-  }
-
-  return null
+  const modalTitle = label === 'Name' ? 'Choose a Place' : `Select ${label}`
+  const modal = page.getByRole('dialog').filter({ hasText: modalTitle }).last()
+  await expect(modal).toBeVisible({ timeout: 5000 })
+  return modal
 }
 
-async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator | null> {
-  const browseSection = page.getByTestId('browse-section')
-  const picker = browseSection.locator('button[aria-haspopup="dialog"]').filter({ hasText: new RegExp(`^${label}$`, 'i') }).first()
+async function openMobileQuickPickerModal(page: Page, label: string): Promise<Locator> {
+  const listSection = page.locator('#list-section')
+  const picker = listSection.getByRole('button', {
+    name: new RegExp(`^View all \\d+ ${label} options(?:, \\d+ selected)?$`),
+  })
 
-  if (await picker.count() > 0 && await picker.isVisible()) {
-    await picker.click({ force: true })
+  await expect(picker).toBeVisible()
+  await picker.click()
 
-    const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
-    await expect(modal).toBeVisible({ timeout: 5000 })
-    return modal
-  }
-
-  return null
+  const modal = page.getByRole('dialog').filter({ hasText: `Select ${label}` }).last()
+  await expect(modal).toBeVisible({ timeout: 5000 })
+  return modal
 }
 
 // ============================================================================
@@ -185,8 +179,7 @@ test.describe('Homepage Filters (Desktop)', () => {
           await options.nth(1).click()
         }
         await modal.getByRole('button', { name: /done/i }).click()
-        await expect(neighborhoodFilter).toHaveClass(/bg-primary/)
-        await expect(neighborhoodFilter).toContainText(/selected/i)
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
@@ -234,8 +227,7 @@ test.describe('Homepage Filters (Desktop)', () => {
         await expect(modal).toBeVisible()
         await modal.getByRole('button', { name: /done/i }).click()
         
-        await expect(tagsFilter).toContainText(/1 selected/i)
-        await expect(tagsFilter).toHaveClass(/bg-primary/)
+        await expectSelectedDialogFilter(page.getByTestId('filter-sidebar'))
       }
     }
   })
@@ -314,25 +306,25 @@ test.describe('Homepage Filters (Desktop)', () => {
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - Yes', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - Yes', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Yes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Yes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - No', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - No', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'No')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'No')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
   })
 
-  test('Has Cinnamon Rolls chip filter - Sometimes', async ({ page }) => {
+  test('Cinnamon Rolls chip filter - Sometimes', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Sometimes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Sometimes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
@@ -369,7 +361,7 @@ test.describe('Homepage Sort (Desktop)', () => {
     await expect(browseSection).toBeVisible({ timeout: 60000 })
   })
 
-  test('Sort by Name (A-Z)', async ({ page }) => {
+  test('Sort by Name, A to Z', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -379,15 +371,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Name \(A-Z\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Name, A to Z/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Name \(A-Z\)/i)
+        await expect(sortTrigger).toContainText(/Name, A to Z/i)
       }
     }
   })
 
-  test('Sort by Name (Z-A)', async ({ page }) => {
+  test('Sort by Name, Z to A', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -397,15 +389,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Name \(Z-A\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Name, Z to A/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Name \(Z-A\)/i)
+        await expect(sortTrigger).toContainText(/Name, Z to A/i)
       }
     }
   })
 
-  test('Sort by Date Added (Old to New)', async ({ page }) => {
+  test('Sort by Date Added, Oldest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -415,15 +407,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Date Added \(Old to New\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Date Added, Oldest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Date Added \(Old to New\)/i)
+        await expect(sortTrigger).toContainText(/Date Added, Oldest First/i)
       }
     }
   })
 
-  test('Sort by Date Added (New to Old)', async ({ page }) => {
+  test('Sort by Date Added, Newest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -433,15 +425,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Date Added \(New to Old\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Date Added, Newest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Date Added \(New to Old\)/i)
+        await expect(sortTrigger).toContainText(/Date Added, Newest First/i)
       }
     }
   })
 
-  test('Sort by Last Updated (Old to New)', async ({ page }) => {
+  test('Sort by Last Updated, Oldest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date|Last/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -451,15 +443,15 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated \(Old to New\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated, Oldest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Last Updated \(Old to New\)/i)
+        await expect(sortTrigger).toContainText(/Last Updated, Oldest First/i)
       }
     }
   })
 
-  test('Sort by Last Updated (New to Old)', async ({ page }) => {
+  test('Sort by Last Updated, Newest First', async ({ page }) => {
     const sortTrigger = page.locator('button[role="combobox"]').filter({ hasText: /Sort|Name|Date|Last/i }).first()
     
     if (await sortTrigger.count() > 0 && await sortTrigger.isVisible()) {
@@ -469,10 +461,10 @@ test.describe('Homepage Sort (Desktop)', () => {
       const listbox = page.getByRole('listbox')
       await expect(listbox).toBeVisible({ timeout: 3000 })
       
-      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated \(New to Old\)/i }).first()
+      const option = page.locator('[role="option"]').filter({ hasText: /Last Updated, Newest First/i }).first()
       if (await option.count() > 0) {
         await option.click()
-        await expect(sortTrigger).toContainText(/Last Updated \(New to Old\)/i)
+        await expect(sortTrigger).toContainText(/Last Updated, Newest First/i)
       }
     }
   })
@@ -604,9 +596,9 @@ test.describe('Map Page Filters (Desktop)', () => {
     }
   })
 
-  test('Has Cinnamon Rolls chip filter works on map page', async ({ page }) => {
+  test('Cinnamon Rolls chip filter works on map page', async ({ page }) => {
     const sidebar = page.getByTestId('filter-sidebar')
-    const button = await clickChipFilter(page, sidebar, 'Has Cinnamon Rolls', 'Yes')
+    const button = await clickChipFilter(page, sidebar, 'Cinnamon Rolls', 'Yes')
     if (button) {
       await expect(button).toHaveClass(/bg-primary/)
     }
@@ -627,140 +619,79 @@ test.describe('Mobile Filters', () => {
   })
 
   test('Filter drawer opens on mobile', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      await expect(drawer).toBeVisible({ timeout: 3000 })
-    }
+    await openMobileFilterDrawer(page)
   })
 
   test('Mobile picker modal opens for Name filter', async ({ page }) => {
-    const modal = await openMobilePickerModal(page, 'Name')
-
-    if (modal) {
-      await page.keyboard.press('Escape')
-    }
+    await openMobilePickerModal(page, 'Name')
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Neighborhood filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Neighborhood')
 
-    if (modal) {
-      await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
-      await expect(modal.getByText('Has All Tags')).toHaveCount(0)
-      await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
+    await expect(modal.getByText('Places in any selected neighborhood.')).toBeVisible()
+    await expect(modal.getByText('Has All Tags')).toHaveCount(0)
+    await expect(modal.getByText('Has Any Tag')).toHaveCount(0)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Type filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Type')
 
-    if (modal) {
-      await expectTypeMatchMode(modal)
+    await expectTypeMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile quick Type picker defaults to Has Any Type', async ({ page }) => {
     const modal = await openMobileQuickPickerModal(page, 'Type')
 
-    if (modal) {
-      await expectTypeMatchMode(modal)
+    await expectTypeMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile picker modal opens for Tags filter', async ({ page }) => {
     const modal = await openMobilePickerModal(page, 'Tags')
 
-    if (modal) {
-      await expectTagsMatchMode(modal)
+    await expectTagsMatchMode(modal)
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
   test('Mobile quick Tags picker honors Has Any Tag selection', async ({ page }) => {
     const modal = await openMobileQuickPickerModal(page, 'Tags')
 
-    if (modal) {
-      const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
-      const allTags = modal.getByRole('button', { name: 'Has All Tags' })
+    const anyTag = modal.getByRole('button', { name: 'Has Any Tag' })
+    const allTags = modal.getByRole('button', { name: 'Has All Tags' })
 
-      await expectTagsMatchMode(modal)
-      await anyTag.click()
-      await expect(anyTag).toHaveAttribute('aria-pressed', 'true')
-      await expect(allTags).toHaveAttribute('aria-pressed', 'false')
+    await expectTagsMatchMode(modal)
+    await anyTag.click()
+    await expect(anyTag).toHaveAttribute('aria-pressed', 'true')
+    await expect(allTags).toHaveAttribute('aria-pressed', 'false')
 
-      await page.keyboard.press('Escape')
-    }
+    await page.keyboard.press('Escape')
   })
 
-  test('Mobile chip filters work in drawer - Size', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const smallButton = drawer.getByRole('button', { name: 'Small', exact: true })
-        if (await smallButton.count() > 0 && await smallButton.isVisible()) {
-          await smallButton.click()
-          await expect(smallButton).toHaveClass(/bg-primary/)
-        }
-      }
-    }
-  })
+  test('Mobile segmented controls apply and clear filters', async ({ page }) => {
+    const drawer = await openMobileFilterDrawer(page)
+    const filterLabels = ['Free Parking', 'Free Wi-Fi', 'Purchase Required', 'Size', 'Cinnamon Rolls']
 
-  test('Mobile chip filters work in drawer - Parking', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const freeButton = drawer.getByRole('button', { name: 'Free', exact: true })
-        if (await freeButton.count() > 0 && await freeButton.isVisible()) {
-          await freeButton.click()
-          await expect(freeButton).toHaveClass(/bg-primary/)
-        }
-      }
+    for (const label of filterLabels) {
+      await expect(drawer.getByRole('group', { name: label })).toBeVisible()
     }
-  })
 
-  test('Mobile chip filters work in drawer - Has Cinnamon Rolls', async ({ page }) => {
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("All Filters")').first()
-    
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      const drawer = page.locator('[data-vaul-drawer], [role="dialog"]').first()
-      if (await drawer.count() > 0) {
-        const cinnamonLabel = drawer.getByText('Has Cinnamon Rolls')
-        if (await cinnamonLabel.count() > 0) {
-          await cinnamonLabel.scrollIntoViewIfNeeded()
-          const section = cinnamonLabel.locator('..')
-          const yesInSection = section.getByRole('button', { name: 'Yes', exact: true })
-          if (await yesInSection.count() > 0 && await yesInSection.isVisible()) {
-            await yesInSection.click()
-            await expect(yesInSection).toHaveClass(/bg-primary/)
-          }
-        }
-      }
-    }
+    const purchaseRequiredYes = drawer
+      .getByRole('group', { name: 'Purchase Required' })
+      .getByRole('button', { name: 'Yes', exact: true })
+
+    await purchaseRequiredYes.click()
+    await expect(purchaseRequiredYes).toHaveAttribute('aria-pressed', 'true')
+
+    await purchaseRequiredYes.click()
+    await expect(purchaseRequiredYes).toHaveAttribute('aria-pressed', 'false')
   })
 })
 

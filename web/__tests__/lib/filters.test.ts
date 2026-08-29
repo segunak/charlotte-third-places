@@ -92,6 +92,11 @@ describe('FILTER_DEFS', () => {
     expect(parkingDef?.allowedValues).toEqual(['Free', 'Paid'])
   })
 
+  it('purchase required exposes only Yes and No', () => {
+    const purchaseRequiredDef = FILTER_DEFS.find(d => d.key === 'purchaseRequired')
+    expect(purchaseRequiredDef?.allowedValues).toEqual(['Yes', 'No'])
+  })
+
   it('filters with useChips=true are in MOBILE_CHIP_FIELDS', () => {
     const chipFilters = FILTER_DEFS.filter(d => d.useChips)
     expect(chipFilters.length).toBeGreaterThan(0)
@@ -195,8 +200,8 @@ describe('SORT_DEFS', () => {
     const nameDesc = SORT_DEFS.find(d => d.key === 'name-desc')
     expect(nameAsc).toBeDefined()
     expect(nameDesc).toBeDefined()
-    expect(nameAsc?.label).toBe('Name (A-Z)')
-    expect(nameDesc?.label).toBe('Name (Z-A)')
+    expect(nameAsc?.label).toBe('Name, A to Z')
+    expect(nameDesc?.label).toBe('Name, Z to A')
   })
 
   it('includes date added ascending and descending', () => {

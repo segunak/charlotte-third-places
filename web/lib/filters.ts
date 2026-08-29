@@ -1,6 +1,6 @@
 // Centralized filtering domain: definitions, configuration, and predicate helpers.
 // This file owns all filter-related constructs so other modules only need to import from here.
-import { Place, SortField, SortDirection, SortOption } from "./types";
+import { Place, SortDirection, SortField, SortOption } from "./types";
 
 // A single sentinel value meaning "no constraint" for a filter field.
 export const FILTER_SENTINEL = 'all';
@@ -109,6 +109,7 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
         label: 'Purchase Required',
         placeholder: 'Purchase Required',
         predefinedOrder: ['Yes', 'No'],
+        allowedValues: ['Yes', 'No'],
         valueType: 'scalar',
         mobilePicker: false,
         desktopPicker: false,
@@ -129,8 +130,8 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
     },
     {
         key: 'hasCinnamonRolls',
-        label: 'Has Cinnamon Rolls',
-        placeholder: 'Has Cinnamon Rolls',
+        label: 'Cinnamon Rolls',
+        placeholder: 'Cinnamon Rolls',
         predefinedOrder: ['Yes', 'No', 'Sometimes'],
         allowedValues: ['Yes', 'No', 'Sometimes'],
         valueType: 'scalar',
@@ -143,6 +144,12 @@ export const FILTER_DEFS: readonly FilterDefinition[] = [
 
 export type FilterKey = typeof FILTER_DEFS[number]['key'];
 export type FilterConfig = { [K in FilterKey]: FilterOption };
+
+export const FEATURED_FILTER_VALUES: Partial<Record<FilterKey, readonly string[]>> = {
+    neighborhood: ['South End', 'NoDa', 'Dilworth', 'Plaza Midwood', 'SouthPark', 'LoSo', 'Uptown', 'University City', 'Ballantyne', 'Eastover'],
+    type: ['Coffee Shop', 'Café', 'Bookstore', 'Bakery', 'Library'],
+    tags: ['Charlotte Local', 'Date Spot', 'Hidden Gem', 'Dog Friendly'],
+};
 
 export const DEFAULT_FILTER_CONFIG: FilterConfig = FILTER_DEFS.reduce((acc, def) => {
     acc[def.key as FilterKey] = {
@@ -184,12 +191,12 @@ export interface SortDefinition {
 }
 
 export const SORT_DEFS: readonly SortDefinition[] = [
-    { key: 'name-asc', label: 'Name (A-Z)', field: SortField.Name, direction: SortDirection.Ascending },
-    { key: 'name-desc', label: 'Name (Z-A)', field: SortField.Name, direction: SortDirection.Descending },
-    { key: 'createdDate-asc', label: 'Date Added (Old to New)', field: SortField.DateAdded, direction: SortDirection.Ascending },
-    { key: 'createdDate-desc', label: 'Date Added (New to Old)', field: SortField.DateAdded, direction: SortDirection.Descending },
-    { key: 'lastModifiedDate-asc', label: 'Last Updated (Old to New)', field: SortField.LastModified, direction: SortDirection.Ascending },
-    { key: 'lastModifiedDate-desc', label: 'Last Updated (New to Old)', field: SortField.LastModified, direction: SortDirection.Descending },
+    { key: 'name-asc', label: 'Name, A to Z', field: SortField.Name, direction: SortDirection.Ascending },
+    { key: 'name-desc', label: 'Name, Z to A', field: SortField.Name, direction: SortDirection.Descending },
+    { key: 'createdDate-asc', label: 'Date Added, Oldest First', field: SortField.DateAdded, direction: SortDirection.Ascending },
+    { key: 'createdDate-desc', label: 'Date Added, Newest First', field: SortField.DateAdded, direction: SortDirection.Descending },
+    { key: 'lastModifiedDate-asc', label: 'Last Updated, Oldest First', field: SortField.LastModified, direction: SortDirection.Ascending },
+    { key: 'lastModifiedDate-desc', label: 'Last Updated, Newest First', field: SortField.LastModified, direction: SortDirection.Descending },
 ] as const;
 
 // Sort uses mobile picker (6 options warrants a picker for better UX)

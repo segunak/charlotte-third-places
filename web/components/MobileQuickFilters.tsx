@@ -1,115 +1,118 @@
 "use client";
 
-import React, { useState } from "react";
-import { useFilters, useOpenNow } from "@/contexts/FilterContext";
-import { FilterQuickSearch, FilterSelect, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { FilterDrawer } from "@/components/FilterDrawer";
-import { Button } from "@/components/ui/button";
+import { FilterFullWidthSegments } from "@/components/FilterFullWidthSegments";
+import { FilterOptionRail } from "@/components/FilterOptionRail";
+import { FilterStatusRow } from "@/components/FilterStatusRow";
+import { FilterQuickSearch, FilterResetButton, OpenNowToggle } from "@/components/FilterUtilities";
 import { Icons } from "@/components/Icons";
+import { Button } from "@/components/ui/button";
+import { useFilters } from "@/contexts/FilterContext";
+import { FEATURED_FILTER_VALUES } from "@/lib/filters";
 import { Place } from "@/lib/types";
+import React, { useState } from "react";
 
 interface MobileQuickFiltersProps {
     comingSoonPlaces: Place[];
     comingSoonOpen: boolean;
     setComingSoonOpen: (open: boolean) => void;
-    visibleCount: number;
 }
 
 export const MobileQuickFilters = React.memo(function MobileQuickFilters({
     comingSoonPlaces,
     comingSoonOpen,
     setComingSoonOpen,
-    visibleCount,
 }: MobileQuickFiltersProps) {
     const { filters } = useFilters();
-    const { openNow } = useOpenNow();
     const [isMoreOptionsOpen, setIsMoreOptionsOpen] = useState(false);
 
     return (
         <>
             <div className="bg-card rounded-lg border overflow-hidden">
                 <div className="space-y-3 p-4">
-                    {/* Heading with live place count — changes text when Open Now is active */}
-                    <div className="flex items-center justify-between">
-                        <h3 className={`text-sm font-semibold ${openNow ? 'text-emerald-700 dark:text-emerald-400' : ''}`}>
-                            {openNow ? 'Showing Open Now' : 'Quick Filters'}
-                        </h3>
-                        <span className="inline-flex items-center gap-1.5 bg-primary/10 rounded-full px-2.5 py-1">
-                            <Icons.list className="h-3 w-3 text-primary shrink-0" />
-                            <span className="text-xs font-bold text-foreground tabular-nums">
-                                {visibleCount} {visibleCount === 1 ? 'place' : 'places'}
-                            </span>
-                        </span>
-                    </div>
+                    <FilterStatusRow className="-mt-4" />
 
                     {/* Search bar */}
-                    <FilterQuickSearch />
+                    <FilterQuickSearch
+                        className="h-10 rounded-xl bg-background text-sm shadow-xs"
+                        placeholder="Search Places"
+                    />
 
                     {/* Key filters */}
                     <div className="space-y-3">
-                        <FilterSelect
+                        <FilterOptionRail
                             field="neighborhood"
-                            value={filters.neighborhood.value}
                             label={filters.neighborhood.label}
-                            placeholder={filters.neighborhood.placeholder}
-                            predefinedOrder={filters.neighborhood.predefinedOrder}
+                            featuredValues={FEATURED_FILTER_VALUES.neighborhood}
+                            layout="fieldset"
+                            pickerMaxHeight="86dvh"
                         />
-                        <FilterSelect
+                        <FilterOptionRail
                             field="type"
-                            value={filters.type.value}
                             label={filters.type.label}
-                            placeholder={filters.type.placeholder}
-                            predefinedOrder={filters.type.predefinedOrder}
-                            matchMode={filters.type.matchMode}
+                            featuredValues={FEATURED_FILTER_VALUES.type}
+                            layout="fieldset"
+                            pickerMaxHeight="86dvh"
                         />
-                        <FilterSelect
-                            field="size"
-                            value={filters.size.value}
-                            label={filters.size.label}
-                            placeholder={filters.size.placeholder}
-                            predefinedOrder={filters.size.predefinedOrder}
-                        />
-                        <FilterSelect
+                        <FilterOptionRail
                             field="tags"
-                            value={filters.tags.value}
                             label={filters.tags.label}
-                            placeholder={filters.tags.placeholder}
-                            predefinedOrder={filters.tags.predefinedOrder}
-                            matchMode={filters.tags.matchMode}
+                            featuredValues={FEATURED_FILTER_VALUES.tags}
+                            layout="fieldset"
+                            pickerMaxHeight="86dvh"
                         />
+                        <FilterFullWidthSegments
+                            field="purchaseRequired"
+                            value={filters.purchaseRequired.value as string}
+                            label={filters.purchaseRequired.label}
+                            options={[
+                                { label: "Yes", value: "Yes" },
+                                { label: "No", value: "No" },
+                            ]}
+                            layout="fieldset"
+                        />
+                        <div className="border-t border-border/60 pt-4">
+                            <OpenNowToggle />
+                        </div>
                     </div>
 
                     {/* Action buttons */}
-                    <div className="grid grid-cols-2 gap-2">
-                        <FilterResetButton variant="outline" className="h-11 rounded-full" />
-                        <Button
-                            className="h-11 rounded-full"
-                            onClick={() => setIsMoreOptionsOpen(true)}
-                        >
-                            All Filters
-                        </Button>
+                    <div className="border-t border-border/60 pt-4">
+                        <div className="grid grid-cols-2 gap-2">
+                            <FilterResetButton variant="outline" className="h-11 rounded-full gap-2" showIcon />
+                            <Button
+                                className="h-11 rounded-full gap-2"
+                                onClick={() => setIsMoreOptionsOpen(true)}
+                            >
+                                <Icons.filter className="h-3.5 w-3.5" />
+                                More Filters
+                            </Button>
+                        </div>
                     </div>
                 </div>
 
-                {/* Footer zone — Open Now + Coming Soon */}
-                <div className="border-t bg-muted/30 px-4 py-3">
-                    <div className="grid grid-cols-2 gap-2">
-                        <OpenNowToggle className="rounded-full" />
-                        {comingSoonPlaces.length > 0 && (
-                            <button
-                                type="button"
-                                onClick={() => setComingSoonOpen(true)}
-                                aria-haspopup="dialog"
-                                aria-expanded={comingSoonOpen}
-                                aria-label={`View ${comingSoonPlaces.length} places coming soon`}
-                                className="h-11 flex items-center justify-center gap-2 rounded-full border border-border bg-background text-sm font-bold text-muted-foreground transition hover:bg-card focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
-                            >
+                {/* Related destination */}
+                {comingSoonPlaces.length > 0 && (
+                    <div className="border-t bg-muted/30 px-4 py-3">
+                        <button
+                            type="button"
+                            onClick={() => setComingSoonOpen(true)}
+                            aria-haspopup="dialog"
+                            aria-expanded={comingSoonOpen}
+                            aria-label={`View ${comingSoonPlaces.length} places coming soon`}
+                            className="grid h-11 w-full grid-cols-[minmax(0,1fr)_auto_0.75rem] items-center gap-3 rounded-xl border border-border bg-background px-3 text-sm font-semibold text-foreground shadow-xs transition-colors hover:bg-muted focus:outline-hidden focus-visible:ring-2 focus-visible:ring-primary/50"
+                        >
+                            <span className="flex min-w-0 items-center gap-2">
                                 <Icons.clock className="h-4 w-4 shrink-0 text-primary" />
-                                Coming Soon ({comingSoonPlaces.length})
-                            </button>
-                        )}
+                                Coming Soon
+                            </span>
+                            <span className="justify-self-end tabular-nums">
+                                {comingSoonPlaces.length} {comingSoonPlaces.length === 1 ? "Place" : "Places"}
+                            </span>
+                            <Icons.chevronRightBold className="h-3 w-3 text-primary" aria-hidden="true" />
+                        </button>
                     </div>
-                </div>
+                )}
             </div>
 
             {/* FilterDrawer component for more filters */}

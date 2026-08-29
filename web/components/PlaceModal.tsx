@@ -4,14 +4,13 @@ import { Place } from "@/lib/types";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
 import { Button } from "@/components/ui/button";
 import { PlaceContent } from "@/components/PlaceContent";
+import { ScrollHintButton } from "@/components/ScrollHintButton";
 import { useModalActions } from "@/contexts/ModalContext";
 import { Icons } from "@/components/Icons";
 import {
     FC,
     useRef,
-    useEffect,
-    useState,
-    useCallback
+    useEffect
 } from "react";
 import {
     Dialog,
@@ -45,40 +44,6 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose, zIndex, 
     const isMobile = useIsMobile();
     const highlights = place ? getPlaceHighlights(place) : null;
     const { pushChat } = useModalActions();
-    const [showScrollHint, setShowScrollHint] = useState(false);
-
-    // Show scroll hint on mobile when modal opens, hide once user scrolls
-    useEffect(() => {
-        if (!open || !isMobile) {
-            setShowScrollHint(false);
-            return;
-        }
-
-        let scrollElement: HTMLDivElement | null = null;
-
-        const handleScroll = () => {
-            // User scrolled — they know it scrolls, never show hint again this session
-            setShowScrollHint(false);
-        };
-
-        // Delay to let the dialog mount and content render
-        const timeout = setTimeout(() => {
-            scrollElement = contentRef.current;
-            if (!scrollElement) return;
-
-            const { scrollHeight, clientHeight } = scrollElement;
-            // Only show if there's actually content to scroll
-            if (scrollHeight > clientHeight) {
-                setShowScrollHint(true);
-                scrollElement.addEventListener('scroll', handleScroll, { once: true });
-            }
-        }, 200);
-
-        return () => {
-            clearTimeout(timeout);
-            scrollElement?.removeEventListener('scroll', handleScroll);
-        };
-    }, [open, isMobile, place]);
 
     useEffect(() => {
         // Scroll to the top when the modal opens
@@ -147,20 +112,11 @@ export const PlaceModal: FC<PlaceModalProps> = ({ place, open, onClose, zIndex, 
                     )}>
                         <PlaceContent place={place} layout="modal" />
                         
-                        {/* Floating scroll hint arrow - shows on open, fades out after first scroll */}
-                        <Button
-                            variant="default"
-                            size="icon"
-                            onClick={() => contentRef.current?.scrollBy({ top: 150, behavior: 'smooth' })}
-                            className={cn(
-                                "absolute bottom-1 right-1 rounded-full shadow-lg transition-opacity duration-300",
-                                showScrollHint ? "opacity-100 animate-bounce" : "opacity-0 pointer-events-none"
-                            )}
-                            aria-label="Scroll for more"
-                            aria-hidden={!showScrollHint}
-                        >
-                            <Icons.chevronDown className="h-4 w-4" />
-                        </Button>
+                        <ScrollHintButton
+                            contentRef={contentRef}
+                            enabled={open && isMobile}
+                            resetKey={place}
+                        />
                     </div>
 
                     <div className="px-6 pt-4 border-t mt-auto shrink-0 flex justify-center gap-6">

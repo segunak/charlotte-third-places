@@ -373,62 +373,35 @@ test.describe('INP Performance (Warm State)', () => {
   // of INP. Consider adding back when implementing View Transitions or client-side routing.
 })
 
-test.describe('Keyboard Navigation in Virtualized Picker', () => {
-  test('keyboard navigation scrolls items into view in picker modal', async ({ page }) => {
-    // Use mobile viewport to get the picker modal
+test.describe('Picker Keyboard Navigation', () => {
+  test('keyboard opens and closes the mobile picker', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 })
     
     await page.goto('/')
     await page.waitForLoadState('domcontentloaded')
     
-    // Wait for the browse section to be visible
     const browseSection = page.getByTestId('browse-section')
     await expect(browseSection).toBeVisible({ timeout: 60000 })
     
-    // Open filter drawer on mobile
-    const filterButton = page.locator('[data-testid="filter-drawer-trigger"], button:has-text("Filters")').first()
-    
-    // Skip if no filter button visible
-    if (await filterButton.count() > 0 && await filterButton.isVisible()) {
-      await filterButton.click()
-      await page.waitForTimeout(300)
-      
-      // Find a picker trigger (neighborhood or name filter)
-      const pickerTrigger = page.locator('button[aria-haspopup="dialog"]:has-text("Neighborhood"), button[aria-haspopup="dialog"]:has-text("Name")').first()
-      
-      if (await pickerTrigger.count() > 0 && await pickerTrigger.isVisible()) {
-        // Use force: true to bypass the Vaul drawer overlay that intercepts pointer events
-        await pickerTrigger.click({ force: true })
-        await page.waitForTimeout(500)
-        
-        // The modal should be open
-        const dialog = page.getByRole('dialog')
-        await expect(dialog).toBeVisible({ timeout: 5000 })
-        
-        // Navigate down with keyboard - press End to jump to last item
-        await page.keyboard.press('End')
-        await page.waitForTimeout(200)
-        
-        // The highlighted item should be visible (not scrolled out of view)
-        const highlightedItem = page.locator('[data-highlighted]')
-        if (await highlightedItem.count() > 0) {
-          await expect(highlightedItem).toBeVisible()
-        }
-        
-        // Navigate to top with Home
-        await page.keyboard.press('Home')
-        await page.waitForTimeout(200)
-        
-        // First item should be highlighted and visible
-        const firstHighlighted = page.locator('[data-highlighted]')
-        if (await firstHighlighted.count() > 0) {
-          await expect(firstHighlighted).toBeVisible()
-        }
-        
-        // Close dialog
-        await page.keyboard.press('Escape')
-      }
-    }
+    const filterButton = page.getByRole('button', { name: 'More Filters', exact: true })
+    await expect(filterButton).toBeVisible()
+    await filterButton.click()
+
+    const drawer = page.locator('[data-slot="drawer-content"]').last()
+    await expect(drawer).toBeVisible({ timeout: 5000 })
+
+    const pickerTrigger = drawer
+      .locator('section[aria-label="Neighborhood"]')
+      .locator('button[aria-haspopup="dialog"]')
+    await expect(pickerTrigger).toBeVisible()
+    await pickerTrigger.focus()
+    await page.keyboard.press('Enter')
+
+    const dialog = page.getByRole('dialog').filter({ hasText: 'Select Neighborhood' }).last()
+    await expect(dialog).toBeVisible({ timeout: 5000 })
+
+    await page.keyboard.press('Escape')
+    await expect(dialog).not.toBeVisible()
   })
 
   test('keyboard navigation works in desktop VirtualizedSelect', async ({ page }) => {

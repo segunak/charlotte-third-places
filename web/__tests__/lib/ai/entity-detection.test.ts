@@ -52,7 +52,8 @@ describe('TAGS constant', () => {
     const expectedTags = [
       'Black Owned',
       'Habesha',
-      'Great Date Spot',
+      'Date Spot',
+      'Kid Friendly',
       'Hidden Gem'
     ]
 
@@ -228,9 +229,14 @@ describe('detectTags', () => {
     expect(result).toContain('Habesha')
   })
 
-  it('detects "Great Date Spot" tag', () => {
+  it('detects "Date Spot" tag', () => {
     const result = detectTags('need a great date spot for Friday')
-    expect(result).toContain('Great Date Spot')
+    expect(result).toContain('Date Spot')
+  })
+
+  it('detects "Kid Friendly" tag', () => {
+    const result = detectTags('need a kid friendly place')
+    expect(result).toContain('Kid Friendly')
   })
 
   it('returns empty array when no tags match', () => {

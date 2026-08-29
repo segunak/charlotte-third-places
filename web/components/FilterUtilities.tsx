@@ -1,20 +1,20 @@
 "use client";
 
-import React, { useCallback, useState, useEffect, useLayoutEffect, useTransition, useRef } from "react";
+import { Icons } from "@/components/Icons";
+import { SearchablePickerModal } from "@/components/SearchablePickerModal";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { VirtualizedSelect } from "@/components/VirtualizedSelect";
+import { useFilterActions, useFilterData, useFilters, useOpenNow, useQuickSearch, useSort } from "@/contexts/FilterContext";
+import { useIsMobile } from "@/hooks/use-mobile";
+import type { FilterKey } from "@/lib/filters";
+import { DESKTOP_PICKER_FIELDS, FILTER_DEFINITION_MAP, MOBILE_PICKER_FIELDS, MULTI_SELECT_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER } from "@/lib/filters";
+import { DEFAULT_SORT_OPTION } from "@/lib/types";
+import { cn } from "@/lib/utils";
+import { CaretSortIcon } from "@radix-ui/react-icons";
+import React, { useCallback, useEffect, useLayoutEffect, useRef, useState, useTransition } from "react";
 import { flushSync } from "react-dom";
 import { useDebouncedCallback } from "use-debounce";
-import { cn } from "@/lib/utils";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { DEFAULT_SORT_OPTION } from "@/lib/types";
-import { useIsMobile } from "@/hooks/use-mobile";
-import { SearchablePickerModal } from "@/components/SearchablePickerModal";
-import { VirtualizedSelect } from "@/components/VirtualizedSelect";
-import { CaretSortIcon } from "@radix-ui/react-icons";
-import { Icons } from "@/components/Icons";
-import type { FilterKey } from "@/lib/filters";
-import { useQuickSearch, useFilters, useFilterData, useSort, useFilterActions, useOpenNow } from "@/contexts/FilterContext";
-import { MOBILE_PICKER_FIELDS, SORT_DEFS, SORT_USES_MOBILE_PICKER, DESKTOP_PICKER_FIELDS, MULTI_SELECT_FIELDS, FILTER_DEFINITION_MAP } from "@/lib/filters";
 
 const maxWidth = "max-w-full";
 
@@ -34,7 +34,7 @@ const MATCH_MODE_COPY_BY_FIELD: Partial<Record<FilterKey, {
     },
 };
 
-export function FilterQuickSearch() {
+export function FilterQuickSearch({ className, placeholder }: { className?: string; placeholder?: string } = {}) {
     const { quickFilterText, setQuickFilterText } = useQuickSearch();
     // Local state for immediate input feedback
     const [localValue, setLocalValue] = useState(quickFilterText);
@@ -73,7 +73,8 @@ export function FilterQuickSearch() {
                     type="text"
                     value={localValue}
                     onChange={handleQuickFilterChange}
-                    className="w-full pl-10"
+                    className={cn("w-full pl-10", className)}
+                    placeholder={placeholder}
                     autoFocus={false}
                     data-testid="quick-search-input"
                 />
@@ -394,29 +395,55 @@ export const FilterSelect = React.memo(function FilterSelect({ field, value, lab
 
 FilterSelect.displayName = "FilterSelect";
 
-export function OpenNowToggle({ className }: { className?: string }) {
+export function OpenNowToggle({
+    className,
+}: {
+    className?: string;
+}) {
     const { openNow, setOpenNow, openNowCount } = useOpenNow();
+    const countLabel = `${openNowCount} ${openNowCount === 1 ? "Place" : "Places"}`;
 
     return (
         <button
             type="button"
-            onClick={() => setOpenNow(!openNow)}
-            aria-pressed={openNow}
+            role="switch"
+            aria-checked={openNow}
+            aria-label={`Open Now, ${countLabel}`}
             className={cn(
-                "w-full h-11 flex items-center justify-center gap-2 rounded-lg border px-3 text-sm font-bold transition-colors",
+                "flex h-11 w-full cursor-pointer items-center justify-between gap-3 rounded-xl border bg-background px-3 text-sm font-semibold shadow-xs transition-colors focus:outline-hidden focus-visible:ring-2 focus-visible:ring-emerald-500/50",
                 openNow
-                    ? "border-emerald-300 bg-emerald-100 hover:bg-emerald-200 text-emerald-800 dark:border-emerald-700 dark:bg-emerald-950 dark:hover:bg-emerald-900 dark:text-emerald-300"
-                    : "border-border bg-card hover:bg-muted text-muted-foreground",
-                className,
+                    ? "border-emerald-300 text-emerald-800 dark:border-emerald-700 dark:text-emerald-300"
+                    : "border-border text-foreground hover:bg-muted",
+                className
             )}
+            onClick={() => setOpenNow(!openNow)}
         >
-            <Icons.clock className={cn("h-4 w-4 shrink-0", openNow ? "text-emerald-600 dark:text-emerald-400" : "text-emerald-500")} />
-            Open Now ({openNowCount})
+            <span className="flex min-w-0 items-center gap-2">
+                <Icons.clock className="h-4 w-4 shrink-0 text-emerald-500" aria-hidden="true" />
+                <span className="truncate">
+                    Open Now <span className="text-muted-foreground">·</span>{" "}
+                    <span className="tabular-nums">{countLabel}</span>
+                </span>
+            </span>
+            <span
+                aria-hidden="true"
+                className={cn(
+                    "relative h-7 w-12 shrink-0 rounded-full p-0.5 transition-colors",
+                    openNow ? "bg-emerald-600" : "bg-muted-foreground/35"
+                )}
+            >
+                <span
+                    className={cn(
+                        "block h-6 w-6 rounded-full bg-white shadow-sm transition-transform",
+                        openNow && "translate-x-5"
+                    )}
+                />
+            </span>
         </button>
     );
 }
 
-export function FilterResetButton({ disabled, variant, fullWidth = true, className }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string }) {
+export function FilterResetButton({ disabled, variant, fullWidth = true, className, showIcon = false }: { disabled?: boolean; variant: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"; fullWidth?: boolean; className?: string; showIcon?: boolean }) {
     const { resetAll } = useFilterActions();
 
     const handleResetFilters = useCallback((e: React.MouseEvent<HTMLButtonElement>) => {
@@ -438,6 +465,7 @@ export function FilterResetButton({ disabled, variant, fullWidth = true, classNa
             onClick={handleResetFilters}
             disabled={disabled}
         >
+            {showIcon && <Icons.close className="h-3.5 w-3.5 shrink-0" />}
             Reset Filters
         </Button>
     );
@@ -481,16 +509,13 @@ export function SortSelect({ className, onDropdownOpenChange }: { className?: st
 
     // Mobile: use SearchablePickerModal
     if (isMobile && SORT_USES_MOBILE_PICKER) {
-        const isDefaultSort = currentSortKey === defaultSortKey;
         return (
             <div className={cn(maxWidth, className)}>
                 <button
                     type="button"
                     className={cn(
                         "flex h-9 w-full items-center justify-between whitespace-nowrap rounded-md border border-input bg-transparent px-3 py-2 text-sm shadow-xs ring-offset-background placeholder:text-muted-foreground focus:outline-hidden focus:ring-0 focus:shadow-none disabled:cursor-not-allowed disabled:opacity-50 [&>span]:line-clamp-1",
-                        isDefaultSort
-                            ? "text-muted-foreground font-normal"
-                            : "font-bold bg-primary text-primary-foreground"
+                        "text-foreground font-normal"
                     )}
                     onClick={() => setPickerOpen(true)}
                     aria-haspopup="dialog"
