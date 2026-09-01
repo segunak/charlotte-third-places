@@ -2,7 +2,7 @@
 // This file owns all filter-related constructs so other modules only need to import from here.
 import { Place, SortDirection, SortField, SortOption } from "./types";
 
-// A single sentinel value meaning "no constraint" for a filter field.
+// A single sentinel value meaning "no constraint" for a given filter field.
 export const FILTER_SENTINEL = 'all';
 
 export type FilterValueType = 'scalar' | 'array';
