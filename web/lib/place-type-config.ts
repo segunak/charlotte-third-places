@@ -224,6 +224,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "👕",
     mapColor: "#008080", // Teal
   },
+  "Wine Bar": {
+    icon: Icons.wineGlass,
+    emoji: "🍷",
+    mapColor: "#9D174D", // Wine Berry
+  },
   "Yarn Store": {
     icon: Icons.yarn,
     emoji: "🧶",

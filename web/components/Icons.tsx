@@ -88,7 +88,8 @@ import {
     FaStar,
     FaTabletAlt,
     FaUniversity,
-    FaWineBottle
+    FaWineBottle,
+    FaWineGlass
 } from "react-icons/fa";
 import {
     GiAmphora,
@@ -167,6 +168,7 @@ export const Icons = {
   cake: FaCakeCandles,
   donut: GiDonut,
   wineBottle: FaWineBottle,
+  wineGlass: FaWineGlass,
   coffeeMug: GiCoffeeMug,
   teaCup: MdEmojiFoodBeverage,
   bubbleTea: RiDrinks2Fill,
