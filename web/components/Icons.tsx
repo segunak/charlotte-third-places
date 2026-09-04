@@ -45,7 +45,8 @@ import {
     MdAttachMoney,
     MdEditLocationAlt,
     MdEmojiFoodBeverage,
-    MdMilitaryTech
+    MdMilitaryTech,
+    MdPark
 } from "react-icons/md";
 import {
     RiChatAiFill,
@@ -176,6 +177,7 @@ export const Icons = {
   store: FaStore,
   shoppingCart: FaShoppingCart,
   plantSeed: GiPlantSeed,
+  park: MdPark,
   acaiBowl: GiFruitBowl,
   beer: FaBeer,
   fastFood: IoFastFood,
