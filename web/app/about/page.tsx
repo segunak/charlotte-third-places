@@ -256,7 +256,7 @@ const frequentlyAskedQuestions = [
         title: "Aren't parks considered third places? Why not list all parks in Charlotte?",
         content: (
             <div className="space-y-3">
-                Parks are third places, but this website does not list every park. It lists the parks that have the strongest reputation as third places. For a full list of parks, check the Charlotte-Mecklenburg park locator <ResponsiveLink href="https://parkandrec.mecknc.gov/Places-to-Visit/Parks">here</ResponsiveLink>.
+                Good point, parks certainly are third places. Not all parks are listed on this website; only the parks that have the highest reputation for being third places are. There's already a great directory of all parks provided by the Mecklenburg County Parks and Rec department. Check out their park locator tool <ResponsiveLink href="https://parkandrec.mecknc.gov/Places-to-Visit/Parks">here</ResponsiveLink>.
             </div>
         )
     },
