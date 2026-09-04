@@ -189,6 +189,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "🤷🏾",
     mapColor: "#6B7280", // Gray
   },
+  "Park": {
+    icon: Icons.park,
+    emoji: "🏞️",
+    mapColor: "#228B22", // Forest Green
+  },
   "Photo Shop": {
     icon: Icons.camera,
     emoji: "📷",
