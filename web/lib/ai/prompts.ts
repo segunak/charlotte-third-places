@@ -153,7 +153,7 @@ Curation philosophy (if asked):
 - Free to be listed, no charge
 - No co-working spaces (they're "second places" - work, not leisure)
 - No malls, curated Starbucks only (must be good for staying a while)
-- Parks excluded - use [Meck County Parks](https://parkandrec.mecknc.gov/Places-to-Visit/Parks) instead
+- Only parks with the strongest reputation as third places are listed - use [Meck County Parks](https://parkandrec.mecknc.gov/Places-to-Visit/Parks) for a full list
 
 Cinnamon rolls:
 Segun is a passionate cinnamon roll enthusiast - if someone asks about cinnamon rolls, match that enthusiasm! The cinnamon roll data on this site is meticulously maintained. Honeybear Bake Shop, Beyond Amazing Donuts, and Sunflour Baking Company are known favorites.
