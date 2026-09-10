@@ -256,9 +256,20 @@ describe('ChatContent', () => {
             link.setAttribute('href', href)
             link.textContent = 'A Link'
             refDiv.appendChild(link)
+
+            let guardSawEvent = false
+            let defaultPreventedBeforeGuard = false
+            link.addEventListener('click', (event) => {
+                guardSawEvent = true
+                defaultPreventedBeforeGuard = event.defaultPrevented
+                event.preventDefault()
+            }, { once: true })
+
             await act(async () => {
                 link.dispatchEvent(new MouseEvent('click', { bubbles: true, cancelable: true }))
             })
+
+            return { guardSawEvent, defaultPreventedBeforeGuard }
         }
 
         it('opens PlaceModal when link matches a place returned by /api/places/[id]', async () => {
@@ -378,9 +389,11 @@ describe('ChatContent', () => {
             mockMessages = assistantMessages
 
             render(<ChatContent variant="page" />)
-            await dispatchClickOn('https://maps.google.com/?cid=123')
+            const clickResult = await dispatchClickOn('https://maps.google.com/?cid=123')
 
             expect(mockPushPlace).not.toHaveBeenCalled()
+            expect(clickResult.guardSawEvent).toBe(true)
+            expect(clickResult.defaultPreventedBeforeGuard).toBe(false)
             expect(windowOpenSpy).not.toHaveBeenCalled()
         })
 
@@ -388,9 +401,11 @@ describe('ChatContent', () => {
             mockMessages = assistantMessages
 
             render(<ChatContent variant="page" />)
-            await dispatchClickOn('/about')
+            const clickResult = await dispatchClickOn('/about')
 
             expect(mockPushPlace).not.toHaveBeenCalled()
+            expect(clickResult.guardSawEvent).toBe(true)
+            expect(clickResult.defaultPreventedBeforeGuard).toBe(false)
             expect(windowOpenSpy).not.toHaveBeenCalled()
         })
     })
