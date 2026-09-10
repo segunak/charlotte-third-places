@@ -204,6 +204,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     emoji: "🏓",
     mapColor: "#32CD32", // Lime Green
   },
+  "Pub": {
+    icon: Icons.beer,
+    emoji: "🍻",
+    mapColor: "#7A5C00", // Amber Brown
+  },
   "Public Market": {
     icon: Icons.store,
     emoji: "🏪",
@@ -218,6 +223,11 @@ export const placeTypeConfig: Record<string, PlaceTypeConfig> = {
     icon: Icons.users,
     emoji: "🎉",
     mapColor: "#E066FF", // Medium Orchid
+  },
+  "Tavern": {
+    icon: Icons.beer,
+    emoji: "🍺",
+    mapColor: "#5C4033", // Dark Brown
   },
   "Tea House": {
     icon: Icons.teaCup,
