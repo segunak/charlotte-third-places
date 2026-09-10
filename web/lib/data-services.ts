@@ -6,9 +6,15 @@ import fs from 'fs';
 import path from 'path';
 import stripBomStream from 'strip-bom-stream';
 
-const base = new Airtable({
-    apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
-}).base('apptV6h58vA4jhWFg');
+let airtableBase: Airtable.Base | undefined;
+
+function getAirtableBase(): Airtable.Base {
+    airtableBase ??= new Airtable({
+        apiKey: process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN
+    }).base('apptV6h58vA4jhWFg');
+
+    return airtableBase;
+}
 
 /**
  * Determines whether to use local data or production data.
@@ -247,7 +253,7 @@ export async function getPlaceById(id: string) {
             return localData.find((place) => place.recordId === id);
         }
 
-        const record = await base('Charlotte Third Places').find(id);
+        const record = await getAirtableBase()('Charlotte Third Places').find(id);
         return mapRecordToPlace(record);
     } catch (error) {
         if (!useLocalData && isAirtableNotFoundError(error)) {
@@ -281,7 +287,7 @@ export async function getPlaces(): Promise<Place[]> {
         }
 
         // Get places from Airtable
-        const records = await base('Charlotte Third Places')
+        const records = await getAirtableBase()('Charlotte Third Places')
             .select({ view: 'Production' })
             .all();
 
