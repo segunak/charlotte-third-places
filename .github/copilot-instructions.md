@@ -5,61 +5,13 @@ Use [ASD-STE100 Simplified Technical English](https://en.wikipedia.org/wiki/Simp
 ## Project Overview
 
 * **Name:** Charlotte Third Places
-* **Tech Stack:** Next.js, shadcn/ui, Tailwind CSS, TypeScript, React, Vercel for hosting, Azure for Serverless Functions
 * **Purpose:** A curated website featuring "third places" (locations other than home or work) in and around Charlotte, North Carolina. Helps users find spots suitable for studying, reading, writing, remote work, relaxing, or socializing.
-* **Data Source:** Airtable for production data, local CSV files for development
-* **Architecture:** Server-side rendered Next.js app with App Router, component-based UI with shadcn/ui, responsive design
 
-## Code Structure & Architecture
+For product/business ideas, feature planning, community, UI/UX, and user-facing performance decisions, load the [app-inspirations skill](skills/app-inspirations/SKILL.md). Let [Apple Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/) lead human-centered design, supported by [Google's design](https://design.google/) and [Android guidance](https://developer.android.com/design). Consider the full app catalog; Pinterest, Google Maps, Beli, and AllTrails are especially relevant, not exclusive. Reuse established background and verify changing details when relevant.
 
-### Directory Structure
+Explore the codebase to understand the structure, key files, and data flow. Do not assume anything without verification.
 
-* `/web/` - Main Next.js application directory
-* `/web/app/` - Next.js App Router pages and API routes
-* `/web/components/` - Reusable React components (UI and business logic)
-* `/web/components/ui/` - shadcn/ui components
-* `/web/lib/` - Utility functions, types, and data services
-* `/web/contexts/` - React context providers
-* `/web/hooks/` - Custom React hooks
-* `/web/public/` - Static assets
-* `/web/styles/` - Global CSS and Tailwind configurations
-
-### Key Files
-
-* `web/lib/data-services.ts` - Handles data fetching from Airtable or local CSV
-* `web/lib/types.ts` - TypeScript type definitions for Place and other data structures
-* `web/lib/utils.ts` - Utility functions (includes shadcn/ui cn helper)
-* `web/styles/globals.css` - Tailwind CSS v4 configuration (CSS-first approach)
-* `web/components.json` - shadcn/ui configuration
-
-### Data Flow
-
-* Production: Airtable → Next.js API routes → ISR (Incremental Static Regeneration)
-* Development: Local CSV files → Direct file reads
-* Environment variable `FORCE_PRODUCTION_DATA=true` can override development behavior
-
-## Development Guidelines
-
-### Code Style & Standards
-
-* Use TypeScript for all new code
-* Follow Next.js App Router patterns
-* Prioritize component composition over inheritance
-* Use shadcn/ui components as the foundation for UI elements
-* Implement responsive design mobile-first with Tailwind CSS
-* Use semantic HTML and proper accessibility attributes
-* For UI/UX design work, study relevant patterns in widely used consumer apps such as Google Maps, Airbnb, Zillow, Booking.com, Spotify, Uber, Lyft, and major social apps. Adapt the best patterns to this product, its users, and its existing design system.
-
-### Icons
-
-* **ALL icons must go through `components/Icons.tsx`.** Never import directly from `lucide-react`, `react-icons/*`, `@radix-ui/react-icons`, or any other icon library in feature components.
-* To add a new icon:
-  1. Import it into `components/Icons.tsx` from its source library
-  2. Add it as a property on the exported `Icons` object (camelCase key)
-  3. In the consuming component, `import { Icons } from "@/components/Icons"` and render it as `<Icons.myIcon className="..." />`
-* This keeps icon dependencies centralized, makes swaps trivial, and ensures consistent sizing/styling props across the app.
-
-### Naming Conventions
+## Naming Conventions
 
 * Components: PascalCase (e.g., `PlaceCard.tsx`)
 * Functions: camelCase (e.g., `fetchPlaces`)
@@ -67,80 +19,26 @@ Use [ASD-STE100 Simplified Technical English](https://en.wikipedia.org/wiki/Simp
 * CSS classes: Follow Tailwind utility patterns
 * YAML display names: In `.yml` and `.yaml` files, use Title Case for human-facing `name` values, workflow names, job names, step names, PR title prefixes, titles, and similar labels unless an external tool requires exact casing.
 
-### State Management
-
-* Use React Context for global state (see `/contexts/`)
-* Local component state with useState/useReducer for component-specific data
-* Server state handled by Next.js data fetching patterns
-
-## Development Workflow
-
-### Setup & Running
-
+## Setup & Running
 
 * `npm install` - Install dependencies
-* `npm run dev` - Development server (uses local CSV data)
+* `npm run dev` - Development server
 * `npm run build` - Production build
 * `npm run start` - Production server
 * `npm run lint` - ESLint validation
 
-### Data Sources
-
-* **Development mode**: Uses local CSV files in `/local-data/` directory
-* **Production mode**: Fetches from Airtable via API
-* **Override**: Set `FORCE_PRODUCTION_DATA=true` in `.env` to use production data in development
-
-### Testing & Quality
-
-* ESLint configuration extends `next/core-web-vitals`
-* TypeScript strict mode enabled
-* **Testing infrastructure**: See [docs/testing.md](../docs/testing.md) for complete testing guide
-
-#### Test Commands (use these, NOT raw playwright/vitest commands)
-
-| Command | Purpose | Server Handling |
-|---------|---------|-----------------|
-| `npm run test:unit` | Run unit tests (Vitest) in watch mode | No server needed |
-| `npm run test:unit:run` | Run unit tests once and exit | No server needed |
-| `npm run test:e2e` | Run E2E tests (Playwright) | **Auto-starts** dev server via `start-server-and-test` |
-| `npm test` | Run ALL tests (unit + E2E) | Auto-starts server for E2E portion |
-
-**IMPORTANT**: Always use `npm run test:e2e` for E2E tests—it starts the dev server automatically. Do NOT run `npx playwright test` directly as it requires a running server.
-
-## Technical Specifications
-
-### Styling
-
-* **Primary**: Tailwind CSS with shadcn/ui design system
-* **Theme**: Custom theme defined in `styles/globals.css` using CSS-first configuration (`@theme` block)
-* **Colors**: Brand colors defined in HSL format (see `/docs/developer-notes.md`)
-
-### Performance
-
-* Next.js ISR for production data caching
-* Image optimization with next/image
-* WebP format preferred for images
-* Vercel Analytics and Speed Insights integrated
-
-### External Integrations
-
-* Google Maps API for location data
-* Airtable for content management
-* Google Tag Manager for analytics
-* Social media platform links (Instagram, TikTok, etc.)
-
-## Communication Style
+## Various Notes
 
 * Be direct and factual in responses
+* See [docs/testing.md](../docs/testing.md) for complete testing guide
 * Avoid apologetic language or unnecessary agreement
 * Focus on practical solutions over enthusiasm
 * Question incorrect assumptions with facts
-* Avoid hyperbole; maintain professional tone
+* **ALL icons must go through `components/Icons.tsx`.** This keeps icon dependencies centralized, makes swaps trivial, and ensures consistent sizing/styling props across the app.
+* For skill prose and metadata descriptions, use commas or separate sentences instead of colons, semicolons, em dashes, or en dashes. Keep required punctuation in metadata syntax, URLs, and code.
 * Write comments for long-term code clarity, not temporary changes
-* Don't announce what you just did - commit messages serve that purpose
-
-## Workflow Notes
-
-* **Development server**: You do not need to run `npm run dev` after changes - the user handles this
-* **Production builds**: Never run `npm run build`, `npx next build`, `next build`, or any other production build command when working locally unless the user explicitly asks for a production build for that task
-* **Working directory**: Always work from the `web` subdirectory for web npm commands
+* Opt for surgical, concise, and clear code. Code that will last for posterity, aggressively avoid over engineering.
+* Brand colors defined in HSL format (see `/docs/developer-notes.md`)
+* You do not need to run `npm run dev` after changes - the user handles this
+* Never run `npm run build`, `npx next build`, `next build`, or any other production build command when working locally unless the user explicitly asks for a production build for that task
+* Always work from the `web` subdirectory for web npm commands
