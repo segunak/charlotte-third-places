@@ -3,19 +3,20 @@ name: Places Researcher
 description: Researches places in or near Charlotte. Produces structured listing entries for new places and handles general inquiries about existing places using Airtable and web research.
 # Tools available to this agent. The top-level tools list is the final filter
 # for what the agent can use, regardless of what MCP servers expose.
-# VS Code resolves airtable/* tools from .vscode/mcp.json.
-# GitHub coding agent resolves them from mcp-servers below and/or the repo MCP config.
-# Unrecognized tool names are silently ignored, so both environments coexist safely.
-# https://code.visualstudio.com/docs/copilot/customization/custom-agents
+# VS Code, Copilot CLI, and the GitHub Copilot app resolve airtable/* through
+# the repository-root .mcp.json, which uses browser OAuth for Airtable.
+# GitHub cloud agent uses separate repository MCP settings or supported agent settings.
+# Tool availability varies by client.
+# https://code.visualstudio.com/docs/agent-customization/mcp-servers
 # https://docs.github.com/en/copilot/reference/custom-agents-configuration#tools
 tools: [vscode, execute, read, agent, search, web, airtable/create_field, airtable/create_records_for_table, airtable/create_table, airtable/get_table_schema, airtable/list_bases, airtable/list_records_for_table, airtable/list_tables_for_base, airtable/ping, airtable/search_bases, airtable/update_field, airtable/update_records_for_table, airtable/update_table, browser, todo]
-# mcp-servers is used ONLY by GitHub Copilot coding agent (cloud). VS Code ignores it
-# and uses .vscode/mcp.json instead. The tools key here controls which MCP tools are
-# exposed to the system; the top-level tools list above filters what the agent actually uses.
-# Secret must be named COPILOT_MCP_* and stored in the repo's "copilot" environment
-# (Settings > Environments > copilot). $SECRET_NAME syntax substitutes the value at runtime.
+# This mcp-servers block keeps cloud authentication separate from local OAuth.
+# The tools key here controls which MCP tools are exposed to the agent.
+# The top-level tools list above further limits this agent's access.
+# Cloud secrets must start with COPILOT_MCP_ and be stored as Agents secrets.
+# $SECRET_NAME syntax substitutes the value at runtime.
 # https://docs.github.com/en/copilot/reference/custom-agents-configuration#mcp-server-configuration-details
-# https://docs.github.com/en/copilot/how-tos/use-copilot-agents/coding-agent/extend-coding-agent-with-mcp
+# https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/configure-mcp-servers
 mcp-servers:
   airtable:
     type: http
