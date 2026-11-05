@@ -30,6 +30,12 @@ To switch back to local CSV data:
 2. Or set it to false with `FORCE_PRODUCTION_DATA=false`
 3. Restart the development server
 
+## Dependency Security
+
+The package manifest has scoped overrides for Serwist and TypeScript ESLint. These overrides select fixed transitive dependencies. Keep each override until its parent package permits a fixed version.
+
+Run `npm audit`, `npx tsc --noEmit`, `npm run lint`, and `npm run test:ci` after dependency changes. The API tests check Azure chat streaming and input validation. The preview E2E tests check chat transport and the generated PWA worker.
+
 ## More Notes
 
 - Commit changes to the develop branch for a live preview of the site via Vercel. Merge changes into `master` when ready for production.
