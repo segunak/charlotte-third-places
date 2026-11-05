@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "next-devtools": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    },
+    "expo": {
+      "type": "http",
+      "url": "https://mcp.expo.dev/mcp"
+    },
+    "airtable": {
+      "type": "http",
+      "url": "https://mcp.airtable.com/mcp"
+    },
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest", "--browser=msedge"]
+    },
+    "github-agentic-workflows": {
+      "type": "stdio",
+      "command": "gh",
+      "args": ["aw", "mcp-server"],
+      "tools": [
+        "compile",
+        "audit",
+        "logs",
+        "inspect",
+        "status",
+        "audit-diff"
+      ]
+    }
+  }
+}

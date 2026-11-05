@@ -1,6 +1,6 @@
 # Copilot Instructions
 
-Use [ASD-STE100 Simplified Technical English](https://en.wikipedia.org/wiki/Simplified_Technical_English) in all responses, documentation, code, and literally everything you generate.
+Use [ASD-STE100 Simplified Technical English](https://www.asd-ste100.org/) for all natural-language content you generate, including responses, documentation, code comments, instructions, and user-facing text. Follow the current official standard and use the [ASD-STE100 Issue 9 manual](https://www.asd-ste100.org/assets/files/ASD-STE100_ISSUE9.pdf) as the authoritative reference when necessary. Rely on your existing knowledge of ASD-STE100 for normal work, and consult the official standard when a rule is unclear. Apply STE to natural language without changing required code syntax, commands, identifiers, APIs, or exact technical terms.
 
 ## Project Overview
 
