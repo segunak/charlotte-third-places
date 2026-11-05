@@ -124,7 +124,6 @@ export function ChatContent({
         [placeId]
     )
 
-    // Use the Vercel AI SDK v5 useChat hook
     const {
         messages,
         sendMessage,

@@ -96,12 +96,12 @@ export async function POST(request: Request) {
     ];
 
     // Convert UIMessages (parts-based) to model messages (content-based)
-    const modelMessages = convertToModelMessages(messages as UIMessage[]);
+    const modelMessages = await convertToModelMessages(messages as UIMessage[]);
 
     // Stream response from Azure OpenAI
     // AbortSignal.timeout ensures we fail gracefully before Vercel's 30s maxDuration limit
     const result = streamText({
-      model: azure(AI_CONFIG.chatModel),
+      model: azure.chat(AI_CONFIG.chatModel),
       messages: [...systemMessages, ...modelMessages],
       maxOutputTokens: AI_CONFIG.maxOutputTokens,
       temperature: AI_CONFIG.temperature,
