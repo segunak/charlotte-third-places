@@ -7,6 +7,7 @@ import { FC, useState, useRef, useEffect, useCallback, useMemo } from 'react';
 import { Icons } from "@/components/Icons";
 import { MobilePhotoFilmstrip } from "@/components/MobilePhotoFilmstrip";
 import { Button } from "@/components/ui/button";
+import { LoadingSpinner } from "@/components/ui/loading-spinner";
 import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import {
     Dialog,
@@ -29,6 +30,7 @@ import {
     TooltipTrigger,
 } from "@/components/ui/tooltip"
 import { useIsMobile } from "@/hooks/use-mobile";
+import { usePlacePhotos } from "@/hooks/usePlacePhotos";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 
 interface PhotosModalProps {
@@ -58,7 +60,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
         return !isMobile && window.innerWidth >= 768;
     }, [isMobile]);
 
-    const photos = useMemo(() => (place?.photos ?? []), [place]);
+    const { photos, isLoading, error, retry } = usePlacePhotos(place, open);
     const airtableRecordId = place?.recordId ?? '';
     const totalPhotos = photos.length;
 
@@ -79,6 +81,9 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
     const visibleToOriginalIdx = useMemo(() => visiblePhotoData.map((d) => d.originalIdx), [visiblePhotoData]);
     const visibleSlideCount = visiblePhotos.length;
     const hasVisiblePhotos = visibleSlideCount > 0;
+    const displayedPhotoCount = isLoading || error
+        ? Math.max(0, (place?.photoCount ?? totalPhotos) - failedIndices.size)
+        : visibleSlideCount;
 
     const handleKeyDown = useCallback((e: KeyboardEvent) => {
         if (e.key === 'Escape') onClose();
@@ -203,7 +208,7 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                 <div className="shrink-0 h-16 flex items-center justify-between px-4 py-2 bg-black/80 border-b border-gray-800">
                     <div className="flex items-center gap-2 min-w-0">
                         <div className="text-white font-semibold truncate">
-                            {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {visibleSlideCount}
+                            {place.name} - Photo {hasVisiblePhotos ? (currentSlide + 1) : 0} of {displayedPhotoCount}
                         </div>
                         {isMobile ? (
                             <>
@@ -251,6 +256,19 @@ export const PhotosModal: FC<PhotosModalProps> = ({ place, open, onClose, zIndex
                         )}
                     </div>
                 </div>
+
+                {isLoading && (
+                    <div role="status" className="shrink-0 flex items-center justify-center gap-2 px-4 py-2 bg-black/80 text-white text-sm">
+                        <LoadingSpinner size="sm" />
+                        Loading photo list...
+                    </div>
+                )}
+                {error && (
+                    <div role="alert" className="shrink-0 flex items-center justify-center gap-3 px-4 py-2 bg-black/80 text-white text-sm">
+                        <span>Could not load the photo list.</span>
+                        <Button variant="secondary" size="sm" onClick={retry}>Retry</Button>
+                    </div>
+                )}
 
                 {/* Main image container using Carousel */}
                 <div className="grow relative w-full h-full flex items-center justify-center overflow-hidden bg-black">

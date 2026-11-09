@@ -81,6 +81,16 @@ Returns all places on the site as a JSON array. Each element matches the `Place`
 
 **Implementation**: `app/api/places/route.ts`
 
+### `GET /api/places/[id]`
+
+**URL**: `https://www.charlottethirdplaces.com/api/places/<recordId>`
+
+Returns a single place by Airtable record ID with its complete `photos` array. Uses `force-static` rendering and is refreshed when `/api/revalidate` is called. Browse pages (`/` and `/map`) pass each place through `copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount()` so the page payload includes only the first photo and `photoCount` to keep page and ISR cache payloads small. When a user opens the gallery for a browse record, `PhotosModal` uses `usePlacePhotos()` to fetch the full photo list from this endpoint and cache it in memory by `recordId`.
+
+**Response**: `200 OK` — `Place` JSON object, or `404 Not Found`.
+
+**Implementation**: `app/api/places/[id]/route.ts`
+
 ### `GET /api/revalidate`
 
 On-demand ISR revalidation. Requires `Authorization: Bearer {REVALIDATE_TOKEN}` header. Revalidates the entire site including all API routes.

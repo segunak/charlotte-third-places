@@ -297,3 +297,11 @@ export async function getPlaces(): Promise<Place[]> {
         throw new Error('Failed to fetch places');
     }
 }
+
+export function copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount(place: Place): Place {
+    return {
+        ...place,
+        photos: place.photos.slice(0, 1),
+        photoCount: place.photoCount ?? place.photos.length,
+    };
+}

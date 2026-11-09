@@ -12,8 +12,8 @@
  */
 
 import type { Place } from '@/lib/types'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 // Track the mock return value so we can change it per test
 let mockIsMobile = false
@@ -585,6 +585,80 @@ describe('PhotosModal', () => {
       expect(placeholder).toHaveClass('bg-black')
       expect(placeholder).not.toHaveClass('animate-pulse')
       expect(document.querySelector('.animate-pulse')).not.toBeInTheDocument()
+    })
+  })
+
+  describe('Browse photo loading', () => {
+    const fetchMock = vi.fn<typeof fetch>()
+
+    beforeEach(() => {
+      fetchMock.mockReset()
+      vi.stubGlobal('fetch', fetchMock)
+      vi.spyOn(console, 'error').mockImplementation(() => {})
+    })
+
+    afterEach(() => {
+      vi.unstubAllGlobals()
+      vi.restoreAllMocks()
+    })
+
+    function createBrowsePlace(recordId: string) {
+      const full = createMockPlace({ recordId })
+      const browse: Place = { ...full, photos: full.photos.slice(0, 1), photoCount: full.photos.length }
+      return { full, browse }
+    }
+
+    it('shows the cover and complete count before the full list arrives', async () => {
+      const { full, browse } = createBrowsePlace('recModalLoading')
+      let complete!: (response: Response) => void
+      fetchMock.mockReturnValue(new Promise<Response>((resolve) => { complete = resolve }))
+      render(<PhotosModal place={browse} open={true} onClose={vi.fn()} />)
+
+      expect(screen.getByText('Test Coffee Shop - Photo 1 of 3')).toBeInTheDocument()
+      expect(screen.getByAltText('Test Coffee Shop photo 1')).toHaveAttribute('src', browse.photos[0].display)
+      expect(screen.getByRole('status')).toHaveTextContent('Loading photo list...')
+      expect(screen.queryByRole('button', { name: 'Go to photo 3' })).not.toBeInTheDocument()
+
+      await act(async () => { complete(Response.json(full)) })
+
+      expect(screen.queryByRole('status')).not.toBeInTheDocument()
+      expect(screen.getByRole('button', { name: 'Go to photo 3' })).toBeInTheDocument()
+      expect(screen.getByText('Test Coffee Shop - Photo 1 of 3')).toBeInTheDocument()
+    })
+
+    it('shows an error and retry without removing the cover', async () => {
+      const { full, browse } = createBrowsePlace('recModalRetry')
+      fetchMock.mockResolvedValueOnce(new Response('', { status: 504 })).mockResolvedValueOnce(Response.json(full))
+      render(<PhotosModal place={browse} open={true} onClose={vi.fn()} />)
+
+      expect(await screen.findByRole('alert')).toHaveTextContent('Could not load the photo list.')
+      expect(screen.getByAltText('Test Coffee Shop photo 1')).toBeInTheDocument()
+      expect(screen.getByText('Test Coffee Shop - Photo 1 of 3')).toBeInTheDocument()
+      expect(screen.queryByText('No Photos Available')).not.toBeInTheDocument()
+
+      fireEvent.click(screen.getByRole('button', { name: 'Retry' }))
+
+      await waitFor(() => expect(screen.getByRole('button', { name: 'Go to photo 3' })).toBeInTheDocument())
+      expect(screen.queryByRole('alert')).not.toBeInTheDocument()
+      expect(fetchMock).toHaveBeenCalledTimes(2)
+    })
+
+    it('does not fetch an existing full record', () => {
+      render(<PhotosModal place={createMockPlace()} open={true} onClose={vi.fn()} />)
+
+      expect(fetchMock).not.toHaveBeenCalled()
+      expect(screen.getByText('Test Coffee Shop - Photo 1 of 3')).toBeInTheDocument()
+    })
+
+    it('uses the complete mobile filmstrip after loading', async () => {
+      mockIsMobile = true
+      const { full, browse } = createBrowsePlace('recModalMobile')
+      fetchMock.mockResolvedValue(Response.json(full))
+      render(<PhotosModal place={browse} open={true} onClose={vi.fn()} />)
+
+      expect(await screen.findByTestId('photos-modal-filmstrip')).toBeInTheDocument()
+      expect(screen.getByTestId('filmstrip-thumb-2')).toBeInTheDocument()
+      expect(screen.getByTestId('filmstrip-thumb-0')).toHaveAttribute('data-active', 'true')
     })
   })
 

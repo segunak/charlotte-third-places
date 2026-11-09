@@ -38,6 +38,10 @@ AI responses can contain links to place pages. The chat UI intercepts internal p
 
 Places opened from chat are marked as chat-origin. That signal hides the Ask AI button for that nested place view, which prevents loops like Chat -> Place -> Ask AI -> Chat. Normal place opens from cards, maps, and place pages can still show Ask AI.
 
+## Photo Gallery Loading
+
+On browse pages (`/` and `/map`), each `Place` record carries only its first photo and `photoCount`. When `pushPhotos(place)` opens `PhotosModal`, `usePlacePhotos` fetches the full photo list from `/api/places/[id]` and caches it in memory by `recordId`. This keeps photo loading inside `PhotosModal` without mutating the surface stack or writing extra browser history entries.
+
 ## Design Rules To Preserve
 
 - Treat the surface stack as the source of truth for rendered overlays.
