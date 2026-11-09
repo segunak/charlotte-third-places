@@ -1,7 +1,7 @@
 import Link from "next/link";
 import * as React from "react";
 import type { Metadata } from 'next'
-import { getPlaces } from '@/lib/data-services';
+import { getPlaces, copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount } from '@/lib/data-services';
 import { PlaceMap } from "@/components/PlaceMap";
 import { FilterDrawer } from '@/components/FilterDrawer';
 import { MobileFindMeButton } from '@/components/MobileFindMeButton';
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export const dynamic = "force-static"
 
 export default async function MapPage() {
-    const places = await getPlaces();
+    const places = (await getPlaces()).map(copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount);
 
     return (
         <FilterProvider places={places}>

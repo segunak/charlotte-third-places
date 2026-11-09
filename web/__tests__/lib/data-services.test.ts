@@ -1,18 +1,89 @@
 /**
  * Data Services Tests
  *
- * Tests for the Photos-only display contract used by lib/data-services.ts.
+ * Tests for photo manifests and browse records.
  */
 
 import { beforeAll, describe, expect, it } from 'vitest'
-import type { parsePlacePhotoManifests as parsePlacePhotoManifestsFn } from '@/lib/data-services'
+import type {
+  parsePlacePhotoManifests as parsePlacePhotoManifestsFn,
+  copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount as copyPlaceWithOnlyFirstPhotoAndTotalPhotoCountFn,
+} from '@/lib/data-services'
+import type { Place } from '@/lib/types'
 
 let parsePlacePhotoManifests: typeof parsePlacePhotoManifestsFn
+let copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount: typeof copyPlaceWithOnlyFirstPhotoAndTotalPhotoCountFn
 
 beforeAll(async () => {
   process.env.AIRTABLE_PERSONAL_ACCESS_TOKEN = 'test-api-key'
   const dataServices = await import('@/lib/data-services')
   parsePlacePhotoManifests = dataServices.parsePlacePhotoManifests
+  copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount = dataServices.copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount
+})
+
+describe('Browse records', () => {
+  function createPlace(photoCount: number): Place {
+    return {
+      recordId: 'recBrowse',
+      name: 'Test Cafe',
+      operational: 'Yes',
+      type: ['Coffee Shop'],
+      size: 'Medium',
+      tags: ['Quiet'],
+      neighborhood: 'Uptown',
+      address: '123 Main St',
+      purchaseRequired: 'Yes',
+      parking: ['Street'],
+      freeWiFi: 'Yes',
+      hasCinnamonRolls: 'No',
+      hasReviews: 'Yes',
+      featured: true,
+      description: 'A place to read.',
+      website: 'https://example.com',
+      tiktok: '',
+      instagram: '',
+      youtube: '',
+      facebook: '',
+      twitter: '',
+      linkedIn: '',
+      googleMapsPlaceId: 'test-map-id',
+      googleMapsProfileURL: 'https://maps.google.com',
+      appleMapsProfileURL: 'https://maps.apple.com',
+      photos: Array.from({ length: photoCount }, (_, index) => ({
+        display: `https://example.com/display/${index}.webp`,
+        thumbnail: `https://example.com/thumbnail/${index}.webp`,
+      })),
+      comments: 'Curator notes.',
+      hours: ['Monday: 8:00 AM - 5:00 PM'],
+      hoursType: 'Regular',
+      latitude: 35.2271,
+      longitude: -80.8431,
+      createdDate: new Date('2024-01-01T00:00:00Z'),
+      lastModifiedDate: new Date('2024-02-01T00:00:00Z'),
+    }
+  }
+
+  it.each([0, 1, 3])('retains the first photo and complete count for %i photos', (count) => {
+    const place = createPlace(count)
+    const originalPhotos = [...place.photos]
+    const browse = copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount(place)
+
+    expect(browse).toEqual({
+      ...place,
+      photos: originalPhotos.slice(0, 1),
+      photoCount: count,
+    })
+    expect(browse).not.toBe(place)
+    expect(browse.photos).not.toBe(place.photos)
+    expect(place.photos).toEqual(originalPhotos)
+    expect(place).not.toHaveProperty('photoCount')
+  })
+
+  it('preserves the complete count if a browse record is projected again', () => {
+    const browse = copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount(createPlace(5))
+
+    expect(copyPlaceWithOnlyFirstPhotoAndTotalPhotoCount(browse)).toEqual(browse)
+  })
 })
 
 describe('Photos manifest parsing', () => {

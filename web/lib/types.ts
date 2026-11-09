@@ -31,6 +31,8 @@ export type Place = {
     googleMapsProfileURL: string;
     appleMapsProfileURL: string;
     photos: Array<PlacePhoto>;
+    /** Complete photo count when a browse record contains only the cover photo. */
+    photoCount?: number;
     comments: string;
     hours: Array<string>;
     hoursType?: string;
