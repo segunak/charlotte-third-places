@@ -1,5 +1,6 @@
 "use client";
 
+import { useHydrated } from "@/hooks/useHydrated";
 import { DEFAULT_FILTER_CONFIG, FILTER_DEFS, FilterConfig, FilterKey, placeMatchesFilters } from "@/lib/filters";
 import { getCharlotteTimeNow, injectDynamicTags, isPlaceOpenNow } from "@/lib/hours";
 import { DEFAULT_SORT_OPTION, Place, SortOption } from "@/lib/types";
@@ -208,9 +209,14 @@ export const FilterProvider = ({
     children: ReactNode;
     places: Array<any>;
 }) => {
-    // Enrich places with dynamic tags (Open Late, Open Early) based on current day in Charlotte.
-    // This is the single enrichment point — all consumers get enriched data automatically.
-    const places = useMemo(() => injectDynamicTags(rawPlaces as Place[]), [rawPlaces]);
+    const isHydrated = useHydrated();
+
+    // Enrich places with dynamic tags (Open Late, Open Early) after client hydration
+    // so server-rendered HTML stays deterministic across ISR revalidations.
+    const places = useMemo(
+        () => (isHydrated ? injectDynamicTags(rawPlaces as Place[]) : (rawPlaces as Place[])),
+        [isHydrated, rawPlaces]
+    );
 
     // Consolidated state using reducer - single update for atomic operations like reset
     const [state, dispatch] = useReducer(filterReducer, initialState);
@@ -253,6 +259,7 @@ export const FilterProvider = ({
     // Filter-aware: applies active filters + quick search before counting,
     // so the count reflects "of your current results, how many are open now?"
     const openNowCount = useMemo(() => {
+        if (!isHydrated) return 0;
         const time = getCharlotteTimeNow();
         let filtered = places as Place[];
 
@@ -266,7 +273,7 @@ export const FilterProvider = ({
         filtered = filtered.filter(p => placeMatchesFilters(p, filters));
 
         return filtered.filter(p => isPlaceOpenNow(p.hours ?? [], time)).length;
-    }, [places, filters, quickFilterText]);
+    }, [isHydrated, places, filters, quickFilterText]);
 
     // Pre-compute distinct values for ALL filter fields once when places change.
     // This eliminates repeated computation on every filter interaction (was causing 536-824ms INP).

@@ -24,6 +24,7 @@ import {
 import Image from "next/image";
 import type { CarouselApi } from "@/components/ui/carousel";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { useHydrated } from "@/hooks/useHydrated";
 import { Drawer, DrawerContent, DrawerHeader, DrawerTitle, DrawerDescription, DrawerClose } from "@/components/ui/drawer";
 import { PlaceContent } from "@/components/PlaceContent";
 import { getPlaceHighlights } from "@/components/PlaceHighlights";
@@ -31,10 +32,14 @@ import { ChatModal } from "@/components/ChatModal";
 import { injectDynamicTags } from "@/lib/hours";
 
 // Single place detail page — not inside a FilterProvider tree.
-// Enriches the place directly with injectDynamicTags() instead of usePlaces().
-// See PlacesContext in FilterContext.tsx for the full explanation of the two paths.
+// Enriches the place after hydration with injectDynamicTags() so server-rendered
+// HTML remains deterministic across ISR revalidations.
 export function PlacePageClient({ place: rawPlace }: { place: Place }) {
-    const place = useMemo(() => injectDynamicTags([rawPlace])[0], [rawPlace]);
+    const isHydrated = useHydrated();
+    const place = useMemo(
+        () => (isHydrated ? injectDynamicTags([rawPlace])[0] : rawPlace),
+        [isHydrated, rawPlace]
+    );
 
     const id = place.recordId;
 

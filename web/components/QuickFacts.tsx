@@ -1,7 +1,8 @@
 import { Icons } from "@/components/Icons";
 import { ResponsiveLink } from "@/components/ResponsiveLink";
 import { Badge } from "@/components/ui/badge";
-import { getHoursStatus, type HoursStatus } from "@/lib/hours";
+import { useHydrated } from "@/hooks/useHydrated";
+import { getCharlotteTimeNow, getHoursStatusAt, type HoursStatus } from "@/lib/hours";
 import { cn } from "@/lib/utils";
 import React, { FC, useMemo, useState } from "react";
 
@@ -113,7 +114,17 @@ const dayAbbreviations: Record<string, string> = {
 
 const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursType }) => {
     const [expanded, setExpanded] = useState(false);
-    const status = useMemo<HoursStatus>(() => getHoursStatus(hours), [hours]);
+    const isHydrated = useHydrated();
+    const { status, today } = useMemo<{ status: HoursStatus; today: string }>(() => {
+        if (!isHydrated || hours.length === 0) {
+            return { status: { state: "unknown" }, today: "" };
+        }
+        const time = getCharlotteTimeNow();
+        return {
+            status: getHoursStatusAt(hours, time),
+            today: time.day,
+        };
+    }, [hours, isHydrated]);
 
     if (hours.length === 0) {
         if (hoursType === "Event Based") {
@@ -122,11 +133,6 @@ const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursT
 
         return <span className="text-sm text-muted-foreground">Not available</span>;
     }
-
-    const today = new Intl.DateTimeFormat("en-US", {
-        weekday: "long",
-        timeZone: "America/New_York",
-    }).format(new Date());
 
     // Real-time status badge — same on mobile and desktop
     const badgeConfig = (() => {
@@ -153,7 +159,7 @@ const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursT
                 case "closed-today":
                     return <><span className="text-red-500 font-bold">Closed</span>{status.opensAt ? ` · Opens ${status.opensAt}` : ""}</>;
                 default:
-                    return <span>Hours</span>;
+                    return <span>View Hours</span>;
             }
         })();
 
@@ -200,7 +206,7 @@ const HoursValue: FC<{ hours: string[]; hoursType?: string }> = ({ hours, hoursT
             {expanded && (
                 <ul className="mt-1.5 ml-2 space-y-0.5 text-sm text-muted-foreground">
                     {hours.map((line, i) => {
-                        const isToday = line.toLowerCase().startsWith(today.toLowerCase() + ":");
+                        const isToday = Boolean(today) && line.toLowerCase().startsWith(today.toLowerCase() + ":");
                         const colonIdx = line.indexOf(":");
                         const dayName = colonIdx > -1 ? line.substring(0, colonIdx) : "";
                         const timesPart = colonIdx > -1 ? line.substring(colonIdx) : line;
