@@ -93,7 +93,7 @@ Returns a single place by Airtable record ID with its complete `photos` array. U
 
 ### `GET /api/revalidate`
 
-On-demand ISR revalidation. Requires `Authorization: Bearer {REVALIDATE_TOKEN}` header. Revalidates the entire site including all API routes.
+On-demand ISR revalidation. Requires `Authorization: Bearer {REVALIDATE_TOKEN}` header. When `?recordId=<recordId>` is provided, it revalidates only `/places/<recordId>`, `/api/places/<recordId>`, `/`, `/map`, `/api/places`, and `/sitemap.xml`. When `recordId` is omitted, it revalidates the entire site.
 
 **Implementation**: `app/api/revalidate/route.ts`
 

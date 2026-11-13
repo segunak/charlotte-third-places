@@ -982,4 +982,47 @@ describe('useOpenNow - time freshness', () => {
 
     expect(result.current.openNow.openNowCount).toBe(0)
   })
+
+  it('produces identical server HTML across different days and times', async () => {
+    const { renderToString } = await import('react-dom/server')
+    vi.useFakeTimers()
+
+    const places = [
+      createMockPlace({
+        name: 'Evening Cafe',
+        hours: ['Wednesday: 9 AM - 11 PM', 'Thursday: 9 AM - 5 PM'],
+        tags: ['Quiet'],
+      }),
+    ]
+
+    function Probe() {
+      const { places: enriched } = usePlaces()
+      const { openNowCount } = useOpenNow()
+      return (
+        <div>
+          <span>{openNowCount}</span>
+          <span>{enriched[0].tags.join(',')}</span>
+        </div>
+      )
+    }
+
+    // Wednesday 8 PM EDT (open + Open Late)
+    vi.setSystemTime(new Date('2026-07-16T00:00:00.000Z'))
+    const htmlOpen = renderToString(
+      <FilterProvider places={places}>
+        <Probe />
+      </FilterProvider>
+    )
+
+    // Thursday 3 AM EDT (closed + not Open Late)
+    vi.setSystemTime(new Date('2026-07-16T07:00:00.000Z'))
+    const htmlClosed = renderToString(
+      <FilterProvider places={places}>
+        <Probe />
+      </FilterProvider>
+    )
+
+    expect(htmlOpen).toBe(htmlClosed)
+    expect(htmlOpen).not.toContain('Open Late')
+  })
 })

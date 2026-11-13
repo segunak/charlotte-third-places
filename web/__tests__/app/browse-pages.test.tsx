@@ -1,9 +1,10 @@
 import HomePage, { dynamic as homeDynamic } from '@/app/page'
 import MapPage, { dynamic as mapDynamic } from '@/app/map/page'
+import sitemap from '@/app/sitemap'
 import { getPlaces } from '@/lib/data-services'
 import type { Place } from '@/lib/types'
 import { isValidElement } from 'react'
-import { beforeEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 
 vi.mock('@/lib/data-services', async (importOriginal) => ({
   ...await importOriginal<typeof import('@/lib/data-services')>(),
@@ -77,5 +78,25 @@ describe.each([
     }])
     expect(place.photos).toHaveLength(3)
     expect(place).not.toHaveProperty('photoCount')
+  })
+})
+
+describe('sitemap determinism', () => {
+  afterEach(() => {
+    vi.useRealTimers()
+  })
+
+  it('produces identical output across different wall-clock times when places are unchanged', async () => {
+    vi.useFakeTimers()
+
+    vi.setSystemTime(new Date('2026-07-15T12:00:00.000Z'))
+    const first = await sitemap()
+
+    vi.setSystemTime(new Date('2026-11-12T23:59:59.000Z'))
+    const second = await sitemap()
+
+    expect(first).toEqual(second)
+    expect(first[0].lastModified).toEqual(place.lastModifiedDate)
+    expect(first[1].lastModified).toEqual(place.lastModifiedDate)
   })
 })

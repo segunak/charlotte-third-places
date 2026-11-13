@@ -7,33 +7,36 @@ export const dynamic = "force-static"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://charlottethirdplaces.com'
-    const currentDate = new Date()
 
     const places = await getPlaces()
+    const latestModifiedDate = places.reduce<Date | undefined>((latest, place) => {
+        const modified = new Date(place.lastModifiedDate)
+        if (Number.isNaN(modified.getTime())) return latest
+        return !latest || modified > latest ? modified : latest
+    }, undefined)
 
-    // Generate sitemap entries for static pages
+    // Generate sitemap entries for static pages without wall-clock timestamps
+    // so /sitemap.xml stays deterministic when no Airtable record changed.
     const staticPages: MetadataRoute.Sitemap = [
         {
             url: baseUrl,
-            lastModified: currentDate,
+            ...(latestModifiedDate && { lastModified: latestModifiedDate }),
             changeFrequency: 'daily',
             priority: 1,
         },
         {
             url: `${baseUrl}/map`,
-            lastModified: currentDate,
+            ...(latestModifiedDate && { lastModified: latestModifiedDate }),
             changeFrequency: 'daily',
             priority: 0.9,
         },
         {
             url: `${baseUrl}/contribute`,
-            lastModified: currentDate,
             changeFrequency: 'weekly',
             priority: 0.8,
         },
         {
             url: `${baseUrl}/about`,
-            lastModified: currentDate,
             changeFrequency: 'weekly',
             priority: 0.7,
         },

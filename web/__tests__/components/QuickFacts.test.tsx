@@ -11,8 +11,9 @@
  * - Tags display
  */
 
-import { describe, it, expect, vi } from 'vitest'
+import { afterEach, describe, it, expect, vi } from 'vitest'
 import { render, screen } from '@testing-library/react'
+import { renderToString } from 'react-dom/server'
 import { QuickFacts } from '@/components/QuickFacts'
 
 // Mock window.matchMedia for useIsMobile hook
@@ -163,6 +164,37 @@ describe('QuickFacts', () => {
     it('renders Large size correctly', () => {
       render(<QuickFacts {...defaultProps} size="Large" />)
       expect(screen.getByText('Large')).toBeInTheDocument()
+    })
+  })
+
+  describe('Hours SSR Determinism', () => {
+    const hours = [
+      'Wednesday: 9 AM - 5 PM',
+      'Thursday: 9 AM - 5 PM',
+    ]
+
+    afterEach(() => {
+      vi.useRealTimers()
+    })
+
+    it('renders identical server HTML across open and closed times and resolves live status on client', () => {
+      vi.useFakeTimers()
+
+      // Wednesday 2:00 PM EDT (open)
+      vi.setSystemTime(new Date('2026-07-15T18:00:00.000Z'))
+      const serverHtmlWhenOpen = renderToString(<QuickFacts {...defaultProps} hours={hours} />)
+
+      // Wednesday 11:00 PM EDT (closed)
+      vi.setSystemTime(new Date('2026-07-16T03:00:00.000Z'))
+      const serverHtmlWhenClosed = renderToString(<QuickFacts {...defaultProps} hours={hours} />)
+
+      expect(serverHtmlWhenOpen).toBe(serverHtmlWhenClosed)
+      expect(serverHtmlWhenOpen).toContain('View Hours')
+      expect(serverHtmlWhenOpen).not.toContain('Closes 5 PM')
+
+      // Client render resolves the real-time status
+      render(<QuickFacts {...defaultProps} hours={hours} />)
+      expect(screen.getByText('Closed')).toBeInTheDocument()
     })
   })
 })
